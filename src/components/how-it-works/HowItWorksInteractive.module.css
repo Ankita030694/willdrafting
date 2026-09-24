@@ -1,0 +1,513 @@
+/* ==========================================================================
+   INTERACTIVE HOW IT WORKS COMPONENT STYLES
+   ========================================================================== */
+
+.interactiveContainer {
+  margin: 2.5rem 0 3.5rem;
+}
+
+/* Step Navigation Pill Bar */
+.stepNavigation {
+  margin-bottom: 2rem;
+  border-bottom: 1px solid rgba(27, 42, 74, 0.1);
+  padding-bottom: 0.75rem;
+}
+
+.stepNavScroll {
+  display: flex;
+  gap: 0.5rem;
+  overflow-x: auto;
+  padding-bottom: 0.5rem;
+  scrollbar-width: thin;
+}
+
+.stepNavScroll::-webkit-scrollbar {
+  height: 4px;
+}
+
+.stepNavScroll::-webkit-scrollbar-thumb {
+  background: rgba(27, 42, 74, 0.2);
+  border-radius: 4px;
+}
+
+.stepNavButton {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  padding: 0.65rem 1rem;
+  border-radius: 9999px;
+  border: 1px solid rgba(27, 42, 74, 0.12);
+  background: #FFFFFF;
+  color: #3B5173;
+  font-size: 0.85rem;
+  font-weight: 500;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  font-family: inherit;
+}
+
+.stepNavButton:hover {
+  background: #F8FAFC;
+  border-color: rgba(27, 42, 74, 0.3);
+  color: #1B2A4A;
+}
+
+.stepNavButtonActive {
+  background: #1B2A4A !important;
+  color: #FFFFFF !important;
+  border-color: #1B2A4A !important;
+  box-shadow: 0 4px 12px rgba(27, 42, 74, 0.15);
+}
+
+.stepNavNumber {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: rgba(27, 42, 74, 0.08);
+  color: inherit;
+  font-size: 0.72rem;
+  font-weight: 700;
+}
+
+.stepNavButtonActive .stepNavNumber {
+  background: #C9A227;
+  color: #1B2A4A;
+}
+
+.stepNavTitle {
+  font-weight: 600;
+}
+
+/* Stage Grid Layout */
+.stageGrid {
+  display: grid;
+  grid-templateColumns: 1.45fr 1fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+@media (max-width: 960px) {
+  .stageGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Stage Main Card */
+.stageMain {
+  min-width: 0;
+}
+
+.stageCard {
+  background: #FFFFFF;
+  border: 1px solid rgba(27, 42, 74, 0.1);
+  border-radius: 16px;
+  padding: 2.25rem;
+  box-shadow: 0 8px 30px rgba(27, 42, 74, 0.05);
+}
+
+@media (max-width: 640px) {
+  .stageCard {
+    padding: 1.5rem;
+  }
+}
+
+/* Stage Header */
+.stageHeader {
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid rgba(27, 42, 74, 0.08);
+}
+
+.stageBadgeRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-bottom: 1rem;
+}
+
+.stageCategoryBadge {
+  background: #F1F5F9;
+  color: #1B2A4A;
+  padding: 0.3rem 0.65rem;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.stageTimeBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  background: rgba(124, 148, 115, 0.12);
+  color: #3C6335;
+  border: 1px solid rgba(124, 148, 115, 0.3);
+  padding: 0.3rem 0.65rem;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.stageStatuteBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  background: rgba(201, 162, 39, 0.12);
+  color: #8C6D0F;
+  border: 1px solid rgba(201, 162, 39, 0.25);
+  padding: 0.3rem 0.65rem;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.stageTitle {
+  font-size: clamp(1.25rem, 2.8vw, 1.6rem);
+  font-weight: 700;
+  color: #1B2A4A;
+  line-height: 1.3;
+  margin-bottom: 0.75rem;
+}
+
+.stageSummary {
+  font-size: 0.95rem;
+  line-height: 1.65;
+  color: #475569;
+  margin: 0;
+}
+
+/* Section Blocks */
+.sectionBlock {
+  margin-bottom: 1.75rem;
+}
+
+.sectionBlockTitle {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #1B2A4A;
+  margin-bottom: 0.85rem;
+}
+
+.sectionIcon {
+  color: #3B5173;
+}
+
+.sectionIconGold {
+  color: #C9A227;
+}
+
+/* Questions List */
+.questionsList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.questionItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  background: #FAF7F0;
+  border: 1px solid rgba(27, 42, 74, 0.08);
+  border-radius: 10px;
+  padding: 0.75rem 1rem;
+}
+
+.questionBullet {
+  background: #1B2A4A;
+  color: #FFFFFF;
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 0.15rem 0.45rem;
+  border-radius: 4px;
+  flex-shrink: 0;
+  margin-top: 0.15rem;
+}
+
+.questionText {
+  font-size: 0.88rem;
+  line-height: 1.55;
+  color: #1E293B;
+  font-weight: 500;
+}
+
+/* Behind The Scenes Logic Grid */
+.logicGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.logicItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.65rem;
+  font-size: 0.88rem;
+  line-height: 1.55;
+  color: #334155;
+  background: #F8FAFC;
+  border: 1px solid rgba(27, 42, 74, 0.06);
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+}
+
+.logicCheckIcon {
+  color: #10B981;
+  flex-shrink: 0;
+  margin-top: 0.2rem;
+}
+
+/* Stage Navigation Controls */
+.stageNavControls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(27, 42, 74, 0.08);
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.prevButton {
+  background: none;
+  border: 1px solid rgba(27, 42, 74, 0.2);
+  color: #3B5173;
+  padding: 0.65rem 1.15rem;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-family: inherit;
+}
+
+.prevButton:hover:not(:disabled) {
+  background: #F1F5F9;
+  color: #1B2A4A;
+}
+
+.prevButton:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.stepProgressText {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #64748B;
+}
+
+.nextButton {
+  background: #1B2A4A;
+  color: #FFFFFF;
+  border: none;
+  padding: 0.65rem 1.25rem;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-family: inherit;
+}
+
+.nextButton:hover {
+  background: #24375F;
+}
+
+.finishCtaButton {
+  background: #C9A227;
+  color: #1B2A4A;
+  padding: 0.65rem 1.35rem;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 0.88rem;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  transition: all 0.2s;
+  box-shadow: 0 4px 12px rgba(201, 162, 39, 0.3);
+}
+
+.finishCtaButton:hover {
+  background: #B8921E;
+}
+
+/* Stage Sidebar (Right Column) */
+.stageSidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Court-Grade Clause Preview Card */
+.clauseCard {
+  background: #0B1120;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(11, 17, 32, 0.25);
+}
+
+.clauseHeader {
+  display: flex;
+  justifyContent: space-between;
+  align-items: center;
+  padding: 0.85rem 1.25rem;
+  background: #121D34;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.clauseHeaderLeft {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.clauseIcon {
+  color: #C9A227;
+}
+
+.clauseTitle {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #E2E8F0;
+}
+
+.clauseBadge {
+  background: rgba(201, 162, 39, 0.2);
+  color: #C9A227;
+  border: 1px solid rgba(201, 162, 39, 0.4);
+  font-size: 0.68rem;
+  font-weight: 700;
+  padding: 0.15rem 0.5rem;
+  border-radius: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.clauseBody {
+  margin: 0;
+  padding: 1.25rem;
+  color: #94A3B8;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-size: 0.8rem;
+  line-height: 1.65;
+  white-space: pre-wrap;
+  word-break: break-word;
+  background: #0B1120;
+  max-height: 240px;
+  overflow-y: auto;
+}
+
+.clauseBody code {
+  color: #CBD5E1;
+  font-family: inherit;
+}
+
+.clauseFooter {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.65rem 1.25rem;
+  background: rgba(255, 255, 255, 0.02);
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  font-size: 0.72rem;
+  color: #10B981;
+  font-weight: 500;
+}
+
+.shieldIcon {
+  color: #10B981;
+}
+
+/* Pitfall Card */
+.pitfallCard {
+  background: #FFFBEB;
+  border: 1px solid #FDE68A;
+  border-radius: 12px;
+  padding: 1.25rem;
+}
+
+.pitfallHeader {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  margin-bottom: 0.5rem;
+}
+
+.pitfallIcon {
+  color: #D97706;
+}
+
+.pitfallTitle {
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #92400E;
+  margin: 0;
+}
+
+.pitfallSubTitle {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #78350F;
+  margin: 0 0 0.45rem 0;
+}
+
+.pitfallDesc {
+  font-size: 0.84rem;
+  line-height: 1.55;
+  color: #92400E;
+  margin: 0;
+}
+
+/* Trust Box */
+.trustBox {
+  background: #FFFFFF;
+  border: 1px solid rgba(27, 42, 74, 0.1);
+  border-radius: 12px;
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.trustItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  font-size: 0.8rem;
+  line-height: 1.45;
+  color: #475569;
+}
+
+.trustItem strong {
+  display: block;
+  color: #1B2A4A;
+  font-size: 0.84rem;
+  margin-bottom: 0.15rem;
+}
+
+.trustItem p {
+  margin: 0;
+}
+
+.trustIcon {
+  color: #C9A227;
+  flex-shrink: 0;
+  margin-top: 0.2rem;
+}

@@ -1,0 +1,1310 @@
+WILLDRAFTING.COM COMPREHENSIVE PRODUCT CONTEXT, PRODUCT REQUIREMENTS,
+UI/UX SPECIFICATION, LEGAL LOGIC, BACKEND ARCHITECTURE, AND DEVELOPMENT
+ROADMAP
+
+DOCUMENT PURPOSE
+
+This document consolidates the complete product idea and all major
+decisions discussed for WillDrafting.com. It is intended to be shared
+with the product team, UI/UX designer, developers, legal team, reviewing
+lawyers, and business stakeholders.
+
+The product is a legal-tech platform that helps ordinary people prepare
+their own Will by answering simple questions. The platform converts
+structured user responses into a professionally structured Will,
+performs automated validation and legal health checks, and sends the
+draft to a lawyer for review. After lawyer review and any required
+clarification or correction, the user receives the final Will document
+and execution guidance.
+
+The product should not be positioned merely as a cheap online Will
+generator. It should be positioned as:
+
+“Your wishes. Your family. Legally protected.”
+
+The emotional positioning may be used in selected marketing areas, but
+the actual product should feel like a serious LegalTech/SaaS platform.
+
+A strong emotional brand line discussed earlier was:
+
+“It’s not about what you leave behind. It’s about who you leave it for.”
+
+This line can be used selectively on the homepage or campaign pages,
+while the product interface should maintain legal authority, clarity,
+trust, privacy, and professional structure.
+
+1. PRODUCT VISION
+
+WillDrafting.com should become a legal document automation and
+estate-planning platform with a website attached to it.
+
+The core experience:
+
+User answers simple questions -> Structured data is created -> Rules
+engine validates the information -> Approved legal clauses are selected
+-> A Will draft is assembled -> Automated legal health checks are
+performed -> A lawyer reviews the draft -> Clarifications/corrections
+are handled -> Final Will is generated -> User receives the final
+document and execution instructions -> The Will is stored in a secure
+Will Vault -> The user can later review or update the Will
+
+The core product promise:
+
+“Tell us your wishes in simple questions. We take care of the legal
+drafting. A lawyer reviews your Will before it is finalised.”
+
+The technology is the engine. The lawyer creates confidence. The
+interface makes the process simple.
+
+2. STRATEGIC POSITIONING
+
+The product should combine:
+
+-   Trust of a law firm
+-   Simplicity of a fintech app
+-   Intelligence of legal technology
+-   Professionalism of a document-management platform
+-   Human understanding of family and legacy
+
+The product should not feel like:
+
+-   A generic law-firm website
+-   A government website
+-   A complicated legal form
+-   A cheap document generator
+-   A generic SaaS dashboard
+-   An AI chatbot that freely invents legal language
+-   An emotionally manipulative campaign
+
+The recommended balance is:
+
+-   60% trust and simplicity
+-   25% emotional connection
+-   15% legal expertise
+
+Emotion should open the door. Technology should make the process easy.
+Lawyer review should create confidence.
+
+3. TARGET USERS
+
+The initial target audience includes:
+
+-   Married individuals
+-   Parents
+-   Individuals with property
+-   Individuals with bank accounts and investments
+-   Professionals
+-   Business owners
+-   Senior citizens
+-   People who want to avoid family disputes
+-   People who want peace of mind
+-   People who want to make sure their wishes are respected
+-   People who want to protect minor children
+-   People who want to plan the distribution of property and assets
+
+The first version should focus on ordinary, relatively straightforward
+Will cases and progressively support more complex estates.
+
+The first test scenario should be:
+
+A married person with: - Two adult children - One house - Bank
+accounts - Investments - Spouse as executor
+
+Once this scenario works from beginning to end, more complicated
+scenarios should be added one at a time.
+
+4. MVP SCOPE
+
+The first version should support:
+
+-   Individual Will creation
+-   Personal details
+-   Family members
+-   Spouse information
+-   Children information
+-   Minor/adult classification
+-   Assets
+-   Property
+-   Bank accounts
+-   Investments
+-   Mutual funds
+-   Shares
+-   Jewellery
+-   Vehicles
+-   Business interests
+-   Insurance
+-   Digital assets
+-   Other assets
+-   Beneficiaries
+-   Asset distribution
+-   Percentage allocation
+-   Specific bequests
+-   Residuary estate
+-   Executor
+-   Alternate executor
+-   Guardian for minor children
+-   Alternate guardian
+-   Special wishes
+-   Questionnaire decision tree
+-   Automated validation
+-   Legal health check
+-   Automated draft generation
+-   Lawyer review
+-   Clarification workflow
+-   Lawyer corrections
+-   Final PDF
+-   Final DOCX where appropriate
+-   Execution instructions
+-   User dashboard
+-   Secure document storage
+-   Version history
+-   Basic notifications
+-   Basic support
+
+Do not initially build:
+
+-   A full mobile app
+-   A WhatsApp bot
+-   Multiple regional languages
+-   An AI voice assistant
+-   Blockchain storage
+-   Complex estate planning for every possible scenario
+-   Bank integrations
+-   Insurance integrations
+-   Family accounts
+-   A marketplace of lawyers
+-   Large-scale external integrations
+
+These can be considered after the core product is proven.
+
+5. PUBLIC WEBSITE INFORMATION ARCHITECTURE
+
+The public website should contain:
+
+1.  Home
+2.  Why Make a Will
+3.  How It Works
+4.  Pricing
+5.  Lawyer Verification
+6.  Will Registration / Execution Assistance
+7.  Estate Planning
+8.  About Us
+9.  Resources / Legal Knowledge Hub
+10. FAQs
+11. Contact
+12. Login
+13. Create My Will
+
+The public website is responsible for: - Explaining the problem -
+Building trust - Educating users - Showing how simple the process is -
+Explaining lawyer involvement - Showing pricing - Driving users into the
+application - Supporting SEO through educational content
+
+6. HOMEPAGE UI/UX
+
+The homepage should look like a serious LegalTech product inspired by
+the supplied Legal Recovery website screenshot.
+
+The visual language should include: - Professional navigation - Strong
+hero headline - Structured layout - Large product/dashboard preview -
+White/light-grey background - Deep navy or indigo text - Red or violet
+accent used carefully - Rounded cards - Thin borders - Subtle shadows -
+Professional icons - Clear CTA buttons - Product interface shown
+visually - Trust indicators - Lawyer review indicators - Secure document
+and workflow cues
+
+The homepage should not rely too heavily on stock family photography.
+Product screenshots, dashboards, document previews, legal icons, and
+structured diagrams should make it feel like LegalTech.
+
+Recommended homepage hero:
+
+Small eyebrow: “ONLINE WILL DRAFTING — INDIA’S LEGAL-TECH WILL PLATFORM”
+
+Main headline: “Your wishes. Your family. Legally protected.”
+
+Alternative emotional headline: “It’s not about what you leave behind.
+It’s about who you leave it for.”
+
+Subheading: “Create your Will online through a guided legal-tech
+platform. Answer simple questions, organise your family and assets, and
+receive a professionally drafted Will reviewed by a lawyer.”
+
+Primary CTA: “Create My Will”
+
+Secondary CTA: “See How It Works”
+
+Trust indicators: - Legally Structured - Lawyer Reviewed - Private &
+Secure - Easy to Update
+
+A product preview should show a dashboard with: - Will progress - Family
+members - Asset summary - Beneficiary allocation - Lawyer review
+status - Document vault - Notifications
+
+A strong homepage message: “You decide. We do the paperwork.”
+
+Homepage sections: 1. Hero 2. Trust indicators 3. Why make a Will 4. How
+the platform works 5. Product dashboard preview 6. Features 7. Lawyer
+verification explanation 8. Pricing 9. Legal knowledge/resources 10.
+FAQs 11. Final CTA 12. Footer
+
+7. WHY MAKE A WILL PAGE
+
+Purpose: Educate and emotionally motivate without using fear or
+manipulation.
+
+Suggested headline: “You spent years building your life. Take a few
+minutes to protect it.”
+
+Content areas: - What a Will is - What can happen without a Will - Who
+may decide what happens to assets - Why family disputes can arise - Why
+children and dependants need planning - Why asset distribution should be
+written down - Why a Will should be reviewed when life changes - Why a
+Will is an act of responsibility
+
+Suggested closing: “A Will isn’t about death. It’s about taking care of
+the people who matter to you.”
+
+CTA: “Make My Will”
+
+8. HOW IT WORKS PAGE
+
+The page should show a clear, visual process:
+
+01 — Tell us about yourself 02 — Tell us about your family 03 — Tell us
+what you’ve built 04 — Tell us what you want 05 — We create your Will 06
+— A lawyer reviews it 07 — You receive your final Will
+
+Suggested statement: “Creating your Will is easier than you think.”
+
+Use a visual process with: - Numbered steps - Icons - Short
+explanations - Progress line - Product screenshots - Lawyer-review
+stage - Final-document preview
+
+9. PRICING PAGE
+
+Keep pricing clear and avoid presenting the product as merely cheap.
+
+Suggested plans:
+
+ESSENTIAL Price: To be finalised - Guided questions - Automated
+drafting - Downloadable Will - Execution instructions
+
+LAWYER VERIFIED Most Popular Price: To be finalised - Everything in
+Essential - Lawyer review - Legal corrections - One revision - Final
+verified document
+
+PREMIUM Price: To be finalised - Everything above - Lawyer
+consultation - Complex estate review - Execution assistance -
+Registration assistance - Additional support
+
+Possible illustrative pricing discussed: - Essential: ₹999 - Lawyer
+Verified: ₹2,499 - Premium: ₹4,999+
+
+These prices must be reviewed commercially and legally before launch.
+The final pricing should depend on complexity, lawyer time, revisions,
+and service scope.
+
+Recommended copy: “Choose the level of support that’s right for your
+family.”
+
+10. ABOUT US PAGE
+
+Positioning: “Technology makes it simple. Lawyers make it reliable.”
+
+Explain: - Who operates WillDrafting.com - Why the platform was
+created - The role of technology - The role of lawyers - Data security -
+Confidentiality - Quality control - Lawyer review process - Commitment
+to clarity and accessibility
+
+Include: - Founder/team section - Lawyer profiles - Product principles -
+Security principles - Customer support details
+
+11. RESOURCES / LEGAL KNOWLEDGE HUB
+
+This is an SEO and education engine.
+
+Categories:
+
+WILLS - What is a Will? - How to make a Will? - Is an online Will
+valid? - How to change a Will? - What makes a Will effective? - How to
+store a Will?
+
+FAMILY - Children and inheritance - Spouse and inheritance -
+Guardianship - Family disputes - Minor beneficiaries
+
+ASSETS - Property - Bank accounts - Mutual funds - Shares - Jewellery -
+Vehicles - Business interests - Digital assets - Insurance
+
+ESTATE PLANNING - Estate planning - Business succession - Executors -
+Nomination versus Will - Residuary estate - Updating a Will - Execution
+and witnesses - Registration and custody
+
+Every legal article should be reviewed for accuracy and should not
+overstate legal conclusions. Articles should be jurisdiction-specific
+where required and should contain suitable disclaimers.
+
+12. APPLICATION EXPERIENCE
+
+The application should feel like a calm, structured LegalTech workspace.
+
+It should not feel like the marketing website.
+
+The application should have: - Clear progress - One question at a time
+where possible - Save-and-resume functionality - Simple language -
+Minimal legal terminology - Contextual explanations - Conditional
+questions - Error prevention - Review checkpoints - Secure session
+handling - Clear status labels
+
+Core application flow:
+
+Create My Will -> Welcome -> About You -> My Family -> My Assets ->
+Asset Details -> Beneficiaries -> Executor -> Guardian if applicable ->
+Special Wishes -> Review -> Legal Health Check -> Payment -> Draft
+Generated -> Lawyer Review -> Clarification if needed -> Final Will ->
+Execution Guide -> Will Vault
+
+13. APPLICATION NAVIGATION
+
+Suggested sidebar:
+
+WILL CREATION - About You - My Family - My Assets - Beneficiaries -
+Executor - Guardian - Special Wishes - Review - Legal Health Check -
+Final Will
+
+CUSTOMER PORTAL - Dashboard - My Will - My Family - My Assets -
+Beneficiaries - Documents - Will Vault - Version History - Update Will -
+Annual Review - Lawyer Consultation - Registration Assistance -
+Notifications - Profile - Security & Privacy - Help & Support
+
+The top bar should show: - WillDrafting.com logo - Current step -
+Progress percentage - Save status - Help/support - User profile
+
+14. WELCOME / START SCREEN
+
+Headline: “Let’s take care of something important.”
+
+Subheading: “We’ll ask you simple questions about your family, your
+assets and your wishes. You don’t need to know legal language. We take
+care of that.”
+
+Show: - Approximate time: 10–15 minutes - Save and resume - Private and
+secure - Lawyer review available - Simple guided process
+
+CTA: “Let’s Begin”
+
+15. ABOUT YOU SCREEN
+
+Headline: “Let’s start with you.”
+
+Fields: - Full name - Date of birth - Gender where legally and
+operationally necessary - Marital status - Email - Phone - Address -
+Citizenship/residency where relevant - Applicable
+personal-law/jurisdiction information where legally required
+
+The exact questions must be decided by the legal team. Avoid collecting
+unnecessary sensitive data.
+
+UX: - One clear question per screen where possible - Inline validation -
+Helpful explanation - Save automatically - Back and Continue controls -
+Progress indicator
+
+16. MY FAMILY SCREEN
+
+Headline: “Tell us about the people who matter to you.”
+
+Subheading: “This helps us understand your family and prepare your Will
+correctly.”
+
+Features: - Add spouse - Add child - Add parent - Add sibling - Add
+dependant - Add other family member - Relationship selection - Date of
+birth - Minor/adult classification - Contact information only where
+needed - Family relationship mapping
+
+Use a visual family tree or family cards.
+
+Example: YOU | +– Spouse | +– Children +– Son +– Daughter
+
+Each person should appear as a card with: - Name - Relationship - Age or
+age group - Minor/adult status - Edit button - Remove button - Relevant
+warnings
+
+17. MY ASSETS SCREEN
+
+Headline: “Let’s talk about what you’ve built.”
+
+Asset cards: - Property - Bank accounts - Investments - Mutual funds -
+Shares - Jewellery - Vehicles - Business - Insurance - Digital assets -
+Personal belongings - Other
+
+The asset dashboard should show: - Number of assets - Estimated total
+value if collected - Asset categories - Ownership status - Missing
+details - Assets without beneficiaries - Assets requiring clarification
+
+Do not force users to know exact values if approximate values are
+sufficient for the product’s legal workflow. The legal team must decide
+which values are essential.
+
+18. ASSET DETAILS SCREEN
+
+When a user selects an asset category, show a guided form.
+
+Example: Property
+
+Fields: - Asset name - Property type - Address - Ownership type:
+sole/joint/other - Ownership percentage where applicable - Approximate
+value - Existing loan/encumbrance where relevant - Supporting document
+upload if required - Intended beneficiary - Special instructions
+
+Example: “My Gurgaon Home” Type: Residential property Ownership: Sole /
+Joint Approximate value: ₹______ Who should receive this?
+
+The system should identify: - Joint ownership - Missing ownership
+information - Duplicate assets - Unclear descriptions - Assets with no
+distribution instructions - Assets with conflicting beneficiaries
+
+19. BENEFICIARIES SCREEN
+
+Headline: “Who should receive your assets?”
+
+Show family members and other beneficiaries as cards.
+
+Features: - Select beneficiary - Add beneficiary - Relationship -
+Specific asset allocation - Percentage allocation - Equal distribution -
+Unequal distribution - Specific bequest - Alternate beneficiary -
+Residuary beneficiary - Allocation validation
+
+Example: Gurgaon Home - Spouse: 50% - Son: 25% - Daughter: 25%
+
+Display: “Total allocated: 100%”
+
+The system must prevent: - Allocation above 100% - Allocation below 100%
+where full allocation is required - Duplicate beneficiary records -
+Beneficiary missing from family information - Invalid or incomplete
+beneficiary details - Conflicts between specific bequests and residuary
+provisions
+
+20. EXECUTOR SCREEN
+
+Headline: “Who would you trust to carry out your wishes?”
+
+Explain: “Your executor helps make sure your instructions are followed.”
+
+Options: - Spouse - Child - Family member - Friend - Professional -
+Other
+
+Collect: - Name - Relationship - Contact details where required -
+Consent/acknowledgement if legally or operationally required - Alternate
+executor - Eligibility or conflict flags
+
+Question: “Would you like to name a backup executor?”
+
+21. GUARDIAN SCREEN
+
+Show only when the user has minor children or other legally relevant
+dependants.
+
+Headline: “If you have children under 18, who would you trust to look
+after them?”
+
+Collect: - Primary guardian - Alternate guardian - Relationship -
+Contact details where required - Notes - Special instructions
+
+Important: The interface should explain that guardian provisions express
+the user’s wishes and that legal effect can depend on applicable law and
+circumstances.
+
+Do not overpromise that the selected guardian will automatically be
+appointed in every circumstance.
+
+22. SPECIAL WISHES SCREEN
+
+Headline: “Is there anything else you’d like your family to know?”
+
+Cards: - Jewellery - Personal belongings - Pets - Charity - Business -
+Digital accounts - Funeral or ceremonial wishes where legally
+appropriate - Personal messages - Other wishes
+
+Include: “Something else I want to say…”
+
+Use a text area, but clearly distinguish: - Legally operative
+instructions - Personal messages - Non-binding wishes - Instructions
+that may require separate legal advice
+
+23. EMOTIONAL CHECKPOINT
+
+This can be included before the final review, but should be subtle and
+not manipulative.
+
+Headline: “Before we create your Will…”
+
+Text: “Take a moment to think about the people you’re doing this for.”
+
+Question: “What is your main reason for making your Will?”
+
+Options: - Protect my family - Protect what I’ve built - Protect my
+children - Avoid family disputes - Give myself peace of mind - Make sure
+my wishes are respected - Leave something behind
+
+This information may be used for user experience and messaging, not for
+making legal assumptions.
+
+24. REVIEW SCREEN
+
+The user should see a complete summary before draft generation.
+
+Sections: - About You - Family - Assets - Beneficiaries - Executor -
+Guardian - Special Wishes - Residuary Estate - Missing information -
+Conflicts - Unresolved issues
+
+Each section should have: - Completion status - Edit button - Warning
+count - Last updated time
+
+The user should confirm: “I have reviewed the information provided and
+believe it is accurate to the best of my knowledge.”
+
+The exact confirmation language must be legally reviewed.
+
+25. LEGAL HEALTH CHECK
+
+This is a major LegalTech differentiator.
+
+Headline: “We’ve checked your Will plan.”
+
+Show: - Completed checks - Warnings - Required corrections -
+Recommendations - Issues requiring lawyer review
+
+Example: “3 things need your attention”
+
+Warning 1: “Minor beneficiary detected.” Explanation: “Your son is
+currently 12 years old. Review the proposed distribution and guardian
+information.”
+
+Warning 2: “Jointly owned property.” Explanation: “Please confirm the
+nature and extent of your ownership.”
+
+Warning 3: “Residuary beneficiary missing.” Explanation: “You have not
+selected who should receive assets not specifically mentioned.”
+
+Other possible checks: - Beneficiary allocation not equal to 100% - No
+executor selected - Executor is unavailable or potentially unsuitable -
+No alternate executor - Minor beneficiary without relevant
+instructions - Guardian missing where relevant - Duplicate assets -
+Duplicate beneficiaries - Contradictory instructions - Asset assigned to
+deceased/ineligible person - Unclear ownership - Business interests
+requiring specialist review - Foreign assets requiring specialist
+review - Joint family or complex ownership - Existing Will disclosed but
+revocation not addressed - Special wishes that may not be legally
+enforceable - Missing residuary clause - Missing alternate beneficiary -
+Incomplete identity information - Unverified user declarations
+
+The health check should not claim to guarantee legal validity. It is a
+structured quality and completeness check.
+
+26. AI AND AUTOMATION PRINCIPLES
+
+Do not allow an unrestricted AI model to freely write the final Will.
+
+Avoid: “User answers -> ChatGPT -> Write a Will”
+
+Recommended approach:
+
+Structured data -> Rules engine -> Approved clause library -> Document
+assembly -> Lawyer review
+
+AI may assist with: - Classifying user responses - Asking clarifying
+questions - Detecting inconsistencies - Identifying missing
+information - Explaining legal terminology in plain language -
+Suggesting which module to open - Summarising user-provided
+information - Flagging unusual or complex cases for lawyer review -
+Assisting lawyers during review
+
+AI should not independently: - Invent legal clauses - Decide legal
+outcomes without approved rules - Determine enforceability
+conclusively - Replace lawyer review - Change legal meaning silently -
+Produce untracked edits - Make unsupported claims about registration,
+inheritance, guardianship, or validity
+
+All generated legal content should come from approved templates,
+controlled rules, and lawyer-reviewed clause versions.
+
+27. CLAUSE LIBRARY
+
+Create an approved legal clause library.
+
+Possible clause categories:
+
+-   Testator introduction
+-   Declaration
+-   Revocation of previous Wills
+-   Personal details
+-   Family details
+-   Appointment of executor
+-   Appointment of alternate executor
+-   Specific bequest
+-   General bequest
+-   Residuary estate
+-   Minor beneficiary
+-   Guardian
+-   Alternate guardian
+-   Property distribution
+-   Bank account distribution
+-   Investment distribution
+-   Jewellery/personal belongings
+-   Business interests
+-   Digital assets
+-   Charitable gifts
+-   Debts and liabilities
+-   Taxes and expenses
+-   Administrative powers
+-   Dispute/interpretation provisions where appropriate
+-   Attestation
+-   Witness information
+-   Execution instructions
+-   Special wishes
+-   Non-binding personal messages
+
+Each clause should have: - Clause ID - Title - Legal purpose - Trigger
+conditions - Required inputs - Optional inputs - Exclusions -
+Jurisdiction applicability - Version - Lawyer approver - Date approved -
+Change history - Plain-language explanation - Risk level - Whether
+lawyer review is mandatory
+
+28. RULES ENGINE
+
+The rules engine decides: - Which questions appear - Which questions are
+required - Which clauses are selected - Which warnings are generated -
+Which cases require lawyer escalation - Which document template
+applies - Which fields must be confirmed
+
+Example:
+
+Question: Are you married? If no: - Do not ask spouse-specific
+questions. If yes: - Ask spouse name and relevant details. - Ask whether
+spouse is a beneficiary. - Ask whether spouse is executor.
+
+Question: Do you have children? If no: - Skip child module. If yes: -
+Ask number of children. - Ask each child’s details. - Determine
+minor/adult status. - If minor, activate guardian module.
+
+Question: Is any property jointly owned? If yes: - Ask ownership nature
+and share. - Generate a warning. - Consider mandatory lawyer review.
+
+Question: Are any beneficiaries minors? If yes: - Ask age and relevant
+information. - Show minor beneficiary warning. - Ask for relevant
+distribution/guardian instructions.
+
+29. DOCUMENT GENERATION PIPELINE
+
+Recommended pipeline:
+
+User Answers -> Structured JSON -> Schema validation -> Data
+normalisation -> Rules engine -> Legal health checks -> Clause selection
+-> Template assembly -> DOCX generation -> PDF generation -> Document
+metadata -> Lawyer review -> Revision/clarification -> Final document ->
+Secure storage
+
+Do not store only the final PDF. Store the structured data and all
+versions.
+
+This is necessary so that the user can later update the Will without
+starting over.
+
+30. DRAFT GENERATION SCREEN
+
+Headline: “We’re putting your wishes into words.”
+
+Visual flow: Your answers -> Legal drafting -> Your Will
+
+Status: “Your Will is being prepared…”
+
+After completion: “Your first draft is ready.”
+
+CTA: “Review My Will”
+
+The system should show: - Draft version - Generated time - Data
+completeness - Pending legal review - Warnings if any
+
+31. LAWYER REVIEW WORKFLOW
+
+Customer completes questionnaire -> System validation -> Legal health
+check -> Draft generated -> Payment -> Lawyer assigned -> Lawyer reviews
+-> Approved OR clarification requested -> Customer responds if needed ->
+Lawyer finalises -> Final document issued
+
+The lawyer should be able to: - View structured client information -
+View family - View assets - View beneficiaries - View allocations - View
+executor - View guardian - View special wishes - View generated
+clauses - View health-check warnings - Edit or replace clauses - Add
+clauses - Remove clauses - Request clarification - Add internal notes -
+Approve draft - Reject/escalate complex matter - Mark finalised -
+Generate final document - Sign or certify only to the extent legally and
+professionally appropriate
+
+32. LAWYER DASHBOARD
+
+The lawyer portal must be separate from the customer portal.
+
+Navigation: - Dashboard - New Reviews - In Review - Clarifications -
+Approved - Completed - Clients - Clause Library - Reports - Settings
+
+Dashboard metrics: - Pending reviews - In-progress reviews -
+Clarifications waiting for clients - Approved Wills - Completed Wills -
+Average review time - Complex cases - High-risk flags
+
+Example review table: Client | Complexity | Issues | Status
+
+A lawyer review page should show:
+
+Client name Complexity level Number of assets Number of beneficiaries
+Number of issues
+
+Tabs: - Client Information - Family - Assets - Beneficiaries -
+Executor - Guardian - Special Wishes - Generated Clauses - Risk Flags -
+Document Preview - Review History - Internal Notes
+
+33. CLAUSE-LEVEL LAWYER CONTROL
+
+For each clause, show: - Clause title - Clause ID - Generated wording -
+Source template version - Trigger conditions - Relevant user inputs -
+Risk flags
+
+Actions: - Edit - Replace - Remove - Add Clause - Request
+Clarification - Restore Original
+
+Every lawyer change should be logged.
+
+Version history: - System Draft — timestamp - Lawyer Revision —
+timestamp - Client Clarification — timestamp - Final Version — timestamp
+
+34. FINAL WILL SCREEN
+
+The final document interface should feel premium and professional.
+
+Show: - Document preview - Document title - Version number - Status -
+Drafted status - Lawyer reviewed status - Finalised status - Date -
+Lawyer information where appropriate - Document integrity metadata where
+appropriate
+
+Actions: - Download PDF - Download DOCX where appropriate - Print - View
+execution instructions - Request lawyer consultation - Save to Will
+Vault
+
+Suggested completion message: “Your Will is ready.”
+
+Supporting message: “You’ve taken an important step towards giving your
+family clarity about your wishes.”
+
+Do not claim that the document is legally effective merely because it
+was generated or reviewed. The interface must distinguish: - Drafted -
+Reviewed - Finalised - Executed - Registered/custodied, if applicable
+
+35. EXECUTION GUIDE
+
+The product should not stop at PDF download.
+
+Headline: “You’re almost there.”
+
+Steps: 1. Print your Will 2. Sign your Will 3. Have the required
+witnesses attest it 4. Keep the original safely 5. Consider registration
+or custody where appropriate
+
+The exact instructions must be reviewed under applicable Indian law and
+the user’s circumstances.
+
+Offer: - Lawyer-assisted execution - Registration assistance - Secure
+custody - Execution appointment - Clarification support
+
+Avoid promising that registration is always mandatory or always
+sufficient. Use legally accurate, jurisdiction-specific language.
+
+36. CUSTOMER DASHBOARD
+
+Suggested dashboard:
+
+“Welcome back, [Name].”
+
+Main card: “My Will” - Status - Progress - Version - Last updated -
+Lawyer review status
+
+Progress: - About You - Family - Assets - Beneficiaries - Executor -
+Review - Final Will
+
+Additional cards: - My Family - My Assets - Beneficiaries - Documents -
+Lawyer Review - Important Reminders
+
+Reminders: - Complete beneficiaries - Appoint executor - Review Will -
+Resolve legal health-check issue - Complete execution
+
+37. WILL VAULT
+
+Will Vault is a secure document area.
+
+Store: - Current Will - Previous Will versions - Drafts - Property
+documents - Insurance documents - Investment records - Nomination
+records - Other supporting documents
+
+Features: - Version history - Download - Preview - Access controls -
+Audit log - Document expiry/reminder metadata - Secure upload - Document
+categorisation - User-controlled deletion subject to legal retention
+obligations
+
+Do not market the vault as legally guaranteed custody unless the service
+actually provides such custody under a defined process.
+
+38. UPDATE MY WILL
+
+Headline: “Life changes. Your Will should too.”
+
+Ask: “Did anything change?”
+
+Options: - Marriage - New child - New property - New investments -
+Divorce/separation - Beneficiary passed away - New executor - New
+guardian - Business change - Something else
+
+The system should: - Load existing structured data - Show changed
+modules - Create a new version - Preserve previous versions - Re-run
+legal health checks - Generate a new draft - Send for lawyer review if
+required
+
+39. ANNUAL REVIEW
+
+Headline: “Is your Will still right for your life?”
+
+Show: - Last reviewed date - Family review - Asset review - Beneficiary
+review - Executor review - Guardian review - Special wishes review
+
+The product can send reminders, but reminders must not imply that a Will
+automatically expires annually. The purpose is to encourage review after
+life changes.
+
+40. LAWYER CONSULTATION
+
+Offer consultation for: - Complex estates - Business interests - Foreign
+assets - Family disputes - Joint ownership - Unusual beneficiary
+arrangements - Guardianship questions - Existing Will conflicts -
+Special legal concerns
+
+Lawyer cards may show: - Name - Practice area - Experience -
+Availability - Consultation duration - Fee - Booking CTA
+
+The lawyer marketplace should be introduced only if operationally and
+professionally feasible.
+
+41. REGISTRATION ASSISTANCE
+
+Page headline: “Want help completing the process?”
+
+Explain the stages: - Will preparation - Execution - Registration
+assistance where appropriate - Secure storage
+
+CTA: “Get Assistance”
+
+The exact service scope, pricing, and legal claims require review.
+
+42. SUPPORT PAGE
+
+Headline: “We’re here if you need us.”
+
+Support options: - Chat with support - Talk to the team - Speak to a
+lawyer - Email support - Help centre - FAQs - Ticket status
+
+Support should not be hidden only inside an FAQ.
+
+43. MOBILE UX
+
+Design mobile-first.
+
+During questionnaire: - Back arrow - Step number - Progress bar - One
+question - Large input - Continue button - Save status - Help link
+
+Example: Step 4 of 8 Progress bar “Tell us about your family” Family
+member cards “+ Add Family Member” “Continue”
+
+Use: - Large touch targets - Minimal typing - Select controls - Date
+pickers - Cards - Clear error states - Sticky bottom CTA where
+appropriate - No clutter
+
+Possible customer bottom navigation: - Home - My Will - Family -
+Assets - More
+
+44. DESIGN SYSTEM
+
+Brand personality: - Legal authority - Technology - Trust - Simplicity -
+Professionalism - Human understanding
+
+Recommended visual system: - Deep navy or indigo - White and light grey
+surfaces - Electric violet or restrained red accent - Thin borders -
+Rounded cards - Subtle shadows - Professional icons - Modern sans-serif
+UI typography - Optional elegant serif for selected marketing headings -
+Minimal photography - Document and dashboard visuals
+
+Avoid: - Excessive heart motifs - Overly sentimental imagery -
+Aggressive sales colours - Too many gradients - Excessive animations -
+Generic law-firm visuals - Overly technical AI branding - Unclear legal
+claims
+
+The supplied Legal Recovery screenshot should be treated as a visual
+reference for: - Navigation structure - Hero composition - Product
+preview - Dashboard-in-hero layout - CTA hierarchy - Professional
+LegalTech feel - Strong headline typography - Clear red/primary action
+button - Structured SaaS cards
+
+45. TECHNICAL ARCHITECTURE
+
+Recommended frontend: - Next.js - React - TypeScript - Responsive web
+application - SEO-friendly public pages - Shared design system
+
+Recommended backend: - Node.js with NestJS OR Python with FastAPI -
+TypeScript is suitable if the team is primarily JavaScript/React-based -
+API-first architecture - Background jobs for document generation and
+notifications
+
+Database: - PostgreSQL
+
+Suggested entities/tables: - User - UserProfile - FamilyMember -
+FamilyRelationship - Asset - AssetOwnership - Beneficiary - Allocation -
+Executor - Guardian - SpecialWish - Questionnaire -
+QuestionnaireQuestion - QuestionnaireResponse - DecisionRule -
+LegalCheck - LegalIssue - Clause - ClauseVersion - Will - WillVersion -
+WillDraft - Lawyer - LawyerReview - ReviewComment -
+ClarificationRequest - Document - DocumentVersion - Payment - Invoice -
+Notification - AuditLog - ConsentRecord - SecurityEvent
+
+Do not make the PDF the primary source of truth. Structured data should
+be the primary source. The PDF/DOCX is a generated representation of
+that data.
+
+46. DATA MODEL PRINCIPLES
+
+Store: - Raw user response where appropriate - Normalised structured
+data - Data provenance - Who entered or changed the data - Timestamp -
+Validation status - Review status - Legal issue status - Clause version
+used - Document version - Lawyer changes - Client clarifications - Final
+approval
+
+Every meaningful change should be auditable.
+
+47. SECURITY AND PRIVACY
+
+Because the product handles highly sensitive personal, family,
+financial, and legal information, security must be designed from the
+beginning.
+
+Consider: - Encryption in transit - Encryption at rest - Strong
+authentication - Optional multi-factor authentication - Role-based
+access control - Least-privilege access - Secure document storage -
+Signed URLs or equivalent controlled access - Audit logs - Session
+expiry - Account recovery controls - Data retention policy - Data
+deletion policy - Privacy policy - Consent records - Lawyer access
+logging - Admin access logging - Backup and disaster recovery - Secure
+file scanning - Protection against document enumeration - Protection
+against insecure direct object references - Rate limiting - Monitoring
+and incident response
+
+Do not claim absolute security. Use accurate and reviewable language.
+
+48. PAYMENTS
+
+Payment can be placed: - Before lawyer review - After the user completes
+a free Will plan - At the point where the draft is ready - Based on
+plan/complexity
+
+A product-led approach discussed earlier: Allow the user to experience
+the questionnaire and build a Will plan before requiring payment.
+
+At the end: “Your Will plan is ready. Choose how you’d like to proceed.”
+
+Plans: - Automated Will - Lawyer Verified - Premium Legal Assistance
+
+Payment system requirements: - Payment gateway - Payment status - Failed
+payment handling - Refund handling - Invoice - Tax/GST treatment where
+applicable - Plan entitlement - Lawyer assignment trigger - Payment
+audit log
+
+49. NOTIFICATIONS
+
+Possible notifications: - Welcome - Saved progress - Questionnaire
+incomplete - Legal issue detected - Payment confirmation - Draft ready -
+Lawyer assigned - Clarification required - Lawyer review completed -
+Final Will ready - Execution reminder - Annual review reminder - Will
+update reminder
+
+Users should control notification preferences.
+
+50. LEGAL AND PROFESSIONAL GOVERNANCE
+
+The legal team must define: - Applicable jurisdiction - Applicable
+personal-law questions - Which users/cases the platform can serve -
+Which cases require mandatory lawyer review - Which cases the platform
+cannot handle automatically - Required disclosures - Required consents -
+Execution instructions - Witness instructions - Registration guidance -
+Document retention - Lawyer responsibilities - Scope of lawyer
+verification - Whether the lawyer is reviewing form, substance, or
+both - What “verified” means - How complex cases are escalated
+
+The phrase “lawyer verified” must be clearly defined and should not
+imply a guarantee of enforceability or legal outcome.
+
+51. EDGE CASES TO SUPPORT
+
+Create a dedicated edge-case tab and test suite.
+
+Potential edge cases: - Single person - Married person - Multiple
+marriages where legally relevant - Separated person - Divorced person -
+Widowed person - No children - Adult children - Minor children -
+Stepchildren - Adopted children - Dependants - Disabled dependants where
+legally relevant - Joint property - Property with loan - Multiple
+properties - Foreign assets - Business ownership - Partnership
+interests - Shares - Digital assets - Jewellery - Charitable gifts -
+Beneficiary predeceases testator - Executor unavailable - Alternate
+executor - Guardian unavailable - Equal distribution - Unequal
+distribution - Specific bequests - Residuary estate - Existing Will -
+User wants to revoke previous Will - Conflicting instructions -
+Duplicate beneficiaries - Missing asset ownership - Incomplete family
+details - User changes mind - User abandons process - Payment failure -
+Lawyer asks for clarification - User does not respond - Lawyer rejects
+case as complex - User wants a new version - User requests deletion -
+User dies before execution, where operationally relevant - User wants
+registration assistance - User wants consultation only
+
+52. QA AND TESTING
+
+Testing must include:
+
+Functional testing: - All question paths - Conditional questions - Data
+validation - Asset allocation - 100% allocation checks - Draft
+generation - Lawyer review - Versioning - Downloads - Payments -
+Notifications
+
+Legal content testing: - Clause triggers - Clause exclusions -
+Jurisdiction applicability - Minor beneficiary logic - Residuary logic -
+Executor logic - Guardian logic - Joint ownership warnings -
+Contradiction detection
+
+Security testing: - Authentication - Authorisation - Document access -
+Lawyer access - Admin access - File uploads - Session management - Audit
+logs - Data deletion - Rate limiting
+
+Usability testing: - First-time users - Older users - Mobile users -
+Users with low legal literacy - Users who do not know exact asset
+values - Users who pause and resume - Users who need help
+
+53. DEVELOPMENT TEAM
+
+Minimum practical MVP team:
+
+1.  Product/UI UX designer Responsibilities:
+
+-   Design system
+-   Public website
+-   Questionnaire
+-   Dashboard
+-   Lawyer portal
+-   Mobile UX
+-   Prototypes
+-   Usability testing
+
+2.  Full-stack developer Responsibilities:
+
+-   Frontend
+-   Backend
+-   Authentication
+-   Database
+-   APIs
+-   Dashboard
+
+3.  Backend/AI engineer Could initially be the same person if capable.
+    Responsibilities:
+
+-   Rules engine
+-   Document generation
+-   AI-assisted classification
+-   Validation
+-   Integrations
+
+4.  Legal/product owner Responsibilities:
+
+-   Questionnaire
+-   Clause library
+-   Legal rules
+-   Edge cases
+-   Review checklist
+-   Service scope
+-   Legal disclaimers
+
+5.  One or two reviewing lawyers Responsibilities:
+
+-   Validate generated Wills
+-   Approve clauses
+-   Test scenarios
+-   Review complex cases
+-   Define escalation rules
+
+54. FIRST 30 DAYS ROADMAP
+
+WEEK 1 — LEGAL PRODUCT DESIGN - Define service scope - Define target
+users - Create questionnaire - Create decision tree - Create clause
+library - Define legal edge cases - Define Will structure - Define
+lawyer review checklist - Define legal health checks - Define what
+“lawyer verified” means
+
+WEEK 2 — UX DESIGN - Design homepage - Design public website - Design
+onboarding - Design questionnaire - Design family module - Design asset
+module - Design beneficiary allocation - Design executor - Design
+guardian - Design review - Design legal health check - Design payment -
+Design lawyer review - Design final Will - Design dashboard - Design
+mobile screens
+
+WEEK 3 — TECHNICAL FOUNDATION - Authentication - User profile - Database
+schema - Questionnaire engine - Family system - Asset system -
+Beneficiary system - Basic dashboard - Role-based access
+
+WEEK 4 — DOCUMENT ENGINE - Clause engine - Will templates - DOCX
+generation - PDF generation - Legal checks - Versioning - Lawyer
+dashboard - Review workflow - Audit logging
+
+55. FIRST PRODUCT WORKSHOP
+
+The first workshop should produce these spreadsheet tabs:
+
+1.  Questions
+2.  Decision Tree
+3.  Family Members
+4.  Assets
+5.  Beneficiary Rules
+6.  Legal Checks
+7.  Clause Library
+8.  Will Structure
+9.  Lawyer Review Checklist
+10. Edge Cases
+11. User States
+12. Document Statuses
+13. Notification Events
+14. Pricing and Entitlements
+15. Legal Disclaimers
+16. Data Fields
+17. Validation Rules
+18. Audit Events
+
+Suggested question spreadsheet columns: - Question ID - Section -
+Question text - Plain-language explanation - Input type - Required or
+optional - Condition - Validation rule - Data field - Next question -
+Legal significance - Clause impact - Warning impact - Lawyer review
+requirement
+
+56. PRODUCT PRINCIPLE
+
+Every screen should answer one clear question.
+
+Avoid one giant form containing: - Name - Date of birth - Address -
+Marital status - Children - Parents - Employment - Assets -
+Beneficiaries
+
+Instead: “What’s your full name?” Continue. “When were you born?”
+Continue. “Are you married?” Continue.
+
+The experience may technically contain many steps, but it should feel
+psychologically easy.
+
+57. BRAND AND COPY PRINCIPLES
+
+Use plain language.
+
+Instead of: “Enter beneficiary details.”
+
+Use: “Who should receive this?”
+
+Instead of: “Appoint a testamentary executor.”
+
+Use: “Who would you trust to carry out your wishes?”
+
+Instead of: “Input residuary beneficiary.”
+
+Use: “Who should receive anything not specifically mentioned?”
+
+Instead of: “Generate testamentary instrument.”
+
+Use: “Prepare your Will.”
+
+Legal terminology may be shown with an explanation when necessary.
+
+58. CORE DIFFERENTIATOR
+
+The signature feature should be the Legal Health Check.
+
+The product should not merely collect answers and produce a document.
+
+It should: - Detect missing information - Detect inconsistent
+instructions - Detect allocation problems - Detect minor beneficiaries -
+Detect joint ownership - Detect missing residuary planning - Detect
+executor gaps - Detect guardian gaps - Detect complex assets - Escalate
+cases to lawyers - Give users a clear explanation of what needs
+attention
+
+This is what makes the product genuinely LegalTech.
+
+59. LONG-TERM PRODUCT EXPANSION
+
+After the MVP, the platform can expand into:
+
+-   Estate planning
+-   Succession planning
+-   Business succession
+-   Family document vault
+-   Nomination review
+-   Insurance document management
+-   Property document management
+-   Legal consultation
+-   Registration assistance
+-   Secure custody
+-   Annual review subscriptions
+-   Multi-language support
+-   Family access and emergency instructions
+-   Additional legal documents
+-   Trust-related services where professionally appropriate
+-   Power of attorney-related workflows where professionally appropriate
+
+The long-term vision: “WillDrafting.com — your family’s digital
+estate-planning platform.”
+
+60. FINAL RECOMMENDATION
+
+Start with the legal logic, not the website.
+
+The correct order is:
+
+1.  Define legal scope
+2.  Build questionnaire and decision tree
+3.  Build clause library
+4.  Build legal rules
+5.  Build legal health checks
+6.  Design user experience
+7.  Build structured database
+8.  Build document engine
+9.  Build lawyer portal
+10. Build customer dashboard
+11. Test real scenarios
+12. Launch a controlled MVP
+13. Expand based on lawyer and customer feedback
+
+The website and UI are important, but they are not the core intellectual
+property.
+
+The core intellectual property is: - Structured legal data model -
+Questionnaire decision tree - Clause library - Rules engine - Legal
+health-check system - Lawyer review workflow - Version-controlled
+document engine - Secure Will Vault
+
+The product should ultimately feel like:
+
+A trusted law firm on the outside, a simple fintech-style workflow in
+the middle, and a sophisticated legal rules and document engine
+underneath.
+
+The final guiding statement:
+
+“WillDrafting.com is not just a website that generates a PDF. It is a
+legal-tech platform that helps people express their wishes clearly,
+checks their information systematically, brings in a lawyer when needed,
+and keeps their Will organised for the future.”

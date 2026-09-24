@@ -1,49 +1,529 @@
+/* ==========================================================================
+   WILLDRAFTING DESIGN SYSTEM (globals.css)
+   Colors strictly adhere to user specification:
+     Navy:     #1B2A4A — Header, nav bar, form field labels, primary brand anchor
+     Slate:    #3B5173 — Body headings, secondary buttons, links, accents
+     Gold:     #C9A227 — Primary CTA ("start my will", "download") with charcoal text
+     Sage:     #7C9473 — Progress indicators, "saved"/success states, secondary CTA
+     Cream:    #FAF7F0 — Page background instead of pure white
+     Charcoal: #2B2B2B — Body text instead of pure black
+   Typography: Single unified font (Plus Jakarta Sans) throughout the entire app.
+   ========================================================================== */
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* -------------------------------------------------------------------------
+     STRICT PALETTE TOKENS
+     ------------------------------------------------------------------------- */
+  --color-navy: #1B2A4A;
+  --color-slate: #3B5173;
+  --color-gold: #C9A227;
+  --color-sage: #7C9473;
+  --color-cream: #FAF7F0;
+  --color-charcoal: #2B2B2B;
+
+  /* -------------------------------------------------------------------------
+     SEMANTIC THEME TOKENS
+     ------------------------------------------------------------------------- */
+  --bg-page: var(--color-cream);
+  --bg-card: #FFFFFF;
+  --bg-card-subtle: #FDFBF7;
+  --bg-header: var(--color-navy);
+  --bg-navy-deep: #121D34;
+  --bg-navy-light: #24375F;
+
+  /* Typography Colors */
+  --text-main: var(--color-charcoal);
+  --text-heading: var(--color-slate);
+  --text-heading-dark: var(--color-navy);
+  --text-muted: #64748B;
+  --text-inverse: #FFFFFF;
+  --form-label-color: var(--color-navy);
+
+  /* Primary CTA (Gold + Charcoal text) */
+  --cta-primary-bg: var(--color-gold);
+  --cta-primary-text: var(--color-charcoal);
+  --cta-primary-hover: #B8921E;
+  --cta-primary-active: #A58117;
+
+  /* Secondary CTA (Slate) */
+  --cta-secondary-bg: var(--color-slate);
+  --cta-secondary-text: #FFFFFF;
+  --cta-secondary-hover: #2F425F;
+
+  /* Sage Status / Actions */
+  --status-sage: var(--color-sage);
+  --status-sage-bg: rgba(124, 148, 115, 0.12);
+  --status-sage-border: rgba(124, 148, 115, 0.3);
+  --cta-sage-bg: var(--color-sage);
+  --cta-sage-text: #FFFFFF;
+  --cta-sage-hover: #697F61;
+
+  /* Interactive Links */
+  --link-color: var(--color-slate);
+  --link-hover: var(--color-navy);
+
+  /* Borders & Dividers */
+  --border-subtle: rgba(27, 42, 74, 0.08);
+  --border-card: rgba(27, 42, 74, 0.1);
+  --border-focus: var(--color-navy);
+
+  /* Shadows */
+  --shadow-sm: 0 1px 3px rgba(27, 42, 74, 0.05);
+  --shadow-md: 0 6px 20px -4px rgba(27, 42, 74, 0.08);
+  --shadow-lg: 0 14px 34px -6px rgba(27, 42, 74, 0.12);
+  --shadow-gold: 0 4px 14px rgba(201, 162, 39, 0.28);
+
+  /* Geometry */
+  --max-width: 1200px;
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --radius-xl: 22px;
+  --transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* STRICTLY ONE UNIFIED FONT: POPPINS */
+  --font-main: var(--font-poppins), 'Poppins', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-heading: var(--font-poppins), 'Poppins', sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.font-poppins {
+  font-family: var(--font-main) !important;
+}
+
+/* Base Resets */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 html {
-  height: 100%;
-}
-
-html,
-body {
+  font-size: 16px;
+  scroll-behavior: smooth;
   max-width: 100vw;
   overflow-x: hidden;
 }
 
 body {
-  min-height: 100%;
-  display: flex;
-  flex-direction: column;
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--bg-page);
+  color: var(--text-main);
+  font-family: var(--font-main);
+  font-size: 1rem;
+  line-height: 1.65;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  max-width: 100vw;
+  overflow-x: hidden;
 }
 
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+img, svg, video {
+  max-width: 100%;
+}
+
+/* Headings use the exact same single font with clear weight & scale */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-main);
+  color: var(--text-heading);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.22;
+}
+
+p {
+  color: var(--text-main);
+  margin-bottom: 1rem;
 }
 
 a {
-  color: inherit;
+  color: var(--link-color);
   text-decoration: none;
+  transition: var(--transition);
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+a:hover {
+  color: var(--link-hover);
+}
+
+button, input, select, textarea {
+  font-family: var(--font-main);
+}
+
+/* Containers */
+.container {
+  width: 100%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
+}
+
+.section {
+  padding: 5rem 0;
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 3rem 0;
+  }
+  .container {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
   }
 }
+
+@media (max-width: 480px) {
+  .section {
+    padding: 2.25rem 0;
+  }
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+/* Ensure inputs never auto-zoom on iOS Safari on mobile */
+@media (max-width: 768px) {
+  input, select, textarea, .form-input, .phone-input-field {
+    font-size: 16px !important;
+  }
+  
+  /* Mobile heading scales */
+  h1 {
+    font-size: clamp(1.65rem, 5.5vw, 2.25rem) !important;
+    line-height: 1.25 !important;
+  }
+  h2 {
+    font-size: clamp(1.4rem, 4.5vw, 1.85rem) !important;
+    line-height: 1.28 !important;
+  }
+  h3 {
+    font-size: clamp(1.12rem, 3.5vw, 1.35rem) !important;
+    line-height: 1.35 !important;
+  }
+}
+
+/* Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-family: var(--font-main);
+  font-size: 0.95rem;
+  font-weight: 600;
+  padding: 0.825rem 1.65rem;
+  border-radius: var(--radius-md);
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: var(--transition);
+  text-decoration: none;
+  line-height: 1.25;
+}
+
+/* Primary CTA: Gold with Charcoal text */
+.btn-gold {
+  background-color: var(--cta-primary-bg);
+  color: var(--cta-primary-text) !important;
+  border-color: var(--cta-primary-bg);
+  box-shadow: var(--shadow-gold);
+}
+
+.btn-gold:hover {
+  background-color: var(--cta-primary-hover);
+  border-color: var(--cta-primary-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 22px rgba(201, 162, 39, 0.38);
+}
+
+.btn-gold:active {
+  background-color: var(--cta-primary-active);
+  transform: translateY(0);
+}
+
+/* Secondary Button: Slate */
+.btn-slate {
+  background-color: var(--cta-secondary-bg);
+  color: #FFFFFF !important;
+  border-color: var(--cta-secondary-bg);
+}
+
+.btn-slate:hover {
+  background-color: var(--cta-secondary-hover);
+  border-color: var(--cta-secondary-hover);
+  transform: translateY(-2px);
+}
+
+/* Sage Action */
+.btn-sage {
+  background-color: var(--cta-sage-bg);
+  color: #FFFFFF !important;
+  border-color: var(--cta-sage-bg);
+}
+
+.btn-sage:hover {
+  background-color: var(--cta-sage-hover);
+  border-color: var(--cta-sage-hover);
+  transform: translateY(-2px);
+}
+
+/* Outline Buttons */
+.btn-outline-navy {
+  background-color: transparent;
+  color: var(--color-navy) !important;
+  border-color: var(--color-navy);
+}
+
+.btn-outline-navy:hover {
+  background-color: var(--color-navy);
+  color: #FFFFFF !important;
+}
+
+.btn-outline-slate {
+  background-color: transparent;
+  color: var(--color-slate) !important;
+  border-color: rgba(59, 81, 115, 0.3);
+}
+
+.btn-outline-slate:hover {
+  border-color: var(--color-slate);
+  background-color: rgba(59, 81, 115, 0.05);
+}
+
+/* Badges / Status Pills (Sage) */
+.pill-sage {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.3rem 0.75rem;
+  border-radius: 9999px;
+  background-color: var(--status-sage-bg);
+  color: var(--color-sage);
+  border: 1px solid var(--status-sage-border);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.pill-navy {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.3rem 0.75rem;
+  border-radius: 9999px;
+  background-color: rgba(27, 42, 74, 0.08);
+  color: var(--color-navy);
+  border: 1px solid rgba(27, 42, 74, 0.16);
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+/* Form Styles */
+.form-label {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--form-label-color);
+  margin-bottom: 0.4rem;
+  letter-spacing: 0.01em;
+}
+
+.form-input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  background-color: #FFFFFF;
+  border: 1px solid rgba(27, 42, 74, 0.16);
+  border-radius: var(--radius-md);
+  color: var(--color-charcoal);
+  font-family: inherit;
+  font-size: 0.95rem;
+  transition: var(--transition);
+  outline: none;
+}
+
+.form-input:focus {
+  border-color: var(--border-focus);
+  box-shadow: 0 0 0 3px rgba(27, 42, 74, 0.09);
+}
+
+/* Unified Phone Input Group with Country Prefix */
+.phone-input-group {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background-color: #FFFFFF;
+  border: 1px solid rgba(27, 42, 74, 0.16);
+  border-radius: var(--radius-md);
+  padding: 0 1rem;
+  transition: var(--transition);
+}
+
+.phone-input-group:focus-within {
+  border-color: var(--border-focus);
+  box-shadow: 0 0 0 3px rgba(27, 42, 74, 0.09);
+}
+
+.phone-prefix {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--color-navy);
+  font-weight: 600;
+  font-size: 0.95rem;
+  flex-shrink: 0;
+  user-select: none;
+}
+
+.phone-divider {
+  width: 1px;
+  height: 1.35rem;
+  background-color: rgba(27, 42, 74, 0.16);
+  margin: 0 0.85rem;
+  flex-shrink: 0;
+}
+
+.phone-input-field {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 0.75rem 0;
+  font-size: 0.95rem;
+  color: var(--color-charcoal);
+  font-family: inherit;
+  width: 100%;
+}
+
+/* Progress bar */
+.progress-bar-track {
+  width: 100%;
+  height: 6px;
+  background-color: rgba(27, 42, 74, 0.08);
+  border-radius: 9999px;
+  overflow: hidden;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  background-color: var(--color-sage);
+  border-radius: 9999px;
+}
+
+/* ==========================================================================
+   PRICING PAGE STYLES (Clean, responsive, interactive, zero-slop)
+   ========================================================================== */
+.pricing-card-split {
+  display: grid;
+  grid-template-columns: 1.25fr 0.85fr;
+  transition: var(--transition);
+}
+
+.pricing-card-price-side {
+  border-left: 1px solid #E2E8F0;
+}
+
+@media (max-width: 880px) {
+  .pricing-card-split {
+    grid-template-columns: 1fr !important;
+  }
+  .pricing-card-price-side {
+    border-left: none !important;
+    border-top: 1px solid #E2E8F0 !important;
+  }
+}
+
+.pricing-inclusion-card {
+  transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.2s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.2s ease;
+}
+
+.pricing-inclusion-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 24px -6px rgba(27, 42, 74, 0.08);
+  border-color: rgba(201, 162, 39, 0.4) !important;
+}
+
+.pricing-table-wrapper {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  border-radius: var(--radius-lg);
+  border: 1px solid #E2E8F0;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+.pricing-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 0.9rem;
+}
+
+.pricing-table th,
+.pricing-table td {
+  padding: 1.1rem 1.4rem;
+}
+
+@media (max-width: 768px) {
+  .pricing-table {
+    min-width: 640px;
+  }
+}
+
+.pricing-faq-details {
+  transition: border-color 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.pricing-faq-details:hover {
+  border-color: rgba(201, 162, 39, 0.4) !important;
+}
+
+.pricing-faq-details[open] {
+  background-color: #FFFFFF !important;
+  border-color: rgba(201, 162, 39, 0.5) !important;
+  box-shadow: 0 6px 16px rgba(10, 17, 40, 0.05);
+}
+
+.pricing-faq-details summary::-webkit-details-marker {
+  display: none;
+}
+
+.pricing-faq-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: rgba(201, 162, 39, 0.12);
+  color: var(--color-gold);
+  font-size: 1.1rem;
+  font-weight: 700;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.pricing-faq-details[open] .pricing-faq-icon {
+  transform: rotate(45deg);
+  background-color: rgba(201, 162, 39, 0.22);
+}
+
+/* Global Editorial Card & Component Mobile Overrides */
+@media (max-width: 640px) {
+  .editorial-card {
+    padding: 1.35rem 1.15rem !important;
+    border-radius: var(--radius-md) !important;
+  }
+}
+
+/* Pricing Notice Split Harmonization */
+@media (max-width: 860px) {
+  .pricing-split {
+    grid-template-columns: 1fr !important;
+  }
+  .pricing-split > div:first-child {
+    padding: 1.5rem 1.15rem !important;
+  }
+  .pricing-split > div:last-child {
+    padding: 1.5rem 1.15rem !important;
+    border-left: none !important;
+    border-top: 1px solid var(--border-subtle) !important;
+  }
+}
+
