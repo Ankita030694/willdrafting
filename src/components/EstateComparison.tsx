@@ -2,149 +2,159 @@
 
 import React from "react";
 import Link from "next/link";
+import { X, Check, ArrowUpRight } from "lucide-react";
 
-const comparisonRows = [
+interface ComparisonRow {
+  topic: string;
+  withoutWill: string;
+  withWill: string;
+}
+
+const comparisonRows: ComparisonRow[] = [
   {
     topic: "Asset Distribution",
-    withoutWill: "Divided strictly per statutory formulas under Hindu Succession Act / Indian Succession Act, regardless of your personal wishes.",
-    withWill: "Distributed exactly according to your specified percentages to named beneficiaries, spouses, and children.",
+    withoutWill:
+      "Divided strictly per statutory formulas under Hindu Succession Act / Indian Succession Act, regardless of your personal wishes.",
+    withWill:
+      "Distributed exactly according to your specified percentages to named beneficiaries, spouses, and children.",
   },
   {
     topic: "Access to Bank Accounts & Shares",
-    withoutWill: "Financial institutions freeze funds until heirs obtain an expensive Succession Certificate or Letter of Administration from court.",
-    withWill: "Your appointed Executor claims assets directly with the certified copy of your legally attested will.",
+    withoutWill:
+      "Financial institutions freeze funds until heirs obtain an expensive Succession Certificate or Letter of Administration from court.",
+    withWill:
+      "Your appointed Executor claims assets directly with the certified copy of your legally attested will.",
   },
   {
     topic: "Guardianship for Minor Children",
-    withoutWill: "A family court judge decides who raises your minor children after evaluating competing claims from relatives.",
-    withWill: "You designate the exact trusted legal guardians you want caring for your children.",
+    withoutWill:
+      "A family court judge decides who raises your minor children after evaluating competing claims from relatives.",
+    withWill:
+      "You designate the exact trusted legal guardians you want caring for your children.",
   },
   {
     topic: "Settlement Timeline & Legal Costs",
-    withoutWill: "Typically takes 12 to 24 months in court proceedings, costing tens of thousands in legal representation.",
-    withWill: "Drafted in 15 minutes, immediately legally binding upon signing before two independent witnesses.",
+    withoutWill:
+      "Typically takes 12 to 24 months in court proceedings, costing tens of thousands in legal representation.",
+    withWill:
+      "Drafted in 15 minutes, immediately legally binding upon signing before two independent witnesses.",
   },
 ];
 
 export default function EstateComparison() {
   return (
-    <section className="section" style={{ backgroundColor: "#FFFFFF", borderBottom: "1px solid var(--border-subtle)" }}>
-      <div className="container">
-        {/* Section Header */}
-        <div className="comparison-header-wrap" style={{ maxWidth: "680px", margin: "0 auto 3rem auto", textAlign: "center" }}>
-          <h2
-            style={{
-              fontSize: "clamp(1.55rem, 4.5vw, 2.5rem)",
-              color: "var(--color-navy)",
-              marginBottom: "0.85rem",
-              fontWeight: 700,
-              lineHeight: 1.25,
-            }}
-          >
-            What happens if you don&apos;t have a will?
-          </h2>
-          <p style={{ fontSize: "clamp(0.92rem, 2.5vw, 1.05rem)", color: "var(--color-charcoal)", lineHeight: 1.65, margin: 0 }}>
-            In India, dying without a will is called dying intestate. The state decides how your estate is distributed,
-            frequently leading to prolonged court disputes among family members.
-          </p>
-        </div>
-
-        {/* Comparison Table / Grid */}
-        <div
-          style={{
-            maxWidth: "960px",
-            margin: "0 auto",
-            border: "1px solid var(--border-subtle)",
-            borderRadius: "var(--radius-lg)",
-            overflow: "hidden",
-            boxShadow: "var(--shadow-editorial)",
-          }}
-        >
-          {/* Table Header */}
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1.2fr 1fr 1fr",
-              backgroundColor: "var(--bg-card-subtle)",
-              borderBottom: "1px solid var(--border-subtle)",
-              padding: "1.25rem 1.75rem",
-              fontWeight: 600,
-              fontSize: "0.9rem",
-            }}
-            className="comparison-header"
-          >
-            <div style={{ color: "var(--color-slate)" }}>Estate Scenario</div>
-            <div style={{ color: "#991B1B" }}>Dying Without a Will</div>
-            <div style={{ color: "var(--color-navy)" }}>With WillDrafting</div>
+    <section className="w-full bg-[#FAF7F0] py-16 sm:py-24 lg:py-28 flex justify-center">
+      <div className="w-full max-w-[1400px] 2xl:max-w-8xl mx-auto px-6 sm:px-8 lg:px-12">
+        
+        {/* =========================================================================
+            HEADER: Eyebrow Pill, Playfair Headline, and Subheading
+            ========================================================================= */}
+        <div className="flex flex-col items-center text-center max-w-3xl mx-auto mb-12 sm:mb-16">
+          {/* Eyebrow badge */}
+          <div className="flex items-center gap-2 mb-4 sm:mb-5">
+            
+            <span className="text-[0.75rem] font-bold tracking-[0.16em] uppercase text-[#C65378]">
+              Intestacy vs Planning
+            </span>
           </div>
 
-          {/* Comparison Rows */}
-          {comparisonRows.map((row, idx) => (
-            <div
-              key={idx}
-              style={{
-                display: "grid",
-                gridTemplateColumns: "1.2fr 1fr 1fr",
-                padding: "1.5rem 1.75rem",
-                borderBottom: idx === comparisonRows.length - 1 ? "none" : "1px solid var(--border-subtle)",
-                backgroundColor: idx % 2 === 0 ? "#FFFFFF" : "var(--bg-page)",
-                gap: "1rem",
-                alignItems: "flex-start",
-              }}
-              className="comparison-row"
-            >
-              <div>
-                <span style={{ fontSize: "0.95rem", fontWeight: 700, color: "var(--color-navy)" }}>
-                  {row.topic}
-                </span>
+          {/* Main Title with Playfair Serif & Italic Accents */}
+          <h2 className="text-[2.35rem] sm:text-[3.2rem] lg:text-[3.65rem] font-normal font-playfair font-serif text-[#172228] leading-[1.08] tracking-tight mb-4 sm:mb-5">
+            What happens if you don&apos;t have a will?
+          </h2>
+
+          
+        </div>
+
+        {/* =========================================================================
+            COMPARISON TABLE CARD: Max-W-8xl Editorial Design
+            ========================================================================= */}
+        <div className="w-full rounded-[28px] sm:rounded-[36px] bg-[#EBE7DF] p-1.5 sm:p-2 shadow-[0_4px_24px_rgba(0,0,0,0.03)] border border-[#1B2A4A]/5">
+          <div className="bg-white rounded-[24px] sm:rounded-[30px] overflow-hidden border border-[#1B2A4A]/5">
+            
+            {/* Desktop Table Header */}
+            <div className="hidden md:grid md:grid-cols-12 gap-8 px-8 lg:px-10 py-5 bg-[#FAF7F0]/70 border-b border-[#1B2A4A]/5 text-xs font-bold uppercase tracking-[0.12em]">
+              <div className="col-span-4 text-[#55636D]">
+                Estate Scenario
               </div>
-              <div>
-                <div style={{ display: "flex", alignItems: "flex-start", gap: "0.5rem" }}>
-                  <span style={{ color: "#DC2626", fontWeight: 700, fontSize: "0.9rem", marginTop: "1px" }}>✕</span>
-                  <span style={{ fontSize: "0.875rem", color: "var(--color-charcoal)", lineHeight: 1.55 }}>
-                    {row.withoutWill}
-                  </span>
-                </div>
+              <div className="col-span-4 text-[#B91C1C] flex items-center gap-1.5">
+                <span className="w-2 h-2 rounded-full bg-[#B91C1C] inline-block" />
+                <span>Dying Without a Will</span>
               </div>
-              <div>
-                <div style={{ display: "flex", alignItems: "flex-start", gap: "0.5rem" }}>
-                  <span style={{ color: "var(--color-sage)", fontWeight: 700, fontSize: "0.9rem", marginTop: "1px" }}>✓</span>
-                  <span style={{ fontSize: "0.875rem", color: "var(--color-charcoal)", lineHeight: 1.55 }}>
-                    {row.withWill}
-                  </span>
-                </div>
+              <div className="col-span-4 text-[#047857] flex items-center gap-1.5">
+                <span className="w-2 h-2 rounded-full bg-[#047857] inline-block" />
+                <span>With WillDrafting</span>
               </div>
             </div>
-          ))}
+
+            {/* Comparison Rows */}
+            <div className="divide-y divide-[#1B2A4A]/5">
+              {comparisonRows.map((row, idx) => (
+                <div
+                  key={idx}
+                  className="grid grid-cols-1 md:grid-cols-12 gap-5 md:gap-8 px-6 sm:px-8 lg:px-10 py-6 sm:py-7 transition-colors hover:bg-[#FAF7F0]/40"
+                >
+                  {/* Topic Title */}
+                  <div className="md:col-span-4 flex items-center">
+                    <h3 className="text-[1.12rem] sm:text-[1.22rem] font-normal font-playfair font-serif text-[#172228] leading-snug tracking-tight">
+                      {row.topic}
+                    </h3>
+                  </div>
+
+                  {/* Without Will */}
+                  <div className="md:col-span-4">
+                    {/* Mobile Label */}
+                    <span className="md:hidden inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-[#B91C1C] mb-2">
+                      <span className="w-1.5 h-1.5 rounded-full bg-[#B91C1C]" />
+                      <span>Dying Without a Will</span>
+                    </span>
+                    <div className="flex items-start gap-3 p-3.5 md:p-0 rounded-xl bg-red-50/40 md:bg-transparent">
+                      <div className="w-5 h-5 rounded-full bg-red-100/80 text-red-700 flex items-center justify-center shrink-0 mt-0.5">
+                        <X size={12} strokeWidth={2.5} />
+                      </div>
+                      <p className="text-[0.88rem] sm:text-[0.92rem] text-[#55636D] leading-relaxed">
+                        {row.withoutWill}
+                      </p>
+                    </div>
+                  </div>
+
+                  {/* With WillDrafting */}
+                  <div className="md:col-span-4">
+                    {/* Mobile Label */}
+                    <span className="md:hidden inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-[#047857] mb-2">
+                      <span className="w-1.5 h-1.5 rounded-full bg-[#047857]" />
+                      <span>With WillDrafting</span>
+                    </span>
+                    <div className="flex items-start gap-3 p-3.5 md:p-0 rounded-xl bg-emerald-50/40 md:bg-transparent">
+                      <div className="w-5 h-5 rounded-full bg-emerald-100/80 text-emerald-700 flex items-center justify-center shrink-0 mt-0.5">
+                        <Check size={12} strokeWidth={2.5} />
+                      </div>
+                      <p className="text-[0.88rem] sm:text-[0.92rem] text-[#172228] font-medium leading-relaxed">
+                        {row.withWill}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+
+          </div>
         </div>
 
-        {/* CTA Bar below comparison */}
-        <div style={{ marginTop: "2.5rem", textAlign: "center" }}>
-          <Link href="/start" className="btn btn-gold" style={{ padding: "0.85rem 1.85rem", fontWeight: 700 }}>
+        {/* =========================================================================
+            BOTTOM CTA BUTTON
+            ========================================================================= */}
+        <div className="mt-10 sm:mt-12 text-center flex justify-center">
+          <Link
+            href="/start"
+            className="inline-flex items-center justify-center gap-2 rounded-xl bg-[#C65378] px-7 py-3.5 text-[0.95rem] font-semibold text-white shadow-sm transition-all duration-200 hover:bg-[#9F3B5C] active:scale-95"
+          >
             <span>Protect Your Family Today</span>
-            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-              <path d="M5 12h14" />
-              <path d="m12 5 7 7-7 7" />
-            </svg>
+            <ArrowUpRight size={18} strokeWidth={2.2} />
           </Link>
         </div>
-      </div>
 
-      <style jsx>{`
-        @media (max-width: 768px) {
-          .comparison-header-wrap {
-            margin-bottom: 2rem !important;
-          }
-          :global(.comparison-header) {
-            display: none !important;
-          }
-          :global(.comparison-row) {
-            grid-template-columns: 1fr !important;
-            padding: 1.15rem 1rem !important;
-            gap: 0.75rem !important;
-          }
-        }
-      `}</style>
+      </div>
     </section>
   );
 }

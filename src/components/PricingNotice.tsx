@@ -17,7 +17,7 @@ const deliverables = [
 
 export default function PricingNotice() {
   return (
-    <section id="registration" className="section" style={{ backgroundColor: "#FFFFFF", borderBottom: "1px solid var(--border-subtle)" }}>
+    <section id="registration" className="section" style={{ backgroundColor: "#FAF7F0", borderBottom: "1px solid var(--border-subtle)" }}>
       <div className="container">
         {/* Section Header */}
         <div className="pricing-header-wrap" style={{ maxWidth: "680px", margin: "0 auto 3rem auto", textAlign: "center" }}>

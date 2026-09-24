@@ -1,12 +1,20 @@
 import type { Metadata, Viewport } from "next";
-import { Poppins } from "next/font/google";
+import { Playfair_Display, Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 import GlobalPopup from "@/components/GlobalPopup";
+import StyledJsxRegistry from "./registry";
 
-const poppins = Poppins({
-  variable: "--font-poppins",
+const playfair = Playfair_Display({
+  variable: "--font-playfair",
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700"],
+  weight: ["400", "500", "600", "700", "800", "900"],
+  display: "swap",
+});
+
+const plusJakarta = Plus_Jakarta_Sans({
+  variable: "--font-jakarta",
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700", "800"],
   display: "swap",
 });
 
@@ -44,10 +52,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={poppins.variable}>
-      <body className="font-poppins">
-        {children}
-        <GlobalPopup />
+    <html lang="en" className={`${playfair.variable} ${plusJakarta.variable}`}>
+      <body className="font-sans antialiased">
+        <StyledJsxRegistry>
+          {children}
+          <GlobalPopup />
+        </StyledJsxRegistry>
       </body>
     </html>
   );

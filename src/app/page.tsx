@@ -1,15 +1,16 @@
 import React from "react";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
-import AssetCoverage from "@/components/AssetCoverage";
+import WhyTrust from "@/components/whytrust";
+import BelowTrust from "@/components/belowtrust";
+import WhatWeDo from "@/components/whatwedo";
+import Process from "@/components/process";
 import EstateComparison from "@/components/EstateComparison";
-import HowItWorks from "@/components/HowItWorks";
-import WillPreviewSection from "@/components/WillPreviewSection";
 import LegalValidity from "@/components/LegalValidity";
-import TestimonialsSection from "@/components/TestimonialsSection";
-import PricingNotice from "@/components/PricingNotice";
-import FAQSection from "@/components/FAQSection";
-import CallToActionBanner from "@/components/CallToActionBanner";
+import Pricing from "@/components/pricing";
+import Testimonial from "@/components/testimonial";
+import FAQ from "@/components/faq";
+import CTA from "@/components/cta";
 import Footer from "@/components/Footer";
 
 export default function Home() {
@@ -18,15 +19,16 @@ export default function Home() {
       <Navbar />
       <main style={{ flex: "1 0 auto" }}>
         <Hero />
-        <AssetCoverage />
+        <WhyTrust />
+        <BelowTrust />
+        <WhatWeDo />
+        <Process />
         <EstateComparison />
-        <HowItWorks />
-        <WillPreviewSection />
-        <LegalValidity />
-        <TestimonialsSection />
-        <PricingNotice />
-        <FAQSection />
-        <CallToActionBanner />
+        
+        <Pricing />
+        <Testimonial />
+        <FAQ />
+        <CTA />
       </main>
       <Footer />
     </div>

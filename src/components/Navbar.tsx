@@ -13,21 +13,10 @@ interface NavItem {
 }
 
 const NAV_ITEMS: NavItem[] = [
-  { label: "Home A", href: "/" },
-  { label: "Home B", href: "/#home-b" },
-  {
-    label: "Pages",
-    href: "#",
-    hasDropdown: true,
-    dropdownItems: [
-      { label: "How It Works", href: "/how-it-works" },
-      { label: "Legal Validity", href: "/authority" },
-      { label: "Pricing Plan", href: "/pricing" },
-      { label: "Start Will", href: "/start" },
-    ],
-  },
-  { label: "About", href: "/#about" },
-  { label: "Pricing", href: "/pricing" },
+  { label: "Home", href: "/" },
+  { label: "About Us", href: "/#about" },
+  { label: "Services", href: "/how-it-works" },
+  { label: "Blogs", href: "/authority/blogs" },
 ];
 
 export default function Navbar() {
@@ -131,7 +120,7 @@ export default function Navbar() {
         <div className="hidden md:flex items-center justify-end min-w-[130px] pr-2 sm:pr-3">
           <Link
             href="/start"
-            className="inline-flex items-center justify-center rounded-full bg-[#D6F542] px-6 py-2.5 text-[14px] font-semibold text-[#111827] shadow-sm transition-all duration-200 hover:bg-[#cbf033] hover:shadow-md active:scale-95"
+            className="inline-flex items-center justify-center rounded-full bg-[#C65378] px-6 py-2.5 text-[14px] font-regular text-[#FFFFFF] transition-all duration-200 active:scale-95"
             style={{
               paddingLeft: "1.5rem",
               paddingRight: "1.5rem",
@@ -195,7 +184,7 @@ export default function Navbar() {
               <Link
                 href="/start"
                 onClick={() => setMobileMenuOpen(false)}
-                className="flex w-full items-center justify-center rounded-full bg-[#D6F542] py-2.5 text-sm font-semibold text-slate-950 shadow-sm transition-all hover:bg-[#cbf033]"
+                className="flex w-full items-center justify-center rounded-full bg-[#C65378] py-2.5 text-sm font-medium text-[#FFFFFF] shadow-sm transition-all"
               >
                 Book a call
               </Link>

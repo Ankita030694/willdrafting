@@ -1,236 +1,172 @@
 "use client";
 
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { Shield, Lock, FileCheck, HelpCircle } from "lucide-react";
 
 export default function Footer() {
+  const [timeStr, setTimeStr] = useState<string>("3:54 AM PT");
+
+  useEffect(() => {
+    const updateTime = () => {
+      try {
+        const now = new Date();
+        const formatted = now.toLocaleTimeString("en-US", {
+          timeZone: "America/Los_Angeles",
+          hour: "numeric",
+          minute: "2-digit",
+          hour12: true,
+        });
+        setTimeStr(`${formatted} PT`);
+      } catch {
+        setTimeStr("3:54 AM PT");
+      }
+    };
+    updateTime();
+    const interval = setInterval(updateTime, 60000);
+    return () => clearInterval(interval);
+  }, []);
+
   return (
-    <footer
-      style={{
-        backgroundColor: "#0B1120",
-        color: "#94A3B8",
-        padding: "4.5rem 0 2.5rem",
-        borderTop: "1px solid rgba(255, 255, 255, 0.08)",
-        fontSize: "0.88rem",
-      }}
-    >
-      <div className="container" style={{ maxWidth: "1280px", margin: "0 auto", padding: "0 1.5rem" }}>
-        {/* Main Footer Grid */}
-        <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: "1.4fr 1fr 1fr 1fr",
-            gap: "3rem",
-            marginBottom: "3.5rem",
-          }}
-          className="footer-grid"
-        >
-          {/* Col 1: Brand Logo & Brand Promise */}
-          <div>
-            <div style={{ marginBottom: "1.2rem" }}>
-              <Link href="/" style={{ display: "inline-flex", alignItems: "center", textDecoration: "none" }}>
+    <footer className="w-full bg-[#FAF7F0] pt-16 sm:pt-20 pb-12 text-[#49585F] text-[0.92rem]">
+      <div className="w-full max-w-[1400px] mx-auto px-6 sm:px-8 lg:px-12">
+        {/* Main 4-Column Footer Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-12 pb-16">
+          
+          {/* Column 1: Brand Wordmark, Mission, and Live Status Badge */}
+          <div className="lg:col-span-4 flex flex-col justify-between pr-0 lg:pr-8">
+            <div>
+              <Link href="/" className="inline-block mb-5">
                 <Image
-                  src="/images/Without Text.svg"
-                  alt="Logo"
-                  width={56}
+                  src="/images/With Text.svg"
+                  alt="WillDrafting"
+                  width={220}
                   height={36}
-                  style={{
-                    height: "36px",
-                    width: "auto",
-                    display: "block",
-                    objectFit: "contain",
-                  }}
+                  className="h-8 sm:h-9 w-auto object-contain"
+                  priority
                 />
               </Link>
+
+              <p className="text-[0.925rem] leading-[1.65] text-[#55636D] max-w-[340px] mb-8">
+                We take on the insurers, the paperwork and the phone calls, so you can get on with getting better.
+              </p>
             </div>
 
-            <p style={{ lineHeight: 1.65, color: "#94A3B8", marginBottom: "1.25rem" }}>
-              “Your wishes. Your family. Legally protected.”
+            {/* Live Callback Status Indicator */}
+            <div className="flex items-center gap-2.5 text-[0.725rem] font-bold tracking-[0.14em] uppercase text-[#3B484F]">
+              <span className="inline-block w-2 h-2 rounded-full bg-[#10B981] animate-pulse" />
+              <span>We Call Back First Thing</span>
+              <span className="text-[#88949E] font-normal">|</span>
+              <span className="text-[#6C7882] font-mono font-medium">{timeStr}</span>
+            </div>
+          </div>
+
+          {/* Column 2: SITE */}
+          <div className="lg:col-span-2">
+            <p className="text-[0.75rem] font-bold tracking-[0.16em] uppercase text-[#172228] mb-5">
+              Site
             </p>
-            <p style={{ lineHeight: 1.65, color: "#64748B", fontSize: "0.82rem" }}>
-              India’s dedicated LegalTech Will platform. Answer simple questions, organize your assets, and receive a
-              custom testamentary document reviewed by practicing advocates under the Indian Succession Act, 1925.
+            <ul className="space-y-3.5 text-[0.90rem]">
+              <li>
+                <Link href="/how-it-works" className="hover:text-[#172228] transition-colors">
+                  Practice areas
+                </Link>
+              </li>
+              <li>
+                <Link href="/authority" className="hover:text-[#172228] transition-colors">
+                  Case results
+                </Link>
+              </li>
+              <li>
+                <Link href="/#about" className="hover:text-[#172228] transition-colors">
+                  About
+                </Link>
+              </li>
+              <li>
+                <Link href="/how-it-works" className="hover:text-[#172228] transition-colors">
+                  Resources
+                </Link>
+              </li>
+              <li>
+                <Link href="/authority/blogs" className="hover:text-[#172228] transition-colors">
+                  Journal
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          {/* Column 3: WHAT WE TAKE ON */}
+          <div className="lg:col-span-3">
+            <p className="text-[0.75rem] font-bold tracking-[0.16em] uppercase text-[#172228] mb-5">
+              What We Take On
             </p>
-
-            <div style={{ display: "flex", alignItems: "center", gap: "1rem", marginTop: "1.2rem" }}>
-              <span style={{ display: "inline-flex", alignItems: "center", gap: "0.3rem", color: "#10B981", fontSize: "0.78rem" }}>
-                <Lock size={12} /> 256-Bit Vault Security
-              </span>
-              <span style={{ display: "inline-flex", alignItems: "center", gap: "0.3rem", color: "#38BDF8", fontSize: "0.78rem" }}>
-                <Shield size={12} /> Bar Council Advocate Review
-              </span>
-            </div>
-          </div>
-
-          {/* Col 2: Platform Solutions */}
-          <div>
-            <div style={{ fontSize: "0.95rem", fontWeight: 600, color: "#FFFFFF", marginBottom: "1.2rem" }}>
-              Estate Solutions
-            </div>
-            <ul style={{ listStyle: "none", display: "flex", flexDirection: "column", gap: "0.7rem", padding: 0 }}>
+            <ul className="space-y-3.5 text-[0.90rem]">
               <li>
-                <Link href="/start" style={{ color: "#94A3B8", textDecoration: "none" }}>
-                  Create My Will (Guided Wizard)
+                <Link href="/start" className="hover:text-[#172228] transition-colors">
+                  Collisions
                 </Link>
               </li>
               <li>
-                <Link href="/why-make-a-will" style={{ color: "#94A3B8", textDecoration: "none" }}>
-                  Why Make a Will
+                <Link href="/start" className="hover:text-[#172228] transition-colors">
+                  Workplace injury
                 </Link>
               </li>
               <li>
-                <Link href="/how-it-works" style={{ color: "#94A3B8", textDecoration: "none" }}>
-                  How It Works (7 Steps)
+                <Link href="/start" className="hover:text-[#172228] transition-colors">
+                  Pedestrian and cyclist
                 </Link>
               </li>
               <li>
-                <Link href="/pricing" style={{ color: "#94A3B8", textDecoration: "none" }}>
-                  Pricing Plans (₹999 / ₹2,499)
-                </Link>
-              </li>
-              <li>
-                <Link href="/lawyer-verification" style={{ color: "#94A3B8", textDecoration: "none" }}>
-                  Lawyer Verification Protocol
-                </Link>
-              </li>
-              <li>
-                <Link href="/registration-assistance" style={{ color: "#94A3B8", textDecoration: "none" }}>
-                  Execution & Will Registration
+                <Link href="/start" className="hover:text-[#172228] transition-colors">
+                  Unsafe premises
                 </Link>
               </li>
             </ul>
           </div>
 
-          {/* Col 3: Legal Knowledge Hub */}
-          <div>
-            <div style={{ fontSize: "0.95rem", fontWeight: 600, color: "#FFFFFF", marginBottom: "1.2rem" }}>
-              Legal Resources
+          {/* Column 4: REACH US */}
+          <div className="lg:col-span-3">
+            <p className="text-[0.75rem] font-bold tracking-[0.16em] uppercase text-[#172228] mb-5">
+              Reach Us
+            </p>
+            <div className="space-y-4 text-[0.90rem] leading-relaxed">
+              <p>
+                <a href="tel:4155550148" className="hover:text-[#172228] transition-colors">
+                  (415) 555 0148
+                </a>
+              </p>
+              <p>
+                <a
+                  href="mailto:hello@willdrafting.com"
+                  className="font-medium text-[#172228] underline underline-offset-4 decoration-[#172228]/40 hover:decoration-[#172228] transition-colors"
+                >
+                  hello@willdrafting.com
+                </a>
+              </p>
+              <div className="text-[#55636D] pt-1">
+                <p>1 Sansome Street, Suite 3500</p>
+                <p>San Francisco, CA 94104</p>
+              </div>
             </div>
-            <ul style={{ listStyle: "none", display: "flex", flexDirection: "column", gap: "0.7rem", padding: 0 }}>
-              <li>
-                <Link href="/resources" style={{ color: "#94A3B8", textDecoration: "none" }}>
-                  Knowledge Hub Overview
-                </Link>
-              </li>
-              <li>
-                <Link href="/resources?cat=wills" style={{ color: "#94A3B8", textDecoration: "none" }}>
-                  What Makes a Will Valid?
-                </Link>
-              </li>
-              <li>
-                <Link href="/resources?cat=family" style={{ color: "#94A3B8", textDecoration: "none" }}>
-                  Minor Guardianship in India
-                </Link>
-              </li>
-              <li>
-                <Link href="/resources?cat=assets" style={{ color: "#94A3B8", textDecoration: "none" }}>
-                  Nomination vs Will Legal Conflict
-                </Link>
-              </li>
-              <li>
-                <Link href="/resources?cat=estate" style={{ color: "#94A3B8", textDecoration: "none" }}>
-                  Probate Process & Jurisdiction
-                </Link>
-              </li>
-            </ul>
           </div>
 
-          {/* Col 4: Platform & Support */}
-          <div>
-            <div style={{ fontSize: "0.95rem", fontWeight: 600, color: "#FFFFFF", marginBottom: "1.2rem" }}>
-              Platform & Access
-            </div>
-            <ul style={{ listStyle: "none", display: "flex", flexDirection: "column", gap: "0.7rem", padding: 0 }}>
-              <li>
-                <Link href="/dashboard" style={{ color: "#818CF8", textDecoration: "none", fontWeight: 500 }}>
-                  Customer Dashboard
-                </Link>
-              </li>
-              <li>
-                <Link href="/dashboard/vault" style={{ color: "#94A3B8", textDecoration: "none" }}>
-                  Will Vault & Document Storage
-                </Link>
-              </li>
-              <li>
-                <Link href="/lawyer" style={{ color: "#C9A227", textDecoration: "none", fontWeight: 500 }}>
-                  Lawyer Review Workspace
-                </Link>
-              </li>
-              <li>
-                <Link href="/about" style={{ color: "#94A3B8", textDecoration: "none" }}>
-                  About WillDrafting.com
-                </Link>
-              </li>
-              <li>
-                <Link href="/support" style={{ color: "#94A3B8", textDecoration: "none" }}>
-                  Help & Client Support
-                </Link>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        {/* Legal Disclaimer Box as required in Master Context §10 & §50 */}
-        <div
-          style={{
-            backgroundColor: "rgba(255, 255, 255, 0.03)",
-            border: "1px solid rgba(255, 255, 255, 0.06)",
-            borderRadius: "8px",
-            padding: "1.2rem 1.5rem",
-            marginBottom: "2rem",
-            fontSize: "0.78rem",
-            lineHeight: 1.6,
-            color: "#64748B",
-          }}
-        >
-          <strong style={{ color: "#94A3B8" }}>Legal Disclaimer: </strong>
-          WillDrafting.com is an estate-planning legal technology platform and document automation software. Use of this
-          platform does not create an attorney-client relationship between you and WillDrafting.com. In plans containing
-          Lawyer Verification, independent licensed advocates review the structured output for formal sufficiency and
-          consistency with instructions. Nothing on this website constitutes legal advice on contested litigation or tax
-          counseling. Final validity depends on proper execution and attestation by two competent witnesses pursuant to
-          Section 63 of the Indian Succession Act, 1925.
         </div>
 
         {/* Bottom Bar */}
-        <div
-          style={{
-            borderTop: "1px solid rgba(255, 255, 255, 0.06)",
-            paddingTop: "1.5rem",
-            display: "flex",
-            justifyContent: "space-between",
-            alignItems: "center",
-            flexWrap: "wrap",
-            gap: "1rem",
-            fontSize: "0.8rem",
-            color: "#64748B",
-          }}
-        >
-          <div>© {new Date().getFullYear()} WillDrafting Technologies Pvt. Ltd. All rights reserved.</div>
-          <div style={{ display: "flex", gap: "1.5rem" }}>
-            <span>Terms of Service</span>
-            <span>Privacy Policy</span>
-            <span>Data Security Charter</span>
-            <span>Grievance Officer</span>
+        <div className="pt-8 border-t border-[#1B2A4A]/10 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 text-xs text-[#7B8791]">
+          <div>
+            © {new Date().getFullYear()} WillDrafting LLP
+          </div>
+
+          <div className="text-center">
+            Attorney advertising
+          </div>
+
+          <div className="text-right">
+            Past results do not guarantee a similar outcome.
           </div>
         </div>
       </div>
-
-      <style jsx>{`
-        @media (max-width: 900px) {
-          :global(.footer-grid) {
-            grid-template-columns: 1fr 1fr !important;
-            gap: 2rem !important;
-          }
-        }
-        @media (max-width: 600px) {
-          :global(.footer-grid) {
-            grid-template-columns: 1fr !important;
-          }
-        }
-      `}</style>
     </footer>
   );
 }
