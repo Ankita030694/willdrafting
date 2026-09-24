@@ -1,290 +1,208 @@
 "use client";
 
-import React, { useState } from "react";
-import Image from "next/image";
+import React, { useState, useEffect, useRef } from "react";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import Image from "next/image";
+import { ChevronDown, Menu, X } from "lucide-react";
+
+interface NavItem {
+  label: string;
+  href: string;
+  hasDropdown?: boolean;
+  dropdownItems?: { label: string; href: string }[];
+}
+
+const NAV_ITEMS: NavItem[] = [
+  { label: "Home A", href: "/" },
+  { label: "Home B", href: "/#home-b" },
+  {
+    label: "Pages",
+    href: "#",
+    hasDropdown: true,
+    dropdownItems: [
+      { label: "How It Works", href: "/how-it-works" },
+      { label: "Legal Validity", href: "/authority" },
+      { label: "Pricing Plan", href: "/pricing" },
+      { label: "Start Will", href: "/start" },
+    ],
+  },
+  { label: "About", href: "/#about" },
+  { label: "Pricing", href: "/pricing" },
+];
 
 export default function Navbar() {
-  const [mobileOpen, setMobileOpen] = useState(false);
-  const pathname = usePathname();
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [dropdownOpen, setDropdownOpen] = useState(false);
+  const dropdownRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    function handleClickOutside(event: MouseEvent) {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
+        setDropdownOpen(false);
+      }
+    }
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
 
   return (
-    <header
-      style={{
-        backgroundColor: "var(--bg-header)",
-        position: "sticky",
-        top: 0,
-        zIndex: 100,
-        borderBottom: "1px solid rgba(255, 255, 255, 0.1)",
-      }}
-    >
-      {/* Main Bar */}
-      <div className="container">
-        <nav
-          className="navbar-main"
-          style={{
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "space-between",
-            height: "4.75rem",
-          }}
-        >
-          {/* Brand Logo */}
+    <div className="fixed top-5 left-0 right-0 z-50 w-full px-4 sm:px-6 flex justify-center pointer-events-none">
+      {/* Floating Pill Nav with Backdrop Blur */}
+      <nav 
+        className="pointer-events-auto flex h-[62px] w-full max-w-[1080px] items-center justify-between rounded-full border border-white/60 bg-white/50 shadow-[0_8px_32px_rgba(0,0,0,0.08)] backdrop-blur-xl transition-all duration-300"
+        style={{ paddingLeft: "1.25rem", paddingRight: "0.65rem" }}
+      >
+        {/* Left: Brand Logo with Dedicated Left Padding */}
+        <div className="flex items-center min-w-[130px] pl-3 sm:pl-4">
           <Link
             href="/"
-            style={{
-              display: "flex",
-              alignItems: "center",
-              textDecoration: "none",
-            }}
+            className="flex items-center transition-opacity hover:opacity-80"
           >
             <Image
               src="/images/Without Text.svg"
               alt="Logo"
-              width={56}
-              height={36}
-              className="navbar-logo"
-              style={{
-                height: "36px",
-                width: "auto",
-                display: "block",
-                objectFit: "contain",
-              }}
+              width={34}
+              height={34}
+              className="h-8 w-auto object-contain"
               priority
             />
           </Link>
+        </div>
 
-          {/* Desktop Nav Links */}
-          <div
-            className="nav-desktop"
-            style={{
-              display: "flex",
-              alignItems: "center",
-              gap: "2rem",
-            }}
-          >
-            <Link
-              href="/how-it-works"
-              style={{
-                color: pathname === "/how-it-works" ? "#FFFFFF" : "rgba(255, 255, 255, 0.82)",
-                fontSize: "0.9rem",
-                fontWeight: pathname === "/how-it-works" ? 600 : 500,
-                textDecoration: "none",
-              }}
-            >
-              How It Works
-            </Link>
-
-            <Link
-              href="/why-make-a-will"
-              style={{
-                color: pathname === "/why-make-a-will" ? "#FFFFFF" : "rgba(255, 255, 255, 0.82)",
-                fontSize: "0.9rem",
-                fontWeight: pathname === "/why-make-a-will" ? 600 : 500,
-                textDecoration: "none",
-              }}
-            >
-              Why Make a Will
-            </Link>
-
-            <Link
-              href="/pricing"
-              style={{
-                color: pathname === "/pricing" ? "#FFFFFF" : "rgba(255, 255, 255, 0.82)",
-                fontSize: "0.9rem",
-                fontWeight: pathname === "/pricing" ? 600 : 500,
-                textDecoration: "none",
-              }}
-            >
-              Pricing
-            </Link>
-
-            <Link
-              href="/lawyer-verification"
-              style={{
-                color: pathname === "/lawyer-verification" ? "#FFFFFF" : "rgba(255, 255, 255, 0.82)",
-                fontSize: "0.9rem",
-                fontWeight: pathname === "/lawyer-verification" ? 600 : 500,
-                textDecoration: "none",
-              }}
-            >
-              Lawyer Verification
-            </Link>
-
-            <Link
-              href="/resources"
-              style={{
-                color: pathname === "/resources" ? "#FFFFFF" : "rgba(255, 255, 255, 0.82)",
-                fontSize: "0.9rem",
-                fontWeight: pathname === "/resources" ? 600 : 500,
-                textDecoration: "none",
-              }}
-            >
-              Knowledge Hub
-            </Link>
-          </div>
-
-          {/* Desktop Actions */}
-          <div
-            className="nav-desktop"
-            style={{
-              display: "flex",
-              alignItems: "center",
-              gap: "1.25rem",
-            }}
-          >
-            <Link
-              href="/dashboard"
-              style={{
-                color: "rgba(255, 255, 255, 0.85)",
-                fontSize: "0.9rem",
-                fontWeight: 500,
-                padding: "0.4rem 0.6rem",
-                textDecoration: "none",
-              }}
-            >
-              Dashboard
-            </Link>
-
-            <Link
-              href="/start"
-              className="btn btn-gold"
-              style={{
-                padding: "0.6rem 1.35rem",
-                fontSize: "0.875rem",
-                borderRadius: "var(--radius-sm)",
-                textDecoration: "none",
-                display: "inline-flex",
-                alignItems: "center",
-                gap: "0.45rem",
-              }}
-            >
-              <span>Start My Will</span>
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                <path d="M5 12h14" />
-                <path d="m12 5 7 7-7 7" />
-              </svg>
-            </Link>
-          </div>
-
-          {/* Mobile Hamburger Toggle */}
-          <button
-            onClick={() => setMobileOpen(!mobileOpen)}
-            className="nav-mobile-toggle"
-            aria-label="Toggle navigation"
-            style={{
-              background: "none",
-              border: "none",
-              color: "#FFFFFF",
-              cursor: "pointer",
-              padding: "0.5rem",
-              display: "none",
-            }}
-          >
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-              {mobileOpen ? <path d="M18 6 6 18M6 6l12 12" /> : <path d="M4 6h16M4 12h16M4 18h16" />}
-            </svg>
-          </button>
-        </nav>
-      </div>
-
-      {/* Mobile Drawer */}
-      {mobileOpen && (
-        <div
-          className="nav-mobile-drawer"
-          style={{
-            backgroundColor: "var(--bg-navy-deep)",
-            borderTop: "1px solid rgba(255, 255, 255, 0.08)",
-            padding: "1.25rem 1.25rem 1.5rem",
-            display: "flex",
-            flexDirection: "column",
-            gap: "0.85rem",
-          }}
+        {/* Center: Navigation Links (Strict Center Alignment & Distinct Gap) */}
+        <div 
+          className="hidden md:flex flex-1 items-center justify-center gap-7 lg:gap-8"
+          style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: "2rem" }}
         >
+          {NAV_ITEMS.map((item) =>
+            item.hasDropdown ? (
+              <div
+                key={item.label}
+                ref={dropdownRef}
+                className="relative"
+                onMouseEnter={() => setDropdownOpen(true)}
+                onMouseLeave={() => setDropdownOpen(false)}
+              >
+                <button
+                  type="button"
+                  onClick={() => setDropdownOpen((prev) => !prev)}
+                  className="inline-flex items-center gap-1.5 text-[14px] font-medium text-[#1c282e] hover:text-black transition-colors focus:outline-none py-1.5"
+                  style={{ display: "inline-flex", alignItems: "center", gap: "0.35rem" }}
+                >
+                  <span>{item.label}</span>
+                  <ChevronDown
+                    size={14}
+                    strokeWidth={2.2}
+                    className={`text-[#2d3a41] transition-transform duration-200 ${
+                      dropdownOpen ? "rotate-180" : ""
+                    }`}
+                  />
+                </button>
+
+                {/* Dropdown Menu */}
+                {dropdownOpen && (
+                  <div className="absolute left-1/2 top-full mt-2.5 w-44 -translate-x-1/2 rounded-2xl border border-white/80 bg-white/95 p-1.5 shadow-xl backdrop-blur-lg animate-in fade-in zoom-in-95 duration-150 z-50">
+                    {item.dropdownItems?.map((subItem) => (
+                      <Link
+                        key={subItem.label}
+                        href={subItem.href}
+                        onClick={() => setDropdownOpen(false)}
+                        className="block rounded-xl px-3.5 py-2 text-xs font-medium text-slate-700 hover:bg-slate-100 hover:text-black transition-colors"
+                      >
+                        {subItem.label}
+                      </Link>
+                    ))}
+                  </div>
+                )}
+              </div>
+            ) : (
+              <Link
+                key={item.label}
+                href={item.href}
+                className="text-[14px] font-medium text-[#1c282e] hover:text-black transition-colors py-1.5"
+              >
+                {item.label}
+              </Link>
+            )
+          )}
+        </div>
+
+        {/* Right: CTA Button with Generous Button Padding and Side Spacing */}
+        <div className="hidden md:flex items-center justify-end min-w-[130px] pr-2 sm:pr-3">
           <Link
-            href="/how-it-works"
-            onClick={() => setMobileOpen(false)}
-            style={{ color: "#FFFFFF", fontSize: "0.95rem", padding: "0.25rem 0", textDecoration: "none" }}
-          >
-            How It Works
-          </Link>
-          <Link
-            href="/why-make-a-will"
-            onClick={() => setMobileOpen(false)}
-            style={{ color: "#FFFFFF", fontSize: "0.95rem", padding: "0.25rem 0", textDecoration: "none" }}
-          >
-            Why Make a Will
-          </Link>
-          <Link
-            href="/pricing"
-            onClick={() => setMobileOpen(false)}
-            style={{ color: "#FFFFFF", fontSize: "0.95rem", padding: "0.25rem 0", textDecoration: "none" }}
-          >
-            Pricing
-          </Link>
-          <Link
-            href="/lawyer-verification"
-            onClick={() => setMobileOpen(false)}
-            style={{ color: "#FFFFFF", fontSize: "0.95rem", padding: "0.25rem 0", textDecoration: "none" }}
-          >
-            Lawyer Verification
-          </Link>
-          <Link
-            href="/resources"
-            onClick={() => setMobileOpen(false)}
-            style={{ color: "#FFFFFF", fontSize: "0.95rem", padding: "0.25rem 0", textDecoration: "none" }}
-          >
-            Knowledge Hub
-          </Link>
-          <div
+            href="/start"
+            className="inline-flex items-center justify-center rounded-full bg-[#D6F542] px-6 py-2.5 text-[14px] font-semibold text-[#111827] shadow-sm transition-all duration-200 hover:bg-[#cbf033] hover:shadow-md active:scale-95"
             style={{
-              paddingTop: "0.75rem",
-              borderTop: "1px solid rgba(255, 255, 255, 0.08)",
-              display: "flex",
-              flexDirection: "column",
-              gap: "0.75rem",
+              paddingLeft: "1.5rem",
+              paddingRight: "1.5rem",
+              paddingTop: "0.65rem",
+              paddingBottom: "0.65rem",
             }}
           >
-            <Link
-              href="/dashboard"
-              onClick={() => setMobileOpen(false)}
-              style={{ color: "var(--color-gold)", fontWeight: 600, fontSize: "0.92rem", padding: "0.25rem 0", textDecoration: "none" }}
-            >
-              Customer Dashboard →
-            </Link>
-            <Link
-              href="/start"
-              onClick={() => setMobileOpen(false)}
-              className="btn btn-gold"
-              style={{ width: "100%", padding: "0.85rem", textAlign: "center", textDecoration: "none" }}
-            >
-              Start My Will
-            </Link>
+            Book a call
+          </Link>
+        </div>
+
+        {/* Mobile Hamburger Button */}
+        <div className="flex md:hidden items-center pr-2">
+          <button
+            type="button"
+            onClick={() => setMobileMenuOpen((prev) => !prev)}
+            aria-label="Toggle navigation menu"
+            className="rounded-full p-2 text-slate-800 hover:bg-white/60 focus:outline-none transition-colors"
+          >
+            {mobileMenuOpen ? <X size={20} /> : <Menu size={20} />}
+          </button>
+        </div>
+      </nav>
+
+      {/* Mobile Menu Dropdown */}
+      {mobileMenuOpen && (
+        <div className="pointer-events-auto absolute left-4 right-4 top-20 mx-auto max-w-[1080px] rounded-3xl border border-white/60 bg-white/95 p-5 shadow-2xl backdrop-blur-xl md:hidden animate-in fade-in zoom-in-95 duration-200 z-50">
+          <div className="flex flex-col space-y-3">
+            {NAV_ITEMS.map((item) =>
+              item.hasDropdown ? (
+                <div key={item.label} className="border-b border-slate-100 pb-2">
+                  <div className="px-3 py-1 text-xs font-bold uppercase tracking-wider text-slate-400">
+                    {item.label}
+                  </div>
+                  <div className="ml-2 mt-1 flex flex-col space-y-1">
+                    {item.dropdownItems?.map((sub) => (
+                      <Link
+                        key={sub.label}
+                        href={sub.href}
+                        onClick={() => setMobileMenuOpen(false)}
+                        className="rounded-xl px-3 py-2 text-sm font-medium text-slate-700 hover:bg-slate-100"
+                      >
+                        {sub.label}
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+              ) : (
+                <Link
+                  key={item.label}
+                  href={item.href}
+                  onClick={() => setMobileMenuOpen(false)}
+                  className="rounded-xl px-3 py-2 text-sm font-medium text-slate-800 hover:bg-slate-100"
+                >
+                  {item.label}
+                </Link>
+              )
+            )}
+
+            <div className="pt-2">
+              <Link
+                href="/start"
+                onClick={() => setMobileMenuOpen(false)}
+                className="flex w-full items-center justify-center rounded-full bg-[#D6F542] py-2.5 text-sm font-semibold text-slate-950 shadow-sm transition-all hover:bg-[#cbf033]"
+              >
+                Book a call
+              </Link>
+            </div>
           </div>
         </div>
       )}
-
-      <style jsx>{`
-        @media (max-width: 860px) {
-          :global(.nav-desktop) {
-            display: none !important;
-          }
-          :global(.nav-mobile-toggle) {
-            display: flex !important;
-            align-items: center;
-            justify-content: center;
-            min-width: 44px;
-            min-height: 44px;
-          }
-          :global(.navbar-main) {
-            height: 3.75rem !important;
-          }
-          :global(.navbar-logo) {
-            height: 26px !important;
-          }
-        }
-      `}</style>
-    </header>
+    </div>
   );
 }
