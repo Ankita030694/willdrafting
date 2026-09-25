@@ -67,11 +67,11 @@ export default function WhyTrust() {
           <div className="absolute inset-0 bg-black/25" />
 
           {/* =========================================================================
-              TOP: Centered Playfair Headline
+              TOP: Headline
               ========================================================================= */}
           <div className="relative z-10 w-full text-left max-w-8xl mx-auto pt-2 sm:pt-4">
             <h2
-              className="text-[2.2rem] sm:text-[3.2rem] lg:text-[3.65rem] font-normal font-playfair font-serif !text-white leading-[1.12] tracking-tight"
+              className="text-[2.2rem] sm:text-[3.2rem] lg:text-[3.65rem] font-bold !text-white leading-[1.12] tracking-tight"
               style={{ color: "#FFFFFF" }}
             >
               You&apos;ll talk to your attorney.<br />
@@ -97,9 +97,9 @@ export default function WhyTrust() {
                       {feature.icon}
                     </div>
 
-                    {/* Title in Playfair Serif */}
+                    {/* Title */}
                     <h3
-                      className="text-[1.35rem] sm:text-[1.5rem] font-normal font-playfair font-serif !text-white tracking-tight leading-snug mb-2.5"
+                      className="text-[1.35rem] sm:text-[1.5rem] font-semibold !text-white tracking-tight leading-snug mb-2.5"
                       style={{ color: "#FFFFFF" }}
                     >
                       {feature.title}

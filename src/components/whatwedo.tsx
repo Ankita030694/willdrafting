@@ -68,7 +68,7 @@ export default function WhatWeDo() {
           </div>
 
           {/* Section Heading */}
-          <h2 className="text-[2.35rem] sm:text-[3.2rem] lg:text-[3.65rem] font-normal font-playfair font-heading text-[#172228] leading-[1.12] tracking-tight mb-5">
+          <h2 className="text-[2.35rem] sm:text-[3.2rem] lg:text-[3.65rem] font-bold text-[#172228] leading-[1.12] tracking-tight mb-5">
             Your plan, on paper.
           </h2>
 
@@ -93,7 +93,7 @@ export default function WhatWeDo() {
               {/* Bottom Text & CTA Container - Compact Padding */}
               <div className="p-6 sm:p-7 flex flex-col justify-between flex-1 border-t border-[#1B2A4A]/5">
                 <div>
-                  <h3 className="text-[1.35rem] sm:text-[1.5rem] font-medium font-playfair font-serif text-[#172228] mb-1.5 tracking-tight">
+                  <h3 className="text-[1.35rem] sm:text-[1.5rem] font-semibold text-[#172228] mb-1.5 tracking-tight">
                     {service.title}
                   </h3>
                   <p className="text-[0.90rem] sm:text-[0.95rem] leading-relaxed text-[#49585F] mb-4 max-w-[480px]">

@@ -47,7 +47,7 @@ export default function EstateComparison() {
       <div className="w-full max-w-[1400px] 2xl:max-w-8xl mx-auto px-6 sm:px-8 lg:px-12">
         
         {/* =========================================================================
-            HEADER: Eyebrow Pill, Playfair Headline, and Subheading
+            HEADER: Eyebrow Pill, Headline, and Subheading
             ========================================================================= */}
         <div className="flex flex-col items-center text-center max-w-3xl mx-auto mb-12 sm:mb-16">
           {/* Eyebrow badge */}
@@ -58,8 +58,8 @@ export default function EstateComparison() {
             </span>
           </div>
 
-          {/* Main Title with Playfair Serif & Italic Accents */}
-          <h2 className="text-[2.35rem] sm:text-[3.2rem] lg:text-[3.65rem] font-normal font-playfair font-serif text-[#172228] leading-[1.08] tracking-tight mb-4 sm:mb-5">
+          {/* Main Title */}
+          <h2 className="text-[2.35rem] sm:text-[3.2rem] lg:text-[3.65rem] font-bold text-[#172228] leading-[1.08] tracking-tight mb-4 sm:mb-5">
             What happens if you don&apos;t have a will?
           </h2>
 
@@ -96,7 +96,7 @@ export default function EstateComparison() {
                 >
                   {/* Topic Title */}
                   <div className="md:col-span-4 flex items-center">
-                    <h3 className="text-[1.12rem] sm:text-[1.22rem] font-normal font-playfair font-serif text-[#172228] leading-snug tracking-tight">
+                    <h3 className="text-[1.12rem] sm:text-[1.22rem] font-semibold text-[#172228] leading-snug tracking-tight">
                       {row.topic}
                     </h3>
                   </div>

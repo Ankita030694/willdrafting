@@ -99,7 +99,7 @@ export default function EstateFolderSection() {
             </div>
 
             {/* Main Editorial Heading */}
-            <h2 className="text-[2.2rem] sm:text-[2.85rem] lg:text-[3.35rem] font-normal font-playfair font-serif text-[#172228] leading-[1.12] tracking-tight mb-4">
+            <h2 className="text-[2.2rem] sm:text-[2.85rem] lg:text-[3.35rem] font-bold text-[#172228] leading-[1.12] tracking-tight mb-4">
               All your vital documents in one secure place.
             </h2>
 

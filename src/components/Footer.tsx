@@ -38,11 +38,11 @@ export default function Footer() {
             <div>
               <Link href="/" className="inline-block mb-5">
                 <Image
-                  src="/images/With Text.svg"
+                  src="Logofinal.svg"
                   alt="WillDrafting"
-                  width={220}
+                  width={260}
                   height={36}
-                  className="h-8 sm:h-9 w-auto object-contain"
+                  className="h-8 sm:h-15 w-auto object-contain"
                   priority
                 />
               </Link>

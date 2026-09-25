@@ -112,8 +112,8 @@ export default function Pricing() {
             </span>
           </div>
 
-          {/* Main Title with Playfair Serif & Italic Accents */}
-          <h2 className="text-[2.35rem] sm:text-[3.2rem] lg:text-[3.65rem] font-normal font-playfair font-serif text-[#172228] leading-[1.08] tracking-tight mb-4">
+          {/* Main Title */}
+          <h2 className="text-[2.35rem] sm:text-[3.2rem] lg:text-[3.65rem] font-bold text-[#172228] leading-[1.08] tracking-tight mb-4">
             Choose The Right Plan For <br className="hidden sm:block" />
             <span className="italic font-normal">Your Family & Estate.</span>
           </h2>
@@ -188,13 +188,13 @@ export default function Pricing() {
                       <span className="text-xs font-bold tracking-[0.16em] uppercase text-[#C65378] block mb-1">
                         Option {currentTier.step}
                       </span>
-                      <h3 className="text-2xl sm:text-3xl font-normal font-playfair font-serif text-[#172228] leading-tight">
+                      <h3 className="text-2xl sm:text-3xl font-bold text-[#172228] leading-tight">
                         {currentTier.label}
                       </h3>
                     </div>
 
                     {/* Tagline */}
-                    <p className="text-[1.05rem] font-normal font-playfair font-serif italic text-[#172228]/85">
+                    <p className="text-[1.05rem] font-normal italic text-[#172228]/85">
                       {currentTier.tagline}
                     </p>
 

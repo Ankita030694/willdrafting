@@ -223,7 +223,7 @@ export default function BelowTrust() {
             </div>
 
             {/* Main Section Heading */}
-            <h2 className="text-[2.2rem] sm:text-[2.85rem] lg:text-[3.35rem] font-normal font-playfair font-heading text-[#172228] leading-[1.12] tracking-tight">
+            <h2 className="text-[2.2rem] sm:text-[2.85rem] lg:text-[3.35rem] font-bold text-[#172228] leading-[1.12] tracking-tight">
               Support shaped around what your estate requires.
             </h2>
           </div>
@@ -373,7 +373,7 @@ export default function BelowTrust() {
                             Exact Draft Language
                           </span>
                         </div>
-                        <p className="text-xs sm:text-[13px] leading-relaxed text-[#3B484F] font-serif italic border-l-2 border-[#C65378] pl-3.5 my-2">
+                        <p className="text-xs sm:text-[13px] leading-relaxed text-[#3B484F] italic border-l-2 border-[#C65378] pl-3.5 my-2">
                           "{item.legalSnippet}"
                         </p>
                       </div>

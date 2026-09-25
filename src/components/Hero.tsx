@@ -13,7 +13,7 @@ export default function Hero() {
       {/* Full-height Hero Card */}
       <div className="relative w-full max-w-[1400px] min-h-[calc(100vh-1rem)] rounded-[32px] sm:rounded-[44px] overflow-hidden grid grid-cols-1 md:grid-cols-2 items-stretch bg-[#FAF7F0]">
         
-        {/* Left Column: Full Top-to-Bottom Cover Image & Testimonial Card */}
+        {/* Left Column: Full Top-to-Bottom Cover Image */}
         <div className="relative w-full h-full min-h-[460px] md:min-h-full bg-[#FAF7F0]">
           <Image
             src="/images/heronewnewnew.svg"
@@ -48,7 +48,7 @@ export default function Hero() {
             }}
           >
             <h1
-              className="text-[2.65rem] sm:text-[3.35rem] lg:text-[4rem] font-normal font-playfair font-serif leading-[1.08] tracking-[-0.025em] text-[#172228] mb-4 sm:mb-6"
+              className="text-[2.65rem] sm:text-[3.35rem] lg:text-[4rem] font-medium leading-[1.08] tracking-[-0.025em] text-[#172228] mb-4 sm:mb-6"
             >
               Your Wishes. Your Family. Your Will.
             </h1>
@@ -99,8 +99,6 @@ export default function Hero() {
               </div>
             </div>
           </div>
-
-          
         </div>
       </div>
     </section>

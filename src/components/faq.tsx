@@ -68,8 +68,8 @@ export default function FAQ() {
                 </span>
               </div>
 
-              {/* Main Heading with Playfair / Serif typography and italic accents */}
-              <h2 className="text-[2.35rem] sm:text-[3.2rem] lg:text-[3.65rem] font-normal font-playfair font-serif text-[#172228] leading-[1.08] tracking-tight">
+              {/* Main Heading */}
+              <h2 className="text-[2.35rem] sm:text-[3.2rem] lg:text-[3.65rem] font-bold text-[#172228] leading-[1.08] tracking-tight">
                 The Answers You
                 Need Before You <span className="italic font-normal">Even Ask Questions.</span>
 
@@ -79,7 +79,7 @@ export default function FAQ() {
             {/* Desktop-only: "Not sure what to ask first?" Card */}
             <div className="hidden lg:block mt-16 xl:mt-24">
               <div className="bg-[#EBE7DF] rounded-2xl sm:rounded-[22px] p-6 sm:p-7 max-w-[420px]">
-                <h3 className="text-[1.2rem] sm:text-[1.32rem] font-normal font-playfair font-serif text-[#172228] mb-2.5">
+                <h3 className="text-[1.2rem] sm:text-[1.32rem] font-semibold text-[#172228] mb-2.5">
                   Not sure what to ask first?
                 </h3>
                 <p className="text-[0.88rem] sm:text-[0.92rem] text-[#55636D] leading-[1.65] mb-6">
@@ -99,7 +99,7 @@ export default function FAQ() {
           {/* Mobile-only: "Not sure what to ask first?" Card placed directly below headline */}
           <div className="block lg:hidden">
             <div className="bg-[#EBE7DF] rounded-2xl p-6 max-w-full">
-              <h3 className="text-[1.2rem] font-normal font-playfair font-serif text-[#172228] mb-2.5">
+              <h3 className="text-[1.2rem] font-semibold text-[#172228] mb-2.5">
                 Not sure what to ask first?
               </h3>
               <p className="text-[0.88rem] text-[#55636D] leading-[1.6] mb-5">
@@ -135,7 +135,7 @@ export default function FAQ() {
                     aria-expanded={isOpen}
                     className="w-full flex items-center justify-between text-left gap-4 cursor-pointer select-none group"
                   >
-                    <span className="text-[1.12rem] sm:text-[1.22rem] font-normal font-playfair font-serif text-[#172228] tracking-tight leading-snug">
+                    <span className="text-[1.12rem] sm:text-[1.22rem] font-semibold text-[#172228] tracking-tight leading-snug">
                       {faq.question}
                     </span>
 

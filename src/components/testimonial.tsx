@@ -337,8 +337,8 @@ export default function Testimonial() {
               </span>
             </div>
 
-            {/* Editorial Title with Playfair Serif */}
-            <h2 className="text-[2.35rem] sm:text-[3.2rem] lg:text-[3.65rem] font-normal font-playfair font-serif text-[#172228] leading-[1.08] tracking-tight mb-4">
+            {/* Editorial Title */}
+            <h2 className="text-[2.35rem] sm:text-[3.2rem] lg:text-[3.65rem] font-bold text-[#172228] leading-[1.08] tracking-tight mb-4">
               Trusted by 160,000+<br />
               Families.
             </h2>
@@ -349,7 +349,7 @@ export default function Testimonial() {
 
             {/* Rating Badge */}
             <div className="flex items-center gap-3">
-              <span className="text-2xl sm:text-3xl font-bold font-serif text-[#172228] leading-none">
+              <span className="text-2xl sm:text-3xl font-bold text-[#172228] leading-none">
                 4.9
               </span>
               <div className="flex items-center gap-1 text-[#F97316]">
@@ -362,8 +362,6 @@ export default function Testimonial() {
               </span>
             </div>
           </div>
-
-          
         </div>
 
         {/* =========================================================================
