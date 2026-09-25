@@ -3,7 +3,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowUpRight, ArrowRight, ShieldCheck, FileCheck, CheckCircle2 } from "lucide-react";
+import { ArrowUpRight, ArrowRight, ShieldCheck, FileCheck, CheckCircle2, ChevronLeft, ChevronRight } from "lucide-react";
 
 interface ClauseItem {
   id: string;
@@ -108,8 +108,12 @@ const CLAUSE_ITEMS: ClauseItem[] = [
 export default function BelowTrust() {
   const [activeId, setActiveId] = useState<string>(CLAUSE_ITEMS[0].id);
   const cardRefs = useRef<{ [key: string]: HTMLDivElement | null }>({});
+  const mobileCarouselRef = useRef<HTMLDivElement>(null);
+  const [isDragging, setIsDragging] = useState(false);
+  const dragStartX = useRef(0);
+  const dragStartScrollLeft = useRef(0);
 
-  // IntersectionObserver to sync left pointers as right cards scroll
+  // IntersectionObserver to sync left pointers as right cards scroll (on desktop)
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
@@ -133,15 +137,72 @@ export default function BelowTrust() {
     return () => observer.disconnect();
   }, []);
 
+  // Update activeId on mobile horizontal scroll
+  const handleCarouselScroll = () => {
+    const el = mobileCarouselRef.current;
+    if (!el || window.innerWidth >= 1024) return;
+    const scrollLeft = el.scrollLeft;
+    const gap = window.innerWidth >= 640 ? 24 : 16;
+    const stride = el.offsetWidth + gap;
+    if (stride <= 0) return;
+    const activeIndex = Math.min(
+      CLAUSE_ITEMS.length - 1,
+      Math.max(0, Math.round(scrollLeft / stride))
+    );
+    if (CLAUSE_ITEMS[activeIndex]) {
+      setActiveId(CLAUSE_ITEMS[activeIndex].id);
+    }
+  };
+
   const handlePointerClick = (id: string) => {
     setActiveId(id);
     const targetElement = cardRefs.current[id];
     if (targetElement) {
-      // Calculate top position with offset for floating navbar + sticky card
-      const yOffset = -105;
-      const y = targetElement.getBoundingClientRect().top + window.pageYOffset + yOffset;
-      window.scrollTo({ top: y, behavior: "smooth" });
+      if (window.innerWidth >= 1024) {
+        // Desktop: scroll page smoothly
+        const yOffset = -105;
+        const y = targetElement.getBoundingClientRect().top + window.pageYOffset + yOffset;
+        window.scrollTo({ top: y, behavior: "smooth" });
+      } else if (mobileCarouselRef.current) {
+        // Mobile: scroll horizontal carousel to exact single card with gap
+        const cardIndex = CLAUSE_ITEMS.findIndex((c) => c.id === id);
+        if (cardIndex !== -1) {
+          const gap = window.innerWidth >= 640 ? 24 : 16;
+          const stride = mobileCarouselRef.current.offsetWidth + gap;
+          mobileCarouselRef.current.scrollTo({
+            left: cardIndex * stride,
+            behavior: "smooth",
+          });
+        }
+      }
     }
+  };
+
+  // Mouse Drag Handlers for mobile horizontal carousel
+  const handleMouseDown = (e: React.MouseEvent) => {
+    if (window.innerWidth >= 1024) return;
+    const el = mobileCarouselRef.current;
+    if (!el) return;
+    setIsDragging(true);
+    dragStartX.current = e.pageX;
+    dragStartScrollLeft.current = el.scrollLeft;
+  };
+
+  const handleMouseMove = (e: React.MouseEvent) => {
+    if (!isDragging) return;
+    const el = mobileCarouselRef.current;
+    if (!el) return;
+    e.preventDefault();
+    const walk = (e.pageX - dragStartX.current) * 1.3;
+    el.scrollLeft = dragStartScrollLeft.current - walk;
+  };
+
+  const handleMouseUp = () => {
+    setIsDragging(false);
+  };
+
+  const handleMouseLeave = () => {
+    setIsDragging(false);
   };
 
   return (
@@ -152,7 +213,7 @@ export default function BelowTrust() {
       <div className="w-full max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header with Top Right Action Pill */}
-        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-14 sm:mb-20">
+        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-10 sm:mb-16 lg:mb-20">
           <div className="max-w-[760px]">
             {/* Eyebrow */}
             <div className="flex items-center gap-3 mb-4 text-left">
@@ -179,12 +240,12 @@ export default function BelowTrust() {
           </div>
         </div>
 
-        {/* 2-Column Sticky Layout: Left sticks 5rem below navbar, right cards scroll */}
+        {/* 2-Column Sticky Layout on Desktop; Single Horizontal Carousel on Mobile */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 relative items-start">
           
-          {/* Left Column: Sticky Navigation Card (sticks ~5rem below top) */}
+          {/* Left Column: Sticky Navigation Card (HIDDEN ON MOBILE, visible on desktop lg+) */}
           <div
-            className="lg:col-span-4 lg:sticky z-20 self-start"
+            className="hidden lg:block lg:col-span-4 lg:sticky z-20 self-start"
             style={{
               position: "sticky",
               top: "96px",
@@ -251,18 +312,32 @@ export default function BelowTrust() {
             </div>
           </div>
 
-          {/* Right Column: Cards that scroll through */}
-          <div className="lg:col-span-8 flex flex-col gap-10 lg:gap-14">
-            {CLAUSE_ITEMS.map((item, idx) => {
-              return (
-                <div
-                  key={item.id}
-                  id={item.id}
-                  ref={(el) => {
-                    cardRefs.current[item.id] = el;
-                  }}
-                  className="bg-white rounded-3xl p-6 sm:p-8 lg:p-10 scroll-mt-28 transition-all"
-                >
+          {/* Right Column (Desktop: vertical stack; Mobile: horizontal draggable carousel) */}
+          <div className="w-full lg:col-span-8 overflow-hidden">
+            <div
+              ref={mobileCarouselRef}
+              onScroll={handleCarouselScroll}
+              onMouseDown={handleMouseDown}
+              onMouseMove={handleMouseMove}
+              onMouseUp={handleMouseUp}
+              onMouseLeave={handleMouseLeave}
+              className="flex lg:flex-col overflow-x-auto lg:overflow-x-visible gap-4 sm:gap-6 lg:gap-14 pb-4 pt-1 lg:p-0 scrollbar-none snap-x snap-mandatory lg:snap-none cursor-grab active:cursor-grabbing lg:cursor-default w-full"
+              style={{
+                scrollbarWidth: "none",
+                msOverflowStyle: "none",
+                WebkitOverflowScrolling: "touch",
+              }}
+            >
+              {CLAUSE_ITEMS.map((item, idx) => {
+                return (
+                  <div
+                    key={item.id}
+                    id={item.id}
+                    ref={(el) => {
+                      cardRefs.current[item.id] = el;
+                    }}
+                    className="w-full min-w-full lg:min-w-0 shrink-0 lg:shrink snap-center lg:snap-align-none bg-white rounded-3xl p-6 sm:p-8 lg:p-10 scroll-mt-28 transition-all flex flex-col justify-between"
+                  >
                   {/* Top Header of Card */}
                   <div className="flex flex-wrap items-center justify-between gap-3 mb-6">
                     <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-[#C65378]/10 text-[#C65378]">
@@ -348,6 +423,53 @@ export default function BelowTrust() {
                 </div>
               );
             })}
+            </div>
+
+            {/* Mobile Carousel Controls: Prev/Next Buttons + Swipe Dots */}
+            <div className="flex lg:hidden items-center justify-between mt-5 px-2">
+              <button
+                type="button"
+                onClick={() => {
+                  const currIdx = CLAUSE_ITEMS.findIndex((c) => c.id === activeId);
+                  const prevIdx = Math.max(0, currIdx - 1);
+                  handlePointerClick(CLAUSE_ITEMS[prevIdx].id);
+                }}
+                disabled={activeId === CLAUSE_ITEMS[0].id}
+                className="w-9 h-9 rounded-full border border-[#172228]/15 bg-white text-[#172228] flex items-center justify-center disabled:opacity-30 disabled:cursor-not-allowed shadow-sm active:scale-95 transition-all cursor-pointer"
+                aria-label="Previous clause"
+              >
+                <ChevronLeft size={18} strokeWidth={2.2} />
+              </button>
+
+              {/* Dots */}
+              <div className="flex items-center gap-2">
+                {CLAUSE_ITEMS.map((item, idx) => (
+                  <button
+                    key={item.id}
+                    type="button"
+                    onClick={() => handlePointerClick(item.id)}
+                    className={`h-2 rounded-full transition-all duration-300 cursor-pointer ${
+                      activeId === item.id ? "w-6 bg-[#C65378]" : "w-2 bg-[#172228]/20"
+                    }`}
+                    aria-label={`Go to clause ${idx + 1}`}
+                  />
+                ))}
+              </div>
+
+              <button
+                type="button"
+                onClick={() => {
+                  const currIdx = CLAUSE_ITEMS.findIndex((c) => c.id === activeId);
+                  const nextIdx = Math.min(CLAUSE_ITEMS.length - 1, currIdx + 1);
+                  handlePointerClick(CLAUSE_ITEMS[nextIdx].id);
+                }}
+                disabled={activeId === CLAUSE_ITEMS[CLAUSE_ITEMS.length - 1].id}
+                className="w-9 h-9 rounded-full border border-[#172228]/15 bg-white text-[#172228] flex items-center justify-center disabled:opacity-30 disabled:cursor-not-allowed shadow-sm active:scale-95 transition-all cursor-pointer"
+                aria-label="Next clause"
+              >
+                <ChevronRight size={18} strokeWidth={2.2} />
+              </button>
+            </div>
           </div>
 
         </div>

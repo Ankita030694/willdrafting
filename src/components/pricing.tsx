@@ -126,25 +126,29 @@ export default function Pricing() {
         {/* =========================================================================
             TOGGLE PILL GROUP: 01 Essential / 02 Family ⭐ / 03 Comprehensive
             ========================================================================= */}
-        <div className="flex justify-center mb-10 w-full overflow-x-auto pb-2 scrollbar-none">
-          <div className="inline-flex items-center p-1.5 rounded-full bg-[#EBE7DF] border border-[#1B2A4A]/5 shadow-[inset_0_1px_3px_rgba(0,0,0,0.04)]">
+        <div className="flex justify-center mb-8 sm:mb-10 w-full px-2 sm:px-0">
+          <div className="w-full max-w-[420px] sm:max-w-none sm:inline-flex grid grid-cols-3 sm:flex items-center p-1 sm:p-1.5 rounded-full bg-[#EBE7DF] border border-[#1B2A4A]/5 shadow-[inset_0_1px_3px_rgba(0,0,0,0.04)]">
             {tiers.map((tier) => {
               const isSelected = selected === tier.value;
               return (
                 <button
                   key={tier.value}
+                  type="button"
                   onClick={() => setSelected(tier.value)}
-                  className={`flex items-center gap-1.5 rounded-full py-2.5 px-4 sm:px-6 text-[0.85rem] sm:text-[0.92rem] font-medium transition-all duration-200 cursor-pointer whitespace-nowrap ${
+                  className={`flex items-center justify-center gap-1 sm:gap-1.5 rounded-full py-2 sm:py-2.5 px-1.5 sm:px-6 text-[11px] min-[380px]:text-xs sm:text-[0.92rem] font-medium transition-all duration-200 cursor-pointer text-center ${
                     isSelected
                       ? "bg-white text-[#172228] font-semibold shadow-sm"
                       : "text-[#55636D] hover:text-[#172228]"
                   }`}
                 >
-                  <span className="opacity-70 text-xs font-mono">{tier.step}</span>
-                  <span>{tier.label}</span>
+                  <span className="opacity-70 text-[10px] sm:text-xs font-mono shrink-0">{tier.step}</span>
+                  <span className="truncate">
+                    <span className="hidden sm:inline">{tier.label}</span>
+                    <span className="sm:hidden">{tier.label.replace(" Will", "")}</span>
+                  </span>
                   {tier.badge && (
-                    <span className="inline-flex items-center text-[#C65378] ml-0.5">
-                      <Star size={13} className="fill-[#C65378]" />
+                    <span className="inline-flex items-center text-[#C65378] ml-0.5 shrink-0">
+                      <Star size={11} className="fill-[#C65378] sm:w-[13px] sm:h-[13px]" />
                     </span>
                   )}
                 </button>

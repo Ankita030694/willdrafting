@@ -4,6 +4,7 @@ import Hero from "@/components/Hero";
 import WhyTrust from "@/components/whytrust";
 import BelowTrust from "@/components/belowtrust";
 import WhatWeDo from "@/components/whatwedo";
+import EstateFolderSection from "@/components/EstateFolderSection";
 import Process from "@/components/process";
 import EstateComparison from "@/components/EstateComparison";
 import LegalValidity from "@/components/LegalValidity";
@@ -22,6 +23,7 @@ export default function Home() {
         <WhyTrust />
         <BelowTrust />
         <WhatWeDo />
+        <EstateFolderSection />
         <Process />
         <EstateComparison />
         

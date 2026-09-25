@@ -9,100 +9,110 @@ export default function CTA() {
   return (
     <section className="relative w-full bg-[#FAF7F0] py-24 sm:py-32 lg:py-36 overflow-hidden flex items-center justify-center">
       {/* =========================================================================
-          SCATTERED FLOATING CARDS (Matching exact reference positions)
+          SCATTERED FLOATING ILLUSTRATIONS (Desktop: 6 illustrations from /cta, 20% larger, no white card bg)
           ========================================================================= */}
 
-      {/* 1. Top-Left: Team around meeting desk */}
-      <div className="hidden md:block absolute top-10 sm:top-14 left-4 lg:left-16 xl:left-24 w-24 h-24 sm:w-28 sm:h-28 lg:w-32 lg:h-32 rounded-2xl overflow-hidden">
-        <Image
-          src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=400&q=80"
-          alt="Legal team in meeting"
-          fill
-          sizes="130px"
-          className="object-cover"
-        />
+      {/* 1. Top-Left: Will document with wax seal */}
+      <div className="hidden md:block absolute top-8 sm:top-12 left-4 lg:left-14 xl:left-20 w-28 h-28 sm:w-36 sm:h-36 lg:w-40 lg:h-40 transition-transform duration-300 hover:scale-105 pointer-events-none">
+        <div className="relative w-full h-full">
+          <Image
+            src="/cta/1.png"
+            alt="Will document illustration"
+            fill
+            sizes="160px"
+            className="object-contain"
+          />
+        </div>
       </div>
 
-      {/* 2. Mid-Left: Consultation across desk */}
-      <div className="hidden md:block absolute top-[46%] left-8 lg:left-28 xl:left-40 w-20 h-20 sm:w-24 sm:h-24 rounded-2xl overflow-hidden">
-        <Image
-          src="https://images.unsplash.com/photo-1450133064473-71024230f91b?auto=format&fit=crop&w=400&q=80"
-          alt="Confidential consultation"
-          fill
-          sizes="100px"
-          className="object-cover"
-        />
+      {/* 2. Mid-Left: Confidential locked folder */}
+      <div className="hidden md:block absolute top-[44%] left-6 lg:left-24 xl:left-36 w-24 h-24 sm:w-32 sm:h-32 lg:w-36 lg:h-36 transition-transform duration-300 hover:scale-105 pointer-events-none">
+        <div className="relative w-full h-full">
+          <Image
+            src="/cta/2.png"
+            alt="Confidential folder illustration"
+            fill
+            sizes="144px"
+            className="object-contain"
+          />
+        </div>
       </div>
 
-      {/* 3. Bottom-Left: Smiling Portrait */}
-      <div className="hidden md:block absolute bottom-8 sm:bottom-12 left-6 lg:left-20 xl:left-28 w-24 h-24 sm:w-28 sm:h-28 lg:w-32 lg:h-32 rounded-2xl overflow-hidden">
-        <Image
-          src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80"
-          alt="Client portrait"
-          fill
-          sizes="130px"
-          className="object-cover"
-        />
+      {/* 3. Bottom-Left: Stamped letter in envelope */}
+      <div className="hidden md:block absolute bottom-6 sm:bottom-10 left-4 lg:left-16 xl:left-24 w-28 h-28 sm:w-36 sm:h-36 lg:w-40 lg:h-40 transition-transform duration-300 hover:scale-105 pointer-events-none">
+        <div className="relative w-full h-full">
+          <Image
+            src="/cta/3.png"
+            alt="Verified letter illustration"
+            fill
+            sizes="160px"
+            className="object-contain"
+          />
+        </div>
       </div>
 
-      {/* 4. Top-Right: Lawyer with client */}
-      <div className="hidden md:block absolute top-10 sm:top-14 right-4 lg:right-16 xl:right-24 w-24 h-24 sm:w-28 sm:h-28 lg:w-32 lg:h-32 rounded-2xl overflow-hidden">
-        <Image
-          src="https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=400&q=80"
-          alt="Lawyer consultation"
-          fill
-          sizes="130px"
-          className="object-cover"
-        />
+      {/* 4. Top-Right: Inspected document with magnifying glass */}
+      <div className="hidden md:block absolute top-8 sm:top-12 right-4 lg:right-14 xl:right-20 w-28 h-28 sm:w-36 sm:h-36 lg:w-40 lg:h-40 transition-transform duration-300 hover:scale-105 pointer-events-none">
+        <div className="relative w-full h-full">
+          <Image
+            src="/cta/4.png"
+            alt="Inspected document illustration"
+            fill
+            sizes="160px"
+            className="object-contain"
+          />
+        </div>
       </div>
 
-      {/* 5. Mid-Right: Reviewing legal files */}
-      <div className="hidden md:block absolute top-[46%] right-8 lg:right-28 xl:right-40 w-20 h-20 sm:w-24 sm:h-24 rounded-2xl overflow-hidden ">
-        <Image
-          src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=400&q=80"
-          alt="Legal records and folders"
-          fill
-          sizes="100px"
-          className="object-cover"
-        />
+      {/* 5. Mid-Right: Family protection under estate plan */}
+      <div className="hidden md:block absolute top-[44%] right-6 lg:right-24 xl:right-36 w-24 h-24 sm:w-32 sm:h-32 lg:w-36 lg:h-36 transition-transform duration-300 hover:scale-105 pointer-events-none">
+        <div className="relative w-full h-full">
+          <Image
+            src="/cta/5.png"
+            alt="Family protection illustration"
+            fill
+            sizes="144px"
+            className="object-contain"
+          />
+        </div>
       </div>
 
-      
-
-      {/* 6. Bottom-Right: Woman on phone at office desk */}
-      <div className="hidden md:block absolute bottom-8 sm:bottom-12 right-6 lg:right-20 xl:right-28 w-24 h-24 sm:w-28 sm:h-28 lg:w-32 lg:h-32 rounded-xl overflow-hidden">
-        <Image
-          src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=400&q=80"
-          alt="Client speaking with advisor"
-          fill
-          sizes="130px"
-          className="object-cover"
-        />
+      {/* 6. Bottom-Right: Parchment scroll with pen */}
+      <div className="hidden md:block absolute bottom-6 sm:bottom-10 right-4 lg:right-16 xl:right-24 w-28 h-28 sm:w-36 sm:h-36 lg:w-40 lg:h-40 transition-transform duration-300 hover:scale-105 pointer-events-none">
+        <div className="relative w-full h-full">
+          <Image
+            src="/cta/6.png"
+            alt="Parchment scroll illustration"
+            fill
+            sizes="160px"
+            className="object-contain"
+          />
+        </div>
       </div>
 
       {/* =========================================================================
-          CENTER CONTENT & FORM (With Mobile Image Grid Pairs)
+          CENTER CONTENT & FORM (With Mobile 4-Image Grid Pairs, no white cards, +20% size)
           ========================================================================= */}
       <div className="relative z-10 w-full max-w-[760px] mx-auto px-4 sm:px-6 text-center">
         
-        {/* Mobile Top Image Pair (matching mobile screenshot) */}
-        <div className="md:hidden grid grid-cols-2 gap-8 max-w-[340px] mx-auto mb-8 px-2">
-          <div className="relative aspect-square w-full overflow-hidden shadow-sm border border-[#1B2A4A]/5">
+        {/* Mobile Top Image Pair (2 of the 4 mobile images) */}
+        <div className="md:hidden grid grid-cols-2 gap-6 max-w-[320px] mx-auto mb-8 px-2">
+          <div className="relative aspect-square w-full flex items-center justify-center">
             <Image
-              src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=400&q=80"
-              alt="Legal team in meeting"
+              src="/cta/1.png"
+              alt="Will document illustration"
               fill
-              sizes="170px"
-              className="object-cover"
+              sizes="160px"
+              className="object-contain scale-[1.2]"
             />
           </div>
-          <div className="relative aspect-square w-full overflow-hidden shadow-sm border border-[#1B2A4A]/5">
+          <div className="relative aspect-square w-full flex items-center justify-center">
             <Image
-              src="https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=400&q=80"
-              alt="Lawyer consultation"
+              src="/cta/4.png"
+              alt="Document inspection illustration"
               fill
-              sizes="170px"
-              className="object-cover"
+              sizes="160px"
+              className="object-contain scale-[1.2]"
             />
           </div>
         </div>
@@ -168,24 +178,24 @@ export default function CTA() {
           </span>
         </div>
 
-        {/* Mobile Bottom Image Pair (matching mobile screenshot) */}
-        <div className="md:hidden grid grid-cols-2 gap-8 max-w-[340px] mx-auto mt-8 px-2">
-          <div className="relative aspect-square w-full overflow-hidden shadow-sm border border-[#1B2A4A]/5">
+        {/* Mobile Bottom Image Pair (remaining 2 of the 4 mobile images) */}
+        <div className="md:hidden grid grid-cols-2 gap-6 max-w-[320px] mx-auto mt-8 px-2">
+          <div className="relative aspect-square w-full flex items-center justify-center">
             <Image
-              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80"
-              alt="Client portrait"
+              src="/cta/2.png"
+              alt="Protected folder illustration"
               fill
-              sizes="170px"
-              className="object-cover"
+              sizes="160px"
+              className="object-contain scale-[1.2]"
             />
           </div>
-          <div className="relative aspect-square w-full overflow-hidden shadow-sm border border-[#1B2A4A]/5">
+          <div className="relative aspect-square w-full flex items-center justify-center">
             <Image
-              src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=400&q=80"
-              alt="Client speaking with advisor"
+              src="/cta/6.png"
+              alt="Legal scroll illustration"
               fill
-              sizes="170px"
-              className="object-cover"
+              sizes="160px"
+              className="object-contain scale-[1.2]"
             />
           </div>
         </div>

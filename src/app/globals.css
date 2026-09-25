@@ -140,14 +140,20 @@ img, svg, video {
 /* All Headings default to Playfair Display */
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-heading);
-  color: var(--text-heading);
   letter-spacing: -0.02em;
   line-height: 1.22;
 }
 
+h1:not([class*="text-"]), h2:not([class*="text-"]), h3:not([class*="text-"]), h4:not([class*="text-"]), h5:not([class*="text-"]), h6:not([class*="text-"]) {
+  color: var(--text-heading);
+}
+
 p {
-  color: var(--text-main);
   margin-bottom: 1rem;
+}
+
+p:not([class*="text-"]) {
+  color: var(--text-main);
 }
 
 a {

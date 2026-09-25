@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useRef } from "react";
+import React, { useRef, useEffect, useState, useCallback } from "react";
 import { Star, CheckCircle2, ChevronLeft, ChevronRight } from "lucide-react";
 
 interface Review {
@@ -11,61 +11,313 @@ interface Review {
   content: string;
 }
 
-const reviews: Review[] = [
+const reviewsRow1: Review[] = [
   {
     id: 1,
-    name: "Stephen",
+    name: "Stephen T.",
     rating: 5,
     verified: true,
     content: "So far excellent service and excellent communication 👍 Everything was clearly explained and handled without any stress.",
   },
   {
     id: 2,
-    name: "Roy",
+    name: "Roy P.",
     rating: 5,
     verified: true,
     content: "Whatever you are paying your legal advisors it's not enough. Patient, reassuring, and thorough from the very first phone call to the final document.",
   },
   {
     id: 3,
-    name: "Leanne",
+    name: "Leanne C.",
     rating: 5,
     verified: true,
     content: "I recently arranged our family living will and estate planning. They were respectful, kind, and professional in dealing with every question.",
   },
   {
     id: 4,
-    name: "Debbie M",
+    name: "Debbie M.",
     rating: 5,
     verified: true,
     content: "Very easy to communicate with. I felt confident and reassured right from the get-go. Our documents were prepared and attested flawlessly.",
   },
   {
     id: 5,
-    name: "Rajesh K",
+    name: "Rajesh K.",
     rating: 5,
     verified: true,
-    content: "Drafted my will in less than 20 minutes online. The legal panel review gave our family total confidence under Indian succession laws.",
+    content: "Drafted my will in less than 20 minutes online. The legal panel review gave our family total confidence under succession laws.",
   },
   {
     id: 6,
-    name: "Ananya S",
+    name: "Ananya S.",
     rating: 5,
     verified: true,
     content: "Transparent flat fees with zero hidden charges. Highly recommend to anyone looking to secure their children's future properly.",
   },
 ];
 
-export default function Testimonial() {
-  const scrollRef = useRef<HTMLDivElement>(null);
+const reviewsRow2: Review[] = [
+  {
+    id: 7,
+    name: "Michael B.",
+    rating: 5,
+    verified: true,
+    content: "The step-by-step questionnaire made what seemed like an overwhelming process completely straightforward and painless.",
+  },
+  {
+    id: 8,
+    name: "Priya M.",
+    rating: 5,
+    verified: true,
+    content: "Excellent platform! Having an experienced advocate review everything before signing gave us complete peace of mind.",
+  },
+  {
+    id: 9,
+    name: "David T.",
+    rating: 5,
+    verified: true,
+    content: "Clear advice without complicated legalese jargon. Updates were immediate and customer support went above and beyond.",
+  },
+  {
+    id: 10,
+    name: "Sunita R.",
+    rating: 5,
+    verified: true,
+    content: "Securing our family assets used to be something we kept putting off. With this service, we got it completed over a weekend.",
+  },
+  {
+    id: 11,
+    name: "Vikram S.",
+    rating: 5,
+    verified: true,
+    content: "Affordable, quick, and backed by genuine legal practitioners. Best estate planning service I have come across.",
+  },
+  {
+    id: 12,
+    name: "Catherine W.",
+    rating: 5,
+    verified: true,
+    content: "Friendly, compassionate service during a difficult family transition. Everything was delivered accurately on time.",
+  },
+];
 
-  const scroll = (direction: "left" | "right") => {
-    if (scrollRef.current) {
-      const cardWidth = 340;
-      scrollRef.current.scrollBy({
-        left: direction === "left" ? -cardWidth : cardWidth,
-        behavior: "smooth",
-      });
+interface MarqueeRowProps {
+  items: Review[];
+  direction: "left" | "right";
+  speed?: number;
+  rowRef?: React.RefObject<HTMLDivElement | null>;
+}
+
+function MarqueeRow({ items, direction, speed = 0.75, rowRef }: MarqueeRowProps) {
+  const containerRef = useRef<HTMLDivElement>(null);
+  const firstSetRef = useRef<HTMLDivElement>(null);
+
+  // Expose containerRef to external rowRef if provided
+  useEffect(() => {
+    if (rowRef) {
+      rowRef.current = containerRef.current;
+    }
+  }, [rowRef]);
+
+  const [isDragging, setIsDragging] = useState(false);
+  const [isHovered, setIsHovered] = useState(false);
+
+  const dragStartX = useRef(0);
+  const dragStartScrollLeft = useRef(0);
+  const setWidth = useRef(0);
+
+  // Measure width of one complete set of cards + gap
+  const updateSetWidth = useCallback(() => {
+    if (firstSetRef.current) {
+      // gap-5 is 20px, gap-6 is 24px (at sm breakpoint >= 640px)
+      const gap = window.innerWidth >= 640 ? 24 : 20;
+      setWidth.current = firstSetRef.current.offsetWidth + gap;
+    }
+  }, []);
+
+  useEffect(() => {
+    updateSetWidth();
+    window.addEventListener("resize", updateSetWidth);
+    return () => window.removeEventListener("resize", updateSetWidth);
+  }, [updateSetWidth]);
+
+  // Initial scroll position setup
+  useEffect(() => {
+    const el = containerRef.current;
+    if (!el) return;
+
+    const timer = setTimeout(() => {
+      updateSetWidth();
+      const singleWidth = setWidth.current || (el.scrollWidth / 4);
+      if (direction === "right") {
+        el.scrollLeft = singleWidth * 2;
+      } else {
+        el.scrollLeft = singleWidth;
+      }
+    }, 50);
+
+    return () => clearTimeout(timer);
+  }, [direction, updateSetWidth]);
+
+  // Continuous smooth auto-scrolling with seamless wrap
+  useEffect(() => {
+    let animId: number;
+
+    const tick = () => {
+      const el = containerRef.current;
+      if (el && !isDragging && !isHovered && setWidth.current > 0) {
+        const sw = setWidth.current;
+
+        if (direction === "left") {
+          el.scrollLeft += speed;
+          if (el.scrollLeft >= sw * 2) {
+            el.scrollLeft -= sw;
+          }
+        } else {
+          el.scrollLeft -= speed;
+          if (el.scrollLeft <= sw) {
+            el.scrollLeft += sw;
+          }
+        }
+      }
+      animId = requestAnimationFrame(tick);
+    };
+
+    animId = requestAnimationFrame(tick);
+    return () => cancelAnimationFrame(animId);
+  }, [direction, speed, isDragging, isHovered]);
+
+  // Mouse Drag Handlers
+  const handleMouseDown = (e: React.MouseEvent) => {
+    const el = containerRef.current;
+    if (!el) return;
+    setIsDragging(true);
+    dragStartX.current = e.pageX;
+    dragStartScrollLeft.current = el.scrollLeft;
+  };
+
+  const handleMouseMove = (e: React.MouseEvent) => {
+    if (!isDragging) return;
+    const el = containerRef.current;
+    if (!el) return;
+    e.preventDefault();
+    const walk = (e.pageX - dragStartX.current) * 1.3;
+    el.scrollLeft = dragStartScrollLeft.current - walk;
+
+    // Seamless wrap during drag
+    const sw = setWidth.current;
+    if (sw > 0) {
+      if (el.scrollLeft >= sw * 2.5) {
+        el.scrollLeft -= sw;
+        dragStartScrollLeft.current -= sw;
+      } else if (el.scrollLeft <= sw * 0.5) {
+        el.scrollLeft += sw;
+        dragStartScrollLeft.current += sw;
+      }
+    }
+  };
+
+  const handleMouseUp = () => {
+    setIsDragging(false);
+  };
+
+  const handleMouseLeave = () => {
+    setIsDragging(false);
+    setIsHovered(false);
+  };
+
+  return (
+    <div
+      ref={containerRef}
+      onMouseDown={handleMouseDown}
+      onMouseMove={handleMouseMove}
+      onMouseUp={handleMouseUp}
+      onMouseLeave={handleMouseLeave}
+      onMouseEnter={() => setIsHovered(true)}
+      onTouchStart={() => setIsDragging(true)}
+      onTouchEnd={() => setIsDragging(false)}
+      className="flex overflow-x-auto scrollbar-none py-2 cursor-grab active:cursor-grabbing select-none"
+      style={{
+        scrollbarWidth: "none",
+        msOverflowStyle: "none",
+        WebkitOverflowScrolling: "touch",
+      }}
+    >
+      <div className="flex gap-5 sm:gap-6 shrink-0">
+        {/* Set 1 (measured for exact width) */}
+        <div ref={firstSetRef} className="flex gap-5 sm:gap-6 shrink-0">
+          {items.map((review, idx) => (
+            <ReviewCard key={`set1-${review.id}-${idx}`} review={review} />
+          ))}
+        </div>
+
+        {/* Set 2 */}
+        <div className="flex gap-5 sm:gap-6 shrink-0">
+          {items.map((review, idx) => (
+            <ReviewCard key={`set2-${review.id}-${idx}`} review={review} />
+          ))}
+        </div>
+
+        {/* Set 3 */}
+        <div className="flex gap-5 sm:gap-6 shrink-0">
+          {items.map((review, idx) => (
+            <ReviewCard key={`set3-${review.id}-${idx}`} review={review} />
+          ))}
+        </div>
+
+        {/* Set 4 */}
+        <div className="flex gap-5 sm:gap-6 shrink-0">
+          {items.map((review, idx) => (
+            <ReviewCard key={`set4-${review.id}-${idx}`} review={review} />
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function ReviewCard({ review }: { review: Review }) {
+  return (
+    <div className="w-[82vw] sm:w-[320px] lg:w-[340px] shrink-0 bg-white rounded-[24px] sm:rounded-[28px] p-6 sm:p-7 min-h-[210px] sm:min-h-[235px] flex flex-col justify-between border border-[#1B2A4A]/5 shadow-[0_4px_20px_rgba(0,0,0,0.025)] hover:shadow-[0_8px_30px_rgba(0,0,0,0.055)] transition-all duration-300 pointer-events-auto">
+      <div>
+        {/* Reviewer Header: Name + 5 Black Stars */}
+        <div className="flex items-center justify-between gap-3 mb-1.5">
+          <h3 className="font-bold text-[#172228] text-[1.02rem]">
+            {review.name}
+          </h3>
+          <div className="flex items-center gap-0.5">
+            {[...Array(review.rating)].map((_, i) => (
+              <Star key={i} size={13} className="fill-[#172228] text-[#172228]" />
+            ))}
+          </div>
+        </div>
+
+        {/* Verified Customer Status */}
+        <div className="flex items-center gap-1.5 text-xs text-[#55636D] font-medium mb-3.5">
+          <CheckCircle2 size={13} className="text-[#172228]" />
+          <span>Verified Customer</span>
+        </div>
+
+        {/* Review Quote Text */}
+        <p className="text-[0.88rem] sm:text-[0.92rem] text-[#2D3748] leading-relaxed">
+          {review.content}
+        </p>
+      </div>
+    </div>
+  );
+}
+
+export default function Testimonial() {
+  const row1Ref = useRef<HTMLDivElement>(null);
+  const row2Ref = useRef<HTMLDivElement>(null);
+
+  const scrollManual = (direction: "left" | "right") => {
+    const shift = direction === "left" ? -360 : 360;
+    if (row1Ref.current) {
+      row1Ref.current.scrollBy({ left: shift, behavior: "smooth" });
+    }
+    if (row2Ref.current) {
+      row2Ref.current.scrollBy({ left: -shift, behavior: "smooth" });
     }
   };
 
@@ -111,67 +363,34 @@ export default function Testimonial() {
             </div>
           </div>
 
-          {/* Left and Right Navigation Buttons above carousel on the right side */}
-          <div className="flex items-center gap-3 shrink-0 self-start sm:self-end">
-            <button
-              onClick={() => scroll("left")}
-              aria-label="Previous reviews"
-              className="w-11 h-11 sm:w-12 sm:h-12 rounded-full border border-[#1B2A4A]/10 bg-white hover:bg-[#FAF7F0] text-[#172228] shadow-sm flex items-center justify-center transition-all duration-200 active:scale-95 cursor-pointer"
-            >
-              <ChevronLeft size={20} strokeWidth={2.2} />
-            </button>
-            <button
-              onClick={() => scroll("right")}
-              aria-label="Next reviews"
-              className="w-11 h-11 sm:w-12 sm:h-12 rounded-full border border-[#1B2A4A]/10 bg-white hover:bg-[#FAF7F0] text-[#172228] shadow-sm flex items-center justify-center transition-all duration-200 active:scale-95 cursor-pointer"
-            >
-              <ChevronRight size={20} strokeWidth={2.2} />
-            </button>
-          </div>
+          
         </div>
 
         {/* =========================================================================
-            CAROUSEL WRAPPER
+            TWO-ROW ANIMATED & DRAGGABLE CAROUSEL
+            Row 1: Moves right-to-left, draggable, visible on mobile & desktop
+            Row 2: Moves left-to-right, draggable, visible only on md+ desktop
             ========================================================================= */}
-        <div className="relative">
-          {/* Horizontal Track of Cards */}
-          <div
-            ref={scrollRef}
-            className="flex gap-5 sm:gap-6 overflow-x-auto pb-6 pt-2 scrollbar-none snap-x snap-mandatory scroll-smooth -mx-6 px-6 sm:-mx-8 sm:px-8 lg:-mx-12 lg:px-12"
-            style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
-          >
-            {reviews.map((review) => (
-              <div
-                key={review.id}
-                className="w-[82vw] sm:w-[320px] lg:w-[340px] shrink-0 snap-start bg-white rounded-[26px] sm:rounded-[30px] p-7 sm:p-8 min-h-[220px] sm:min-h-[245px] flex flex-col justify-between border border-[#1B2A4A]/5 shadow-[0_4px_20px_rgba(0,0,0,0.025)] hover:shadow-[0_8px_30px_rgba(0,0,0,0.05)] transition-all duration-300"
-              >
-                <div>
-                  {/* Reviewer Header: Name + 5 Black Stars */}
-                  <div className="flex items-center justify-between gap-3 mb-1.5">
-                    <h3 className="font-bold text-[#172228] text-[1.05rem]">
-                      {review.name}
-                    </h3>
-                    <div className="flex items-center gap-0.5">
-                      {[...Array(review.rating)].map((_, i) => (
-                        <Star key={i} size={13} className="fill-[#172228] text-[#172228]" />
-                      ))}
-                    </div>
-                  </div>
+        <div className="relative space-y-4 sm:space-y-6 -mx-6 px-6 sm:-mx-8 sm:px-8 lg:-mx-12 lg:px-12">
+          
+          {/* Row 1: Right to Left (Visible on Mobile & Desktop) */}
+          <MarqueeRow
+            items={reviewsRow1}
+            direction="left"
+            speed={0.7}
+            rowRef={row1Ref}
+          />
 
-                  {/* Verified Customer Status */}
-                  <div className="flex items-center gap-1.5 text-xs text-[#55636D] font-medium mb-4">
-                    <CheckCircle2 size={13} className="text-[#172228]" />
-                    <span>Verified Customer</span>
-                  </div>
-
-                  {/* Review Quote Text */}
-                  <p className="text-[0.90rem] sm:text-[0.93rem] text-[#2D3748] leading-relaxed">
-                    {review.content}
-                  </p>
-                </div>
-              </div>
-            ))}
+          {/* Row 2: Left to Right (Hidden on mobile, visible on desktop/tablet md+) */}
+          <div className="hidden md:block">
+            <MarqueeRow
+              items={reviewsRow2}
+              direction="right"
+              speed={0.7}
+              rowRef={row2Ref}
+            />
           </div>
+
         </div>
 
       </div>
