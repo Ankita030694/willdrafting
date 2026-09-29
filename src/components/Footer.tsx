@@ -78,7 +78,7 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/#about" className="hover:text-[#172228] transition-colors">
+                <Link href="/aboutus" className="hover:text-[#172228] transition-colors">
                   About
                 </Link>
               </li>
@@ -88,7 +88,7 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/authority/blogs" className="hover:text-[#172228] transition-colors">
+                <Link href="/blogs" className="hover:text-[#172228] transition-colors">
                   Journal
                 </Link>
               </li>

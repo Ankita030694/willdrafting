@@ -5,6 +5,7 @@ import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import FAQ from "@/components/faq";
+import CTA from "@/components/cta";
 import Process from "@/components/process";
 import { ArrowUpRight } from "lucide-react";
 
@@ -154,6 +155,9 @@ export default function ServicePage() {
 
       {/* Reusable FAQ Section */}
       <FAQ />
+
+      {/* CTA Section */}
+      <CTA />
 
       {/* Site Footer */}
       <Footer />
