@@ -65,12 +65,7 @@ export default function ContactUsPage() {
       <main className="flex-1 w-full max-w-8xl mx-auto px-5 sm:px-8 lg:px-12 pt-8 sm:pt-14 pb-20 mt-25">
         {/* Page Top Heading */}
         <div className="mb-6 sm:mb-8">
-          <h1
-            className="text-4xl sm:text-5xl lg:text-[4.25rem] font-normal leading-[1.08] tracking-[-0.025em] text-[#111827]"
-            style={{
-              fontFamily: "Georgia, 'Times New Roman', Cambria, serif",
-            }}
-          >
+          <h1 className="text-4xl sm:text-5xl lg:text-[4.25rem] font-medium leading-[1.08] tracking-[-0.025em] text-[#111827]">
             Tell us what happened.
           </h1>
         </div>
@@ -79,12 +74,7 @@ export default function ContactUsPage() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-start w-full">
           {/* Mobile Introduction Heading (Visible on Mobile only, above form) */}
           <div className="block lg:hidden">
-            <h2
-              className="text-2xl sm:text-3xl font-normal leading-[1.22] tracking-[-0.015em] text-[#111827] mb-2"
-              style={{
-                fontFamily: "Georgia, 'Times New Roman', Cambria, serif",
-              }}
-            >
+            <h2 className="text-2xl sm:text-3xl font-medium leading-[1.22] tracking-[-0.015em] text-[#111827] mb-2">
               There is no wrong way to start this. Tell us roughly what happened and we will
               take it from there.
             </h2>
@@ -97,12 +87,7 @@ export default function ContactUsPage() {
                 <div className="w-14 h-14 bg-[#204031] text-white rounded-full flex items-center justify-center mx-auto mb-5 shadow-sm">
                   <CheckCircle2 className="w-8 h-8" />
                 </div>
-                <h3
-                  className="text-2xl sm:text-3xl font-normal text-[#111827] mb-3"
-                  style={{
-                    fontFamily: "Georgia, 'Times New Roman', Cambria, serif",
-                  }}
-                >
+                <h3 className="text-2xl sm:text-3xl font-medium text-[#111827] mb-3">
                   Thank you for reaching out.
                 </h3>
                 <p className="text-neutral-600 text-sm sm:text-base leading-relaxed max-w-md mx-auto mb-6">
@@ -314,12 +299,7 @@ export default function ContactUsPage() {
           {/* Contact Info Column: order-2 on mobile (BELOW FORM), order-1 on lg+ (LEFT) */}
           <div className="lg:col-span-6 flex flex-col order-2 lg:order-1 pt-6 lg:pt-0 border-t border-neutral-200/70 lg:border-t-0">
             {/* Desktop Heading (Visible on Desktop only) */}
-            <h2
-              className="hidden lg:block text-2xl sm:text-3xl lg:text-[2.25rem] font-normal leading-[1.22] tracking-[-0.015em] text-[#111827] mb-6"
-              style={{
-                fontFamily: "Georgia, 'Times New Roman', Cambria, serif",
-              }}
-            >
+            <h2 className="hidden lg:block text-2xl sm:text-3xl lg:text-[2.25rem] font-medium leading-[1.22] tracking-[-0.015em] text-[#111827] mb-6">
               There is no wrong way to start this. Tell us roughly what happened and we will
               take it from there.
             </h2>

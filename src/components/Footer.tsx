@@ -68,8 +68,8 @@ export default function Footer() {
             </p>
             <ul className="space-y-3.5 text-[0.90rem]">
               <li>
-                <Link href="/how-it-works" className="hover:text-[#172228] transition-colors">
-                  Practice areas
+                <Link href="/service" className="hover:text-[#172228] transition-colors">
+                  Services
                 </Link>
               </li>
               <li>
