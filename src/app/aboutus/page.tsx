@@ -72,7 +72,7 @@ export default function AboutUsPage() {
                 ------------------------------------------------------------------- */}
             <div className="relative aspect-square w-full h-full min-h-[300px] bg-neutral-800 overflow-hidden">
               <Image
-                src="/images/advocate.jpg"
+                src="/1.jpg"
                 alt="Our Senior Legal Counsel"
                 fill
                 sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
@@ -106,7 +106,7 @@ export default function AboutUsPage() {
                 ------------------------------------------------------------------- */}
             <div className="relative aspect-square w-full h-full min-h-[300px] bg-neutral-800 overflow-hidden">
               <Image
-                src="/images/attorney-desk.jpg"
+                src="/2.jpg"
                 alt="Consultation Desk & Legal Drafting"
                 fill
                 sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
@@ -119,7 +119,7 @@ export default function AboutUsPage() {
                 ------------------------------------------------------------------- */}
             <div className="relative aspect-square w-full h-full min-h-[300px] bg-neutral-800 overflow-hidden group">
               <Image
-                src="/images/contact-consultation.jpg"
+                src="/3.jpg"
                 alt="Client Consultation & Advisory"
                 fill
                 sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
@@ -155,7 +155,7 @@ export default function AboutUsPage() {
                 ------------------------------------------------------------------- */}
             <div className="relative aspect-square w-full h-full min-h-[300px] bg-neutral-800 overflow-hidden">
               <Image
-                src="/images/service-hero.jpg"
+                src="/4.jpg"
                 alt="Document Review and Estate Strategy"
                 fill
                 sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
