@@ -7,6 +7,8 @@
   --font-jakarta: var(--font-jakarta), 'Plus Jakarta Sans', sans-serif;
   --font-heading: var(--font-jakarta), 'Plus Jakarta Sans', sans-serif;
   --font-body: var(--font-jakarta), 'Plus Jakarta Sans', sans-serif;
+  --width-8xl: 90rem;
+  --container-8xl: 90rem;
 }
 
 /* ==========================================================================

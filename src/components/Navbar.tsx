@@ -178,7 +178,7 @@ export default function Navbar() {
           {/* Right: CTA Button on Desktop */}
           <div className="hidden md:flex items-center justify-end min-w-[130px] pr-2 sm:pr-3">
             <Link
-              href="/start"
+              href="/contactus"
               className="inline-flex items-center justify-center rounded-full bg-[#C65378] px-6 py-2.5 text-[14px] font-regular text-[#FFFFFF] transition-all duration-200 active:scale-95"
               style={{
                 paddingLeft: "1.5rem",
@@ -306,7 +306,7 @@ export default function Navbar() {
                   className="pt-3 border-t border-slate-100/80 mt-1"
                 >
                   <Link
-                    href="/start"
+                    href="/contactus"
                     onClick={() => setMobileMenuOpen(false)}
                     className="flex w-full items-center justify-center rounded-full bg-[#C65378] py-3 text-[14px] font-medium text-[#FFFFFF] shadow-[0_4px_12px_rgba(198,83,120,0.25)] transition-all active:scale-[0.98]"
                   >

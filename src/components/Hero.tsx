@@ -62,7 +62,7 @@ export default function Hero() {
             {/* CTA Button */}
             <div className="mb-8">
               <Link
-                href="/start"
+                href="/contactus"
                 className="inline-flex items-center justify-center rounded-full bg-[#C65378] text-[16px] sm:text-[17px] font-medium text-[#FFFFFF] shadow-sm hover:bg-[#a13c5d] hover:shadow-md transition-all active:scale-95"
                 style={{
                   paddingLeft: "2.25rem",
