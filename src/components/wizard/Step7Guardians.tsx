@@ -20,12 +20,16 @@ import {
   Lock,
 } from "lucide-react";
 import AudioAssistantButton from "@/components/ui/AudioAssistantButton";
+import LanguageToggle from "@/components/ui/LanguageToggle";
+import { useLanguage } from "@/context/LanguageContext";
 
 interface Step7GuardiansProps {
   state: WillDraftingState;
   onUpdate: (updater: (prev: WillDraftingState) => WillDraftingState) => void;
   onNext: () => void;
   onBack: () => void;
+  lang?: "en" | "hi";
+  onChangeLang?: (lang: "en" | "hi") => void;
 }
 
 export default function Step7Guardians({
@@ -33,7 +37,13 @@ export default function Step7Guardians({
   onUpdate,
   onNext,
   onBack,
+  lang: propLang,
+  onChangeLang: propOnChangeLang,
 }: Step7GuardiansProps) {
+  const context = useLanguage();
+  const currentLang = propLang || context.lang || "en";
+  const isHi = currentLang === "hi";
+  const handleToggleLang = propOnChangeLang || context.setLang;
   const minorChildren = state.familyMembers.filter((f) => f.isMinor);
   const adultFamily = state.familyMembers.filter((f) => !f.isMinor);
   const hasMinors = minorChildren.length > 0;
@@ -127,43 +137,23 @@ export default function Step7Guardians({
     >
       {/* Header */}
       <div>
-        <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: "0.35rem" }}>
-          <div
-            style={{
-              display: "inline-flex",
-              alignItems: "center",
-              gap: "0.4rem",
-              padding: "0.2rem 0.6rem",
-              borderRadius: "999px",
-              backgroundColor: "rgba(198, 83, 120, 0.12)",
-              color: "var(--color-gold)",
-              fontSize: "0.72rem",
-              fontWeight: 700,
-              textTransform: "uppercase",
-              letterSpacing: "0.05em",
-            }}
-          >
-            <span style={{ width: "5px", height: "5px", borderRadius: "50%", backgroundColor: "var(--color-gold)" }}></span>
-            Step 7 of 14 • Custodial Directives
-          </div>
+        <div style={{ display: "flex", alignItems: "center", justifyContent: "flex-end", marginBottom: "0.35rem" }}>
           <div style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
+            <LanguageToggle size="sm" currentLang={currentLang} onToggle={handleToggleLang} />
             <AudioAssistantButton
               textToSpeak="Who will be the legal guardian of your minor children? A testamentary guardian cares for their physical custody and financial well-being until they turn 18. You can select a trusted family member."
-              label="Listen / सुनें 🔊"
+              label={isHi ? "सुनें 🔊" : "Listen 🔊"}
             />
             <span style={{ fontSize: "0.75rem", color: "var(--color-slate)" }}>
-              ISA S.60 & HMG Act S.9 • Child Custody Protection
+              {isHi ? "बच्चों के कानूनी संरक्षण के नियम" : "Legal protection for children (Child custody under law)"}
             </span>
           </div>
         </div>
 
         <div style={{ display: "flex", alignItems: "baseline", gap: "0.65rem", flexWrap: "wrap" }}>
           <h2 style={{ fontSize: "1.45rem", fontWeight: 800, color: "var(--color-navy)", margin: 0, letterSpacing: "-0.02em" }}>
-            Testamentary Guardianship
+            {isHi ? "नाबालिग बच्चों के कानूनी अभिभावक (गार्जियन)" : "Testamentary Guardianship (The trusted person appointed to care for minor children)"}
           </h2>
-          <span style={{ fontSize: "0.88rem", color: "var(--color-gold)", fontWeight: 600 }}>
-            (नाबालिग बच्चों के कानूनी अभिभावक / गार्जियन)
-          </span>
         </div>
       </div>
 
@@ -233,7 +223,9 @@ export default function Step7Guardians({
                 No Minor Children Registered
               </h3>
               <p style={{ fontSize: "0.85rem", color: "var(--color-slate)", maxWidth: "480px", margin: "0.4rem 0 0", lineHeight: 1.5 }}>
-                All family members added are 18 years of age or older. Testamentary guardianship clauses are only statutory for minor children under legal majority.
+                {isHi
+                  ? "आपके परिवार के सभी सदस्य 18 वर्ष या उससे अधिक आयु के हैं। कानूनी अभिभावक (गार्जियन) केवल 18 वर्ष से कम आयु के बच्चों के लिए आवश्यक होता है।"
+                  : "All family members added are 18 years of age or older. Legal guardian appointments are only needed for minor children under 18 years."}
               </p>
             </div>
 
@@ -250,7 +242,7 @@ export default function Step7Guardians({
               }}
             >
               <span style={{ fontSize: "0.8rem", color: "var(--color-navy)", fontWeight: 600 }}>
-                Future-proofing: Add contingent guardian clause for any future children
+                {isHi ? "भविष्य के लिए: यदि भविष्य में कोई बच्चा हो तो उसके लिए बैकअप गार्जियन जोड़ें" : "Future-proofing: Add a backup guardian for any future children"}
               </span>
               <AppleSwitch checked={enableFutureClause} onChange={setEnableFutureClause} />
             </div>
@@ -364,10 +356,10 @@ export default function Step7Guardians({
                   </div>
                   <div>
                     <h3 style={{ margin: 0, fontSize: "1.05rem", fontWeight: 700, color: "var(--color-navy)" }}>
-                      Primary Guardian
+                      {isHi ? "प्राथमिक गार्जियन (नाबालिग बच्चों की देखभाल हेतु नियुक्त व्यक्ति)" : "Primary Guardian (The trusted person appointed to care for minor children)"}
                     </h3>
                     <span style={{ fontSize: "0.75rem", color: "var(--color-slate)" }}>
-                      Designated custodian for personal welfare
+                      {isHi ? "बच्चों के व्यक्तिगत कल्याण एवं संपत्ति का मुख्य संरक्षक" : "Designated custodian for personal welfare & financial custody"}
                     </span>
                   </div>
                 </div>
@@ -563,10 +555,10 @@ export default function Step7Guardians({
                   </div>
                   <div>
                     <h3 style={{ margin: 0, fontSize: "1.05rem", fontWeight: 700, color: "var(--color-navy)" }}>
-                      Alternate Guardian
+                      {isHi ? "वैकल्पिक गार्जियन (मुख्य संरक्षक के असमर्थ होने पर बैकअप)" : "Alternate Guardian (Backup custodian if primary guardian cannot act)"}
                     </h3>
                     <span style={{ fontSize: "0.75rem", color: "var(--color-slate)" }}>
-                      Contingent custodian if primary cannot act
+                      {isHi ? "सुनिश्चित करता है कि बच्चों की सुरक्षा में कभी कोई कानूनी बाधा न आए" : "Contingent custodian if primary guardian cannot act"}
                     </span>
                   </div>
                 </div>

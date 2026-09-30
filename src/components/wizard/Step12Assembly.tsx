@@ -55,11 +55,11 @@ export default function Step12Assembly({
   }, [onUpdate]);
 
   const stages = [
-    { label: "1. Raw Structured Questionnaire Ingestion", completed: progress >= 20 },
-    { label: "2. Statutory Personal Law & Succession Act Matrix", completed: progress >= 40 },
-    { label: "3. Asset Schedules & Percentage Apportionment", completed: progress >= 70 },
-    { label: "4. Section 102 Residuary Devise & Fiduciary Appointments", completed: progress >= 90 },
-    { label: "5. Section 63 Attestation, Testimonium & Execution Block", completed: progress >= 100 },
+    { label: "1. Questionnaire Information Processed", completed: progress >= 20 },
+    { label: "2. Personal Law & Succession Rule Verification", completed: progress >= 40 },
+    { label: "3. Asset Lists & Distribution Percentages", completed: progress >= 70 },
+    { label: "4. Remaining Assets & Executor Appointments", completed: progress >= 90 },
+    { label: "5. Signing & Witness Certification Sections", completed: progress >= 100 },
   ];
 
   return (
@@ -94,21 +94,18 @@ export default function Step12Assembly({
       </div>
 
       <div>
-        <div style={{ display: "inline-flex", alignItems: "center", gap: "0.5rem", padding: "0.3rem 0.75rem", borderRadius: "999px", backgroundColor: "rgba(198, 83, 120, 0.12)", color: "var(--color-gold)", fontSize: "0.75rem", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.06em", marginBottom: "0.75rem" }}>
-          <span style={{ width: "6px", height: "6px", borderRadius: "50%", backgroundColor: "var(--color-gold)" }}></span>
-          Step 12 of 14 • Dynamic Clause Compiler
-        </div>
+        
         <div style={{ display: "flex", justifyContent: "center", marginBottom: "0.5rem" }}>
           <AudioAssistantButton
-            textToSpeak="Assembling your legal instrument under the Indian Succession Act 1925. Our automated legal compiler is formatting all clauses, schedules, and witness blocks."
+            textToSpeak="Creating your official Will document. Formatting all clauses, lists of assets, and signature sections according to Indian law."
             label="Listen / सुनें 🔊"
           />
         </div>
         <h2 style={{ fontSize: "2.1rem", fontWeight: 800, color: "var(--color-navy)", margin: 0, letterSpacing: "-0.02em" }}>
-          Assembling Your Legal Instrument
+          Creating Your Official Will Document
         </h2>
         <div style={{ fontSize: "0.95rem", color: "var(--color-gold)", fontWeight: 600, marginTop: "0.25rem" }}>
-          (कानूनी वसीयतनामा का संकलन एवं प्रमाणीकरण)
+          (कानूनी वसीयतनामा का संकलन एवं तैयारी)
         </div>
         <p style={{ fontSize: "0.95rem", color: "var(--color-slate)", margin: "0.5rem 0 0", minHeight: "24px" }}>
           {currentStageText}

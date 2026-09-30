@@ -4,6 +4,7 @@ import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { WillDraftingState } from "@/lib/willDraftingStore";
+import LanguageToggle from "@/components/ui/LanguageToggle";
 import {
   Sparkles,
   User,
@@ -29,6 +30,7 @@ interface WizardSidebarProps {
   onJumpToStep: (step: number) => void;
   state: WillDraftingState;
   lang?: "en" | "hi";
+  onChangeLang?: (lang: "en" | "hi") => void;
 }
 
 export default function WizardSidebar({
@@ -36,6 +38,7 @@ export default function WizardSidebar({
   onJumpToStep,
   state,
   lang = "en",
+  onChangeLang,
 }: WizardSidebarProps) {
   const isHi = lang === "hi";
   const hasMinors = state.familyMembers.some((f) => f.isMinor);
@@ -183,6 +186,8 @@ export default function WizardSidebar({
           </Link>
         </div>
 
+        
+
         {/* Apple Watch style Progress Card */}
         <div
           style={{
@@ -312,7 +317,7 @@ export default function WizardSidebar({
                 <div style={{ display: "flex", flexDirection: "column", minWidth: 0, flex: 1 }}>
                   <span
                     style={{
-                      fontSize: "0.66rem",
+                      fontSize: "0.68rem",
                       fontWeight: 700,
                       textTransform: "uppercase",
                       letterSpacing: "0.07em",
@@ -320,16 +325,6 @@ export default function WizardSidebar({
                     }}
                   >
                     {isHi ? phase.hindiTitle : phase.title}
-                  </span>
-                  <span
-                    style={{
-                      fontSize: "0.62rem",
-                      opacity: 0.7,
-                      fontWeight: 500,
-                      marginTop: "1px",
-                    }}
-                  >
-                    {isHi ? phase.title : phase.hindiTitle}
                   </span>
                 </div>
 
@@ -435,16 +430,11 @@ export default function WizardSidebar({
                       <span style={{ overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}>
                         {isHi && step.hindi ? step.hindi : step.title}
                       </span>
-                      {step.hindi && (
-                        <span style={{ fontSize: "0.64rem", color: isActive ? "var(--color-gold)" : "rgba(255, 255, 255, 0.45)", lineHeight: 1.1 }}>
-                          {isHi ? step.title : step.hindi}
-                        </span>
-                      )}
                     </div>
 
                     {step.optionalNote && (
-                      <span style={{ fontSize: "0.65rem", color: "rgba(255, 255, 255, 0.35)" }}>
-                        {step.optionalNote}
+                      <span style={{ fontSize: "0.65rem", color: "rgba(255, 255, 255, 0.45)" }}>
+                        {isHi ? "(नाबालिग नहीं)" : step.optionalNote}
                       </span>
                     )}
                   </button>

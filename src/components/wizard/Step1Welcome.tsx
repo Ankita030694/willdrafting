@@ -16,6 +16,7 @@ import {
   Globe,
 } from "lucide-react";
 import AudioAssistantButton from "@/components/ui/AudioAssistantButton";
+import LanguageToggle from "@/components/ui/LanguageToggle";
 
 interface Step1WelcomeProps {
   state: WillDraftingState;
@@ -59,7 +60,7 @@ export default function Step1Welcome({
     {
       num: "04",
       title: "Audit & Final Document",
-      desc: "Automated 100-point legal audit, ISA clause generation, and printable certified Will.",
+      desc: "Automated 100-point legal check, official clause formatting, and printable certified Will.",
       hindiTitle: "कानूनी जांच एवं अंतिम वसीयत",
       hindiDesc: "स्वचालित 100-बिंदु कानूनी ऑडिट, कानून सम्मत धाराएं और प्रिंट करने योग्य प्रमाणित वसीयत।",
       Icon: FileText,
@@ -85,63 +86,7 @@ export default function Step1Welcome({
           {/* Top-Left: Language Toggle + Eyebrow Pill */}
           <div style={{ display: "flex", alignItems: "center", gap: "0.65rem", flexWrap: "wrap" }}>
             {/* Language Toggle Button (English / हिंदी) */}
-            <div
-              role="group"
-              aria-label="Select Language"
-              style={{
-                display: "inline-flex",
-                alignItems: "center",
-                backgroundColor: "rgba(23, 34, 40, 0.06)",
-                border: "1px solid rgba(23, 34, 40, 0.12)",
-                borderRadius: "999px",
-                padding: "3px",
-                gap: "2px",
-              }}
-            >
-              <button
-                type="button"
-                onClick={() => onChangeLang?.("en")}
-                style={{
-                  display: "inline-flex",
-                  alignItems: "center",
-                  gap: "0.3rem",
-                  padding: "0.22rem 0.7rem",
-                  borderRadius: "999px",
-                  border: "none",
-                  fontSize: "0.74rem",
-                  fontWeight: 700,
-                  cursor: "pointer",
-                  backgroundColor: !isHi ? "var(--color-gold)" : "transparent",
-                  color: !isHi ? "#FFFFFF" : "var(--color-navy)",
-                  boxShadow: !isHi ? "0 2px 8px rgba(198, 83, 120, 0.3)" : "none",
-                  transition: "all 0.18s ease",
-                }}
-              >
-                <Globe size={12} />
-                English
-              </button>
-              <button
-                type="button"
-                onClick={() => onChangeLang?.("hi")}
-                style={{
-                  display: "inline-flex",
-                  alignItems: "center",
-                  gap: "0.3rem",
-                  padding: "0.22rem 0.75rem",
-                  borderRadius: "999px",
-                  border: "none",
-                  fontSize: "0.76rem",
-                  fontWeight: 700,
-                  cursor: "pointer",
-                  backgroundColor: isHi ? "var(--color-gold)" : "transparent",
-                  color: isHi ? "#FFFFFF" : "var(--color-navy)",
-                  boxShadow: isHi ? "0 2px 8px rgba(198, 83, 120, 0.3)" : "none",
-                  transition: "all 0.18s ease",
-                }}
-              >
-                हिंदी
-              </button>
-            </div>
+            <LanguageToggle lang={lang} onChangeLang={onChangeLang || (() => {})} />
 
             {/* Eyebrow Pill */}
             <div
@@ -172,11 +117,11 @@ export default function Step1Welcome({
                   ? "विल ड्राफ्टिंग में आपका स्वागत है! वसीयतनामा बनाना अपने परिवार की सुरक्षा का सबसे बड़ा कदम है। इसमें केवल 10 से 15 मिनट लगते हैं। शुरू करने के लिए प्रश्नोत्तरी शुरू करें पर टैप करें।"
                   : "Welcome to Will Drafting! Making a will is an act of love to protect your family. It takes just 10 to 15 minutes. We guide you step by step in simple language. Tap Begin Questionnaire to start."
               }
-              label="Listen / सुनें 🔊"
+              label={isHi ? "सुनें 🔊" : "Listen / सुनें 🔊"}
             />
             {[
               { Icon: Clock, label: isHi ? "10-15 मिनट" : "10-15 Min" },
-              { Icon: Scale, label: isHi ? "ISA 1925 मान्य" : "ISA 1925 Compliant" },
+              { Icon: Scale, label: isHi ? "भारतीय कानून मान्य" : "Indian Law Compliant" },
               { Icon: Lock, label: isHi ? "100% गोपनीय" : "100% Private" },
               { Icon: ShieldCheck, label: isHi ? "कानूनी मानक" : "Legal Standards" },
             ].map((chip) => {
@@ -221,8 +166,8 @@ export default function Step1Welcome({
           </h1>
           <div style={{ fontSize: "0.95rem", color: "var(--color-gold)", fontWeight: 600, marginBottom: "0.45rem" }}>
             {isHi
-              ? "Making a Will is the biggest step to protect your family"
-              : "वसीयतनामा बनाना अपने परिवार की सुरक्षा का सबसे बड़ा कदम है"}
+              ? "वसीयतनामा बनाना अपने परिवार की सुरक्षा का सबसे बड़ा कदम है"
+              : "Protect your loved ones from court disputes and probate delays."}
           </div>
 
           <p
@@ -245,7 +190,7 @@ export default function Step1Welcome({
       <div style={{ flex: 1, display: "flex", flexDirection: "column", minHeight: 0 }}>
         <h3 style={{ fontSize: "0.95rem", fontWeight: 700, color: "var(--color-navy)", margin: "0 0 0.65rem" }}>
           {isHi
-            ? "आप 4 सरल चरणों में क्या पूरा करेंगे (What you will complete in 4 simple phases):"
+            ? "आप 4 सरल चरणों में क्या पूरा करेंगे:"
             : "What you will complete in 4 simple phases:"}
         </h3>
 
@@ -259,70 +204,39 @@ export default function Step1Welcome({
                   backgroundColor: "#FFFFFF",
                   borderRadius: "16px",
                   border: "1px solid rgba(27, 42, 74, 0.08)",
-                  padding: "1rem 1.15rem",
+                  padding: "1.1rem 1.15rem",
                   display: "flex",
                   flexDirection: "column",
-                  justifyContent: "space-between",
+                  justifyContent: "flex-start",
                   boxShadow: "0 2px 10px rgba(0, 0, 0, 0.02)",
-                  gap: "0.75rem",
+                  gap: "0.65rem",
                 }}
               >
-                <div>
-                  <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "0.65rem" }}>
-                    <div
-                      style={{
-                        width: "36px",
-                        height: "36px",
-                        borderRadius: "10px",
-                        backgroundColor: "rgba(27, 42, 74, 0.05)",
-                        display: "flex",
-                        alignItems: "center",
-                        justifyContent: "center",
-                      }}
-                    >
-                      <ItemIcon size={18} color="var(--color-navy)" />
-                    </div>
-                    <span style={{ fontSize: "0.8rem", fontWeight: 800, color: "var(--color-gold)" }}>
-                      {item.num}
-                    </span>
-                  </div>
-
-                  <h4 style={{ margin: "0 0 0.3rem", fontSize: "0.92rem", fontWeight: 700, color: "var(--color-navy)" }}>
-                    {item.title}
-                  </h4>
-                  <p style={{ margin: 0, fontSize: "0.78rem", color: "var(--color-slate)", lineHeight: 1.45 }}>
-                    {item.desc}
-                  </p>
-                </div>
-
-                {/* Bottom Hindi Section inside each card */}
-                <div
-                  style={{
-                    paddingTop: "0.65rem",
-                    borderTop: "1px dashed rgba(23, 34, 40, 0.12)",
-                  }}
-                >
+                <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
                   <div
                     style={{
-                      margin: "0 0 0.25rem",
-                      fontSize: "0.84rem",
-                      fontWeight: 700,
-                      color: "var(--color-gold)",
+                      width: "36px",
+                      height: "36px",
+                      borderRadius: "10px",
+                      backgroundColor: "rgba(27, 42, 74, 0.05)",
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
                     }}
                   >
-                    {item.hindiTitle}
+                    <ItemIcon size={18} color="var(--color-navy)" />
                   </div>
-                  <p
-                    style={{
-                      margin: 0,
-                      fontSize: "0.76rem",
-                      color: "var(--color-slate)",
-                      lineHeight: 1.5,
-                    }}
-                  >
-                    {item.hindiDesc}
-                  </p>
+                  <span style={{ fontSize: "0.8rem", fontWeight: 800, color: "var(--color-gold)" }}>
+                    {item.num}
+                  </span>
                 </div>
+
+                <h4 style={{ margin: "0 0 0.15rem", fontSize: "0.95rem", fontWeight: 700, color: "var(--color-navy)", lineHeight: 1.35 }}>
+                  {isHi ? item.hindiTitle : item.title}
+                </h4>
+                <p style={{ margin: 0, fontSize: "0.8rem", color: "var(--color-slate)", lineHeight: 1.5 }}>
+                  {isHi ? item.hindiDesc : item.desc}
+                </p>
               </div>
             );
           })}
@@ -373,7 +287,7 @@ export default function Step1Welcome({
             flexShrink: 0,
           }}
         >
-          <span>{isHi ? "प्रश्नोत्तरी शुरू करें (Begin)" : "Begin Questionnaire"}</span>
+          <span>{isHi ? "प्रश्नोत्तरी शुरू करें →" : "Begin Questionnaire →"}</span>
           <ArrowRight size={17} />
         </button>
       </div>

@@ -337,9 +337,9 @@ export default function UpdateWillTab({ state, onStateChange }: UpdateWillTabPro
 
               <Link
                 href={
-                  selectedEvent.recommendedStep === 1
+                  selectedEvent.recommendedStep <= 1
                     ? "/start"
-                    : `/start/${String(selectedEvent.recommendedStep).padStart(2, "0")}`
+                    : `/start/${String(selectedEvent.recommendedStep - 1).padStart(2, "0")}`
                 }
                 className="btn btn-gold"
                 style={{

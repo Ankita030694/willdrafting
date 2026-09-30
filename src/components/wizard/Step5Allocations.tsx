@@ -31,20 +31,48 @@ import {
   X,
 } from "lucide-react";
 import AudioAssistantButton from "@/components/ui/AudioAssistantButton";
+import LanguageToggle from "@/components/ui/LanguageToggle";
+import { useLanguage } from "@/context/LanguageContext";
+import CustomPercentageAllocator from "./CustomPercentageAllocator";
 
 interface Step5AllocationsProps {
   state: WillDraftingState;
   onUpdate: (updater: (prev: WillDraftingState) => WillDraftingState) => void;
   onNext: () => void;
   onBack: () => void;
+  lang?: "en" | "hi";
+  onChangeLang?: (lang: "en" | "hi") => void;
 }
+
+const relationshipHindiMap: Record<string, string> = {
+  spouse: "जीवनसाथी",
+  husband: "पति",
+  wife: "पत्नी",
+  son: "पुत्र",
+  daughter: "पुत्री",
+  father: "पिता",
+  mother: "माता",
+  brother: "भाई",
+  sister: "बहन",
+  sibling: "भाई/बहन",
+  friend: "मित्र",
+  charity: "दान / ट्रस्ट",
+  other: "अन्य",
+};
 
 export default function Step5Allocations({
   state,
   onUpdate,
   onNext,
   onBack,
+  lang: propLang,
+  onChangeLang: propOnChangeLang,
 }: Step5AllocationsProps) {
+  const context = useLanguage();
+  const currentLang = propLang || context.lang || "en";
+  const isHi = currentLang === "hi";
+  const handleToggleLang = propOnChangeLang || context.setLang;
+
   const assets: Asset[] = useMemo(() => state.assets || [], [state.assets]);
   const family = useMemo(() => state.familyMembers || [], [state.familyMembers]);
 
@@ -107,6 +135,13 @@ export default function Step5Allocations({
   const [selectedAssetIds, setSelectedAssetIds] = useState<string[]>([]);
   const [multiSelectModalOpen, setMultiSelectModalOpen] = useState(false);
 
+  // Single Asset Custom Allocation Modal (Requirement 1 & 2)
+  const [singleAssetModalAsset, setSingleAssetModalAsset] = useState<Asset | null>(null);
+
+  // Bulk Allocation Modal: Option 1 ("equal") vs Option 2 ("custom") (Requirement 3)
+  const [bulkDistributionMode, setBulkDistributionMode] = useState<"equal" | "custom">("equal");
+  const [bulkEqualSelectedIds, setBulkEqualSelectedIds] = useState<string[]>([]);
+
   // Review expanded groups
   const [expandedPersonInReview, setExpandedPersonInReview] = useState<string | null>(null);
 
@@ -125,14 +160,18 @@ export default function Step5Allocations({
   // Human readable allocation summary string
   const formatAllocationSummary = (assetId: string) => {
     const list = getAssetAllocations(assetId);
-    if (list.length === 0) return "Not allocated";
+    if (list.length === 0) return isHi ? "किसी को आवंटित नहीं" : "Not allocated";
     if (list.length === 1) {
-      return `${list[0].beneficiaryName} gets 100%`;
+      return isHi
+        ? `${list[0].beneficiaryName} को 100% मिलता है`
+        : `${list[0].beneficiaryName} gets 100%`;
     }
     const isEquallySplit = list.every((item) => Math.abs(item.percentage - 100 / list.length) < 2);
     const parts = list.map((item) => `${item.beneficiaryName} ${item.percentage}%`);
     if (isEquallySplit) {
-      return `${parts.join(" · ")}, split equally`;
+      return isHi
+        ? `${parts.join(" · ")}, बराबर बंटवारा`
+        : `${parts.join(" · ")}, split equally`;
     }
     return parts.join(" · ");
   };
@@ -196,13 +235,22 @@ export default function Step5Allocations({
     } else {
       const newIds = [...currentList.map((a) => a.beneficiaryId), memberId];
       applyEqualSplit(assetId, newIds);
+      if (newIds.length > 1) {
+        setShowChangeAmounts(true);
+      }
     }
   };
 
   // Apply Quick Presets
   const applyPreset = (
     assetId: string,
-    preset: "spouse_100" | "equal_children" | "spouse_children_50_50"
+    preset:
+      | "spouse_100"
+      | "equal_children"
+      | "spouse_children_50_50"
+      | "spouse_children_60_40"
+      | "spouse_children_70_30"
+      | "equal_all"
   ) => {
     const spouse = family.find((f) => f.relationship === "spouse");
     const children = family.filter(
@@ -216,23 +264,37 @@ export default function Step5Allocations({
     } else if (preset === "equal_children" && children.length > 0) {
       targetIds = children.map((c) => c.id);
       applyEqualSplit(assetId, targetIds);
-    } else if (preset === "spouse_children_50_50") {
-      const remaining = allocations.filter((a) => a.assetId !== assetId);
-      const newAdds: BeneficiaryAllocation[] = [];
+    } else if (preset === "equal_all" && family.length > 0) {
+      targetIds = family.map((f) => f.id);
+      applyEqualSplit(assetId, targetIds);
+    } else if (
+      (preset === "spouse_children_50_50" ||
+        preset === "spouse_children_60_40" ||
+        preset === "spouse_children_70_30") &&
+      spouse
+    ) {
+      const spousePct =
+        preset === "spouse_children_60_40"
+          ? 60
+          : preset === "spouse_children_70_30"
+          ? 70
+          : 50;
+      const childrenPct = 100 - spousePct;
 
-      if (spouse) {
-        newAdds.push({
+      const remaining = allocations.filter((a) => a.assetId !== assetId);
+      const newAdds: BeneficiaryAllocation[] = [
+        {
           id: `alc-${Date.now()}-sp`,
           assetId,
           beneficiaryId: spouse.id,
           beneficiaryName: spouse.name,
-          percentage: 50,
-        });
-      }
+          percentage: spousePct,
+        },
+      ];
+
       if (children.length > 0) {
-        const pool = spouse ? 50 : 100;
-        const share = Math.floor(pool / children.length);
-        const remainder = pool - share * children.length;
+        const share = Math.floor(childrenPct / children.length);
+        const remainder = childrenPct - share * children.length;
         children.forEach((c, idx) => {
           newAdds.push({
             id: `alc-${Date.now()}-ch-${idx}`,
@@ -244,8 +306,37 @@ export default function Step5Allocations({
         });
       }
       persistChanges([...remaining, ...newAdds]);
-      setSrAnnouncement("Applied 50% Spouse and 50% Children split.");
+      setShowChangeAmounts(true);
+      setSrAnnouncement(`Applied ${spousePct}% Spouse and ${childrenPct}% Children split.`);
     }
+  };
+
+  // Single-click: assign unallocated remainder to this beneficiary
+  const handleSetRemaining = (assetId: string, beneficiaryId: string) => {
+    const currentList = getAssetAllocations(assetId);
+    const othersTotal = currentList
+      .filter((a) => a.beneficiaryId !== beneficiaryId)
+      .reduce((sum, a) => sum + (a.percentage || 0), 0);
+    const remaining = Math.max(0, 100 - othersTotal);
+    handleManualPercentageChange(assetId, beneficiaryId, remaining);
+  };
+
+  // Auto-balance remaining unallocated percentages across all selected beneficiaries
+  const handleAutoBalance = (assetId: string) => {
+    const currentList = getAssetAllocations(assetId);
+    if (currentList.length === 0) return;
+    const currentTotal = currentList.reduce((sum, a) => sum + (a.percentage || 0), 0);
+    const diff = 100 - currentTotal;
+    if (diff === 0) return;
+
+    const share = Math.floor(diff / currentList.length);
+    const remainder = diff - share * currentList.length;
+    const updated = currentList.map((a, idx) => ({
+      ...a,
+      percentage: Math.max(0, Math.min(100, a.percentage + share + (idx === currentList.length - 1 ? remainder : 0))),
+    }));
+    const otherAllocs = allocations.filter((a) => a.assetId !== assetId);
+    persistChanges([...otherAllocs, ...updated]);
   };
 
   // Stepper / Slider manual percentage update
@@ -537,6 +628,53 @@ export default function Step5Allocations({
     setSrAnnouncement(`Updated ${selectedAssetIds.length} assets with selected allocation.`);
   };
 
+  // Save custom percentage allocations for a single asset (from modal or inline)
+  const handleSaveSingleAssetAllocation = (
+    assetId: string,
+    newAllocs: { beneficiaryId: string; beneficiaryName: string; percentage: number }[]
+  ) => {
+    const targetAsset = assets.find((a) => a.id === assetId);
+    const targetName = targetAsset ? targetAsset.name : "Asset";
+    const otherAllocs = allocations.filter((a) => a.assetId !== assetId);
+    const formatted: BeneficiaryAllocation[] = newAllocs.map((item) => ({
+      id: `alc-${Date.now()}-${assetId}-${item.beneficiaryId}`,
+      assetId,
+      beneficiaryId: item.beneficiaryId,
+      beneficiaryName: item.beneficiaryName,
+      percentage: item.percentage,
+    }));
+    persistChanges([...otherAllocs, ...formatted]);
+    setSingleAssetModalAsset(null);
+    setSrAnnouncement(`Updated allocation for ${targetName}.`);
+  };
+
+  // Apply custom percentage distribution across all selected assets (Requirement 3)
+  const handleApplyBulkAllocationWithDistribution = (
+    distribution: { beneficiaryId: string; beneficiaryName: string; percentage: number }[]
+  ) => {
+    if (selectedAssetIds.length === 0 || distribution.length === 0) return;
+    const targetSet = new Set(selectedAssetIds);
+    const kept = allocations.filter((a) => !targetSet.has(a.assetId));
+
+    const newAdds: BeneficiaryAllocation[] = [];
+    selectedAssetIds.forEach((assetId) => {
+      distribution.forEach((item) => {
+        newAdds.push({
+          id: `alc-${Date.now()}-${assetId}-${item.beneficiaryId}`,
+          assetId,
+          beneficiaryId: item.beneficiaryId,
+          beneficiaryName: item.beneficiaryName,
+          percentage: item.percentage,
+        });
+      });
+    });
+
+    persistChanges([...kept, ...newAdds]);
+    setSelectedAssetIds([]);
+    setMultiSelectModalOpen(false);
+    setSrAnnouncement(`Updated ${selectedAssetIds.length} assets with custom allocation.`);
+  };
+
   // Review Summary Data
   const reviewGroups = useMemo(() => {
     const summary: Record<string, { memberName: string; assets: Asset[]; isShared?: boolean }> = {};
@@ -585,17 +723,10 @@ export default function Step5Allocations({
       {/* Top Header with Mode Tabs & Audio Assistant */}
       <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: "0.5rem" }}>
         <div>
-          <div style={{ display: "inline-flex", alignItems: "center", gap: "0.4rem", padding: "0.2rem 0.65rem", borderRadius: "999px", backgroundColor: "rgba(198, 83, 120, 0.12)", color: "var(--color-gold)", fontSize: "0.72rem", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.05em", marginBottom: "0.25rem" }}>
-            <span style={{ width: "6px", height: "6px", borderRadius: "50%", backgroundColor: "var(--color-gold)" }}></span>
-            Step 5 of 14 • Testamentary Bequests & Shares
-          </div>
           <div style={{ display: "flex", alignItems: "baseline", gap: "0.65rem", flexWrap: "wrap" }}>
             <h2 style={{ fontSize: "1.45rem", fontWeight: 800, color: "var(--color-navy)", margin: 0, letterSpacing: "-0.02em" }}>
-              Distribute Your Assets
+              {isHi ? "अपनी संपत्ति का बंटवारा करें" : "Distribute Your Assets"}
             </h2>
-            <span style={{ fontSize: "0.88rem", color: "var(--color-gold)", fontWeight: 600 }}>
-              (संपत्ति का बंटवारा)
-            </span>
           </div>
         </div>
 
@@ -633,7 +764,7 @@ export default function Step5Allocations({
               }}
             >
               <Zap size={13} color={viewMode === "quick" ? "var(--color-gold)" : "currentColor"} />
-              Quick Mode
+              {isHi ? "त्वरित मोड" : "Quick Mode"}
             </button>
 
             <button
@@ -658,7 +789,7 @@ export default function Step5Allocations({
               }}
             >
               <List size={13} />
-              List Mode ({assets.length})
+              {isHi ? `सूची मोड (${assets.length})` : `List Mode (${assets.length})`}
             </button>
 
             <button
@@ -683,14 +814,20 @@ export default function Step5Allocations({
               }}
             >
               <PieChart size={13} />
-              Review Summary
+              {isHi ? "सारांश देखें" : "Review Summary"}
             </button>
           </div>
 
           <AudioAssistantButton
-            textToSpeak="Who should receive this asset? Tap any family member card to give 100 percent or select multiple people to divide it equally. You can also tap Change Amounts to enter custom percentages."
-            label="Listen / सुनें 🔊"
+            textToSpeak={
+              isHi
+                ? "यह संपत्ति किसे मिलनी चाहिए? किसी भी परिवार के सदस्य के कार्ड पर टैप करके उन्हें 100 प्रतिशत दें या बराबर बांटने के लिए एकाधिक लोगों को चुनें।"
+                : "Who should receive this asset? Tap any family member card to give 100 percent or select multiple people to divide it equally."
+            }
+            label={isHi ? "सुनें 🔊" : "Listen 🔊"}
           />
+
+          <LanguageToggle lang={currentLang} onChangeLang={handleToggleLang} size="sm" />
         </div>
       </div>
 
@@ -791,10 +928,14 @@ export default function Step5Allocations({
                 <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", fontSize: "0.76rem", color: "var(--color-slate)" }}>
                   <div style={{ display: "flex", alignItems: "center", gap: "0.6rem" }}>
                     <span style={{ fontWeight: 800, color: "var(--color-navy)", fontSize: "0.82rem" }}>
-                      Asset {currentIndex + 1} of {assets.length}
+                      {isHi ? `संपत्ति ${currentIndex + 1} / ${assets.length}` : `Asset ${currentIndex + 1} of ${assets.length}`}
                     </span>
                     <span style={{ opacity: 0.5 }}>•</span>
-                    <span style={{ color: "var(--color-sage)", fontWeight: 600 }}>{saveStatus}</span>
+                    <span style={{ color: "var(--color-sage)", fontWeight: 600 }}>
+                      {saveStatus === "Saved automatically"
+                        ? isHi ? "स्वतः सहेजा गया" : "Saved automatically"
+                        : isHi ? "सहेजा गया" : "Saved"}
+                    </span>
                   </div>
 
                   <button
@@ -810,7 +951,7 @@ export default function Step5Allocations({
                       cursor: "pointer",
                     }}
                   >
-                    Skip for now →
+                    {isHi ? "अभी छोड़ें →" : "Skip for now →"}
                   </button>
                 </div>
 
@@ -872,13 +1013,13 @@ export default function Step5Allocations({
               {/* 3. Question, large: "Who should get this?" */}
               <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", flexWrap: "wrap", gap: "0.5rem" }}>
                 <h4 style={{ margin: 0, fontSize: "1.1rem", fontWeight: 800, color: "var(--color-navy)" }}>
-                  Who should get this?
+                  {isHi ? "यह संपत्ति किसे मिलनी चाहिए?" : "Who should get this?"}
                 </h4>
 
                 {/* Quick Presets Chips */}
                 <div style={{ display: "flex", alignItems: "center", gap: "0.35rem", flexWrap: "wrap" }}>
                   <span style={{ fontSize: "0.7rem", fontWeight: 700, color: "var(--color-slate)" }}>
-                    Presets:
+                    {isHi ? "त्वरित विकल्प:" : "Presets:"}
                   </span>
                   {spouse && (
                     <button
@@ -895,7 +1036,7 @@ export default function Step5Allocations({
                         cursor: "pointer",
                       }}
                     >
-                      100% Spouse
+                      {isHi ? "100% जीवनसाथी" : "100% Spouse"}
                     </button>
                   )}
                   {children.length > 0 && (
@@ -913,7 +1054,7 @@ export default function Step5Allocations({
                         cursor: "pointer",
                       }}
                     >
-                      Equal Children
+                      {isHi ? "बच्चों में बराबर" : "Equal Children"}
                     </button>
                   )}
                   {spouse && children.length > 0 && (
@@ -931,7 +1072,7 @@ export default function Step5Allocations({
                         cursor: "pointer",
                       }}
                     >
-                      50% Spouse / 50% Children
+                      {isHi ? "50% जीवनसाथी / 50% बच्चे" : "50% Spouse / 50% Children"}
                     </button>
                   )}
                 </div>
@@ -1016,7 +1157,7 @@ export default function Step5Allocations({
                             textTransform: "capitalize",
                           }}
                         >
-                          {member.relationship}
+                          {isHi ? (relationshipHindiMap[member.relationship.toLowerCase()] || member.relationship) : member.relationship}
                         </span>
                       </div>
 
@@ -1044,7 +1185,11 @@ export default function Step5Allocations({
 
               {/* Desktop hint */}
               <div style={{ fontSize: "0.7rem", color: "var(--color-slate)", opacity: 0.8 }} className="hidden sm:block">
-                Tip: Press number keys <strong>1-{family.length}</strong> to pick, <strong>Enter</strong> to continue, <strong>S</strong> for same as last.
+                {isHi ? (
+                  <>सुझाव: चुनने के लिए <strong>1-{family.length}</strong> दबाएं, आगे बढ़ने के लिए <strong>Enter</strong> दबाएं, पिछले जैसा रखने के लिए <strong>S</strong> दबाएं।</>
+                ) : (
+                  <>Tip: Press number keys <strong>1-{family.length}</strong> to pick, <strong>Enter</strong> to continue, <strong>S</strong> for same as last.</>
+                )}
               </div>
 
               {/* 5. Live result line under the grid, in plain words */}
@@ -1083,187 +1228,93 @@ export default function Step5Allocations({
                     }}
                   >
                     {currentAssetAllocs.length === 0
-                      ? "Choose at least one person"
+                      ? (isHi ? "कम से कम एक व्यक्ति चुनें" : "Choose at least one person")
                       : formatAllocationSummary(currentAsset.id)}
                   </span>
                 </div>
 
-                {/* 6. "Change amounts" inline panel toggle */}
-                {currentAssetAllocs.length > 0 && (
-                  <button
-                    type="button"
-                    onClick={() => setShowChangeAmounts(!showChangeAmounts)}
-                    style={{
-                      background: "none",
-                      border: "none",
-                      color: "var(--color-gold)",
-                      fontSize: "0.78rem",
-                      fontWeight: 700,
-                      cursor: "pointer",
-                      display: "inline-flex",
-                      alignItems: "center",
-                      gap: "0.3rem",
-                      padding: "0.2rem 0.4rem",
-                    }}
-                  >
-                    <Sliders size={13} />
-                    <span>{showChangeAmounts ? "Hide custom amounts" : "Change amounts"}</span>
-                    {showChangeAmounts ? <ChevronUp size={13} /> : <ChevronDown size={13} />}
-                  </button>
+                {/* 6. "Change amounts" and "Open Modal" action triggers */}
+                {currentAsset && (
+                  <div style={{ display: "flex", alignItems: "center", gap: "0.45rem", flexWrap: "wrap" }}>
+                    <button
+                      type="button"
+                      onClick={() => setSingleAssetModalAsset(currentAsset)}
+                      style={{
+                        padding: "0.25rem 0.65rem",
+                        borderRadius: "8px",
+                        border: "1.5px solid var(--color-gold)",
+                        backgroundColor: "rgba(198, 83, 120, 0.08)",
+                        color: "var(--color-gold)",
+                        fontSize: "0.76rem",
+                        fontWeight: 700,
+                        cursor: "pointer",
+                        display: "inline-flex",
+                        alignItems: "center",
+                        gap: "0.3rem",
+                      }}
+                    >
+                      <Sliders size={13} />
+                      <span>{isHi ? "कस्टम वितरण मोडल खोलें" : "Customize in Modal"}</span>
+                    </button>
+
+                    <button
+                      type="button"
+                      onClick={() => setShowChangeAmounts(!showChangeAmounts)}
+                      style={{
+                        background: "none",
+                        border: "none",
+                        color: "var(--color-gold)",
+                        fontSize: "0.76rem",
+                        fontWeight: 700,
+                        cursor: "pointer",
+                        display: "inline-flex",
+                        alignItems: "center",
+                        gap: "0.25rem",
+                        padding: "0.2rem 0.4rem",
+                      }}
+                    >
+                      <span>{showChangeAmounts ? (isHi ? "त्वरित बदलाव छिपाएं" : "Hide inline") : (isHi ? "त्वरित इनलाइन बदलाव" : "Quick inline")}</span>
+                      {showChangeAmounts ? <ChevronUp size={13} /> : <ChevronDown size={13} />}
+                    </button>
+                  </div>
                 )}
               </div>
 
-              {/* 6. Inline Expandable Panel: Shows ONLY selected people with steppers + sliders */}
-              {showChangeAmounts && currentAssetAllocs.length > 0 && (
+              {/* 6. Inline Expandable Panel: Unified CustomPercentageAllocator (Requirement 1) */}
+              {showChangeAmounts && currentAsset && (
                 <div
                   style={{
-                    backgroundColor: "rgba(23, 34, 40, 0.02)",
+                    backgroundColor: "#FFFFFF",
                     borderRadius: "14px",
-                    border: "1px solid rgba(23, 34, 40, 0.08)",
+                    border: "1.5px solid rgba(27, 42, 74, 0.12)",
                     padding: "1rem",
-                    display: "flex",
-                    flexDirection: "column",
-                    gap: "0.85rem",
+                    boxShadow: "0 2px 8px rgba(0, 0, 0, 0.04)",
                   }}
                 >
-                  <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-                    <span style={{ fontSize: "0.78rem", fontWeight: 700, color: "var(--color-navy)" }}>
-                      Fine-Tune Percentages:
-                    </span>
-                    <span
-                      style={{
-                        fontSize: "0.75rem",
-                        fontWeight: 700,
-                        color: leftToAssign === 0 ? "var(--color-sage)" : "#E11D48",
-                      }}
-                    >
-                      {leftToAssign === 0
-                        ? "✓ 100% Balanced"
-                        : leftToAssign > 0
-                        ? `Left to assign: ${leftToAssign}%`
-                        : `Over allocated by ${Math.abs(leftToAssign)}%`}
-                    </span>
-                  </div>
-
-                  <div style={{ display: "flex", flexDirection: "column", gap: "0.75rem" }}>
-                    {currentAssetAllocs.map((alc) => {
-                      return (
-                        <div
-                          key={alc.beneficiaryId}
-                          style={{
-                            display: "flex",
-                            alignItems: "center",
-                            gap: "0.75rem",
-                            backgroundColor: "#FFFFFF",
-                            padding: "0.6rem 0.85rem",
-                            borderRadius: "10px",
-                            border: "1px solid rgba(23, 34, 40, 0.06)",
-                          }}
-                        >
-                          <div style={{ width: "130px", flexShrink: 0 }}>
-                            <div style={{ fontSize: "0.82rem", fontWeight: 700, color: "var(--color-navy)" }}>
-                              {alc.beneficiaryName}
-                            </div>
-                          </div>
-
-                          {/* Minus/Plus Steppers */}
-                          <div style={{ display: "inline-flex", alignItems: "center", gap: "0.25rem" }}>
-                            <button
-                              type="button"
-                              onClick={() =>
-                                handleManualPercentageChange(
-                                  currentAsset.id,
-                                  alc.beneficiaryId,
-                                  alc.percentage - 5
-                                )
-                              }
-                              disabled={alc.percentage <= 0}
-                              style={{
-                                width: "28px",
-                                height: "28px",
-                                borderRadius: "6px",
-                                border: "1px solid rgba(23, 34, 40, 0.15)",
-                                background: "#FFFFFF",
-                                cursor: "pointer",
-                                fontWeight: 800,
-                                fontSize: "1rem",
-                              }}
-                            >
-                              -
-                            </button>
-                            <input
-                              type="number"
-                              min="0"
-                              max="100"
-                              value={alc.percentage}
-                              onChange={(e) =>
-                                handleManualPercentageChange(
-                                  currentAsset.id,
-                                  alc.beneficiaryId,
-                                  Number(e.target.value)
-                                )
-                              }
-                              style={{
-                                width: "50px",
-                                textAlign: "center",
-                                padding: "0.25rem",
-                                borderRadius: "6px",
-                                border: "1px solid rgba(23, 34, 40, 0.15)",
-                                fontWeight: 800,
-                                fontSize: "0.85rem",
-                                color: "var(--color-navy)",
-                              }}
-                            />
-                            <button
-                              type="button"
-                              onClick={() =>
-                                handleManualPercentageChange(
-                                  currentAsset.id,
-                                  alc.beneficiaryId,
-                                  alc.percentage + 5
-                                )
-                              }
-                              disabled={alc.percentage >= 100}
-                              style={{
-                                width: "28px",
-                                height: "28px",
-                                borderRadius: "6px",
-                                border: "1px solid rgba(23, 34, 40, 0.15)",
-                                background: "#FFFFFF",
-                                cursor: "pointer",
-                                fontWeight: 800,
-                                fontSize: "1rem",
-                              }}
-                            >
-                              +
-                            </button>
-                          </div>
-
-                          {/* Existing slider as secondary control */}
-                          <input
-                            type="range"
-                            min="0"
-                            max="100"
-                            step="5"
-                            value={alc.percentage}
-                            onChange={(e) =>
-                              handleManualPercentageChange(
-                                currentAsset.id,
-                                alc.beneficiaryId,
-                                Number(e.target.value)
-                              )
-                            }
-                            style={{
-                              flex: 1,
-                              accentColor: "var(--color-navy)",
-                              cursor: "pointer",
-                              height: "5px",
-                            }}
-                          />
-                        </div>
-                      );
-                    })}
-                  </div>
+                  <CustomPercentageAllocator
+                    key={`inline-${currentAsset.id}`}
+                    family={family}
+                    initialAllocations={currentAssetAllocs.map((a) => ({
+                      beneficiaryId: a.beneficiaryId,
+                      beneficiaryName: a.beneficiaryName,
+                      percentage: a.percentage,
+                    }))}
+                    showActions={false}
+                    onChange={(updatedAllocs, isValid) => {
+                      if (isValid) {
+                        const otherAllocs = allocations.filter((a) => a.assetId !== currentAsset.id);
+                        const formatted: BeneficiaryAllocation[] = updatedAllocs.map((item) => ({
+                          id: `alc-${Date.now()}-${currentAsset.id}-${item.beneficiaryId}`,
+                          assetId: currentAsset.id,
+                          beneficiaryId: item.beneficiaryId,
+                          beneficiaryName: item.beneficiaryName,
+                          percentage: item.percentage,
+                        }));
+                        persistChanges([...otherAllocs, ...formatted]);
+                      }
+                    }}
+                    isHi={isHi}
+                  />
                 </div>
               )}
 
@@ -1308,7 +1359,7 @@ export default function Step5Allocations({
                         cursor: "pointer",
                       }}
                     >
-                      Yes, apply to all {smartPrompt.remainingCount}
+                      {isHi ? `हाँ, शेष सभी ${smartPrompt.remainingCount} पर लागू करें` : `Yes, apply to all ${smartPrompt.remainingCount}`}
                     </button>
                     <button
                       type="button"
@@ -1324,7 +1375,7 @@ export default function Step5Allocations({
                         cursor: "pointer",
                       }}
                     >
-                      No, I&apos;ll choose each
+                      {isHi ? "नहीं, मैं प्रत्येक के लिए चुनूंगा" : "No, I'll choose each"}
                     </button>
                   </div>
                 </div>
@@ -1367,7 +1418,7 @@ export default function Step5Allocations({
                       gap: "0.35rem",
                     }}
                   >
-                    <ArrowLeft size={14} /> Back
+                    <ArrowLeft size={14} /> {isHi ? "पीछे" : "Back"}
                   </button>
 
                   {/* "Same as last one" button */}
@@ -1392,7 +1443,7 @@ export default function Step5Allocations({
                     >
                       <RotateCcw size={13} />
                       <span className="truncate max-w-[200px]">
-                        Same as last: {lastAllocationSummary.summary}
+                        {isHi ? "पिछले जैसा:" : "Same as last:"} {lastAllocationSummary.summary}
                       </span>
                     </button>
                   )}
@@ -1402,10 +1453,10 @@ export default function Step5Allocations({
                   {!isCurrentComplete && (
                     <span style={{ fontSize: "0.76rem", color: "#E11D48", fontWeight: 600 }}>
                       {currentAssetAllocs.length === 0
-                        ? "Choose at least one person"
+                        ? (isHi ? "कम से कम एक व्यक्ति चुनें" : "Choose at least one person")
                         : currentTotalPct > 100
-                        ? "Total exceeds 100%"
-                        : `Needs ${leftToAssign}% more`}
+                        ? (isHi ? "कुल 100% से अधिक है" : "Total exceeds 100%")
+                        : (isHi ? `${leftToAssign}% और आवंटित करें` : `Needs ${leftToAssign}% more`)}
                     </span>
                   )}
 
@@ -1428,7 +1479,9 @@ export default function Step5Allocations({
                     }}
                   >
                     <span>
-                      {currentIndex === assets.length - 1 ? "Review All & Continue →" : "Next Asset →"}
+                      {currentIndex === assets.length - 1
+                        ? (isHi ? "सभी की समीक्षा करें और आगे बढ़ें →" : "Review All & Continue →")
+                        : (isHi ? "अगली संपत्ति →" : "Next Asset →")}
                     </span>
                   </button>
                 </div>
@@ -1657,27 +1710,23 @@ export default function Step5Allocations({
                       </span>
                     </div>
 
-                    {/* Edit Button -> Opens Quick Mode for this asset */}
+                    {/* Edit Button -> Opens Custom Allocation Modal for this asset (Requirement 2) */}
                     <button
                       type="button"
-                      onClick={() => {
-                        const targetIdx = assets.findIndex((a) => a.id === asset.id);
-                        if (targetIdx >= 0) setCurrentIndex(targetIdx);
-                        setViewMode("quick");
-                      }}
+                      onClick={() => setSingleAssetModalAsset(asset)}
                       style={{
-                        padding: "0.3rem 0.75rem",
+                        padding: "0.35rem 0.85rem",
                         borderRadius: "8px",
-                        border: "1px solid rgba(198, 83, 120, 0.3)",
-                        backgroundColor: "#FFFFFF",
+                        border: "1px solid rgba(198, 83, 120, 0.4)",
+                        backgroundColor: "rgba(198, 83, 120, 0.05)",
                         color: "var(--color-gold)",
-                        fontSize: "0.75rem",
+                        fontSize: "0.76rem",
                         fontWeight: 700,
                         cursor: "pointer",
                         flexShrink: 0,
                       }}
                     >
-                      Edit
+                      {isHi ? "आवंटन बदलें" : "Edit Allocation"}
                     </button>
                   </div>
                 );
@@ -1719,11 +1768,7 @@ export default function Step5Allocations({
                     <button
                       key={asset.id}
                       type="button"
-                      onClick={() => {
-                        const idx = assets.findIndex((a) => a.id === asset.id);
-                        if (idx >= 0) setCurrentIndex(idx);
-                        setViewMode("quick");
-                      }}
+                      onClick={() => setSingleAssetModalAsset(asset)}
                       style={{
                         padding: "0.25rem 0.65rem",
                         borderRadius: "8px",
@@ -1839,11 +1884,7 @@ export default function Step5Allocations({
                           </span>
                           <button
                             type="button"
-                            onClick={() => {
-                              const idx = assets.findIndex((a) => a.id === asset.id);
-                              if (idx >= 0) setCurrentIndex(idx);
-                              setViewMode("quick");
-                            }}
+                            onClick={() => setSingleAssetModalAsset(asset)}
                             style={{
                               background: "none",
                               border: "none",
@@ -1877,21 +1918,37 @@ export default function Step5Allocations({
             }}
           >
             <div>
-              <span style={{ fontSize: "0.7rem", fontWeight: 700, color: "var(--color-gold)", textTransform: "uppercase", letterSpacing: "0.05em" }}>
-                Mandatory Statutory Clause • ISA §102
-              </span>
-              <h4 style={{ margin: "0.15rem 0 0", fontSize: "1rem", fontWeight: 800, color: "var(--color-navy)" }}>
-                Residuary Estate Safety Net
+              <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", flexWrap: "wrap", gap: "0.5rem" }}>
+                <span style={{ fontSize: "0.74rem", fontWeight: 700, color: "var(--color-gold)", textTransform: "uppercase", letterSpacing: "0.04em" }}>
+                  {isHi ? "अनिवार्य सुरक्षा नियम" : "Essential Safety Net"}
+                </span>
+                <span style={{ fontSize: "0.68rem", color: "var(--color-slate)", backgroundColor: "rgba(27, 42, 74, 0.04)", padding: "0.15rem 0.5rem", borderRadius: "6px" }}>
+                  Legal term: Residuary Clause (ISA §102)
+                </span>
+              </div>
+              <h4 style={{ margin: "0.25rem 0 0", fontSize: "1.05rem", fontWeight: 800, color: "var(--color-navy)", lineHeight: 1.4 }}>
+                {isHi
+                  ? "यदि कोई संपत्ति छूट गई हो या भविष्य में मिले, तो वह किसे मिले?"
+                  : "Who gets anything you haven't specifically mentioned?"}
               </h4>
-              <p style={{ margin: "0.2rem 0 0", fontSize: "0.78rem", color: "var(--color-slate)" }}>
-                Who receives any unspecified or future wealth? Appointing a residuary legatee guarantees zero intestacy.
+              <div style={{ fontSize: "0.85rem", fontWeight: 600, color: "var(--color-gold)", marginTop: "0.15rem" }}>
+                {isHi
+                  ? "शेष बची हुई संपत्ति (Remaining Assets)"
+                  : "Remaining assets (Any property, money or other assets not specifically assigned in your Will)"}
+              </div>
+              <p style={{ margin: "0.3rem 0 0", fontSize: "0.78rem", color: "var(--color-slate)", lineHeight: 1.5 }}>
+                {isHi
+                  ? "यदि भविष्य में कोई नई संपत्ति अर्जित होती है या कोई संपत्ति छूट जाती है, तो यह नियम तय करता है कि वह किसे मिलेगी। इससे परिवार में कभी कोई विवाद या अदालती बंटवारा नहीं होता।"
+                  : "If you acquire new wealth in the future or forget to mention any asset, choosing a primary recipient ensures everything is smoothly transferred without dispute or court delays."}
               </p>
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
               <div>
-                <label style={{ display: "block", fontSize: "0.76rem", fontWeight: 700, color: "var(--color-navy)", marginBottom: "0.3rem" }}>
-                  Primary Residuary Legatee:
+                <label style={{ display: "block", fontSize: "0.78rem", fontWeight: 700, color: "var(--color-navy)", marginBottom: "0.3rem" }}>
+                  {isHi
+                    ? "मुख्य प्राप्तकर्ता (बची हुई संपत्ति के लिए):"
+                    : "Primary person to receive remaining assets:"}
                 </label>
                 <select
                   value={residuaryName}
@@ -1915,11 +1972,16 @@ export default function Step5Allocations({
                     </option>
                   ))}
                 </select>
+                <span style={{ fontSize: "0.68rem", color: "var(--color-slate)", marginTop: "0.2rem", display: "block" }}>
+                  {isHi ? "कानूनी नाम: प्राथमिक अवशेष लाभार्थी (Primary Residuary Legatee)" : "Legal term: Primary Residuary Legatee"}
+                </span>
               </div>
 
               <div>
-                <label style={{ display: "block", fontSize: "0.76rem", fontWeight: 700, color: "var(--color-navy)", marginBottom: "0.3rem" }}>
-                  Alternate Residuary Legatee:
+                <label style={{ display: "block", fontSize: "0.78rem", fontWeight: 700, color: "var(--color-navy)", marginBottom: "0.3rem" }}>
+                  {isHi
+                    ? "बैकअप प्राप्तकर्ता (यदि मुख्य व्यक्ति उपलब्ध न हो):"
+                    : "Backup person (If primary person does not survive):"}
                 </label>
                 <select
                   value={residuaryAltName}
@@ -1946,6 +2008,9 @@ export default function Step5Allocations({
                       </option>
                     ))}
                 </select>
+                <span style={{ fontSize: "0.68rem", color: "var(--color-slate)", marginTop: "0.2rem", display: "block" }}>
+                  {isHi ? "कानूनी नाम: वैकल्पिक अवशेष लाभार्थी (Alternate Residuary Legatee)" : "Legal term: Alternate Residuary Legatee"}
+                </span>
               </div>
             </div>
           </div>
@@ -1955,7 +2020,97 @@ export default function Step5Allocations({
       {/* ========================================================================= */}
       {/* MULTI-SELECT BULK MODAL                                                   */}
       {/* ========================================================================= */}
-      {multiSelectModalOpen && (
+      {/* ========================================================================= */}
+      {/* SINGLE ASSET CUSTOM ALLOCATION MODAL (REQUIREMENT 2)                       */}
+      {/* ========================================================================= */}
+      {singleAssetModalAsset && (
+        <div
+          style={{
+            position: "fixed",
+            inset: 0,
+            backgroundColor: "rgba(23, 34, 40, 0.65)",
+            backdropFilter: "blur(4px)",
+            zIndex: 9999,
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            padding: "1rem",
+          }}
+          onClick={() => setSingleAssetModalAsset(null)}
+        >
+          <div
+            style={{
+              backgroundColor: "#FFFFFF",
+              borderRadius: "20px",
+              padding: "1.5rem",
+              width: "100%",
+              maxWidth: "560px",
+              maxHeight: "90vh",
+              overflowY: "auto",
+              display: "flex",
+              flexDirection: "column",
+              gap: "1rem",
+              boxShadow: "0 20px 40px rgba(0, 0, 0, 0.25)",
+            }}
+            onClick={(e) => e.stopPropagation()}
+          >
+            <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start" }}>
+              <div>
+                <span
+                  style={{
+                    fontSize: "0.72rem",
+                    fontWeight: 800,
+                    color: "var(--color-gold)",
+                    textTransform: "uppercase",
+                    letterSpacing: "0.04em",
+                  }}
+                >
+                  {singleAssetModalAsset.typeDetails || singleAssetModalAsset.category}
+                </span>
+                <h3 style={{ margin: "0.15rem 0 0", fontSize: "1.25rem", fontWeight: 800, color: "var(--color-navy)" }}>
+                  {singleAssetModalAsset.name}
+                </h3>
+              </div>
+              <button
+                type="button"
+                onClick={() => setSingleAssetModalAsset(null)}
+                style={{
+                  background: "none",
+                  border: "none",
+                  cursor: "pointer",
+                  color: "var(--color-slate)",
+                  padding: "0.25rem",
+                }}
+                aria-label="Close modal"
+              >
+                <X size={20} />
+              </button>
+            </div>
+
+            <CustomPercentageAllocator
+              key={singleAssetModalAsset.id}
+              family={family}
+              initialAllocations={getAssetAllocations(singleAssetModalAsset.id).map((a) => ({
+                beneficiaryId: a.beneficiaryId,
+                beneficiaryName: a.beneficiaryName,
+                percentage: a.percentage,
+              }))}
+              showActions={true}
+              assetTitle={singleAssetModalAsset.name}
+              assetSubtitle="Choose how much of this asset each person should receive."
+              saveButtonLabel={isHi ? "आवंटन सहेजें" : "Save Allocation"}
+              onCancel={() => setSingleAssetModalAsset(null)}
+              onSave={(updatedAllocs) => handleSaveSingleAssetAllocation(singleAssetModalAsset.id, updatedAllocs)}
+              isHi={isHi}
+            />
+          </div>
+        </div>
+      )}
+
+      {/* ========================================================================= */}
+      {/* MULTI-SELECT BULK MODAL (REQUIREMENT 3: EQUAL VS CUSTOM)                  */}
+      {/* ========================================================================= */}
+      {multiSelectModalOpen && selectedAssetIds.length > 0 && (
         <div
           style={{
             position: "fixed",
@@ -1976,95 +2131,373 @@ export default function Step5Allocations({
               borderRadius: "20px",
               padding: "1.5rem",
               width: "100%",
-              maxWidth: "520px",
+              maxWidth: "580px",
+              maxHeight: "90vh",
+              overflowY: "auto",
               display: "flex",
               flexDirection: "column",
-              gap: "1rem",
-              boxShadow: "0 20px 40px rgba(0, 0, 0, 0.2)",
+              gap: "1.1rem",
+              boxShadow: "0 20px 40px rgba(0, 0, 0, 0.25)",
             }}
             onClick={(e) => e.stopPropagation()}
           >
-            <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+            {/* Modal Header */}
+            <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start" }}>
               <div>
-                <h3 style={{ margin: 0, fontSize: "1.15rem", fontWeight: 800, color: "var(--color-navy)" }}>
+                <span
+                  style={{
+                    fontSize: "0.72rem",
+                    fontWeight: 800,
+                    color: "var(--color-gold)",
+                    textTransform: "uppercase",
+                    letterSpacing: "0.04em",
+                  }}
+                >
+                  {isHi ? "सामूहिक आवंटन" : "Bulk Allocation"}
+                </span>
+                <h3 style={{ margin: "0.15rem 0 0", fontSize: "1.25rem", fontWeight: 800, color: "var(--color-navy)" }}>
                   Assign to {selectedAssetIds.length} Selected Assets
                 </h3>
-                <span style={{ fontSize: "0.78rem", color: "var(--color-slate)" }}>
-                  Select who receives all {selectedAssetIds.length} assets equally:
-                </span>
               </div>
               <button
                 type="button"
                 onClick={() => setMultiSelectModalOpen(false)}
-                style={{ background: "none", border: "none", cursor: "pointer", color: "var(--color-slate)" }}
+                style={{
+                  background: "none",
+                  border: "none",
+                  cursor: "pointer",
+                  color: "var(--color-slate)",
+                  padding: "0.25rem",
+                }}
+                aria-label="Close modal"
               >
                 <X size={20} />
               </button>
             </div>
 
-            <div className="grid grid-cols-2 gap-2.5">
-              {family.map((member) => (
-                <button
-                  key={member.id}
-                  type="button"
-                  onClick={() => handleApplyBulkAllocation([member.id])}
-                  style={{
-                    padding: "0.75rem 0.85rem",
-                    borderRadius: "12px",
-                    border: "1.5px solid rgba(23, 34, 40, 0.12)",
-                    backgroundColor: "#FFFFFF",
-                    display: "flex",
-                    alignItems: "center",
-                    gap: "0.55rem",
-                    cursor: "pointer",
-                    textAlign: "left",
-                  }}
-                >
-                  <div
-                    style={{
-                      width: "32px",
-                      height: "32px",
-                      borderRadius: "50%",
-                      backgroundColor: "rgba(198, 83, 120, 0.1)",
-                      color: "var(--color-gold)",
-                      display: "flex",
-                      alignItems: "center",
-                      justifyContent: "center",
-                      fontWeight: 800,
-                      fontSize: "0.76rem",
-                    }}
-                  >
-                    {member.name.slice(0, 1)}
-                  </div>
-                  <div>
-                    <div style={{ fontSize: "0.82rem", fontWeight: 700, color: "var(--color-navy)" }}>
-                      100% {member.name}
-                    </div>
-                    <span style={{ fontSize: "0.68rem", color: "var(--color-slate)", textTransform: "capitalize" }}>
-                      {member.relationship}
-                    </span>
-                  </div>
-                </button>
-              ))}
-            </div>
-
-            {children.length > 1 && (
+            {/* Distribution Method Selector: Option 1 vs Option 2 (Requirement 3) */}
+            <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "0.65rem" }}>
+              {/* Option 1: Distribute Equally */}
               <button
                 type="button"
-                onClick={() => handleApplyBulkAllocation(children.map((c) => c.id))}
+                onClick={() => setBulkDistributionMode("equal")}
                 style={{
-                  padding: "0.75rem",
-                  borderRadius: "12px",
-                  border: "1.5px solid var(--color-gold)",
-                  backgroundColor: "rgba(198, 83, 120, 0.08)",
-                  color: "var(--color-gold)",
-                  fontSize: "0.84rem",
-                  fontWeight: 700,
+                  padding: "0.85rem 0.95rem",
+                  borderRadius: "14px",
+                  border:
+                    bulkDistributionMode === "equal"
+                      ? "2px solid var(--color-gold)"
+                      : "1.5px solid rgba(27, 42, 74, 0.12)",
+                  backgroundColor:
+                    bulkDistributionMode === "equal" ? "rgba(198, 83, 120, 0.06)" : "#FFFFFF",
                   cursor: "pointer",
+                  textAlign: "left",
+                  transition: "all 0.15s ease",
                 }}
               >
-                Split Equally Among All Children
+                <div style={{ fontSize: "0.92rem", fontWeight: 800, color: "var(--color-navy)" }}>
+                  {isHi ? "समान रूप से बांटें" : "Distribute Equally"}
+                </div>
+                <div style={{ fontSize: "0.74rem", color: "var(--color-slate)", marginTop: "2px", lineHeight: 1.3 }}>
+                  {isHi ? "प्रत्येक चुने हुए सदस्य को बराबर हिस्सा दें।" : "Give each selected beneficiary an equal share."}
+                </div>
               </button>
+
+              {/* Option 2: Custom Distribution */}
+              <button
+                type="button"
+                onClick={() => setBulkDistributionMode("custom")}
+                style={{
+                  padding: "0.85rem 0.95rem",
+                  borderRadius: "14px",
+                  border:
+                    bulkDistributionMode === "custom"
+                      ? "2px solid var(--color-gold)"
+                      : "1.5px solid rgba(27, 42, 74, 0.12)",
+                  backgroundColor:
+                    bulkDistributionMode === "custom" ? "rgba(198, 83, 120, 0.06)" : "#FFFFFF",
+                  cursor: "pointer",
+                  textAlign: "left",
+                  transition: "all 0.15s ease",
+                }}
+              >
+                <div style={{ fontSize: "0.92rem", fontWeight: 800, color: "var(--color-navy)" }}>
+                  {isHi ? "कस्टम प्रतिशत वितरण" : "Custom Distribution"}
+                </div>
+                <div style={{ fontSize: "0.74rem", color: "var(--color-slate)", marginTop: "2px", lineHeight: 1.3 }}>
+                  {isHi ? "चुनें कि किस व्यक्ति को कितना प्रतिशत मिलना चाहिए।" : "Choose exactly how much each beneficiary should receive."}
+                </div>
+              </button>
+            </div>
+
+            {/* TAB CONTENT: OPTION 1 - Distribute Equally */}
+            {bulkDistributionMode === "equal" && (
+              <div style={{ display: "flex", flexDirection: "column", gap: "1rem" }}>
+                <div>
+                  <div style={{ fontSize: "0.84rem", fontWeight: 700, color: "var(--color-navy)", marginBottom: "0.45rem" }}>
+                    {isHi ? "किन सदस्यों में बराबर बांटना है? (क्लिक करके चुनें):" : "Select beneficiaries to share equally:"}
+                  </div>
+
+                  {/* Beneficiary Toggle Grid */}
+                  <div className="grid grid-cols-2 gap-2">
+                    {family.map((member) => {
+                      const isChecked = bulkEqualSelectedIds.includes(member.id);
+                      return (
+                        <button
+                          key={member.id}
+                          type="button"
+                          onClick={() => {
+                            if (isChecked) {
+                              setBulkEqualSelectedIds(bulkEqualSelectedIds.filter((id) => id !== member.id));
+                            } else {
+                              setBulkEqualSelectedIds([...bulkEqualSelectedIds, member.id]);
+                            }
+                          }}
+                          style={{
+                            padding: "0.65rem 0.8rem",
+                            borderRadius: "12px",
+                            border: isChecked
+                              ? "2px solid var(--color-gold)"
+                              : "1.5px solid rgba(27, 42, 74, 0.12)",
+                            backgroundColor: isChecked ? "rgba(198, 83, 120, 0.08)" : "#FFFFFF",
+                            display: "flex",
+                            alignItems: "center",
+                            gap: "0.55rem",
+                            cursor: "pointer",
+                            textAlign: "left",
+                          }}
+                        >
+                          <div
+                            style={{
+                              width: "28px",
+                              height: "28px",
+                              borderRadius: "50%",
+                              backgroundColor: isChecked ? "var(--color-gold)" : "rgba(27, 42, 74, 0.08)",
+                              color: isChecked ? "#FFFFFF" : "var(--color-navy)",
+                              display: "flex",
+                              alignItems: "center",
+                              justifyContent: "center",
+                              fontWeight: 800,
+                              fontSize: "0.75rem",
+                              flexShrink: 0,
+                            }}
+                          >
+                            {isChecked ? <Check size={16} strokeWidth={3} /> : member.name.slice(0, 1)}
+                          </div>
+                          <div style={{ minWidth: 0 }}>
+                            <div style={{ fontSize: "0.82rem", fontWeight: 700, color: "var(--color-navy)" }} className="truncate">
+                              {member.name}
+                            </div>
+                            <span style={{ fontSize: "0.68rem", color: "var(--color-slate)", textTransform: "capitalize" }}>
+                              {member.relationship}
+                            </span>
+                          </div>
+                        </button>
+                      );
+                    })}
+                  </div>
+
+                  {/* Quick Preset Buttons */}
+                  <div style={{ display: "flex", gap: "0.4rem", flexWrap: "wrap", marginTop: "0.5rem" }}>
+                    {children.length > 1 && (
+                      <button
+                        type="button"
+                        onClick={() => setBulkEqualSelectedIds(children.map((c) => c.id))}
+                        style={{
+                          padding: "0.3rem 0.65rem",
+                          borderRadius: "8px",
+                          border: "1px solid rgba(198, 83, 120, 0.3)",
+                          backgroundColor: "#FFFFFF",
+                          color: "var(--color-gold)",
+                          fontSize: "0.74rem",
+                          fontWeight: 700,
+                          cursor: "pointer",
+                        }}
+                      >
+                        All Children ({children.length})
+                      </button>
+                    )}
+                    {spouse && children.length > 0 && (
+                      <button
+                        type="button"
+                        onClick={() => setBulkEqualSelectedIds([spouse.id, ...children.map((c) => c.id)])}
+                        style={{
+                          padding: "0.3rem 0.65rem",
+                          borderRadius: "8px",
+                          border: "1px solid rgba(198, 83, 120, 0.3)",
+                          backgroundColor: "#FFFFFF",
+                          color: "var(--color-gold)",
+                          fontSize: "0.74rem",
+                          fontWeight: 700,
+                          cursor: "pointer",
+                        }}
+                      >
+                        Spouse & Children
+                      </button>
+                    )}
+                    <button
+                      type="button"
+                      onClick={() => setBulkEqualSelectedIds(family.map((f) => f.id))}
+                      style={{
+                        padding: "0.3rem 0.65rem",
+                        borderRadius: "8px",
+                        border: "1px solid rgba(27, 42, 74, 0.2)",
+                        backgroundColor: "#FFFFFF",
+                        color: "var(--color-navy)",
+                        fontSize: "0.74rem",
+                        fontWeight: 600,
+                        cursor: "pointer",
+                      }}
+                    >
+                      All Family
+                    </button>
+                  </div>
+                </div>
+
+                {/* Live Preview Before Applying (Requirement 3) */}
+                <div
+                  style={{
+                    backgroundColor: "rgba(27, 42, 74, 0.03)",
+                    borderRadius: "14px",
+                    border: "1px solid rgba(27, 42, 74, 0.1)",
+                    padding: "0.95rem 1.15rem",
+                    display: "flex",
+                    flexDirection: "column",
+                    gap: "0.55rem",
+                  }}
+                >
+                  <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+                    <span style={{ fontSize: "0.82rem", fontWeight: 800, color: "var(--color-navy)" }}>
+                      {selectedAssetIds.length} Selected Assets
+                    </span>
+                    <span style={{ fontSize: "0.76rem", color: "var(--color-slate)" }}>
+                      {bulkEqualSelectedIds.length > 0 ? "Equal Split (100% Total)" : "None selected"}
+                    </span>
+                  </div>
+
+                  {bulkEqualSelectedIds.length > 0 ? (
+                    <div style={{ display: "flex", flexDirection: "column", gap: "0.35rem" }}>
+                      {bulkEqualSelectedIds.map((id, idx) => {
+                        const mem = family.find((f) => f.id === id);
+                        const count = bulkEqualSelectedIds.length;
+                        const share = Math.floor(100 / count);
+                        const remainder = 100 - share * count;
+                        const pct = idx === count - 1 ? share + remainder : share;
+
+                        return (
+                          <div
+                            key={id}
+                            style={{
+                              display: "flex",
+                              justifyContent: "space-between",
+                              alignItems: "center",
+                              padding: "0.35rem 0.6rem",
+                              backgroundColor: "#FFFFFF",
+                              borderRadius: "8px",
+                              border: "1px solid rgba(27, 42, 74, 0.06)",
+                            }}
+                          >
+                            <span style={{ fontSize: "0.84rem", fontWeight: 700, color: "var(--color-navy)" }}>
+                              {mem ? mem.name : "Beneficiary"} ({mem?.relationship})
+                            </span>
+                            <span style={{ fontSize: "0.88rem", fontWeight: 800, color: "var(--color-gold)" }}>
+                              {pct}%
+                            </span>
+                          </div>
+                        );
+                      })}
+                    </div>
+                  ) : (
+                    <div style={{ fontSize: "0.78rem", color: "#E11D48", padding: "0.4rem 0" }}>
+                      Please select at least one person to distribute these assets.
+                    </div>
+                  )}
+                </div>
+
+                {/* Primary Action Button */}
+                <div style={{ display: "flex", justifyContent: "flex-end", gap: "0.75rem", marginTop: "0.25rem" }}>
+                  <button
+                    type="button"
+                    onClick={() => setMultiSelectModalOpen(false)}
+                    style={{
+                      padding: "0.65rem 1.25rem",
+                      borderRadius: "10px",
+                      border: "1px solid rgba(27, 42, 74, 0.2)",
+                      backgroundColor: "#FFFFFF",
+                      color: "var(--color-navy)",
+                      fontSize: "0.9rem",
+                      fontWeight: 700,
+                      cursor: "pointer",
+                      height: "46px",
+                    }}
+                  >
+                    {isHi ? "रद्द करें" : "Cancel"}
+                  </button>
+
+                  <button
+                    type="button"
+                    onClick={() => handleApplyBulkAllocation(bulkEqualSelectedIds)}
+                    disabled={bulkEqualSelectedIds.length === 0}
+                    style={{
+                      padding: "0.65rem 1.6rem",
+                      borderRadius: "10px",
+                      border: "none",
+                      backgroundColor:
+                        bulkEqualSelectedIds.length > 0 ? "var(--color-gold)" : "rgba(27, 42, 74, 0.2)",
+                      color: "#FFFFFF",
+                      fontSize: "0.9rem",
+                      fontWeight: 800,
+                      cursor: bulkEqualSelectedIds.length > 0 ? "pointer" : "not-allowed",
+                      height: "46px",
+                      boxShadow:
+                        bulkEqualSelectedIds.length > 0 ? "0 4px 14px rgba(198, 83, 120, 0.3)" : "none",
+                      transition: "all 0.15s ease",
+                    }}
+                  >
+                    {isHi
+                      ? `${selectedAssetIds.length} संपत्तियों पर लागू करें`
+                      : `Apply to ${selectedAssetIds.length} Assets`}
+                  </button>
+                </div>
+              </div>
+            )}
+
+            {/* TAB CONTENT: OPTION 2 - Custom Distribution (Exact same CustomPercentageAllocator) */}
+            {bulkDistributionMode === "custom" && (
+              <CustomPercentageAllocator
+                key={`bulk-custom-${selectedAssetIds.join("-")}`}
+                family={family}
+                initialAllocations={
+                  bulkEqualSelectedIds.length > 0
+                    ? bulkEqualSelectedIds.map((id, idx) => {
+                        const mem = family.find((f) => f.id === id);
+                        const count = bulkEqualSelectedIds.length;
+                        const share = Math.floor(100 / count);
+                        const remainder = 100 - share * count;
+                        return {
+                          beneficiaryId: id,
+                          beneficiaryName: mem ? mem.name : "Beneficiary",
+                          percentage: idx === count - 1 ? share + remainder : share,
+                        };
+                      })
+                    : family.slice(0, 2).map((mem, idx) => ({
+                        beneficiaryId: mem.id,
+                        beneficiaryName: mem.name,
+                        percentage: idx === 0 ? (family.length > 1 ? 50 : 100) : 50,
+                      }))
+                }
+                showActions={true}
+                assetTitle={`${selectedAssetIds.length} Selected Assets`}
+                assetSubtitle="Choose exactly how much each beneficiary should receive across all selected assets."
+                saveButtonLabel={
+                  isHi
+                    ? `${selectedAssetIds.length} संपत्तियों पर लागू करें`
+                    : `Apply to ${selectedAssetIds.length} Assets`
+                }
+                onCancel={() => setMultiSelectModalOpen(false)}
+                onSave={(customAllocs) => handleApplyBulkAllocationWithDistribution(customAllocs)}
+                isHi={isHi}
+              />
             )}
           </div>
         </div>
@@ -2097,7 +2530,7 @@ export default function Step5Allocations({
             cursor: "pointer",
           }}
         >
-          ← Back
+          {isHi ? "← पीछे जाएं" : "← Back"}
         </button>
 
         <button
@@ -2121,7 +2554,7 @@ export default function Step5Allocations({
             cursor: "pointer",
           }}
         >
-          Save & Continue to Executors →
+          {isHi ? "सहेजें और निष्पादक नियुक्ति पर आगे बढ़ें →" : "Save & Continue to Executors →"}
         </button>
       </div>
     </div>

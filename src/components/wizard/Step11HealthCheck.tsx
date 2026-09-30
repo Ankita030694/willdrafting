@@ -53,32 +53,14 @@ export default function Step11HealthCheck({
     >
       {/* Header */}
       <div>
-        <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: "0.35rem" }}>
-          <div
-            style={{
-              display: "inline-flex",
-              alignItems: "center",
-              gap: "0.4rem",
-              padding: "0.2rem 0.6rem",
-              borderRadius: "999px",
-              backgroundColor: "rgba(198, 83, 120, 0.12)",
-              color: "var(--color-gold)",
-              fontSize: "0.72rem",
-              fontWeight: 700,
-              textTransform: "uppercase",
-              letterSpacing: "0.05em",
-            }}
-          >
-            <span style={{ width: "5px", height: "5px", borderRadius: "50%", backgroundColor: "var(--color-gold)" }}></span>
-            Step 11 of 14 • Statutory Compliance Audit
-          </div>
+        <div style={{ display: "flex", alignItems: "center", justifyContent: "flex-end", marginBottom: "0.35rem" }}>
           <div style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
             <AudioAssistantButton
-              textToSpeak="Our legal compliance engine has evaluated your will against the Indian Succession Act 1925. Your legal health score is displayed here."
+              textToSpeak="Our legal check has verified your will against Indian inheritance rules. Your will readiness score is displayed here."
               label="Listen / सुनें 🔊"
             />
             <span style={{ fontSize: "0.75rem", color: "var(--color-slate)" }}>
-              ISA 1925 & HSA 1956 compliance engine verification
+              Legal requirement check (Under Indian succession law)
             </span>
           </div>
         </div>
@@ -176,10 +158,10 @@ export default function Step11HealthCheck({
             </div>
 
             <h3 style={{ margin: "0 0 0.25rem", fontSize: "1.05rem", fontWeight: 800, color: "var(--color-navy)" }}>
-              {hasBlocks ? "Attention Required" : "Statutory Verification Complete"}
+              {hasBlocks ? "Attention Required" : "Legal Requirements Verified"}
             </h3>
             <p style={{ margin: 0, fontSize: "0.78rem", color: "var(--color-slate)", lineHeight: 1.4 }}>
-              {issues.length} checkpoints tested against ISA 1925 court standards.
+              {issues.length} legal checkpoints verified according to Indian law.
             </p>
           </div>
 

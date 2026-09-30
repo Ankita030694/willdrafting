@@ -79,7 +79,7 @@ export default function Step14FinalWill({ state, onBack }: Step14FinalWillProps)
               Your Will is Legally Compiled & Ready
             </h3>
             <span style={{ fontSize: "0.75rem", color: "var(--color-slate)" }}>
-              Version {state.version || "v1.2"} • ISA 1925 Compliant • Attestation Ready
+              Version {state.version || "v1.2"} • Indian Law Compliant • Ready to Sign
             </span>
           </div>
         </div>
@@ -239,7 +239,7 @@ export default function Step14FinalWill({ state, onBack }: Step14FinalWillProps)
         }}
       >
         <h3 style={{ fontSize: "1.25rem", fontWeight: 800, color: "var(--color-navy)", margin: "0 0 1rem" }}>
-          Next Step: 4 Statutory Execution Rules (Section 63 ISA 1925)
+          Next Step: 4 Essential Signing Rules (How to make your Will legally valid)
         </h3>
 
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: "1rem" }}>

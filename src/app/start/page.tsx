@@ -23,22 +23,26 @@ import Step11HealthCheck from "@/components/wizard/Step11HealthCheck";
 import Step12Assembly from "@/components/wizard/Step12Assembly";
 import Step13PlanSelect from "@/components/wizard/Step13PlanSelect";
 import Step14FinalWill from "@/components/wizard/Step14FinalWill";
+import LanguageToggle from "@/components/ui/LanguageToggle";
+import { useLanguage } from "@/context/LanguageContext";
+import { applyLanguageTranslation } from "@/lib/translations";
 
 function WizardContent() {
   const router = useRouter();
   const params = useParams<{ step?: string }>();
   const searchParams = useSearchParams();
   const rawStepParam = params?.step || searchParams.get("step");
-  const parsedStep = rawStepParam ? parseInt(String(rawStepParam), 10) : 1;
-  const initialStep = !Number.isNaN(parsedStep)
-    ? Math.min(14, Math.max(1, parsedStep))
-    : 1;
+  const parsedNum = rawStepParam ? parseInt(String(rawStepParam), 10) : null;
+  const initialStep =
+    parsedNum !== null && !Number.isNaN(parsedNum)
+      ? Math.min(14, Math.max(1, parsedNum + 1))
+      : 1;
 
   const [currentStep, setCurrentStep] = useState(initialStep);
   const [state, setState] = useState<WillDraftingState>(SCENARIO_1_STANDARD_MARRIED);
   const [mounted, setMounted] = useState(false);
   const [mobileSidebarOpen, setMobileSidebarOpen] = useState(false);
-  const [lang, setLang] = useState<"en" | "hi">("en");
+  const { lang, setLang } = useLanguage();
   const mainRef = React.useRef<HTMLElement | null>(null);
 
   useEffect(() => {
@@ -48,10 +52,6 @@ function WizardContent() {
   useEffect(() => {
     const loaded = loadStoredWillState();
     setState(loaded);
-    const savedLang = window.localStorage.getItem("willdrafting_lang");
-    if (savedLang === "hi" || savedLang === "en") {
-      setLang(savedLang);
-    }
     setMounted(true);
 
     const handleStateChange = () => {
@@ -65,67 +65,36 @@ function WizardContent() {
 
   const handleChangeLang = (nextLang: "en" | "hi") => {
     setLang(nextLang);
-    window.localStorage.setItem("willdrafting_lang", nextLang);
   };
 
   useEffect(() => {
     const container = mainRef.current;
-    if (!container || currentStep === 1) return;
+    if (!container) return;
 
-    const hiMap: Record<string, string> = {
-      "Back": "पीछे जाएं (Back)",
-      "Save & Continue →": "सहेजें और आगे बढ़ें →",
-      "Save & Continue": "सहेजें और आगे बढ़ें",
-      "Continue to Assets →": "संपत्ति विवरण पर आगे बढ़ें →",
-      "Continue to Allocations →": "बंटवारे पर आगे बढ़ें →",
-      "Continue to Executors →": "प्रबंधक नियुक्ति पर आगे बढ़ें →",
-      "Continue to Guardians →": "अभिभावक नियुक्ति पर आगे बढ़ें →",
-      "Continue to Special Wishes →": "विशेष इच्छाओं पर आगे बढ़ें →",
-      "Continue to Emotional Message →": "पारिवारिक संदेश पर आगे बढ़ें →",
-      "Continue to Full Review →": "संपूर्ण समीक्षा पर आगे बढ़ें →",
-      "Run Statutory Health Check": "कानूनी स्वास्थ्य जांच चलाएं",
-      "Proceed to Dynamic Clause Assembly": "कानूनी धारा संकलन पर आगे बढ़ें",
-      "Select Plan & View Final Will →": "योजना चुनें और अंतिम वसीयत देखें →",
-      "Confirm Plan & View Final Will": "योजना की पुष्टि करें और अंतिम वसीयत देखें",
-      "Print / Save as PDF": "प्रिंट करें / PDF सहेजें",
-      "Go to Customer Dashboard": "ग्राहक डैशबोर्ड पर जाएं",
-      "Tell us about yourself": "अपने बारे में जानकारी दें (About You)",
-      "Who is in your immediate family?": "आपके निकटतम परिवार में कौन हैं? (My Family)",
-      "Register Your Estate & Assets": "अपनी संपत्ति और धन दर्ज करें (Assets Register)",
-      "How should your estate be distributed?": "आपकी संपत्ति का बंटवारा कैसे होना चाहिए?",
-      "Appoint Your Will Executors": "अपने वसीयत निष्पादक (Executors) नियुक्त करें",
-      "Appoint Testamentary Guardians": "नाबालिग बच्चों के लिए अभिभावक नियुक्त करें",
-      "Special Wishes & Directives": "विशेष इच्छाएं एवं निर्देश",
-      "Leave a Message of Love & Wisdom": "अपने परिवार के लिए प्रेम और आशीर्वाद का संदेश",
-      "Comprehensive Will Summary": "वसीयत का संपूर्ण सारांश",
-      "Legal Health Check Engine": "कानूनी जांच एवं अनुपालन स्कोर",
-      "Assembling Your Legal Instrument": "आपकी कानूनी वसीयत तैयार की जा रही है",
-      "Choose your legal certification tier": "अपना कानूनी सत्यापन प्लान चुनें",
-      "Your Will is Legally Compiled & Ready": "आपकी वसीयत कानूनी रूप से तैयार है",
+    const runTranslation = () => {
+      applyLanguageTranslation(container, lang === "hi");
     };
 
-    const reverseMap: Record<string, string> = {};
-    Object.entries(hiMap).forEach(([en, hi]) => {
-      reverseMap[hi] = en;
+    runTranslation();
+
+    let debounceTimer: NodeJS.Timeout;
+    const observer = new MutationObserver(() => {
+      clearTimeout(debounceTimer);
+      debounceTimer = setTimeout(() => {
+        runTranslation();
+      }, 40);
     });
 
-    const walk = document.createTreeWalker(container, NodeFilter.SHOW_TEXT);
-    const nodes: Text[] = [];
-    let current = walk.nextNode();
-    while (current) {
-      nodes.push(current as Text);
-      current = walk.nextNode();
-    }
-
-    nodes.forEach((node) => {
-      const trimmed = node.nodeValue?.trim() || "";
-      if (!trimmed) return;
-      if (lang === "hi" && hiMap[trimmed]) {
-        node.nodeValue = node.nodeValue!.replace(trimmed, hiMap[trimmed]);
-      } else if (lang === "en" && reverseMap[trimmed]) {
-        node.nodeValue = node.nodeValue!.replace(trimmed, reverseMap[trimmed]);
-      }
+    observer.observe(container, {
+      childList: true,
+      subtree: true,
+      characterData: true,
     });
+
+    return () => {
+      observer.disconnect();
+      clearTimeout(debounceTimer);
+    };
   }, [lang, currentStep, state]);
 
   const handleUpdateState = (updater: (prev: WillDraftingState) => WillDraftingState) => {
@@ -141,9 +110,9 @@ function WizardContent() {
     setCurrentStep(clampedStep);
     setMobileSidebarOpen(false);
     const targetUrl =
-      clampedStep === 1
+      clampedStep <= 1
         ? "/start"
-        : `/start/${String(clampedStep).padStart(2, "0")}`;
+        : `/start/${String(clampedStep - 1).padStart(2, "0")}`;
     router.push(targetUrl);
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
@@ -197,6 +166,7 @@ function WizardContent() {
           onJumpToStep={handleStepJump}
           state={state}
           lang={lang}
+          onChangeLang={handleChangeLang}
         />
       </div>
 
@@ -221,6 +191,7 @@ function WizardContent() {
               onJumpToStep={handleStepJump}
               state={state}
               lang={lang}
+              onChangeLang={handleChangeLang}
             />
           </div>
         </div>
@@ -235,7 +206,7 @@ function WizardContent() {
             display: "none",
             alignItems: "center",
             justifyContent: "space-between",
-            padding: "1rem 1.25rem",
+            padding: "0.75rem 1rem",
             backgroundColor: "rgba(23, 34, 40, 0.95)",
             backdropFilter: "blur(20px)",
             color: "#FFFFFF",
@@ -261,13 +232,16 @@ function WizardContent() {
               <line x1="3" y1="18" x2="21" y2="18" />
             </svg>
           </button>
-          <div style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
-            <span style={{ fontWeight: 700, fontSize: "0.875rem" }}>
-              Step {currentStep} of 14
-            </span>
-            <span style={{ fontSize: "0.725rem", color: "var(--color-gold)", fontWeight: 700, padding: "0.15rem 0.45rem", borderRadius: "999px", backgroundColor: "rgba(198, 83, 120, 0.15)" }}>
-              {Math.round(((currentStep - 1) / 13) * 100)}%
-            </span>
+          <div style={{ display: "flex", alignItems: "center", gap: "0.65rem" }}>
+            <LanguageToggle lang={lang} onChangeLang={handleChangeLang} size="sm" />
+            <div style={{ display: "flex", alignItems: "center", gap: "0.35rem" }}>
+              <span style={{ fontWeight: 700, fontSize: "0.825rem" }}>
+                {lang === "hi" ? `चरण ${currentStep} / 14` : `Step ${currentStep} of 14`}
+              </span>
+              <span style={{ fontSize: "0.7rem", color: "var(--color-gold)", fontWeight: 700, padding: "0.15rem 0.45rem", borderRadius: "999px", backgroundColor: "rgba(198, 83, 120, 0.15)" }}>
+                {Math.round(((currentStep - 1) / 13) * 100)}%
+              </span>
+            </div>
           </div>
         </div>
 
@@ -303,6 +277,8 @@ function WizardContent() {
               onUpdate={handleUpdateState}
               onNext={() => handleStepJump(3)}
               onBack={() => handleStepJump(1)}
+              lang={lang}
+              onChangeLang={handleChangeLang}
             />
           )}
 
@@ -312,6 +288,8 @@ function WizardContent() {
               onUpdate={handleUpdateState}
               onNext={() => handleStepJump(4)}
               onBack={() => handleStepJump(2)}
+              lang={lang}
+              onChangeLang={handleChangeLang}
             />
           )}
 
@@ -321,6 +299,8 @@ function WizardContent() {
               onUpdate={handleUpdateState}
               onNext={() => handleStepJump(5)}
               onBack={() => handleStepJump(3)}
+              lang={lang}
+              onChangeLang={handleChangeLang}
             />
           )}
 
@@ -330,6 +310,8 @@ function WizardContent() {
               onUpdate={handleUpdateState}
               onNext={() => handleStepJump(6)}
               onBack={() => handleStepJump(4)}
+              lang={lang}
+              onChangeLang={handleChangeLang}
             />
           )}
 
@@ -339,6 +321,8 @@ function WizardContent() {
               onUpdate={handleUpdateState}
               onNext={() => handleStepJump(hasMinors ? 7 : 8)}
               onBack={() => handleStepJump(5)}
+              lang={lang}
+              onChangeLang={handleChangeLang}
             />
           )}
 
@@ -348,6 +332,8 @@ function WizardContent() {
               onUpdate={handleUpdateState}
               onNext={() => handleStepJump(8)}
               onBack={() => handleStepJump(6)}
+              lang={lang}
+              onChangeLang={handleChangeLang}
             />
           )}
 

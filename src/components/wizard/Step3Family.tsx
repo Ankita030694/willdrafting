@@ -30,12 +30,16 @@ import {
   MapPin,
 } from "lucide-react";
 import AudioAssistantButton from "@/components/ui/AudioAssistantButton";
+import LanguageToggle from "@/components/ui/LanguageToggle";
+import { useLanguage } from "@/context/LanguageContext";
 
 interface Step3FamilyProps {
   state: WillDraftingState;
   onUpdate: (updater: (prev: WillDraftingState) => WillDraftingState) => void;
   onNext: () => void;
   onBack: () => void;
+  lang?: "en" | "hi";
+  onChangeLang?: (lang: "en" | "hi") => void;
 }
 
 export default function Step3Family({
@@ -43,7 +47,14 @@ export default function Step3Family({
   onUpdate,
   onNext,
   onBack,
+  lang: propLang,
+  onChangeLang: propOnChangeLang,
 }: Step3FamilyProps) {
+  const context = useLanguage();
+  const currentLang = propLang || context.lang || "en";
+  const isHi = currentLang === "hi";
+  const handleToggleLang = propOnChangeLang || context.setLang;
+
   const [family, setFamily] = useState<FamilyMember[]>(state.familyMembers || []);
   const [modalOpen, setModalOpen] = useState(false);
 
@@ -61,24 +72,10 @@ export default function Step3Family({
   const [customRelation, setCustomRelation] = useState("");
   const [modalGroup, setModalGroup] = useState<"parents" | "peers" | "children">("peers");
 
-  // Open modal with preselected relation
-  const handleOpenAdd = (
-    defaultRel?: FamilyMember["relationship"],
-    group?: "parents" | "peers" | "children"
-  ) => {
+  // Open unified modal for any family relationship
+  const handleOpenAdd = (defaultRel?: FamilyMember["relationship"]) => {
     const rel = defaultRel || "spouse";
     setRelationship(rel);
-    if (group) {
-      setModalGroup(group);
-    } else if (rel === "father" || rel === "mother") {
-      setModalGroup("parents");
-    } else if (rel === "son" || rel === "daughter") {
-      setModalGroup("children");
-    } else {
-      setModalGroup("peers");
-    }
-
-    // Sensible default age based on relation
     if (rel === "father" || rel === "mother") setAgeSlider(68);
     else if (rel === "son" || rel === "daughter") setAgeSlider(14);
     else if (rel === "spouse") setAgeSlider(42);
@@ -122,7 +119,7 @@ export default function Step3Family({
       phone: phone.trim() || undefined,
       email: email.trim() || undefined,
       address: sameAddress
-        ? "Same as testator"
+        ? "Same as your address (Will creator)"
         : customAddress.trim() || undefined,
       notes: relationship === "other" ? modalGroup : undefined,
     };
@@ -180,50 +177,78 @@ export default function Step3Family({
     (f) =>
       f.relationship === "father" ||
       f.relationship === "mother" ||
-      (f.relationship === "other" && f.notes === "parents")
-  );
-  const immediate = family.filter(
-    (f) =>
-      f.relationship === "spouse" ||
-      f.relationship === "brother" ||
-      f.relationship === "sister" ||
-      (f.relationship === "other" && f.notes === "peers")
+      (f.relationship === "other" &&
+        ((f.notes || "").includes("parents") ||
+          (f.customRelationship || "").toLowerCase().includes("grandparent") ||
+          (f.customRelationship || "").toLowerCase().includes("father") ||
+          (f.customRelationship || "").toLowerCase().includes("mother") ||
+          (f.customRelationship || "").toLowerCase().includes("dada") ||
+          (f.customRelationship || "").toLowerCase().includes("dadi") ||
+          (f.customRelationship || "").toLowerCase().includes("nana") ||
+          (f.customRelationship || "").toLowerCase().includes("nani")))
   );
   const children = family.filter(
     (f) =>
       f.relationship === "son" ||
       f.relationship === "daughter" ||
-      (f.relationship === "other" && (!f.notes || f.notes === "children"))
+      (f.relationship === "other" &&
+        ((f.notes || "").includes("children") ||
+          (f.customRelationship || "").toLowerCase().includes("grandchild") ||
+          (f.customRelationship || "").toLowerCase().includes("son") ||
+          (f.customRelationship || "").toLowerCase().includes("daughter") ||
+          (f.customRelationship || "").toLowerCase().includes("child") ||
+          (f.customRelationship || "").toLowerCase().includes("pota") ||
+          (f.customRelationship || "").toLowerCase().includes("poti") ||
+          (f.customRelationship || "").toLowerCase().includes("naati")))
+  );
+  const immediate = family.filter(
+    (f) => !parents.includes(f) && !children.includes(f)
   );
 
   return (
     <div style={{ display: "flex", flexDirection: "column", gap: "0.85rem", width: "100%", height: "100%", justifyContent: "space-between" }}>
-      {/* Compact Header with Quick Actions */}
+      {/* Compact Header with Single Primary Add Button */}
       <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: "0.75rem" }}>
         <div>
-          <div style={{ display: "inline-flex", alignItems: "center", gap: "0.4rem", padding: "0.2rem 0.65rem", borderRadius: "999px", backgroundColor: "rgba(198, 83, 120, 0.12)", color: "var(--color-gold)", fontSize: "0.72rem", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.05em", marginBottom: "0.25rem" }}>
-            <span style={{ width: "6px", height: "6px", borderRadius: "50%", backgroundColor: "var(--color-gold)" }}></span>
-            Step 3 of 14 • Family Directory & Heirs
-          </div>
           <div style={{ display: "flex", alignItems: "baseline", gap: "0.65rem" }}>
             <h2 style={{ fontSize: "1.45rem", fontWeight: 800, color: "var(--color-navy)", margin: 0, letterSpacing: "-0.02em" }}>
-              Your Family Circle
+              {isHi ? "आपका पारिवारिक दायरा" : "Your Family Circle"}
             </h2>
-            <span style={{ fontSize: "0.88rem", color: "var(--color-gold)", fontWeight: 600 }}>
-              (परिवार एवं कानूनी वारिसदार)
-            </span>
             <span style={{ fontSize: "0.8rem", color: "var(--color-slate)", fontWeight: 600 }}>
-              • {family.length} Registered
+              • {family.length} {isHi ? "पंजीकृत सदस्य" : "Registered"}
             </span>
           </div>
         </div>
 
-        {/* Audio Assistant */}
-        <div style={{ display: "flex", flexWrap: "wrap", gap: "0.4rem", alignItems: "center" }}>
+        {/* Unified + Add Family Member Button, Audio Assistant & Language Toggle */}
+        <div style={{ display: "flex", flexWrap: "wrap", gap: "0.5rem", alignItems: "center" }}>
+          <button
+            type="button"
+            onClick={() => handleOpenAdd()}
+            className="btn btn-gold"
+            style={{
+              padding: "0.45rem 1rem",
+              fontSize: "0.82rem",
+              borderRadius: "10px",
+              display: "inline-flex",
+              alignItems: "center",
+              gap: "0.4rem",
+              fontWeight: 700,
+              boxShadow: "0 2px 10px rgba(198, 83, 120, 0.25)",
+              cursor: "pointer",
+            }}
+          >
+            <Plus size={15} /> {isHi ? "+ परिवार का सदस्य जोड़ें" : "+ Add Family Member"}
+          </button>
           <AudioAssistantButton
-            textToSpeak="Who is in your family? Tap the quick buttons to add your spouse, children, parents, or siblings. We will help you assign your assets to them in the next steps."
-            label="Listen / सुनें 🔊"
+            textToSpeak={
+              isHi
+                ? "अपने परिवार के किसी भी सदस्य को जोड़ने के लिए 'परिवार का सदस्य जोड़ें' बटन पर टैप करें।"
+                : "Tap the Add Family Member button to add your spouse, children, parents, siblings, or any other relatives. You can choose any relationship."
+            }
+            label={isHi ? "सुनें 🔊" : "Listen 🔊"}
           />
+          <LanguageToggle lang={currentLang} onChangeLang={handleToggleLang} size="sm" />
         </div>
       </div>
 
@@ -253,22 +278,8 @@ export default function Step3Family({
         >
           <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", borderBottom: "1px solid rgba(27, 42, 74, 0.05)", paddingBottom: "0.4rem" }}>
             <span style={{ fontSize: "0.74rem", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.06em", color: "var(--color-slate)" }}>
-              Parents (Ascendants)
+              {isHi ? "माता-पिता (पूर्वज)" : "Parents (Ascendants)"}
             </span>
-            <button
-              type="button"
-              onClick={() => handleOpenAdd("father")}
-              style={{
-                fontSize: "0.72rem",
-                color: "var(--color-sage)",
-                fontWeight: 700,
-                background: "none",
-                border: "none",
-                cursor: "pointer",
-              }}
-            >
-              + Add
-            </button>
           </div>
 
           <div style={{ flex: 1, overflowY: "auto", display: "flex", flexDirection: "column", gap: "0.55rem" }}>
@@ -293,7 +304,7 @@ export default function Step3Family({
                 }}
               >
                 <Users size={20} color="var(--color-slate)" />
-                <span>+ Record Father or Mother</span>
+                <span>{isHi ? "+ पिता या माता जोड़ें" : "+ Add Father or Mother"}</span>
               </div>
             ) : (
               parents.map((m) => renderFamilyNode(m))
@@ -317,24 +328,8 @@ export default function Step3Family({
         >
           <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", borderBottom: "1px solid rgba(27, 42, 74, 0.05)", paddingBottom: "0.4rem" }}>
             <span style={{ fontSize: "0.74rem", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.06em", color: "var(--color-navy)" }}>
-              Testator & Peers
+              {isHi ? "आप एवं समकक्षी (जीवनसाथी / भाई-बहन)" : "You & Immediate Family (Spouse / Siblings)"}
             </span>
-            <div style={{ display: "flex", gap: "0.45rem" }}>
-              <button
-                type="button"
-                onClick={() => handleOpenAdd("spouse")}
-                style={{ fontSize: "0.72rem", color: "#BE123C", fontWeight: 700, background: "none", border: "none", cursor: "pointer" }}
-              >
-                + Spouse
-              </button>
-              <button
-                type="button"
-                onClick={() => handleOpenAdd("brother")}
-                style={{ fontSize: "0.72rem", color: "var(--color-slate)", fontWeight: 700, background: "none", border: "none", cursor: "pointer" }}
-              >
-                + Sibling
-              </button>
-            </div>
           </div>
 
           <div style={{ flex: 1, overflowY: "auto", display: "flex", flexDirection: "column", gap: "0.55rem" }}>
@@ -368,14 +363,14 @@ export default function Step3Family({
               <div style={{ minWidth: 0, flex: 1 }}>
                 <div style={{ display: "flex", alignItems: "center", gap: "0.35rem" }}>
                   <h4 style={{ margin: 0, fontSize: "0.88rem", fontWeight: 800, color: "var(--color-navy)", whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis" }}>
-                    {state.testator.fullName || "You (Testator)"}
+                    {state.testator.fullName || (isHi ? "आप (वसीयतकर्ता)" : "You (Will Creator)")}
                   </h4>
                   <span style={{ fontSize: "0.64rem", fontWeight: 800, backgroundColor: "var(--color-gold)", color: "#FFFFFF", padding: "0.08rem 0.35rem", borderRadius: "999px" }}>
-                    Author
+                    {isHi ? "वसीयतकर्ता" : "Creator"}
                   </span>
                 </div>
                 <div style={{ fontSize: "0.7rem", color: "var(--color-slate)", marginTop: "0.1rem" }}>
-                  Sound Disposing Mind • S.59 ISA
+                  {isHi ? "स्वस्थ चित्त • कानूनी रूप से योग्य" : "Sound Mind • Legally qualified"}
                 </div>
               </div>
             </div>
@@ -401,15 +396,8 @@ export default function Step3Family({
         >
           <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", borderBottom: "1px solid rgba(27, 42, 74, 0.05)", paddingBottom: "0.4rem" }}>
             <span style={{ fontSize: "0.74rem", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.06em", color: "var(--color-slate)" }}>
-              Children & Descendants
+              {isHi ? "बच्चे एवं वंशज" : "Children & Descendants"}
             </span>
-            <button
-              type="button"
-              onClick={() => handleOpenAdd("son")}
-              style={{ fontSize: "0.72rem", color: "#1D4ED8", fontWeight: 700, background: "none", border: "none", cursor: "pointer" }}
-            >
-              + Add Child
-            </button>
           </div>
 
           <div style={{ flex: 1, overflowY: "auto", display: "flex", flexDirection: "column", gap: "0.55rem" }}>
@@ -434,7 +422,7 @@ export default function Step3Family({
                 }}
               >
                 <Baby size={20} color="var(--color-slate)" />
-                <span>+ Record Son, Daughter or Dependent</span>
+                <span>{isHi ? "+ बेटा या बेटी जोड़ें" : "+ Add Son or Daughter"}</span>
               </div>
             ) : (
               children.map((m) => renderFamilyNode(m))
@@ -565,51 +553,48 @@ export default function Step3Family({
             </div>
 
             <form onSubmit={handleAddMember} style={{ display: "flex", flexDirection: "column", gap: "1.5rem" }}>
-              {/* Relationship Picker Cards */}
+              {/* Who is this person? / Relationship Dropdown */}
               <div>
-                <label style={{ display: "block", fontSize: "0.825rem", fontWeight: 700, color: "var(--color-navy)", marginBottom: "0.5rem" }}>
-                  Relationship to You *
+                <label style={{ display: "block", fontSize: "0.825rem", fontWeight: 700, color: "var(--color-navy)", marginBottom: "0.45rem" }}>
+                  {isHi ? "यह व्यक्ति कौन है? (संबंध चुनें) *" : "Who is this person? (Select Relationship) *"}
                 </label>
-                <div
-                  style={{
-                    display: "grid",
-                    gridTemplateColumns: `repeat(${allowedRelations.length}, 1fr)`,
-                    gap: "0.5rem",
-                  }}
-                >
-                  {allowedRelations.map((rel) => {
-                    const cfg = relConfig[rel];
-                    const isSel = relationship === rel;
-                    const RelIcon = cfg.Icon;
-                    return (
-                      <button
-                        key={rel}
-                        type="button"
-                        onClick={() => {
-                          setRelationship(rel);
-                          if (rel === "father" || rel === "mother") setAgeSlider(68);
-                          else if (rel === "son" || rel === "daughter") setAgeSlider(14);
-                          else if (rel === "spouse") setAgeSlider(42);
-                        }}
-                        style={{
-                          padding: "0.65rem 0.4rem",
-                          borderRadius: "14px",
-                          border: isSel ? `2px solid ${cfg.color}` : "1px solid rgba(27, 42, 74, 0.1)",
-                          backgroundColor: isSel ? `${cfg.color}10` : "#FFFFFF",
-                          color: isSel ? "var(--color-navy)" : "var(--color-slate)",
-                          cursor: "pointer",
-                          display: "flex",
-                          flexDirection: "column",
-                          alignItems: "center",
-                          gap: "0.35rem",
-                          transition: "all 0.15s ease",
-                        }}
-                      >
-                        <RelIcon size={18} color={isSel ? cfg.color : "var(--color-slate)"} />
-                        <span style={{ fontSize: "0.725rem", fontWeight: isSel ? 700 : 500 }}>{cfg.label}</span>
-                      </button>
-                    );
-                  })}
+                <div style={{ position: "relative", width: "100%" }}>
+                  <select
+                    value={relationship}
+                    onChange={(e) => {
+                      const rel = e.target.value as FamilyMember["relationship"];
+                      setRelationship(rel);
+                      if (rel === "father" || rel === "mother") setAgeSlider(68);
+                      else if (rel === "son" || rel === "daughter") setAgeSlider(14);
+                      else if (rel === "spouse") setAgeSlider(42);
+                      else if (rel === "brother" || rel === "sister") setAgeSlider(38);
+                    }}
+                    style={{
+                      width: "100%",
+                      padding: "0.75rem 2.2rem 0.75rem 1rem",
+                      borderRadius: "12px",
+                      border: "1.5px solid rgba(27, 42, 74, 0.15)",
+                      fontSize: "0.95rem",
+                      fontWeight: 600,
+                      color: "var(--color-navy)",
+                      backgroundColor: "#FFFFFF",
+                      outline: "none",
+                      cursor: "pointer",
+                      appearance: "none",
+                    }}
+                  >
+                    <option value="spouse">{isHi ? "जीवनसाथी (पति / पत्नी)" : "Spouse (Husband / Wife)"}</option>
+                    <option value="son">{isHi ? "बेटा (Child — Son)" : "Child — Son"}</option>
+                    <option value="daughter">{isHi ? "बेटी (Child — Daughter)" : "Child — Daughter"}</option>
+                    <option value="father">{isHi ? "पिता (Parent — Father)" : "Parent — Father"}</option>
+                    <option value="mother">{isHi ? "माता (Parent — Mother)" : "Parent — Mother"}</option>
+                    <option value="brother">{isHi ? "भाई (Sibling — Brother)" : "Sibling — Brother"}</option>
+                    <option value="sister">{isHi ? "बहन (Sibling — Sister)" : "Sibling — Sister"}</option>
+                    <option value="other">{isHi ? "अन्य रिश्तेदार या आश्रित (दादा-दादी, पोता-पोती, चाचा, अन्य)" : "Other (Grandparent, Grandchild, Relative, Dependent)"}</option>
+                  </select>
+                  <div style={{ position: "absolute", right: "1rem", top: "50%", transform: "translateY(-50%)", pointerEvents: "none", color: "#64748B", fontSize: "0.8rem" }}>
+                    ▼
+                  </div>
                 </div>
               </div>
 
@@ -684,12 +669,12 @@ export default function Step3Family({
                       marginBottom: "0.35rem",
                     }}
                   >
-                    Relationship with this Person *
+                    {isHi ? "विशिष्ट रिश्ता दर्ज करें *" : "Relationship with this Person *"}
                   </label>
                   <input
                     type="text"
                     required={relationship === "other"}
-                    placeholder="e.g., Grandfather, Maternal Uncle, Niece, Grandson, Family Friend"
+                    placeholder={isHi ? "उदा. दादा-दादी, पोता-पोती, चाचा, भतीजा" : "e.g., Grandparent, Grandchild, Maternal Uncle, Niece, Family Friend"}
                     value={customRelation}
                     onChange={(e) => setCustomRelation(e.target.value)}
                     style={{
@@ -702,6 +687,40 @@ export default function Step3Family({
                       outline: "none",
                     }}
                   />
+                  {/* Quick relation pills */}
+                  <div style={{ display: "flex", flexWrap: "wrap", gap: "0.35rem", marginTop: "0.5rem" }}>
+                    {[
+                      { en: "Grandparent", hi: "दादा / दादी" },
+                      { en: "Grandchild", hi: "पोता / पोती" },
+                      { en: "Daughter-in-law", hi: "बहू" },
+                      { en: "Son-in-law", hi: "दामाद" },
+                      { en: "Uncle / Aunt", hi: "चाचा / बुआ / मामा" },
+                      { en: "Nephew / Niece", hi: "भतीजा / भांजा" },
+                      { en: "Family Friend", hi: "पारिवारिक मित्र" },
+                    ].map((q) => (
+                      <button
+                        key={q.en}
+                        type="button"
+                        onClick={() => {
+                          setCustomRelation(isHi ? q.hi : q.en);
+                          if (q.en === "Grandparent") setAgeSlider(75);
+                          else if (q.en === "Grandchild") setAgeSlider(8);
+                        }}
+                        style={{
+                          padding: "0.22rem 0.55rem",
+                          borderRadius: "999px",
+                          fontSize: "0.72rem",
+                          fontWeight: 600,
+                          backgroundColor: customRelation === (isHi ? q.hi : q.en) ? "var(--color-navy)" : "rgba(27, 42, 74, 0.05)",
+                          color: customRelation === (isHi ? q.hi : q.en) ? "#FFFFFF" : "var(--color-slate)",
+                          border: "none",
+                          cursor: "pointer",
+                        }}
+                      >
+                        {isHi ? q.hi : q.en}
+                      </button>
+                    ))}
+                  </div>
                 </div>
               )}
 
@@ -835,13 +854,16 @@ export default function Step3Family({
               <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "0.85rem" }}>
                 <div>
                   <label style={{ display: "block", fontSize: "0.775rem", fontWeight: 700, color: "var(--color-navy)", marginBottom: "0.3rem" }}>
-                    Phone Number (Optional)
+                    {isHi ? "मोबाइल नंबर (ऐच्छिक)" : "Phone Number (Optional)"}
                   </label>
                   <input
                     type="tel"
-                    placeholder="+91 98100..."
+                    inputMode="numeric"
+                    pattern="[0-9]*"
+                    maxLength={10}
+                    placeholder="9820098765"
                     value={phone}
-                    onChange={(e) => setPhone(e.target.value)}
+                    onChange={(e) => setPhone(e.target.value.replace(/\D/g, "").slice(0, 10))}
                     style={{
                       width: "100%",
                       padding: "0.65rem 0.85rem",
@@ -915,7 +937,7 @@ export default function Step3Family({
                       Resides at your address
                     </div>
                     <div style={{ fontSize: "0.725rem", color: "var(--color-slate)" }}>
-                      Uses same permanent residence as testator
+                      {isHi ? "आपके स्थायी पते पर ही निवास करते हैं" : "Uses same home address as you (Will creator)"}
                     </div>
                   </div>
                   <AppleSwitch checked={sameAddress} onChange={setSameAddress} />

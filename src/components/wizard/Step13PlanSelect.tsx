@@ -27,10 +27,10 @@ export default function Step13PlanSelect({
       id: "essential" as const,
       name: "Essential Will",
       price: "₹ 1,499",
-      desc: "Legally sound automated draft under ISA 1925 for straightforward estates.",
+      desc: "Official automated Will draft complying with Indian succession rules.",
       features: [
         "Full Legal Will Document (PDF)",
-        "Section 63 Statutory Execution Guide",
+        "Step-by-Step Signing & Witness Guide",
         "1-Year Access to Encrypted Will Vault",
         "Annual Review Reminders",
       ],
@@ -44,7 +44,7 @@ export default function Step13PlanSelect({
       features: [
         "Everything in Essential",
         "Line-by-Line Review by High Court Advocate",
-        "Statutory Compliance Certificate",
+        "Official Legal Compliance Certificate",
         "Direct Clarification Messaging Channel",
         "Unlimited Updates for 1 Year",
       ],
@@ -58,7 +58,7 @@ export default function Step13PlanSelect({
       features: [
         "Everything in Lawyer Verified",
         "30-Minute 1-on-1 Video Consultation",
-        "Testamentary Trust & Minor Care Structuring",
+        "Family Trust & Minor Child Protection Structuring",
         "Sub-Registrar Registration Guidance",
         "Priority Concierge Support",
       ],
@@ -89,24 +89,7 @@ export default function Step13PlanSelect({
       {/* Header */}
       <div>
         <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: "0.35rem" }}>
-          <div
-            style={{
-              display: "inline-flex",
-              alignItems: "center",
-              gap: "0.4rem",
-              padding: "0.2rem 0.6rem",
-              borderRadius: "999px",
-              backgroundColor: "rgba(198, 83, 120, 0.12)",
-              color: "var(--color-gold)",
-              fontSize: "0.72rem",
-              fontWeight: 700,
-              textTransform: "uppercase",
-              letterSpacing: "0.05em",
-            }}
-          >
-            <span style={{ width: "5px", height: "5px", borderRadius: "50%", backgroundColor: "var(--color-gold)" }}></span>
-            Step 13 of 14 • Legal Verification Tier
-          </div>
+          
           <div style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
             <AudioAssistantButton
               textToSpeak="Choose your legal plan. You can pick Essential Will for instant download, or Lawyer Verified for complete review by a qualified advocate."

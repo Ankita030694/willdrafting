@@ -47,7 +47,7 @@ export default function Step10Review({
       step: 2,
       Icon: User,
       color: "var(--color-navy)",
-      title: "Testator Identification",
+      title: "Testator Identification (The person making the Will)",
       details: [
         { label: "Full Legal Name", val: testator.fullName || "Not provided" },
         { label: "DOB & Gender", val: `${testator.dob || "N/A"} (${testator.gender || "N/A"})` },
@@ -61,7 +61,7 @@ export default function Step10Review({
       step: 3,
       Icon: Users,
       color: "var(--color-gold)",
-      title: `Family Directory (${family.length} Registered Heirs)`,
+      title: `Family Directory (${family.length} Registered Beneficiaries & Heirs)`,
       customContent: (
         <div style={{ display: "flex", flexWrap: "wrap", gap: "0.5rem", marginTop: "0.4rem" }}>
           {family.map((f) => (
@@ -98,10 +98,10 @@ export default function Step10Review({
       step: 5,
       Icon: PieChart,
       color: "#2563EB",
-      title: "Residuary Estate & Specific Bequests",
+      title: "Residuary Estate (Everything left after specific assets are distributed)",
       details: [
-        { label: "Primary Residuary Legatee", val: state.residuaryBeneficiaryName || "Sunita Sharma" },
-        { label: "Alternate Residuary Legatee", val: state.residuaryAlternateName || "Rahul Sharma" },
+        { label: "Primary Residuary Legatee (Recipient of leftover estate)", val: state.residuaryBeneficiaryName || "Sunita Sharma" },
+        { label: "Alternate Residuary Legatee (Backup recipient)", val: state.residuaryAlternateName || "Rahul Sharma" },
         { label: "Specific Allocations Configured", val: `${state.allocations.length} allocation rule(s)` },
       ],
     },
@@ -110,10 +110,10 @@ export default function Step10Review({
       step: 6,
       Icon: Scale,
       color: "#8B5CF6",
-      title: "Fiduciary Appointments (Executors)",
+      title: "Executor Appointments (The persons responsible for carrying out your Will)",
       details: [
-        { label: "Primary Executor", val: `${state.executorPrimary?.name || "Sunita Sharma"}` },
-        { label: "Alternate Executor", val: `${state.executorAlternate?.name || "None specified"}` },
+        { label: "Primary Executor (Responsible for executing your Will)", val: `${state.executorPrimary?.name || "Sunita Sharma"}` },
+        { label: "Alternate Executor (Backup executor)", val: `${state.executorAlternate?.name || "None specified"}` },
       ],
     },
     {
@@ -121,11 +121,11 @@ export default function Step10Review({
       step: 7,
       Icon: ShieldCheck,
       color: "#059669",
-      title: "Testamentary Guardians",
+      title: "Testamentary Guardians (Appointed to care for minor children)",
       details: family.some((f) => f.isMinor)
         ? [
-            { label: "Primary Guardian", val: state.guardianPrimary?.name || "Appointed" },
-            { label: "Alternate Guardian", val: state.guardianAlternate?.name || "Appointed" },
+            { label: "Primary Guardian (Care for minor children)", val: state.guardianPrimary?.name || "Appointed" },
+            { label: "Alternate Guardian (Backup guardian)", val: state.guardianAlternate?.name || "Appointed" },
           ]
         : [{ label: "Minor Children Clause", val: "No minor children registered (Clause not invoked)" }],
     },
@@ -144,25 +144,7 @@ export default function Step10Review({
     >
       {/* Header */}
       <div>
-        <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: "0.35rem" }}>
-          <div
-            style={{
-              display: "inline-flex",
-              alignItems: "center",
-              gap: "0.4rem",
-              padding: "0.2rem 0.6rem",
-              borderRadius: "999px",
-              backgroundColor: "rgba(198, 83, 120, 0.12)",
-              color: "var(--color-gold)",
-              fontSize: "0.72rem",
-              fontWeight: 700,
-              textTransform: "uppercase",
-              letterSpacing: "0.05em",
-            }}
-          >
-            <span style={{ width: "5px", height: "5px", borderRadius: "50%", backgroundColor: "var(--color-gold)" }}></span>
-            Step 10 of 14 • Pre-Compilation Audit
-          </div>
+        <div style={{ display: "flex", alignItems: "center", justifyContent: "flex-end", marginBottom: "0.35rem" }}>
           <div style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
             <AudioAssistantButton
               textToSpeak="Review your complete will summary. Check your personal details, family members, assets, and executors. Tap any card to make changes."
@@ -324,7 +306,7 @@ export default function Step10Review({
             gap: "0.5rem",
           }}
         >
-          Run Statutory Health Check <ArrowRight size={16} />
+          Run Legal Health Check <ArrowRight size={16} />
         </button>
       </div>
     </div>

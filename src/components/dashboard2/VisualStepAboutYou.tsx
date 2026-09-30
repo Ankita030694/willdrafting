@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import { WillDraftingState, TestatorProfile } from "@/lib/willDraftingStore";
+import { INDIAN_STATES_AND_UTS, lookupStateFromPin } from "@/lib/pincode";
 import AudioAssistantButton from "@/components/ui/AudioAssistantButton";
 import QuickChipGroup from "@/components/ui/QuickChipGroup";
 import { User, MapPin, Sparkles, Check, Building, CreditCard, Shield } from "lucide-react";
@@ -287,7 +288,24 @@ export default function VisualStepAboutYou({ state, onUpdate, onNext }: VisualSt
           />
         </div>
 
-        <div style={{ display: "grid", gridTemplateColumns: "1.2fr 1fr 0.8fr", gap: "0.75rem", marginTop: "0.5rem" }}>
+        <div style={{ display: "grid", gridTemplateColumns: "1fr 1.2fr 1.2fr", gap: "0.75rem", marginTop: "0.5rem" }}>
+          <input
+            type="text"
+            maxLength={6}
+            value={formData.pincode}
+            onChange={(e) => {
+              const pin = e.target.value.replace(/\D/g, "").slice(0, 6);
+              const autoSt = lookupStateFromPin(pin);
+              setFormData((prev) => ({
+                ...prev,
+                pincode: pin,
+                ...(autoSt?.state ? { state: autoSt.state } : {}),
+                ...(autoSt?.city && !prev.city ? { city: autoSt.city } : {}),
+              }));
+            }}
+            placeholder="PIN Code"
+            style={{ padding: "0.75rem 0.85rem", borderRadius: "10px", border: "1.5px solid rgba(15, 29, 56, 0.15)", fontSize: "0.9rem" }}
+          />
           <input
             type="text"
             value={formData.city}
@@ -295,20 +313,18 @@ export default function VisualStepAboutYou({ state, onUpdate, onNext }: VisualSt
             placeholder="City"
             style={{ padding: "0.75rem 0.85rem", borderRadius: "10px", border: "1.5px solid rgba(15, 29, 56, 0.15)", fontSize: "0.9rem" }}
           />
-          <input
-            type="text"
+          <select
             value={formData.state}
             onChange={(e) => setFormData((prev) => ({ ...prev, state: e.target.value }))}
-            placeholder="State"
-            style={{ padding: "0.75rem 0.85rem", borderRadius: "10px", border: "1.5px solid rgba(15, 29, 56, 0.15)", fontSize: "0.9rem" }}
-          />
-          <input
-            type="text"
-            value={formData.pincode}
-            onChange={(e) => setFormData((prev) => ({ ...prev, pincode: e.target.value }))}
-            placeholder="PIN Code"
-            style={{ padding: "0.75rem 0.85rem", borderRadius: "10px", border: "1.5px solid rgba(15, 29, 56, 0.15)", fontSize: "0.9rem" }}
-          />
+            style={{ padding: "0.75rem 0.85rem", borderRadius: "10px", border: "1.5px solid rgba(15, 29, 56, 0.15)", fontSize: "0.9rem", cursor: "pointer", backgroundColor: "#fff" }}
+          >
+            <option value="" disabled>Select State</option>
+            {INDIAN_STATES_AND_UTS.map((st) => (
+              <option key={st} value={st}>
+                {st}
+              </option>
+            ))}
+          </select>
         </div>
       </div>
 

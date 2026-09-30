@@ -217,15 +217,26 @@ export default function IntakeForm({ onSuccess, compact = false }: IntakeFormPro
                 id="intakePhone"
                 name="phone"
                 type="tel"
+                inputMode="numeric"
+                pattern="[0-9]*"
                 required
                 maxLength={10}
-                placeholder="98765 43210"
+                placeholder="9820098765"
                 value={formData.phone}
-                onChange={handleChange}
+                onChange={(e) => {
+                  const val = e.target.value.replace(/\D/g, "").slice(0, 10);
+                  setFormData({ ...formData, phone: val });
+                  if (errorMessage && val.length === 10) setErrorMessage("");
+                }}
                 className="phone-input-field intake-input"
                 style={{ fontSize: "0.92rem" }}
               />
             </div>
+            {formData.phone && formData.phone.length > 0 && formData.phone.length < 10 && (
+              <span style={{ fontSize: "0.75rem", color: "#DC2626", marginTop: "0.25rem", display: "block" }}>
+                Mobile number must contain exactly 10 digits.
+              </span>
+            )}
           </div>
 
           {/* Email Address */}

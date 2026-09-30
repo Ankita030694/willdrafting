@@ -3,6 +3,7 @@ import { Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 import GlobalPopup from "@/components/GlobalPopup";
 import StyledJsxRegistry from "./registry";
+import { LanguageProvider } from "@/context/LanguageContext";
 
 const plusJakarta = Plus_Jakarta_Sans({
   variable: "--font-jakarta",
@@ -47,8 +48,10 @@ export default function RootLayout({
     <html lang="en" className={plusJakarta.variable}>
       <body className="font-sans antialiased">
         <StyledJsxRegistry>
-          {children}
-          <GlobalPopup />
+          <LanguageProvider>
+            {children}
+            <GlobalPopup />
+          </LanguageProvider>
         </StyledJsxRegistry>
       </body>
     </html>

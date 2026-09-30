@@ -20,12 +20,16 @@ import {
   Award,
 } from "lucide-react";
 import AudioAssistantButton from "@/components/ui/AudioAssistantButton";
+import LanguageToggle from "@/components/ui/LanguageToggle";
+import { useLanguage } from "@/context/LanguageContext";
 
 interface Step6ExecutorsProps {
   state: WillDraftingState;
   onUpdate: (updater: (prev: WillDraftingState) => WillDraftingState) => void;
   onNext: () => void;
   onBack: () => void;
+  lang?: "en" | "hi";
+  onChangeLang?: (lang: "en" | "hi") => void;
 }
 
 export default function Step6Executors({
@@ -33,7 +37,13 @@ export default function Step6Executors({
   onUpdate,
   onNext,
   onBack,
+  lang: propLang,
+  onChangeLang: propOnChangeLang,
 }: Step6ExecutorsProps) {
+  const context = useLanguage();
+  const currentLang = propLang || context.lang || "en";
+  const isHi = currentLang === "hi";
+  const handleToggleLang = propOnChangeLang || context.setLang;
   // Existing primary executor or sensible default
   const defaultPrimary: PersonContact = state.executorPrimary?.name ? state.executorPrimary : {
     name: state.familyMembers.find((f) => !f.isMinor)?.name || "",
@@ -122,43 +132,23 @@ export default function Step6Executors({
     >
       {/* Header */}
       <div>
-        <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: "0.35rem" }}>
-          <div
-            style={{
-              display: "inline-flex",
-              alignItems: "center",
-              gap: "0.4rem",
-              padding: "0.2rem 0.6rem",
-              borderRadius: "999px",
-              backgroundColor: "rgba(198, 83, 120, 0.12)",
-              color: "var(--color-gold)",
-              fontSize: "0.72rem",
-              fontWeight: 700,
-              textTransform: "uppercase",
-              letterSpacing: "0.05em",
-            }}
-          >
-            <span style={{ width: "5px", height: "5px", borderRadius: "50%", backgroundColor: "var(--color-gold)" }}></span>
-            Step 6 of 14 • Fiduciary Appointment
-          </div>
+        <div style={{ display: "flex", alignItems: "center", justifyContent: "flex-end", marginBottom: "0.35rem" }}>
           <div style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
+            <LanguageToggle size="sm" currentLang={currentLang} onToggle={handleToggleLang} />
             <AudioAssistantButton
               textToSpeak="Who will be the executor of your will? An executor is your trusted manager—like your spouse, brother, or friend—who ensures your instructions are carried out after you. Tap any family member or enter their name."
-              label="Listen / सुनें 🔊"
+              label={isHi ? "सुनें 🔊" : "Listen 🔊"}
             />
             <span style={{ fontSize: "0.75rem", color: "var(--color-slate)" }}>
-              ISA 1925 S.222 • Court Probate Representative
+              {isHi ? "कोर्ट प्रोबेट (वसीयत का आधिकारिक अदालती प्रमाणीकरण)" : "Court Probate (Official court certification of your Will)"}
             </span>
           </div>
         </div>
 
         <div style={{ display: "flex", alignItems: "baseline", gap: "0.65rem", flexWrap: "wrap" }}>
           <h2 style={{ fontSize: "1.45rem", fontWeight: 800, color: "var(--color-navy)", margin: 0, letterSpacing: "-0.02em" }}>
-            Appoint your Trusted Executors
+            {isHi ? "वसीयत प्रबंधक एवं निष्पादक नियुक्त करें" : "Appoint your Executor (The person responsible for carrying out your Will)"}
           </h2>
-          <span style={{ fontSize: "0.88rem", color: "var(--color-gold)", fontWeight: 600 }}>
-            (वसीयत प्रबंधक एवं निष्पादक)
-          </span>
         </div>
       </div>
 
@@ -208,10 +198,10 @@ export default function Step6Executors({
                 </div>
                 <div>
                   <h3 style={{ margin: 0, fontSize: "1.02rem", fontWeight: 700, color: "var(--color-navy)" }}>
-                    Primary Executor
+                    {isHi ? "प्राथमिक एग्जीक्यूटर (वसीयत लागू कराने वाला मुख्य व्यक्ति)" : "Primary Executor (The person responsible for carrying out your Will)"}
                   </h3>
                   <span style={{ fontSize: "0.75rem", color: "var(--color-slate)" }}>
-                    First in line to administer estate
+                    {isHi ? "वसीयत की शर्तों को कानूनी रूप से पूरा करने वाला मुख्य प्रबंधक" : "First in line to administer estate and distribute assets"}
                   </span>
                 </div>
               </div>
@@ -409,10 +399,10 @@ export default function Step6Executors({
                 </div>
                 <div>
                   <h3 style={{ margin: 0, fontSize: "1.02rem", fontWeight: 700, color: "var(--color-navy)" }}>
-                    Alternate / Backup Executor
+                    {isHi ? "वैकल्पिक एग्जीक्यूटर (मुख्य प्रबंधक के असमर्थ होने पर बैकअप)" : "Alternate / Backup Executor (Steps in if primary executor is unable to act)"}
                   </h3>
                   <span style={{ fontSize: "0.75rem", color: "var(--color-slate)" }}>
-                    Steps in if primary is unable to act
+                    {isHi ? "यदि प्राथमिक एग्जीक्यूटर पहले गुजर जाएं या कार्यभार न संभाल पाएं" : "Guarantees continuous estate management without court delay"}
                   </span>
                 </div>
               </div>

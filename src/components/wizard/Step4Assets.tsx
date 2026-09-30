@@ -32,12 +32,16 @@ import {
   ChevronUp,
 } from "lucide-react";
 import AudioAssistantButton from "@/components/ui/AudioAssistantButton";
+import LanguageToggle from "@/components/ui/LanguageToggle";
+import { useLanguage } from "@/context/LanguageContext";
 
 interface Step4AssetsProps {
   state: WillDraftingState;
   onUpdate: (updater: (prev: WillDraftingState) => WillDraftingState) => void;
   onNext: () => void;
   onBack: () => void;
+  lang?: "en" | "hi";
+  onChangeLang?: (lang: "en" | "hi") => void;
 }
 
 export default function Step4Assets({
@@ -45,7 +49,14 @@ export default function Step4Assets({
   onUpdate,
   onNext,
   onBack,
+  lang: propLang,
+  onChangeLang: propOnChangeLang,
 }: Step4AssetsProps) {
+  const context = useLanguage();
+  const currentLang = propLang || context.lang || "en";
+  const isHi = currentLang === "hi";
+  const handleToggleLang = propOnChangeLang || context.setLang;
+
   const [assets, setAssets] = useState<Asset[]>(state.assets || []);
   const [modalOpen, setModalOpen] = useState(false);
   const [activeFilter, setActiveFilter] = useState<string>("all");
@@ -303,28 +314,22 @@ export default function Step4Assets({
       {/* Compact Header with Stats & Actions */}
       <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: "0.75rem" }}>
         <div>
-          <div style={{ display: "inline-flex", alignItems: "center", gap: "0.4rem", padding: "0.2rem 0.65rem", borderRadius: "999px", backgroundColor: "rgba(198, 83, 120, 0.12)", color: "var(--color-gold)", fontSize: "0.72rem", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.05em", marginBottom: "0.25rem" }}>
-            <span style={{ width: "6px", height: "6px", borderRadius: "50%", backgroundColor: "var(--color-gold)" }}></span>
-            Step 4 of 14 • Assets & Wealth Register
-          </div>
           <div style={{ display: "flex", alignItems: "baseline", gap: "0.65rem", flexWrap: "wrap" }}>
             <h2 style={{ fontSize: "1.45rem", fontWeight: 800, color: "var(--color-navy)", margin: 0, letterSpacing: "-0.02em" }}>
-              Catalog Your Wealth Portfolio
+              {isHi ? "अपनी सभी संपत्तियों को दर्ज करें" : "Catalog Your Wealth Portfolio"}
             </h2>
-            <span style={{ fontSize: "0.88rem", color: "var(--color-gold)", fontWeight: 600 }}>
-              (संपत्ति, बैंक खाता, सोना एवं शेयर)
-            </span>
             <span style={{ fontSize: "0.82rem", fontWeight: 700, color: "var(--color-gold)", backgroundColor: "rgba(198, 83, 120, 0.12)", padding: "0.15rem 0.55rem", borderRadius: "999px" }}>
-              Total: {formatCurrency(totalAssetValue)} ({assets.length} items)
+              {isHi ? "कुल मूल्य" : "Total"}: {formatCurrency(totalAssetValue)} ({assets.length} {isHi ? "मदें" : "items"})
             </span>
           </div>
         </div>
 
-        {/* Audio Assistant & Add Asset Button */}
+        {/* Language Toggle, Audio Assistant & Add Asset Button */}
         <div style={{ display: "flex", alignItems: "center", gap: "0.5rem", flexWrap: "wrap" }}>
+          <LanguageToggle size="sm" currentLang={currentLang} onToggle={handleToggleLang} />
           <AudioAssistantButton
             textToSpeak="What assets do you own? Tap the Add Asset button to add your house, bank accounts, gold, shares, startup equity, vehicles, or insurance. You can specify exact account numbers and values."
-            label="Listen / सुनें 🔊"
+            label={isHi ? "सुनें 🔊" : "Listen 🔊"}
           />
           <button
             type="button"
@@ -342,7 +347,7 @@ export default function Step4Assets({
               cursor: "pointer",
             }}
           >
-            <Plus size={14} /> + Add Asset
+            <Plus size={14} /> {isHi ? "+ नई संपत्ति जोड़ें" : "+ Add Asset"}
           </button>
         </div>
       </div>
@@ -1160,7 +1165,7 @@ export default function Step4Assets({
                     Has active home loan / mortgage encumbrance
                   </div>
                   <div style={{ fontSize: "0.725rem", color: "var(--color-slate)" }}>
-                    Directs executor on clearance of liabilities under Section 325 ISA
+                    Guides executor on clearing debts and loan payments before distribution
                   </div>
                 </div>
                 <AppleSwitch checked={hasLoan} onChange={setHasLoan} />

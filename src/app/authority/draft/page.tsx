@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+import { INDIAN_STATES_AND_UTS } from "@/lib/pincode";
 
 export default function AuthorityDraftPage() {
   const [formData, setFormData] = useState({
@@ -91,15 +92,20 @@ export default function AuthorityDraftPage() {
               <label className="form-label" style={{ fontSize: "0.8rem", marginBottom: "0.2rem" }}>
                 State *
               </label>
-              <input
+              <select
                 name="state"
-                type="text"
                 required
                 value={formData.state}
                 onChange={handleChange}
                 className="form-input"
-                style={{ fontSize: "0.85rem", padding: "0.5rem" }}
-              />
+                style={{ fontSize: "0.85rem", padding: "0.5rem", cursor: "pointer" }}
+              >
+                {INDIAN_STATES_AND_UTS.map((st) => (
+                  <option key={st} value={st}>
+                    {st}
+                  </option>
+                ))}
+              </select>
             </div>
           </div>
 

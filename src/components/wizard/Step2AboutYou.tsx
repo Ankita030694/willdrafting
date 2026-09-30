@@ -21,12 +21,18 @@ import {
   Briefcase,
 } from "lucide-react";
 import AudioAssistantButton from "@/components/ui/AudioAssistantButton";
+import LanguageToggle from "@/components/ui/LanguageToggle";
+import { useLanguage } from "@/context/LanguageContext";
+import { lookupStateFromPin, fetchPincodeDetails } from "@/lib/pincode";
+import StateDropdown from "@/components/ui/StateDropdown";
 
 interface Step2AboutYouProps {
   state: WillDraftingState;
   onUpdate: (updater: (prev: WillDraftingState) => WillDraftingState) => void;
   onNext: () => void;
   onBack: () => void;
+  lang?: "en" | "hi";
+  onChangeLang?: (lang: "en" | "hi") => void;
 }
 
 export default function Step2AboutYou({
@@ -34,9 +40,16 @@ export default function Step2AboutYou({
   onUpdate,
   onNext,
   onBack,
+  lang: propLang,
+  onChangeLang: propOnChangeLang,
 }: Step2AboutYouProps) {
+  const context = useLanguage();
+  const currentLang = propLang || context.lang || "en";
+  const isHi = currentLang === "hi";
+  const handleToggleLang = propOnChangeLang || context.setLang;
   const [formData, setFormData] = useState(state.testator);
   const [errorMsg, setErrorMsg] = useState("");
+  const [autoFilledState, setAutoFilledState] = useState(false);
 
   // Calculate approximate age from DOB or default to 45
   const calculateAgeFromDob = (dobStr: string) => {
@@ -58,6 +71,41 @@ export default function Step2AboutYou({
     setFormData((prev) => ({ ...prev, dob: newDob }));
   };
 
+  const handlePincodeChange = async (pinInput: string) => {
+    const cleanPin = pinInput.replace(/\D/g, "").slice(0, 6);
+    const detected = lookupStateFromPin(cleanPin);
+
+    setFormData((prev) => ({
+      ...prev,
+      pincode: cleanPin,
+      ...(detected?.state ? { state: detected.state } : {}),
+      ...(detected?.city && !prev.city ? { city: detected.city } : {}),
+    }));
+
+    if (detected?.state) {
+      setAutoFilledState(true);
+    }
+
+    if (cleanPin.length === 6) {
+      const details = await fetchPincodeDetails(cleanPin);
+      if (details) {
+        setFormData((prev) => ({
+          ...prev,
+          state: details.state || prev.state,
+          city: prev.city ? prev.city : details.city,
+        }));
+        if (details.state) {
+          setAutoFilledState(true);
+        }
+      }
+    }
+  };
+
+  const handleStateChange = (newSt: string) => {
+    setFormData((prev) => ({ ...prev, state: newSt }));
+    setAutoFilledState(false);
+  };
+
   const handleCityPreset = (city: string, st: string, pin: string) => {
     setFormData((prev) => ({
       ...prev,
@@ -65,6 +113,7 @@ export default function Step2AboutYou({
       state: st,
       pincode: pin,
     }));
+    setAutoFilledState(true);
   };
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -75,6 +124,15 @@ export default function Step2AboutYou({
     }
     if (!formData.dob) {
       setErrorMsg("Please provide your date of birth.");
+      return;
+    }
+    const cleanPhone = (formData.phone || "").replace(/\D/g, "");
+    if (!cleanPhone || cleanPhone.length !== 10) {
+      setErrorMsg(
+        isHi
+          ? "मोबाइल नंबर में ठीक 10 अंक होने चाहिए।"
+          : "Mobile number must contain exactly 10 digits."
+      );
       return;
     }
 
@@ -94,10 +152,10 @@ export default function Step2AboutYou({
     Icon: React.ElementType;
     desc: string;
   }[] = [
-    { id: "married", title: "Married", Icon: HeartHandshake, desc: "Spouse has statutory rights under personal law" },
-    { id: "single", title: "Single", Icon: User, desc: "Never married; parents/siblings as primary natural heirs" },
-    { id: "widowed", title: "Widowed", Icon: Heart, desc: "Children and lineal descendants inherit" },
-    { id: "divorced", title: "Divorced", Icon: FileX, desc: "Former spouse claims superseded by decree" },
+    { id: "married", title: "Married", Icon: HeartHandshake, desc: "Spouse has legal inheritance rights" },
+    { id: "single", title: "Single", Icon: User, desc: "Never married; parents or siblings as primary heirs" },
+    { id: "widowed", title: "Widowed", Icon: Heart, desc: "Children and direct family inherit" },
+    { id: "divorced", title: "Divorced", Icon: FileX, desc: "Former spouse claims are legally separated" },
   ];
 
   const religionOptions: {
@@ -113,13 +171,6 @@ export default function Step2AboutYou({
       description: "Governed by Hindu Succession Act 1956. Full testamentary freedom over self-acquired property.",
       badge: "HSA 1956",
       Icon: Scale,
-    },
-    {
-      id: "special_marriage_act",
-      title: "Special Marriage Act / Civil",
-      description: "Universal application of Indian Succession Act 1925 without personal law restrictions.",
-      badge: "SMA 1954",
-      Icon: HeartHandshake,
     },
     {
       id: "christian",
@@ -167,25 +218,23 @@ export default function Step2AboutYou({
       {/* Compact Header */}
       <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: "0.5rem" }}>
         <div>
-          <div style={{ display: "inline-flex", alignItems: "center", gap: "0.4rem", padding: "0.2rem 0.65rem", borderRadius: "999px", backgroundColor: "rgba(198, 83, 120, 0.12)", color: "var(--color-gold)", fontSize: "0.72rem", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.05em", marginBottom: "0.25rem" }}>
-            <Sparkles size={12} color="var(--color-gold)" />
-            Step 2 of 14 • Testator Identity
-          </div>
           <div style={{ display: "flex", alignItems: "center", gap: "0.75rem" }}>
             <h2 style={{ fontSize: "1.45rem", fontWeight: 800, color: "var(--color-navy)", margin: 0, letterSpacing: "-0.02em" }}>
-              Tell us about yourself
+              {isHi ? "अपनी व्यक्तिगत जानकारी दर्ज करें" : "Tell us about yourself"}
             </h2>
-            <span style={{ fontSize: "0.95rem", color: "var(--color-gold)", fontWeight: 600 }}>
-              (अपनी जानकारी दर्ज करें)
-            </span>
           </div>
         </div>
 
         <div style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
           <AudioAssistantButton
-            textToSpeak="Tell us about yourself. Your full legal name, parent's name, PAN number, and address are recorded so your identity cannot be contested. Simply tap and fill each field."
-            label="Listen / सुनें 🔊"
+            textToSpeak={
+              isHi
+                ? "अपने बारे में बताएं। आपका पूर्ण कानूनी नाम, माता-पिता का नाम, पैन और पता दर्ज किया जाता है ताकि आपकी पहचान पर विवाद न हो।"
+                : "Tell us about yourself. Your full legal name, parent's name, PAN number, and address are recorded so your identity cannot be contested. Simply tap and fill each field."
+            }
+            label={isHi ? "सुनें 🔊" : "Listen 🔊"}
           />
+          <LanguageToggle lang={currentLang} onChangeLang={handleToggleLang} size="sm" />
           <span
             style={{
               fontSize: "0.76rem",
@@ -199,7 +248,7 @@ export default function Step2AboutYou({
               gap: "0.3rem",
             }}
           >
-            <CheckCircle2 size={13} strokeWidth={2.5} /> S.59 ISA 1925 Qualified Adult
+            <CheckCircle2 size={13} strokeWidth={2.5} /> {isHi ? "कानूनी रूप से योग्य वयस्क (18+ वर्ष)" : "Legally Qualified Adult (18+ years)"}
           </span>
         </div>
       </div>
@@ -489,18 +538,32 @@ export default function Step2AboutYou({
 
             {/* 8. Mobile Phone */}
             <div className="flex flex-col min-w-0 w-full">
-              <label className="text-[11px] font-bold tracking-[0.14em] uppercase text-[#6B7280] mb-1.5">
-                Mobile Phone
+              <label className="text-[11px] font-bold tracking-[0.14em] uppercase text-[#6B7280] mb-1.5 flex items-center justify-between">
+                <span>{isHi ? "मोबाइल नंबर" : "Mobile Phone"}</span>
+                {formData.phone && formData.phone.length === 10 ? (
+                  <span className="text-[10px] text-emerald-600 font-semibold lowercase tracking-normal flex items-center gap-0.5">
+                    ✓ {isHi ? "10 अंक मान्य" : "10 digits valid"}
+                  </span>
+                ) : formData.phone && formData.phone.length > 0 ? (
+                  <span className="text-[10px] text-amber-600 font-medium lowercase tracking-normal">
+                    {formData.phone.length}/10 {isHi ? "अंक" : "digits"}
+                  </span>
+                ) : null}
               </label>
               <input
                 type="tel"
+                inputMode="numeric"
+                pattern="[0-9]*"
+                maxLength={10}
                 name="phone"
-                placeholder="+91 98100 45210"
+                placeholder="9820098765"
                 value={formData.phone}
-                onChange={(e) =>
-                  setFormData({ ...formData, phone: e.target.value })
-                }
-                className="w-full bg-transparent border-0 border-b border-[#D1D5DB] focus:border-[#111827] focus:ring-0 px-0 py-2 text-[15px] text-[#111827] placeholder:text-[#9CA3AF] placeholder:font-light outline-none transition-colors rounded-none shadow-none"
+                onChange={(e) => {
+                  const digits = e.target.value.replace(/\D/g, "").slice(0, 10);
+                  setFormData({ ...formData, phone: digits });
+                  if (errorMsg && digits.length === 10) setErrorMsg("");
+                }}
+                className="w-full bg-transparent border-0 border-b border-[#D1D5DB] focus:border-[#111827] focus:ring-0 px-0 py-2 text-[15px] text-[#111827] placeholder:text-[#9CA3AF] placeholder:font-light outline-none transition-colors rounded-none shadow-none font-medium"
                 style={{
                   borderTop: "none",
                   borderLeft: "none",
@@ -511,6 +574,11 @@ export default function Step2AboutYou({
                   backgroundColor: "transparent",
                 }}
               />
+              {formData.phone && formData.phone.length > 0 && formData.phone.length < 10 && (
+                <span className="text-[11px] text-red-500 font-medium mt-1">
+                  {isHi ? "मोबाइल नंबर में ठीक 10 अंक होने चाहिए।" : "Mobile number must contain exactly 10 digits."}
+                </span>
+              )}
             </div>
 
             {/* 9. Email Address */}
@@ -565,10 +633,38 @@ export default function Step2AboutYou({
               />
             </div>
 
-            {/* 11. City */}
+            {/* 11. PIN Code */}
+            <div className="flex flex-col min-w-0 w-full">
+              <label className="text-[11px] font-bold tracking-[0.14em] uppercase text-[#6B7280] mb-1.5 flex items-center justify-between">
+                <span>{isHi ? "पिन कोड" : "PIN Code"}</span>
+                <span className="text-[10px] text-emerald-600 font-semibold tracking-normal normal-case">
+                  {isHi ? "राज्य स्वतः भरेगा" : "Auto-fills State"}
+                </span>
+              </label>
+              <input
+                type="text"
+                name="pincode"
+                maxLength={6}
+                value={formData.pincode}
+                onChange={(e) => handlePincodeChange(e.target.value)}
+                placeholder="400072"
+                className="w-full bg-transparent border-0 border-b border-[#D1D5DB] focus:border-[#111827] focus:ring-0 px-0 py-2 text-[15px] text-[#111827] placeholder:text-[#9CA3AF] placeholder:font-light outline-none transition-colors rounded-none shadow-none font-medium"
+                style={{
+                  borderTop: "none",
+                  borderLeft: "none",
+                  borderRight: "none",
+                  borderRadius: 0,
+                  paddingLeft: 0,
+                  paddingRight: 0,
+                  backgroundColor: "transparent",
+                }}
+              />
+            </div>
+
+            {/* 12. City */}
             <div className="flex flex-col min-w-0 w-full">
               <label className="text-[11px] font-bold tracking-[0.14em] uppercase text-[#6B7280] mb-1.5">
-                City
+                {isHi ? "शहर / जिला" : "City"}
               </label>
               <input
                 type="text"
@@ -577,7 +673,7 @@ export default function Step2AboutYou({
                 onChange={(e) =>
                   setFormData({ ...formData, city: e.target.value })
                 }
-                placeholder="Gurugram"
+                placeholder="Mumbai"
                 className="w-full bg-transparent border-0 border-b border-[#D1D5DB] focus:border-[#111827] focus:ring-0 px-0 py-2 text-[15px] text-[#111827] placeholder:text-[#9CA3AF] placeholder:font-light outline-none transition-colors rounded-none shadow-none"
                 style={{
                   borderTop: "none",
@@ -591,55 +687,21 @@ export default function Step2AboutYou({
               />
             </div>
 
-            {/* 12. State */}
+            {/* 13. State (Standard Dropdown) */}
             <div className="flex flex-col min-w-0 w-full">
-              <label className="text-[11px] font-bold tracking-[0.14em] uppercase text-[#6B7280] mb-1.5">
-                State
+              <label className="text-[11px] font-bold tracking-[0.14em] uppercase text-[#6B7280] mb-1.5 flex items-center justify-between">
+                <span>{isHi ? "राज्य" : "State"}</span>
+                {autoFilledState && (
+                  <span className="text-[10px] text-emerald-600 font-semibold tracking-normal normal-case flex items-center gap-1">
+                    ✓ {isHi ? "पिन से स्वतः भरा" : "Auto-filled from PIN"}
+                  </span>
+                )}
               </label>
-              <input
-                type="text"
-                name="state"
+              <StateDropdown
                 value={formData.state}
-                onChange={(e) =>
-                  setFormData({ ...formData, state: e.target.value })
-                }
-                placeholder="Haryana"
-                className="w-full bg-transparent border-0 border-b border-[#D1D5DB] focus:border-[#111827] focus:ring-0 px-0 py-2 text-[15px] text-[#111827] placeholder:text-[#9CA3AF] placeholder:font-light outline-none transition-colors rounded-none shadow-none"
-                style={{
-                  borderTop: "none",
-                  borderLeft: "none",
-                  borderRight: "none",
-                  borderRadius: 0,
-                  paddingLeft: 0,
-                  paddingRight: 0,
-                  backgroundColor: "transparent",
-                }}
-              />
-            </div>
-
-            {/* 13. PIN Code */}
-            <div className="flex flex-col min-w-0 w-full">
-              <label className="text-[11px] font-bold tracking-[0.14em] uppercase text-[#6B7280] mb-1.5">
-                PIN Code
-              </label>
-              <input
-                type="text"
-                name="pincode"
-                value={formData.pincode}
-                onChange={(e) =>
-                  setFormData({ ...formData, pincode: e.target.value })
-                }
-                placeholder="122002"
-                className="w-full bg-transparent border-0 border-b border-[#D1D5DB] focus:border-[#111827] focus:ring-0 px-0 py-2 text-[15px] text-[#111827] placeholder:text-[#9CA3AF] placeholder:font-light outline-none transition-colors rounded-none shadow-none"
-                style={{
-                  borderTop: "none",
-                  borderLeft: "none",
-                  borderRight: "none",
-                  borderRadius: 0,
-                  paddingLeft: 0,
-                  paddingRight: 0,
-                  backgroundColor: "transparent",
-                }}
+                onChange={handleStateChange}
+                autoFilled={autoFilledState}
+                placeholder={isHi ? "राज्य चुनें" : "Select State"}
               />
             </div>
 
@@ -743,91 +805,6 @@ export default function Step2AboutYou({
                 })}
               </div>
             </div>
-
-            {/* Personal Law / Succession Act Framework */}
-            <div className="flex flex-col min-w-0 w-full">
-              <div className="flex flex-wrap justify-between items-center gap-1 mb-2">
-                <label className="text-[11px] font-bold tracking-[0.14em] uppercase text-[#6B7280]">
-                  Personal Law / Succession Act Framework
-                </label>
-                <span className="text-[11px] text-[#9CA3AF]">
-                  Governing jurisprudence
-                </span>
-              </div>
-
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
-                {religionOptions.map((opt) => {
-                  const isSel = formData.religionPersonalLaw === opt.id;
-                  const OptIcon = opt.Icon;
-                  return (
-                    <div
-                      key={opt.id}
-                      onClick={() =>
-                        setFormData({
-                          ...formData,
-                          religionPersonalLaw: opt.id,
-                        })
-                      }
-                      style={{
-                        borderRadius: "10px",
-                        border: isSel
-                          ? "1.5px solid var(--color-gold)"
-                          : "1px solid #E5E7EB",
-                        backgroundColor: isSel
-                          ? "rgba(198, 83, 120, 0.06)"
-                          : "transparent",
-                        padding: "0.55rem 0.65rem",
-                        cursor: "pointer",
-                        display: "flex",
-                        alignItems: "center",
-                        justifyContent: "space-between",
-                        gap: "0.35rem",
-                        transition: "all 0.15s ease",
-                      }}
-                    >
-                      <div
-                        style={{
-                          display: "flex",
-                          alignItems: "center",
-                          gap: "0.4rem",
-                          minWidth: 0,
-                        }}
-                      >
-                        <OptIcon
-                          size={14}
-                          color={isSel ? "var(--color-gold)" : "#6B7280"}
-                        />
-                        <span
-                          style={{
-                            fontSize: "0.78rem",
-                            fontWeight: 700,
-                            color: "#111827",
-                            whiteSpace: "nowrap",
-                            overflow: "hidden",
-                            textOverflow: "ellipsis",
-                          }}
-                        >
-                          {opt.title.split("/")[0].trim()}
-                        </span>
-                      </div>
-                      <span
-                        style={{
-                          fontSize: "0.6rem",
-                          fontWeight: 700,
-                          padding: "0.1rem 0.35rem",
-                          borderRadius: "4px",
-                          backgroundColor: "rgba(95, 126, 117, 0.14)",
-                          color: "var(--color-sage)",
-                          flexShrink: 0,
-                        }}
-                      >
-                        {opt.badge}
-                      </span>
-                    </div>
-                  );
-                })}
-              </div>
-            </div>
           </div>
 
           {/* Row: Prior Testamentary Documents & Statutory Revocation Clause (2 columns on desktop, 1 on mobile) */}
@@ -835,10 +812,12 @@ export default function Step2AboutYou({
             <div className="flex justify-between items-center gap-3 min-w-0">
               <div className="min-w-0">
                 <div className="text-[11px] font-bold tracking-[0.14em] uppercase text-[#111827]">
-                  Prior Testamentary Documents
+                  {isHi ? "पूर्व वसीयत दस्तावेज" : "Prior Testamentary Documents (Previous Wills)"}
                 </div>
                 <div className="text-xs text-[#6B7280] mt-0.5">
-                  Have you previously executed a Will or Codicil?
+                  {isHi
+                    ? "क्या आपने पहले कभी कोई वसीयत या कोडीसिल (मौजूदा वसीयत में बदलाव करने वाला कानूनी दस्तावेज) बनाई है?"
+                    : "Have you previously executed a Will or Codicil (a legal document used to make changes to an existing Will)?"}
                 </div>
               </div>
               <AppleSwitch
@@ -852,10 +831,14 @@ export default function Step2AboutYou({
             <div className="flex justify-between items-center gap-3 min-w-0">
               <div className="min-w-0">
                 <div className="text-[11px] font-bold tracking-[0.14em] uppercase text-[#111827]">
-                  Statutory Revocation Clause (S.62 ISA)
+                  {isHi
+                    ? "निरस्तीकरण खंड / Revocation Clause (पुरानी वसीयतें रद्द करने का नियम)"
+                    : "Revocation Clause (Officially cancels any previous Wills or drafts)"}
                 </div>
                 <div className="text-xs text-[#6B7280] mt-0.5">
-                  Explicitly revoke all prior testamentary instruments
+                  {isHi
+                    ? "पुरानी सभी पूर्व वसीयतों को औपचारिक रूप से निरस्त करें"
+                    : "Automatically cancels and replaces any previous wills or drafts"}
                 </div>
               </div>
               <AppleSwitch
@@ -887,7 +870,7 @@ export default function Step2AboutYou({
               cursor: "pointer",
             }}
           >
-            ← Back
+            {isHi ? "← पीछे जाएं" : "← Back"}
           </button>
 
           <button
@@ -902,7 +885,7 @@ export default function Step2AboutYou({
               cursor: "pointer",
             }}
           >
-            Save & Continue to Family →
+            {isHi ? "सहेजें और परिवार विवरण पर आगे बढ़ें →" : "Save & Continue to Family →"}
           </button>
         </div>
       </form>

@@ -377,9 +377,9 @@ export default function AnnualReviewTab({ state, onStateChange }: AnnualReviewTa
                 {!isVerified && (
                   <Link
                     href={
-                      item.editStep === 1
+                      item.editStep <= 1
                         ? "/start"
-                        : `/start/${String(item.editStep).padStart(2, "0")}`
+                        : `/start/${String(item.editStep - 1).padStart(2, "0")}`
                     }
                     style={{
                       fontSize: "0.825rem",
