@@ -57,11 +57,27 @@ export default function Step3Family({
   const [email, setEmail] = useState("");
   const [pan, setPan] = useState("");
   const [sameAddress, setSameAddress] = useState(true);
+  const [customAddress, setCustomAddress] = useState("");
+  const [customRelation, setCustomRelation] = useState("");
+  const [modalGroup, setModalGroup] = useState<"parents" | "peers" | "children">("peers");
 
   // Open modal with preselected relation
-  const handleOpenAdd = (defaultRel?: FamilyMember["relationship"]) => {
+  const handleOpenAdd = (
+    defaultRel?: FamilyMember["relationship"],
+    group?: "parents" | "peers" | "children"
+  ) => {
     const rel = defaultRel || "spouse";
     setRelationship(rel);
+    if (group) {
+      setModalGroup(group);
+    } else if (rel === "father" || rel === "mother") {
+      setModalGroup("parents");
+    } else if (rel === "son" || rel === "daughter") {
+      setModalGroup("children");
+    } else {
+      setModalGroup("peers");
+    }
+
     // Sensible default age based on relation
     if (rel === "father" || rel === "mother") setAgeSlider(68);
     else if (rel === "son" || rel === "daughter") setAgeSlider(14);
@@ -69,12 +85,14 @@ export default function Step3Family({
     else setAgeSlider(38);
 
     setName("");
+    setCustomRelation("");
     setUseExactDob(false);
     setExactDob("");
     setPhone("");
     setEmail("");
     setPan("");
     setSameAddress(true);
+    setCustomAddress("");
     setModalOpen(true);
   };
 
@@ -94,12 +112,19 @@ export default function Step3Family({
       id: `fam-${Date.now()}`,
       name: name.trim(),
       relationship,
+      customRelationship:
+        relationship === "other" && customRelation.trim()
+          ? customRelation.trim()
+          : undefined,
       dob: finalDob,
       isMinor,
       pan: pan.trim() ? pan.trim().toUpperCase() : undefined,
       phone: phone.trim() || undefined,
       email: email.trim() || undefined,
-      address: sameAddress ? "Same as testator" : undefined,
+      address: sameAddress
+        ? "Same as testator"
+        : customAddress.trim() || undefined,
+      notes: relationship === "other" ? modalGroup : undefined,
     };
 
     const updatedFamily = [...family, newMember];
@@ -143,13 +168,32 @@ export default function Step3Family({
     other: { label: "Other Relative", Icon: User, color: "#64748B", desc: "Extended Family" },
   };
 
+  const allowedRelations: FamilyMember["relationship"][] =
+    modalGroup === "parents"
+      ? ["father", "mother", "other"]
+      : modalGroup === "children"
+      ? ["son", "daughter", "other"]
+      : ["spouse", "brother", "sister", "other"];
+
   // Group into generations for visual tree
-  const parents = family.filter((f) => f.relationship === "father" || f.relationship === "mother");
+  const parents = family.filter(
+    (f) =>
+      f.relationship === "father" ||
+      f.relationship === "mother" ||
+      (f.relationship === "other" && f.notes === "parents")
+  );
   const immediate = family.filter(
-    (f) => f.relationship === "spouse" || f.relationship === "brother" || f.relationship === "sister"
+    (f) =>
+      f.relationship === "spouse" ||
+      f.relationship === "brother" ||
+      f.relationship === "sister" ||
+      (f.relationship === "other" && f.notes === "peers")
   );
   const children = family.filter(
-    (f) => f.relationship === "son" || f.relationship === "daughter" || f.relationship === "other"
+    (f) =>
+      f.relationship === "son" ||
+      f.relationship === "daughter" ||
+      (f.relationship === "other" && (!f.notes || f.notes === "children"))
   );
 
   return (
@@ -174,88 +218,12 @@ export default function Step3Family({
           </div>
         </div>
 
-        {/* Quick Add Buttons with Audio Assistant */}
+        {/* Audio Assistant */}
         <div style={{ display: "flex", flexWrap: "wrap", gap: "0.4rem", alignItems: "center" }}>
           <AudioAssistantButton
             textToSpeak="Who is in your family? Tap the quick buttons to add your spouse, children, parents, or siblings. We will help you assign your assets to them in the next steps."
             label="Listen / सुनें 🔊"
           />
-          <button
-            type="button"
-            onClick={() => handleOpenAdd("spouse")}
-            style={{
-              padding: "0.45rem 0.85rem",
-              borderRadius: "10px",
-              backgroundColor: "rgba(225, 29, 72, 0.08)",
-              border: "1px solid rgba(225, 29, 72, 0.2)",
-              color: "#BE123C",
-              fontSize: "0.8rem",
-              fontWeight: 700,
-              cursor: "pointer",
-              display: "inline-flex",
-              alignItems: "center",
-              gap: "0.35rem",
-            }}
-          >
-            <Heart size={13} /> + Spouse (पति/पत्नी)
-          </button>
-          <button
-            type="button"
-            onClick={() => handleOpenAdd("son")}
-            style={{
-              padding: "0.45rem 0.85rem",
-              borderRadius: "10px",
-              backgroundColor: "rgba(37, 99, 235, 0.08)",
-              border: "1px solid rgba(37, 99, 235, 0.2)",
-              color: "#1D4ED8",
-              fontSize: "0.8rem",
-              fontWeight: 700,
-              cursor: "pointer",
-              display: "inline-flex",
-              alignItems: "center",
-              gap: "0.35rem",
-            }}
-          >
-            <Baby size={13} /> + Child (बच्चे)
-          </button>
-          <button
-            type="button"
-            onClick={() => handleOpenAdd("father")}
-            style={{
-              padding: "0.45rem 0.85rem",
-              borderRadius: "10px",
-              backgroundColor: "rgba(124, 148, 115, 0.12)",
-              border: "1px solid rgba(124, 148, 115, 0.25)",
-              color: "var(--color-sage)",
-              fontSize: "0.8rem",
-              fontWeight: 700,
-              cursor: "pointer",
-              display: "inline-flex",
-              alignItems: "center",
-              gap: "0.35rem",
-            }}
-          >
-            <Users size={13} /> + Parent (माता-पिता)
-          </button>
-          <button
-            type="button"
-            onClick={() => handleOpenAdd("brother")}
-            style={{
-              padding: "0.45rem 0.95rem",
-              borderRadius: "10px",
-              backgroundColor: "var(--color-navy)",
-              border: "none",
-              color: "#FFFFFF",
-              fontSize: "0.8rem",
-              fontWeight: 700,
-              cursor: "pointer",
-              display: "inline-flex",
-              alignItems: "center",
-              gap: "0.35rem",
-            }}
-          >
-            <Plus size={13} /> + Custom Relative
-          </button>
         </div>
       </div>
 
@@ -602,19 +570,14 @@ export default function Step3Family({
                 <label style={{ display: "block", fontSize: "0.825rem", fontWeight: 700, color: "var(--color-navy)", marginBottom: "0.5rem" }}>
                   Relationship to You *
                 </label>
-                <div style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: "0.5rem" }}>
-                  {(
-                    [
-                      "spouse",
-                      "son",
-                      "daughter",
-                      "father",
-                      "mother",
-                      "brother",
-                      "sister",
-                      "other",
-                    ] as FamilyMember["relationship"][]
-                  ).map((rel) => {
+                <div
+                  style={{
+                    display: "grid",
+                    gridTemplateColumns: `repeat(${allowedRelations.length}, 1fr)`,
+                    gap: "0.5rem",
+                  }}
+                >
+                  {allowedRelations.map((rel) => {
                     const cfg = relConfig[rel];
                     const isSel = relationship === rel;
                     const RelIcon = cfg.Icon;
@@ -708,6 +671,39 @@ export default function Step3Family({
                   }}
                 />
               </div>
+
+              {/* Custom Relationship Field (shown when Other Relative is selected) */}
+              {relationship === "other" && (
+                <div>
+                  <label
+                    style={{
+                      display: "block",
+                      fontSize: "0.825rem",
+                      fontWeight: 700,
+                      color: "var(--color-navy)",
+                      marginBottom: "0.35rem",
+                    }}
+                  >
+                    Relationship with this Person *
+                  </label>
+                  <input
+                    type="text"
+                    required={relationship === "other"}
+                    placeholder="e.g., Grandfather, Maternal Uncle, Niece, Grandson, Family Friend"
+                    value={customRelation}
+                    onChange={(e) => setCustomRelation(e.target.value)}
+                    style={{
+                      width: "100%",
+                      padding: "0.75rem 1rem",
+                      borderRadius: "12px",
+                      border: "1px solid rgba(27, 42, 74, 0.12)",
+                      fontSize: "0.95rem",
+                      color: "var(--color-navy)",
+                      outline: "none",
+                    }}
+                  />
+                </div>
+              )}
 
               {/* Interactive Age Slider with Legal Capacity Indicator */}
               <div
@@ -903,25 +899,59 @@ export default function Step3Family({
               </div>
 
               {/* Same Address Switch */}
-              <div
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "space-between",
-                  padding: "0.75rem 1rem",
-                  borderRadius: "12px",
-                  backgroundColor: "rgba(27, 42, 74, 0.03)",
-                }}
-              >
-                <div>
-                  <div style={{ fontSize: "0.825rem", fontWeight: 700, color: "var(--color-navy)" }}>
-                    Resides at your address
+              <div style={{ display: "flex", flexDirection: "column", gap: "0.75rem" }}>
+                <div
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "space-between",
+                    padding: "0.75rem 1rem",
+                    borderRadius: "12px",
+                    backgroundColor: "rgba(27, 42, 74, 0.03)",
+                  }}
+                >
+                  <div>
+                    <div style={{ fontSize: "0.825rem", fontWeight: 700, color: "var(--color-navy)" }}>
+                      Resides at your address
+                    </div>
+                    <div style={{ fontSize: "0.725rem", color: "var(--color-slate)" }}>
+                      Uses same permanent residence as testator
+                    </div>
                   </div>
-                  <div style={{ fontSize: "0.725rem", color: "var(--color-slate)" }}>
-                    Uses same permanent residence as testator
-                  </div>
+                  <AppleSwitch checked={sameAddress} onChange={setSameAddress} />
                 </div>
-                <AppleSwitch checked={sameAddress} onChange={setSameAddress} />
+
+                {!sameAddress && (
+                  <div>
+                    <label
+                      style={{
+                        display: "block",
+                        fontSize: "0.775rem",
+                        fontWeight: 700,
+                        color: "var(--color-navy)",
+                        marginBottom: "0.3rem",
+                      }}
+                    >
+                      Residential Address *
+                    </label>
+                    <input
+                      type="text"
+                      required={!sameAddress}
+                      placeholder="House/Flat No., Street, City, State & PIN Code"
+                      value={customAddress}
+                      onChange={(e) => setCustomAddress(e.target.value)}
+                      style={{
+                        width: "100%",
+                        padding: "0.65rem 0.85rem",
+                        borderRadius: "10px",
+                        border: "1px solid rgba(27, 42, 74, 0.12)",
+                        fontSize: "0.85rem",
+                        color: "var(--color-navy)",
+                        outline: "none",
+                      }}
+                    />
+                  </div>
+                )}
               </div>
 
               {/* Submit Buttons */}
@@ -1018,7 +1048,9 @@ export default function Step3Family({
                   borderRadius: "999px",
                 }}
               >
-                {cfg.label}
+                {member.relationship === "other" && member.customRelationship
+                  ? member.customRelationship
+                  : cfg.label}
               </span>
 
               <span

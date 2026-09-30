@@ -182,43 +182,16 @@ export default function Step6Executors({
         </div>
       )}
 
-      {/* Main 2-Column Grid */}
+      {/* Single Unified Full-Width Form Container matching Step 2 About You */}
       <form
         onSubmit={handleSubmit}
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          flex: 1,
-          minHeight: 0,
-          justifyContent: "space-between",
-          gap: "0.75rem",
-        }}
+        className="w-full flex-1 min-h-0 flex flex-col gap-4 overflow-x-hidden"
       >
-        <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: "1fr 1fr",
-            gap: "1.25rem",
-            flex: 1,
-            minHeight: 0,
-          }}
-        >
-          {/* Primary Executor Column */}
-          <div
-            style={{
-              background: "#FFFFFF",
-              borderRadius: "20px",
-              border: "1px solid rgba(27, 42, 74, 0.08)",
-              boxShadow: "0 4px 20px rgba(27, 42, 74, 0.03)",
-              padding: "1.15rem 1.35rem",
-              display: "flex",
-              flexDirection: "column",
-              gap: "0.85rem",
-              overflowY: "auto",
-            }}
-          >
-            <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-              <div style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
+        <div className="w-full flex-1 min-h-0 overflow-y-auto overflow-x-hidden bg-white rounded-[20px] border border-[#172228]/10 p-4 sm:p-6 lg:px-8 lg:py-6 shadow-sm flex flex-col gap-7">
+          {/* Primary Executor Section */}
+          <div className="flex flex-col gap-5 w-full min-w-0">
+            <div className="flex flex-wrap justify-between items-center gap-3 pb-3 border-b border-[#E5E7EB]">
+              <div className="flex items-center gap-2.5">
                 <div
                   style={{
                     width: "32px",
@@ -234,7 +207,7 @@ export default function Step6Executors({
                   <Award size={18} />
                 </div>
                 <div>
-                  <h3 style={{ margin: 0, fontSize: "1.05rem", fontWeight: 700, color: "var(--color-navy)" }}>
+                  <h3 style={{ margin: 0, fontSize: "1.02rem", fontWeight: 700, color: "var(--color-navy)" }}>
                     Primary Executor
                   </h3>
                   <span style={{ fontSize: "0.75rem", color: "var(--color-slate)" }}>
@@ -242,64 +215,68 @@ export default function Step6Executors({
                   </span>
                 </div>
               </div>
-              <span
-                style={{
-                  fontSize: "0.7rem",
-                  fontWeight: 700,
-                  padding: "0.15rem 0.5rem",
-                  borderRadius: "999px",
-                  backgroundColor: "rgba(124, 148, 115, 0.15)",
-                  color: "var(--color-sage)",
-                  display: "inline-flex",
-                  alignItems: "center",
-                  gap: "0.25rem",
-                }}
-              >
-                <CheckCircle2 size={11} /> Required
-              </span>
+
+              <div className="flex flex-wrap items-center gap-2">
+                {/* Quick 1-click select chips */}
+                {adultFamily.length > 0 && (
+                  <div className="flex flex-wrap items-center gap-1.5">
+                    <span className="text-[11px] font-bold tracking-[0.12em] uppercase text-[#6B7280] mr-1">
+                      Quick Select:
+                    </span>
+                    {adultFamily.map((f) => {
+                      const isSel = primary.name === f.name;
+                      return (
+                        <button
+                          type="button"
+                          key={f.id}
+                          onClick={() => handleSelectPrimaryFromFamily(f)}
+                          style={{
+                            padding: "0.22rem 0.6rem",
+                            borderRadius: "999px",
+                            border: isSel ? "1.5px solid var(--color-gold)" : "1px solid #E5E7EB",
+                            backgroundColor: isSel ? "rgba(198, 83, 120, 0.1)" : "rgba(23, 34, 40, 0.03)",
+                            cursor: "pointer",
+                            display: "inline-flex",
+                            alignItems: "center",
+                            gap: "0.3rem",
+                            fontSize: "0.73rem",
+                            fontWeight: isSel ? 700 : 500,
+                            color: isSel ? "var(--color-gold)" : "var(--color-navy)",
+                          }}
+                        >
+                          <span>{f.name}</span>
+                          <span style={{ fontSize: "0.66rem", color: "var(--color-slate)" }}>
+                            ({f.relationship})
+                          </span>
+                          {isSel && <CheckCircle2 size={12} color="var(--color-gold)" />}
+                        </button>
+                      );
+                    })}
+                  </div>
+                )}
+
+                <span
+                  style={{
+                    fontSize: "0.7rem",
+                    fontWeight: 700,
+                    padding: "0.15rem 0.55rem",
+                    borderRadius: "999px",
+                    backgroundColor: "rgba(124, 148, 115, 0.15)",
+                    color: "var(--color-sage)",
+                    display: "inline-flex",
+                    alignItems: "center",
+                    gap: "0.25rem",
+                  }}
+                >
+                  <CheckCircle2 size={11} /> Required
+                </span>
+              </div>
             </div>
 
-            {/* Quick 1-click select chips */}
-            {adultFamily.length > 0 && (
-              <div>
-                <span style={{ display: "block", fontSize: "0.75rem", fontWeight: 700, color: "var(--color-navy)", marginBottom: "0.35rem" }}>
-                  Quick select from adult family:
-                </span>
-                <div style={{ display: "flex", flexWrap: "wrap", gap: "0.4rem" }}>
-                  {adultFamily.map((f) => {
-                    const isSel = primary.name === f.name;
-                    return (
-                      <button
-                        type="button"
-                        key={f.id}
-                        onClick={() => handleSelectPrimaryFromFamily(f)}
-                        style={{
-                          padding: "0.35rem 0.65rem",
-                          borderRadius: "8px",
-                          border: isSel ? "1.5px solid var(--color-gold)" : "1px solid rgba(23, 34, 40, 0.12)",
-                          backgroundColor: isSel ? "rgba(198, 83, 120, 0.1)" : "#FAFAFA",
-                          cursor: "pointer",
-                          display: "inline-flex",
-                          alignItems: "center",
-                          gap: "0.35rem",
-                          fontSize: "0.75rem",
-                          fontWeight: isSel ? 700 : 500,
-                          color: "var(--color-navy)",
-                        }}
-                      >
-                        <span>{f.name}</span>
-                        <span style={{ fontSize: "0.68rem", color: "var(--color-slate)" }}>({f.relationship})</span>
-                        {isSel && <CheckCircle2 size={12} color="var(--color-gold)" />}
-                      </button>
-                    );
-                  })}
-                </div>
-              </div>
-            )}
-
-            <div style={{ display: "grid", gridTemplateColumns: "1.2fr 1fr", gap: "0.75rem" }}>
-              <div>
-                <label style={{ display: "block", fontSize: "0.75rem", fontWeight: 700, color: "var(--color-navy)", marginBottom: "0.3rem" }}>
+            {/* Primary Executor Fields (2 per row on desktop, 1 on mobile) */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-6 items-end w-full min-w-0">
+              <div className="flex flex-col min-w-0 w-full">
+                <label className="text-[11px] font-bold tracking-[0.14em] uppercase text-[#6B7280] mb-1.5">
                   Full Legal Name *
                 </label>
                 <input
@@ -308,19 +285,21 @@ export default function Step6Executors({
                   value={primary.name}
                   onChange={(e) => setPrimary({ ...primary, name: e.target.value })}
                   placeholder="e.g., Sunita Sharma"
+                  className="w-full bg-transparent border-0 border-b border-[#D1D5DB] focus:border-[#111827] focus:ring-0 px-0 py-2 text-[15px] text-[#111827] placeholder:text-[#9CA3AF] placeholder:font-light outline-none transition-colors rounded-none shadow-none"
                   style={{
-                    width: "100%",
-                    padding: "0.55rem 0.75rem",
-                    borderRadius: "10px",
-                    border: "1px solid rgba(27, 42, 74, 0.12)",
-                    fontSize: "0.85rem",
-                    color: "var(--color-navy)",
-                    outline: "none",
+                    borderTop: "none",
+                    borderLeft: "none",
+                    borderRight: "none",
+                    borderRadius: 0,
+                    paddingLeft: 0,
+                    paddingRight: 0,
+                    backgroundColor: "transparent",
                   }}
                 />
               </div>
-              <div>
-                <label style={{ display: "block", fontSize: "0.75rem", fontWeight: 700, color: "var(--color-navy)", marginBottom: "0.3rem" }}>
+
+              <div className="flex flex-col min-w-0 w-full">
+                <label className="text-[11px] font-bold tracking-[0.14em] uppercase text-[#6B7280] mb-1.5">
                   Relationship *
                 </label>
                 <input
@@ -329,22 +308,21 @@ export default function Step6Executors({
                   value={primary.relationship}
                   onChange={(e) => setPrimary({ ...primary, relationship: e.target.value })}
                   placeholder="e.g., Spouse / Adult Son"
+                  className="w-full bg-transparent border-0 border-b border-[#D1D5DB] focus:border-[#111827] focus:ring-0 px-0 py-2 text-[15px] text-[#111827] placeholder:text-[#9CA3AF] placeholder:font-light outline-none transition-colors rounded-none shadow-none"
                   style={{
-                    width: "100%",
-                    padding: "0.55rem 0.75rem",
-                    borderRadius: "10px",
-                    border: "1px solid rgba(27, 42, 74, 0.12)",
-                    fontSize: "0.85rem",
-                    color: "var(--color-navy)",
-                    outline: "none",
+                    borderTop: "none",
+                    borderLeft: "none",
+                    borderRight: "none",
+                    borderRadius: 0,
+                    paddingLeft: 0,
+                    paddingRight: 0,
+                    backgroundColor: "transparent",
                   }}
                 />
               </div>
-            </div>
 
-            <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "0.75rem" }}>
-              <div>
-                <label style={{ display: "block", fontSize: "0.75rem", fontWeight: 700, color: "var(--color-navy)", marginBottom: "0.3rem" }}>
+              <div className="flex flex-col min-w-0 w-full">
+                <label className="text-[11px] font-bold tracking-[0.14em] uppercase text-[#6B7280] mb-1.5">
                   Mobile Phone
                 </label>
                 <input
@@ -352,19 +330,21 @@ export default function Step6Executors({
                   value={primary.phone || ""}
                   onChange={(e) => setPrimary({ ...primary, phone: e.target.value })}
                   placeholder="+91 98100 45211"
+                  className="w-full bg-transparent border-0 border-b border-[#D1D5DB] focus:border-[#111827] focus:ring-0 px-0 py-2 text-[15px] text-[#111827] placeholder:text-[#9CA3AF] placeholder:font-light outline-none transition-colors rounded-none shadow-none"
                   style={{
-                    width: "100%",
-                    padding: "0.55rem 0.75rem",
-                    borderRadius: "10px",
-                    border: "1px solid rgba(27, 42, 74, 0.12)",
-                    fontSize: "0.85rem",
-                    color: "var(--color-navy)",
-                    outline: "none",
+                    borderTop: "none",
+                    borderLeft: "none",
+                    borderRight: "none",
+                    borderRadius: 0,
+                    paddingLeft: 0,
+                    paddingRight: 0,
+                    backgroundColor: "transparent",
                   }}
                 />
               </div>
-              <div>
-                <label style={{ display: "block", fontSize: "0.75rem", fontWeight: 700, color: "var(--color-navy)", marginBottom: "0.3rem" }}>
+
+              <div className="flex flex-col min-w-0 w-full">
+                <label className="text-[11px] font-bold tracking-[0.14em] uppercase text-[#6B7280] mb-1.5">
                   Email Address
                 </label>
                 <input
@@ -372,57 +352,47 @@ export default function Step6Executors({
                   value={primary.email || ""}
                   onChange={(e) => setPrimary({ ...primary, email: e.target.value })}
                   placeholder="executor@example.com"
+                  className="w-full bg-transparent border-0 border-b border-[#D1D5DB] focus:border-[#111827] focus:ring-0 px-0 py-2 text-[15px] text-[#111827] placeholder:text-[#9CA3AF] placeholder:font-light outline-none transition-colors rounded-none shadow-none"
                   style={{
-                    width: "100%",
-                    padding: "0.55rem 0.75rem",
-                    borderRadius: "10px",
-                    border: "1px solid rgba(27, 42, 74, 0.12)",
-                    fontSize: "0.85rem",
-                    color: "var(--color-navy)",
-                    outline: "none",
+                    borderTop: "none",
+                    borderLeft: "none",
+                    borderRight: "none",
+                    borderRadius: 0,
+                    paddingLeft: 0,
+                    paddingRight: 0,
+                    backgroundColor: "transparent",
+                  }}
+                />
+              </div>
+
+              <div className="flex flex-col min-w-0 w-full md:col-span-2">
+                <label className="text-[11px] font-bold tracking-[0.14em] uppercase text-[#6B7280] mb-1.5">
+                  Residential Address (Optional)
+                </label>
+                <input
+                  type="text"
+                  value={primary.address || ""}
+                  onChange={(e) => setPrimary({ ...primary, address: e.target.value })}
+                  placeholder="e.g., A-402, Green Glen Layout, Bengaluru"
+                  className="w-full bg-transparent border-0 border-b border-[#D1D5DB] focus:border-[#111827] focus:ring-0 px-0 py-2 text-[15px] text-[#111827] placeholder:text-[#9CA3AF] placeholder:font-light outline-none transition-colors rounded-none shadow-none"
+                  style={{
+                    borderTop: "none",
+                    borderLeft: "none",
+                    borderRight: "none",
+                    borderRadius: 0,
+                    paddingLeft: 0,
+                    paddingRight: 0,
+                    backgroundColor: "transparent",
                   }}
                 />
               </div>
             </div>
-
-            <div>
-              <label style={{ display: "block", fontSize: "0.75rem", fontWeight: 700, color: "var(--color-navy)", marginBottom: "0.3rem" }}>
-                Residential Address (Optional)
-              </label>
-              <input
-                type="text"
-                value={primary.address || ""}
-                onChange={(e) => setPrimary({ ...primary, address: e.target.value })}
-                placeholder="e.g., A-402, Green Glen Layout, Bengaluru"
-                style={{
-                  width: "100%",
-                  padding: "0.55rem 0.75rem",
-                  borderRadius: "10px",
-                  border: "1px solid rgba(27, 42, 74, 0.12)",
-                  fontSize: "0.85rem",
-                  color: "var(--color-navy)",
-                  outline: "none",
-                }}
-              />
-            </div>
           </div>
 
-          {/* Alternate Executor Column */}
-          <div
-            style={{
-              background: "#FFFFFF",
-              borderRadius: "20px",
-              border: "1px solid rgba(27, 42, 74, 0.08)",
-              boxShadow: "0 4px 20px rgba(27, 42, 74, 0.03)",
-              padding: "1.15rem 1.35rem",
-              display: "flex",
-              flexDirection: "column",
-              gap: "0.85rem",
-              overflowY: "auto",
-            }}
-          >
-            <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-              <div style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
+          {/* Alternate / Backup Executor Section */}
+          <div className="flex flex-col gap-5 w-full min-w-0 pt-2 border-t border-[#E5E7EB]">
+            <div className="flex flex-wrap justify-between items-center gap-3">
+              <div className="flex items-center gap-2.5">
                 <div
                   style={{
                     width: "32px",
@@ -438,7 +408,7 @@ export default function Step6Executors({
                   <UserCheck size={18} />
                 </div>
                 <div>
-                  <h3 style={{ margin: 0, fontSize: "1.05rem", fontWeight: 700, color: "var(--color-navy)" }}>
+                  <h3 style={{ margin: 0, fontSize: "1.02rem", fontWeight: 700, color: "var(--color-navy)" }}>
                     Alternate / Backup Executor
                   </h3>
                   <span style={{ fontSize: "0.75rem", color: "var(--color-slate)" }}>
@@ -446,60 +416,105 @@ export default function Step6Executors({
                   </span>
                 </div>
               </div>
-              <div style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
-                <span style={{ fontSize: "0.75rem", fontWeight: 600, color: hasAlternate ? "var(--color-navy)" : "var(--color-slate)" }}>
-                  {hasAlternate ? "Enabled" : "Disabled"}
-                </span>
-                <AppleSwitch checked={hasAlternate} onChange={setHasAlternate} />
+
+              <div className="flex flex-wrap items-center gap-3">
+                {hasAlternate && adultFamily.length > 0 && (
+                  <div className="flex flex-wrap items-center gap-1.5">
+                    <span className="text-[11px] font-bold tracking-[0.12em] uppercase text-[#6B7280] mr-1">
+                      Quick Select:
+                    </span>
+                    {adultFamily
+                      .filter((f) => f.name !== primary.name)
+                      .map((f) => {
+                        const isSel = alternate.name === f.name;
+                        return (
+                          <button
+                            type="button"
+                            key={f.id}
+                            onClick={() => handleSelectAlternateFromFamily(f)}
+                            style={{
+                              padding: "0.22rem 0.6rem",
+                              borderRadius: "999px",
+                              border: isSel ? "1.5px solid var(--color-gold)" : "1px solid #E5E7EB",
+                              backgroundColor: isSel ? "rgba(198, 83, 120, 0.1)" : "rgba(23, 34, 40, 0.03)",
+                              cursor: "pointer",
+                              display: "inline-flex",
+                              alignItems: "center",
+                              gap: "0.3rem",
+                              fontSize: "0.73rem",
+                              fontWeight: isSel ? 700 : 500,
+                              color: isSel ? "var(--color-gold)" : "var(--color-navy)",
+                            }}
+                          >
+                            <span>{f.name}</span>
+                            <span style={{ fontSize: "0.66rem", color: "var(--color-slate)" }}>
+                              ({f.relationship})
+                            </span>
+                            {isSel && <CheckCircle2 size={12} color="var(--color-gold)" />}
+                          </button>
+                        );
+                      })}
+                  </div>
+                )}
+
+                <div style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
+                  <span style={{ fontSize: "0.75rem", fontWeight: 600, color: hasAlternate ? "var(--color-navy)" : "var(--color-slate)" }}>
+                    {hasAlternate ? "Enabled" : "Disabled"}
+                  </span>
+                  <AppleSwitch checked={hasAlternate} onChange={setHasAlternate} />
+                </div>
               </div>
             </div>
 
             {!hasAlternate ? (
               <div
                 style={{
-                  flex: 1,
                   display: "flex",
-                  flexDirection: "column",
+                  flexWrap: "wrap",
                   alignItems: "center",
-                  justifyContent: "center",
-                  padding: "2rem 1.5rem",
-                  textAlign: "center",
+                  justifyContent: "space-between",
+                  gap: "1rem",
+                  padding: "1rem 1.25rem",
                   backgroundColor: "#FAFAFA",
                   borderRadius: "14px",
                   border: "1.5px dashed rgba(27, 42, 74, 0.12)",
                 }}
               >
-                <div
-                  style={{
-                    width: "44px",
-                    height: "44px",
-                    borderRadius: "50%",
-                    backgroundColor: "rgba(198, 83, 120, 0.12)",
-                    color: "var(--color-gold)",
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    marginBottom: "0.75rem",
-                  }}
-                >
-                  <Plus size={22} />
+                <div style={{ display: "flex", alignItems: "center", gap: "0.75rem" }}>
+                  <div
+                    style={{
+                      width: "36px",
+                      height: "36px",
+                      borderRadius: "50%",
+                      backgroundColor: "rgba(198, 83, 120, 0.12)",
+                      color: "var(--color-gold)",
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                      flexShrink: 0,
+                    }}
+                  >
+                    <Plus size={18} />
+                  </div>
+                  <div>
+                    <h4 style={{ margin: 0, fontSize: "0.9rem", fontWeight: 700, color: "var(--color-navy)" }}>
+                      No Alternate Executor Appointed
+                    </h4>
+                    <p style={{ margin: "0.15rem 0 0", fontSize: "0.76rem", color: "var(--color-slate)" }}>
+                      An alternate prevents court administration delay if your primary executor predeceases or cannot serve.
+                    </p>
+                  </div>
                 </div>
-                <h4 style={{ margin: "0 0 0.35rem", fontSize: "0.95rem", fontWeight: 700, color: "var(--color-navy)" }}>
-                  No Alternate Executor Appointed
-                </h4>
-                <p style={{ margin: "0 0 1rem", fontSize: "0.78rem", color: "var(--color-slate)", maxWidth: "300px" }}>
-                  An alternate prevents court administration delay if your primary executor predeceases or cannot serve.
-                </p>
                 <button
                   type="button"
                   onClick={() => setHasAlternate(true)}
                   style={{
                     padding: "0.45rem 1rem",
-                    borderRadius: "10px",
+                    borderRadius: "999px",
                     border: "1.5px solid var(--color-navy)",
                     backgroundColor: "#FFFFFF",
                     color: "var(--color-navy)",
-                    fontSize: "0.8rem",
+                    fontSize: "0.78rem",
                     fontWeight: 700,
                     cursor: "pointer",
                   }}
@@ -508,137 +523,99 @@ export default function Step6Executors({
                 </button>
               </div>
             ) : (
-              <>
-                {/* Quick 1-click select chips */}
-                {adultFamily.length > 0 && (
-                  <div>
-                    <span style={{ display: "block", fontSize: "0.75rem", fontWeight: 700, color: "var(--color-navy)", marginBottom: "0.35rem" }}>
-                      Quick select from other family:
-                    </span>
-                    <div style={{ display: "flex", flexWrap: "wrap", gap: "0.4rem" }}>
-                      {adultFamily
-                        .filter((f) => f.name !== primary.name)
-                        .map((f) => {
-                          const isSel = alternate.name === f.name;
-                          return (
-                            <button
-                              type="button"
-                              key={f.id}
-                              onClick={() => handleSelectAlternateFromFamily(f)}
-                              style={{
-                                padding: "0.35rem 0.65rem",
-                                borderRadius: "8px",
-                                border: isSel ? "1.5px solid var(--color-gold)" : "1px solid rgba(23, 34, 40, 0.12)",
-                                backgroundColor: isSel ? "rgba(198, 83, 120, 0.1)" : "#FAFAFA",
-                                cursor: "pointer",
-                                display: "inline-flex",
-                                alignItems: "center",
-                                gap: "0.35rem",
-                                fontSize: "0.75rem",
-                                fontWeight: isSel ? 700 : 500,
-                                color: "var(--color-navy)",
-                              }}
-                            >
-                              <span>{f.name}</span>
-                              <span style={{ fontSize: "0.68rem", color: "var(--color-slate)" }}>({f.relationship})</span>
-                              {isSel && <CheckCircle2 size={12} color="var(--color-gold)" />}
-                            </button>
-                          );
-                        })}
-                    </div>
-                  </div>
-                )}
-
-                <div style={{ display: "grid", gridTemplateColumns: "1.2fr 1fr", gap: "0.75rem" }}>
-                  <div>
-                    <label style={{ display: "block", fontSize: "0.75rem", fontWeight: 700, color: "var(--color-navy)", marginBottom: "0.3rem" }}>
-                      Full Legal Name *
-                    </label>
-                    <input
-                      type="text"
-                      required={hasAlternate}
-                      value={alternate.name}
-                      onChange={(e) => setAlternate({ ...alternate, name: e.target.value })}
-                      placeholder="e.g., Rajesh Sharma"
-                      style={{
-                        width: "100%",
-                        padding: "0.55rem 0.75rem",
-                        borderRadius: "10px",
-                        border: "1px solid rgba(27, 42, 74, 0.12)",
-                        fontSize: "0.85rem",
-                        color: "var(--color-navy)",
-                        outline: "none",
-                      }}
-                    />
-                  </div>
-                  <div>
-                    <label style={{ display: "block", fontSize: "0.75rem", fontWeight: 700, color: "var(--color-navy)", marginBottom: "0.3rem" }}>
-                      Relationship *
-                    </label>
-                    <input
-                      type="text"
-                      required={hasAlternate}
-                      value={alternate.relationship}
-                      onChange={(e) => setAlternate({ ...alternate, relationship: e.target.value })}
-                      placeholder="e.g., Brother / Friend"
-                      style={{
-                        width: "100%",
-                        padding: "0.55rem 0.75rem",
-                        borderRadius: "10px",
-                        border: "1px solid rgba(27, 42, 74, 0.12)",
-                        fontSize: "0.85rem",
-                        color: "var(--color-navy)",
-                        outline: "none",
-                      }}
-                    />
-                  </div>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-6 items-end w-full min-w-0">
+                <div className="flex flex-col min-w-0 w-full">
+                  <label className="text-[11px] font-bold tracking-[0.14em] uppercase text-[#6B7280] mb-1.5">
+                    Full Legal Name *
+                  </label>
+                  <input
+                    type="text"
+                    required={hasAlternate}
+                    value={alternate.name}
+                    onChange={(e) => setAlternate({ ...alternate, name: e.target.value })}
+                    placeholder="e.g., Rajesh Sharma"
+                    className="w-full bg-transparent border-0 border-b border-[#D1D5DB] focus:border-[#111827] focus:ring-0 px-0 py-2 text-[15px] text-[#111827] placeholder:text-[#9CA3AF] placeholder:font-light outline-none transition-colors rounded-none shadow-none"
+                    style={{
+                      borderTop: "none",
+                      borderLeft: "none",
+                      borderRight: "none",
+                      borderRadius: 0,
+                      paddingLeft: 0,
+                      paddingRight: 0,
+                      backgroundColor: "transparent",
+                    }}
+                  />
                 </div>
 
-                <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "0.75rem" }}>
-                  <div>
-                    <label style={{ display: "block", fontSize: "0.75rem", fontWeight: 700, color: "var(--color-navy)", marginBottom: "0.3rem" }}>
-                      Mobile Phone
-                    </label>
-                    <input
-                      type="tel"
-                      value={alternate.phone || ""}
-                      onChange={(e) => setAlternate({ ...alternate, phone: e.target.value })}
-                      placeholder="+91 98100..."
-                      style={{
-                        width: "100%",
-                        padding: "0.55rem 0.75rem",
-                        borderRadius: "10px",
-                        border: "1px solid rgba(27, 42, 74, 0.12)",
-                        fontSize: "0.85rem",
-                        color: "var(--color-navy)",
-                        outline: "none",
-                      }}
-                    />
-                  </div>
-                  <div>
-                    <label style={{ display: "block", fontSize: "0.75rem", fontWeight: 700, color: "var(--color-navy)", marginBottom: "0.3rem" }}>
-                      Email Address
-                    </label>
-                    <input
-                      type="email"
-                      value={alternate.email || ""}
-                      onChange={(e) => setAlternate({ ...alternate, email: e.target.value })}
-                      placeholder="alternate@example.com"
-                      style={{
-                        width: "100%",
-                        padding: "0.55rem 0.75rem",
-                        borderRadius: "10px",
-                        border: "1px solid rgba(27, 42, 74, 0.12)",
-                        fontSize: "0.85rem",
-                        color: "var(--color-navy)",
-                        outline: "none",
-                      }}
-                    />
-                  </div>
+                <div className="flex flex-col min-w-0 w-full">
+                  <label className="text-[11px] font-bold tracking-[0.14em] uppercase text-[#6B7280] mb-1.5">
+                    Relationship *
+                  </label>
+                  <input
+                    type="text"
+                    required={hasAlternate}
+                    value={alternate.relationship}
+                    onChange={(e) => setAlternate({ ...alternate, relationship: e.target.value })}
+                    placeholder="e.g., Brother / Friend"
+                    className="w-full bg-transparent border-0 border-b border-[#D1D5DB] focus:border-[#111827] focus:ring-0 px-0 py-2 text-[15px] text-[#111827] placeholder:text-[#9CA3AF] placeholder:font-light outline-none transition-colors rounded-none shadow-none"
+                    style={{
+                      borderTop: "none",
+                      borderLeft: "none",
+                      borderRight: "none",
+                      borderRadius: 0,
+                      paddingLeft: 0,
+                      paddingRight: 0,
+                      backgroundColor: "transparent",
+                    }}
+                  />
                 </div>
 
-                <div>
-                  <label style={{ display: "block", fontSize: "0.75rem", fontWeight: 700, color: "var(--color-navy)", marginBottom: "0.3rem" }}>
+                <div className="flex flex-col min-w-0 w-full">
+                  <label className="text-[11px] font-bold tracking-[0.14em] uppercase text-[#6B7280] mb-1.5">
+                    Mobile Phone
+                  </label>
+                  <input
+                    type="tel"
+                    value={alternate.phone || ""}
+                    onChange={(e) => setAlternate({ ...alternate, phone: e.target.value })}
+                    placeholder="+91 98100..."
+                    className="w-full bg-transparent border-0 border-b border-[#D1D5DB] focus:border-[#111827] focus:ring-0 px-0 py-2 text-[15px] text-[#111827] placeholder:text-[#9CA3AF] placeholder:font-light outline-none transition-colors rounded-none shadow-none"
+                    style={{
+                      borderTop: "none",
+                      borderLeft: "none",
+                      borderRight: "none",
+                      borderRadius: 0,
+                      paddingLeft: 0,
+                      paddingRight: 0,
+                      backgroundColor: "transparent",
+                    }}
+                  />
+                </div>
+
+                <div className="flex flex-col min-w-0 w-full">
+                  <label className="text-[11px] font-bold tracking-[0.14em] uppercase text-[#6B7280] mb-1.5">
+                    Email Address
+                  </label>
+                  <input
+                    type="email"
+                    value={alternate.email || ""}
+                    onChange={(e) => setAlternate({ ...alternate, email: e.target.value })}
+                    placeholder="alternate@example.com"
+                    className="w-full bg-transparent border-0 border-b border-[#D1D5DB] focus:border-[#111827] focus:ring-0 px-0 py-2 text-[15px] text-[#111827] placeholder:text-[#9CA3AF] placeholder:font-light outline-none transition-colors rounded-none shadow-none"
+                    style={{
+                      borderTop: "none",
+                      borderLeft: "none",
+                      borderRight: "none",
+                      borderRadius: 0,
+                      paddingLeft: 0,
+                      paddingRight: 0,
+                      backgroundColor: "transparent",
+                    }}
+                  />
+                </div>
+
+                <div className="flex flex-col min-w-0 w-full md:col-span-2">
+                  <label className="text-[11px] font-bold tracking-[0.14em] uppercase text-[#6B7280] mb-1.5">
                     Residential Address (Optional)
                   </label>
                   <input
@@ -646,54 +623,40 @@ export default function Step6Executors({
                     value={alternate.address || ""}
                     onChange={(e) => setAlternate({ ...alternate, address: e.target.value })}
                     placeholder="e.g., Delhi, NCR"
+                    className="w-full bg-transparent border-0 border-b border-[#D1D5DB] focus:border-[#111827] focus:ring-0 px-0 py-2 text-[15px] text-[#111827] placeholder:text-[#9CA3AF] placeholder:font-light outline-none transition-colors rounded-none shadow-none"
                     style={{
-                      width: "100%",
-                      padding: "0.55rem 0.75rem",
-                      borderRadius: "10px",
-                      border: "1px solid rgba(27, 42, 74, 0.12)",
-                      fontSize: "0.85rem",
-                      color: "var(--color-navy)",
-                      outline: "none",
+                      borderTop: "none",
+                      borderLeft: "none",
+                      borderRight: "none",
+                      borderRadius: 0,
+                      paddingLeft: 0,
+                      paddingRight: 0,
+                      backgroundColor: "transparent",
                     }}
                   />
                 </div>
-              </>
+              </div>
             )}
           </div>
         </div>
 
         {/* Navigation Footer */}
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "space-between",
-            alignItems: "center",
-            padding: "0.6rem 1rem",
-            borderRadius: "14px",
-            backgroundColor: "#FFFFFF",
-            border: "1px solid rgba(27, 42, 74, 0.08)",
-            boxShadow: "0 2px 10px rgba(27, 42, 74, 0.03)",
-            marginTop: "auto",
-          }}
-        >
+        <div className="flex flex-wrap justify-between items-center gap-3 px-4 py-2.5 bg-white rounded-[14px] border border-[#172228]/10 shadow-sm">
           <button
             type="button"
             onClick={onBack}
             style={{
-              padding: "0.65rem 1.4rem",
-              borderRadius: "10px",
-              border: "1px solid rgba(27, 42, 74, 0.15)",
+              padding: "0.55rem 1.25rem",
+              borderRadius: "999px",
+              border: "1px solid #D1D5DB",
               backgroundColor: "#FFFFFF",
-              color: "var(--color-navy)",
-              fontWeight: 700,
-              fontSize: "0.875rem",
+              color: "var(--color-slate)",
+              fontSize: "0.85rem",
+              fontWeight: 600,
               cursor: "pointer",
-              display: "inline-flex",
-              alignItems: "center",
-              gap: "0.5rem",
             }}
           >
-            <ArrowLeft size={16} /> Back
+            ← Back
           </button>
 
           <button
@@ -701,17 +664,14 @@ export default function Step6Executors({
             className="btn btn-gold"
             style={{
               padding: "0.65rem 1.85rem",
-              borderRadius: "10px",
+              borderRadius: "999px",
               fontSize: "0.9rem",
               fontWeight: 700,
               boxShadow: "0 4px 16px rgba(198, 83, 120, 0.25)",
               cursor: "pointer",
-              display: "inline-flex",
-              alignItems: "center",
-              gap: "0.5rem",
             }}
           >
-            Save & Continue to Guardians <ArrowRight size={16} />
+            Save & Continue to Guardians →
           </button>
         </div>
       </form>

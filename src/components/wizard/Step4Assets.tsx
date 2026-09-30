@@ -28,6 +28,8 @@ import {
   DollarSign,
   Lock,
   ExternalLink,
+  ChevronDown,
+  ChevronUp,
 } from "lucide-react";
 import AudioAssistantButton from "@/components/ui/AudioAssistantButton";
 
@@ -47,6 +49,14 @@ export default function Step4Assets({
   const [assets, setAssets] = useState<Asset[]>(state.assets || []);
   const [modalOpen, setModalOpen] = useState(false);
   const [activeFilter, setActiveFilter] = useState<string>("all");
+  const [expandedGroups, setExpandedGroups] = useState<Record<string, boolean>>({});
+
+  const toggleGroup = (groupId: string) => {
+    setExpandedGroups((prev) => ({
+      ...prev,
+      [groupId]: !prev[groupId],
+    }));
+  };
 
   // Form state
   const [category, setCategory] = useState<AssetCategory>("property");
@@ -195,13 +205,98 @@ export default function Step4Assets({
     return `₹ ${val.toLocaleString("en-IN")}`;
   };
 
-  const filteredAssets = assets.filter((a) => {
-    if (activeFilter === "all") return true;
-    if (activeFilter === "property") return a.category === "property";
-    if (activeFilter === "financial") return a.category === "bank_account" || a.category === "investments" || a.category === "shares" || a.category === "mutual_funds";
-    if (activeFilter === "valuable") return a.category === "jewellery" || a.category === "business" || a.category === "vehicles" || a.category === "digital" || a.category === "other";
-    return true;
-  });
+  const categoryGroups: {
+    id: string;
+    label: string;
+    shortLabel: string;
+    categories: AssetCategory[];
+    defaultCat: AssetCategory;
+    Icon: React.ElementType;
+    color: string;
+  }[] = [
+    {
+      id: "accounts",
+      label: "Accounts, Bank Deposits & Retirement",
+      shortLabel: "Accounts",
+      categories: ["bank_account"],
+      defaultCat: "bank_account",
+      Icon: Landmark,
+      color: "#C65378",
+    },
+    {
+      id: "property",
+      label: "Land & Real Estate Properties",
+      shortLabel: "Land & Real Estate",
+      categories: ["property"],
+      defaultCat: "property",
+      Icon: Building2,
+      color: "#172228",
+    },
+    {
+      id: "vehicles",
+      label: "Motor Vehicles",
+      shortLabel: "Vehicles",
+      categories: ["vehicles"],
+      defaultCat: "vehicles",
+      Icon: Car,
+      color: "#059669",
+    },
+    {
+      id: "investments",
+      label: "Mutual Funds, Shares & Investments",
+      shortLabel: "Mutual Funds & Shares",
+      categories: ["investments", "shares", "mutual_funds"],
+      defaultCat: "investments",
+      Icon: TrendingUp,
+      color: "#5F7E75",
+    },
+    {
+      id: "business",
+      label: "Business & Startup Equity",
+      shortLabel: "Business & Equity",
+      categories: ["business"],
+      defaultCat: "business",
+      Icon: Briefcase,
+      color: "#8B5CF6",
+    },
+    {
+      id: "insurance",
+      label: "Life & Term Insurance Policies",
+      shortLabel: "Insurance",
+      categories: ["insurance"],
+      defaultCat: "insurance",
+      Icon: ShieldCheck,
+      color: "#0284C7",
+    },
+    {
+      id: "jewellery",
+      label: "Jewellery, Gold & Bank Lockers",
+      shortLabel: "Jewellery & Lockers",
+      categories: ["jewellery"],
+      defaultCat: "jewellery",
+      Icon: Gem,
+      color: "#E11D48",
+    },
+    {
+      id: "other",
+      label: "Digital & Other Assets",
+      shortLabel: "Other Assets",
+      categories: ["digital", "other"],
+      defaultCat: "other",
+      Icon: Boxes,
+      color: "#64748B",
+    },
+  ];
+
+  const visibleGroups =
+    activeFilter === "all"
+      ? categoryGroups.filter((grp) =>
+          assets.some((a) => grp.categories.includes(a.category))
+        )
+      : categoryGroups.filter((grp) => grp.id === activeFilter);
+
+  const activeGroupForAdd =
+    categoryGroups.find((g) => g.id === activeFilter)?.defaultCat || "property";
 
   return (
     <div style={{ display: "flex", flexDirection: "column", gap: "0.85rem", width: "100%", height: "100%", justifyContent: "space-between" }}>
@@ -225,42 +320,15 @@ export default function Step4Assets({
           </div>
         </div>
 
-        {/* Filter Tabs & Quick Add Button & Audio Assistant */}
+        {/* Audio Assistant & Add Asset Button */}
         <div style={{ display: "flex", alignItems: "center", gap: "0.5rem", flexWrap: "wrap" }}>
           <AudioAssistantButton
             textToSpeak="What assets do you own? Tap the Add Asset button to add your house, bank accounts, gold, shares, startup equity, vehicles, or insurance. You can specify exact account numbers and values."
             label="Listen / सुनें 🔊"
           />
-          <div style={{ display: "flex", gap: "0.25rem", backgroundColor: "rgba(27, 42, 74, 0.05)", padding: "0.2rem", borderRadius: "10px" }}>
-            {[
-              { id: "all", label: `All (${assets.length})` },
-              { id: "property", label: "Real Estate" },
-              { id: "financial", label: "Banking & Equities" },
-              { id: "valuable", label: "Valuables" },
-            ].map((tab) => (
-              <button
-                key={tab.id}
-                type="button"
-                onClick={() => setActiveFilter(tab.id)}
-                style={{
-                  padding: "0.35rem 0.65rem",
-                  borderRadius: "8px",
-                  border: "none",
-                  backgroundColor: activeFilter === tab.id ? "var(--color-navy)" : "transparent",
-                  color: activeFilter === tab.id ? "#FFFFFF" : "var(--color-slate)",
-                  fontSize: "0.76rem",
-                  fontWeight: activeFilter === tab.id ? 700 : 500,
-                  cursor: "pointer",
-                }}
-              >
-                {tab.label}
-              </button>
-            ))}
-          </div>
-
           <button
             type="button"
-            onClick={() => handleOpenAdd("property")}
+            onClick={() => handleOpenAdd(activeGroupForAdd)}
             className="btn btn-gold"
             style={{
               padding: "0.45rem 0.95rem",
@@ -279,181 +347,384 @@ export default function Step4Assets({
         </div>
       </div>
 
-      {/* Assets Grid (Full Width, Scrollable Container) */}
-      <div style={{ flex: 1, minHeight: 0, overflowY: "auto", paddingRight: "0.25rem" }}>
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", gap: "0.75rem" }}>
-          {filteredAssets.length > 0 ? (
-            filteredAssets.map((asset) => {
-              const cfg = categoryConfigs[asset.category] || categoryConfigs.other;
-              const CatIcon = cfg.Icon;
-              return (
-                <div
-                  key={asset.id}
-                  style={{
-                    background: "#FFFFFF",
-                    borderRadius: "16px",
-                    border: "1px solid rgba(27, 42, 74, 0.08)",
-                    padding: "1rem 1.15rem",
-                    boxShadow: "0 2px 8px rgba(0, 0, 0, 0.02)",
-                    display: "flex",
-                    flexDirection: "column",
-                    justifyContent: "space-between",
-                    gap: "0.75rem",
-                  }}
-                >
-                  <div>
-                    <div style={{ display: "flex", alignItems: "flex-start", justifyContent: "space-between" }}>
-                      <div style={{ display: "flex", alignItems: "center", gap: "0.65rem", minWidth: 0 }}>
-                        <div
-                          style={{
-                            width: "38px",
-                            height: "38px",
-                            borderRadius: "10px",
-                            backgroundColor: `${cfg.color}15`,
-                            color: cfg.color,
-                            display: "flex",
-                            alignItems: "center",
-                            justifyContent: "center",
-                            flexShrink: 0,
-                          }}
-                        >
-                          <CatIcon size={18} />
-                        </div>
+      {/* Category Filter Strip */}
+      <div
+        style={{
+          display: "flex",
+          alignItems: "center",
+          gap: "0.35rem",
+          flexWrap: "wrap",
+          backgroundColor: "rgba(23, 34, 40, 0.04)",
+          padding: "0.3rem",
+          borderRadius: "12px",
+        }}
+      >
+        <button
+          type="button"
+          onClick={() => setActiveFilter("all")}
+          style={{
+            padding: "0.38rem 0.75rem",
+            borderRadius: "8px",
+            border: "none",
+            backgroundColor: activeFilter === "all" ? "var(--color-navy)" : "transparent",
+            color: activeFilter === "all" ? "#FFFFFF" : "var(--color-slate)",
+            fontSize: "0.76rem",
+            fontWeight: activeFilter === "all" ? 700 : 600,
+            cursor: "pointer",
+            transition: "all 0.15s ease",
+          }}
+        >
+          All ({assets.length})
+        </button>
 
-                        <div style={{ minWidth: 0 }}>
-                          <h4 style={{ margin: 0, fontSize: "0.95rem", fontWeight: 700, color: "var(--color-navy)", whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis" }}>
-                            {asset.name}
-                          </h4>
-                          <span
-                            style={{
-                              display: "inline-block",
-                              fontSize: "0.68rem",
-                              fontWeight: 700,
-                              backgroundColor: "rgba(27, 42, 74, 0.05)",
-                              color: "var(--color-navy)",
-                              padding: "0.1rem 0.4rem",
-                              borderRadius: "999px",
-                              marginTop: "0.15rem",
-                            }}
-                          >
-                            {asset.typeDetails || cfg.label}
-                          </span>
-                        </div>
-                      </div>
-
-                      <button
-                        type="button"
-                        onClick={() => handleDeleteAsset(asset.id)}
-                        aria-label="Remove asset"
-                        style={{
-                          background: "none",
-                          border: "none",
-                          color: "rgba(27, 42, 74, 0.35)",
-                          cursor: "pointer",
-                          padding: "0.3rem",
-                          borderRadius: "6px",
-                          display: "flex",
-                          alignItems: "center",
-                          justifyContent: "center",
-                        }}
-                        onMouseEnter={(e) => (e.currentTarget.style.color = "#E11D48")}
-                        onMouseLeave={(e) => (e.currentTarget.style.color = "rgba(27, 42, 74, 0.35)")}
-                      >
-                        <Trash2 size={15} />
-                      </button>
-                    </div>
-
-                    <div style={{ marginTop: "0.65rem", display: "flex", flexDirection: "column", gap: "0.2rem", fontSize: "0.76rem", color: "var(--color-slate)" }}>
-                      {asset.identifier && (
-                        <div style={{ whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis" }}>
-                          <strong>ID:</strong> {asset.identifier}
-                        </div>
-                      )}
-                      <div>
-                        <strong>Ownership:</strong> {asset.ownership === "sole" ? "Sole (100%)" : `Joint: ${asset.jointOwnerName || "Co-owner"}`}
-                      </div>
-                    </div>
-                  </div>
-
-                  <div
-                    style={{
-                      display: "flex",
-                      alignItems: "center",
-                      justifyContent: "space-between",
-                      paddingTop: "0.55rem",
-                      borderTop: "1px solid rgba(27, 42, 74, 0.06)",
-                    }}
-                  >
-                    <div>
-                      <span style={{ display: "block", fontSize: "0.65rem", color: "var(--color-slate)", textTransform: "uppercase" }}>
-                        Valuation
-                      </span>
-                      <span style={{ fontSize: "1rem", fontWeight: 800, color: "var(--color-navy)" }}>
-                        {formatCurrency(asset.approximateValue)}
-                      </span>
-                    </div>
-
-                    {asset.hasLoan && (
-                      <span
-                        style={{
-                          fontSize: "0.65rem",
-                          fontWeight: 700,
-                          backgroundColor: "rgba(198, 83, 120, 0.12)",
-                          color: "var(--color-navy)",
-                          padding: "0.15rem 0.45rem",
-                          borderRadius: "999px",
-                        }}
-                      >
-                        Mortgaged
-                      </span>
-                    )}
-                  </div>
-                </div>
-              );
-            })
-          ) : (
-            <div
+        {categoryGroups.map((grp) => {
+          const count = assets.filter((a) => grp.categories.includes(a.category)).length;
+          if (count === 0 && grp.id === "other") return null;
+          const isSel = activeFilter === grp.id;
+          const GrpIcon = grp.Icon;
+          return (
+            <button
+              key={grp.id}
+              type="button"
+              onClick={() => {
+                setActiveFilter(grp.id);
+                setExpandedGroups((prev) => ({ ...prev, [grp.id]: true }));
+              }}
               style={{
-                gridColumn: "1 / -1",
-                background: "#FFFFFF",
-                borderRadius: "18px",
-                border: "1.5px dashed rgba(27, 42, 74, 0.12)",
-                padding: "2.5rem 1.5rem",
-                textAlign: "center",
-                display: "flex",
-                flexDirection: "column",
+                padding: "0.38rem 0.75rem",
+                borderRadius: "8px",
+                border: "none",
+                backgroundColor: isSel ? "var(--color-gold)" : "transparent",
+                color: isSel ? "#FFFFFF" : "var(--color-slate)",
+                fontSize: "0.76rem",
+                fontWeight: isSel ? 700 : 600,
+                cursor: "pointer",
+                display: "inline-flex",
                 alignItems: "center",
-                gap: "0.75rem",
+                gap: "0.35rem",
+                transition: "all 0.15s ease",
               }}
             >
-              <Landmark size={28} color="var(--color-slate)" />
-              <div>
-                <h4 style={{ margin: 0, fontSize: "1.05rem", fontWeight: 700, color: "var(--color-navy)" }}>
-                  No assets in this category yet
-                </h4>
-                <p style={{ margin: "0.25rem 0 0", fontSize: "0.82rem", color: "var(--color-slate)" }}>
-                  Catalog your real estate, bank deposits, or mutual fund folios.
-                </p>
-              </div>
-              <button
-                type="button"
-                onClick={() => handleOpenAdd("property")}
-                className="btn btn-gold"
+              <GrpIcon size={13} />
+              <span>
+                {grp.shortLabel} ({count})
+              </span>
+            </button>
+          );
+        })}
+      </div>
+
+      {/* Categorized Single-Column Horizontal Rows Container */}
+      <div style={{ flex: 1, minHeight: 0, overflowY: "auto", paddingRight: "0.25rem", display: "flex", flexDirection: "column", gap: "1.1rem" }}>
+        {visibleGroups.length > 0 ? (
+          visibleGroups.map((grp) => {
+            const groupAssets = assets.filter((a) => grp.categories.includes(a.category));
+            const groupSubtotal = groupAssets.reduce((s, a) => s + (a.approximateValue || 0), 0);
+            const GrpIcon = grp.Icon;
+            const isExpanded = !!expandedGroups[grp.id];
+
+            return (
+              <div
+                key={grp.id}
                 style={{
-                  padding: "0.5rem 1.25rem",
-                  borderRadius: "10px",
-                  fontWeight: 700,
-                  fontSize: "0.82rem",
-                  display: "inline-flex",
-                  alignItems: "center",
-                  gap: "0.35rem",
+                  display: "flex",
+                  flexDirection: "column",
+                  gap: "0.5rem",
                 }}
               >
-                <Plus size={14} /> Add First Asset
-              </button>
+                {/* Category Section Header (Collapsible Dropdown Row) */}
+                <div
+                  onClick={() => toggleGroup(grp.id)}
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "space-between",
+                    flexWrap: "wrap",
+                    gap: "0.5rem",
+                    padding: "0.65rem 1rem",
+                    borderRadius: "12px",
+                    backgroundColor: isExpanded ? "rgba(198, 83, 120, 0.06)" : "rgba(23, 34, 40, 0.04)",
+                    border: isExpanded ? "1px solid rgba(198, 83, 120, 0.28)" : "1px solid rgba(23, 34, 40, 0.06)",
+                    borderLeft: `4px solid ${grp.color}`,
+                    cursor: "pointer",
+                    transition: "all 0.18s ease",
+                  }}
+                >
+                  <div style={{ display: "flex", alignItems: "center", gap: "0.55rem" }}>
+                    <GrpIcon size={16} color={grp.color} />
+                    <span style={{ fontSize: "0.82rem", fontWeight: 800, color: "var(--color-navy)", textTransform: "uppercase", letterSpacing: "0.05em" }}>
+                      {grp.label}
+                    </span>
+                    <span
+                      style={{
+                        fontSize: "0.7rem",
+                        fontWeight: 700,
+                        padding: "0.1rem 0.5rem",
+                        borderRadius: "999px",
+                        backgroundColor: "#FFFFFF",
+                        color: "var(--color-slate)",
+                        border: "1px solid rgba(23, 34, 40, 0.08)",
+                      }}
+                    >
+                      {groupAssets.length} {groupAssets.length === 1 ? "item" : "items"}
+                    </span>
+                  </div>
+
+                  <div style={{ display: "flex", alignItems: "center", gap: "0.75rem" }}>
+                    <span style={{ fontSize: "0.78rem", fontWeight: 700, color: "var(--color-navy)" }}>
+                      Subtotal: <span style={{ color: "var(--color-gold)" }}>{formatCurrency(groupSubtotal)}</span>
+                    </span>
+                    <button
+                      type="button"
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        handleOpenAdd(grp.defaultCat);
+                      }}
+                      style={{
+                        fontSize: "0.72rem",
+                        fontWeight: 700,
+                        color: "var(--color-gold)",
+                        background: "#FFFFFF",
+                        border: "1px solid rgba(198, 83, 120, 0.25)",
+                        borderRadius: "999px",
+                        padding: "0.2rem 0.65rem",
+                        cursor: "pointer",
+                      }}
+                    >
+                      + Add {grp.shortLabel}
+                    </button>
+                    <button
+                      type="button"
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        toggleGroup(grp.id);
+                      }}
+                      aria-expanded={isExpanded}
+                      style={{
+                        display: "inline-flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                        width: "28px",
+                        height: "28px",
+                        borderRadius: "8px",
+                        border: "1px solid rgba(23, 34, 40, 0.1)",
+                        backgroundColor: isExpanded ? "var(--color-navy)" : "#FFFFFF",
+                        color: isExpanded ? "#FFFFFF" : "var(--color-navy)",
+                        cursor: "pointer",
+                        transition: "all 0.15s ease",
+                      }}
+                    >
+                      {isExpanded ? <ChevronUp size={15} /> : <ChevronDown size={15} />}
+                    </button>
+                  </div>
+                </div>
+
+                {/* Single-Column Horizontal Asset Rows (Visible when dropdown is open) */}
+                {isExpanded && (
+                  groupAssets.length > 0 ? (
+                    <div style={{ display: "flex", flexDirection: "column", gap: "0.45rem", paddingLeft: "0.25rem" }}>
+                    {groupAssets.map((asset) => {
+                      const cfg = categoryConfigs[asset.category] || categoryConfigs.other;
+                      const CatIcon = cfg.Icon;
+                      return (
+                        <div
+                          key={asset.id}
+                          className="flex flex-col lg:flex-row lg:items-center justify-between gap-3 lg:gap-5 bg-white rounded-[14px] border border-[#172228]/10 px-4 py-3 shadow-xs hover:border-[#C65378]/40 transition-colors"
+                        >
+                          {/* 1. Icon + Asset Name + Type Pill */}
+                          <div className="flex items-center gap-3 min-w-0 lg:w-[30%] shrink-0">
+                            <div
+                              style={{
+                                width: "36px",
+                                height: "36px",
+                                borderRadius: "10px",
+                                backgroundColor: `${cfg.color}15`,
+                                color: cfg.color,
+                                display: "flex",
+                                alignItems: "center",
+                                justifyContent: "center",
+                                flexShrink: 0,
+                              }}
+                            >
+                              <CatIcon size={17} />
+                            </div>
+                            <div className="min-w-0 flex-1">
+                              <div className="flex items-center gap-2 flex-wrap">
+                                <h4
+                                  style={{
+                                    margin: 0,
+                                    fontSize: "0.9rem",
+                                    fontWeight: 700,
+                                    color: "var(--color-navy)",
+                                  }}
+                                  className="truncate"
+                                >
+                                  {asset.name}
+                                </h4>
+                                <span
+                                  style={{
+                                    fontSize: "0.66rem",
+                                    fontWeight: 700,
+                                    backgroundColor: "rgba(23, 34, 40, 0.05)",
+                                    color: "var(--color-navy)",
+                                    padding: "0.08rem 0.45rem",
+                                    borderRadius: "999px",
+                                    whiteSpace: "nowrap",
+                                  }}
+                                >
+                                  {asset.typeDetails || cfg.label}
+                                </span>
+                              </div>
+                              {asset.addressOrInstitution && (
+                                <div className="text-[11px] text-[#6B7280] truncate mt-0.5">
+                                  {asset.addressOrInstitution}
+                                </div>
+                              )}
+                            </div>
+                          </div>
+
+                          {/* 2. Identifier / Account / Survey / CIN Details */}
+                          <div className="min-w-0 flex-1 text-xs text-[#49585F] lg:border-l lg:border-[#172228]/10 lg:pl-4">
+                            {asset.identifier ? (
+                              <div className="truncate" title={asset.identifier}>
+                                <span className="font-bold text-[#172228]">ID: </span>
+                                {asset.identifier}
+                              </div>
+                            ) : (
+                              <span className="text-[#9CA3AF] italic">No identifier recorded</span>
+                            )}
+                          </div>
+
+                          {/* 3. Ownership & Encumbrance Status */}
+                          <div className="flex items-center gap-2 shrink-0 lg:border-l lg:border-[#172228]/10 lg:pl-4">
+                            <span
+                              style={{
+                                fontSize: "0.72rem",
+                                fontWeight: 600,
+                                color: "var(--color-slate)",
+                                backgroundColor: "rgba(23, 34, 40, 0.04)",
+                                padding: "0.2rem 0.55rem",
+                                borderRadius: "999px",
+                                whiteSpace: "nowrap",
+                              }}
+                            >
+                              {asset.ownership === "sole"
+                                ? "Sole (100%)"
+                                : `Joint: ${asset.jointOwnerName || "Co-owner"}`}
+                            </span>
+                            {asset.hasLoan && (
+                              <span
+                                style={{
+                                  fontSize: "0.66rem",
+                                  fontWeight: 700,
+                                  backgroundColor: "rgba(198, 83, 120, 0.12)",
+                                  color: "var(--color-gold)",
+                                  padding: "0.18rem 0.5rem",
+                                  borderRadius: "999px",
+                                  whiteSpace: "nowrap",
+                                }}
+                              >
+                                Mortgaged
+                              </span>
+                            )}
+                          </div>
+
+                          {/* 4. Valuation & Delete Action */}
+                          <div className="flex items-center justify-between lg:justify-end gap-3 shrink-0 lg:w-[155px] lg:border-l lg:border-[#172228]/10 lg:pl-4">
+                            <div className="text-left lg:text-right">
+                              <span className="block text-[10px] uppercase tracking-wider text-[#6B7280] font-semibold">
+                                Valuation
+                              </span>
+                              <span className="text-[14px] font-extrabold text-[#172228] whitespace-nowrap">
+                                {formatCurrency(asset.approximateValue)}
+                              </span>
+                            </div>
+
+                            <button
+                              type="button"
+                              onClick={() => handleDeleteAsset(asset.id)}
+                              aria-label="Remove asset"
+                              style={{
+                                background: "none",
+                                border: "none",
+                                color: "rgba(23, 34, 40, 0.35)",
+                                cursor: "pointer",
+                                padding: "0.35rem",
+                                borderRadius: "8px",
+                                display: "flex",
+                                alignItems: "center",
+                                justifyContent: "center",
+                              }}
+                              onMouseEnter={(e) => (e.currentTarget.style.color = "#E11D48")}
+                              onMouseLeave={(e) => (e.currentTarget.style.color = "rgba(23, 34, 40, 0.35)")}
+                            >
+                              <Trash2 size={15} />
+                            </button>
+                          </div>
+                        </div>
+                      );
+                    })}
+                    </div>
+                  ) : (
+                    <div
+                      style={{
+                        background: "#FFFFFF",
+                        borderRadius: "14px",
+                        border: "1.5px dashed rgba(23, 34, 40, 0.12)",
+                        padding: "1.5rem",
+                        textAlign: "center",
+                        color: "var(--color-slate)",
+                        fontSize: "0.82rem",
+                      }}
+                    >
+                      No assets recorded in <strong>{grp.label}</strong> yet.
+                    </div>
+                  )
+                )}
+              </div>
+            );
+          })
+        ) : (
+          <div
+            style={{
+              background: "#FFFFFF",
+              borderRadius: "18px",
+              border: "1.5px dashed rgba(27, 42, 74, 0.12)",
+              padding: "2.5rem 1.5rem",
+              textAlign: "center",
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+              gap: "0.75rem",
+            }}
+          >
+            <Landmark size={28} color="var(--color-slate)" />
+            <div>
+              <h4 style={{ margin: 0, fontSize: "1.05rem", fontWeight: 700, color: "var(--color-navy)" }}>
+                No assets in this category yet
+              </h4>
+              <p style={{ margin: "0.25rem 0 0", fontSize: "0.82rem", color: "var(--color-slate)" }}>
+                Catalog your bank accounts, real estate, vehicles, or investment folios.
+              </p>
             </div>
-          )}
-        </div>
+            <button
+              type="button"
+              onClick={() => handleOpenAdd(activeGroupForAdd)}
+              className="btn btn-gold"
+              style={{
+                padding: "0.5rem 1.25rem",
+                borderRadius: "10px",
+                fontWeight: 700,
+                fontSize: "0.82rem",
+                display: "inline-flex",
+                alignItems: "center",
+                gap: "0.35rem",
+              }}
+            >
+              <Plus size={14} /> Add First Asset
+            </button>
+          </div>
+        )}
       </div>
 
       {/* Navigation Footer */}

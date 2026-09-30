@@ -30,6 +30,7 @@ export interface FamilyMember {
   id: string;
   name: string;
   relationship: "spouse" | "son" | "daughter" | "father" | "mother" | "brother" | "sister" | "other";
+  customRelationship?: string;
   pan?: string; // e.g. "CJDPP6174L"
   dob: string; // YYYY-MM-DD
   isMinor: boolean;

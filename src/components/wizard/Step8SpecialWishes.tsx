@@ -13,6 +13,8 @@ import {
   ArrowLeft,
   Sparkles,
   Plus,
+  ChevronDown,
+  BookOpen,
 } from "lucide-react";
 import AudioAssistantButton from "@/components/ui/AudioAssistantButton";
 
@@ -41,6 +43,18 @@ export default function Step8SpecialWishes({
     }
   );
 
+  const [activeFilter, setActiveFilter] = useState<string>("all");
+  const [openRows, setOpenRows] = useState<Record<string, boolean>>({
+    jewelleryInstructions: true,
+  });
+
+  const toggleRow = (key: string) => {
+    setOpenRows((prev) => ({
+      ...prev,
+      [key]: !prev[key],
+    }));
+  };
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     onUpdate((prev) => ({
@@ -61,6 +75,8 @@ export default function Step8SpecialWishes({
 
   const sections: {
     key: keyof SpecialWishes;
+    shortLabel: string;
+    categoryLabel: string;
     Icon: React.ElementType;
     color: string;
     title: string;
@@ -70,8 +86,10 @@ export default function Step8SpecialWishes({
   }[] = [
     {
       key: "jewelleryInstructions",
+      shortLabel: "Jewellery & Heirlooms",
+      categoryLabel: "Heirlooms & Ornaments",
       Icon: Gem,
-      color: "#E11D48",
+      color: "#C65378",
       title: "Sentimental Jewellery & Heirlooms",
       desc: "Specific heirloom bequests (wedding jewellery, watches, vintage art, ancestral artifacts).",
       placeholder: "e.g., Diamond necklace to daughter Priya...",
@@ -83,7 +101,24 @@ export default function Step8SpecialWishes({
       ],
     },
     {
+      key: "personalBelongings",
+      shortLabel: "Personal Belongings",
+      categoryLabel: "Books, Collectibles & Keepsakes",
+      Icon: BookOpen,
+      color: "#172228",
+      title: "Personal Belongings & Keepsakes",
+      desc: "Books, journals, musical instruments, awards, and personal mementos.",
+      placeholder: "e.g., My library of rare books and journals...",
+      suggestions: [
+        "Personal library of books and journals to university department",
+        "Watches and personal memorabilia to son",
+        "Handwritten diaries and family albums to spouse",
+      ],
+    },
+    {
       key: "digitalAccounts",
+      shortLabel: "Digital Legacy",
+      categoryLabel: "Cloud, Crypto & Online IP",
       Icon: Globe,
       color: "#2563EB",
       title: "Digital Legacy & Online Assets",
@@ -98,8 +133,10 @@ export default function Step8SpecialWishes({
     },
     {
       key: "petsCare",
+      shortLabel: "Pet Care",
+      categoryLabel: "Domestic Animal Welfare",
       Icon: Heart,
-      color: "#059669",
+      color: "#5F7E75",
       title: "Pet Care & Maintenance Trust",
       desc: "Designated caregiver for domestic pets and dedicated funds for veterinary maintenance.",
       placeholder: "e.g., Family pet to be cared for by...",
@@ -111,8 +148,10 @@ export default function Step8SpecialWishes({
     },
     {
       key: "charitableGifts",
+      shortLabel: "Charitable Gifts",
+      categoryLabel: "Philanthropy & Endowments",
       Icon: HandHeart,
-      color: "#C65378",
+      color: "#8B5CF6",
       title: "Charitable Bequests & Philanthropy",
       desc: "Optional donations to educational institutions, orphanages, hospitals, or religious trusts.",
       placeholder: "e.g., ₹50,000 to PM National Relief Fund...",
@@ -124,6 +163,8 @@ export default function Step8SpecialWishes({
     },
     {
       key: "funeralCeremonyWishes",
+      shortLabel: "Funeral Rites",
+      categoryLabel: "Memorial & Organ Donation",
       Icon: Flame,
       color: "#EA580C",
       title: "Funeral & Memorial Rites",
@@ -138,6 +179,13 @@ export default function Step8SpecialWishes({
     },
   ];
 
+  const visibleSections =
+    activeFilter === "all"
+      ? sections
+      : sections.filter((s) => s.key === activeFilter);
+
+  const recordedCount = sections.filter((s) => (wishes[s.key] || "").trim().length > 0).length;
+
   return (
     <div
       style={{
@@ -150,14 +198,14 @@ export default function Step8SpecialWishes({
       }}
     >
       {/* Header */}
-      <div>
-        <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: "0.35rem" }}>
+      <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: "0.75rem" }}>
+        <div>
           <div
             style={{
               display: "inline-flex",
               alignItems: "center",
               gap: "0.4rem",
-              padding: "0.2rem 0.6rem",
+              padding: "0.2rem 0.65rem",
               borderRadius: "999px",
               backgroundColor: "rgba(198, 83, 120, 0.12)",
               color: "var(--color-gold)",
@@ -165,30 +213,115 @@ export default function Step8SpecialWishes({
               fontWeight: 700,
               textTransform: "uppercase",
               letterSpacing: "0.05em",
+              marginBottom: "0.25rem",
             }}
           >
-            <span style={{ width: "5px", height: "5px", borderRadius: "50%", backgroundColor: "var(--color-gold)" }}></span>
+            <span style={{ width: "6px", height: "6px", borderRadius: "50%", backgroundColor: "var(--color-gold)" }}></span>
             Step 8 of 14 • Sentimental & Digital Legacy
           </div>
-          <div style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
-            <AudioAssistantButton
-              textToSpeak="Do you have special wishes like heirloom jewelry, family photos, pet care, charity, or funeral preferences? Tap any suggestion to add it."
-              label="Listen / सुनें 🔊"
-            />
-            <span style={{ fontSize: "0.75rem", color: "var(--color-slate)" }}>
-              Optional • Preserves personal sentimental values
+
+          <div style={{ display: "flex", alignItems: "baseline", gap: "0.65rem", flexWrap: "wrap" }}>
+            <h2 style={{ fontSize: "1.45rem", fontWeight: 800, color: "var(--color-navy)", margin: 0, letterSpacing: "-0.02em" }}>
+              Special Wishes & Sentimental Bequests
+            </h2>
+            <span style={{ fontSize: "0.88rem", color: "var(--color-gold)", fontWeight: 600 }}>
+              (विशेष इच्छाएं, गहने एवं डिजिटल विरासत)
+            </span>
+            <span
+              style={{
+                fontSize: "0.78rem",
+                fontWeight: 700,
+                color: "var(--color-gold)",
+                backgroundColor: "rgba(198, 83, 120, 0.12)",
+                padding: "0.15rem 0.55rem",
+                borderRadius: "999px",
+              }}
+            >
+              {recordedCount} of {sections.length} Configured
             </span>
           </div>
         </div>
 
-        <div style={{ display: "flex", alignItems: "baseline", gap: "0.65rem", flexWrap: "wrap" }}>
-          <h2 style={{ fontSize: "1.45rem", fontWeight: 800, color: "var(--color-navy)", margin: 0, letterSpacing: "-0.02em" }}>
-            Special Wishes & Sentimental Bequests
-          </h2>
-          <span style={{ fontSize: "0.88rem", color: "var(--color-gold)", fontWeight: 600 }}>
-            (विशेष इच्छाएं, गहने एवं डिजिटल विरासत)
-          </span>
+        <div style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
+          <AudioAssistantButton
+            textToSpeak="Do you have special wishes like heirloom jewelry, family photos, pet care, charity, or funeral preferences? Click any category row to open its message dropdown."
+            label="Listen / सुनें 🔊"
+          />
         </div>
+      </div>
+
+      {/* Step 4-Style Category Filter Strip */}
+      <div
+        style={{
+          display: "flex",
+          alignItems: "center",
+          gap: "0.35rem",
+          flexWrap: "wrap",
+          backgroundColor: "rgba(23, 34, 40, 0.04)",
+          padding: "0.3rem",
+          borderRadius: "12px",
+        }}
+      >
+        <button
+          type="button"
+          onClick={() => setActiveFilter("all")}
+          style={{
+            padding: "0.38rem 0.75rem",
+            borderRadius: "8px",
+            border: "none",
+            backgroundColor: activeFilter === "all" ? "var(--color-navy)" : "transparent",
+            color: activeFilter === "all" ? "#FFFFFF" : "var(--color-slate)",
+            fontSize: "0.76rem",
+            fontWeight: activeFilter === "all" ? 700 : 600,
+            cursor: "pointer",
+            transition: "all 0.15s ease",
+          }}
+        >
+          All ({sections.length})
+        </button>
+
+        {sections.map((sec) => {
+          const isSel = activeFilter === sec.key;
+          const SecIcon = sec.Icon;
+          const hasMsg = (wishes[sec.key] || "").trim().length > 0;
+          return (
+            <button
+              key={sec.key}
+              type="button"
+              onClick={() => {
+                setActiveFilter(sec.key);
+                setOpenRows((prev) => ({ ...prev, [sec.key]: true }));
+              }}
+              style={{
+                padding: "0.38rem 0.75rem",
+                borderRadius: "8px",
+                border: "none",
+                backgroundColor: isSel ? "var(--color-gold)" : "transparent",
+                color: isSel ? "#FFFFFF" : "var(--color-slate)",
+                fontSize: "0.76rem",
+                fontWeight: isSel ? 700 : 600,
+                cursor: "pointer",
+                display: "inline-flex",
+                alignItems: "center",
+                gap: "0.35rem",
+                transition: "all 0.15s ease",
+              }}
+            >
+              <SecIcon size={13} />
+              <span>{sec.shortLabel}</span>
+              {hasMsg && (
+                <span
+                  style={{
+                    width: "6px",
+                    height: "6px",
+                    borderRadius: "50%",
+                    backgroundColor: isSel ? "#FFFFFF" : "var(--color-sage)",
+                  }}
+                />
+              )}
+            </button>
+          );
+        })}
       </div>
 
       <form
@@ -202,144 +335,268 @@ export default function Step8SpecialWishes({
           gap: "0.75rem",
         }}
       >
-        {/* Responsive Grid for Wishes */}
+        {/* Single-Column Categorized Horizontal Rows with Message Dropdown */}
         <div
           style={{
-            display: "grid",
-            gridTemplateColumns: "repeat(auto-fit, minmax(360px, 1fr))",
-            gap: "0.85rem",
+            display: "flex",
+            flexDirection: "column",
+            gap: "0.65rem",
             flex: 1,
             minHeight: 0,
             overflowY: "auto",
             paddingRight: "0.25rem",
           }}
         >
-          {sections.map((sec) => {
+          {visibleSections.map((sec) => {
             const SecIcon = sec.Icon;
             const currentVal = wishes[sec.key] || "";
+            const hasContent = currentVal.trim().length > 0;
+            const isOpen = !!openRows[sec.key] || activeFilter === sec.key;
+
             return (
               <div
                 key={sec.key}
                 style={{
                   background: "#FFFFFF",
-                  borderRadius: "16px",
-                  border: "1px solid rgba(27, 42, 74, 0.08)",
-                  padding: "1rem 1.15rem",
-                  boxShadow: "0 2px 12px rgba(0, 0, 0, 0.02)",
-                  display: "flex",
-                  flexDirection: "column",
-                  gap: "0.6rem",
+                  borderRadius: "14px",
+                  border: isOpen
+                    ? "1.5px solid rgba(198, 83, 120, 0.45)"
+                    : "1px solid rgba(23, 34, 40, 0.1)",
+                  boxShadow: "0 2px 8px rgba(0, 0, 0, 0.02)",
+                  overflow: "hidden",
+                  transition: "all 0.2s ease",
                 }}
               >
-                <div style={{ display: "flex", alignItems: "center", gap: "0.65rem" }}>
+                {/* Horizontal Single-Line Row Header */}
+                <div
+                  onClick={() => toggleRow(sec.key)}
+                  className="flex flex-col lg:flex-row lg:items-center justify-between gap-3 lg:gap-5 px-4 py-3 cursor-pointer hover:bg-[#FAF7F0]/60 transition-colors"
+                >
+                  {/* 1. Icon + Title + Category Tag */}
+                  <div className="flex items-center gap-3 min-w-0 lg:w-[32%] shrink-0">
+                    <div
+                      style={{
+                        width: "36px",
+                        height: "36px",
+                        borderRadius: "10px",
+                        backgroundColor: `${sec.color}15`,
+                        color: sec.color,
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                        flexShrink: 0,
+                      }}
+                    >
+                      <SecIcon size={17} />
+                    </div>
+                    <div className="min-w-0 flex-1">
+                      <div className="flex items-center gap-2 flex-wrap">
+                        <h3
+                          style={{
+                            margin: 0,
+                            fontSize: "0.9rem",
+                            fontWeight: 700,
+                            color: "var(--color-navy)",
+                          }}
+                          className="truncate"
+                        >
+                          {sec.title}
+                        </h3>
+                        <span
+                          style={{
+                            fontSize: "0.65rem",
+                            fontWeight: 700,
+                            backgroundColor: "rgba(23, 34, 40, 0.05)",
+                            color: "var(--color-navy)",
+                            padding: "0.08rem 0.45rem",
+                            borderRadius: "999px",
+                            whiteSpace: "nowrap",
+                          }}
+                        >
+                          {sec.categoryLabel}
+                        </span>
+                      </div>
+                      <div className="text-[11px] text-[#6B7280] truncate mt-0.5">
+                        {sec.desc}
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* 2. Inline Message Preview */}
+                  <div className="min-w-0 flex-1 text-xs text-[#49585F] lg:border-l lg:border-[#172228]/10 lg:pl-4">
+                    {hasContent ? (
+                      <div className="truncate" title={currentVal}>
+                        <span className="font-bold text-[#172228]">Message: </span>
+                        {currentVal}
+                      </div>
+                    ) : (
+                      <span className="text-[#9CA3AF] italic">
+                        No special directive written — click to open message box
+                      </span>
+                    )}
+                  </div>
+
+                  {/* 3. Status Badge & Dropdown Toggle */}
+                  <div className="flex items-center justify-between lg:justify-end gap-3 shrink-0 lg:border-l lg:border-[#172228]/10 lg:pl-4">
+                    <span
+                      style={{
+                        fontSize: "0.7rem",
+                        fontWeight: 700,
+                        padding: "0.18rem 0.55rem",
+                        borderRadius: "999px",
+                        backgroundColor: hasContent
+                          ? "rgba(95, 126, 117, 0.14)"
+                          : "rgba(23, 34, 40, 0.05)",
+                        color: hasContent ? "var(--color-sage)" : "var(--color-slate)",
+                        display: "inline-flex",
+                        alignItems: "center",
+                        gap: "0.25rem",
+                        whiteSpace: "nowrap",
+                      }}
+                    >
+                      {hasContent && <CheckCircle2 size={11} />}
+                      {hasContent ? "Directive Recorded" : "Optional"}
+                    </span>
+
+                    <button
+                      type="button"
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        toggleRow(sec.key);
+                      }}
+                      style={{
+                        padding: "0.28rem 0.65rem",
+                        borderRadius: "8px",
+                        border: "1px solid rgba(23, 34, 40, 0.12)",
+                        backgroundColor: isOpen ? "var(--color-gold)" : "#FFFFFF",
+                        color: isOpen ? "#FFFFFF" : "var(--color-navy)",
+                        fontSize: "0.72rem",
+                        fontWeight: 700,
+                        cursor: "pointer",
+                        display: "inline-flex",
+                        alignItems: "center",
+                        gap: "0.3rem",
+                      }}
+                    >
+                      <span>{isOpen ? "Hide Message" : "View / Edit Message"}</span>
+                      <ChevronDown
+                        size={14}
+                        style={{
+                          transform: isOpen ? "rotate(180deg)" : "rotate(0deg)",
+                          transition: "transform 0.2s ease",
+                        }}
+                      />
+                    </button>
+                  </div>
+                </div>
+
+                {/* Collapsible Dropdown Content for Message & Quick Suggestions */}
+                {isOpen && (
                   <div
                     style={{
-                      width: "32px",
-                      height: "32px",
-                      borderRadius: "8px",
-                      backgroundColor: `${sec.color}15`,
-                      color: sec.color,
+                      padding: "0.85rem 1rem 1rem",
+                      borderTop: "1px solid rgba(23, 34, 40, 0.08)",
+                      backgroundColor: "#FDFBF7",
                       display: "flex",
-                      alignItems: "center",
-                      justifyContent: "center",
-                      flexShrink: 0,
+                      flexDirection: "column",
+                      gap: "0.6rem",
                     }}
                   >
-                    <SecIcon size={17} />
-                  </div>
-                  <div style={{ flex: 1, minWidth: 0 }}>
-                    <h3 style={{ margin: 0, fontSize: "0.95rem", fontWeight: 700, color: "var(--color-navy)", whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis" }}>
-                      {sec.title}
-                    </h3>
-                  </div>
-                </div>
-
-                {/* Suggestions */}
-                <div style={{ display: "flex", flexWrap: "wrap", gap: "0.3rem" }}>
-                  {sec.suggestions.slice(0, 3).map((sug) => {
-                    const alreadyAdded = currentVal.includes(sug);
-                    return (
-                      <button
-                        key={sug}
-                        type="button"
-                        onClick={() => appendSuggestion(sec.key, sug)}
+                    {/* Quick Suggestions */}
+                    <div style={{ display: "flex", flexWrap: "wrap", alignItems: "center", gap: "0.35rem" }}>
+                      <span
                         style={{
-                          padding: "0.2rem 0.55rem",
-                          borderRadius: "6px",
-                          fontSize: "0.72rem",
-                          fontWeight: 500,
-                          backgroundColor: alreadyAdded ? "rgba(124, 148, 115, 0.12)" : "#FAFAFA",
-                          border: alreadyAdded ? "1px solid var(--color-sage)" : "1px solid rgba(27, 42, 74, 0.1)",
-                          color: alreadyAdded ? "var(--color-sage)" : "var(--color-navy)",
-                          cursor: "pointer",
-                          display: "inline-flex",
-                          alignItems: "center",
-                          gap: "0.25rem",
+                          fontSize: "0.68rem",
+                          fontWeight: 700,
+                          textTransform: "uppercase",
+                          letterSpacing: "0.08em",
+                          color: "var(--color-slate)",
+                          marginRight: "0.25rem",
                         }}
                       >
-                        {alreadyAdded ? <CheckCircle2 size={10} /> : <Plus size={10} />}
-                        <span>{sug}</span>
-                      </button>
-                    );
-                  })}
-                </div>
+                        Quick Add:
+                      </span>
+                      {sec.suggestions.map((sug) => {
+                        const alreadyAdded = currentVal.includes(sug);
+                        return (
+                          <button
+                            key={sug}
+                            type="button"
+                            onClick={() => appendSuggestion(sec.key, sug)}
+                            style={{
+                              padding: "0.22rem 0.6rem",
+                              borderRadius: "999px",
+                              fontSize: "0.72rem",
+                              fontWeight: 600,
+                              backgroundColor: alreadyAdded
+                                ? "rgba(95, 126, 117, 0.14)"
+                                : "#FFFFFF",
+                              border: alreadyAdded
+                                ? "1px solid var(--color-sage)"
+                                : "1px solid rgba(23, 34, 40, 0.12)",
+                              color: alreadyAdded ? "var(--color-sage)" : "var(--color-navy)",
+                              cursor: "pointer",
+                              display: "inline-flex",
+                              alignItems: "center",
+                              gap: "0.25rem",
+                            }}
+                          >
+                            {alreadyAdded ? <CheckCircle2 size={11} /> : <Plus size={11} />}
+                            <span>{sug}</span>
+                          </button>
+                        );
+                      })}
+                    </div>
 
-                <textarea
-                  rows={2}
-                  placeholder={sec.placeholder}
-                  value={currentVal}
-                  onChange={(e) => setWishes({ ...wishes, [sec.key]: e.target.value })}
-                  style={{
-                    width: "100%",
-                    padding: "0.5rem 0.75rem",
-                    borderRadius: "10px",
-                    border: "1px solid rgba(27, 42, 74, 0.12)",
-                    fontSize: "0.825rem",
-                    color: "var(--color-navy)",
-                    backgroundColor: "#FAFAFA",
-                    outline: "none",
-                    fontFamily: "var(--font-main)",
-                    lineHeight: 1.45,
-                    resize: "none",
-                  }}
-                />
+                    {/* Message Textarea */}
+                    <div>
+                      <label className="block text-[11px] font-bold tracking-[0.14em] uppercase text-[#6B7280] mb-1.5">
+                        Your Message / Directive for {sec.shortLabel}
+                      </label>
+                      <textarea
+                        rows={2}
+                        placeholder={sec.placeholder}
+                        value={currentVal}
+                        onChange={(e) => setWishes({ ...wishes, [sec.key]: e.target.value })}
+                        style={{
+                          width: "100%",
+                          padding: "0.6rem 0.85rem",
+                          borderRadius: "10px",
+                          border: "1px solid rgba(23, 34, 40, 0.15)",
+                          fontSize: "0.85rem",
+                          color: "var(--color-navy)",
+                          backgroundColor: "#FFFFFF",
+                          outline: "none",
+                          fontFamily: "var(--font-main)",
+                          lineHeight: 1.5,
+                          resize: "vertical",
+                        }}
+                      />
+                    </div>
+                  </div>
+                )}
               </div>
             );
           })}
         </div>
 
         {/* Navigation Footer */}
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "space-between",
-            alignItems: "center",
-            padding: "0.6rem 1rem",
-            borderRadius: "14px",
-            backgroundColor: "#FFFFFF",
-            border: "1px solid rgba(27, 42, 74, 0.08)",
-            boxShadow: "0 2px 10px rgba(27, 42, 74, 0.03)",
-            marginTop: "auto",
-          }}
-        >
+        <div className="flex flex-wrap justify-between items-center gap-3 px-4 py-2.5 bg-white rounded-[14px] border border-[#172228]/10 shadow-sm">
           <button
             type="button"
             onClick={onBack}
             style={{
-              padding: "0.65rem 1.4rem",
-              borderRadius: "10px",
-              border: "1px solid rgba(27, 42, 74, 0.15)",
+              padding: "0.55rem 1.25rem",
+              borderRadius: "999px",
+              border: "1px solid #D1D5DB",
               backgroundColor: "#FFFFFF",
-              color: "var(--color-navy)",
-              fontWeight: 700,
-              fontSize: "0.875rem",
+              color: "var(--color-slate)",
+              fontSize: "0.85rem",
+              fontWeight: 600,
               cursor: "pointer",
-              display: "inline-flex",
-              alignItems: "center",
-              gap: "0.5rem",
             }}
           >
-            <ArrowLeft size={16} /> Back
+            ← Back
           </button>
 
           <button
@@ -347,20 +604,18 @@ export default function Step8SpecialWishes({
             className="btn btn-gold"
             style={{
               padding: "0.65rem 1.85rem",
-              borderRadius: "10px",
+              borderRadius: "999px",
               fontSize: "0.9rem",
               fontWeight: 700,
               boxShadow: "0 4px 16px rgba(198, 83, 120, 0.25)",
               cursor: "pointer",
-              display: "inline-flex",
-              alignItems: "center",
-              gap: "0.5rem",
             }}
           >
-            Save & Continue to Purpose Note <ArrowRight size={16} />
+            Save & Continue to Purpose Note →
           </button>
         </div>
       </form>
     </div>
   );
 }
+
