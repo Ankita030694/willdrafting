@@ -17,6 +17,7 @@ import {
   BookOpen,
 } from "lucide-react";
 import AudioAssistantButton from "@/components/ui/AudioAssistantButton";
+import AppleSwitch from "@/components/dashboard/AppleSwitch";
 
 interface Step8SpecialWishesProps {
   state: WillDraftingState;
@@ -31,6 +32,9 @@ export default function Step8SpecialWishes({
   onNext,
   onBack,
 }: Step8SpecialWishesProps) {
+  const [noSpecialWishes, setNoSpecialWishes] = useState<boolean>(
+    Boolean(state.specialWishes?.hasNoSpecialWishes)
+  );
   const [wishes, setWishes] = useState<SpecialWishes>(
     state.specialWishes || {
       jewelleryInstructions: "Ancestral gold necklace to elder daughter; diamond ring to son.",
@@ -59,14 +63,19 @@ export default function Step8SpecialWishes({
     e.preventDefault();
     onUpdate((prev) => ({
       ...prev,
-      specialWishes: wishes,
+      specialWishes: {
+        ...wishes,
+        hasNoSpecialWishes: noSpecialWishes,
+      },
     }));
     onNext();
   };
 
-  const appendSuggestion = (key: keyof SpecialWishes, text: string) => {
+  type SpecialWishFieldKey = Exclude<keyof SpecialWishes, "hasNoSpecialWishes">;
+
+  const appendSuggestion = (key: SpecialWishFieldKey, text: string) => {
     setWishes((prev) => {
-      const current = prev[key] || "";
+      const current = (prev[key] as string) || "";
       if (!current.trim()) return { ...prev, [key]: text };
       if (current.includes(text)) return prev;
       return { ...prev, [key]: `${current.trim()}; ${text}` };
@@ -74,7 +83,7 @@ export default function Step8SpecialWishes({
   };
 
   const sections: {
-    key: keyof SpecialWishes;
+    key: SpecialWishFieldKey;
     shortLabel: string;
     categoryLabel: string;
     Icon: React.ElementType;
@@ -184,7 +193,7 @@ export default function Step8SpecialWishes({
       ? sections
       : sections.filter((s) => s.key === activeFilter);
 
-  const recordedCount = sections.filter((s) => (wishes[s.key] || "").trim().length > 0).length;
+  const recordedCount = sections.filter((s) => ((wishes[s.key] as string) || "").trim().length > 0).length;
 
   return (
     <div
@@ -209,101 +218,42 @@ export default function Step8SpecialWishes({
             <span style={{ fontSize: "0.88rem", color: "var(--color-gold)", fontWeight: 600 }}>
               (विशेष इच्छाएं, गहने एवं डिजिटल विरासत)
             </span>
-            <span
-              style={{
-                fontSize: "0.78rem",
-                fontWeight: 700,
-                color: "var(--color-gold)",
-                backgroundColor: "rgba(198, 83, 120, 0.12)",
-                padding: "0.15rem 0.55rem",
-                borderRadius: "999px",
-              }}
-            >
-              {recordedCount} of {sections.length} Configured
-            </span>
+            {noSpecialWishes ? (
+              <span
+                style={{
+                  fontSize: "0.78rem",
+                  fontWeight: 700,
+                  color: "var(--color-sage)",
+                  backgroundColor: "rgba(95, 126, 117, 0.12)",
+                  padding: "0.15rem 0.55rem",
+                  borderRadius: "999px",
+                }}
+              >
+                No Special Wishes (Skipped)
+              </span>
+            ) : (
+              <span
+                style={{
+                  fontSize: "0.78rem",
+                  fontWeight: 700,
+                  color: "var(--color-gold)",
+                  backgroundColor: "rgba(198, 83, 120, 0.12)",
+                  padding: "0.15rem 0.55rem",
+                  borderRadius: "999px",
+                }}
+              >
+                {recordedCount} of {sections.length} Configured
+              </span>
+            )}
           </div>
         </div>
 
         <div style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
           <AudioAssistantButton
-            textToSpeak="Do you have special wishes like heirloom jewelry, family photos, pet care, charity, or funeral preferences? Click any category row to open its message dropdown."
+            textToSpeak="Do you have special wishes like heirloom jewelry, family photos, pet care, charity, or funeral preferences? You can also toggle 'I have no special wishes' to proceed directly."
             label="Listen / सुनें 🔊"
           />
         </div>
-      </div>
-
-      {/* Step 4-Style Category Filter Strip */}
-      <div
-        style={{
-          display: "flex",
-          alignItems: "center",
-          gap: "0.35rem",
-          flexWrap: "wrap",
-          backgroundColor: "rgba(23, 34, 40, 0.04)",
-          padding: "0.3rem",
-          borderRadius: "12px",
-        }}
-      >
-        <button
-          type="button"
-          onClick={() => setActiveFilter("all")}
-          style={{
-            padding: "0.38rem 0.75rem",
-            borderRadius: "8px",
-            border: "none",
-            backgroundColor: activeFilter === "all" ? "var(--color-navy)" : "transparent",
-            color: activeFilter === "all" ? "#FFFFFF" : "var(--color-slate)",
-            fontSize: "0.76rem",
-            fontWeight: activeFilter === "all" ? 700 : 600,
-            cursor: "pointer",
-            transition: "all 0.15s ease",
-          }}
-        >
-          All ({sections.length})
-        </button>
-
-        {sections.map((sec) => {
-          const isSel = activeFilter === sec.key;
-          const SecIcon = sec.Icon;
-          const hasMsg = (wishes[sec.key] || "").trim().length > 0;
-          return (
-            <button
-              key={sec.key}
-              type="button"
-              onClick={() => {
-                setActiveFilter(sec.key);
-                setOpenRows((prev) => ({ ...prev, [sec.key]: true }));
-              }}
-              style={{
-                padding: "0.38rem 0.75rem",
-                borderRadius: "8px",
-                border: "none",
-                backgroundColor: isSel ? "var(--color-gold)" : "transparent",
-                color: isSel ? "#FFFFFF" : "var(--color-slate)",
-                fontSize: "0.76rem",
-                fontWeight: isSel ? 700 : 600,
-                cursor: "pointer",
-                display: "inline-flex",
-                alignItems: "center",
-                gap: "0.35rem",
-                transition: "all 0.15s ease",
-              }}
-            >
-              <SecIcon size={13} />
-              <span>{sec.shortLabel}</span>
-              {hasMsg && (
-                <span
-                  style={{
-                    width: "6px",
-                    height: "6px",
-                    borderRadius: "50%",
-                    backgroundColor: isSel ? "#FFFFFF" : "var(--color-sage)",
-                  }}
-                />
-              )}
-            </button>
-          );
-        })}
       </div>
 
       <form
@@ -317,21 +267,168 @@ export default function Step8SpecialWishes({
           gap: "0.75rem",
         }}
       >
-        {/* Single-Column Categorized Horizontal Rows with Message Dropdown */}
+        {/* "I have no special wishes" Progressive Disclosure Toggle Card */}
         <div
           style={{
             display: "flex",
-            flexDirection: "column",
-            gap: "0.65rem",
-            flex: 1,
-            minHeight: 0,
-            overflowY: "auto",
-            paddingRight: "0.25rem",
+            alignItems: "center",
+            justifyContent: "space-between",
+            padding: "0.85rem 1.25rem",
+            borderRadius: "14px",
+            backgroundColor: noSpecialWishes ? "rgba(95, 126, 117, 0.08)" : "#FFFFFF",
+            border: noSpecialWishes
+              ? "1.5px solid var(--color-sage)"
+              : "1px solid rgba(27, 42, 74, 0.1)",
+            boxShadow: "0 2px 8px rgba(0, 0, 0, 0.03)",
+            transition: "all 0.25s cubic-bezier(0.16, 1, 0.3, 1)",
           }}
         >
+          <div style={{ display: "flex", alignItems: "center", gap: "0.75rem" }}>
+            <div
+              style={{
+                width: "36px",
+                height: "36px",
+                borderRadius: "10px",
+                backgroundColor: noSpecialWishes ? "var(--color-sage)" : "rgba(27, 42, 74, 0.06)",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                color: noSpecialWishes ? "#FFFFFF" : "var(--color-navy)",
+                transition: "all 0.2s ease",
+              }}
+            >
+              <Sparkles size={18} />
+            </div>
+            <div>
+              <div style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
+                <span style={{ fontSize: "0.95rem", fontWeight: 700, color: "var(--color-navy)" }}>
+                  I have no special wishes
+                </span>
+                <span style={{ fontSize: "0.8rem", color: "var(--color-slate)", fontWeight: 500 }}>
+                  (मेरी कोई विशेष इच्छाएं नहीं हैं)
+                </span>
+              </div>
+              <p style={{ margin: "2px 0 0", fontSize: "0.76rem", color: "var(--color-slate)", lineHeight: 1.3 }}>
+                {noSpecialWishes
+                  ? "Turn OFF if you wish to record specific heirloom bequests, pet care funds, or funeral instructions."
+                  : "Toggle ON to skip separate heirloom bequests, pet trusts, funeral rites, and charity directives."}
+              </p>
+            </div>
+          </div>
+
+          <div style={{ display: "flex", alignItems: "center", gap: "0.75rem" }}>
+            <span
+              style={{
+                fontSize: "0.82rem",
+                fontWeight: 800,
+                color: noSpecialWishes ? "var(--color-sage)" : "var(--color-slate)",
+                textTransform: "uppercase",
+                letterSpacing: "0.05em",
+              }}
+            >
+              {noSpecialWishes ? "ON" : "OFF"}
+            </span>
+            <AppleSwitch
+              checked={noSpecialWishes}
+              onChange={setNoSpecialWishes}
+              activeColor="var(--color-sage)"
+            />
+          </div>
+        </div>
+
+        {noSpecialWishes ? (
+          <div style={{ flex: 1 }} />
+        ) : (
+          <>
+            {/* Step 4-Style Category Filter Strip */}
+            <div
+              style={{
+                display: "flex",
+                alignItems: "center",
+                gap: "0.35rem",
+                flexWrap: "wrap",
+                backgroundColor: "rgba(23, 34, 40, 0.04)",
+                padding: "0.3rem",
+                borderRadius: "12px",
+              }}
+            >
+              <button
+                type="button"
+                onClick={() => setActiveFilter("all")}
+                style={{
+                  padding: "0.38rem 0.75rem",
+                  borderRadius: "8px",
+                  border: "none",
+                  backgroundColor: activeFilter === "all" ? "var(--color-navy)" : "transparent",
+                  color: activeFilter === "all" ? "#FFFFFF" : "var(--color-slate)",
+                  fontSize: "0.76rem",
+                  fontWeight: activeFilter === "all" ? 700 : 600,
+                  cursor: "pointer",
+                  transition: "all 0.15s ease",
+                }}
+              >
+                All ({sections.length})
+              </button>
+
+              {sections.map((sec) => {
+                const isSel = activeFilter === sec.key;
+                const SecIcon = sec.Icon;
+                const hasMsg = ((wishes[sec.key] as string) || "").trim().length > 0;
+                return (
+                  <button
+                    key={sec.key}
+                    type="button"
+                    onClick={() => {
+                      setActiveFilter(sec.key);
+                      setOpenRows((prev) => ({ ...prev, [sec.key]: true }));
+                    }}
+                    style={{
+                      padding: "0.38rem 0.75rem",
+                      borderRadius: "8px",
+                      border: "none",
+                      backgroundColor: isSel ? "var(--color-gold)" : "transparent",
+                      color: isSel ? "#FFFFFF" : "var(--color-slate)",
+                      fontSize: "0.76rem",
+                      fontWeight: isSel ? 700 : 600,
+                      cursor: "pointer",
+                      display: "inline-flex",
+                      alignItems: "center",
+                      gap: "0.35rem",
+                      transition: "all 0.15s ease",
+                    }}
+                  >
+                    <SecIcon size={13} />
+                    <span>{sec.shortLabel}</span>
+                    {hasMsg && (
+                      <span
+                        style={{
+                          width: "6px",
+                          height: "6px",
+                          borderRadius: "50%",
+                          backgroundColor: isSel ? "#FFFFFF" : "var(--color-sage)",
+                        }}
+                      />
+                    )}
+                  </button>
+                );
+              })}
+            </div>
+
+            {/* Single-Column Categorized Horizontal Rows with Message Dropdown */}
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                gap: "0.65rem",
+                flex: 1,
+                minHeight: 0,
+                overflowY: "auto",
+                paddingRight: "0.25rem",
+              }}
+            >
           {visibleSections.map((sec) => {
             const SecIcon = sec.Icon;
-            const currentVal = wishes[sec.key] || "";
+            const currentVal = (wishes[sec.key] as string) || "";
             const hasContent = currentVal.trim().length > 0;
             const isOpen = !!openRows[sec.key] || activeFilter === sec.key;
 
@@ -561,6 +658,8 @@ export default function Step8SpecialWishes({
             );
           })}
         </div>
+      </>
+    )}
 
         {/* Navigation Footer */}
         <div className="flex flex-wrap justify-between items-center gap-3 px-4 py-2.5 bg-white rounded-[14px] border border-[#172228]/10 shadow-sm">

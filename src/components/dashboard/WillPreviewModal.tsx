@@ -1,7 +1,8 @@
 "use client";
 
 import React, { useState } from "react";
-import { WillDraftingState } from "@/lib/willDraftingStore";
+import { WillDraftingState, generateWillClauses } from "@/lib/willDraftingStore";
+import WillAssetDistributionTable from "@/components/wizard/WillAssetDistributionTable";
 
 interface WillPreviewModalProps {
   isOpen: boolean;
@@ -247,33 +248,55 @@ export default function WillPreviewModal({
               </div>
 
               {/* Dynamic Clauses from store */}
-              {state.clauses && state.clauses.length > 0 ? (
-                state.clauses.map((clause, idx) => (
-                  <div key={clause.id || idx} style={{ textAlign: "justify" }}>
-                    <div style={{ fontWeight: 800, color: "#0F172A", marginBottom: "0.5rem", fontSize: "0.95rem", letterSpacing: "0.02em" }}>
-                      {clause.clauseNumber}. {clause.title}
+              {(() => {
+                const activeClauses = state.clauses && state.clauses.length > 0 ? state.clauses : generateWillClauses(state);
+                return activeClauses.map((clause, idx) => {
+                  const isAssetClause =
+                    clause.id === "cls-assets" ||
+                    clause.category === "Specific Bequests" ||
+                    clause.title.toLowerCase().includes("movable & immovable") ||
+                    clause.title.toLowerCase().includes("asset");
+
+                  return (
+                    <div key={clause.id || idx} style={{ textAlign: "justify" }}>
+                      <div
+                        style={{
+                          fontWeight: 800,
+                          color: "#0F172A",
+                          marginBottom: "0.5rem",
+                          fontSize: "0.95rem",
+                          letterSpacing: "0.02em",
+                        }}
+                      >
+                        {clause.clauseNumber || idx + 1}. {clause.title}
+                      </div>
+
+                      {isAssetClause ? (
+                        <div>
+                          <p style={{ margin: "0 0 0.65rem 0", color: "#1E293B", lineHeight: 1.8 }}>
+                            I hereby devise, bequeath, and direct the devolution of my specific movable and immovable properties, including my respective undivided shares in jointly held properties, to the respective beneficiaries strictly in accordance with the Schedule of Asset Distribution set forth below:
+                          </p>
+
+                          <WillAssetDistributionTable
+                            assets={state.assets}
+                            allocations={state.allocations}
+                            familyMembers={state.familyMembers}
+                            residuaryBeneficiaryName={state.residuaryBeneficiaryName}
+                          />
+
+                          <p style={{ margin: "0.45rem 0 0 0", color: "#475569", fontSize: "0.85rem", lineHeight: 1.6, fontStyle: "italic" }}>
+                            All beneficiaries named in the Schedule above shall take their respective devised shares absolutely and forever. If any specific bequest fails on account of prior demise of a beneficiary without surviving issues, such share shall fall into and be administered under the Residuary Clause herein.
+                          </p>
+                        </div>
+                      ) : (
+                        <div style={{ whiteSpace: "pre-line", color: "#334155", lineHeight: 1.8 }}>
+                          {clause.currentText || clause.standardText}
+                        </div>
+                      )}
                     </div>
-                    <div style={{ whiteSpace: "pre-line", color: "#334155", lineHeight: 1.8 }}>
-                      {clause.currentText || clause.standardText}
-                    </div>
-                  </div>
-                ))
-              ) : (
-                <>
-                  <div style={{ textAlign: "justify" }}>
-                    <strong>1. REVOCATION OF PRIOR TESTAMENTARY DISPOSITIONS:</strong> I hereby revoke, cancel, and annul all former Wills, Codicils, and testamentary dispositions of every nature and kind made by me at any time heretofore, and declare this to be my sole operative Will.
-                  </div>
-                  <div style={{ textAlign: "justify" }}>
-                    <strong>2. APPOINTMENT OF EXECUTOR:</strong> I hereby nominate, constitute, and appoint{" "}
-                    <strong>{state.executorPrimary?.name || "Sunita Sharma"}</strong> to be the sole Executor of this my Will. In the event the said Executor predeceases me or is unable or unwilling to act, I appoint{" "}
-                    <strong>{state.executorAlternate?.name || "Rahul Sharma"}</strong> as the Alternate Executor.
-                  </div>
-                  <div style={{ textAlign: "justify" }}>
-                    <strong>3. RESIDUARY ESTATE:</strong> I give, devise, and bequeath all the rest, residue, and remainder of my estate, whether movable or immovable, unto{" "}
-                    <strong>{state.residuaryBeneficiaryName || "Sunita Sharma"}</strong> absolutely and forever.
-                  </div>
-                </>
-              )}
+                  );
+                });
+              })()}
             </div>
 
             {/* Seal / Footer */}

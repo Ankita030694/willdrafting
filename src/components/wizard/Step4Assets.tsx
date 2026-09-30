@@ -19,6 +19,7 @@ import {
   Boxes,
   Plus,
   Trash2,
+  Pencil,
   X,
   ShieldCheck,
   CheckCircle2,
@@ -59,6 +60,7 @@ export default function Step4Assets({
 
   const [assets, setAssets] = useState<Asset[]>(state.assets || []);
   const [modalOpen, setModalOpen] = useState(false);
+  const [editingAssetId, setEditingAssetId] = useState<string | null>(null);
   const [activeFilter, setActiveFilter] = useState<string>("all");
   const [expandedGroups, setExpandedGroups] = useState<Record<string, boolean>>({});
 
@@ -77,6 +79,7 @@ export default function Step4Assets({
   const [addressOrInstitution, setAddressOrInstitution] = useState("");
   const [ownership, setOwnership] = useState<"sole" | "joint">("sole");
   const [jointOwnerName, setJointOwnerName] = useState("");
+  const [ownershipPercentage, setOwnershipPercentage] = useState<number>(50);
   const [approximateValue, setApproximateValue] = useState<number>(7500000); // 75 Lakhs default
   const [hasLoan, setHasLoan] = useState(false);
 
@@ -154,6 +157,7 @@ export default function Step4Assets({
   };
 
   const handleOpenAdd = (defaultCat?: AssetCategory) => {
+    setEditingAssetId(null);
     const cat = defaultCat || "property";
     setCategory(cat);
     setTypeDetails(categoryConfigs[cat].quickTypes[0]);
@@ -167,34 +171,81 @@ export default function Step4Assets({
     setAddressOrInstitution("");
     setOwnership("sole");
     setJointOwnerName("");
+    setOwnershipPercentage(50);
     setHasLoan(false);
     setModalOpen(true);
   };
 
-  const handleAddAsset = (e: React.FormEvent) => {
+  const handleOpenEdit = (asset: Asset) => {
+    setEditingAssetId(asset.id);
+    setCategory(asset.category);
+    setTypeDetails(asset.typeDetails || (categoryConfigs[asset.category]?.quickTypes[0] || ""));
+    setName(asset.name);
+    setIdentifier(asset.identifier || "");
+    setAddressOrInstitution(asset.addressOrInstitution || "");
+    setOwnership(asset.ownership);
+    setJointOwnerName(asset.jointOwnerName || "");
+    setOwnershipPercentage(asset.ownershipPercentage ?? (asset.ownership === "joint" ? 50 : 100));
+    setApproximateValue(asset.approximateValue || 0);
+    setHasLoan(asset.hasLoan || false);
+    setModalOpen(true);
+  };
+
+  const handleSaveAsset = (e: React.FormEvent) => {
     e.preventDefault();
     if (!name.trim()) return;
 
-    const newAsset: Asset = {
-      id: `asset-${Date.now()}`,
-      category,
-      name: name.trim(),
-      typeDetails,
-      identifier: identifier.trim() || undefined as any,
-      addressOrInstitution: addressOrInstitution.trim() || undefined as any,
-      ownership,
-      jointOwnerName: ownership === "joint" ? jointOwnerName.trim() : undefined,
-      approximateValue,
-      hasLoan,
-    };
+    const finalOwnershipPercentage = ownership === "joint" ? (ownershipPercentage || 50) : 100;
 
-    const updatedAssets = [...assets, newAsset];
-    setAssets(updatedAssets);
-    onUpdate((prev) => ({
-      ...prev,
-      assets: updatedAssets,
-    }));
+    if (editingAssetId) {
+      const updatedAssets = assets.map((a) => {
+        if (a.id === editingAssetId) {
+          return {
+            ...a,
+            category,
+            name: name.trim(),
+            typeDetails,
+            identifier: identifier.trim() || (undefined as any),
+            addressOrInstitution: addressOrInstitution.trim() || (undefined as any),
+            ownership,
+            jointOwnerName: ownership === "joint" ? jointOwnerName.trim() : undefined,
+            ownershipPercentage: finalOwnershipPercentage,
+            approximateValue,
+            hasLoan,
+          };
+        }
+        return a;
+      });
 
+      setAssets(updatedAssets);
+      onUpdate((prev) => ({
+        ...prev,
+        assets: updatedAssets,
+      }));
+    } else {
+      const newAsset: Asset = {
+        id: `asset-${Date.now()}`,
+        category,
+        name: name.trim(),
+        typeDetails,
+        identifier: identifier.trim() || (undefined as any),
+        addressOrInstitution: addressOrInstitution.trim() || (undefined as any),
+        ownership,
+        jointOwnerName: ownership === "joint" ? jointOwnerName.trim() : undefined,
+        ownershipPercentage: finalOwnershipPercentage,
+        approximateValue,
+        hasLoan,
+      };
+
+      const updatedAssets = [...assets, newAsset];
+      setAssets(updatedAssets);
+      onUpdate((prev) => ({
+        ...prev,
+        assets: updatedAssets,
+      }));
+    }
+
+    setEditingAssetId(null);
     setModalOpen(false);
   };
 
@@ -601,7 +652,7 @@ export default function Step4Assets({
                           </div>
 
                           {/* 3. Ownership & Encumbrance Status */}
-                          <div className="flex items-center gap-2 shrink-0 lg:border-l lg:border-[#172228]/10 lg:pl-4">
+                          <div className="flex flex-col gap-1 shrink-0 lg:border-l lg:border-[#172228]/10 lg:pl-4">
                             <span
                               style={{
                                 fontSize: "0.72rem",
@@ -617,6 +668,17 @@ export default function Step4Assets({
                                 ? "Sole (100%)"
                                 : `Joint: ${asset.jointOwnerName || "Co-owner"}`}
                             </span>
+                            {asset.ownership === "joint" && (
+                              <span
+                                style={{
+                                  fontSize: "0.68rem",
+                                  fontWeight: 700,
+                                  color: "var(--color-gold)",
+                                }}
+                              >
+                                Your Share: {asset.ownershipPercentage || 50}% ({formatCurrency(Math.round((asset.approximateValue * (asset.ownershipPercentage || 50)) / 100))})
+                              </span>
+                            )}
                             {asset.hasLoan && (
                               <span
                                 style={{
@@ -627,6 +689,7 @@ export default function Step4Assets({
                                   padding: "0.18rem 0.5rem",
                                   borderRadius: "999px",
                                   whiteSpace: "nowrap",
+                                  alignSelf: "flex-start",
                                 }}
                               >
                                 Mortgaged
@@ -634,8 +697,8 @@ export default function Step4Assets({
                             )}
                           </div>
 
-                          {/* 4. Valuation & Delete Action */}
-                          <div className="flex items-center justify-between lg:justify-end gap-3 shrink-0 lg:w-[155px] lg:border-l lg:border-[#172228]/10 lg:pl-4">
+                          {/* 4. Valuation & Edit / Remove Actions */}
+                          <div className="flex items-center justify-between lg:justify-end gap-3 shrink-0 lg:w-[225px] lg:border-l lg:border-[#172228]/10 lg:pl-4">
                             <div className="text-left lg:text-right">
                               <span className="block text-[10px] uppercase tracking-wider text-[#6B7280] font-semibold">
                                 Valuation
@@ -645,26 +708,71 @@ export default function Step4Assets({
                               </span>
                             </div>
 
-                            <button
-                              type="button"
-                              onClick={() => handleDeleteAsset(asset.id)}
-                              aria-label="Remove asset"
-                              style={{
-                                background: "none",
-                                border: "none",
-                                color: "rgba(23, 34, 40, 0.35)",
-                                cursor: "pointer",
-                                padding: "0.35rem",
-                                borderRadius: "8px",
-                                display: "flex",
-                                alignItems: "center",
-                                justifyContent: "center",
-                              }}
-                              onMouseEnter={(e) => (e.currentTarget.style.color = "#E11D48")}
-                              onMouseLeave={(e) => (e.currentTarget.style.color = "rgba(23, 34, 40, 0.35)")}
-                            >
-                              <Trash2 size={15} />
-                            </button>
+                            <div style={{ display: "flex", alignItems: "center", gap: "0.35rem" }}>
+                              <button
+                                type="button"
+                                onClick={() => handleOpenEdit(asset)}
+                                aria-label={`Edit ${asset.name}`}
+                                style={{
+                                  padding: "0.3rem 0.65rem",
+                                  borderRadius: "8px",
+                                  border: "1px solid rgba(23, 34, 40, 0.15)",
+                                  backgroundColor: "#FFFFFF",
+                                  color: "var(--color-navy)",
+                                  fontSize: "0.74rem",
+                                  fontWeight: 700,
+                                  cursor: "pointer",
+                                  display: "inline-flex",
+                                  alignItems: "center",
+                                  gap: "0.3rem",
+                                  transition: "all 0.15s ease",
+                                }}
+                                onMouseEnter={(e) => {
+                                  e.currentTarget.style.backgroundColor = "rgba(198, 83, 120, 0.08)";
+                                  e.currentTarget.style.borderColor = "var(--color-gold)";
+                                  e.currentTarget.style.color = "var(--color-gold)";
+                                }}
+                                onMouseLeave={(e) => {
+                                  e.currentTarget.style.backgroundColor = "#FFFFFF";
+                                  e.currentTarget.style.borderColor = "rgba(23, 34, 40, 0.15)";
+                                  e.currentTarget.style.color = "var(--color-navy)";
+                                }}
+                              >
+                                <Pencil size={12} />
+                                <span>{isHi ? "संपादित करें" : "Edit"}</span>
+                              </button>
+
+                              <button
+                                type="button"
+                                onClick={() => handleDeleteAsset(asset.id)}
+                                aria-label={`Remove ${asset.name}`}
+                                style={{
+                                  padding: "0.3rem 0.6rem",
+                                  borderRadius: "8px",
+                                  border: "1px solid rgba(225, 29, 72, 0.2)",
+                                  backgroundColor: "#FFFFFF",
+                                  color: "#E11D48",
+                                  fontSize: "0.74rem",
+                                  fontWeight: 600,
+                                  cursor: "pointer",
+                                  display: "inline-flex",
+                                  alignItems: "center",
+                                  gap: "0.25rem",
+                                  transition: "all 0.15s ease",
+                                }}
+                                onMouseEnter={(e) => {
+                                  e.currentTarget.style.backgroundColor = "rgba(225, 29, 72, 0.08)";
+                                  e.currentTarget.style.borderColor = "#E11D48";
+                                }}
+                                onMouseLeave={(e) => {
+                                  e.currentTarget.style.backgroundColor = "#FFFFFF";
+                                  e.currentTarget.style.borderColor = "rgba(225, 29, 72, 0.2)";
+                                }}
+                              >
+                                <Trash2 size={12} />
+                                <span>{isHi ? "हटाएं" : "Remove"}</span>
+                              </button>
+                            </div>
                           </div>
                         </div>
                       );
@@ -826,10 +934,14 @@ export default function Step4Assets({
             <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "1.5rem" }}>
               <div>
                 <h3 style={{ margin: 0, color: "var(--color-navy)", fontSize: "1.35rem", fontWeight: 800 }}>
-                  Add Asset to Register
+                  {editingAssetId
+                    ? isHi ? "संपत्ति विवरण संपादित करें" : "Edit Asset Details"
+                    : isHi ? "रजिस्टर में संपत्ति जोड़ें" : "Add Asset to Register"}
                 </h3>
                 <p style={{ margin: "0.25rem 0 0", fontSize: "0.825rem", color: "var(--color-slate)" }}>
-                  Cataloged for distribution in your Will under Indian Succession Act 1925.
+                  {editingAssetId
+                    ? isHi ? "मौजूदा संपत्ति के स्वामित्व, विवरण और मूल्य में बदलाव करें।" : "Update existing asset ownership, classification, and valuation."
+                    : isHi ? "भारतीय उत्तराधिकार अधिनियम 1925 के तहत आपकी वसीयत के लिए सूचीबद्ध।" : "Cataloged for distribution in your Will under Indian Succession Act 1925."}
                 </p>
               </div>
 
@@ -853,7 +965,7 @@ export default function Step4Assets({
               </button>
             </div>
 
-            <form onSubmit={handleAddAsset} style={{ display: "flex", flexDirection: "column", gap: "1.5rem" }}>
+            <form onSubmit={handleSaveAsset} style={{ display: "flex", flexDirection: "column", gap: "1.5rem" }}>
               {/* Category Segmented Selector */}
               <div>
                 <label style={{ display: "block", fontSize: "0.825rem", fontWeight: 700, color: "var(--color-navy)", marginBottom: "0.5rem" }}>
@@ -1126,26 +1238,94 @@ export default function Step4Assets({
               </div>
 
               {ownership === "joint" && (
-                <div>
-                  <label style={{ display: "block", fontSize: "0.825rem", fontWeight: 700, color: "var(--color-navy)", marginBottom: "0.35rem" }}>
-                    Joint Owner Name & Relationship *
-                  </label>
-                  <input
-                    type="text"
-                    required
-                    placeholder="e.g., Sunita Sharma (Wife, 50% Share)"
-                    value={jointOwnerName}
-                    onChange={(e) => setJointOwnerName(e.target.value)}
-                    style={{
-                      width: "100%",
-                      padding: "0.75rem 1rem",
-                      borderRadius: "12px",
-                      border: "1px solid rgba(27, 42, 74, 0.12)",
-                      fontSize: "0.95rem",
-                      color: "var(--color-navy)",
-                      outline: "none",
-                    }}
-                  />
+                <div
+                  style={{
+                    backgroundColor: "rgba(198, 83, 120, 0.04)",
+                    border: "1.5px solid rgba(198, 83, 120, 0.22)",
+                    borderRadius: "14px",
+                    padding: "1rem",
+                    display: "flex",
+                    flexDirection: "column",
+                    gap: "0.85rem",
+                  }}
+                >
+                  <div>
+                    <label style={{ display: "block", fontSize: "0.825rem", fontWeight: 700, color: "var(--color-navy)", marginBottom: "0.35rem" }}>
+                      Joint Owner Name & Relationship *
+                    </label>
+                    <input
+                      type="text"
+                      required
+                      placeholder="e.g., Sunita Sharma (Wife)"
+                      value={jointOwnerName}
+                      onChange={(e) => setJointOwnerName(e.target.value)}
+                      style={{
+                        width: "100%",
+                        padding: "0.7rem 0.85rem",
+                        borderRadius: "12px",
+                        border: "1px solid rgba(27, 42, 74, 0.12)",
+                        fontSize: "0.85rem",
+                        color: "var(--color-navy)",
+                        backgroundColor: "#FFFFFF",
+                        outline: "none",
+                      }}
+                    />
+                  </div>
+
+                  <div>
+                    <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "0.35rem", flexWrap: "wrap", gap: "0.4rem" }}>
+                      <label style={{ fontSize: "0.825rem", fontWeight: 700, color: "var(--color-navy)" }}>
+                        What percentage of this asset do you own? / Your ownership share *
+                      </label>
+                      <div style={{ display: "flex", alignItems: "center", gap: "0.3rem" }}>
+                        <input
+                          type="number"
+                          min="1"
+                          max="99"
+                          value={ownershipPercentage}
+                          onChange={(e) => setOwnershipPercentage(Math.min(99, Math.max(1, parseInt(e.target.value, 10) || 50)))}
+                          style={{
+                            width: "56px",
+                            padding: "0.25rem 0.4rem",
+                            borderRadius: "8px",
+                            border: "1.5px solid var(--color-gold)",
+                            fontWeight: 800,
+                            fontSize: "0.95rem",
+                            textAlign: "center",
+                            color: "var(--color-navy)",
+                            backgroundColor: "#FFFFFF",
+                          }}
+                        />
+                        <span style={{ fontWeight: 800, color: "var(--color-navy)", fontSize: "0.9rem" }}>%</span>
+                      </div>
+                    </div>
+
+                    <div style={{ display: "flex", gap: "0.35rem", marginBottom: "0.5rem", flexWrap: "wrap" }}>
+                      {[25, 33, 40, 50, 60, 75].map((pct) => (
+                        <button
+                          key={pct}
+                          type="button"
+                          onClick={() => setOwnershipPercentage(pct)}
+                          style={{
+                            padding: "0.2rem 0.55rem",
+                            borderRadius: "6px",
+                            fontSize: "0.72rem",
+                            fontWeight: 700,
+                            backgroundColor: ownershipPercentage === pct ? "var(--color-gold)" : "#FFFFFF",
+                            color: ownershipPercentage === pct ? "#FFFFFF" : "var(--color-navy)",
+                            border: "1px solid rgba(27, 42, 74, 0.12)",
+                            cursor: "pointer",
+                          }}
+                        >
+                          {pct}%
+                        </button>
+                      ))}
+                    </div>
+
+                    <p style={{ margin: 0, fontSize: "0.74rem", color: "var(--color-gold)", fontWeight: 600, lineHeight: 1.35 }}>
+                      ⚖️ <strong>Legal Rule:</strong> The Will can only distribute the portion of the asset that you own ({ownershipPercentage}% share = {formatCurrency(Math.round((approximateValue * ownershipPercentage) / 100))}). The remaining {100 - ownershipPercentage}% remains with the co-owner.
+                    </p>
+                  </div>
                 </div>
               )}
 
@@ -1201,7 +1381,9 @@ export default function Step4Assets({
                     boxShadow: "0 4px 14px rgba(198, 83, 120, 0.3)",
                   }}
                 >
-                  Save Asset to Schedule
+                  {editingAssetId
+                    ? isHi ? "बदलाव सहेजें" : "Save Changes"
+                    : isHi ? "संपत्ति सहेजें" : "Save Asset to Schedule"}
                 </button>
               </div>
             </form>

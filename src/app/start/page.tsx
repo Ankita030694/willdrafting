@@ -26,17 +26,19 @@ import Step14FinalWill from "@/components/wizard/Step14FinalWill";
 import LanguageToggle from "@/components/ui/LanguageToggle";
 import { useLanguage } from "@/context/LanguageContext";
 import { applyLanguageTranslation } from "@/lib/translations";
+import {
+  getStepFromParam,
+  getUrlForStep,
+  getNextStepNumber,
+  getPrevStepNumber,
+} from "@/lib/questionnaireFlow";
 
 function WizardContent() {
   const router = useRouter();
   const params = useParams<{ step?: string }>();
   const searchParams = useSearchParams();
   const rawStepParam = params?.step || searchParams.get("step");
-  const parsedNum = rawStepParam ? parseInt(String(rawStepParam), 10) : null;
-  const initialStep =
-    parsedNum !== null && !Number.isNaN(parsedNum)
-      ? Math.min(14, Math.max(1, parsedNum + 1))
-      : 1;
+  const initialStep = getStepFromParam(rawStepParam);
 
   const [currentStep, setCurrentStep] = useState(initialStep);
   const [state, setState] = useState<WillDraftingState>(SCENARIO_1_STANDARD_MARRIED);
@@ -109,10 +111,7 @@ function WizardContent() {
     const clampedStep = Math.min(14, Math.max(1, step));
     setCurrentStep(clampedStep);
     setMobileSidebarOpen(false);
-    const targetUrl =
-      clampedStep <= 1
-        ? "/start"
-        : `/start/${String(clampedStep - 1).padStart(2, "0")}`;
+    const targetUrl = getUrlForStep(clampedStep);
     router.push(targetUrl);
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
@@ -236,10 +235,12 @@ function WizardContent() {
             <LanguageToggle lang={lang} onChangeLang={handleChangeLang} size="sm" />
             <div style={{ display: "flex", alignItems: "center", gap: "0.35rem" }}>
               <span style={{ fontWeight: 700, fontSize: "0.825rem" }}>
-                {lang === "hi" ? `चरण ${currentStep} / 14` : `Step ${currentStep} of 14`}
+                {currentStep <= 1
+                  ? (lang === "hi" ? "स्वागत" : "Welcome")
+                  : (lang === "hi" ? `चरण ${currentStep - 1} / 13` : `Step ${currentStep - 1} of 13`)}
               </span>
               <span style={{ fontSize: "0.7rem", color: "var(--color-gold)", fontWeight: 700, padding: "0.15rem 0.45rem", borderRadius: "999px", backgroundColor: "rgba(198, 83, 120, 0.15)" }}>
-                {Math.round(((currentStep - 1) / 13) * 100)}%
+                {currentStep <= 1 ? "0%" : `${Math.round(((currentStep - 1) / 13) * 100)}%`}
               </span>
             </div>
           </div>

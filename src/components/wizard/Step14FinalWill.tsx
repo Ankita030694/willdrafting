@@ -2,8 +2,9 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
-import { WillDraftingState } from "@/lib/willDraftingStore";
+import { WillDraftingState, generateWillClauses } from "@/lib/willDraftingStore";
 import AppleSwitch from "@/components/dashboard/AppleSwitch";
+import WillAssetDistributionTable from "@/components/wizard/WillAssetDistributionTable";
 import {
   Check,
   Printer,
@@ -206,20 +207,56 @@ export default function Step14FinalWill({ state, onBack }: Step14FinalWillProps)
           </div>
 
           {/* Clauses from Store */}
-          {state.clauses && state.clauses.length > 0 ? (
-            state.clauses.map((clause, idx) => (
-              <div key={clause.id || idx} style={{ textAlign: "justify" }}>
-                <div style={{ fontWeight: 800, color: "#0F172A", marginBottom: "0.45rem", textTransform: "uppercase", fontSize: "0.95rem", letterSpacing: "0.02em" }}>
-                  {clause.clauseNumber || idx + 1}. {clause.title}
+          {(() => {
+            const activeClauses = state.clauses && state.clauses.length > 0 ? state.clauses : generateWillClauses(state);
+            return activeClauses.map((clause, idx) => {
+              const isAssetClause =
+                clause.id === "cls-assets" ||
+                clause.category === "Specific Bequests" ||
+                clause.title.toLowerCase().includes("movable & immovable") ||
+                clause.title.toLowerCase().includes("asset");
+
+              return (
+                <div key={clause.id || idx} style={{ textAlign: "justify" }}>
+                  <div
+                    style={{
+                      fontWeight: 800,
+                      color: "#0F172A",
+                      marginBottom: "0.45rem",
+                      textTransform: "uppercase",
+                      fontSize: "0.95rem",
+                      letterSpacing: "0.02em",
+                    }}
+                  >
+                    {clause.clauseNumber || idx + 1}. {clause.title}
+                  </div>
+
+                  {isAssetClause ? (
+                    <div>
+                      <p style={{ margin: "0 0 0.65rem 0", color: "#1E293B", lineHeight: 1.8 }}>
+                        I hereby devise, bequeath, and direct the devolution of my specific movable and immovable properties, including my respective undivided shares in jointly held properties, to the respective beneficiaries strictly in accordance with the Schedule of Asset Distribution set forth below:
+                      </p>
+
+                      <WillAssetDistributionTable
+                        assets={state.assets}
+                        allocations={state.allocations}
+                        familyMembers={state.familyMembers}
+                        residuaryBeneficiaryName={state.residuaryBeneficiaryName}
+                      />
+
+                      <p style={{ margin: "0.45rem 0 0 0", color: "#475569", fontSize: "0.85rem", lineHeight: 1.6, fontStyle: "italic" }}>
+                        All beneficiaries named in the Schedule above shall take their respective devised shares absolutely and forever. If any specific bequest fails on account of prior demise of a beneficiary without surviving issues, such share shall fall into and be administered under the Residuary Clause herein.
+                      </p>
+                    </div>
+                  ) : (
+                    <div style={{ whiteSpace: "pre-line", color: "#1E293B", lineHeight: 1.85 }}>
+                      {clause.currentText || clause.standardText}
+                    </div>
+                  )}
                 </div>
-                <div style={{ whiteSpace: "pre-line", color: "#1E293B", lineHeight: 1.85 }}>
-                  {clause.currentText || clause.standardText}
-                </div>
-              </div>
-            ))
-          ) : (
-            <div>Compiling authoritative legal clauses...</div>
-          )}
+              );
+            });
+          })()}
         </div>
 
         {/* Seal Footer */}

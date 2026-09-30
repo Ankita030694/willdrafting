@@ -62,6 +62,7 @@ export interface Asset {
   addressOrInstitution: string; // e.g., "DLF Phase 5, Gurgaon" or "HDFC Bank, Cyber City"
   ownership: "sole" | "joint";
   jointOwnerName?: string;
+  ownershipPercentage?: number; // Testator's ownership share % (100 for sole, e.g. 50/40 for joint)
   approximateValue: number; // in INR
   hasLoan: boolean;
   loanDetails?: string;
@@ -87,6 +88,7 @@ export interface PersonContact {
 }
 
 export interface SpecialWishes {
+  hasNoSpecialWishes?: boolean;
   jewelleryInstructions: string;
   personalBelongings: string;
   petsCare: string;

@@ -25,6 +25,23 @@ import {
   ChevronDown,
 } from "lucide-react";
 
+interface SidebarStepItem {
+  num: number;
+  displayNum?: number;
+  isWelcome?: boolean;
+  title: string;
+  hindi: string;
+  icon: React.ElementType;
+  optionalNote?: string;
+}
+
+interface SidebarPhaseItem {
+  id: string;
+  title: string;
+  hindiTitle: string;
+  steps: SidebarStepItem[];
+}
+
 interface WizardSidebarProps {
   currentStep: number;
   onJumpToStep: (step: number) => void;
@@ -43,15 +60,15 @@ export default function WizardSidebar({
   const isHi = lang === "hi";
   const hasMinors = state.familyMembers.some((f) => f.isMinor);
 
-  const phases = [
+  const phases: SidebarPhaseItem[] = [
     {
       id: "phase-1",
       title: "Phase 1: Personal & Family",
       hindiTitle: "व्यक्तिगत एवं परिवार",
       steps: [
-        { num: 1, title: "Welcome & Overview", hindi: "स्वागत", icon: Sparkles },
-        { num: 2, title: "About You", hindi: "अपनी जानकारी", icon: User },
-        { num: 3, title: "My Family", hindi: "परिवार", icon: Users },
+        { num: 1, isWelcome: true, title: "Welcome & Overview", hindi: "स्वागत", icon: Sparkles },
+        { num: 2, displayNum: 1, title: "About You", hindi: "अपनी जानकारी", icon: User },
+        { num: 3, displayNum: 2, title: "My Family", hindi: "परिवार", icon: Users },
       ],
     },
     {
@@ -59,10 +76,10 @@ export default function WizardSidebar({
       title: "Phase 2: Estate & Wealth",
       hindiTitle: "संपत्ति एवं धन",
       steps: [
-        { num: 4, title: "Assets Register", hindi: "संपत्ति", icon: Landmark },
-        { num: 5, title: "Allocations", hindi: "बंटवारा", icon: PieChart },
-        { num: 6, title: "Executors", hindi: "प्रबंधक", icon: Scale },
-        { num: 7, title: "Testamentary Guardians", hindi: "अभिभावक", icon: ShieldCheck, optionalNote: !hasMinors ? "(No Minors)" : undefined },
+        { num: 4, displayNum: 3, title: "Assets Register", hindi: "संपत्ति", icon: Landmark },
+        { num: 5, displayNum: 4, title: "Allocations", hindi: "बंटवारा", icon: PieChart },
+        { num: 6, displayNum: 5, title: "Executors", hindi: "प्रबंधक", icon: Scale },
+        { num: 7, displayNum: 6, title: "Testamentary Guardians", hindi: "अभिभावक", icon: ShieldCheck, optionalNote: !hasMinors ? "(No Minors)" : undefined },
       ],
     },
     {
@@ -70,8 +87,8 @@ export default function WizardSidebar({
       title: "Phase 3: Directives & Intent",
       hindiTitle: "विशेष इच्छाएं",
       steps: [
-        { num: 8, title: "Special Wishes", hindi: "उपहार", icon: ScrollText },
-        { num: 9, title: "Emotional Purpose", hindi: "संदेश", icon: HeartHandshake },
+        { num: 8, displayNum: 7, title: "Special Wishes", hindi: "उपहार", icon: ScrollText },
+        { num: 9, displayNum: 8, title: "Emotional Purpose", hindi: "संदेश", icon: HeartHandshake },
       ],
     },
     {
@@ -79,11 +96,11 @@ export default function WizardSidebar({
       title: "Phase 4: Verification & Will",
       hindiTitle: "कानूनी वसीयत",
       steps: [
-        { num: 10, title: "Full Review", hindi: "समीक्षा", icon: Search },
-        { num: 11, title: "Legal Health Check", hindi: "कानूनी जांच", icon: Activity },
-        { num: 12, title: "Clause Assembly", hindi: "संकलन", icon: Cpu },
-        { num: 13, title: "Plan Selection", hindi: "योजना", icon: Tag },
-        { num: 14, title: "Final Will Document", hindi: "मूल वसीयत", icon: FileText },
+        { num: 10, displayNum: 9, title: "Full Review", hindi: "समीक्षा", icon: Search },
+        { num: 11, displayNum: 10, title: "Legal Health Check", hindi: "कानूनी जांच", icon: Activity },
+        { num: 12, displayNum: 11, title: "Clause Assembly", hindi: "संकलन", icon: Cpu },
+        { num: 13, displayNum: 12, title: "Plan Selection", hindi: "योजना", icon: Tag },
+        { num: 14, displayNum: 13, title: "Final Will Document", hindi: "मूल वसीयत", icon: FileText },
       ],
     },
   ];
@@ -120,8 +137,11 @@ export default function WizardSidebar({
     }));
   };
 
-  const totalSteps = 14;
-  const progressPercent = Math.round(((currentStep - 1) / (totalSteps - 1)) * 100);
+  const totalSteps = 13;
+  const progressPercent =
+    currentStep <= 1
+      ? 0
+      : Math.min(100, Math.round(((currentStep - 1) / totalSteps) * 100));
 
   // SVG Circular progress
   const ringRadius = 18;
@@ -242,7 +262,9 @@ export default function WizardSidebar({
 
           <div style={{ flex: 1, minWidth: 0 }}>
             <div style={{ fontSize: "0.8rem", fontWeight: 700, color: "#FFFFFF" }}>
-              {isHi ? `चरण ${currentStep} / ${totalSteps}` : `Step ${currentStep} of ${totalSteps}`}
+              {currentStep <= 1
+                ? (isHi ? "स्वागत एवं अवलोकन" : "Welcome Overview")
+                : (isHi ? `चरण ${currentStep - 1} / ${totalSteps}` : `Step ${currentStep - 1} of ${totalSteps}`)}
             </div>
             <div style={{ fontSize: "0.72rem", color: "rgba(255, 255, 255, 0.6)", marginTop: "2px" }}>
               {currentStep === 14
@@ -414,7 +436,13 @@ export default function WizardSidebar({
                         boxShadow: isActive ? "0 0 10px rgba(198, 83, 120, 0.45)" : "none",
                       }}
                     >
-                      {isCompleted ? <Check size={12} strokeWidth={3} /> : step.num}
+                      {isCompleted ? (
+                        <Check size={12} strokeWidth={3} />
+                      ) : step.isWelcome ? (
+                        <Sparkles size={11} strokeWidth={2.5} />
+                      ) : (
+                        step.displayNum ?? (step.num - 1)
+                      )}
                     </span>
 
                     {/* Step Icon */}
