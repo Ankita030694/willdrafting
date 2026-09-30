@@ -1,11 +1,11 @@
 "use client";
 
 import React from "react";
-import { Asset, Allocation, FamilyMember } from "@/lib/willDraftingStore";
+import { Asset, BeneficiaryAllocation, FamilyMember } from "@/lib/willDraftingStore";
 
 interface WillAssetDistributionTableProps {
   assets: Asset[];
-  allocations: Allocation[];
+  allocations: BeneficiaryAllocation[];
   familyMembers?: FamilyMember[];
   residuaryBeneficiaryName?: string;
   isPrintMode?: boolean;
