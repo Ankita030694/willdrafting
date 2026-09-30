@@ -1,4 +1,8 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# WillDrafting.com
+
+A legally compliant Will drafting platform built with [Next.js](https://nextjs.org), designed for Indian users. Guides testators through a structured questionnaire to generate a fully formatted Last Will & Testament — compliant with the Indian Succession Act, 1925.
+
+
 
 ## Getting Started
 
