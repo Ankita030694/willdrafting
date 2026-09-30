@@ -135,8 +135,8 @@ export default function Step7Guardians({
               gap: "0.4rem",
               padding: "0.2rem 0.6rem",
               borderRadius: "999px",
-              backgroundColor: "rgba(201, 162, 39, 0.12)",
-              color: "var(--color-navy)",
+              backgroundColor: "rgba(198, 83, 120, 0.12)",
+              color: "var(--color-gold)",
               fontSize: "0.72rem",
               fontWeight: 700,
               textTransform: "uppercase",
@@ -161,7 +161,7 @@ export default function Step7Guardians({
           <h2 style={{ fontSize: "1.45rem", fontWeight: 800, color: "var(--color-navy)", margin: 0, letterSpacing: "-0.02em" }}>
             Testamentary Guardianship
           </h2>
-          <span style={{ fontSize: "0.88rem", color: "#8A6D1B", fontWeight: 600 }}>
+          <span style={{ fontSize: "0.88rem", color: "var(--color-gold)", fontWeight: 600 }}>
             (नाबालिग बच्चों के कानूनी अभिभावक / गार्जियन)
           </span>
         </div>
@@ -299,7 +299,7 @@ export default function Step7Guardians({
                 borderRadius: "10px",
                 fontSize: "0.9rem",
                 fontWeight: 700,
-                boxShadow: "0 4px 16px rgba(201, 162, 39, 0.25)",
+                boxShadow: "0 4px 16px rgba(198, 83, 120, 0.25)",
                 cursor: "pointer",
                 display: "inline-flex",
                 alignItems: "center",
@@ -353,7 +353,7 @@ export default function Step7Guardians({
                       width: "32px",
                       height: "32px",
                       borderRadius: "8px",
-                      backgroundColor: "rgba(201, 162, 39, 0.15)",
+                      backgroundColor: "rgba(198, 83, 120, 0.12)",
                       color: "var(--color-gold)",
                       display: "flex",
                       alignItems: "center",
@@ -405,8 +405,8 @@ export default function Step7Guardians({
                           style={{
                             padding: "0.35rem 0.65rem",
                             borderRadius: "8px",
-                            border: isSel ? "1.5px solid var(--color-gold)" : "1px solid rgba(27, 42, 74, 0.12)",
-                            backgroundColor: isSel ? "rgba(201, 162, 39, 0.1)" : "#FAFAFA",
+                            border: isSel ? "1.5px solid var(--color-gold)" : "1px solid rgba(23, 34, 40, 0.12)",
+                            backgroundColor: isSel ? "rgba(198, 83, 120, 0.1)" : "#FAFAFA",
                             cursor: "pointer",
                             display: "inline-flex",
                             alignItems: "center",
@@ -598,7 +598,7 @@ export default function Step7Guardians({
                       width: "44px",
                       height: "44px",
                       borderRadius: "50%",
-                      backgroundColor: "rgba(201, 162, 39, 0.12)",
+                      backgroundColor: "rgba(198, 83, 120, 0.12)",
                       color: "var(--color-gold)",
                       display: "flex",
                       alignItems: "center",
@@ -652,8 +652,8 @@ export default function Step7Guardians({
                                 style={{
                                   padding: "0.35rem 0.65rem",
                                   borderRadius: "8px",
-                                  border: isSel ? "1.5px solid var(--color-gold)" : "1px solid rgba(27, 42, 74, 0.12)",
-                                  backgroundColor: isSel ? "rgba(201, 162, 39, 0.1)" : "#FAFAFA",
+                                  border: isSel ? "1.5px solid var(--color-gold)" : "1px solid rgba(23, 34, 40, 0.12)",
+                                  backgroundColor: isSel ? "rgba(198, 83, 120, 0.1)" : "#FAFAFA",
                                   cursor: "pointer",
                                   display: "inline-flex",
                                   alignItems: "center",
@@ -807,7 +807,7 @@ export default function Step7Guardians({
                 borderRadius: "10px",
                 fontSize: "0.9rem",
                 fontWeight: 700,
-                boxShadow: "0 4px 16px rgba(201, 162, 39, 0.25)",
+                boxShadow: "0 4px 16px rgba(198, 83, 120, 0.25)",
                 cursor: "pointer",
                 display: "inline-flex",
                 alignItems: "center",

@@ -62,8 +62,8 @@ export default function QuickChipGroup({
                 borderRadius: "9999px",
                 border: selected
                   ? "1.5px solid var(--color-gold)"
-                  : "1.5px solid rgba(27, 42, 74, 0.12)",
-                backgroundColor: selected ? "rgba(212, 175, 55, 0.14)" : "#FFFFFF",
+                  : "1.5px solid rgba(23, 34, 40, 0.12)",
+                backgroundColor: selected ? "rgba(198, 83, 120, 0.12)" : "#FFFFFF",
                 color: selected ? "var(--color-navy)" : "#334155",
                 fontSize: "0.82rem",
                 fontWeight: selected ? 700 : 500,
@@ -79,7 +79,7 @@ export default function QuickChipGroup({
                 <span
                   style={{
                     fontSize: "0.72rem",
-                    color: selected ? "#8A6D1B" : "#94A3B8",
+                    color: selected ? "var(--color-gold)" : "#94A3B8",
                     fontWeight: 400,
                   }}
                 >

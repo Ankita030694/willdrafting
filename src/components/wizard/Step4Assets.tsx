@@ -67,19 +67,19 @@ export default function Step4Assets({
     property: {
       label: "Real Estate",
       Icon: Building2,
-      color: "#1B2A4A",
+      color: "#172228",
       quickTypes: ["Residential Flat", "Bungalow / Villa", "Maternal Inherited Property", "Agricultural Land", "Commercial Office"],
     },
     bank_account: {
       label: "Bank & FD",
       Icon: Landmark,
-      color: "#C9A227",
+      color: "#C65378",
       quickTypes: ["Salary Account", "Savings Account", "Fixed Deposit (FD)", "PPF Account", "NPS Account", "Sukanya Samriddhi Account"],
     },
     investments: {
       label: "Mutual Funds",
       Icon: TrendingUp,
-      color: "#7C9473",
+      color: "#5F7E75",
       quickTypes: ["Mutual Fund Portfolio", "Demat / Equities", "SIP Folios", "NPS Account", "Sovereign Gold Bonds"],
     },
     shares: {
@@ -91,7 +91,7 @@ export default function Step4Assets({
     mutual_funds: {
       label: "Mutual Funds",
       Icon: TrendingUp,
-      color: "#7C9473",
+      color: "#5F7E75",
       quickTypes: ["Mutual Fund Portfolio", "SIP Folios", "Large-Cap Index Funds", "Debt / Hybrid MFs"],
     },
     jewellery: {
@@ -208,7 +208,7 @@ export default function Step4Assets({
       {/* Compact Header with Stats & Actions */}
       <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: "0.75rem" }}>
         <div>
-          <div style={{ display: "inline-flex", alignItems: "center", gap: "0.4rem", padding: "0.2rem 0.65rem", borderRadius: "999px", backgroundColor: "rgba(201, 162, 39, 0.12)", color: "var(--color-navy)", fontSize: "0.72rem", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.05em", marginBottom: "0.25rem" }}>
+          <div style={{ display: "inline-flex", alignItems: "center", gap: "0.4rem", padding: "0.2rem 0.65rem", borderRadius: "999px", backgroundColor: "rgba(198, 83, 120, 0.12)", color: "var(--color-gold)", fontSize: "0.72rem", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.05em", marginBottom: "0.25rem" }}>
             <span style={{ width: "6px", height: "6px", borderRadius: "50%", backgroundColor: "var(--color-gold)" }}></span>
             Step 4 of 14 • Assets & Wealth Register
           </div>
@@ -216,10 +216,10 @@ export default function Step4Assets({
             <h2 style={{ fontSize: "1.45rem", fontWeight: 800, color: "var(--color-navy)", margin: 0, letterSpacing: "-0.02em" }}>
               Catalog Your Wealth Portfolio
             </h2>
-            <span style={{ fontSize: "0.88rem", color: "#8A6D1B", fontWeight: 600 }}>
+            <span style={{ fontSize: "0.88rem", color: "var(--color-gold)", fontWeight: 600 }}>
               (संपत्ति, बैंक खाता, सोना एवं शेयर)
             </span>
-            <span style={{ fontSize: "0.82rem", fontWeight: 700, color: "var(--color-gold)", backgroundColor: "rgba(201, 162, 39, 0.12)", padding: "0.15rem 0.55rem", borderRadius: "999px" }}>
+            <span style={{ fontSize: "0.82rem", fontWeight: 700, color: "var(--color-gold)", backgroundColor: "rgba(198, 83, 120, 0.12)", padding: "0.15rem 0.55rem", borderRadius: "999px" }}>
               Total: {formatCurrency(totalAssetValue)} ({assets.length} items)
             </span>
           </div>
@@ -270,7 +270,7 @@ export default function Step4Assets({
               alignItems: "center",
               gap: "0.35rem",
               fontWeight: 700,
-              boxShadow: "0 2px 10px rgba(201, 162, 39, 0.25)",
+              boxShadow: "0 2px 10px rgba(198, 83, 120, 0.25)",
               cursor: "pointer",
             }}
           >
@@ -398,7 +398,7 @@ export default function Step4Assets({
                         style={{
                           fontSize: "0.65rem",
                           fontWeight: 700,
-                          backgroundColor: "rgba(201, 162, 39, 0.15)",
+                          backgroundColor: "rgba(198, 83, 120, 0.12)",
                           color: "var(--color-navy)",
                           padding: "0.15rem 0.45rem",
                           borderRadius: "999px",
@@ -495,7 +495,7 @@ export default function Step4Assets({
             borderRadius: "10px",
             fontSize: "0.9rem",
             fontWeight: 700,
-            boxShadow: "0 4px 16px rgba(201, 162, 39, 0.25)",
+            boxShadow: "0 4px 16px rgba(198, 83, 120, 0.25)",
             cursor: "pointer",
             display: "inline-flex",
             alignItems: "center",
@@ -512,7 +512,7 @@ export default function Step4Assets({
           style={{
             position: "fixed",
             inset: 0,
-            backgroundColor: "rgba(22, 35, 60, 0.65)",
+            backgroundColor: "rgba(23, 34, 40, 0.65)",
             backdropFilter: "blur(14px)",
             zIndex: 9999,
             display: "flex",
@@ -750,7 +750,7 @@ export default function Step4Assets({
                           borderRadius: "999px",
                           fontSize: "0.725rem",
                           fontWeight: 600,
-                          backgroundColor: addressOrInstitution === bank ? "rgba(201, 162, 39, 0.15)" : "rgba(27, 42, 74, 0.04)",
+                          backgroundColor: addressOrInstitution === bank ? "rgba(198, 83, 120, 0.12)" : "rgba(23, 34, 40, 0.04)",
                           border: addressOrInstitution === bank ? "1px solid var(--color-gold)" : "1px solid transparent",
                           color: "var(--color-navy)",
                           cursor: "pointer",
@@ -801,8 +801,8 @@ export default function Step4Assets({
                         fontSize: "0.725rem",
                         fontWeight: 700,
                         backgroundColor: approximateValue === preset.val ? "var(--color-gold)" : "#FFFFFF",
-                        color: approximateValue === preset.val ? "var(--color-navy)" : "var(--color-slate)",
-                        border: "1px solid rgba(27, 42, 74, 0.12)",
+                        color: approximateValue === preset.val ? "#FFFFFF" : "var(--color-slate)",
+                        border: "1px solid rgba(23, 34, 40, 0.12)",
                         cursor: "pointer",
                       }}
                     >
@@ -922,7 +922,7 @@ export default function Step4Assets({
                     borderRadius: "12px",
                     fontWeight: 700,
                     cursor: "pointer",
-                    boxShadow: "0 4px 14px rgba(201, 162, 39, 0.3)",
+                    boxShadow: "0 4px 14px rgba(198, 83, 120, 0.3)",
                   }}
                 >
                   Save Asset to Schedule

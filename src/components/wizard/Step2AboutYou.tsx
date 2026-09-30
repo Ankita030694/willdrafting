@@ -167,7 +167,7 @@ export default function Step2AboutYou({
       {/* Compact Header */}
       <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: "0.5rem" }}>
         <div>
-          <div style={{ display: "inline-flex", alignItems: "center", gap: "0.4rem", padding: "0.2rem 0.65rem", borderRadius: "999px", backgroundColor: "rgba(201, 162, 39, 0.12)", color: "var(--color-navy)", fontSize: "0.72rem", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.05em", marginBottom: "0.25rem" }}>
+          <div style={{ display: "inline-flex", alignItems: "center", gap: "0.4rem", padding: "0.2rem 0.65rem", borderRadius: "999px", backgroundColor: "rgba(198, 83, 120, 0.12)", color: "var(--color-gold)", fontSize: "0.72rem", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.05em", marginBottom: "0.25rem" }}>
             <Sparkles size={12} color="var(--color-gold)" />
             Step 2 of 14 • Testator Identity
           </div>
@@ -175,7 +175,7 @@ export default function Step2AboutYou({
             <h2 style={{ fontSize: "1.45rem", fontWeight: 800, color: "var(--color-navy)", margin: 0, letterSpacing: "-0.02em" }}>
               Tell us about yourself
             </h2>
-            <span style={{ fontSize: "0.95rem", color: "#8A6D1B", fontWeight: 600 }}>
+            <span style={{ fontSize: "0.95rem", color: "var(--color-gold)", fontWeight: 600 }}>
               (अपनी जानकारी दर्ज करें)
             </span>
           </div>
@@ -224,66 +224,59 @@ export default function Step2AboutYou({
         </div>
       )}
 
-      <form onSubmit={handleSubmit} style={{ display: "flex", flexDirection: "column", gap: "0.85rem", flex: 1, minHeight: 0 }}>
-        {/* 2-Column Full Width Bento Grid */}
+      <form
+        onSubmit={handleSubmit}
+        className="w-full flex-1 min-h-0 flex flex-col gap-4 overflow-x-hidden"
+      >
+        {/* Single Unified Full-Width Form Container */}
         <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: "1.1fr 1fr",
-            gap: "0.85rem",
-            flex: 1,
-            minHeight: 0,
-          }}
+          className="step2-form-card w-full flex-1 min-h-0 overflow-y-auto overflow-x-hidden bg-white rounded-[20px] border border-[#172228]/10 p-4 sm:p-6 lg:px-8 lg:py-6 shadow-sm flex flex-col gap-6"
         >
-          {/* Left Column: Official Identity & Domicile */}
-          <div
-            style={{
-              background: "#FFFFFF",
-              borderRadius: "18px",
-              border: "1px solid rgba(27, 42, 74, 0.08)",
-              padding: "1.1rem 1.25rem",
-              boxShadow: "0 2px 12px rgba(27, 42, 74, 0.03)",
-              display: "flex",
-              flexDirection: "column",
-              gap: "0.75rem",
-              overflowY: "auto",
-            }}
-          >
-            <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", borderBottom: "1px solid rgba(27, 42, 74, 0.05)", paddingBottom: "0.4rem" }}>
-              <span style={{ fontSize: "0.72rem", fontWeight: 700, color: "var(--color-slate)", textTransform: "uppercase", letterSpacing: "0.06em" }}>
-                Official Identity & Domicile
-              </span>
-            </div>
-
-            {/* Full Legal Name */}
-            <div>
-              <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "0.3rem" }}>
-                <label style={{ fontSize: "0.8rem", fontWeight: 700, color: "var(--color-navy)" }}>
+          {/* Main 2-Column Desktop / 1-Column Mobile Fields Grid */}
+          <div className="step2-fields-grid grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-6 items-end w-full min-w-0">
+            {/* 1. Full Legal Name */}
+            <div className="flex flex-col min-w-0 w-full">
+              <div className="flex flex-wrap justify-between items-center gap-2 mb-1.5">
+                <label className="text-[11px] font-bold tracking-[0.14em] uppercase text-[#6B7280]">
                   Full Legal Name (as per Aadhaar / PAN) *
                 </label>
-                <div style={{ display: "flex", gap: "0.25rem" }}>
-                  {["Mr.", "Mrs.", "Ms.", "Dr.", "Adv."].map((title) => (
-                    <button
-                      key={title}
-                      type="button"
-                      onClick={() => {
-                        const currentName = formData.fullName.replace(/^(Mr\.|Mrs\.|Ms\.|Dr\.|Adv\.)\s*/i, "");
-                        setFormData({ ...formData, fullName: `${title} ${currentName}`.trim() });
-                      }}
-                      style={{
-                        padding: "0.15rem 0.45rem",
-                        borderRadius: "999px",
-                        fontSize: "0.68rem",
-                        fontWeight: 600,
-                        border: "1px solid rgba(27, 42, 74, 0.12)",
-                        backgroundColor: formData.fullName.startsWith(title) ? "var(--color-navy)" : "rgba(27, 42, 74, 0.04)",
-                        color: formData.fullName.startsWith(title) ? "#FFFFFF" : "var(--color-slate)",
-                        cursor: "pointer",
-                      }}
-                    >
-                      {title}
-                    </button>
-                  ))}
+                <div className="flex flex-wrap gap-1">
+                  {["Mr.", "Mrs.", "Ms.", "Dr.", "Adv."].map((title) => {
+                    const active = formData.fullName.startsWith(title);
+                    return (
+                      <button
+                        key={title}
+                        type="button"
+                        onClick={() => {
+                          const currentName = formData.fullName.replace(
+                            /^(Mr\.|Mrs\.|Ms\.|Dr\.|Adv\.)\s*/i,
+                            ""
+                          );
+                          setFormData({
+                            ...formData,
+                            fullName: `${title} ${currentName}`.trim(),
+                          });
+                        }}
+                        style={{
+                          padding: "0.12rem 0.45rem",
+                          borderRadius: "999px",
+                          fontSize: "0.66rem",
+                          fontWeight: 700,
+                          border: active
+                            ? "1px solid var(--color-gold)"
+                            : "1px solid #E5E7EB",
+                          backgroundColor: active
+                            ? "var(--color-gold)"
+                            : "transparent",
+                          color: active ? "#FFFFFF" : "#6B7280",
+                          cursor: "pointer",
+                          transition: "all 0.15s ease",
+                        }}
+                      >
+                        {title}
+                      </button>
+                    );
+                  })}
                 </div>
               </div>
               <input
@@ -292,243 +285,263 @@ export default function Step2AboutYou({
                 name="fullName"
                 placeholder="Dr. Rohit Srivastava"
                 value={formData.fullName}
-                onChange={(e) => setFormData({ ...formData, fullName: e.target.value })}
+                onChange={(e) =>
+                  setFormData({ ...formData, fullName: e.target.value })
+                }
+                className="w-full bg-transparent border-0 border-b border-[#D1D5DB] focus:border-[#111827] focus:ring-0 px-0 py-2 text-[15px] text-[#111827] placeholder:text-[#9CA3AF] placeholder:font-light outline-none transition-colors rounded-none shadow-none"
                 style={{
-                  width: "100%",
-                  padding: "0.55rem 0.85rem",
-                  borderRadius: "10px",
-                  border: "1px solid rgba(27, 42, 74, 0.12)",
-                  fontSize: "0.85rem",
-                  color: "var(--color-navy)",
-                  backgroundColor: "rgba(27, 42, 74, 0.02)",
-                  outline: "none",
+                  borderTop: "none",
+                  borderLeft: "none",
+                  borderRight: "none",
+                  borderRadius: 0,
+                  paddingLeft: 0,
+                  paddingRight: 0,
+                  backgroundColor: "transparent",
                 }}
               />
             </div>
 
-            {/* Parent Name (Son / Daughter of) & Workplace */}
-            <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "0.65rem" }}>
-              <div>
-                <label style={{ display: "block", fontSize: "0.75rem", fontWeight: 700, color: "var(--color-navy)", marginBottom: "0.25rem" }}>
-                  Parent&apos;s Name (Son/Daughter of)
-                </label>
-                <input
-                  type="text"
-                  name="fatherOrMotherName"
-                  placeholder="Late Mrs. Manju Srivastava"
-                  value={formData.fatherOrMotherName || ""}
-                  onChange={(e) => setFormData({ ...formData, fatherOrMotherName: e.target.value })}
-                  style={{
-                    width: "100%",
-                    padding: "0.5rem 0.75rem",
-                    borderRadius: "8px",
-                    border: "1px solid rgba(27, 42, 74, 0.12)",
-                    fontSize: "0.82rem",
-                    color: "var(--color-navy)",
-                    backgroundColor: "rgba(27, 42, 74, 0.02)",
-                    outline: "none",
-                  }}
-                />
-              </div>
+            {/* 2. Parent's Name (Son/Daughter of) */}
+            <div className="flex flex-col min-w-0 w-full">
+              <label className="text-[11px] font-bold tracking-[0.14em] uppercase text-[#6B7280] mb-1.5">
+                Parent&apos;s Name (Son/Daughter of)
+              </label>
+              <input
+                type="text"
+                name="fatherOrMotherName"
+                placeholder="Late Mrs. Manju Srivastava"
+                value={formData.fatherOrMotherName || ""}
+                onChange={(e) =>
+                  setFormData({
+                    ...formData,
+                    fatherOrMotherName: e.target.value,
+                  })
+                }
+                className="w-full bg-transparent border-0 border-b border-[#D1D5DB] focus:border-[#111827] focus:ring-0 px-0 py-2 text-[15px] text-[#111827] placeholder:text-[#9CA3AF] placeholder:font-light outline-none transition-colors rounded-none shadow-none"
+                style={{
+                  borderTop: "none",
+                  borderLeft: "none",
+                  borderRight: "none",
+                  borderRadius: 0,
+                  paddingLeft: 0,
+                  paddingRight: 0,
+                  backgroundColor: "transparent",
+                }}
+              />
+            </div>
 
-              <div>
-                <label style={{ display: "block", fontSize: "0.75rem", fontWeight: 700, color: "var(--color-navy)", marginBottom: "0.25rem" }}>
-                  Workplace / Institutional Affiliation
-                </label>
-                <input
-                  type="text"
-                  name="workplace"
-                  placeholder="Room 505, Dept of Biosciences, IIT Bombay"
-                  value={formData.workplace || ""}
-                  onChange={(e) => setFormData({ ...formData, workplace: e.target.value })}
-                  style={{
-                    width: "100%",
-                    padding: "0.5rem 0.75rem",
-                    borderRadius: "8px",
-                    border: "1px solid rgba(27, 42, 74, 0.12)",
-                    fontSize: "0.82rem",
-                    color: "var(--color-navy)",
-                    backgroundColor: "rgba(27, 42, 74, 0.02)",
-                    outline: "none",
-                  }}
-                />
+            {/* 3. Workplace / Institutional Affiliation */}
+            <div className="flex flex-col min-w-0 w-full">
+              <label className="text-[11px] font-bold tracking-[0.14em] uppercase text-[#6B7280] mb-1.5">
+                Workplace / Institutional Affiliation
+              </label>
+              <input
+                type="text"
+                name="workplace"
+                placeholder="Room 505, Dept of Biosciences, IIT Bombay"
+                value={formData.workplace || ""}
+                onChange={(e) =>
+                  setFormData({ ...formData, workplace: e.target.value })
+                }
+                className="w-full bg-transparent border-0 border-b border-[#D1D5DB] focus:border-[#111827] focus:ring-0 px-0 py-2 text-[15px] text-[#111827] placeholder:text-[#9CA3AF] placeholder:font-light outline-none transition-colors rounded-none shadow-none"
+                style={{
+                  borderTop: "none",
+                  borderLeft: "none",
+                  borderRight: "none",
+                  borderRadius: 0,
+                  paddingLeft: 0,
+                  paddingRight: 0,
+                  backgroundColor: "transparent",
+                }}
+              />
+            </div>
+
+            {/* 4. PAN */}
+            <div className="flex flex-col min-w-0 w-full">
+              <label className="text-[11px] font-bold tracking-[0.14em] uppercase text-[#6B7280] mb-1.5">
+                Permanent Account Number (PAN)
+              </label>
+              <input
+                type="text"
+                name="pan"
+                placeholder="BAZPS9068N"
+                maxLength={10}
+                value={formData.pan || ""}
+                onChange={(e) =>
+                  setFormData({
+                    ...formData,
+                    pan: e.target.value.toUpperCase(),
+                  })
+                }
+                className="w-full bg-transparent border-0 border-b border-[#D1D5DB] focus:border-[#111827] focus:ring-0 px-0 py-2 text-[15px] font-semibold tracking-wider text-[#111827] placeholder:text-[#9CA3AF] placeholder:font-light outline-none transition-colors rounded-none shadow-none"
+                style={{
+                  borderTop: "none",
+                  borderLeft: "none",
+                  borderRight: "none",
+                  borderRadius: 0,
+                  paddingLeft: 0,
+                  paddingRight: 0,
+                  backgroundColor: "transparent",
+                }}
+              />
+            </div>
+
+            {/* 5. Aadhaar */}
+            <div className="flex flex-col min-w-0 w-full">
+              <label className="text-[11px] font-bold tracking-[0.14em] uppercase text-[#6B7280] mb-1.5">
+                Aadhaar Number (12-Digit / Masked)
+              </label>
+              <input
+                type="text"
+                name="aadhaar"
+                placeholder="3546 XXXX XXXX"
+                maxLength={16}
+                value={formData.aadhaar || ""}
+                onChange={(e) =>
+                  setFormData({ ...formData, aadhaar: e.target.value })
+                }
+                className="w-full bg-transparent border-0 border-b border-[#D1D5DB] focus:border-[#111827] focus:ring-0 px-0 py-2 text-[15px] tracking-wider text-[#111827] placeholder:text-[#9CA3AF] placeholder:font-light outline-none transition-colors rounded-none shadow-none"
+                style={{
+                  borderTop: "none",
+                  borderLeft: "none",
+                  borderRight: "none",
+                  borderRadius: 0,
+                  paddingLeft: 0,
+                  paddingRight: 0,
+                  backgroundColor: "transparent",
+                }}
+              />
+            </div>
+
+            {/* 6. Gender */}
+            <div className="flex flex-col min-w-0 w-full">
+              <label className="text-[11px] font-bold tracking-[0.14em] uppercase text-[#6B7280] mb-1.5">
+                Gender
+              </label>
+              <div className="grid grid-cols-3 gap-1.5 border-b border-[#D1D5DB] pb-1.5">
+                {[
+                  { id: "male", label: "Male" },
+                  { id: "female", label: "Female" },
+                  { id: "other", label: "Other" },
+                ].map((g) => {
+                  const isSel = formData.gender === g.id;
+                  return (
+                    <button
+                      key={g.id}
+                      type="button"
+                      onClick={() =>
+                        setFormData({ ...formData, gender: g.id as any })
+                      }
+                      style={{
+                        padding: "0.3rem 0.4rem",
+                        borderRadius: "999px",
+                        border: isSel
+                          ? "1.5px solid var(--color-gold)"
+                          : "1px solid transparent",
+                        backgroundColor: isSel
+                          ? "rgba(198, 83, 120, 0.1)"
+                          : "rgba(23, 34, 40, 0.04)",
+                        color: isSel ? "var(--color-gold)" : "#111827",
+                        fontSize: "0.78rem",
+                        fontWeight: isSel ? 700 : 500,
+                        cursor: "pointer",
+                        textAlign: "center",
+                        transition: "all 0.15s ease",
+                      }}
+                    >
+                      {g.label}
+                    </button>
+                  );
+                })}
               </div>
             </div>
 
-            {/* Statutory Tax & Identity: PAN & Aadhaar */}
-            <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "0.65rem" }}>
-              <div>
-                <label style={{ display: "block", fontSize: "0.75rem", fontWeight: 700, color: "var(--color-navy)", marginBottom: "0.25rem" }}>
-                  Permanent Account Number (PAN)
+            {/* 7. Date of Birth & Age */}
+            <div className="flex flex-col min-w-0 w-full">
+              <div className="flex justify-between items-center mb-1.5">
+                <label className="text-[11px] font-bold tracking-[0.14em] uppercase text-[#6B7280]">
+                  Date of Birth & Age
                 </label>
-                <input
-                  type="text"
-                  name="pan"
-                  placeholder="BAZPS9068N"
-                  maxLength={10}
-                  value={formData.pan || ""}
-                  onChange={(e) => setFormData({ ...formData, pan: e.target.value.toUpperCase() })}
-                  style={{
-                    width: "100%",
-                    padding: "0.5rem 0.75rem",
-                    borderRadius: "8px",
-                    border: "1px solid rgba(27, 42, 74, 0.12)",
-                    fontSize: "0.82rem",
-                    fontWeight: 600,
-                    letterSpacing: "0.05em",
-                    color: "var(--color-navy)",
-                    backgroundColor: "rgba(27, 42, 74, 0.02)",
-                    outline: "none",
-                  }}
-                />
+                <span className="text-[11px] font-bold text-[#C65378]">
+                  {currentAge} yrs
+                </span>
               </div>
-
-              <div>
-                <label style={{ display: "block", fontSize: "0.75rem", fontWeight: 700, color: "var(--color-navy)", marginBottom: "0.25rem" }}>
-                  Aadhaar Number (12-Digit / Masked)
-                </label>
-                <input
-                  type="text"
-                  name="aadhaar"
-                  placeholder="3546 XXXX XXXX"
-                  maxLength={16}
-                  value={formData.aadhaar || ""}
-                  onChange={(e) => setFormData({ ...formData, aadhaar: e.target.value })}
-                  style={{
-                    width: "100%",
-                    padding: "0.5rem 0.75rem",
-                    borderRadius: "8px",
-                    border: "1px solid rgba(27, 42, 74, 0.12)",
-                    fontSize: "0.82rem",
-                    letterSpacing: "0.05em",
-                    color: "var(--color-navy)",
-                    backgroundColor: "rgba(27, 42, 74, 0.02)",
-                    outline: "none",
-                  }}
-                />
-              </div>
+              <input
+                type="date"
+                value={formData.dob || ""}
+                onChange={(e) => {
+                  const newDob = e.target.value;
+                  setFormData({ ...formData, dob: newDob });
+                  setCurrentAge(calculateAgeFromDob(newDob));
+                }}
+                className="w-full bg-transparent border-0 border-b border-[#D1D5DB] focus:border-[#111827] focus:ring-0 px-0 py-2 text-[15px] text-[#111827] outline-none transition-colors rounded-none shadow-none"
+                style={{
+                  borderTop: "none",
+                  borderLeft: "none",
+                  borderRight: "none",
+                  borderRadius: 0,
+                  paddingLeft: 0,
+                  paddingRight: 0,
+                  backgroundColor: "transparent",
+                }}
+              />
             </div>
 
-            {/* Gender & Age / DOB in 1 Row */}
-            <div style={{ display: "grid", gridTemplateColumns: "1fr 1.15fr", gap: "0.75rem", alignItems: "flex-end" }}>
-              <div>
-                <label style={{ display: "block", fontSize: "0.78rem", fontWeight: 700, color: "var(--color-navy)", marginBottom: "0.3rem" }}>
-                  Gender
-                </label>
-                <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: "0.35rem" }}>
-                  {[
-                    { id: "male", label: "Male" },
-                    { id: "female", label: "Female" },
-                    { id: "other", label: "Other" },
-                  ].map((g) => {
-                    const isSel = formData.gender === g.id;
-                    return (
-                      <button
-                        key={g.id}
-                        type="button"
-                        onClick={() => setFormData({ ...formData, gender: g.id as any })}
-                        style={{
-                          padding: "0.45rem 0.4rem",
-                          borderRadius: "8px",
-                          border: isSel ? "2px solid var(--color-gold)" : "1px solid rgba(27, 42, 74, 0.12)",
-                          backgroundColor: isSel ? "rgba(201, 162, 39, 0.1)" : "#FFFFFF",
-                          color: "var(--color-navy)",
-                          fontSize: "0.8rem",
-                          fontWeight: isSel ? 700 : 500,
-                          cursor: "pointer",
-                          textAlign: "center",
-                        }}
-                      >
-                        {g.label}
-                      </button>
-                    );
-                  })}
-                </div>
-              </div>
-
-              <div>
-                <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "0.3rem" }}>
-                  <label style={{ fontSize: "0.78rem", fontWeight: 700, color: "var(--color-navy)" }}>
-                    Date of Birth & Age
-                  </label>
-                  <span style={{ fontSize: "0.72rem", fontWeight: 700, color: "var(--color-gold)" }}>
-                    {currentAge} yrs
-                  </span>
-                </div>
-                <input
-                  type="date"
-                  value={formData.dob || ""}
-                  onChange={(e) => {
-                    const newDob = e.target.value;
-                    setFormData({ ...formData, dob: newDob });
-                    setCurrentAge(calculateAgeFromDob(newDob));
-                  }}
-                  style={{
-                    width: "100%",
-                    padding: "0.55rem 0.75rem",
-                    borderRadius: "10px",
-                    border: "1px solid rgba(27, 42, 74, 0.12)",
-                    fontSize: "0.85rem",
-                    color: "var(--color-navy)",
-                    backgroundColor: "rgba(27, 42, 74, 0.02)",
-                    outline: "none",
-                  }}
-                />
-              </div>
+            {/* 8. Mobile Phone */}
+            <div className="flex flex-col min-w-0 w-full">
+              <label className="text-[11px] font-bold tracking-[0.14em] uppercase text-[#6B7280] mb-1.5">
+                Mobile Phone
+              </label>
+              <input
+                type="tel"
+                name="phone"
+                placeholder="+91 98100 45210"
+                value={formData.phone}
+                onChange={(e) =>
+                  setFormData({ ...formData, phone: e.target.value })
+                }
+                className="w-full bg-transparent border-0 border-b border-[#D1D5DB] focus:border-[#111827] focus:ring-0 px-0 py-2 text-[15px] text-[#111827] placeholder:text-[#9CA3AF] placeholder:font-light outline-none transition-colors rounded-none shadow-none"
+                style={{
+                  borderTop: "none",
+                  borderLeft: "none",
+                  borderRight: "none",
+                  borderRadius: 0,
+                  paddingLeft: 0,
+                  paddingRight: 0,
+                  backgroundColor: "transparent",
+                }}
+              />
             </div>
 
-            {/* Phone & Email */}
-            <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "0.75rem" }}>
-              <div>
-                <label style={{ display: "block", fontSize: "0.78rem", fontWeight: 700, color: "var(--color-navy)", marginBottom: "0.25rem" }}>
-                  Mobile Phone
-                </label>
-                <input
-                  type="tel"
-                  name="phone"
-                  placeholder="+91 98100 45210"
-                  value={formData.phone}
-                  onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                  style={{
-                    width: "100%",
-                    padding: "0.55rem 0.75rem",
-                    borderRadius: "10px",
-                    border: "1px solid rgba(27, 42, 74, 0.12)",
-                    fontSize: "0.85rem",
-                    color: "var(--color-navy)",
-                    backgroundColor: "rgba(27, 42, 74, 0.02)",
-                    outline: "none",
-                  }}
-                />
-              </div>
-
-              <div>
-                <label style={{ display: "block", fontSize: "0.78rem", fontWeight: 700, color: "var(--color-navy)", marginBottom: "0.25rem" }}>
-                  Email Address
-                </label>
-                <input
-                  type="email"
-                  name="email"
-                  placeholder="name@example.com"
-                  value={formData.email}
-                  onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                  style={{
-                    width: "100%",
-                    padding: "0.55rem 0.75rem",
-                    borderRadius: "10px",
-                    border: "1px solid rgba(27, 42, 74, 0.12)",
-                    fontSize: "0.85rem",
-                    color: "var(--color-navy)",
-                    backgroundColor: "rgba(27, 42, 74, 0.02)",
-                    outline: "none",
-                  }}
-                />
-              </div>
+            {/* 9. Email Address */}
+            <div className="flex flex-col min-w-0 w-full">
+              <label className="text-[11px] font-bold tracking-[0.14em] uppercase text-[#6B7280] mb-1.5">
+                Email Address
+              </label>
+              <input
+                type="email"
+                name="email"
+                placeholder="name@example.com"
+                value={formData.email}
+                onChange={(e) =>
+                  setFormData({ ...formData, email: e.target.value })
+                }
+                className="w-full bg-transparent border-0 border-b border-[#D1D5DB] focus:border-[#111827] focus:ring-0 px-0 py-2 text-[15px] text-[#111827] placeholder:text-[#9CA3AF] placeholder:font-light outline-none transition-colors rounded-none shadow-none"
+                style={{
+                  borderTop: "none",
+                  borderLeft: "none",
+                  borderRight: "none",
+                  borderRadius: 0,
+                  paddingLeft: 0,
+                  paddingRight: 0,
+                  backgroundColor: "transparent",
+                }}
+              />
             </div>
 
-            {/* Address */}
-            <div>
-              <label style={{ display: "block", fontSize: "0.78rem", fontWeight: 700, color: "var(--color-navy)", marginBottom: "0.25rem" }}>
+            {/* 10. Permanent Residential Address */}
+            <div className="flex flex-col min-w-0 w-full">
+              <label className="text-[11px] font-bold tracking-[0.14em] uppercase text-[#6B7280] mb-1.5">
                 Permanent Residential Address
               </label>
               <input
@@ -536,155 +549,170 @@ export default function Step2AboutYou({
                 name="address"
                 placeholder="House/Apt No., Street, Sector / Landmark"
                 value={formData.address}
-                onChange={(e) => setFormData({ ...formData, address: e.target.value })}
+                onChange={(e) =>
+                  setFormData({ ...formData, address: e.target.value })
+                }
+                className="w-full bg-transparent border-0 border-b border-[#D1D5DB] focus:border-[#111827] focus:ring-0 px-0 py-2 text-[15px] text-[#111827] placeholder:text-[#9CA3AF] placeholder:font-light outline-none transition-colors rounded-none shadow-none"
                 style={{
-                  width: "100%",
-                  padding: "0.55rem 0.75rem",
-                  borderRadius: "10px",
-                  border: "1px solid rgba(27, 42, 74, 0.12)",
-                  fontSize: "0.85rem",
-                  color: "var(--color-navy)",
-                  backgroundColor: "rgba(27, 42, 74, 0.02)",
-                  outline: "none",
+                  borderTop: "none",
+                  borderLeft: "none",
+                  borderRight: "none",
+                  borderRadius: 0,
+                  paddingLeft: 0,
+                  paddingRight: 0,
+                  backgroundColor: "transparent",
                 }}
               />
             </div>
 
-            {/* City, State, PIN */}
-            <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 0.85fr", gap: "0.65rem" }}>
-              <div>
-                <label style={{ display: "block", fontSize: "0.74rem", fontWeight: 700, color: "var(--color-navy)", marginBottom: "0.2rem" }}>
-                  City
-                </label>
-                <input
-                  type="text"
-                  name="city"
-                  value={formData.city}
-                  onChange={(e) => setFormData({ ...formData, city: e.target.value })}
-                  placeholder="Gurugram"
-                  style={{
-                    width: "100%",
-                    padding: "0.5rem 0.65rem",
-                    borderRadius: "8px",
-                    border: "1px solid rgba(27, 42, 74, 0.12)",
-                    fontSize: "0.82rem",
-                    outline: "none",
-                  }}
-                />
-              </div>
-
-              <div>
-                <label style={{ display: "block", fontSize: "0.74rem", fontWeight: 700, color: "var(--color-navy)", marginBottom: "0.2rem" }}>
-                  State
-                </label>
-                <input
-                  type="text"
-                  name="state"
-                  value={formData.state}
-                  onChange={(e) => setFormData({ ...formData, state: e.target.value })}
-                  placeholder="Haryana"
-                  style={{
-                    width: "100%",
-                    padding: "0.5rem 0.65rem",
-                    borderRadius: "8px",
-                    border: "1px solid rgba(27, 42, 74, 0.12)",
-                    fontSize: "0.82rem",
-                    outline: "none",
-                  }}
-                />
-              </div>
-
-              <div>
-                <label style={{ display: "block", fontSize: "0.74rem", fontWeight: 700, color: "var(--color-navy)", marginBottom: "0.2rem" }}>
-                  PIN Code
-                </label>
-                <input
-                  type="text"
-                  name="pincode"
-                  value={formData.pincode}
-                  onChange={(e) => setFormData({ ...formData, pincode: e.target.value })}
-                  placeholder="122002"
-                  style={{
-                    width: "100%",
-                    padding: "0.5rem 0.65rem",
-                    borderRadius: "8px",
-                    border: "1px solid rgba(27, 42, 74, 0.12)",
-                    fontSize: "0.82rem",
-                    outline: "none",
-                  }}
-                />
-              </div>
+            {/* 11. City */}
+            <div className="flex flex-col min-w-0 w-full">
+              <label className="text-[11px] font-bold tracking-[0.14em] uppercase text-[#6B7280] mb-1.5">
+                City
+              </label>
+              <input
+                type="text"
+                name="city"
+                value={formData.city}
+                onChange={(e) =>
+                  setFormData({ ...formData, city: e.target.value })
+                }
+                placeholder="Gurugram"
+                className="w-full bg-transparent border-0 border-b border-[#D1D5DB] focus:border-[#111827] focus:ring-0 px-0 py-2 text-[15px] text-[#111827] placeholder:text-[#9CA3AF] placeholder:font-light outline-none transition-colors rounded-none shadow-none"
+                style={{
+                  borderTop: "none",
+                  borderLeft: "none",
+                  borderRight: "none",
+                  borderRadius: 0,
+                  paddingLeft: 0,
+                  paddingRight: 0,
+                  backgroundColor: "transparent",
+                }}
+              />
             </div>
 
-            {/* Quick Metro City Pills */}
-            <div style={{ display: "flex", alignItems: "center", gap: "0.35rem", flexWrap: "wrap" }}>
-              <span style={{ fontSize: "0.7rem", fontWeight: 700, color: "var(--color-slate)" }}>
-                Quick:
+            {/* 12. State */}
+            <div className="flex flex-col min-w-0 w-full">
+              <label className="text-[11px] font-bold tracking-[0.14em] uppercase text-[#6B7280] mb-1.5">
+                State
+              </label>
+              <input
+                type="text"
+                name="state"
+                value={formData.state}
+                onChange={(e) =>
+                  setFormData({ ...formData, state: e.target.value })
+                }
+                placeholder="Haryana"
+                className="w-full bg-transparent border-0 border-b border-[#D1D5DB] focus:border-[#111827] focus:ring-0 px-0 py-2 text-[15px] text-[#111827] placeholder:text-[#9CA3AF] placeholder:font-light outline-none transition-colors rounded-none shadow-none"
+                style={{
+                  borderTop: "none",
+                  borderLeft: "none",
+                  borderRight: "none",
+                  borderRadius: 0,
+                  paddingLeft: 0,
+                  paddingRight: 0,
+                  backgroundColor: "transparent",
+                }}
+              />
+            </div>
+
+            {/* 13. PIN Code */}
+            <div className="flex flex-col min-w-0 w-full">
+              <label className="text-[11px] font-bold tracking-[0.14em] uppercase text-[#6B7280] mb-1.5">
+                PIN Code
+              </label>
+              <input
+                type="text"
+                name="pincode"
+                value={formData.pincode}
+                onChange={(e) =>
+                  setFormData({ ...formData, pincode: e.target.value })
+                }
+                placeholder="122002"
+                className="w-full bg-transparent border-0 border-b border-[#D1D5DB] focus:border-[#111827] focus:ring-0 px-0 py-2 text-[15px] text-[#111827] placeholder:text-[#9CA3AF] placeholder:font-light outline-none transition-colors rounded-none shadow-none"
+                style={{
+                  borderTop: "none",
+                  borderLeft: "none",
+                  borderRight: "none",
+                  borderRadius: 0,
+                  paddingLeft: 0,
+                  paddingRight: 0,
+                  backgroundColor: "transparent",
+                }}
+              />
+            </div>
+
+            {/* 14. Quick Metro City Pills */}
+            <div className="flex flex-col min-w-0 w-full border-b border-[#D1D5DB] pb-1.5">
+              <span className="text-[11px] font-bold tracking-[0.14em] uppercase text-[#6B7280] mb-1.5">
+                Quick City Select
               </span>
-              {cityPresets.slice(0, 5).map((c) => (
-                <button
-                  key={c.name}
-                  type="button"
-                  onClick={() => handleCityPreset(c.name, c.state, c.pin)}
-                  style={{
-                    padding: "0.2rem 0.5rem",
-                    borderRadius: "999px",
-                    backgroundColor: formData.city === c.name ? "rgba(201, 162, 39, 0.15)" : "rgba(27, 42, 74, 0.04)",
-                    border: formData.city === c.name ? "1px solid var(--color-gold)" : "1px solid transparent",
-                    color: "var(--color-navy)",
-                    fontSize: "0.72rem",
-                    fontWeight: 600,
-                    cursor: "pointer",
-                  }}
-                >
-                  {c.name}
-                </button>
-              ))}
+              <div className="flex items-center gap-1.5 flex-wrap">
+                {cityPresets.slice(0, 5).map((c) => (
+                  <button
+                    key={c.name}
+                    type="button"
+                    onClick={() => handleCityPreset(c.name, c.state, c.pin)}
+                    style={{
+                      padding: "0.22rem 0.55rem",
+                      borderRadius: "999px",
+                      backgroundColor:
+                        formData.city === c.name
+                          ? "rgba(198, 83, 120, 0.12)"
+                          : "rgba(23, 34, 40, 0.04)",
+                      border:
+                        formData.city === c.name
+                          ? "1px solid var(--color-gold)"
+                          : "1px solid transparent",
+                      color:
+                        formData.city === c.name
+                          ? "var(--color-gold)"
+                          : "var(--color-navy)",
+                      fontSize: "0.72rem",
+                      fontWeight: 600,
+                      cursor: "pointer",
+                    }}
+                  >
+                    {c.name}
+                  </button>
+                ))}
+              </div>
             </div>
           </div>
 
-          {/* Right Column: Marital, Legal Framework, Prior Will */}
-          <div
-            style={{
-              display: "flex",
-              flexDirection: "column",
-              gap: "0.75rem",
-              minHeight: 0,
-              overflowY: "auto",
-            }}
-          >
-            {/* Marital Status (Compact 2x2 Grid) */}
-            <div
-              style={{
-                background: "#FFFFFF",
-                borderRadius: "18px",
-                border: "1px solid rgba(27, 42, 74, 0.08)",
-                padding: "0.85rem 1rem",
-                boxShadow: "0 2px 10px rgba(0, 0, 0, 0.02)",
-              }}
-            >
-              <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "0.45rem" }}>
-                <span style={{ fontSize: "0.78rem", fontWeight: 700, color: "var(--color-navy)" }}>
+          {/* Row: Marital Status & Personal Law / Succession Act Framework (2 columns on desktop, 1 on mobile) */}
+          <div className="step2-fields-grid grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-6 pt-1 w-full min-w-0">
+            {/* Marital Status */}
+            <div className="flex flex-col min-w-0 w-full">
+              <div className="flex flex-wrap justify-between items-center gap-1 mb-2">
+                <label className="text-[11px] font-bold tracking-[0.14em] uppercase text-[#6B7280]">
                   Marital Status
-                </span>
-                <span style={{ fontSize: "0.7rem", color: "var(--color-slate)" }}>
+                </label>
+                <span className="text-[11px] text-[#9CA3AF]">
                   Determines spousal legal rights
                 </span>
               </div>
 
-              <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "0.45rem" }}>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
                 {maritalOptions.map((opt) => {
                   const isSel = formData.maritalStatus === opt.id;
                   const OptIcon = opt.Icon;
                   return (
                     <div
                       key={opt.id}
-                      onClick={() => setFormData({ ...formData, maritalStatus: opt.id })}
+                      onClick={() =>
+                        setFormData({ ...formData, maritalStatus: opt.id })
+                      }
                       style={{
                         borderRadius: "10px",
-                        border: isSel ? "2px solid var(--color-gold)" : "1px solid rgba(27, 42, 74, 0.1)",
-                        backgroundColor: isSel ? "rgba(201, 162, 39, 0.08)" : "rgba(27, 42, 74, 0.01)",
-                        padding: "0.5rem 0.65rem",
+                        border: isSel
+                          ? "1.5px solid var(--color-gold)"
+                          : "1px solid #E5E7EB",
+                        backgroundColor: isSel
+                          ? "rgba(198, 83, 120, 0.06)"
+                          : "transparent",
+                        padding: "0.55rem 0.75rem",
                         cursor: "pointer",
                         display: "flex",
                         alignItems: "center",
@@ -692,72 +720,103 @@ export default function Step2AboutYou({
                         transition: "all 0.15s ease",
                       }}
                     >
-                      <OptIcon size={16} color={isSel ? "var(--color-navy)" : "var(--color-slate)"} />
+                      <OptIcon
+                        size={15}
+                        color={isSel ? "var(--color-gold)" : "#6B7280"}
+                      />
                       <div style={{ flex: 1, minWidth: 0 }}>
-                        <div style={{ fontSize: "0.82rem", fontWeight: 700, color: "var(--color-navy)" }}>
+                        <div
+                          style={{
+                            fontSize: "0.82rem",
+                            fontWeight: 700,
+                            color: "#111827",
+                          }}
+                        >
                           {opt.title}
                         </div>
                       </div>
-                      {isSel && <CheckCircle2 size={14} color="var(--color-gold)" />}
+                      {isSel && (
+                        <CheckCircle2 size={14} color="var(--color-gold)" />
+                      )}
                     </div>
                   );
                 })}
               </div>
             </div>
 
-            {/* Personal Law Framework (Compact Grid of 6 Pills) */}
-            <div
-              style={{
-                background: "#FFFFFF",
-                borderRadius: "18px",
-                border: "1px solid rgba(27, 42, 74, 0.08)",
-                padding: "0.85rem 1rem",
-                boxShadow: "0 2px 10px rgba(0, 0, 0, 0.02)",
-              }}
-            >
-              <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "0.45rem" }}>
-                <span style={{ fontSize: "0.78rem", fontWeight: 700, color: "var(--color-navy)" }}>
+            {/* Personal Law / Succession Act Framework */}
+            <div className="flex flex-col min-w-0 w-full">
+              <div className="flex flex-wrap justify-between items-center gap-1 mb-2">
+                <label className="text-[11px] font-bold tracking-[0.14em] uppercase text-[#6B7280]">
                   Personal Law / Succession Act Framework
-                </span>
-                <span style={{ fontSize: "0.7rem", color: "var(--color-slate)" }}>
+                </label>
+                <span className="text-[11px] text-[#9CA3AF]">
                   Governing jurisprudence
                 </span>
               </div>
 
-              <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "0.45rem" }}>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
                 {religionOptions.map((opt) => {
                   const isSel = formData.religionPersonalLaw === opt.id;
                   const OptIcon = opt.Icon;
                   return (
                     <div
                       key={opt.id}
-                      onClick={() => setFormData({ ...formData, religionPersonalLaw: opt.id })}
+                      onClick={() =>
+                        setFormData({
+                          ...formData,
+                          religionPersonalLaw: opt.id,
+                        })
+                      }
                       style={{
                         borderRadius: "10px",
-                        border: isSel ? "2px solid var(--color-gold)" : "1px solid rgba(27, 42, 74, 0.1)",
-                        backgroundColor: isSel ? "rgba(201, 162, 39, 0.08)" : "rgba(27, 42, 74, 0.01)",
-                        padding: "0.45rem 0.65rem",
+                        border: isSel
+                          ? "1.5px solid var(--color-gold)"
+                          : "1px solid #E5E7EB",
+                        backgroundColor: isSel
+                          ? "rgba(198, 83, 120, 0.06)"
+                          : "transparent",
+                        padding: "0.55rem 0.65rem",
                         cursor: "pointer",
                         display: "flex",
                         alignItems: "center",
                         justifyContent: "space-between",
-                        gap: "0.4rem",
+                        gap: "0.35rem",
                         transition: "all 0.15s ease",
                       }}
                     >
-                      <div style={{ display: "flex", alignItems: "center", gap: "0.45rem", minWidth: 0 }}>
-                        <OptIcon size={14} color="var(--color-navy)" />
-                        <span style={{ fontSize: "0.78rem", fontWeight: 700, color: "var(--color-navy)", whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis" }}>
+                      <div
+                        style={{
+                          display: "flex",
+                          alignItems: "center",
+                          gap: "0.4rem",
+                          minWidth: 0,
+                        }}
+                      >
+                        <OptIcon
+                          size={14}
+                          color={isSel ? "var(--color-gold)" : "#6B7280"}
+                        />
+                        <span
+                          style={{
+                            fontSize: "0.78rem",
+                            fontWeight: 700,
+                            color: "#111827",
+                            whiteSpace: "nowrap",
+                            overflow: "hidden",
+                            textOverflow: "ellipsis",
+                          }}
+                        >
                           {opt.title.split("/")[0].trim()}
                         </span>
                       </div>
                       <span
                         style={{
-                          fontSize: "0.62rem",
+                          fontSize: "0.6rem",
                           fontWeight: 700,
                           padding: "0.1rem 0.35rem",
                           borderRadius: "4px",
-                          backgroundColor: "rgba(124, 148, 115, 0.15)",
+                          backgroundColor: "rgba(95, 126, 117, 0.14)",
                           color: "var(--color-sage)",
                           flexShrink: 0,
                         }}
@@ -769,75 +828,58 @@ export default function Step2AboutYou({
                 })}
               </div>
             </div>
+          </div>
 
-            {/* Prior Will & Statutory Revocation (Compact Rows) */}
-            <div
-              style={{
-                background: "#FFFFFF",
-                borderRadius: "18px",
-                border: "1px solid rgba(27, 42, 74, 0.08)",
-                padding: "0.75rem 1rem",
-                boxShadow: "0 2px 10px rgba(0, 0, 0, 0.02)",
-                display: "flex",
-                flexDirection: "column",
-                gap: "0.55rem",
-              }}
-            >
-              <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-                <div>
-                  <div style={{ fontSize: "0.8rem", fontWeight: 700, color: "var(--color-navy)" }}>
-                    Prior Testamentary Documents
-                  </div>
-                  <div style={{ fontSize: "0.7rem", color: "var(--color-slate)" }}>
-                    Have you previously executed a Will or Codicil?
-                  </div>
+          {/* Row: Prior Testamentary Documents & Statutory Revocation Clause (2 columns on desktop, 1 on mobile) */}
+          <div className="step2-fields-grid grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-5 pt-3 border-t border-[#E5E7EB] mt-auto w-full min-w-0">
+            <div className="flex justify-between items-center gap-3 min-w-0">
+              <div className="min-w-0">
+                <div className="text-[11px] font-bold tracking-[0.14em] uppercase text-[#111827]">
+                  Prior Testamentary Documents
                 </div>
-                <AppleSwitch
-                  checked={formData.hasPreviousWill || false}
-                  onChange={(checked) => setFormData((prev) => ({ ...prev, hasPreviousWill: checked }))}
-                />
-              </div>
-
-              <div style={{ height: "1px", backgroundColor: "rgba(27, 42, 74, 0.06)" }} />
-
-              <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-                <div>
-                  <div style={{ fontSize: "0.8rem", fontWeight: 700, color: "var(--color-navy)" }}>
-                    Statutory Revocation Clause (S.62 ISA)
-                  </div>
-                  <div style={{ fontSize: "0.7rem", color: "var(--color-slate)" }}>
-                    Explicitly revoke all prior testamentary instruments
-                  </div>
+                <div className="text-xs text-[#6B7280] mt-0.5">
+                  Have you previously executed a Will or Codicil?
                 </div>
-                <AppleSwitch
-                  checked={formData.revokePreviousWill ?? true}
-                  onChange={(checked) => setFormData((prev) => ({ ...prev, revokePreviousWill: checked }))}
-                />
               </div>
+              <AppleSwitch
+                checked={formData.hasPreviousWill || false}
+                onChange={(checked) =>
+                  setFormData((prev) => ({ ...prev, hasPreviousWill: checked }))
+                }
+              />
+            </div>
+
+            <div className="flex justify-between items-center gap-3 min-w-0">
+              <div className="min-w-0">
+                <div className="text-[11px] font-bold tracking-[0.14em] uppercase text-[#111827]">
+                  Statutory Revocation Clause (S.62 ISA)
+                </div>
+                <div className="text-xs text-[#6B7280] mt-0.5">
+                  Explicitly revoke all prior testamentary instruments
+                </div>
+              </div>
+              <AppleSwitch
+                checked={formData.revokePreviousWill ?? true}
+                onChange={(checked) =>
+                  setFormData((prev) => ({
+                    ...prev,
+                    revokePreviousWill: checked,
+                  }))
+                }
+              />
             </div>
           </div>
         </div>
 
         {/* Navigation Action Bar */}
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "space-between",
-            alignItems: "center",
-            padding: "0.6rem 1rem",
-            backgroundColor: "#FFFFFF",
-            borderRadius: "14px",
-            border: "1px solid rgba(27, 42, 74, 0.08)",
-            boxShadow: "0 2px 8px rgba(0, 0, 0, 0.02)",
-          }}
-        >
+        <div className="flex flex-wrap justify-between items-center gap-3 px-4 py-2.5 bg-white rounded-[14px] border border-[#172228]/10 shadow-sm">
           <button
             type="button"
             onClick={onBack}
             style={{
               padding: "0.55rem 1.25rem",
-              borderRadius: "10px",
-              border: "1px solid rgba(27, 42, 74, 0.15)",
+              borderRadius: "999px",
+              border: "1px solid #D1D5DB",
               backgroundColor: "#FFFFFF",
               color: "var(--color-slate)",
               fontSize: "0.85rem",
@@ -853,10 +895,10 @@ export default function Step2AboutYou({
             className="btn btn-gold"
             style={{
               padding: "0.65rem 1.85rem",
-              borderRadius: "10px",
+              borderRadius: "999px",
               fontSize: "0.9rem",
               fontWeight: 700,
-              boxShadow: "0 4px 16px rgba(201, 162, 39, 0.25)",
+              boxShadow: "0 4px 16px rgba(198, 83, 120, 0.25)",
               cursor: "pointer",
             }}
           >

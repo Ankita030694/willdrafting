@@ -112,7 +112,7 @@ export default function Step8SpecialWishes({
     {
       key: "charitableGifts",
       Icon: HandHeart,
-      color: "#C9A227",
+      color: "#C65378",
       title: "Charitable Bequests & Philanthropy",
       desc: "Optional donations to educational institutions, orphanages, hospitals, or religious trusts.",
       placeholder: "e.g., ₹50,000 to PM National Relief Fund...",
@@ -159,8 +159,8 @@ export default function Step8SpecialWishes({
               gap: "0.4rem",
               padding: "0.2rem 0.6rem",
               borderRadius: "999px",
-              backgroundColor: "rgba(201, 162, 39, 0.12)",
-              color: "var(--color-navy)",
+              backgroundColor: "rgba(198, 83, 120, 0.12)",
+              color: "var(--color-gold)",
               fontSize: "0.72rem",
               fontWeight: 700,
               textTransform: "uppercase",
@@ -185,7 +185,7 @@ export default function Step8SpecialWishes({
           <h2 style={{ fontSize: "1.45rem", fontWeight: 800, color: "var(--color-navy)", margin: 0, letterSpacing: "-0.02em" }}>
             Special Wishes & Sentimental Bequests
           </h2>
-          <span style={{ fontSize: "0.88rem", color: "#8A6D1B", fontWeight: 600 }}>
+          <span style={{ fontSize: "0.88rem", color: "var(--color-gold)", fontWeight: 600 }}>
             (विशेष इच्छाएं, गहने एवं डिजिटल विरासत)
           </span>
         </div>
@@ -350,7 +350,7 @@ export default function Step8SpecialWishes({
               borderRadius: "10px",
               fontSize: "0.9rem",
               fontWeight: 700,
-              boxShadow: "0 4px 16px rgba(201, 162, 39, 0.25)",
+              boxShadow: "0 4px 16px rgba(198, 83, 120, 0.25)",
               cursor: "pointer",
               display: "inline-flex",
               alignItems: "center",

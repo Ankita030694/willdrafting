@@ -336,7 +336,11 @@ export default function UpdateWillTab({ state, onStateChange }: UpdateWillTabPro
               </button>
 
               <Link
-                href={`/start?step=${selectedEvent.recommendedStep}`}
+                href={
+                  selectedEvent.recommendedStep === 1
+                    ? "/start"
+                    : `/start/${String(selectedEvent.recommendedStep).padStart(2, "0")}`
+                }
                 className="btn btn-gold"
                 style={{
                   padding: "0.6rem 1.35rem",

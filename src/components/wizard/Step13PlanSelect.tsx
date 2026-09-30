@@ -96,8 +96,8 @@ export default function Step13PlanSelect({
               gap: "0.4rem",
               padding: "0.2rem 0.6rem",
               borderRadius: "999px",
-              backgroundColor: "rgba(201, 162, 39, 0.12)",
-              color: "var(--color-navy)",
+              backgroundColor: "rgba(198, 83, 120, 0.12)",
+              color: "var(--color-gold)",
               fontSize: "0.72rem",
               fontWeight: 700,
               textTransform: "uppercase",
@@ -122,7 +122,7 @@ export default function Step13PlanSelect({
           <h2 style={{ fontSize: "1.45rem", fontWeight: 800, color: "var(--color-navy)", margin: 0, letterSpacing: "-0.02em" }}>
             Choose your legal certification tier
           </h2>
-          <span style={{ fontSize: "0.88rem", color: "#8A6D1B", fontWeight: 600 }}>
+          <span style={{ fontSize: "0.88rem", color: "var(--color-gold)", fontWeight: 600 }}>
             (योजना चयन एवं कानूनी सत्यापन)
           </span>
         </div>
@@ -150,7 +150,7 @@ export default function Step13PlanSelect({
                 border: isSelected ? "2.5px solid var(--color-gold)" : "1px solid rgba(27, 42, 74, 0.08)",
                 padding: "1.25rem 1.35rem",
                 boxShadow: isSelected
-                  ? "0 8px 30px rgba(201, 162, 39, 0.15)"
+                  ? "0 8px 30px rgba(198, 83, 120, 0.15)"
                   : "0 2px 10px rgba(0, 0, 0, 0.02)",
                 cursor: "pointer",
                 transition: "all 0.18s ease",
@@ -175,7 +175,7 @@ export default function Step13PlanSelect({
                     padding: "0.2rem 0.75rem",
                     borderRadius: "999px",
                     letterSpacing: "0.05em",
-                    boxShadow: "0 2px 8px rgba(201, 162, 39, 0.35)",
+                    boxShadow: "0 2px 8px rgba(198, 83, 120, 0.35)",
                   }}
                 >
                   Recommended
@@ -300,7 +300,7 @@ export default function Step13PlanSelect({
             borderRadius: "10px",
             fontSize: "0.9rem",
             fontWeight: 700,
-            boxShadow: "0 4px 16px rgba(201, 162, 39, 0.25)",
+            boxShadow: "0 4px 16px rgba(198, 83, 120, 0.25)",
             cursor: "pointer",
             display: "inline-flex",
             alignItems: "center",

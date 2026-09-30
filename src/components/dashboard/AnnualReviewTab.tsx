@@ -376,7 +376,11 @@ export default function AnnualReviewTab({ state, onStateChange }: AnnualReviewTa
               <div style={{ display: "flex", alignItems: "center", gap: "1.25rem" }}>
                 {!isVerified && (
                   <Link
-                    href={`/start?step=${item.editStep}`}
+                    href={
+                      item.editStep === 1
+                        ? "/start"
+                        : `/start/${String(item.editStep).padStart(2, "0")}`
+                    }
                     style={{
                       fontSize: "0.825rem",
                       fontWeight: 600,

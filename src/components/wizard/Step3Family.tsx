@@ -136,9 +136,9 @@ export default function Step3Family({
     spouse: { label: "Spouse", Icon: Heart, color: "#E11D48", desc: "Wife / Husband" },
     son: { label: "Son", Icon: Baby, color: "#2563EB", desc: "Male Child" },
     daughter: { label: "Daughter", Icon: Baby, color: "#DB2777", desc: "Female Child" },
-    father: { label: "Father", Icon: Users, color: "#7C9473", desc: "Paternal Ascendant" },
-    mother: { label: "Mother", Icon: Users, color: "#C9A227", desc: "Maternal Ascendant" },
-    brother: { label: "Brother", Icon: UserPlus, color: "#3B5173", desc: "Sibling" },
+    father: { label: "Father", Icon: Users, color: "#5F7E75", desc: "Paternal Ascendant" },
+    mother: { label: "Mother", Icon: Users, color: "#C65378", desc: "Maternal Ascendant" },
+    brother: { label: "Brother", Icon: UserPlus, color: "#49585F", desc: "Sibling" },
     sister: { label: "Sister", Icon: UserPlus, color: "#9333EA", desc: "Sibling" },
     other: { label: "Other Relative", Icon: User, color: "#64748B", desc: "Extended Family" },
   };
@@ -157,7 +157,7 @@ export default function Step3Family({
       {/* Compact Header with Quick Actions */}
       <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: "0.75rem" }}>
         <div>
-          <div style={{ display: "inline-flex", alignItems: "center", gap: "0.4rem", padding: "0.2rem 0.65rem", borderRadius: "999px", backgroundColor: "rgba(201, 162, 39, 0.12)", color: "var(--color-navy)", fontSize: "0.72rem", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.05em", marginBottom: "0.25rem" }}>
+          <div style={{ display: "inline-flex", alignItems: "center", gap: "0.4rem", padding: "0.2rem 0.65rem", borderRadius: "999px", backgroundColor: "rgba(198, 83, 120, 0.12)", color: "var(--color-gold)", fontSize: "0.72rem", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.05em", marginBottom: "0.25rem" }}>
             <span style={{ width: "6px", height: "6px", borderRadius: "50%", backgroundColor: "var(--color-gold)" }}></span>
             Step 3 of 14 • Family Directory & Heirs
           </div>
@@ -165,7 +165,7 @@ export default function Step3Family({
             <h2 style={{ fontSize: "1.45rem", fontWeight: 800, color: "var(--color-navy)", margin: 0, letterSpacing: "-0.02em" }}>
               Your Family Circle
             </h2>
-            <span style={{ fontSize: "0.88rem", color: "#8A6D1B", fontWeight: 600 }}>
+            <span style={{ fontSize: "0.88rem", color: "var(--color-gold)", fontWeight: 600 }}>
               (परिवार एवं कानूनी वारिसदार)
             </span>
             <span style={{ fontSize: "0.8rem", color: "var(--color-slate)", fontWeight: 600 }}>
@@ -373,7 +373,7 @@ export default function Step3Family({
             {/* Testator Card (Self) */}
             <div
               style={{
-                background: "linear-gradient(135deg, rgba(27, 42, 74, 0.04), rgba(201, 162, 39, 0.06))",
+                background: "linear-gradient(135deg, rgba(23, 34, 40, 0.03), rgba(198, 83, 120, 0.06))",
                 borderRadius: "14px",
                 border: "1.5px solid var(--color-gold)",
                 padding: "0.75rem 0.9rem",
@@ -388,7 +388,7 @@ export default function Step3Family({
                   height: "34px",
                   borderRadius: "10px",
                   backgroundColor: "var(--color-navy)",
-                  color: "var(--color-gold)",
+                  color: "#FFFFFF",
                   display: "flex",
                   alignItems: "center",
                   justifyContent: "center",
@@ -402,7 +402,7 @@ export default function Step3Family({
                   <h4 style={{ margin: 0, fontSize: "0.88rem", fontWeight: 800, color: "var(--color-navy)", whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis" }}>
                     {state.testator.fullName || "You (Testator)"}
                   </h4>
-                  <span style={{ fontSize: "0.64rem", fontWeight: 800, backgroundColor: "var(--color-gold)", color: "var(--color-navy)", padding: "0.08rem 0.35rem", borderRadius: "999px" }}>
+                  <span style={{ fontSize: "0.64rem", fontWeight: 800, backgroundColor: "var(--color-gold)", color: "#FFFFFF", padding: "0.08rem 0.35rem", borderRadius: "999px" }}>
                     Author
                   </span>
                 </div>
@@ -514,7 +514,7 @@ export default function Step3Family({
             borderRadius: "10px",
             fontSize: "0.9rem",
             fontWeight: 700,
-            boxShadow: "0 4px 16px rgba(201, 162, 39, 0.25)",
+            boxShadow: "0 4px 16px rgba(198, 83, 120, 0.25)",
             cursor: "pointer",
             display: "inline-flex",
             alignItems: "center",
@@ -531,7 +531,7 @@ export default function Step3Family({
           style={{
             position: "fixed",
             inset: 0,
-            backgroundColor: "rgba(22, 35, 60, 0.65)",
+            backgroundColor: "rgba(23, 34, 40, 0.65)",
             backdropFilter: "blur(14px)",
             zIndex: 9999,
             display: "flex",
@@ -951,7 +951,7 @@ export default function Step3Family({
                     borderRadius: "12px",
                     fontWeight: 700,
                     cursor: "pointer",
-                    boxShadow: "0 4px 14px rgba(201, 162, 39, 0.3)",
+                    boxShadow: "0 4px 14px rgba(198, 83, 120, 0.3)",
                   }}
                 >
                   Confirm & Save Member
@@ -1039,7 +1039,7 @@ export default function Step3Family({
                   style={{
                     fontSize: "0.68rem",
                     fontWeight: 700,
-                    backgroundColor: "rgba(201, 162, 39, 0.15)",
+                    backgroundColor: "rgba(198, 83, 120, 0.12)",
                     color: "var(--color-navy)",
                     padding: "0.1rem 0.45rem",
                     borderRadius: "999px",

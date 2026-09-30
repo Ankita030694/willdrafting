@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { WillDraftingState } from "@/lib/willDraftingStore";
@@ -21,23 +21,28 @@ import {
   FileText,
   Check,
   Lock,
+  ChevronDown,
 } from "lucide-react";
 
 interface WizardSidebarProps {
   currentStep: number;
   onJumpToStep: (step: number) => void;
   state: WillDraftingState;
+  lang?: "en" | "hi";
 }
 
 export default function WizardSidebar({
   currentStep,
   onJumpToStep,
   state,
+  lang = "en",
 }: WizardSidebarProps) {
+  const isHi = lang === "hi";
   const hasMinors = state.familyMembers.some((f) => f.isMinor);
 
   const phases = [
     {
+      id: "phase-1",
       title: "Phase 1: Personal & Family",
       hindiTitle: "व्यक्तिगत एवं परिवार",
       steps: [
@@ -47,6 +52,7 @@ export default function WizardSidebar({
       ],
     },
     {
+      id: "phase-2",
       title: "Phase 2: Estate & Wealth",
       hindiTitle: "संपत्ति एवं धन",
       steps: [
@@ -57,6 +63,7 @@ export default function WizardSidebar({
       ],
     },
     {
+      id: "phase-3",
       title: "Phase 3: Directives & Intent",
       hindiTitle: "विशेष इच्छाएं",
       steps: [
@@ -65,6 +72,7 @@ export default function WizardSidebar({
       ],
     },
     {
+      id: "phase-4",
       title: "Phase 4: Verification & Will",
       hindiTitle: "कानूनी वसीयत",
       steps: [
@@ -76,6 +84,38 @@ export default function WizardSidebar({
       ],
     },
   ];
+
+  const getActivePhaseId = (stepNum: number) => {
+    if (stepNum <= 3) return "phase-1";
+    if (stepNum <= 7) return "phase-2";
+    if (stepNum <= 9) return "phase-3";
+    return "phase-4";
+  };
+
+  const [openPhases, setOpenPhases] = useState<Record<string, boolean>>(() => {
+    const activeId = getActivePhaseId(currentStep);
+    return {
+      "phase-1": activeId === "phase-1",
+      "phase-2": activeId === "phase-2",
+      "phase-3": activeId === "phase-3",
+      "phase-4": activeId === "phase-4",
+    };
+  });
+
+  useEffect(() => {
+    const activeId = getActivePhaseId(currentStep);
+    setOpenPhases((prev) => ({
+      ...prev,
+      [activeId]: true,
+    }));
+  }, [currentStep]);
+
+  const togglePhase = (phaseId: string) => {
+    setOpenPhases((prev) => ({
+      ...prev,
+      [phaseId]: !prev[phaseId],
+    }));
+  };
 
   const totalSteps = 14;
   const progressPercent = Math.round(((currentStep - 1) / (totalSteps - 1)) * 100);
@@ -89,7 +129,7 @@ export default function WizardSidebar({
     <aside
       style={{
         width: "260px",
-        backgroundColor: "rgba(22, 35, 60, 0.96)",
+        backgroundColor: "rgba(23, 34, 40, 0.97)",
         backdropFilter: "blur(28px) saturate(190%)",
         color: "#FFFFFF",
         height: "100vh",
@@ -113,11 +153,11 @@ export default function WizardSidebar({
         <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "0.85rem" }}>
           <Link href="/" style={{ display: "flex", alignItems: "center", textDecoration: "none" }}>
             <Image
-              src="/images/With Text.svg"
+              src="/Logofinal.svg"
               alt="WillDrafting.in"
               width={125}
-              height={20}
-              style={{ height: "20px", width: "auto", objectFit: "contain", filter: "brightness(0) invert(1)" }}
+              height={32}
+              style={{ height: "32px", width: "auto", objectFit: "contain" }}
               priority
             />
           </Link>
@@ -139,7 +179,7 @@ export default function WizardSidebar({
               transition: "all 0.15s ease",
             }}
           >
-            <span>←</span> Dashboard
+            <span>←</span> {isHi ? "डैशबोर्ड" : "Dashboard"}
           </Link>
         </div>
 
@@ -197,10 +237,16 @@ export default function WizardSidebar({
 
           <div style={{ flex: 1, minWidth: 0 }}>
             <div style={{ fontSize: "0.8rem", fontWeight: 700, color: "#FFFFFF" }}>
-              Step {currentStep} of {totalSteps}
+              {isHi ? `चरण ${currentStep} / ${totalSteps}` : `Step ${currentStep} of ${totalSteps}`}
             </div>
             <div style={{ fontSize: "0.72rem", color: "rgba(255, 255, 255, 0.6)", marginTop: "2px" }}>
-              {currentStep === 14 ? "Ready to execute" : "Statutory Questionnaire"}
+              {currentStep === 14
+                ? isHi
+                  ? "निष्पादन के लिए तैयार"
+                  : "Ready to execute"
+                : isHi
+                ? "कानूनी वसीयत प्रश्नोत्तरी"
+                : "Statutory Questionnaire"}
             </div>
           </div>
         </div>
@@ -214,30 +260,107 @@ export default function WizardSidebar({
           padding: "0.75rem 0.65rem",
           display: "flex",
           flexDirection: "column",
-          gap: "0.75rem",
+          gap: "0.45rem",
         }}
       >
-        {phases.map((phase) => (
-          <div key={phase.title}>
+        {phases.map((phase) => {
+          const isOpen = !!openPhases[phase.id];
+          const hasActiveStep = phase.steps.some((s) => s.num === currentStep);
+          const allPhaseCompleted = phase.steps.every((s) => currentStep > s.num);
+
+          return (
             <div
+              key={phase.id}
               style={{
-                fontSize: "0.64rem",
-                fontWeight: 700,
-                textTransform: "uppercase",
-                letterSpacing: "0.08em",
-                color: "rgba(255, 255, 255, 0.45)",
-                marginBottom: "0.3rem",
-                paddingLeft: "0.4rem",
-                display: "flex",
-                justifyContent: "space-between",
+                borderRadius: "12px",
+                backgroundColor: isOpen ? "rgba(255, 255, 255, 0.03)" : "transparent",
+                border: isOpen
+                  ? "1px solid rgba(255, 255, 255, 0.07)"
+                  : "1px solid transparent",
+                transition: "all 0.2s ease",
               }}
             >
-              <span>{phase.title}</span>
-              <span style={{ opacity: 0.7, fontWeight: 500 }}>{phase.hindiTitle}</span>
-            </div>
+              <button
+                type="button"
+                onClick={() => togglePhase(phase.id)}
+                style={{
+                  width: "100%",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "space-between",
+                  gap: "0.4rem",
+                  padding: "0.55rem 0.6rem",
+                  borderRadius: "10px",
+                  backgroundColor: "transparent",
+                  border: "none",
+                  cursor: "pointer",
+                  textAlign: "left",
+                  color: hasActiveStep
+                    ? "#FFFFFF"
+                    : allPhaseCompleted
+                    ? "rgba(255, 255, 255, 0.85)"
+                    : "rgba(255, 255, 255, 0.55)",
+                  transition: "background-color 0.15s ease",
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.backgroundColor = "rgba(255, 255, 255, 0.05)";
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.backgroundColor = "transparent";
+                }}
+              >
+                <div style={{ display: "flex", flexDirection: "column", minWidth: 0, flex: 1 }}>
+                  <span
+                    style={{
+                      fontSize: "0.66rem",
+                      fontWeight: 700,
+                      textTransform: "uppercase",
+                      letterSpacing: "0.07em",
+                      color: hasActiveStep ? "var(--color-gold)" : "inherit",
+                    }}
+                  >
+                    {isHi ? phase.hindiTitle : phase.title}
+                  </span>
+                  <span
+                    style={{
+                      fontSize: "0.62rem",
+                      opacity: 0.7,
+                      fontWeight: 500,
+                      marginTop: "1px",
+                    }}
+                  >
+                    {isHi ? phase.title : phase.hindiTitle}
+                  </span>
+                </div>
 
-            <div style={{ display: "flex", flexDirection: "column", gap: "0.15rem" }}>
-              {phase.steps.map((step) => {
+                <ChevronDown
+                  size={15}
+                  style={{
+                    flexShrink: 0,
+                    opacity: 0.75,
+                    transform: isOpen ? "rotate(180deg)" : "rotate(0deg)",
+                    transition: "transform 0.22s cubic-bezier(0.16, 1, 0.3, 1)",
+                  }}
+                />
+              </button>
+
+              <div
+                style={{
+                  display: "grid",
+                  gridTemplateRows: isOpen ? "1fr" : "0fr",
+                  transition: "grid-template-rows 0.24s cubic-bezier(0.16, 1, 0.3, 1)",
+                }}
+              >
+                <div style={{ overflow: "hidden" }}>
+                  <div
+                    style={{
+                      display: "flex",
+                      flexDirection: "column",
+                      gap: "0.15rem",
+                      padding: "0.15rem 0.35rem 0.45rem",
+                    }}
+                  >
+                    {phase.steps.map((step) => {
                 const isActive = currentStep === step.num;
                 const isCompleted = currentStep > step.num;
 
@@ -286,14 +409,14 @@ export default function WizardSidebar({
                           : isCompleted
                           ? "var(--color-sage)"
                           : "rgba(255, 255, 255, 0.1)",
-                        color: isActive ? "var(--color-navy)" : "#FFFFFF",
+                        color: "#FFFFFF",
                         display: "flex",
                         alignItems: "center",
                         justifyContent: "center",
                         fontSize: "0.7rem",
                         fontWeight: 800,
                         flexShrink: 0,
-                        boxShadow: isActive ? "0 0 10px rgba(201, 162, 39, 0.5)" : "none",
+                        boxShadow: isActive ? "0 0 10px rgba(198, 83, 120, 0.45)" : "none",
                       }}
                     >
                       {isCompleted ? <Check size={12} strokeWidth={3} /> : step.num}
@@ -310,11 +433,11 @@ export default function WizardSidebar({
 
                     <div style={{ display: "flex", flexDirection: "column", minWidth: 0, flex: 1 }}>
                       <span style={{ overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}>
-                        {step.title}
+                        {isHi && step.hindi ? step.hindi : step.title}
                       </span>
                       {step.hindi && (
                         <span style={{ fontSize: "0.64rem", color: isActive ? "var(--color-gold)" : "rgba(255, 255, 255, 0.45)", lineHeight: 1.1 }}>
-                          {step.hindi}
+                          {isHi ? step.title : step.hindi}
                         </span>
                       )}
                     </div>
@@ -327,26 +450,12 @@ export default function WizardSidebar({
                   </button>
                 );
               })}
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
-        ))}
-      </div>
-
-      {/* Provenance & Security Footer */}
-      <div
-        style={{
-          padding: "1rem 1.25rem",
-          borderTop: "1px solid rgba(255, 255, 255, 0.08)",
-          backgroundColor: "rgba(14, 23, 40, 0.7)",
-          fontSize: "0.725rem",
-          color: "rgba(255, 255, 255, 0.6)",
-        }}
-      >
-        <div style={{ display: "flex", alignItems: "center", gap: "0.45rem", marginBottom: "0.25rem" }}>
-          <span style={{ width: "7px", height: "7px", borderRadius: "50%", backgroundColor: "var(--color-sage)", boxShadow: "0 0 6px var(--color-sage)" }}></span>
-          <span style={{ fontWeight: 600, color: "#FFFFFF" }}>Browser Encrypted Vault</span>
-        </div>
-        <div>Indian Succession Act 1925 • ISA §30 Compliant</div>
+          );
+        })}
       </div>
     </aside>
   );

@@ -106,7 +106,7 @@ export default function Step14FinalWill({ state, onBack }: Step14FinalWillProps)
               alignItems: "center",
               gap: "0.45rem",
               fontWeight: 700,
-              boxShadow: "0 2px 10px rgba(201, 162, 39, 0.25)",
+              boxShadow: "0 2px 10px rgba(198, 83, 120, 0.25)",
               cursor: "pointer",
             }}
           >
@@ -161,7 +161,7 @@ export default function Step14FinalWill({ state, onBack }: Step14FinalWillProps)
               transform: "translate(-50%, -50%) rotate(-35deg)",
               fontSize: "5rem",
               fontWeight: 900,
-              color: "rgba(201, 162, 39, 0.08)",
+              color: "rgba(198, 83, 120, 0.08)",
               pointerEvents: "none",
               whiteSpace: "nowrap",
               letterSpacing: "0.15em",
@@ -334,7 +334,7 @@ export default function Step14FinalWill({ state, onBack }: Step14FinalWillProps)
             display: "inline-flex",
             alignItems: "center",
             gap: "0.5rem",
-            boxShadow: "0 4px 16px rgba(201, 162, 39, 0.25)",
+            boxShadow: "0 4px 16px rgba(198, 83, 120, 0.25)",
           }}
         >
           <span>Go to Customer Dashboard</span>

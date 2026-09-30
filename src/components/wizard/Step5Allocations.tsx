@@ -184,7 +184,7 @@ export default function Step5Allocations({
       {/* Compact Header */}
       <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: "0.5rem" }}>
         <div>
-          <div style={{ display: "inline-flex", alignItems: "center", gap: "0.4rem", padding: "0.2rem 0.65rem", borderRadius: "999px", backgroundColor: "rgba(201, 162, 39, 0.12)", color: "var(--color-navy)", fontSize: "0.72rem", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.05em", marginBottom: "0.25rem" }}>
+          <div style={{ display: "inline-flex", alignItems: "center", gap: "0.4rem", padding: "0.2rem 0.65rem", borderRadius: "999px", backgroundColor: "rgba(198, 83, 120, 0.12)", color: "var(--color-gold)", fontSize: "0.72rem", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.05em", marginBottom: "0.25rem" }}>
             <span style={{ width: "6px", height: "6px", borderRadius: "50%", backgroundColor: "var(--color-gold)" }}></span>
             Step 5 of 14 • Testamentary Bequests & Shares
           </div>
@@ -192,7 +192,7 @@ export default function Step5Allocations({
             <h2 style={{ fontSize: "1.45rem", fontWeight: 800, color: "var(--color-navy)", margin: 0, letterSpacing: "-0.02em" }}>
               Distribute Your Assets
             </h2>
-            <span style={{ fontSize: "0.88rem", color: "#8A6D1B", fontWeight: 600 }}>
+            <span style={{ fontSize: "0.88rem", color: "var(--color-gold)", fontWeight: 600 }}>
               (संपत्ति का बंटवारा एवं हिस्सेदारी)
             </span>
           </div>
@@ -257,7 +257,7 @@ export default function Step5Allocations({
                       ? "1.5px solid var(--color-sage)"
                       : isOver
                       ? "1.5px solid #E11D48"
-                      : "1.5px solid rgba(201, 162, 39, 0.4)",
+                      : "1.5px solid rgba(198, 83, 120, 0.35)",
                     padding: "1rem 1.15rem",
                     boxShadow: "0 2px 10px rgba(0, 0, 0, 0.02)",
                     display: "flex",
@@ -280,11 +280,11 @@ export default function Step5Allocations({
                         padding: "0.2rem 0.55rem",
                         borderRadius: "999px",
                         backgroundColor: isComplete
-                          ? "rgba(124, 148, 115, 0.15)"
+                          ? "rgba(95, 126, 117, 0.15)"
                           : isOver
                           ? "rgba(225, 29, 72, 0.12)"
-                          : "rgba(201, 162, 39, 0.15)",
-                        color: isComplete ? "var(--color-sage)" : isOver ? "#BE123C" : "#A37A12",
+                          : "rgba(198, 83, 120, 0.12)",
+                        color: isComplete ? "var(--color-sage)" : isOver ? "#BE123C" : "var(--color-gold)",
                         fontWeight: 700,
                         fontSize: "0.75rem",
                       }}
@@ -475,8 +475,8 @@ export default function Step5Allocations({
                     style={{
                       padding: "0.5rem 0.65rem",
                       borderRadius: "10px",
-                      border: isSelected ? "2px solid var(--color-gold)" : "1px solid rgba(27, 42, 74, 0.1)",
-                      backgroundColor: isSelected ? "rgba(201, 162, 39, 0.08)" : "#FFFFFF",
+                      border: isSelected ? "2px solid var(--color-gold)" : "1px solid rgba(23, 34, 40, 0.1)",
+                      backgroundColor: isSelected ? "rgba(198, 83, 120, 0.08)" : "#FFFFFF",
                       cursor: "pointer",
                       display: "flex",
                       alignItems: "center",
@@ -577,7 +577,7 @@ export default function Step5Allocations({
             borderRadius: "10px",
             fontSize: "0.9rem",
             fontWeight: 700,
-            boxShadow: "0 4px 16px rgba(201, 162, 39, 0.25)",
+            boxShadow: "0 4px 16px rgba(198, 83, 120, 0.25)",
             cursor: "pointer",
           }}
         >

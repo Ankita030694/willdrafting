@@ -45,13 +45,13 @@ export default function VisualChoiceCard({
         justifyContent: "space-between",
         padding: "1rem 1.1rem",
         borderRadius: "14px",
-        backgroundColor: selected ? "#FEFDF8" : "#FFFFFF",
+        backgroundColor: selected ? "#FFFBFD" : "#FFFFFF",
         border: selected
-          ? "2px solid #D4AF37"
-          : "1.5px solid rgba(27, 42, 74, 0.12)",
+          ? "2px solid var(--color-gold)"
+          : "1.5px solid rgba(23, 34, 40, 0.12)",
         boxShadow: selected
-          ? "0 8px 20px -4px rgba(212, 175, 55, 0.25), 0 2px 6px -1px rgba(15, 29, 56, 0.05)"
-          : "0 2px 8px rgba(15, 29, 56, 0.04)",
+          ? "0 8px 20px -4px rgba(198, 83, 120, 0.2), 0 2px 6px -1px rgba(23, 34, 40, 0.05)"
+          : "0 2px 8px rgba(23, 34, 40, 0.04)",
         cursor: disabled ? "not-allowed" : "pointer",
         opacity: disabled ? 0.6 : 1,
         transition: "all 0.18s cubic-bezier(0.16, 1, 0.3, 1)",
@@ -70,7 +70,7 @@ export default function VisualChoiceCard({
             width: "42px",
             height: "42px",
             borderRadius: "10px",
-            backgroundColor: selected ? "rgba(212, 175, 55, 0.18)" : "rgba(27, 42, 74, 0.04)",
+            backgroundColor: selected ? "rgba(198, 83, 120, 0.14)" : "rgba(23, 34, 40, 0.04)",
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
@@ -87,8 +87,8 @@ export default function VisualChoiceCard({
                 fontWeight: 700,
                 padding: "0.15rem 0.45rem",
                 borderRadius: "4px",
-                backgroundColor: "rgba(212, 175, 55, 0.15)",
-                color: "#9A7B1C",
+                backgroundColor: "rgba(198, 83, 120, 0.12)",
+                color: "var(--color-gold)",
                 textTransform: "uppercase",
               }}
             >
@@ -101,7 +101,7 @@ export default function VisualChoiceCard({
               width: "20px",
               height: "20px",
               borderRadius: "50%",
-              border: selected ? "none" : "1.5px solid rgba(27, 42, 74, 0.2)",
+              border: selected ? "none" : "1.5px solid rgba(23, 34, 40, 0.2)",
               backgroundColor: selected ? "var(--color-gold)" : "transparent",
               display: "flex",
               alignItems: "center",
@@ -135,7 +135,7 @@ export default function VisualChoiceCard({
           <div
             style={{
               fontSize: "0.78rem",
-              color: selected ? "#8A6D1B" : "#64748B",
+              color: selected ? "var(--color-gold)" : "#64748B",
               marginTop: "0.15rem",
               fontWeight: 500,
             }}

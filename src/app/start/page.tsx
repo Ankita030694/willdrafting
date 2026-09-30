@@ -1,7 +1,7 @@
 "use client";
 
 import React, { Suspense, useState, useEffect } from "react";
-import { useSearchParams } from "next/navigation";
+import { useSearchParams, useRouter, useParams } from "next/navigation";
 import {
   WillDraftingState,
   loadStoredWillState,
@@ -25,18 +25,33 @@ import Step13PlanSelect from "@/components/wizard/Step13PlanSelect";
 import Step14FinalWill from "@/components/wizard/Step14FinalWill";
 
 function WizardContent() {
+  const router = useRouter();
+  const params = useParams<{ step?: string }>();
   const searchParams = useSearchParams();
-  const stepParam = searchParams.get("step");
-  const initialStep = stepParam ? Math.min(14, Math.max(1, parseInt(stepParam, 10))) : 1;
+  const rawStepParam = params?.step || searchParams.get("step");
+  const parsedStep = rawStepParam ? parseInt(String(rawStepParam), 10) : 1;
+  const initialStep = !Number.isNaN(parsedStep)
+    ? Math.min(14, Math.max(1, parsedStep))
+    : 1;
 
   const [currentStep, setCurrentStep] = useState(initialStep);
   const [state, setState] = useState<WillDraftingState>(SCENARIO_1_STANDARD_MARRIED);
   const [mounted, setMounted] = useState(false);
   const [mobileSidebarOpen, setMobileSidebarOpen] = useState(false);
+  const [lang, setLang] = useState<"en" | "hi">("en");
+  const mainRef = React.useRef<HTMLElement | null>(null);
+
+  useEffect(() => {
+    setCurrentStep(initialStep);
+  }, [initialStep]);
 
   useEffect(() => {
     const loaded = loadStoredWillState();
     setState(loaded);
+    const savedLang = window.localStorage.getItem("willdrafting_lang");
+    if (savedLang === "hi" || savedLang === "en") {
+      setLang(savedLang);
+    }
     setMounted(true);
 
     const handleStateChange = () => {
@@ -48,6 +63,71 @@ function WizardContent() {
     };
   }, []);
 
+  const handleChangeLang = (nextLang: "en" | "hi") => {
+    setLang(nextLang);
+    window.localStorage.setItem("willdrafting_lang", nextLang);
+  };
+
+  useEffect(() => {
+    const container = mainRef.current;
+    if (!container || currentStep === 1) return;
+
+    const hiMap: Record<string, string> = {
+      "Back": "पीछे जाएं (Back)",
+      "Save & Continue →": "सहेजें और आगे बढ़ें →",
+      "Save & Continue": "सहेजें और आगे बढ़ें",
+      "Continue to Assets →": "संपत्ति विवरण पर आगे बढ़ें →",
+      "Continue to Allocations →": "बंटवारे पर आगे बढ़ें →",
+      "Continue to Executors →": "प्रबंधक नियुक्ति पर आगे बढ़ें →",
+      "Continue to Guardians →": "अभिभावक नियुक्ति पर आगे बढ़ें →",
+      "Continue to Special Wishes →": "विशेष इच्छाओं पर आगे बढ़ें →",
+      "Continue to Emotional Message →": "पारिवारिक संदेश पर आगे बढ़ें →",
+      "Continue to Full Review →": "संपूर्ण समीक्षा पर आगे बढ़ें →",
+      "Run Statutory Health Check": "कानूनी स्वास्थ्य जांच चलाएं",
+      "Proceed to Dynamic Clause Assembly": "कानूनी धारा संकलन पर आगे बढ़ें",
+      "Select Plan & View Final Will →": "योजना चुनें और अंतिम वसीयत देखें →",
+      "Confirm Plan & View Final Will": "योजना की पुष्टि करें और अंतिम वसीयत देखें",
+      "Print / Save as PDF": "प्रिंट करें / PDF सहेजें",
+      "Go to Customer Dashboard": "ग्राहक डैशबोर्ड पर जाएं",
+      "Tell us about yourself": "अपने बारे में जानकारी दें (About You)",
+      "Who is in your immediate family?": "आपके निकटतम परिवार में कौन हैं? (My Family)",
+      "Register Your Estate & Assets": "अपनी संपत्ति और धन दर्ज करें (Assets Register)",
+      "How should your estate be distributed?": "आपकी संपत्ति का बंटवारा कैसे होना चाहिए?",
+      "Appoint Your Will Executors": "अपने वसीयत निष्पादक (Executors) नियुक्त करें",
+      "Appoint Testamentary Guardians": "नाबालिग बच्चों के लिए अभिभावक नियुक्त करें",
+      "Special Wishes & Directives": "विशेष इच्छाएं एवं निर्देश",
+      "Leave a Message of Love & Wisdom": "अपने परिवार के लिए प्रेम और आशीर्वाद का संदेश",
+      "Comprehensive Will Summary": "वसीयत का संपूर्ण सारांश",
+      "Legal Health Check Engine": "कानूनी जांच एवं अनुपालन स्कोर",
+      "Assembling Your Legal Instrument": "आपकी कानूनी वसीयत तैयार की जा रही है",
+      "Choose your legal certification tier": "अपना कानूनी सत्यापन प्लान चुनें",
+      "Your Will is Legally Compiled & Ready": "आपकी वसीयत कानूनी रूप से तैयार है",
+    };
+
+    const reverseMap: Record<string, string> = {};
+    Object.entries(hiMap).forEach(([en, hi]) => {
+      reverseMap[hi] = en;
+    });
+
+    const walk = document.createTreeWalker(container, NodeFilter.SHOW_TEXT);
+    const nodes: Text[] = [];
+    let current = walk.nextNode();
+    while (current) {
+      nodes.push(current as Text);
+      current = walk.nextNode();
+    }
+
+    nodes.forEach((node) => {
+      const trimmed = node.nodeValue?.trim() || "";
+      if (!trimmed) return;
+      if (lang === "hi" && hiMap[trimmed]) {
+        node.nodeValue = node.nodeValue!.replace(trimmed, hiMap[trimmed]);
+      } else if (lang === "en" && reverseMap[trimmed]) {
+        node.nodeValue = node.nodeValue!.replace(trimmed, reverseMap[trimmed]);
+      }
+    });
+  }, [lang, currentStep, state]);
+
   const handleUpdateState = (updater: (prev: WillDraftingState) => WillDraftingState) => {
     setState((prev) => {
       const updated = updater(prev);
@@ -57,8 +137,14 @@ function WizardContent() {
   };
 
   const handleStepJump = (step: number) => {
-    setCurrentStep(step);
+    const clampedStep = Math.min(14, Math.max(1, step));
+    setCurrentStep(clampedStep);
     setMobileSidebarOpen(false);
+    const targetUrl =
+      clampedStep === 1
+        ? "/start"
+        : `/start/${String(clampedStep).padStart(2, "0")}`;
+    router.push(targetUrl);
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
@@ -101,7 +187,7 @@ function WizardContent() {
         height: "100vh",
         overflow: "hidden",
         backgroundColor: "#FAF7F0",
-        backgroundImage: "radial-gradient(circle at 10% 20%, rgba(201, 162, 39, 0.05) 0%, transparent 45%), radial-gradient(circle at 90% 80%, rgba(124, 148, 115, 0.05) 0%, transparent 45%)",
+        backgroundImage: "radial-gradient(circle at 10% 20%, rgba(198, 83, 120, 0.05) 0%, transparent 45%), radial-gradient(circle at 90% 80%, rgba(95, 126, 117, 0.05) 0%, transparent 45%)",
       }}
     >
       {/* Desktop Left Sidebar Stepper */}
@@ -110,6 +196,7 @@ function WizardContent() {
           currentStep={currentStep}
           onJumpToStep={handleStepJump}
           state={state}
+          lang={lang}
         />
       </div>
 
@@ -119,7 +206,7 @@ function WizardContent() {
           style={{
             position: "fixed",
             inset: 0,
-            backgroundColor: "rgba(22, 35, 60, 0.7)",
+            backgroundColor: "rgba(23, 34, 40, 0.7)",
             backdropFilter: "blur(6px)",
             zIndex: 999,
           }}
@@ -133,6 +220,7 @@ function WizardContent() {
               currentStep={currentStep}
               onJumpToStep={handleStepJump}
               state={state}
+              lang={lang}
             />
           </div>
         </div>
@@ -148,7 +236,7 @@ function WizardContent() {
             alignItems: "center",
             justifyContent: "space-between",
             padding: "1rem 1.25rem",
-            backgroundColor: "rgba(22, 35, 60, 0.95)",
+            backgroundColor: "rgba(23, 34, 40, 0.95)",
             backdropFilter: "blur(20px)",
             color: "#FFFFFF",
             borderBottom: "1px solid rgba(255, 255, 255, 0.08)",
@@ -177,7 +265,7 @@ function WizardContent() {
             <span style={{ fontWeight: 700, fontSize: "0.875rem" }}>
               Step {currentStep} of 14
             </span>
-            <span style={{ fontSize: "0.725rem", color: "var(--color-gold)", fontWeight: 700, padding: "0.15rem 0.45rem", borderRadius: "999px", backgroundColor: "rgba(201, 162, 39, 0.15)" }}>
+            <span style={{ fontSize: "0.725rem", color: "var(--color-gold)", fontWeight: 700, padding: "0.15rem 0.45rem", borderRadius: "999px", backgroundColor: "rgba(198, 83, 120, 0.15)" }}>
               {Math.round(((currentStep - 1) / 13) * 100)}%
             </span>
           </div>
@@ -185,6 +273,7 @@ function WizardContent() {
 
         {/* Content Viewport */}
         <main
+          ref={mainRef}
           style={{
             flex: 1,
             padding: "0.85rem 1.25rem 1rem",
@@ -200,7 +289,12 @@ function WizardContent() {
         >
           <div style={{ width: "100%", minWidth: 0, flex: 1, display: "flex", flexDirection: "column" }}>
           {currentStep === 1 && (
-            <Step1Welcome state={state} onNext={() => handleStepJump(2)} />
+            <Step1Welcome
+              state={state}
+              onNext={() => handleStepJump(2)}
+              lang={lang}
+              onChangeLang={handleChangeLang}
+            />
           )}
 
           {currentStep === 2 && (
@@ -317,6 +411,47 @@ function WizardContent() {
           )}
           </div>
         </main>
+
+        {/* Slim Bottom Provenance & Security Strip */}
+        <footer
+          style={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            gap: "0.65rem",
+            padding: "0.35rem 1.25rem",
+            backgroundColor: "#C65378",
+            fontSize: "0.72rem",
+            color: "rgba(255, 255, 255, 0.92)",
+            flexShrink: 0,
+            position: "sticky",
+            bottom: 0,
+            width: "100%",
+            zIndex: 10,
+            textAlign: "center",
+          }}
+        >
+          <div style={{ display: "inline-flex", alignItems: "center", gap: "0.4rem" }}>
+            <span
+              style={{
+                width: "6px",
+                height: "6px",
+                borderRadius: "50%",
+                backgroundColor: "#FFFFFF",
+                boxShadow: "0 0 6px rgba(255, 255, 255, 0.8)",
+              }}
+            />
+            <span style={{ fontWeight: 700, color: "#FFFFFF" }}>
+              {lang === "hi" ? "ब्राउज़र एन्क्रिप्टेड तिजोरी (Browser Encrypted Vault)" : "Browser Encrypted Vault"}
+            </span>
+          </div>
+          <span style={{ opacity: 0.6 }}>•</span>
+          <span style={{ fontWeight: 500 }}>
+            {lang === "hi"
+              ? "भारतीय उत्तराधिकार अधिनियम 1925 • ISA §30 मान्य"
+              : "Indian Succession Act 1925 • ISA §30 Compliant"}
+          </span>
+        </footer>
       </div>
 
       <style jsx global>{`

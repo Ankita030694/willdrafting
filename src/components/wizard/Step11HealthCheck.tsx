@@ -61,8 +61,8 @@ export default function Step11HealthCheck({
               gap: "0.4rem",
               padding: "0.2rem 0.6rem",
               borderRadius: "999px",
-              backgroundColor: "rgba(201, 162, 39, 0.12)",
-              color: "var(--color-navy)",
+              backgroundColor: "rgba(198, 83, 120, 0.12)",
+              color: "var(--color-gold)",
               fontSize: "0.72rem",
               fontWeight: 700,
               textTransform: "uppercase",
@@ -87,7 +87,7 @@ export default function Step11HealthCheck({
           <h2 style={{ fontSize: "1.45rem", fontWeight: 800, color: "var(--color-navy)", margin: 0, letterSpacing: "-0.02em" }}>
             Legal Health Check Engine
           </h2>
-          <span style={{ fontSize: "0.88rem", color: "#8A6D1B", fontWeight: 600 }}>
+          <span style={{ fontSize: "0.88rem", color: "var(--color-gold)", fontWeight: 600 }}>
             (कानूनी जांच एवं अनुपालन स्कोर)
           </span>
         </div>
@@ -200,7 +200,7 @@ export default function Step11HealthCheck({
               </span>
               <span style={{ fontSize: "0.68rem", fontWeight: 600, color: "var(--color-navy)" }}>Passed Checks</span>
             </div>
-            <div style={{ backgroundColor: "rgba(201, 162, 39, 0.08)", padding: "0.5rem", borderRadius: "10px" }}>
+            <div style={{ backgroundColor: "rgba(198, 83, 120, 0.08)", padding: "0.5rem", borderRadius: "10px" }}>
               <span style={{ display: "block", fontSize: "1.1rem", fontWeight: 800, color: "var(--color-gold)" }}>
                 {critical.length + warnings.length}
               </span>
@@ -270,8 +270,8 @@ export default function Step11HealthCheck({
                         padding: "0.15rem 0.45rem",
                         borderRadius: "5px",
                         textTransform: "uppercase",
-                        backgroundColor: isCritical ? "rgba(225, 29, 72, 0.1)" : isWarning ? "rgba(201, 162, 39, 0.12)" : "rgba(124, 148, 115, 0.12)",
-                        color: isCritical ? "#E11D48" : isWarning ? "#A37A12" : "var(--color-sage)",
+                        backgroundColor: isCritical ? "rgba(225, 29, 72, 0.1)" : isWarning ? "rgba(198, 83, 120, 0.12)" : "rgba(124, 148, 115, 0.12)",
+                        color: isCritical ? "#E11D48" : isWarning ? "var(--color-gold)" : "var(--color-sage)",
                       }}
                     >
                       {issue.severity}
@@ -347,7 +347,7 @@ export default function Step11HealthCheck({
             borderRadius: "10px",
             fontSize: "0.9rem",
             fontWeight: 700,
-            boxShadow: "0 4px 16px rgba(201, 162, 39, 0.25)",
+            boxShadow: "0 4px 16px rgba(198, 83, 120, 0.25)",
             cursor: "pointer",
             display: "inline-flex",
             alignItems: "center",

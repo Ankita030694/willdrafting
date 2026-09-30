@@ -27,14 +27,14 @@
 
 :root {
   /* -------------------------------------------------------------------------
-     STRICT PALETTE TOKENS
+     STRICT PALETTE TOKENS (Website Color System)
      ------------------------------------------------------------------------- */
-  --color-navy: #1B2A4A;
-  --color-slate: #3B5173;
-  --color-gold: #C9A227;
-  --color-sage: #7C9473;
+  --color-navy: #172228;
+  --color-slate: #49585F;
+  --color-gold: #C65378;
+  --color-sage: #5F7E75;
   --color-cream: #FAF7F0;
-  --color-charcoal: #2B2B2B;
+  --color-charcoal: #172228;
 
   /* -------------------------------------------------------------------------
      SEMANTIC THEME TOKENS
@@ -43,50 +43,50 @@
   --bg-card: #FFFFFF;
   --bg-card-subtle: #FDFBF7;
   --bg-header: var(--color-navy);
-  --bg-navy-deep: #121D34;
-  --bg-navy-light: #24375F;
+  --bg-navy-deep: #10181D;
+  --bg-navy-light: #212F35;
 
   /* Typography Colors */
   --text-main: var(--color-charcoal);
   --text-heading: var(--color-slate);
   --text-heading-dark: var(--color-navy);
-  --text-muted: #64748B;
+  --text-muted: #55636D;
   --text-inverse: #FFFFFF;
   --form-label-color: var(--color-navy);
 
-  /* Primary CTA (Gold + Charcoal text) */
+  /* Primary CTA (Website Berry Rose #C65378 + White text) */
   --cta-primary-bg: var(--color-gold);
-  --cta-primary-text: var(--color-charcoal);
-  --cta-primary-hover: #B8921E;
-  --cta-primary-active: #A58117;
+  --cta-primary-text: #FFFFFF;
+  --cta-primary-hover: #a13c5d;
+  --cta-primary-active: #88314E;
 
   /* Secondary CTA (Slate) */
   --cta-secondary-bg: var(--color-slate);
   --cta-secondary-text: #FFFFFF;
-  --cta-secondary-hover: #2F425F;
+  --cta-secondary-hover: #3B484F;
 
   /* Sage Status / Actions */
   --status-sage: var(--color-sage);
-  --status-sage-bg: rgba(124, 148, 115, 0.12);
-  --status-sage-border: rgba(124, 148, 115, 0.3);
+  --status-sage-bg: rgba(95, 126, 117, 0.12);
+  --status-sage-border: rgba(95, 126, 117, 0.3);
   --cta-sage-bg: var(--color-sage);
   --cta-sage-text: #FFFFFF;
-  --cta-sage-hover: #697F61;
+  --cta-sage-hover: #4E6961;
 
   /* Interactive Links */
   --link-color: var(--color-slate);
   --link-hover: var(--color-navy);
 
   /* Borders & Dividers */
-  --border-subtle: rgba(27, 42, 74, 0.08);
-  --border-card: rgba(27, 42, 74, 0.1);
-  --border-focus: var(--color-navy);
+  --border-subtle: rgba(23, 34, 40, 0.08);
+  --border-card: rgba(23, 34, 40, 0.1);
+  --border-focus: var(--color-gold);
 
   /* Shadows */
-  --shadow-sm: 0 1px 3px rgba(27, 42, 74, 0.05);
-  --shadow-md: 0 6px 20px -4px rgba(27, 42, 74, 0.08);
-  --shadow-lg: 0 14px 34px -6px rgba(27, 42, 74, 0.12);
-  --shadow-gold: 0 4px 14px rgba(201, 162, 39, 0.28);
+  --shadow-sm: 0 1px 3px rgba(23, 34, 40, 0.05);
+  --shadow-md: 0 6px 20px -4px rgba(23, 34, 40, 0.08);
+  --shadow-lg: 0 14px 34px -6px rgba(23, 34, 40, 0.12);
+  --shadow-gold: 0 4px 14px rgba(198, 83, 120, 0.25);
 
   /* Geometry */
   --max-width: 1200px;
@@ -258,7 +258,7 @@ button, input, select, textarea {
   background-color: var(--cta-primary-hover);
   border-color: var(--cta-primary-hover);
   transform: translateY(-2px);
-  box-shadow: 0 8px 22px rgba(201, 162, 39, 0.38);
+  box-shadow: 0 8px 22px rgba(198, 83, 120, 0.35);
 }
 
 .btn-gold:active {
@@ -307,12 +307,12 @@ button, input, select, textarea {
 .btn-outline-slate {
   background-color: transparent;
   color: var(--color-slate) !important;
-  border-color: rgba(59, 81, 115, 0.3);
+  border-color: rgba(73, 88, 95, 0.3);
 }
 
 .btn-outline-slate:hover {
   border-color: var(--color-slate);
-  background-color: rgba(59, 81, 115, 0.05);
+  background-color: rgba(73, 88, 95, 0.05);
 }
 
 /* Badges / Status Pills (Sage) */
@@ -336,9 +336,9 @@ button, input, select, textarea {
   gap: 0.4rem;
   padding: 0.3rem 0.75rem;
   border-radius: 9999px;
-  background-color: rgba(27, 42, 74, 0.08);
+  background-color: rgba(23, 34, 40, 0.08);
   color: var(--color-navy);
-  border: 1px solid rgba(27, 42, 74, 0.16);
+  border: 1px solid rgba(23, 34, 40, 0.16);
   font-size: 0.8rem;
   font-weight: 600;
 }
@@ -357,7 +357,7 @@ button, input, select, textarea {
   width: 100%;
   padding: 0.75rem 1rem;
   background-color: #FFFFFF;
-  border: 1px solid rgba(27, 42, 74, 0.16);
+  border: 1px solid rgba(23, 34, 40, 0.16);
   border-radius: var(--radius-md);
   color: var(--color-charcoal);
   font-family: inherit;
@@ -368,7 +368,7 @@ button, input, select, textarea {
 
 .form-input:focus {
   border-color: var(--border-focus);
-  box-shadow: 0 0 0 3px rgba(27, 42, 74, 0.09);
+  box-shadow: 0 0 0 3px rgba(198, 83, 120, 0.12);
 }
 
 /* Unified Phone Input Group with Country Prefix */
@@ -377,7 +377,7 @@ button, input, select, textarea {
   align-items: center;
   width: 100%;
   background-color: #FFFFFF;
-  border: 1px solid rgba(27, 42, 74, 0.16);
+  border: 1px solid rgba(23, 34, 40, 0.16);
   border-radius: var(--radius-md);
   padding: 0 1rem;
   transition: var(--transition);
@@ -385,7 +385,7 @@ button, input, select, textarea {
 
 .phone-input-group:focus-within {
   border-color: var(--border-focus);
-  box-shadow: 0 0 0 3px rgba(27, 42, 74, 0.09);
+  box-shadow: 0 0 0 3px rgba(198, 83, 120, 0.12);
 }
 
 .phone-prefix {
@@ -402,7 +402,7 @@ button, input, select, textarea {
 .phone-divider {
   width: 1px;
   height: 1.35rem;
-  background-color: rgba(27, 42, 74, 0.16);
+  background-color: rgba(23, 34, 40, 0.16);
   margin: 0 0.85rem;
   flex-shrink: 0;
 }
@@ -423,7 +423,7 @@ button, input, select, textarea {
 .progress-bar-track {
   width: 100%;
   height: 6px;
-  background-color: rgba(27, 42, 74, 0.08);
+  background-color: rgba(23, 34, 40, 0.08);
   border-radius: 9999px;
   overflow: hidden;
 }
@@ -463,8 +463,8 @@ button, input, select, textarea {
 
 .pricing-inclusion-card:hover {
   transform: translateY(-3px);
-  box-shadow: 0 12px 24px -6px rgba(27, 42, 74, 0.08);
-  border-color: rgba(201, 162, 39, 0.4) !important;
+  box-shadow: 0 12px 24px -6px rgba(23, 34, 40, 0.08);
+  border-color: rgba(198, 83, 120, 0.4) !important;
 }
 
 .pricing-table-wrapper {
@@ -498,13 +498,13 @@ button, input, select, textarea {
 }
 
 .pricing-faq-details:hover {
-  border-color: rgba(201, 162, 39, 0.4) !important;
+  border-color: rgba(198, 83, 120, 0.4) !important;
 }
 
 .pricing-faq-details[open] {
   background-color: #FFFFFF !important;
-  border-color: rgba(201, 162, 39, 0.5) !important;
-  box-shadow: 0 6px 16px rgba(10, 17, 40, 0.05);
+  border-color: rgba(198, 83, 120, 0.5) !important;
+  box-shadow: 0 6px 16px rgba(23, 34, 40, 0.05);
 }
 
 .pricing-faq-details summary::-webkit-details-marker {
@@ -518,7 +518,7 @@ button, input, select, textarea {
   width: 24px;
   height: 24px;
   border-radius: 50%;
-  background-color: rgba(201, 162, 39, 0.12);
+  background-color: rgba(198, 83, 120, 0.12);
   color: var(--color-gold);
   font-size: 1.1rem;
   font-weight: 700;
@@ -527,7 +527,7 @@ button, input, select, textarea {
 
 .pricing-faq-details[open] .pricing-faq-icon {
   transform: rotate(45deg);
-  background-color: rgba(201, 162, 39, 0.22);
+  background-color: rgba(198, 83, 120, 0.22);
 }
 
 /* Global Editorial Card & Component Mobile Overrides */

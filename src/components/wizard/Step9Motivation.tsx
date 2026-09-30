@@ -140,8 +140,8 @@ export default function Step9Motivation({
               gap: "0.4rem",
               padding: "0.2rem 0.6rem",
               borderRadius: "999px",
-              backgroundColor: "rgba(201, 162, 39, 0.12)",
-              color: "var(--color-navy)",
+              backgroundColor: "rgba(198, 83, 120, 0.12)",
+              color: "var(--color-gold)",
               fontSize: "0.72rem",
               fontWeight: 700,
               textTransform: "uppercase",
@@ -166,7 +166,7 @@ export default function Step9Motivation({
           <h2 style={{ fontSize: "1.45rem", fontWeight: 800, color: "var(--color-navy)", margin: 0, letterSpacing: "-0.02em" }}>
             Primary Motivation & Personal Message
           </h2>
-          <span style={{ fontSize: "0.88rem", color: "#8A6D1B", fontWeight: 600 }}>
+          <span style={{ fontSize: "0.88rem", color: "var(--color-gold)", fontWeight: 600 }}>
             (वसीयत का उद्देश्य एवं परिवार के नाम संदेश)
           </span>
         </div>
@@ -202,7 +202,7 @@ export default function Step9Motivation({
                 width: "28px",
                 height: "28px",
                 borderRadius: "8px",
-                backgroundColor: "rgba(201, 162, 39, 0.15)",
+                backgroundColor: "rgba(198, 83, 120, 0.12)",
                 color: "var(--color-gold)",
                 display: "flex",
                 alignItems: "center",
@@ -227,8 +227,8 @@ export default function Step9Motivation({
                   style={{
                     padding: "0.65rem 0.85rem",
                     borderRadius: "12px",
-                    border: isSel ? "2px solid var(--color-gold)" : "1px solid rgba(27, 42, 74, 0.08)",
-                    backgroundColor: isSel ? "rgba(201, 162, 39, 0.07)" : "#FAFAFA",
+                    border: isSel ? "2px solid var(--color-gold)" : "1px solid rgba(23, 34, 40, 0.08)",
+                    backgroundColor: isSel ? "rgba(198, 83, 120, 0.06)" : "#FAFAFA",
                     cursor: "pointer",
                     display: "flex",
                     alignItems: "flex-start",
@@ -274,7 +274,7 @@ export default function Step9Motivation({
                 width: "28px",
                 height: "28px",
                 borderRadius: "8px",
-                backgroundColor: "rgba(201, 162, 39, 0.15)",
+                backgroundColor: "rgba(198, 83, 120, 0.12)",
                 color: "var(--color-gold)",
                 display: "flex",
                 alignItems: "center",
@@ -331,8 +331,8 @@ export default function Step9Motivation({
                   borderRadius: "6px",
                   fontSize: "0.7rem",
                   fontWeight: 500,
-                  backgroundColor: "rgba(201, 162, 39, 0.08)",
-                  border: "1px solid rgba(201, 162, 39, 0.2)",
+                  backgroundColor: "rgba(198, 83, 120, 0.08)",
+                  border: "1px solid rgba(198, 83, 120, 0.2)",
                   color: "var(--color-navy)",
                   cursor: "pointer",
                   display: "inline-flex",
@@ -416,7 +416,7 @@ export default function Step9Motivation({
             borderRadius: "10px",
             fontSize: "0.9rem",
             fontWeight: 700,
-            boxShadow: "0 4px 16px rgba(201, 162, 39, 0.25)",
+            boxShadow: "0 4px 16px rgba(198, 83, 120, 0.25)",
             cursor: "pointer",
             display: "inline-flex",
             alignItems: "center",

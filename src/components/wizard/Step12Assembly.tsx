@@ -94,7 +94,7 @@ export default function Step12Assembly({
       </div>
 
       <div>
-        <div style={{ display: "inline-flex", alignItems: "center", gap: "0.5rem", padding: "0.3rem 0.75rem", borderRadius: "999px", backgroundColor: "rgba(201, 162, 39, 0.12)", color: "var(--color-navy)", fontSize: "0.75rem", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.06em", marginBottom: "0.75rem" }}>
+        <div style={{ display: "inline-flex", alignItems: "center", gap: "0.5rem", padding: "0.3rem 0.75rem", borderRadius: "999px", backgroundColor: "rgba(198, 83, 120, 0.12)", color: "var(--color-gold)", fontSize: "0.75rem", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.06em", marginBottom: "0.75rem" }}>
           <span style={{ width: "6px", height: "6px", borderRadius: "50%", backgroundColor: "var(--color-gold)" }}></span>
           Step 12 of 14 • Dynamic Clause Compiler
         </div>
@@ -107,7 +107,7 @@ export default function Step12Assembly({
         <h2 style={{ fontSize: "2.1rem", fontWeight: 800, color: "var(--color-navy)", margin: 0, letterSpacing: "-0.02em" }}>
           Assembling Your Legal Instrument
         </h2>
-        <div style={{ fontSize: "0.95rem", color: "#8A6D1B", fontWeight: 600, marginTop: "0.25rem" }}>
+        <div style={{ fontSize: "0.95rem", color: "var(--color-gold)", fontWeight: 600, marginTop: "0.25rem" }}>
           (कानूनी वसीयतनामा का संकलन एवं प्रमाणीकरण)
         </div>
         <p style={{ fontSize: "0.95rem", color: "var(--color-slate)", margin: "0.5rem 0 0", minHeight: "24px" }}>
@@ -207,7 +207,7 @@ export default function Step12Assembly({
           fontWeight: 700,
           opacity: progress < 100 ? 0.4 : 1,
           cursor: progress < 100 ? "not-allowed" : "pointer",
-          boxShadow: progress === 100 ? "0 6px 20px rgba(201, 162, 39, 0.3)" : "none",
+          boxShadow: progress === 100 ? "0 6px 20px rgba(198, 83, 120, 0.3)" : "none",
           transition: "all 0.25s ease",
         }}
       >

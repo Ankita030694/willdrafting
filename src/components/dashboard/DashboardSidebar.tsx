@@ -138,11 +138,11 @@ export default function DashboardSidebar({
       >
         <Link href="/" style={{ display: "flex", alignItems: "center", gap: "0.6rem", textDecoration: "none" }}>
           <Image
-            src="/images/With Text.svg"
+            src="/Logofinal.svg"
             alt="WillDrafting.in"
             width={160}
-            height={26}
-            style={{ height: "26px", width: "auto", objectFit: "contain", filter: "brightness(0) invert(1)" }}
+            height={34}
+            style={{ height: "34px", width: "auto", objectFit: "contain" }}
             priority
           />
         </Link>
