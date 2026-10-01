@@ -1,43 +1,21 @@
 "use client";
 
 import React, { Suspense, useEffect, useState } from "react";
-import { useRouter, useSearchParams } from "next/navigation";
+import { useRouter } from "next/navigation";
 import {
   WillDraftingState,
   loadStoredWillState,
+  saveStoredWillState,
   SCENARIO_1_STANDARD_MARRIED,
 } from "@/lib/willDraftingStore";
 import DashboardSidebar from "@/components/dashboard/DashboardSidebar";
-import DashboardHeader from "@/components/dashboard/DashboardHeader";
 import { DashboardTab } from "@/components/dashboard/DashboardTabsNav";
-import OverviewTab from "@/components/dashboard/OverviewTab";
-import VaultTab from "@/components/dashboard/VaultTab";
-import UpdateWillTab from "@/components/dashboard/UpdateWillTab";
-import AnnualReviewTab from "@/components/dashboard/AnnualReviewTab";
-import ConsultationTab from "@/components/dashboard/ConsultationTab";
-import ExecutionGuideTab from "@/components/dashboard/ExecutionGuideTab";
-import DemoSandboxModal from "@/components/dashboard/DemoSandboxModal";
+import WillOverviewDashboard from "@/components/dashboard/WillOverviewDashboard";
 
-function DashboardContent() {
+function StartDashboardContent() {
   const router = useRouter();
-  const searchParams = useSearchParams();
-  const rawTab = searchParams.get("tab") as DashboardTab | null;
-
-  const validTabs: DashboardTab[] = [
-    "overview",
-    "vault",
-    "update",
-    "annual-review",
-    "consultation",
-    "execution",
-  ];
-
-  const activeTab: DashboardTab =
-    rawTab && validTabs.includes(rawTab) ? rawTab : "overview";
-
   const [state, setState] = useState<WillDraftingState>(SCENARIO_1_STANDARD_MARRIED);
   const [mounted, setMounted] = useState(false);
-  const [sandboxOpen, setSandboxOpen] = useState(false);
   const [mobileSidebarOpen, setMobileSidebarOpen] = useState(false);
 
   useEffect(() => {
@@ -48,22 +26,24 @@ function DashboardContent() {
     const handleStateChange = () => {
       setState(loadStoredWillState());
     };
-
     window.addEventListener("willdrafting_state_change", handleStateChange);
     return () => {
       window.removeEventListener("willdrafting_state_change", handleStateChange);
     };
   }, []);
 
-  useEffect(() => {
-    if (activeTab === "overview") {
-      router.replace("/start/dashboard");
-    }
-  }, [activeTab, router]);
-
   const handleTabChange = (tab: DashboardTab) => {
-    router.push(`/dashboard?tab=${tab}`, { scroll: false });
-    setMobileSidebarOpen(false);
+    if (tab === "overview") {
+      // Already on overview → do nothing
+      return;
+    }
+    // Navigate to the main /dashboard page with the requested tab
+    router.push(`/dashboard?tab=${tab}`);
+  };
+
+  const handleStateChange = (newState: WillDraftingState) => {
+    saveStoredWillState(newState);
+    setState(newState);
   };
 
   if (!mounted) {
@@ -91,7 +71,7 @@ function DashboardContent() {
             }}
           />
           <span style={{ fontWeight: 600, fontSize: "0.95rem" }}>
-            Loading your estate dashboard...
+            Loading your Will Overview...
           </span>
         </div>
       </div>
@@ -106,13 +86,13 @@ function DashboardContent() {
         backgroundColor: "var(--bg-page)",
       }}
     >
-      {/* Desktop Sidebar */}
+      {/* Desktop Sidebar — same as /dashboard */}
       <div className="dashboard-sidebar-wrapper">
         <DashboardSidebar
-          activeTab={activeTab}
+          activeTab="overview"
           onSelectTab={handleTabChange}
           state={state}
-          onOpenSandbox={() => setSandboxOpen(true)}
+          onOpenSandbox={() => {}}
         />
       </div>
 
@@ -133,19 +113,19 @@ function DashboardContent() {
             onClick={(e) => e.stopPropagation()}
           >
             <DashboardSidebar
-              activeTab={activeTab}
-              onSelectTab={handleTabChange}
-              state={state}
-              onOpenSandbox={() => {
+              activeTab="overview"
+              onSelectTab={(tab) => {
                 setMobileSidebarOpen(false);
-                setSandboxOpen(true);
+                handleTabChange(tab);
               }}
+              state={state}
+              onOpenSandbox={() => setMobileSidebarOpen(false)}
             />
           </div>
         </div>
       )}
 
-      {/* Main Content Area */}
+      {/* Main Content */}
       <div style={{ flex: 1, display: "flex", flexDirection: "column", minWidth: 0 }}>
         {/* Mobile Header Bar */}
         <div
@@ -176,60 +156,15 @@ function DashboardContent() {
               <line x1="3" y1="18" x2="21" y2="18" />
             </svg>
           </button>
-          <span style={{ fontWeight: 700, fontSize: "0.95rem" }}>WillDrafting Portal</span>
-          <button
-            onClick={() => setSandboxOpen(true)}
-            style={{
-              background: "none",
-              border: "1px solid var(--color-gold)",
-              color: "var(--color-gold)",
-              borderRadius: "var(--radius-sm)",
-              padding: "0.3rem 0.6rem",
-              fontSize: "0.75rem",
-              fontWeight: 600,
-            }}
-          >
-            Sandbox
-          </button>
+          <span style={{ fontWeight: 700, fontSize: "0.95rem" }}>My Will Overview</span>
+          <div style={{ width: "24px" }} />
         </div>
 
-        {/* Dashboard Top Header */}
-        <DashboardHeader state={state} onStateChange={setState} />
-
-        {/* Content Container */}
-        <main style={{ flex: "1 0 auto", padding: "2rem 0 4rem" }}>
-          <div className="container">
-            {/* Overview is now handled by /start/dashboard */}
-            {activeTab === "overview" && null}
-
-            {activeTab === "vault" && (
-              <VaultTab state={state} onStateChange={setState} />
-            )}
-
-            {activeTab === "update" && (
-              <UpdateWillTab state={state} onStateChange={setState} />
-            )}
-
-            {activeTab === "annual-review" && (
-              <AnnualReviewTab state={state} onStateChange={setState} />
-            )}
-
-            {activeTab === "consultation" && (
-              <ConsultationTab state={state} onStateChange={setState} />
-            )}
-
-            {activeTab === "execution" && <ExecutionGuideTab state={state} />}
-          </div>
+        {/* Dashboard Content */}
+        <main style={{ flex: "1 0 auto", padding: "2rem 0.5rem 3rem" }}>
+          <WillOverviewDashboard state={state} onStateChange={handleStateChange} />
         </main>
       </div>
-
-      {/* Demo Sandbox Modal */}
-      <DemoSandboxModal
-        isOpen={sandboxOpen}
-        onClose={() => setSandboxOpen(false)}
-        currentState={state}
-        onStateChange={setState}
-      />
 
       <style jsx global>{`
         @media (max-width: 900px) {
@@ -245,7 +180,7 @@ function DashboardContent() {
   );
 }
 
-export default function DashboardPage() {
+export default function StartDashboardPage() {
   return (
     <Suspense
       fallback={
@@ -259,12 +194,12 @@ export default function DashboardPage() {
           }}
         >
           <div style={{ fontWeight: 600, color: "var(--color-navy)" }}>
-            Loading Dashboard...
+            Loading My Will Overview...
           </div>
         </div>
       }
     >
-      <DashboardContent />
+      <StartDashboardContent />
     </Suspense>
   );
 }

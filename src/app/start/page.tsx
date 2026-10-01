@@ -23,6 +23,7 @@ import Step11HealthCheck from "@/components/wizard/Step11HealthCheck";
 import Step12Assembly from "@/components/wizard/Step12Assembly";
 import Step13PlanSelect from "@/components/wizard/Step13PlanSelect";
 import Step14FinalWill from "@/components/wizard/Step14FinalWill";
+import WizardStepProgressBar from "@/components/wizard/WizardStepProgressBar";
 import LanguageToggle from "@/components/ui/LanguageToggle";
 import { useLanguage } from "@/context/LanguageContext";
 import { applyLanguageTranslation } from "@/lib/translations";
@@ -262,7 +263,15 @@ function WizardContent() {
             overflowY: "auto",
           }}
         >
-          <div style={{ width: "100%", minWidth: 0, flex: 1, display: "flex", flexDirection: "column" }}>
+          {/* Progress Bar over Main Step Heading showing progress of filling steps */}
+          <WizardStepProgressBar
+            currentStep={currentStep}
+            onJumpToStep={handleStepJump}
+            state={state}
+            lang={lang}
+          />
+
+          <div style={{ width: "100%", minWidth: 0, flex: 1, minHeight: 0, display: "flex", flexDirection: "column" }}>
           {currentStep === 1 && (
             <Step1Welcome
               state={state}

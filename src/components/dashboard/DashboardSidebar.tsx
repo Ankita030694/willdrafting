@@ -183,6 +183,40 @@ export default function DashboardSidebar({
 
         {navItems.map((item) => {
           const isActive = activeTab === item.id;
+
+          // "My Will Overview" always navigates to /start/dashboard
+          if (item.id === "overview") {
+            return (
+              <Link
+                key={item.id}
+                href="/start/dashboard"
+                style={{
+                  width: "100%",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "space-between",
+                  padding: "0.75rem 0.85rem",
+                  borderRadius: "var(--radius-sm)",
+                  backgroundColor: isActive ? "rgba(201, 162, 39, 0.15)" : "transparent",
+                  color: isActive ? "var(--color-gold)" : "rgba(255, 255, 255, 0.82)",
+                  borderLeft: isActive ? "3px solid var(--color-gold)" : "3px solid transparent",
+                  fontSize: "0.875rem",
+                  fontWeight: isActive ? 600 : 500,
+                  transition: "var(--transition)",
+                  textAlign: "left",
+                  textDecoration: "none",
+                }}
+              >
+                <div style={{ display: "flex", alignItems: "center", gap: "0.75rem" }}>
+                  <span style={{ color: isActive ? "var(--color-gold)" : "rgba(255, 255, 255, 0.6)" }}>
+                    {item.icon}
+                  </span>
+                  <span>{item.label}</span>
+                </div>
+              </Link>
+            );
+          }
+
           return (
             <button
               key={item.id}
