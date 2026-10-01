@@ -1,6 +1,7 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";import WizardButton from "./button";
+
 import { WillDraftingState, generateWillClauses } from "@/lib/willDraftingStore";
 import { Cpu, Check, Sparkles, ArrowRight } from "lucide-react";
 import AudioAssistantButton from "@/components/ui/AudioAssistantButton";

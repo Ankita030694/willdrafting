@@ -1,6 +1,7 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState } from "react";import WizardButton from "./button";
+
 import Link from "next/link";
 import { WillDraftingState, generateWillClauses } from "@/lib/willDraftingStore";
 import AppleSwitch from "@/components/dashboard/AppleSwitch";
@@ -265,65 +266,6 @@ export default function Step14FinalWill({ state, onBack }: Step14FinalWillProps)
         </div>
       </div>
 
-      {/* Execution Instructions Section (Section 35) */}
-      <div
-        style={{
-          background: "#FFFFFF",
-          borderRadius: "22px",
-          border: "1px solid rgba(27, 42, 74, 0.08)",
-          padding: "1.75rem 2rem",
-          boxShadow: "0 4px 24px rgba(27, 42, 74, 0.03)",
-        }}
-      >
-        <h3 style={{ fontSize: "1.25rem", fontWeight: 800, color: "var(--color-navy)", margin: "0 0 1rem" }}>
-          Next Step: 4 Essential Signing Rules (How to make your Will legally valid)
-        </h3>
-
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: "1rem" }}>
-          {[
-            {
-              step: "01",
-              title: "Print on Plain Paper",
-              desc: "Print on standard A4 white bond paper. Non-judicial stamp paper is NOT required under Indian law.",
-            },
-            {
-              step: "02",
-              title: "Sign Every Page",
-              desc: "Sign or initial at the bottom corner of each page, and sign in full on the final execution block.",
-            },
-            {
-              step: "03",
-              title: "Two Independent Witnesses",
-              desc: "Two adult witnesses must see you sign. Neither witness can be a beneficiary under the Will.",
-            },
-            {
-              step: "04",
-              title: "Safe Vault Custody",
-              desc: "Store original in a fireproof locker and upload a scanned copy to your WillDrafting Vault.",
-            },
-          ].map((item) => (
-            <div
-              key={item.step}
-              style={{
-                backgroundColor: "rgba(27, 42, 74, 0.02)",
-                borderRadius: "16px",
-                padding: "1.15rem 1.25rem",
-                border: "1px solid rgba(27, 42, 74, 0.05)",
-              }}
-            >
-              <div style={{ fontSize: "0.85rem", fontWeight: 800, color: "var(--color-gold)", marginBottom: "0.25rem" }}>
-                RULE {item.step}
-              </div>
-              <h4 style={{ margin: 0, fontSize: "0.95rem", fontWeight: 700, color: "var(--color-navy)" }}>
-                {item.title}
-              </h4>
-              <p style={{ margin: "0.35rem 0 0", fontSize: "0.825rem", color: "var(--color-slate)", lineHeight: 1.45 }}>
-                {item.desc}
-              </p>
-            </div>
-          ))}
-        </div>
-      </div>
 
       {/* Bottom Navigation */}
       <div

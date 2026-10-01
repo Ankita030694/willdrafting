@@ -1,6 +1,7 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState } from "react";import WizardButton from "./button";
+
 import { WillDraftingState } from "@/lib/willDraftingStore";
 import AppleCardSelect from "@/components/dashboard/AppleCardSelect";
 import {
@@ -155,15 +156,7 @@ export default function Step9Motivation({
       </div>
 
       {/* Main 2-Column Bento Grid */}
-      <div
-        style={{
-          display: "grid",
-          gridTemplateColumns: "1.05fr 1.15fr",
-          gap: "1.25rem",
-          flex: 1,
-          minHeight: 0,
-        }}
-      >
+      <div className="motivation-grid">
         {/* Left Column: Reasons */}
         <div
           style={{
@@ -355,59 +348,25 @@ export default function Step9Motivation({
         </div>
       </div>
 
-      {/* Navigation Footer */}
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "space-between",
-          alignItems: "center",
-          padding: "0.6rem 1rem",
-          borderRadius: "14px",
-          backgroundColor: "#FFFFFF",
-          border: "1px solid rgba(27, 42, 74, 0.08)",
-          boxShadow: "0 2px 10px rgba(27, 42, 74, 0.03)",
-          marginTop: "auto",
-        }}
-      >
-        <button
-          type="button"
-          onClick={onBack}
-          style={{
-            padding: "0.65rem 1.4rem",
-            borderRadius: "10px",
-            border: "1px solid rgba(27, 42, 74, 0.15)",
-            backgroundColor: "#FFFFFF",
-            color: "var(--color-navy)",
-            fontWeight: 700,
-            fontSize: "0.875rem",
-            cursor: "pointer",
-            display: "inline-flex",
-            alignItems: "center",
-            gap: "0.5rem",
-          }}
-        >
-          <ArrowLeft size={16} /> Back
-        </button>
+      {/* Wizard Button Footer */}
+      <WizardButton onBack={onBack} onNext={onNext} />
 
-        <button
-          type="button"
-          onClick={handleNext}
-          className="btn btn-gold"
-          style={{
-            padding: "0.65rem 1.85rem",
-            borderRadius: "10px",
-            fontSize: "0.9rem",
-            fontWeight: 700,
-            boxShadow: "0 4px 16px rgba(198, 83, 120, 0.25)",
-            cursor: "pointer",
-            display: "inline-flex",
-            alignItems: "center",
-            gap: "0.5rem",
-          }}
-        >
-          Proceed to Full Review <ArrowRight size={16} />
-        </button>
-      </div>
+      <style jsx>{`
+        .motivation-grid {
+          display: grid;
+          grid-template-columns: 1.05fr 1.15fr;
+          gap: 1.25rem;
+          flex: 1;
+          min-height: 0;
+        }
+        @media (max-width: 900px) {
+          .motivation-grid {
+            grid-template-columns: 1fr;
+            grid-auto-rows: min-content;
+            overflow-y: auto;
+          }
+        }
+      `}</style>
     </div>
   );
 }

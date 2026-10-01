@@ -250,6 +250,7 @@ function WizardContent() {
         {/* Content Viewport */}
         <main
           ref={mainRef}
+          className="wizard-main-viewport"
           style={{
             flex: 1,
             padding: "0.85rem 1.25rem 1rem",
@@ -410,6 +411,7 @@ function WizardContent() {
 
         {/* Slim Bottom Provenance & Security Strip */}
         <footer
+          className={currentStep > 1 ? "hide-on-mobile-step" : ""}
           style={{
             display: "flex",
             alignItems: "center",
@@ -457,6 +459,9 @@ function WizardContent() {
           }
           .wizard-mobile-header {
             display: flex !important;
+          }
+          .hide-on-mobile-step {
+            display: none !important;
           }
         }
       `}</style>

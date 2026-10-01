@@ -138,6 +138,167 @@ img, svg, video {
   max-width: 100%;
 }
 
+/* Plan Select Grid (Step 13) */
+.plans-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  flex: 1;
+  min-height: 0;
+}
+@media (max-width: 900px) {
+  .plans-grid {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding-bottom: 0.5rem;
+    padding-top: 15px; /* Prevent clipping of top absolute badges */
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+  .plans-grid::-webkit-scrollbar {
+    display: none;
+  }
+  .plans-grid > div {
+    flex: 0 0 100%;
+    max-width: 100%;
+    height: max-content;
+    scroll-snap-align: center;
+  }
+}
+
+/* Legal Health Check Grid (Step 11) */
+.healthcheck-grid {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 1.25rem;
+  flex: 1;
+  min-height: 0;
+}
+@media (max-width: 900px) {
+  .healthcheck-grid {
+    grid-template-columns: 1fr;
+    grid-auto-rows: min-content;
+    overflow-y: auto;
+  }
+}
+
+/* Role Assignment Grids (Step 7 Guardians) */
+.role-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+  flex: 1;
+  min-height: 0;
+}
+.role-inputs-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 0.75rem;
+}
+.role-contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+}
+@media (max-width: 900px) {
+  .role-grid {
+    grid-template-columns: 1fr;
+    grid-auto-rows: min-content;
+  }
+  .role-inputs-grid, .role-contact-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* Real Mobile Footer Component Styles */
+.wizard-mobile-sticky-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.6rem 1rem;
+  background-color: #FFFFFF;
+  border-radius: 14px;
+  border: 1px solid rgba(27, 42, 74, 0.08);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
+  margin-top: auto;
+}
+
+@media (max-width: 900px) {
+  .wizard-mobile-sticky-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 50;
+    border-radius: 0;
+    border-top: 1px solid rgba(27, 42, 74, 0.1);
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    padding: 0.8rem 1rem;
+    padding-bottom: calc(0.8rem + env(safe-area-inset-bottom, 0px));
+    margin-top: 0;
+    box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.05);
+  }
+}
+
+.btn-mobile-back {
+  padding: 0.65rem 1.4rem;
+  border-radius: 999px;
+  border: 1px solid rgba(27, 42, 74, 0.15);
+  background-color: #FFFFFF;
+  color: var(--color-navy);
+  font-size: 0.9rem;
+  font-weight: 700;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-shrink: 0;
+}
+
+.btn-mobile-next {
+  padding: 0.65rem 1.85rem;
+  border-radius: 999px;
+  background-color: #C65378;
+  color: #FFFFFF;
+  font-size: 0.9rem;
+  font-weight: 700;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.25rem;
+  flex: 1;
+  margin-left: 1rem;
+  border: none;
+}
+
+
+/* Comprehensive Review Grid (Step 10) */
+.review-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.85rem;
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+  padding-right: 0.25rem;
+}
+.review-details-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+}
+@media (max-width: 900px) {
+  .review-grid, .review-details-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* All Headings default to Plus Jakarta Sans */
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-heading);

@@ -1,6 +1,7 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState } from "react";import WizardButton from "./button";
+
 import {
   WillDraftingState,
   PersonContact,
@@ -248,59 +249,8 @@ export default function Step7Guardians({
             </div>
           </div>
 
-          {/* Navigation Footer */}
-          <div
-            style={{
-              display: "flex",
-              justifyContent: "space-between",
-              alignItems: "center",
-              padding: "0.6rem 1rem",
-              borderRadius: "14px",
-              backgroundColor: "#FFFFFF",
-              border: "1px solid rgba(27, 42, 74, 0.08)",
-              boxShadow: "0 2px 10px rgba(27, 42, 74, 0.03)",
-              marginTop: "0.75rem",
-            }}
-          >
-            <button
-              type="button"
-              onClick={onBack}
-              style={{
-                padding: "0.65rem 1.4rem",
-                borderRadius: "10px",
-                border: "1px solid rgba(27, 42, 74, 0.15)",
-                backgroundColor: "#FFFFFF",
-                color: "var(--color-navy)",
-                fontWeight: 700,
-                fontSize: "0.875rem",
-                cursor: "pointer",
-                display: "inline-flex",
-                alignItems: "center",
-                gap: "0.5rem",
-              }}
-            >
-              <ArrowLeft size={16} /> Back
-            </button>
-
-            <button
-              type="button"
-              onClick={onNext}
-              className="btn btn-gold"
-              style={{
-                padding: "0.65rem 1.85rem",
-                borderRadius: "10px",
-                fontSize: "0.9rem",
-                fontWeight: 700,
-                boxShadow: "0 4px 16px rgba(198, 83, 120, 0.25)",
-                cursor: "pointer",
-                display: "inline-flex",
-                alignItems: "center",
-                gap: "0.5rem",
-              }}
-            >
-              Continue to Special Wishes <ArrowRight size={16} />
-            </button>
-          </div>
+          {/* Wizard Button Footer */}
+      <WizardButton onBack={onBack} onNext={onNext} />
         </div>
       ) : (
         <form
@@ -315,15 +265,7 @@ export default function Step7Guardians({
           }}
         >
           {/* Main 2-Column Grid */}
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr 1fr",
-              gap: "1.25rem",
-              flex: 1,
-              minHeight: 0,
-            }}
-          >
+          <div className="role-grid">
             {/* Primary Guardian Column */}
             <div
               style={{
@@ -418,7 +360,7 @@ export default function Step7Guardians({
                 </div>
               )}
 
-              <div style={{ display: "grid", gridTemplateColumns: "1.2fr 1fr", gap: "0.75rem" }}>
+              <div className="role-inputs-grid">
                 <div>
                   <label style={{ display: "block", fontSize: "0.75rem", fontWeight: 700, color: "var(--color-navy)", marginBottom: "0.3rem" }}>
                     Full Legal Name *
@@ -464,22 +406,24 @@ export default function Step7Guardians({
               </div>
 
               {/* Guardian Powers Scope */}
-              <div>
+              <div style={{ minWidth: 0 }}>
                 <label style={{ display: "block", fontSize: "0.75rem", fontWeight: 700, color: "var(--color-navy)", marginBottom: "0.3rem" }}>
                   Guardian Authority Scope
                 </label>
-                <AppleSegmentedControl
-                  options={[
-                    { value: "full", label: "Full Custody & Trust" },
-                    { value: "person_only", label: "Personal Custody" },
-                    { value: "property_only", label: "Property Trustee" },
-                  ]}
-                  value={guardianScope}
-                  onChange={setGuardianScope}
-                />
+                <div style={{ width: "100%", overflowX: "auto", paddingBottom: "2px" }}>
+                  <AppleSegmentedControl
+                    options={[
+                      { value: "full", label: "Full Custody & Trust" },
+                      { value: "person_only", label: "Personal Custody" },
+                      { value: "property_only", label: "Property Trustee" },
+                    ]}
+                    value={guardianScope}
+                    onChange={setGuardianScope}
+                  />
+                </div>
               </div>
 
-              <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "0.75rem" }}>
+              <div className="role-contact-grid">
                 <div>
                   <label style={{ display: "block", fontSize: "0.75rem", fontWeight: 700, color: "var(--color-navy)", marginBottom: "0.3rem" }}>
                     Mobile Phone
@@ -665,7 +609,7 @@ export default function Step7Guardians({
                     </div>
                   )}
 
-                  <div style={{ display: "grid", gridTemplateColumns: "1.2fr 1fr", gap: "0.75rem" }}>
+                  <div className="role-inputs-grid">
                     <div>
                       <label style={{ display: "block", fontSize: "0.75rem", fontWeight: 700, color: "var(--color-navy)", marginBottom: "0.3rem" }}>
                         Full Legal Name *
@@ -710,7 +654,7 @@ export default function Step7Guardians({
                     </div>
                   </div>
 
-                  <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "0.75rem" }}>
+                  <div className="role-contact-grid">
                     <div>
                       <label style={{ display: "block", fontSize: "0.75rem", fontWeight: 700, color: "var(--color-navy)", marginBottom: "0.3rem" }}>
                         Mobile Phone
@@ -757,58 +701,8 @@ export default function Step7Guardians({
             </div>
           </div>
 
-          {/* Navigation Footer */}
-          <div
-            style={{
-              display: "flex",
-              justifyContent: "space-between",
-              alignItems: "center",
-              padding: "0.6rem 1rem",
-              borderRadius: "14px",
-              backgroundColor: "#FFFFFF",
-              border: "1px solid rgba(27, 42, 74, 0.08)",
-              boxShadow: "0 2px 10px rgba(27, 42, 74, 0.03)",
-              marginTop: "auto",
-            }}
-          >
-            <button
-              type="button"
-              onClick={onBack}
-              style={{
-                padding: "0.65rem 1.4rem",
-                borderRadius: "10px",
-                border: "1px solid rgba(27, 42, 74, 0.15)",
-                backgroundColor: "#FFFFFF",
-                color: "var(--color-navy)",
-                fontWeight: 700,
-                fontSize: "0.875rem",
-                cursor: "pointer",
-                display: "inline-flex",
-                alignItems: "center",
-                gap: "0.5rem",
-              }}
-            >
-              <ArrowLeft size={16} /> Back
-            </button>
-
-            <button
-              type="submit"
-              className="btn btn-gold"
-              style={{
-                padding: "0.65rem 1.85rem",
-                borderRadius: "10px",
-                fontSize: "0.9rem",
-                fontWeight: 700,
-                boxShadow: "0 4px 16px rgba(198, 83, 120, 0.25)",
-                cursor: "pointer",
-                display: "inline-flex",
-                alignItems: "center",
-                gap: "0.5rem",
-              }}
-            >
-              Save & Continue to Special Wishes <ArrowRight size={16} />
-            </button>
-          </div>
+          {/* Wizard Button Footer */}
+      <WizardButton onBack={onBack} isSubmit={true} />
         </form>
       )}
     </div>

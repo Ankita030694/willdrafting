@@ -18,6 +18,7 @@ import {
 import AudioAssistantButton from "@/components/ui/AudioAssistantButton";
 import LanguageToggle from "@/components/ui/LanguageToggle";
 
+import WizardButton from "./button";
 interface Step1WelcomeProps {
   state: WillDraftingState;
   onNext: () => void;

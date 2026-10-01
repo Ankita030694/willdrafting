@@ -1,6 +1,7 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState } from "react";import WizardButton from "./button";
+
 import {
   WillDraftingState,
   Asset,
@@ -840,55 +841,8 @@ export default function Step4Assets({
         )}
       </div>
 
-      {/* Navigation Footer */}
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "space-between",
-          alignItems: "center",
-          padding: "0.6rem 1rem",
-          backgroundColor: "#FFFFFF",
-          borderRadius: "14px",
-          border: "1px solid rgba(27, 42, 74, 0.08)",
-          boxShadow: "0 2px 8px rgba(0, 0, 0, 0.02)",
-        }}
-      >
-        <button
-          type="button"
-          onClick={onBack}
-          style={{
-            padding: "0.55rem 1.25rem",
-            borderRadius: "10px",
-            border: "1px solid rgba(27, 42, 74, 0.15)",
-            backgroundColor: "#FFFFFF",
-            color: "var(--color-slate)",
-            fontSize: "0.85rem",
-            fontWeight: 600,
-            cursor: "pointer",
-          }}
-        >
-          ← Back
-        </button>
-
-        <button
-          type="button"
-          onClick={onNext}
-          className="btn btn-gold"
-          style={{
-            padding: "0.65rem 1.85rem",
-            borderRadius: "10px",
-            fontSize: "0.9rem",
-            fontWeight: 700,
-            boxShadow: "0 4px 16px rgba(198, 83, 120, 0.25)",
-            cursor: "pointer",
-            display: "inline-flex",
-            alignItems: "center",
-            gap: "0.5rem",
-          }}
-        >
-          Save & Continue to Allocations <ArrowRight size={16} />
-        </button>
-      </div>
+      {/* Wizard Button Footer */}
+      <WizardButton onBack={onBack} onNext={onNext} />
 
       {/* Apple Sheet Modal for Adding Asset */}
       {modalOpen && (

@@ -1,6 +1,7 @@
 "use client";
 
-import React from "react";
+import React from "react";import WizardButton from "./button";
+
 import { WillDraftingState } from "@/lib/willDraftingStore";
 import {
   User,
@@ -167,17 +168,7 @@ export default function Step10Review({
       </div>
 
       {/* Review Modules 2-Column Bento Grid */}
-      <div
-        style={{
-          display: "grid",
-          gridTemplateColumns: "1fr 1fr",
-          gap: "0.85rem",
-          flex: 1,
-          minHeight: 0,
-          overflowY: "auto",
-          paddingRight: "0.25rem",
-        }}
-      >
+      <div className="review-grid">
         {reviewModules.map((mod) => {
           const ModIcon = mod.Icon;
           return (
@@ -194,8 +185,8 @@ export default function Step10Review({
                 gap: "0.6rem",
               }}
             >
-              <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-                <div style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
+              <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", gap: "0.5rem" }}>
+                <div style={{ display: "flex", alignItems: "flex-start", gap: "0.5rem", flex: 1, minWidth: 0 }}>
                   <div
                     style={{
                       width: "30px",
@@ -211,7 +202,7 @@ export default function Step10Review({
                   >
                     <ModIcon size={16} />
                   </div>
-                  <h4 style={{ margin: 0, fontSize: "0.95rem", fontWeight: 700, color: "var(--color-navy)" }}>
+                  <h4 style={{ margin: 0, fontSize: "0.95rem", fontWeight: 700, color: "var(--color-navy)", lineHeight: 1.3 }}>
                     {mod.title}
                   </h4>
                 </div>
@@ -231,6 +222,7 @@ export default function Step10Review({
                     display: "inline-flex",
                     alignItems: "center",
                     gap: "0.25rem",
+                    flexShrink: 0,
                   }}
                 >
                   <Edit3 size={11} /> Edit
@@ -238,9 +230,9 @@ export default function Step10Review({
               </div>
 
               {mod.details && (
-                <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "0.5rem", paddingTop: "0.4rem", borderTop: "1px solid rgba(27, 42, 74, 0.05)" }}>
+                <div className="review-details-grid" style={{ paddingTop: "0.4rem", borderTop: "1px solid rgba(27, 42, 74, 0.05)" }}>
                   {mod.details.map((d, i) => (
-                    <div key={i} style={{ fontSize: "0.78rem" }}>
+                    <div key={i} style={{ fontSize: "0.78rem", minWidth: 0 }}>
                       <span style={{ color: "var(--color-slate)", fontSize: "0.7rem", display: "block" }}>{d.label}</span>
                       <span style={{ fontWeight: 600, color: "var(--color-navy)", whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis", display: "block" }}>
                         {d.val}
@@ -256,59 +248,8 @@ export default function Step10Review({
         })}
       </div>
 
-      {/* Navigation Footer */}
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "space-between",
-          alignItems: "center",
-          padding: "0.6rem 1rem",
-          borderRadius: "14px",
-          backgroundColor: "#FFFFFF",
-          border: "1px solid rgba(27, 42, 74, 0.08)",
-          boxShadow: "0 2px 10px rgba(27, 42, 74, 0.03)",
-          marginTop: "auto",
-        }}
-      >
-        <button
-          type="button"
-          onClick={onBack}
-          style={{
-            padding: "0.65rem 1.4rem",
-            borderRadius: "10px",
-            border: "1px solid rgba(27, 42, 74, 0.15)",
-            backgroundColor: "#FFFFFF",
-            color: "var(--color-navy)",
-            fontWeight: 700,
-            fontSize: "0.875rem",
-            cursor: "pointer",
-            display: "inline-flex",
-            alignItems: "center",
-            gap: "0.5rem",
-          }}
-        >
-          <ArrowLeft size={16} /> Back
-        </button>
-
-        <button
-          type="button"
-          onClick={onNext}
-          className="btn btn-gold"
-          style={{
-            padding: "0.65rem 1.85rem",
-            borderRadius: "10px",
-            fontSize: "0.9rem",
-            fontWeight: 700,
-            boxShadow: "0 4px 16px rgba(198, 83, 120, 0.25)",
-            cursor: "pointer",
-            display: "inline-flex",
-            alignItems: "center",
-            gap: "0.5rem",
-          }}
-        >
-          Run Legal Health Check <ArrowRight size={16} />
-        </button>
-      </div>
+      {/* Wizard Button Footer */}
+      <WizardButton onBack={onBack} onNext={onNext} />
     </div>
   );
 }

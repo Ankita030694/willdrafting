@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useEffect, useMemo, useRef } from "react";
+import WizardButton from "./button";
 import {
   WillDraftingState,
   BeneficiaryAllocation,
@@ -34,6 +35,7 @@ import AudioAssistantButton from "@/components/ui/AudioAssistantButton";
 import LanguageToggle from "@/components/ui/LanguageToggle";
 import { useLanguage } from "@/context/LanguageContext";
 import CustomPercentageAllocator from "./CustomPercentageAllocator";
+
 
 interface Step5AllocationsProps {
   state: WillDraftingState;
@@ -2504,59 +2506,18 @@ export default function Step5Allocations({
       )}
 
       {/* Global Wizard Footer */}
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "space-between",
-          alignItems: "center",
-          padding: "0.6rem 1rem",
-          backgroundColor: "#FFFFFF",
-          borderRadius: "14px",
-          border: "1px solid rgba(27, 42, 74, 0.08)",
-          boxShadow: "0 2px 8px rgba(0, 0, 0, 0.02)",
+      <WizardButton 
+        onBack={onBack} 
+        onNext={() => {
+          onUpdate((prev) => ({
+            ...prev,
+            allocations,
+            residuaryBeneficiaryName: residuaryName.trim(),
+            residuaryAlternateName: residuaryAltName.trim(),
+          }));
+          onNext();
         }}
-      >
-        <button
-          type="button"
-          onClick={onBack}
-          style={{
-            padding: "0.55rem 1.25rem",
-            borderRadius: "10px",
-            border: "1px solid rgba(27, 42, 74, 0.15)",
-            backgroundColor: "#FFFFFF",
-            color: "var(--color-slate)",
-            fontSize: "0.85rem",
-            fontWeight: 600,
-            cursor: "pointer",
-          }}
-        >
-          {isHi ? "← पीछे जाएं" : "← Back"}
-        </button>
-
-        <button
-          type="button"
-          onClick={() => {
-            onUpdate((prev) => ({
-              ...prev,
-              allocations,
-              residuaryBeneficiaryName: residuaryName.trim(),
-              residuaryAlternateName: residuaryAltName.trim(),
-            }));
-            onNext();
-          }}
-          className="btn btn-gold"
-          style={{
-            padding: "0.65rem 1.85rem",
-            borderRadius: "10px",
-            fontSize: "0.9rem",
-            fontWeight: 700,
-            boxShadow: "0 4px 16px rgba(198, 83, 120, 0.25)",
-            cursor: "pointer",
-          }}
-        >
-          {isHi ? "सहेजें और निष्पादक नियुक्ति पर आगे बढ़ें →" : "Save & Continue to Executors →"}
-        </button>
-      </div>
+      />
     </div>
   );
 }

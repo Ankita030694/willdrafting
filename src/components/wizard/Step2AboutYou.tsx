@@ -1,6 +1,7 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState } from "react";import WizardButton from "./button";
+
 import { WillDraftingState, ReligionPersonalLaw, MaritalStatus } from "@/lib/willDraftingStore";
 import AppleSwitch from "@/components/dashboard/AppleSwitch";
 import {

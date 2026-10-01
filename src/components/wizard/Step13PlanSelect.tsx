@@ -1,6 +1,7 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState } from "react";import WizardButton from "./button";
+
 import { WillDraftingState } from "@/lib/willDraftingStore";
 import { Check, ShieldCheck, ArrowRight, ArrowLeft } from "lucide-react";
 import AudioAssistantButton from "@/components/ui/AudioAssistantButton";
@@ -112,15 +113,7 @@ export default function Step13PlanSelect({
       </div>
 
       {/* Plan Cards 3-Column Grid */}
-      <div
-        style={{
-          display: "grid",
-          gridTemplateColumns: "repeat(3, 1fr)",
-          gap: "1rem",
-          flex: 1,
-          minHeight: 0,
-        }}
-      >
+      <div className="plans-grid">
         {plans.map((p) => {
           const isSelected = selectedPlan === p.id;
           return (
@@ -240,59 +233,9 @@ export default function Step13PlanSelect({
         })}
       </div>
 
-      {/* Navigation Footer */}
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "space-between",
-          alignItems: "center",
-          padding: "0.6rem 1rem",
-          borderRadius: "14px",
-          backgroundColor: "#FFFFFF",
-          border: "1px solid rgba(27, 42, 74, 0.08)",
-          boxShadow: "0 2px 10px rgba(27, 42, 74, 0.03)",
-          marginTop: "auto",
-        }}
-      >
-        <button
-          type="button"
-          onClick={onBack}
-          style={{
-            padding: "0.65rem 1.4rem",
-            borderRadius: "10px",
-            border: "1px solid rgba(27, 42, 74, 0.15)",
-            backgroundColor: "#FFFFFF",
-            color: "var(--color-navy)",
-            fontWeight: 700,
-            fontSize: "0.875rem",
-            cursor: "pointer",
-            display: "inline-flex",
-            alignItems: "center",
-            gap: "0.5rem",
-          }}
-        >
-          <ArrowLeft size={16} /> Back
-        </button>
+      {/* Wizard Button Footer */}
+      <WizardButton onBack={onBack} onNext={onNext} />
 
-        <button
-          type="button"
-          onClick={handleConfirmPlan}
-          className="btn btn-gold"
-          style={{
-            padding: "0.65rem 1.85rem",
-            borderRadius: "10px",
-            fontSize: "0.9rem",
-            fontWeight: 700,
-            boxShadow: "0 4px 16px rgba(198, 83, 120, 0.25)",
-            cursor: "pointer",
-            display: "inline-flex",
-            alignItems: "center",
-            gap: "0.5rem",
-          }}
-        >
-          Confirm Plan & View Final Will <ArrowRight size={16} />
-        </button>
-      </div>
     </div>
   );
 }

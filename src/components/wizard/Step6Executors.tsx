@@ -1,6 +1,7 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState } from "react";import WizardButton from "./button";
+
 import {
   WillDraftingState,
   PersonContact,
@@ -630,40 +631,8 @@ export default function Step6Executors({
           </div>
         </div>
 
-        {/* Navigation Footer */}
-        <div className="flex flex-wrap justify-between items-center gap-3 px-4 py-2.5 bg-white rounded-[14px] border border-[#172228]/10 shadow-sm">
-          <button
-            type="button"
-            onClick={onBack}
-            style={{
-              padding: "0.55rem 1.25rem",
-              borderRadius: "999px",
-              border: "1px solid #D1D5DB",
-              backgroundColor: "#FFFFFF",
-              color: "var(--color-slate)",
-              fontSize: "0.85rem",
-              fontWeight: 600,
-              cursor: "pointer",
-            }}
-          >
-            ← Back
-          </button>
-
-          <button
-            type="submit"
-            className="btn btn-gold"
-            style={{
-              padding: "0.65rem 1.85rem",
-              borderRadius: "999px",
-              fontSize: "0.9rem",
-              fontWeight: 700,
-              boxShadow: "0 4px 16px rgba(198, 83, 120, 0.25)",
-              cursor: "pointer",
-            }}
-          >
-            Save & Continue to Guardians →
-          </button>
-        </div>
+        {/* Wizard Button Footer */}
+      <WizardButton onBack={onBack} isSubmit={true} />
       </form>
     </div>
   );

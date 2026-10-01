@@ -1,6 +1,7 @@
 "use client";
 
-import React from "react";
+import React from "react";import WizardButton from "./button";
+
 import {
   WillDraftingState,
   runLegalHealthCheck,
@@ -76,15 +77,7 @@ export default function Step11HealthCheck({
       </div>
 
       {/* Main 2-Column Bento Grid */}
-      <div
-        style={{
-          display: "grid",
-          gridTemplateColumns: "320px 1fr",
-          gap: "1.25rem",
-          flex: 1,
-          minHeight: 0,
-        }}
-      >
+      <div className="healthcheck-grid">
         {/* Left Column: Audit Score Gauge Card */}
         <div
           style={{
@@ -286,59 +279,8 @@ export default function Step11HealthCheck({
         </div>
       </div>
 
-      {/* Navigation Footer */}
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "space-between",
-          alignItems: "center",
-          padding: "0.6rem 1rem",
-          borderRadius: "14px",
-          backgroundColor: "#FFFFFF",
-          border: "1px solid rgba(27, 42, 74, 0.08)",
-          boxShadow: "0 2px 10px rgba(27, 42, 74, 0.03)",
-          marginTop: "auto",
-        }}
-      >
-        <button
-          type="button"
-          onClick={onBack}
-          style={{
-            padding: "0.65rem 1.4rem",
-            borderRadius: "10px",
-            border: "1px solid rgba(27, 42, 74, 0.15)",
-            backgroundColor: "#FFFFFF",
-            color: "var(--color-navy)",
-            fontWeight: 700,
-            fontSize: "0.875rem",
-            cursor: "pointer",
-            display: "inline-flex",
-            alignItems: "center",
-            gap: "0.5rem",
-          }}
-        >
-          <ArrowLeft size={16} /> Back
-        </button>
-
-        <button
-          type="button"
-          onClick={onNext}
-          className="btn btn-gold"
-          style={{
-            padding: "0.65rem 1.85rem",
-            borderRadius: "10px",
-            fontSize: "0.9rem",
-            fontWeight: 700,
-            boxShadow: "0 4px 16px rgba(198, 83, 120, 0.25)",
-            cursor: "pointer",
-            display: "inline-flex",
-            alignItems: "center",
-            gap: "0.5rem",
-          }}
-        >
-          Proceed to Dynamic Clause Assembly <ArrowRight size={16} />
-        </button>
-      </div>
+      {/* Wizard Button Footer */}
+      <WizardButton onBack={onBack} onNext={onNext} />
     </div>
   );
 }
