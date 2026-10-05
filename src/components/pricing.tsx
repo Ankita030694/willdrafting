@@ -106,16 +106,15 @@ export default function Pricing() {
         <div className="flex flex-col items-center text-center max-w-3xl mb-10 sm:mb-12">
           {/* Eyebrow badge */}
           <div className="flex items-center gap-2 mb-4">
-            <span className="w-2.5 h-2.5 bg-[#172228] inline-block rounded-[1px]" />
+            
             <span className="text-[0.75rem] font-bold tracking-[0.16em] uppercase text-[#C65378]">
               Will Options
             </span>
           </div>
 
           {/* Main Title */}
-          <h2 className="text-[2.2rem] sm:text-[3rem] lg:text-[3.4rem] font-bold text-[#172228] leading-[1.08] tracking-tight mb-4">
-            Choose The Right Plan For <br className="hidden sm:block" />
-            <span className="italic font-normal">Your Family & Estate.</span>
+          <h2 className="text-[2.2rem] sm:text-[3rem] lg:text-[3.4rem] font-medium text-[#172228] leading-[1.08] tracking-tight mb-4">
+           Choose The Right Plan For Your Family & Estate.
           </h2>
 
           <p className="text-[1rem] sm:text-[1.1rem] text-[#55636D] leading-relaxed max-w-2xl">

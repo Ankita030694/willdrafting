@@ -26,9 +26,9 @@ interface ServiceCard {
 
 const services: ServiceCard[] = [
   {
-    title: "Online Wills",
+    title: "Online Will Drafting",
     description:
-      "Protect your assets, name guardians for your children, leave instructions that hold up.",
+      "Create a professionally structured legal Will online from the comfort of your home. Clearly document your wishes, protect your assets, provide for your family and children, and have your Will reviewed by WillDrafting Law.",
     linkText: "Write your Will",
     linkHref: "/start",
     illustrationSrc: "/new1servcie.png",
@@ -36,7 +36,7 @@ const services: ServiceCard[] = [
   {
     title: "Coming Soon",
     description:
-      "Power of Attorney and additional estate planning services are launching soon.",
+      "Power of Attorney and additional estate planning services in India are coming soon, giving you more ways to plan, manage and protect your family's legal and financial interests.",
     linkText: "Coming Soon",
     isComingSoon: true,
     illustrationSrc: "/comingsoon.png",
@@ -61,27 +61,17 @@ export default function ServicePage() {
               <span>Will Drafting Services</span>
             </div>
 
-            <h1 className="text-4xl sm:text-6xl lg:text-[4.75rem] xl:text-[4rem] font-medium leading-[1.08] tracking-[-0.025em] text-[#111827] mb-4 sm:mb-5">
-              We handle the legal issues <br />you handle the businesses.
+            <h1 className="text-[2rem] sm:text-[2.2rem] lg:text-[3.4rem] font-medium leading-[1.08] tracking-[-0.025em] text-[#111827] mb-4 sm:mb-5">
+              Protect What You’ve Built. <br /> Secure Who You Leave Behind.
             </h1>
 
             {/* Subheading for Will Drafting Service */}
             <p className="text-[1.05rem] sm:text-[1.18rem] leading-[1.65] text-[#49585F] font-normal max-w-[720px]">
-              Lawyer-vetted, airtight testamentary Will drafting and estate succession. Ensure your assets, family enterprise, and beneficiaries are legally protected under the Indian Succession Act, 1925.
+              <span className=" font-bold">Lawyer-drafted Wills, estate planning and succession solutions tailored to your family, assets and wishes. Ensure your property, investments, business interests and beneficiaries</span> are clearly protected through a legally sound Will under applicable Indian succession laws.
             </p>
           </div>
 
-          {/* Panoramic Executive Law Firm Banner */}
-          <div className="relative w-full aspect-[21/9] min-h-[260px] sm:min-h-[400px] lg:min-h-[480px] rounded-l sm:rounded-[12px] overflow-hidden ">
-            <Image
-              src="/servicehome.svg"
-              alt="Experienced attorney in executive corner office consulting with business client"
-              fill
-              priority
-              sizes="(max-width: 1536px) 100vw, 1536px"
-              className="object-cover object-center"
-            />
-          </div>
+          
         </section>
 
         {/* =========================================================================

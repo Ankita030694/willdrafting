@@ -14,30 +14,30 @@ const comparisonRows: ComparisonRow[] = [
   {
     topic: "Asset Distribution",
     withoutWill:
-      "Divided strictly per statutory formulas under Hindu Succession Act / Indian Succession Act, regardless of your personal wishes.",
+      "Assets are distributed according to the law, which may not match your wishes.",
     withWill:
-      "Distributed exactly according to your specified percentages to named beneficiaries, spouses, and children.",
+      "You decide how your assets should be distributed among your chosen beneficiaries.",
   },
   {
-    topic: "Access to Bank Accounts & Shares",
+    topic: "Bank Accounts & Investments",
     withoutWill:
-      "Financial institutions freeze funds until heirs obtain an expensive Succession Certificate or Letter of Administration from court.",
+      "Family may face legal procedures and paperwork to access or transfer assets.",
     withWill:
-      "Your appointed Executor claims assets directly with the certified copy of your legally attested will.",
+      "Your Will names beneficiaries and an executor to help manage your estate.",
   },
   {
     topic: "Guardianship for Minor Children",
     withoutWill:
-      "A family court judge decides who raises your minor children after evaluating competing claims from relatives.",
+      "Guardianship decisions may be handled according to applicable law and by the relevant authority.",
     withWill:
-      "You designate the exact trusted legal guardians you want caring for your children.",
+      "You can state your wishes for who should care for your minor children.",
   },
   {
-    topic: "Settlement Timeline & Legal Costs",
+    topic: "Family Disputes & Estate Administration",
     withoutWill:
-      "Typically takes 12 to 24 months in court proceedings, costing tens of thousands in legal representation.",
+      "Uncertainty can lead to disagreements, delays and additional legal work.",
     withWill:
-      "Drafted in 15 minutes, immediately legally binding upon signing before two independent witnesses.",
+      "Clear instructions can reduce confusion, disputes and unnecessary legal work.",
   },
 ];
 
@@ -54,14 +54,15 @@ export default function EstateComparison() {
           <div className="flex items-center gap-2 mb-4 sm:mb-5">
             
             <span className="text-[0.75rem] font-bold tracking-[0.16em] uppercase text-[#C65378]">
-              Intestacy vs Planning
+              Intestacy vs. Estate Planning
             </span>
           </div>
 
           {/* Main Title */}
-          <h2 className="text-[2.2rem] sm:text-[3rem] lg:text-[3.4rem] font-bold text-[#172228] leading-[1.08] tracking-tight mb-4 sm:mb-5">
-            What happens if you don&apos;t have a will?
+          <h2 className="text-[2.2rem] sm:text-[3rem] lg:text-[3.4rem] font-medium text-[#172228] leading-[1.08] tracking-tight mb-4 sm:mb-5">
+            What Happens to Your Family If You Die Without a Will?
           </h2>
+          <p className= "text-[1rem] sm:text-[1.1rem] text-[#55636D] leading-relaxed max-w-2xl">You may spend a lifetime building your home, savings and family security. But without a Will, you may leave the decisions about your estate to the law, not to the people you chose.</p>
 
           
         </div>
@@ -98,6 +99,7 @@ export default function EstateComparison() {
             >
               {comparisonRows.map((row, idx) => (
                 <div
+                  key={idx}
                   className="w-[85vw] max-w-5xl shrink-0 md:w-auto md:max-w-none md:shrink snap-center md:snap-align-none grid grid-cols-1 md:grid-cols-12 gap-5 md:gap-8 px-6 sm:px-8 lg:px-10 py-6 sm:py-7 transition-colors md:hover:bg-[#FAF7F0]/40 bg-white rounded-[24px] border border-[#1B2A4A]/10 shadow-sm md:bg-transparent md:border-0 md:rounded-none md:shadow-none"
                 >
                   {/* Topic Title */}

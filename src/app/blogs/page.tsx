@@ -31,13 +31,13 @@ export default function BlogsPage() {
           </div>
 
           {/* Main Heading in Centre (Plus Jakarta Sans) */}
-          <h1 className="text-4xl sm:text-5xl lg:text-[4rem] font-medium leading-[1.12] tracking-[-0.025em] text-[#111827] mb-4 sm:mb-5">
-            Clear answers to complex legal questions.
+          <h1 className="text-[2rem] sm:text-[2.2rem] lg:text-[3.4rem] font-medium leading-[1.12] tracking-[-0.025em] text-[#111827] mb-4 sm:mb-5">
+            Protect what you build. Prepare for what comes next.
           </h1>
 
           {/* Subheading in Centre */}
           <p className="text-[1.05rem] sm:text-[1.15rem] leading-[1.65] text-[#55636D] font-normal max-w-2xl mx-auto">
-            Practical legal guidance on Indian succession laws, testamentary wills, estate protection, and family wealth governance.
+            Clear, practical guidance on <span className="font-bold">Will drafting, estate planning, succession law, inheritance, asset protection, and family wealth planning in India</span>, helping you make informed decisions and protect your family’s future.
           </p>
         </div>
 

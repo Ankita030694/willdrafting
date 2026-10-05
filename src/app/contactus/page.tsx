@@ -65,8 +65,8 @@ export default function ContactUsPage() {
       <main className="flex-1 w-full max-w-8xl mx-auto px-5 sm:px-8 lg:px-12 pt-8 sm:pt-14 pb-20 mt-25">
         {/* Page Top Heading */}
         <div className="mb-6 sm:mb-8">
-          <h1 className="text-4xl sm:text-5xl lg:text-[4.25rem] font-medium leading-[1.08] tracking-[-0.025em] text-[#111827]">
-            Tell us what happened.
+          <h1 className="text-[2rem] sm:text-[2.2rem] lg:text-[3.4rem] font-medium leading-[1.08] tracking-[-0.025em] text-[#111827]">
+            Get in touch
           </h1>
         </div>
 
@@ -74,9 +74,8 @@ export default function ContactUsPage() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-start w-full">
           {/* Mobile Introduction Heading (Visible on Mobile only, above form) */}
           <div className="block lg:hidden">
-            <h2 className="text-2xl sm:text-3xl font-medium leading-[1.22] tracking-[-0.015em] text-[#111827] mb-2">
-              There is no wrong way to start this. Tell us roughly what happened and we will
-              take it from there.
+            <h2 className="text-[1rem] sm:text-[2.2rem] lg:text-[3.4rem] font-medium leading-[1.12] tracking-[-0.025em] text-[#111827] mb-2">
+              Let’s plan what matters most.
             </h2>
           </div>
 
@@ -175,13 +174,13 @@ export default function ContactUsPage() {
                   />
                 </div>
 
-                {/* Row 3: When Did It Happen */}
+                {/* Row 3: What do you need help with */}
                 <div className="flex flex-col">
                   <label
                     htmlFor="whenDidItHappen"
                     className="text-[11px] font-bold tracking-[0.14em] uppercase text-[#6B7280] mb-1.5"
                   >
-                    When Did It Happen
+                    WHAT DO YOU NEED HELP WITH?
                   </label>
                   <input
                     id="whenDidItHappen"
@@ -189,18 +188,18 @@ export default function ContactUsPage() {
                     type="text"
                     value={formData.whenDidItHappen}
                     onChange={handleChange}
-                    placeholder="e.g. three weeks ago"
+                    placeholder="e.g. I want to create a Will for my family"
                     className="w-full bg-transparent border-0 border-b border-[#D1D5DB] focus:border-[#111827] focus:ring-0 px-0 py-2 text-base text-[#111827] placeholder:text-[#9CA3AF] placeholder:font-light outline-none transition-colors"
                   />
                 </div>
 
-                {/* Row 4: What Happened */}
+                {/* Row 4: Tell us a little more */}
                 <div className="flex flex-col">
                   <label
                     htmlFor="whatHappened"
                     className="text-[11px] font-bold tracking-[0.14em] uppercase text-[#6B7280] mb-1.5"
                   >
-                    What Happened
+                    TELL US A LITTLE MORE
                   </label>
                   <textarea
                     id="whatHappened"
@@ -300,12 +299,11 @@ export default function ContactUsPage() {
           <div className="lg:col-span-6 flex flex-col order-2 lg:order-1 pt-6 lg:pt-0 border-t border-neutral-200/70 lg:border-t-0">
             {/* Desktop Heading (Visible on Desktop only) */}
             <h2 className="hidden lg:block text-2xl sm:text-3xl lg:text-[2.25rem] font-medium leading-[1.22] tracking-[-0.015em] text-[#111827] mb-6">
-              There is no wrong way to start this. Tell us roughly what happened and we will
-              take it from there.
+              Have questions about making a Will? Tell us a little about what you need, and our team will help you take the next step.
             </h2>
 
             <p className="text-[14px] sm:text-[15px] leading-relaxed text-[#4B5563] mb-8 sm:mb-10 max-w-[520px]">
-              If you would rather speak to someone, call . We answer, or we call back the same working day.
+              Whether you need Will drafting, estate planning or succession guidance, we’re here to make the process simple and clear.
             </p>
 
             {/* Direct Contact Details List (1 Column: Icon on Left, Content on Right) */}
@@ -320,13 +318,13 @@ export default function ContactUsPage() {
                     Phone Number
                   </span>
                   <a
-                    href="tel:+911112223334"
+                    href="tel:+91XXXXXXXXXX"
                     className="text-[15px] sm:text-[16px] font-medium text-[#111827] transition-colors hover:text-[#C65378]"
                   >
-                    +91 1112223334
+                    +91 XXXXX XXXXX
                   </a>
                   <span className="text-xs text-[#718096] mt-0.5">
-                    Monday to Friday, 8:00 AM – 6:00 PM PT
+                    Monday to Friday, 9:00 AM – 6:00 PM IST
                   </span>
                 </div>
               </div>
@@ -341,10 +339,10 @@ export default function ContactUsPage() {
                     Email Address
                   </span>
                   <a
-                    href="mailto:hello@willdrafting.com"
+                    href="mailto:hello@yourdomain.com"
                     className="text-[15px] sm:text-[16px] font-medium text-[#111827] transition-colors hover:text-[#C65378]"
                   >
-                    hello@willdrafting.com
+                    hello@yourdomain.com
                   </a>
                   <span className="text-xs text-[#718096] mt-0.5">
                     We reply within 24 hours on working days
@@ -362,10 +360,10 @@ export default function ContactUsPage() {
                     Office Location
                   </span>
                   <p className="text-[15px] sm:text-[16px] font-medium text-[#111827]">
-                    1 Sansome Street, Suite 3500
+                    [Your Office Address]
                   </p>
                   <span className="text-xs text-[#718096] mt-0.5">
-                    San Francisco, CA 94104
+                    [City, State, PIN]
                   </span>
                 </div>
               </div>

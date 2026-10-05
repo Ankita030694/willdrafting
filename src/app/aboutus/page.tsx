@@ -30,13 +30,13 @@ export default function AboutUsPage() {
           </div>
 
           {/* Main Heading in Centre (Plus Jakarta Sans) */}
-          <h1 className="text-4xl sm:text-5xl lg:text-[4rem] font-medium leading-[1.12] tracking-[-0.025em] text-[#111827] mb-4 sm:mb-5">
-            Dedicated to protecting what matters most to your family.
+          <h1 className="text-[2rem] sm:text-[2.2rem] lg:text-[3.4rem] font-medium leading-[1.12] tracking-[-0.025em] text-[#111827] mb-4 sm:mb-5">
+            Protecting your legacy. Securing your family’s future.
           </h1>
 
           {/* Subheading in Centre */}
           <p className="text-[1.05rem] sm:text-[1.15rem] leading-[1.65] text-[#55636D] font-normal max-w-2xl mx-auto">
-            We combine decades of estate planning acumen, compassionate advocacy, and modern execution to ensure seamless succession and lasting peace of mind.
+            We provide personalised <span className="font-bold">Will drafting, estate planning and succession services</span> to help protect your assets, honour your wishes, and give your family clarity when it matters most. barbenchhouse.in
           </p>
         </div>
 
@@ -52,17 +52,17 @@ export default function AboutUsPage() {
             <div className="bg-[#C65378] p-8 sm:p-10 lg:p-12 flex flex-col justify-between aspect-square">
               {/* Eyebrow with Dash */}
               <div className="flex items-center gap-2 text-[11px] font-bold tracking-[0.2em] uppercase text-white/60">
-                <span className="w-4 h-[1px] bg-white/40" />
-                <span>CASES</span>
+                
+                <span>WILLS DRAFTED</span>
               </div>
 
               {/* Stat & Description */}
               <div className="mt-auto">
                 <div className="text-5xl sm:text-6xl font-medium tracking-tight text-white mb-4">
-                  200+
+                  500+
                 </div>
                 <p className="text-sm sm:text-[14.5px] leading-relaxed text-white/70">
-                  Successfully resolved over 200 cases, demonstrating our expertise and effectiveness.
+                  Professionally drafted Wills helping families protect their assets, express their wishes, and plan for a secure future.
                 </p>
               </div>
             </div>
@@ -86,17 +86,17 @@ export default function AboutUsPage() {
             <div className="bg-[#C65378] p-8 sm:p-10 lg:p-12 flex flex-col justify-between aspect-square border-t sm:border-t-0 border-[#172228]/10">
               {/* Eyebrow with Dash */}
               <div className="flex items-center gap-2 text-[11px] font-bold tracking-[0.2em] uppercase text-white/60">
-                <span className="w-4 h-[1px] bg-white/40" />
-                <span>CLIENTS</span>
+                
+                <span>FAMILIES PROTECTED</span>
               </div>
 
               {/* Stat & Description */}
               <div className="mt-auto">
                 <div className="text-5xl sm:text-6xl font-medium tracking-tight text-white mb-4">
-                  100+
+                  300+
                 </div>
                 <p className="text-sm sm:text-[14.5px] leading-relaxed text-white/70">
-                  Served the needs of 100+ clients, providing personalized solutions and dedicated support.
+                  Helping families with personalised Will drafting, estate planning, and succession guidance tailored to their unique needs.
                 </p>
               </div>
             </div>
@@ -135,17 +135,17 @@ export default function AboutUsPage() {
             <div className="bg-[#DFCEBF] p-8 sm:p-10 lg:p-12 flex flex-col justify-between aspect-square">
               {/* Eyebrow with Dash */}
               <div className="flex items-center gap-2 text-[11px] font-bold tracking-[0.2em] uppercase text-[#172228]/60">
-                <span className="w-4 h-[1px] bg-[#172228]/40" />
+                
                 <span>COMMITMENT</span>
               </div>
 
               {/* Stat & Description */}
               <div className="mt-auto">
                 <div className="text-5xl sm:text-6xl font-medium tracking-tight text-[#172228] mb-4">
-                  110%
+                  100%
                 </div>
                 <p className="text-sm sm:text-[14.5px] leading-relaxed text-[#172228]/80">
-                  Our team is dedicated to going above and beyond, ensuring 110% client satisfaction and excellence.
+                  Every Will is carefully prepared around your family, assets, beneficiaries, and wishes, with clarity at every step.
                 </p>
               </div>
             </div>
@@ -169,8 +169,8 @@ export default function AboutUsPage() {
             <div className="bg-[#DFCEBF] p-8 sm:p-10 lg:p-12 flex flex-col justify-between aspect-square">
               {/* Eyebrow with Dash */}
               <div className="flex items-center gap-2 text-[11px] font-bold tracking-[0.2em] uppercase text-[#172228]/60">
-                <span className="w-4 h-[1px] bg-[#172228]/40" />
-                <span>RESULTS</span>
+                
+                <span>PEACE OF MIND</span>
               </div>
 
               {/* Stat & Description */}
@@ -179,7 +179,7 @@ export default function AboutUsPage() {
                   100%
                 </div>
                 <p className="text-sm sm:text-[14.5px] leading-relaxed text-[#172228]/80">
-                  With a focus on excellence, we consistently deliver 100% results, ensuring complete peace of mind.
+                  Clear estate planning and legally sound Will drafting designed to reduce uncertainty and help protect what matters most to your family.
                 </p>
               </div>
             </div>
@@ -199,23 +199,26 @@ export default function AboutUsPage() {
                 <span>ORIGIN</span>
               </div>
 
-              <h2 className="text-3xl sm:text-4xl lg:text-[3.25rem] font-medium leading-[1.12] tracking-[-0.025em] text-[#111827]">
-                Started in India, in 2020.
+              <h2 className="text-[2rem] sm:text-[2.2rem] lg:text-[3.2rem] font-medium leading-[1.12] tracking-[-0.025em] text-[#111827]">
+                Built in India, for families planning what comes next.
               </h2>
             </div>
 
             {/* Right Column: Editorial Narrative Paragraphs */}
             <div className="lg:col-span-7 space-y-6 text-[#49585F] text-[1.05rem] sm:text-[1.15rem] leading-[1.75] font-normal">
               <p>
-                Too many families were putting these decisions off, not because they did not care, but because the process made them hard to face. Wills, probate, and succession arrangements were full of confusing forms, legal jargon, and costs that were hard to understand when families needed clarity most.
+                Too many families put off making a Will, not because they do not care, but because talking about what happens after them can feel difficult. Property, investments, businesses, beneficiaries, and succession can quickly become complicated when there is no clear plan in place.
               </p>
 
               <p>
-                Our team thought there was a calmer, more transparent version. So we built one. A Will you can draft in 20 minutes with verified legal clauses. Probate at a fixed fee, prepared and vetted by qualified advocates on staff. Seamless execution with zero confusing legalese or hidden expenses.
+                We believed there should be a simpler, more thoughtful way. So we built a practice around it. Professional Will drafting and estate planning that turns your wishes into a clear legal document, with carefully considered clauses, personalised asset distribution, and guidance designed around your family.
               </p>
 
               <p>
-                Six years on, we&apos;ve helped thousands of families put their estates in order. The work has never felt routine.
+                Our advocates help families create legally sound Wills, plan succession, protect their assets, and reduce the uncertainty that can lead to future family disputes. Every Will is drafted with care because what may be a legal document to us is a lifetime of work and the future of a family to you.
+              </p>
+              <p>
+                Today, we help families across India put their estates in order. The responsibility has never felt routine.
               </p>
             </div>
           </div>
@@ -233,7 +236,7 @@ export default function AboutUsPage() {
 
           {/* Heading (Plus Jakarta Sans) */}
           <h2 className="text-3xl sm:text-4xl lg:text-[3.25rem] font-medium leading-[1.14] tracking-[-0.025em] text-[#111827] mb-12 sm:mb-16">
-            Three things we hold to.
+            Three things we believe in.
           </h2>
 
           {/* 3 Columns Grid with subtle top border */}
@@ -247,7 +250,7 @@ export default function AboutUsPage() {
                 You&apos;ll talk to a person.
               </h3>
               <p className="text-[#49585F] text-[15px] sm:text-[15.5px] leading-[1.65]">
-                No bots, no scripts, no waiting on hold. We pick up because someone in your shoes deserves a person on the other end.
+                No confusing forms, automated answers, or legal jargon. You speak with someone who takes the time to understand your family, assets, wishes, and concerns because <strong className="font-medium text-[#111827]">Will drafting is about more than paperwork.</strong>
               </p>
             </div>
 
@@ -257,10 +260,10 @@ export default function AboutUsPage() {
                 <ShieldCheck className="w-4 h-4" />
               </div>
               <h3 className="text-xl sm:text-[1.35rem] font-medium text-[#111827] mb-3">
-                Our prices stay put.
+                Our process stays transparent.
               </h3>
               <p className="text-[#49585F] text-[15px] sm:text-[15.5px] leading-[1.65]">
-                The figure we quote is the figure you pay. No upsells, no last-minute additions, no commissions paid to staff.
+                The advice you receive is clear from the beginning. No hidden surprises, unnecessary upsells, or confusing charges. Just straightforward guidance through <strong className="font-medium text-[#111827]">Will drafting, estate planning, and succession planning.</strong>
               </p>
             </div>
 
@@ -273,7 +276,7 @@ export default function AboutUsPage() {
                 We sweat the legal detail.
               </h3>
               <p className="text-[#49585F] text-[15px] sm:text-[15.5px] leading-[1.65]">
-                Wills built by lawyers, kept current with changes in state law. The careful, quiet work that keeps things uncontested.
+                Every Will is carefully drafted around your circumstances, beneficiaries, assets, and wishes. We pay close attention to the legal details that can help protect your legacy, reduce ambiguity, and give your family greater clarity when it matters most.
               </p>
             </div>
           </div>

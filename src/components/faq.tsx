@@ -1,7 +1,8 @@
 "use client";
 
 import React, { useState } from "react";
-import { Phone } from "lucide-react";
+import Link from "next/link";
+import { ArrowUpRight } from "lucide-react";
 
 interface FAQItem {
   id: number;
@@ -12,33 +13,63 @@ interface FAQItem {
 const faqs: FAQItem[] = [
   {
     id: 1,
-    question: "How do you communicate with clients?",
+    question: "What is Will drafting and why do I need it?",
     answer:
-      "We communicate with complete clarity and regular updates through direct phone calls, secure messages, and scheduled progress reviews. You’ll always know exactly where your documents and filings stand without having to chase us down.",
+      "Will drafting is the process of legally documenting how you want your assets and property to be dealt with after your death. A professionally drafted Will can clearly identify beneficiaries, appoint an executor and include provisions for your family and minor children.",
   },
   {
     id: 2,
-    question: "What makes your firm different?",
+    question: "Is a Will legally valid in India?",
     answer:
-      "We’re a boutique with big-firm results: former prosecutors, board-certified specialists, and a 98% success rate. That means you get the firepower of a large firm without the bureaucracy—every case gets partner-level attention from day one. And our track record isn’t just a number; it’s backed by relentless preparation and a strategy tailored to your unique situation, so you can face every step with confidence.",
+      "A Will must meet the applicable legal requirements for execution and attestation. For an ordinary unprivileged Will, Section 63 of the Indian Succession Act, 1925 requires the Will to be signed or marked by the testator and attested by two or more witnesses as prescribed by law.",
   },
   {
     id: 3,
-    question: "I’m not sure I have a case. Should I still call?",
+    question: "Do I need a lawyer to make a Will in India?",
     answer:
-      "Every initial consultation is confidential and obligation-free. Even if you're unsure whether you need formal legal representation or an estate plan, we will review your circumstances, answer your questions plainly, and point you in the right direction.",
+      "You can make a Will without a lawyer, but professional Will drafting can help when you have multiple assets, beneficiaries, properties, minor children or complex family circumstances. A professionally structured Will can also help avoid ambiguity and common drafting mistakes.",
   },
   {
     id: 4,
-    question: "How long does a typical case take?",
+    question: "Is Will registration mandatory in India?",
     answer:
-      "Timelines depend on the complexity of your legal matter and whether all parties are aligned. Standard will drafting and trust formation can be completed in as little as a few days to two weeks, while complex estates or contested matters may take longer.",
+      "Registration of a Will is generally not mandatory. However, you may choose to register your Will depending on your circumstances. The important thing is that the Will is properly drafted and executed according to applicable law.",
   },
   {
     id: 5,
-    question: "Is the initial consultation really free?",
+    question: "How many witnesses are required for a Will?",
     answer:
-      "Yes, completely free. There are no surprise fees, hidden retainers, or commitments required. Our goal is to provide honest answers and determine the best path forward for you and your family.",
+      "For an ordinary unprivileged Will covered by Section 63 of the Indian Succession Act, the Will must be attested by two or more witnesses in accordance with the statutory requirements.",
+  },
+  {
+    id: 6,
+    question: "Can I change my Will after making it?",
+    answer:
+      "Yes. A Will can generally be changed or revoked while you have the testamentary capacity to do so. It is also important to review your Will after significant changes in your family, property or financial circumstances.",
+  },
+  {
+    id: 7,
+    question: "What happens if I die without a Will?",
+    answer:
+      "If you die without a Will, your estate is generally distributed according to the succession law applicable to your circumstances rather than according to your personal wishes. This can create uncertainty for your family regarding property, investments and other assets.",
+  },
+  {
+    id: 8,
+    question: "Can I make a Will for my property and bank accounts?",
+    answer:
+      "Yes. Your Will can address your legally disposable interests in property, bank accounts, investments, shares, jewellery and other assets, subject to the nature of the asset and applicable law.",
+  },
+  {
+    id: 9,
+    question: "How long does it take to make a Will?",
+    answer:
+      "A straightforward Will can be prepared relatively quickly once the necessary family, beneficiary and asset information is available. The time required depends on the complexity of your estate and the provisions required.",
+  },
+  {
+    id: 10,
+    question: "What if I don't know where to start?",
+    answer:
+      "You don't have to figure it all out alone. Start by telling us about your family, assets and wishes. We'll help you understand the important provisions that may need to be included in your Will.",
   },
 ];
 
@@ -70,47 +101,48 @@ export default function FAQ() {
 
               {/* Main Heading */}
               <h2 className="text-[2.2rem] sm:text-[3rem] lg:text-[3.4rem] font-medium text-[#172228] leading-[1.08] tracking-tight">
-                The Answers You Need Before You Even Ask Questions.
+                The Answers You Need Before You Put Your Family’s Future in Writing.
 
               </h2>
+              <p className="text-[1rem] sm:text-[1.1rem] text-[#55636D] leading-relaxed max-w-2xl mt-4">Making a Will can feel overwhelming. These are the questions people ask before taking the first step toward protecting their family, property and wishes.</p>
             </div>
 
-            {/* Desktop-only: "Not sure what to ask first?" Card */}
+            {/* Desktop-only: "Ready to start?" Card */}
             <div className="hidden lg:block mt-16 xl:mt-24">
               <div className="bg-[#EBE7DF] rounded-2xl sm:rounded-[22px] p-6 sm:p-7 max-w-[420px]">
                 <h3 className="text-[1.2rem] sm:text-[1.32rem] font-semibold text-[#172228] mb-2.5">
-                  Not sure what to ask first?
+                  Ready to protect your family?
                 </h3>
                 <p className="text-[0.88rem] sm:text-[0.92rem] text-[#55636D] leading-[1.65] mb-6">
-                  Every strong case starts with an honest, pressure-free conversation. We listen to your situation, answer your questions plainly, and help you figure out.
+                  Your family shouldn&apos;t have to guess what you wanted.
                 </p>
-                <a
-                  href="tel:+1234567890"
-                  className="inline-flex items-center gap-2.5 rounded-full bg-white px-5 py-2.5 text-[0.88rem] font-semibold text-[#172228] shadow-[0_1px_3px_rgba(0,0,0,0.06)] hover:bg-[#FAF7F0] transition-all active:scale-95"
+                <Link
+                  href="/start"
+                  className="inline-flex items-center gap-2.5 rounded-full bg-[#172228] px-5 py-2.5 text-[0.88rem] font-semibold text-white shadow-[0_1px_3px_rgba(0,0,0,0.06)] hover:bg-[#2D3A41] transition-all active:scale-95"
                 >
-                  <Phone size={14} className="text-[#172228] fill-[#172228]" />
-                  <span>+1 234 567 890</span>
-                </a>
+                  <span>Start Your Will</span>
+                  <ArrowUpRight size={16} strokeWidth={2.2} />
+                </Link>
               </div>
             </div>
           </div>
 
-          {/* Mobile-only: "Not sure what to ask first?" Card placed directly below headline */}
-          <div className="block lg:hidden">
+          {/* Mobile-only: "Ready to start?" Card placed directly below headline */}
+          <div className="block lg:hidden mt-6 mb-8">
             <div className="bg-[#EBE7DF] rounded-2xl p-6 max-w-full">
               <h3 className="text-[1.2rem] font-semibold text-[#172228] mb-2.5">
-                Not sure what to ask first?
+                Ready to protect your family?
               </h3>
               <p className="text-[0.88rem] text-[#55636D] leading-[1.6] mb-5">
-                Every strong case starts with an honest, pressure-free conversation. We listen to your situation, answer your questions plainly, and help you figure out.
+                Your family shouldn&apos;t have to guess what you wanted.
               </p>
-              <a
-                href="tel:+1234567890"
-                className="inline-flex items-center gap-2.5 rounded-full bg-white px-5 py-2.5 text-[0.88rem] font-semibold text-[#172228] shadow-[0_1px_3px_rgba(0,0,0,0.06)] hover:bg-[#FAF7F0] transition-all active:scale-95"
+              <Link
+                href="/start"
+                className="inline-flex items-center gap-2.5 rounded-full bg-[#172228] px-5 py-2.5 text-[0.88rem] font-semibold text-white shadow-[0_1px_3px_rgba(0,0,0,0.06)] hover:bg-[#2D3A41] transition-all active:scale-95"
               >
-                <Phone size={14} className="text-[#172228] fill-[#172228]" />
-                <span>+1 234 567 890</span>
-              </a>
+                <span>Start Your Will</span>
+                <ArrowUpRight size={16} strokeWidth={2.2} />
+              </Link>
             </div>
           </div>
 
