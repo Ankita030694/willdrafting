@@ -119,11 +119,7 @@ function MarqueeRow({ items, direction, speed = 0.75, rowRef }: MarqueeRowProps)
     }
   }, [rowRef]);
 
-  const [isDragging, setIsDragging] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
-
-  const dragStartX = useRef(0);
-  const dragStartScrollLeft = useRef(0);
   const setWidth = useRef(0);
 
   // Measure width of one complete set of cards + gap
@@ -165,7 +161,7 @@ function MarqueeRow({ items, direction, speed = 0.75, rowRef }: MarqueeRowProps)
 
     const tick = () => {
       const el = containerRef.current;
-      if (el && !isDragging && !isHovered && setWidth.current > 0) {
+      if (el && !isHovered && setWidth.current > 0) {
         const sw = setWidth.current;
 
         if (direction === "left") {
@@ -185,58 +181,18 @@ function MarqueeRow({ items, direction, speed = 0.75, rowRef }: MarqueeRowProps)
 
     animId = requestAnimationFrame(tick);
     return () => cancelAnimationFrame(animId);
-  }, [direction, speed, isDragging, isHovered]);
-
-  // Mouse Drag Handlers
-  const handleMouseDown = (e: React.MouseEvent) => {
-    const el = containerRef.current;
-    if (!el) return;
-    setIsDragging(true);
-    dragStartX.current = e.pageX;
-    dragStartScrollLeft.current = el.scrollLeft;
-  };
-
-  const handleMouseMove = (e: React.MouseEvent) => {
-    if (!isDragging) return;
-    const el = containerRef.current;
-    if (!el) return;
-    e.preventDefault();
-    const walk = (e.pageX - dragStartX.current) * 1.3;
-    el.scrollLeft = dragStartScrollLeft.current - walk;
-
-    // Seamless wrap during drag
-    const sw = setWidth.current;
-    if (sw > 0) {
-      if (el.scrollLeft >= sw * 2.5) {
-        el.scrollLeft -= sw;
-        dragStartScrollLeft.current -= sw;
-      } else if (el.scrollLeft <= sw * 0.5) {
-        el.scrollLeft += sw;
-        dragStartScrollLeft.current += sw;
-      }
-    }
-  };
-
-  const handleMouseUp = () => {
-    setIsDragging(false);
-  };
+  }, [direction, speed, isHovered]);
 
   const handleMouseLeave = () => {
-    setIsDragging(false);
     setIsHovered(false);
   };
 
   return (
     <div
       ref={containerRef}
-      onMouseDown={handleMouseDown}
-      onMouseMove={handleMouseMove}
-      onMouseUp={handleMouseUp}
       onMouseLeave={handleMouseLeave}
       onMouseEnter={() => setIsHovered(true)}
-      onTouchStart={() => setIsDragging(true)}
-      onTouchEnd={() => setIsDragging(false)}
-      className="flex overflow-x-auto scrollbar-none py-2 cursor-grab active:cursor-grabbing select-none"
+      className="flex overflow-x-auto scrollbar-none py-2"
       style={{
         scrollbarWidth: "none",
         msOverflowStyle: "none",
@@ -338,7 +294,7 @@ export default function Testimonial() {
             </div>
 
             {/* Editorial Title */}
-            <h2 className="text-[2.35rem] sm:text-[3.2rem] lg:text-[3.65rem] font-bold text-[#172228] leading-[1.08] tracking-tight mb-4">
+            <h2 className="text-[2.2rem] sm:text-[3rem] lg:text-[3.4rem] font-bold text-[#172228] leading-[1.08] tracking-tight mb-4">
               Trusted by 160,000+<br />
               Families.
             </h2>

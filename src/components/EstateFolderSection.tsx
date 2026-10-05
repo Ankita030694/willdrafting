@@ -91,28 +91,28 @@ export default function EstateFolderSection() {
           {/* Left Column: Pill, Heading, Subtitle & Highlights */}
           <div className="lg:col-span-7 flex flex-col items-start text-left">
             {/* Pill Eyebrow */}
-            <div className="inline-flex items-center gap-2 rounded-full bg-[#C65378]/10 px-3.5 py-1.5 text-xs font-semibold text-[#C65378] mb-4">
-              <FolderLock size={14} className="text-[#C65378]" />
+            <div className="inline-flex items-center gap-2 rounded-full px-3.5 py-1.5 text-xs font-semibold text-[#C65378] mb-4">
+              
               <span className="tracking-[0.14em] uppercase text-[11px] font-bold">
-                Digital Estate Dossier
+                Digital Estate Plan
               </span>
             </div>
 
             {/* Main Editorial Heading */}
-            <h2 className="text-[2.2rem] sm:text-[2.85rem] lg:text-[3.35rem] font-bold text-[#172228] leading-[1.12] tracking-tight mb-4">
-              All your vital documents in one secure place.
+            <h2 className="text-[2.2rem] sm:text-[3rem] lg:text-[3.4rem] font-medium text-[#172228] leading-[1.12] tracking-tight mb-4">
+              All Your Important Will & Estate Documents in One Secure Place.
             </h2>
 
             {/* Subtitle */}
             <p className="text-[1rem] sm:text-[1.1rem] text-[#55636D] leading-relaxed max-w-xl mb-6">
-              From your Last Will and detailed asset schedule to witness attestation guides — everything is neatly compiled into a tamper-proof digital dossier.
+              From your Last Will and Testament and detailed asset schedule to witness attestation guidance, everything you need for your estate planning in India is neatly organised in one secure place.
             </p>
 
             {/* Checklist Points */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-8 w-full">
               <div className="flex items-center gap-2 text-xs sm:text-sm text-[#2D3A41]">
                 <CheckCircle2 size={16} className="text-[#5F7E75] shrink-0" />
-                <span>Court-tested testamentary clauses</span>
+                <span>Professionally structured Will clauses</span>
               </div>
               <div className="flex items-center gap-2 text-xs sm:text-sm text-[#2D3A41]">
                 <CheckCircle2 size={16} className="text-[#5F7E75] shrink-0" />
@@ -120,7 +120,7 @@ export default function EstateFolderSection() {
               </div>
               <div className="flex items-center gap-2 text-xs sm:text-sm text-[#2D3A41]">
                 <CheckCircle2 size={16} className="text-[#5F7E75] shrink-0" />
-                <span>Instant PDF & print-ready formats</span>
+                <span>Instant PDF & print-ready Will formats</span>
               </div>
               <div className="flex items-center gap-2 text-xs sm:text-sm text-[#2D3A41]">
                 <CheckCircle2 size={16} className="text-[#5F7E75] shrink-0" />
@@ -134,11 +134,11 @@ export default function EstateFolderSection() {
                 href="/start"
                 className="inline-flex items-center gap-2 rounded-full bg-[#C65378] px-7 py-3 text-[14px] font-medium text-white shadow-sm hover:bg-[#a13c5d] hover:shadow-md transition-all active:scale-95"
               >
-                <span>Start Your Dossier</span>
+                <span>Start Your Estate Plan</span>
                 <ArrowUpRight size={16} strokeWidth={2.2} />
               </Link>
               <span className="text-xs text-[#7B8791] font-medium">
-                Takes ~15 minutes · Plain paper valid
+                Takes ~15 minutes · Plain paper Will format
               </span>
             </div>
           </div>

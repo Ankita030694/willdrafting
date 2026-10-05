@@ -25,14 +25,14 @@ const CLAUSE_ITEMS: ClauseItem[] = [
     lawRef: "Indian Succession Act, 1925 · Section 59 & Section 62",
     badge: "Testamentary Capacity",
     summary:
-      "Explicitly establishes voluntary testamentary capacity and automatically supersedes any previous wills, codicils, or oral declarations to avoid conflicting claims.",
+      "Clearly establishes your testamentary capacity and voluntary intention while expressly revoking previous Wills, codicils and testamentary dispositions to help avoid conflicting succession claims.",
     legalSnippet:
       "I hereby declare that I am of sound mind, memory, and understanding, and that I make this last Will voluntarily without any undue influence, coercion, or misrepresentation. I hereby revoke all prior Wills, codicils, and testamentary dispositions made by me at any time.",
     image: "/images/senior-couple.jpg",
     points: [
-      "Explicit revocation of all prior wills & codicils",
-      "Confirms mental capacity under Section 59",
-      "Preempts disputes regarding coercion or duress",
+      "Explicit revocation of previous Wills & codicils.",
+      "Records testamentary capacity under Section 59.",
+      "Helps address concerns regarding coercion or undue influence.",
     ],
   },
   {
@@ -42,31 +42,31 @@ const CLAUSE_ITEMS: ClauseItem[] = [
     lawRef: "Indian Succession Act, 1925 · Section 222",
     badge: "Estate Administration",
     summary:
-      "Appoints primary and alternate executors with full legal authority to represent your estate, obtain probate where required, and distribute assets precisely as intended.",
+      "Appoints a primary and alternate executor to administer your estate, represent the estate where legally required, obtain probate where applicable, and distribute assets according to your Will.",
     legalSnippet:
-      "I hereby appoint [PRIMARY EXECUTOR NAME], residing at [ADDRESS], to be the sole Executor of this my Will. In the event they predecease me or decline to act, I appoint [ALTERNATE EXECUTOR NAME] as alternate Executor with identical powers.",
+      "I hereby appoint [PRIMARY EXECUTOR NAME], residing at [ADDRESS], to be the sole Executor of this my Will. In the event they predecease me or decline to act, I appoint [ALTERNATE EXECUTOR NAME] as alternate Executor with appropriate powers.",
     image: "/images/advocate.jpg",
     points: [
-      "Sole and alternate executor contingency",
-      "Immediate legal authority to access & manage accounts",
-      "Powers to clear debts, funeral expenses & distribute shares",
+      "Primary and alternate executor provisions.",
+      "Authority to administer estate assets.",
+      "Powers concerning debts, expenses and distribution of assets",
     ],
   },
   {
     id: "clause-3",
     number: "3/",
-    title: "Specific Asset Devolutions & Residual Estate",
-    lawRef: "Indian Succession Act, 1925 · Part VI, Chapters I–VII",
+    title: "Specific Asset Bequests & Residual Estate",
+    lawRef: "Indian Succession Act, 1925 · Part VI",
     badge: "Asset Distribution",
     summary:
-      "Categorizes immovable properties, financial investments, demat accounts, gold, and digital keys, backed by an all-inclusive residuary clause that catches omitted assets.",
+      "Clearly identifies how immovable property, bank accounts, investments, demat holdings, jewellery and other assets should pass to your beneficiaries, supported by a residuary clause for assets not specifically mentioned.",
     legalSnippet:
-      "I bequeath my residential flat situated at [PROPERTY ADDRESS] unto [BENEFICIARY NAME] absolutely. All my bank deposits, mutual fund holdings, demat portfolios, and residual movable assets shall devolve upon [RESIDUARY BENEFICIARY] free from encumbrances.",
+      "I bequeath my residential flat situated at [PROPERTY ADDRESS] unto [BENEFICIARY NAME] absolutely. All my bank deposits, mutual fund holdings, demat portfolios, and residual movable assets shall devolve upon [RESIDUARY BENEFICIARY] in accordance with this Will.",
     image: "/images/preview-navy.png",
     points: [
-      "Clear separation of immovable & movable holdings",
-      "Comprehensive residuary clause prevents partial intestacy",
-      "Addresses digital assets, crypto wallets & lockers",
+      "Clear separation of immovable & movable assets.",
+      "Residuary clause for assets not specifically listed.",
+      "Can address investments, digital assets and other property.",
     ],
   },
   {
@@ -76,14 +76,14 @@ const CLAUSE_ITEMS: ClauseItem[] = [
     lawRef: "Guardians and Wards Act, 1890",
     badge: "Minor Protection",
     summary:
-      "Designates trusted testamentary guardians for minor children and establishes trust management for funds until they attain financial maturity at age 21 or 25.",
+      "Allows parents to express their wishes regarding a testamentary guardian for minor children and include appropriate provisions for management of assets intended for them, subject to applicable law.",
     legalSnippet:
-      "In the event of demise of both myself and my spouse while any child of ours is a minor, I nominate and appoint [GUARDIAN NAME] to be the legal and physical Guardian of the person and property of my minor children.",
+      "In the event of my demise while any child of mine is a minor, I nominate and appoint [GUARDIAN NAME] as the testamentary guardian of my minor child/children, subject to applicable law.",
     image: "/images/hero-family.jpg",
     points: [
-      "Prevents court-appointed stranger guardians",
-      "Trust arrangement protects children's educational funds",
-      "Alternate guardian fallback clause",
+      "Testamentary guardian provision.",
+      "Alternate guardian where appropriate.",
+      "Provisions concerning assets intended for minor children.",
     ],
   },
   {
@@ -91,16 +91,16 @@ const CLAUSE_ITEMS: ClauseItem[] = [
     number: "5/",
     title: "Execution & Two-Witness Attestation",
     lawRef: "Indian Succession Act, 1925 · Section 63(c)",
-    badge: "Execution Validity",
+    badge: "Will Execution",
     summary:
-      "Adheres strictly to the mandatory two-witness attestation rule with standard attestation clauses certifying that both witnesses observed the testator sign in their presence.",
+      "Follows the applicable execution and attestation requirements for an ordinary Will, including signing by the testator and attestation by two or more witnesses as prescribed by law.",
     legalSnippet:
-      "Signed by the Testator in our joint presence, and attested by each of us in the presence of the Testator and each other, all being present at the same time. Neither witness is a beneficiary nor spouse of a beneficiary under this Will.",
+      "Signed by the Testator in our joint presence, and attested by each of us in the presence of the Testator and each other, all being present at the same time.",
     image: "/hero.jpeg",
     points: [
-      "Strict compliance with Section 63(c) dual-witness rule",
-      "Beneficiary disqualification verification",
-      "Plain-paper attestation valid without stamp duty",
+      "Two-witness attestation under Section 63.",
+      "Proper signing and attestation process.",
+      "Helps avoid common Will execution errors.",
     ],
   },
 ];
@@ -218,13 +218,13 @@ export default function BelowTrust() {
             {/* Eyebrow */}
             <div className="flex items-center gap-3 mb-4 text-left">
               <span className="text-xs font-bold tracking-[0.14em] uppercase text-[#C65378]">
-                Court-Tested Clauses
+                Legally Structured Will Clauses
               </span>
             </div>
 
             {/* Main Section Heading */}
-            <h2 className="text-[2.2rem] sm:text-[2.85rem] lg:text-[3.35rem] font-bold text-[#172228] leading-[1.12] tracking-tight">
-              Support shaped around what your estate requires.
+            <h2 className="text-[2.2rem] sm:text-[3rem] lg:text-[3.4rem] font-medium text-[#172228] leading-[1.12] tracking-tight">
+              Support tailored to your estate, family & succession wishes.
             </h2>
           </div>
 
@@ -361,36 +361,15 @@ export default function BelowTrust() {
                     {item.summary}
                   </p>
 
-                  {/* Split Preview: Legal Clause Text + High-res Visual Media */}
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-stretch mb-8">
-                    
-                    {/* Legal Clause Box */}
-                    <div className="bg-[#FAF7F0] rounded-2xl p-5 sm:p-6 border border-[#1B2A4A]/10 flex flex-col justify-between">
-                      <div>
-                        <div className="flex items-center gap-2 mb-3">
-                          <FileCheck size={18} className="text-[#C65378]" />
-                          <span className="text-xs font-bold uppercase tracking-wider text-[#172228]">
-                            Exact Draft Language
-                          </span>
-                        </div>
-                        <p className="text-xs sm:text-[13px] leading-relaxed text-[#3B484F] italic border-l-2 border-[#C65378] pl-3.5 my-2">
-                          "{item.legalSnippet}"
-                        </p>
-                      </div>
-
-                      <span className="text-[11px] text-[#7E8B94] mt-4 font-mono">
-                        ✓ Tailored dynamically based on your inputs
-                      </span>
-                    </div>
-
-                    {/* Accompanying Photo / Visual Card */}
+                  {/* Visual Media */}
+                  <div className="mb-8">
                     <div className="relative rounded-2xl overflow-hidden min-h-[220px] bg-slate-100 border border-[#1B2A4A]/10">
                       {item.image ? (
                         <Image
                           src={item.image}
                           alt={item.title}
                           fill
-                          sizes="(max-width: 768px) 100vw, 400px"
+                          sizes="(max-width: 768px) 100vw, 800px"
                           className="object-cover object-center"
                         />
                       ) : (
@@ -416,7 +395,7 @@ export default function BelowTrust() {
                       href="/start"
                       className="inline-flex items-center justify-center gap-1.5 text-xs font-bold text-[#C65378] hover:text-[#a13c5d] transition-colors py-2 whitespace-nowrap self-start sm:self-auto"
                     >
-                      <span>Draft this clause</span>
+                      <span>See More</span>
                       <ArrowRight size={14} />
                     </Link>
                   </div>

@@ -113,7 +113,7 @@ export default function Pricing() {
           </div>
 
           {/* Main Title */}
-          <h2 className="text-[2.35rem] sm:text-[3.2rem] lg:text-[3.65rem] font-bold text-[#172228] leading-[1.08] tracking-tight mb-4">
+          <h2 className="text-[2.2rem] sm:text-[3rem] lg:text-[3.4rem] font-bold text-[#172228] leading-[1.08] tracking-tight mb-4">
             Choose The Right Plan For <br className="hidden sm:block" />
             <span className="italic font-normal">Your Family & Estate.</span>
           </h2>
@@ -127,7 +127,7 @@ export default function Pricing() {
             TOGGLE PILL GROUP: 01 Essential / 02 Family ⭐ / 03 Comprehensive
             ========================================================================= */}
         <div className="flex justify-center mb-8 sm:mb-10 w-full px-2 sm:px-0">
-          <div className="w-full max-w-[420px] sm:max-w-none sm:inline-flex grid grid-cols-3 sm:flex items-center p-1 sm:p-1.5 rounded-full bg-[#EBE7DF] border border-[#1B2A4A]/5 shadow-[inset_0_1px_3px_rgba(0,0,0,0.04)]">
+          <div className="w-full max-w-[420px] sm:max-w-none sm:w-auto grid grid-cols-3 sm:flex items-center p-1 sm:p-1.5 rounded-full bg-[#EBE7DF] border border-[#1B2A4A]/5 shadow-[inset_0_1px_3px_rgba(0,0,0,0.04)]">
             {tiers.map((tier) => {
               const isSelected = selected === tier.value;
               return (
@@ -142,7 +142,7 @@ export default function Pricing() {
                   }`}
                 >
                   <span className="opacity-70 text-[10px] sm:text-xs font-mono shrink-0">{tier.step}</span>
-                  <span className="truncate">
+                  <span className="whitespace-nowrap">
                     <span className="hidden sm:inline">{tier.label}</span>
                     <span className="sm:hidden">{tier.label.replace(" Will", "")}</span>
                   </span>

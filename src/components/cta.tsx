@@ -118,16 +118,17 @@ export default function CTA() {
         </div>
 
         {/* Main Heading */}
-        <h2 className="text-[2rem] sm:text-[3rem] lg:text-[3.5rem] font-normal leading-[1.12] tracking-tight mb-2">
+        <h2 className="text-[2.2rem] sm:text-[3rem] lg:text-[3.4rem] font-normal leading-[1.12] tracking-tight mb-2">
           <span className="text-[#172228] block">
-            Ready to protect what matters most?
+            Don&apos;t Leave Your Family Guessing.
           </span>
         </h2>
 
         {/* Subtitle / Description */}
-        <p className="text-[0.96rem] sm:text-[1.08rem] leading-[1.65] text-[#55636D] max-w-[620px] mx-auto mb-8">
-          Create a clear, personalised Will and make sure your wishes are taken care of.
-        </p>
+        <div className="text-[0.96rem] sm:text-[1.08rem] leading-[1.65] text-[#55636D] max-w-[620px] mx-auto mb-8 space-y-4">
+          <p>You spend a lifetime building what matters. Make sure your wishes are known when you&apos;re no longer there to explain them.</p>
+          <p>Create a personalised Will that clearly records your wishes for your family, property and assets.</p>
+        </div>
 
         {/* Simple CTA Button (Hero section style) */}
         <div className="mb-6 flex justify-center">

@@ -2,7 +2,7 @@
 
 import React from "react";
 import Link from "next/link";
-import { X, Check, ArrowUpRight } from "lucide-react";
+import { X, Check, ArrowUpRight, ChevronLeft, ChevronRight } from "lucide-react";
 
 interface ComparisonRow {
   topic: string;
@@ -59,7 +59,7 @@ export default function EstateComparison() {
           </div>
 
           {/* Main Title */}
-          <h2 className="text-[2.35rem] sm:text-[3.2rem] lg:text-[3.65rem] font-bold text-[#172228] leading-[1.08] tracking-tight mb-4 sm:mb-5">
+          <h2 className="text-[2.2rem] sm:text-[3rem] lg:text-[3.4rem] font-bold text-[#172228] leading-[1.08] tracking-tight mb-4 sm:mb-5">
             What happens if you don&apos;t have a will?
           </h2>
 
@@ -69,8 +69,8 @@ export default function EstateComparison() {
         {/* =========================================================================
             COMPARISON TABLE CARD: Max-W-8xl Editorial Design
             ========================================================================= */}
-        <div className="w-full rounded-[28px] sm:rounded-[36px] bg-[#EBE7DF] p-1.5 sm:p-2 shadow-[0_4px_24px_rgba(0,0,0,0.03)] border border-[#1B2A4A]/5">
-          <div className="bg-white rounded-[24px] sm:rounded-[30px] overflow-hidden border border-[#1B2A4A]/5">
+        <div className="w-full md:rounded-[36px] md:bg-[#EBE7DF] md:p-2 md:shadow-[0_4px_24px_rgba(0,0,0,0.03)] md:border md:border-[#1B2A4A]/5">
+          <div className="md:bg-white md:rounded-[30px] md:overflow-hidden md:border md:border-[#1B2A4A]/5">
             
             {/* Desktop Table Header */}
             <div className="hidden md:grid md:grid-cols-12 gap-8 px-8 lg:px-10 py-5 bg-[#FAF7F0]/70 border-b border-[#1B2A4A]/5 text-xs font-bold uppercase tracking-[0.12em]">
@@ -88,11 +88,17 @@ export default function EstateComparison() {
             </div>
 
             {/* Comparison Rows */}
-            <div className="divide-y divide-[#1B2A4A]/5">
+            <div 
+              className="flex md:block gap-4 md:gap-0 overflow-x-auto md:overflow-visible snap-x snap-mandatory md:snap-none md:divide-y md:divide-[#1B2A4A]/5 scrollbar-none w-full pb-4 md:pb-0"
+              style={{
+                scrollbarWidth: "none",
+                msOverflowStyle: "none",
+                WebkitOverflowScrolling: "touch",
+              }}
+            >
               {comparisonRows.map((row, idx) => (
                 <div
-                  key={idx}
-                  className="grid grid-cols-1 md:grid-cols-12 gap-5 md:gap-8 px-6 sm:px-8 lg:px-10 py-6 sm:py-7 transition-colors hover:bg-[#FAF7F0]/40"
+                  className="w-[85vw] max-w-5xl shrink-0 md:w-auto md:max-w-none md:shrink snap-center md:snap-align-none grid grid-cols-1 md:grid-cols-12 gap-5 md:gap-8 px-6 sm:px-8 lg:px-10 py-6 sm:py-7 transition-colors md:hover:bg-[#FAF7F0]/40 bg-white rounded-[24px] border border-[#1B2A4A]/10 shadow-sm md:bg-transparent md:border-0 md:rounded-none md:shadow-none"
                 >
                   {/* Topic Title */}
                   <div className="md:col-span-4 flex items-center">
@@ -136,6 +142,13 @@ export default function EstateComparison() {
                   </div>
                 </div>
               ))}
+            </div>
+
+            {/* Mobile Swipe Indicator */}
+            <div className="flex md:hidden items-center justify-center gap-2 pt-2 pb-6 text-[#55636D] text-xs font-semibold uppercase tracking-wider">
+              <ChevronLeft size={16} className="opacity-60" />
+              <span>Drag to See more</span>
+              <ChevronRight size={16} className="opacity-60" />
             </div>
 
           </div>

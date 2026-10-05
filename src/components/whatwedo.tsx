@@ -16,8 +16,8 @@ interface ServiceCard {
 
 const services: ServiceCard[] = [
   {
-    title: "Online Wills",
-    description: "Protect your assets, name guardians for your children, leave instructions that hold up.",
+    title: "Online Will Drafting",
+    description: "Protect your assets, choose your beneficiaries, name guardians for your minor children, and clearly record how your estate should be distributed through a professionally drafted Will in India.",
     linkText: "Write your Will",
     linkHref: "/start",
     illustration: (
@@ -35,7 +35,7 @@ const services: ServiceCard[] = [
   },
   {
     title: "Coming Soon",
-    description: "Power of Attorney and additional estate planning services are launching soon.",
+    description: "Power of Attorney and additional estate planning services in India are coming soon, giving you more ways to plan, manage and protect your family's legal and financial interests.",
     linkText: "Coming Soon",
     isComingSoon: true,
     illustration: (
@@ -68,22 +68,29 @@ export default function WhatWeDo() {
           </div>
 
           {/* Section Heading */}
-          <h2 className="text-[2.35rem] sm:text-[3.2rem] lg:text-[3.65rem] font-bold text-[#172228] leading-[1.12] tracking-tight mb-5">
-            Your plan, on paper.
+          <h2 className="text-[2.2rem] sm:text-[3rem] lg:text-[3.4rem] font-medium text-[#172228] leading-[1.12] tracking-tight mb-5">
+            Put Your Estate Plan in Writing.
           </h2>
 
           {/* Subheading / Description */}
           <p className="text-[1.05rem] sm:text-[1.15rem] leading-[1.65] text-[#49585F] font-normal max-w-[640px]">
-            A legally valid Will or Power of Attorney, written from home in under twenty minutes and reviewable by WillDrafting Law.
+            Create a professionally structured <span className="font-bold">legal Will online</span> from the comfort of your home. Clearly document your wishes, protect your assets, provide for your family and children, and have your Will reviewed by WillDrafting Law.
           </p>
         </div>
 
-        {/* 2-Card Services Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
+        {/* 2-Card Services Grid (Desktop) / Carousel (Mobile) */}
+        <div 
+          className="flex md:grid md:grid-cols-2 gap-4 sm:gap-6 lg:gap-8 overflow-x-auto md:overflow-visible snap-x snap-mandatory md:snap-none pb-4 md:pb-0 w-full scrollbar-none"
+          style={{
+            scrollbarWidth: "none",
+            msOverflowStyle: "none",
+            WebkitOverflowScrolling: "touch",
+          }}
+        >
           {services.map((service, index) => (
             <div
               key={index}
-              className="bg-white rounded-[24px] overflow-hidden flex flex-col justify-between transition-all duration-300 group"
+              className="min-w-[85vw] sm:min-w-[400px] md:min-w-0 shrink-0 md:shrink snap-center md:snap-align-none bg-white rounded-[24px] overflow-hidden flex flex-col justify-between transition-all duration-300 group"
             >
               {/* Top Illustration Container */}
               <div className="relative w-full bg-gradient-to-b from-[#F5EBF4]/40 to-transparent flex items-center justify-center h-[220px] sm:h-[285px] overflow-hidden">

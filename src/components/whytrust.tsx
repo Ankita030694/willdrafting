@@ -2,6 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { Phone, Banknote, Languages } from "lucide-react";
 
 interface Feature {
@@ -13,18 +14,18 @@ interface Feature {
 const features: Feature[] = [
   {
     icon: <Phone size={22} strokeWidth={1.75} color="#FFFFFF" className="text-white" />,
-    title: "Direct access",
+    title: "Direct Access",
     description: "Your attorney's number is in your phone. You call, they answer.",
   },
   {
     icon: <Banknote size={22} strokeWidth={1.75} color="#FFFFFF" className="text-white" />,
-    title: "Flat fee options",
-    description: "Many of our services are fixed-price. You'll know the cost before we start.",
+    title: "Flat Fee Options",
+    description: "Know the cost upfront. Straightforward, fixed-fee Will and estate planning services.",
   },
   {
     icon: <Languages size={22} strokeWidth={1.75} color="#FFFFFF" className="text-white" />,
-    title: "No legal jargon",
-    description: "We explain your options in plain language. You make the decision.",
+    title: "No Legal Jargon",
+    description: "We explain your options in plain language. So you can make confident decisions.",
   },
 ];
 
@@ -63,20 +64,34 @@ export default function WhyTrust() {
           </div>
 
           {/* Dark Cinematic Gradient Vignette Overlays for Maximum Text Legibility */}
-          <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/45 to-black/85" />
+          <div className="absolute inset-0 bg-gradient-to-b from-#c65378/80 via-black/45 to-black/85" />
           <div className="absolute inset-0 bg-black/25" />
 
           {/* =========================================================================
-              TOP: Headline
+              TOP: Headline & Description
               ========================================================================= */}
           <div className="relative z-10 w-full text-left max-w-8xl mx-auto pt-2 sm:pt-4">
             <h2
-              className="text-[2.2rem] sm:text-[3.2rem] lg:text-[3.65rem] font-bold !text-white leading-[1.12] tracking-tight"
+              className="text-[2.2rem] sm:text-[3rem] lg:text-[3.4rem] font-medium !text-white leading-[1.12] tracking-tight mb-4"
               style={{ color: "#FFFFFF" }}
             >
-              You&apos;ll talk to your attorney.<br />
-              <span className="italic font-normal" style={{ color: "#FFFFFF" }}>Not their assistant.</span>
+              It&apos;s Not About What You Leave Behind. <br /> It&apos;s About Who You Leave It For.
             </h2>
+            <p className="text-[1rem] sm:text-[1.12rem] !text-white leading-relaxed max-w-3xl mb-8 font-sans opacity-90" style={{ color: "#FFFFFF" }}>
+              You&apos;ve spent years building your home, savings, investments, business, and everything that matters to you. A Will puts your wishes in writing, helps protect your assets, and gives your family clarity about your future plans.
+            </p>
+            <Link
+              href="/start"
+              className="inline-flex items-center justify-center rounded-full bg-[#C65378] text-[15px] sm:text-[16px] font-semibold !text-white    transition-all active:scale-95 shadow-sm"
+              style={{
+                paddingLeft: "2rem",
+                paddingRight: "2rem",
+                paddingTop: "0.75rem",
+                paddingBottom: "0.75rem",
+              }}
+            >
+              Make My Will Today &rarr;
+            </Link>
           </div>
 
           {/* =========================================================================

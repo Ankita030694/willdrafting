@@ -69,7 +69,7 @@ export default function FAQ() {
               </div>
 
               {/* Main Heading */}
-              <h2 className="text-[2.35rem] sm:text-[3.2rem] lg:text-[3.35rem] font-medium text-[#172228] leading-[1.08] tracking-tight">
+              <h2 className="text-[2.2rem] sm:text-[3rem] lg:text-[3.4rem] font-medium text-[#172228] leading-[1.08] tracking-tight">
                 The Answers You Need Before You Even Ask Questions.
 
               </h2>
