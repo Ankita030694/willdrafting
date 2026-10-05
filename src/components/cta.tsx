@@ -5,11 +5,10 @@ import Image from "next/image";
 import Link from "next/link";
 
 export default function CTA() {
-
   return (
     <section className="relative w-full bg-[#FAF7F0] py-24 sm:py-32 lg:py-36 overflow-hidden flex items-center justify-center">
       {/* =========================================================================
-          SCATTERED FLOATING ILLUSTRATIONS (Desktop: 6 illustrations from /cta, 20% larger, no white card bg)
+          SCATTERED FLOATING ILLUSTRATIONS (Desktop: 6 illustrations from /cta)
           ========================================================================= */}
 
       {/* 1. Top-Left: Will document with wax seal */}
@@ -17,7 +16,7 @@ export default function CTA() {
         <div className="relative w-full h-full">
           <Image
             src="/cta/1.png"
-            alt="Will document illustration"
+            alt="Court-ready legally binding Will document illustration"
             fill
             sizes="160px"
             className="object-contain"
@@ -30,7 +29,7 @@ export default function CTA() {
         <div className="relative w-full h-full">
           <Image
             src="/cta/2.png"
-            alt="Confidential folder illustration"
+            alt="Confidential estate and asset protection folder"
             fill
             sizes="144px"
             className="object-contain"
@@ -43,7 +42,7 @@ export default function CTA() {
         <div className="relative w-full h-full">
           <Image
             src="/cta/3.png"
-            alt="Verified letter illustration"
+            alt="Bar Council advocate verified legal certificate"
             fill
             sizes="160px"
             className="object-contain"
@@ -56,7 +55,7 @@ export default function CTA() {
         <div className="relative w-full h-full">
           <Image
             src="/cta/4.png"
-            alt="Inspected document illustration"
+            alt="Comprehensive 7-point legal health check inspection"
             fill
             sizes="160px"
             className="object-contain"
@@ -69,7 +68,7 @@ export default function CTA() {
         <div className="relative w-full h-full">
           <Image
             src="/cta/5.png"
-            alt="Family protection illustration"
+            alt="Family asset protection and minor guardianship plan"
             fill
             sizes="144px"
             className="object-contain"
@@ -82,7 +81,7 @@ export default function CTA() {
         <div className="relative w-full h-full">
           <Image
             src="/cta/6.png"
-            alt="Parchment scroll illustration"
+            alt="Testamentary clause execution and witness attestation scroll"
             fill
             sizes="160px"
             className="object-contain"
@@ -91,16 +90,15 @@ export default function CTA() {
       </div>
 
       {/* =========================================================================
-          CENTER CONTENT & FORM (With Mobile 4-Image Grid Pairs, no white cards, +20% size)
+          CENTER CONTENT & FORM
           ========================================================================= */}
       <div className="relative z-10 w-full max-w-[760px] mx-auto px-4 sm:px-6 text-center">
-        
-        {/* Mobile Top Image Pair (2 of the 4 mobile images) */}
+        {/* Mobile Top Image Pair */}
         <div className="md:hidden grid grid-cols-2 gap-6 max-w-[320px] mx-auto mb-8 px-2">
           <div className="relative aspect-square w-full flex items-center justify-center">
             <Image
               src="/cta/1.png"
-              alt="Will document illustration"
+              alt="Court-ready legally binding Will document"
               fill
               sizes="160px"
               className="object-contain scale-[1.2]"
@@ -109,7 +107,7 @@ export default function CTA() {
           <div className="relative aspect-square w-full flex items-center justify-center">
             <Image
               src="/cta/4.png"
-              alt="Document inspection illustration"
+              alt="Comprehensive legal health check report"
               fill
               sizes="160px"
               className="object-contain scale-[1.2]"
@@ -130,7 +128,7 @@ export default function CTA() {
           <p>Create a personalised Will that clearly records your wishes for your family, property and assets.</p>
         </div>
 
-        {/* Simple CTA Button (Hero section style) */}
+        {/* Simple CTA Button */}
         <div className="mb-6 flex justify-center">
           <Link
             href="/start"
@@ -142,7 +140,7 @@ export default function CTA() {
               paddingBottom: "0.75rem",
             }}
           >
-            Create My Will 
+            Create My Will in Minutes
           </Link>
         </div>
 
@@ -152,7 +150,7 @@ export default function CTA() {
             <div className="inline-block h-5 w-5 rounded-full ring-2 ring-white overflow-hidden relative">
               <Image
                 src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=80&q=80"
-                alt="Avatar 1"
+                alt="Client avatar Priya Sharma"
                 fill
                 className="object-cover"
               />
@@ -160,7 +158,7 @@ export default function CTA() {
             <div className="inline-block h-5 w-5 rounded-full ring-2 ring-white overflow-hidden relative">
               <Image
                 src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=80&q=80"
-                alt="Avatar 2"
+                alt="Client avatar Rajesh Verma"
                 fill
                 className="object-cover"
               />
@@ -168,7 +166,7 @@ export default function CTA() {
             <div className="inline-block h-5 w-5 rounded-full ring-2 ring-white overflow-hidden relative">
               <Image
                 src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=80&q=80"
-                alt="Avatar 3"
+                alt="Client avatar Sunita Mehta"
                 fill
                 className="object-cover"
               />
@@ -179,12 +177,12 @@ export default function CTA() {
           </span>
         </div>
 
-        {/* Mobile Bottom Image Pair (remaining 2 of the 4 mobile images) */}
+        {/* Mobile Bottom Image Pair */}
         <div className="md:hidden grid grid-cols-2 gap-6 max-w-[320px] mx-auto mt-8 px-2">
           <div className="relative aspect-square w-full flex items-center justify-center">
             <Image
               src="/cta/2.png"
-              alt="Protected folder illustration"
+              alt="Secure digital vault estate document folder"
               fill
               sizes="160px"
               className="object-contain scale-[1.2]"
@@ -193,14 +191,13 @@ export default function CTA() {
           <div className="relative aspect-square w-full flex items-center justify-center">
             <Image
               src="/cta/6.png"
-              alt="Legal scroll illustration"
+              alt="Legal Will execution testament scroll"
               fill
               sizes="160px"
               className="object-contain scale-[1.2]"
             />
           </div>
         </div>
-
       </div>
     </section>
   );

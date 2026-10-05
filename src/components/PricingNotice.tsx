@@ -33,8 +33,8 @@ export default function PricingNotice() {
             Accessible estate planning for every family.
           </h2>
           <p style={{ fontSize: "clamp(0.92rem, 2.5vw, 1.05rem)", color: "var(--color-charcoal)", lineHeight: 1.65, margin: 0 }}>
-            Traditional law firms charge between ₹15,000 and ₹40,000 for drafting a standard personal will.
-            WillDrafting gives you the same legal certainty for a nominal, transparent fee.
+            Traditional law firms often require expensive retainers for drafting a standard personal will.
+            WillDrafting gives you the same legal certainty with transparent, accessible online drafting.
           </p>
         </div>
 
@@ -94,7 +94,7 @@ export default function PricingNotice() {
                   marginBottom: "0.25rem",
                 }}
               >
-                ₹1,499 Flat One-Time Fee
+                Transparent Flat Fee
               </div>
 
               <div style={{ fontSize: "0.8rem", color: "#166534", fontWeight: 600, marginBottom: "0.75rem" }}>

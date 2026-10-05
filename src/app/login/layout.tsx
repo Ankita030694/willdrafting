@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
-import AdminShell from "@/components/admin/AdminShell";
 
 export const metadata: Metadata = {
-  title: "Authority Portal",
+  title: "Login",
+  description:
+    "Securely sign in to your WillDrafting account to manage, edit, or download your legal will.",
   robots: {
     index: false,
     follow: false,
@@ -10,10 +11,10 @@ export const metadata: Metadata = {
   },
 };
 
-export default function AuthorityLayout({
+export default function LoginLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
-  return <AdminShell>{children}</AdminShell>;
+  return children;
 }

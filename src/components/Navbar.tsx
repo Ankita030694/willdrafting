@@ -111,7 +111,7 @@ export default function Navbar() {
             >
               <Image
                 src="/Logofinal.svg"
-                alt="Logo"
+                alt="WillDrafting.in Logo - Legally Valid Online Wills in India"
                 width={34}
                 height={34}
                 className="h-8 w-auto object-contain"

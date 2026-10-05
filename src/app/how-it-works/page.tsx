@@ -17,26 +17,35 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "How It Works | WillDrafting.in — 7-Step Court-Vetted Legal Process",
+  title: "How It Works — Draft & Print Your Will",
   description:
-    "Discover how WillDrafting turns simple questions into an enforceable testamentary Will under the Indian Succession Act, 1925. 15 minutes, automated 7-point legal health check, Bar Council advocate review, and execution kit.",
+    "Simple 7-step process: enter family and asset details, download your court-ready Will in minutes, and get it attested and registered hassle-free.",
   alternates: {
     canonical: "https://www.willdrafting.in/how-it-works",
   },
   openGraph: {
-    title: "How It Works | WillDrafting.in — 7-Step Court-Vetted Legal Process",
+    title: "How It Works | Draft & Print Will in Minutes | WillDrafting.in",
     description:
-      "Discover how WillDrafting turns simple questions into an enforceable testamentary Will under the Indian Succession Act, 1925. 15 minutes, automated 7-point legal health check, Bar Council advocate review, and execution kit.",
+      "Simple 7-step process: enter family and asset details, download your court-ready Will in minutes, and get it attested and registered hassle-free.",
     url: "https://www.willdrafting.in/how-it-works",
     siteName: "WillDrafting.in",
     locale: "en_IN",
     type: "website",
+    images: [
+      {
+        url: "/desktopusp.jpg",
+        width: 1200,
+        height: 630,
+        alt: "How WillDrafting.in Works - 7-Step Court-Vetted Legal Process",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "How It Works | WillDrafting.in — 7-Step Court-Vetted Legal Process",
+    title: "How It Works | Draft & Print Will in Minutes | WillDrafting.in",
     description:
-      "Discover how WillDrafting turns simple questions into an enforceable testamentary Will under the Indian Succession Act, 1925. 15 minutes, automated 7-point legal health check, Bar Council advocate review, and execution kit.",
+      "Simple 7-step process: enter family and asset details, download your court-ready Will in minutes, and get it attested and registered hassle-free.",
+    images: ["/desktopusp.jpg"],
   },
   robots: {
     index: true,
@@ -57,11 +66,6 @@ const JSON_LD = {
       "description":
         "A guided, step-by-step statutory process for compiling an enforceable testamentary Will under the Indian Succession Act, 1925.",
       "totalTime": "PT15M",
-      "estimatedCost": {
-        "@type": "MonetaryAmount",
-        "currency": "INR",
-        "value": "1499",
-      },
       "step": [
         {
           "@type": "HowToStep",
@@ -165,7 +169,7 @@ const JSON_LD = {
           "name": "What happens if I acquire new property or assets after drafting my Will?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "WillDrafting protects you in two ways: First, every draft automatically includes an airtight 'Residuary Estate' clause that directs all future acquired or omitted assets to your chosen primary beneficiary, preventing any property from falling into intestacy. Second, your flat ₹1,499 license includes unlimited lifetime revisions in your secure digital vault. Whenever you buy real estate, open new bank accounts, or alter allocations, simply update your answers and generate a refreshed document at no additional cost.",
+            "text": "WillDrafting protects you in two ways: First, every draft automatically includes an airtight 'Residuary Estate' clause that directs all future acquired or omitted assets to your chosen primary beneficiary, preventing any property from falling into intestacy. Second, your WillDrafting account includes unlimited lifetime revisions in your secure digital vault. Whenever you buy real estate, open new bank accounts, or alter allocations, simply update your answers and generate a refreshed document at no additional cost.",
           },
         },
       ],
@@ -176,9 +180,9 @@ const JSON_LD = {
 const COMPARISON_ROWS = [
   {
     feature: "Pricing & Transparency",
-    willDrafting: "₹1,499 flat one-time (Zero subscriptions)",
-    lawyer: "₹25,000 – ₹50,000+ hourly retainers",
-    diy: "Free or ₹499 (often hidden renewals)",
+    willDrafting: "Transparent flat fee (Zero subscriptions)",
+    lawyer: "Hourly retainers & consultation fees",
+    diy: "Free or low-cost (often hidden renewals)",
   },
   {
     feature: "Completion Time",
@@ -213,7 +217,7 @@ const COMPARISON_ROWS = [
   {
     feature: "Future Amendments & Revisions",
     willDrafting: "Free lifetime revisions via digital vault",
-    lawyer: "₹10,000 – ₹20,000 per amendment",
+    lawyer: "Paid per amendment consultation",
     diy: "Must purchase new template each time",
   },
   {
@@ -249,7 +253,7 @@ const FAQS_DATA = [
   },
   {
     q: "What happens if I acquire new property or mutual funds after making my Will?",
-    a: "Every Will drafted on our platform includes an airtight 'Residuary Estate' clause that automatically covers any future acquired assets, preventing them from falling into intestate succession. Furthermore, your flat ₹1,499 license includes unlimited lifetime revisions in your secure digital vault. When your assets or family situation change, simply log in and generate an updated Will at no extra fee.",
+    a: "Every Will drafted on our platform includes an airtight 'Residuary Estate' clause that automatically covers any future acquired assets, preventing them from falling into intestate succession. Furthermore, your WillDrafting account includes unlimited lifetime revisions in your secure digital vault. When your assets or family situation change, simply log in and generate an updated Will at no extra fee.",
   },
   {
     q: "How does the Bar Council advocate verification work?",
@@ -318,7 +322,7 @@ export default function HowItWorksPage() {
                 </div>
                 <div className={styles.heroStatItem}>
                   <ShieldCheck size={16} className={styles.heroStatIcon} />
-                  <span>₹1,499 Flat One-Time (No Subscriptions)</span>
+                  <span>Transparent & Affordable (No Subscriptions)</span>
                 </div>
               </div>
             </div>
@@ -509,7 +513,7 @@ export default function HowItWorksPage() {
                 <thead>
                   <tr>
                     <th className={styles.colFeature}>Feature & Legal Safeguard</th>
-                    <th className={styles.colWillDrafting}>WillDrafting.in (₹1,499)</th>
+                    <th className={styles.colWillDrafting}>WillDrafting.in</th>
                     <th className={styles.colLawyer}>Traditional Law Firm</th>
                     <th className={styles.colDIY}>Generic Word Template</th>
                   </tr>
@@ -561,12 +565,12 @@ export default function HowItWorksPage() {
                 Protect Your Family&apos;s Future in the Next 15 Minutes
               </h2>
               <p className={styles.ctaSubtitle}>
-                No advocate retainers. No complex legal paperwork. Answer guided questions, receive court-vetted testamentary clauses, and secure your life&apos;s hard-earned assets for a flat ₹1,499 one-time fee.
+                No advocate retainers. No complex legal paperwork. Answer guided questions, receive court-vetted testamentary clauses, and secure your life&apos;s hard-earned assets with complete legal certainty.
               </p>
 
               <div className={styles.ctaActions}>
                 <Link href="/start" className={styles.primaryCta}>
-                  <span>Start My Will Now (₹1,499)</span>
+                  <span>Start My Will Now</span>
                   <ArrowRight size={16} />
                 </Link>
                 <Link href="/pricing" className={styles.secondaryCta}>

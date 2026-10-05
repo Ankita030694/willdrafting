@@ -33,24 +33,50 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
   if (!article) {
     return {
-      title: "Article Not Found | WillDrafting.in",
+      title: "Article Not Found",
+      robots: { index: false, follow: false },
     };
   }
 
+  const metaDesc =
+    article.lead.length > 155
+      ? `${article.lead.slice(0, 152)}...`
+      : article.lead;
+
+  const canonicalUrl = `https://www.willdrafting.in/blogs/${article.slug}`;
+  const imageUrl = article.imageSrc.startsWith("http")
+    ? article.imageSrc
+    : `https://www.willdrafting.in${article.imageSrc.startsWith("/") ? "" : "/"}${article.imageSrc}`;
+
   return {
-    title: `${article.title} | WillDrafting.in Journal`,
-    description: article.lead,
+    title: article.title,
+    description: metaDesc,
+    alternates: {
+      canonical: canonicalUrl,
+    },
     openGraph: {
-      title: article.title,
-      description: article.lead,
+      title: `${article.title} | WillDrafting.in`,
+      description: metaDesc,
+      url: canonicalUrl,
+      siteName: "WillDrafting.in",
+      locale: "en_IN",
+      type: "article",
+      publishedTime: new Date(article.date).toISOString(),
+      authors: [article.author],
       images: [
         {
-          url: article.imageSrc,
+          url: imageUrl,
           width: 1200,
           height: 630,
           alt: article.title,
         },
       ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${article.title} | WillDrafting.in`,
+      description: metaDesc,
+      images: [imageUrl],
     },
   };
 }
@@ -63,10 +89,71 @@ export default async function BlogSlugPage({ params }: PageProps) {
     notFound();
   }
 
+  const canonicalUrl = `https://www.willdrafting.in/blogs/${article.slug}`;
+  const imageUrl = article.imageSrc.startsWith("http")
+    ? article.imageSrc
+    : `https://www.willdrafting.in${article.imageSrc.startsWith("/") ? "" : "/"}${article.imageSrc}`;
+
+  const articleSchema = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Article",
+        "@id": `${canonicalUrl}#article`,
+        "isPartOf": {
+          "@type": "WebPage",
+          "@id": canonicalUrl,
+        },
+        "headline": article.title,
+        "description": article.lead,
+        "image": imageUrl,
+        "datePublished": new Date(article.date).toISOString(),
+        "dateModified": new Date(article.date).toISOString(),
+        "mainEntityOfPage": canonicalUrl,
+        "author": {
+          "@type": "Person",
+          "name": article.author,
+          "jobTitle": article.authorRole,
+        },
+        "publisher": {
+          "@id": "https://www.willdrafting.in/#organization",
+        },
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": `${canonicalUrl}#breadcrumb`,
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.willdrafting.in",
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Blogs & Insights",
+            "item": "https://www.willdrafting.in/blogs",
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": article.title,
+            "item": canonicalUrl,
+          },
+        ],
+      },
+    ],
+  };
+
   const relatedArticles = getRelatedArticles(article.slug, 3);
 
   return (
     <div className="min-h-screen flex flex-col bg-[#FAF7F0] text-[#172228]">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
       <Navbar />
 
       {/* =========================================================================

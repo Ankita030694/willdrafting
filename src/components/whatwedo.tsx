@@ -24,7 +24,7 @@ const services: ServiceCard[] = [
       <div className="relative w-full h-full flex items-center justify-center">
         <Image
           src="/new1servcie.png"
-          alt="Online Wills"
+          alt="Online Will Drafting Service under Indian Succession Act 1925"
           fill
           priority
           sizes="(max-width: 768px) 100vw, 50vw"
@@ -42,7 +42,7 @@ const services: ServiceCard[] = [
       <div className="relative w-full h-full flex items-center justify-center">
         <Image
           src="/comingsoon.png"
-          alt="Coming Soon"
+          alt="Power of Attorney and Private Trust Advisory Services in India"
           fill
           priority
           sizes="(max-width: 768px) 100vw, 50vw"

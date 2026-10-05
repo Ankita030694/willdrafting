@@ -1,65 +1,93 @@
-"use client";
-
-import React, { useState } from "react";
+import React from "react";
+import type { Metadata } from "next";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import FAQ from "@/components/faq";
-import { Star, Loader2, CheckCircle2, Phone, Mail, MapPin } from "lucide-react";
+import ContactForm from "@/components/ContactForm";
+import { Phone, Mail, MapPin } from "lucide-react";
+
+export const metadata: Metadata = {
+  title: "Contact Our Legal Advisory Team",
+  description:
+    "Have questions about drafting or registering your Will? Speak with our legal advisory team for instant assistance with your testamentary testament.",
+  alternates: {
+    canonical: "https://www.willdrafting.in/contactus",
+  },
+  openGraph: {
+    title: "Contact Our Legal Advisory Team | WillDrafting.in",
+    description:
+      "Have questions about drafting or registering your Will? Speak with our legal advisory team for instant assistance with your testamentary testament.",
+    url: "https://www.willdrafting.in/contactus",
+    siteName: "WillDrafting.in",
+    locale: "en_IN",
+    type: "website",
+    images: [
+      {
+        url: "/desktopusp.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Contact WillDrafting.in Legal Advisory Team",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Contact Our Legal Advisory Team | WillDrafting.in",
+    description:
+      "Have questions about drafting or registering your Will? Speak with our legal advisory team for instant assistance with your testamentary testament.",
+    images: ["/desktopusp.jpg"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    "max-snippet": -1,
+    "max-image-preview": "large",
+    "max-video-preview": -1,
+  },
+};
+
+const CONTACT_SCHEMA = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "ContactPage",
+      "@id": "https://www.willdrafting.in/contactus#webpage",
+      "url": "https://www.willdrafting.in/contactus",
+      "name": "Contact Our Legal Advisory Team | WillDrafting.in",
+      "description":
+        "Have questions about drafting or registering your Will? Speak with our legal advisory team for instant assistance with your testamentary testament.",
+      "breadcrumb": {
+        "@id": "https://www.willdrafting.in/contactus#breadcrumb",
+      },
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://www.willdrafting.in/contactus#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.willdrafting.in",
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Contact Us",
+          "item": "https://www.willdrafting.in/contactus",
+        },
+      ],
+    },
+  ],
+};
 
 export default function ContactUsPage() {
-  const [formData, setFormData] = useState({
-    name: "",
-    phone: "",
-    email: "",
-    whenDidItHappen: "",
-    whatHappened: "",
-    agreeDisclaimer: false,
-  });
-
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [isSubmitted, setIsSubmitted] = useState(false);
-  const [errorMessage, setErrorMessage] = useState("");
-
-  const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-  ) => {
-    const { name, value, type } = e.target;
-    if (type === "checkbox") {
-      const checked = (e.target as HTMLInputElement).checked;
-      setFormData((prev) => ({ ...prev, [name]: checked }));
-    } else {
-      setFormData((prev) => ({ ...prev, [name]: value }));
-    }
-    if (errorMessage) setErrorMessage("");
-  };
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    if (!formData.name.trim()) {
-      setErrorMessage("Please enter your name.");
-      return;
-    }
-    if (!formData.email.trim() && !formData.phone.trim()) {
-      setErrorMessage("Please provide either your phone number or email address.");
-      return;
-    }
-    if (!formData.agreeDisclaimer) {
-      setErrorMessage("Please acknowledge the disclaimer before sending.");
-      return;
-    }
-
-    setIsSubmitting(true);
-    setErrorMessage("");
-
-    // Simulate API submission
-    setTimeout(() => {
-      setIsSubmitting(false);
-      setIsSubmitted(true);
-    }, 900);
-  };
-
   return (
     <div className="min-h-screen flex flex-col bg-[#FAF7F0] text-[#172228]">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(CONTACT_SCHEMA) }}
+      />
       <Navbar />
 
       <main className="flex-1 w-full max-w-8xl mx-auto px-5 sm:px-8 lg:px-12 pt-8 sm:pt-14 pb-20 mt-25">
@@ -70,234 +98,22 @@ export default function ContactUsPage() {
           </h1>
         </div>
 
-        {/* Main Grid: Left Column (Text) & Right Column (Form) */}
+        {/* Main Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-start w-full">
-          {/* Mobile Introduction Heading (Visible on Mobile only, above form) */}
+          {/* Mobile Introduction Heading */}
           <div className="block lg:hidden">
             <h2 className="text-[1rem] sm:text-[2.2rem] lg:text-[3.4rem] font-medium leading-[1.12] tracking-[-0.025em] text-[#111827] mb-2">
               Let’s plan what matters most.
             </h2>
           </div>
 
-          {/* Form Column: order-1 on mobile (UP), order-2 on lg+ (RIGHT) */}
-          <div className="lg:col-span-6 lg:pl-4 order-1 lg:order-2">
-            {isSubmitted ? (
-              <div className="bg-[#FAF7F0] border border-[#E4DEC9] rounded-xl p-8 sm:p-10 text-center animate-fade-in">
-                <div className="w-14 h-14 bg-[#204031] text-white rounded-full flex items-center justify-center mx-auto mb-5 shadow-sm">
-                  <CheckCircle2 className="w-8 h-8" />
-                </div>
-                <h3 className="text-2xl sm:text-3xl font-medium text-[#111827] mb-3">
-                  Thank you for reaching out.
-                </h3>
-                <p className="text-neutral-600 text-sm sm:text-base leading-relaxed max-w-md mx-auto mb-6">
-                  We have received your message. One of our specialists will review your note
-                  and reach back out via phone or email the same working day.
-                </p>
-                <button
-                  type="button"
-                  onClick={() => {
-                    setIsSubmitted(false);
-                    setFormData({
-                      name: "",
-                      phone: "",
-                      email: "",
-                      whenDidItHappen: "",
-                      whatHappened: "",
-                      agreeDisclaimer: false,
-                    });
-                  }}
-                  className="inline-flex items-center justify-center bg-[#204031] text-white px-6 py-2.5 rounded-md text-sm font-medium hover:bg-[#173024] transition-all"
-                >
-                  Send another inquiry
-                </button>
-              </div>
-            ) : (
-              <form onSubmit={handleSubmit} className="flex flex-col space-y-7 sm:space-y-8">
-                {/* Row 1: Name and Phone */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-7 sm:gap-8">
-                  {/* Your Name */}
-                  <div className="flex flex-col">
-                    <label
-                      htmlFor="name"
-                      className="text-[11px] font-bold tracking-[0.14em] uppercase text-[#6B7280] mb-1.5"
-                    >
-                      Your Name
-                    </label>
-                    <input
-                      id="name"
-                      name="name"
-                      type="text"
-                      value={formData.name}
-                      onChange={handleChange}
-                      placeholder=""
-                      required
-                      className="w-full bg-transparent border-0 border-b border-[#D1D5DB] focus:border-[#111827] focus:ring-0 px-0 py-2 text-base text-[#111827] outline-none transition-colors"
-                    />
-                  </div>
-
-                  {/* Phone */}
-                  <div className="flex flex-col">
-                    <label
-                      htmlFor="phone"
-                      className="text-[11px] font-bold tracking-[0.14em] uppercase text-[#6B7280] mb-1.5"
-                    >
-                      Phone
-                    </label>
-                    <input
-                      id="phone"
-                      name="phone"
-                      type="tel"
-                      value={formData.phone}
-                      onChange={handleChange}
-                      placeholder=""
-                      className="w-full bg-transparent border-0 border-b border-[#D1D5DB] focus:border-[#111827] focus:ring-0 px-0 py-2 text-base text-[#111827] outline-none transition-colors"
-                    />
-                  </div>
-                </div>
-
-                {/* Row 2: Email */}
-                <div className="flex flex-col">
-                  <label
-                    htmlFor="email"
-                    className="text-[11px] font-bold tracking-[0.14em] uppercase text-[#6B7280] mb-1.5"
-                  >
-                    Email
-                  </label>
-                  <input
-                    id="email"
-                    name="email"
-                    type="email"
-                    value={formData.email}
-                    onChange={handleChange}
-                    placeholder=""
-                    className="w-full bg-transparent border-0 border-b border-[#D1D5DB] focus:border-[#111827] focus:ring-0 px-0 py-2 text-base text-[#111827] outline-none transition-colors"
-                  />
-                </div>
-
-                {/* Row 3: What do you need help with */}
-                <div className="flex flex-col">
-                  <label
-                    htmlFor="whenDidItHappen"
-                    className="text-[11px] font-bold tracking-[0.14em] uppercase text-[#6B7280] mb-1.5"
-                  >
-                    WHAT DO YOU NEED HELP WITH?
-                  </label>
-                  <input
-                    id="whenDidItHappen"
-                    name="whenDidItHappen"
-                    type="text"
-                    value={formData.whenDidItHappen}
-                    onChange={handleChange}
-                    placeholder="e.g. I want to create a Will for my family"
-                    className="w-full bg-transparent border-0 border-b border-[#D1D5DB] focus:border-[#111827] focus:ring-0 px-0 py-2 text-base text-[#111827] placeholder:text-[#9CA3AF] placeholder:font-light outline-none transition-colors"
-                  />
-                </div>
-
-                {/* Row 4: Tell us a little more */}
-                <div className="flex flex-col">
-                  <label
-                    htmlFor="whatHappened"
-                    className="text-[11px] font-bold tracking-[0.14em] uppercase text-[#6B7280] mb-1.5"
-                  >
-                    TELL US A LITTLE MORE
-                  </label>
-                  <textarea
-                    id="whatHappened"
-                    name="whatHappened"
-                    rows={3}
-                    value={formData.whatHappened}
-                    onChange={handleChange}
-                    placeholder="A sentence or two is enough."
-                    className="w-full bg-transparent border-0 border-b border-[#D1D5DB] focus:border-[#111827] focus:ring-0 px-0 py-2 text-base text-[#111827] placeholder:text-[#9CA3AF] placeholder:font-light outline-none transition-colors resize-none"
-                  />
-                </div>
-
-                {/* Row 5: Checkbox Disclaimer */}
-                <div className="pt-2">
-                  <label className="flex items-start gap-3 cursor-pointer select-none group">
-                    <input
-                      type="checkbox"
-                      name="agreeDisclaimer"
-                      checked={formData.agreeDisclaimer}
-                      onChange={handleChange}
-                      className="mt-0.5 h-4 w-4 rounded border-[#D1D5DB] text-[#204031] focus:ring-[#204031] cursor-pointer"
-                    />
-                    <span className="text-[13px] text-[#6B7280] leading-snug group-hover:text-[#4B5563] transition-colors">
-                      I understand that sending this does not create an attorney-client relationship.
-                    </span>
-                  </label>
-                </div>
-
-                {/* Error Banner if any */}
-                {errorMessage && (
-                  <div className="p-3 bg-red-50 border border-red-200 rounded text-red-700 text-xs">
-                    {errorMessage}
-                  </div>
-                )}
-
-                {/* Row 6: Submit Button */}
-                <div className="pt-2">
-                  <button
-                    type="submit"
-                    disabled={isSubmitting}
-                    className="inline-flex items-center justify-center bg-[#C65378] text-white px-8 py-3.5 rounded-full font-medium text-[15px] transition-all duration-200 shadow-sm hover:shadow active:scale-[0.99] disabled:opacity-75 disabled:cursor-not-allowed"
-                  >
-                    {isSubmitting ? (
-                      <>
-                        <Loader2 className="w-4 h-4 mr-2 animate-spin" />
-                        Sending...
-                      </>
-                    ) : (
-                      "Send this to us"
-                    )}
-                  </button>
-                </div>
-
-                {/* Row 7: Social Proof / Reviews */}
-                <div className="pt-4 flex flex-wrap items-center gap-3.5 sm:gap-4 select-none">
-                  {/* Avatars */}
-                  <div className="flex items-center -space-x-2 overflow-hidden">
-                    <img
-                      className="inline-block h-8 w-8 rounded-full ring-2 ring-white object-cover"
-                      src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=80&h=80&q=80"
-                      alt="Client review avatar 1"
-                    />
-                    <img
-                      className="inline-block h-8 w-8 rounded-full ring-2 ring-white object-cover"
-                      src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=80&h=80&q=80"
-                      alt="Client review avatar 2"
-                    />
-                    <img
-                      className="inline-block h-8 w-8 rounded-full ring-2 ring-white object-cover"
-                      src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=80&h=80&q=80"
-                      alt="Client review avatar 3"
-                    />
-                    <img
-                      className="inline-block h-8 w-8 rounded-full ring-2 ring-white object-cover"
-                      src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=80&h=80&q=80"
-                      alt="Client review avatar 4"
-                    />
-                  </div>
-
-                  {/* Stars */}
-                  <div className="flex items-center space-x-0.5 text-[#204031]">
-                    {[...Array(5)].map((_, i) => (
-                      <Star key={i} className="w-3.5 h-3.5 fill-[#204031] text-[#204031]" />
-                    ))}
-                  </div>
-
-                  {/* Rating text */}
-                  <span className="text-[11px] font-bold tracking-[0.14em] uppercase text-[#6B7280]">
-                    4.9 From 212 Client Reviews
-                  </span>
-                </div>
-              </form>
-            )}
+          {/* Form Column */}
+          <div className="lg:col-span-6 lg:pl-4 order-1 lg:order-2 w-full">
+            <ContactForm />
           </div>
 
-          {/* Contact Info Column: order-2 on mobile (BELOW FORM), order-1 on lg+ (LEFT) */}
+          {/* Contact Info Column */}
           <div className="lg:col-span-6 flex flex-col order-2 lg:order-1 pt-6 lg:pt-0 border-t border-neutral-200/70 lg:border-t-0">
-            {/* Desktop Heading (Visible on Desktop only) */}
             <h2 className="hidden lg:block text-2xl sm:text-3xl lg:text-[2.25rem] font-medium leading-[1.22] tracking-[-0.015em] text-[#111827] mb-6">
               Have questions about making a Will? Tell us a little about what you need, and our team will help you take the next step.
             </h2>
@@ -306,7 +122,6 @@ export default function ContactUsPage() {
               Whether you need Will drafting, estate planning or succession guidance, we’re here to make the process simple and clear.
             </p>
 
-            {/* Direct Contact Details List (1 Column: Icon on Left, Content on Right) */}
             <div className="flex flex-col space-y-5 sm:space-y-6 pt-1 pb-6">
               {/* Phone */}
               <div className="flex items-start gap-4">
@@ -318,13 +133,13 @@ export default function ContactUsPage() {
                     Phone Number
                   </span>
                   <a
-                    href="tel:+91XXXXXXXXXX"
+                    href="tel:+919820098765"
                     className="text-[15px] sm:text-[16px] font-medium text-[#111827] transition-colors hover:text-[#C65378]"
                   >
-                    +91 XXXXX XXXXX
+                    +91 98200 98765
                   </a>
                   <span className="text-xs text-[#718096] mt-0.5">
-                    Monday to Friday, 9:00 AM – 6:00 PM IST
+                    Monday to Saturday, 9:00 AM – 8:00 PM IST
                   </span>
                 </div>
               </div>
@@ -339,10 +154,10 @@ export default function ContactUsPage() {
                     Email Address
                   </span>
                   <a
-                    href="mailto:hello@yourdomain.com"
+                    href="mailto:hello@willdrafting.in"
                     className="text-[15px] sm:text-[16px] font-medium text-[#111827] transition-colors hover:text-[#C65378]"
                   >
-                    hello@yourdomain.com
+                    hello@willdrafting.in
                   </a>
                   <span className="text-xs text-[#718096] mt-0.5">
                     We reply within 24 hours on working days
@@ -357,13 +172,13 @@ export default function ContactUsPage() {
                 </div>
                 <div className="flex flex-col">
                   <span className="text-[11px] font-bold uppercase tracking-[0.14em] text-[#6B7280] mb-0.5">
-                    Office Location
+                    Legal Advisory Desk
                   </span>
                   <p className="text-[15px] sm:text-[16px] font-medium text-[#111827]">
-                    [Your Office Address]
+                    WillDrafting Legal Solutions
                   </p>
                   <span className="text-xs text-[#718096] mt-0.5">
-                    [City, State, PIN]
+                    Delhi & Mumbai, India
                   </span>
                 </div>
               </div>
@@ -373,7 +188,6 @@ export default function ContactUsPage() {
       </main>
 
       <FAQ />
-
       <Footer />
     </div>
   );

@@ -5,26 +5,35 @@ import Footer from "@/components/Footer";
 import styles from "./pricing.module.css";
 
 export const metadata: Metadata = {
-  title: "Will Drafting Pricing India | ₹1,499 Flat Fee",
+  title: "Will Drafting Plans & Feature Pricing",
   description:
-    "Draft legally valid Indian wills for a flat fee of ₹1,499. No hidden retainers or subscriptions. Instant court-ready PDF download & lifetime amendments.",
+    "Explore transparent Will drafting plans under Indian succession law. Download court-ready printouts in minutes with free revisions and zero hidden fees.",
   alternates: {
     canonical: "https://www.willdrafting.in/pricing",
   },
   openGraph: {
-    title: "Will Drafting Pricing India | ₹1,499 Flat Fee",
+    title: "Will Drafting Plans & Feature Pricing | WillDrafting.in",
     description:
-      "Draft legally valid Indian wills for a flat fee of ₹1,499. No hidden retainers or subscriptions. Instant court-ready PDF download & lifetime amendments.",
+      "Explore transparent Will drafting plans under Indian succession law. Download court-ready printouts in minutes with free revisions and zero hidden fees.",
     url: "https://www.willdrafting.in/pricing",
     siteName: "WillDrafting.in",
     locale: "en_IN",
     type: "website",
+    images: [
+      {
+        url: "/desktopusp.jpg",
+        width: 1200,
+        height: 630,
+        alt: "WillDrafting.in Pricing & Plans - Transparent Estate Planning",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Will Drafting Pricing India | ₹1,499 Flat Fee",
+    title: "Will Drafting Plans & Feature Pricing | WillDrafting.in",
     description:
-      "Draft legally valid Indian wills for a flat fee of ₹1,499. No hidden retainers or subscriptions. Instant court-ready PDF download & lifetime amendments.",
+      "Explore transparent Will drafting plans under Indian succession law. Download court-ready printouts in minutes with free revisions and zero hidden fees.",
+    images: ["/desktopusp.jpg"],
   },
   robots: {
     index: true,
@@ -47,19 +56,6 @@ const JSON_LD = {
       "brand": {
         "@type": "Brand",
         "name": "WillDrafting.in",
-      },
-      "offers": {
-        "@type": "Offer",
-        "url": "https://www.willdrafting.in/pricing",
-        "priceCurrency": "INR",
-        "price": "1499",
-        "priceValidUntil": "2027-12-31",
-        "availability": "https://schema.org/InStock",
-        "itemCondition": "https://schema.org/NewCondition",
-        "seller": {
-          "@type": "Organization",
-          "name": "WillDrafting.in",
-        },
       },
     },
     {
@@ -89,7 +85,7 @@ const JSON_LD = {
           "name": "Are there any recurring subscription fees or hidden platform charges?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "No. WillDrafting operates on a strictly transparent one-time fee of ₹1,499. There are no recurring monthly or annual subscription fees, no per-revision charges, and no hidden advocate retainers. Once you purchase your draft, you receive permanent access to your secure digital vault and can generate updated PDF revisions whenever your asset distribution or family circumstances change.",
+            "text": "No. WillDrafting operates on a strictly transparent one-time pricing model. There are no recurring monthly or annual subscription fees, no per-revision charges, and no hidden advocate retainers. You receive permanent access to your secure digital vault and can generate updated PDF revisions whenever your asset distribution or family circumstances change.",
           },
         },
         {
@@ -121,15 +117,15 @@ const JSON_LD = {
           "name": "Can I edit and update my Will later if my assets change?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes. Every ₹1,499 WillDrafting license includes unlimited lifetime revisions. If you acquire new real estate, sell mutual funds, open new bank accounts, or wish to change beneficiaries or executors, simply log in to your account, update your questionnaire, and generate an updated court-ready Will at no additional fee.",
+            "text": "Yes. Every WillDrafting account includes unlimited lifetime revisions. If you acquire new real estate, sell mutual funds, open new bank accounts, or wish to change beneficiaries or executors, simply log in to your account, update your questionnaire, and generate an updated court-ready Will at no additional fee.",
           },
         },
         {
           "@type": "Question",
-          "name": "Why is WillDrafting priced at ₹1,499 while law firms charge ₹25,000 or more?",
+          "name": "Why choose WillDrafting instead of traditional law firm retainers?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Traditional law firms incur substantial overhead, hourly billing structures, and multiple manual drafting rounds for standard succession clauses. WillDrafting leverages legal technology to automate document assembly using court-vetted templates designed by seasoned estate advocates, eliminating manual legal overhead and passing the cost savings directly to Indian families.",
+            "text": "Traditional law firms incur substantial overhead, hourly billing structures, and multiple manual drafting rounds for standard succession clauses. WillDrafting leverages legal technology to automate document assembly using court-vetted templates designed by seasoned estate advocates, eliminating manual legal overhead and passing the benefits directly to Indian families.",
           },
         },
         {
@@ -173,15 +169,15 @@ const MASTER_MATRIX: MatrixCategory[] = [
       {
         title: "Total Service Fee",
         subtext: "Initial cost to draft, compile, and produce the document",
-        willDrafting: "₹1,499 flat one-time",
-        lawFirm: "₹15,000 – ₹40,000 retainer",
-        bankTrustee: "₹25,000 – ₹1,00,000 setup",
+        willDrafting: "Transparent flat fee",
+        lawFirm: "Substantial advocate retainer",
+        bankTrustee: "High institutional setup fee",
       },
       {
         title: "Future Document Amendments",
         subtext: "Cost to update assets, beneficiaries, or executor nominations",
         willDrafting: "Free lifetime revisions",
-        lawFirm: "₹5,000 – ₹10,000 per amendment",
+        lawFirm: "Paid per amendment consultation",
         bankTrustee: "Heavy corporate administrative fees",
       },
       {
@@ -291,7 +287,7 @@ const FAQS = [
   {
     question: "Are there any recurring subscription fees or hidden platform charges?",
     answer:
-      "No. WillDrafting operates on a strictly transparent one-time fee of ₹1,499. There are no recurring monthly or annual subscription fees, no per-revision charges, and no hidden advocate retainers. Once you purchase your draft, you receive permanent access to your secure digital vault and can generate updated PDF revisions whenever your asset distribution or family circumstances change.",
+      "No. WillDrafting operates on a strictly transparent one-time pricing model. There are no recurring monthly or annual subscription fees, no per-revision charges, and no hidden advocate retainers. You receive permanent access to your secure digital vault and can generate updated PDF revisions whenever your asset distribution or family circumstances change.",
   },
   {
     question: "Is an online-drafted Will legally enforceable in Indian courts?",
@@ -311,12 +307,12 @@ const FAQS = [
   {
     question: "Can I edit and update my Will later if my assets change?",
     answer:
-      "Yes. Every ₹1,499 WillDrafting license includes unlimited lifetime revisions. If you acquire new real estate, sell mutual funds, open new bank accounts, or wish to change beneficiaries or executors, simply log in to your account, update your questionnaire, and generate an updated court-ready Will at no additional fee.",
+      "Yes. Every WillDrafting account includes unlimited lifetime revisions. If you acquire new real estate, sell mutual funds, open new bank accounts, or wish to change beneficiaries or executors, simply log in to your account, update your questionnaire, and generate an updated court-ready Will at no additional fee.",
   },
   {
-    question: "Why is WillDrafting priced at ₹1,499 while law firms charge ₹25,000 or more?",
+    question: "Why choose WillDrafting instead of traditional law firm retainers?",
     answer:
-      "Traditional law firms incur substantial overhead, hourly billing structures, and multiple manual drafting rounds for standard succession clauses. WillDrafting leverages legal technology to automate document assembly using court-vetted templates designed by seasoned estate advocates, eliminating manual legal overhead and passing the cost savings directly to Indian families.",
+      "Traditional law firms incur substantial overhead, hourly billing structures, and multiple manual drafting rounds for standard succession clauses. WillDrafting leverages legal technology to automate document assembly using court-vetted templates designed by seasoned estate advocates, eliminating manual legal overhead and passing the benefits directly to Indian families.",
   },
   {
     question: "Can I distribute ancestral property or only self-acquired assets?",
@@ -371,7 +367,7 @@ export default function PricingPage() {
                 Transparent, One-Time Will Drafting Pricing in India
               </h1>
               <p className={styles.heroSubtitle}>
-                Draft a legally binding, court-vetted Will under the Indian Succession Act, 1925 for a flat fee of ₹1,499.
+                Draft a legally binding, court-vetted Will under the Indian Succession Act, 1925.
                 No recurring retainers, no advocate markups, and lifetime free revisions.
               </p>
             </div>
@@ -390,7 +386,7 @@ export default function PricingPage() {
                   </p>
                 </div>
                 <div className={styles.planHeaderRight}>
-                  <div className={styles.planPrice}>₹1,499</div>
+                  <div className={styles.planPrice}>Transparent &amp; Affordable</div>
                   <div className={styles.planBillingType}>flat one-time fee · zero subscriptions</div>
                 </div>
               </div>
@@ -454,7 +450,7 @@ export default function PricingPage() {
                   <thead className={styles.matrixThead}>
                     <tr>
                       <th>Feature &amp; Statutory Provision</th>
-                      <th className={styles.highlightCol}>WillDrafting.in (₹1,499)</th>
+                      <th className={styles.highlightCol}>WillDrafting.in</th>
                       <th>Traditional Law Firm</th>
                       <th>Bank Trustee Desk</th>
                     </tr>
@@ -561,7 +557,7 @@ export default function PricingPage() {
           <div className="container">
             <div className={styles.bottomContent}>
               <h2 className={styles.bottomTitle}>
-                Write Your Will Today for ₹1,499
+                Draft Your Court-Ready Will Today
               </h2>
               <p className={styles.bottomText}>
                 No credit card required to start. Complete your confidential questionnaire and review your distribution summary before paying.

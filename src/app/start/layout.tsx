@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
-import AdminShell from "@/components/admin/AdminShell";
 
 export const metadata: Metadata = {
-  title: "Authority Portal",
+  title: "Will Drafting Questionnaire",
   robots: {
     index: false,
     follow: false,
@@ -10,10 +9,10 @@ export const metadata: Metadata = {
   },
 };
 
-export default function AuthorityLayout({
+export default function StartLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
-  return <AdminShell>{children}</AdminShell>;
+  return children;
 }

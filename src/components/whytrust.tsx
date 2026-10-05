@@ -43,7 +43,7 @@ export default function WhyTrust() {
           <div className="absolute inset-0 block md:hidden">
             <Image
               src="/mobileusp.jpg"
-              alt="Why trust us background"
+              alt="Why Indian families trust WillDrafting for lawyer-verified estate planning"
               fill
               priority
               sizes="100vw"
@@ -55,7 +55,7 @@ export default function WhyTrust() {
           <div className="absolute inset-0 hidden md:block">
             <Image
               src="/desktopusp.jpg"
-              alt="Why trust us background"
+              alt="Bank-grade encrypted online Will drafting and estate succession platform in India"
               fill
               priority
               sizes="(max-width: 1440px) 100vw, 1400px"

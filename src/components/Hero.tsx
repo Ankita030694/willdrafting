@@ -17,7 +17,7 @@ export default function Hero() {
         <div className="hidden md:block relative w-full h-full md:min-h-full bg-[#FAF7F0]">
           <Image
             src="/images/heronewnewnew.svg"
-            alt="Hero illustration"
+            alt="Legally valid online will drafting and estate protection platform in India"
             fill
             priority
             sizes="(max-width: 768px) 100vw, 50vw"
@@ -47,9 +47,6 @@ export default function Hero() {
               margin: "auto 0",
             }}
           >
-            <span className="block text-[0.7rem] sm:text-xs font-bold tracking-[0.2em] uppercase text-[#C65378] mb-3 sm:mb-4">
-              ONLINE WILL DRAFTING IN INDIA
-            </span>
             <h1
               className="text-[2.2rem] sm:text-[3rem] lg:text-[3.4rem] font-medium leading-[1.08] tracking-[-0.025em] text-[#172228] mb-4 sm:mb-6"
             >
@@ -128,7 +125,7 @@ export default function Hero() {
               <div className="flex items-center gap-2.5">
                 <Image
                   src="/ggle.png"
-                  alt="Google"
+                  alt="Google Reviews rating 4.9 stars for WillDrafting.in"
                   width={80}
                   height={28}
                   className="object-contain"
@@ -146,7 +143,7 @@ export default function Hero() {
               <div className="flex items-center gap-2.5">
                 <Image
                   src="/trustpilot.svg"
-                  alt="Trustpilot"
+                  alt="Trustpilot 5 star rating for WillDrafting.in"
                   width={100}
                   height={28}
                   className="object-contain"
@@ -167,7 +164,7 @@ export default function Hero() {
         <div className="block md:hidden relative w-full h-[400px] bg-[#FAF7F0] mt-2">
           <Image
             src="/images/heronewnewnew.svg"
-            alt="Hero illustration"
+            alt="Court-ready legal will drafting preview on mobile device"
             fill
             sizes="100vw"
             className="object-contain object-bottom"

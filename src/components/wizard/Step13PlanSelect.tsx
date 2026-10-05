@@ -27,7 +27,7 @@ export default function Step13PlanSelect({
     {
       id: "essential" as const,
       name: "Essential Will",
-      price: "₹ 1,499",
+      price: "Self-Guided Plan",
       desc: "Official automated Will draft complying with Indian succession rules.",
       features: [
         "Full Legal Will Document (PDF)",
@@ -40,7 +40,7 @@ export default function Step13PlanSelect({
     {
       id: "lawyer_verified" as const,
       name: "Lawyer Verified Will",
-      price: "₹ 3,999",
+      price: "Advocate Verified",
       desc: "Line-by-line review and digital certification by a qualified Bar Council estate planning advocate.",
       features: [
         "Everything in Essential",
@@ -54,7 +54,7 @@ export default function Step13PlanSelect({
     {
       id: "premium" as const,
       name: "Comprehensive Estate Plan",
-      price: "₹ 8,999",
+      price: "Estate Strategy Plan",
       desc: "Dedicated senior advocate strategy session, family trust structuring, and Sub-Registrar support.",
       features: [
         "Everything in Lawyer Verified",
