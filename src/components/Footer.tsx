@@ -44,7 +44,7 @@ export default function Footer() {
               </Link>
 
               <p className="text-[0.925rem] leading-[1.65] text-[#55636D] max-w-[340px] mb-8">
-                Clear, legally binding Will drafting and succession planning under the Indian Succession Act, 1925. Protect your family and assets with ease.
+                Clear, legally binding Will drafting and succession planning under Indian succession law. Protect your family and assets with ease.
               </p>
             </div>
 
@@ -103,7 +103,7 @@ export default function Footer() {
             </p>
             <ul className="space-y-3.5 text-[0.90rem]">
               <li>
-                <Link href="/start" className="hover:text-[#172228] transition-colors">
+                <Link href="/contact" className="hover:text-[#172228] transition-colors">
                   Draft Online Will in Minutes
                 </Link>
               </li>
@@ -118,12 +118,12 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/contactus" className="hover:text-[#172228] transition-colors">
+                <Link href="/contact" className="hover:text-[#172228] transition-colors">
                   Will Registration Guidance
                 </Link>
               </li>
               <li>
-                <Link href="/contactus" className="hover:text-[#172228] transition-colors">
+                <Link href="/contact" className="hover:text-[#172228] transition-colors">
                   Probate & Succession Advice
                 </Link>
               </li>
@@ -165,11 +165,11 @@ export default function Footer() {
           </div>
 
           <div className="text-center">
-            Compliant with Section 63, Indian Succession Act, 1925
+            Compliant with Statutory Indian Legal Standards
           </div>
 
           <div className="text-right">
-            <Link href="/contactus" className="hover:underline">
+            <Link href="/contact" className="hover:underline">
               Terms & Legal Disclaimer
             </Link>
           </div>

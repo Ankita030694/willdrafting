@@ -446,8 +446,8 @@ function WizardContent() {
           <span style={{ opacity: 0.6 }}>•</span>
           <span style={{ fontWeight: 500 }}>
             {lang === "hi"
-              ? "भारतीय उत्तराधिकार अधिनियम 1925 • ISA §30 मान्य"
-              : "Indian Succession Act 1925 • ISA §30 Compliant"}
+              ? "भारतीय उत्तराधिकार कानून • 100% मान्य"
+              : "Indian Succession Law • 100% Compliant"}
           </span>
         </footer>
       </div>

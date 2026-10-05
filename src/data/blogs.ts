@@ -198,7 +198,7 @@ export const BLOG_ARTICLES: BlogArticle[] = [
     category: "Succession Law",
     readTime: "6 min",
     title: "Is a Will valid on plain paper in India? The legal truth",
-    lead: "Under Section 63 of the Indian Succession Act, 1925, a will does not require expensive non-judicial stamp paper or mandatory registration to be completely legal.",
+    lead: "Under Indian succession law, a will does not require expensive non-judicial stamp paper or mandatory registration to be completely legal.",
     date: "July 15, 2026",
     imageSrc: "/images/service-hero.jpg",
     author: "Advocate Rajeshwar Rao",
@@ -214,7 +214,7 @@ export const BLOG_ARTICLES: BlogArticle[] = [
         heading: "The widespread myth of stamp paper in Indian estates",
         paragraphs: [
           "One of the most persistent misconceptions in Indian estate planning is that a Will has no legal standing unless it is typed on high-value non-judicial stamp paper or notarized with official red ribbons.",
-          "The legal truth is straightforward: Section 63 of the Indian Succession Act, 1925 governs the execution of unprivileged wills in India. The Act nowhere mandates stamp paper, judicial bonds, or notarization. A Will drafted legibly on plain white A4 paper carries identical testamentary validity to one drafted on court parchment.",
+          "The legal truth is straightforward: Indian succession law governs the execution of wills in India and nowhere mandates stamp paper, judicial bonds, or notarization. A Will drafted legibly on plain white A4 paper carries identical testamentary validity to one drafted on court parchment.",
         ],
       },
       {
@@ -242,7 +242,7 @@ export const BLOG_ARTICLES: BlogArticle[] = [
       "Store the original executed copy in a secure location and notify your nominated executor",
     ],
     disclaimer:
-      "This guidance is grounded in the Indian Succession Act, 1925 and the Registration Act, 1908. Specific community rules (such as Hindu Succession Act or Muslim personal laws) may govern particular testamentary quotas.",
+      "This guidance is grounded in Indian succession law and the Registration Act, 1908. Specific community rules (such as Hindu Succession Act or Muslim personal laws) may govern particular testamentary quotas.",
   },
   {
     id: "5",
@@ -342,7 +342,7 @@ export const BLOG_ARTICLES: BlogArticle[] = [
       "Execute a comprehensive Will to eliminate the costly requirement for a succession certificate",
     ],
     disclaimer:
-      "Succession rules vary significantly between religious personal laws in India. This overview reflects general principles of the Indian Succession Act, 1925 and Hindu Succession Act, 1956.",
+      "Succession rules vary significantly between religious personal laws in India. This overview reflects general principles of Indian succession law and Hindu Succession Act, 1956.",
   },
 ];
 

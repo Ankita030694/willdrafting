@@ -25,7 +25,7 @@ export default function ExecutionGuideTab({ state }: ExecutionGuideTabProps) {
     {
       num: "02",
       title: "Signature on Every Page",
-      tag: "Section 63(a), ISA 1925",
+      tag: "Statutory Execution Standard",
       explanation:
         "The Testator should sign or initial at the bottom right corner of every single sheet of the Will. The full signature must be appended at the end of the Testimonium block on the final page.",
     },
@@ -39,7 +39,7 @@ export default function ExecutionGuideTab({ state }: ExecutionGuideTabProps) {
     {
       num: "04",
       title: "Witnesses Must NOT Be Beneficiaries",
-      tag: "Section 67, ISA 1925",
+      tag: "Statutory Conflict Rule",
       explanation:
         "CRITICAL: If a beneficiary or the spouse of a beneficiary signs as an attesting witness, the bequest to that person becomes completely void under Indian law. Choose independent friends, doctors, or colleagues.",
     },
@@ -91,7 +91,7 @@ export default function ExecutionGuideTab({ state }: ExecutionGuideTabProps) {
             How to Legally Execute Your Will in India
           </h2>
           <p style={{ color: "var(--text-muted)", fontSize: "0.95rem", margin: "0.5rem 0 0", maxWidth: "700px" }}>
-            A Will in India requires strict statutory compliance with Section 63 of the Indian Succession Act 1925 to be legally enforceable. Follow these 6 steps to ensure your wishes cannot be disputed.
+            A Will in India requires strict statutory compliance with Indian succession law to be legally enforceable. Follow these 6 steps to ensure your wishes cannot be disputed.
           </p>
         </div>
 

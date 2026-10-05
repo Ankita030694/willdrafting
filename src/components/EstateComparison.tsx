@@ -161,7 +161,7 @@ export default function EstateComparison() {
             ========================================================================= */}
         <div className="mt-10 sm:mt-12 text-center flex justify-center">
           <Link
-            href="/start"
+            href="/contact"
             className="inline-flex items-center justify-center gap-2 rounded-xl bg-[#C65378] px-7 py-3.5 text-[0.95rem] font-semibold text-white shadow-sm transition-all duration-200 hover:bg-[#9F3B5C] active:scale-95"
           >
             <span>Protect Your Family Today</span>

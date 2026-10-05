@@ -15,7 +15,7 @@ export default function robots(): MetadataRoute.Robots {
           "/pricing",
           "/blogs",
           "/blogs/*",
-          "/contactus",
+          "/contact",
         ],
         disallow: [
           "/start",

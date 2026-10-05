@@ -432,7 +432,7 @@ export default function VisualStepExecutors({
           <ShieldCheck size={20} color="#2E7D32" />
         </div>
         <div style={{ fontSize: "0.85rem", color: "#1B2A4A", lineHeight: 1.4 }}>
-          <strong>Section 222 Compliant (Indian Succession Act 1925):</strong> An executor can be a beneficiary under the Will (e.g. your spouse). Probate can be granted to an executor appointed either expressly or by necessary implication.
+          <strong>Statutory Executor Rule:</strong> An executor can be a beneficiary under the Will (e.g. your spouse). Probate can be granted to an executor appointed either expressly or by necessary implication.
         </div>
       </div>
 

@@ -179,7 +179,7 @@ export default function VisualWillWizard() {
             >
               <ShieldCheck size={16} color="#2E7D32" />
               <span style={{ fontSize: "0.78rem", fontWeight: 700, color: "#2E7D32" }}>
-                ISA 1925 Legal Shield Active
+                Statutory Legal Shield Active
               </span>
             </div>
 

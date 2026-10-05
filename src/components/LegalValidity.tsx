@@ -6,9 +6,9 @@ import Link from "next/link";
 
 const pillars = [
   {
-    code: "Section 63",
+    code: "Plain Paper",
     title: "Written on Plain Paper (No Stamp Duty)",
-    statute: "Indian Succession Act, 1925",
+    statute: "Statutory Exemption Rule",
     description:
       "Under Indian law, a will does NOT require non-judicial stamp paper or stamp duty. It can be legally printed on standard A4 plain white paper and signed with permanent ink.",
   },
@@ -184,7 +184,7 @@ export default function LegalValidity() {
             </div>
           </div>
 
-          <Link href="/start" className="btn btn-gold" style={{ padding: "0.85rem 1.85rem", fontWeight: 700 }}>
+          <Link href="/contact" className="btn btn-gold" style={{ padding: "0.85rem 1.85rem", fontWeight: 700 }}>
             <span>Start Legal Draft</span>
           </Link>
         </div>

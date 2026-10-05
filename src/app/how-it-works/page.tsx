@@ -64,7 +64,7 @@ const JSON_LD = {
       "@id": "https://www.willdrafting.in/how-it-works#howto",
       "name": "How to Create a Legally Binding Will in India Online",
       "description":
-        "A guided, step-by-step statutory process for compiling an enforceable testamentary Will under the Indian Succession Act, 1925.",
+        "A guided, step-by-step statutory process for compiling an enforceable testamentary Will under Indian law.",
       "totalTime": "PT15M",
       "step": [
         {
@@ -99,7 +99,7 @@ const JSON_LD = {
           "@type": "HowToStep",
           "position": 5,
           "name": "Automated 7-Point Legal Health Check",
-          "text": "The statutory rules engine audits for Section 67 witness disqualifications, 100% allocation balances, and ISA 1925 compliance.",
+          "text": "The statutory rules engine audits for witness disqualifications, 100% allocation balances, and legal compliance.",
           "url": "https://www.willdrafting.in/how-it-works#step-5",
         },
         {
@@ -145,7 +145,7 @@ const JSON_LD = {
           "name": "Is an online Will legally valid and enforceable in India?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes. Under Section 63 of the Indian Succession Act, 1925, Indian law does not mandate that a Will be drawn up by an offline law firm or on judicial stamp paper. Once our platform generates your court-vetted testamentary document, you print it on standard plain paper and sign it in the physical presence of two independent attesting witnesses. This satisfies all statutory requirements for 100% legal validity across all Indian High Courts.",
+            "text": "Yes. Under Indian law, it is not mandated that a Will be drawn up by an offline law firm or on judicial stamp paper. Once our platform generates your court-vetted testamentary document, you print it on standard plain paper and sign it in the physical presence of two independent attesting witnesses. This satisfies all statutory requirements for 100% legal validity across all Indian High Courts.",
           },
         },
         {
@@ -153,7 +153,7 @@ const JSON_LD = {
           "name": "Does an Indian Will require non-judicial stamp paper or court notary?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "No. Under the Indian Stamp Act, 1899 and the Indian Succession Act, 1925, Wills are entirely exempt from stamp duty anywhere in India. Printing on non-judicial stamp paper or getting a notary stamp does NOT increase validity. What the law strictly mandates is valid attestation by two competent witnesses who physically observe the testator signing.",
+            "text": "No. Under the Indian Stamp Act, 1899, Wills are entirely exempt from stamp duty anywhere in India. Printing on non-judicial stamp paper or getting a notary stamp does NOT increase validity. What the law strictly mandates is valid attestation by two competent witnesses who physically observe the testator signing.",
           },
         },
         {
@@ -161,7 +161,7 @@ const JSON_LD = {
           "name": "Can an Executor or Beneficiary act as an attesting witness?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "A beneficiary must NEVER sign as a witness. Under Section 67 of the Indian Succession Act, 1925, any bequest or legacy given to an attesting witness (or the spouse of a witness) is rendered completely void. While an executor who receives no beneficial interest can legally witness a Will in limited circumstances, WillDrafting's health check strictly recommends appointing two entirely independent witnesses (such as trusted friends, family doctors, or neighbors) to eliminate any conflict of interest.",
+            "text": "A beneficiary must NEVER sign as a witness. Any bequest or legacy given to an attesting witness (or the spouse of a witness) is rendered completely void under Indian law. While an executor who receives no beneficial interest can legally witness a Will in limited circumstances, WillDrafting's health check strictly recommends appointing two entirely independent witnesses (such as trusted friends, family doctors, or neighbors) to eliminate any conflict of interest.",
           },
         },
         {
@@ -192,7 +192,7 @@ const COMPARISON_ROWS = [
   },
   {
     feature: "Statutory Health Check",
-    willDrafting: "Automated 7-point rules engine (ISA 1925)",
+    willDrafting: "Automated 7-point rules engine (Statutory Compliance)",
     lawyer: "Manual review (subject to human oversight)",
     diy: "None (zero validation)",
   },
@@ -237,15 +237,15 @@ const COMPARISON_ROWS = [
 const FAQS_DATA = [
   {
     q: "Is an online Will legally valid and enforceable in India?",
-    a: "Yes. Under Section 63 of the Indian Succession Act, 1925, Indian law does not require a Will to be prepared by an offline law firm or printed on judicial stamp paper. Once our platform generates your court-vetted testamentary document, you print it on standard plain paper and sign it in the physical presence of two independent attesting witnesses. This satisfies every statutory requirement for 100% legal validity across all Indian courts.",
+    a: "Yes. Under Indian law, it is not required for a Will to be prepared by an offline law firm or printed on judicial stamp paper. Once our platform generates your court-vetted testamentary document, you print it on standard plain paper and sign it in the physical presence of two independent attesting witnesses. This satisfies every statutory requirement for 100% legal validity across all Indian courts.",
   },
   {
     q: "Do I need non-judicial stamp paper or court notary registration?",
-    a: "No. Under the Indian Stamp Act, 1899 and the Indian Succession Act, 1925, Wills are entirely exempt from stamp duty anywhere in India. Printing on stamp paper or getting a notary stamp does NOT enhance legal validity. The statutory core of a valid Will is the physical attestation by two competent witnesses who watch you sign and sign in each other's presence.",
+    a: "No. Under the Indian Stamp Act, 1899, Wills are entirely exempt from stamp duty anywhere in India. Printing on stamp paper or getting a notary stamp does NOT enhance legal validity. The statutory core of a valid Will is the physical attestation by two competent witnesses who watch you sign and sign in each other's presence.",
   },
   {
     q: "Can a beneficiary or executor act as an attesting witness?",
-    a: "A beneficiary must NEVER sign as a witness. Under Section 67 of the Indian Succession Act, 1925, any bequest or legacy given to an attesting witness (or their spouse) is rendered completely void in law! While an executor with no beneficial interest may witness in limited scenarios, our automated health check strictly mandates appointing two independent witnesses (such as trusted friends or neighbors) to eliminate any conflict of interest.",
+    a: "A beneficiary must NEVER sign as a witness. Any bequest or legacy given to an attesting witness (or their spouse) is rendered completely void in law! While an executor with no beneficial interest may witness in limited scenarios, our automated health check strictly mandates appointing two independent witnesses (such as trusted friends or neighbors) to eliminate any conflict of interest.",
   },
   {
     q: "What is the difference between a Nominee and a Beneficiary in a Will?",
@@ -257,7 +257,7 @@ const FAQS_DATA = [
   },
   {
     q: "How does the Bar Council advocate verification work?",
-    a: "Once our legal technology engine compiles your structured answers and passes the 7-point statutory health check, your draft is reviewed by verified, practicing estate advocates. The reviewing advocate inspects the document for formal sufficiency, clarity of bequests, absence of internal conflicts, and strict compliance with the Indian Succession Act, 1925 before final issuance.",
+    a: "Once our legal technology engine compiles your structured answers and passes the 7-point statutory health check, your draft is reviewed by verified, practicing estate advocates. The reviewing advocate inspects the document for formal sufficiency, clarity of bequests, absence of internal conflicts, and strict compliance with Indian succession law before final issuance.",
   },
 ];
 
@@ -303,7 +303,7 @@ export default function HowItWorksPage() {
                 How WillDrafting Works: From Simple Questions to a Court-Ready Will
               </h1>
               <p className={styles.heroSubtitle}>
-                You don&apos;t need legal knowledge or expensive advocate retainers. Answer plain-English questions about your family and assets. Our statutory engine compiles your wishes into court-vetted clauses, verified by practicing advocates under the Indian Succession Act, 1925.
+                You don&apos;t need legal knowledge or expensive advocate retainers. Answer plain-English questions about your family and assets. Our statutory engine compiles your wishes into court-vetted clauses, verified by practicing advocates under applicable Indian law.
               </p>
 
               {/* Trust & Metric Highlights */}
@@ -314,7 +314,7 @@ export default function HowItWorksPage() {
                 </div>
                 <div className={styles.heroStatItem}>
                   <Scale size={16} className={styles.heroStatIcon} />
-                  <span>ISA 1925 Section 63 Compliant</span>
+                  <span>100% Legally Compliant</span>
                 </div>
                 <div className={styles.heroStatItem}>
                   <Award size={16} className={styles.heroStatIcon} />
@@ -420,7 +420,7 @@ export default function HowItWorksPage() {
                 <span className={styles.pillarNumber}>Pillar 03 · Statutory Execution</span>
                 <h3 className={styles.pillarTitle}>Two-Witness Attestation & Vault</h3>
                 <p className={styles.pillarDesc}>
-                  A Will is only as valid as its signing ceremony. We equip you with a court-vetted execution kit following Section 63 of the ISA 1925, an optional Doctor&apos;s Sound Mind Certificate, and encrypted digital vault storage for lifetime revisions.
+                  A Will is only as valid as its signing ceremony. We equip you with a court-vetted execution kit following Indian statutory rules, an optional Doctor&apos;s Sound Mind Certificate, and encrypted digital vault storage for lifetime revisions.
                 </p>
                 <ul className={styles.pillarFeatures}>
                   <li className={styles.pillarFeatureItem}>
@@ -451,7 +451,7 @@ export default function HowItWorksPage() {
                   How to Make Your Will 100% Legally Binding in India
                 </h2>
                 <p className={styles.executionSubtitle}>
-                  Section 63 of the Indian Succession Act, 1925 establishes exact statutory rules for attestation. Follow these three steps to guarantee court enforceability:
+                  Indian law establishes exact statutory rules for attestation. Follow these three steps to guarantee court enforceability:
                 </p>
               </div>
 
@@ -569,7 +569,7 @@ export default function HowItWorksPage() {
               </p>
 
               <div className={styles.ctaActions}>
-                <Link href="/start" className={styles.primaryCta}>
+                <Link href="/contact" className={styles.primaryCta}>
                   <span>Start My Will Now</span>
                   <ArrowRight size={16} />
                 </Link>
@@ -583,7 +583,7 @@ export default function HowItWorksPage() {
                   <Check size={14} color="#C9A227" /> Free Unlimited Lifetime Revisions
                 </span>
                 <span className={styles.guaranteeItem}>
-                  <Check size={14} color="#C9A227" /> Indian Succession Act 1925 Compliant
+                  <Check size={14} color="#C9A227" /> 100% Legally Valid in Indian Courts
                 </span>
                 <span className={styles.guaranteeItem}>
                   <Check size={14} color="#C9A227" /> Bar Council Advocate Review

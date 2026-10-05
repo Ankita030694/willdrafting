@@ -116,7 +116,7 @@ const services: ServiceCard[] = [
     description:
       "Create a professionally structured legal Will online from the comfort of your home. Clearly document your wishes, protect your assets, provide for your family and children, and have your Will reviewed by WillDrafting Law.",
     linkText: "Write your Will",
-    linkHref: "/start",
+    linkHref: "/contact",
     illustrationSrc: "/new1servcie.png",
   },
   {
@@ -174,7 +174,7 @@ export default function ServicePage() {
                       src={service.illustrationSrc}
                       alt={
                         service.title === "Online Will Drafting"
-                          ? "Online Will Drafting under Indian Succession Act 1925"
+                          ? "Online Will Drafting under Indian Law"
                           : "Estate planning and Power of Attorney services coming soon"
                       }
                       fill
@@ -202,7 +202,7 @@ export default function ServicePage() {
                       </span>
                     ) : (
                       <Link
-                        href={service.linkHref || "/start"}
+                        href={service.linkHref || "/contact"}
                         className="inline-flex items-center gap-2 text-sm font-semibold text-[#111827] group/link hover:text-[#C65378] transition-colors"
                       >
                         <span>{service.linkText}</span>

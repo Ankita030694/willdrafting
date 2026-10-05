@@ -292,7 +292,7 @@ export default function UpdateWillTab({ state, onStateChange }: UpdateWillTabPro
               }}
             >
               <div style={{ fontWeight: 700, fontSize: "0.85rem", color: "var(--color-navy)", marginBottom: "0.35rem" }}>
-                Legal Context (Indian Succession Act 1925)
+                Legal Context (Statutory Rules)
               </div>
               <p style={{ margin: 0, fontSize: "0.85rem", color: "var(--color-charcoal)" }}>
                 {selectedEvent.legalImplication}

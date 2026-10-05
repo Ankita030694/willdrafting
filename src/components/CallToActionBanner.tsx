@@ -77,7 +77,7 @@ export default function CallToActionBanner() {
           </button>
 
           <Link
-            href="/login"
+            href="/contact"
             style={{
               color: "#FFFFFF",
               fontSize: "0.9rem",
@@ -87,7 +87,7 @@ export default function CallToActionBanner() {
               borderRadius: "var(--radius-md)",
             }}
           >
-            Existing Member Login
+            Speak to Legal Desk
           </Link>
         </div>
 

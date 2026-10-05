@@ -151,7 +151,7 @@ export default function GlobalPopup() {
           compact
           onSuccess={() => {
             setIsOpen(false);
-            router.push("/start");
+            router.push("/thank-you");
           }}
         />
       </div>

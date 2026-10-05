@@ -198,7 +198,7 @@ export default function WillPreviewSection() {
               <span style={{ fontSize: "0.8rem", color: "var(--text-muted)" }}>
                 Included in standard member draft
               </span>
-              <Link href="/start" style={{ fontSize: "0.85rem", fontWeight: 600, color: "var(--color-navy)" }}>
+              <Link href="/contact" style={{ fontSize: "0.85rem", fontWeight: 600, color: "var(--color-navy)" }}>
                 Draft your will now →
               </Link>
             </div>

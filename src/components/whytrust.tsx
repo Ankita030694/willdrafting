@@ -81,7 +81,7 @@ export default function WhyTrust() {
               You&apos;ve spent years building your home, savings, investments, business, and everything that matters to you. A Will puts your wishes in writing, helps protect your assets, and gives your family clarity about your future plans.
             </p>
             <Link
-              href="/start"
+              href="/contact"
               className="inline-flex items-center justify-center rounded-full bg-[#C65378] text-[15px] sm:text-[16px] font-semibold !text-white    transition-all active:scale-95 shadow-sm"
               style={{
                 paddingLeft: "2rem",

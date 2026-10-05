@@ -895,7 +895,7 @@ export default function Step4Assets({
                 <p style={{ margin: "0.25rem 0 0", fontSize: "0.825rem", color: "var(--color-slate)" }}>
                   {editingAssetId
                     ? isHi ? "मौजूदा संपत्ति के स्वामित्व, विवरण और मूल्य में बदलाव करें।" : "Update existing asset ownership, classification, and valuation."
-                    : isHi ? "भारतीय उत्तराधिकार अधिनियम 1925 के तहत आपकी वसीयत के लिए सूचीबद्ध।" : "Cataloged for distribution in your Will under Indian Succession Act 1925."}
+                    : isHi ? "भारतीय उत्तराधिकार कानून के तहत आपकी वसीयत के लिए सूचीबद्ध।" : "Cataloged for distribution in your Will under Indian succession law."}
                 </p>
               </div>
 

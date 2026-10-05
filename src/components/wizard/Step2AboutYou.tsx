@@ -176,8 +176,8 @@ export default function Step2AboutYou({
     {
       id: "christian",
       title: "Christian",
-      description: "Governed by Indian Succession Act 1925 (Part V). Free disposition with executor probate.",
-      badge: "ISA 1925",
+      description: "Governed by applicable Indian succession provisions. Free disposition with executor probate.",
+      badge: "Statutory Law",
       Icon: BookOpen,
     },
     {
@@ -190,14 +190,14 @@ export default function Step2AboutYou({
     {
       id: "parsi",
       title: "Parsi",
-      description: "Indian Succession Act 1925 (Special Rules for Parsis). Testamentary capacity covers all assets.",
-      badge: "ISA 1925",
+      description: "Special testamentary provisions for Parsis. Testamentary capacity covers all assets.",
+      badge: "Statutory Law",
       Icon: Scale,
     },
     {
       id: "other",
       title: "Other / Secular",
-      description: "Universal provisions under the Indian Succession Act 1925.",
+      description: "Universal provisions under Indian succession law.",
       badge: "General",
       Icon: Globe,
     },

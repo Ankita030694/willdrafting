@@ -36,7 +36,7 @@ export default function VisualStepFinalWill({
   };
 
   const speechIntro =
-    "Congratulations! Your Last Will and Testament is fully compiled with all legal clauses, startup equities, and asset distributions under Section 63 of the Indian Succession Act 1925. You can print it on normal A4 paper or save it as a PDF.";
+    "Congratulations! Your Last Will and Testament is fully compiled with all legal clauses, startup equities, and asset distributions under Indian succession law. You can print it on normal A4 paper or save it as a PDF.";
 
   return (
     <div style={{ maxWidth: "900px", margin: "0 auto", padding: "1.25rem 1rem 6rem" }}>
@@ -83,7 +83,7 @@ export default function VisualStepFinalWill({
               </span>
             </div>
             <div style={{ fontSize: "0.8rem", color: "var(--color-slate)", marginTop: "0.15rem" }}>
-              Indian Succession Act 1925 • Valid across all High Courts of India
+              Statutory Legal Standards • Valid across all High Courts of India
             </div>
           </div>
         </div>
@@ -320,7 +320,7 @@ export default function VisualStepFinalWill({
 
         {/* Footer */}
         <div style={{ marginTop: "3.5rem", paddingTop: "1.5rem", borderTop: "1px dashed #CBD5E1", fontSize: "0.75rem", color: "#94A3B8", textAlign: "center" }}>
-          Certified Compliant with Section 63, Indian Succession Act, 1925 • Generated on WillDrafting.com
+          Certified Compliant with Statutory Indian Legal Standards • Generated on WillDrafting.com
         </div>
       </div>
 

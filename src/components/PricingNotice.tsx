@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const deliverables = [
   "Guided step-by-step estate questionnaire",
-  "Statutory compliance under Indian Succession Act, 1925",
+  "Statutory compliance under Indian legal standards",
   "Executor & Alternate Executor nomination clauses",
   "Guardianship provisions for minor children",
   "Multi-asset schedule (Real Estate, Demat, Bank Accounts, Jewelry)",
@@ -142,7 +142,7 @@ export default function PricingNotice() {
 
             <div>
               <Link
-                href="/start"
+                href="/contact"
                 className="btn btn-gold"
                 style={{
                   width: "100%",

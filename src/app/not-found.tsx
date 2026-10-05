@@ -54,7 +54,7 @@ export default function NotFound() {
               Pricing & Plans
             </Link>
             <Link
-              href="/contactus"
+              href="/contact"
               className="flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-[#FAF7F0] text-[#172228] border border-[#172228]/10 text-sm font-medium hover:bg-[#F2EFE8] transition-colors"
             >
               <PhoneCall className="w-4 h-4" />

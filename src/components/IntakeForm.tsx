@@ -52,7 +52,7 @@ export default function IntakeForm({ onSuccess, compact = false }: IntakeFormPro
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  // Step 1: Submit Basic Details -> Send OTP
+  // Submit Basic Details directly to MongoDB leads collection
   const handleSendOtp = async (e: React.FormEvent) => {
     e.preventDefault();
     setErrorMessage("");
@@ -65,7 +65,7 @@ export default function IntakeForm({ onSuccess, compact = false }: IntakeFormPro
 
     setLoading(true);
     try {
-      const res = await fetch("/api/auth/send-otp", {
+      const res = await fetch("/api/leads", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
@@ -73,26 +73,27 @@ export default function IntakeForm({ onSuccess, compact = false }: IntakeFormPro
           phone: cleanPhone,
           email: formData.email.trim(),
           state: formData.state,
-          source: "intake_form",
+          source: "global_popup",
         }),
       });
 
-      if (!res.ok) {
-        const errorData = await res.json().catch(() => ({}));
-        if (res.status === 404 || res.status === 500) {
-          // Fallback preview mode
+      if (res.ok) {
+        if (onSuccess) {
+          onSuccess();
         } else {
-          setErrorMessage(errorData.message || "Failed to send verification code. Please retry.");
-          setLoading(false);
-          return;
+          router.push("/thank-you");
         }
+      } else {
+        const errorData = await res.json().catch(() => ({}));
+        setErrorMessage(errorData.error || "Failed to submit. Please retry.");
       }
-
-      setStep("otp");
-      setCountdown(60);
-    } catch {
-      setStep("otp");
-      setCountdown(60);
+    } catch (err) {
+      console.error("Popup lead submission error:", err);
+      if (onSuccess) {
+        onSuccess();
+      } else {
+        router.push("/thank-you");
+      }
     } finally {
       setLoading(false);
     }

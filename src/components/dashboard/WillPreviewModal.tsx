@@ -95,7 +95,7 @@ export default function WillPreviewModal({
             </div>
             <div>
               <h4 style={{ margin: 0, fontSize: "1.05rem", fontWeight: 600, color: "#FFFFFF" }}>
-                Legal Document Preview • Indian Succession Act 1925
+                Legal Document Preview • Statutory Compliant
               </h4>
               <p style={{ margin: 0, fontSize: "0.75rem", color: "rgba(255, 255, 255, 0.7)" }}>
                 Version {state.version || "v1.2"} • {state.clauses?.length || 8} Clauses Assembled
@@ -301,7 +301,7 @@ export default function WillPreviewModal({
 
             {/* Seal / Footer */}
             <div style={{ marginTop: "3rem", paddingTop: "1.5rem", borderTop: "1px dashed #CBD5E1", fontSize: "0.75rem", color: "#94A3B8", textAlign: "center" }}>
-              Generated via WillDrafting.com Legal Engine • Formatted in accordance with Section 63, Indian Succession Act, 1925
+              Generated via WillDrafting.com Legal Engine • Formatted in accordance with Indian Succession Legal Standards
             </div>
           </div>
         </div>

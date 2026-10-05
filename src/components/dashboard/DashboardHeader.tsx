@@ -173,7 +173,7 @@ export default function DashboardHeader({
                     margin: "0.35rem 0 0",
                   }}
                 >
-                  Estate Portfolio Dashboard • Indian Succession Act 1925 • Plan:{" "}
+                  Estate Portfolio Dashboard • Statutory Legal Standards • Plan:{" "}
                   <strong style={{ color: "var(--color-navy)", textTransform: "capitalize" }}>
                     {state.selectedPlan.replace("_", " ")}
                   </strong>

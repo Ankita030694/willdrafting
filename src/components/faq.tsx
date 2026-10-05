@@ -15,7 +15,7 @@ const faqs: FAQItem[] = [
     id: 1,
     question: "How does WillDrafting.in work?",
     answer:
-      "You answer simple, step-by-step questions about yourself, your family, and your assets. In less than 15 minutes, our legal engine generates a complete, legally formatted, court-ready Will compliant with the Indian Succession Act, 1925, ready for instant download.",
+      "You answer simple, step-by-step questions about yourself, your family, and your assets. In less than 15 minutes, our legal engine generates a complete, legally formatted, court-ready Will ready for instant download.",
   },
   {
     id: 2,
@@ -117,7 +117,7 @@ export default function FAQ() {
                 Our legal team is here to assist with drafting, executor nominations, and registration guidance.
               </p>
               <Link
-                href="/contactus"
+                href="/contact"
                 className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-[0.14em] text-[#172228] hover:text-[#C65378] transition-colors group"
               >
                 <span>Talk to our legal desk</span>

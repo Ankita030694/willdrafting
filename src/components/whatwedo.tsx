@@ -19,12 +19,12 @@ const services: ServiceCard[] = [
     title: "Online Will Drafting",
     description: "Protect your assets, choose your beneficiaries, name guardians for your minor children, and clearly record how your estate should be distributed through a professionally drafted Will in India.",
     linkText: "Write your Will",
-    linkHref: "/start",
+    linkHref: "/contact",
     illustration: (
       <div className="relative w-full h-full flex items-center justify-center">
         <Image
           src="/new1servcie.png"
-          alt="Online Will Drafting Service under Indian Succession Act 1925"
+          alt="Online Will Drafting Service under Indian Law"
           fill
           priority
           sizes="(max-width: 768px) 100vw, 50vw"

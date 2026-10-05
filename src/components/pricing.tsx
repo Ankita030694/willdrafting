@@ -206,7 +206,7 @@ export default function Pricing() {
                   {/* Primary CTA Button */}
                   <div className="pt-2">
                     <Link
-                      href="/start"
+                      href="/contact"
                       className="inline-flex w-full items-center justify-center gap-2 rounded-xl bg-[#C65378] px-6 py-4 text-[0.95rem] font-semibold text-white shadow-sm transition-all duration-200 hover:bg-[#9F3B5C] active:scale-95"
                     >
                       <span>{currentTier.ctaText}</span>

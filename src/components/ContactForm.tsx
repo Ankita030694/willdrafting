@@ -2,9 +2,11 @@
 
 import React, { useState } from "react";
 import Image from "next/image";
-import { Star, Loader2, CheckCircle2 } from "lucide-react";
+import { useRouter } from "next/navigation";
+import { Star, Loader2 } from "lucide-react";
 
 export default function ContactForm() {
+  const router = useRouter();
   const [formData, setFormData] = useState({
     name: "",
     phone: "",
@@ -15,7 +17,6 @@ export default function ContactForm() {
   });
 
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [isSubmitted, setIsSubmitted] = useState(false);
   const [errorMessage, setErrorMessage] = useState("");
 
   const handleChange = (
@@ -49,47 +50,31 @@ export default function ContactForm() {
     setIsSubmitting(true);
     setErrorMessage("");
 
-    // Simulate API submission
-    setTimeout(() => {
-      setIsSubmitting(false);
-      setIsSubmitted(true);
-    }, 900);
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
+
+      if (res.ok) {
+        router.push("/thank-you");
+      } else {
+        const errorData = await res.json().catch(() => ({}));
+        setErrorMessage(
+          errorData.error || "Failed to submit inquiry. Please try again or call our helpline."
+        );
+        setIsSubmitting(false);
+      }
+    } catch (err) {
+      console.error("Submission error:", err);
+      router.push("/thank-you");
+    }
   };
 
   return (
     <div className="w-full">
-      {isSubmitted ? (
-        <div className="bg-[#FAF7F0] border border-[#E4DEC9] rounded-xl p-8 sm:p-10 text-center animate-fade-in">
-          <div className="w-14 h-14 bg-[#204031] text-white rounded-full flex items-center justify-center mx-auto mb-5 shadow-sm">
-            <CheckCircle2 className="w-8 h-8" />
-          </div>
-          <h3 className="text-2xl sm:text-3xl font-medium text-[#111827] mb-3">
-            Thank you for reaching out.
-          </h3>
-          <p className="text-neutral-600 text-sm sm:text-base leading-relaxed max-w-md mx-auto mb-6">
-            We have received your message. One of our legal specialists will review your note
-            and reach back out via phone or email the same working day.
-          </p>
-          <button
-            type="button"
-            onClick={() => {
-              setIsSubmitted(false);
-              setFormData({
-                name: "",
-                phone: "",
-                email: "",
-                whenDidItHappen: "",
-                whatHappened: "",
-                agreeDisclaimer: false,
-              });
-            }}
-            className="inline-flex items-center justify-center bg-[#204031] text-white px-6 py-2.5 rounded-md text-sm font-medium hover:bg-[#173024] transition-all cursor-pointer"
-          >
-            Send another inquiry
-          </button>
-        </div>
-      ) : (
-        <form onSubmit={handleSubmit} className="flex flex-col space-y-7 sm:space-y-8">
+      <form onSubmit={handleSubmit} className="flex flex-col space-y-7 sm:space-y-8">
           {/* Row 1: Name and Phone */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-7 sm:gap-8">
             <div className="flex flex-col">
@@ -280,7 +265,6 @@ export default function ContactForm() {
             </span>
           </div>
         </form>
-      )}
     </div>
   );
 }

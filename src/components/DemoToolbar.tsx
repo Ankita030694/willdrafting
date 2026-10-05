@@ -329,15 +329,15 @@ export default function DemoToolbar() {
 
               <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "0.4rem" }}>
                 <Link
-                  href="/start"
+                  href="/contact"
                   onClick={() => setIsExpanded(false)}
                   style={{
                     display: "flex",
                     alignItems: "center",
                     gap: "0.35rem",
                     padding: "0.45rem 0.6rem",
-                    backgroundColor: pathname === "/start" ? "var(--color-navy)" : "var(--bg-page)",
-                    color: pathname === "/start" ? "#FFFFFF" : "var(--color-navy)",
+                    backgroundColor: pathname === "/contact" ? "var(--color-navy)" : "var(--bg-page)",
+                    color: pathname === "/contact" ? "#FFFFFF" : "var(--color-navy)",
                     borderRadius: "var(--radius-sm)",
                     fontSize: "0.76rem",
                     fontWeight: 600,
@@ -345,19 +345,19 @@ export default function DemoToolbar() {
                     border: "1px solid var(--border-subtle)",
                   }}
                 >
-                  <FileText size={13} /> Questionnaire
+                  <FileText size={13} /> Contact Desk
                 </Link>
 
                 <Link
-                  href="/dashboard"
+                  href="/contact"
                   onClick={() => setIsExpanded(false)}
                   style={{
                     display: "flex",
                     alignItems: "center",
                     gap: "0.35rem",
                     padding: "0.45rem 0.6rem",
-                    backgroundColor: pathname.startsWith("/dashboard") ? "var(--color-navy)" : "var(--bg-page)",
-                    color: pathname.startsWith("/dashboard") ? "#FFFFFF" : "var(--color-navy)",
+                    backgroundColor: pathname.startsWith("/contact") ? "var(--color-navy)" : "var(--bg-page)",
+                    color: pathname.startsWith("/contact") ? "#FFFFFF" : "var(--color-navy)",
                     borderRadius: "var(--radius-sm)",
                     fontSize: "0.76rem",
                     fontWeight: 600,
@@ -365,7 +365,7 @@ export default function DemoToolbar() {
                     border: "1px solid var(--border-subtle)",
                   }}
                 >
-                  <LayoutDashboard size={13} /> Dashboard
+                  <LayoutDashboard size={13} /> Support
                 </Link>
 
                 <Link

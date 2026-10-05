@@ -84,7 +84,7 @@ function Dashboard2Content() {
   const totalAssetsValue = state.assets.reduce((sum, a) => sum + (a.approximateValue || 0), 0);
   const startupCount = state.assets.filter((a) => a.typeDetails?.includes("Startup") || a.category === "business").length;
 
-  const audioSummary = `Welcome to your visual estate dashboard, Dr. Rohit Srivastava! Your estate is valued at approximately ${Math.round(totalAssetsValue / 100000) / 100} Crore Rupees, including ${startupCount} deep tech startups in Schedule A and ${state.familyMembers.length} listed family members. Your will is 100 percent legally compliant under the Indian Succession Act 1925.`;
+  const audioSummary = `Welcome to your visual estate dashboard, Dr. Rohit Srivastava! Your estate is valued at approximately ${Math.round(totalAssetsValue / 100000) / 100} Crore Rupees, including ${startupCount} deep tech startups in Schedule A and ${state.familyMembers.length} listed family members. Your will is 100 percent legally compliant under Indian succession law.`;
 
   return (
     <div style={{ minHeight: "100vh", background: "#F8FAFC", color: "var(--color-navy)", paddingBottom: "5rem" }}>
@@ -133,7 +133,7 @@ function Dashboard2Content() {
                 WillDrafting<span style={{ color: "var(--color-gold)" }}>.com</span>
               </div>
               <div style={{ fontSize: "0.72rem", color: "var(--color-slate)" }}>
-                Visual Estate Architecture • ISA 1925 Compliant
+                Visual Estate Architecture • Statutory Compliant
               </div>
             </div>
           </div>
@@ -231,7 +231,7 @@ function Dashboard2Content() {
               </h1>
 
               <p style={{ fontSize: "0.95rem", color: "#94A3B8", margin: "0 0 1.25rem", lineHeight: 1.55 }}>
-                Your complete legal will deed is ready under the Indian Succession Act 1925. Experience the tap-first visual wizard designed so anyone can review and update their estate without confusing paperwork.
+                Your complete legal will deed is ready under Indian succession law. Experience the tap-first visual wizard designed so anyone can review and update their estate without confusing paperwork.
               </p>
 
               {/* Action Buttons */}
@@ -381,7 +381,7 @@ function Dashboard2Content() {
               100% Ready
             </div>
             <div style={{ fontSize: "0.75rem", color: "var(--color-slate)", marginTop: "0.2rem" }}>
-              Section 63 ISA 1925 Attestation Ready
+              Statutory Attestation Ready
             </div>
           </div>
         </div>

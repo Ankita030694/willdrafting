@@ -11,14 +11,14 @@ import Footer from "@/components/Footer";
 export const metadata: Metadata = {
   title: "About Us — Hassle-Free Online Wills",
   description:
-    "Learn how WillDrafting.in helps Indian families draft, download court-ready Wills in minutes, and register with ease under the Indian Succession Act.",
+    "Learn how WillDrafting.in helps Indian families draft, download court-ready Wills in minutes, and register with ease under applicable Indian law.",
   alternates: {
     canonical: "https://www.willdrafting.in/aboutus",
   },
   openGraph: {
     title: "About Us | Hassle-Free Online Wills | WillDrafting.in",
     description:
-      "Learn how WillDrafting.in helps Indian families draft, download court-ready Wills in minutes, and register with ease under the Indian Succession Act.",
+      "Learn how WillDrafting.in helps Indian families draft, download court-ready Wills in minutes, and register with ease under applicable Indian law.",
     url: "https://www.willdrafting.in/aboutus",
     siteName: "WillDrafting.in",
     locale: "en_IN",
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "About Us | Hassle-Free Online Wills | WillDrafting.in",
     description:
-      "Learn how WillDrafting.in helps Indian families draft, download court-ready Wills in minutes, and register with ease under the Indian Succession Act.",
+      "Learn how WillDrafting.in helps Indian families draft, download court-ready Wills in minutes, and register with ease under applicable Indian law.",
     images: ["/desktopusp.jpg"],
   },
 };
@@ -50,7 +50,7 @@ const ABOUT_SCHEMA = {
       "url": "https://www.willdrafting.in/aboutus",
       "name": "About Us | Hassle-Free Online Wills | WillDrafting.in",
       "description":
-        "Learn how WillDrafting.in helps Indian families draft, download court-ready Wills in minutes, and register with ease under the Indian Succession Act.",
+        "Learn how WillDrafting.in helps Indian families draft, download court-ready Wills in minutes, and register with ease under applicable Indian law.",
       "breadcrumb": {
         "@id": "https://www.willdrafting.in/aboutus#breadcrumb",
       },
@@ -193,7 +193,7 @@ export default function AboutUsPage() {
             <div className="relative aspect-square w-full h-full min-h-[300px] bg-neutral-800 overflow-hidden">
               <Image
                 src="/4.jpg"
-                alt="Lawyer verifying clauses under Section 63 Indian Succession Act"
+                alt="Lawyer verifying clauses under Indian estate succession law"
                 fill
                 sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
                 className="object-cover object-center transition-transform duration-700 hover:scale-105"

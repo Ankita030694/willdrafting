@@ -52,7 +52,7 @@ const JSON_LD = {
       "@id": "https://www.willdrafting.in/pricing#product",
       "name": "Legal Will Drafting Service India",
       "description":
-        "Statutory personal testamentary will drafting service compliant with the Indian Succession Act, 1925. Features comprehensive asset distribution, executor appointments, minor guardianship clauses, doctor certification template, and dual-witness attestation instructions.",
+        "Statutory personal testamentary will drafting service compliant with Indian legal standards. Features comprehensive asset distribution, executor appointments, minor guardianship clauses, doctor certification template, and dual-witness attestation instructions.",
       "brand": {
         "@type": "Brand",
         "name": "WillDrafting.in",
@@ -93,7 +93,7 @@ const JSON_LD = {
           "name": "Is an online-drafted Will legally enforceable in Indian courts?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes, absolutely. Under Section 63 of the Indian Succession Act, 1925, any Will written in clear language, declaring testamentary intent, executed by an individual of sound mind, and signed in the presence of two independent witnesses is completely valid and enforceable before any civil court in India. A digital drafting engine ensures statutory clauses and legal requirements are properly structured.",
+            "text": "Yes, absolutely. Under Indian law, any Will written in clear language, declaring testamentary intent, executed by an individual of sound mind, and signed in the presence of two independent witnesses is completely valid and enforceable before any civil court in India. A digital drafting engine ensures statutory clauses and legal requirements are properly structured.",
           },
         },
         {
@@ -109,7 +109,7 @@ const JSON_LD = {
           "name": "Is registration at the Sub-Registrar office mandatory for a valid Will?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Registration is purely optional under Section 18(e) of the Registration Act, 1908. An unregistered Will executed in accordance with Section 63 of the Indian Succession Act holds equal evidentiary value in court. Registration provides an additional layer of official record-keeping but is not a legal prerequisite for validity.",
+            "text": "Registration is purely optional under Section 18(e) of the Registration Act, 1908. An unregistered Will executed in accordance with Indian succession law holds equal evidentiary value in court. Registration provides an additional layer of official record-keeping but is not a legal prerequisite for validity.",
           },
         },
         {
@@ -292,7 +292,7 @@ const FAQS = [
   {
     question: "Is an online-drafted Will legally enforceable in Indian courts?",
     answer:
-      "Yes, absolutely. Under Section 63 of the Indian Succession Act, 1925, any Will written in clear language, declaring testamentary intent, executed by an individual of sound mind, and signed in the presence of two independent witnesses is completely valid and enforceable before any civil court in India. A digital drafting engine ensures statutory clauses and legal requirements are properly structured.",
+      "Yes, absolutely. Under Indian law, any Will written in clear language, declaring testamentary intent, executed by an individual of sound mind, and signed in the presence of two independent witnesses is completely valid and enforceable before any civil court in India. A digital drafting engine ensures statutory clauses and legal requirements are properly structured.",
   },
   {
     question: "Do I need to purchase non-judicial stamp paper or have the Will notarized?",
@@ -302,7 +302,7 @@ const FAQS = [
   {
     question: "Is registration at the Sub-Registrar office mandatory for a valid Will?",
     answer:
-      "Registration is purely optional under Section 18(e) of the Registration Act, 1908. An unregistered Will executed in accordance with Section 63 of the Indian Succession Act holds equal evidentiary value in court. Registration provides an additional layer of official record-keeping but is not a legal prerequisite for validity.",
+      "Registration is purely optional under Section 18(e) of the Registration Act, 1908. An unregistered Will executed in accordance with Indian succession law holds equal evidentiary value in court. Registration provides an additional layer of official record-keeping but is not a legal prerequisite for validity.",
   },
   {
     question: "Can I edit and update my Will later if my assets change?",
@@ -317,7 +317,7 @@ const FAQS = [
   {
     question: "Can I distribute ancestral property or only self-acquired assets?",
     answer:
-      "Under Indian succession law, a testator has testamentary power to bequeath 100% of their self-acquired properties, personal investments, savings, and movable assets. In the case of undivided ancestral coparcenary property (governed by the Hindu Succession Act), a testator can only bequeath their specific undivided share that would fall to them upon a deemed partition at the time of death.",
+      "Under Indian succession law, a testator has testamentary power to bequeath 100% of their self-acquired properties, personal investments, savings, and movable assets. In the case of undivided ancestral coparcenary property (governed by personal law), a testator can only bequeath their specific undivided share that would fall to them upon a deemed partition at the time of death.",
   },
   {
     question: "Which payment methods are accepted and how is financial security handled?",
@@ -367,7 +367,7 @@ export default function PricingPage() {
                 Transparent, One-Time Will Drafting Pricing in India
               </h1>
               <p className={styles.heroSubtitle}>
-                Draft a legally binding, court-vetted Will under the Indian Succession Act, 1925.
+                Draft a legally binding, court-vetted Will under Indian succession laws.
                 No recurring retainers, no advocate markups, and lifetime free revisions.
               </p>
             </div>
@@ -394,13 +394,13 @@ export default function PricingPage() {
               <div className={styles.planBody}>
                 <div className={styles.planGrid}>
                   {[
-                    "Complete statutory Will compliant with the Indian Succession Act, 1925",
+                    "Complete statutory Will compliant with Indian legal standards",
                     "Unlimited free revisions for life as assets or family circumstances evolve",
                     "Primary and alternate executor nominations with administration powers",
                     "Testamentary guardianship nomination for minor children (Guardians & Wards Act, 1890)",
                     "Exhaustive asset scheduling: Real estate, Demat shares, mutual funds, FDs & lockers",
                     "Universal residuary bequest clause preventing partial intestacy in civil court",
-                    "Dual-witness attestation kit with Section 63(c) execution blueprint",
+                    "Dual-witness attestation kit with complete execution blueprint",
                     "Registered Medical Practitioner (RMP) mental fitness certificate template",
                   ].map((bullet, idx) => (
                     <div key={idx} className={styles.planBullet}>
@@ -415,7 +415,7 @@ export default function PricingPage() {
                 <p className={styles.planFooterNote}>
                   <strong>Free to begin:</strong> Complete your full questionnaire and review your distribution preview before paying.
                 </p>
-                <Link href="/start" className={styles.ctaButton}>
+                <Link href="/contact" className={styles.ctaButton}>
                   <span>Start Drafting Your Will</span>
                   <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
                     <path d="M5 12h14" />
@@ -496,10 +496,10 @@ export default function PricingPage() {
 
             <div className={styles.foundationGrid}>
               <div className={styles.foundationItem}>
-                <div className={styles.statuteCitation}>Indian Succession Act, 1925</div>
-                <h3 className={styles.foundationTitle}>Section 63 Attestation Mandate</h3>
+                <div className={styles.statuteCitation}>Indian Succession Law</div>
+                <h3 className={styles.foundationTitle}>Dual-Witness Attestation Mandate</h3>
                 <p className={styles.foundationDesc}>
-                  Under Section 63(c), a Will must be executed by the testator in the physical presence of at least two independent attesting witnesses.
+                  A Will must be executed by the testator in the physical presence of at least two independent attesting witnesses.
                   Our execution blueprint specifies witness eligibility to prevent probate contestation.
                 </p>
               </div>
@@ -563,15 +563,15 @@ export default function PricingPage() {
                 No credit card required to start. Complete your confidential questionnaire and review your distribution summary before paying.
               </p>
               <div className={styles.bottomActions}>
-                <Link href="/start" className={styles.ctaButton}>
+                <Link href="/contact" className={styles.ctaButton}>
                   <span>Start Questionnaire Free</span>
                   <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
                     <path d="M5 12h14" />
                     <path d="m12 5 7 7-7 7" />
                   </svg>
                 </Link>
-                <Link href="/login" className={styles.secondaryLink}>
-                  Sign in to existing account
+                <Link href="/contact" className={styles.secondaryLink}>
+                  Contact Legal Advisory Desk
                 </Link>
               </div>
             </div>

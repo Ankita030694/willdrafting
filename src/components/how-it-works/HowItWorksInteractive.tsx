@@ -43,7 +43,7 @@ const STEPS_DATA: StepData[] = [
     fullTitle: "Tell Us About Yourself & Your Legal Jurisdiction",
     category: "Step 1 of 7 · Foundation",
     timeEstimate: "2–3 mins",
-    statutoryBasis: "Section 59, Indian Succession Act, 1925",
+    statutoryBasis: "Legal Testamentary Capacity",
     summary:
       "We begin by establishing your full legal identity, sound testamentary capacity, and applicable personal succession law. Every prior testamentary instrument is formally revoked.",
     questionsAsked: [
@@ -53,8 +53,8 @@ const STEPS_DATA: StepData[] = [
       "Do you hold any prior Will, Codicil, or testamentary disposition that needs revocation?",
     ],
     systemLogic: [
-      "Establishes statutory testamentary capacity (sound mind and free will) pursuant to Section 59 of the ISA 1925.",
-      "Identifies whether Hindu Succession Act, 1956 or Indian Succession Act, 1925 dictates heirship rules.",
+      "Establishes statutory testamentary capacity (sound mind and free will) pursuant to legal standards.",
+      "Identifies personal succession rules governing heirship.",
       "Automatically injects an absolute revocation clause to invalidate superseded previous drafts or conflicting codicils.",
     ],
     sampleClauseTitle: "Revocation & Declaration of Capacity Clause",
@@ -145,7 +145,7 @@ const STEPS_DATA: StepData[] = [
     ],
     systemLogic: [
       "Runs strict 100% mathematical allocation verification across all beneficiary shares.",
-      "Appoints Executor under Section 222 of ISA 1925 with comprehensive administrative powers.",
+      "Appoints Executor with comprehensive administrative powers.",
       "Inserts a mandatory Residuary Clause to ensure zero intestate gaps for future wealth.",
     ],
     sampleClauseTitle: "Residuary Estate & Survivorship Clause",
@@ -171,21 +171,21 @@ const STEPS_DATA: StepData[] = [
       "Are all percentage splits mathematically balanced to exactly 100%?",
       "Is at least one adult, legally competent Executor appointed?",
       "Is an alternate executor or guardian designated for unexpected contingencies?",
-      "Are any intended witnesses disqualified under Section 67 due to being beneficiaries?",
+      "Are any intended witnesses disqualified due to being beneficiaries?",
       "Are all immovable properties identified with conclusive boundary and registration details?",
     ],
     systemLogic: [
-      "Evaluates complete state tree against Indian Succession Act, 1925 rules.",
-      "Flags high-risk issues: Section 67 witness disqualification, missing residuary clause, unallocated shares.",
+      "Evaluates complete state tree against Indian legal rules.",
+      "Flags high-risk issues: witness disqualification, missing residuary clause, unallocated shares.",
       "Dynamically compiles court-vetted testamentary clauses into structured formal paragraphs.",
     ],
     sampleClauseTitle: "Automated Statutory Health Verification",
     sampleClause:
-      "\"[STATUS: ALL 7 STATUTORY CHECKS PASSED]\n1. 100% Allocation Balance: VERIFIED\n2. Primary & Alternate Executor: VERIFIED\n3. Minor Guardian Appointment: VERIFIED\n4. Section 67 Conflict Safeguard: VERIFIED\n5. Residuary Clause Completeness: VERIFIED\n6. Testamentary Capacity Declaration: VERIFIED\n7. Immovable Property Specification: VERIFIED\"",
+      "\"[STATUS: ALL 7 STATUTORY CHECKS PASSED]\n1. 100% Allocation Balance: VERIFIED\n2. Primary & Alternate Executor: VERIFIED\n3. Minor Guardian Appointment: VERIFIED\n4. Witness Conflict Safeguard: VERIFIED\n5. Residuary Clause Completeness: VERIFIED\n6. Testamentary Capacity Declaration: VERIFIED\n7. Immovable Property Specification: VERIFIED\"",
     pitfallPrevented: {
-      title: "Section 67 Disqualification Trap",
+      title: "Witness Disqualification Trap",
       description:
-        "Under Section 67 of the ISA 1925, any bequest made to a person who signs as an attesting witness is completely void! Our engine prevents this fatal error automatically.",
+        "Under Indian law, any bequest made to a person who signs as an attesting witness is completely void! Our engine prevents this fatal error automatically.",
     },
   },
   {
@@ -211,7 +211,7 @@ const STEPS_DATA: StepData[] = [
     ],
     sampleClauseTitle: "Advocate Verification & Sufficiency Certification",
     sampleClause:
-      "\"The structured testamentary clauses in this Will have been reviewed for legal sufficiency and compliance with the formalities prescribed under the Indian Succession Act, 1925. The provisions effectively express testamentary intent and eliminate ambiguities regarding succession.\"",
+      "\"The structured testamentary clauses in this Will have been reviewed for legal sufficiency and compliance with statutory formalities. The provisions effectively express testamentary intent and eliminate ambiguities regarding succession.\"",
     pitfallPrevented: {
       title: "Ambiguous 'Life Interest' Clauses",
       description:
@@ -225,7 +225,7 @@ const STEPS_DATA: StepData[] = [
     fullTitle: "Two-Witness Attestation Kit & Encrypted Will Vault",
     category: "Step 7 of 7 · Legal Validity",
     timeEstimate: "Instant PDF + 15 min signing",
-    statutoryBasis: "Section 63, Indian Succession Act, 1925",
+    statutoryBasis: "Dual-Witness Statutory Attestation",
     summary:
       "Download your court-ready PDF. Follow our strict 2-witness signing guide, attach the Doctor's Fitness Certificate, and access your encrypted digital vault for lifetime revisions.",
     questionsAsked: [
@@ -239,9 +239,9 @@ const STEPS_DATA: StepData[] = [
       "Provides optional Registered Medical Practitioner (MBBS) Sound Mind Certificate template.",
       "Stores digital record in AES-256 encrypted Will Vault with free lifetime updates whenever your assets change.",
     ],
-    sampleClauseTitle: "Statutory Attestation Clause (Section 63)",
+    sampleClauseTitle: "Statutory Attestation Clause",
     sampleClause:
-      "\"Signed by the above-named Testator in our presence, all being present at the same time, and we, at their request, in their presence, and in the presence of each other, have hereunto subscribed our names as attesting witnesses pursuant to Section 63 of the Indian Succession Act, 1925.\"",
+      "\"Signed by the above-named Testator in our presence, all being present at the same time, and we, at their request, in their presence, and in the presence of each other, have hereunto subscribed our names as attesting witnesses pursuant to applicable Indian law.\"",
     pitfallPrevented: {
       title: "Defective Attestation Dismissal",
       description:
@@ -356,7 +356,7 @@ export default function HowItWorksInteractive() {
                   Next: {STEPS_DATA[activeStepIndex + 1].shortTitle} →
                 </button>
               ) : (
-                <Link href="/start" className={styles.finishCtaButton}>
+                <Link href="/contact" className={styles.finishCtaButton}>
                   Start My Will (15 Mins) →
                 </Link>
               )}
@@ -380,7 +380,7 @@ export default function HowItWorksInteractive() {
             </pre>
             <div className={styles.clauseFooter}>
               <ShieldCheck size={14} className={styles.shieldIcon} />
-              <span>Compliant with Indian Succession Act, 1925</span>
+              <span>Compliant with Indian Succession Law</span>
             </div>
           </div>
 

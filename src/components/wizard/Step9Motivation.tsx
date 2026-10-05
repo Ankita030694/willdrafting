@@ -75,7 +75,7 @@ export default function Step9Motivation({
     {
       id: "peace",
       title: "Complete peace of mind & legal certainty",
-      desc: "Knowing that a lifetime of hard work is safeguarded under the Indian Succession Act 1925.",
+      desc: "Knowing that a lifetime of hard work is safeguarded under Indian succession law.",
       Icon: Sun,
       color: "#D97706",
     },

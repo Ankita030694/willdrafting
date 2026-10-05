@@ -17,7 +17,7 @@ export default function EstateFolderSection() {
           <span className="font-bold text-[#C65378] tracking-wider uppercase text-[7px]">
             Last Will
           </span>
-          <span className="text-[6px] font-mono text-gray-400">ACT 1925</span>
+          <span className="text-[6px] font-mono text-gray-400">VALID</span>
         </div>
         <div className="space-y-1">
           <div className="h-1 bg-[#172228]/20 rounded-full w-4/5" />
@@ -131,7 +131,7 @@ export default function EstateFolderSection() {
             {/* Action CTA Button */}
             <div className="flex flex-wrap items-center gap-4">
               <Link
-                href="/start"
+                href="/contact"
                 className="inline-flex items-center gap-2 rounded-full bg-[#C65378] px-7 py-3 text-[14px] font-medium text-white shadow-sm hover:bg-[#a13c5d] hover:shadow-md transition-all active:scale-95"
               >
                 <span>Start Your Estate Plan</span>

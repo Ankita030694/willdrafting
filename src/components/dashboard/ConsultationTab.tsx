@@ -42,7 +42,7 @@ export default function ConsultationTab({ state, onStateChange }: ConsultationTa
       experienceYears: 18,
       rating: 4.98,
       reviewsCount: 340,
-      specialties: ["Succession under ISA 1925", "Family Trusts", "Cross-Border Estate Structuring"],
+      specialties: ["Succession Planning", "Family Trusts", "Cross-Border Estate Structuring"],
       fee: "₹ 2,499",
       bio: "Senior estate planning advocate advising HNIs, business families, and NRIs on conflict-free testamentary structures and probate litigation defense.",
       availableSlot: "Tomorrow, 11:30 AM",

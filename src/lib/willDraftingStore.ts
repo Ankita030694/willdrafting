@@ -760,7 +760,7 @@ export const SCENARIO_1_STANDARD_MARRIED: WillDraftingState = {
   ],
   auditLogs: [
     { timestamp: "2026-09-16 10:00", action: "Will Deed compiled with full Schedule A startup equity and asset coverage", actor: "Dr. Rohit Srivastava" },
-    { timestamp: "2026-09-16 10:30", action: "Legal Health Check cleared with 100% compliance under Indian Succession Act 1925", actor: "Rules Engine" },
+    { timestamp: "2026-09-16 10:30", action: "Legal Health Check cleared with 100% compliance under Indian succession law", actor: "Rules Engine" },
     { timestamp: "2026-09-16 11:15", action: "All statutory clauses and Schedule A verified by Legal Counsel", actor: "Advocate & Legal Advisory Team" },
   ],
 };
@@ -1116,7 +1116,7 @@ export function runLegalHealthCheck(state: WillDraftingState): LegalHealthCheckI
       severity: "pass",
       category: "family",
       title: "Testamentary Capacity Verified",
-      explanation: "Full name, age of majority, and sound mental disposing capacity affirmed under Section 59 of the Indian Succession Act 1925.",
+      explanation: "Full name, age of majority, and sound mental disposing capacity affirmed under statutory testamentary rules.",
       actionRecommendation: "Completed",
       resolved: true,
     });

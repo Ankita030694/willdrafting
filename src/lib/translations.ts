@@ -147,7 +147,7 @@ export const translationsMap: Record<string, string> = {
   "Spouse's Name": "जीवनसाथी का नाम",
   "Age": "आयु",
   "Years": "वर्ष",
-  "S.59 ISA 1925 Qualified Adult": "धारा 59 ISA 1925 योग्य वयस्क",
+  "Statutory Qualified Adult": "कानूनी रूप से योग्य वयस्क",
 
   // Audio button
   "Listen / सुनें 🔊": "सुनें 🔊",

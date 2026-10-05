@@ -301,7 +301,7 @@ export default async function BlogSlugPage({ params }: PageProps) {
               </p>
 
               <Link
-                href="/contactus"
+                href="/contact"
                 className="w-full inline-flex items-center justify-center gap-2 bg-[#172228] text-white hover:bg-[#C65378] font-medium text-sm py-3 px-5 rounded-xl transition-all duration-300 shadow-xs hover:shadow-md group"
               >
                 <span>Tell us what happened</span>

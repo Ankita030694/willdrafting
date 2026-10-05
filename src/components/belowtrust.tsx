@@ -22,7 +22,7 @@ const CLAUSE_ITEMS: ClauseItem[] = [
     id: "clause-1",
     number: "1/",
     title: "Declaration of Sound Mind & Revocation",
-    lawRef: "Indian Succession Act, 1925 · Section 59 & Section 62",
+    lawRef: "Indian Succession Jurisprudence",
     badge: "Testamentary Capacity",
     summary:
       "Clearly establishes your testamentary capacity and voluntary intention while expressly revoking previous Wills, codicils and testamentary dispositions to help avoid conflicting succession claims.",
@@ -31,7 +31,7 @@ const CLAUSE_ITEMS: ClauseItem[] = [
     image: "/images/senior-couple.jpg",
     points: [
       "Explicit revocation of previous Wills & codicils.",
-      "Records testamentary capacity under Section 59.",
+      "Records testamentary capacity & sound disposing mind.",
       "Helps address concerns regarding coercion or undue influence.",
     ],
   },
@@ -39,7 +39,7 @@ const CLAUSE_ITEMS: ClauseItem[] = [
     id: "clause-2",
     number: "2/",
     title: "Appointment of Executors & Administrators",
-    lawRef: "Indian Succession Act, 1925 · Section 222",
+    lawRef: "Estate Administration Framework",
     badge: "Estate Administration",
     summary:
       "Appoints a primary and alternate executor to administer your estate, represent the estate where legally required, obtain probate where applicable, and distribute assets according to your Will.",
@@ -56,7 +56,7 @@ const CLAUSE_ITEMS: ClauseItem[] = [
     id: "clause-3",
     number: "3/",
     title: "Specific Asset Bequests & Residual Estate",
-    lawRef: "Indian Succession Act, 1925 · Part VI",
+    lawRef: "Statutory Bequests Framework",
     badge: "Asset Distribution",
     summary:
       "Clearly identifies how immovable property, bank accounts, investments, demat holdings, jewellery and other assets should pass to your beneficiaries, supported by a residuary clause for assets not specifically mentioned.",
@@ -90,7 +90,7 @@ const CLAUSE_ITEMS: ClauseItem[] = [
     id: "clause-5",
     number: "5/",
     title: "Execution & Two-Witness Attestation",
-    lawRef: "Indian Succession Act, 1925 · Section 63(c)",
+    lawRef: "Statutory Dual-Witness Attestation",
     badge: "Will Execution",
     summary:
       "Follows the applicable execution and attestation requirements for an ordinary Will, including signing by the testator and attestation by two or more witnesses as prescribed by law.",
@@ -98,7 +98,7 @@ const CLAUSE_ITEMS: ClauseItem[] = [
       "Signed by the Testator in our joint presence, and attested by each of us in the presence of the Testator and each other, all being present at the same time.",
     image: "/hero.jpeg",
     points: [
-      "Two-witness attestation under Section 63.",
+      "Two-witness physical attestation.",
       "Proper signing and attestation process.",
       "Helps avoid common Will execution errors.",
     ],
@@ -231,7 +231,7 @@ export default function BelowTrust() {
           {/* Right Action Pill */}
           <div className="shrink-0">
             <Link
-              href="/start"
+              href="/contact"
               className="inline-flex items-center gap-2 rounded-full border border-[#172228]/20 bg-white/70 backdrop-blur-sm px-6 py-2.5 text-[14px] font-medium text-[#172228] shadow-sm transition-all hover:bg-white hover:border-[#172228]/40 hover:shadow active:scale-95"
             >
               <span>Explore services</span>
@@ -303,7 +303,7 @@ export default function BelowTrust() {
               <div className="mt-6 pt-5 border-t border-gray-100 flex items-center justify-between text-xs text-[#6C7882]">
                 <span className="inline-flex items-center gap-1.5 font-medium">
                   <ShieldCheck size={16} className="text-[#5F7E75]" />
-                  Indian Succession Act 1925
+                  Indian Legal Standards
                 </span>
                 <span className="text-[11px] font-semibold uppercase tracking-wider text-[#C65378]">
                   Verified
@@ -392,7 +392,7 @@ export default function BelowTrust() {
                     </ul>
 
                     <Link
-                      href="/start"
+                      href="/contact"
                       className="inline-flex items-center justify-center gap-1.5 text-xs font-bold text-[#C65378] hover:text-[#a13c5d] transition-colors py-2 whitespace-nowrap self-start sm:self-auto"
                     >
                       <span>See More</span>

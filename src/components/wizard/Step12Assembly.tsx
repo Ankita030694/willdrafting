@@ -23,7 +23,7 @@ export default function Step12Assembly({
   useEffect(() => {
     const timer1 = setTimeout(() => {
       setProgress(40);
-      setCurrentStageText("Harmonizing Personal Law with Indian Succession Act 1925...");
+      setCurrentStageText("Harmonizing Personal Law with Indian Succession Framework...");
     }, 600);
 
     const timer2 = setTimeout(() => {

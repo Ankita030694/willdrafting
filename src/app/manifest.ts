@@ -5,7 +5,7 @@ export default function manifest(): MetadataRoute.Manifest {
     name: "WillDrafting.in — Legally Valid Online Will in Minutes",
     short_name: "WillDrafting",
     description:
-      "Draft your legally valid Will online in minutes under the Indian Succession Act, 1925. Download court-ready printout & register hassle-free.",
+      "Draft your legally valid Will online in minutes under applicable Indian succession law. Download court-ready printout & register hassle-free.",
     start_url: "/",
     display: "standalone",
     background_color: "#FAF7F0",

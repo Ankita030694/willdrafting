@@ -131,7 +131,7 @@ export default function CTA() {
         {/* Simple CTA Button */}
         <div className="mb-6 flex justify-center">
           <Link
-            href="/start"
+            href="/contact"
             className="inline-flex items-center justify-center rounded-full bg-[#C65378] px-8 py-3 text-[14px] font-medium text-[#FFFFFF] shadow-sm transition-all hover:bg-[#a13c5d] active:scale-95"
             style={{
               paddingLeft: "1.75rem",

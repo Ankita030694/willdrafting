@@ -71,7 +71,7 @@ export default function AnnualReviewTab({ state, onStateChange }: AnnualReviewTa
       id: "executor",
       title: "Executor Capacity & Residence",
       Icon: Scale,
-      prompt: "Are your primary and alternate executors still willing, capable, and residing in India to administer your estate under ISA 1925?",
+      prompt: "Are your primary and alternate executors still willing, capable, and residing in India to administer your estate?",
       detail: `Primary Executor: ${state.executorPrimary?.name || "Sunita Sharma"} • Alternate: ${state.executorAlternate?.name || "Rahul Sharma"}`,
       editStep: 6,
     },
@@ -162,7 +162,7 @@ export default function AnnualReviewTab({ state, onStateChange }: AnnualReviewTa
             <Lightbulb size={18} />
           </div>
             <span>
-              <strong>Statutory Note:</strong> Under the Indian Succession Act 1925, a registered or unregistered Will does <em>not</em> expire over time. This annual audit prevents unintended partial intestacy.
+              <strong>Statutory Note:</strong> Under Indian succession law, a registered or unregistered Will does <em>not</em> expire over time. This annual audit prevents unintended partial intestacy.
             </span>
           </div>
         </div>

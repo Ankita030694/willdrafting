@@ -11,13 +11,13 @@ export const metadata: Metadata = {
   description:
     "Have questions about drafting or registering your Will? Speak with our legal advisory team for instant assistance with your testamentary testament.",
   alternates: {
-    canonical: "https://www.willdrafting.in/contactus",
+    canonical: "https://www.willdrafting.in/contact",
   },
   openGraph: {
     title: "Contact Our Legal Advisory Team | WillDrafting.in",
     description:
       "Have questions about drafting or registering your Will? Speak with our legal advisory team for instant assistance with your testamentary testament.",
-    url: "https://www.willdrafting.in/contactus",
+    url: "https://www.willdrafting.in/contact",
     siteName: "WillDrafting.in",
     locale: "en_IN",
     type: "website",
@@ -51,18 +51,18 @@ const CONTACT_SCHEMA = {
   "@graph": [
     {
       "@type": "ContactPage",
-      "@id": "https://www.willdrafting.in/contactus#webpage",
-      "url": "https://www.willdrafting.in/contactus",
+      "@id": "https://www.willdrafting.in/contact#webpage",
+      "url": "https://www.willdrafting.in/contact",
       "name": "Contact Our Legal Advisory Team | WillDrafting.in",
       "description":
         "Have questions about drafting or registering your Will? Speak with our legal advisory team for instant assistance with your testamentary testament.",
       "breadcrumb": {
-        "@id": "https://www.willdrafting.in/contactus#breadcrumb",
+        "@id": "https://www.willdrafting.in/contact#breadcrumb",
       },
     },
     {
       "@type": "BreadcrumbList",
-      "@id": "https://www.willdrafting.in/contactus#breadcrumb",
+      "@id": "https://www.willdrafting.in/contact#breadcrumb",
       "itemListElement": [
         {
           "@type": "ListItem",
@@ -74,14 +74,14 @@ const CONTACT_SCHEMA = {
           "@type": "ListItem",
           "position": 2,
           "name": "Contact Us",
-          "item": "https://www.willdrafting.in/contactus",
+          "item": "https://www.willdrafting.in/contact",
         },
       ],
     },
   ],
 };
 
-export default function ContactUsPage() {
+export default function ContactPage() {
   return (
     <div className="min-h-screen flex flex-col bg-[#FAF7F0] text-[#172228]">
       <script

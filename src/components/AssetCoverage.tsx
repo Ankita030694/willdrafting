@@ -159,7 +159,7 @@ export default function AssetCoverage() {
         </div>
 
         <div style={{ marginTop: "2.5rem", textAlign: "center" }}>
-          <Link href="/start" className="btn btn-gold" style={{ padding: "0.85rem 1.85rem", fontWeight: 700 }}>
+          <Link href="/contact" className="btn btn-gold" style={{ padding: "0.85rem 1.85rem", fontWeight: 700 }}>
             <span>Catalog Your Assets in 15 Minutes</span>
             <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
               <path d="M5 12h14" />

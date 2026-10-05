@@ -7,7 +7,7 @@ const faqs = [
   {
     question: "Is an online will legally valid and enforceable in Indian courts?",
     answer:
-      "Yes. Under Section 63 of the Indian Succession Act, 1925, a will is legally valid provided it is in writing, executed by a person of sound mind with free volition, and signed by the testator in the concurrent presence of two independent adult witnesses who attest it. Our system generates the exact statutory language recognized and enforced by Indian courts.",
+      "Yes. Under Indian succession law, a will is legally valid provided it is in writing, executed by a person of sound mind with free volition, and signed by the testator in the concurrent presence of two independent adult witnesses who attest it. Our system generates the exact statutory language recognized and enforced by Indian courts.",
   },
   {
     question: "Does my will require non-judicial stamp paper or notarization?",
@@ -163,7 +163,7 @@ export default function FAQSection() {
               Our estate planning team is available to assist you.
             </div>
           </div>
-          <Link href="/start" className="btn btn-outline-navy" style={{ padding: "0.6rem 1.25rem", fontSize: "0.875rem" }}>
+          <Link href="/contact" className="btn btn-outline-navy" style={{ padding: "0.6rem 1.25rem", fontSize: "0.875rem" }}>
             <span>Start Free Consultation</span>
           </Link>
         </div>

@@ -99,7 +99,7 @@ export default function OverviewTab({ state, onNavigateTab, onStateChange }: Ove
               </span>
               <span style={{ color: "rgba(255, 255, 255, 0.4)" }}>•</span>
               <span style={{ fontSize: "0.75rem", color: "rgba(255, 255, 255, 0.75)" }}>
-                Version {state.version || "v1.2"} • ISA 1925
+                Version {state.version || "v1.2"} • Statutory Valid
               </span>
             </div>
 
@@ -428,7 +428,7 @@ export default function OverviewTab({ state, onNavigateTab, onStateChange }: Ove
           >
             <ShieldCheck size={22} color="var(--color-navy)" style={{ flexShrink: 0 }} />
             <div>
-              <strong>Complete Testamentary Protection:</strong> All 6 statutory checks pass without conflict. No risk of partial intestacy under Section 105 of the Indian Succession Act 1925.
+              <strong>Complete Testamentary Protection:</strong> All 6 statutory checks pass without conflict. No risk of partial intestacy under applicable Indian succession law.
             </div>
           </div>
         )}

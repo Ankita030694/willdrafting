@@ -19,14 +19,14 @@ export const metadata: Metadata = {
     absolute: "WillDrafting.in — Legally Valid Online Will in Minutes",
   },
   description:
-    "Draft your legally valid Will online in minutes under the Indian Succession Act. Enter details, download court-ready printout & register hassle-free.",
+    "Draft your legally valid Will online in minutes. Enter details, download court-ready printout & register hassle-free.",
   alternates: {
     canonical: "https://www.willdrafting.in",
   },
   openGraph: {
     title: "WillDrafting.in — Legally Valid Online Will in Minutes",
     description:
-      "Draft your legally valid Will online in minutes under the Indian Succession Act. Enter details, download court-ready printout & register hassle-free.",
+      "Draft your legally valid Will online in minutes. Enter details, download court-ready printout & register hassle-free.",
     url: "https://www.willdrafting.in",
     siteName: "WillDrafting.in",
     locale: "en_IN",
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "WillDrafting.in — Legally Valid Online Will in Minutes",
     description:
-      "Draft your legally valid Will online in minutes under the Indian Succession Act. Enter details, download court-ready printout & register hassle-free.",
+      "Draft your legally valid Will online in minutes. Enter details, download court-ready printout & register hassle-free.",
     images: ["/desktopusp.jpg"],
   },
 };
@@ -59,7 +59,7 @@ const HOME_FAQ_SCHEMA = {
       "acceptedAnswer": {
         "@type": "Answer",
         "text":
-          "You answer simple, step-by-step questions about yourself, your family, and your assets. In less than 15 minutes, our legal engine generates a complete, legally formatted, court-ready Will compliant with the Indian Succession Act, 1925, ready for instant download.",
+          "You answer simple, step-by-step questions about yourself, your family, and your assets. In less than 15 minutes, our legal engine generates a complete, legally formatted, court-ready Will ready for instant download.",
       },
     },
     {

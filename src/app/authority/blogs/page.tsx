@@ -19,7 +19,7 @@ const INITIAL_BLOGS: BlogPost[] = [
     title: "Is a Will Valid on Plain Paper in India? The Legal Truth",
     slug: "is-will-valid-on-plain-paper-india",
     category: "Legal Insights",
-    excerpt: "Under the Indian Succession Act, 1925, a will does NOT require stamp paper or registration to be court-valid.",
+    excerpt: "Under Indian succession law, a will does NOT require stamp paper or registration to be court-valid.",
     author: "Senior Advocate",
     status: "PUBLISHED",
     createdAt: "2026-09-05",

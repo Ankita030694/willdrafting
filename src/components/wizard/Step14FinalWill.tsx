@@ -262,7 +262,7 @@ export default function Step14FinalWill({ state, onBack }: Step14FinalWillProps)
 
         {/* Seal Footer */}
         <div style={{ marginTop: "3.5rem", paddingTop: "1.5rem", borderTop: "1px dashed #CBD5E1", fontSize: "0.75rem", color: "#94A3B8", textAlign: "center" }}>
-          Generated via WillDrafting.com • Certified Compliant with Section 63, Indian Succession Act, 1925
+          Generated via WillDrafting.com • Certified Compliant with Statutory Indian Legal Standards
         </div>
       </div>
 

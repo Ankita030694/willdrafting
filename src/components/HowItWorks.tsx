@@ -225,7 +225,7 @@ export default function HowItWorks() {
             <p style={{ fontSize: "0.82rem", color: "var(--text-muted)", marginBottom: "1.25rem" }}>
               No legal documents required upfront. Start with your basic family information.
             </p>
-            <Link href="/start" className="btn btn-gold" style={{ width: "100%", padding: "0.75rem" }}>
+            <Link href="/contact" className="btn btn-gold" style={{ width: "100%", padding: "0.75rem" }}>
               <span>Start Questionnaire</span>
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                 <path d="M5 12h14" />

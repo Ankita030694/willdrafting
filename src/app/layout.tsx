@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   keywords: [
     "will drafting",
     "online will India",
-    "Indian Succession Act 1925",
+    "Indian succession law",
     "will registration",
     "lawyer verified will",
     "estate planning India",
@@ -91,7 +91,7 @@ const GLOBAL_SCHEMA = {
       "logo": "https://www.willdrafting.in/Logofinal.svg",
       "image": "https://www.willdrafting.in/desktopusp.jpg",
       "description":
-        "India's premier legal-tech platform for lawyer-verified online testamentary Wills under the Indian Succession Act, 1925.",
+        "India's premier legal-tech platform for lawyer-verified online testamentary Wills under Indian succession law.",
       "telephone": "+919820098765",
       "address": {
         "@type": "PostalAddress",
