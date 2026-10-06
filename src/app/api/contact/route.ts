@@ -4,11 +4,16 @@ import { connectToDatabase } from "@/lib/mongodb";
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json();
-    const { name, phone, email, whenDidItHappen, whatHappened, agreeDisclaimer, source } = body;
+    const { name, phone, email, state, message, source } = body;
 
-    if (!name || (!phone && !email)) {
+    const trimmedName = String(name || "").replace(/[^a-zA-Z\s]/g, "").trim();
+    const cleanPhone = String(phone || "").replace(/\D/g, "").slice(0, 10);
+    const cleanEmail = String(email || "").trim().toLowerCase();
+    const cleanState = String(state || "").trim();
+
+    if (!trimmedName || cleanPhone.length !== 10 || !cleanEmail || !cleanState) {
       return NextResponse.json(
-        { error: "Name and at least one contact method (phone or email) are required." },
+        { error: "Name, 10-digit phone number, valid email, and state are required." },
         { status: 400 }
       );
     }
@@ -23,12 +28,11 @@ export async function POST(request: NextRequest) {
     const userAgent = request.headers.get("user-agent") || "unknown";
 
     const newContactSubmission = {
-      name: String(name).trim(),
-      phone: phone ? String(phone).trim() : "",
-      email: email ? String(email).trim().toLowerCase() : "",
-      helpTopic: whenDidItHappen ? String(whenDidItHappen).trim() : "",
-      message: whatHappened ? String(whatHappened).trim() : "",
-      agreeDisclaimer: Boolean(agreeDisclaimer),
+      name: trimmedName,
+      phone: cleanPhone,
+      email: cleanEmail,
+      state: cleanState,
+      message: message ? String(message).trim() : "",
       source: source || "contact_page",
       status: "new",
       ipAddress: clientIp,
