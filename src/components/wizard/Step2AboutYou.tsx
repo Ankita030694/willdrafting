@@ -557,7 +557,7 @@ export default function Step2AboutYou({
                 pattern="[0-9]*"
                 maxLength={10}
                 name="phone"
-                placeholder="9820098765"
+                placeholder="Enter 10-digit number"
                 value={formData.phone}
                 onChange={(e) => {
                   const digits = e.target.value.replace(/\D/g, "").slice(0, 10);

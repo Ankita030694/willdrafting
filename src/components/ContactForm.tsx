@@ -62,7 +62,7 @@ export default function ContactForm() {
       } else {
         const errorData = await res.json().catch(() => ({}));
         setErrorMessage(
-          errorData.error || "Failed to submit inquiry. Please try again or call our helpline."
+          errorData.error || "Failed to submit inquiry. Please try again or write to hello@willdrafting.in."
         );
         setIsSubmitting(false);
       }

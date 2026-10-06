@@ -204,7 +204,7 @@ export default function LoginPage() {
                     type="tel"
                     required
                     maxLength={10}
-                    placeholder="98765 43210"
+                    placeholder="Enter 10-digit number"
                     value={phone}
                     onChange={(e) => setPhone(e.target.value.replace(/\D/g, ""))}
                     className="phone-input-field"

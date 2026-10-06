@@ -432,7 +432,7 @@ export default function Step7Guardians({
                     type="tel"
                     value={primary.phone || ""}
                     onChange={(e) => setPrimary({ ...primary, phone: e.target.value })}
-                    placeholder="+91 98100 45211"
+                    placeholder="Enter 10-digit number"
                     style={{
                       width: "100%",
                       padding: "0.55rem 0.75rem",
@@ -663,7 +663,7 @@ export default function Step7Guardians({
                         type="tel"
                         value={alternate.phone || ""}
                         onChange={(e) => setAlternate({ ...alternate, phone: e.target.value })}
-                        placeholder="+91 98100..."
+                        placeholder="Enter 10-digit number"
                         style={{
                           width: "100%",
                           padding: "0.55rem 0.75rem",

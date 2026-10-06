@@ -222,7 +222,7 @@ export default function IntakeForm({ onSuccess, compact = false }: IntakeFormPro
                 pattern="[0-9]*"
                 required
                 maxLength={10}
-                placeholder="9820098765"
+                placeholder="Enter 10-digit number"
                 value={formData.phone}
                 onChange={(e) => {
                   const val = e.target.value.replace(/\D/g, "").slice(0, 10);

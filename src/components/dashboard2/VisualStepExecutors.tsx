@@ -41,7 +41,7 @@ export default function VisualStepExecutors({
       : {
           name: "Mr. Ashok Ajmera",
           relationship: "Sole Executor / Trusted Advisor",
-          phone: "+91 98201 22334",
+          phone: "",
           email: "ashok.ajmera@example.com",
           address: "Mumbai, Maharashtra",
         }
@@ -53,7 +53,7 @@ export default function VisualStepExecutors({
       : {
           name: "Mrs. Alpana Prakash",
           relationship: "Wife / Alternate Executor",
-          phone: "+91 98200 98766",
+          phone: "",
           email: "alpana.prakash@example.com",
           address: "201 Barberry, Nahar Amrit Shakti, Chandivali, Mumbai – 400072",
         }
@@ -492,7 +492,7 @@ export default function VisualStepExecutors({
                 type="text"
                 value={tempPhone}
                 onChange={(e) => setTempPhone(e.target.value)}
-                placeholder="+91 98200 00000"
+                placeholder="Enter 10-digit number"
                 style={{
                   width: "100%",
                   padding: "0.75rem 1rem",

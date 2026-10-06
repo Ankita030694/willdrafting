@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { ArrowLeft, Home, FileText, HelpCircle, PhoneCall } from "lucide-react";
+import { ArrowLeft, Home, FileText, HelpCircle, Mail } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "404 — Page Not Found",
@@ -57,13 +57,13 @@ export default function NotFound() {
               href="/contact"
               className="flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-[#FAF7F0] text-[#172228] border border-[#172228]/10 text-sm font-medium hover:bg-[#F2EFE8] transition-colors"
             >
-              <PhoneCall className="w-4 h-4" />
+              <Mail className="w-4 h-4" />
               Contact Support
             </Link>
           </div>
 
           <div className="pt-6 border-t border-[#172228]/5 text-xs text-[#55636D]">
-            Need immediate legal guidance? Call our legal desk at <a href="tel:+919820098765" className="font-semibold text-[#172228] underline underline-offset-2">+91 98200 98765</a>.
+            Need immediate legal guidance? Reach our legal desk at <a href="mailto:hello@willdrafting.in" className="font-semibold text-[#172228] underline underline-offset-2">hello@willdrafting.in</a>.
           </div>
         </div>
       </main>

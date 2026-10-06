@@ -108,7 +108,7 @@ export default function FamilyTreeCanvas({ state, onStateChange }: FamilyTreeCan
       executorPrimary: {
         name: member.name,
         relationship: member.relationship,
-        phone: member.phone || "+91 98100 00000",
+        phone: member.phone || "",
         email: member.email || "executor@example.com",
         address: member.address || "Same as testator",
       },

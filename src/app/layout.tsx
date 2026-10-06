@@ -92,7 +92,7 @@ const GLOBAL_SCHEMA = {
       "image": "https://www.willdrafting.in/desktopusp.jpg",
       "description":
         "India's premier legal-tech platform for lawyer-verified online testamentary Wills under Indian succession law.",
-      "telephone": "+919820098765",
+      "email": "hello@willdrafting.in",
       "address": {
         "@type": "PostalAddress",
         "addressCountry": "IN",

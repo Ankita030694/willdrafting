@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { CheckCircle2, ArrowRight, ShieldCheck, Clock, Phone, Home, FileText } from "lucide-react";
+import { CheckCircle2, ArrowRight, ShieldCheck, Clock, Mail, Home, FileText } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Thank You — Request Received",
@@ -104,17 +104,17 @@ export default function ThankYouPage() {
             </Link>
           </div>
 
-          {/* Direct Legal Helpline */}
+          {/* Direct Legal Advisory Desk */}
           <div className="pt-6 border-t border-[#172228]/10 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-[#55636D]">
             <div className="flex items-center gap-2">
               <ShieldCheck className="w-4 h-4 text-[#059669]" />
               <span>Bank-Grade 256-Bit SSL Encrypted Vault</span>
             </div>
             <div className="flex items-center gap-1.5">
-              <Phone className="w-3.5 h-3.5 text-[#C65378]" />
-              <span>Direct Legal Desk: </span>
-              <a href="tel:+919820098765" className="font-semibold text-[#111827] underline">
-                +91 98200 98765
+              <Mail className="w-3.5 h-3.5 text-[#C65378]" />
+              <span>Legal Advisory Desk: </span>
+              <a href="mailto:hello@willdrafting.in" className="font-semibold text-[#111827] underline">
+                hello@willdrafting.in
               </a>
             </div>
           </div>

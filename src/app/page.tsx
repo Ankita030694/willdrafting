@@ -140,7 +140,7 @@ const HOME_FAQ_SCHEMA = {
       "acceptedAnswer": {
         "@type": "Answer",
         "text":
-          "Yes. Our legal advisory team is available via chat, email, and phone (+91 98200 98765) to assist you with executor selection, clause allocation, or registration guidance whenever you need help.",
+          "Yes. Our legal advisory team is available via online chat and email (hello@willdrafting.in) to assist you with executor selection, clause allocation, or registration guidance whenever you need help.",
       },
     },
   ],

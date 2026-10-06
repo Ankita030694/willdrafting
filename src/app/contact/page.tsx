@@ -4,7 +4,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import FAQ from "@/components/faq";
 import ContactForm from "@/components/ContactForm";
-import { Phone, Mail, MapPin } from "lucide-react";
+import { Mail, MapPin } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Contact Our Legal Advisory Team",
@@ -123,27 +123,6 @@ export default function ContactPage() {
             </p>
 
             <div className="flex flex-col space-y-5 sm:space-y-6 pt-1 pb-6">
-              {/* Phone */}
-              <div className="flex items-start gap-4">
-                <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-white border border-[#E5E7EB] shadow-sm text-[#C65378]">
-                  <Phone className="w-5 h-5" />
-                </div>
-                <div className="flex flex-col">
-                  <span className="text-[11px] font-bold uppercase tracking-[0.14em] text-[#6B7280] mb-0.5">
-                    Phone Number
-                  </span>
-                  <a
-                    href="tel:+919820098765"
-                    className="text-[15px] sm:text-[16px] font-medium text-[#111827] transition-colors hover:text-[#C65378]"
-                  >
-                    +91 98200 98765
-                  </a>
-                  <span className="text-xs text-[#718096] mt-0.5">
-                    Monday to Saturday, 9:00 AM – 8:00 PM IST
-                  </span>
-                </div>
-              </div>
-
               {/* Email */}
               <div className="flex items-start gap-4">
                 <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-white border border-[#E5E7EB] shadow-sm text-[#C65378]">

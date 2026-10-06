@@ -137,11 +137,6 @@ export default function Footer() {
             </p>
             <div className="space-y-4 text-[0.90rem] leading-relaxed">
               <p>
-                <a href="tel:+919820098765" className="hover:text-[#172228] transition-colors font-medium">
-                  +91 98200 98765
-                </a>
-              </p>
-              <p>
                 <a
                   href="mailto:hello@willdrafting.in"
                   className="font-medium text-[#172228] underline underline-offset-4 decoration-[#172228]/40 hover:decoration-[#172228] transition-colors"

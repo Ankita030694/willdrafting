@@ -12,7 +12,7 @@ export default function ExecutionGuideTab({ state }: ExecutionGuideTabProps) {
   const [assistanceBooked, setAssistanceBooked] = useState(false);
   const [assistanceModalOpen, setAssistanceModalOpen] = useState(false);
   const [city, setCity] = useState(state.testator.city || "Gurugram");
-  const [phone, setPhone] = useState(state.testator.phone || "+91 98100 45210");
+  const [phone, setPhone] = useState(state.testator.phone || "");
 
   const rules = [
     {

@@ -815,7 +815,7 @@ export default function Step3Family({
                     inputMode="numeric"
                     pattern="[0-9]*"
                     maxLength={10}
-                    placeholder="9820098765"
+                    placeholder="Enter 10-digit number"
                     value={phone}
                     onChange={(e) => setPhone(e.target.value.replace(/\D/g, "").slice(0, 10))}
                     style={{

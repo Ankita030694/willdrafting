@@ -320,7 +320,7 @@ export default function Step6Executors({
                   type="tel"
                   value={primary.phone || ""}
                   onChange={(e) => setPrimary({ ...primary, phone: e.target.value })}
-                  placeholder="+91 98100 45211"
+                  placeholder="Enter 10-digit number"
                   className="w-full bg-transparent border-0 border-b border-[#D1D5DB] focus:border-[#111827] focus:ring-0 px-0 py-2 text-[15px] text-[#111827] placeholder:text-[#9CA3AF] placeholder:font-light outline-none transition-colors rounded-none shadow-none"
                   style={{
                     borderTop: "none",
@@ -569,7 +569,7 @@ export default function Step6Executors({
                     type="tel"
                     value={alternate.phone || ""}
                     onChange={(e) => setAlternate({ ...alternate, phone: e.target.value })}
-                    placeholder="+91 98100..."
+                    placeholder="Enter 10-digit number"
                     className="w-full bg-transparent border-0 border-b border-[#D1D5DB] focus:border-[#111827] focus:ring-0 px-0 py-2 text-[15px] text-[#111827] placeholder:text-[#9CA3AF] placeholder:font-light outline-none transition-colors rounded-none shadow-none"
                     style={{
                       borderTop: "none",
