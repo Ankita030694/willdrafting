@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Plus_Jakarta_Sans } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 import "./start/dashboard/bento.css";
 import GlobalPopup from "@/components/GlobalPopup";
@@ -165,6 +166,7 @@ export default function RootLayout({
             </LanguageProvider>
           </AuthProvider>
         </StyledJsxRegistry>
+        <Analytics />
       </body>
     </html>
   );
