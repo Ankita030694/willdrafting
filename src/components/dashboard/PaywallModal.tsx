@@ -27,6 +27,9 @@ function postToPayu(action: string, fields: Record<string, string>) {
   }
   document.body.appendChild(form);
   form.submit();
+  setTimeout(() => {
+    form.remove();
+  }, 1000);
 }
 
 export default function PaywallModal({ isOpen, onClose }: PaywallModalProps) {
@@ -35,8 +38,28 @@ export default function PaywallModal({ isOpen, onClose }: PaywallModalProps) {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
+  // Reset loading state whenever the user navigates back from PayU without paying (bfcache / pageshow / tab focus)
   React.useEffect(() => {
-    if (!isOpen) return;
+    const resetLoading = () => setLoading(false);
+    const handleVisibility = () => {
+      if (document.visibilityState === "visible") setLoading(false);
+    };
+
+    window.addEventListener("pageshow", resetLoading);
+    window.addEventListener("focus", resetLoading);
+    document.addEventListener("visibilitychange", handleVisibility);
+    return () => {
+      window.removeEventListener("pageshow", resetLoading);
+      window.removeEventListener("focus", resetLoading);
+      document.removeEventListener("visibilitychange", handleVisibility);
+    };
+  }, []);
+
+  React.useEffect(() => {
+    if (!isOpen) {
+      setLoading(false);
+      return;
+    }
     const prevOverflow = document.body.style.overflow;
     document.body.style.overflow = "hidden";
     return () => {
@@ -47,6 +70,7 @@ export default function PaywallModal({ isOpen, onClose }: PaywallModalProps) {
   if (!isOpen) return null;
 
   const handleExploreDashboard = () => {
+    setLoading(false);
     onClose();
     router.push("/start/dashboard");
     router.refresh();
@@ -65,12 +89,14 @@ export default function PaywallModal({ isOpen, onClose }: PaywallModalProps) {
 
       const data = await res.json().catch(() => ({}));
       if (res.status === 401) {
+        setLoading(false);
         onClose();
         router.push("/login?callbackUrl=/start/14");
         return;
       }
       if (!res.ok) {
         if (data.needsPhone) {
+          setLoading(false);
           onClose();
           router.push("/complete-profile");
           return;
@@ -78,8 +104,11 @@ export default function PaywallModal({ isOpen, onClose }: PaywallModalProps) {
         throw new Error(data.error || "Could not start the payment.");
       }
 
-      // Leaves the site for PayU; keep the button in its loading state.
       postToPayu(data.action, data.fields);
+      // Safety reset if the user cancels navigation or comes back from PayU
+      setTimeout(() => {
+        setLoading(false);
+      }, 3500);
     } catch (err: unknown) {
       setError(err instanceof Error ? err.message : "Payment failed.");
       setLoading(false);
@@ -128,7 +157,10 @@ export default function PaywallModal({ isOpen, onClose }: PaywallModalProps) {
         overflowY: "auto",
       }}
       onClick={(e) => {
-        if (e.target === e.currentTarget && !loading) onClose();
+        if (e.target === e.currentTarget) {
+          setLoading(false);
+          onClose();
+        }
       }}
     >
       <div
@@ -147,8 +179,10 @@ export default function PaywallModal({ isOpen, onClose }: PaywallModalProps) {
       >
         <button
           type="button"
-          onClick={onClose}
-          disabled={loading}
+          onClick={() => {
+            setLoading(false);
+            onClose();
+          }}
           aria-label="Close"
           className="paywall-close-btn"
           style={{
@@ -289,7 +323,6 @@ export default function PaywallModal({ isOpen, onClose }: PaywallModalProps) {
             <button
               type="button"
               onClick={handleExploreDashboard}
-              disabled={loading}
               className="paywall-secondary-btn"
               style={{
                 width: "100%",

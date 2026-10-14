@@ -189,6 +189,22 @@ export default function Step13PlanSelect({
     onNext();
   };
 
+  useEffect(() => {
+    const resetUpgrading = () => setUpgradingPlanId(null);
+    const handleVisibility = () => {
+      if (document.visibilityState === "visible") setUpgradingPlanId(null);
+    };
+
+    window.addEventListener("pageshow", resetUpgrading);
+    window.addEventListener("focus", resetUpgrading);
+    document.addEventListener("visibilitychange", handleVisibility);
+    return () => {
+      window.removeEventListener("pageshow", resetUpgrading);
+      window.removeEventListener("focus", resetUpgrading);
+      document.removeEventListener("visibilitychange", handleVisibility);
+    };
+  }, []);
+
   const handleUpgrade = async (targetPlanId: PlanId) => {
     setUpgradingPlanId(targetPlanId);
     setUpgradeError(null);
@@ -200,6 +216,7 @@ export default function Step13PlanSelect({
       });
       const data = await res.json().catch(() => ({}));
       if (res.status === 401) {
+        setUpgradingPlanId(null);
         router.push("/login?callbackUrl=/start/12");
         return;
       }
@@ -207,6 +224,9 @@ export default function Step13PlanSelect({
         throw new Error(data.error || "Could not start upgrade.");
       }
       postToPayu(data.action, data.fields);
+      setTimeout(() => {
+        setUpgradingPlanId(null);
+      }, 3500);
     } catch (err: unknown) {
       setUpgradeError(err instanceof Error ? err.message : "Upgrade failed.");
       setUpgradingPlanId(null);
