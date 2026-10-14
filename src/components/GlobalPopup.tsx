@@ -2,13 +2,23 @@
 
 import React, { useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
+import { useSession } from "next-auth/react";
 import IntakeForm from "@/components/IntakeForm";
 import LeadNextStepModal, { type LeadDetails } from "@/components/LeadNextStepModal";
 
 export default function GlobalPopup() {
   const pathname = usePathname();
+  const { data: session, status } = useSession();
+  const isLoggedIn = status === "authenticated" && Boolean(session?.user);
   const [isOpen, setIsOpen] = useState(false);
   const [lead, setLead] = useState<LeadDetails | null>(null);
+
+  // Never show the intake form popup if the user is already signed in
+  useEffect(() => {
+    if (isLoggedIn && isOpen) {
+      setIsOpen(false);
+    }
+  }, [isLoggedIn, isOpen]);
 
   // Automatically dismiss popup and lead modal when user enters the dashboard or wizard
   useEffect(() => {
@@ -24,6 +34,9 @@ export default function GlobalPopup() {
   }, [pathname]);
 
   useEffect(() => {
+    // Wait until session status is known; never auto-show popup to logged-in users
+    if (status === "loading" || isLoggedIn) return;
+
     // Check if running in production or explicit test override via ?popup=true
     const isProd = process.env.NODE_ENV === "production";
     const hasQueryOverride =
@@ -33,7 +46,7 @@ export default function GlobalPopup() {
     // Allow custom event trigger from any CTA button on the page:
     // window.dispatchEvent(new CustomEvent("open-intake-popup"))
     const handleOpenEvent = () => {
-      setIsOpen(true);
+      if (!isLoggedIn) setIsOpen(true);
     };
     window.addEventListener("open-intake-popup", handleOpenEvent);
 
@@ -45,7 +58,7 @@ export default function GlobalPopup() {
       pathname?.startsWith("/authority") ||
       pathname?.startsWith("/print");
 
-    // Global popup logic: only visible in production (or ?popup=true query override) on public marketing pages
+    // Global popup logic: only visible in production (or ?popup=true query override) for unauthenticated visitors
     if ((isProd && !isSuppressedRoute) || hasQueryOverride) {
       const alreadyDismissed = sessionStorage.getItem("wd_global_popup_dismissed");
       if (!alreadyDismissed) {
@@ -63,7 +76,7 @@ export default function GlobalPopup() {
     return () => {
       window.removeEventListener("open-intake-popup", handleOpenEvent);
     };
-  }, [pathname]);
+  }, [pathname, status, isLoggedIn]);
 
   // Close modal and remember dismissal for current browser session
   const handleClose = () => {
