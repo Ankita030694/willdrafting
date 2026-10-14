@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";import WizardButton from "./button";
+import React, { useState, useEffect } from "react";import WizardButton from "./button";
 
 import {
   WillDraftingState,
@@ -23,10 +23,13 @@ import {
 import AudioAssistantButton from "@/components/ui/AudioAssistantButton";
 import LanguageToggle from "@/components/ui/LanguageToggle";
 import { useLanguage } from "@/context/LanguageContext";
+import { sanitizeMobileInput, isValidMobile, MOBILE_ERROR_MSG } from "@/lib/validation";
+import { sanitizeNameInput, normalizeEmail } from "@/lib/inputSanitizers";
+import { useWillStore } from "@/lib/useWillStore";
 
 interface Step7GuardiansProps {
-  state: WillDraftingState;
-  onUpdate: (updater: (prev: WillDraftingState) => WillDraftingState) => void;
+  state?: WillDraftingState;
+  onUpdate?: (updater: (prev: WillDraftingState) => WillDraftingState) => void;
   onNext: () => void;
   onBack: () => void;
   lang?: "en" | "hi";
@@ -34,13 +37,18 @@ interface Step7GuardiansProps {
 }
 
 export default function Step7Guardians({
-  state,
-  onUpdate,
+  state: propState,
+  onUpdate: propOnUpdate,
   onNext,
   onBack,
   lang: propLang,
   onChangeLang: propOnChangeLang,
 }: Step7GuardiansProps) {
+  const storeState = useWillStore((s) => s.state);
+  const storeUpdateState = useWillStore((s) => s.updateState);
+  const state = propState || storeState;
+  const onUpdate = propOnUpdate || storeUpdateState;
+
   const context = useLanguage();
   const currentLang = propLang || context.lang || "en";
   const isHi = currentLang === "hi";
@@ -75,27 +83,84 @@ export default function Step7Guardians({
     }
   );
 
+  useEffect(() => {
+    if (state.guardianPrimary) setPrimary(state.guardianPrimary);
+    if (state.guardianAlternate) {
+      setAlternate(state.guardianAlternate);
+      setHasAlternate(Boolean(state.guardianAlternate.name));
+    }
+  }, [state.guardianPrimary, state.guardianAlternate]);
+
   const [guardianScope, setGuardianScope] = useState<string>("full");
   const [errorMsg, setErrorMsg] = useState("");
 
+  const patchPrimary = (patch: Partial<PersonContact>) => {
+    setPrimary((prev) => {
+      const next = { ...prev, ...patch };
+      onUpdate((statePrev) => ({
+        ...statePrev,
+        guardianPrimary: next,
+      }));
+      return next;
+    });
+  };
+
+  const patchAlternate = (patch: Partial<PersonContact>) => {
+    setAlternate((prev) => {
+      const next = { ...prev, ...patch };
+      onUpdate((statePrev) => ({
+        ...statePrev,
+        guardianAlternate: next,
+      }));
+      return next;
+    });
+  };
+
+  const handleToggleAlternate = (checked: boolean) => {
+    setHasAlternate(checked);
+    if (!checked) {
+      onUpdate((statePrev) => ({
+        ...statePrev,
+        guardianAlternate: { name: "", relationship: "", phone: "", email: "", address: "" },
+      }));
+    } else {
+      onUpdate((statePrev) => ({
+        ...statePrev,
+        guardianAlternate: alternate,
+      }));
+    }
+  };
+
+  const resolveFamilyAddress = (addr?: string) => {
+    if (!addr) return "";
+    if (addr === "Same as your address (Will creator)") {
+      return [state.testator.address, state.testator.city, state.testator.state, state.testator.pincode]
+        .filter(Boolean)
+        .join(", ");
+    }
+    return addr;
+  };
+
   const handleSelectPrimary = (f: typeof state.familyMembers[0]) => {
-    setPrimary((prev: PersonContact) => ({
-      ...prev,
+    const resolvedAddr = resolveFamilyAddress(f.address);
+    patchPrimary({
       name: f.name,
-      relationship: f.relationship,
-      phone: f.phone || prev.phone,
-      email: f.email || prev.email,
-    }));
+      relationship: f.relationship === "other" && f.customRelationship ? f.customRelationship : f.relationship,
+      phone: f.phone || primary.phone,
+      email: f.email || primary.email,
+      address: resolvedAddr || primary.address,
+    });
   };
 
   const handleSelectAlternate = (f: typeof state.familyMembers[0]) => {
-    setAlternate((prev: PersonContact) => ({
-      ...prev,
+    const resolvedAddr = resolveFamilyAddress(f.address);
+    patchAlternate({
       name: f.name,
-      relationship: f.relationship,
-      phone: f.phone || prev.phone,
-      email: f.email || prev.email,
-    }));
+      relationship: f.relationship === "other" && f.customRelationship ? f.customRelationship : f.relationship,
+      phone: f.phone || alternate.phone,
+      email: f.email || alternate.email,
+      address: resolvedAddr || alternate.address,
+    });
   };
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -106,9 +171,17 @@ export default function Step7Guardians({
         setErrorMsg("Please specify the full legal name of your Testamentary Guardian.");
         return;
       }
+      if (primary.phone && !isValidMobile(primary.phone)) {
+        setErrorMsg(isHi ? "मोबाइल नंबर में ठीक 10 अंक होने चाहिए।" : MOBILE_ERROR_MSG);
+        return;
+      }
 
       if (hasAlternate && !alternate.name.trim()) {
         setErrorMsg("Please specify the alternate guardian's name or disable the alternate toggle.");
+        return;
+      }
+      if (hasAlternate && alternate.phone && !isValidMobile(alternate.phone)) {
+        setErrorMsg(isHi ? "मोबाइल नंबर में ठीक 10 अंक होने चाहिए।" : MOBILE_ERROR_MSG);
         return;
       }
     }
@@ -139,7 +212,7 @@ export default function Step7Guardians({
       {/* Header */}
       <div>
         <div style={{ display: "flex", alignItems: "center", justifyContent: "flex-end", marginBottom: "0.35rem" }}>
-          <div style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
+          <div className="wizard-step-header-meta" style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
             <LanguageToggle size="sm" currentLang={currentLang} onToggle={handleToggleLang} />
             <AudioAssistantButton
               textToSpeak="Who will be the legal guardian of your minor children? A testamentary guardian cares for their physical custody and financial well-being until they turn 18. You can select a trusted family member."
@@ -369,7 +442,7 @@ export default function Step7Guardians({
                     type="text"
                     required
                     value={primary.name}
-                    onChange={(e) => setPrimary({ ...primary, name: e.target.value })}
+                    onChange={(e) => patchPrimary({ name: sanitizeNameInput(e.target.value) })}
                     placeholder="e.g., Sunita Sharma"
                     style={{
                       width: "100%",
@@ -390,7 +463,7 @@ export default function Step7Guardians({
                     type="text"
                     required
                     value={primary.relationship}
-                    onChange={(e) => setPrimary({ ...primary, relationship: e.target.value })}
+                    onChange={(e) => patchPrimary({ relationship: sanitizeNameInput(e.target.value) })}
                     placeholder="e.g., Maternal Aunt / Sister"
                     style={{
                       width: "100%",
@@ -418,7 +491,18 @@ export default function Step7Guardians({
                       { value: "property_only", label: "Property Trustee" },
                     ]}
                     value={guardianScope}
-                    onChange={setGuardianScope}
+                    onChange={(val) => {
+                      setGuardianScope(val);
+                      onUpdate((s) => ({
+                        ...s,
+                        guardianSpecialInstructions:
+                          val === "full"
+                            ? "Full custody of person and property."
+                            : val === "person_only"
+                            ? "Custody of person only."
+                            : "Custody of property only.",
+                      }));
+                    }}
                   />
                 </div>
               </div>
@@ -429,10 +513,13 @@ export default function Step7Guardians({
                     Mobile Phone
                   </label>
                   <input
-                    type="tel"
+                    type="text"
+                    inputMode="numeric"
+                    autoComplete="off"
+                    maxLength={10}
                     value={primary.phone || ""}
-                    onChange={(e) => setPrimary({ ...primary, phone: e.target.value })}
-                    placeholder="Enter 10-digit number"
+                    onChange={(e) => patchPrimary({ phone: sanitizeMobileInput(e.target.value) })}
+                    placeholder="10-digit mobile number"
                     style={{
                       width: "100%",
                       padding: "0.55rem 0.75rem",
@@ -451,7 +538,7 @@ export default function Step7Guardians({
                   <input
                     type="email"
                     value={primary.email || ""}
-                    onChange={(e) => setPrimary({ ...primary, email: e.target.value })}
+                    onChange={(e) => patchPrimary({ email: normalizeEmail(e.target.value) })}
                     placeholder="guardian@example.com"
                     style={{
                       width: "100%",
@@ -464,6 +551,27 @@ export default function Step7Guardians({
                     }}
                   />
                 </div>
+              </div>
+
+              <div>
+                <label style={{ display: "block", fontSize: "0.75rem", fontWeight: 700, color: "var(--color-navy)", marginBottom: "0.3rem" }}>
+                  Residential Address (Optional)
+                </label>
+                <input
+                  type="text"
+                  value={primary.address || ""}
+                  onChange={(e) => patchPrimary({ address: e.target.value })}
+                  placeholder="e.g., A-402, Green Glen Layout, Bengaluru"
+                  style={{
+                    width: "100%",
+                    padding: "0.55rem 0.75rem",
+                    borderRadius: "10px",
+                    border: "1px solid rgba(27, 42, 74, 0.12)",
+                    fontSize: "0.85rem",
+                    color: "var(--color-navy)",
+                    outline: "none",
+                  }}
+                />
               </div>
             </div>
 
@@ -510,7 +618,7 @@ export default function Step7Guardians({
                   <span style={{ fontSize: "0.75rem", fontWeight: 600, color: hasAlternate ? "var(--color-navy)" : "var(--color-slate)" }}>
                     {hasAlternate ? "Enabled" : "Disabled"}
                   </span>
-                  <AppleSwitch checked={hasAlternate} onChange={setHasAlternate} />
+                  <AppleSwitch checked={hasAlternate} onChange={handleToggleAlternate} />
                 </div>
               </div>
 
@@ -552,7 +660,7 @@ export default function Step7Guardians({
                   </p>
                   <button
                     type="button"
-                    onClick={() => setHasAlternate(true)}
+                    onClick={() => handleToggleAlternate(true)}
                     style={{
                       padding: "0.45rem 1rem",
                       borderRadius: "10px",
@@ -618,7 +726,7 @@ export default function Step7Guardians({
                         type="text"
                         required={hasAlternate}
                         value={alternate.name}
-                        onChange={(e) => setAlternate({ ...alternate, name: e.target.value })}
+                        onChange={(e) => patchAlternate({ name: sanitizeNameInput(e.target.value) })}
                         placeholder="e.g., Rajesh Sharma"
                         style={{
                           width: "100%",
@@ -639,7 +747,7 @@ export default function Step7Guardians({
                         type="text"
                         required={hasAlternate}
                         value={alternate.relationship}
-                        onChange={(e) => setAlternate({ ...alternate, relationship: e.target.value })}
+                        onChange={(e) => patchAlternate({ relationship: sanitizeNameInput(e.target.value) })}
                         placeholder="e.g., Paternal Uncle / Brother"
                         style={{
                           width: "100%",
@@ -660,10 +768,13 @@ export default function Step7Guardians({
                         Mobile Phone
                       </label>
                       <input
-                        type="tel"
+                        type="text"
+                        inputMode="numeric"
+                        autoComplete="off"
+                        maxLength={10}
                         value={alternate.phone || ""}
-                        onChange={(e) => setAlternate({ ...alternate, phone: e.target.value })}
-                        placeholder="Enter 10-digit number"
+                        onChange={(e) => patchAlternate({ phone: sanitizeMobileInput(e.target.value) })}
+                        placeholder="10-digit mobile number"
                         style={{
                           width: "100%",
                           padding: "0.55rem 0.75rem",
@@ -682,7 +793,7 @@ export default function Step7Guardians({
                       <input
                         type="email"
                         value={alternate.email || ""}
-                        onChange={(e) => setAlternate({ ...alternate, email: e.target.value })}
+                        onChange={(e) => patchAlternate({ email: normalizeEmail(e.target.value) })}
                         placeholder="alternate@example.com"
                         style={{
                           width: "100%",
@@ -695,6 +806,27 @@ export default function Step7Guardians({
                         }}
                       />
                     </div>
+                  </div>
+
+                  <div>
+                    <label style={{ display: "block", fontSize: "0.75rem", fontWeight: 700, color: "var(--color-navy)", marginBottom: "0.3rem" }}>
+                      Residential Address (Optional)
+                    </label>
+                    <input
+                      type="text"
+                      value={alternate.address || ""}
+                      onChange={(e) => patchAlternate({ address: e.target.value })}
+                      placeholder="e.g., Delhi, NCR"
+                      style={{
+                        width: "100%",
+                        padding: "0.55rem 0.75rem",
+                        borderRadius: "10px",
+                        border: "1px solid rgba(27, 42, 74, 0.12)",
+                        fontSize: "0.85rem",
+                        color: "var(--color-navy)",
+                        outline: "none",
+                      }}
+                    />
                   </div>
                 </>
               )}

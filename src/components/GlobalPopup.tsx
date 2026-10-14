@@ -1,12 +1,12 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
-import { useRouter } from "next/navigation";
 import IntakeForm from "@/components/IntakeForm";
+import LeadNextStepModal, { type LeadDetails } from "@/components/LeadNextStepModal";
 
 export default function GlobalPopup() {
-  const router = useRouter();
   const [isOpen, setIsOpen] = useState(false);
+  const [lead, setLead] = useState<LeadDetails | null>(null);
 
   useEffect(() => {
     // Check if running in production or explicit test override via ?popup=true
@@ -58,6 +58,10 @@ export default function GlobalPopup() {
     window.addEventListener("keydown", handleKeyDown);
     return () => window.removeEventListener("keydown", handleKeyDown);
   }, [isOpen]);
+
+  if (lead) {
+    return <LeadNextStepModal lead={lead} onDismiss={() => setLead(null)} />;
+  }
 
   if (!isOpen) return null;
 
@@ -149,9 +153,10 @@ export default function GlobalPopup() {
         {/* Embedded Intake Form */}
         <IntakeForm
           compact
-          onSuccess={() => {
+          onSuccess={(saved) => {
             setIsOpen(false);
-            router.push("/thank-you");
+            sessionStorage.setItem("wd_global_popup_dismissed", "true");
+            setLead(saved);
           }}
         />
       </div>

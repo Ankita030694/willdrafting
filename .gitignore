@@ -41,3 +41,6 @@ atlas-credentials*.env
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# local migration backups (contain personal data)
+/backups/

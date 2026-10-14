@@ -20,7 +20,7 @@ import LanguageToggle from "@/components/ui/LanguageToggle";
 
 import WizardButton from "./button";
 interface Step1WelcomeProps {
-  state: WillDraftingState;
+  state?: WillDraftingState;
   onNext: () => void;
   lang?: "en" | "hi";
   onChangeLang?: (lang: "en" | "hi") => void;
@@ -55,7 +55,7 @@ export default function Step1Welcome({
       title: "Allocations & Appointments",
       desc: "Percentage distributions, primary & alternate executors, and minor guardians.",
       hindiTitle: "बंटवारा एवं प्रबंधक नियुक्ति",
-      hindiDesc: "संपत्ति का प्रतिशत बंटवारा, मुख्य व वैकल्पिक निष्पादक (Executor) और नाबालिगों के अभिभावक।",
+      hindiDesc: "संपत्ति का प्रतिशत बंटवारा, मुख्य व वैकल्पिक निष्पादक और नाबालिगों के अभिभावक।",
       Icon: Scale,
     },
     {
@@ -69,9 +69,10 @@ export default function Step1Welcome({
   ];
 
   return (
-    <div style={{ display: "flex", flexDirection: "column", gap: "1.25rem", width: "100%", height: "100%", justifyContent: "space-between" }}>
+    <div className="step1-welcome-root" style={{ display: "flex", flexDirection: "column", gap: "1.25rem", width: "100%", height: "100%", justifyContent: "space-between" }}>
       {/* Sleek Onboarding Hero Card */}
       <div
+        className="step1-hero-card"
         style={{
           background: "linear-gradient(135deg, rgba(255, 255, 255, 0.98), rgba(250, 247, 240, 0.9))",
           borderRadius: "20px",
@@ -118,7 +119,7 @@ export default function Step1Welcome({
                   ? "विल ड्राफ्टिंग में आपका स्वागत है! वसीयतनामा बनाना अपने परिवार की सुरक्षा का सबसे बड़ा कदम है। इसमें केवल 10 से 15 मिनट लगते हैं। शुरू करने के लिए प्रश्नोत्तरी शुरू करें पर टैप करें।"
                   : "Welcome to Will Drafting! Making a will is an act of love to protect your family. It takes just 10 to 15 minutes. We guide you step by step in simple language. Tap Begin Questionnaire to start."
               }
-              label={isHi ? "सुनें 🔊" : "Listen / सुनें 🔊"}
+              label={isHi ? "सुनें 🔊" : "Listen 🔊"}
             />
             {[
               { Icon: Clock, label: isHi ? "10-15 मिनट" : "10-15 Min" },
@@ -195,12 +196,13 @@ export default function Step1Welcome({
             : "What you will complete in 4 simple phases:"}
         </h3>
 
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: "0.85rem", flex: 1, minHeight: 0 }}>
+        <div className="step1-roadmap-grid" style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: "0.85rem", flex: 1, minHeight: 0 }}>
           {roadmapItems.map((item) => {
             const ItemIcon = item.Icon;
             return (
               <div
                 key={item.num}
+                className="step1-roadmap-card"
                 style={{
                   backgroundColor: "#FFFFFF",
                   borderRadius: "16px",
@@ -246,6 +248,7 @@ export default function Step1Welcome({
 
       {/* Bottom Bar: Clean Assurance + Action Button */}
       <div
+        className="step1-bottom-bar"
         style={{
           display: "flex",
           justifyContent: "space-between",
@@ -258,7 +261,7 @@ export default function Step1Welcome({
         }}
       >
         <div style={{ display: "flex", alignItems: "center", gap: "0.65rem" }}>
-          <ShieldCheck size={18} color="var(--color-sage)" />
+          <ShieldCheck size={18} color="var(--color-sage)" style={{ flexShrink: 0 }} />
           <span style={{ fontSize: "0.82rem", color: "var(--color-navy)", fontWeight: 500 }}>
             {isHi ? (
               <>
@@ -274,7 +277,7 @@ export default function Step1Welcome({
 
         <button
           onClick={onNext}
-          className="btn btn-gold"
+          className="btn btn-gold step1-cta-btn"
           style={{
             padding: "0.75rem 1.85rem",
             borderRadius: "12px",

@@ -7,7 +7,7 @@ export default function AuthorityDraftPage() {
   const [formData, setFormData] = useState({
     testatorName: "Rajesh Kumar Sharma",
     testatorAge: "54",
-    fatherOrSpouseName: "Late Sh. Ram Prakash Sharma",
+    fatherOrSpouseName: "Ram Prakash Sharma",
     residentialAddress: "B-402, Green Park Apartments, New Delhi 110016",
     state: "Delhi",
     maritalStatus: "Married",

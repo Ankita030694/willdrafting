@@ -1,13 +1,13 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import Image from "next/image";
-import { useRouter } from "next/navigation";
+import LeadNextStepModal, { type LeadDetails } from "@/components/LeadNextStepModal";
 import { Star, Loader2 } from "lucide-react";
 import { INDIAN_STATES_AND_UTS } from "@/lib/pincode";
 
 export default function ContactForm() {
-  const router = useRouter();
+  const [savedLead, setSavedLead] = useState<LeadDetails | null>(null);
   const [formData, setFormData] = useState({
     name: "",
     phone: "",
@@ -18,11 +18,6 @@ export default function ContactForm() {
 
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [errorMessage, setErrorMessage] = useState("");
-
-  // Pre-load thank you page in the browser cache for instant transition
-  useEffect(() => {
-    router.prefetch("/thank-you");
-  }, [router]);
 
   // Name: only alphabets and whitespaces allowed
   const handleNameChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -84,14 +79,19 @@ export default function ContactForm() {
     setErrorMessage("");
 
     try {
-      const res = await fetch("/api/contact", {
+      const res = await fetch("/api/leads", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData),
+        body: JSON.stringify({ ...formData, source: "contact_form" }),
       });
 
       if (res.ok) {
-        router.push("/thank-you");
+        setSavedLead({
+          name: formData.name.trim(),
+          email: formData.email.trim(),
+          phone: formData.phone,
+        });
+        setIsSubmitting(false);
       } else {
         const errorData = await res.json().catch(() => ({}));
         setErrorMessage(
@@ -101,12 +101,14 @@ export default function ContactForm() {
       }
     } catch (err) {
       console.error("Submission error:", err);
-      router.push("/thank-you");
+      setErrorMessage("Network error. Please check your connection and try again.");
+      setIsSubmitting(false);
     }
   };
 
   return (
     <div className="w-full">
+      <LeadNextStepModal lead={savedLead} onDismiss={() => setSavedLead(null)} />
       <form onSubmit={handleSubmit} className="flex flex-col space-y-7 sm:space-y-8">
         {/* Row 1: Name and Phone Number */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-7 sm:gap-8">
@@ -247,10 +249,10 @@ export default function ContactForm() {
             {isSubmitting ? (
               <>
                 <Loader2 className="w-4 h-4 mr-2 animate-spin" />
-                Sending...
+                Starting...
               </>
             ) : (
-              "Send this to us"
+              "Start now →"
             )}
           </button>
         </div>

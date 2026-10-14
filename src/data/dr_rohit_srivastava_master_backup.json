@@ -1,0 +1,766 @@
+{
+  "currentStep": 14,
+  "testator": {
+    "fullName": "Dr. Rohit Srivastava",
+    "fatherOrMotherName": "Late Mrs. Manju Srivastava",
+    "pan": "BAZPS9068N",
+    "aadhaar": "3546 XXXX XXXX",
+    "workplace": "Room 505, Department of Biosciences and Bioengineering, Indian Institute of Technology Bombay, Powai, Mumbai – 400076",
+    "dob": "1976-05-14",
+    "gender": "male",
+    "maritalStatus": "married",
+    "religionPersonalLaw": "hindu",
+    "email": "rohit.srivastava@iitb.ac.in",
+    "phone": "",
+    "address": "201 Barberry, Nahar Amrit Shakti, Chandivali",
+    "city": "Mumbai",
+    "state": "Maharashtra",
+    "pincode": "400072",
+    "citizenship": "Indian",
+    "hasPreviousWill": false,
+    "revokePreviousWill": true
+  },
+  "familyMembers": [
+    {
+      "id": "fam-alpana",
+      "name": "Mrs. Alpana Prakash",
+      "relationship": "spouse",
+      "pan": "CJDPP6174L",
+      "dob": "1978-08-12",
+      "isMinor": false,
+      "phone": "",
+      "email": "alpana.prakash@example.com",
+      "address": "201 Barberry, Nahar Amrit Shakti, Chandivali, Mumbai – 400072",
+      "notes": "Wife and Principal Beneficiary under this Will"
+    },
+    {
+      "id": "fam-aarohi",
+      "name": "Ms. Aarohi Shankar",
+      "relationship": "daughter",
+      "pan": "UNGPS6807G",
+      "dob": "2004-03-20",
+      "isMinor": false,
+      "phone": "",
+      "email": "aarohi.shankar@example.com",
+      "address": "201 Barberry, Nahar Amrit Shakti, Chandivali, Mumbai – 400072",
+      "notes": "Daughter and Contingent / Exclusive Beneficiary for Mutual Funds & Sukanya Samriddhi"
+    },
+    {
+      "id": "fam-amit",
+      "name": "Mr. Amit Srivastava",
+      "relationship": "brother",
+      "dob": "1974-11-10",
+      "isMinor": false,
+      "phone": "",
+      "email": "amit.srivastava@example.com",
+      "address": "S.K. Nagar, Patna, Bihar",
+      "notes": "Brother of Testator (Co-heir for Maternal Properties in Neral & Patna in equal 50% proportion)"
+    },
+    {
+      "id": "fam-arnab",
+      "name": "Dr. Arnab Ghosh",
+      "relationship": "other",
+      "dob": "1982-01-01",
+      "isMinor": false,
+      "phone": "",
+      "email": "arnab.ghosh@clinicosis.com",
+      "address": "Kolkata, West Bengal",
+      "notes": "Co-founder / Transferee for 49% shareholding of Clinicosis Private Limited"
+    }
+  ],
+  "assets": [
+    {
+      "id": "ast-bank-1",
+      "category": "bank_account",
+      "name": "SBI IIT Powai Salary Account",
+      "typeDetails": "Salary Account",
+      "identifier": "Account No. 10725862853",
+      "addressOrInstitution": "State Bank of India, IIT Powai Branch, Mumbai",
+      "ownership": "sole",
+      "approximateValue": 1200000,
+      "hasLoan": false
+    },
+    {
+      "id": "ast-bank-2",
+      "category": "bank_account",
+      "name": "HDFC Bank Hiranandani Account",
+      "typeDetails": "Savings Account",
+      "identifier": "Account No. 02391000033626",
+      "addressOrInstitution": "HDFC Bank, Hiranandani Gardens, Powai, Mumbai",
+      "ownership": "sole",
+      "approximateValue": 850000,
+      "hasLoan": false
+    },
+    {
+      "id": "ast-bank-3",
+      "category": "bank_account",
+      "name": "Canara Bank IIT Powai Account",
+      "typeDetails": "Savings Account",
+      "identifier": "Account No. 2724101090157",
+      "addressOrInstitution": "Canara Bank, IIT Powai Branch, Mumbai",
+      "ownership": "sole",
+      "approximateValue": 650000,
+      "hasLoan": false
+    },
+    {
+      "id": "ast-bank-4",
+      "category": "bank_account",
+      "name": "SBI S.K. Nagar Patna Account",
+      "typeDetails": "Savings Account",
+      "identifier": "Account No. 10223863266",
+      "addressOrInstitution": "State Bank of India, S.K. Nagar Branch, Patna, Bihar",
+      "ownership": "sole",
+      "approximateValue": 450000,
+      "hasLoan": false
+    },
+    {
+      "id": "ast-bank-5",
+      "category": "bank_account",
+      "name": "Kotak Mahindra Bank Lake Homes Chandivali Account",
+      "typeDetails": "Savings Account",
+      "identifier": "Account No. 0847252624",
+      "addressOrInstitution": "Kotak Mahindra Bank, Lake Homes Chandivali Branch, Mumbai",
+      "ownership": "sole",
+      "approximateValue": 500000,
+      "hasLoan": false
+    },
+    {
+      "id": "ast-prop-1",
+      "category": "property",
+      "name": "Powai Flat (B/505, Cypress CHS Ltd.)",
+      "typeDetails": "Residential Flat",
+      "identifier": "Share Certificate No. 064, Folio No. 59 (Sale Deed 14-04475-2011 & Gift Deed 3-834-2017)",
+      "addressOrInstitution": "B/505, Cypress CHS Ltd., Hiranandani Gardens, Powai, Mumbai – 400076",
+      "ownership": "sole",
+      "approximateValue": 32000000,
+      "hasLoan": true,
+      "loanDetails": "Original title documents deposited with Credila Finance as collateral security for education loan of Ms. Aarohi Shankar (to form part of estate upon release)"
+    },
+    {
+      "id": "ast-prop-2",
+      "category": "property",
+      "name": "Palava Flat (1002, Casa Regalia B)",
+      "typeDetails": "Residential Flat",
+      "identifier": "Serial No. 40/2015 at Kalyan-5 (Agreement for Sale dated 02/01/2015)",
+      "addressOrInstitution": "1002, Casa Regalia B, Lakeshore Greens, Palava City Phase 2, Dombivli (East)",
+      "ownership": "joint",
+      "jointOwnerName": "Mrs. Alpana Prakash",
+      "approximateValue": 6500000,
+      "hasLoan": true,
+      "loanDetails": "Original title documents deposited with PNB Housing Finance under Housing Loan No. 00136660004935 (to continue in estate upon discharge)"
+    },
+    {
+      "id": "ast-prop-3",
+      "category": "property",
+      "name": "Properties Standing in Name of Late Mother (Mrs. Manju Srivastava)",
+      "typeDetails": "Inherited Properties & Land",
+      "identifier": "Bungalow A-34 Poshir Neral (Sale Deed 1251/2015), Bungalow 33 S.K. Nagar Patna, Fulwari Sharif Land (Tauji 18165, Khata 29, Plot 729 ~2 Katha 2 Dhur)",
+      "addressOrInstitution": "The Destination, Poshir, Neral, Raigad & Patna, Bihar",
+      "ownership": "joint",
+      "jointOwnerName": "Late Mrs. Manju Srivastava / Mr. Amit Srivastava",
+      "approximateValue": 15000000,
+      "hasLoan": false,
+      "specialInstructions": "Shall devolve jointly upon Mrs. Alpana Prakash (50%) and brother Mr. Amit Srivastava (50%) in equal proportion subject to title verification."
+    },
+    {
+      "id": "ast-prop-4",
+      "category": "property",
+      "name": "Agricultural Land (Sudhagarh, Raigad)",
+      "typeDetails": "Agricultural Land",
+      "identifier": "Parcel No. 76 (~0.2298 hectares / 24,736 sq. ft.), Gat No. 96/2, 7/12 Khata No. 1051",
+      "addressOrInstitution": "Village Ambulse, Gat No. 96/2, Taluka Sudhagarh, District Raigad, Maharashtra",
+      "ownership": "sole",
+      "approximateValue": 3500000,
+      "hasLoan": false
+    },
+    {
+      "id": "ast-eq-1",
+      "category": "business",
+      "name": "Effecmed Private Limited",
+      "typeDetails": "Startup Equity",
+      "identifier": "CIN: U33100MH2021PTC372949 | 9827 shares (~13.28% equity)",
+      "addressOrInstitution": "Effecmed Private Limited",
+      "ownership": "sole",
+      "approximateValue": 2500000,
+      "hasLoan": false
+    },
+    {
+      "id": "ast-eq-2",
+      "category": "business",
+      "name": "Shodhsens Private Limited",
+      "typeDetails": "Startup Equity",
+      "identifier": "CIN: U72100PN2023PTC219529 | 30% equity",
+      "addressOrInstitution": "Shodhsens Private Limited",
+      "ownership": "sole",
+      "approximateValue": 3000000,
+      "hasLoan": false
+    },
+    {
+      "id": "ast-eq-3",
+      "category": "business",
+      "name": "Clinicosis Private Limited",
+      "typeDetails": "Startup Equity",
+      "identifier": "CIN: U24230WB2021PTC248845 | 98% equity",
+      "addressOrInstitution": "Clinicosis Private Limited",
+      "ownership": "sole",
+      "approximateValue": 5000000,
+      "hasLoan": false,
+      "specialInstructions": "49% transferred to Dr. Arnab Ghosh or his lawful representative; remaining shares vest in Mrs. Alpana Prakash."
+    },
+    {
+      "id": "ast-eq-4",
+      "category": "business",
+      "name": "MedInnoTec Private Limited",
+      "typeDetails": "Startup Equity",
+      "identifier": "CIN: U32509MH2023PTC409481 | 20% equity",
+      "addressOrInstitution": "MedInnoTec Private Limited",
+      "ownership": "sole",
+      "approximateValue": 2000000,
+      "hasLoan": false
+    },
+    {
+      "id": "ast-eq-5",
+      "category": "business",
+      "name": "Lifeseed Reproductive Healthcare Private Limited",
+      "typeDetails": "Startup Equity",
+      "identifier": "CIN: U72100MH2023PTC411810 | 30% equity",
+      "addressOrInstitution": "Lifeseed Reproductive Healthcare Private Limited",
+      "ownership": "sole",
+      "approximateValue": 2500000,
+      "hasLoan": false
+    },
+    {
+      "id": "ast-eq-6",
+      "category": "business",
+      "name": "Hemoflo Devices Private Limited",
+      "typeDetails": "Startup Equity",
+      "identifier": "CIN: U32500MH2024PTC433130 | 30% equity",
+      "addressOrInstitution": "Hemoflo Devices Private Limited",
+      "ownership": "sole",
+      "approximateValue": 2000000,
+      "hasLoan": false
+    },
+    {
+      "id": "ast-eq-7",
+      "category": "business",
+      "name": "Polytrack Devices Private Limited",
+      "typeDetails": "Startup Equity",
+      "identifier": "CIN: U32500MH2024PTC433131 | 30% equity",
+      "addressOrInstitution": "Polytrack Devices Private Limited",
+      "ownership": "sole",
+      "approximateValue": 2000000,
+      "hasLoan": false
+    },
+    {
+      "id": "ast-eq-8",
+      "category": "business",
+      "name": "NanoTherapX Private Limited",
+      "typeDetails": "Startup Equity",
+      "identifier": "CIN: U72100MH2025PTC445103 | 25% equity",
+      "addressOrInstitution": "NanoTherapX Private Limited",
+      "ownership": "sole",
+      "approximateValue": 2000000,
+      "hasLoan": false
+    },
+    {
+      "id": "ast-eq-9",
+      "category": "business",
+      "name": "Drepto Biodevices Private Limited",
+      "typeDetails": "Startup Equity",
+      "identifier": "CIN: U21001MH2025PTC445595 | 15% equity",
+      "addressOrInstitution": "Drepto Biodevices Private Limited",
+      "ownership": "sole",
+      "approximateValue": 1500000,
+      "hasLoan": false
+    },
+    {
+      "id": "ast-eq-10",
+      "category": "business",
+      "name": "MedTecInno Technologies Private Limited",
+      "typeDetails": "Startup Equity",
+      "identifier": "CIN: U32509MH2025PTC461348 | 44% equity",
+      "addressOrInstitution": "MedTecInno Technologies Private Limited",
+      "ownership": "sole",
+      "approximateValue": 3500000,
+      "hasLoan": false
+    },
+    {
+      "id": "ast-eq-11",
+      "category": "business",
+      "name": "MedVentX Technologies Private Limited",
+      "typeDetails": "Startup Equity",
+      "identifier": "CIN: U32509MH2025PTC457745 | 25% equity",
+      "addressOrInstitution": "MedVentX Technologies Private Limited",
+      "ownership": "sole",
+      "approximateValue": 2000000,
+      "hasLoan": false
+    },
+    {
+      "id": "ast-eq-12",
+      "category": "business",
+      "name": "Exinovus Private Limited",
+      "typeDetails": "Startup Equity",
+      "identifier": "CIN: U32509MH2026PTC468698 | 22% equity",
+      "addressOrInstitution": "Exinovus Private Limited",
+      "ownership": "sole",
+      "approximateValue": 1800000,
+      "hasLoan": false
+    },
+    {
+      "id": "ast-eq-13",
+      "category": "business",
+      "name": "Dermatologist Labs Private Limited",
+      "typeDetails": "Startup Equity",
+      "identifier": "CIN: U20237MH2026PTC467703 | 10% equity",
+      "addressOrInstitution": "Dermatologist Labs Private Limited",
+      "ownership": "sole",
+      "approximateValue": 1000000,
+      "hasLoan": false
+    },
+    {
+      "id": "ast-adv-1",
+      "category": "shares",
+      "name": "Advisory / ESOP Holdings (DotoHealth, Neodocs, Shasvi, iKure)",
+      "typeDetails": "Advisory & Stock Options",
+      "identifier": "DotoHealth (100 shares ₹10), Neodocs (Options ₹30L), Shasvi (7% subj to IITB NOC), iKure (4% ESOP ~2200 shares)",
+      "addressOrInstitution": "Various Tech & Biotech Startups",
+      "ownership": "sole",
+      "approximateValue": 4500000,
+      "hasLoan": false
+    },
+    {
+      "id": "ast-sine-1",
+      "category": "shares",
+      "name": "SINE Held Structures Beneficial Ownership",
+      "typeDetails": "Incubator Beneficial Holdings",
+      "identifier": "Unbound Innovation (5% SINE, 70% beneficial), Ferry Lifesciences (5% SINE, 70% beneficial), EarthyPromise Unlock (5% SINE IITB)",
+      "addressOrInstitution": "SINE, IIT Bombay",
+      "ownership": "sole",
+      "approximateValue": 5000000,
+      "hasLoan": false
+    },
+    {
+      "id": "ast-mf-1",
+      "category": "investments",
+      "name": "Mutual Fund Portfolios (Kotak, HDFC, Axis)",
+      "typeDetails": "Mutual Funds & SIPs",
+      "identifier": "Kotak MF Folio 17261147, HDFC MF Folio 36797642, Axis MF Folio 910206177056",
+      "addressOrInstitution": "Kotak, HDFC & Axis Asset Management Companies",
+      "ownership": "sole",
+      "approximateValue": 4800000,
+      "hasLoan": false,
+      "specialInstructions": "All proceeds, dividends, and growth benefits earmarked exclusively for the welfare and benefit of daughter Ms. Aarohi Shankar."
+    },
+    {
+      "id": "ast-ret-1",
+      "category": "bank_account",
+      "name": "Provident Fund, PPF, NPS & Gratuity",
+      "typeDetails": "Retirement Benefits & PPF",
+      "identifier": "PPF A/c 32402528584 (SBI IIT Powai), NPS A/c 110031424796, Gratuity & Retirement Entitlements",
+      "addressOrInstitution": "IIT Bombay & State Bank of India",
+      "ownership": "sole",
+      "approximateValue": 6500000,
+      "hasLoan": false
+    },
+    {
+      "id": "ast-ins-1",
+      "category": "insurance",
+      "name": "Life Insurance & Group Term Policies",
+      "typeDetails": "Life & Group Term Insurance",
+      "identifier": "AVIVA ALA3080631 (₹75L), Canara HSBC 0126704212 (₹2Cr), SBI Life 72200021905 (₹30L), PNB MetLife 23824339 (₹2Cr), IIT Bombay Group Term Emp ID 10000733 (₹1Cr)",
+      "addressOrInstitution": "AVIVA, Canara HSBC, SBI Life, PNB MetLife, IIT Bombay",
+      "ownership": "sole",
+      "approximateValue": 60500000,
+      "hasLoan": false
+    },
+    {
+      "id": "ast-pli-1",
+      "category": "insurance",
+      "name": "Postal Life Insurance Policy",
+      "typeDetails": "Postal Life Insurance",
+      "identifier": "Policy No. MH-334644-CC",
+      "addressOrInstitution": "Department of Posts, India",
+      "ownership": "sole",
+      "approximateValue": 1000000,
+      "hasLoan": false
+    },
+    {
+      "id": "ast-lkr-1",
+      "category": "jewellery",
+      "name": "Canara Bank Joint Locker & Contents",
+      "typeDetails": "Bank Locker & Valuables",
+      "identifier": "Canara Bank IIT Powai Locker",
+      "addressOrInstitution": "Canara Bank, IIT Powai Branch, Mumbai",
+      "ownership": "joint",
+      "jointOwnerName": "Mrs. Alpana Prakash",
+      "approximateValue": 2500000,
+      "hasLoan": false
+    },
+    {
+      "id": "ast-veh-1",
+      "category": "vehicles",
+      "name": "Motor Vehicles (Toyota Innova & BMW X1)",
+      "typeDetails": "Motor Vehicles",
+      "identifier": "Toyota Innova MH03 DG 9722, BMW X1 MH03 EB 9722",
+      "addressOrInstitution": "Mumbai, Maharashtra",
+      "ownership": "sole",
+      "approximateValue": 4500000,
+      "hasLoan": false
+    },
+    {
+      "id": "ast-ssa-1",
+      "category": "bank_account",
+      "name": "Sukanya Samriddhi Account",
+      "typeDetails": "Sukanya Samriddhi Scheme",
+      "identifier": "Account No. BETI0272420000001",
+      "addressOrInstitution": "State Bank of India / Post Office",
+      "ownership": "sole",
+      "approximateValue": 1500000,
+      "hasLoan": false,
+      "specialInstructions": "Solely for the benefit, welfare, maintenance, education, and exclusive use of Ms. Aarohi Shankar."
+    }
+  ],
+  "allocations": [
+    {
+      "id": "alc-1",
+      "assetId": "ast-bank-1",
+      "beneficiaryId": "fam-alpana",
+      "beneficiaryName": "Mrs. Alpana Prakash",
+      "percentage": 100
+    },
+    {
+      "id": "alc-2",
+      "assetId": "ast-bank-2",
+      "beneficiaryId": "fam-alpana",
+      "beneficiaryName": "Mrs. Alpana Prakash",
+      "percentage": 100
+    },
+    {
+      "id": "alc-3",
+      "assetId": "ast-bank-3",
+      "beneficiaryId": "fam-alpana",
+      "beneficiaryName": "Mrs. Alpana Prakash",
+      "percentage": 100
+    },
+    {
+      "id": "alc-4",
+      "assetId": "ast-bank-4",
+      "beneficiaryId": "fam-alpana",
+      "beneficiaryName": "Mrs. Alpana Prakash",
+      "percentage": 100
+    },
+    {
+      "id": "alc-5",
+      "assetId": "ast-bank-5",
+      "beneficiaryId": "fam-alpana",
+      "beneficiaryName": "Mrs. Alpana Prakash",
+      "percentage": 100
+    },
+    {
+      "id": "alc-6",
+      "assetId": "ast-prop-1",
+      "beneficiaryId": "fam-alpana",
+      "beneficiaryName": "Mrs. Alpana Prakash",
+      "percentage": 100
+    },
+    {
+      "id": "alc-7",
+      "assetId": "ast-prop-2",
+      "beneficiaryId": "fam-alpana",
+      "beneficiaryName": "Mrs. Alpana Prakash",
+      "percentage": 100
+    },
+    {
+      "id": "alc-8",
+      "assetId": "ast-prop-3",
+      "beneficiaryId": "fam-alpana",
+      "beneficiaryName": "Mrs. Alpana Prakash",
+      "percentage": 50
+    },
+    {
+      "id": "alc-9",
+      "assetId": "ast-prop-3",
+      "beneficiaryId": "fam-amit",
+      "beneficiaryName": "Mr. Amit Srivastava",
+      "percentage": 50
+    },
+    {
+      "id": "alc-10",
+      "assetId": "ast-prop-4",
+      "beneficiaryId": "fam-alpana",
+      "beneficiaryName": "Mrs. Alpana Prakash",
+      "percentage": 100
+    },
+    {
+      "id": "alc-11",
+      "assetId": "ast-eq-1",
+      "beneficiaryId": "fam-alpana",
+      "beneficiaryName": "Mrs. Alpana Prakash",
+      "percentage": 100
+    },
+    {
+      "id": "alc-12",
+      "assetId": "ast-eq-2",
+      "beneficiaryId": "fam-alpana",
+      "beneficiaryName": "Mrs. Alpana Prakash",
+      "percentage": 100
+    },
+    {
+      "id": "alc-13",
+      "assetId": "ast-eq-3",
+      "beneficiaryId": "fam-arnab",
+      "beneficiaryName": "Dr. Arnab Ghosh",
+      "percentage": 49
+    },
+    {
+      "id": "alc-14",
+      "assetId": "ast-eq-3",
+      "beneficiaryId": "fam-alpana",
+      "beneficiaryName": "Mrs. Alpana Prakash",
+      "percentage": 51
+    },
+    {
+      "id": "alc-15",
+      "assetId": "ast-eq-4",
+      "beneficiaryId": "fam-alpana",
+      "beneficiaryName": "Mrs. Alpana Prakash",
+      "percentage": 100
+    },
+    {
+      "id": "alc-16",
+      "assetId": "ast-eq-5",
+      "beneficiaryId": "fam-alpana",
+      "beneficiaryName": "Mrs. Alpana Prakash",
+      "percentage": 100
+    },
+    {
+      "id": "alc-17",
+      "assetId": "ast-eq-6",
+      "beneficiaryId": "fam-alpana",
+      "beneficiaryName": "Mrs. Alpana Prakash",
+      "percentage": 100
+    },
+    {
+      "id": "alc-18",
+      "assetId": "ast-eq-7",
+      "beneficiaryId": "fam-alpana",
+      "beneficiaryName": "Mrs. Alpana Prakash",
+      "percentage": 100
+    },
+    {
+      "id": "alc-19",
+      "assetId": "ast-eq-8",
+      "beneficiaryId": "fam-alpana",
+      "beneficiaryName": "Mrs. Alpana Prakash",
+      "percentage": 100
+    },
+    {
+      "id": "alc-20",
+      "assetId": "ast-eq-9",
+      "beneficiaryId": "fam-alpana",
+      "beneficiaryName": "Mrs. Alpana Prakash",
+      "percentage": 100
+    },
+    {
+      "id": "alc-21",
+      "assetId": "ast-eq-10",
+      "beneficiaryId": "fam-alpana",
+      "beneficiaryName": "Mrs. Alpana Prakash",
+      "percentage": 100
+    },
+    {
+      "id": "alc-22",
+      "assetId": "ast-eq-11",
+      "beneficiaryId": "fam-alpana",
+      "beneficiaryName": "Mrs. Alpana Prakash",
+      "percentage": 100
+    },
+    {
+      "id": "alc-23",
+      "assetId": "ast-eq-12",
+      "beneficiaryId": "fam-alpana",
+      "beneficiaryName": "Mrs. Alpana Prakash",
+      "percentage": 100
+    },
+    {
+      "id": "alc-24",
+      "assetId": "ast-eq-13",
+      "beneficiaryId": "fam-alpana",
+      "beneficiaryName": "Mrs. Alpana Prakash",
+      "percentage": 100
+    },
+    {
+      "id": "alc-25",
+      "assetId": "ast-adv-1",
+      "beneficiaryId": "fam-alpana",
+      "beneficiaryName": "Mrs. Alpana Prakash",
+      "percentage": 100
+    },
+    {
+      "id": "alc-26",
+      "assetId": "ast-sine-1",
+      "beneficiaryId": "fam-alpana",
+      "beneficiaryName": "Mrs. Alpana Prakash",
+      "percentage": 100
+    },
+    {
+      "id": "alc-27",
+      "assetId": "ast-mf-1",
+      "beneficiaryId": "fam-aarohi",
+      "beneficiaryName": "Ms. Aarohi Shankar",
+      "percentage": 100
+    },
+    {
+      "id": "alc-28",
+      "assetId": "ast-ret-1",
+      "beneficiaryId": "fam-alpana",
+      "beneficiaryName": "Mrs. Alpana Prakash",
+      "percentage": 100
+    },
+    {
+      "id": "alc-29",
+      "assetId": "ast-ins-1",
+      "beneficiaryId": "fam-alpana",
+      "beneficiaryName": "Mrs. Alpana Prakash",
+      "percentage": 100
+    },
+    {
+      "id": "alc-30",
+      "assetId": "ast-pli-1",
+      "beneficiaryId": "fam-alpana",
+      "beneficiaryName": "Mrs. Alpana Prakash",
+      "percentage": 100
+    },
+    {
+      "id": "alc-31",
+      "assetId": "ast-lkr-1",
+      "beneficiaryId": "fam-alpana",
+      "beneficiaryName": "Mrs. Alpana Prakash",
+      "percentage": 100
+    },
+    {
+      "id": "alc-32",
+      "assetId": "ast-veh-1",
+      "beneficiaryId": "fam-alpana",
+      "beneficiaryName": "Mrs. Alpana Prakash",
+      "percentage": 100
+    },
+    {
+      "id": "alc-33",
+      "assetId": "ast-ssa-1",
+      "beneficiaryId": "fam-aarohi",
+      "beneficiaryName": "Ms. Aarohi Shankar",
+      "percentage": 100
+    }
+  ],
+  "residuaryBeneficiaryId": "fam-alpana",
+  "residuaryBeneficiaryName": "Mrs. Alpana Prakash",
+  "residuaryAlternateId": "fam-aarohi",
+  "residuaryAlternateName": "Ms. Aarohi Shankar",
+  "executorPrimary": {
+    "name": "Mr. Ashok Ajmera",
+    "relationship": "Sole Executor / Trusted Advisor",
+    "phone": "",
+    "email": "ashok.ajmera@example.com",
+    "address": "Mumbai, Maharashtra"
+  },
+  "executorAlternate": {
+    "name": "Mrs. Alpana Prakash",
+    "relationship": "Wife / Alternate Executor",
+    "phone": "",
+    "email": "alpana.prakash@example.com",
+    "address": "201 Barberry, Nahar Amrit Shakti, Chandivali, Mumbai – 400072"
+  },
+  "guardianPrimary": {
+    "name": "",
+    "relationship": "",
+    "phone": "",
+    "email": "",
+    "address": ""
+  },
+  "guardianAlternate": {
+    "name": "",
+    "relationship": "",
+    "phone": "",
+    "email": "",
+    "address": ""
+  },
+  "guardianSpecialInstructions": "",
+  "specialWishes": {
+    "jewelleryInstructions": "The locker maintained with Canara Bank jointly by myself and Mrs. Alpana Prakash, together with all jewellery, valuables, securities, documents, cash, ornaments, and contents therein, shall be operated and exclusively controlled by Mrs. Alpana Prakash after my demise.",
+    "personalBelongings": "All research papers, laboratory records, and academic materials at Room 505, Department of Biosciences and Bioengineering, IIT Bombay to form part of academic estate.",
+    "petsCare": "",
+    "charitableGifts": "",
+    "digitalAccounts": "All MCA startup portals, DIN filings, and equity demat accounts to be handed over to Mrs. Alpana Prakash.",
+    "funeralCeremonyWishes": "Simple memorial service conducted with dignity.",
+    "personalMessageToFamily": "Live with mutual affection, stay united, and honor each other's dreams."
+  },
+  "emotionalReason": "Ensure full financial security for my wife Mrs. Alpana Prakash and daughter Ms. Aarohi Shankar, and prevent legal complications regarding startup equity and maternal properties.",
+  "willStatus": "approved",
+  "selectedPlan": "lawyer_verified",
+  "version": "1.0",
+  "lastUpdated": "2026-10-07",
+  "lawyerNotes": [
+    "Original title documents for Powai Flat deposited with Credila Finance for Ms. Aarohi Shankar's education loan (form part of estate upon release).",
+    "Palava Flat title deeds deposited with PNB Housing Finance under Loan No. 00136660004935 (continue in estate upon discharge).",
+    "Maternal properties to devolve 50/50 jointly upon Mrs. Alpana Prakash and brother Mr. Amit Srivastava.",
+    "Schedule A startup equities: Clinicosis 49% transferred to Dr. Arnab Ghosh; SINE beneficial ownership 70% to vest in Mrs. Alpana Prakash.",
+    "Mutual funds and Sukanya Samriddhi account earmarked exclusively for Ms. Aarohi Shankar."
+  ],
+  "clauses": [],
+  "documents": [
+    {
+      "id": "doc-1",
+      "title": "Last Will & Testament (Dr. Rohit Srivastava v1.0)",
+      "category": "will_draft",
+      "version": "v1.0",
+      "dateAdded": "2026-09-16",
+      "fileSize": "480 KB",
+      "status": "verified"
+    },
+    {
+      "id": "doc-2",
+      "title": "Powai Flat Cypress CHS Share Certificate & Gift Deed",
+      "category": "property_deed",
+      "version": "Registered",
+      "dateAdded": "2026-09-16",
+      "fileSize": "4.2 MB",
+      "status": "verified"
+    },
+    {
+      "id": "doc-3",
+      "title": "Palava Flat Registered Agreement for Sale (Serial 40/2015)",
+      "category": "property_deed",
+      "version": "Registered",
+      "dateAdded": "2026-09-16",
+      "fileSize": "3.8 MB",
+      "status": "verified"
+    },
+    {
+      "id": "doc-4",
+      "title": "Schedule A Startup Equity Holding Certificates & SINE Undertakings",
+      "category": "identity_proof",
+      "version": "Certified",
+      "dateAdded": "2026-09-16",
+      "fileSize": "5.5 MB",
+      "status": "verified"
+    }
+  ],
+  "auditLogs": [
+    {
+      "timestamp": "2026-09-16 10:00",
+      "action": "Will Deed compiled with full Schedule A startup equity and asset coverage",
+      "actor": "Dr. Rohit Srivastava"
+    },
+    {
+      "timestamp": "2026-09-16 10:30",
+      "action": "Legal Health Check cleared with 100% compliance under Indian succession law",
+      "actor": "Rules Engine"
+    },
+    {
+      "timestamp": "2026-09-16 11:15",
+      "action": "All statutory clauses and Schedule A verified by Legal Counsel",
+      "actor": "Advocate & Legal Advisory Team"
+    }
+  ]
+}

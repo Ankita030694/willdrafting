@@ -73,9 +73,17 @@ export default function Hero() {
               >
                 Create My Will
               </Link>
-              <Link
-                href="/samplewill"
-                className="inline-flex items-center justify-center rounded-full border-2 border-[#C65378] bg-transparent text-[15px] sm:text-[16px] font-medium text-[#C65378] hover:bg-[#C65378]/10 hover:shadow-sm transition-all active:scale-95"
+              <a
+                href="#sample-will-section"
+                onClick={(e) => {
+                  e.preventDefault();
+                  const el = document.getElementById("sample-will-section");
+                  if (el) {
+                    el.scrollIntoView({ behavior: "smooth", block: "center" });
+                  }
+                  window.dispatchEvent(new CustomEvent("open-sample-will"));
+                }}
+                className="inline-flex items-center justify-center rounded-full border-2 border-[#C65378] bg-transparent text-[15px] sm:text-[16px] font-medium text-[#C65378] hover:bg-[#C65378]/10 hover:shadow-sm transition-all active:scale-95 cursor-pointer"
                 style={{
                   paddingLeft: "2rem",
                   paddingRight: "2rem",
@@ -84,7 +92,7 @@ export default function Hero() {
                 }}
               >
                 See What You’ll Create
-              </Link>
+              </a>
             </div>
 
             {/* Trust Highlights */}

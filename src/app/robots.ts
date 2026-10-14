@@ -10,7 +10,6 @@ export default function robots(): MetadataRoute.Robots {
         allow: [
           "/",
           "/aboutus",
-          "/how-it-works",
           "/service",
           "/pricing",
           "/blogs",
@@ -22,8 +21,6 @@ export default function robots(): MetadataRoute.Robots {
           "/start/*",
           "/dashboard",
           "/dashboard/*",
-          "/dashboard2",
-          "/dashboard2/*",
           "/authority",
           "/authority/*",
           "/nullify",

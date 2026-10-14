@@ -218,12 +218,16 @@ img, svg, video {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.6rem 1rem;
+  padding: 0.75rem 1.25rem;
   background-color: #FFFFFF;
   border-radius: 14px;
   border: 1px solid rgba(27, 42, 74, 0.08);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
-  margin-top: auto;
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+  position: relative;
+  z-index: 10;
+  flex-shrink: 0;
 }
 
 @media (max-width: 900px) {
@@ -241,7 +245,12 @@ img, svg, video {
     padding: 0.8rem 1rem;
     padding-bottom: calc(0.8rem + env(safe-area-inset-bottom, 0px));
     margin-top: 0;
+    margin-bottom: 0;
     box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.05);
+  }
+
+  .wizard-main-viewport {
+    padding-bottom: 6.5rem !important;
   }
 }
 
@@ -714,3 +723,749 @@ button, input, select, textarea {
   }
 }
 
+/* Court-Grade Will Document Print Styles (Strictly Monochrome) */
+@media print {
+  @page {
+    margin: 20mm 15mm 20mm 15mm;
+    size: A4 portrait;
+  }
+
+  body {
+    background: #FFFFFF !important;
+    color: #000000 !important;
+    font-family: 'Times New Roman', Times, Georgia, serif !important;
+  }
+
+  /* Hide web chrome, navigations, sidebars, buttons, alerts */
+  nav,
+  aside,
+  header,
+  footer,
+  button,
+  .btn,
+  .no-print,
+  .bento-sidebar-stepper-wrapper,
+  .bento-top-header,
+  .bento-mobile-drawer-overlay {
+    display: none !important;
+  }
+
+  #printable-final-will {
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow: visible !important;
+  }
+
+  /* Force pure black borders and text */
+  #printable-final-will * {
+    color: #000000 !important;
+    background-color: transparent !important;
+  }
+
+  table {
+    border-collapse: collapse !important;
+    width: 100% !important;
+    page-break-inside: avoid;
+  }
+
+  table, th, td {
+    border-color: #000000 !important;
+  }
+}
+
+/* ==========================================================================
+   MOBILE-ONLY WIZARD (/start/[step]) DESIGN & ACCESSIBILITY COMPLIANCE
+   Strictly scoped to @media screen and (max-width: 768px) — zero impact on desktop
+   ========================================================================== */
+@media screen and (max-width: 768px) {
+  /* 1. Shell & Viewport Container */
+  .wizard-shell-root {
+    width: 100vw !important;
+    max-width: 100vw !important;
+    overflow-x: hidden !important;
+  }
+
+  .wizard-mobile-drawer-panel {
+    width: min(290px, 84vw) !important;
+  }
+
+  /* Make mobile topbar color-compliant with the warm cream/white theme so LanguageToggle (हिंदी) is clearly visible */
+  .wizard-mobile-header {
+    background-color: #FFFFFF !important;
+    color: var(--color-navy) !important;
+    border-bottom: 1px solid rgba(23, 34, 40, 0.08) !important;
+    padding: 0.5rem 0.75rem !important;
+    box-shadow: 0 2px 8px rgba(23, 34, 40, 0.03) !important;
+    gap: 0.4rem !important;
+  }
+
+  .wizard-mobile-header > button {
+    color: var(--color-navy) !important;
+    background-color: #FAF7F0 !important;
+    border: 1px solid rgba(23, 34, 40, 0.12) !important;
+    border-radius: 8px !important;
+    padding: 0.3rem !important;
+    flex-shrink: 0 !important;
+  }
+
+  .wizard-mobile-header > div {
+    gap: 0.4rem !important;
+    flex-wrap: wrap !important;
+    justify-content: flex-end !important;
+  }
+
+  .wizard-main-viewport {
+    padding: 0.65rem 0.75rem 5.5rem !important;
+    width: 100% !important;
+    max-width: 100vw !important;
+    overflow-x: hidden !important;
+    align-items: stretch !important;
+  }
+
+  /* Fix browser <fieldset> min-content width expansion bug on mobile */
+  .wizard-step-fieldset {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    min-inline-size: 0 !important;
+    overflow-x: hidden !important;
+  }
+
+  /* 2. Step Progress Card — Compact 2-line layout on mobile (Title + % on line 1, track on line 2) */
+  .wizard-step-progress-card {
+    padding: 0.5rem 0.75rem !important;
+    margin-bottom: 0.55rem !important;
+    border-radius: 12px !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+    gap: 0.35rem !important;
+  }
+
+  .wizard-progress-phase-pill,
+  .wizard-progress-next-hint {
+    display: none !important;
+  }
+
+  .wizard-progress-top-row {
+    flex-wrap: nowrap !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    gap: 0.4rem !important;
+  }
+
+  .wizard-progress-meta-left {
+    min-width: 0 !important;
+    flex: 1 1 auto !important;
+  }
+
+  .wizard-progress-step-title {
+    font-size: 0.8rem !important;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    display: block !important;
+  }
+
+  .wizard-progress-pct-pill {
+    font-size: 0.68rem !important;
+    padding: 0.14rem 0.48rem !important;
+    flex-shrink: 0 !important;
+  }
+
+  /* 3. Locked / Verified Step Banner — Color-compliant & single-line non-wrapping buttons */
+  .wizard-locked-banner {
+    background-color: #FFFFFF !important;
+    border: 1.5px solid rgba(95, 126, 117, 0.4) !important;
+    color: var(--color-navy) !important;
+    padding: 0.65rem 0.75rem !important;
+    gap: 0.55rem !important;
+    border-radius: 12px !important;
+    box-shadow: 0 2px 10px rgba(23, 34, 40, 0.04) !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  .wizard-locked-banner > div:first-child {
+    font-size: 0.75rem !important;
+    line-height: 1.35 !important;
+    color: var(--color-navy) !important;
+    width: 100% !important;
+  }
+
+  .wizard-locked-banner-actions {
+    width: 100% !important;
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    gap: 0.35rem !important;
+  }
+
+  .wizard-locked-banner-actions button {
+    flex: 1 1 0% !important;
+    min-width: 0 !important;
+    white-space: nowrap !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 0.38rem 0.45rem !important;
+    font-size: 0.68rem !important;
+    line-height: 1.15 !important;
+    border-radius: 8px !important;
+    letter-spacing: -0.01em !important;
+  }
+
+  .wizard-locked-btn-prev {
+    background-color: #FAF7F0 !important;
+    border: 1px solid rgba(23, 34, 40, 0.18) !important;
+    color: var(--color-navy) !important;
+  }
+
+  .wizard-locked-btn-next {
+    background-color: var(--color-gold) !important;
+    border: 1px solid var(--color-gold) !important;
+    color: #FFFFFF !important;
+  }
+
+  .wizard-locked-btn-review {
+    background-color: var(--color-navy) !important;
+    border: 1px solid var(--color-navy) !important;
+    color: #FFFFFF !important;
+  }
+
+  /* Hide redundant disabled bottom footer when Will is locked (top locked banner handles navigation) */
+  .wizard-step-fieldset[disabled] .wizard-mobile-sticky-footer,
+  .wizard-step-fieldset[disabled] .step2-bottom-nav {
+    display: none !important;
+  }
+
+  /* 4. Step Header Meta Row (Listen button, Language toggle, Legal status badge) */
+  .wizard-step-header-meta {
+    flex-wrap: wrap !important;
+    justify-content: flex-start !important;
+    gap: 0.4rem !important;
+    width: 100% !important;
+  }
+
+  /* 5. Compact, Properly Sized Sticky Footer & Step Navigation Buttons (NOT huge full-width bars) */
+  .wizard-mobile-sticky-footer {
+    padding: 0.55rem 0.85rem !important;
+    padding-bottom: calc(0.55rem + env(safe-area-inset-bottom, 0px)) !important;
+    justify-content: space-between !important;
+    gap: 0.5rem !important;
+  }
+
+  .btn-mobile-back,
+  .step2-back-btn {
+    padding: 0.42rem 0.9rem !important;
+    font-size: 0.78rem !important;
+    border-radius: 999px !important;
+    width: auto !important;
+    flex: 0 0 auto !important;
+    white-space: nowrap !important;
+    line-height: 1.2 !important;
+  }
+
+  .btn-mobile-next,
+  .step2-next-btn {
+    flex: 0 1 auto !important;
+    width: auto !important;
+    margin-left: auto !important;
+    padding: 0.45rem 1.05rem !important;
+    font-size: 0.78rem !important;
+    border-radius: 999px !important;
+    white-space: nowrap !important;
+    line-height: 1.2 !important;
+  }
+
+  .step2-bottom-nav {
+    position: fixed !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    z-index: 50 !important;
+    border-radius: 0 !important;
+    border-top: 1px solid rgba(27, 42, 74, 0.1) !important;
+    border-bottom: none !important;
+    border-left: none !important;
+    border-right: none !important;
+    padding: 0.55rem 0.85rem !important;
+    padding-bottom: calc(0.55rem + env(safe-area-inset-bottom, 0px)) !important;
+    margin: 0 !important;
+    box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.05) !important;
+  }
+
+  /* 6. Step 1 Welcome */
+  .step1-welcome-root {
+    gap: 0.75rem !important;
+  }
+  .step1-hero-card {
+    padding: 1rem !important;
+    border-radius: 16px !important;
+  }
+  .step1-roadmap-grid {
+    grid-template-columns: 1fr !important;
+    gap: 0.5rem !important;
+  }
+  .step1-roadmap-card {
+    padding: 0.7rem 0.85rem !important;
+  }
+  .step1-bottom-bar {
+    padding: 0.7rem 0.85rem !important;
+    border-radius: 14px !important;
+  }
+  .step1-cta-btn {
+    padding: 0.5rem 1.15rem !important;
+    font-size: 0.8rem !important;
+    border-radius: 999px !important;
+    width: auto !important;
+  }
+
+  /* 7. Step 2 About You */
+  .step2-revocation-box {
+    padding: 0.65rem 0.8rem !important;
+    gap: 0.5rem !important;
+  }
+  .step2-revocation-btns {
+    width: 100% !important;
+    flex-wrap: wrap !important;
+    gap: 0.35rem !important;
+  }
+  .step2-revocation-btns button {
+    font-size: 0.72rem !important;
+    padding: 0.32rem 0.65rem !important;
+  }
+
+  /* 8. Step 3 Family Circle — Stack 3 columns into 1 clean vertical column on mobile */
+  .family-directive-banner {
+    padding: 0.65rem 0.8rem !important;
+    gap: 0.55rem !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  .family-generations-grid {
+    grid-template-columns: 1fr !important;
+    gap: 0.75rem !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .family-column-card {
+    padding: 0.85rem !important;
+    border-radius: 14px !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  .family-member-node {
+    padding: 0.7rem 0.8rem !important;
+    gap: 0.5rem !important;
+    border-radius: 12px !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  .family-member-node span {
+    white-space: nowrap !important;
+    font-size: 0.66rem !important;
+  }
+
+  /* 9. Step 4 Assets & Step 8 Special Wishes */
+  .assets-category-grid,
+  .wishes-category-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 0.55rem !important;
+  }
+
+  .assets-category-card,
+  .wishes-category-card {
+    padding: 0.7rem 0.75rem !important;
+    border-radius: 14px !important;
+  }
+
+  .asset-item-card {
+    flex-direction: column !important;
+    align-items: stretch !important;
+    padding: 0.85rem 0.95rem !important;
+    border-radius: 14px !important;
+    gap: 0.65rem !important;
+  }
+
+  .asset-item-main {
+    width: 100% !important;
+    align-items: flex-start !important;
+    gap: 0.7rem !important;
+  }
+
+  .asset-item-meta {
+    flex-direction: column !important;
+    gap: 0.2rem !important;
+    margin-top: 0.3rem !important;
+  }
+
+  .asset-item-actions {
+    width: 100% !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    padding-top: 0.6rem !important;
+    border-top: 1px solid rgba(27, 42, 74, 0.08) !important;
+    gap: 0.5rem !important;
+  }
+
+  .asset-item-actions > div:first-child {
+    text-align: left !important;
+  }
+
+  .asset-item-actions button {
+    white-space: nowrap !important;
+    padding: 0.36rem 0.65rem !important;
+    font-size: 0.73rem !important;
+  }
+
+  .wishes-editor-card {
+    padding: 0.95rem 1rem !important;
+    border-radius: 16px !important;
+  }
+
+  .wish-summary-item {
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 0.55rem !important;
+  }
+
+  .wish-summary-item > div:last-child {
+    justify-content: flex-end !important;
+    padding-top: 0.45rem !important;
+    border-top: 1px solid rgba(27, 42, 74, 0.06) !important;
+  }
+
+  /* 10. Step 5 Allocations */
+  .alloc-active-card {
+    padding: 0.95rem 1rem !important;
+    border-radius: 16px !important;
+    gap: 0.85rem !important;
+  }
+
+  .alloc-beneficiary-grid {
+    grid-template-columns: 1fr !important;
+    gap: 0.5rem !important;
+  }
+
+  .alloc-list-row {
+    flex-wrap: wrap !important;
+    gap: 0.5rem !important;
+  }
+
+  .alloc-card-actions {
+    gap: 0.5rem !important;
+  }
+
+  .alloc-card-actions button {
+    padding: 0.42rem 0.85rem !important;
+    font-size: 0.76rem !important;
+    border-radius: 999px !important;
+    white-space: nowrap !important;
+  }
+
+  /* 11. Modals across Steps 3, 4, 5, 10 */
+  .wizard-modal-sheet {
+    padding: 1.1rem 1rem !important;
+    border-radius: 18px !important;
+    max-height: 88vh !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  .wizard-modal-grid-2 {
+    grid-template-columns: 1fr !important;
+    gap: 0.65rem !important;
+  }
+
+  .asset-modal-cat-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 0.4rem !important;
+  }
+
+  .wizard-modal-actions {
+    flex-wrap: wrap !important;
+    gap: 0.5rem !important;
+  }
+
+  .wizard-modal-actions button {
+    padding: 0.48rem 0.95rem !important;
+    font-size: 0.78rem !important;
+    border-radius: 10px !important;
+    flex: 0 1 auto !important;
+  }
+
+  /* 12. Step 10 Review & Verification Stepped Footers */
+  .review-stepped-footer,
+  .sub-stepper-nav,
+  .review-bottom-actions {
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    gap: 0.5rem !important;
+    padding: 0.65rem 0.8rem !important;
+  }
+
+  .review-stepped-footer-left,
+  .review-stepped-footer-center,
+  .review-stepped-footer-right {
+    width: auto !important;
+    flex: 0 1 auto !important;
+  }
+
+  .review-stepped-footer button,
+  .sub-stepper-nav button,
+  .review-bottom-actions button {
+    width: auto !important;
+    flex: 0 1 auto !important;
+    padding: 0.42rem 0.85rem !important;
+    font-size: 0.75rem !important;
+    border-radius: 999px !important;
+    white-space: nowrap !important;
+  }
+
+  /* 13. Step 12 Assembly, Step 13 Plans & Step 14 Final Will */
+  .assembly-cta-btn {
+    padding: 0.55rem 1.25rem !important;
+    font-size: 0.82rem !important;
+    border-radius: 999px !important;
+  }
+
+  .plans-grid {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 0.85rem !important;
+    overflow-x: visible !important;
+    padding-top: 0.5rem !important;
+  }
+
+  .plans-grid > div {
+    flex: 1 1 auto !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .final-will-top-bar {
+    padding: 0.65rem 0.85rem !important;
+    border-radius: 14px !important;
+  }
+
+  .final-will-top-bar button {
+    padding: 0.4rem 0.85rem !important;
+    font-size: 0.75rem !important;
+    border-radius: 999px !important;
+  }
+
+  #printable-final-will {
+    padding: 1.15rem 0.9rem !important;
+    border-radius: 14px !important;
+    overflow-x: hidden !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+    word-break: break-word !important;
+    overflow-wrap: anywhere !important;
+  }
+
+  .will-formal-header {
+    padding-bottom: 0.9rem !important;
+    margin-bottom: 1.15rem !important;
+  }
+
+  .will-formal-header h1 {
+    font-size: 1.2rem !important;
+    line-height: 1.3 !important;
+  }
+
+  .will-formal-header > div:last-child {
+    font-size: 1.1rem !important;
+  }
+
+  .will-document-body,
+  .will-clause,
+  .will-attestation p,
+  .will-testimonium p,
+  .will-medical-annexure p {
+    font-size: 0.88rem !important;
+    line-height: 1.65 !important;
+    text-align: left !important;
+    word-break: break-word !important;
+    overflow-wrap: anywhere !important;
+  }
+
+  .will-witness-grid {
+    grid-template-columns: 1fr !important;
+    gap: 0.85rem !important;
+  }
+
+  .will-witness-box {
+    padding: 0.85rem 0.9rem !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  .will-sig-row {
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 1.25rem !important;
+  }
+
+  .will-sig-row > div {
+    min-width: 0 !important;
+    width: 100% !important;
+  }
+
+  .will-schedule-wrapper {
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow-x: auto !important;
+    -webkit-overflow-scrolling: touch !important;
+  }
+
+  .will-schedule-table {
+    font-size: 0.72rem !important;
+  }
+
+  .will-schedule-table th,
+  .will-schedule-table td {
+    padding: 5px 6px !important;
+  }
+
+  .final-will-bottom-bar {
+    padding: 0.55rem 0.75rem !important;
+    gap: 0.5rem !important;
+    flex-wrap: wrap !important;
+  }
+
+  .final-will-bottom-bar button,
+  .final-will-bottom-bar a {
+    padding: 0.42rem 0.9rem !important;
+    font-size: 0.76rem !important;
+    border-radius: 999px !important;
+    width: auto !important;
+  }
+
+  /* 14. Deduplicate repeated badges/toggles on mobile & hide Next.js dev floating indicator */
+  nextjs-portal {
+    display: none !important;
+  }
+
+  .wizard-main-viewport .cloud-sync-badge {
+    display: none !important;
+  }
+
+  .wizard-main-viewport .language-toggle-pill {
+    display: none !important;
+  }
+
+  .cloud-sync-badge {
+    white-space: nowrap !important;
+    flex-shrink: 0 !important;
+    padding: 0.25rem 0.6rem !important;
+    font-size: 0.7rem !important;
+    line-height: 1.2 !important;
+  }
+
+  /* 15. /start/dashboard Mobile Layout & Compact Single-Line User Actions */
+  .dash-user-bar {
+    padding: 0.85rem 0.95rem !important;
+    border-radius: 16px !important;
+    gap: 0.65rem !important;
+  }
+
+  .dash-user-title-row {
+    gap: 0.45rem !important;
+  }
+
+  .dash-user-actions {
+    width: 100% !important;
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    gap: 0.4rem !important;
+  }
+
+  .dash-user-actions button,
+  .dash-user-actions .cloud-sync-badge {
+    white-space: nowrap !important;
+    flex: 0 1 auto !important;
+    min-width: 0 !important;
+    padding: 0.36rem 0.65rem !important;
+    font-size: 0.72rem !important;
+    border-radius: 999px !important;
+    line-height: 1.2 !important;
+    height: auto !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 0.3rem !important;
+  }
+
+  .dash-hero-card {
+    padding: 1.15rem 1rem !important;
+    border-radius: 18px !important;
+    gap: 1.1rem !important;
+  }
+
+  .dash-category-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 0.55rem !important;
+  }
+
+  .dash-next-step-bar {
+    padding: 0.95rem 1rem !important;
+    border-radius: 16px !important;
+    gap: 0.75rem !important;
+  }
+
+  .dash-next-step-bar button {
+    width: auto !important;
+    padding: 0.5rem 1.05rem !important;
+    font-size: 0.8rem !important;
+    border-radius: 999px !important;
+    white-space: nowrap !important;
+  }
+
+  .dash-will-paper {
+    padding: 1.15rem 0.9rem !important;
+    border-radius: 12px !important;
+  }
+
+  .dash-will-sig-grid {
+    grid-template-columns: 1fr !important;
+    gap: 1.25rem !important;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .wizard-locked-banner-actions {
+    gap: 0.25rem !important;
+  }
+
+  .wizard-locked-banner-actions button {
+    font-size: 0.64rem !important;
+    padding: 0.34rem 0.38rem !important;
+  }
+
+  .dash-user-actions {
+    gap: 0.32rem !important;
+  }
+
+  .dash-user-actions button,
+  .dash-user-actions .cloud-sync-badge {
+    font-size: 0.68rem !important;
+    padding: 0.32rem 0.52rem !important;
+  }
+}

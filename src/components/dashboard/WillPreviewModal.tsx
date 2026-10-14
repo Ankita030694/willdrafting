@@ -1,8 +1,13 @@
 "use client";
+import { downloadWillPdf } from "@/lib/willSync";
 
 import React, { useState } from "react";
-import { WillDraftingState, generateWillClauses } from "@/lib/willDraftingStore";
-import WillAssetDistributionTable from "@/components/wizard/WillAssetDistributionTable";
+import { useSession } from "next-auth/react";
+import { WillDraftingState } from "@/lib/willDraftingStore";
+import WillDocument from "@/components/will/WillDocument";
+import PaywallModal from "./PaywallModal";
+
+import { Lock } from "lucide-react";
 
 interface WillPreviewModalProps {
   isOpen: boolean;
@@ -15,20 +20,144 @@ export default function WillPreviewModal({
   onClose,
   state,
 }: WillPreviewModalProps) {
-  const [showWatermark, setShowWatermark] = useState(
-    state.willStatus !== "approved" && state.willStatus !== "finalised"
-  );
+  const { data: session, update } = useSession();
+  const [dbPaid, setDbPaid] = useState<boolean>(false);
+  const isVerified = Boolean(state.detailsVerified);
+
+  React.useEffect(() => {
+    if (!isOpen) return;
+    let isMounted = true;
+    const checkLivePaymentStatus = async () => {
+      try {
+        const res = await fetch("/api/payment/user-status", { cache: "no-store" });
+        const data = await res.json().catch(() => ({}));
+        if (data.paymentStatus === "paid" && isMounted) {
+          setDbPaid(true);
+          if (session?.user?.paymentStatus !== "paid") {
+            await update();
+          }
+        }
+      } catch {
+        // ignore
+      }
+    };
+    checkLivePaymentStatus();
+    return () => {
+      isMounted = false;
+    };
+  }, [isOpen]);
+
+  const isPaid = dbPaid || session?.user?.paymentStatus === "paid";
+  const [paywallOpen, setPaywallOpen] = useState(false);
+
+  const [showWatermark, setShowWatermark] = useState(false);
 
   if (!isOpen) return null;
 
-  const handlePrint = () => {
-    window.print();
-  };
+  if (!isPaid) {
+    return (
+      <div
+        style={{
+          position: "fixed",
+          inset: 0,
+          backgroundColor: "rgba(23, 34, 40, 0.75)",
+          backdropFilter: "blur(6px)",
+          WebkitBackdropFilter: "blur(6px)",
+          zIndex: 9999,
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          padding: "1rem",
+        }}
+        onClick={onClose}
+      >
+        <div
+          style={{
+            backgroundColor: "#FFFFFF",
+            borderRadius: "16px",
+            width: "100%",
+            maxWidth: "480px",
+            padding: "2rem 1.8rem",
+            boxShadow: "0 25px 50px -12px rgba(23, 34, 40, 0.35)",
+            border: "1px solid rgba(23, 34, 40, 0.12)",
+            textAlign: "center",
+          }}
+          onClick={(e) => e.stopPropagation()}
+        >
+          <div
+            style={{
+              width: "52px",
+              height: "52px",
+              borderRadius: "14px",
+              backgroundColor: "rgba(198, 83, 120, 0.1)",
+              color: "#C65378",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              margin: "0 auto 1.25rem",
+            }}
+          >
+            <Lock size={26} />
+          </div>
+          <h3 style={{ margin: "0 0 0.5rem", fontSize: "1.2rem", fontWeight: 800, color: "#172228" }}>
+            Will Preview Locked
+          </h3>
+          <p style={{ margin: "0 0 1.5rem", fontSize: "0.82rem", color: "#49585F", lineHeight: 1.5 }}>
+            The official legal Will and clauses are not available for preview until a legal plan is selected and payment is completed. Only your asset portfolio is visible during drafting.
+          </p>
+          <div style={{ display: "flex", flexDirection: "column", gap: "0.6rem" }}>
+            <a
+              href="/start/12"
+              style={{
+                display: "block",
+                padding: "0.75rem 1.5rem",
+                borderRadius: "10px",
+                backgroundColor: "#C65378",
+                color: "#FFFFFF",
+                fontWeight: 700,
+                fontSize: "0.85rem",
+                textDecoration: "none",
+                boxShadow: "0 4px 14px rgba(198, 83, 120, 0.25)",
+              }}
+            >
+              Select Plan to Unlock Will (from ₹2,490) →
+            </a>
+            <button
+              type="button"
+              onClick={onClose}
+              style={{
+                padding: "0.6rem 1.25rem",
+                borderRadius: "10px",
+                backgroundColor: "transparent",
+                border: "1px solid rgba(23, 34, 40, 0.15)",
+                color: "#172228",
+                fontWeight: 600,
+                fontSize: "0.8rem",
+                cursor: "pointer",
+              }}
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    );
+  }
 
-  const testator = state.testator;
-  const isMale = testator.gender === "male";
-  const pronounTitle = isMale ? "Mr." : testator.gender === "female" ? "Ms." : "";
-  const sonDaughterOf = isMale ? "son of" : "daughter of";
+  const handlePrint = () => {
+    if (!isPaid) {
+      setPaywallOpen(true);
+      return;
+    }
+    if (!isVerified) {
+      window.location.href = "/start/09";
+      return;
+    }
+    downloadWillPdf().then((a) => {
+      if (a.ok) return;
+      else alert(a.error || "Download is not available.");
+    });
+  };
 
   return (
     <div
@@ -146,7 +275,7 @@ export default function WillPreviewModal({
                 <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2" />
                 <rect x="6" y="14" width="12" height="8" />
               </svg>
-              Print / Save PDF
+              {isPaid ? (isVerified ? "Print / Save PDF" : "🔒 Verify in Step 9") : "🔒 Unlock PDF"}
             </button>
 
             <button
@@ -166,7 +295,7 @@ export default function WillPreviewModal({
           </div>
         </div>
 
-        {/* Document Body (Legal paper view) */}
+        {/* Document Body (Legal paper view - only rendered when isPaid is true) */}
         <div
           style={{
             flex: 1,
@@ -175,10 +304,12 @@ export default function WillPreviewModal({
             padding: "2rem 1.5rem",
             display: "flex",
             justifyContent: "center",
+            position: "relative",
           }}
         >
           <div
             id="printable-will-document"
+            className={!isVerified ? "unverified-will-read-only" : undefined}
             style={{
               width: "100%",
               maxWidth: "720px",
@@ -186,12 +317,17 @@ export default function WillPreviewModal({
               boxShadow: "0 10px 25px rgba(27, 42, 74, 0.08)",
               border: "1px solid rgba(27, 42, 74, 0.12)",
               padding: "3.5rem 3rem",
-              fontFamily: "var(--font-main)",
-              color: "#1E293B",
+              fontFamily: "'Times New Roman', Times, Georgia, serif",
+              color: "#000000",
               position: "relative",
               lineHeight: 1.8,
+              userSelect: isVerified ? "text" : "none",
+              WebkitUserSelect: isVerified ? "text" : "none",
             }}
           >
+            {!isVerified && (
+              <style>{`@media print { .unverified-will-read-only { display: none !important; } }`}</style>
+            )}
             {/* Watermark overlay */}
             {showWatermark && (
               <div
@@ -202,7 +338,7 @@ export default function WillPreviewModal({
                   transform: "translate(-50%, -50%) rotate(-35deg)",
                   fontSize: "4.5rem",
                   fontWeight: 900,
-                  color: "rgba(201, 162, 39, 0.08)",
+                  color: "rgba(0, 0, 0, 0.04)",
                   pointerEvents: "none",
                   whiteSpace: "nowrap",
                   letterSpacing: "0.15em",
@@ -210,99 +346,11 @@ export default function WillPreviewModal({
                   textTransform: "uppercase",
                 }}
               >
-                {state.willStatus === "approved" || state.willStatus === "finalised"
-                  ? "CERTIFIED COPY"
-                  : "DRAFT • WILLDRAFTING.COM"}
+                DRAFT
               </div>
             )}
 
-            {/* Document Header */}
-            <div style={{ textAlign: "center", borderBottom: "2px solid #1E293B", paddingBottom: "1.5rem", marginBottom: "2rem" }}>
-              <div style={{ fontSize: "0.95rem", fontWeight: 800, letterSpacing: "0.15em", color: "#1B2A4A", marginBottom: "0.5rem", textTransform: "uppercase" }}>
-                WILL DEED
-              </div>
-              <h2 style={{ fontSize: "1.45rem", fontWeight: 700, color: "#0F172A", margin: 0, textTransform: "uppercase", letterSpacing: "0.03em" }}>
-                LAST WILL AND TESTAMENT OF
-              </h2>
-              <div style={{ fontSize: "1.35rem", fontWeight: 800, color: "#1B2A4A", marginTop: "0.35rem", textTransform: "uppercase" }}>
-                {testator.fullName || "DR. ROHIT SRIVASTAVA"}
-              </div>
-            </div>
-
-            {/* Clauses List */}
-            <div style={{ display: "flex", flexDirection: "column", gap: "1.75rem", fontSize: "0.95rem" }}>
-              {/* Preamble / Declaration */}
-              <div style={{ textAlign: "justify", lineHeight: 1.8 }}>
-                I, <strong>{testator.fullName || "Dr. Rohit Srivastava"}</strong>
-                {testator.fatherOrMotherName ? `, ${sonDaughterOf} ${testator.fatherOrMotherName}` : ""}
-                , aged about {testator.dob ? new Date().getFullYear() - new Date(testator.dob).getFullYear() : "49"} years
-                {testator.pan ? `, holding Permanent Account Number (PAN) ${testator.pan}` : ""}
-                {testator.aadhaar ? ` and Aadhaar Number ${testator.aadhaar}` : ""}
-                , presently residing at{" "}
-                <strong>
-                  {[testator.address, testator.city ? `${testator.city} – ${testator.pincode || ""}` : testator.pincode].filter(Boolean).join(", ") ||
-                    "201 Barberry, Nahar Amrit Shakti, Chandivali, Mumbai – 400072"}
-                </strong>
-                {testator.workplace ? `, and working at ${testator.workplace}` : ""}
-                , being of sound mind, in good health, and fully competent to make this Will, do hereby declare this to be my Last Will and Testament, made voluntarily and without any coercion, undue influence, or misrepresentation, and hereby revoke all prior Wills and testamentary dispositions made by me.
-              </div>
-
-              {/* Dynamic Clauses from store */}
-              {(() => {
-                const activeClauses = state.clauses && state.clauses.length > 0 ? state.clauses : generateWillClauses(state);
-                return activeClauses.map((clause, idx) => {
-                  const isAssetClause =
-                    clause.id === "cls-assets" ||
-                    clause.category === "Specific Bequests" ||
-                    clause.title.toLowerCase().includes("movable & immovable") ||
-                    clause.title.toLowerCase().includes("asset");
-
-                  return (
-                    <div key={clause.id || idx} style={{ textAlign: "justify" }}>
-                      <div
-                        style={{
-                          fontWeight: 800,
-                          color: "#0F172A",
-                          marginBottom: "0.5rem",
-                          fontSize: "0.95rem",
-                          letterSpacing: "0.02em",
-                        }}
-                      >
-                        {clause.clauseNumber || idx + 1}. {clause.title}
-                      </div>
-
-                      {isAssetClause ? (
-                        <div>
-                          <p style={{ margin: "0 0 0.65rem 0", color: "#1E293B", lineHeight: 1.8 }}>
-                            I hereby devise, bequeath, and direct the devolution of my specific movable and immovable properties, including my respective undivided shares in jointly held properties, to the respective beneficiaries strictly in accordance with the Schedule of Asset Distribution set forth below:
-                          </p>
-
-                          <WillAssetDistributionTable
-                            assets={state.assets}
-                            allocations={state.allocations}
-                            familyMembers={state.familyMembers}
-                            residuaryBeneficiaryName={state.residuaryBeneficiaryName}
-                          />
-
-                          <p style={{ margin: "0.45rem 0 0 0", color: "#475569", fontSize: "0.85rem", lineHeight: 1.6, fontStyle: "italic" }}>
-                            All beneficiaries named in the Schedule above shall take their respective devised shares absolutely and forever. If any specific bequest fails on account of prior demise of a beneficiary without surviving issues, such share shall fall into and be administered under the Residuary Clause herein.
-                          </p>
-                        </div>
-                      ) : (
-                        <div style={{ whiteSpace: "pre-line", color: "#334155", lineHeight: 1.8 }}>
-                          {clause.currentText || clause.standardText}
-                        </div>
-                      )}
-                    </div>
-                  );
-                });
-              })()}
-            </div>
-
-            {/* Seal / Footer */}
-            <div style={{ marginTop: "3rem", paddingTop: "1.5rem", borderTop: "1px dashed #CBD5E1", fontSize: "0.75rem", color: "#94A3B8", textAlign: "center" }}>
-              Generated via WillDrafting.com Legal Engine • Formatted in accordance with Indian Succession Legal Standards
-            </div>
+            <WillDocument state={state} />
           </div>
         </div>
 
@@ -321,7 +369,7 @@ export default function WillPreviewModal({
           <span style={{ fontSize: "0.8rem", color: "var(--text-muted)" }}>
             Status:{" "}
             <strong style={{ color: "var(--color-navy)", textTransform: "uppercase" }}>
-              {state.willStatus.replace("_", " ")}
+              {isVerified ? "OTP VERIFIED & LOCKED" : state.willStatus.replace("_", " ")}
             </strong>
           </span>
           <div style={{ display: "flex", gap: "0.75rem" }}>
@@ -330,7 +378,7 @@ export default function WillPreviewModal({
               className="btn btn-gold"
               style={{ padding: "0.5rem 1.25rem", fontSize: "0.85rem", borderRadius: "var(--radius-sm)" }}
             >
-              Print / Save as PDF
+              {isPaid ? (isVerified ? "Print / Save as PDF" : "🔒 Verify Details in Step 9") : "🔒 Unlock to Print / Save"}
             </button>
             <button
               onClick={onClose}
@@ -349,6 +397,11 @@ export default function WillPreviewModal({
           </div>
         </div>
       </div>
+
+      <PaywallModal
+        isOpen={paywallOpen}
+        onClose={() => setPaywallOpen(false)}
+      />
     </div>
   );
 }

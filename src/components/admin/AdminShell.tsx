@@ -3,6 +3,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
+import { useSession, signOut } from "next-auth/react";
 
 interface NavItem {
   label: string;
@@ -103,6 +104,7 @@ const COMMAND_ITEMS = [
 ];
 
 export default function AdminShell({ children }: { children: React.ReactNode }) {
+  const { data: session } = useSession();
   const pathname = usePathname();
   const router = useRouter();
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -175,8 +177,8 @@ export default function AdminShell({ children }: { children: React.ReactNode }) 
     }
   };
 
-  const handleLogout = () => {
-    router.push("/nullify");
+  const handleLogout = async () => {
+    await signOut({ callbackUrl: "/nullify" });
   };
 
   // Find active item label for top bar
@@ -523,7 +525,7 @@ export default function AdminShell({ children }: { children: React.ReactNode }) 
                 flexShrink: 0,
               }}
             >
-              AD
+              {session?.user?.name ? session.user.name.substring(0, 2).toUpperCase() : "SA"}
             </div>
             <div style={{ display: "flex", flexDirection: "column", minWidth: 0, lineHeight: 1.2 }}>
               <span
@@ -536,7 +538,7 @@ export default function AdminShell({ children }: { children: React.ReactNode }) 
                   whiteSpace: "nowrap",
                 }}
               >
-                Administrator
+                {session?.user?.name || "Super Admin"}
               </span>
               <span
                 style={{
@@ -547,7 +549,7 @@ export default function AdminShell({ children }: { children: React.ReactNode }) 
                   whiteSpace: "nowrap",
                 }}
               >
-                admin@willdrafting.in
+                {session?.user?.email || "admin@willdrafting.in"}
               </span>
             </div>
           </div>

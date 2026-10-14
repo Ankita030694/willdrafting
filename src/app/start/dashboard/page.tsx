@@ -2,180 +2,146 @@
 
 import React, { Suspense, useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
-import {
-  WillDraftingState,
-  loadStoredWillState,
-  saveStoredWillState,
-  SCENARIO_1_STANDARD_MARRIED,
-} from "@/lib/willDraftingStore";
-import DashboardSidebar from "@/components/dashboard/DashboardSidebar";
-import { DashboardTab } from "@/components/dashboard/DashboardTabsNav";
-import WillOverviewDashboard from "@/components/dashboard/WillOverviewDashboard";
+import { useSession } from "next-auth/react";
+import { setActiveUser } from "@/lib/willDraftingStore";
+import { useWillStore } from "@/lib/useWillStore";
+import WizardSidebar from "@/components/wizard/WizardSidebar";
+import StartAssetWealthDashboard from "@/components/dashboard/StartAssetWealthDashboard";
+import PaymentReturnBanner from "@/components/dashboard/PaymentReturnBanner";
+import { useLanguage } from "@/context/LanguageContext";
+import { getUrlForStep } from "@/lib/questionnaireFlow";
+import { Menu } from "lucide-react";
 
 function StartDashboardContent() {
+  const { data: session } = useSession();
+  const userEmail = session?.user?.email;
   const router = useRouter();
-  const [state, setState] = useState<WillDraftingState>(SCENARIO_1_STANDARD_MARRIED);
+  const { lang, setLang } = useLanguage();
   const [mounted, setMounted] = useState(false);
-  const [mobileSidebarOpen, setMobileSidebarOpen] = useState(false);
+  const [sidebarOpen, setSidebarOpen] = useState(true);
+  const [mobileDrawerOpen, setMobileDrawerOpen] = useState(false);
 
   useEffect(() => {
-    const loaded = loadStoredWillState();
-    setState(loaded);
-    setMounted(true);
-
-    const handleStateChange = () => {
-      setState(loadStoredWillState());
-    };
-    window.addEventListener("willdrafting_state_change", handleStateChange);
-    return () => {
-      window.removeEventListener("willdrafting_state_change", handleStateChange);
-    };
-  }, []);
-
-  const handleTabChange = (tab: DashboardTab) => {
-    if (tab === "overview") {
-      // Already on overview → do nothing
-      return;
+    if (userEmail) {
+      setActiveUser(userEmail);
     }
-    // Navigate to the main /dashboard page with the requested tab
-    router.push(`/dashboard?tab=${tab}`);
+    void useWillStore.getState().initSession(userEmail).then(() => {
+      if (session?.user) {
+        const cur = useWillStore.getState().state;
+        if (!cur.detailsVerified) {
+          let changed = false;
+          const testator = { ...cur.testator };
+          if (!testator.fullName && session.user.name) {
+            testator.fullName = session.user.name;
+            changed = true;
+          }
+          if (!testator.email && session.user.email) {
+            testator.email = session.user.email;
+            changed = true;
+          }
+          if (!testator.phone && session.user.phone) {
+            testator.phone = session.user.phone;
+            changed = true;
+          }
+          if (changed) {
+            useWillStore.getState().updateState((prev) => ({
+              ...prev,
+              testator,
+            }));
+          }
+        }
+      }
+      setMounted(true);
+    });
+
+    if (typeof window !== "undefined" && window.innerWidth <= 900) {
+      setSidebarOpen(false);
+    }
+  }, [userEmail, session?.user]);
+
+  const handleStepJump = (step: number) => {
+    setMobileDrawerOpen(false);
+    const targetUrl = getUrlForStep(step);
+    router.push(targetUrl);
   };
 
-  const handleStateChange = (newState: WillDraftingState) => {
-    saveStoredWillState(newState);
-    setState(newState);
-  };
 
   if (!mounted) {
     return (
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          minHeight: "100vh",
-          backgroundColor: "var(--bg-page)",
-          color: "var(--color-navy)",
-          fontFamily: "var(--font-main)",
-        }}
-      >
-        <div style={{ display: "flex", alignItems: "center", gap: "0.75rem" }}>
-          <div
-            style={{
-              width: "24px",
-              height: "24px",
-              border: "3px solid var(--border-card)",
-              borderTopColor: "var(--color-gold)",
-              borderRadius: "50%",
-              animation: "spin 1s linear infinite",
-            }}
-          />
-          <span style={{ fontWeight: 600, fontSize: "0.95rem" }}>
-            Loading your Will Overview...
-          </span>
-        </div>
+      <div className="bento-loading-screen">
+        <div className="bento-spinner" />
+        <span style={{ fontWeight: 600, fontSize: "0.95rem", color: "#172228" }}>
+          Loading your Dashboard...
+        </span>
       </div>
     );
   }
 
   return (
-    <div
-      style={{
-        display: "flex",
-        minHeight: "100vh",
-        backgroundColor: "var(--bg-page)",
-      }}
-    >
-      {/* Desktop Sidebar — same as /dashboard */}
-      <div className="dashboard-sidebar-wrapper">
-        <DashboardSidebar
-          activeTab="overview"
-          onSelectTab={handleTabChange}
-          state={state}
-          onOpenSandbox={() => {}}
+    <div className="bento-viewport-shell">
+      {/* Desktop Left Stepper Sidebar */}
+      <div className={`bento-sidebar-stepper-wrapper ${sidebarOpen ? "open" : "closed"}`}>
+        <WizardSidebar
+          currentStep={1}
+          onJumpToStep={handleStepJump}
+          lang={lang}
+          onChangeLang={setLang}
+          hideDashboardLink={true}
         />
       </div>
 
       {/* Mobile Drawer Overlay */}
-      {mobileSidebarOpen && (
+      {mobileDrawerOpen && (
         <div
-          style={{
-            position: "fixed",
-            inset: 0,
-            backgroundColor: "rgba(27, 42, 74, 0.7)",
-            backdropFilter: "blur(3px)",
-            zIndex: 999,
-          }}
-          onClick={() => setMobileSidebarOpen(false)}
+          className="bento-mobile-drawer-overlay"
+          onClick={() => setMobileDrawerOpen(false)}
         >
           <div
-            style={{ width: "280px", height: "100%", backgroundColor: "var(--color-navy)" }}
+            className="bento-mobile-drawer-content"
             onClick={(e) => e.stopPropagation()}
           >
-            <DashboardSidebar
-              activeTab="overview"
-              onSelectTab={(tab) => {
-                setMobileSidebarOpen(false);
-                handleTabChange(tab);
-              }}
-              state={state}
-              onOpenSandbox={() => setMobileSidebarOpen(false)}
+            <WizardSidebar
+              currentStep={1}
+              onJumpToStep={handleStepJump}
+              lang={lang}
+              onChangeLang={setLang}
+              hideDashboardLink={true}
             />
           </div>
         </div>
       )}
 
-      {/* Main Content */}
-      <div style={{ flex: 1, display: "flex", flexDirection: "column", minWidth: 0 }}>
-        {/* Mobile Header Bar */}
-        <div
-          className="dashboard-mobile-header"
-          style={{
-            display: "none",
-            alignItems: "center",
-            justifyContent: "space-between",
-            padding: "1rem 1.25rem",
-            backgroundColor: "var(--color-navy)",
-            color: "#FFFFFF",
-          }}
-        >
-          <button
-            onClick={() => setMobileSidebarOpen(true)}
-            style={{
-              background: "none",
-              border: "none",
-              color: "#FFFFFF",
-              cursor: "pointer",
-              padding: "0.25rem",
-            }}
-            aria-label="Toggle navigation menu"
-          >
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-              <line x1="3" y1="12" x2="21" y2="12" />
-              <line x1="3" y1="6" x2="21" y2="6" />
-              <line x1="3" y1="18" x2="21" y2="18" />
-            </svg>
-          </button>
-          <span style={{ fontWeight: 700, fontSize: "0.95rem" }}>My Will Overview</span>
-          <div style={{ width: "24px" }} />
+      {/* Main Area: Top Bar + Bento Canvas */}
+      <div className="bento-main-container">
+        {/* Mobile Header (Hidden on Desktop) */}
+        <header className="bento-top-header mobile-only">
+          <div className="bento-header-left">
+            <button
+              type="button"
+              className="bento-sidebar-toggle-btn mobile-only"
+              onClick={() => setMobileDrawerOpen(true)}
+              title="Open steps menu"
+              aria-label="Open steps menu"
+            >
+              <Menu size={18} />
+            </button>
+            <span style={{ fontSize: "0.88rem", fontWeight: 700, color: "#172228" }}>
+              Dashboard
+            </span>
+          </div>
+        </header>
+
+        {/* Bento Cockpit Canvas */}
+        <div className="bento-workspace">
+          <main className="bento-main-canvas">
+            <PaymentReturnBanner />
+            <StartAssetWealthDashboard
+              lang={lang}
+              onJumpToStep={handleStepJump}
+            />
+          </main>
         </div>
-
-        {/* Dashboard Content */}
-        <main style={{ flex: "1 0 auto", padding: "2rem 0.5rem 3rem" }}>
-          <WillOverviewDashboard state={state} onStateChange={handleStateChange} />
-        </main>
       </div>
-
-      <style jsx global>{`
-        @media (max-width: 900px) {
-          .dashboard-sidebar-wrapper {
-            display: none !important;
-          }
-          .dashboard-mobile-header {
-            display: flex !important;
-          }
-        }
-      `}</style>
     </div>
   );
 }
@@ -190,11 +156,11 @@ export default function StartDashboardPage() {
             justifyContent: "center",
             alignItems: "center",
             minHeight: "100vh",
-            backgroundColor: "var(--bg-page)",
+            backgroundColor: "#FAF7F0",
           }}
         >
-          <div style={{ fontWeight: 600, color: "var(--color-navy)" }}>
-            Loading My Will Overview...
+          <div style={{ fontWeight: 600, color: "#172228" }}>
+            Loading Dashboard...
           </div>
         </div>
       }

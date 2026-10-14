@@ -1,9 +1,12 @@
 import type { Metadata, Viewport } from "next";
 import { Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
+import "./start/dashboard/bento.css";
 import GlobalPopup from "@/components/GlobalPopup";
 import StyledJsxRegistry from "./registry";
 import { LanguageProvider } from "@/context/LanguageContext";
+import AuthProvider from "@/components/providers/AuthProvider";
+import SignupModalHost from "@/components/auth/SignupModalHost";
 
 const plusJakarta = Plus_Jakarta_Sans({
   variable: "--font-jakarta",
@@ -154,10 +157,13 @@ export default function RootLayout({
       </head>
       <body className="font-sans antialiased">
         <StyledJsxRegistry>
-          <LanguageProvider>
-            {children}
-            <GlobalPopup />
-          </LanguageProvider>
+          <AuthProvider>
+            <LanguageProvider>
+              {children}
+              <GlobalPopup />
+              <SignupModalHost />
+            </LanguageProvider>
+          </AuthProvider>
         </StyledJsxRegistry>
       </body>
     </html>

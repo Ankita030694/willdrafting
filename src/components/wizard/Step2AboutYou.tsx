@@ -1,9 +1,8 @@
 "use client";
 
-import React, { useState } from "react";import WizardButton from "./button";
+import React, { useState, useEffect } from "react";import WizardButton from "./button";
 
 import { WillDraftingState, ReligionPersonalLaw, MaritalStatus } from "@/lib/willDraftingStore";
-import AppleSwitch from "@/components/dashboard/AppleSwitch";
 import {
   User,
   HeartHandshake,
@@ -26,10 +25,12 @@ import LanguageToggle from "@/components/ui/LanguageToggle";
 import { useLanguage } from "@/context/LanguageContext";
 import { lookupStateFromPin, fetchPincodeDetails } from "@/lib/pincode";
 import StateDropdown from "@/components/ui/StateDropdown";
+import { formatAadhaar, sanitizeAadhaar, sanitizeNameInput, sanitizePan, normalizeEmail, AADHAAR_ERROR_MSG } from "@/lib/inputSanitizers";
+import { useWillStore } from "@/lib/useWillStore";
 
 interface Step2AboutYouProps {
-  state: WillDraftingState;
-  onUpdate: (updater: (prev: WillDraftingState) => WillDraftingState) => void;
+  state?: WillDraftingState;
+  onUpdate?: (updater: (prev: WillDraftingState) => WillDraftingState) => void;
   onNext: () => void;
   onBack: () => void;
   lang?: "en" | "hi";
@@ -37,20 +38,35 @@ interface Step2AboutYouProps {
 }
 
 export default function Step2AboutYou({
-  state,
-  onUpdate,
+  state: propState,
+  onUpdate: propOnUpdate,
   onNext,
   onBack,
   lang: propLang,
   onChangeLang: propOnChangeLang,
 }: Step2AboutYouProps) {
+  const storeState = useWillStore((s) => s.state);
+  const storeUpdateState = useWillStore((s) => s.updateState);
+  const state = propState || storeState;
+  const onUpdate = propOnUpdate || storeUpdateState;
+
   const context = useLanguage();
   const currentLang = propLang || context.lang || "en";
   const isHi = currentLang === "hi";
   const handleToggleLang = propOnChangeLang || context.setLang;
-  const [formData, setFormData] = useState(state.testator);
+  const formData = state.testator;
   const [errorMsg, setErrorMsg] = useState("");
   const [autoFilledState, setAutoFilledState] = useState(false);
+
+  const patchTestator = (patch: Partial<typeof formData>) => {
+    onUpdate((prevState) => ({
+      ...prevState,
+      testator: {
+        ...prevState.testator,
+        ...patch,
+      },
+    }));
+  };
 
   // Calculate approximate age from DOB or default to 45
   const calculateAgeFromDob = (dobStr: string) => {
@@ -60,42 +76,53 @@ export default function Step2AboutYou({
     return new Date().getFullYear() - birthYear;
   };
 
-  const [currentAge, setCurrentAge] = useState<number>(calculateAgeFromDob(formData.dob));
+  const currentAge = calculateAgeFromDob(formData.dob);
 
   const handleAgeChange = (newAge: number) => {
-    setCurrentAge(newAge);
     const targetYear = new Date().getFullYear() - newAge;
     const currentMonthDay = formData.dob && formData.dob.includes("-")
       ? formData.dob.substring(4)
       : "-06-15";
     const newDob = `${targetYear}${currentMonthDay}`;
-    setFormData((prev) => ({ ...prev, dob: newDob }));
+    patchTestator({ dob: newDob });
   };
 
   const handlePincodeChange = async (pinInput: string) => {
     const cleanPin = pinInput.replace(/\D/g, "").slice(0, 6);
     const detected = lookupStateFromPin(cleanPin);
 
-    setFormData((prev) => ({
-      ...prev,
-      pincode: cleanPin,
-      ...(detected?.state ? { state: detected.state } : {}),
-      ...(detected?.city && !prev.city ? { city: detected.city } : {}),
-    }));
-
-    if (detected?.state) {
-      setAutoFilledState(true);
+    if (cleanPin.length < 2) {
+      patchTestator({
+        pincode: cleanPin,
+        state: "",
+        city: "",
+      });
+      setAutoFilledState(false);
+      return;
     }
+
+    patchTestator({
+      pincode: cleanPin,
+      state: detected?.state || "",
+      city: detected?.city || "",
+    });
+    setAutoFilledState(Boolean(detected?.state));
 
     if (cleanPin.length === 6) {
       const details = await fetchPincodeDetails(cleanPin);
       if (details) {
-        setFormData((prev) => ({
-          ...prev,
-          state: details.state || prev.state,
-          city: prev.city ? prev.city : details.city,
-        }));
-        if (details.state) {
+        onUpdate((prevState) => {
+          if (prevState.testator.pincode !== cleanPin) return prevState;
+          return {
+            ...prevState,
+            testator: {
+              ...prevState.testator,
+              state: details.state || detected?.state || prevState.testator.state,
+              city: details.city || detected?.city || prevState.testator.city,
+            },
+          };
+        });
+        if (details.state || detected?.state) {
           setAutoFilledState(true);
         }
       }
@@ -103,18 +130,8 @@ export default function Step2AboutYou({
   };
 
   const handleStateChange = (newSt: string) => {
-    setFormData((prev) => ({ ...prev, state: newSt }));
+    patchTestator({ state: newSt });
     setAutoFilledState(false);
-  };
-
-  const handleCityPreset = (city: string, st: string, pin: string) => {
-    setFormData((prev) => ({
-      ...prev,
-      city,
-      state: st,
-      pincode: pin,
-    }));
-    setAutoFilledState(true);
   };
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -123,16 +140,51 @@ export default function Step2AboutYou({
       setErrorMsg("Please enter your full legal name as per official ID (Aadhaar / PAN).");
       return;
     }
+    const corporatePattern = /\b(solutions|pvt|private|ltd|limited|llp|inc|corp|corporation|enterprise|enterprises|company|co\.|associates|firm|consultancy|technologies|services|group|agency|foundation|trust|huf)\b/i;
+    if (corporatePattern.test(formData.fullName.trim())) {
+      setErrorMsg(
+        isHi
+          ? "भारतीय उत्तराधिकार अधिनियम की धारा 59 के तहत केवल एक जीवित व्यक्ति ही वसीयत बना सकता है, कोई कंपनी या फर्म नहीं। कृपया अपना व्यक्तिगत नाम दर्ज करें।"
+          : "Under Section 59 of the Indian Succession Act, 1925, only a natural living person can make a Will (not a company, firm, or organization). Please enter your personal legal name."
+      );
+      return;
+    }
     if (!formData.dob) {
       setErrorMsg("Please provide your date of birth.");
       return;
     }
+
+    const birthDate = new Date(formData.dob);
+    if (!isNaN(birthDate.getTime())) {
+      const today = new Date();
+      let age = today.getFullYear() - birthDate.getFullYear();
+      const m = today.getMonth() - birthDate.getMonth();
+      if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+        age--;
+      }
+      if (age < 18) {
+        setErrorMsg(
+          isHi
+            ? "वसीयत बनाने के लिए आपकी उम्र कम से कम 18 वर्ष होनी चाहिए। कृपया अपनी जन्म तिथि जांचें।"
+            : "You need to be at least 18 years old to make a will. Please check your date of birth."
+        );
+        return;
+      }
+    }
+
     const cleanPhone = (formData.phone || "").replace(/\D/g, "");
     if (!cleanPhone || cleanPhone.length !== 10) {
       setErrorMsg(
         isHi
           ? "मोबाइल नंबर में ठीक 10 अंक होने चाहिए।"
           : "Mobile number must contain exactly 10 digits."
+      );
+      return;
+    }
+    const cleanAadhaar = sanitizeAadhaar(formData.aadhaar || "");
+    if (cleanAadhaar.length > 0 && cleanAadhaar.length !== 12) {
+      setErrorMsg(
+        isHi ? "आधार नंबर में ठीक 12 अंक होने चाहिए।" : AADHAAR_ERROR_MSG
       );
       return;
     }
@@ -153,10 +205,10 @@ export default function Step2AboutYou({
     Icon: React.ElementType;
     desc: string;
   }[] = [
-    { id: "married", title: "Married", Icon: HeartHandshake, desc: "Spouse has legal inheritance rights" },
-    { id: "single", title: "Single", Icon: User, desc: "Never married; parents or siblings as primary heirs" },
-    { id: "widowed", title: "Widowed", Icon: Heart, desc: "Children and direct family inherit" },
-    { id: "divorced", title: "Divorced", Icon: FileX, desc: "Former spouse claims are legally separated" },
+    { id: "married", title: isHi ? "विवाहित" : "Married", Icon: HeartHandshake, desc: isHi ? "जीवनसाथी का कानूनी उत्तराधिकार अधिकार" : "Spouse has legal inheritance rights" },
+    { id: "single", title: isHi ? "अविवाहित" : "Single", Icon: User, desc: isHi ? "माता-पिता या भाई-बहन प्राथमिक उत्तराधिकारी" : "Never married; parents or siblings as primary heirs" },
+    { id: "widowed", title: isHi ? "विधवा / विधुर" : "Widowed", Icon: Heart, desc: isHi ? "बच्चे एवं प्रत्यक्ष परिवार उत्तराधिकारी" : "Children and direct family inherit" },
+    { id: "divorced", title: isHi ? "तलाकशुदा" : "Divorced", Icon: FileX, desc: isHi ? "पूर्व जीवनसाथी के दावे कानूनी रूप से अलग" : "Former spouse claims are legally separated" },
   ];
 
   const religionOptions: {
@@ -168,54 +220,43 @@ export default function Step2AboutYou({
   }[] = [
     {
       id: "hindu",
-      title: "Hindu / Sikh / Jain / Buddhist",
-      description: "Governed by Hindu Succession Act 1956. Full testamentary freedom over self-acquired property.",
-      badge: "HSA 1956",
+      title: isHi ? "हिन्दू / सिख / जैन / बौद्ध" : "Hindu / Sikh / Jain / Buddhist",
+      description: isHi ? "स्व-अर्जित संपत्ति पर पूर्ण वसीयती स्वतंत्रता।" : "Full testamentary freedom over self-acquired property.",
+      badge: isHi ? "कानूनी स्वतंत्रता" : "Testamentary Freedom",
       Icon: Scale,
     },
     {
       id: "christian",
-      title: "Christian",
-      description: "Governed by applicable Indian succession provisions. Free disposition with executor probate.",
-      badge: "Statutory Law",
+      title: isHi ? "ईसाई" : "Christian",
+      description: isHi ? "भारतीय उत्तराधिकार प्रावधानों द्वारा शासित। निष्पादक प्रोबेट के साथ स्वतंत्र हस्तांतरण।" : "Governed by applicable Indian succession provisions. Free disposition with executor probate.",
+      badge: isHi ? "कानूनी मानक" : "Statutory Law",
       Icon: BookOpen,
     },
     {
       id: "muslim",
-      title: "Muslim Personal Law",
-      description: "Subject to Shariat testamentary rules (1/3rd maximum to non-heirs without heir consent).",
-      badge: "Shariat",
+      title: isHi ? "मुस्लिम व्यक्तिगत कानून" : "Muslim Personal Law",
+      description: isHi ? "शरीयत वसीयत नियमों के अधीन (वारिसों की सहमति के बिना गैर-वारिसों को अधिकतम 1/3 भाग)।" : "Subject to Shariat testamentary rules (1/3rd maximum to non-heirs without heir consent).",
+      badge: isHi ? "शरीयत" : "Shariat",
       Icon: Scale,
     },
     {
       id: "parsi",
-      title: "Parsi",
-      description: "Special testamentary provisions for Parsis. Testamentary capacity covers all assets.",
-      badge: "Statutory Law",
+      title: isHi ? "पारसी" : "Parsi",
+      description: isHi ? "पारसियों के लिए विशेष उत्तराधिकार नियम। समस्त संपत्तियों पर वसीयती अधिकार।" : "Special testamentary provisions for Parsis. Testamentary capacity covers all assets.",
+      badge: isHi ? "कानूनी मानक" : "Statutory Law",
       Icon: Scale,
     },
     {
       id: "other",
-      title: "Other / Secular",
-      description: "Universal provisions under Indian succession law.",
-      badge: "General",
+      title: isHi ? "अन्य / धर्मनिरपेक्ष" : "Other / Secular",
+      description: isHi ? "भारतीय उत्तराधिकार अधिनियम के सार्वभौमिक प्रावधान।" : "Universal provisions under Indian succession law.",
+      badge: isHi ? "सामान्य" : "General",
       Icon: Globe,
     },
   ];
 
-  const cityPresets = [
-    { name: "Delhi NCR", state: "Delhi", pin: "110001" },
-    { name: "Gurugram", state: "Haryana", pin: "122002" },
-    { name: "Mumbai", state: "Maharashtra", pin: "400001" },
-    { name: "Bengaluru", state: "Karnataka", pin: "560001" },
-    { name: "Hyderabad", state: "Telangana", pin: "500001" },
-    { name: "Pune", state: "Maharashtra", pin: "411001" },
-    { name: "Chennai", state: "Tamil Nadu", pin: "600001" },
-    { name: "Kolkata", state: "West Bengal", pin: "700001" },
-  ];
-
   return (
-    <div style={{ display: "flex", flexDirection: "column", gap: "0.85rem", width: "100%", height: "100%", justifyContent: "space-between" }}>
+    <div style={{ display: "flex", flexDirection: "column", gap: "1.25rem", width: "100%" }}>
       {/* Compact Header */}
       <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: "0.5rem" }}>
         <div>
@@ -226,7 +267,7 @@ export default function Step2AboutYou({
           </div>
         </div>
 
-        <div style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
+        <div className="wizard-step-header-meta" style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
           <AudioAssistantButton
             textToSpeak={
               isHi
@@ -288,7 +329,7 @@ export default function Step2AboutYou({
             <div className="flex flex-col min-w-0 w-full">
               <div className="flex flex-wrap justify-between items-center gap-2 mb-1.5">
                 <label className="text-[11px] font-bold tracking-[0.14em] uppercase text-[#6B7280]">
-                  Full Legal Name (as per Aadhaar / PAN) *
+                  {isHi ? "पूर्ण कानूनी नाम (आधार / पैन के अनुसार) *" : "Full Legal Name (as per Aadhaar / PAN) *"}
                 </label>
                 <div className="flex flex-wrap gap-1">
                   {["Mr.", "Mrs.", "Ms.", "Dr.", "Adv."].map((title) => {
@@ -302,8 +343,7 @@ export default function Step2AboutYou({
                             /^(Mr\.|Mrs\.|Ms\.|Dr\.|Adv\.)\s*/i,
                             ""
                           );
-                          setFormData({
-                            ...formData,
+                          patchTestator({
                             fullName: `${title} ${currentName}`.trim(),
                           });
                         }}
@@ -333,10 +373,10 @@ export default function Step2AboutYou({
                 type="text"
                 required
                 name="fullName"
-                placeholder="Dr. Rohit Srivastava"
+                placeholder="e.g., Rajesh Sharma"
                 value={formData.fullName}
                 onChange={(e) =>
-                  setFormData({ ...formData, fullName: e.target.value })
+                  patchTestator({ fullName: sanitizeNameInput(e.target.value) })
                 }
                 className="w-full bg-transparent border-0 border-b border-[#D1D5DB] focus:border-[#111827] focus:ring-0 px-0 py-2 text-[15px] text-[#111827] placeholder:text-[#9CA3AF] placeholder:font-light outline-none transition-colors rounded-none shadow-none"
                 style={{
@@ -354,17 +394,16 @@ export default function Step2AboutYou({
             {/* 2. Parent's Name (Son/Daughter of) */}
             <div className="flex flex-col min-w-0 w-full">
               <label className="text-[11px] font-bold tracking-[0.14em] uppercase text-[#6B7280] mb-1.5">
-                Parent&apos;s Name (Son/Daughter of)
+                {isHi ? "माता / पिता का नाम (पुत्र / पुत्री)" : "Parent's Name (Son/Daughter of)"}
               </label>
               <input
                 type="text"
                 name="fatherOrMotherName"
-                placeholder="Late Mrs. Manju Srivastava"
+                placeholder="e.g., Ramesh Sharma"
                 value={formData.fatherOrMotherName || ""}
                 onChange={(e) =>
-                  setFormData({
-                    ...formData,
-                    fatherOrMotherName: e.target.value,
+                  patchTestator({
+                    fatherOrMotherName: sanitizeNameInput(e.target.value),
                   })
                 }
                 className="w-full bg-transparent border-0 border-b border-[#D1D5DB] focus:border-[#111827] focus:ring-0 px-0 py-2 text-[15px] text-[#111827] placeholder:text-[#9CA3AF] placeholder:font-light outline-none transition-colors rounded-none shadow-none"
@@ -383,15 +422,15 @@ export default function Step2AboutYou({
             {/* 3. Workplace / Institutional Affiliation */}
             <div className="flex flex-col min-w-0 w-full">
               <label className="text-[11px] font-bold tracking-[0.14em] uppercase text-[#6B7280] mb-1.5">
-                Workplace / Institutional Affiliation
+                {isHi ? "कार्यस्थल / संस्थान संबद्धता" : "Workplace / Institutional Affiliation"}
               </label>
               <input
                 type="text"
                 name="workplace"
-                placeholder="Room 505, Dept of Biosciences, IIT Bombay"
+                placeholder="e.g., Company Name or Profession"
                 value={formData.workplace || ""}
                 onChange={(e) =>
-                  setFormData({ ...formData, workplace: e.target.value })
+                  patchTestator({ workplace: e.target.value })
                 }
                 className="w-full bg-transparent border-0 border-b border-[#D1D5DB] focus:border-[#111827] focus:ring-0 px-0 py-2 text-[15px] text-[#111827] placeholder:text-[#9CA3AF] placeholder:font-light outline-none transition-colors rounded-none shadow-none"
                 style={{
@@ -409,18 +448,17 @@ export default function Step2AboutYou({
             {/* 4. PAN */}
             <div className="flex flex-col min-w-0 w-full">
               <label className="text-[11px] font-bold tracking-[0.14em] uppercase text-[#6B7280] mb-1.5">
-                Permanent Account Number (PAN)
+                {isHi ? "स्थायी खाता संख्या (पैन)" : "Permanent Account Number (PAN)"}
               </label>
               <input
                 type="text"
                 name="pan"
-                placeholder="BAZPS9068N"
+                placeholder="ABCDE1234F"
                 maxLength={10}
                 value={formData.pan || ""}
                 onChange={(e) =>
-                  setFormData({
-                    ...formData,
-                    pan: e.target.value.toUpperCase(),
+                  patchTestator({
+                    pan: sanitizePan(e.target.value),
                   })
                 }
                 className="w-full bg-transparent border-0 border-b border-[#D1D5DB] focus:border-[#111827] focus:ring-0 px-0 py-2 text-[15px] font-semibold tracking-wider text-[#111827] placeholder:text-[#9CA3AF] placeholder:font-light outline-none transition-colors rounded-none shadow-none"
@@ -439,16 +477,18 @@ export default function Step2AboutYou({
             {/* 5. Aadhaar */}
             <div className="flex flex-col min-w-0 w-full">
               <label className="text-[11px] font-bold tracking-[0.14em] uppercase text-[#6B7280] mb-1.5">
-                Aadhaar Number (12-Digit / Masked)
+                {isHi ? "आधार नंबर (12 अंक)" : "Aadhaar Number (12 digits)"}
               </label>
               <input
                 type="text"
+                inputMode="numeric"
+                autoComplete="off"
                 name="aadhaar"
-                placeholder="3546 XXXX XXXX"
-                maxLength={16}
-                value={formData.aadhaar || ""}
+                placeholder="1234 5678 9012"
+                maxLength={14}
+                value={formatAadhaar(formData.aadhaar || "")}
                 onChange={(e) =>
-                  setFormData({ ...formData, aadhaar: e.target.value })
+                  patchTestator({ aadhaar: formatAadhaar(e.target.value) })
                 }
                 className="w-full bg-transparent border-0 border-b border-[#D1D5DB] focus:border-[#111827] focus:ring-0 px-0 py-2 text-[15px] tracking-wider text-[#111827] placeholder:text-[#9CA3AF] placeholder:font-light outline-none transition-colors rounded-none shadow-none"
                 style={{
@@ -466,13 +506,13 @@ export default function Step2AboutYou({
             {/* 6. Gender */}
             <div className="flex flex-col min-w-0 w-full">
               <label className="text-[11px] font-bold tracking-[0.14em] uppercase text-[#6B7280] mb-1.5">
-                Gender
+                {isHi ? "लिंग" : "Gender"}
               </label>
               <div className="grid grid-cols-3 gap-1.5 border-b border-[#D1D5DB] pb-1.5">
                 {[
-                  { id: "male", label: "Male" },
-                  { id: "female", label: "Female" },
-                  { id: "other", label: "Other" },
+                  { id: "male", label: isHi ? "पुरुष" : "Male" },
+                  { id: "female", label: isHi ? "महिला" : "Female" },
+                  { id: "other", label: isHi ? "अन्य" : "Other" },
                 ].map((g) => {
                   const isSel = formData.gender === g.id;
                   return (
@@ -480,7 +520,7 @@ export default function Step2AboutYou({
                       key={g.id}
                       type="button"
                       onClick={() =>
-                        setFormData({ ...formData, gender: g.id as any })
+                        patchTestator({ gender: g.id as any })
                       }
                       style={{
                         padding: "0.3rem 0.4rem",
@@ -506,14 +546,14 @@ export default function Step2AboutYou({
               </div>
             </div>
 
-            {/* 7. Date of Birth & Age */}
+            {/* 7. Date of Birth */}
             <div className="flex flex-col min-w-0 w-full">
               <div className="flex justify-between items-center mb-1.5">
                 <label className="text-[11px] font-bold tracking-[0.14em] uppercase text-[#6B7280]">
-                  Date of Birth & Age
+                  {isHi ? "जन्म तिथि एवं आयु" : "Date of Birth & Age"}
                 </label>
                 <span className="text-[11px] font-bold text-[#C65378]">
-                  {currentAge} yrs
+                  {currentAge} {isHi ? "वर्ष" : "yrs"}
                 </span>
               </div>
               <input
@@ -521,8 +561,7 @@ export default function Step2AboutYou({
                 value={formData.dob || ""}
                 onChange={(e) => {
                   const newDob = e.target.value;
-                  setFormData({ ...formData, dob: newDob });
-                  setCurrentAge(calculateAgeFromDob(newDob));
+                  patchTestator({ dob: newDob });
                 }}
                 className="w-full bg-transparent border-0 border-b border-[#D1D5DB] focus:border-[#111827] focus:ring-0 px-0 py-2 text-[15px] text-[#111827] outline-none transition-colors rounded-none shadow-none"
                 style={{
@@ -561,7 +600,7 @@ export default function Step2AboutYou({
                 value={formData.phone}
                 onChange={(e) => {
                   const digits = e.target.value.replace(/\D/g, "").slice(0, 10);
-                  setFormData({ ...formData, phone: digits });
+                  patchTestator({ phone: digits });
                   if (errorMsg && digits.length === 10) setErrorMsg("");
                 }}
                 className="w-full bg-transparent border-0 border-b border-[#D1D5DB] focus:border-[#111827] focus:ring-0 px-0 py-2 text-[15px] text-[#111827] placeholder:text-[#9CA3AF] placeholder:font-light outline-none transition-colors rounded-none shadow-none font-medium"
@@ -585,7 +624,7 @@ export default function Step2AboutYou({
             {/* 9. Email Address */}
             <div className="flex flex-col min-w-0 w-full">
               <label className="text-[11px] font-bold tracking-[0.14em] uppercase text-[#6B7280] mb-1.5">
-                Email Address
+                {isHi ? "ईमेल पता" : "Email Address"}
               </label>
               <input
                 type="email"
@@ -593,7 +632,7 @@ export default function Step2AboutYou({
                 placeholder="name@example.com"
                 value={formData.email}
                 onChange={(e) =>
-                  setFormData({ ...formData, email: e.target.value })
+                  patchTestator({ email: normalizeEmail(e.target.value) })
                 }
                 className="w-full bg-transparent border-0 border-b border-[#D1D5DB] focus:border-[#111827] focus:ring-0 px-0 py-2 text-[15px] text-[#111827] placeholder:text-[#9CA3AF] placeholder:font-light outline-none transition-colors rounded-none shadow-none"
                 style={{
@@ -611,7 +650,7 @@ export default function Step2AboutYou({
             {/* 10. Permanent Residential Address */}
             <div className="flex flex-col min-w-0 w-full">
               <label className="text-[11px] font-bold tracking-[0.14em] uppercase text-[#6B7280] mb-1.5">
-                Permanent Residential Address
+                {isHi ? "स्थायी आवासीय पता" : "Permanent Residential Address"}
               </label>
               <input
                 type="text"
@@ -619,7 +658,7 @@ export default function Step2AboutYou({
                 placeholder="House/Apt No., Street, Sector / Landmark"
                 value={formData.address}
                 onChange={(e) =>
-                  setFormData({ ...formData, address: e.target.value })
+                  patchTestator({ address: e.target.value })
                 }
                 className="w-full bg-transparent border-0 border-b border-[#D1D5DB] focus:border-[#111827] focus:ring-0 px-0 py-2 text-[15px] text-[#111827] placeholder:text-[#9CA3AF] placeholder:font-light outline-none transition-colors rounded-none shadow-none"
                 style={{
@@ -639,16 +678,17 @@ export default function Step2AboutYou({
               <label className="text-[11px] font-bold tracking-[0.14em] uppercase text-[#6B7280] mb-1.5 flex items-center justify-between">
                 <span>{isHi ? "पिन कोड" : "PIN Code"}</span>
                 <span className="text-[10px] text-emerald-600 font-semibold tracking-normal normal-case">
-                  {isHi ? "राज्य स्वतः भरेगा" : "Auto-fills State"}
+                  {isHi ? "शहर व राज्य स्वतः भरेगा" : "Auto-fills City & State"}
                 </span>
               </label>
               <input
                 type="text"
+                inputMode="numeric"
                 name="pincode"
                 maxLength={6}
                 value={formData.pincode}
                 onChange={(e) => handlePincodeChange(e.target.value)}
-                placeholder="400072"
+                placeholder="e.g., 110001"
                 className="w-full bg-transparent border-0 border-b border-[#D1D5DB] focus:border-[#111827] focus:ring-0 px-0 py-2 text-[15px] text-[#111827] placeholder:text-[#9CA3AF] placeholder:font-light outline-none transition-colors rounded-none shadow-none font-medium"
                 style={{
                   borderTop: "none",
@@ -672,9 +712,9 @@ export default function Step2AboutYou({
                 name="city"
                 value={formData.city}
                 onChange={(e) =>
-                  setFormData({ ...formData, city: e.target.value })
+                  patchTestator({ city: sanitizeNameInput(e.target.value) })
                 }
-                placeholder="Mumbai"
+                placeholder="e.g., New Delhi"
                 className="w-full bg-transparent border-0 border-b border-[#D1D5DB] focus:border-[#111827] focus:ring-0 px-0 py-2 text-[15px] text-[#111827] placeholder:text-[#9CA3AF] placeholder:font-light outline-none transition-colors rounded-none shadow-none"
                 style={{
                   borderTop: "none",
@@ -705,43 +745,6 @@ export default function Step2AboutYou({
                 placeholder={isHi ? "राज्य चुनें" : "Select State"}
               />
             </div>
-
-            {/* 14. Quick Metro City Pills */}
-            <div className="flex flex-col min-w-0 w-full border-b border-[#D1D5DB] pb-1.5">
-              <span className="text-[11px] font-bold tracking-[0.14em] uppercase text-[#6B7280] mb-1.5">
-                Quick City Select
-              </span>
-              <div className="flex items-center gap-1.5 flex-wrap">
-                {cityPresets.slice(0, 5).map((c) => (
-                  <button
-                    key={c.name}
-                    type="button"
-                    onClick={() => handleCityPreset(c.name, c.state, c.pin)}
-                    style={{
-                      padding: "0.22rem 0.55rem",
-                      borderRadius: "999px",
-                      backgroundColor:
-                        formData.city === c.name
-                          ? "rgba(198, 83, 120, 0.12)"
-                          : "rgba(23, 34, 40, 0.04)",
-                      border:
-                        formData.city === c.name
-                          ? "1px solid var(--color-gold)"
-                          : "1px solid transparent",
-                      color:
-                        formData.city === c.name
-                          ? "var(--color-gold)"
-                          : "var(--color-navy)",
-                      fontSize: "0.72rem",
-                      fontWeight: 600,
-                      cursor: "pointer",
-                    }}
-                  >
-                    {c.name}
-                  </button>
-                ))}
-              </div>
-            </div>
           </div>
 
           {/* Row: Marital Status & Personal Law / Succession Act Framework (2 columns on desktop, 1 on mobile) */}
@@ -750,10 +753,10 @@ export default function Step2AboutYou({
             <div className="flex flex-col min-w-0 w-full">
               <div className="flex flex-wrap justify-between items-center gap-1 mb-2">
                 <label className="text-[11px] font-bold tracking-[0.14em] uppercase text-[#6B7280]">
-                  Marital Status
+                  {isHi ? "वैवाहिक स्थिति *" : "Marital Status *"}
                 </label>
                 <span className="text-[11px] text-[#9CA3AF]">
-                  Determines spousal legal rights
+                  {isHi ? "जीवनसाथी के कानूनी अधिकार तय करता है" : "Determines spousal legal rights"}
                 </span>
               </div>
 
@@ -765,7 +768,7 @@ export default function Step2AboutYou({
                     <div
                       key={opt.id}
                       onClick={() =>
-                        setFormData({ ...formData, maritalStatus: opt.id })
+                        patchTestator({ maritalStatus: opt.id })
                       }
                       style={{
                         borderRadius: "10px",
@@ -806,60 +809,133 @@ export default function Step2AboutYou({
                 })}
               </div>
             </div>
+
+            {/* Religion / Governing Succession Law */}
+            <div className="flex flex-col min-w-0 w-full">
+              <div className="flex flex-wrap justify-between items-center gap-1 mb-2">
+                <label className="text-[11px] font-bold tracking-[0.14em] uppercase text-[#6B7280]">
+                  {isHi ? "लागू उत्तराधिकार कानून / धर्म *" : "Governing Succession Law / Religion *"}
+                </label>
+                <span className="text-[11px] text-[#9CA3AF]">
+                  {isHi ? "प्रोबेट व उत्तराधिकार नियम तय करता है" : "Determines applicable Indian Succession Act rules"}
+                </span>
+              </div>
+
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+                {religionOptions.map((opt) => {
+                  const isSel = (formData.religionPersonalLaw || "hindu") === opt.id;
+                  const OptIcon = opt.Icon;
+                  return (
+                    <div
+                      key={opt.id}
+                      onClick={() =>
+                        patchTestator({ religionPersonalLaw: opt.id })
+                      }
+                      style={{
+                        borderRadius: "10px",
+                        border: isSel
+                          ? "1.5px solid var(--color-gold)"
+                          : "1px solid #E5E7EB",
+                        backgroundColor: isSel
+                          ? "rgba(198, 83, 120, 0.06)"
+                          : "transparent",
+                        padding: "0.55rem 0.75rem",
+                        cursor: "pointer",
+                        display: "flex",
+                        alignItems: "center",
+                        gap: "0.5rem",
+                        transition: "all 0.15s ease",
+                      }}
+                    >
+                      <OptIcon
+                        size={15}
+                        color={isSel ? "var(--color-gold)" : "#6B7280"}
+                      />
+                      <div style={{ flex: 1, minWidth: 0 }}>
+                        <div
+                          style={{
+                            fontSize: "0.8rem",
+                            fontWeight: 700,
+                            color: "#111827",
+                          }}
+                        >
+                          {opt.title}
+                        </div>
+                      </div>
+                      {isSel && (
+                        <CheckCircle2 size={14} color="var(--color-gold)" />
+                      )}
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
           </div>
 
-          {/* Row: Prior Testamentary Documents & Statutory Revocation Clause (2 columns on desktop, 1 on mobile) */}
-          <div className="step2-fields-grid grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-5 pt-3 border-t border-[#E5E7EB] mt-auto w-full min-w-0">
-            <div className="flex justify-between items-center gap-3 min-w-0">
-              <div className="min-w-0">
-                <div className="text-[11px] font-bold tracking-[0.14em] uppercase text-[#111827]">
-                  {isHi ? "पूर्व वसीयत दस्तावेज" : "Prior Testamentary Documents (Previous Wills)"}
-                </div>
-                <div className="text-xs text-[#6B7280] mt-0.5">
-                  {isHi
-                    ? "क्या आपने पहले कभी कोई वसीयत या कोडीसिल (मौजूदा वसीयत में बदलाव करने वाला कानूनी दस्तावेज) बनाई है?"
-                    : "Have you previously executed a Will or Codicil (a legal document used to make changes to an existing Will)?"}
-                </div>
+          {/* Prior Will Revocation Status (Section 70, Indian Succession Act, 1925) */}
+          <div
+            className="step2-revocation-box"
+            style={{
+              display: "flex",
+              flexWrap: "wrap",
+              alignItems: "center",
+              justifyContent: "space-between",
+              gap: "0.75rem",
+              padding: "0.75rem 1rem",
+              borderRadius: "12px",
+              backgroundColor: "rgba(23, 34, 40, 0.02)",
+              border: "1px solid #E5E7EB",
+            }}
+          >
+            <div>
+              <div style={{ fontSize: "0.82rem", fontWeight: 700, color: "#111827" }}>
+                {isHi
+                  ? "क्या आपने पहले कोई वसीयत या कोडिसिल बनाई है? (धारा 70 निरस्तीकरण)"
+                  : "Have you made any previous Will or Codicil? (Section 70 Revocation)"}
               </div>
-              <AppleSwitch
-                checked={formData.hasPreviousWill || false}
-                onChange={(checked) =>
-                  setFormData((prev) => ({ ...prev, hasPreviousWill: checked }))
-                }
-              />
+              <div style={{ fontSize: "0.73rem", color: "#6B7280" }}>
+                {isHi
+                  ? "यह वसीयत आपके द्वारा पूर्व में बनाई गई सभी वसीयतों को कानूनी रूप से रद्द और प्रतिस्थापित कर देगी।"
+                  : "This Will automatically revokes and supersedes any prior Wills or testamentary writings."}
+              </div>
             </div>
-
-            <div className="flex justify-between items-center gap-3 min-w-0">
-              <div className="min-w-0">
-                <div className="text-[11px] font-bold tracking-[0.14em] uppercase text-[#111827]">
-                  {isHi
-                    ? "निरस्तीकरण खंड / Revocation Clause (पुरानी वसीयतें रद्द करने का नियम)"
-                    : "Revocation Clause (Officially cancels any previous Wills or drafts)"}
-                </div>
-                <div className="text-xs text-[#6B7280] mt-0.5">
-                  {isHi
-                    ? "पुरानी सभी पूर्व वसीयतों को औपचारिक रूप से निरस्त करें"
-                    : "Automatically cancels and replaces any previous wills or drafts"}
-                </div>
-              </div>
-              <AppleSwitch
-                checked={formData.revokePreviousWill ?? true}
-                onChange={(checked) =>
-                  setFormData((prev) => ({
-                    ...prev,
-                    revokePreviousWill: checked,
-                  }))
-                }
-              />
+            <div className="step2-revocation-btns" style={{ display: "flex", gap: "0.45rem" }}>
+              {[
+                { val: false, label: isHi ? "नहीं (यह मेरी पहली वसीयत है)" : "No (First Will)" },
+                { val: true, label: isHi ? "हाँ (पुरानी वसीयत रद्द करें)" : "Yes (Revoke Prior Will)" },
+              ].map((opt) => {
+                const active = Boolean(formData.hasPreviousWill) === opt.val;
+                return (
+                  <button
+                    key={String(opt.val)}
+                    type="button"
+                    onClick={() => patchTestator({ hasPreviousWill: opt.val })}
+                    style={{
+                      padding: "0.35rem 0.75rem",
+                      borderRadius: "999px",
+                      fontSize: "0.75rem",
+                      fontWeight: 700,
+                      border: active ? "1.5px solid var(--color-gold)" : "1px solid #D1D5DB",
+                      backgroundColor: active ? "rgba(198, 83, 120, 0.1)" : "#FFFFFF",
+                      color: active ? "var(--color-gold)" : "#4B5563",
+                      cursor: "pointer",
+                    }}
+                  >
+                    {opt.label}
+                  </button>
+                );
+              })}
             </div>
           </div>
+
         </div>
 
         {/* Navigation Action Bar */}
-        <div className="flex flex-wrap justify-between items-center gap-3 px-4 py-2.5 bg-white rounded-[14px] border border-[#172228]/10 shadow-sm">
+        <div className="flex flex-wrap justify-between items-center gap-3 px-4 py-2.5 bg-white rounded-[14px] border border-[#172228]/10 shadow-sm step2-bottom-nav">
           <button
             type="button"
             onClick={onBack}
+            className="step2-back-btn"
             style={{
               padding: "0.55rem 1.25rem",
               borderRadius: "999px",
@@ -876,7 +952,7 @@ export default function Step2AboutYou({
 
           <button
             type="submit"
-            className="btn btn-gold"
+            className="btn btn-gold step2-next-btn"
             style={{
               padding: "0.65rem 1.85rem",
               borderRadius: "999px",

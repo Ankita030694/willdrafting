@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";import WizardButton from "./button";
+import React, { useState, useEffect } from "react";import WizardButton from "./button";
 
 import {
   WillDraftingState,
@@ -23,10 +23,13 @@ import {
 import AudioAssistantButton from "@/components/ui/AudioAssistantButton";
 import LanguageToggle from "@/components/ui/LanguageToggle";
 import { useLanguage } from "@/context/LanguageContext";
+import { sanitizeMobileInput, isValidMobile, MOBILE_ERROR_MSG } from "@/lib/validation";
+import { sanitizeNameInput, normalizeEmail } from "@/lib/inputSanitizers";
+import { useWillStore } from "@/lib/useWillStore";
 
 interface Step6ExecutorsProps {
-  state: WillDraftingState;
-  onUpdate: (updater: (prev: WillDraftingState) => WillDraftingState) => void;
+  state?: WillDraftingState;
+  onUpdate?: (updater: (prev: WillDraftingState) => WillDraftingState) => void;
   onNext: () => void;
   onBack: () => void;
   lang?: "en" | "hi";
@@ -34,21 +37,26 @@ interface Step6ExecutorsProps {
 }
 
 export default function Step6Executors({
-  state,
-  onUpdate,
+  state: propState,
+  onUpdate: propOnUpdate,
   onNext,
   onBack,
   lang: propLang,
   onChangeLang: propOnChangeLang,
 }: Step6ExecutorsProps) {
+  const storeState = useWillStore((s) => s.state);
+  const storeUpdateState = useWillStore((s) => s.updateState);
+  const state = propState || storeState;
+  const onUpdate = propOnUpdate || storeUpdateState;
+
   const context = useLanguage();
   const currentLang = propLang || context.lang || "en";
   const isHi = currentLang === "hi";
   const handleToggleLang = propOnChangeLang || context.setLang;
-  // Existing primary executor or sensible default
+  // Existing primary executor (strictly no autofill)
   const defaultPrimary: PersonContact = state.executorPrimary?.name ? state.executorPrimary : {
-    name: state.familyMembers.find((f) => !f.isMinor)?.name || "",
-    relationship: state.familyMembers.find((f) => !f.isMinor)?.relationship || "Spouse",
+    name: "",
+    relationship: "",
     phone: "",
     email: "",
     address: "",
@@ -69,28 +77,85 @@ export default function Step6Executors({
     }
   );
 
+  useEffect(() => {
+    if (state.executorPrimary) setPrimary(state.executorPrimary);
+    if (state.executorAlternate) {
+      setAlternate(state.executorAlternate);
+      setHasAlternate(Boolean(state.executorAlternate.name));
+    }
+  }, [state.executorPrimary, state.executorAlternate]);
+
   const [errorMsg, setErrorMsg] = useState("");
+
+  const patchPrimary = (patch: Partial<PersonContact>) => {
+    setPrimary((prev) => {
+      const next = { ...prev, ...patch };
+      onUpdate((statePrev) => ({
+        ...statePrev,
+        executorPrimary: next,
+      }));
+      return next;
+    });
+  };
+
+  const patchAlternate = (patch: Partial<PersonContact>) => {
+    setAlternate((prev) => {
+      const next = { ...prev, ...patch };
+      onUpdate((statePrev) => ({
+        ...statePrev,
+        executorAlternate: next,
+      }));
+      return next;
+    });
+  };
+
+  const handleToggleAlternate = (checked: boolean) => {
+    setHasAlternate(checked);
+    if (!checked) {
+      onUpdate((statePrev) => ({
+        ...statePrev,
+        executorAlternate: { name: "", relationship: "", phone: "", email: "", address: "" },
+      }));
+    } else {
+      onUpdate((statePrev) => ({
+        ...statePrev,
+        executorAlternate: alternate,
+      }));
+    }
+  };
 
   const adultFamily = state.familyMembers.filter((f) => !f.isMinor);
 
+  const resolveFamilyAddress = (addr?: string) => {
+    if (!addr) return "";
+    if (addr === "Same as your address (Will creator)") {
+      return [state.testator.address, state.testator.city, state.testator.state, state.testator.pincode]
+        .filter(Boolean)
+        .join(", ");
+    }
+    return addr;
+  };
+
   const handleSelectPrimaryFromFamily = (f: typeof state.familyMembers[0]) => {
-    setPrimary((prev: PersonContact) => ({
-      ...prev,
+    const resolvedAddr = resolveFamilyAddress(f.address);
+    patchPrimary({
       name: f.name,
-      relationship: f.relationship,
-      phone: f.phone || prev.phone,
-      email: f.email || prev.email,
-    }));
+      relationship: f.relationship === "other" && f.customRelationship ? f.customRelationship : f.relationship,
+      phone: f.phone || primary.phone,
+      email: f.email || primary.email,
+      address: resolvedAddr || primary.address,
+    });
   };
 
   const handleSelectAlternateFromFamily = (f: typeof state.familyMembers[0]) => {
-    setAlternate((prev: PersonContact) => ({
-      ...prev,
+    const resolvedAddr = resolveFamilyAddress(f.address);
+    patchAlternate({
       name: f.name,
-      relationship: f.relationship,
-      phone: f.phone || prev.phone,
-      email: f.email || prev.email,
-    }));
+      relationship: f.relationship === "other" && f.customRelationship ? f.customRelationship : f.relationship,
+      phone: f.phone || alternate.phone,
+      email: f.email || alternate.email,
+      address: resolvedAddr || alternate.address,
+    });
   };
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -100,9 +165,17 @@ export default function Step6Executors({
       setErrorMsg("Please provide the full legal name of your Primary Executor.");
       return;
     }
+    if (primary.phone && !isValidMobile(primary.phone)) {
+      setErrorMsg(isHi ? "मोबाइल नंबर में ठीक 10 अंक होने चाहिए।" : MOBILE_ERROR_MSG);
+      return;
+    }
 
     if (hasAlternate && !alternate.name.trim()) {
       setErrorMsg("Please provide the full legal name of your Alternate Executor or disable the alternate toggle.");
+      return;
+    }
+    if (hasAlternate && alternate.phone && !isValidMobile(alternate.phone)) {
+      setErrorMsg(isHi ? "मोबाइल नंबर में ठीक 10 अंक होने चाहिए।" : MOBILE_ERROR_MSG);
       return;
     }
 
@@ -125,16 +198,14 @@ export default function Step6Executors({
       style={{
         display: "flex",
         flexDirection: "column",
-        gap: "0.85rem",
+        gap: "1.25rem",
         width: "100%",
-        height: "100%",
-        justifyContent: "space-between",
       }}
     >
       {/* Header */}
       <div>
         <div style={{ display: "flex", alignItems: "center", justifyContent: "flex-end", marginBottom: "0.35rem" }}>
-          <div style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
+          <div className="wizard-step-header-meta" style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
             <LanguageToggle size="sm" currentLang={currentLang} onToggle={handleToggleLang} />
             <AudioAssistantButton
               textToSpeak="Who will be the executor of your will? An executor is your trusted manager—like your spouse, brother, or friend—who ensures your instructions are carried out after you. Tap any family member or enter their name."
@@ -274,7 +345,7 @@ export default function Step6Executors({
                   type="text"
                   required
                   value={primary.name}
-                  onChange={(e) => setPrimary({ ...primary, name: e.target.value })}
+                  onChange={(e) => patchPrimary({ name: sanitizeNameInput(e.target.value) })}
                   placeholder="e.g., Sunita Sharma"
                   className="w-full bg-transparent border-0 border-b border-[#D1D5DB] focus:border-[#111827] focus:ring-0 px-0 py-2 text-[15px] text-[#111827] placeholder:text-[#9CA3AF] placeholder:font-light outline-none transition-colors rounded-none shadow-none"
                   style={{
@@ -297,7 +368,7 @@ export default function Step6Executors({
                   type="text"
                   required
                   value={primary.relationship}
-                  onChange={(e) => setPrimary({ ...primary, relationship: e.target.value })}
+                  onChange={(e) => patchPrimary({ relationship: sanitizeNameInput(e.target.value) })}
                   placeholder="e.g., Spouse / Adult Son"
                   className="w-full bg-transparent border-0 border-b border-[#D1D5DB] focus:border-[#111827] focus:ring-0 px-0 py-2 text-[15px] text-[#111827] placeholder:text-[#9CA3AF] placeholder:font-light outline-none transition-colors rounded-none shadow-none"
                   style={{
@@ -317,10 +388,13 @@ export default function Step6Executors({
                   Mobile Phone
                 </label>
                 <input
-                  type="tel"
+                  type="text"
+                  inputMode="numeric"
+                  autoComplete="off"
+                  maxLength={10}
                   value={primary.phone || ""}
-                  onChange={(e) => setPrimary({ ...primary, phone: e.target.value })}
-                  placeholder="Enter 10-digit number"
+                  onChange={(e) => patchPrimary({ phone: sanitizeMobileInput(e.target.value) })}
+                  placeholder="10-digit mobile number"
                   className="w-full bg-transparent border-0 border-b border-[#D1D5DB] focus:border-[#111827] focus:ring-0 px-0 py-2 text-[15px] text-[#111827] placeholder:text-[#9CA3AF] placeholder:font-light outline-none transition-colors rounded-none shadow-none"
                   style={{
                     borderTop: "none",
@@ -341,7 +415,7 @@ export default function Step6Executors({
                 <input
                   type="email"
                   value={primary.email || ""}
-                  onChange={(e) => setPrimary({ ...primary, email: e.target.value })}
+                  onChange={(e) => patchPrimary({ email: normalizeEmail(e.target.value) })}
                   placeholder="executor@example.com"
                   className="w-full bg-transparent border-0 border-b border-[#D1D5DB] focus:border-[#111827] focus:ring-0 px-0 py-2 text-[15px] text-[#111827] placeholder:text-[#9CA3AF] placeholder:font-light outline-none transition-colors rounded-none shadow-none"
                   style={{
@@ -363,7 +437,7 @@ export default function Step6Executors({
                 <input
                   type="text"
                   value={primary.address || ""}
-                  onChange={(e) => setPrimary({ ...primary, address: e.target.value })}
+                  onChange={(e) => patchPrimary({ address: e.target.value })}
                   placeholder="e.g., A-402, Green Glen Layout, Bengaluru"
                   className="w-full bg-transparent border-0 border-b border-[#D1D5DB] focus:border-[#111827] focus:ring-0 px-0 py-2 text-[15px] text-[#111827] placeholder:text-[#9CA3AF] placeholder:font-light outline-none transition-colors rounded-none shadow-none"
                   style={{
@@ -452,7 +526,7 @@ export default function Step6Executors({
                   <span style={{ fontSize: "0.75rem", fontWeight: 600, color: hasAlternate ? "var(--color-navy)" : "var(--color-slate)" }}>
                     {hasAlternate ? "Enabled" : "Disabled"}
                   </span>
-                  <AppleSwitch checked={hasAlternate} onChange={setHasAlternate} />
+                  <AppleSwitch checked={hasAlternate} onChange={handleToggleAlternate} />
                 </div>
               </div>
             </div>
@@ -498,7 +572,7 @@ export default function Step6Executors({
                 </div>
                 <button
                   type="button"
-                  onClick={() => setHasAlternate(true)}
+                  onClick={() => handleToggleAlternate(true)}
                   style={{
                     padding: "0.45rem 1rem",
                     borderRadius: "999px",
@@ -523,7 +597,7 @@ export default function Step6Executors({
                     type="text"
                     required={hasAlternate}
                     value={alternate.name}
-                    onChange={(e) => setAlternate({ ...alternate, name: e.target.value })}
+                    onChange={(e) => patchAlternate({ name: sanitizeNameInput(e.target.value) })}
                     placeholder="e.g., Rajesh Sharma"
                     className="w-full bg-transparent border-0 border-b border-[#D1D5DB] focus:border-[#111827] focus:ring-0 px-0 py-2 text-[15px] text-[#111827] placeholder:text-[#9CA3AF] placeholder:font-light outline-none transition-colors rounded-none shadow-none"
                     style={{
@@ -546,7 +620,7 @@ export default function Step6Executors({
                     type="text"
                     required={hasAlternate}
                     value={alternate.relationship}
-                    onChange={(e) => setAlternate({ ...alternate, relationship: e.target.value })}
+                    onChange={(e) => patchAlternate({ relationship: sanitizeNameInput(e.target.value) })}
                     placeholder="e.g., Brother / Friend"
                     className="w-full bg-transparent border-0 border-b border-[#D1D5DB] focus:border-[#111827] focus:ring-0 px-0 py-2 text-[15px] text-[#111827] placeholder:text-[#9CA3AF] placeholder:font-light outline-none transition-colors rounded-none shadow-none"
                     style={{
@@ -566,10 +640,13 @@ export default function Step6Executors({
                     Mobile Phone
                   </label>
                   <input
-                    type="tel"
+                    type="text"
+                    inputMode="numeric"
+                    autoComplete="off"
+                    maxLength={10}
                     value={alternate.phone || ""}
-                    onChange={(e) => setAlternate({ ...alternate, phone: e.target.value })}
-                    placeholder="Enter 10-digit number"
+                    onChange={(e) => patchAlternate({ phone: sanitizeMobileInput(e.target.value) })}
+                    placeholder="10-digit mobile number"
                     className="w-full bg-transparent border-0 border-b border-[#D1D5DB] focus:border-[#111827] focus:ring-0 px-0 py-2 text-[15px] text-[#111827] placeholder:text-[#9CA3AF] placeholder:font-light outline-none transition-colors rounded-none shadow-none"
                     style={{
                       borderTop: "none",
@@ -590,7 +667,7 @@ export default function Step6Executors({
                   <input
                     type="email"
                     value={alternate.email || ""}
-                    onChange={(e) => setAlternate({ ...alternate, email: e.target.value })}
+                    onChange={(e) => patchAlternate({ email: normalizeEmail(e.target.value) })}
                     placeholder="alternate@example.com"
                     className="w-full bg-transparent border-0 border-b border-[#D1D5DB] focus:border-[#111827] focus:ring-0 px-0 py-2 text-[15px] text-[#111827] placeholder:text-[#9CA3AF] placeholder:font-light outline-none transition-colors rounded-none shadow-none"
                     style={{
@@ -612,7 +689,7 @@ export default function Step6Executors({
                   <input
                     type="text"
                     value={alternate.address || ""}
-                    onChange={(e) => setAlternate({ ...alternate, address: e.target.value })}
+                    onChange={(e) => patchAlternate({ address: e.target.value })}
                     placeholder="e.g., Delhi, NCR"
                     className="w-full bg-transparent border-0 border-b border-[#D1D5DB] focus:border-[#111827] focus:ring-0 px-0 py-2 text-[15px] text-[#111827] placeholder:text-[#9CA3AF] placeholder:font-light outline-none transition-colors rounded-none shadow-none"
                     style={{

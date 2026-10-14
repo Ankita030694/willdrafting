@@ -32,19 +32,34 @@ export default function Footer() {
           {/* Column 1: Brand Wordmark, Mission, and Live Status Badge */}
           <div className="lg:col-span-4 flex flex-col justify-between pr-0 lg:pr-8">
             <div>
-              <Link href="/" className="inline-block mb-5">
-                <Image
-                  src="/Logofinal.svg"
-                  alt="WillDrafting.in - Online Will Drafting and Estate Succession Services in India"
-                  width={260}
-                  height={36}
-                  className="h-8 sm:h-15 w-auto object-contain"
-                  priority
-                />
-              </Link>
+              <div className="flex flex-wrap items-center gap-4 mb-5">
+                <Link href="/" className="inline-block">
+                  <Image
+                    src="/Logofinal.svg"
+                    alt="WillDrafting.in - Online Will Drafting and Estate Succession Services in India"
+                    width={260}
+                    height={36}
+                    className="h-8 sm:h-12 w-auto object-contain"
+                    priority
+                  />
+                </Link>
+                <span className="h-6 w-px bg-[#172228]/15 hidden sm:inline-block" />
+                <div className="flex flex-col">
+                  <span className="text-[9px] font-bold tracking-[0.16em] uppercase text-[#7B8791] mb-0.5">
+                    Powered By
+                  </span>
+                  <Image
+                    src="/ama.svg"
+                    alt="AMA Legal Solutions"
+                    width={130}
+                    height={25}
+                    className="h-5 sm:h-6 w-auto object-contain"
+                  />
+                </div>
+              </div>
 
               <p className="text-[0.925rem] leading-[1.65] text-[#55636D] max-w-[340px] mb-8">
-                Clear, legally binding Will drafting and succession planning under Indian succession law. Protect your family and assets with ease.
+                Clear, legally binding Will drafting and succession planning under Indian succession law, powered by AMA Legal Solutions. Protect your family and assets with ease.
               </p>
             </div>
 
@@ -71,11 +86,6 @@ export default function Footer() {
               <li>
                 <Link href="/aboutus" className="hover:text-[#172228] transition-colors">
                   About Us
-                </Link>
-              </li>
-              <li>
-                <Link href="/how-it-works" className="hover:text-[#172228] transition-colors">
-                  How It Works
                 </Link>
               </li>
               <li>
@@ -108,7 +118,7 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/how-it-works" className="hover:text-[#172228] transition-colors">
+                <Link href="/service" className="hover:text-[#172228] transition-colors">
                   Lawyer Review & Verification
                 </Link>
               </li>

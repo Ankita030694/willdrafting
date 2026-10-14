@@ -2,11 +2,10 @@
 
 import React, { Suspense, useState, useEffect } from "react";
 import { useSearchParams, useRouter, useParams } from "next/navigation";
+import { useSession } from "next-auth/react";
 import {
   WillDraftingState,
-  loadStoredWillState,
-  saveStoredWillState,
-  SCENARIO_1_STANDARD_MARRIED,
+  setActiveUser,
 } from "@/lib/willDraftingStore";
 import WizardSidebar from "@/components/wizard/WizardSidebar";
 import Step1Welcome from "@/components/wizard/Step1Welcome";
@@ -24,9 +23,13 @@ import Step12Assembly from "@/components/wizard/Step12Assembly";
 import Step13PlanSelect from "@/components/wizard/Step13PlanSelect";
 import Step14FinalWill from "@/components/wizard/Step14FinalWill";
 import WizardStepProgressBar from "@/components/wizard/WizardStepProgressBar";
+import DevQuickFillBar from "@/components/dev/DevQuickFillBar";
 import LanguageToggle from "@/components/ui/LanguageToggle";
 import { useLanguage } from "@/context/LanguageContext";
 import { applyLanguageTranslation } from "@/lib/translations";
+import { normalizeWillState } from "@/lib/inputSanitizers";
+import { useWillStore } from "@/lib/useWillStore";
+import CloudSyncBadge from "@/components/wizard/CloudSyncBadge";
 import {
   getStepFromParam,
   getUrlForStep,
@@ -36,13 +39,16 @@ import {
 
 function WizardContent() {
   const router = useRouter();
+  const { data: session } = useSession();
+  const userEmail = session?.user?.email;
   const params = useParams<{ step?: string }>();
   const searchParams = useSearchParams();
   const rawStepParam = params?.step || searchParams.get("step");
   const initialStep = getStepFromParam(rawStepParam);
 
   const [currentStep, setCurrentStep] = useState(initialStep);
-  const [state, setState] = useState<WillDraftingState>(SCENARIO_1_STANDARD_MARRIED);
+  const state = useWillStore((s) => s.state);
+  const [devKey, setDevKey] = useState(0);
   const [mounted, setMounted] = useState(false);
   const [mobileSidebarOpen, setMobileSidebarOpen] = useState(false);
   const { lang, setLang } = useLanguage();
@@ -50,21 +56,45 @@ function WizardContent() {
 
   useEffect(() => {
     setCurrentStep(initialStep);
-  }, [initialStep]);
+    if (!rawStepParam || rawStepParam === "dashboard") {
+      router.replace("/start/dashboard");
+    }
+  }, [initialStep, rawStepParam, router]);
 
   useEffect(() => {
-    const loaded = loadStoredWillState();
-    setState(loaded);
-    setMounted(true);
-
-    const handleStateChange = () => {
-      setState(loadStoredWillState());
-    };
-    window.addEventListener("willdrafting_state_change", handleStateChange);
-    return () => {
-      window.removeEventListener("willdrafting_state_change", handleStateChange);
-    };
-  }, []);
+    if (userEmail) {
+      setActiveUser(userEmail);
+    }
+    // Initialize central store session (handles local read + server hydration for guests & users)
+    void useWillStore.getState().initSession(userEmail).then(() => {
+      if (session?.user) {
+        const cur = useWillStore.getState().state;
+        if (!cur.detailsVerified) {
+          let changed = false;
+          const testator = { ...cur.testator };
+          if (!testator.fullName && session.user.name) {
+            testator.fullName = session.user.name;
+            changed = true;
+          }
+          if (!testator.email && session.user.email) {
+            testator.email = session.user.email;
+            changed = true;
+          }
+          if (!testator.phone && session.user.phone) {
+            testator.phone = session.user.phone;
+            changed = true;
+          }
+          if (changed) {
+            useWillStore.getState().updateState((prev) => ({
+              ...prev,
+              testator,
+            }));
+          }
+        }
+      }
+      setMounted(true);
+    });
+  }, [userEmail, session?.user]);
 
   const handleChangeLang = (nextLang: "en" | "hi") => {
     setLang(nextLang);
@@ -101,11 +131,12 @@ function WizardContent() {
   }, [lang, currentStep, state]);
 
   const handleUpdateState = (updater: (prev: WillDraftingState) => WillDraftingState) => {
-    setState((prev) => {
-      const updated = updater(prev);
-      saveStoredWillState(updated);
-      return updated;
-    });
+    useWillStore.getState().updateState(updater);
+  };
+
+  const handleDevUpdateState = (newState: WillDraftingState) => {
+    useWillStore.getState().setFullState(newState);
+    setDevKey((prev) => prev + 1);
   };
 
   const handleStepJump = (step: number) => {
@@ -151,6 +182,7 @@ function WizardContent() {
 
   return (
     <div
+      className="wizard-shell-root"
       style={{
         display: "flex",
         height: "100vh",
@@ -164,7 +196,6 @@ function WizardContent() {
         <WizardSidebar
           currentStep={currentStep}
           onJumpToStep={handleStepJump}
-          state={state}
           lang={lang}
           onChangeLang={handleChangeLang}
         />
@@ -183,13 +214,13 @@ function WizardContent() {
           onClick={() => setMobileSidebarOpen(false)}
         >
           <div
+            className="wizard-mobile-drawer-panel"
             style={{ width: "310px", height: "100%", backgroundColor: "var(--color-navy)" }}
             onClick={(e) => e.stopPropagation()}
           >
             <WizardSidebar
               currentStep={currentStep}
               onJumpToStep={handleStepJump}
-              state={state}
               lang={lang}
               onChangeLang={handleChangeLang}
             />
@@ -233,17 +264,18 @@ function WizardContent() {
             </svg>
           </button>
           <div style={{ display: "flex", alignItems: "center", gap: "0.65rem" }}>
+            <CloudSyncBadge lang={lang} />
             <LanguageToggle lang={lang} onChangeLang={handleChangeLang} size="sm" />
-            <div style={{ display: "flex", alignItems: "center", gap: "0.35rem" }}>
-              <span style={{ fontWeight: 700, fontSize: "0.825rem" }}>
-                {currentStep <= 1
-                  ? (lang === "hi" ? "स्वागत" : "Welcome")
-                  : (lang === "hi" ? `चरण ${currentStep - 1} / 13` : `Step ${currentStep - 1} of 13`)}
-              </span>
-              <span style={{ fontSize: "0.7rem", color: "var(--color-gold)", fontWeight: 700, padding: "0.15rem 0.45rem", borderRadius: "999px", backgroundColor: "rgba(198, 83, 120, 0.15)" }}>
-                {currentStep <= 1 ? "0%" : `${Math.round(((currentStep - 1) / 13) * 100)}%`}
-              </span>
-            </div>
+            {currentStep === 10 && (
+              <div className="wizard-mobile-header-step-pill" style={{ display: "flex", alignItems: "center", gap: "0.35rem" }}>
+                <span style={{ fontWeight: 700, fontSize: "0.825rem" }}>
+                  {lang === "hi" ? `चरण ${currentStep - 1} / 13` : `Step ${currentStep - 1} of 13`}
+                </span>
+                <span style={{ fontSize: "0.7rem", color: "var(--color-gold)", fontWeight: 700, padding: "0.15rem 0.45rem", borderRadius: "999px", backgroundColor: "rgba(198, 83, 120, 0.15)" }}>
+                  {`${Math.round(((currentStep - 1) / 13) * 100)}%`}
+                </span>
+              </div>
+            )}
           </div>
         </div>
 
@@ -253,7 +285,7 @@ function WizardContent() {
           className="wizard-main-viewport"
           style={{
             flex: 1,
-            padding: "0.85rem 1.25rem 1rem",
+            padding: "0.85rem 1.25rem 2.5rem",
             display: "flex",
             flexDirection: "column",
             alignItems: "stretch",
@@ -264,192 +296,266 @@ function WizardContent() {
             overflowY: "auto",
           }}
         >
-          {/* Progress Bar over Main Step Heading showing progress of filling steps */}
-          <WizardStepProgressBar
-            currentStep={currentStep}
-            onJumpToStep={handleStepJump}
-            state={state}
-            lang={lang}
-          />
+          {/* Progress Bar over Main Step Heading showing progress of filling steps (suppressed on step 10 to eliminate duplicate noise) */}
+          {currentStep !== 10 && (
+            <WizardStepProgressBar
+              currentStep={currentStep}
+              onJumpToStep={handleStepJump}
+              lang={lang}
+            />
+          )}
 
-          <div style={{ width: "100%", minWidth: 0, flex: 1, minHeight: 0, display: "flex", flexDirection: "column" }}>
+          {/* Dev Quick-Fill Bar (Only visible in Development/Localhost when not locked) */}
+          {!state.detailsVerified && (
+            <DevQuickFillBar
+              currentStep={currentStep}
+              onUpdateState={handleDevUpdateState}
+              userEmail={userEmail}
+            />
+          )}
+
+          {state.detailsVerified && currentStep >= 2 && currentStep <= 9 && (
+            <div
+              className="wizard-locked-banner"
+              style={{
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "space-between",
+                flexWrap: "wrap",
+                gap: "0.75rem",
+                padding: "0.75rem 1.15rem",
+                marginBottom: "0.85rem",
+                backgroundColor: "#ECFDF5",
+                border: "1.5px solid #10B981",
+                borderRadius: "14px",
+                color: "#065F46",
+              }}
+            >
+              <div style={{ display: "flex", alignItems: "center", gap: "0.55rem", fontSize: "0.82rem", fontWeight: 700 }}>
+                <span>🔒</span>
+                <span>
+                  {lang === "hi"
+                    ? "वसीयत विवरण OTP द्वारा सत्यापित और स्थायी रूप से लॉक हैं (केवल पढ़ने हेतु)"
+                    : "Will Details Verified via OTP & Permanently Locked (Read-Only Mode)"}
+                </span>
+              </div>
+              <div className="wizard-locked-banner-actions" style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
+                <button
+                  type="button"
+                  className="wizard-locked-btn-prev"
+                  onClick={() => handleStepJump(getPrevStepNumber(currentStep, hasMinors))}
+                  style={{
+                    padding: "0.35rem 0.75rem",
+                    borderRadius: "8px",
+                    border: "1px solid #059669",
+                    backgroundColor: "#FFFFFF",
+                    color: "#065F46",
+                    fontSize: "0.75rem",
+                    fontWeight: 700,
+                    cursor: "pointer",
+                  }}
+                >
+                  ← {lang === "hi" ? "पिछला चरण" : "Previous Step"}
+                </button>
+                <button
+                  type="button"
+                  className="wizard-locked-btn-next"
+                  onClick={() => handleStepJump(getNextStepNumber(currentStep, hasMinors))}
+                  style={{
+                    padding: "0.35rem 0.75rem",
+                    borderRadius: "8px",
+                    border: "none",
+                    backgroundColor: "#059669",
+                    color: "#FFFFFF",
+                    fontSize: "0.75rem",
+                    fontWeight: 700,
+                    cursor: "pointer",
+                  }}
+                >
+                  {lang === "hi" ? "अगला चरण" : "Next Step"} →
+                </button>
+                <button
+                  type="button"
+                  className="wizard-locked-btn-review"
+                  onClick={() => handleStepJump(10)}
+                  style={{
+                    padding: "0.35rem 0.75rem",
+                    borderRadius: "8px",
+                    border: "none",
+                    backgroundColor: "#172228",
+                    color: "#FFFFFF",
+                    fontSize: "0.75rem",
+                    fontWeight: 700,
+                    cursor: "pointer",
+                  }}
+                >
+                  {lang === "hi" ? "समीक्षा (चरण 9) →" : "Back to Review →"}
+                </button>
+              </div>
+            </div>
+          )}
+
+          <div style={{ width: "100%", minWidth: 0, flex: 1, minHeight: "auto", display: "flex", flexDirection: "column" }}>
           {currentStep === 1 && (
             <Step1Welcome
-              state={state}
+              key={`step-1-${devKey}`}
               onNext={() => handleStepJump(2)}
               lang={lang}
               onChangeLang={handleChangeLang}
             />
           )}
 
-          {currentStep === 2 && (
-            <Step2AboutYou
-              state={state}
-              onUpdate={handleUpdateState}
-              onNext={() => handleStepJump(3)}
-              onBack={() => handleStepJump(1)}
-              lang={lang}
-              onChangeLang={handleChangeLang}
-            />
-          )}
+          {currentStep >= 2 && currentStep <= 9 && (
+            <fieldset
+              className="wizard-step-fieldset"
+              disabled={Boolean(state.detailsVerified)}
+              style={{
+                border: "none",
+                margin: 0,
+                padding: 0,
+                minWidth: 0,
+                minInlineSize: 0,
+                width: "100%",
+                maxWidth: "100%",
+                pointerEvents: state.detailsVerified ? "none" : "auto",
+                opacity: state.detailsVerified ? 0.88 : 1,
+              }}
+            >
+              {currentStep === 2 && (
+                <Step2AboutYou
+                  key={`step-2-${devKey}`}
+                  onNext={() => handleStepJump(3)}
+                  onBack={() => handleStepJump(1)}
+                  lang={lang}
+                  onChangeLang={handleChangeLang}
+                />
+              )}
 
-          {currentStep === 3 && (
-            <Step3Family
-              state={state}
-              onUpdate={handleUpdateState}
-              onNext={() => handleStepJump(4)}
-              onBack={() => handleStepJump(2)}
-              lang={lang}
-              onChangeLang={handleChangeLang}
-            />
-          )}
+              {currentStep === 3 && (
+                <Step3Family
+                  key={`step-3-${devKey}`}
+                  onNext={() => handleStepJump(4)}
+                  onBack={() => handleStepJump(2)}
+                  lang={lang}
+                  onChangeLang={handleChangeLang}
+                />
+              )}
 
-          {currentStep === 4 && (
-            <Step4Assets
-              state={state}
-              onUpdate={handleUpdateState}
-              onNext={() => handleStepJump(5)}
-              onBack={() => handleStepJump(3)}
-              lang={lang}
-              onChangeLang={handleChangeLang}
-            />
-          )}
+              {currentStep === 4 && (
+                <Step4Assets
+                  key={`step-4-${devKey}`}
+                  onNext={() => handleStepJump(5)}
+                  onBack={() => handleStepJump(3)}
+                  lang={lang}
+                  onChangeLang={handleChangeLang}
+                />
+              )}
 
-          {currentStep === 5 && (
-            <Step5Allocations
-              state={state}
-              onUpdate={handleUpdateState}
-              onNext={() => handleStepJump(6)}
-              onBack={() => handleStepJump(4)}
-              lang={lang}
-              onChangeLang={handleChangeLang}
-            />
-          )}
+              {currentStep === 5 && (
+                <Step5Allocations
+                  key={`step-5-${devKey}`}
+                  onNext={() => handleStepJump(6)}
+                  onBack={() => handleStepJump(4)}
+                  lang={lang}
+                  onChangeLang={handleChangeLang}
+                />
+              )}
 
-          {currentStep === 6 && (
-            <Step6Executors
-              state={state}
-              onUpdate={handleUpdateState}
-              onNext={() => handleStepJump(hasMinors ? 7 : 8)}
-              onBack={() => handleStepJump(5)}
-              lang={lang}
-              onChangeLang={handleChangeLang}
-            />
-          )}
+              {currentStep === 6 && (
+                <Step6Executors
+                  key={`step-6-${devKey}`}
+                  onNext={() => handleStepJump(hasMinors ? 7 : 8)}
+                  onBack={() => handleStepJump(5)}
+                  lang={lang}
+                  onChangeLang={handleChangeLang}
+                />
+              )}
 
-          {currentStep === 7 && (
-            <Step7Guardians
-              state={state}
-              onUpdate={handleUpdateState}
-              onNext={() => handleStepJump(8)}
-              onBack={() => handleStepJump(6)}
-              lang={lang}
-              onChangeLang={handleChangeLang}
-            />
-          )}
+              {currentStep === 7 && (
+                <Step7Guardians
+                  key={`step-7-${devKey}`}
+                  onNext={() => handleStepJump(8)}
+                  onBack={() => handleStepJump(6)}
+                  lang={lang}
+                  onChangeLang={handleChangeLang}
+                />
+              )}
 
-          {currentStep === 8 && (
-            <Step8SpecialWishes
-              state={state}
-              onUpdate={handleUpdateState}
-              onNext={() => handleStepJump(9)}
-              onBack={() => handleStepJump(hasMinors ? 7 : 6)}
-            />
-          )}
+              {currentStep === 8 && (
+                <Step8SpecialWishes
+                  key={`step-8-${devKey}`}
+                  onNext={() => handleStepJump(9)}
+                  onBack={() => handleStepJump(hasMinors ? 7 : 6)}
+                  lang={lang}
+                  onChangeLang={handleChangeLang}
+                />
+              )}
 
-          {currentStep === 9 && (
-            <Step9Motivation
-              state={state}
-              onUpdate={handleUpdateState}
-              onNext={() => handleStepJump(10)}
-              onBack={() => handleStepJump(8)}
-            />
+              {currentStep === 9 && (
+                <Step9Motivation
+                  key={`step-9-${devKey}`}
+                  onNext={() => handleStepJump(10)}
+                  onBack={() => handleStepJump(8)}
+                  lang={lang}
+                  onChangeLang={handleChangeLang}
+                />
+              )}
+            </fieldset>
           )}
 
           {currentStep === 10 && (
             <Step10Review
-              state={state}
+              key={`step-10-${devKey}`}
               onJumpToStep={handleStepJump}
               onNext={() => handleStepJump(11)}
               onBack={() => handleStepJump(9)}
+              lang={lang}
+              onChangeLang={handleChangeLang}
             />
           )}
 
           {currentStep === 11 && (
             <Step11HealthCheck
-              state={state}
+              key={`step-11-${devKey}`}
               onNext={() => handleStepJump(12)}
               onBack={() => handleStepJump(10)}
+              lang={lang}
+              onChangeLang={handleChangeLang}
             />
           )}
 
           {currentStep === 12 && (
             <Step12Assembly
-              state={state}
-              onUpdate={handleUpdateState}
-              onNext={() => handleStepJump(13)}
+              key={`step-12-${devKey}`}
+              onNext={() => {
+                const isPaid = session?.user?.paymentStatus === "paid";
+                handleStepJump(isPaid ? 14 : 13);
+              }}
+              lang={lang}
+              onChangeLang={handleChangeLang}
             />
           )}
 
           {currentStep === 13 && (
             <Step13PlanSelect
-              state={state}
-              onUpdate={handleUpdateState}
+              key={`step-13-${devKey}`}
               onNext={() => handleStepJump(14)}
               onBack={() => handleStepJump(11)}
+              lang={lang}
+              onChangeLang={handleChangeLang}
             />
           )}
 
           {currentStep === 14 && (
             <Step14FinalWill
-              state={state}
+              key={`step-14-${devKey}`}
               onBack={() => handleStepJump(13)}
+              lang={lang}
+              onChangeLang={handleChangeLang}
             />
           )}
           </div>
         </main>
-
-        {/* Slim Bottom Provenance & Security Strip */}
-        <footer
-          className={currentStep > 1 ? "hide-on-mobile-step" : ""}
-          style={{
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            gap: "0.65rem",
-            padding: "0.35rem 1.25rem",
-            backgroundColor: "#C65378",
-            fontSize: "0.72rem",
-            color: "rgba(255, 255, 255, 0.92)",
-            flexShrink: 0,
-            position: "sticky",
-            bottom: 0,
-            width: "100%",
-            zIndex: 10,
-            textAlign: "center",
-          }}
-        >
-          <div style={{ display: "inline-flex", alignItems: "center", gap: "0.4rem" }}>
-            <span
-              style={{
-                width: "6px",
-                height: "6px",
-                borderRadius: "50%",
-                backgroundColor: "#FFFFFF",
-                boxShadow: "0 0 6px rgba(255, 255, 255, 0.8)",
-              }}
-            />
-            <span style={{ fontWeight: 700, color: "#FFFFFF" }}>
-              {lang === "hi" ? "ब्राउज़र एन्क्रिप्टेड तिजोरी (Browser Encrypted Vault)" : "Browser Encrypted Vault"}
-            </span>
-          </div>
-          <span style={{ opacity: 0.6 }}>•</span>
-          <span style={{ fontWeight: 500 }}>
-            {lang === "hi"
-              ? "भारतीय उत्तराधिकार कानून • 100% मान्य"
-              : "Indian Succession Law • 100% Compliant"}
-          </span>
-        </footer>
       </div>
 
       <style jsx global>{`

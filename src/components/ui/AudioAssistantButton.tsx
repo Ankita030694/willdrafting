@@ -2,6 +2,7 @@
 
 import React from "react";
 import { useVoiceAssistant } from "@/hooks/useVoiceAssistant";
+import { useLanguage } from "@/context/LanguageContext";
 
 interface AudioAssistantButtonProps {
   textToSpeak: string;
@@ -13,9 +14,10 @@ interface AudioAssistantButtonProps {
 export default function AudioAssistantButton({
   textToSpeak,
   hindiText,
-  label = "Listen / सुनें",
+  label,
   style,
 }: AudioAssistantButtonProps) {
+  const { isHi } = useLanguage();
   const { speak, stop, isPlaying, supported } = useVoiceAssistant();
 
   if (!supported) return null;
@@ -25,20 +27,38 @@ export default function AudioAssistantButton({
     if (isPlaying) {
       stop();
     } else {
-      // Speak the prompt
-      speak(textToSpeak, "en-IN");
+      if (isHi && (hindiText || textToSpeak)) {
+        speak(hindiText || textToSpeak, "hi-IN");
+      } else {
+        speak(textToSpeak, "en-IN");
+      }
     }
   };
+
+  // Derive strictly single-language label (without duplicate speaker emoji since SVG icon is rendered)
+  let displayLabel: string;
+  if (label) {
+    if (label.includes(" / ")) {
+      displayLabel = isHi ? "सुनें" : "Listen";
+    } else {
+      displayLabel = label.replace(/\s*🔊/g, "").trim();
+    }
+  } else {
+    displayLabel = isHi ? "सुनें" : "Listen";
+  }
+
+  const playingLabel = isHi ? "रोकें" : "Stop";
 
   return (
     <button
       type="button"
+      className="audio-assistant-btn"
       onClick={handleClick}
       title={isPlaying ? "Stop audio" : "Listen to question in simple language"}
       style={{
         display: "inline-flex",
         alignItems: "center",
-        gap: "0.45rem",
+        gap: "0.4rem",
         padding: "0.35rem 0.75rem",
         borderRadius: "9999px",
         backgroundColor: isPlaying ? "rgba(198, 83, 120, 0.15)" : "rgba(23, 34, 40, 0.06)",
@@ -49,6 +69,8 @@ export default function AudioAssistantButton({
         cursor: "pointer",
         transition: "all 0.2s ease",
         userSelect: "none",
+        whiteSpace: "nowrap",
+        flexShrink: 0,
         ...style,
       }}
     >
@@ -92,7 +114,7 @@ export default function AudioAssistantButton({
           </svg>
         )}
       </span>
-      <span>{isPlaying ? "Playing... / रोकें" : label}</span>
+      <span>{isPlaying ? playingLabel : displayLabel}</span>
     </button>
   );
 }

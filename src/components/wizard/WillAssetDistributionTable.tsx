@@ -62,10 +62,10 @@ export default function WillAssetDistributionTable({
       <div
         style={{
           padding: "1rem",
-          backgroundColor: "#F8FAFC",
-          border: "1px dashed #CBD5E1",
-          borderRadius: "8px",
-          color: "#475569",
+          backgroundColor: "#FFFFFF",
+          border: "1px solid #000000",
+          borderRadius: "4px",
+          color: "#000000",
           fontSize: "0.875rem",
           margin: "0.75rem 0",
         }}
@@ -80,81 +80,155 @@ export default function WillAssetDistributionTable({
     rowKey: string;
     assetName: string;
     assetSubtext?: string;
+    assetExtraLines?: string[];
     categoryLabel: string;
     ownershipText: string;
     valuationText: string;
+    valuationSubtext?: string;
     rawValue: number;
     beneficiaryName: string;
     beneficiaryRel?: string;
+    bequestCondition?: string;
     sharePercentage: number;
+    shareSubtext?: string;
   };
 
   const rows: TableRow[] = [];
 
-  assets.forEach((asset, aIdx) => {
+  assets.forEach((asset) => {
     const assetAllocs = allocations.filter((alc) => alc.assetId === asset.id);
-    const ownershipPercent =
-      asset.ownership === "joint" ? `${asset.ownershipPercentage || 50}%` : "100%";
-    const ownershipText =
-      asset.ownership === "joint"
-        ? `${ownershipPercent} (Joint)`
-        : "100% (Sole)";
-    const valuationText = formatAssetValue(asset.approximateValue);
+    const isJoint = asset.ownership === "joint";
+    const ownershipNum = isJoint ? (asset.ownershipPercentage || 50) : 100;
+    const ownershipPercent = `${ownershipNum}%`;
+    const coOwnerDesc = asset.jointOwnerName?.trim()
+      ? ` (with ${asset.jointOwnerName.trim()}${asset.jointOwnerRelationship?.trim() ? `, ${asset.jointOwnerRelationship.trim()}` : ""})`
+      : "";
+    const ownershipText = isJoint
+      ? `${ownershipPercent} Joint${coOwnerDesc}`
+      : "100% (Sole)";
+    const fullAssetValue = asset.approximateValue || (asset.sumAssured ? Number(String(asset.sumAssured).replace(/[^0-9.]/g, "")) || 0 : 0);
+    const testatorShareValue = Math.round(fullAssetValue * (ownershipNum / 100));
     const categoryLabel = getCategoryLabel(asset.category, asset.typeDetails);
-    const assetSubtext = [asset.identifier, asset.addressOrInstitution].filter(Boolean).join(" • ");
+    const assetSubtext = [
+      asset.identifier?.trim() || asset.policyNumber?.trim(),
+      asset.addressOrInstitution?.trim() || asset.insuranceCompany?.trim(),
+    ]
+      .filter(Boolean)
+      .join(" • ");
+
+    const assetExtraLines: string[] = [];
+    if (asset.policyNumber?.trim() && asset.identifier?.trim() && asset.policyNumber.trim() !== asset.identifier.trim()) {
+      assetExtraLines.push(`Policy No: ${asset.policyNumber.trim()}`);
+    }
+    if (asset.insuranceCompany?.trim() && asset.addressOrInstitution?.trim() && asset.insuranceCompany.trim() !== asset.addressOrInstitution.trim()) {
+      assetExtraLines.push(`Insurer: ${asset.insuranceCompany.trim()}`);
+    }
+    if (asset.sumAssured && Number(asset.sumAssured) > 0) {
+      assetExtraLines.push(`Sum Assured: ${formatAssetValue(Number(asset.sumAssured))}`);
+    }
+    if (asset.maturityDate?.trim()) {
+      assetExtraLines.push(`Maturity: ${asset.maturityDate.trim()}`);
+    }
+    if (asset.nomineeName?.trim()) {
+      assetExtraLines.push(`Registered Nominee (Custodian): ${asset.nomineeName.trim()}`);
+    }
+    if (asset.hasLoan || asset.loanDetails?.trim()) {
+      assetExtraLines.push(
+        `Encumbrance / Loan: ${asset.loanDetails?.trim() || "Subject to active loan / mortgage"}`
+      );
+    }
+    if (asset.specialInstructions?.trim()) {
+      assetExtraLines.push(`Direction: ${asset.specialInstructions.trim()}`);
+    }
 
     if (assetAllocs.length === 0) {
       // No specific allocation, falls to residuary
       rows.push({
         rowKey: `${asset.id}-residuary`,
-        assetName: asset.name,
+        assetName: (asset.name || "").trim(),
         assetSubtext,
+        assetExtraLines,
         categoryLabel,
         ownershipText,
-        valuationText,
-        rawValue: asset.approximateValue || 0,
-        beneficiaryName: residuaryBeneficiaryName || "Residuary Legatee / Legal Heirs",
+        valuationText: formatAssetValue(testatorShareValue),
+        valuationSubtext: isJoint && fullAssetValue > 0 ? `(${ownershipNum}% of ${formatAssetValue(fullAssetValue)})` : undefined,
+        rawValue: testatorShareValue,
+        beneficiaryName: (residuaryBeneficiaryName || "Residuary Legatee / Legal Heirs").trim(),
         beneficiaryRel: "Residuary",
         sharePercentage: 100,
+        shareSubtext: isJoint ? `of ${ownershipNum}% share` : undefined,
       });
     } else {
       assetAllocs.forEach((alc, alcIdx) => {
         const matchingFam = familyMembers.find(
-          (f) => f.id === alc.beneficiaryId || f.name.toLowerCase() === alc.beneficiaryName.toLowerCase()
+          (f) => f.id === alc.beneficiaryId || f.name.trim().toLowerCase() === (alc.beneficiaryName || "").trim().toLowerCase()
         );
+        const alcPct = Number(alc.percentage) || 0;
+        const allocatedValue = Math.round(testatorShareValue * (alcPct / 100));
+        let valuationSubtext: string | undefined;
+        if (fullAssetValue > 0) {
+          if (isJoint && assetAllocs.length > 1) {
+            valuationSubtext = `of ${formatAssetValue(testatorShareValue)} share (Total ${formatAssetValue(fullAssetValue)})`;
+          } else if (isJoint) {
+            valuationSubtext = `(${ownershipNum}% of ${formatAssetValue(fullAssetValue)})`;
+          } else if (assetAllocs.length > 1) {
+            valuationSubtext = `of ${formatAssetValue(fullAssetValue)} total`;
+          }
+        }
+        const famRel = matchingFam
+          ? (matchingFam.relationship === "other" && matchingFam.customRelationship
+              ? matchingFam.customRelationship
+              : matchingFam.relationship
+            )?.trim()
+          : undefined;
+
         rows.push({
           rowKey: `${asset.id}-alc-${alc.id || alcIdx}`,
-          assetName: asset.name,
+          assetName: (asset.name || "").trim(),
           assetSubtext,
+          assetExtraLines,
           categoryLabel,
           ownershipText,
-          valuationText,
-          rawValue: asset.approximateValue || 0,
-          beneficiaryName: alc.beneficiaryName,
-          beneficiaryRel: matchingFam?.relationship,
-          sharePercentage: alc.percentage,
+          valuationText: formatAssetValue(allocatedValue),
+          valuationSubtext,
+          rawValue: allocatedValue,
+          beneficiaryName: (alc.beneficiaryName || "").trim(),
+          beneficiaryRel: famRel,
+          bequestCondition: alc.specificBequestCondition?.trim() || undefined,
+          sharePercentage: alcPct,
+          shareSubtext: isJoint ? `of ${ownershipNum}% share` : undefined,
         });
       });
     }
   });
 
-  const totalValue = assets.reduce((sum, a) => sum + (a.approximateValue || 0), 0);
+  const totalValue = assets.reduce((sum, a) => {
+    const ownNum = a.ownership === "joint" ? (a.ownershipPercentage || 50) : 100;
+    const rawVal = a.approximateValue || (a.sumAssured ? Number(String(a.sumAssured).replace(/[^0-9.]/g, "")) || 0 : 0);
+    return sum + Math.round(rawVal * (ownNum / 100));
+  }, 0);
 
   return (
     <div
+      className="will-schedule-wrapper"
       style={{
         margin: "1rem 0 1.25rem 0",
         width: "100%",
+        maxWidth: "100%",
         overflowX: "auto",
-        pageBreakInside: "avoid",
       }}
     >
       <div
+        className="will-schedule-header"
         style={{
           display: "flex",
           justifyContent: "space-between",
           alignItems: "center",
+          flexWrap: "wrap",
+          gap: "0.25rem",
           marginBottom: "0.5rem",
+          pageBreakAfter: "avoid",
+          breakAfter: "avoid",
         }}
       >
         <div
@@ -163,31 +237,34 @@ export default function WillAssetDistributionTable({
             fontWeight: 800,
             letterSpacing: "0.08em",
             textTransform: "uppercase",
-            color: "#0F172A",
+            color: "#000000",
           }}
         >
           SCHEDULE OF ASSET DISTRIBUTION
         </div>
-        <div style={{ fontSize: "0.75rem", color: "#64748B", fontWeight: 600 }}>
+        <div style={{ fontSize: "0.75rem", color: "#000000", fontWeight: 600 }}>
           {assets.length} Itemized {assets.length === 1 ? "Asset" : "Assets"} • Total Approx. {formatAssetValue(totalValue)}
         </div>
       </div>
 
       <table
+        className="will-schedule-table"
         style={{
           width: "100%",
           borderCollapse: "collapse",
           fontSize: "0.85rem",
-          color: "#0F172A",
+          color: "#000000",
           backgroundColor: "#FFFFFF",
-          border: "1.5px solid #0F172A",
+          border: "1.5px solid #000000",
         }}
       >
         <thead>
           <tr
             style={{
-              backgroundColor: "#F1F5F9",
-              borderBottom: "1.5px solid #0F172A",
+              backgroundColor: "#F8F8F8",
+              borderBottom: "1.5px solid #000000",
+              pageBreakInside: "avoid",
+              breakInside: "avoid",
             }}
           >
             <th
@@ -198,8 +275,9 @@ export default function WillAssetDistributionTable({
                 fontSize: "0.78rem",
                 textTransform: "uppercase",
                 letterSpacing: "0.04em",
-                borderRight: "1px solid #CBD5E1",
+                borderRight: "1px solid #000000",
                 width: "28%",
+                color: "#000000",
               }}
             >
               Asset
@@ -212,8 +290,9 @@ export default function WillAssetDistributionTable({
                 fontSize: "0.78rem",
                 textTransform: "uppercase",
                 letterSpacing: "0.04em",
-                borderRight: "1px solid #CBD5E1",
+                borderRight: "1px solid #000000",
                 width: "14%",
+                color: "#000000",
               }}
             >
               Type
@@ -226,8 +305,9 @@ export default function WillAssetDistributionTable({
                 fontSize: "0.78rem",
                 textTransform: "uppercase",
                 letterSpacing: "0.04em",
-                borderRight: "1px solid #CBD5E1",
+                borderRight: "1px solid #000000",
                 width: "14%",
+                color: "#000000",
               }}
             >
               Ownership
@@ -240,8 +320,9 @@ export default function WillAssetDistributionTable({
                 fontSize: "0.78rem",
                 textTransform: "uppercase",
                 letterSpacing: "0.04em",
-                borderRight: "1px solid #CBD5E1",
+                borderRight: "1px solid #000000",
                 width: "12%",
+                color: "#000000",
               }}
             >
               Value
@@ -254,8 +335,9 @@ export default function WillAssetDistributionTable({
                 fontSize: "0.78rem",
                 textTransform: "uppercase",
                 letterSpacing: "0.04em",
-                borderRight: "1px solid #CBD5E1",
+                borderRight: "1px solid #000000",
                 width: "20%",
+                color: "#000000",
               }}
             >
               Beneficiary
@@ -269,6 +351,7 @@ export default function WillAssetDistributionTable({
                 textTransform: "uppercase",
                 letterSpacing: "0.04em",
                 width: "12%",
+                color: "#000000",
               }}
             >
               Share
@@ -276,26 +359,35 @@ export default function WillAssetDistributionTable({
           </tr>
         </thead>
         <tbody>
-          {rows.map((row, idx) => (
+          {rows.map((row) => (
             <tr
               key={row.rowKey}
               style={{
-                borderBottom: "1px solid #E2E8F0",
-                backgroundColor: idx % 2 === 0 ? "#FFFFFF" : "#F8FAFC",
+                borderBottom: "1px solid #000000",
+                backgroundColor: "#FFFFFF",
+                pageBreakInside: "avoid",
+                breakInside: "avoid",
               }}
             >
               <td
                 style={{
                   padding: "7px 10px",
                   verticalAlign: "top",
-                  borderRight: "1px solid #E2E8F0",
+                  borderRight: "1px solid #000000",
                   lineHeight: 1.35,
                 }}
               >
-                <div style={{ fontWeight: 700, color: "#0F172A" }}>{row.assetName}</div>
+                <div style={{ fontWeight: 700, color: "#000000" }}>{row.assetName}</div>
                 {row.assetSubtext && (
-                  <div style={{ fontSize: "0.75rem", color: "#64748B", marginTop: "2px" }}>
+                  <div style={{ fontSize: "0.75rem", color: "#333333", marginTop: "2px" }}>
                     {row.assetSubtext}
+                  </div>
+                )}
+                {row.assetExtraLines && row.assetExtraLines.length > 0 && (
+                  <div style={{ fontSize: "0.7rem", color: "#222222", marginTop: "3px" }}>
+                    {row.assetExtraLines.map((line, i) => (
+                      <div key={i}>{line}</div>
+                    ))}
                   </div>
                 )}
               </td>
@@ -303,8 +395,8 @@ export default function WillAssetDistributionTable({
                 style={{
                   padding: "7px 10px",
                   verticalAlign: "top",
-                  borderRight: "1px solid #E2E8F0",
-                  color: "#334155",
+                  borderRight: "1px solid #000000",
+                  color: "#000000",
                   fontWeight: 500,
                 }}
               >
@@ -315,9 +407,9 @@ export default function WillAssetDistributionTable({
                   padding: "7px 10px",
                   verticalAlign: "top",
                   textAlign: "center",
-                  borderRight: "1px solid #E2E8F0",
+                  borderRight: "1px solid #000000",
                   fontWeight: 600,
-                  color: row.ownershipText.includes("Joint") ? "#B45309" : "#047857",
+                  color: "#000000",
                   fontSize: "0.8rem",
                 }}
               >
@@ -328,27 +420,37 @@ export default function WillAssetDistributionTable({
                   padding: "7px 10px",
                   verticalAlign: "top",
                   textAlign: "right",
-                  borderRight: "1px solid #E2E8F0",
+                  borderRight: "1px solid #000000",
                   fontVariantNumeric: "tabular-nums",
                   fontWeight: 600,
-                  color: "#0F172A",
-                  whiteSpace: "nowrap",
+                  color: "#000000",
+                  lineHeight: 1.35,
                 }}
               >
-                {row.valuationText}
+                <div style={{ whiteSpace: "nowrap", fontWeight: 700 }}>{row.valuationText}</div>
+                {row.valuationSubtext && (
+                  <div style={{ fontSize: "0.68rem", color: "#333333", fontWeight: 500, marginTop: "2px" }}>
+                    {row.valuationSubtext}
+                  </div>
+                )}
               </td>
               <td
                 style={{
                   padding: "7px 10px",
                   verticalAlign: "top",
-                  borderRight: "1px solid #E2E8F0",
+                  borderRight: "1px solid #000000",
                   lineHeight: 1.35,
                 }}
               >
-                <div style={{ fontWeight: 700, color: "#0F172A" }}>{row.beneficiaryName}</div>
+                <div style={{ fontWeight: 700, color: "#000000" }}>{row.beneficiaryName}</div>
                 {row.beneficiaryRel && (
-                  <div style={{ fontSize: "0.72rem", color: "#64748B", textTransform: "capitalize" }}>
+                  <div style={{ fontSize: "0.72rem", color: "#333333", textTransform: "capitalize" }}>
                     ({row.beneficiaryRel})
+                  </div>
+                )}
+                {row.bequestCondition && (
+                  <div style={{ fontSize: "0.68rem", color: "#222222", fontStyle: "italic", marginTop: "2px" }}>
+                    Condition: {row.bequestCondition}
                   </div>
                 )}
               </td>
@@ -358,12 +460,18 @@ export default function WillAssetDistributionTable({
                   verticalAlign: "top",
                   textAlign: "center",
                   fontWeight: 800,
-                  color: "#0F172A",
+                  color: "#000000",
                   fontSize: "0.85rem",
                   fontVariantNumeric: "tabular-nums",
+                  lineHeight: 1.35,
                 }}
               >
-                {row.sharePercentage}%
+                <div>{row.sharePercentage}%</div>
+                {row.shareSubtext && (
+                  <div style={{ fontSize: "0.68rem", color: "#333333", fontWeight: 500, marginTop: "2px" }}>
+                    ({row.shareSubtext})
+                  </div>
+                )}
               </td>
             </tr>
           ))}
@@ -371,8 +479,8 @@ export default function WillAssetDistributionTable({
         <tfoot>
           <tr
             style={{
-              backgroundColor: "#F1F5F9",
-              borderTop: "1.5px solid #0F172A",
+              backgroundColor: "#F8F8F8",
+              borderTop: "1.5px solid #000000",
               fontWeight: 700,
               fontSize: "0.8rem",
             }}
@@ -381,10 +489,10 @@ export default function WillAssetDistributionTable({
               colSpan={3}
               style={{
                 padding: "8px 10px",
-                borderRight: "1px solid #CBD5E1",
+                borderRight: "1px solid #000000",
                 textTransform: "uppercase",
                 letterSpacing: "0.03em",
-                color: "#0F172A",
+                color: "#000000",
               }}
             >
               Total Portfolio Valuation (Approx.)
@@ -393,8 +501,8 @@ export default function WillAssetDistributionTable({
               style={{
                 padding: "8px 10px",
                 textAlign: "right",
-                borderRight: "1px solid #CBD5E1",
-                color: "#0F172A",
+                borderRight: "1px solid #000000",
+                color: "#000000",
                 fontVariantNumeric: "tabular-nums",
                 fontWeight: 800,
               }}
@@ -406,12 +514,12 @@ export default function WillAssetDistributionTable({
               style={{
                 padding: "8px 10px",
                 textAlign: "center",
-                color: "#166534",
+                color: "#000000",
                 fontWeight: 700,
                 fontSize: "0.75rem",
               }}
             >
-              ✓ All specified shares strictly absolute & devolving as scheduled
+              All specified shares strictly absolute & devolving as scheduled
             </td>
           </tr>
         </tfoot>

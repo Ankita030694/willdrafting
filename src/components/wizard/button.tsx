@@ -1,5 +1,8 @@
-import React from 'react';
-import { ArrowLeft, ArrowRight } from 'lucide-react';
+"use client";
+
+import React from "react";
+import { ArrowRight } from "lucide-react";
+import { useLanguage } from "@/context/LanguageContext";
 
 interface ButtonProps {
   onBack?: () => void;
@@ -8,11 +11,12 @@ interface ButtonProps {
 }
 
 export default function WizardButton({ onBack, onNext, isSubmit }: ButtonProps) {
+  const { isHi } = useLanguage();
   return (
     <div className="wizard-mobile-sticky-footer">
       {onBack && (
         <button type="button" onClick={onBack} className="btn-mobile-back">
-           Back
+          {isHi ? "← पीछे" : "Back"}
         </button>
       )}
       <button 
@@ -20,7 +24,7 @@ export default function WizardButton({ onBack, onNext, isSubmit }: ButtonProps) 
         onClick={!isSubmit ? onNext : undefined} 
         className="btn-mobile-next"
       >
-        Save & Continue <ArrowRight size={16} />
+        {isHi ? "सहेजें और आगे बढ़ें" : "Save & Continue"} <ArrowRight size={16} />
       </button>
     </div>
   );

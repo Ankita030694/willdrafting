@@ -1,50 +1,71 @@
 "use client";
 
-import React, { useState, useEffect } from "react";import WizardButton from "./button";
-
+import React, { useState, useEffect } from "react";
+import WizardButton from "./button";
+import { useLanguage } from "@/context/LanguageContext";
 import { WillDraftingState, generateWillClauses } from "@/lib/willDraftingStore";
-import { Cpu, Check, Sparkles, ArrowRight } from "lucide-react";
+import { useWillStore } from "@/lib/useWillStore";
+import { Cpu, Check } from "lucide-react";
 import AudioAssistantButton from "@/components/ui/AudioAssistantButton";
 
 interface Step12AssemblyProps {
-  state: WillDraftingState;
-  onUpdate: (updater: (prev: WillDraftingState) => WillDraftingState) => void;
+  state?: WillDraftingState;
+  onUpdate?: (updater: (prev: WillDraftingState) => WillDraftingState) => void;
   onNext: () => void;
+  lang?: "en" | "hi";
+  onChangeLang?: (lang: "en" | "hi") => void;
 }
 
 export default function Step12Assembly({
-  state,
-  onUpdate,
+  state: propState,
+  onUpdate: propOnUpdate,
   onNext,
 }: Step12AssemblyProps) {
+  const storeState = useWillStore((s) => s.state);
+  const storeUpdateState = useWillStore((s) => s.updateState);
+  const state = propState || storeState;
+  const onUpdate = propOnUpdate || storeUpdateState;
+  const { lang } = useLanguage();
+  const isHi = lang === "hi";
+
   const [progress, setProgress] = useState(15);
-  const [currentStageText, setCurrentStageText] = useState("Initializing Legal Decision Matrix...");
+  const [stageIndex, setStageIndex] = useState(0);
+
+  const stageMessages = [
+    { en: "Initializing Legal Decision Matrix...", hi: "कानूनी प्रारूप का आरंभीकरण..." },
+    { en: "Harmonizing Personal Law with Indian Succession Framework...", hi: "व्यक्तिगत कानून व भारतीय उत्तराधिकार नियमों का समन्वय..." },
+    { en: "Compiling Asset Schedules & Formulating Residuary Devise...", hi: "संपत्ति अनुसूची का संकलन व अवशिष्ट धारा का निर्माण..." },
+    { en: "Structuring Attestation Clause & Section 63 Witness Block...", hi: "साक्षी अनुभाग व धारा 63 सत्यापन का गठन..." },
+    { en: "Will Document Successfully Assembled & Legally Certified!", hi: "वसीयत दस्तावेज सफलतापूर्वक संकलित और सत्यापित!" },
+  ];
 
   useEffect(() => {
     const timer1 = setTimeout(() => {
       setProgress(40);
-      setCurrentStageText("Harmonizing Personal Law with Indian Succession Framework...");
+      setStageIndex(1);
     }, 600);
 
     const timer2 = setTimeout(() => {
       setProgress(70);
-      setCurrentStageText("Compiling Asset Schedules & Formulating Residuary Devise...");
+      setStageIndex(2);
     }, 1300);
 
     const timer3 = setTimeout(() => {
       setProgress(90);
-      setCurrentStageText("Structuring Attestation Clause & Section 63 Witness Block...");
+      setStageIndex(3);
     }, 2000);
 
     const timer4 = setTimeout(() => {
       setProgress(100);
-      setCurrentStageText("Will Document Successfully Assembled & Legally Certified!");
+      setStageIndex(4);
 
-      onUpdate((prev) => ({
-        ...prev,
-        clauses: generateWillClauses(prev),
-        willStatus: prev.willStatus === "drafting" ? "draft_ready" : prev.willStatus,
-      }));
+      if (!state.detailsVerified) {
+        onUpdate((prev) => ({
+          ...prev,
+          clauses: generateWillClauses(prev),
+          willStatus: prev.willStatus === "drafting" ? "draft_ready" : prev.willStatus,
+        }));
+      }
     }, 2700);
 
     return () => {
@@ -53,15 +74,32 @@ export default function Step12Assembly({
       clearTimeout(timer3);
       clearTimeout(timer4);
     };
-  }, [onUpdate]);
+  }, [onUpdate, state.detailsVerified]);
 
   const stages = [
-    { label: "1. Questionnaire Information Processed", completed: progress >= 20 },
-    { label: "2. Personal Law & Succession Rule Verification", completed: progress >= 40 },
-    { label: "3. Asset Lists & Distribution Percentages", completed: progress >= 70 },
-    { label: "4. Remaining Assets & Executor Appointments", completed: progress >= 90 },
-    { label: "5. Signing & Witness Certification Sections", completed: progress >= 100 },
+    {
+      label: isHi ? "1. प्रश्नावली की जानकारी संसाधित की गई" : "1. Questionnaire Information Processed",
+      completed: progress >= 20,
+    },
+    {
+      label: isHi ? "2. व्यक्तिगत कानून एवं उत्तराधिकार नियमों का सत्यापन" : "2. Personal Law & Succession Rule Verification",
+      completed: progress >= 40,
+    },
+    {
+      label: isHi ? "3. संपत्ति सूची एवं वितरण प्रतिशत" : "3. Asset Lists & Distribution Percentages",
+      completed: progress >= 70,
+    },
+    {
+      label: isHi ? "4. अवशिष्ट संपत्ति एवं निष्पादक नियुक्ति" : "4. Remaining Assets & Executor Appointments",
+      completed: progress >= 90,
+    },
+    {
+      label: isHi ? "5. हस्ताक्षर एवं साक्षी प्रमाणन अनुभाग" : "5. Signing & Witness Certification Sections",
+      completed: progress >= 100,
+    },
   ];
+
+  const currentStageText = isHi ? stageMessages[stageIndex].hi : stageMessages[stageIndex].en;
 
   return (
     <div
@@ -95,19 +133,16 @@ export default function Step12Assembly({
       </div>
 
       <div>
-        
         <div style={{ display: "flex", justifyContent: "center", marginBottom: "0.5rem" }}>
           <AudioAssistantButton
             textToSpeak="Creating your official Will document. Formatting all clauses, lists of assets, and signature sections according to Indian law."
-            label="Listen / सुनें 🔊"
+            hindiText="आपकी आधिकारिक वसीयत तैयार की जा रही है। भारतीय कानून के अनुसार सभी धाराएं, संपत्ति सूची और हस्ताक्षर अनुभाग संकलित किए जा रहे हैं।"
+            label={isHi ? "सुनें 🔊" : "Listen 🔊"}
           />
         </div>
         <h2 style={{ fontSize: "2.1rem", fontWeight: 800, color: "var(--color-navy)", margin: 0, letterSpacing: "-0.02em" }}>
-          Creating Your Official Will Document
+          {isHi ? "आपकी आधिकारिक वसीयत तैयार की जा रही है" : "Creating Your Official Will Document"}
         </h2>
-        <div style={{ fontSize: "0.95rem", color: "var(--color-gold)", fontWeight: 600, marginTop: "0.25rem" }}>
-          (कानूनी वसीयतनामा का संकलन एवं तैयारी)
-        </div>
         <p style={{ fontSize: "0.95rem", color: "var(--color-slate)", margin: "0.5rem 0 0", minHeight: "24px" }}>
           {currentStageText}
         </p>
@@ -135,7 +170,7 @@ export default function Step12Assembly({
           />
         </div>
         <div style={{ display: "flex", justifyContent: "space-between", fontSize: "0.75rem", color: "var(--text-muted)", fontWeight: 600 }}>
-          <span>Compilation Pipeline</span>
+          <span>{isHi ? "संकलन प्रगति" : "Compilation Pipeline"}</span>
           <span>{progress}%</span>
         </div>
       </div>
@@ -197,7 +232,7 @@ export default function Step12Assembly({
       <button
         onClick={onNext}
         disabled={progress < 100}
-        className="btn btn-gold"
+        className="btn btn-gold assembly-cta-btn"
         style={{
           padding: "0.95rem 2.5rem",
           fontSize: "1rem",
@@ -209,7 +244,13 @@ export default function Step12Assembly({
           transition: "all 0.25s ease",
         }}
       >
-        Select Plan & View Final Will →
+        {state.willStatus === "finalised" || state.willStatus === "approved"
+          ? isHi
+            ? "अपनी अंतिम वसीयत देखें (चरण 14) →"
+            : "View Final Will Document (Step 14) →"
+          : isHi
+          ? "योजना चुनें और अंतिम वसीयत देखें →"
+          : "Select Plan & View Final Will →"}
       </button>
     </div>
   );

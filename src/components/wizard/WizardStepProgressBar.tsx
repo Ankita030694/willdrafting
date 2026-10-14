@@ -2,7 +2,9 @@
 
 import React, { useState } from "react";
 import { WillDraftingState } from "@/lib/willDraftingStore";
+import { useWillStore } from "@/lib/useWillStore";
 import { Check, Sparkles, ChevronRight } from "lucide-react";
+import CloudSyncBadge from "@/components/wizard/CloudSyncBadge";
 
 export interface StepMeta {
   stepNum: number;
@@ -69,19 +71,29 @@ function isStepDataFilled(stepNum: number, state: WillDraftingState): boolean {
   }
 }
 
+/** True once every details step (About You → Emotional Purpose) has data. */
+export function areAllDetailsFilled(state: WillDraftingState): boolean {
+  for (let step = 2; step <= 9; step++) {
+    if (!isStepDataFilled(step, state)) return false;
+  }
+  return true;
+}
+
 interface WizardStepProgressBarProps {
   currentStep: number;
   onJumpToStep: (step: number) => void;
-  state: WillDraftingState;
+  state?: WillDraftingState;
   lang?: "en" | "hi";
 }
 
 export default function WizardStepProgressBar({
   currentStep,
   onJumpToStep,
-  state,
+  state: propState,
   lang = "en",
 }: WizardStepProgressBarProps) {
+  const storeState = useWillStore((s) => s.state);
+  const state = propState || storeState;
   const isHi = lang === "hi";
   const [hoveredStep, setHoveredStep] = useState<StepMeta | null>(null);
 
@@ -104,6 +116,7 @@ export default function WizardStepProgressBar({
 
   return (
     <div
+      className="wizard-step-progress-card"
       role="progressbar"
       aria-valuenow={progressPercent}
       aria-valuemin={0}
@@ -127,6 +140,7 @@ export default function WizardStepProgressBar({
     >
       {/* Top Meta Details Row */}
       <div
+        className="wizard-progress-top-row"
         style={{
           display: "flex",
           justifyContent: "space-between",
@@ -136,9 +150,10 @@ export default function WizardStepProgressBar({
         }}
       >
         {/* Left: Phase and Current Step info */}
-        <div style={{ display: "flex", alignItems: "center", gap: "0.5rem", flexWrap: "wrap" }}>
+        <div className="wizard-progress-meta-left" style={{ display: "flex", alignItems: "center", gap: "0.5rem", flexWrap: "wrap" }}>
           {currentStep <= 1 ? (
             <span
+              className="wizard-progress-phase-pill"
               style={{
                 fontSize: "0.68rem",
                 fontWeight: 700,
@@ -158,6 +173,7 @@ export default function WizardStepProgressBar({
             </span>
           ) : (
             <span
+              className="wizard-progress-phase-pill"
               style={{
                 fontSize: "0.68rem",
                 fontWeight: 700,
@@ -177,7 +193,7 @@ export default function WizardStepProgressBar({
           )}
 
           <div style={{ display: "flex", alignItems: "center", gap: "0.35rem" }}>
-            <span style={{ fontSize: "0.82rem", fontWeight: 800, color: "var(--color-navy)" }}>
+            <span className="wizard-progress-step-title" style={{ fontSize: "0.82rem", fontWeight: 800, color: "var(--color-navy)" }}>
               {currentStep <= 1
                 ? isHi
                   ? "स्वागत एवं अवलोकन"
@@ -197,7 +213,7 @@ export default function WizardStepProgressBar({
                   gap: "0.2rem",
                   marginLeft: "0.35rem",
                 }}
-                className="hidden sm:inline-flex"
+                className="wizard-progress-next-hint hidden sm:inline-flex"
               >
                 <ChevronRight size={12} />
                 {isHi ? `आगे: ${nextStep.hindiTitle}` : `Next: ${nextStep.title}`}
@@ -206,8 +222,9 @@ export default function WizardStepProgressBar({
           </div>
         </div>
 
-        {/* Right: Filled counter & Percentage Pill */}
-        <div style={{ display: "flex", alignItems: "center", gap: "0.6rem" }}>
+        {/* Right: Cloud Sync Badge, Filled counter & Percentage Pill */}
+        <div className="wizard-progress-meta-right" style={{ display: "flex", alignItems: "center", gap: "0.6rem" }}>
+          <CloudSyncBadge lang={lang} />
           <span
             style={{
               fontSize: "0.72rem",
@@ -222,6 +239,7 @@ export default function WizardStepProgressBar({
           </span>
 
           <span
+            className="wizard-progress-pct-pill"
             style={{
               fontSize: "0.72rem",
               fontWeight: 800,
@@ -232,6 +250,7 @@ export default function WizardStepProgressBar({
               display: "inline-flex",
               alignItems: "center",
               gap: "0.35rem",
+              whiteSpace: "nowrap",
             }}
           >
             <span

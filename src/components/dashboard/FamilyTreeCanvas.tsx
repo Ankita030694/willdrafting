@@ -6,6 +6,7 @@ import {
   FamilyMember,
   calculateIsMinor,
   saveStoredWillState,
+  formatDDMMYYYY,
 } from "@/lib/willDraftingStore";
 import {
   Users,
@@ -22,6 +23,7 @@ import {
   Calendar,
   ArrowRight,
 } from "lucide-react";
+import { sanitizeNameInput } from "@/lib/inputSanitizers";
 
 interface FamilyTreeCanvasProps {
   state: WillDraftingState;
@@ -43,6 +45,7 @@ export default function FamilyTreeCanvas({ state, onStateChange }: FamilyTreeCan
 
   const family = state.familyMembers || [];
   const testator = state.testator;
+  const isLocked = Boolean(state.detailsVerified);
 
   // Segment family
   const spouse = family.find((f) => f.relationship === "spouse");
@@ -58,6 +61,7 @@ export default function FamilyTreeCanvas({ state, onStateChange }: FamilyTreeCan
   };
 
   const handleOpenAdd = (rel: FamilyMember["relationship"]) => {
+    if (isLocked) return;
     setDefaultRelationship(rel);
     setNewRelationship(rel);
     setNewName("");
@@ -69,6 +73,7 @@ export default function FamilyTreeCanvas({ state, onStateChange }: FamilyTreeCan
 
   const handleSaveMember = (e: React.FormEvent) => {
     e.preventDefault();
+    if (isLocked) return;
     if (!newName.trim()) return;
 
     const isMinor = calculateIsMinor(newDob);
@@ -91,6 +96,7 @@ export default function FamilyTreeCanvas({ state, onStateChange }: FamilyTreeCan
   };
 
   const handleDeleteMember = (id: string) => {
+    if (isLocked) return;
     const updatedFamily = family.filter((f) => f.id !== id);
     const updatedState = {
       ...state,
@@ -103,6 +109,7 @@ export default function FamilyTreeCanvas({ state, onStateChange }: FamilyTreeCan
   };
 
   const handleSetAsPrimaryExecutor = (member: FamilyMember) => {
+    if (isLocked) return;
     const updatedState = {
       ...state,
       executorPrimary: {
@@ -119,6 +126,7 @@ export default function FamilyTreeCanvas({ state, onStateChange }: FamilyTreeCan
   };
 
   const handleSetAsResiduaryBeneficiary = (member: FamilyMember) => {
+    if (isLocked) return;
     const updatedState = {
       ...state,
       residuaryBeneficiaryName: member.name,
@@ -216,21 +224,23 @@ export default function FamilyTreeCanvas({ state, onStateChange }: FamilyTreeCan
             })}
           </div>
 
-          <button
-            onClick={() => handleOpenAdd("son")}
-            className="btn btn-gold"
-            style={{
-              padding: "0.45rem 1.15rem",
-              fontSize: "0.8rem",
-              borderRadius: "999px",
-              fontWeight: 700,
-              display: "inline-flex",
-              alignItems: "center",
-              gap: "0.4rem",
-            }}
-          >
-            <span>+ Add Relative</span>
-          </button>
+          {!isLocked && (
+            <button
+              onClick={() => handleOpenAdd("son")}
+              className="btn btn-gold"
+              style={{
+                padding: "0.45rem 1.15rem",
+                fontSize: "0.8rem",
+                borderRadius: "999px",
+                fontWeight: 700,
+                display: "inline-flex",
+                alignItems: "center",
+                gap: "0.4rem",
+              }}
+            >
+              <span>+ Add Relative</span>
+            </button>
+          )}
         </div>
       </div>
 
@@ -293,7 +303,7 @@ export default function FamilyTreeCanvas({ state, onStateChange }: FamilyTreeCan
                     </span>
                   </div>
                 ))
-              ) : (
+              ) : !isLocked ? (
                 <button
                   onClick={() => handleOpenAdd("father")}
                   style={{
@@ -312,6 +322,8 @@ export default function FamilyTreeCanvas({ state, onStateChange }: FamilyTreeCan
                 >
                   <span>+ Add Parent</span>
                 </button>
+              ) : (
+                <div style={{ fontSize: "0.8rem", color: "var(--text-muted)" }}>No parents listed</div>
               )}
             </div>
 
@@ -465,7 +477,7 @@ export default function FamilyTreeCanvas({ state, onStateChange }: FamilyTreeCan
                   </span>
                 </div>
               </div>
-            ) : (
+            ) : !isLocked ? (
               <button
                 onClick={() => handleOpenAdd("spouse")}
                 style={{
@@ -485,6 +497,8 @@ export default function FamilyTreeCanvas({ state, onStateChange }: FamilyTreeCan
                 <Heart size={22} color="var(--color-gold)" />
                 <span style={{ fontSize: "0.85rem", fontWeight: 700 }}>+ Add Spouse</span>
               </button>
+            ) : (
+              <div style={{ fontSize: "0.8rem", color: "var(--text-muted)" }}>No spouse listed</div>
             )}
           </div>
         )}
@@ -584,29 +598,31 @@ export default function FamilyTreeCanvas({ state, onStateChange }: FamilyTreeCan
               })}
 
               {/* Add Child Node Button */}
-              <button
-                onClick={() => handleOpenAdd("son")}
-                style={{
-                  backgroundColor: "rgba(255, 255, 255, 0.6)",
-                  borderRadius: "20px",
-                  border: "2px dashed rgba(27, 42, 74, 0.25)",
-                  padding: "1.25rem 1.5rem",
-                  color: "var(--color-slate)",
-                  cursor: "pointer",
-                  display: "flex",
-                  flexDirection: "column",
-                  alignItems: "center",
-                  justifyContent: "center",
-                  gap: "0.35rem",
-                  minWidth: "160px",
-                  transition: "var(--transition)",
-                }}
-                onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = "#FFFFFF")}
-                onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = "rgba(255, 255, 255, 0.6)")}
-              >
-                <Baby size={22} color="var(--color-slate)" />
-                <span style={{ fontSize: "0.8rem", fontWeight: 700 }}>+ Add Child</span>
-              </button>
+              {!isLocked && (
+                <button
+                  onClick={() => handleOpenAdd("son")}
+                  style={{
+                    backgroundColor: "rgba(255, 255, 255, 0.6)",
+                    borderRadius: "20px",
+                    border: "2px dashed rgba(27, 42, 74, 0.25)",
+                    padding: "1.25rem 1.5rem",
+                    color: "var(--color-slate)",
+                    cursor: "pointer",
+                    display: "flex",
+                    flexDirection: "column",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    gap: "0.35rem",
+                    minWidth: "160px",
+                    transition: "var(--transition)",
+                  }}
+                  onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = "#FFFFFF")}
+                  onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = "rgba(255, 255, 255, 0.6)")}
+                >
+                  <Baby size={22} color="var(--color-slate)" />
+                  <span style={{ fontSize: "0.8rem", fontWeight: 700 }}>+ Add Child</span>
+                </button>
+              )}
             </div>
           </div>
         )}
@@ -708,25 +724,49 @@ export default function FamilyTreeCanvas({ state, onStateChange }: FamilyTreeCan
             {/* Member Details */}
             <div style={{ backgroundColor: "var(--bg-page)", borderRadius: "14px", padding: "1rem 1.25rem", marginBottom: "1.5rem", fontSize: "0.85rem", display: "flex", flexDirection: "column", gap: "0.5rem" }}>
               <div><strong>Status:</strong> {selectedMember.isMinor ? "Minor Child (<18)" : "Major (Legal Adult)"}</div>
-              <div><strong>Date of Birth:</strong> {selectedMember.dob || "Not recorded"}</div>
+              <div><strong>Date of Birth:</strong> {selectedMember.dob ? formatDDMMYYYY(selectedMember.dob) : "Not recorded"}</div>
               <div><strong>Phone:</strong> {selectedMember.phone || "Not provided"}</div>
               <div><strong>Address:</strong> {selectedMember.address || "Same as testator"}</div>
             </div>
 
-            {/* Quick Actions */}
-            <div style={{ display: "flex", flexDirection: "column", gap: "0.6rem" }}>
-              {!selectedMember.isMinor && (
+            {/* Quick Actions (hidden once verified & locked) */}
+            {!isLocked && (
+              <div style={{ display: "flex", flexDirection: "column", gap: "0.6rem" }}>
+                {!selectedMember.isMinor && (
+                  <button
+                    onClick={() => handleSetAsPrimaryExecutor(selectedMember)}
+                    style={{
+                      width: "100%",
+                      padding: "0.65rem 1rem",
+                      borderRadius: "10px",
+                      backgroundColor: "var(--color-navy)",
+                      color: "#FFFFFF",
+                      fontSize: "0.85rem",
+                      fontWeight: 600,
+                      border: "none",
+                      cursor: "pointer",
+                      textAlign: "left",
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "space-between",
+                    }}
+                  >
+                    <span>Appoint as Primary Executor</span>
+                    <span>→</span>
+                  </button>
+                )}
+
                 <button
-                  onClick={() => handleSetAsPrimaryExecutor(selectedMember)}
+                  onClick={() => handleSetAsResiduaryBeneficiary(selectedMember)}
                   style={{
                     width: "100%",
                     padding: "0.65rem 1rem",
                     borderRadius: "10px",
-                    backgroundColor: "var(--color-navy)",
-                    color: "#FFFFFF",
+                    backgroundColor: "rgba(201, 162, 39, 0.15)",
+                    color: "var(--color-navy)",
                     fontSize: "0.85rem",
                     fontWeight: 600,
-                    border: "none",
+                    border: "1px solid var(--color-gold)",
                     cursor: "pointer",
                     textAlign: "left",
                     display: "flex",
@@ -734,52 +774,30 @@ export default function FamilyTreeCanvas({ state, onStateChange }: FamilyTreeCan
                     justifyContent: "space-between",
                   }}
                 >
-                  <span>Appoint as Primary Executor</span>
+                  <span>Designate as Residuary Legatee</span>
                   <span>→</span>
                 </button>
-              )}
 
-              <button
-                onClick={() => handleSetAsResiduaryBeneficiary(selectedMember)}
-                style={{
-                  width: "100%",
-                  padding: "0.65rem 1rem",
-                  borderRadius: "10px",
-                  backgroundColor: "rgba(201, 162, 39, 0.15)",
-                  color: "var(--color-navy)",
-                  fontSize: "0.85rem",
-                  fontWeight: 600,
-                  border: "1px solid var(--color-gold)",
-                  cursor: "pointer",
-                  textAlign: "left",
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "space-between",
-                }}
-              >
-                <span>Designate as Residuary Legatee</span>
-                <span>→</span>
-              </button>
-
-              <button
-                onClick={() => handleDeleteMember(selectedMember.id)}
-                style={{
-                  width: "100%",
-                  padding: "0.65rem 1rem",
-                  borderRadius: "10px",
-                  backgroundColor: "transparent",
-                  color: "#BE123C",
-                  fontSize: "0.85rem",
-                  fontWeight: 600,
-                  border: "1px solid #FDA4AF",
-                  cursor: "pointer",
-                  textAlign: "center",
-                  marginTop: "0.5rem",
-                }}
-              >
-                Remove from Family Tree
-              </button>
-            </div>
+                <button
+                  onClick={() => handleDeleteMember(selectedMember.id)}
+                  style={{
+                    width: "100%",
+                    padding: "0.65rem 1rem",
+                    borderRadius: "10px",
+                    backgroundColor: "transparent",
+                    color: "#BE123C",
+                    fontSize: "0.85rem",
+                    fontWeight: 600,
+                    border: "1px solid #FDA4AF",
+                    cursor: "pointer",
+                    textAlign: "center",
+                    marginTop: "0.5rem",
+                  }}
+                >
+                  Remove from Family Tree
+                </button>
+              </div>
+            )}
           </div>
         </div>
       )}
@@ -826,9 +844,9 @@ export default function FamilyTreeCanvas({ state, onStateChange }: FamilyTreeCan
                 <input
                   type="text"
                   required
-                  placeholder="e.g., Rohit Sharma"
+                  placeholder="e.g., Rajesh Sharma"
                   value={newName}
-                  onChange={(e) => setNewName(e.target.value)}
+                  onChange={(e) => setNewName(sanitizeNameInput(e.target.value))}
                   style={{
                     width: "100%",
                     padding: "0.65rem 0.85rem",

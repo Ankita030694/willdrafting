@@ -1,8 +1,10 @@
 "use client";
 
-import React, { useState } from "react";import WizardButton from "./button";
+import React, { useState, useEffect } from "react";
+import WizardButton from "./button";
 
-import { WillDraftingState } from "@/lib/willDraftingStore";
+import { WillDraftingState, generateWillClauses } from "@/lib/willDraftingStore";
+import { useWillStore } from "@/lib/useWillStore";
 import AppleCardSelect from "@/components/dashboard/AppleCardSelect";
 import {
   Shield,
@@ -18,20 +20,31 @@ import {
   Plus,
 } from "lucide-react";
 import AudioAssistantButton from "@/components/ui/AudioAssistantButton";
+import { useLanguage } from "@/context/LanguageContext";
 
 interface Step9MotivationProps {
-  state: WillDraftingState;
-  onUpdate: (updater: (prev: WillDraftingState) => WillDraftingState) => void;
+  state?: WillDraftingState;
+  onUpdate?: (updater: (prev: WillDraftingState) => WillDraftingState) => void;
   onNext: () => void;
   onBack: () => void;
+  lang?: "en" | "hi";
+  onChangeLang?: (lang: "en" | "hi") => void;
 }
 
 export default function Step9Motivation({
-  state,
-  onUpdate,
+  state: propState,
+  onUpdate: propOnUpdate,
   onNext,
   onBack,
+  lang: propLang,
 }: Step9MotivationProps) {
+  const storeState = useWillStore((s) => s.state);
+  const storeUpdateState = useWillStore((s) => s.updateState);
+  const state = propState || storeState;
+  const onUpdate = propOnUpdate || storeUpdateState;
+
+  const context = useLanguage();
+  const isHi = propLang === "hi" || context.lang === "hi";
   const [selectedReason, setSelectedReason] = useState(
     state.emotionalReason || "Protecting my spouse and ensuring total family harmony"
   );
@@ -40,6 +53,15 @@ export default function Step9Motivation({
     state.specialWishes?.personalMessageToFamily ||
       "To my beloved family: Everything I have built was with your happiness in mind. Please stay united with mutual love, support each other in all seasons of life, and live with truth and honor."
   );
+
+  useEffect(() => {
+    if (state.emotionalReason) {
+      setSelectedReason(state.emotionalReason);
+    }
+    if (state.specialWishes?.personalMessageToFamily) {
+      setPersonalLetter(state.specialWishes.personalMessageToFamily);
+    }
+  }, [state.emotionalReason, state.specialWishes?.personalMessageToFamily]);
 
   const [selectedTone, setSelectedTone] = useState("Warm & Affectionate");
 
@@ -100,23 +122,73 @@ export default function Step9Motivation({
     },
   ];
 
+  const patchReason = (reason: string) => {
+    setSelectedReason(reason);
+    onUpdate((prev) => {
+      const nextState: WillDraftingState = {
+        ...prev,
+        emotionalReason: reason,
+      };
+      return {
+        ...nextState,
+        clauses: generateWillClauses(nextState),
+      };
+    });
+  };
+
+  const patchPersonalLetter = (letter: string) => {
+    setPersonalLetter(letter);
+    onUpdate((prev) => {
+      const nextState: WillDraftingState = {
+        ...prev,
+        specialWishes: {
+          ...(prev.specialWishes || {
+            jewelleryInstructions: "",
+            personalBelongings: "",
+            petsCare: "",
+            charitableGifts: "",
+            digitalAccounts: "",
+            funeralCeremonyWishes: "",
+            personalMessageToFamily: "",
+          }),
+          personalMessageToFamily: letter,
+        },
+      };
+      return {
+        ...nextState,
+        clauses: generateWillClauses(nextState),
+      };
+    });
+  };
+
   const handleInsertStarter = (text: string) => {
-    if (!personalLetter.trim()) {
-      setPersonalLetter(text);
-    } else {
-      setPersonalLetter(`${personalLetter.trim()}\n\n${text}`);
-    }
+    const next = !personalLetter.trim() ? text : `${personalLetter.trim()}\n\n${text}`;
+    patchPersonalLetter(next);
   };
 
   const handleNext = () => {
-    onUpdate((prev) => ({
-      ...prev,
-      emotionalReason: selectedReason,
-      specialWishes: {
-        ...(prev.specialWishes || {}),
-        personalMessageToFamily: personalLetter,
-      },
-    }));
+    onUpdate((prev) => {
+      const nextState: WillDraftingState = {
+        ...prev,
+        emotionalReason: selectedReason,
+        specialWishes: {
+          ...(prev.specialWishes || {
+            jewelleryInstructions: "",
+            personalBelongings: "",
+            petsCare: "",
+            charitableGifts: "",
+            digitalAccounts: "",
+            funeralCeremonyWishes: "",
+            personalMessageToFamily: "",
+          }),
+          personalMessageToFamily: personalLetter,
+        },
+      };
+      return {
+        ...nextState,
+        clauses: generateWillClauses(nextState),
+      };
+    });
     onNext();
   };
 
@@ -125,33 +197,32 @@ export default function Step9Motivation({
       style={{
         display: "flex",
         flexDirection: "column",
-        gap: "0.85rem",
+        gap: "1.25rem",
         width: "100%",
-        height: "100%",
-        justifyContent: "space-between",
       }}
     >
       {/* Header */}
       <div>
         <div style={{ display: "flex", alignItems: "center", justifyContent: "flex-end", marginBottom: "0.35rem" }}>
-          <div style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
+          <div className="wizard-step-header-meta" style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
             <AudioAssistantButton
-              textToSpeak="Leave a personal message of love and explain your wishes to your family. When your loved ones read your own words, it brings comfort and prevents misunderstandings."
-              label="Listen / सुनें 🔊"
+              textToSpeak={
+                isHi
+                  ? "अपने परिवार के लिए प्रेम का व्यक्तिगत संदेश छोड़ें और अपनी वसीयत का उद्देश्य समझाएं। जब आपके प्रियजन आपके अपने शब्द पढ़ते हैं, तो इससे शांति मिलती है और गलतफहमियां दूर होती हैं।"
+                  : "Leave a personal message of love and explain your wishes to your family. When your loved ones read your own words, it brings comfort and prevents misunderstandings."
+              }
+              label={isHi ? "सुनें 🔊" : "Listen 🔊"}
             />
             <span style={{ fontSize: "0.75rem", color: "var(--color-slate)" }}>
-              Creates personal letter of wishes
+              {isHi ? "प्रियजनों के लिए व्यक्तिगत पत्र तैयार करता है" : "Creates personal letter of wishes"}
             </span>
           </div>
         </div>
 
         <div style={{ display: "flex", alignItems: "baseline", gap: "0.65rem", flexWrap: "wrap" }}>
           <h2 style={{ fontSize: "1.45rem", fontWeight: 800, color: "var(--color-navy)", margin: 0, letterSpacing: "-0.02em" }}>
-            Primary Motivation & Personal Message
+            {isHi ? "वसीयत का उद्देश्य एवं व्यक्तिगत संदेश" : "Primary Motivation & Personal Message"}
           </h2>
-          <span style={{ fontSize: "0.88rem", color: "var(--color-gold)", fontWeight: 600 }}>
-            (वसीयत का उद्देश्य एवं परिवार के नाम संदेश)
-          </span>
         </div>
       </div>
 
@@ -198,7 +269,7 @@ export default function Step9Motivation({
               return (
                 <div
                   key={r.id}
-                  onClick={() => setSelectedReason(r.title)}
+                  onClick={() => patchReason(r.title)}
                   style={{
                     padding: "0.65rem 0.85rem",
                     borderRadius: "12px",
@@ -322,7 +393,7 @@ export default function Step9Motivation({
 
           <textarea
             value={personalLetter}
-            onChange={(e) => setPersonalLetter(e.target.value)}
+            onChange={(e) => patchPersonalLetter(e.target.value)}
             placeholder="Share your life philosophies, reasons for specific allocations, and words of encouragement..."
             style={{
               flex: 1,
@@ -349,7 +420,7 @@ export default function Step9Motivation({
       </div>
 
       {/* Wizard Button Footer */}
-      <WizardButton onBack={onBack} onNext={onNext} />
+      <WizardButton onBack={onBack} onNext={handleNext} />
 
       <style jsx>{`
         .motivation-grid {

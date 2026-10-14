@@ -5,6 +5,8 @@ import { useRouter } from "next/navigation";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
+import { signIn } from "next-auth/react";
+
 export default function AdminLoginPage() {
   const router = useRouter();
 
@@ -25,28 +27,21 @@ export default function AdminLoginPage() {
 
     setLoading(true);
     try {
-      const res = await fetch("/api/auth/admin-login", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          email: email.trim().toLowerCase(),
-          password,
-        }),
+      const res = await signIn("credentials", {
+        identifier: email.trim().toLowerCase(),
+        password,
+        isAdmin: "true",
+        redirect: false,
       });
 
-      if (res.ok) {
+      if (!res?.error) {
         router.push("/authority");
+        router.refresh();
       } else {
-        const errorData = await res.json().catch(() => ({}));
-        if (res.status === 404) {
-          // Preview fallback during scaffold
-          router.push("/authority");
-        } else {
-          setErrorMessage(errorData.message || "Invalid email or password. Access denied.");
-        }
+        setErrorMessage("Invalid administrator credentials. Access denied.");
       }
     } catch {
-      router.push("/authority");
+      setErrorMessage("Network error during admin authentication.");
     } finally {
       setLoading(false);
     }

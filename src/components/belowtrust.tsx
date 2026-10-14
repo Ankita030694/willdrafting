@@ -62,7 +62,7 @@ const CLAUSE_ITEMS: ClauseItem[] = [
       "Clearly identifies how immovable property, bank accounts, investments, demat holdings, jewellery and other assets should pass to your beneficiaries, supported by a residuary clause for assets not specifically mentioned.",
     legalSnippet:
       "I bequeath my residential flat situated at [PROPERTY ADDRESS] unto [BENEFICIARY NAME] absolutely. All my bank deposits, mutual fund holdings, demat portfolios, and residual movable assets shall devolve upon [RESIDUARY BENEFICIARY] in accordance with this Will.",
-    image: "/images/preview-navy.png",
+    image: "/images/asset-bequests.jpg",
     points: [
       "Clear separation of immovable & movable assets.",
       "Residuary clause for assets not specifically listed.",

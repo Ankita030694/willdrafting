@@ -35,11 +35,12 @@ import AudioAssistantButton from "@/components/ui/AudioAssistantButton";
 import LanguageToggle from "@/components/ui/LanguageToggle";
 import { useLanguage } from "@/context/LanguageContext";
 import CustomPercentageAllocator from "./CustomPercentageAllocator";
+import { useWillStore } from "@/lib/useWillStore";
 
 
 interface Step5AllocationsProps {
-  state: WillDraftingState;
-  onUpdate: (updater: (prev: WillDraftingState) => WillDraftingState) => void;
+  state?: WillDraftingState;
+  onUpdate?: (updater: (prev: WillDraftingState) => WillDraftingState) => void;
   onNext: () => void;
   onBack: () => void;
   lang?: "en" | "hi";
@@ -63,13 +64,18 @@ const relationshipHindiMap: Record<string, string> = {
 };
 
 export default function Step5Allocations({
-  state,
-  onUpdate,
+  state: propState,
+  onUpdate: propOnUpdate,
   onNext,
   onBack,
   lang: propLang,
   onChangeLang: propOnChangeLang,
 }: Step5AllocationsProps) {
+  const storeState = useWillStore((s) => s.state);
+  const storeUpdateState = useWillStore((s) => s.updateState);
+  const state = propState || storeState;
+  const onUpdate = propOnUpdate || storeUpdateState;
+
   const context = useLanguage();
   const currentLang = propLang || context.lang || "en";
   const isHi = currentLang === "hi";
@@ -81,15 +87,32 @@ export default function Step5Allocations({
   const [allocations, setAllocations] = useState<BeneficiaryAllocation[]>(
     state.allocations || []
   );
+
+  useEffect(() => {
+    setAllocations(state.allocations || []);
+  }, [state.allocations]);
+  const [residuaryPrimary01, setResiduaryPrimary01] = useState(
+    state.residuaryPrimary01Name || state.residuaryBeneficiaryName || (state.familyMembers[0]?.name || "")
+  );
+  const [residuaryPrimary02, setResiduaryPrimary02] = useState(
+    state.residuaryPrimary02Name || ""
+  );
+  const [residuaryBackup01, setResiduaryBackup01] = useState(
+    state.residuaryBackup01Name || state.residuaryAlternateName || (state.familyMembers[1]?.name || "")
+  );
+  const [residuaryBackup02, setResiduaryBackup02] = useState(
+    state.residuaryBackup02Name || ""
+  );
   const [residuaryName, setResiduaryName] = useState(
-    state.residuaryBeneficiaryName || (state.familyMembers[0]?.name || "")
+    state.residuaryPrimary01Name || state.residuaryBeneficiaryName || (state.familyMembers[0]?.name || "")
   );
   const [residuaryAltName, setResiduaryAltName] = useState(
-    state.residuaryAlternateName || (state.familyMembers[1]?.name || "")
+    state.residuaryBackup01Name || state.residuaryAlternateName || (state.familyMembers[1]?.name || "")
   );
 
   // View mode: 'quick' (default) | 'list' | 'review'
   const [viewMode, setViewMode] = useState<"quick" | "list" | "review">("quick");
+  const [showIncompleteWarning, setShowIncompleteWarning] = useState(false);
 
   // Quick mode index (0-based)
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -179,7 +202,13 @@ export default function Step5Allocations({
   };
 
   // Persist state upwards whenever allocations or residuary changes
-  const persistChanges = (newAllocations: BeneficiaryAllocation[]) => {
+  const persistChanges = (
+    newAllocations: BeneficiaryAllocation[],
+    p01 = residuaryPrimary01,
+    p02 = residuaryPrimary02,
+    b01 = residuaryBackup01,
+    b02 = residuaryBackup02
+  ) => {
     setAllocations(newAllocations);
     setSaveStatus("Saved");
     setTimeout(() => setSaveStatus("Saved automatically"), 1400);
@@ -187,8 +216,12 @@ export default function Step5Allocations({
     onUpdate((prev) => ({
       ...prev,
       allocations: newAllocations,
-      residuaryBeneficiaryName: residuaryName.trim(),
-      residuaryAlternateName: residuaryAltName.trim(),
+      residuaryBeneficiaryName: p01.trim(),
+      residuaryAlternateName: b01.trim(),
+      residuaryPrimary01Name: p01.trim(),
+      residuaryPrimary02Name: p02.trim(),
+      residuaryBackup01Name: b01.trim(),
+      residuaryBackup02Name: b02.trim(),
     }));
   };
 
@@ -341,7 +374,7 @@ export default function Step5Allocations({
     persistChanges([...otherAllocs, ...updated]);
   };
 
-  // Stepper / Slider manual percentage update
+  // Stepper / Slider manual percentage update with simultaneous balancing
   const handleManualPercentageChange = (
     assetId: string,
     beneficiaryId: string,
@@ -350,13 +383,337 @@ export default function Step5Allocations({
     const clamped = Math.max(0, Math.min(100, Math.round(newPct)));
     const currentList = getAssetAllocations(assetId);
 
-    const updated = currentList.map((a) =>
-      a.beneficiaryId === beneficiaryId ? { ...a, percentage: clamped } : a
-    );
+    if (currentList.length <= 1) {
+      const updated = currentList.map((a) =>
+        a.beneficiaryId === beneficiaryId ? { ...a, percentage: 100 } : a
+      );
+      const otherAllocs = allocations.filter((a) => a.assetId !== assetId);
+      persistChanges([...otherAllocs, ...updated]);
+      return;
+    }
+
+    const others = currentList.filter((a) => a.beneficiaryId !== beneficiaryId);
+    const remainingToDistribute = 100 - clamped;
+    const othersSum = others.reduce((sum, a) => sum + (a.percentage || 0), 0);
+
+    let updatedOthers: BeneficiaryAllocation[] = [];
+    if (othersSum === 0) {
+      const baseShare = Math.floor(remainingToDistribute / others.length);
+      const remainder = remainingToDistribute - baseShare * others.length;
+      updatedOthers = others.map((other, idx) => {
+        const bonus = idx < remainder ? 1 : 0;
+        return { ...other, percentage: Math.max(0, baseShare + bonus) };
+      });
+    } else {
+      let allocatedSoFar = 0;
+      updatedOthers = others.map((other, idx) => {
+        if (idx === others.length - 1) {
+          const finalShare = Math.max(0, remainingToDistribute - allocatedSoFar);
+          return { ...other, percentage: finalShare };
+        }
+        const proportion = (other.percentage || 0) / othersSum;
+        const share = Math.max(0, Math.round(proportion * remainingToDistribute));
+        allocatedSoFar += share;
+        return { ...other, percentage: share };
+      });
+    }
+
+    const updated = currentList.map((a) => {
+      if (a.beneficiaryId === beneficiaryId) {
+        return { ...a, percentage: clamped };
+      }
+      const matched = updatedOthers.find((o) => o.beneficiaryId === a.beneficiaryId);
+      return matched || a;
+    });
 
     const otherAllocs = allocations.filter((a) => a.assetId !== assetId);
     persistChanges([...otherAllocs, ...updated]);
   };
+
+  // Helper to update residuary 4 slots
+  const updateResiduary = (p01: string, p02: string, b01: string, b02: string) => {
+    setResiduaryPrimary01(p01);
+    setResiduaryPrimary02(p02);
+    setResiduaryBackup01(b01);
+    setResiduaryBackup02(b02);
+    setResiduaryName(p01);
+    setResiduaryAltName(b01);
+    persistChanges(allocations, p01, p02, b01, b02);
+  };
+
+  // Unified Residuary Safety Net Component (ISA §102) with 4 explicit slots
+  const renderResiduarySafetyNet = (compact = false) => (
+    <div
+      style={{
+        backgroundColor: "#FFFFFF",
+        borderRadius: "18px",
+        border: "1.5px solid rgba(27, 42, 74, 0.1)",
+        padding: compact ? "1.1rem 1.25rem" : "1.35rem 1.5rem",
+        display: "flex",
+        flexDirection: "column",
+        gap: "0.85rem",
+        boxShadow: "0 4px 16px rgba(27, 42, 74, 0.04)",
+      }}
+    >
+      <div>
+        <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", flexWrap: "wrap", gap: "0.4rem" }}>
+          <span style={{ fontSize: "0.72rem", fontWeight: 800, color: "var(--color-gold)", textTransform: "uppercase", letterSpacing: "0.04em" }}>
+            {isHi ? "अनिवार्य सुरक्षा नियम" : "Essential Safety Net"}
+          </span>
+          <span style={{ fontSize: "0.68rem", color: "var(--color-slate)", backgroundColor: "rgba(27, 42, 74, 0.04)", padding: "0.15rem 0.5rem", borderRadius: "6px" }}>
+            {isHi ? "कानूनी धारा: अवशेष खंड (ISA धारा 102)" : "Legal term: Residuary Clause (ISA §102)"}
+          </span>
+        </div>
+        <h4 style={{ margin: "0.3rem 0 0", fontSize: compact ? "0.98rem" : "1.1rem", fontWeight: 800, color: "var(--color-navy)", lineHeight: 1.35 }}>
+          {isHi
+            ? "यदि कोई संपत्ति छूट गई हो या भविष्य में मिले, तो वह किसे मिले?"
+            : "Who gets anything you haven't specifically mentioned?"}
+        </h4>
+        <div style={{ fontSize: "0.8rem", fontWeight: 600, color: "var(--color-gold)", marginTop: "0.15rem" }}>
+          {isHi
+            ? "शेष बची हुई संपत्ति (प्राथमिक 01, 02 एवं बैकअप 01, 02)"
+            : "Remaining assets & future wealth (Primary 01, 02 & Backup 01, 02)"}
+        </div>
+        <p style={{ margin: "0.25rem 0 0", fontSize: "0.75rem", color: "var(--color-slate)", lineHeight: 1.45 }}>
+          {isHi
+            ? "यह खंड सुनिश्चित करता है कि आपकी कोई भी संपत्ति अदालत या विवाद में न फंसे।"
+            : "Appointing primary and backup recipients ensures unassigned and future assets transfer smoothly without probate dispute."}
+        </p>
+        <div
+          style={{
+            marginTop: "0.6rem",
+            padding: "0.55rem 0.75rem",
+            borderRadius: "10px",
+            backgroundColor: "rgba(198, 83, 120, 0.07)",
+            border: "1px solid rgba(198, 83, 120, 0.22)",
+            fontSize: "0.76rem",
+            fontWeight: 600,
+            color: "var(--color-navy)",
+            lineHeight: 1.45,
+          }}
+        >
+          {isHi
+            ? "ध्यान दें: प्राथमिक 01 और प्राथमिक 02 को शेष संपत्ति बराबर हिस्सों (50% – 50%) में मिलेगी। बैकअप केवल तब लागू होंगे जब कोई प्राथमिक व्यक्ति संपत्ति प्राप्त करने में असमर्थ हो।"
+            : "Note: Primary 01 and Primary 02 will share the residuary estate in equal parts (50% each). Backups step in only if a Primary is unable to inherit."}
+        </div>
+      </div>
+
+      <div className={`grid grid-cols-1 ${compact ? "gap-2.5" : "sm:grid-cols-2 gap-3"}`}>
+        {/* Slot 1: Primary 01 */}
+        <div
+          style={{
+            padding: "0.65rem 0.75rem",
+            borderRadius: "12px",
+            backgroundColor: "rgba(30, 64, 175, 0.03)",
+            border: "1px solid rgba(30, 64, 175, 0.15)",
+          }}
+        >
+          <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "0.3rem" }}>
+            <label style={{ fontSize: "0.76rem", fontWeight: 800, color: "var(--color-navy)" }}>
+              {isHi ? "प्राथमिक 01 (मुख्य प्राप्तकर्ता):" : "Primary 01 (Main Legatee):"}
+            </label>
+            <span
+              style={{
+                fontSize: "0.62rem",
+                fontWeight: 800,
+                color: "#1E40AF",
+                backgroundColor: "rgba(30, 64, 175, 0.1)",
+                padding: "0.1rem 0.35rem",
+                borderRadius: "4px",
+              }}
+            >
+              Primary 01
+            </span>
+          </div>
+          <select
+            value={residuaryPrimary01}
+            onChange={(e) => updateResiduary(e.target.value, residuaryPrimary02, residuaryBackup01, residuaryBackup02)}
+            style={{
+              width: "100%",
+              padding: "0.5rem 0.65rem",
+              borderRadius: "8px",
+              border: "1px solid rgba(23, 34, 40, 0.15)",
+              fontSize: "0.8rem",
+              fontWeight: 600,
+              color: "var(--color-navy)",
+              backgroundColor: "#FFFFFF",
+            }}
+          >
+            {family.map((f) => (
+              <option key={f.id} value={f.name}>
+                {f.name} ({f.relationship})
+              </option>
+            ))}
+          </select>
+          <span style={{ fontSize: "0.66rem", color: "var(--color-slate)", marginTop: "0.2rem", display: "block" }}>
+            {isHi ? "शेष संपत्ति का मुख्य कानूनी वारिस" : "Principal beneficiary of remaining estate"}
+          </span>
+        </div>
+
+        {/* Slot 2: Primary 02 */}
+        <div
+          style={{
+            padding: "0.65rem 0.75rem",
+            borderRadius: "12px",
+            backgroundColor: residuaryPrimary02 ? "rgba(30, 64, 175, 0.03)" : "rgba(23, 34, 40, 0.02)",
+            border: residuaryPrimary02 ? "1px solid rgba(30, 64, 175, 0.15)" : "1px dashed rgba(23, 34, 40, 0.12)",
+          }}
+        >
+          <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "0.3rem" }}>
+            <label style={{ fontSize: "0.76rem", fontWeight: 800, color: "var(--color-navy)" }}>
+              {isHi ? "प्राथमिक 02 (सह-प्राप्तकर्ता):" : "Primary 02 (Co-Legatee):"}
+            </label>
+            <span
+              style={{
+                fontSize: "0.62rem",
+                fontWeight: 800,
+                color: "#1E40AF",
+                backgroundColor: "rgba(30, 64, 175, 0.1)",
+                padding: "0.1rem 0.35rem",
+                borderRadius: "4px",
+              }}
+            >
+              Primary 02
+            </span>
+          </div>
+          <select
+            value={residuaryPrimary02}
+            onChange={(e) => updateResiduary(residuaryPrimary01, e.target.value, residuaryBackup01, residuaryBackup02)}
+            style={{
+              width: "100%",
+              padding: "0.5rem 0.65rem",
+              borderRadius: "8px",
+              border: "1px solid rgba(23, 34, 40, 0.15)",
+              fontSize: "0.8rem",
+              fontWeight: 600,
+              color: "var(--color-navy)",
+              backgroundColor: "#FFFFFF",
+            }}
+          >
+            <option value="">{isHi ? "कोई नहीं (100% प्राथमिक 01 को)" : "None (100% to Primary 01)"}</option>
+            {family
+              .filter((f) => f.name !== residuaryPrimary01)
+              .map((f) => (
+                <option key={f.id} value={f.name}>
+                  {f.name} ({f.relationship})
+                </option>
+              ))}
+          </select>
+          <span style={{ fontSize: "0.66rem", color: "var(--color-slate)", marginTop: "0.2rem", display: "block" }}>
+            {isHi ? "वैकल्पिक: प्राथमिक 01 के साथ 50/50 बंटवारा" : "Optional: Equal co-owner with Primary 01"}
+          </span>
+        </div>
+
+        {/* Slot 3: Backup 01 */}
+        <div
+          style={{
+            padding: "0.65rem 0.75rem",
+            borderRadius: "12px",
+            backgroundColor: residuaryBackup01 ? "rgba(180, 83, 9, 0.03)" : "rgba(23, 34, 40, 0.02)",
+            border: residuaryBackup01 ? "1px solid rgba(180, 83, 9, 0.18)" : "1px dashed rgba(23, 34, 40, 0.12)",
+          }}
+        >
+          <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "0.3rem" }}>
+            <label style={{ fontSize: "0.76rem", fontWeight: 800, color: "var(--color-navy)" }}>
+              {isHi ? "बैकअप 01 (प्रथम वैकल्पिक):" : "Backup 01 (First Alternate):"}
+            </label>
+            <span
+              style={{
+                fontSize: "0.62rem",
+                fontWeight: 800,
+                color: "#B45309",
+                backgroundColor: "rgba(180, 83, 9, 0.1)",
+                padding: "0.1rem 0.35rem",
+                borderRadius: "4px",
+              }}
+            >
+              Backup 01
+            </span>
+          </div>
+          <select
+            value={residuaryBackup01}
+            onChange={(e) => updateResiduary(residuaryPrimary01, residuaryPrimary02, e.target.value, residuaryBackup02)}
+            style={{
+              width: "100%",
+              padding: "0.5rem 0.65rem",
+              borderRadius: "8px",
+              border: "1px solid rgba(23, 34, 40, 0.15)",
+              fontSize: "0.8rem",
+              fontWeight: 600,
+              color: "var(--color-navy)",
+              backgroundColor: "#FFFFFF",
+            }}
+          >
+            <option value="">{isHi ? "कोई नहीं / प्रत्यक्ष" : "None / Direct"}</option>
+            {family
+              .filter((f) => f.name !== residuaryPrimary01 && f.name !== residuaryPrimary02)
+              .map((f) => (
+                <option key={f.id} value={f.name}>
+                  {f.name} ({f.relationship})
+                </option>
+              ))}
+          </select>
+          <span style={{ fontSize: "0.66rem", color: "var(--color-slate)", marginTop: "0.2rem", display: "block" }}>
+            {isHi ? "यदि प्राथमिक उपलब्ध न हो तो मिलेगा" : "Steps in if Primary is unable to inherit"}
+          </span>
+        </div>
+
+        {/* Slot 4: Backup 02 */}
+        <div
+          style={{
+            padding: "0.65rem 0.75rem",
+            borderRadius: "12px",
+            backgroundColor: residuaryBackup02 ? "rgba(180, 83, 9, 0.03)" : "rgba(23, 34, 40, 0.02)",
+            border: residuaryBackup02 ? "1px solid rgba(180, 83, 9, 0.18)" : "1px dashed rgba(23, 34, 40, 0.12)",
+          }}
+        >
+          <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "0.3rem" }}>
+            <label style={{ fontSize: "0.76rem", fontWeight: 800, color: "var(--color-navy)" }}>
+              {isHi ? "बैकअप 02 (द्वितीय आकस्मिक):" : "Backup 02 (Second Alternate):"}
+            </label>
+            <span
+              style={{
+                fontSize: "0.62rem",
+                fontWeight: 800,
+                color: "#64748B",
+                backgroundColor: "rgba(100, 116, 139, 0.1)",
+                padding: "0.1rem 0.35rem",
+                borderRadius: "4px",
+              }}
+            >
+              Backup 02
+            </span>
+          </div>
+          <select
+            value={residuaryBackup02}
+            onChange={(e) => updateResiduary(residuaryPrimary01, residuaryPrimary02, residuaryBackup01, e.target.value)}
+            style={{
+              width: "100%",
+              padding: "0.5rem 0.65rem",
+              borderRadius: "8px",
+              border: "1px solid rgba(23, 34, 40, 0.15)",
+              fontSize: "0.8rem",
+              fontWeight: 600,
+              color: "var(--color-navy)",
+              backgroundColor: "#FFFFFF",
+            }}
+          >
+            <option value="">{isHi ? "कोई नहीं" : "None / Optional"}</option>
+            {family
+              .filter((f) => f.name !== residuaryPrimary01 && f.name !== residuaryPrimary02 && f.name !== residuaryBackup01)
+              .map((f) => (
+                <option key={f.id} value={f.name}>
+                  {f.name} ({f.relationship})
+                </option>
+              ))}
+          </select>
+          <span style={{ fontSize: "0.66rem", color: "var(--color-slate)", marginTop: "0.2rem", display: "block" }}>
+            {isHi ? "द्वितीय सुरक्षा जाल" : "Contingent safety net if Backup 01 is unavailable"}
+          </span>
+        </div>
+      </div>
+    </div>
+  );
 
   // "Same as last one"
   const handleApplySameAsLast = () => {
@@ -709,12 +1066,10 @@ export default function Step5Allocations({
       style={{
         display: "flex",
         flexDirection: "column",
-        gap: "0.85rem",
+        gap: "1rem",
         width: "100%",
-        maxWidth: "960px",
+        maxWidth: "1440px",
         margin: "0 auto",
-        minHeight: "100%",
-        justifyContent: "space-between",
       }}
     >
       {/* Screen Reader Live Region */}
@@ -874,7 +1229,7 @@ export default function Step5Allocations({
       )}
 
       {/* ========================================================================= */}
-      {/* 1. QUICK MODE (DEFAULT FOCUSED ONE-ASSET SCREEN)                          */}
+      {/* 1. QUICK MODE (FOCUSED ASSET SCREEN + RESIDUARY & PORTFOLIO 2-COL WORKSPACE) */}
       {/* ========================================================================= */}
       {viewMode === "quick" && (
         <div style={{ flex: 1, display: "flex", flexDirection: "column", gap: "1rem", minHeight: 0 }}>
@@ -909,31 +1264,35 @@ export default function Step5Allocations({
               </button>
             </div>
           ) : currentAsset ? (
-            <div
-              style={{
-                backgroundColor: "#FFFFFF",
-                borderRadius: "20px",
-                border: isCurrentComplete
-                  ? "1.5px solid var(--color-sage)"
-                  : currentTotalPct > 100
-                  ? "1.5px solid #E11D48"
-                  : "1px solid rgba(27, 42, 74, 0.1)",
-                boxShadow: "0 8px 30px rgba(27, 42, 74, 0.04)",
-                padding: "1.35rem 1.6rem",
-                display: "flex",
-                flexDirection: "column",
-                gap: "1.15rem",
-              }}
-            >
-              {/* 1. Progress line: "Asset X of Y" + slim progress bar + "Saved automatically" + "Skip for now" */}
-              <div style={{ display: "flex", flexDirection: "column", gap: "0.45rem" }}>
-                <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", fontSize: "0.76rem", color: "var(--color-slate)" }}>
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start w-full">
+              {/* Left Column: Active Asset Card */}
+              <div className="lg:col-span-7 xl:col-span-8 flex flex-col gap-4">
+                <div
+                  className="alloc-active-card"
+                  style={{
+                    backgroundColor: "#FFFFFF",
+                    borderRadius: "20px",
+                    border: isCurrentComplete
+                      ? "1.5px solid var(--color-sage)"
+                      : currentTotalPct > 100
+                      ? "1.5px solid #E11D48"
+                      : "1px solid rgba(27, 42, 74, 0.1)",
+                    boxShadow: "0 8px 30px rgba(27, 42, 74, 0.04)",
+                    padding: "1.35rem 1.6rem",
+                    display: "flex",
+                    flexDirection: "column",
+                    gap: "1.15rem",
+                  }}
+                >
+                  {/* 1. Progress line: "Asset X of Y" + slim progress bar + "Saved automatically" + "Skip for now" */}
+                  <div style={{ display: "flex", flexDirection: "column", gap: "0.45rem" }}>
+                    <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", fontSize: "0.76rem", color: "var(--color-slate)" }}>
                   <div style={{ display: "flex", alignItems: "center", gap: "0.6rem" }}>
                     <span style={{ fontWeight: 800, color: "var(--color-navy)", fontSize: "0.82rem" }}>
                       {isHi ? `संपत्ति ${currentIndex + 1} / ${assets.length}` : `Asset ${currentIndex + 1} of ${assets.length}`}
                     </span>
-                    <span style={{ opacity: 0.5 }}>•</span>
-                    <span style={{ color: "var(--color-sage)", fontWeight: 600 }}>
+                    <span className="hidden sm:inline" style={{ opacity: 0.5 }}>•</span>
+                    <span className="hidden sm:inline" style={{ color: "var(--color-sage)", fontWeight: 600 }}>
                       {saveStatus === "Saved automatically"
                         ? isHi ? "स्वतः सहेजा गया" : "Saved automatically"
                         : isHi ? "सहेजा गया" : "Saved"}
@@ -1002,11 +1361,15 @@ export default function Step5Allocations({
                       borderRadius: "999px",
                     }}
                   >
-                    {currentAsset.typeDetails || currentAsset.category}
+                    {currentAsset.customCategoryName
+                      ? `${isHi ? "कस्टम: " : "Custom: "}${currentAsset.customCategoryName}`
+                      : currentAsset.typeDetails || currentAsset.category}
                   </span>
-                  {currentAsset.identifier && (
+                  {(currentAsset.policyNumber || currentAsset.identifier) && (
                     <span style={{ fontSize: "0.74rem", color: "var(--color-slate)" }}>
-                      ID: {currentAsset.identifier}
+                      {currentAsset.policyNumber
+                        ? `${isHi ? "पॉलिसी #: " : "Policy #: "}${currentAsset.policyNumber}`
+                        : `ID: ${currentAsset.identifier}`}
                     </span>
                   )}
                 </div>
@@ -1018,73 +1381,75 @@ export default function Step5Allocations({
                   {isHi ? "यह संपत्ति किसे मिलनी चाहिए?" : "Who should get this?"}
                 </h4>
 
-                {/* Quick Presets Chips */}
-                <div style={{ display: "flex", alignItems: "center", gap: "0.35rem", flexWrap: "wrap" }}>
-                  <span style={{ fontSize: "0.7rem", fontWeight: 700, color: "var(--color-slate)" }}>
-                    {isHi ? "त्वरित विकल्प:" : "Presets:"}
-                  </span>
-                  {spouse && (
-                    <button
-                      type="button"
-                      onClick={() => applyPreset(currentAsset.id, "spouse_100")}
-                      style={{
-                        padding: "0.22rem 0.55rem",
-                        borderRadius: "999px",
-                        fontSize: "0.72rem",
-                        fontWeight: 700,
-                        backgroundColor: "rgba(198, 83, 120, 0.08)",
-                        border: "1px solid rgba(198, 83, 120, 0.25)",
-                        color: "var(--color-gold)",
-                        cursor: "pointer",
-                      }}
-                    >
-                      {isHi ? "100% जीवनसाथी" : "100% Spouse"}
-                    </button>
-                  )}
-                  {children.length > 0 && (
-                    <button
-                      type="button"
-                      onClick={() => applyPreset(currentAsset.id, "equal_children")}
-                      style={{
-                        padding: "0.22rem 0.55rem",
-                        borderRadius: "999px",
-                        fontSize: "0.72rem",
-                        fontWeight: 700,
-                        backgroundColor: "rgba(27, 42, 74, 0.05)",
-                        border: "1px solid rgba(27, 42, 74, 0.12)",
-                        color: "var(--color-navy)",
-                        cursor: "pointer",
-                      }}
-                    >
-                      {isHi ? "बच्चों में बराबर" : "Equal Children"}
-                    </button>
-                  )}
-                  {spouse && children.length > 0 && (
-                    <button
-                      type="button"
-                      onClick={() => applyPreset(currentAsset.id, "spouse_children_50_50")}
-                      style={{
-                        padding: "0.22rem 0.55rem",
-                        borderRadius: "999px",
-                        fontSize: "0.72rem",
-                        fontWeight: 700,
-                        backgroundColor: "rgba(27, 42, 74, 0.05)",
-                        border: "1px solid rgba(27, 42, 74, 0.12)",
-                        color: "var(--color-navy)",
-                        cursor: "pointer",
-                      }}
-                    >
-                      {isHi ? "50% जीवनसाथी / 50% बच्चे" : "50% Spouse / 50% Children"}
-                    </button>
-                  )}
-                </div>
+                {/* Quick Presets Chips (only shown when Spouse or Children exist) */}
+                {(spouse || children.length > 0) && (
+                  <div style={{ display: "flex", alignItems: "center", gap: "0.35rem", flexWrap: "wrap" }}>
+                    <span style={{ fontSize: "0.7rem", fontWeight: 700, color: "var(--color-slate)" }}>
+                      {isHi ? "त्वरित विकल्प:" : "Presets:"}
+                    </span>
+                    {spouse && (
+                      <button
+                        type="button"
+                        onClick={() => applyPreset(currentAsset.id, "spouse_100")}
+                        style={{
+                          padding: "0.22rem 0.55rem",
+                          borderRadius: "999px",
+                          fontSize: "0.72rem",
+                          fontWeight: 700,
+                          backgroundColor: "rgba(198, 83, 120, 0.08)",
+                          border: "1px solid rgba(198, 83, 120, 0.25)",
+                          color: "var(--color-gold)",
+                          cursor: "pointer",
+                        }}
+                      >
+                        {isHi ? "100% जीवनसाथी" : "100% Spouse"}
+                      </button>
+                    )}
+                    {children.length > 0 && (
+                      <button
+                        type="button"
+                        onClick={() => applyPreset(currentAsset.id, "equal_children")}
+                        style={{
+                          padding: "0.22rem 0.55rem",
+                          borderRadius: "999px",
+                          fontSize: "0.72rem",
+                          fontWeight: 700,
+                          backgroundColor: "rgba(27, 42, 74, 0.05)",
+                          border: "1px solid rgba(27, 42, 74, 0.12)",
+                          color: "var(--color-navy)",
+                          cursor: "pointer",
+                        }}
+                      >
+                        {isHi ? "बच्चों में बराबर" : "Equal Children"}
+                      </button>
+                    )}
+                    {spouse && children.length > 0 && (
+                      <button
+                        type="button"
+                        onClick={() => applyPreset(currentAsset.id, "spouse_children_50_50")}
+                        style={{
+                          padding: "0.22rem 0.55rem",
+                          borderRadius: "999px",
+                          fontSize: "0.72rem",
+                          fontWeight: 700,
+                          backgroundColor: "rgba(27, 42, 74, 0.05)",
+                          border: "1px solid rgba(27, 42, 74, 0.12)",
+                          color: "var(--color-navy)",
+                          cursor: "pointer",
+                        }}
+                      >
+                        {isHi ? "50% जीवनसाथी / 50% बच्चे" : "50% Spouse / 50% Children"}
+                      </button>
+                    )}
+                  </div>
+                )}
               </div>
 
-              {/* 4. Beneficiary buttons: Grid (2 cols on mobile, 3 to 4 on desktop) */}
+              {/* 4. Beneficiary buttons: Grid (1 col on mobile so names never wrap per character, 3 to 4 on desktop) */}
               <div
                 role="group"
                 aria-label="Select beneficiaries for this asset"
-                className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3"
+                className="alloc-beneficiary-grid grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 gap-3"
               >
                 {family.map((member, idx) => {
                   const isSelected = selectedMemberIds.has(member.id);
@@ -1163,23 +1528,63 @@ export default function Step5Allocations({
                         </span>
                       </div>
 
-                      {/* Percentage Badge if selected */}
-                      {isSelected && memberAlloc && (
-                        <div
-                          style={{
-                            fontSize: "0.75rem",
-                            fontWeight: 800,
-                            color: "var(--color-gold)",
-                            backgroundColor: "#FFFFFF",
-                            padding: "0.15rem 0.45rem",
-                            borderRadius: "999px",
-                            border: "1px solid rgba(198, 83, 120, 0.25)",
-                            flexShrink: 0,
-                          }}
-                        >
-                          {memberAlloc.percentage}%
-                        </div>
-                      )}
+                      {/* Percentage & Role Badge if selected */}
+                      {isSelected && memberAlloc && (() => {
+                        const allocIdx = currentAssetAllocs.findIndex((a) => a.beneficiaryId === member.id);
+                        const roleTag =
+                          allocIdx === 0
+                            ? "Primary 01"
+                            : allocIdx === 1
+                            ? "Primary 02"
+                            : allocIdx === 2
+                            ? "Backup 01"
+                            : allocIdx === 3
+                            ? "Backup 02"
+                            : `Beneficiary 0${allocIdx + 1}`;
+                        const isPrimary = allocIdx < 2;
+
+                        return (
+                          <div
+                            style={{
+                              display: "flex",
+                              flexDirection: "column",
+                              alignItems: "flex-end",
+                              gap: "3px",
+                              flexShrink: 0,
+                            }}
+                          >
+                            <span
+                              style={{
+                                fontSize: "0.62rem",
+                                fontWeight: 800,
+                                letterSpacing: "0.03em",
+                                textTransform: "uppercase",
+                                color: isPrimary ? "#1E40AF" : "#B45309",
+                                backgroundColor: isPrimary ? "rgba(30, 64, 175, 0.08)" : "rgba(180, 83, 9, 0.08)",
+                                border: isPrimary ? "1px solid rgba(30, 64, 175, 0.2)" : "1px solid rgba(180, 83, 9, 0.2)",
+                                padding: "0.08rem 0.35rem",
+                                borderRadius: "4px",
+                                lineHeight: 1.2,
+                              }}
+                            >
+                              {roleTag}
+                            </span>
+                            <div
+                              style={{
+                                fontSize: "0.75rem",
+                                fontWeight: 800,
+                                color: "var(--color-gold)",
+                                backgroundColor: "#FFFFFF",
+                                padding: "0.1rem 0.45rem",
+                                borderRadius: "999px",
+                                border: "1px solid rgba(198, 83, 120, 0.25)",
+                              }}
+                            >
+                              {memberAlloc.percentage}%
+                            </div>
+                          </div>
+                        );
+                      })()}
                     </button>
                   );
                 })}
@@ -1385,6 +1790,7 @@ export default function Step5Allocations({
 
               {/* 7. Primary Action Bar */}
               <div
+                className="alloc-card-actions"
                 style={{
                   display: "flex",
                   alignItems: "center",
@@ -1486,6 +1892,147 @@ export default function Step5Allocations({
                         : (isHi ? "अगली संपत्ति →" : "Next Asset →")}
                     </span>
                   </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Right Column: Residuary Estate Safety Net & Portfolio Allocations Overview */}
+          <div className="lg:col-span-5 xl:col-span-4 flex flex-col gap-4">
+                {renderResiduarySafetyNet(true)}
+
+                {/* Portfolio Allocations Overview Card */}
+                <div
+                  style={{
+                    backgroundColor: "#FFFFFF",
+                    borderRadius: "18px",
+                    border: "1.5px solid rgba(27, 42, 74, 0.08)",
+                    padding: "1.1rem 1.25rem",
+                    display: "flex",
+                    flexDirection: "column",
+                    gap: "0.75rem",
+                    boxShadow: "0 4px 16px rgba(27, 42, 74, 0.03)",
+                  }}
+                >
+                  <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+                    <div>
+                      <span style={{ fontSize: "0.7rem", fontWeight: 800, color: "var(--color-gold)", textTransform: "uppercase", letterSpacing: "0.04em" }}>
+                        {isHi ? "संपत्ति पोर्टफोलियो" : "Portfolio Overview"}
+                      </span>
+                      <h4 style={{ margin: "0.15rem 0 0", fontSize: "0.95rem", fontWeight: 800, color: "var(--color-navy)" }}>
+                        {isHi ? "सभी संपत्तियों की स्थिति" : "Distribution Status"}
+                      </h4>
+                    </div>
+                    <span
+                      style={{
+                        fontSize: "0.72rem",
+                        fontWeight: 800,
+                        color: incompleteAssets.length === 0 ? "var(--color-sage)" : "var(--color-gold)",
+                        backgroundColor: incompleteAssets.length === 0 ? "rgba(95, 126, 117, 0.1)" : "rgba(198, 83, 120, 0.08)",
+                        padding: "0.2rem 0.6rem",
+                        borderRadius: "999px",
+                      }}
+                    >
+                      {assets.length - incompleteAssets.length} / {assets.length} {isHi ? "पूर्ण" : "Allocated"}
+                    </span>
+                  </div>
+
+                  <div style={{ display: "flex", flexDirection: "column", gap: "0.45rem", maxHeight: "360px", overflowY: "auto", paddingRight: "2px" }}>
+                    {assets.map((asset, idx) => {
+                      const totalPct = getAssetTotalPct(asset.id);
+                      const isDone = totalPct === 100;
+                      const isCurrent = idx === currentIndex;
+                      const assetAllocs = getAssetAllocations(asset.id);
+
+                      return (
+                        <button
+                          key={asset.id}
+                          type="button"
+                          onClick={() => {
+                            setCurrentIndex(idx);
+                            setShowChangeAmounts(false);
+                          }}
+                          style={{
+                            display: "flex",
+                            alignItems: "center",
+                            justifyContent: "space-between",
+                            gap: "0.5rem",
+                            padding: "0.6rem 0.75rem",
+                            borderRadius: "12px",
+                            border: isCurrent
+                              ? "1.5px solid var(--color-gold)"
+                              : "1px solid rgba(27, 42, 74, 0.08)",
+                            backgroundColor: isCurrent
+                              ? "rgba(198, 83, 120, 0.06)"
+                              : "#FAFBFC",
+                            cursor: "pointer",
+                            textAlign: "left",
+                            transition: "all 0.15s ease",
+                          }}
+                        >
+                          <div style={{ display: "flex", alignItems: "center", gap: "0.55rem", minWidth: 0, flex: 1 }}>
+                            <div
+                              style={{
+                                width: "24px",
+                                height: "24px",
+                                borderRadius: "50%",
+                                backgroundColor: isDone ? "var(--color-sage)" : isCurrent ? "var(--color-gold)" : "rgba(27, 42, 74, 0.1)",
+                                color: "#FFFFFF",
+                                display: "flex",
+                                alignItems: "center",
+                                justifyContent: "center",
+                                fontSize: "0.72rem",
+                                fontWeight: 800,
+                                flexShrink: 0,
+                              }}
+                            >
+                              {isDone ? "✓" : idx + 1}
+                            </div>
+                            <div style={{ minWidth: 0, flex: 1 }}>
+                              <div
+                                style={{
+                                  fontSize: "0.82rem",
+                                  fontWeight: isCurrent ? 800 : 700,
+                                  color: "var(--color-navy)",
+                                  overflow: "hidden",
+                                  textOverflow: "ellipsis",
+                                  whiteSpace: "nowrap",
+                                }}
+                              >
+                                {asset.name}
+                              </div>
+                              <div
+                                style={{
+                                  fontSize: "0.68rem",
+                                  color: "var(--color-slate)",
+                                  overflow: "hidden",
+                                  textOverflow: "ellipsis",
+                                  whiteSpace: "nowrap",
+                                }}
+                              >
+                                {assetAllocs.length === 0
+                                  ? (isHi ? "अनावंटित" : "Unallocated")
+                                  : assetAllocs.map((a) => `${a.beneficiaryName} (${a.percentage}%)`).join(", ")}
+                              </div>
+                            </div>
+                          </div>
+                          <span
+                            style={{
+                              fontSize: "0.72rem",
+                              fontWeight: 800,
+                              color: isDone ? "var(--color-sage)" : totalPct > 100 ? "#E11D48" : "var(--color-gold)",
+                              backgroundColor: isDone ? "rgba(95, 126, 117, 0.12)" : "rgba(23, 34, 40, 0.06)",
+                              padding: "0.15rem 0.5rem",
+                              borderRadius: "999px",
+                              flexShrink: 0,
+                            }}
+                          >
+                            {totalPct}%
+                          </span>
+                        </button>
+                      );
+                    })}
+                  </div>
                 </div>
               </div>
             </div>
@@ -1634,6 +2181,7 @@ export default function Step5Allocations({
                 return (
                   <div
                     key={asset.id}
+                    className="alloc-list-row"
                     style={{
                       backgroundColor: "#FFFFFF",
                       borderRadius: "12px",
@@ -1688,7 +2236,9 @@ export default function Step5Allocations({
                           {asset.name}
                         </div>
                         <div style={{ fontSize: "0.7rem", color: "var(--color-slate)" }}>
-                          {asset.typeDetails || asset.category}
+                          {asset.customCategoryName
+                            ? `${isHi ? "कस्टम: " : "Custom: "}${asset.customCategoryName}`
+                            : asset.typeDetails || asset.category}
                         </div>
                       </div>
                     </div>
@@ -1908,114 +2458,7 @@ export default function Step5Allocations({
           </div>
 
           {/* Residuary Estate Safety Net (Preserved for Statutory ISA §102 Compliance) */}
-          <div
-            style={{
-              backgroundColor: "#FFFFFF",
-              borderRadius: "16px",
-              border: "1px solid rgba(27, 42, 74, 0.08)",
-              padding: "1.1rem 1.25rem",
-              display: "flex",
-              flexDirection: "column",
-              gap: "0.75rem",
-            }}
-          >
-            <div>
-              <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", flexWrap: "wrap", gap: "0.5rem" }}>
-                <span style={{ fontSize: "0.74rem", fontWeight: 700, color: "var(--color-gold)", textTransform: "uppercase", letterSpacing: "0.04em" }}>
-                  {isHi ? "अनिवार्य सुरक्षा नियम" : "Essential Safety Net"}
-                </span>
-                <span style={{ fontSize: "0.68rem", color: "var(--color-slate)", backgroundColor: "rgba(27, 42, 74, 0.04)", padding: "0.15rem 0.5rem", borderRadius: "6px" }}>
-                  Legal term: Residuary Clause (ISA §102)
-                </span>
-              </div>
-              <h4 style={{ margin: "0.25rem 0 0", fontSize: "1.05rem", fontWeight: 800, color: "var(--color-navy)", lineHeight: 1.4 }}>
-                {isHi
-                  ? "यदि कोई संपत्ति छूट गई हो या भविष्य में मिले, तो वह किसे मिले?"
-                  : "Who gets anything you haven't specifically mentioned?"}
-              </h4>
-              <div style={{ fontSize: "0.85rem", fontWeight: 600, color: "var(--color-gold)", marginTop: "0.15rem" }}>
-                {isHi
-                  ? "शेष बची हुई संपत्ति (Remaining Assets)"
-                  : "Remaining assets (Any property, money or other assets not specifically assigned in your Will)"}
-              </div>
-              <p style={{ margin: "0.3rem 0 0", fontSize: "0.78rem", color: "var(--color-slate)", lineHeight: 1.5 }}>
-                {isHi
-                  ? "यदि भविष्य में कोई नई संपत्ति अर्जित होती है या कोई संपत्ति छूट जाती है, तो यह नियम तय करता है कि वह किसे मिलेगी। इससे परिवार में कभी कोई विवाद या अदालती बंटवारा नहीं होता।"
-                  : "If you acquire new wealth in the future or forget to mention any asset, choosing a primary recipient ensures everything is smoothly transferred without dispute or court delays."}
-              </p>
-            </div>
-
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-              <div>
-                <label style={{ display: "block", fontSize: "0.78rem", fontWeight: 700, color: "var(--color-navy)", marginBottom: "0.3rem" }}>
-                  {isHi
-                    ? "मुख्य प्राप्तकर्ता (बची हुई संपत्ति के लिए):"
-                    : "Primary person to receive remaining assets:"}
-                </label>
-                <select
-                  value={residuaryName}
-                  onChange={(e) => {
-                    setResiduaryName(e.target.value);
-                    onUpdate((prev) => ({ ...prev, residuaryBeneficiaryName: e.target.value }));
-                  }}
-                  style={{
-                    width: "100%",
-                    padding: "0.55rem 0.75rem",
-                    borderRadius: "10px",
-                    border: "1px solid rgba(23, 34, 40, 0.15)",
-                    fontSize: "0.82rem",
-                    fontWeight: 600,
-                    color: "var(--color-navy)",
-                  }}
-                >
-                  {family.map((f) => (
-                    <option key={f.id} value={f.name}>
-                      {f.name} ({f.relationship})
-                    </option>
-                  ))}
-                </select>
-                <span style={{ fontSize: "0.68rem", color: "var(--color-slate)", marginTop: "0.2rem", display: "block" }}>
-                  {isHi ? "कानूनी नाम: प्राथमिक अवशेष लाभार्थी (Primary Residuary Legatee)" : "Legal term: Primary Residuary Legatee"}
-                </span>
-              </div>
-
-              <div>
-                <label style={{ display: "block", fontSize: "0.78rem", fontWeight: 700, color: "var(--color-navy)", marginBottom: "0.3rem" }}>
-                  {isHi
-                    ? "बैकअप प्राप्तकर्ता (यदि मुख्य व्यक्ति उपलब्ध न हो):"
-                    : "Backup person (If primary person does not survive):"}
-                </label>
-                <select
-                  value={residuaryAltName}
-                  onChange={(e) => {
-                    setResiduaryAltName(e.target.value);
-                    onUpdate((prev) => ({ ...prev, residuaryAlternateName: e.target.value }));
-                  }}
-                  style={{
-                    width: "100%",
-                    padding: "0.55rem 0.75rem",
-                    borderRadius: "10px",
-                    border: "1px solid rgba(23, 34, 40, 0.15)",
-                    fontSize: "0.82rem",
-                    fontWeight: 600,
-                    color: "var(--color-navy)",
-                  }}
-                >
-                  <option value="">None / Direct</option>
-                  {family
-                    .filter((f) => f.name !== residuaryName)
-                    .map((f) => (
-                      <option key={f.id} value={f.name}>
-                        {f.name} ({f.relationship})
-                      </option>
-                    ))}
-                </select>
-                <span style={{ fontSize: "0.68rem", color: "var(--color-slate)", marginTop: "0.2rem", display: "block" }}>
-                  {isHi ? "कानूनी नाम: वैकल्पिक अवशेष लाभार्थी (Alternate Residuary Legatee)" : "Legal term: Alternate Residuary Legatee"}
-                </span>
-              </div>
-            </div>
-          </div>
+          {renderResiduarySafetyNet(false)}
         </div>
       )}
 
@@ -2067,7 +2510,9 @@ export default function Step5Allocations({
                     letterSpacing: "0.04em",
                   }}
                 >
-                  {singleAssetModalAsset.typeDetails || singleAssetModalAsset.category}
+                  {singleAssetModalAsset.customCategoryName
+                    ? `${isHi ? "कस्टम: " : "Custom: "}${singleAssetModalAsset.customCategoryName}`
+                    : singleAssetModalAsset.typeDetails || singleAssetModalAsset.category}
                 </span>
                 <h3 style={{ margin: "0.15rem 0 0", fontSize: "1.25rem", fontWeight: 800, color: "var(--color-navy)" }}>
                   {singleAssetModalAsset.name}
@@ -2241,7 +2686,7 @@ export default function Step5Allocations({
                   </div>
 
                   {/* Beneficiary Toggle Grid */}
-                  <div className="grid grid-cols-2 gap-2">
+                  <div className="alloc-beneficiary-grid grid grid-cols-1 sm:grid-cols-2 gap-2">
                     {family.map((member) => {
                       const isChecked = bulkEqualSelectedIds.includes(member.id);
                       return (
@@ -2505,19 +2950,124 @@ export default function Step5Allocations({
         </div>
       )}
 
-      {/* Global Wizard Footer */}
-      <WizardButton 
-        onBack={onBack} 
-        onNext={() => {
-          onUpdate((prev) => ({
-            ...prev,
-            allocations,
-            residuaryBeneficiaryName: residuaryName.trim(),
-            residuaryAlternateName: residuaryAltName.trim(),
-          }));
-          onNext();
-        }}
-      />
+      {/* Incomplete Allocations Warning Notice */}
+      {viewMode !== "quick" && showIncompleteWarning && incompleteAssets.length > 0 && (
+        <div
+          role="alert"
+          style={{
+            padding: "1rem 1.25rem",
+            backgroundColor: "#FFFBEB",
+            border: "1.5px solid #FCD34D",
+            borderRadius: "16px",
+            color: "#92400E",
+            display: "flex",
+            flexDirection: "column",
+            gap: "0.75rem",
+          }}
+        >
+          <div style={{ display: "flex", alignItems: "flex-start", gap: "0.75rem" }}>
+            <AlertCircle size={20} color="#D97706" style={{ flexShrink: 0, marginTop: "0.15rem" }} />
+            <div>
+              <strong style={{ fontSize: "0.925rem", display: "block", marginBottom: "0.25rem", color: "#78350F" }}>
+                {isHi ? "कुछ संपत्तियों का पूरा 100% बंटवारा नहीं हुआ है" : "Some assets are not fully distributed"}
+              </strong>
+              <p style={{ margin: "0 0 0.5rem 0", fontSize: "0.825rem", lineHeight: 1.5 }}>
+                {isHi
+                  ? "निम्नलिखित संपत्तियां पूरी 100% नहीं बांटी गई हैं। बचा हुआ हिस्सा आपके अवशिष्ट वारिसदार को जाएगा:"
+                  : "The following assets don't add up to 100%. Any unallocated portion will go to your residuary beneficiary:"}
+              </p>
+              <ul style={{ margin: "0 0 0.5rem 0", paddingLeft: "1.2rem", fontSize: "0.8rem", lineHeight: 1.4 }}>
+                {incompleteAssets.slice(0, 3).map((a) => {
+                  const currentPct = allocations.filter((alc) => alc.assetId === a.id).reduce((s, it) => s + (Number(it.percentage) || 0), 0);
+                  return (
+                    <li key={a.id}>
+                      <strong>{a.name}</strong> ({currentPct}% {isHi ? "बांटा गया" : "allocated"} · {100 - currentPct}% {isHi ? "शेष" : "remaining"})
+                    </li>
+                  );
+                })}
+                {incompleteAssets.length > 3 && (
+                  <li>
+                    {isHi ? `...और ${incompleteAssets.length - 3} अन्य संपत्तियां` : `...and ${incompleteAssets.length - 3} more assets`}
+                  </li>
+                )}
+              </ul>
+            </div>
+          </div>
+          <div style={{ display: "flex", gap: "0.65rem", justifyContent: "flex-end" }}>
+            <button
+              type="button"
+              onClick={() => {
+                setShowIncompleteWarning(false);
+                setViewMode("list");
+              }}
+              className="btn btn-gold"
+              style={{
+                padding: "0.45rem 0.9rem",
+                borderRadius: "10px",
+                fontSize: "0.8rem",
+                fontWeight: 700,
+                cursor: "pointer",
+              }}
+            >
+              {isHi ? "बंटवारा ठीक करें" : "Fix Allocations"}
+            </button>
+            <button
+              type="button"
+              onClick={() => {
+                setShowIncompleteWarning(false);
+                onUpdate((prev) => ({
+                  ...prev,
+                  allocations,
+                  residuaryBeneficiaryName: residuaryPrimary01.trim(),
+                  residuaryAlternateName: residuaryBackup01.trim(),
+                  residuaryPrimary01Name: residuaryPrimary01.trim(),
+                  residuaryPrimary02Name: residuaryPrimary02.trim(),
+                  residuaryBackup01Name: residuaryBackup01.trim(),
+                  residuaryBackup02Name: residuaryBackup02.trim(),
+                }));
+                onNext();
+              }}
+              style={{
+                padding: "0.45rem 0.9rem",
+                borderRadius: "10px",
+                fontSize: "0.8rem",
+                fontWeight: 600,
+                backgroundColor: "transparent",
+                border: "1px solid #D97706",
+                color: "#78350F",
+                cursor: "pointer",
+              }}
+            >
+              {isHi ? "ऐसे ही आगे बढ़ें" : "Continue Anyway"}
+            </button>
+          </div>
+        </div>
+      )}
+
+      {/* Global Wizard Footer (Rendered in Review and List modes, Quick Mode has dedicated in-card navigation) */}
+      {viewMode !== "quick" && (
+        <WizardButton 
+          onBack={onBack} 
+          onNext={() => {
+            if (incompleteAssets.length > 0 && !showIncompleteWarning) {
+              setShowIncompleteWarning(true);
+              return;
+            }
+            setShowIncompleteWarning(false);
+            onUpdate((prev) => ({
+              ...prev,
+              allocations,
+              residuaryBeneficiaryName: residuaryPrimary01.trim(),
+              residuaryAlternateName: residuaryBackup01.trim(),
+              residuaryPrimary01Name: residuaryPrimary01.trim(),
+              residuaryPrimary02Name: residuaryPrimary02.trim(),
+              residuaryBackup01Name: residuaryBackup01.trim(),
+              residuaryBackup02Name: residuaryBackup02.trim(),
+            }));
+            onNext();
+          }}
+        />
+      )}
     </div>
   );
 }

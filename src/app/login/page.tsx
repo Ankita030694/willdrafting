@@ -1,171 +1,237 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
-import Link from "next/link";
-import { useRouter } from "next/navigation";
+import React, { useState, Suspense } from "react";
+import { useRouter, useSearchParams } from "next/navigation";
+import { signIn } from "next-auth/react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { safeCallbackPath } from "@/lib/authValidation";
+import EmailOtpAuth from "@/components/auth/EmailOtpAuth";
 
-export default function LoginPage() {
+function LoginContent() {
   const router = useRouter();
+  const searchParams = useSearchParams();
+  const callbackUrl = safeCallbackPath(searchParams.get("callbackUrl"));
+  const initialMode = searchParams.get("mode") === "signup" ? "signup" : "signin";
 
-  const [phone, setPhone] = useState("");
-  const [otpSent, setOtpSent] = useState(false);
-  const [otp, setOtp] = useState("");
+  const [mode, setMode] = useState<"signin" | "signup">(initialMode);
   const [loading, setLoading] = useState(false);
-  const [errorMessage, setErrorMessage] = useState("");
+  const [errorState, setErrorMessage] = useState("");
+  const errorMessage =
+    errorState || (searchParams.get("error") ? "Sign-in failed. Please try again." : "");
+  const [successMessage, setSuccessMessage] = useState("");
 
-  const [countdown, setCountdown] = useState(60);
-  const canResend = countdown === 0;
+  const emailParam = searchParams.get("email") || "";
 
-  useEffect(() => {
-    let timer: NodeJS.Timeout;
-    if (otpSent && countdown > 0) {
-      timer = setTimeout(() => setCountdown((prev) => prev - 1), 1000);
-    }
-    return () => clearTimeout(timer);
-  }, [otpSent, countdown]);
-
-  // Step 1: Send OTP
-  const handleSendOtp = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setErrorMessage("");
-
-    const cleanPhone = phone.replace(/\D/g, "");
-    if (cleanPhone.length !== 10) {
-      setErrorMessage("Please enter a valid 10-digit mobile number.");
-      return;
-    }
-
-    setLoading(true);
-    try {
-      const res = await fetch("/api/auth/send-otp", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ phone: cleanPhone, source: "login_page" }),
-      });
-
-      if (!res.ok) {
-        const errorData = await res.json().catch(() => ({}));
-        if (res.status === 404 || res.status === 500) {
-          // Preview fallback
-        } else {
-          setErrorMessage(errorData.message || "Failed to send code. Please retry.");
-          setLoading(false);
-          return;
-        }
-      }
-
-      setOtpSent(true);
-      setCountdown(60);
-    } catch {
-      setOtpSent(true);
-      setCountdown(60);
-    } finally {
-      setLoading(false);
-    }
+  const handleAuthSuccess = () => {
+    router.push(callbackUrl);
+    router.refresh();
   };
 
-  // Step 2: Verify OTP
-  const handleVerifyOtp = async (e: React.FormEvent) => {
-    e.preventDefault();
+  const handleGoogleSignIn = async () => {
     setErrorMessage("");
-
-    if (otp.trim().length !== 6) {
-      setErrorMessage("Please enter the 6-digit OTP.");
-      return;
-    }
-
     setLoading(true);
     try {
-      const cleanPhone = phone.replace(/\D/g, "");
-      const res = await fetch("/api/auth/verify-otp", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          phone: cleanPhone,
-          otp: otp.trim(),
-        }),
-      });
-
-      if (res.ok) {
-        router.push("/dashboard");
-      } else {
-        const errorData = await res.json().catch(() => ({}));
-        if (res.status === 404) {
-          router.push("/dashboard");
-        } else {
-          setErrorMessage(errorData.message || "Incorrect or expired OTP. Please try again.");
-        }
-      }
-    } catch {
-      router.push("/dashboard");
-    } finally {
+      await signIn("google", { callbackUrl });
+    } catch (err) {
+      console.error("Google sign in error:", err);
+      setErrorMessage("Google Sign-In is currently being initialized. Please use the email code option.");
       setLoading(false);
     }
-  };
-
-  const handleResend = () => {
-    if (!canResend) return;
-    setOtp("");
-    setCountdown(60);
-    handleSendOtp({ preventDefault: () => {} } as React.FormEvent);
   };
 
   return (
-    <div style={{ display: "flex", flexDirection: "column", minHeight: "100vh", backgroundColor: "var(--bg-page)" }}>
+    <div style={{ display: "flex", flexDirection: "column", minHeight: "100vh", backgroundColor: "#FAF7F0" }}>
       <Navbar />
 
       <main
-        className="login-main"
         style={{
           flex: "1 0 auto",
+          minHeight: "100vh",
           display: "flex",
+          flexDirection: "column",
           alignItems: "center",
           justifyContent: "center",
-          padding: "3.5rem 1.5rem 4.5rem",
+          paddingTop: "6.5rem",
+          paddingBottom: "3rem",
+          paddingLeft: "1.25rem",
+          paddingRight: "1.25rem",
+          boxSizing: "border-box",
         }}
       >
         <div
-          className="editorial-card login-card"
           style={{
             width: "100%",
-            maxWidth: "420px",
+            maxWidth: "440px",
             backgroundColor: "#FFFFFF",
-            padding: "2.25rem",
-            borderRadius: "var(--radius-lg)",
-            boxShadow: "var(--shadow-md)",
-            border: "1px solid var(--border-card)",
+            padding: "2.25rem 2rem",
+            borderRadius: "24px",
+            boxShadow: "0 14px 45px -8px rgba(23, 34, 40, 0.12)",
+            border: "1px solid rgba(23, 34, 40, 0.08)",
+            margin: "auto 0",
           }}
         >
-          {/* Simple Heading */}
+          {/* Brand Heading */}
           <div style={{ marginBottom: "1.5rem", textAlign: "center" }}>
+            <span
+              style={{
+                display: "inline-block",
+                fontSize: "0.68rem",
+                fontWeight: 700,
+                color: "#C65378",
+                letterSpacing: "0.15em",
+                textTransform: "uppercase",
+                marginBottom: "0.35rem",
+              }}
+            >
+              Indian Legal Estate Vault
+            </span>
             <h1
               style={{
-                fontSize: "1.45rem",
-                color: "var(--color-navy)",
+                fontSize: "1.55rem",
+                color: "#172228",
                 fontWeight: 700,
                 margin: 0,
+                letterSpacing: "-0.015em",
+              }}
+            >
+              {mode === "signin" ? "Sign In to Your Account" : "Create Your Secure Account"}
+            </h1>
+          </div>
+
+          {/* Mode Switcher Tabs */}
+          <div
+            style={{
+              display: "flex",
+              backgroundColor: "#FAF7F0",
+              borderRadius: "12px",
+              padding: "4px",
+              marginBottom: "1.25rem",
+              border: "1px solid rgba(23, 34, 40, 0.06)",
+            }}
+          >
+            <button
+              type="button"
+              onClick={() => {
+                setMode("signin");
+                setErrorMessage("");
+                setSuccessMessage("");
+              }}
+              style={{
+                flex: 1,
+                padding: "0.55rem 0",
+                fontSize: "0.85rem",
+                fontWeight: mode === "signin" ? 700 : 500,
+                color: mode === "signin" ? "#172228" : "#55636D",
+                backgroundColor: mode === "signin" ? "#FFFFFF" : "transparent",
+                border: "none",
+                borderRadius: "8px",
+                cursor: "pointer",
+                boxShadow: mode === "signin" ? "0 2px 6px rgba(0,0,0,0.05)" : "none",
+                transition: "all 0.15s ease",
               }}
             >
               Sign In
-            </h1>
+            </button>
+            <button
+              type="button"
+              onClick={() => {
+                setMode("signup");
+                setErrorMessage("");
+                setSuccessMessage("");
+              }}
+              style={{
+                flex: 1,
+                padding: "0.55rem 0",
+                fontSize: "0.85rem",
+                fontWeight: mode === "signup" ? 700 : 500,
+                color: mode === "signup" ? "#172228" : "#55636D",
+                backgroundColor: mode === "signup" ? "#FFFFFF" : "transparent",
+                border: "none",
+                borderRadius: "8px",
+                cursor: "pointer",
+                boxShadow: mode === "signup" ? "0 2px 6px rgba(0,0,0,0.05)" : "none",
+                transition: "all 0.15s ease",
+              }}
+            >
+              Create Account
+            </button>
+          </div>
+
+          {/* Google Sign In Button */}
+          <button
+            type="button"
+            onClick={handleGoogleSignIn}
+            disabled={loading}
+            style={{
+              width: "100%",
+              padding: "0.75rem",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              gap: "0.65rem",
+              backgroundColor: "#FFFFFF",
+              border: "1px solid rgba(23, 34, 40, 0.15)",
+              borderRadius: "12px",
+              fontSize: "0.88rem",
+              fontWeight: 600,
+              color: "#172228",
+              cursor: "pointer",
+              transition: "all 0.15s ease",
+              marginBottom: "1.2rem",
+            }}
+            onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = "#F9FAFB")}
+            onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = "#FFFFFF")}
+          >
+            <svg width="18" height="18" viewBox="0 0 24 24">
+              <path
+                fill="#4285F4"
+                d="M23.745 12.27c0-.7-.06-1.4-.19-2.07H12v4.51h6.6c-.29 1.52-1.14 2.8-2.4 3.66v3.05h3.88c2.27-2.09 3.66-5.17 3.66-9.15z"
+              />
+              <path
+                fill="#34A853"
+                d="M12 24c3.24 0 5.95-1.08 7.93-2.91l-3.88-3.05c-1.08.72-2.45 1.16-4.05 1.16-3.12 0-5.77-2.1-6.72-4.93H1.25v3.15C3.26 21.36 7.33 24 12 24z"
+              />
+              <path
+                fill="#FBBC05"
+                d="M5.28 14.27c-.25-.72-.38-1.49-.38-2.27s.13-1.55.38-2.27V6.58H1.25C.45 8.17 0 9.99 0 12s.45 3.83 1.25 5.42l4.03-3.15z"
+              />
+              <path
+                fill="#EA4335"
+                d="M12 4.75c1.77 0 3.35.61 4.6 1.8l3.42-3.42C17.95 1.19 15.24 0 12 0 7.33 0 3.26 2.64 1.25 6.58l4.03 3.15c.95-2.83 3.6-4.98 6.72-4.98z"
+              />
+            </svg>
+            <span>Continue with Google</span>
+          </button>
+
+          {/* Divider */}
+          <div
+            style={{
+              display: "flex",
+              alignItems: "center",
+              gap: "0.75rem",
+              marginBottom: "1.2rem",
+            }}
+          >
+            <div style={{ flex: 1, height: "1px", backgroundColor: "rgba(23, 34, 40, 0.1)" }} />
+            <span style={{ fontSize: "0.75rem", color: "#55636D", textTransform: "uppercase" }}>or</span>
+            <div style={{ flex: 1, height: "1px", backgroundColor: "rgba(23, 34, 40, 0.1)" }} />
           </div>
 
           {/* Error Message */}
           {errorMessage && (
             <div
               style={{
-                padding: "0.65rem 0.85rem",
+                padding: "0.75rem 0.85rem",
                 marginBottom: "1rem",
                 backgroundColor: "rgba(220, 38, 38, 0.08)",
                 border: "1px solid rgba(220, 38, 38, 0.25)",
-                borderRadius: "var(--radius-md)",
+                borderRadius: "10px",
                 color: "#991B1B",
                 fontSize: "0.82rem",
                 display: "flex",
                 alignItems: "center",
-                gap: "0.45rem",
+                gap: "0.5rem",
               }}
             >
               <span>⚠️</span>
@@ -173,213 +239,67 @@ export default function LoginPage() {
             </div>
           )}
 
-          {/* STEP 1: PHONE NUMBER */}
-          {!otpSent ? (
-            <form onSubmit={handleSendOtp} style={{ display: "flex", flexDirection: "column", gap: "1rem" }}>
-              <div>
-                <label className="form-label" htmlFor="loginPhone" style={{ fontSize: "0.82rem", marginBottom: "0.3rem" }}>
-                  WhatsApp Mobile Number *
-                </label>
-                <div className="phone-input-group">
-                  <div className="phone-prefix">
-                    <svg
-                      width="20"
-                      height="14"
-                      viewBox="0 0 24 16"
-                      fill="none"
-                      style={{ borderRadius: "2px", overflow: "hidden", flexShrink: 0, boxShadow: "0 0 1px rgba(0,0,0,0.25)" }}
-                      aria-hidden="true"
-                    >
-                      <rect width="24" height="16" fill="#FFFFFF" />
-                      <rect width="24" height="5.333" fill="#FF9933" />
-                      <rect y="10.667" width="24" height="5.333" fill="#138808" />
-                      <circle cx="12" cy="8" r="2.2" stroke="#000080" strokeWidth="0.8" fill="none" />
-                      <circle cx="12" cy="8" r="0.6" fill="#000080" />
-                    </svg>
-                    <span style={{ fontSize: "0.88rem" }}>+91</span>
-                  </div>
-                  <span className="phone-divider" />
-                  <input
-                    id="loginPhone"
-                    type="tel"
-                    required
-                    maxLength={10}
-                    placeholder="Enter 10-digit number"
-                    value={phone}
-                    onChange={(e) => setPhone(e.target.value.replace(/\D/g, ""))}
-                    className="phone-input-field"
-                    style={{ fontSize: "0.88rem" }}
-                    autoFocus
-                  />
-                </div>
-              </div>
-
-              <button
-                type="submit"
-                disabled={loading}
-                className="btn btn-gold"
-                style={{
-                  width: "100%",
-                  padding: "0.85rem",
-                  fontSize: "0.92rem",
-                  fontWeight: 700,
-                  opacity: loading ? 0.7 : 1,
-                }}
-              >
-                {loading ? "Sending OTP..." : "Send OTP →"}
-              </button>
-            </form>
-          ) : (
-            /* STEP 2: ENTER OTP */
-            <form onSubmit={handleVerifyOtp} style={{ display: "flex", flexDirection: "column", gap: "1rem" }}>
-              <div
-                style={{
-                  padding: "0.75rem 0.85rem",
-                  backgroundColor: "rgba(201, 162, 39, 0.08)",
-                  border: "1px solid rgba(201, 162, 39, 0.25)",
-                  borderRadius: "var(--radius-md)",
-                  textAlign: "center",
-                  fontSize: "0.85rem",
-                  color: "var(--color-navy)",
-                }}
-              >
-                OTP sent to <strong>+91 {phone}</strong>
-              </div>
-
-              <div>
-                <label
-                  className="form-label"
-                  htmlFor="passcode"
-                  style={{ textAlign: "center", display: "block", fontSize: "0.82rem", marginBottom: "0.4rem" }}
-                >
-                  Enter 6-Digit OTP *
-                </label>
-                <input
-                  id="passcode"
-                  type="text"
-                  required
-                  maxLength={6}
-                  placeholder="• • • • • •"
-                  value={otp}
-                  onChange={(e) => setOtp(e.target.value.replace(/\D/g, ""))}
-                  className="form-input"
-                  style={{
-                    textAlign: "center",
-                    fontSize: "1.3rem",
-                    letterSpacing: "0.25em",
-                    fontWeight: 700,
-                    padding: "0.65rem",
-                  }}
-                  autoFocus
-                />
-              </div>
-
-              <button
-                type="submit"
-                disabled={loading}
-                className="btn btn-gold"
-                style={{
-                  width: "100%",
-                  padding: "0.8rem",
-                  fontSize: "0.92rem",
-                  fontWeight: 700,
-                  opacity: loading ? 0.7 : 1,
-                }}
-              >
-                {loading ? "Verifying..." : "Verify & Sign In →"}
-              </button>
-
-              <div
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "space-between",
-                  fontSize: "0.8rem",
-                  paddingTop: "0.4rem",
-                }}
-              >
-                <button
-                  type="button"
-                  onClick={() => {
-                    setOtpSent(false);
-                    setOtp("");
-                  }}
-                  style={{
-                    background: "none",
-                    border: "none",
-                    color: "var(--color-slate)",
-                    cursor: "pointer",
-                    padding: 0,
-                    fontSize: "0.8rem",
-                  }}
-                >
-                  ← Change number
-                </button>
-
-                <div>
-                  {canResend ? (
-                    <button
-                      type="button"
-                      onClick={handleResend}
-                      style={{
-                        background: "none",
-                        border: "none",
-                        color: "var(--color-navy)",
-                        fontWeight: 600,
-                        cursor: "pointer",
-                        padding: 0,
-                        fontSize: "0.8rem",
-                      }}
-                    >
-                      Resend OTP
-                    </button>
-                  ) : (
-                    <span style={{ color: "var(--text-muted)" }}>
-                      Resend in <strong>{countdown}s</strong>
-                    </span>
-                  )}
-                </div>
-              </div>
-            </form>
+          {/* Success Message */}
+          {successMessage && (
+            <div
+              style={{
+                padding: "0.75rem 0.85rem",
+                marginBottom: "1rem",
+                backgroundColor: "rgba(16, 185, 129, 0.1)",
+                border: "1px solid rgba(16, 185, 129, 0.25)",
+                borderRadius: "10px",
+                color: "#065F46",
+                fontSize: "0.82rem",
+                display: "flex",
+                alignItems: "center",
+                gap: "0.5rem",
+              }}
+            >
+              <span>✓</span>
+              <span>{successMessage}</span>
+            </div>
           )}
 
-          {/* New Member Callout */}
+          {/* PASSWORDLESS EMAIL-CODE FORM (key resets the form when switching tabs) */}
+          <EmailOtpAuth
+            key={mode}
+            mode={mode}
+            initialEmail={emailParam}
+            onSuccess={handleAuthSuccess}
+          />
+
+          {/* Privacy Note */}
           <div
             style={{
-              marginTop: "1.5rem",
-              paddingTop: "1.1rem",
-              borderTop: "1px solid var(--border-subtle)",
+              marginTop: "1.4rem",
+              paddingTop: "1rem",
+              borderTop: "1px solid rgba(23, 34, 40, 0.08)",
               textAlign: "center",
-              fontSize: "0.82rem",
-              color: "var(--color-charcoal)",
+              fontSize: "0.75rem",
+              color: "#55636D",
+              lineHeight: 1.4,
             }}
           >
-            Don&apos;t have an account yet?{" "}
-            <Link href="/#start-form" style={{ color: "var(--color-navy)", fontWeight: 600 }}>
-              Start here →
-            </Link>
+            🔒 All personal information is protected under bank-grade encryption in accordance with the Indian Succession Act.
           </div>
         </div>
       </main>
 
       <Footer />
-      <style jsx>{`
-        @media (max-width: 640px) {
-          .login-main {
-            padding: 1.75rem 1rem 2.5rem !important;
-          }
-          :global(.login-card) {
-            padding: 1.35rem 1.15rem !important;
-          }
-          :global(.phone-input-group) {
-            min-height: 44px !important;
-          }
-          :global(.phone-input-field),
-          :global(.form-input) {
-            font-size: 16px !important;
-          }
-        }
-      `}</style>
     </div>
+  );
+}
+
+export default function LoginPage() {
+  return (
+    <Suspense
+      fallback={
+        <div style={{ minHeight: "100vh", display: "flex", alignItems: "center", justifyContent: "center", backgroundColor: "#FAF7F0" }}>
+          <span>Loading...</span>
+        </div>
+      }
+    >
+      <LoginContent />
+    </Suspense>
   );
 }

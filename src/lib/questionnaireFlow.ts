@@ -26,7 +26,7 @@ export interface QuestionnaireStepConfig {
  * - Step 14: Final Will Document (/start/13 or /start/14) -> PDF step
  */
 export const QUESTIONNAIRE_STEPS: QuestionnaireStepConfig[] = [
-  { step: 1, isWelcome: true, slug: "", title: "Welcome & Overview", hindiTitle: "स्वागत", path: "/start" },
+  { step: 1, isWelcome: true, slug: "", title: "Dashboard", hindiTitle: "डैशबोर्ड", path: "/start/dashboard" },
   { step: 2, displayNum: 1, slug: "01", title: "About You", hindiTitle: "अपनी जानकारी", path: "/start/01" },
   { step: 3, displayNum: 2, slug: "02", title: "My Family", hindiTitle: "परिवार", path: "/start/02" },
   { step: 4, displayNum: 3, slug: "03", title: "Assets Register", hindiTitle: "संपत्ति", path: "/start/03" },
@@ -46,8 +46,9 @@ export const QUESTIONNAIRE_STEPS: QuestionnaireStepConfig[] = [
  * Returns internal step number (1-14) given a URL param like "01", "04", "14", or undefined (/start).
  */
 export function getStepFromParam(param: string | string[] | undefined | null): number {
-  if (!param) return 1; // /start -> Step 1 (Welcome)
+  if (!param) return 1; // /start or /start/dashboard -> Step 1 (Overview)
   const str = Array.isArray(param) ? param[0] : String(param);
+  if (str === "dashboard" || str === "") return 1;
   const num = parseInt(str, 10);
   if (isNaN(num)) return 1;
   if (num >= 13) return 14; // Both /start/13 and /start/14 lead to Step 14 (PDF step)
@@ -56,14 +57,14 @@ export function getStepFromParam(param: string | string[] | undefined | null): n
 
 /**
  * Returns exact URL path for a given internal step number (1 to 14).
- * - Step 1 (Welcome) -> "/start"
+ * - Step 1 (Overview) -> "/start/dashboard"
  * - Step 2 (About You) -> "/start/01"
  * - Step 5 (Allocations) -> "/start/04"
  * - Step 6 (Executors) -> "/start/05"
  * - Step 14 (Final Will PDF) -> "/start/14"
  */
 export function getUrlForStep(step: number): string {
-  if (step <= 1) return "/start";
+  if (step <= 1) return "/start/dashboard";
   if (step >= 14) return "/start/14";
   const urlNum = Math.min(13, step - 1);
   return `/start/${String(urlNum).padStart(2, "0")}`;

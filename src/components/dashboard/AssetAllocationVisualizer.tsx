@@ -31,6 +31,7 @@ export default function AssetAllocationVisualizer({
   const assets = state.assets || [];
   const allocations = state.allocations || [];
   const family = state.familyMembers || [];
+  const isLocked = Boolean(state.detailsVerified);
 
   const totalValue = assets.reduce((sum, a) => sum + (a.approximateValue || 0), 0);
 
@@ -64,6 +65,7 @@ export default function AssetAllocationVisualizer({
   };
 
   const handleSliderChange = (beneficiaryId: string, beneficiaryName: string, newPct: number) => {
+    if (isLocked) return;
     // If there's an asset, update allocations
     const firstAssetId = assets[0]?.id || "ast-all";
     const existingIndex = allocations.findIndex((a) => a.beneficiaryId === beneficiaryId || a.beneficiaryName === beneficiaryName);
@@ -88,6 +90,7 @@ export default function AssetAllocationVisualizer({
 
   const handleSaveAsset = (e: React.FormEvent) => {
     e.preventDefault();
+    if (isLocked) return;
     if (!name.trim()) return;
 
     const newAsset: Asset = {
@@ -144,18 +147,20 @@ export default function AssetAllocationVisualizer({
           </h3>
         </div>
 
-        <button
-          onClick={() => setIsAddAssetOpen(true)}
-          className="btn btn-gold"
-          style={{
-            padding: "0.45rem 1.15rem",
-            fontSize: "0.8rem",
-            borderRadius: "999px",
-            fontWeight: 700,
-          }}
-        >
-          + Add New Asset
-        </button>
+        {!isLocked && (
+          <button
+            onClick={() => setIsAddAssetOpen(true)}
+            className="btn btn-gold"
+            style={{
+              padding: "0.45rem 1.15rem",
+              fontSize: "0.8rem",
+              borderRadius: "999px",
+              fontWeight: 700,
+            }}
+          >
+            + Add New Asset
+          </button>
+        )}
       </div>
 
       {/* Main Grid: Visual Donut + Allocation Sliders */}
@@ -328,11 +333,13 @@ export default function AssetAllocationVisualizer({
                     max={100}
                     step={5}
                     value={pct}
+                    disabled={isLocked}
                     onChange={(e) => handleSliderChange(member.id, member.name, Number(e.target.value))}
                     style={{
                       width: "100%",
                       accentColor: "var(--color-navy)",
-                      cursor: "pointer",
+                      cursor: isLocked ? "not-allowed" : "pointer",
+                      opacity: isLocked ? 0.65 : 1,
                     }}
                   />
 

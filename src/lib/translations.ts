@@ -167,24 +167,32 @@ export function sanitizeBilingual(text: string, isHi: boolean): string {
   if (!text) return text;
   const trimmed = text.trim();
 
-  // If in Hindi, check if we have a direct dictionary match
   if (isHi) {
     if (translationsMap[trimmed]) return translationsMap[trimmed];
+    // If pattern has "English / Hindi", return Hindi
+    const slashMatch = trimmed.match(/^[a-zA-Z\s\(\)\d\.\-\+]+?\s*\/\s*([\u0900-\u097F\s\(\)\d\.\-\+]+)$/);
+    if (slashMatch && slashMatch[1]) {
+      return slashMatch[1].trim();
+    }
     // If pattern is "English (Hindi)" -> return Hindi
     const match = trimmed.match(/\(([\u0900-\u097F\s\/\.,\-\d]+)\)/);
     if (match && match[1]) {
       return match[1].trim();
     }
+    // Strip any English in parentheses like "नाबालिग (Minor)" -> "नाबालिग"
+    return trimmed
+      .replace(/\s*\([a-zA-Z\s\/\.,\-\d]+\)/g, "")
+      .replace(/\s{2,}/g, " ")
+      .trim();
   } else {
-    // If in English, strip any Hindi text inside parentheses or standalone
+    // If in English, strip any Hindi text inside parentheses, slashes, or standalone Devanagari
     return trimmed
       .replace(/\s*\([\u0900-\u097F\s\/\.,\-\d]+\)/g, "")
+      .replace(/\s*\/\s*[\u0900-\u097F\s\.,\-\d]+/g, "")
       .replace(/[\u0900-\u097F]+/g, "")
       .replace(/\s{2,}/g, " ")
       .trim();
   }
-
-  return trimmed;
 }
 
 /**
@@ -210,13 +218,25 @@ export function applyLanguageTranslation(root: HTMLElement, isHi: boolean) {
         return str.replace(trimmed, translationsMap[trimmed]);
       }
 
-      // 2. If it has "(Hindi Text)" inside, use the Hindi text
+      // 2. If it has "English / Hindi", extract the Hindi portion
+      const slashMatch = trimmed.match(/^[a-zA-Z\s\(\)\d\.\-\+]+?\s*\/\s*([\u0900-\u097F\s\(\)\d\.\-\+]+)$/);
+      if (slashMatch && slashMatch[1]) {
+        return str.replace(trimmed, slashMatch[1].trim());
+      }
+
+      // 3. If it has "(Hindi Text)" inside, use the Hindi text
       const parenMatch = trimmed.match(/^(.+?)\s*\(([\u0900-\u097F\s\/\.,\-\d]+)\)$/);
       if (parenMatch && parenMatch[2]) {
         return parenMatch[2].trim();
       }
 
-      // 3. Dynamic patterns:
+      // 4. Strip English in parentheses from Hindi text
+      if (/[\u0900-\u097F]/.test(trimmed) && /\([a-zA-Z\s\/\.,\-\d]+\)/.test(trimmed)) {
+        const cleanHi = trimmed.replace(/\s*\([a-zA-Z\s\/\.,\-\d]+\)/g, "").replace(/\s{2,}/g, " ").trim();
+        return str.replace(trimmed, cleanHi);
+      }
+
+      // 5. Dynamic patterns:
       // "Asset X of Y" -> "संपत्ति X / Y"
       const assetMatch = trimmed.match(/^Asset\s+(\d+)\s+of\s+(\d+)$/i);
       if (assetMatch) {
@@ -287,8 +307,10 @@ export function applyLanguageTranslation(root: HTMLElement, isHi: boolean) {
         return str.replace(trimmed, reverseMap[trimmed]);
       }
       // Strip any residual Hindi in parentheses like "Distribute (संपत्ति का बंटवारा)" -> "Distribute"
+      // Also strip slash-separated Hindi like "Listen / सुनें" -> "Listen"
       const cleaned = trimmed
         .replace(/\s*\([\u0900-\u097F\s\/\.,\-\d]+\)/g, "")
+        .replace(/\s*\/\s*[\u0900-\u097F\s\.,\-\d]+/g, "")
         .replace(/\s{2,}/g, " ")
         .trim();
       if (cleaned && cleaned !== trimmed) {

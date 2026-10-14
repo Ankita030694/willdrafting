@@ -1,7 +1,7 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
-import { useRouter } from "next/navigation";
+import React, { useState } from "react";
+import LeadNextStepModal, { type LeadDetails } from "@/components/LeadNextStepModal";
 
 const INDIAN_STATES = [
   "Andhra Pradesh", "Arunachal Pradesh", "Assam", "Bihar", "Chhattisgarh",
@@ -16,14 +16,14 @@ const INDIAN_STATES = [
 ];
 
 interface IntakeFormProps {
-  onSuccess?: () => void;
+  /** Receives the saved details so the parent can continue the verify / pay / dashboard flow. */
+  onSuccess?: (lead: LeadDetails) => void;
   compact?: boolean;
 }
 
 export default function IntakeForm({ onSuccess, compact = false }: IntakeFormProps) {
-  const router = useRouter();
+  const [savedLead, setSavedLead] = useState<LeadDetails | null>(null);
 
-  const [step, setStep] = useState<"details" | "otp">("details");
   const [loading, setLoading] = useState(false);
   const [errorMessage, setErrorMessage] = useState("");
 
@@ -35,25 +35,12 @@ export default function IntakeForm({ onSuccess, compact = false }: IntakeFormPro
     state: "Delhi",
   });
 
-  // OTP State
-  const [otp, setOtp] = useState("");
-  const [countdown, setCountdown] = useState(60);
-  const canResend = countdown === 0;
-
-  useEffect(() => {
-    let timer: NodeJS.Timeout;
-    if (step === "otp" && countdown > 0) {
-      timer = setTimeout(() => setCountdown((prev) => prev - 1), 1000);
-    }
-    return () => clearTimeout(timer);
-  }, [step, countdown]);
-
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
   // Submit Basic Details directly to MongoDB leads collection
-  const handleSendOtp = async (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setErrorMessage("");
 
@@ -73,80 +60,30 @@ export default function IntakeForm({ onSuccess, compact = false }: IntakeFormPro
           phone: cleanPhone,
           email: formData.email.trim(),
           state: formData.state,
-          source: "global_popup",
+          source: "intake_popup",
         }),
       });
 
       if (res.ok) {
-        if (onSuccess) {
-          onSuccess();
-        } else {
-          router.push("/thank-you");
-        }
+        const lead = {
+          name: formData.fullName.trim(),
+          email: formData.email.trim(),
+          phone: cleanPhone,
+        };
+        if (onSuccess) onSuccess(lead);
+        else setSavedLead(lead);
       } else {
         const errorData = await res.json().catch(() => ({}));
         setErrorMessage(errorData.error || "Failed to submit. Please retry.");
       }
     } catch (err) {
       console.error("Popup lead submission error:", err);
-      if (onSuccess) {
-        onSuccess();
-      } else {
-        router.push("/thank-you");
-      }
+      setErrorMessage("Network error. Please check your connection and retry.");
     } finally {
       setLoading(false);
     }
   };
 
-  // Step 2: Verify OTP
-  const handleVerifyOtp = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setErrorMessage("");
-
-    if (otp.trim().length !== 6) {
-      setErrorMessage("Please enter the 6-digit OTP.");
-      return;
-    }
-
-    setLoading(true);
-    try {
-      const cleanPhone = formData.phone.replace(/\D/g, "");
-      const res = await fetch("/api/auth/verify-otp", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          phone: cleanPhone,
-          otp: otp.trim(),
-        }),
-      });
-
-      if (res.ok) {
-        if (onSuccess) onSuccess();
-        else router.push("/login");
-      } else {
-        const errorData = await res.json().catch(() => ({}));
-        if (res.status === 404) {
-          if (onSuccess) onSuccess();
-          else router.push("/login");
-        } else {
-          setErrorMessage(errorData.message || "Incorrect or expired OTP. Please try again.");
-        }
-      }
-    } catch {
-      if (onSuccess) onSuccess();
-      else router.push("/login");
-    } finally {
-      setLoading(false);
-    }
-  };
-
-  const handleResend = () => {
-    if (!canResend) return;
-    setOtp("");
-    setCountdown(60);
-    handleSendOtp({ preventDefault: () => {} } as React.FormEvent);
-  };
 
   return (
     <div>
@@ -170,8 +107,7 @@ export default function IntakeForm({ onSuccess, compact = false }: IntakeFormPro
         </div>
       )}
 
-      {step === "details" ? (
-        <form onSubmit={handleSendOtp} style={{ display: "flex", flexDirection: "column", gap: "0.9rem" }}>
+        <form onSubmit={handleSubmit} style={{ display: "flex", flexDirection: "column", gap: "0.9rem" }}>
           {/* Full Name */}
           <div>
             <label className="form-label" htmlFor="intakeFullName" style={{ fontSize: "0.82rem", marginBottom: "0.3rem" }}>
@@ -295,7 +231,7 @@ export default function IntakeForm({ onSuccess, compact = false }: IntakeFormPro
               }}
             >
               {loading ? (
-                <span>Sending OTP...</span>
+                <span>Submitting...</span>
               ) : (
                 <>
                   <span>Start My Will</span>
@@ -308,119 +244,8 @@ export default function IntakeForm({ onSuccess, compact = false }: IntakeFormPro
             </button>
           </div>
         </form>
-      ) : (
-        /* STEP 2: OTP VERIFICATION */
-        <form onSubmit={handleVerifyOtp} style={{ display: "flex", flexDirection: "column", gap: "1rem" }}>
-          <div
-            style={{
-              padding: "0.75rem 0.85rem",
-              backgroundColor: "rgba(201, 162, 39, 0.08)",
-              border: "1px solid rgba(201, 162, 39, 0.25)",
-              borderRadius: "var(--radius-md)",
-              textAlign: "center",
-              fontSize: "0.85rem",
-              color: "var(--color-navy)",
-            }}
-          >
-            OTP sent to <strong>+91 {formData.phone}</strong>
-          </div>
 
-          <div>
-            <label
-              className="form-label"
-              htmlFor="intakeOtp"
-              style={{ textAlign: "center", display: "block", fontSize: "0.82rem", marginBottom: "0.4rem" }}
-            >
-              Enter 6-Digit OTP *
-            </label>
-            <input
-              id="intakeOtp"
-              type="text"
-              required
-              maxLength={6}
-              placeholder="• • • • • •"
-              value={otp}
-              onChange={(e) => setOtp(e.target.value.replace(/\D/g, ""))}
-              className="form-input"
-              style={{
-                textAlign: "center",
-                fontSize: "1.3rem",
-                letterSpacing: "0.25em",
-                fontWeight: 700,
-                padding: "0.65rem",
-              }}
-              autoFocus
-            />
-          </div>
-
-          <button
-            type="submit"
-            disabled={loading}
-            className="btn btn-gold"
-            style={{
-              width: "100%",
-              padding: "0.8rem",
-              fontSize: "0.92rem",
-              fontWeight: 700,
-              opacity: loading ? 0.7 : 1,
-            }}
-          >
-            {loading ? "Verifying..." : "Verify & Continue →"}
-          </button>
-
-          <div
-            style={{
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "space-between",
-              fontSize: "0.8rem",
-              paddingTop: "0.4rem",
-            }}
-          >
-            <button
-              type="button"
-              onClick={() => {
-                setStep("details");
-                setOtp("");
-              }}
-              style={{
-                background: "none",
-                border: "none",
-                color: "var(--color-slate)",
-                cursor: "pointer",
-                padding: 0,
-                fontSize: "0.8rem",
-              }}
-            >
-              ← Change number
-            </button>
-
-            <div>
-              {canResend ? (
-                <button
-                  type="button"
-                  onClick={handleResend}
-                  style={{
-                    background: "none",
-                    border: "none",
-                    color: "var(--color-navy)",
-                    fontWeight: 600,
-                    cursor: "pointer",
-                    padding: 0,
-                    fontSize: "0.8rem",
-                  }}
-                >
-                  Resend OTP
-                </button>
-              ) : (
-                <span style={{ color: "var(--text-muted)" }}>
-                  Resend in <strong>{countdown}s</strong>
-                </span>
-              )}
-            </div>
-          </div>
-        </form>
-      )}
+      <LeadNextStepModal lead={savedLead} onDismiss={() => setSavedLead(null)} />
 
       <style jsx>{`
         @media (max-width: 640px) {

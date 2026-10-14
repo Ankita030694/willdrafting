@@ -3,8 +3,10 @@
 import React, { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { ChevronDown, Menu, X } from "lucide-react";
+import { ChevronDown, Menu, X, LogIn } from "lucide-react";
 import { motion, AnimatePresence } from "motion/react";
+import { useSession } from "next-auth/react";
+import { OPEN_SIGNUP_EVENT } from "@/components/auth/SignupModalHost";
 
 interface NavItem {
   label: string;
@@ -21,8 +23,11 @@ const NAV_ITEMS: NavItem[] = [
 ];
 
 export default function Navbar() {
+  const { data: session, status } = useSession();
+  const isAuthenticated = status === "authenticated";
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [dropdownOpen, setDropdownOpen] = useState(false);
+  const openSignup = () => window.dispatchEvent(new Event(OPEN_SIGNUP_EVENT));
   const dropdownRef = useRef<HTMLDivElement>(null);
   const mobileMenuRef = useRef<HTMLDivElement>(null);
   const hamburgerBtnRef = useRef<HTMLButtonElement>(null);
@@ -175,20 +180,33 @@ export default function Navbar() {
             )}
           </div>
 
-          {/* Right: CTA Button on Desktop */}
-          <div className="hidden md:flex items-center justify-end min-w-[130px] pr-2 sm:pr-3">
-            <Link
-              href="/contact"
-              className="inline-flex items-center justify-center rounded-full bg-[#C65378] px-6 py-2.5 text-[14px] font-regular text-[#FFFFFF] transition-all duration-200 active:scale-95"
-              style={{
-                paddingLeft: "1.5rem",
-                paddingRight: "1.5rem",
-                paddingTop: "0.65rem",
-                paddingBottom: "0.65rem",
-              }}
-            >
-              Book a call
-            </Link>
+          {/* Right: Login & CTA Buttons on Desktop */}
+          <div className="hidden md:flex items-center justify-end gap-2.5 min-w-[200px] pr-2 sm:pr-3">
+            {isAuthenticated ? (
+              <Link
+                href="/start/dashboard"
+                className="inline-flex items-center justify-center rounded-full bg-[#C65378] px-5 py-2 text-[13.5px] font-medium text-[#FFFFFF] transition-all duration-200 active:scale-95 hover:bg-[#b04567]"
+              >
+                Dashboard
+              </Link>
+            ) : (
+              <>
+                <Link
+                  href="/login"
+                  className="inline-flex items-center justify-center gap-1.5 rounded-full border border-[#1c282e]/25 bg-white/60 px-4 py-2 text-[13.5px] font-semibold text-[#1c282e] hover:bg-white hover:border-[#1c282e]/50 transition-all duration-200"
+                >
+                  <LogIn size={14} />
+                  <span>Login</span>
+                </Link>
+                <button
+                  type="button"
+                  onClick={openSignup}
+                  className="inline-flex items-center justify-center rounded-full bg-[#C65378] px-5 py-2 text-[13.5px] font-medium text-[#FFFFFF] transition-all duration-200 active:scale-95 hover:bg-[#b04567] cursor-pointer"
+                >
+                  Start now
+                </button>
+              </>
+            )}
           </div>
 
           {/* Mobile Hamburger Button (Positioned on the Right) */}
@@ -303,15 +321,38 @@ export default function Navbar() {
                     duration: 0.22,
                     ease: "easeOut",
                   }}
-                  className="pt-3 border-t border-slate-100/80 mt-1"
+                  className="pt-3 border-t border-slate-100/80 mt-1 flex flex-col gap-2.5"
                 >
-                  <Link
-                    href="/contact"
-                    onClick={() => setMobileMenuOpen(false)}
-                    className="flex w-full items-center justify-center rounded-full bg-[#C65378] py-3 text-[14px] font-medium text-[#FFFFFF] shadow-[0_4px_12px_rgba(198,83,120,0.25)] transition-all active:scale-[0.98]"
-                  >
-                    Book a call
-                  </Link>
+                  {isAuthenticated ? (
+                    <Link
+                      href="/start/dashboard"
+                      onClick={() => setMobileMenuOpen(false)}
+                      className="flex w-full items-center justify-center rounded-full bg-[#C65378] py-2.5 text-[14px] font-medium text-[#FFFFFF] shadow-[0_4px_12px_rgba(198,83,120,0.25)] transition-all active:scale-[0.98]"
+                    >
+                      Dashboard
+                    </Link>
+                  ) : (
+                    <>
+                      <Link
+                        href="/login"
+                        onClick={() => setMobileMenuOpen(false)}
+                        className="flex w-full items-center justify-center gap-1.5 rounded-full border border-[#1c282e]/25 bg-slate-50 py-2.5 text-[14px] font-semibold text-[#1c282e] transition-all"
+                      >
+                        <LogIn size={15} />
+                        <span>Login</span>
+                      </Link>
+                      <button
+                        type="button"
+                        onClick={() => {
+                          setMobileMenuOpen(false);
+                          openSignup();
+                        }}
+                        className="flex w-full items-center justify-center rounded-full bg-[#C65378] py-2.5 text-[14px] font-medium text-[#FFFFFF] shadow-[0_4px_12px_rgba(198,83,120,0.25)] transition-all active:scale-[0.98] cursor-pointer"
+                      >
+                        Start now
+                      </button>
+                    </>
+                  )}
                 </motion.div>
               </div>
             </motion.div>

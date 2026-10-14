@@ -1,14 +1,17 @@
 "use client";
 
-import React from "react";
+import React, { useState, useMemo } from "react";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import {
   WillDraftingState,
   Asset,
+  FamilyMember,
   BeneficiaryAllocation,
   saveStoredWillState,
+  formatDDMMYYYY,
 } from "@/lib/willDraftingStore";
-import { getUrlForStep } from "@/lib/questionnaireFlow";
+import { getUrlForStep, QUESTIONNAIRE_STEPS } from "@/lib/questionnaireFlow";
 import FamilyTreeCanvas from "./FamilyTreeCanvas";
 import {
   Users,
@@ -18,6 +21,7 @@ import {
   ScrollText,
   HeartHandshake,
   ArrowRight,
+  ArrowUpDown,
   Check,
   AlertTriangle,
   Minus,
@@ -27,7 +31,6 @@ import {
   Heart,
   FileText,
   Edit3,
-  Eye,
   CreditCard,
   Building,
   Briefcase,
@@ -35,10 +38,21 @@ import {
   Gem,
   Cpu,
   BarChart3,
+  ExternalLink,
+  X,
+  Sparkles,
+  Maximize2,
+  CheckCircle2,
+  AlertCircle,
+  HelpCircle,
+  Phone,
+  Mail,
+  MapPin,
+  Calendar,
 } from "lucide-react";
 
 /* ═══════════════════════════════════════════════════════════════════
-   HELPERS
+   CURRENCY & CATEGORY HELPERS
    ═══════════════════════════════════════════════════════════════════ */
 
 function formatCurrencyINR(val: number): string {
@@ -47,25 +61,29 @@ function formatCurrencyINR(val: number): string {
   return `₹${val.toLocaleString("en-IN")}`;
 }
 
-const CATEGORY_LABELS: Record<string, { label: string; icon: React.ReactNode; color: string }> = {
-  property: { label: "Real Estate", icon: <Building size={15} />, color: "var(--color-navy)" },
-  bank_account: { label: "Bank & Deposits", icon: <CreditCard size={15} />, color: "var(--color-slate)" },
-  investments: { label: "Investments", icon: <BarChart3 size={15} />, color: "var(--color-gold)" },
-  shares: { label: "Shares & Equity", icon: <BarChart3 size={15} />, color: "#6366F1" },
-  mutual_funds: { label: "Mutual Funds", icon: <BarChart3 size={15} />, color: "#0EA5E9" },
-  jewellery: { label: "Jewellery & Gold", icon: <Gem size={15} />, color: "#E11D48" },
-  vehicles: { label: "Vehicles", icon: <Car size={15} />, color: "var(--color-sage)" },
-  business: { label: "Business", icon: <Briefcase size={15} />, color: "#D97706" },
-  insurance: { label: "Insurance", icon: <ShieldCheck size={15} />, color: "#059669" },
-  digital: { label: "Digital Assets", icon: <Cpu size={15} />, color: "#7C3AED" },
-  other: { label: "Other", icon: <FileText size={15} />, color: "#64748B" },
+const CATEGORY_META: Record<
+  string,
+  { label: string; icon: React.ReactNode; color: string; bg: string }
+> = {
+  property: { label: "Real Estate", icon: <Building size={13} />, color: "#172228", bg: "rgba(23, 34, 40, 0.06)" },
+  bank_account: { label: "Bank Accounts & FDs", icon: <CreditCard size={13} />, color: "#5F7E75", bg: "rgba(95, 126, 117, 0.12)" },
+  investments: { label: "Mutual Funds & SIPs", icon: <BarChart3 size={13} />, color: "#C65378", bg: "rgba(198, 83, 120, 0.1)" },
+  shares: { label: "Stocks & Shares", icon: <BarChart3 size={13} />, color: "#49585F", bg: "rgba(73, 88, 95, 0.1)" },
+  mutual_funds: { label: "Mutual Funds", icon: <BarChart3 size={13} />, color: "#5F7E75", bg: "rgba(95, 126, 117, 0.1)" },
+  jewellery: { label: "Gold & Jewellery", icon: <Gem size={13} />, color: "#C9A227", bg: "rgba(201, 162, 39, 0.12)" },
+  vehicles: { label: "Vehicles & Cars", icon: <Car size={13} />, color: "#49585F", bg: "rgba(23, 34, 40, 0.05)" },
+  business: { label: "Business Ownership", icon: <Briefcase size={13} />, color: "#172228", bg: "rgba(23, 34, 40, 0.08)" },
+  insurance: { label: "Life Insurance", icon: <ShieldCheck size={13} />, color: "#5F7E75", bg: "rgba(95, 126, 117, 0.12)" },
+  digital: { label: "Email & Social Accounts", icon: <Cpu size={13} />, color: "#C65378", bg: "rgba(198, 83, 120, 0.08)" },
+  other: { label: "Other Belongings", icon: <FileText size={13} />, color: "#49585F", bg: "rgba(73, 88, 95, 0.08)" },
 };
 
 /* ═══════════════════════════════════════════════════════════════════
-   SECTION COMPLETION STATUS
+   SECTION COMPLETION CALCULATION
    ═══════════════════════════════════════════════════════════════════ */
 
 interface SectionStatus {
+  key: string;
   label: string;
   status: "complete" | "partial" | "empty";
   stepUrl: string;
@@ -82,69 +100,37 @@ function getSectionStatuses(state: WillDraftingState): SectionStatus[] {
   const hasMinors = state.familyMembers.some((f) => f.isMinor);
   const hasWishes = Boolean(
     state.specialWishes?.funeralCeremonyWishes ||
-    state.specialWishes?.digitalAccounts ||
-    state.specialWishes?.jewelleryInstructions ||
-    state.specialWishes?.personalBelongings ||
-    state.specialWishes?.petsCare ||
-    state.specialWishes?.charitableGifts ||
-    state.specialWishes?.personalMessageToFamily ||
-    state.specialWishes?.hasNoSpecialWishes
+      state.specialWishes?.digitalAccounts ||
+      state.specialWishes?.jewelleryInstructions ||
+      state.specialWishes?.personalBelongings ||
+      state.specialWishes?.petsCare ||
+      state.specialWishes?.charitableGifts ||
+      state.specialWishes?.personalMessageToFamily ||
+      state.specialWishes?.hasNoSpecialWishes
   );
   const hasEmotional = Boolean(state.emotionalReason?.trim());
 
   return [
+    { key: "testator", label: "About You", status: hasTestator ? "complete" : "empty", stepUrl: getUrlForStep(2), stepNum: 2 },
+    { key: "family", label: "Your Family", status: hasFamily ? "complete" : "empty", stepUrl: getUrlForStep(3), stepNum: 3 },
+    { key: "assets", label: "Properties & Wealth", status: hasAssets ? "complete" : "empty", stepUrl: getUrlForStep(4), stepNum: 4 },
     {
-      label: "Personal Information",
-      status: hasTestator ? "complete" : "empty",
-      stepUrl: getUrlForStep(2),
-      stepNum: 2,
-    },
-    {
-      label: "Family & People",
-      status: hasFamily ? "complete" : "empty",
-      stepUrl: getUrlForStep(3),
-      stepNum: 3,
-    },
-    {
-      label: "Assets & Wealth",
-      status: hasAssets ? "complete" : "empty",
-      stepUrl: getUrlForStep(4),
-      stepNum: 4,
-    },
-    {
-      label: "Asset Distribution",
-      status: hasAssets && hasAllocations
-        ? "complete"
-        : hasAssets && !hasAllocations
-        ? "partial"
-        : "empty",
+      key: "allocations",
+      label: "Who Gets What",
+      status: hasAssets && hasAllocations ? "complete" : hasAssets && !hasAllocations ? "partial" : "empty",
       stepUrl: getUrlForStep(5),
       stepNum: 5,
     },
+    { key: "executors", label: "Will Manager (Executor)", status: hasExecutor ? "complete" : "empty", stepUrl: getUrlForStep(6), stepNum: 6 },
     {
-      label: "Executors",
-      status: hasExecutor ? "complete" : "empty",
-      stepUrl: getUrlForStep(6),
-      stepNum: 6,
-    },
-    {
-      label: "Guardians",
+      key: "guardians",
+      label: "Guardian for Children",
       status: !hasMinors ? "complete" : hasGuardian ? "complete" : "empty",
       stepUrl: getUrlForStep(7),
       stepNum: 7,
     },
-    {
-      label: "Special Wishes",
-      status: hasWishes ? "complete" : "empty",
-      stepUrl: getUrlForStep(8),
-      stepNum: 8,
-    },
-    {
-      label: "Emotional Purpose",
-      status: hasEmotional ? "complete" : "empty",
-      stepUrl: getUrlForStep(9),
-      stepNum: 9,
-    },
+    { key: "wishes", label: "Special Wishes & Notes", status: hasWishes ? "complete" : "empty", stepUrl: getUrlForStep(8), stepNum: 8 },
+    { key: "emotional", label: "Why You Made This Will", status: hasEmotional ? "complete" : "empty", stepUrl: getUrlForStep(9), stepNum: 9 },
   ];
 }
 
@@ -153,115 +139,78 @@ function getNextIncompleteStep(state: WillDraftingState): number {
   for (const s of sections) {
     if (s.status !== "complete") return s.stepNum;
   }
-  return 10; // All done → review
+  return 10;
 }
 
 /* ═══════════════════════════════════════════════════════════════════
-   CARD WRAPPER
+   GAUGE COMPONENT (Like Image 2 / Image 3)
    ═══════════════════════════════════════════════════════════════════ */
 
-function SectionCard({
-  children,
-  style,
-}: {
-  children: React.ReactNode;
-  style?: React.CSSProperties;
-}) {
+function SemiCircleGauge({ percent }: { percent: number }) {
+  const radius = 38;
+  const circumference = Math.PI * radius;
+  const strokeDashoffset = circumference - (percent / 100) * circumference;
+
   return (
-    <div
-      style={{
-        backgroundColor: "#FFFFFF",
-        borderRadius: "20px",
-        border: "1px solid var(--border-card)",
-        boxShadow: "0 4px 16px rgba(23, 34, 40, 0.04)",
-        overflow: "hidden",
-        ...style,
-      }}
-    >
-      {children}
+    <div style={{ position: "relative", width: "105px", height: "56px", margin: "0 auto" }}>
+      <svg width="105" height="56" viewBox="0 0 105 56" style={{ overflow: "visible" }}>
+        <path
+          d="M 14 52 A 38 38 0 0 1 91 52"
+          fill="none"
+          stroke="rgba(23, 34, 40, 0.08)"
+          strokeWidth="9"
+          strokeLinecap="round"
+        />
+        <path
+          d="M 14 52 A 38 38 0 0 1 91 52"
+          fill="none"
+          stroke="url(#bentoGaugeGrad)"
+          strokeWidth="9"
+          strokeLinecap="round"
+          strokeDasharray={circumference}
+          strokeDashoffset={strokeDashoffset}
+          style={{ transition: "stroke-dashoffset 0.8s ease" }}
+        />
+        <defs>
+          <linearGradient id="bentoGaugeGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stopColor="#C65378" />
+            <stop offset="100%" stopColor="#5F7E75" />
+          </linearGradient>
+        </defs>
+      </svg>
+      <div
+        style={{
+          position: "absolute",
+          bottom: "2px",
+          left: 0,
+          right: 0,
+          textAlign: "center",
+          fontWeight: 800,
+          fontSize: "1.15rem",
+          color: "#172228",
+          lineHeight: 1,
+        }}
+      >
+        {percent}%
+      </div>
     </div>
   );
 }
 
-function SectionHeader({
-  title,
-  editLabel,
-  editUrl,
-  icon,
-  count,
-}: {
-  title: string;
-  editLabel?: string;
-  editUrl?: string;
-  icon?: React.ReactNode;
-  count?: string;
-}) {
-  return (
-    <div
-      style={{
-        display: "flex",
-        justifyContent: "space-between",
-        alignItems: "center",
-        padding: "1.25rem 1.5rem",
-        borderBottom: "1px solid var(--border-subtle)",
-        flexWrap: "wrap",
-        gap: "0.75rem",
-      }}
-    >
-      <div style={{ display: "flex", alignItems: "center", gap: "0.65rem" }}>
-        {icon && (
-          <span style={{ color: "var(--color-gold)", display: "flex" }}>{icon}</span>
-        )}
-        <h3
-          style={{
-            margin: 0,
-            fontSize: "1.05rem",
-            fontWeight: 700,
-            color: "var(--color-navy)",
-          }}
-        >
-          {title}
-        </h3>
-        {count && (
-          <span
-            style={{
-              fontSize: "0.72rem",
-              fontWeight: 700,
-              padding: "0.15rem 0.55rem",
-              borderRadius: "999px",
-              backgroundColor: "rgba(198, 83, 120, 0.1)",
-              color: "var(--color-gold)",
-            }}
-          >
-            {count}
-          </span>
-        )}
-      </div>
-      {editUrl && (
-        <Link
-          href={editUrl}
-          style={{
-            fontSize: "0.8rem",
-            fontWeight: 600,
-            color: "var(--color-gold)",
-            textDecoration: "none",
-            display: "inline-flex",
-            alignItems: "center",
-            gap: "0.3rem",
-            padding: "0.3rem 0.75rem",
-            borderRadius: "8px",
-            border: "1px solid rgba(198, 83, 120, 0.2)",
-            backgroundColor: "rgba(198, 83, 120, 0.06)",
-            transition: "var(--transition)",
-          }}
-        >
-          <Edit3 size={13} />
-          {editLabel || "Edit"}
-        </Link>
-      )}
-    </div>
-  );
-}
+/* ═══════════════════════════════════════════════════════════════════
+   MODAL TYPES
+   ═══════════════════════════════════════════════════════════════════ */
+
+type ModalKey =
+  | "testator"
+  | "assets"
+  | "family"
+  | "allocations"
+  | "appointments"
+  | "wishes"
+  | "emotional"
+  | "readiness"
+  | null;
 
 /* ═══════════════════════════════════════════════════════════════════
    MAIN COMPONENT
@@ -276,7 +225,13 @@ export default function WillOverviewDashboard({
   state,
   onStateChange,
 }: WillOverviewDashboardProps) {
-  const sections = getSectionStatuses(state);
+  const router = useRouter();
+  const [activeModal, setActiveModal] = useState<ModalKey>(null);
+  const [familyTab, setFamilyTab] = useState<"list" | "tree">("list");
+  const [assetViewMode, setAssetViewMode] = useState<"detailed" | "summary">("detailed");
+
+  // Calculations
+  const sections = useMemo(() => getSectionStatuses(state), [state]);
   const completedSections = sections.filter((s) => s.status === "complete").length;
   const totalSections = sections.length;
   const progressPercent = Math.round((completedSections / totalSections) * 100);
@@ -287,1259 +242,1546 @@ export default function WillOverviewDashboard({
   const assets = state.assets || [];
   const allocations = state.allocations || [];
 
-  const totalAssetValue = assets.reduce((sum, a) => sum + (a.approximateValue || 0), 0);
-  const beneficiaryNames = [...new Set(allocations.map((a) => a.beneficiaryName))];
+  const totalAssetValue = useMemo(
+    () => assets.reduce((sum, a) => sum + (a.approximateValue || 0), 0),
+    [assets]
+  );
 
-  // Group assets by category for value summary
-  const categoryTotals: Record<string, number> = {};
-  assets.forEach((a) => {
-    const key = a.category || "other";
-    categoryTotals[key] = (categoryTotals[key] || 0) + (a.approximateValue || 0);
+  const beneficiaryNames = useMemo(
+    () => [...new Set(allocations.map((a) => a.beneficiaryName))],
+    [allocations]
+  );
+
+  const categoryTotals = useMemo(() => {
+    const totals: Record<string, number> = {};
+    assets.forEach((a) => {
+      const key = a.category || "other";
+      totals[key] = (totals[key] || 0) + (a.approximateValue || 0);
+    });
+    return Object.entries(totals).sort((a, b) => b[1] - a[1]);
+  }, [assets]);
+
+  const minorChildren = family.filter((f) => f.isMinor);
+  const hasMinors = minorChildren.length > 0;
+
+  // 4 Core Category Aggregations for 2-Column Grid in Estate Card
+  const propertyAssets = useMemo(() => assets.filter((a) => a.category === "property"), [assets]);
+  const propertyTotal = useMemo(() => propertyAssets.reduce((sum, a) => sum + (a.approximateValue || 0), 0), [propertyAssets]);
+
+  const bankAssets = useMemo(() => assets.filter((a) => a.category === "bank_account"), [assets]);
+  const bankTotal = useMemo(() => bankAssets.reduce((sum, a) => sum + (a.approximateValue || 0), 0), [bankAssets]);
+
+  const investmentAssets = useMemo(
+    () => assets.filter((a) => a.category === "investments" || a.category === "shares" || a.category === "mutual_funds"),
+    [assets]
+  );
+  const investmentTotal = useMemo(() => investmentAssets.reduce((sum, a) => sum + (a.approximateValue || 0), 0), [investmentAssets]);
+
+  const otherAssets = useMemo(
+    () => assets.filter((a) => a.category !== "property" && a.category !== "bank_account" && a.category !== "investments" && a.category !== "shares" && a.category !== "mutual_funds"),
+    [assets]
+  );
+  const otherTotal = useMemo(() => otherAssets.reduce((sum, a) => sum + (a.approximateValue || 0), 0), [otherAssets]);
+
+  // Group assets by category for the columns (Real Estate & Life Insurance prioritized as requested)
+  const CATEGORY_PRIORITY: Record<string, number> = {
+    insurance: 1,
+    property: 2,
+    bank_account: 3,
+    investments: 4,
+    shares: 5,
+    mutual_funds: 6,
+    business: 7,
+    jewellery: 8,
+    vehicles: 9,
+    digital: 10,
+    other: 11,
+  };
+
+  const assetsByCategory = useMemo(() => {
+    const groups: Record<
+      string,
+      { meta: (typeof CATEGORY_META)[string]; items: Asset[]; total: number }
+    > = {};
+
+    assets.forEach((a) => {
+      const catKey = a.category || "other";
+      if (!groups[catKey]) {
+        groups[catKey] = {
+          meta: CATEGORY_META[catKey] || CATEGORY_META.other,
+          items: [],
+          total: 0,
+        };
+      }
+      groups[catKey].items.push(a);
+      groups[catKey].total += a.approximateValue || 0;
+    });
+
+    return Object.entries(groups).sort((a, b) => {
+      const pA = CATEGORY_PRIORITY[a[0]] ?? 99;
+      const pB = CATEGORY_PRIORITY[b[0]] ?? 99;
+      return pA - pB;
+    });
+  }, [assets]);
+
+  // Allocation completeness check
+  const unallocatedAssets = assets.filter((asset) => {
+    const assetAllocs = allocations.filter((al) => al.assetId === asset.id);
+    const sum = assetAllocs.reduce((acc, curr) => acc + (curr.percentage || 0), 0);
+    return sum < 99.5 || sum > 100.5;
   });
-  const sortedCategories = Object.entries(categoryTotals).sort((a, b) => b[1] - a[1]);
 
-  // Allocation completeness per asset
-  const getAssetAllocationTotal = (assetId: string): number => {
-    return allocations
-      .filter((a) => a.assetId === assetId)
-      .reduce((sum, a) => sum + (a.percentage || 0), 0);
-  };
+  // Testator formatted legal metadata
+  const testatorAge = useMemo(() => {
+    if (!state.testator.dob) return null;
+    const birth = new Date(state.testator.dob);
+    if (isNaN(birth.getTime())) return null;
+    const now = new Date();
+    let age = now.getFullYear() - birth.getFullYear();
+    const m = now.getMonth() - birth.getMonth();
+    if (m < 0 || (m === 0 && now.getDate() < birth.getDate())) {
+      age--;
+    }
+    return age;
+  }, [state.testator.dob]);
 
-  const handleFamilyStateChange = (newState: WillDraftingState) => {
-    saveStoredWillState(newState);
-    onStateChange(newState);
-  };
+  const testatorDobFormatted = useMemo(() => {
+    if (!state.testator.dob) return null;
+    return formatDDMMYYYY(state.testator.dob);
+  }, [state.testator.dob]);
+
+  const personalLawFormatted = useMemo(() => {
+    const raw = (state.testator.religionPersonalLaw || "").trim().toLowerCase();
+    if (!raw || raw === "hindu") return "Indian Succession Act, 1925";
+    if (raw === "muslim") return "Muslim Personal Law (Shariat)";
+    if (raw === "christian") return "Indian Succession Act, 1925";
+    if (raw === "parsi") return "Indian Succession Act (Parsi)";
+    return raw.replace(/_/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
+  }, [state.testator.religionPersonalLaw]);
+
+  const workplaceConcise = useMemo(() => {
+    const wp = state.testator.workplace;
+    if (!wp) return "Not Provided";
+    const parts = wp.split(",");
+    return parts.slice(0, 2).join(",").trim();
+  }, [state.testator.workplace]);
+
+  const domicileConcise = useMemo(() => {
+    const t = state.testator;
+    if (!t.city && !t.state && !t.pincode) return "Not Provided";
+    return `${t.city || ""}${t.state ? `, ${t.state}` : ""}${t.pincode ? ` (${t.pincode})` : ""}`.replace(/^,\s*/, "");
+  }, [state.testator]);
+
+  const closeModal = () => setActiveModal(null);
 
   return (
-    <div
-      style={{
-        display: "flex",
-        flexDirection: "column",
-        gap: "1.75rem",
-        maxWidth: "1100px",
-        margin: "0 auto",
-        padding: "0 1rem",
-        width: "100%",
-      }}
-    >
-      {/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-          1. HEADER — Title + Progress + Continue CTA
-         ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */}
-      <SectionCard>
-        <div style={{ padding: "2rem 2rem 1.75rem" }}>
-          <div
-            style={{
-              display: "flex",
-              justifyContent: "space-between",
-              alignItems: "flex-start",
-              flexWrap: "wrap",
-              gap: "1.25rem",
-              marginBottom: "1.5rem",
-            }}
-          >
-            <div>
-              <h1
+    <div className="bento-dashboard-root">
+      {/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+          BENTO GRID CANVAS (Non-scrollable, fits 100vh on desktop)
+         ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */}
+      <div className="bento-canvas-grid">
+        {/* ── CARD 1: ABOUT YOU (WILL CREATOR & JURISDICTION) ───────────────── */}
+        <div className="bento-card bento-card-testator">
+          <div className="bento-card-header">
+            <div className="bento-card-title-group">
+              <span className="bento-icon-badge" style={{ backgroundColor: "rgba(198, 83, 120, 0.1)", color: "#C65378" }}>
+                <User size={15} />
+              </span>
+              <div>
+                <h3 className="bento-card-title">About You</h3>
+                <span className="bento-card-subtitle">Will Creator & Jurisdiction</span>
+              </div>
+            </div>
+            <span className="bento-pill bento-pill-blue" title="Statutory Governing Code">
+              <Scale size={11} style={{ marginRight: "3px" }} />
+              {personalLawFormatted}
+            </span>
+          </div>
+
+          <div className="bento-card-body" style={{ gap: "0.4rem" }}>
+            {/* Identity Bar with Rich Demographics & Parentage */}
+            <div className="bento-testator-main">
+              <div
+                className="bento-avatar"
                 style={{
-                  fontSize: "1.65rem",
-                  fontWeight: 800,
-                  color: "var(--color-navy)",
-                  margin: 0,
-                  letterSpacing: "-0.02em",
+                  background: "linear-gradient(135deg, #172228 0%, #2F3E46 100%)",
+                  boxShadow: "0 2px 6px rgba(23,34,40,0.15)",
                 }}
               >
-                My Will Overview
-              </h1>
-              <p
-                style={{
-                  margin: "0.35rem 0 0",
-                  fontSize: "0.9rem",
-                  color: "var(--text-muted)",
-                  maxWidth: "480px",
-                }}
-              >
-                A summary of everything you've entered for your Will. Review your information and continue where you left off.
-              </p>
+                {(state.testator.fullName || "TM")
+                  .split(" ")
+                  .map((n) => n[0])
+                  .filter(Boolean)
+                  .slice(0, 2)
+                  .join("")
+                  .toUpperCase()}
+              </div>
+              <div style={{ minWidth: 0, flex: 1 }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "0.35rem" }}>
+                  <h4 className="bento-testator-name" title={state.testator.fullName || "Not Specified"}>
+                    {state.testator.fullName || "Click to add your name"}
+                  </h4>
+                  <span title="Testator Identity & Age of Majority Verified" style={{ display: "inline-flex", alignItems: "center" }}>
+                    <CheckCircle2 size={13} style={{ color: "#2E7D32" }} />
+                  </span>
+                </div>
+                <p className="bento-testator-meta">
+                  <span>{testatorAge ? `${testatorAge} Yrs` : "Adult"}{testatorDobFormatted ? ` (${testatorDobFormatted})` : ""}</span>
+                  <span style={{ opacity: 0.4 }}>•</span>
+                  <span style={{ textTransform: "capitalize" }}>{state.testator.gender || "Male"}</span>
+                  <span style={{ opacity: 0.4 }}>•</span>
+                  <span style={{ textTransform: "capitalize" }}>{state.testator.maritalStatus || "Married"}</span>
+                  <span style={{ opacity: 0.4 }}>•</span>
+                  <span>{state.testator.citizenship || "Indian Citizen"}</span>
+                </p>
+                {state.testator.fatherOrMotherName && (
+                  <p className="bento-testator-parentage" title={`Statutory Parentage: ${state.testator.fatherOrMotherName}`}>
+                    {state.testator.gender === "female" ? "D/o" : "S/o"} {state.testator.fatherOrMotherName}
+                  </p>
+                )}
+              </div>
             </div>
 
-            <Link
-              href={nextStepUrl}
-              className="btn btn-gold"
-              style={{
-                padding: "0.7rem 1.5rem",
-                fontSize: "0.875rem",
-                borderRadius: "12px",
-                fontWeight: 700,
-                textDecoration: "none",
-                display: "inline-flex",
-                alignItems: "center",
-                gap: "0.5rem",
-                boxShadow: "var(--shadow-gold)",
-                flexShrink: 0,
-              }}
-            >
-              Continue Questionnaire
-              <ArrowRight size={16} />
+            {/* 6-Item Dense Data Matrix: Concise, Structured & High-Value */}
+            <div className="bento-testator-grid">
+              {/* 1. PAN Card */}
+              <div className="bento-info-tile" title={`Permanent Account Number: ${state.testator.pan || "Not Provided"}`}>
+                <span className="bento-tile-label"><ShieldCheck size={11} style={{ color: "#2E7D32" }} /> PAN Card:</span>
+                <span className="bento-tile-value" style={{ fontFamily: "monospace", letterSpacing: "0.04em" }}>
+                  {state.testator.pan || "Not Provided"}
+                </span>
+              </div>
+
+              {/* 2. Aadhaar UID */}
+              <div className="bento-info-tile" title={`Govt Verified Aadhaar: ${state.testator.aadhaar || "Not Provided"}`}>
+                <span className="bento-tile-label"><CreditCard size={11} style={{ color: "#1976D2" }} /> Aadhaar UID:</span>
+                <span className="bento-tile-value">
+                  {state.testator.aadhaar || "Not Provided"}
+                </span>
+              </div>
+
+              {/* 3. Workplace / Institution */}
+              <div className="bento-info-tile" title={state.testator.workplace || "Not Provided"}>
+                <span className="bento-tile-label"><Building size={11} style={{ color: "#6A1B9A" }} /> Workplace:</span>
+                <span className="bento-tile-value">
+                  {workplaceConcise}
+                </span>
+              </div>
+
+              {/* 4. Domicile / Residence */}
+              <div className="bento-info-tile" title={`${state.testator.address || ""}, ${state.testator.city || ""} - ${state.testator.pincode || ""}`}>
+                <span className="bento-tile-label"><MapPin size={11} style={{ color: "#D84315" }} /> Domicile:</span>
+                <span className="bento-tile-value">
+                  {domicileConcise}
+                </span>
+              </div>
+
+              {/* 5. Contact Email */}
+              <div className="bento-info-tile" title={`Official Email: ${state.testator.email || "Not Provided"}`}>
+                <span className="bento-tile-label"><Mail size={11} style={{ color: "#00838F" }} /> Contact:</span>
+                <span className="bento-tile-value" style={{ textOverflow: "ellipsis", overflow: "hidden", whiteSpace: "nowrap" }}>
+                  {state.testator.email || "Not Provided"}
+                </span>
+              </div>
+
+              {/* 6. Will Status */}
+              <div className="bento-info-tile" title={state.testator.hasPreviousWill ? "Revokes Earlier Will" : "First & Original Will"}>
+                <span className="bento-tile-label"><ScrollText size={11} style={{ color: "#C65378" }} /> Will Status:</span>
+                <span className="bento-tile-value">
+                  {state.testator.hasPreviousWill ? "Replaces Earlier Will" : "First & Original Will"}
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div className="bento-card-footer">
+            <button type="button" className="bento-btn-secondary" onClick={() => setActiveModal("testator")}>
+              View Details
+            </button>
+            <Link href={getUrlForStep(2)} className="bento-btn-edit">
+              <Edit3 size={11} /> Step 2 ↗
             </Link>
           </div>
+        </div>
 
-          {/* Progress Bar */}
-          <div>
-            <div
-              style={{
-                display: "flex",
-                justifyContent: "space-between",
-                alignItems: "center",
-                marginBottom: "0.5rem",
-              }}
-            >
-              <span
-                style={{
-                  fontSize: "0.82rem",
-                  fontWeight: 700,
-                  color: "var(--color-navy)",
-                }}
-              >
-                Your Will Progress
+        {/* ── CARD 2: PROPERTIES & WEALTH (BY ASSET / BY CATEGORY TOGGLE) ── */}
+        <div className="bento-card bento-card-assets">
+          <div className="bento-card-header">
+            <div className="bento-card-title-group">
+              <span className="bento-icon-badge" style={{ backgroundColor: "rgba(95, 126, 117, 0.12)", color: "#5F7E75" }}>
+                <Landmark size={15} />
               </span>
-              <span
-                style={{
-                  fontSize: "0.82rem",
-                  fontWeight: 800,
-                  color: "var(--color-gold)",
-                }}
-              >
-                {completedSections} of {totalSections} sections completed
-              </span>
+              <div>
+                <h3 className="bento-card-title">Properties & Wealth</h3>
+                <span className="bento-card-subtitle">
+                  {assets.length} Assets in {assetsByCategory.length} Categories
+                </span>
+              </div>
             </div>
-            <div
-              style={{
-                height: "8px",
-                backgroundColor: "rgba(23, 34, 40, 0.08)",
-                borderRadius: "999px",
-                overflow: "hidden",
-              }}
-            >
-              <div
-                style={{
-                  width: `${progressPercent}%`,
-                  height: "100%",
-                  background:
-                    progressPercent === 100
-                      ? "linear-gradient(90deg, var(--color-sage), #7C9473)"
-                      : "linear-gradient(90deg, var(--color-gold), #E06D92)",
-                  borderRadius: "999px",
-                  transition: "width 0.5s cubic-bezier(0.16, 1, 0.3, 1)",
-                }}
-              />
+            <div style={{ display: "flex", alignItems: "center", gap: "0.6rem" }}>
+              <div className="bento-view-toggle">
+                <button
+                  type="button"
+                  className={`bento-view-toggle-btn ${assetViewMode === "detailed" ? "active" : ""}`}
+                  onClick={() => setAssetViewMode("detailed")}
+                >
+                  By Asset
+                </button>
+                <button
+                  type="button"
+                  className={`bento-view-toggle-btn ${assetViewMode === "summary" ? "active" : ""}`}
+                  onClick={() => setAssetViewMode("summary")}
+                >
+                  By Category
+                </button>
+              </div>
+              <strong style={{ fontSize: "1.05rem", fontWeight: 800, color: "#172228" }}>
+                {formatCurrencyINR(totalAssetValue)}
+              </strong>
             </div>
-            <div
-              style={{
-                fontSize: "0.75rem",
-                color: "var(--text-muted)",
-                marginTop: "0.4rem",
-              }}
-            >
-              {progressPercent}% complete
+          </div>
+
+          <div className="bento-card-body" style={{ gap: "0.35rem" }}>
+            {/* Proportion Bar */}
+            <div className="bento-stacked-bar" style={{ height: "5px", margin: "0.05rem 0 0.2rem" }}>
+              {categoryTotals.length > 0 ? (
+                categoryTotals.map(([cat, val]) => {
+                  const pct = Math.max(3, Math.round((val / (totalAssetValue || 1)) * 100));
+                  const meta = CATEGORY_META[cat] || CATEGORY_META.other;
+                  return (
+                    <div
+                      key={cat}
+                      className="bento-stacked-segment"
+                      style={{ width: `${pct}%`, backgroundColor: meta.color }}
+                      title={`${meta.label}: ${formatCurrencyINR(val)} (${pct}%)`}
+                    />
+                  );
+                })
+              ) : (
+                <div style={{ width: "100%", height: "100%", backgroundColor: "rgba(23, 34, 40, 0.08)" }} />
+              )}
             </div>
+
+            {/* Vertically Scrollable Asset Table: By Asset or By Category */}
+            <div className="bento-assets-table-container">
+              {assetViewMode === "detailed" ? (
+                <table className="bento-assets-table">
+                  <thead>
+                    <tr>
+                      <th style={{ width: "24%" }}>Category</th>
+                      <th style={{ width: "34%" }}>Asset / Description</th>
+                      <th style={{ width: "24%" }}>Identifier / Location</th>
+                      <th style={{ width: "18%", textAlign: "right" }}>Value</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {assetsByCategory.length > 0 ? (
+                      assetsByCategory.map(([catKey, group]) =>
+                        group.items.map((asset, index) => {
+                          const isFirstInGroup = index === 0;
+                          const isLastInGroup = index === group.items.length - 1;
+                          const ident = asset.identifier || asset.addressOrInstitution || "—";
+                          const isJoint = asset.ownership === "joint";
+
+                          return (
+                            <tr
+                              key={asset.id}
+                              className="bento-table-item-row"
+                              style={{
+                                borderBottom: isLastInGroup ? "2px solid rgba(23, 34, 40, 0.08)" : "1px solid rgba(23, 34, 40, 0.04)",
+                              }}
+                            >
+                              {isFirstInGroup && (
+                                <td
+                                  rowSpan={group.items.length}
+                                  className="bento-table-cat-cell"
+                                >
+                                  <div className="bento-table-cat-box">
+                                    <span className="bento-table-cat-title">
+                                      <span
+                                        className="bento-icon-badge"
+                                        style={{
+                                          backgroundColor: group.meta.bg,
+                                          color: group.meta.color,
+                                          width: "18px",
+                                          height: "18px",
+                                          padding: "2px",
+                                        }}
+                                      >
+                                        {group.meta.icon}
+                                      </span>
+                                      {group.meta.label}
+                                    </span>
+                                    <div className="bento-table-cat-meta">
+                                      <span style={{ fontSize: "0.58rem", color: "#49585F" }}>
+                                        {group.items.length} {group.items.length === 1 ? "Asset" : "Assets"}
+                                      </span>
+                                    </div>
+                                    <span className="bento-table-cat-total">
+                                      {formatCurrencyINR(group.total)}
+                                    </span>
+                                  </div>
+                                </td>
+                              )}
+                              <td>
+                                <span className="bento-table-asset-name" title={asset.name}>
+                                  {asset.name}
+                                </span>
+                                {asset.typeDetails && (
+                                  <span className="bento-table-asset-sub">{asset.typeDetails}</span>
+                                )}
+                              </td>
+                              <td>
+                                <span className="bento-table-asset-ident" title={ident}>
+                                  {ident}
+                                </span>
+                                {isJoint && (
+                                  <span
+                                    style={{
+                                      fontSize: "0.52rem",
+                                      color: "#9E7408",
+                                      fontWeight: 600,
+                                      marginTop: "0.1rem",
+                                      display: "block",
+                                    }}
+                                  >
+                                    Joint ({asset.ownershipPercentage || 50}%)
+                                  </span>
+                                )}
+                              </td>
+                              <td style={{ textAlign: "right" }}>
+                                <strong className="bento-table-asset-val">
+                                  {formatCurrencyINR(asset.approximateValue || 0)}
+                                </strong>
+                              </td>
+                            </tr>
+                          );
+                        })
+                      )
+                    ) : (
+                      <tr>
+                        <td colSpan={4} style={{ textAlign: "center", padding: "1rem", color: "#49585F" }}>
+                          No assets listed yet.
+                        </td>
+                      </tr>
+                    )}
+                  </tbody>
+                </table>
+              ) : (
+                <table className="bento-assets-table">
+                  <thead>
+                    <tr>
+                      <th style={{ width: "24%" }}>Category</th>
+                      <th style={{ width: "16%" }}>No. of Assets</th>
+                      <th style={{ width: "20%" }}>Total Value</th>
+                      <th style={{ width: "40%" }}>Assets Included</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {assetsByCategory.length > 0 ? (
+                      assetsByCategory.map(([catKey, group]) => (
+                        <tr key={catKey} className="bento-table-item-row">
+                          <td>
+                            <div style={{ display: "flex", alignItems: "center", gap: "0.4rem" }}>
+                              <span
+                                className="bento-icon-badge"
+                                style={{
+                                  backgroundColor: group.meta.bg,
+                                  color: group.meta.color,
+                                  width: "20px",
+                                  height: "20px",
+                                  padding: "2px",
+                                }}
+                              >
+                                {group.meta.icon}
+                              </span>
+                              <strong style={{ fontSize: "0.74rem", color: "#172228" }}>{group.meta.label}</strong>
+                            </div>
+                          </td>
+                          <td>
+                            <span style={{ fontSize: "0.62rem", color: "#49585F", fontWeight: 600 }}>
+                              {group.items.length} {group.items.length === 1 ? "Asset" : "Assets"}
+                            </span>
+                          </td>
+                          <td>
+                            <strong style={{ fontSize: "0.76rem", color: "#172228" }}>
+                              {formatCurrencyINR(group.total)}
+                            </strong>
+                          </td>
+                          <td>
+                            <div className="bento-summary-chips">
+                              {group.items.map((item) => (
+                                <span key={item.id} className="bento-summary-chip" title={`${item.name} • ${formatCurrencyINR(item.approximateValue || 0)}`}>
+                                  {item.name.length > 18 ? `${item.name.slice(0, 18)}…` : item.name}
+                                  <strong>({formatCurrencyINR(item.approximateValue || 0)})</strong>
+                                </span>
+                              ))}
+                            </div>
+                          </td>
+                        </tr>
+                      ))
+                    ) : (
+                      <tr>
+                        <td colSpan={4} style={{ textAlign: "center", padding: "1rem", color: "#49585F" }}>
+                          No categories or assets listed yet.
+                        </td>
+                      </tr>
+                    )}
+                  </tbody>
+                </table>
+              )}
+            </div>
+          </div>
+
+          <div className="bento-card-footer">
+            <button type="button" className="bento-btn-secondary" onClick={() => setActiveModal("assets")}>
+              View All Items ({assets.length})
+            </button>
+            <Link href={getUrlForStep(4)} className="bento-btn-edit">
+              <Edit3 size={11} /> Step 4 ↗
+            </Link>
           </div>
         </div>
-      </SectionCard>
 
-      {/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-          2. SUMMARY METRIC CARDS
-         ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */}
-      <div
-        className="will-overview-summary-grid"
-        style={{
-          display: "grid",
-          gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))",
-          gap: "1rem",
-        }}
-      >
-        {/* People */}
-        <SectionCard>
-          <div style={{ padding: "1.25rem" }}>
-            <div
-              style={{
-                display: "flex",
-                alignItems: "center",
-                gap: "0.5rem",
-                marginBottom: "0.5rem",
-              }}
-            >
-              <Users size={16} color="var(--color-gold)" />
-              <span
-                style={{
-                  fontSize: "0.72rem",
-                  fontWeight: 700,
-                  textTransform: "uppercase",
-                  letterSpacing: "0.06em",
-                  color: "var(--text-muted)",
-                }}
-              >
-                People
+        {/* ── CARD 3: YOUR FAMILY (1 COLUMN WIDTH & SCROLLABLE IN MODAL) ── */}
+        <div className="bento-card bento-card-family">
+          <div className="bento-card-header">
+            <div className="bento-card-title-group">
+              <span className="bento-icon-badge" style={{ backgroundColor: "rgba(198, 83, 120, 0.1)", color: "#C65378" }}>
+                <Users size={15} />
               </span>
+              <div>
+                <h3 className="bento-card-title">Your Family</h3>
+                <span className="bento-card-subtitle">{family.length} Family Members</span>
+              </div>
             </div>
-            <div
-              style={{
-                fontSize: "1.6rem",
-                fontWeight: 800,
-                color: "var(--color-navy)",
-              }}
-            >
-              {family.length}
-            </div>
-            <div style={{ fontSize: "0.78rem", color: "var(--text-muted)" }}>
-              {family.length === 1 ? "family member" : "family members"} added
+            {hasMinors && (
+              <span className="bento-pill bento-pill-amber" title="Children under 18 need a guardian appointed">
+                <AlertTriangle size={11} /> {minorChildren.length} Minor
+              </span>
+            )}
+          </div>
+
+          <div className="bento-card-body" style={{ gap: "0.35rem", overflow: "hidden" }}>
+            {/* 1-Column List of Family Members with In-Box Scrolling */}
+            <div className="bento-family-1col-list">
+              {family.length > 0 ? (
+                family.map((member) => (
+                  <div key={member.id} className="bento-family-row">
+                    <div className="bento-family-row-left">
+                      <div className="bento-mini-avatar" style={{ flexShrink: 0 }}>
+                        {member.relationship === "spouse" ? (
+                          <Heart size={12} color="#C65378" />
+                        ) : member.isMinor ? (
+                          <Baby size={12} color="#C9A227" />
+                        ) : (
+                          <User size={12} color="#5F7E75" />
+                        )}
+                      </div>
+                      <div className="bento-family-row-meta">
+                        <span className="bento-family-row-name" title={member.name}>
+                          {member.name}
+                        </span>
+                        <span className="bento-family-row-role">
+                          {member.customRelationship || member.relationship}
+                        </span>
+                      </div>
+                    </div>
+                    {member.isMinor && (
+                      <span className="bento-pill bento-pill-amber" style={{ fontSize: "0.55rem", padding: "0.08rem 0.35rem" }}>
+                        Under 18
+                      </span>
+                    )}
+                  </div>
+                ))
+              ) : (
+                <div style={{ fontSize: "0.76rem", color: "#49585F", padding: "0.5rem" }}>
+                  No family members added yet.
+                </div>
+              )}
             </div>
           </div>
-        </SectionCard>
 
-        {/* Assets */}
-        <SectionCard>
-          <div style={{ padding: "1.25rem" }}>
+          <div className="bento-card-footer">
+            <button type="button" className="bento-btn-secondary" onClick={() => setActiveModal("family")}>
+              Family Tree & List
+            </button>
+            <Link href={getUrlForStep(3)} className="bento-btn-edit">
+              <Edit3 size={11} /> Step 3 ↗
+            </Link>
+          </div>
+        </div>
+
+        {/* ── CARD 4: WILL PROGRESS (UTILIZING 1 COLUMN SPACE) ─── */}
+        <div className="bento-card bento-card-gauge">
+          <div className="bento-card-header">
+            <div className="bento-card-title-group">
+              <span className="bento-icon-badge" style={{ backgroundColor: "rgba(198, 83, 120, 0.1)", color: "#C65378" }}>
+                <ShieldCheck size={15} />
+              </span>
+              <div>
+                <h3 className="bento-card-title">Will Progress</h3>
+                <span className="bento-card-subtitle">{completedSections} of {totalSections} Steps Done</span>
+              </div>
+            </div>
+            <span className="bento-pill bento-pill-gold">Step {nextStepNum}</span>
+          </div>
+
+          <div className="bento-card-body" style={{ gap: "0.5rem", justifyContent: "center" }}>
+            <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", gap: "0.6rem" }}>
+              <SemiCircleGauge percent={progressPercent} />
+              <div style={{ flex: 1, minWidth: 0, textAlign: "left" }}>
+                <strong style={{ fontSize: "0.82rem", color: "#172228", display: "block" }}>
+                  {progressPercent === 100 ? "Ready to Finalize" : "Draft in Progress"}
+                </strong>
+                <span style={{ fontSize: "0.68rem", color: "#49585F", display: "block", marginTop: "0.15rem", lineHeight: 1.35 }}>
+                  {progressPercent === 100
+                    ? "All required steps complete. Ready for download & signing."
+                    : `${totalSections - completedSections} more section(s) remaining.`}
+                </span>
+              </div>
+            </div>
+
+            {/* Clean Next Recommended Action Block */}
             <div
               style={{
+                backgroundColor: "#FAF7F0",
+                borderRadius: "10px",
+                padding: "0.45rem 0.65rem",
+                border: "1px solid rgba(23, 34, 40, 0.07)",
                 display: "flex",
                 alignItems: "center",
+                justifyContent: "space-between",
                 gap: "0.5rem",
-                marginBottom: "0.5rem",
               }}
             >
-              <Landmark size={16} color="var(--color-gold)" />
-              <span
-                style={{
-                  fontSize: "0.72rem",
-                  fontWeight: 700,
-                  textTransform: "uppercase",
-                  letterSpacing: "0.06em",
-                  color: "var(--text-muted)",
-                }}
-              >
-                Assets
+              <div style={{ minWidth: 0, flex: 1 }}>
+                <span style={{ fontSize: "0.58rem", color: "#7A8B94", display: "block", fontWeight: 600, textTransform: "uppercase" }}>
+                  Next Action
+                </span>
+                <span style={{ fontSize: "0.72rem", color: "#172228", fontWeight: 700, display: "block", textOverflow: "ellipsis", overflow: "hidden", whiteSpace: "nowrap" }}>
+                  Step {nextStepNum}: {sections.find((s) => s.stepNum === nextStepNum)?.label || "Continue Draft"}
+                </span>
+              </div>
+              <span className="bento-pill bento-pill-blue" style={{ fontSize: "0.58rem" }}>
+                Pending
               </span>
             </div>
-            <div
-              style={{
-                fontSize: "1.6rem",
-                fontWeight: 800,
-                color: "var(--color-navy)",
-              }}
-            >
-              {assets.length}
-            </div>
-            <div style={{ fontSize: "0.78rem", color: "var(--text-muted)" }}>
-              {assets.length === 1 ? "asset" : "assets"} registered
-            </div>
           </div>
-        </SectionCard>
 
-        {/* Beneficiaries */}
-        {beneficiaryNames.length > 0 && (
-          <SectionCard>
-            <div style={{ padding: "1.25rem" }}>
-              <div
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  gap: "0.5rem",
-                  marginBottom: "0.5rem",
-                }}
-              >
-                <Heart size={16} color="var(--color-gold)" />
-                <span
-                  style={{
-                    fontSize: "0.72rem",
-                    fontWeight: 700,
-                    textTransform: "uppercase",
-                    letterSpacing: "0.06em",
-                    color: "var(--text-muted)",
-                  }}
-                >
-                  Beneficiaries
-                </span>
-              </div>
-              <div
-                style={{
-                  fontSize: "1.6rem",
-                  fontWeight: 800,
-                  color: "var(--color-navy)",
-                }}
-              >
-                {beneficiaryNames.length}
-              </div>
-              <div style={{ fontSize: "0.78rem", color: "var(--text-muted)" }}>
-                receiving allocations
+          <div className="bento-card-footer" style={{ gap: "0.4rem" }}>
+            <button type="button" className="bento-btn-secondary" onClick={() => setActiveModal("readiness")}>
+              Checklist
+            </button>
+            <Link href={nextStepUrl} className="bento-btn-primary">
+              Continue <ArrowRight size={13} />
+            </Link>
+          </div>
+        </div>
+
+        {/* ── CARD 5: WHO GETS WHAT (SHARING YOUR WEALTH) ─────── */}
+        <div className="bento-card bento-card-allocations">
+          <div className="bento-card-header">
+            <div className="bento-card-title-group">
+              <span className="bento-icon-badge" style={{ backgroundColor: "rgba(95, 126, 117, 0.12)", color: "#5F7E75" }}>
+                <Scale size={15} />
+              </span>
+              <div>
+                <h3 className="bento-card-title">Who Gets What</h3>
+                <span className="bento-card-subtitle">{beneficiaryNames.length} Beneficiaries Named</span>
               </div>
             </div>
-          </SectionCard>
-        )}
-
-        {/* Estimated Estate Value */}
-        {totalAssetValue > 0 && (
-          <SectionCard>
-            <div style={{ padding: "1.25rem" }}>
-              <div
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  gap: "0.5rem",
-                  marginBottom: "0.5rem",
-                }}
-              >
-                <BarChart3 size={16} color="var(--color-gold)" />
-                <span
-                  style={{
-                    fontSize: "0.72rem",
-                    fontWeight: 700,
-                    textTransform: "uppercase",
-                    letterSpacing: "0.06em",
-                    color: "var(--text-muted)",
-                  }}
-                >
-                  Estimated Estate
-                </span>
-              </div>
-              <div
-                style={{
-                  fontSize: "1.6rem",
-                  fontWeight: 800,
-                  color: "var(--color-navy)",
-                }}
-              >
-                {formatCurrencyINR(totalAssetValue)}
-              </div>
-              <div style={{ fontSize: "0.78rem", color: "var(--text-muted)" }}>
-                total declared value
-              </div>
-            </div>
-          </SectionCard>
-        )}
-      </div>
-
-      {/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-          3. FAMILY TREE (EXISTING COMPONENT)
-         ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */}
-      <FamilyTreeCanvas state={state} onStateChange={handleFamilyStateChange} />
-
-      {/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-          4. PEOPLE & ROLES
-         ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */}
-      <SectionCard>
-        <SectionHeader
-          title="People & Roles"
-          icon={<Users size={18} />}
-          editUrl={getUrlForStep(3)}
-          editLabel="Edit Family"
-        />
-        <div style={{ padding: "1.25rem 1.5rem" }}>
-          {/* Testator row */}
-          {state.testator?.fullName && (
-            <div style={{ marginBottom: "1.25rem" }}>
-              <div
-                style={{
-                  fontSize: "0.68rem",
-                  fontWeight: 700,
-                  textTransform: "uppercase",
-                  letterSpacing: "0.08em",
-                  color: "var(--text-muted)",
-                  marginBottom: "0.5rem",
-                }}
-              >
-                Testator (Will Maker)
-              </div>
-              <div
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  gap: "0.75rem",
-                  padding: "0.75rem 1rem",
-                  backgroundColor: "rgba(198, 83, 120, 0.06)",
-                  borderRadius: "12px",
-                  border: "1px solid rgba(198, 83, 120, 0.12)",
-                }}
-              >
-                <div
-                  style={{
-                    width: "36px",
-                    height: "36px",
-                    borderRadius: "50%",
-                    backgroundColor: "var(--color-navy)",
-                    color: "#FFF",
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    fontSize: "0.82rem",
-                    fontWeight: 700,
-                    flexShrink: 0,
-                  }}
-                >
-                  {state.testator.fullName
-                    .split(" ")
-                    .map((n) => n[0])
-                    .filter(Boolean)
-                    .slice(0, 2)
-                    .join("")
-                    .toUpperCase()}
-                </div>
-                <div>
-                  <div
-                    style={{
-                      fontSize: "0.9rem",
-                      fontWeight: 700,
-                      color: "var(--color-navy)",
-                    }}
-                  >
-                    {state.testator.fullName}
-                  </div>
-                  <div style={{ fontSize: "0.78rem", color: "var(--text-muted)" }}>
-                    {state.testator.religionPersonalLaw
-                      ? state.testator.religionPersonalLaw.replace(/_/g, " ")
-                      : ""}
-                    {state.testator.city ? ` • ${state.testator.city}` : ""}
-                    {state.testator.state ? `, ${state.testator.state}` : ""}
-                  </div>
-                </div>
-              </div>
-            </div>
-          )}
-
-          {/* Family members grouped by relationship */}
-          {family.length > 0 ? (
-            <div
-              style={{
-                display: "grid",
-                gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))",
-                gap: "0.75rem",
-              }}
+            <span
+              className={`bento-pill ${
+                unallocatedAssets.length === 0 ? "bento-pill-green" : "bento-pill-amber"
+              }`}
             >
-              {family.map((member) => {
-                const isMinor = member.isMinor;
-                const icon =
-                  member.relationship === "spouse" ? (
-                    <Heart size={14} />
-                  ) : isMinor ? (
-                    <Baby size={14} />
-                  ) : (
-                    <User size={14} />
-                  );
+              {unallocatedAssets.length === 0 ? "100% Divided" : `${unallocatedAssets.length} Unallocated`}
+            </span>
+          </div>
+
+          <div className="bento-card-body" style={{ gap: "0.35rem", overflow: "hidden" }}>
+            <div className="bento-allocations-list">
+              {assets.map((asset) => {
+                const assetAllocs = allocations.filter((a) => a.assetId === asset.id);
+                const totalPct = assetAllocs.reduce((s, a) => s + (a.percentage || 0), 0);
+                const isComplete = totalPct >= 99.5 && totalPct <= 100.5;
+
                 return (
-                  <div
-                    key={member.id}
-                    style={{
-                      display: "flex",
-                      alignItems: "center",
-                      gap: "0.7rem",
-                      padding: "0.7rem 0.85rem",
-                      borderRadius: "12px",
-                      border: "1px solid var(--border-subtle)",
-                      backgroundColor: "var(--bg-card-subtle)",
-                    }}
-                  >
-                    <div
-                      style={{
-                        width: "32px",
-                        height: "32px",
-                        borderRadius: "50%",
-                        backgroundColor: isMinor
-                          ? "rgba(198, 83, 120, 0.12)"
-                          : "rgba(95, 126, 117, 0.12)",
-                        color: isMinor ? "var(--color-gold)" : "var(--color-sage)",
-                        display: "flex",
-                        alignItems: "center",
-                        justifyContent: "center",
-                        flexShrink: 0,
-                      }}
-                    >
-                      {icon}
+                  <div key={asset.id} className="bento-alloc-row">
+                    <div className="bento-alloc-left">
+                      <span className="bento-alloc-name">{asset.name}</span>
+                      <span className="bento-alloc-shares">
+                        {assetAllocs.length > 0
+                          ? assetAllocs.map((a) => `${a.beneficiaryName.split(" ")[0]} (${a.percentage}%)`).join(", ")
+                          : "Not divided yet"}
+                      </span>
                     </div>
-                    <div style={{ minWidth: 0 }}>
-                      <div
-                        style={{
-                          fontSize: "0.85rem",
-                          fontWeight: 600,
-                          color: "var(--color-navy)",
-                          whiteSpace: "nowrap",
-                          overflow: "hidden",
-                          textOverflow: "ellipsis",
-                        }}
-                      >
-                        {member.name}
-                      </div>
-                      <div
-                        style={{
-                          fontSize: "0.72rem",
-                          color: "var(--text-muted)",
-                          textTransform: "capitalize",
-                        }}
-                      >
-                        {member.customRelationship || member.relationship}
-                        {isMinor ? " • Minor" : ""}
-                      </div>
-                    </div>
+                    <span className={`bento-pct-badge ${isComplete ? "complete" : "warning"}`}>
+                      {Math.round(totalPct)}%
+                    </span>
                   </div>
                 );
               })}
             </div>
-          ) : (
-            <div
-              style={{
-                padding: "1.5rem",
-                textAlign: "center",
-                color: "var(--text-muted)",
-                fontSize: "0.875rem",
-              }}
-            >
-              <Users size={24} style={{ opacity: 0.3, marginBottom: "0.5rem" }} />
-              <div>No family members added yet.</div>
-              <Link
-                href={getUrlForStep(3)}
-                style={{
-                  color: "var(--color-gold)",
-                  fontWeight: 600,
-                  textDecoration: "none",
-                  fontSize: "0.82rem",
-                  marginTop: "0.4rem",
-                  display: "inline-block",
-                }}
-              >
-                Add Family Members →
-              </Link>
-            </div>
-          )}
+          </div>
 
-          {/* Executor & Guardian Appointments */}
-          {(state.executorPrimary?.name || state.guardianPrimary?.name) && (
-            <div style={{ marginTop: "1.25rem" }}>
-              <div
-                style={{
-                  fontSize: "0.68rem",
-                  fontWeight: 700,
-                  textTransform: "uppercase",
-                  letterSpacing: "0.08em",
-                  color: "var(--text-muted)",
-                  marginBottom: "0.5rem",
-                }}
-              >
-                Important Appointments
-              </div>
-              <div
-                style={{
-                  display: "grid",
-                  gridTemplateColumns: "repeat(auto-fill, minmax(220px, 1fr))",
-                  gap: "0.65rem",
-                }}
-              >
-                {state.executorPrimary?.name && (
-                  <AppointmentCard
-                    role="Primary Executor"
-                    name={state.executorPrimary.name}
-                    relationship={state.executorPrimary.relationship}
-                  />
-                )}
-                {state.executorAlternate?.name && (
-                  <AppointmentCard
-                    role="Alternate Executor"
-                    name={state.executorAlternate.name}
-                    relationship={state.executorAlternate.relationship}
-                  />
-                )}
-                {state.guardianPrimary?.name && (
-                  <AppointmentCard
-                    role="Primary Guardian"
-                    name={state.guardianPrimary.name}
-                    relationship={state.guardianPrimary.relationship}
-                  />
-                )}
-                {state.guardianAlternate?.name && (
-                  <AppointmentCard
-                    role="Alternate Guardian"
-                    name={state.guardianAlternate.name}
-                    relationship={state.guardianAlternate.relationship}
-                  />
-                )}
-              </div>
-              <div style={{ marginTop: "0.5rem" }}>
-                <Link
-                  href={getUrlForStep(6)}
-                  style={{
-                    fontSize: "0.78rem",
-                    fontWeight: 600,
-                    color: "var(--color-gold)",
-                    textDecoration: "none",
-                    display: "inline-flex",
-                    alignItems: "center",
-                    gap: "0.25rem",
-                  }}
-                >
-                  <Edit3 size={12} /> Edit Appointments
-                </Link>
-              </div>
-            </div>
-          )}
+          <div className="bento-card-footer">
+            <button type="button" className="bento-btn-secondary" onClick={() => setActiveModal("allocations")}>
+              Allocations ({allocations.length})
+            </button>
+            <Link href={getUrlForStep(5)} className="bento-btn-edit">
+              <Edit3 size={11} /> Step 5 ↗
+            </Link>
+          </div>
         </div>
-      </SectionCard>
 
-      {/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-          5. ASSETS & WEALTH
-         ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */}
-      <SectionCard>
-        <SectionHeader
-          title="Assets & Wealth"
-          icon={<Landmark size={18} />}
-          count={assets.length > 0 ? `${assets.length} assets` : undefined}
-          editUrl={getUrlForStep(4)}
-          editLabel="Edit Assets"
-        />
-        <div style={{ padding: "1.25rem 1.5rem" }}>
-          {assets.length > 0 ? (
-            <>
-              {/* Value Summary by Category */}
-              {sortedCategories.length > 0 && totalAssetValue > 0 && (
-                <div style={{ marginBottom: "1.5rem" }}>
-                  <div
-                    style={{
-                      fontSize: "0.72rem",
-                      fontWeight: 700,
-                      textTransform: "uppercase",
-                      letterSpacing: "0.06em",
-                      color: "var(--text-muted)",
-                      marginBottom: "0.75rem",
-                    }}
-                  >
-                    Estate Value Breakdown
+        {/* ── CARD 6: PEOPLE YOU TRUST (MANAGER & GUARDIAN) ───── */}
+        <div className="bento-card bento-card-appointments">
+          <div className="bento-card-header">
+            <div className="bento-card-title-group">
+              <span className="bento-icon-badge" style={{ backgroundColor: "rgba(201, 162, 39, 0.12)", color: "#9E7408" }}>
+                <Briefcase size={15} />
+              </span>
+              <div>
+                <h3 className="bento-card-title">People You Trust</h3>
+                <span className="bento-card-subtitle">Will Manager & Guardian</span>
+              </div>
+            </div>
+          </div>
+
+          <div className="bento-card-body">
+            <div className="bento-appointment-blocks">
+              {/* Column 1: Will Manager (Primary + Alternate) */}
+              <div className="bento-appoint-item">
+                <div className="bento-appoint-top">
+                  <span className="bento-appoint-role" style={{ color: "#5F7E75" }}>
+                    👔 Will Manager
+                  </span>
+                </div>
+                <div style={{ margin: "0.2rem 0" }}>
+                  <strong className="bento-appoint-name" title={state.executorPrimary?.name || "Pending appointment"}>
+                    {state.executorPrimary?.name || "Not Chosen Yet"}
+                  </strong>
+                  <span className="bento-appoint-rel">
+                    {state.executorPrimary?.relationship ? `${state.executorPrimary.relationship} • Executes Will` : "Executes your Will"}
+                  </span>
+                </div>
+                <div className="bento-appoint-extra" title={state.executorAlternate?.name ? `Backup: ${state.executorAlternate.name}` : "No backup chosen"}>
+                  {state.executorAlternate?.name ? (
+                    <span>Backup: <strong>{state.executorAlternate.name}</strong></span>
+                  ) : (
+                    <span style={{ color: "#7A8B94" }}>Backup: None</span>
+                  )}
+                </div>
+              </div>
+
+              {/* Column 2: Guardian for Minor Children */}
+              <div className="bento-appoint-item">
+                <div className="bento-appoint-top">
+                  <span className="bento-appoint-role" style={{ color: hasMinors ? "#C9A227" : "#49585F" }}>
+                    👶 Child Guardian
+                  </span>
+                  {hasMinors && !state.guardianPrimary?.name && (
+                    <span className="bento-pill bento-pill-amber" style={{ fontSize: "0.52rem", padding: "0.06rem 0.28rem" }}>
+                      Needed
+                    </span>
+                  )}
+                </div>
+                <div style={{ margin: "0.2rem 0" }}>
+                  <strong className="bento-appoint-name" title={state.guardianPrimary?.name || "Guardian"}>
+                    {state.guardianPrimary?.name || (hasMinors ? "Choose Guardian" : "Not Needed")}
+                  </strong>
+                  <span className="bento-appoint-rel">
+                    {state.guardianPrimary?.relationship || (hasMinors ? "For children under 18" : "No minors")}
+                  </span>
+                </div>
+                <div className="bento-appoint-extra">
+                  {hasMinors ? (
+                    <span style={{ color: "#9E7408", fontWeight: 600 }}>Cares for {minorChildren.length} minor child(ren)</span>
+                  ) : (
+                    <span style={{ color: "#7A8B94" }}>All children adults</span>
+                  )}
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="bento-card-footer">
+            <button type="button" className="bento-btn-secondary" onClick={() => setActiveModal("appointments")}>
+              View Details
+            </button>
+            <Link href={getUrlForStep(6)} className="bento-btn-edit">
+              <Edit3 size={11} /> Step 6 ↗
+            </Link>
+          </div>
+        </div>
+
+        {/* ── CARD 7: SPECIAL WISHES & NOTES ─────────────────── */}
+        <div className="bento-card bento-card-wishes">
+          <div className="bento-card-header">
+            <div className="bento-card-title-group">
+              <span className="bento-icon-badge" style={{ backgroundColor: "rgba(198, 83, 120, 0.1)", color: "#C65378" }}>
+                <ScrollText size={15} />
+              </span>
+              <div>
+                <h3 className="bento-card-title">Special Wishes & Notes</h3>
+                <span className="bento-card-subtitle">Personal Instructions</span>
+              </div>
+            </div>
+          </div>
+
+          <div className="bento-card-body">
+            <div className="bento-directives-rich-grid">
+              {/* Box 1: Funeral & Ceremonies */}
+              <div className="bento-directive-rich-card">
+                <span className="bento-directive-title" style={{ display: "block", marginBottom: "0.15rem" }}>
+                  ⚱️ Last Rites
+                </span>
+                <p className="bento-directive-desc">
+                  {state.specialWishes?.funeralCeremonyWishes || "Customary rituals as per traditions."}
+                </p>
+              </div>
+
+              {/* Box 2: Digital Accounts */}
+              <div className="bento-directive-rich-card">
+                <span className="bento-directive-title" style={{ display: "block", marginBottom: "0.15rem" }}>
+                  💻 Digital Accounts
+                </span>
+                <p className="bento-directive-desc">
+                  {state.specialWishes?.digitalAccounts || "Executor authorized to close accounts."}
+                </p>
+              </div>
+
+              {/* Box 3: Jewellery & Heirlooms */}
+              <div className="bento-directive-rich-card">
+                <span className="bento-directive-title" style={{ display: "block", marginBottom: "0.15rem" }}>
+                  💍 Jewellery
+                </span>
+                <p className="bento-directive-desc">
+                  {state.specialWishes?.jewelleryInstructions || "Shared peacefully among family."}
+                </p>
+              </div>
+
+              {/* Box 4: Pet Care & Family Note */}
+              <div className="bento-directive-rich-card">
+                <span className="bento-directive-title" style={{ display: "block", marginBottom: "0.15rem" }}>
+                  🐾 Notes & Pets
+                </span>
+                <p className="bento-directive-desc">
+                  {state.specialWishes?.petsCare || state.specialWishes?.personalMessageToFamily || "Personal instructions & family harmony."}
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="bento-card-footer">
+            <button type="button" className="bento-btn-secondary" onClick={() => setActiveModal("wishes")}>
+              All Wishes
+            </button>
+            <Link href={getUrlForStep(8)} className="bento-btn-edit">
+              <Edit3 size={11} /> Step 8 ↗
+            </Link>
+          </div>
+        </div>
+
+        {/* ── CARD 8: WHY YOU MADE THIS WILL ──────────────────── */}
+        <div className="bento-card bento-card-emotional">
+          <div className="bento-card-header">
+            <div className="bento-card-title-group">
+              <span className="bento-icon-badge" style={{ backgroundColor: "rgba(198, 83, 120, 0.1)", color: "#C65378" }}>
+                <HeartHandshake size={15} />
+              </span>
+              <div>
+                <h3 className="bento-card-title">Why You Made This Will</h3>
+                <span className="bento-card-subtitle">Personal Declaration</span>
+              </div>
+            </div>
+          </div>
+
+          <div className="bento-card-body" style={{ justifyContent: "center", display: "flex", flexDirection: "column" }}>
+            <div className="bento-quote-box" style={{ margin: 0, padding: "0.6rem 0.8rem" }}>
+              <p className="bento-quote-text" style={{ WebkitLineClamp: 4, fontStyle: "italic", lineHeight: 1.45, fontSize: "0.76rem" }}>
+                "{state.emotionalReason || "To ensure my loved ones are provided for smoothly and to prevent any future confusion or disagreements among family members."}"
+              </p>
+            </div>
+          </div>
+
+          <div className="bento-card-footer">
+            <button type="button" className="bento-btn-secondary" onClick={() => setActiveModal("emotional")}>
+              Read Statement
+            </button>
+            <Link href={getUrlForStep(9)} className="bento-btn-edit">
+              <Edit3 size={11} /> Step 9 ↗
+            </Link>
+          </div>
+        </div>
+      </div>
+
+      {/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+          POPUP MODALS (Detailed Views with Step Redirection)
+         ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */}
+      {activeModal && (
+        <div className="bento-modal-overlay" onClick={closeModal}>
+          <div className="bento-modal-container" onClick={(e) => e.stopPropagation()}>
+            {/* 1. ABOUT YOU (WILL CREATOR) MODAL */}
+            {activeModal === "testator" && (
+              <>
+                <div className="bento-modal-header">
+                  <div className="bento-modal-title-group">
+                    <span className="bento-icon-badge" style={{ backgroundColor: "rgba(198, 83, 120, 0.1)", color: "#C65378" }}>
+                      <User size={18} />
+                    </span>
+                    <div>
+                      <div style={{ display: "flex", alignItems: "center", gap: "0.45rem", flexWrap: "wrap" }}>
+                        <h2 className="bento-modal-title">About You (Will Creator)</h2>
+                        <span className="bento-modal-scroll-pill">
+                          <ArrowUpDown size={10} /> Scrollable Window
+                        </span>
+                      </div>
+                      <p className="bento-modal-sub">Your personal details and background information • Scroll for full details ↕</p>
+                    </div>
                   </div>
-                  <div
-                    style={{
-                      display: "flex",
-                      flexDirection: "column",
-                      gap: "0.5rem",
-                    }}
-                  >
-                    {sortedCategories.map(([cat, val]) => {
-                      const info = CATEGORY_LABELS[cat] || CATEGORY_LABELS.other;
-                      const pct = Math.round((val / totalAssetValue) * 100);
-                      return (
-                        <div key={cat}>
-                          <div
-                            style={{
-                              display: "flex",
-                              justifyContent: "space-between",
-                              alignItems: "center",
-                              marginBottom: "0.2rem",
-                            }}
-                          >
-                            <div
-                              style={{
-                                display: "flex",
-                                alignItems: "center",
-                                gap: "0.4rem",
-                                fontSize: "0.82rem",
-                                fontWeight: 600,
-                                color: "var(--color-navy)",
-                              }}
-                            >
-                              <span style={{ color: info.color, display: "flex" }}>
-                                {info.icon}
-                              </span>
-                              {info.label}
+                  <div className="bento-modal-actions">
+                    <Link href={getUrlForStep(2)} className="bento-modal-btn-redirect">
+                      <Edit3 size={13} /> Edit in Step 2 ↗
+                    </Link>
+                    <button type="button" className="bento-modal-close" onClick={closeModal}>
+                      <X size={18} />
+                    </button>
+                  </div>
+                </div>
+                <div className="bento-modal-body">
+                  <div className="bento-modal-grid-2">
+                    <div className="bento-data-row">
+                      <span className="bento-data-label">Your Full Legal Name:</span>
+                      <strong className="bento-data-val">{state.testator.fullName || "—"}</strong>
+                    </div>
+                    <div className="bento-data-row">
+                      <span className="bento-data-label">Parent's Name:</span>
+                      <strong className="bento-data-val">{state.testator.fatherOrMotherName || "—"}</strong>
+                    </div>
+                    <div className="bento-data-row">
+                      <span className="bento-data-label">Family / Succession Law:</span>
+                      <strong className="bento-data-val">
+                        {personalLawFormatted}
+                      </strong>
+                    </div>
+                    <div className="bento-data-row">
+                      <span className="bento-data-label">Marital Status:</span>
+                      <strong className="bento-data-val" style={{ textTransform: "capitalize" }}>
+                        {state.testator.maritalStatus || "—"}
+                      </strong>
+                    </div>
+                    <div className="bento-data-row">
+                      <span className="bento-data-label">Date of Birth:</span>
+                      <strong className="bento-data-val">
+                        {testatorDobFormatted || state.testator.dob || "—"}{testatorAge ? ` (Age ${testatorAge})` : ""}
+                      </strong>
+                    </div>
+                    <div className="bento-data-row">
+                      <span className="bento-data-label">Citizenship:</span>
+                      <strong className="bento-data-val">{state.testator.citizenship || "Indian Citizen"}</strong>
+                    </div>
+                    <div className="bento-data-row">
+                      <span className="bento-data-label">Gender:</span>
+                      <strong className="bento-data-val" style={{ textTransform: "capitalize" }}>
+                        {state.testator.gender || "—"}
+                      </strong>
+                    </div>
+                    <div className="bento-data-row">
+                      <span className="bento-data-label">Official Email:</span>
+                      <strong className="bento-data-val">{state.testator.email || "—"}</strong>
+                    </div>
+                    <div className="bento-data-row">
+                      <span className="bento-data-label">PAN Card Number:</span>
+                      <strong className="bento-data-val" style={{ fontFamily: "monospace" }}>{state.testator.pan || "—"}</strong>
+                    </div>
+                    <div className="bento-data-row">
+                      <span className="bento-data-label">Aadhaar Identification:</span>
+                      <strong className="bento-data-val">{state.testator.aadhaar || "—"}</strong>
+                    </div>
+                    <div className="bento-data-row" style={{ gridColumn: "span 2" }}>
+                      <span className="bento-data-label">Occupation / Work:</span>
+                      <strong className="bento-data-val">{state.testator.workplace || "—"}</strong>
+                    </div>
+                    <div className="bento-data-row" style={{ gridColumn: "span 2" }}>
+                      <span className="bento-data-label">Home Address:</span>
+                      <strong className="bento-data-val">
+                        {state.testator.address || "—"}, {state.testator.city} {state.testator.state} -{" "}
+                        {state.testator.pincode}
+                      </strong>
+                    </div>
+                    <div className="bento-data-row" style={{ gridColumn: "span 2" }}>
+                      <span className="bento-data-label">Previous Will Status:</span>
+                      <strong className="bento-data-val">
+                        {state.testator.hasPreviousWill
+                          ? "You had an earlier Will — this new Will officially cancels and replaces it."
+                          : "No earlier Will. This is your first official Will."}
+                      </strong>
+                    </div>
+                  </div>
+                </div>
+              </>
+            )}
+
+            {/* 2. PROPERTIES & WEALTH MODAL */}
+            {activeModal === "assets" && (
+              <>
+                <div className="bento-modal-header">
+                  <div className="bento-modal-title-group">
+                    <span className="bento-icon-badge" style={{ backgroundColor: "rgba(95, 126, 117, 0.12)", color: "#5F7E75" }}>
+                      <Landmark size={18} />
+                    </span>
+                    <div>
+                      <div style={{ display: "flex", alignItems: "center", gap: "0.45rem", flexWrap: "wrap" }}>
+                        <h2 className="bento-modal-title">Properties & Wealth List</h2>
+                        <span className="bento-modal-scroll-pill">
+                          <ArrowUpDown size={10} /> Scrollable Window
+                        </span>
+                      </div>
+                      <p className="bento-modal-sub">
+                        {assets.length} items listed • Total Estimated Value: {formatCurrencyINR(totalAssetValue)} • Scroll for full details ↕
+                      </p>
+                    </div>
+                  </div>
+                  <div className="bento-modal-actions">
+                    <Link href={getUrlForStep(4)} className="bento-modal-btn-redirect">
+                      <Edit3 size={13} /> Edit in Step 4 ↗
+                    </Link>
+                    <button type="button" className="bento-modal-close" onClick={closeModal}>
+                      <X size={18} />
+                    </button>
+                  </div>
+                </div>
+                <div className="bento-modal-body">
+                  <div className="bento-modal-list">
+                    {assets.length > 0 ? (
+                      assets.map((asset) => {
+                        const meta = CATEGORY_META[asset.category] || CATEGORY_META.other;
+                        const assetAllocs = allocations.filter((a) => a.assetId === asset.id);
+                        const totalPct = assetAllocs.reduce((s, a) => s + (a.percentage || 0), 0);
+
+                        return (
+                          <div key={asset.id} className="bento-modal-card-item">
+                            <div className="bento-modal-card-top">
+                              <div style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
+                                <span className="bento-icon-badge" style={{ backgroundColor: meta.bg, color: meta.color }}>
+                                  {meta.icon}
+                                </span>
+                                <div>
+                                  <h4 style={{ margin: 0, fontSize: "0.95rem", fontWeight: 700, color: "#172228" }}>
+                                    {asset.name}
+                                  </h4>
+                                  <span style={{ fontSize: "0.75rem", color: "#49585F" }}>
+                                    {meta.label} • {asset.ownership === "joint" ? `Shared (${asset.ownershipPercentage || 50}%)` : "Sole Owner (100%)"}
+                                  </span>
+                                </div>
+                              </div>
+                              <div style={{ textAlign: "right" }}>
+                                <strong style={{ fontSize: "1rem", color: "#172228" }}>
+                                  {formatCurrencyINR(asset.approximateValue || 0)}
+                                </strong>
+                                <div style={{ fontSize: "0.72rem", color: totalPct === 100 ? "#5F7E75" : "#C9A227", fontWeight: 600 }}>
+                                  {totalPct}% Divided
+                                </div>
+                              </div>
                             </div>
-                            <span
-                              style={{
-                                fontSize: "0.82rem",
-                                fontWeight: 700,
-                                color: "var(--color-navy)",
-                              }}
-                            >
-                              {formatCurrencyINR(val)}{" "}
-                              <span style={{ fontSize: "0.7rem", color: "var(--text-muted)", fontWeight: 500 }}>
-                                ({pct}%)
+                            <div className="bento-modal-card-details">
+                              {asset.identifier && (
+                                <div>
+                                  <span className="bento-data-label">Account / Reg No:</span> {asset.identifier}
+                                </div>
+                              )}
+                              {asset.addressOrInstitution && (
+                                <div>
+                                  <span className="bento-data-label">Bank Name / Address:</span> {asset.addressOrInstitution}
+                                </div>
+                              )}
+                              {asset.hasLoan && (
+                                <div style={{ color: "#C65378" }}>
+                                  <span className="bento-data-label">Active Loan:</span> {asset.loanDetails || "Active loan against this asset"}
+                                </div>
+                              )}
+                              {asset.specialInstructions && (
+                                <div>
+                                  <span className="bento-data-label">Special Notes:</span> {asset.specialInstructions}
+                                </div>
+                              )}
+                            </div>
+                          </div>
+                        );
+                      })
+                    ) : (
+                      <p style={{ textAlign: "center", color: "#49585F" }}>No properties or assets listed yet.</p>
+                    )}
+                  </div>
+                </div>
+              </>
+            )}
+
+            {/* 3. YOUR FAMILY MODAL */}
+            {activeModal === "family" && (
+              <>
+                <div className="bento-modal-header">
+                  <div className="bento-modal-title-group">
+                    <span className="bento-icon-badge" style={{ backgroundColor: "rgba(198, 83, 120, 0.1)", color: "#C65378" }}>
+                      <Users size={18} />
+                    </span>
+                    <div>
+                      <div style={{ display: "flex", alignItems: "center", gap: "0.45rem", flexWrap: "wrap" }}>
+                        <h2 className="bento-modal-title">Your Family Members</h2>
+                        <span className="bento-modal-scroll-pill">
+                          <ArrowUpDown size={10} /> Scrollable Window
+                        </span>
+                      </div>
+                      <p className="bento-modal-sub">{family.length} family members listed • Scroll for full details ↕</p>
+                    </div>
+                  </div>
+                  <div className="bento-modal-actions">
+                    <div className="bento-tab-switch">
+                      <button
+                        type="button"
+                        className={`bento-tab-btn ${familyTab === "list" ? "active" : ""}`}
+                        onClick={() => setFamilyTab("list")}
+                      >
+                        List View
+                      </button>
+                      <button
+                        type="button"
+                        className={`bento-tab-btn ${familyTab === "tree" ? "active" : ""}`}
+                        onClick={() => setFamilyTab("tree")}
+                      >
+                        Family Tree
+                      </button>
+                    </div>
+                    <Link href={getUrlForStep(3)} className="bento-modal-btn-redirect">
+                      <Edit3 size={13} /> Edit in Step 3 ↗
+                    </Link>
+                    <button type="button" className="bento-modal-close" onClick={closeModal}>
+                      <X size={18} />
+                    </button>
+                  </div>
+                </div>
+                <div className="bento-modal-body">
+                  {familyTab === "list" ? (
+                    <div className="bento-modal-list">
+                      {family.length > 0 ? (
+                        family.map((member) => (
+                          <div key={member.id} className="bento-modal-card-item">
+                            <div className="bento-modal-card-top">
+                              <div style={{ display: "flex", alignItems: "center", gap: "0.6rem" }}>
+                                <div className="bento-avatar" style={{ width: "32px", height: "32px", fontSize: "0.8rem" }}>
+                                  {member.name.charAt(0).toUpperCase()}
+                                </div>
+                                <div>
+                                  <h4 style={{ margin: 0, fontSize: "0.95rem", fontWeight: 700, color: "#172228" }}>
+                                    {member.name}
+                                  </h4>
+                                  <span style={{ fontSize: "0.75rem", color: "#49585F", textTransform: "capitalize" }}>
+                                    {member.customRelationship || member.relationship}
+                                    {member.isMinor ? " • Under 18" : ""}
+                                  </span>
+                                </div>
+                              </div>
+                              {member.isMinor && (
+                                <span className="bento-pill bento-pill-amber">Child Under 18</span>
+                              )}
+                            </div>
+                            <div className="bento-modal-card-details">
+                              {member.dob && (
+                                <div>
+                                  <span className="bento-data-label">Date of Birth:</span> {formatDDMMYYYY(member.dob)}
+                                </div>
+                              )}
+                              {member.pan && (
+                                <div>
+                                  <span className="bento-data-label">PAN Card:</span> {member.pan}
+                                </div>
+                              )}
+                              {member.phone && (
+                                <div>
+                                  <span className="bento-data-label">Phone:</span> {member.phone}
+                                </div>
+                              )}
+                              {member.email && (
+                                <div>
+                                  <span className="bento-data-label">Email:</span> {member.email}
+                                </div>
+                              )}
+                              {member.address && (
+                                <div>
+                                  <span className="bento-data-label">Home Address:</span> {member.address}
+                                </div>
+                              )}
+                            </div>
+                          </div>
+                        ))
+                      ) : (
+                        <p style={{ textAlign: "center", color: "#49585F" }}>No family members added yet.</p>
+                      )}
+                    </div>
+                  ) : (
+                    <div style={{ height: "420px", overflow: "hidden", borderRadius: "14px", border: "1px solid rgba(23, 34, 40, 0.08)" }}>
+                      <FamilyTreeCanvas state={state} onStateChange={onStateChange} />
+                    </div>
+                  )}
+                </div>
+              </>
+            )}
+
+            {/* 4. WHO GETS WHAT (ALLOCATIONS) MODAL */}
+            {activeModal === "allocations" && (
+              <>
+                <div className="bento-modal-header">
+                  <div className="bento-modal-title-group">
+                    <span className="bento-icon-badge" style={{ backgroundColor: "rgba(95, 126, 117, 0.12)", color: "#5F7E75" }}>
+                      <Scale size={18} />
+                    </span>
+                    <div>
+                      <div style={{ display: "flex", alignItems: "center", gap: "0.45rem", flexWrap: "wrap" }}>
+                        <h2 className="bento-modal-title">Who Gets What (Dividing Your Wealth)</h2>
+                        <span className="bento-modal-scroll-pill">
+                          <ArrowUpDown size={10} /> Scrollable Window
+                        </span>
+                      </div>
+                      <p className="bento-modal-sub">How each property and asset is shared among your family • Scroll for full details ↕</p>
+                    </div>
+                  </div>
+                  <div className="bento-modal-actions">
+                    <Link href={getUrlForStep(5)} className="bento-modal-btn-redirect">
+                      <Edit3 size={13} /> Edit in Step 5 ↗
+                    </Link>
+                    <button type="button" className="bento-modal-close" onClick={closeModal}>
+                      <X size={18} />
+                    </button>
+                  </div>
+                </div>
+                <div className="bento-modal-body">
+                  <div className="bento-modal-list">
+                    {assets.map((asset) => {
+                      const assetAllocs = allocations.filter((a) => a.assetId === asset.id);
+                      const totalPct = assetAllocs.reduce((s, a) => s + (a.percentage || 0), 0);
+                      const isComplete = totalPct >= 99.5 && totalPct <= 100.5;
+
+                      return (
+                        <div key={asset.id} className="bento-modal-card-item">
+                          <div className="bento-modal-card-top">
+                            <div>
+                              <h4 style={{ margin: 0, fontSize: "0.95rem", fontWeight: 700, color: "#172228" }}>
+                                {asset.name}
+                              </h4>
+                              <span style={{ fontSize: "0.75rem", color: "#49585F" }}>
+                                Estimated Value: {formatCurrencyINR(asset.approximateValue || 0)}
                               </span>
+                            </div>
+                            <span className={`bento-pill ${isComplete ? "bento-pill-green" : "bento-pill-amber"}`}>
+                              {totalPct}% Divided
                             </span>
                           </div>
-                          <div
-                            style={{
-                              height: "4px",
-                              backgroundColor: "rgba(23, 34, 40, 0.06)",
-                              borderRadius: "999px",
-                              overflow: "hidden",
-                            }}
-                          >
-                            <div
-                              style={{
-                                width: `${pct}%`,
-                                height: "100%",
-                                backgroundColor: info.color,
-                                borderRadius: "999px",
-                                transition: "width 0.4s ease",
-                              }}
-                            />
+
+                          <div style={{ marginTop: "0.6rem", display: "flex", flexDirection: "column", gap: "0.4rem" }}>
+                            {assetAllocs.map((al) => (
+                              <div
+                                key={al.id}
+                                style={{
+                                  display: "flex",
+                                  justifyContent: "space-between",
+                                  alignItems: "center",
+                                  padding: "0.4rem 0.6rem",
+                                  backgroundColor: "#FAF7F0",
+                                  borderRadius: "8px",
+                                }}
+                              >
+                                <span style={{ fontSize: "0.82rem", fontWeight: 600, color: "#172228" }}>
+                                  {al.beneficiaryName}
+                                </span>
+                                <div style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
+                                  <div style={{ width: "90px", height: "5px", backgroundColor: "rgba(23, 34, 40, 0.08)", borderRadius: "999px", overflow: "hidden" }}>
+                                    <div style={{ width: `${al.percentage}%`, height: "100%", backgroundColor: "#5F7E75" }} />
+                                  </div>
+                                  <strong style={{ fontSize: "0.82rem", color: "#172228", minWidth: "35px", textAlign: "right" }}>
+                                    {al.percentage}%
+                                  </strong>
+                                </div>
+                              </div>
+                            ))}
+                            {assetAllocs.length === 0 && (
+                              <div style={{ fontSize: "0.78rem", color: "#C65378", fontStyle: "italic" }}>
+                                ⚠️ You have not chosen who receives this asset yet.
+                              </div>
+                            )}
                           </div>
                         </div>
                       );
                     })}
                   </div>
-                  <div
-                    style={{
-                      marginTop: "0.75rem",
-                      paddingTop: "0.75rem",
-                      borderTop: "1px solid var(--border-subtle)",
-                      display: "flex",
-                      justifyContent: "space-between",
-                      alignItems: "center",
-                    }}
-                  >
-                    <span style={{ fontSize: "0.85rem", fontWeight: 700, color: "var(--color-navy)" }}>
-                      Total Estimated Estate Value
+                </div>
+              </>
+            )}
+
+            {/* 5. PEOPLE YOU TRUST (APPOINTMENTS) MODAL */}
+            {activeModal === "appointments" && (
+              <>
+                <div className="bento-modal-header">
+                  <div className="bento-modal-title-group">
+                    <span className="bento-icon-badge" style={{ backgroundColor: "rgba(201, 162, 39, 0.12)", color: "#9E7408" }}>
+                      <Briefcase size={18} />
                     </span>
-                    <span style={{ fontSize: "1.05rem", fontWeight: 800, color: "var(--color-navy)" }}>
-                      {formatCurrencyINR(totalAssetValue)}
-                    </span>
+                    <div>
+                      <div style={{ display: "flex", alignItems: "center", gap: "0.45rem", flexWrap: "wrap" }}>
+                        <h2 className="bento-modal-title">People You Trust (Manager & Guardian)</h2>
+                        <span className="bento-modal-scroll-pill">
+                          <ArrowUpDown size={10} /> Scrollable Window
+                        </span>
+                      </div>
+                      <p className="bento-modal-sub">The trusted people who will carry out your Will and care for your family • Scroll for full details ↕</p>
+                    </div>
+                  </div>
+                  <div className="bento-modal-actions">
+                    <Link href={getUrlForStep(6)} className="bento-modal-btn-redirect">
+                      <Edit3 size={13} /> Edit Manager (Step 6) ↗
+                    </Link>
+                    <Link href={getUrlForStep(7)} className="bento-modal-btn-redirect">
+                      <Edit3 size={13} /> Edit Guardian (Step 7) ↗
+                    </Link>
+                    <button type="button" className="bento-modal-close" onClick={closeModal}>
+                      <X size={18} />
+                    </button>
                   </div>
                 </div>
-              )}
-
-              {/* Individual Asset List */}
-              <div
-                style={{
-                  display: "flex",
-                  flexDirection: "column",
-                  gap: "0.6rem",
-                }}
-              >
-                {assets.map((asset) => {
-                  const info = CATEGORY_LABELS[asset.category] || CATEGORY_LABELS.other;
-                  const assetAllocations = allocations.filter((a) => a.assetId === asset.id);
-                  const totalPct = assetAllocations.reduce((s, a) => s + (a.percentage || 0), 0);
-                  const isFullyAllocated = totalPct >= 99.5 && totalPct <= 100.5;
-
-                  return (
-                    <div
-                      key={asset.id}
-                      style={{
-                        padding: "0.85rem 1rem",
-                        borderRadius: "14px",
-                        border: "1px solid var(--border-subtle)",
-                        backgroundColor: "var(--bg-card-subtle)",
-                      }}
-                    >
-                      <div
-                        style={{
-                          display: "flex",
-                          justifyContent: "space-between",
-                          alignItems: "flex-start",
-                          flexWrap: "wrap",
-                          gap: "0.5rem",
-                        }}
-                      >
-                        <div style={{ display: "flex", alignItems: "center", gap: "0.6rem", minWidth: 0 }}>
-                          <span
-                            style={{
-                              color: info.color,
-                              display: "flex",
-                              flexShrink: 0,
-                            }}
-                          >
-                            {info.icon}
-                          </span>
-                          <div style={{ minWidth: 0 }}>
-                            <div
-                              style={{
-                                fontSize: "0.875rem",
-                                fontWeight: 700,
-                                color: "var(--color-navy)",
-                                whiteSpace: "nowrap",
-                                overflow: "hidden",
-                                textOverflow: "ellipsis",
-                              }}
-                            >
-                              {asset.name}
-                            </div>
-                            <div style={{ fontSize: "0.72rem", color: "var(--text-muted)" }}>
-                              {info.label}
-                              {asset.ownership === "joint"
-                                ? ` • Joint (${asset.ownershipPercentage || 50}%)`
-                                : " • Sole Ownership"}
-                            </div>
-                          </div>
-                        </div>
-                        <div style={{ textAlign: "right", flexShrink: 0 }}>
-                          <div
-                            style={{
-                              fontSize: "0.875rem",
-                              fontWeight: 700,
-                              color: "var(--color-navy)",
-                            }}
-                          >
-                            {formatCurrencyINR(asset.approximateValue || 0)}
-                          </div>
-                          {assetAllocations.length > 0 && (
-                            <span
-                              style={{
-                                fontSize: "0.68rem",
-                                fontWeight: 600,
-                                padding: "0.1rem 0.4rem",
-                                borderRadius: "999px",
-                                backgroundColor: isFullyAllocated
-                                  ? "rgba(95, 126, 117, 0.12)"
-                                  : "rgba(225, 29, 72, 0.08)",
-                                color: isFullyAllocated
-                                  ? "var(--color-sage)"
-                                  : "#BE123C",
-                              }}
-                            >
-                              {isFullyAllocated
-                                ? "100% Allocated"
-                                : `${Math.round(totalPct)}% Allocated`}
-                            </span>
-                          )}
-                        </div>
-                      </div>
+                <div className="bento-modal-body">
+                  <div className="bento-modal-grid-2">
+                    <div className="bento-modal-card-item">
+                      <span className="bento-data-label">Will Manager (Primary Executor):</span>
+                      <strong style={{ fontSize: "1.05rem", color: "#172228", display: "block", marginTop: "0.2rem" }}>
+                        {state.executorPrimary?.name || "Not Chosen Yet ⚠️"}
+                      </strong>
+                      <p style={{ fontSize: "0.78rem", color: "#49585F", margin: "0.2rem 0 0" }}>
+                        Relationship: {state.executorPrimary?.relationship || "—"}
+                      </p>
+                      <p style={{ fontSize: "0.75rem", color: "#49585F", margin: "0.4rem 0 0" }}>
+                        The person responsible for carrying out your Will, settling any pending dues, and distributing assets to your loved ones.
+                      </p>
                     </div>
-                  );
-                })}
-              </div>
-            </>
-          ) : (
-            <div
-              style={{
-                padding: "2rem",
-                textAlign: "center",
-                color: "var(--text-muted)",
-                fontSize: "0.875rem",
-              }}
-            >
-              <Landmark size={28} style={{ opacity: 0.3, marginBottom: "0.5rem" }} />
-              <div>No assets added yet.</div>
-              <Link
-                href={getUrlForStep(4)}
-                style={{
-                  color: "var(--color-gold)",
-                  fontWeight: 600,
-                  textDecoration: "none",
-                  marginTop: "0.4rem",
-                  display: "inline-block",
-                }}
-              >
-                Add Asset →
-              </Link>
-            </div>
-          )}
-        </div>
-      </SectionCard>
 
-      {/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-          6. ASSET DISTRIBUTION
-         ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */}
-      {allocations.length > 0 && (
-        <SectionCard>
-          <SectionHeader
-            title="Asset Distribution"
-            icon={<Scale size={18} />}
-            editUrl={getUrlForStep(5)}
-            editLabel="Review Allocation"
-          />
-          <div style={{ padding: "1.25rem 1.5rem" }}>
-            <div style={{ display: "flex", flexDirection: "column", gap: "1rem" }}>
-              {assets
-                .filter((a) => allocations.some((al) => al.assetId === a.id))
-                .map((asset) => {
-                  const assetAllocs = allocations.filter((al) => al.assetId === asset.id);
-                  const totalPct = assetAllocs.reduce((s, a) => s + (a.percentage || 0), 0);
-                  const isComplete = totalPct >= 99.5 && totalPct <= 100.5;
+                    <div className="bento-modal-card-item">
+                      <span className="bento-data-label">Backup Will Manager (Alternate):</span>
+                      <strong style={{ fontSize: "1.05rem", color: "#172228", display: "block", marginTop: "0.2rem" }}>
+                        {state.executorAlternate?.name || "None Chosen"}
+                      </strong>
+                      <p style={{ fontSize: "0.78rem", color: "#49585F", margin: "0.2rem 0 0" }}>
+                        Relationship: {state.executorAlternate?.relationship || "—"}
+                      </p>
+                      <p style={{ fontSize: "0.75rem", color: "#49585F", margin: "0.4rem 0 0" }}>
+                        Steps in to manage your Will if your primary manager is unable or unavailable.
+                      </p>
+                    </div>
 
-                  return (
-                    <div
-                      key={asset.id}
-                      style={{
-                        padding: "1rem",
-                        borderRadius: "14px",
-                        border: "1px solid var(--border-subtle)",
-                        backgroundColor: "var(--bg-card-subtle)",
-                      }}
-                    >
-                      <div
-                        style={{
-                          display: "flex",
-                          justifyContent: "space-between",
-                          alignItems: "center",
-                          marginBottom: "0.75rem",
-                          flexWrap: "wrap",
-                          gap: "0.4rem",
-                        }}
-                      >
-                        <span
-                          style={{
-                            fontSize: "0.875rem",
-                            fontWeight: 700,
-                            color: "var(--color-navy)",
-                          }}
-                        >
-                          {asset.name}
+                    <div className="bento-modal-card-item" style={{ gridColumn: "span 2" }}>
+                      <span className="bento-data-label">Guardian for Children Under 18:</span>
+                      <strong style={{ fontSize: "1.05rem", color: "#172228", display: "block", marginTop: "0.2rem" }}>
+                        {state.guardianPrimary?.name || (hasMinors ? "Appointment Required for Minor Children ⚠️" : "Not Required (No children under 18)")}
+                      </strong>
+                      <p style={{ fontSize: "0.78rem", color: "#49585F", margin: "0.2rem 0 0" }}>
+                        Relationship: {state.guardianPrimary?.relationship || "—"}
+                      </p>
+                      <p style={{ fontSize: "0.75rem", color: "#49585F", margin: "0.4rem 0 0" }}>
+                        Will have legal custody and take loving care of your children until they turn 18.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </>
+            )}
+
+            {/* 6. SPECIAL WISHES MODAL */}
+            {activeModal === "wishes" && (
+              <>
+                <div className="bento-modal-header">
+                  <div className="bento-modal-title-group">
+                    <span className="bento-icon-badge" style={{ backgroundColor: "rgba(198, 83, 120, 0.1)", color: "#C65378" }}>
+                      <ScrollText size={18} />
+                    </span>
+                    <div>
+                      <div style={{ display: "flex", alignItems: "center", gap: "0.45rem", flexWrap: "wrap" }}>
+                        <h2 className="bento-modal-title">Special Wishes & Personal Notes</h2>
+                        <span className="bento-modal-scroll-pill">
+                          <ArrowUpDown size={10} /> Scrollable Window
                         </span>
-                        {!isComplete && (
-                          <span
-                            style={{
-                              fontSize: "0.68rem",
-                              fontWeight: 700,
-                              padding: "0.15rem 0.5rem",
-                              borderRadius: "999px",
-                              backgroundColor: "rgba(225, 29, 72, 0.08)",
-                              color: "#BE123C",
-                              display: "inline-flex",
-                              alignItems: "center",
-                              gap: "0.2rem",
-                            }}
-                          >
-                            <AlertTriangle size={11} />
-                            {Math.round(totalPct)}% assigned
-                          </span>
-                        )}
                       </div>
-                      <div
-                        style={{
-                          display: "flex",
-                          flexDirection: "column",
-                          gap: "0.35rem",
-                        }}
-                      >
-                        {assetAllocs.map((alloc) => (
-                          <div
-                            key={alloc.id}
-                            style={{
-                              display: "flex",
-                              justifyContent: "space-between",
-                              alignItems: "center",
-                            }}
-                          >
-                            <span
-                              style={{
-                                fontSize: "0.82rem",
-                                color: "var(--color-navy)",
-                                fontWeight: 500,
-                              }}
-                            >
-                              {alloc.beneficiaryName}
+                      <p className="bento-modal-sub">Important personal instructions beyond financial assets • Scroll for full details ↕</p>
+                    </div>
+                  </div>
+                  <div className="bento-modal-actions">
+                    <Link href={getUrlForStep(8)} className="bento-modal-btn-redirect">
+                      <Edit3 size={13} /> Edit in Step 8 ↗
+                    </Link>
+                    <button type="button" className="bento-modal-close" onClick={closeModal}>
+                      <X size={18} />
+                    </button>
+                  </div>
+                </div>
+                <div className="bento-modal-body">
+                  <div className="bento-modal-list">
+                    <div className="bento-modal-card-item">
+                      <strong style={{ color: "#172228", fontSize: "0.9rem" }}>⚱️ Last Rites & Funeral Instructions</strong>
+                      <p style={{ fontSize: "0.82rem", color: "#49585F", margin: "0.3rem 0 0" }}>
+                        {state.specialWishes?.funeralCeremonyWishes || "Perform customary rituals according to family traditions."}
+                      </p>
+                    </div>
+                    <div className="bento-modal-card-item">
+                      <strong style={{ color: "#172228", fontSize: "0.9rem" }}>💻 Email, Online Accounts & Social Media</strong>
+                      <p style={{ fontSize: "0.82rem", color: "#49585F", margin: "0.3rem 0 0" }}>
+                        {state.specialWishes?.digitalAccounts || "Your Will Manager is authorized to access, back up, or close your email and online accounts."}
+                      </p>
+                    </div>
+                    <div className="bento-modal-card-item">
+                      <strong style={{ color: "#172228", fontSize: "0.9rem" }}>💍 Family Jewellery & Precious Belongings</strong>
+                      <p style={{ fontSize: "0.82rem", color: "#49585F", margin: "0.3rem 0 0" }}>
+                        {state.specialWishes?.jewelleryInstructions || "To be shared among family members peacefully and fairly."}
+                      </p>
+                    </div>
+                    <div className="bento-modal-card-item">
+                      <strong style={{ color: "#172228", fontSize: "0.9rem" }}>🐾 Care for Pets</strong>
+                      <p style={{ fontSize: "0.82rem", color: "#49585F", margin: "0.3rem 0 0" }}>
+                        {state.specialWishes?.petsCare || "No special pet instructions provided."}
+                      </p>
+                    </div>
+                    <div className="bento-modal-card-item">
+                      <strong style={{ color: "#172228", fontSize: "0.9rem" }}>🏛️ Charity & Good Causes</strong>
+                      <p style={{ fontSize: "0.82rem", color: "#49585F", margin: "0.3rem 0 0" }}>
+                        {state.specialWishes?.charitableGifts || "No donation to charity (all assets go to family)."}
+                      </p>
+                    </div>
+                    <div className="bento-modal-card-item">
+                      <strong style={{ color: "#172228", fontSize: "0.9rem" }}>💌 Personal Note to Family</strong>
+                      <p style={{ fontSize: "0.82rem", color: "#49585F", margin: "0.3rem 0 0", fontStyle: "italic" }}>
+                        "{state.specialWishes?.personalMessageToFamily || "Live in peace, respect each other, and maintain family harmony."}"
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </>
+            )}
+
+            {/* 7. WHY YOU MADE THIS WILL MODAL */}
+            {activeModal === "emotional" && (
+              <>
+                <div className="bento-modal-header">
+                  <div className="bento-modal-title-group">
+                    <span className="bento-icon-badge" style={{ backgroundColor: "rgba(198, 83, 120, 0.1)", color: "#C65378" }}>
+                      <HeartHandshake size={18} />
+                    </span>
+                    <div>
+                      <div style={{ display: "flex", alignItems: "center", gap: "0.45rem", flexWrap: "wrap" }}>
+                        <h2 className="bento-modal-title">Why You Made This Will</h2>
+                        <span className="bento-modal-scroll-pill">
+                          <ArrowUpDown size={10} /> Scrollable Window
+                        </span>
+                      </div>
+                      <p className="bento-modal-sub">Explaining your intentions clearly helps avoid family disagreements • Scroll for full details ↕</p>
+                    </div>
+                  </div>
+                  <div className="bento-modal-actions">
+                    <Link href={getUrlForStep(9)} className="bento-modal-btn-redirect">
+                      <Edit3 size={13} /> Edit in Step 9 ↗
+                    </Link>
+                    <button type="button" className="bento-modal-close" onClick={closeModal}>
+                      <X size={18} />
+                    </button>
+                  </div>
+                </div>
+                <div className="bento-modal-body">
+                  <div
+                    style={{
+                      padding: "1.25rem",
+                      backgroundColor: "#FAF7F0",
+                      borderRadius: "14px",
+                      borderLeft: "4px solid #C65378",
+                      lineHeight: 1.7,
+                      fontSize: "0.95rem",
+                      color: "#172228",
+                      fontStyle: "italic",
+                    }}
+                  >
+                    "{state.emotionalReason || "I make this Will of my own free choice, in good health and sound mind, to ensure my family is protected and all my assets are shared peacefully without any confusion or disputes."}"
+                  </div>
+                  <p style={{ fontSize: "0.8rem", color: "#49585F", marginTop: "1rem" }}>
+                    Explaining clearly why you made this Will and that you did so with a calm, sound mind ensures courts and authorities easily uphold your true wishes without any family dispute.
+                  </p>
+                </div>
+              </>
+            )}
+
+            {/* 8. WILL PROGRESS CHECKLIST MODAL */}
+            {activeModal === "readiness" && (
+              <>
+                <div className="bento-modal-header">
+                  <div className="bento-modal-title-group">
+                    <span className="bento-icon-badge" style={{ backgroundColor: "rgba(95, 126, 117, 0.12)", color: "#5F7E75" }}>
+                      <ShieldCheck size={18} />
+                    </span>
+                    <div>
+                      <div style={{ display: "flex", alignItems: "center", gap: "0.45rem", flexWrap: "wrap" }}>
+                        <h2 className="bento-modal-title">Your 14-Step Will Progress Checklist</h2>
+                        <span className="bento-modal-scroll-pill">
+                          <ArrowUpDown size={10} /> Scrollable Window
+                        </span>
+                      </div>
+                      <p className="bento-modal-sub">{completedSections} of {totalSections} main sections completed • Scroll for full details ↕</p>
+                    </div>
+                  </div>
+                  <div className="bento-modal-actions">
+                    <button type="button" className="bento-modal-close" onClick={closeModal}>
+                      <X size={18} />
+                    </button>
+                  </div>
+                </div>
+                <div className="bento-modal-body">
+                  <div className="bento-modal-list">
+                    {QUESTIONNAIRE_STEPS.slice(1).map((s) => {
+                      const sec = sections.find((x) => x.stepNum === s.step);
+                      const isComplete = sec ? sec.status === "complete" : s.step < nextStepNum;
+
+                      return (
+                        <Link
+                          key={s.step}
+                          href={s.path}
+                          className="bento-checklist-row"
+                          onClick={closeModal}
+                        >
+                          <div style={{ display: "flex", alignItems: "center", gap: "0.6rem" }}>
+                            <span className={`bento-step-num-circle ${isComplete ? "complete" : ""}`}>
+                              {isComplete ? "✓" : s.displayNum}
                             </span>
-                            <div style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
-                              <div
-                                style={{
-                                  width: "80px",
-                                  height: "4px",
-                                  backgroundColor: "rgba(23, 34, 40, 0.06)",
-                                  borderRadius: "999px",
-                                  overflow: "hidden",
-                                }}
-                              >
-                                <div
-                                  style={{
-                                    width: `${alloc.percentage}%`,
-                                    height: "100%",
-                                    backgroundColor: "var(--color-sage)",
-                                    borderRadius: "999px",
-                                  }}
-                                />
-                              </div>
-                              <span
-                                style={{
-                                  fontSize: "0.78rem",
-                                  fontWeight: 700,
-                                  color: "var(--color-navy)",
-                                  minWidth: "35px",
-                                  textAlign: "right",
-                                }}
-                              >
-                                {alloc.percentage}%
+                            <div>
+                              <strong style={{ fontSize: "0.88rem", color: "#172228" }}>{s.title}</strong>
+                              <span style={{ fontSize: "0.72rem", color: "#49585F", display: "block" }}>
+                                {s.hindiTitle}
                               </span>
                             </div>
                           </div>
-                        ))}
-                      </div>
-                    </div>
-                  );
-                })}
-            </div>
-          </div>
-        </SectionCard>
-      )}
-
-      {/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-          7. SPECIAL WISHES
-         ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */}
-      <SectionCard>
-        <SectionHeader
-          title="Special Wishes"
-          icon={<ScrollText size={18} />}
-          editUrl={getUrlForStep(8)}
-        />
-        <div style={{ padding: "1.25rem 1.5rem" }}>
-          {state.specialWishes?.hasNoSpecialWishes ? (
-            <div style={{ fontSize: "0.875rem", color: "var(--text-muted)", padding: "0.5rem 0" }}>
-              No special wishes added.
-            </div>
-          ) : (
-            <SpecialWishesSummary wishes={state.specialWishes} />
-          )}
-        </div>
-      </SectionCard>
-
-      {/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-          8. EMOTIONAL PURPOSE
-         ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */}
-      {state.emotionalReason?.trim() && (
-        <SectionCard>
-          <SectionHeader
-            title="Emotional Purpose"
-            icon={<HeartHandshake size={18} />}
-            editUrl={getUrlForStep(9)}
-          />
-          <div style={{ padding: "1.25rem 1.5rem" }}>
-            <div
-              style={{
-                fontSize: "0.875rem",
-                color: "var(--color-navy)",
-                lineHeight: 1.6,
-                fontStyle: "italic",
-                padding: "0.5rem 1rem",
-                borderLeft: "3px solid var(--color-gold)",
-                backgroundColor: "rgba(198, 83, 120, 0.04)",
-                borderRadius: "0 8px 8px 0",
-              }}
-            >
-              "{state.emotionalReason}"
-            </div>
-          </div>
-        </SectionCard>
-      )}
-
-      {/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-          9. SECTION COMPLETION STATUS
-         ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */}
-      <SectionCard>
-        <SectionHeader title="Will Preparation Status" icon={<FileText size={18} />} />
-        <div style={{ padding: "1rem 1.5rem" }}>
-          <div style={{ display: "flex", flexDirection: "column", gap: "0.35rem" }}>
-            {sections.map((section) => {
-              const statusIcon =
-                section.status === "complete" ? (
-                  <Check size={14} strokeWidth={2.5} />
-                ) : section.status === "partial" ? (
-                  <AlertTriangle size={14} />
-                ) : (
-                  <Minus size={14} />
-                );
-              const statusColor =
-                section.status === "complete"
-                  ? "var(--color-sage)"
-                  : section.status === "partial"
-                  ? "#D97706"
-                  : "var(--text-muted)";
-              const statusText =
-                section.status === "complete"
-                  ? "Complete"
-                  : section.status === "partial"
-                  ? "Review Needed"
-                  : "Not Started";
-
-              return (
-                <Link
-                  key={section.label}
-                  href={section.stepUrl}
-                  style={{
-                    display: "flex",
-                    justifyContent: "space-between",
-                    alignItems: "center",
-                    padding: "0.7rem 0.75rem",
-                    borderRadius: "10px",
-                    textDecoration: "none",
-                    transition: "var(--transition)",
-                    backgroundColor: "transparent",
-                  }}
-                  onMouseEnter={(e) => {
-                    e.currentTarget.style.backgroundColor = "var(--bg-card-subtle)";
-                  }}
-                  onMouseLeave={(e) => {
-                    e.currentTarget.style.backgroundColor = "transparent";
-                  }}
-                >
-                  <span
-                    style={{
-                      fontSize: "0.85rem",
-                      fontWeight: 600,
-                      color: "var(--color-navy)",
-                    }}
-                  >
-                    {section.label}
-                  </span>
-                  <div style={{ display: "flex", alignItems: "center", gap: "0.4rem" }}>
-                    <span
-                      style={{
-                        fontSize: "0.75rem",
-                        fontWeight: 600,
-                        color: statusColor,
-                      }}
-                    >
-                      {statusText}
-                    </span>
-                    <span style={{ color: statusColor, display: "flex" }}>{statusIcon}</span>
+                          <span className={`bento-pill ${isComplete ? "bento-pill-green" : "bento-pill-blue"}`}>
+                            {isComplete ? "Completed ✓" : "Continue Step →"}
+                          </span>
+                        </Link>
+                      );
+                    })}
                   </div>
-                </Link>
-              );
-            })}
+                </div>
+              </>
+            )}
+
+            {/* Bottom Scroll Helper Bar across ALL modal boxes */}
+            <div className="bento-modal-scroll-footer">
+              <ArrowUpDown size={12} color="#C65378" />
+              <span>Scroll up / down to explore full section details</span>
+            </div>
           </div>
-        </div>
-      </SectionCard>
-
-      {/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-          10. BOTTOM CTA
-         ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */}
-      <div style={{ textAlign: "center", padding: "1rem 0 2rem" }}>
-        <Link
-          href={nextStepUrl}
-          className="btn btn-gold"
-          style={{
-            padding: "0.85rem 2rem",
-            fontSize: "0.95rem",
-            borderRadius: "14px",
-            fontWeight: 700,
-            textDecoration: "none",
-            display: "inline-flex",
-            alignItems: "center",
-            gap: "0.5rem",
-            boxShadow: "var(--shadow-gold)",
-          }}
-        >
-          Continue Questionnaire
-          <ArrowRight size={18} />
-        </Link>
-      </div>
-    </div>
-  );
-}
-
-/* ═══════════════════════════════════════════════════════════════════
-   SUB-COMPONENTS
-   ═══════════════════════════════════════════════════════════════════ */
-
-function AppointmentCard({
-  role,
-  name,
-  relationship,
-}: {
-  role: string;
-  name: string;
-  relationship?: string;
-}) {
-  return (
-    <div
-      style={{
-        padding: "0.7rem 0.85rem",
-        borderRadius: "12px",
-        border: "1px solid var(--border-subtle)",
-        backgroundColor: "var(--bg-card-subtle)",
-      }}
-    >
-      <div
-        style={{
-          fontSize: "0.68rem",
-          fontWeight: 700,
-          textTransform: "uppercase",
-          letterSpacing: "0.06em",
-          color: "var(--color-gold)",
-          marginBottom: "0.25rem",
-        }}
-      >
-        {role}
-      </div>
-      <div
-        style={{
-          fontSize: "0.875rem",
-          fontWeight: 700,
-          color: "var(--color-navy)",
-        }}
-      >
-        {name}
-      </div>
-      {relationship && (
-        <div
-          style={{
-            fontSize: "0.72rem",
-            color: "var(--text-muted)",
-            textTransform: "capitalize",
-          }}
-        >
-          {relationship}
         </div>
       )}
-    </div>
-  );
-}
 
-function SpecialWishesSummary({
-  wishes,
-}: {
-  wishes: WillDraftingState["specialWishes"];
-}) {
-  if (!wishes) {
-    return (
-      <div style={{ fontSize: "0.875rem", color: "var(--text-muted)", padding: "0.5rem 0" }}>
-        No special wishes added yet.
-      </div>
-    );
-  }
-
-  const items: { label: string; value: string }[] = [];
-  if (wishes.jewelleryInstructions) items.push({ label: "Jewellery", value: wishes.jewelleryInstructions });
-  if (wishes.personalBelongings) items.push({ label: "Personal Belongings", value: wishes.personalBelongings });
-  if (wishes.petsCare) items.push({ label: "Pet Care", value: wishes.petsCare });
-  if (wishes.charitableGifts) items.push({ label: "Charitable Gifts", value: wishes.charitableGifts });
-  if (wishes.digitalAccounts) items.push({ label: "Digital Accounts", value: wishes.digitalAccounts });
-  if (wishes.funeralCeremonyWishes) items.push({ label: "Funeral Wishes", value: wishes.funeralCeremonyWishes });
-  if (wishes.personalMessageToFamily) items.push({ label: "Personal Message", value: wishes.personalMessageToFamily });
-
-  if (items.length === 0) {
-    return (
-      <div style={{ fontSize: "0.875rem", color: "var(--text-muted)", padding: "0.5rem 0" }}>
-        No special wishes added yet.
-      </div>
-    );
-  }
-
-  return (
-    <div style={{ display: "flex", flexDirection: "column", gap: "0.65rem" }}>
-      {items.map((item) => (
-        <div
-          key={item.label}
-          style={{
-            padding: "0.6rem 0.85rem",
-            borderRadius: "10px",
-            border: "1px solid var(--border-subtle)",
-            backgroundColor: "var(--bg-card-subtle)",
-          }}
-        >
-          <div
-            style={{
-              fontSize: "0.72rem",
-              fontWeight: 700,
-              textTransform: "uppercase",
-              letterSpacing: "0.06em",
-              color: "var(--color-gold)",
-              marginBottom: "0.2rem",
-            }}
-          >
-            {item.label}
-          </div>
-          <div
-            style={{
-              fontSize: "0.825rem",
-              color: "var(--color-navy)",
-              lineHeight: 1.5,
-            }}
-          >
-            {item.value}
-          </div>
-        </div>
-      ))}
     </div>
   );
 }

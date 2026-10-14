@@ -1,7 +1,7 @@
 "use client";
 
-import React, { useState } from "react";import WizardButton from "./button";
-
+import React, { useState, useEffect } from "react";
+import WizardButton from "./button";
 import {
   WillDraftingState,
   Asset,
@@ -16,7 +16,6 @@ import {
   Gem,
   Briefcase,
   Car,
-  Coins,
   Boxes,
   Plus,
   Trash2,
@@ -24,22 +23,20 @@ import {
   X,
   ShieldCheck,
   CheckCircle2,
-  ArrowRight,
-  ArrowLeft,
+  ChevronRight,
   Filter,
-  DollarSign,
-  Lock,
-  ExternalLink,
-  ChevronDown,
-  ChevronUp,
+  AlertCircle,
 } from "lucide-react";
 import AudioAssistantButton from "@/components/ui/AudioAssistantButton";
 import LanguageToggle from "@/components/ui/LanguageToggle";
 import { useLanguage } from "@/context/LanguageContext";
+import IndianAmountInput from "@/components/ui/IndianAmountInput";
+import { sanitizeNameInput, sanitizePercent, toTitleCaseText, normalizeIdCode } from "@/lib/inputSanitizers";
+import { useWillStore } from "@/lib/useWillStore";
 
 interface Step4AssetsProps {
-  state: WillDraftingState;
-  onUpdate: (updater: (prev: WillDraftingState) => WillDraftingState) => void;
+  state?: WillDraftingState;
+  onUpdate?: (updater: (prev: WillDraftingState) => WillDraftingState) => void;
   onNext: () => void;
   onBack: () => void;
   lang?: "en" | "hi";
@@ -47,156 +44,321 @@ interface Step4AssetsProps {
 }
 
 export default function Step4Assets({
-  state,
-  onUpdate,
+  state: propState,
+  onUpdate: propOnUpdate,
   onNext,
   onBack,
   lang: propLang,
   onChangeLang: propOnChangeLang,
 }: Step4AssetsProps) {
+  const storeState = useWillStore((s) => s.state);
+  const storeUpdateState = useWillStore((s) => s.updateState);
+  const state = propState || storeState;
+  const onUpdate = propOnUpdate || storeUpdateState;
+
   const context = useLanguage();
   const currentLang = propLang || context.lang || "en";
   const isHi = currentLang === "hi";
   const handleToggleLang = propOnChangeLang || context.setLang;
 
   const [assets, setAssets] = useState<Asset[]>(state.assets || []);
+
+  useEffect(() => {
+    setAssets(state.assets || []);
+  }, [state.assets]);
   const [modalOpen, setModalOpen] = useState(false);
+  const [modalError, setModalError] = useState("");
+  const [showEmptyWarning, setShowEmptyWarning] = useState(false);
   const [editingAssetId, setEditingAssetId] = useState<string | null>(null);
   const [activeFilter, setActiveFilter] = useState<string>("all");
-  const [expandedGroups, setExpandedGroups] = useState<Record<string, boolean>>({});
-
-  const toggleGroup = (groupId: string) => {
-    setExpandedGroups((prev) => ({
-      ...prev,
-      [groupId]: !prev[groupId],
-    }));
-  };
 
   // Form state
-  const [category, setCategory] = useState<AssetCategory>("property");
+  const [category, setCategory] = useState<AssetCategory>("bank_account");
   const [name, setName] = useState("");
-  const [typeDetails, setTypeDetails] = useState("Residential Flat");
+  const [typeDetails, setTypeDetails] = useState("Savings Account");
+  const [customCategoryName, setCustomCategoryName] = useState("");
   const [identifier, setIdentifier] = useState("");
   const [addressOrInstitution, setAddressOrInstitution] = useState("");
   const [ownership, setOwnership] = useState<"sole" | "joint">("sole");
   const [jointOwnerName, setJointOwnerName] = useState("");
+  const [jointOwnerRelationship, setJointOwnerRelationship] = useState("");
   const [ownershipPercentage, setOwnershipPercentage] = useState<number>(50);
-  const [approximateValue, setApproximateValue] = useState<number>(7500000); // 75 Lakhs default
+  const [approximateValue, setApproximateValue] = useState<number>(1500000);
   const [hasLoan, setHasLoan] = useState(false);
+  const [loanDetails, setLoanDetails] = useState("");
+  const [specialInstructions, setSpecialInstructions] = useState("");
 
-  // Category visual configuration with Lucide Icons
+  // Insurance Specific Fields
+  const [policyNumber, setPolicyNumber] = useState("");
+  const [insuranceCompany, setInsuranceCompany] = useState("");
+  const [sumAssured, setSumAssured] = useState<number>(5000000);
+  const [nomineeName, setNomineeName] = useState("");
+
+  // Category Configuration
   const categoryConfigs: Record<
     AssetCategory,
-    { label: string; Icon: React.ElementType; color: string; quickTypes: string[] }
+    {
+      label: string;
+      hindiLabel: string;
+      Icon: React.ElementType;
+      color: string;
+      quickTypes: string[];
+    }
   > = {
-    property: {
-      label: "Real Estate",
-      Icon: Building2,
-      color: "#172228",
-      quickTypes: ["Residential Flat", "Bungalow / Villa", "Maternal Inherited Property", "Agricultural Land", "Commercial Office"],
-    },
     bank_account: {
-      label: "Bank & FD",
+      label: "Bank & Fixed Deposits",
+      hindiLabel: "बैंक खाते एवं सावधि जमा",
       Icon: Landmark,
       color: "#C65378",
-      quickTypes: ["Salary Account", "Savings Account", "Fixed Deposit (FD)", "PPF Account", "NPS Account", "Sukanya Samriddhi Account"],
+      quickTypes: [
+        "Savings Account",
+        "Fixed Deposit (FD)",
+        "Recurring Deposit (RD)",
+        "Salary Account",
+        "Public Provident Fund (PPF)",
+        "National Pension Scheme (NPS)",
+        "Current Account",
+      ],
+    },
+    property: {
+      label: "Real Estate & Land",
+      hindiLabel: "मकान, फ्लैट एवं जमीन",
+      Icon: Building2,
+      color: "#172228",
+      quickTypes: [
+        "Residential Flat / Apartment",
+        "Independent House / Villa",
+        "Commercial Office / Shop",
+        "Agricultural Land",
+        "Residential Plot / Land",
+        "Inherited Family Property",
+      ],
+    },
+    insurance: {
+      label: "Insurance Policies",
+      hindiLabel: "जीवन व टर्म बीमा पॉलिसियां",
+      Icon: ShieldCheck,
+      color: "#0284C7",
+      quickTypes: [
+        "Term Insurance (Pure Life Cover)",
+        "Endowment Policy (Traditional)",
+        "Unit Linked Insurance Plan (ULIP)",
+        "Whole Life Insurance",
+        "Money Back Policy",
+        "Postal Life Insurance (PLI)",
+        "Group Term Life Cover",
+      ],
     },
     investments: {
-      label: "Mutual Funds",
+      label: "Mutual Funds & Stocks",
+      hindiLabel: "म्यूचुअल फंड एवं शेयर",
       Icon: TrendingUp,
       color: "#5F7E75",
-      quickTypes: ["Mutual Fund Portfolio", "Demat / Equities", "SIP Folios", "NPS Account", "Sovereign Gold Bonds"],
-    },
-    shares: {
-      label: "Equities / Demat",
-      Icon: TrendingUp,
-      color: "#2563EB",
-      quickTypes: ["Demat Account", "Direct Stocks Portfolio", "Advisory & Stock Options", "SINE / Incubator Holdings"],
-    },
-    mutual_funds: {
-      label: "Mutual Funds",
-      Icon: TrendingUp,
-      color: "#5F7E75",
-      quickTypes: ["Mutual Fund Portfolio", "SIP Folios", "Large-Cap Index Funds", "Debt / Hybrid MFs"],
+      quickTypes: [
+        "Mutual Fund Portfolio",
+        "Direct Stocks & Demat Account",
+        "Systematic Investment Plan (SIP)",
+        "Sovereign Gold Bonds (SGB)",
+        "Corporate Bonds & Debentures",
+        "ESOPs & Advisory Equity",
+      ],
     },
     jewellery: {
       label: "Jewellery & Gold",
+      hindiLabel: "सोना, गहने एवं लॉकर",
       Icon: Gem,
       color: "#E11D48",
-      quickTypes: ["Bank Locker & Valuables", "Ancestral Gold Ornaments", "Diamond Jewellery", "Silver Bullion / Artifacts"],
-    },
-    business: {
-      label: "Business & Equity",
-      Icon: Briefcase,
-      color: "#8B5CF6",
-      quickTypes: ["Startup Equity (CIN)", "Advisory / ESOP Holdings", "SINE / Incubated Structure", "Private Ltd Shares", "LLP Partnership Interest"],
+      quickTypes: [
+        "Gold Ornaments & Jewellery",
+        "Diamond & Precious Stones",
+        "Silver Bullion & Utensils",
+        "Bank Safe Deposit Locker",
+      ],
     },
     vehicles: {
-      label: "Vehicles",
+      label: "Motor Vehicles",
+      hindiLabel: "गाड़ियां एवं वाहन",
       Icon: Car,
       color: "#059669",
-      quickTypes: ["Four-Wheeler Car", "Luxury Automobile", "Two-Wheeler Bike"],
+      quickTypes: [
+        "Four-Wheeler Car",
+        "Two-Wheeler Motorcycle / Scooter",
+        "Luxury Automobile",
+        "Commercial Vehicle",
+      ],
     },
-    insurance: {
-      label: "Insurance",
-      Icon: ShieldCheck,
-      color: "#0284C7",
-      quickTypes: ["Life Insurance Policy", "Group Term Insurance", "Postal Life Insurance", "Endowment Policy"],
+    business: {
+      label: "Business & Startup Equity",
+      hindiLabel: "व्यवसाय व स्टार्टअप शेयर",
+      Icon: Briefcase,
+      color: "#8B5CF6",
+      quickTypes: [
+        "Private Limited Company Shares",
+        "LLP Partnership Interest",
+        "Startup Equity & ESOPs",
+        "Sole Proprietorship Business",
+        "Family Firm Partnership",
+      ],
+    },
+    other: {
+      label: "Other / Custom Assets",
+      hindiLabel: "अन्य व कस्टम संपत्तियां",
+      Icon: Boxes,
+      color: "#EA580C",
+      quickTypes: [
+        "Artwork & Paintings Collection",
+        "Cryptocurrency Hardware Vault",
+        "Intellectual Property / Patents & Trademarks",
+        "Agricultural Produce & Machinery",
+        "Club Equity & Memberships",
+        "Personal Loan Receivable",
+        "Custom Asset Classification",
+      ],
+    },
+    shares: {
+      label: "Equities / Demat",
+      hindiLabel: "शेयर एवं डीमैट",
+      Icon: TrendingUp,
+      color: "#2563EB",
+      quickTypes: ["Demat Account", "Direct Stocks", "ESOPs"],
+    },
+    mutual_funds: {
+      label: "Mutual Funds",
+      hindiLabel: "म्यूचुअल फंड",
+      Icon: TrendingUp,
+      color: "#5F7E75",
+      quickTypes: ["Mutual Fund Portfolio", "SIP Folios"],
     },
     digital: {
       label: "Digital Assets",
-      Icon: Coins,
-      color: "#EA580C",
-      quickTypes: ["Crypto / Hardware Wallet", "Domains & Online IP", "Creator Monetization", "Digital Vault"],
-    },
-    other: {
-      label: "Other Assets",
+      hindiLabel: "डिजिटल संपत्तियां",
       Icon: Boxes,
-      color: "#64748B",
-      quickTypes: ["Artwork & Paintings", "Club Memberships", "Personal Loan Receivable"],
+      color: "#EA580C",
+      quickTypes: ["Crypto Wallet", "Domain Names"],
     },
   };
 
+  // Primary 8 Category Boxes to display
+  const primaryBoxes: { id: AssetCategory; defaultVal: number }[] = [
+    { id: "bank_account", defaultVal: 1500000 },
+    { id: "property", defaultVal: 12500000 },
+    { id: "insurance", defaultVal: 5000000 },
+    { id: "investments", defaultVal: 2000000 },
+    { id: "jewellery", defaultVal: 2500000 },
+    { id: "vehicles", defaultVal: 1200000 },
+    { id: "business", defaultVal: 3500000 },
+    { id: "other", defaultVal: 1000000 },
+  ];
+
   const handleOpenAdd = (defaultCat?: AssetCategory) => {
     setEditingAssetId(null);
-    const cat = defaultCat || "property";
+    const cat = defaultCat || "bank_account";
     setCategory(cat);
-    setTypeDetails(categoryConfigs[cat].quickTypes[0]);
-    if (cat === "property") setApproximateValue(12500000);
-    else if (cat === "bank_account") setApproximateValue(1500000);
-    else if (cat === "jewellery") setApproximateValue(2500000);
-    else setApproximateValue(2000000);
-
+    const cfg = categoryConfigs[cat] || categoryConfigs.other;
+    setTypeDetails(cfg.quickTypes[0]);
+    setCustomCategoryName("");
     setName("");
     setIdentifier("");
     setAddressOrInstitution("");
     setOwnership("sole");
     setJointOwnerName("");
+    setJointOwnerRelationship("");
     setOwnershipPercentage(50);
     setHasLoan(false);
+    setLoanDetails("");
+    setSpecialInstructions("");
+
+    // Insurance fields
+    setPolicyNumber("");
+    setInsuranceCompany("");
+    setSumAssured(5000000);
+    setNomineeName("");
+
+    const box = primaryBoxes.find((b) => b.id === cat);
+    setApproximateValue(box ? box.defaultVal : 1500000);
+    setModalError("");
     setModalOpen(true);
   };
 
   const handleOpenEdit = (asset: Asset) => {
     setEditingAssetId(asset.id);
-    setCategory(asset.category);
-    setTypeDetails(asset.typeDetails || (categoryConfigs[asset.category]?.quickTypes[0] || ""));
-    setName(asset.name);
+    const cat = asset.category || "other";
+    setCategory(cat);
+    setTypeDetails(asset.typeDetails || (categoryConfigs[cat]?.quickTypes[0] || ""));
+    setCustomCategoryName(asset.customCategoryName || (cat === "other" ? asset.typeDetails : ""));
+    setName(asset.name || "");
     setIdentifier(asset.identifier || "");
     setAddressOrInstitution(asset.addressOrInstitution || "");
-    setOwnership(asset.ownership);
-    setJointOwnerName(asset.jointOwnerName || "");
+    setOwnership(asset.ownership || "sole");
+    const rawJointName = (asset.jointOwnerName || "").trim();
+    const rawJointRel = (asset.jointOwnerRelationship || "").trim();
+    const wordMatch = rawJointName.match(
+      /^(.+?)\s+(wife|husband|spouse|brother|sister|father|mother|son|daughter|partner)$/i
+    );
+    if (!rawJointRel && rawJointName.includes("(") && rawJointName.endsWith(")")) {
+      const idx = rawJointName.lastIndexOf("(");
+      setJointOwnerName(sanitizeNameInput(rawJointName.slice(0, idx)).trim());
+      setJointOwnerRelationship(sanitizeNameInput(rawJointName.slice(idx + 1, -1)).trim());
+    } else if (!rawJointRel && wordMatch) {
+      setJointOwnerName(sanitizeNameInput(wordMatch[1]).trim());
+      setJointOwnerRelationship(sanitizeNameInput(wordMatch[2]).trim());
+    } else {
+      setJointOwnerName(rawJointName);
+      setJointOwnerRelationship(rawJointRel);
+    }
     setOwnershipPercentage(asset.ownershipPercentage ?? (asset.ownership === "joint" ? 50 : 100));
     setApproximateValue(asset.approximateValue || 0);
-    setHasLoan(asset.hasLoan || false);
+    setHasLoan(asset.hasLoan || Boolean(asset.loanDetails?.trim()));
+    setLoanDetails(asset.loanDetails || "");
+    setSpecialInstructions(asset.specialInstructions || "");
+
+    // Insurance fields
+    setPolicyNumber(asset.policyNumber || asset.identifier || "");
+    setInsuranceCompany(asset.insuranceCompany || asset.addressOrInstitution || "");
+    setSumAssured(asset.sumAssured || asset.approximateValue || 0);
+    setNomineeName(asset.nomineeName || "");
+
+    setModalError("");
     setModalOpen(true);
   };
 
   const handleSaveAsset = (e: React.FormEvent) => {
     e.preventDefault();
-    if (!name.trim()) return;
+    if (!name.trim()) {
+      setModalError(
+        isHi
+          ? "कृपया संपत्ति का नाम या विवरण दर्ज करें (जैसे: 2BHK फ्लैट, SBI खाता, सोना आदि)।"
+          : "Please enter a name or description for this asset (e.g. 2BHK Flat, SBI Savings Account, Gold Jewellery)."
+      );
+      return;
+    }
+
+    if (ownership === "joint" && (!jointOwnerName.trim() || !jointOwnerRelationship.trim())) {
+      setModalError(
+        isHi
+          ? "कृपया सह-स्वामी का पूरा नाम और उनसे अपना संबंध दोनों दर्ज करें।"
+          : "Please enter both the Joint Owner's Full Name and their Relationship with you."
+      );
+      return;
+    }
 
     const finalOwnershipPercentage = ownership === "joint" ? (ownershipPercentage || 50) : 100;
+    const finalValuation = category === "insurance" ? (sumAssured || approximateValue) : approximateValue;
+
+    const finalTypeDetails =
+      category === "other" && customCategoryName.trim()
+        ? sanitizeNameInput(customCategoryName).trim()
+        : typeDetails;
+
+    const finalIdentifier =
+      category === "insurance" && policyNumber.trim()
+        ? policyNumber.trim()
+        : identifier.trim();
+
+    const finalInstitution =
+      category === "insurance" && insuranceCompany.trim()
+        ? insuranceCompany.trim()
+        : addressOrInstitution.trim();
 
     if (editingAssetId) {
       const updatedAssets = assets.map((a) => {
@@ -205,14 +367,22 @@ export default function Step4Assets({
             ...a,
             category,
             name: name.trim(),
-            typeDetails,
-            identifier: identifier.trim() || (undefined as any),
-            addressOrInstitution: addressOrInstitution.trim() || (undefined as any),
+            typeDetails: finalTypeDetails,
+            identifier: finalIdentifier || "",
+            addressOrInstitution: finalInstitution || "",
             ownership,
-            jointOwnerName: ownership === "joint" ? jointOwnerName.trim() : undefined,
+            jointOwnerName: ownership === "joint" ? sanitizeNameInput(jointOwnerName).trim() : undefined,
+            jointOwnerRelationship: ownership === "joint" ? sanitizeNameInput(jointOwnerRelationship).trim() : undefined,
             ownershipPercentage: finalOwnershipPercentage,
-            approximateValue,
+            approximateValue: finalValuation,
             hasLoan,
+            loanDetails: hasLoan && loanDetails.trim() ? loanDetails.trim() : undefined,
+            specialInstructions: specialInstructions.trim() || undefined,
+            customCategoryName: category === "other" ? sanitizeNameInput(customCategoryName).trim() : undefined,
+            policyNumber: category === "insurance" ? policyNumber.trim() : undefined,
+            insuranceCompany: category === "insurance" ? insuranceCompany.trim() : undefined,
+            sumAssured: category === "insurance" ? sumAssured : undefined,
+            nomineeName: nomineeName.trim() ? sanitizeNameInput(nomineeName).trim() : undefined,
           };
         }
         return a;
@@ -228,14 +398,22 @@ export default function Step4Assets({
         id: `asset-${Date.now()}`,
         category,
         name: name.trim(),
-        typeDetails,
-        identifier: identifier.trim() || (undefined as any),
-        addressOrInstitution: addressOrInstitution.trim() || (undefined as any),
+        typeDetails: finalTypeDetails,
+        identifier: finalIdentifier || "",
+        addressOrInstitution: finalInstitution || "",
         ownership,
-        jointOwnerName: ownership === "joint" ? jointOwnerName.trim() : undefined,
+        jointOwnerName: ownership === "joint" ? sanitizeNameInput(jointOwnerName).trim() : undefined,
+        jointOwnerRelationship: ownership === "joint" ? sanitizeNameInput(jointOwnerRelationship).trim() : undefined,
         ownershipPercentage: finalOwnershipPercentage,
-        approximateValue,
+        approximateValue: finalValuation,
         hasLoan,
+        loanDetails: hasLoan && loanDetails.trim() ? loanDetails.trim() : undefined,
+        specialInstructions: specialInstructions.trim() || undefined,
+        customCategoryName: category === "other" ? sanitizeNameInput(customCategoryName).trim() : undefined,
+        policyNumber: category === "insurance" ? policyNumber.trim() : undefined,
+        insuranceCompany: category === "insurance" ? insuranceCompany.trim() : undefined,
+        sumAssured: category === "insurance" ? sumAssured : undefined,
+        nomineeName: nomineeName.trim() ? sanitizeNameInput(nomineeName).trim() : undefined,
       };
 
       const updatedAssets = [...assets, newAsset];
@@ -246,7 +424,7 @@ export default function Step4Assets({
       }));
     }
 
-    setEditingAssetId(null);
+    setShowEmptyWarning(false);
     setModalOpen(false);
   };
 
@@ -260,110 +438,58 @@ export default function Step4Assets({
     }));
   };
 
+  const handleProceed = () => {
+    if (assets.length === 0) {
+      setShowEmptyWarning(true);
+      return;
+    }
+    onUpdate((prev) => ({
+      ...prev,
+      assets,
+    }));
+    onNext();
+  };
+
   const totalAssetValue = assets.reduce((sum, a) => sum + (a.approximateValue || 0), 0);
 
-  const formatCurrency = (val: number) => {
+  const formatCurrency = (val?: number) => {
+    if (!val || val === 0) return "₹ 0";
     if (val >= 10000000) return `₹ ${(val / 10000000).toFixed(2)} Cr`;
     if (val >= 100000) return `₹ ${(val / 100000).toFixed(2)} Lakhs`;
     return `₹ ${val.toLocaleString("en-IN")}`;
   };
 
-  const categoryGroups: {
-    id: string;
-    label: string;
-    shortLabel: string;
-    categories: AssetCategory[];
-    defaultCat: AssetCategory;
-    Icon: React.ElementType;
-    color: string;
-  }[] = [
-    {
-      id: "accounts",
-      label: "Accounts, Bank Deposits & Retirement",
-      shortLabel: "Accounts",
-      categories: ["bank_account"],
-      defaultCat: "bank_account",
-      Icon: Landmark,
-      color: "#C65378",
-    },
-    {
-      id: "property",
-      label: "Land & Real Estate Properties",
-      shortLabel: "Land & Real Estate",
-      categories: ["property"],
-      defaultCat: "property",
-      Icon: Building2,
-      color: "#172228",
-    },
-    {
-      id: "vehicles",
-      label: "Motor Vehicles",
-      shortLabel: "Vehicles",
-      categories: ["vehicles"],
-      defaultCat: "vehicles",
-      Icon: Car,
-      color: "#059669",
-    },
-    {
-      id: "investments",
-      label: "Mutual Funds, Shares & Investments",
-      shortLabel: "Mutual Funds & Shares",
-      categories: ["investments", "shares", "mutual_funds"],
-      defaultCat: "investments",
-      Icon: TrendingUp,
-      color: "#5F7E75",
-    },
-    {
-      id: "business",
-      label: "Business & Startup Equity",
-      shortLabel: "Business & Equity",
-      categories: ["business"],
-      defaultCat: "business",
-      Icon: Briefcase,
-      color: "#8B5CF6",
-    },
-    {
-      id: "insurance",
-      label: "Life & Term Insurance Policies",
-      shortLabel: "Insurance",
-      categories: ["insurance"],
-      defaultCat: "insurance",
-      Icon: ShieldCheck,
-      color: "#0284C7",
-    },
-    {
-      id: "jewellery",
-      label: "Jewellery, Gold & Bank Lockers",
-      shortLabel: "Jewellery & Lockers",
-      categories: ["jewellery"],
-      defaultCat: "jewellery",
-      Icon: Gem,
-      color: "#E11D48",
-    },
-    {
-      id: "other",
-      label: "Digital & Other Assets",
-      shortLabel: "Other Assets",
-      categories: ["digital", "other"],
-      defaultCat: "other",
-      Icon: Boxes,
-      color: "#64748B",
-    },
-  ];
-
-  const visibleGroups =
+  // Filtered Assets list
+  const filteredAssets =
     activeFilter === "all"
-      ? categoryGroups.filter((grp) =>
-          assets.some((a) => grp.categories.includes(a.category))
-        )
-      : categoryGroups.filter((grp) => grp.id === activeFilter);
+      ? assets
+      : assets.filter((a) => {
+          if (activeFilter === "investments") {
+            return a.category === "investments" || a.category === "shares" || a.category === "mutual_funds";
+          }
+          if (activeFilter === "other") {
+            return a.category === "other" || a.category === "digital";
+          }
+          return a.category === activeFilter;
+        });
 
-  const activeGroupForAdd =
-    categoryGroups.find((g) => g.id === activeFilter)?.defaultCat || "property";
+  // Group id (matches the category boxes) for any asset category
+  const boxIdForCategory = (cat: string) =>
+    cat === "shares" || cat === "mutual_funds" ? "investments" : cat === "digital" ? "other" : cat;
+
+  // In the default ("all") view the full list is shown, grouped by category in box order
+  const orderedAssets =
+    activeFilter === "all"
+      ? [...filteredAssets].sort((a, b) => {
+          const ia = primaryBoxes.findIndex((bx) => bx.id === boxIdForCategory(a.category));
+          const ib = primaryBoxes.findIndex((bx) => bx.id === boxIdForCategory(b.category));
+          return (ia === -1 ? 999 : ia) - (ib === -1 ? 999 : ib);
+        })
+      : filteredAssets;
 
   return (
-    <div style={{ display: "flex", flexDirection: "column", gap: "0.85rem", width: "100%", height: "100%", justifyContent: "space-between" }}>
-      {/* Compact Header with Stats & Actions */}
+    <div style={{ display: "flex", flexDirection: "column", gap: "1.25rem", width: "100%" }}>
+      {/* Top Header with Total Valuation and Global Actions */}
       <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: "0.75rem" }}>
         <div>
           <div style={{ display: "flex", alignItems: "baseline", gap: "0.65rem", flexWrap: "wrap" }}>
@@ -371,21 +497,21 @@ export default function Step4Assets({
               {isHi ? "अपनी सभी संपत्तियों को दर्ज करें" : "Catalog Your Wealth Portfolio"}
             </h2>
             <span style={{ fontSize: "0.82rem", fontWeight: 700, color: "var(--color-gold)", backgroundColor: "rgba(198, 83, 120, 0.12)", padding: "0.15rem 0.55rem", borderRadius: "999px" }}>
-              {isHi ? "कुल मूल्य" : "Total"}: {formatCurrency(totalAssetValue)} ({assets.length} {isHi ? "मदें" : "items"})
+              {isHi ? "कुल मूल्य" : "Total"}: {formatCurrency(totalAssetValue)} ({assets.length} {isHi ? "दर्ज संपत्तियां" : "registered assets"})
             </span>
           </div>
         </div>
 
-        {/* Language Toggle, Audio Assistant & Add Asset Button */}
-        <div style={{ display: "flex", alignItems: "center", gap: "0.5rem", flexWrap: "wrap" }}>
+        <div className="wizard-step-header-meta" style={{ display: "flex", alignItems: "center", gap: "0.5rem", flexWrap: "wrap" }}>
           <LanguageToggle size="sm" currentLang={currentLang} onToggle={handleToggleLang} />
           <AudioAssistantButton
-            textToSpeak="What assets do you own? Tap the Add Asset button to add your house, bank accounts, gold, shares, startup equity, vehicles, or insurance. You can specify exact account numbers and values."
-            label={isHi ? "सुनें 🔊" : "Listen 🔊"}
+            textToSpeak="What assets do you own? Tap any category icon box below or the plus button at the top right to add your house, bank accounts, insurance policies, gold, or custom assets."
+            hindiText="आपकी कौन-कौन सी संपत्तियां हैं? नीचे दिए गए किसी भी श्रेणी बॉक्स पर या ऊपर दाईं ओर दिए गए प्लस चिह्न पर क्लिक करके अपना मकान, बैंक खाता, बीमा पॉलिसी, सोना या अन्य संपत्ति जोड़ें।"
+            label={isHi ? "सुनें" : "Listen"}
           />
           <button
             type="button"
-            onClick={() => handleOpenAdd(activeGroupForAdd)}
+            onClick={() => handleOpenAdd("bank_account")}
             className="btn btn-gold"
             style={{
               padding: "0.45rem 0.95rem",
@@ -397,461 +523,526 @@ export default function Step4Assets({
               fontWeight: 700,
               boxShadow: "0 2px 10px rgba(198, 83, 120, 0.25)",
               cursor: "pointer",
+              whiteSpace: "nowrap",
             }}
           >
-            <Plus size={14} /> {isHi ? "+ नई संपत्ति जोड़ें" : "+ Add Asset"}
+            <Plus size={14} strokeWidth={2.5} /> {isHi ? "नई संपत्ति जोड़ें" : "Add Asset"}
           </button>
         </div>
       </div>
 
-      {/* Category Filter Strip */}
+      {/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+          1. CATEGORY ICON BOXES GRID (With "+" Sign at Top Right)
+         ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */}
       <div
+        className="assets-category-grid"
         style={{
-          display: "flex",
-          alignItems: "center",
-          gap: "0.35rem",
-          flexWrap: "wrap",
-          backgroundColor: "rgba(23, 34, 40, 0.04)",
-          padding: "0.3rem",
-          borderRadius: "12px",
+          display: "grid",
+          gridTemplateColumns: "repeat(auto-fit, minmax(210px, 1fr))",
+          gap: "0.75rem",
+          width: "100%",
         }}
       >
-        <button
-          type="button"
-          onClick={() => setActiveFilter("all")}
-          style={{
-            padding: "0.38rem 0.75rem",
-            borderRadius: "8px",
-            border: "none",
-            backgroundColor: activeFilter === "all" ? "var(--color-navy)" : "transparent",
-            color: activeFilter === "all" ? "#FFFFFF" : "var(--color-slate)",
-            fontSize: "0.76rem",
-            fontWeight: activeFilter === "all" ? 700 : 600,
-            cursor: "pointer",
-            transition: "all 0.15s ease",
-          }}
-        >
-          All ({assets.length})
-        </button>
+        {primaryBoxes.map((box) => {
+          const cfg = categoryConfigs[box.id] || categoryConfigs.other;
+          const BoxIcon = cfg.Icon;
+          const catAssets = assets.filter((a) => {
+            if (box.id === "investments") {
+              return a.category === "investments" || a.category === "shares" || a.category === "mutual_funds";
+            }
+            if (box.id === "other") {
+              return a.category === "other" || a.category === "digital";
+            }
+            return a.category === box.id;
+          });
+          const catSubtotal = catAssets.reduce((s, a) => s + (a.approximateValue || 0), 0);
+          const isFilterActive = activeFilter === box.id;
 
-        {categoryGroups.map((grp) => {
-          const count = assets.filter((a) => grp.categories.includes(a.category)).length;
-          if (count === 0 && grp.id === "other") return null;
-          const isSel = activeFilter === grp.id;
-          const GrpIcon = grp.Icon;
           return (
-            <button
-              key={grp.id}
-              type="button"
+            <div
+              key={box.id}
+              className="assets-category-card"
               onClick={() => {
-                setActiveFilter(grp.id);
-                setExpandedGroups((prev) => ({ ...prev, [grp.id]: true }));
+                setActiveFilter(activeFilter === box.id ? "all" : box.id);
               }}
               style={{
-                padding: "0.38rem 0.75rem",
-                borderRadius: "8px",
-                border: "none",
-                backgroundColor: isSel ? "var(--color-gold)" : "transparent",
-                color: isSel ? "#FFFFFF" : "var(--color-slate)",
-                fontSize: "0.76rem",
-                fontWeight: isSel ? 700 : 600,
+                backgroundColor: "#FFFFFF",
+                borderRadius: "16px",
+                border: isFilterActive ? `2px solid ${cfg.color}` : "1px solid rgba(27, 42, 74, 0.1)",
+                padding: "0.85rem 1rem",
+                boxShadow: isFilterActive
+                  ? "0 6px 20px rgba(198, 83, 120, 0.12)"
+                  : "0 2px 8px rgba(0, 0, 0, 0.02)",
                 cursor: "pointer",
-                display: "inline-flex",
-                alignItems: "center",
-                gap: "0.35rem",
-                transition: "all 0.15s ease",
+                transition: "all 0.2s cubic-bezier(0.16, 1, 0.3, 1)",
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "space-between",
+                gap: "0.6rem",
+                position: "relative",
               }}
             >
-              <GrpIcon size={13} />
-              <span>
-                {grp.shortLabel} ({count})
-              </span>
-            </button>
+              {/* Top Row: Icon Container on Left, Plus Sign on Top Right */}
+              <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start" }}>
+                <div
+                  style={{
+                    width: "36px",
+                    height: "36px",
+                    borderRadius: "10px",
+                    backgroundColor: `${cfg.color}15`,
+                    color: cfg.color,
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    flexShrink: 0,
+                  }}
+                >
+                  <BoxIcon size={20} strokeWidth={2.2} />
+                </div>
+
+                {/* Plus Sign at Top Right */}
+                <button
+                  type="button"
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    handleOpenAdd(box.id);
+                  }}
+                  title={isHi ? `${cfg.hindiLabel} जोड़ें` : `Add ${cfg.label}`}
+                  style={{
+                    width: "28px",
+                    height: "28px",
+                    borderRadius: "50%",
+                    backgroundColor: "rgba(198, 83, 120, 0.12)",
+                    color: "#C65378",
+                    border: "1px solid rgba(198, 83, 120, 0.25)",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    cursor: "pointer",
+                    transition: "all 0.18s ease",
+                  }}
+                  onMouseEnter={(e) => {
+                    e.currentTarget.style.backgroundColor = "#C65378";
+                    e.currentTarget.style.color = "#FFFFFF";
+                  }}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.style.backgroundColor = "rgba(198, 83, 120, 0.12)";
+                    e.currentTarget.style.color = "#C65378";
+                  }}
+                >
+                  <Plus size={15} strokeWidth={3} />
+                </button>
+              </div>
+
+              {/* Bottom Details: Category Title & Count/Valuation */}
+              <div>
+                <h4 style={{ margin: "0 0 0.15rem", fontSize: "0.88rem", fontWeight: 700, color: "var(--color-navy)" }}>
+                  {isHi ? cfg.hindiLabel : cfg.label}
+                </h4>
+
+                <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", fontSize: "0.72rem" }}>
+                  {catAssets.length > 0 ? (
+                    <span style={{ fontWeight: 700, color: "#166534" }}>
+                      {catAssets.length} {catAssets.length === 1 ? (isHi ? "मद" : "item") : (isHi ? "मदें" : "items")} • {formatCurrency(catSubtotal)}
+                    </span>
+                  ) : (
+                    <span style={{ color: "var(--color-slate)", fontWeight: 500 }}>
+                      {isHi ? "0 दर्ज" : "0 added"}
+                    </span>
+                  )}
+
+                  {isFilterActive && (
+                    <span style={{ color: cfg.color, fontWeight: 700, fontSize: "0.68rem" }}>
+                      {isHi ? "सक्रिय फिल्टर" : "Filtered"}
+                    </span>
+                  )}
+                </div>
+              </div>
+            </div>
           );
         })}
       </div>
 
-      {/* Categorized Single-Column Horizontal Rows Container */}
-      <div style={{ flex: 1, minHeight: 0, overflowY: "auto", paddingRight: "0.25rem", display: "flex", flexDirection: "column", gap: "1.1rem" }}>
-        {visibleGroups.length > 0 ? (
-          visibleGroups.map((grp) => {
-            const groupAssets = assets.filter((a) => grp.categories.includes(a.category));
-            const groupSubtotal = groupAssets.reduce((s, a) => s + (a.approximateValue || 0), 0);
-            const GrpIcon = grp.Icon;
-            const isExpanded = !!expandedGroups[grp.id];
+      {/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+          2. UNDER THAT: SHOW REGISTERED ASSETS LIST & CARDS
+         ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */}
+      <div style={{ display: "flex", flexDirection: "column", gap: "0.65rem" }}>
+        {/* Active Filter Title Bar */}
+        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", padding: "0.2rem 0.25rem" }}>
+          <div style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
+            <span style={{ fontSize: "0.85rem", fontWeight: 800, color: "var(--color-navy)", textTransform: "uppercase", letterSpacing: "0.04em" }}>
+              {activeFilter === "all"
+                ? (isHi ? "दर्ज संपत्तियों की सूची" : "Registered Assets Schedule")
+                : (isHi ? `फिल्टर: ${categoryConfigs[activeFilter as AssetCategory]?.hindiLabel || activeFilter}` : `Filtered: ${categoryConfigs[activeFilter as AssetCategory]?.label || activeFilter}`)}
+            </span>
+            <span style={{ fontSize: "0.72rem", fontWeight: 700, padding: "0.1rem 0.5rem", borderRadius: "999px", backgroundColor: "rgba(27, 42, 74, 0.08)", color: "var(--color-navy)" }}>
+              {filteredAssets.length} {filteredAssets.length === 1 ? (isHi ? "संपत्ति" : "asset") : (isHi ? "संपत्तियां" : "assets")}
+            </span>
+          </div>
+
+          {activeFilter !== "all" && (
+            <button
+              type="button"
+              onClick={() => setActiveFilter("all")}
+              style={{
+                fontSize: "0.74rem",
+                color: "var(--color-gold)",
+                backgroundColor: "transparent",
+                border: "none",
+                fontWeight: 700,
+                cursor: "pointer",
+              }}
+            >
+              {isHi ? "सभी संपत्तियां देखें (All) ✕" : "Show All Assets ✕"}
+            </button>
+          )}
+        </div>
+
+        {/* Assets Cards */}
+        {filteredAssets.length > 0 ? (
+          orderedAssets.map((asset, assetIdx) => {
+            const cfg = categoryConfigs[asset.category] || categoryConfigs.other;
+            const AssetIcon = cfg.Icon;
+            const isInsurance = asset.category === "insurance";
+            const isOther = asset.category === "other" || asset.category === "digital";
+            const groupId = boxIdForCategory(asset.category);
+            const groupCfg = categoryConfigs[groupId as AssetCategory] || cfg;
+            const showGroupHeader =
+              activeFilter === "all" &&
+              (assetIdx === 0 || boxIdForCategory(orderedAssets[assetIdx - 1].category) !== groupId);
 
             return (
-              <div
-                key={grp.id}
-                style={{
-                  display: "flex",
-                  flexDirection: "column",
-                  gap: "0.5rem",
-                }}
-              >
-                {/* Category Section Header (Collapsible Dropdown Row) */}
+              <React.Fragment key={asset.id}>
+              {showGroupHeader && (
                 <div
-                  onClick={() => toggleGroup(grp.id)}
                   style={{
                     display: "flex",
                     alignItems: "center",
-                    justifyContent: "space-between",
-                    flexWrap: "wrap",
                     gap: "0.5rem",
-                    padding: "0.65rem 1rem",
-                    borderRadius: "12px",
-                    backgroundColor: isExpanded ? "rgba(198, 83, 120, 0.06)" : "rgba(23, 34, 40, 0.04)",
-                    border: isExpanded ? "1px solid rgba(198, 83, 120, 0.28)" : "1px solid rgba(23, 34, 40, 0.06)",
-                    borderLeft: `4px solid ${grp.color}`,
-                    cursor: "pointer",
-                    transition: "all 0.18s ease",
+                    marginTop: assetIdx === 0 ? 0 : "0.6rem",
+                    fontSize: "0.74rem",
+                    fontWeight: 800,
+                    letterSpacing: "0.06em",
+                    textTransform: "uppercase",
+                    color: groupCfg.color,
                   }}
                 >
-                  <div style={{ display: "flex", alignItems: "center", gap: "0.55rem" }}>
-                    <GrpIcon size={16} color={grp.color} />
-                    <span style={{ fontSize: "0.82rem", fontWeight: 800, color: "var(--color-navy)", textTransform: "uppercase", letterSpacing: "0.05em" }}>
-                      {grp.label}
-                    </span>
-                    <span
-                      style={{
-                        fontSize: "0.7rem",
-                        fontWeight: 700,
-                        padding: "0.1rem 0.5rem",
-                        borderRadius: "999px",
-                        backgroundColor: "#FFFFFF",
-                        color: "var(--color-slate)",
-                        border: "1px solid rgba(23, 34, 40, 0.08)",
-                      }}
-                    >
-                      {groupAssets.length} {groupAssets.length === 1 ? "item" : "items"}
-                    </span>
+                  <span style={{ width: 8, height: 8, borderRadius: 999, backgroundColor: groupCfg.color }} />
+                  {isHi ? groupCfg.hindiLabel : groupCfg.label}
+                  <span style={{ flex: 1, height: 1, backgroundColor: `${groupCfg.color}30` }} />
+                </div>
+              )}
+              <div
+                className="asset-item-card"
+                style={{
+                  backgroundColor: "#FFFFFF",
+                  borderRadius: "14px",
+                  border: "1px solid rgba(27, 42, 74, 0.08)",
+                  padding: "0.85rem 1.15rem",
+                  boxShadow: "0 2px 8px rgba(0, 0, 0, 0.02)",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "space-between",
+                  flexWrap: "wrap",
+                  gap: "0.85rem",
+                  transition: "all 0.18s ease",
+                }}
+              >
+                {/* Left: Icon + Title + Classification & Ownership Badges */}
+                <div className="asset-item-main" style={{ display: "flex", alignItems: "center", gap: "0.85rem", minWidth: 0, flex: 1 }}>
+                  <div
+                    style={{
+                      width: "42px",
+                      height: "42px",
+                      borderRadius: "12px",
+                      backgroundColor: `${cfg.color}15`,
+                      color: cfg.color,
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                      flexShrink: 0,
+                    }}
+                  >
+                    <AssetIcon size={22} strokeWidth={2.2} />
                   </div>
 
-                  <div style={{ display: "flex", alignItems: "center", gap: "0.75rem" }}>
-                    <span style={{ fontSize: "0.78rem", fontWeight: 700, color: "var(--color-navy)" }}>
-                      Subtotal: <span style={{ color: "var(--color-gold)" }}>{formatCurrency(groupSubtotal)}</span>
-                    </span>
-                    <button
-                      type="button"
-                      onClick={(e) => {
-                        e.stopPropagation();
-                        handleOpenAdd(grp.defaultCat);
-                      }}
-                      style={{
-                        fontSize: "0.72rem",
-                        fontWeight: 700,
-                        color: "var(--color-gold)",
-                        background: "#FFFFFF",
-                        border: "1px solid rgba(198, 83, 120, 0.25)",
-                        borderRadius: "999px",
-                        padding: "0.2rem 0.65rem",
-                        cursor: "pointer",
-                      }}
-                    >
-                      + Add {grp.shortLabel}
-                    </button>
-                    <button
-                      type="button"
-                      onClick={(e) => {
-                        e.stopPropagation();
-                        toggleGroup(grp.id);
-                      }}
-                      aria-expanded={isExpanded}
-                      style={{
-                        display: "inline-flex",
-                        alignItems: "center",
-                        justifyContent: "center",
-                        width: "28px",
-                        height: "28px",
-                        borderRadius: "8px",
-                        border: "1px solid rgba(23, 34, 40, 0.1)",
-                        backgroundColor: isExpanded ? "var(--color-navy)" : "#FFFFFF",
-                        color: isExpanded ? "#FFFFFF" : "var(--color-navy)",
-                        cursor: "pointer",
-                        transition: "all 0.15s ease",
-                      }}
-                    >
-                      {isExpanded ? <ChevronUp size={15} /> : <ChevronDown size={15} />}
-                    </button>
+                  <div style={{ minWidth: 0, flex: 1 }}>
+                    <div style={{ display: "flex", alignItems: "center", gap: "0.45rem", flexWrap: "wrap", marginBottom: "0.2rem" }}>
+                      <h4 style={{ margin: 0, fontSize: "0.98rem", fontWeight: 800, color: "var(--color-navy)" }}>
+                        {asset.name}
+                      </h4>
+
+                      {/* Classification Badge */}
+                      <span
+                        style={{
+                          fontSize: "0.68rem",
+                          fontWeight: 700,
+                          padding: "0.15rem 0.5rem",
+                          borderRadius: "6px",
+                          backgroundColor: `${cfg.color}12`,
+                          color: cfg.color,
+                          letterSpacing: "0.02em",
+                        }}
+                      >
+                        {isOther && asset.customCategoryName
+                          ? `${isHi ? "कस्टम:" : "Custom:"} ${asset.customCategoryName}`
+                          : asset.typeDetails}
+                      </span>
+
+                      {/* Ownership Badge */}
+                      <span
+                        style={{
+                          fontSize: "0.68rem",
+                          fontWeight: 700,
+                          padding: "0.15rem 0.5rem",
+                          borderRadius: "6px",
+                          backgroundColor: asset.ownership === "joint" ? "rgba(198, 83, 120, 0.12)" : "rgba(124, 148, 115, 0.15)",
+                          color: asset.ownership === "joint" ? "var(--color-gold)" : "var(--color-sage)",
+                        }}
+                      >
+                        {asset.ownership === "joint"
+                          ? isHi
+                            ? `संयुक्त स्वामित्व (${asset.ownershipPercentage || 50}% हिस्सा)`
+                            : `Joint (${asset.ownershipPercentage || 50}% share)`
+                          : isHi
+                          ? "पूर्ण स्वामित्व (100%)"
+                          : "Sole Ownership (100%)"}
+                      </span>
+                    </div>
+
+                    {/* Meta Details Row */}
+                    <div className="asset-item-meta" style={{ fontSize: "0.76rem", color: "var(--color-slate)", display: "flex", flexWrap: "wrap", gap: "0.85rem" }}>
+                      {isInsurance ? (
+                        <>
+                          {asset.policyNumber && (
+                            <span>
+                              <strong>{isHi ? "पॉलिसी नं:" : "Policy #:"}</strong> {asset.policyNumber}
+                            </span>
+                          )}
+                          {asset.insuranceCompany && (
+                            <span>
+                              <strong>{isHi ? "कंपनी:" : "Insurer:"}</strong> {asset.insuranceCompany}
+                            </span>
+                          )}
+                          {asset.nomineeName && (
+                            <span>
+                              <strong>{isHi ? "नामिती:" : "Nominee:"}</strong> {asset.nomineeName}
+                            </span>
+                          )}
+                        </>
+                      ) : (
+                        <>
+                          {asset.identifier && (
+                            <span>
+                              <strong>{isHi ? "पहचान / खाता नं:" : "Identifier:"}</strong> {asset.identifier}
+                            </span>
+                          )}
+                          {asset.addressOrInstitution && (
+                            <span>
+                              <strong>{isHi ? "स्थान / संस्थान:" : "Institution / Loc:"}</strong> {asset.addressOrInstitution}
+                            </span>
+                          )}
+                          {asset.jointOwnerName && (
+                            <span>
+                              <strong>{isHi ? "सह-स्वामी:" : "Co-owner:"}</strong> {asset.jointOwnerName}
+                              {asset.jointOwnerRelationship ? ` (${asset.jointOwnerRelationship})` : ""}
+                            </span>
+                          )}
+                        </>
+                      )}
+                    </div>
                   </div>
                 </div>
 
-                {/* Single-Column Horizontal Asset Rows (Visible when dropdown is open) */}
-                {isExpanded && (
-                  groupAssets.length > 0 ? (
-                    <div style={{ display: "flex", flexDirection: "column", gap: "0.45rem", paddingLeft: "0.25rem" }}>
-                    {groupAssets.map((asset) => {
-                      const cfg = categoryConfigs[asset.category] || categoryConfigs.other;
-                      const CatIcon = cfg.Icon;
-                      return (
-                        <div
-                          key={asset.id}
-                          className="flex flex-col lg:flex-row lg:items-center justify-between gap-3 lg:gap-5 bg-white rounded-[14px] border border-[#172228]/10 px-4 py-3 shadow-xs hover:border-[#C65378]/40 transition-colors"
-                        >
-                          {/* 1. Icon + Asset Name + Type Pill */}
-                          <div className="flex items-center gap-3 min-w-0 lg:w-[30%] shrink-0">
-                            <div
-                              style={{
-                                width: "36px",
-                                height: "36px",
-                                borderRadius: "10px",
-                                backgroundColor: `${cfg.color}15`,
-                                color: cfg.color,
-                                display: "flex",
-                                alignItems: "center",
-                                justifyContent: "center",
-                                flexShrink: 0,
-                              }}
-                            >
-                              <CatIcon size={17} />
-                            </div>
-                            <div className="min-w-0 flex-1">
-                              <div className="flex items-center gap-2 flex-wrap">
-                                <h4
-                                  style={{
-                                    margin: 0,
-                                    fontSize: "0.9rem",
-                                    fontWeight: 700,
-                                    color: "var(--color-navy)",
-                                  }}
-                                  className="truncate"
-                                >
-                                  {asset.name}
-                                </h4>
-                                <span
-                                  style={{
-                                    fontSize: "0.66rem",
-                                    fontWeight: 700,
-                                    backgroundColor: "rgba(23, 34, 40, 0.05)",
-                                    color: "var(--color-navy)",
-                                    padding: "0.08rem 0.45rem",
-                                    borderRadius: "999px",
-                                    whiteSpace: "nowrap",
-                                  }}
-                                >
-                                  {asset.typeDetails || cfg.label}
-                                </span>
-                              </div>
-                              {asset.addressOrInstitution && (
-                                <div className="text-[11px] text-[#6B7280] truncate mt-0.5">
-                                  {asset.addressOrInstitution}
-                                </div>
-                              )}
-                            </div>
-                          </div>
+                {/* Right: Valuation & Action Controls */}
+                <div className="asset-item-actions" style={{ display: "flex", alignItems: "center", gap: "1rem", flexShrink: 0 }}>
+                  <div style={{ textAlign: "right" }}>
+                    <span style={{ display: "block", fontSize: "0.68rem", textTransform: "uppercase", color: "var(--color-slate)", fontWeight: 700 }}>
+                      {isInsurance ? (isHi ? "बीमा राशि / मूल्य" : "Sum Assured") : (isHi ? "अनुमानित मूल्य" : "Estimated Value")}
+                    </span>
+                    <span style={{ fontSize: "1.05rem", fontWeight: 800, color: "var(--color-navy)" }}>
+                      {formatCurrency(asset.approximateValue)}
+                    </span>
+                  </div>
 
-                          {/* 2. Identifier / Account / Survey / CIN Details */}
-                          <div className="min-w-0 flex-1 text-xs text-[#49585F] lg:border-l lg:border-[#172228]/10 lg:pl-4">
-                            {asset.identifier ? (
-                              <div className="truncate" title={asset.identifier}>
-                                <span className="font-bold text-[#172228]">ID: </span>
-                                {asset.identifier}
-                              </div>
-                            ) : (
-                              <span className="text-[#9CA3AF] italic">No identifier recorded</span>
-                            )}
-                          </div>
-
-                          {/* 3. Ownership & Encumbrance Status */}
-                          <div className="flex flex-col gap-1 shrink-0 lg:border-l lg:border-[#172228]/10 lg:pl-4">
-                            <span
-                              style={{
-                                fontSize: "0.72rem",
-                                fontWeight: 600,
-                                color: "var(--color-slate)",
-                                backgroundColor: "rgba(23, 34, 40, 0.04)",
-                                padding: "0.2rem 0.55rem",
-                                borderRadius: "999px",
-                                whiteSpace: "nowrap",
-                              }}
-                            >
-                              {asset.ownership === "sole"
-                                ? "Sole (100%)"
-                                : `Joint: ${asset.jointOwnerName || "Co-owner"}`}
-                            </span>
-                            {asset.ownership === "joint" && (
-                              <span
-                                style={{
-                                  fontSize: "0.68rem",
-                                  fontWeight: 700,
-                                  color: "var(--color-gold)",
-                                }}
-                              >
-                                Your Share: {asset.ownershipPercentage || 50}% ({formatCurrency(Math.round((asset.approximateValue * (asset.ownershipPercentage || 50)) / 100))})
-                              </span>
-                            )}
-                            {asset.hasLoan && (
-                              <span
-                                style={{
-                                  fontSize: "0.66rem",
-                                  fontWeight: 700,
-                                  backgroundColor: "rgba(198, 83, 120, 0.12)",
-                                  color: "var(--color-gold)",
-                                  padding: "0.18rem 0.5rem",
-                                  borderRadius: "999px",
-                                  whiteSpace: "nowrap",
-                                  alignSelf: "flex-start",
-                                }}
-                              >
-                                Mortgaged
-                              </span>
-                            )}
-                          </div>
-
-                          {/* 4. Valuation & Edit / Remove Actions */}
-                          <div className="flex items-center justify-between lg:justify-end gap-3 shrink-0 lg:w-[225px] lg:border-l lg:border-[#172228]/10 lg:pl-4">
-                            <div className="text-left lg:text-right">
-                              <span className="block text-[10px] uppercase tracking-wider text-[#6B7280] font-semibold">
-                                Valuation
-                              </span>
-                              <span className="text-[14px] font-extrabold text-[#172228] whitespace-nowrap">
-                                {formatCurrency(asset.approximateValue)}
-                              </span>
-                            </div>
-
-                            <div style={{ display: "flex", alignItems: "center", gap: "0.35rem" }}>
-                              <button
-                                type="button"
-                                onClick={() => handleOpenEdit(asset)}
-                                aria-label={`Edit ${asset.name}`}
-                                style={{
-                                  padding: "0.3rem 0.65rem",
-                                  borderRadius: "8px",
-                                  border: "1px solid rgba(23, 34, 40, 0.15)",
-                                  backgroundColor: "#FFFFFF",
-                                  color: "var(--color-navy)",
-                                  fontSize: "0.74rem",
-                                  fontWeight: 700,
-                                  cursor: "pointer",
-                                  display: "inline-flex",
-                                  alignItems: "center",
-                                  gap: "0.3rem",
-                                  transition: "all 0.15s ease",
-                                }}
-                                onMouseEnter={(e) => {
-                                  e.currentTarget.style.backgroundColor = "rgba(198, 83, 120, 0.08)";
-                                  e.currentTarget.style.borderColor = "var(--color-gold)";
-                                  e.currentTarget.style.color = "var(--color-gold)";
-                                }}
-                                onMouseLeave={(e) => {
-                                  e.currentTarget.style.backgroundColor = "#FFFFFF";
-                                  e.currentTarget.style.borderColor = "rgba(23, 34, 40, 0.15)";
-                                  e.currentTarget.style.color = "var(--color-navy)";
-                                }}
-                              >
-                                <Pencil size={12} />
-                                <span>{isHi ? "संपादित करें" : "Edit"}</span>
-                              </button>
-
-                              <button
-                                type="button"
-                                onClick={() => handleDeleteAsset(asset.id)}
-                                aria-label={`Remove ${asset.name}`}
-                                style={{
-                                  padding: "0.3rem 0.6rem",
-                                  borderRadius: "8px",
-                                  border: "1px solid rgba(225, 29, 72, 0.2)",
-                                  backgroundColor: "#FFFFFF",
-                                  color: "#E11D48",
-                                  fontSize: "0.74rem",
-                                  fontWeight: 600,
-                                  cursor: "pointer",
-                                  display: "inline-flex",
-                                  alignItems: "center",
-                                  gap: "0.25rem",
-                                  transition: "all 0.15s ease",
-                                }}
-                                onMouseEnter={(e) => {
-                                  e.currentTarget.style.backgroundColor = "rgba(225, 29, 72, 0.08)";
-                                  e.currentTarget.style.borderColor = "#E11D48";
-                                }}
-                                onMouseLeave={(e) => {
-                                  e.currentTarget.style.backgroundColor = "#FFFFFF";
-                                  e.currentTarget.style.borderColor = "rgba(225, 29, 72, 0.2)";
-                                }}
-                              >
-                                <Trash2 size={12} />
-                                <span>{isHi ? "हटाएं" : "Remove"}</span>
-                              </button>
-                            </div>
-                          </div>
-                        </div>
-                      );
-                    })}
-                    </div>
-                  ) : (
-                    <div
+                  <div style={{ display: "flex", alignItems: "center", gap: "0.35rem" }}>
+                    <button
+                      type="button"
+                      onClick={() => handleOpenEdit(asset)}
+                      title={isHi ? "संपादित करें" : "Edit Asset"}
                       style={{
-                        background: "#FFFFFF",
-                        borderRadius: "14px",
-                        border: "1.5px dashed rgba(23, 34, 40, 0.12)",
-                        padding: "1.5rem",
-                        textAlign: "center",
-                        color: "var(--color-slate)",
-                        fontSize: "0.82rem",
+                        padding: "0.35rem 0.65rem",
+                        borderRadius: "8px",
+                        border: "1px solid rgba(27, 42, 74, 0.12)",
+                        backgroundColor: "#FFFFFF",
+                        color: "var(--color-navy)",
+                        fontSize: "0.75rem",
+                        fontWeight: 700,
+                        cursor: "pointer",
+                        display: "inline-flex",
+                        alignItems: "center",
+                        gap: "0.3rem",
                       }}
                     >
-                      No assets recorded in <strong>{grp.label}</strong> yet.
-                    </div>
-                  )
-                )}
+                      <Pencil size={13} />
+                      <span>{isHi ? "संपादित करें" : "Edit"}</span>
+                    </button>
+
+                    <button
+                      type="button"
+                      onClick={() => handleDeleteAsset(asset.id)}
+                      title={isHi ? "हटाएं" : "Remove Asset"}
+                      style={{
+                        padding: "0.35rem 0.6rem",
+                        borderRadius: "8px",
+                        border: "1px solid rgba(225, 29, 72, 0.2)",
+                        backgroundColor: "#FFFFFF",
+                        color: "#E11D48",
+                        fontSize: "0.75rem",
+                        fontWeight: 600,
+                        cursor: "pointer",
+                        display: "inline-flex",
+                        alignItems: "center",
+                        gap: "0.25rem",
+                      }}
+                    >
+                      <Trash2 size={13} />
+                      <span>{isHi ? "हटाएं" : "Remove"}</span>
+                    </button>
+                  </div>
+                </div>
               </div>
+              </React.Fragment>
             );
           })
         ) : (
           <div
             style={{
-              background: "#FFFFFF",
-              borderRadius: "18px",
+              backgroundColor: "#FFFFFF",
+              borderRadius: "16px",
               border: "1.5px dashed rgba(27, 42, 74, 0.12)",
-              padding: "2.5rem 1.5rem",
+              padding: "2rem 1.5rem",
               textAlign: "center",
               display: "flex",
               flexDirection: "column",
               alignItems: "center",
-              gap: "0.75rem",
+              gap: "0.6rem",
             }}
           >
-            <Landmark size={28} color="var(--color-slate)" />
-            <div>
-              <h4 style={{ margin: 0, fontSize: "1.05rem", fontWeight: 700, color: "var(--color-navy)" }}>
-                No assets in this category yet
-              </h4>
-              <p style={{ margin: "0.25rem 0 0", fontSize: "0.82rem", color: "var(--color-slate)" }}>
-                Catalog your bank accounts, real estate, vehicles, or investment folios.
-              </p>
-            </div>
+            <Boxes size={32} color="var(--color-slate)" />
+            <h4 style={{ margin: 0, fontSize: "1.05rem", fontWeight: 700, color: "var(--color-navy)" }}>
+              {isHi ? "इस श्रेणी में कोई संपत्ति दर्ज नहीं है" : "No assets in this category yet"}
+            </h4>
+            <p style={{ margin: 0, fontSize: "0.82rem", color: "var(--color-slate)" }}>
+              {isHi
+                ? "ऊपर दिए गए बॉक्स के '+' चिह्न पर क्लिक करके संपत्ति दर्ज करें।"
+                : "Click the '+' plus button on any category box above to add your asset."}
+            </p>
             <button
               type="button"
-              onClick={() => handleOpenAdd(activeGroupForAdd)}
+              onClick={() => handleOpenAdd(activeFilter === "all" ? "bank_account" : (activeFilter as AssetCategory))}
               className="btn btn-gold"
               style={{
-                padding: "0.5rem 1.25rem",
+                marginTop: "0.5rem",
+                padding: "0.45rem 1.1rem",
                 borderRadius: "10px",
-                fontWeight: 700,
                 fontSize: "0.82rem",
+                fontWeight: 700,
                 display: "inline-flex",
                 alignItems: "center",
                 gap: "0.35rem",
+                cursor: "pointer",
               }}
             >
-              <Plus size={14} /> Add First Asset
+              <Plus size={14} strokeWidth={2.5} /> {isHi ? "+ नई संपत्ति जोड़ें" : "+ Add New Asset"}
             </button>
           </div>
         )}
       </div>
 
-      {/* Wizard Button Footer */}
-      <WizardButton onBack={onBack} onNext={onNext} />
+      {/* Empty Assets Warning Banner */}
+      {showEmptyWarning && (
+        <div
+          role="alert"
+          style={{
+            padding: "1rem 1.25rem",
+            backgroundColor: "#FFFBEB",
+            border: "1.5px solid #FCD34D",
+            borderRadius: "16px",
+            color: "#92400E",
+            display: "flex",
+            flexDirection: "column",
+            gap: "0.75rem",
+          }}
+        >
+          <div style={{ display: "flex", alignItems: "flex-start", gap: "0.75rem" }}>
+            <AlertCircle size={20} color="#D97706" style={{ flexShrink: 0, marginTop: "0.15rem" }} />
+            <div>
+              <strong style={{ fontSize: "0.925rem", display: "block", marginBottom: "0.25rem", color: "#78350F" }}>
+                {isHi ? "कोई संपत्ति नहीं जोड़ी गई" : "No Assets Added Yet"}
+              </strong>
+              <span style={{ fontSize: "0.825rem", lineHeight: 1.5 }}>
+                {isHi
+                  ? "वसीयत आपकी संपत्तियों, बैंक खातों या बचत को वितरित करती है। अगले चरण में जाने के लिए कृपया कम से कम एक संपत्ति जोड़ें।"
+                  : "You haven't added any assets yet. You'll need at least one asset to distribute to your beneficiaries in the next step. Would you like to add one now?"}
+              </span>
+            </div>
+          </div>
+          <div style={{ display: "flex", gap: "0.65rem", justifyContent: "flex-end" }}>
+            <button
+              type="button"
+              onClick={() => {
+                setShowEmptyWarning(false);
+                handleOpenAdd("bank_account");
+              }}
+              className="btn btn-gold"
+              style={{
+                padding: "0.45rem 0.9rem",
+                borderRadius: "10px",
+                fontSize: "0.8rem",
+                fontWeight: 700,
+                cursor: "pointer",
+              }}
+            >
+              {isHi ? "+ संपत्ति जोड़ें" : "+ Add Asset"}
+            </button>
+            <button
+              type="button"
+              onClick={() => {
+                setShowEmptyWarning(false);
+                onUpdate((prev) => ({ ...prev, assets }));
+                onNext();
+              }}
+              style={{
+                padding: "0.45rem 0.9rem",
+                borderRadius: "10px",
+                fontSize: "0.8rem",
+                fontWeight: 600,
+                backgroundColor: "transparent",
+                border: "1px solid #D97706",
+                color: "#78350F",
+                cursor: "pointer",
+              }}
+            >
+              {isHi ? "बिना संपत्ति के आगे बढ़ें" : "Proceed Anyway"}
+            </button>
+          </div>
+        </div>
+      )}
 
-      {/* Apple Sheet Modal for Adding Asset */}
+      {/* Wizard Button Footer */}
+      <WizardButton onBack={onBack} onNext={handleProceed} />
+
+      {/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+          3. ADD / EDIT ASSET MODAL SHEET
+         ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */}
       {modalOpen && (
         <div
           style={{
             position: "fixed",
             inset: 0,
             backgroundColor: "rgba(23, 34, 40, 0.65)",
-            backdropFilter: "blur(14px)",
+            backdropFilter: "blur(12px)",
             zIndex: 9999,
             display: "flex",
             alignItems: "center",
@@ -861,41 +1052,42 @@ export default function Step4Assets({
           onClick={() => setModalOpen(false)}
         >
           <div
+            className="wizard-modal-sheet"
             style={{
               backgroundColor: "#FFFFFF",
               borderRadius: "24px",
               width: "100%",
-              maxWidth: "580px",
+              maxWidth: "600px",
               maxHeight: "92vh",
               overflowY: "auto",
               padding: "2rem 2.25rem",
-              boxShadow: "0 20px 60px rgba(0, 0, 0, 0.25), inset 0 1px 0 rgba(255, 255, 255, 0.9)",
+              boxShadow: "0 20px 60px rgba(0, 0, 0, 0.25)",
               position: "relative",
             }}
             onClick={(e) => e.stopPropagation()}
           >
-            {/* Sheet Handle Bar */}
+            {/* Sheet Handle */}
             <div
               style={{
                 width: "42px",
                 height: "4px",
                 borderRadius: "999px",
                 backgroundColor: "rgba(27, 42, 74, 0.2)",
-                margin: "-0.5rem auto 1.5rem",
+                margin: "-0.5rem auto 1.25rem",
               }}
             />
 
-            <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "1.5rem" }}>
+            <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "1.25rem" }}>
               <div>
                 <h3 style={{ margin: 0, color: "var(--color-navy)", fontSize: "1.35rem", fontWeight: 800 }}>
                   {editingAssetId
-                    ? isHi ? "संपत्ति विवरण संपादित करें" : "Edit Asset Details"
-                    : isHi ? "रजिस्टर में संपत्ति जोड़ें" : "Add Asset to Register"}
+                    ? (isHi ? "संपत्ति विवरण संपादित करें" : "Edit Asset Details")
+                    : (isHi ? "नई संपत्ति दर्ज करें" : "Add Asset to Schedule")}
                 </h3>
                 <p style={{ margin: "0.25rem 0 0", fontSize: "0.825rem", color: "var(--color-slate)" }}>
-                  {editingAssetId
-                    ? isHi ? "मौजूदा संपत्ति के स्वामित्व, विवरण और मूल्य में बदलाव करें।" : "Update existing asset ownership, classification, and valuation."
-                    : isHi ? "भारतीय उत्तराधिकार कानून के तहत आपकी वसीयत के लिए सूचीबद्ध।" : "Cataloged for distribution in your Will under Indian succession law."}
+                  {isHi
+                    ? "भारतीय उत्तराधिकार कानून के अनुसार संपत्ति का सटीक विवरण दर्ज करें।"
+                    : "Specify verified identifiers and valuation for seamless transmission under Indian law."}
                 </p>
               </div>
 
@@ -919,91 +1111,189 @@ export default function Step4Assets({
               </button>
             </div>
 
-            <form onSubmit={handleSaveAsset} style={{ display: "flex", flexDirection: "column", gap: "1.5rem" }}>
-              {/* Category Segmented Selector */}
+            <form onSubmit={handleSaveAsset} style={{ display: "flex", flexDirection: "column", gap: "1.25rem" }}>
+              {/* Actionable Human Error Notice in Modal */}
+              {modalError && (
+                <div
+                  role="alert"
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "0.6rem",
+                    padding: "0.65rem 0.95rem",
+                    borderRadius: "12px",
+                    backgroundColor: "rgba(225, 29, 72, 0.08)",
+                    border: "1.5px solid #FDA4AF",
+                    color: "#BE123C",
+                    fontSize: "0.825rem",
+                    fontWeight: 600,
+                  }}
+                >
+                  <AlertCircle size={16} style={{ flexShrink: 0 }} />
+                  <span>{modalError}</span>
+                </div>
+              )}
+              {/* Category Selector Grid */}
               <div>
-                <label style={{ display: "block", fontSize: "0.825rem", fontWeight: 700, color: "var(--color-navy)", marginBottom: "0.5rem" }}>
-                  Asset Category *
+                <label style={{ display: "block", fontSize: "0.825rem", fontWeight: 700, color: "var(--color-navy)", marginBottom: "0.45rem" }}>
+                  {isHi ? "संपत्ति श्रेणी चुनें *" : "Asset Category *"}
                 </label>
-                <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: "0.5rem" }}>
-                  {(
-                    [
-                      "property",
-                      "bank_account",
-                      "investments",
-                      "jewellery",
-                      "business",
-                      "vehicles",
-                    ] as AssetCategory[]
-                  ).map((cat) => {
-                    const cfg = categoryConfigs[cat];
-                    const isSel = category === cat;
+                <div className="asset-modal-cat-grid" style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: "0.45rem" }}>
+                  {primaryBoxes.map((box) => {
+                    const cfg = categoryConfigs[box.id] || categoryConfigs.other;
+                    const isSel = category === box.id;
                     const CatIcon = cfg.Icon;
+
                     return (
                       <button
-                        key={cat}
+                        key={box.id}
                         type="button"
                         onClick={() => {
-                          setCategory(cat);
+                          setCategory(box.id);
                           setTypeDetails(cfg.quickTypes[0]);
-                          if (cat === "property") setApproximateValue(12500000);
-                          else if (cat === "bank_account") setApproximateValue(1500000);
-                          else if (cat === "jewellery") setApproximateValue(2500000);
+                          setApproximateValue(box.defaultVal);
+                          if (box.id === "insurance") {
+                            setSumAssured(box.defaultVal);
+                          }
                         }}
                         style={{
-                          padding: "0.75rem 0.5rem",
-                          borderRadius: "14px",
+                          padding: "0.65rem 0.4rem",
+                          borderRadius: "12px",
                           border: isSel ? `2px solid ${cfg.color}` : "1px solid rgba(27, 42, 74, 0.1)",
-                          backgroundColor: isSel ? `${cfg.color}10` : "#FFFFFF",
+                          backgroundColor: isSel ? `${cfg.color}12` : "#FFFFFF",
                           color: isSel ? "var(--color-navy)" : "var(--color-slate)",
                           cursor: "pointer",
                           display: "flex",
                           flexDirection: "column",
                           alignItems: "center",
-                          gap: "0.35rem",
+                          gap: "0.3rem",
+                          textAlign: "center",
                           transition: "all 0.15s ease",
                         }}
                       >
-                        <CatIcon size={20} color={isSel ? cfg.color : "var(--color-slate)"} />
-                        <span style={{ fontSize: "0.75rem", fontWeight: isSel ? 700 : 500 }}>{cfg.label}</span>
+                        <CatIcon size={18} color={isSel ? cfg.color : "var(--color-slate)"} />
+                        <span style={{ fontSize: "0.7rem", fontWeight: isSel ? 700 : 500, lineHeight: 1.2 }}>
+                          {isHi ? cfg.hindiLabel : cfg.label}
+                        </span>
                       </button>
                     );
                   })}
                 </div>
               </div>
 
-              {/* Sub-type Pills */}
-              <div>
-                <span style={{ display: "block", fontSize: "0.775rem", fontWeight: 700, color: "var(--color-slate)", marginBottom: "0.4rem" }}>
-                  Asset Classification:
-                </span>
-                <div style={{ display: "flex", flexWrap: "wrap", gap: "0.4rem" }}>
-                  {categoryConfigs[category].quickTypes.map((typeOption) => (
-                    <button
-                      key={typeOption}
-                      type="button"
-                      onClick={() => setTypeDetails(typeOption)}
-                      style={{
-                        padding: "0.35rem 0.75rem",
-                        borderRadius: "999px",
-                        fontSize: "0.75rem",
-                        fontWeight: 600,
-                        backgroundColor: typeDetails === typeOption ? "var(--color-navy)" : "rgba(27, 42, 74, 0.05)",
-                        color: typeDetails === typeOption ? "#FFFFFF" : "var(--color-navy)",
-                        border: "none",
-                        cursor: "pointer",
-                      }}
-                    >
-                      {typeOption}
-                    </button>
-                  ))}
+              {/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+                  CUSTOM ASSET CLASSIFICATION INPUT (When category === "other")
+                 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */}
+              {category === "other" && (
+                <div
+                  style={{
+                    backgroundColor: "rgba(234, 88, 12, 0.06)",
+                    border: "1.5px solid rgba(234, 88, 12, 0.25)",
+                    borderRadius: "14px",
+                    padding: "1rem",
+                    display: "flex",
+                    flexDirection: "column",
+                    gap: "0.65rem",
+                  }}
+                >
+                  <label style={{ display: "block", fontSize: "0.825rem", fontWeight: 800, color: "#C2410C" }}>
+                    {isHi ? "कस्टम संपत्ति वर्गीकरण / प्रकार *" : "Custom Asset Classification / Type *"}
+                  </label>
+                  <input
+                    type="text"
+                    required
+                    placeholder={
+                      isHi
+                        ? "उदा: प्राचीन कलाकृतियां, क्रिप्टो हार्डवेयर वॉलेट, बौद्धिक संपदा..."
+                        : "e.g., Rare Art & Antiques, Cryptocurrency Hardware Wallet, Patent / Royalty..."
+                    }
+                    value={customCategoryName}
+                    onChange={(e) => setCustomCategoryName(sanitizeNameInput(e.target.value))}
+                    style={{
+                      width: "100%",
+                      padding: "0.65rem 0.85rem",
+                      borderRadius: "10px",
+                      border: "1px solid rgba(234, 88, 12, 0.3)",
+                      fontSize: "0.9rem",
+                      fontWeight: 600,
+                      backgroundColor: "#FFFFFF",
+                      color: "var(--color-navy)",
+                      outline: "none",
+                    }}
+                  />
+                  <span style={{ fontSize: "0.72rem", color: "#9A3412" }}>
+                    {isHi ? "त्वरित सुझाव:" : "Quick Suggestions:"}
+                  </span>
+                  <div style={{ display: "flex", flexWrap: "wrap", gap: "0.35rem" }}>
+                    {[
+                      "Artwork & Paintings",
+                      "Cryptocurrency Hardware Vault",
+                      "Intellectual Property / Trademark",
+                      "Agricultural Machinery",
+                      "Club Equity / Membership",
+                      "Personal Loan Receivable",
+                    ].map((sug) => (
+                      <button
+                        key={sug}
+                        type="button"
+                        onClick={() => {
+                          setCustomCategoryName(sug);
+                          if (!name) setName(sug);
+                        }}
+                        style={{
+                          padding: "0.2rem 0.55rem",
+                          borderRadius: "6px",
+                          fontSize: "0.7rem",
+                          fontWeight: 600,
+                          backgroundColor: "#FFFFFF",
+                          border: "1px solid rgba(234, 88, 12, 0.25)",
+                          color: "#C2410C",
+                          cursor: "pointer",
+                        }}
+                      >
+                        {sug}
+                      </button>
+                    ))}
+                  </div>
                 </div>
-              </div>
+              )}
 
-              {/* Asset Name / Title */}
+              {/* Sub-type Classification Pills (for standard categories) */}
+              {category !== "other" && (
+                <div>
+                  <span style={{ display: "block", fontSize: "0.78rem", fontWeight: 700, color: "var(--color-slate)", marginBottom: "0.4rem" }}>
+                    {isHi ? "विशिष्ट वर्गीकरण:" : "Asset Classification / Sub-type:"}
+                  </span>
+                  <div style={{ display: "flex", flexWrap: "wrap", gap: "0.35rem" }}>
+                    {(categoryConfigs[category]?.quickTypes || []).map((typeOpt) => (
+                      <button
+                        key={typeOpt}
+                        type="button"
+                        onClick={() => setTypeDetails(typeOpt)}
+                        style={{
+                          padding: "0.3rem 0.65rem",
+                          borderRadius: "999px",
+                          fontSize: "0.74rem",
+                          fontWeight: 600,
+                          backgroundColor: typeDetails === typeOpt ? "var(--color-navy)" : "rgba(27, 42, 74, 0.05)",
+                          color: typeDetails === typeOpt ? "#FFFFFF" : "var(--color-navy)",
+                          border: "none",
+                          cursor: "pointer",
+                        }}
+                      >
+                        {typeOpt}
+                      </button>
+                    ))}
+                  </div>
+                </div>
+              )}
+
+              {/* Asset Title / Name */}
               <div>
                 <label style={{ display: "block", fontSize: "0.825rem", fontWeight: 700, color: "var(--color-navy)", marginBottom: "0.35rem" }}>
-                  Asset Title & Description *
+                  {category === "insurance"
+                    ? (isHi ? "बीमा पॉलिसी का नाम / शीर्षक *" : "Insurance Policy Title & Plan Name *")
+                    : (isHi ? "संपत्ति का शीर्षक व नाम *" : "Asset Title & Identification Name *")}
                 </label>
                 <input
                   type="text"
@@ -1013,10 +1303,18 @@ export default function Step4Assets({
                       ? "e.g., 3BHK Apartment in DLF Phase 5"
                       : category === "bank_account"
                       ? "e.g., HDFC Bank Savings & Fixed Deposits"
-                      : "e.g., Asset name / description"
+                      : category === "insurance"
+                      ? "e.g., HDFC Life Click 2 Protect Term Plan"
+                      : category === "investments"
+                      ? "e.g., Zerodha Demat Equity & Mutual Funds"
+                      : category === "vehicles"
+                      ? "e.g., Hyundai Creta SX (Petrol)"
+                      : category === "other"
+                      ? "e.g., Oil Canvas Paintings & Antiques"
+                      : "e.g., Asset description"
                   }
                   value={name}
-                  onChange={(e) => setName(e.target.value)}
+                  onChange={(e) => setName(toTitleCaseText(e.target.value))}
                   style={{
                     width: "100%",
                     padding: "0.75rem 1rem",
@@ -1029,121 +1327,252 @@ export default function Step4Assets({
                 />
               </div>
 
-              {/* Identifier & Location */}
-              <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "1rem" }}>
-                <div>
-                  <label style={{ display: "block", fontSize: "0.8rem", fontWeight: 700, color: "var(--color-navy)", marginBottom: "0.3rem" }}>
-                    Identifier (A/C / Survey / Reg No.)
-                  </label>
-                  <input
-                    type="text"
-                    placeholder="e.g., Survey #412/A or A/C ...8902"
-                    value={identifier}
-                    onChange={(e) => setIdentifier(e.target.value)}
-                    style={{
-                      width: "100%",
-                      padding: "0.7rem 0.85rem",
-                      borderRadius: "12px",
-                      border: "1px solid rgba(27, 42, 74, 0.12)",
-                      fontSize: "0.85rem",
-                      outline: "none",
-                    }}
-                  />
-                </div>
+              {/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+                  DETAILED INSURANCE POLICY FIELDS
+                 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */}
+              {category === "insurance" ? (
+                <div
+                  style={{
+                    backgroundColor: "rgba(2, 132, 199, 0.05)",
+                    border: "1.5px solid rgba(2, 132, 199, 0.2)",
+                    borderRadius: "14px",
+                    padding: "1rem",
+                    display: "flex",
+                    flexDirection: "column",
+                    gap: "0.85rem",
+                  }}
+                >
+                  <div style={{ display: "flex", alignItems: "center", gap: "0.4rem" }}>
+                    <ShieldCheck size={16} color="#0284C7" />
+                    <span style={{ fontSize: "0.82rem", fontWeight: 800, color: "#0369A1", textTransform: "uppercase" }}>
+                      {isHi ? "बीमा पॉलिसी का विस्तृत विवरण" : "Insurance Policy Specification"}
+                    </span>
+                  </div>
 
-                <div>
-                  <label style={{ display: "block", fontSize: "0.8rem", fontWeight: 700, color: "var(--color-navy)", marginBottom: "0.3rem" }}>
-                    Location / Institution
-                  </label>
-                  <input
-                    type="text"
-                    placeholder="e.g., Gurugram, Haryana / HDFC"
-                    value={addressOrInstitution}
-                    onChange={(e) => setAddressOrInstitution(e.target.value)}
-                    style={{
-                      width: "100%",
-                      padding: "0.7rem 0.85rem",
-                      borderRadius: "12px",
-                      border: "1px solid rgba(27, 42, 74, 0.12)",
-                      fontSize: "0.85rem",
-                      outline: "none",
-                    }}
-                  />
-                </div>
-              </div>
+                  {/* Insurer Company with Quick Select */}
+                  <div>
+                    <label style={{ display: "block", fontSize: "0.78rem", fontWeight: 700, color: "var(--color-navy)", marginBottom: "0.3rem" }}>
+                      {isHi ? "बीमा प्रदाता कंपनी *" : "Insurance Provider / Company *"}
+                    </label>
+                    <input
+                      type="text"
+                      required
+                      placeholder="e.g., Life Insurance Corporation (LIC) / HDFC Life"
+                      value={insuranceCompany}
+                      onChange={(e) => setInsuranceCompany(toTitleCaseText(e.target.value))}
+                      style={{
+                        width: "100%",
+                        padding: "0.65rem 0.85rem",
+                        borderRadius: "10px",
+                        border: "1px solid rgba(27, 42, 74, 0.12)",
+                        fontSize: "0.85rem",
+                        backgroundColor: "#FFFFFF",
+                        outline: "none",
+                      }}
+                    />
+                    <div style={{ display: "flex", flexWrap: "wrap", gap: "0.3rem", marginTop: "0.4rem" }}>
+                      {[
+                        "LIC of India",
+                        "HDFC Life",
+                        "ICICI Prudential",
+                        "SBI Life",
+                        "Max Life",
+                        "Tata AIA",
+                        "Bajaj Allianz",
+                      ].map((cmp) => (
+                        <button
+                          key={cmp}
+                          type="button"
+                          onClick={() => {
+                            setInsuranceCompany(cmp);
+                            if (!name) setName(`${cmp} Policy`);
+                          }}
+                          style={{
+                            padding: "0.2rem 0.55rem",
+                            borderRadius: "6px",
+                            fontSize: "0.7rem",
+                            fontWeight: 600,
+                            backgroundColor: insuranceCompany === cmp ? "#0284C7" : "#FFFFFF",
+                            color: insuranceCompany === cmp ? "#FFFFFF" : "#0369A1",
+                            border: "1px solid rgba(2, 132, 199, 0.25)",
+                            cursor: "pointer",
+                          }}
+                        >
+                          {cmp}
+                        </button>
+                      ))}
+                    </div>
+                  </div>
 
-              {/* Quick Institution Pills for Banking & Investments */}
-              {(category === "bank_account" || category === "investments" || category === "shares") && (
-                <div>
-                  <span style={{ display: "block", fontSize: "0.725rem", color: "var(--color-slate)", fontWeight: 600, marginBottom: "0.35rem" }}>
-                    Quick Select Bank / Depository:
-                  </span>
-                  <div style={{ display: "flex", flexWrap: "wrap", gap: "0.35rem" }}>
-                    {["HDFC Bank", "State Bank of India", "ICICI Bank", "Axis Bank", "Kotak Mahindra", "Zerodha"].map((bank) => (
-                      <button
-                        key={bank}
-                        type="button"
-                        onClick={() => {
-                          setAddressOrInstitution(bank);
-                          if (!name) setName(`${bank} Account`);
-                        }}
+                  {/* Policy Number and Nominee Row */}
+                  <div className="wizard-modal-grid-2" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "0.75rem" }}>
+                    <div>
+                      <label style={{ display: "block", fontSize: "0.78rem", fontWeight: 700, color: "var(--color-navy)", marginBottom: "0.3rem" }}>
+                        {isHi ? "पॉलिसी नंबर *" : "Policy Number *"}
+                      </label>
+                      <input
+                        type="text"
+                        required
+                        placeholder="e.g., 987654321"
+                        value={policyNumber}
+                        onChange={(e) => setPolicyNumber(normalizeIdCode(e.target.value))}
                         style={{
-                          padding: "0.25rem 0.6rem",
-                          borderRadius: "999px",
-                          fontSize: "0.725rem",
-                          fontWeight: 600,
-                          backgroundColor: addressOrInstitution === bank ? "rgba(198, 83, 120, 0.12)" : "rgba(23, 34, 40, 0.04)",
-                          border: addressOrInstitution === bank ? "1px solid var(--color-gold)" : "1px solid transparent",
-                          color: "var(--color-navy)",
-                          cursor: "pointer",
+                          width: "100%",
+                          padding: "0.65rem 0.85rem",
+                          borderRadius: "10px",
+                          border: "1px solid rgba(27, 42, 74, 0.12)",
+                          fontSize: "0.85rem",
+                          backgroundColor: "#FFFFFF",
+                          outline: "none",
                         }}
-                      >
-                        {bank}
-                      </button>
-                    ))}
+                      />
+                    </div>
+
+                    <div>
+                      <label style={{ display: "block", fontSize: "0.78rem", fontWeight: 700, color: "var(--color-navy)", marginBottom: "0.3rem" }}>
+                        {isHi ? "दर्ज नामिती (Nominee)" : "Nominee Recorded with Insurer"}
+                      </label>
+                      <input
+                        type="text"
+                        placeholder="e.g., Spouse or Child Name"
+                        value={nomineeName}
+                        onChange={(e) => setNomineeName(sanitizeNameInput(e.target.value))}
+                        style={{
+                          width: "100%",
+                          padding: "0.65rem 0.85rem",
+                          borderRadius: "10px",
+                          border: "1px solid rgba(27, 42, 74, 0.12)",
+                          fontSize: "0.85rem",
+                          backgroundColor: "#FFFFFF",
+                          outline: "none",
+                        }}
+                      />
+                    </div>
+                  </div>
+                </div>
+              ) : (
+                /* Standard Identifier & Institution Row */
+                <div className="wizard-modal-grid-2" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "0.85rem" }}>
+                  <div>
+                    <label style={{ display: "block", fontSize: "0.8rem", fontWeight: 700, color: "var(--color-navy)", marginBottom: "0.3rem" }}>
+                      {category === "bank_account"
+                        ? (isHi ? "खाता संख्या (Account No.)" : "Account / Deposit Number")
+                        : category === "property"
+                        ? (isHi ? "सर्वे / खाता / फ्लैट संख्या" : "Survey / Khata / Flat No.")
+                        : category === "vehicles"
+                        ? (isHi ? "वाहन पंजीकरण संख्या (Reg No.)" : "Vehicle Registration No.")
+                        : (isHi ? "पहचान संदर्भ / संख्या" : "Identifier / Account / Reference No.")}
+                    </label>
+                    <input
+                      type="text"
+                      placeholder={
+                        category === "bank_account"
+                          ? "e.g., A/C ending 4120"
+                          : category === "property"
+                          ? "e.g., Survey #412/A, Flat 802"
+                          : category === "vehicles"
+                          ? "e.g., DL 01 AB 1234"
+                          : "e.g., Reference / Identifier"
+                      }
+                      value={identifier}
+                      onChange={(e) => setIdentifier(normalizeIdCode(e.target.value))}
+                      style={{
+                        width: "100%",
+                        padding: "0.7rem 0.85rem",
+                        borderRadius: "12px",
+                        border: "1px solid rgba(27, 42, 74, 0.12)",
+                        fontSize: "0.85rem",
+                        outline: "none",
+                      }}
+                    />
+                  </div>
+
+                  <div>
+                    <label style={{ display: "block", fontSize: "0.8rem", fontWeight: 700, color: "var(--color-navy)", marginBottom: "0.3rem" }}>
+                      {category === "bank_account"
+                        ? (isHi ? "बैंक एवं शाखा" : "Bank Name & Branch")
+                        : category === "property"
+                        ? (isHi ? "संपत्ति का पता / शहर" : "Property Address & City")
+                        : category === "investments"
+                        ? (isHi ? "ब्रोकर / डिपॉजिटरी" : "Broker / Depository (e.g. Zerodha)")
+                        : (isHi ? "स्थान / संस्थान" : "Location / Institution / Custodian")}
+                    </label>
+                    <input
+                      type="text"
+                      placeholder={
+                        category === "bank_account"
+                          ? "e.g., HDFC Bank, Connaught Place"
+                          : category === "property"
+                          ? "e.g., Gurgaon, Haryana"
+                          : "e.g., Institution / City"
+                      }
+                      value={addressOrInstitution}
+                      onChange={(e) => setAddressOrInstitution(toTitleCaseText(e.target.value))}
+                      style={{
+                        width: "100%",
+                        padding: "0.7rem 0.85rem",
+                        borderRadius: "12px",
+                        border: "1px solid rgba(27, 42, 74, 0.12)",
+                        fontSize: "0.85rem",
+                        outline: "none",
+                      }}
+                    />
                   </div>
                 </div>
               )}
 
-              {/* Interactive Valuation Range Slider & Quick Amount Chips */}
+              {/* Valuation Input & Presets */}
               <div
                 style={{
                   backgroundColor: "rgba(27, 42, 74, 0.02)",
                   borderRadius: "16px",
-                  padding: "1.25rem",
+                  padding: "1.15rem",
                   border: "1px solid rgba(27, 42, 74, 0.08)",
                 }}
               >
-                <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "0.4rem" }}>
+                <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "0.35rem" }}>
                   <span style={{ fontSize: "0.825rem", fontWeight: 700, color: "var(--color-navy)" }}>
-                    Estimated Asset Valuation
+                    {category === "insurance"
+                      ? (isHi ? "बीमा सुरक्षा राशि (Sum Assured)" : "Policy Sum Assured / Maturity Benefit")
+                      : (isHi ? "अनुमानित संपत्ति मूल्यांकन" : "Estimated Asset Valuation")}
                   </span>
                   <span style={{ fontSize: "1.25rem", fontWeight: 800, color: "var(--color-navy)" }}>
-                    {formatCurrency(approximateValue)}
+                    {formatCurrency(category === "insurance" ? sumAssured : approximateValue)}
                   </span>
                 </div>
 
-                {/* Quick Amount Buttons */}
-                <div style={{ display: "flex", flexWrap: "wrap", gap: "0.35rem", marginBottom: "0.85rem" }}>
+                {/* Quick Presets */}
+                <div style={{ display: "flex", flexWrap: "wrap", gap: "0.35rem", marginBottom: "0.75rem" }}>
                   {[
-                    { label: "₹ 15 L", val: 1500000 },
-                    { label: "₹ 35 L", val: 3500000 },
-                    { label: "₹ 75 L", val: 7500000 },
-                    { label: "₹ 1.50 Cr", val: 15000000 },
-                    { label: "₹ 3.00 Cr", val: 30000000 },
+                    { label: "₹ 10 L", val: 1000000 },
+                    { label: "₹ 25 L", val: 2500000 },
+                    { label: "₹ 50 L", val: 5000000 },
+                    { label: "₹ 1.00 Cr", val: 10000000 },
+                    { label: "₹ 2.00 Cr", val: 20000000 },
                     { label: "₹ 5.00 Cr", val: 50000000 },
                   ].map((preset) => (
                     <button
                       key={preset.val}
                       type="button"
-                      onClick={() => setApproximateValue(preset.val)}
+                      onClick={() => {
+                        if (category === "insurance") {
+                          setSumAssured(preset.val);
+                        }
+                        setApproximateValue(preset.val);
+                      }}
                       style={{
                         padding: "0.25rem 0.6rem",
                         borderRadius: "8px",
                         fontSize: "0.725rem",
                         fontWeight: 700,
-                        backgroundColor: approximateValue === preset.val ? "var(--color-gold)" : "#FFFFFF",
-                        color: approximateValue === preset.val ? "#FFFFFF" : "var(--color-slate)",
+                        backgroundColor:
+                          (category === "insurance" ? sumAssured : approximateValue) === preset.val
+                            ? "var(--color-gold)"
+                            : "#FFFFFF",
+                        color:
+                          (category === "insurance" ? sumAssured : approximateValue) === preset.val
+                            ? "#FFFFFF"
+                            : "var(--color-slate)",
                         border: "1px solid rgba(23, 34, 40, 0.12)",
                         cursor: "pointer",
                       }}
@@ -1153,38 +1582,26 @@ export default function Step4Assets({
                   ))}
                 </div>
 
-                <input
-                  type="range"
-                  min="50000"
-                  max="100000000"
-                  step="500000"
-                  value={approximateValue}
-                  onChange={(e) => setApproximateValue(parseInt(e.target.value, 10))}
-                  style={{
-                    width: "100%",
-                    height: "8px",
-                    borderRadius: "999px",
-                    accentColor: "var(--color-gold)",
-                    cursor: "pointer",
+                <IndianAmountInput
+                  aria-label={category === "insurance" ? "Sum assured" : "Estimated asset valuation"}
+                  value={category === "insurance" ? sumAssured : approximateValue}
+                  placeholder="e.g. 25,00,000"
+                  onValueChange={(v) => {
+                    if (category === "insurance") setSumAssured(v);
+                    setApproximateValue(v);
                   }}
                 />
-
-                <div style={{ display: "flex", justifyContent: "space-between", marginTop: "0.35rem", fontSize: "0.7rem", color: "var(--color-slate)" }}>
-                  <span>₹ 50,000</span>
-                  <span>₹ 5.00 Crore</span>
-                  <span>₹ 10.00 Crore+</span>
-                </div>
               </div>
 
               {/* Ownership Title Segmented Control */}
               <div>
                 <label style={{ display: "block", fontSize: "0.825rem", fontWeight: 700, color: "var(--color-navy)", marginBottom: "0.45rem" }}>
-                  Ownership Title
+                  {isHi ? "स्वामित्व प्रकार (Ownership Title)" : "Ownership Title"}
                 </label>
                 <AppleSegmentedControl
                   options={[
-                    { value: "sole", label: "Solely Owned (100%)" },
-                    { value: "joint", label: "Jointly Owned with Co-owner" },
+                    { value: "sole", label: isHi ? "पूर्ण स्वामित्व (100% Sole)" : "Solely Owned (100%)" },
+                    { value: "joint", label: isHi ? "संयुक्त स्वामित्व (Joint)" : "Jointly Owned with Co-owner" },
                   ]}
                   value={ownership}
                   onChange={(val) => setOwnership(val as "sole" | "joint")}
@@ -1203,41 +1620,88 @@ export default function Step4Assets({
                     gap: "0.85rem",
                   }}
                 >
-                  <div>
-                    <label style={{ display: "block", fontSize: "0.825rem", fontWeight: 700, color: "var(--color-navy)", marginBottom: "0.35rem" }}>
-                      Joint Owner Name & Relationship *
-                    </label>
-                    <input
-                      type="text"
-                      required
-                      placeholder="e.g., Sunita Sharma (Wife)"
-                      value={jointOwnerName}
-                      onChange={(e) => setJointOwnerName(e.target.value)}
-                      style={{
-                        width: "100%",
-                        padding: "0.7rem 0.85rem",
-                        borderRadius: "12px",
-                        border: "1px solid rgba(27, 42, 74, 0.12)",
-                        fontSize: "0.85rem",
-                        color: "var(--color-navy)",
-                        backgroundColor: "#FFFFFF",
-                        outline: "none",
-                      }}
-                    />
+                  <div className="wizard-modal-grid-2" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "0.75rem" }}>
+                    <div>
+                      <label style={{ display: "block", fontSize: "0.825rem", fontWeight: 700, color: "var(--color-navy)", marginBottom: "0.35rem" }}>
+                        {isHi ? "सह-स्वामी का पूरा नाम *" : "Joint Owner Full Name *"}
+                      </label>
+                      <input
+                        type="text"
+                        required
+                        placeholder="e.g., Sunita Sharma"
+                        value={jointOwnerName}
+                        onChange={(e) => setJointOwnerName(sanitizeNameInput(e.target.value))}
+                        style={{
+                          width: "100%",
+                          padding: "0.7rem 0.85rem",
+                          borderRadius: "12px",
+                          border: "1px solid rgba(27, 42, 74, 0.12)",
+                          fontSize: "0.85rem",
+                          backgroundColor: "#FFFFFF",
+                          outline: "none",
+                        }}
+                      />
+                    </div>
+
+                    <div>
+                      <label style={{ display: "block", fontSize: "0.825rem", fontWeight: 700, color: "var(--color-navy)", marginBottom: "0.35rem" }}>
+                        {isHi ? "सह-स्वामी से संबंध *" : "Relationship with Joint Owner *"}
+                      </label>
+                      <input
+                        type="text"
+                        required
+                        placeholder="e.g., Spouse, Brother, Father"
+                        value={jointOwnerRelationship}
+                        onChange={(e) => setJointOwnerRelationship(sanitizeNameInput(e.target.value))}
+                        style={{
+                          width: "100%",
+                          padding: "0.7rem 0.85rem",
+                          borderRadius: "12px",
+                          border: "1px solid rgba(27, 42, 74, 0.12)",
+                          fontSize: "0.85rem",
+                          backgroundColor: "#FFFFFF",
+                          outline: "none",
+                        }}
+                      />
+                    </div>
+                  </div>
+                  <div style={{ display: "flex", flexWrap: "wrap", gap: "0.3rem", marginTop: "-0.35rem" }}>
+                    {["Spouse", "Father", "Mother", "Son", "Daughter", "Brother", "Sister", "Business Partner"].map((relOpt) => (
+                      <button
+                        key={relOpt}
+                        type="button"
+                        onClick={() => setJointOwnerRelationship(relOpt)}
+                        style={{
+                          padding: "0.2rem 0.55rem",
+                          borderRadius: "6px",
+                          fontSize: "0.7rem",
+                          fontWeight: 600,
+                          backgroundColor: jointOwnerRelationship === relOpt ? "#C65378" : "#FFFFFF",
+                          color: jointOwnerRelationship === relOpt ? "#FFFFFF" : "var(--color-navy)",
+                          border: "1px solid rgba(198, 83, 120, 0.25)",
+                          cursor: "pointer",
+                        }}
+                      >
+                        {relOpt}
+                      </button>
+                    ))}
                   </div>
 
                   <div>
-                    <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "0.35rem", flexWrap: "wrap", gap: "0.4rem" }}>
+                    <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "0.35rem" }}>
                       <label style={{ fontSize: "0.825rem", fontWeight: 700, color: "var(--color-navy)" }}>
-                        What percentage of this asset do you own? / Your ownership share *
+                        {isHi ? "आपका मालिकाना हिस्सा (%)" : "Your Ownership Share (%)"}
                       </label>
                       <div style={{ display: "flex", alignItems: "center", gap: "0.3rem" }}>
                         <input
-                          type="number"
-                          min="1"
-                          max="99"
-                          value={ownershipPercentage}
-                          onChange={(e) => setOwnershipPercentage(Math.min(99, Math.max(1, parseInt(e.target.value, 10) || 50)))}
+                          type="text"
+                          inputMode="numeric"
+                          maxLength={2}
+                          value={ownershipPercentage ? String(ownershipPercentage) : ""}
+                          onChange={(e) => {
+                            const p = sanitizePercent(e.target.value);
+                            setOwnershipPercentage(p ? Math.min(99, parseInt(p, 10)) : 0);
+                          }}
                           style={{
                             width: "56px",
                             padding: "0.25rem 0.4rem",
@@ -1250,11 +1714,11 @@ export default function Step4Assets({
                             backgroundColor: "#FFFFFF",
                           }}
                         />
-                        <span style={{ fontWeight: 800, color: "var(--color-navy)", fontSize: "0.9rem" }}>%</span>
+                        <span style={{ fontWeight: 800, color: "var(--color-navy)" }}>%</span>
                       </div>
                     </div>
 
-                    <div style={{ display: "flex", gap: "0.35rem", marginBottom: "0.5rem", flexWrap: "wrap" }}>
+                    <div style={{ display: "flex", gap: "0.35rem", flexWrap: "wrap" }}>
                       {[25, 33, 40, 50, 60, 75].map((pct) => (
                         <button
                           key={pct}
@@ -1275,38 +1739,93 @@ export default function Step4Assets({
                         </button>
                       ))}
                     </div>
-
-                    <p style={{ margin: 0, fontSize: "0.74rem", color: "var(--color-gold)", fontWeight: 600, lineHeight: 1.35 }}>
-                      ⚖️ <strong>Legal Rule:</strong> The Will can only distribute the portion of the asset that you own ({ownershipPercentage}% share = {formatCurrency(Math.round((approximateValue * ownershipPercentage) / 100))}). The remaining {100 - ownershipPercentage}% remains with the co-owner.
-                    </p>
                   </div>
                 </div>
               )}
 
-              {/* Mortgage Switch */}
+              {/* Loan / Encumbrance Switch & Details (Section 167, Indian Succession Act, 1925) */}
               <div
                 style={{
                   display: "flex",
-                  alignItems: "center",
-                  justifyContent: "space-between",
+                  flexDirection: "column",
+                  gap: "0.65rem",
                   padding: "0.75rem 1rem",
                   borderRadius: "12px",
                   backgroundColor: "rgba(27, 42, 74, 0.03)",
                 }}
               >
-                <div>
-                  <div style={{ fontSize: "0.825rem", fontWeight: 700, color: "var(--color-navy)" }}>
-                    Has active home loan / mortgage encumbrance
+                <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
+                  <div>
+                    <div style={{ fontSize: "0.825rem", fontWeight: 700, color: "var(--color-navy)" }}>
+                      {isHi ? "सक्रिय ऋण / बंधक दायित्व है (धारा 167)" : "Has active loan / mortgage encumbrance (Sec. 167)"}
+                    </div>
+                    <div style={{ fontSize: "0.725rem", color: "var(--color-slate)" }}>
+                      {isHi
+                        ? "धारा 167 के तहत यह स्पष्ट करता है कि ऋण का भुगतान कौन करेगा"
+                        : "Specifies loan liability details under Section 167 of the Indian Succession Act"}
+                    </div>
                   </div>
-                  <div style={{ fontSize: "0.725rem", color: "var(--color-slate)" }}>
-                    Guides executor on clearing debts and loan payments before distribution
-                  </div>
+                  <AppleSwitch checked={hasLoan} onChange={setHasLoan} />
                 </div>
-                <AppleSwitch checked={hasLoan} onChange={setHasLoan} />
+
+                {hasLoan && (
+                  <div style={{ marginTop: "0.25rem" }}>
+                    <label style={{ display: "block", fontSize: "0.78rem", fontWeight: 700, color: "var(--color-navy)", marginBottom: "0.3rem" }}>
+                      {isHi ? "ऋणदाता बैंक / ऋण विवरण एवं निर्देश" : "Lender Bank, Loan Account & Repayment Direction"}
+                    </label>
+                    <input
+                      type="text"
+                      placeholder={
+                        isHi
+                          ? "उदा: SBI होम लोन खाता नं. 12345 (लाभार्थी द्वारा देय)"
+                          : "e.g., SBI Home Loan A/c 12345 — to be discharged by beneficiary"
+                      }
+                      value={loanDetails}
+                      onChange={(e) => setLoanDetails(e.target.value)}
+                      style={{
+                        width: "100%",
+                        padding: "0.65rem 0.85rem",
+                        borderRadius: "10px",
+                        border: "1px solid rgba(27, 42, 74, 0.15)",
+                        fontSize: "0.85rem",
+                        backgroundColor: "#FFFFFF",
+                        color: "var(--color-navy)",
+                        outline: "none",
+                      }}
+                    />
+                  </div>
+                )}
               </div>
 
-              {/* Submit Buttons */}
-              <div style={{ display: "flex", gap: "0.75rem", marginTop: "0.5rem" }}>
+              {/* Optional Asset-Specific Direction / Special Instructions */}
+              <div>
+                <label style={{ display: "block", fontSize: "0.8rem", fontWeight: 700, color: "var(--color-navy)", marginBottom: "0.3rem" }}>
+                  {isHi ? "विशेष निर्देश / शर्त (वैकल्पिक)" : "Specific Direction / Condition for this Asset (Optional)"}
+                </label>
+                <input
+                  type="text"
+                  placeholder={
+                    isHi
+                      ? "उदा: लॉकर की चाबी अलमारी में है / सह-स्वामी के बाद हस्तांतरण"
+                      : "e.g., Locker key kept in home safe / specific handover instruction"
+                  }
+                  value={specialInstructions}
+                  onChange={(e) => setSpecialInstructions(e.target.value)}
+                  style={{
+                    width: "100%",
+                    padding: "0.65rem 0.85rem",
+                    borderRadius: "10px",
+                    border: "1px solid rgba(27, 42, 74, 0.12)",
+                    fontSize: "0.85rem",
+                    backgroundColor: "#FFFFFF",
+                    color: "var(--color-navy)",
+                    outline: "none",
+                  }}
+                />
+              </div>
+
+              {/* Actions */}
+              <div className="wizard-modal-actions" style={{ display: "flex", gap: "0.75rem", marginTop: "0.5rem" }}>
                 <button
                   type="button"
                   onClick={() => setModalOpen(false)}
@@ -1321,7 +1840,7 @@ export default function Step4Assets({
                     cursor: "pointer",
                   }}
                 >
-                  Cancel
+                  {isHi ? "रद्द करें" : "Cancel"}
                 </button>
                 <button
                   type="submit"
@@ -1336,8 +1855,8 @@ export default function Step4Assets({
                   }}
                 >
                   {editingAssetId
-                    ? isHi ? "बदलाव सहेजें" : "Save Changes"
-                    : isHi ? "संपत्ति सहेजें" : "Save Asset to Schedule"}
+                    ? (isHi ? "बदलाव सहेजें" : "Save Changes")
+                    : (isHi ? "संपत्ति सहेजें" : "Save Asset to Schedule")}
                 </button>
               </div>
             </form>

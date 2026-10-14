@@ -3,10 +3,13 @@
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { useSession, signOut } from "next-auth/react";
 import { WillDraftingState } from "@/lib/willDraftingStore";
+import { useWillStore } from "@/lib/useWillStore";
 import LanguageToggle from "@/components/ui/LanguageToggle";
+import { areAllDetailsFilled } from "@/components/wizard/WizardStepProgressBar";
 import {
-  Sparkles,
+  LayoutDashboard,
   User,
   Users,
   Landmark,
@@ -23,6 +26,8 @@ import {
   Check,
   Lock,
   ChevronDown,
+  LogOut,
+  LogIn,
 } from "lucide-react";
 
 interface SidebarStepItem {
@@ -45,20 +50,40 @@ interface SidebarPhaseItem {
 interface WizardSidebarProps {
   currentStep: number;
   onJumpToStep: (step: number) => void;
-  state: WillDraftingState;
+  state?: WillDraftingState;
   lang?: "en" | "hi";
   onChangeLang?: (lang: "en" | "hi") => void;
+  hideDashboardLink?: boolean;
 }
 
 export default function WizardSidebar({
   currentStep,
   onJumpToStep,
-  state,
+  state: propState,
   lang = "en",
   onChangeLang,
+  hideDashboardLink = false,
 }: WizardSidebarProps) {
+  const storeState = useWillStore((s) => s.state);
+  const state = propState || storeState;
+  const { data: session } = useSession();
   const isHi = lang === "hi";
   const hasMinors = state.familyMembers.some((f) => f.isMinor);
+
+  // Plan selection & the final Will are only revealed once the user has filled in their details
+  // (or reached the review stage / already paid) — payment is asked for at the finalise & download point.
+  const isPaid = session?.user?.paymentStatus === "paid";
+  const showPaymentSteps = isPaid || currentStep >= 10 || areAllDetailsFilled(state);
+
+  const userDisplayName = session?.user?.name || state.testator.fullName || "User";
+  const userEmail = session?.user?.email || state.testator.email || "";
+  const initials = (userDisplayName || "U")
+    .split(" ")
+    .map((n) => n[0])
+    .filter(Boolean)
+    .slice(0, 2)
+    .join("")
+    .toUpperCase() || "U";
 
   const phases: SidebarPhaseItem[] = [
     {
@@ -66,7 +91,7 @@ export default function WizardSidebar({
       title: "Phase 1: Personal & Family",
       hindiTitle: "व्यक्तिगत एवं परिवार",
       steps: [
-        { num: 1, isWelcome: true, title: "Welcome & Overview", hindi: "स्वागत", icon: Sparkles },
+        { num: 1, isWelcome: true, title: "Dashboard", hindi: "डैशबोर्ड", icon: LayoutDashboard },
         { num: 2, displayNum: 1, title: "About You", hindi: "अपनी जानकारी", icon: User },
         { num: 3, displayNum: 2, title: "My Family", hindi: "परिवार", icon: Users },
       ],
@@ -99,8 +124,12 @@ export default function WizardSidebar({
         { num: 10, displayNum: 9, title: "Full Review", hindi: "समीक्षा", icon: Search },
         { num: 11, displayNum: 10, title: "Legal Health Check", hindi: "कानूनी जांच", icon: Activity },
         { num: 12, displayNum: 11, title: "Clause Assembly", hindi: "संकलन", icon: Cpu },
-        { num: 13, displayNum: 12, title: "Plan Selection", hindi: "योजना", icon: Tag },
-        { num: 14, displayNum: 13, title: "Final Will Document", hindi: "मूल वसीयत", icon: FileText },
+        ...(showPaymentSteps
+          ? [
+              { num: 13, displayNum: 12, title: "Plan Selection", hindi: "योजना", icon: Tag },
+              { num: 14, displayNum: 13, title: "Final Will Document", hindi: "मूल वसीयत", icon: FileText },
+            ]
+          : []),
       ],
     },
   ];
@@ -143,23 +172,19 @@ export default function WizardSidebar({
       ? 0
       : Math.min(100, Math.round(((currentStep - 1) / totalSteps) * 100));
 
-  // SVG Circular progress
-  const ringRadius = 18;
-  const ringCircumference = 2 * Math.PI * ringRadius;
-  const ringOffset = ringCircumference - (progressPercent / 100) * ringCircumference;
 
   return (
     <aside
       style={{
         width: "260px",
-        backgroundColor: "rgba(23, 34, 40, 0.97)",
+        backgroundColor: "#FAF7F0",
         backdropFilter: "blur(28px) saturate(190%)",
-        color: "#FFFFFF",
+        color: "#172228",
         height: "100vh",
         display: "flex",
         flexDirection: "column",
         flexShrink: 0,
-        borderRight: "1px solid rgba(255, 255, 255, 0.08)",
+        borderRight: "1px solid rgba(23, 34, 40, 0.08)",
         position: "sticky",
         top: 0,
         zIndex: 20,
@@ -169,11 +194,11 @@ export default function WizardSidebar({
       {/* macOS-style Header & Return Action */}
       <div
         style={{
-          padding: "1rem 1rem 0.85rem",
-          borderBottom: "1px solid rgba(255, 255, 255, 0.08)",
+          padding: "1rem 1rem",
+          borderBottom: "1px solid rgba(23, 34, 40, 0.08)",
         }}
       >
-        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "0.85rem" }}>
+        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
           <Link href="/" style={{ display: "flex", alignItems: "center", textDecoration: "none" }}>
             <Image
               src="/Logofinal.svg"
@@ -185,101 +210,32 @@ export default function WizardSidebar({
             />
           </Link>
 
-          <Link
-            href="/dashboard"
-            style={{
-              fontSize: "0.72rem",
-              fontWeight: 600,
-              color: "rgba(255, 255, 255, 0.8)",
-              padding: "0.3rem 0.65rem",
-              borderRadius: "8px",
-              backgroundColor: "rgba(255, 255, 255, 0.08)",
-              border: "1px solid rgba(255, 255, 255, 0.12)",
-              textDecoration: "none",
-              display: "inline-flex",
-              alignItems: "center",
-              gap: "0.3rem",
-              transition: "all 0.15s ease",
-            }}
-          >
-            <span>←</span> {isHi ? "डैशबोर्ड" : "Dashboard"}
-          </Link>
-        </div>
-
-        
-
-        {/* Apple Watch style Progress Card */}
-        <div
-          style={{
-            backgroundColor: "rgba(255, 255, 255, 0.06)",
-            border: "1px solid rgba(255, 255, 255, 0.08)",
-            borderRadius: "16px",
-            padding: "0.85rem 1rem",
-            display: "flex",
-            alignItems: "center",
-            gap: "0.85rem",
-          }}
-        >
-          {/* Progress Ring */}
-          <div style={{ position: "relative", width: "44px", height: "44px", flexShrink: 0 }}>
-            <svg width="44" height="44" viewBox="0 0 44 44" style={{ transform: "rotate(-90deg)" }}>
-              <circle
-                cx="22"
-                cy="22"
-                r={ringRadius}
-                stroke="rgba(255, 255, 255, 0.12)"
-                strokeWidth="4"
-                fill="none"
-              />
-              <circle
-                cx="22"
-                cy="22"
-                r={ringRadius}
-                stroke="var(--color-gold)"
-                strokeWidth="4"
-                strokeDasharray={ringCircumference}
-                strokeDashoffset={ringOffset}
-                strokeLinecap="round"
-                fill="none"
-                style={{ transition: "stroke-dashoffset 0.4s cubic-bezier(0.16, 1, 0.3, 1)" }}
-              />
-            </svg>
-            <div
+          {!hideDashboardLink && currentStep > 1 && (
+            <Link
+              href="/start/dashboard"
               style={{
-                position: "absolute",
-                inset: 0,
-                display: "flex",
+                fontSize: "0.72rem",
+                fontWeight: 600,
+                color: "#172228",
+                padding: "0.3rem 0.65rem",
+                borderRadius: "999px",
+                backgroundColor: "#FFFFFF",
+                border: "1px solid rgba(23, 34, 40, 0.1)",
+                textDecoration: "none",
+                display: "inline-flex",
                 alignItems: "center",
-                justifyContent: "center",
-                fontSize: "0.7rem",
-                fontWeight: 800,
-                color: "var(--color-gold)",
+                gap: "0.3rem",
+                transition: "all 0.15s ease",
+                boxShadow: "0 1px 3px rgba(23, 34, 40, 0.04)",
               }}
             >
-              {progressPercent}%
-            </div>
-          </div>
-
-          <div style={{ flex: 1, minWidth: 0 }}>
-            <div style={{ fontSize: "0.8rem", fontWeight: 700, color: "#FFFFFF" }}>
-              {currentStep <= 1
-                ? (isHi ? "स्वागत एवं अवलोकन" : "Welcome Overview")
-                : (isHi ? `चरण ${currentStep - 1} / ${totalSteps}` : `Step ${currentStep - 1} of ${totalSteps}`)}
-            </div>
-            <div style={{ fontSize: "0.72rem", color: "rgba(255, 255, 255, 0.6)", marginTop: "2px" }}>
-              {currentStep === 14
-                ? isHi
-                  ? "निष्पादन के लिए तैयार"
-                  : "Ready to execute"
-                : isHi
-                ? "कानूनी वसीयत प्रश्नोत्तरी"
-                : "Statutory Questionnaire"}
-            </div>
-          </div>
+              <span>←</span> {isHi ? "डैशबोर्ड" : "Dashboard"}
+            </Link>
+          )}
         </div>
       </div>
 
-      {/* macOS Translucent Stepper List */}
+      {/* Stepper List */}
       <div
         style={{
           flex: 1,
@@ -300,9 +256,9 @@ export default function WizardSidebar({
               key={phase.id}
               style={{
                 borderRadius: "12px",
-                backgroundColor: isOpen ? "rgba(255, 255, 255, 0.03)" : "transparent",
+                backgroundColor: isOpen ? "rgba(23, 34, 40, 0.02)" : "transparent",
                 border: isOpen
-                  ? "1px solid rgba(255, 255, 255, 0.07)"
+                  ? "1px solid rgba(23, 34, 40, 0.06)"
                   : "1px solid transparent",
                 transition: "all 0.2s ease",
               }}
@@ -323,14 +279,14 @@ export default function WizardSidebar({
                   cursor: "pointer",
                   textAlign: "left",
                   color: hasActiveStep
-                    ? "#FFFFFF"
+                    ? "#C65378"
                     : allPhaseCompleted
-                    ? "rgba(255, 255, 255, 0.85)"
-                    : "rgba(255, 255, 255, 0.55)",
+                    ? "#172228"
+                    : "#49585F",
                   transition: "background-color 0.15s ease",
                 }}
                 onMouseEnter={(e) => {
-                  e.currentTarget.style.backgroundColor = "rgba(255, 255, 255, 0.05)";
+                  e.currentTarget.style.backgroundColor = "rgba(23, 34, 40, 0.04)";
                 }}
                 onMouseLeave={(e) => {
                   e.currentTarget.style.backgroundColor = "transparent";
@@ -343,7 +299,7 @@ export default function WizardSidebar({
                       fontWeight: 700,
                       textTransform: "uppercase",
                       letterSpacing: "0.07em",
-                      color: hasActiveStep ? "var(--color-gold)" : "inherit",
+                      color: hasActiveStep ? "#C65378" : "inherit",
                     }}
                   >
                     {isHi ? phase.hindiTitle : phase.title}
@@ -354,7 +310,8 @@ export default function WizardSidebar({
                   size={15}
                   style={{
                     flexShrink: 0,
-                    opacity: 0.75,
+                    color: hasActiveStep ? "#C65378" : "#49585F",
+                    opacity: 0.85,
                     transform: isOpen ? "rotate(180deg)" : "rotate(0deg)",
                     transition: "transform 0.22s cubic-bezier(0.16, 1, 0.3, 1)",
                   }}
@@ -378,102 +335,212 @@ export default function WizardSidebar({
                     }}
                   >
                     {phase.steps.map((step) => {
-                const isActive = currentStep === step.num;
-                const isCompleted = currentStep > step.num;
+                      const isActive = currentStep === step.num;
+                      const isCompleted = currentStep > step.num;
 
-                return (
-                  <button
-                    key={step.num}
-                    onClick={() => onJumpToStep(step.num)}
-                    style={{
-                      width: "100%",
-                      display: "flex",
-                      alignItems: "center",
-                      gap: "0.55rem",
-                      padding: "0.35rem 0.6rem",
-                      borderRadius: "10px",
-                      backgroundColor: isActive
-                        ? "rgba(255, 255, 255, 0.14)"
-                        : "transparent",
-                      border: "none",
-                      color: isActive
-                        ? "#FFFFFF"
-                        : isCompleted
-                        ? "rgba(255, 255, 255, 0.9)"
-                        : "rgba(255, 255, 255, 0.48)",
-                      cursor: "pointer",
-                      fontSize: "0.78rem",
-                      fontWeight: isActive ? 700 : 500,
-                      textAlign: "left",
-                      transition: "all 0.18s cubic-bezier(0.16, 1, 0.3, 1)",
-                      position: "relative",
-                    }}
-                    onMouseEnter={(e) => {
-                      if (!isActive) e.currentTarget.style.backgroundColor = "rgba(255, 255, 255, 0.06)";
-                    }}
-                    onMouseLeave={(e) => {
-                      if (!isActive) e.currentTarget.style.backgroundColor = "transparent";
-                    }}
-                  >
-                    {/* Indicator Dot/Badge */}
-                    <span
-                      style={{
-                        width: "22px",
-                        height: "22px",
-                        borderRadius: "50%",
-                        backgroundColor: isActive
-                          ? "var(--color-gold)"
-                          : isCompleted
-                          ? "var(--color-sage)"
-                          : "rgba(255, 255, 255, 0.1)",
-                        color: "#FFFFFF",
-                        display: "flex",
-                        alignItems: "center",
-                        justifyContent: "center",
-                        fontSize: "0.7rem",
-                        fontWeight: 800,
-                        flexShrink: 0,
-                        boxShadow: isActive ? "0 0 10px rgba(198, 83, 120, 0.45)" : "none",
-                      }}
-                    >
-                      {isCompleted ? (
-                        <Check size={12} strokeWidth={3} />
-                      ) : step.isWelcome ? (
-                        <Sparkles size={11} strokeWidth={2.5} />
-                      ) : (
-                        step.displayNum ?? (step.num - 1)
-                      )}
-                    </span>
+                      return (
+                        <button
+                          key={step.num}
+                          onClick={() => onJumpToStep(step.num)}
+                          style={{
+                            width: "100%",
+                            display: "flex",
+                            alignItems: "center",
+                            gap: "0.55rem",
+                            padding: "0.4rem 0.6rem",
+                            borderRadius: "10px",
+                            backgroundColor: isActive
+                              ? "rgba(198, 83, 120, 0.09)"
+                              : "transparent",
+                            border: isActive ? "1px solid rgba(198, 83, 120, 0.2)" : "1px solid transparent",
+                            borderLeft: isActive ? "3px solid #C65378" : "1px solid transparent",
+                            color: isActive
+                              ? "#C65378"
+                              : isCompleted
+                              ? "#172228"
+                              : "#49585F",
+                            cursor: "pointer",
+                            fontSize: "0.78rem",
+                            fontWeight: isActive ? 700 : isCompleted ? 600 : 500,
+                            textAlign: "left",
+                            transition: "all 0.18s cubic-bezier(0.16, 1, 0.3, 1)",
+                            position: "relative",
+                          }}
+                          onMouseEnter={(e) => {
+                            if (!isActive) e.currentTarget.style.backgroundColor = "rgba(23, 34, 40, 0.04)";
+                          }}
+                          onMouseLeave={(e) => {
+                            if (!isActive) e.currentTarget.style.backgroundColor = "transparent";
+                          }}
+                        >
+                          {/* Indicator Dot/Badge */}
+                          <span
+                            style={{
+                              width: "22px",
+                              height: "22px",
+                              borderRadius: "50%",
+                              backgroundColor: isActive
+                                ? "#C65378"
+                                : isCompleted
+                                ? "#5F7E75"
+                                : "rgba(23, 34, 40, 0.08)",
+                              color: isActive || isCompleted ? "#FFFFFF" : "#49585F",
+                              display: "flex",
+                              alignItems: "center",
+                              justifyContent: "center",
+                              fontSize: "0.7rem",
+                              fontWeight: 800,
+                              flexShrink: 0,
+                              boxShadow: isActive ? "0 2px 6px rgba(198, 83, 120, 0.3)" : "none",
+                            }}
+                          >
+                            {isCompleted ? (
+                              <Check size={12} strokeWidth={3} />
+                            ) : step.isWelcome ? (
+                              <LayoutDashboard size={11} strokeWidth={2.5} />
+                            ) : (
+                              step.displayNum ?? (step.num - 1)
+                            )}
+                          </span>
 
-                    {/* Step Icon */}
-                    {React.createElement(step.icon, {
-                      size: 15,
-                      style: {
-                        flexShrink: 0,
-                        color: isActive ? "var(--color-gold)" : "rgba(255, 255, 255, 0.7)",
-                      },
+                          {/* Step Icon */}
+                          {React.createElement(step.icon, {
+                            size: 15,
+                            style: {
+                              flexShrink: 0,
+                              color: isActive
+                                ? "#C65378"
+                                : isCompleted
+                                ? "#5F7E75"
+                                : "#49585F",
+                            },
+                          })}
+
+                          <div style={{ display: "flex", flexDirection: "column", minWidth: 0, flex: 1 }}>
+                            <span style={{ overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}>
+                              {isHi && step.hindi ? step.hindi : step.title}
+                            </span>
+                          </div>
+
+                          {step.optionalNote && (
+                            <span style={{ fontSize: "0.65rem", color: "#49585F" }}>
+                              {isHi ? "(नाबालिग नहीं)" : step.optionalNote}
+                            </span>
+                          )}
+                        </button>
+                      );
                     })}
-
-                    <div style={{ display: "flex", flexDirection: "column", minWidth: 0, flex: 1 }}>
-                      <span style={{ overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}>
-                        {isHi && step.hindi ? step.hindi : step.title}
-                      </span>
-                    </div>
-
-                    {step.optionalNote && (
-                      <span style={{ fontSize: "0.65rem", color: "rgba(255, 255, 255, 0.45)" }}>
-                        {isHi ? "(नाबालिग नहीं)" : step.optionalNote}
-                      </span>
-                    )}
-                  </button>
-                );
-              })}
                   </div>
                 </div>
               </div>
             </div>
           );
         })}
+      </div>
+
+      {/* User Account & Logout Footer */}
+      <div
+        style={{
+          marginTop: "auto",
+          padding: "0.75rem 0.85rem",
+          borderTop: "1px solid rgba(23, 34, 40, 0.08)",
+          backgroundColor: "#FFFFFF",
+          flexShrink: 0,
+        }}
+      >
+        <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", gap: "0.5rem" }}>
+          <div style={{ display: "flex", alignItems: "center", gap: "0.55rem", minWidth: 0, flex: 1 }}>
+            <div
+              style={{
+                width: "32px",
+                height: "32px",
+                borderRadius: "50%",
+                backgroundColor: "var(--color-navy)",
+                color: "#FFFFFF",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                fontSize: "0.75rem",
+                fontWeight: 700,
+                flexShrink: 0,
+              }}
+            >
+              {initials}
+            </div>
+            <div style={{ minWidth: 0, flex: 1 }}>
+              <div
+                style={{
+                  fontSize: "0.78rem",
+                  fontWeight: 700,
+                  color: "#172228",
+                  whiteSpace: "nowrap",
+                  overflow: "hidden",
+                  textOverflow: "ellipsis",
+                }}
+              >
+                {userDisplayName}
+              </div>
+              <div
+                style={{
+                  fontSize: "0.68rem",
+                  color: "#55636D",
+                  whiteSpace: "nowrap",
+                  overflow: "hidden",
+                  textOverflow: "ellipsis",
+                }}
+              >
+                {userEmail || (session?.user ? "Logged In" : "Guest Mode")}
+              </div>
+            </div>
+          </div>
+
+          {session?.user ? (
+            <button
+              type="button"
+              onClick={() => signOut({ callbackUrl: "/" })}
+              title="Sign out of your account"
+              style={{
+                display: "inline-flex",
+                alignItems: "center",
+                gap: "0.3rem",
+                padding: "0.35rem 0.6rem",
+                borderRadius: "8px",
+                border: "1px solid rgba(239, 68, 68, 0.25)",
+                backgroundColor: "rgba(239, 68, 68, 0.08)",
+                color: "#DC2626",
+                fontSize: "0.72rem",
+                fontWeight: 600,
+                cursor: "pointer",
+                transition: "all 0.15s ease",
+                flexShrink: 0,
+              }}
+            >
+              <LogOut size={12} />
+              <span>{isHi ? "लॉगआउट" : "Logout"}</span>
+            </button>
+          ) : (
+            <Link
+              href="/login"
+              style={{
+                display: "inline-flex",
+                alignItems: "center",
+                gap: "0.3rem",
+                padding: "0.35rem 0.6rem",
+                borderRadius: "8px",
+                border: "1px solid rgba(23, 34, 40, 0.15)",
+                backgroundColor: "rgba(23, 34, 40, 0.04)",
+                color: "#172228",
+                fontSize: "0.72rem",
+                fontWeight: 600,
+                textDecoration: "none",
+                flexShrink: 0,
+              }}
+            >
+              <LogIn size={12} />
+              <span>{isHi ? "लॉगिन" : "Login"}</span>
+            </Link>
+          )}
+        </div>
       </div>
     </aside>
   );

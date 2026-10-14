@@ -3,6 +3,7 @@
 import React, { useState, useEffect, useMemo, useRef } from "react";
 import { FamilyMember } from "@/lib/willDraftingStore";
 import { Plus, Trash2, CheckCircle2, AlertCircle, AlertTriangle, Sparkles } from "lucide-react";
+import { sanitizePercent } from "@/lib/inputSanitizers";
 
 export interface AllocationEntry {
   beneficiaryId: string;
@@ -35,8 +36,16 @@ export default function CustomPercentageAllocator({
   showActions = true,
   isHi = false,
 }: CustomPercentageAllocatorProps) {
-  // Initialize rows from initialAllocations or default to first family member
-  const [rows, setRows] = useState<AllocationEntry[]>(() => {
+  const toNum = (v: number | string): number => {
+    const n = typeof v === "number" ? v : parseInt(String(v), 10);
+    return isNaN(n) ? 0 : n;
+  };
+
+  // Rows that carry a real share (0% rows are ignored when comparing with the parent's copy)
+  const keyOf = (list: { beneficiaryId: string; percentage: number | string }[]) =>
+    JSON.stringify(list.filter((r) => toNum(r.percentage) > 0).map((r) => [r.beneficiaryId, toNum(r.percentage)]));
+
+  const buildRowsFromProps = (): AllocationEntry[] => {
     if (initialAllocations && initialAllocations.length > 0) {
       return initialAllocations.map((a) => ({
         beneficiaryId: a.beneficiaryId,
@@ -54,15 +63,17 @@ export default function CustomPercentageAllocator({
       ];
     }
     return [];
-  });
+  };
+
+  // Initialize rows from initialAllocations or default to first family member
+  const [rows, setRows] = useState<AllocationEntry[]>(buildRowsFromProps);
 
   // Calculate total percentage dynamically
   const totalAllocated = useMemo(() => {
-    return rows.reduce((sum, r) => {
-      const val = typeof r.percentage === "number" ? r.percentage : parseInt(r.percentage, 10);
-      return sum + (isNaN(val) ? 0 : val);
-    }, 0);
+    return rows.reduce((sum, r) => sum + toNum(r.percentage), 0);
   }, [rows]);
+
+  const remaining = 100 - totalAllocated;
 
   // Validation: total must equal exactly 100%, rows must not have duplicates or empty percentages
   const isValid = useMemo(() => {
@@ -112,11 +123,25 @@ export default function CustomPercentageAllocator({
       const sanitized = rows.map((r) => ({
         beneficiaryId: r.beneficiaryId,
         beneficiaryName: r.beneficiaryName,
-        percentage: typeof r.percentage === "number" ? r.percentage : parseInt(r.percentage, 10) || 0,
+        percentage: toNum(r.percentage),
       }));
       onChangeRef.current(sanitized, isValid);
     }
   }, [rows, isValid]);
+
+  // Re-sync local rows when the parent hands us a genuinely different allocation
+  // (e.g. beneficiary cards toggled outside this component).
+  const propsKey = keyOf(initialAllocations || []);
+  const lastPropsKeyRef = useRef(propsKey);
+  useEffect(() => {
+    if (propsKey === lastPropsKeyRef.current) return;
+    lastPropsKeyRef.current = propsKey;
+    if (keyOf(rows) === propsKey) return; // parent just echoed what we emitted
+    const next = buildRowsFromProps();
+    prevSerializedRef.current = JSON.stringify(next); // external change: don't echo it back
+    setRows(next);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [propsKey]);
 
   // Handle changing person dropdown (prevent selecting already chosen person)
   const handleBeneficiaryChange = (index: number, newId: string) => {
@@ -133,79 +158,95 @@ export default function CustomPercentageAllocator({
     );
   };
 
-  // Handle changing percentage input (allows raw typing of whole numbers 0 to 100)
-  const handlePercentageChange = (index: number, rawVal: string | number) => {
-    setRows((prev) =>
-      prev.map((r, i) => {
-        if (i !== index) return r;
-        if (typeof rawVal === "string") {
-          if (rawVal === "") return { ...r, percentage: "" };
-          const parsed = parseInt(rawVal.replace(/[^0-9]/g, ""), 10);
-          if (isNaN(parsed)) return { ...r, percentage: "" };
-          const clamped = Math.max(0, Math.min(100, parsed));
-          return { ...r, percentage: clamped };
-        }
-        const clamped = Math.max(0, Math.min(100, Math.round(rawVal)));
-        return { ...r, percentage: clamped };
-      })
-    );
+  /**
+   * Applies a new value to one row while guaranteeing the combined total never exceeds 100%.
+   * Any excess is taken away from the OTHER rows, starting with the earliest one
+   * (e.g. A=60, B set to 60 -> A becomes 40).
+   */
+  function applyPercentage(currentRows: AllocationEntry[], changedIndex: number, rawValue: number): AllocationEntry[] {
+    const n = currentRows.length;
+    if (n === 0) return currentRows;
+    if (n === 1) return [{ ...currentRows[0], percentage: 100 }];
+
+    const value = Math.max(0, Math.min(100, Math.round(rawValue)));
+    const next = currentRows.map((r, i) => (i === changedIndex ? { ...r, percentage: value } : { ...r }));
+
+    let excess = next.reduce((s, r) => s + toNum(r.percentage), 0) - 100;
+    for (let i = 0; i < next.length && excess > 0; i++) {
+      if (i === changedIndex) continue;
+      const cur = toNum(next[i].percentage);
+      const take = Math.min(cur, excess);
+      next[i] = { ...next[i], percentage: cur - take };
+      excess -= take;
+    }
+    return next;
+  }
+
+  // Handle typing in a percentage box (digits only, 0-100)
+  const handlePercentageChange = (index: number, rawVal: string) => {
+    const cleaned = sanitizePercent(rawVal);
+    if (cleaned === "") {
+      setRows((prev) => prev.map((r, i) => (i === index ? { ...r, percentage: "" } : r)));
+      return;
+    }
+    setRows((prev) => applyPercentage(prev, index, parseInt(cleaned, 10)));
   };
 
-  // Stepper increment / decrement by 1%
-  const handleStep = (index: number, delta: number) => {
-    setRows((prev) =>
-      prev.map((r, i) => {
-        if (i !== index) return r;
-        const current = typeof r.percentage === "number" ? r.percentage : parseInt(r.percentage, 10) || 0;
-        const next = Math.max(0, Math.min(100, current + delta));
-        return { ...r, percentage: next };
-      })
-    );
-  };
-
-  // Add another person (preselect next available family member)
+  // Add another person: they receive whatever is still unallocated; if nothing is left, everyone is split equally
   const handleAddPerson = () => {
     const unselected = family.find((f) => !selectedBeneficiaryIds.has(f.id));
     if (!unselected) return;
 
-    const remaining = Math.max(0, 100 - totalAllocated);
-    setRows((prev) => [
-      ...prev,
+    const left = 100 - totalAllocated;
+    if (left > 0) {
+      setRows([...rows, { beneficiaryId: unselected.id, beneficiaryName: unselected.name, percentage: left }]);
+      return;
+    }
+
+    const newCount = rows.length + 1;
+    const share = Math.floor(100 / newCount);
+    const rem = 100 - share * newCount;
+    setRows([
+      ...rows.map((r) => ({ ...r, percentage: share })),
       {
         beneficiaryId: unselected.id,
         beneficiaryName: unselected.name,
-        percentage: remaining,
+        percentage: share + rem,
       },
     ]);
   };
 
-  // Remove person
+  // Remove person and simultaneously rebalance remainder to 100%
   const handleRemovePerson = (index: number) => {
     if (rows.length <= 1) return;
-    setRows((prev) => prev.filter((_, i) => i !== index));
-  };
-
-  // Auto balance remaining to 100%
-  const handleAutoBalance = () => {
-    if (rows.length === 0) return;
-    const diff = 100 - totalAllocated;
-    if (diff === 0) return;
-
-    const share = Math.floor(diff / rows.length);
-    const remainder = diff - share * rows.length;
-
-    setRows((prev) =>
-      prev.map((r, i) => {
-        const cur = typeof r.percentage === "number" ? r.percentage : parseInt(r.percentage, 10) || 0;
-        const add = share + (i === prev.length - 1 ? remainder : 0);
-        return {
+    const remainingRows = rows.filter((_, i) => i !== index);
+    if (remainingRows.length === 1) {
+      setRows([{ ...remainingRows[0], percentage: 100 }]);
+      return;
+    }
+    const currentSum = remainingRows.reduce((s, r) => s + toNum(r.percentage), 0);
+    if (currentSum > 0) {
+      let acc = 0;
+      const rebalanced = remainingRows.map((r, idx) => {
+        if (idx === remainingRows.length - 1) {
+          return { ...r, percentage: 100 - acc };
+        }
+        const share = Math.round((toNum(r.percentage) / currentSum) * 100);
+        acc += share;
+        return { ...r, percentage: share };
+      });
+      setRows(rebalanced);
+    } else {
+      const share = Math.floor(100 / remainingRows.length);
+      const rem = 100 - share * remainingRows.length;
+      setRows(
+        remainingRows.map((r, idx) => ({
           ...r,
-          percentage: Math.max(0, Math.min(100, cur + add)),
-        };
-      })
-    );
+          percentage: idx === remainingRows.length - 1 ? share + rem : share,
+        }))
+      );
+    }
   };
-
   // Final submit
   const handleSave = (e?: React.FormEvent) => {
     if (e) e.preventDefault();
@@ -256,7 +297,6 @@ export default function CustomPercentageAllocator({
       {/* Beneficiary Rows */}
       <div style={{ display: "flex", flexDirection: "column", gap: "0.75rem" }}>
         {rows.map((row, idx) => {
-          const numValue = typeof row.percentage === "number" ? row.percentage : parseInt(row.percentage, 10) || 0;
 
           return (
             <div
@@ -282,14 +322,46 @@ export default function CustomPercentageAllocator({
                   gap: "0.65rem",
                 }}
               >
-                {/* Beneficiary Dropdown */}
-                <div style={{ flex: "1 1 200px", minWidth: "160px" }}>
+                {/* Beneficiary Dropdown with Primary 01 / Primary 02 / Backup Badge */}
+                <div style={{ flex: "1 1 240px", minWidth: "200px", display: "flex", alignItems: "center", gap: "0.5rem" }}>
+                  <span
+                    style={{
+                      padding: "0.3rem 0.65rem",
+                      borderRadius: "8px",
+                      backgroundColor:
+                        idx === 0
+                          ? "rgba(198, 83, 120, 0.12)"
+                          : idx === 1
+                          ? "rgba(201, 162, 39, 0.15)"
+                          : "rgba(95, 126, 117, 0.12)",
+                      color:
+                        idx === 0
+                          ? "var(--color-gold)"
+                          : idx === 1
+                          ? "#B45309"
+                          : "var(--color-sage)",
+                      fontSize: "0.72rem",
+                      fontWeight: 800,
+                      letterSpacing: "0.04em",
+                      textTransform: "uppercase",
+                      flexShrink: 0,
+                      border:
+                        idx === 0
+                          ? "1px solid rgba(198, 83, 120, 0.25)"
+                          : idx === 1
+                          ? "1px solid rgba(201, 162, 39, 0.3)"
+                          : "1px solid rgba(95, 126, 117, 0.25)",
+                    }}
+                  >
+                    {idx === 0 ? "Primary 01" : idx === 1 ? "Primary 02" : `Backup 0${idx - 1}`}
+                  </span>
                   <select
                     value={row.beneficiaryId}
                     onChange={(e) => handleBeneficiaryChange(idx, e.target.value)}
                     aria-label="Select beneficiary"
                     style={{
-                      width: "100%",
+                      flex: 1,
+                      minWidth: 0,
                       padding: "0.6rem 0.85rem",
                       borderRadius: "10px",
                       border: "1.5px solid rgba(27, 42, 74, 0.16)",
@@ -313,50 +385,27 @@ export default function CustomPercentageAllocator({
                   </select>
                 </div>
 
-                {/* Percentage Controls: Stepper - / Input % / Stepper + */}
+                {/* Percentage text input (digits only) + delete */}
                 <div style={{ display: "inline-flex", alignItems: "center", gap: "0.3rem" }}>
-                  <button
-                    type="button"
-                    onClick={() => handleStep(idx, -1)}
-                    disabled={numValue <= 0}
-                    title="Decrease by 1%"
-                    aria-label="Decrease percentage by 1%"
-                    style={{
-                      width: "36px",
-                      height: "44px",
-                      borderRadius: "8px",
-                      border: "1px solid rgba(27, 42, 74, 0.18)",
-                      background: "#FFFFFF",
-                      cursor: numValue <= 0 ? "not-allowed" : "pointer",
-                      fontWeight: 800,
-                      fontSize: "1.15rem",
-                      color: "var(--color-navy)",
-                      opacity: numValue <= 0 ? 0.35 : 1,
-                      display: "flex",
-                      alignItems: "center",
-                      justifyContent: "center",
-                    }}
-                  >
-                    −
-                  </button>
-
                   <div style={{ position: "relative", display: "inline-flex", alignItems: "center" }}>
                     <input
-                      type="number"
-                      min={0}
-                      max={100}
-                      step={1}
+                      type="text"
                       inputMode="numeric"
                       pattern="[0-9]*"
-                      value={row.percentage}
+                      maxLength={3}
+                      autoComplete="off"
+                      value={row.percentage === "" ? "" : String(row.percentage)}
                       onChange={(e) => handlePercentageChange(idx, e.target.value)}
+                      onBlur={() => {
+                        if (row.percentage === "") handlePercentageChange(idx, "0");
+                      }}
                       placeholder="0"
                       aria-label="Percentage value"
                       style={{
-                        width: "72px",
+                        width: "92px",
                         height: "44px",
                         textAlign: "center",
-                        padding: "0.2rem 1.2rem 0.2rem 0.3rem",
+                        padding: "0.2rem 1.4rem 0.2rem 0.3rem",
                         borderRadius: "8px",
                         border: "1.5px solid var(--color-navy)",
                         fontWeight: 800,
@@ -369,7 +418,7 @@ export default function CustomPercentageAllocator({
                     <span
                       style={{
                         position: "absolute",
-                        right: "8px",
+                        right: "10px",
                         fontSize: "0.82rem",
                         fontWeight: 800,
                         color: "var(--color-navy)",
@@ -379,31 +428,6 @@ export default function CustomPercentageAllocator({
                       %
                     </span>
                   </div>
-
-                  <button
-                    type="button"
-                    onClick={() => handleStep(idx, 1)}
-                    disabled={numValue >= 100}
-                    title="Increase by 1%"
-                    aria-label="Increase percentage by 1%"
-                    style={{
-                      width: "36px",
-                      height: "44px",
-                      borderRadius: "8px",
-                      border: "1px solid rgba(27, 42, 74, 0.18)",
-                      background: "#FFFFFF",
-                      cursor: numValue >= 100 ? "not-allowed" : "pointer",
-                      fontWeight: 800,
-                      fontSize: "1.15rem",
-                      color: "var(--color-navy)",
-                      opacity: numValue >= 100 ? 0.35 : 1,
-                      display: "flex",
-                      alignItems: "center",
-                      justifyContent: "center",
-                    }}
-                  >
-                    +
-                  </button>
 
                   {/* Delete Button (if more than 1 row) */}
                   {rows.length > 1 && (
@@ -431,28 +455,6 @@ export default function CustomPercentageAllocator({
                     </button>
                   )}
                 </div>
-              </div>
-
-              {/* Slider for smooth dragging */}
-              <div style={{ display: "flex", alignItems: "center", gap: "0.6rem", padding: "0 0.2rem" }}>
-                <input
-                  type="range"
-                  min={0}
-                  max={100}
-                  step={1}
-                  value={numValue}
-                  onChange={(e) => handlePercentageChange(idx, Number(e.target.value))}
-                  aria-label="Percentage slider"
-                  style={{
-                    flex: 1,
-                    accentColor: "var(--color-navy)",
-                    cursor: "pointer",
-                    height: "6px",
-                  }}
-                />
-                <span style={{ fontSize: "0.72rem", color: "var(--color-slate)", minWidth: "30px", textAlign: "right" }}>
-                  {numValue}%
-                </span>
               </div>
             </div>
           );
@@ -482,11 +484,11 @@ export default function CustomPercentageAllocator({
           }}
         >
           <Plus size={16} strokeWidth={2.5} />
-          <span>{isHi ? "+ अन्य व्यक्ति जोड़ें" : "+ Add another person"}</span>
+          <span>{isHi ? "अन्य व्यक्ति जोड़ें" : "Add another person"}</span>
         </button>
       )}
 
-      {/* Prominent Total Allocated Indicator */}
+      {/* Live total / remaining indicator (combined share can never exceed 100%) */}
       <div
         style={{
           display: "flex",
@@ -494,84 +496,54 @@ export default function CustomPercentageAllocator({
           justifyContent: "space-between",
           flexWrap: "wrap",
           gap: "0.75rem",
-          padding: "0.95rem 1.15rem",
-          borderRadius: "14px",
-          backgroundColor:
-            totalAllocated === 100
-              ? "rgba(95, 126, 117, 0.12)"
-              : totalAllocated > 100
-              ? "rgba(225, 29, 72, 0.08)"
-              : "rgba(198, 83, 120, 0.08)",
-          border:
-            totalAllocated === 100
-              ? "1.5px solid var(--color-sage)"
-              : totalAllocated > 100
-              ? "1.5px solid #FDA4AF"
-              : "1.5px solid rgba(198, 83, 120, 0.35)",
+          padding: "0.75rem 1rem",
+          borderRadius: "12px",
+          backgroundColor: isValid ? "rgba(95, 126, 117, 0.08)" : "rgba(245, 158, 11, 0.08)",
+          border: isValid ? "1px solid rgba(95, 126, 117, 0.22)" : "1px solid rgba(245, 158, 11, 0.35)",
         }}
       >
-        <div style={{ display: "flex", alignItems: "center", gap: "0.65rem" }}>
-          {totalAllocated === 100 ? (
-            <CheckCircle2 size={24} color="var(--color-sage)" />
-          ) : totalAllocated > 100 ? (
-            <AlertTriangle size={24} color="#E11D48" />
+        <div style={{ display: "flex", alignItems: "center", gap: "0.55rem" }}>
+          {isValid ? (
+            <CheckCircle2 size={18} color="var(--color-sage)" />
           ) : (
-            <AlertCircle size={24} color="var(--color-gold)" />
+            <AlertCircle size={18} color="#B45309" />
           )}
-
           <div>
-            <div
-              style={{
-                fontSize: "1.05rem",
-                fontWeight: 800,
-                color:
-                  totalAllocated === 100
-                    ? "var(--color-sage)"
-                    : totalAllocated > 100
-                    ? "#E11D48"
-                    : "var(--color-navy)",
-              }}
-            >
-              Total allocated: {totalAllocated}%
+            <div style={{ fontSize: "0.85rem", fontWeight: 800, color: "var(--color-navy)" }}>
+              {isHi ? `कुल आबंटन: ${totalAllocated}%` : `Total allocated: ${totalAllocated}%`}
+              {!isValid && remaining > 0 && (
+                <span style={{ color: "#B45309" }}>
+                  {isHi ? ` • ${remaining}% शेष` : ` • ${remaining}% remaining`}
+                </span>
+              )}
             </div>
-            <div style={{ fontSize: "0.8rem", color: "var(--color-slate)", marginTop: "2px" }}>
-              {totalAllocated === 100
-                ? isHi
-                  ? "✓ संपूर्ण 100% आबंटित (मान्य)"
-                  : "✓ Exactly 100% allocated (Complete & Valid)"
-                : totalAllocated > 100
-                ? isHi
-                  ? `कुल 100% से ${totalAllocated - 100}% अधिक है। कृपया घटाएं।`
-                  : `Allocation exceeds 100% by ${totalAllocated - 100}%. Please reduce percentages.`
-                : isHi
-                ? `आवंटन अधूरा है: ${100 - totalAllocated}% और आबंटित करना शेष है। कुल 100% होना चाहिए।`
-                : `Allocation is incomplete: ${100 - totalAllocated}% left to allocate. Total must equal 100%.`}
+            <div style={{ fontSize: "0.74rem", color: "var(--color-slate)" }}>
+              {isHi
+                ? "कुल हिस्सा 100% से अधिक नहीं हो सकता। अधिक होने पर पहले व्यक्ति का हिस्सा अपने-आप घट जाएगा।"
+                : "Total can never exceed 100%. If it goes over, the earlier person's share is reduced automatically."}
             </div>
           </div>
         </div>
 
-        {totalAllocated !== 100 && (
-          <button
-            type="button"
-            onClick={handleAutoBalance}
-            style={{
-              display: "inline-flex",
-              alignItems: "center",
-              gap: "0.3rem",
-              padding: "0.45rem 0.85rem",
-              borderRadius: "8px",
-              border: "1px solid var(--color-gold)",
-              backgroundColor: "rgba(198, 83, 120, 0.12)",
-              color: "var(--color-gold)",
-              fontSize: "0.78rem",
-              fontWeight: 700,
-              cursor: "pointer",
-            }}
-          >
-            <Sparkles size={13} />
-            <span>⚡ Auto-Balance to 100%</span>
-          </button>
-        )}
+        <div style={{ display: "flex", alignItems: "center", gap: "0.4rem", flexWrap: "wrap" }}>
+          {rows.map((r, i) => (
+            <span
+              key={i}
+              style={{
+                fontSize: "0.75rem",
+                fontWeight: 700,
+                padding: "0.22rem 0.6rem",
+                borderRadius: "999px",
+                backgroundColor: "#FFFFFF",
+                color: "var(--color-navy)",
+                border: "1px solid rgba(27, 42, 74, 0.12)",
+                boxShadow: "0 1px 3px rgba(0,0,0,0.03)",
+              }}
+            >
+              {i === 0 ? "Primary 01" : i === 1 ? "Primary 02" : `Backup 0${i - 1}`}: {toNum(r.percentage)}%
+            </span>
+          ))}
+        </div>
       </div>
 
       {/* Modal Actions (Cancel / Save Allocation) */}
