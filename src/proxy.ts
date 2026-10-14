@@ -1,9 +1,10 @@
 import { auth } from "@/auth";
 import { NextResponse } from "next/server";
-import type { NextRequest } from "next/server";
+import { getPublicOrigin } from "@/lib/http";
 
 export default auth((req) => {
   const { pathname } = req.nextUrl;
+  const origin = getPublicOrigin(req);
   const session = req.auth;
   const isLoggedIn = Boolean(session?.user);
   const role = session?.user?.role;
@@ -12,7 +13,7 @@ export default auth((req) => {
   // 1. Superadmin Portal Protection (/authority and sub-routes)
   if (pathname.startsWith("/authority")) {
     if (!isLoggedIn || role !== "superadmin") {
-      const loginUrl = new URL("/nullify", req.nextUrl.origin);
+      const loginUrl = new URL("/nullify", origin);
       loginUrl.searchParams.set("callbackUrl", pathname);
       return NextResponse.redirect(loginUrl);
     }
@@ -22,14 +23,14 @@ export default auth((req) => {
   // 2. Client Dashboard Route Protection (/dashboard and sub-routes)
   if (pathname === "/dashboard" || pathname.startsWith("/dashboard/") || pathname === "/start/dashboard") {
     if (!isLoggedIn) {
-      const loginUrl = new URL("/login", req.nextUrl.origin);
+      const loginUrl = new URL("/login", origin);
       loginUrl.searchParams.set("callbackUrl", pathname);
       return NextResponse.redirect(loginUrl);
     }
 
     // Edge-case R2: If user logged in via Google and hasn't provided phone yet
     if (needsPhone && pathname !== "/complete-profile") {
-      return NextResponse.redirect(new URL("/complete-profile", req.nextUrl.origin));
+      return NextResponse.redirect(new URL("/complete-profile", origin));
     }
 
     return NextResponse.next();
@@ -38,10 +39,10 @@ export default auth((req) => {
   // 3. Complete Profile route protection
   if (pathname === "/complete-profile") {
     if (!isLoggedIn) {
-      return NextResponse.redirect(new URL("/login", req.nextUrl.origin));
+      return NextResponse.redirect(new URL("/login", origin));
     }
     if (!needsPhone) {
-      return NextResponse.redirect(new URL("/start/dashboard", req.nextUrl.origin));
+      return NextResponse.redirect(new URL("/start/dashboard", origin));
     }
     return NextResponse.next();
   }

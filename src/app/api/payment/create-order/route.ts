@@ -5,13 +5,13 @@ import { auth } from "@/auth";
 import { findAccountById, logFunnelEvent, updateAccount } from "@/lib/accounts";
 import { PLAN_IDS, type PlanId } from "@/lib/authTypes";
 import { ordersCol } from "@/lib/db/collections";
-import { jsonError, readJson } from "@/lib/http";
+import { getPublicOrigin, jsonError, readJson } from "@/lib/http";
 import { PLANS, quotePlan, quotePlanUpgrade } from "@/lib/plans";
 import { buildCheckoutFields, PayuNotConfiguredError } from "@/lib/payu";
 import { checkRateLimit } from "@/lib/rateLimit";
 
 function appBaseUrl(request: NextRequest): string {
-  return process.env.NEXTAUTH_URL || request.nextUrl.origin;
+  return getPublicOrigin(request);
 }
 
 /**

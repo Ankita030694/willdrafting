@@ -1,9 +1,10 @@
 import { NextRequest, NextResponse } from "next/server";
+import { getPublicOrigin } from "@/lib/http";
 import { verifyResponseHash } from "@/lib/payu";
 import { settleOrder } from "@/lib/payments/settle";
 
 function redirectTo(request: NextRequest, query: string, success = false) {
-  const base = process.env.NEXTAUTH_URL || request.nextUrl.origin;
+  const base = getPublicOrigin(request);
   // On success redirect to Step 14 (Final Will); all other outcomes go to dashboard.
   const path = success ? `/start/14?${query}` : `/start/dashboard?${query}`;
   // 303 turns PayU's cross-site POST into a normal GET so the session cookie is sent again.

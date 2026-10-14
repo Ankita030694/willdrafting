@@ -420,7 +420,8 @@ export default function Step13PlanSelect({
 
             <button
               type="button"
-              onClick={() => router.push("/dashboard")}
+              onClick={() => router.push("/start/dashboard")}
+              className="step13-explore-dashboard-btn"
               style={{
                 background: "none",
                 border: "1px solid #166534",
@@ -430,6 +431,7 @@ export default function Step13PlanSelect({
                 fontSize: "0.78rem",
                 fontWeight: 600,
                 cursor: "pointer",
+                touchAction: "manipulation",
               }}
             >
               {isHi ? "पहले डैशबोर्ड देखें →" : "Explore Dashboard First →"}
@@ -437,6 +439,7 @@ export default function Step13PlanSelect({
           </div>
         ) : (
           <div
+            className="step13-auth-card"
             style={{
               backgroundColor: "#FFFFFF",
               border: "1.5px solid var(--color-navy)",
@@ -510,7 +513,11 @@ export default function Step13PlanSelect({
             <div style={{ display: "flex", justifyContent: "center", marginTop: "0.85rem" }}>
               <button
                 type="button"
-                onClick={() => signIn("google", { callbackUrl: window.location.href })}
+                onClick={() =>
+                  signIn("google", {
+                    callbackUrl: `${window.location.pathname}${window.location.search}`,
+                  })
+                }
                 style={{
                   padding: "0.6rem 1rem",
                   fontSize: "0.82rem",

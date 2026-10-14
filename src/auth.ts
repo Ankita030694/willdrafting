@@ -115,7 +115,21 @@ providers.push(
   })
 );
 
+import { isLocalhostUrl } from "@/lib/http";
+
+// Guard against a leftover `NEXTAUTH_URL=http://localhost:3000` in production environments,
+// which would otherwise cause NextAuth's `reqWithEnvURL` to rewrite OAuth redirects to localhost.
+if (process.env.NODE_ENV === "production") {
+  if (isLocalhostUrl(process.env.NEXTAUTH_URL)) {
+    delete process.env.NEXTAUTH_URL;
+  }
+  if (isLocalhostUrl(process.env.AUTH_URL)) {
+    delete process.env.AUTH_URL;
+  }
+}
+
 export const { handlers, signIn, signOut, auth } = NextAuth({
+  trustHost: true,
   providers,
   session: {
     strategy: "jwt",
@@ -126,6 +140,26 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
     error: "/login",
   },
   callbacks: {
+    async redirect({ url, baseUrl }) {
+      const effectiveBase =
+        process.env.NODE_ENV === "production" && isLocalhostUrl(baseUrl)
+          ? "https://www.willdrafting.in"
+          : baseUrl;
+
+      if (url.startsWith("/")) return `${effectiveBase}${url}`;
+
+      try {
+        const parsed = new URL(url);
+        if (process.env.NODE_ENV === "production" && isLocalhostUrl(parsed.origin)) {
+          return `${effectiveBase}${parsed.pathname}${parsed.search}${parsed.hash}`;
+        }
+        if (parsed.origin === new URL(effectiveBase).origin) return url;
+      } catch {
+        // Fallback to effectiveBase below
+      }
+      return effectiveBase;
+    },
+
     async signIn({ user, account, profile }) {
       if (account?.provider === "google") {
         const email = normalizeEmail(user.email || profile?.email);

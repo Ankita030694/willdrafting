@@ -1,12 +1,27 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
+import { usePathname } from "next/navigation";
 import IntakeForm from "@/components/IntakeForm";
 import LeadNextStepModal, { type LeadDetails } from "@/components/LeadNextStepModal";
 
 export default function GlobalPopup() {
+  const pathname = usePathname();
   const [isOpen, setIsOpen] = useState(false);
   const [lead, setLead] = useState<LeadDetails | null>(null);
+
+  // Automatically dismiss popup and lead modal when user enters the dashboard or wizard
+  useEffect(() => {
+    if (
+      pathname?.startsWith("/start/dashboard") ||
+      pathname?.startsWith("/dashboard") ||
+      pathname?.startsWith("/authority") ||
+      pathname?.startsWith("/print")
+    ) {
+      setIsOpen(false);
+      setLead(null);
+    }
+  }, [pathname]);
 
   useEffect(() => {
     // Check if running in production or explicit test override via ?popup=true
@@ -22,8 +37,16 @@ export default function GlobalPopup() {
     };
     window.addEventListener("open-intake-popup", handleOpenEvent);
 
-    // Global popup logic: only visible in production (or ?popup=true query override)
-    if (isProd || hasQueryOverride) {
+    const isSuppressedRoute =
+      pathname?.startsWith("/start") ||
+      pathname?.startsWith("/dashboard") ||
+      pathname?.startsWith("/login") ||
+      pathname?.startsWith("/complete-profile") ||
+      pathname?.startsWith("/authority") ||
+      pathname?.startsWith("/print");
+
+    // Global popup logic: only visible in production (or ?popup=true query override) on public marketing pages
+    if ((isProd && !isSuppressedRoute) || hasQueryOverride) {
       const alreadyDismissed = sessionStorage.getItem("wd_global_popup_dismissed");
       if (!alreadyDismissed) {
         const timer = setTimeout(() => {
@@ -40,7 +63,7 @@ export default function GlobalPopup() {
     return () => {
       window.removeEventListener("open-intake-popup", handleOpenEvent);
     };
-  }, []);
+  }, [pathname]);
 
   // Close modal and remember dismissal for current browser session
   const handleClose = () => {
