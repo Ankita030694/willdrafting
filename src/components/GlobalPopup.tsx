@@ -26,6 +26,7 @@ export default function GlobalPopup() {
       pathname?.startsWith("/start/dashboard") ||
       pathname?.startsWith("/dashboard") ||
       pathname?.startsWith("/authority") ||
+      pathname?.startsWith("/nullify") ||
       pathname?.startsWith("/print")
     ) {
       setIsOpen(false);
@@ -56,6 +57,7 @@ export default function GlobalPopup() {
       pathname?.startsWith("/login") ||
       pathname?.startsWith("/complete-profile") ||
       pathname?.startsWith("/authority") ||
+      pathname?.startsWith("/nullify") ||
       pathname?.startsWith("/print");
 
     // Global popup logic: only visible in production (or ?popup=true query override) for unauthenticated visitors

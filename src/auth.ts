@@ -95,10 +95,26 @@ providers.push(
       if (!identifier || !password) return null;
 
       const adminEmail = process.env.SUPERADMIN_EMAIL?.trim().toLowerCase();
-      const adminHash = process.env.SUPERADMIN_PASSWORD_HASH?.trim();
-      if (!adminEmail || !adminHash || identifier.toLowerCase() !== adminEmail) return null;
+      const adminSecret = (
+        process.env.SUPERADMIN_PASSWORD_HASH ??
+        process.env.SUPERADMIN_PASSWORD ??
+        ""
+      ).trim();
+      if (!adminEmail || !adminSecret || identifier.toLowerCase() !== adminEmail) return null;
 
-      const adminPwValid = await bcrypt.compare(password, adminHash);
+      let adminPwValid = false;
+      if (
+        adminSecret.startsWith("$2a$") ||
+        adminSecret.startsWith("$2b$") ||
+        adminSecret.startsWith("$2y$")
+      ) {
+        adminPwValid = await bcrypt.compare(password, adminSecret);
+      } else {
+        const a = Buffer.from(password, "utf8");
+        const b = Buffer.from(adminSecret, "utf8");
+        const crypto = await import("crypto");
+        adminPwValid = a.length === b.length && crypto.timingSafeEqual(a, b);
+      }
       if (!adminPwValid) return null;
 
       return {

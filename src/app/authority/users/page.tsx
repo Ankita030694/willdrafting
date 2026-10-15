@@ -2,26 +2,75 @@
 
 import React, { useState, useEffect, useCallback } from "react";
 import { formatDDMMYYYY } from "@/lib/utils";
+import WillDetailInspectorModal, {
+  type InspectorTarget,
+  type InspectorOrderItem,
+} from "@/components/admin/WillDetailInspectorModal";
+import type { WillDraftingState } from "@/lib/willDraftingStore";
+
+interface UserWillInfo {
+  willId: string;
+  version: number;
+  detailsVerified: boolean;
+  detailsVerifiedAt: string | null;
+  lockedAt: string | null;
+  downloadCount: number;
+  lastDownloadedAt: string | null;
+  updatedAt: string;
+  createdAt: string;
+  progress: {
+    currentStep: number;
+    currentStepTitle: string;
+    willStatus: string;
+    selectedPlan: string | null;
+    sectionsCompleted: number;
+    completionPercent: number;
+    filledSections: string[];
+    missingSections: string[];
+    familyCount: number;
+    assetsCount: number;
+    allocationsCount: number;
+    totalEstateValue: number;
+    healthIssues: Array<{ severity: string; title: string; category: string }>;
+  };
+  state: WillDraftingState;
+}
 
 interface UserRecord {
   id: string;
+  kind: "user" | "lead";
   name: string;
   phone: string;
   email: string;
   state: string;
+  googleId: string | null;
   authStatus: "verified" | "unverified";
   paymentStatus: "paid" | "unpaid";
   funnelStage: "lead" | "registered" | "customer";
-  hasPassword?: boolean;
+  leadStatus: string | null;
+  source: string;
+  message: string | null;
+  planId: string | null;
   willCredits: number;
   isBanned: boolean;
+  paidAt?: string | null;
+  lastCheckoutAt?: string | null;
   createdAt?: string;
-  willDraft?: {
-    maritalStatus: string;
-    hasChildren: boolean;
-    primaryBeneficiary: string;
-    executor: string;
-    totalAssetsCount: number;
+  updatedAt?: string;
+  will: UserWillInfo | null;
+  orders: {
+    totalOrders: number;
+    paidOrdersCount: number;
+    totalPaidAmount: number;
+    lastOrder: {
+      txnId: string;
+      amount: number;
+      status: string;
+      planId: string;
+      gateway: string;
+      createdAt: string;
+    } | null;
+    list: InspectorOrderItem[];
   };
 }
 
@@ -30,11 +79,20 @@ interface StatsData {
   paid: number;
   verified: number;
   leads: number;
+  checkoutStarted: number;
+  withWill: number;
 }
 
 export default function AuthorityUsersPage() {
   const [users, setUsers] = useState<UserRecord[]>([]);
-  const [stats, setStats] = useState<StatsData>({ total: 0, paid: 0, verified: 0, leads: 0 });
+  const [stats, setStats] = useState<StatsData>({
+    total: 0,
+    paid: 0,
+    verified: 0,
+    leads: 0,
+    checkoutStarted: 0,
+    withWill: 0,
+  });
   const [loading, setLoading] = useState(true);
   const [searchTerm, setSearchTerm] = useState("");
   const [filterStatus, setFilterStatus] = useState("all");
@@ -47,6 +105,7 @@ export default function AuthorityUsersPage() {
     phone: "",
     state: "Delhi",
     isPaid: false,
+    planId: "essential",
   });
   const [createLoading, setCreateLoading] = useState(false);
   const [createError, setCreateError] = useState("");
@@ -65,7 +124,7 @@ export default function AuthorityUsersPage() {
       if (searchTerm.trim()) params.set("search", searchTerm.trim());
       if (filterStatus !== "all") params.set("filter", filterStatus);
 
-      const res = await fetch(`/api/admin/users?${params.toString()}`);
+      const res = await fetch(`/api/admin/users?${params.toString()}`, { cache: "no-store" });
       if (!res.ok) throw new Error("Failed to load users");
       const data = await res.json();
       setUsers(data.users || []);
@@ -79,8 +138,8 @@ export default function AuthorityUsersPage() {
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      fetchUsers();
-    }, 250);
+      void fetchUsers();
+    }, 200);
     return () => clearTimeout(timer);
   }, [fetchUsers]);
 
@@ -107,8 +166,15 @@ export default function AuthorityUsersPage() {
         throw new Error(data.error || "Failed to create user");
       }
       setCreateModalOpen(false);
-      setCreateForm({ name: "", email: "", phone: "", state: "Delhi", isPaid: false });
-      fetchUsers();
+      setCreateForm({
+        name: "",
+        email: "",
+        phone: "",
+        state: "Delhi",
+        isPaid: false,
+        planId: "essential",
+      });
+      await fetchUsers();
     } catch (err: unknown) {
       const msg = err instanceof Error ? err.message : "Failed to create user";
       setCreateError(msg);
@@ -126,9 +192,7 @@ export default function AuthorityUsersPage() {
         body: JSON.stringify({ id: user.id, isBanned: !user.isBanned }),
       });
       if (res.ok) {
-        setUsers((prev) =>
-          prev.map((u) => (u.id === user.id ? { ...u, isBanned: !u.isBanned } : u))
-        );
+        await fetchUsers();
       }
     } catch (err) {
       console.error("Failed to toggle ban", err);
@@ -137,34 +201,39 @@ export default function AuthorityUsersPage() {
     }
   };
 
-  const handleTogglePayment = async (user: UserRecord) => {
-    setActionLoading(user.id);
+  const handleGrantPaid = async (accountId: string, planId = "essential") => {
+    setActionLoading(accountId);
     try {
-      const nextPaid = user.paymentStatus !== "paid";
       const res = await fetch("/api/admin/users", {
         method: "PATCH",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ id: user.id, isPaid: nextPaid }),
+        body: JSON.stringify({ id: accountId, isPaid: true, planId }),
       });
       if (res.ok) {
-        setUsers((prev) =>
-          prev.map((u) =>
-            u.id === user.id
-              ? {
-                  ...u,
-                  paymentStatus: nextPaid ? "paid" : "unpaid",
-                  funnelStage: nextPaid ? "customer" : "registered",
-                }
-              : u
-          )
-        );
-        setStats((prev) => ({
-          ...prev,
-          paid: nextPaid ? prev.paid + 1 : Math.max(0, prev.paid - 1),
-        }));
+        setInspectingUser(null);
+        await fetchUsers();
       }
     } catch (err) {
-      console.error("Failed to toggle payment", err);
+      console.error("Failed to grant paid status", err);
+    } finally {
+      setActionLoading(null);
+    }
+  };
+
+  const handleUnlockWill = async (accountId: string) => {
+    setActionLoading(accountId);
+    try {
+      const res = await fetch("/api/admin/users", {
+        method: "PATCH",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ id: accountId, unlockUserWill: true }),
+      });
+      if (res.ok) {
+        setInspectingUser(null);
+        await fetchUsers();
+      }
+    } catch (err) {
+      console.error("Failed to unlock will", err);
     } finally {
       setActionLoading(null);
     }
@@ -180,13 +249,7 @@ export default function AuthorityUsersPage() {
         body: JSON.stringify({ id: user.id, authStatus: nextStatus }),
       });
       if (res.ok) {
-        setUsers((prev) =>
-          prev.map((u) => (u.id === user.id ? { ...u, authStatus: nextStatus } : u))
-        );
-        setStats((prev) => ({
-          ...prev,
-          verified: nextStatus === "verified" ? prev.verified + 1 : Math.max(0, prev.verified - 1),
-        }));
+        await fetchUsers();
       }
     } catch (err) {
       console.error("Failed to toggle verification", err);
@@ -207,11 +270,7 @@ export default function AuthorityUsersPage() {
         body: JSON.stringify({ id: adjustingUser.id, willCredits: newCredits }),
       });
       if (res.ok) {
-        setUsers((prev) =>
-          prev.map((u) =>
-            u.id === adjustingUser.id ? { ...u, willCredits: newCredits } : u
-          )
-        );
+        await fetchUsers();
       }
     } catch (err) {
       console.error("Failed to adjust credits", err);
@@ -222,42 +281,73 @@ export default function AuthorityUsersPage() {
     setCreditReason("");
   };
 
+  const buildInspectorTarget = (u: UserRecord): InspectorTarget => ({
+    title: u.name,
+    category:
+      u.paymentStatus === "paid"
+        ? "paid_customer"
+        : u.will
+        ? "logged_in_unpaid"
+        : "logged_in_no_will",
+    accountId: u.id,
+    willId: u.will?.willId || null,
+    name: u.name,
+    email: u.email,
+    phone: u.phone,
+    stateLocation: u.state,
+    authStatus: u.authStatus,
+    leadStatus: u.leadStatus,
+    source: u.source,
+    googleId: u.googleId,
+    planId: u.planId,
+    willCredits: u.willCredits,
+    isBanned: u.isBanned,
+    message: u.message,
+    version: u.will?.version,
+    detailsVerified: u.will?.detailsVerified,
+    detailsVerifiedAt: u.will?.detailsVerifiedAt,
+    lockedAt: u.will?.lockedAt,
+    downloadCount: u.will?.downloadCount,
+    createdAt: u.createdAt,
+    updatedAt: u.will?.updatedAt || u.updatedAt,
+    progress: u.will?.progress || null,
+    willState: u.will?.state || null,
+    orders: u.orders?.list || [],
+    onGrantPlan: handleGrantPaid,
+    onUnlockWill: handleUnlockWill,
+  });
+
   return (
-    <div style={{ display: "flex", flexDirection: "column", gap: "1.25rem" }}>
+    <div style={{ display: "flex", flexDirection: "column", gap: "1.35rem" }}>
       {/* Header and Top Action Buttons */}
       <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: "1rem" }}>
         <div>
-          <h1 style={{ fontSize: "1.4rem", color: "var(--color-navy)", fontWeight: 700, margin: 0 }}>
-            Unified User Registry
+          <h1 style={{ fontSize: "1.5rem", color: "#172228", fontWeight: 700, margin: 0, letterSpacing: "-0.02em" }}>
+            Users & Accounts Directory
           </h1>
-          <p style={{ margin: "0.25rem 0 0", fontSize: "0.82rem", color: "#64748B" }}>
-            Real-time accounts, leads, inquiries, and subscriber access control
+          <p style={{ margin: "0.25rem 0 0", fontSize: "0.84rem", color: "#55636D" }}>
+            Unified registry across <code>users</code> (paid customers) and <code>leads</code> (unpaid signups & inquiries), joined with <code>wills</code> & <code>orders</code>
           </p>
         </div>
 
-        <div style={{ display: "flex", gap: "0.5rem" }}>
+        <div style={{ display: "flex", gap: "0.55rem" }}>
           <button
             type="button"
             onClick={handleExportCsv}
             style={{
-              padding: "0.5rem 0.85rem",
+              padding: "0.5rem 0.95rem",
               fontSize: "0.82rem",
               fontWeight: 600,
               backgroundColor: "#FFFFFF",
-              color: "#0F172A",
-              border: "1px solid #CBD5E1",
-              borderRadius: "6px",
+              color: "#172228",
+              border: "1px solid rgba(23, 34, 40, 0.14)",
+              borderRadius: "999px",
               cursor: "pointer",
               display: "flex",
               alignItems: "center",
               gap: "0.4rem",
             }}
           >
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
-              <polyline points="7 10 12 15 17 10" />
-              <line x1="12" y1="15" x2="12" y2="3" />
-            </svg>
             Export CSV
           </button>
 
@@ -265,24 +355,21 @@ export default function AuthorityUsersPage() {
             type="button"
             onClick={() => setCreateModalOpen(true)}
             style={{
-              padding: "0.5rem 1rem",
+              padding: "0.5rem 1.05rem",
               fontSize: "0.82rem",
               fontWeight: 600,
-              backgroundColor: "#0F172A",
+              backgroundColor: "#C65378",
               color: "#FFFFFF",
               border: "none",
-              borderRadius: "6px",
+              borderRadius: "999px",
               cursor: "pointer",
+              boxShadow: "0 4px 12px rgba(198, 83, 120, 0.2)",
               display: "flex",
               alignItems: "center",
               gap: "0.4rem",
             }}
           >
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-              <line x1="12" y1="5" x2="12" y2="19" />
-              <line x1="5" y1="12" x2="19" y2="12" />
-            </svg>
-            Create User
+            + Create Account
           </button>
         </div>
       </div>
@@ -291,25 +378,29 @@ export default function AuthorityUsersPage() {
       <div
         style={{
           display: "grid",
-          gridTemplateColumns: "repeat(auto-fit, minmax(160px, 1fr))",
-          gap: "0.75rem",
+          gridTemplateColumns: "repeat(auto-fit, minmax(150px, 1fr))",
+          gap: "0.85rem",
         }}
       >
-        <div style={{ backgroundColor: "#FFFFFF", padding: "0.85rem 1rem", borderRadius: "8px", border: "1px solid #E2E8F0" }}>
-          <div style={{ fontSize: "0.72rem", color: "#64748B", fontWeight: 600, textTransform: "uppercase" }}>Total In Registry</div>
-          <div style={{ fontSize: "1.4rem", fontWeight: 700, color: "#0F172A", marginTop: "0.2rem" }}>{stats.total}</div>
+        <div style={{ backgroundColor: "#FFFFFF", padding: "0.95rem 1.15rem", borderRadius: "16px", border: "1px solid rgba(23, 34, 40, 0.08)", boxShadow: "0 6px 20px -4px rgba(23, 34, 40, 0.05)" }}>
+          <div style={{ fontSize: "0.7rem", color: "#55636D", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.03em" }}>Total Accounts</div>
+          <div style={{ fontSize: "1.5rem", fontWeight: 700, color: "#172228", marginTop: "0.2rem" }}>{stats.total}</div>
         </div>
-        <div style={{ backgroundColor: "#FFFFFF", padding: "0.85rem 1rem", borderRadius: "8px", border: "1px solid #E2E8F0" }}>
-          <div style={{ fontSize: "0.72rem", color: "#166534", fontWeight: 600, textTransform: "uppercase" }}>Paid Subscribers</div>
-          <div style={{ fontSize: "1.4rem", fontWeight: 700, color: "#166534", marginTop: "0.2rem" }}>{stats.paid}</div>
+        <div style={{ backgroundColor: "#FFFFFF", padding: "0.95rem 1.15rem", borderRadius: "16px", border: "1px solid rgba(23, 34, 40, 0.08)", boxShadow: "0 6px 20px -4px rgba(23, 34, 40, 0.05)" }}>
+          <div style={{ fontSize: "0.7rem", color: "#3F5C53", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.03em" }}>Paid Customers</div>
+          <div style={{ fontSize: "1.5rem", fontWeight: 700, color: "#3F5C53", marginTop: "0.2rem" }}>{stats.paid}</div>
         </div>
-        <div style={{ backgroundColor: "#FFFFFF", padding: "0.85rem 1rem", borderRadius: "8px", border: "1px solid #E2E8F0" }}>
-          <div style={{ fontSize: "0.72rem", color: "#854D0E", fontWeight: 600, textTransform: "uppercase" }}>Email Verified</div>
-          <div style={{ fontSize: "1.4rem", fontWeight: 700, color: "#854D0E", marginTop: "0.2rem" }}>{stats.verified}</div>
+        <div style={{ backgroundColor: "#FFFFFF", padding: "0.95rem 1.15rem", borderRadius: "16px", border: "1px solid rgba(23, 34, 40, 0.08)", boxShadow: "0 6px 20px -4px rgba(23, 34, 40, 0.05)" }}>
+          <div style={{ fontSize: "0.7rem", color: "#A13C5D", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.03em" }}>Unpaid Leads</div>
+          <div style={{ fontSize: "1.5rem", fontWeight: 700, color: "#C65378", marginTop: "0.2rem" }}>{stats.leads}</div>
         </div>
-        <div style={{ backgroundColor: "#FFFFFF", padding: "0.85rem 1rem", borderRadius: "8px", border: "1px solid #E2E8F0" }}>
-          <div style={{ fontSize: "0.72rem", color: "#475569", fontWeight: 600, textTransform: "uppercase" }}>Inquiry Leads</div>
-          <div style={{ fontSize: "1.4rem", fontWeight: 700, color: "#475569", marginTop: "0.2rem" }}>{stats.leads}</div>
+        <div style={{ backgroundColor: "#FFFFFF", padding: "0.95rem 1.15rem", borderRadius: "16px", border: "1px solid rgba(23, 34, 40, 0.08)", boxShadow: "0 6px 20px -4px rgba(23, 34, 40, 0.05)" }}>
+          <div style={{ fontSize: "0.7rem", color: "#9A5B13", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.03em" }}>Checkout Started</div>
+          <div style={{ fontSize: "1.5rem", fontWeight: 700, color: "#9A5B13", marginTop: "0.2rem" }}>{stats.checkoutStarted}</div>
+        </div>
+        <div style={{ backgroundColor: "#FFFFFF", padding: "0.95rem 1.15rem", borderRadius: "16px", border: "1px solid rgba(23, 34, 40, 0.08)", boxShadow: "0 6px 20px -4px rgba(23, 34, 40, 0.05)" }}>
+          <div style={{ fontSize: "0.7rem", color: "#49585F", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.03em" }}>Email Verified</div>
+          <div style={{ fontSize: "1.5rem", fontWeight: 700, color: "#172228", marginTop: "0.2rem" }}>{stats.verified}</div>
         </div>
       </div>
 
@@ -318,11 +409,11 @@ export default function AuthorityUsersPage() {
         <div style={{ position: "relative", flex: 1, minWidth: "240px" }}>
           <input
             type="text"
-            placeholder="Search by name, phone, or email..."
+            placeholder="Search by name, phone, email, or state..."
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
             className="form-input"
-            style={{ width: "100%", fontSize: "0.85rem", padding: "0.55rem 0.75rem" }}
+            style={{ width: "100%", fontSize: "0.85rem", padding: "0.6rem 0.9rem", backgroundColor: "#FFFFFF" }}
           />
         </div>
 
@@ -330,173 +421,222 @@ export default function AuthorityUsersPage() {
           value={filterStatus}
           onChange={(e) => setFilterStatus(e.target.value)}
           className="form-input"
-          style={{ fontSize: "0.85rem", padding: "0.55rem 0.75rem", width: "auto", minWidth: "150px" }}
+          style={{ fontSize: "0.85rem", padding: "0.6rem 0.85rem", width: "auto", minWidth: "180px", backgroundColor: "#FFFFFF" }}
         >
-          <option value="all">All Records</option>
-          <option value="paid">Paid Customers</option>
-          <option value="unpaid">Unpaid Users</option>
+          <option value="all">All Accounts (Users + Leads)</option>
+          <option value="paid">Paid Customers Only (users)</option>
+          <option value="unpaid">Unpaid Leads Only (leads)</option>
+          <option value="with_will">Accounts With Saved Will</option>
+          <option value="checkout_started">Checkout Started (Unpaid)</option>
           <option value="verified">Email Verified</option>
-          <option value="leads">Inquiry Leads Only</option>
+          <option value="captured">Form Captures Only</option>
+          <option value="banned">Banned Customers</option>
         </select>
       </div>
 
       {/* Table */}
-      <div style={{ backgroundColor: "#FFFFFF", borderRadius: "8px", border: "1px solid #E2E8F0", overflowX: "auto" }}>
-        <table style={{ width: "100%", borderCollapse: "collapse", fontSize: "0.82rem" }}>
+      <div
+        style={{
+          backgroundColor: "#FFFFFF",
+          borderRadius: "16px",
+          border: "1px solid rgba(23, 34, 40, 0.08)",
+          boxShadow: "0 6px 20px -4px rgba(23, 34, 40, 0.05)",
+          overflowX: "auto",
+        }}
+      >
+        <table style={{ width: "100%", borderCollapse: "collapse", fontSize: "0.8rem" }}>
           <thead>
-            <tr style={{ borderBottom: "1px solid #E2E8F0", textAlign: "left", backgroundColor: "#F8FAFC" }}>
-              <th style={{ padding: "0.75rem 0.85rem", color: "#475569", fontWeight: 600 }}>User / Lead</th>
-              <th style={{ padding: "0.75rem 0.85rem", color: "#475569", fontWeight: 600 }}>Phone</th>
-              <th style={{ padding: "0.75rem 0.85rem", color: "#475569", fontWeight: 600 }}>Email</th>
-              <th style={{ padding: "0.75rem 0.85rem", color: "#475569", fontWeight: 600 }}>Stage</th>
-              <th style={{ padding: "0.75rem 0.85rem", color: "#475569", fontWeight: 600 }}>Auth & Pay</th>
-              <th style={{ padding: "0.75rem 0.85rem", color: "#475569", fontWeight: 600 }}>Credits</th>
-              <th style={{ padding: "0.75rem 0.85rem", color: "#475569", fontWeight: 600, textAlign: "right" }}>Actions</th>
+            <tr style={{ borderBottom: "1px solid rgba(23, 34, 40, 0.08)", textAlign: "left", backgroundColor: "#FAF7F0" }}>
+              <th style={{ padding: "0.75rem 0.9rem", color: "#49585F", fontWeight: 600 }}>Account & Source</th>
+              <th style={{ padding: "0.75rem 0.9rem", color: "#49585F", fontWeight: 600 }}>Contact</th>
+              <th style={{ padding: "0.75rem 0.9rem", color: "#49585F", fontWeight: 600 }}>Stage & Auth</th>
+              <th style={{ padding: "0.75rem 0.9rem", color: "#49585F", fontWeight: 600 }}>Will Draft Status</th>
+              <th style={{ padding: "0.75rem 0.9rem", color: "#49585F", fontWeight: 600 }}>Plan & Orders</th>
+              <th style={{ padding: "0.75rem 0.9rem", color: "#49585F", fontWeight: 600, textAlign: "right" }}>Actions</th>
             </tr>
           </thead>
           <tbody>
             {loading ? (
               <tr>
-                <td colSpan={7} style={{ padding: "2.5rem", textAlign: "center", color: "#64748B" }}>
+                <td colSpan={6} style={{ padding: "2.5rem", textAlign: "center", color: "#55636D" }}>
                   Loading user records from MongoDB...
                 </td>
               </tr>
             ) : users.length === 0 ? (
               <tr>
-                <td colSpan={7} style={{ padding: "2.5rem", textAlign: "center", color: "#64748B" }}>
-                  No users found matching current filters.
+                <td colSpan={6} style={{ padding: "2.5rem", textAlign: "center", color: "#55636D" }}>
+                  No accounts found matching current filters.
                 </td>
               </tr>
             ) : (
               users.map((u) => (
-                <tr key={u.id} style={{ borderBottom: "1px solid #F1F5F9", opacity: actionLoading === u.id ? 0.6 : 1 }}>
-                  <td style={{ padding: "0.75rem 0.85rem", fontWeight: 600, color: "#0F172A" }}>
-                    <div>
-                      {u.name} {u.isBanned && <span style={{ color: "#DC2626", fontSize: "0.72rem", marginLeft: "4px" }}>(Banned)</span>}
+                <tr key={u.id} style={{ borderBottom: "1px solid rgba(23, 34, 40, 0.06)", opacity: actionLoading === u.id ? 0.6 : 1 }}>
+                  <td style={{ padding: "0.8rem 0.9rem" }}>
+                    <div style={{ fontWeight: 700, color: "#172228" }}>
+                      {u.name}
+                      {u.isBanned && (
+                        <span style={{ color: "#B91C1C", fontSize: "0.7rem", marginLeft: "6px" }}>(Banned)</span>
+                      )}
                     </div>
-                    <div style={{ fontSize: "0.72rem", color: "#94A3B8", fontWeight: 400 }}>
-                      {u.createdAt ? formatDDMMYYYY(u.createdAt) : "Recent"}
+                    <div style={{ fontSize: "0.72rem", color: "#55636D", marginTop: "2px", textTransform: "capitalize" }}>
+                      {u.createdAt ? formatDDMMYYYY(u.createdAt) : "Recent"} • {u.source.replace(/_/g, " ")}{" "}
+                      {u.googleId ? "(Google)" : ""}
                     </div>
                   </td>
-                  <td style={{ padding: "0.75rem 0.85rem", whiteSpace: "nowrap" }}>
-                    {u.phone ? `+91 ${u.phone}` : <span style={{ color: "#CBD5E1" }}>—</span>}
+
+                  <td style={{ padding: "0.8rem 0.9rem" }}>
+                    <div style={{ color: "#172228", fontWeight: 500 }}>
+                      {u.email || <span style={{ color: "#8C98A0" }}>No email</span>}
+                    </div>
+                    <div style={{ fontSize: "0.73rem", color: "#55636D", marginTop: "2px" }}>
+                      {u.phone ? `+91 ${u.phone}` : "No phone"} {u.state ? `• ${u.state}` : ""}
+                    </div>
                   </td>
-                  <td style={{ padding: "0.75rem 0.85rem", color: "#334155" }}>
-                    {u.email || <span style={{ color: "#CBD5E1" }}>—</span>}
-                  </td>
-                  <td style={{ padding: "0.75rem 0.85rem" }}>
-                    <span
-                      style={{
-                        fontSize: "0.72rem",
-                        padding: "2px 6px",
-                        borderRadius: "4px",
-                        fontWeight: 600,
-                        backgroundColor:
-                          u.funnelStage === "customer"
-                            ? "#DCFCE7"
-                            : u.funnelStage === "registered"
-                            ? "#E0F2FE"
-                            : "#F1F5F9",
-                        color:
-                          u.funnelStage === "customer"
-                            ? "#15803D"
-                            : u.funnelStage === "registered"
-                            ? "#0369A1"
-                            : "#475569",
-                        textTransform: "capitalize",
-                      }}
-                    >
-                      {u.funnelStage || "lead"}
-                    </span>
-                  </td>
-                  <td style={{ padding: "0.75rem 0.85rem" }}>
+
+                  <td style={{ padding: "0.8rem 0.9rem" }}>
                     <div style={{ display: "flex", gap: "0.35rem", flexWrap: "wrap" }}>
                       {u.paymentStatus === "paid" ? (
-                        <span style={{ color: "#166534", backgroundColor: "#DCFCE7", padding: "2px 6px", borderRadius: "4px", fontWeight: 600, fontSize: "0.72rem" }}>
-                          Paid
+                        <span style={{ color: "#3F5C53", backgroundColor: "rgba(95, 126, 117, 0.14)", padding: "2px 8px", borderRadius: "999px", fontWeight: 700, fontSize: "0.7rem" }}>
+                          PAID CUSTOMER
                         </span>
                       ) : (
-                        <span style={{ color: "#64748B", backgroundColor: "#F1F5F9", padding: "2px 6px", borderRadius: "4px", fontSize: "0.72rem" }}>
-                          Unpaid
+                        <span style={{ color: "#A13C5D", backgroundColor: "rgba(198, 83, 120, 0.12)", padding: "2px 8px", borderRadius: "999px", fontWeight: 600, fontSize: "0.7rem", textTransform: "uppercase" }}>
+                          {(u.leadStatus || "lead").replace(/_/g, " ")}
                         </span>
                       )}
+
                       {u.authStatus === "verified" ? (
-                        <span style={{ color: "#854D0E", backgroundColor: "#FEF9C3", padding: "2px 6px", borderRadius: "4px", fontWeight: 600, fontSize: "0.72rem" }}>
+                        <span style={{ color: "#3F5C53", backgroundColor: "#FAF7F0", border: "1px solid rgba(95, 126, 117, 0.3)", padding: "2px 7px", borderRadius: "999px", fontWeight: 600, fontSize: "0.7rem" }}>
                           Verified
                         </span>
                       ) : (
-                        <span style={{ color: "#94A3B8", backgroundColor: "#F8FAFC", padding: "2px 6px", borderRadius: "4px", fontSize: "0.72rem" }}>
+                        <span style={{ color: "#55636D", backgroundColor: "rgba(23, 34, 40, 0.06)", padding: "2px 7px", borderRadius: "999px", fontSize: "0.7rem" }}>
                           Unverified
                         </span>
                       )}
                     </div>
                   </td>
-                  <td style={{ padding: "0.75rem 0.85rem", fontWeight: 600 }}>{u.willCredits}</td>
-                  <td style={{ padding: "0.75rem 0.85rem", textAlign: "right", whiteSpace: "nowrap" }}>
+
+                  <td style={{ padding: "0.8rem 0.9rem" }}>
+                    {u.will ? (
+                      <div>
+                        <div style={{ fontWeight: 600, color: "#172228" }}>
+                          {u.will.progress.completionPercent}% ({u.will.progress.sectionsCompleted}/6 sections)
+                        </div>
+                        <div style={{ fontSize: "0.72rem", color: "#55636D" }}>
+                          Step {u.will.progress.currentStep}: {u.will.progress.currentStepTitle} (v{u.will.version})
+                          {u.will.detailsVerified && (
+                            <span style={{ color: "#3F5C53", fontWeight: 700, marginLeft: "4px" }}>• Locked</span>
+                          )}
+                        </div>
+                      </div>
+                    ) : (
+                      <span style={{ color: "#8C98A0", fontSize: "0.75rem" }}>No Will saved</span>
+                    )}
+                  </td>
+
+                  <td style={{ padding: "0.8rem 0.9rem" }}>
+                    <div style={{ fontWeight: 600, color: "#172228", textTransform: "capitalize" }}>
+                      {(u.planId || "None").replace(/_/g, " ")}
+                    </div>
+                    <div style={{ fontSize: "0.72rem", color: "#55636D" }}>
+                      {u.paymentStatus === "paid"
+                        ? `Credits: ${u.willCredits} • Paid ₹${u.orders.totalPaidAmount}`
+                        : u.orders.totalOrders > 0
+                        ? `${u.orders.totalOrders} order attempt(s)`
+                        : "0 orders"}
+                    </div>
+                  </td>
+
+                  <td style={{ padding: "0.8rem 0.9rem", textAlign: "right", whiteSpace: "nowrap" }}>
                     <div style={{ display: "inline-flex", gap: "0.35rem" }}>
                       <button
                         type="button"
                         onClick={() => setInspectingUser(u)}
-                        style={{ padding: "0.3rem 0.55rem", fontSize: "0.75rem", border: "1px solid #CBD5E1", background: "#FFFFFF", borderRadius: "4px", cursor: "pointer" }}
-                      >
-                        Inspect
-                      </button>
-                      <button
-                        type="button"
-                        onClick={() => handleTogglePayment(u)}
-                        title={u.paymentStatus === "paid" ? "Revoke Paid Status" : "Mark as Paid"}
                         style={{
-                          padding: "0.3rem 0.55rem",
+                          padding: "0.35rem 0.7rem",
                           fontSize: "0.75rem",
-                          border: "1px solid #CBD5E1",
-                          background: u.paymentStatus === "paid" ? "#FEF2F2" : "#F0FDF4",
-                          color: u.paymentStatus === "paid" ? "#DC2626" : "#166534",
-                          borderRadius: "4px",
                           fontWeight: 600,
+                          border: "none",
+                          background: "#C65378",
+                          color: "#FFFFFF",
+                          borderRadius: "8px",
                           cursor: "pointer",
                         }}
                       >
-                        {u.paymentStatus === "paid" ? "Set Unpaid" : "Set Paid"}
+                        Inspect
                       </button>
+
+                      {u.paymentStatus !== "paid" && (
+                        <button
+                          type="button"
+                          onClick={() => handleGrantPaid(u.id, u.planId || "essential")}
+                          title="Grant Paid Customer Plan"
+                          style={{
+                            padding: "0.35rem 0.65rem",
+                            fontSize: "0.74rem",
+                            border: "1px solid rgba(95, 126, 117, 0.35)",
+                            background: "rgba(95, 126, 117, 0.12)",
+                            color: "#3F5C53",
+                            borderRadius: "8px",
+                            fontWeight: 600,
+                            cursor: "pointer",
+                          }}
+                        >
+                          Grant Paid
+                        </button>
+                      )}
+
                       <button
                         type="button"
                         onClick={() => handleToggleAuthStatus(u)}
-                        title={u.authStatus === "verified" ? "Revoke Verification" : "Mark Email Verified"}
                         style={{
-                          padding: "0.3rem 0.55rem",
-                          fontSize: "0.75rem",
-                          border: "1px solid #CBD5E1",
-                          background: u.authStatus === "verified" ? "#FEF9C3" : "#F0FDF4",
-                          color: u.authStatus === "verified" ? "#854D0E" : "#166534",
-                          borderRadius: "4px",
-                          fontWeight: 600,
+                          padding: "0.35rem 0.6rem",
+                          fontSize: "0.74rem",
+                          border: "1px solid rgba(23, 34, 40, 0.14)",
+                          background: "#FFFFFF",
+                          color: "#49585F",
+                          borderRadius: "8px",
                           cursor: "pointer",
                         }}
                       >
                         {u.authStatus === "verified" ? "Unverify" : "Verify"}
                       </button>
-                      <button
-                        type="button"
-                        onClick={() => setAdjustingUser(u)}
-                        style={{ padding: "0.3rem 0.55rem", fontSize: "0.75rem", border: "1px solid #CBD5E1", background: "#FFFFFF", borderRadius: "4px", cursor: "pointer" }}
-                      >
-                        Credits
-                      </button>
-                      <button
-                        type="button"
-                        onClick={() => handleToggleBan(u)}
-                        style={{
-                          padding: "0.3rem 0.55rem",
-                          fontSize: "0.75rem",
-                          border: "1px solid #CBD5E1",
-                          background: u.isBanned ? "#F1F5F9" : "#FEF2F2",
-                          color: u.isBanned ? "#0F172A" : "#DC2626",
-                          borderRadius: "4px",
-                          cursor: "pointer",
-                        }}
-                      >
-                        {u.isBanned ? "Unban" : "Ban"}
-                      </button>
+
+                      {u.kind === "user" && (
+                        <>
+                          <button
+                            type="button"
+                            onClick={() => setAdjustingUser(u)}
+                            style={{
+                              padding: "0.35rem 0.6rem",
+                              fontSize: "0.74rem",
+                              border: "1px solid rgba(23, 34, 40, 0.14)",
+                              background: "#FFFFFF",
+                              color: "#49585F",
+                              borderRadius: "8px",
+                              cursor: "pointer",
+                            }}
+                          >
+                            Credits
+                          </button>
+                          <button
+                            type="button"
+                            onClick={() => handleToggleBan(u)}
+                            style={{
+                              padding: "0.35rem 0.6rem",
+                              fontSize: "0.74rem",
+                              border: "1px solid #FECACA",
+                              background: u.isBanned ? "#FAF7F0" : "#FEF2F2",
+                              color: u.isBanned ? "#172228" : "#B91C1C",
+                              borderRadius: "8px",
+                              cursor: "pointer",
+                            }}
+                          >
+                            {u.isBanned ? "Unban" : "Ban"}
+                          </button>
+                        </>
+                      )}
                     </div>
                   </td>
                 </tr>
@@ -519,22 +659,23 @@ export default function AuthorityUsersPage() {
             alignItems: "center",
             justifyContent: "center",
             padding: "1rem",
-            backgroundColor: "rgba(0, 0, 0, 0.4)",
+            backgroundColor: "rgba(23, 34, 40, 0.55)",
+            backdropFilter: "blur(3px)",
           }}
           onClick={(e) => {
             if (e.target === e.currentTarget) setCreateModalOpen(false);
           }}
         >
-          <div style={{ width: "100%", maxWidth: "440px", backgroundColor: "#FFFFFF", borderRadius: "8px", padding: "1.5rem", border: "1px solid #E2E8F0" }}>
-            <h2 style={{ fontSize: "1.15rem", fontWeight: 700, color: "var(--color-navy)", margin: "0 0 0.25rem" }}>
-              Provision User Account
+          <div style={{ width: "100%", maxWidth: "450px", backgroundColor: "#FFFFFF", borderRadius: "18px", padding: "1.6rem", border: "1px solid rgba(23, 34, 40, 0.1)", boxShadow: "0 20px 50px rgba(23, 34, 40, 0.25)" }}>
+            <h2 style={{ fontSize: "1.2rem", fontWeight: 700, color: "#172228", margin: "0 0 0.25rem" }}>
+              Provision Account
             </h2>
-            <p style={{ fontSize: "0.8rem", color: "#64748B", margin: "0 0 1rem" }}>
-              Creates a verified account and dispatches an invitation link for the user to set their password.
+            <p style={{ fontSize: "0.8rem", color: "#55636D", margin: "0 0 1rem" }}>
+              Creates a verified account and dispatches an email invitation for passwordless OTP / Google sign-in.
             </p>
 
             {createError && (
-              <div style={{ padding: "0.6rem 0.75rem", backgroundColor: "#FEF2F2", color: "#991B1B", borderRadius: "6px", fontSize: "0.8rem", marginBottom: "1rem" }}>
+              <div style={{ padding: "0.6rem 0.75rem", backgroundColor: "#FEF2F2", color: "#991B1B", borderRadius: "8px", fontSize: "0.8rem", marginBottom: "1rem" }}>
                 {createError}
               </div>
             )}
@@ -551,7 +692,7 @@ export default function AuthorityUsersPage() {
                   value={createForm.name}
                   onChange={(e) => setCreateForm({ ...createForm, name: e.target.value })}
                   className="form-input"
-                  style={{ width: "100%", fontSize: "0.85rem", padding: "0.5rem" }}
+                  style={{ width: "100%", fontSize: "0.85rem", padding: "0.55rem 0.75rem" }}
                   autoFocus
                 />
               </div>
@@ -567,7 +708,7 @@ export default function AuthorityUsersPage() {
                   value={createForm.email}
                   onChange={(e) => setCreateForm({ ...createForm, email: e.target.value })}
                   className="form-input"
-                  style={{ width: "100%", fontSize: "0.85rem", padding: "0.5rem" }}
+                  style={{ width: "100%", fontSize: "0.85rem", padding: "0.55rem 0.75rem" }}
                 />
               </div>
 
@@ -582,30 +723,48 @@ export default function AuthorityUsersPage() {
                   value={createForm.phone}
                   onChange={(e) => setCreateForm({ ...createForm, phone: e.target.value })}
                   className="form-input"
-                  style={{ width: "100%", fontSize: "0.85rem", padding: "0.5rem" }}
+                  style={{ width: "100%", fontSize: "0.85rem", padding: "0.55rem 0.75rem" }}
                 />
               </div>
 
-              <div>
-                <label className="form-label" style={{ fontSize: "0.8rem", marginBottom: "0.25rem", display: "block" }}>
-                  Jurisdiction / State
-                </label>
-                <select
-                  value={createForm.state}
-                  onChange={(e) => setCreateForm({ ...createForm, state: e.target.value })}
-                  className="form-input"
-                  style={{ width: "100%", fontSize: "0.85rem", padding: "0.5rem" }}
-                >
-                  <option value="Delhi">Delhi / NCR</option>
-                  <option value="Maharashtra">Maharashtra (Mumbai / Pune)</option>
-                  <option value="Karnataka">Karnataka (Bengaluru)</option>
-                  <option value="Tamil Nadu">Tamil Nadu (Chennai)</option>
-                  <option value="West Bengal">West Bengal (Kolkata)</option>
-                  <option value="Gujarat">Gujarat</option>
-                  <option value="Uttar Pradesh">Uttar Pradesh</option>
-                  <option value="Haryana">Haryana</option>
-                  <option value="Other">Other State / UT</option>
-                </select>
+              <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "0.65rem" }}>
+                <div>
+                  <label className="form-label" style={{ fontSize: "0.8rem", marginBottom: "0.25rem", display: "block" }}>
+                    State
+                  </label>
+                  <select
+                    value={createForm.state}
+                    onChange={(e) => setCreateForm({ ...createForm, state: e.target.value })}
+                    className="form-input"
+                    style={{ width: "100%", fontSize: "0.85rem", padding: "0.55rem 0.75rem" }}
+                  >
+                    <option value="Delhi">Delhi / NCR</option>
+                    <option value="Maharashtra">Maharashtra</option>
+                    <option value="Karnataka">Karnataka</option>
+                    <option value="Tamil Nadu">Tamil Nadu</option>
+                    <option value="West Bengal">West Bengal</option>
+                    <option value="Gujarat">Gujarat</option>
+                    <option value="Uttar Pradesh">Uttar Pradesh</option>
+                    <option value="Haryana">Haryana</option>
+                    <option value="Other">Other State / UT</option>
+                  </select>
+                </div>
+
+                <div>
+                  <label className="form-label" style={{ fontSize: "0.8rem", marginBottom: "0.25rem", display: "block" }}>
+                    Plan Tier
+                  </label>
+                  <select
+                    value={createForm.planId}
+                    onChange={(e) => setCreateForm({ ...createForm, planId: e.target.value })}
+                    className="form-input"
+                    style={{ width: "100%", fontSize: "0.85rem", padding: "0.55rem 0.75rem" }}
+                  >
+                    <option value="essential">Essential (₹2,490)</option>
+                    <option value="lawyer_verified">Lawyer Verified (₹4,990)</option>
+                    <option value="premium">Connect to Lawyer (₹9,990)</option>
+                  </select>
+                </div>
               </div>
 
               <div style={{ display: "flex", alignItems: "center", gap: "0.5rem", marginTop: "0.25rem" }}>
@@ -614,10 +773,10 @@ export default function AuthorityUsersPage() {
                   id="create-isPaid"
                   checked={createForm.isPaid}
                   onChange={(e) => setCreateForm({ ...createForm, isPaid: e.target.checked })}
-                  style={{ width: "16px", height: "16px", cursor: "pointer" }}
+                  style={{ width: "16px", height: "16px", cursor: "pointer", accentColor: "#C65378" }}
                 />
-                <label htmlFor="create-isPaid" style={{ fontSize: "0.82rem", color: "#334155", cursor: "pointer" }}>
-                  Mark as Paid Customer immediately (unlock document generation)
+                <label htmlFor="create-isPaid" style={{ fontSize: "0.82rem", color: "#49585F", cursor: "pointer" }}>
+                  Grant Paid Customer access immediately (creates audited admin order)
                 </label>
               </div>
 
@@ -625,16 +784,16 @@ export default function AuthorityUsersPage() {
                 <button
                   type="button"
                   onClick={() => setCreateModalOpen(false)}
-                  style={{ padding: "0.45rem 0.85rem", fontSize: "0.82rem", background: "none", border: "1px solid #CBD5E1", borderRadius: "4px", cursor: "pointer" }}
+                  style={{ padding: "0.48rem 0.9rem", fontSize: "0.82rem", background: "#FFFFFF", color: "#49585F", border: "1px solid rgba(23, 34, 40, 0.14)", borderRadius: "8px", cursor: "pointer" }}
                 >
                   Cancel
                 </button>
                 <button
                   type="submit"
                   disabled={createLoading}
-                  style={{ padding: "0.45rem 0.95rem", fontSize: "0.82rem", background: "#0F172A", color: "#FFFFFF", border: "none", borderRadius: "4px", fontWeight: 600, cursor: "pointer" }}
+                  style={{ padding: "0.48rem 1.05rem", fontSize: "0.82rem", background: "#C65378", color: "#FFFFFF", border: "none", borderRadius: "8px", fontWeight: 600, cursor: "pointer" }}
                 >
-                  {createLoading ? "Creating..." : "Dispatch Invitation"}
+                  {createLoading ? "Creating..." : "Create & Invite"}
                 </button>
               </div>
             </form>
@@ -655,18 +814,19 @@ export default function AuthorityUsersPage() {
             alignItems: "center",
             justifyContent: "center",
             padding: "1rem",
-            backgroundColor: "rgba(0, 0, 0, 0.4)",
+            backgroundColor: "rgba(23, 34, 40, 0.55)",
+            backdropFilter: "blur(3px)",
           }}
           onClick={(e) => {
             if (e.target === e.currentTarget) setAdjustingUser(null);
           }}
         >
-          <div style={{ width: "100%", maxWidth: "380px", backgroundColor: "#FFFFFF", borderRadius: "8px", padding: "1.5rem", border: "1px solid #E2E8F0" }}>
-            <h2 style={{ fontSize: "1.1rem", fontWeight: 700, color: "var(--color-navy)", margin: "0 0 0.5rem" }}>
+          <div style={{ width: "100%", maxWidth: "390px", backgroundColor: "#FFFFFF", borderRadius: "18px", padding: "1.6rem", border: "1px solid rgba(23, 34, 40, 0.1)", boxShadow: "0 20px 50px rgba(23, 34, 40, 0.25)" }}>
+            <h2 style={{ fontSize: "1.15rem", fontWeight: 700, color: "#172228", margin: "0 0 0.5rem" }}>
               Adjust Credits: {adjustingUser.name}
             </h2>
-            <p style={{ fontSize: "0.8rem", color: "#64748B", margin: "0 0 1rem" }}>
-              Current credits: <strong>{adjustingUser.willCredits || 0}</strong>
+            <p style={{ fontSize: "0.8rem", color: "#55636D", margin: "0 0 1rem" }}>
+              Current credits: <strong style={{ color: "#172228" }}>{adjustingUser.willCredits || 0}</strong>
             </p>
 
             <form onSubmit={handleSaveCreditAdjustment} style={{ display: "flex", flexDirection: "column", gap: "0.85rem" }}>
@@ -682,11 +842,11 @@ export default function AuthorityUsersPage() {
                       onClick={() => setCreditDelta(delta)}
                       style={{
                         flex: 1,
-                        padding: "0.45rem",
-                        borderRadius: "4px",
-                        border: creditDelta === delta ? "2px solid #0F172A" : "1px solid #CBD5E1",
-                        backgroundColor: creditDelta === delta ? "#0F172A" : "#FFFFFF",
-                        color: creditDelta === delta ? "#FFFFFF" : "#0F172A",
+                        padding: "0.48rem",
+                        borderRadius: "8px",
+                        border: creditDelta === delta ? "2px solid #C65378" : "1px solid rgba(23, 34, 40, 0.14)",
+                        backgroundColor: creditDelta === delta ? "#C65378" : "#FFFFFF",
+                        color: creditDelta === delta ? "#FFFFFF" : "#172228",
                         fontWeight: 600,
                         fontSize: "0.82rem",
                         cursor: "pointer",
@@ -709,7 +869,7 @@ export default function AuthorityUsersPage() {
                   value={creditReason}
                   onChange={(e) => setCreditReason(e.target.value)}
                   className="form-input"
-                  style={{ width: "100%", fontSize: "0.85rem", padding: "0.5rem" }}
+                  style={{ width: "100%", fontSize: "0.85rem", padding: "0.55rem 0.75rem" }}
                   autoFocus
                 />
               </div>
@@ -718,13 +878,13 @@ export default function AuthorityUsersPage() {
                 <button
                   type="button"
                   onClick={() => setAdjustingUser(null)}
-                  style={{ padding: "0.45rem 0.85rem", fontSize: "0.82rem", background: "none", border: "1px solid #CBD5E1", borderRadius: "4px", cursor: "pointer" }}
+                  style={{ padding: "0.48rem 0.9rem", fontSize: "0.82rem", background: "#FFFFFF", color: "#49585F", border: "1px solid rgba(23, 34, 40, 0.14)", borderRadius: "8px", cursor: "pointer" }}
                 >
                   Cancel
                 </button>
                 <button
                   type="submit"
-                  style={{ padding: "0.45rem 0.95rem", fontSize: "0.82rem", background: "#0F172A", color: "#FFFFFF", border: "none", borderRadius: "4px", fontWeight: 600, cursor: "pointer" }}
+                  style={{ padding: "0.48rem 1rem", fontSize: "0.82rem", background: "#C65378", color: "#FFFFFF", border: "none", borderRadius: "8px", fontWeight: 600, cursor: "pointer" }}
                 >
                   Save Adjustment
                 </button>
@@ -734,97 +894,11 @@ export default function AuthorityUsersPage() {
         </div>
       )}
 
-      {/* MODAL: INSPECT USER DETAILS */}
-      {inspectingUser && (
-        <div
-          role="dialog"
-          aria-modal="true"
-          style={{
-            position: "fixed",
-            inset: 0,
-            zIndex: 9999,
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            padding: "1rem",
-            backgroundColor: "rgba(0, 0, 0, 0.4)",
-          }}
-          onClick={(e) => {
-            if (e.target === e.currentTarget) setInspectingUser(null);
-          }}
-        >
-          <div style={{ width: "100%", maxWidth: "480px", backgroundColor: "#FFFFFF", borderRadius: "8px", padding: "1.5rem", border: "1px solid #E2E8F0" }}>
-            <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "1rem" }}>
-              <h2 style={{ fontSize: "1.1rem", fontWeight: 700, color: "var(--color-navy)", margin: 0 }}>
-                User Details: {inspectingUser.name}
-              </h2>
-              <button
-                type="button"
-                onClick={() => setInspectingUser(null)}
-                style={{ background: "none", border: "none", fontSize: "1.1rem", cursor: "pointer", color: "#64748B" }}
-              >
-                ✕
-              </button>
-            </div>
-
-            <div style={{ display: "flex", flexDirection: "column", gap: "0.6rem", fontSize: "0.82rem" }}>
-              <div style={{ padding: "0.6rem 0.75rem", backgroundColor: "#F8FAFC", borderRadius: "4px" }}>
-                <span style={{ color: "#64748B" }}>Database ID:</span> <code style={{ fontSize: "0.75rem" }}>{inspectingUser.id}</code>
-              </div>
-              <div style={{ padding: "0.6rem 0.75rem", backgroundColor: "#F8FAFC", borderRadius: "4px" }}>
-                <span style={{ color: "#64748B" }}>Email:</span> <strong>{inspectingUser.email || "None"}</strong>
-              </div>
-              <div style={{ padding: "0.6rem 0.75rem", backgroundColor: "#F8FAFC", borderRadius: "4px" }}>
-                <span style={{ color: "#64748B" }}>Phone:</span> <strong>{inspectingUser.phone ? `+91 ${inspectingUser.phone}` : "None"}</strong>
-              </div>
-              <div style={{ padding: "0.6rem 0.75rem", backgroundColor: "#F8FAFC", borderRadius: "4px" }}>
-                <span style={{ color: "#64748B" }}>Jurisdiction State:</span> <strong>{inspectingUser.state || "Delhi"}</strong>
-              </div>
-              <div style={{ padding: "0.6rem 0.75rem", backgroundColor: "#F8FAFC", borderRadius: "4px" }}>
-                <span style={{ color: "#64748B" }}>Auth Status:</span> <strong>{inspectingUser.authStatus}</strong> | Payment: <strong>{inspectingUser.paymentStatus}</strong>
-              </div>
-              <div style={{ padding: "0.6rem 0.75rem", backgroundColor: "#F8FAFC", borderRadius: "4px" }}>
-                <span style={{ color: "#64748B" }}>Has Password Set:</span> <strong>{inspectingUser.hasPassword ? "Yes" : "No (Google OAuth or uninvited lead)"}</strong>
-              </div>
-              <div style={{ padding: "0.6rem 0.75rem", backgroundColor: "#F8FAFC", borderRadius: "4px" }}>
-                <span style={{ color: "#64748B" }}>Created At:</span> <strong>{inspectingUser.createdAt ? new Date(inspectingUser.createdAt).toLocaleString("en-IN") : "Unknown"}</strong>
-              </div>
-            </div>
-
-            <div style={{ display: "flex", justifyContent: "flex-end", gap: "0.5rem", marginTop: "1.25rem" }}>
-              {inspectingUser.email && (
-                <button
-                  type="button"
-                  onClick={() => window.open(`/thank-you?email=${encodeURIComponent(inspectingUser.email)}`, "_blank")}
-                  style={{
-                    padding: "0.45rem 0.85rem",
-                    fontSize: "0.82rem",
-                    background: "var(--color-navy)",
-                    color: "#FFFFFF",
-                    border: "none",
-                    borderRadius: "4px",
-                    fontWeight: 600,
-                    cursor: "pointer",
-                    display: "inline-flex",
-                    alignItems: "center",
-                    gap: "0.3rem",
-                  }}
-                >
-                  <span>Open in Test Console</span>
-                  <span>↗</span>
-                </button>
-              )}
-              <button
-                type="button"
-                onClick={() => setInspectingUser(null)}
-                style={{ padding: "0.45rem 0.85rem", fontSize: "0.82rem", background: "#F1F5F9", color: "#0F172A", border: "1px solid #CBD5E1", borderRadius: "4px", fontWeight: 600, cursor: "pointer" }}
-              >
-                Close
-              </button>
-            </div>
-          </div>
-        </div>
-      )}
+      {/* DEEP INSPECTOR MODAL (Will Questionnaire + Account + Orders) */}
+      <WillDetailInspectorModal
+        target={inspectingUser ? buildInspectorTarget(inspectingUser) : null}
+        onClose={() => setInspectingUser(null)}
+      />
     </div>
   );
 }

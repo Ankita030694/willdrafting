@@ -1,14 +1,14 @@
 "use client";
 
-import React, { useState } from "react";
-import { useRouter } from "next/navigation";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
+import React, { useState, useEffect, Suspense } from "react";
+import Image from "next/image";
+import { useRouter, useSearchParams } from "next/navigation";
+import { signIn, useSession } from "next-auth/react";
 
-import { signIn } from "next-auth/react";
-
-export default function AdminLoginPage() {
+function NullifyLoginForm() {
   const router = useRouter();
+  const searchParams = useSearchParams();
+  const { data: session, status } = useSession();
 
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -16,12 +16,22 @@ export default function AdminLoginPage() {
   const [loading, setLoading] = useState(false);
   const [errorMessage, setErrorMessage] = useState("");
 
+  const rawCallback = searchParams.get("callbackUrl");
+  const targetUrl =
+    rawCallback && rawCallback.startsWith("/authority") ? rawCallback : "/authority";
+
+  useEffect(() => {
+    if (status === "authenticated" && session?.user?.role === "superadmin") {
+      router.replace(targetUrl);
+    }
+  }, [status, session, router, targetUrl]);
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setErrorMessage("");
 
     if (!email.trim() || !password) {
-      setErrorMessage("Please enter both email and password.");
+      setErrorMessage("Please enter both administrator email and password.");
       return;
     }
 
@@ -35,171 +45,229 @@ export default function AdminLoginPage() {
       });
 
       if (!res?.error) {
-        router.push("/authority");
+        router.push(targetUrl);
         router.refresh();
       } else {
         setErrorMessage("Invalid administrator credentials. Access denied.");
       }
     } catch {
-      setErrorMessage("Network error during admin authentication.");
+      setErrorMessage("Network error during administrator authentication.");
     } finally {
       setLoading(false);
     }
   };
 
   return (
-    <div style={{ display: "flex", flexDirection: "column", minHeight: "100vh", backgroundColor: "var(--bg-page)" }}>
-      <Navbar />
-
-      <main
-        className="admin-login-main"
+    <div
+      style={{
+        minHeight: "100vh",
+        backgroundColor: "#FAF7F0",
+        color: "#172228",
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        justifyContent: "center",
+        padding: "1.5rem",
+        fontFamily: "var(--font-body)",
+      }}
+    >
+      <div
         style={{
-          flex: "1 0 auto",
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-          padding: "3.5rem 1.5rem 4.5rem",
+          width: "100%",
+          maxWidth: "430px",
+          backgroundColor: "#FFFFFF",
+          border: "1px solid rgba(23, 34, 40, 0.08)",
+          borderRadius: "24px",
+          padding: "2.35rem 2.1rem",
+          boxShadow: "0 14px 45px -8px rgba(23, 34, 40, 0.12)",
         }}
       >
-        <div
-          className="editorial-card admin-login-card"
-          style={{
-            width: "100%",
-            maxWidth: "420px",
-            backgroundColor: "#FFFFFF",
-            padding: "2.25rem",
-            borderRadius: "var(--radius-lg)",
-            boxShadow: "var(--shadow-md)",
-            border: "1px solid var(--border-card)",
-          }}
-        >
-          {/* Simple Heading */}
-          <div style={{ marginBottom: "1.5rem", textAlign: "center" }}>
-            <h1
+        {/* Brand Logo & Heading */}
+        <div style={{ textAlign: "center", marginBottom: "1.65rem" }}>
+          <div style={{ display: "flex", justifyContent: "center", marginBottom: "0.9rem" }}>
+            <Image
+              src="/Logofinal.svg"
+              alt="WillDrafting.in"
+              width={140}
+              height={36}
+              style={{ height: "34px", width: "auto", objectFit: "contain" }}
+              priority
+            />
+          </div>
+          <span
+            style={{
+              display: "inline-block",
+              fontSize: "0.68rem",
+              fontWeight: 700,
+              color: "#C65378",
+              backgroundColor: "rgba(198, 83, 120, 0.1)",
+              padding: "0.22rem 0.7rem",
+              borderRadius: "999px",
+              letterSpacing: "0.12em",
+              textTransform: "uppercase",
+              marginBottom: "0.5rem",
+            }}
+          >
+            Restricted Authority Portal
+          </span>
+          <h1
+            style={{
+              fontSize: "1.5rem",
+              fontWeight: 700,
+              color: "#172228",
+              margin: 0,
+              letterSpacing: "-0.015em",
+            }}
+          >
+            Superadmin Sign In
+          </h1>
+          <p style={{ fontSize: "0.82rem", color: "#49585F", margin: "0.3rem 0 0" }}>
+            Enter your root credentials to access the Authority Console
+          </p>
+        </div>
+
+        {errorMessage && (
+          <div
+            style={{
+              padding: "0.7rem 0.9rem",
+              marginBottom: "1.1rem",
+              backgroundColor: "rgba(198, 83, 120, 0.08)",
+              border: "1px solid rgba(198, 83, 120, 0.28)",
+              borderRadius: "12px",
+              color: "#a13c5d",
+              fontSize: "0.82rem",
+              fontWeight: 600,
+            }}
+          >
+            {errorMessage}
+          </div>
+        )}
+
+        <form onSubmit={handleSubmit} style={{ display: "flex", flexDirection: "column", gap: "1.05rem" }}>
+          <div>
+            <label
+              htmlFor="adminEmail"
               style={{
-                fontSize: "1.45rem",
-                color: "var(--color-navy)",
-                fontWeight: 700,
-                margin: 0,
+                display: "block",
+                fontSize: "0.8rem",
+                fontWeight: 600,
+                color: "#172228",
+                marginBottom: "0.35rem",
               }}
             >
-              Admin Sign In
-            </h1>
+              Superadmin Email *
+            </label>
+            <input
+              id="adminEmail"
+              name="email"
+              type="email"
+              required
+              autoComplete="username"
+              placeholder="admin@willdrafting.in"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              style={{
+                width: "100%",
+                padding: "0.75rem 0.9rem",
+                fontSize: "0.9rem",
+                borderRadius: "12px",
+                backgroundColor: "#FAF7F0",
+                border: "1px solid rgba(23, 34, 40, 0.12)",
+                color: "#172228",
+                outline: "none",
+                transition: "border-color 0.15s ease",
+              }}
+              onFocus={(e) => (e.currentTarget.style.borderColor = "#C65378")}
+              onBlur={(e) => (e.currentTarget.style.borderColor = "rgba(23, 34, 40, 0.12)")}
+            />
           </div>
 
-          {/* Error Banner */}
-          {errorMessage && (
-            <div
-              style={{
-                padding: "0.65rem 0.85rem",
-                marginBottom: "1rem",
-                backgroundColor: "rgba(220, 38, 38, 0.08)",
-                border: "1px solid rgba(220, 38, 38, 0.25)",
-                borderRadius: "var(--radius-md)",
-                color: "#991B1B",
-                fontSize: "0.82rem",
-                display: "flex",
-                alignItems: "center",
-                gap: "0.45rem",
-              }}
-            >
-              <span>⚠️</span>
-              <span>{errorMessage}</span>
-            </div>
-          )}
-
-          {/* Login Form */}
-          <form onSubmit={handleSubmit} style={{ display: "flex", flexDirection: "column", gap: "1rem" }}>
-            {/* Email Address */}
-            <div>
-              <label className="form-label" htmlFor="adminEmail" style={{ fontSize: "0.82rem", marginBottom: "0.3rem" }}>
-                Admin Email *
+          <div>
+            <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "0.35rem" }}>
+              <label
+                htmlFor="adminPassword"
+                style={{ fontSize: "0.8rem", fontWeight: 600, color: "#172228", margin: 0 }}
+              >
+                Password *
               </label>
-              <input
-                id="adminEmail"
-                name="email"
-                type="email"
-                required
-                placeholder="admin@willdrafting.in"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                className="form-input admin-input"
-                style={{ fontSize: "0.92rem", padding: "0.7rem 0.85rem" }}
-              />
-            </div>
-
-            {/* Password */}
-            <div>
-              <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "0.3rem" }}>
-                <label className="form-label" htmlFor="adminPassword" style={{ fontSize: "0.82rem", margin: 0 }}>
-                  Password *
-                </label>
-                <button
-                  type="button"
-                  onClick={() => setShowPassword(!showPassword)}
-                  style={{
-                    background: "none",
-                    border: "none",
-                    color: "var(--color-slate)",
-                    cursor: "pointer",
-                    fontSize: "0.78rem",
-                    padding: 0,
-                  }}
-                >
-                  {showPassword ? "Hide" : "Show"}
-                </button>
-              </div>
-              <input
-                id="adminPassword"
-                name="password"
-                type={showPassword ? "text" : "password"}
-                required
-                placeholder="••••••••"
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}
-                className="form-input admin-input"
-                style={{ fontSize: "0.92rem", padding: "0.7rem 0.85rem" }}
-              />
-            </div>
-
-            {/* Submit Button */}
-            <div style={{ paddingTop: "0.25rem" }}>
               <button
-                type="submit"
-                disabled={loading}
-                className="btn btn-gold"
+                type="button"
+                onClick={() => setShowPassword(!showPassword)}
                 style={{
-                  width: "100%",
-                  padding: "0.85rem",
-                  fontSize: "0.92rem",
-                  fontWeight: 700,
-                  opacity: loading ? 0.7 : 1,
+                  background: "none",
+                  border: "none",
+                  color: "#49585F",
+                  cursor: "pointer",
+                  fontSize: "0.76rem",
+                  fontWeight: 600,
+                  padding: 0,
                 }}
               >
-                {loading ? "Signing In..." : "Sign In →"}
+                {showPassword ? "Hide" : "Show"}
               </button>
             </div>
-          </form>
-        </div>
-      </main>
+            <input
+              id="adminPassword"
+              name="password"
+              type={showPassword ? "text" : "password"}
+              required
+              autoComplete="current-password"
+              placeholder="••••••••"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              style={{
+                width: "100%",
+                padding: "0.75rem 0.9rem",
+                fontSize: "0.9rem",
+                borderRadius: "12px",
+                backgroundColor: "#FAF7F0",
+                border: "1px solid rgba(23, 34, 40, 0.12)",
+                color: "#172228",
+                outline: "none",
+                transition: "border-color 0.15s ease",
+              }}
+              onFocus={(e) => (e.currentTarget.style.borderColor = "#C65378")}
+              onBlur={(e) => (e.currentTarget.style.borderColor = "rgba(23, 34, 40, 0.12)")}
+            />
+          </div>
 
-      <Footer />
-
-      <style jsx>{`
-        @media (max-width: 640px) {
-          .admin-login-main {
-            padding: 1.75rem 1rem 2.5rem !important;
-          }
-          :global(.admin-login-card) {
-            padding: 1.35rem 1.15rem !important;
-          }
-          :global(.admin-input) {
-            font-size: 16px !important;
-            padding: 0.75rem 0.85rem !important;
-            min-height: 44px !important;
-          }
-        }
-      `}</style>
+          <button
+            type="submit"
+            disabled={loading}
+            style={{
+              marginTop: "0.35rem",
+              width: "100%",
+              padding: "0.85rem",
+              fontSize: "0.92rem",
+              fontWeight: 700,
+              borderRadius: "12px",
+              backgroundColor: "#C65378",
+              color: "#FFFFFF",
+              border: "none",
+              boxShadow: "0 4px 14px rgba(198, 83, 120, 0.25)",
+              cursor: loading ? "wait" : "pointer",
+              opacity: loading ? 0.7 : 1,
+              transition: "background-color 0.15s ease",
+            }}
+            onMouseEnter={(e) => {
+              if (!loading) e.currentTarget.style.backgroundColor = "#a13c5d";
+            }}
+            onMouseLeave={(e) => {
+              if (!loading) e.currentTarget.style.backgroundColor = "#C65378";
+            }}
+          >
+            {loading ? "Authenticating..." : "Enter Authority Console →"}
+          </button>
+        </form>
+      </div>
     </div>
+  );
+}
+
+export default function AdminLoginPage() {
+  return (
+    <Suspense fallback={<div style={{ minHeight: "100vh", backgroundColor: "#FAF7F0" }} />}>
+      <NullifyLoginForm />
+    </Suspense>
   );
 }
