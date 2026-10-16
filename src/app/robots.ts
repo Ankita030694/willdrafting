@@ -11,6 +11,7 @@ export default function robots(): MetadataRoute.Robots {
           "/",
           "/aboutus",
           "/service",
+          "/nri-will-india",
           "/pricing",
           "/blogs",
           "/blogs/*",

@@ -7,16 +7,28 @@ import ContactForm from "@/components/ContactForm";
 import { Mail, MapPin } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Contact Our Legal Advisory Team",
+  title: "Will Drafting Legal Consultation India — Contact Estate Planning Lawyers",
   description:
-    "Have questions about drafting or registering your Will? Speak with our legal advisory team for instant assistance with your testamentary testament.",
+    "Book a confidential Will drafting legal consultation in India with AMA Legal Solutions. Get expert estate planning, NRI Will, HUF coparcenary, and Sub-Registrar registration assistance.",
+  keywords: [
+    "will drafting legal consultation india",
+    "estate planning lawyer contact india",
+    "nri will legal consultation india",
+    "will registration assistance india",
+    "online will lawyer consultation india",
+    "huf ancestral property will consultation",
+    "ama legal solutions contact",
+    "indian succession law advisory desk",
+    "estate planning consultation delhi mumbai",
+    "sub registrar will registration help india",
+  ],
   alternates: {
     canonical: "https://www.willdrafting.in/contact",
   },
   openGraph: {
-    title: "Contact Our Legal Advisory Team | WillDrafting.in",
+    title: "Will Drafting Legal Consultation India — Contact Estate Planning Lawyers | WillDrafting.in",
     description:
-      "Have questions about drafting or registering your Will? Speak with our legal advisory team for instant assistance with your testamentary testament.",
+      "Book a confidential Will drafting legal consultation in India with AMA Legal Solutions. Get expert estate planning, NRI Will, HUF coparcenary, and Sub-Registrar registration assistance.",
     url: "https://www.willdrafting.in/contact",
     siteName: "WillDrafting.in",
     locale: "en_IN",
@@ -26,15 +38,15 @@ export const metadata: Metadata = {
         url: "/desktopusp.jpg",
         width: 1200,
         height: 630,
-        alt: "Contact WillDrafting.in Legal Advisory Team",
+        alt: "Contact WillDrafting.in & AMA Legal Solutions - Estate Planning Lawyers in India",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Contact Our Legal Advisory Team | WillDrafting.in",
+    title: "Will Drafting Legal Consultation India — Contact Estate Planning Lawyers | WillDrafting.in",
     description:
-      "Have questions about drafting or registering your Will? Speak with our legal advisory team for instant assistance with your testamentary testament.",
+      "Book a confidential Will drafting legal consultation in India with AMA Legal Solutions. Get expert estate planning, NRI Will, HUF coparcenary, and Sub-Registrar registration assistance.",
     images: ["/desktopusp.jpg"],
   },
   robots: {
@@ -53,9 +65,12 @@ const CONTACT_SCHEMA = {
       "@type": "ContactPage",
       "@id": "https://www.willdrafting.in/contact#webpage",
       "url": "https://www.willdrafting.in/contact",
-      "name": "Contact Our Legal Advisory Team | WillDrafting.in",
+      "name": "Will Drafting Legal Consultation India — Contact Estate Planning Lawyers | WillDrafting.in",
       "description":
-        "Have questions about drafting or registering your Will? Speak with our legal advisory team for instant assistance with your testamentary testament.",
+        "Book a confidential Will drafting legal consultation in India with AMA Legal Solutions for Resident Indian and NRI estates, HUF shares, and Sub-Registrar Will registration.",
+      "mainEntity": {
+        "@id": "https://www.willdrafting.in/#legalservice",
+      },
       "breadcrumb": {
         "@id": "https://www.willdrafting.in/contact#breadcrumb",
       },
@@ -93,6 +108,9 @@ export default function ContactPage() {
       <main className="flex-1 w-full max-w-8xl mx-auto px-5 sm:px-8 lg:px-12 pt-8 sm:pt-14 pb-20 mt-25">
         {/* Page Top Heading */}
         <div className="mb-6 sm:mb-8">
+          <div className="inline-flex items-center text-[#C65378] text-[0.75rem] font-bold tracking-[0.16em] uppercase mb-2.5">
+            <span>Will Drafting Legal Consultation · AMA Legal Solutions</span>
+          </div>
           <h1 className="text-[2rem] sm:text-[2.2rem] lg:text-[3.4rem] font-medium leading-[1.08] tracking-[-0.025em] text-[#111827]">
             Get in touch
           </h1>
@@ -115,11 +133,11 @@ export default function ContactPage() {
           {/* Contact Info Column */}
           <div className="lg:col-span-6 flex flex-col order-2 lg:order-1 pt-6 lg:pt-0 border-t border-neutral-200/70 lg:border-t-0">
             <h2 className="hidden lg:block text-2xl sm:text-3xl lg:text-[2.25rem] font-medium leading-[1.22] tracking-[-0.015em] text-[#111827] mb-6">
-              Have questions about making a Will? Tell us a little about what you need, and our team will help you take the next step.
+              Have questions about making a Will in India? Tell us a little about what you need, and our estate planning advocates will help you take the next step.
             </h2>
 
-            <p className="text-[14px] sm:text-[15px] leading-relaxed text-[#4B5563] mb-8 sm:mb-10 max-w-[520px]">
-              Whether you need Will drafting, estate planning or succession guidance, we’re here to make the process simple and clear.
+            <p className="text-[14px] sm:text-[15px] leading-relaxed text-[#4B5563] mb-8 sm:mb-10 max-w-[540px]">
+              Whether you need online Will drafting, NRI cross-border estate planning, HUF &amp; ancestral property guidance, or Sub-Registrar Will registration assistance in India, our advisory desk at <strong className="font-semibold text-[#111827]">AMA Legal Solutions</strong> is here to make the process simple and clear.
             </p>
 
             <div className="flex flex-col space-y-5 sm:space-y-6 pt-1 pb-6">
@@ -154,10 +172,10 @@ export default function ContactPage() {
                     Legal Advisory Desk
                   </span>
                   <p className="text-[15px] sm:text-[16px] font-medium text-[#111827]">
-                    WillDrafting Legal Solutions
+                    WillDrafting.in · AMA Legal Solutions
                   </p>
                   <span className="text-xs text-[#718096] mt-0.5">
-                    Delhi & Mumbai, India
+                    Delhi &amp; Mumbai, India (Serving Resident Indians &amp; NRIs Worldwide)
                   </span>
                 </div>
               </div>

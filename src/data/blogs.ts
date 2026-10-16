@@ -32,7 +32,7 @@ export const BLOG_ARTICLES: BlogArticle[] = [
     title: "Why NRIs & OCIs Need a Separate Indian Will: The Two-Will Strategy, FEMA Rules & NRE/NRO Repatriation",
     lead: "Relying on a single US, UK, UAE, or Canadian Will to transfer Indian real estate and NRE/NRO bank accounts forces your family into multi-year foreign probate re-sealing under Section 228 of the Indian Succession Act.",
     date: "October 12, 2026",
-    imageSrc: "/desktopusp.jpg",
+    imageSrc: "/3.jpg",
     author: "Advocate Rajeshwar Rao",
     authorRole: "Senior Estate & FEMA Counsel, AMA Legal Solutions",
     shortVersion: [
@@ -90,7 +90,7 @@ export const BLOG_ARTICLES: BlogArticle[] = [
     title: "Nominee vs. Legal Heir in India: Why Bank, Mutual Fund & Demat Nominations Do Not Replace a Will",
     lead: "In landmark rulings from Sarbati Devi to Shakti Yezdani (2023), the Supreme Court of India has settled the law: a nominee is merely a caretaker trustee, and your Will always overrides nomination.",
     date: "October 08, 2026",
-    imageSrc: "/images/contact-consultation.jpg",
+    imageSrc: "/images/asset-bequests.jpg",
     author: "Advocate Sunita Deshmukh",
     authorRole: "Partner, Succession & Wealth Practice, AMA Legal Solutions",
     shortVersion: [
@@ -147,7 +147,7 @@ export const BLOG_ARTICLES: BlogArticle[] = [
     title: "Is Probate of a Will Still Mandatory in Mumbai, Chennai & Kolkata? The 2025 Amendment Explained",
     lead: "For 100 years, Section 213 of the Indian Succession Act forced Hindus, Buddhists, Sikhs, and Jains in Mumbai, Chennai, and Kolkata to obtain compulsory court probate. Here is how the Repealing and Amending Act, 2025 changes the law—and when probate is still required.",
     date: "October 04, 2026",
-    imageSrc: "/images/attorney-desk.jpg",
+    imageSrc: "/images/advocate.jpg",
     author: "Advocate Rajeshwar Rao",
     authorRole: "Senior Counsel, High Court, AMA Legal Solutions",
     shortVersion: [
@@ -206,7 +206,7 @@ export const BLOG_ARTICLES: BlogArticle[] = [
     title: "Is a Will valid on plain paper in India? The legal truth",
     lead: "Under Indian succession law, a will does not require expensive non-judicial stamp paper or mandatory registration to be completely legal.",
     date: "July 15, 2026",
-    imageSrc: "/images/service-hero.jpg",
+    imageSrc: "/2.jpg",
     author: "Advocate Rajeshwar Rao",
     authorRole: "Senior Counsel, High Court",
     shortVersion: [
@@ -259,7 +259,7 @@ export const BLOG_ARTICLES: BlogArticle[] = [
     title: "How to appoint legal guardians for minor children",
     lead: "Prevent child custody from becoming a contested courtroom battle. Essential guidelines on nominating primary and alternate testamentary guardians.",
     date: "July 02, 2026",
-    imageSrc: "/images/senior-couple.jpg",
+    imageSrc: "/images/hero-family.jpg",
     author: "Sunita Deshmukh",
     authorRole: "Family Law & Trust Specialist",
     shortVersion: [
@@ -309,7 +309,7 @@ export const BLOG_ARTICLES: BlogArticle[] = [
     title: "Intestacy rules: What happens if someone passes without a Will?",
     lead: "Understanding statutory asset division under personal succession laws, and why family bank accounts and real estate get frozen during succession certificate hearings.",
     date: "June 28, 2026",
-    imageSrc: "/images/hero-family.jpg",
+    imageSrc: "/images/senior-couple.jpg",
     author: "Advocate Rajeshwar Rao",
     authorRole: "Senior Counsel, High Court",
     shortVersion: [

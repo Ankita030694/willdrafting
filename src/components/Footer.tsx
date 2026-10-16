@@ -133,6 +133,11 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/nri-will-india" className="hover:text-[#172228] transition-colors">
+                  NRI Will Drafting India
+                </Link>
+              </li>
+              <li>
                 <Link href="/contact" className="hover:text-[#172228] transition-colors">
                   Probate & Succession Advice
                 </Link>

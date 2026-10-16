@@ -10,16 +10,28 @@ import { ArrowUpRight } from "lucide-react";
 import { BLOG_ARTICLES } from "@/data/blogs";
 
 export const metadata: Metadata = {
-  title: "Legal Insights & Will Drafting Guides",
+  title: "Indian Succession Law Guides & Will Drafting Rules Blog",
   description:
-    "Practical guides on drafting online Wills in minutes, asset distribution, executor duties, witness rules, and registration under Indian succession law.",
+    "Authoritative guides on Indian succession law, Will drafting rules under the Indian Succession Act 1925, Hindu Succession Act 1956, Muslim Wasiyat, NRI estate planning & probate.",
+  keywords: [
+    "indian succession law guides",
+    "will drafting rules india blog",
+    "indian succession act 1925 articles",
+    "hindu succession act 1956 guides",
+    "nri will drafting india blog",
+    "nominee vs legal heir supreme court guide",
+    "probate of will in india 2025 amendment",
+    "will registration rules india",
+    "muslim will wasiyat 1/3 rule guide",
+    "estate planning blog india ama legal solutions",
+  ],
   alternates: {
     canonical: "https://www.willdrafting.in/blogs",
   },
   openGraph: {
-    title: "Legal Insights & Will Drafting Guides | WillDrafting.in",
+    title: "Indian Succession Law Guides & Will Drafting Rules Blog | WillDrafting.in",
     description:
-      "Practical guides on drafting online Wills in minutes, asset distribution, executor duties, witness rules, and registration under Indian succession law.",
+      "Authoritative guides on Indian succession law, Will drafting rules under the Indian Succession Act 1925, Hindu Succession Act 1956, Muslim Wasiyat, NRI estate planning & probate.",
     url: "https://www.willdrafting.in/blogs",
     siteName: "WillDrafting.in",
     locale: "en_IN",
@@ -29,15 +41,15 @@ export const metadata: Metadata = {
         url: "/desktopusp.jpg",
         width: 1200,
         height: 630,
-        alt: "WillDrafting.in Legal Insights & Blog",
+        alt: "WillDrafting.in - Indian Succession Law Guides & Will Drafting Blog",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Legal Insights & Will Drafting Guides | WillDrafting.in",
+    title: "Indian Succession Law Guides & Will Drafting Rules Blog | WillDrafting.in",
     description:
-      "Practical guides on drafting online Wills in minutes, asset distribution, executor duties, witness rules, and registration under Indian succession law.",
+      "Authoritative guides on Indian succession law, Will drafting rules under the Indian Succession Act 1925, Hindu Succession Act 1956, Muslim Wasiyat, NRI estate planning & probate.",
     images: ["/desktopusp.jpg"],
   },
   robots: {
@@ -56,9 +68,12 @@ const BLOGS_SCHEMA = {
       "@type": "CollectionPage",
       "@id": "https://www.willdrafting.in/blogs#webpage",
       "url": "https://www.willdrafting.in/blogs",
-      "name": "Legal Insights & Will Drafting Guides | WillDrafting.in",
+      "name": "Indian Succession Law Guides & Will Drafting Rules Blog | WillDrafting.in",
       "description":
-        "Practical guides on drafting online Wills in minutes, asset distribution, executor duties, witness rules, and registration under Indian succession law.",
+        "Authoritative guides on Indian succession law, Will drafting rules under the Indian Succession Act 1925, Hindu Succession Act 1956, Muslim Wasiyat, NRI estate planning & probate.",
+      "publisher": {
+        "@id": "https://www.willdrafting.in/#organization",
+      },
       "breadcrumb": {
         "@id": "https://www.willdrafting.in/blogs#breadcrumb",
       },
@@ -99,7 +114,7 @@ export default function BlogsPage() {
             ========================================================================= */}
         <div className="flex flex-col items-center text-center max-w-3xl mx-auto mb-14 sm:mb-20">
           <div className="inline-flex items-center text-[#C65378] text-[0.75rem] font-bold tracking-[0.16em] uppercase mb-4 sm:mb-5">
-            <span>Journal & Legal Insights</span>
+            <span>Indian Succession Law Guides · AMA Legal Solutions</span>
           </div>
 
           <h1 className="text-[2rem] sm:text-[2.2rem] lg:text-[3.4rem] font-medium leading-[1.12] tracking-[-0.025em] text-[#111827] mb-4 sm:mb-5">
@@ -107,7 +122,7 @@ export default function BlogsPage() {
           </h1>
 
           <p className="text-[1.05rem] sm:text-[1.15rem] leading-[1.65] text-[#55636D] font-normal max-w-2xl mx-auto">
-            Clear, practical guidance on <span className="font-bold">Will drafting, estate planning, succession law, inheritance, asset protection, and family wealth planning in India</span>, helping you make informed decisions and protect your family’s future.
+            Authoritative <span className="font-bold">Indian succession law guides and Will drafting rules</span> under the Indian Succession Act, 1925, Hindu Succession Act, 1956, Muslim Personal Law (Wasiyat), and FEMA—written by estate planning advocates for Resident Indians and NRIs.
           </p>
         </div>
 

@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 640" width="1200" height="640" role="img" aria-label="NRI Two-Will Strategy Infographic for Indian Property and NRE NRO Assets">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FAF7F0" />
+      <stop offset="100%" stop-color="#F3EDE0" />
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#C65378" />
+      <stop offset="100%" stop-color="#9F3B5C" />
+    </linearGradient>
+    <filter id="cardShadow" x="-4%" y="-4%" width="108%" height="112%">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#172228" flood-opacity="0.06" />
+    </filter>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="1200" height="640" rx="28" fill="url(#bgGrad)" stroke="#172228" stroke-opacity="0.1" stroke-width="2" />
+
+  <!-- Top Header Banner -->
+  <rect x="40" y="32" width="310" height="28" rx="14" fill="#C65378" fill-opacity="0.12" />
+  <text x="195" y="51" font-family="Plus Jakarta Sans, system-ui, sans-serif" font-size="11" font-weight="700" fill="#C65378" text-anchor="middle" letter-spacing="1.6">NRI &amp; OCI SUCCESSION INFOGRAPHIC</text>
+
+  <text x="40" y="96" font-family="Plus Jakarta Sans, system-ui, sans-serif" font-size="28" font-weight="700" fill="#111827">Single Foreign Will vs. The NRI Two-Will Strategy in India</text>
+  <text x="40" y="124" font-family="Plus Jakarta Sans, system-ui, sans-serif" font-size="14.5" font-weight="400" fill="#49585F">Why Indian immovable property &amp; NRE/NRO accounts need a dedicated Indian Will under Section 5 &amp; Section 63 of the Indian Succession Act, 1925</text>
+
+  <!-- LEFT COLUMN: PATH A (Single Foreign Will Trap) -->
+  <g filter="url(#cardShadow)">
+    <rect x="40" y="152" width="540" height="420" rx="20" fill="#FFFFFF" stroke="#EF4444" stroke-opacity="0.3" stroke-width="1.5" />
+    <rect x="40" y="152" width="540" height="54" rx="20" fill="#FEF2F2" />
+    <circle cx="72" cy="179" r="12" fill="#DC2626" />
+    <text x="72" y="184" font-family="Plus Jakarta Sans, system-ui, sans-serif" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="middle">✕</text>
+    <text x="96" y="184" font-family="Plus Jakarta Sans, system-ui, sans-serif" font-size="15.5" font-weight="700" fill="#991B1B">PATH A: Relying Only on a Foreign Will / US Living Trust</text>
+
+    <!-- Step 1 -->
+    <rect x="64" y="224" width="492" height="68" rx="12" fill="#FAF7F0" stroke="#172228" stroke-opacity="0.08" />
+    <text x="84" y="249" font-family="Plus Jakarta Sans, system-ui, sans-serif" font-size="13.5" font-weight="700" fill="#111827">1. Overseas Probate First (6 to 12 Months)</text>
+    <text x="84" y="271" font-family="Plus Jakarta Sans, system-ui, sans-serif" font-size="12.5" fill="#49585F">Family must wait for US, UK, UAE, Canadian, or Australian court grant first.</text>
+
+    <!-- Step 2 -->
+    <rect x="64" y="306" width="492" height="68" rx="12" fill="#FAF7F0" stroke="#172228" stroke-opacity="0.08" />
+    <text x="84" y="331" font-family="Plus Jakarta Sans, system-ui, sans-serif" font-size="13.5" font-weight="700" fill="#111827">2. Hague Apostille / Indian Embassy Legalization</text>
+    <text x="84" y="353" font-family="Plus Jakarta Sans, system-ui, sans-serif" font-size="12.5" fill="#49585F">Foreign court records require notarization, Apostille, or Consular attestation.</text>
+
+    <!-- Step 3 -->
+    <rect x="64" y="388" width="492" height="68" rx="12" fill="#FAF7F0" stroke="#172228" stroke-opacity="0.08" />
+    <text x="84" y="413" font-family="Plus Jakarta Sans, system-ui, sans-serif" font-size="13.5" font-weight="700" fill="#111827">3. Section 228 Ancillary Probate in Indian Court (8–18 Months)</text>
+    <text x="84" y="435" font-family="Plus Jakarta Sans, system-ui, sans-serif" font-size="12.5" fill="#49585F">Second court petition in India required before banks or housing societies act.</text>
+
+    <!-- Outcome Box -->
+    <rect x="64" y="472" width="492" height="78" rx="12" fill="#FEF2F2" stroke="#FECACA" />
+    <text x="84" y="499" font-family="Plus Jakarta Sans, system-ui, sans-serif" font-size="13.5" font-weight="700" fill="#991B1B">Result: 14 to 30 Months Total Delay &amp; Dual Court Costs</text>
+    <text x="84" y="521" font-family="Plus Jakarta Sans, system-ui, sans-serif" font-size="12.5" fill="#7F1D1D">Indian flats, NRE/NRO FDs &amp; Demat accounts remain frozen during re-sealing.</text>
+    <text x="84" y="539" font-family="Plus Jakarta Sans, system-ui, sans-serif" font-size="12" font-weight="600" fill="#991B1B">Warning: US Living Trusts are not recognized by Indian Sub-Registrars.</text>
+  </g>
+
+  <!-- RIGHT COLUMN: PATH B (The NRI Two-Will Strategy) -->
+  <g filter="url(#cardShadow)">
+    <rect x="620" y="152" width="540" height="420" rx="20" fill="#FFFFFF" stroke="#059669" stroke-opacity="0.35" stroke-width="2" />
+    <rect x="620" y="152" width="540" height="54" rx="20" fill="#ECFDF5" />
+    <circle cx="652" cy="179" r="12" fill="#059669" />
+    <text x="652" y="184" font-family="Plus Jakarta Sans, system-ui, sans-serif" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="middle">✓</text>
+    <text x="676" y="184" font-family="Plus Jakarta Sans, system-ui, sans-serif" font-size="15.5" font-weight="700" fill="#065F46">PATH B: Dedicated Indian Will (The Two-Will Strategy)</text>
+
+    <!-- Step 1 -->
+    <rect x="644" y="224" width="492" height="68" rx="12" fill="#FAF7F0" stroke="#172228" stroke-opacity="0.08" />
+    <text x="664" y="249" font-family="Plus Jakarta Sans, system-ui, sans-serif" font-size="13.5" font-weight="700" fill="#111827">1. Non-Revocation Territorial Clause (India-Only Scope)</text>
+    <text x="664" y="271" font-family="Plus Jakarta Sans, system-ui, sans-serif" font-size="12.5" fill="#49585F">Covers Indian assets exclusively without revoking your US, UK, UAE or CA Will.</text>
+
+    <!-- Step 2 -->
+    <rect x="644" y="306" width="492" height="68" rx="12" fill="#FAF7F0" stroke="#172228" stroke-opacity="0.08" />
+    <text x="664" y="331" font-family="Plus Jakarta Sans, system-ui, sans-serif" font-size="13.5" font-weight="700" fill="#111827">2. Plain A4 Signing Abroad with 2 Witnesses (Section 63 ISA)</text>
+    <text x="664" y="353" font-family="Plus Jakarta Sans, system-ui, sans-serif" font-size="12.5" fill="#49585F">Valid on plain paper with 2 witnesses abroad; zero Indian stamp duty required.</text>
+
+    <!-- Step 3 -->
+    <rect x="644" y="388" width="492" height="68" rx="12" fill="#FAF7F0" stroke="#172228" stroke-opacity="0.08" />
+    <text x="664" y="413" font-family="Plus Jakarta Sans, system-ui, sans-serif" font-size="13.5" font-weight="700" fill="#111827">3. Direct Indian Execution &amp; FEMA USD 1M Repatriation</text>
+    <text x="664" y="435" font-family="Plus Jakarta Sans, system-ui, sans-serif" font-size="12.5" fill="#49585F">Indian Executor mutates property &amp; remits up to USD 1M/yr via Form 15CA/15CB.</text>
+
+    <!-- Outcome Box -->
+    <rect x="644" y="472" width="492" height="78" rx="12" fill="#ECFDF5" stroke="#A7F3D0" />
+    <text x="664" y="499" font-family="Plus Jakarta Sans, system-ui, sans-serif" font-size="13.5" font-weight="700" fill="#065F46">Result: Parallel Administration &amp; Zero Foreign Probate Wait</text>
+    <text x="664" y="521" font-family="Plus Jakarta Sans, system-ui, sans-serif" font-size="12.5" fill="#047857">Both your overseas estate and Indian estate settle simultaneously without friction.</text>
+    <text x="664" y="539" font-family="Plus Jakarta Sans, system-ui, sans-serif" font-size="12" font-weight="600" fill="#065F46">Compliant with Indian Succession Act 1925, Hindu Succession Act &amp; FEMA 1999.</text>
+  </g>
+
+  <!-- Footer Attribution -->
+  <text x="40" y="610" font-family="Plus Jakarta Sans, system-ui, sans-serif" font-size="12" font-weight="600" fill="#55636D">Prepared by WillDrafting Editorial Team · Powered by AMA Legal Solutions (https://www.willdrafting.in/nri-will-india)</text>
+  <text x="1160" y="610" font-family="Plus Jakarta Sans, system-ui, sans-serif" font-size="12" font-weight="700" fill="#C65378" text-anchor="end">Section 5, 63 &amp; 228 ISA 1925 · FEMA Non-Debt Rules</text>
+</svg>
