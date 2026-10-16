@@ -71,6 +71,30 @@ const faqs: FAQItem[] = [
     answer:
       "Simply print the downloaded PDF on plain A4 paper, sign it in the presence of two adult witnesses (who are not beneficiaries in your Will), and have both witnesses sign alongside you. Your Will is immediately valid, and you can also register it at your local Sub-Registrar's office if you wish.",
   },
+  {
+    id: 11,
+    question: "Can NRIs and OCIs living in the US, UK, UAE, Canada, or Australia draft a valid Will for Indian property?",
+    answer:
+      "Yes. NRIs and OCIs holding residential or commercial real estate, NRE/NRO/FCNR bank accounts, mutual funds, or Demat portfolios in India should maintain a separate Indian Will under the Two-Will Strategy. This avoids 12 to 18 months of foreign probate re-sealing delays under Section 228 of the Indian Succession Act, 1925 and streamlines FEMA repatriation.",
+  },
+  {
+    id: 12,
+    question: "I already added a nominee on my bank account, mutual funds, and Demat account. Do I still need a Will?",
+    answer:
+      "Yes. As reaffirmed by the Supreme Court of India in Sarbati Devi and Shakti Yezdani (2023), a bank, insurance, or Demat nominee is only a provisional trustee (custodian) who receives the asset for discharge of institutional liability—not the legal owner. Only a valid Will legally transfers permanent ownership to your chosen beneficiaries.",
+  },
+  {
+    id: 13,
+    question: "Does WillDrafting.in support Hindu, Muslim (Wasiyat), Christian, and Parsi succession laws in India?",
+    answer:
+      "Yes. Our legal-tech drafting engine and AMA Legal Solutions advocates structure Wills compliant with the Hindu Succession Act, 1956 (for Hindus, Buddhists, Sikhs, and Jains), Muslim Personal Law Shariat Wasiyat rules (including the 1/3rd testamentary limit), and the Indian Succession Act, 1925 (for Christians, Parsis, and inter-faith marriages under the Special Marriage Act).",
+  },
+  {
+    id: 14,
+    question: "Is Will registration or Probate mandatory in India (including Mumbai, Chennai, and Kolkata)?",
+    answer:
+      "Under Section 18(e) of the Registration Act, 1908, registering a Will is completely optional across India—an unregistered Will signed before two witnesses on plain paper is 100% legally valid. Furthermore, following the Repealing and Amending Act, 2025 (omitting Section 213 of the Indian Succession Act), compulsory High Court probate in Mumbai, Chennai, and Kolkata is no longer a statutory bar for uncontested Wills.",
+  },
 ];
 
 export default function FAQ() {

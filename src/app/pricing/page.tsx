@@ -5,16 +5,33 @@ import Footer from "@/components/Footer";
 import styles from "./pricing.module.css";
 
 export const metadata: Metadata = {
-  title: "Will Drafting Plans & Feature Pricing",
+  title: "Will Drafting Charges in India — Transparent Online Will & Lawyer Fees",
   description:
-    "Explore transparent Will drafting plans under Indian succession law. Download court-ready printouts in minutes with free revisions and zero hidden fees.",
+    "Compare transparent Will drafting charges in India: ₹2,490 Essential Online Will, ₹4,990 Lawyer-Verified Will & ₹9,990 Senior Advocate Consultation. One-time fixed cost of making a Will in India with zero hidden lawyer fees.",
+  keywords: [
+    "will drafting charges in india",
+    "cost of making a will in india",
+    "lawyer fees for will drafting in india",
+    "online will making cost india",
+    "how much does a lawyer charge to make a will in india",
+    "affordable online will india",
+    "fixed price will drafting india",
+    "will registration cost and lawyer fees india",
+    "will writing cost india",
+    "nri will drafting charges india",
+    "online will price india",
+    "lawyer verified will cost india",
+    "testamentary will drafting fees india",
+    "ama legal solutions will pricing",
+    "one time fee online will india",
+  ],
   alternates: {
     canonical: "https://www.willdrafting.in/pricing",
   },
   openGraph: {
-    title: "Will Drafting Plans & Feature Pricing | WillDrafting.in",
+    title: "Will Drafting Charges in India — Transparent Online Will & Lawyer Fees | WillDrafting.in",
     description:
-      "Explore transparent Will drafting plans under Indian succession law. Download court-ready printouts in minutes with free revisions and zero hidden fees.",
+      "Compare transparent Will drafting charges in India: ₹2,490 Essential Online Will, ₹4,990 Lawyer-Verified Will & ₹9,990 Senior Advocate Consultation. One-time fixed cost with zero hidden fees.",
     url: "https://www.willdrafting.in/pricing",
     siteName: "WillDrafting.in",
     locale: "en_IN",
@@ -24,15 +41,15 @@ export const metadata: Metadata = {
         url: "/desktopusp.jpg",
         width: 1200,
         height: 630,
-        alt: "WillDrafting.in Pricing & Plans - Transparent Estate Planning",
+        alt: "WillDrafting.in Pricing & Will Drafting Charges in India",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Will Drafting Plans & Feature Pricing | WillDrafting.in",
+    title: "Will Drafting Charges in India — Transparent Online Will & Lawyer Fees | WillDrafting.in",
     description:
-      "Explore transparent Will drafting plans under Indian succession law. Download court-ready printouts in minutes with free revisions and zero hidden fees.",
+      "Compare transparent Will drafting charges in India: ₹2,490 Essential Online Will, ₹4,990 Lawyer-Verified Will & ₹9,990 Senior Advocate Consultation. One-time fixed cost with zero hidden fees.",
     images: ["/desktopusp.jpg"],
   },
   robots: {
@@ -51,11 +68,51 @@ const JSON_LD = {
       "@type": "Product",
       "@id": "https://www.willdrafting.in/pricing#product",
       "name": "Legal Will Drafting Service India",
+      "image": "https://www.willdrafting.in/desktopusp.jpg",
       "description":
         "Statutory personal testamentary will drafting service compliant with Indian legal standards. Features comprehensive asset distribution, executor appointments, minor guardianship clauses, doctor certification template, and dual-witness attestation instructions.",
       "brand": {
         "@type": "Brand",
         "name": "WillDrafting.in",
+      },
+      "offers": {
+        "@type": "AggregateOffer",
+        "priceCurrency": "INR",
+        "lowPrice": "2490",
+        "highPrice": "9990",
+        "offerCount": 3,
+        "offers": [
+          {
+            "@type": "Offer",
+            "name": "Essential Online Will Plan",
+            "price": "2490",
+            "priceCurrency": "INR",
+            "availability": "https://schema.org/InStock",
+            "url": "https://www.willdrafting.in/pricing",
+            "description":
+              "Self-service court-ready Indian Will PDF under Section 63 of the Indian Succession Act with unlimited edits.",
+          },
+          {
+            "@type": "Offer",
+            "name": "Lawyer Verified Will Plan",
+            "price": "4990",
+            "priceCurrency": "INR",
+            "availability": "https://schema.org/InStock",
+            "url": "https://www.willdrafting.in/pricing",
+            "description":
+              "Online Will drafted and manually verified by an Indian succession advocate at AMA Legal Solutions within 24 hours.",
+          },
+          {
+            "@type": "Offer",
+            "name": "Connect to Lawyer (Bespoke & NRI Estate Plan)",
+            "price": "9990",
+            "priceCurrency": "INR",
+            "availability": "https://schema.org/InStock",
+            "url": "https://www.willdrafting.in/pricing",
+            "description":
+              "1-on-1 senior advocate consultation, bespoke clause drafting for complex/NRI/ancestral estates, and registration guidance.",
+          },
+        ],
       },
     },
     {
@@ -361,14 +418,13 @@ export default function PricingPage() {
         <section className={styles.heroSection}>
           <div className="container">
             <div className={styles.heroContent}>
-              <span className={styles.heroEyebrow}>Statutory Estate Planning</span>
+              <span className={styles.heroEyebrow}>Statutory Estate Planning · AMA Legal Solutions</span>
               {/* Single strict H1 (<70 chars) */}
               <h1 className={styles.heroTitle}>
-                Transparent, One-Time Will Drafting Pricing in India
+                Transparent Will Drafting Charges &amp; Plans in India
               </h1>
               <p className={styles.heroSubtitle}>
-                Draft a legally binding, court-vetted Will under Indian succession laws.
-                No recurring retainers, no advocate markups, and lifetime free revisions.
+                Compare the fixed, one-time cost of making a Will in India under the Indian Succession Act, 1925—from ₹2,490 (Auto-Verified Online Will) and ₹4,990 (Lawyer-Verified Will) to ₹9,990 (1-on-1 Senior Advocate Consultation). Zero recurring retainers and free lifetime revisions.
               </p>
             </div>
           </div>
@@ -382,11 +438,11 @@ export default function PricingPage() {
                 <div className={styles.planHeaderLeft}>
                   <h2 className={styles.planName}>Complete Personal Testamentary Will</h2>
                   <p className={styles.planTagline}>
-                    Comprehensive personal succession plan covering all immovable, movable, and financial holdings across India.
+                    Comprehensive personal succession plan covering all immovable, movable, and NRE/NRO financial holdings across India.
                   </p>
                 </div>
                 <div className={styles.planHeaderRight}>
-                  <div className={styles.planPrice}>Transparent &amp; Affordable</div>
+                  <div className={styles.planPrice}>₹2,490 – ₹9,990</div>
                   <div className={styles.planBillingType}>flat one-time fee · zero subscriptions</div>
                 </div>
               </div>

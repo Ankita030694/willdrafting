@@ -10,16 +10,40 @@ import Process from "@/components/process";
 import { ArrowUpRight } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Online Will Drafting & Registration Help",
+  title: "Online Will Writing Services in India — Lawyer-Verified Will & Estate Planning",
   description:
-    "Fast online Will drafting in minutes, instant court-ready printouts, legal verification by Indian advocates, and hassle-free registration guidance.",
+    "Professional online Will writing services in India under the Indian Succession Act, 1925 & Hindu Succession Act, 1956. Get a court-ready Will printout, High Court advocate verification & registration assistance.",
+  keywords: [
+    "will writing services in india",
+    "lawyer verified will online india",
+    "online will drafting services india",
+    "estate planning services in india",
+    "will under indian succession act 1925",
+    "advocate reviewed will india",
+    "estate planning lawyers in india",
+    "personal law will drafting india",
+    "hindu succession act 1956 will rules",
+    "muslim will wasiyat 1/3 rule india",
+    "christian will drafting india",
+    "parsi will succession india",
+    "special marriage act will rules india",
+    "court ready will printout india",
+    "will registration assistance india",
+    "nri will writing services india",
+    "online will consultation india",
+    "testamentary succession india",
+    "ama legal solutions estate planning",
+    "executors and guardians in will india",
+    "self acquired vs ancestral property will",
+    "sub registrar will registration help",
+  ],
   alternates: {
     canonical: "https://www.willdrafting.in/service",
   },
   openGraph: {
-    title: "Online Will Drafting & Registration Help | WillDrafting.in",
+    title: "Online Will Writing Services in India — Lawyer-Verified Will & Estate Planning | WillDrafting.in",
     description:
-      "Fast online Will drafting in minutes, instant court-ready printouts, legal verification by Indian advocates, and hassle-free registration guidance.",
+      "Professional online Will writing services in India under the Indian Succession Act, 1925 & Hindu Succession Act, 1956. Get a court-ready Will printout, High Court advocate verification & registration assistance.",
     url: "https://www.willdrafting.in/service",
     siteName: "WillDrafting.in",
     locale: "en_IN",
@@ -29,15 +53,15 @@ export const metadata: Metadata = {
         url: "/desktopusp.jpg",
         width: 1200,
         height: 630,
-        alt: "Online Will Drafting & Registration Services in India",
+        alt: "Online Will Writing & Estate Planning Services in India",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Online Will Drafting & Registration Help | WillDrafting.in",
+    title: "Online Will Writing Services in India — Lawyer-Verified Will & Estate Planning | WillDrafting.in",
     description:
-      "Fast online Will drafting in minutes, instant court-ready printouts, legal verification by Indian advocates, and hassle-free registration guidance.",
+      "Professional online Will writing services in India under the Indian Succession Act, 1925 & Hindu Succession Act, 1956. Get a court-ready Will printout, High Court advocate verification & registration assistance.",
     images: ["/desktopusp.jpg"],
   },
   robots: {
@@ -55,26 +79,55 @@ const SERVICE_SCHEMA = {
     {
       "@type": "Service",
       "@id": "https://www.willdrafting.in/service#service",
-      "name": "Online Will Drafting & Registration Guidance",
+      "name": "Online Will Writing, Lawyer Verification & Estate Planning Services in India",
       "serviceType": "Legal Will Preparation & Estate Succession",
       "provider": {
         "@id": "https://www.willdrafting.in/#legalservice",
       },
-      "areaServed": {
-        "@type": "Country",
-        "name": "India",
-      },
+      "areaServed": [
+        { "@type": "Country", "name": "India" },
+        { "@type": "Country", "name": "United States" },
+        { "@type": "Country", "name": "United Kingdom" },
+        { "@type": "Country", "name": "United Arab Emirates" },
+        { "@type": "Country", "name": "Canada" },
+        { "@type": "Country", "name": "Australia" },
+        { "@type": "Country", "name": "Singapore" },
+      ],
       "hasOfferCatalog": {
         "@type": "OfferCatalog",
-        "name": "Will Drafting Services",
+        "name": "Indian Will Drafting & Estate Planning Services",
         "itemListElement": [
           {
             "@type": "Offer",
+            "price": "2490",
+            "priceCurrency": "INR",
             "itemOffered": {
               "@type": "Service",
-              "name": "Online Legal Will Drafting (Court-Ready Printout)",
+              "name": "Auto-Verified Online Will Drafting (Essential Plan)",
               "description":
-                "Create a legally binding, lawyer-verified Will online in minutes with instant court-ready PDF download.",
+                "Create a legally binding Will online in minutes under Section 63 of the Indian Succession Act, 1925 with instant court-ready PDF download.",
+            },
+          },
+          {
+            "@type": "Offer",
+            "price": "4990",
+            "priceCurrency": "INR",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Lawyer-Verified Online Will (Advocate Reviewed)",
+              "description":
+                "Line-by-line legal review and verification of your Will by a High Court succession advocate at AMA Legal Solutions.",
+            },
+          },
+          {
+            "@type": "Offer",
+            "price": "9990",
+            "priceCurrency": "INR",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "1-on-1 Advocate Consultation & NRI / Complex Estate Will",
+              "description":
+                "Dedicated advocate call, bespoke clauses for NRI/OCI Indian assets, HUF/coparcenary shares, and Sub-Registrar registration guidance.",
             },
           },
         ],
@@ -112,9 +165,9 @@ interface ServiceCard {
 
 const services: ServiceCard[] = [
   {
-    title: "Online Will Drafting",
+    title: "Online Will Drafting & Lawyer Review",
     description:
-      "Create a professionally structured legal Will online from the comfort of your home. Clearly document your wishes, protect your assets, provide for your family and children, and have your Will reviewed by WillDrafting Law.",
+      "Create a professionally structured legal Will online from the comfort of your home under the Indian Succession Act, 1925. Clearly document your wishes, allocate immovable and financial assets, appoint guardians for minor children, and have your Will verified by AMA Legal Solutions.",
     linkText: "Write your Will",
     linkHref: "/contact",
     illustrationSrc: "/new1servcie.png",
@@ -122,10 +175,56 @@ const services: ServiceCard[] = [
   {
     title: "Coming Soon",
     description:
-      "Power of Attorney and additional estate planning services in India are coming soon, giving you more ways to plan, manage and protect your family's legal and financial interests.",
+      "Power of Attorney, Private Family Trusts, and additional estate planning services in India are coming soon, giving Resident Indians and NRIs more ways to protect their family's legal and financial interests.",
     linkText: "Coming Soon",
     isComingSoon: true,
     illustrationSrc: "/comingsoon.png",
+  },
+];
+
+interface PersonalLawRow {
+  community: string;
+  governingStatute: string;
+  testamentaryLimit: string;
+  executionRules: string;
+  keyPlanningNote: string;
+}
+
+const PERSONAL_LAW_MATRIX: PersonalLawRow[] = [
+  {
+    community: "Hindu, Buddhist, Sikh & Jain (Male & Female)",
+    governingStatute: "Hindu Succession Act, 1956 (Sections 6, 8, 15 & 30) read with Indian Succession Act, 1925",
+    testamentaryLimit: "100% of self-acquired property + your undivided share in HUF / ancestral coparcenary property (Section 30)",
+    executionRules: "Signed on plain A4 paper in the simultaneous presence of 2 independent adult witnesses (Section 63 ISA)",
+    keyPlanningNote: "For married Hindu women, Section 15 creates distinct intestate rules based on source of property—making a written Will critical to protect your parents or children.",
+  },
+  {
+    community: "Muslim Personal Law (Sunni & Shia — Wasiyat)",
+    governingStatute: "Muslim Personal Law (Shariat) Application Act, 1937",
+    testamentaryLimit: "Up to 1/3rd (one-third) of net estate after funeral expenses and debts without heir consent",
+    executionRules: "Written Wasiyat attested by two adult witnesses recommended for bank, Demat & municipal mutation clarity",
+    keyPlanningNote: "Bequests exceeding 1/3rd of the estate (or to an existing legal heir under Sunni law) require the express consent of surviving legal heirs after the testator's demise.",
+  },
+  {
+    community: "Christian & Parsi Testators",
+    governingStatute: "Indian Succession Act, 1925 (Part V Sections 31–49 for Christians; Part VI Sections 50–56 for Parsis)",
+    testamentaryLimit: "100% testamentary freedom over all self-acquired movable and immovable assets",
+    executionRules: "Mandatory written Will signed by testator and attested by at least 2 independent witnesses (Section 63 ISA)",
+    keyPlanningNote: "Under Section 67 of the Indian Succession Act, never ask a beneficiary or their spouse to sign as an attesting witness, or their specific bequest becomes void.",
+  },
+  {
+    community: "Inter-Faith & Civil Marriages",
+    governingStatute: "Special Marriage Act, 1954 (Section 21) read with Indian Succession Act, 1925",
+    testamentaryLimit: "100% testamentary freedom over owned estate",
+    executionRules: "Standard Section 63 two-witness execution on plain paper; optional registration under Section 18 Registration Act",
+    keyPlanningNote: "Registering a marriage under the Special Marriage Act shifts succession to the Indian Succession Act, 1925 (with exceptions for two Hindus under Section 21A).",
+  },
+  {
+    community: "NRIs & OCIs Living Abroad (US, UK, UAE, Canada, AU, SG)",
+    governingStatute: "Indian Succession Act, 1925 (Sections 5, 63 & 228) + FEMA (Non-Debt Instruments) Rules, 2019",
+    testamentaryLimit: "100% of Indian residential/commercial property, NRE/NRO/FCNR bank accounts, mutual funds & Demat shares",
+    executionRules: "Separate Indian Will ('Two-Will Strategy') signed before 2 witnesses with an explicit non-revocation territorial clause",
+    keyPlanningNote: "Avoids 12–18 months of foreign probate re-sealing under Section 228 ISA and simplifies Form 15CA/15CB repatriation up to USD 1M/year.",
   },
 ];
 
@@ -145,15 +244,15 @@ export default function ServicePage() {
         <section className="w-full mb-16 sm:mb-20">
           <div className="mb-8 sm:mb-12 max-w-[1200px]">
             <div className="inline-flex items-center text-[#C65378] text-[0.75rem] font-bold tracking-[0.16em] uppercase mb-4 sm:mb-5">
-              <span>Will Drafting Services</span>
+              <span>Online Will Writing &amp; Estate Planning Services in India</span>
             </div>
 
             <h1 className="text-[2rem] sm:text-[2.2rem] lg:text-[3.4rem] font-medium leading-[1.08] tracking-[-0.025em] text-[#111827] mb-4 sm:mb-5">
               Protect What You’ve Built. <br /> Secure Who You Leave Behind.
             </h1>
 
-            <p className="text-[1.05rem] sm:text-[1.18rem] leading-[1.65] text-[#49585F] font-normal max-w-[720px]">
-              <span className="font-bold">Lawyer-drafted Wills, estate planning and succession solutions tailored to your family, assets and wishes. Ensure your property, investments, business interests and beneficiaries</span> are clearly protected through a legally sound Will under applicable Indian succession laws.
+            <p className="text-[1.05rem] sm:text-[1.18rem] leading-[1.65] text-[#49585F] font-normal max-w-[760px]">
+              <span className="font-bold">Lawyer-verified online Wills, estate planning, and succession solutions in India tailored to your personal law, family, and assets.</span> Ensure your residential property, NRE/NRO bank accounts, Demat investments, and minor children are protected through a court-ready Will printout under the Indian Succession Act, 1925 and Hindu Succession Act, 1956.
             </p>
           </div>
         </section>
@@ -173,9 +272,9 @@ export default function ServicePage() {
                     <Image
                       src={service.illustrationSrc}
                       alt={
-                        service.title === "Online Will Drafting"
-                          ? "Online Will Drafting under Indian Law"
-                          : "Estate planning and Power of Attorney services coming soon"
+                        !service.isComingSoon
+                          ? "Online Will Writing and Lawyer-Verified Will Drafting under Indian Law"
+                          : "Estate planning and Power of Attorney services in India coming soon"
                       }
                       fill
                       priority
@@ -213,6 +312,60 @@ export default function ServicePage() {
                 </div>
               </div>
             ))}
+          </div>
+        </section>
+
+        {/* =========================================================================
+            INDIAN PERSONAL LAW & TESTAMENTARY SUCCESSION MATRIX
+            ========================================================================= */}
+        <section className="w-full mb-16 sm:mb-24">
+          <div className="mb-8 sm:mb-12 max-w-3xl">
+            <div className="inline-flex items-center text-[#C65378] text-[0.75rem] font-bold tracking-[0.16em] uppercase mb-3">
+              <span>Indian Personal Law Coverage</span>
+            </div>
+            <h2 className="text-[1.85rem] sm:text-[2.4rem] lg:text-[2.85rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-4">
+              How Will Drafting Works Across Every Personal Law in India
+            </h2>
+            <p className="text-[0.98rem] sm:text-[1.06rem] leading-[1.65] text-[#49585F]">
+              Succession and testamentary limits in India depend on the personal law governing the testator and the location of the assets. Our platform and advocates at <span className="font-semibold text-[#111827]">AMA Legal Solutions</span> structure your Will in strict compliance with your governing statute:
+            </p>
+          </div>
+
+          <div className="w-full rounded-[24px] bg-white border border-[#172228]/10 shadow-[0_4px_24px_rgba(0,0,0,0.03)] overflow-hidden">
+            <div className="overflow-x-auto">
+              <table className="w-full text-left border-collapse min-w-[820px]">
+                <thead>
+                  <tr className="bg-[#FAF7F0] border-b border-[#172228]/10 text-[11px] font-bold uppercase tracking-[0.14em] text-[#55636D]">
+                    <th className="py-4 px-6 w-[20%]">Community / Category</th>
+                    <th className="py-4 px-6 w-[22%]">Governing Indian Statute</th>
+                    <th className="py-4 px-6 w-[20%]">What Can Be Willed</th>
+                    <th className="py-4 px-6 w-[18%]">Execution &amp; Witness Rule</th>
+                    <th className="py-4 px-6 w-[20%]">Critical Legal Note</th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-[#172228]/10 text-[14px] leading-[1.6] text-[#374151]">
+                  {PERSONAL_LAW_MATRIX.map((row, idx) => (
+                    <tr key={idx} className="hover:bg-[#FAF7F0]/50 transition-colors align-top">
+                      <td className="py-5 px-6 font-semibold text-[#111827]">
+                        {row.community}
+                      </td>
+                      <td className="py-5 px-6 text-[#49585F]">
+                        {row.governingStatute}
+                      </td>
+                      <td className="py-5 px-6 text-[#172228] font-medium">
+                        {row.testamentaryLimit}
+                      </td>
+                      <td className="py-5 px-6 text-[#49585F]">
+                        {row.executionRules}
+                      </td>
+                      <td className="py-5 px-6 text-[#49585F] text-[13.5px]">
+                        {row.keyPlanningNote}
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
           </div>
         </section>
 

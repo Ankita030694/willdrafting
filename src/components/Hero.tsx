@@ -47,6 +47,10 @@ export default function Hero() {
               margin: "auto 0",
             }}
           >
+            <span className="text-[0.7rem] sm:text-xs font-bold tracking-[0.18em] uppercase text-[#C65378] mb-2.5 sm:mb-3">
+              Online Will Maker India · Resident &amp; NRI Estates
+            </span>
+
             <h1
               className="text-[2.2rem] sm:text-[3rem] lg:text-[3.4rem] font-medium leading-[1.08] tracking-[-0.025em] text-[#172228] mb-4 sm:mb-6"
             >
@@ -54,9 +58,9 @@ export default function Hero() {
             </h1>
 
             <p
-              className="text-[0.84rem] sm:text-[0.9rem] leading-[1.6] text-[#49585F] font-normal max-w-[460px] mb-8"
+              className="text-[0.84rem] sm:text-[0.9rem] leading-[1.6] text-[#49585F] font-normal max-w-[480px] mb-8"
             >
-              Create your Will online in simple steps. Answer guided questions about your family, assets and beneficiaries, and our legal-tech platform helps structure your Will for professional legal review.
+              Make a legally valid Will online in India in minutes under the Indian Succession Act, 1925. Answer simple guided questions in English or Hindi, get an instant court-ready Will PDF, and have your estate plan verified by our legal team.
             </p>
 
             {/* CTA Buttons */}

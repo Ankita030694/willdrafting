@@ -80,17 +80,17 @@ export default function Pricing() {
           {/* Eyebrow badge */}
           <div className="flex items-center gap-2 mb-4">
             <span className="text-[0.75rem] font-bold tracking-[0.16em] uppercase text-[#C65378] bg-[#C65378]/10 px-3.5 py-1 rounded-full">
-              Transparent Legal Plans
+              Transparent Will Drafting Charges in India
             </span>
           </div>
 
           {/* Main Title */}
           <h2 className="text-[2.2rem] sm:text-[3rem] lg:text-[3.4rem] font-medium text-[#172228] leading-[1.08] tracking-tight mb-4">
-            Choose The Right Plan For Your Family & Estate.
+            Choose The Right Plan For Your Family &amp; Estate.
           </h2>
 
           <p className="text-[1rem] sm:text-[1.1rem] text-[#55636D] leading-relaxed max-w-2xl">
-            Pick a tier tailored to your unique requirements. Upgrade seamlessly anytime your family or assets evolve.
+            Clear, fixed-price online Will making cost in India with zero hidden lawyer fees. Pick a one-time plan tailored to your estate and upgrade seamlessly anytime your family or assets evolve.
           </p>
         </div>
 

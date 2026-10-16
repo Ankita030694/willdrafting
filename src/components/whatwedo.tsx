@@ -63,7 +63,7 @@ export default function WhatWeDo() {
           {/* Eyebrow with leading rule */}
           <div className="flex items-center gap-3 mb-4 text-left">
             <span className="text-xs font-bold tracking-[0.16em] uppercase text-[#C65378]">
-              Estate Planning
+              Online Will Drafting &amp; Estate Planning India
             </span>
           </div>
 
@@ -73,8 +73,8 @@ export default function WhatWeDo() {
           </h2>
 
           {/* Subheading / Description */}
-          <p className="text-[1.05rem] sm:text-[1.15rem] leading-[1.65] text-[#49585F] font-normal max-w-[640px]">
-            Create a professionally structured <span className="font-bold">legal Will online</span> from the comfort of your home. Clearly document your wishes, protect your assets, provide for your family and children, and have your Will reviewed by WillDrafting Law.
+          <p className="text-[1.05rem] sm:text-[1.15rem] leading-[1.65] text-[#49585F] font-normal max-w-[680px]">
+            Create a professionally structured, <span className="font-bold">legally valid online Will in India</span> from the comfort of your home. Whether you are a Resident Indian or an NRI/OCI abroad, our bilingual (English &amp; Hindi) online Will generator structures your estate under the Indian Succession Act, 1925, Hindu Succession Act, 1956, and Muslim Personal Law (Wasiyat)—backed by AMA Legal Solutions.
           </p>
         </div>
 
