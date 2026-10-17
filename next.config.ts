@@ -20,6 +20,21 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       {
+        source: "/nri-will-india",
+        destination: "/service/nri-will-india",
+        permanent: true,
+      },
+      {
+        source: "/succession-calculator",
+        destination: "/tools/succession-calculator",
+        permanent: true,
+      },
+      {
+        source: "/hindu-succession-calculator",
+        destination: "/tools/succession-calculator",
+        permanent: true,
+      },
+      {
         source: "/blogs/what-an-adjuster-is-doing-when-they-call",
         destination: "/blogs",
         permanent: true,

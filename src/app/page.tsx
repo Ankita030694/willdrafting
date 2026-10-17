@@ -17,10 +17,10 @@ import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Online Will Maker India — Legally Valid Online Will Drafting in Minutes | WillDrafting.in",
+    absolute: "Online Will Maker India | Lawyer-Verified Will Drafting",
   },
   description:
-    "Create a legally valid Will online in India in minutes under the Indian Succession Act, 1925. Powered by AMA Legal Solutions — bilingual English & Hindi Will maker for Resident Indians & NRIs with instant court-ready PDF.",
+    "Create a legally valid Will online in India in minutes under Section 63 of the Indian Succession Act, 1925. Powered by AMA Legal Solutions.",
   keywords: [
     "online will maker india",
     "online will drafting india",

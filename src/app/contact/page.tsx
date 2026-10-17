@@ -7,9 +7,11 @@ import ContactForm from "@/components/ContactForm";
 import { Mail, MapPin } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Will Drafting Legal Consultation India — Contact Estate Planning Lawyers",
+  title: {
+    absolute: "Will Drafting Legal Consultation India | Contact Lawyers",
+  },
   description:
-    "Book a confidential Will drafting legal consultation in India with AMA Legal Solutions. Get expert estate planning, NRI Will, HUF coparcenary, and Sub-Registrar registration assistance.",
+    "Book a confidential Will drafting legal consultation in India with AMA Legal Solutions for NRI Wills, HUF shares, and Sub-Registrar registration.",
   keywords: [
     "will drafting legal consultation india",
     "estate planning lawyer contact india",

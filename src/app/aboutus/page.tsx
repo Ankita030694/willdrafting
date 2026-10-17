@@ -9,9 +9,11 @@ import CTA from "@/components/cta";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "About Us — Will Drafting Law Firm & Estate Planning Advocates in India",
+  title: {
+    absolute: "About Us | Estate Planning Advocates & AMA Legal Solutions",
+  },
   description:
-    "Powered by AMA Legal Solutions: Meet the estate planning advocates behind WillDrafting.in helping Resident Indians and NRIs draft lawyer-verified Wills under Indian succession law.",
+    "Powered by AMA Legal Solutions: Meet the estate planning advocates helping Resident Indians & NRIs draft legally valid Wills under Indian law.",
   keywords: [
     "will drafting law firm india",
     "ama legal solutions will drafting",

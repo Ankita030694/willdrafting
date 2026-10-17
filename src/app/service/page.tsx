@@ -10,9 +10,11 @@ import Process from "@/components/process";
 import { ArrowUpRight } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Online Will Writing Services in India — Lawyer-Verified Will & Estate Planning",
+  title: {
+    absolute: "Online Will Writing Services in India | WillDrafting.in",
+  },
   description:
-    "Professional online Will writing services in India under the Indian Succession Act, 1925 & Hindu Succession Act, 1956. Get a court-ready Will printout, High Court advocate verification & registration assistance.",
+    "Professional online Will writing services in India under the Indian Succession Act 1925 & Hindu Succession Act 1956 with High Court advocate review.",
   keywords: [
     "will writing services in india",
     "lawyer verified will online india",
@@ -365,6 +367,54 @@ export default function ServicePage() {
                   ))}
                 </tbody>
               </table>
+            </div>
+          </div>
+
+          <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="rounded-[24px] bg-white border border-[#172228]/10 p-6 sm:p-8 flex flex-col justify-between gap-6 shadow-[0_4px_24px_rgba(0,0,0,0.03)]">
+              <div>
+                <span className="inline-block text-[11px] font-bold uppercase tracking-[0.16em] text-[#C65378] mb-1.5">
+                  Specialized Cross-Border Service Silo
+                </span>
+                <h3 className="text-lg sm:text-xl font-semibold text-[#111827] mb-2">
+                  Living Abroad in the USA, UK, UAE, Canada, Australia, or Singapore?
+                </h3>
+                <p className="text-sm text-[#49585F]">
+                  Explore our dedicated NRI &amp; OCI Indian Will Hub covering the Two-Will Strategy, Section 228 probate exemption, FEMA agricultural land inheritance, and NRE/NRO Form 15CA/15CB repatriation.
+                </p>
+              </div>
+              <div>
+                <Link
+                  href="/service/nri-will-india"
+                  className="inline-flex items-center justify-center gap-2 rounded-full bg-[#C65378] hover:bg-[#a83d5f] text-white text-xs sm:text-sm font-semibold px-6 py-3.5 transition-colors"
+                >
+                  <span>Explore NRI Will Drafting in India</span>
+                  <ArrowUpRight className="w-4 h-4" />
+                </Link>
+              </div>
+            </div>
+
+            <div className="rounded-[24px] bg-white border border-[#172228]/10 p-6 sm:p-8 flex flex-col justify-between gap-6 shadow-[0_4px_24px_rgba(0,0,0,0.03)]">
+              <div>
+                <span className="inline-block text-[11px] font-bold uppercase tracking-[0.16em] text-[#C65378] mb-1.5">
+                  Free Interactive Statutory Tool
+                </span>
+                <h3 className="text-lg sm:text-xl font-semibold text-[#111827] mb-2">
+                  Who Inherits Your Property If You Pass Away Without a Will?
+                </h3>
+                <p className="text-sm text-[#49585F]">
+                  Use our Indian Intestate Succession &amp; Nominee Conflict Calculator to see exact Class I legal heir shares under Hindu, Muslim, Christian, and Parsi law.
+                </p>
+              </div>
+              <div>
+                <Link
+                  href="/tools/succession-calculator"
+                  className="inline-flex items-center justify-center gap-2 rounded-full bg-[#172228] hover:bg-[#C65378] text-white text-xs sm:text-sm font-semibold px-6 py-3.5 transition-colors"
+                >
+                  <span>Launch Indian Succession Calculator</span>
+                  <ArrowUpRight className="w-4 h-4" />
+                </Link>
+              </div>
             </div>
           </div>
         </section>

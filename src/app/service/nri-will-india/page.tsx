@@ -47,13 +47,13 @@ export const metadata: Metadata = {
     "repatriation of inherited property by nri form 15ca 15cb",
   ],
   alternates: {
-    canonical: "https://www.willdrafting.in/nri-will-india",
+    canonical: "https://www.willdrafting.in/service/nri-will-india",
   },
   openGraph: {
     title: "NRI Will Drafting India | Online Will for Indian Assets",
     description:
       "Draft a legally valid Indian Will online for NRIs & OCIs. Protect Indian property, NRE/NRO accounts & Demat shares under the Indian Succession Act.",
-    url: "https://www.willdrafting.in/nri-will-india",
+    url: "https://www.willdrafting.in/service/nri-will-india",
     siteName: "WillDrafting.in",
     locale: "en_IN",
     type: "website",
@@ -122,13 +122,13 @@ const NRI_SCHEMA = {
   "@graph": [
     {
       "@type": "WebPage",
-      "@id": "https://www.willdrafting.in/nri-will-india#webpage",
-      "url": "https://www.willdrafting.in/nri-will-india",
+      "@id": "https://www.willdrafting.in/service/nri-will-india#webpage",
+      "url": "https://www.willdrafting.in/service/nri-will-india",
       "name": "NRI Will Drafting India | Online Will for Indian Assets",
       "description":
         "Draft a legally valid Indian Will online for NRIs & OCIs. Protect Indian property, NRE/NRO accounts & Demat shares under the Indian Succession Act.",
       "datePublished": "2026-10-16",
-      "dateModified": "2026-10-16",
+      "dateModified": "2026-10-17",
       "author": {
         "@type": "Organization",
         "name": "WillDrafting Editorial Team",
@@ -145,12 +145,12 @@ const NRI_SCHEMA = {
         "caption": "Single Foreign Will vs. The NRI Two-Will Strategy in India under Section 5, 63 & 228 of the Indian Succession Act, 1925",
       },
       "breadcrumb": {
-        "@id": "https://www.willdrafting.in/nri-will-india#breadcrumb",
+        "@id": "https://www.willdrafting.in/service/nri-will-india#breadcrumb",
       },
     },
     {
       "@type": "Service",
-      "@id": "https://www.willdrafting.in/nri-will-india#service",
+      "@id": "https://www.willdrafting.in/service/nri-will-india#service",
       "name": "NRI & OCI Online Will Drafting for Indian Property & Financial Assets",
       "serviceType": "Cross-Border Indian Estate Planning & Testamentary Will Drafting",
       "provider": {
@@ -201,7 +201,7 @@ const NRI_SCHEMA = {
     },
     {
       "@type": "HowTo",
-      "@id": "https://www.willdrafting.in/nri-will-india#howto",
+      "@id": "https://www.willdrafting.in/service/nri-will-india#howto",
       "name": "How NRIs Sign a Legally Valid Indian Will from Abroad",
       "description":
         "Four-step legal process for NRIs and OCIs in the USA, UK, UAE, Canada, Australia, and Singapore to execute a valid Will for Indian property without flying to India.",
@@ -235,7 +235,7 @@ const NRI_SCHEMA = {
     },
     {
       "@type": "FAQPage",
-      "@id": "https://www.willdrafting.in/nri-will-india#faq",
+      "@id": "https://www.willdrafting.in/service/nri-will-india#faq",
       "mainEntity": NRI_FAQS.map((item) => ({
         "@type": "Question",
         "name": item.q,
@@ -247,7 +247,7 @@ const NRI_SCHEMA = {
     },
     {
       "@type": "BreadcrumbList",
-      "@id": "https://www.willdrafting.in/nri-will-india#breadcrumb",
+      "@id": "https://www.willdrafting.in/service/nri-will-india#breadcrumb",
       "itemListElement": [
         {
           "@type": "ListItem",
@@ -258,8 +258,14 @@ const NRI_SCHEMA = {
         {
           "@type": "ListItem",
           "position": 2,
+          "name": "Services",
+          "item": "https://www.willdrafting.in/service",
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
           "name": "NRI Will Drafting India",
-          "item": "https://www.willdrafting.in/nri-will-india",
+          "item": "https://www.willdrafting.in/service/nri-will-india",
         },
       ],
     },
@@ -315,12 +321,16 @@ export default function NriWillIndiaPage() {
 
       <main className="flex-1 w-full max-w-8xl mx-auto px-5 sm:px-8 lg:px-12 pt-28 sm:pt-36 lg:pt-40 pb-24">
         {/* =========================================================================
-            BREADCRUMB & EDITORIAL AUTHOR ATTRIBUTION BAR
+            BREADCRUMB & EDITORIAL AUTHOR ATTRIBUTION BAR (3-Level Silo Hierarchy)
             ========================================================================= */}
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-6 mb-10 border-b border-[#172228]/10 text-xs text-[#55636D]">
           <nav aria-label="Breadcrumb" className="flex items-center gap-2">
             <Link href="/" className="hover:text-[#C65378] transition-colors font-medium">
               Home
+            </Link>
+            <span>/</span>
+            <Link href="/service" className="hover:text-[#C65378] transition-colors font-medium">
+              Services
             </Link>
             <span>/</span>
             <span aria-current="page" className="text-[#111827] font-semibold">
@@ -337,8 +347,8 @@ export default function NriWillIndiaPage() {
               Legally Verified by <strong className="text-[#111827]">AMA Legal Solutions</strong>
             </span>
             <span className="hidden sm:inline">·</span>
-            <time dateTime="2026-10-16" className="text-[#6B7280]">
-              Updated October 16, 2026
+            <time dateTime="2026-10-17" className="text-[#6B7280]">
+              Updated October 17, 2026
             </time>
           </div>
         </div>

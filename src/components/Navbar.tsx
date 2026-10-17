@@ -18,7 +18,17 @@ interface NavItem {
 const NAV_ITEMS: NavItem[] = [
   { label: "Home", href: "/" },
   { label: "About Us", href: "/aboutus" },
-  { label: "Services", href: "/service" },
+  {
+    label: "Services",
+    href: "/service",
+    hasDropdown: true,
+    dropdownItems: [
+      { label: "All Will Services", href: "/service" },
+      { label: "NRI & OCI Indian Will", href: "/service/nri-will-india" },
+      { label: "Succession Calculator", href: "/tools/succession-calculator" },
+    ],
+  },
+  { label: "Pricing", href: "/pricing" },
   { label: "Blogs", href: "/blogs" },
 ];
 
@@ -154,7 +164,7 @@ export default function Navbar() {
 
                   {/* Desktop Dropdown Menu */}
                   {dropdownOpen && (
-                    <div className="absolute left-1/2 top-full mt-2.5 w-44 -translate-x-1/2 rounded-2xl border border-white/80 bg-white/95 p-1.5 shadow-xl backdrop-blur-lg animate-in fade-in zoom-in-95 duration-150 z-50">
+                    <div className="absolute left-1/2 top-full mt-2.5 w-56 -translate-x-1/2 rounded-2xl border border-white/80 bg-white/95 p-1.5 shadow-xl backdrop-blur-lg animate-in fade-in zoom-in-95 duration-150 z-50">
                       {item.dropdownItems?.map((subItem) => (
                         <Link
                           key={subItem.label}

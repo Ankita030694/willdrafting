@@ -10,9 +10,11 @@ import { ArrowUpRight } from "lucide-react";
 import { BLOG_ARTICLES } from "@/data/blogs";
 
 export const metadata: Metadata = {
-  title: "Indian Succession Law Guides & Will Drafting Rules Blog",
+  title: {
+    absolute: "Indian Succession Law & Will Drafting Guides | WillDrafting",
+  },
   description:
-    "Authoritative guides on Indian succession law, Will drafting rules under the Indian Succession Act 1925, Hindu Succession Act 1956, Muslim Wasiyat, NRI estate planning & probate.",
+    "Authoritative guides on Indian succession law, Section 63 Will rules, Hindu Succession Act, Muslim Wasiyat, NRI estate planning, and Sub-Registrar fees.",
   keywords: [
     "indian succession law guides",
     "will drafting rules india blog",
@@ -29,9 +31,9 @@ export const metadata: Metadata = {
     canonical: "https://www.willdrafting.in/blogs",
   },
   openGraph: {
-    title: "Indian Succession Law Guides & Will Drafting Rules Blog | WillDrafting.in",
+    title: "Indian Succession Law & Will Drafting Guides | WillDrafting",
     description:
-      "Authoritative guides on Indian succession law, Will drafting rules under the Indian Succession Act 1925, Hindu Succession Act 1956, Muslim Wasiyat, NRI estate planning & probate.",
+      "Authoritative guides on Indian succession law, Section 63 Will rules, Hindu Succession Act, Muslim Wasiyat, NRI estate planning, and Sub-Registrar fees.",
     url: "https://www.willdrafting.in/blogs",
     siteName: "WillDrafting.in",
     locale: "en_IN",

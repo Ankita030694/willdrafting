@@ -5,7 +5,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://www.willdrafting.in";
   const now = new Date();
 
-  // Core Static Public Pages
+  // Core Static & Silo Hub Pages (8 Canonical Hub Routes)
   const staticRoutes: MetadataRoute.Sitemap = [
     {
       url: baseUrl,
@@ -23,10 +23,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: `${baseUrl}/service`,
       lastModified: now,
       changeFrequency: "monthly",
-      priority: 0.8,
+      priority: 0.9,
     },
     {
-      url: `${baseUrl}/nri-will-india`,
+      url: `${baseUrl}/service/nri-will-india`,
+      lastModified: now,
+      changeFrequency: "monthly",
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/tools/succession-calculator`,
       lastModified: now,
       changeFrequency: "monthly",
       priority: 0.9,
@@ -51,12 +57,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
   ];
 
-  // Dynamic Blog Post Pages
+  // 10 Canonical Statutory Pillar Blog Pages
   const blogRoutes: MetadataRoute.Sitemap = BLOG_ARTICLES.map((article) => ({
     url: `${baseUrl}/blogs/${article.slug}`,
     lastModified: new Date(article.date ? `${article.date} UTC` : now),
     changeFrequency: "monthly",
-    priority: 0.7,
+    priority: 0.8,
   }));
 
   return [...staticRoutes, ...blogRoutes];

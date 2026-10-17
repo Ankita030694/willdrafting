@@ -109,11 +109,11 @@ export default function Footer() {
           {/* Column 3: WILL SERVICES */}
           <div className="lg:col-span-3">
             <p className="text-[0.75rem] font-bold tracking-[0.16em] uppercase text-[#172228] mb-5">
-              Legal Solutions
+              Legal Solutions & Tools
             </p>
             <ul className="space-y-3.5 text-[0.90rem]">
               <li>
-                <Link href="/contact" className="hover:text-[#172228] transition-colors">
+                <Link href="/start" className="hover:text-[#172228] transition-colors">
                   Draft Online Will in Minutes
                 </Link>
               </li>
@@ -123,18 +123,18 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/pricing" className="hover:text-[#172228] transition-colors">
-                  Court-Ready PDF Printout
-                </Link>
-              </li>
-              <li>
-                <Link href="/contact" className="hover:text-[#172228] transition-colors">
-                  Will Registration Guidance
-                </Link>
-              </li>
-              <li>
-                <Link href="/nri-will-india" className="hover:text-[#172228] transition-colors">
+                <Link href="/service/nri-will-india" className="hover:text-[#172228] transition-colors">
                   NRI Will Drafting India
+                </Link>
+              </li>
+              <li>
+                <Link href="/tools/succession-calculator" className="hover:text-[#172228] transition-colors">
+                  Indian Succession Calculator
+                </Link>
+              </li>
+              <li>
+                <Link href="/blogs/how-to-register-will-in-india-state-sub-registrar-guide" className="hover:text-[#172228] transition-colors">
+                  State Sub-Registrar Guide
                 </Link>
               </li>
               <li>

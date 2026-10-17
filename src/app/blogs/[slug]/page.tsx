@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { ArrowLeft, ArrowUpRight, CheckCircle2, Star } from "lucide-react";
+import { ArrowLeft, ArrowUpRight, CheckCircle2, FileText, ShieldCheck, Star } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { BLOG_ARTICLES, getArticleBySlug, getRelatedArticles } from "@/data/blogs";
@@ -38,25 +38,23 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     };
   }
 
-  const metaDesc =
-    article.lead.length > 155
-      ? `${article.lead.slice(0, 152)}...`
-      : article.lead;
-
   const canonicalUrl = `https://www.willdrafting.in/blogs/${article.slug}`;
   const imageUrl = article.imageSrc.startsWith("http")
     ? article.imageSrc
     : `https://www.willdrafting.in${article.imageSrc.startsWith("/") ? "" : "/"}${article.imageSrc}`;
 
   return {
-    title: article.title,
-    description: metaDesc,
+    title: {
+      absolute: article.seoTitle,
+    },
+    description: article.metaDescription,
+    keywords: article.keywords,
     alternates: {
       canonical: canonicalUrl,
     },
     openGraph: {
-      title: `${article.title} | WillDrafting.in`,
-      description: metaDesc,
+      title: article.seoTitle,
+      description: article.metaDescription,
       url: canonicalUrl,
       siteName: "WillDrafting.in",
       locale: "en_IN",
@@ -74,8 +72,8 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     },
     twitter: {
       card: "summary_large_image",
-      title: `${article.title} | WillDrafting.in`,
-      description: metaDesc,
+      title: article.seoTitle,
+      description: article.metaDescription,
       images: [imageUrl],
     },
   };
@@ -94,56 +92,79 @@ export default async function BlogSlugPage({ params }: PageProps) {
     ? article.imageSrc
     : `https://www.willdrafting.in${article.imageSrc.startsWith("/") ? "" : "/"}${article.imageSrc}`;
 
+  const schemaGraph: Record<string, unknown>[] = [
+    {
+      "@type": "Article",
+      "@id": `${canonicalUrl}#article`,
+      "isPartOf": {
+        "@type": "WebPage",
+        "@id": canonicalUrl,
+      },
+      "headline": article.title,
+      "description": article.metaDescription,
+      "keywords": article.keywords.join(", "),
+      "image": imageUrl,
+      "datePublished": new Date(article.date).toISOString(),
+      "dateModified": new Date(article.date).toISOString(),
+      "mainEntityOfPage": canonicalUrl,
+      "author": {
+        "@type": article.author.includes("Team") ? "Organization" : "Person",
+        "name": article.author,
+        "jobTitle": article.authorRole,
+      },
+      "reviewedBy": {
+        "@type": "LegalService",
+        "name": "AMA Legal Solutions",
+        "url": "https://www.amalegalsolutions.com",
+      },
+      "publisher": {
+        "@id": "https://www.willdrafting.in/#organization",
+      },
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": `${canonicalUrl}#breadcrumb`,
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.willdrafting.in",
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blogs & Insights",
+          "item": "https://www.willdrafting.in/blogs",
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": article.title,
+          "item": canonicalUrl,
+        },
+      ],
+    },
+  ];
+
+  if (article.faqs && article.faqs.length > 0) {
+    schemaGraph.push({
+      "@type": "FAQPage",
+      "@id": `${canonicalUrl}#faq`,
+      "mainEntity": article.faqs.map((faq) => ({
+        "@type": "Question",
+        "name": faq.question,
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": faq.answer,
+        },
+      })),
+    });
+  }
+
   const articleSchema = {
     "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "Article",
-        "@id": `${canonicalUrl}#article`,
-        "isPartOf": {
-          "@type": "WebPage",
-          "@id": canonicalUrl,
-        },
-        "headline": article.title,
-        "description": article.lead,
-        "image": imageUrl,
-        "datePublished": new Date(article.date).toISOString(),
-        "dateModified": new Date(article.date).toISOString(),
-        "mainEntityOfPage": canonicalUrl,
-        "author": {
-          "@type": "Person",
-          "name": article.author,
-          "jobTitle": article.authorRole,
-        },
-        "publisher": {
-          "@id": "https://www.willdrafting.in/#organization",
-        },
-      },
-      {
-        "@type": "BreadcrumbList",
-        "@id": `${canonicalUrl}#breadcrumb`,
-        "itemListElement": [
-          {
-            "@type": "ListItem",
-            "position": 1,
-            "name": "Home",
-            "item": "https://www.willdrafting.in",
-          },
-          {
-            "@type": "ListItem",
-            "position": 2,
-            "name": "Blogs & Insights",
-            "item": "https://www.willdrafting.in/blogs",
-          },
-          {
-            "@type": "ListItem",
-            "position": 3,
-            "name": article.title,
-            "item": canonicalUrl,
-          },
-        ],
-      },
-    ],
+    "@graph": schemaGraph,
   };
 
   const relatedArticles = getRelatedArticles(article.slug, 3);
@@ -177,7 +198,7 @@ export default async function BlogSlugPage({ params }: PageProps) {
           </div>
 
           <div className="relative z-10 w-full flex-1 flex flex-col justify-between">
-            {/* Top Back Row with horizontal dividing rule matching screenshot */}
+            {/* Top Back Row with horizontal dividing rule */}
             <div className="flex items-center gap-4 mb-6 sm:mb-8">
               <Link
                 href="/blogs"
@@ -193,7 +214,7 @@ export default async function BlogSlugPage({ params }: PageProps) {
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-14 items-center">
               {/* Left Column: Title & Excerpt */}
               <div className="lg:col-span-8 xl:col-span-8">
-                <h1 className="text-3xl sm:text-4xl lg:text-[3.25rem] font-medium leading-[1.14] tracking-[-0.025em] text-[#111827] mb-6">
+                <h1 className="text-3xl sm:text-4xl lg:text-[3.1rem] font-medium leading-[1.14] tracking-[-0.025em] text-[#111827] mb-6">
                   {article.title}
                 </h1>
 
@@ -202,7 +223,7 @@ export default async function BlogSlugPage({ params }: PageProps) {
                 </p>
               </div>
 
-              {/* Right Column: Metadata Table matching reference screenshot */}
+              {/* Right Column: Metadata Table */}
               <div className="lg:col-span-4 xl:col-span-4 border-t border-[#172228]/10 lg:border-t-0 pt-6 lg:pt-0">
                 <div className="space-y-0 text-sm">
                   <div className="flex justify-between items-baseline gap-4 py-3.5 border-b border-[#172228]/10">
@@ -255,15 +276,14 @@ export default async function BlogSlugPage({ params }: PageProps) {
       <main className="flex-1 w-full max-w-8xl mx-auto px-5 sm:px-8 lg:px-12 pb-24">
         {/* =========================================================================
             EDITORIAL TWO-COLUMN LAYOUT
-            Left: "The Short Version" Box, Sticky Consultation CTA Card
-            Right: Main Article Editorial Content
+            Left: "The Short Version" Box, Sticky Consultation CTA Card & Silo Links
+            Right: Main Article Editorial Content, Tables, Templates & FAQs
             ========================================================================= */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-start border-b border-[#172228]/10 pb-20 mb-20">
           {/* ---------------------------------------------------------------------
               LEFT COLUMN: SIDEBAR (Sticky on Desktop)
               --------------------------------------------------------------------- */}
           <aside className="lg:col-span-4 lg:sticky lg:top-28 space-y-8 order-2 lg:order-1">
-
             {/* "The Short Version" Summary Box */}
             <div className="bg-[#F4EFE6] border border-[#172228]/10 rounded-2xl p-6 sm:p-7 shadow-xs">
               <h2 className="text-[15px] font-semibold tracking-wide text-[#111827] uppercase mb-4">
@@ -297,16 +317,59 @@ export default async function BlogSlugPage({ params }: PageProps) {
               </div>
 
               <p className="text-[14.5px] leading-[1.65] text-[#49585F] mb-5">
-                If any of this touches your estate, Will, or legal situation, our initial legal review is completely confidential and free.
+                Draft a legally valid Indian Will reviewed by AMA Legal Solutions advocates—compliant with Section 63, Hindu Succession Act, and Shariat rules.
               </p>
 
-              <Link
-                href="/contact"
-                className="w-full inline-flex items-center justify-center gap-2 bg-[#172228] text-white hover:bg-[#C65378] font-medium text-sm py-3 px-5 rounded-xl transition-all duration-300 shadow-xs hover:shadow-md group"
-              >
-                <span>Tell us what happened</span>
-                <ArrowUpRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
-              </Link>
+              <div className="space-y-2.5">
+                <Link
+                  href="/start"
+                  className="w-full inline-flex items-center justify-center gap-2 bg-[#172228] text-white hover:bg-[#C65378] font-medium text-sm py-3 px-5 rounded-xl transition-all duration-300 shadow-xs hover:shadow-md group"
+                >
+                  <span>Start Your Indian Will</span>
+                  <ArrowUpRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+                </Link>
+                <Link
+                  href="/contact"
+                  className="w-full inline-flex items-center justify-center gap-2 bg-[#FAF7F0] text-[#172228] border border-[#172228]/15 hover:border-[#C65378] font-medium text-xs py-2.5 px-4 rounded-xl transition-colors"
+                >
+                  <span>Speak to an Estate Advocate</span>
+                </Link>
+              </div>
+
+              {/* Contextual Internal Links to Subfolder Silos */}
+              <div className="mt-6 pt-5 border-t border-[#172228]/10 space-y-2.5 text-xs">
+                <span className="text-[10px] font-bold uppercase tracking-[0.16em] text-[#6B7280] block">
+                  Explore Services & Tools
+                </span>
+                <Link
+                  href="/service"
+                  className="flex items-center justify-between text-[#172228] hover:text-[#C65378] font-medium py-1 transition-colors"
+                >
+                  <span>Online Will Drafting Services India</span>
+                  <ArrowUpRight className="w-3.5 h-3.5" />
+                </Link>
+                <Link
+                  href="/service/nri-will-india"
+                  className="flex items-center justify-between text-[#172228] hover:text-[#C65378] font-medium py-1 transition-colors"
+                >
+                  <span>NRI & OCI Indian Will Service</span>
+                  <ArrowUpRight className="w-3.5 h-3.5" />
+                </Link>
+                <Link
+                  href="/tools/succession-calculator"
+                  className="flex items-center justify-between text-[#172228] hover:text-[#C65378] font-medium py-1 transition-colors"
+                >
+                  <span>Free Indian Succession Calculator</span>
+                  <ArrowUpRight className="w-3.5 h-3.5" />
+                </Link>
+                <Link
+                  href="/pricing"
+                  className="flex items-center justify-between text-[#172228] hover:text-[#C65378] font-medium py-1 transition-colors"
+                >
+                  <span>Transparent Fixed-Fee Pricing (₹2,999+)</span>
+                  <ArrowUpRight className="w-3.5 h-3.5" />
+                </Link>
+              </div>
             </div>
           </aside>
 
@@ -316,7 +379,7 @@ export default async function BlogSlugPage({ params }: PageProps) {
           <article className="lg:col-span-8 order-1 lg:order-2 space-y-10 sm:space-y-12">
             {article.sections.map((section, idx) => (
               <section key={idx} className="space-y-5">
-                {/* Section Subhead (Plus Jakarta Sans) */}
+                {/* Section Subhead */}
                 <h2 className="text-2xl sm:text-[1.85rem] font-medium leading-[1.28] tracking-[-0.02em] text-[#111827]">
                   {section.heading}
                 </h2>
@@ -337,6 +400,73 @@ export default async function BlogSlugPage({ params }: PageProps) {
               </section>
             ))}
 
+            {/* Optional Structured Statutory Comparison Table */}
+            {article.tableData && (
+              <section className="space-y-4 pt-2">
+                <h2 className="text-2xl sm:text-[1.75rem] font-medium leading-[1.28] tracking-[-0.02em] text-[#111827]">
+                  {article.tableData.heading}
+                </h2>
+                <p className="text-sm text-[#6B7280]">
+                  {article.tableData.caption}
+                </p>
+                <div className="overflow-x-auto rounded-2xl border border-[#172228]/15 bg-white shadow-xs">
+                  <table className="w-full text-left border-collapse">
+                    <thead>
+                      <tr className="bg-[#172228] text-white text-xs uppercase tracking-[0.12em]">
+                        {article.tableData.headers.map((header, hIdx) => (
+                          <th
+                            key={hIdx}
+                            className="py-4 px-5 font-semibold border-r border-white/10 last:border-r-0"
+                          >
+                            {header}
+                          </th>
+                        ))}
+                      </tr>
+                    </thead>
+                    <tbody className="divide-y divide-[#172228]/10 text-[14.5px] leading-relaxed text-[#374151]">
+                      {article.tableData.rows.map((row, rIdx) => (
+                        <tr
+                          key={rIdx}
+                          className={rIdx % 2 === 1 ? "bg-[#FAF7F0]/70" : "bg-white"}
+                        >
+                          {row.map((cell, cIdx) => (
+                            <td
+                              key={cIdx}
+                              className={`py-4 px-5 align-top border-r border-[#172228]/10 last:border-r-0 ${
+                                cIdx === 0 ? "font-semibold text-[#111827]" : ""
+                              }`}
+                            >
+                              {cell}
+                            </td>
+                          ))}
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+              </section>
+            )}
+
+            {/* Optional Copy-Paste Statutory Template / Certificate Box */}
+            {article.templateBox && (
+              <section className="rounded-2xl border-2 border-[#C65378]/30 bg-white p-6 sm:p-8 shadow-xs space-y-4">
+                <div className="flex items-start gap-3">
+                  <FileText className="w-6 h-6 text-[#C65378] shrink-0 mt-1" />
+                  <div>
+                    <h2 className="text-xl sm:text-2xl font-medium tracking-tight text-[#111827]">
+                      {article.templateBox.heading}
+                    </h2>
+                    <p className="text-sm text-[#6B7280] mt-1">
+                      {article.templateBox.subtitle}
+                    </p>
+                  </div>
+                </div>
+                <pre className="whitespace-pre-wrap font-mono text-[13px] sm:text-[13.5px] leading-[1.7] text-[#172228] bg-[#FAF7F0] border border-[#172228]/15 rounded-xl p-5 sm:p-6 overflow-x-auto">
+                  {article.templateBox.content}
+                </pre>
+              </section>
+            )}
+
             {/* "What to do next" Action Steps Card */}
             <div className="bg-[#FAF7F0] border border-[#172228]/15 rounded-2xl p-7 sm:p-9 mt-12 shadow-xs">
               <h2 className="text-xl sm:text-2xl font-medium tracking-tight text-[#111827] mb-5">
@@ -353,6 +483,33 @@ export default async function BlogSlugPage({ params }: PageProps) {
                 ))}
               </div>
             </div>
+
+            {/* Optional Frequently Asked Statutory Questions (FAQPage Schema Backed) */}
+            {article.faqs && article.faqs.length > 0 && (
+              <section className="space-y-5 pt-4">
+                <div className="flex items-center gap-2.5">
+                  <ShieldCheck className="w-5 h-5 text-[#C65378]" />
+                  <h2 className="text-2xl sm:text-[1.75rem] font-medium tracking-tight text-[#111827]">
+                    Frequently Asked Statutory Questions
+                  </h2>
+                </div>
+                <div className="space-y-4">
+                  {article.faqs.map((faq, fIdx) => (
+                    <div
+                      key={fIdx}
+                      className="rounded-2xl border border-[#172228]/10 bg-white p-6 shadow-xs"
+                    >
+                      <h3 className="text-[16.5px] sm:text-[17.5px] font-semibold text-[#111827] mb-2">
+                        {faq.question}
+                      </h3>
+                      <p className="text-[15px] sm:text-[15.5px] leading-[1.75] text-[#49585F]">
+                        {faq.answer}
+                      </p>
+                    </div>
+                  ))}
+                </div>
+              </section>
+            )}
 
             {/* Legal Disclaimer Box */}
             <div className="p-6 rounded-xl bg-neutral-100/70 border border-[#172228]/5 text-xs sm:text-[13px] leading-relaxed text-[#6B7280]">
