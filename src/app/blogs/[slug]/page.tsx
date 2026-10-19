@@ -366,7 +366,7 @@ export default async function BlogSlugPage({ params }: PageProps) {
                   href="/pricing"
                   className="flex items-center justify-between text-[#172228] hover:text-[#C65378] font-medium py-1 transition-colors"
                 >
-                  <span>Transparent Fixed-Fee Pricing (₹2,999+)</span>
+                  <span>Transparent Fixed-Fee Pricing (₹2,490+)</span>
                   <ArrowUpRight className="w-3.5 h-3.5" />
                 </Link>
               </div>

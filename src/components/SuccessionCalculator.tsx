@@ -1165,7 +1165,7 @@ export default function SuccessionCalculator() {
                     href="/pricing"
                     className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#172228] hover:text-[#C65378] py-2 px-3"
                   >
-                    <span>Compare Fixed-Fee Plans (₹2,999+)</span>
+                    <span>Compare Fixed-Fee Plans (₹2,490+)</span>
                     <ArrowUpRight className="w-3.5 h-3.5" />
                   </Link>
                 </div>
