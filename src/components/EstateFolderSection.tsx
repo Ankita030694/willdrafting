@@ -118,67 +118,67 @@ export default function EstateFolderSection() {
   return (
     <section
       id="sample-will-section"
-      className="w-full bg-[#FAF7F0] py-16 sm:py-24 lg:py-28 overflow-hidden scroll-mt-20"
+      className="w-full bg-[#FAF7F0] py-5 sm:py-7 lg:py-9 overflow-hidden scroll-mt-20"
     >
       <div className="w-full max-w-[1400px] 2xl:max-w-8xl mx-auto px-6 sm:px-8 lg:px-12">
         <div
           onClick={handleRightAreaClick}
-          className={`relative rounded-[32px] sm:rounded-[44px] bg-white p-8 sm:p-12 lg:p-16 border border-[#1B2A4A]/5 shadow-[0_4px_30px_rgba(0,0,0,0.03)] grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center ${
+          className={`relative rounded-[32px] sm:rounded-[44px] bg-white p-5 sm:p-8 lg:p-11 border border-[#1B2A4A]/5 shadow-[0_4px_30px_rgba(0,0,0,0.03)] grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center ${
             folderOpen ? "cursor-pointer" : ""
           }`}
         >
           {/* Left Column: Pill, Heading, Subtitle & Highlights */}
           <div className="lg:col-span-7 flex flex-col items-start text-left">
             {/* Pill Eyebrow */}
-            <div className="inline-flex items-center gap-2 rounded-full px-3.5 py-1.5 text-xs font-semibold text-[#C65378] mb-4">
-              <span className="tracking-[0.14em] uppercase text-[11px] font-bold">
+            <div className="inline-flex items-center gap-2 rounded-full px-3 py-1 text-xs font-semibold text-[#C65378] mb-3">
+              <span className="tracking-[0.14em] uppercase text-[10.5px] font-bold">
                 Digital Estate Plan
               </span>
             </div>
 
             {/* Main Editorial Heading */}
-            <h2 className="text-[2.2rem] sm:text-[3rem] lg:text-[3.4rem] font-medium text-[#172228] leading-[1.12] tracking-tight mb-4">
+            <h2 className="text-[1.65rem] sm:text-[2.25rem] lg:text-[2.5rem] font-medium text-[#172228] leading-[1.15] tracking-tight mb-3">
               All Your Important Will &amp; Estate Documents in One Secure Place.
             </h2>
 
             {/* Subtitle */}
-            <p className="text-[1rem] sm:text-[1.1rem] text-[#55636D] leading-relaxed max-w-xl mb-6">
+            <p className="text-[0.85rem] sm:text-[0.92rem] text-[#55636D] leading-relaxed max-w-xl mb-4 sm:mb-5">
               From your Last Will and Testament and detailed asset schedule to witness attestation guidance, everything you need for your estate planning in India is neatly organised in one secure place.
             </p>
 
             {/* Checklist Points */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-8 w-full">
-              <div className="flex items-center gap-2 text-xs sm:text-sm text-[#2D3A41]">
-                <CheckCircle2 size={16} className="text-[#5F7E75] shrink-0" />
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 mb-6 w-full">
+              <div className="flex items-center gap-2 text-[12px] sm:text-[13px] text-[#2D3A41]">
+                <CheckCircle2 size={15} className="text-[#5F7E75] shrink-0" />
                 <span>Professionally structured Will clauses</span>
               </div>
-              <div className="flex items-center gap-2 text-xs sm:text-sm text-[#2D3A41]">
-                <CheckCircle2 size={16} className="text-[#5F7E75] shrink-0" />
+              <div className="flex items-center gap-2 text-[12px] sm:text-[13px] text-[#2D3A41]">
+                <CheckCircle2 size={15} className="text-[#5F7E75] shrink-0" />
                 <span>Bank-grade 256-bit encryption</span>
               </div>
-              <div className="flex items-center gap-2 text-xs sm:text-sm text-[#2D3A41]">
-                <CheckCircle2 size={16} className="text-[#5F7E75] shrink-0" />
+              <div className="flex items-center gap-2 text-[12px] sm:text-[13px] text-[#2D3A41]">
+                <CheckCircle2 size={15} className="text-[#5F7E75] shrink-0" />
                 <span>Instant PDF &amp; print-ready Will formats</span>
               </div>
-              <div className="flex items-center gap-2 text-xs sm:text-sm text-[#2D3A41]">
-                <CheckCircle2 size={16} className="text-[#5F7E75] shrink-0" />
+              <div className="flex items-center gap-2 text-[12px] sm:text-[13px] text-[#2D3A41]">
+                <CheckCircle2 size={15} className="text-[#5F7E75] shrink-0" />
                 <span>Complete step-by-step witness guide</span>
               </div>
             </div>
 
             {/* Action CTA Button */}
             <div
-              className="flex flex-wrap items-center gap-4"
+              className="flex flex-wrap items-center gap-3 sm:gap-4"
               onClick={(e) => e.stopPropagation()}
             >
               <Link
                 href="/contact"
-                className="inline-flex items-center gap-2 rounded-full bg-[#C65378] px-7 py-3 text-[14px] font-medium text-white shadow-sm hover:bg-[#a13c5d] hover:shadow-md transition-all active:scale-95"
+                className="inline-flex items-center gap-2 rounded-full bg-[#C65378] px-6 py-2.5 text-[13px] sm:text-[13.5px] font-medium text-white shadow-sm hover:bg-[#a13c5d] hover:shadow-md transition-all active:scale-95"
               >
                 <span>Start Your Estate Plan</span>
-                <ArrowUpRight size={16} strokeWidth={2.2} />
+                <ArrowUpRight size={15} strokeWidth={2.2} />
               </Link>
-              <span className="text-xs text-[#7B8791] font-medium">
+              <span className="text-[11px] text-[#7B8791] font-medium">
                 Takes ~15 minutes · Plain paper Will format
               </span>
             </div>
@@ -201,7 +201,10 @@ export default function EstateFolderSection() {
                   items={folderDocuments}
                   className="transition-transform duration-300"
                   isOpen={folderOpen}
-                  onOpenChange={(isOpen) => setFolderOpen(isOpen)}
+                  onOpenChange={() => {
+                    setFolderOpen(true);
+                    setSampleModalOpen(true);
+                  }}
                   onOpenFolderClick={() => setSampleModalOpen(true)}
                 />
               </div>
@@ -211,25 +214,13 @@ export default function EstateFolderSection() {
                 type="button"
                 onClick={(e) => {
                   e.stopPropagation();
-                  if (!folderOpen) {
-                    setFolderOpen(true);
-                  } else {
-                    setSampleModalOpen(true);
-                  }
+                  setFolderOpen(true);
+                  setSampleModalOpen(true);
                 }}
                 className="relative z-10 mt-6 inline-flex items-center gap-2 rounded-full bg-[#FAF7F0] border border-[#172228]/10 px-4 py-1.5 text-xs font-medium text-[#172228] shadow-sm hover:border-[#C65378]/40 transition-colors cursor-pointer"
               >
-                {folderOpen ? (
-                  <>
-                    <Eye size={13} className="text-[#C65378]" />
-                    <span>Click anywhere to view Sample Will</span>
-                  </>
-                ) : (
-                  <>
-                    <Sparkles size={13} className="text-[#C65378]" />
-                    <span>Click folder to open &amp; explore papers</span>
-                  </>
-                )}
+                <Eye size={13} className="text-[#C65378]" />
+                <span>Click folder to view Sample Will</span>
               </button>
             </div>
           </div>
@@ -271,7 +262,7 @@ export default function EstateFolderSection() {
               </button>
             </div>
 
-            {/* Clean A4 Paper Sheet — Professional Sample Excerpt */}
+            {/* Clean A4 Paper Sheet - Professional Sample Excerpt */}
             <div className="relative bg-white rounded-2xl border border-[#172228]/12 shadow-sm p-6 sm:p-9 font-serif text-[#172228] overflow-hidden select-none">
               {/* Subtle Diagonal Watermark */}
               <div

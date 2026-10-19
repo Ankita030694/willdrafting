@@ -111,15 +111,15 @@ export default function BelowTrust() {
   const active = CLAUSE_ITEMS[activeIdx];
 
   return (
-    <section className="w-full bg-[#FAF7F0] pt-12 pb-12 sm:pt-16 sm:pb-16">
+    <section className="w-full bg-[#FAF7F0] pt-8 pb-8 sm:pt-11 sm:pb-11">
       <div className="w-full max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
-        <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 sm:gap-6 mb-6 sm:mb-10">
+        <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 sm:gap-6 mb-4 sm:mb-7">
           <div className="max-w-[760px]">
-            <span className="block text-xs font-bold tracking-[0.14em] uppercase text-[#C65378] mb-3">
+            <span className="block text-[11px] font-bold tracking-[0.14em] uppercase text-[#C65378] mb-1.5">
               Legally Structured Will Clauses
             </span>
-            <h2 className="text-[1.7rem] sm:text-[2.4rem] lg:text-[2.8rem] font-medium text-[#172228] leading-[1.15] tracking-tight">
+            <h2 className="text-[1.45rem] sm:text-[1.85rem] lg:text-[2.15rem] font-medium text-[#172228] leading-[1.15] tracking-tight">
               Support tailored to your estate, family & succession wishes.
             </h2>
           </div>
@@ -127,10 +127,10 @@ export default function BelowTrust() {
           <div className="shrink-0">
             <Link
               href="/contact"
-              className="inline-flex items-center gap-2 rounded-full border border-[#172228]/20 bg-white/70 px-5 py-2.5 text-[14px] font-medium text-[#172228] shadow-sm transition-all hover:bg-white hover:border-[#172228]/40 active:scale-95"
+              className="inline-flex items-center gap-2 rounded-full border border-[#172228]/20 bg-white/70 px-4 py-2 text-[13px] sm:text-[13.5px] font-medium text-[#172228] shadow-sm transition-all hover:bg-white hover:border-[#172228]/40 active:scale-95"
             >
               <span>Explore services</span>
-              <ArrowUpRight size={16} strokeWidth={2} />
+              <ArrowUpRight size={15} strokeWidth={2} />
             </Link>
           </div>
         </div>
@@ -138,8 +138,8 @@ export default function BelowTrust() {
         {/* Mobile: all clause cards stacked one below another */}
         <div className="flex lg:hidden flex-col gap-4">
           {CLAUSE_ITEMS.map((item, idx) => (
-            <div key={item.id} className="bg-white rounded-3xl p-5 sm:p-6">
-              <div className="relative h-40 sm:h-48 rounded-2xl overflow-hidden bg-slate-100 border border-[#1B2A4A]/10 mb-4">
+            <div key={item.id} className="bg-white rounded-3xl p-4 sm:p-5">
+              <div className="relative h-40 sm:h-48 rounded-2xl overflow-hidden bg-slate-100 border border-[#1B2A4A]/10 mb-3.5">
                 {item.image && (
                   <Image
                     src={item.image}
@@ -151,23 +151,23 @@ export default function BelowTrust() {
                 )}
               </div>
 
-              <div className="flex items-center justify-between gap-3 mb-3">
-                <span className="inline-flex px-3 py-1 rounded-full text-xs font-semibold bg-[#C65378]/10 text-[#C65378]">
+              <div className="flex items-center justify-between gap-3 mb-2.5">
+                <span className="inline-flex px-2.5 py-0.5 rounded-full text-[11px] font-semibold bg-[#C65378]/10 text-[#C65378]">
                   {item.badge}
                 </span>
-                <span className="text-xs font-mono text-[#83919C]">
+                <span className="text-[11px] font-mono text-[#83919C]">
                   Clause {idx + 1} of {CLAUSE_ITEMS.length}
                 </span>
               </div>
 
-              <h3 className="text-xl font-bold text-[#172228] mb-1 tracking-tight">{item.title}</h3>
-              <p className="text-xs font-medium text-[#5F7E75] mb-3">{item.lawRef}</p>
-              <p className="text-[0.92rem] leading-relaxed text-[#49585F] mb-4">{item.summary}</p>
+              <h3 className="text-base sm:text-lg font-bold text-[#172228] mb-1 tracking-tight">{item.title}</h3>
+              <p className="text-[11px] font-medium text-[#5F7E75] mb-2">{item.lawRef}</p>
+              <p className="text-[0.80rem] sm:text-[0.84rem] leading-relaxed text-[#49585F] mb-3">{item.summary}</p>
 
-              <ul className="space-y-2 mb-4">
+              <ul className="space-y-1.5 mb-3.5">
                 {item.points.map((pt, i) => (
-                  <li key={i} className="flex items-start gap-2 text-[13px] text-[#2D3A41]">
-                    <CheckCircle2 size={16} className="text-[#5F7E75] shrink-0 mt-0.5" />
+                  <li key={i} className="flex items-start gap-2 text-[12px] text-[#2D3A41]">
+                    <CheckCircle2 size={15} className="text-[#5F7E75] shrink-0 mt-0.5" />
                     <span>{pt}</span>
                   </li>
                 ))}
@@ -175,10 +175,10 @@ export default function BelowTrust() {
 
               <Link
                 href="/contact"
-                className="inline-flex items-center gap-1.5 text-sm font-bold text-[#C65378] hover:text-[#a13c5d] transition-colors"
+                className="inline-flex items-center gap-1.5 text-[13px] font-bold text-[#C65378] hover:text-[#a13c5d] transition-colors"
               >
                 <span>See More</span>
-                <ArrowRight size={14} />
+                <ArrowRight size={13} />
               </Link>
             </div>
           ))}
@@ -188,8 +188,8 @@ export default function BelowTrust() {
         <div className="hidden lg:grid grid-cols-12 gap-8 items-stretch">
           {/* Desktop: clause list */}
           <div className="hidden lg:block lg:col-span-4">
-            <div className="bg-white rounded-3xl p-6 h-full">
-              <p className="text-xs font-bold tracking-wider uppercase text-[#8C98A4] mb-3">
+            <div className="bg-white rounded-3xl p-5 h-full">
+              <p className="text-[11px] font-bold tracking-wider uppercase text-[#8C98A4] mb-2.5">
                 Core Clauses in Your Will
               </p>
               <div className="flex flex-col divide-y divide-gray-100">
@@ -200,40 +200,40 @@ export default function BelowTrust() {
                       key={item.id}
                       type="button"
                       onClick={() => setActiveId(item.id)}
-                      className={`flex items-center justify-between py-3 text-left transition-colors group ${
+                      className={`flex items-center justify-between py-2.5 text-left transition-colors group ${
                         isActive ? "text-[#172228] font-semibold" : "text-[#5C6A72] hover:text-[#172228]"
                       }`}
                     >
-                      <div className="flex items-start gap-3 pr-2">
-                        <span className={`text-[13px] font-mono ${isActive ? "text-[#C65378]" : "text-[#9DA8B0]"}`}>
+                      <div className="flex items-start gap-2.5 pr-2">
+                        <span className={`text-[12px] font-mono ${isActive ? "text-[#C65378]" : "text-[#9DA8B0]"}`}>
                           {item.number}
                         </span>
-                        <span className="text-[15px] leading-snug">{item.title}</span>
+                        <span className="text-[13.5px] leading-snug">{item.title}</span>
                       </div>
                       <ArrowRight
-                        size={16}
+                        size={15}
                         className={`shrink-0 transition-opacity ${isActive ? "opacity-100 text-[#C65378]" : "opacity-0"}`}
                       />
                     </button>
                   );
                 })}
               </div>
-              <div className="mt-4 pt-4 border-t border-gray-100 flex items-center justify-between text-xs text-[#6C7882]">
+              <div className="mt-3.5 pt-3.5 border-t border-gray-100 flex items-center justify-between text-[11.5px] text-[#6C7882]">
                 <span className="inline-flex items-center gap-1.5 font-medium">
-                  <ShieldCheck size={16} className="text-[#5F7E75]" />
+                  <ShieldCheck size={15} className="text-[#5F7E75]" />
                   Indian Legal Standards
                 </span>
-                <span className="text-[11px] font-semibold uppercase tracking-wider text-[#C65378]">Verified</span>
+                <span className="text-[10.5px] font-semibold uppercase tracking-wider text-[#C65378]">Verified</span>
               </div>
             </div>
           </div>
 
           {/* Active clause panel */}
           <div className="lg:col-span-8">
-            <div className="bg-white rounded-3xl p-5 sm:p-8 h-full flex flex-col">
-              <div className="grid grid-cols-1 md:grid-cols-5 gap-5 md:gap-6 mb-5">
+            <div className="bg-white rounded-3xl p-5 sm:p-6 h-full flex flex-col">
+              <div className="grid grid-cols-1 md:grid-cols-5 gap-5 md:gap-6 mb-4">
                 {/* Clause image: short banner on mobile, side column on larger screens */}
-                <div className="relative order-first md:order-last md:col-span-2 h-40 sm:h-48 md:h-auto md:min-h-[260px] rounded-2xl overflow-hidden bg-slate-100 border border-[#1B2A4A]/10">
+                <div className="relative order-first md:order-last md:col-span-2 h-40 sm:h-48 md:h-auto md:min-h-[240px] rounded-2xl overflow-hidden bg-slate-100 border border-[#1B2A4A]/10">
                   {active.image && (
                     <Image
                       key={active.id}
@@ -247,28 +247,28 @@ export default function BelowTrust() {
                 </div>
 
                 <div className="md:col-span-3">
-                  <div className="flex items-center justify-between gap-3 mb-3">
-                    <span className="inline-flex px-3 py-1 rounded-full text-xs font-semibold bg-[#C65378]/10 text-[#C65378]">
+                  <div className="flex items-center justify-between gap-3 mb-2.5">
+                    <span className="inline-flex px-2.5 py-0.5 rounded-full text-[11px] font-semibold bg-[#C65378]/10 text-[#C65378]">
                       {active.badge}
                     </span>
-                    <span className="text-xs font-mono text-[#83919C]">
+                    <span className="text-[11px] font-mono text-[#83919C]">
                       Clause {activeIdx + 1} of {CLAUSE_ITEMS.length}
                     </span>
                   </div>
 
-                  <h3 className="text-xl sm:text-2xl font-bold text-[#172228] mb-1 tracking-tight">
+                  <h3 className="text-base sm:text-lg lg:text-xl font-bold text-[#172228] mb-1 tracking-tight">
                     {active.title}
                   </h3>
-                  <p className="text-xs sm:text-sm font-medium text-[#5F7E75] mb-3">{active.lawRef}</p>
+                  <p className="text-[11px] sm:text-xs font-medium text-[#5F7E75] mb-2.5">{active.lawRef}</p>
 
-                  <p className="text-[0.92rem] sm:text-[0.98rem] leading-relaxed text-[#49585F] mb-4">
+                  <p className="text-[0.80rem] sm:text-[0.85rem] leading-relaxed text-[#49585F] mb-3.5">
                     {active.summary}
                   </p>
 
-                  <ul className="space-y-2">
+                  <ul className="space-y-1.5">
                     {active.points.map((pt, i) => (
-                      <li key={i} className="flex items-start gap-2 text-[13px] sm:text-sm text-[#2D3A41]">
-                        <CheckCircle2 size={16} className="text-[#5F7E75] shrink-0 mt-0.5" />
+                      <li key={i} className="flex items-start gap-2 text-[12px] sm:text-[13px] text-[#2D3A41]">
+                        <CheckCircle2 size={15} className="text-[#5F7E75] shrink-0 mt-0.5" />
                         <span>{pt}</span>
                       </li>
                     ))}
@@ -276,13 +276,13 @@ export default function BelowTrust() {
                 </div>
               </div>
 
-              <div className="mt-auto pt-4 border-t border-gray-100 flex items-center justify-between">
+              <div className="mt-auto pt-3.5 border-t border-gray-100 flex items-center justify-between">
                 <Link
                   href="/contact"
-                  className="inline-flex items-center gap-1.5 text-sm font-bold text-[#C65378] hover:text-[#a13c5d] transition-colors"
+                  className="inline-flex items-center gap-1.5 text-[13px] font-bold text-[#C65378] hover:text-[#a13c5d] transition-colors"
                 >
                   <span>See More</span>
-                  <ArrowRight size={14} />
+                  <ArrowRight size={13} />
                 </Link>
 
                 <div className="flex items-center gap-2">

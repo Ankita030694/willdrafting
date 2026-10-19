@@ -2,17 +2,13 @@ import React from "react";
 import type { Metadata } from "next";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
-import WhyTrust from "@/components/whytrust";
-import BelowTrust from "@/components/belowtrust";
-import WhatWeDo from "@/components/whatwedo";
-import EstateFolderSection from "@/components/EstateFolderSection";
 import Process from "@/components/process";
 import EstateComparison from "@/components/EstateComparison";
-import PoweredByAma from "@/components/PoweredByAma";
+import WhyTrust from "@/components/whytrust";
+import EstateFolderSection from "@/components/EstateFolderSection";
 import Pricing from "@/components/pricing";
 import Testimonial from "@/components/testimonial";
 import FAQ from "@/components/faq";
-import CTA from "@/components/cta";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
@@ -135,7 +131,7 @@ const HOME_FAQ_SCHEMA = {
           "acceptedAnswer": {
             "@type": "Answer",
             "text":
-              "You only need everyday details—your full name, date of birth, address, PAN or Aadhaar number, and the names of your immediate family members (such as your spouse, children, or parents). You do not need to upload bulky property deeds just to draft your Will.",
+              "You only need everyday details: your full name, date of birth, address, PAN or Aadhaar number, and the names of your immediate family members (such as your spouse, children, or parents). You do not need to upload bulky property deeds just to draft your Will.",
           },
         },
         {
@@ -234,7 +230,7 @@ const HOME_FAQ_SCHEMA = {
           "acceptedAnswer": {
             "@type": "Answer",
             "text":
-              "Yes. As reaffirmed by the Supreme Court of India in Sarbati Devi and Shakti Yezdani (2023), a bank, insurance, or Demat nominee is only a provisional trustee (custodian) who receives the asset for discharge of institutional liability—not the legal owner. Only a valid Will legally transfers permanent ownership to your chosen beneficiaries.",
+              "Yes. As reaffirmed by the Supreme Court of India in Sarbati Devi and Shakti Yezdani (2023), a bank, insurance, or Demat nominee is only a provisional trustee (custodian) who receives the asset for discharge of institutional liability, not the legal owner. Only a valid Will legally transfers permanent ownership to your chosen beneficiaries.",
           },
         },
         {
@@ -252,7 +248,7 @@ const HOME_FAQ_SCHEMA = {
           "acceptedAnswer": {
             "@type": "Answer",
             "text":
-              "Under Section 18(e) of the Registration Act, 1908, registering a Will is completely optional across India—an unregistered Will signed before two witnesses on plain paper is 100% legally valid. Furthermore, following the Repealing and Amending Act, 2025 (omitting Section 213 of the Indian Succession Act), compulsory High Court probate in Mumbai, Chennai, and Kolkata is no longer a statutory bar for uncontested Wills.",
+              "Under Section 18(e) of the Registration Act, 1908, registering a Will is completely optional across India. An unregistered Will signed before two witnesses on plain paper is 100% legally valid. Furthermore, following the Repealing and Amending Act, 2025 (omitting Section 213 of the Indian Succession Act), compulsory High Court probate in Mumbai, Chennai, and Kolkata is no longer a statutory bar for uncontested Wills.",
           },
         },
       ],
@@ -269,18 +265,29 @@ export default function Home() {
       />
       <Navbar />
       <main style={{ flex: "1 0 auto" }}>
+        {/* 1st: Hero Section */}
         <Hero />
-        <WhyTrust />
-        <BelowTrust />
-        <WhatWeDo />
-        <EstateFolderSection />
+
+        {/* 2nd: Working Process */}
         <Process />
+
+        {/* 3rd: What Happens If You Die Without a Will */}
         <EstateComparison />
-        <PoweredByAma />
+
+        {/* 4th: Why WillDrafting */}
+        <WhyTrust />
+
+        {/* Sample Will & Estate Folder Section */}
+        <EstateFolderSection />
+
+        {/* Pricing */}
         <Pricing />
+
+        {/* 6th: Testimonials */}
         <Testimonial />
+
+        {/* 7th: FAQ */}
         <FAQ />
-        <CTA />
       </main>
       <Footer />
     </div>

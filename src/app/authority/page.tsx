@@ -94,9 +94,9 @@ interface RecentFunnelEvent {
 }
 
 function timeAgo(dateStr?: string | null): string {
-  if (!dateStr) return "—";
+  if (!dateStr) return "-";
   const diff = Date.now() - new Date(dateStr).getTime();
-  if (isNaN(diff)) return "—";
+  if (isNaN(diff)) return "-";
   const mins = Math.floor(diff / 60000);
   if (mins < 1) return "Just now";
   if (mins < 60) return `${mins}m ago`;
@@ -192,7 +192,7 @@ export default function AuthorityOverviewPage() {
             Total Accounts (Users + Leads)
           </div>
           <div style={{ fontSize: "1.75rem", fontWeight: 700, color: "#172228", marginTop: "0.3rem", letterSpacing: "-0.02em" }}>
-            {stats ? stats.totalAccounts : "—"}
+            {stats ? stats.totalAccounts : "-"}
           </div>
           <div style={{ fontSize: "0.76rem", color: "#49585F", marginTop: "0.35rem", display: "flex", gap: "0.55rem", flexWrap: "wrap" }}>
             <span style={{ color: "#3F5C53", fontWeight: 600 }}>{stats?.paidCustomers ?? 0} Paid</span>
@@ -218,7 +218,7 @@ export default function AuthorityOverviewPage() {
             Unpaid & Guest Will Drafts
           </div>
           <div style={{ fontSize: "1.75rem", fontWeight: 700, color: "#C65378", marginTop: "0.3rem", letterSpacing: "-0.02em" }}>
-            {stats ? stats.loggedInUnpaidWills + stats.guestWills : "—"}
+            {stats ? stats.loggedInUnpaidWills + stats.guestWills : "-"}
           </div>
           <div style={{ fontSize: "0.76rem", color: "#49585F", marginTop: "0.35rem", display: "flex", gap: "0.55rem", flexWrap: "wrap" }}>
             <span style={{ color: "#A13C5D", fontWeight: 600 }}>{stats?.loggedInUnpaidWills ?? 0} Logged-In Unpaid</span>
@@ -242,7 +242,7 @@ export default function AuthorityOverviewPage() {
             Total Wills & Downloads
           </div>
           <div style={{ fontSize: "1.75rem", fontWeight: 700, color: "#172228", marginTop: "0.3rem", letterSpacing: "-0.02em" }}>
-            {stats ? stats.totalWills : "—"}
+            {stats ? stats.totalWills : "-"}
           </div>
           <div style={{ fontSize: "0.76rem", color: "#49585F", marginTop: "0.35rem", display: "flex", gap: "0.55rem", flexWrap: "wrap" }}>
             <span style={{ color: "#3F5C53", fontWeight: 600 }}>{stats?.verifiedWills ?? 0} OTP Locked</span>
@@ -493,7 +493,7 @@ export default function AuthorityOverviewPage() {
                     <td style={{ padding: "0.6rem 0.35rem" }}>
                       <div style={{ fontWeight: 600, color: "#172228" }}>{u.name}</div>
                       <div style={{ fontSize: "0.72rem", color: "#55636D" }}>
-                        {u.email || (u.phone ? `+91 ${u.phone}` : "—")}
+                        {u.email || (u.phone ? `+91 ${u.phone}` : "-")}
                       </div>
                     </td>
                     <td style={{ padding: "0.6rem 0.35rem", fontSize: "0.75rem", color: "#49585F" }}>

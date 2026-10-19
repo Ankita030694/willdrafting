@@ -725,9 +725,9 @@ export default function StartAssetWealthDashboard({
             <div>
               <h4 style={{ margin: "0 0 0.15rem", fontSize: "0.86rem", fontWeight: 700, color: "#172228" }}>
                 {isReviewed
-                  ? (isHi ? "वसीयत तैयार है — बस योजना चुनें" : "Will ready to download, just select the plan")
+                  ? (isHi ? "वसीयत तैयार है - बस योजना चुनें" : "Will ready to download, just select the plan")
                   : isAllDetailsSubmitted
-                  ? (isHi ? "सभी विवरण सबमिट किए गए — कृपया समीक्षा करें" : "All details submitted, please review, select plan and have your fill")
+                  ? (isHi ? "सभी विवरण सबमिट किए गए - कृपया समीक्षा करें" : "All details submitted, please review, select plan and have your fill")
                   : (isHi ? "प्रश्नावली पूरी करें" : "Complete details to unlock Will generation")}
               </h4>
               <p style={{ margin: 0, fontSize: "0.68rem", color: "#49585F" }}>

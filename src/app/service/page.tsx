@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     canonical: "https://www.willdrafting.in/service",
   },
   openGraph: {
-    title: "Online Will Writing Services in India — Lawyer-Verified Will & Estate Planning | WillDrafting.in",
+    title: "Online Will Writing Services in India - Lawyer-Verified Will & Estate Planning | WillDrafting.in",
     description:
       "Professional online Will writing services in India under the Indian Succession Act, 1925 & Hindu Succession Act, 1956. Get a court-ready Will printout, High Court advocate verification & registration assistance.",
     url: "https://www.willdrafting.in/service",
@@ -61,7 +61,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Online Will Writing Services in India — Lawyer-Verified Will & Estate Planning | WillDrafting.in",
+    title: "Online Will Writing Services in India - Lawyer-Verified Will & Estate Planning | WillDrafting.in",
     description:
       "Professional online Will writing services in India under the Indian Succession Act, 1925 & Hindu Succession Act, 1956. Get a court-ready Will printout, High Court advocate verification & registration assistance.",
     images: ["/desktopusp.jpg"],
@@ -198,10 +198,10 @@ const PERSONAL_LAW_MATRIX: PersonalLawRow[] = [
     governingStatute: "Hindu Succession Act, 1956 (Sections 6, 8, 15 & 30) read with Indian Succession Act, 1925",
     testamentaryLimit: "100% of self-acquired property + your undivided share in HUF / ancestral coparcenary property (Section 30)",
     executionRules: "Signed on plain A4 paper in the simultaneous presence of 2 independent adult witnesses (Section 63 ISA)",
-    keyPlanningNote: "For married Hindu women, Section 15 creates distinct intestate rules based on source of property—making a written Will critical to protect your parents or children.",
+    keyPlanningNote: "For married Hindu women, Section 15 creates distinct intestate rules based on source of property, making a written Will critical to protect your parents or children.",
   },
   {
-    community: "Muslim Personal Law (Sunni & Shia — Wasiyat)",
+    community: "Muslim Personal Law (Sunni & Shia - Wasiyat)",
     governingStatute: "Muslim Personal Law (Shariat) Application Act, 1937",
     testamentaryLimit: "Up to 1/3rd (one-third) of net estate after funeral expenses and debts without heir consent",
     executionRules: "Written Wasiyat attested by two adult witnesses recommended for bank, Demat & municipal mutation clarity",

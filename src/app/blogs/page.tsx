@@ -124,7 +124,7 @@ export default function BlogsPage() {
           </h1>
 
           <p className="text-[1.05rem] sm:text-[1.15rem] leading-[1.65] text-[#55636D] font-normal max-w-2xl mx-auto">
-            Authoritative <span className="font-bold">Indian succession law guides and Will drafting rules</span> under the Indian Succession Act, 1925, Hindu Succession Act, 1956, Muslim Personal Law (Wasiyat), and FEMA—written by estate planning advocates for Resident Indians and NRIs.
+            Authoritative <span className="font-bold">Indian succession law guides and Will drafting rules</span> under the Indian Succession Act, 1925, Hindu Succession Act, 1956, Muslim Personal Law (Wasiyat), and FEMA, written by estate planning advocates for Resident Indians and NRIs.
           </p>
         </div>
 

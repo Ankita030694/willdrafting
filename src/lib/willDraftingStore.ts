@@ -1669,7 +1669,7 @@ export function generateWillClauses(rawState: WillDraftingState): GeneratedClaus
 
       const relPhrase = isNonRelative ? `(${relLabel})` : `my ${relLabel}`;
       return `  (${String.fromCharCode(97 + idx)}) ${(f.name || "").trim()}, ${relPhrase}${
-        details.length > 0 ? ` — ${details.join(", ")}` : ""
+        details.length > 0 ? ` - ${details.join(", ")}` : ""
       }`;
     };
 

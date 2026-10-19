@@ -83,9 +83,9 @@ interface DraftCounts {
 }
 
 function formatDateTime(val?: string | null): string {
-  if (!val) return "—";
+  if (!val) return "-";
   const d = new Date(val);
-  if (isNaN(d.getTime())) return "—";
+  if (isNaN(d.getTime())) return "-";
   return d.toLocaleString("en-IN", {
     day: "2-digit",
     month: "short",
@@ -453,7 +453,7 @@ export default function AuthorityDraftsPage() {
             {[
               { id: "guest_not_logged_in", label: `All Guests (${counts.guestNotLoggedIn})` },
               { id: "guest_no_email", label: `No Email Entered Yet (${counts.guestNoEmail})` },
-              { id: "guest_typed_email", label: `Typed Email/Phone in Form — Not Logged In (${counts.guestTypedEmail})` },
+              { id: "guest_typed_email", label: `Typed Email/Phone in Form - Not Logged In (${counts.guestTypedEmail})` },
             ].map((sub) => (
               <button
                 key={sub.id}
@@ -697,7 +697,7 @@ export default function AuthorityDraftsPage() {
                     {/* Column 4: Family & Assets */}
                     <td style={{ padding: "0.8rem 0.9rem", verticalAlign: "top" }}>
                       {!d.willId ? (
-                        <span style={{ color: "#8C98A0" }}>—</span>
+                        <span style={{ color: "#8C98A0" }}>-</span>
                       ) : (
                         <div>
                           <div style={{ fontWeight: 600, color: "#172228" }}>

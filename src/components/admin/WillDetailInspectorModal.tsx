@@ -70,7 +70,7 @@ export interface InspectorTarget {
 }
 
 function formatDateTime(val?: string | Date | null): string {
-  if (!val) return "—";
+  if (!val) return "-";
   const d = new Date(val);
   if (isNaN(d.getTime())) return String(val);
   return d.toLocaleString("en-IN", {
@@ -398,20 +398,20 @@ export default function WillDetailInspectorModal({
                         fontSize: "0.8rem",
                       }}
                     >
-                      <div><span style={{ color: "#55636D" }}>Full Name:</span> <strong style={{ color: "#172228" }}>{t?.fullName || "—"}</strong></div>
-                      <div><span style={{ color: "#55636D" }}>Father / Mother Name:</span> <strong style={{ color: "#172228" }}>{t?.fatherOrMotherName || "—"}</strong></div>
-                      <div><span style={{ color: "#55636D" }}>DOB:</span> <strong style={{ color: "#172228" }}>{t?.dob ? formatDDMMYYYY(t.dob) : "—"}</strong></div>
-                      <div><span style={{ color: "#55636D" }}>Gender:</span> <strong style={{ textTransform: "capitalize", color: "#172228" }}>{t?.gender || "—"}</strong></div>
-                      <div><span style={{ color: "#55636D" }}>Marital Status:</span> <strong style={{ textTransform: "capitalize", color: "#172228" }}>{t?.maritalStatus || "—"}</strong></div>
-                      <div><span style={{ color: "#55636D" }}>Religion / Law:</span> <strong style={{ textTransform: "capitalize", color: "#172228" }}>{t?.religionPersonalLaw?.replace(/_/g, " ") || "—"}</strong></div>
-                      <div><span style={{ color: "#55636D" }}>PAN:</span> <strong style={{ fontFamily: "monospace", color: "#172228" }}>{t?.pan || "—"}</strong></div>
-                      <div><span style={{ color: "#55636D" }}>Aadhaar:</span> <strong style={{ fontFamily: "monospace", color: "#172228" }}>{t?.aadhaar || "—"}</strong></div>
-                      <div><span style={{ color: "#55636D" }}>Email in Will:</span> <strong style={{ color: "#172228" }}>{t?.email || "—"}</strong></div>
-                      <div><span style={{ color: "#55636D" }}>Phone in Will:</span> <strong style={{ color: "#172228" }}>{t?.phone || "—"}</strong></div>
-                      <div><span style={{ color: "#55636D" }}>City / State / PIN:</span> <strong style={{ color: "#172228" }}>{[t?.city, t?.state, t?.pincode].filter(Boolean).join(", ") || "—"}</strong></div>
-                      <div><span style={{ color: "#55636D" }}>Citizenship:</span> <strong style={{ color: "#172228" }}>{t?.citizenship || "—"}</strong></div>
+                      <div><span style={{ color: "#55636D" }}>Full Name:</span> <strong style={{ color: "#172228" }}>{t?.fullName || "-"}</strong></div>
+                      <div><span style={{ color: "#55636D" }}>Father / Mother Name:</span> <strong style={{ color: "#172228" }}>{t?.fatherOrMotherName || "-"}</strong></div>
+                      <div><span style={{ color: "#55636D" }}>DOB:</span> <strong style={{ color: "#172228" }}>{t?.dob ? formatDDMMYYYY(t.dob) : "-"}</strong></div>
+                      <div><span style={{ color: "#55636D" }}>Gender:</span> <strong style={{ textTransform: "capitalize", color: "#172228" }}>{t?.gender || "-"}</strong></div>
+                      <div><span style={{ color: "#55636D" }}>Marital Status:</span> <strong style={{ textTransform: "capitalize", color: "#172228" }}>{t?.maritalStatus || "-"}</strong></div>
+                      <div><span style={{ color: "#55636D" }}>Religion / Law:</span> <strong style={{ textTransform: "capitalize", color: "#172228" }}>{t?.religionPersonalLaw?.replace(/_/g, " ") || "-"}</strong></div>
+                      <div><span style={{ color: "#55636D" }}>PAN:</span> <strong style={{ fontFamily: "monospace", color: "#172228" }}>{t?.pan || "-"}</strong></div>
+                      <div><span style={{ color: "#55636D" }}>Aadhaar:</span> <strong style={{ fontFamily: "monospace", color: "#172228" }}>{t?.aadhaar || "-"}</strong></div>
+                      <div><span style={{ color: "#55636D" }}>Email in Will:</span> <strong style={{ color: "#172228" }}>{t?.email || "-"}</strong></div>
+                      <div><span style={{ color: "#55636D" }}>Phone in Will:</span> <strong style={{ color: "#172228" }}>{t?.phone || "-"}</strong></div>
+                      <div><span style={{ color: "#55636D" }}>City / State / PIN:</span> <strong style={{ color: "#172228" }}>{[t?.city, t?.state, t?.pincode].filter(Boolean).join(", ") || "-"}</strong></div>
+                      <div><span style={{ color: "#55636D" }}>Citizenship:</span> <strong style={{ color: "#172228" }}>{t?.citizenship || "-"}</strong></div>
                       <div style={{ gridColumn: "1 / -1" }}>
-                        <span style={{ color: "#55636D" }}>Residential Address:</span> <strong style={{ color: "#172228" }}>{t?.address || "—"}</strong>
+                        <span style={{ color: "#55636D" }}>Residential Address:</span> <strong style={{ color: "#172228" }}>{t?.address || "-"}</strong>
                       </div>
                       {t?.workplace && (
                         <div style={{ gridColumn: "1 / -1" }}>
@@ -448,16 +448,16 @@ export default function WillDetailInspectorModal({
                                   {m.customRelationship || m.relationship}
                                 </td>
                                 <td style={{ padding: "0.55rem 0.75rem", color: "#49585F" }}>
-                                  {m.dob ? formatDDMMYYYY(m.dob) : "—"}{" "}
+                                  {m.dob ? formatDDMMYYYY(m.dob) : "-"}{" "}
                                   {m.isMinor && (
                                     <span style={{ fontSize: "0.68rem", backgroundColor: "#FEF6E7", color: "#9A5B13", padding: "1px 6px", borderRadius: "999px", fontWeight: 600 }}>
                                       Minor
                                     </span>
                                   )}
                                 </td>
-                                <td style={{ padding: "0.55rem 0.75rem", fontFamily: "monospace", color: "#172228" }}>{m.pan || "—"}</td>
+                                <td style={{ padding: "0.55rem 0.75rem", fontFamily: "monospace", color: "#172228" }}>{m.pan || "-"}</td>
                                 <td style={{ padding: "0.55rem 0.75rem", color: "#49585F" }}>
-                                  {[m.phone, m.email].filter(Boolean).join(" • ") || "—"}
+                                  {[m.phone, m.email].filter(Boolean).join(" • ") || "-"}
                                 </td>
                               </tr>
                             ))}
@@ -496,7 +496,7 @@ export default function WillDetailInspectorModal({
                                   </div>
                                 </td>
                                 <td style={{ padding: "0.55rem 0.75rem", color: "#49585F" }}>
-                                  <div>{a.identifier || "—"}</div>
+                                  <div>{a.identifier || "-"}</div>
                                   <div style={{ fontSize: "0.7rem", color: "#55636D" }}>{a.addressOrInstitution || ""}</div>
                                 </td>
                                 <td style={{ padding: "0.55rem 0.75rem", textTransform: "capitalize", color: "#49585F" }}>
@@ -524,12 +524,12 @@ export default function WillDetailInspectorModal({
                       <div style={{ display: "flex", gap: "1.5rem", flexWrap: "wrap", paddingBottom: "0.5rem", borderBottom: "1px solid rgba(23, 34, 40, 0.06)" }}>
                         <div>
                           <span style={{ color: "#55636D" }}>Primary Residuary Beneficiary:</span>{" "}
-                          <strong style={{ color: "#172228" }}>{s.residuaryBeneficiaryName || "—"}</strong>
+                          <strong style={{ color: "#172228" }}>{s.residuaryBeneficiaryName || "-"}</strong>
                           {s.residuaryPrimary02Name ? ` & ${s.residuaryPrimary02Name}` : ""}
                         </div>
                         <div>
                           <span style={{ color: "#55636D" }}>Backup Residuary Beneficiary:</span>{" "}
-                          <strong style={{ color: "#172228" }}>{s.residuaryAlternateName || "—"}</strong>
+                          <strong style={{ color: "#172228" }}>{s.residuaryAlternateName || "-"}</strong>
                           {s.residuaryBackup02Name ? ` & ${s.residuaryBackup02Name}` : ""}
                         </div>
                       </div>
@@ -602,14 +602,14 @@ export default function WillDetailInspectorModal({
                       7. Special Wishes & Emotional Purpose
                     </div>
                     <div style={{ padding: "0.85rem 1rem", fontSize: "0.78rem", display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))", gap: "0.6rem" }}>
-                      <div><span style={{ color: "#55636D" }}>Jewellery:</span> <strong style={{ color: "#172228" }}>{s.specialWishes?.jewelleryInstructions || "—"}</strong></div>
-                      <div><span style={{ color: "#55636D" }}>Belongings:</span> <strong style={{ color: "#172228" }}>{s.specialWishes?.personalBelongings || "—"}</strong></div>
-                      <div><span style={{ color: "#55636D" }}>Charitable Gifts:</span> <strong style={{ color: "#172228" }}>{s.specialWishes?.charitableGifts || "—"}</strong></div>
-                      <div><span style={{ color: "#55636D" }}>Digital Accounts:</span> <strong style={{ color: "#172228" }}>{s.specialWishes?.digitalAccounts || "—"}</strong></div>
-                      <div><span style={{ color: "#55636D" }}>Funeral Wishes:</span> <strong style={{ color: "#172228" }}>{s.specialWishes?.funeralCeremonyWishes || "—"}</strong></div>
-                      <div><span style={{ color: "#55636D" }}>Message to Family:</span> <strong style={{ color: "#172228" }}>{s.specialWishes?.personalMessageToFamily || "—"}</strong></div>
+                      <div><span style={{ color: "#55636D" }}>Jewellery:</span> <strong style={{ color: "#172228" }}>{s.specialWishes?.jewelleryInstructions || "-"}</strong></div>
+                      <div><span style={{ color: "#55636D" }}>Belongings:</span> <strong style={{ color: "#172228" }}>{s.specialWishes?.personalBelongings || "-"}</strong></div>
+                      <div><span style={{ color: "#55636D" }}>Charitable Gifts:</span> <strong style={{ color: "#172228" }}>{s.specialWishes?.charitableGifts || "-"}</strong></div>
+                      <div><span style={{ color: "#55636D" }}>Digital Accounts:</span> <strong style={{ color: "#172228" }}>{s.specialWishes?.digitalAccounts || "-"}</strong></div>
+                      <div><span style={{ color: "#55636D" }}>Funeral Wishes:</span> <strong style={{ color: "#172228" }}>{s.specialWishes?.funeralCeremonyWishes || "-"}</strong></div>
+                      <div><span style={{ color: "#55636D" }}>Message to Family:</span> <strong style={{ color: "#172228" }}>{s.specialWishes?.personalMessageToFamily || "-"}</strong></div>
                       <div style={{ gridColumn: "1 / -1" }}>
-                        <span style={{ color: "#55636D" }}>Emotional Purpose:</span> <strong style={{ color: "#172228" }}>{s.emotionalReason || "—"}</strong>
+                        <span style={{ color: "#55636D" }}>Emotional Purpose:</span> <strong style={{ color: "#172228" }}>{s.emotionalReason || "-"}</strong>
                       </div>
                     </div>
                   </div>
@@ -626,9 +626,9 @@ export default function WillDetailInspectorModal({
                 <div><span style={{ color: "#55636D" }}>Will Doc ID:</span> <code style={{ fontSize: "0.75rem", color: "#172228" }}>{target.willId || "None"}</code></div>
                 <div><span style={{ color: "#55636D" }}>Guest Session ID:</span> <code style={{ fontSize: "0.75rem", color: "#C65378" }}>{target.sessionId || "N/A (Registered Account)"}</code></div>
                 <div><span style={{ color: "#55636D" }}>Guest TTL Expiry:</span> <strong style={{ color: "#172228" }}>{formatDateTime(target.expiresAt)}</strong></div>
-                <div><span style={{ color: "#55636D" }}>Auth Status:</span> <strong style={{ textTransform: "capitalize", color: "#172228" }}>{target.authStatus || (target.sessionId ? "Unauthenticated Guest" : "—")}</strong></div>
-                <div><span style={{ color: "#55636D" }}>Lead / Funnel Status:</span> <strong style={{ textTransform: "capitalize", color: "#172228" }}>{target.leadStatus?.replace(/_/g, " ") || "—"}</strong></div>
-                <div><span style={{ color: "#55636D" }}>Acquisition Source:</span> <strong style={{ textTransform: "capitalize", color: "#172228" }}>{target.source?.replace(/_/g, " ") || "—"}</strong></div>
+                <div><span style={{ color: "#55636D" }}>Auth Status:</span> <strong style={{ textTransform: "capitalize", color: "#172228" }}>{target.authStatus || (target.sessionId ? "Unauthenticated Guest" : "-")}</strong></div>
+                <div><span style={{ color: "#55636D" }}>Lead / Funnel Status:</span> <strong style={{ textTransform: "capitalize", color: "#172228" }}>{target.leadStatus?.replace(/_/g, " ") || "-"}</strong></div>
+                <div><span style={{ color: "#55636D" }}>Acquisition Source:</span> <strong style={{ textTransform: "capitalize", color: "#172228" }}>{target.source?.replace(/_/g, " ") || "-"}</strong></div>
                 <div><span style={{ color: "#55636D" }}>Google OAuth ID:</span> <code style={{ fontSize: "0.75rem", color: "#172228" }}>{target.googleId || "None"}</code></div>
                 <div><span style={{ color: "#55636D" }}>First Created:</span> <strong style={{ color: "#172228" }}>{formatDateTime(target.createdAt)}</strong></div>
                 <div><span style={{ color: "#55636D" }}>Last Active / Saved:</span> <strong style={{ color: "#172228" }}>{formatDateTime(target.updatedAt)}</strong></div>

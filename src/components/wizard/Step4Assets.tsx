@@ -1778,7 +1778,7 @@ export default function Step4Assets({
                       placeholder={
                         isHi
                           ? "उदा: SBI होम लोन खाता नं. 12345 (लाभार्थी द्वारा देय)"
-                          : "e.g., SBI Home Loan A/c 12345 — to be discharged by beneficiary"
+                          : "e.g., SBI Home Loan A/c 12345 - to be discharged by beneficiary"
                       }
                       value={loanDetails}
                       onChange={(e) => setLoanDetails(e.target.value)}

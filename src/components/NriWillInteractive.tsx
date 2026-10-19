@@ -29,7 +29,7 @@ const COUNTRY_GUIDES: CountryGuide[] = [
     taxAndDomicileRule:
       "India charges zero inheritance or estate tax (Section 56 Income Tax Act). However, H-1B/non-resident aliens in the US face a strict $60,000 US-situs estate tax exemption, while US citizens/Green Card holders report worldwide capital gains upon selling inherited Indian assets.",
     authenticationMethod:
-      "Hague Apostille Convention: Sign your Indian Will on plain A4 paper before 2 local witnesses. If executing a supporting Power of Attorney or notarized copy, obtain a State Secretary of State Apostille—no Indian Consulate visit required for apostilled documents.",
+      "Hague Apostille Convention: Sign your Indian Will on plain A4 paper before 2 local witnesses. If executing a supporting Power of Attorney or notarized copy, obtain a State Secretary of State Apostille, with no Indian Consulate visit required for apostilled documents.",
     indianConsulateOrAuthority:
       "US State Secretary of State (Apostille) or Indian Embassy Washington D.C. & Consulates in New York, San Francisco, Chicago, Houston, Atlanta & Seattle.",
     actionChecklist: [
@@ -129,7 +129,7 @@ const COUNTRY_GUIDES: CountryGuide[] = [
     taxAndDomicileRule:
       "Singapore abolished estate duty in 2008, and India charges zero estate tax. In EU civil-law countries (like Germany, France, or the Netherlands), EU Succession Regulation (Brussels IV) forced-heirship rules can conflict with Indian personal laws unless a separate Indian Will is executed.",
     authenticationMethod:
-      "Hague Apostille Convention: Both Singapore (via the Singapore Academy of Law — SAL) and EU member states issue Hague Apostilles recognized across India without requiring separate Embassy legalization.",
+      "Hague Apostille Convention: Both Singapore (via the Singapore Academy of Law - SAL) and EU member states issue Hague Apostilles recognized across India without requiring separate Embassy legalization.",
     indianConsulateOrAuthority:
       "Singapore Academy of Law (SAL) / EU Competent Apostille Authorities & Indian Embassies across Singapore, Berlin, The Hague, Dublin & Paris.",
     actionChecklist: [

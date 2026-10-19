@@ -176,10 +176,10 @@ export default function SuccessionCalculator() {
 
           return {
             statuteTitle:
-              "Hindu Succession Act, 1956 — Section 8 & 10 (Male Dying Intestate)",
+              "Hindu Succession Act, 1956 - Section 8 & 10 (Male Dying Intestate)",
             statuteCitation: "Section 8(a) read with Class I of the Schedule",
             summaryAlert: hasSpouse
-              ? `Without a Will, your Wife does NOT inherit 100% of your estate—she receives only ${unitPct.toFixed(
+              ? `Without a Will, your Wife does NOT inherit 100% of your estate, she receives only ${unitPct.toFixed(
                   1
                 )}% (${formatINR(
                   unitAmt
@@ -188,7 +188,7 @@ export default function SuccessionCalculator() {
                   1
                 )}% per unit) without regard to your personal wishes.`,
             testamentaryFreedomNote:
-              "Under Section 30 of the Hindu Succession Act, 1956, you can execute a Will to bequeath 100% of your self-acquired property—and your undivided coparcenary share in ancestral property—to your spouse or any person in any proportion you choose.",
+              "Under Section 30 of the Hindu Succession Act, 1956, you can execute a Will to bequeath 100% of your self-acquired property, and your undivided coparcenary share in ancestral property, to your spouse or any person in any proportion you choose.",
             shares,
           };
         }
@@ -196,7 +196,7 @@ export default function SuccessionCalculator() {
         if (hasFather) {
           return {
             statuteTitle:
-              "Hindu Succession Act, 1956 — Section 8(b) (Class II Entry I)",
+              "Hindu Succession Act, 1956 - Section 8(b) (Class II Entry I)",
             statuteCitation: "Section 8(b) & Class II Entry I of the Schedule",
             summaryAlert:
               "Because there are no surviving Class I legal heirs (no widow, children, or mother), 100% of the estate devolves upon the Father under Class II Entry I.",
@@ -205,7 +205,7 @@ export default function SuccessionCalculator() {
             shares: [
               {
                 heirLabel: "Surviving Father",
-                categoryBadge: "Class II — Entry I Heir",
+                categoryBadge: "Class II - Entry I Heir",
                 fractionLabel: "1 / 1",
                 percentage: 100,
                 amountINR: totalEstateINR,
@@ -217,7 +217,7 @@ export default function SuccessionCalculator() {
         }
 
         return {
-          statuteTitle: "Hindu Succession Act, 1956 — Class II / Agnates / Cognates",
+          statuteTitle: "Hindu Succession Act, 1956 - Class II / Agnates / Cognates",
           statuteCitation: "Section 8(b)–(d) of the Hindu Succession Act, 1956",
           summaryAlert:
             "With no surviving Class I heirs or Father, the estate passes to Class II Entry II heirs (brothers, sisters, grandchildren of predeceased children) or distant agnates/cognates.",
@@ -245,10 +245,10 @@ export default function SuccessionCalculator() {
           const parentsCount = (hasFather ? 1 : 0) + (hasMother ? 1 : 0);
           return {
             statuteTitle:
-              "Hindu Succession Act, 1956 — Section 15(2)(a) Special Reversion Rule",
+              "Hindu Succession Act, 1956 - Section 15(2)(a) Special Reversion Rule",
             statuteCitation: "Section 15(2)(a) of the Hindu Succession Act, 1956",
             summaryAlert:
-              "CRITICAL STATUTORY RULE: When a Hindu female dies without children, property inherited by her from her Father or Mother does NOT go to her Husband—it reverts to the heirs of her Father under Section 15(2)(a)!",
+              "CRITICAL STATUTORY RULE: When a Hindu female dies without children, property inherited by her from her Father or Mother does NOT go to her Husband, it reverts to the heirs of her Father under Section 15(2)(a)!",
             testamentaryFreedomNote:
               "Section 15(2)(a) applies ONLY if she dies intestate (without a Will). By executing a simple Will under Section 30, a Hindu woman can bequeath 100% of property inherited from her parents to her husband or anyone else!",
             shares: [
@@ -328,11 +328,11 @@ export default function SuccessionCalculator() {
 
           return {
             statuteTitle:
-              "Hindu Succession Act, 1956 — Section 15(1)(a) (Female Dying Intestate)",
+              "Hindu Succession Act, 1956 - Section 15(1)(a) (Female Dying Intestate)",
             statuteCitation: "Section 15(1)(a) & Section 16 of the Act",
             summaryAlert:
               hasMother || hasFather
-                ? "Notice under Section 15(1): A Hindu woman's own Mother and Father do NOT inherit under Entry (a) when her husband or children survive—unless she leaves a Will providing for her parents!"
+                ? "Notice under Section 15(1): A Hindu woman's own Mother and Father do NOT inherit under Entry (a) when her husband or children survive, unless she leaves a Will providing for her parents!"
                 : `Your estate is divided equally into ${sec15aUnits} shares (${unitPct.toFixed(
                     1
                   )}% each) between your husband and children.`,
@@ -345,7 +345,7 @@ export default function SuccessionCalculator() {
         // If no husband and no children: Section 15(1)(b) -> Heirs of Husband (unless Sec 15(2) applies)
         return {
           statuteTitle:
-            "Hindu Succession Act, 1956 — Section 15(1)(b)–(c) (Heirs of Husband / Parents)",
+            "Hindu Succession Act, 1956 - Section 15(1)(b)–(c) (Heirs of Husband / Parents)",
           statuteCitation: "Section 15(1)(b) & (c) of the Hindu Succession Act, 1956",
           summaryAlert:
             "Under Section 15(1)(b), when a Hindu woman dies intestate without a surviving husband or children, her self-acquired property devolves upon the heirs of her husband before her own parents (currently under Constitutional scrutiny in the Supreme Court), making a written Will indispensable.",
@@ -370,7 +370,7 @@ export default function SuccessionCalculator() {
     }
 
     // =========================================================================
-    // 2. MUSLIM PERSONAL LAW — SUNNI (HANAFI) & SHIA (ITHNA ASHARI)
+    // 2. MUSLIM PERSONAL LAW - SUNNI (HANAFI) & SHIA (ITHNA ASHARI)
     // =========================================================================
     if (law === "muslim_sunni" || law === "muslim_shia") {
       const isSunni = law === "muslim_sunni";
@@ -456,7 +456,7 @@ export default function SuccessionCalculator() {
             heirLabel:
               sonsCount === 1
                 ? "Son (1)"
-                : `Sons (${sonsCount} — 2 parts each)`,
+                : `Sons (${sonsCount} - 2 parts each)`,
             categoryBadge: "Residuary (Asabah)",
             fractionLabel: `${((singlePart * 2 * sonsCount) * 100).toFixed(1)}% of Estate`,
             percentage: singlePart * 2 * sonsCount * 100,
@@ -470,7 +470,7 @@ export default function SuccessionCalculator() {
               heirLabel:
                 daughtersCount === 1
                   ? "Daughter (1)"
-                  : `Daughters (${daughtersCount} — 1 part each)`,
+                  : `Daughters (${daughtersCount} - 1 part each)`,
               categoryBadge: "Residuary with Son (Asabah bi-ghayriha)",
               fractionLabel: `${((singlePart * daughtersCount) * 100).toFixed(1)}% of Estate`,
               percentage: singlePart * daughtersCount * 100,
@@ -492,8 +492,8 @@ export default function SuccessionCalculator() {
           shares.push({
             heirLabel:
               daughtersCount === 1
-                ? "Daughter (1 — Sole Daughter)"
-                : `Daughters (${daughtersCount} — Shared 2/3rds)`,
+                ? "Daughter (1 - Sole Daughter)"
+                : `Daughters (${daughtersCount} - Shared 2/3rds)`,
             categoryBadge: "Quranic Sharer (+ Radd if no Asabah)",
             fractionLabel:
               daughtersCount === 1 ? "1 / 2 (+ Radd)" : "2 / 3 (+ Radd)",
@@ -537,26 +537,26 @@ export default function SuccessionCalculator() {
 
       return {
         statuteTitle: isSunni
-          ? "Muslim Personal Law (Shariat) Application Act, 1937 — Sunni (Hanafi) Faraid"
-          : "Muslim Personal Law (Shariat) Application Act, 1937 — Shia (Ithna Ashari) Faraid",
+          ? "Muslim Personal Law (Shariat) Application Act, 1937 - Sunni (Hanafi) Faraid"
+          : "Muslim Personal Law (Shariat) Application Act, 1937 - Shia (Ithna Ashari) Faraid",
         statuteCitation:
           "Section 2, Shariat Application Act, 1937 & Wasiyat 1/3rd Rule",
         summaryAlert: `Under Islamic Inheritance Law, you can execute a Wasiyat (Will) for up to ONE-THIRD (1/3rd = ${formatINR(
           totalEstateINR / 3
         )}) of your net estate. ${
           predeceasedChildBranches > 0
-            ? "IMPORTANT: Orphaned grandchildren of a predeceased child are excluded by surviving sons in classical Faraid—making a 1/3rd Wasiyat essential to protect them!"
+            ? "IMPORTANT: Orphaned grandchildren of a predeceased child are excluded by surviving sons in classical Faraid, making a 1/3rd Wasiyat essential to protect them!"
             : ""
         }`,
         testamentaryFreedomNote: isSunni
           ? "Under Sunni (Hanafi) law, your Wasiyat can bequeath up to 1/3rd of your net estate to any non-heir (such as an orphaned grandchild or charity) without anyone's consent. A bequest to an existing legal heir requires other heirs' consent after death."
-          : "Under Shia (Ithna Ashari) law, your Wasiyat can validly bequeath up to 1/3rd of your net estate to ANY person—including an existing legal heir (such as your wife or daughter)—without needing other heirs' consent!",
+          : "Under Shia (Ithna Ashari) law, your Wasiyat can validly bequeath up to 1/3rd of your net estate to ANY person, including an existing legal heir (such as your wife or daughter), without needing other heirs' consent!",
         shares,
       };
     }
 
     // =========================================================================
-    // 3. CHRISTIAN / SPECIAL MARRIAGE ACT (INDIAN SUCCESSION ACT, 1925 — SECTIONS 31–49)
+    // 3. CHRISTIAN / SPECIAL MARRIAGE ACT (INDIAN SUCCESSION ACT, 1925 - SECTIONS 31–49)
     // =========================================================================
     if (law === "christian") {
       const shares: ShareItem[] = [];
@@ -635,11 +635,11 @@ export default function SuccessionCalculator() {
 
       return {
         statuteTitle:
-          "Indian Succession Act, 1925 — Part V, Sections 31–49 (Christian & Special Marriage Act)",
+          "Indian Succession Act, 1925 - Part V, Sections 31–49 (Christian & Special Marriage Act)",
         statuteCitation: "Sections 33, 37, 42 & 43 of the Indian Succession Act, 1925",
         summaryAlert:
           hasSpouse && linealUnits === 0 && (hasFather || hasMother)
-            ? "CRITICAL ALERT (Section 33(b)): If a Christian or Special Marriage Act couple has no children and one spouse dies without a Will, the surviving spouse gets ONLY 50%—the other 50% goes to parents/siblings!"
+            ? "CRITICAL ALERT (Section 33(b)): If a Christian or Special Marriage Act couple has no children and one spouse dies without a Will, the surviving spouse gets ONLY 50%, the other 50% goes to parents/siblings!"
             : "Without a Will, your spouse receives only 33.33% (1/3rd) when children survive, and your surviving parents receive 0% unless you name them in a Will.",
         testamentaryFreedomNote:
           "Under Section 59 of the Indian Succession Act, 1925, executing a Will gives you 100% freedom to distribute your entire estate to your spouse, children, or parents in whatever proportion you choose.",
@@ -648,7 +648,7 @@ export default function SuccessionCalculator() {
     }
 
     // =========================================================================
-    // 4. PARSI INTESTATE SUCCESSION (INDIAN SUCCESSION ACT, 1925 — SECTIONS 50–56)
+    // 4. PARSI INTESTATE SUCCESSION (INDIAN SUCCESSION ACT, 1925 - SECTIONS 50–56)
     // =========================================================================
     const parsiParents = (hasFather ? 1 : 0) + (hasMother ? 1 : 0);
     // Under Section 51 (as amended in 1991): Widow/Widower and each child take equal shares, and each surviving parent takes HALF the share of a child!
@@ -706,7 +706,7 @@ export default function SuccessionCalculator() {
 
     return {
       statuteTitle:
-        "Indian Succession Act, 1925 — Part V, Sections 50–56 (Parsi Intestate Rules)",
+        "Indian Succession Act, 1925 - Part V, Sections 50–56 (Parsi Intestate Rules)",
       statuteCitation: "Section 51 of the Indian Succession Act, 1925 (1991 Amendment)",
       summaryAlert:
         "Under Section 51, your estate is divided so the spouse and each child take equal shares while each surviving parent takes half the share of a child.",
@@ -855,16 +855,16 @@ export default function SuccessionCalculator() {
                   Hindu, Buddhist, Jain or Sikh (Hindu Succession Act, 1956)
                 </option>
                 <option value="muslim_sunni">
-                  Muslim — Sunni Hanafi School (Shariat Act, 1937)
+                  Muslim - Sunni Hanafi School (Shariat Act, 1937)
                 </option>
                 <option value="muslim_shia">
-                  Muslim — Shia Ithna Ashari School (Shariat Act, 1937)
+                  Muslim - Shia Ithna Ashari School (Shariat Act, 1937)
                 </option>
                 <option value="christian">
                   Christian / Special Marriage Act (Indian Succession Act, 1925)
                 </option>
                 <option value="parsi">
-                  Parsi (Indian Succession Act, 1925 — Sec 50–56)
+                  Parsi (Indian Succession Act, 1925 - Sec 50–56)
                 </option>
               </select>
             </div>

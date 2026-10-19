@@ -2,7 +2,7 @@ import { MetadataRoute } from "next";
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: "WillDrafting.in — Legally Valid Online Will in Minutes",
+    name: "WillDrafting.in - Legally Valid Online Will in Minutes",
     short_name: "WillDrafting",
     description:
       "Draft your legally valid Will online in minutes under applicable Indian succession law. Download court-ready printout & register hassle-free.",

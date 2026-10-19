@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     canonical: "https://www.willdrafting.in/aboutus",
   },
   openGraph: {
-    title: "About Us — Will Drafting Law Firm & Estate Planning Advocates in India | WillDrafting.in",
+    title: "About Us - Will Drafting Law Firm & Estate Planning Advocates in India | WillDrafting.in",
     description:
       "Powered by AMA Legal Solutions: Meet the estate planning advocates behind WillDrafting.in helping Resident Indians and NRIs draft lawyer-verified Wills under Indian succession law.",
     url: "https://www.willdrafting.in/aboutus",
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "About Us — Will Drafting Law Firm & Estate Planning Advocates in India | WillDrafting.in",
+    title: "About Us - Will Drafting Law Firm & Estate Planning Advocates in India | WillDrafting.in",
     description:
       "Powered by AMA Legal Solutions: Meet the estate planning advocates behind WillDrafting.in helping Resident Indians and NRIs draft lawyer-verified Wills under Indian succession law.",
     images: ["/desktopusp.jpg"],
@@ -62,7 +62,7 @@ const ABOUT_SCHEMA = {
       "@type": "AboutPage",
       "@id": "https://www.willdrafting.in/aboutus#webpage",
       "url": "https://www.willdrafting.in/aboutus",
-      "name": "About Us — Will Drafting Law Firm & Estate Planning Advocates in India | WillDrafting.in",
+      "name": "About Us - Will Drafting Law Firm & Estate Planning Advocates in India | WillDrafting.in",
       "description":
         "Powered by AMA Legal Solutions: Learn how our estate planning advocates help Resident Indians and NRIs draft, verify, and register court-ready Wills under the Indian Succession Act, 1925.",
       "mainEntity": {
@@ -255,11 +255,11 @@ export default function AboutUsPage() {
               </p>
 
               <p>
-                Developed by <strong className="font-semibold text-[#111827]">AMA Legal Solutions</strong>, WillDrafting.in was built to offer a simpler, more authoritative way. Our legal-tech platform and estate planning advocates turn your wishes into a court-ready legal document—with statutory clauses under the Indian Succession Act, 1925, Hindu Succession Act, 1956, and Muslim Personal Law (Wasiyat).
+                Developed by <strong className="font-semibold text-[#111827]">AMA Legal Solutions</strong>, WillDrafting.in was built to offer a simpler, more authoritative way. Our legal-tech platform and estate planning advocates turn your wishes into a court-ready legal document, with statutory clauses under the Indian Succession Act, 1925, Hindu Succession Act, 1956, and Muslim Personal Law (Wasiyat).
               </p>
 
               <p>
-                Our Bar Council-enrolled advocates help Resident Indians and NRIs/OCIs create legally sound Wills, plan succession, protect ancestral and self-acquired assets, and prevent future family disputes—protected by 256-bit encryption and strict attorney-client confidentiality.
+                Our Bar Council-enrolled advocates help Resident Indians and NRIs/OCIs create legally sound Wills, plan succession, protect ancestral and self-acquired assets, and prevent future family disputes, protected by 256-bit encryption and strict attorney-client confidentiality.
               </p>
               <p>
                 Today, we help families across India and Indian citizens living abroad put their estates in order. The responsibility has never felt routine.

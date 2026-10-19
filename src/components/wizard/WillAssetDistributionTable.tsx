@@ -12,7 +12,7 @@ interface WillAssetDistributionTableProps {
 }
 
 export const formatAssetValue = (val?: number): string => {
-  if (!val || val === 0) return "—";
+  if (!val || val === 0) return "-";
   if (val >= 10000000) {
     const cr = val / 10000000;
     return `₹${cr % 1 === 0 ? cr.toFixed(0) : cr.toFixed(2)} Cr`;

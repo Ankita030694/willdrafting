@@ -580,7 +580,7 @@ export default function WillOverviewDashboard({
                         group.items.map((asset, index) => {
                           const isFirstInGroup = index === 0;
                           const isLastInGroup = index === group.items.length - 1;
-                          const ident = asset.identifier || asset.addressOrInstitution || "—";
+                          const ident = asset.identifier || asset.addressOrInstitution || "-";
                           const isJoint = asset.ownership === "joint";
 
                           return (
@@ -1155,11 +1155,11 @@ export default function WillOverviewDashboard({
                   <div className="bento-modal-grid-2">
                     <div className="bento-data-row">
                       <span className="bento-data-label">Your Full Legal Name:</span>
-                      <strong className="bento-data-val">{state.testator.fullName || "—"}</strong>
+                      <strong className="bento-data-val">{state.testator.fullName || "-"}</strong>
                     </div>
                     <div className="bento-data-row">
                       <span className="bento-data-label">Parent's Name:</span>
-                      <strong className="bento-data-val">{state.testator.fatherOrMotherName || "—"}</strong>
+                      <strong className="bento-data-val">{state.testator.fatherOrMotherName || "-"}</strong>
                     </div>
                     <div className="bento-data-row">
                       <span className="bento-data-label">Family / Succession Law:</span>
@@ -1170,13 +1170,13 @@ export default function WillOverviewDashboard({
                     <div className="bento-data-row">
                       <span className="bento-data-label">Marital Status:</span>
                       <strong className="bento-data-val" style={{ textTransform: "capitalize" }}>
-                        {state.testator.maritalStatus || "—"}
+                        {state.testator.maritalStatus || "-"}
                       </strong>
                     </div>
                     <div className="bento-data-row">
                       <span className="bento-data-label">Date of Birth:</span>
                       <strong className="bento-data-val">
-                        {testatorDobFormatted || state.testator.dob || "—"}{testatorAge ? ` (Age ${testatorAge})` : ""}
+                        {testatorDobFormatted || state.testator.dob || "-"}{testatorAge ? ` (Age ${testatorAge})` : ""}
                       </strong>
                     </div>
                     <div className="bento-data-row">
@@ -1186,29 +1186,29 @@ export default function WillOverviewDashboard({
                     <div className="bento-data-row">
                       <span className="bento-data-label">Gender:</span>
                       <strong className="bento-data-val" style={{ textTransform: "capitalize" }}>
-                        {state.testator.gender || "—"}
+                        {state.testator.gender || "-"}
                       </strong>
                     </div>
                     <div className="bento-data-row">
                       <span className="bento-data-label">Official Email:</span>
-                      <strong className="bento-data-val">{state.testator.email || "—"}</strong>
+                      <strong className="bento-data-val">{state.testator.email || "-"}</strong>
                     </div>
                     <div className="bento-data-row">
                       <span className="bento-data-label">PAN Card Number:</span>
-                      <strong className="bento-data-val" style={{ fontFamily: "monospace" }}>{state.testator.pan || "—"}</strong>
+                      <strong className="bento-data-val" style={{ fontFamily: "monospace" }}>{state.testator.pan || "-"}</strong>
                     </div>
                     <div className="bento-data-row">
                       <span className="bento-data-label">Aadhaar Identification:</span>
-                      <strong className="bento-data-val">{state.testator.aadhaar || "—"}</strong>
+                      <strong className="bento-data-val">{state.testator.aadhaar || "-"}</strong>
                     </div>
                     <div className="bento-data-row" style={{ gridColumn: "span 2" }}>
                       <span className="bento-data-label">Occupation / Work:</span>
-                      <strong className="bento-data-val">{state.testator.workplace || "—"}</strong>
+                      <strong className="bento-data-val">{state.testator.workplace || "-"}</strong>
                     </div>
                     <div className="bento-data-row" style={{ gridColumn: "span 2" }}>
                       <span className="bento-data-label">Home Address:</span>
                       <strong className="bento-data-val">
-                        {state.testator.address || "—"}, {state.testator.city} {state.testator.state} -{" "}
+                        {state.testator.address || "-"}, {state.testator.city} {state.testator.state} -{" "}
                         {state.testator.pincode}
                       </strong>
                     </div>
@@ -1216,7 +1216,7 @@ export default function WillOverviewDashboard({
                       <span className="bento-data-label">Previous Will Status:</span>
                       <strong className="bento-data-val">
                         {state.testator.hasPreviousWill
-                          ? "You had an earlier Will — this new Will officially cancels and replaces it."
+                          ? "You had an earlier Will - this new Will officially cancels and replaces it."
                           : "No earlier Will. This is your first official Will."}
                       </strong>
                     </div>
@@ -1558,7 +1558,7 @@ export default function WillOverviewDashboard({
                         {state.executorPrimary?.name || "Not Chosen Yet ⚠️"}
                       </strong>
                       <p style={{ fontSize: "0.78rem", color: "#49585F", margin: "0.2rem 0 0" }}>
-                        Relationship: {state.executorPrimary?.relationship || "—"}
+                        Relationship: {state.executorPrimary?.relationship || "-"}
                       </p>
                       <p style={{ fontSize: "0.75rem", color: "#49585F", margin: "0.4rem 0 0" }}>
                         The person responsible for carrying out your Will, settling any pending dues, and distributing assets to your loved ones.
@@ -1571,7 +1571,7 @@ export default function WillOverviewDashboard({
                         {state.executorAlternate?.name || "None Chosen"}
                       </strong>
                       <p style={{ fontSize: "0.78rem", color: "#49585F", margin: "0.2rem 0 0" }}>
-                        Relationship: {state.executorAlternate?.relationship || "—"}
+                        Relationship: {state.executorAlternate?.relationship || "-"}
                       </p>
                       <p style={{ fontSize: "0.75rem", color: "#49585F", margin: "0.4rem 0 0" }}>
                         Steps in to manage your Will if your primary manager is unable or unavailable.
@@ -1584,7 +1584,7 @@ export default function WillOverviewDashboard({
                         {state.guardianPrimary?.name || (hasMinors ? "Appointment Required for Minor Children ⚠️" : "Not Required (No children under 18)")}
                       </strong>
                       <p style={{ fontSize: "0.78rem", color: "#49585F", margin: "0.2rem 0 0" }}>
-                        Relationship: {state.guardianPrimary?.relationship || "—"}
+                        Relationship: {state.guardianPrimary?.relationship || "-"}
                       </p>
                       <p style={{ fontSize: "0.75rem", color: "#49585F", margin: "0.4rem 0 0" }}>
                         Will have legal custody and take loving care of your children until they turn 18.

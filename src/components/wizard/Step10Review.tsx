@@ -1164,7 +1164,7 @@ export default function Step10Review({
               <span className="bento-tile-value" style={{ fontSize: "0.72rem", fontWeight: 600 }}>
                 {testator.hasPreviousWill
                   ? "Previous Will declared and formally revoked under Section 62 of Indian Succession Act."
-                  : "First & Original Will — Declaring full testamentary freedom under Section 59."}
+                  : "First & Original Will - Declaring full testamentary freedom under Section 59."}
               </span>
             </div>
           </div>
@@ -1756,7 +1756,7 @@ export default function Step10Review({
                               {/* Identifier & Institution / Policy Details */}
                               <td style={{ padding: "0.45rem 0.75rem", fontSize: "0.72rem", color: "#49585F" }}>
                                 <span style={{ display: "block", fontFamily: (a.policyNumber || a.identifier) ? "monospace" : "inherit" }}>
-                                  {a.policyNumber ? `Policy: ${a.policyNumber}` : a.identifier || "—"}
+                                  {a.policyNumber ? `Policy: ${a.policyNumber}` : a.identifier || "-"}
                                 </span>
                                 <span style={{ fontSize: "0.66rem", color: "#5E717D" }}>
                                   {a.insuranceCompany || a.addressOrInstitution || ""}

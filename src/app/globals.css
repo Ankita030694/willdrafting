@@ -14,12 +14,12 @@
 /* ==========================================================================
    WILLDRAFTING DESIGN SYSTEM (globals.css)
    Colors strictly adhere to user specification:
-     Navy:     #1B2A4A — Header, nav bar, form field labels, primary brand anchor
-     Slate:    #3B5173 — Body headings, secondary buttons, links, accents
-     Gold:     #C9A227 — Primary CTA ("start my will", "download") with charcoal text
-     Sage:     #7C9473 — Progress indicators, "saved"/success states, secondary CTA
-     Cream:    #FAF7F0 — Page background instead of pure white
-     Charcoal: #2B2B2B — Body text instead of pure black
+     Navy:     #1B2A4A - Header, nav bar, form field labels, primary brand anchor
+     Slate:    #3B5173 - Body headings, secondary buttons, links, accents
+     Gold:     #C9A227 - Primary CTA ("start my will", "download") with charcoal text
+     Sage:     #7C9473 - Progress indicators, "saved"/success states, secondary CTA
+     Cream:    #FAF7F0 - Page background instead of pure white
+     Charcoal: #2B2B2B - Body text instead of pure black
    Typography:
      Headings: Plus Jakarta Sans
      Body/Subheadings/All else: Plus Jakarta Sans
@@ -779,7 +779,7 @@ button, input, select, textarea {
 
 /* ==========================================================================
    MOBILE-ONLY WIZARD (/start/[step]) DESIGN & ACCESSIBILITY COMPLIANCE
-   Strictly scoped to @media screen and (max-width: 768px) — zero impact on desktop
+   Strictly scoped to @media screen and (max-width: 768px) - zero impact on desktop
    ========================================================================== */
 @media screen and (max-width: 768px) {
   /* 1. Shell & Viewport Container */
@@ -836,7 +836,7 @@ button, input, select, textarea {
     overflow-x: hidden !important;
   }
 
-  /* 2. Step Progress Card — Compact 2-line layout on mobile (Title + % on line 1, track on line 2) */
+  /* 2. Step Progress Card - Compact 2-line layout on mobile (Title + % on line 1, track on line 2) */
   .wizard-step-progress-card {
     padding: 0.5rem 0.75rem !important;
     margin-bottom: 0.55rem !important;
@@ -877,7 +877,7 @@ button, input, select, textarea {
     flex-shrink: 0 !important;
   }
 
-  /* 3. Locked / Verified Step Banner — Color-compliant & single-line non-wrapping buttons */
+  /* 3. Locked / Verified Step Banner - Color-compliant & single-line non-wrapping buttons */
   .wizard-locked-banner {
     background-color: #FFFFFF !important;
     border: 1.5px solid rgba(95, 126, 117, 0.4) !important;
@@ -1041,7 +1041,7 @@ button, input, select, textarea {
     padding: 0.32rem 0.65rem !important;
   }
 
-  /* 8. Step 3 Family Circle — Stack 3 columns into 1 clean vertical column on mobile */
+  /* 8. Step 3 Family Circle - Stack 3 columns into 1 clean vertical column on mobile */
   .family-directive-banner {
     padding: 0.65rem 0.8rem !important;
     gap: 0.55rem !important;

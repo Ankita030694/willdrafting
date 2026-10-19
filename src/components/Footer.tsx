@@ -171,7 +171,7 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-[#1B2A4A]/10 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 text-xs text-[#7B8791]">
           <div>
-            © {new Date().getFullYear()} WillDrafting.in — All rights reserved.
+            © {new Date().getFullYear()} WillDrafting.in - All rights reserved.
           </div>
 
           <div className="text-center">

@@ -317,7 +317,7 @@ export default async function BlogSlugPage({ params }: PageProps) {
               </div>
 
               <p className="text-[14.5px] leading-[1.65] text-[#49585F] mb-5">
-                Draft a legally valid Indian Will reviewed by AMA Legal Solutions advocates—compliant with Section 63, Hindu Succession Act, and Shariat rules.
+                Draft a legally valid Indian Will reviewed by AMA Legal Solutions advocates, compliant with Section 63, Hindu Succession Act, and Shariat rules.
               </p>
 
               <div className="space-y-2.5">

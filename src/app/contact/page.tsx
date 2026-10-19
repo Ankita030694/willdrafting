@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     canonical: "https://www.willdrafting.in/contact",
   },
   openGraph: {
-    title: "Will Drafting Legal Consultation India — Contact Estate Planning Lawyers | WillDrafting.in",
+    title: "Will Drafting Legal Consultation India - Contact Estate Planning Lawyers | WillDrafting.in",
     description:
       "Book a confidential Will drafting legal consultation in India with AMA Legal Solutions. Get expert estate planning, NRI Will, HUF coparcenary, and Sub-Registrar registration assistance.",
     url: "https://www.willdrafting.in/contact",
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Will Drafting Legal Consultation India — Contact Estate Planning Lawyers | WillDrafting.in",
+    title: "Will Drafting Legal Consultation India - Contact Estate Planning Lawyers | WillDrafting.in",
     description:
       "Book a confidential Will drafting legal consultation in India with AMA Legal Solutions. Get expert estate planning, NRI Will, HUF coparcenary, and Sub-Registrar registration assistance.",
     images: ["/desktopusp.jpg"],
@@ -67,7 +67,7 @@ const CONTACT_SCHEMA = {
       "@type": "ContactPage",
       "@id": "https://www.willdrafting.in/contact#webpage",
       "url": "https://www.willdrafting.in/contact",
-      "name": "Will Drafting Legal Consultation India — Contact Estate Planning Lawyers | WillDrafting.in",
+      "name": "Will Drafting Legal Consultation India - Contact Estate Planning Lawyers | WillDrafting.in",
       "description":
         "Book a confidential Will drafting legal consultation in India with AMA Legal Solutions for Resident Indian and NRI estates, HUF shares, and Sub-Registrar Will registration.",
       "mainEntity": {

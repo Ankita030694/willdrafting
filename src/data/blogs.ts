@@ -83,7 +83,7 @@ export const BLOG_ARTICLES: BlogArticle[] = [
           "While Indian courts recognize foreign wills in principle, executing a foreign Will in India triggers Section 228 of the Indian Succession Act, 1925. Before any Indian bank, cooperative housing society, or Sub-Registrar accepts a foreign Will, your beneficiaries must first wait 6 to 18 months for the overseas court (in California, London, Ontario, or Dubai) to grant probate, obtain apostilled or Indian Embassy-attested certified copies, and then file a second ancillary petition in an Indian District Court or High Court for 'Letters of Administration with Authenticated Copy of the Will Annexed'.",
         ],
         calloutQuote:
-          "Under the Two-Will Strategy, your foreign Will governs your overseas assets and your Indian Will exclusively governs your Indian movable and immovable estate—allowing both jurisdictions to administer your estate simultaneously without waiting on each other.",
+          "Under the Two-Will Strategy, your foreign Will governs your overseas assets and your Indian Will exclusively governs your Indian movable and immovable estate, allowing both jurisdictions to administer your estate simultaneously without waiting on each other.",
       },
       {
         heading: "The Golden Rule: Non-Revocation Territorial Scope Clauses",
@@ -95,7 +95,7 @@ export const BLOG_ARTICLES: BlogArticle[] = [
       {
         heading: "FEMA Rules on Inheriting Residential & Agricultural Property",
         paragraphs: [
-          "Under Section 6(5) of the Foreign Exchange Management Act (FEMA), 1999 and the FEMA (Non-Debt Instruments) Rules, 2019, an NRI or OCI is legally permitted to inherit any immovable property in India—including residential apartments, commercial offices, and even agricultural land, farmhouse, or plantation property—from a person resident in India or from another NRI/OCI who acquired it in compliance with FEMA laws in force at the time.",
+          "Under Section 6(5) of the Foreign Exchange Management Act (FEMA), 1999 and the FEMA (Non-Debt Instruments) Rules, 2019, an NRI or OCI is legally permitted to inherit any immovable property in India, including residential apartments, commercial offices, and even agricultural land, farmhouse, or plantation property, from a person resident in India or from another NRI/OCI who acquired it in compliance with FEMA laws in force at the time.",
           "However, while an NRI or OCI can lawfully inherit agricultural land through a valid Indian Will, FEMA prohibits them from selling or gifting that agricultural land to another NRI or OCI; any subsequent sale must be made only to a person resident in India who is an Indian citizen.",
         ],
       },
@@ -103,7 +103,7 @@ export const BLOG_ARTICLES: BlogArticle[] = [
         heading: "How an NRI Executes a Valid Indian Will from Abroad",
         paragraphs: [
           "Under Section 63 of the Indian Succession Act, 1925, an NRI does not need to fly to India or purchase Indian stamp paper to make a valid Indian Will. You can print your Indian Will on plain A4 paper in New York, London, Dubai, or Toronto and sign it in the simultaneous presence of two adult independent witnesses (such as friends, colleagues, or neighbors in your country of residence) who are NOT beneficiaries or spouses of beneficiaries.",
-          "For added evidentiary weight—especially if you are bequeathing high-value real estate in India or nominating an Indian executor—you may also attach a physician's sound-mind certificate and, if executing a supporting Power of Attorney for property mutation, have it apostilled under the Hague Convention or attested at the local Indian Embassy or Consulate.",
+          "For added evidentiary weight, especially if you are bequeathing high-value real estate in India or nominating an Indian executor, you may also attach a physician's sound-mind certificate and, if executing a supporting Power of Attorney for property mutation, have it apostilled under the Hague Convention or attested at the local Indian Embassy or Consulate.",
         ],
       },
     ],
@@ -163,7 +163,7 @@ export const BLOG_ARTICLES: BlogArticle[] = [
           "In Indian law, nomination and inheritance are two completely distinct legal concepts. A nomination exists solely to give the bank, insurance company, or depository participant a valid discharge of liability so the institution knows whose hands to place the funds into immediately after the account holder's passing.",
         ],
         calloutQuote:
-          "A nominee is a mere stop-gap custodian or receiving hand. Legal ownership of the asset vests strictly in the beneficiaries named in a valid Will—or, if there is no Will, in all statutory legal heirs equally.",
+          "A nominee is a mere stop-gap custodian or receiving hand. Legal ownership of the asset vests strictly in the beneficiaries named in a valid Will, or, if there is no Will, in all statutory legal heirs equally.",
       },
       {
         heading: "Supreme Court Rulings: Sarbati Devi & Shakti Yezdani (2023)",
@@ -223,14 +223,14 @@ export const BLOG_ARTICLES: BlogArticle[] = [
       "when is probate required in india",
     ],
     title: "Probate of a Will in India: The 2025 Amendment Explained",
-    lead: "For 100 years, Section 213 of the Indian Succession Act forced Hindus, Buddhists, Sikhs, and Jains in Mumbai, Chennai, and Kolkata to obtain compulsory court probate. Here is how the Repealing and Amending Act, 2025 changes the law—and when probate is still required.",
+    lead: "For 100 years, Section 213 of the Indian Succession Act forced Hindus, Buddhists, Sikhs, and Jains in Mumbai, Chennai, and Kolkata to obtain compulsory court probate. Here is how the Repealing and Amending Act, 2025 changes the law, and when probate is still required.",
     date: "October 04, 2026",
     imageSrc: "/images/advocate.jpg",
     author: "Advocate Rajeshwar Rao",
     authorRole: "Senior Counsel, High Court, AMA Legal Solutions",
     shortVersion: [
       "Under Section 2(f) of the Indian Succession Act, 'Probate' is a copy of a Will certified under the seal of a court of competent jurisdiction granting administration to the executor",
-      "Historically, Section 213 made probate compulsory only for Wills executed in—or covering immovable property in—the colonial Presidency Towns of Mumbai, Chennai, and Kolkata",
+      "Historically, Section 213 made probate compulsory only for Wills executed in, or covering immovable property in, the colonial Presidency Towns of Mumbai, Chennai, and Kolkata",
       "Parliament's Repealing and Amending Act, 2025 omitted the colonial-era compulsory mandate of Section 213, harmonizing probate rules across India",
       "Probate remains essential whenever a Will is contested, when foreign wills are enforced in India, or when high-value housing societies and banks demand judicial authentication",
     ],
@@ -239,13 +239,13 @@ export const BLOG_ARTICLES: BlogArticle[] = [
         heading: "What Is Probate Under the Indian Succession Act, 1925?",
         paragraphs: [
           "Defined under Section 2(f) of the Indian Succession Act, 1925, Probate is the official judicial certification by a competent court confirming that a Will was validly executed by the deceased testator in a sound disposing mind, is the testator's genuine last testament, and empowers the named Executor to administer and distribute the estate.",
-          "Crucially, under Section 222 of the Act, Probate can be granted only to an Executor appointed by the Will. If a Will does not name an Executor, the beneficiaries must instead petition the court for 'Letters of Administration with the Will Annexed' under Section 232—which is why naming a primary and alternate executor in your Will is critical.",
+          "Crucially, under Section 222 of the Act, Probate can be granted only to an Executor appointed by the Will. If a Will does not name an Executor, the beneficiaries must instead petition the court for 'Letters of Administration with the Will Annexed' under Section 232, which is why naming a primary and alternate executor in your Will is critical.",
         ],
       },
       {
         heading: "Mumbai, Chennai & Kolkata: Section 213 vs. The 2025 Reform",
         paragraphs: [
-          "For nearly a century, Section 213 read with Section 57 of the Indian Succession Act created a geographic divide: if a Hindu, Buddhist, Sikh, or Jain executed a Will in Delhi, Bangalore, Pune, Hyderabad, Ahmedabad, or Noida for property outside the former Presidency Towns, compulsory probate was NOT required. Yet if the Will was signed within—or covered a flat located in—Mumbai, Chennai, or Kolkata, no right as executor or legatee could be established in court without first obtaining High Court probate.",
+          "For nearly a century, Section 213 read with Section 57 of the Indian Succession Act created a geographic divide: if a Hindu, Buddhist, Sikh, or Jain executed a Will in Delhi, Bangalore, Pune, Hyderabad, Ahmedabad, or Noida for property outside the former Presidency Towns, compulsory probate was NOT required. Yet if the Will was signed within, or covered a flat located in, Mumbai, Chennai, or Kolkata, no right as executor or legatee could be established in court without first obtaining High Court probate.",
           "With the enactment of the Repealing and Amending Act, 2025 omitting Section 213 of the Indian Succession Act, Parliament dismantled this colonial geographic discrimination. Statutory rights under an uncontested Will can now be asserted uniformly across Indian cities without an automatic statutory bar under Section 213.",
         ],
         calloutQuote:
@@ -263,7 +263,7 @@ export const BLOG_ARTICLES: BlogArticle[] = [
       {
         heading: "How to Draft Your Will so Your Family Avoids Court Delays",
         paragraphs: [
-          "Whether your property is in Mumbai, Delhi NCR, Bengaluru, Chennai, Hyderabad, or Kolkata, the way to spare your family 12 to 24 months of probate court fees and newspaper citations is proactive drafting: appoint a clear executor, ensure two independent adult witnesses sign properly under Section 63, align your bank/Demat nominations with your Will, and—where family friction is possible—attach a doctor's medical fitness certificate or register the Will at the local Sub-Registrar office.",
+          "Whether your property is in Mumbai, Delhi NCR, Bengaluru, Chennai, Hyderabad, or Kolkata, the way to spare your family 12 to 24 months of probate court fees and newspaper citations is proactive drafting: appoint a clear executor, ensure two independent adult witnesses sign properly under Section 63, align your bank/Demat nominations with your Will, and, where family friction is possible, attach a doctor's medical fitness certificate or register the Will at the local Sub-Registrar office.",
         ],
       },
     ],
@@ -440,7 +440,7 @@ export const BLOG_ARTICLES: BlogArticle[] = [
         heading: "The Statutory Default: When the State Writes Your Will",
         paragraphs: [
           "When an individual passes away without leaving a valid testament, they die 'intestate'. In that instant, personal preferences, oral promises, and unspoken family understandings carry zero legal weight.",
-          "Instead, rigid statutory schedules determine exactly who receives which fractional share of your lifetime savings, ancestral holdings, and self-acquired real estate. Under the Hindu Succession Act, 1956, an estate is divided equally among Class I legal heirs — surviving spouse, mother, sons, and daughters.",
+          "Instead, rigid statutory schedules determine exactly who receives which fractional share of your lifetime savings, ancestral holdings, and self-acquired real estate. Under the Hindu Succession Act, 1956, an estate is divided equally among Class I legal heirs - surviving spouse, mother, sons, and daughters.",
         ],
       },
       {
@@ -484,13 +484,13 @@ export const BLOG_ARTICLES: BlogArticle[] = [
       "huf undivided share will india",
     ],
     title: "Can Ancestral Property Be Willed in India? Section 30 Guide",
-    lead: "Over 65% of civil property disputes in India begin because a testator tried to bequeath an entire ancestral property as if it were self-acquired. Here is how Section 30 of the Hindu Succession Act, 1956 governs what you can—and cannot—transfer by Will.",
+    lead: "Over 65% of civil property disputes in India begin because a testator tried to bequeath an entire ancestral property as if it were self-acquired. Here is how Section 30 of the Hindu Succession Act, 1956 governs what you can, and cannot, transfer by Will.",
     date: "October 16, 2026",
     imageSrc: "/4.jpg",
     author: "Advocate Rajeshwar Rao",
     authorRole: "Senior Estate & Succession Counsel, AMA Legal Solutions",
     shortVersion: [
-      "You have 100% testamentary freedom over self-acquired property—you can bequeath it to anyone, including one child, a spouse, a friend, or a charity",
+      "You have 100% testamentary freedom over self-acquired property, you can bequeath it to anyone, including one child, a spouse, a friend, or a charity",
       "You CANNOT Will away an entire ancestral (Mitakshara coparcenary) property; doing so makes the bequest void beyond your personal share",
       "Under Section 30 of the Hindu Succession Act, 1956, you CAN validly bequeath your own undivided coparcenary share in ancestral/HUF property by Will",
       "Following Vineeta Sharma v. Rakesh Sharma (2020), daughters are coparceners by birth on par with sons and possess an equal undivided share in ancestral property",
@@ -504,12 +504,12 @@ export const BLOG_ARTICLES: BlogArticle[] = [
           "Ancestral property, by contrast, is property inherited up to four generations of male/coparcenary lineage (great-grandfather to grandfather to father to son/daughter) that has remained undivided without a formal partition or family settlement. Every coparcener acquires a vested legal right in ancestral property by birth itself.",
         ],
         calloutQuote:
-          "Under Section 30 of the Hindu Succession Act, 1956, a Hindu cannot Will away the entire ancestral house—but has the absolute statutory right to bequeath their own undivided fractional share in that ancestral property.",
+          "Under Section 30 of the Hindu Succession Act, 1956, a Hindu cannot Will away the entire ancestral house, but has the absolute statutory right to bequeath their own undivided fractional share in that ancestral property.",
       },
       {
         heading: "Section 30 of the Hindu Succession Act: The Undivided Share Rule",
         paragraphs: [
-          "Prior to 1956, classical Mitakshara law applied the doctrine of survivorship: when a coparcener died, his interest in joint family property automatically merged into the surviving coparceners, and he could not execute a Will for his share. Section 30 of the Hindu Succession Act, 1956 revolutionized Indian estate law by expressly enacting that any Hindu may dispose by Will of any property capable of being so disposed of by him—and the Explanation to Section 30 clarifies that 'the interest of a male Hindu in a Mitakshara coparcenary property, or the interest of a member of a tarwad, tavazhi, illom, kutumba or kavaru, shall be deemed to be property capable of being disposed of by him or by her'.",
+          "Prior to 1956, classical Mitakshara law applied the doctrine of survivorship: when a coparcener died, his interest in joint family property automatically merged into the surviving coparceners, and he could not execute a Will for his share. Section 30 of the Hindu Succession Act, 1956 revolutionized Indian estate law by expressly enacting that any Hindu may dispose by Will of any property capable of being so disposed of by him, and the Explanation to Section 30 clarifies that 'the interest of a male Hindu in a Mitakshara coparcenary property, or the interest of a member of a tarwad, tavazhi, illom, kutumba or kavaru, shall be deemed to be property capable of being disposed of by him or by her'.",
           "After the Hindu Succession (Amendment) Act, 2005 equalized daughters as coparceners under Section 6, both male and female coparceners can bequeath their undivided coparcenary share by Will. How is that share calculated? Under Section 6(3), the law assumes a 'notional (deemed) partition' of the coparcenary property immediately before the testator's death. For example, if a father, his wife, one son, and one daughter hold an undivided ancestral property, and a notional partition takes place in states where the wife also takes a share on partition between father and children, the father's fractional coparcenary share (e.g., 1/3rd or 1/4th depending on the school of Mitakshara law) is carved out and passes strictly to the beneficiary named in his Will.",
         ],
       },
@@ -517,21 +517,21 @@ export const BLOG_ARTICLES: BlogArticle[] = [
         heading: "Supreme Court Rulings: Vineeta Sharma & Arshnoor Singh",
         paragraphs: [
           "Two landmark Supreme Court of India judgments define modern Will drafting for Indian families:",
-          "1. Vineeta Sharma v. Rakesh Sharma (2020) 9 SCC 1: A three-judge Constitutional Bench of the Supreme Court settled that the 2005 Amendment to Section 6 confers coparcenary status on a daughter by birth in the same manner as a son—regardless of whether her father was alive on September 9, 2005 (unless a registered partition deed or court decree of partition had already been effected before December 20, 2004). Consequently, a father cannot treat a daughter as excluded from ancestral coparcenary property, and a daughter can equally Will away her own undivided coparcenary share under Section 30.",
-          "2. Arshnoor Singh v. Harpal Kaur (2019) & Uttam v. Saubhag Singh (2016): The Supreme Court clarified the crucial boundary between Mitakshara coparcenary property and property inherited under Section 8 of the Hindu Succession Act, 1956. Once a joint family property undergoes an actual partition, or when a Hindu inherits his father's self-acquired property intestate under Section 8 after 1956, that inherited share becomes the recipient's separate/individual property vis-à-vis his own sons and daughters—meaning he can Will 100% of it freely.",
+          "1. Vineeta Sharma v. Rakesh Sharma (2020) 9 SCC 1: A three-judge Constitutional Bench of the Supreme Court settled that the 2005 Amendment to Section 6 confers coparcenary status on a daughter by birth in the same manner as a son, regardless of whether her father was alive on September 9, 2005 (unless a registered partition deed or court decree of partition had already been effected before December 20, 2004). Consequently, a father cannot treat a daughter as excluded from ancestral coparcenary property, and a daughter can equally Will away her own undivided coparcenary share under Section 30.",
+          "2. Arshnoor Singh v. Harpal Kaur (2019) & Uttam v. Saubhag Singh (2016): The Supreme Court clarified the crucial boundary between Mitakshara coparcenary property and property inherited under Section 8 of the Hindu Succession Act, 1956. Once a joint family property undergoes an actual partition, or when a Hindu inherits his father's self-acquired property intestate under Section 8 after 1956, that inherited share becomes the recipient's separate/individual property vis-à-vis his own sons and daughters, meaning he can Will 100% of it freely.",
         ],
       },
       {
         heading: "When Does Inherited Property Become Self-Acquired (Section 8)?",
         paragraphs: [
           "This is the most common point of confusion for homeowners in Delhi, Mumbai, Bengaluru, and Chennai. Many people think: 'I inherited this house from my father, so it is ancestral property.' That is legally incorrect if your father had purchased that house from his own earnings.",
-          "As the Supreme Court ruled in Commissioner of Wealth Tax v. Chander Sen (1986) and Yudhishter v. Ashok Kumar (1987), when a son or daughter inherits their father's self-acquired property under Section 8 of the Hindu Succession Act, 1956 (or receives it under the father's Will), they take it as their own separate, self-acquired property—not as ancestral coparcenary property with their own children. You have 100% freedom to bequeath such property in your Will.",
+          "As the Supreme Court ruled in Commissioner of Wealth Tax v. Chander Sen (1986) and Yudhishter v. Ashok Kumar (1987), when a son or daughter inherits their father's self-acquired property under Section 8 of the Hindu Succession Act, 1956 (or receives it under the father's Will), they take it as their own separate, self-acquired property, not as ancestral coparcenary property with their own children. You have 100% freedom to bequeath such property in your Will.",
         ],
       },
       {
         heading: "How to Draft an Uncontestable Clause for HUF & Personal Assets",
         paragraphs: [
-          "To prevent your Will from being challenged as partially void, never lump ancestral/HUF assets and self-acquired properties into a vague single paragraph. Your Will should schedule Self-Acquired Movable & Immovable Properties in Part A (specifying how title was acquired—by registered Sale Deed, Conveyance, Allotment Letter, or prior Will) and schedule your Undivided Coparcenary / HUF Interest in Part B with an explicit citation to Section 30 of the Hindu Succession Act, 1956.",
+          "To prevent your Will from being challenged as partially void, never lump ancestral/HUF assets and self-acquired properties into a vague single paragraph. Your Will should schedule Self-Acquired Movable & Immovable Properties in Part A (specifying how title was acquired, by registered Sale Deed, Conveyance, Allotment Letter, or prior Will) and schedule your Undivided Coparcenary / HUF Interest in Part B with an explicit citation to Section 30 of the Hindu Succession Act, 1956.",
         ],
       },
     ],
@@ -552,8 +552,8 @@ export const BLOG_ARTICLES: BlogArticle[] = [
         ],
         [
           "Can It Be Willed? (Testamentary Limit)",
-          "Yes — 100% of the property can be bequeathed to any person or entity",
-          "Yes, partially — ONLY your undivided coparcenary share can be bequeathed under Section 30",
+          "Yes - 100% of the property can be bequeathed to any person or entity",
+          "Yes, partially - ONLY your undivided coparcenary share can be bequeathed under Section 30",
         ],
         [
           "Birthright of Sons & Daughters",
@@ -562,7 +562,7 @@ export const BLOG_ARTICLES: BlogArticle[] = [
         ],
         [
           "Can Natural Heirs Be Excluded?",
-          "Yes — you can disinherit any Class I heir from your self-acquired estate with clear reasons",
+          "Yes - you can disinherit any Class I heir from your self-acquired estate with clear reasons",
           "You can redirect ONLY your own fractional coparcenary share; other coparceners retain their birth shares",
         ],
       ],
@@ -615,7 +615,7 @@ export const BLOG_ARTICLES: BlogArticle[] = [
     author: "Advocate Sunita Deshmukh",
     authorRole: "Partner, Succession & Wealth Practice, AMA Legal Solutions",
     shortVersion: [
-      "Under Section 18(e) of the Registration Act, 1908, Will registration is optional—an unregistered Will is 100% legally valid, and a registered Will can still be revoked or replaced at any time",
+      "Under Section 18(e) of the Registration Act, 1908, Will registration is optional, an unregistered Will is 100% legally valid, and a registered Will can still be revoked or replaced at any time",
       "There is ZERO (₹0) Stamp Duty on registering a Will across every state in India; you only pay a nominal government registration/scanning fee (typically ₹100 to ₹1,000)",
       "Under Section 27 of the Registration Act, a Will has NO 4-month time limit and can be presented for registration at any time after signing",
       "Senior or bedridden testators can request a Sub-Registrar Home/Hospital Visit under Section 31 or deposit a private Sealed Cover Will with the District Registrar under Section 42",
@@ -634,10 +634,10 @@ export const BLOG_ARTICLES: BlogArticle[] = [
         heading: "Step-by-Step Procedure to Register a Will at the Sub-Registrar",
         paragraphs: [
           "Registering your Will at the Sub-Registrar of Assurances takes roughly 45 to 60 minutes once your appointment slot is booked:",
-          "Step 1 — Print on Plain Durable Paper: Print your finalized, advocate-reviewed Will on sturdy A4 paper (or green legal ledger paper). Do not buy stamp paper, as Wills are exempt from stamp duty across India.",
-          "Step 2 — Book an Online SRO Slot: Log into your state's Inspector General of Registration (IGR) portal (such as IGR Maharashtra, DORIS/NGDRS Delhi, Kaveri Online Karnataka, or TNREGINET Tamil Nadu) under 'Will Registration' and pay the nominal registration/scanning fee via e-Challan or GRAS.",
-          "Step 3 — Assemble Testator, 2 Attesting Witnesses & Doctor Certificate: Visit the SRO with original Aadhaar/PAN/Passport IDs for yourself and two independent adult witnesses (who must NOT be beneficiaries under the Will). Carry two passport-size photographs of each person and, if you are a senior citizen, a Registered Medical Practitioner's (RMP) Mental Fitness Certificate.",
-          "Step 4 — Execution, Biometrics & Book No. 3 Entry: The Sub-Registrar verifies your identity and free volition, captures digital photographs and thumb impressions of the testator and both witnesses, endorses the back of every page, records the Will in confidential Book No. 3 (which is NOT open to public title searches during your lifetime), and returns the registered original Will to you.",
+          "Step 1 - Print on Plain Durable Paper: Print your finalized, advocate-reviewed Will on sturdy A4 paper (or green legal ledger paper). Do not buy stamp paper, as Wills are exempt from stamp duty across India.",
+          "Step 2 - Book an Online SRO Slot: Log into your state's Inspector General of Registration (IGR) portal (such as IGR Maharashtra, DORIS/NGDRS Delhi, Kaveri Online Karnataka, or TNREGINET Tamil Nadu) under 'Will Registration' and pay the nominal registration/scanning fee via e-Challan or GRAS.",
+          "Step 3 - Assemble Testator, 2 Attesting Witnesses & Doctor Certificate: Visit the SRO with original Aadhaar/PAN/Passport IDs for yourself and two independent adult witnesses (who must NOT be beneficiaries under the Will). Carry two passport-size photographs of each person and, if you are a senior citizen, a Registered Medical Practitioner's (RMP) Mental Fitness Certificate.",
+          "Step 4 - Execution, Biometrics & Book No. 3 Entry: The Sub-Registrar verifies your identity and free volition, captures digital photographs and thumb impressions of the testator and both witnesses, endorses the back of every page, records the Will in confidential Book No. 3 (which is NOT open to public title searches during your lifetime), and returns the registered original Will to you.",
         ],
       },
       {
@@ -746,7 +746,7 @@ export const BLOG_ARTICLES: BlogArticle[] = [
       "muslim personal law shariat application act 1937 will",
     ],
     title: "Muslim Will (Wasiyat) in India: The 1/3 Bequest Rule Explained",
-    lead: "Unlike the Indian Succession Act or Hindu Succession Act, testamentary succession for Indian Muslims is governed by the Muslim Personal Law (Shariat) Application Act, 1937—which protects Quranic heirs by capping unconditional bequests at one-third (1/3rd) of the net estate.",
+    lead: "Unlike the Indian Succession Act or Hindu Succession Act, testamentary succession for Indian Muslims is governed by the Muslim Personal Law (Shariat) Application Act, 1937, which protects Quranic heirs by capping unconditional bequests at one-third (1/3rd) of the net estate.",
     date: "October 17, 2026",
     imageSrc: "/3.jpg",
     author: "Advocate Rajeshwar Rao",
@@ -761,7 +761,7 @@ export const BLOG_ARTICLES: BlogArticle[] = [
       {
         heading: "What Is a Wasiyat Under Muslim Personal Law in India?",
         paragraphs: [
-          "Section 58 of the Indian Succession Act, 1925 explicitly states that its general testamentary rules do not override Muslim Personal Law. Instead, a Will executed by an Indian Muslim—known in Islamic jurisprudence as a Wasiyat—is governed by the Muslim Personal Law (Shariat) Application Act, 1937 and the respective school of jurisprudence (Fiqh) to which the testator belongs, primarily the Sunni (Hanafi) school or the Shia (Ithna Ashari) school.",
+          "Section 58 of the Indian Succession Act, 1925 explicitly states that its general testamentary rules do not override Muslim Personal Law. Instead, a Will executed by an Indian Muslim, known in Islamic jurisprudence as a Wasiyat, is governed by the Muslim Personal Law (Shariat) Application Act, 1937 and the respective school of jurisprudence (Fiqh) to which the testator belongs, primarily the Sunni (Hanafi) school or the Shia (Ithna Ashari) school.",
           "While a Wasiyat can technically be oral or written under classical law, Indian banks, housing societies, revenue mutation authorities, and courts overwhelmingly require a clear written Wasiyat signed by the testator (Musi) in the presence of two adult witnesses to avoid evidentiary disputes.",
         ],
         calloutQuote:
@@ -773,7 +773,7 @@ export const BLOG_ARTICLES: BlogArticle[] = [
           "Under both Sunni and Shia law in India, a testator does not have unrestricted power to give away 100% of their property by Will. When a Muslim passes away, the gross estate must be applied in a strict statutory order before any bequest takes effect:",
           "1. Payment of funeral and burial expenses;",
           "2. Payment of probate/administration costs and all lawful debts of the deceased (including unpaid Mahr / dower owed to the widow, which ranks as a primary debt);",
-          "3. Execution of valid bequests under the Wasiyat—strictly up to ONE-THIRD (1/3rd) of the remaining net estate, calculated on the value of the estate at the time of the testator's death (not at the time the Will was written);",
+          "3. Execution of valid bequests under the Wasiyat, strictly up to ONE-THIRD (1/3rd) of the remaining net estate, calculated on the value of the estate at the time of the testator's death (not at the time the Will was written);",
           "4. Distribution of the remaining TWO-THIRDS (2/3rds) (plus any un-bequeathed portion of the 1/3rd) among the Quranic legal heirs according to Ilm-ul-Faraid (the Islamic law of inheritance).",
         ],
       },
@@ -781,8 +781,8 @@ export const BLOG_ARTICLES: BlogArticle[] = [
         heading: "Sunni (Hanafi) vs. Shia (Ithna Ashari) Rules on Legal Heirs",
         paragraphs: [
           "The most critical legal distinction when drafting a Muslim Will in India is whether the beneficiary (Musi Lahu) is a 'non-heir / stranger' (such as a charity, friend, orphaned grandchild excluded by a surviving son, or non-Muslim relative) or an existing 'legal heir' (Waris):",
-          "In Sunni (Hanafi) Law: A bequest to a non-heir (stranger) is valid up to 1/3rd of the net estate without anyone's consent. However, based on the Hadith 'La Wasiyyata li Warithin' ('No bequest to an heir'), a bequest of any share—even less than 1/3rd—to an existing legal heir (such as giving an extra flat to one son or daughter) is invalid UNLESS the remaining legal heirs give their free consent (Ijazah) strictly AFTER the testator's death. Any consent signed by heirs during the testator's lifetime is not legally binding under Sunni law and can be retracted after death.",
-          "In Shia (Ithna Ashari) Law: Shia jurisprudence interprets the Quranic verse (Surah Al-Baqarah 2:180) to permit full testamentary discretion within the bequeathable one-third. Under Shia law, a Muslim CAN validly bequeath up to 1/3rd of their net estate either to a non-heir OR to an existing legal heir without needing the consent of the other legal heirs! Consent of the other heirs is required under Shia law only if the bequest exceeds 1/3rd of the net estate—and that consent may be granted either during the testator's lifetime or after death.",
+          "In Sunni (Hanafi) Law: A bequest to a non-heir (stranger) is valid up to 1/3rd of the net estate without anyone's consent. However, based on the Hadith 'La Wasiyyata li Warithin' ('No bequest to an heir'), a bequest of any share, even less than 1/3rd, to an existing legal heir (such as giving an extra flat to one son or daughter) is invalid UNLESS the remaining legal heirs give their free consent (Ijazah) strictly AFTER the testator's death. Any consent signed by heirs during the testator's lifetime is not legally binding under Sunni law and can be retracted after death.",
+          "In Shia (Ithna Ashari) Law: Shia jurisprudence interprets the Quranic verse (Surah Al-Baqarah 2:180) to permit full testamentary discretion within the bequeathable one-third. Under Shia law, a Muslim CAN validly bequeath up to 1/3rd of their net estate either to a non-heir OR to an existing legal heir without needing the consent of the other legal heirs! Consent of the other heirs is required under Shia law only if the bequest exceeds 1/3rd of the net estate, and that consent may be granted either during the testator's lifetime or after death.",
         ],
       },
       {
@@ -796,7 +796,7 @@ export const BLOG_ARTICLES: BlogArticle[] = [
       {
         heading: "When Does the Indian Succession Act Override the 1/3rd Rule?",
         paragraphs: [
-          "There is an important statutory exception in India: if a Muslim marries under the Special Marriage Act, 1954 (or registers their marriage under Chapter III of the Special Marriage Act, 1954), Section 21 of the Special Marriage Act stipulates that succession to the property of parties married under that Act (and their issue) is governed by the Indian Succession Act, 1925 rather than Muslim Personal Law—granting 100% testamentary freedom over self-acquired property.",
+          "There is an important statutory exception in India: if a Muslim marries under the Special Marriage Act, 1954 (or registers their marriage under Chapter III of the Special Marriage Act, 1954), Section 21 of the Special Marriage Act stipulates that succession to the property of parties married under that Act (and their issue) is governed by the Indian Succession Act, 1925 rather than Muslim Personal Law, granting 100% testamentary freedom over self-acquired property.",
         ],
       },
     ],
@@ -874,7 +874,7 @@ export const BLOG_ARTICLES: BlogArticle[] = [
       "doctor witness on will india",
     ],
     title: "Senior Citizen Will & Doctor Medical Fitness Certificate Format",
-    lead: "When a senior citizen executes a Will after age 65—or during physical illness—disappointed relatives routinely challenge it in court alleging dementia, medication sedation, or undue influence. Here is the exact Doctor Medical Fitness Certificate format and legal protocol to make a senior citizen's Will ironclad.",
+    lead: "When a senior citizen executes a Will after age 65, or during physical illness, disappointed relatives routinely challenge it in court alleging dementia, medication sedation, or undue influence. Here is the exact Doctor Medical Fitness Certificate format and legal protocol to make a senior citizen's Will ironclad.",
     date: "October 17, 2026",
     imageSrc: "/images/senior-couple.jpg",
     author: "WillDrafting Editorial Team",
@@ -898,14 +898,14 @@ export const BLOG_ARTICLES: BlogArticle[] = [
       {
         heading: "Section 59 (Sound Mind) & Section 61 (Undue Influence) Explained",
         paragraphs: [
-          "Explanation 4 to Section 59 of the Indian Succession Act, 1925 explicitly states that no person can make a valid Will while they are in such a state of mind—whether arising from intoxication, illness, or any other cause—that they do not know what they are doing. However, Explanation 3 to Section 59 confirms that even a person who is ordinarily infirm may make a valid Will during a 'lucid interval' when their cognitive faculties are clear.",
+          "Explanation 4 to Section 59 of the Indian Succession Act, 1925 explicitly states that no person can make a valid Will while they are in such a state of mind, whether arising from intoxication, illness, or any other cause, that they do not know what they are doing. However, Explanation 3 to Section 59 confirms that even a person who is ordinarily infirm may make a valid Will during a 'lucid interval' when their cognitive faculties are clear.",
           "Simultaneously, Section 61 declares that a Will or any part of a Will, the making of which has been caused by fraud, coercion, or by such importunity as takes away the free agency of the testator, is void. Therefore, when a senior citizen over 65 or someone recovering from illness executes a Will, documenting both cognitive lucidity (Section 59) and free volition without beneficiary interference (Section 61) is paramount.",
         ],
       },
       {
         heading: "Supreme Court Test: Dispelling Suspicious Circumstances",
         paragraphs: [
-          "In the foundational judgment H. Venkatachala Iyengar v. B.N. Thimmajamma (AIR 1959 SC 443) and recently reaffirmed in Kavita Kanwar v. Mrs. Pamela Mehta (2020) and Meena Pradhan v. Kamla Pradhan (2023), the Supreme Court of India laid down that whenever 'suspicious circumstances' surround a Will—such as shaky signatures, advanced frailty, active participation of the main beneficiary in drafting the Will, or unexplained exclusion of a natural Class I heir—the court's conscience must be satisfied by clear, affirmative evidence.",
+          "In the foundational judgment H. Venkatachala Iyengar v. B.N. Thimmajamma (AIR 1959 SC 443) and recently reaffirmed in Kavita Kanwar v. Mrs. Pamela Mehta (2020) and Meena Pradhan v. Kamla Pradhan (2023), the Supreme Court of India laid down that whenever 'suspicious circumstances' surround a Will, such as shaky signatures, advanced frailty, active participation of the main beneficiary in drafting the Will, or unexplained exclusion of a natural Class I heir, the court's conscience must be satisfied by clear, affirmative evidence.",
           "When a Registered Medical Practitioner (MBBS/MD registered with the National Medical Commission or a State Medical Council) personally examines the testator on the date of execution and signs a clinical Mental Fitness Certificate (either printed on the final page of the Will or attached immediately behind it), allegations of senility or cognitive incapacity collapse immediately.",
         ],
       },

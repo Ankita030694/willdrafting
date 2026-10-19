@@ -289,7 +289,7 @@ const FEMA_ASSET_TABLE = [
   },
   {
     assetClass: "NRE & FCNR(B) Bank Deposits",
-    femaRule: "RBI Master Direction — Deposits & Accounts",
+    femaRule: "RBI Master Direction - Deposits & Accounts",
     inheritanceStatus: "100% Freely Repatriable",
     repatriationRule:
       "Principal and interest are fully repatriable. Aligning your NRE/FCNR bank nominee with your Indian Will beneficiary prevents bank freezes.",
@@ -369,7 +369,7 @@ export default function NriWillIndiaPage() {
               </h1>
 
               <p className="text-[1.02rem] sm:text-[1.14rem] leading-[1.68] text-[#49585F] mb-8 max-w-2xl">
-                Under <strong className="text-[#111827]">Section 5 of the Indian Succession Act, 1925</strong> (<em>Lex Situs</em>), succession to immovable property in India is governed strictly by Indian law—regardless of your citizenship or foreign domicile. Draft a separate, lawyer-verified <strong className="text-[#111827]">Indian Will from abroad</strong> so your family never faces 18 months of Section 228 foreign probate re-sealing.
+                Under <strong className="text-[#111827]">Section 5 of the Indian Succession Act, 1925</strong> (<em>Lex Situs</em>), succession to immovable property in India is governed strictly by Indian law, regardless of your citizenship or foreign domicile. Draft a separate, lawyer-verified <strong className="text-[#111827]">Indian Will from abroad</strong> so your family never faces 18 months of Section 228 foreign probate re-sealing.
               </p>
 
               <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5 mb-8">
@@ -420,7 +420,7 @@ export default function NriWillIndiaPage() {
                 <li className="flex items-start gap-2.5">
                   <span className="w-1.5 h-1.5 rounded-full bg-[#C65378] mt-2 shrink-0" />
                   <span>
-                    <strong>US Living Trusts are not recognized:</strong> Indian Sub-Registrars and housing societies require a statutory Will or Indian court order—not a US Revocable Living Trust.
+                    <strong>US Living Trusts are not recognized:</strong> Indian Sub-Registrars and housing societies require a statutory Will or Indian court order, not a US Revocable Living Trust.
                   </span>
                 </li>
                 <li className="flex items-start gap-2.5">
@@ -599,7 +599,7 @@ export default function NriWillIndiaPage() {
                 Helping Elderly Parents in India Make Their Will
               </h2>
               <p className="text-[15px] sm:text-[16px] leading-[1.7] text-[#374151] mb-4">
-                One of the most stressful situations for NRIs in the US, UK, UAE, Canada, and Australia occurs when aging parents in Delhi, Mumbai, Bengaluru, Chennai, Pune, Hyderabad, or Kolkata pass away without a clear Will—leaving NRI children to take repeated international flights for court Succession Certificates and bank KYC clearances.
+                One of the most stressful situations for NRIs in the US, UK, UAE, Canada, and Australia occurs when aging parents in Delhi, Mumbai, Bengaluru, Chennai, Pune, Hyderabad, or Kolkata pass away without a clear Will, leaving NRI children to take repeated international flights for court Succession Certificates and bank KYC clearances.
               </p>
               <p className="text-[15px] sm:text-[16px] leading-[1.7] text-[#374151]">
                 With WillDrafting.in, your parents can complete their Will from home using our <strong className="text-[#111827]">Bilingual (English &amp; Hindi) interface and AI Voice Assistant</strong>, attach a Doctor&apos;s Medical Fitness Certificate, and have an <strong className="text-[#111827]">AMA Legal Solutions</strong> advocate verify that every bequest and bank nomination matches.

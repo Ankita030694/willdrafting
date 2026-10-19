@@ -208,7 +208,7 @@ export default function Step6Executors({
           <div className="wizard-step-header-meta" style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
             <LanguageToggle size="sm" currentLang={currentLang} onToggle={handleToggleLang} />
             <AudioAssistantButton
-              textToSpeak="Who will be the executor of your will? An executor is your trusted manager—like your spouse, brother, or friend—who ensures your instructions are carried out after you. Tap any family member or enter their name."
+              textToSpeak="Who will be the executor of your will? An executor is your trusted manager, like your spouse, brother, or friend, who ensures your instructions are carried out after you. Tap any family member or enter their name."
               label={isHi ? "सुनें 🔊" : "Listen 🔊"}
             />
             <span style={{ fontSize: "0.75rem", color: "var(--color-slate)" }}>

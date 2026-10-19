@@ -61,7 +61,7 @@ export default function TestimonialsSection() {
               &ldquo;The greatest gift we left our children was certainty.&rdquo;
             </h2>
             <p style={{ fontSize: "clamp(0.92rem, 2.5vw, 1.05rem)", color: "var(--color-charcoal)", lineHeight: 1.65, marginBottom: "1.5rem" }}>
-              Planning your estate is not about death—it is about sparing your loved ones the agonizing delays,
+              Planning your estate is not about death; it is about sparing your loved ones the agonizing delays,
               expenses, and emotional strain of contested succession certificates in probate court.
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "1rem" }}>

@@ -55,26 +55,26 @@ const services: ServiceCard[] = [
 
 export default function WhatWeDo() {
   return (
-    <section className="w-full bg-[#FAF7F0] py-12 sm:py-20 flex justify-center">
+    <section className="w-full bg-[#FAF7F0] py-8 sm:py-14 flex justify-center">
       <div className="w-full max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Header Section */}
-        <div className="mb-8 sm:mb-16 max-w-[800px]">
+        <div className="mb-5 sm:mb-11 max-w-[800px]">
           {/* Eyebrow with leading rule */}
-          <div className="flex items-center gap-3 mb-3 sm:mb-4 text-left">
-            <span className="text-[0.68rem] sm:text-xs font-bold tracking-[0.12em] sm:tracking-[0.16em] uppercase text-[#C65378] leading-snug">
+          <div className="flex items-center gap-3 mb-2 sm:mb-2.5 text-left">
+            <span className="text-[0.68rem] sm:text-[11px] font-bold tracking-[0.12em] uppercase text-[#C65378] leading-snug">
               Online Will Drafting &amp; Estate Planning India
             </span>
           </div>
 
           {/* Section Heading */}
-          <h2 className="text-[1.75rem] sm:text-[3rem] lg:text-[3.4rem] font-medium text-[#172228] leading-[1.15] sm:leading-[1.12] tracking-tight mb-4 sm:mb-5">
+          <h2 className="text-[1.55rem] sm:text-[2.2rem] lg:text-[2.45rem] font-medium text-[#172228] leading-[1.15] sm:leading-[1.12] tracking-tight mb-2.5 sm:mb-3">
             Put Your Estate Plan in Writing.
           </h2>
 
           {/* Subheading / Description */}
-          <p className="text-[0.92rem] sm:text-[1.15rem] leading-[1.6] sm:leading-[1.65] text-[#49585F] font-normal max-w-[680px]">
-            Create a professionally structured, <span className="font-bold">legally valid online Will in India</span> from the comfort of your home. Whether you are a Resident Indian or an NRI/OCI abroad, our bilingual (English &amp; Hindi) online Will generator structures your estate under the Indian Succession Act, 1925, Hindu Succession Act, 1956, and Muslim Personal Law (Wasiyat)—backed by AMA Legal Solutions.
+          <p className="text-[0.82rem] sm:text-[0.92rem] leading-[1.55] sm:leading-[1.6] text-[#49585F] font-normal max-w-[680px]">
+            Create a professionally structured, <span className="font-bold">legally valid online Will in India</span> from the comfort of your home. Whether you are a Resident Indian or an NRI/OCI abroad, our bilingual (English &amp; Hindi) online Will generator structures your estate under the Indian Succession Act, 1925, Hindu Succession Act, 1956, and Muslim Personal Law (Wasiyat), backed by AMA Legal Solutions.
           </p>
         </div>
 
@@ -86,17 +86,17 @@ export default function WhatWeDo() {
               className="w-full bg-white rounded-[24px] overflow-hidden flex flex-col justify-between transition-all duration-300 group"
             >
               {/* Top Illustration Container */}
-              <div className="relative w-full bg-gradient-to-b from-[#F5EBF4]/40 to-transparent flex items-center justify-center h-[200px] sm:h-[285px] overflow-hidden">
+              <div className="relative w-full bg-gradient-to-b from-[#F5EBF4]/40 to-transparent flex items-center justify-center h-[140px] sm:h-[200px] overflow-hidden">
                 {service.illustration}
               </div>
 
               {/* Bottom Text & CTA Container - Compact Padding */}
-              <div className="p-6 sm:p-7 flex flex-col justify-between flex-1 border-t border-[#1B2A4A]/5">
+              <div className="p-4 sm:p-5 flex flex-col justify-between flex-1 border-t border-[#1B2A4A]/5">
                 <div>
-                  <h3 className="text-[1.35rem] sm:text-[1.5rem] font-semibold text-[#172228] mb-1.5 tracking-tight">
+                  <h3 className="text-[1.1rem] sm:text-[1.22rem] font-semibold text-[#172228] mb-1 tracking-tight">
                     {service.title}
                   </h3>
-                  <p className="text-[0.90rem] sm:text-[0.95rem] leading-relaxed text-[#49585F] mb-4 max-w-[480px]">
+                  <p className="text-[0.80rem] sm:text-[0.84rem] leading-relaxed text-[#49585F] mb-2.5 max-w-[480px]">
                     {service.description}
                   </p>
                 </div>
@@ -104,16 +104,16 @@ export default function WhatWeDo() {
                 {/* Link / Status */}
                 <div>
                   {service.isComingSoon ? (
-                    <span className="inline-flex items-center gap-1.5 text-[0.90rem] font-medium text-[#C65378]">
+                    <span className="inline-flex items-center gap-1.5 text-[0.82rem] font-medium text-[#C65378]">
                       <span>{service.linkText}</span>
                     </span>
                   ) : (
                     <Link
                       href={service.linkHref || "#"}
-                      className="inline-flex items-center gap-1.5 text-[0.90rem] font-medium text-[#C65378] group-hover:text-[#9F3B5C] transition-colors"
+                      className="inline-flex items-center gap-1.5 text-[0.82rem] font-medium text-[#C65378] group-hover:text-[#9F3B5C] transition-colors"
                     >
                       <span>{service.linkText}</span>
-                      <ArrowUpRight size={15} strokeWidth={2.5} className="transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+                      <ArrowUpRight size={14} strokeWidth={2.5} className="transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
                     </Link>
                   )}
                 </div>

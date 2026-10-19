@@ -378,7 +378,7 @@ export default function CustomPercentageAllocator({
                       const isAlreadyChosen = member.id !== row.beneficiaryId && selectedBeneficiaryIds.has(member.id);
                       return (
                         <option key={member.id} value={member.id} disabled={isAlreadyChosen}>
-                          {member.name} ({member.relationship}){isAlreadyChosen ? " — (Selected)" : ""}
+                          {member.name} ({member.relationship}){isAlreadyChosen ? " - (Selected)" : ""}
                         </option>
                       );
                     })}

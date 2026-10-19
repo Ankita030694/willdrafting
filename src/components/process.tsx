@@ -37,22 +37,22 @@ const steps: Step[] = [
 
 export default function Process() {
   return (
-    <section className="w-full bg-[#FAF7F0] py-16 sm:py-24 lg:py-28 overflow-hidden">
+    <section className="w-full bg-[#FAF7F0] py-5 sm:py-7 lg:py-9 overflow-hidden">
       <div className="w-full max-w-[1400px] mx-auto px-6 sm:px-8 lg:px-12">
         
         {/* =========================================================================
             HEADER: Eyebrow and Main Title
             ========================================================================= */}
-        <div className="mb-12 sm:mb-16">
+        <div className="mb-8 sm:mb-11">
           {/* Eyebrow badge */}
-          <div className="flex items-center gap-2 mb-5 sm:mb-6">
-            <span className="text-[0.75rem] font-bold tracking-[0.16em] uppercase text-[#C65378]">
+          <div className="flex items-center gap-2 mb-2.5 sm:mb-3">
+            <span className="text-[0.70rem] font-bold tracking-[0.14em] uppercase text-[#C65378]">
               Working Process
             </span>
           </div>
 
           {/* Editorial Title */}
-          <h2 className="text-[2.2rem] sm:text-[3rem] lg:text-[3.4rem] font-medium text-[#172228] leading-[1.08] tracking-tight">
+          <h2 className="text-[1.65rem] sm:text-[2.25rem] lg:text-[2.5rem] font-medium text-[#172228] leading-[1.1] tracking-tight">
             Four Simple Steps to Put <br /> Your Family&apos;s Future in Writing
           </h2>
         </div>
@@ -67,21 +67,21 @@ export default function Process() {
           {steps.map((step, idx) => (
             <div
               key={idx}
-              className="w-[82vw] max-w-[320px] sm:w-[340px] lg:w-auto shrink-0 lg:shrink snap-start lg:snap-align-none bg-white rounded-[24px] xl:rounded-[28px] p-5 sm:p-7 xl:p-8 min-h-[220px] sm:min-h-[280px] lg:min-h-[300px] flex flex-col justify-between transition-all duration-300 group"
+              className="w-[82vw] max-w-[320px] sm:w-[340px] lg:w-auto shrink-0 lg:shrink snap-start lg:snap-align-none bg-white rounded-[24px] xl:rounded-[28px] p-4 sm:p-5 xl:p-5 min-h-[155px] sm:min-h-[195px] lg:min-h-[200px] flex flex-col justify-between transition-all duration-300 group"
             >
               {/* Top: Large Number */}
               <div>
-                <span className="text-[2.6rem] sm:text-[3rem] xl:text-[3.25rem] font-regular text-[#172228] tracking-tight leading-none block">
+                <span className="text-[2rem] sm:text-[2.3rem] xl:text-[2.5rem] font-regular text-[#172228] tracking-tight leading-none block">
                   {step.number}
                 </span>
               </div>
 
               {/* Bottom: Title & Body Description */}
-              <div className="pt-8 sm:pt-14">
-                <h3 className="text-[1.25rem] sm:text-[1.4rem] xl:text-[1.55rem] font-semibold text-[#172228] leading-snug tracking-tight mb-2.5">
+              <div className="pt-4 sm:pt-7">
+                <h3 className="text-[1.05rem] sm:text-[1.15rem] xl:text-[1.22rem] font-semibold text-[#172228] leading-snug tracking-tight mb-1.5">
                   {step.title}
                 </h3>
-                <p className="text-[0.85rem] sm:text-[0.88rem] xl:text-[0.90rem] text-[#55636D] leading-[1.65]">
+                <p className="text-[0.78rem] sm:text-[0.80rem] xl:text-[0.84rem] text-[#55636D] leading-[1.6]">
                   {step.description}
                 </p>
               </div>

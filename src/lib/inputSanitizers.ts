@@ -2,7 +2,7 @@
 // Shared helpers for restricting what a user can type (onChange filters) and for
 // normalising the casing of free text (applied centrally whenever will state is saved).
 //
-// NOTE: tsconfig target is ES2017 — avoid `\p{..}` regexes and the `u` flag.
+// NOTE: tsconfig target is ES2017 - avoid `\p{..}` regexes and the `u` flag.
 
 import type { WillDraftingState } from "./willDraftingStore";
 

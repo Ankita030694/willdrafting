@@ -237,25 +237,25 @@ function ReviewCard({ review }: { review: Review }) {
     <div className="w-[82vw] sm:w-[320px] lg:w-[340px] shrink-0 bg-white rounded-[24px] sm:rounded-[28px] p-6 sm:p-7 min-h-[210px] sm:min-h-[235px] flex flex-col justify-between border border-[#1B2A4A]/5 shadow-[0_4px_20px_rgba(0,0,0,0.025)] hover:shadow-[0_8px_30px_rgba(0,0,0,0.055)] transition-all duration-300 pointer-events-auto">
       <div>
         {/* Reviewer Header: Name + 5 Black Stars */}
-        <div className="flex items-center justify-between gap-3 mb-1.5">
-          <h3 className="font-bold text-[#172228] text-[1.02rem]">
+        <div className="flex items-center justify-between gap-3 mb-1">
+          <h3 className="font-bold text-[#172228] text-[0.92rem]">
             {review.name}
           </h3>
           <div className="flex items-center gap-0.5">
             {[...Array(review.rating)].map((_, i) => (
-              <Star key={i} size={13} className="fill-[#172228] text-[#172228]" />
+              <Star key={i} size={12} className="fill-[#172228] text-[#172228]" />
             ))}
           </div>
         </div>
 
         {/* Verified Customer Status */}
-        <div className="flex items-center gap-1.5 text-xs text-[#55636D] font-medium mb-3.5">
-          <CheckCircle2 size={13} className="text-[#172228]" />
+        <div className="flex items-center gap-1.5 text-[11px] text-[#55636D] font-medium mb-3">
+          <CheckCircle2 size={12} className="text-[#172228]" />
           <span>Verified Customer</span>
         </div>
 
         {/* Review Quote Text */}
-        <p className="text-[0.88rem] sm:text-[0.92rem] text-[#2D3748] leading-relaxed">
+        <p className="text-[0.78rem] sm:text-[0.82rem] text-[#2D3748] leading-relaxed">
           {review.content}
         </p>
       </div>
@@ -278,42 +278,42 @@ export default function Testimonial() {
   };
 
   return (
-    <section className="w-full bg-[#FAF7F0] py-16 sm:py-24 lg:py-28 overflow-hidden">
+    <section className="w-full bg-[#FAF7F0] py-5 sm:py-7 lg:py-9 overflow-hidden">
       <div className="w-full max-w-[1400px] 2xl:max-w-8xl mx-auto px-6 sm:px-8 lg:px-12">
         
         {/* =========================================================================
             HEADER: Eyebrow Rule, Editorial Title, Subtitle & Rating Summary + Buttons
             ========================================================================= */}
-        <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-6 mb-10 sm:mb-14">
+        <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-5 mb-6 sm:mb-8">
           <div className="max-w-3xl">
             {/* Eyebrow with leading colored rule */}
-            <div className="flex items-center gap-3 mb-4">
-              <span className="text-xs font-bold tracking-[0.16em] uppercase text-[#C65378]">
+            <div className="flex items-center gap-3 mb-2.5">
+              <span className="text-[11px] font-bold tracking-[0.14em] uppercase text-[#C65378]">
                 What Customers Say
               </span>
             </div>
 
             {/* Editorial Title */}
-            <h2 className="text-[2.2rem] sm:text-[3rem] lg:text-[3.4rem] font-bold text-[#172228] leading-[1.08] tracking-tight mb-4">
+            <h2 className="text-[1.65rem] sm:text-[2.25rem] lg:text-[2.45rem] font-bold text-[#172228] leading-[1.1] tracking-tight mb-3">
               Trusted by 160,000+<br />
               Families.
             </h2>
 
-            <p className="text-[1.02rem] sm:text-[1.12rem] text-[#55636D] leading-relaxed max-w-xl mb-6">
+            <p className="text-[0.85rem] sm:text-[0.92rem] text-[#55636D] leading-relaxed max-w-xl mb-4 sm:mb-5">
               Compassionate guidance and peace of mind for you and your loved ones.
             </p>
 
             {/* Rating Badge */}
-            <div className="flex items-center gap-3">
-              <span className="text-2xl sm:text-3xl font-bold text-[#172228] leading-none">
+            <div className="flex items-center gap-2.5">
+              <span className="text-xl sm:text-2xl font-bold text-[#172228] leading-none">
                 4.9
               </span>
               <div className="flex items-center gap-1 text-[#F97316]">
                 {[...Array(5)].map((_, i) => (
-                  <Star key={i} size={18} className="fill-[#F97316] text-[#F97316]" />
+                  <Star key={i} size={15} className="fill-[#F97316] text-[#F97316]" />
                 ))}
               </div>
-              <span className="text-[0.92rem] text-[#55636D] font-medium ml-1">
+              <span className="text-[0.82rem] text-[#55636D] font-medium ml-1">
                 1,348 reviews
               </span>
             </div>

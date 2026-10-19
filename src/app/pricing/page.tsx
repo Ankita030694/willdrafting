@@ -366,7 +366,7 @@ const MASTER_MATRIX: MatrixCategory[] = [
       {
         title: "1-on-1 Advocate Phone / Video Advisory",
         subtext: "Direct legal consultation for complex family, HUF, or cross-border queries",
-        essential: "—",
+        essential: "-",
         lawyerVerified: "Email review notes",
         connectLawyer: "Dedicated 1-on-1 Call",
         traditionalFirm: "Extra consultation fee",
@@ -441,7 +441,7 @@ const FAQS = [
   {
     question: "Why choose WillDrafting instead of traditional law firm retainers?",
     answer:
-      "Traditional law firms charge ₹15,000 to ₹45,000+ due to manual drafting rounds and hourly billing. Powered by AMA Legal Solutions, WillDrafting combines automated statutory assembly with High Court advocate verification—delivering law-firm accuracy at a transparent fixed fee.",
+      "Traditional law firms charge ₹15,000 to ₹45,000+ due to manual drafting rounds and hourly billing. Powered by AMA Legal Solutions, WillDrafting combines automated statutory assembly with High Court advocate verification, delivering law-firm accuracy at a transparent fixed fee.",
   },
   {
     question: "Can I distribute ancestral property or only self-acquired assets?",

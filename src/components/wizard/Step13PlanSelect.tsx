@@ -332,7 +332,7 @@ export default function Step13PlanSelect({
               <p style={{ margin: 0, fontSize: "0.82rem", color: "#166534", lineHeight: 1.45 }}>
                 {isHi
                   ? `आपकी अंतिम वसीयत पूरी तरह अनलॉक है। नीचे दी गई उच्च योजनाओं में अपग्रेड करने पर आपके द्वारा पहले दिए गए ₹${currentPaidRupees} स्वतः घटा दिए जाएंगे।`
-                  : `Your Last Will and Testament is fully unlocked. You can upgrade to a higher tier anytime — your paid ₹${currentPaidRupees} is automatically deducted.`}
+                  : `Your Last Will and Testament is fully unlocked. You can upgrade to a higher tier anytime - your paid ₹${currentPaidRupees} is automatically deducted.`}
               </p>
             </div>
           </div>

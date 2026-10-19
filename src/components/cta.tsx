@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export default function CTA() {
   return (
-    <section className="relative w-full bg-[#FAF7F0] py-24 sm:py-32 lg:py-36 overflow-hidden flex items-center justify-center">
+    <section className="relative w-full bg-[#FAF7F0] py-16 sm:py-22 lg:py-25 overflow-hidden flex items-center justify-center">
       {/* =========================================================================
           SCATTERED FLOATING ILLUSTRATIONS (Desktop: 6 illustrations from /cta)
           ========================================================================= */}
@@ -94,7 +94,7 @@ export default function CTA() {
           ========================================================================= */}
       <div className="relative z-10 w-full max-w-[760px] mx-auto px-4 sm:px-6 text-center">
         {/* Mobile Top Image Pair */}
-        <div className="md:hidden grid grid-cols-2 gap-6 max-w-[320px] mx-auto mb-8 px-2">
+        <div className="md:hidden grid grid-cols-2 gap-6 max-w-[320px] mx-auto mb-5 px-2">
           <div className="relative aspect-square w-full flex items-center justify-center">
             <Image
               src="/cta/1.png"
@@ -116,28 +116,28 @@ export default function CTA() {
         </div>
 
         {/* Main Heading */}
-        <h2 className="text-[2.2rem] sm:text-[3rem] lg:text-[3.4rem] font-normal leading-[1.12] tracking-tight mb-2">
+        <h2 className="text-[1.65rem] sm:text-[2.25rem] lg:text-[2.45rem] font-normal leading-[1.12] tracking-tight mb-2">
           <span className="text-[#172228] block">
             Don&apos;t Leave Your Family Guessing.
           </span>
         </h2>
 
         {/* Subtitle / Description */}
-        <div className="text-[0.96rem] sm:text-[1.08rem] leading-[1.65] text-[#55636D] max-w-[620px] mx-auto mb-8 space-y-4">
+        <div className="text-[0.82rem] sm:text-[0.90rem] leading-[1.6] text-[#55636D] max-w-[620px] mx-auto mb-4 space-y-2.5">
           <p>You spend a lifetime building what matters. Make sure your wishes are known when you&apos;re no longer there to explain them.</p>
           <p>Create a personalised Will that clearly records your wishes for your family, property and assets.</p>
         </div>
 
         {/* Simple CTA Button */}
-        <div className="mb-6 flex justify-center">
+        <div className="mb-5 flex justify-center">
           <Link
             href="/contact"
-            className="inline-flex items-center justify-center rounded-full bg-[#C65378] px-8 py-3 text-[14px] font-medium text-[#FFFFFF] shadow-sm transition-all hover:bg-[#a13c5d] active:scale-95"
+            className="inline-flex items-center justify-center rounded-full bg-[#C65378] px-7 py-2.5 text-[13px] sm:text-[13.5px] font-medium text-[#FFFFFF] shadow-sm transition-all hover:bg-[#a13c5d] active:scale-95"
             style={{
-              paddingLeft: "1.75rem",
-              paddingRight: "1.75rem",
-              paddingTop: "0.75rem",
-              paddingBottom: "0.75rem",
+              paddingLeft: "1.5rem",
+              paddingRight: "1.5rem",
+              paddingTop: "0.65rem",
+              paddingBottom: "0.65rem",
             }}
           >
             Create My Will in Minutes
@@ -145,7 +145,7 @@ export default function CTA() {
         </div>
 
         {/* Social Proof Avatars & Tagline */}
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-2.5 text-xs text-[#7B8791] mt-3 text-center">
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-2.5 text-[11px] text-[#7B8791] mt-2.5 text-center">
           <div className="flex -space-x-1.5 overflow-hidden justify-center">
             <div className="inline-block h-5 w-5 rounded-full ring-2 ring-white overflow-hidden relative">
               <Image

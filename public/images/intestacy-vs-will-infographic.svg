@@ -1,0 +1,142 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" width="1200" height="760" role="img" aria-label="Intestacy vs. Estate Planning: What Happens to Your Family If You Die Without a Will?">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FAF7F0" />
+      <stop offset="100%" stop-color="#F3EDE0" />
+    </linearGradient>
+    <filter id="cardShadow" x="-4%" y="-4%" width="108%" height="112%">
+      <feDropShadow dx="0" dy="6" stdDeviation="12" flood-color="#172228" flood-opacity="0.05" />
+    </filter>
+  </defs>
+
+  <!-- Outer Canvas -->
+  <rect width="1200" height="760" rx="32" fill="url(#bgGrad)" stroke="#172228" stroke-opacity="0.08" stroke-width="2" />
+
+  <!-- Top Header -->
+  <rect x="470" y="28" width="260" height="26" rx="13" fill="#C65378" fill-opacity="0.12" />
+  <text x="600" y="45" font-family="Plus Jakarta Sans, system-ui, sans-serif" font-size="10.5" font-weight="700" fill="#C65378" text-anchor="middle" letter-spacing="1.6">INTESTACY VS. ESTATE PLANNING</text>
+
+  <text x="600" y="84" font-family="Plus Jakarta Sans, system-ui, sans-serif" font-size="27" font-weight="700" fill="#172228" text-anchor="middle">What Happens to Your Family If You Die Without a Will?</text>
+  <text x="600" y="110" font-family="Plus Jakarta Sans, system-ui, sans-serif" font-size="13.5" font-weight="400" fill="#55636D" text-anchor="middle">Without a Will, you leave the decisions about your estate to the law, not to the people you chose.</text>
+
+  <!-- Main White Infographic Board -->
+  <g filter="url(#cardShadow)">
+    <rect x="36" y="134" width="1128" height="534" rx="24" fill="#FFFFFF" stroke="#172228" stroke-opacity="0.08" stroke-width="1.5" />
+  </g>
+
+  <!-- Column Header Pills -->
+  <!-- Col 1: Estate Scenario -->
+  <rect x="56" y="154" width="320" height="52" rx="14" fill="#FAF7F0" stroke="#172228" stroke-opacity="0.08" />
+  <text x="76" y="175" font-family="Plus Jakarta Sans, system-ui, sans-serif" font-size="9.5" font-weight="700" fill="#55636D" letter-spacing="1.2">4 KEY LIFE AREAS</text>
+  <text x="76" y="194" font-family="Plus Jakarta Sans, system-ui, sans-serif" font-size="15" font-weight="700" fill="#172228">Estate Scenario</text>
+
+  <!-- Col 2: Dying Without a Will -->
+  <rect x="392" y="154" width="368" height="52" rx="14" fill="#FDF6F6" stroke="#B91C1C" stroke-opacity="0.2" />
+  <circle cx="418" cy="180" r="12" fill="#FEE2E2" />
+  <text x="418" y="185" font-family="Plus Jakarta Sans, system-ui, sans-serif" font-size="12" font-weight="700" fill="#B91C1C" text-anchor="middle">✕</text>
+  <text x="440" y="175" font-family="Plus Jakarta Sans, system-ui, sans-serif" font-size="9.5" font-weight="700" fill="#B91C1C" letter-spacing="1.2">PATH A · UNPLANNED INTESTACY</text>
+  <text x="440" y="194" font-family="Plus Jakarta Sans, system-ui, sans-serif" font-size="15" font-weight="700" fill="#172228">Dying Without a Will</text>
+
+  <!-- Col 3: With WillDrafting -->
+  <rect x="776" y="154" width="368" height="52" rx="14" fill="#F3FAF7" stroke="#5F7E75" stroke-opacity="0.35" />
+  <circle cx="802" cy="180" r="12" fill="#5F7E75" />
+  <text x="802" y="185" font-family="Plus Jakarta Sans, system-ui, sans-serif" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">✓</text>
+  <text x="824" y="175" font-family="Plus Jakarta Sans, system-ui, sans-serif" font-size="9.5" font-weight="700" fill="#5F7E75" letter-spacing="1.2">PATH B · PLANNED PROTECTION</text>
+  <text x="824" y="194" font-family="Plus Jakarta Sans, system-ui, sans-serif" font-size="15" font-weight="700" fill="#172228">With WillDrafting</text>
+
+  <!-- ==================== ROW 01: ASSET DISTRIBUTION ==================== -->
+  <g transform="translate(0, 222)">
+    <rect x="56" y="0" width="1088" height="98" rx="18" fill="#FAF7F0" fill-opacity="0.7" stroke="#172228" stroke-opacity="0.07" />
+    <!-- Scenario Card -->
+    <rect x="68" y="12" width="308" height="74" rx="14" fill="#FFFFFF" stroke="#172228" stroke-opacity="0.07" />
+    <rect x="82" y="24" width="48" height="50" rx="10" fill="#DFCEBF" fill-opacity="0.45" />
+    <text x="106" y="55" font-family="Plus Jakarta Sans, system-ui, sans-serif" font-size="16" font-weight="700" fill="#172228" text-anchor="middle">01</text>
+    <text x="144" y="41" font-family="Plus Jakarta Sans, system-ui, sans-serif" font-size="9.5" font-weight="700" fill="#C65378" letter-spacing="1.1">HOME, PROPERTY &amp; SAVINGS</text>
+    <text x="144" y="62" font-family="Plus Jakarta Sans, system-ui, sans-serif" font-size="15.5" font-weight="700" fill="#172228">Asset Distribution</text>
+
+    <!-- Without Will -->
+    <rect x="392" y="12" width="368" height="74" rx="14" fill="#FFFFFF" stroke="#B91C1C" stroke-opacity="0.15" />
+    <text x="412" y="34" font-family="Plus Jakarta Sans, system-ui, sans-serif" font-size="10" font-weight="700" fill="#B91C1C" letter-spacing="0.8">✕  DECIDED BY INTESTACY LAW</text>
+    <text x="412" y="55" font-family="Plus Jakarta Sans, system-ui, sans-serif" font-size="12.5" fill="#55636D">Assets are distributed according to the law,</text>
+    <text x="412" y="73" font-family="Plus Jakarta Sans, system-ui, sans-serif" font-size="12.5" fill="#55636D">which may not match your wishes.</text>
+
+    <!-- With WillDrafting -->
+    <rect x="776" y="12" width="356" height="74" rx="14" fill="#FFFFFF" stroke="#5F7E75" stroke-opacity="0.35" stroke-width="1.5" />
+    <text x="796" y="34" font-family="Plus Jakarta Sans, system-ui, sans-serif" font-size="10" font-weight="700" fill="#047857" letter-spacing="0.8">✓  100% YOUR CHOSEN BENEFICIARIES</text>
+    <text x="796" y="55" font-family="Plus Jakarta Sans, system-ui, sans-serif" font-size="12.5" font-weight="600" fill="#172228">You decide how your assets should be distributed</text>
+    <text x="796" y="73" font-family="Plus Jakarta Sans, system-ui, sans-serif" font-size="12.5" font-weight="600" fill="#172228">among your chosen beneficiaries.</text>
+  </g>
+
+  <!-- ==================== ROW 02: BANK ACCOUNTS & INVESTMENTS ==================== -->
+  <g transform="translate(0, 332)">
+    <rect x="56" y="0" width="1088" height="98" rx="18" fill="#FAF7F0" fill-opacity="0.7" stroke="#172228" stroke-opacity="0.07" />
+    <!-- Scenario Card -->
+    <rect x="68" y="12" width="308" height="74" rx="14" fill="#FFFFFF" stroke="#172228" stroke-opacity="0.07" />
+    <rect x="82" y="24" width="48" height="50" rx="10" fill="#DFCEBF" fill-opacity="0.45" />
+    <text x="106" y="55" font-family="Plus Jakarta Sans, system-ui, sans-serif" font-size="16" font-weight="700" fill="#172228" text-anchor="middle">02</text>
+    <text x="144" y="41" font-family="Plus Jakarta Sans, system-ui, sans-serif" font-size="9.5" font-weight="700" fill="#C65378" letter-spacing="1.1">BANK A/C, FDs &amp; DEMAT</text>
+    <text x="144" y="62" font-family="Plus Jakarta Sans, system-ui, sans-serif" font-size="15.5" font-weight="700" fill="#172228">Bank Accounts &amp; Investments</text>
+
+    <!-- Without Will -->
+    <rect x="392" y="12" width="368" height="74" rx="14" fill="#FFFFFF" stroke="#B91C1C" stroke-opacity="0.15" />
+    <text x="412" y="34" font-family="Plus Jakarta Sans, system-ui, sans-serif" font-size="10" font-weight="700" fill="#B91C1C" letter-spacing="0.8">✕  PAPERWORK &amp; PROCEDURAL DELAYS</text>
+    <text x="412" y="55" font-family="Plus Jakarta Sans, system-ui, sans-serif" font-size="12.5" fill="#55636D">Family may face legal procedures and paperwork</text>
+    <text x="412" y="73" font-family="Plus Jakarta Sans, system-ui, sans-serif" font-size="12.5" fill="#55636D">to access or transfer assets.</text>
+
+    <!-- With WillDrafting -->
+    <rect x="776" y="12" width="356" height="74" rx="14" fill="#FFFFFF" stroke="#5F7E75" stroke-opacity="0.35" stroke-width="1.5" />
+    <text x="796" y="34" font-family="Plus Jakarta Sans, system-ui, sans-serif" font-size="10" font-weight="700" fill="#047857" letter-spacing="0.8">✓  NAMED EXECUTOR &amp; SMOOTH ACCESS</text>
+    <text x="796" y="55" font-family="Plus Jakarta Sans, system-ui, sans-serif" font-size="12.5" font-weight="600" fill="#172228">Your Will names beneficiaries and an executor</text>
+    <text x="796" y="73" font-family="Plus Jakarta Sans, system-ui, sans-serif" font-size="12.5" font-weight="600" fill="#172228">to help manage your estate.</text>
+  </g>
+
+  <!-- ==================== ROW 03: GUARDIANSHIP FOR MINOR CHILDREN ==================== -->
+  <g transform="translate(0, 442)">
+    <rect x="56" y="0" width="1088" height="98" rx="18" fill="#FAF7F0" fill-opacity="0.7" stroke="#172228" stroke-opacity="0.07" />
+    <!-- Scenario Card -->
+    <rect x="68" y="12" width="308" height="74" rx="14" fill="#FFFFFF" stroke="#172228" stroke-opacity="0.07" />
+    <rect x="82" y="24" width="48" height="50" rx="10" fill="#DFCEBF" fill-opacity="0.45" />
+    <text x="106" y="55" font-family="Plus Jakarta Sans, system-ui, sans-serif" font-size="16" font-weight="700" fill="#172228" text-anchor="middle">03</text>
+    <text x="144" y="41" font-family="Plus Jakarta Sans, system-ui, sans-serif" font-size="9.5" font-weight="700" fill="#C65378" letter-spacing="1.1">CHILD CUSTODY &amp; CARE</text>
+    <text x="144" y="62" font-family="Plus Jakarta Sans, system-ui, sans-serif" font-size="15.5" font-weight="700" fill="#172228">Minor Children Guardianship</text>
+
+    <!-- Without Will -->
+    <rect x="392" y="12" width="368" height="74" rx="14" fill="#FFFFFF" stroke="#B91C1C" stroke-opacity="0.15" />
+    <text x="412" y="34" font-family="Plus Jakarta Sans, system-ui, sans-serif" font-size="10" font-weight="700" fill="#B91C1C" letter-spacing="0.8">✕  HANDLED BY LEGAL AUTHORITY</text>
+    <text x="412" y="55" font-family="Plus Jakarta Sans, system-ui, sans-serif" font-size="12.5" fill="#55636D">Guardianship decisions may be handled according</text>
+    <text x="412" y="73" font-family="Plus Jakarta Sans, system-ui, sans-serif" font-size="12.5" fill="#55636D">to applicable law and by the relevant authority.</text>
+
+    <!-- With WillDrafting -->
+    <rect x="776" y="12" width="356" height="74" rx="14" fill="#FFFFFF" stroke="#5F7E75" stroke-opacity="0.35" stroke-width="1.5" />
+    <text x="796" y="34" font-family="Plus Jakarta Sans, system-ui, sans-serif" font-size="10" font-weight="700" fill="#047857" letter-spacing="0.8">✓  PARENTS' CHOSEN GUARDIAN</text>
+    <text x="796" y="55" font-family="Plus Jakarta Sans, system-ui, sans-serif" font-size="12.5" font-weight="600" fill="#172228">You can state your wishes for who should</text>
+    <text x="796" y="73" font-family="Plus Jakarta Sans, system-ui, sans-serif" font-size="12.5" font-weight="600" fill="#172228">care for your minor children.</text>
+  </g>
+
+  <!-- ==================== ROW 04: FAMILY DISPUTES & ADMINISTRATION ==================== -->
+  <g transform="translate(0, 552)">
+    <rect x="56" y="0" width="1088" height="98" rx="18" fill="#FAF7F0" fill-opacity="0.7" stroke="#172228" stroke-opacity="0.07" />
+    <!-- Scenario Card -->
+    <rect x="68" y="12" width="308" height="74" rx="14" fill="#FFFFFF" stroke="#172228" stroke-opacity="0.07" />
+    <rect x="82" y="24" width="48" height="50" rx="10" fill="#DFCEBF" fill-opacity="0.45" />
+    <text x="106" y="55" font-family="Plus Jakarta Sans, system-ui, sans-serif" font-size="16" font-weight="700" fill="#172228" text-anchor="middle">04</text>
+    <text x="144" y="41" font-family="Plus Jakarta Sans, system-ui, sans-serif" font-size="9.5" font-weight="700" fill="#C65378" letter-spacing="1.1">FAMILY HARMONY &amp; CLARITY</text>
+    <text x="144" y="62" font-family="Plus Jakarta Sans, system-ui, sans-serif" font-size="15.5" font-weight="700" fill="#172228">Disputes &amp; Administration</text>
+
+    <!-- Without Will -->
+    <rect x="392" y="12" width="368" height="74" rx="14" fill="#FFFFFF" stroke="#B91C1C" stroke-opacity="0.15" />
+    <text x="412" y="34" font-family="Plus Jakarta Sans, system-ui, sans-serif" font-size="10" font-weight="700" fill="#B91C1C" letter-spacing="0.8">✕  UNCERTAINTY &amp; DISAGREEMENTS</text>
+    <text x="412" y="55" font-family="Plus Jakarta Sans, system-ui, sans-serif" font-size="12.5" fill="#55636D">Uncertainty can lead to disagreements, delays</text>
+    <text x="412" y="73" font-family="Plus Jakarta Sans, system-ui, sans-serif" font-size="12.5" fill="#55636D">and additional legal work.</text>
+
+    <!-- With WillDrafting -->
+    <rect x="776" y="12" width="356" height="74" rx="14" fill="#FFFFFF" stroke="#5F7E75" stroke-opacity="0.35" stroke-width="1.5" />
+    <text x="796" y="34" font-family="Plus Jakarta Sans, system-ui, sans-serif" font-size="10" font-weight="700" fill="#047857" letter-spacing="0.8">✓  CLEAR WRITTEN INSTRUCTIONS</text>
+    <text x="796" y="55" font-family="Plus Jakarta Sans, system-ui, sans-serif" font-size="12.5" font-weight="600" fill="#172228">Clear instructions can reduce confusion,</text>
+    <text x="796" y="73" font-family="Plus Jakarta Sans, system-ui, sans-serif" font-size="12.5" font-weight="600" fill="#172228">disputes and unnecessary legal work.</text>
+  </g>
+
+  <!-- Bottom CTA Pill -->
+  <rect x="470" y="692" width="260" height="44" rx="22" fill="#C65378" />
+  <text x="600" y="719" font-family="Plus Jakarta Sans, system-ui, sans-serif" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="middle">Protect Your Family Today  ↗</text>
+</svg>

@@ -38,7 +38,7 @@ export const metadata: Metadata = {
         url: "https://www.willdrafting.in/desktopusp.jpg",
         width: 1200,
         height: 630,
-        alt: "Indian Intestate Succession & Legal Heir Share Calculator — WillDrafting.in",
+        alt: "Indian Intestate Succession & Legal Heir Share Calculator - WillDrafting.in",
       },
     ],
   },
@@ -69,7 +69,7 @@ const CALCULATOR_FAQS = [
     question:
       "Why does a Hindu Male's Mother inherit as a Class I heir while the Father does not?",
     answer:
-      "In the Schedule to the Hindu Succession Act, 1956, the Mother is listed in Class I (inheriting an equal share alongside the widow, sons, and daughters), whereas the Father is placed in Class II — Entry I (inheriting only if no Class I legal heir survives). By contrast, if the deceased executes a Will under Section 30, he can allocate any specific share or monthly maintenance to both his Mother and Father.",
+      "In the Schedule to the Hindu Succession Act, 1956, the Mother is listed in Class I (inheriting an equal share alongside the widow, sons, and daughters), whereas the Father is placed in Class II - Entry I (inheriting only if no Class I legal heir survives). By contrast, if the deceased executes a Will under Section 30, he can allocate any specific share or monthly maintenance to both his Mother and Father.",
   },
   {
     question:
@@ -87,13 +87,13 @@ const CALCULATOR_FAQS = [
     question:
       "If I already added a nominee on my Bank FD, Mutual Fund, or Demat account, do I still need a Will?",
     answer:
-      "Yes. In Smt. Sarbati Devi (1984) and Shakti Yezdani v. Jayanand Jayant Salgaonkar (Dec 2023), the Supreme Court of India settled that a bank, mutual fund, or Demat nominee is merely a provisional trustee or custodian who gives the financial institution a valid discharge. Legal ownership vests strictly in the beneficiaries named in your Will—or, if you die without a Will, in all statutory legal heirs calculated above.",
+      "Yes. In Smt. Sarbati Devi (1984) and Shakti Yezdani v. Jayanand Jayant Salgaonkar (Dec 2023), the Supreme Court of India settled that a bank, mutual fund, or Demat nominee is merely a provisional trustee or custodian who gives the financial institution a valid discharge. Legal ownership vests strictly in the beneficiaries named in your Will, or, if you die without a Will, in all statutory legal heirs calculated above.",
   },
   {
     question:
       "What happens when someone dies without a Will and has multiple Class I heirs?",
     answer:
-      "Even when family members are in complete harmony, banks, depositories, and municipal mutation offices freeze transmission of high-value assets until all legal heirs obtain a court Succession Certificate (Part X, Indian Succession Act, 1925), Letters of Administration, or registered Release/Relinquishment Deeds—a process that typically costs 2% to 4% in court/stamp fees and takes 8 to 24 months.",
+      "Even when family members are in complete harmony, banks, depositories, and municipal mutation offices freeze transmission of high-value assets until all legal heirs obtain a court Succession Certificate (Part X, Indian Succession Act, 1925), Letters of Administration, or registered Release/Relinquishment Deeds, a process that typically costs 2% to 4% in court/stamp fees and takes 8 to 24 months.",
   },
 ];
 
@@ -208,7 +208,7 @@ export default function SuccessionCalculatorPage() {
           </h1>
 
           <p className="text-base sm:text-lg leading-[1.65] text-[#49585F] max-w-3xl">
-            See exactly how Indian courts divide your bank accounts, Demat portfolio, and real estate if you pass away without a Will—under the{" "}
+            See exactly how Indian courts divide your bank accounts, Demat portfolio, and real estate if you pass away without a Will, under the{" "}
             <strong className="font-semibold text-[#172228]">
               Hindu Succession Act, 1956 (Sections 8 & 15)
             </strong>
@@ -305,7 +305,7 @@ export default function SuccessionCalculatorPage() {
                 </tr>
                 <tr className="bg-white">
                   <td className="py-4 px-5 font-semibold text-[#111827] border-r border-[#172228]/10">
-                    Muslim — Sunni (Hanafi) & Shia (Ithna Ashari)
+                    Muslim - Sunni (Hanafi) & Shia (Ithna Ashari)
                   </td>
                   <td className="py-4 px-5 border-r border-[#172228]/10">
                     Muslim Personal Law (Shariat) Application Act, 1937
@@ -361,11 +361,11 @@ export default function SuccessionCalculatorPage() {
               <strong className="font-semibold text-[#111827]">
                 Section 63 of the Indian Succession Act, 1925
               </strong>
-              , they are legally deemed to have died <em>intestate</em>. Banks, mutual fund registrars (CAMS/KFintech), NSDL/CDSL depositories, and municipal mutation authorities cannot distribute assets based on family consensus alone—they are bound by the statutory schedules of the deceased&apos;s personal law.
+              , they are legally deemed to have died <em>intestate</em>. Banks, mutual fund registrars (CAMS/KFintech), NSDL/CDSL depositories, and municipal mutation authorities cannot distribute assets based on family consensus alone, they are bound by the statutory schedules of the deceased&apos;s personal law.
             </p>
             <p className="text-[16px] leading-[1.8] text-[#374151]">
               Even worse, as confirmed by the Supreme Court of India in{" "}
-              <em>Shakti Yezdani v. Jayanand Jayant Salgaonkar (2023)</em>, adding a nominee on your bank account or Demat portfolio only appoints a temporary caretaker to receive the funds. The nominee is legally required to distribute those funds according to your Will—or, if you have no Will, to every statutory heir shown in the calculator above.
+              <em>Shakti Yezdani v. Jayanand Jayant Salgaonkar (2023)</em>, adding a nominee on your bank account or Demat portfolio only appoints a temporary caretaker to receive the funds. The nominee is legally required to distribute those funds according to your Will, or, if you have no Will, to every statutory heir shown in the calculator above.
             </p>
             <div className="pt-2 grid grid-cols-1 sm:grid-cols-2 gap-3">
               <div className="flex items-start gap-2.5 text-sm text-[#172228]">

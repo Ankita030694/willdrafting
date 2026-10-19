@@ -71,7 +71,7 @@ export default function WizardSidebar({
   const hasMinors = state.familyMembers.some((f) => f.isMinor);
 
   // Plan selection & the final Will are only revealed once the user has filled in their details
-  // (or reached the review stage / already paid) — payment is asked for at the finalise & download point.
+  // (or reached the review stage / already paid) - payment is asked for at the finalise & download point.
   const isPaid = session?.user?.paymentStatus === "paid";
   const showPaymentSteps = isPaid || currentStep >= 10 || areAllDetailsFilled(state);
 

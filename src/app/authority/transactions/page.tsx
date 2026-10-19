@@ -51,7 +51,7 @@ interface TxnStats {
 }
 
 function formatDateTime(val?: string | null): string {
-  if (!val) return "—";
+  if (!val) return "-";
   const d = new Date(val);
   if (isNaN(d.getTime())) return String(val);
   return d.toLocaleString("en-IN", {
@@ -520,16 +520,16 @@ export default function AuthorityTransactionsPage() {
               <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "0.65rem", padding: "0.95rem", backgroundColor: "#FAF7F0", borderRadius: "12px", border: "1px solid rgba(23, 34, 40, 0.08)" }}>
                 <div><span style={{ color: "#55636D" }}>Customer:</span> <strong style={{ color: "#172228" }}>{viewingTxn.customerName}</strong></div>
                 <div><span style={{ color: "#55636D" }}>Email:</span> <strong style={{ color: "#172228" }}>{viewingTxn.email}</strong></div>
-                <div><span style={{ color: "#55636D" }}>Phone:</span> <strong style={{ color: "#172228" }}>{viewingTxn.phone ? `+91 ${viewingTxn.phone}` : "—"}</strong></div>
+                <div><span style={{ color: "#55636D" }}>Phone:</span> <strong style={{ color: "#172228" }}>{viewingTxn.phone ? `+91 ${viewingTxn.phone}` : "-"}</strong></div>
                 <div><span style={{ color: "#55636D" }}>Account ID:</span> <code style={{ fontSize: "0.75rem", color: "#172228" }}>{viewingTxn.accountId}</code></div>
                 <div><span style={{ color: "#55636D" }}>Plan:</span> <strong style={{ color: "#172228" }}>{viewingTxn.planName}</strong></div>
                 <div><span style={{ color: "#55636D" }}>Order Kind:</span> <strong style={{ textTransform: "capitalize", color: "#172228" }}>{viewingTxn.kind.replace(/_/g, " ")}</strong></div>
                 <div><span style={{ color: "#55636D" }}>Amount:</span> <strong style={{ color: "#3F5C53" }}>₹{viewingTxn.amount}</strong> (Base: ₹{viewingTxn.baseAmount})</div>
                 <div><span style={{ color: "#55636D" }}>Status:</span> <strong style={{ textTransform: "uppercase", color: "#172228" }}>{viewingTxn.status}</strong></div>
-                <div><span style={{ color: "#55636D" }}>Invoice No:</span> <strong style={{ color: "#172228" }}>{viewingTxn.invoiceNo || "—"}</strong></div>
+                <div><span style={{ color: "#55636D" }}>Invoice No:</span> <strong style={{ color: "#172228" }}>{viewingTxn.invoiceNo || "-"}</strong></div>
                 <div><span style={{ color: "#55636D" }}>Gateway Method:</span> <strong style={{ color: "#172228" }}>{viewingTxn.method}</strong></div>
-                <div><span style={{ color: "#55636D" }}>PayU mihpayid:</span> <code style={{ color: "#172228" }}>{viewingTxn.gatewayPaymentId || "—"}</code></div>
-                <div><span style={{ color: "#55636D" }}>Bank Ref / UTR:</span> <code style={{ color: "#172228" }}>{viewingTxn.bankRefNum || "—"}</code></div>
+                <div><span style={{ color: "#55636D" }}>PayU mihpayid:</span> <code style={{ color: "#172228" }}>{viewingTxn.gatewayPaymentId || "-"}</code></div>
+                <div><span style={{ color: "#55636D" }}>Bank Ref / UTR:</span> <code style={{ color: "#172228" }}>{viewingTxn.bankRefNum || "-"}</code></div>
                 <div><span style={{ color: "#55636D" }}>Created At:</span> <strong style={{ color: "#172228" }}>{formatDateTime(viewingTxn.createdAt)}</strong></div>
                 <div><span style={{ color: "#55636D" }}>Paid At:</span> <strong style={{ color: "#172228" }}>{formatDateTime(viewingTxn.paidAt)}</strong></div>
                 {viewingTxn.failureReason && (

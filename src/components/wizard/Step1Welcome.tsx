@@ -183,7 +183,7 @@ export default function Step1Welcome({
           >
             {isHi
               ? "आज केवल 10 मिनट का समय निकालकर आप अपने प्रियजनों को अदालती विवादों और देरी से बचा सकते हैं। बिना किसी जटिल कानूनी कागजी कार्रवाई के अपनी गति से सरल प्रश्नों के उत्तर दें।"
-              : "Taking 10 minutes today protects your loved ones from court disputes and delays. Simply tap and answer at your own pace—no complex legal paperwork required."}
+              : "Taking 10 minutes today protects your loved ones from court disputes and delays. Simply tap and answer at your own pace, with no complex legal paperwork required."}
           </p>
         </div>
       </div>
