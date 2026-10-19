@@ -3,6 +3,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 import { ChevronDown, Menu, X, LogIn } from "lucide-react";
 import { motion, AnimatePresence } from "motion/react";
 import { useSession } from "next-auth/react";
@@ -33,19 +34,58 @@ const NAV_ITEMS: NavItem[] = [
 ];
 
 export default function Navbar() {
+  const pathname = usePathname();
   const { data: session, status } = useSession();
   const isAuthenticated = status === "authenticated";
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const openSignup = () => window.dispatchEvent(new Event(OPEN_SIGNUP_EVENT));
   const dropdownRef = useRef<HTMLDivElement>(null);
+  const dropdownTimeoutRef = useRef<NodeJS.Timeout | null>(null);
   const mobileMenuRef = useRef<HTMLDivElement>(null);
   const hamburgerBtnRef = useRef<HTMLButtonElement>(null);
+
+  const handleHomeClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    if (pathname === "/") {
+      e.preventDefault();
+      if (typeof window !== "undefined") {
+        if ("scrollRestoration" in window.history) {
+          window.history.scrollRestoration = "manual";
+        }
+        window.scrollTo({ top: 0, left: 0, behavior: "instant" });
+        if (window.location.hash || window.location.search) {
+          window.location.href = "/";
+        } else {
+          window.location.reload();
+        }
+      }
+    }
+  };
+
+  const handleDropdownEnter = () => {
+    if (dropdownTimeoutRef.current) {
+      clearTimeout(dropdownTimeoutRef.current);
+      dropdownTimeoutRef.current = null;
+    }
+    setDropdownOpen(true);
+  };
+
+  const handleDropdownLeave = () => {
+    if (dropdownTimeoutRef.current) {
+      clearTimeout(dropdownTimeoutRef.current);
+    }
+    dropdownTimeoutRef.current = setTimeout(() => {
+      setDropdownOpen(false);
+    }, 280);
+  };
 
   useEffect(() => {
     function handleClickOutside(event: MouseEvent) {
       const target = event.target as Node;
       if (dropdownRef.current && !dropdownRef.current.contains(target)) {
+        if (dropdownTimeoutRef.current) {
+          clearTimeout(dropdownTimeoutRef.current);
+        }
         setDropdownOpen(false);
       }
       if (
@@ -60,6 +100,9 @@ export default function Navbar() {
 
     function handleKeyDown(event: KeyboardEvent) {
       if (event.key === "Escape") {
+        if (dropdownTimeoutRef.current) {
+          clearTimeout(dropdownTimeoutRef.current);
+        }
         setMobileMenuOpen(false);
         setDropdownOpen(false);
       }
@@ -79,6 +122,9 @@ export default function Navbar() {
       document.removeEventListener("mousedown", handleClickOutside);
       document.removeEventListener("keydown", handleKeyDown);
       window.removeEventListener("resize", handleResize);
+      if (dropdownTimeoutRef.current) {
+        clearTimeout(dropdownTimeoutRef.current);
+      }
     };
   }, []);
 
@@ -122,6 +168,7 @@ export default function Navbar() {
           <div className="flex items-center md:min-w-[130px] pl-2 sm:pl-4">
             <Link
               href="/"
+              onClick={handleHomeClick}
               className="flex items-center transition-opacity hover:opacity-80"
             >
               <Image
@@ -143,12 +190,17 @@ export default function Navbar() {
                   key={item.label}
                   ref={dropdownRef}
                   className="relative"
-                  onMouseEnter={() => setDropdownOpen(true)}
-                  onMouseLeave={() => setDropdownOpen(false)}
+                  onMouseEnter={handleDropdownEnter}
+                  onMouseLeave={handleDropdownLeave}
                 >
                   <button
                     type="button"
-                    onClick={() => setDropdownOpen((prev) => !prev)}
+                    onClick={() => {
+                      if (dropdownTimeoutRef.current) {
+                        clearTimeout(dropdownTimeoutRef.current);
+                      }
+                      setDropdownOpen((prev) => !prev);
+                    }}
                     className="inline-flex items-center gap-1.5 text-[14px] font-medium text-[#1c282e] hover:text-black transition-colors focus:outline-none py-1.5"
                     style={{ display: "inline-flex", alignItems: "center", gap: "0.35rem" }}
                   >
@@ -162,19 +214,30 @@ export default function Navbar() {
                     />
                   </button>
 
-                  {/* Desktop Dropdown Menu */}
+                  {/* Desktop Dropdown Menu with bridging padding */}
                   {dropdownOpen && (
-                    <div className="absolute left-1/2 top-full mt-2.5 w-56 -translate-x-1/2 rounded-2xl border border-white/80 bg-white/95 p-1.5 shadow-xl backdrop-blur-lg animate-in fade-in zoom-in-95 duration-150 z-50">
-                      {item.dropdownItems?.map((subItem) => (
-                        <Link
-                          key={subItem.label}
-                          href={subItem.href}
-                          onClick={() => setDropdownOpen(false)}
-                          className="block rounded-xl px-3.5 py-2 text-xs font-medium text-slate-700 hover:bg-slate-100 hover:text-black transition-colors"
-                        >
-                          {subItem.label}
-                        </Link>
-                      ))}
+                    <div
+                      className="absolute left-1/2 top-full pt-2 -translate-x-1/2 z-50"
+                      onMouseEnter={handleDropdownEnter}
+                      onMouseLeave={handleDropdownLeave}
+                    >
+                      <div className="w-56 rounded-2xl border border-white/80 bg-white/95 p-1.5 shadow-xl backdrop-blur-lg animate-in fade-in zoom-in-95 duration-150">
+                        {item.dropdownItems?.map((subItem) => (
+                          <Link
+                            key={subItem.label}
+                            href={subItem.href}
+                            onClick={() => {
+                              if (dropdownTimeoutRef.current) {
+                                clearTimeout(dropdownTimeoutRef.current);
+                              }
+                              setDropdownOpen(false);
+                            }}
+                            className="block rounded-xl px-3.5 py-2 text-xs font-medium text-slate-700 hover:bg-slate-100 hover:text-black transition-colors"
+                          >
+                            {subItem.label}
+                          </Link>
+                        ))}
+                      </div>
                     </div>
                   )}
                 </div>
@@ -182,6 +245,7 @@ export default function Navbar() {
                 <Link
                   key={item.label}
                   href={item.href}
+                  onClick={item.href === "/" ? handleHomeClick : undefined}
                   className="text-[14px] font-medium text-[#1c282e] hover:text-black transition-colors py-1.5"
                 >
                   {item.label}
@@ -314,7 +378,12 @@ export default function Navbar() {
                     >
                       <Link
                         href={item.href}
-                        onClick={() => setMobileMenuOpen(false)}
+                        onClick={(e) => {
+                          setMobileMenuOpen(false);
+                          if (item.href === "/") {
+                            handleHomeClick(e);
+                          }
+                        }}
                         className="text-left w-full rounded-2xl px-4 py-3 text-[15px] font-medium text-[#1c282e] hover:bg-slate-100/80 hover:text-black transition-colors block"
                       >
                         {item.label}

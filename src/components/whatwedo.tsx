@@ -28,7 +28,7 @@ const services: ServiceCard[] = [
           fill
           priority
           sizes="(max-width: 768px) 100vw, 50vw"
-          className="object-contain scale-[1.2] transition-transform duration-300"
+          className="object-contain scale-100 sm:scale-[1.2] transition-transform duration-300"
         />
       </div>
     ),
@@ -46,7 +46,7 @@ const services: ServiceCard[] = [
           fill
           priority
           sizes="(max-width: 768px) 100vw, 50vw"
-          className="object-contain scale-[1.2] transition-transform duration-300"
+          className="object-contain scale-100 sm:scale-[1.2] transition-transform duration-300"
         />
       </div>
     ),
@@ -55,45 +55,38 @@ const services: ServiceCard[] = [
 
 export default function WhatWeDo() {
   return (
-    <section className="w-full bg-[#FAF7F0] py-16 sm:py-20 flex justify-center">
+    <section className="w-full bg-[#FAF7F0] py-12 sm:py-20 flex justify-center">
       <div className="w-full max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Header Section */}
-        <div className="mb-12 sm:mb-16 max-w-[800px]">
+        <div className="mb-8 sm:mb-16 max-w-[800px]">
           {/* Eyebrow with leading rule */}
-          <div className="flex items-center gap-3 mb-4 text-left">
-            <span className="text-xs font-bold tracking-[0.16em] uppercase text-[#C65378]">
+          <div className="flex items-center gap-3 mb-3 sm:mb-4 text-left">
+            <span className="text-[0.68rem] sm:text-xs font-bold tracking-[0.12em] sm:tracking-[0.16em] uppercase text-[#C65378] leading-snug">
               Online Will Drafting &amp; Estate Planning India
             </span>
           </div>
 
           {/* Section Heading */}
-          <h2 className="text-[2.2rem] sm:text-[3rem] lg:text-[3.4rem] font-medium text-[#172228] leading-[1.12] tracking-tight mb-5">
+          <h2 className="text-[1.75rem] sm:text-[3rem] lg:text-[3.4rem] font-medium text-[#172228] leading-[1.15] sm:leading-[1.12] tracking-tight mb-4 sm:mb-5">
             Put Your Estate Plan in Writing.
           </h2>
 
           {/* Subheading / Description */}
-          <p className="text-[1.05rem] sm:text-[1.15rem] leading-[1.65] text-[#49585F] font-normal max-w-[680px]">
+          <p className="text-[0.92rem] sm:text-[1.15rem] leading-[1.6] sm:leading-[1.65] text-[#49585F] font-normal max-w-[680px]">
             Create a professionally structured, <span className="font-bold">legally valid online Will in India</span> from the comfort of your home. Whether you are a Resident Indian or an NRI/OCI abroad, our bilingual (English &amp; Hindi) online Will generator structures your estate under the Indian Succession Act, 1925, Hindu Succession Act, 1956, and Muslim Personal Law (Wasiyat)—backed by AMA Legal Solutions.
           </p>
         </div>
 
-        {/* 2-Card Services Grid (Desktop) / Carousel (Mobile) */}
-        <div 
-          className="flex md:grid md:grid-cols-2 gap-4 sm:gap-6 lg:gap-8 overflow-x-auto md:overflow-visible snap-x snap-mandatory md:snap-none pb-4 md:pb-0 w-full scrollbar-none"
-          style={{
-            scrollbarWidth: "none",
-            msOverflowStyle: "none",
-            WebkitOverflowScrolling: "touch",
-          }}
-        >
+        {/* 2-Card Services Grid: stacked on mobile, 2 columns on desktop */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 lg:gap-8 w-full">
           {services.map((service, index) => (
             <div
               key={index}
-              className="min-w-[85vw] sm:min-w-[400px] md:min-w-0 shrink-0 md:shrink snap-center md:snap-align-none bg-white rounded-[24px] overflow-hidden flex flex-col justify-between transition-all duration-300 group"
+              className="w-full bg-white rounded-[24px] overflow-hidden flex flex-col justify-between transition-all duration-300 group"
             >
               {/* Top Illustration Container */}
-              <div className="relative w-full bg-gradient-to-b from-[#F5EBF4]/40 to-transparent flex items-center justify-center h-[220px] sm:h-[285px] overflow-hidden">
+              <div className="relative w-full bg-gradient-to-b from-[#F5EBF4]/40 to-transparent flex items-center justify-center h-[200px] sm:h-[285px] overflow-hidden">
                 {service.illustration}
               </div>
 

@@ -3,7 +3,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { ShieldCheck, Scale, Award, CheckCircle2, ArrowUpRight, Building2 } from "lucide-react";
+import { ShieldCheck, Scale, Award, CheckCircle2, ArrowUpRight } from "lucide-react";
 
 const PILLARS = [
   {
@@ -40,10 +40,6 @@ export default function PoweredByAma() {
           {/* Top Co-Branded Lockup Bar */}
           <div className="relative z-10 flex flex-col lg:flex-row lg:items-center lg:justify-between gap-8 pb-10 mb-10 border-b border-[#172228]/10">
             <div>
-              <div className="inline-flex items-center gap-2 rounded-full bg-[#C65378]/10 px-3.5 py-1 text-[11px] font-bold tracking-[0.16em] uppercase text-[#C65378] mb-4">
-                <Building2 size={13} />
-                <span>Institutional Legal Backing</span>
-              </div>
               <h2 className="text-[2rem] sm:text-[2.75rem] lg:text-[3.15rem] font-medium text-[#172228] leading-[1.12] tracking-tight max-w-2xl">
                 WillDrafting.in is Powered by{" "}
                 <span className="text-[#30261C] underline decoration-[#D29E0D]/60 decoration-2 underline-offset-8">
@@ -73,10 +69,7 @@ export default function PoweredByAma() {
               </div>
 
               {/* AMA Legal Solutions Logo */}
-              <div className="flex flex-col items-center sm:items-start">
-                <span className="text-[10px] font-bold tracking-[0.16em] uppercase text-[#D29E0D] mb-1.5">
-                  Powered By
-                </span>
+              <div className="flex items-center">
                 <Image
                   src="/ama.svg"
                   alt="AMA Legal Solutions Logo"

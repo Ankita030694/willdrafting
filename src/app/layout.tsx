@@ -19,12 +19,14 @@ const plusJakarta = Plus_Jakarta_Sans({
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.willdrafting.in"),
   title: {
-    default: "Online Will Maker India — Legally Valid Online Will Drafting in Minutes | WillDrafting.in",
+    default: "India's First Online Will Drafting Platform | WillDrafting.in",
     template: "%s | WillDrafting.in",
   },
   description:
-    "Make a legally valid online Will in India in minutes under the Indian Succession Act, 1925. Bilingual English & Hindi online Will maker with instant court-ready PDF & advocate review by AMA Legal Solutions.",
+    "India's first online will drafting platform. Make a legally valid online Will in India in minutes with instant court-ready PDF & advocate review by AMA Legal Solutions.",
   keywords: [
+    "india's first online will drafting platform",
+    "online will drafting platform india",
     "online will maker india",
     "online will drafting india",
     "make a will online india",
@@ -49,9 +51,9 @@ export const metadata: Metadata = {
     canonical: "https://www.willdrafting.in",
   },
   openGraph: {
-    title: "Online Will Maker India — Legally Valid Online Will Drafting in Minutes | WillDrafting.in",
+    title: "India's First Online Will Drafting Platform | WillDrafting.in",
     description:
-      "Make a legally valid online Will in India in minutes under the Indian Succession Act, 1925. Bilingual English & Hindi online Will maker with instant court-ready PDF & advocate review by AMA Legal Solutions.",
+      "India's first online will drafting platform. Make a legally valid online Will in India in minutes with instant court-ready PDF & advocate review by AMA Legal Solutions.",
     url: "https://www.willdrafting.in",
     siteName: "WillDrafting.in",
     locale: "en_IN",
@@ -67,9 +69,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Online Will Maker India — Legally Valid Online Will Drafting in Minutes | WillDrafting.in",
+    title: "India's First Online Will Drafting Platform | WillDrafting.in",
     description:
-      "Make a legally valid online Will in India in minutes under the Indian Succession Act, 1925. Bilingual English & Hindi online Will maker with instant court-ready PDF & advocate review by AMA Legal Solutions.",
+      "India's first online will drafting platform. Make a legally valid online Will in India in minutes with instant court-ready PDF & advocate review by AMA Legal Solutions.",
     images: ["/desktopusp.jpg"],
   },
   robots: {

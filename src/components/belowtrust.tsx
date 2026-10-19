@@ -1,9 +1,9 @@
 "use client";
 
-import React, { useState, useEffect, useRef } from "react";
 import Image from "next/image";
+import React, { useState } from "react";
 import Link from "next/link";
-import { ArrowUpRight, ArrowRight, ShieldCheck, FileCheck, CheckCircle2, ChevronLeft, ChevronRight } from "lucide-react";
+import { ArrowUpRight, ArrowRight, ShieldCheck, CheckCircle2, ChevronLeft, ChevronRight } from "lucide-react";
 
 interface ClauseItem {
   id: string;
@@ -107,132 +107,27 @@ const CLAUSE_ITEMS: ClauseItem[] = [
 
 export default function BelowTrust() {
   const [activeId, setActiveId] = useState<string>(CLAUSE_ITEMS[0].id);
-  const cardRefs = useRef<{ [key: string]: HTMLDivElement | null }>({});
-  const mobileCarouselRef = useRef<HTMLDivElement>(null);
-  const [isDragging, setIsDragging] = useState(false);
-  const dragStartX = useRef(0);
-  const dragStartScrollLeft = useRef(0);
-
-  // IntersectionObserver to sync left pointers as right cards scroll (on desktop)
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            setActiveId(entry.target.id);
-          }
-        });
-      },
-      {
-        rootMargin: "-20% 0px -50% 0px",
-        threshold: 0.1,
-      }
-    );
-
-    CLAUSE_ITEMS.forEach((item) => {
-      const el = cardRefs.current[item.id];
-      if (el) observer.observe(el);
-    });
-
-    return () => observer.disconnect();
-  }, []);
-
-  // Update activeId on mobile horizontal scroll
-  const handleCarouselScroll = () => {
-    const el = mobileCarouselRef.current;
-    if (!el || window.innerWidth >= 1024) return;
-    const scrollLeft = el.scrollLeft;
-    const gap = window.innerWidth >= 640 ? 24 : 16;
-    const stride = el.offsetWidth + gap;
-    if (stride <= 0) return;
-    const activeIndex = Math.min(
-      CLAUSE_ITEMS.length - 1,
-      Math.max(0, Math.round(scrollLeft / stride))
-    );
-    if (CLAUSE_ITEMS[activeIndex]) {
-      setActiveId(CLAUSE_ITEMS[activeIndex].id);
-    }
-  };
-
-  const handlePointerClick = (id: string) => {
-    setActiveId(id);
-    const targetElement = cardRefs.current[id];
-    if (targetElement) {
-      if (window.innerWidth >= 1024) {
-        // Desktop: scroll page smoothly
-        const yOffset = -105;
-        const y = targetElement.getBoundingClientRect().top + window.pageYOffset + yOffset;
-        window.scrollTo({ top: y, behavior: "smooth" });
-      } else if (mobileCarouselRef.current) {
-        // Mobile: scroll horizontal carousel to exact single card with gap
-        const cardIndex = CLAUSE_ITEMS.findIndex((c) => c.id === id);
-        if (cardIndex !== -1) {
-          const gap = window.innerWidth >= 640 ? 24 : 16;
-          const stride = mobileCarouselRef.current.offsetWidth + gap;
-          mobileCarouselRef.current.scrollTo({
-            left: cardIndex * stride,
-            behavior: "smooth",
-          });
-        }
-      }
-    }
-  };
-
-  // Mouse Drag Handlers for mobile horizontal carousel
-  const handleMouseDown = (e: React.MouseEvent) => {
-    if (window.innerWidth >= 1024) return;
-    const el = mobileCarouselRef.current;
-    if (!el) return;
-    setIsDragging(true);
-    dragStartX.current = e.pageX;
-    dragStartScrollLeft.current = el.scrollLeft;
-  };
-
-  const handleMouseMove = (e: React.MouseEvent) => {
-    if (!isDragging) return;
-    const el = mobileCarouselRef.current;
-    if (!el) return;
-    e.preventDefault();
-    const walk = (e.pageX - dragStartX.current) * 1.3;
-    el.scrollLeft = dragStartScrollLeft.current - walk;
-  };
-
-  const handleMouseUp = () => {
-    setIsDragging(false);
-  };
-
-  const handleMouseLeave = () => {
-    setIsDragging(false);
-  };
+  const activeIdx = CLAUSE_ITEMS.findIndex((c) => c.id === activeId);
+  const active = CLAUSE_ITEMS[activeIdx];
 
   return (
-    <section
-      className="w-full bg-[#FAF7F0] pt-10 pb-16 sm:pb-24"
-      style={{ paddingTop: "5rem" }}
-    >
+    <section className="w-full bg-[#FAF7F0] pt-12 pb-12 sm:pt-16 sm:pb-16">
       <div className="w-full max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
-        
-        {/* Section Header with Top Right Action Pill */}
-        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-10 sm:mb-16 lg:mb-20">
+        {/* Section Header */}
+        <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 sm:gap-6 mb-6 sm:mb-10">
           <div className="max-w-[760px]">
-            {/* Eyebrow */}
-            <div className="flex items-center gap-3 mb-4 text-left">
-              <span className="text-xs font-bold tracking-[0.14em] uppercase text-[#C65378]">
-                Legally Structured Will Clauses
-              </span>
-            </div>
-
-            {/* Main Section Heading */}
-            <h2 className="text-[2.2rem] sm:text-[3rem] lg:text-[3.4rem] font-medium text-[#172228] leading-[1.12] tracking-tight">
+            <span className="block text-xs font-bold tracking-[0.14em] uppercase text-[#C65378] mb-3">
+              Legally Structured Will Clauses
+            </span>
+            <h2 className="text-[1.7rem] sm:text-[2.4rem] lg:text-[2.8rem] font-medium text-[#172228] leading-[1.15] tracking-tight">
               Support tailored to your estate, family & succession wishes.
             </h2>
           </div>
 
-          {/* Right Action Pill */}
           <div className="shrink-0">
             <Link
               href="/contact"
-              className="inline-flex items-center gap-2 rounded-full border border-[#172228]/20 bg-white/70 backdrop-blur-sm px-6 py-2.5 text-[14px] font-medium text-[#172228] shadow-sm transition-all hover:bg-white hover:border-[#172228]/40 hover:shadow active:scale-95"
+              className="inline-flex items-center gap-2 rounded-full border border-[#172228]/20 bg-white/70 px-5 py-2.5 text-[14px] font-medium text-[#172228] shadow-sm transition-all hover:bg-white hover:border-[#172228]/40 active:scale-95"
             >
               <span>Explore services</span>
               <ArrowUpRight size={16} strokeWidth={2} />
@@ -240,23 +135,63 @@ export default function BelowTrust() {
           </div>
         </div>
 
-        {/* 2-Column Sticky Layout on Desktop; Single Horizontal Carousel on Mobile */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 relative items-start">
-          
-          {/* Left Column: Sticky Navigation Card (HIDDEN ON MOBILE, visible on desktop lg+) */}
-          <div
-            className="hidden lg:block lg:col-span-4 lg:sticky z-20 self-start"
-            style={{
-              position: "sticky",
-              top: "96px",
-              alignSelf: "flex-start",
-            }}
-          >
-            <div className="bg-white rounded-3xl p-6 sm:p-7">
-              <p className="text-xs font-bold tracking-wider uppercase text-[#8C98A4] mb-4">
+        {/* Mobile: all clause cards stacked one below another */}
+        <div className="flex lg:hidden flex-col gap-4">
+          {CLAUSE_ITEMS.map((item, idx) => (
+            <div key={item.id} className="bg-white rounded-3xl p-5 sm:p-6">
+              <div className="relative h-40 sm:h-48 rounded-2xl overflow-hidden bg-slate-100 border border-[#1B2A4A]/10 mb-4">
+                {item.image && (
+                  <Image
+                    src={item.image}
+                    alt={item.title}
+                    fill
+                    sizes="100vw"
+                    className="object-cover object-center"
+                  />
+                )}
+              </div>
+
+              <div className="flex items-center justify-between gap-3 mb-3">
+                <span className="inline-flex px-3 py-1 rounded-full text-xs font-semibold bg-[#C65378]/10 text-[#C65378]">
+                  {item.badge}
+                </span>
+                <span className="text-xs font-mono text-[#83919C]">
+                  Clause {idx + 1} of {CLAUSE_ITEMS.length}
+                </span>
+              </div>
+
+              <h3 className="text-xl font-bold text-[#172228] mb-1 tracking-tight">{item.title}</h3>
+              <p className="text-xs font-medium text-[#5F7E75] mb-3">{item.lawRef}</p>
+              <p className="text-[0.92rem] leading-relaxed text-[#49585F] mb-4">{item.summary}</p>
+
+              <ul className="space-y-2 mb-4">
+                {item.points.map((pt, i) => (
+                  <li key={i} className="flex items-start gap-2 text-[13px] text-[#2D3A41]">
+                    <CheckCircle2 size={16} className="text-[#5F7E75] shrink-0 mt-0.5" />
+                    <span>{pt}</span>
+                  </li>
+                ))}
+              </ul>
+
+              <Link
+                href="/contact"
+                className="inline-flex items-center gap-1.5 text-sm font-bold text-[#C65378] hover:text-[#a13c5d] transition-colors"
+              >
+                <span>See More</span>
+                <ArrowRight size={14} />
+              </Link>
+            </div>
+          ))}
+        </div>
+
+        {/* Desktop: tabbed layout */}
+        <div className="hidden lg:grid grid-cols-12 gap-8 items-stretch">
+          {/* Desktop: clause list */}
+          <div className="hidden lg:block lg:col-span-4">
+            <div className="bg-white rounded-3xl p-6 h-full">
+              <p className="text-xs font-bold tracking-wider uppercase text-[#8C98A4] mb-3">
                 Core Clauses in Your Will
               </p>
-
               <div className="flex flex-col divide-y divide-gray-100">
                 {CLAUSE_ITEMS.map((item) => {
                   const isActive = activeId === item.id;
@@ -264,193 +199,115 @@ export default function BelowTrust() {
                     <button
                       key={item.id}
                       type="button"
-                      onClick={() => handlePointerClick(item.id)}
-                      className={`flex items-center justify-between py-4 text-left transition-all duration-200 group ${
-                        isActive
-                          ? "text-[#172228] font-semibold"
-                          : "text-[#5C6A72] hover:text-[#172228]"
+                      onClick={() => setActiveId(item.id)}
+                      className={`flex items-center justify-between py-3 text-left transition-colors group ${
+                        isActive ? "text-[#172228] font-semibold" : "text-[#5C6A72] hover:text-[#172228]"
                       }`}
                     >
                       <div className="flex items-start gap-3 pr-2">
-                        <span
-                          className={`text-[13px] font-mono font-medium transition-colors ${
-                            isActive ? "text-[#C65378]" : "text-[#9DA8B0] group-hover:text-[#172228]"
-                          }`}
-                        >
+                        <span className={`text-[13px] font-mono ${isActive ? "text-[#C65378]" : "text-[#9DA8B0]"}`}>
                           {item.number}
                         </span>
-                        <span className="text-[15px] leading-snug">
-                          {item.title}
-                        </span>
+                        <span className="text-[15px] leading-snug">{item.title}</span>
                       </div>
-
-                      {/* Right Pointer Arrow */}
-                      <span
-                        className={`transition-all duration-200 shrink-0 ${
-                          isActive
-                            ? "opacity-100 translate-x-0 text-[#C65378]"
-                            : "opacity-0 -translate-x-1 group-hover:opacity-60 group-hover:translate-x-0 text-[#172228]"
-                        }`}
-                      >
-                        <ArrowRight size={18} strokeWidth={2} />
-                      </span>
+                      <ArrowRight
+                        size={16}
+                        className={`shrink-0 transition-opacity ${isActive ? "opacity-100 text-[#C65378]" : "opacity-0"}`}
+                      />
                     </button>
                   );
                 })}
               </div>
-
-              {/* Bottom Support Badge inside sticky card */}
-              <div className="mt-6 pt-5 border-t border-gray-100 flex items-center justify-between text-xs text-[#6C7882]">
+              <div className="mt-4 pt-4 border-t border-gray-100 flex items-center justify-between text-xs text-[#6C7882]">
                 <span className="inline-flex items-center gap-1.5 font-medium">
                   <ShieldCheck size={16} className="text-[#5F7E75]" />
                   Indian Legal Standards
                 </span>
-                <span className="text-[11px] font-semibold uppercase tracking-wider text-[#C65378]">
-                  Verified
-                </span>
+                <span className="text-[11px] font-semibold uppercase tracking-wider text-[#C65378]">Verified</span>
               </div>
             </div>
           </div>
 
-          {/* Right Column (Desktop: vertical stack; Mobile: horizontal draggable carousel) */}
-          <div className="w-full lg:col-span-8 overflow-hidden">
-            <div
-              ref={mobileCarouselRef}
-              onScroll={handleCarouselScroll}
-              onMouseDown={handleMouseDown}
-              onMouseMove={handleMouseMove}
-              onMouseUp={handleMouseUp}
-              onMouseLeave={handleMouseLeave}
-              className="flex lg:flex-col overflow-x-auto lg:overflow-x-visible gap-4 sm:gap-6 lg:gap-14 pb-4 pt-1 lg:p-0 scrollbar-none snap-x snap-mandatory lg:snap-none cursor-grab active:cursor-grabbing lg:cursor-default w-full"
-              style={{
-                scrollbarWidth: "none",
-                msOverflowStyle: "none",
-                WebkitOverflowScrolling: "touch",
-              }}
-            >
-              {CLAUSE_ITEMS.map((item, idx) => {
-                return (
-                  <div
-                    key={item.id}
-                    id={item.id}
-                    ref={(el) => {
-                      cardRefs.current[item.id] = el;
-                    }}
-                    className="w-full min-w-full lg:min-w-0 shrink-0 lg:shrink snap-center lg:snap-align-none bg-white rounded-3xl p-6 sm:p-8 lg:p-10 scroll-mt-28 transition-all flex flex-col justify-between"
-                  >
-                  {/* Top Header of Card */}
-                  <div className="flex flex-wrap items-center justify-between gap-3 mb-6">
-                    <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-[#C65378]/10 text-[#C65378]">
-                      {item.badge}
+          {/* Active clause panel */}
+          <div className="lg:col-span-8">
+            <div className="bg-white rounded-3xl p-5 sm:p-8 h-full flex flex-col">
+              <div className="grid grid-cols-1 md:grid-cols-5 gap-5 md:gap-6 mb-5">
+                {/* Clause image: short banner on mobile, side column on larger screens */}
+                <div className="relative order-first md:order-last md:col-span-2 h-40 sm:h-48 md:h-auto md:min-h-[260px] rounded-2xl overflow-hidden bg-slate-100 border border-[#1B2A4A]/10">
+                  {active.image && (
+                    <Image
+                      key={active.id}
+                      src={active.image}
+                      alt={active.title}
+                      fill
+                      sizes="(max-width: 768px) 100vw, 320px"
+                      className="object-cover object-center"
+                    />
+                  )}
+                </div>
+
+                <div className="md:col-span-3">
+                  <div className="flex items-center justify-between gap-3 mb-3">
+                    <span className="inline-flex px-3 py-1 rounded-full text-xs font-semibold bg-[#C65378]/10 text-[#C65378]">
+                      {active.badge}
                     </span>
                     <span className="text-xs font-mono text-[#83919C]">
-                      Clause {idx + 1} of {CLAUSE_ITEMS.length}
+                      Clause {activeIdx + 1} of {CLAUSE_ITEMS.length}
                     </span>
                   </div>
 
-                  {/* Title & Law Reference */}
-                  <h3 className="text-2xl sm:text-3xl font-bold font-sans text-[#172228] mb-2 tracking-tight">
-                    {item.title}
+                  <h3 className="text-xl sm:text-2xl font-bold text-[#172228] mb-1 tracking-tight">
+                    {active.title}
                   </h3>
-                  <p className="text-xs sm:text-sm font-medium text-[#5F7E75] mb-6">
-                    {item.lawRef}
+                  <p className="text-xs sm:text-sm font-medium text-[#5F7E75] mb-3">{active.lawRef}</p>
+
+                  <p className="text-[0.92rem] sm:text-[0.98rem] leading-relaxed text-[#49585F] mb-4">
+                    {active.summary}
                   </p>
 
-                  {/* Summary */}
-                  <p className="text-[0.98rem] sm:text-[1.05rem] leading-relaxed text-[#49585F] mb-8">
-                    {item.summary}
-                  </p>
-
-                  {/* Visual Media */}
-                  <div className="mb-8">
-                    <div className="relative rounded-2xl overflow-hidden min-h-[220px] bg-slate-100 border border-[#1B2A4A]/10">
-                      {item.image ? (
-                        <Image
-                          src={item.image}
-                          alt={item.title}
-                          fill
-                          sizes="(max-width: 768px) 100vw, 800px"
-                          className="object-cover object-center"
-                        />
-                      ) : (
-                        <div className="w-full h-full flex items-center justify-center bg-[#FAF7F0] text-slate-400">
-                          <ShieldCheck size={48} strokeWidth={1.5} />
-                        </div>
-                      )}
-                    </div>
-                  </div>
-
-                  {/* Highlights Bullet List */}
-                  <div className="pt-6 border-t border-gray-100 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-                    <ul className="space-y-2">
-                      {item.points.map((pt, pIdx) => (
-                        <li key={pIdx} className="flex items-center gap-2 text-xs sm:text-sm text-[#2D3A41]">
-                          <CheckCircle2 size={16} className="text-[#5F7E75] shrink-0" />
-                          <span>{pt}</span>
-                        </li>
-                      ))}
-                    </ul>
-
-                    <Link
-                      href="/contact"
-                      className="inline-flex items-center justify-center gap-1.5 text-xs font-bold text-[#C65378] hover:text-[#a13c5d] transition-colors py-2 whitespace-nowrap self-start sm:self-auto"
-                    >
-                      <span>See More</span>
-                      <ArrowRight size={14} />
-                    </Link>
-                  </div>
+                  <ul className="space-y-2">
+                    {active.points.map((pt, i) => (
+                      <li key={i} className="flex items-start gap-2 text-[13px] sm:text-sm text-[#2D3A41]">
+                        <CheckCircle2 size={16} className="text-[#5F7E75] shrink-0 mt-0.5" />
+                        <span>{pt}</span>
+                      </li>
+                    ))}
+                  </ul>
                 </div>
-              );
-            })}
-            </div>
-
-            {/* Mobile Carousel Controls: Prev/Next Buttons + Swipe Dots */}
-            <div className="flex lg:hidden items-center justify-between mt-5 px-2">
-              <button
-                type="button"
-                onClick={() => {
-                  const currIdx = CLAUSE_ITEMS.findIndex((c) => c.id === activeId);
-                  const prevIdx = Math.max(0, currIdx - 1);
-                  handlePointerClick(CLAUSE_ITEMS[prevIdx].id);
-                }}
-                disabled={activeId === CLAUSE_ITEMS[0].id}
-                className="w-9 h-9 rounded-full border border-[#172228]/15 bg-white text-[#172228] flex items-center justify-center disabled:opacity-30 disabled:cursor-not-allowed shadow-sm active:scale-95 transition-all cursor-pointer"
-                aria-label="Previous clause"
-              >
-                <ChevronLeft size={18} strokeWidth={2.2} />
-              </button>
-
-              {/* Dots */}
-              <div className="flex items-center gap-2">
-                {CLAUSE_ITEMS.map((item, idx) => (
-                  <button
-                    key={item.id}
-                    type="button"
-                    onClick={() => handlePointerClick(item.id)}
-                    className={`h-2 rounded-full transition-all duration-300 cursor-pointer ${
-                      activeId === item.id ? "w-6 bg-[#C65378]" : "w-2 bg-[#172228]/20"
-                    }`}
-                    aria-label={`Go to clause ${idx + 1}`}
-                  />
-                ))}
               </div>
 
-              <button
-                type="button"
-                onClick={() => {
-                  const currIdx = CLAUSE_ITEMS.findIndex((c) => c.id === activeId);
-                  const nextIdx = Math.min(CLAUSE_ITEMS.length - 1, currIdx + 1);
-                  handlePointerClick(CLAUSE_ITEMS[nextIdx].id);
-                }}
-                disabled={activeId === CLAUSE_ITEMS[CLAUSE_ITEMS.length - 1].id}
-                className="w-9 h-9 rounded-full border border-[#172228]/15 bg-white text-[#172228] flex items-center justify-center disabled:opacity-30 disabled:cursor-not-allowed shadow-sm active:scale-95 transition-all cursor-pointer"
-                aria-label="Next clause"
-              >
-                <ChevronRight size={18} strokeWidth={2.2} />
-              </button>
+              <div className="mt-auto pt-4 border-t border-gray-100 flex items-center justify-between">
+                <Link
+                  href="/contact"
+                  className="inline-flex items-center gap-1.5 text-sm font-bold text-[#C65378] hover:text-[#a13c5d] transition-colors"
+                >
+                  <span>See More</span>
+                  <ArrowRight size={14} />
+                </Link>
+
+                <div className="flex items-center gap-2">
+                  <button
+                    type="button"
+                    onClick={() => setActiveId(CLAUSE_ITEMS[Math.max(0, activeIdx - 1)].id)}
+                    disabled={activeIdx === 0}
+                    aria-label="Previous clause"
+                    className="w-9 h-9 rounded-full border border-[#172228]/15 bg-white flex items-center justify-center disabled:opacity-30 active:scale-95 transition-all"
+                  >
+                    <ChevronLeft size={18} />
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => setActiveId(CLAUSE_ITEMS[Math.min(CLAUSE_ITEMS.length - 1, activeIdx + 1)].id)}
+                    disabled={activeIdx === CLAUSE_ITEMS.length - 1}
+                    aria-label="Next clause"
+                    className="w-9 h-9 rounded-full border border-[#172228]/15 bg-white flex items-center justify-center disabled:opacity-30 active:scale-95 transition-all"
+                  >
+                    <ChevronRight size={18} />
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
-
         </div>
       </div>
     </section>
