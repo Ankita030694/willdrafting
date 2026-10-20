@@ -20,8 +20,15 @@ export default auth((req) => {
     return NextResponse.next();
   }
 
-  // 2. Client Dashboard Route Protection (/dashboard and sub-routes)
-  if (pathname === "/dashboard" || pathname.startsWith("/dashboard/") || pathname === "/start/dashboard") {
+  // 2. Client Area Protection: dashboard + the whole questionnaire (/start and /start/*).
+  //    Guests (not logged in) are always sent to /login first.
+  const isProtectedClientRoute =
+    pathname === "/dashboard" ||
+    pathname.startsWith("/dashboard/") ||
+    pathname === "/start" ||
+    pathname.startsWith("/start/");
+
+  if (isProtectedClientRoute) {
     if (!isLoggedIn) {
       const loginUrl = new URL("/login", origin);
       loginUrl.searchParams.set("callbackUrl", pathname);
@@ -54,7 +61,8 @@ export const config = {
   matcher: [
     "/dashboard/:path*",
     "/dashboard",
-    "/start/dashboard",
+    "/start",
+    "/start/:path*",
     "/authority/:path*",
     "/authority",
     "/complete-profile",

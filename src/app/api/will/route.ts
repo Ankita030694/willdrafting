@@ -5,21 +5,14 @@ import { checkRateLimit } from "@/lib/rateLimit";
 import {
   MAX_WILL_BYTES,
   claimGuestWill,
-  deleteGuestWill,
   deleteWill,
-  getGuestWill,
   getWill,
   publicWill,
   resolveSessionAccount,
   sanitizeIncomingState,
-  saveGuestWill,
   saveWill,
 } from "@/lib/wills";
-import {
-  generateGuestSessionId,
-  readGuestSessionFromRequest,
-  setGuestSessionCookie,
-} from "@/lib/guestSession";
+import { readGuestSessionFromRequest } from "@/lib/guestSession";
 
 export const dynamic = "force-dynamic";
 
@@ -31,6 +24,10 @@ async function requireAccount() {
   } catch {
     return null;
   }
+}
+
+function unauthorized() {
+  return jsonError("Please log in to continue.", 401, { loginRequired: true });
 }
 
 /**
@@ -55,27 +52,8 @@ export async function GET(request: NextRequest) {
       return NextResponse.json(publicWill(will, me.paid), { headers: { "Cache-Control": "no-store" } });
     }
 
-    // 2. Anonymous Guest Flow
-    const guestSession = readGuestSessionFromRequest(request);
-    if (!guestSession) {
-      const newSessionId = generateGuestSessionId();
-      const res = NextResponse.json(
-        { exists: false, paid: false, isGuest: true, sessionId: newSessionId },
-        { headers: { "Cache-Control": "no-store" } }
-      );
-      setGuestSessionCookie(res, newSessionId);
-      return res;
-    }
-
-    const guestWill = await getGuestWill(guestSession);
-    if (!guestWill) {
-      return NextResponse.json(
-        { exists: false, paid: false, isGuest: true, sessionId: guestSession },
-        { headers: { "Cache-Control": "no-store" } }
-      );
-    }
-
-    return NextResponse.json(publicWill(guestWill, false), { headers: { "Cache-Control": "no-store" } });
+    // Guests are not allowed: login is required.
+    return unauthorized();
   } catch (error) {
     console.error("GET /api/will error:", error);
     return jsonError("Could not load your Will.", 500);
@@ -125,41 +103,8 @@ export async function PUT(request: NextRequest) {
       });
     }
 
-    // 2. Anonymous Guest Flow
-    let guestSession = readGuestSessionFromRequest(request);
-    let newlyCreated = false;
-    if (!guestSession) {
-      guestSession = generateGuestSessionId();
-      newlyCreated = true;
-    }
-
-    const limit = await checkRateLimit(`will_save_guest_${guestSession}`, 80, 60 * 1000);
-    if (!limit.allowed) {
-      return jsonError("Saving too frequently. Please slow down.", 429, { retryAfterSeconds: limit.retryAfterSeconds });
-    }
-
-    const state = sanitizeIncomingState((body as { state?: unknown })?.state, false);
-    if (!state) return jsonError("Invalid Will data.", 400);
-
-    const result = await saveGuestWill(guestSession, state);
-    if (!result.ok) {
-      return jsonError("This Will is verified and locked.", 423, { locked: true });
-    }
-
-    const res = NextResponse.json({
-      success: true,
-      version: result.will.version,
-      updatedAt: result.will.updatedAt,
-      paid: false,
-      isGuest: true,
-      sessionId: guestSession,
-    });
-
-    if (newlyCreated) {
-      setGuestSessionCookie(res, guestSession);
-    }
-
-    return res;
+    // Guests are not allowed: login is required.
+    return unauthorized();
   } catch (error) {
     console.error("PUT /api/will error:", error);
     return jsonError("Could not save your Will.", 500);
@@ -180,12 +125,7 @@ export async function DELETE(request: NextRequest) {
       return NextResponse.json({ success: true, message: "Will cleared from database." });
     }
 
-    const guestSession = readGuestSessionFromRequest(request);
-    if (guestSession) {
-      await deleteGuestWill(guestSession);
-    }
-
-    return NextResponse.json({ success: true, message: "Will cleared from database." });
+    return unauthorized();
   } catch (error) {
     console.error("DELETE /api/will error:", error);
     return jsonError("Could not clear your Will.", 500);

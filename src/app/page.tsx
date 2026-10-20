@@ -10,6 +10,7 @@ import Pricing from "@/components/pricing";
 import Testimonial from "@/components/testimonial";
 import FAQ from "@/components/faq";
 import Footer from "@/components/Footer";
+import MapSection from "@/components/MapSection";
 
 export const metadata: Metadata = {
   title: {
@@ -288,6 +289,9 @@ export default function Home() {
 
         {/* 7th: FAQ */}
         <FAQ />
+
+        {/* Map */}
+        <MapSection />
       </main>
       <Footer />
     </div>
