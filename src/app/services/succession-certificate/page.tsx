@@ -27,17 +27,17 @@ export const metadata: Metadata = {
     "ama legal solutions succession certificate",
   ],
   alternates: {
-    canonical: "https://www.willdrafting.in/service/succession-certificate",
+    canonical: "https://www.willdrafting.in/services/succession-certificate",
     languages: {
-      "en-IN": "https://www.willdrafting.in/service/succession-certificate",
-      "x-default": "https://www.willdrafting.in/service/succession-certificate",
+      "en-IN": "https://www.willdrafting.in/services/succession-certificate",
+      "x-default": "https://www.willdrafting.in/services/succession-certificate",
     },
   },
   openGraph: {
     title: "How to Get Succession Certificate in India: Legal Guide",
     description:
       "Apply for a succession certificate in India with AMA Legal Solutions. We handle petition drafting, court notices, and asset transmission under ISA 1925.",
-    url: "https://www.willdrafting.in/service/succession-certificate",
+    url: "https://www.willdrafting.in/services/succession-certificate",
     siteName: "WillDrafting.in",
     locale: "en_IN",
     type: "website",
@@ -67,7 +67,7 @@ export const metadata: Metadata = {
 };
 
 export default function SuccessionCertificatePage() {
-  const canonicalUrl = "https://www.willdrafting.in/service/succession-certificate";
+  const canonicalUrl = "https://www.willdrafting.in/services/succession-certificate";
   const imageUrl = "https://www.willdrafting.in/images/succession-certificate-og.jpg";
 
   const schemaGraph = {

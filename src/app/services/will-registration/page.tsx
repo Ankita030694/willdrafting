@@ -29,17 +29,17 @@ export const metadata: Metadata = {
     "will registration cost in delhi maharashtra bangalore",
   ],
   alternates: {
-    canonical: "https://www.willdrafting.in/service/will-registration",
+    canonical: "https://www.willdrafting.in/services/will-registration",
     languages: {
-      "en-IN": "https://www.willdrafting.in/service/will-registration",
-      "x-default": "https://www.willdrafting.in/service/will-registration",
+      "en-IN": "https://www.willdrafting.in/services/will-registration",
+      "x-default": "https://www.willdrafting.in/services/will-registration",
     },
   },
   openGraph: {
     title: "Will Registration Service India: SRO Process | WillDrafting",
     description:
       "Complete Will registration service in India. Book SRO appointments, arrange witnesses, schedule Section 31 home visits, and protect your estate legally.",
-    url: "https://www.willdrafting.in/service/will-registration",
+    url: "https://www.willdrafting.in/services/will-registration",
     siteName: "WillDrafting.in",
     locale: "en_IN",
     type: "website",
@@ -69,7 +69,7 @@ export const metadata: Metadata = {
 };
 
 export default function WillRegistrationPage() {
-  const canonicalUrl = "https://www.willdrafting.in/service/will-registration";
+  const canonicalUrl = "https://www.willdrafting.in/services/will-registration";
   const imageUrl = "https://www.willdrafting.in/images/will-registration-og.jpg";
 
   const schemaGraph = {

@@ -28,17 +28,17 @@ export const metadata: Metadata = {
     "ama legal solutions probate services",
   ],
   alternates: {
-    canonical: "https://www.willdrafting.in/service/probate-lawyer",
+    canonical: "https://www.willdrafting.in/services/probate-lawyer",
     languages: {
-      "en-IN": "https://www.willdrafting.in/service/probate-lawyer",
-      "x-default": "https://www.willdrafting.in/service/probate-lawyer",
+      "en-IN": "https://www.willdrafting.in/services/probate-lawyer",
+      "x-default": "https://www.willdrafting.in/services/probate-lawyer",
     },
   },
   openGraph: {
     title: "Probate of Will Lawyers India: Get Court Probate Fast",
     description:
       "Hire expert probate lawyers in India. We handle High Court probate petitions, contested Wills, and Letters of Administration with complete legal backing.",
-    url: "https://www.willdrafting.in/service/probate-lawyer",
+    url: "https://www.willdrafting.in/services/probate-lawyer",
     siteName: "WillDrafting.in",
     locale: "en_IN",
     type: "website",
@@ -68,7 +68,7 @@ export const metadata: Metadata = {
 };
 
 export default function ProbateLawyerPage() {
-  const canonicalUrl = "https://www.willdrafting.in/service/probate-lawyer";
+  const canonicalUrl = "https://www.willdrafting.in/services/probate-lawyer";
   const imageUrl = "https://www.willdrafting.in/images/probate-lawyer-og.jpg";
 
   const schemaGraph = {

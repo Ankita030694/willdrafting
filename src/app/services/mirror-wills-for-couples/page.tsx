@@ -26,17 +26,17 @@ export const metadata: Metadata = {
     "ama legal solutions mirror wills",
   ],
   alternates: {
-    canonical: "https://www.willdrafting.in/service/mirror-wills-for-couples",
+    canonical: "https://www.willdrafting.in/services/mirror-wills-for-couples",
     languages: {
-      "en-IN": "https://www.willdrafting.in/service/mirror-wills-for-couples",
-      "x-default": "https://www.willdrafting.in/service/mirror-wills-for-couples",
+      "en-IN": "https://www.willdrafting.in/services/mirror-wills-for-couples",
+      "x-default": "https://www.willdrafting.in/services/mirror-wills-for-couples",
     },
   },
   openGraph: {
     title: "Mirror Wills for Couples in India: Joint Will Guide",
     description:
       "Protect your family with mirror wills in India. Avoid risky joint wills, secure mutual clauses under ISA 1925, and draft legally sound wills with AMA.",
-    url: "https://www.willdrafting.in/service/mirror-wills-for-couples",
+    url: "https://www.willdrafting.in/services/mirror-wills-for-couples",
     siteName: "WillDrafting.in",
     locale: "en_IN",
     type: "website",
@@ -66,7 +66,7 @@ export const metadata: Metadata = {
 };
 
 export default function MirrorWillsForCouplesPage() {
-  const canonicalUrl = "https://www.willdrafting.in/service/mirror-wills-for-couples";
+  const canonicalUrl = "https://www.willdrafting.in/services/mirror-wills-for-couples";
   const imageUrl = "https://www.willdrafting.in/images/mirror-wills-for-couples-og.jpg";
 
   const schemaGraph = {

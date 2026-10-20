@@ -89,7 +89,7 @@ export const staticPages: SitemapPageItem[] = [
   // =========================================================================
   {
     title: "Mirror Wills for Couples in India: Joint Will Advice & Lawyers",
-    href: "/service/mirror-wills-for-couples",
+    href: "/services/mirror-wills-for-couples",
     category: "Services",
     date: "20-10-2026",
     changefreq: "weekly",
@@ -97,7 +97,7 @@ export const staticPages: SitemapPageItem[] = [
   },
   {
     title: "How to Get Succession Certificate in India: Complete Legal Guide & Lawyers",
-    href: "/service/succession-certificate",
+    href: "/services/succession-certificate",
     category: "Services",
     date: "20-10-2026",
     changefreq: "weekly",
@@ -105,7 +105,7 @@ export const staticPages: SitemapPageItem[] = [
   },
   {
     title: "Probate of Will Lawyers India: Grant of Probate & Letters of Administration",
-    href: "/service/probate-lawyer",
+    href: "/services/probate-lawyer",
     category: "Services",
     date: "20-10-2026",
     changefreq: "weekly",
@@ -113,7 +113,7 @@ export const staticPages: SitemapPageItem[] = [
   },
   {
     title: "Will Registration Service India: SRO Process & Home Visits",
-    href: "/service/will-registration",
+    href: "/services/will-registration",
     category: "Services",
     date: "20-10-2026",
     changefreq: "weekly",
@@ -223,7 +223,7 @@ export const staticPages: SitemapPageItem[] = [
   },
   {
     title: "Comprehensive Will Drafting & Succession Legal Services",
-    href: "/service",
+    href: "/services",
     category: "Services",
     date: "18-10-2026",
     changefreq: "weekly",
@@ -231,7 +231,7 @@ export const staticPages: SitemapPageItem[] = [
   },
   {
     title: "NRI Will Drafting: Two-Will Estate Strategy for India",
-    href: "/service/nri-will-india",
+    href: "/services/nri-will-india",
     category: "Services",
     date: "18-10-2026",
     changefreq: "weekly",
