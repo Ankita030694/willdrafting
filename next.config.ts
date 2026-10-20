@@ -5,6 +5,9 @@ const nextConfig: NextConfig = {
   reactCompiler: true,
   serverExternalPackages: ["@sparticuz/chromium", "puppeteer-core"],
   images: {
+    dangerouslyAllowSVG: true,
+    contentDispositionType: "inline",
+    contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
     remotePatterns: [
       {
         protocol: "https",

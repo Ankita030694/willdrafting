@@ -17,7 +17,10 @@ export default function robots(): MetadataRoute.Robots {
           "/pricing",
           "/blogs",
           "/blogs/*",
+          "/templates",
+          "/templates/*",
           "/contact",
+          "/sitemap",
         ],
         disallow: [
           "/start",

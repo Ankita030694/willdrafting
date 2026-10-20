@@ -1,0 +1,147 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" width="1200" height="720" role="img" aria-label="Visual Blueprint: Will Registration Workflow in India under Registration Act, 1908">
+  <defs>
+    <linearGradient id="canvasGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FAF7F0" />
+      <stop offset="100%" stop-color="#F4ECE1" />
+    </linearGradient>
+    <linearGradient id="navyHeader" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#172228" />
+      <stop offset="100%" stop-color="#24343D" />
+    </linearGradient>
+    <linearGradient id="roseAccent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#C65378" />
+      <stop offset="100%" stop-color="#9F3B5C" />
+    </linearGradient>
+    <filter id="cardShadow" x="-2%" y="-2%" width="104%" height="106%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#172228" flood-opacity="0.06" />
+    </filter>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="1200" height="720" rx="20" fill="url(#canvasGrad)" stroke="#172228" stroke-opacity="0.12" stroke-width="2" />
+
+  <!-- Top Banner / Title Header -->
+  <g transform="translate(36, 28)">
+    <rect width="400" height="26" rx="13" fill="#C65378" fill-opacity="0.12" />
+    <text x="200" y="17" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="800" fill="#C65378" text-anchor="middle" letter-spacing="1.2">REGISTRATION ACT, 1908 &#x2022; SECTIONS 18, 31, 40 &amp; 41</text>
+
+    <text x="0" y="60" font-family="system-ui, -apple-system, sans-serif" font-size="26" font-weight="800" fill="#172228" letter-spacing="-0.5">End-to-End Will Registration Protocol in India</text>
+    <text x="0" y="86" font-family="system-ui, -apple-system, sans-serif" font-size="13.5" font-weight="500" fill="#49585F">Standard Sub-Registrar Office (SRO) procedure and Section 31 Private Residence Visit workflow</text>
+  </g>
+
+  <!-- COLUMN 1: PHASE 1 - PRE-REGISTRATION PREPARATION (Left, Width 544) -->
+  <g transform="translate(36, 132)" filter="url(#cardShadow)">
+    <rect width="544" height="520" rx="16" fill="#FFFFFF" stroke="#172228" stroke-opacity="0.1" stroke-width="1.5" />
+    <rect width="544" height="42" rx="16" fill="#172228" />
+    <rect y="26" width="544" height="16" fill="#172228" />
+    <text x="24" y="27" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="800" fill="#FFFFFF" letter-spacing="0.8">PHASE 1: DRAFTING, AUDIT &amp; SRO APPOINTMENT</text>
+
+    <!-- Stage 1 -->
+    <g transform="translate(18, 56)">
+      <rect width="508" height="92" rx="10" fill="#FAF7F0" stroke="#172228" stroke-opacity="0.08" />
+      <circle cx="24" cy="24" r="12" fill="#172228" />
+      <text x="24" y="28" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="800" fill="#FFFFFF" text-anchor="middle">1</text>
+      <text x="44" y="24" font-family="system-ui, -apple-system, sans-serif" font-size="13.5" font-weight="700" fill="#172228">Legal Vetting &amp; Plain Paper Printing</text>
+      <rect x="360" y="12" width="136" height="20" rx="6" fill="#C65378" fill-opacity="0.1" />
+      <text x="428" y="26" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="700" fill="#C65378" text-anchor="middle">Zero Stamp Paper</text>
+      <text x="44" y="48" font-family="system-ui, -apple-system, sans-serif" font-size="11.5" fill="#49585F">Finalize Will with clear asset schedules, executor names, and Section 63 clauses.</text>
+      <text x="44" y="68" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" fill="#5F7E75">Wills are exempt from stamp duty across India; printed on sturdy A4 sheets.</text>
+    </g>
+
+    <!-- Stage 2 -->
+    <g transform="translate(18, 160)">
+      <rect width="508" height="92" rx="10" fill="#FAF7F0" stroke="#172228" stroke-opacity="0.08" />
+      <circle cx="24" cy="24" r="12" fill="#172228" />
+      <text x="24" y="28" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="800" fill="#FFFFFF" text-anchor="middle">2</text>
+      <text x="44" y="24" font-family="system-ui, -apple-system, sans-serif" font-size="13.5" font-weight="700" fill="#172228">Two Independent Witnesses Selected</text>
+      <rect x="340" y="12" width="156" height="20" rx="6" fill="#5F7E75" fill-opacity="0.12" />
+      <text x="418" y="26" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="700" fill="#5F7E75" text-anchor="middle">Section 67 Compliance</text>
+      <text x="44" y="48" font-family="system-ui, -apple-system, sans-serif" font-size="11.5" fill="#49585F">Both witnesses must have valid Aadhaar/PAN cards and not be beneficiaries or spouses.</text>
+      <text x="44" y="68" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" fill="#5F7E75">A registered medical practitioner may also act as witness or provide fitness certificate.</text>
+    </g>
+
+    <!-- Stage 3 -->
+    <g transform="translate(18, 264)">
+      <rect width="508" height="106" rx="10" fill="#FFF7ED" stroke="#EA580C" stroke-opacity="0.25" />
+      <circle cx="24" cy="24" r="12" fill="#EA580C" />
+      <text x="24" y="28" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="800" fill="#FFFFFF" text-anchor="middle">3</text>
+      <text x="44" y="24" font-family="system-ui, -apple-system, sans-serif" font-size="13.5" font-weight="700" fill="#9A3412">State SRO Slot Booking &amp; Challan Payment</text>
+      <rect x="330" y="12" width="166" height="20" rx="6" fill="#EA580C" fill-opacity="0.15" />
+      <text x="413" y="26" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="800" fill="#C2410C" text-anchor="middle">State Revenue Portals</text>
+      <text x="44" y="48" font-family="system-ui, -apple-system, sans-serif" font-size="11.5" fill="#49585F">Upload details on state portal (Kaveri, IGRS, DORIS, etc.) &amp; pay nominal SRO fee.</text>
+      <text x="44" y="68" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" fill="#C2410C">If testator is bedridden or unwell, submit formal Section 31 home visit application.</text>
+      <text x="44" y="86" font-family="system-ui, -apple-system, sans-serif" font-size="10.5" fill="#49585F">Generates official appointment token and payment receipt for registration day.</text>
+    </g>
+
+    <!-- Stage 3 Callout Box -->
+    <g transform="translate(18, 382)">
+      <rect width="508" height="116" rx="10" fill="#FAF7F0" stroke="#172228" stroke-opacity="0.1" />
+      <text x="16" y="24" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="800" fill="#172228" letter-spacing="0.5">CHECKLIST FOR REGISTRATION DAY</text>
+      <text x="16" y="46" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#49585F">&#x2714; 2 Original printed copies of Will signed or ready to sign before Sub-Registrar</text>
+      <text x="16" y="66" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#49585F">&#x2714; Original Aadhaar &amp; PAN card of Testator + 2 Independent Witnesses</text>
+      <text x="16" y="86" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#49585F">&#x2714; 2 Passport-sized photographs of each person + SRO booking appointment slip</text>
+      <text x="16" y="104" font-family="system-ui, -apple-system, sans-serif" font-size="10.5" font-weight="600" fill="#5F7E75">&#x2714; Doctor's fitness certificate (strongly advised for senior citizens over 65)</text>
+    </g>
+  </g>
+
+  <!-- COLUMN 2: PHASE 2 - EXECUTION & BOOK 3 ENTRY (Right, Width 544) -->
+  <g transform="translate(620, 132)" filter="url(#cardShadow)">
+    <rect width="544" height="520" rx="16" fill="#FFFFFF" stroke="#172228" stroke-opacity="0.1" stroke-width="1.5" />
+    <rect width="544" height="42" rx="16" fill="#C65378" />
+    <rect y="26" width="544" height="16" fill="#C65378" />
+    <text x="24" y="27" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="800" fill="#FFFFFF" letter-spacing="0.8">PHASE 2: APPEARANCE, BIOMETRICS &amp; OFFICIAL ENTRY</text>
+
+    <!-- Stage 4 -->
+    <g transform="translate(18, 56)">
+      <rect width="508" height="92" rx="10" fill="#FAF7F0" stroke="#172228" stroke-opacity="0.08" />
+      <circle cx="24" cy="24" r="12" fill="#C65378" />
+      <text x="24" y="28" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="800" fill="#FFFFFF" text-anchor="middle">4</text>
+      <text x="44" y="24" font-family="system-ui, -apple-system, sans-serif" font-size="13.5" font-weight="700" fill="#172228">Sub-Registrar Physical Appearance</text>
+      <rect x="360" y="12" width="136" height="20" rx="6" fill="#172228" fill-opacity="0.08" />
+      <text x="428" y="26" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="700" fill="#172228" text-anchor="middle">Section 31 or SRO</text>
+      <text x="44" y="48" font-family="system-ui, -apple-system, sans-serif" font-size="11.5" fill="#49585F">Appear before SRO officer, or officer visits home if Section 31 visit was granted.</text>
+      <text x="44" y="68" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" fill="#5F7E75">Officer interrogates testator to verify voluntary intention and mental sound mind.</text>
+    </g>
+
+    <!-- Stage 5 -->
+    <g transform="translate(18, 160)">
+      <rect width="508" height="92" rx="10" fill="#FAF7F0" stroke="#172228" stroke-opacity="0.08" />
+      <circle cx="24" cy="24" r="12" fill="#C65378" />
+      <text x="24" y="28" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="800" fill="#FFFFFF" text-anchor="middle">5</text>
+      <text x="44" y="24" font-family="system-ui, -apple-system, sans-serif" font-size="13.5" font-weight="700" fill="#172228">Biometric Capture &amp; Endorsement</text>
+      <rect x="330" y="12" width="166" height="20" rx="6" fill="#5F7E75" fill-opacity="0.12" />
+      <text x="413" y="26" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="700" fill="#5F7E75" text-anchor="middle">Tamper-Proof Record</text>
+      <text x="44" y="48" font-family="system-ui, -apple-system, sans-serif" font-size="11.5" fill="#49585F">Digital webcam photo and live thumb impression captured for testator &amp; witnesses.</text>
+      <text x="44" y="68" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" fill="#5F7E75">Officer stamps Section 58 &amp; 59 statutory endorsement certificate on the Will.</text>
+    </g>
+
+    <!-- Stage 6 -->
+    <g transform="translate(18, 264)">
+      <rect width="508" height="106" rx="10" fill="#F0FDF4" stroke="#16A34A" stroke-opacity="0.3" />
+      <circle cx="24" cy="24" r="12" fill="#16A34A" />
+      <text x="24" y="28" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="800" fill="#FFFFFF" text-anchor="middle">6</text>
+      <text x="44" y="24" font-family="system-ui, -apple-system, sans-serif" font-size="13.5" font-weight="700" fill="#166534">Book 3 Entry &amp; Certified Copy Issuance</text>
+      <rect x="340" y="12" width="156" height="20" rx="6" fill="#16A34A" fill-opacity="0.15" />
+      <text x="418" y="26" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="800" fill="#15803D" text-anchor="middle">Book 3 Confidential</text>
+      <text x="44" y="48" font-family="system-ui, -apple-system, sans-serif" font-size="11.5" fill="#49585F">Will is officially entered in Book 3 (Wills Registry) kept strictly confidential during life.</text>
+      <text x="44" y="68" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" fill="#166534">Testator receives registered original Will bearing unique registration number &amp; QR code.</text>
+      <text x="44" y="86" font-family="system-ui, -apple-system, sans-serif" font-size="10.5" fill="#49585F">Government maintains permanent microfilmed / digital archive in registry database.</text>
+    </g>
+
+    <!-- Legal Defense Badge -->
+    <g transform="translate(18, 382)">
+      <rect width="508" height="116" rx="10" fill="#FAF7F0" stroke="#C65378" stroke-opacity="0.25" />
+      <text x="16" y="24" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="800" fill="#C65378" letter-spacing="0.5">EVIDENTIARY VALUE &amp; LEGAL IMMUNITY</text>
+      <text x="16" y="46" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#172228">&#x25C6; Presumption of Genuine Execution under Section 114 Indian Evidence Act (BSA 2023)</text>
+      <text x="16" y="66" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#172228">&#x25C6; Supreme Court in Pentakota Satyanarayana holds SRO endorsement carries weighty proof</text>
+      <text x="16" y="86" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#172228">&#x25C6; Eliminates allegations of posthumous forgery, fabrication, or stolen papers</text>
+      <text x="16" y="104" font-family="system-ui, -apple-system, sans-serif" font-size="10.5" font-weight="700" fill="#5F7E75">&#x25C6; If physical copy is lost, certified copies can be legally retrieved from SRO archive</text>
+    </g>
+  </g>
+
+  <!-- Bottom Brand Watermark Footer -->
+  <g transform="translate(36, 674)">
+    <text x="0" y="20" font-family="system-ui, -apple-system, sans-serif" font-size="11.5" font-weight="600" fill="#55636D">Source: Registration Act 1908 (Act No. 16 of 1908), Indian Succession Act 1925 &amp; State Registration Manuals</text>
+    <text x="1128" y="20" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="800" fill="#172228" text-anchor="end" letter-spacing="0.3">WillDrafting.in &#x2022; AMA Legal Solutions</text>
+  </g>
+</svg>

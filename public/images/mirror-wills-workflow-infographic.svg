@@ -1,0 +1,129 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 740" width="1200" height="740" role="img" aria-label="Visual Blueprint: Mirror Wills Architecture vs Single Joint Will in India under Indian Succession Act 1925">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FAF7F0" />
+      <stop offset="100%" stop-color="#F4ECE1" />
+    </linearGradient>
+    <linearGradient id="navyHeader" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#172228" />
+      <stop offset="100%" stop-color="#24343D" />
+    </linearGradient>
+    <linearGradient id="roseAccent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#C65378" />
+      <stop offset="100%" stop-color="#9F3B5C" />
+    </linearGradient>
+    <linearGradient id="dangerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#BE123C" />
+      <stop offset="100%" stop-color="#881337" />
+    </linearGradient>
+    <linearGradient id="successGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#047857" />
+      <stop offset="100%" stop-color="#065F46" />
+    </linearGradient>
+    <filter id="boxShadow" x="-2%" y="-2%" width="104%" height="106%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#172228" flood-opacity="0.08" />
+    </filter>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="1200" height="740" rx="20" fill="url(#bgGrad)" stroke="#172228" stroke-opacity="0.12" stroke-width="2" />
+
+  <!-- Top Banner / Title Header -->
+  <g transform="translate(40, 30)">
+    <rect width="430" height="26" rx="13" fill="#C65378" fill-opacity="0.12" />
+    <text x="215" y="17" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="800" fill="#C65378" text-anchor="middle" letter-spacing="1.2">INDIAN SUCCESSION ACT, 1925 • SECTIONS 59, 62 &amp; 63</text>
+
+    <text x="0" y="62" font-family="system-ui, -apple-system, sans-serif" font-size="28" font-weight="800" fill="#172228" letter-spacing="-0.5">Mirror Wills Architecture vs Risky Joint Wills</text>
+    <text x="0" y="88" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="500" fill="#49585F">How married couples in India coordinate dual estate plans while preserving independent testamentary freedom</text>
+  </g>
+
+  <!-- LEFT COLUMN: THE RISKY PATH (Single Joint Will) -->
+  <g transform="translate(40, 140)" filter="url(#boxShadow)">
+    <rect width="540" height="540" rx="16" fill="#FFFFFF" stroke="#BE123C" stroke-opacity="0.3" stroke-width="1.5" />
+    <rect width="540" height="46" rx="16" fill="url(#dangerGrad)" />
+    <rect y="28" width="540" height="18" fill="url(#dangerGrad)" />
+    <text x="24" y="29" font-family="system-ui, -apple-system, sans-serif" font-size="13.5" font-weight="800" fill="#FFFFFF" letter-spacing="0.8">RISKY: SINGLE JOINT WILL (ONE PAPER FOR BOTH)</text>
+
+    <!-- Trap 1 -->
+    <g transform="translate(20, 64)">
+      <rect width="500" height="88" rx="10" fill="#FFF1F2" stroke="#FDA4AF" stroke-width="1" />
+      <circle cx="26" cy="26" r="13" fill="#BE123C" />
+      <text x="26" y="31" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="800" fill="#FFFFFF" text-anchor="middle">✕</text>
+      <text x="50" y="26" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="700" fill="#9F1239">Registration &amp; SRO Confusion</text>
+      <text x="50" y="48" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#4C0519">Sub-Registrars in India frequently reject joint wills because state SRO</text>
+      <text x="50" y="68" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#4C0519">software (Book 3) expects a single principal testator per document index.</text>
+    </g>
+
+    <!-- Trap 2 -->
+    <g transform="translate(20, 166)">
+      <rect width="500" height="88" rx="10" fill="#FFF1F2" stroke="#FDA4AF" stroke-width="1" />
+      <circle cx="26" cy="26" r="13" fill="#BE123C" />
+      <text x="26" y="31" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="800" fill="#FFFFFF" text-anchor="middle">✕</text>
+      <text x="50" y="26" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="700" fill="#9F1239">Frozen Rights Upon First Spouse's Death</text>
+      <text x="50" y="48" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#4C0519">Courts struggle with partial probate. The survivor cannot sell or mortgage</text>
+      <text x="50" y="68" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#4C0519">intermingled assets because the deceased's share remains legally entangled.</text>
+    </g>
+
+    <!-- Trap 3 -->
+    <g transform="translate(20, 268)">
+      <rect width="500" height="88" rx="10" fill="#FFF1F2" stroke="#FDA4AF" stroke-width="1" />
+      <circle cx="26" cy="26" r="13" fill="#BE123C" />
+      <text x="26" y="31" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="800" fill="#FFFFFF" text-anchor="middle">✕</text>
+      <text x="50" y="26" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="700" fill="#9F1239">Section 62 Revocation Lawsuits</text>
+      <text x="50" y="48" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#4C0519">In-laws or children often claim the joint will became an irrevocable contract,</text>
+      <text x="50" y="68" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#4C0519">triggering bitter High Court litigation if the surviving spouse alters terms.</text>
+    </g>
+
+    <!-- Result Box -->
+    <g transform="translate(20, 372)">
+      <rect width="500" height="88" rx="10" fill="#881337" />
+      <text x="250" y="34" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="800" fill="#FFFFFF" text-anchor="middle" letter-spacing="0.5">ESTATE PLANNING VERDICT: HIGH RISK &amp; VULNERABILITY</text>
+      <text x="250" y="58" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#FECDD3" text-anchor="middle">Creates legal clouds over clear property title, delays probate by years, and invites disputes.</text>
+    </g>
+  </g>
+
+  <!-- RIGHT COLUMN: THE RECOMMENDED ARCHITECTURE (Mirror Wills) -->
+  <g transform="translate(620, 140)" filter="url(#boxShadow)">
+    <rect width="540" height="540" rx="16" fill="#FFFFFF" stroke="#047857" stroke-opacity="0.3" stroke-width="1.5" />
+    <rect width="540" height="46" rx="16" fill="url(#successGrad)" />
+    <rect y="28" width="540" height="18" fill="url(#successGrad)" />
+    <text x="24" y="29" font-family="system-ui, -apple-system, sans-serif" font-size="13.5" font-weight="800" fill="#FFFFFF" letter-spacing="0.8">RECOMMENDED: DUAL MIRROR WILLS (COORDINATED &amp; SEPARATE)</text>
+
+    <!-- Pillar 1 -->
+    <g transform="translate(20, 64)">
+      <rect width="500" height="88" rx="10" fill="#ECFDF5" stroke="#A7F3D0" stroke-width="1" />
+      <circle cx="26" cy="26" r="13" fill="#047857" />
+      <text x="26" y="31" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="800" fill="#FFFFFF" text-anchor="middle">✓</text>
+      <text x="50" y="26" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="700" fill="#065F46">Two Independent Testamentary Deeds</text>
+      <text x="50" y="48" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#064E3B">Spouse A executes Will A; Spouse B executes Will B under Section 63 ISA.</text>
+      <text x="50" y="68" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#064E3B">Both are fully valid on plain paper and register seamlessly at any Indian SRO.</text>
+    </g>
+
+    <!-- Pillar 2 -->
+    <g transform="translate(20, 166)">
+      <rect width="500" height="88" rx="10" fill="#ECFDF5" stroke="#A7F3D0" stroke-width="1" />
+      <circle cx="26" cy="26" r="13" fill="#047857" />
+      <text x="26" y="31" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="800" fill="#FFFFFF" text-anchor="middle">✓</text>
+      <text x="50" y="26" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="700" fill="#065F46">Cross-Bequest with 30-Day Survivorship Clause</text>
+      <text x="50" y="48" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#064E3B">Each leaves 100% of their estate to the survivor. If both die simultaneously in</text>
+      <text x="50" y="68" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#064E3B">a common accident, assets pass smoothly to named children without double tax.</text>
+    </g>
+
+    <!-- Pillar 3 -->
+    <g transform="translate(20, 268)">
+      <rect width="500" height="88" rx="10" fill="#ECFDF5" stroke="#A7F3D0" stroke-width="1" />
+      <circle cx="26" cy="26" r="13" fill="#047857" />
+      <text x="26" y="31" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="800" fill="#FFFFFF" text-anchor="middle">✓</text>
+      <text x="50" y="26" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="700" fill="#065F46">Coordinated Guardianship &amp; Section 62 Freedom</text>
+      <text x="50" y="48" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#064E3B">Both parents nominate the exact same trusted guardians for minor children,</text>
+      <text x="50" y="68" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#064E3B">while retaining statutory rights to update the will if circumstances change.</text>
+    </g>
+
+    <!-- Result Box -->
+    <g transform="translate(20, 372)">
+      <rect width="500" height="88" rx="10" fill="#065F46" />
+      <text x="250" y="34" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="800" fill="#FFFFFF" text-anchor="middle" letter-spacing="0.5">ESTATE PLANNING VERDICT: GOLD STANDARD COMPLIANCE</text>
+      <text x="250" y="58" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#D1FAE5" text-anchor="middle">Clean probate independence, full asset security, and zero dispute exposure for family heirs.</text>
+    </g>
+  </g>
+</svg>

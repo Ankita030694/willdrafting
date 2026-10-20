@@ -976,6 +976,480 @@ Official Clinic / Hospital Stamp & Seal:`,
     disclaimer:
       "This guide and certificate format reflect Sections 59, 61, and 63 of the Indian Succession Act, 1925 and Supreme Court probate jurisprudence. Always ensure the certifying physician records their active Medical Council Registration Number and official seal.",
   },
+  {
+    id: "14",
+    slug: "legal-heir-certificate-vs-succession-certificate",
+    aliases: ["legal-heir-vs-succession-certificate", "difference-between-legal-heir-and-succession-certificate"],
+    category: "Post-Death Succession",
+    readTime: "12 min",
+    seoTitle: "Legal Heir vs Succession Certificate: Key Differences",
+    metaDescription:
+      "Compare Legal Heir Certificate and Succession Certificate in India. Learn key differences, court fees, asset procedures, and when each is required by law.",
+    keywords: [
+      "legal heir certificate vs succession certificate",
+      "legal heir certificate",
+      "succession certificate",
+      "legal heir certificate documents",
+      "which certificate do I need",
+      "legal heir certificate online",
+      "part x indian succession act 1925",
+      "tehsildar legal heir certificate",
+      "succession certificate court fees",
+      "section 370 indian succession act",
+    ],
+    title: "Legal Heir Certificate vs Succession Certificate Explained",
+    lead: "Understand when you need a Tehsildar-issued Legal Heir Certificate versus a Civil Court Succession Certificate under Part X of the Indian Succession Act, 1925 for bank accounts, shares, and inherited property.",
+    date: "October 20, 2026",
+    imageSrc: "/images/legal-heir-certificate-vs-succession-certificate-og.jpg",
+    author: "Advocate Rajeshwar Rao",
+    authorRole: "Senior Estate & Succession Counsel, AMA Legal Solutions",
+    shortVersion: [
+      "A Legal Heir Certificate is an administrative document issued by the local Tehsildar or SDM to establish family relationships for pensions, employee dues, and municipal property mutation",
+      "A Succession Certificate is a formal judicial decree granted by a Civil District Judge under Part X of the Indian Succession Act, 1925 exclusively for debts and securities like bank deposits, shares, and mutual funds",
+      "Under Section 370 of the Indian Succession Act, a civil court cannot grant a Succession Certificate for immovable property such as agricultural land, residential houses, or apartments",
+      "Executing an advocate-verified Last Will and Testament on WillDrafting.in avoids the need for both certificates, saving your family months in court and ad valorem court fees",
+    ],
+    sections: [
+      {
+        heading: "Administrative Kinship Versus Judicial Title to Securities",
+        paragraphs: [
+          "When a family member passes away without leaving a valid Last Will and Testament (known legally as dying intestate), surviving relatives are confronted with demands from banks, mutual funds, housing societies, and municipal corporations for formal legal certificates before any asset can be transferred or unlocked.",
+          "The most common confusion arises between a Legal Heir Certificate (also called a Surviving Member Certificate or Varisu Certificate) and a Succession Certificate. While both documents confirm relationships with the deceased, their legal authority, issuing bodies, statutory force, and asset jurisdictions are completely different under Indian law.",
+        ],
+        calloutQuote:
+          "A Legal Heir Certificate establishes administrative kinship with the deceased, whereas a Succession Certificate granted under Part X of the Indian Succession Act confers conclusive judicial title to collect debts and transfer securities with absolute statutory indemnity for financial institutions.",
+      },
+      {
+        heading: "Statutory Origin: State Revenue Codes Versus Indian Succession Act",
+        paragraphs: [
+          "A Legal Heir Certificate is not governed by a central parliamentary statute. Instead, it is an administrative certificate issued under state land revenue codes, citizen service charters, or executive government orders by local revenue authorities such as the Tehsildar, Talukdar, Mandal Revenue Officer (MRO), or Sub-Divisional Magistrate (SDM).",
+          "In contrast, a Succession Certificate is a high-order judicial decree strictly governed by Part X of the Indian Succession Act, 1925 (Sections 370 to 390). Only a competent Civil Court (typically the District Judge or Senior Civil Judge within whose territorial jurisdiction the deceased resided) holds the legal authority to grant it after formal court proceedings.",
+        ],
+      },
+      {
+        heading: "The Immovable Property Restriction Under Section 370",
+        paragraphs: [
+          "A critical rule of Indian succession law is that a Succession Certificate applies exclusively to movable property, specifically termed 'debts and securities'. Under Section 370 of the Indian Succession Act, a civil court cannot issue a Succession Certificate for immovable property such as houses, residential plots, or agricultural farmland.",
+          "To transfer or mutate immovable property after an intestate demise, legal heirs must submit a Legal Heir Certificate accompanied by registered relinquishment deeds or partition deeds to the local revenue or municipal authority. If title to immovable property is contested, the proper judicial remedy is filing for Letters of Administration or a civil title partition suit, not a succession certificate.",
+        ],
+      },
+    ],
+    actionSteps: [
+      "Determine whether the locked assets consist of movable debts and securities or immovable land and buildings",
+      "Check whether active nominations are registered with banks, demat accounts, and insurance policies",
+      "Apply online for a Legal Heir Certificate through your state e-District portal for government dues and property mutation",
+      "File a formal petition under Section 372 before the District Judge if financial institutions insist on a Succession Certificate",
+      "Draft an advocate-verified Will on WillDrafting.in to eliminate both court delays and hefty ad valorem fees for your heirs",
+    ],
+    faqs: [
+      {
+        question: "Can a Legal Heir Certificate be used to claim bank accounts and shares?",
+        answer:
+          "Banks and depository participants may accept a Legal Heir Certificate along with an indemnity bond and No Objection Certificates (NOC) for smaller balances, usually up to bank-specific thresholds (such as 5 lakh rupees). However, for substantial balances, contested claims, or high-value securities, financial institutions legally mandate a Succession Certificate under Section 381 of the Indian Succession Act.",
+      },
+      {
+        question: "Can a Succession Certificate be issued for real estate or agricultural land?",
+        answer:
+          "No. Section 370 of the Indian Succession Act, 1925 explicitly restricts the grant of a Succession Certificate to debts and securities (movable assets). It cannot be granted for immovable property like houses, flats, or agricultural land. Transferring real estate without a Will requires a Legal Heir Certificate and registered family deeds or Letters of Administration.",
+      },
+      {
+        question: "How much does a Succession Certificate cost compared to a Legal Heir Certificate?",
+        answer:
+          "A Legal Heir Certificate costs a nominal fee of 20 to 100 rupees through state revenue portals. In contrast, a Succession Certificate requires payment of ad valorem court fees under state Court Fees Acts, generally ranging between 2% and 7.5% of the total asset value, in addition to advocate professional fees and mandatory newspaper publication costs.",
+      },
+      {
+        question: "How long does it take to obtain each certificate?",
+        answer:
+          "A Legal Heir Certificate is typically issued within 15 to 30 days following field verification by the local revenue inspector or Patwari. A Succession Certificate takes 6 to 12 months in Civil Court due to mandatory public notice in local and national newspapers, citation periods, court hearings, and surety bond execution.",
+      },
+      {
+        question: "Does a Will eliminate the need for both certificates?",
+        answer:
+          "Yes! A valid Last Will and Testament nominates beneficiaries and names an executor who holds immediate legal vesting under Section 211 of the Indian Succession Act. Assets transfer directly to the named beneficiaries according to the Will, saving your family months in court and tens of thousands of rupees in ad valorem court fees.",
+      },
+    ],
+    disclaimer:
+      "This guide reflects Part X of the Indian Succession Act, 1925, state land revenue rules, and RBI/SEBI transmission guidelines. For complex estate distribution and civil court petitions, consult our legal team at AMA Legal Solutions.",
+  },
+  {
+    id: "16",
+    slug: "demat-shares-transmission-after-death-sebi",
+    aliases: [
+      "transmission-of-shares-after-death",
+      "demat-account-transmission-after-death",
+      "sebi-transmission-rules",
+    ],
+    category: "Post-Death Succession",
+    readTime: "11 min",
+    seoTitle: "Demat Shares Transmission After Death: SEBI Rules & Process",
+    metaDescription:
+      "Transfer demat shares after death under SEBI rules. Learn nominee rights, Rs 15 lakh threshold, Form ISR-5, and succession steps with WillDrafting.",
+    keywords: [
+      "transmission of shares after death",
+      "demat account transmission after death",
+      "SEBI transmission rules",
+      "share transfer after death of holder",
+      "nominee vs legal heir shares",
+      "Form ISR-5 SEBI",
+      "transmission of mutual fund units deceased holder",
+      "succession certificate for demat shares",
+    ],
+    title: "Transmission of Demat Shares After Death: Complete SEBI Guide",
+    lead: "Understand SEBI rules for transmission of demat shares after death. Learn nominee rights, the Rs 15 lakh simplified threshold, Form ISR-5 paperwork, and how a Will prevents frozen portfolios.",
+    date: "October 20, 2026",
+    imageSrc: "/images/demat-shares-transmission-sebi-process.jpg",
+    author: "Advocate Rajeshwar Rao",
+    authorRole: "Senior Estate & Succession Counsel, AMA Legal Solutions",
+    shortVersion: [
+      "SEBI Master Circular (May 2022) standardizes share transmission using Form ISR-5 across NSDL and CDSL depositories",
+      "In Shakti Yezdani (2023), the Supreme Court affirmed that a nominee is a trustee who must distribute shares to legal heirs",
+      "Demat portfolios valued up to Rs 15 Lakhs without a nominee can be claimed with simplified affidavits and indemnity bonds",
+      "Portfolios exceeding Rs 15 Lakhs without nomination require a Succession Certificate under Part X of the Indian Succession Act",
+    ],
+    sections: [
+      {
+        heading: "SEBI Standardized Transmission Rules for Demat Accounts",
+        paragraphs: [
+          "When an investor passes away, family members cannot legally operate the trading account. Instead, the securities must be transmitted to lawful claimants through depositories NSDL or CDSL.",
+          "Under SEBI Master Circular SEBI/HO/MIRSD/MIRSD_RTAMB/P/CIR/2022/65, all Depository Participants follow standardized formats including Form ISR-5 and uniform indemnity formats.",
+        ],
+      },
+    ],
+    actionSteps: [
+      "Notify the depository participant and freeze trading privileges to avoid unauthorized trades",
+      "Verify whether a valid nominee is registered in the depository records",
+      "Calculate portfolio value as of the application date to determine if it is within the Rs 15 Lakh ceiling",
+      "Submit Form ISR-5 with Client Master Report (CMR) and required legal heir affidavits",
+      "Execute an advocate-drafted Will on WillDrafting.in to protect your portfolio from future delays",
+    ],
+    faqs: [
+      {
+        question: "Does a nominee become the absolute legal owner of demat shares?",
+        answer:
+          "No. The Supreme Court of India in Shakti Yezdani v. Jayanand Salgaonkar (2023) confirmed that a nominee is merely a trustee or custodian. While the depository transfers shares to the nominee, legal ownership belongs to the heirs named in the Will or statutory heirs under succession law.",
+      },
+      {
+        question: "What is the SEBI monetary threshold for transmission without a nominee?",
+        answer:
+          "Under the SEBI Master Circular dated May 18, 2022, the monetary threshold for demat securities held without a nominee is Rs 15 Lakhs per depository participant account. For physical share certificates, the threshold is Rs 5 Lakhs per listed company.",
+      },
+    ],
+    disclaimer:
+      "This guide reflects SEBI Master Circulars, the Depositories Act 1996, and Supreme Court rulings. For complex estate distribution and civil court succession petitions, consult AMA Legal Solutions.",
+  },
+  {
+    id: "13",
+    slug: "claim-unclaimed-deposits-deceased-udgam",
+    aliases: [
+      "udgam-unclaimed-deposits-deceased",
+      "claim-unclaimed-bank-deposits",
+      "rbi-udgam-claim-process-deceased",
+    ],
+    category: "Post-Death Succession",
+    readTime: "8 min",
+    seoTitle: "Claim Unclaimed Deposits of Deceased: RBI UDGAM Guide",
+    metaDescription:
+      "Claim unclaimed bank deposits of a deceased person using RBI's UDGAM portal. Learn documents, bank claim limits, DEA Fund rules, and succession steps.",
+    keywords: [
+      "claim unclaimed deposits of deceased",
+      "UDGAM portal unclaimed deposits deceased",
+      "how to claim deceased bank account RBI UDGAM",
+      "unclaimed bank deposits india deceased",
+      "DEA fund unclaimed deposits claim process",
+      "deceased bank account claim without nominee",
+      "rbi circular deceased depositor claim settlement",
+      "udgam reference number UDRN",
+      "succession certificate for unclaimed bank deposits",
+      "claiming deceased fixed deposits and savings",
+    ],
+    title: "How to Claim Unclaimed Bank Deposits of Deceased via UDGAM",
+    lead:
+      "Step-by-step statutory roadmap to find forgotten accounts on RBI's UDGAM portal, submit deceased depositor claim forms, navigate small claim thresholds, and reclaim money from the DEA Fund.",
+    date: "October 20, 2026",
+    imageSrc: "/images/claim-unclaimed-deposits-deceased-udgam.jpg",
+    author: "Advocate Rajeshwar Rao",
+    authorRole: "Senior Succession Counsel, AMA Legal Solutions",
+    shortVersion: [
+      "UDGAM is an RBI search portal across 30+ banks; claims must be filed physically at the home branch",
+      "Under Section 26A Banking Regulation Act, 10-year inoperative funds transfer to RBI DEA Fund but remain perpetually reclaimable",
+      "Registered nominees must be settled within 15 calendar days under RBI Master Directions",
+      "Accounts without a nominee can be settled without a court succession certificate up to bank board limits (typically ₹1 Lakh to ₹5 Lakhs)",
+      "Aligning bank nominations with a registered Will prevents accounts from drifting into dormancy and avoids family court litigation",
+    ],
+    sections: [
+      {
+        heading: "RBI UDGAM Portal and Unclaimed Deposit Discovery",
+        paragraphs: [
+          "UDGAM (Unclaimed Deposits - Gateway to Access inforMation) allows citizens and legal heirs to run centralized searches across 30+ major commercial and cooperative banks.",
+          "When an account remains inoperative for 10 years, the funds transfer to the RBI DEA Fund. However, legal heirs retain permanent statutory rights to reclaim the entire principal plus applicable interest.",
+        ],
+      },
+    ],
+    actionSteps: [
+      "Register on https://udgam.rbi.org.in using your mobile number and search using the deceased's name and PAN",
+      "Note the Unclaimed Deposit Reference Number (UDRN) and the specific branch holding the funds",
+      "Determine whether a registered nominee exists or if the claim falls under the bank's simplified indemnity threshold",
+      "Submit Bank Claim Form Annexure A with Death Certificate, KYC proofs, and Letter of Indemnity if required",
+      "Draft an advocate-verified Will on WillDrafting.in to catalog all bank accounts and protect your family from future delays",
+    ],
+    faqs: [
+      {
+        question: "Can I get unclaimed money transferred online through UDGAM?",
+        answer:
+          "No. UDGAM is purely an information discovery portal. You must visit the bank branch with your UDRN reference number and physical claim forms.",
+      },
+      {
+        question: "Does a nominee become the absolute owner of a deceased person's bank deposits?",
+        answer:
+          "No. Under Supreme Court rulings in Shakti Yezdani (2023) and Sarbati Devi (1983), a nominee is only a fiduciary trustee holding the funds for the legal heirs under personal law or as named in a Will.",
+      },
+    ],
+    disclaimer:
+      "This guide reflects RBI Master Directions on Deceased Depositors, Section 26A of Banking Regulation Act 1949, and Supreme Court rulings. For complex court succession petitions and disputed claims, consult AMA Legal Solutions.",
+  },
+  {
+    id: "married-daughter-rights-in-fathers-property",
+    slug: "married-daughter-rights-in-fathers-property",
+    category: "Family Rights",
+    readTime: "12 min read",
+    seoTitle: "Daughter Right in Father Property: Rights | WillDrafting",
+    metaDescription:
+      "Know daughter right in father property in India. Learn ancestral share, Hindu Succession Act rules, Vineeta Sharma verdict, and legal remedies with AMA.",
+    keywords: [
+      "daughter right in father property",
+      "married daughter rights in father property",
+      "daughter rights in ancestral property",
+      "Vineeta Sharma case",
+      "coparcenary daughter",
+      "daughter share in property",
+    ],
+    title: "Married Daughter Rights in Father Property in India",
+    lead:
+      "A comprehensive statutory legal guide on the rights of married daughters in their father's property under the Hindu Succession Act, the 2005 Amendment, and the landmark Supreme Court ruling in Vineeta Sharma v. Rakesh Sharma.",
+    date: "20-10-2026",
+    imageSrc: "/images/married-daughter-rights-in-fathers-property.png",
+    author: "Advocate Rajeshwar Rao",
+    authorRole: "Senior Succession Counsel, AMA Legal Solutions",
+    shortVersion: [
+      "Under Section 6 of the Hindu Succession Act (amended in 2005), a daughter becomes an equal coparcener by birth, identical to a son.",
+      "The Supreme Court in Vineeta Sharma (2020) ruled that coparcenary rights are retroactive; the father did not need to be alive on Sept 9, 2005.",
+      "In ancestral property, a father cannot disinherit a daughter through a Will. She holds an independent birthright share.",
+      "In self-acquired property, if the father dies without a Will, the married daughter inherits an equal share as a Class I legal heir.",
+      "If the father leaves a valid Will for his self-acquired property, he may bequeath it to anyone, including excluding daughters.",
+      "Receiving gold, cash, or marriage gifts (Stridhan) does not reduce or waive a daughter's statutory property inheritance.",
+    ],
+    sections: [
+      {
+        heading: "Equal Coparcenary Rights Under Hindu Succession Act 2005",
+        paragraphs: [
+          "The Hindu Succession (Amendment) Act, 2005 fundamentally removed gender discrimination from Indian succession law. By amending Section 6, the Parliament declared that daughters are coparceners by birth in joint Hindu families governed by the Mitakshara law.",
+          "A married daughter enjoys the exact same rights to claim partition, hold undivided ancestral shares, and reside in parental property as a son. Her marriage does not sever or reduce her coparcenary status.",
+        ],
+        calloutQuote:
+          "Daughters are coparceners by birth with the same rights and liabilities as sons. Marital status is completely irrelevant.",
+      },
+      {
+        heading: "The Vineeta Sharma (2020) Supreme Court Benchmark",
+        paragraphs: [
+          "In Vineeta Sharma v. Rakesh Sharma (2020) 9 SCC 1, a three-judge bench of the Supreme Court resolved conflicting high court interpretations and held that the conferment of coparcenary status is by birth. Consequently, it is not necessary that the father was alive on September 9, 2005.",
+          "The only exception is where ancestral properties were already partitioned through a registered partition deed or court decree prior to December 20, 2004.",
+        ],
+      },
+      {
+        heading: "Ancestral Property vs Father's Self-Acquired Property",
+        paragraphs: [
+          "In ancestral property, children possess birthright coparcenary shares. A father can only Will away his own notional undivided share under Section 30, not the daughter's independent share.",
+          "In self-acquired property, the father has 100% testamentary ownership. If he dies intestate (without a Will), the property divides equally among all Class I legal heirs, giving the daughter an equal share alongside her mother and brothers.",
+        ],
+      },
+    ],
+    tableData: {
+      heading: "Daughter Property Rights: Ancestral vs Self-Acquired Matrix",
+      caption: "Statutory rights comparison across property classes and testamentary scenarios in India",
+      headers: [
+        "Property Category",
+        "Testamentary Scenario",
+        "Daughter's Legal Share",
+        "Father's Power to Exclude",
+      ],
+      rows: [
+        [
+          "Ancestral Property",
+          "Without Will (Intestate)",
+          "Equal coparcenary birthright share (same as son)",
+          "Cannot disinherit coparceners",
+        ],
+        [
+          "Ancestral Property",
+          "With Father's Will",
+          "Birthright share remains protected by law",
+          "Can only Will his own notional share",
+        ],
+        [
+          "Self-Acquired Property",
+          "Without Will (Intestate)",
+          "Equal Class I share with mother & brothers",
+          "None (Statutory Class I devolution applies)",
+        ],
+        [
+          "Self-Acquired Property",
+          "With Father's Will",
+          "As specified in the Will",
+          "100% absolute testamentary discretion",
+        ],
+      ],
+    },
+    actionSteps: [
+      "Determine property classification: Ancestral (4 generations undivided) vs Father's Self-Acquired",
+      "Secure certified copies of registered sale deeds, Khata, Jamabandi, or 7/12 extract from local revenue office",
+      "Never sign unverified blank papers, NOCs, or informal mutation affidavits without independent legal counsel",
+      "File a formal written objection before the Revenue Tehsildar if brothers attempt unilateral mutation",
+      "Engage an advocate to issue a statutory Legal Notice for partition and file a Civil Suit under CPC Order 20 Rule 18 with an interim injunction",
+      "Draft a legally sound Will on WillDrafting.in to protect daughters and eliminate future sibling disputes",
+    ],
+    faqs: [
+      {
+        question: "Does a married daughter have equal rights in her father's ancestral property?",
+        answer:
+          "Yes. Under Section 6 of the Hindu Succession Act as amended in 2005, a daughter becomes a coparcener by birth with the exact same rights and liabilities as a son. Her marital status has zero legal impact on her coparcenary entitlement.",
+      },
+      {
+        question: "Can a father disinherit his married daughter from self-acquired property through a Will?",
+        answer:
+          "Yes. Under Section 30 of the Hindu Succession Act, an individual enjoys absolute testamentary freedom over self-acquired property. A father can bequeath his self-acquired property to anyone he chooses, including excluding daughters, provided the Will is genuine and uncoerced.",
+      },
+    ],
+    disclaimer:
+      "This guide reflects the Hindu Succession Act 1956 (amended 2005), Supreme Court rulings in Vineeta Sharma (2020) and Arunachala Gounder (2022), and Indian Succession Act 1925. For contested partition suits and revenue objections, consult AMA Legal Solutions.",
+  },
+  {
+    id: "second-wife-children-property-rights-india",
+    slug: "second-wife-children-property-rights-india",
+    aliases: ["second-wife-property-rights-india", "second-marriage-children-rights"],
+    category: "Family Succession & Property Rights",
+    readTime: "9 min",
+    seoTitle: "Second Wife Children Property Rights: Legal Guide | AMA",
+    metaDescription:
+      "Understand second wife children property rights in India. Learn Supreme Court 2023 rules, ancestral shares, HMA Section 16, and inheritance with AMA.",
+    keywords: [
+      "second wife children property rights",
+      "second marriage children rights",
+      "children of void marriage rights",
+      "HMA section 16",
+      "revanasiddappa v mallikarjun 2023",
+      "second wife property rights in india",
+      "ancestral property second wife child",
+      "hindu succession act section 6",
+      "hindu succession act section 8",
+    ],
+    title: "Second Wife and Children Property Rights in India",
+    lead:
+      "Under Section 16 of the Hindu Marriage Act, children born of any marriage are deemed legitimate by law. Under the Supreme Court's landmark 2023 ruling in Revanasiddappa v. Mallikarjun, they inherit an equal share in their father's self-acquired property and his share in ancestral property.",
+    date: "October 20, 2026",
+    imageSrc: "/images/second-wife-children-property-rights-india.jpg",
+    author: "Advocate Rajeshwar Rao",
+    authorRole: "Senior Succession Counsel, AMA Legal Solutions",
+    shortVersion: [
+      "Under Section 16 of the Hindu Marriage Act, children born from a second marriage are deemed legitimate by law, even if the marriage itself is void or bigamous",
+      "Under the Supreme Court's landmark 2023 ruling in Revanasiddappa v. Mallikarjun, children of void/voidable marriages inherit their parent's share in ancestral coparcenary property through notional partition",
+      "In father's self-acquired property, children of the second wife share equally per-capita with children of the first wife as Class I legal heirs under Section 8",
+      "A second wife inherits as a Class I heir ONLY if the second marriage was validly conducted after legal divorce or first wife's death; in bigamous marriages, she receives no statutory inheritance without a Will",
+      "A legally executed Will is the only foolproof mechanism to avoid multi-decade family litigation, specify bequests, and grant lifelong residence rights to the second wife",
+    ],
+    sections: [
+      {
+        heading: "Statutory Legitimacy Under Section 16 Hindu Marriage Act",
+        paragraphs: [
+          "Section 16 of the Hindu Marriage Act, 1955 explicitly confers statutory legitimacy on all children born of void or voidable marriages. In the eyes of succession law, these children are full Class I legal heirs of their father.",
+          "When the father dies intestate (without a Will), his self-acquired property is divided equally per capita among all his children from both marriages alongside surviving legal widows and mother.",
+        ],
+      },
+      {
+        heading: "The Revanasiddappa (2023) Supreme Court Precedent",
+        paragraphs: [
+          "A unanimous three-judge bench of the Supreme Court in Revanasiddappa & Ors. v. Mallikarjun & Ors. (2023) 10 SCC 1 resolved decades of judicial conflict by ruling that children of void marriages are entitled to inherit their parent's share in joint family coparcenary property.",
+          "Under Section 6(3) of the Hindu Succession Act, a notional partition is deemed to occur immediately prior to the father's death, and the children inherit their legitimate share from that separated coparcenary interest.",
+        ],
+      },
+      {
+        heading: "Second Wife's Own Rights: Valid vs Void Marriage",
+        paragraphs: [
+          "If the second marriage occurred after the dissolution of the first marriage by a court decree of divorce, or following the death of the first spouse, the second wife is a 100% legal wife and a Class I legal heir under Section 8.",
+          "If the second marriage occurred during the subsistence of the first marriage, the marriage is void ab initio under Section 11 read with Section 5(i). While she receives no statutory inheritance under intestacy, she can receive property through a Will and can claim maintenance under Section 125 CrPC or the Domestic Violence Act if the first marriage was concealed from her.",
+        ],
+      },
+    ],
+    tableData: {
+      heading: "Who Gets What: Blended Family Inheritance Matrix",
+      caption: "Statutory rights comparison across property classes for first and second marriage families in India",
+      headers: [
+        "Family Claimant",
+        "Legal Status",
+        "Self-Acquired Property",
+        "Ancestral / Coparcenary Share",
+      ],
+      rows: [
+        [
+          "Children of 1st Wife",
+          "100% Legitimate Heirs",
+          "Equal Class I share under Section 8",
+          "Full coparceners by birth with lifetime partition right",
+        ],
+        [
+          "Children of Valid 2nd Wife",
+          "100% Legitimate Heirs",
+          "Equal Class I share under Section 8",
+          "Full coparceners by birth with lifetime partition right",
+        ],
+        [
+          "Children of Void 2nd Wife",
+          "Statutory Legitimacy (HMA s.16)",
+          "Equal Class I share under Section 8",
+          "Share in father's notional coparcenary share (SC 2023)",
+        ],
+        [
+          "First Wife (Living)",
+          "Class I Legal Heir",
+          "Equal Class I share",
+          "Share upon partition of HUF during life or death",
+        ],
+        [
+          "Second Wife (Valid Marriage)",
+          "Class I Legal Heir",
+          "Equal Class I share",
+          "Share out of husband's coparcenary interest",
+        ],
+        [
+          "Second Wife (Void Marriage)",
+          "Not a Legal Heir Under HSA",
+          "Zero statutory share (only via Will)",
+          "Zero share (maintenance possible under CrPC 125)",
+        ],
+      ],
+    },
+    actionSteps: [
+      "Secure certified municipal birth certificates of all children proving parentage under HMA Section 16",
+      "Retrieve registered sale deeds, Khata, Jamabandi, or 7/12 land revenue extracts from the local Sub-Registrar and Tehsil",
+      "Inspect revenue records and lodge a formal caveat and written objection before the Tehsildar against any unilateral mutation",
+      "Issue a formal Legal Notice for partition through an advocate citing Revanasiddappa v. Mallikarjun (2023)",
+      "File a Civil Suit for Partition & Separate Possession under CPC Order 20 Rule 18 with an urgent temporary injunction under CPC Order 39",
+      "Execute a legally verified Will on WillDrafting.in to eliminate ambiguity and protect children of all marriages",
+    ],
+    faqs: [
+      {
+        question: "Do children born of a second wife have property rights in India?",
+        answer:
+          "Yes. Under Section 16 of the Hindu Marriage Act, 1955, children born of a second marriage are deemed legitimate by law, even if the marriage itself is void or bigamous. They inherit an equal share in their father's self-acquired property and his share in ancestral property alongside children of the first wife.",
+      },
+      {
+        question: "What did the Supreme Court rule in Revanasiddappa v. Mallikarjun (2023)?",
+        answer:
+          "A three-judge bench of the Supreme Court held on September 1, 2023, that children of void or voidable marriages are entitled to inherit their parent's share in Hindu Undivided Family (HUF) coparcenary property through notional partition under Section 6(3) of the Hindu Succession Act.",
+      },
+    ],
+    disclaimer:
+      "This guide reflects the Hindu Marriage Act 1955, Hindu Succession Act 1956, and Supreme Court judgments in Revanasiddappa (2023) and Badshah (2014). For contested partition suits and legal advice, consult AMA Legal Solutions.",
+  },
 ];
 
 export function getArticleBySlug(slug: string): BlogArticle | undefined {

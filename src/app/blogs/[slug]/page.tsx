@@ -16,7 +16,13 @@ interface PageProps {
 
 export async function generateStaticParams() {
   const params: { slug: string }[] = [];
-  BLOG_ARTICLES.forEach((article) => {
+  BLOG_ARTICLES.filter(
+    (article) =>
+      article.slug !== "legal-heir-certificate-vs-succession-certificate" &&
+      article.slug !== "demat-shares-transmission-after-death-sebi" &&
+      article.slug !== "property-transfer-after-death-without-will-india" &&
+      article.slug !== "claim-unclaimed-deposits-deceased-udgam"
+  ).forEach((article) => {
     params.push({ slug: article.slug });
     if (article.aliases) {
       article.aliases.forEach((alias) => {

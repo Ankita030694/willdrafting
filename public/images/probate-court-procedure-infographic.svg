@@ -1,0 +1,227 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" width="1200" height="720" role="img" aria-label="Visual Blueprint: Probate of Will and Letters of Administration Court Procedure in India under Indian Succession Act 1925">
+  <defs>
+    <linearGradient id="canvasGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FAF7F0" />
+      <stop offset="100%" stop-color="#F4ECE1" />
+    </linearGradient>
+    <linearGradient id="navyHeader" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#172228" />
+      <stop offset="100%" stop-color="#24343D" />
+    </linearGradient>
+    <linearGradient id="roseAccent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#C65378" />
+      <stop offset="100%" stop-color="#9F3B5C" />
+    </linearGradient>
+    <linearGradient id="emeraldGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#5F7E75" />
+      <stop offset="100%" stop-color="#3D5A52" />
+    </linearGradient>
+    <filter id="cardShadow" x="-2%" y="-2%" width="104%" height="106%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#172228" flood-opacity="0.06" />
+    </filter>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="1200" height="720" rx="20" fill="url(#canvasGrad)" stroke="#172228" stroke-opacity="0.12" stroke-width="2" />
+
+  <!-- Top Banner / Title Header -->
+  <g transform="translate(36, 26)">
+    <rect width="540" height="26" rx="13" fill="#C65378" fill-opacity="0.12" />
+    <text x="270" y="17" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="800" fill="#C65378" text-anchor="middle" letter-spacing="1.2">INDIAN SUCCESSION ACT 1925 &#x2022; SECTIONS 57, 213, 218, 222 &amp; 276</text>
+
+    <text x="0" y="58" font-family="system-ui, -apple-system, sans-serif" font-size="25" font-weight="800" fill="#172228" letter-spacing="-0.5">Probate &amp; Letters of Administration Court Procedure Blueprint</text>
+    <text x="0" y="83" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="500" fill="#49585F">The 4-stage statutory workflow: Jurisdiction assessment, petition drafting, citation notices, and grant under court seal</text>
+  </g>
+
+  <!-- 4 COLUMNS (Width ~264 each, Gap 20, Total ~1128) -->
+
+  <!-- STAGE 1: JURISDICTION & MANDATORY EVALUATION -->
+  <g transform="translate(36, 126)" filter="url(#cardShadow)">
+    <rect width="264" height="530" rx="16" fill="#FFFFFF" stroke="#172228" stroke-opacity="0.1" stroke-width="1.5" />
+    <rect width="264" height="42" rx="16" fill="#172228" />
+    <rect y="26" width="264" height="16" fill="#172228" />
+    <text x="16" y="26" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="800" fill="#FFFFFF" letter-spacing="0.5">1. JURISDICTION &amp; VENUE</text>
+
+    <!-- Subcard 1.1 -->
+    <g transform="translate(14, 54)">
+      <rect width="236" height="96" rx="10" fill="#FAF7F0" stroke="#172228" stroke-opacity="0.08" />
+      <circle cx="20" cy="20" r="10" fill="#172228" />
+      <text x="20" y="24" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="800" fill="#FFFFFF" text-anchor="middle">A</text>
+      <text x="36" y="20" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="700" fill="#172228">Mandatory Cities (S. 57/213)</text>
+      <text x="14" y="44" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#49585F">Wills executed in or covering immovable property in Mumbai, Kolkata &amp; Chennai.</text>
+      <text x="14" y="78" font-family="system-ui, -apple-system, sans-serif" font-size="10.5" font-weight="600" fill="#C65378">&#x25C6; Mandatory for Hindu/Sikh Wills</text>
+    </g>
+
+    <!-- Subcard 1.2 -->
+    <g transform="translate(14, 160)">
+      <rect width="236" height="96" rx="10" fill="#FAF7F0" stroke="#172228" stroke-opacity="0.08" />
+      <circle cx="20" cy="20" r="10" fill="#172228" />
+      <text x="20" y="24" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="800" fill="#FFFFFF" text-anchor="middle">B</text>
+      <text x="36" y="20" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="700" fill="#172228">High Court vs District Judge</text>
+      <text x="14" y="44" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#49585F">Filed in High Court (Ordinary Original Jurisdiction) or Principal District Judge.</text>
+      <text x="14" y="78" font-family="system-ui, -apple-system, sans-serif" font-size="10.5" font-weight="600" fill="#5F7E75">&#x2714; Determined by situs of property</text>
+    </g>
+
+    <!-- Subcard 1.3 -->
+    <g transform="translate(14, 266)">
+      <rect width="236" height="96" rx="10" fill="#FAF7F0" stroke="#172228" stroke-opacity="0.08" />
+      <circle cx="20" cy="20" r="10" fill="#172228" />
+      <text x="20" y="24" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="800" fill="#FFFFFF" text-anchor="middle">C</text>
+      <text x="36" y="20" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="700" fill="#172228">Applicant Standing (S. 222)</text>
+      <text x="14" y="44" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#49585F">Probate can only be granted to the Executor named in the Will. Heirs apply for LOA.</text>
+      <text x="14" y="78" font-family="system-ui, -apple-system, sans-serif" font-size="10.5" font-weight="600" fill="#172228">&#x2022; Strict statutory requirement</text>
+    </g>
+
+    <!-- Pillar 1 Summary Note -->
+    <g transform="translate(14, 372)">
+      <rect width="236" height="138" rx="10" fill="#FFF5F7" stroke="#C65378" stroke-opacity="0.2" />
+      <text x="14" y="24" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="800" fill="#C65378">LEGAL RULE</text>
+      <text x="14" y="46" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#49585F">Outside Mumbai, Kolkata &amp; Chennai, probate is voluntary under SC rulings, but banks and buyer title checks routinely insist on it before clearing high-value assets.</text>
+      <text x="14" y="112" font-family="system-ui, -apple-system, sans-serif" font-size="10.5" font-weight="700" fill="#172228">ISA 1925: S. 57 &amp; S. 213</text>
+    </g>
+  </g>
+
+  <!-- STAGE 2: PETITION DRAFTING & ATTESTATION -->
+  <g transform="translate(320, 126)" filter="url(#cardShadow)">
+    <rect width="264" height="530" rx="16" fill="#FFFFFF" stroke="#172228" stroke-opacity="0.1" stroke-width="1.5" />
+    <rect width="264" height="42" rx="16" fill="#172228" />
+    <rect y="26" width="264" height="16" fill="#172228" />
+    <text x="16" y="26" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="800" fill="#FFFFFF" letter-spacing="0.5">2. PETITION &amp; VERIFICATION</text>
+
+    <!-- Subcard 2.1 -->
+    <g transform="translate(14, 54)">
+      <rect width="236" height="96" rx="10" fill="#FAF7F0" stroke="#172228" stroke-opacity="0.08" />
+      <circle cx="20" cy="20" r="10" fill="#172228" />
+      <text x="20" y="24" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="800" fill="#FFFFFF" text-anchor="middle">A</text>
+      <text x="36" y="20" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="700" fill="#172228">Drafting Under S. 276</text>
+      <text x="14" y="44" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#49585F">Petition recites time of death, soundness of mind, original Will, and assets list.</text>
+      <text x="14" y="78" font-family="system-ui, -apple-system, sans-serif" font-size="10.5" font-weight="600" fill="#C65378">&#x25C6; Original Will annexed to court</text>
+    </g>
+
+    <!-- Subcard 2.2 -->
+    <g transform="translate(14, 160)">
+      <rect width="236" height="96" rx="10" fill="#FAF7F0" stroke="#172228" stroke-opacity="0.08" />
+      <circle cx="20" cy="20" r="10" fill="#172228" />
+      <text x="20" y="24" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="800" fill="#FFFFFF" text-anchor="middle">B</text>
+      <text x="36" y="20" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="700" fill="#172228">Witness Affidavit (S. 281)</text>
+      <text x="14" y="44" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#49585F">At least one attesting witness signs court verification affirming valid execution.</text>
+      <text x="14" y="78" font-family="system-ui, -apple-system, sans-serif" font-size="10.5" font-weight="600" fill="#5F7E75">&#x2714; Essential statutory affidavit</text>
+    </g>
+
+    <!-- Subcard 2.3 -->
+    <g transform="translate(14, 266)">
+      <rect width="236" height="96" rx="10" fill="#FAF7F0" stroke="#172228" stroke-opacity="0.08" />
+      <circle cx="20" cy="20" r="10" fill="#172228" />
+      <text x="20" y="24" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="800" fill="#FFFFFF" text-anchor="middle">C</text>
+      <text x="36" y="20" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="700" fill="#172228">Schedule of Estate Assets</text>
+      <text x="14" y="44" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#49585F">Detailed breakdown of immovable properties, bank folios, shares, and liabilities.</text>
+      <text x="14" y="78" font-family="system-ui, -apple-system, sans-serif" font-size="10.5" font-weight="600" fill="#172228">&#x2022; Basis for court fee assessment</text>
+    </g>
+
+    <!-- Pillar 2 Summary Note -->
+    <g transform="translate(14, 372)">
+      <rect width="236" height="138" rx="10" fill="#F0F4F3" stroke="#5F7E75" stroke-opacity="0.3" />
+      <text x="14" y="24" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="800" fill="#5F7E75">COURT FEES &amp; CAPS</text>
+      <text x="14" y="46" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#49585F">State Court Fees Acts apply ad valorem percentages. Crucially, states like Maharashtra cap maximum probate court fee at ₹75,000, protecting large family estates.</text>
+      <text x="14" y="112" font-family="system-ui, -apple-system, sans-serif" font-size="10.5" font-weight="700" fill="#172228">Capped in MH, fixed scales in DL</text>
+    </g>
+  </g>
+
+  <!-- STAGE 3: CITATIONS, NOTICES & CAVEATS -->
+  <g transform="translate(604, 126)" filter="url(#cardShadow)">
+    <rect width="264" height="530" rx="16" fill="#FFFFFF" stroke="#172228" stroke-opacity="0.1" stroke-width="1.5" />
+    <rect width="264" height="42" rx="16" fill="#172228" />
+    <rect y="26" width="264" height="16" fill="#172228" />
+    <text x="16" y="26" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="800" fill="#FFFFFF" letter-spacing="0.5">3. CITATIONS &amp; CAVEATS</text>
+
+    <!-- Subcard 3.1 -->
+    <g transform="translate(14, 54)">
+      <rect width="236" height="96" rx="10" fill="#FAF7F0" stroke="#172228" stroke-opacity="0.08" />
+      <circle cx="20" cy="20" r="10" fill="#172228" />
+      <text x="20" y="24" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="800" fill="#FFFFFF" text-anchor="middle">A</text>
+      <text x="36" y="20" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="700" fill="#172228">Special Citation to Heirs</text>
+      <text x="14" y="44" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#49585F">Formal court notices served on all Class I heirs who would inherit under intestacy.</text>
+      <text x="14" y="78" font-family="system-ui, -apple-system, sans-serif" font-size="10.5" font-weight="600" fill="#C65378">&#x25C6; Opportunity to give consent / NOC</text>
+    </g>
+
+    <!-- Subcard 3.2 -->
+    <g transform="translate(14, 160)">
+      <rect width="236" height="96" rx="10" fill="#FAF7F0" stroke="#172228" stroke-opacity="0.08" />
+      <circle cx="20" cy="20" r="10" fill="#172228" />
+      <text x="20" y="24" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="800" fill="#FFFFFF" text-anchor="middle">B</text>
+      <text x="36" y="20" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="700" fill="#172228">Newspaper Publication</text>
+      <text x="14" y="44" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#49585F">General citation published in 2 daily newspapers (English &amp; vernacular) for public notice.</text>
+      <text x="14" y="78" font-family="system-ui, -apple-system, sans-serif" font-size="10.5" font-weight="600" fill="#5F7E75">&#x2714; 30-day statutory notice window</text>
+    </g>
+
+    <!-- Subcard 3.3 -->
+    <g transform="translate(14, 266)">
+      <rect width="236" height="96" rx="10" fill="#FAF7F0" stroke="#172228" stroke-opacity="0.08" />
+      <circle cx="20" cy="20" r="10" fill="#172228" />
+      <text x="20" y="24" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="800" fill="#FFFFFF" text-anchor="middle">C</text>
+      <text x="36" y="20" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="700" fill="#172228">Caveat / Objections (S. 284)</text>
+      <text x="14" y="44" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#49585F">If caveat is lodged, matter converts to Contested Testamentary Suit for trial.</text>
+      <text x="14" y="78" font-family="system-ui, -apple-system, sans-serif" font-size="10.5" font-weight="600" fill="#172228">&#x2022; Fast-track vs Contested path</text>
+    </g>
+
+    <!-- Pillar 3 Summary Note -->
+    <g transform="translate(14, 372)">
+      <rect width="236" height="138" rx="10" fill="#F4F8FE" stroke="#2452ae" stroke-opacity="0.2" />
+      <text x="14" y="24" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="800" fill="#2452ae">REVENUE VALUATION</text>
+      <text x="14" y="46" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#49585F">Court issues concurrent notice to the District Revenue Collector to certify the circle rate and fair value of listed immovable properties before final grant.</text>
+      <text x="14" y="112" font-family="system-ui, -apple-system, sans-serif" font-size="10.5" font-weight="700" fill="#172228">Collector valuation report</text>
+    </g>
+  </g>
+
+  <!-- STAGE 4: EVIDENCE & ISSUANCE OF GRANT -->
+  <g transform="translate(888, 126)" filter="url(#cardShadow)">
+    <rect width="264" height="530" rx="16" fill="#FFFFFF" stroke="#172228" stroke-opacity="0.1" stroke-width="1.5" />
+    <rect width="264" height="42" rx="16" fill="#172228" />
+    <rect y="26" width="264" height="16" fill="#172228" />
+    <text x="16" y="26" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="800" fill="#FFFFFF" letter-spacing="0.5">4. FINAL GRANT &amp; VESTING</text>
+
+    <!-- Subcard 4.1 -->
+    <g transform="translate(14, 54)">
+      <rect width="236" height="96" rx="10" fill="#FAF7F0" stroke="#172228" stroke-opacity="0.08" />
+      <circle cx="20" cy="20" r="10" fill="#172228" />
+      <text x="20" y="24" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="800" fill="#FFFFFF" text-anchor="middle">A</text>
+      <text x="36" y="20" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="700" fill="#172228">Recording Witness Evidence</text>
+      <text x="14" y="44" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#49585F">Court records formal testimony of the attesting witness under Evidence Act Section 68.</text>
+      <text x="14" y="78" font-family="system-ui, -apple-system, sans-serif" font-size="10.5" font-weight="600" fill="#C65378">&#x25C6; Establishes due execution</text>
+    </g>
+
+    <!-- Subcard 4.2 -->
+    <g transform="translate(14, 160)">
+      <rect width="236" height="96" rx="10" fill="#FAF7F0" stroke="#172228" stroke-opacity="0.08" />
+      <circle cx="20" cy="20" r="10" fill="#172228" />
+      <text x="20" y="24" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="800" fill="#FFFFFF" text-anchor="middle">B</text>
+      <text x="36" y="20" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="700" fill="#172228">Administration Bond (S. 291)</text>
+      <text x="14" y="44" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#49585F">Executor or administrator executes surety bond if mandated by local court rules.</text>
+      <text x="14" y="78" font-family="system-ui, -apple-system, sans-serif" font-size="10.5" font-weight="600" fill="#5F7E75">&#x2714; Ensures faithful administration</text>
+    </g>
+
+    <!-- Subcard 4.3 -->
+    <g transform="translate(14, 266)">
+      <rect width="236" height="96" rx="10" fill="#FAF7F0" stroke="#172228" stroke-opacity="0.08" />
+      <circle cx="20" cy="20" r="10" fill="#172228" />
+      <text x="20" y="24" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="800" fill="#FFFFFF" text-anchor="middle">C</text>
+      <text x="36" y="20" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="700" fill="#172228">Engrossment on Judicial Stamp</text>
+      <text x="14" y="44" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#49585F">Official Grant engrossed on non-judicial stamp paper with certified Will copy.</text>
+      <text x="14" y="78" font-family="system-ui, -apple-system, sans-serif" font-size="10.5" font-weight="600" fill="#172228">&#x2022; Bearing High Court / District Seal</text>
+    </g>
+
+    <!-- Pillar 4 Summary Note -->
+    <g transform="translate(14, 372)">
+      <rect width="236" height="138" rx="10" fill="#FFF5F7" stroke="#C65378" stroke-opacity="0.2" />
+      <text x="14" y="24" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="800" fill="#C65378">CONCLUSIVE PROOF</text>
+      <text x="14" y="46" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#49585F">Under Section 216, a Grant of Probate operates in rem. It establishes conclusive proof of the Will's authenticity and vests legal title in the executor against the world.</text>
+      <text x="14" y="112" font-family="system-ui, -apple-system, sans-serif" font-size="10.5" font-weight="700" fill="#172228">Full legal vesting under S. 211</text>
+    </g>
+  </g>
+
+  <!-- Bottom Brand Watermark Strip -->
+  <g transform="translate(36, 672)">
+    <text x="0" y="18" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="700" fill="#55636D">WillDrafting.in &bull; Powered by AMA Legal Solutions &bull; High Court &amp; District Court Testamentary Practice</text>
+    <text x="1128" y="18" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="700" fill="#C65378" text-anchor="end">Confidential &bull; Pan-India Legal Assistance</text>
+  </g>
+</svg>

@@ -1,0 +1,149 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" width="1200" height="720" role="img" aria-label="Visual Blueprint: Advance Medical Directive (Living Will) Execution and Activation SOP in India under 2023 Supreme Court Order">
+  <defs>
+    <linearGradient id="canvasGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FAF7F0" />
+      <stop offset="100%" stop-color="#F4ECE1" />
+    </linearGradient>
+    <linearGradient id="navyHeader" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#172228" />
+      <stop offset="100%" stop-color="#24343D" />
+    </linearGradient>
+    <linearGradient id="roseAccent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#C65378" />
+      <stop offset="100%" stop-color="#9F3B5C" />
+    </linearGradient>
+    <filter id="cardShadow" x="-2%" y="-2%" width="104%" height="106%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#172228" flood-opacity="0.06" />
+    </filter>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="1200" height="720" rx="20" fill="url(#canvasGrad)" stroke="#172228" stroke-opacity="0.12" stroke-width="2" />
+
+  <!-- Top Banner / Title Header -->
+  <g transform="translate(36, 28)">
+    <rect width="390" height="26" rx="13" fill="#C65378" fill-opacity="0.12" />
+    <text x="195" y="17" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="800" fill="#C65378" text-anchor="middle" letter-spacing="1.2">SUPREME COURT MODIFIED GUIDELINES &#x2022; JANUARY 2023</text>
+
+    <text x="0" y="60" font-family="system-ui, -apple-system, sans-serif" font-size="26" font-weight="800" fill="#172228" letter-spacing="-0.5">Living Will &amp; Advance Medical Directive SOP in India</text>
+    <text x="0" y="86" font-family="system-ui, -apple-system, sans-serif" font-size="13.5" font-weight="500" fill="#49585F">The two-tier statutory workflow: Execution before Notary/Gazetted Officer and activation via hospital medical boards</text>
+  </g>
+
+  <!-- COLUMN 1: PHASE 1 - EXECUTION & DEPOSIT (Left, Width 544) -->
+  <g transform="translate(36, 132)" filter="url(#cardShadow)">
+    <rect width="544" height="520" rx="16" fill="#FFFFFF" stroke="#172228" stroke-opacity="0.1" stroke-width="1.5" />
+    <rect width="544" height="42" rx="16" fill="#172228" />
+    <rect y="26" width="544" height="16" fill="#172228" />
+    <text x="24" y="27" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="800" fill="#FFFFFF" letter-spacing="0.8">PHASE 1: EXECUTION, ATTESTATION &amp; CUSTODY</text>
+
+    <!-- Stage 1 -->
+    <g transform="translate(18, 56)">
+      <rect width="508" height="92" rx="10" fill="#FAF7F0" stroke="#172228" stroke-opacity="0.08" />
+      <circle cx="24" cy="24" r="12" fill="#172228" />
+      <text x="24" y="28" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="800" fill="#FFFFFF" text-anchor="middle">1</text>
+      <text x="44" y="24" font-family="system-ui, -apple-system, sans-serif" font-size="13.5" font-weight="700" fill="#172228">Drafting &amp; Voluntary Capacity</text>
+      <rect x="360" y="12" width="136" height="20" rx="6" fill="#C65378" fill-opacity="0.1" />
+      <text x="428" y="26" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="700" fill="#C65378" text-anchor="middle">Article 21 Autonomy</text>
+      <text x="44" y="48" font-family="system-ui, -apple-system, sans-serif" font-size="11.5" fill="#49585F">Adult of sound disposing mind specifies conditions for refusing futile life support.</text>
+      <text x="44" y="68" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" fill="#5F7E75">Names primary and alternate surrogate healthcare attorneys for emergency consent.</text>
+    </g>
+
+    <!-- Stage 2 -->
+    <g transform="translate(18, 160)">
+      <rect width="508" height="92" rx="10" fill="#FAF7F0" stroke="#172228" stroke-opacity="0.08" />
+      <circle cx="24" cy="24" r="12" fill="#172228" />
+      <text x="24" y="28" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="800" fill="#FFFFFF" text-anchor="middle">2</text>
+      <text x="44" y="24" font-family="system-ui, -apple-system, sans-serif" font-size="13.5" font-weight="700" fill="#172228">Two Independent Witnesses</text>
+      <rect x="350" y="12" width="146" height="20" rx="6" fill="#5F7E75" fill-opacity="0.12" />
+      <text x="423" y="26" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="700" fill="#5F7E75" text-anchor="middle">Independent Attestation</text>
+      <text x="44" y="48" font-family="system-ui, -apple-system, sans-serif" font-size="11.5" fill="#49585F">Signed in presence of two adult witnesses who confirm voluntary execution.</text>
+      <text x="44" y="68" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" fill="#5F7E75">Witnesses attest that the executor understood the medical directives thoroughly.</text>
+    </g>
+
+    <!-- Stage 3 -->
+    <g transform="translate(18, 264)">
+      <rect width="508" height="106" rx="10" fill="#FFF7ED" stroke="#EA580C" stroke-opacity="0.25" />
+      <circle cx="24" cy="24" r="12" fill="#EA580C" />
+      <text x="24" y="28" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="800" fill="#FFFFFF" text-anchor="middle">3</text>
+      <text x="44" y="24" font-family="system-ui, -apple-system, sans-serif" font-size="13.5" font-weight="700" fill="#9A3412">Notary or Gazetted Officer Attestation</text>
+      <rect x="356" y="12" width="140" height="20" rx="6" fill="#EA580C" fill-opacity="0.15" />
+      <text x="426" y="26" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="800" fill="#C2410C" text-anchor="middle">2023 SC Modification</text>
+      <text x="44" y="48" font-family="system-ui, -apple-system, sans-serif" font-size="11.5" fill="#49585F">Attested by Notary Public or Gazetted Officer recording voluntary execution.</text>
+      <text x="44" y="68" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="700" fill="#C2410C">&#x2714; NO JUDICIAL MAGISTRATE (JMFC) REQUIRED FOR EXECUTION</text>
+      <text x="44" y="88" font-family="system-ui, -apple-system, sans-serif" font-size="10.5" fill="#6B7280">Replaced the old 2018 requirement that mandated visiting a magistrate court.</text>
+    </g>
+
+    <!-- Stage 4 -->
+    <g transform="translate(18, 382)">
+      <rect width="508" height="116" rx="10" fill="#FAF7F0" stroke="#172228" stroke-opacity="0.08" />
+      <circle cx="24" cy="24" r="12" fill="#172228" />
+      <text x="24" y="28" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="800" fill="#FFFFFF" text-anchor="middle">4</text>
+      <text x="44" y="24" font-family="system-ui, -apple-system, sans-serif" font-size="13.5" font-weight="700" fill="#172228">Custody &amp; Deposit of Certified Copies</text>
+      <rect x="360" y="12" width="136" height="20" rx="6" fill="#172228" fill-opacity="0.08" />
+      <text x="428" y="26" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="700" fill="#172228" text-anchor="middle">Multi-Tier Custody</text>
+      <text x="44" y="48" font-family="system-ui, -apple-system, sans-serif" font-size="11.5" fill="#49585F">Copy 1: Nominated Surrogate / Family Guardian for immediate presentation.</text>
+      <text x="44" y="68" font-family="system-ui, -apple-system, sans-serif" font-size="11.5" fill="#49585F">Copy 2: Family Physician / Hospital medical records.</text>
+      <text x="44" y="88" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" fill="#5F7E75">Copy 3: Local Municipal Authority / Digital Registry (Ayushman Bharat ABHA).</text>
+    </g>
+  </g>
+
+  <!-- COLUMN 2: PHASE 2 - HOSPITAL ACTIVATION & MEDICAL BOARDS (Right, Width 544) -->
+  <g transform="translate(620, 132)" filter="url(#cardShadow)">
+    <rect width="544" height="520" rx="16" fill="#FFFFFF" stroke="#172228" stroke-opacity="0.1" stroke-width="1.5" />
+    <rect width="544" height="42" rx="16" fill="#5F7E75" />
+    <rect y="26" width="544" height="16" fill="#5F7E75" />
+    <text x="24" y="27" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="800" fill="#FFFFFF" letter-spacing="0.8">PHASE 2: HOSPITAL ACTIVATION &amp; MEDICAL BOARDS</text>
+
+    <!-- Stage 5 -->
+    <g transform="translate(18, 56)">
+      <rect width="508" height="106" rx="10" fill="#FAF7F0" stroke="#172228" stroke-opacity="0.08" />
+      <circle cx="24" cy="24" r="12" fill="#5F7E75" />
+      <text x="24" y="28" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="800" fill="#FFFFFF" text-anchor="middle">5</text>
+      <text x="44" y="24" font-family="system-ui, -apple-system, sans-serif" font-size="13.5" font-weight="700" fill="#172228">Primary Medical Board (Within 48 Hours)</text>
+      <rect x="360" y="12" width="136" height="20" rx="6" fill="#5F7E75" fill-opacity="0.15" />
+      <text x="428" y="26" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="700" fill="#5F7E75" text-anchor="middle">3 Doctors Panel</text>
+      <text x="44" y="48" font-family="system-ui, -apple-system, sans-serif" font-size="11.5" fill="#49585F">Formed by hospital upon patient incapacity and terminal state diagnosis.</text>
+      <text x="44" y="68" font-family="system-ui, -apple-system, sans-serif" font-size="11.5" fill="#49585F">Treating physician + two subject specialists with 5+ years experience.</text>
+      <text x="44" y="88" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" fill="#5F7E75">Examines medical futility and certifies if life support withdrawal is ethical.</text>
+    </g>
+
+    <!-- Stage 6 -->
+    <g transform="translate(18, 174)">
+      <rect width="508" height="116" rx="10" fill="#FAF7F0" stroke="#172228" stroke-opacity="0.08" />
+      <circle cx="24" cy="24" r="12" fill="#5F7E75" />
+      <text x="24" y="28" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="800" fill="#FFFFFF" text-anchor="middle">6</text>
+      <text x="44" y="24" font-family="system-ui, -apple-system, sans-serif" font-size="13.5" font-weight="700" fill="#172228">Secondary Medical Board (Within 48 Hours)</text>
+      <rect x="350" y="12" width="146" height="20" rx="6" fill="#C65378" fill-opacity="0.12" />
+      <text x="423" y="26" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="700" fill="#C65378" text-anchor="middle">CMO Nominee Review</text>
+      <text x="44" y="48" font-family="system-ui, -apple-system, sans-serif" font-size="11.5" fill="#49585F">Formed by hospital (no longer waiting for District Collector intervention).</text>
+      <text x="44" y="68" font-family="system-ui, -apple-system, sans-serif" font-size="11.5" fill="#49585F">1 doctor nominated by District Chief Medical Officer + 2 independent specialists.</text>
+      <text x="44" y="92" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="700" fill="#172228">Provides independent concurrence or refusal within 48 hours.</text>
+    </g>
+
+    <!-- Stage 7 -->
+    <g transform="translate(18, 302)">
+      <rect width="508" height="96" rx="10" fill="#F0FDF4" stroke="#16A34A" stroke-opacity="0.25" />
+      <circle cx="24" cy="24" r="12" fill="#16A34A" />
+      <text x="24" y="28" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="800" fill="#FFFFFF" text-anchor="middle">7</text>
+      <text x="44" y="24" font-family="system-ui, -apple-system, sans-serif" font-size="13.5" font-weight="700" fill="#166534">JMFC Intimation &amp; Palliative Care</text>
+      <rect x="360" y="12" width="136" height="20" rx="6" fill="#16A34A" fill-opacity="0.15" />
+      <text x="428" y="26" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="800" fill="#166534" text-anchor="middle">Magistrate Informed</text>
+      <text x="44" y="48" font-family="system-ui, -apple-system, sans-serif" font-size="11.5" fill="#49585F">Hospital formally intimates Judicial Magistrate First Class before acting.</text>
+      <text x="44" y="68" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="700" fill="#166534">&#x2714; NO MAGISTRATE PERMISSION NEEDED &#x2022; DIGNIFIED CARE ENSURED</text>
+    </g>
+
+    <!-- Dispute / Refusal Safety Net -->
+    <g transform="translate(18, 410)">
+      <rect width="508" height="88" rx="10" fill="#FAF7F0" stroke="#172228" stroke-opacity="0.08" />
+      <text x="18" y="24" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="700" fill="#172228">Judicial Safeguard (If Boards Refuse Permission)</text>
+      <text x="18" y="44" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#49585F">Under the 2023 order, if medical boards decline to act, family or hospital can file</text>
+      <text x="18" y="62" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" fill="#C65378">a writ petition under Article 226 before the High Court for swift resolution.</text>
+    </g>
+  </g>
+
+  <!-- Bottom Brand Footer -->
+  <g transform="translate(36, 672)">
+    <text x="0" y="20" font-family="system-ui, -apple-system, sans-serif" font-size="11.5" font-weight="600" fill="#55636D">Citation: Supreme Court of India &#x2022; Common Cause v. Union of India (M.A. 1699 of 2019 in WP(C) No. 215 of 2005)</text>
+    <text x="1128" y="20" font-family="system-ui, -apple-system, sans-serif" font-size="11.5" font-weight="800" fill="#172228" text-anchor="end">WillDrafting.in &#x2022; Powered by AMA Legal Solutions</text>
+  </g>
+</svg>
