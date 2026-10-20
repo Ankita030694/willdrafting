@@ -18,7 +18,22 @@ export default function Hero() {
       className="w-full pt-24 sm:pt-28 pb-3 sm:pb-4 px-2.5 sm:px-6 flex items-center justify-center"
     >
       {/* Hero Card */}
-      <div className="relative w-full max-w-[1400px] md:min-h-[580px] lg:min-h-[660px] rounded-[28px] sm:rounded-[44px] overflow-hidden grid grid-cols-1 md:grid-cols-12 items-stretch bg-[#FAF7F0] border border-[#172228]/[0.06] shadow-[0_12px_40px_-16px_rgba(23,34,40,0.07)]">
+      <div className="relative w-full max-w-[1400px] min-h-[calc(100dvh-6.75rem)] md:min-h-[580px] lg:min-h-[660px] rounded-[28px] sm:rounded-[44px] overflow-hidden grid grid-cols-1 md:grid-cols-12 items-stretch bg-[#FAF7F0] border border-[#172228]/[0.06] shadow-[0_12px_40px_-16px_rgba(23,34,40,0.07)]">
+        {/* Mobile Background Hero Image (faded, same treatment as blog detail hero) */}
+        <div className="md:hidden absolute inset-0 pointer-events-none select-none z-0 overflow-hidden">
+          <Image
+            src="/images/heronewnewnew.svg"
+            alt="Court-ready legal will drafting preview on mobile device"
+            fill
+            sizes="100vw"
+            className="object-cover object-center opacity-[0.1] saturate-[1.15] contrast-[1.25]"
+            priority
+          />
+          {/* Lighter tint: image stays prominent, text keeps a soft wash for legibility */}
+          <div className="absolute inset-0 bg-gradient-to-r from-[#FAF7F0]/55 via-[#FAF7F0]/30 to-[#FAF7F0]/55" />
+          <div className="absolute inset-0 bg-gradient-to-b from-[#FAF7F0]/45 via-transparent to-[#FAF7F0]/55" />
+        </div>
+
         {/* Subtle decorative background glows */}
         <div
           aria-hidden="true"
@@ -44,7 +59,7 @@ export default function Hero() {
         </div>
 
         {/* Right / Content Column */}
-        <div className="md:col-span-7 lg:col-span-6 relative flex flex-col items-center justify-center px-5 pt-8 pb-4 sm:px-8 sm:pt-10 sm:pb-6 lg:px-12 text-center bg-[#FAF7F0] w-full md:h-full md:min-h-full">
+        <div className="md:col-span-7 lg:col-span-6 relative flex flex-col items-center justify-center px-5 pt-8 pb-4 sm:px-8 sm:pt-10 sm:pb-6 lg:px-12 text-center bg-transparent md:bg-[#FAF7F0] z-10 w-full md:h-full md:min-h-full">
           <div className="w-full max-w-[560px] flex flex-col items-center justify-center my-auto">
             {/* SEO H1: Clean eyebrow on mobile, badge on desktop */}
             <div className="inline-flex items-center justify-center gap-2 md:rounded-full md:bg-white md:px-3.5 md:py-1 md:border md:border-[#C65378]/25 md:shadow-2xs mb-2 md:mb-3">
@@ -184,20 +199,6 @@ export default function Hero() {
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-
-        {/* Mobile Bottom Image */}
-        <div className="block md:hidden relative w-full aspect-[3/4] max-h-[495px] bg-[#FAF7F0] mt-3 px-3 pb-3">
-          <div className="relative w-full h-full">
-            <Image
-              src="/images/heronewnewnew.svg"
-              alt="Court-ready legal will drafting preview on mobile device"
-              fill
-              sizes="100vw"
-              className="object-contain object-center"
-              priority
-            />
           </div>
         </div>
       </div>

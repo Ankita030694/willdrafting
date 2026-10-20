@@ -498,7 +498,7 @@ export default function PricingPage() {
               </h1>
 
               <p className="text-[1.05rem] sm:text-[1.15rem] leading-[1.68] text-[#49585F] max-w-[680px] mb-8">
-                Clear, fixed-price <strong className="text-[#172228]">online Will making cost in India</strong> with zero hidden lawyer retainers or annual vault subscriptions. Whether you need an instant court-ready Will under Section 63, a manual High Court advocate audit, or a bespoke <Link href="/service/nri-will-india" className="text-[#C65378] font-semibold underline underline-offset-4">NRI Two-Will estate plan</Link>, pay once and edit free for life.
+                Clear, fixed-price <strong className="text-[#172228]">online Will making cost in India</strong> with zero hidden lawyer retainers or annual vault subscriptions. Whether you need an instant court-ready Will under Section 63, a manual High Court advocate audit, or a bespoke <Link href="/services/nri-will-india" className="text-[#C65378] font-semibold underline underline-offset-4">NRI Two-Will estate plan</Link>, pay once and edit free for life.
               </p>
 
               {/* Editorial Guarantee Strip */}

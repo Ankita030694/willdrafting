@@ -141,7 +141,7 @@ const CALCULATOR_SCHEMA = {
           "@type": "ListItem",
           "position": 2,
           "name": "Services & Legal Tools",
-          "item": "https://www.willdrafting.in/service",
+          "item": "https://www.willdrafting.in/services",
         },
         {
           "@type": "ListItem",
@@ -186,7 +186,7 @@ export default function SuccessionCalculatorPage() {
           </Link>
           <span>/</span>
           <Link
-            href="/service"
+            href="/services"
             className="hover:text-[#172228] transition-colors"
           >
             Services & Legal Tools
@@ -426,7 +426,7 @@ export default function SuccessionCalculatorPage() {
                 </li>
                 <li>
                   <Link
-                    href="/service/nri-will-india"
+                    href="/services/nri-will-india"
                     className="flex items-center justify-between text-[#172228] hover:text-[#C65378] font-medium py-1"
                   >
                     <span>NRI & OCI Separate Indian Will Hub</span>

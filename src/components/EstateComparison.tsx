@@ -1,331 +1,164 @@
 "use client";
 
-import React from "react";
-import Image from "next/image";
+import React, { useState } from "react";
 import Link from "next/link";
-import {
-  X,
-  Check,
-  ArrowUpRight,
-  Scale,
-  Landmark,
-  ShieldAlert,
-  HeartHandshake,
-  FileCheck2,
-  Home,
-  Lock,
-  Users,
-} from "lucide-react";
+import { X, Check, ArrowUpRight, Home, Landmark, Users, HeartHandshake } from "lucide-react";
 
-interface ComparisonScenario {
-  step: string;
-  topic: string;
-  categoryTag: string;
-  illustration: string;
-  illustrationAlt: string;
-  withoutWillBadge: string;
-  withoutWill: string;
-  withWillBadge: string;
-  withWill: string;
-  withoutIcon: React.ReactNode;
-  withIcon: React.ReactNode;
-}
-
-const scenarios: ComparisonScenario[] = [
+const items = [
   {
-    step: "01",
-    topic: "Asset Distribution",
-    categoryTag: "Home, Property & Savings",
-    illustration: "/1.jpg",
-    illustrationAlt: "Passing sealed Will document to chosen beneficiary",
-    withoutWillBadge: "Decided by Intestacy Law",
-    withoutWill:
-      "Assets are distributed according to the law, which may not match your wishes.",
-    withWillBadge: "100% Your Chosen Beneficiaries",
-    withWill:
-      "You decide how your assets should be distributed among your chosen beneficiaries.",
-    withoutIcon: <Scale size={14} strokeWidth={2} />,
-    withIcon: <Home size={14} strokeWidth={2} />,
+    icon: <Home className="w-4 h-4 text-[#C65378]" />,
+    topic: "Property & Land",
+    without: "Divided by state law; family disputes likely",
+    with: "100% your choice; zero dispute",
   },
   {
-    step: "02",
-    topic: "Bank Accounts & Investments",
-    categoryTag: "Bank A/c, FDs, Mutual Funds & Demat",
-    illustration: "/cta/2.png",
-    illustrationAlt: "Protected financial and estate folder",
-    withoutWillBadge: "Paperwork & Procedural Delays",
-    withoutWill:
-      "Family may face legal procedures and paperwork to access or transfer assets.",
-    withWillBadge: "Named Executor & Smooth Access",
-    withWill:
-      "Your Will names beneficiaries and an executor to help manage your estate.",
-    withoutIcon: <Lock size={14} strokeWidth={2} />,
-    withIcon: <Landmark size={14} strokeWidth={2} />,
+    icon: <Landmark className="w-4 h-4 text-[#C65378]" />,
+    topic: "Banks & Savings",
+    without: "Months of court runs & blocked accounts",
+    with: "Quick, hassle-free access for family",
   },
   {
-    step: "03",
-    topic: "Guardianship for Minor Children",
-    categoryTag: "Child Custody & Future Care",
-    illustration: "/4.jpg",
-    illustrationAlt: "Indian parents protecting their child with a legal Will",
-    withoutWillBadge: "Handled by Legal Authority",
-    withoutWill:
-      "Guardianship decisions may be handled according to applicable law and by the relevant authority.",
-    withWillBadge: "Parents' Chosen Guardian",
-    withWill:
-      "You can state your wishes for who should care for your minor children.",
-    withoutIcon: <ShieldAlert size={14} strokeWidth={2} />,
-    withIcon: <Users size={14} strokeWidth={2} />,
+    icon: <Users className="w-4 h-4 text-[#C65378]" />,
+    topic: "Minor Children",
+    without: "Court decides who raises them",
+    with: "You choose their trusted guardian",
   },
   {
-    step: "04",
-    topic: "Family Disputes & Estate Administration",
-    categoryTag: "Family Harmony & Legal Clarity",
-    illustration: "/3.jpg",
-    illustrationAlt: "Indian family sitting together in peace and harmony",
-    withoutWillBadge: "Uncertainty & Disagreements",
-    withoutWill:
-      "Uncertainty can lead to disagreements, delays and additional legal work.",
-    withWillBadge: "Clear Written Instructions",
-    withWill:
-      "Clear instructions can reduce confusion, disputes and unnecessary legal work.",
-    withoutIcon: <Scale size={14} strokeWidth={2} />,
-    withIcon: <HeartHandshake size={14} strokeWidth={2} />,
+    icon: <HeartHandshake className="w-4 h-4 text-[#C65378]" />,
+    topic: "Family Peace",
+    without: "Confusion, fights & legal battles",
+    with: "Clear written wishes; peace of mind",
   },
 ];
 
 export default function EstateComparison() {
   return (
-    <section className="w-full bg-[#FAF7F0] py-5 sm:py-7 lg:py-9 flex justify-center">
-      <div className="w-full max-w-[1400px] 2xl:max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* =========================================================================
-            OUTER EDITORIAL INFOGRAPHIC CONTAINER
-            ========================================================================= */}
-        <div className="relative w-full rounded-[32px] sm:rounded-[44px] bg-white border border-[#172228]/8 shadow-[0_4px_30px_rgba(23,34,40,0.03)] overflow-hidden p-5 sm:p-8 lg:p-10">
-          {/* Decorative soft background accents */}
-          <div
-            aria-hidden="true"
-            className="pointer-events-none absolute -top-24 -left-24 w-72 h-72 rounded-full bg-[#C65378]/[0.05] blur-3xl"
-          />
-          <div
-            aria-hidden="true"
-            className="pointer-events-none absolute -bottom-24 -right-24 w-72 h-72 rounded-full bg-[#5F7E75]/[0.06] blur-3xl"
-          />
-
-          {/* =========================================================================
-              INFOGRAPHIC HEADER: Eyebrow, Headline & Subtitle
-              ========================================================================= */}
-          <div className="relative z-10 flex flex-col items-center text-center max-w-3xl mx-auto mb-6 sm:mb-8">
-            <div className="inline-flex items-center gap-2 rounded-full bg-[#FAF7F0] border border-[#C65378]/20 px-3.5 py-1 mb-2.5">
-              <span className="w-1.5 h-1.5 rounded-full bg-[#C65378]" />
-              <span className="text-[0.68rem] font-bold tracking-[0.14em] uppercase text-[#C65378]">
-                Intestacy vs. Estate Planning
-              </span>
-            </div>
-
-            <h2 className="text-[1.55rem] sm:text-[2.15rem] lg:text-[2.45rem] font-medium text-[#172228] leading-[1.12] tracking-tight mb-2.5">
-              What Happens to Your Family If You Die Without a Will?
+    <section
+      id="comparison"
+      aria-label="Without a Will vs With a Will Comparison"
+      className="w-full bg-[#FAF7F0] py-4 sm:py-6 lg:py-8 flex justify-center"
+    >
+      <div className="w-full max-w-[1280px] mx-auto px-3 sm:px-6">
+        <div className="relative w-full rounded-2xl sm:rounded-3xl bg-white border border-[#172228]/8 p-4 sm:p-6 lg:p-7 shadow-xs">
+          
+          {/* Header - Compact */}
+          <div className="text-center max-w-2xl mx-auto mb-4 sm:mb-6">
+            <span className="inline-block text-[10.5px] sm:text-[11px] font-bold tracking-wider uppercase text-[#C65378] bg-[#C65378]/10 px-3 py-0.5 rounded-full mb-1.5">
+              Without a Will vs. With a Will
+            </span>
+            <h2 className="text-[1.25rem] sm:text-[1.65rem] lg:text-[1.85rem] font-bold text-[#172228] leading-tight">
+              What Happens If You Die Without a Will?
             </h2>
-
-            <p className="text-[0.82rem] sm:text-[0.90rem] text-[#55636D] leading-relaxed max-w-2xl">
-              You may spend a lifetime building your home, savings and family
-              security. But without a Will, you may leave the decisions about
-              your estate to the law, not to the people you chose.
+            <p className="text-[0.80rem] sm:text-[0.86rem] text-[#55636D] mt-1">
+              Without a Will, government rules decide your family&apos;s inheritance. With a Will, you stay in full control.
             </p>
           </div>
 
-          {/* =========================================================================
-              DESKTOP INFOGRAPHIC COLUMN HEADERS (Visual Path Comparison)
-              ========================================================================= */}
-          <div className="relative z-10 hidden lg:grid lg:grid-cols-12 gap-5 mb-4 px-1">
-            {/* Col 1-4: Scenario Pillar Header */}
-            <div className="col-span-4 rounded-2xl bg-[#FAF7F0] border border-[#172228]/8 px-5 py-3.5 flex items-center justify-between">
-              <div>
-                <span className="text-[10px] font-bold uppercase tracking-[0.14em] text-[#55636D] block mb-0.5">
-                  4 Key Life Areas
+          {/* Desktop Table (sm and above) */}
+          <div className="hidden sm:block rounded-xl border border-[#172228]/10 overflow-hidden bg-white">
+            {/* Table Header */}
+            <div className="grid grid-cols-12 bg-[#FAF7F0] border-b border-[#172228]/10 text-xs font-bold uppercase tracking-wider text-[#172228] py-2.5 px-4">
+              <div className="col-span-3 text-[#55636D] flex items-center">Area</div>
+              <div className="col-span-4 text-[#DC2626] flex items-center gap-1.5">
+                <span className="w-4 h-4 rounded-full bg-[#FEE2E2] flex items-center justify-center shrink-0">
+                  <X size={10} strokeWidth={3} />
                 </span>
-                <span className="text-[0.95rem] font-semibold text-[#172228]">
-                  Estate Scenario
-                </span>
+                <span>Without a Will</span>
               </div>
-              <div className="relative w-10 h-10 shrink-0">
-                <Image
-                  src="/cta/4.png"
-                  alt="Estate scenario inspection"
-                  fill
-                  sizes="40px"
-                  className="object-contain"
-                />
+              <div className="col-span-5 text-[#16A34A] flex items-center gap-1.5 pl-2">
+                <span className="w-4 h-4 rounded-full bg-[#DCFCE7] flex items-center justify-center shrink-0">
+                  <Check size={10} strokeWidth={3} />
+                </span>
+                <span>With a Will</span>
               </div>
             </div>
 
-            {/* Col 5-8: Path A (Dying Without a Will) */}
-            <div className="col-span-4 rounded-2xl bg-[#FDF6F6] border border-[#B91C1C]/15 px-5 py-3.5 flex items-center justify-between">
-              <div className="flex items-center gap-3">
-                <div className="w-8 h-8 rounded-xl bg-[#FEE2E2] text-[#B91C1C] flex items-center justify-center shrink-0">
-                  <X size={16} strokeWidth={2.5} />
-                </div>
-                <div>
-                  <span className="text-[10px] font-bold uppercase tracking-[0.14em] text-[#B91C1C] block mb-0.5">
-                    Path A · Unplanned Intestacy
-                  </span>
-                  <span className="text-[0.95rem] font-semibold text-[#172228]">
-                    Dying Without a Will
-                  </span>
-                </div>
-              </div>
-              <span className="text-[10.5px] font-semibold px-2.5 py-1 rounded-full bg-white/90 text-[#B91C1C] border border-[#B91C1C]/15">
-                Law Decides
-              </span>
-            </div>
+            {/* Table Rows */}
+            <div className="divide-y divide-[#172228]/6">
+              {items.map((row, idx) => (
+                <div
+                  key={idx}
+                  className="grid grid-cols-12 items-center px-4 py-3 text-[13px] hover:bg-[#FAF7F0]/40 transition-colors"
+                >
+                  {/* Topic */}
+                  <div className="col-span-3 flex items-center gap-2 font-semibold text-[#172228] pr-2">
+                    <span className="shrink-0">{row.icon}</span>
+                    <span className="truncate">{row.topic}</span>
+                  </div>
 
-            {/* Col 9-12: Path B (With WillDrafting) */}
-            <div className="col-span-4 rounded-2xl bg-[#F3FAF7] border border-[#5F7E75]/25 px-5 py-3.5 flex items-center justify-between">
-              <div className="flex items-center gap-3">
-                <div className="w-8 h-8 rounded-xl bg-[#5F7E75] text-white flex items-center justify-center shrink-0">
-                  <Check size={16} strokeWidth={2.5} />
+                  {/* Without Will */}
+                  <div className="col-span-4 text-[#DC2626] text-[12.5px] leading-snug pr-2">
+                    {row.without}
+                  </div>
+
+                  {/* With Will */}
+                  <div className="col-span-5 text-[#166534] font-medium text-[12.5px] leading-snug pl-2">
+                    {row.with}
+                  </div>
                 </div>
-                <div>
-                  <span className="text-[10px] font-bold uppercase tracking-[0.14em] text-[#5F7E75] block mb-0.5">
-                    Path B · Planned Protection
-                  </span>
-                  <span className="text-[0.95rem] font-semibold text-[#172228]">
-                    With WillDrafting
-                  </span>
-                </div>
-              </div>
-              <div className="relative w-10 h-10 shrink-0">
-                <Image
-                  src="/cta/1.png"
-                  alt="Sealed legal Will"
-                  fill
-                  sizes="40px"
-                  className="object-contain"
-                />
-              </div>
+              ))}
             </div>
           </div>
 
-          {/* =========================================================================
-              INFOGRAPHIC ROWS: 4 Visual Scenario Nodes
-              ========================================================================= */}
-          <div className="relative z-10 space-y-3.5 sm:space-y-4">
-            {scenarios.map((item, idx) => (
+          {/* Mobile View (under sm) - Clean, spacious cards without clustering */}
+          <div className="sm:hidden space-y-2.5">
+            {items.map((row, idx) => (
               <div
                 key={idx}
-                className="group rounded-[24px] bg-[#FAF7F0]/75 hover:bg-[#FAF7F0] border border-[#172228]/8 p-3.5 sm:p-5 transition-all duration-200"
+                className="rounded-xl border border-[#172228]/10 bg-[#FAF7F0]/50 p-3 shadow-2xs"
               >
-                <div className="grid grid-cols-1 lg:grid-cols-12 gap-3.5 lg:gap-5 items-stretch">
-                  {/* 1. LEFT: Illustrated Scenario Identity Card */}
-                  <div className="lg:col-span-4 flex items-center gap-3.5 sm:gap-4 bg-white rounded-2xl p-3 sm:p-3.5 border border-[#172228]/6 shadow-2xs">
-                    {/* Hand-drawn Brand Illustration Thumbnail */}
-                    <div className="relative w-16 h-16 sm:w-20 sm:h-20 rounded-xl bg-[#FAF7F0] border border-[#172228]/8 overflow-hidden shrink-0">
-                      <Image
-                        src={item.illustration}
-                        alt={item.illustrationAlt}
-                        fill
-                        sizes="80px"
-                        className="object-cover object-center transition-transform duration-300 group-hover:scale-105"
-                      />
-                      <span className="absolute top-1 left-1 rounded-md bg-[#172228]/85 px-1.5 py-0.5 text-[9px] font-bold text-white leading-none">
-                        {item.step}
-                      </span>
-                    </div>
+                {/* Topic Header */}
+                <div className="flex items-center gap-2 font-bold text-[13px] text-[#172228] mb-2 pb-1.5 border-b border-[#172228]/8">
+                  <span className="shrink-0">{row.icon}</span>
+                  <span>{row.topic}</span>
+                </div>
 
-                    {/* Topic & Subtitle Tag */}
-                    <div className="min-w-0 flex-1">
-                      <span className="text-[10px] font-bold uppercase tracking-[0.12em] text-[#C65378] block mb-0.5">
-                        {item.categoryTag}
+                {/* 2 Roomy Comparison Panels */}
+                <div className="grid grid-cols-2 gap-2 text-[11.5px] leading-snug">
+                  {/* Without Will */}
+                  <div className="bg-[#FEF2F2] border border-[#DC2626]/15 rounded-lg p-2 flex flex-col justify-between">
+                    <div>
+                      <span className="inline-flex items-center gap-1 text-[10px] font-bold uppercase tracking-wider text-[#DC2626] mb-1">
+                        <X size={10} strokeWidth={3} />
+                        Without Will
                       </span>
-                      <h3 className="text-[0.95rem] sm:text-[1.05rem] font-semibold text-[#172228] leading-snug tracking-tight">
-                        {item.topic}
-                      </h3>
+                      <p className="text-[#991B1B] text-[11px] leading-snug">
+                        {row.without}
+                      </p>
                     </div>
                   </div>
 
-                  {/* 2. MIDDLE: Dying Without a Will (Path A) */}
-                  <div className="lg:col-span-4 flex flex-col justify-between rounded-2xl bg-white border border-[#B91C1C]/12 p-3.5 sm:p-4 relative overflow-hidden">
-                    <div className="flex items-center justify-between gap-2 mb-2">
-                      <span className="inline-flex items-center gap-1.5 text-[10.5px] font-bold uppercase tracking-wider text-[#B91C1C]">
-                        <span className="w-4 h-4 rounded-full bg-[#FEE2E2] text-[#B91C1C] flex items-center justify-center shrink-0">
-                          <X size={10} strokeWidth={2.8} />
-                        </span>
-                        <span className="lg:hidden">Dying Without a Will</span>
-                        <span className="hidden lg:inline">
-                          {item.withoutWillBadge}
-                        </span>
+                  {/* With Will */}
+                  <div className="bg-[#F0FDF4] border border-[#16A34A]/20 rounded-lg p-2 flex flex-col justify-between">
+                    <div>
+                      <span className="inline-flex items-center gap-1 text-[10px] font-bold uppercase tracking-wider text-[#16A34A] mb-1">
+                        <Check size={10} strokeWidth={3} />
+                        With Will
                       </span>
-                      <span className="text-[#B91C1C]/60 shrink-0">
-                        {item.withoutIcon}
-                      </span>
+                      <p className="text-[#166534] font-medium text-[11px] leading-snug">
+                        {row.with}
+                      </p>
                     </div>
-
-                    <p className="text-[0.78rem] sm:text-[0.83rem] text-[#55636D] leading-relaxed">
-                      {item.withoutWill}
-                    </p>
-                  </div>
-
-                  {/* 3. RIGHT: With WillDrafting (Path B) */}
-                  <div className="lg:col-span-4 flex flex-col justify-between rounded-2xl bg-white border border-[#5F7E75]/25 p-3.5 sm:p-4 relative overflow-hidden shadow-2xs">
-                    {/* Subtle left accent bar */}
-                    <div className="absolute left-0 top-0 bottom-0 w-1 bg-[#5F7E75]" />
-
-                    <div className="flex items-center justify-between gap-2 mb-2 pl-1">
-                      <span className="inline-flex items-center gap-1.5 text-[10.5px] font-bold uppercase tracking-wider text-[#047857]">
-                        <span className="w-4 h-4 rounded-full bg-[#D1FAE5] text-[#047857] flex items-center justify-center shrink-0">
-                          <Check size={10} strokeWidth={2.8} />
-                        </span>
-                        <span className="lg:hidden">With WillDrafting</span>
-                        <span className="hidden lg:inline">
-                          {item.withWillBadge}
-                        </span>
-                      </span>
-                      <span className="text-[#5F7E75] shrink-0">
-                        {item.withIcon}
-                      </span>
-                    </div>
-
-                    <p className="text-[0.78rem] sm:text-[0.83rem] text-[#172228] font-medium leading-relaxed pl-1">
-                      {item.withWill}
-                    </p>
                   </div>
                 </div>
               </div>
             ))}
           </div>
 
-          {/* =========================================================================
-              BOTTOM INFOGRAPHIC TAKEAWAY BANNER & CTA
-              ========================================================================= */}
-          <div className="relative z-10 mt-6 sm:mt-7 pt-5 sm:pt-6 border-t border-[#172228]/8 flex flex-col sm:flex-row items-center justify-between gap-4">
-            <div className="flex items-center gap-3.5 text-center sm:text-left">
-              <div className="hidden sm:flex relative w-12 h-12 rounded-2xl bg-[#FAF7F0] border border-[#172228]/8 items-center justify-center shrink-0 overflow-hidden">
-                <Image
-                  src="/cta/5.png"
-                  alt="Protected Indian family under legal Will"
-                  fill
-                  sizes="48px"
-                  className="object-contain p-1"
-                />
-              </div>
-              <div>
-                <p className="text-[0.85rem] sm:text-[0.92rem] font-semibold text-[#172228]">
-                  Don&apos;t leave your family&apos;s future to default succession laws.
-                </p>
-                <p className="text-[0.75rem] sm:text-[0.80rem] text-[#55636D]">
-                  Put your wishes in writing in simple English or Hindi with lawyer-verified clarity.
-                </p>
-              </div>
-            </div>
-
+          {/* Bottom CTA Bar - Ultra Compact */}
+          <div className="mt-3.5 sm:mt-4 pt-3 border-t border-[#172228]/8 flex flex-col sm:flex-row items-center justify-between gap-2.5 text-center sm:text-left">
+            <p className="text-[12px] sm:text-[13px] text-[#55636D]">
+              <strong className="text-[#172228]">Don&apos;t leave your family&apos;s future to chance.</strong> Draft your lawyer-verified Will online in 15 mins.
+            </p>
             <Link
               href="/contact"
-              className="w-full sm:w-auto shrink-0 inline-flex items-center justify-center gap-2 rounded-full bg-[#C65378] px-6 py-2.5 text-[0.84rem] sm:text-[0.88rem] font-semibold text-white shadow-sm transition-all duration-200 hover:bg-[#9F3B5C] active:scale-95"
+              className="w-full sm:w-auto shrink-0 inline-flex items-center justify-center gap-1.5 rounded-full bg-[#C65378] px-4 sm:px-5 py-2 text-[12px] sm:text-[13px] font-semibold text-white shadow-xs hover:bg-[#a13c5d] transition-all"
             >
-              <span>Protect Your Family Today</span>
-              <ArrowUpRight size={16} strokeWidth={2.2} />
+              <span>Protect Your Family</span>
+              <ArrowUpRight size={13} strokeWidth={2.5} />
             </Link>
           </div>
+
         </div>
       </div>
     </section>

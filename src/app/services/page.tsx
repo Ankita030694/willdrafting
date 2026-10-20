@@ -40,13 +40,13 @@ export const metadata: Metadata = {
     "sub registrar will registration help",
   ],
   alternates: {
-    canonical: "https://www.willdrafting.in/service",
+    canonical: "https://www.willdrafting.in/services",
   },
   openGraph: {
     title: "Online Will Writing Services in India - Lawyer-Verified Will & Estate Planning | WillDrafting.in",
     description:
       "Professional online Will writing services in India under the Indian Succession Act, 1925 & Hindu Succession Act, 1956. Get a court-ready Will printout, High Court advocate verification & registration assistance.",
-    url: "https://www.willdrafting.in/service",
+    url: "https://www.willdrafting.in/services",
     siteName: "WillDrafting.in",
     locale: "en_IN",
     type: "website",
@@ -80,7 +80,7 @@ const SERVICE_SCHEMA = {
   "@graph": [
     {
       "@type": "Service",
-      "@id": "https://www.willdrafting.in/service#service",
+      "@id": "https://www.willdrafting.in/services#service",
       "name": "Online Will Writing, Lawyer Verification & Estate Planning Services in India",
       "serviceType": "Legal Will Preparation & Estate Succession",
       "provider": {
@@ -137,7 +137,7 @@ const SERVICE_SCHEMA = {
     },
     {
       "@type": "BreadcrumbList",
-      "@id": "https://www.willdrafting.in/service#breadcrumb",
+      "@id": "https://www.willdrafting.in/services#breadcrumb",
       "itemListElement": [
         {
           "@type": "ListItem",
@@ -149,7 +149,7 @@ const SERVICE_SCHEMA = {
           "@type": "ListItem",
           "position": 2,
           "name": "Services",
-          "item": "https://www.willdrafting.in/service",
+          "item": "https://www.willdrafting.in/services",
         },
       ],
     },
@@ -175,9 +175,33 @@ const services: ServiceCard[] = [
     illustrationSrc: "/new1servcie.png",
   },
   {
-    title: "Coming Soon",
+    title: "NRI & OCI Indian Will Drafting",
     description:
-      "Power of Attorney, Private Family Trusts, and additional estate planning services in India are coming soon, giving Resident Indians and NRIs more ways to protect their family's legal and financial interests.",
+      "Specialized Two-Will estate planning for Non-Resident Indians holding immovable property, NRE/NRO accounts, and Demat shares across India, preventing foreign probate re-sealing delays under Section 228 of the Indian Succession Act.",
+    linkText: "Explore NRI Will Services",
+    linkHref: "/services/nri-will-india",
+    illustrationSrc: "/cta/1.png",
+  },
+  {
+    title: "Legal Heir",
+    description:
+      "Official Legal Heir Certificate documentation and assistance to establish rightful legal heirs under Indian succession laws for property mutation, insurance claims, and bank transfers.",
+    linkText: "Coming Soon",
+    isComingSoon: true,
+    illustrationSrc: "/comingsoon.png",
+  },
+  {
+    title: "Relinquishment Deed",
+    description:
+      "Legally binding Relinquishment Deed (Haq Tyag) drafting and Sub-Registrar registration assistance to smoothly transfer inherited property shares among co-heirs without family friction.",
+    linkText: "Coming Soon",
+    isComingSoon: true,
+    illustrationSrc: "/comingsoon.png",
+  },
+  {
+    title: "Survivor Member Certificate",
+    description:
+      "Fast-track documentation and advisory for obtaining a Surviving Member Certificate (SMC) from revenue authorities to expedite municipal records update and estate transfers.",
     linkText: "Coming Soon",
     isComingSoon: true,
     illustrationSrc: "/comingsoon.png",
@@ -385,7 +409,7 @@ export default function ServicePage() {
               </div>
               <div>
                 <Link
-                  href="/service/nri-will-india"
+                  href="/services/nri-will-india"
                   className="inline-flex items-center justify-center gap-2 rounded-full bg-[#C65378] hover:bg-[#a83d5f] text-white text-xs sm:text-sm font-semibold px-6 py-3.5 transition-colors"
                 >
                   <span>Explore NRI Will Drafting in India</span>

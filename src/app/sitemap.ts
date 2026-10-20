@@ -20,13 +20,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
     },
     {
-      url: `${baseUrl}/service`,
+      url: `${baseUrl}/services`,
       lastModified: now,
       changeFrequency: "monthly",
       priority: 0.9,
     },
     {
-      url: `${baseUrl}/service/nri-will-india`,
+      url: `${baseUrl}/services/nri-will-india`,
       lastModified: now,
       changeFrequency: "monthly",
       priority: 0.9,
@@ -38,7 +38,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
     },
     {
-      url: `${baseUrl}/aboutus`,
+      url: `${baseUrl}/about-us`,
       lastModified: now,
       changeFrequency: "monthly",
       priority: 0.8,

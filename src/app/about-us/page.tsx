@@ -27,13 +27,13 @@ export const metadata: Metadata = {
     "will registration advocates india",
   ],
   alternates: {
-    canonical: "https://www.willdrafting.in/aboutus",
+    canonical: "https://www.willdrafting.in/about-us",
   },
   openGraph: {
     title: "About Us - Will Drafting Law Firm & Estate Planning Advocates in India | WillDrafting.in",
     description:
       "Powered by AMA Legal Solutions: Meet the estate planning advocates behind WillDrafting.in helping Resident Indians and NRIs draft lawyer-verified Wills under Indian succession law.",
-    url: "https://www.willdrafting.in/aboutus",
+    url: "https://www.willdrafting.in/about-us",
     siteName: "WillDrafting.in",
     locale: "en_IN",
     type: "website",
@@ -60,8 +60,8 @@ const ABOUT_SCHEMA = {
   "@graph": [
     {
       "@type": "AboutPage",
-      "@id": "https://www.willdrafting.in/aboutus#webpage",
-      "url": "https://www.willdrafting.in/aboutus",
+      "@id": "https://www.willdrafting.in/about-us#webpage",
+      "url": "https://www.willdrafting.in/about-us",
       "name": "About Us - Will Drafting Law Firm & Estate Planning Advocates in India | WillDrafting.in",
       "description":
         "Powered by AMA Legal Solutions: Learn how our estate planning advocates help Resident Indians and NRIs draft, verify, and register court-ready Wills under the Indian Succession Act, 1925.",
@@ -69,12 +69,12 @@ const ABOUT_SCHEMA = {
         "@id": "https://www.willdrafting.in/#legalservice",
       },
       "breadcrumb": {
-        "@id": "https://www.willdrafting.in/aboutus#breadcrumb",
+        "@id": "https://www.willdrafting.in/about-us#breadcrumb",
       },
     },
     {
       "@type": "BreadcrumbList",
-      "@id": "https://www.willdrafting.in/aboutus#breadcrumb",
+      "@id": "https://www.willdrafting.in/about-us#breadcrumb",
       "itemListElement": [
         {
           "@type": "ListItem",
@@ -86,7 +86,7 @@ const ABOUT_SCHEMA = {
           "@type": "ListItem",
           "position": 2,
           "name": "About Us",
-          "item": "https://www.willdrafting.in/aboutus",
+          "item": "https://www.willdrafting.in/about-us",
         },
       ],
     },

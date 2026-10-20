@@ -47,13 +47,13 @@ export const metadata: Metadata = {
     "repatriation of inherited property by nri form 15ca 15cb",
   ],
   alternates: {
-    canonical: "https://www.willdrafting.in/service/nri-will-india",
+    canonical: "https://www.willdrafting.in/services/nri-will-india",
   },
   openGraph: {
     title: "NRI Will Drafting India | Online Will for Indian Assets",
     description:
       "Draft a legally valid Indian Will online for NRIs & OCIs. Protect Indian property, NRE/NRO accounts & Demat shares under the Indian Succession Act.",
-    url: "https://www.willdrafting.in/service/nri-will-india",
+    url: "https://www.willdrafting.in/services/nri-will-india",
     siteName: "WillDrafting.in",
     locale: "en_IN",
     type: "website",
@@ -122,8 +122,8 @@ const NRI_SCHEMA = {
   "@graph": [
     {
       "@type": "WebPage",
-      "@id": "https://www.willdrafting.in/service/nri-will-india#webpage",
-      "url": "https://www.willdrafting.in/service/nri-will-india",
+      "@id": "https://www.willdrafting.in/services/nri-will-india#webpage",
+      "url": "https://www.willdrafting.in/services/nri-will-india",
       "name": "NRI Will Drafting India | Online Will for Indian Assets",
       "description":
         "Draft a legally valid Indian Will online for NRIs & OCIs. Protect Indian property, NRE/NRO accounts & Demat shares under the Indian Succession Act.",
@@ -132,7 +132,7 @@ const NRI_SCHEMA = {
       "author": {
         "@type": "Organization",
         "name": "WillDrafting Editorial Team",
-        "url": "https://www.willdrafting.in/aboutus",
+        "url": "https://www.willdrafting.in/about-us",
       },
       "publisher": {
         "@id": "https://www.willdrafting.in/#organization",
@@ -145,12 +145,12 @@ const NRI_SCHEMA = {
         "caption": "Single Foreign Will vs. The NRI Two-Will Strategy in India under Section 5, 63 & 228 of the Indian Succession Act, 1925",
       },
       "breadcrumb": {
-        "@id": "https://www.willdrafting.in/service/nri-will-india#breadcrumb",
+        "@id": "https://www.willdrafting.in/services/nri-will-india#breadcrumb",
       },
     },
     {
       "@type": "Service",
-      "@id": "https://www.willdrafting.in/service/nri-will-india#service",
+      "@id": "https://www.willdrafting.in/services/nri-will-india#service",
       "name": "NRI & OCI Online Will Drafting for Indian Property & Financial Assets",
       "serviceType": "Cross-Border Indian Estate Planning & Testamentary Will Drafting",
       "provider": {
@@ -201,7 +201,7 @@ const NRI_SCHEMA = {
     },
     {
       "@type": "HowTo",
-      "@id": "https://www.willdrafting.in/service/nri-will-india#howto",
+      "@id": "https://www.willdrafting.in/services/nri-will-india#howto",
       "name": "How NRIs Sign a Legally Valid Indian Will from Abroad",
       "description":
         "Four-step legal process for NRIs and OCIs in the USA, UK, UAE, Canada, Australia, and Singapore to execute a valid Will for Indian property without flying to India.",
@@ -235,7 +235,7 @@ const NRI_SCHEMA = {
     },
     {
       "@type": "FAQPage",
-      "@id": "https://www.willdrafting.in/service/nri-will-india#faq",
+      "@id": "https://www.willdrafting.in/services/nri-will-india#faq",
       "mainEntity": NRI_FAQS.map((item) => ({
         "@type": "Question",
         "name": item.q,
@@ -247,7 +247,7 @@ const NRI_SCHEMA = {
     },
     {
       "@type": "BreadcrumbList",
-      "@id": "https://www.willdrafting.in/service/nri-will-india#breadcrumb",
+      "@id": "https://www.willdrafting.in/services/nri-will-india#breadcrumb",
       "itemListElement": [
         {
           "@type": "ListItem",
@@ -259,13 +259,13 @@ const NRI_SCHEMA = {
           "@type": "ListItem",
           "position": 2,
           "name": "Services",
-          "item": "https://www.willdrafting.in/service",
+          "item": "https://www.willdrafting.in/services",
         },
         {
           "@type": "ListItem",
           "position": 3,
           "name": "NRI Will Drafting India",
-          "item": "https://www.willdrafting.in/service/nri-will-india",
+          "item": "https://www.willdrafting.in/services/nri-will-india",
         },
       ],
     },
@@ -329,7 +329,7 @@ export default function NriWillIndiaPage() {
               Home
             </Link>
             <span>/</span>
-            <Link href="/service" className="hover:text-[#C65378] transition-colors font-medium">
+            <Link href="/services" className="hover:text-[#C65378] transition-colors font-medium">
               Services
             </Link>
             <span>/</span>
@@ -666,7 +666,7 @@ export default function NriWillIndiaPage() {
             </div>
             <div className="flex flex-wrap gap-3">
               <Link
-                href="/service"
+                href="/services"
                 className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#172228] bg-[#FAF7F0] hover:bg-[#C65378] hover:text-white px-4 py-2.5 rounded-full border border-[#172228]/10 transition-colors"
               >
                 <span>Explore Indian Personal Law Will Writing Services</span>
@@ -706,7 +706,7 @@ export default function NriWillIndiaPage() {
             </p>
           </div>
           <Link
-            href="/aboutus"
+            href="/about-us"
             className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-[0.14em] text-[#172228] hover:text-[#C65378] shrink-0"
           >
             <span>Meet Our Estate Planning Advocates</span>

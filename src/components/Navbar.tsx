@@ -9,24 +9,34 @@ import { motion, AnimatePresence } from "motion/react";
 import { useSession } from "next-auth/react";
 import { OPEN_SIGNUP_EVENT } from "@/components/auth/SignupModalHost";
 
+interface DropdownItem {
+  label: string;
+  href: string;
+  badge?: string;
+  isComingSoon?: boolean;
+}
+
 interface NavItem {
   label: string;
   href: string;
   hasDropdown?: boolean;
-  dropdownItems?: { label: string; href: string }[];
+  dropdownItems?: DropdownItem[];
 }
 
 const NAV_ITEMS: NavItem[] = [
   { label: "Home", href: "/" },
-  { label: "About Us", href: "/aboutus" },
+  { label: "About Us", href: "/about-us" },
   {
     label: "Services",
-    href: "/service",
+    href: "/services",
     hasDropdown: true,
     dropdownItems: [
-      { label: "All Will Services", href: "/service" },
-      { label: "NRI & OCI Indian Will", href: "/service/nri-will-india" },
+      { label: "All Will Services", href: "/services" },
+      { label: "NRI & OCI Indian Will", href: "/services/nri-will-india" },
       { label: "Succession Calculator", href: "/tools/succession-calculator" },
+      { label: "Legal Heir", href: "/services", badge: "Coming Soon", isComingSoon: true },
+      { label: "Relinquishment Deed", href: "/services", badge: "Coming Soon", isComingSoon: true },
+      { label: "Survivor Member Certificate", href: "/services", badge: "Coming Soon", isComingSoon: true },
     ],
   },
   { label: "Pricing", href: "/pricing" },
@@ -221,7 +231,7 @@ export default function Navbar() {
                       onMouseEnter={handleDropdownEnter}
                       onMouseLeave={handleDropdownLeave}
                     >
-                      <div className="w-56 rounded-2xl border border-white/80 bg-white/95 p-1.5 shadow-xl backdrop-blur-lg animate-in fade-in zoom-in-95 duration-150">
+                      <div className="w-64 rounded-2xl border border-white/80 bg-white/95 p-1.5 shadow-xl backdrop-blur-lg animate-in fade-in zoom-in-95 duration-150">
                         {item.dropdownItems?.map((subItem) => (
                           <Link
                             key={subItem.label}
@@ -232,9 +242,14 @@ export default function Navbar() {
                               }
                               setDropdownOpen(false);
                             }}
-                            className="block rounded-xl px-3.5 py-2 text-xs font-medium text-slate-700 hover:bg-slate-100 hover:text-black transition-colors"
+                            className="flex items-center justify-between rounded-xl px-3.5 py-2 text-xs font-medium text-slate-700 hover:bg-slate-100 hover:text-black transition-colors"
                           >
-                            {subItem.label}
+                            <span>{subItem.label}</span>
+                            {subItem.badge && (
+                              <span className="text-[9px] font-bold uppercase tracking-wider text-[#C65378] bg-[#F5EBF4] px-1.5 py-0.5 rounded">
+                                {subItem.badge}
+                              </span>
+                            )}
                           </Link>
                         ))}
                       </div>
@@ -358,9 +373,14 @@ export default function Navbar() {
                             key={sub.label}
                             href={sub.href}
                             onClick={() => setMobileMenuOpen(false)}
-                            className="text-left w-full rounded-xl px-3 py-2 text-sm font-medium text-slate-700 hover:bg-slate-100 hover:text-black transition-colors"
+                            className="flex items-center justify-between text-left w-full rounded-xl px-3 py-2 text-sm font-medium text-slate-700 hover:bg-slate-100 hover:text-black transition-colors"
                           >
-                            {sub.label}
+                            <span>{sub.label}</span>
+                            {sub.badge && (
+                              <span className="text-[9px] font-bold uppercase tracking-wider text-[#C65378] bg-[#F5EBF4] px-2 py-0.5 rounded">
+                                {sub.badge}
+                              </span>
+                            )}
                           </Link>
                         ))}
                       </div>

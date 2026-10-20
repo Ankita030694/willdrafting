@@ -20,8 +20,23 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       {
+        source: "/aboutus",
+        destination: "/about-us",
+        permanent: true,
+      },
+      {
+        source: "/service",
+        destination: "/services",
+        permanent: true,
+      },
+      {
+        source: "/service/:slug*",
+        destination: "/services/:slug*",
+        permanent: true,
+      },
+      {
         source: "/nri-will-india",
-        destination: "/service/nri-will-india",
+        destination: "/services/nri-will-india",
         permanent: true,
       },
       {

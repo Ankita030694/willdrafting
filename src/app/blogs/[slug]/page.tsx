@@ -342,14 +342,14 @@ export default async function BlogSlugPage({ params }: PageProps) {
                   Explore Services & Tools
                 </span>
                 <Link
-                  href="/service"
+                  href="/services"
                   className="flex items-center justify-between text-[#172228] hover:text-[#C65378] font-medium py-1 transition-colors"
                 >
                   <span>Online Will Drafting Services India</span>
                   <ArrowUpRight className="w-3.5 h-3.5" />
                 </Link>
                 <Link
-                  href="/service/nri-will-india"
+                  href="/services/nri-will-india"
                   className="flex items-center justify-between text-[#172228] hover:text-[#C65378] font-medium py-1 transition-colors"
                 >
                   <span>NRI & OCI Indian Will Service</span>

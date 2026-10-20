@@ -84,12 +84,12 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/aboutus" className="hover:text-[#172228] transition-colors">
+                <Link href="/about-us" className="hover:text-[#172228] transition-colors">
                   About Us
                 </Link>
               </li>
               <li>
-                <Link href="/service" className="hover:text-[#172228] transition-colors">
+                <Link href="/services" className="hover:text-[#172228] transition-colors">
                   Services
                 </Link>
               </li>
@@ -118,12 +118,12 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/service" className="hover:text-[#172228] transition-colors">
+                <Link href="/services" className="hover:text-[#172228] transition-colors">
                   Lawyer Review & Verification
                 </Link>
               </li>
               <li>
-                <Link href="/service/nri-will-india" className="hover:text-[#172228] transition-colors">
+                <Link href="/services/nri-will-india" className="hover:text-[#172228] transition-colors">
                   NRI Will Drafting India
                 </Link>
               </li>
@@ -131,6 +131,30 @@ export default function Footer() {
                 <Link href="/tools/succession-calculator" className="hover:text-[#172228] transition-colors">
                   Indian Succession Calculator
                 </Link>
+              </li>
+              <li>
+                <div className="flex items-center gap-2 text-[#55636D]">
+                  <span>Legal Heir</span>
+                  <span className="text-[9px] font-bold uppercase tracking-wider text-[#C65378] bg-[#C65378]/10 px-1.5 py-0.5 rounded">
+                    Coming Soon
+                  </span>
+                </div>
+              </li>
+              <li>
+                <div className="flex items-center gap-2 text-[#55636D]">
+                  <span>Relinquishment Deed</span>
+                  <span className="text-[9px] font-bold uppercase tracking-wider text-[#C65378] bg-[#C65378]/10 px-1.5 py-0.5 rounded">
+                    Coming Soon
+                  </span>
+                </div>
+              </li>
+              <li>
+                <div className="flex items-center gap-2 text-[#55636D]">
+                  <span>Survivor Member Certificate</span>
+                  <span className="text-[9px] font-bold uppercase tracking-wider text-[#C65378] bg-[#C65378]/10 px-1.5 py-0.5 rounded">
+                    Coming Soon
+                  </span>
+                </div>
               </li>
               <li>
                 <Link href="/blogs/how-to-register-will-in-india-state-sub-registrar-guide" className="hover:text-[#172228] transition-colors">
