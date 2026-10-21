@@ -593,7 +593,7 @@ export default function DigitalAssetsCryptoClient() {
                   Under Section 63 of the Indian Succession Act, a Will must be attested by a minimum of <strong>two independent witnesses</strong> who view the document. If you register your Will at the Sub-Registrar Office (SRO), your Will is scanned into government land databases. Moreover, if your estate undergoes court probate in Mumbai, Chennai, or Kolkata, the Will becomes a matter of public court record. Any witness, court clerk, lawyer, or family member who reads your 24-word recovery phrase can drain your blockchain wallets in seconds with zero paper trail.
                 </p>
                 <p>
-                  To solve this dilemma, AMA Legal Solutions pioneers the <strong>Two-Document Method</strong>:
+                  To solve this dilemma, WillDrafting.in pioneers the <strong>Two-Document Method</strong>:
                 </p>
               </div>
 
@@ -1445,7 +1445,7 @@ export default function DigitalAssetsCryptoClient() {
                 Advocate specializing in testamentary succession, digital estate governance, and cross-border crypto inheritance under the Indian Succession Act and IT Act.
               </p>
               <div className="pt-2 border-t border-[#172228]/5 flex items-center justify-between text-[11px] text-[#55636D]">
-                <span>AMA Legal Solutions</span>
+                <span>WillDrafting.in</span>
                 <span className="text-emerald-700 font-semibold flex items-center gap-1">
                   <ShieldCheck className="w-3.5 h-3.5" /> Bar Verified
                 </span>

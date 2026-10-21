@@ -1091,7 +1091,7 @@ export default function DematSharesTransmissionClient() {
                 12. Lawyer-Verified Guidance: Succession Support by AMA
               </h2>
               <p className="text-sm md:text-base text-[#55636D] leading-relaxed">
-                WillDrafting.in is powered by AMA Legal Solutions, a premier Indian succession law practice. If you are dealing with a complex share transmission involving disputed heirs, missing nominations, or high-value portfolios exceeding Rs 15 Lakhs, our succession advocates provide end-to-end representation.
+                WillDrafting.in is powered by WillDrafting.in, a premier Indian succession law practice. If you are dealing with a complex share transmission involving disputed heirs, missing nominations, or high-value portfolios exceeding Rs 15 Lakhs, our succession advocates provide end-to-end representation.
               </p>
 
               <div className="bg-white rounded-2xl border border-[#172228]/10 p-5 shadow-xs space-y-4">
@@ -1299,13 +1299,13 @@ export default function DematSharesTransmissionClient() {
                 </div>
               </div>
               <p className="text-xs text-[#55636D] leading-relaxed">
-                Advocate Rao has over 15 years of experience in testamentary succession, demat share transmission petitions, and high-value estate planning at AMA Legal Solutions.
+                Advocate Rao has over 15 years of experience in testamentary succession, demat share transmission petitions, and high-value estate planning at WillDrafting.in.
               </p>
               <div className="mt-3 pt-3 border-t border-[#172228]/10 flex items-center justify-between text-[11px]">
                 <span className="text-[#5F7E75] font-semibold flex items-center gap-1">
                   <ShieldCheck className="w-3.5 h-3.5" /> Bar Council Verified
                 </span>
-                <span className="text-[#55636D]">AMA Legal Solutions</span>
+                <span className="text-[#55636D]">WillDrafting.in</span>
               </div>
             </div>
 

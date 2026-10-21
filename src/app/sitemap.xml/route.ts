@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import { getAllSitemapLinks, formatDateForXml } from "@/data/sitemapData";
+import { blogsCol } from "@/lib/db/collections";
 
 const BASE_URL = "https://www.willdrafting.in";
 
@@ -17,9 +18,9 @@ function escapeXml(unsafe: string): string {
 
 /**
  * Standards-compliant XML Sitemap Route Handler (/sitemap.xml)
- * 
- * Powered by Single Source of Truth (SSOT): src/data/sitemapData.ts
- * Cached on edge CDN for 24 hours with stale-while-revalidate.
+ *
+ * Combines Single Source of Truth (SSOT) static routes (`src/data/sitemapData.ts`)
+ * with dynamic published blogs from MongoDB (`blogs` collection).
  */
 export async function GET() {
   const pages = getAllSitemapLinks();
@@ -35,6 +36,32 @@ export async function GET() {
     }
   >();
 
+  // 1. Include dynamic published blogs from MongoDB at top priority
+  try {
+    const col = await blogsCol();
+    const dbBlogs = await col
+      .find({ status: "PUBLISHED" }, { projection: { slug: 1, date: 1, updatedAt: 1 } })
+      .sort({ createdAt: -1 })
+      .toArray();
+
+    for (const b of dbBlogs) {
+      if (!b.slug) continue;
+      const absoluteLoc = `${BASE_URL}/blogs/${b.slug}`;
+      const escapedLoc = escapeXml(absoluteLoc);
+      if (!urlMap.has(escapedLoc)) {
+        urlMap.set(escapedLoc, {
+          loc: escapedLoc,
+          lastmod: formatDateForXml(b.date || new Date(b.updatedAt || Date.now()).toISOString().split("T")[0]),
+          changefreq: "weekly",
+          priority: "0.9",
+        });
+      }
+    }
+  } catch (e) {
+    console.warn("Could not query MongoDB blogs for sitemap.xml:", e);
+  }
+
+  // 2. Include all static sitemap pages
   for (const page of pages) {
     const rawHref = page.href.startsWith("/") ? page.href : `/${page.href}`;
     const absoluteLoc = rawHref === "/" ? BASE_URL : `${BASE_URL}${rawHref}`;
@@ -72,7 +99,7 @@ ${xmlEntries}
     status: 200,
     headers: {
       "Content-Type": "application/xml; charset=utf-8",
-      "Cache-Control": "public, s-maxage=86400, stale-while-revalidate=86400",
+      "Cache-Control": "public, s-maxage=3600, stale-while-revalidate=86400",
       "X-Content-Type-Options": "nosniff",
     },
   });

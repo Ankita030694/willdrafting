@@ -10,7 +10,7 @@ interface NavItem {
   label: string;
   href: string;
   shortcut?: string;
-  badgeKey?: "users" | "drafts" | "transactions";
+  badgeKey?: "users" | "drafts" | "transactions" | "blogs";
   icon: React.ReactNode;
 }
 
@@ -78,6 +78,40 @@ const NAV_GROUPS: NavGroup[] = [
       },
     ],
   },
+  {
+    title: "Editorial & AI Content",
+    items: [
+      {
+        label: "Blogs Studio",
+        href: "/authority/blogs",
+        shortcut: "⌘5",
+        badgeKey: "blogs",
+        icon: (
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+            <path d="M12 20h9" />
+            <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z" />
+          </svg>
+        ),
+      },
+      {
+        label: "AI Prompts",
+        href: "/authority/prompts",
+        shortcut: "⌘6",
+        icon: (
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+            <path d="M12 2v4" />
+            <path d="M12 18v4" />
+            <path d="M4.93 4.93l2.83 2.83" />
+            <path d="M16.24 16.24l2.83 2.83" />
+            <path d="M2 12h4" />
+            <path d="M18 12h4" />
+            <path d="M4.93 19.07l2.83-2.83" />
+            <path d="M16.24 7.76l2.83-2.83" />
+          </svg>
+        ),
+      },
+    ],
+  },
 ];
 
 const COMMAND_ITEMS = [
@@ -85,6 +119,8 @@ const COMMAND_ITEMS = [
   { label: "Users & Accounts Registry", href: "/authority/users", category: "Authority Console" },
   { label: "Unpaid Will Drafts & Guest Sessions", href: "/authority/drafts", category: "Authority Console" },
   { label: "Transactions & Orders Ledger", href: "/authority/transactions", category: "Authority Console" },
+  { label: "Blogs & AI Article Studio", href: "/authority/blogs", category: "Editorial & AI" },
+  { label: "AI Prompt Profiles Manager", href: "/authority/prompts", category: "Editorial & AI" },
   { label: "Sign Out", href: "/nullify", category: "Session" },
 ];
 
@@ -102,6 +138,7 @@ export default function AdminShell({ children }: { children: React.ReactNode }) 
     users?: string;
     drafts?: string;
     transactions?: string;
+    blogs?: string;
   }>({});
 
   useEffect(() => {
@@ -112,15 +149,28 @@ export default function AdminShell({ children }: { children: React.ReactNode }) 
         if (!mounted || !data?.stats) return;
         const s = data.stats;
         const unpaidDraftsCount = Number(s.loggedInUnpaidWills || 0) + Number(s.guestWills || 0);
-        setBadges({
+        setBadges((prev) => ({
+          ...prev,
           users: String(s.totalAccounts ?? 0),
           drafts: String(unpaidDraftsCount),
           transactions: String(
             (s.paidOrdersCount ?? 0) + (s.pendingOrdersCount ?? 0) + (s.failedOrdersCount ?? 0)
           ),
-        });
+        }));
       })
       .catch(() => {});
+
+    fetch("/api/admin/blogs")
+      .then((r) => (r.ok ? r.json() : null))
+      .then((data) => {
+        if (!mounted || !Array.isArray(data?.blogs)) return;
+        setBadges((prev) => ({
+          ...prev,
+          blogs: String(data.blogs.length),
+        }));
+      })
+      .catch(() => {});
+
     return () => {
       mounted = false;
     };

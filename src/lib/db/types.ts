@@ -179,3 +179,81 @@ export interface OtpState {
   lastSentAt: Date;
   expiresAt: Date;
 }
+
+export interface BlogFAQItem {
+  question: string;
+  answer: string;
+}
+
+export interface BlogReviewItem {
+  name: string;
+  rating: number;
+  review: string;
+  location?: string;
+}
+
+export interface BlogReferenceItem {
+  title: string;
+  url: string;
+}
+
+export interface BlogDoc {
+  _id: ObjectId;
+  title: string;
+  subtitle: string;
+  slug: string;
+  category: string;
+  readTime: string;
+  date: string;
+  /** Permanent link to the cover image (e.g., `/api/blog-images/<id>`) */
+  image: string;
+  /** Optional MongoDB `blog_images` document ID for the cover image */
+  imageId?: string | null;
+  /** Permanent link to the mid-article topic infographic (e.g., `/api/blog-images/<id>`) */
+  infographic?: string | null;
+  /** Optional MongoDB `blog_images` document ID for the infographic */
+  infographicId?: string | null;
+  /** Full semantic HTML body */
+  description: string;
+  metaTitle: string;
+  metaDescription: string;
+  keywords?: string[];
+  /** Bullet takeaways shown in "The short version" sidebar card */
+  shortVersion?: string[];
+  /** Actionable checklist steps shown in "What to do next" card */
+  actionSteps?: string[];
+  author: string;
+  authorRole?: string;
+  status: "PUBLISHED" | "DRAFT";
+  faqs: BlogFAQItem[];
+  reviews: BlogReviewItem[];
+  references?: BlogReferenceItem[];
+  disclaimer?: string;
+  createdAt: Date;
+  updatedAt: Date;
+}
+
+export interface BlogImageDoc {
+  _id: ObjectId;
+  kind: "cover" | "infographic" | "inline";
+  filename: string;
+  mimeType: string;
+  /** Raw base64 payload (without `data:...;base64,` prefix) stored in MongoDB */
+  base64: string;
+  size: number;
+  prompt?: string | null;
+  blogSlug?: string | null;
+  createdAt: Date;
+}
+
+export interface PromptProfileDoc {
+  _id: ObjectId;
+  name: string;
+  description: string;
+  coreInstructions: string;
+  targetWordCount: number;
+  isDefault: boolean;
+  createdAt: Date;
+  updatedAt: Date;
+}
+

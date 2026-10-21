@@ -3,10 +3,24 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { ArrowLeft, ArrowUpRight, CheckCircle2, FileText, ShieldCheck, Star } from "lucide-react";
+import {
+  ArrowLeft,
+  ArrowUpRight,
+  BookOpen,
+  CheckCircle2,
+  ExternalLink,
+  FileText,
+  ShieldCheck,
+  Star,
+} from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { BLOG_ARTICLES, getArticleBySlug, getRelatedArticles } from "@/data/blogs";
+import { blogsCol } from "@/lib/db/collections";
+import type { BlogDoc } from "@/lib/db/types";
+
+export const dynamic = "force-dynamic";
+export const dynamicParams = true;
 
 interface PageProps {
   params: Promise<{
@@ -14,20 +28,10 @@ interface PageProps {
   }>;
 }
 
+/* Hardcoded generateStaticParams commented out — blogs are rendered from MongoDB:
 export async function generateStaticParams() {
   const params: { slug: string }[] = [];
-  const dedicatedSlugs = new Set([
-    "legal-heir-certificate-vs-succession-certificate",
-    "demat-shares-transmission-after-death-sebi",
-    "property-transfer-after-death-without-will-india",
-    "claim-unclaimed-deposits-deceased-udgam",
-    "executor-of-will-duties-india",
-    "how-to-challenge-a-will-in-india",
-    "married-daughter-rights-in-fathers-property",
-    "second-wife-children-property-rights-india",
-    "hindu-woman-property-rights-stridhan-will",
-  ]);
-  BLOG_ARTICLES.filter((article) => !dedicatedSlugs.has(article.slug)).forEach((article) => {
+  BLOG_ARTICLES.forEach((article) => {
     params.push({ slug: article.slug });
     if (article.aliases) {
       article.aliases.forEach((alias) => {
@@ -37,137 +41,256 @@ export async function generateStaticParams() {
   });
   return params;
 }
+*/
+
+async function findMongoBlogBySlug(slug: string): Promise<BlogDoc | null> {
+  try {
+    const col = await blogsCol();
+    const normalized = slug.toLowerCase().trim();
+    const doc = await col.findOne({
+      $or: [{ slug: normalized }, { aliases: normalized } as any],
+    });
+    return doc || null;
+  } catch {
+    return null;
+  }
+}
+
+async function findRelatedMongoBlogs(currentSlug: string, count = 3) {
+  try {
+    const col = await blogsCol();
+    const docs = await col
+      .find({ slug: { $ne: currentSlug.toLowerCase().trim() }, status: "PUBLISHED" })
+      .sort({ createdAt: -1 })
+      .limit(count)
+      .toArray();
+    return docs.map((d) => ({
+      id: d._id.toString(),
+      slug: d.slug,
+      title: d.title,
+      lead: d.subtitle || d.metaDescription || "",
+      category: d.category || "Indian Succession Law",
+      readTime: d.readTime || "10 min",
+      date: d.date || "2026-10-21",
+      imageSrc: d.image || "/desktopusp.jpg",
+    }));
+  } catch {
+    return [];
+  }
+}
+
+function processHtmlAndExtractToc(rawHtml: string): {
+  processedHtml: string;
+  toc: Array<{ id: string; text: string }>;
+} {
+  if (!rawHtml) return { processedHtml: "", toc: [] };
+
+  const toc: Array<{ id: string; text: string }> = [];
+  let idx = 0;
+
+  let html = rawHtml.replace(/<h2([^>]*)>([\s\S]*?)<\/h2>/gi, (_full, attrs, inner) => {
+    const plain = inner.replace(/<[^>]*>/g, "").trim();
+    const id =
+      plain
+        .toLowerCase()
+        .replace(/[^a-z0-9]+/g, "-")
+        .replace(/^-+|-+$/g, "") || `section-${++idx}`;
+    if (plain && !/popular searches/i.test(plain)) {
+      toc.push({ id, text: plain });
+    }
+    return `<h2 id="${id}"${attrs}>${inner}</h2>`;
+  });
+
+  // Transform Popular Searches list into pill tags
+  html = html.replace(
+    /<h3>\s*Popular Searches\s*<\/h3>\s*<ul>([\s\S]*?)<\/ul>/gi,
+    (_m, listInner) => {
+      return `<div class="wd-popular-searches-box"><h3>Popular Searches</h3><ul class="wd-popular-searches-pills">${listInner}</ul></div>`;
+    }
+  );
+
+  // Wrap tables in responsive container
+  html = html.replace(/<table([\s\S]*?)<\/table>/gi, '<div class="wd-blog-table-wrap"><table$1</table></div>');
+
+  return { processedHtml: html, toc };
+}
+
+function splitHtmlForInfographic(html: string): [string, string] {
+  const h2Matches = Array.from(html.matchAll(/<h2\b[^>]*>/gi));
+  if (h2Matches.length >= 2) {
+    const mid = Math.floor(h2Matches.length / 2);
+    const splitIndex = h2Matches[mid].index ?? -1;
+    if (splitIndex > 0) {
+      return [html.slice(0, splitIndex), html.slice(splitIndex)];
+    }
+  }
+  const pMatches = Array.from(html.matchAll(/<\/p>/gi));
+  if (pMatches.length >= 4) {
+    const mid = Math.floor(pMatches.length / 2);
+    const splitIndex = (pMatches[mid].index ?? 0) + 4;
+    return [html.slice(0, splitIndex), html.slice(splitIndex)];
+  }
+  return [html, ""];
+}
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { slug } = await params;
-  const article = getArticleBySlug(slug);
+  const dbBlog = await findMongoBlogBySlug(slug);
 
-  if (!article) {
+  if (dbBlog) {
+    const canonicalUrl = `https://www.willdrafting.in/blogs/${dbBlog.slug}`;
+    const imageUrl = dbBlog.image?.startsWith("http")
+      ? dbBlog.image
+      : `https://www.willdrafting.in${dbBlog.image?.startsWith("/") ? "" : "/"}${dbBlog.image || "desktopusp.jpg"}`;
+
     return {
-      title: "Article Not Found",
-      robots: { index: false, follow: false },
+      title: {
+        absolute: dbBlog.metaTitle || dbBlog.title,
+      },
+      description: dbBlog.metaDescription || dbBlog.subtitle,
+      keywords: dbBlog.keywords || [],
+      alternates: {
+        canonical: canonicalUrl,
+      },
+      openGraph: {
+        title: dbBlog.metaTitle || dbBlog.title,
+        description: dbBlog.metaDescription || dbBlog.subtitle,
+        url: canonicalUrl,
+        siteName: "WillDrafting.in",
+        locale: "en_IN",
+        type: "article",
+        publishedTime: new Date(dbBlog.date || dbBlog.createdAt).toISOString(),
+        authors: [dbBlog.author || "WillDrafting.in Editorial Counsel"],
+        images: [
+          {
+            url: imageUrl,
+            width: 1200,
+            height: 630,
+            alt: dbBlog.title,
+          },
+        ],
+      },
+      twitter: {
+        card: "summary_large_image",
+        title: dbBlog.metaTitle || dbBlog.title,
+        description: dbBlog.metaDescription || dbBlog.subtitle,
+        images: [imageUrl],
+      },
     };
   }
 
-  const canonicalUrl = `https://www.willdrafting.in/blogs/${article.slug}`;
-  const imageUrl = article.imageSrc.startsWith("http")
-    ? article.imageSrc
-    : `https://www.willdrafting.in${article.imageSrc.startsWith("/") ? "" : "/"}${article.imageSrc}`;
-
   return {
-    title: {
-      absolute: article.seoTitle,
-    },
-    description: article.metaDescription,
-    keywords: article.keywords,
-    alternates: {
-      canonical: canonicalUrl,
-    },
-    openGraph: {
-      title: article.seoTitle,
-      description: article.metaDescription,
-      url: canonicalUrl,
-      siteName: "WillDrafting.in",
-      locale: "en_IN",
-      type: "article",
-      publishedTime: new Date(article.date).toISOString(),
-      authors: [article.author],
-      images: [
-        {
-          url: imageUrl,
-          width: 1200,
-          height: 630,
-          alt: article.title,
-        },
-      ],
-    },
-    twitter: {
-      card: "summary_large_image",
-      title: article.seoTitle,
-      description: article.metaDescription,
-      images: [imageUrl],
-    },
+    title: "Article Not Found",
+    robots: { index: false, follow: false },
   };
 }
 
 export default async function BlogSlugPage({ params }: PageProps) {
   const { slug } = await params;
-  const article = getArticleBySlug(slug);
+  const dbBlog = await findMongoBlogBySlug(slug);
+  // Hardcoded fallback commented out — all blogs are rendered from MongoDB:
+  // const staticArticle = !dbBlog ? getArticleBySlug(slug) : undefined;
+  const staticArticle = undefined as ReturnType<typeof getArticleBySlug>;
 
-  if (!article) {
+  if (!dbBlog && !staticArticle) {
     notFound();
   }
 
-  const canonicalUrl = `https://www.willdrafting.in/blogs/${article.slug}`;
-  const imageUrl = article.imageSrc.startsWith("http")
-    ? article.imageSrc
-    : `https://www.willdrafting.in${article.imageSrc.startsWith("/") ? "" : "/"}${article.imageSrc}`;
+  const title = dbBlog ? dbBlog.title : staticArticle!.title;
+  const lead = dbBlog ? dbBlog.subtitle : staticArticle!.lead;
+  const category = dbBlog ? dbBlog.category : staticArticle!.category;
+  const dateStr = dbBlog ? dbBlog.date : staticArticle!.date;
+  const readTime = dbBlog ? dbBlog.readTime : staticArticle!.readTime;
+  const author = dbBlog ? dbBlog.author : staticArticle!.author;
+  const authorRole = dbBlog
+    ? dbBlog.authorRole || "Senior Succession & Trust Counsel, WillDrafting.in"
+    : staticArticle!.authorRole.replace(/WillDrafting.in/gi, "WillDrafting.in");
+  const imageSrc = dbBlog ? dbBlog.image || "/desktopusp.jpg" : staticArticle!.imageSrc;
+  const infographicSrc = dbBlog?.infographic || null;
+  const canonicalSlug = dbBlog ? dbBlog.slug : staticArticle!.slug;
+  const metaDescription = dbBlog ? dbBlog.metaDescription || dbBlog.subtitle : staticArticle!.metaDescription;
+  const keywords = dbBlog ? dbBlog.keywords || [] : staticArticle!.keywords;
+  const shortVersion = dbBlog ? dbBlog.shortVersion || [] : staticArticle!.shortVersion;
+  const actionSteps = dbBlog ? dbBlog.actionSteps || [] : staticArticle!.actionSteps;
+  const faqs = dbBlog ? dbBlog.faqs || [] : staticArticle!.faqs || [];
+  const reviews = dbBlog ? dbBlog.reviews || [] : [];
+  const references = dbBlog ? dbBlog.references || [] : [];
+  const disclaimer = (
+    dbBlog?.disclaimer ||
+    staticArticle?.disclaimer ||
+    "This legal guide is published for educational and estate planning awareness under the Indian Succession Act, 1925. For customized estate planning, consult an advocate on WillDrafting.in."
+  ).replace(/WillDrafting.in/gi, "WillDrafting.in");
+
+  const canonicalUrl = `https://www.willdrafting.in/blogs/${canonicalSlug}`;
+  const imageUrl = imageSrc.startsWith("http")
+    ? imageSrc
+    : `https://www.willdrafting.in${imageSrc.startsWith("/") ? "" : "/"}${imageSrc}`;
 
   const schemaGraph: Record<string, unknown>[] = [
     {
       "@type": "Article",
       "@id": `${canonicalUrl}#article`,
-      "isPartOf": {
+      isPartOf: {
         "@type": "WebPage",
         "@id": canonicalUrl,
       },
-      "headline": article.title,
-      "description": article.metaDescription,
-      "keywords": article.keywords.join(", "),
-      "image": imageUrl,
-      "datePublished": new Date(article.date).toISOString(),
-      "dateModified": new Date(article.date).toISOString(),
-      "mainEntityOfPage": canonicalUrl,
-      "author": {
-        "@type": article.author.includes("Team") ? "Organization" : "Person",
-        "name": article.author,
-        "jobTitle": article.authorRole,
+      headline: title,
+      description: metaDescription,
+      keywords: keywords.join(", "),
+      image: imageUrl,
+      datePublished: new Date(dateStr || Date.now()).toISOString(),
+      dateModified: new Date(dbBlog?.updatedAt || dateStr || Date.now()).toISOString(),
+      mainEntityOfPage: canonicalUrl,
+      author: {
+        "@type": author.includes("Team") || author.includes("Desk") ? "Organization" : "Person",
+        name: author,
+        jobTitle: authorRole,
       },
-      "reviewedBy": {
+      reviewedBy: {
         "@type": "LegalService",
-        "name": "AMA Legal Solutions",
-        "url": "https://www.amalegalsolutions.com",
+        name: "WillDrafting.in Estate Planning Counsel",
+        url: "https://www.willdrafting.in",
       },
-      "publisher": {
+      publisher: {
         "@id": "https://www.willdrafting.in/#organization",
       },
     },
     {
       "@type": "BreadcrumbList",
       "@id": `${canonicalUrl}#breadcrumb`,
-      "itemListElement": [
+      itemListElement: [
         {
           "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://www.willdrafting.in",
+          position: 1,
+          name: "Home",
+          item: "https://www.willdrafting.in",
         },
         {
           "@type": "ListItem",
-          "position": 2,
-          "name": "Blogs & Insights",
-          "item": "https://www.willdrafting.in/blogs",
+          position: 2,
+          name: "Blogs & Insights",
+          item: "https://www.willdrafting.in/blogs",
         },
         {
           "@type": "ListItem",
-          "position": 3,
-          "name": article.title,
-          "item": canonicalUrl,
+          position: 3,
+          name: title,
+          item: canonicalUrl,
         },
       ],
     },
   ];
 
-  if (article.faqs && article.faqs.length > 0) {
+  if (faqs.length > 0) {
     schemaGraph.push({
       "@type": "FAQPage",
       "@id": `${canonicalUrl}#faq`,
-      "mainEntity": article.faqs.map((faq) => ({
+      mainEntity: faqs.map((faq) => ({
         "@type": "Question",
-        "name": faq.question,
-        "acceptedAnswer": {
+        name: faq.question,
+        acceptedAnswer: {
           "@type": "Answer",
-          "text": faq.answer,
+          text: faq.answer,
         },
       })),
     });
@@ -178,7 +301,16 @@ export default async function BlogSlugPage({ params }: PageProps) {
     "@graph": schemaGraph,
   };
 
-  const relatedArticles = getRelatedArticles(article.slug, 3);
+  // const relatedArticles = getRelatedArticles(canonicalSlug, 3);
+  const relatedArticles = await findRelatedMongoBlogs(canonicalSlug, 3);
+
+  const { processedHtml, toc } = dbBlog
+    ? processHtmlAndExtractToc(dbBlog.description || "")
+    : { processedHtml: "", toc: [] };
+
+  const [firstHalfHtml, secondHalfHtml] = dbBlog
+    ? splitHtmlForInfographic(processedHtml)
+    : ["", ""];
 
   return (
     <div className="min-h-screen flex flex-col bg-[#FAF7F0] text-[#172228]">
@@ -189,27 +321,25 @@ export default async function BlogSlugPage({ params }: PageProps) {
       <Navbar />
 
       {/* =========================================================================
-          HERO SECTION: End-to-end from top below navbar with increased height
+          HERO SECTION
           ========================================================================= */}
       <div className="w-full px-3 sm:px-6 lg:px-8 pt-[74px] sm:pt-[78px] lg:pt-[82px] pb-4 sm:pb-6">
         <section className="relative w-full max-w-[1580px] mx-auto overflow-hidden rounded-[2rem] sm:rounded-[2.5rem] border border-[#172228]/10 bg-[#FAF7F0] px-6 sm:px-10 lg:px-14 pt-5 sm:pt-7 lg:pt-8 pb-6 sm:pb-8 lg:pb-10 min-h-[400px] sm:min-h-[450px] lg:min-h-[480px] flex flex-col justify-between shadow-xs">
-          {/* Faded Background Hero Image with Increased Height */}
           <div className="absolute inset-0 pointer-events-none select-none z-0 overflow-hidden">
             <Image
-              src={article.imageSrc}
-              alt={article.title}
+              src={imageSrc}
+              alt={title}
               fill
               priority
+              unoptimized={imageSrc.startsWith("/api/")}
               sizes="100vw"
               className="object-cover object-center opacity-[0.25] saturate-[0.9] contrast-[1.05]"
             />
-            {/* Soft ambient tint to keep typography crisp while letting the illustration shine */}
             <div className="absolute inset-0 bg-gradient-to-r from-[#FAF7F0]/90 via-[#FAF7F0]/70 to-[#FAF7F0]/90" />
             <div className="absolute inset-0 bg-gradient-to-b from-[#FAF7F0]/60 via-transparent to-[#FAF7F0]/80" />
           </div>
 
           <div className="relative z-10 w-full flex-1 flex flex-col justify-between">
-            {/* Top Back Row with horizontal dividing rule */}
             <div className="flex items-center gap-4 mb-6 sm:mb-8">
               <Link
                 href="/blogs"
@@ -221,20 +351,17 @@ export default async function BlogSlugPage({ params }: PageProps) {
               <div className="h-[1px] bg-[#172228]/10 flex-1" />
             </div>
 
-            {/* Hero Grid: Left Heading & Lead, Right Metadata Table */}
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-14 items-center">
-              {/* Left Column: Title & Excerpt */}
               <div className="lg:col-span-8 xl:col-span-8">
                 <h1 className="text-3xl sm:text-4xl lg:text-[3.1rem] font-medium leading-[1.14] tracking-[-0.025em] text-[#111827] mb-6">
-                  {article.title}
+                  {title}
                 </h1>
 
                 <p className="text-base sm:text-lg lg:text-[1.15rem] leading-[1.65] text-[#49585F] font-normal max-w-2xl">
-                  {article.lead}
+                  {lead}
                 </p>
               </div>
 
-              {/* Right Column: Metadata Table */}
               <div className="lg:col-span-4 xl:col-span-4 border-t border-[#172228]/10 lg:border-t-0 pt-6 lg:pt-0">
                 <div className="space-y-0 text-sm">
                   <div className="flex justify-between items-baseline gap-4 py-3.5 border-b border-[#172228]/10">
@@ -242,7 +369,7 @@ export default async function BlogSlugPage({ params }: PageProps) {
                       FILED UNDER
                     </span>
                     <span className="text-[#111827] font-medium text-right text-sm">
-                      {article.category}
+                      {category}
                     </span>
                   </div>
 
@@ -251,7 +378,7 @@ export default async function BlogSlugPage({ params }: PageProps) {
                       PUBLISHED
                     </span>
                     <span className="text-[#111827] font-medium text-right text-sm">
-                      {article.date}
+                      {dateStr}
                     </span>
                   </div>
 
@@ -260,7 +387,7 @@ export default async function BlogSlugPage({ params }: PageProps) {
                       READING TIME
                     </span>
                     <span className="text-[#111827] font-medium text-right text-sm">
-                      {article.readTime}
+                      {readTime}
                     </span>
                   </div>
 
@@ -270,10 +397,10 @@ export default async function BlogSlugPage({ params }: PageProps) {
                     </span>
                     <div className="text-right">
                       <span className="text-[#111827] font-medium text-sm block">
-                        {article.author}
+                        {author}
                       </span>
                       <span className="text-xs text-[#718096]">
-                        {article.authorRole}
+                        {authorRole}
                       </span>
                     </div>
                   </div>
@@ -285,33 +412,47 @@ export default async function BlogSlugPage({ params }: PageProps) {
       </div>
 
       <main className="flex-1 w-full max-w-8xl mx-auto px-5 sm:px-8 lg:px-12 pb-24">
-        {/* =========================================================================
-            EDITORIAL TWO-COLUMN LAYOUT
-            Left: "The Short Version" Box, Sticky Consultation CTA Card & Silo Links
-            Right: Main Article Editorial Content, Tables, Templates & FAQs
-            ========================================================================= */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-start border-b border-[#172228]/10 pb-20 mb-20">
-          {/* ---------------------------------------------------------------------
-              LEFT COLUMN: SIDEBAR (Sticky on Desktop)
-              --------------------------------------------------------------------- */}
+          {/* LEFT COLUMN: STICKY SIDEBAR */}
           <aside className="lg:col-span-4 lg:sticky lg:top-28 space-y-8 order-2 lg:order-1">
-            {/* "The Short Version" Summary Box */}
-            <div className="bg-[#F4EFE6] border border-[#172228]/10 rounded-2xl p-6 sm:p-7 shadow-xs">
-              <h2 className="text-[15px] font-semibold tracking-wide text-[#111827] uppercase mb-4">
-                The short version
-              </h2>
-              <ul className="space-y-3.5">
-                {article.shortVersion.map((point, idx) => (
-                  <li
-                    key={idx}
-                    className="flex items-start gap-3 text-[14px] leading-[1.6] text-[#374151]"
-                  >
-                    <span className="w-1.5 h-1.5 rounded-full bg-[#C65378] mt-2 shrink-0" />
-                    <span>{point}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
+            {shortVersion.length > 0 && (
+              <div className="bg-[#F4EFE6] border border-[#172228]/10 rounded-2xl p-6 sm:p-7 shadow-xs">
+                <h2 className="text-[15px] font-semibold tracking-wide text-[#111827] uppercase mb-4">
+                  The short version
+                </h2>
+                <ul className="space-y-3.5">
+                  {shortVersion.map((point, idx) => (
+                    <li
+                      key={idx}
+                      className="flex items-start gap-3 text-[14px] leading-[1.6] text-[#374151]"
+                    >
+                      <span className="w-1.5 h-1.5 rounded-full bg-[#C65378] mt-2 shrink-0" />
+                      <span>{point}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
+
+            {toc.length > 0 && (
+              <div className="bg-white border border-[#172228]/10 rounded-2xl p-6 shadow-xs">
+                <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-[0.14em] text-[#C65378] mb-3.5">
+                  <BookOpen className="w-3.5 h-3.5" />
+                  <span>In This Guide</span>
+                </div>
+                <nav className="space-y-2">
+                  {toc.map((item) => (
+                    <a
+                      key={item.id}
+                      href={`#${item.id}`}
+                      className="block text-[13.5px] leading-snug text-[#49585F] hover:text-[#C65378] transition-colors py-1"
+                    >
+                      {item.text}
+                    </a>
+                  ))}
+                </nav>
+              </div>
+            )}
 
             {/* Sticky Consultation CTA Card */}
             <div className="bg-white border border-[#172228]/10 rounded-2xl p-6 sm:p-7 shadow-xs">
@@ -328,7 +469,7 @@ export default async function BlogSlugPage({ params }: PageProps) {
               </div>
 
               <p className="text-[14.5px] leading-[1.65] text-[#49585F] mb-5">
-                Draft a legally valid Indian Will reviewed by AMA Legal Solutions advocates, compliant with Section 63, Hindu Succession Act, and Shariat rules.
+                Draft a legally valid Indian Will reviewed by WillDrafting.in estate planning advocates, compliant with Section 63, Hindu Succession Act, and Shariat rules.
               </p>
 
               <div className="space-y-2.5">
@@ -347,10 +488,9 @@ export default async function BlogSlugPage({ params }: PageProps) {
                 </Link>
               </div>
 
-              {/* Contextual Internal Links to Subfolder Silos */}
               <div className="mt-6 pt-5 border-t border-[#172228]/10 space-y-2.5 text-xs">
                 <span className="text-[10px] font-bold uppercase tracking-[0.16em] text-[#6B7280] block">
-                  Explore Services & Tools
+                  Explore Services &amp; Tools
                 </span>
                 <Link
                   href="/services"
@@ -363,7 +503,7 @@ export default async function BlogSlugPage({ params }: PageProps) {
                   href="/services/nri-will-india"
                   className="flex items-center justify-between text-[#172228] hover:text-[#C65378] font-medium py-1 transition-colors"
                 >
-                  <span>NRI & OCI Indian Will Service</span>
+                  <span>NRI &amp; OCI Indian Will Service</span>
                   <ArrowUpRight className="w-3.5 h-3.5" />
                 </Link>
                 <Link
@@ -384,119 +524,152 @@ export default async function BlogSlugPage({ params }: PageProps) {
             </div>
           </aside>
 
-          {/* ---------------------------------------------------------------------
-              RIGHT COLUMN: MAIN ARTICLE EDITORIAL CONTENT
-              --------------------------------------------------------------------- */}
+          {/* RIGHT COLUMN: MAIN ARTICLE EDITORIAL CONTENT */}
           <article className="lg:col-span-8 order-1 lg:order-2 space-y-10 sm:space-y-12">
-            {article.sections.map((section, idx) => (
-              <section key={idx} className="space-y-5">
-                {/* Section Subhead */}
-                <h2 className="text-2xl sm:text-[1.85rem] font-medium leading-[1.28] tracking-[-0.02em] text-[#111827]">
-                  {section.heading}
-                </h2>
+            {dbBlog ? (
+              <div className="wd-dynamic-article-body space-y-8">
+                <div
+                  className="wd-article-html"
+                  dangerouslySetInnerHTML={{ __html: firstHalfHtml }}
+                />
 
-                {/* Section Paragraphs */}
-                <div className="space-y-4 text-[16.5px] sm:text-[17px] leading-[1.8] text-[#374151] font-normal">
-                  {section.paragraphs.map((p, pIdx) => (
-                    <p key={pIdx}>{p}</p>
-                  ))}
-                </div>
-
-                {/* Optional Callout / Pull Quote */}
-                {section.calloutQuote && (
-                  <blockquote className="my-7 p-6 sm:p-7 rounded-xl bg-[#F4EFE6]/80 border-l-4 border-[#C65378] text-[#172228] text-[16.5px] sm:text-[17.5px] italic leading-[1.7]">
-                    <p>&ldquo;{section.calloutQuote}&rdquo;</p>
-                  </blockquote>
+                {/* Mid-Article Topic Infographic Card (Base64 served from MongoDB) */}
+                {infographicSrc && (
+                  <figure className="my-10 rounded-2xl border border-[#172228]/12 bg-white p-5 sm:p-7 shadow-xs">
+                    <div className="flex items-center justify-between mb-4">
+                      <span className="text-[11px] font-bold uppercase tracking-[0.16em] text-[#C65378]">
+                        Visual Statutory Guide &amp; Summary
+                      </span>
+                      <span className="text-xs text-[#6B7280]">WillDrafting.in Legal Infographic</span>
+                    </div>
+                    <div className="relative w-full overflow-hidden rounded-xl bg-[#FAF7F0] border border-[#172228]/8">
+                      {/* eslint-disable-next-line @next/next/no-img-element */}
+                      <img
+                        src={infographicSrc}
+                        alt={`${title} - Statutory Infographic`}
+                        className="w-full h-auto object-contain mx-auto max-h-[680px]"
+                      />
+                    </div>
+                  </figure>
                 )}
-              </section>
-            ))}
 
-            {/* Optional Structured Statutory Comparison Table */}
-            {article.tableData && (
-              <section className="space-y-4 pt-2">
-                <h2 className="text-2xl sm:text-[1.75rem] font-medium leading-[1.28] tracking-[-0.02em] text-[#111827]">
-                  {article.tableData.heading}
-                </h2>
-                <p className="text-sm text-[#6B7280]">
-                  {article.tableData.caption}
-                </p>
-                <div className="overflow-x-auto rounded-2xl border border-[#172228]/15 bg-white shadow-xs">
-                  <table className="w-full text-left border-collapse">
-                    <thead>
-                      <tr className="bg-[#172228] text-white text-xs uppercase tracking-[0.12em]">
-                        {article.tableData.headers.map((header, hIdx) => (
-                          <th
-                            key={hIdx}
-                            className="py-4 px-5 font-semibold border-r border-white/10 last:border-r-0"
-                          >
-                            {header}
-                          </th>
-                        ))}
-                      </tr>
-                    </thead>
-                    <tbody className="divide-y divide-[#172228]/10 text-[14.5px] leading-relaxed text-[#374151]">
-                      {article.tableData.rows.map((row, rIdx) => (
-                        <tr
-                          key={rIdx}
-                          className={rIdx % 2 === 1 ? "bg-[#FAF7F0]/70" : "bg-white"}
-                        >
-                          {row.map((cell, cIdx) => (
-                            <td
-                              key={cIdx}
-                              className={`py-4 px-5 align-top border-r border-[#172228]/10 last:border-r-0 ${
-                                cIdx === 0 ? "font-semibold text-[#111827]" : ""
-                              }`}
-                            >
-                              {cell}
-                            </td>
-                          ))}
-                        </tr>
-                      ))}
-                    </tbody>
-                  </table>
-                </div>
-              </section>
-            )}
-
-            {/* Optional Copy-Paste Statutory Template / Certificate Box */}
-            {article.templateBox && (
-              <section className="rounded-2xl border-2 border-[#C65378]/30 bg-white p-6 sm:p-8 shadow-xs space-y-4">
-                <div className="flex items-start gap-3">
-                  <FileText className="w-6 h-6 text-[#C65378] shrink-0 mt-1" />
-                  <div>
-                    <h2 className="text-xl sm:text-2xl font-medium tracking-tight text-[#111827]">
-                      {article.templateBox.heading}
+                {secondHalfHtml && (
+                  <div
+                    className="wd-article-html"
+                    dangerouslySetInnerHTML={{ __html: secondHalfHtml }}
+                  />
+                )}
+              </div>
+            ) : (
+              <>
+                {staticArticle!.sections.map((section, idx) => (
+                  <section key={idx} className="space-y-5">
+                    <h2 className="text-2xl sm:text-[1.85rem] font-medium leading-[1.28] tracking-[-0.02em] text-[#111827]">
+                      {section.heading}
                     </h2>
-                    <p className="text-sm text-[#6B7280] mt-1">
-                      {article.templateBox.subtitle}
+
+                    <div className="space-y-4 text-[16.5px] sm:text-[17px] leading-[1.8] text-[#374151] font-normal">
+                      {section.paragraphs.map((p, pIdx) => (
+                        <p key={pIdx}>{p}</p>
+                      ))}
+                    </div>
+
+                    {section.calloutQuote && (
+                      <blockquote className="my-7 p-6 sm:p-7 rounded-xl bg-[#F4EFE6]/80 border-l-4 border-[#C65378] text-[#172228] text-[16.5px] sm:text-[17.5px] italic leading-[1.7]">
+                        <p>&ldquo;{section.calloutQuote}&rdquo;</p>
+                      </blockquote>
+                    )}
+                  </section>
+                ))}
+
+                {staticArticle!.tableData && (
+                  <section className="space-y-4 pt-2">
+                    <h2 className="text-2xl sm:text-[1.75rem] font-medium leading-[1.28] tracking-[-0.02em] text-[#111827]">
+                      {staticArticle!.tableData.heading}
+                    </h2>
+                    <p className="text-sm text-[#6B7280]">
+                      {staticArticle!.tableData.caption}
                     </p>
-                  </div>
-                </div>
-                <pre className="whitespace-pre-wrap font-mono text-[13px] sm:text-[13.5px] leading-[1.7] text-[#172228] bg-[#FAF7F0] border border-[#172228]/15 rounded-xl p-5 sm:p-6 overflow-x-auto">
-                  {article.templateBox.content}
-                </pre>
-              </section>
+                    <div className="overflow-x-auto rounded-2xl border border-[#172228]/15 bg-white shadow-xs">
+                      <table className="w-full text-left border-collapse">
+                        <thead>
+                          <tr className="bg-[#172228] text-white text-xs uppercase tracking-[0.12em]">
+                            {staticArticle!.tableData.headers.map((header, hIdx) => (
+                              <th
+                                key={hIdx}
+                                className="py-4 px-5 font-semibold border-r border-white/10 last:border-r-0"
+                              >
+                                {header}
+                              </th>
+                            ))}
+                          </tr>
+                        </thead>
+                        <tbody className="divide-y divide-[#172228]/10 text-[14.5px] leading-relaxed text-[#374151]">
+                          {staticArticle!.tableData.rows.map((row, rIdx) => (
+                            <tr
+                              key={rIdx}
+                              className={rIdx % 2 === 1 ? "bg-[#FAF7F0]/70" : "bg-white"}
+                            >
+                              {row.map((cell, cIdx) => (
+                                <td
+                                  key={cIdx}
+                                  className={`py-4 px-5 align-top border-r border-[#172228]/10 last:border-r-0 ${
+                                    cIdx === 0 ? "font-semibold text-[#111827]" : ""
+                                  }`}
+                                >
+                                  {cell}
+                                </td>
+                              ))}
+                            </tr>
+                          ))}
+                        </tbody>
+                      </table>
+                    </div>
+                  </section>
+                )}
+
+                {staticArticle!.templateBox && (
+                  <section className="rounded-2xl border-2 border-[#C65378]/30 bg-white p-6 sm:p-8 shadow-xs space-y-4">
+                    <div className="flex items-start gap-3">
+                      <FileText className="w-6 h-6 text-[#C65378] shrink-0 mt-1" />
+                      <div>
+                        <h2 className="text-xl sm:text-2xl font-medium tracking-tight text-[#111827]">
+                          {staticArticle!.templateBox.heading}
+                        </h2>
+                        <p className="text-sm text-[#6B7280] mt-1">
+                          {staticArticle!.templateBox.subtitle}
+                        </p>
+                      </div>
+                    </div>
+                    <pre className="whitespace-pre-wrap font-mono text-[13px] sm:text-[13.5px] leading-[1.7] text-[#172228] bg-[#FAF7F0] border border-[#172228]/15 rounded-xl p-5 sm:p-6 overflow-x-auto">
+                      {staticArticle!.templateBox.content}
+                    </pre>
+                  </section>
+                )}
+              </>
             )}
 
             {/* "What to do next" Action Steps Card */}
-            <div className="bg-[#FAF7F0] border border-[#172228]/15 rounded-2xl p-7 sm:p-9 mt-12 shadow-xs">
-              <h2 className="text-xl sm:text-2xl font-medium tracking-tight text-[#111827] mb-5">
-                What to do next
-              </h2>
-              <div className="space-y-4">
-                {article.actionSteps.map((step, sIdx) => (
-                  <div key={sIdx} className="flex items-start gap-3.5">
-                    <CheckCircle2 className="w-5 h-5 text-[#C65378] shrink-0 mt-0.5" />
-                    <p className="text-[15.5px] leading-relaxed text-[#374151]">
-                      {step}
-                    </p>
-                  </div>
-                ))}
+            {actionSteps.length > 0 && (
+              <div className="bg-[#FAF7F0] border border-[#172228]/15 rounded-2xl p-7 sm:p-9 mt-12 shadow-xs">
+                <h2 className="text-xl sm:text-2xl font-medium tracking-tight text-[#111827] mb-5">
+                  What to do next
+                </h2>
+                <div className="space-y-4">
+                  {actionSteps.map((step, sIdx) => (
+                    <div key={sIdx} className="flex items-start gap-3.5">
+                      <CheckCircle2 className="w-5 h-5 text-[#C65378] shrink-0 mt-0.5" />
+                      <p className="text-[15.5px] leading-relaxed text-[#374151]">
+                        {step}
+                      </p>
+                    </div>
+                  ))}
+                </div>
               </div>
-            </div>
+            )}
 
-            {/* Optional Frequently Asked Statutory Questions (FAQPage Schema Backed) */}
-            {article.faqs && article.faqs.length > 0 && (
+            {/* Frequently Asked Statutory Questions */}
+            {faqs.length > 0 && (
               <section className="space-y-5 pt-4">
                 <div className="flex items-center gap-2.5">
                   <ShieldCheck className="w-5 h-5 text-[#C65378]" />
@@ -505,7 +678,7 @@ export default async function BlogSlugPage({ params }: PageProps) {
                   </h2>
                 </div>
                 <div className="space-y-4">
-                  {article.faqs.map((faq, fIdx) => (
+                  {faqs.map((faq, fIdx) => (
                     <div
                       key={fIdx}
                       className="rounded-2xl border border-[#172228]/10 bg-white p-6 shadow-xs"
@@ -522,17 +695,77 @@ export default async function BlogSlugPage({ params }: PageProps) {
               </section>
             )}
 
+            {/* Client Reviews (if present) */}
+            {reviews.length > 0 && (
+              <section className="space-y-5 pt-4">
+                <h2 className="text-2xl sm:text-[1.75rem] font-medium tracking-tight text-[#111827]">
+                  Verified WillDrafting.in Client Experiences
+                </h2>
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+                  {reviews.map((rev, rIdx) => (
+                    <div
+                      key={rIdx}
+                      className="rounded-2xl border border-[#172228]/10 bg-white p-5 shadow-xs flex flex-col justify-between"
+                    >
+                      <div>
+                        <div className="flex items-center gap-1 text-amber-400 mb-3">
+                          {[...Array(rev.rating || 5)].map((_, s) => (
+                            <Star key={s} className="w-3.5 h-3.5 fill-amber-400" />
+                          ))}
+                        </div>
+                        <p className="text-sm leading-relaxed text-[#374151] mb-4">
+                          &ldquo;{rev.review}&rdquo;
+                        </p>
+                      </div>
+                      <div className="text-xs font-semibold text-[#111827] pt-3 border-t border-[#172228]/8">
+                        {rev.name}
+                        {rev.location ? (
+                          <span className="text-[#6B7280] font-normal"> · {rev.location}</span>
+                        ) : null}
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </section>
+            )}
+
+            {/* Statutory References (if present) */}
+            {references.length > 0 && (
+              <section className="rounded-2xl border border-[#172228]/10 bg-white p-6 space-y-3">
+                <h3 className="text-sm font-bold uppercase tracking-[0.14em] text-[#172228]">
+                  Statutory &amp; Judicial References
+                </h3>
+                <ul className="space-y-2 text-sm">
+                  {references.map((ref, idx) => (
+                    <li key={idx} className="flex items-center gap-2 text-[#49585F]">
+                      <ExternalLink className="w-3.5 h-3.5 text-[#C65378] shrink-0" />
+                      {ref.url ? (
+                        <a
+                          href={ref.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="hover:text-[#C65378] underline"
+                        >
+                          {ref.title}
+                        </a>
+                      ) : (
+                        <span>{ref.title}</span>
+                      )}
+                    </li>
+                  ))}
+                </ul>
+              </section>
+            )}
+
             {/* Legal Disclaimer Box */}
             <div className="p-6 rounded-xl bg-neutral-100/70 border border-[#172228]/5 text-xs sm:text-[13px] leading-relaxed text-[#6B7280]">
               <span className="font-semibold text-[#374151]">Notice: </span>
-              {article.disclaimer}
+              {disclaimer}
             </div>
           </article>
         </div>
 
-        {/* =========================================================================
-            BOTTOM SECTION: MORE FROM THE JOURNAL / RELATED ARTICLES
-            ========================================================================= */}
+        {/* BOTTOM SECTION: MORE FROM THE JOURNAL */}
         <section className="pt-4">
           <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-10 sm:mb-12">
             <div>
@@ -561,7 +794,6 @@ export default async function BlogSlugPage({ params }: PageProps) {
               >
                 <div>
                   <Link href={`/blogs/${rel.slug}`} className="block">
-                    {/* Image Banner */}
                     <div className="relative w-full aspect-[16/10] rounded-xl overflow-hidden mb-6 bg-neutral-200 border border-[#172228]/5 shadow-xs">
                       <Image
                         src={rel.imageSrc}
@@ -573,26 +805,20 @@ export default async function BlogSlugPage({ params }: PageProps) {
                     </div>
                   </Link>
 
-                  {/* Category & Read Time */}
                   <div className="flex items-center justify-between text-[11px] font-bold tracking-[0.14em] uppercase text-[#6B7280] mb-3">
                     <span>{rel.category}</span>
                     <span>{rel.readTime}</span>
                   </div>
 
-                  {/* Article Title */}
                   <h3 className="text-[1.2rem] sm:text-[1.3rem] font-medium leading-[1.3] text-[#111827] mb-3 group-hover:text-[#C65378] transition-colors">
-                    <Link href={`/blogs/${rel.slug}`}>
-                      {rel.title}
-                    </Link>
+                    <Link href={`/blogs/${rel.slug}`}>{rel.title}</Link>
                   </h3>
 
-                  {/* Excerpt */}
                   <p className="text-[14px] text-[#4B5563] leading-relaxed mb-6 line-clamp-3">
                     {rel.lead}
                   </p>
                 </div>
 
-                {/* Bottom Row */}
                 <div className="flex items-center justify-between pt-4 border-t border-[#172228]/10 mt-auto">
                   <span className="text-[13px] text-[#718096] font-normal">
                     {rel.date}
@@ -610,6 +836,117 @@ export default async function BlogSlugPage({ params }: PageProps) {
           </div>
         </section>
       </main>
+
+      <style>{`
+        .wd-article-html h2 {
+          font-size: 1.75rem;
+          font-weight: 500;
+          line-height: 1.28;
+          letter-spacing: -0.02em;
+          color: #111827;
+          margin-top: 2.4rem;
+          margin-bottom: 1rem;
+          scroll-margin-top: 7rem;
+        }
+        .wd-article-html h3 {
+          font-size: 1.28rem;
+          font-weight: 600;
+          color: #172228;
+          margin-top: 1.8rem;
+          margin-bottom: 0.75rem;
+        }
+        .wd-article-html p {
+          font-size: 1.05rem;
+          line-height: 1.8;
+          color: #374151;
+          margin-bottom: 1.15rem;
+        }
+        .wd-article-html ul,
+        .wd-article-html ol {
+          margin: 0.85rem 0 1.35rem 1.5rem;
+          color: #374151;
+          line-height: 1.75;
+        }
+        .wd-article-html li {
+          margin-bottom: 0.45rem;
+        }
+        .wd-article-html blockquote {
+          margin: 1.75rem 0;
+          padding: 1.35rem 1.6rem;
+          border-radius: 0.85rem;
+          background: rgba(244, 239, 230, 0.85);
+          border-left: 4px solid #c65378;
+          color: #172228;
+          font-style: italic;
+        }
+        .wd-article-html a {
+          color: #c65378;
+          font-weight: 600;
+          text-decoration: underline;
+          text-underline-offset: 3px;
+        }
+        .wd-blog-table-wrap {
+          overflow-x: auto;
+          border-radius: 1rem;
+          border: 1px solid rgba(23, 34, 40, 0.15);
+          background: #ffffff;
+          margin: 1.75rem 0;
+        }
+        .wd-blog-table-wrap table {
+          width: 100%;
+          border-collapse: collapse;
+          text-align: left;
+          font-size: 0.92rem;
+        }
+        .wd-blog-table-wrap th {
+          background: #172228;
+          color: #ffffff;
+          font-size: 0.75rem;
+          text-transform: uppercase;
+          letter-spacing: 0.1em;
+          padding: 0.9rem 1.1rem;
+          border-right: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .wd-blog-table-wrap td {
+          padding: 0.9rem 1.1rem;
+          border-top: 1px solid rgba(23, 34, 40, 0.1);
+          border-right: 1px solid rgba(23, 34, 40, 0.08);
+          color: #374151;
+          vertical-align: top;
+        }
+        .wd-popular-searches-box {
+          margin-top: 2.5rem;
+          padding: 1.5rem;
+          border-radius: 1rem;
+          background: #f4efe6;
+          border: 1px solid rgba(23, 34, 40, 0.1);
+        }
+        .wd-popular-searches-box h3 {
+          font-size: 0.82rem;
+          font-weight: 700;
+          text-transform: uppercase;
+          letter-spacing: 0.12em;
+          color: #172228;
+          margin: 0 0 0.85rem 0;
+        }
+        .wd-popular-searches-pills {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 0.5rem;
+          list-style: none;
+          margin: 0 !important;
+          padding: 0;
+        }
+        .wd-popular-searches-pills li {
+          background: #ffffff;
+          border: 1px solid rgba(23, 34, 40, 0.12);
+          border-radius: 999px;
+          padding: 0.3rem 0.8rem;
+          font-size: 0.78rem;
+          color: #49585F;
+          margin: 0 !important;
+        }
+      `}</style>
 
       <Footer />
     </div>

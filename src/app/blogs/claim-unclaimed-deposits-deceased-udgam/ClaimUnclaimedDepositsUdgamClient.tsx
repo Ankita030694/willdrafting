@@ -1212,14 +1212,14 @@ export default function ClaimUnclaimedDepositsUdgamClient() {
                 </div>
               </div>
               <p className="text-xs text-slate-600 leading-relaxed">
-                Bar Council enrolled advocate with 18+ years of expertise in testamentary litigation, bank claim dispute settlements, and probate matters at AMA Legal Solutions.
+                Bar Council enrolled advocate with 18+ years of expertise in testamentary litigation, bank claim dispute settlements, and probate matters at WillDrafting.in.
               </p>
               <div className="pt-2 border-t border-slate-100 flex items-center justify-between text-[11px] text-slate-500">
                 <span className="flex items-center gap-1">
                   <ShieldCheck className="w-3.5 h-3.5 text-[#5F7E75]" />
                   <span>Verified Legal Review</span>
                 </span>
-                <span className="font-semibold text-slate-700">AMA Legal</span>
+                <span className="font-semibold text-slate-700">WillDrafting.in</span>
               </div>
             </div>
 

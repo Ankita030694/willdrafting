@@ -54,7 +54,7 @@ const TOC_ITEMS = [
   { id: "relinquishment-deed", label: "8. Relinquishment Deed: Giving Up or Consolidating Shares" },
   { id: "complex-scenarios", label: "9. Handling Complex Scenarios: Disputes, NRIs & Minors" },
   { id: "avoid-with-a-will", label: "10. How Writing a Will Eliminates Succession Hardships" },
-  { id: "legal-services", label: "11. Professional Legal Support from AMA Legal Solutions" },
+  { id: "legal-services", label: "11. Professional Legal Support from WillDrafting.in" },
   { id: "frequently-asked-questions", label: "12. Frequently Asked Questions on Property Succession" },
   { id: "statutory-citations", label: "13. Relevant Laws, Statutory Sections & Court Rulings" },
 ];
@@ -1209,13 +1209,13 @@ export default function PropertyTransferAfterDeathClient() {
             <section id="legal-services" className="scroll-target space-y-4">
               <div className="flex items-center gap-2 text-xs font-black uppercase tracking-wider text-[#C65378]">
                 <Award className="w-4 h-4" />
-                <span>ASSISTANCE FROM AMA LEGAL SOLUTIONS</span>
+                <span>ASSISTANCE FROM WillDrafting.in</span>
               </div>
               <h2 className="text-xl sm:text-2xl font-extrabold text-slate-900 leading-snug">
-                11. Professional Legal Support from AMA Legal Solutions
+                11. Professional Legal Support from WillDrafting.in
               </h2>
               <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
-                If your family is currently dealing with the aftermath of an intestate demise, navigating municipal offices and drafting registered deeds can feel overwhelming. The experienced property advocates at AMA Legal Solutions provide end-to-end representation:
+                If your family is currently dealing with the aftermath of an intestate demise, navigating municipal offices and drafting registered deeds can feel overwhelming. The experienced property advocates at WillDrafting.in provide end-to-end representation:
               </p>
 
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
@@ -1370,14 +1370,14 @@ export default function PropertyTransferAfterDeathClient() {
                 </div>
               </div>
               <p className="text-xs text-slate-600 leading-relaxed">
-                Bar Council enrolled advocate with 18+ years of expertise in testamentary litigation, intestate estate disputes, and high-value property partitions at AMA Legal Solutions.
+                Bar Council enrolled advocate with 18+ years of expertise in testamentary litigation, intestate estate disputes, and high-value property partitions at WillDrafting.in.
               </p>
               <div className="pt-2 border-t border-slate-100 flex items-center justify-between text-[11px] text-slate-500">
                 <span className="flex items-center gap-1">
                   <ShieldCheck className="w-3.5 h-3.5 text-[#5F7E75]" />
                   <span>Verified Legal Review</span>
                 </span>
-                <span className="font-semibold text-slate-700">AMA Legal</span>
+                <span className="font-semibold text-slate-700">WillDrafting.in</span>
               </div>
             </div>
 
@@ -1481,7 +1481,7 @@ export default function PropertyTransferAfterDeathClient() {
                 >
                   <div className="font-bold text-xs text-slate-900">Succession Certificate Service</div>
                   <div className="text-[10px] text-slate-500 mt-0.5">
-                    Civil court representation by AMA advocates &rarr;
+                    Civil court representation by WillDrafting.in advocates &rarr;
                   </div>
                 </Link>
               </div>

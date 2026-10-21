@@ -1,9 +1,12 @@
 import type { Collection, Db } from "mongodb";
 import { connectToDatabase } from "@/lib/mongodb";
 import type {
+  BlogDoc,
+  BlogImageDoc,
   FunnelEventDoc,
   LeadDoc,
   OrderDoc,
+  PromptProfileDoc,
   UserDoc,
   WillDoc,
 } from "@/lib/db/types";
@@ -16,7 +19,7 @@ declare global {
 }
 
 /** Bump whenever an index is added/changed so a long-running dev server re-applies the list. */
-const INDEX_SIGNATURE = "2026-10-13-guest-wills-ttl-v3";
+const INDEX_SIGNATURE = "2026-10-21-blogs-images-prompts-v4";
 
 /**
  * Partial unique indexes: legacy / stub documents hold "" for email or phone, which must not
@@ -96,6 +99,22 @@ async function createIndexes(db: Db): Promise<void> {
       label: "rate_limits TTL",
       run: () => db.collection("rate_limits").createIndex({ expiresAt: 1 }, { expireAfterSeconds: 0 }),
     },
+    {
+      label: "blogs.slug unique",
+      run: () => db.collection("blogs").createIndex({ slug: 1 }, { unique: true }),
+    },
+    {
+      label: "blogs.status+createdAt",
+      run: () => db.collection("blogs").createIndex({ status: 1, createdAt: -1 }),
+    },
+    {
+      label: "blog_images.createdAt",
+      run: () => db.collection("blog_images").createIndex({ createdAt: -1 }),
+    },
+    {
+      label: "prompts.isDefault+createdAt",
+      run: () => db.collection("prompts").createIndex({ isDefault: -1, createdAt: -1 }),
+    },
   ];
 
   // One failing index (e.g. pre-existing duplicate data) must not take the whole API down.
@@ -137,3 +156,13 @@ export async function funnelEventsCol(): Promise<Collection<FunnelEventDoc>> {
 export async function willsCol(): Promise<Collection<WillDoc>> {
   return (await getDb()).collection<WillDoc>("wills");
 }
+export async function blogsCol(): Promise<Collection<BlogDoc>> {
+  return (await getDb()).collection<BlogDoc>("blogs");
+}
+export async function blogImagesCol(): Promise<Collection<BlogImageDoc>> {
+  return (await getDb()).collection<BlogImageDoc>("blog_images");
+}
+export async function promptsCol(): Promise<Collection<PromptProfileDoc>> {
+  return (await getDb()).collection<PromptProfileDoc>("prompts");
+}
+

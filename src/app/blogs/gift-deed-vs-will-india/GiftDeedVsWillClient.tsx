@@ -74,7 +74,7 @@ PROPERTY TRANSFER DECISION CHECKLIST: GIFT DEED VS WILL (INDIA)
 Statutory Authorities: Transfer of Property Act 1882 (ss. 122-123)
 Indian Succession Act 1925 (ss. 59, 63) | Income Tax Act 1961 (s. 56(2)(x))
 Maintenance and Welfare of Parents and Senior Citizens Act 2007 (s. 23)
-Prepared by WillDrafting.in - Powered by AMA Legal Solutions
+Prepared by WillDrafting.in
 ================================================================================
 
 PHASE 1: OWNER CONTROL & RESIDENTIAL SECURITY EVALUATION
@@ -105,7 +105,7 @@ PHASE 4: DOCUMENT EXECUTION & ATTESTATION DUE DILIGENCE
 ================================================================================
 CRITICAL LEGAL REMINDER: An unregistered Gift Deed of immovable property carries zero legal validity.
 A Will executed on plain paper with two witnesses is 100% valid under Section 63 of the Indian Succession Act.
-For expert property advocate assistance, visit WillDrafting.in or call AMA Legal Solutions.`;
+For expert property advocate assistance, visit WillDrafting.in or call WillDrafting.in.`;
 
 interface ComparisonRow {
   parameter: string;
@@ -1472,7 +1472,7 @@ export default function GiftDeedVsWillClient() {
                   <p className="text-[11px] font-bold text-[#C65378] uppercase tracking-wider">
                     Senior Succession Counsel
                   </p>
-                  <p className="text-[11px] text-slate-500">AMA Legal Solutions</p>
+                  <p className="text-[11px] text-slate-500">WillDrafting.in</p>
                 </div>
               </div>
               <p className="text-xs text-slate-600 leading-relaxed">

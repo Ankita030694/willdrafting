@@ -8,10 +8,13 @@ import CTA from "@/components/cta";
 import Footer from "@/components/Footer";
 import { ArrowUpRight } from "lucide-react";
 import { BLOG_ARTICLES } from "@/data/blogs";
+import { blogsCol } from "@/lib/db/collections";
+
+export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Indian Succession Law & Will Drafting Guides | WillDrafting",
+    absolute: "Indian Succession Law & Will Drafting Guides | WillDrafting.in",
   },
   description:
     "Authoritative guides on Indian succession law, Section 63 Will rules, Hindu Succession Act, Muslim Wasiyat, NRI estate planning, and Sub-Registrar fees.",
@@ -25,13 +28,13 @@ export const metadata: Metadata = {
     "probate of will in india 2025 amendment",
     "will registration rules india",
     "muslim will wasiyat 1/3 rule guide",
-    "estate planning blog india ama legal solutions",
+    "estate planning blog india willdrafting.in",
   ],
   alternates: {
     canonical: "https://www.willdrafting.in/blogs",
   },
   openGraph: {
-    title: "Indian Succession Law & Will Drafting Guides | WillDrafting",
+    title: "Indian Succession Law & Will Drafting Guides | WillDrafting.in",
     description:
       "Authoritative guides on Indian succession law, Section 63 Will rules, Hindu Succession Act, Muslim Wasiyat, NRI estate planning, and Sub-Registrar fees.",
     url: "https://www.willdrafting.in/blogs",
@@ -69,39 +72,99 @@ const BLOGS_SCHEMA = {
     {
       "@type": "CollectionPage",
       "@id": "https://www.willdrafting.in/blogs#webpage",
-      "url": "https://www.willdrafting.in/blogs",
-      "name": "Indian Succession Law Guides & Will Drafting Rules Blog | WillDrafting.in",
-      "description":
+      url: "https://www.willdrafting.in/blogs",
+      name: "Indian Succession Law Guides & Will Drafting Rules Blog | WillDrafting.in",
+      description:
         "Authoritative guides on Indian succession law, Will drafting rules under the Indian Succession Act 1925, Hindu Succession Act 1956, Muslim Wasiyat, NRI estate planning & probate.",
-      "publisher": {
+      publisher: {
         "@id": "https://www.willdrafting.in/#organization",
       },
-      "breadcrumb": {
+      breadcrumb: {
         "@id": "https://www.willdrafting.in/blogs#breadcrumb",
       },
     },
     {
       "@type": "BreadcrumbList",
       "@id": "https://www.willdrafting.in/blogs#breadcrumb",
-      "itemListElement": [
+      itemListElement: [
         {
           "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://www.willdrafting.in",
+          position: 1,
+          name: "Home",
+          item: "https://www.willdrafting.in",
         },
         {
           "@type": "ListItem",
-          "position": 2,
-          "name": "Blogs & Insights",
-          "item": "https://www.willdrafting.in/blogs",
+          position: 2,
+          name: "Blogs & Insights",
+          item: "https://www.willdrafting.in/blogs",
         },
       ],
     },
   ],
 };
 
-export default function BlogsPage() {
+interface UnifiedBlogCard {
+  id: string;
+  slug: string;
+  title: string;
+  lead: string;
+  category: string;
+  readTime: string;
+  date: string;
+  imageSrc: string;
+}
+
+export default async function BlogsPage() {
+  const unifiedCards: UnifiedBlogCard[] = [];
+  const seenSlugs = new Set<string>();
+
+  try {
+    const col = await blogsCol();
+    const dbBlogs = await col
+      .find({ status: "PUBLISHED" })
+      .sort({ createdAt: -1 })
+      .toArray();
+
+    for (const b of dbBlogs) {
+      if (!b.slug) continue;
+      seenSlugs.add(b.slug.toLowerCase());
+      unifiedCards.push({
+        id: b._id.toString(),
+        slug: b.slug,
+        title: b.title,
+        lead: b.subtitle || b.metaDescription || "",
+        category: b.category || "Indian Succession Law",
+        readTime: b.readTime || "10 min",
+        date: b.date || new Date(b.createdAt).toLocaleDateString("en-US", {
+          month: "long",
+          day: "numeric",
+          year: "numeric",
+        }),
+        imageSrc: b.image || "/desktopusp.jpg",
+      });
+    }
+  } catch (error) {
+    console.warn("Could not load dynamic blogs from MongoDB on /blogs:", error);
+  }
+
+  /* Hardcoded BLOG_ARTICLES loop commented out — blogs are rendered directly from MongoDB:
+  for (const staticArticle of BLOG_ARTICLES) {
+    if (seenSlugs.has(staticArticle.slug.toLowerCase())) continue;
+    seenSlugs.add(staticArticle.slug.toLowerCase());
+    unifiedCards.push({
+      id: staticArticle.id,
+      slug: staticArticle.slug,
+      title: staticArticle.title,
+      lead: staticArticle.lead,
+      category: staticArticle.category,
+      readTime: staticArticle.readTime,
+      date: staticArticle.date,
+      imageSrc: staticArticle.imageSrc,
+    });
+  }
+  */
+
   return (
     <div className="min-h-screen flex flex-col bg-[#FAF7F0] text-[#172228]">
       <script
@@ -116,7 +179,7 @@ export default function BlogsPage() {
             ========================================================================= */}
         <div className="flex flex-col items-center text-center max-w-3xl mx-auto mb-14 sm:mb-20">
           <div className="inline-flex items-center text-[#C65378] text-[0.75rem] font-bold tracking-[0.16em] uppercase mb-4 sm:mb-5">
-            <span>Indian Succession Law Guides · AMA Legal Solutions</span>
+            <span>Indian Succession Law Guides · WillDrafting.in Editorial Counsel</span>
           </div>
 
           <h1 className="text-[2rem] sm:text-[2.2rem] lg:text-[3.4rem] font-medium leading-[1.12] tracking-[-0.025em] text-[#111827] mb-4 sm:mb-5">
@@ -124,7 +187,13 @@ export default function BlogsPage() {
           </h1>
 
           <p className="text-[1.05rem] sm:text-[1.15rem] leading-[1.65] text-[#55636D] font-normal max-w-2xl mx-auto">
-            Authoritative <span className="font-bold">Indian succession law guides and Will drafting rules</span> under the Indian Succession Act, 1925, Hindu Succession Act, 1956, Muslim Personal Law (Wasiyat), and FEMA, written by estate planning advocates for Resident Indians and NRIs.
+            Authoritative{" "}
+            <span className="font-bold">
+              Indian succession law guides and Will drafting rules
+            </span>{" "}
+            under the Indian Succession Act, 1925, Hindu Succession Act, 1956,
+            Muslim Personal Law (Wasiyat), and FEMA, written by WillDrafting.in
+            estate planning advocates for Resident Indians and NRIs.
           </p>
         </div>
 
@@ -132,7 +201,7 @@ export default function BlogsPage() {
             CARDS GRID
             ========================================================================= */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-10">
-          {BLOG_ARTICLES.map((article) => (
+          {unifiedCards.map((article) => (
             <article
               key={article.id}
               className="flex flex-col justify-between group cursor-pointer"
@@ -144,6 +213,7 @@ export default function BlogsPage() {
                       src={article.imageSrc}
                       alt={article.title}
                       fill
+                      unoptimized={article.imageSrc.startsWith("/api/")}
                       sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                       className="object-cover object-center group-hover:scale-105 transition-transform duration-500 ease-out"
                     />

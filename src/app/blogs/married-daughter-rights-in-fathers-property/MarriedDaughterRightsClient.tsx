@@ -64,7 +64,7 @@ const PRINTABLE_CHECKLIST_TEXT = `==============================================
 MARRIED DAUGHTER PROPERTY RIGHTS LEGAL PROTOCOL (INDIA)
 Statutory Authority: Hindu Succession Act, 1956 (Sections 6, 8, 14, 30)
 Supreme Court Authority: Vineeta Sharma v. Rakesh Sharma (2020) 9 SCC 1
-Prepared by WillDrafting.in - Powered by AMA Legal Solutions
+Prepared by WillDrafting.in
 ================================================================================
 
 PHASE 1: TITLE & PROPERTY CLASSIFICATION (DAYS 1 TO 15)
@@ -97,7 +97,7 @@ PHASE 4: CIVIL COURT PROCEEDINGS (IF SHARE IS DENIED)
 CRITICAL LEGAL REMINDER: Under the Supreme Court's ruling in Vineeta Sharma (2020),
 a daughter becomes an equal coparcener by birth. Her marriage does not alter her
 rights, and the father does not need to have been alive in 2005.
-For confidential advocate counsel, visit WillDrafting.in or call AMA Legal Solutions.
+For confidential advocate counsel, visit WillDrafting.in or call WillDrafting.in.
 ================================================================================`;
 
 const MATRIX_DATA = [
@@ -1627,7 +1627,7 @@ export default function MarriedDaughterRightsClient() {
                 Are Brothers Denying Your Share?
               </h4>
               <p className="text-xs text-slate-300 leading-relaxed">
-                Connect directly with AMA Legal Solutions succession advocates to inspect revenue records, send a legal
+                Connect directly with WillDrafting.in succession advocates to inspect revenue records, send a legal
                 notice, or secure an injunction.
               </p>
               <Link

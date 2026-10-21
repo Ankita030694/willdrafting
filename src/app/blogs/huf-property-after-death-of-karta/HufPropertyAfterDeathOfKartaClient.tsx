@@ -61,7 +61,7 @@ const PRINTABLE_CHECKLIST_TEXT = `==============================================
 HUF PROPERTY & KARTA SUCCESSION AUDIT CHECKLIST (INDIA)
 Statutory Authority: Hindu Succession Act, 1956 (Sections 6, 8, 30) & Income Tax Act, 1961 (Sec 171)
 Judicial Precedents: Sujata Sharma (2015), Vineeta Sharma (2020), Gurupad Magdum (1978)
-Prepared by WillDrafting.in - Powered by AMA Legal Solutions
+Prepared by WillDrafting.in
 ================================================================================
 
 PHASE 1: IMMEDIATE POST-DEATH LEGAL FORMALITIES
@@ -1513,7 +1513,7 @@ export default function HufPropertyAfterDeathOfKartaClient() {
                   <p className="text-[11px] font-bold text-[#C65378] uppercase tracking-wider">
                     Senior Succession Counsel
                   </p>
-                  <p className="text-[11px] text-slate-500">AMA Legal Solutions</p>
+                  <p className="text-[11px] text-slate-500">WillDrafting.in</p>
                 </div>
               </div>
               <p className="text-xs text-slate-600 leading-relaxed">

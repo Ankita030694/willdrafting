@@ -948,7 +948,7 @@ export default function NotarizedVsRegisteredWillClient() {
                     Need Lawyer-Assisted Will Registration at Your Local SRO?
                   </h4>
                   <p className="text-xs text-slate-600 mt-1">
-                    AMA Legal Solutions handles slot booking, documentation, and advocate accompaniment at your Sub-Registrar Office.
+                    WillDrafting.in handles slot booking, documentation, and advocate accompaniment at your Sub-Registrar Office.
                   </p>
                 </div>
                 <Link
@@ -1630,7 +1630,7 @@ export default function NotarizedVsRegisteredWillClient() {
                     Adv. Sneha Jaiswal
                   </h4>
                   <span className="text-[11px] text-[#55636D] block">
-                    Succession Counsel, AMA Legal Solutions
+                    Succession Counsel, WillDrafting.in
                   </span>
                 </div>
               </div>

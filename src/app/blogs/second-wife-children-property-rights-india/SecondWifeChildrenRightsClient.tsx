@@ -66,7 +66,7 @@ SECOND WIFE & CHILDREN PROPERTY RIGHTS LEGAL PROTOCOL (INDIA)
 Statutory Authority: Hindu Marriage Act, 1955 (Section 16)
 Succession Authority: Hindu Succession Act, 1956 (Sections 6, 8, 10, 30)
 Landmark Supreme Court Precedent: Revanasiddappa v. Mallikarjun (2023) 10 SCC 1
-Prepared by WillDrafting.in - Powered by AMA Legal Solutions
+Prepared by WillDrafting.in
 ================================================================================
 
 PHASE 1: DOCUMENTING PATERNITY & MARRIAGE STATUS (DAYS 1 TO 15)
@@ -90,7 +90,7 @@ PHASE 3: PREVENTING UNILATERAL MUTATION OR SALE (DAYS 31 TO 45)
 [ ] Step 3.4: NEVER sign blank papers, informal family settlements, or unverified No Objection Certificates (NOCs).
 
 PHASE 4: FORMAL DEMAND & LEGAL NOTICE (DAYS 46 TO 60)
-[ ] Step 4.1: Engage a specialized succession advocate through AMA Legal Solutions.
+[ ] Step 4.1: Engage a specialized succession advocate through WillDrafting.in.
 [ ] Step 4.2: Serve a formal Legal Notice to all legal heirs demanding partition by metes and bounds.
 [ ] Step 4.3: Specify the children's statutory Class I share in self-acquired property under HSA Section 8.
 [ ] Step 4.4: Cite the Supreme Court Revanasiddappa (2023) judgment regarding deemed coparcenary shares.
@@ -107,7 +107,7 @@ PHASE 5: CIVIL COURT SUIT FOR PARTITION & INJUNCTION (IF SHARE IS DENIED)
 CRITICAL REMINDER: Under Section 16 of the Hindu Marriage Act, children born of any
 marriage are deemed legitimate by law. Under Revanasiddappa (2023), they inherit an
 equal share in the father's self-acquired property and his share in ancestral property.
-For confidential advocate assistance, visit WillDrafting.in or contact AMA Legal Solutions.
+For confidential advocate assistance, visit WillDrafting.in or contact WillDrafting.in.
 ================================================================================`;
 
 const MATRIX_DATA = [
@@ -1337,7 +1337,7 @@ export default function SecondWifeChildrenRightsClient() {
                 <div>
                   <h3 className="font-extrabold text-slate-900 text-sm">Advocate Rajeshwar Rao</h3>
                   <p className="text-[11px] font-bold text-[#C65378]">Senior Succession Counsel</p>
-                  <p className="text-[10px] text-slate-500">AMA Legal Solutions</p>
+                  <p className="text-[10px] text-slate-500">WillDrafting.in</p>
                 </div>
               </div>
               <p className="text-xs text-slate-600 leading-relaxed mb-4">
@@ -1397,7 +1397,7 @@ export default function SecondWifeChildrenRightsClient() {
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
-                  <span><strong>Advocate Consultation:</strong> Direct legal counsel from AMA Legal Solutions succession advocates.</span>
+                  <span><strong>Advocate Consultation:</strong> Direct legal counsel from WillDrafting.in succession advocates.</span>
                 </li>
               </ul>
             </div>

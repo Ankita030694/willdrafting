@@ -72,7 +72,7 @@ const PRINTABLE_CHECKLIST_TEXT = `==============================================
 SENIOR CITIZEN GIFT DEED CANCELLATION & PROTECTION CHECKLIST (INDIA)
 Statutory Authority: Section 23, Maintenance and Welfare of Parents and Senior Citizens Act, 2007
 Precedents: Urmila Dixit v. Sunil Sharan Dixit (SC, 2025 INSC 20) | Sudesh Chhikara (SC, 2022)
-Prepared by WillDrafting.in - Powered by AMA Legal Solutions
+Prepared by WillDrafting.in
 ================================================================================
 
 PHASE 1: STATUTORY ELIGIBILITY VERIFICATION
@@ -1533,7 +1533,7 @@ export default function GiftDeedCancellationClient() {
 
               <div className="space-y-3 text-xs sm:text-sm text-slate-700 leading-relaxed">
                 <p>
-                  This guide is authored under the authoritative supervision of senior advocates at AMA Legal Solutions, strictly complying with the following statutory provisions and constitutional precedents:
+                  This guide is authored under the authoritative supervision of senior advocates at WillDrafting.in, strictly complying with the following statutory provisions and constitutional precedents:
                 </p>
                 <ul className="list-disc pl-5 space-y-1.5 text-xs text-slate-600">
                   <li>
@@ -1647,7 +1647,7 @@ export default function GiftDeedCancellationClient() {
                     Advocate Rajeshwar Rao
                   </h3>
                   <p className="text-[11px] font-bold text-[#C65378]">Senior Succession Counsel</p>
-                  <p className="text-[10px] text-slate-500">AMA Legal Solutions</p>
+                  <p className="text-[10px] text-slate-500">WillDrafting.in</p>
                 </div>
               </div>
               <p className="text-xs text-slate-600 leading-relaxed">

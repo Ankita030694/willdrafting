@@ -61,7 +61,7 @@ const TOC_ITEMS = [
   { id: "common-mistakes", label: "10. Common Mistakes by First-Time Executors" },
   { id: "avoid-with-a-will", label: "11. Why Naming an Executor Saves Your Family" },
   { id: "specialized-scenarios", label: "12. NRI Executors & Multiple Co-Executors" },
-  { id: "legal-services", label: "13. Estate Settlement Lawyers at AMA Legal" },
+  { id: "legal-services", label: "13. Estate Settlement Lawyers at WillDrafting.in" },
   { id: "frequently-asked-questions", label: "14. Frequently Asked Questions: Executor Duties" },
   { id: "statutory-citations", label: "15. Official Acts, Sections & Court Rulings" },
 ];
@@ -69,7 +69,7 @@ const TOC_ITEMS = [
 const PRINTABLE_CHECKLIST_TEXT = `================================================================================
 EXECUTOR'S FIRST 90 DAYS LEGAL ACTION PLAN (INDIA)
 Statutory Authority: Indian Succession Act, 1925 (Sections 2(c), 211, 222, 317)
-Prepared by WillDrafting.in · Powered by AMA Legal Solutions
+Prepared by WillDrafting.in
 ================================================================================
 
 PHASE 1: DAYS 1 TO 7 | IMMEDIATE SAFEGUARDING & ESSENTIAL NOTIFICATIONS
@@ -1330,10 +1330,10 @@ export default function ExecutorOfWillDutiesClient() {
                 <span>Advocate Support</span>
               </div>
               <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
-                13. Estate Settlement Lawyers at AMA Legal
+                13. Estate Settlement Lawyers at WillDrafting.in
               </h2>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed">
-                Estate administration does not have to be handled alone. AMA Legal Solutions provides comprehensive legal counsel to executors, administrators, and beneficiaries across all major Indian states:
+                Estate administration does not have to be handled alone. WillDrafting.in provides comprehensive legal counsel to executors, administrators, and beneficiaries across all major Indian states:
               </p>
 
               <div className="p-6 rounded-2xl bg-white border border-slate-200 shadow-xs space-y-4">
@@ -1500,7 +1500,7 @@ export default function ExecutorOfWillDutiesClient() {
                 </div>
               </div>
               <p className="text-xs text-slate-600 leading-relaxed">
-                Bar Council enrolled advocate with 18+ years of expertise in testamentary administration, probate petitions, and estate structuring at AMA Legal Solutions.
+                Bar Council enrolled advocate with 18+ years of expertise in testamentary administration, probate petitions, and estate structuring at WillDrafting.in.
               </p>
               <div className="pt-2 border-t border-slate-100 flex items-center justify-between text-[11px] text-slate-500">
                 <span className="flex items-center gap-1">

@@ -70,7 +70,7 @@ const PRINTABLE_CHECKLIST_TEXT = `==============================================
 HINDU WOMAN STRIDHAN & ESTATE PROTECTION AUDIT CHECKLIST (INDIA)
 Statutory Authorities: Hindu Succession Act, 1956 (Sections 14, 15, 16, 30)
 Supreme Court Authorities: Pratibha Rani (1985) & Arunachala Gounder (2022)
-Prepared by WillDrafting.in - Powered by AMA Legal Solutions
+Prepared by WillDrafting.in
 ================================================================================
 
 PHASE 1: STRIDHAN & JEWELRY AUDIT (KEEP SOLE CONTROL)
@@ -102,7 +102,7 @@ PHASE 4: DRAFTING & EXECUTING A PROTECTIVE WILL
 ================================================================================
 CRITICAL REMINDER: Under Section 14 of the Hindu Succession Act, you are the absolute
 owner of your property. Under Section 30, you have 100% freedom to Will it to anyone.
-For confidential advocate assistance, visit WillDrafting.in or call AMA Legal Solutions.`;
+For confidential advocate assistance, visit WillDrafting.in or call WillDrafting.in.`;
 
 const PROPERTY_CLASSES = [
   {
@@ -510,7 +510,7 @@ export default function HinduWomanPropertyRightsClient() {
                 <span>Statutory Authority</span>
               </div>
               <p className="leading-relaxed">
-                Sections 14, 15, 16 &amp; 30, Hindu Succession Act, 1956 &amp; ISA 1925. Verified by AMA Legal Solutions.
+                Sections 14, 15, 16 &amp; 30, Hindu Succession Act, 1956 &amp; ISA 1925. Verified by WillDrafting.in.
               </p>
             </div>
           </aside>
@@ -1558,7 +1558,7 @@ export default function HinduWomanPropertyRightsClient() {
                   <p className="text-base sm:text-lg font-bold">Draft Your Legally Valid Will Online in 15 Minutes</p>
                   <p className="text-xs sm:text-sm text-slate-200 leading-relaxed">
                     WillDrafting provides clause-by-clause legal guidance tailored to Indian succession acts. Your draft
-                    is checked by senior advocates at AMA Legal Solutions.
+                    is checked by senior advocates at WillDrafting.in.
                   </p>
                   <button
                     onClick={handleStartDraft}
@@ -1823,7 +1823,7 @@ export default function HinduWomanPropertyRightsClient() {
                 <div>
                   <h4 className="font-extrabold text-slate-900 text-sm">Advocate Rajeshwar Rao</h4>
                   <p className="text-[11px] font-bold text-[#C65378]">Senior Succession Counsel</p>
-                  <p className="text-[10px] text-slate-500">AMA Legal Solutions</p>
+                  <p className="text-[10px] text-slate-500">WillDrafting.in</p>
                 </div>
               </div>
               <p className="text-xs text-slate-600 leading-relaxed">
@@ -1884,7 +1884,7 @@ export default function HinduWomanPropertyRightsClient() {
                 <li className="flex items-start gap-2">
                   <Check className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                   <span>
-                    <strong>Lawyer Verified:</strong> Reviewed by senior advocates at AMA Legal Solutions.
+                    <strong>Lawyer Verified:</strong> Reviewed by senior advocates at WillDrafting.in.
                   </span>
                 </li>
                 <li className="flex items-start gap-2">
@@ -2005,7 +2005,7 @@ export default function HinduWomanPropertyRightsClient() {
               />
             </div>
             <div className="flex items-center justify-between text-xs text-slate-500 pt-1">
-              <span>WillDrafting.in • Powered by AMA Legal Solutions</span>
+              <span>WillDrafting.in • Powered by WillDrafting.in</span>
               <button
                 onClick={() => setShowImageModal(false)}
                 className="px-4 py-1.5 rounded-full bg-[#172228] text-white font-bold text-xs"

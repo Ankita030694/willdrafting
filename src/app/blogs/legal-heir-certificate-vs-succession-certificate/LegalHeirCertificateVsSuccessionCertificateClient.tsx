@@ -733,7 +733,7 @@ export default function LegalHeirCertificateVsSuccessionCertificateClient() {
                   href="/service/succession-certificate"
                   className="inline-flex items-center gap-2 text-xs sm:text-sm font-bold text-[#C65378] hover:underline"
                 >
-                  <span>Need an advocate to file your succession petition? View AMA Legal Solutions service</span>
+                  <span>Need an advocate to file your succession petition? View WillDrafting.in service</span>
                   <ArrowRight className="w-4 h-4" />
                 </Link>
               </div>
@@ -1152,13 +1152,13 @@ export default function LegalHeirCertificateVsSuccessionCertificateClient() {
             <section id="legal-services" className="scroll-target space-y-4">
               <div className="flex items-center gap-2 text-xs font-black uppercase tracking-wider text-[#C65378]">
                 <Award className="w-4 h-4 text-[#C65378]" />
-                <span>AMA Legal Solutions</span>
+                <span>WillDrafting.in</span>
               </div>
               <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight leading-snug">
                 12. Professional Succession Legal Services by AMA
               </h2>
               <p className="text-sm md:text-base text-[#55636D] leading-relaxed">
-                If your family is handling an intestate demise, dealing with revenue departments and civil courts can be hard. AMA Legal Solutions offers full legal support:
+                If your family is handling an intestate demise, dealing with revenue departments and civil courts can be hard. WillDrafting.in offers full legal support:
               </p>
 
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-1">
@@ -1342,13 +1342,13 @@ export default function LegalHeirCertificateVsSuccessionCertificateClient() {
                 </div>
               </div>
               <p className="text-xs text-[#55636D] leading-relaxed">
-                Advocate Rao has over 15 years of experience in testamentary law, civil court succession petitions, and high-value estate planning at AMA Legal Solutions.
+                Advocate Rao has over 15 years of experience in testamentary law, civil court succession petitions, and high-value estate planning at WillDrafting.in.
               </p>
               <div className="mt-3 pt-3 border-t border-[#172228]/10 flex items-center justify-between text-[11px]">
                 <span className="text-[#5F7E75] font-semibold flex items-center gap-1">
                   <ShieldCheck className="w-3.5 h-3.5" /> Bar Council Verified
                 </span>
-                <span className="text-[#55636D]">AMA Legal Solutions</span>
+                <span className="text-[#55636D]">WillDrafting.in</span>
               </div>
             </div>
 

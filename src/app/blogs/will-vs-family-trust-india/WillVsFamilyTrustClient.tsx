@@ -267,8 +267,8 @@ export default function WillVsFamilyTrustClient() {
         badge: "High Control & Complete Privacy Required",
         summary:
           "Because your situation involves high estate value, minor or special-needs dependents, business interests, or the need for creditor protection and privacy, a Private Family Trust under the Indian Trusts Act 1882 is the optimal structure. It bypasses court probate completely and safeguards family wealth.",
-        actionUrl: "https://www.amalegalsolutions.com",
-        actionText: "Book HNI Trust Structuring with AMA Advocates",
+        actionUrl: "https://www.willdrafting.in/contact",
+        actionText: "Book HNI Trust Structuring with WillDrafting.in advocates",
         isExternal: true,
       };
     } else if (trustScore >= 3) {
@@ -278,7 +278,7 @@ export default function WillVsFamilyTrustClient() {
         badge: "Comprehensive Dual Protection",
         summary:
           "Your estate benefits from establishing a living private trust for core businesses or sensitive assets, combined with a Section 63 Pour-Over Will that captures any personal property acquired later. This gives you both privacy and complete legal closure.",
-        actionUrl: "https://www.amalegalsolutions.com",
+        actionUrl: "https://www.willdrafting.in/contact",
         actionText: "Consult AMA Estate Advocates on Hybrid Planning",
         isExternal: true,
       };
@@ -1491,7 +1491,7 @@ export default function WillVsFamilyTrustClient() {
                 Advocate specializing in testamentary succession, private family trusts, and cross-border NRI estate governance under the Indian Trusts Act and Succession Act.
               </p>
               <div className="pt-2 border-t border-[#172228]/5 flex items-center justify-between text-[11px] text-[#55636D]">
-                <span>AMA Legal Solutions</span>
+                <span>WillDrafting.in</span>
                 <span className="text-emerald-700 font-semibold flex items-center gap-1">
                   <ShieldCheck className="w-3.5 h-3.5" /> Bar Verified
                 </span>
