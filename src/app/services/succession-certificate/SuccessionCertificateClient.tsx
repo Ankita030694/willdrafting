@@ -1316,8 +1316,10 @@ export default function SuccessionCertificateClient() {
               </div>
             </div>
 
-            {/* CARD 2: FREE CASE EVALUATION CTA CARD */}
-            <div className="bg-[#172228] text-white rounded-2xl p-5 text-center shadow-md relative overflow-hidden">
+            {/* DESKTOP ONLY SIDEBAR CARDS */}
+            <div className="hidden lg:block space-y-5 desktop-sidebar-only">
+{/* CARD 2: FREE CASE EVALUATION CTA CARD */}
+            <div className="hidden lg:block bg-[#172228] text-white rounded-2xl p-5 text-center shadow-md relative overflow-hidden">
               <div className="absolute top-0 right-0 w-28 h-28 bg-[#C65378]/20 rounded-full blur-2xl pointer-events-none" />
               <div className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-white/10 text-[10px] font-bold uppercase tracking-wider text-rose-200 mb-3">
                 <Lock className="w-3 h-3 text-[#C65378]" />
@@ -1342,7 +1344,7 @@ export default function SuccessionCertificateClient() {
             </div>
 
             {/* CARD 3: TRUST & COMPLIANCE CHECKLIST */}
-            <div className="bg-white rounded-2xl border border-slate-200 p-5 shadow-xs">
+            <div className="hidden lg:block bg-white rounded-2xl border border-slate-200 p-5 shadow-xs">
               <h4 className="font-bold text-slate-900 text-xs uppercase tracking-wider mb-3 flex items-center gap-1.5">
                 <ShieldCheck className="w-4 h-4 text-[#5F7E75]" />
                 <span>AMA Practice Guarantees</span>
@@ -1376,7 +1378,7 @@ export default function SuccessionCertificateClient() {
             </div>
 
             {/* CARD 4: RELATED TOOLS & SERVICES */}
-            <div className="bg-white rounded-2xl border border-slate-200 p-5 shadow-xs">
+            <div className="hidden lg:block bg-white rounded-2xl border border-slate-200 p-5 shadow-xs">
               <h4 className="font-bold text-slate-900 text-xs uppercase tracking-wider mb-3">
                 Related Legal Tools
               </h4>
@@ -1415,6 +1417,38 @@ export default function SuccessionCertificateClient() {
                   <div className="text-[10px] text-slate-500 mt-0.5">
                     High Court testamentary petition representation
                   </div>
+                </Link>
+              </div>
+            </div>
+            </div>
+
+            {/* MOBILE ONLY: Related WillDrafting Guides */}
+            <div className="pt-4 border-t border-slate-100 block lg:hidden">
+              <span className="text-xs font-bold text-[#172228] block mb-2">Related WillDrafting Guides:</span>
+              <div className="flex flex-wrap gap-2">
+                <Link
+                  href="/tools/succession-certificate-court-fee-calculator"
+                  className="text-[11px] px-3 py-1 rounded-lg bg-slate-100 text-[#172228] hover:bg-slate-200 transition-colors"
+                >
+                  Court Fee Calculator India
+                </Link>
+                <Link
+                  href="/blogs/legal-heir-certificate-vs-succession-certificate"
+                  className="text-[11px] px-3 py-1 rounded-lg bg-slate-100 text-[#172228] hover:bg-slate-200 transition-colors"
+                >
+                  Legal Heir vs Succession Certificate
+                </Link>
+                <Link
+                  href="/templates/release-deed-format"
+                  className="text-[11px] px-3 py-1 rounded-lg bg-slate-100 text-[#172228] hover:bg-slate-200 transition-colors"
+                >
+                  Relinquishment Deed Format
+                </Link>
+                <Link
+                  href="/service/probate-lawyer"
+                  className="text-[11px] px-3 py-1 rounded-lg bg-slate-100 text-[#172228] hover:bg-slate-200 transition-colors"
+                >
+                  Probate of Will Lawyers
                 </Link>
               </div>
             </div>

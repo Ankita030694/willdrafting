@@ -1511,8 +1511,10 @@ export default function ExecutorOfWillDutiesClient() {
               </div>
             </div>
 
-            {/* CARD 2: EMERGENCY CTA CARD */}
-            <div className="rounded-3xl bg-[#172228] p-6 text-white text-center space-y-4 shadow-lg shadow-slate-950/15">
+            {/* DESKTOP ONLY SIDEBAR CARDS */}
+            <div className="hidden lg:block space-y-5 desktop-sidebar-only">
+{/* CARD 2: EMERGENCY CTA CARD */}
+            <div className="hidden lg:block rounded-3xl bg-[#172228] p-6 text-white text-center space-y-4 shadow-lg shadow-slate-950/15">
               <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/10 text-[10px] font-bold tracking-wider uppercase text-rose-200">
                 <ShieldCheck className="w-3 h-3 text-[#C65378]" />
                 <span>CONFIDENTIAL ESTATE ADVICE</span>
@@ -1539,7 +1541,7 @@ export default function ExecutorOfWillDutiesClient() {
             </div>
 
             {/* CARD 3: TRUST & BENEFITS CHECKLIST */}
-            <div className="bg-white rounded-3xl border border-slate-200/80 p-5 shadow-xs space-y-3">
+            <div className="hidden lg:block bg-white rounded-3xl border border-slate-200/80 p-5 shadow-xs space-y-3">
               <span className="text-[11px] font-black uppercase tracking-wider text-slate-700 block">
                 Executor Support Services
               </span>
@@ -1572,7 +1574,7 @@ export default function ExecutorOfWillDutiesClient() {
             </div>
 
             {/* CARD 4: RECOMMENDED SUCCESSION GUIDES */}
-            <div className="bg-white rounded-3xl border border-slate-200/80 p-5 shadow-xs space-y-3">
+            <div className="hidden lg:block bg-white rounded-3xl border border-slate-200/80 p-5 shadow-xs space-y-3">
               <span className="text-[11px] font-black uppercase tracking-wider text-slate-700 block">
                 Recommended Succession Guides
               </span>
@@ -1627,6 +1629,38 @@ export default function ExecutorOfWillDutiesClient() {
                     <span>Grounds, evidence &amp; limitation</span>
                     <ArrowRight className="w-2.5 h-2.5 text-[#C65378]" />
                   </div>
+                </Link>
+              </div>
+            </div>
+            </div>
+
+            {/* MOBILE ONLY: Related WillDrafting Guides */}
+            <div className="pt-4 border-t border-slate-100 block lg:hidden">
+              <span className="text-xs font-bold text-[#172228] block mb-2">Related WillDrafting Guides:</span>
+              <div className="flex flex-wrap gap-2">
+                <Link
+                  href="/service/probate-lawyer"
+                  className="text-[11px] px-3 py-1 rounded-lg bg-slate-100 text-[#172228] hover:bg-slate-200 transition-colors"
+                >
+                  Probate of Will Lawyers
+                </Link>
+                <Link
+                  href="/tools/probate-checker"
+                  className="text-[11px] px-3 py-1 rounded-lg bg-slate-100 text-[#172228] hover:bg-slate-200 transition-colors"
+                >
+                  Is Probate Required in India?
+                </Link>
+                <Link
+                  href="/blogs/property-transfer-after-death-without-will-india"
+                  className="text-[11px] px-3 py-1 rounded-lg bg-slate-100 text-[#172228] hover:bg-slate-200 transition-colors"
+                >
+                  Property Transfer After Death
+                </Link>
+                <Link
+                  href="/templates/will-format-india"
+                  className="text-[11px] px-3 py-1 rounded-lg bg-slate-100 text-[#172228] hover:bg-slate-200 transition-colors"
+                >
+                  Free Indian Will Format
                 </Link>
               </div>
             </div>

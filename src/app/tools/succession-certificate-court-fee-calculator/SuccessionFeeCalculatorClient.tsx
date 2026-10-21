@@ -1930,8 +1930,10 @@ export default function SuccessionFeeCalculatorClient() {
               </div>
             </div>
 
-            {/* CARD 2: EMERGENCY CTA CARD */}
-            <div className="bg-[#172228] text-white rounded-3xl p-6 text-center space-y-4 shadow-lg relative overflow-hidden">
+            {/* DESKTOP ONLY SIDEBAR CARDS */}
+            <div className="hidden lg:block space-y-5 desktop-sidebar-only">
+{/* CARD 2: EMERGENCY CTA CARD */}
+            <div className="hidden lg:block bg-[#172228] text-white rounded-3xl p-6 text-center space-y-4 shadow-lg relative overflow-hidden">
               <div className="absolute top-0 right-0 w-32 h-32 bg-[#C65378]/20 rounded-full blur-2xl pointer-events-none" />
               <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/10 text-rose-300 text-[10px] font-bold uppercase tracking-wider">
                 <Gavel className="w-3.5 h-3.5 text-[#C65378]" />
@@ -1958,7 +1960,7 @@ export default function SuccessionFeeCalculatorClient() {
             </div>
 
             {/* CARD 3: TRUST CHECKLIST */}
-            <div className="bg-white rounded-3xl border border-slate-200/90 shadow-xs p-5 space-y-3">
+            <div className="hidden lg:block bg-white rounded-3xl border border-slate-200/90 shadow-xs p-5 space-y-3">
               <div className="text-xs font-extrabold uppercase tracking-wider text-[#172228] pb-1 border-b border-slate-100">
                 WHY FAMILIES TRUST US
               </div>
@@ -1983,7 +1985,7 @@ export default function SuccessionFeeCalculatorClient() {
             </div>
 
             {/* CARD 4: RELATED ESTATE TOOLS */}
-            <div className="bg-white rounded-3xl border border-slate-200/90 shadow-xs p-5 space-y-3">
+            <div className="hidden lg:block bg-white rounded-3xl border border-slate-200/90 shadow-xs p-5 space-y-3">
               <div className="text-xs font-extrabold uppercase tracking-wider text-[#172228] pb-1 border-b border-slate-100">
                 RELATED ESTATE TOOLS
               </div>
@@ -2008,6 +2010,38 @@ export default function SuccessionFeeCalculatorClient() {
                 >
                   <div className="font-bold text-xs text-[#172228]">Legally Valid Will Format</div>
                   <div className="text-[10px] text-slate-500 mt-0.5">Printable Section 63 compliant template →</div>
+                </Link>
+              </div>
+            </div>
+            </div>
+
+            {/* MOBILE ONLY: Related WillDrafting Guides */}
+            <div className="pt-4 border-t border-slate-100 block lg:hidden">
+              <span className="text-xs font-bold text-[#172228] block mb-2">Related WillDrafting Guides:</span>
+              <div className="flex flex-wrap gap-2">
+                <Link
+                  href="/service/succession-certificate"
+                  className="text-[11px] px-3 py-1 rounded-lg bg-slate-100 text-[#172228] hover:bg-slate-200 transition-colors"
+                >
+                  Succession Certificate Lawyers
+                </Link>
+                <Link
+                  href="/blogs/legal-heir-certificate-vs-succession-certificate"
+                  className="text-[11px] px-3 py-1 rounded-lg bg-slate-100 text-[#172228] hover:bg-slate-200 transition-colors"
+                >
+                  Legal Heir vs Succession Certificate
+                </Link>
+                <Link
+                  href="/tools/probate-checker"
+                  className="text-[11px] px-3 py-1 rounded-lg bg-slate-100 text-[#172228] hover:bg-slate-200 transition-colors"
+                >
+                  Is Probate Required in India?
+                </Link>
+                <Link
+                  href="/templates/will-format-india"
+                  className="text-[11px] px-3 py-1 rounded-lg bg-slate-100 text-[#172228] hover:bg-slate-200 transition-colors"
+                >
+                  Free Will Format India
                 </Link>
               </div>
             </div>

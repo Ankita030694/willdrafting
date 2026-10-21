@@ -1469,3 +1469,11 @@ button, input, select, textarea {
     padding: 0.32rem 0.52rem !important;
   }
 }
+
+
+/* Ensure desktop-only sidebar cards are strictly hidden on mobile / tablet (< 1024px) */
+@media screen and (max-width: 1023px) {
+  .desktop-sidebar-only {
+    display: none !important;
+  }
+}

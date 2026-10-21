@@ -2074,8 +2074,10 @@ export default function WillChecklistClient() {
               </div>
             </div>
 
-            {/* CARD 2: DIRECT ACTION CTA CARD */}
-            <div className="bg-gradient-to-b from-[#172228] to-[#121c21] rounded-2xl p-6 text-white text-center shadow-md space-y-4">
+            {/* DESKTOP ONLY SIDEBAR CARDS */}
+            <div className="hidden lg:block space-y-5 desktop-sidebar-only">
+{/* CARD 2: DIRECT ACTION CTA CARD */}
+            <div className="hidden lg:block bg-gradient-to-b from-[#172228] to-[#121c21] rounded-2xl p-6 text-white text-center shadow-md space-y-4">
               <span className="inline-block px-3 py-1 rounded-full bg-white/10 text-rose-300 text-[10px] font-black uppercase tracking-wider">
                 WILL-READY CHECKLIST READY
               </span>
@@ -2100,7 +2102,7 @@ export default function WillChecklistClient() {
             </div>
 
             {/* CARD 3: TRUST & COMPLIANCE CHECKLIST */}
-            <div className="bg-white rounded-2xl border border-slate-200/80 p-5 shadow-xs space-y-3">
+            <div className="hidden lg:block bg-white rounded-2xl border border-slate-200/80 p-5 shadow-xs space-y-3">
               <span className="text-xs font-black uppercase tracking-wider text-slate-500 block">
                 COMPLIANCE GUARANTEE
               </span>
@@ -2125,7 +2127,7 @@ export default function WillChecklistClient() {
             </div>
 
             {/* CARD 4: RELATED TOOLS & TEMPLATES */}
-            <div className="bg-white rounded-2xl border border-slate-200/80 p-5 shadow-xs space-y-3">
+            <div className="hidden lg:block bg-white rounded-2xl border border-slate-200/80 p-5 shadow-xs space-y-3">
               <span className="text-xs font-black uppercase tracking-wider text-slate-500 block">
                 RELATED TOOLS &amp; GUIDES
               </span>
@@ -2176,6 +2178,38 @@ export default function WillChecklistClient() {
                   <span className="text-[10px] text-slate-500">
                     Supreme Court precedents on bank &amp; Demat nominees &rarr;
                   </span>
+                </Link>
+              </div>
+            </div>
+            </div>
+
+            {/* MOBILE ONLY: Related WillDrafting Guides */}
+            <div className="pt-4 border-t border-slate-100 block lg:hidden">
+              <span className="text-xs font-bold text-[#172228] block mb-2">Related WillDrafting Guides:</span>
+              <div className="flex flex-wrap gap-2">
+                <Link
+                  href="/templates/will-format-india"
+                  className="text-[11px] px-3 py-1 rounded-lg bg-slate-100 text-[#172228] hover:bg-slate-200 transition-colors"
+                >
+                  Will Format in India
+                </Link>
+                <Link
+                  href="/service/will-registration"
+                  className="text-[11px] px-3 py-1 rounded-lg bg-slate-100 text-[#172228] hover:bg-slate-200 transition-colors"
+                >
+                  Will Registration Service
+                </Link>
+                <Link
+                  href="/tools/probate-checker"
+                  className="text-[11px] px-3 py-1 rounded-lg bg-slate-100 text-[#172228] hover:bg-slate-200 transition-colors"
+                >
+                  Probate Requirement Checker
+                </Link>
+                <Link
+                  href="/tools/succession-calculator"
+                  className="text-[11px] px-3 py-1 rounded-lg bg-slate-100 text-[#172228] hover:bg-slate-200 transition-colors"
+                >
+                  Succession Share Calculator
                 </Link>
               </div>
             </div>

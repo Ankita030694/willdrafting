@@ -7,12 +7,11 @@ import {
   X,
   ArrowUpRight,
   FileText,
-  Layers,
-  Sparkles,
   Calendar,
   Scale,
   FolderArchive,
   Compass,
+  Sparkles,
 } from "lucide-react";
 import {
   SitemapPageItem,
@@ -53,51 +52,57 @@ export default function SitemapClient({ initialLinks }: SitemapClientProps) {
   const getCategoryBadgeStyle = (category?: string) => {
     switch (category?.toLowerCase()) {
       case "services":
-        return "bg-blue-50 text-blue-700 border-blue-200/80";
+        return "bg-[#5F7E75]/10 text-[#3d5951] border-[#5F7E75]/25";
       case "templates":
-        return "bg-emerald-50 text-emerald-700 border-emerald-200/80";
+        return "bg-[#C65378]/10 text-[#C65378] border-[#C65378]/25";
       case "tools":
-        return "bg-purple-50 text-purple-700 border-purple-200/80";
+        return "bg-blue-50 text-blue-700 border-blue-200/80";
       case "guides":
         return "bg-amber-50 text-amber-800 border-amber-200/80";
       case "company":
-        return "bg-slate-100 text-slate-700 border-slate-200/80";
+        return "bg-[#172228]/5 text-[#172228] border-[#172228]/15";
       default:
-        return "bg-gray-50 text-gray-700 border-gray-200/80";
+        return "bg-[#FAF7F0] text-[#49585F] border-[#172228]/10";
     }
   };
 
   return (
-    <div className="relative min-h-screen bg-[#FAF7F0] text-[#172228] selection:bg-[#C65378] selection:text-white">
-      {/* Hero Header Section */}
-      <section className="relative pt-32 pb-14 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-[#172228] to-[#212F35] text-white overflow-hidden">
-        {/* Subtle decorative background glow */}
-        <div className="absolute top-0 right-1/4 w-96 h-96 bg-[#C65378]/15 rounded-full blur-3xl pointer-events-none" />
-        <div className="absolute bottom-0 left-1/4 w-80 h-80 bg-[#5F7E75]/15 rounded-full blur-3xl pointer-events-none" />
+    <div className="relative min-h-screen bg-[#FAF7F0] text-[#172228] selection:bg-[#C65378]/15 selection:text-[#C65378]">
+      {/* Subtle decorative background ambient glows matching Hero.tsx and whole WillDrafting theme */}
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute -top-24 -right-24 w-96 h-96 rounded-full bg-[#C65378]/[0.05] blur-3xl"
+      />
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute top-72 -left-20 w-80 h-80 rounded-full bg-[#5F7E75]/[0.05] blur-3xl"
+      />
 
-        <div className="relative max-w-7xl mx-auto text-center">
+      {/* Hero Header Section */}
+      <section className="relative pt-28 sm:pt-36 lg:pt-40 pb-10 sm:pb-14 px-4 sm:px-6 lg:px-8">
+        <div className="relative max-w-4xl mx-auto text-center">
           {/* Badge */}
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-white/15 text-xs font-semibold text-emerald-300 mb-5 shadow-xs">
-            <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-[#C65378]/25 text-[0.75rem] font-bold tracking-[0.14em] uppercase text-[#C65378] mb-5 shadow-2xs">
+            <span className="w-2 h-2 rounded-full bg-[#C65378] animate-pulse" />
             <span>{initialLinks.length} Curated Legal Pages &amp; Guides</span>
           </div>
 
-          {/* H1 Heading (38 chars - strictly 30-65 chars, 0 em-dashes) */}
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-white mb-4 drop-shadow-xs">
-            WillDrafting Sitemap &amp; Legal Directory
+          {/* H1 Heading */}
+          <h1 className="text-[2rem] sm:text-[2.6rem] lg:text-[3.25rem] font-medium leading-[1.12] tracking-[-0.025em] text-[#111827] mb-4">
+            WillDrafting Sitemap &amp; <span className="font-bold text-[#C65378]">Legal Directory</span>
           </h1>
 
           {/* Subtitle */}
-          <p className="max-w-2xl mx-auto text-sm sm:text-base md:text-lg text-slate-200 leading-relaxed font-normal">
+          <p className="max-w-2xl mx-auto text-[0.98rem] sm:text-[1.08rem] leading-[1.65] text-[#49585F] font-normal">
             Explore our complete index of online Will drafting services, Indian
             succession law guides, printable templates, and statutory calculators.
           </p>
 
           {/* Search Bar in Hero */}
           <div className="mt-8 max-w-2xl mx-auto">
-            <div className="relative flex items-center shadow-lg rounded-2xl overflow-hidden bg-white/95 backdrop-blur-sm border border-white/20 focus-within:ring-3 focus-within:ring-[#C65378]/50 transition-all">
-              <div className="pl-4 pr-2 text-slate-400 flex items-center justify-center">
-                <Search className="w-5 h-5 text-slate-500" />
+            <div className="relative flex items-center shadow-[0_4px_24px_-4px_rgba(23,34,40,0.06)] rounded-2xl overflow-hidden bg-white border border-[#172228]/12 focus-within:border-[#C65378] focus-within:ring-3 focus-within:ring-[#C65378]/15 transition-all">
+              <div className="pl-4 pr-2 text-[#49585F] flex items-center justify-center">
+                <Search className="w-5 h-5 text-[#55636D]" />
               </div>
               <input
                 id="sitemap-search-input"
@@ -105,13 +110,13 @@ export default function SitemapClient({ initialLinks }: SitemapClientProps) {
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
                 placeholder="Search by topic, keyword, or page URL (e.g. NRI will, codicil, probate)..."
-                className="w-full py-4 pr-10 text-sm sm:text-base text-slate-900 bg-transparent placeholder-slate-400 focus:outline-none"
+                className="w-full py-4 pr-10 text-sm sm:text-base text-[#172228] bg-transparent placeholder-[#8A969E] focus:outline-none"
               />
               {searchQuery && (
                 <button
                   type="button"
                   onClick={() => setSearchQuery("")}
-                  className="pr-4 text-slate-400 hover:text-slate-700 transition-colors"
+                  className="pr-4 text-[#55636D] hover:text-[#172228] transition-colors cursor-pointer"
                   aria-label="Clear search query"
                 >
                   <X className="w-5 h-5" />
@@ -123,7 +128,7 @@ export default function SitemapClient({ initialLinks }: SitemapClientProps) {
       </section>
 
       {/* Main Content Area */}
-      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-20">
         {/* Category Filter Pills & Results Counter Bar */}
         <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4 pb-6 mb-8 border-b border-[#172228]/10">
           {/* Category Tabs */}
@@ -138,7 +143,7 @@ export default function SitemapClient({ initialLinks }: SitemapClientProps) {
                   className={`px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold transition-all duration-200 cursor-pointer ${
                     isActive
                       ? "bg-[#172228] text-white shadow-xs"
-                      : "bg-white text-slate-600 hover:bg-slate-100 hover:text-slate-900 border border-slate-200/80"
+                      : "bg-white text-[#49585F] hover:bg-[#F4EFE6] hover:text-[#172228] border border-[#172228]/10"
                   }`}
                 >
                   {cat}
@@ -159,14 +164,14 @@ export default function SitemapClient({ initialLinks }: SitemapClientProps) {
 
         {/* Card Grid / Empty State */}
         {filteredLinks.length === 0 ? (
-          <div className="bg-white rounded-3xl border border-slate-200/80 p-12 text-center max-w-lg mx-auto my-12 shadow-xs">
-            <div className="w-16 h-16 mx-auto mb-4 rounded-2xl bg-slate-100 flex items-center justify-center text-slate-400">
-              <FolderArchive className="w-8 h-8 text-slate-400" />
+          <div className="bg-white rounded-3xl border border-[#172228]/10 p-12 text-center max-w-lg mx-auto my-12 shadow-xs">
+            <div className="w-16 h-16 mx-auto mb-4 rounded-2xl bg-[#FAF7F0] flex items-center justify-center text-[#55636D]">
+              <FolderArchive className="w-8 h-8 text-[#55636D]" />
             </div>
             <h2 className="text-xl font-bold text-[#172228] mb-2">
               No matching pages found
             </h2>
-            <p className="text-sm text-slate-600 mb-6 leading-relaxed">
+            <p className="text-sm text-[#49585F] mb-6 leading-relaxed">
               We couldn&apos;t find any pages matching &quot;{searchQuery}&quot; in{" "}
               {activeCategory === "All" ? "all categories" : activeCategory}. Try a
               different keyword or clear your filters.
@@ -177,7 +182,7 @@ export default function SitemapClient({ initialLinks }: SitemapClientProps) {
                 setSearchQuery("");
                 setActiveCategory("All");
               }}
-              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-[#172228] text-white text-sm font-semibold hover:bg-[#212F35] transition-colors shadow-xs cursor-pointer"
+              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-[#C65378] text-white text-sm font-semibold hover:bg-[#a13c5d] transition-colors shadow-xs cursor-pointer"
             >
               <X className="w-4 h-4" />
               Reset Search &amp; Filters
@@ -191,7 +196,7 @@ export default function SitemapClient({ initialLinks }: SitemapClientProps) {
                 <Link
                   key={`${link.href}-${index}`}
                   href={link.href}
-                  className="group relative bg-white border border-slate-200/80 hover:border-[#C65378]/50 rounded-2xl p-5 shadow-xs hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 flex flex-col justify-between"
+                  className="group relative bg-white border border-[#172228]/[0.08] hover:border-[#C65378]/50 rounded-2xl p-5 shadow-[0_2px_8px_rgba(23,34,40,0.03)] hover:shadow-[0_8px_24px_rgba(23,34,40,0.06)] hover:-translate-y-0.5 transition-all duration-200 flex flex-col justify-between"
                 >
                   <div>
                     {/* Top Meta Row */}
@@ -203,24 +208,24 @@ export default function SitemapClient({ initialLinks }: SitemapClientProps) {
                       >
                         {link.category || "General"}
                       </span>
-                      <div className="w-7 h-7 rounded-full bg-slate-50 group-hover:bg-[#C65378]/10 text-slate-400 group-hover:text-[#C65378] flex items-center justify-center transition-colors">
+                      <div className="w-7 h-7 rounded-full bg-[#FAF7F0] group-hover:bg-[#C65378]/10 text-[#55636D] group-hover:text-[#C65378] flex items-center justify-center transition-colors">
                         <ArrowUpRight className="w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
                       </div>
                     </div>
 
                     {/* Page Title */}
-                    <h2 className="text-[15px] font-bold text-[#172228] group-hover:text-[#C65378] transition-colors leading-snug line-clamp-3 mb-2">
+                    <h2 className="text-[15px] font-semibold text-[#172228] group-hover:text-[#C65378] transition-colors leading-snug line-clamp-3 mb-2">
                       {link.title}
                     </h2>
                   </div>
 
                   {/* Card Bottom Meta */}
-                  <div className="pt-3 mt-3 border-t border-slate-100 flex items-center justify-between text-[11px] text-slate-500 font-medium">
-                    <span className="font-mono text-[11px] text-slate-400 truncate max-w-[150px]">
+                  <div className="pt-3 mt-3 border-t border-[#172228]/[0.06] flex items-center justify-between text-[11px] text-[#55636D] font-medium">
+                    <span className="font-mono text-[11px] text-[#8A969E] group-hover:text-[#55636D] truncate max-w-[150px]">
                       {link.href}
                     </span>
                     {displayDate && (
-                      <span className="flex items-center gap-1 text-slate-400">
+                      <span className="flex items-center gap-1 text-[#8A969E]">
                         <Calendar className="w-3 h-3" />
                         {displayDate}
                       </span>
@@ -233,17 +238,17 @@ export default function SitemapClient({ initialLinks }: SitemapClientProps) {
         )}
 
         {/* Bottom Trust & Legal Context Card */}
-        <section className="mt-16 bg-white rounded-3xl border border-slate-200/80 p-8 sm:p-10 shadow-xs">
+        <section className="mt-16 bg-white rounded-3xl border border-[#172228]/[0.08] p-8 sm:p-10 shadow-[0_4px_20px_-4px_rgba(23,34,40,0.04)]">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="flex items-start gap-4">
-              <div className="w-12 h-12 rounded-2xl bg-amber-50 text-amber-800 flex items-center justify-center shrink-0">
-                <Scale className="w-6 h-6" />
+              <div className="w-12 h-12 rounded-2xl bg-[#5F7E75]/10 text-[#3d5951] flex items-center justify-center shrink-0">
+                <Scale className="w-6 h-6 text-[#5F7E75]" />
               </div>
               <div>
                 <h3 className="text-base font-bold text-[#172228] mb-1">
                   Section 63 Compliant
                 </h3>
-                <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                <p className="text-xs sm:text-sm text-[#49585F] leading-relaxed">
                   Every template and guide adheres to the Indian Succession Act, 1925
                   and statutory witness execution requirements.
                 </p>
@@ -251,14 +256,14 @@ export default function SitemapClient({ initialLinks }: SitemapClientProps) {
             </div>
 
             <div className="flex items-start gap-4">
-              <div className="w-12 h-12 rounded-2xl bg-blue-50 text-blue-700 flex items-center justify-center shrink-0">
-                <Sparkles className="w-6 h-6" />
+              <div className="w-12 h-12 rounded-2xl bg-[#C65378]/10 text-[#C65378] flex items-center justify-center shrink-0">
+                <Sparkles className="w-6 h-6 text-[#C65378]" />
               </div>
               <div>
                 <h3 className="text-base font-bold text-[#172228] mb-1">
                   Single Source of Truth
                 </h3>
-                <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                <p className="text-xs sm:text-sm text-[#49585F] leading-relaxed">
                   All pages are synchronized in real-time between this interactive
                   directory and the search engine XML sitemap.
                 </p>
@@ -266,14 +271,14 @@ export default function SitemapClient({ initialLinks }: SitemapClientProps) {
             </div>
 
             <div className="flex items-start gap-4">
-              <div className="w-12 h-12 rounded-2xl bg-emerald-50 text-emerald-700 flex items-center justify-center shrink-0">
-                <FileText className="w-6 h-6" />
+              <div className="w-12 h-12 rounded-2xl bg-[#172228]/5 text-[#172228] flex items-center justify-center shrink-0">
+                <FileText className="w-6 h-6 text-[#172228]" />
               </div>
               <div>
                 <h3 className="text-base font-bold text-[#172228] mb-1">
                   Lawyer Vetted Formats
                 </h3>
-                <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                <p className="text-xs sm:text-sm text-[#49585F] leading-relaxed">
                   Drafted and reviewed by succession advocates at AMA Legal Solutions
                   for real-world validity across all Indian states.
                 </p>

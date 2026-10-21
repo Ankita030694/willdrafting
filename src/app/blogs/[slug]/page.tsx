@@ -16,13 +16,18 @@ interface PageProps {
 
 export async function generateStaticParams() {
   const params: { slug: string }[] = [];
-  BLOG_ARTICLES.filter(
-    (article) =>
-      article.slug !== "legal-heir-certificate-vs-succession-certificate" &&
-      article.slug !== "demat-shares-transmission-after-death-sebi" &&
-      article.slug !== "property-transfer-after-death-without-will-india" &&
-      article.slug !== "claim-unclaimed-deposits-deceased-udgam"
-  ).forEach((article) => {
+  const dedicatedSlugs = new Set([
+    "legal-heir-certificate-vs-succession-certificate",
+    "demat-shares-transmission-after-death-sebi",
+    "property-transfer-after-death-without-will-india",
+    "claim-unclaimed-deposits-deceased-udgam",
+    "executor-of-will-duties-india",
+    "how-to-challenge-a-will-in-india",
+    "married-daughter-rights-in-fathers-property",
+    "second-wife-children-property-rights-india",
+    "hindu-woman-property-rights-stridhan-will",
+  ]);
+  BLOG_ARTICLES.filter((article) => !dedicatedSlugs.has(article.slug)).forEach((article) => {
     params.push({ slug: article.slug });
     if (article.aliases) {
       article.aliases.forEach((alias) => {

@@ -1300,8 +1300,10 @@ export default function MirrorWillsForCouplesClient() {
               </div>
             </div>
 
-            {/* CARD 2: CONFIDENTIAL CTA CARD */}
-            <div className="rounded-3xl bg-[#172228] text-white p-6 shadow-md text-center relative overflow-hidden">
+            {/* DESKTOP ONLY SIDEBAR CARDS */}
+            <div className="hidden lg:block space-y-5 desktop-sidebar-only">
+{/* CARD 2: CONFIDENTIAL CTA CARD */}
+            <div className="hidden lg:block rounded-3xl bg-[#172228] text-white p-6 shadow-md text-center relative overflow-hidden">
               <div className="absolute top-0 right-0 w-32 h-32 bg-[#C65378]/10 rounded-full blur-2xl pointer-events-none" />
               <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/10 text-[10px] font-bold uppercase tracking-wider text-rose-200 mb-3">
                 <Lock className="w-3 h-3 text-[#C65378]" />
@@ -1328,7 +1330,7 @@ export default function MirrorWillsForCouplesClient() {
             </div>
 
             {/* CARD 3: TRUST CHECKLIST */}
-            <div className="bg-white rounded-3xl border border-slate-200/90 shadow-xs p-5">
+            <div className="hidden lg:block bg-white rounded-3xl border border-slate-200/90 shadow-xs p-5">
               <div className="flex items-center gap-2 font-bold text-slate-900 text-xs pb-3 border-b border-slate-100">
                 <Award className="w-4 h-4 text-[#C65378]" />
                 <span>The WillDrafting Guarantee</span>
@@ -1362,7 +1364,7 @@ export default function MirrorWillsForCouplesClient() {
             </div>
 
             {/* CARD 4: RELATED GUIDES */}
-            <div className="bg-white rounded-3xl border border-slate-200/90 shadow-xs p-5 space-y-3">
+            <div className="hidden lg:block bg-white rounded-3xl border border-slate-200/90 shadow-xs p-5 space-y-3">
               <div className="flex items-center gap-2 font-bold text-slate-900 text-xs">
                 <Share2 className="w-4 h-4 text-[#C65378]" />
                 <span>Essential Estate Guides</span>
@@ -1398,7 +1400,38 @@ export default function MirrorWillsForCouplesClient() {
                 </span>
               </Link>
             </div>
+            </div>
 
+            {/* MOBILE ONLY: Related WillDrafting Guides */}
+            <div className="pt-4 border-t border-slate-100 block lg:hidden">
+              <span className="text-xs font-bold text-[#172228] block mb-2">Related WillDrafting Guides:</span>
+              <div className="flex flex-wrap gap-2">
+                <Link
+                  href="/service/will-registration"
+                  className="text-[11px] px-3 py-1 rounded-lg bg-slate-100 text-[#172228] hover:bg-slate-200 transition-colors"
+                >
+                  Will Registration Service
+                </Link>
+                <Link
+                  href="/tools/will-checklist"
+                  className="text-[11px] px-3 py-1 rounded-lg bg-slate-100 text-[#172228] hover:bg-slate-200 transition-colors"
+                >
+                  Will Preparation Checklist
+                </Link>
+                <Link
+                  href="/templates/will-format-india"
+                  className="text-[11px] px-3 py-1 rounded-lg bg-slate-100 text-[#172228] hover:bg-slate-200 transition-colors"
+                >
+                  Free Indian Will Format
+                </Link>
+                <Link
+                  href="/blogs/will-vs-family-trust-india"
+                  className="text-[11px] px-3 py-1 rounded-lg bg-slate-100 text-[#172228] hover:bg-slate-200 transition-colors"
+                >
+                  Will vs Family Trust
+                </Link>
+              </div>
+            </div>
           </aside>
 
         </div>

@@ -1798,8 +1798,10 @@ export default function ProbateCheckerClient() {
               </div>
             </div>
 
-            {/* CARD 2: EMERGENCY CTA CARD (Brand Navy) */}
-            <div className="rounded-3xl bg-[#172228] text-white p-6 shadow-md text-center space-y-4">
+            {/* DESKTOP ONLY SIDEBAR CARDS */}
+            <div className="hidden lg:block space-y-6 desktop-sidebar-only">
+{/* CARD 2: EMERGENCY CTA CARD (Brand Navy) */}
+            <div className="hidden lg:block rounded-3xl bg-[#172228] text-white p-6 shadow-md text-center space-y-4">
               <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/10 text-[10px] font-bold uppercase tracking-wider text-rose-200">
                 <Lock className="w-3 h-3 text-[#C65378]" />
                 <span>CONFIDENTIAL LEGAL CONSULTATION</span>
@@ -1825,7 +1827,7 @@ export default function ProbateCheckerClient() {
             </div>
 
             {/* CARD 3: TRUST / BENEFITS CHECKLIST */}
-            <div className="bg-white rounded-3xl border border-slate-200/90 shadow-xs p-5 space-y-3">
+            <div className="hidden lg:block bg-white rounded-3xl border border-slate-200/90 shadow-xs p-5 space-y-3">
               <div className="font-extrabold text-slate-900 text-xs uppercase tracking-wider">
                 Why Estates Trust WillDrafting
               </div>
@@ -1858,7 +1860,7 @@ export default function ProbateCheckerClient() {
             </div>
 
             {/* CARD 4: RELATED TOOLS & GUIDES */}
-            <div className="bg-white rounded-3xl border border-slate-200/90 shadow-xs p-5 space-y-3">
+            <div className="hidden lg:block bg-white rounded-3xl border border-slate-200/90 shadow-xs p-5 space-y-3">
               <div className="font-extrabold text-slate-900 text-xs uppercase tracking-wider">
                 Related Succession Tools
               </div>
@@ -1894,6 +1896,38 @@ export default function ProbateCheckerClient() {
                     <span>Amend your Will without a fresh draft</span>
                     <ArrowRight className="w-3 h-3 text-[#C65378]" />
                   </div>
+                </Link>
+              </div>
+            </div>
+            </div>
+
+            {/* MOBILE ONLY: Related WillDrafting Guides */}
+            <div className="pt-4 border-t border-slate-100 block lg:hidden">
+              <span className="text-xs font-bold text-[#172228] block mb-2">Related WillDrafting Guides:</span>
+              <div className="flex flex-wrap gap-2">
+                <Link
+                  href="/service/probate-lawyer"
+                  className="text-[11px] px-3 py-1 rounded-lg bg-slate-100 text-[#172228] hover:bg-slate-200 transition-colors"
+                >
+                  Probate of Will Lawyers
+                </Link>
+                <Link
+                  href="/tools/succession-certificate-court-fee-calculator"
+                  className="text-[11px] px-3 py-1 rounded-lg bg-slate-100 text-[#172228] hover:bg-slate-200 transition-colors"
+                >
+                  Court Fee Calculator India
+                </Link>
+                <Link
+                  href="/blogs/how-to-challenge-a-will-in-india"
+                  className="text-[11px] px-3 py-1 rounded-lg bg-slate-100 text-[#172228] hover:bg-slate-200 transition-colors"
+                >
+                  How to Challenge a Will
+                </Link>
+                <Link
+                  href="/service/succession-certificate"
+                  className="text-[11px] px-3 py-1 rounded-lg bg-slate-100 text-[#172228] hover:bg-slate-200 transition-colors"
+                >
+                  Succession Certificate Lawyers
                 </Link>
               </div>
             </div>

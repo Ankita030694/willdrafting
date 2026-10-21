@@ -1615,8 +1615,10 @@ export default function MarriedDaughterRightsClient() {
               </p>
             </div>
 
-            {/* Emergency Consultation Card */}
-            <div className="bg-[#172228] rounded-2xl p-5 text-white space-y-3 shadow-lg shadow-slate-900/10">
+            {/* DESKTOP ONLY SIDEBAR CARDS */}
+            <div className="hidden lg:block space-y-5 desktop-sidebar-only">
+{/* Emergency Consultation Card */}
+            <div className="hidden lg:block bg-[#172228] rounded-2xl p-5 text-white space-y-3 shadow-lg shadow-slate-900/10">
               <div className="flex items-center gap-1.5 text-xs font-bold text-rose-300">
                 <Lock className="w-3.5 h-3.5 text-[#C65378]" />
                 <span>Urgent Rights Consultation</span>
@@ -1638,7 +1640,7 @@ export default function MarriedDaughterRightsClient() {
             </div>
 
             {/* Trust & Guarantee Indicators */}
-            <div className="bg-white rounded-2xl border border-slate-200/80 p-5 shadow-xs space-y-3 text-xs">
+            <div className="hidden lg:block bg-white rounded-2xl border border-slate-200/80 p-5 shadow-xs space-y-3 text-xs">
               <h4 className="font-extrabold text-slate-900 flex items-center gap-1.5 text-xs uppercase tracking-wider">
                 <ShieldCheck className="w-4 h-4 text-emerald-600" />
                 Why Trust WillDrafting.in
@@ -1664,7 +1666,7 @@ export default function MarriedDaughterRightsClient() {
             </div>
 
             {/* Related Family Succession Guides */}
-            <div className="bg-white rounded-2xl border border-slate-200/80 p-5 shadow-xs space-y-3">
+            <div className="hidden lg:block bg-white rounded-2xl border border-slate-200/80 p-5 shadow-xs space-y-3">
               <h4 className="font-extrabold text-slate-900 text-xs uppercase tracking-wider">
                 Related Family Guides
               </h4>
@@ -1696,6 +1698,38 @@ export default function MarriedDaughterRightsClient() {
                 >
                   <p className="font-bold text-slate-800 hover:text-[#C65378]">Release Deed Format India</p>
                   <p className="text-[11px] text-slate-500 mt-0.5">Download valid template &amp; stamp rules</p>
+                </Link>
+              </div>
+            </div>
+            </div>
+
+            {/* MOBILE ONLY: Related WillDrafting Guides */}
+            <div className="pt-4 border-t border-slate-100 block lg:hidden">
+              <span className="text-xs font-bold text-[#172228] block mb-2">Related WillDrafting Guides:</span>
+              <div className="flex flex-wrap gap-2">
+                <Link
+                  href="/blogs/hindu-woman-property-rights-stridhan-will"
+                  className="text-[11px] px-3 py-1 rounded-lg bg-slate-100 text-[#172228] hover:bg-slate-200 transition-colors"
+                >
+                  Hindu Woman Property Rights & Stridhan
+                </Link>
+                <Link
+                  href="/blogs/second-wife-children-property-rights-india"
+                  className="text-[11px] px-3 py-1 rounded-lg bg-slate-100 text-[#172228] hover:bg-slate-200 transition-colors"
+                >
+                  Second Wife & Children Rights
+                </Link>
+                <Link
+                  href="/blogs/huf-property-after-death-of-karta"
+                  className="text-[11px] px-3 py-1 rounded-lg bg-slate-100 text-[#172228] hover:bg-slate-200 transition-colors"
+                >
+                  HUF Property After Karta Death
+                </Link>
+                <Link
+                  href="/templates/release-deed-format"
+                  className="text-[11px] px-3 py-1 rounded-lg bg-slate-100 text-[#172228] hover:bg-slate-200 transition-colors"
+                >
+                  Relinquishment Deed Format
                 </Link>
               </div>
             </div>

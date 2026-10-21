@@ -47,9 +47,8 @@ const TOC_ITEMS = [
   { id: "procedural-timeline", label: "9. Expected Registration Timelines" },
   { id: "specialized-scenarios", label: "10. Special Situations: Seniors & Overseas NRIs" },
   { id: "service-pricing", label: "11. Service Plans & Transparent Fees" },
-  { id: "institutional-backing", label: "12. Legal Support & Verification" },
-  { id: "frequently-asked-questions", label: "13. Frequently Asked Questions" },
-  { id: "statutory-citations", label: "14. Relevant Laws & Official Portals" },
+  { id: "frequently-asked-questions", label: "12. Frequently Asked Questions" },
+  { id: "statutory-citations", label: "13. Relevant Laws & Official Portals" },
 ];
 
 const CHECKLIST_ITEMS = [
@@ -580,7 +579,7 @@ export default function WillRegistrationClient() {
               <div className="bg-white rounded-2xl border border-slate-200/90 overflow-hidden shadow-xs p-3 sm:p-4">
                 <div className="relative w-full aspect-[16/9] rounded-xl overflow-hidden bg-[#FAF7F0] border border-slate-100 shadow-inner">
                   <Image
-                    src="/images/will-registration-sro-office.jpg"
+                    src="/images/notarized-will-vs-registered-will-india-og.jpg"
                     alt="Authentic Will Registration at Government Sub-Registrar Office in India under Registration Act 1908"
                     fill
                     className="object-cover hover:scale-[1.02] transition-transform duration-500"
@@ -588,10 +587,10 @@ export default function WillRegistrationClient() {
                   />
                 </div>
                 <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2 pt-3 px-1 text-xs text-slate-500">
-                  <span>Figure 1: Official Will Registration at Government Sub-Registrar Office (उप-पंजीयक कार्यालय) in India.</span>
+                  <span>Figure 1: Plain Will vs Notarized Will vs Registered Will on Advocate Chamber Desk in India.</span>
                   <div className="flex items-center gap-3">
                     <a
-                      href="/images/will-registration-sro-office.jpg"
+                      href="/images/notarized-will-vs-registered-will-india-og.jpg"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-flex items-center gap-1 font-semibold text-[#C65378] hover:underline"
@@ -1090,56 +1089,6 @@ export default function WillRegistrationClient() {
               </div>
             </section>
 
-            {/* SECTION 12: INSTITUTIONAL VERIFICATION */}
-            <section id="institutional-backing" className="scroll-target space-y-4">
-              <div className="flex items-center gap-2 text-xs font-black uppercase tracking-wider text-[#C65378]">
-                <Building2 className="w-4 h-4 text-[#C65378]" />
-                <span>LEGAL INSTITUTION</span>
-              </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
-                12. Institutional Verification: AMA Legal Solutions
-              </h2>
-              <p className="text-sm md:text-base text-slate-700 leading-relaxed">
-                WillDrafting is run by AMA Legal Solutions. Our team brings over 15 years of courtroom experience in succession law across Indian High Courts.
-              </p>
-
-              <div className="bg-[#172228] text-white rounded-2xl p-6 sm:p-8 space-y-6">
-                <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 border-b border-white/10 pb-6">
-                  <div>
-                    <h3 className="text-xl font-bold">AMA Legal Solutions Chamber</h3>
-                    <p className="text-xs text-slate-300 mt-1">Bar Council Enrolled Advocates &bull; High Court Practice</p>
-                  </div>
-                  <div className="flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/10 text-xs font-semibold text-rose-200">
-                    <ShieldCheck className="w-4 h-4 text-[#C65378]" />
-                    <span>Certified Succession Specialists</span>
-                  </div>
-                </div>
-
-                <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 text-xs">
-                  <div className="p-3.5 rounded-xl bg-white/5 border border-white/10">
-                    <div className="font-bold text-white text-sm">100% Confidential</div>
-                    <div className="text-slate-300 mt-1">Book 3 private filing protection with encrypted legal drafting vaults.</div>
-                  </div>
-                  <div className="p-3.5 rounded-xl bg-white/5 border border-white/10">
-                    <div className="font-bold text-white text-sm">Verified Witnesses</div>
-                    <div className="text-slate-300 mt-1">Independent witness vetting preventing Section 67 disqualification.</div>
-                  </div>
-                  <div className="p-3.5 rounded-xl bg-white/5 border border-white/10">
-                    <div className="font-bold text-white text-sm">Doorstep Assistance</div>
-                    <div className="text-slate-300 mt-1">Full Section 31 private attendance coordination for sick testators.</div>
-                  </div>
-                </div>
-
-                <div className="flex flex-col sm:flex-row items-center justify-between gap-4 pt-2 text-xs text-slate-300">
-                  <span>Online Support: Mon to Sat, 9:00 AM &ndash; 7:00 PM IST</span>
-                  <a href="/aboutus" className="text-rose-300 font-bold hover:underline inline-flex items-center gap-1">
-                    <span>Learn About Our Chamber</span>
-                    <ArrowRight className="w-3.5 h-3.5" />
-                  </a>
-                </div>
-              </div>
-            </section>
-
             {/* SECTION 13: FAQ ACCORDION */}
             <section id="frequently-asked-questions" className="scroll-target space-y-4">
               <div className="flex items-center gap-2 text-xs font-black uppercase tracking-wider text-[#C65378]">
@@ -1147,7 +1096,7 @@ export default function WillRegistrationClient() {
                 <span>DIRECT ANSWERS</span>
               </div>
               <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
-                13. Frequently Asked Questions: Will Registration India
+                12. Frequently Asked Questions: Will Registration India
               </h2>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed">
                 Find direct answers to common questions about Will registration, state fees, and Section 31 home visits in India.
@@ -1186,7 +1135,7 @@ export default function WillRegistrationClient() {
             <section id="statutory-citations" className="scroll-target space-y-6 pt-6 border-t border-slate-200">
               <div>
                 <h2 className="text-lg font-bold text-slate-900 mb-2">
-                  14. Statutory Citations &amp; Official Government Portals
+                  13. Statutory Citations &amp; Official Government Portals
                 </h2>
                 <ul className="list-disc list-inside space-y-1 text-xs text-slate-600">
                   <li>Registration Act, 1908: Section 18(e) (Optional registration of Wills), Section 31 (Registration at private residence), Section 40 &amp; 41 (Procedure on deposit and registration of Wills), Section 57(2) (Confidentiality of Book 3).</li>
@@ -1328,8 +1277,10 @@ export default function WillRegistrationClient() {
               </div>
             </div>
 
-            {/* CARD 2: ACTION CTA CARD (Brand Navy Background) */}
-            <div className="rounded-3xl p-6 bg-[#172228] text-white text-center shadow-lg shadow-navy-950/20">
+            {/* DESKTOP ONLY SIDEBAR CARDS */}
+            <div className="hidden lg:block space-y-5 desktop-sidebar-only">
+{/* CARD 2: ACTION CTA CARD (Brand Navy Background) */}
+            <div className="hidden lg:block rounded-3xl p-6 bg-[#172228] text-white text-center shadow-lg shadow-navy-950/20">
               <div className="inline-block px-3 py-1 rounded-full bg-white/10 text-rose-200 text-[10px] font-black uppercase tracking-wider mb-3">
                 CONFIDENTIAL LEGAL DESK
               </div>
@@ -1357,7 +1308,7 @@ export default function WillRegistrationClient() {
             </div>
 
             {/* CARD 3: TRUST / BENEFITS CHECKLIST */}
-            <div className="bg-white rounded-3xl border border-slate-200/80 p-5 shadow-xs">
+            <div className="hidden lg:block bg-white rounded-3xl border border-slate-200/80 p-5 shadow-xs">
               <div className="text-xs font-black uppercase tracking-wider text-slate-700 mb-3 flex items-center gap-1.5">
                 <Award className="w-4 h-4 text-[#C65378]" />
                 <span>Our Registration Guarantees</span>
@@ -1391,7 +1342,7 @@ export default function WillRegistrationClient() {
             </div>
 
             {/* CARD 4: RELATED SERVICES & GUIDES */}
-            <div className="bg-white rounded-3xl border border-slate-200/80 p-5 shadow-xs space-y-2.5">
+            <div className="hidden lg:block bg-white rounded-3xl border border-slate-200/80 p-5 shadow-xs space-y-2.5">
               <div className="text-xs font-black uppercase tracking-wider text-slate-700 mb-1">
                 Related Legal Resources
               </div>
@@ -1428,6 +1379,38 @@ export default function WillRegistrationClient() {
                   <ArrowRight className="w-3 h-3" />
                 </div>
               </Link>
+            </div>
+            </div>
+
+            {/* MOBILE ONLY: Related WillDrafting Guides */}
+            <div className="pt-4 border-t border-slate-100 block lg:hidden">
+              <span className="text-xs font-bold text-[#172228] block mb-2">Related WillDrafting Guides:</span>
+              <div className="flex flex-wrap gap-2">
+                <Link
+                  href="/templates/will-format-india"
+                  className="text-[11px] px-3 py-1 rounded-lg bg-slate-100 text-[#172228] hover:bg-slate-200 transition-colors"
+                >
+                  Free Indian Will Format
+                </Link>
+                <Link
+                  href="/templates/codicil-format-india"
+                  className="text-[11px] px-3 py-1 rounded-lg bg-slate-100 text-[#172228] hover:bg-slate-200 transition-colors"
+                >
+                  Codicil Format India
+                </Link>
+                <Link
+                  href="/tools/will-checklist"
+                  className="text-[11px] px-3 py-1 rounded-lg bg-slate-100 text-[#172228] hover:bg-slate-200 transition-colors"
+                >
+                  Will Preparation Checklist
+                </Link>
+                <Link
+                  href="/blogs/notarized-will-vs-registered-will-india"
+                  className="text-[11px] px-3 py-1 rounded-lg bg-slate-100 text-[#172228] hover:bg-slate-200 transition-colors"
+                >
+                  Notarized vs Registered Will
+                </Link>
+              </div>
             </div>
           </aside>
         </div>

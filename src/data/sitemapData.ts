@@ -17,9 +17,73 @@ export interface SitemapPageItem {
  * Newly created legal templates and diagnostic tools are prioritized at the very top.
  */
 export const staticPages: SitemapPageItem[] = [
+  {
+    title: "Christian & Parsi Will Rules India: Indian Succession Act Guide",
+    href: "/blogs/christian-parsi-will-indian-succession-act",
+    category: "Guides",
+    date: "21-10-2026",
+    changefreq: "weekly",
+    priority: 1.0,
+  },
   // =========================================================================
   // 1. TOP FEATURED BLOG & SUCCESSION GUIDES (PRIORITIZED AT VERY TOP)
   // =========================================================================
+  {
+    title: "Will vs Family Trust in India: Which is Better & Legal Guide",
+    href: "/blogs/will-vs-family-trust-india",
+    category: "Guides",
+    date: "21-10-2026",
+    changefreq: "weekly",
+    priority: 1.0,
+  },
+  {
+    title: "How to Include Crypto in Will India: Digital Assets & Succession",
+    href: "/blogs/digital-assets-crypto-will-india",
+    category: "Guides",
+    date: "21-10-2026",
+    changefreq: "weekly",
+    priority: 1.0,
+  },
+  {
+    title: "Is Notarized Will Valid in India: Notarized vs Registered Will",
+    href: "/blogs/notarized-will-vs-registered-will-india",
+    category: "Guides",
+    date: "21-10-2026",
+    changefreq: "weekly",
+    priority: 1.0,
+  },
+  {
+    title: "Can Gift Deed Be Cancelled by Parents: Senior Citizens Act Guide",
+    href: "/blogs/gift-deed-cancellation-senior-citizens-act-section-23",
+    category: "Guides",
+    date: "21-10-2026",
+    changefreq: "weekly",
+    priority: 1.0,
+  },
+  {
+    title: "Gift Deed vs Will Which is Better in India: Decision Guide",
+    href: "/blogs/gift-deed-vs-will-india",
+    category: "Guides",
+    date: "21-10-2026",
+    changefreq: "weekly",
+    priority: 1.0,
+  },
+  {
+    title: "HUF Property After Death of Karta: Legal Succession & Will Guide",
+    href: "/blogs/huf-property-after-death-of-karta",
+    category: "Guides",
+    date: "21-10-2026",
+    changefreq: "weekly",
+    priority: 1.0,
+  },
+  {
+    title: "Hindu Woman Property Rights: Stridhan & Will Legal Guide",
+    href: "/blogs/hindu-woman-property-rights-stridhan-will",
+    category: "Guides",
+    date: "21-10-2026",
+    changefreq: "weekly",
+    priority: 1.0,
+  },
   {
     title: "Second Wife and Children Property Rights in India: Legal Guide",
     href: "/blogs/second-wife-children-property-rights-india",

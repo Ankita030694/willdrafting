@@ -1352,8 +1352,10 @@ export default function LegalHeirCertificateVsSuccessionCertificateClient() {
               </div>
             </div>
 
-            {/* CARD 2: NEED LEGAL ASSISTANCE / EMERGENCY CTA */}
-            <div className="rounded-3xl p-6 bg-[#172228] text-white text-center space-y-3 shadow-md">
+            {/* DESKTOP ONLY SIDEBAR CARDS */}
+            <div className="hidden lg:block space-y-5 desktop-sidebar-only">
+{/* CARD 2: NEED LEGAL ASSISTANCE / EMERGENCY CTA */}
+            <div className="hidden lg:block rounded-3xl p-6 bg-[#172228] text-white text-center space-y-3 shadow-md">
               <span className="inline-block text-[10px] font-black uppercase tracking-wider px-3 py-1 rounded-full bg-white/10 text-rose-200 border border-white/10">
                 Confidential Legal Advisory
               </span>
@@ -1379,7 +1381,7 @@ export default function LegalHeirCertificateVsSuccessionCertificateClient() {
             </div>
 
             {/* CARD 3: TRUST / BENEFITS CHECKLIST */}
-            <div className="bg-white rounded-3xl border border-[#172228]/10 shadow-xs p-5">
+            <div className="hidden lg:block bg-white rounded-3xl border border-[#172228]/10 shadow-xs p-5">
               <h3 className="font-bold text-xs uppercase tracking-wider text-[#172228] mb-3">
                 Why Plan With WillDrafting
               </h3>
@@ -1404,7 +1406,7 @@ export default function LegalHeirCertificateVsSuccessionCertificateClient() {
             </div>
 
             {/* CARD 4: RELATED GUIDES */}
-            <div className="bg-white rounded-3xl border border-[#172228]/10 shadow-xs p-5 space-y-3">
+            <div className="hidden lg:block bg-white rounded-3xl border border-[#172228]/10 shadow-xs p-5 space-y-3">
               <h3 className="font-bold text-xs uppercase tracking-wider text-[#172228]">
                 Related Succession Guides
               </h3>
@@ -1440,7 +1442,38 @@ export default function LegalHeirCertificateVsSuccessionCertificateClient() {
                 </Link>
               </div>
             </div>
+            </div>
 
+            {/* MOBILE ONLY: Related WillDrafting Guides */}
+            <div className="pt-4 border-t border-slate-100 block lg:hidden">
+              <span className="text-xs font-bold text-[#172228] block mb-2">Related WillDrafting Guides:</span>
+              <div className="flex flex-wrap gap-2">
+                <Link
+                  href="/service/succession-certificate"
+                  className="text-[11px] px-3 py-1 rounded-lg bg-slate-100 text-[#172228] hover:bg-slate-200 transition-colors"
+                >
+                  Succession Certificate Lawyers
+                </Link>
+                <Link
+                  href="/tools/succession-certificate-court-fee-calculator"
+                  className="text-[11px] px-3 py-1 rounded-lg bg-slate-100 text-[#172228] hover:bg-slate-200 transition-colors"
+                >
+                  Court Fee Calculator India
+                </Link>
+                <Link
+                  href="/templates/release-deed-format"
+                  className="text-[11px] px-3 py-1 rounded-lg bg-slate-100 text-[#172228] hover:bg-slate-200 transition-colors"
+                >
+                  Relinquishment Deed Format
+                </Link>
+                <Link
+                  href="/blogs/property-transfer-after-death-without-will-india"
+                  className="text-[11px] px-3 py-1 rounded-lg bg-slate-100 text-[#172228] hover:bg-slate-200 transition-colors"
+                >
+                  Property Transfer After Death
+                </Link>
+              </div>
+            </div>
           </aside>
 
         </div>

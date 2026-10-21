@@ -1352,8 +1352,10 @@ export default function SecondWifeChildrenRightsClient() {
               </div>
             </div>
 
-            {/* CARD 2: EMERGENCY CTA CARD */}
-            <div className="bg-[#172228] text-white rounded-2xl p-6 shadow-md text-center space-y-4">
+            {/* DESKTOP ONLY SIDEBAR CARDS */}
+            <div className="hidden lg:block space-y-6 desktop-sidebar-only">
+{/* CARD 2: EMERGENCY CTA CARD */}
+            <div className="hidden lg:block bg-[#172228] text-white rounded-2xl p-6 shadow-md text-center space-y-4">
               <div className="inline-block px-3 py-1 rounded-full bg-white/10 text-[10px] font-bold uppercase tracking-wider text-rose-200">
                 Blended Family Protection
               </div>
@@ -1376,7 +1378,7 @@ export default function SecondWifeChildrenRightsClient() {
             </div>
 
             {/* CARD 3: TRUST & BENEFITS CHECKLIST */}
-            <div className="bg-white rounded-2xl border border-slate-200/80 shadow-xs p-5 space-y-3">
+            <div className="hidden lg:block bg-white rounded-2xl border border-slate-200/80 shadow-xs p-5 space-y-3">
               <div className="font-bold text-xs uppercase tracking-wider text-slate-900 border-b border-slate-100 pb-2">
                 Why Plan With WillDrafting.in
               </div>
@@ -1401,7 +1403,7 @@ export default function SecondWifeChildrenRightsClient() {
             </div>
 
             {/* CARD 4: RELATED GUIDES */}
-            <div className="bg-white rounded-2xl border border-slate-200/80 shadow-xs p-5 space-y-3">
+            <div className="hidden lg:block bg-white rounded-2xl border border-slate-200/80 shadow-xs p-5 space-y-3">
               <div className="font-bold text-xs uppercase tracking-wider text-slate-900 border-b border-slate-100 pb-2">
                 Related Succession Guides
               </div>
@@ -1443,7 +1445,38 @@ export default function SecondWifeChildrenRightsClient() {
                 </Link>
               </div>
             </div>
+            </div>
 
+            {/* MOBILE ONLY: Related WillDrafting Guides */}
+            <div className="pt-4 border-t border-slate-100 block lg:hidden">
+              <span className="text-xs font-bold text-[#172228] block mb-2">Related WillDrafting Guides:</span>
+              <div className="flex flex-wrap gap-2">
+                <Link
+                  href="/blogs/married-daughter-rights-in-fathers-property"
+                  className="text-[11px] px-3 py-1 rounded-lg bg-slate-100 text-[#172228] hover:bg-slate-200 transition-colors"
+                >
+                  Married Daughter Property Rights
+                </Link>
+                <Link
+                  href="/blogs/property-transfer-after-death-without-will-india"
+                  className="text-[11px] px-3 py-1 rounded-lg bg-slate-100 text-[#172228] hover:bg-slate-200 transition-colors"
+                >
+                  Property Transfer After Death
+                </Link>
+                <Link
+                  href="/blogs/how-to-challenge-a-will-in-india"
+                  className="text-[11px] px-3 py-1 rounded-lg bg-slate-100 text-[#172228] hover:bg-slate-200 transition-colors"
+                >
+                  How to Challenge a Will
+                </Link>
+                <Link
+                  href="/templates/will-format-india"
+                  className="text-[11px] px-3 py-1 rounded-lg bg-slate-100 text-[#172228] hover:bg-slate-200 transition-colors"
+                >
+                  Free Indian Will Format
+                </Link>
+              </div>
+            </div>
           </aside>
         </div>
       </div>

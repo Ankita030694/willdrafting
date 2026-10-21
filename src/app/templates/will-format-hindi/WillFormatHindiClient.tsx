@@ -1293,8 +1293,10 @@ export default function WillFormatHindiClient() {
               </div>
             </div>
 
-            {/* CARD 2: ACTION CTA */}
-            <div className="bg-[#172228] rounded-3xl p-6 text-white text-center shadow-lg shadow-slate-900/10 space-y-4">
+            {/* DESKTOP ONLY SIDEBAR CARDS */}
+            <div className="hidden lg:block space-y-5 desktop-sidebar-only">
+{/* CARD 2: ACTION CTA */}
+            <div className="hidden lg:block bg-[#172228] rounded-3xl p-6 text-white text-center shadow-lg shadow-slate-900/10 space-y-4">
               <div className="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-white/10 text-[11px] font-bold tracking-wide text-rose-200">
                 <Lock className="w-3 h-3 text-[#C65378]" />
                 <span>गोपनीय और सुरक्षित</span>
@@ -1320,7 +1322,7 @@ export default function WillFormatHindiClient() {
             </div>
 
             {/* CARD 3: TRUST CHECKLIST */}
-            <div className="bg-white rounded-3xl border border-slate-200/80 p-5 shadow-xs space-y-3">
+            <div className="hidden lg:block bg-white rounded-3xl border border-slate-200/80 p-5 shadow-xs space-y-3">
               <p className="font-bold text-xs tracking-wide text-slate-800">यह प्रारूप क्यों चुनें?</p>
               <ul className="space-y-2.5 text-[13px] text-slate-600">
                 <li className="flex items-start gap-2">
@@ -1351,7 +1353,7 @@ export default function WillFormatHindiClient() {
             </div>
 
             {/* CARD 4: RELATED RESOURCES */}
-            <div className="bg-white rounded-3xl border border-slate-200/80 p-5 shadow-xs space-y-3">
+            <div className="hidden lg:block bg-white rounded-3xl border border-slate-200/80 p-5 shadow-xs space-y-3">
               <p className="font-bold text-xs tracking-wide text-slate-800">संबंधित मुफ्त संसाधन</p>
               <div className="space-y-2">
                 <Link
@@ -1377,6 +1379,38 @@ export default function WillFormatHindiClient() {
                 >
                   <div className="font-bold text-[13px] text-slate-900">उत्तराधिकार कैलकुलेटर</div>
                   <div className="text-[11px] text-slate-500 mt-0.5">वसीयत न हो तो किसे कितना मिलेगा? &rarr;</div>
+                </Link>
+              </div>
+            </div>
+            </div>
+
+            {/* MOBILE ONLY: Related WillDrafting Guides */}
+            <div className="pt-4 border-t border-slate-100 block lg:hidden">
+              <span className="text-xs font-bold text-[#172228] block mb-2">Related WillDrafting Guides:</span>
+              <div className="flex flex-wrap gap-2">
+                <Link
+                  href="/templates/will-format-india"
+                  className="text-[11px] px-3 py-1 rounded-lg bg-slate-100 text-[#172228] hover:bg-slate-200 transition-colors"
+                >
+                  English Will Format
+                </Link>
+                <Link
+                  href="/service/will-registration"
+                  className="text-[11px] px-3 py-1 rounded-lg bg-slate-100 text-[#172228] hover:bg-slate-200 transition-colors"
+                >
+                  वसीयत पंजीकरण सेवा
+                </Link>
+                <Link
+                  href="/tools/succession-calculator"
+                  className="text-[11px] px-3 py-1 rounded-lg bg-slate-100 text-[#172228] hover:bg-slate-200 transition-colors"
+                >
+                  उत्तराधिकार कैलकुलेटर
+                </Link>
+                <Link
+                  href="/tools/will-checklist"
+                  className="text-[11px] px-3 py-1 rounded-lg bg-slate-100 text-[#172228] hover:bg-slate-200 transition-colors"
+                >
+                  वसीयत चेकलिस्ट
                 </Link>
               </div>
             </div>

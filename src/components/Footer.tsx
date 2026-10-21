@@ -103,6 +103,11 @@ export default function Footer() {
                   Legal Journal
                 </Link>
               </li>
+              <li>
+                <Link href="/sitemap" className="hover:text-[#172228] transition-colors">
+                  Sitemap
+                </Link>
+              </li>
             </ul>
           </div>
 

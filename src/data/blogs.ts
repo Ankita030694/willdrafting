@@ -48,6 +48,466 @@ export interface BlogArticle {
 
 export const BLOG_ARTICLES: BlogArticle[] = [
   {
+    id: "christian-parsi-will-indian-succession-act",
+    slug: "christian-parsi-will-indian-succession-act",
+    aliases: [
+      "christian-will-rules-india",
+      "parsi-succession-india",
+      "indian-succession-act-part-v",
+      "christian-inheritance-law-india",
+    ],
+    category: "Succession Law & Lifecycle",
+    readTime: "9 min",
+    seoTitle: "Christian and Parsi Will Rules India: Succession Act",
+    metaDescription:
+      "Learn Christian and Parsi will rules in India under Indian Succession Act Part V. Understand legal heir shares, privileged wills, and draft with advocates.",
+    keywords: [
+      "christian will rules india",
+      "parsi succession",
+      "christian inheritance law india",
+      "parsi inheritance law",
+      "Indian Succession Act Part V",
+      "christian will format",
+      "parsi will rules",
+      "section 33 indian succession act",
+      "section 51 parsi succession",
+      "privileged wills succession act",
+      "christian intestate succession",
+    ],
+    title: "Christian and Parsi Will Rules: Indian Succession Act Guide",
+    lead:
+      "A comprehensive statutory guide to testamentary and intestate succession for Christians and Parsis under Part V and Part VI of the Indian Succession Act, 1925.",
+    date: "October 21, 2026",
+    imageSrc: "/images/christian-parsi-will-indian-succession-act.jpg",
+    author: "Advocate Sneha Jaiswal",
+    authorRole: "Senior Succession & Trust Counsel, AMA Legal Solutions",
+    shortVersion: [
+      "Christians and Parsis in India enjoy 100% testamentary freedom to bequeath self-acquired and inherited property without coparcenary or Islamic 1/3 restrictions.",
+      "If dying without a Will, Christian succession devolves under Sections 31 to 49: spouse receives 1/3 if children survive, 1/2 if kindred survive, and 100% if no relatives exist.",
+      "Parsi succession under Sections 50 to 56 was reformed in 1991 to establish full equality between sons and daughters, while granting parents of a deceased male a statutory half-share.",
+      "Privileged Wills under Sections 65-66 allow armed forces and mariners at sea to execute informal or oral Wills during expeditions and warfare.",
+    ],
+    sections: [
+      {
+        heading: "1. Legal Scope: Christian & Parsi Succession Framework",
+        paragraphs: [
+          "In India, inheritance and succession are partitioned along religious personal laws. While Hindus, Sikhs, Buddhists, and Jains are governed by the Hindu Succession Act 1956, and Muslims are governed by uncodified Shariat principles, Indian Christians and Parsis are governed directly by the Indian Succession Act, 1925 (Act No. 39 of 1925).",
+          "The Indian Succession Act divides succession into two distinct operational branches: Testamentary Succession under Part VI (Sections 59 to 191), which applies when a person executes a valid Will, and Intestate Succession under Part V (Sections 31 to 56), which applies when a person passes away without leaving a Will.",
+        ],
+      },
+      {
+        heading: "2. Christian Succession: Legal Heirs & Share Allocations",
+        paragraphs: [
+          "When an Indian Christian passes away intestate, property devolves under Sections 31 to 49 of the Indian Succession Act. Under Section 33(a), if the deceased leaves a surviving spouse and lineal descendants, the spouse receives one-third (1/3) of the estate, and the remaining two-thirds (2/3) is distributed equally among the children.",
+          "If the deceased leaves a spouse and kindred (parents or siblings) but no children, the spouse receives one-half (1/2), and the other half goes to kindred under Section 33(b). Under Section 35, widower rights are identical to widow rights.",
+        ],
+      },
+      {
+        heading: "3. Parsi Succession Rules: 1991 Reforms & Heir Shares",
+        paragraphs: [
+          "Parsi intestate succession is regulated by Sections 50 to 56 of the Indian Succession Act, 1925. Prior to the Indian Succession (Amendment) Act 1991, a son received twice the share of a daughter in a deceased father's property. The 1991 reform repealed this disparity, establishing identical, equal shares between sons and daughters.",
+          "Under Section 51(2), when a male Parsi dies leaving a widow and children, his father and mother each receive a share equal to half the share of each child, ensuring parental financial protection.",
+        ],
+      },
+    ],
+    actionSteps: [
+      "Audit all movable, immovable, and digital assets into a consolidated Schedule.",
+      "Appoint a capable executor and at least one alternate backup executor.",
+      "Execute your Will before two independent witnesses who are not beneficiaries under Section 67.",
+      "Store your original Will safely and consider optional registration at the Sub-Registrar Office.",
+    ],
+    disclaimer:
+      "This legal guide is published for educational and estate planning awareness under the Indian Succession Act, 1925. For complex multi-jurisdictional succession or probate petitions, consult a Bar Council enrolled advocate at AMA Legal Solutions.",
+  },
+  {
+    id: "digital-assets-crypto-will-india",
+    slug: "digital-assets-crypto-will-india",
+    aliases: [
+      "how-to-include-crypto-in-will-india",
+      "crypto-inheritance-india",
+      "bitcoin-will-india",
+      "digital-estate-planning-india",
+    ],
+    category: "Estate Planning & Lifecycle",
+    readTime: "8 min",
+    seoTitle: "How to Include Crypto in Will India: Digital Assets",
+    metaDescription:
+      "Learn how to include crypto in will India using the two-document method. Protect Bitcoin, wallets, and digital accounts legally with AMA advocates.",
+    keywords: [
+      "how to include crypto in will india",
+      "digital assets in will",
+      "crypto inheritance india",
+      "bitcoin will india",
+      "digital estate planning",
+      "include online accounts in will",
+      "crypto will two document method",
+      "virtual digital assets succession act",
+    ],
+    title: "How to Include Crypto & Digital Assets in an Indian Will",
+    lead:
+      "A comprehensive legal guide on digital estate planning in India: how to safely pass on cryptocurrency, private keys, cloud archives, and online accounts to your heirs using the Two-Document Method.",
+    date: "October 21, 2026",
+    imageSrc: "/images/digital-assets-crypto-will-india.jpg",
+    author: "Advocate Sneha Jaiswal",
+    authorRole: "Senior Succession & Trust Counsel, AMA Legal Solutions",
+    shortVersion: [
+      "Cryptocurrency is legally classified as a Virtual Digital Asset (VDA) under Section 2(47A) of the Income Tax Act, 1961, and can be validly bequeathed under Section 30 of the Indian Succession Act, 1925.",
+      "Never write seed phrases or passwords directly in a Will because Wills become public during court probate and are read by attesting witnesses.",
+      "Use the Two-Document Method: a formal Will that legally gifts your digital assets, plus a separate sealed memorandum that provides technical recovery instructions.",
+      "Under Section 56(2)(x) proviso, crypto received via a Will or inheritance is 100% exempt from income tax and gift tax at receipt.",
+      "Centralized Indian exchanges (CoinDCX, WazirX) require formal transmission claims with a death certificate and legal heir proof.",
+    ],
+    sections: [
+      {
+        heading: "1. Legal Status: Digital Assets & Crypto in Indian Law",
+        paragraphs: [
+          "In the 2020 Internet and Mobile Association of India (IMAI) landmark ruling, the Supreme Court confirmed that holding and trading cryptocurrency is a constitutionally protected economic right. Under Section 30 of the Indian Succession Act, 1925, any person of sound mind can bequeath movable property, which includes incorporeal digital property.",
+          "The Finance Act, 2022 codified cryptocurrency under Section 2(47A) of the Income Tax Act, 1961 as Virtual Digital Assets (VDAs). Combined with FIU-IND anti-money laundering regulations under the PMLA, Indian law treats crypto as personal property capable of being bequeathed to legal heirs.",
+        ],
+      },
+      {
+        heading: "2. The Two-Document Method: Why Never Put Keys in a Will",
+        paragraphs: [
+          "Section 63 of the Indian Succession Act mandates that a Will must be attested by two independent witnesses. Additionally, registered Wills and probated estates enter the public record. If a 12 or 24-word recovery seed phrase is written into a Will, anyone with court access can steal the wallet balance irreversibly.",
+          "The solution is the Two-Document Method: the formal Will names the beneficiaries and transfers legal ownership, while a separate, confidential access memorandum stored in a bank locker or password vault holds physical hardware locations, PINs, and recovery seeds.",
+        ],
+      },
+      {
+        heading: "3. Digital Asset Inventory Template: Checklist & Assets",
+        paragraphs: [
+          "A compliant digital inventory categorizes assets into email accounts, self-custodial hardware wallets (Ledger, Trezor), software hot wallets (MetaMask, Phantom), centralized exchanges (CoinDCX, WazirX), domain names, cloud storage, and creator revenue streams.",
+          "The inventory must be updated regularly without altering the core Will, allowing investors to adapt to changing portfolios without legal fees.",
+        ],
+      },
+      {
+        heading: "4. VDA Taxation: 30% Tax, 1% TDS & Inheritance Exemptions",
+        paragraphs: [
+          "Under the third proviso to Section 56(2)(x) of the Income Tax Act, 1961, Virtual Digital Assets received by inheritance or under a Will are 100% exempt from tax upon receipt.",
+          "However, when the heir subsequently liquidates the cryptocurrency into rupees, Section 115BBH levies a flat 30% tax (+ 4% cess) on net capital gains, with cost of acquisition deemed to be the original purchaser's price under Section 49(1).",
+        ],
+      },
+    ],
+    tableData: {
+      heading: "Credentials in Will vs Two-Document Method",
+      caption: "Security and legal comparison for cryptocurrency succession in India",
+      headers: ["Security Metric", "Keys Inside Will", "Two-Document Method", "Verdict"],
+      rows: [
+        ["Confidentiality", "Zero: Read by witnesses and court clerks", "100%: Sealed in bank locker or vault", "Two-Document Method Wins"],
+        ["Theft Risk", "Catastrophic: Exposed to third parties", "Minimal: Accessible only by executor", "Two-Document Method Wins"],
+        ["Ease of Updates", "Requires new Codicil or Will with witnesses", "Instant update to private memo", "Two-Document Method Wins"],
+        ["Court Validity", "Valid bequest but severe risk of theft", "100% Enforceable legal title", "Two-Document Method Wins"],
+      ],
+    },
+    templateBox: {
+      heading: "Digital Asset Memorandum Summary",
+      subtitle: "Supplementary confidential access document",
+      content: "Document 1: Formal Will (names beneficiaries for all VDAs)\nDocument 2: Sealed Access Letter (contains hardware locations, PINs, BIP-39 recovery phrases, 2FA backup codes)",
+    },
+    actionSteps: [
+      "Inventory all cryptocurrency wallets, exchanges, cloud accounts, and domain names.",
+      "Draft a formal Section 63 Will with a digital asset bequest clause naming your heirs.",
+      "Execute the Will before two independent adult witnesses with zero passwords listed.",
+      "Complete the confidential Digital Asset Access Memorandum with exact technical instructions.",
+      "Store the access memorandum in a secure bank locker, home safe, or encrypted password vault.",
+      "Configure automated platform tools like Google Inactive Account Manager and Apple Legacy Contact.",
+    ],
+    faqs: [
+      {
+        question: "Can I legally bequeath crypto and Bitcoin in an Indian Will?",
+        answer: "Yes. Under Section 30 of the Indian Succession Act, 1925, any competent person can dispose of movable property by Will. Cryptocurrencies are recognized as Virtual Digital Assets under Section 2(47A) of the Income Tax Act, 1961.",
+      },
+      {
+        question: "Why should I never put my crypto private keys or seed phrases in my Will?",
+        answer: "A Will is witnessed by two independent people and becomes a public record during court probate. Exposing seed phrases in a Will allows anyone reading the file to steal the balance irreversibly.",
+      },
+      {
+        question: "Is inherited crypto taxed in India under the 30% VDA tax rule?",
+        answer: "No, inheritance is 100% tax-free upon receipt under Section 56(2)(x) proviso. A flat 30% tax applies only when the legal heir later liquidates the tokens for cash.",
+      },
+      {
+        question: "What is the Two-Document Method for crypto succession?",
+        answer: "The Will names the legal heirs and transfers title without mentioning passwords. A separate, confidential memorandum holds private keys, PINs, and recovery instructions.",
+      },
+    ],
+    disclaimer:
+      "This guide is provided for educational and estate planning purposes under Indian succession and tax laws. It does not constitute financial, investment, or tax advice. Consult an advocate for customized estate planning.",
+  },
+  {
+    id: "will-vs-family-trust-india",
+    slug: "will-vs-family-trust-india",
+    aliases: [
+      "will-vs-trust-india",
+      "family-trust-vs-will",
+      "private-trust-india",
+      "trust-for-estate-planning-india",
+    ],
+    category: "Estate Planning & Lifecycle",
+    readTime: "9 min",
+    seoTitle: "Will vs Family Trust in India: Legal Guide | WillDrafting",
+    metaDescription:
+      "Will vs family trust in India: compare setup costs, privacy, tax rules, and asset safety under Indian Trusts Act. Choose the right estate plan with AMA.",
+    keywords: [
+      "will vs trust india",
+      "family trust vs will",
+      "private trust india",
+      "trust for estate planning india",
+      "will or trust which is better",
+      "indian trusts act 1882",
+    ],
+    title: "Will vs Family Trust in India: Which is Right for You?",
+    lead:
+      "Deciding between a Will and a Private Family Trust is a critical milestone for Indian families. A Will offers simplicity and zero recurring costs under the Indian Succession Act, while a Family Trust under the Indian Trusts Act delivers total privacy, milestone payouts, and asset protection against creditors.",
+    date: "October 21, 2026",
+    imageSrc: "/images/will-vs-family-trust-india.jpg",
+    author: "Advocate Sneha Jaiswal",
+    authorRole: "Senior Succession Counsel, AMA Legal Solutions",
+    shortVersion: [
+      "A simple Section 63 Will is 100% sufficient for 90%+ of Indian families with estates under ₹5 Crores and harmonious adult heirs.",
+      "A Will costs ₹0 stamp duty nationwide and requires zero annual maintenance or separate tax filings.",
+      "A Private Family Trust under the Indian Trusts Act 1882 offers 100% confidentiality, bypassing public court probate completely.",
+      "Family trusts enable staged milestone payouts (e.g. at ages 25 or 30), protecting minor children or special needs dependents.",
+      "Irrevocable family trusts provide strong asset protection against future commercial creditors, SARFAESI, and insolvency.",
+    ],
+    sections: [
+      {
+        heading: "1. Core Distinction: Testamentary Will vs Private Family Trust",
+        paragraphs: [
+          "Under Section 2(h) of the Indian Succession Act, 1925, a Will is an ambulatory instrument that takes effect only upon the testator's death. In contrast, a Private Family Trust governed by the Indian Trusts Act, 1882 is a living legal entity where legal title is transferred to trustees to manage for beneficiaries.",
+          "While a Will leaves the testator in full personal ownership until death, a Family Trust can operate immediately, managing family assets during life, illness, or mental incapacity.",
+        ],
+      },
+      {
+        heading: "2. When a Will is 100% Sufficient for Most Indian Families",
+        paragraphs: [
+          "For estates valued under ₹5 Crores with standard assets like a family home, bank FDs, demat holdings, and insurance, a Will drafted under Section 63 provides complete legal protection without complex trust accounting.",
+          "A Will gives you absolute freedom to sell, mortgage, or rewrite your bequests at any time with zero ongoing fees.",
+        ],
+      },
+      {
+        heading: "3. When an HNI Family Trust Makes Strategic Sense",
+        paragraphs: [
+          "High Net Worth Individuals (₹5 Cr+), families with minor children or special needs dependents, and operating business owners benefit immensely from a Private Family Trust.",
+          "Trusts eliminate corporate shareholding deadlocks, safeguard vulnerable heirs from predatory relatives, and keep family net worth strictly private by avoiding public court probate.",
+        ],
+      },
+    ],
+    tableData: {
+      heading: "Will vs Private Family Trust in India",
+      caption: "Statutory comparison under Indian Succession Act 1925 and Indian Trusts Act 1882",
+      headers: ["Parameter", "Will in India", "Private Family Trust"],
+      rows: [
+        ["Effective Date", "Only upon death", "Immediately upon execution"],
+        ["Initial & Annual Cost", "₹0 stamp duty, ₹0 annual fees", "Stamp duty on deed + annual audit/tax filing"],
+        ["Probate & Public Record", "Becomes public record during probate", "100% confidential private agreement"],
+        ["Asset Protection", "Zero protection from personal debts", "Strong creditor shield (if irrevocable)"],
+        ["Staged Payouts", "Outright one-time transfer", "Milestone payouts (e.g. at ages 25, 30)"],
+      ],
+    },
+    actionSteps: [
+      "Assess your total net worth and determine if it exceeds the ₹5 Crore threshold",
+      "Evaluate whether your beneficiaries include minors, special-needs dependents, or blended family members",
+      "If simple distribution is needed, draft a legally binding Section 63 Will online in 15 minutes",
+      "If business succession, privacy, or creditor protection is needed, consult AMA advocates for Private Trust structuring",
+      "Consider a Pour-Over Will alongside your trust to capture subsequent personal acquisitions",
+    ],
+    faqs: [
+      {
+        question: "When is a simple Will enough for an Indian family?",
+        answer: "A Will is 100% sufficient for estates below ₹5 Crores with straightforward assets, harmonious family members, and adult heirs.",
+      },
+      {
+        question: "Does a private family trust bypass probate in India?",
+        answer: "Yes. Private family trusts bypass court probate entirely, transferring assets immediately without court delays or newspaper notices.",
+      },
+    ],
+    disclaimer:
+      "This guide is published for informational purposes under the Indian Trusts Act, 1882, Indian Succession Act, 1925, and Income Tax Act, 1961, and does not constitute formal legal counsel. For high-net-worth trust structuring or contentious succession, consult AMA Legal Solutions.",
+  },
+  {
+    id: "notarized-will-vs-registered-will-india",
+    slug: "notarized-will-vs-registered-will-india",
+    aliases: [
+      "is-notarized-will-valid-in-india",
+      "notarized-will-vs-registered-will",
+      "will-registration-vs-notarization",
+      "is-unregistered-will-valid",
+    ],
+    category: "Estate Planning & Lifecycle",
+    readTime: "8 min",
+    seoTitle: "Is Notarized Will Valid in India? Guide | WillDrafting",
+    metaDescription:
+      "Is a notarized will valid in India? Learn Section 63 rules, why notarization adds no legal weight, registered will benefits, and compare all three types.",
+    keywords: [
+      "is notarized will valid in india",
+      "notarized will vs registered will",
+      "will registration vs notarization",
+      "is unregistered will valid",
+      "registered will benefits",
+      "will notarization india",
+    ],
+    title: "Is a Notarized Will Legally Valid in India? Plain vs Notarized vs Registered",
+    lead:
+      "Thousands of Indians pay for notary stamps believing their Will is government-protected. The statutory reality: notarization adds zero legal validity under Section 63 of the Indian Succession Act. A plain paper Will with two witnesses is 100% valid, while registration adds formidable evidentiary weight in court.",
+    date: "October 21, 2026",
+    imageSrc: "/images/notarized-will-vs-registered-will-india.jpg",
+    author: "Advocate Sneha Jaiswal",
+    authorRole: "Senior Succession Counsel, AMA Legal Solutions",
+    shortVersion: [
+      "Notarization adds ZERO legal validity under Indian succession law; a plain paper Will with two Section 63 witnesses is equally valid.",
+      "Registration is 100% optional under Section 18(e) of the Registration Act, 1908; an unregistered Will is completely enforceable.",
+      "Registration creates a powerful statutory presumption of genuineness under Section 60, making court challenges and forgery claims far harder.",
+      "Under Schedule I of the Indian Stamp Act, 1899, Wills attract ₹0 stamp duty nationwide—stamp paper is never required.",
+      "Section 67 strictly disqualifies beneficiaries from signing as attesting witnesses—their bequests become completely void.",
+    ],
+    sections: [
+      {
+        heading: "1. Three-Way Legal Matrix: Plain vs Notarized vs Registered",
+        paragraphs: [
+          "Under Section 63 of the Indian Succession Act, 1925, any Will executed in writing, signed by the testator, and attested by at least two independent adult witnesses is 100% legally enforceable in all Indian courts.",
+          "Notarization before an advocate under the Notaries Act, 1952 merely verifies identity and adds zero testamentary protection. Conversely, registration before the Sub-Registrar creates a permanent public record and strong evidentiary presumption.",
+        ],
+      },
+      {
+        heading: "2. The Section 63 Mandatory Attestation Rules",
+        paragraphs: [
+          "The legal validity of an Indian Will rests exclusively on Section 63: written document, signature or thumb impression of the testator, and attestation by two or more independent witnesses.",
+          "Under Section 67, beneficiaries and their spouses must never sign as witnesses. Doing so preserves the Will but forfeits their entire inheritance.",
+        ],
+      },
+      {
+        heading: "3. When Registration at the Sub-Registrar Office is Worth It",
+        paragraphs: [
+          "Registration is strongly advised when disinheriting legal heirs, dividing high-value metropolitan properties, or when the testator is elderly or ailing and relatives might allege dementia.",
+          "Registered Wills are preserved permanently in Book 3 at the Sub-Registrar Office, allowing authenticated certified copies if the original paper is lost or concealed.",
+        ],
+      },
+    ],
+    tableData: {
+      heading: "Plain vs Notarized vs Registered Will Comparison",
+      caption: "Statutory parameters comparison under Indian Succession Act 1925 and Registration Act 1908",
+      headers: ["Parameter", "Plain Will", "Notarized Will", "Registered Will"],
+      rows: [
+        ["Statutory Validity", "100% valid under ISA Sec 63", "100% valid under ISA Sec 63", "100% valid under ISA Sec 63"],
+        ["Evidentiary Value", "Baseline proof required", "Slight identity proof only", "High presumption (Sec 60)"],
+        ["Stamp Duty", "₹0 nationwide", "₹0 stamp duty", "₹0 stamp duty"],
+        ["SRO Visit Needed", "No visit required", "No SRO visit needed", "Mandatory Sub-Registrar visit"],
+        ["Government Archive", "None (Private custody)", "None (Private register)", "Permanent archive in Book 3"],
+      ],
+    },
+    actionSteps: [
+      "Draft your Will on plain white A4 paper without purchasing stamp paper",
+      "Select two independent adult witnesses who are not beneficiaries under the Will",
+      "Conduct a simultaneous signing ceremony where all parties witness each other sign",
+      "If disinheriting an heir or owning prime real estate, book an SRO registration appointment",
+      "Store the executed Will or certified copy with your named executor",
+    ],
+    faqs: [
+      {
+        question: "Is a notarized Will valid in India?",
+        answer: "Yes, but solely because it satisfies Section 63 witness requirements, not because of the notary stamp. The seal adds zero extra legal validity.",
+      },
+      {
+        question: "Is an unregistered Will legally enforceable?",
+        answer: "Yes, 100%. Under Section 18(e) of the Registration Act, Will registration is optional. An unregistered Will is fully valid in court.",
+      },
+    ],
+    disclaimer:
+      "This guide is published for informational purposes under the Indian Succession Act, 1925 and Registration Act, 1908, and does not constitute formal legal advice. For contentious estates or registration assistance, consult an advocate at AMA Legal Solutions.",
+  },
+  {
+    id: "gift-deed-vs-will-india",
+    slug: "gift-deed-vs-will-india",
+    aliases: [
+      "gift-deed-or-will",
+      "gift-vs-will-property-india",
+      "gift-deed-vs-will-which-is-better",
+    ],
+    category: "Estate Planning & Lifecycle",
+    readTime: "9 min",
+    seoTitle: "Gift Deed vs Will Which is Better in India | WillDrafting",
+    metaDescription:
+      "Gift deed vs Will: which is better in India? Compare stamp duty, Section 56(2)(x) tax, revocability, and costs to protect your property and family rights.",
+    keywords: [
+      "gift deed vs will which is better",
+      "gift deed vs will",
+      "gift deed or will for property",
+      "gift deed tax implications",
+      "gift deed stamp duty",
+      "property transfer gift vs will",
+    ],
+    title: "Gift Deed vs Will: Which Is Better for Property in India?",
+    lead:
+      "Choosing between a Gift Deed and a Last Will is one of the most critical estate planning decisions in India. A Gift Deed offers immediate irrevocable title transfer but incurs high stamp duty and loss of control. A Will preserves 100% control for life, incurs ₹0 stamp duty, and protects against elder abandonment.",
+    date: "October 21, 2026",
+    imageSrc: "/images/gift-deed-vs-will-india.jpg",
+    author: "Advocate Rajeshwar Rao",
+    authorRole: "Senior Succession Counsel, AMA Legal Solutions",
+    shortVersion: [
+      "A Gift Deed transfers property immediately during lifetime under Section 122 of TPA, whereas a Will operates only upon demise under Section 59 of ISA.",
+      "Wills attract ₹0 stamp duty throughout India, while Gift Deeds attract 1% to 7% state stamp duty plus local cess and registration fees.",
+      "A Will is 100% revocable anytime during life, allowing parents to change bequests if family circumstances or relations change.",
+      "Under Section 56(2)(x), gifts are tax-free only for relatives; bequests under a Will are 100% tax-free for anyone (including nephews, friends, or caretakers).",
+      "Senior citizens gifting property must include Section 23 MWPSC maintenance conditions to retain statutory cancellation rights (Urmila Dixit v. Sunil Sharan Dixit 2025).",
+    ],
+    sections: [
+      {
+        heading: "1. Core Differences in Ownership, Control and Timing",
+        paragraphs: [
+          "Under Section 122 of the Transfer of Property Act, 1882, a gift involves the immediate voluntary transfer of property without consideration. Once accepted and registered, the donor completely divests all ownership and rental rights.",
+          "Conversely, under the Indian Succession Act, 1925, a Will is inherently ambulatory and revocable. It takes effect only upon the testator's death, allowing the owner to live in the home and collect rent for life.",
+        ],
+      },
+      {
+        heading: "2. State Stamp Duty Disparity: Maharashtra Worked Example",
+        paragraphs: [
+          "Wills are universally exempt from stamp duty across India under Schedule I of the Indian Stamp Act, 1899. Gift Deeds, however, require compulsory registration and heavy ad-valorem stamp duty.",
+          "For a ₹50 Lakh flat in Maharashtra, a Gift Deed to a blood relative costs approximately ₹2,46,500 in stamp duty, cess, and registration fees, whereas drafting a valid Will costs ₹1,499 with ₹0 stamp duty.",
+        ],
+      },
+      {
+        heading: "3. Income Tax Section 56(2)(x) & Elder Protection Safeguards",
+        paragraphs: [
+          "Gifts to non-relatives exceeding ₹50,000 are taxed as Income from Other Sources under Section 56(2)(x). Nephews, nieces, and friends are excluded from the relative definition, making gifts to them heavily taxed.",
+          "Under Section 23 of the Maintenance and Welfare of Parents and Senior Citizens Act, 2007, reaffirmed in Urmila Dixit v. Sunil Sharan Dixit (2025 INSC 20), elderly parents can void conditional gift deeds if children fail to maintain them.",
+        ],
+      },
+    ],
+    tableData: {
+      heading: "Gift Deed vs Will Core Comparison",
+      caption: "Statutory and financial comparison between Gift Deeds and Wills in India",
+      headers: ["Parameter", "Gift Deed", "Last Will"],
+      rows: [
+        ["Timing", "Immediate during lifetime", "After death of testator"],
+        ["Stamp Duty", "1% to 7% state stamp duty", "₹0 stamp duty nationwide"],
+        ["Revocability", "Irrevocable once accepted", "100% revocable anytime"],
+        ["Owner Control", "Surrendered immediately", "Retained 100% for life"],
+        ["Income Tax", "Exempt for relatives only", "100% exempt for anyone under Clause (I)"],
+      ],
+    },
+    actionSteps: [
+      "Assess whether you need uninterrupted lifetime residence or rental income",
+      "Calculate state stamp duty (3% to 7%) vs ₹0 for a testamentary Will",
+      "Confirm whether the beneficiary qualifies as an IT Section 56 relative",
+      "If choosing a Gift Deed as a senior citizen, insert a Section 23 maintenance clause",
+      "Execute your Will on plain paper before two independent adult witnesses under ISA Section 63",
+    ],
+    faqs: [
+      {
+        question: "Which is cheaper: a Gift Deed or a Will in India?",
+        answer: "A Will is significantly cheaper because it incurs ₹0 stamp duty across all Indian states and does not require mandatory registration.",
+      },
+      {
+        question: "Can parents cancel a registered Gift Deed if their child neglects them?",
+        answer: "Yes, under Section 23 of the Senior Citizens Act, 2007 and the Supreme Court ruling in Urmila Dixit (2025 INSC 20), the Maintenance Tribunal can void conditional gift deeds.",
+      },
+      {
+        question: "Is stamp duty payable on a Will in India?",
+        answer: "No, Wills are 100% exempt from stamp duty under the Indian Stamp Act, 1899 throughout India.",
+      },
+    ],
+    disclaimer: "This guide reflects the Transfer of Property Act 1882, Indian Succession Act 1925, Income Tax Act 1961, and MWPSC Act 2007. For tailored conveyancing and succession advice, consult AMA Legal Solutions.",
+  },
+  {
     id: "1",
     slug: "nri-will-for-indian-property-two-will-strategy",
     aliases: ["nri-will-india-guide"],
@@ -1449,6 +1909,289 @@ Official Clinic / Hospital Stamp & Seal:`,
     ],
     disclaimer:
       "This guide reflects the Hindu Marriage Act 1955, Hindu Succession Act 1956, and Supreme Court judgments in Revanasiddappa (2023) and Badshah (2014). For contested partition suits and legal advice, consult AMA Legal Solutions.",
+  },
+  {
+    id: "hindu-woman-property-rights-stridhan-will",
+    slug: "hindu-woman-property-rights-stridhan-will",
+    aliases: [
+      "hindu-woman-property-rights",
+      "stridhan-and-will-india",
+      "stridhan-rules-india",
+    ],
+    category: "Family Succession & Property Rights",
+    readTime: "10 min",
+    seoTitle: "Hindu Woman Property Rights: Stridhan & Will | WillDrafting",
+    metaDescription:
+      "Understand Hindu woman property rights, Stridhan legal ownership under HSA Section 14, Section 15 inheritance rules, and why a Will protects your family.",
+    keywords: [
+      "stridhan",
+      "hindu woman property rights",
+      "stridhan meaning",
+      "woman property rights india",
+      "HSA section 14",
+      "female intestate succession section 15",
+      "woman dying without will",
+      "section 15 2 hindu succession act",
+      "stridhan vs dowry",
+      "pratibha rani vs suraj kumar",
+      "can married woman make a will in india",
+      "hindu succession act section 30",
+    ],
+    title: "Hindu Woman Property Rights: Stridhan, Succession & Wills",
+    lead:
+      "Under Section 14 of the Hindu Succession Act, 1956, a Hindu woman is the absolute owner of all property in her possession. Under the landmark Supreme Court ruling in Pratibha Rani v. Suraj Kumar, Stridhan belongs exclusively to her. If she dies without a Will, Section 15 default rules can transfer her estate to her husband's family, making a Will under Section 30 essential.",
+    date: "October 21, 2026",
+    imageSrc: "/images/hindu-woman-property-rights-stridhan-will.jpg",
+    author: "Advocate Rajeshwar Rao",
+    authorRole: "Senior Succession Counsel, AMA Legal Solutions",
+    shortVersion: [
+      "Under Section 14(1) of the Hindu Succession Act, limited ownership was abolished; a Hindu woman is the 100% absolute owner of all assets in her possession",
+      "Stridhan includes wedding jewelry, parental gifts, cash, and self-acquired salary; husbands and in-laws hold it purely as trustees and refuse to return it at risk of criminal breach of trust (Pratibha Rani v. Suraj Kumar)",
+      "If a Hindu woman dies without a Will (intestate), Section 15(1)(a) divides her property among husband and children; her aging parents receive 0%",
+      "Under the Section 15(2) trap, property inherited from parents reverts to father's heirs if she dies childless, while self-acquired wealth passes to her husband or his heirs",
+      "Under Section 30, any Hindu woman has complete testamentary freedom to bequeath 100% of her Stridhan and property to her parents, children, or anyone via a valid Will",
+    ],
+    sections: [
+      {
+        heading: "1. Abolition of Women's Limited Estate Under Section 14",
+        paragraphs: [
+          "Before 1956, Hindu personal law severely restricted women's property rights. Under classical Shastric law, a woman held property as a 'limited owner' without powers of alienation or testamentary disposition.",
+          "Section 14(1) of the Hindu Succession Act, 1956 revolutionized Indian property law by converting all property possessed by a female Hindu into her absolute ownership. In V. Tulasamma v. Sesha Reddy (1977), the Supreme Court confirmed that Section 14(1) must be given the widest possible amplitude.",
+        ],
+      },
+      {
+        heading: "2. Legal Scope of Stridhan vs Illegal Dowry",
+        paragraphs: [
+          "Stridhan encompasses all voluntary gifts, gold ornaments, silverware, cash, and self-acquired savings accumulated by a woman before, at, or after marriage. Under Section 14(1), her ownership is exclusive.",
+          "In Pratibha Rani v. Suraj Kumar (1985), the Supreme Court held that custody of jewelry by the husband or in-laws does not create co-ownership. Refusing to return Stridhan constitutes Criminal Breach of Trust under Section 316 BNS (formerly Section 406 IPC).",
+        ],
+      },
+      {
+        heading: "3. The Section 15(2) Reversion Trap for Childless Women",
+        paragraphs: [
+          "If a Hindu woman dies without a Will, Section 15 governs devolution. While Section 15(1)(a) divides property among husband and children, Section 15(2) contains strict reversionary rules for childless women.",
+          "Property inherited from parents reverts to the father's heirs under Section 15(2)(a). However, her self-acquired wealth and Stridhan do not revert to her parents—they go to her husband or his family, leaving her parents with nothing unless protected by a Will.",
+        ],
+      },
+      {
+        heading: "4. Testamentary Freedom Under Section 30",
+        paragraphs: [
+          "Section 30 of the Hindu Succession Act empowers any Hindu woman of sound mind to dispose of 100% of her property, including Stridhan, self-acquired real estate, and her coparcenary share, by Will.",
+          "Executing a Will on WillDrafting.in takes just 15 minutes and ensures that your jewelry and hard-earned savings pass safely to the beneficiaries you choose, bypassing default statutory traps.",
+        ],
+      },
+    ],
+    tableData: {
+      heading: "Master Property Classification for Hindu Women",
+      caption: "Statutory rights, ownership status, and devolution rules under HSA 1956",
+      headers: [
+        "Property Category",
+        "Ownership Status",
+        "Lifetime Disposal (Sale/Gift)",
+        "Devolution if Intestate (No Will)",
+      ],
+      rows: [
+        [
+          "Stridhan (Jewelry & Gifts)",
+          "100% Absolute Ownership",
+          "Unrestricted sole discretion",
+          "Husband & children; husband's family if childless",
+        ],
+        [
+          "Self-Acquired Real Estate",
+          "100% Absolute Ownership",
+          "Full power to sell or mortgage",
+          "Husband & children; husband's family if childless",
+        ],
+        [
+          "Inherited from Parents",
+          "Absolute during lifetime",
+          "Full power to alienate or will",
+          "Reverts to Father's heirs if childless (Sec 15(2)(a))",
+        ],
+        [
+          "Inherited from Husband",
+          "Absolute during lifetime",
+          "Full power to alienate or will",
+          "Reverts to Husband's heirs if childless (Sec 15(2)(b))",
+        ],
+        [
+          "Ancestral Coparcenary Share",
+          "Birthright coparcener (2005)",
+          "Right to demand partition",
+          "Notional partition under Section 6",
+        ],
+      ],
+    },
+    actionSteps: [
+      "Compile an itemized inventory of all Stridhan jewelry with photographs and jeweler purchase invoices",
+      "Store jewelry in a single-operator bank locker held exclusively in your individual name",
+      "Obtain certified copies of registered sale deeds for self-acquired and parental real estate",
+      "Update nominations across bank accounts, mutual funds, and demat accounts to match your testamentary wishes",
+      "Execute a legally binding Will under Section 30 of the Hindu Succession Act to protect your aging parents and children",
+      "Optionally register the Will at the local Sub-Registrar Office for total evidentiary protection",
+    ],
+    faqs: [
+      {
+        question: "What is Stridhan under Indian succession law?",
+        answer:
+          "Stridhan refers to all voluntary gifts, jewelry, cash, and self-acquired earnings given to a Hindu woman before, during, or after marriage. Under Section 14(1) of the Hindu Succession Act, she is the sole, absolute owner of her Stridhan.",
+      },
+      {
+        question: "Can in-laws or husbands claim the wife's Stridhan jewelry?",
+        answer:
+          "No. The Supreme Court in Pratibha Rani v. Suraj Kumar (1985) ruled that Stridhan is the exclusive property of the woman. In-laws hold it purely as trustees and committing refusal to return it constitutes Criminal Breach of Trust under Section 316 BNS (formerly Section 406 IPC).",
+      },
+      {
+        question: "What happens if a childless Hindu woman dies without a Will?",
+        answer:
+          "Under Section 15(2)(a), property inherited from her parents reverts to her father's heirs. However, her self-acquired savings, salary, and Stridhan devolve upon her husband or his family, leaving her own parents with 0% unless she has drafted a Will.",
+      },
+      {
+        question: "Can a married Hindu woman Will all her property to her parents?",
+        answer:
+          "Yes. Under Section 30 of the Hindu Succession Act, a woman has complete testamentary freedom. She does not require the consent of her husband or children to bequeath her estate to her parents or siblings.",
+      },
+    ],
+    disclaimer:
+      "This guide reflects the Hindu Succession Act 1956, Indian Succession Act 1925, and Supreme Court rulings in Pratibha Rani (1985), V. Tulasamma (1977), and Arunachala Gounder (2022). For contested Stridhan recovery or Will drafting, consult AMA Legal Solutions.",
+  },
+  {
+    id: "huf-property-after-death-of-karta",
+    slug: "huf-property-after-death-of-karta",
+    aliases: [
+      "huf-karta-death",
+      "huf-partition-after-death",
+      "huf-succession-rules",
+      "karta-share-in-huf-property",
+    ],
+    category: "Family Rights & Succession",
+    readTime: "11 min",
+    seoTitle: "HUF Property After Death of Karta: Rights & Will Guide",
+    metaDescription:
+      "Learn who inherits HUF property after death of karta under HSA Section 6 and 30. Understand new karta succession, deemed partition, tax rules, and wills.",
+    keywords: [
+      "huf property after death of karta",
+      "HUF karta death",
+      "HUF partition after death",
+      "HUF succession",
+      "karta share in HUF property",
+      "can karta will HUF property",
+      "hindu succession act section 6",
+      "hindu succession act section 30",
+      "deemed partition HUF",
+      "who becomes new karta after father death",
+      "can daughter become karta of HUF",
+      "Sujata Sharma vs Manu Gupta",
+      "HUF tax implications partition section 171",
+    ],
+    title: "HUF Property After Death of Karta: Succession & Rights",
+    lead:
+      "When the Karta of a Hindu Undivided Family dies, the HUF does not dissolve. Management passes to the senior-most coparcener, including the eldest daughter under the landmark Sujata Sharma ruling. While the Karta cannot will away the entire HUF property, Section 30 of the Hindu Succession Act empowers him to bequeath his undivided deemed coparcenary share.",
+    date: "October 21, 2026",
+    imageSrc: "/images/huf-property-after-death-of-karta.jpg",
+    author: "Advocate Rajeshwar Rao",
+    authorRole: "Senior Succession Counsel, AMA Legal Solutions",
+    shortVersion: [
+      "The death of the Karta does NOT dissolve an HUF; it continues as an active legal and income-tax entity with its unique PAN",
+      "Kartaship devolves by seniority to the senior-most surviving coparcener (eldest son or eldest daughter as held in Sujata Sharma)",
+      "Under Section 6(3) of the Hindu Succession Act, the Karta's undivided share is determined through deemed (notional) partition immediately prior to death",
+      "Under Section 30, the Karta cannot will the entire joint family estate, but holds 100% testamentary freedom to bequeath his own deemed coparcenary share",
+      "Under Section 47(i) of the Income Tax Act, physical distribution of capital assets during HUF partition attracts zero capital gains tax",
+    ],
+    sections: [
+      {
+        heading: "1. The Ongoing Existence of the HUF After Karta Death",
+        paragraphs: [
+          "An HUF is a perpetual collective institution under Hindu law. The demise of the Karta does not terminate the family entity or freeze its assets permanently.",
+          "The management naturally shifts to the next senior coparcener by operation of law, ensuring that tenancy contracts, bank accounts, and family businesses continue operating smoothly.",
+        ],
+      },
+      {
+        heading: "2. Succession to Kartaship and Daughter Rights",
+        paragraphs: [
+          "Traditionally, the senior-most male coparcener became the Karta. Following the 2005 amendment to Section 6 of the Hindu Succession Act, daughters are equal coparceners by birth.",
+          "In the landmark case Sujata Sharma v. Manu Gupta (2015), the Delhi High Court held that the eldest daughter is legally entitled to become the Karta of an HUF.",
+        ],
+      },
+      {
+        heading: "3. Deemed Partition Calculation Under Section 6",
+        paragraphs: [
+          "To determine what portion of the HUF property belongs to the deceased Karta's estate, the law applies the doctrine of notional partition under Section 6(3).",
+          "A partition is assumed to have occurred immediately before the Karta's death. His fractional share is isolated and devolves either under his Will or equally among his Class I legal heirs under Section 8.",
+        ],
+      },
+      {
+        heading: "4. Testamentary Power Under Section 30 and Tax Implications",
+        paragraphs: [
+          "Under Section 30 of the Hindu Succession Act, any Hindu can validly bequeath their undivided interest in Mitakshara coparcenary property through a Will. However, attempting to bequeath the entire joint family property is legally void.",
+          "Under Section 47(i) of the Income Tax Act, 1961, asset distribution on partition attracts zero capital gains tax. Under Section 171, a full partition must be recorded with the Assessing Officer to close tax assessments.",
+        ],
+      },
+    ],
+    tableData: {
+      heading: "HUF Coparcenary Property vs Personal Self-Acquired Property",
+      caption: "Key differences in ownership, partition rights, and testamentary power under HSA 1956",
+      headers: [
+        "Parameter",
+        "HUF Coparcenary Property",
+        "Personal Self-Acquired Property",
+      ],
+      rows: [
+        [
+          "Ownership Structure",
+          "Undivided collective coparcenary ownership",
+          "100% sole individual ownership",
+        ],
+        [
+          "Testamentary Freedom (Will)",
+          "Restricted to deemed fractional share (Sec 30)",
+          "Complete freedom to bequeath 100% to anyone",
+        ],
+        [
+          "Partition Rights",
+          "Any coparcener can demand partition at any time",
+          "Children cannot demand partition during owner's life",
+        ],
+        [
+          "Tax Assessment",
+          "Separately assessed under HUF PAN with basic exemption",
+          "Assessed under individual personal PAN",
+        ],
+      ],
+    },
+    actionSteps: [
+      "Obtain 10-15 original copies of the deceased Karta's Municipal Death Certificate",
+      "Identify the senior-most surviving coparcener (eldest son or eldest daughter under Sujata Sharma)",
+      "Pass a unanimous family resolution declaring the new Karta signed by all adult members",
+      "Submit updated KYC forms and death certificate to banks holding HUF accounts",
+      "Update Karta profile on the Income Tax e-Filing portal under Legal Heir/Karta management",
+      "Execute a legally binding Will under Section 30 to dispose of individual deemed coparcenary shares",
+    ],
+    faqs: [
+      {
+        question: "Does an HUF dissolve when the Karta dies?",
+        answer:
+          "No. The HUF continues to exist as a separate legal and tax entity. Kartaship automatically devolves to the senior-most surviving coparcener.",
+      },
+      {
+        question: "Can an eldest daughter become Karta of an HUF?",
+        answer:
+          "Yes. Following the 2005 amendment and the Delhi High Court ruling in Sujata Sharma v. Manu Gupta (2015), the senior-most coparcener regardless of gender can act as Karta.",
+      },
+      {
+        question: "Can the Karta Will away the entire HUF property?",
+        answer:
+          "No. The Karta cannot will away the entire HUF property. However, under Section 30 of the Hindu Succession Act, he can validly bequeath his own undivided deemed coparcenary share.",
+      },
+      {
+        question: "Is capital gains tax payable on HUF property partition?",
+        answer:
+          "No. Under Section 47(i) of the Income Tax Act, 1961, any distribution of capital assets during a total partition of an HUF is not regarded as a transfer, incurring zero capital gains tax.",
+      },
+    ],
+    disclaimer:
+      "This guide reflects the Hindu Succession Act 1956, Income Tax Act 1961, and landmark rulings in Sujata Sharma (2015), Vineeta Sharma (2020), and Gurupad Magdum (1978). For contested partition suits and Will drafting, consult AMA Legal Solutions.",
   },
 ];
 

@@ -1754,7 +1754,9 @@ export default function NriWillCheckerClient() {
               </div>
             </div>
 
-            <div className="rounded-2xl bg-[#172228] text-white p-6 shadow-md text-center border border-white/10">
+            {/* DESKTOP ONLY SIDEBAR CARDS */}
+            <div className="hidden lg:block space-y-6 desktop-sidebar-only">
+<div className="hidden lg:block rounded-2xl bg-[#172228] text-white p-6 shadow-md text-center border border-white/10">
               <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/10 text-rose-200 text-[10px] font-bold uppercase tracking-wider mb-4">
                 <Lock className="w-3 h-3 text-[#C65378]" />
                 <span>CONFIDENTIAL NRI ADVISORY</span>
@@ -1782,7 +1784,7 @@ export default function NriWillCheckerClient() {
               </Link>
             </div>
 
-            <div className="bg-white rounded-2xl border border-[#172228]/10 shadow-xs p-5">
+            <div className="hidden lg:block bg-white rounded-2xl border border-[#172228]/10 shadow-xs p-5">
               <span className="text-xs font-bold text-slate-900 block mb-3 uppercase tracking-wider">
                 Why NRIs Trust WillDrafting
               </span>
@@ -1818,7 +1820,7 @@ export default function NriWillCheckerClient() {
               </ul>
             </div>
 
-            <div className="bg-white rounded-2xl border border-[#172228]/10 shadow-xs p-5">
+            <div className="hidden lg:block bg-white rounded-2xl border border-[#172228]/10 shadow-xs p-5">
               <span className="text-xs font-bold text-slate-900 block mb-3 uppercase tracking-wider">
                 Cross-Border Legal Guides
               </span>
@@ -1860,6 +1862,38 @@ export default function NriWillCheckerClient() {
                   <span className="text-[10px] text-slate-500 mt-0.5 block">
                     Mumbai, Chennai &amp; Kolkata rules
                   </span>
+                </Link>
+              </div>
+            </div>
+            </div>
+
+            {/* MOBILE ONLY: Related WillDrafting Guides */}
+            <div className="pt-4 border-t border-slate-100 block lg:hidden">
+              <span className="text-xs font-bold text-[#172228] block mb-2">Related WillDrafting Guides:</span>
+              <div className="flex flex-wrap gap-2">
+                <Link
+                  href="/service/nri-will-india"
+                  className="text-[11px] px-3 py-1 rounded-lg bg-slate-100 text-[#172228] hover:bg-slate-200 transition-colors"
+                >
+                  NRI Will Drafting Service
+                </Link>
+                <Link
+                  href="/tools/probate-checker"
+                  className="text-[11px] px-3 py-1 rounded-lg bg-slate-100 text-[#172228] hover:bg-slate-200 transition-colors"
+                >
+                  Is Probate Required in India?
+                </Link>
+                <Link
+                  href="/tools/will-checklist"
+                  className="text-[11px] px-3 py-1 rounded-lg bg-slate-100 text-[#172228] hover:bg-slate-200 transition-colors"
+                >
+                  Will Preparation Checklist
+                </Link>
+                <Link
+                  href="/service/succession-certificate"
+                  className="text-[11px] px-3 py-1 rounded-lg bg-slate-100 text-[#172228] hover:bg-slate-200 transition-colors"
+                >
+                  Succession Certificate Lawyers
                 </Link>
               </div>
             </div>

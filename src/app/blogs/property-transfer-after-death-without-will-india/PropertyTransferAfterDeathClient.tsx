@@ -1381,8 +1381,10 @@ export default function PropertyTransferAfterDeathClient() {
               </div>
             </div>
 
-            {/* CARD 2: ACTION CTA CARD (Berry Rose / Navy) */}
-            <div className="bg-[#172228] rounded-3xl p-6 text-white text-center shadow-lg shadow-slate-900/10 space-y-4">
+            {/* DESKTOP ONLY SIDEBAR CARDS */}
+            <div className="hidden lg:block space-y-5 desktop-sidebar-only">
+{/* CARD 2: ACTION CTA CARD (Berry Rose / Navy) */}
+            <div className="hidden lg:block bg-[#172228] rounded-3xl p-6 text-white text-center shadow-lg shadow-slate-900/10 space-y-4">
               <div className="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-white/10 text-[10px] font-bold tracking-wider uppercase text-rose-200">
                 <Lock className="w-3 h-3 text-[#C65378]" />
                 <span>PROTECT YOUR FAMILY</span>
@@ -1408,7 +1410,7 @@ export default function PropertyTransferAfterDeathClient() {
             </div>
 
             {/* CARD 3: TRUST / BENEFITS CHECKLIST */}
-            <div className="bg-white rounded-3xl border border-slate-200/80 p-5 shadow-xs space-y-3">
+            <div className="hidden lg:block bg-white rounded-3xl border border-slate-200/80 p-5 shadow-xs space-y-3">
               <h4 className="font-bold text-xs uppercase tracking-wider text-slate-800">
                 Key Succession Rules at a Glance
               </h4>
@@ -1441,7 +1443,7 @@ export default function PropertyTransferAfterDeathClient() {
             </div>
 
             {/* CARD 4: RELATED TEMPLATES & GUIDES */}
-            <div className="bg-white rounded-3xl border border-slate-200/80 p-5 shadow-xs space-y-3">
+            <div className="hidden lg:block bg-white rounded-3xl border border-slate-200/80 p-5 shadow-xs space-y-3">
               <h4 className="font-bold text-xs uppercase tracking-wider text-slate-800">
                 Related Free Resources
               </h4>
@@ -1481,6 +1483,38 @@ export default function PropertyTransferAfterDeathClient() {
                   <div className="text-[10px] text-slate-500 mt-0.5">
                     Civil court representation by AMA advocates &rarr;
                   </div>
+                </Link>
+              </div>
+            </div>
+            </div>
+
+            {/* MOBILE ONLY: Related WillDrafting Guides */}
+            <div className="pt-4 border-t border-slate-100 block lg:hidden">
+              <span className="text-xs font-bold text-[#172228] block mb-2">Related WillDrafting Guides:</span>
+              <div className="flex flex-wrap gap-2">
+                <Link
+                  href="/blogs/legal-heir-certificate-vs-succession-certificate"
+                  className="text-[11px] px-3 py-1 rounded-lg bg-slate-100 text-[#172228] hover:bg-slate-200 transition-colors"
+                >
+                  Legal Heir vs Succession Certificate
+                </Link>
+                <Link
+                  href="/service/succession-certificate"
+                  className="text-[11px] px-3 py-1 rounded-lg bg-slate-100 text-[#172228] hover:bg-slate-200 transition-colors"
+                >
+                  Succession Certificate Lawyers
+                </Link>
+                <Link
+                  href="/templates/release-deed-format"
+                  className="text-[11px] px-3 py-1 rounded-lg bg-slate-100 text-[#172228] hover:bg-slate-200 transition-colors"
+                >
+                  Relinquishment Deed Format
+                </Link>
+                <Link
+                  href="/templates/will-format-india"
+                  className="text-[11px] px-3 py-1 rounded-lg bg-slate-100 text-[#172228] hover:bg-slate-200 transition-colors"
+                >
+                  Free Indian Will Format
                 </Link>
               </div>
             </div>
