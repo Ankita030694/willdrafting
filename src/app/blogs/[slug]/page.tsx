@@ -838,6 +838,14 @@ export default async function BlogSlugPage({ params }: PageProps) {
       </main>
 
       <style>{`
+        .wd-article-html h1 {
+          font-size: 2rem;
+          font-weight: 600;
+          line-height: 1.22;
+          color: #111827;
+          margin-top: 2.2rem;
+          margin-bottom: 1rem;
+        }
         .wd-article-html h2 {
           font-size: 1.75rem;
           font-weight: 500;
@@ -855,6 +863,21 @@ export default async function BlogSlugPage({ params }: PageProps) {
           margin-top: 1.8rem;
           margin-bottom: 0.75rem;
         }
+        .wd-article-html h4 {
+          font-size: 1.12rem;
+          font-weight: 600;
+          color: #172228;
+          margin-top: 1.4rem;
+          margin-bottom: 0.5rem;
+        }
+        .wd-article-html h5,
+        .wd-article-html h6 {
+          font-size: 1rem;
+          font-weight: 600;
+          color: #172228;
+          margin-top: 1.1rem;
+          margin-bottom: 0.4rem;
+        }
         .wd-article-html p {
           font-size: 1.05rem;
           line-height: 1.8;
@@ -863,12 +886,62 @@ export default async function BlogSlugPage({ params }: PageProps) {
         }
         .wd-article-html ul,
         .wd-article-html ol {
-          margin: 0.85rem 0 1.35rem 1.5rem;
+          margin: 0.85rem 0 1.35rem 0;
+          padding-left: 1.75rem;
           color: #374151;
           line-height: 1.75;
+          list-style-position: outside;
+        }
+        .wd-article-html ul:not(.wd-popular-searches-pills) {
+          list-style-type: disc !important;
+        }
+        .wd-article-html ul:not(.wd-popular-searches-pills) ul {
+          list-style-type: circle !important;
+          margin-top: 0.35rem;
+          margin-bottom: 0.35rem;
+        }
+        .wd-article-html ol {
+          list-style-type: decimal !important;
         }
         .wd-article-html li {
+          display: list-item;
           margin-bottom: 0.45rem;
+          font-size: 1.03rem;
+        }
+        .wd-article-html li::marker {
+          color: #172228;
+          font-weight: 600;
+        }
+        .wd-article-html li > p {
+          margin-bottom: 0.25rem;
+        }
+        .wd-article-html hr {
+          border: none;
+          border-top: 2px solid rgba(23, 34, 40, 0.12);
+          margin: 1.75rem 0;
+        }
+        .wd-article-html pre {
+          background-color: #172228;
+          color: #FAF7F0;
+          padding: 1.1rem 1.35rem;
+          border-radius: 0.75rem;
+          overflow-x: auto;
+          margin: 1.25rem 0;
+          font-size: 0.88rem;
+          line-height: 1.65;
+        }
+        .wd-article-html code {
+          background-color: #F4EFE6;
+          color: #172228;
+          padding: 0.15rem 0.4rem;
+          border-radius: 0.25rem;
+          font-family: monospace;
+          font-size: 0.9em;
+        }
+        .wd-article-html pre code {
+          background-color: transparent;
+          color: inherit;
+          padding: 0;
         }
         .wd-article-html blockquote {
           margin: 1.75rem 0;
