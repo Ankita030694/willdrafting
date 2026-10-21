@@ -59,10 +59,10 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/images/nri-two-will-strategy-infographic.svg",
+        url: "/images/nri-will-india-og.jpg",
         width: 1200,
-        height: 640,
-        alt: "NRI Two-Will Strategy Infographic for Indian Property and NRE NRO Assets",
+        height: 630,
+        alt: "NRI and OCI Indian Will Drafting Services for Immovable Property, NRE/NRO Accounts, and Demat Shares in India",
       },
     ],
   },
@@ -71,7 +71,7 @@ export const metadata: Metadata = {
     title: "NRI Will Drafting India | Online Will for Indian Assets",
     description:
       "Draft a legally valid Indian Will online for NRIs & OCIs. Protect Indian property, NRE/NRO accounts & Demat shares under the Indian Succession Act.",
-    images: ["/images/nri-two-will-strategy-infographic.svg"],
+    images: ["/images/nri-will-india-og.jpg"],
   },
   robots: {
     index: true,
@@ -139,10 +139,10 @@ const NRI_SCHEMA = {
       },
       "primaryImageOfPage": {
         "@type": "ImageObject",
-        "url": "https://www.willdrafting.in/images/nri-two-will-strategy-infographic.svg",
+        "url": "https://www.willdrafting.in/images/nri-will-india-og.jpg",
         "width": 1200,
-        "height": 640,
-        "caption": "Single Foreign Will vs. The NRI Two-Will Strategy in India under Section 5, 63 & 228 of the Indian Succession Act, 1925",
+        "height": 630,
+        "caption": "NRI and OCI Indian Will Drafting Services for Immovable Property, NRE/NRO Accounts, and Demat Shares in India",
       },
       "breadcrumb": {
         "@id": "https://www.willdrafting.in/services/nri-will-india#breadcrumb",

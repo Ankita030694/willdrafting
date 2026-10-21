@@ -52,10 +52,10 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/desktopusp.jpg",
+        url: "/images/online-will-drafting-og.jpg",
         width: 1200,
         height: 630,
-        alt: "Online Will Writing & Estate Planning Services in India",
+        alt: "Online Will Drafting & Lawyer Review Services in India - AMA Legal Solutions",
       },
     ],
   },
@@ -64,7 +64,7 @@ export const metadata: Metadata = {
     title: "Online Will Writing Services in India - Lawyer-Verified Will & Estate Planning | WillDrafting.in",
     description:
       "Professional online Will writing services in India under the Indian Succession Act, 1925 & Hindu Succession Act, 1956. Get a court-ready Will printout, High Court advocate verification & registration assistance.",
-    images: ["/desktopusp.jpg"],
+    images: ["/images/online-will-drafting-og.jpg"],
   },
   robots: {
     index: true,
@@ -83,6 +83,7 @@ const SERVICE_SCHEMA = {
       "@id": "https://www.willdrafting.in/services#service",
       "name": "Online Will Writing, Lawyer Verification & Estate Planning Services in India",
       "serviceType": "Legal Will Preparation & Estate Succession",
+      "image": "https://www.willdrafting.in/images/online-will-drafting-og.jpg",
       "provider": {
         "@id": "https://www.willdrafting.in/#legalservice",
       },
@@ -172,7 +173,7 @@ const services: ServiceCard[] = [
       "Create a professionally structured legal Will online from the comfort of your home under the Indian Succession Act, 1925. Clearly document your wishes, allocate immovable and financial assets, appoint guardians for minor children, and have your Will verified by AMA Legal Solutions.",
     linkText: "Write your Will",
     linkHref: "/contact",
-    illustrationSrc: "/new1servcie.png",
+    illustrationSrc: "/images/online-will-drafting-og.jpg",
   },
   {
     title: "NRI & OCI Indian Will Drafting",
@@ -180,31 +181,31 @@ const services: ServiceCard[] = [
       "Specialized Two-Will estate planning for Non-Resident Indians holding immovable property, NRE/NRO accounts, and Demat shares across India, preventing foreign probate re-sealing delays under Section 228 of the Indian Succession Act.",
     linkText: "Explore NRI Will Services",
     linkHref: "/services/nri-will-india",
-    illustrationSrc: "/cta/1.png",
+    illustrationSrc: "/images/nri-will-india-og.jpg",
   },
   {
     title: "Legal Heir",
     description:
       "Official Legal Heir Certificate documentation and assistance to establish rightful legal heirs under Indian succession laws for property mutation, insurance claims, and bank transfers.",
-    linkText: "Coming Soon",
-    isComingSoon: true,
-    illustrationSrc: "/comingsoon.png",
+    linkText: "Explore Legal Heir Services",
+    linkHref: "/services/legal-heir",
+    illustrationSrc: "/images/legal-heir-og.jpg",
   },
   {
     title: "Relinquishment Deed",
     description:
       "Legally binding Relinquishment Deed (Haq Tyag) drafting and Sub-Registrar registration assistance to smoothly transfer inherited property shares among co-heirs without family friction.",
-    linkText: "Coming Soon",
-    isComingSoon: true,
-    illustrationSrc: "/comingsoon.png",
+    linkText: "Explore Relinquishment Deed",
+    linkHref: "/services/relinquishment-deed",
+    illustrationSrc: "/images/relinquishment-deed-og.jpg",
   },
   {
     title: "Survivor Member Certificate",
     description:
       "Fast-track documentation and advisory for obtaining a Surviving Member Certificate (SMC) from revenue authorities to expedite municipal records update and estate transfers.",
-    linkText: "Coming Soon",
-    isComingSoon: true,
-    illustrationSrc: "/comingsoon.png",
+    linkText: "Explore Survivor Certificate",
+    linkHref: "/services/survivor-member-certificate",
+    illustrationSrc: "/images/survivor-member-certificate-og.jpg",
   },
 ];
 
@@ -298,14 +299,28 @@ export default function ServicePage() {
                     <Image
                       src={service.illustrationSrc}
                       alt={
-                        !service.isComingSoon
-                          ? "Online Will Writing and Lawyer-Verified Will Drafting under Indian Law"
+                        service.title === "Online Will Drafting & Lawyer Review"
+                          ? "Online Will Drafting and Lawyer Verification Services under Indian Succession Act - AMA Legal Solutions"
+                          : service.title === "Legal Heir"
+                          ? "Official Legal Heir Certificate Documentation and Verification Services in India"
+                          : service.title === "Relinquishment Deed"
+                          ? "Relinquishment Deed Haq Tyag Registration and Drafting Services in India"
+                          : service.title === "Survivor Member Certificate"
+                          ? "Surviving Member Certificate SMC Application and Verification in India"
+                          : service.title === "NRI & OCI Indian Will Drafting"
+                          ? "NRI and OCI Indian Will Drafting and Cross-Border Estate Planning Services in India"
+                          : !service.isComingSoon
+                          ? `${service.title} in India - AMA Legal Solutions`
                           : "Estate planning and Power of Attorney services in India coming soon"
                       }
                       fill
                       priority
                       sizes="(max-width: 768px) 100vw, 50vw"
-                      className="object-contain scale-[1.2] transition-transform duration-300"
+                      className={`${
+                        service.illustrationSrc.endsWith(".jpg")
+                          ? "object-cover group-hover:scale-105"
+                          : "object-contain scale-[1.2]"
+                      } transition-transform duration-300`}
                     />
                   </div>
                 </div>

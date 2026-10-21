@@ -152,6 +152,38 @@ export const staticPages: SitemapPageItem[] = [
   // 2. TOP FEATURED SERVICE & ADVOCATE PAGES
   // =========================================================================
   {
+    title: "Survivor Member Certificate India: Fast SMC Application & SDM Advisory",
+    href: "/services/survivor-member-certificate",
+    category: "Services",
+    date: "21-10-2026",
+    changefreq: "weekly",
+    priority: 1.0,
+  },
+  {
+    title: "Relinquishment Deed India: Haq Tyag Drafting, Stamp Duty & Registration",
+    href: "/services/relinquishment-deed",
+    category: "Services",
+    date: "21-10-2026",
+    changefreq: "weekly",
+    priority: 1.0,
+  },
+  {
+    title: "Legal Heir Certificate India: Revenue Process, Mutation & Lawyers",
+    href: "/services/legal-heir",
+    category: "Services",
+    date: "21-10-2026",
+    changefreq: "weekly",
+    priority: 1.0,
+  },
+  {
+    title: "NRI Will Drafting India: Two-Will Strategy & Property Lawyers",
+    href: "/services/nri-will-india",
+    category: "Services",
+    date: "21-10-2026",
+    changefreq: "weekly",
+    priority: 1.0,
+  },
+  {
     title: "Mirror Wills for Couples in India: Joint Will Advice & Lawyers",
     href: "/services/mirror-wills-for-couples",
     category: "Services",

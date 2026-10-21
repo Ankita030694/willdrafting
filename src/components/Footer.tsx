@@ -138,28 +138,19 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <div className="flex items-center gap-2 text-[#55636D]">
-                  <span>Legal Heir</span>
-                  <span className="text-[9px] font-bold uppercase tracking-wider text-[#C65378] bg-[#C65378]/10 px-1.5 py-0.5 rounded">
-                    Coming Soon
-                  </span>
-                </div>
+                <Link href="/services/legal-heir" className="hover:text-[#172228] transition-colors">
+                  Legal Heir Certificate
+                </Link>
               </li>
               <li>
-                <div className="flex items-center gap-2 text-[#55636D]">
-                  <span>Relinquishment Deed</span>
-                  <span className="text-[9px] font-bold uppercase tracking-wider text-[#C65378] bg-[#C65378]/10 px-1.5 py-0.5 rounded">
-                    Coming Soon
-                  </span>
-                </div>
+                <Link href="/services/relinquishment-deed" className="hover:text-[#172228] transition-colors">
+                  Relinquishment Deed (Haq Tyag)
+                </Link>
               </li>
               <li>
-                <div className="flex items-center gap-2 text-[#55636D]">
-                  <span>Survivor Member Certificate</span>
-                  <span className="text-[9px] font-bold uppercase tracking-wider text-[#C65378] bg-[#C65378]/10 px-1.5 py-0.5 rounded">
-                    Coming Soon
-                  </span>
-                </div>
+                <Link href="/services/survivor-member-certificate" className="hover:text-[#172228] transition-colors">
+                  Survivor Member Certificate
+                </Link>
               </li>
               <li>
                 <Link href="/blogs/how-to-register-will-in-india-state-sub-registrar-guide" className="hover:text-[#172228] transition-colors">
@@ -189,7 +180,7 @@ export default function Footer() {
                 </a>
               </p>
               <div className="text-[#55636D] pt-1 text-xs leading-normal">
-                <p>WillDrafting Legal Solutions</p>
+                {/* <p>WillDrafting Legal Solutions</p> */}
                 <p>New Delhi & Mumbai, India</p>
                 <p className="mt-1">Mon – Sat, 9:00 AM – 8:00 PM IST</p>
               </div>
