@@ -393,23 +393,23 @@ Keep the briefing dense, factual, and around 750 words.`;
     const researchNotes = trimToWords(rawResearch, 850);
 
     // =========================================================================
-    // STEP 1: Title, SEO Metadata, Category & Adaptive Outline
+    // STEP 1: Title, SEO Metadata, Category & Direct Factual Outline
     // =========================================================================
-    const h2CountRange = targetWordCount >= 3000 ? "8 to 10" : "6 to 8";
+    const h2CountRange = targetWordCount >= 2200 ? "6 to 8" : "5 to 7";
     const step1Prompt = `You are the Principal Succession Law Editorial Counsel at WillDrafting.in (https://www.willdrafting.in).
-Based on the primary keyword "${primaryKeyword}" and the statutory research below, generate the article metadata and outline in strict JSON format.
+Based on the primary keyword "${primaryKeyword}" and the statutory research below, generate the article metadata and a strictly to-the-point, factual outline in JSON format.
 
 STATUTORY RESEARCH:
 ${researchNotes}
 
 Return a JSON object with these exact keys:
-- "title": Compelling, authoritative H1 title (55-75 characters) naturally containing "${primaryKeyword}". Write a clean, natural editorial title without colons followed by "A Complete Guide" or "Everything You Need to Know".
-- "subtitle": Engaging 1-2 sentence editorial lead/excerpt summarizing the statutory rule and practical outcome for Indian families.
+- "title": Direct, factual H1 title (50-70 characters) naturally containing "${primaryKeyword}". No clickbait or generic fluff.
+- "subtitle": Concise 1-sentence factual summary stating the exact legal rule and outcome under Indian law.
 - "category": Choose the best matching category from: ["Indian Succession Law", "Estate Planning & Lifecycle", "NRI Estate Planning", "Hindu Succession Act", "Supreme Court Precedent", "Probate & Execution", "Digital Assets & Trusts"].
 - "metaTitle": SEO title (50-60 characters) ending with "| WillDrafting.in".
-- "metaDescription": High-CTR meta description (145-160 characters) starting with or prominently featuring "${primaryKeyword}" and inviting readers to draft or verify their Will on WillDrafting.in.
+- "metaDescription": Direct, high-utility meta description (145-160 characters) featuring "${primaryKeyword}" and WillDrafting.in.
 - "slug": URL-friendly lowercase hyphenated slug focused on "${primaryKeyword}".
-- "outline": Array of ${h2CountRange} detailed H2 section headings covering statutory rules, step-by-step procedures, worked Indian examples, comparison matrices, and execution safeguards. (Do not include FAQ or Review headings in the outline).`;
+- "outline": Array of ${h2CountRange} crisp, direct H2 section headings focused strictly on: exact statutory rules, step-by-step procedure, required documents/fees, comparison table, and common legal mistakes. (No fluffy intro headings, no FAQ or Review headings).`;
 
     const step1Raw = await callOpenAiChat({
       apiKey,
@@ -469,26 +469,31 @@ Return a JSON object with these exact keys:
         ];
 
     // =========================================================================
-    // STEP 2: Core Long-Form HTML Article Body (with 3-Step Refusal Fallback)
+    // STEP 2: Core To-The-Point HTML Article Body (Zero Filler / Zero Fluff)
     // =========================================================================
-    const dynamicMaxTokens = Math.min(8000, Math.max(4500, Math.ceil(targetWordCount * 2.2)));
+    const dynamicMaxTokens = Math.min(6000, Math.max(3000, Math.ceil(targetWordCount * 2.0)));
 
     const step2SystemPrompt = `${coreInstructions}
 
-CRITICAL OUTPUT RULES FOR WILLDRAFTING.IN:
+STRICT "TO-THE-POINT, ZERO-FILLER" OUTPUT RULES FOR WILLDRAFTING.IN:
 1. Write pure semantic HTML only (<h2>, <h3>, <p>, <ul>, <ol>, <li>, <strong>, <em>, <blockquote>, <table>, <thead>, <tbody>, <tr>, <th>, <td>). Do not wrap in markdown code fences and do not include <h1> tags.
-2. Target length: ${targetWordCount}+ words of exhaustive, deeply researched Indian legal and succession content.
-3. Use the exact primary keyword "${primaryKeyword}" naturally 10 to 18 times across headings and paragraphs.
-4. Include 1 to 2 comprehensive HTML <table> comparison matrices with <thead> and <tbody>.
-5. Embed 6 to 10 contextual internal links from this WillDrafting.in link list:
+2. ZERO BULLSHIT / ZERO FILLER:
+   - Do NOT write generic throat-clearing introductions, philosophical reflections, or emotional padding.
+   - Start the very first sentence of the article with the direct legal answer and exact statutory Section number.
+   - Keep every paragraph short and sharp (2 to 3 sentences maximum).
+   - Every single sentence must deliver a concrete legal fact: a Section number, Act name, Supreme Court ruling, required document, timeline, fee/stamp duty amount, or actionable step.
+   - Never repeat the same point twice across different headings.
+3. Prefer bulleted checklists (<ul>), numbered steps (<ol>), and structured HTML comparison tables (<table> with <thead> and <tbody>) over long paragraphs.
+4. Use the primary keyword "${primaryKeyword}" naturally 6 to 10 times.
+5. Embed 5 to 8 contextual internal links from this WillDrafting.in link list:
 ${linksContextString}
 6. Every brand reference, advocate team mention, online Will wizard reference, or legal consultation callout belongs exclusively to WillDrafting.in (https://www.willdrafting.in).
 7. Do not include meta-commentary, author bylines, dates, or trailing FAQ sections inside the HTML body.`;
 
-    const step2UserPrompt = `Write the complete, exhaustive HTML article for WillDrafting.in:
+    const step2UserPrompt = `Write a strictly to-the-point, zero-filler HTML legal guide for WillDrafting.in:
 TITLE: ${cleanTitle}
 PRIMARY KEYWORD: ${primaryKeyword}
-TARGET WORD COUNT: ${targetWordCount} words
+TARGET LENGTH: ~${targetWordCount} words of pure, high-density legal facts (do NOT pad with fluff)
 
 STATUTORY & CASE LAW RESEARCH BRIEFING:
 ${researchNotes}
@@ -496,7 +501,10 @@ ${researchNotes}
 REQUIRED H2 SECTION OUTLINE:
 ${outline.map((h, idx) => `${idx + 1}. ${h}`).join("\n")}
 
-Develop every single H2 section with multi-paragraph statutory depth, exact section citations, Indian real-world property and banking examples (in ₹ Lakhs/Crores), pull-quotes in <blockquote>, and 1-2 structured HTML <table> elements. Output raw semantic HTML directly.`;
+For each H2 section:
+- State the exact legal rule, Section number, or procedure immediately in the first sentence.
+- Use short 2–3 sentence paragraphs, bulleted checklists (<ul>/<ol>), concrete numbers (fees, timelines, shares), and 1–2 crisp HTML <table> comparison matrices.
+- Cut all filler, transitions, and generic commentary. Output raw semantic HTML directly.`;
 
     let rawHtmlBody = "";
     const attempts: Array<{ model: string; extraFraming: string }> = [
@@ -549,13 +557,13 @@ Develop every single H2 section with multi-paragraph statutory depth, exact sect
     // STEP 3: Key Takeaways, Short Version, Action Steps, FAQs, Reviews,
     //         Visual Image/Infographic Prompts, Citations & Keywords
     // =========================================================================
-    const step3Prompt = `Based on the WillDrafting.in article titled "${cleanTitle}" on "${primaryKeyword}", generate the supplementary editorial data, structured schema items, and AI visual prompts in strict JSON format.
+    const step3Prompt = `Based on the WillDrafting.in article titled "${cleanTitle}" on "${primaryKeyword}", generate strictly direct, zero-filler supplementary data and AI visual prompts in JSON format.
 
 Return a JSON object with these exact keys:
-1. "keyTakeaways": A 2-3 sentence executive summary of the core legal rule and how WillDrafting.in helps Indian families act on it.
-2. "shortVersion": Array of 4 to 5 concise, high-impact bullet points (1 sentence each, with specific statutory sections) for the "The short version" summary box on WillDrafting.in.
-3. "actionSteps": Array of 5 to 6 concrete, sequential action steps a reader should take next to protect their estate and execute their Will on WillDrafting.in.
-4. "faqs": Array of 7 objects ({ "question": "...", "answer": "..." }) answering high-intent Indian statutory questions about "${primaryKeyword}". Plain text only (no HTML tags).
+1. "keyTakeaways": A crisp 1-2 sentence direct answer stating the exact legal rule and how to execute it on WillDrafting.in. No filler.
+2. "shortVersion": Array of 4 to 5 direct, single-sentence factual bullet points (citing exact Sections/Acts) for the "The short version" box on WillDrafting.in.
+3. "actionSteps": Array of 5 to 6 concise, direct action steps (1 sentence each) a reader must take next.
+4. "faqs": Array of 6 objects ({ "question": "...", "answer": "..." }) where each answer starts with a direct "Yes." or "No." or the exact rule in 2 crisp sentences citing the Section number. Plain text only (no HTML tags, no fluff).
 5. "reviews": Array of 3 realistic client review objects ({ "name": "...", "location": "...", "rating": 5, "review": "..." }) from Indian/NRI homeowners praising how WillDrafting.in helped them resolve "${primaryKeyword}".
 6. "references": Array of 4 official statutory/judicial reference objects ({ "title": "...", "url": "..." }) citing India Code, Supreme Court of India, RBI, or SEBI resources.
 7. "keywords": Array of 12 high-intent long-tail SEO search keywords related to "${primaryKeyword}" in India.
