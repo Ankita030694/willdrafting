@@ -1,0 +1,381 @@
+# ==============================================================================
+# WILLDRAFTING.IN - 20 METROPOLITAN CITIES LOCATION URLS
+# ==============================================================================
+# Base Domain: https://www.willdrafting.in
+# Primary Silo: /locations/
+#
+# SECTION 1: RAW ROUTE PATHS (FORMAT: /locations/[city])
+# ------------------------------------------------------------------------------
+/locations/delhi
+/locations/mumbai
+/locations/bengaluru
+/locations/noida
+/locations/gurgaon
+/locations/hyderabad
+/locations/chennai
+/locations/kolkata
+/locations/pune
+/locations/ahmedabad
+/locations/jaipur
+/locations/lucknow
+/locations/chandigarh
+/locations/surat
+/locations/indore
+/locations/kochi
+/locations/nagpur
+/locations/bhopal
+/locations/patna
+/locations/coimbatore
+
+# ------------------------------------------------------------------------------
+# SECTION 2: ALTERNATIVE KEYWORD SLUGS (FORMAT: /locations/will-drafting-in-[city])
+# ------------------------------------------------------------------------------
+/locations/will-drafting-in-delhi
+/locations/will-drafting-in-mumbai
+/locations/will-drafting-in-bengaluru
+/locations/will-drafting-in-noida
+/locations/will-drafting-in-gurgaon
+/locations/will-drafting-in-hyderabad
+/locations/will-drafting-in-chennai
+/locations/will-drafting-in-kolkata
+/locations/will-drafting-in-pune
+/locations/will-drafting-in-ahmedabad
+/locations/will-drafting-in-jaipur
+/locations/will-drafting-in-lucknow
+/locations/will-drafting-in-chandigarh
+/locations/will-drafting-in-surat
+/locations/will-drafting-in-indore
+/locations/will-drafting-in-kochi
+/locations/will-drafting-in-nagpur
+/locations/will-drafting-in-bhopal
+/locations/will-drafting-in-patna
+/locations/will-drafting-in-coimbatore
+
+# ------------------------------------------------------------------------------
+# SECTION 3: FULL CANONICAL PRODUCTION URLS
+# ------------------------------------------------------------------------------
+https://www.willdrafting.in/locations/delhi
+https://www.willdrafting.in/locations/mumbai
+https://www.willdrafting.in/locations/bengaluru
+https://www.willdrafting.in/locations/noida
+https://www.willdrafting.in/locations/gurgaon
+https://www.willdrafting.in/locations/hyderabad
+https://www.willdrafting.in/locations/chennai
+https://www.willdrafting.in/locations/kolkata
+https://www.willdrafting.in/locations/pune
+https://www.willdrafting.in/locations/ahmedabad
+https://www.willdrafting.in/locations/jaipur
+https://www.willdrafting.in/locations/lucknow
+https://www.willdrafting.in/locations/chandigarh
+https://www.willdrafting.in/locations/surat
+https://www.willdrafting.in/locations/indore
+https://www.willdrafting.in/locations/kochi
+https://www.willdrafting.in/locations/nagpur
+https://www.willdrafting.in/locations/bhopal
+https://www.willdrafting.in/locations/patna
+https://www.willdrafting.in/locations/coimbatore
+
+# ==============================================================================
+# SECTION 4: COMPLETE SEO & METADATA SPECIFICATIONS FOR PAGE CREATION
+# (Compliant with Screaming Frog: Title 50-60 chars, Meta 140-155 chars, H1 30-65 chars, No Em-Dashes)
+# ==============================================================================
+
+--------------------------------------------------------------------------------
+CITY 1: DELHI (DELHI NCR)
+--------------------------------------------------------------------------------
+Primary URL Slug: /locations/delhi
+Alternative Slug: /locations/will-drafting-in-delhi
+Canonical URL: https://www.willdrafting.in/locations/delhi
+Page Title: Will Drafting in Delhi: Online Will Registration Guide
+Title Length: 55 characters
+Meta Description: Draft a legally valid Will in Delhi. Expert lawyer drafting, e-registration guidance at Sub-Registrar offices, and home execution support across NCR.
+Meta Description Length: 151 characters
+Hero H1 Tag: Online Will Drafting & Registration Services in Delhi NCR
+H1 Length: 57 characters
+Key Keywords: will drafting in delhi, will registration delhi sub registrar, online will maker delhi ncr, will lawyer new delhi, succession planning delhi
+Key Local Context: Revenue Department Delhi, Sub-Registrar e-appointment, probate optional in Delhi (non-presidency town rules).
+
+--------------------------------------------------------------------------------
+CITY 2: MUMBAI (MAHARASHTRA)
+--------------------------------------------------------------------------------
+Primary URL Slug: /locations/mumbai
+Alternative Slug: /locations/will-drafting-in-mumbai
+Canonical URL: https://www.willdrafting.in/locations/mumbai
+Page Title: Will Drafting in Mumbai: Registration & Probate Law Guide
+Title Length: 57 characters
+Meta Description: Draft and register your Will in Mumbai. Expert Bombay High Court probate guidance, asset distribution, and lawyer consultation across Mumbai and MMR.
+Meta Description Length: 148 characters
+Hero H1 Tag: Legal Will Drafting & Probate Support Services in Mumbai
+H1 Length: 56 characters
+Key Keywords: will drafting in mumbai, will registration mumbai igr, bombay high court probate will, will lawyer mumbai, estate planning mumbai mmr
+Key Local Context: Section 213 Indian Succession Act (probate compulsory for Wills executed within Bombay High Court Ordinary Original Civil Jurisdiction or relating to immovable property in Mumbai).
+
+--------------------------------------------------------------------------------
+CITY 3: BENGALURU (KARNATAKA)
+--------------------------------------------------------------------------------
+Primary URL Slug: /locations/bengaluru
+Alternative Slug: /locations/will-drafting-in-bengaluru
+Canonical URL: https://www.willdrafting.in/locations/bengaluru
+Page Title: Will Drafting in Bengaluru: Expert Online Will Services
+Title Length: 56 characters
+Meta Description: Create a legally binding Will in Bengaluru. Get Kaveri 2.0 registration guidance, tech estate planning, and lawyer drafting for IT professionals.
+Meta Description Length: 147 characters
+Hero H1 Tag: Online Will Drafting & Property Succession in Bengaluru
+H1 Length: 56 characters
+Key Keywords: will drafting in bengaluru, will registration bangalore kaveri, online will drafting karnataka, tech startup esop will bangalore, estate planning bangalore
+Key Local Context: Kaveri 2.0 portal for slot booking, ESOP & digital asset estate planning for startup founders/IT workforce, Sub-Registrar offices across Bengaluru Urban & Rural.
+
+--------------------------------------------------------------------------------
+CITY 4: NOIDA (UTTAR PRADESH / NCR)
+--------------------------------------------------------------------------------
+Primary URL Slug: /locations/noida
+Alternative Slug: /locations/will-drafting-in-noida
+Canonical URL: https://www.willdrafting.in/locations/noida
+Page Title: Will Drafting in Noida: Online Will Registration Support
+Title Length: 56 characters
+Meta Description: Draft a valid Will in Noida and Greater Noida. Complete guidance for apartment leasehold transfer, Sub-Registrar registration, and legal succession.
+Meta Description Length: 150 characters
+Hero H1 Tag: Legal Will Drafting & Apartment Succession in Noida NCR
+H1 Length: 55 characters
+Key Keywords: will drafting in noida, will registration noida sector 33, greater noida flat will transfer, online will maker noida, succession lawyer noida
+Key Local Context: Noida Authority & Greater Noida Authority tripartite lease deed succession nuances, Sub-Registrar Office Sector 33 Noida, UP IGRS portal.
+
+--------------------------------------------------------------------------------
+CITY 5: GURGAON / GURUGRAM (HARYANA / NCR)
+--------------------------------------------------------------------------------
+Primary URL Slug: /locations/gurgaon
+Alternative Slug: /locations/will-drafting-in-gurgaon
+Canonical URL: https://www.willdrafting.in/locations/gurgaon
+Page Title: Will Drafting in Gurgaon: Online Will Services in NCR
+Title Length: 53 characters
+Meta Description: Protect family property in Gurgaon. Expert online Will drafting, HSVP floor transfer advice, and Sub-Registrar registration guidance in Gurugram.
+Meta Description Length: 148 characters
+Hero H1 Tag: Online Will Drafting & Asset Protection in Gurgaon NCR
+H1 Length: 54 characters
+Key Keywords: will drafting in gurgaon, will registration gurugram tehsil, hsvp plot will succession gurgaon, will lawyer gurgaon dlF, estate planning gurgaon
+Key Local Context: HSVP / builder floor transfer rules after death, Tehsil Gurgaon / Wazirabad / Badshahpur Sub-Registrar offices, Jamabandi portal.
+
+--------------------------------------------------------------------------------
+CITY 6: HYDERABAD (TELANGANA)
+--------------------------------------------------------------------------------
+Primary URL Slug: /locations/hyderabad
+Alternative Slug: /locations/will-drafting-in-hyderabad
+Canonical URL: https://www.willdrafting.in/locations/hyderabad
+Page Title: Will Drafting in Hyderabad: Online Will & Asset Planning
+Title Length: 56 characters
+Meta Description: Draft a legally valid Will in Hyderabad. Easy registration via IGRS Telangana, property succession, and experienced advocate review for your family.
+Meta Description Length: 150 characters
+Hero H1 Tag: Online Will Drafting & Property Registration in Hyderabad
+H1 Length: 57 characters
+Key Keywords: will drafting in hyderabad, will registration igrs telangana, online will draft secunderabad, property will lawyer hyderabad, asset distribution hyderabad
+Key Local Context: IGRS Telangana e-registration appointment system, GHMC property mutation integration, Telugu family estate practices.
+
+--------------------------------------------------------------------------------
+CITY 7: CHENNAI (TAMIL NADU)
+--------------------------------------------------------------------------------
+Primary URL Slug: /locations/chennai
+Alternative Slug: /locations/will-drafting-in-chennai
+Canonical URL: https://www.willdrafting.in/locations/chennai
+Page Title: Will Drafting in Chennai: Registration & Probate Guide
+Title Length: 54 characters
+Meta Description: Draft your Will in Chennai with expert legal consultation. Complete Madras High Court probate guidance and Sub-Registrar office registration help.
+Meta Description Length: 147 characters
+Hero H1 Tag: Legal Will Drafting & Succession Planning in Chennai
+H1 Length: 52 characters
+Key Keywords: will drafting in chennai, madras high court will probate, will registration chennai tnreginet, advocate for will drafting chennai, succession certificate chennai
+Key Local Context: Section 213 Indian Succession Act (probate compulsory for Wills within Madras High Court ordinary original civil jurisdiction), TNREGINET online services.
+
+--------------------------------------------------------------------------------
+CITY 8: KOLKATA (WEST BENGAL)
+--------------------------------------------------------------------------------
+Primary URL Slug: /locations/kolkata
+Alternative Slug: /locations/will-drafting-in-kolkata
+Canonical URL: https://www.willdrafting.in/locations/kolkata
+Page Title: Will Drafting in Kolkata: Registration & Probate Rules
+Title Length: 54 characters
+Meta Description: Protect ancestral and self-acquired assets in Kolkata. Learn Calcutta High Court probate rules, Will drafting, and registration across West Bengal.
+Meta Description Length: 149 characters
+Hero H1 Tag: Online Will Drafting & Probate Assistance in Kolkata
+H1 Length: 52 characters
+Key Keywords: will drafting in kolkata, calcutta high court probate will, will registration west bengal e-district, ancestral property will kolkata, estate lawyer kolkata
+Key Local Context: Statutory requirement for probate under Section 213 (Calcutta original civil jurisdiction), Dayabhaga legal heritage, e-District West Bengal.
+
+--------------------------------------------------------------------------------
+CITY 9: PUNE (MAHARASHTRA)
+--------------------------------------------------------------------------------
+Primary URL Slug: /locations/pune
+Alternative Slug: /locations/will-drafting-in-pune
+Canonical URL: https://www.willdrafting.in/locations/pune
+Page Title: Will Drafting in Pune: Legal Online Will Making Guide
+Title Length: 53 characters
+Meta Description: Draft a legally compliant Will in Pune. Expert lawyer assistance, IGR Maharashtra registration advice, and seamless family estate planning online.
+Meta Description Length: 148 characters
+Hero H1 Tag: Online Will Drafting & Legal Estate Planning in Pune
+H1 Length: 52 characters
+Key Keywords: will drafting in pune, will registration pune sro, online will maker maharashtra, succession advocate pune, flat transfer will pune pcmc
+Key Local Context: IGR Maharashtra Sarita portal, Pune Municipal Corporation (PMC) & PCMC flat mutation guidelines, probate non-compulsory outside Greater Mumbai unless ordered by court.
+
+--------------------------------------------------------------------------------
+CITY 10: AHMEDABAD (GUJARAT)
+--------------------------------------------------------------------------------
+Primary URL Slug: /locations/ahmedabad
+Alternative Slug: /locations/will-drafting-in-ahmedabad
+Canonical URL: https://www.willdrafting.in/locations/ahmedabad
+Page Title: Will Drafting in Ahmedabad: Online Will & Asset Guide
+Title Length: 53 characters
+Meta Description: Create a legally valid Will in Ahmedabad. Comprehensive HUF planning, Gujarat Sub-Registrar registration, and business asset succession guidance.
+Meta Description Length: 147 characters
+Hero H1 Tag: Legal Will Drafting & Business Succession in Ahmedabad
+H1 Length: 54 characters
+Key Keywords: will drafting in ahmedabad, will registration gujarat sub registrar, huf partition will ahmedabad, business succession planning gujarat, legal will draft ahmedabad
+Key Local Context: Garvi Gujarat registration portal, HUF property allocation and family business succession structuring, Gandhinagar & Ahmedabad revenue circles.
+
+--------------------------------------------------------------------------------
+CITY 11: JAIPUR (RAJASTHAN)
+--------------------------------------------------------------------------------
+Primary URL Slug: /locations/jaipur
+Alternative Slug: /locations/will-drafting-in-jaipur
+Canonical URL: https://www.willdrafting.in/locations/jaipur
+Page Title: Will Drafting in Jaipur: Online Will & Succession Guide
+Title Length: 55 characters
+Meta Description: Draft a legally binding Will in Jaipur. Expert guidance on ancestral property succession, Rajasthan Sub-Registrar registration, and estate safety.
+Meta Description Length: 147 characters
+Hero H1 Tag: Online Will Drafting & Property Succession in Jaipur
+H1 Length: 52 characters
+Key Keywords: will drafting in jaipur, will registration rajasthan epanjiyan, ancestral property will jaipur, succession lawyer jaipur, online will rajasthan
+Key Local Context: ePanjiyan Rajasthan registration portal, JDA (Jaipur Development Authority) leasehold property transfer rules, Mitakshara coparcenary protections.
+
+--------------------------------------------------------------------------------
+CITY 12: LUCKNOW (UTTAR PRADESH)
+--------------------------------------------------------------------------------
+Primary URL Slug: /locations/lucknow
+Alternative Slug: /locations/will-drafting-in-lucknow
+Canonical URL: https://www.willdrafting.in/locations/lucknow
+Page Title: Will Drafting in Lucknow: Online Will Registration Help
+Title Length: 55 characters
+Meta Description: Secure family wealth in Lucknow. Professional Will drafting, UP IGRS registration guidance, and legal property succession advice by senior lawyers.
+Meta Description Length: 148 characters
+Hero H1 Tag: Online Will Drafting & Asset Protection in Lucknow
+H1 Length: 50 characters
+Key Keywords: will drafting in lucknow, will registration up igrs, lda property will transfer lucknow, lawyer for will lucknow, property inheritance up
+Key Local Context: Lucknow Development Authority (LDA) mutation process, UP IGRSUP portal registration slots, agricultural land inheritance under UP Revenue Code 2006.
+
+--------------------------------------------------------------------------------
+CITY 13: CHANDIGARH (PUNJAB & HARYANA TRICITY)
+--------------------------------------------------------------------------------
+Primary URL Slug: /locations/chandigarh
+Alternative Slug: /locations/will-drafting-in-chandigarh
+Canonical URL: https://www.willdrafting.in/locations/chandigarh
+Page Title: Will Drafting in Chandigarh: Online Will Making Guide
+Title Length: 53 characters
+Meta Description: Draft a legally valid Will in Chandigarh Tricity. Expert guidance on share of property, Sub-Registrar registration, and family succession planning.
+Meta Description Length: 148 characters
+Hero H1 Tag: Online Will Drafting & Estate Planning in Chandigarh
+H1 Length: 52 characters
+Key Keywords: will drafting in chandigarh, will registration tricity mohali panchkula, chandigarh housing board will transfer, estate planning lawyer chandigarh, online will punjab
+Key Local Context: Estate Office Chandigarh & Chandigarh Housing Board (CHB) transfer rules, Tricity cross-jurisdiction (Chandigarh, Mohali, Panchkula).
+
+--------------------------------------------------------------------------------
+CITY 14: SURAT (GUJARAT)
+--------------------------------------------------------------------------------
+Primary URL Slug: /locations/surat
+Alternative Slug: /locations/will-drafting-in-surat
+Canonical URL: https://www.willdrafting.in/locations/surat
+Page Title: Will Drafting in Surat: Online Will & Business Planning
+Title Length: 55 characters
+Meta Description: Draft your Will in Surat with expert lawyer review. Secure commercial assets, family business shares, and Gujarat Sub-Registrar registration easily.
+Meta Description Length: 149 characters
+Hero H1 Tag: Online Will Drafting & Commercial Asset Planning in Surat
+H1 Length: 57 characters
+Key Keywords: will drafting in surat, will registration surat gujarat, diamond business succession will surat, textile commercial estate planning surat, online will maker surat
+Key Local Context: Garvi Gujarat online registration, family-run textile and diamond trading commercial estate succession.
+
+--------------------------------------------------------------------------------
+CITY 15: INDORE (MADHYA PRADESH)
+--------------------------------------------------------------------------------
+Primary URL Slug: /locations/indore
+Alternative Slug: /locations/will-drafting-in-indore
+Canonical URL: https://www.willdrafting.in/locations/indore
+Page Title: Will Drafting in Indore: Online Will & Succession Help
+Title Length: 54 characters
+Meta Description: Draft a valid Will in Indore. Complete MP e-registration guidance, ancestral land succession rules, and professional legal consultation online.
+Meta Description Length: 144 characters
+Hero H1 Tag: Legal Will Drafting & Asset Succession in Indore
+H1 Length: 48 characters
+Key Keywords: will drafting in indore, will registration mp igrs sampada, property will lawyer indore, ida plot will transfer indore, estate planning madhya pradesh
+Key Local Context: MP Sampada e-registration portal, Indore Development Authority (IDA) succession guidelines, commercial hub estate structuring.
+
+--------------------------------------------------------------------------------
+CITY 16: KOCHI / ERNAKULAM (KERALA)
+--------------------------------------------------------------------------------
+Primary URL Slug: /locations/kochi
+Alternative Slug: /locations/will-drafting-in-kochi
+Canonical URL: https://www.willdrafting.in/locations/kochi
+Page Title: Will Drafting in Kochi: Online Will & NRI Estate Guide
+Title Length: 54 characters
+Meta Description: Draft a legally binding Will in Kochi. Comprehensive support for NRI property owners, Christian inheritance law, and Kerala SRO registration.
+Meta Description Length: 142 characters
+Hero H1 Tag: Online Will Drafting & NRI Succession Support in Kochi
+H1 Length: 54 characters
+Key Keywords: will drafting in kochi, nri will kerala cochin, will registration kerala pearls portal, christian succession act will kochi, estate planning lawyer ernakulam
+Key Local Context: PEARLS portal Kerala Registration Dept, Indian Succession Act provisions for Syrian Christian and Latin Catholic communities, NRI repatriation & power of attorney execution.
+
+--------------------------------------------------------------------------------
+CITY 17: NAGPUR (MAHARASHTRA)
+--------------------------------------------------------------------------------
+Primary URL Slug: /locations/nagpur
+Alternative Slug: /locations/will-drafting-in-nagpur
+Canonical URL: https://www.willdrafting.in/locations/nagpur
+Page Title: Will Drafting in Nagpur: Legal Online Will Making Help
+Title Length: 54 characters
+Meta Description: Draft your Will in Nagpur with confidence. Professional lawyer consultation, Vidarbha property succession rules, and IGR registration assistance.
+Meta Description Length: 146 characters
+Hero H1 Tag: Online Will Drafting & Property Protection in Nagpur
+H1 Length: 52 characters
+Key Keywords: will drafting in nagpur, will registration nagpur sro, vidarbha property succession will, advocate for will drafting nagpur, online will maharashtra
+Key Local Context: Nagpur Improvement Trust (NIT) & NMC mutation rules, IGR Maharashtra registration, zero compulsory probate requirements for Vidarbha district courts.
+
+--------------------------------------------------------------------------------
+CITY 18: BHOPAL (MADHYA PRADESH)
+--------------------------------------------------------------------------------
+Primary URL Slug: /locations/bhopal
+Alternative Slug: /locations/will-drafting-in-bhopal
+Canonical URL: https://www.willdrafting.in/locations/bhopal
+Page Title: Will Drafting in Bhopal: Online Will & Asset Planning
+Title Length: 53 characters
+Meta Description: Create a legally valid Will in Bhopal. Get expert guidance on MP property transfer, Sub-Registrar registration, and family asset distribution.
+Meta Description Length: 144 characters
+Hero H1 Tag: Online Will Drafting & Estate Succession in Bhopal
+H1 Length: 50 characters
+Key Keywords: will drafting in bhopal, will registration bhopal sampada, bda property succession will, lawyer for will making bhopal, succession certificate mp
+Key Local Context: MP Sampada portal registration, Bhopal Development Authority (BDA) property mutation, state succession procedures.
+
+--------------------------------------------------------------------------------
+CITY 19: PATNA (BIHAR)
+--------------------------------------------------------------------------------
+Primary URL Slug: /locations/patna
+Alternative Slug: /locations/will-drafting-in-patna
+Canonical URL: https://www.willdrafting.in/locations/patna
+Page Title: Will Drafting in Patna: Online Will Registration Guide
+Title Length: 54 characters
+Meta Description: Draft a legally binding Will in Patna. Clear guidance on Bihar land records, Sub-Registrar registration, and ancestral property succession rules.
+Meta Description Length: 146 characters
+Hero H1 Tag: Online Will Drafting & Property Succession in Patna
+H1 Length: 51 characters
+Key Keywords: will drafting in patna, will registration bihar e-nibandhan, bihar bhumi dakhil kharij will, property succession advocate patna, online will bihar
+Key Local Context: Bihar e-Nibandhan portal, Bihar Bhumi Dakhil Kharij (mutation) link with registered wills, Patna High Court probate jurisdiction.
+
+--------------------------------------------------------------------------------
+CITY 20: COIMBATORE (TAMIL NADU)
+--------------------------------------------------------------------------------
+Primary URL Slug: /locations/coimbatore
+Alternative Slug: /locations/will-drafting-in-coimbatore
+Canonical URL: https://www.willdrafting.in/locations/coimbatore
+Page Title: Will Drafting in Coimbatore: Online Will Making Guide
+Title Length: 53 characters
+Meta Description: Draft a legally valid Will in Coimbatore. Expert guidance on industrial assets, Tamil Nadu SRO registration, and smooth family wealth distribution.
+Meta Description Length: 148 characters
+Hero H1 Tag: Legal Will Drafting & Wealth Distribution in Coimbatore
+H1 Length: 55 characters
+Key Keywords: will drafting in coimbatore, will registration tnreginet coimbatore, industrial asset succession will, estate planning lawyer coimbatore, online will tamil nadu
+Key Local Context: TNREGINET registration, family business & textile enterprise asset distribution, probate non-compulsory outside Chennai municipal limits unless ordered by court.

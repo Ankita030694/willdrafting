@@ -18,6 +18,11 @@ const nextConfig: NextConfig = {
   async redirects() {
     return [
       {
+        source: "/locations/will-drafting-in-delhi",
+        destination: "/locations/delhi",
+        permanent: true,
+      },
+      {
         source: "/contactus",
         destination: "/contact",
         permanent: true,

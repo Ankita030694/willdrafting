@@ -18,6 +18,14 @@ export interface SitemapPageItem {
  */
 export const staticPages: SitemapPageItem[] = [
   {
+    title: "Will Drafting in Delhi: Online Will Registration Guide",
+    href: "/locations/delhi",
+    category: "Locations",
+    date: "21-10-2026",
+    changefreq: "weekly",
+    priority: 1.0,
+  },
+  {
     title: "Christian & Parsi Will Rules India: Indian Succession Act Guide",
     href: "/blogs/christian-parsi-will-indian-succession-act",
     category: "Guides",
@@ -551,7 +559,7 @@ export function getAllSitemapLinks(): SitemapPageItem[] {
  * 'Templates' is prioritized immediately after 'All'.
  */
 export function getCategories(links: SitemapPageItem[] = staticPages): string[] {
-  const categoryOrder = ["All", "Templates", "Tools", "Services", "Guides", "Company"];
+  const categoryOrder = ["All", "Templates", "Tools", "Services", "Locations", "Guides", "Company"];
   const dynamicCategories = new Set<string>();
 
   for (const link of links) {
