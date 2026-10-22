@@ -49,6 +49,7 @@ export default function Navbar() {
   const isAuthenticated = status === "authenticated";
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [dropdownOpen, setDropdownOpen] = useState(false);
+  const [openMobileDropdown, setOpenMobileDropdown] = useState<string | null>(null);
   const openSignup = () => window.dispatchEvent(new Event(OPEN_SIGNUP_EVENT));
   const dropdownRef = useRef<HTMLDivElement>(null);
   const dropdownTimeoutRef = useRef<NodeJS.Timeout | null>(null);
@@ -105,6 +106,7 @@ export default function Navbar() {
         !hamburgerBtnRef.current.contains(target)
       ) {
         setMobileMenuOpen(false);
+        setOpenMobileDropdown(null);
       }
     }
 
@@ -115,12 +117,14 @@ export default function Navbar() {
         }
         setMobileMenuOpen(false);
         setDropdownOpen(false);
+        setOpenMobileDropdown(null);
       }
     }
 
     function handleResize() {
       if (window.innerWidth >= 768) {
         setMobileMenuOpen(false);
+        setOpenMobileDropdown(null);
       }
     }
 
@@ -144,6 +148,7 @@ export default function Navbar() {
       document.body.style.overflow = "hidden";
     } else {
       document.body.style.overflow = "";
+      setOpenMobileDropdown(null);
     }
     return () => {
       document.body.style.overflow = "";
@@ -348,11 +353,13 @@ export default function Navbar() {
                 duration: 0.3,
                 ease: [0.16, 1, 0.3, 1], // Smooth fluid ease-out curve
               }}
-              className="pointer-events-auto absolute left-4 right-4 top-[74px] mx-auto max-w-[1080px] rounded-3xl border border-white/60 bg-white/95 p-5 shadow-[0_16px_40px_rgba(0,0,0,0.14)] backdrop-blur-xl md:hidden z-50 origin-top"
+              className="pointer-events-auto absolute left-4 right-4 top-[74px] mx-auto max-w-[1080px] max-h-[calc(100dvh-95px)] overflow-y-auto rounded-3xl border border-white/60 bg-white/95 p-5 shadow-[0_16px_40px_rgba(0,0,0,0.14)] backdrop-blur-xl md:hidden z-50 origin-top"
             >
               <div className="flex flex-col space-y-1 text-left">
-                {NAV_ITEMS.map((item, idx) =>
-                  item.hasDropdown ? (
+                {NAV_ITEMS.map((item, idx) => {
+                  const isItemOpen = openMobileDropdown === item.label;
+
+                  return item.hasDropdown ? (
                     <motion.div
                       key={item.label}
                       initial={{ opacity: 0, x: -8 }}
@@ -362,28 +369,64 @@ export default function Navbar() {
                         duration: 0.22,
                         ease: "easeOut",
                       }}
-                      className="border-b border-slate-100 pb-2 mb-1 text-left"
+                      className="w-full text-left"
                     >
-                      <div className="px-3 py-1 text-xs font-bold uppercase tracking-wider text-slate-400 text-left">
-                        {item.label}
-                      </div>
-                      <div className="ml-2 mt-1 flex flex-col space-y-1 text-left">
-                        {item.dropdownItems?.map((sub) => (
-                          <Link
-                            key={sub.label}
-                            href={sub.href}
-                            onClick={() => setMobileMenuOpen(false)}
-                            className="flex items-center justify-between text-left w-full rounded-xl px-3 py-2 text-sm font-medium text-slate-700 hover:bg-slate-100 hover:text-black transition-colors"
+                      <button
+                        type="button"
+                        onClick={() =>
+                          setOpenMobileDropdown((prev) =>
+                            prev === item.label ? null : item.label
+                          )
+                        }
+                        aria-expanded={isItemOpen}
+                        className="flex items-center justify-between text-left w-full rounded-2xl px-4 py-3 text-[15px] font-medium text-[#1c282e] hover:bg-slate-100/80 hover:text-black transition-colors focus:outline-none"
+                      >
+                        <span>{item.label}</span>
+                        <ChevronDown
+                          size={18}
+                          strokeWidth={2.2}
+                          className={`text-[#2d3a41] transition-transform duration-200 ${
+                            isItemOpen ? "rotate-180" : ""
+                          }`}
+                        />
+                      </button>
+
+                      <AnimatePresence initial={false}>
+                        {isItemOpen && (
+                          <motion.div
+                            key={`dropdown-${item.label}`}
+                            initial={{ height: 0, opacity: 0 }}
+                            animate={{ height: "auto", opacity: 1 }}
+                            exit={{ height: 0, opacity: 0 }}
+                            transition={{
+                              duration: 0.25,
+                              ease: [0.16, 1, 0.3, 1],
+                            }}
+                            className="overflow-hidden"
                           >
-                            <span>{sub.label}</span>
-                            {sub.badge && (
-                              <span className="text-[9px] font-bold uppercase tracking-wider text-[#C65378] bg-[#F5EBF4] px-2 py-0.5 rounded">
-                                {sub.badge}
-                              </span>
-                            )}
-                          </Link>
-                        ))}
-                      </div>
+                            <div className="mx-1 my-1 flex flex-col space-y-1 rounded-2xl bg-slate-50/80 p-1.5 border border-slate-100/80">
+                              {item.dropdownItems?.map((sub) => (
+                                <Link
+                                  key={sub.label}
+                                  href={sub.href}
+                                  onClick={() => {
+                                    setMobileMenuOpen(false);
+                                    setOpenMobileDropdown(null);
+                                  }}
+                                  className="flex items-center justify-between text-left w-full rounded-xl px-3.5 py-2.5 text-[14px] font-medium text-slate-700 hover:bg-white hover:text-black transition-colors"
+                                >
+                                  <span>{sub.label}</span>
+                                  {sub.badge && (
+                                    <span className="text-[9px] font-bold uppercase tracking-wider text-[#C65378] bg-[#F5EBF4] px-2 py-0.5 rounded">
+                                      {sub.badge}
+                                    </span>
+                                  )}
+                                </Link>
+                              ))}
+                            </div>
+                          </motion.div>
+                        )}
+                      </AnimatePresence>
                     </motion.div>
                   ) : (
                     <motion.div
@@ -409,8 +452,8 @@ export default function Navbar() {
                         {item.label}
                       </Link>
                     </motion.div>
-                  )
-                )}
+                  );
+                })}
 
                 <motion.div
                   initial={{ opacity: 0, y: 6 }}

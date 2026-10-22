@@ -18,6 +18,76 @@ const nextConfig: NextConfig = {
   async redirects() {
     return [
       {
+        source: "/locations/will-drafting-in-indore",
+        destination: "/locations/indore",
+        permanent: true,
+      },
+      {
+        source: "/locations/will-drafting-in-surat",
+        destination: "/locations/surat",
+        permanent: true,
+      },
+      {
+        source: "/locations/will-drafting-in-chandigarh",
+        destination: "/locations/chandigarh",
+        permanent: true,
+      },
+      {
+        source: "/locations/will-drafting-in-jaipur",
+        destination: "/locations/jaipur",
+        permanent: true,
+      },
+      {
+        source: "/locations/will-drafting-in-ahmedabad",
+        destination: "/locations/ahmedabad",
+        permanent: true,
+      },
+      {
+        source: "/locations/will-drafting-in-pune",
+        destination: "/locations/pune",
+        permanent: true,
+      },
+      {
+        source: "/locations/will-drafting-in-kolkata",
+        destination: "/locations/kolkata",
+        permanent: true,
+      },
+      {
+        source: "/locations/will-drafting-in-chennai",
+        destination: "/locations/chennai",
+        permanent: true,
+      },
+      {
+        source: "/locations/will-drafting-in-hyderabad",
+        destination: "/locations/hyderabad",
+        permanent: true,
+      },
+      {
+        source: "/locations/will-drafting-in-gurgaon",
+        destination: "/locations/gurgaon",
+        permanent: true,
+      },
+      {
+        source: "/locations/will-drafting-in-lucknow",
+        destination: "/locations/lucknow",
+        permanent: true,
+      },
+      {
+        source: "/locations/will-drafting-in-noida",
+        destination: "/locations/noida",
+        permanent: true,
+      },
+      {
+        source: "/locations/will-drafting-in-bengaluru",
+        destination: "/locations/bengaluru",
+        permanent: true,
+      },
+      {
+        source: "/locations/will-drafting-in-mumbai",
+        destination: "/locations/mumbai",
+        permanent: true,
+      },
+      {
         source: "/locations/will-drafting-in-delhi",
         destination: "/locations/delhi",
         permanent: true,

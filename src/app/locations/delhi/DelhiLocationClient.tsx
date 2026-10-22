@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useSession } from "next-auth/react";
 import { OPEN_SIGNUP_EVENT } from "@/components/auth/SignupModalHost";
@@ -42,6 +43,7 @@ const TOC_ITEMS = [
   { id: "mandatory-vs-optional", label: "REGISTRATION RULES" },
   { id: "delhi-probate-rules", label: "PROBATE RULES" },
   { id: "delhi-sro-directory", label: "SRO DIRECTORY" },
+  { id: "delhi-area-coverage", label: "LOCAL AREAS" },
   { id: "step-by-step-delhi-sop", label: "5-STEP PROCESS" },
   { id: "section-31-home-visit", label: "HOME REGISTRATION" },
   { id: "documents-checklist", label: "DOCUMENTS" },
@@ -844,7 +846,450 @@ export default function DelhiLocationClient({ faqs }: Props) {
               </div>
             </section>
 
-            {/* SECTION 5: STEP BY STEP SOP */}
+            {/* SECTION 5: AREA-WISE WILL DRAFTING ACROSS DELHI & NCR */}
+            <section id="delhi-area-coverage" className="scroll-target space-y-6">
+              <div className="space-y-2">
+                <div className="flex items-center gap-2 text-xs font-black uppercase tracking-wider text-[#C65378]">
+                  <MapPin className="w-4 h-4 text-[#C65378]" />
+                  <span>LOCAL AREA COVERAGE &amp; SRO HUBS</span>
+                </div>
+                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                  5. Area-Wise Will Drafting Across Delhi NCR Localities
+                </h2>
+                <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
+                  Property categories across Delhi range from DDA freehold/leasehold flats and cooperative group housing societies (CGHS) to luxury builder floors with roof rights and agricultural farmhouses.
+                  Whether your assets lie in South Delhi, Dwarka, Rohini, or Trans-Yamuna, our advocates provide verified legal drafting, DORIS portal slot booking, and Sub-Registrar accompaniment:
+                </p>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+                {/* AREA 1: HAUZ KHAS & GREEN PARK */}
+                <div className="rounded-3xl bg-white border border-slate-200/90 p-5 sm:p-6 shadow-xs hover:shadow-md transition-all flex flex-col justify-between group">
+                  <div className="space-y-3.5">
+                    <div className="flex items-center justify-between gap-2">
+                      <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-rose-50 text-[#C65378] border border-rose-100">
+                        <MapPin className="w-3.5 h-3.5" />
+                        South Delhi Core
+                      </span>
+                      <span className="text-[11px] font-semibold text-slate-500 bg-slate-100 px-2.5 py-1 rounded-lg">
+                        SRO V-A (Hauz Khas)
+                      </span>
+                    </div>
+
+                    <h3 className="font-extrabold text-lg text-slate-900 group-hover:text-[#C65378] transition-colors">
+                      Will Drafting in Hauz Khas &amp; Green Park
+                    </h3>
+
+                    <div className="flex flex-wrap gap-1.5 text-[11px] text-slate-600">
+                      <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Hauz Khas Enclave</span>
+                      <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Green Park Main &amp; Extension</span>
+                      <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Safdarjung Enclave</span>
+                      <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Gulmohar Park &amp; Asiad Village</span>
+                    </div>
+
+                    <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                      Hauz Khas and Green Park feature prime freehold kothis, newly constructed 4-story builder floors, and DDA SFS flats.
+                      Since Delhi is a non-presidency town, obtaining court probate is optional. A registered Will acts as conclusive testamentary proof for MCD property tax mutation and DDA title substitution without demanding expensive civil court succession certificates.
+                    </p>
+
+                    <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
+                      <div className="flex items-center gap-2 font-bold text-slate-900">
+                        <Building className="w-3.5 h-3.5 text-[#C65378]" />
+                        <span>SRO Hub: District Court Complex, Saket (SRO V-A)</span>
+                      </div>
+                      <p className="text-[11px] text-slate-500">
+                        DORIS e-appointment scheduling, Saket Court SRO advocate attendance, and Section 31 home visits for elderly testators across Hauz Khas.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="pt-4 mt-4 border-t border-slate-100 flex items-center justify-between">
+                    <span className="text-xs font-bold text-slate-500">₹0 Stamp Duty · ₹100 Govt Fee</span>
+                    <Link
+                      href="/start"
+                      onClick={handleStartDraft}
+                      className="inline-flex items-center gap-1.5 text-xs font-bold text-[#C65378] hover:text-[#a13c5d] group-hover:translate-x-0.5 transition-all"
+                    >
+                      <span>Draft Hauz Khas Will</span>
+                      <ArrowRight className="w-3.5 h-3.5" />
+                    </Link>
+                  </div>
+                </div>
+
+                {/* AREA 2: VASANT KUNJ & MEHRAULI */}
+                <div className="rounded-3xl bg-white border border-slate-200/90 p-5 sm:p-6 shadow-xs hover:shadow-md transition-all flex flex-col justify-between group">
+                  <div className="space-y-3.5">
+                    <div className="flex items-center justify-between gap-2">
+                      <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-rose-50 text-[#C65378] border border-rose-100">
+                        <MapPin className="w-3.5 h-3.5" />
+                        South West / Ridge
+                      </span>
+                      <span className="text-[11px] font-semibold text-slate-500 bg-slate-100 px-2.5 py-1 rounded-lg">
+                        SRO V (Mehrauli)
+                      </span>
+                    </div>
+
+                    <h3 className="font-extrabold text-lg text-slate-900 group-hover:text-[#C65378] transition-colors">
+                      Will Drafting in Vasant Kunj &amp; Mehrauli
+                    </h3>
+
+                    <div className="flex flex-wrap gap-1.5 text-[11px] text-slate-600">
+                      <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Vasant Kunj (Sectors A, B, C, D)</span>
+                      <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Vasant Vihar</span>
+                      <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Mehrauli Tehsil Area</span>
+                      <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Chattarpur Farmhouses</span>
+                    </div>
+
+                    <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                      Covering extensive DDA residential housing pockets in Vasant Kunj alongside ancestral land holdings and farmhouse estates in Chattarpur and Mehrauli.
+                      Our senior advocates draft customized bequests dealing with DDA leasehold conversion clauses, demarcation of agricultural/farmhouse partitions, and doctor medical fitness certificates for senior citizens.
+                    </p>
+
+                    <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
+                      <div className="flex items-center gap-2 font-bold text-slate-900">
+                        <Building className="w-3.5 h-3.5 text-[#C65378]" />
+                        <span>SRO Hub: Tehsil Building, Mehrauli (SRO V)</span>
+                      </div>
+                      <p className="text-[11px] text-slate-500">
+                        Direct assistance for DDA pocket residents, Section 31 doorstep commissioner appointments, and independent witness attestation.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="pt-4 mt-4 border-t border-slate-100 flex items-center justify-between">
+                    <span className="text-xs font-bold text-slate-500">DDA &amp; Farmhouse Succession</span>
+                    <Link
+                      href="/start"
+                      onClick={handleStartDraft}
+                      className="inline-flex items-center gap-1.5 text-xs font-bold text-[#C65378] hover:text-[#a13c5d] group-hover:translate-x-0.5 transition-all"
+                    >
+                      <span>Draft Vasant Kunj Will</span>
+                      <ArrowRight className="w-3.5 h-3.5" />
+                    </Link>
+                  </div>
+                </div>
+
+                {/* AREA 3: SOUTH EXTENSION & GREATER KAILASH */}
+                <div className="rounded-3xl bg-white border border-slate-200/90 p-5 sm:p-6 shadow-xs hover:shadow-md transition-all flex flex-col justify-between group">
+                  <div className="space-y-3.5">
+                    <div className="flex items-center justify-between gap-2">
+                      <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-rose-50 text-[#C65378] border border-rose-100">
+                        <MapPin className="w-3.5 h-3.5" />
+                        South Delhi Central
+                      </span>
+                      <span className="text-[11px] font-semibold text-slate-500 bg-slate-100 px-2.5 py-1 rounded-lg">
+                        SRO V &amp; SRO VII
+                      </span>
+                    </div>
+
+                    <h3 className="font-extrabold text-lg text-slate-900 group-hover:text-[#C65378] transition-colors">
+                      Will Drafting in South Extension &amp; Greater Kailash (GK 1 &amp; 2)
+                    </h3>
+
+                    <div className="flex flex-wrap gap-1.5 text-[11px] text-slate-600">
+                      <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Greater Kailash I &amp; II</span>
+                      <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">South Extension I &amp; II</span>
+                      <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Defence Colony &amp; Panchsheel</span>
+                      <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Anand Lok, Neeti Bagh &amp; CR Park</span>
+                    </div>
+
+                    <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                      South Delhi kothis and luxury builder floors often face bitter disputes regarding terrace rights, basement access, and stilt parking slots.
+                      Our Will drafts specifically codify undivided impartible ownership in land, exclusive roof rights, demat share transmission, and business succession to ensure seamless inter-generational handover.
+                    </p>
+
+                    <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
+                      <div className="flex items-center gap-2 font-bold text-slate-900">
+                        <Building className="w-3.5 h-3.5 text-[#C65378]" />
+                        <span>SRO Hub: INA Vikas Sadan (SRO VII) &amp; Saket SRO</span>
+                      </div>
+                      <p className="text-[11px] text-slate-500">
+                        Complete support for high-net-worth estate planning, family trust structuring, and expedited Book III registration.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="pt-4 mt-4 border-t border-slate-100 flex items-center justify-between">
+                    <span className="text-xs font-bold text-slate-500">High-Value Builder Floors</span>
+                    <Link
+                      href="/start"
+                      onClick={handleStartDraft}
+                      className="inline-flex items-center gap-1.5 text-xs font-bold text-[#C65378] hover:text-[#a13c5d] group-hover:translate-x-0.5 transition-all"
+                    >
+                      <span>Draft GK / South Ex Will</span>
+                      <ArrowRight className="w-3.5 h-3.5" />
+                    </Link>
+                  </div>
+                </div>
+
+                {/* AREA 4: DWARKA & SOUTH WEST DELHI */}
+                <div className="rounded-3xl bg-white border border-slate-200/90 p-5 sm:p-6 shadow-xs hover:shadow-md transition-all flex flex-col justify-between group">
+                  <div className="space-y-3.5">
+                    <div className="flex items-center justify-between gap-2">
+                      <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-rose-50 text-[#C65378] border border-rose-100">
+                        <MapPin className="w-3.5 h-3.5" />
+                        Sub-City Hub
+                      </span>
+                      <span className="text-[11px] font-semibold text-slate-500 bg-slate-100 px-2.5 py-1 rounded-lg">
+                        SRO X (Dwarka)
+                      </span>
+                    </div>
+
+                    <h3 className="font-extrabold text-lg text-slate-900 group-hover:text-[#C65378] transition-colors">
+                      Will Drafting in Dwarka &amp; South West Delhi
+                    </h3>
+
+                    <div className="flex flex-wrap gap-1.5 text-[11px] text-slate-600">
+                      <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Dwarka (Sectors 1 to 23)</span>
+                      <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">CGHS Cooperative Societies</span>
+                      <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Janakpuri &amp; Vikaspuri</span>
+                      <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Palam, Uttam Nagar &amp; Najafgarh</span>
+                    </div>
+
+                    <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                      Dwarka is Asia&apos;s largest residential sub-city, comprising hundreds of Cooperative Group Housing Societies (CGHS) and DDA apartments.
+                      A registered Will is critical for society management committees to transfer share certificates and membership to the designated legal heir without requiring protracted civil litigation.
+                    </p>
+
+                    <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
+                      <div className="flex items-center gap-2 font-bold text-slate-900">
+                        <Building className="w-3.5 h-3.5 text-[#C65378]" />
+                        <span>SRO Hub: SRO X, Sector 10, Dwarka, New Delhi</span>
+                      </div>
+                      <p className="text-[11px] text-slate-500">
+                        Online DORIS e-appointment scheduling, fast biometric verification, and doorstep visits for retired officers and senior citizens.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="pt-4 mt-4 border-t border-slate-100 flex items-center justify-between">
+                    <span className="text-xs font-bold text-slate-500">CGHS Flat Succession</span>
+                    <Link
+                      href="/start"
+                      onClick={handleStartDraft}
+                      className="inline-flex items-center gap-1.5 text-xs font-bold text-[#C65378] hover:text-[#a13c5d] group-hover:translate-x-0.5 transition-all"
+                    >
+                      <span>Draft Dwarka Will</span>
+                      <ArrowRight className="w-3.5 h-3.5" />
+                    </Link>
+                  </div>
+                </div>
+
+                {/* AREA 5: ROHINI & PITAMPURA */}
+                <div className="rounded-3xl bg-white border border-slate-200/90 p-5 sm:p-6 shadow-xs hover:shadow-md transition-all flex flex-col justify-between group">
+                  <div className="space-y-3.5">
+                    <div className="flex items-center justify-between gap-2">
+                      <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-rose-50 text-[#C65378] border border-rose-100">
+                        <MapPin className="w-3.5 h-3.5" />
+                        North West Delhi
+                      </span>
+                      <span className="text-[11px] font-semibold text-slate-500 bg-slate-100 px-2.5 py-1 rounded-lg">
+                        SRO VI (Pitampura)
+                      </span>
+                    </div>
+
+                    <h3 className="font-extrabold text-lg text-slate-900 group-hover:text-[#C65378] transition-colors">
+                      Will Drafting in Rohini &amp; Pitampura
+                    </h3>
+
+                    <div className="flex flex-wrap gap-1.5 text-[11px] text-slate-600">
+                      <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Rohini (Sectors 1 to 34)</span>
+                      <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Pitampura &amp; Saraswati Vihar</span>
+                      <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Shalimar Bagh &amp; Ashok Vihar</span>
+                      <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Prashant Vihar &amp; Rani Bagh</span>
+                    </div>
+
+                    <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                      Rohini and Pitampura feature extensive DDA plotted housing schemes, commercial market shops, and multi-generation family properties.
+                      Our advocates assist in drafting unambiguous bequests covering shop ownership, rental income streams, and residential floors, coordinating directly with SRO Pitampura and Rohini Court Complex.
+                    </p>
+
+                    <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
+                      <div className="flex items-center gap-2 font-bold text-slate-900">
+                        <Building className="w-3.5 h-3.5 text-[#C65378]" />
+                        <span>SRO Hub: Sub-Registrar VI, Pitampura, Delhi</span>
+                      </div>
+                      <p className="text-[11px] text-slate-500">
+                        Doctor mental fitness certification, in-person advocate accompaniment, and streamlined MCD property tax mutation guidance.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="pt-4 mt-4 border-t border-slate-100 flex items-center justify-between">
+                    <span className="text-xs font-bold text-slate-500">Plotted &amp; Commercial Units</span>
+                    <Link
+                      href="/start"
+                      onClick={handleStartDraft}
+                      className="inline-flex items-center gap-1.5 text-xs font-bold text-[#C65378] hover:text-[#a13c5d] group-hover:translate-x-0.5 transition-all"
+                    >
+                      <span>Draft Rohini Will</span>
+                      <ArrowRight className="w-3.5 h-3.5" />
+                    </Link>
+                  </div>
+                </div>
+
+                {/* AREA 6: SAKET & MALVIYA NAGAR */}
+                <div className="rounded-3xl bg-white border border-slate-200/90 p-5 sm:p-6 shadow-xs hover:shadow-md transition-all flex flex-col justify-between group">
+                  <div className="space-y-3.5">
+                    <div className="flex items-center justify-between gap-2">
+                      <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-rose-50 text-[#C65378] border border-rose-100">
+                        <MapPin className="w-3.5 h-3.5" />
+                        South Delhi Urban
+                      </span>
+                      <span className="text-[11px] font-semibold text-slate-500 bg-slate-100 px-2.5 py-1 rounded-lg">
+                        SRO V-A (Saket)
+                      </span>
+                    </div>
+
+                    <h3 className="font-extrabold text-lg text-slate-900 group-hover:text-[#C65378] transition-colors">
+                      Will Drafting in Saket &amp; Malviya Nagar
+                    </h3>
+
+                    <div className="flex flex-wrap gap-1.5 text-[11px] text-slate-600">
+                      <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Saket Residential Blocks</span>
+                      <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Malviya Nagar &amp; Shivalik</span>
+                      <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Sarvodaya &amp; Geetanjali Enclave</span>
+                      <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Sainik Farm &amp; Pushp Vihar</span>
+                    </div>
+
+                    <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                      Close to the Saket District Courts, residents in Saket and Malviya Nagar benefit from swift advocate execution.
+                      We prepare comprehensive Wills encompassing residential builder floors, bank lockers, demat accounts, and vehicle bequests, preventing probate delays and ensuring clear testamentary succession.
+                    </p>
+
+                    <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
+                      <div className="flex items-center gap-2 font-bold text-slate-900">
+                        <Building className="w-3.5 h-3.5 text-[#C65378]" />
+                        <span>SRO Hub: Saket District Court Complex (SRO V-A)</span>
+                      </div>
+                      <p className="text-[11px] text-slate-500">
+                        Priority appointment booking, advocate representation before the Sub-Registrar, and fast-track Book III registration.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="pt-4 mt-4 border-t border-slate-100 flex items-center justify-between">
+                    <span className="text-xs font-bold text-slate-500">Saket Court Hub</span>
+                    <Link
+                      href="/start"
+                      onClick={handleStartDraft}
+                      className="inline-flex items-center gap-1.5 text-xs font-bold text-[#C65378] hover:text-[#a13c5d] group-hover:translate-x-0.5 transition-all"
+                    >
+                      <span>Draft Saket Will</span>
+                      <ArrowRight className="w-3.5 h-3.5" />
+                    </Link>
+                  </div>
+                </div>
+
+                {/* AREA 7: LAJPAT NAGAR & DEFENCE COLONY */}
+                <div className="rounded-3xl bg-white border border-slate-200/90 p-5 sm:p-6 shadow-xs hover:shadow-md transition-all flex flex-col justify-between group">
+                  <div className="space-y-3.5">
+                    <div className="flex items-center justify-between gap-2">
+                      <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-rose-50 text-[#C65378] border border-rose-100">
+                        <MapPin className="w-3.5 h-3.5" />
+                        South East Delhi
+                      </span>
+                      <span className="text-[11px] font-semibold text-slate-500 bg-slate-100 px-2.5 py-1 rounded-lg">
+                        SRO IV-A / SRO VII
+                      </span>
+                    </div>
+
+                    <h3 className="font-extrabold text-lg text-slate-900 group-hover:text-[#C65378] transition-colors">
+                      Will Drafting in Lajpat Nagar &amp; Defence Colony
+                    </h3>
+
+                    <div className="flex flex-wrap gap-1.5 text-[11px] text-slate-600">
+                      <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Lajpat Nagar (I, II, III, IV)</span>
+                      <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Defence Colony</span>
+                      <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Nizamuddin East &amp; West</span>
+                      <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">New Friends Colony &amp; Maharani Bagh</span>
+                    </div>
+
+                    <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                      Lajpat Nagar features historical rehabilitation leases converted to freehold alongside high-value residential blocks in Defence Colony and New Friends Colony.
+                      Our legal specialists incorporate specific clauses for Land &amp; Development Office (L&amp;DO) compliance, commercial showroom rents, and clear witness attestation.
+                    </p>
+
+                    <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
+                      <div className="flex items-center gap-2 font-bold text-slate-900">
+                        <Building className="w-3.5 h-3.5 text-[#C65378]" />
+                        <span>SRO Hub: INA Vikas Sadan &amp; Lajpat Nagar Zonal Office</span>
+                      </div>
+                      <p className="text-[11px] text-slate-500">
+                        L&amp;DO leasehold conversion advisory, home registration visits under Section 31, and comprehensive estate drafting.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="pt-4 mt-4 border-t border-slate-100 flex items-center justify-between">
+                    <span className="text-xs font-bold text-slate-500">L&amp;DO &amp; Freehold Estates</span>
+                    <Link
+                      href="/start"
+                      onClick={handleStartDraft}
+                      className="inline-flex items-center gap-1.5 text-xs font-bold text-[#C65378] hover:text-[#a13c5d] group-hover:translate-x-0.5 transition-all"
+                    >
+                      <span>Draft Lajpat Nagar Will</span>
+                      <ArrowRight className="w-3.5 h-3.5" />
+                    </Link>
+                  </div>
+                </div>
+
+                {/* AREA 8: LAXMI NAGAR & PREET VIHAR */}
+                <div className="rounded-3xl bg-white border border-slate-200/90 p-5 sm:p-6 shadow-xs hover:shadow-md transition-all flex flex-col justify-between group">
+                  <div className="space-y-3.5">
+                    <div className="flex items-center justify-between gap-2">
+                      <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-rose-50 text-[#C65378] border border-rose-100">
+                        <MapPin className="w-3.5 h-3.5" />
+                        East Delhi / Trans-Yamuna
+                      </span>
+                      <span className="text-[11px] font-semibold text-slate-500 bg-slate-100 px-2.5 py-1 rounded-lg">
+                        SRO VIII (Preet Vihar)
+                      </span>
+                    </div>
+
+                    <h3 className="font-extrabold text-lg text-slate-900 group-hover:text-[#C65378] transition-colors">
+                      Will Drafting in Laxmi Nagar &amp; Preet Vihar
+                    </h3>
+
+                    <div className="flex flex-wrap gap-1.5 text-[11px] text-slate-600">
+                      <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Laxmi Nagar &amp; Vikas Marg</span>
+                      <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Preet Vihar &amp; Nirman Vihar</span>
+                      <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Mayur Vihar (Phases 1, 2, 3)</span>
+                      <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Patparganj IP Extension</span>
+                    </div>
+
+                    <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                      East Delhi and the Trans-Yamuna belt hold a vibrant blend of commercial commercial hubs in Laxmi Nagar, cooperative group housing societies in IP Extension, and DDA apartments in Mayur Vihar.
+                      We ensure straightforward testament distribution, safeguarding property transfer against local municipal hurdles and ensuring full peace of mind.
+                    </p>
+
+                    <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
+                      <div className="flex items-center gap-2 font-bold text-slate-900">
+                        <Building className="w-3.5 h-3.5 text-[#C65378]" />
+                        <span>SRO Hub: LM Bandh Shastri Nagar &amp; Preet Vihar Office</span>
+                      </div>
+                      <p className="text-[11px] text-slate-500">
+                        Complete East Delhi SRO appointment booking, witness document vetting, and home visit coordination for senior family members.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="pt-4 mt-4 border-t border-slate-100 flex items-center justify-between">
+                    <span className="text-xs font-bold text-slate-500">East Delhi Hub</span>
+                    <Link
+                      href="/start"
+                      onClick={handleStartDraft}
+                      className="inline-flex items-center gap-1.5 text-xs font-bold text-[#C65378] hover:text-[#a13c5d] group-hover:translate-x-0.5 transition-all"
+                    >
+                      <span>Draft East Delhi Will</span>
+                      <ArrowRight className="w-3.5 h-3.5" />
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            {/* SECTION 6: STEP BY STEP SOP */}
             <section id="step-by-step-delhi-sop" className="scroll-target space-y-6">
               <div className="space-y-2">
                 <div className="flex items-center gap-2 text-xs font-black uppercase tracking-wider text-[#C65378]">
@@ -852,7 +1297,7 @@ export default function DelhiLocationClient({ faqs }: Props) {
                   <span>STEP-BY-STEP PROCEDURE</span>
                 </div>
                 <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  5. Step-by-Step Will Registration in Delhi
+                  6. Step-by-Step Will Registration in Delhi
                 </h2>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Registering your Will before a Delhi Sub-Registrar follows a structured protocol under Delhi Revenue Department guidelines.
@@ -933,7 +1378,7 @@ export default function DelhiLocationClient({ faqs }: Props) {
               </div>
             </section>
 
-            {/* SECTION 6: SECTION 31 DOORSTEP HOME VISITS */}
+            {/* SECTION 7: SECTION 31 DOORSTEP HOME VISITS */}
             <section id="section-31-home-visit" className="scroll-target space-y-6">
               <div className="space-y-2">
                 <div className="flex items-center gap-2 text-xs font-black uppercase tracking-wider text-[#C65378]">
@@ -941,7 +1386,7 @@ export default function DelhiLocationClient({ faqs }: Props) {
                   <span>DOORSTEP SRO REGISTRATION</span>
                 </div>
                 <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  6. Section 31 Doorstep Registration for Seniors
+                  7. Section 31 Doorstep Registration for Seniors
                 </h2>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Many senior citizens in Delhi find it challenging to climb stairs at busy government offices or wait in queues at Tis Hazari or Saket.
@@ -989,7 +1434,7 @@ export default function DelhiLocationClient({ faqs }: Props) {
               </div>
             </section>
 
-            {/* SECTION 7: DOCUMENTS CHECKLIST */}
+            {/* SECTION 8: DOCUMENTS CHECKLIST */}
             <section id="documents-checklist" className="scroll-target space-y-6">
               <div className="space-y-2">
                 <div className="flex items-center gap-2 text-xs font-black uppercase tracking-wider text-[#C65378]">
@@ -997,7 +1442,7 @@ export default function DelhiLocationClient({ faqs }: Props) {
                   <span>INTERACTIVE CHECKLIST</span>
                 </div>
                 <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  7. Documents Checklist for Delhi Sub-Registrar
+                  8. Documents Checklist for Delhi Sub-Registrar
                 </h2>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Assemble your paperwork before heading to the Sub-Registrar office.
@@ -1040,7 +1485,7 @@ export default function DelhiLocationClient({ faqs }: Props) {
               </div>
             </section>
 
-            {/* SECTION 8: DELHI PROPERTY TYPES */}
+            {/* SECTION 9: DELHI PROPERTY TYPES */}
             <section id="delhi-property-types" className="scroll-target space-y-6">
               <div className="space-y-2">
                 <div className="flex items-center gap-2 text-xs font-black uppercase tracking-wider text-[#C65378]">
@@ -1048,7 +1493,7 @@ export default function DelhiLocationClient({ faqs }: Props) {
                   <span>PROPERTY SUCCESSION RULES</span>
                 </div>
                 <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  8. Delhi Property Types: DDA, Freehold &amp; Floors
+                  9. Delhi Property Types: DDA, Freehold &amp; Floors
                 </h2>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Succession in Delhi depends significantly on how property ownership was originally granted.
@@ -1095,7 +1540,7 @@ export default function DelhiLocationClient({ faqs }: Props) {
               </div>
             </section>
 
-            {/* SECTION 9: REGISTRATION FEES */}
+            {/* SECTION 10: REGISTRATION FEES */}
             <section id="delhi-registration-fees" className="scroll-target space-y-6">
               <div className="space-y-2">
                 <div className="flex items-center gap-2 text-xs font-black uppercase tracking-wider text-[#C65378]">
@@ -1103,7 +1548,7 @@ export default function DelhiLocationClient({ faqs }: Props) {
                   <span>OFFICIAL CHARGES</span>
                 </div>
                 <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  9. Official Delhi Government Fees &amp; Charges
+                  10. Official Delhi Government Fees &amp; Charges
                 </h2>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Unlike property sale deeds that incur 4% to 6% stamp duty, Wills are 100% exempt from stamp duty across India under the Indian Stamp Act, 1899.
@@ -1146,7 +1591,7 @@ export default function DelhiLocationClient({ faqs }: Props) {
               </div>
             </section>
 
-            {/* SECTION 10: PRICING & PACKAGES */}
+            {/* SECTION 11: PRICING & PACKAGES */}
             <section id="service-pricing" className="scroll-target space-y-6">
               <div className="space-y-2">
                 <div className="flex items-center gap-2 text-xs font-black uppercase tracking-wider text-[#C65378]">
@@ -1154,7 +1599,7 @@ export default function DelhiLocationClient({ faqs }: Props) {
                   <span>PLANS &amp; PRICING</span>
                 </div>
                 <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  10. Transparent Will Packages &amp; Legal Fees
+                  11. Transparent Will Packages &amp; Legal Fees
                 </h2>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Choose the level of legal assistance that fits your family&apos;s estate planning needs in Delhi NCR:
@@ -1290,7 +1735,7 @@ export default function DelhiLocationClient({ faqs }: Props) {
               </div>
             </section>
 
-            {/* SECTION 11: FAQS */}
+            {/* SECTION 12: FAQS */}
             <section id="frequently-asked-questions" className="scroll-target space-y-6">
               <div className="space-y-2">
                 <div className="flex items-center gap-2 text-xs font-black uppercase tracking-wider text-[#C65378]">
@@ -1298,7 +1743,7 @@ export default function DelhiLocationClient({ faqs }: Props) {
                   <span>FREQUENTLY ASKED QUESTIONS</span>
                 </div>
                 <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  11. Frequently Asked Questions: Delhi Wills
+                  12. Frequently Asked Questions: Delhi Wills
                 </h2>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Clear answers to common questions about making and registering a Will in Delhi NCR:
@@ -1335,7 +1780,7 @@ export default function DelhiLocationClient({ faqs }: Props) {
               </div>
             </section>
 
-            {/* SECTION 12: STATUTORY CITATIONS */}
+            {/* SECTION 13: STATUTORY CITATIONS */}
             <section id="statutory-citations" className="scroll-target space-y-6">
               <div className="space-y-2">
                 <div className="flex items-center gap-2 text-xs font-black uppercase tracking-wider text-[#C65378]">
@@ -1343,7 +1788,7 @@ export default function DelhiLocationClient({ faqs }: Props) {
                   <span>STATUTORY CITATIONS</span>
                 </div>
                 <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  12. Statutory References &amp; Delhi Legal Portals
+                  13. Statutory References &amp; Delhi Legal Portals
                 </h2>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Our drafting protocols strictly follow codified Indian statutes and official Delhi government registration channels:

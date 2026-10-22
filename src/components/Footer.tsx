@@ -109,6 +109,26 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/locations/gurgaon" className="hover:text-[#172228] transition-colors">
+                  Will Drafting Gurgaon
+                </Link>
+              </li>
+              <li>
+                <Link href="/locations/lucknow" className="hover:text-[#172228] transition-colors">
+                  Will Drafting Lucknow
+                </Link>
+              </li>
+              <li>
+                <Link href="/locations/noida" className="hover:text-[#172228] transition-colors">
+                  Will Drafting Noida
+                </Link>
+              </li>
+              <li>
+                <Link href="/locations/mumbai" className="hover:text-[#172228] transition-colors">
+                  Will Drafting Mumbai
+                </Link>
+              </li>
+              <li>
                 <Link href="/sitemap" className="hover:text-[#172228] transition-colors">
                   Sitemap
                 </Link>
