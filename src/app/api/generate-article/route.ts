@@ -469,11 +469,30 @@ Return a JSON object with these exact keys:
         ];
 
     // =========================================================================
-    // STEP 2: Core To-The-Point HTML Article Body (Zero Filler / Zero Fluff)
+    // STEP 2: Core HTML Article Body Generation (Adaptive: Zero-Filler OR SEO/Lead-Gen)
     // =========================================================================
     const dynamicMaxTokens = Math.min(6000, Math.max(3000, Math.ceil(targetWordCount * 2.0)));
+    const isLeadGenMode =
+      /lead[- ]?gen|comprehensive|seo strategist/i.test(promptDoc?.name || "") ||
+      /LEAD GENERATION|SEO STRATEGIST/i.test(coreInstructions);
 
-    const step2SystemPrompt = `${coreInstructions}
+    const step2SystemPrompt = isLeadGenMode
+      ? `${coreInstructions}
+
+COMPREHENSIVE SEO & LEAD-GENERATION WRITING RULES FOR WILLDRAFTING.IN:
+1. Write pure semantic HTML only (<h2>, <h3>, <p>, <ul>, <ol>, <li>, <strong>, <em>, <blockquote>, <table>, <thead>, <tbody>, <tr>, <th>, <td>). Do not wrap in markdown code fences and do not include <h1> tags.
+2. HIGH-IMPACT LEGAL & CONVERSION WRITING:
+   - Start the very first sentence with the direct legal answer and exact statutory Section number.
+   - Use clear, authoritative Indian English with practical depth. Explain concepts using realistic Indian family scenarios, document checklists (<ol>/<ul>), and comparison tables (<table>).
+   - Write clean, readable paragraphs (3 to 4 sentences).
+   - Address common misconceptions, personal-law differences (Hindu, Muslim, Christian/Parsi), and NRI implications where relevant.
+   - Conclude the article with a clear, professional Call to Action inviting readers to draft their Will on WillDrafting.in (/start) or consult counsel (/contact), followed by a concise 1-sentence legal disclaimer.
+3. Use the primary keyword "${primaryKeyword}" naturally 6 to 10 times across headings and paragraphs.
+4. Embed 5 to 8 contextual internal links from this WillDrafting.in link pool:
+${linksContextString}
+5. All brand references and calls to action belong exclusively to WillDrafting.in (https://www.willdrafting.in).
+6. Do not include meta-commentary, author bylines, dates, or trailing FAQ sections inside the HTML body (FAQs are rendered in a dedicated structured section).`
+      : `${coreInstructions}
 
 STRICT "TO-THE-POINT, ZERO-FILLER" OUTPUT RULES FOR WILLDRAFTING.IN:
 1. Write pure semantic HTML only (<h2>, <h3>, <p>, <ul>, <ol>, <li>, <strong>, <em>, <blockquote>, <table>, <thead>, <tbody>, <tr>, <th>, <td>). Do not wrap in markdown code fences and do not include <h1> tags.
@@ -490,7 +509,24 @@ ${linksContextString}
 6. Every brand reference, advocate team mention, online Will wizard reference, or legal consultation callout belongs exclusively to WillDrafting.in (https://www.willdrafting.in).
 7. Do not include meta-commentary, author bylines, dates, or trailing FAQ sections inside the HTML body.`;
 
-    const step2UserPrompt = `Write a strictly to-the-point, zero-filler HTML legal guide for WillDrafting.in:
+    const step2UserPrompt = isLeadGenMode
+      ? `Write an authoritative, highly practical, and conversion-focused HTML legal guide for WillDrafting.in:
+TITLE: ${cleanTitle}
+PRIMARY KEYWORD: ${primaryKeyword}
+TARGET LENGTH: ~${targetWordCount} words of comprehensive, practically useful legal analysis
+
+STATUTORY & CASE LAW RESEARCH BRIEFING:
+${researchNotes}
+
+REQUIRED H2 SECTION OUTLINE:
+${outline.map((h, idx) => `${idx + 1}. ${h}`).join("\n")}
+
+For each H2 section:
+- State the exact legal rule and Section number directly.
+- Explain practical application through Indian family examples, required document checklists (<ol>/<ul>), and comparison matrices (<table>).
+- Include natural, problem-solving WillDrafting.in conversion calls to action (/start, /services, /tools/probate-checker, /contact).
+- Conclude with a clean legal-information disclaimer. Output raw semantic HTML directly.`
+      : `Write a strictly to-the-point, zero-filler HTML legal guide for WillDrafting.in:
 TITLE: ${cleanTitle}
 PRIMARY KEYWORD: ${primaryKeyword}
 TARGET LENGTH: ~${targetWordCount} words of pure, high-density legal facts (do NOT pad with fluff)

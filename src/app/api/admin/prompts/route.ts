@@ -25,6 +25,27 @@ export async function GET() {
       }));
       await col.insertMany(seedDocs);
       docs = seedDocs;
+    } else {
+      // Auto-sync any newly added code presets missing from the database
+      const missingPresets = WILLDRAFTING_PROMPT_PRESETS.filter(
+        (preset) => !docs.some((d) => d.name?.trim() === preset.name.trim())
+      );
+      if (missingPresets.length > 0) {
+        const now = new Date();
+        const newDocs = missingPresets.map((preset) => ({
+          _id: new ObjectId(),
+          name: preset.name,
+          description: preset.description,
+          coreInstructions: preset.coreInstructions,
+          targetWordCount: preset.targetWordCount,
+          isDefault: false,
+          createdAt: now,
+          updatedAt: now,
+        }));
+        await col.insertMany(newDocs);
+        docs = [...docs, ...newDocs];
+        docs.sort((a, b) => (b.isDefault ? 1 : 0) - (a.isDefault ? 1 : 0));
+      }
     }
 
     return NextResponse.json({
