@@ -18,6 +18,86 @@ const nextConfig: NextConfig = {
   async redirects() {
     return [
       {
+        source: "/locations/will-drafting-in-raipur",
+        destination: "/locations/raipur",
+        permanent: true,
+      },
+      {
+        source: "/locations/will-drafting-in-vijayawada",
+        destination: "/locations/vijayawada",
+        permanent: true,
+      },
+      {
+        source: "/locations/will-drafting-in-dehradun",
+        destination: "/locations/dehradun",
+        permanent: true,
+      },
+      {
+        source: "/locations/will-drafting-in-bhubaneswar",
+        destination: "/locations/bhubaneswar",
+        permanent: true,
+      },
+      {
+        source: "/locations/will-drafting-in-mangaluru",
+        destination: "/locations/mangaluru",
+        permanent: true,
+      },
+      {
+        source: "/locations/will-drafting-in-mysuru",
+        destination: "/locations/mysuru",
+        permanent: true,
+      },
+      {
+        source: "/locations/will-drafting-in-kozhikode",
+        destination: "/locations/kozhikode",
+        permanent: true,
+      },
+      {
+        source: "/locations/will-drafting-in-thiruvananthapuram",
+        destination: "/locations/thiruvananthapuram",
+        permanent: true,
+      },
+      {
+        source: "/locations/will-drafting-in-prayagraj",
+        destination: "/locations/prayagraj",
+        permanent: true,
+      },
+      {
+        source: "/locations/will-drafting-in-agra",
+        destination: "/locations/agra",
+        permanent: true,
+      },
+      {
+        source: "/locations/will-drafting-in-varanasi",
+        destination: "/locations/varanasi",
+        permanent: true,
+      },
+      {
+        source: "/locations/will-drafting-in-nashik",
+        destination: "/locations/nashik",
+        permanent: true,
+      },
+      {
+        source: "/locations/will-drafting-in-ludhiana",
+        destination: "/locations/ludhiana",
+        permanent: true,
+      },
+      {
+        source: "/locations/will-drafting-in-kanpur",
+        destination: "/locations/kanpur",
+        permanent: true,
+      },
+      {
+        source: "/locations/will-drafting-in-vadodara",
+        destination: "/locations/vadodara",
+        permanent: true,
+      },
+      {
+        source: "/locations/will-drafting-in-visakhapatnam",
+        destination: "/locations/visakhapatnam",
+        permanent: true,
+      },
+      {
         source: "/locations/will-drafting-in-coimbatore",
         destination: "/locations/coimbatore",
         permanent: true,
@@ -187,3 +267,4 @@ const nextConfig: NextConfig = {
 };
 
 export default nextConfig;
+
