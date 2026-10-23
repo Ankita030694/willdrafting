@@ -277,9 +277,9 @@ export default function ChennaiLocationClient({ faqs }: Props) {
                 <span>CHENNAI ESTATE &amp; SUCCESSION DESK</span>
               </div>
 
-              {/* Strictly 1 H1 Tag: Length 52 characters */}
+              {/* Strictly 1 H1 Tag: Length 56 characters */}
               <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight leading-tight text-white drop-shadow-xs">
-                Legal Will Drafting &amp; Succession Planning in Chennai
+                Will Drafting Services in Chennai: Online Legal Drafting
               </h1>
 
               <p className="text-base sm:text-lg text-slate-200 leading-relaxed font-normal max-w-2xl">
@@ -862,10 +862,10 @@ export default function ChennaiLocationClient({ faqs }: Props) {
                 </div>
                 {/* H2: Exactly 51 characters */}
                 <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  5. Local Coverage: Will Services Across Chennai GCC
+                  5. Area-Wise Will Drafting Services Across Chennai GCC
                 </h2>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Our network of advocates and succession experts provides home visits and Sub-Registrar support throughout the Greater Chennai Corporation area:
+                  Looking for legally verified <strong>Will drafting services in Mylapore, Anna Nagar, Adyar, or OMR</strong>? Our network of High Court advocates and succession experts provides home visits and Sub-Registrar support throughout the Greater Chennai Corporation area:
                 </p>
               </div>
 
@@ -884,7 +884,7 @@ export default function ChennaiLocationClient({ faqs }: Props) {
                     </div>
 
                     <h3 className="font-extrabold text-lg text-slate-900 group-hover:text-[#C65378] transition-colors">
-                      Will Drafting in Mylapore &amp; Mandaveli
+                      Will Drafting Services in Mylapore &amp; Mandaveli
                     </h3>
 
                     <div className="flex flex-wrap gap-1.5 text-[11px] text-slate-600">
@@ -895,7 +895,7 @@ export default function ChennaiLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Ancestral family homes, traditional agraharams, and undivided family properties in Mylapore and Mandaveli require meticulous boundary definitions, life interest bequests for surviving spouses, and Madras High Court probate structuring.
+                      Looking for professional <strong>Will drafting services in Mylapore &amp; Mandaveli</strong>? Ancestral family homes, traditional agraharams, and undivided family properties in Mylapore and Mandaveli require meticulous boundary definitions, life interest bequests for surviving spouses, and Madras High Court probate structuring.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -914,6 +914,7 @@ export default function ChennaiLocationClient({ faqs }: Props) {
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
+                      aria-label="Will Drafting Services in Mylapore &amp; Mandaveli"
                       className="inline-flex items-center gap-1.5 text-xs font-bold text-[#C65378] hover:text-[#a13c5d] group-hover:translate-x-0.5 transition-all"
                     >
                       <span>Draft Mylapore Will</span>
@@ -936,7 +937,7 @@ export default function ChennaiLocationClient({ faqs }: Props) {
                     </div>
 
                     <h3 className="font-extrabold text-lg text-slate-900 group-hover:text-[#C65378] transition-colors">
-                      Will Drafting in Alwarpet &amp; George Town
+                      Will Drafting Services in Alwarpet &amp; George Town
                     </h3>
 
                     <div className="flex flex-wrap gap-1.5 text-[11px] text-slate-600">
@@ -947,7 +948,7 @@ export default function ChennaiLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Covers wholesale commercial trading units and ancestral godowns in George Town alongside elite residential apartments in Alwarpet. Precision drafting handles commercial lease rentals, business succession, and coparcenary partition records.
+                      Get specialized <strong>Will drafting services in Alwarpet &amp; George Town</strong>. Covers wholesale commercial trading units and ancestral godowns in George Town alongside elite residential apartments in Alwarpet. Precision drafting handles commercial lease rentals, business succession, and coparcenary partition records.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -966,6 +967,7 @@ export default function ChennaiLocationClient({ faqs }: Props) {
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
+                      aria-label="Will Drafting Services in Alwarpet &amp; George Town"
                       className="inline-flex items-center gap-1.5 text-xs font-bold text-[#C65378] hover:text-[#a13c5d] group-hover:translate-x-0.5 transition-all"
                     >
                       <span>Draft Alwarpet Will</span>
@@ -988,7 +990,7 @@ export default function ChennaiLocationClient({ faqs }: Props) {
                     </div>
 
                     <h3 className="font-extrabold text-lg text-slate-900 group-hover:text-[#C65378] transition-colors">
-                      Will Drafting in Anna Nagar &amp; Kilpauk
+                      Will Drafting Services in Anna Nagar &amp; Kilpauk
                     </h3>
 
                     <div className="flex flex-wrap gap-1.5 text-[11px] text-slate-600">
@@ -999,7 +1001,7 @@ export default function ChennaiLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Prime residential plots, multi-floor builder homes, and commercial establishments in Anna Nagar and Kilpauk require precise asset allocation, CMDA layout specifications, and legal guardianship clauses for minor children.
+                      Opt for premier <strong>Will drafting services in Anna Nagar &amp; Kilpauk</strong>. Prime residential plots, multi-floor builder homes, and commercial establishments in Anna Nagar and Kilpauk require precise asset allocation, CMDA layout specifications, and legal guardianship clauses for minor children.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1018,6 +1020,7 @@ export default function ChennaiLocationClient({ faqs }: Props) {
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
+                      aria-label="Will Drafting Services in Anna Nagar &amp; Kilpauk"
                       className="inline-flex items-center gap-1.5 text-xs font-bold text-[#C65378] hover:text-[#a13c5d] group-hover:translate-x-0.5 transition-all"
                     >
                       <span>Draft Anna Nagar Will</span>
@@ -1040,7 +1043,7 @@ export default function ChennaiLocationClient({ faqs }: Props) {
                     </div>
 
                     <h3 className="font-extrabold text-lg text-slate-900 group-hover:text-[#C65378] transition-colors">
-                      Will Drafting in Adyar, Besant Nagar &amp; ECR
+                      Will Drafting Services in Adyar, Besant Nagar &amp; ECR
                     </h3>
 
                     <div className="flex flex-wrap gap-1.5 text-[11px] text-slate-600">
@@ -1051,7 +1054,7 @@ export default function ChennaiLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      High-value bungalows, seaside villas, and luxury residential floors in Adyar and Besant Nagar demand robust revocation clauses, MBBS doctor medical capacity certifications, and named executors for Madras High Court probate.
+                      Secure expert <strong>Will drafting services in Adyar, Besant Nagar &amp; ECR</strong>. High-value bungalows, seaside villas, and luxury residential floors in Adyar and Besant Nagar demand robust revocation clauses, MBBS doctor medical capacity certifications, and named executors for Madras High Court probate.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1070,6 +1073,7 @@ export default function ChennaiLocationClient({ faqs }: Props) {
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
+                      aria-label="Will Drafting Services in Adyar &amp; Besant Nagar"
                       className="inline-flex items-center gap-1.5 text-xs font-bold text-[#C65378] hover:text-[#a13c5d] group-hover:translate-x-0.5 transition-all"
                     >
                       <span>Draft Adyar Will</span>
@@ -1092,7 +1096,7 @@ export default function ChennaiLocationClient({ faqs }: Props) {
                     </div>
 
                     <h3 className="font-extrabold text-lg text-slate-900 group-hover:text-[#C65378] transition-colors">
-                      Will Drafting in Velachery &amp; OMR Corridor
+                      Will Drafting Services in Velachery &amp; OMR Corridor
                     </h3>
 
                     <div className="flex flex-wrap gap-1.5 text-[11px] text-slate-600">
@@ -1103,7 +1107,7 @@ export default function ChennaiLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Tech professionals and NRIs owning multistory apartments in gated communities along the OMR corridor benefit from digital drafting, US stocks and vested RSUs bequests, Demat account transmissions, and nominee harmonization.
+                      Comprehensive <strong>Will drafting services in Velachery &amp; OMR Corridor</strong>. Tech professionals and NRIs owning multistory apartments in gated communities along the OMR corridor benefit from digital drafting, US stocks and vested RSUs bequests, Demat account transmissions, and nominee harmonization.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1122,6 +1126,7 @@ export default function ChennaiLocationClient({ faqs }: Props) {
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
+                      aria-label="Will Drafting Services in Velachery &amp; OMR"
                       className="inline-flex items-center gap-1.5 text-xs font-bold text-[#C65378] hover:text-[#a13c5d] group-hover:translate-x-0.5 transition-all"
                     >
                       <span>Draft Velachery Will</span>
@@ -1144,7 +1149,7 @@ export default function ChennaiLocationClient({ faqs }: Props) {
                     </div>
 
                     <h3 className="font-extrabold text-lg text-slate-900 group-hover:text-[#C65378] transition-colors">
-                      Will Drafting in T. Nagar &amp; Nungambakkam
+                      Will Drafting Services in T. Nagar &amp; Nungambakkam
                     </h3>
 
                     <div className="flex flex-wrap gap-1.5 text-[11px] text-slate-600">
@@ -1155,7 +1160,7 @@ export default function ChennaiLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Traditional family estates, commercial showrooms near Panagal Park, and multi-generational family flats in T. Nagar and Nungambakkam. Clear testamentary shares among siblings to prevent costly family title disputes.
+                      Protect your family assets with <strong>Will drafting services in T. Nagar &amp; Nungambakkam</strong>. Traditional family estates, commercial showrooms near Panagal Park, and multi-generational family flats in T. Nagar and Nungambakkam. Clear testamentary shares among siblings to prevent costly family title disputes.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1174,6 +1179,7 @@ export default function ChennaiLocationClient({ faqs }: Props) {
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
+                      aria-label="Will Drafting Services in T. Nagar &amp; Nungambakkam"
                       className="inline-flex items-center gap-1.5 text-xs font-bold text-[#C65378] hover:text-[#a13c5d] group-hover:translate-x-0.5 transition-all"
                     >
                       <span>Draft T. Nagar Will</span>

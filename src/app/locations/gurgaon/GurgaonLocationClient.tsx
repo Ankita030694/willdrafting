@@ -244,9 +244,9 @@ export default function GurgaonLocationClient({ faqs }: Props) {
                 <span>GURUGRAM &amp; HARYANA NCR ESTATE SUCCESSION DESK</span>
               </div>
 
-              {/* Strictly 1 H1 Tag: Length 54 characters */}
+              {/* Strictly 1 H1 Tag: Length 56 characters */}
               <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight leading-tight text-white drop-shadow-xs">
-                Online Will Drafting &amp; Asset Protection in Gurgaon NCR
+                Will Drafting Services in Gurgaon: Online Legal Drafting
               </h1>
 
               <p className="text-base sm:text-lg text-slate-200 leading-relaxed font-normal max-w-2xl">
@@ -885,10 +885,10 @@ export default function GurgaonLocationClient({ faqs }: Props) {
                 </div>
                 {/* H2 tag: 48 characters */}
                 <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  6. Locality-Wise Will Drafting Across Gurgaon NCR
+                  6. Area-Wise Will Drafting Services Across Gurgaon NCR
                 </h2>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Properties across Gurgaon encompass freehold plots in HSVP sectors, gated condominium towers, independent builder floors, and luxury farmhouses.
+                  Looking for legally verified <strong>Will drafting services in DLF Phase 1-5, Golf Course Road, Sohna Road, or New Gurgaon</strong>? Properties across Gurgaon encompass freehold plots in HSVP sectors, gated condominium towers, independent builder floors, and luxury farmhouses.
                   Our senior advocates provide legally vetted drafting, Jamabandi e-token scheduling, and Sub-Registrar accompaniment across all key micro-markets:
                 </p>
               </div>
@@ -908,7 +908,7 @@ export default function GurgaonLocationClient({ faqs }: Props) {
                     </div>
 
                     <h3 className="font-extrabold text-lg text-slate-900 group-hover:text-[#C65378] transition-colors">
-                      Will Drafting in DLF Phase 1, 2, 4, 5 &amp; Golf Course
+                      Will Drafting Services in DLF Phase 1, 2, 4, 5 &amp; Golf Course
                     </h3>
 
                     <div className="flex flex-wrap gap-1.5 text-[11px] text-slate-600">
@@ -919,7 +919,7 @@ export default function GurgaonLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Encompassing luxury condominiums, independent kothis, and premium builder floors. Wills in this corridor require comprehensive clauses covering undivided land share, allocated basement/stilt parking slots, club memberships, and overseas NRI beneficiaries.
+                      Looking for professional <strong>Will drafting services in DLF Phase 1, 2, 4, 5 &amp; Golf Course</strong>? Encompassing luxury condominiums, independent kothis, and premium builder floors. Wills in this corridor require comprehensive clauses covering undivided land share, allocated basement/stilt parking slots, club memberships, and overseas NRI beneficiaries.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -938,6 +938,7 @@ export default function GurgaonLocationClient({ faqs }: Props) {
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
+                      aria-label="Will Drafting Services in DLF Phase 1-5 &amp; Golf Course"
                       className="inline-flex items-center gap-1.5 text-xs font-bold text-[#C65378] hover:text-[#a13c5d] group-hover:translate-x-0.5 transition-all"
                     >
                       <span>Draft DLF Will Online</span>
@@ -960,7 +961,7 @@ export default function GurgaonLocationClient({ faqs }: Props) {
                     </div>
 
                     <h3 className="font-extrabold text-lg text-slate-900 group-hover:text-[#C65378] transition-colors">
-                      Will Drafting for HSVP Plots &amp; Builder Floors
+                      Will Drafting Services for HSVP Plots &amp; Builder Floors
                     </h3>
 
                     <div className="flex flex-wrap gap-1.5 text-[11px] text-slate-600">
@@ -971,7 +972,7 @@ export default function GurgaonLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Covering urban HSVP residential plots and newly constructed independent floors. Our estate lawyers draft precise bequests detailing floor boundaries, terrace/roof access rights, and common stairwell usage to enable direct re-allotment before the HSVP Estate Officer.
+                      Get specialized <strong>Will drafting services for HSVP Plots &amp; Builder Floors</strong>. Covering urban HSVP residential plots and newly constructed independent floors. Our estate lawyers draft precise bequests detailing floor boundaries, terrace/roof access rights, and common stairwell usage to enable direct re-allotment before the HSVP Estate Officer.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -990,6 +991,7 @@ export default function GurgaonLocationClient({ faqs }: Props) {
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
+                      aria-label="Will Drafting Services for HSVP Floors"
                       className="inline-flex items-center gap-1.5 text-xs font-bold text-[#C65378] hover:text-[#a13c5d] group-hover:translate-x-0.5 transition-all"
                     >
                       <span>Draft HSVP Floor Will</span>
@@ -1012,7 +1014,7 @@ export default function GurgaonLocationClient({ faqs }: Props) {
                     </div>
 
                     <h3 className="font-extrabold text-lg text-slate-900 group-hover:text-[#C65378] transition-colors">
-                      Will Drafting on Sohna Road &amp; Ext Road
+                      Will Drafting Services on Sohna Road &amp; Ext Road
                     </h3>
 
                     <div className="flex flex-wrap gap-1.5 text-[11px] text-slate-600">
@@ -1023,7 +1025,7 @@ export default function GurgaonLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Home to established gated villa enclaves and modern high-rise condominiums. Our Will formats ensure full compliance with the Haryana Apartment Ownership Act, clarifying condominium succession, society transfer procedures, and mutual fund/demat portfolios.
+                      Opt for premier <strong>Will drafting services on Sohna Road &amp; Ext Road</strong>. Home to established gated villa enclaves and modern high-rise condominiums. Our Will formats ensure full compliance with the Haryana Apartment Ownership Act, clarifying condominium succession, society transfer procedures, and mutual fund/demat portfolios.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1042,6 +1044,7 @@ export default function GurgaonLocationClient({ faqs }: Props) {
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
+                      aria-label="Will Drafting Services on Sohna Road"
                       className="inline-flex items-center gap-1.5 text-xs font-bold text-[#C65378] hover:text-[#a13c5d] group-hover:translate-x-0.5 transition-all"
                     >
                       <span>Draft Sohna Road Will</span>
@@ -1064,7 +1067,7 @@ export default function GurgaonLocationClient({ faqs }: Props) {
                     </div>
 
                     <h3 className="font-extrabold text-lg text-slate-900 group-hover:text-[#C65378] transition-colors">
-                      Will Drafting in New Gurgaon &amp; Expressway
+                      Will Drafting Services in New Gurgaon &amp; Dwarka Expressway
                     </h3>
 
                     <div className="flex flex-wrap gap-1.5 text-[11px] text-slate-600">
@@ -1075,7 +1078,7 @@ export default function GurgaonLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Features newly occupied high-rises and ongoing projects. Where developer sub-lease registry is pending, our Will drafts bequeath contractual rights under Builder-Buyer Agreements (BBAs), ensuring smooth succession before DTCP Haryana and builders.
+                      Secure expert <strong>Will drafting services in New Gurgaon &amp; Dwarka Expressway</strong>. Features newly occupied high-rises and ongoing projects. Where developer sub-lease registry is pending, our Will drafts bequeath contractual rights under Builder-Buyer Agreements (BBAs), ensuring smooth succession before DTCP Haryana and builders.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1094,6 +1097,7 @@ export default function GurgaonLocationClient({ faqs }: Props) {
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
+                      aria-label="Will Drafting Services in New Gurgaon"
                       className="inline-flex items-center gap-1.5 text-xs font-bold text-[#C65378] hover:text-[#a13c5d] group-hover:translate-x-0.5 transition-all"
                     >
                       <span>Draft New Gurgaon Will</span>

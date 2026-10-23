@@ -248,9 +248,9 @@ export default function IndoreLocationClient({ faqs }: Props) {
                 <span>INDORE ESTATE &amp; SUCCESSION DESK</span>
               </div>
 
-              {/* Strictly 1 H1 Tag: Length 48 characters */}
+              {/* Strictly 1 H1 Tag: Length 55 characters */}
               <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight leading-tight text-white drop-shadow-xs">
-                Legal Will Drafting &amp; Asset Succession in Indore
+                Will Drafting Services in Indore: Online Legal Drafting
               </h1>
 
               <p className="text-base sm:text-lg text-slate-200 leading-relaxed font-normal max-w-2xl">
@@ -871,12 +871,10 @@ export default function IndoreLocationClient({ faqs }: Props) {
                 </div>
                 {/* H2: 48 characters */}
                 <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  5. Area-Wise Will Drafting Across Indore Localities
+                  5. Area-Wise Will Drafting Services Across Indore Localities
                 </h2>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  From commercial jewelry showrooms in Sarafa and textile establishments in MT Cloth Market to high-end villas on Bypass Road
-                  and modern high-rises in Vijay Nagar, our senior advocates provide tailored Will drafting, MP Sampada slot booking,
-                  and Sub-Registrar accompaniment across Indore:
+                  Looking for legally verified <strong>Will drafting services in Vijay Nagar, Palasia, Sarafa, or Rau</strong>? From commercial jewelry showrooms in Sarafa and textile establishments in MT Cloth Market to high-end villas on Bypass Road and modern high-rises in Vijay Nagar, our senior advocates provide tailored Will drafting, MP Sampada 2.0 slot booking, and Sub-Registrar accompaniment across Indore:
                 </p>
               </div>
 
@@ -895,7 +893,7 @@ export default function IndoreLocationClient({ faqs }: Props) {
                     </div>
 
                     <h3 className="font-extrabold text-lg text-slate-900 group-hover:text-[#C65378] transition-colors">
-                      Will Drafting in Vijay Nagar, Scheme 54 &amp; 78
+                      Will Drafting Services in Vijay Nagar &amp; Scheme 54
                     </h3>
 
                     <div className="flex flex-wrap gap-1.5 text-[11px] text-slate-600">
@@ -906,9 +904,7 @@ export default function IndoreLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Vijay Nagar and Scheme 54 represent Indore&apos;s premier commercial and upscale residential zone.
-                      Our Will drafts specifically address high-value IDA leasehold plots, freehold conversions, multi-storey penthouses,
-                      demat equity portfolios, and succession of private clinical practices and consulting firms.
+                      Providing specialized <strong>Will drafting services in Vijay Nagar</strong>, Scheme 54, and Scheme 78 for IDA leasehold plots, freehold conversions, multi-storey penthouses, demat equity portfolios, and succession of private clinical practices and consulting firms.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -927,6 +923,7 @@ export default function IndoreLocationClient({ faqs }: Props) {
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
+                      aria-label="Will Drafting Services in Vijay Nagar"
                       className="inline-flex items-center gap-1.5 text-xs font-bold text-[#C65378] hover:text-[#a13c5d] group-hover:translate-x-0.5 transition-all"
                     >
                       <span>Draft Vijay Nagar Will</span>
@@ -949,7 +946,7 @@ export default function IndoreLocationClient({ faqs }: Props) {
                     </div>
 
                     <h3 className="font-extrabold text-lg text-slate-900 group-hover:text-[#C65378] transition-colors">
-                      Will Drafting in Palasia, Manoramaganj &amp; Saket
+                      Will Drafting Services in Palasia, Manoramaganj &amp; Saket
                     </h3>
 
                     <div className="flex flex-wrap gap-1.5 text-[11px] text-slate-600">
@@ -960,9 +957,7 @@ export default function IndoreLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Old Palasia, Manoramaganj, and South Tukoganj house Indore&apos;s oldest industrialist and mercantile families.
-                      Our senior legal team assists with complex multi-crore ancestral bungalows, commercial showrooms along AB Road,
-                      family trusts, private company shareholdings, and Section 31 home visits for elderly testators.
+                      Expert <strong>Will drafting services in Palasia</strong>, Manoramaganj, and South Tukoganj for Indore&apos;s oldest industrialist and mercantile families. Our senior legal team assists with complex multi-crore ancestral bungalows, commercial showrooms along AB Road, family trusts, private company shareholdings, and Section 31 home visits for elderly testators.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -981,6 +976,7 @@ export default function IndoreLocationClient({ faqs }: Props) {
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
+                      aria-label="Will Drafting Services in Palasia"
                       className="inline-flex items-center gap-1.5 text-xs font-bold text-[#C65378] hover:text-[#a13c5d] group-hover:translate-x-0.5 transition-all"
                     >
                       <span>Draft Palasia Will</span>
@@ -1003,7 +999,7 @@ export default function IndoreLocationClient({ faqs }: Props) {
                     </div>
 
                     <h3 className="font-extrabold text-lg text-slate-900 group-hover:text-[#C65378] transition-colors">
-                      Will Drafting for Sarafa &amp; Cloth Market Businesses
+                      Will Drafting Services in Sarafa &amp; MT Cloth Market
                     </h3>
 
                     <div className="flex flex-wrap gap-1.5 text-[11px] text-slate-600">
@@ -1014,9 +1010,7 @@ export default function IndoreLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Indore&apos;s historic mercantile heart thrives on joint family trading partnerships, gold jewelry bullion stock,
-                      and ancestral retail shops. We draft tailored succession structures to smoothly bequeath firm capital accounts,
-                      commercial tenancy rights (pagdi), partnership profit shares, and gold locker reserves.
+                      Commercial <strong>Will drafting services in Sarafa</strong> and MT Cloth Market tailored for joint family trading partnerships, bullion jewelry stores, wholesale merchant firms, ancestral retail shops, firm capital accounts, commercial tenancy rights (pagdi), and gold locker reserves.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1035,6 +1029,7 @@ export default function IndoreLocationClient({ faqs }: Props) {
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
+                      aria-label="Will Drafting Services in Sarafa"
                       className="inline-flex items-center gap-1.5 text-xs font-bold text-[#C65378] hover:text-[#a13c5d] group-hover:translate-x-0.5 transition-all"
                     >
                       <span>Draft Commercial Will</span>
@@ -1057,7 +1052,7 @@ export default function IndoreLocationClient({ faqs }: Props) {
                     </div>
 
                     <h3 className="font-extrabold text-lg text-slate-900 group-hover:text-[#C65378] transition-colors">
-                      Will Drafting on Super Corridor &amp; MR-10
+                      Will Drafting Services on Super Corridor &amp; MR-10
                     </h3>
 
                     <div className="flex flex-wrap gap-1.5 text-[11px] text-slate-600">
@@ -1068,9 +1063,7 @@ export default function IndoreLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      The Super Corridor is Indore&apos;s fast-growing IT and institutional corridor, housing major tech campuses,
-                      metro connectivity, and integrated smart townships. We structure Wills for tech leaders and NRI investors
-                      holding modern apartments, IDA residential plots (Schemes 151, 166, 169), and startup equity grants.
+                      Focused <strong>Will drafting services on Super Corridor</strong> and MR-10 for IT executives, NRIs, and tech leaders holding smart township flats, modern high-rise apartments, IDA residential plots (Schemes 151, 166, 169), and startup equity grants.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1089,6 +1082,7 @@ export default function IndoreLocationClient({ faqs }: Props) {
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
+                      aria-label="Will Drafting Services on Super Corridor"
                       className="inline-flex items-center gap-1.5 text-xs font-bold text-[#C65378] hover:text-[#a13c5d] group-hover:translate-x-0.5 transition-all"
                     >
                       <span>Draft Corridor Will</span>
@@ -1111,7 +1105,7 @@ export default function IndoreLocationClient({ faqs }: Props) {
                     </div>
 
                     <h3 className="font-extrabold text-lg text-slate-900 group-hover:text-[#C65378] transition-colors">
-                      Will Drafting on Bypass Road &amp; Bicholi Mardana
+                      Will Drafting Services in Bicholi Mardana &amp; Bypass Road
                     </h3>
 
                     <div className="flex flex-wrap gap-1.5 text-[11px] text-slate-600">
@@ -1122,9 +1116,7 @@ export default function IndoreLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Indore&apos;s Eastern Bypass and Bicholi Mardana corridor feature luxury township villas, sprawling farmhouse
-                      estates, and premium row houses. We draft clear bequests ensuring demarcated share distribution among multiple heirs,
-                      preventing boundary conflicts, and handling private club memberships and family heirlooms.
+                      Comprehensive <strong>Will drafting services in Bicholi Mardana</strong> and Bypass Road corridor featuring luxury township villas (Silver Springs, Omaxe City), sprawling farmhouse estates, and Scheme 140 row houses with demarcated share distributions and boundary dispute prevention.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1143,6 +1135,7 @@ export default function IndoreLocationClient({ faqs }: Props) {
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
+                      aria-label="Will Drafting Services in Bicholi Mardana"
                       className="inline-flex items-center gap-1.5 text-xs font-bold text-[#C65378] hover:text-[#a13c5d] group-hover:translate-x-0.5 transition-all"
                     >
                       <span>Draft Bypass Will</span>
@@ -1165,7 +1158,7 @@ export default function IndoreLocationClient({ faqs }: Props) {
                     </div>
 
                     <h3 className="font-extrabold text-lg text-slate-900 group-hover:text-[#C65378] transition-colors">
-                      Will Drafting in Rau, Mhow &amp; Pithampur Industrial Belt
+                      Will Drafting Services in Rau, Mhow &amp; Pithampur
                     </h3>
 
                     <div className="flex flex-wrap gap-1.5 text-[11px] text-slate-600">
@@ -1176,9 +1169,7 @@ export default function IndoreLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Pithampur (Central India&apos;s Detroit) and Sanwer Road host major automobile, pharmaceutical, and manufacturing plants.
-                      Our specialized corporate succession wills address factory leaseholds, industrial plot transfers under MPIDC rules,
-                      commercial plant machinery, and intellectual property trademarks.
+                      Custom <strong>Will drafting services in Rau</strong>, Rajendra Nagar, Silicon City, and the Mhow–Pithampur industrial belt. We address factory leaseholds, industrial plot transfers under MPIDC rules, commercial machinery, MSME family succession, and residential homeowner protection.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1197,6 +1188,7 @@ export default function IndoreLocationClient({ faqs }: Props) {
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
+                      aria-label="Will Drafting Services in Rau"
                       className="inline-flex items-center gap-1.5 text-xs font-bold text-[#C65378] hover:text-[#a13c5d] group-hover:translate-x-0.5 transition-all"
                     >
                       <span>Draft Industrial Will</span>

@@ -257,9 +257,9 @@ export default function AhmedabadLocationClient({ faqs }: Props) {
                 <span>GUJARAT ESTATE SUCCESSION &amp; HUF DESK</span>
               </div>
 
-              {/* Strictly 1 H1 Tag: Length 54 characters */}
+              {/* Strictly 1 H1 Tag: Length 58 characters */}
               <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight leading-tight text-white drop-shadow-xs">
-                Legal Will Drafting &amp; Business Succession in Ahmedabad
+                Will Drafting Services in Ahmedabad: Online Legal Drafting
               </h1>
 
               <p className="text-base sm:text-lg text-slate-200 leading-relaxed font-normal max-w-2xl">
@@ -895,10 +895,10 @@ export default function AhmedabadLocationClient({ faqs }: Props) {
                 </div>
                 {/* H2: Exactly 53 characters */}
                 <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  6. Area-Wise Will Drafting Across Ahmedabad Localities
+                  6. Area-Wise Will Drafting Services Across Ahmedabad Localities
                 </h2>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Properties in Ahmedabad span historic pol houses, premium bungalows along Ambli Road, high-rise apartments in Bopal, and commercial offices on S.G. Highway. Our advocates provide tailored drafting and Garvi Gujarat assistance:
+                  Looking for legally verified <strong>Will drafting services in Navrangpura, Bodakdev, SG Highway, or Bopal</strong>? Properties in Ahmedabad span historic pol houses, premium bungalows along Ambli Road, high-rise apartments in Bopal, and commercial offices on S.G. Highway. Our advocates provide tailored drafting and Garvi Gujarat assistance:
                 </p>
               </div>
 
@@ -917,7 +917,7 @@ export default function AhmedabadLocationClient({ faqs }: Props) {
                     </div>
 
                     <h3 className="font-extrabold text-lg text-slate-900 group-hover:text-[#C65378] transition-colors">
-                      Will Drafting in Navrangpura, CG Road &amp; Ellisbridge
+                      Will Drafting Services in Navrangpura, CG Road &amp; Ellisbridge
                     </h3>
 
                     <div className="flex flex-wrap gap-1.5 text-[11px] text-slate-600">
@@ -928,7 +928,7 @@ export default function AhmedabadLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Home to established Gujarati mercantile families, commercial showrooms on CG Road, and heritage properties. We structure complex Wills addressing family business succession, partnership capital transmission, and AMC property tax mutation.
+                      Looking for professional <strong>Will drafting services in Navrangpura, CG Road &amp; Ellisbridge</strong>? Home to established Gujarati mercantile families, commercial showrooms on CG Road, and heritage properties. We structure complex Wills addressing family business succession, partnership capital transmission, and AMC property tax mutation.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -947,6 +947,7 @@ export default function AhmedabadLocationClient({ faqs }: Props) {
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
+                      aria-label="Will Drafting Services in Navrangpura"
                       className="inline-flex items-center gap-1.5 text-xs font-bold text-[#C65378] hover:text-[#a13c5d] group-hover:translate-x-0.5 transition-all"
                     >
                       <span>Draft Navrangpura Will</span>
@@ -969,7 +970,7 @@ export default function AhmedabadLocationClient({ faqs }: Props) {
                     </div>
 
                     <h3 className="font-extrabold text-lg text-slate-900 group-hover:text-[#C65378] transition-colors">
-                      Will Drafting in Bodakdev, Vastrapur &amp; Satellite
+                      Will Drafting Services in Bodakdev, Vastrapur &amp; Satellite
                     </h3>
 
                     <div className="flex flex-wrap gap-1.5 text-[11px] text-slate-600">
@@ -980,7 +981,7 @@ export default function AhmedabadLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Features luxury bungalows, high-value penthouses, and diversified investment portfolios. Our estate lawyers incorporate specific bequest clauses for equities, mutual fund folios, gold jewellery, and independent family office holdings.
+                      Get specialized <strong>Will drafting services in Bodakdev, Vastrapur &amp; Satellite</strong>. Features luxury bungalows, high-value penthouses, and diversified investment portfolios. Our estate lawyers incorporate specific bequest clauses for equities, mutual fund folios, gold jewellery, and independent family office holdings.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -999,6 +1000,7 @@ export default function AhmedabadLocationClient({ faqs }: Props) {
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
+                      aria-label="Will Drafting Services in Bodakdev &amp; Satellite"
                       className="inline-flex items-center gap-1.5 text-xs font-bold text-[#C65378] hover:text-[#a13c5d] group-hover:translate-x-0.5 transition-all"
                     >
                       <span>Draft Bodakdev Will</span>
@@ -1021,7 +1023,7 @@ export default function AhmedabadLocationClient({ faqs }: Props) {
                     </div>
 
                     <h3 className="font-extrabold text-lg text-slate-900 group-hover:text-[#C65378] transition-colors">
-                      Will Drafting on Sindhu Bhavan Road &amp; SG Highway
+                      Will Drafting Services on Sindhu Bhavan Road &amp; SG Highway
                     </h3>
 
                     <div className="flex flex-wrap gap-1.5 text-[11px] text-slate-600">
@@ -1032,7 +1034,7 @@ export default function AhmedabadLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Ahmedabad&apos;s corporate high-growth belt. We draft customized testamentary instruments for company founders, managing partners, and NRGs holding luxury commercial units, family trusts, and multi-jurisdictional real estate.
+                      Opt for premier <strong>Will drafting services on Sindhu Bhavan Road &amp; SG Highway</strong>. Ahmedabad&apos;s corporate high-growth belt. We draft customized testamentary instruments for company founders, managing partners, and NRGs holding luxury commercial units, family trusts, and multi-jurisdictional real estate.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1051,6 +1053,7 @@ export default function AhmedabadLocationClient({ faqs }: Props) {
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
+                      aria-label="Will Drafting Services on Sindhu Bhavan Road"
                       className="inline-flex items-center gap-1.5 text-xs font-bold text-[#C65378] hover:text-[#a13c5d] group-hover:translate-x-0.5 transition-all"
                     >
                       <span>Draft SBR Will</span>
@@ -1073,7 +1076,7 @@ export default function AhmedabadLocationClient({ faqs }: Props) {
                     </div>
 
                     <h3 className="font-extrabold text-lg text-slate-900 group-hover:text-[#C65378] transition-colors">
-                      Will Drafting in Bopal, South Bopal &amp; Ghuma
+                      Will Drafting Services in Bopal, South Bopal &amp; Ghuma
                     </h3>
 
                     <div className="flex flex-wrap gap-1.5 text-[11px] text-slate-600">
@@ -1084,7 +1087,7 @@ export default function AhmedabadLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Vibrant residential townships developed under AUDA town planning schemes. We assist young professionals, IT executives, and retired seniors in registering clear Wills for their mortgaged or freehold society apartments.
+                      Secure expert <strong>Will drafting services in Bopal, South Bopal &amp; Ghuma</strong>. Vibrant residential townships developed under AUDA town planning schemes. We assist young professionals, IT executives, and retired seniors in registering clear Wills for their mortgaged or freehold society apartments.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1103,6 +1106,7 @@ export default function AhmedabadLocationClient({ faqs }: Props) {
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
+                      aria-label="Will Drafting Services in Bopal &amp; South Bopal"
                       className="inline-flex items-center gap-1.5 text-xs font-bold text-[#C65378] hover:text-[#a13c5d] group-hover:translate-x-0.5 transition-all"
                     >
                       <span>Draft Bopal Will</span>
@@ -1125,7 +1129,7 @@ export default function AhmedabadLocationClient({ faqs }: Props) {
                     </div>
 
                     <h3 className="font-extrabold text-lg text-slate-900 group-hover:text-[#C65378] transition-colors">
-                      Will Drafting in Maninagar, Kankaria &amp; Vatva
+                      Will Drafting Services in Maninagar, Kankaria &amp; Vatva
                     </h3>
 
                     <div className="flex flex-wrap gap-1.5 text-[11px] text-slate-600">
@@ -1136,7 +1140,7 @@ export default function AhmedabadLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Traditional family neighborhoods alongside vital GIDC chemical and textile manufacturing hubs. We ensure explicit bequest clauses for industrial leasehold plots, factory equipment, and ancestral residential plots.
+                      Comprehensive <strong>Will drafting services in Maninagar, Kankaria &amp; Vatva</strong>. Traditional family neighborhoods alongside vital GIDC chemical and textile manufacturing hubs. We ensure explicit bequest clauses for industrial leasehold plots, factory equipment, and ancestral residential plots.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1155,6 +1159,7 @@ export default function AhmedabadLocationClient({ faqs }: Props) {
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
+                      aria-label="Will Drafting Services in Maninagar &amp; Vatva"
                       className="inline-flex items-center gap-1.5 text-xs font-bold text-[#C65378] hover:text-[#a13c5d] group-hover:translate-x-0.5 transition-all"
                     >
                       <span>Draft Maninagar Will</span>
@@ -1177,7 +1182,7 @@ export default function AhmedabadLocationClient({ faqs }: Props) {
                     </div>
 
                     <h3 className="font-extrabold text-lg text-slate-900 group-hover:text-[#C65378] transition-colors">
-                      Will Drafting in Motera, Sabarmati &amp; GIFT City
+                      Will Drafting Services in Motera, Sabarmati &amp; GIFT City
                     </h3>
 
                     <div className="flex flex-wrap gap-1.5 text-[11px] text-slate-600">
@@ -1188,7 +1193,7 @@ export default function AhmedabadLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Rapidly expanding twin-city corridor linking Ahmedabad and Gandhinagar. We handle multi-jurisdiction Wills covering GIFT City international investment instruments, GUDA-approved plots, and riverfront properties.
+                      Protect your investments with <strong>Will drafting services in Motera, Sabarmati &amp; GIFT City</strong>. Rapidly expanding twin-city corridor linking Ahmedabad and Gandhinagar. We handle multi-jurisdiction Wills covering GIFT City international investment instruments, GUDA-approved plots, and riverfront properties.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1207,6 +1212,7 @@ export default function AhmedabadLocationClient({ faqs }: Props) {
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
+                      aria-label="Will Drafting Services in Motera &amp; GIFT City"
                       className="inline-flex items-center gap-1.5 text-xs font-bold text-[#C65378] hover:text-[#a13c5d] group-hover:translate-x-0.5 transition-all"
                     >
                       <span>Draft Motera &amp; GIFT Will</span>

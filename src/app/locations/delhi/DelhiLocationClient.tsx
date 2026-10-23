@@ -276,9 +276,9 @@ export default function DelhiLocationClient({ faqs }: Props) {
                 <span>DELHI NCR ESTATE SUCCESSION DESK</span>
               </div>
 
-              {/* Strictly 1 H1 Tag: Length 57 characters */}
+              {/* Strictly 1 H1 Tag: Length 54 characters */}
               <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight leading-tight text-white drop-shadow-xs">
-                Online Will Drafting &amp; Registration Services in Delhi NCR
+                Will Drafting Services in Delhi: Online Legal Drafting
               </h1>
 
               <p className="text-base sm:text-lg text-slate-200 leading-relaxed font-normal max-w-2xl">
@@ -854,10 +854,10 @@ export default function DelhiLocationClient({ faqs }: Props) {
                   <span>LOCAL AREA COVERAGE &amp; SRO HUBS</span>
                 </div>
                 <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  5. Area-Wise Will Drafting Across Delhi NCR Localities
+                  5. Area-Wise Will Drafting Services Across Delhi NCR Localities
                 </h2>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Property categories across Delhi range from DDA freehold/leasehold flats and cooperative group housing societies (CGHS) to luxury builder floors with roof rights and agricultural farmhouses.
+                  Looking for legally verified <strong>Will drafting services in South Delhi, Dwarka, Rohini, or Vasant Kunj</strong>? Property categories across Delhi range from DDA freehold/leasehold flats and cooperative group housing societies (CGHS) to luxury builder floors with roof rights and agricultural farmhouses.
                   Whether your assets lie in South Delhi, Dwarka, Rohini, or Trans-Yamuna, our advocates provide verified legal drafting, DORIS portal slot booking, and Sub-Registrar accompaniment:
                 </p>
               </div>
@@ -877,7 +877,7 @@ export default function DelhiLocationClient({ faqs }: Props) {
                     </div>
 
                     <h3 className="font-extrabold text-lg text-slate-900 group-hover:text-[#C65378] transition-colors">
-                      Will Drafting in Hauz Khas &amp; Green Park
+                      Will Drafting Services in Hauz Khas &amp; Green Park
                     </h3>
 
                     <div className="flex flex-wrap gap-1.5 text-[11px] text-slate-600">
@@ -888,8 +888,7 @@ export default function DelhiLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Hauz Khas and Green Park feature prime freehold kothis, newly constructed 4-story builder floors, and DDA SFS flats.
-                      Since Delhi is a non-presidency town, obtaining court probate is optional. A registered Will acts as conclusive testamentary proof for MCD property tax mutation and DDA title substitution without demanding expensive civil court succession certificates.
+                      Specialized <strong>Will drafting services in Hauz Khas</strong> and Green Park for prime freehold kothis, 4-story builder floors, and DDA SFS flats. Probate is optional in Delhi—a registered Will provides conclusive proof for MCD property tax mutation and DDA title substitution without expensive succession suits.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -908,6 +907,7 @@ export default function DelhiLocationClient({ faqs }: Props) {
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
+                      aria-label="Will Drafting Services in Hauz Khas"
                       className="inline-flex items-center gap-1.5 text-xs font-bold text-[#C65378] hover:text-[#a13c5d] group-hover:translate-x-0.5 transition-all"
                     >
                       <span>Draft Hauz Khas Will</span>
@@ -930,7 +930,7 @@ export default function DelhiLocationClient({ faqs }: Props) {
                     </div>
 
                     <h3 className="font-extrabold text-lg text-slate-900 group-hover:text-[#C65378] transition-colors">
-                      Will Drafting in Vasant Kunj &amp; Mehrauli
+                      Will Drafting Services in Vasant Kunj &amp; Mehrauli
                     </h3>
 
                     <div className="flex flex-wrap gap-1.5 text-[11px] text-slate-600">
@@ -941,8 +941,7 @@ export default function DelhiLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Covering extensive DDA residential housing pockets in Vasant Kunj alongside ancestral land holdings and farmhouse estates in Chattarpur and Mehrauli.
-                      Our senior advocates draft customized bequests dealing with DDA leasehold conversion clauses, demarcation of agricultural/farmhouse partitions, and doctor medical fitness certificates for senior citizens.
+                      Dedicated <strong>Will drafting services in Vasant Kunj</strong> and Mehrauli covering extensive DDA housing pockets alongside ancestral land holdings and farmhouse estates in Chattarpur. Includes DDA leasehold conversion clauses and doctor medical fitness certificates for senior citizens.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -961,6 +960,7 @@ export default function DelhiLocationClient({ faqs }: Props) {
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
+                      aria-label="Will Drafting Services in Vasant Kunj"
                       className="inline-flex items-center gap-1.5 text-xs font-bold text-[#C65378] hover:text-[#a13c5d] group-hover:translate-x-0.5 transition-all"
                     >
                       <span>Draft Vasant Kunj Will</span>
@@ -983,7 +983,7 @@ export default function DelhiLocationClient({ faqs }: Props) {
                     </div>
 
                     <h3 className="font-extrabold text-lg text-slate-900 group-hover:text-[#C65378] transition-colors">
-                      Will Drafting in South Extension &amp; Greater Kailash (GK 1 &amp; 2)
+                      Will Drafting Services in South Extension &amp; Greater Kailash (GK 1 &amp; 2)
                     </h3>
 
                     <div className="flex flex-wrap gap-1.5 text-[11px] text-slate-600">
@@ -994,8 +994,7 @@ export default function DelhiLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      South Delhi kothis and luxury builder floors often face bitter disputes regarding terrace rights, basement access, and stilt parking slots.
-                      Our Will drafts specifically codify undivided impartible ownership in land, exclusive roof rights, demat share transmission, and business succession to ensure seamless inter-generational handover.
+                      Premium <strong>Will drafting services in Greater Kailash</strong> and South Extension for high-value kothis and luxury builder floors. Codifies undivided impartible ownership in land, exclusive roof/terrace rights, basement access, and demat share transmission to eliminate inheritance conflicts.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1014,6 +1013,7 @@ export default function DelhiLocationClient({ faqs }: Props) {
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
+                      aria-label="Will Drafting Services in Greater Kailash"
                       className="inline-flex items-center gap-1.5 text-xs font-bold text-[#C65378] hover:text-[#a13c5d] group-hover:translate-x-0.5 transition-all"
                     >
                       <span>Draft GK / South Ex Will</span>
@@ -1036,7 +1036,7 @@ export default function DelhiLocationClient({ faqs }: Props) {
                     </div>
 
                     <h3 className="font-extrabold text-lg text-slate-900 group-hover:text-[#C65378] transition-colors">
-                      Will Drafting in Dwarka &amp; South West Delhi
+                      Will Drafting Services in Dwarka &amp; South West Delhi
                     </h3>
 
                     <div className="flex flex-wrap gap-1.5 text-[11px] text-slate-600">
@@ -1047,8 +1047,7 @@ export default function DelhiLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Dwarka is Asia&apos;s largest residential sub-city, comprising hundreds of Cooperative Group Housing Societies (CGHS) and DDA apartments.
-                      A registered Will is critical for society management committees to transfer share certificates and membership to the designated legal heir without requiring protracted civil litigation.
+                      Comprehensive <strong>Will drafting services in Dwarka</strong> and South West Delhi for Asia&apos;s largest sub-city of CGHS cooperative societies and DDA flats. A registered Will empowers society managing committees to transfer share certificates directly without requiring court intervention.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1067,6 +1066,7 @@ export default function DelhiLocationClient({ faqs }: Props) {
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
+                      aria-label="Will Drafting Services in Dwarka"
                       className="inline-flex items-center gap-1.5 text-xs font-bold text-[#C65378] hover:text-[#a13c5d] group-hover:translate-x-0.5 transition-all"
                     >
                       <span>Draft Dwarka Will</span>
@@ -1089,7 +1089,7 @@ export default function DelhiLocationClient({ faqs }: Props) {
                     </div>
 
                     <h3 className="font-extrabold text-lg text-slate-900 group-hover:text-[#C65378] transition-colors">
-                      Will Drafting in Rohini &amp; Pitampura
+                      Will Drafting Services in Rohini &amp; Pitampura
                     </h3>
 
                     <div className="flex flex-wrap gap-1.5 text-[11px] text-slate-600">
@@ -1100,8 +1100,7 @@ export default function DelhiLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Rohini and Pitampura feature extensive DDA plotted housing schemes, commercial market shops, and multi-generation family properties.
-                      Our advocates assist in drafting unambiguous bequests covering shop ownership, rental income streams, and residential floors, coordinating directly with SRO Pitampura and Rohini Court Complex.
+                      Professional <strong>Will drafting services in Rohini</strong> and Pitampura for extensive DDA plotted housing schemes, commercial market shops, and multi-generation family properties. Unambiguous bequests coordinated with SRO Pitampura and Rohini Court Complex.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1120,6 +1119,7 @@ export default function DelhiLocationClient({ faqs }: Props) {
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
+                      aria-label="Will Drafting Services in Rohini"
                       className="inline-flex items-center gap-1.5 text-xs font-bold text-[#C65378] hover:text-[#a13c5d] group-hover:translate-x-0.5 transition-all"
                     >
                       <span>Draft Rohini Will</span>
@@ -1142,7 +1142,7 @@ export default function DelhiLocationClient({ faqs }: Props) {
                     </div>
 
                     <h3 className="font-extrabold text-lg text-slate-900 group-hover:text-[#C65378] transition-colors">
-                      Will Drafting in Saket &amp; Malviya Nagar
+                      Will Drafting Services in Saket &amp; Malviya Nagar
                     </h3>
 
                     <div className="flex flex-wrap gap-1.5 text-[11px] text-slate-600">
@@ -1153,8 +1153,7 @@ export default function DelhiLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Close to the Saket District Courts, residents in Saket and Malviya Nagar benefit from swift advocate execution.
-                      We prepare comprehensive Wills encompassing residential builder floors, bank lockers, demat accounts, and vehicle bequests, preventing probate delays and ensuring clear testamentary succession.
+                      Expert <strong>Will drafting services in Saket</strong> and Malviya Nagar close to the Saket District Courts. Covers residential builder floors, bank lockers, demat accounts, and vehicle bequests, preventing probate delays and ensuring clear testamentary succession.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1173,6 +1172,7 @@ export default function DelhiLocationClient({ faqs }: Props) {
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
+                      aria-label="Will Drafting Services in Saket"
                       className="inline-flex items-center gap-1.5 text-xs font-bold text-[#C65378] hover:text-[#a13c5d] group-hover:translate-x-0.5 transition-all"
                     >
                       <span>Draft Saket Will</span>
@@ -1195,7 +1195,7 @@ export default function DelhiLocationClient({ faqs }: Props) {
                     </div>
 
                     <h3 className="font-extrabold text-lg text-slate-900 group-hover:text-[#C65378] transition-colors">
-                      Will Drafting in Lajpat Nagar &amp; Defence Colony
+                      Will Drafting Services in Lajpat Nagar &amp; Defence Colony
                     </h3>
 
                     <div className="flex flex-wrap gap-1.5 text-[11px] text-slate-600">
@@ -1206,8 +1206,7 @@ export default function DelhiLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Lajpat Nagar features historical rehabilitation leases converted to freehold alongside high-value residential blocks in Defence Colony and New Friends Colony.
-                      Our legal specialists incorporate specific clauses for Land &amp; Development Office (L&amp;DO) compliance, commercial showroom rents, and clear witness attestation.
+                      Specialized <strong>Will drafting services in Lajpat Nagar</strong> and Defence Colony for L&amp;DO leasehold conversion, rehabilitation colony titles, commercial showroom rents along Ring Road, and clear witness attestation.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1226,6 +1225,7 @@ export default function DelhiLocationClient({ faqs }: Props) {
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
+                      aria-label="Will Drafting Services in Lajpat Nagar"
                       className="inline-flex items-center gap-1.5 text-xs font-bold text-[#C65378] hover:text-[#a13c5d] group-hover:translate-x-0.5 transition-all"
                     >
                       <span>Draft Lajpat Nagar Will</span>
@@ -1248,7 +1248,7 @@ export default function DelhiLocationClient({ faqs }: Props) {
                     </div>
 
                     <h3 className="font-extrabold text-lg text-slate-900 group-hover:text-[#C65378] transition-colors">
-                      Will Drafting in Laxmi Nagar &amp; Preet Vihar
+                      Will Drafting Services in Laxmi Nagar &amp; Preet Vihar
                     </h3>
 
                     <div className="flex flex-wrap gap-1.5 text-[11px] text-slate-600">
@@ -1259,8 +1259,7 @@ export default function DelhiLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      East Delhi and the Trans-Yamuna belt hold a vibrant blend of commercial commercial hubs in Laxmi Nagar, cooperative group housing societies in IP Extension, and DDA apartments in Mayur Vihar.
-                      We ensure straightforward testament distribution, safeguarding property transfer against local municipal hurdles and ensuring full peace of mind.
+                      Reliable <strong>Will drafting services in Laxmi Nagar</strong> and Preet Vihar across the Trans-Yamuna commercial hubs, IP Extension group housing societies, and Mayur Vihar DDA flats, ensuring peaceful title transmission.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1279,6 +1278,7 @@ export default function DelhiLocationClient({ faqs }: Props) {
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
+                      aria-label="Will Drafting Services in Laxmi Nagar"
                       className="inline-flex items-center gap-1.5 text-xs font-bold text-[#C65378] hover:text-[#a13c5d] group-hover:translate-x-0.5 transition-all"
                     >
                       <span>Draft East Delhi Will</span>

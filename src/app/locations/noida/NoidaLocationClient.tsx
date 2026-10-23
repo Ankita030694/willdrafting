@@ -221,9 +221,9 @@ export default function NoidaLocationClient({ faqs }: Props) {
                 <span>GAUTAM BUDDHA NAGAR SUCCESSION DESK</span>
               </div>
 
-              {/* Strictly 1 H1 Tag: Length 55 characters */}
+              {/* Strictly 1 H1 Tag: Length 54 characters */}
               <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight leading-tight text-white drop-shadow-xs">
-                Legal Will Drafting &amp; Apartment Succession in Noida NCR
+                Will Drafting Services in Noida: Online Legal Drafting
               </h1>
 
               <p className="text-base sm:text-lg text-slate-200 leading-relaxed font-normal max-w-2xl">
@@ -860,7 +860,6 @@ export default function NoidaLocationClient({ faqs }: Props) {
               </div>
             </section>
 
-            {/* SECTION 6: AREA-WISE LOCALITIES */}
             <section id="noida-area-coverage" className="scroll-target space-y-6">
               <div className="space-y-2">
                 <div className="flex items-center gap-2 text-xs font-black uppercase tracking-wider text-[#C65378]">
@@ -868,10 +867,10 @@ export default function NoidaLocationClient({ faqs }: Props) {
                   <span>LOCAL AREA COVERAGE &amp; HUBS</span>
                 </div>
                 <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  6. Sector-Wise Will Drafting Across Noida Localities
+                  6. Area-Wise Will Drafting Services Across Noida Localities
                 </h2>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Property categories across Gautam Buddha Nagar range from luxury high-rise condominium towers along Noida Expressway to established sector kothis and sprawling Greater Noida townships.
+                  Looking for legally verified <strong>Will drafting services in Noida Expressway, Sector 50, Noida Extension, or Greater Noida</strong>? Property categories across Gautam Buddha Nagar range from luxury high-rise condominium towers along Noida Expressway to established sector kothis and sprawling Greater Noida townships.
                   Our senior advocates provide verified legal drafting, IGRSUP slot booking, and Sub-Registrar accompaniment across all key residential clusters:
                 </p>
               </div>
@@ -891,7 +890,7 @@ export default function NoidaLocationClient({ faqs }: Props) {
                     </div>
 
                     <h3 className="font-extrabold text-lg text-slate-900 group-hover:text-[#C65378] transition-colors">
-                      Will Drafting in Noida Expressway (Sectors 128 to 150)
+                      Will Drafting Services in Noida Expressway (Sectors 128 to 150)
                     </h3>
 
                     <div className="flex flex-wrap gap-1.5 text-[11px] text-slate-600">
@@ -901,7 +900,7 @@ export default function NoidaLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Expressway sectors house luxury gated condominiums with substantial NRI and senior citizen residency. Our advocates draft tailored tripartite sub-lease clauses, survivorship nominations, and Section 31 home visit petitions for gated societies.
+                      Looking for professional <strong>Will drafting services in Noida Expressway</strong>? Expressway sectors house luxury gated condominiums with substantial NRI and senior citizen residency. Our advocates draft tailored tripartite sub-lease clauses, survivorship nominations, and Section 31 home visit petitions for gated societies.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -920,6 +919,7 @@ export default function NoidaLocationClient({ faqs }: Props) {
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
+                      aria-label="Will Drafting Services in Noida Expressway"
                       className="inline-flex items-center gap-1.5 text-xs font-bold text-[#C65378] hover:text-[#a13c5d] group-hover:translate-x-0.5 transition-all"
                     >
                       <span>Draft Expressway Will</span>
@@ -942,7 +942,7 @@ export default function NoidaLocationClient({ faqs }: Props) {
                     </div>
 
                     <h3 className="font-extrabold text-lg text-slate-900 group-hover:text-[#C65378] transition-colors">
-                      Will Drafting in Sector 50 &amp; Sectors 74 to 79
+                      Will Drafting Services in Sector 50 &amp; Sectors 74 to 79
                     </h3>
 
                     <div className="flex flex-wrap gap-1.5 text-[11px] text-slate-600">
@@ -953,7 +953,7 @@ export default function NoidaLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      A blend of established Authority-allotted independent bungalows in Sector 50 and dense high-rise clusters in 74–79. We draft specific division clauses for multi-child estates, parking space allocations, and AOA transfer protocols under the UP Apartment Act.
+                      Get specialized <strong>Will drafting services in Sector 50 &amp; Sectors 74 to 79</strong>. A blend of established Authority-allotted independent bungalows in Sector 50 and dense high-rise clusters in 74–79. We draft specific division clauses for multi-child estates, parking space allocations, and AOA transfer protocols under the UP Apartment Act.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -972,6 +972,7 @@ export default function NoidaLocationClient({ faqs }: Props) {
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
+                      aria-label="Will Drafting Services in Central Noida Sectors"
                       className="inline-flex items-center gap-1.5 text-xs font-bold text-[#C65378] hover:text-[#a13c5d] group-hover:translate-x-0.5 transition-all"
                     >
                       <span>Draft Central Noida Will</span>
@@ -994,7 +995,7 @@ export default function NoidaLocationClient({ faqs }: Props) {
                     </div>
 
                     <h3 className="font-extrabold text-lg text-slate-900 group-hover:text-[#C65378] transition-colors">
-                      Will Drafting in Greater Noida West (Noida Extension)
+                      Will Drafting Services in Greater Noida West (Noida Extension)
                     </h3>
 
                     <div className="flex flex-wrap gap-1.5 text-[11px] text-slate-600">
@@ -1004,7 +1005,7 @@ export default function NoidaLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Noida Extension features hundreds of thousands of residential flats with varying registry statuses. Our legal team assists testators in properly documenting builder-buyer agreements (BBA), pending sub-lease rights, and home loan liability indemnities.
+                      Opt for premier <strong>Will drafting services in Greater Noida West (Noida Extension)</strong>. Noida Extension features hundreds of thousands of residential flats with varying registry statuses. Our legal team assists testators in properly documenting builder-buyer agreements (BBA), pending sub-lease rights, and home loan liability indemnities.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1023,6 +1024,7 @@ export default function NoidaLocationClient({ faqs }: Props) {
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
+                      aria-label="Will Drafting Services in Greater Noida West"
                       className="inline-flex items-center gap-1.5 text-xs font-bold text-[#C65378] hover:text-[#a13c5d] group-hover:translate-x-0.5 transition-all"
                     >
                       <span>Draft Extension Will</span>
@@ -1045,7 +1047,7 @@ export default function NoidaLocationClient({ faqs }: Props) {
                     </div>
 
                     <h3 className="font-extrabold text-lg text-slate-900 group-hover:text-[#C65378] transition-colors">
-                      Will Drafting in Greater Noida (Pari Chowk &amp; Sectors)
+                      Will Drafting Services in Greater Noida (Pari Chowk &amp; Sectors)
                     </h3>
 
                     <div className="flex flex-wrap gap-1.5 text-[11px] text-slate-600">
@@ -1056,7 +1058,7 @@ export default function NoidaLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      GNIDA residential sectors consist of planned individual plots, institutional housing societies, and group housing schemes. We draft precise GNIDA transfer clauses that guarantee hassle-free single-window mutation at the Greater Noida Authority office.
+                      Secure expert <strong>Will drafting services in Greater Noida (Pari Chowk &amp; Sectors)</strong>. GNIDA residential sectors consist of planned individual plots, institutional housing societies, and group housing schemes. We draft precise GNIDA transfer clauses that guarantee hassle-free single-window mutation at the Greater Noida Authority office.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1075,6 +1077,7 @@ export default function NoidaLocationClient({ faqs }: Props) {
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
+                      aria-label="Will Drafting Services in Greater Noida"
                       className="inline-flex items-center gap-1.5 text-xs font-bold text-[#C65378] hover:text-[#a13c5d] group-hover:translate-x-0.5 transition-all"
                     >
                       <span>Draft Greater Noida Will</span>

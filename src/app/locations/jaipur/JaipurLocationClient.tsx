@@ -252,9 +252,9 @@ export default function JaipurLocationClient({ faqs }: Props) {
                 <span>JAIPUR &amp; RAJASTHAN ESTATE SUCCESSION DESK</span>
               </div>
 
-              {/* Strictly 1 H1 Tag: Length 52 characters */}
+              {/* Strictly 1 H1 Tag: Length 55 characters */}
               <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight leading-tight text-white drop-shadow-xs">
-                Online Will Drafting &amp; Property Succession in Jaipur
+                Will Drafting Services in Jaipur: Online Legal Drafting
               </h1>
 
               <p className="text-base sm:text-lg text-slate-200 leading-relaxed font-normal max-w-2xl">
@@ -837,10 +837,10 @@ export default function JaipurLocationClient({ faqs }: Props) {
                 </div>
                 {/* H2: 51 characters */}
                 <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  5. Area-Wise Will Drafting Across Jaipur Localities
+                  5. Area-Wise Will Drafting Services Across Jaipur Localities
                 </h2>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Jaipur real estate ranges from JDA 99-year leasehold plots and luxury private bungalows to ancestral Havelis in the Pink City and RHB housing schemes.
+                  Looking for legally verified <strong>Will drafting services in Vaishali Nagar, Malviya Nagar, Mansarovar, or C-Scheme</strong>? Jaipur real estate ranges from JDA 99-year leasehold plots and luxury private bungalows to ancestral Havelis in the Pink City and RHB housing schemes.
                   Our senior advocates provide verified legal drafting, ePanjiyan portal booking, and Sub-Registrar accompaniment across all key Jaipur circles:
                 </p>
               </div>
@@ -860,7 +860,7 @@ export default function JaipurLocationClient({ faqs }: Props) {
                     </div>
 
                     <h3 className="font-extrabold text-lg text-slate-900 group-hover:text-[#C65378] transition-colors">
-                      Will Drafting in Vaishali Nagar &amp; Chitrakoot
+                      Will Drafting Services in Vaishali Nagar &amp; Chitrakoot
                     </h3>
 
                     <div className="flex flex-wrap gap-1.5 text-[11px] text-slate-600">
@@ -871,7 +871,7 @@ export default function JaipurLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Vaishali Nagar and Chitrakoot feature prime JDA residential plots, independent luxury villas, and multi-storey apartments.
+                      Looking for professional <strong>Will drafting services in Vaishali Nagar &amp; Chitrakoot</strong>? Vaishali Nagar and Chitrakoot feature prime JDA residential plots, independent luxury villas, and multi-storey apartments.
                       Our Will drafts specifically incorporate JDA lease-deed covenants, undivided roof rights, mutual fund succession, and executor powers to streamline name transfer with the Jaipur Development Authority.
                     </p>
 
@@ -891,6 +891,7 @@ export default function JaipurLocationClient({ faqs }: Props) {
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
+                      aria-label="Will Drafting Services in Vaishali Nagar &amp; Chitrakoot"
                       className="inline-flex items-center gap-1.5 text-xs font-bold text-[#C65378] hover:text-[#a13c5d] group-hover:translate-x-0.5 transition-all"
                     >
                       <span>Draft Vaishali Nagar Will</span>
@@ -913,7 +914,7 @@ export default function JaipurLocationClient({ faqs }: Props) {
                     </div>
 
                     <h3 className="font-extrabold text-lg text-slate-900 group-hover:text-[#C65378] transition-colors">
-                      Will Drafting in Malviya Nagar &amp; Jagatpura
+                      Will Drafting Services in Malviya Nagar &amp; Jagatpura
                     </h3>
 
                     <div className="flex flex-wrap gap-1.5 text-[11px] text-slate-600">
@@ -924,7 +925,7 @@ export default function JaipurLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Covering extensive residential sectors around Jawahar Circle alongside commercial and RIICO industrial assets in Sitapura.
+                      Get specialized <strong>Will drafting services in Malviya Nagar &amp; Jagatpura</strong>. Covering extensive residential sectors around Jawahar Circle alongside commercial and RIICO industrial assets in Sitapura.
                       Our senior advocates structure clear bequests for family businesses, commercial rental incomes, and residential floors, eliminating ambiguity before municipal tax authorities.
                     </p>
 
@@ -944,6 +945,7 @@ export default function JaipurLocationClient({ faqs }: Props) {
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
+                      aria-label="Will Drafting Services in Malviya Nagar &amp; Jagatpura"
                       className="inline-flex items-center gap-1.5 text-xs font-bold text-[#C65378] hover:text-[#a13c5d] group-hover:translate-x-0.5 transition-all"
                     >
                       <span>Draft Malviya Nagar Will</span>
@@ -966,7 +968,7 @@ export default function JaipurLocationClient({ faqs }: Props) {
                     </div>
 
                     <h3 className="font-extrabold text-lg text-slate-900 group-hover:text-[#C65378] transition-colors">
-                      Will Drafting in Mansarovar &amp; Gopalpura Bypass
+                      Will Drafting Services in Mansarovar &amp; Gopalpura Bypass
                     </h3>
 
                     <div className="flex flex-wrap gap-1.5 text-[11px] text-slate-600">
@@ -977,7 +979,7 @@ export default function JaipurLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Mansarovar is among Asia&apos;s largest planned housing colonies, combining Rajasthan Housing Board (RHB) dwellings, private builder floors, and coaching hub commercial units.
+                      Opt for premier <strong>Will drafting services in Mansarovar &amp; Gopalpura Bypass</strong>. Mansarovar is among Asia&apos;s largest planned housing colonies, combining Rajasthan Housing Board (RHB) dwellings, private builder floors, and coaching hub commercial units.
                       A registered Will is essential for RHB and Nagar Nigam Jaipur Greater to transfer title and water-electric meters without demanding civil succession certificates.
                     </p>
 
@@ -997,6 +999,7 @@ export default function JaipurLocationClient({ faqs }: Props) {
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
+                      aria-label="Will Drafting Services in Mansarovar &amp; Gopalpura"
                       className="inline-flex items-center gap-1.5 text-xs font-bold text-[#C65378] hover:text-[#a13c5d] group-hover:translate-x-0.5 transition-all"
                     >
                       <span>Draft Mansarovar Will</span>
@@ -1019,7 +1022,7 @@ export default function JaipurLocationClient({ faqs }: Props) {
                     </div>
 
                     <h3 className="font-extrabold text-lg text-slate-900 group-hover:text-[#C65378] transition-colors">
-                      Will Drafting in C-Scheme &amp; Civil Lines
+                      Will Drafting Services in C-Scheme &amp; Civil Lines
                     </h3>
 
                     <div className="flex flex-wrap gap-1.5 text-[11px] text-slate-600">
@@ -1030,7 +1033,7 @@ export default function JaipurLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Home to Jaipur&apos;s high-net-worth families, senior industrialists, and prominent jurists.
+                      Secure expert <strong>Will drafting services in C-Scheme &amp; Civil Lines</strong>. Home to Jaipur&apos;s high-net-worth families, senior industrialists, and prominent jurists.
                       Our estate specialists draft comprehensive multi-generational Wills codifying family trust structures, corporate holding transfers, jewelry bequests, and private demat portfolios with sound witness attestation.
                     </p>
 
@@ -1050,6 +1053,7 @@ export default function JaipurLocationClient({ faqs }: Props) {
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
+                      aria-label="Will Drafting Services in C-Scheme &amp; Civil Lines"
                       className="inline-flex items-center gap-1.5 text-xs font-bold text-[#C65378] hover:text-[#a13c5d] group-hover:translate-x-0.5 transition-all"
                     >
                       <span>Draft C-Scheme Will</span>
@@ -1072,7 +1076,7 @@ export default function JaipurLocationClient({ faqs }: Props) {
                     </div>
 
                     <h3 className="font-extrabold text-lg text-slate-900 group-hover:text-[#C65378] transition-colors">
-                      Will Drafting in Pink City &amp; Bani Park
+                      Will Drafting Services in Pink City &amp; Bani Park
                     </h3>
 
                     <div className="flex flex-wrap gap-1.5 text-[11px] text-slate-600">
@@ -1083,7 +1087,7 @@ export default function JaipurLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      The historic Walled City presents intricate Mitakshara ancestral succession issues.
+                      Consult experienced advocates for <strong>Will drafting services in Pink City &amp; Bani Park</strong>. The historic Walled City presents intricate Mitakshara ancestral succession issues.
                       Ancestral Havelis and undivided family jewelry shops require precise coparcenary share demarcation under Section 30 of the Hindu Succession Act, protecting daughters&apos; equal legal rights and preventing generational litigation.
                     </p>
 
@@ -1103,6 +1107,7 @@ export default function JaipurLocationClient({ faqs }: Props) {
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
+                      aria-label="Will Drafting Services in Pink City &amp; Bani Park"
                       className="inline-flex items-center gap-1.5 text-xs font-bold text-[#C65378] hover:text-[#a13c5d] group-hover:translate-x-0.5 transition-all"
                     >
                       <span>Draft Walled City Will</span>
@@ -1125,7 +1130,7 @@ export default function JaipurLocationClient({ faqs }: Props) {
                     </div>
 
                     <h3 className="font-extrabold text-lg text-slate-900 group-hover:text-[#C65378] transition-colors">
-                      Will Drafting in Vidhyadhar Nagar &amp; Sikar Road
+                      Will Drafting Services in Vidhyadhar Nagar &amp; Sikar Road
                     </h3>
 
                     <div className="flex flex-wrap gap-1.5 text-[11px] text-slate-600">
@@ -1136,7 +1141,7 @@ export default function JaipurLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Vidhyadhar Nagar was developed on modern geometric town-planning principles with residential sectors and commercial centres.
+                      Comprehensive <strong>Will drafting services in Vidhyadhar Nagar &amp; Sikar Road</strong>. Vidhyadhar Nagar was developed on modern geometric town-planning principles with residential sectors and commercial centres.
                       We prepare clear bequests covering JDA scheme plots, commercial shops, independent floors, and vehicle bequests, coordinating directly with SRO Jhotwara.
                     </p>
 
@@ -1156,6 +1161,7 @@ export default function JaipurLocationClient({ faqs }: Props) {
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
+                      aria-label="Will Drafting Services in Vidhyadhar Nagar"
                       className="inline-flex items-center gap-1.5 text-xs font-bold text-[#C65378] hover:text-[#a13c5d] group-hover:translate-x-0.5 transition-all"
                     >
                       <span>Draft Vidhyadhar Will</span>
@@ -1178,7 +1184,7 @@ export default function JaipurLocationClient({ faqs }: Props) {
                     </div>
 
                     <h3 className="font-extrabold text-lg text-slate-900 group-hover:text-[#C65378] transition-colors">
-                      Will Drafting in Raja Park &amp; Tilak Nagar
+                      Will Drafting Services in Raja Park &amp; Tilak Nagar
                     </h3>
 
                     <div className="flex flex-wrap gap-1.5 text-[11px] text-slate-600">
@@ -1189,7 +1195,7 @@ export default function JaipurLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Raja Park and Tilak Nagar hold established family properties, thriving retail showrooms, and professional residences.
+                      Protect your heritage with <strong>Will drafting services in Raja Park &amp; Tilak Nagar</strong>. Raja Park and Tilak Nagar hold established family properties, thriving retail showrooms, and professional residences.
                       Our legal team incorporates specific covenants for commercial rent sharing, leasehold conversions, demat portfolio distribution, and doctor fitness certifications for senior citizens.
                     </p>
 
@@ -1209,6 +1215,7 @@ export default function JaipurLocationClient({ faqs }: Props) {
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
+                      aria-label="Will Drafting Services in Raja Park &amp; Tilak Nagar"
                       className="inline-flex items-center gap-1.5 text-xs font-bold text-[#C65378] hover:text-[#a13c5d] group-hover:translate-x-0.5 transition-all"
                     >
                       <span>Draft Raja Park Will</span>
@@ -1231,7 +1238,7 @@ export default function JaipurLocationClient({ faqs }: Props) {
                     </div>
 
                     <h3 className="font-extrabold text-lg text-slate-900 group-hover:text-[#C65378] transition-colors">
-                      Will Drafting in Pratap Nagar &amp; Tonk Road
+                      Will Drafting Services in Pratap Nagar &amp; Tonk Road
                     </h3>
 
                     <div className="flex flex-wrap gap-1.5 text-[11px] text-slate-600">
@@ -1242,7 +1249,7 @@ export default function JaipurLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Pratap Nagar is Rajasthan Housing Board&apos;s largest project area, bordered by rapid township growth along the Tonk Road corridor.
+                      End-to-end <strong>Will drafting services in Pratap Nagar &amp; Tonk Road</strong>. Pratap Nagar is Rajasthan Housing Board&apos;s largest project area, bordered by rapid township growth along the Tonk Road corridor.
                       We ensure straightforward testament distribution for NRIs and local homeowners, safeguarding property succession against bureaucratic hurdles.
                     </p>
 
@@ -1262,6 +1269,7 @@ export default function JaipurLocationClient({ faqs }: Props) {
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
+                      aria-label="Will Drafting Services in Pratap Nagar &amp; Tonk Road"
                       className="inline-flex items-center gap-1.5 text-xs font-bold text-[#C65378] hover:text-[#a13c5d] group-hover:translate-x-0.5 transition-all"
                     >
                       <span>Draft Pratap Nagar Will</span>

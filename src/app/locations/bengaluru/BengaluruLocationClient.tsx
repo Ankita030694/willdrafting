@@ -275,9 +275,9 @@ export default function BengaluruLocationClient({ faqs }: Props) {
                 <span>BENGALURU TECH &amp; PROPERTY SUCCESSION DESK</span>
               </div>
 
-              {/* Strictly 1 H1 Tag: Length 56 characters */}
+              {/* Strictly 1 H1 Tag: Length 58 characters */}
               <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight leading-tight text-white drop-shadow-xs">
-                Online Will Drafting &amp; Property Succession in Bengaluru
+                Will Drafting Services in Bengaluru: Online Legal Drafting
               </h1>
 
               <p className="text-base sm:text-lg text-slate-200 leading-relaxed font-normal max-w-2xl">
@@ -855,10 +855,10 @@ export default function BengaluruLocationClient({ faqs }: Props) {
                   <span>LOCAL AREA COVERAGE &amp; TECH CORRIDORS</span>
                 </div>
                 <h2 className="text-xl sm:text-2xl font-black text-slate-900 tracking-tight leading-snug">
-                  7. Area-Wise Will Drafting Across Bengaluru Tech Belts &amp; Suburbs
+                  7. Area-Wise Will Drafting Services Across Bengaluru Tech Belts &amp; Suburbs
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed font-normal">
-                  Property governance and asset structures vary across Bengaluru—from BBMP &apos;A&apos; Khata apartments and startup ESOP portfolios in Koramangala to BDA plotted bungalows in Indiranagar and gated villa communities in Whitefield.
+                  Looking for legally verified <strong>Will drafting services in Whitefield, Koramangala, Indiranagar, or Jayanagar</strong>? Property governance and asset structures vary across Bengaluru—from BBMP &apos;A&apos; Khata apartments and startup ESOP portfolios in Koramangala to BDA plotted bungalows in Indiranagar and gated villa communities in Whitefield.
                   Our senior advocates provide tailored legal drafting, Kaveri 2.0 portal slot bookings, and SRO assistance across all zones:
                 </p>
               </div>
@@ -878,7 +878,7 @@ export default function BengaluruLocationClient({ faqs }: Props) {
                     </div>
 
                     <h3 className="font-extrabold text-lg text-slate-900 group-hover:text-[#C65378] transition-colors">
-                      Will Drafting in Koramangala &amp; HSR Layout
+                      Will Drafting Services in Koramangala &amp; HSR Layout
                     </h3>
 
                     <div className="flex flex-wrap gap-1.5 text-[11px] text-slate-600">
@@ -889,8 +889,7 @@ export default function BengaluruLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Home to high-growth tech founders, venture capitalists, and product leads.
-                      Our specialized tech estate plans codify unvested startup ESOPs, US tech equities (RSUs held in Morgan Stanley or E*TRADE), intellectual property rights, and BBMP &apos;A&apos; Khata apartment titles without civil court delays.
+                      Specialized <strong>Will drafting services in Koramangala</strong> and HSR Layout for high-growth tech founders, venture capitalists, and product leads. Codifies unvested startup ESOPs, US tech equities (RSUs in Morgan Stanley/E*TRADE), intellectual property rights, and BBMP &apos;A&apos; Khata apartment titles without civil court delays.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -909,6 +908,7 @@ export default function BengaluruLocationClient({ faqs }: Props) {
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
+                      aria-label="Will Drafting Services in Koramangala"
                       className="inline-flex items-center gap-1.5 text-xs font-bold text-[#C65378] hover:text-[#a13c5d] group-hover:translate-x-0.5 transition-all"
                     >
                       <span>Draft Koramangala Will</span>
@@ -931,7 +931,7 @@ export default function BengaluruLocationClient({ faqs }: Props) {
                     </div>
 
                     <h3 className="font-extrabold text-lg text-slate-900 group-hover:text-[#C65378] transition-colors">
-                      Will Drafting in Indiranagar &amp; Domlur
+                      Will Drafting Services in Indiranagar &amp; Domlur
                     </h3>
 
                     <div className="flex flex-wrap gap-1.5 text-[11px] text-slate-600">
@@ -942,8 +942,7 @@ export default function BengaluruLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Indiranagar features prime BDA freehold plotted bungalows, heritage residential estates, and valuable retail commercial leases.
-                      A lawyer-vetted registered Will ensures clear single-heir succession or structured partition, protecting family properties against protracted revenue court suits and enabling smooth BBMP Khata bifurcation.
+                      Prime <strong>Will drafting services in Indiranagar</strong> and Domlur for BDA freehold plotted bungalows, heritage residential estates, and valuable retail commercial leases. Ensures clear single-heir succession or structured partition with smooth BBMP Khata bifurcation.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -962,6 +961,7 @@ export default function BengaluruLocationClient({ faqs }: Props) {
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
+                      aria-label="Will Drafting Services in Indiranagar"
                       className="inline-flex items-center gap-1.5 text-xs font-bold text-[#C65378] hover:text-[#a13c5d] group-hover:translate-x-0.5 transition-all"
                     >
                       <span>Draft Indiranagar Will</span>
@@ -984,7 +984,7 @@ export default function BengaluruLocationClient({ faqs }: Props) {
                     </div>
 
                     <h3 className="font-extrabold text-lg text-slate-900 group-hover:text-[#C65378] transition-colors">
-                      Will Drafting in Whitefield &amp; Marathahalli
+                      Will Drafting Services in Whitefield &amp; Marathahalli
                     </h3>
 
                     <div className="flex flex-wrap gap-1.5 text-[11px] text-slate-600">
@@ -995,8 +995,7 @@ export default function BengaluruLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Whitefield is Bengaluru&apos;s prime hub for gated villa enclaves, luxury high-rises, and expatriate tech leaders.
-                      Our advocates draft dual-jurisdiction mirror Wills for NRIs and Indian tech executives holding multinational bank folios, RSUs, and residential properties across Bengaluru and overseas.
+                      Dedicated <strong>Will drafting services in Whitefield</strong> and Marathahalli for gated villa enclaves, luxury high-rises, and tech leaders. We craft dual-jurisdiction mirror Wills for NRIs holding multinational bank portfolios, RSUs, and properties across India and abroad.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1015,6 +1014,7 @@ export default function BengaluruLocationClient({ faqs }: Props) {
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
+                      aria-label="Will Drafting Services in Whitefield"
                       className="inline-flex items-center gap-1.5 text-xs font-bold text-[#C65378] hover:text-[#a13c5d] group-hover:translate-x-0.5 transition-all"
                     >
                       <span>Draft Whitefield Will</span>
@@ -1037,7 +1037,7 @@ export default function BengaluruLocationClient({ faqs }: Props) {
                     </div>
 
                     <h3 className="font-extrabold text-lg text-slate-900 group-hover:text-[#C65378] transition-colors">
-                      Will Drafting in Jayanagar &amp; JP Nagar
+                      Will Drafting Services in Jayanagar &amp; JP Nagar
                     </h3>
 
                     <div className="flex flex-wrap gap-1.5 text-[11px] text-slate-600">
@@ -1048,8 +1048,7 @@ export default function BengaluruLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      South Bengaluru represents generational family residences, ancestral properties, and retail businesses.
-                      We specialize in multi-heir distribution plans, medical fitness certifications from registered MBBS doctors for elderly residents, and coordinating Section 31 doorstep home visits by the Sub-Registrar.
+                      Generational <strong>Will drafting services in Jayanagar</strong> and JP Nagar for traditional family residences, ancestral properties, and retail businesses. Multi-heir distribution plans, registered MBBS doctor mental fitness certificates, and Section 31 doorstep execution.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1068,6 +1067,7 @@ export default function BengaluruLocationClient({ faqs }: Props) {
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
+                      aria-label="Will Drafting Services in Jayanagar"
                       className="inline-flex items-center gap-1.5 text-xs font-bold text-[#C65378] hover:text-[#a13c5d] group-hover:translate-x-0.5 transition-all"
                     >
                       <span>Draft Jayanagar Will</span>
@@ -1090,7 +1090,7 @@ export default function BengaluruLocationClient({ faqs }: Props) {
                     </div>
 
                     <h3 className="font-extrabold text-lg text-slate-900 group-hover:text-[#C65378] transition-colors">
-                      Will Drafting in Electronic City &amp; Bommanahalli
+                      Will Drafting Services in Electronic City &amp; Bommanahalli
                     </h3>
 
                     <div className="flex flex-wrap gap-1.5 text-[11px] text-slate-600">
@@ -1101,8 +1101,7 @@ export default function BengaluruLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      A hotspot for early-to-mid career IT engineers and dual-income couples holding self-acquired apartments.
-                      We offer streamlined mirror wills, digital asset transfer protocols (hardware crypto wallets, Google/Apple cloud accounts), and clear testamentary protection for &apos;A&apos; and &apos;B&apos; Khata properties.
+                      Streamlined <strong>Will drafting services in Electronic City</strong> and Bommanahalli for IT engineers and dual-income couples. Includes mirror wills, digital asset transfer protocols (hardware crypto wallets, cloud accounts), and &apos;A&apos; / &apos;B&apos; Khata protection.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1121,6 +1120,7 @@ export default function BengaluruLocationClient({ faqs }: Props) {
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
+                      aria-label="Will Drafting Services in Electronic City"
                       className="inline-flex items-center gap-1.5 text-xs font-bold text-[#C65378] hover:text-[#a13c5d] group-hover:translate-x-0.5 transition-all"
                     >
                       <span>Draft E-City Will</span>
@@ -1143,7 +1143,7 @@ export default function BengaluruLocationClient({ faqs }: Props) {
                     </div>
 
                     <h3 className="font-extrabold text-lg text-slate-900 group-hover:text-[#C65378] transition-colors">
-                      Will Drafting in Yelahanka &amp; Hebbal
+                      Will Drafting Services in Yelahanka &amp; Hebbal
                     </h3>
 
                     <div className="flex flex-wrap gap-1.5 text-[11px] text-slate-600">
@@ -1154,8 +1154,7 @@ export default function BengaluruLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      North Bengaluru combines senior defense retirees in Yelahanka with executives working in Manyata Embassy Business Park.
-                      Our advocates assist in drafting unambiguous succession deeds covering plotted BIAPPA layouts, commercial lands, and lakeside apartments along Bellary Road.
+                      Comprehensive <strong>Will drafting services in Yelahanka</strong> and Hebbal for Manyata tech park executives and senior defense retirees. Unambiguous succession deeds covering plotted BIAPPA layouts, commercial lands, and lakeside apartments.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1174,6 +1173,7 @@ export default function BengaluruLocationClient({ faqs }: Props) {
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
+                      aria-label="Will Drafting Services in Yelahanka"
                       className="inline-flex items-center gap-1.5 text-xs font-bold text-[#C65378] hover:text-[#a13c5d] group-hover:translate-x-0.5 transition-all"
                     >
                       <span>Draft Yelahanka Will</span>

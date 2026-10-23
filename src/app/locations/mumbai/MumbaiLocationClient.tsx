@@ -235,9 +235,9 @@ export default function MumbaiLocationClient({ faqs }: Props) {
                 <span>MUMBAI &amp; MMR ESTATE SUCCESSION DESK</span>
               </div>
 
-              {/* Strictly 1 H1 Tag: Length 56 characters */}
+              {/* Strictly 1 H1 Tag: Length 55 characters */}
               <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight leading-tight text-white drop-shadow-xs">
-                Legal Will Drafting &amp; Probate Support Services in Mumbai
+                Will Drafting Services in Mumbai: Online Legal Drafting
               </h1>
 
               <p className="text-base sm:text-lg text-slate-200 leading-relaxed font-normal max-w-2xl">
@@ -824,10 +824,10 @@ export default function MumbaiLocationClient({ faqs }: Props) {
                   <span>LOCAL AREA COVERAGE &amp; SRO HUBS</span>
                 </div>
                 <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  5. Area-Wise Will Drafting Across Mumbai &amp; MMR Suburbs
+                  5. Area-Wise Will Drafting Services Across Mumbai &amp; MMR Suburbs
                 </h2>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Cooperative society bye-laws, property ownership models, and Sub-Registrar jurisdictions vary significantly across Mumbai.
+                  Looking for legally verified <strong>Will drafting services in Borivali, Bandra, Andheri, or South Mumbai</strong>? Cooperative society bye-laws, property ownership models, and Sub-Registrar jurisdictions vary significantly across Mumbai.
                   Whether you own a high-rise CHS apartment in Borivali, a commercial floor in BKC, an ancestral bungalow in Bandra, or a gated township home in Thane, our High Court advocates deliver tailored drafting, registration, and probate advisory:
                 </p>
               </div>
@@ -847,7 +847,7 @@ export default function MumbaiLocationClient({ faqs }: Props) {
                     </div>
 
                     <h3 className="font-extrabold text-lg text-slate-900 group-hover:text-[#C65378] transition-colors">
-                      Will Drafting in Borivali &amp; Kandivali
+                      Will Drafting Services in Borivali &amp; Kandivali
                     </h3>
 
                     <div className="flex flex-wrap gap-1.5 text-[11px] text-slate-600">
@@ -858,7 +858,7 @@ export default function MumbaiLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Borivali and Kandivali have the highest density of Cooperative Housing Societies (CHS) in Mumbai, many undergoing active redevelopment.
+                      Looking for professional <strong>Will drafting services in Borivali &amp; Kandivali</strong>? Borivali and Kandivali have the highest density of Cooperative Housing Societies (CHS) in Mumbai, many undergoing active redevelopment.
                       Under Maharashtra Model Bye-laws 34 and 35, making a Will ensures your cooperative society share certificates transfer directly to your chosen heir without requiring expensive court indemnity bonds or probate disputes among siblings.
                     </p>
 
@@ -878,6 +878,7 @@ export default function MumbaiLocationClient({ faqs }: Props) {
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
+                      aria-label="Will Drafting Services in Borivali &amp; Kandivali"
                       className="inline-flex items-center gap-1.5 text-xs font-bold text-[#C65378] hover:text-[#a13c5d] group-hover:translate-x-0.5 transition-all"
                     >
                       <span>Draft Borivali Will</span>
@@ -900,7 +901,7 @@ export default function MumbaiLocationClient({ faqs }: Props) {
                     </div>
 
                     <h3 className="font-extrabold text-lg text-slate-900 group-hover:text-[#C65378] transition-colors">
-                      Will Drafting in Thane &amp; Ghodbunder Road
+                      Will Drafting Services in Thane &amp; Ghodbunder Road
                     </h3>
 
                     <div className="flex flex-wrap gap-1.5 text-[11px] text-slate-600">
@@ -912,7 +913,7 @@ export default function MumbaiLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Thane&apos;s real estate landscape features large integrated townships (Hiranandani Estate, Lodha, Rustomjee) alongside established societies in Naupada.
+                      Get specialized <strong>Will drafting services in Thane &amp; Ghodbunder Road</strong>. Thane&apos;s real estate landscape features large integrated townships (Hiranandani Estate, Lodha, Rustomjee) alongside established societies in Naupada.
                       Our advocates draft airtight bequests for self-acquired high-rise flats, commercial office units, and demat accounts, while coordinating registration at the Thane Collectorate SRO at Court Naka.
                     </p>
 
@@ -932,6 +933,7 @@ export default function MumbaiLocationClient({ faqs }: Props) {
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
+                      aria-label="Will Drafting Services in Thane &amp; Ghodbunder Road"
                       className="inline-flex items-center gap-1.5 text-xs font-bold text-[#C65378] hover:text-[#a13c5d] group-hover:translate-x-0.5 transition-all"
                     >
                       <span>Draft Thane Will</span>
@@ -954,7 +956,7 @@ export default function MumbaiLocationClient({ faqs }: Props) {
                     </div>
 
                     <h3 className="font-extrabold text-lg text-slate-900 group-hover:text-[#C65378] transition-colors">
-                      Will Drafting in Andheri &amp; Juhu
+                      Will Drafting Services in Andheri &amp; Juhu
                     </h3>
 
                     <div className="flex flex-wrap gap-1.5 text-[11px] text-slate-600">
@@ -965,7 +967,7 @@ export default function MumbaiLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Andheri combines luxury residential societies, media production businesses, and commercial hubs.
+                      Opt for premier <strong>Will drafting services in Andheri &amp; Juhu</strong>. Andheri combines luxury residential societies, media production businesses, and commercial hubs.
                       We specialize in multi-asset Wills covering residential penthouses in Lokhandwala, studio royalties, commercial warehouses in MIDC, and international mutual funds, ensuring clean execution before independent witnesses.
                     </p>
 
@@ -985,6 +987,7 @@ export default function MumbaiLocationClient({ faqs }: Props) {
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
+                      aria-label="Will Drafting Services in Andheri &amp; Juhu"
                       className="inline-flex items-center gap-1.5 text-xs font-bold text-[#C65378] hover:text-[#a13c5d] group-hover:translate-x-0.5 transition-all"
                     >
                       <span>Draft Andheri Will</span>
@@ -1007,7 +1010,7 @@ export default function MumbaiLocationClient({ faqs }: Props) {
                     </div>
 
                     <h3 className="font-extrabold text-lg text-slate-900 group-hover:text-[#C65378] transition-colors">
-                      Will Drafting in Bandra &amp; Khar
+                      Will Drafting Services in Bandra &amp; Khar
                     </h3>
 
                     <div className="flex flex-wrap gap-1.5 text-[11px] text-slate-600">
@@ -1018,7 +1021,7 @@ export default function MumbaiLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Bandra is home to prime heritage bungalows, seafacing penthouses, and corporate leaders in BKC.
+                      Secure expert <strong>Will drafting services in Bandra &amp; Khar</strong>. Bandra is home to prime heritage bungalows, seafacing penthouses, and corporate leaders in BKC.
                       High-net-worth estate planning here requires clear executor appointments, testamentary trusts for minors, cross-border NRI asset clauses, and proactive Bombay High Court probate planning under Section 213.
                     </p>
 
@@ -1038,6 +1041,7 @@ export default function MumbaiLocationClient({ faqs }: Props) {
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
+                      aria-label="Will Drafting Services in Bandra &amp; Khar"
                       className="inline-flex items-center gap-1.5 text-xs font-bold text-[#C65378] hover:text-[#a13c5d] group-hover:translate-x-0.5 transition-all"
                     >
                       <span>Draft Bandra Will</span>
@@ -1060,7 +1064,7 @@ export default function MumbaiLocationClient({ faqs }: Props) {
                     </div>
 
                     <h3 className="font-extrabold text-lg text-slate-900 group-hover:text-[#C65378] transition-colors">
-                      Will Drafting in South Mumbai (Colaba, Malabar Hill, Fort)
+                      Will Drafting Services in South Mumbai (Colaba, Malabar Hill, Fort)
                     </h3>
 
                     <div className="flex flex-wrap gap-1.5 text-[11px] text-slate-600">
@@ -1071,7 +1075,7 @@ export default function MumbaiLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      South Mumbai properties fall squarely within the Ordinary Original Civil Jurisdiction of the Bombay High Court.
+                      Consult High Court advocates for <strong>Will drafting services in South Mumbai (Colaba, Malabar Hill, Fort)</strong>. South Mumbai properties fall squarely within the Ordinary Original Civil Jurisdiction of the Bombay High Court.
                       Our legal team guides families through complex tenancy rights under the Maharashtra Rent Control Act, heritage freehold mansions, family trusts, art collections, and mandatory High Court probate petitions.
                     </p>
 
@@ -1091,6 +1095,7 @@ export default function MumbaiLocationClient({ faqs }: Props) {
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
+                      aria-label="Will Drafting Services in South Mumbai"
                       className="inline-flex items-center gap-1.5 text-xs font-bold text-[#C65378] hover:text-[#a13c5d] group-hover:translate-x-0.5 transition-all"
                     >
                       <span>Draft South Mumbai Will</span>
@@ -1113,7 +1118,7 @@ export default function MumbaiLocationClient({ faqs }: Props) {
                     </div>
 
                     <h3 className="font-extrabold text-lg text-slate-900 group-hover:text-[#C65378] transition-colors">
-                      Will Drafting in Navi Mumbai (Vashi, Nerul, Belapur)
+                      Will Drafting Services in Navi Mumbai (Vashi, Nerul, Belapur)
                     </h3>
 
                     <div className="flex flex-wrap gap-1.5 text-[11px] text-slate-600">
@@ -1124,7 +1129,7 @@ export default function MumbaiLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Navi Mumbai real estate often involves CIDCO leasehold plots, tripartite transfer agreements, and newly formed cooperative societies.
+                      Avail end-to-end <strong>Will drafting services in Navi Mumbai (Vashi, Nerul, Belapur)</strong>. Navi Mumbai real estate often involves CIDCO leasehold plots, tripartite transfer agreements, and newly formed cooperative societies.
                       A clear, registered Will enables smooth legal heir mutation at CIDCO Bhavan and NMMC municipal offices without requiring endless NOCs or court litigation.
                     </p>
 
@@ -1144,6 +1149,7 @@ export default function MumbaiLocationClient({ faqs }: Props) {
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
+                      aria-label="Will Drafting Services in Navi Mumbai"
                       className="inline-flex items-center gap-1.5 text-xs font-bold text-[#C65378] hover:text-[#a13c5d] group-hover:translate-x-0.5 transition-all"
                     >
                       <span>Draft Navi Mumbai Will</span>
@@ -1166,7 +1172,7 @@ export default function MumbaiLocationClient({ faqs }: Props) {
                     </div>
 
                     <h3 className="font-extrabold text-lg text-slate-900 group-hover:text-[#C65378] transition-colors">
-                      Will Drafting in Chembur, Ghatkopar &amp; Eastern Suburbs
+                      Will Drafting Services in Chembur, Ghatkopar &amp; Eastern Suburbs
                     </h3>
 
                     <div className="flex flex-wrap gap-1.5 text-[11px] text-slate-600">
@@ -1177,7 +1183,7 @@ export default function MumbaiLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      The Eastern Suburbs house vibrant mercantile families, ancestral housing societies, and redevelopment projects along the LBS Marg corridor.
+                      Protect your heritage with <strong>Will drafting services in Chembur, Ghatkopar &amp; Eastern Suburbs</strong>. The Eastern Suburbs house vibrant mercantile families, ancestral housing societies, and redevelopment projects along the LBS Marg corridor.
                       We help family businesses draft clean succession plans dividing commercial shops, residential flats, gold assets, and bank lockers fairly to prevent contentious probate proceedings.
                     </p>
 
@@ -1197,6 +1203,7 @@ export default function MumbaiLocationClient({ faqs }: Props) {
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
+                      aria-label="Will Drafting Services in Chembur &amp; Ghatkopar"
                       className="inline-flex items-center gap-1.5 text-xs font-bold text-[#C65378] hover:text-[#a13c5d] group-hover:translate-x-0.5 transition-all"
                     >
                       <span>Draft Chembur Will</span>
@@ -1219,7 +1226,7 @@ export default function MumbaiLocationClient({ faqs }: Props) {
                     </div>
 
                     <h3 className="font-extrabold text-lg text-slate-900 group-hover:text-[#C65378] transition-colors">
-                      Will Drafting in Goregaon &amp; Malad
+                      Will Drafting Services in Goregaon &amp; Malad
                     </h3>
 
                     <div className="flex flex-wrap gap-1.5 text-[11px] text-slate-600">
@@ -1230,7 +1237,7 @@ export default function MumbaiLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      With a massive concentration of corporate executives, IT professionals, and modern gated towers, Goregaon and Malad residents require digital and physical estate protection.
+                      Comprehensive <strong>Will drafting services in Goregaon &amp; Malad</strong>. With a massive concentration of corporate executives, IT professionals, and modern gated towers, Goregaon and Malad residents require digital and physical estate protection.
                       We ensure your mutual fund portfolios, demat shares, crypto assets, and residential flats pass cleanly without society nomination conflicts.
                     </p>
 
@@ -1250,6 +1257,7 @@ export default function MumbaiLocationClient({ faqs }: Props) {
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
+                      aria-label="Will Drafting Services in Goregaon &amp; Malad"
                       className="inline-flex items-center gap-1.5 text-xs font-bold text-[#C65378] hover:text-[#a13c5d] group-hover:translate-x-0.5 transition-all"
                     >
                       <span>Draft Goregaon Will</span>

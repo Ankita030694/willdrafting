@@ -261,9 +261,9 @@ export default function SuratLocationClient({ faqs }: Props) {
                 <span>SURAT COMMERCIAL ESTATE &amp; SUCCESSION DESK</span>
               </div>
 
-              {/* Strictly 1 H1 Tag: Length 57 characters */}
+              {/* Strictly 1 H1 Tag: Length 54 characters */}
               <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight leading-tight text-white drop-shadow-xs">
-                Online Will Drafting &amp; Commercial Asset Planning in Surat
+                Will Drafting Services in Surat: Online Legal Drafting
               </h1>
 
               <p className="text-base sm:text-lg text-slate-200 leading-relaxed font-normal max-w-2xl">
@@ -844,11 +844,12 @@ export default function SuratLocationClient({ faqs }: Props) {
                   <MapPin className="w-4 h-4 text-[#C65378]" />
                   <span>LOCAL AREA COVERAGE &amp; SRO HUBS</span>
                 </div>
-                {/* H2: 49 characters */}
+                {/* H2: 58 characters */}
                 <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  5. Area-Wise Will Drafting Across Surat Localities
+                  5. Area-Wise Will Drafting Services Across Surat Localities
                 </h2>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
+                  Looking for legally verified <strong>Will drafting services in Vesu, Varachha, Ring Road, Adajan, or DREAM City</strong>?
                   From diamond trading bourses and bustling Ring Road textile markets to high-end residential towers in Vesu and waterfront properties in Adajan, our senior advocates provide specialized legal drafting, Garvi Gujarat portal appointment scheduling, and Sub-Registrar accompaniment across Surat:
                 </p>
               </div>
@@ -868,7 +869,7 @@ export default function SuratLocationClient({ faqs }: Props) {
                     </div>
 
                     <h3 className="font-extrabold text-lg text-slate-900 group-hover:text-[#C65378] transition-colors">
-                      Will Drafting in Vesu, VIP Road &amp; Dumas Road
+                      Will Drafting Services in Vesu, VIP Road &amp; Dumas Road
                     </h3>
 
                     <div className="flex flex-wrap gap-1.5 text-[11px] text-slate-600">
@@ -879,8 +880,7 @@ export default function SuratLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Vesu and VIP Road represent Surat&apos;s most sought-after luxury residential and high-net-worth business addresses.
-                      Our Will drafts specifically address high-value penthouses, undivided land share (UDL) in multi-tier gated societies, mutual fund portfolios, and succession of family private limited companies.
+                      Our specialized <strong>Will drafting services in Vesu, VIP Road &amp; Dumas Road</strong> represent Surat&apos;s most sought-after luxury residential and high-net-worth business addresses. Our Will drafts specifically address high-value penthouses, undivided land share (UDL) in multi-tier gated societies, mutual fund portfolios, and succession of family private limited companies.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -899,6 +899,7 @@ export default function SuratLocationClient({ faqs }: Props) {
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
+                      aria-label="Will Drafting Services in Vesu and VIP Road"
                       className="inline-flex items-center gap-1.5 text-xs font-bold text-[#C65378] hover:text-[#a13c5d] group-hover:translate-x-0.5 transition-all"
                     >
                       <span>Draft Vesu Will</span>
@@ -921,7 +922,7 @@ export default function SuratLocationClient({ faqs }: Props) {
                     </div>
 
                     <h3 className="font-extrabold text-lg text-slate-900 group-hover:text-[#C65378] transition-colors">
-                      Will Drafting in Varachha, Katargam &amp; Mini Bazar
+                      Will Drafting Services in Varachha, Katargam &amp; Mini Bazar
                     </h3>
 
                     <div className="flex flex-wrap gap-1.5 text-[11px] text-slate-600">
@@ -932,8 +933,7 @@ export default function SuratLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      The pulsing heart of India&apos;s diamond cutting, polishing, and merchant trade.
-                      We prepare specialized business succession Wills addressing diamond firm partnership shares, inventory transfer protocol, safe vault bequests, and smooth leadership transition for Patel family enterprises.
+                      Through dedicated <strong>Will drafting services in Varachha, Katargam &amp; Mini Bazar</strong>, we cater to the pulsing heart of India&apos;s diamond cutting, polishing, and merchant trade. We prepare specialized business succession Wills addressing diamond firm partnership shares, inventory transfer protocol, safe vault bequests, and smooth leadership transition for Patel family enterprises.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -952,6 +952,7 @@ export default function SuratLocationClient({ faqs }: Props) {
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
+                      aria-label="Will Drafting Services in Varachha and Katargam"
                       className="inline-flex items-center gap-1.5 text-xs font-bold text-[#C65378] hover:text-[#a13c5d] group-hover:translate-x-0.5 transition-all"
                     >
                       <span>Draft Varachha Will</span>
@@ -974,7 +975,7 @@ export default function SuratLocationClient({ faqs }: Props) {
                     </div>
 
                     <h3 className="font-extrabold text-lg text-slate-900 group-hover:text-[#C65378] transition-colors">
-                      Will Drafting in Ring Road, Salabatpura &amp; Begampura
+                      Will Drafting Services in Ring Road, Salabatpura &amp; Begampura
                     </h3>
 
                     <div className="flex flex-wrap gap-1.5 text-[11px] text-slate-600">
@@ -985,7 +986,7 @@ export default function SuratLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Surat is India&apos;s synthetic textile capital. Our advocates structure estate plans covering commercial shop ownership, long-term market tenancies (pagdi), trade receivables, weaving mill partnership equities, and HUF business partitioning.
+                      Avail tailored <strong>Will drafting services in Ring Road, Salabatpura &amp; Begampura</strong> across India&apos;s synthetic textile capital. Our advocates structure estate plans covering commercial shop ownership, long-term market tenancies (pagdi), trade receivables, weaving mill partnership equities, and HUF business partitioning.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1004,6 +1005,7 @@ export default function SuratLocationClient({ faqs }: Props) {
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
+                      aria-label="Will Drafting Services in Ring Road Textile Markets"
                       className="inline-flex items-center gap-1.5 text-xs font-bold text-[#C65378] hover:text-[#a13c5d] group-hover:translate-x-0.5 transition-all"
                     >
                       <span>Draft Textile Estate Will</span>
@@ -1026,7 +1028,7 @@ export default function SuratLocationClient({ faqs }: Props) {
                     </div>
 
                     <h3 className="font-extrabold text-lg text-slate-900 group-hover:text-[#C65378] transition-colors">
-                      Will Drafting in Adajan, Pal &amp; Jahangirpura
+                      Will Drafting Services in Adajan, Pal &amp; Jahangirpura
                     </h3>
 
                     <div className="flex flex-wrap gap-1.5 text-[11px] text-slate-600">
@@ -1037,8 +1039,7 @@ export default function SuratLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Surat&apos;s prime western riverfront corridor features modern high-rise residential towers and cooperative housing societies.
-                      A registered Will ensures hassle-free society share certificate transfer, SMC property tax mutation, and bank deposit succession without requiring civil court succession certificates.
+                      Our expert <strong>Will drafting services in Adajan, Pal &amp; Jahangirpura</strong> cover Surat&apos;s prime western riverfront corridor featuring modern high-rise residential towers and cooperative housing societies. A registered Will ensures hassle-free society share certificate transfer, SMC property tax mutation, and bank deposit succession without requiring civil court succession certificates.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1057,6 +1058,7 @@ export default function SuratLocationClient({ faqs }: Props) {
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
+                      aria-label="Will Drafting Services in Adajan and Pal"
                       className="inline-flex items-center gap-1.5 text-xs font-bold text-[#C65378] hover:text-[#a13c5d] group-hover:translate-x-0.5 transition-all"
                     >
                       <span>Draft Adajan Will</span>
@@ -1079,7 +1081,7 @@ export default function SuratLocationClient({ faqs }: Props) {
                     </div>
 
                     <h3 className="font-extrabold text-lg text-slate-900 group-hover:text-[#C65378] transition-colors">
-                      Will Drafting in Piplod, Athwalines &amp; City Light
+                      Will Drafting Services in Piplod, Athwalines &amp; City Light
                     </h3>
 
                     <div className="flex flex-wrap gap-1.5 text-[11px] text-slate-600">
@@ -1090,8 +1092,7 @@ export default function SuratLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Piplod, Athwalines, and City Light host prominent business dynasties, high-value independent bungalows, and retail showrooms.
-                      Our advocates prepare comprehensive testamentary instruments covering commercial real estate, corporate promoter voting rights, art collections, and multi-generational trusts.
+                      We provide bespoke <strong>Will drafting services in Piplod, Athwalines &amp; City Light</strong> for prominent business dynasties, high-value independent bungalows, and retail showrooms. Our advocates prepare comprehensive testamentary instruments covering commercial real estate, corporate promoter voting rights, art collections, and multi-generational trusts.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1110,6 +1111,7 @@ export default function SuratLocationClient({ faqs }: Props) {
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
+                      aria-label="Will Drafting Services in Piplod and Athwalines"
                       className="inline-flex items-center gap-1.5 text-xs font-bold text-[#C65378] hover:text-[#a13c5d] group-hover:translate-x-0.5 transition-all"
                     >
                       <span>Draft Piplod Will</span>
@@ -1132,7 +1134,7 @@ export default function SuratLocationClient({ faqs }: Props) {
                     </div>
 
                     <h3 className="font-extrabold text-lg text-slate-900 group-hover:text-[#C65378] transition-colors">
-                      Will Drafting in Sachin GIDC &amp; Pandesara GIDC
+                      Will Drafting Services in Sachin GIDC &amp; Pandesara GIDC
                     </h3>
 
                     <div className="flex flex-wrap gap-1.5 text-[11px] text-slate-600">
@@ -1143,8 +1145,7 @@ export default function SuratLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Sachin and Pandesara house thousands of heavy manufacturing, textile processing, chemical, and engineering factories.
-                      We ensure exact compliance with Gujarat Industrial Development Corporation (GIDC) transfer bylaws, plant machinery bequests, environmental compliance transfers, and corporate succession.
+                      Our specialized <strong>Will drafting services in Sachin GIDC &amp; Pandesara GIDC</strong> serve thousands of heavy manufacturing, textile processing, chemical, and engineering factories. We ensure exact compliance with Gujarat Industrial Development Corporation (GIDC) transfer bylaws, plant machinery bequests, environmental compliance transfers, and corporate succession.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1163,6 +1164,7 @@ export default function SuratLocationClient({ faqs }: Props) {
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
+                      aria-label="Will Drafting Services in Sachin and Pandesara GIDC"
                       className="inline-flex items-center gap-1.5 text-xs font-bold text-[#C65378] hover:text-[#a13c5d] group-hover:translate-x-0.5 transition-all"
                     >
                       <span>Draft GIDC Will</span>
@@ -1185,7 +1187,7 @@ export default function SuratLocationClient({ faqs }: Props) {
                     </div>
 
                     <h3 className="font-extrabold text-lg text-slate-900 group-hover:text-[#C65378] transition-colors">
-                      Will Drafting in Althan, Bhimrad &amp; Bhatar
+                      Will Drafting Services in Althan, Bhimrad &amp; Bhatar
                     </h3>
 
                     <div className="flex flex-wrap gap-1.5 text-[11px] text-slate-600">
@@ -1196,8 +1198,7 @@ export default function SuratLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Althan and Bhimrad have emerged as prominent residential corridors featuring newly constructed multi-storey towers and commercial business centers.
-                      Our Will drafts include explicit survivorship clauses, life-interest provisions for surviving spouses, and clear beneficiary nominations across commercial and residential holdings.
+                      Through premier <strong>Will drafting services in Althan, Bhimrad &amp; Bhatar</strong>, we advise clients across newly constructed multi-storey towers and commercial business centers. Our Will drafts include explicit survivorship clauses, life-interest provisions for surviving spouses, and clear beneficiary nominations across commercial and residential holdings.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1216,6 +1217,7 @@ export default function SuratLocationClient({ faqs }: Props) {
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
+                      aria-label="Will Drafting Services in Althan and Bhimrad"
                       className="inline-flex items-center gap-1.5 text-xs font-bold text-[#C65378] hover:text-[#a13c5d] group-hover:translate-x-0.5 transition-all"
                     >
                       <span>Draft Althan Will</span>
@@ -1238,7 +1240,7 @@ export default function SuratLocationClient({ faqs }: Props) {
                     </div>
 
                     <h3 className="font-extrabold text-lg text-slate-900 group-hover:text-[#C65378] transition-colors">
-                      Will Drafting in DREAM City &amp; Surat Diamond Bourse
+                      Will Drafting Services in DREAM City &amp; Surat Diamond Bourse
                     </h3>
 
                     <div className="flex flex-wrap gap-1.5 text-[11px] text-slate-600">
@@ -1249,8 +1251,7 @@ export default function SuratLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      DREAM City houses the world&apos;s largest office complex, the Surat Diamond Bourse (SDB).
-                      We draft comprehensive corporate succession instruments for diamond merchants, covering international commercial offices, cross-border business interests (Dubai/Antwerp trade links), and multi-director governance structures.
+                      Comprehensive <strong>Will drafting services in DREAM City &amp; Surat Diamond Bourse</strong> cater to the world&apos;s largest office complex and trade nexus. We draft corporate succession instruments for diamond merchants, covering international commercial offices, cross-border business interests (Dubai/Antwerp trade links), and multi-director governance structures.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1269,6 +1270,7 @@ export default function SuratLocationClient({ faqs }: Props) {
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
+                      aria-label="Will Drafting Services in DREAM City and Surat Diamond Bourse"
                       className="inline-flex items-center gap-1.5 text-xs font-bold text-[#C65378] hover:text-[#a13c5d] group-hover:translate-x-0.5 transition-all"
                     >
                       <span>Draft SDB Bourse Will</span>

@@ -256,9 +256,9 @@ export default function PuneLocationClient({ faqs }: Props) {
                 <span>PUNE &amp; PCMC ESTATE SUCCESSION DESK</span>
               </div>
 
-              {/* Strictly 1 H1 Tag: Exactly 52 characters */}
+              {/* Strictly 1 H1 Tag: Exactly 53 characters */}
               <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight leading-tight text-white drop-shadow-xs">
-                Online Will Drafting &amp; Legal Estate Planning in Pune
+                Will Drafting Services in Pune: Online Legal Drafting
               </h1>
 
               <p className="text-base sm:text-lg text-slate-200 leading-relaxed font-normal max-w-2xl">
@@ -855,13 +855,13 @@ export default function PuneLocationClient({ faqs }: Props) {
               <div className="space-y-2">
                 <div className="flex items-center gap-2 text-xs font-black uppercase tracking-wider text-[#C65378]">
                   <Building className="w-4 h-4 text-[#C65378]" />
-                  <span>LOCAL COVERAGE</span>
+                  <span>LOCAL AREA COVERAGE &amp; SRO HUBS</span>
                 </div>
                 <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  5. Pune Neighborhoods &amp; IT Corridor Will Services
+                  5. Area-Wise Will Drafting Services Across Pune Localities
                 </h2>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Our estate planning advocates provide end-to-end legal support tailored to the specific property dynamics of Pune and Pimpri-Chinchwad:
+                  Looking for legally verified <strong>Will drafting services in Hinjewadi, Kothrud, Baner, or Kharadi</strong>? Our senior estate planning advocates provide end-to-end legal drafting, IGR Maharashtra Sarita portal slot booking, and Sub-Registrar accompaniment tailored to the specific property dynamics of Pune and Pimpri-Chinchwad:
                 </p>
               </div>
 
@@ -880,7 +880,7 @@ export default function PuneLocationClient({ faqs }: Props) {
                     </div>
 
                     <h3 className="font-extrabold text-lg text-slate-900 group-hover:text-[#C65378] transition-colors">
-                      Will Drafting in Kothrud, Karve Nagar &amp; Erandwane
+                      Will Drafting Services in Kothrud, Karve Nagar &amp; Erandwane
                     </h3>
 
                     <div className="flex flex-wrap gap-1.5 text-[11px] text-slate-600">
@@ -892,7 +892,7 @@ export default function PuneLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Home to established Maharashtrian families, senior citizens, and longstanding cooperative societies. We structure comprehensive Wills for ancestral wadas, independent bungalows, society flats, and bank fixed deposits, preventing bitter inheritance conflicts.
+                      Specialized <strong>Will drafting services in Kothrud</strong>, Karve Nagar, and Erandwane for ancestral wadas, independent bungalows, cooperative housing society flats, and bank fixed deposits, preventing bitter inheritance conflicts among legal heirs.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -911,6 +911,7 @@ export default function PuneLocationClient({ faqs }: Props) {
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
+                      aria-label="Will Drafting Services in Kothrud"
                       className="inline-flex items-center gap-1.5 text-xs font-bold text-[#C65378] hover:text-[#a13c5d] group-hover:translate-x-0.5 transition-all"
                     >
                       <span>Draft Kothrud Will</span>
@@ -933,7 +934,7 @@ export default function PuneLocationClient({ faqs }: Props) {
                     </div>
 
                     <h3 className="font-extrabold text-lg text-slate-900 group-hover:text-[#C65378] transition-colors">
-                      Will Drafting in Baner, Balewadi &amp; Aundh
+                      Will Drafting Services in Baner, Balewadi &amp; Aundh
                     </h3>
 
                     <div className="flex flex-wrap gap-1.5 text-[11px] text-slate-600">
@@ -945,7 +946,7 @@ export default function PuneLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Features luxury gated enclaves, high-rise penthouses, and executive properties. Our estate lawyers incorporate specific bequest clauses for company equities, mutual fund portfolios, commercial showrooms, and seamless PMC property tax mutation.
+                      Premium <strong>Will drafting services in Baner</strong>, Balewadi, and Aundh for luxury gated enclaves, high-rise penthouses, company equities, mutual fund portfolios, and seamless PMC property tax mutation.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -964,6 +965,7 @@ export default function PuneLocationClient({ faqs }: Props) {
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
+                      aria-label="Will Drafting Services in Baner"
                       className="inline-flex items-center gap-1.5 text-xs font-bold text-[#C65378] hover:text-[#a13c5d] group-hover:translate-x-0.5 transition-all"
                     >
                       <span>Draft Baner Will</span>
@@ -986,7 +988,7 @@ export default function PuneLocationClient({ faqs }: Props) {
                     </div>
 
                     <h3 className="font-extrabold text-lg text-slate-900 group-hover:text-[#C65378] transition-colors">
-                      Will Drafting in Hinjewadi, Wakad &amp; Tathawade
+                      Will Drafting Services in Hinjewadi, Wakad &amp; Tathawade
                     </h3>
 
                     <div className="flex flex-wrap gap-1.5 text-[11px] text-slate-600">
@@ -997,7 +999,7 @@ export default function PuneLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Tailored for tech architects, IT engineering leaders, and young homeowners. We draft robust testamentary clauses covering US equity holdings (RSUs, ESOPs), crypto assets, demat investments, and mortgaged apartment transmission with complete banking clarity.
+                      Specialized <strong>Will drafting services in Hinjewadi</strong>, Wakad, and Tathawade tailored for tech architects, IT engineering leaders, and young homeowners. Covers US equity holdings (RSUs, ESOPs), crypto assets, demat investments, and mortgaged flats.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1016,6 +1018,7 @@ export default function PuneLocationClient({ faqs }: Props) {
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
+                      aria-label="Will Drafting Services in Hinjewadi"
                       className="inline-flex items-center gap-1.5 text-xs font-bold text-[#C65378] hover:text-[#a13c5d] group-hover:translate-x-0.5 transition-all"
                     >
                       <span>Draft Hinjewadi Will</span>
@@ -1038,7 +1041,7 @@ export default function PuneLocationClient({ faqs }: Props) {
                     </div>
 
                     <h3 className="font-extrabold text-lg text-slate-900 group-hover:text-[#C65378] transition-colors">
-                      Will Drafting in Kharadi, Viman Nagar &amp; Kalyani Nagar
+                      Will Drafting Services in Kharadi, Viman Nagar &amp; Kalyani Nagar
                     </h3>
 
                     <div className="flex flex-wrap gap-1.5 text-[11px] text-slate-600">
@@ -1050,7 +1053,7 @@ export default function PuneLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Centers on upscale condominium developments, multinational corporate hubs, and NRI properties. Our succession advocates craft bilingual Wills ensuring smooth transfer of cooperative housing society share certificates and foreign bank accounts.
+                      Dedicated <strong>Will drafting services in Kharadi</strong>, Viman Nagar, and Kalyani Nagar for upscale condominiums, MNC leaders, and NRI properties. Includes bilingual Marathi-English drafts and CHS share certificate transfers.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1069,6 +1072,7 @@ export default function PuneLocationClient({ faqs }: Props) {
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
+                      aria-label="Will Drafting Services in Kharadi"
                       className="inline-flex items-center gap-1.5 text-xs font-bold text-[#C65378] hover:text-[#a13c5d] group-hover:translate-x-0.5 transition-all"
                     >
                       <span>Draft Kharadi Will</span>
@@ -1091,7 +1095,7 @@ export default function PuneLocationClient({ faqs }: Props) {
                     </div>
 
                     <h3 className="font-extrabold text-lg text-slate-900 group-hover:text-[#C65378] transition-colors">
-                      Will Drafting in Hadapsar, Magarpatta &amp; Amanora
+                      Will Drafting Services in Hadapsar, Magarpatta &amp; Amanora
                     </h3>
 
                     <div className="flex flex-wrap gap-1.5 text-[11px] text-slate-600">
@@ -1103,7 +1107,7 @@ export default function PuneLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Major planned integrated townships and commercial districts. We assist flat owners with Model Bye-Law 30 cooperative society compliance, ensuring the named legatee acquires true legal ownership over the society share certificate rather than a mere nominee.
+                      Comprehensive <strong>Will drafting services in Hadapsar</strong>, Magarpatta City, and Amanora Park Town. Ensures Model Bye-Law 30 cooperative society compliance, guaranteeing true ownership transfer rather than a nominal nominee claim.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1122,6 +1126,7 @@ export default function PuneLocationClient({ faqs }: Props) {
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
+                      aria-label="Will Drafting Services in Hadapsar"
                       className="inline-flex items-center gap-1.5 text-xs font-bold text-[#C65378] hover:text-[#a13c5d] group-hover:translate-x-0.5 transition-all"
                     >
                       <span>Draft Hadapsar Will</span>
@@ -1144,7 +1149,7 @@ export default function PuneLocationClient({ faqs }: Props) {
                     </div>
 
                     <h3 className="font-extrabold text-lg text-slate-900 group-hover:text-[#C65378] transition-colors">
-                      Will Drafting in Shivaji Nagar, Deccan &amp; Pune Camp
+                      Will Drafting Services in Shivaji Nagar, Deccan &amp; Pune Camp
                     </h3>
 
                     <div className="flex flex-wrap gap-1.5 text-[11px] text-slate-600">
@@ -1156,7 +1161,7 @@ export default function PuneLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      High-value heritage wadas, commercial establishments, and distinguished business families. Our senior advocates design multi-tier testamentary trusts and business succession clauses to prevent complex property litigations across generations.
+                      Heritage <strong>Will drafting services in Shivaji Nagar</strong>, Deccan Gymkhana, and Pune Camp for high-value ancestral wadas, commercial buildings, multi-tier testamentary trusts, and business succession safeguarding.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1175,6 +1180,7 @@ export default function PuneLocationClient({ faqs }: Props) {
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
+                      aria-label="Will Drafting Services in Shivaji Nagar"
                       className="inline-flex items-center gap-1.5 text-xs font-bold text-[#C65378] hover:text-[#a13c5d] group-hover:translate-x-0.5 transition-all"
                     >
                       <span>Draft Shivaji Nagar Will</span>
@@ -1197,7 +1203,7 @@ export default function PuneLocationClient({ faqs }: Props) {
                     </div>
 
                     <h3 className="font-extrabold text-lg text-slate-900 group-hover:text-[#C65378] transition-colors">
-                      Will Drafting in Pimpri, Chinchwad &amp; Pimple Saudagar
+                      Will Drafting Services in Pimpri, Chinchwad &amp; Pimple Saudagar
                     </h3>
 
                     <div className="flex flex-wrap gap-1.5 text-[11px] text-slate-600">
@@ -1209,7 +1215,7 @@ export default function PuneLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Dynamic manufacturing, auto ancillary, and modern residential hub. We structure customized Wills separating business partnership shares, industrial plot leases, and factory capital from personal family residential apartments.
+                      Custom <strong>Will drafting services in Pimpri</strong>, Chinchwad, and Pimple Saudagar for auto ancillary entrepreneurs, MSME factory owners, and modern society apartments with clear demarcation between personal and industrial assets.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1228,6 +1234,7 @@ export default function PuneLocationClient({ faqs }: Props) {
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
+                      aria-label="Will Drafting Services in Pimpri"
                       className="inline-flex items-center gap-1.5 text-xs font-bold text-[#C65378] hover:text-[#a13c5d] group-hover:translate-x-0.5 transition-all"
                     >
                       <span>Draft PCMC Will</span>
@@ -1250,7 +1257,7 @@ export default function PuneLocationClient({ faqs }: Props) {
                     </div>
 
                     <h3 className="font-extrabold text-lg text-slate-900 group-hover:text-[#C65378] transition-colors">
-                      Will Drafting in Bibwewadi, Sahakar Nagar &amp; Sinhagad Road
+                      Will Drafting Services in Bibwewadi, Sahakar Nagar &amp; Sinhagad Road
                     </h3>
 
                     <div className="flex flex-wrap gap-1.5 text-[11px] text-slate-600">
@@ -1262,7 +1269,7 @@ export default function PuneLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Densely settled residential neighborhoods and commercial trading families. We draft clear, dispute-free Wills with specific asset bequests for residential flats, commercial shops in Market Yard, and family gold jewellery collections.
+                      Trusted <strong>Will drafting services in Bibwewadi</strong>, Sahakar Nagar, and Sinhagad Road for dense residential societies, Market Yard traders, and ancestral family jewellery bequests.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1281,6 +1288,7 @@ export default function PuneLocationClient({ faqs }: Props) {
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
+                      aria-label="Will Drafting Services in Bibwewadi"
                       className="inline-flex items-center gap-1.5 text-xs font-bold text-[#C65378] hover:text-[#a13c5d] group-hover:translate-x-0.5 transition-all"
                     >
                       <span>Draft Bibwewadi Will</span>

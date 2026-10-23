@@ -234,9 +234,9 @@ export default function LucknowLocationClient({ faqs }: Props) {
                 <span>LUCKNOW &amp; UTTAR PRADESH ESTATE SUCCESSION DESK</span>
               </div>
 
-              {/* Strictly 1 H1 Tag: Length 50 characters */}
+              {/* Strictly 1 H1 Tag: Length 56 characters */}
               <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight leading-tight text-white drop-shadow-xs">
-                Online Will Drafting &amp; Asset Protection in Lucknow
+                Will Drafting Services in Lucknow: Online Legal Drafting
               </h1>
 
               <p className="text-base sm:text-lg text-slate-200 leading-relaxed font-normal max-w-2xl">
@@ -856,10 +856,10 @@ export default function LucknowLocationClient({ faqs }: Props) {
                   <span>LOCAL AREA COVERAGE &amp; SRO HUBS</span>
                 </div>
                 <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  7. Locality-Wise Will Drafting Across Lucknow Areas
+                  7. Locality-Wise Will Drafting Services Across Lucknow Areas
                 </h2>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Property categories across Lucknow range from LDA freehold plots and UPHDB Awas Vikas sectors to luxury condominiums along Shaheed Path, ancestral havelis in Old Lucknow, and mango farmlands in Malihabad.
+                  Looking for legally verified <strong>Will drafting services in Gomti Nagar, Aliganj, Hazratganj, or Indira Nagar</strong>? Property categories across Lucknow range from LDA freehold plots and UPHDB Awas Vikas sectors to luxury condominiums along Shaheed Path, ancestral havelis in Old Lucknow, and mango farmlands in Malihabad.
                   Our senior advocates provide customized legal drafting, UP IGRSUP portal slot booking, and Sub-Registrar accompaniment tailored to your locality:
                 </p>
               </div>
@@ -879,7 +879,7 @@ export default function LucknowLocationClient({ faqs }: Props) {
                     </div>
 
                     <h3 className="font-extrabold text-lg text-slate-900 group-hover:text-[#C65378] transition-colors">
-                      Will Drafting in Aliganj &amp; Mahanagar
+                      Will Drafting Services in Aliganj &amp; Mahanagar
                     </h3>
 
                     <div className="flex flex-wrap gap-1.5 text-[11px] text-slate-600">
@@ -891,7 +891,7 @@ export default function LucknowLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Aliganj and Mahanagar feature prime LDA freehold plots, duplex homes, and shops in Kapoorthala. Probate is not compulsory in Uttar Pradesh. A registered Will gives your heirs full authority to update property records before the LDA and Lucknow Nagar Nigam without court delays.
+                      Specialized <strong>Will drafting services in Aliganj</strong> and Mahanagar for prime LDA freehold plots, duplex homes, and commercial shops in Kapoorthala. Probate is optional in UP—a registered Will gives heirs undisputed title mutation before LDA and Lucknow Nagar Nigam.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -910,6 +910,7 @@ export default function LucknowLocationClient({ faqs }: Props) {
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
+                      aria-label="Will Drafting Services in Aliganj"
                       className="inline-flex items-center gap-1.5 text-xs font-bold text-[#C65378] hover:text-[#a13c5d] group-hover:translate-x-0.5 transition-all"
                     >
                       <span>Draft Aliganj Will</span>
@@ -932,7 +933,7 @@ export default function LucknowLocationClient({ faqs }: Props) {
                     </div>
 
                     <h3 className="font-extrabold text-lg text-slate-900 group-hover:text-[#C65378] transition-colors">
-                      Will Drafting in Gomti Nagar &amp; Extension
+                      Will Drafting Services in Gomti Nagar &amp; Extension
                     </h3>
 
                     <div className="flex flex-wrap gap-1.5 text-[11px] text-slate-600">
@@ -944,7 +945,7 @@ export default function LucknowLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Gomti Nagar is a prime planned sector with LDA villas, modern flats, and commercial offices. Our lawyer drafts include clear clauses for LDA lease conversion, flat division, and NRI property protection.
+                      Dedicated <strong>Will drafting services in Gomti Nagar</strong> and Gomti Nagar Extension for planned LDA villas, multi-storey luxury flats, and Vibhuti Khand IT offices. Includes precise clauses for LDA leasehold conversion, flat distribution, and NRI asset succession.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -963,6 +964,7 @@ export default function LucknowLocationClient({ faqs }: Props) {
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
+                      aria-label="Will Drafting Services in Gomti Nagar"
                       className="inline-flex items-center gap-1.5 text-xs font-bold text-[#C65378] hover:text-[#a13c5d] group-hover:translate-x-0.5 transition-all"
                     >
                       <span>Draft Gomti Nagar Will</span>
@@ -985,7 +987,7 @@ export default function LucknowLocationClient({ faqs }: Props) {
                     </div>
 
                     <h3 className="font-extrabold text-lg text-slate-900 group-hover:text-[#C65378] transition-colors">
-                      Will Drafting in Hazratganj &amp; Civil Lines
+                      Will Drafting Services in Hazratganj &amp; Civil Lines
                     </h3>
 
                     <div className="flex flex-wrap gap-1.5 text-[11px] text-slate-600">
@@ -997,7 +999,7 @@ export default function LucknowLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Hazratganj features heritage houses, freehold land, and shops on MG Marg. We help families protect valuable assets through clear Wills, rental income gifts, and family share distribution.
+                      Premium <strong>Will drafting services in Hazratganj</strong> and Civil Lines for prime ancestral bungalows, heritage freehold parcels, and retail establishments along MG Marg. Tailored for rental cashflow bequests and dispute-proof family distributions.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1016,6 +1018,7 @@ export default function LucknowLocationClient({ faqs }: Props) {
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
+                      aria-label="Will Drafting Services in Hazratganj"
                       className="inline-flex items-center gap-1.5 text-xs font-bold text-[#C65378] hover:text-[#a13c5d] group-hover:translate-x-0.5 transition-all"
                     >
                       <span>Draft Hazratganj Will</span>
@@ -1038,7 +1041,7 @@ export default function LucknowLocationClient({ faqs }: Props) {
                     </div>
 
                     <h3 className="font-extrabold text-lg text-slate-900 group-hover:text-[#C65378] transition-colors">
-                      Will Drafting in Indira Nagar &amp; Kalyanpur
+                      Will Drafting Services in Indira Nagar &amp; Kalyanpur
                     </h3>
 
                     <div className="flex flex-wrap gap-1.5 text-[11px] text-slate-600">
@@ -1050,7 +1053,7 @@ export default function LucknowLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Indira Nagar is a large residential colony planned by the UP Housing Board (UPHDB). Our Wills cover house name transfers, bank deposits, and mutual funds, preventing family disputes.
+                      Expert <strong>Will drafting services in Indira Nagar</strong> and Kalyanpur for Asia&apos;s largest housing colony under UP Housing Board (UPHDB). Covers smooth house mutation, bank FD transmissions, and equity demat porting.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1069,6 +1072,7 @@ export default function LucknowLocationClient({ faqs }: Props) {
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
+                      aria-label="Will Drafting Services in Indira Nagar"
                       className="inline-flex items-center gap-1.5 text-xs font-bold text-[#C65378] hover:text-[#a13c5d] group-hover:translate-x-0.5 transition-all"
                     >
                       <span>Draft Indira Nagar Will</span>
@@ -1091,7 +1095,7 @@ export default function LucknowLocationClient({ faqs }: Props) {
                     </div>
 
                     <h3 className="font-extrabold text-lg text-slate-900 group-hover:text-[#C65378] transition-colors">
-                      Will Drafting in Sushant Golf City &amp; Vrindavan
+                      Will Drafting Services in Sushant Golf City &amp; Vrindavan
                     </h3>
 
                     <div className="flex flex-wrap gap-1.5 text-[11px] text-slate-600">
@@ -1103,7 +1107,7 @@ export default function LucknowLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Sushant Golf City and Vrindavan Yojna feature modern villas, plots, and apartments along Shaheed Path. Our lawyers structure clear clauses for builder transfers, joint assets, and stock portfolio succession.
+                      Modern <strong>Will drafting services in Sushant Golf City</strong> and Vrindavan Yojna along Amar Shaheed Path. Structured for gated township villas, high-rise luxury apartments, builder sub-lease transfers, and joint family holdings.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1122,6 +1126,7 @@ export default function LucknowLocationClient({ faqs }: Props) {
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
+                      aria-label="Will Drafting Services in Sushant Golf City"
                       className="inline-flex items-center gap-1.5 text-xs font-bold text-[#C65378] hover:text-[#a13c5d] group-hover:translate-x-0.5 transition-all"
                     >
                       <span>Draft Golf City Will</span>
@@ -1144,7 +1149,7 @@ export default function LucknowLocationClient({ faqs }: Props) {
                     </div>
 
                     <h3 className="font-extrabold text-lg text-slate-900 group-hover:text-[#C65378] transition-colors">
-                      Will Drafting in Jankipuram &amp; Sitapur Road
+                      Will Drafting Services in Jankipuram &amp; Sitapur Road
                     </h3>
 
                     <div className="flex flex-wrap gap-1.5 text-[11px] text-slate-600">
@@ -1156,7 +1161,7 @@ export default function LucknowLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Jankipuram has planned LDA schemes, builder floors, and private homes. Our Wills ensure clear property division across LDA plots and rural lands, avoiding court disputes.
+                      Professional <strong>Will drafting services in Jankipuram</strong> and Sitapur Road corridor for LDA planned sectors, builder floors, and institutional residential pockets with clear title transmission safeguards.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1175,6 +1180,7 @@ export default function LucknowLocationClient({ faqs }: Props) {
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
+                      aria-label="Will Drafting Services in Jankipuram"
                       className="inline-flex items-center gap-1.5 text-xs font-bold text-[#C65378] hover:text-[#a13c5d] group-hover:translate-x-0.5 transition-all"
                     >
                       <span>Draft Jankipuram Will</span>
@@ -1197,7 +1203,7 @@ export default function LucknowLocationClient({ faqs }: Props) {
                     </div>
 
                     <h3 className="font-extrabold text-lg text-slate-900 group-hover:text-[#C65378] transition-colors">
-                      Will Drafting in Ashiyana &amp; Kanpur Road
+                      Will Drafting Services in Ashiyana &amp; Kanpur Road
                     </h3>
 
                     <div className="flex flex-wrap gap-1.5 text-[11px] text-slate-600">
@@ -1209,7 +1215,7 @@ export default function LucknowLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Ashiyana is home to many defense families and retired officers. Our Wills cover builder floors, shops in Alambagh, and plots with clear executor appointment and easy asset transfer.
+                      Trusted <strong>Will drafting services in Ashiyana</strong> and Kanpur Road for defense personnel, retired civil officers, and commercial property owners across Alambagh and Singar Nagar.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1228,6 +1234,7 @@ export default function LucknowLocationClient({ faqs }: Props) {
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
+                      aria-label="Will Drafting Services in Ashiyana"
                       className="inline-flex items-center gap-1.5 text-xs font-bold text-[#C65378] hover:text-[#a13c5d] group-hover:translate-x-0.5 transition-all"
                     >
                       <span>Draft Ashiyana Will</span>
@@ -1250,7 +1257,7 @@ export default function LucknowLocationClient({ faqs }: Props) {
                     </div>
 
                     <h3 className="font-extrabold text-lg text-slate-900 group-hover:text-[#C65378] transition-colors">
-                      Will Drafting in Chowk, Aminabad &amp; Malihabad
+                      Will Drafting Services in Chowk, Aminabad &amp; Malihabad
                     </h3>
 
                     <div className="flex flex-wrap gap-1.5 text-[11px] text-slate-600">
@@ -1262,7 +1269,7 @@ export default function LucknowLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Old Lucknow features family havelis and shops alongside mango orchards in Malihabad. Our drafts resolve family shares under Hindu law and comply with Section 107 of the UP Revenue Code for farmland transfer.
+                      Heritage <strong>Will drafting services in Chowk</strong>, Aminabad, and Malihabad for joint ancestral havelis, retail trading shops, and agricultural mango orchards compliant with UP Revenue Code Section 107.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1281,6 +1288,7 @@ export default function LucknowLocationClient({ faqs }: Props) {
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
+                      aria-label="Will Drafting Services in Chowk"
                       className="inline-flex items-center gap-1.5 text-xs font-bold text-[#C65378] hover:text-[#a13c5d] group-hover:translate-x-0.5 transition-all"
                     >
                       <span>Draft Chowk / Malihabad Will</span>

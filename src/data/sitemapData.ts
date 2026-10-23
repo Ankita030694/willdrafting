@@ -18,6 +18,46 @@ export interface SitemapPageItem {
  */
 export const staticPages: SitemapPageItem[] = [
   {
+    title: "Will Drafting in Coimbatore: Online Will Making Guide",
+    href: "/locations/coimbatore",
+    category: "Locations",
+    date: "23-10-2026",
+    changefreq: "weekly",
+    priority: 1.0,
+  },
+  {
+    title: "Will Drafting in Patna: Online Will Registration Guide",
+    href: "/locations/patna",
+    category: "Locations",
+    date: "23-10-2026",
+    changefreq: "weekly",
+    priority: 1.0,
+  },
+  {
+    title: "Will Drafting in Bhopal: Online Will & Asset Planning",
+    href: "/locations/bhopal",
+    category: "Locations",
+    date: "23-10-2026",
+    changefreq: "weekly",
+    priority: 1.0,
+  },
+  {
+    title: "Will Drafting in Nagpur: Legal Online Will Making Help",
+    href: "/locations/nagpur",
+    category: "Locations",
+    date: "23-10-2026",
+    changefreq: "weekly",
+    priority: 1.0,
+  },
+  {
+    title: "Will Drafting in Kochi: Online Will & NRI Estate Guide",
+    href: "/locations/kochi",
+    category: "Locations",
+    date: "23-10-2026",
+    changefreq: "weekly",
+    priority: 1.0,
+  },
+  {
     title: "Will Drafting in Indore: Online Will & Succession Help",
     href: "/locations/indore",
     category: "Locations",

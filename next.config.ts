@@ -18,6 +18,31 @@ const nextConfig: NextConfig = {
   async redirects() {
     return [
       {
+        source: "/locations/will-drafting-in-coimbatore",
+        destination: "/locations/coimbatore",
+        permanent: true,
+      },
+      {
+        source: "/locations/will-drafting-in-patna",
+        destination: "/locations/patna",
+        permanent: true,
+      },
+      {
+        source: "/locations/will-drafting-in-bhopal",
+        destination: "/locations/bhopal",
+        permanent: true,
+      },
+      {
+        source: "/locations/will-drafting-in-nagpur",
+        destination: "/locations/nagpur",
+        permanent: true,
+      },
+      {
+        source: "/locations/will-drafting-in-kochi",
+        destination: "/locations/kochi",
+        permanent: true,
+      },
+      {
         source: "/locations/will-drafting-in-indore",
         destination: "/locations/indore",
         permanent: true,

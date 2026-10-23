@@ -253,9 +253,9 @@ export default function HyderabadLocationClient({ faqs }: Props) {
                 <span>HYDERABAD ESTATE SUCCESSION DESK</span>
               </div>
 
-              {/* Strictly 1 H1 Tag: Length 57 characters */}
+              {/* Strictly 1 H1 Tag: Length 58 characters */}
               <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight leading-tight text-white drop-shadow-xs">
-                Online Will Drafting &amp; Property Registration in Hyderabad
+                Will Drafting Services in Hyderabad: Online Legal Drafting
               </h1>
 
               <p className="text-base sm:text-lg text-slate-200 leading-relaxed font-normal max-w-2xl">
@@ -770,10 +770,10 @@ export default function HyderabadLocationClient({ faqs }: Props) {
                   <span>LOCAL AREA COVERAGE &amp; SRO HUBS</span>
                 </div>
                 <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  5. Area-Wise Will Drafting Across Hyderabad Regions
+                  5. Area-Wise Will Drafting Services Across Hyderabad Regions
                 </h2>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Properties across Greater Hyderabad range from luxury gated community villas in Kokapet and Tellapur to high-rise IT apartments in HITEC City, commercial prime plots in Banjara Hills, and cantonment residences in Secunderabad.
+                  Looking for legally verified <strong>Will drafting services in Banjara Hills, HITEC City, Gachibowli, or Secunderabad</strong>? Properties across Greater Hyderabad range from luxury gated community villas in Kokapet and Tellapur to high-rise IT apartments in HITEC City, commercial prime plots in Banjara Hills, and cantonment residences in Secunderabad.
                   Our senior advocates provide comprehensive legal drafting, IGRS slot booking, and Sub-Registrar accompaniment across all key micro-markets:
                 </p>
               </div>
@@ -793,7 +793,7 @@ export default function HyderabadLocationClient({ faqs }: Props) {
                     </div>
 
                     <h3 className="font-extrabold text-lg text-slate-900 group-hover:text-[#C65378] transition-colors">
-                      Will Drafting in Banjara Hills &amp; Jubilee Hills
+                      Will Drafting Services in Banjara Hills &amp; Jubilee Hills
                     </h3>
 
                     <div className="flex flex-wrap gap-1.5 text-[11px] text-slate-600">
@@ -804,7 +804,7 @@ export default function HyderabadLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Banjara Hills and Jubilee Hills house prominent industrial families, film personalities, and business leaders.
+                      Looking for professional <strong>Will drafting services in Banjara Hills &amp; Jubilee Hills</strong>? Banjara Hills and Jubilee Hills house prominent industrial families, film personalities, and business leaders.
                       Our advocates draft sophisticated testamentary structures covering luxury independent villas, commercial rental properties, family business shareholding, and private trust bequests.
                     </p>
 
@@ -824,6 +824,7 @@ export default function HyderabadLocationClient({ faqs }: Props) {
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
+                      aria-label="Will Drafting Services in Banjara Hills &amp; Jubilee Hills"
                       className="inline-flex items-center gap-1.5 text-xs font-bold text-[#C65378] hover:text-[#a13c5d] group-hover:translate-x-0.5 transition-all"
                     >
                       <span>Draft Banjara Hills Will</span>
@@ -846,7 +847,7 @@ export default function HyderabadLocationClient({ faqs }: Props) {
                     </div>
 
                     <h3 className="font-extrabold text-lg text-slate-900 group-hover:text-[#C65378] transition-colors">
-                      Will Drafting in HITEC City &amp; Gachibowli
+                      Will Drafting Services in HITEC City &amp; Gachibowli
                     </h3>
 
                     <div className="flex flex-wrap gap-1.5 text-[11px] text-slate-600">
@@ -857,7 +858,7 @@ export default function HyderabadLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Cyberabad represents software professionals, tech entrepreneurs, and corporate executives.
+                      Get specialized <strong>Will drafting services in HITEC City &amp; Gachibowli</strong>. Cyberabad represents software professionals, tech entrepreneurs, and corporate executives.
                       Wills for IT professionals incorporate comprehensive global asset clauses: US stocks, vested RSUs (Microsoft, Google, Oracle), Indian mutual funds, Demat accounts, and luxury gated community flats.
                     </p>
 
@@ -877,6 +878,7 @@ export default function HyderabadLocationClient({ faqs }: Props) {
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
+                      aria-label="Will Drafting Services in HITEC City &amp; Gachibowli"
                       className="inline-flex items-center gap-1.5 text-xs font-bold text-[#C65378] hover:text-[#a13c5d] group-hover:translate-x-0.5 transition-all"
                     >
                       <span>Draft Gachibowli Will</span>
@@ -899,7 +901,7 @@ export default function HyderabadLocationClient({ faqs }: Props) {
                     </div>
 
                     <h3 className="font-extrabold text-lg text-slate-900 group-hover:text-[#C65378] transition-colors">
-                      Will Drafting in Kondapur, Tellapur &amp; Kokapet
+                      Will Drafting Services in Kondapur, Tellapur &amp; Kokapet
                     </h3>
 
                     <div className="flex flex-wrap gap-1.5 text-[11px] text-slate-600">
@@ -910,7 +912,7 @@ export default function HyderabadLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      West Hyderabad&apos;s luxury boom encompasses high-rise residential towers, duplex villas, and premium commercial projects.
+                      Opt for premier <strong>Will drafting services in Kondapur, Tellapur &amp; Kokapet</strong>. West Hyderabad&apos;s luxury boom encompasses high-rise residential towers, duplex villas, and premium commercial projects.
                       Our legal specialists structure unambiguous testamentary bequests that specify builder-buyer agreements, undivided share of land (UDS), and society maintenance transfers.
                     </p>
 
@@ -930,6 +932,7 @@ export default function HyderabadLocationClient({ faqs }: Props) {
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
+                      aria-label="Will Drafting Services in Kokapet &amp; Tellapur"
                       className="inline-flex items-center gap-1.5 text-xs font-bold text-[#C65378] hover:text-[#a13c5d] group-hover:translate-x-0.5 transition-all"
                     >
                       <span>Draft Kokapet Will</span>
@@ -952,7 +955,7 @@ export default function HyderabadLocationClient({ faqs }: Props) {
                     </div>
 
                     <h3 className="font-extrabold text-lg text-slate-900 group-hover:text-[#C65378] transition-colors">
-                      Will Drafting in Secunderabad &amp; Marredpally
+                      Will Drafting Services in Secunderabad &amp; Marredpally
                     </h3>
 
                     <div className="flex flex-wrap gap-1.5 text-[11px] text-slate-600">
@@ -963,7 +966,7 @@ export default function HyderabadLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Secunderabad features established independent houses, heritage bungalows, and armed forces cantonment properties.
+                      Secure expert <strong>Will drafting services in Secunderabad &amp; Marredpally</strong>. Secunderabad features established independent houses, heritage bungalows, and armed forces cantonment properties.
                       Our advocates assist senior citizens and defence veterans with Section 31 home registration visits and precise partition declarations for ancestral family estates.
                     </p>
 
@@ -983,6 +986,7 @@ export default function HyderabadLocationClient({ faqs }: Props) {
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
+                      aria-label="Will Drafting Services in Secunderabad"
                       className="inline-flex items-center gap-1.5 text-xs font-bold text-[#C65378] hover:text-[#a13c5d] group-hover:translate-x-0.5 transition-all"
                     >
                       <span>Draft Secunderabad Will</span>
@@ -1005,7 +1009,7 @@ export default function HyderabadLocationClient({ faqs }: Props) {
                     </div>
 
                     <h3 className="font-extrabold text-lg text-slate-900 group-hover:text-[#C65378] transition-colors">
-                      Will Drafting in Kukatpally &amp; Miyapur
+                      Will Drafting Services in Kukatpally &amp; Miyapur
                     </h3>
 
                     <div className="flex flex-wrap gap-1.5 text-[11px] text-slate-600">
@@ -1016,7 +1020,7 @@ export default function HyderabadLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      KPHB and surrounding suburbs represent massive residential clusters of double-income families and Telugu business owners.
+                      Comprehensive <strong>Will drafting services in Kukatpally &amp; Miyapur</strong>. KPHB and surrounding suburbs represent massive residential clusters of double-income families and Telugu business owners.
                       We ensure smooth testamentary planning for residential apartments, independent builder floors, commercial retail units, and bank locker contents.
                     </p>
 
@@ -1036,6 +1040,7 @@ export default function HyderabadLocationClient({ faqs }: Props) {
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
+                      aria-label="Will Drafting Services in Kukatpally &amp; Miyapur"
                       className="inline-flex items-center gap-1.5 text-xs font-bold text-[#C65378] hover:text-[#a13c5d] group-hover:translate-x-0.5 transition-all"
                     >
                       <span>Draft Kukatpally Will</span>
@@ -1058,7 +1063,7 @@ export default function HyderabadLocationClient({ faqs }: Props) {
                     </div>
 
                     <h3 className="font-extrabold text-lg text-slate-900 group-hover:text-[#C65378] transition-colors">
-                      Will Drafting in Dilsukhnagar &amp; LB Nagar
+                      Will Drafting Services in Dilsukhnagar &amp; LB Nagar
                     </h3>
 
                     <div className="flex flex-wrap gap-1.5 text-[11px] text-slate-600">
@@ -1069,7 +1074,7 @@ export default function HyderabadLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      East Hyderabad features longstanding family residences, commercial markets, and plotting ventures.
+                      Protect your family assets with <strong>Will drafting services in Dilsukhnagar &amp; LB Nagar</strong>. East Hyderabad features longstanding family residences, commercial markets, and plotting ventures.
                       Drafting a registered Will clarifies coparcenary rights among multiple siblings, demarcates self-acquired assets, and prevents property disputes across generations.
                     </p>
 
@@ -1089,6 +1094,7 @@ export default function HyderabadLocationClient({ faqs }: Props) {
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
+                      aria-label="Will Drafting Services in Dilsukhnagar &amp; LB Nagar"
                       className="inline-flex items-center gap-1.5 text-xs font-bold text-[#C65378] hover:text-[#a13c5d] group-hover:translate-x-0.5 transition-all"
                     >
                       <span>Draft Dilsukhnagar Will</span>

@@ -241,9 +241,9 @@ export default function ChandigarhLocationClient({ faqs }: Props) {
                 <span>CHANDIGARH TRICITY SUCCESSION DESK</span>
               </div>
 
-              {/* Strictly 1 H1 Tag: Length 52 characters */}
+              {/* Strictly 1 H1 Tag: Length 59 characters */}
               <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight leading-tight text-white drop-shadow-xs">
-                Online Will Drafting &amp; Estate Planning in Chandigarh
+                Will Drafting Services in Chandigarh: Online Legal Drafting
               </h1>
 
               <p className="text-base sm:text-lg text-slate-200 leading-relaxed font-normal max-w-2xl">
@@ -829,13 +829,14 @@ export default function ChandigarhLocationClient({ faqs }: Props) {
                   <MapPin className="w-4 h-4 text-[#C65378]" />
                   <span>LOCAL AREA COVERAGE &amp; SRO HUBS</span>
                 </div>
-                {/* Length: 54 characters */}
+                {/* Length: 67 characters */}
                 <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  5. Area-Wise Will Drafting Across Chandigarh &amp; Tricity
+                  5. Area-Wise Will Drafting Services Across Chandigarh &amp; Tricity Localities
                 </h2>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Property configurations in the Tricity range from heritage kanal kothis and CHB residential flats to GMADA plots in Mohali and HSVP builder floors in Panchkula.
-                  Our advocates offer personalized legal drafting, appointment scheduling, and Sub-Registrar attendance across all local sectors:
+                  Looking for legally verified <strong>Will drafting services in Sectors 2 to 11, Sectors 32 to 37, Mohali, Panchkula, or New Chandigarh</strong>?
+                  Property configurations across the Tricity range from heritage kanal kothis and CHB residential flats to GMADA plots in Mohali and HSVP builder floors in Panchkula.
+                  Our senior advocates provide comprehensive legal drafting, custom testamentary clauses, and end-to-end Sub-Registrar accompaniment across all key sectors:
                 </p>
               </div>
 
@@ -854,7 +855,7 @@ export default function ChandigarhLocationClient({ faqs }: Props) {
                     </div>
 
                     <h3 className="font-extrabold text-lg text-slate-900 group-hover:text-[#C65378] transition-colors">
-                      Will Drafting in Sectors 2 to 11
+                      Will Drafting Services in Sectors 2 to 11 (Northern Heritage Belt)
                     </h3>
 
                     <div className="flex flex-wrap gap-1.5 text-[11px] text-slate-600">
@@ -865,9 +866,7 @@ export default function ChandigarhLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Sectors 1 to 11 host high-value independent kothis owned by business families, senior advocates, and retired bureaucrats.
-                      Due to strict architectural preservation laws and the ban on plot fragmentation, dividing houses into separate floors is prohibited.
-                      Our advocates prepare clear single-heir bequests or compensatory financial settlements to avoid costly partition litigation.
+                      Our specialized <strong>Will drafting services in Sectors 2 to 11</strong> cater to high-value independent heritage kothis owned by business families, senior advocates, and retired bureaucrats. Due to strict architectural preservation laws and the ban on plot fragmentation, dividing houses into separate floors is prohibited. Our advocates prepare clear single-heir bequests or compensatory financial settlements to avoid costly partition litigation.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -886,6 +885,7 @@ export default function ChandigarhLocationClient({ faqs }: Props) {
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
+                      aria-label="Will Drafting Services in Sectors 2 to 11"
                       className="inline-flex items-center gap-1.5 text-xs font-bold text-[#C65378] hover:text-[#a13c5d] group-hover:translate-x-0.5 transition-all"
                     >
                       <span>Draft Northern Sector Will</span>
@@ -908,7 +908,7 @@ export default function ChandigarhLocationClient({ faqs }: Props) {
                     </div>
 
                     <h3 className="font-extrabold text-lg text-slate-900 group-hover:text-[#C65378] transition-colors">
-                      Will Drafting in Sectors 32 to 37
+                      Will Drafting Services in Sectors 32 to 37 (Defense &amp; Senior Belt)
                     </h3>
 
                     <div className="flex flex-wrap gap-1.5 text-[11px] text-slate-600">
@@ -919,9 +919,7 @@ export default function ChandigarhLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Sectors 33, 34, 35, and 36 have a large population of retired military officers, doctors, and senior professionals.
-                      Our legal team arranges medical fitness certifications and home registration visits under Section 31 of the Registration Act.
-                      We ensure seamless succession for marla kothis, pension benefits, and bank locker assets.
+                      Through our professional <strong>Will drafting services in Sectors 32 to 37</strong>, we provide end-to-end estate planning for retired military officers, doctors, and senior professionals across Sectors 33, 34, 35, and 36. Our legal team arranges medical fitness certifications and home registration visits under Section 31 of the Registration Act, ensuring seamless succession for marla kothis, pension benefits, and bank locker assets.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -940,6 +938,7 @@ export default function ChandigarhLocationClient({ faqs }: Props) {
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
+                      aria-label="Will Drafting Services in Sectors 32 to 37"
                       className="inline-flex items-center gap-1.5 text-xs font-bold text-[#C65378] hover:text-[#a13c5d] group-hover:translate-x-0.5 transition-all"
                     >
                       <span>Draft Defense Veteran Will</span>
@@ -962,7 +961,7 @@ export default function ChandigarhLocationClient({ faqs }: Props) {
                     </div>
 
                     <h3 className="font-extrabold text-lg text-slate-900 group-hover:text-[#C65378] transition-colors">
-                      Will Drafting for CHB Flats (Sectors 38, 44, 49, 51 &amp; 63)
+                      Will Drafting Services for CHB Flats (Sectors 38, 44, 49, 51 &amp; 63)
                     </h3>
 
                     <div className="flex flex-wrap gap-1.5 text-[11px] text-slate-600">
@@ -973,9 +972,7 @@ export default function ChandigarhLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Chandigarh Housing Board flats require specialized handling.
-                      If an owner dies leaving an unregistered Will, CHB demands newspaper public notices in English and Punjabi dailies, along with affidavits from all Class I legal heirs.
-                      A registered Will ensures direct title transfer without these cumbersome municipal hurdles.
+                      Avail specialized <strong>Will drafting services for CHB Flats</strong> across Sectors 38, 44, 49, 51, and 63. If an owner passes away leaving an unregistered Will, the Chandigarh Housing Board demands public notices in English and Punjabi dailies, along with affidavits from all legal heirs. A legally registered Will drafted by our advocates guarantees direct title transfer without municipal hurdles.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -994,6 +991,7 @@ export default function ChandigarhLocationClient({ faqs }: Props) {
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
+                      aria-label="Will Drafting Services for CHB Flats"
                       className="inline-flex items-center gap-1.5 text-xs font-bold text-[#C65378] hover:text-[#a13c5d] group-hover:translate-x-0.5 transition-all"
                     >
                       <span>Draft CHB Flat Will</span>
@@ -1016,7 +1014,7 @@ export default function ChandigarhLocationClient({ faqs }: Props) {
                     </div>
 
                     <h3 className="font-extrabold text-lg text-slate-900 group-hover:text-[#C65378] transition-colors">
-                      Will Drafting in SAS Nagar / Mohali
+                      Will Drafting Services in SAS Nagar / Mohali
                     </h3>
 
                     <div className="flex flex-wrap gap-1.5 text-[11px] text-slate-600">
@@ -1027,9 +1025,7 @@ export default function ChandigarhLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Mohali features extensive GMADA plotted sectors and private builder apartments.
-                      GMADA title mutation requires specific testamentary proof to transfer plot allotment letters and conveyance deeds.
-                      Our advocates assist with Punjab NGDRS e-appointment booking at the Sector 76 District Administrative Complex.
+                      Our expert <strong>Will drafting services in SAS Nagar / Mohali</strong> cover extensive GMADA plotted sectors and private builder apartments across Phases 1 to 11, Sectors 68 to 79, and Aerocity. GMADA title mutation requires specific testamentary proof to transfer allotment letters and conveyance deeds. We assist with Punjab NGDRS e-appointment booking at the Sector 76 District Administrative Complex.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1048,6 +1044,7 @@ export default function ChandigarhLocationClient({ faqs }: Props) {
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
+                      aria-label="Will Drafting Services in Mohali"
                       className="inline-flex items-center gap-1.5 text-xs font-bold text-[#C65378] hover:text-[#a13c5d] group-hover:translate-x-0.5 transition-all"
                     >
                       <span>Draft Mohali Will</span>
@@ -1070,7 +1067,7 @@ export default function ChandigarhLocationClient({ faqs }: Props) {
                     </div>
 
                     <h3 className="font-extrabold text-lg text-slate-900 group-hover:text-[#C65378] transition-colors">
-                      Will Drafting in Panchkula &amp; MDC
+                      Will Drafting Services in Panchkula &amp; MDC
                     </h3>
 
                     <div className="flex flex-wrap gap-1.5 text-[11px] text-slate-600">
@@ -1081,9 +1078,7 @@ export default function ChandigarhLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Panchkula is planned under Haryana Shehri Vikas Pradhikaran (HSVP, formerly HUDA).
-                      Transferring HSVP plots and builder floors after death requires adherence to Haryana transfer policies.
-                      We coordinate appointment slots on the Haryana Jamabandi portal and attend registration at the Sector 1 Mini Secretariat.
+                      We deliver compliant <strong>Will drafting services in Panchkula &amp; MDC</strong> for residential sectors, Mansa Devi Complex, and HSVP (HUDA) builder floors. Transferring HSVP plots and builder floors after death requires strict adherence to Haryana transfer policies. We coordinate appointment slots on the Haryana Jamabandi portal and attend registration at the Sector 1 Mini Secretariat.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1102,6 +1097,7 @@ export default function ChandigarhLocationClient({ faqs }: Props) {
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
+                      aria-label="Will Drafting Services in Panchkula"
                       className="inline-flex items-center gap-1.5 text-xs font-bold text-[#C65378] hover:text-[#a13c5d] group-hover:translate-x-0.5 transition-all"
                     >
                       <span>Draft Panchkula Will</span>
@@ -1124,7 +1120,7 @@ export default function ChandigarhLocationClient({ faqs }: Props) {
                     </div>
 
                     <h3 className="font-extrabold text-lg text-slate-900 group-hover:text-[#C65378] transition-colors">
-                      Will Drafting in New Chandigarh &amp; Zirakpur
+                      Will Drafting Services in New Chandigarh &amp; Zirakpur
                     </h3>
 
                     <div className="flex flex-wrap gap-1.5 text-[11px] text-slate-600">
@@ -1135,8 +1131,7 @@ export default function ChandigarhLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      New Chandigarh (Mullanpur) and Zirakpur have emerged as prime destinations for modern luxury villas, high-rise apartments, and commercial SCOs.
-                      We ensure seamless succession across developer agreements, apartment owners&apos; associations (AOA), and cooperative society memberships.
+                      Comprehensive <strong>Will drafting services in New Chandigarh &amp; Zirakpur</strong> cover modern luxury villas, high-rise apartments, and commercial SCOs across Mullanpur, Eco City, Medi City, and VIP Road. We ensure seamless succession across developer agreements, apartment owners&apos; associations (AOA), and cooperative society memberships with remote NRI support.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1155,6 +1150,7 @@ export default function ChandigarhLocationClient({ faqs }: Props) {
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
+                      aria-label="Will Drafting Services in New Chandigarh and Zirakpur"
                       className="inline-flex items-center gap-1.5 text-xs font-bold text-[#C65378] hover:text-[#a13c5d] group-hover:translate-x-0.5 transition-all"
                     >
                       <span>Draft Extension Will</span>

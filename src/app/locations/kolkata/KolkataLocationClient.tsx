@@ -256,9 +256,9 @@ export default function KolkataLocationClient({ faqs }: Props) {
                 <span>KOLKATA &amp; WEST BENGAL SUCCESSION DESK</span>
               </div>
 
-              {/* Strictly 1 H1 Tag: Length 52 characters */}
+              {/* Strictly 1 H1 Tag: Length 56 characters */}
               <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight leading-tight text-white drop-shadow-xs">
-                Online Will Drafting &amp; Probate Assistance in Kolkata
+                Will Drafting Services in Kolkata: Online Legal Drafting
               </h1>
 
               <p className="text-base sm:text-lg text-slate-200 leading-relaxed font-normal max-w-2xl">
@@ -842,10 +842,10 @@ export default function KolkataLocationClient({ faqs }: Props) {
                   <span>LOCAL AREA COVERAGE &amp; SRO HUBS</span>
                 </div>
                 <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  5. Area-Wise Will Drafting Across Kolkata Localities
+                  5. Area-Wise Will Drafting Services Across Kolkata Localities
                 </h2>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Properties across Kolkata span heritage ancestral rajbaris, modern high-rises in New Town, 999-year leasehold plots in Salt Lake, and luxury condominiums in Ballygunge and Alipore.
+                  Looking for legally verified <strong>Will drafting services in Ballygunge, Alipore, Salt Lake, or New Town</strong>? Properties across Kolkata span heritage ancestral rajbaris, modern high-rises in New Town, 999-year leasehold plots in Salt Lake, and luxury condominiums in Ballygunge and Alipore.
                   Our senior advocates provide comprehensive legal drafting and SRO registration support across all key hubs:
                 </p>
               </div>
@@ -865,7 +865,7 @@ export default function KolkataLocationClient({ faqs }: Props) {
                     </div>
 
                     <h3 className="font-extrabold text-lg text-slate-900 group-hover:text-[#C65378] transition-colors">
-                      Will Drafting in Ballygunge &amp; Alipore
+                      Will Drafting Services in Ballygunge &amp; Alipore
                     </h3>
 
                     <div className="flex flex-wrap gap-1.5 text-[11px] text-slate-600">
@@ -876,7 +876,7 @@ export default function KolkataLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Ballygunge and Alipore host prestigious residential estates, luxury bungalows, and high-value family trusts.
+                      Looking for professional <strong>Will drafting services in Ballygunge &amp; Alipore</strong>? Ballygunge and Alipore host prestigious residential estates, luxury bungalows, and high-value family trusts.
                       Our advocates draft customized bequests covering KMC tax mutations, demat securities, and multi-generational real estate allocations to prevent contentious partition disputes before the District Judge at Alipore.
                     </p>
 
@@ -896,6 +896,7 @@ export default function KolkataLocationClient({ faqs }: Props) {
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
+                      aria-label="Will Drafting Services in Ballygunge &amp; Alipore"
                       className="inline-flex items-center gap-1.5 text-xs font-bold text-[#C65378] hover:text-[#a13c5d] group-hover:translate-x-0.5 transition-all"
                     >
                       <span>Draft Ballygunge Will</span>
@@ -918,7 +919,7 @@ export default function KolkataLocationClient({ faqs }: Props) {
                     </div>
 
                     <h3 className="font-extrabold text-lg text-slate-900 group-hover:text-[#C65378] transition-colors">
-                      Will Drafting in Park Street &amp; BBD Bagh
+                      Will Drafting Services in Park Street &amp; BBD Bagh
                     </h3>
 
                     <div className="flex flex-wrap gap-1.5 text-[11px] text-slate-600">
@@ -929,7 +930,7 @@ export default function KolkataLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Central Kolkata encompasses prominent commercial properties, tenanted premises under the West Bengal Premises Tenancy Act, and century-old family businesses.
+                      Get specialized <strong>Will drafting services in Park Street &amp; BBD Bagh</strong>. Central Kolkata encompasses prominent commercial properties, tenanted premises under the West Bengal Premises Tenancy Act, and century-old family businesses.
                       Because properties lie directly within Calcutta High Court original civil jurisdiction, mandatory probate clauses and clear executor powers are essential.
                     </p>
 
@@ -949,6 +950,7 @@ export default function KolkataLocationClient({ faqs }: Props) {
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
+                      aria-label="Will Drafting Services in Park Street &amp; Central Kolkata"
                       className="inline-flex items-center gap-1.5 text-xs font-bold text-[#C65378] hover:text-[#a13c5d] group-hover:translate-x-0.5 transition-all"
                     >
                       <span>Draft Central Kolkata Will</span>
@@ -971,7 +973,7 @@ export default function KolkataLocationClient({ faqs }: Props) {
                     </div>
 
                     <h3 className="font-extrabold text-lg text-slate-900 group-hover:text-[#C65378] transition-colors">
-                      Will Drafting in Salt Lake &amp; New Town
+                      Will Drafting Services in Salt Lake &amp; New Town
                     </h3>
 
                     <div className="flex flex-wrap gap-1.5 text-[11px] text-slate-600">
@@ -982,7 +984,7 @@ export default function KolkataLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Salt Lake properties feature 999-year leasehold plots allotted by the Urban Development Department, requiring specific testamentary compliance for Nagarayan Bhavan mutation.
+                      Opt for premier <strong>Will drafting services in Salt Lake &amp; New Town</strong>. Salt Lake properties feature 999-year leasehold plots allotted by the Urban Development Department, requiring specific testamentary compliance for Nagarayan Bhavan mutation.
                       In New Town, high-rise apartment bequests demand clear nomination and co-operative society succession clauses.
                     </p>
 
@@ -1002,6 +1004,7 @@ export default function KolkataLocationClient({ faqs }: Props) {
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
+                      aria-label="Will Drafting Services in Salt Lake &amp; New Town"
                       className="inline-flex items-center gap-1.5 text-xs font-bold text-[#C65378] hover:text-[#a13c5d] group-hover:translate-x-0.5 transition-all"
                     >
                       <span>Draft Salt Lake Will</span>
@@ -1024,7 +1027,7 @@ export default function KolkataLocationClient({ faqs }: Props) {
                     </div>
 
                     <h3 className="font-extrabold text-lg text-slate-900 group-hover:text-[#C65378] transition-colors">
-                      Will Drafting in Shyambazar &amp; Shobhabazar
+                      Will Drafting Services in Shyambazar &amp; Shobhabazar
                     </h3>
 
                     <div className="flex flex-wrap gap-1.5 text-[11px] text-slate-600">
@@ -1035,7 +1038,7 @@ export default function KolkataLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      North Kolkata holds generations-old family properties, undivided Dayabhaga co-heir estates, and heritage structures.
+                      Secure expert <strong>Will drafting services in Shyambazar &amp; Shobhabazar</strong>. North Kolkata holds generations-old family properties, undivided Dayabhaga co-heir estates, and heritage structures.
                       Under Dayabhaga law, a father holds unrestricted right to dispose of ancestral assets. A structured Will defines precise room or floor distributions, eliminating joint tenancy stalemates.
                     </p>
 
@@ -1055,6 +1058,7 @@ export default function KolkataLocationClient({ faqs }: Props) {
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
+                      aria-label="Will Drafting Services in Shyambazar &amp; North Kolkata"
                       className="inline-flex items-center gap-1.5 text-xs font-bold text-[#C65378] hover:text-[#a13c5d] group-hover:translate-x-0.5 transition-all"
                     >
                       <span>Draft North Kolkata Will</span>
@@ -1077,7 +1081,7 @@ export default function KolkataLocationClient({ faqs }: Props) {
                     </div>
 
                     <h3 className="font-extrabold text-lg text-slate-900 group-hover:text-[#C65378] transition-colors">
-                      Will Drafting in Jadavpur, Kasba &amp; Garia
+                      Will Drafting Services in Jadavpur, Kasba &amp; Garia
                     </h3>
 
                     <div className="flex flex-wrap gap-1.5 text-[11px] text-slate-600">
@@ -1088,7 +1092,7 @@ export default function KolkataLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      This expansive residential zone features multi-story cooperative apartments, standalone houses, and hospital hub properties along the EM Bypass.
+                      Comprehensive <strong>Will drafting services in Jadavpur, Kasba &amp; Garia</strong>. This expansive residential zone features multi-story cooperative apartments, standalone houses, and hospital hub properties along the EM Bypass.
                       Our estate planning ensures swift KMC Assessee Number updates, bank account transmissions, and hassle-free executor guidance.
                     </p>
 
@@ -1108,6 +1112,7 @@ export default function KolkataLocationClient({ faqs }: Props) {
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
+                      aria-label="Will Drafting Services in Jadavpur, Kasba &amp; Garia"
                       className="inline-flex items-center gap-1.5 text-xs font-bold text-[#C65378] hover:text-[#a13c5d] group-hover:translate-x-0.5 transition-all"
                     >
                       <span>Draft Jadavpur Will</span>
@@ -1130,7 +1135,7 @@ export default function KolkataLocationClient({ faqs }: Props) {
                     </div>
 
                     <h3 className="font-extrabold text-lg text-slate-900 group-hover:text-[#C65378] transition-colors">
-                      Will Drafting in Behala, Thakurpukur &amp; Joka
+                      Will Drafting Services in Behala, Thakurpukur &amp; Joka
                     </h3>
 
                     <div className="flex flex-wrap gap-1.5 text-[11px] text-slate-600">
@@ -1141,7 +1146,7 @@ export default function KolkataLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Covering extensive freehold housing societies and developing townships along Diamond Harbour Road.
+                      Protect your family assets with <strong>Will drafting services in Behala, Thakurpukur &amp; Joka</strong>. Covering extensive freehold housing societies and developing townships along Diamond Harbour Road.
                       Our legal team assists in drafting unambiguous bequests for family homes, resolving undivided ancestral shares, and coordinating SRO Behala registration with zero stamp duty.
                     </p>
 
@@ -1161,6 +1166,7 @@ export default function KolkataLocationClient({ faqs }: Props) {
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
+                      aria-label="Will Drafting Services in Behala &amp; Joka"
                       className="inline-flex items-center gap-1.5 text-xs font-bold text-[#C65378] hover:text-[#a13c5d] group-hover:translate-x-0.5 transition-all"
                     >
                       <span>Draft Behala Will</span>
