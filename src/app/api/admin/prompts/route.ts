@@ -26,6 +26,26 @@ export async function GET() {
       await col.insertMany(seedDocs);
       docs = seedDocs;
     } else {
+      // Auto-upgrade built-in presets if they still carry the legacy hardcoded statute checklist
+      for (const preset of WILLDRAFTING_PROMPT_PRESETS) {
+        const existing = docs.find((d) => d.name?.trim() === preset.name.trim());
+        if (
+          existing &&
+          existing.coreInstructions !== preset.coreInstructions &&
+          /Cite exact statutory sections directly|SENIOR INDIAN SUCCESSION & ESTATE PLANNING COUNSEL/i.test(
+            existing.coreInstructions || ""
+          )
+        ) {
+          const now = new Date();
+          await col.updateOne(
+            { _id: existing._id },
+            { $set: { coreInstructions: preset.coreInstructions, updatedAt: now } }
+          );
+          existing.coreInstructions = preset.coreInstructions;
+          existing.updatedAt = now;
+        }
+      }
+
       // Auto-sync any newly added code presets missing from the database
       const missingPresets = WILLDRAFTING_PROMPT_PRESETS.filter(
         (preset) => !docs.some((d) => d.name?.trim() === preset.name.trim())

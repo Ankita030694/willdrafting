@@ -58,6 +58,12 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ error: "Image prompt is required" }, { status: 400 });
     }
 
+    // Enforce real people, real Indian landscape/setting, and strict website font (Plus Jakarta Sans)
+    const enforcedPrompt =
+      kind === "infographic"
+        ? `${parsedPrompt}\n\nSTRICT VISUAL & TYPOGRAPHY RULES: Use real-world photography elements of real Indian people and real Indian landscape/architecture where applicable. 100% of all text, headings, and labels in this image MUST exclusively use the exact website font 'Plus Jakarta Sans' (clean geometric sans-serif, weights 500-700, colors #172228 navy, #FAF7F0 cream, #C65378 rose accent). Do NOT use any serif, script, cursive, or other font.`
+        : `${parsedPrompt.replace(/\b(illustration|cartoon|vector|clipart)\b/gi, "photorealistic DSLR photograph")}\n\nSTRICT VISUAL & TYPOGRAPHY RULES: Must be a photorealistic, natural-light DSLR photograph featuring REAL Indian people and a REAL Indian landscape, home, or legal office setting (strictly NO cartoon, vector, or flat illustration). Any text or title rendered in the image MUST exclusively use the exact website font 'Plus Jakarta Sans' (clean modern geometric sans-serif matching WillDrafting.in) and NO other font whatsoever.`;
+
     const apiKey = customApiKey || process.env.HELLO_DROP_CHOO?.trim() || "";
 
     if (!apiKey) {
@@ -67,8 +73,8 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    // Try OpenAI Image Generation Models in order: gpt-image-2 -> gpt-image-1 -> dall-e-3
-    const modelsToTry = ["gpt-image-2", "gpt-image-1", "dall-e-3"];
+    // Try OpenAI Image Generation Models in order: gpt-image-2 -> gpt-image-1 -> gpt-image-1-mini -> dall-e-3
+    const modelsToTry = ["gpt-image-2", "gpt-image-1", "gpt-image-1-mini", "dall-e-3"];
     let rawBase64 = "";
     let mimeType = "image/png";
     let usedModel = "";
@@ -80,12 +86,14 @@ export async function POST(request: NextRequest) {
 
         const payload: Record<string, unknown> = {
           model: modelName,
-          prompt: parsedPrompt,
+          prompt: enforcedPrompt,
           n: 1,
           size: "1024x1024",
         };
         if (modelName === "dall-e-3") {
           payload.response_format = "b64_json";
+        } else {
+          payload.quality = "medium";
         }
 
         const openAiResponse = await fetch("https://api.openai.com/v1/images/generations", {

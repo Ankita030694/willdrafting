@@ -161,7 +161,7 @@ export async function PUT(
         .map((r: Record<string, unknown>) => ({
           name: String(r?.name || "").trim(),
           rating: Math.min(5, Math.max(1, Number(r?.rating) || 5)),
-          review: String(r?.review || "").trim(),
+          review: String(r?.review || r?.text || "").trim(),
           location: r?.location ? String(r.location).trim() : undefined,
         }))
         .filter((r: BlogReviewItem) => r.name && r.review);

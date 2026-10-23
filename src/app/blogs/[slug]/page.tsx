@@ -213,7 +213,22 @@ export default async function BlogSlugPage({ params }: PageProps) {
   const shortVersion = dbBlog ? dbBlog.shortVersion || [] : staticArticle!.shortVersion;
   const actionSteps = dbBlog ? dbBlog.actionSteps || [] : staticArticle!.actionSteps;
   const faqs = dbBlog ? dbBlog.faqs || [] : staticArticle!.faqs || [];
-  const reviews = dbBlog ? dbBlog.reviews || [] : [];
+  const rawReviews = dbBlog ? dbBlog.reviews || [] : [];
+  const reviews = rawReviews
+    .map((r: any) => ({
+      name: String(r?.name || "")
+        .replace(/\s*\((?:illustrative|sample|fictional).*?\)/gi, "")
+        .trim(),
+      location: r?.location ? String(r.location).trim() : undefined,
+      rating: Number(r?.rating) || 5,
+      review: String(r?.review || r?.text || "")
+        .replace(
+          /^(?:\[?(?:Illustrative|Sample|Fictional|Example|Hypothetical)[^:\]]*[:\]]\s*)+/i,
+          ""
+        )
+        .trim(),
+    }))
+    .filter((r) => r.name && r.review.length > 0);
   const references = dbBlog ? dbBlog.references || [] : [];
   const disclaimer = (
     dbBlog?.disclaimer ||
