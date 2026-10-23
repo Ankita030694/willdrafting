@@ -878,13 +878,13 @@ OUTPUT FORMAT CONSTRAINTS
     let shortVersion: string[] = [];
     let actionSteps: string[] = [];
     let keyTakeaways = "";
-    let suggestedImagePrompt = `Photorealistic DSLR photograph of real Indian people (an Indian family and estate lawyer) in a real Indian residential/architectural landscape reviewing Will documents for ${primaryKeyword}. Any text overlay "${step1Result.title}" MUST be rendered exclusively in the website font 'Plus Jakarta Sans' (clean geometric sans-serif) with NO other font used.`;
-    let suggestedInfographicPrompt = `Clean structured legal process diagram explaining ${primaryKeyword} set against a subtle real Indian architectural background, where 100% of headings and labels exclusively use the exact website font 'Plus Jakarta Sans' (clean geometric sans-serif) and NO other font.`;
+    let suggestedImagePrompt = `Wide real-life landscape DSLR photograph (1536x1024) of real Indian people (an Indian family and estate lawyer) in a real Indian residential/architectural landscape reviewing Will documents for ${primaryKeyword}, with the exact title "${step1Result.title}" prominently written on the image in the WillDrafting font 'Plus Jakarta Sans' (bold geometric sans-serif) using WillDrafting brand colors (#172228 Deep Navy, #FAF7F0 Warm Cream, #C65378 Berry Rose accent, #5F7E75 Sage).`;
+    let suggestedInfographicPrompt = `Wide real-life landscape visual process guide (1536x1024) explaining ${primaryKeyword} set over a real Indian architectural landscape background, with the exact title "${step1Result.title}" and 4 step cards rendered exclusively in the WillDrafting font 'Plus Jakarta Sans' and WillDrafting colors (#172228 Deep Navy, #FAF7F0 Warm Cream, #C65378 Berry Rose accent, #5F7E75 Sage).`;
 
     try {
       const step3SystemPrompt = `${coreInstructions}
 
---- STEP 3: TOPIC-SPECIFIC STRUCTURED ASSETS, SCHEMA & REAL-PHOTOGRAPHY VISUAL PROMPTS ---
+--- STEP 3: TOPIC-SPECIFIC STRUCTURED ASSETS, SCHEMA & REAL-LIFE LANDSCAPE VISUAL PROMPTS ---
 Primary Keyword: "${primaryKeyword}"
 Article Title: "${step1Result.title}"
 Detected Archetype: ${blueprint.label}
@@ -897,8 +897,8 @@ Based on the generated article for "${primaryKeyword}", produce a JSON object wi
 5. "reviews": Array of 3 realistic client testimonials from Indian/NRI users who used WillDrafting.in for "${primaryKeyword}". IMPORTANT: Each object MUST have exact keys: { "name": "Full Indian Name", "location": "City, India (or NRI City)", "rating": 5, "review": "2-sentence specific first-person client review describing how WillDrafting.in helped them with ${primaryKeyword}." }. The "review" string MUST NOT be empty.
 6. "references": Array of 3 to 4 authoritative Indian statutory or judicial references directly cited for "${primaryKeyword}" (fields: "title", "url").
 7. "keywords": Array of 10 related long-tail SEO search queries for "${primaryKeyword}".
-8. "suggestedImagePrompt": Detailed prompt for a 1024x1024 Featured Hero Image that MUST be a photorealistic real-life photograph featuring REAL Indian people and a REAL Indian landscape/home/office setting representing "${primaryKeyword}" (strictly NO cartoon/vector illustrations), and explicitly specify that any text or title overlay ("${step1Result.title}") MUST use ONLY the website font 'Plus Jakarta Sans' (clean geometric sans-serif) and NO other font.
-9. "suggestedInfographicPrompt": Detailed prompt for a 1024x1024 visual summary chart explaining the exact steps/rules of "${primaryKeyword}", explicitly requiring that 100% of text in the image uses ONLY the website font 'Plus Jakarta Sans' (clean geometric sans-serif) and NO other font.
+8. "suggestedImagePrompt": Detailed prompt for a wide 1536x1024 Featured Cover Image that MUST be a real-life landscape DSLR photograph featuring REAL Indian people in a REAL Indian landscape/home/office setting representing "${primaryKeyword}" (strictly NO cartoon/vector illustrations), with the exact blog title "${step1Result.title}" prominently written on the image using exclusively the WillDrafting website font 'Plus Jakarta Sans' (bold geometric sans-serif) and WillDrafting brand colors (#172228 Deep Navy, #FAF7F0 Warm Cream, #C65378 Berry Rose accent, #5F7E75 Sage).
+9. "suggestedInfographicPrompt": Detailed prompt for a wide 1536x1024 landscape visual summary chart set over a real-life Indian architectural landscape explaining the exact steps/rules of "${primaryKeyword}", with the exact title "${step1Result.title}" and 100% of text written exclusively in the WillDrafting website font 'Plus Jakarta Sans' and WillDrafting brand colors (#172228 Deep Navy, #FAF7F0 Warm Cream, #C65378 Berry Rose accent, #5F7E75 Sage).
 
 Article Excerpt Context:
 ${cleanedDescription.substring(0, 3000)}
@@ -912,7 +912,7 @@ Return ONLY valid JSON.`;
           { role: "system", content: step3SystemPrompt },
           {
             role: "user",
-            content: `Generate the complete Step 3 JSON package tailored strictly to "${primaryKeyword}". Ensure every review object has a non-empty "review" string and both image prompts specify real people, real Indian landscape, and exclusively the 'Plus Jakarta Sans' website font.`,
+            content: `Generate the complete Step 3 JSON package tailored strictly to "${primaryKeyword}". Ensure every review object has a non-empty "review" string and both image prompts specify a real-life landscape photograph with the exact title "${step1Result.title}" written on it using the WillDrafting font ('Plus Jakarta Sans') and WillDrafting colors (#172228 Navy, #FAF7F0 Cream, #C65378 Berry Rose, #5F7E75 Sage).`,
           },
         ],
         jsonMode: true,

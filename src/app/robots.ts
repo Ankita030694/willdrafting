@@ -19,6 +19,8 @@ export default function robots(): MetadataRoute.Robots {
           "/blogs/*",
           "/templates",
           "/templates/*",
+          "/locations",
+          "/locations/*",
           "/contact",
           "/sitemap",
         ],

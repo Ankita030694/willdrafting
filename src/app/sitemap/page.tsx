@@ -3,7 +3,10 @@ import { Metadata } from "next";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import SitemapClient from "./SitemapClient";
-import { getAllSitemapLinks } from "@/data/sitemapData";
+import { getAllSitemapLinks, sanitizeHref, SitemapPageItem } from "@/data/sitemapData";
+import { blogsCol } from "@/lib/db/collections";
+
+export const dynamic = "force-dynamic";
 
 // Strict SEO compliance: Title 50–60 chars, Meta Description 140–155 chars, 0 em-dashes
 export const metadata: Metadata = {
@@ -41,8 +44,46 @@ export const metadata: Metadata = {
   },
 };
 
-export default function SitemapPage() {
-  const allLinks = getAllSitemapLinks();
+export default async function SitemapPage() {
+  const staticLinks = getAllSitemapLinks();
+  const seenHrefs = new Set<string>();
+  const allLinks: SitemapPageItem[] = [];
+
+  // 1. Dynamically include all published blogs from MongoDB so /sitemap stays 100% synced with /sitemap.xml
+  try {
+    const col = await blogsCol();
+    const dbBlogs = await col
+      .find({ status: "PUBLISHED" }, { projection: { slug: 1, title: 1, date: 1, updatedAt: 1 } })
+      .sort({ createdAt: -1 })
+      .toArray();
+
+    for (const b of dbBlogs) {
+      if (!b.slug || !b.title) continue;
+      const cleanHref = sanitizeHref(`/blogs/${b.slug}`);
+      if (!seenHrefs.has(cleanHref)) {
+        seenHrefs.add(cleanHref);
+        allLinks.push({
+          title: b.title,
+          href: cleanHref,
+          category: "Guides",
+          date: b.date || new Date(b.updatedAt || Date.now()).toISOString().split("T")[0],
+          changefreq: "weekly",
+          priority: 0.9,
+        });
+      }
+    }
+  } catch (e) {
+    console.warn("Could not query MongoDB blogs for /sitemap:", e);
+  }
+
+  // 2. Merge static SSOT routes without duplicates
+  for (const item of staticLinks) {
+    const cleanHref = sanitizeHref(item.href);
+    if (!seenHrefs.has(cleanHref)) {
+      seenHrefs.add(cleanHref);
+      allLinks.push(item);
+    }
+  }
 
   const breadcrumbJsonLd = {
     "@context": "https://schema.org",

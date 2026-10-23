@@ -37,6 +37,7 @@ async function saveBase64ToMongo(params: {
 
 export async function POST(request: NextRequest) {
   let parsedPrompt = "";
+  let blogTitle = "";
   let kind: "cover" | "infographic" | "inline" = "cover";
   let blogSlug: string | null = null;
   let customApiKey = "";
@@ -44,6 +45,7 @@ export async function POST(request: NextRequest) {
   try {
     const body = await request.json();
     parsedPrompt = String(body.prompt || "").trim();
+    blogTitle = String(body.blogTitle || body.title || "").trim();
     if (body.kind === "infographic" || body.kind === "cover" || body.kind === "inline") {
       kind = body.kind;
     }
@@ -54,15 +56,20 @@ export async function POST(request: NextRequest) {
       customApiKey = body.apiKey.trim();
     }
 
-    if (!parsedPrompt) {
-      return NextResponse.json({ error: "Image prompt is required" }, { status: 400 });
+    if (!parsedPrompt && !blogTitle) {
+      return NextResponse.json({ error: "Image prompt or blog title is required" }, { status: 400 });
     }
 
-    // Enforce real people, real Indian landscape/setting, and strict website font (Plus Jakarta Sans)
+    const baseSubject = parsedPrompt || `Indian family and estate lawyer discussing ${blogTitle}`;
+    const titleInstruction = blogTitle
+      ? `The exact blog title "${blogTitle}" MUST be clearly, accurately, and prominently written on the image inside a refined WillDrafting.in banner/overlay.`
+      : `The blog title mentioned in the prompt MUST be clearly, accurately, and prominently written on the image inside a refined WillDrafting.in banner/overlay.`;
+
+    // Enforce real-life landscape photography, blog title written on the image, and strict WillDrafting font (Plus Jakarta Sans) & colors
     const enforcedPrompt =
       kind === "infographic"
-        ? `${parsedPrompt}\n\nSTRICT VISUAL & TYPOGRAPHY RULES: Use real-world photography elements of real Indian people and real Indian landscape/architecture where applicable. 100% of all text, headings, and labels in this image MUST exclusively use the exact website font 'Plus Jakarta Sans' (clean geometric sans-serif, weights 500-700, colors #172228 navy, #FAF7F0 cream, #C65378 rose accent). Do NOT use any serif, script, cursive, or other font.`
-        : `${parsedPrompt.replace(/\b(illustration|cartoon|vector|clipart)\b/gi, "photorealistic DSLR photograph")}\n\nSTRICT VISUAL & TYPOGRAPHY RULES: Must be a photorealistic, natural-light DSLR photograph featuring REAL Indian people and a REAL Indian landscape, home, or legal office setting (strictly NO cartoon, vector, or flat illustration). Any text or title rendered in the image MUST exclusively use the exact website font 'Plus Jakarta Sans' (clean modern geometric sans-serif matching WillDrafting.in) and NO other font whatsoever.`;
+        ? `${baseSubject}\n\nSTRICT LANDSCAPE VISUAL, TITLE OVERLAY & BRAND RULES:\n- Format: Wide landscape orientation (1536x1024) featuring a real-life Indian residential/architectural landscape background with real Indian people.\n- Title on Image: ${titleInstruction}\n- WillDrafting Brand Font: 100% of all text, the main title, headings, and step labels MUST exclusively use the exact WillDrafting website font 'Plus Jakarta Sans' (clean geometric sans-serif, weights 600-800). Strictly NO serif, script, or other fonts.\n- WillDrafting Brand Colors: Use exclusively the WillDrafting color palette — Deep Navy (#172228) for primary banners/text, Warm Cream (#FAF7F0) for clean cards/surfaces, Berry Rose (#C65378) for primary highlights/badges, Slate (#49585F) for subtext, and Sage (#5F7E75) for positive step accents.`
+        : `${baseSubject.replace(/\b(illustration|cartoon|vector|clipart)\b/gi, "photorealistic DSLR photograph")}\n\nSTRICT LANDSCAPE VISUAL, TITLE OVERLAY & BRAND RULES:\n- Format: Wide real-life landscape DSLR photograph (1536x1024, natural golden-hour lighting) featuring REAL Indian people in a REAL Indian landscape, home, or architectural setting (strictly NO cartoon, vector, or flat illustration).\n- Title Written on Image: ${titleInstruction}\n- WillDrafting Brand Font: The title written on the image MUST exclusively use the exact WillDrafting website font 'Plus Jakarta Sans' (bold modern geometric sans-serif, weights 700-800). Do NOT use any serif, cursive, or other font.\n- WillDrafting Brand Colors: Style the title typography and subtle brand overlay using the exact WillDrafting color palette — Deep Navy (#172228), Warm Cream (#FAF7F0), Berry Rose accent (#C65378), and Sage (#5F7E75).`;
 
     const apiKey = customApiKey || process.env.HELLO_DROP_CHOO?.trim() || "";
 
@@ -88,7 +95,7 @@ export async function POST(request: NextRequest) {
           model: modelName,
           prompt: enforcedPrompt,
           n: 1,
-          size: "1024x1024",
+          size: modelName === "dall-e-3" ? "1792x1024" : "1536x1024",
         };
         if (modelName === "dall-e-3") {
           payload.response_format = "b64_json";
@@ -138,13 +145,13 @@ export async function POST(request: NextRequest) {
       }
     }
 
-    // Fallback: If all OpenAI image models failed (e.g., org verification or quota), fetch Pollinations FLUX and store as base64 in MongoDB
+    // Fallback: If all OpenAI image models failed (e.g., org verification or quota), fetch Pollinations FLUX in landscape and store as base64 in MongoDB
     let isFallback = false;
     if (!rawBase64) {
-      console.log("[generate-image] Falling back to FLUX image generation and storing base64 in MongoDB...");
-      const cleanPrompt = encodeURIComponent(parsedPrompt.substring(0, 800));
+      console.log("[generate-image] Falling back to FLUX landscape image generation and storing base64 in MongoDB...");
+      const cleanPrompt = encodeURIComponent(enforcedPrompt.substring(0, 900));
       const randomSeed = Math.floor(Math.random() * 1000000);
-      const fallbackUrl = `https://image.pollinations.ai/prompt/${cleanPrompt}?width=1024&height=1024&nologo=true&seed=${randomSeed}`;
+      const fallbackUrl = `https://image.pollinations.ai/prompt/${cleanPrompt}?width=1536&height=1024&nologo=true&seed=${randomSeed}&model=flux`;
 
       const fallbackRes = await fetch(fallbackUrl);
       if (fallbackRes.ok) {

@@ -618,6 +618,14 @@ export const staticPages: SitemapPageItem[] = [
     changefreq: "monthly",
     priority: 0.8,
   },
+  {
+    title: "Affordable Will Drafting Services in India: Real Cost Breakdown",
+    href: "/blogs/affordable-will-drafting-services-india-cost-comparison",
+    category: "Guides",
+    date: "2026-10-23",
+    changefreq: "weekly",
+    priority: 0.8,
+  },
 ];
 
 /**

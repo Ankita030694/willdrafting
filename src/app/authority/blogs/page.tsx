@@ -406,8 +406,8 @@ export default function AuthorityBlogsPage() {
   // 1. Featured Cover Image (AI Generate + Save & Use as Cover + Local Upload)
   // =========================================================================
   const handleGenerateImage = async () => {
-    if (!imagePrompt.trim()) {
-      alert("Please enter a prompt for the cover image.");
+    if (!imagePrompt.trim() && !newBlog.title.trim()) {
+      alert("Please enter a prompt or blog title for the cover image.");
       return;
     }
 
@@ -418,6 +418,7 @@ export default function AuthorityBlogsPage() {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           prompt: imagePrompt.trim(),
+          blogTitle: newBlog.title.trim(),
           kind: "cover",
           blogSlug: newBlog.slug || null,
         }),
@@ -514,8 +515,8 @@ export default function AuthorityBlogsPage() {
   // 2. Topic Infographic (AI Generate + Save & Set as Infographic + Local Upload)
   // =========================================================================
   const handleGenerateInfographic = async () => {
-    if (!infographicPrompt.trim()) {
-      alert("Please enter a prompt for the infographic.");
+    if (!infographicPrompt.trim() && !newBlog.title.trim()) {
+      alert("Please enter a prompt or blog title for the infographic.");
       return;
     }
 
@@ -526,6 +527,7 @@ export default function AuthorityBlogsPage() {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           prompt: infographicPrompt.trim(),
+          blogTitle: newBlog.title.trim(),
           kind: "infographic",
           blogSlug: newBlog.slug || null,
         }),
