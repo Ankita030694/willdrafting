@@ -18,6 +18,156 @@ const nextConfig: NextConfig = {
   async redirects() {
     return [
       {
+        source: "/locations/will-drafting-in-gandhinagar",
+        destination: "/locations/gandhinagar",
+        permanent: true,
+      },
+      {
+        source: "/locations/will-drafting-in-amaravati",
+        destination: "/locations/amaravati",
+        permanent: true,
+      },
+      {
+        source: "/locations/will-drafting-in-puducherry",
+        destination: "/locations/puducherry",
+        permanent: true,
+      },
+      {
+        source: "/locations/will-drafting-in-lakshadweep",
+        destination: "/locations/lakshadweep",
+        permanent: true,
+      },
+      {
+        source: "/locations/will-drafting-in-ladakh",
+        destination: "/locations/ladakh",
+        permanent: true,
+      },
+      {
+        source: "/locations/will-drafting-in-jammu-and-kashmir",
+        destination: "/locations/jammu-and-kashmir",
+        permanent: true,
+      },
+      {
+        source: "/locations/will-drafting-in-dadra-and-nagar-haveli-and-daman-and-diu",
+        destination: "/locations/dadra-and-nagar-haveli-and-daman-and-diu",
+        permanent: true,
+      },
+      {
+        source: "/locations/will-drafting-in-andaman-and-nicobar-islands",
+        destination: "/locations/andaman-and-nicobar-islands",
+        permanent: true,
+      },
+      {
+        source: "/locations/will-drafting-in-west-bengal",
+        destination: "/locations/west-bengal",
+        permanent: true,
+      },
+      {
+        source: "/locations/will-drafting-in-tripura",
+        destination: "/locations/tripura",
+        permanent: true,
+      },
+      {
+        source: "/locations/will-drafting-in-mizoram",
+        destination: "/locations/mizoram",
+        permanent: true,
+      },
+      {
+        source: "/locations/will-drafting-in-manipur",
+        destination: "/locations/manipur",
+        permanent: true,
+      },
+      {
+        source: "/locations/will-drafting-in-jharkhand",
+        destination: "/locations/jharkhand",
+        permanent: true,
+      },
+      {
+        source: "/locations/will-drafting-in-kerala",
+        destination: "/locations/kerala",
+        permanent: true,
+      },
+      {
+        source: "/locations/will-drafting-in-assam",
+        destination: "/locations/assam",
+        permanent: true,
+      },
+      {
+        source: "/locations/will-drafting-in-chhattisgarh",
+        destination: "/locations/chhattisgarh",
+        permanent: true,
+      },
+      {
+        source: "/locations/will-drafting-in-himachal-pradesh",
+        destination: "/locations/himachal-pradesh",
+        permanent: true,
+      },
+
+      {
+        source: "/locations/will-drafting-in-uttarakhand",
+        destination: "/locations/uttarakhand",
+        permanent: true,
+      },
+      {
+        source: "/locations/will-drafting-in-tamil-nadu",
+        destination: "/locations/tamil-nadu",
+        permanent: true,
+      },
+
+            {
+        source: "/locations/will-drafting-in-telangana",
+        destination: "/locations/telangana",
+        permanent: true,
+      },
+{
+        source: "/locations/will-drafting-in-andhra-pradesh",
+        destination: "/locations/andhra-pradesh",
+        permanent: true,
+      },
+      {
+        source: "/locations/will-drafting-in-karnataka",
+        destination: "/locations/karnataka",
+        permanent: true,
+      },
+      {
+        source: "/locations/will-drafting-in-madhya-pradesh",
+        destination: "/locations/madhya-pradesh",
+        permanent: true,
+      },
+      {
+        source: "/locations/will-drafting-in-gujarat",
+        destination: "/locations/gujarat",
+        permanent: true,
+      },
+      {
+        source: "/locations/will-drafting-in-rajasthan",
+        destination: "/locations/rajasthan",
+        permanent: true,
+      },
+      {
+        source: "/locations/will-drafting-in-uttar-pradesh",
+        destination: "/locations/uttar-pradesh",
+        permanent: true,
+      },
+      {
+        source: "/locations/will-drafting-in-haryana",
+        destination: "/locations/haryana",
+        permanent: true,
+      },
+
+      {
+        source: "/locations/will-drafting-in-maharashtra",
+        destination: "/locations/maharashtra",
+        permanent: true,
+      },
+
+      {
+        source: "/locations/will-drafting-in-delhi-nct",
+        destination: "/locations/delhi-nct",
+        permanent: true,
+      },
+
+      {
         source: "/locations/will-drafting-in-raipur",
         destination: "/locations/raipur",
         permanent: true,

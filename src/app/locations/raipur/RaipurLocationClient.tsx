@@ -816,76 +816,338 @@ export default function RaipurLocationClient({ faqs }: Props) {
             <section id="raipur-area-coverage" className="scroll-target space-y-6">
               <div className="space-y-2">
                 <div className="flex items-center gap-2 text-xs font-black uppercase tracking-wider text-[#C65378]">
-                  <Home className="w-4 h-4 text-[#C65378]" />
-                  <span>METROPOLITAN REACH</span>
+                  <MapPin className="w-4 h-4 text-[#C65378]" />
+                  <span>LOCAL AREA COVERAGE &amp; ASSET NUANCES</span>
                 </div>
                 <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   5. Local Coverage: Raipur &amp; Nava Raipur Atal Nagar
                 </h2>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Our comprehensive estate planning and Will registration services cater to all residential enclaves, smart city sectors, commercial districts, and industrial belts throughout Raipur and Nava Raipur:
+                  Estate assets in Raipur span upscale residential residences in Shankar Nagar and Civil Lines, expansive RDA schemes like Kamal Vihar, greenfield smart city developments in Nava Raipur Atal Nagar, commercial wholesale centers in Pandri, and heavy steel industrial complexes in Urla and Siltara. Our estate advocates deliver customized legal drafting, Chhattisgarh NGDRS e-Panjiyan slot scheduling, and Sub-Registrar accompaniment across all key micro-markets:
                 </p>
               </div>
 
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                <div className="bg-white rounded-2xl border border-slate-200/90 p-5 space-y-2.5 shadow-xs">
-                  <div className="flex items-center gap-2">
-                    <Building className="w-4 h-4 text-[#C65378]" />
-                    <h3 className="font-bold text-sm text-slate-900">Prime Residential Hubs</h3>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+                {/* AREA 1: SHANKAR NAGAR & CIVIL LINES */}
+                <div className="rounded-3xl bg-white border border-slate-200/90 p-5 sm:p-6 shadow-xs hover:shadow-md transition-all flex flex-col justify-between group">
+                  <div className="space-y-3.5">
+                    <div className="flex items-center justify-between gap-2">
+                      <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-rose-50 text-[#C65378] border border-rose-100">
+                        <MapPin className="w-3.5 h-3.5" />
+                        North-East Luxury Belt
+                      </span>
+                      <span className="text-[11px] font-semibold text-slate-500 bg-slate-100 px-2.5 py-1 rounded-lg">
+                        SRO Raipur 1 (Civil Lines)
+                      </span>
+                    </div>
+
+                    <h3 className="font-extrabold text-lg text-slate-900 group-hover:text-[#C65378] transition-colors">
+                      Will Drafting on Shankar Nagar &amp; Civil Lines
+                    </h3>
+
+                    <div className="flex flex-wrap gap-1.5 text-[11px] text-slate-600">
+                      <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Shankar Nagar</span>
+                      <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Civil Lines</span>
+                      <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Katora Talab</span>
+                      <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Byron Bazar</span>
+                      <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Raja Talab</span>
+                    </div>
+
+                    <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                      Specialized <strong>Will drafting on Shankar Nagar and Civil Lines</strong> for premium freehold bungalows, duplex kothis, and high-rise apartments. Codifies clear title devolution for residential estates, bank locker allocations, mutual funds, and precious family jewelry to prevent co-parcenary partition disputes.
+                    </p>
+
+                    <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
+                      <div className="flex items-center gap-2 font-bold text-slate-900">
+                        <Building className="w-3.5 h-3.5 text-[#C65378]" />
+                        <span>SRO Hub: District Collectorate, Civil Lines</span>
+                      </div>
+                      <p className="text-[11px] text-slate-500">
+                        Chhattisgarh NGDRS slot booking, advocate physical attendance, and Section 31 doorstep execution for senior citizens.
+                      </p>
+                    </div>
                   </div>
-                  <p className="text-xs text-slate-600 leading-relaxed">
-                    Civil Lines, Shankar Nagar, VIP Road, Katora Talab, Choubey Colony, Samta Colony, Byron Bazar, Raja Talab, and Telibandha lakeside.
-                  </p>
+
+                  <div className="pt-4 mt-4 border-t border-slate-100 flex items-center justify-between">
+                    <span className="text-xs font-bold text-slate-500">₹0 Stamp Duty · ₹100 Govt Fee</span>
+                    <Link
+                      href="/start"
+                      onClick={handleStartDraft}
+                      aria-label="Will Drafting Services in Shankar Nagar"
+                      className="inline-flex items-center gap-1.5 text-xs font-bold text-[#C65378] hover:text-[#a13c5d] group-hover:translate-x-0.5 transition-all"
+                    >
+                      <span>Draft Shankar Nagar Will</span>
+                      <ArrowRight className="w-3.5 h-3.5" />
+                    </Link>
+                  </div>
                 </div>
 
-                <div className="bg-white rounded-2xl border border-slate-200/90 p-5 space-y-2.5 shadow-xs">
-                  <div className="flex items-center gap-2">
-                    <Landmark className="w-4 h-4 text-[#C65378]" />
-                    <h3 className="font-bold text-sm text-slate-900">RDA &amp; Nava Raipur Sectors</h3>
+                {/* AREA 2: KAMAL VIHAR & NAVA RAIPUR */}
+                <div className="rounded-3xl bg-white border border-slate-200/90 p-5 sm:p-6 shadow-xs hover:shadow-md transition-all flex flex-col justify-between group">
+                  <div className="space-y-3.5">
+                    <div className="flex items-center justify-between gap-2">
+                      <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-rose-50 text-[#C65378] border border-rose-100">
+                        <MapPin className="w-3.5 h-3.5" />
+                        RDA Township &amp; Smart City
+                      </span>
+                      <span className="text-[11px] font-semibold text-slate-500 bg-slate-100 px-2.5 py-1 rounded-lg">
+                        SRO Nava Raipur &amp; SRO 1
+                      </span>
+                    </div>
+
+                    <h3 className="font-extrabold text-lg text-slate-900 group-hover:text-[#C65378] transition-colors">
+                      Will Drafting on Kamal Vihar &amp; Nava Raipur
+                    </h3>
+
+                    <div className="flex flex-wrap gap-1.5 text-[11px] text-slate-600">
+                      <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Kamal Vihar (RDA)</span>
+                      <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Nava Raipur Sector 27</span>
+                      <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Sector 29 &amp; 30</span>
+                      <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Indraprastha Raipura</span>
+                    </div>
+
+                    <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                      Customized <strong>Will drafting in Kamal Vihar</strong> and Nava Raipur Atal Nagar for plotted residential schemes and smart sector apartments. Includes precise clauses for NRANVP 99-year leasehold succession, RDA allotment letter transfers, and direct municipal tax mutation without court succession certificates.
+                    </p>
+
+                    <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
+                      <div className="flex items-center gap-2 font-bold text-slate-900">
+                        <Building className="w-3.5 h-3.5 text-[#C65378]" />
+                        <span>SRO Hub: Sector 19 Mantralaya Zone &amp; Collectorate</span>
+                      </div>
+                      <p className="text-[11px] text-slate-500">
+                        RDA allotment record verification, NRANVP lease succession drafting, and e-Panjiyan Book III registration.
+                      </p>
+                    </div>
                   </div>
-                  <p className="text-xs text-slate-600 leading-relaxed">
-                    Kamal Vihar (1600-acre township), Indraprastha Raipura, Nava Raipur Atal Nagar Sectors (27, 29, 30), Boriyakhurd, and Kaushalya Mata Vihar.
-                  </p>
+
+                  <div className="pt-4 mt-4 border-t border-slate-100 flex items-center justify-between">
+                    <span className="text-xs font-bold text-slate-500">RDA &amp; Smart City Plots</span>
+                    <Link
+                      href="/start"
+                      onClick={handleStartDraft}
+                      aria-label="Will Drafting Services in Nava Raipur"
+                      className="inline-flex items-center gap-1.5 text-xs font-bold text-[#C65378] hover:text-[#a13c5d] group-hover:translate-x-0.5 transition-all"
+                    >
+                      <span>Draft Nava Raipur Will</span>
+                      <ArrowRight className="w-3.5 h-3.5" />
+                    </Link>
+                  </div>
                 </div>
 
-                <div className="bg-white rounded-2xl border border-slate-200/90 p-5 space-y-2.5 shadow-xs">
-                  <div className="flex items-center gap-2">
-                    <Scale className="w-4 h-4 text-[#C65378]" />
-                    <h3 className="font-bold text-sm text-slate-900">Commercial &amp; Trade Belts</h3>
+                {/* AREA 3: PANDRI & DEVENDRA NAGAR */}
+                <div className="rounded-3xl bg-white border border-slate-200/90 p-5 sm:p-6 shadow-xs hover:shadow-md transition-all flex flex-col justify-between group">
+                  <div className="space-y-3.5">
+                    <div className="flex items-center justify-between gap-2">
+                      <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-rose-50 text-[#C65378] border border-rose-100">
+                        <MapPin className="w-3.5 h-3.5" />
+                        Prime Commercial Core
+                      </span>
+                      <span className="text-[11px] font-semibold text-slate-500 bg-slate-100 px-2.5 py-1 rounded-lg">
+                        SRO Raipur 2 (Pandri)
+                      </span>
+                    </div>
+
+                    <h3 className="font-extrabold text-lg text-slate-900 group-hover:text-[#C65378] transition-colors">
+                      Will Drafting in Pandri &amp; Devendra Nagar
+                    </h3>
+
+                    <div className="flex flex-wrap gap-1.5 text-[11px] text-slate-600">
+                      <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Pandri Cloth Market</span>
+                      <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Devendra Nagar</span>
+                      <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Mowa</span>
+                      <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Lodhipara</span>
+                      <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Fafadih</span>
+                    </div>
+
+                    <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                      Specialized <strong>Will drafting in Pandri and Devendra Nagar</strong> for business families owning commercial showrooms, textile wholesale shops, and residential floors. Protects business continuity through partnership equity bequests, proprietary trade licenses, director loans, and commercial asset distribution.
+                    </p>
+
+                    <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
+                      <div className="flex items-center gap-2 font-bold text-slate-900">
+                        <Building className="w-3.5 h-3.5 text-[#C65378]" />
+                        <span>SRO Hub: Near Cloth Market Complex, Pandri</span>
+                      </div>
+                      <p className="text-[11px] text-slate-500">
+                        Business equity transmission, commercial property documentation, and expedited Book III registration.
+                      </p>
+                    </div>
                   </div>
-                  <p className="text-xs text-slate-600 leading-relaxed">
-                    Pandri Cloth Market, Devendra Nagar commercial core, Malviya Road, Gol Bazar, Fafadih, Gudhiyari, and Jai Stambh Chowk trade houses.
-                  </p>
+
+                  <div className="pt-4 mt-4 border-t border-slate-100 flex items-center justify-between">
+                    <span className="text-xs font-bold text-slate-500">Commercial &amp; Residential</span>
+                    <Link
+                      href="/start"
+                      onClick={handleStartDraft}
+                      aria-label="Will Drafting Services in Pandri"
+                      className="inline-flex items-center gap-1.5 text-xs font-bold text-[#C65378] hover:text-[#a13c5d] group-hover:translate-x-0.5 transition-all"
+                    >
+                      <span>Draft Pandri Will</span>
+                      <ArrowRight className="w-3.5 h-3.5" />
+                    </Link>
+                  </div>
                 </div>
 
-                <div className="bg-white rounded-2xl border border-slate-200/90 p-5 space-y-2.5 shadow-xs">
-                  <div className="flex items-center gap-2">
-                    <ShieldCheck className="w-4 h-4 text-[#C65378]" />
-                    <h3 className="font-bold text-sm text-slate-900">Industrial &amp; Steel Zones</h3>
+                {/* AREA 4: VIP ROAD & TELIBANDHA */}
+                <div className="rounded-3xl bg-white border border-slate-200/90 p-5 sm:p-6 shadow-xs hover:shadow-md transition-all flex flex-col justify-between group">
+                  <div className="space-y-3.5">
+                    <div className="flex items-center justify-between gap-2">
+                      <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-rose-50 text-[#C65378] border border-rose-100">
+                        <MapPin className="w-3.5 h-3.5" />
+                        Luxury Lakeside Corridor
+                      </span>
+                      <span className="text-[11px] font-semibold text-slate-500 bg-slate-100 px-2.5 py-1 rounded-lg">
+                        SRO Raipur 1 (Collectorate)
+                      </span>
+                    </div>
+
+                    <h3 className="font-extrabold text-lg text-slate-900 group-hover:text-[#C65378] transition-colors">
+                      Will Drafting on VIP Road &amp; Telibandha
+                    </h3>
+
+                    <div className="flex flex-wrap gap-1.5 text-[11px] text-slate-600">
+                      <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">VIP Road</span>
+                      <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Marine Drive (Telibandha)</span>
+                      <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Labhandi</span>
+                      <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">GE Road Corridor</span>
+                    </div>
+
+                    <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                      Exclusive <strong>Will drafting on VIP Road and Telibandha</strong> for luxury gated communities, villas, penthouses, and commercial plots. Formulates clear life-interest covenants for surviving spouses, structured trust bequeathals for minor grandchildren, and overseas investment transfer clauses for NRI family members.
+                    </p>
+
+                    <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
+                      <div className="flex items-center gap-2 font-bold text-slate-900">
+                        <Building className="w-3.5 h-3.5 text-[#C65378]" />
+                        <span>SRO Hub: Civil Lines / Katora Talab Road</span>
+                      </div>
+                      <p className="text-[11px] text-slate-500">
+                        High-net-worth estate structuring, private family asset mapping, and priority Sub-Registrar coordination.
+                      </p>
+                    </div>
                   </div>
-                  <p className="text-xs text-slate-600 leading-relaxed">
-                    Urla Industrial Area, Siltara Industrial Growth Centre, Bhanpuri, Birgaon, Rawabhatha, Sarora, and CSIDC factory plot allotments.
-                  </p>
+
+                  <div className="pt-4 mt-4 border-t border-slate-100 flex items-center justify-between">
+                    <span className="text-xs font-bold text-slate-500">Luxury Villas &amp; Penthouses</span>
+                    <Link
+                      href="/start"
+                      onClick={handleStartDraft}
+                      aria-label="Will Drafting Services on VIP Road"
+                      className="inline-flex items-center gap-1.5 text-xs font-bold text-[#C65378] hover:text-[#a13c5d] group-hover:translate-x-0.5 transition-all"
+                    >
+                      <span>Draft VIP Road Will</span>
+                      <ArrowRight className="w-3.5 h-3.5" />
+                    </Link>
+                  </div>
                 </div>
 
-                <div className="bg-white rounded-2xl border border-slate-200/90 p-5 space-y-2.5 shadow-xs">
-                  <div className="flex items-center gap-2">
-                    <FileText className="w-4 h-4 text-[#C65378]" />
-                    <h3 className="font-bold text-sm text-slate-900">Logistics &amp; Highway Hubs</h3>
+                {/* AREA 5: URLA & SILTARA INDUSTRIAL AREA */}
+                <div className="rounded-3xl bg-white border border-slate-200/90 p-5 sm:p-6 shadow-xs hover:shadow-md transition-all flex flex-col justify-between group">
+                  <div className="space-y-3.5">
+                    <div className="flex items-center justify-between gap-2">
+                      <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-rose-50 text-[#C65378] border border-rose-100">
+                        <MapPin className="w-3.5 h-3.5" />
+                        Industrial &amp; Manufacturing
+                      </span>
+                      <span className="text-[11px] font-semibold text-slate-500 bg-slate-100 px-2.5 py-1 rounded-lg">
+                        SRO Dharsiwa (Industrial)
+                      </span>
+                    </div>
+
+                    <h3 className="font-extrabold text-lg text-slate-900 group-hover:text-[#C65378] transition-colors">
+                      Will Drafting in Urla &amp; Siltara Industrial Belt
+                    </h3>
+
+                    <div className="flex flex-wrap gap-1.5 text-[11px] text-slate-600">
+                      <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Urla Industrial Area</span>
+                      <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Siltara Growth Centre</span>
+                      <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Bhanpuri</span>
+                      <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Birgaon</span>
+                      <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Rawabhatha</span>
+                    </div>
+
+                    <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                      Comprehensive <strong>Will drafting in Urla and Siltara</strong> for industrialists operating sponge iron plants, steel rolling mills, and logistics parks. Structures succession for CSIDC leasehold industrial plots, corporate shareholdings under Companies Act 2013, factory machinery, and bank guarantees to prevent operational freeze.
+                    </p>
+
+                    <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
+                      <div className="flex items-center gap-2 font-bold text-slate-900">
+                        <Building className="w-3.5 h-3.5 text-[#C65378]" />
+                        <span>SRO Hub: Tehsil Office Complex, Dharsiwa</span>
+                      </div>
+                      <p className="text-[11px] text-slate-500">
+                        CSIDC industrial lease transfer advisory, corporate share transfer clauses, and Book III registration.
+                      </p>
+                    </div>
                   </div>
-                  <p className="text-xs text-slate-600 leading-relaxed">
-                    Mandir Hasaud logistics corridor, Tatibandh Transport Nagar, Ring Road 1 &amp; 2, GE Road corridor, and Kumhari approach tracts.
-                  </p>
+
+                  <div className="pt-4 mt-4 border-t border-slate-100 flex items-center justify-between">
+                    <span className="text-xs font-bold text-slate-500">Factory Leases &amp; Corporate Equity</span>
+                    <Link
+                      href="/start"
+                      onClick={handleStartDraft}
+                      aria-label="Will Drafting Services in Urla Siltara"
+                      className="inline-flex items-center gap-1.5 text-xs font-bold text-[#C65378] hover:text-[#a13c5d] group-hover:translate-x-0.5 transition-all"
+                    >
+                      <span>Draft Industrial Will</span>
+                      <ArrowRight className="w-3.5 h-3.5" />
+                    </Link>
+                  </div>
                 </div>
 
-                <div className="bg-white rounded-2xl border border-slate-200/90 p-5 space-y-2.5 shadow-xs">
-                  <div className="flex items-center gap-2">
-                    <Home className="w-4 h-4 text-[#C65378]" />
-                    <h3 className="font-bold text-sm text-slate-900">Durg-Bhilai Twin City Belt</h3>
+                {/* AREA 6: SAMTA COLONY & CHOUBEY COLONY */}
+                <div className="rounded-3xl bg-white border border-slate-200/90 p-5 sm:p-6 shadow-xs hover:shadow-md transition-all flex flex-col justify-between group">
+                  <div className="space-y-3.5">
+                    <div className="flex items-center justify-between gap-2">
+                      <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-rose-50 text-[#C65378] border border-rose-100">
+                        <MapPin className="w-3.5 h-3.5" />
+                        Heritage &amp; Traditional Enclaves
+                      </span>
+                      <span className="text-[11px] font-semibold text-slate-500 bg-slate-100 px-2.5 py-1 rounded-lg">
+                        SRO Raipur 2 &amp; SRO 1
+                      </span>
+                    </div>
+
+                    <h3 className="font-extrabold text-lg text-slate-900 group-hover:text-[#C65378] transition-colors">
+                      Will Drafting in Samta Colony &amp; Choubey Colony
+                    </h3>
+
+                    <div className="flex flex-wrap gap-1.5 text-[11px] text-slate-600">
+                      <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Samta Colony</span>
+                      <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Choubey Colony</span>
+                      <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Gudhiyari</span>
+                      <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Tagore Nagar</span>
+                      <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Tatibandh</span>
+                    </div>
+
+                    <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                      Focused <strong>Will drafting in Samta Colony and Choubey Colony</strong> for multi-generational family homes, ancestral bungalows, and clinic establishments. Resolves ancestral versus self-acquired property complexities, specifies clear floor-wise distributions for siblings, and secures medical sound-mind certificates for elderly testators.
+                    </p>
+
+                    <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
+                      <div className="flex items-center gap-2 font-bold text-slate-900">
+                        <Building className="w-3.5 h-3.5 text-[#C65378]" />
+                        <span>SRO Hub: Pandri &amp; Civil Lines Collectorate</span>
+                      </div>
+                      <p className="text-[11px] text-slate-500">
+                        Doorstep registration for senior residents, ancestral property succession advice, and NGDRS slot booking.
+                      </p>
+                    </div>
                   </div>
-                  <p className="text-xs text-slate-600 leading-relaxed">
-                    Comprehensive cross-district succession support for families owning assets across Raipur, Bhilai Steel Plant townships, and Durg collectorate.
-                  </p>
+
+                  <div className="pt-4 mt-4 border-t border-slate-100 flex items-center justify-between">
+                    <span className="text-xs font-bold text-slate-500">Ancestral Homes &amp; Modern Floors</span>
+                    <Link
+                      href="/start"
+                      onClick={handleStartDraft}
+                      aria-label="Will Drafting Services in Samta Colony"
+                      className="inline-flex items-center gap-1.5 text-xs font-bold text-[#C65378] hover:text-[#a13c5d] group-hover:translate-x-0.5 transition-all"
+                    >
+                      <span>Draft Samta Colony Will</span>
+                      <ArrowRight className="w-3.5 h-3.5" />
+                    </Link>
+                  </div>
                 </div>
               </div>
             </section>
