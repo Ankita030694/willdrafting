@@ -27,7 +27,7 @@ export const TEMPLATES_DATA: TemplateItem[] = [
     language: "en",
     readTime: "8 min",
     date: "October 19, 2026",
-    author: "Advocate Rajeshwar Rao",
+    author: "Advocate Anuj Anand Malik",
     authorRole: "Senior Succession Counsel, AMA Legal Solutions",
     summary:
       "Clause-annotated printable Will template for Indian movable and immovable properties. Fully compliant with Section 63 of the Indian Succession Act, 1925 on plain paper with zero stamp duty.",
@@ -44,7 +44,7 @@ export const TEMPLATES_DATA: TemplateItem[] = [
     language: "hi",
     readTime: "9 min",
     date: "October 19, 2026",
-    author: "Advocate Rajeshwar Rao",
+    author: "Advocate Anuj Anand Malik",
     authorRole: "Senior Succession Counsel, AMA Legal Solutions",
     summary:
       "भारतीय उत्तराधिकार अधिनियम, 1925 की धारा 63 के अनुसार हिंदी में खंड-दर-खंड समझाया गया वसीयतनामा प्रारूप, वैधता जाँच सूची और 3 आम गलतियाँ।",
@@ -61,7 +61,7 @@ export const TEMPLATES_DATA: TemplateItem[] = [
     language: "en",
     readTime: "7 min",
     date: "October 19, 2026",
-    author: "Advocate Rajeshwar Rao",
+    author: "Advocate Anuj Anand Malik",
     authorRole: "Senior Succession Counsel, AMA Legal Solutions",
     summary:
       "Clause-annotated printable Codicil template under Section 2(b) and Section 63 of the Indian Succession Act, 1925. Learn when to use a codicil versus drafting a new Will.",
@@ -78,7 +78,7 @@ export const TEMPLATES_DATA: TemplateItem[] = [
     language: "en",
     readTime: "9 min",
     date: "October 19, 2026",
-    author: "Advocate Rajeshwar Rao",
+    author: "Advocate Anuj Anand Malik",
     authorRole: "Senior Succession Counsel, AMA Legal Solutions",
     summary:
       "Advance Medical Directive and Living Will template reflecting the January 2023 Supreme Court order. Learn notary attestation rules, surrogate decision-maker appointment, and hospital medical board procedures.",
@@ -95,7 +95,7 @@ export const TEMPLATES_DATA: TemplateItem[] = [
     language: "en",
     readTime: "9 min",
     date: "October 20, 2026",
-    author: "Advocate Rajeshwar Rao",
+    author: "Advocate Anuj Anand Malik",
     authorRole: "Senior Succession Counsel, AMA Legal Solutions",
     summary:
       "Clause-annotated printable Relinquishment Deed (Release Deed) format for transferring inherited co-owner shares in immovable property under Section 17 of the Registration Act, 1908.",

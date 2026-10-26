@@ -1818,10 +1818,10 @@ export default function HinduWomanPropertyRightsClient() {
             <div className="rounded-3xl border border-slate-200/80 bg-white p-5 shadow-xs space-y-3">
               <div className="flex items-center gap-3">
                 <div className="w-12 h-12 rounded-full bg-rose-100 text-[#C65378] font-black flex items-center justify-center text-sm shrink-0">
-                  RR
+                  AAM
                 </div>
                 <div>
-                  <h4 className="font-extrabold text-slate-900 text-sm">Advocate Rajeshwar Rao</h4>
+                  <h4 className="font-extrabold text-slate-900 text-sm">Advocate Anuj Anand Malik</h4>
                   <p className="text-[11px] font-bold text-[#C65378]">Senior Succession Counsel</p>
                   <p className="text-[10px] text-slate-500">WillDrafting.in</p>
                 </div>

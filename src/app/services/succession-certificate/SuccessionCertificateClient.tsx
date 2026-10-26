@@ -1295,10 +1295,10 @@ export default function SuccessionCertificateClient() {
             <div className="bg-white rounded-2xl border border-slate-200 p-5 shadow-xs">
               <div className="flex items-center gap-3.5 mb-3">
                 <div className="w-12 h-12 rounded-full bg-rose-100 text-[#C65378] font-black text-sm flex items-center justify-center shrink-0 border border-rose-200">
-                  AMA
+                  AAM
                 </div>
                 <div>
-                  <h3 className="font-bold text-slate-900 text-sm">Adv. Anuj Anand</h3>
+                  <h3 className="font-bold text-slate-900 text-sm">Advocate Anuj Anand Malik</h3>
                   <p className="text-[11px] font-semibold text-[#C65378]">
                     Senior Testamentary Counsel
                   </p>

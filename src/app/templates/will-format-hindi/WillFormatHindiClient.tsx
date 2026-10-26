@@ -1273,11 +1273,11 @@ export default function WillFormatHindiClient() {
             {/* CARD 1: AUTHOR BIO */}
             <div className="bg-white rounded-3xl border border-slate-200/80 p-5 shadow-xs space-y-3">
               <div className="flex items-center gap-3">
-                <div className="w-12 h-12 rounded-full bg-rose-50 border border-rose-100 flex items-center justify-center text-[#C65378] font-bold text-base shrink-0">
-                  RR
+                <div className="w-12 h-12 rounded-full bg-rose-50 border border-rose-100 flex items-center justify-center text-[#C65378] font-bold text-sm font-bold shrink-0">
+                  AAM
                 </div>
                 <div>
-                  <div className="font-bold text-sm text-slate-900">एडवोकेट राजेश्वर राव</div>
+                  <div className="font-bold text-sm text-slate-900">एडवोकेट अनुज आनंद मलिक</div>
                   <div className="text-[12px] font-semibold text-[#C65378]">वरिष्ठ उत्तराधिकार अधिवक्ता</div>
                 </div>
               </div>

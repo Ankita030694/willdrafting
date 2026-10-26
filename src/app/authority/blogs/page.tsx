@@ -54,16 +54,8 @@ interface PromptProfile {
 
 const WILLDRAFTING_AUTHORS: Array<{ name: string; role: string }> = [
   {
-    name: "Advocate Sneha Jaiswal",
-    role: "Senior Succession & Trust Counsel, WillDrafting.in",
-  },
-  {
-    name: "Advocate Rajeshwar Rao",
-    role: "Senior Estate & FEMA Counsel, WillDrafting.in",
-  },
-  {
-    name: "Advocate Sunita Deshmukh",
-    role: "Partner, Succession & Wealth Practice, WillDrafting.in",
+    name: "Advocate Anuj Anand Malik",
+    role: "Senior Succession Counsel, WillDrafting.in",
   },
   {
     name: "WillDrafting.in Editorial Desk",

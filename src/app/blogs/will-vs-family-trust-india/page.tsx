@@ -156,7 +156,7 @@ export default async function Page() {
 //         image: imageUrl,
 //         author: {
 //           "@type": "Person",
-//           name: "Adv. Sneha Jaiswal",
+//           name: "Advocate Anuj Anand Malik",
 //           jobTitle: "Senior Succession & Trust Counsel",
 //           worksFor: {
 //             "@type": "LegalService",

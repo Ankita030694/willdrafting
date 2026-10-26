@@ -156,7 +156,7 @@ export default async function Page() {
 //         articleSection: "Capital Markets & Inheritance Law",
 //         author: {
 //           "@type": "Person",
-//           name: "Advocate Rajeshwar Rao",
+//           name: "Advocate Anuj Anand Malik",
 //           jobTitle: "Senior Estate & Succession Counsel",
 //           worksFor: {
 //             "@type": "LegalService",

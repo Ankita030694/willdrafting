@@ -1331,11 +1331,11 @@ export default function SecondWifeChildrenRightsClient() {
             {/* CARD 1: AUTHOR BIO */}
             <div className="bg-white rounded-2xl border border-slate-200/80 shadow-xs p-5">
               <div className="flex items-center gap-3 mb-3">
-                <div className="w-12 h-12 rounded-full bg-rose-100 text-[#C65378] flex items-center justify-center font-bold text-base shrink-0">
-                  RR
+                <div className="w-12 h-12 rounded-full bg-rose-100 text-[#C65378] flex items-center justify-center font-bold text-sm font-bold shrink-0">
+                  AAM
                 </div>
                 <div>
-                  <h3 className="font-extrabold text-slate-900 text-sm">Advocate Rajeshwar Rao</h3>
+                  <h3 className="font-extrabold text-slate-900 text-sm">Advocate Anuj Anand Malik</h3>
                   <p className="text-[11px] font-bold text-[#C65378]">Senior Succession Counsel</p>
                   <p className="text-[10px] text-slate-500">WillDrafting.in</p>
                 </div>

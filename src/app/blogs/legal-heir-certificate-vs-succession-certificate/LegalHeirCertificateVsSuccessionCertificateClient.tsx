@@ -1334,15 +1334,15 @@ export default function LegalHeirCertificateVsSuccessionCertificateClient() {
             <div className="bg-white rounded-3xl border border-[#172228]/10 shadow-xs p-5">
               <div className="flex items-center gap-3 mb-3">
                 <div className="w-12 h-12 rounded-full bg-rose-100 text-[#C65378] font-bold flex items-center justify-center text-sm shrink-0">
-                  RR
+                  AAM
                 </div>
                 <div>
-                  <h3 className="font-bold text-sm text-[#172228] leading-tight">Advocate Rajeshwar Rao</h3>
+                  <h3 className="font-bold text-sm text-[#172228] leading-tight">Advocate Anuj Anand Malik</h3>
                   <p className="text-[11px] font-semibold text-[#C65378]">Senior Estate &amp; Succession Counsel</p>
                 </div>
               </div>
               <p className="text-xs text-[#55636D] leading-relaxed">
-                Advocate Rao has over 15 years of experience in testamentary law, civil court succession petitions, and high-value estate planning at WillDrafting.in.
+                Advocate Anuj Anand Malik has over 15 years of experience in testamentary law, civil court succession petitions, and high-value estate planning at WillDrafting.in.
               </p>
               <div className="mt-3 pt-3 border-t border-[#172228]/10 flex items-center justify-between text-[11px]">
                 <span className="text-[#5F7E75] font-semibold flex items-center gap-1">

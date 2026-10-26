@@ -1279,11 +1279,11 @@ export default function MirrorWillsForCouplesClient() {
             {/* CARD 1: AUTHOR PROFILE */}
             <div className="bg-white rounded-3xl border border-slate-200/90 shadow-xs p-5">
               <div className="flex items-center gap-3">
-                <div className="w-12 h-12 rounded-full bg-rose-100 text-[#C65378] font-bold text-base flex items-center justify-center shrink-0">
-                  AM
+                <div className="w-12 h-12 rounded-full bg-rose-100 text-[#C65378] font-bold text-sm font-bold flex items-center justify-center shrink-0">
+                  AAM
                 </div>
                 <div>
-                  <h3 className="font-bold text-slate-900 text-sm">Adv. Anuj Malik</h3>
+                  <h3 className="font-bold text-slate-900 text-sm">Advocate Anuj Anand Malik</h3>
                   <p className="text-[11px] font-semibold text-[#C65378]">Senior Succession Counsel</p>
                   <p className="text-[10px] text-slate-500">AMA Legal Solutions</p>
                 </div>

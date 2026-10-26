@@ -1774,11 +1774,11 @@ export default function ProbateCheckerClient() {
             {/* CARD 1: AUTHOR BIO CARD */}
             <div className="bg-white rounded-3xl border border-slate-200/90 shadow-xs p-5 space-y-3">
               <div className="flex items-center gap-3">
-                <div className="w-12 h-12 rounded-full bg-rose-100 text-[#C65378] font-black text-base flex items-center justify-center shrink-0">
-                  AM
+                <div className="w-12 h-12 rounded-full bg-rose-100 text-[#C65378] font-black text-sm font-bold flex items-center justify-center shrink-0">
+                  AAM
                 </div>
                 <div>
-                  <div className="font-extrabold text-slate-900 text-sm">Adv. A. M. Jaiswal</div>
+                  <div className="font-extrabold text-slate-900 text-sm">Advocate Anuj Anand Malik</div>
                   <div className="text-[11px] font-bold text-[#C65378] uppercase tracking-wider">
                     Senior Succession Counsel
                   </div>

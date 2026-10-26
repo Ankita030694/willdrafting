@@ -18,6 +18,71 @@ const nextConfig: NextConfig = {
   async redirects() {
     return [
       {
+        source: "/locations/will-drafting-in-faridabad",
+        destination: "/locations/faridabad",
+        permanent: true,
+      },
+      {
+        source: "/locations/will-drafting-in-rajkot",
+        destination: "/locations/rajkot",
+        permanent: true,
+      },
+      {
+        source: "/locations/will-drafting-in-amritsar",
+        destination: "/locations/amritsar",
+        permanent: true,
+      },
+      {
+        source: "/locations/will-drafting-in-dispur",
+        destination: "/locations/dispur",
+        permanent: true,
+      },
+      {
+        source: "/locations/will-drafting-in-jammu",
+        destination: "/locations/jammu",
+        permanent: true,
+      },
+      {
+        source: "/locations/will-drafting-in-srinagar",
+        destination: "/locations/srinagar",
+        permanent: true,
+      },
+      {
+        source: "/locations/will-drafting-in-itanagar",
+        destination: "/locations/itanagar",
+        permanent: true,
+      },
+      {
+        source: "/locations/will-drafting-in-kota",
+        destination: "/locations/kota",
+        permanent: true,
+      },
+      {
+        source: "/locations/will-drafting-in-gwalior",
+        destination: "/locations/gwalior",
+        permanent: true,
+      },
+      {
+        source: "/locations/will-drafting-in-tiruchirappalli",
+        destination: "/locations/tiruchirappalli",
+        permanent: true,
+      },
+      {
+        source: "/locations/will-drafting-in-udaipur",
+        destination: "/locations/udaipur",
+        permanent: true,
+      },
+      {
+        source: "/locations/will-drafting-in-meerut",
+        destination: "/locations/meerut",
+        permanent: true,
+      },
+      {
+        source: "/locations/will-drafting-in-ghaziabad",
+        destination: "/locations/ghaziabad",
+        permanent: true,
+      },
+      {
         source: "/locations/will-drafting-in-gandhinagar",
         destination: "/locations/gandhinagar",
         permanent: true,
@@ -225,6 +290,21 @@ const nextConfig: NextConfig = {
       {
         source: "/locations/will-drafting-in-nashik",
         destination: "/locations/nashik",
+        permanent: true,
+      },
+      {
+        source: "/locations/will-drafting-in-panaji",
+        destination: "/locations/panaji",
+        permanent: true,
+      },
+      {
+        source: "/locations/will-drafting-in-gangtok",
+        destination: "/locations/gangtok",
+        permanent: true,
+      },
+      {
+        source: "/locations/will-drafting-in-shimla",
+        destination: "/locations/shimla",
         permanent: true,
       },
       {

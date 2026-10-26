@@ -82,7 +82,7 @@ export const BLOG_ARTICLES: BlogArticle[] = [
 //       "A comprehensive statutory guide to testamentary and intestate succession for Christians and Parsis under Part V and Part VI of the Indian Succession Act, 1925.",
 //     date: "October 21, 2026",
 //     imageSrc: "/images/christian-parsi-will-indian-succession-act.jpg",
-//     author: "Advocate Sneha Jaiswal",
+//     author: "Advocate Anuj Anand Malik",
 //     authorRole: "Senior Succession & Trust Counsel, WillDrafting.in",
 //     shortVersion: [
 //       "Christians and Parsis in India enjoy 100% testamentary freedom to bequeath self-acquired and inherited property without coparcenary or Islamic 1/3 restrictions.",
@@ -151,7 +151,7 @@ export const BLOG_ARTICLES: BlogArticle[] = [
 //       "A comprehensive legal guide on digital estate planning in India: how to safely pass on cryptocurrency, private keys, cloud archives, and online accounts to your heirs using the Two-Document Method.",
 //     date: "October 21, 2026",
 //     imageSrc: "/images/digital-assets-crypto-will-india.jpg",
-//     author: "Advocate Sneha Jaiswal",
+//     author: "Advocate Anuj Anand Malik",
 //     authorRole: "Senior Succession & Trust Counsel, WillDrafting.in",
 //     shortVersion: [
 //       "Cryptocurrency is legally classified as a Virtual Digital Asset (VDA) under Section 2(47A) of the Income Tax Act, 1961, and can be validly bequeathed under Section 30 of the Indian Succession Act, 1925.",
@@ -262,7 +262,7 @@ export const BLOG_ARTICLES: BlogArticle[] = [
 //       "Deciding between a Will and a Private Family Trust is a critical milestone for Indian families. A Will offers simplicity and zero recurring costs under the Indian Succession Act, while a Family Trust under the Indian Trusts Act delivers total privacy, milestone payouts, and asset protection against creditors.",
 //     date: "October 21, 2026",
 //     imageSrc: "/images/will-vs-family-trust-india.jpg",
-//     author: "Advocate Sneha Jaiswal",
+//     author: "Advocate Anuj Anand Malik",
 //     authorRole: "Senior Succession Counsel, WillDrafting.in",
 //     shortVersion: [
 //       "A simple Section 63 Will is 100% sufficient for 90%+ of Indian families with estates under ₹5 Crores and harmonious adult heirs.",
@@ -353,7 +353,7 @@ export const BLOG_ARTICLES: BlogArticle[] = [
 //       "Thousands of Indians pay for notary stamps believing their Will is government-protected. The statutory reality: notarization adds zero legal validity under Section 63 of the Indian Succession Act. A plain paper Will with two witnesses is 100% valid, while registration adds formidable evidentiary weight in court.",
 //     date: "October 21, 2026",
 //     imageSrc: "/images/notarized-will-vs-registered-will-india.jpg",
-//     author: "Advocate Sneha Jaiswal",
+//     author: "Advocate Anuj Anand Malik",
 //     authorRole: "Senior Succession Counsel, WillDrafting.in",
 //     shortVersion: [
 //       "Notarization adds ZERO legal validity under Indian succession law; a plain paper Will with two Section 63 witnesses is equally valid.",
@@ -443,7 +443,7 @@ export const BLOG_ARTICLES: BlogArticle[] = [
 //       "Choosing between a Gift Deed and a Last Will is one of the most critical estate planning decisions in India. A Gift Deed offers immediate irrevocable title transfer but incurs high stamp duty and loss of control. A Will preserves 100% control for life, incurs ₹0 stamp duty, and protects against elder abandonment.",
 //     date: "October 21, 2026",
 //     imageSrc: "/images/gift-deed-vs-will-india.jpg",
-//     author: "Advocate Rajeshwar Rao",
+//     author: "Advocate Anuj Anand Malik",
 //     authorRole: "Senior Succession Counsel, WillDrafting.in",
 //     shortVersion: [
 //       "A Gift Deed transfers property immediately during lifetime under Section 122 of TPA, whereas a Will operates only upon demise under Section 59 of ISA.",
@@ -530,7 +530,7 @@ export const BLOG_ARTICLES: BlogArticle[] = [
 //     lead: "Relying on a single US, UK, UAE, or Canadian Will to transfer Indian real estate and NRE/NRO bank accounts forces your family into multi-year foreign probate re-sealing under Section 228 of the Indian Succession Act.",
 //     date: "October 12, 2026",
 //     imageSrc: "/3.jpg",
-//     author: "Advocate Rajeshwar Rao",
+//     author: "Advocate Anuj Anand Malik",
 //     authorRole: "Senior Estate & FEMA Counsel, WillDrafting.in",
 //     shortVersion: [
 //       "Always maintain a separate Indian Will exclusively for assets situated in India (the 'Two-Will Strategy') so Indian transmission does not wait for foreign probate",
@@ -610,7 +610,7 @@ export const BLOG_ARTICLES: BlogArticle[] = [
 //     lead: "In landmark rulings from Sarbati Devi to Shakti Yezdani (2023), the Supreme Court of India has settled the law: a nominee is merely a caretaker trustee, and your Will always overrides nomination.",
 //     date: "October 08, 2026",
 //     imageSrc: "/images/asset-bequests.jpg",
-//     author: "Advocate Sunita Deshmukh",
+//     author: "Advocate Anuj Anand Malik",
 //     authorRole: "Partner, Succession & Wealth Practice, WillDrafting.in",
 //     shortVersion: [
 //       "A nominee on a bank account, Fixed Deposit, Mutual Fund, or Demat account is ONLY a provisional custodian (trustee), not the legal owner of the money",
@@ -689,7 +689,7 @@ export const BLOG_ARTICLES: BlogArticle[] = [
 //     lead: "For 100 years, Section 213 of the Indian Succession Act forced Hindus, Buddhists, Sikhs, and Jains in Mumbai, Chennai, and Kolkata to obtain compulsory court probate. Here is how the Repealing and Amending Act, 2025 changes the law, and when probate is still required.",
 //     date: "October 04, 2026",
 //     imageSrc: "/images/advocate.jpg",
-//     author: "Advocate Rajeshwar Rao",
+//     author: "Advocate Anuj Anand Malik",
 //     authorRole: "Senior Counsel, High Court, WillDrafting.in",
 //     shortVersion: [
 //       "Under Section 2(f) of the Indian Succession Act, 'Probate' is a copy of a Will certified under the seal of a court of competent jurisdiction granting administration to the executor",
@@ -769,7 +769,7 @@ export const BLOG_ARTICLES: BlogArticle[] = [
 //     lead: "Under Indian succession law, a Will does not require expensive non-judicial stamp paper or mandatory registration to be 100% legally enforceable in court.",
 //     date: "July 15, 2026",
 //     imageSrc: "/2.jpg",
-//     author: "Advocate Rajeshwar Rao",
+//     author: "Advocate Anuj Anand Malik",
 //     authorRole: "Senior Counsel, High Court",
 //     shortVersion: [
 //       "A Will written on plain A4 paper is 100% legally valid under Indian law",
@@ -831,7 +831,7 @@ export const BLOG_ARTICLES: BlogArticle[] = [
 //     lead: "Prevent child custody from becoming a contested courtroom battle. Essential guidelines on nominating primary and alternate testamentary guardians.",
 //     date: "July 02, 2026",
 //     imageSrc: "/images/hero-family.jpg",
-//     author: "Sunita Deshmukh",
+//     author: "Advocate Anuj Anand Malik",
 //     authorRole: "Family Law & Trust Specialist",
 //     shortVersion: [
 //       "Testamentary guardianship takes effect only if both legal parents have passed away",
@@ -890,7 +890,7 @@ export const BLOG_ARTICLES: BlogArticle[] = [
 //     lead: "Understanding statutory asset division under personal succession laws, and why family bank accounts and real estate get frozen during succession certificate hearings.",
 //     date: "June 28, 2026",
 //     imageSrc: "/images/senior-couple.jpg",
-//     author: "Advocate Rajeshwar Rao",
+//     author: "Advocate Anuj Anand Malik",
 //     authorRole: "Senior Counsel, High Court",
 //     shortVersion: [
 //       "Dying intestate means your estate is divided by rigid statutory formulas, not personal wishes",
@@ -950,7 +950,7 @@ export const BLOG_ARTICLES: BlogArticle[] = [
 //     lead: "Over 65% of civil property disputes in India begin because a testator tried to bequeath an entire ancestral property as if it were self-acquired. Here is how Section 30 of the Hindu Succession Act, 1956 governs what you can, and cannot, transfer by Will.",
 //     date: "October 16, 2026",
 //     imageSrc: "/4.jpg",
-//     author: "Advocate Rajeshwar Rao",
+//     author: "Advocate Anuj Anand Malik",
 //     authorRole: "Senior Estate & Succession Counsel, WillDrafting.in",
 //     shortVersion: [
 //       "You have 100% testamentary freedom over self-acquired property, you can bequeath it to anyone, including one child, a spouse, a friend, or a charity",
@@ -1075,7 +1075,7 @@ export const BLOG_ARTICLES: BlogArticle[] = [
 //     lead: "While registering a Will is optional under Section 18(e) of the Registration Act, 1908, a Sub-Registrar registered Will with biometric thumbprints and webcam photographs makes forgery challenges nearly impossible to sustain in court.",
 //     date: "October 16, 2026",
 //     imageSrc: "/2.jpg",
-//     author: "Advocate Sunita Deshmukh",
+//     author: "Advocate Anuj Anand Malik",
 //     authorRole: "Partner, Succession & Wealth Practice, WillDrafting.in",
 //     shortVersion: [
 //       "Under Section 18(e) of the Registration Act, 1908, Will registration is optional, an unregistered Will is 100% legally valid, and a registered Will can still be revoked or replaced at any time",
@@ -1212,7 +1212,7 @@ export const BLOG_ARTICLES: BlogArticle[] = [
 //     lead: "Unlike the Indian Succession Act or Hindu Succession Act, testamentary succession for Indian Muslims is governed by the Muslim Personal Law (Shariat) Application Act, 1937, which protects Quranic heirs by capping unconditional bequests at one-third (1/3rd) of the net estate.",
 //     date: "October 17, 2026",
 //     imageSrc: "/3.jpg",
-//     author: "Advocate Rajeshwar Rao",
+//     author: "Advocate Anuj Anand Malik",
 //     authorRole: "Senior Personal Law & Succession Counsel, WillDrafting.in",
 //     shortVersion: [
 //       "Under Islamic law (Shariat) in India, a Muslim can unconditionally bequeath up to 1/3rd (one-third) of their net estate (after funeral expenses and debts) by Will (Wasiyat)",
@@ -1464,7 +1464,7 @@ export const BLOG_ARTICLES: BlogArticle[] = [
 //     lead: "Understand when you need a Tehsildar-issued Legal Heir Certificate versus a Civil Court Succession Certificate under Part X of the Indian Succession Act, 1925 for bank accounts, shares, and inherited property.",
 //     date: "October 20, 2026",
 //     imageSrc: "/images/legal-heir-certificate-vs-succession-certificate-og.jpg",
-//     author: "Advocate Rajeshwar Rao",
+//     author: "Advocate Anuj Anand Malik",
 //     authorRole: "Senior Estate & Succession Counsel, WillDrafting.in",
 //     shortVersion: [
 //       "A Legal Heir Certificate is an administrative document issued by the local Tehsildar or SDM to establish family relationships for pensions, employee dues, and municipal property mutation",
@@ -1561,7 +1561,7 @@ export const BLOG_ARTICLES: BlogArticle[] = [
 //     lead: "Understand SEBI rules for transmission of demat shares after death. Learn nominee rights, the Rs 15 lakh simplified threshold, Form ISR-5 paperwork, and how a Will prevents frozen portfolios.",
 //     date: "October 20, 2026",
 //     imageSrc: "/images/demat-shares-transmission-sebi-process.jpg",
-//     author: "Advocate Rajeshwar Rao",
+//     author: "Advocate Anuj Anand Malik",
 //     authorRole: "Senior Estate & Succession Counsel, WillDrafting.in",
 //     shortVersion: [
 //       "SEBI Master Circular (May 2022) standardizes share transmission using Form ISR-5 across NSDL and CDSL depositories",
@@ -1630,7 +1630,7 @@ export const BLOG_ARTICLES: BlogArticle[] = [
 //       "Step-by-step statutory roadmap to find forgotten accounts on RBI's UDGAM portal, submit deceased depositor claim forms, navigate small claim thresholds, and reclaim money from the DEA Fund.",
 //     date: "October 20, 2026",
 //     imageSrc: "/images/claim-unclaimed-deposits-deceased-udgam.jpg",
-//     author: "Advocate Rajeshwar Rao",
+//     author: "Advocate Anuj Anand Malik",
 //     authorRole: "Senior Succession Counsel, WillDrafting.in",
 //     shortVersion: [
 //       "UDGAM is an RBI search portal across 30+ banks; claims must be filed physically at the home branch",
@@ -1691,7 +1691,7 @@ export const BLOG_ARTICLES: BlogArticle[] = [
 //       "A comprehensive statutory legal guide on the rights of married daughters in their father's property under the Hindu Succession Act, the 2005 Amendment, and the landmark Supreme Court ruling in Vineeta Sharma v. Rakesh Sharma.",
 //     date: "20-10-2026",
 //     imageSrc: "/images/married-daughter-rights-in-fathers-property.png",
-//     author: "Advocate Rajeshwar Rao",
+//     author: "Advocate Anuj Anand Malik",
 //     authorRole: "Senior Succession Counsel, WillDrafting.in",
 //     shortVersion: [
 //       "Under Section 6 of the Hindu Succession Act (amended in 2005), a daughter becomes an equal coparcener by birth, identical to a son.",
@@ -1810,7 +1810,7 @@ export const BLOG_ARTICLES: BlogArticle[] = [
 //       "Under Section 16 of the Hindu Marriage Act, children born of any marriage are deemed legitimate by law. Under the Supreme Court's landmark 2023 ruling in Revanasiddappa v. Mallikarjun, they inherit an equal share in their father's self-acquired property and his share in ancestral property.",
 //     date: "October 20, 2026",
 //     imageSrc: "/images/second-wife-children-property-rights-india.jpg",
-//     author: "Advocate Rajeshwar Rao",
+//     author: "Advocate Anuj Anand Malik",
 //     authorRole: "Senior Succession Counsel, WillDrafting.in",
 //     shortVersion: [
 //       "Under Section 16 of the Hindu Marriage Act, children born from a second marriage are deemed legitimate by law, even if the marriage itself is void or bigamous",
@@ -1945,7 +1945,7 @@ export const BLOG_ARTICLES: BlogArticle[] = [
 //       "Under Section 14 of the Hindu Succession Act, 1956, a Hindu woman is the absolute owner of all property in her possession. Under the landmark Supreme Court ruling in Pratibha Rani v. Suraj Kumar, Stridhan belongs exclusively to her. If she dies without a Will, Section 15 default rules can transfer her estate to her husband's family, making a Will under Section 30 essential.",
 //     date: "October 21, 2026",
 //     imageSrc: "/images/hindu-woman-property-rights-stridhan-will.jpg",
-//     author: "Advocate Rajeshwar Rao",
+//     author: "Advocate Anuj Anand Malik",
 //     authorRole: "Senior Succession Counsel, WillDrafting.in",
 //     shortVersion: [
 //       "Under Section 14(1) of the Hindu Succession Act, limited ownership was abolished; a Hindu woman is the 100% absolute owner of all assets in her possession",
@@ -2093,7 +2093,7 @@ export const BLOG_ARTICLES: BlogArticle[] = [
 //       "When the Karta of a Hindu Undivided Family dies, the HUF does not dissolve. Management passes to the senior-most coparcener, including the eldest daughter under the landmark Sujata Sharma ruling. While the Karta cannot will away the entire HUF property, Section 30 of the Hindu Succession Act empowers him to bequeath his undivided deemed coparcenary share.",
 //     date: "October 21, 2026",
 //     imageSrc: "/images/huf-property-after-death-of-karta.jpg",
-//     author: "Advocate Rajeshwar Rao",
+//     author: "Advocate Anuj Anand Malik",
 //     authorRole: "Senior Succession Counsel, WillDrafting.in",
 //     shortVersion: [
 //       "The death of the Karta does NOT dissolve an HUF; it continues as an active legal and income-tax entity with its unique PAN",

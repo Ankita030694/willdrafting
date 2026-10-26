@@ -1601,10 +1601,10 @@ export default function MarriedDaughterRightsClient() {
               </span>
               <div className="flex items-center gap-3">
                 <div className="w-12 h-12 rounded-full bg-[#172228] text-white flex items-center justify-center font-bold text-sm shrink-0">
-                  RR
+                  AAM
                 </div>
                 <div>
-                  <h4 className="text-sm font-extrabold text-slate-900 leading-tight">Advocate Rajeshwar Rao</h4>
+                  <h4 className="text-sm font-extrabold text-slate-900 leading-tight">Advocate Anuj Anand Malik</h4>
                   <p className="text-xs text-slate-500">Senior Succession Counsel</p>
                   <p className="text-[11px] text-[#5F7E75] font-semibold">15+ Years High Court Practice</p>
                 </div>

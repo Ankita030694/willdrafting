@@ -32,6 +32,9 @@ const NAV_ITEMS: NavItem[] = [
     hasDropdown: true,
     dropdownItems: [
       { label: "All Will Services", href: "/services" },
+      { label: "Legal Templates", href: "/templates" },
+      { label: "Succession Tools", href: "/tools" },
+      { label: "All 91 Locations", href: "/locations" },
       { label: "NRI & OCI Indian Will", href: "/services/nri-will-india" },
       { label: "Succession Calculator", href: "/tools/succession-calculator" },
       { label: "Legal Heir", href: "/services/legal-heir" },

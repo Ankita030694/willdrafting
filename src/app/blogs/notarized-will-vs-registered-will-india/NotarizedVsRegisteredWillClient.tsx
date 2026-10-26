@@ -1623,11 +1623,11 @@ export default function NotarizedVsRegisteredWillClient() {
             <div className="rounded-2xl bg-white border border-[#172228]/10 p-5 shadow-xs space-y-3">
               <div className="flex items-center gap-3">
                 <div className="w-10 h-10 rounded-full bg-slate-100 border border-slate-200 flex items-center justify-center text-[#172228] font-bold text-sm">
-                  SJ
+                  AAM
                 </div>
                 <div>
                   <h4 className="text-xs font-bold text-[#172228]">
-                    Adv. Sneha Jaiswal
+                    Advocate Anuj Anand Malik
                   </h4>
                   <span className="text-[11px] text-[#55636D] block">
                     Succession Counsel, WillDrafting.in

@@ -1476,11 +1476,11 @@ export default function WillVsFamilyTrustClient() {
             <div className="rounded-2xl bg-white border border-[#172228]/10 p-5 shadow-xs">
               <div className="flex items-center gap-3 mb-3">
                 <div className="w-12 h-12 rounded-full bg-[#172228] text-white font-extrabold flex items-center justify-center text-sm">
-                  SJ
+                  AAM
                 </div>
                 <div>
                   <h4 className="font-extrabold text-sm text-[#172228]">
-                    Adv. Sneha Jaiswal
+                    Advocate Anuj Anand Malik
                   </h4>
                   <p className="text-[11px] text-[#C65378] font-bold">
                     Senior Succession &amp; Trust Counsel

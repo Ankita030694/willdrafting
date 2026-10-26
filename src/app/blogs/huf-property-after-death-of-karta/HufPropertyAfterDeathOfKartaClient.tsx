@@ -1506,10 +1506,10 @@ export default function HufPropertyAfterDeathOfKartaClient() {
             <div className="bg-white rounded-2xl border border-slate-200/80 shadow-xs p-5 space-y-3">
               <div className="flex items-center gap-3">
                 <div className="w-12 h-12 rounded-full bg-rose-100 text-[#C65378] flex items-center justify-center font-extrabold text-sm shrink-0">
-                  RR
+                  AAM
                 </div>
                 <div>
-                  <h3 className="font-extrabold text-sm text-slate-900">Advocate Rajeshwar Rao</h3>
+                  <h3 className="font-extrabold text-sm text-slate-900">Advocate Anuj Anand Malik</h3>
                   <p className="text-[11px] font-bold text-[#C65378] uppercase tracking-wider">
                     Senior Succession Counsel
                   </p>

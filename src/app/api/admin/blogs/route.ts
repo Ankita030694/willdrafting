@@ -31,7 +31,7 @@ function serializeBlog(doc: BlogDoc) {
     keywords: Array.isArray(doc.keywords) ? doc.keywords : [],
     shortVersion: Array.isArray(doc.shortVersion) ? doc.shortVersion : [],
     actionSteps: Array.isArray(doc.actionSteps) ? doc.actionSteps : [],
-    author: doc.author || "Advocate Sneha Jaiswal",
+    author: doc.author || "Advocate Anuj Anand Malik",
     authorRole: doc.authorRole || "Senior Succession & Trust Counsel, WillDrafting.in",
     status: doc.status || "PUBLISHED",
     faqs: Array.isArray(doc.faqs) ? doc.faqs : [],
@@ -102,7 +102,7 @@ export async function POST(req: NextRequest) {
     const infographicId = body.infographicId ? String(body.infographicId).trim() : null;
     const metaTitle = String(body.metaTitle || title).trim();
     const metaDescription = String(body.metaDescription || subtitle).trim();
-    const author = String(body.author || "Advocate Sneha Jaiswal").trim();
+    const author = String(body.author || "Advocate Anuj Anand Malik").trim();
     const authorRole = String(
       body.authorRole || "Senior Succession & Trust Counsel, WillDrafting.in"
     ).trim();

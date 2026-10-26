@@ -158,7 +158,7 @@ export default async function Page() {
 //         dateModified: "2026-10-20T12:00:00+05:30",
 //         author: {
 //           "@type": "Person",
-//           name: "Advocate Rajeshwar Rao",
+//           name: "Advocate Anuj Anand Malik",
 //           jobTitle: "Senior Estate & Succession Counsel",
 //           affiliation: {
 //             "@type": "LegalService",

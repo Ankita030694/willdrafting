@@ -66,6 +66,7 @@
 /locations/bareilly
 /locations/gorakhpur
 /locations/cuttack
+/locations/dispur
 
 # ------------------------------------------------------------------------------
 # SECTION 2: ALTERNATIVE KEYWORD SLUGS (FORMAT: /locations/will-drafting-in-[city])
@@ -194,6 +195,7 @@ https://www.willdrafting.in/locations/kota
 https://www.willdrafting.in/locations/bareilly
 https://www.willdrafting.in/locations/gorakhpur
 https://www.willdrafting.in/locations/cuttack
+/locations/dispur
 
 # ==============================================================================
 # SECTION 4: COMPLETE SEO & METADATA SPECIFICATIONS FOR PAGE CREATION
@@ -1089,8 +1091,10 @@ Key Local Context: IGRSUP portal appointment system, Gorakhpur Development Autho
 CITY 60: CUTTACK (ODISHA)
 --------------------------------------------------------------------------------
 Primary URL Slug: /locations/cuttack
+/locations/dispur
 Alternative Slug: /locations/will-drafting-in-cuttack
 Canonical URL: https://www.willdrafting.in/locations/cuttack
+/locations/dispur
 Page Title: Will Drafting in Cuttack: Legal Online Will Services
 Title Length: 52 characters
 Meta Description: Draft your Will in Cuttack with High Court advocate oversight. Hassle-free Odisha e-Registration guidance, CDA plot transfer, and estate distribution.
@@ -1169,3 +1173,60 @@ Key Local Context: Garvi Gujarat portal (garvi.gujarat.gov.in), Gandhinagar Urba
 
 /locations/gandhinagar
 https://www.willdrafting.in/locations/gandhinagar
+
+
+--------------------------------------------------------------------------------
+CITY 75: SRINAGAR (JAMMU AND KASHMIR)
+--------------------------------------------------------------------------------
+Primary URL Slug: /locations/srinagar
+Alternative Slug: /locations/will-drafting-in-srinagar
+Canonical URL: https://www.willdrafting.in/locations/srinagar
+Page Title: Will Drafting in Srinagar: Online Will & Property Guide
+Title Length: 55 characters
+Meta Description: Draft a valid Will in Srinagar. Guidance on NGDRS J&K registration, apple orchard and hotel succession, SMC mutation, and Indian Succession Act rules.
+Meta Description Length: 147 characters
+Hero H1 Tag: Will Drafting Services in Srinagar: Property Succession
+H1 Length: 55 characters
+Key Keywords: will drafting in srinagar, will registration ngdrs srinagar, kashmir property will succession, smc mutation will srinagar, estate lawyer srinagar
+Key Local Context: High Court of Jammu & Kashmir and Ladakh (Srinagar Wing), NGDRS J&K portal, Central Indian Succession Act 1925 application post-2019, Srinagar Municipal Corporation (SMC) records.
+
+/locations/srinagar
+https://www.willdrafting.in/locations/srinagar
+
+
+--------------------------------------------------------------------------------
+CITY 76: JAMMU (JAMMU AND KASHMIR)
+--------------------------------------------------------------------------------
+Primary URL Slug: /locations/jammu
+Alternative Slug: /locations/will-drafting-in-jammu
+Canonical URL: https://www.willdrafting.in/locations/jammu
+Page Title: Will Drafting in Jammu: Online Will Registration Guide
+Title Length: 53 characters
+Meta Description: Draft a legally valid Will in Jammu. Complete NGDRS token booking, JDA plot transfer guidance, and family estate succession advice with experienced lawyers.
+Meta Description Length: 153 characters
+Hero H1 Tag: Will Drafting Services in Jammu: Asset Protection
+H1 Length: 49 characters
+Key Keywords: will drafting in jammu, will registration ngdrs jammu, jda plot will transfer, jmc property mutation will, succession advocate jammu
+Key Local Context: High Court of Jammu & Kashmir and Ladakh (Jammu Wing), Jammu Development Authority (JDA) colony plot transfer, Jammu Municipal Corporation (JMC), NGDRS J&K registration.
+
+/locations/jammu
+https://www.willdrafting.in/locations/jammu
+
+
+--------------------------------------------------------------------------------
+CITY 63: DISPUR (ASSAM)
+--------------------------------------------------------------------------------
+Primary URL Slug: /locations/dispur
+Alternative Slug: /locations/will-drafting-in-dispur
+Canonical URL: https://www.willdrafting.in/locations/dispur
+Page Title: Will Drafting in Dispur: Online Will Registration Guide
+Title Length: 54 characters
+Meta Description: Draft a legally binding Will in Dispur. Expert guidance on Assam Panjeeyan portal registration, GMDA property mutation, and inheritance law consultation.
+Meta Description Length: 150 characters
+Hero H1 Tag: Will Drafting Services in Dispur: Estate Planning
+H1 Length: 49 characters
+Key Keywords: will drafting in dispur, will registration dispur kamrup, assam panjeeyan will registration, gmda plot transfer dispur, succession advocate dispur
+Key Local Context: Assam Secretariat capital zone, Kamrup Metropolitan SRO, Assam Panjeeyan portal, GMDA property mutation, Gauhati High Court probate non-mandatory status.
+
+/locations/dispur
+https://www.willdrafting.in/locations/dispur

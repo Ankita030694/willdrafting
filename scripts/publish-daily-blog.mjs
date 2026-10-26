@@ -431,7 +431,7 @@ async function run() {
       const subtitle = stripEmDashes(String(rawPayload.subtitle || "").trim());
       const metaDescription = stripEmDashes(String(rawPayload.metaDescription || "").trim());
       const category = stripEmDashes(String(rawPayload.category || "Will Basics").trim());
-      const author = stripEmDashes(String(rawPayload.author || "Advocate Sneha Jaiswal").trim());
+      const author = stripEmDashes(String(rawPayload.author || "Advocate Anuj Anand Malik").trim());
 
       let rawHtml = rawPayload.content || "";
       if (!rawHtml && rawPayload.contentFile && fs.existsSync(rawPayload.contentFile)) {

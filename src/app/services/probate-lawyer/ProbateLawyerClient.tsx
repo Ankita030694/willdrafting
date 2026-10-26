@@ -1110,11 +1110,11 @@ export default function ProbateLawyerClient() {
             {/* CARD 1: AUTHOR BIO CARD */}
             <div className="bg-white rounded-3xl border border-slate-200/80 p-5 shadow-xs space-y-3">
               <div className="flex items-center gap-3">
-                <div className="w-12 h-12 rounded-full bg-rose-50 border border-rose-100 flex items-center justify-center text-[#C65378] font-bold text-base shrink-0">
-                  RR
+                <div className="w-12 h-12 rounded-full bg-rose-50 border border-rose-100 flex items-center justify-center text-[#C65378] font-bold text-sm font-bold shrink-0">
+                  AAM
                 </div>
                 <div>
-                  <div className="font-bold text-sm text-slate-900">Advocate Rajeshwar Rao</div>
+                  <div className="font-bold text-sm text-slate-900">Advocate Anuj Anand Malik</div>
                   <div className="text-[11px] font-semibold text-[#C65378]">
                     Senior Succession Counsel
                   </div>

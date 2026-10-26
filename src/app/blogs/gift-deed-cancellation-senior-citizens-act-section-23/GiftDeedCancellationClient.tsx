@@ -1639,19 +1639,19 @@ export default function GiftDeedCancellationClient() {
             {/* CARD 1: AUTHOR BIO CARD */}
             <div className="bg-white rounded-2xl border border-slate-200/80 p-5 shadow-xs space-y-3">
               <div className="flex items-center gap-3">
-                <div className="w-12 h-12 rounded-full bg-slate-100 border border-slate-200 flex items-center justify-center font-bold text-slate-700 text-base shrink-0">
-                  RR
+                <div className="w-12 h-12 rounded-full bg-slate-100 border border-slate-200 flex items-center justify-center font-bold text-slate-700 text-sm font-bold shrink-0">
+                  AAM
                 </div>
                 <div>
                   <h3 className="font-extrabold text-sm text-slate-900 leading-tight">
-                    Advocate Rajeshwar Rao
+                    Advocate Anuj Anand Malik
                   </h3>
                   <p className="text-[11px] font-bold text-[#C65378]">Senior Succession Counsel</p>
                   <p className="text-[10px] text-slate-500">WillDrafting.in</p>
                 </div>
               </div>
               <p className="text-xs text-slate-600 leading-relaxed">
-                Advocate Rao has over 18 years of specialized practice in elder property disputes, testamentary successions, and High Court writ litigation under the Senior Citizens Act.
+                Advocate Anuj Anand Malik has over 18 years of specialized practice in elder property disputes, testamentary successions, and High Court writ litigation under the Senior Citizens Act.
               </p>
               <div className="pt-2 border-t border-slate-100 flex items-center justify-between text-[11px] text-slate-500">
                 <span className="flex items-center gap-1 text-emerald-700 font-semibold">

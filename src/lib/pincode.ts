@@ -64,13 +64,19 @@ export function lookupStateFromPin(pin: string): { state: string; city?: string 
   if (p3 !== null && p3 >= 262 && p3 <= 263) return { state: "Uttarakhand" };
 
   // Major metro 3-digit instant city hints
+  if (p3 === 121) return { state: "Haryana", city: "Faridabad" };
+  if (p3 === 190) return { state: "Jammu and Kashmir", city: "Srinagar" };
   if (p3 === 248) return { state: "Uttarakhand", city: "Dehradun" };
   if (p3 === 122) return { state: "Haryana", city: "Gurugram" };
   if (p3 === 141) return { state: "Punjab", city: "Ludhiana" };
   if (p3 === 201) return { state: "Uttar Pradesh", city: "Noida" };
   if (p3 === 221) return { state: "Uttar Pradesh", city: "Varanasi" };
   if (p3 === 226) return { state: "Uttar Pradesh", city: "Lucknow" };
+  if (p3 === 250) return { state: "Uttar Pradesh", city: "Meerut" };
   if (p3 === 302) return { state: "Rajasthan", city: "Jaipur" };
+  if (p3 === 313) return { state: "Rajasthan", city: "Udaipur" };
+  if (p3 === 324) return { state: "Rajasthan", city: "Kota" };
+  if (p3 === 360) return { state: "Gujarat", city: "Rajkot" };
   if (p3 === 380) return { state: "Gujarat", city: "Ahmedabad" };
   if (p3 === 395) return { state: "Gujarat", city: "Surat" };
   if (p3 === 400) return { state: "Maharashtra", city: "Mumbai" };
@@ -79,18 +85,23 @@ export function lookupStateFromPin(pin: string): { state: string; city?: string 
   if (p3 === 440) return { state: "Maharashtra", city: "Nagpur" };
   if (p3 === 452) return { state: "Madhya Pradesh", city: "Indore" };
   if (p3 === 462) return { state: "Madhya Pradesh", city: "Bhopal" };
+  if (p3 === 474) return { state: "Madhya Pradesh", city: "Gwalior" };
   if (p3 === 500) return { state: "Telangana", city: "Hyderabad" };
   if (p3 === 530) return { state: "Andhra Pradesh", city: "Visakhapatnam" };
   if (p3 === 560) return { state: "Karnataka", city: "Bengaluru" };
   if (p3 === 570) return { state: "Karnataka", city: "Mysuru" };
   if (p3 === 575) return { state: "Karnataka", city: "Mangaluru" };
   if (p3 === 600) return { state: "Tamil Nadu", city: "Chennai" };
+  if (p3 === 620) return { state: "Tamil Nadu", city: "Tiruchirappalli" };
   if (p3 === 641) return { state: "Tamil Nadu", city: "Coimbatore" };
   if (p3 === 673) return { state: "Kerala", city: "Kozhikode" };
   if (p3 === 695) return { state: "Kerala", city: "Thiruvananthapuram" };
   if (p3 === 700) return { state: "West Bengal", city: "Kolkata" };
   if (p3 === 751) return { state: "Odisha", city: "Bhubaneswar" };
   if (p3 === 781) return { state: "Assam", city: "Guwahati" };
+  if (p3 === 791) return { state: "Arunachal Pradesh", city: "Itanagar" };
+  if (p3 === 180) return { state: "Jammu and Kashmir", city: "Jammu" };
+  if (p3 === 190) return { state: "Jammu and Kashmir", city: "Srinagar" };
   if (p3 === 800 || p3 === 801) return { state: "Bihar", city: "Patna" };
   if (p3 === 834) return { state: "Jharkhand", city: "Ranchi" };
 
