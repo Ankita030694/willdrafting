@@ -44,3 +44,6 @@ next-env.d.ts
 
 # local migration backups (contain personal data)
 /backups/
+
+# Google service account credentials
+willdrafting-4edcc1043fcb.json
