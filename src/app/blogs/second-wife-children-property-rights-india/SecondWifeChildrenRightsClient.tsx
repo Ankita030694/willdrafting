@@ -1335,7 +1335,16 @@ export default function SecondWifeChildrenRightsClient() {
                   AAM
                 </div>
                 <div>
-                  <h3 className="font-extrabold text-slate-900 text-sm">Advocate Anuj Anand Malik</h3>
+                  <h3 className="font-extrabold text-slate-900 text-sm">
+                    <a
+                      href="https://www.linkedin.com/in/iamanujmalik/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="hover:text-[#C65378] transition-colors"
+                    >
+                      Advocate Anuj Anand Malik
+                    </a>
+                  </h3>
                   <p className="text-[11px] font-bold text-[#C65378]">Senior Succession Counsel</p>
                   <p className="text-[10px] text-slate-500">WillDrafting.in</p>
                 </div>
@@ -1348,7 +1357,14 @@ export default function SecondWifeChildrenRightsClient() {
                   <ShieldCheck className="w-3.5 h-3.5" />
                   Verified Counsel
                 </span>
-                <span>Bar Council Verified</span>
+                <a
+                  href="https://www.linkedin.com/in/iamanujmalik/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-semibold text-[#C65378] hover:underline"
+                >
+                  Connect on LinkedIn
+                </a>
               </div>
             </div>
 

@@ -1298,7 +1298,16 @@ export default function SuccessionCertificateClient() {
                   AAM
                 </div>
                 <div>
-                  <h3 className="font-bold text-slate-900 text-sm">Advocate Anuj Anand Malik</h3>
+                  <h3 className="font-bold text-slate-900 text-sm">
+                    <a
+                      href="https://www.linkedin.com/in/iamanujmalik/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="hover:text-[#C65378] transition-colors"
+                    >
+                      Advocate Anuj Anand Malik
+                    </a>
+                  </h3>
                   <p className="text-[11px] font-semibold text-[#C65378]">
                     Senior Testamentary Counsel
                   </p>
@@ -1310,9 +1319,14 @@ export default function SuccessionCertificateClient() {
               </p>
               <div className="pt-2.5 border-t border-slate-100 flex items-center justify-between text-[11px]">
                 <span className="text-slate-500">Verified Legal Counsel</span>
-                <span className="font-bold text-emerald-700 flex items-center gap-1">
-                  <CheckCircle2 className="w-3 h-3" /> Available
-                </span>
+                <a
+                  href="https://www.linkedin.com/in/iamanujmalik/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-semibold text-[#C65378] hover:underline"
+                >
+                  Connect on LinkedIn
+                </a>
               </div>
             </div>
 

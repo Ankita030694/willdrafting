@@ -1908,11 +1908,18 @@ export default function SuccessionFeeCalculatorClient() {
             {/* CARD 1: AUTHOR BIO CARD */}
             <div className="bg-white rounded-3xl border border-slate-200/90 shadow-xs p-5 space-y-3">
               <div className="flex items-center gap-3">
-                <div className="w-12 h-12 rounded-full bg-rose-100 text-[#C65378] font-extrabold flex items-center justify-center text-base">
-                  AM
+                <div className="w-12 h-12 rounded-full bg-rose-100 text-[#C65378] font-extrabold flex items-center justify-center text-sm">
+                  AAM
                 </div>
                 <div>
-                  <div className="font-extrabold text-[#172228] text-sm">Adv. A. M. Agarwal</div>
+                  <a
+                    href="https://www.linkedin.com/in/iamanujmalik/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="font-extrabold text-[#172228] hover:text-[#C65378] transition-colors text-sm block"
+                  >
+                    Advocate Anuj Anand Malik
+                  </a>
                   <div className="text-[11px] font-bold text-[#C65378] uppercase tracking-wider">
                     Senior Succession Counsel
                   </div>
@@ -1923,10 +1930,17 @@ export default function SuccessionFeeCalculatorClient() {
                 under the Indian Succession Act with over 14 years of High Court litigation experience.
               </p>
               <div className="pt-2 border-t border-slate-100 flex items-center justify-between text-[11px] text-slate-500">
-                <span>Verified Legal Author</span>
                 <span className="flex items-center gap-1 text-emerald-700 font-bold">
-                  <Check className="w-3.5 h-3.5" /> High Court Bar
+                  <Check className="w-3.5 h-3.5" /> Verified Counsel
                 </span>
+                <a
+                  href="https://www.linkedin.com/in/iamanujmalik/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[#0077b5] font-semibold hover:underline"
+                >
+                  Connect on LinkedIn
+                </a>
               </div>
             </div>
 

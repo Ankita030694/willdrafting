@@ -1734,12 +1734,17 @@ export default function NriWillCheckerClient() {
             <div className="bg-white rounded-2xl border border-[#172228]/10 shadow-xs p-5">
               <div className="flex items-center gap-3 mb-3">
                 <div className="w-12 h-12 rounded-full bg-rose-50 border border-[#C65378]/20 flex items-center justify-center text-sm font-bold text-[#C65378] shrink-0">
-                  RS
+                  AAM
                 </div>
                 <div>
-                  <span className="font-bold text-slate-900 block text-sm">
-                    Dr. Rohit Srivastava
-                  </span>
+                  <a
+                    href="https://www.linkedin.com/in/iamanujmalik/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="font-bold text-slate-900 hover:text-[#C65378] transition-colors block text-sm"
+                  >
+                    Advocate Anuj Anand Malik
+                  </a>
                   <span className="text-[11px] text-[#C65378] font-bold block uppercase tracking-wider">
                     Senior Succession Counsel
                   </span>
@@ -1749,8 +1754,18 @@ export default function NriWillCheckerClient() {
                 Specialist in cross-border estate succession, FEMA compliance, and High Court probate matters with over 15 years of experience advising NRI families globally.
               </p>
               <div className="pt-3 border-t border-slate-100 flex items-center justify-between text-[11px] text-[#55636D]">
-                <span>Verified Legal Author</span>
-                <ShieldCheck className="w-4 h-4 text-[#5F7E75]" />
+                <span className="flex items-center gap-1">
+                  <ShieldCheck className="w-4 h-4 text-[#5F7E75]" />
+                  <span>Verified Legal Author</span>
+                </span>
+                <a
+                  href="https://www.linkedin.com/in/iamanujmalik/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[#0077b5] font-semibold hover:underline"
+                >
+                  Connect on LinkedIn
+                </a>
               </div>
             </div>
 

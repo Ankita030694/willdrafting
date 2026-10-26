@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   },
   description:
     "Draft a legally valid Indian Will online for NRIs & OCIs. Protect Indian property, NRE/NRO accounts & Demat shares under the Indian Succession Act.",
-  authors: [{ name: "WillDrafting Editorial Team" }],
+  authors: [{ name: "Advocate Anuj Anand Malik", url: "https://www.linkedin.com/in/iamanujmalik/" }],
   keywords: [
     "nri will drafting india",
     "online will for nri with property in india",
@@ -130,9 +130,9 @@ const NRI_SCHEMA = {
       "datePublished": "2026-10-16",
       "dateModified": "2026-10-17",
       "author": {
-        "@type": "Organization",
-        "name": "WillDrafting Editorial Team",
-        "url": "https://www.willdrafting.in/about-us",
+        "@type": "Person",
+        "name": "Advocate Anuj Anand Malik",
+        "url": "https://www.linkedin.com/in/iamanujmalik/",
       },
       "publisher": {
         "@id": "https://www.willdrafting.in/#organization",
@@ -340,7 +340,15 @@ export default function NriWillIndiaPage() {
 
           <div className="flex flex-wrap items-center gap-3">
             <span>
-              Written by <strong className="text-[#111827]">WillDrafting Editorial Team</strong>
+              Written by{" "}
+              <a
+                href="https://www.linkedin.com/in/iamanujmalik/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-bold text-[#111827] hover:text-[#C65378] transition-colors"
+              >
+                Advocate Anuj Anand Malik
+              </a>
             </span>
             <span className="hidden sm:inline">·</span>
             <span>
@@ -699,19 +707,30 @@ export default function NriWillIndiaPage() {
               Editorial &amp; Statutory Compliance Attribution
             </div>
             <div className="text-base font-semibold text-[#111827] mb-1">
-              Authored by WillDrafting Editorial Team · Reviewed by AMA Legal Solutions
+              Authored by{" "}
+              <a
+                href="https://www.linkedin.com/in/iamanujmalik/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-[#C65378] transition-colors"
+              >
+                Advocate Anuj Anand Malik
+              </a>{" "}
+              · Reviewed by AMA Legal Solutions
             </div>
             <p className="text-xs sm:text-[13px] text-[#55636D] leading-relaxed max-w-3xl">
               This guide is prepared in accordance with the Indian Succession Act, 1925, the Hindu Succession Act, 1956, the Muslim Personal Law (Shariat) Application Act, 1937, and the Foreign Exchange Management Act (FEMA), 1999. It is intended for informational purposes and does not substitute individualized cross-border tax counsel.
             </p>
           </div>
-          <Link
-            href="/about-us"
-            className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-[0.14em] text-[#172228] hover:text-[#C65378] shrink-0"
+          <a
+            href="https://www.linkedin.com/in/iamanujmalik/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-[0.14em] text-[#0077b5] hover:text-[#C65378] shrink-0"
           >
-            <span>Meet Our Estate Planning Advocates</span>
+            <span>Connect on LinkedIn</span>
             <ArrowUpRight className="w-4 h-4" />
-          </Link>
+          </a>
         </section>
       </main>
 

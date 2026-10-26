@@ -57,10 +57,6 @@ const WILLDRAFTING_AUTHORS: Array<{ name: string; role: string }> = [
     name: "Advocate Anuj Anand Malik",
     role: "Senior Succession Counsel, WillDrafting.in",
   },
-  {
-    name: "WillDrafting.in Editorial Desk",
-    role: "Succession Law & Estate Planning Research Team, WillDrafting.in",
-  },
 ];
 
 async function compressImage(

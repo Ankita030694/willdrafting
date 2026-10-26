@@ -1340,8 +1340,8 @@ export const BLOG_ARTICLES: BlogArticle[] = [
 //     lead: "When a senior citizen executes a Will after age 65, or during physical illness, disappointed relatives routinely challenge it in court alleging dementia, medication sedation, or undue influence. Here is the exact Doctor Medical Fitness Certificate format and legal protocol to make a senior citizen's Will ironclad.",
 //     date: "October 17, 2026",
 //     imageSrc: "/images/senior-couple.jpg",
-//     author: "WillDrafting Editorial Team",
-//     authorRole: "Reviewed by Senior Probate Counsel, WillDrafting.in",
+//     author: "Advocate Anuj Anand Malik",
+//     authorRole: "Senior Succession Counsel, WillDrafting.in",
 //     shortVersion: [
 //       "Under Section 59 of the Indian Succession Act, 1925, physical illness, advanced age, or frailty does NOT invalidate a Will as long as the testator has a 'sound disposing mind' at the moment of signing",
 //       "Having a Registered Medical Practitioner (RMP) examine the testator on the exact date of signing and endorse a Mental Fitness Certificate is the single strongest shield against probate litigation",

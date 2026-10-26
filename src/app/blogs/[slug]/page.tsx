@@ -160,7 +160,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
         locale: "en_IN",
         type: "article",
         publishedTime: new Date(dbBlog.date || dbBlog.createdAt).toISOString(),
-        authors: [dbBlog.author || "WillDrafting.in Editorial Counsel"],
+        authors: [dbBlog.author || "Advocate Anuj Anand Malik"],
         images: [
           {
             url: imageUrl,
@@ -201,7 +201,7 @@ export default async function BlogSlugPage({ params }: PageProps) {
   const category = dbBlog ? dbBlog.category : staticArticle!.category;
   const dateStr = dbBlog ? dbBlog.date : staticArticle!.date;
   const readTime = dbBlog ? dbBlog.readTime || dbBlog.readingTime || "10 min" : staticArticle!.readTime;
-  const author = dbBlog ? dbBlog.author : staticArticle!.author;
+  const author = dbBlog ? dbBlog.author || "Advocate Anuj Anand Malik" : staticArticle!.author;
   const authorRole = dbBlog
     ? dbBlog.authorRole || "Senior Succession & Trust Counsel, WillDrafting.in"
     : staticArticle!.authorRole.replace(/WillDrafting.in/gi, "WillDrafting.in");
@@ -257,9 +257,11 @@ export default async function BlogSlugPage({ params }: PageProps) {
       dateModified: new Date(dbBlog?.updatedAt || dateStr || Date.now()).toISOString(),
       mainEntityOfPage: canonicalUrl,
       author: {
-        "@type": author.includes("Team") || author.includes("Desk") ? "Organization" : "Person",
+        "@type": "Person",
         name: author,
         jobTitle: authorRole,
+        url: "https://www.linkedin.com/in/iamanujmalik/",
+        sameAs: ["https://www.linkedin.com/in/iamanujmalik/"],
       },
       reviewedBy: {
         "@type": "LegalService",
@@ -411,12 +413,25 @@ export default async function BlogSlugPage({ params }: PageProps) {
                       WRITTEN BY
                     </span>
                     <div className="text-right">
-                      <span className="text-[#111827] font-medium text-sm block">
+                      <a
+                        href="https://www.linkedin.com/in/iamanujmalik/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-[#111827] hover:text-[#C65378] transition-colors font-medium text-sm block"
+                      >
                         {author}
-                      </span>
-                      <span className="text-xs text-[#718096]">
+                      </a>
+                      <span className="text-xs text-[#718096] block">
                         {authorRole}
                       </span>
+                      <a
+                        href="https://www.linkedin.com/in/iamanujmalik/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-[11px] font-semibold text-[#0077b5] hover:underline inline-block mt-0.5"
+                      >
+                        Connect on LinkedIn
+                      </a>
                     </div>
                   </div>
                 </div>

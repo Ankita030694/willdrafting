@@ -1821,7 +1821,16 @@ export default function HinduWomanPropertyRightsClient() {
                   AAM
                 </div>
                 <div>
-                  <h4 className="font-extrabold text-slate-900 text-sm">Advocate Anuj Anand Malik</h4>
+                  <h4 className="font-extrabold text-slate-900 text-sm">
+                    <a
+                      href="https://www.linkedin.com/in/iamanujmalik/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="hover:text-[#C65378] transition-colors"
+                    >
+                      Advocate Anuj Anand Malik
+                    </a>
+                  </h4>
                   <p className="text-[11px] font-bold text-[#C65378]">Senior Succession Counsel</p>
                   <p className="text-[10px] text-slate-500">WillDrafting.in</p>
                 </div>
@@ -1835,9 +1844,14 @@ export default function HinduWomanPropertyRightsClient() {
                   <ShieldCheck className="w-3.5 h-3.5" />
                   Verified Counsel
                 </span>
-                <Link href="/about-us" className="text-[#C65378] font-bold hover:underline">
-                  About AMA
-                </Link>
+                <a
+                  href="https://www.linkedin.com/in/iamanujmalik/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[#C65378] font-bold hover:underline"
+                >
+                  Connect on LinkedIn
+                </a>
               </div>
             </div>
 

@@ -1434,7 +1434,14 @@ export default function DigitalAssetsCryptoClient() {
                 </div>
                 <div>
                   <h4 className="font-extrabold text-sm text-[#172228]">
-                    Advocate Anuj Anand Malik
+                    <a
+                      href="https://www.linkedin.com/in/iamanujmalik/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="hover:text-[#C65378] transition-colors"
+                    >
+                      Advocate Anuj Anand Malik
+                    </a>
                   </h4>
                   <p className="text-[11px] text-[#C65378] font-bold">
                     Senior Succession &amp; Trust Counsel
@@ -1445,10 +1452,17 @@ export default function DigitalAssetsCryptoClient() {
                 Advocate specializing in testamentary succession, digital estate governance, and cross-border crypto inheritance under the Indian Succession Act and IT Act.
               </p>
               <div className="pt-2 border-t border-[#172228]/5 flex items-center justify-between text-[11px] text-[#55636D]">
-                <span>WillDrafting.in</span>
                 <span className="text-emerald-700 font-semibold flex items-center gap-1">
                   <ShieldCheck className="w-3.5 h-3.5" /> Bar Verified
                 </span>
+                <a
+                  href="https://www.linkedin.com/in/iamanujmalik/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-semibold text-[#C65378] hover:underline"
+                >
+                  Connect on LinkedIn
+                </a>
               </div>
             </div>
 

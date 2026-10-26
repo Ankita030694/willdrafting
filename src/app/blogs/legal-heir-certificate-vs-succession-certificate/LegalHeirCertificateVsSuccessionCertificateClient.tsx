@@ -1337,7 +1337,16 @@ export default function LegalHeirCertificateVsSuccessionCertificateClient() {
                   AAM
                 </div>
                 <div>
-                  <h3 className="font-bold text-sm text-[#172228] leading-tight">Advocate Anuj Anand Malik</h3>
+                  <h3 className="font-bold text-sm text-[#172228] leading-tight">
+                    <a
+                      href="https://www.linkedin.com/in/iamanujmalik/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="hover:text-[#C65378] transition-colors"
+                    >
+                      Advocate Anuj Anand Malik
+                    </a>
+                  </h3>
                   <p className="text-[11px] font-semibold text-[#C65378]">Senior Estate &amp; Succession Counsel</p>
                 </div>
               </div>
@@ -1348,7 +1357,14 @@ export default function LegalHeirCertificateVsSuccessionCertificateClient() {
                 <span className="text-[#5F7E75] font-semibold flex items-center gap-1">
                   <ShieldCheck className="w-3.5 h-3.5" /> Bar Council Verified
                 </span>
-                <span className="text-[#55636D]">WillDrafting.in</span>
+                <a
+                  href="https://www.linkedin.com/in/iamanujmalik/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-semibold text-[#C65378] hover:underline"
+                >
+                  Connect on LinkedIn
+                </a>
               </div>
             </div>
 

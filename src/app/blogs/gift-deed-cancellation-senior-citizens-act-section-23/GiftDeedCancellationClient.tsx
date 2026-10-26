@@ -1644,7 +1644,14 @@ export default function GiftDeedCancellationClient() {
                 </div>
                 <div>
                   <h3 className="font-extrabold text-sm text-slate-900 leading-tight">
-                    Advocate Anuj Anand Malik
+                    <a
+                      href="https://www.linkedin.com/in/iamanujmalik/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="hover:text-[#C65378] transition-colors"
+                    >
+                      Advocate Anuj Anand Malik
+                    </a>
                   </h3>
                   <p className="text-[11px] font-bold text-[#C65378]">Senior Succession Counsel</p>
                   <p className="text-[10px] text-slate-500">WillDrafting.in</p>
@@ -1657,7 +1664,14 @@ export default function GiftDeedCancellationClient() {
                 <span className="flex items-center gap-1 text-emerald-700 font-semibold">
                   <ShieldCheck className="w-3.5 h-3.5" /> Bar Council Verified
                 </span>
-                <span>Oct 2026</span>
+                <a
+                  href="https://www.linkedin.com/in/iamanujmalik/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-semibold text-[#C65378] hover:underline"
+                >
+                  Connect on LinkedIn
+                </a>
               </div>
             </div>
 

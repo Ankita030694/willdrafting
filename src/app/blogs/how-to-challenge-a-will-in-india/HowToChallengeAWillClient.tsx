@@ -1144,7 +1144,14 @@ export default function HowToChallengeAWillClient() {
                 </div>
                 <div>
                   <div className="font-bold text-sm text-slate-900">
-                    Advocate Anuj Anand Malik
+                    <a
+                      href="https://www.linkedin.com/in/iamanujmalik/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="hover:text-[#C65378] transition-colors"
+                    >
+                      Advocate Anuj Anand Malik
+                    </a>
                   </div>
                   <div className="text-[11px] font-semibold text-[#C65378]">
                     Senior Succession Counsel
@@ -1159,7 +1166,14 @@ export default function HowToChallengeAWillClient() {
                   <Award className="w-3.5 h-3.5 text-[#5F7E75]" />
                   <span>High Court Bar</span>
                 </span>
-                <span className="text-[#5F7E75] font-semibold">Verified Counsel</span>
+                <a
+                  href="https://www.linkedin.com/in/iamanujmalik/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[#C65378] font-semibold hover:underline"
+                >
+                  Connect on LinkedIn
+                </a>
               </div>
             </div>
 

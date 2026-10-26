@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   },
   description:
     "Draft a valid Relinquishment Deed (Haq Tyag) in India. Transfer inherited property shares legally among co-heirs with guidance from AMA Legal Solutions.",
-  authors: [{ name: "WillDrafting Editorial Team" }],
+  authors: [{ name: "Advocate Anuj Anand Malik", url: "https://www.linkedin.com/in/iamanujmalik/" }],
   keywords: [
     "relinquishment deed india",
     "haq tyag patra online",
@@ -124,9 +124,9 @@ const RELINQUISHMENT_SCHEMA = {
       "datePublished": "2026-10-21",
       "dateModified": "2026-10-21",
       "author": {
-        "@type": "Organization",
-        "name": "WillDrafting Editorial Team",
-        "url": "https://www.willdrafting.in/about-us",
+        "@type": "Person",
+        "name": "Advocate Anuj Anand Malik",
+        "url": "https://www.linkedin.com/in/iamanujmalik/",
       },
       "publisher": {
         "@id": "https://www.willdrafting.in/#organization",
@@ -373,7 +373,15 @@ export default function RelinquishmentDeedPage() {
 
           <div className="flex flex-wrap items-center gap-3">
             <span>
-              Written by <strong className="text-[#111827]">WillDrafting Editorial Team</strong>
+              Written by{" "}
+              <a
+                href="https://www.linkedin.com/in/iamanujmalik/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-bold text-[#111827] hover:text-[#C65378] transition-colors"
+              >
+                Advocate Anuj Anand Malik
+              </a>
             </span>
             <span className="hidden sm:inline">·</span>
             <span>
@@ -743,19 +751,30 @@ export default function RelinquishmentDeedPage() {
               Editorial &amp; Statutory Compliance Attribution
             </div>
             <div className="text-base font-semibold text-[#111827] mb-1">
-              Authored by WillDrafting Editorial Team · Reviewed by AMA Legal Solutions
+              Authored by{" "}
+              <a
+                href="https://www.linkedin.com/in/iamanujmalik/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-[#C65378] transition-colors"
+              >
+                Advocate Anuj Anand Malik
+              </a>{" "}
+              · Reviewed by AMA Legal Solutions
             </div>
             <p className="text-xs sm:text-[13px] text-[#55636D] leading-relaxed max-w-3xl">
               This guide is prepared under Section 17 of the Registration Act, 1908, the Transfer of Property Act, 1882, the Hindu Succession Act, 1956, and state stamp manuals. It is intended for educational purposes and does not constitute formal legal representation until an advocate engagement is signed.
             </p>
           </div>
-          <Link
-            href="/about-us"
-            className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-[0.14em] text-[#172228] hover:text-[#C65378] shrink-0"
+          <a
+            href="https://www.linkedin.com/in/iamanujmalik/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-[0.14em] text-[#0077b5] hover:text-[#C65378] shrink-0"
           >
-            <span>Meet Our Legal Solutions Advocates</span>
+            <span>Connect on LinkedIn</span>
             <ArrowUpRight className="w-4 h-4" />
-          </Link>
+          </a>
         </section>
       </main>
 

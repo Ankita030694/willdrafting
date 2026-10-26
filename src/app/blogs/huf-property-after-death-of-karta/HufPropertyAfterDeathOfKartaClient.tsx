@@ -1509,7 +1509,16 @@ export default function HufPropertyAfterDeathOfKartaClient() {
                   AAM
                 </div>
                 <div>
-                  <h3 className="font-extrabold text-sm text-slate-900">Advocate Anuj Anand Malik</h3>
+                  <h3 className="font-extrabold text-sm text-slate-900">
+                    <a
+                      href="https://www.linkedin.com/in/iamanujmalik/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="hover:text-[#C65378] transition-colors"
+                    >
+                      Advocate Anuj Anand Malik
+                    </a>
+                  </h3>
                   <p className="text-[11px] font-bold text-[#C65378] uppercase tracking-wider">
                     Senior Succession Counsel
                   </p>
@@ -1523,7 +1532,14 @@ export default function HufPropertyAfterDeathOfKartaClient() {
                 <span className="flex items-center gap-1 text-emerald-700 font-semibold">
                   <ShieldCheck className="w-3.5 h-3.5" /> Bar Council Verified
                 </span>
-                <span>Oct 2026</span>
+                <a
+                  href="https://www.linkedin.com/in/iamanujmalik/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-semibold text-[#C65378] hover:underline"
+                >
+                  Connect on LinkedIn
+                </a>
               </div>
             </div>
 

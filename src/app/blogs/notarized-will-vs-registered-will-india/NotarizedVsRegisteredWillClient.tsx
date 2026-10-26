@@ -1627,7 +1627,14 @@ export default function NotarizedVsRegisteredWillClient() {
                 </div>
                 <div>
                   <h4 className="text-xs font-bold text-[#172228]">
-                    Advocate Anuj Anand Malik
+                    <a
+                      href="https://www.linkedin.com/in/iamanujmalik/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="hover:text-[#C65378] transition-colors"
+                    >
+                      Advocate Anuj Anand Malik
+                    </a>
                   </h4>
                   <span className="text-[11px] text-[#55636D] block">
                     Succession Counsel, WillDrafting.in
@@ -1637,9 +1644,19 @@ export default function NotarizedVsRegisteredWillClient() {
               <p className="text-[11px] text-slate-600 leading-relaxed">
                 Reviewed under Indian Succession Act 1925 and Registration Act 1908. Member of the Bar Council of Delhi with 15+ years experience.
               </p>
-              <div className="flex items-center gap-1.5 text-[10px] font-bold uppercase tracking-wider text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded-md border border-emerald-200">
-                <ShieldCheck className="w-3.5 h-3.5" />
-                <span>Bar Council Verified Content</span>
+              <div className="flex items-center justify-between gap-1.5 text-[10px] font-bold uppercase tracking-wider text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded-md border border-emerald-200">
+                <span className="flex items-center gap-1.5">
+                  <ShieldCheck className="w-3.5 h-3.5" />
+                  <span>Bar Council Verified</span>
+                </span>
+                <a
+                  href="https://www.linkedin.com/in/iamanujmalik/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[#C65378] hover:underline"
+                >
+                  LinkedIn
+                </a>
               </div>
             </div>
 

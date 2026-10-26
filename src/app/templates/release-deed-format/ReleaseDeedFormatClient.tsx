@@ -1321,7 +1321,16 @@ export default function ReleaseDeedFormatClient() {
                   AAM
                 </div>
                 <div>
-                  <div className="font-bold text-sm text-slate-900">Advocate Anuj Anand Malik</div>
+                  <div className="font-bold text-sm text-slate-900">
+                    <a
+                      href="https://www.linkedin.com/in/iamanujmalik/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="hover:text-[#C65378] transition-colors"
+                    >
+                      Advocate Anuj Anand Malik
+                    </a>
+                  </div>
                   <div className="text-[11px] font-semibold text-[#C65378]">
                     Senior Succession Counsel
                   </div>
@@ -1335,7 +1344,14 @@ export default function ReleaseDeedFormatClient() {
                   <ShieldCheck className="w-3.5 h-3.5 text-[#5F7E75]" />
                   <span>Verified Legal Review</span>
                 </span>
-                <span className="font-semibold text-slate-700">AMA Legal</span>
+                <a
+                  href="https://www.linkedin.com/in/iamanujmalik/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-semibold text-[#C65378] hover:underline"
+                >
+                  Connect on LinkedIn
+                </a>
               </div>
             </div>
 

@@ -1604,9 +1604,25 @@ export default function MarriedDaughterRightsClient() {
                   AAM
                 </div>
                 <div>
-                  <h4 className="text-sm font-extrabold text-slate-900 leading-tight">Advocate Anuj Anand Malik</h4>
+                  <h4 className="text-sm font-extrabold text-slate-900 leading-tight">
+                    <a
+                      href="https://www.linkedin.com/in/iamanujmalik/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="hover:text-[#C65378] transition-colors"
+                    >
+                      Advocate Anuj Anand Malik
+                    </a>
+                  </h4>
                   <p className="text-xs text-slate-500">Senior Succession Counsel</p>
-                  <p className="text-[11px] text-[#5F7E75] font-semibold">15+ Years High Court Practice</p>
+                  <a
+                    href="https://www.linkedin.com/in/iamanujmalik/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-[11px] text-[#C65378] font-semibold hover:underline"
+                  >
+                    Connect on LinkedIn
+                  </a>
                 </div>
               </div>
               <p className="text-xs text-slate-600 leading-relaxed border-t border-slate-100 pt-2.5">

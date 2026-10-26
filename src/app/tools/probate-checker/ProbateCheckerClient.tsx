@@ -1778,7 +1778,16 @@ export default function ProbateCheckerClient() {
                   AAM
                 </div>
                 <div>
-                  <div className="font-extrabold text-slate-900 text-sm">Advocate Anuj Anand Malik</div>
+                  <div className="font-extrabold text-slate-900 text-sm">
+                    <a
+                      href="https://www.linkedin.com/in/iamanujmalik/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="hover:text-[#C65378] transition-colors"
+                    >
+                      Advocate Anuj Anand Malik
+                    </a>
+                  </div>
                   <div className="text-[11px] font-bold text-[#C65378] uppercase tracking-wider">
                     Senior Succession Counsel
                   </div>
@@ -1790,11 +1799,18 @@ export default function ProbateCheckerClient() {
                 planning.
               </p>
               <div className="pt-2 border-t border-slate-100 flex items-center justify-between text-[11px] font-bold text-slate-700">
-                <span>AMA Legal Solutions</span>
                 <span className="text-emerald-700 flex items-center gap-1">
                   <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600" />
                   <span>Verified Counsel</span>
                 </span>
+                <a
+                  href="https://www.linkedin.com/in/iamanujmalik/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[#C65378] hover:underline"
+                >
+                  Connect on LinkedIn
+                </a>
               </div>
             </div>
 

@@ -1253,10 +1253,17 @@ export default function WillRegistrationClient() {
             <div className="bg-white rounded-3xl border border-slate-200/80 p-5 shadow-xs">
               <div className="flex items-center gap-3">
                 <div className="w-12 h-12 rounded-full bg-rose-100 text-[#C65378] font-bold text-sm flex items-center justify-center shrink-0">
-                  AMA
+                  AAM
                 </div>
                 <div>
-                  <div className="font-bold text-slate-900 text-sm">Adv. A. M. Agarwal</div>
+                  <a
+                    href="https://www.linkedin.com/in/iamanujmalik/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="font-bold text-slate-900 text-sm hover:text-[#C65378] transition-colors block"
+                  >
+                    Advocate Anuj Anand Malik
+                  </a>
                   <div className="text-[11px] font-semibold text-[#C65378] uppercase tracking-wider">
                     Senior Succession Counsel
                   </div>
@@ -1271,9 +1278,14 @@ export default function WillRegistrationClient() {
                   <ShieldCheck className="w-3.5 h-3.5 text-emerald-600" />
                   <span>Bar Council Enrolled</span>
                 </span>
-                <Link href="/aboutus" className="text-[#C65378] font-semibold hover:underline">
-                  View Profile
-                </Link>
+                <a
+                  href="https://www.linkedin.com/in/iamanujmalik/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[#0077b5] font-semibold hover:underline"
+                >
+                  Connect on LinkedIn
+                </a>
               </div>
             </div>
 

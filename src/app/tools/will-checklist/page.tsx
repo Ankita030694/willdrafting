@@ -135,8 +135,9 @@ export default function WillChecklistPage() {
           priceCurrency: "INR",
         },
         author: {
-          "@type": "Organization",
-          name: "WillDrafting Legal Research Group",
+          "@type": "Person",
+          name: "Advocate Anuj Anand Malik",
+          url: "https://www.linkedin.com/in/iamanujmalik/",
         },
         reviewedBy: {
           "@type": "LegalService",

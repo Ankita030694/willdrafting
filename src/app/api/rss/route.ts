@@ -41,7 +41,7 @@ export async function GET() {
         slug: b.slug,
         description: b.metaDescription || b.subtitle || "",
         pubDate: new Date(b.date || b.createdAt).toUTCString(),
-        author: b.author || "WillDrafting.in Editorial Counsel",
+        author: b.author || "Advocate Anuj Anand Malik",
         category: b.category || "Indian Succession Law",
       });
     }

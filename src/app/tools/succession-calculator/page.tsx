@@ -115,8 +115,9 @@ const CALCULATOR_SCHEMA = {
         "priceCurrency": "INR",
       },
       "author": {
-        "@type": "Organization",
-        "name": "WillDrafting Editorial Team",
+        "@type": "Person",
+        "name": "Advocate Anuj Anand Malik",
+        "url": "https://www.linkedin.com/in/iamanujmalik/",
       },
       "reviewedBy": {
         "@type": "LegalService",
@@ -226,10 +227,24 @@ export default function SuccessionCalculatorPage() {
           <div className="mt-4 flex flex-wrap items-center gap-4 text-xs text-[#6B7280]">
             <span>
               Author:{" "}
-              <strong className="text-[#172228]">
-                WillDrafting Editorial Team
-              </strong>
+              <a
+                href="https://www.linkedin.com/in/iamanujmalik/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-bold text-[#172228] hover:text-[#C65378] transition-colors"
+              >
+                Advocate Anuj Anand Malik
+              </a>
             </span>
+            <span>•</span>
+            <a
+              href="https://www.linkedin.com/in/iamanujmalik/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-semibold text-[#C65378] hover:underline"
+            >
+              Connect on LinkedIn
+            </a>
             <span>•</span>
             <span>
               Statutory Audit:{" "}

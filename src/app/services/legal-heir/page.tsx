@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   // Strictly 140-155 characters for Screaming Frog compliance (153 chars)
   description:
     "Apply for a Legal Heir Certificate in India. Get lawyer help for Tehsildar verification, property mutation, and bank claims under Indian succession laws.",
-  authors: [{ name: "WillDrafting Editorial Team" }],
+  authors: [{ name: "Advocate Anuj Anand Malik", url: "https://www.linkedin.com/in/iamanujmalik/" }],
   keywords: [
     "legal heir certificate india",
     "legal heir certificate online apply",
@@ -130,9 +130,9 @@ const LEGAL_HEIR_SCHEMA = {
       "datePublished": "2026-10-21",
       "dateModified": "2026-10-21",
       "author": {
-        "@type": "Organization",
-        "name": "WillDrafting Editorial Team",
-        "url": "https://www.willdrafting.in/about-us",
+        "@type": "Person",
+        "name": "Advocate Anuj Anand Malik",
+        "url": "https://www.linkedin.com/in/iamanujmalik/",
       },
       "publisher": {
         "@id": "https://www.willdrafting.in/#organization",
@@ -346,7 +346,15 @@ export default function LegalHeirPage() {
 
           <div className="flex flex-wrap items-center gap-3">
             <span>
-              Written by <strong className="text-[#111827]">WillDrafting Editorial Team</strong>
+              Written by{" "}
+              <a
+                href="https://www.linkedin.com/in/iamanujmalik/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-bold text-[#111827] hover:text-[#C65378] transition-colors"
+              >
+                Advocate Anuj Anand Malik
+              </a>
             </span>
             <span className="hidden sm:inline">·</span>
             <span>
@@ -720,19 +728,30 @@ export default function LegalHeirPage() {
               Editorial &amp; Statutory Compliance Attribution
             </div>
             <div className="text-base font-semibold text-[#111827] mb-1">
-              Authored by WillDrafting Editorial Team · Reviewed by AMA Legal Solutions
+              Authored by{" "}
+              <a
+                href="https://www.linkedin.com/in/iamanujmalik/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-[#C65378] transition-colors"
+              >
+                Advocate Anuj Anand Malik
+              </a>{" "}
+              · Reviewed by AMA Legal Solutions
             </div>
             <p className="text-xs sm:text-[13px] text-[#55636D] leading-relaxed max-w-3xl">
               This statutory guide follows the Hindu Succession Act, 1956 and state revenue rules. It provides general legal information. For complex family property disputes, consult our succession advocates directly.
             </p>
           </div>
-          <Link
-            href="/about-us"
-            className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-[0.14em] text-[#172228] hover:text-[#C65378] shrink-0"
+          <a
+            href="https://www.linkedin.com/in/iamanujmalik/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-[0.14em] text-[#0077b5] hover:text-[#C65378] shrink-0"
           >
-            <span>Meet Our Succession Advocates</span>
+            <span>Connect on LinkedIn</span>
             <ArrowUpRight className="w-4 h-4" />
-          </Link>
+          </a>
         </section>
       </main>
 

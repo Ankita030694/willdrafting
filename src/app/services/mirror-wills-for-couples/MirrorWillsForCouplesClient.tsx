@@ -1283,7 +1283,16 @@ export default function MirrorWillsForCouplesClient() {
                   AAM
                 </div>
                 <div>
-                  <h3 className="font-bold text-slate-900 text-sm">Advocate Anuj Anand Malik</h3>
+                  <h3 className="font-bold text-slate-900 text-sm">
+                    <a
+                      href="https://www.linkedin.com/in/iamanujmalik/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="hover:text-[#C65378] transition-colors"
+                    >
+                      Advocate Anuj Anand Malik
+                    </a>
+                  </h3>
                   <p className="text-[11px] font-semibold text-[#C65378]">Senior Succession Counsel</p>
                   <p className="text-[10px] text-slate-500">AMA Legal Solutions</p>
                 </div>
@@ -1296,7 +1305,14 @@ export default function MirrorWillsForCouplesClient() {
                   <ShieldCheck className="w-3.5 h-3.5 text-emerald-600" />
                   <span>Verified Legal Author</span>
                 </span>
-                <span className="font-semibold text-slate-700">14+ Yrs Exp</span>
+                <a
+                  href="https://www.linkedin.com/in/iamanujmalik/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-semibold text-[#C65378] hover:underline"
+                >
+                  Connect on LinkedIn
+                </a>
               </div>
             </div>
 

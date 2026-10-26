@@ -2054,12 +2054,19 @@ export default function WillChecklistClient() {
           <aside className="space-y-5 sticky top-6">
             {/* CARD 1: AUTHOR / REVIEWER CARD */}
             <div className="bg-white rounded-2xl border border-slate-200/80 p-5 shadow-xs text-center space-y-3">
-              <div className="w-14 h-14 rounded-full bg-gradient-to-tr from-[#172228] to-[#2a3c46] text-white flex items-center justify-center font-extrabold text-base mx-auto border-2 border-white shadow-xs">
-                AMA
+              <div className="w-14 h-14 rounded-full bg-gradient-to-tr from-[#172228] to-[#2a3c46] text-white flex items-center justify-center font-extrabold text-sm mx-auto border-2 border-white shadow-xs">
+                AAM
               </div>
               <div>
                 <h4 className="font-extrabold text-slate-900 text-sm">
-                  Advocate Harshvardhan Sharma
+                  <a
+                    href="https://www.linkedin.com/in/iamanujmalik/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-[#C65378] transition-colors"
+                  >
+                    Advocate Anuj Anand Malik
+                  </a>
                 </h4>
                 <p className="text-[11px] text-[#C65378] font-bold">
                   Senior Succession Counsel, High Court of Delhi
@@ -2068,9 +2075,19 @@ export default function WillChecklistClient() {
               <p className="text-xs text-slate-600 leading-relaxed font-normal">
                 15+ years advising families on estate planning, testamentary trust structuring, and contentious probate proceedings across India.
               </p>
-              <div className="pt-2 border-t border-slate-100 flex items-center justify-center gap-1 text-[11px] text-slate-500 font-semibold">
-                <ShieldCheck className="w-3.5 h-3.5 text-[#5F7E75]" />
-                <span>Bar Council of Delhi Verified</span>
+              <div className="pt-2 border-t border-slate-100 flex items-center justify-between text-[11px] text-slate-500 font-semibold">
+                <span className="flex items-center gap-1">
+                  <ShieldCheck className="w-3.5 h-3.5 text-[#5F7E75]" />
+                  <span>Bar Council Verified</span>
+                </span>
+                <a
+                  href="https://www.linkedin.com/in/iamanujmalik/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[#0077b5] hover:underline"
+                >
+                  Connect on LinkedIn
+                </a>
               </div>
             </div>
 

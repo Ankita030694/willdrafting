@@ -987,7 +987,7 @@ Return ONLY valid JSON.`;
       suggestedImagePrompt,
       suggestedInfographicPrompt,
       date: todayIsoDate,
-      author: "WillDrafting Legal Team",
+      author: "Advocate Anuj Anand Malik",
     };
 
     const finalJsonStr = JSON.stringify(finalPayload);

@@ -1277,7 +1277,16 @@ export default function WillFormatHindiClient() {
                   AAM
                 </div>
                 <div>
-                  <div className="font-bold text-sm text-slate-900">एडवोकेट अनुज आनंद मलिक</div>
+                  <div className="font-bold text-sm text-slate-900">
+                    <a
+                      href="https://www.linkedin.com/in/iamanujmalik/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="hover:text-[#C65378] transition-colors"
+                    >
+                      एडवोकेट अनुज आनंद मलिक
+                    </a>
+                  </div>
                   <div className="text-[12px] font-semibold text-[#C65378]">वरिष्ठ उत्तराधिकार अधिवक्ता</div>
                 </div>
               </div>
@@ -1289,7 +1298,14 @@ export default function WillFormatHindiClient() {
                   <ShieldCheck className="w-3.5 h-3.5 text-[#5F7E75]" />
                   <span>कानूनी रूप से जाँचा गया</span>
                 </span>
-                <span className="font-semibold text-slate-700">AMA Legal</span>
+                <a
+                  href="https://www.linkedin.com/in/iamanujmalik/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-semibold text-[#C65378] hover:underline"
+                >
+                  Connect on LinkedIn
+                </a>
               </div>
             </div>
 
