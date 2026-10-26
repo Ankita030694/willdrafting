@@ -70,7 +70,7 @@ async function findRelatedMongoBlogs(currentSlug: string, count = 3) {
       title: d.title,
       lead: d.subtitle || d.metaDescription || "",
       category: d.category || "Indian Succession Law",
-      readTime: d.readTime || "10 min",
+      readTime: d.readTime || d.readingTime || "10 min",
       date: d.date || "2026-10-21",
       imageSrc: d.image || "/desktopusp.jpg",
     }));
@@ -200,7 +200,7 @@ export default async function BlogSlugPage({ params }: PageProps) {
   const lead = dbBlog ? dbBlog.subtitle : staticArticle!.lead;
   const category = dbBlog ? dbBlog.category : staticArticle!.category;
   const dateStr = dbBlog ? dbBlog.date : staticArticle!.date;
-  const readTime = dbBlog ? dbBlog.readTime : staticArticle!.readTime;
+  const readTime = dbBlog ? dbBlog.readTime || dbBlog.readingTime || "10 min" : staticArticle!.readTime;
   const author = dbBlog ? dbBlog.author : staticArticle!.author;
   const authorRole = dbBlog
     ? dbBlog.authorRole || "Senior Succession & Trust Counsel, WillDrafting.in"
@@ -221,7 +221,7 @@ export default async function BlogSlugPage({ params }: PageProps) {
         .trim(),
       location: r?.location ? String(r.location).trim() : undefined,
       rating: Number(r?.rating) || 5,
-      review: String(r?.review || r?.text || "")
+      review: String(r?.review || r?.comment || r?.text || "")
         .replace(
           /^(?:\[?(?:Illustrative|Sample|Fictional|Example|Hypothetical)[^:\]]*[:\]]\s*)+/i,
           ""
@@ -320,7 +320,7 @@ export default async function BlogSlugPage({ params }: PageProps) {
   const relatedArticles = await findRelatedMongoBlogs(canonicalSlug, 3);
 
   const { processedHtml, toc } = dbBlog
-    ? processHtmlAndExtractToc(dbBlog.description || "")
+    ? processHtmlAndExtractToc(dbBlog.description || dbBlog.content || "")
     : { processedHtml: "", toc: [] };
 
   const [firstHalfHtml, secondHalfHtml] = dbBlog

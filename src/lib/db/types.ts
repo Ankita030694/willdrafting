@@ -189,7 +189,9 @@ export interface BlogReviewItem {
   name: string;
   rating: number;
   review: string;
+  comment?: string;
   location?: string;
+  date?: string;
 }
 
 export interface BlogReferenceItem {
@@ -204,6 +206,7 @@ export interface BlogDoc {
   slug: string;
   category: string;
   readTime: string;
+  readingTime?: string;
   date: string;
   /** Permanent link to the cover image (e.g., `/api/blog-images/<id>`) */
   image: string;
@@ -215,6 +218,8 @@ export interface BlogDoc {
   infographicId?: string | null;
   /** Full semantic HTML body */
   description: string;
+  /** Alternate field alias for full semantic HTML body */
+  content?: string;
   metaTitle: string;
   metaDescription: string;
   keywords?: string[];

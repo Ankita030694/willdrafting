@@ -113,174 +113,57 @@ function analyzeReadability(html) {
   };
 }
 
-function ensureInfographicSlot(html) {
-  if (html.includes('data-infographic-slot="1"')) return html;
-  let count = 0;
-  const updated = html.replace(/<\/h2>/gi, (match) => {
-    count++;
-    if (count === 2) {
-      return `${match}\n<div data-infographic-slot="1"></div>`;
-    }
-    return match;
-  });
-  if (updated.includes('data-infographic-slot="1"')) return updated;
-  return `${html}\n<div data-infographic-slot="1"></div>`;
+function extractImageId(url) {
+  if (!url || typeof url !== "string") return null;
+  const m = url.match(/\/api\/blog-images\/([a-fA-F0-9]{24})/);
+  return m ? m[1] : null;
 }
 
-function buildFallbackSvg({ title, subtitle, kind, steps = [] }) {
-  const safeTitle = (title || "Will Drafting Guide").replace(/[<>&"']/g, "");
-  const safeSubtitle = (subtitle || "Plain-English Indian Estate & NRI Succession Guide").replace(/[<>&"']/g, "");
-  if (kind === "infographic") {
-    const defaultSteps = steps.length >= 4 ? steps.slice(0, 4) : [
-      "1. List All Indian Flats, Bank Accounts, Demat & Mutual Funds",
-      "2. Name Clear Beneficiaries, Shares & a Trusted Executor",
-      "3. Include Plain-English Residuary & Guardian Clauses",
-      "4. Sign on Plain White Paper with Two Adult Witnesses",
-    ];
-    const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="1536" height="1024" viewBox="0 0 1536 1024">
-      <rect width="1536" height="1024" fill="#FAF7F0"/>
-      <rect x="40" y="40" width="1456" height="944" rx="24" fill="#FFFFFF" stroke="#172228" stroke-opacity="0.12" stroke-width="3"/>
-      <rect x="40" y="40" width="1456" height="210" rx="24" fill="#172228"/>
-      <rect x="85" y="75" width="360" height="38" rx="19" fill="#C65378"/>
-      <text x="265" y="100" text-anchor="middle" fill="#FFFFFF" font-family="'Plus Jakarta Sans', sans-serif" font-size="16" font-weight="700" letter-spacing="2">WILLDRAFTING.IN VISUAL GUIDE</text>
-      <text x="85" y="160" fill="#FAF7F0" font-family="'Plus Jakarta Sans', sans-serif" font-size="34" font-weight="800">${safeTitle.slice(0, 68)}</text>
-      <text x="85" y="205" fill="#FAF7F0" fill-opacity="0.85" font-family="'Plus Jakarta Sans', sans-serif" font-size="20" font-weight="500">${safeSubtitle.slice(0, 95)}</text>
-      ${defaultSteps.map((step, idx) => {
-        const col = idx % 2;
-        const row = Math.floor(idx / 2);
-        const x = 85 + col * 695;
-        const y = 290 + row * 290;
-        return `
-        <rect x="${x}" y="${y}" width="665" height="250" rx="18" fill="#FAF7F0" stroke="#172228" stroke-opacity="0.1" stroke-width="2"/>
-        <circle cx="${x + 55}" cy="${y + 65}" r="28" fill="#C65378"/>
-        <text x="${x + 55}" y="${y + 74}" text-anchor="middle" fill="#FFFFFF" font-family="'Plus Jakarta Sans', sans-serif" font-size="22" font-weight="800">${idx + 1}</text>
-        <text x="${x + 100}" y="${y + 72}" fill="#172228" font-family="'Plus Jakarta Sans', sans-serif" font-size="22" font-weight="700">${step.replace(/[<>&"']/g, "").slice(0, 44)}</text>
-        <text x="${x + 40}" y="${y + 135}" fill="#49585F" font-family="'Plus Jakarta Sans', sans-serif" font-size="18" font-weight="500">${step.replace(/[<>&"']/g, "").slice(44, 95) || "Verified under the Indian Succession Act, 1925."}</text>
-        <rect x="${x + 40}" y="${y + 175}" width="240" height="36" rx="8" fill="#5F7E75" fill-opacity="0.15"/>
-        <text x="${x + 160}" y="${y + 199}" text-anchor="middle" fill="#5F7E75" font-family="'Plus Jakarta Sans', sans-serif" font-size="15" font-weight="700">100% Plain-English Rule</text>`;
-      }).join("\n")}
-      <rect x="85" y="885" width="1366" height="65" rx="14" fill="#172228"/>
-      <text x="768" y="925" text-anchor="middle" fill="#FAF7F0" font-family="'Plus Jakarta Sans', sans-serif" font-size="21" font-weight="700">Start Your Legally Valid Indian Will Online at www.willdrafting.in</text>
-    </svg>`;
-    return { base64: Buffer.from(svg, "utf8").toString("base64"), contentType: "image/svg+xml" };
-  }
-
-  const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="1536" height="1024" viewBox="0 0 1536 1024">
-    <defs>
-      <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-        <stop offset="0%" stop-color="#172228"/>
-        <stop offset="100%" stop-color="#212F35"/>
-      </linearGradient>
-    </defs>
-    <rect width="1536" height="1024" fill="url(#bg)"/>
-    <rect x="70" y="70" width="1396" height="884" rx="32" fill="#FAF7F0" fill-opacity="0.04" stroke="#C65378" stroke-width="3" stroke-opacity="0.6"/>
-    <rect x="130" y="150" width="360" height="52" rx="26" fill="#C65378"/>
-    <text x="310" y="183" text-anchor="middle" fill="#FFFFFF" font-family="'Plus Jakarta Sans', sans-serif" font-size="20" font-weight="800" letter-spacing="2">WILLDRAFTING.IN GUIDE</text>
-    <text x="130" y="330" fill="#FAF7F0" font-family="'Plus Jakarta Sans', sans-serif" font-size="52" font-weight="800">${safeTitle.slice(0, 42)}</text>
-    <text x="130" y="405" fill="#C65378" font-family="'Plus Jakarta Sans', sans-serif" font-size="46" font-weight="800">${safeTitle.slice(42, 85)}</text>
-    <text x="130" y="515" fill="#FAF7F0" fill-opacity="0.9" font-family="'Plus Jakarta Sans', sans-serif" font-size="27" font-weight="500">${safeSubtitle.slice(0, 75)}</text>
-    <text x="130" y="560" fill="#FAF7F0" fill-opacity="0.9" font-family="'Plus Jakarta Sans', sans-serif" font-size="27" font-weight="500">${safeSubtitle.slice(75, 150)}</text>
-    <rect x="130" y="790" width="640" height="68" rx="16" fill="#5F7E75"/>
-    <text x="450" y="833" text-anchor="middle" fill="#FFFFFF" font-family="'Plus Jakarta Sans', sans-serif" font-size="24" font-weight="700">www.willdrafting.in - Plain-English Legal Wills</text>
-  </svg>`;
-  return { base64: Buffer.from(svg, "utf8").toString("base64"), contentType: "image/svg+xml" };
+function extractSummaryBullets(html) {
+  const boxMatch = html.match(/<div\s+class=["']summary-box["'][^>]*>([\s\S]*?)<\/div>/i);
+  const target = boxMatch ? boxMatch[1] : html;
+  const liMatches = [...target.matchAll(/<li[^>]*>([\s\S]*?)<\/li>/gi)];
+  return liMatches
+    .map((m) => stripEmDashes(stripHtmlTags(m[1])))
+    .filter(Boolean)
+    .slice(0, 5);
 }
 
-async function generateAndStoreImage({ db, slug, title, subtitle, category, kind, customPrompt, headings = [] }) {
-  const apiKey = process.env.HELLO_DROP_CHOO;
-  const baseScene = customPrompt
-    ? customPrompt
-    : kind === "infographic"
-      ? `Wide real-life landscape visual process infographic (1536x1024) set over a real Indian residential/architectural landscape background explaining "${title}" in 4 clear step cards: ${headings.slice(0, 4).join(" | ")}.`
-      : `Wide real-life landscape DSLR photograph (1536x1024, natural golden-hour light) of real Indian people (a warm Indian family and estate lawyer) in a real Indian residential home/landscape setting discussing "${title}" (${category}).`;
-
-  const prompt =
-    kind === "infographic"
-      ? `${baseScene}\n\nSTRICT LANDSCAPE VISUAL, TITLE OVERLAY & BRAND RULES:\n- Format: Wide real-life landscape orientation (1536x1024) featuring a real Indian architectural/residential setting in the background.\n- Title Written on Image: The exact blog title "${title}" MUST be clearly, accurately, and prominently written at the top of the image inside a refined WillDrafting.in header banner.\n- WillDrafting Brand Font: 100% of all text, the main title, headings, and step labels MUST exclusively use the exact WillDrafting website font 'Plus Jakarta Sans' (clean geometric sans-serif, weights 600-800). Strictly NO serif, script, or other fonts.\n- WillDrafting Brand Colors: Use exclusively the WillDrafting color palette - Deep Navy (#172228) for primary banners/text, Warm Cream (#FAF7F0) for clean cards/surfaces, Berry Rose (#C65378) for primary highlights/badges, Slate (#49585F) for subtext, and Sage (#5F7E75) for positive step accents.`
-      : `${baseScene}\n\nSTRICT LANDSCAPE VISUAL, TITLE OVERLAY & BRAND RULES:\n- Format: Wide real-life landscape DSLR photograph (1536x1024, natural lighting) featuring REAL Indian people in a REAL Indian landscape, home, or architectural setting (strictly NO cartoon, vector, or flat illustration).\n- Title Written on Image: The exact blog title "${title}" MUST be clearly, accurately, and prominently written on the image inside a refined, high-contrast editorial banner/overlay.\n- WillDrafting Brand Font: The title written on the image MUST exclusively use the exact WillDrafting website font 'Plus Jakarta Sans' (bold modern geometric sans-serif, weights 700-800). Do NOT use any serif, cursive, or other font.\n- WillDrafting Brand Colors: Style the title typography and brand overlay using the exact WillDrafting color palette - Deep Navy (#172228), Warm Cream (#FAF7F0), Berry Rose accent (#C65378), and Sage (#5F7E75).`;
-
-  let base64 = null;
-  let contentType = "image/png";
-
-  if (apiKey) {
-    const modelsToTry = ["gpt-image-2", "gpt-image-1", "gpt-image-1-mini", "dall-e-3"];
-    for (const modelName of modelsToTry) {
-      try {
-        const payload = {
-          model: modelName,
-          prompt,
-          n: 1,
-          size: modelName === "dall-e-3" ? "1792x1024" : "1536x1024",
-        };
-        if (modelName === "dall-e-3") {
-          payload.response_format = "b64_json";
-        } else {
-          payload.quality = "medium";
-        }
-        const response = await fetch("https://api.openai.com/v1/images/generations", {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-            Authorization: `Bearer ${apiKey}`,
-          },
-          body: JSON.stringify(payload),
-          signal: AbortSignal.timeout(90000),
-        });
-        if (response.ok) {
-          const data = await response.json();
-          const item = data?.data?.[0];
-          if (item?.b64_json) {
-            base64 = item.b64_json;
-            contentType = "image/png";
-            break;
-          } else if (item?.url) {
-            const imgRes = await fetch(item.url);
-            if (imgRes.ok) {
-              const arrBuf = await imgRes.arrayBuffer();
-              base64 = Buffer.from(arrBuf).toString("base64");
-              contentType = imgRes.headers.get("content-type") || "image/png";
-              break;
-            }
-          }
-        }
-      } catch (err) {
-        console.warn(`[ImageGen] OpenAI ${modelName} warning (${kind}):`, err.message);
-      }
-    }
+function extractActionSteps(html, fallbackHeadings = []) {
+  const olMatches = [...html.matchAll(/<ol[^>]*>([\s\S]*?)<\/ol>/gi)];
+  if (olMatches.length > 0) {
+    const lastOl = olMatches[olMatches.length - 1][1];
+    const items = [...lastOl.matchAll(/<li[^>]*>([\s\S]*?)<\/li>/gi)]
+      .map((m) => stripEmDashes(stripHtmlTags(m[1])))
+      .filter(Boolean)
+      .slice(0, 5);
+    if (items.length >= 3) return items;
   }
+  return fallbackHeadings
+    .map((h) => h.replace(/^\d+\.\s*/, "").trim())
+    .filter(Boolean)
+    .slice(0, 5);
+}
 
-  if (!base64) {
-    try {
-      const width = 1536;
-      const height = 1024;
-      const seed = Math.floor(Math.random() * 1000000);
-      const pollUrl = `https://image.pollinations.ai/prompt/${encodeURIComponent(prompt.slice(0, 900))}?width=${width}&height=${height}&seed=${seed}&nologo=true&model=flux`;
-      const pollRes = await fetch(pollUrl, {
-        headers: { "User-Agent": "WillDrafting-DailySEO/1.0" },
-        signal: AbortSignal.timeout(35000),
-      });
-      if (pollRes.ok) {
-        const buf = await pollRes.arrayBuffer();
-        if (buf.byteLength > 1000) {
-          base64 = Buffer.from(buf).toString("base64");
-          contentType = pollRes.headers.get("content-type") || "image/jpeg";
-        }
-      }
-    } catch (err) {
-      console.warn(`[ImageGen] Pollinations fallback warning (${kind}):`, err.message);
-    }
+async function storeLocalImageInMongo({ db, localFilePath, slug, kind, prompt }) {
+  if (!localFilePath || !fs.existsSync(localFilePath)) {
+    throw new Error(
+      `Missing local ${kind} image file at "${localFilePath || ""}". Images in the automated funnel MUST be generated via the Gemini 4 Argon 'image-generator' subagent and passed as localHeroImagePath / localInfographicPath.`
+    );
   }
-
-  if (!base64) {
-    const svgFallback = buildFallbackSvg({ title, subtitle, kind, steps: headings });
-    base64 = svgFallback.base64;
-    contentType = svgFallback.contentType;
-  }
-
-  const cleanBase64 = base64.replace(/^data:[^;]+;base64,/, "");
-  const size = Buffer.byteLength(cleanBase64, "base64");
-  const ext = contentType.includes("svg") ? "svg" : contentType.includes("jpeg") || contentType.includes("jpg") ? "jpg" : "png";
+  const fileBuffer = fs.readFileSync(localFilePath);
+  const cleanBase64 = fileBuffer.toString("base64");
+  const size = fileBuffer.byteLength;
+  const rawExt = path.extname(localFilePath).toLowerCase().replace(".", "") || "png";
+  const contentType =
+    rawExt === "jpg" || rawExt === "jpeg"
+      ? "image/jpeg"
+      : rawExt === "webp"
+        ? "image/webp"
+        : "image/png";
+  const ext = rawExt === "jpeg" ? "jpg" : rawExt;
   const now = new Date();
+
   const res = await db.collection("blog_images").insertOne({
     kind,
     filename: `willdrafting_${kind}_${Date.now()}.${ext}`,
@@ -288,7 +171,7 @@ async function generateAndStoreImage({ db, slug, title, subtitle, category, kind
     contentType,
     base64: cleanBase64,
     size,
-    prompt,
+    prompt: prompt || null,
     blogSlug: slug || null,
     createdAt: now,
   });
@@ -402,14 +285,16 @@ async function run() {
           requiredHtmlElements: [
             "Quick 5-bullet Plain-English Summary Box at the top",
             "All 5 mandatoryH2Headings from blueprint",
-            "<div data-infographic-slot=\"1\"></div> placed right after the 2nd H2 section",
             "Real-life Indian or NRI family story with concrete Rs figures",
             "HTML <table> matching blueprint.tableSpec",
             "Sample Plain-English Will Clause in a <blockquote> matching blueprint.sampleClauseTopic",
             "At least 4 contextual internal <a href=\"...\"> links using blueprint.internalLinksToInclude",
           ],
+          shortVersionRequirement: "4 to 5 concise plain-English bullet takeaways for 'The short version' sidebar card (array of strings in payload.shortVersion)",
+          actionStepsRequirement: "5 practical, chronological action steps for 'What to do next' card (array of strings in payload.actionSteps)",
+          imageGenerationRequirement: "Invoke the Gemini 4 Argon 'image-generator' subagent using blueprint.coverImagePrompt and blueprint.infographicPrompt to generate both 16:9 visuals, and pass their absolute file paths as localHeroImagePath and localInfographicPath in /tmp/daily-blog-payload.json",
           faqsRequirement: "6 to 8 conversational PAA FAQs with 50-80 word direct plain-English answers",
-          reviewsRequirement: "3 realistic client reviews (rating 5) relevant to the topic",
+          reviewsRequirement: "3 realistic client reviews (rating 5, with name, location, and review text) relevant to the topic",
         },
       };
 
@@ -433,7 +318,7 @@ async function run() {
       const category = stripEmDashes(String(rawPayload.category || "Will Basics").trim());
       const author = stripEmDashes(String(rawPayload.author || "Advocate Anuj Anand Malik").trim());
 
-      let rawHtml = rawPayload.content || "";
+      let rawHtml = rawPayload.description || rawPayload.content || "";
       if (!rawHtml && rawPayload.contentFile && fs.existsSync(rawPayload.contentFile)) {
         rawHtml = fs.readFileSync(rawPayload.contentFile, "utf8");
       } else if (!rawHtml && fs.existsSync("/tmp/daily-blog-content.html")) {
@@ -442,7 +327,7 @@ async function run() {
       let content = stripEmDashes(String(rawHtml).trim());
       // Ensure no inner <h1> tags exist inside content body
       content = content.replace(/<h1(\s[^>]*)?>/gi, "<h2$1>").replace(/<\/h1>/gi, "</h2>");
-      content = ensureInfographicSlot(content);
+      content = content.replace(/<div\s+data-infographic-slot=["']1["']\s*><\/div>\s*/gi, "").trim();
 
       // Validate Screaming Frog rules
       const errors = [];
@@ -496,42 +381,90 @@ async function run() {
         : [];
 
       const reviews = Array.isArray(rawPayload.reviews)
-        ? rawPayload.reviews.map((r) => ({
-            name: stripEmDashes(String(r.name || "").trim()),
-            rating: Number(r.rating) || 5,
-            date: String(r.date || getIstDateString()).trim(),
-            comment: stripEmDashes(String(r.comment || "").trim()),
-          }))
+        ? rawPayload.reviews
+            .map((r) => {
+              let rawName = stripEmDashes(String(r.name || "").trim());
+              let location = r.location ? stripEmDashes(String(r.location).trim()) : undefined;
+              if (!location && rawName.includes(",")) {
+                const parts = rawName.split(",");
+                rawName = parts[0].trim();
+                location = parts.slice(1).join(",").trim();
+              }
+              const reviewText = stripEmDashes(String(r.review || r.comment || r.text || "").trim());
+              return {
+                name: rawName,
+                rating: Number(r.rating) || 5,
+                review: reviewText,
+                comment: reviewText,
+                ...(location ? { location } : {}),
+                date: String(r.date || getIstDateString()).trim(),
+              };
+            })
+            .filter((r) => r.name && r.review)
         : [];
 
       const matchedDay = planDays.find((d) => d.slug === slug);
-      console.log("[Image Pipeline] Generating & storing real-life landscape cover image + infographic with WillDrafting font & colors...");
+      const authorRole = stripEmDashes(
+        String(
+          rawPayload.authorRole ||
+            matchedDay?.authorRole ||
+            "Senior Succession & Trust Counsel, WillDrafting.in"
+        ).trim()
+      );
+      const keywords = Array.isArray(rawPayload.keywords) && rawPayload.keywords.length > 0
+        ? rawPayload.keywords.map((k) => stripEmDashes(String(k).trim())).filter(Boolean)
+        : matchedDay
+          ? [matchedDay.primaryKeyword, ...(matchedDay.secondaryKeywords || [])].filter(Boolean)
+          : [];
+
+      const shortVersion =
+        Array.isArray(rawPayload.shortVersion) && rawPayload.shortVersion.length > 0
+          ? rawPayload.shortVersion.map((s) => stripEmDashes(String(s).trim())).filter(Boolean)
+          : extractSummaryBullets(content);
+
+      const actionSteps =
+        Array.isArray(rawPayload.actionSteps) && rawPayload.actionSteps.length > 0
+          ? rawPayload.actionSteps.map((s) => stripEmDashes(String(s).trim())).filter(Boolean)
+          : extractActionSteps(content, h2Matches);
+
+      const references = Array.isArray(rawPayload.references)
+        ? rawPayload.references
+            .map((ref) => ({
+              title: stripEmDashes(String(ref?.title || "").trim()),
+              url: String(ref?.url || "").trim(),
+            }))
+            .filter((ref) => ref.title)
+        : [];
+
+      const disclaimer =
+        stripEmDashes(String(rawPayload.disclaimer || "").trim()) ||
+        "This legal guide is published for educational and estate planning awareness under the Indian Succession Act, 1925 and applicable personal laws. For tailored estate planning or Will review, consult an advocate on WillDrafting.in.";
+
+      const localCoverPath = rawPayload.localHeroImagePath || rawPayload.coverImagePath || "";
+      const localInfographicPath =
+        rawPayload.localInfographicPath || rawPayload.infographicImagePath || "";
+
+      console.log("[Image Pipeline] Storing Gemini 4 Argon generated cover image + infographic in MongoDB...");
       const coverUrl =
         rawPayload.image && String(rawPayload.image).startsWith("/api/blog-images/")
           ? rawPayload.image
-          : await generateAndStoreImage({
+          : await storeLocalImageInMongo({
               db,
+              localFilePath: localCoverPath,
               slug,
-              title,
-              subtitle,
-              category,
               kind: "cover",
-              customPrompt: rawPayload.coverImagePrompt || matchedDay?.coverImagePrompt || "",
-              headings: h2Matches,
+              prompt: rawPayload.coverImagePrompt || matchedDay?.coverImagePrompt || "",
             });
 
       const infographicUrl =
         rawPayload.infographic && String(rawPayload.infographic).startsWith("/api/blog-images/")
           ? rawPayload.infographic
-          : await generateAndStoreImage({
+          : await storeLocalImageInMongo({
               db,
+              localFilePath: localInfographicPath,
               slug,
-              title,
-              subtitle,
-              category,
               kind: "infographic",
-              customPrompt: rawPayload.infographicPrompt || matchedDay?.infographicPrompt || "",
-              headings: h2Matches,
+              prompt: rawPayload.infographicPrompt || matchedDay?.infographicPrompt || "",
             });
 
       const now = new Date();
@@ -544,15 +477,25 @@ async function run() {
         slug,
         category,
         date: istDate,
+        readTime: readability.readingTime,
         readingTime: readability.readingTime,
         author,
+        authorRole,
         image: coverUrl,
+        imageId: extractImageId(coverUrl),
         infographic: infographicUrl,
-        metaDescription,
-        status: "PUBLISHED",
+        infographicId: extractImageId(infographicUrl),
+        description: content,
         content,
+        metaDescription,
+        keywords,
+        shortVersion,
+        actionSteps,
+        status: "PUBLISHED",
         faqs,
         reviews,
+        references,
+        disclaimer,
         updatedAt: now,
       };
 

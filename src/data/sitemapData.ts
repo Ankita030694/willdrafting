@@ -1221,6 +1221,14 @@ export const staticPages: SitemapPageItem[] = [
     changefreq: "weekly",
     priority: 0.8,
   },
+  {
+    title: "Will Registration at Home for Senior Citizens & Bedridden Parents",
+    href: "/blogs/will-registration-at-home-for-senior-citizens-india",
+    category: "Guides",
+    date: "2026-10-26",
+    changefreq: "weekly",
+    priority: 0.8,
+  },
 ];
 
 /**

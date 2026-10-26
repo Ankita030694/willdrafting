@@ -135,7 +135,7 @@ export default async function BlogsPage() {
         title: b.title,
         lead: b.subtitle || b.metaDescription || "",
         category: b.category || "Indian Succession Law",
-        readTime: b.readTime || "10 min",
+        readTime: b.readTime || b.readingTime || "10 min",
         date: b.date || new Date(b.createdAt).toLocaleDateString("en-US", {
           month: "long",
           day: "numeric",
@@ -178,23 +178,9 @@ export default async function BlogsPage() {
             CENTERED HERO HEADER
             ========================================================================= */}
         <div className="flex flex-col items-center text-center max-w-3xl mx-auto mb-14 sm:mb-20">
-          <div className="inline-flex items-center text-[#C65378] text-[0.75rem] font-bold tracking-[0.16em] uppercase mb-4 sm:mb-5">
-            <span>Indian Succession Law Guides · WillDrafting.in Editorial Counsel</span>
-          </div>
-
-          <h1 className="text-[2rem] sm:text-[2.2rem] lg:text-[3.4rem] font-medium leading-[1.12] tracking-[-0.025em] text-[#111827] mb-4 sm:mb-5">
-            Protect what you build. Prepare for what comes next.
+          <h1 className="text-[2rem] sm:text-[2.2rem] lg:text-[3.4rem] font-medium leading-[1.12] tracking-[-0.025em] text-[#111827]">
+            Blogs
           </h1>
-
-          <p className="text-[1.05rem] sm:text-[1.15rem] leading-[1.65] text-[#55636D] font-normal max-w-2xl mx-auto">
-            Authoritative{" "}
-            <span className="font-bold">
-              Indian succession law guides and Will drafting rules
-            </span>{" "}
-            under the Indian Succession Act, 1925, Hindu Succession Act, 1956,
-            Muslim Personal Law (Wasiyat), and FEMA, written by WillDrafting.in
-            estate planning advocates for Resident Indians and NRIs.
-          </p>
         </div>
 
         {/* =========================================================================

@@ -13,19 +13,20 @@ function estimateReadTime(html: string): string {
 }
 
 function serializeBlog(doc: BlogDoc) {
+  const htmlBody = doc.description || doc.content || "";
   return {
     id: doc._id.toString(),
     title: doc.title,
     subtitle: doc.subtitle || "",
     slug: doc.slug,
     category: doc.category || "Indian Succession Law",
-    readTime: doc.readTime || estimateReadTime(doc.description || ""),
+    readTime: doc.readTime || doc.readingTime || estimateReadTime(htmlBody),
     date: doc.date || new Date(doc.createdAt).toISOString().split("T")[0],
     image: doc.image || "/desktopusp.jpg",
     imageId: doc.imageId || null,
     infographic: doc.infographic || "",
     infographicId: doc.infographicId || null,
-    description: doc.description || "",
+    description: htmlBody,
     metaTitle: doc.metaTitle || doc.title,
     metaDescription: doc.metaDescription || doc.subtitle || "",
     keywords: Array.isArray(doc.keywords) ? doc.keywords : [],
