@@ -194,6 +194,7 @@ export default function WillDetailInspectorModal({
             justifyContent: "space-between",
             alignItems: "flex-start",
             gap: "1rem",
+            flexShrink: 0,
           }}
         >
           <div>
@@ -291,6 +292,8 @@ export default function WillDetailInspectorModal({
             padding: "0.5rem 1.5rem 0",
             borderBottom: "1px solid rgba(23, 34, 40, 0.08)",
             backgroundColor: "#FFFFFF",
+            flexShrink: 0,
+            overflowX: "auto",
           }}
         >
           {[
@@ -313,6 +316,7 @@ export default function WillDetailInspectorModal({
                   border: "none",
                   borderBottom: active ? "2px solid #C65378" : "2px solid transparent",
                   cursor: "pointer",
+                  whiteSpace: "nowrap",
                 }}
               >
                 {tab.label}
@@ -322,9 +326,9 @@ export default function WillDetailInspectorModal({
         </div>
 
         {/* Scrollable Body */}
-        <div style={{ flex: 1, overflowY: "auto", padding: "1.25rem 1.5rem", display: "flex", flexDirection: "column", gap: "1.25rem" }}>
+        <div style={{ flex: 1, minHeight: 0, overflowY: "auto", padding: "1.25rem 1.5rem" }}>
           {activeTab === "will" && (
-            <>
+            <div style={{ display: "flex", flexDirection: "column", gap: "1.25rem" }}>
               {!s ? (
                 <div
                   style={{
@@ -347,6 +351,7 @@ export default function WillDetailInspectorModal({
                       display: "grid",
                       gridTemplateColumns: "repeat(auto-fit, minmax(150px, 1fr))",
                       gap: "0.75rem",
+                      flexShrink: 0,
                     }}
                   >
                     <div style={{ padding: "0.8rem 0.95rem", backgroundColor: "#FAF7F0", borderRadius: "12px", border: "1px solid rgba(23, 34, 40, 0.08)" }}>
@@ -385,7 +390,7 @@ export default function WillDetailInspectorModal({
                   </div>
 
                   {/* Section 1: Testator Personal Details */}
-                  <div style={{ border: "1px solid rgba(23, 34, 40, 0.08)", borderRadius: "12px", overflow: "hidden" }}>
+                  <div style={{ border: "1px solid rgba(23, 34, 40, 0.08)", borderRadius: "12px", overflow: "hidden", flexShrink: 0, backgroundColor: "#FFFFFF" }}>
                     <div style={{ backgroundColor: "#FAF7F0", padding: "0.7rem 1rem", borderBottom: "1px solid rgba(23, 34, 40, 0.08)", fontWeight: 700, fontSize: "0.84rem", color: "#172228" }}>
                       1. Testator Profile (About You)
                     </div>
@@ -406,10 +411,11 @@ export default function WillDetailInspectorModal({
                       <div><span style={{ color: "#55636D" }}>Religion / Law:</span> <strong style={{ textTransform: "capitalize", color: "#172228" }}>{t?.religionPersonalLaw?.replace(/_/g, " ") || "-"}</strong></div>
                       <div><span style={{ color: "#55636D" }}>PAN:</span> <strong style={{ fontFamily: "monospace", color: "#172228" }}>{t?.pan || "-"}</strong></div>
                       <div><span style={{ color: "#55636D" }}>Aadhaar:</span> <strong style={{ fontFamily: "monospace", color: "#172228" }}>{t?.aadhaar || "-"}</strong></div>
-                      <div><span style={{ color: "#55636D" }}>Email in Will:</span> <strong style={{ color: "#172228" }}>{t?.email || "-"}</strong></div>
+                      <div><span style={{ color: "#55636D" }}>Email in Will:</span> <strong style={{ color: "#172228", wordBreak: "break-word" }}>{t?.email || "-"}</strong></div>
                       <div><span style={{ color: "#55636D" }}>Phone in Will:</span> <strong style={{ color: "#172228" }}>{t?.phone || "-"}</strong></div>
                       <div><span style={{ color: "#55636D" }}>City / State / PIN:</span> <strong style={{ color: "#172228" }}>{[t?.city, t?.state, t?.pincode].filter(Boolean).join(", ") || "-"}</strong></div>
                       <div><span style={{ color: "#55636D" }}>Citizenship:</span> <strong style={{ color: "#172228" }}>{t?.citizenship || "-"}</strong></div>
+                      <div><span style={{ color: "#55636D" }}>Previous Will:</span> <strong style={{ color: "#172228" }}>{t?.hasPreviousWill ? (t?.revokePreviousWill ? "Yes (Revoked)" : "Yes") : "No"}</strong></div>
                       <div style={{ gridColumn: "1 / -1" }}>
                         <span style={{ color: "#55636D" }}>Residential Address:</span> <strong style={{ color: "#172228" }}>{t?.address || "-"}</strong>
                       </div>
@@ -422,7 +428,7 @@ export default function WillDetailInspectorModal({
                   </div>
 
                   {/* Section 2: Family Members */}
-                  <div style={{ border: "1px solid rgba(23, 34, 40, 0.08)", borderRadius: "12px", overflow: "hidden" }}>
+                  <div style={{ border: "1px solid rgba(23, 34, 40, 0.08)", borderRadius: "12px", overflow: "hidden", flexShrink: 0, backgroundColor: "#FFFFFF" }}>
                     <div style={{ backgroundColor: "#FAF7F0", padding: "0.7rem 1rem", borderBottom: "1px solid rgba(23, 34, 40, 0.08)", fontWeight: 700, fontSize: "0.84rem", color: "#172228" }}>
                       2. Family Members ({family.length})
                     </div>
@@ -437,7 +443,7 @@ export default function WillDetailInspectorModal({
                               <th style={{ padding: "0.55rem 0.75rem", color: "#49585F" }}>Relationship</th>
                               <th style={{ padding: "0.55rem 0.75rem", color: "#49585F" }}>DOB / Minor</th>
                               <th style={{ padding: "0.55rem 0.75rem", color: "#49585F" }}>PAN</th>
-                              <th style={{ padding: "0.55rem 0.75rem", color: "#49585F" }}>Contact</th>
+                              <th style={{ padding: "0.55rem 0.75rem", color: "#49585F" }}>Contact & Address</th>
                             </tr>
                           </thead>
                           <tbody>
@@ -457,7 +463,9 @@ export default function WillDetailInspectorModal({
                                 </td>
                                 <td style={{ padding: "0.55rem 0.75rem", fontFamily: "monospace", color: "#172228" }}>{m.pan || "-"}</td>
                                 <td style={{ padding: "0.55rem 0.75rem", color: "#49585F" }}>
-                                  {[m.phone, m.email].filter(Boolean).join(" • ") || "-"}
+                                  <div>{[m.phone, m.email].filter(Boolean).join(" • ") || "-"}</div>
+                                  {m.address && <div style={{ fontSize: "0.7rem", color: "#55636D" }}>{m.address}</div>}
+                                  {m.notes && <div style={{ fontSize: "0.7rem", color: "#55636D" }}>Note: {m.notes}</div>}
                                 </td>
                               </tr>
                             ))}
@@ -468,7 +476,7 @@ export default function WillDetailInspectorModal({
                   </div>
 
                   {/* Section 3: Estate Assets */}
-                  <div style={{ border: "1px solid rgba(23, 34, 40, 0.08)", borderRadius: "12px", overflow: "hidden" }}>
+                  <div style={{ border: "1px solid rgba(23, 34, 40, 0.08)", borderRadius: "12px", overflow: "hidden", flexShrink: 0, backgroundColor: "#FFFFFF" }}>
                     <div style={{ backgroundColor: "#FAF7F0", padding: "0.7rem 1rem", borderBottom: "1px solid rgba(23, 34, 40, 0.08)", fontWeight: 700, fontSize: "0.84rem", color: "#172228", display: "flex", justifyContent: "space-between" }}>
                       <span>3. Estate Assets Register ({assets.length})</span>
                       <span style={{ color: "#3F5C53" }}>Total: {formatINR(target.progress?.totalEstateValue)}</span>
@@ -482,7 +490,7 @@ export default function WillDetailInspectorModal({
                             <tr style={{ borderBottom: "1px solid rgba(23, 34, 40, 0.08)", backgroundColor: "#FDFBF7", textAlign: "left" }}>
                               <th style={{ padding: "0.55rem 0.75rem", color: "#49585F" }}>Asset & Category</th>
                               <th style={{ padding: "0.55rem 0.75rem", color: "#49585F" }}>Identifier / Institution</th>
-                              <th style={{ padding: "0.55rem 0.75rem", color: "#49585F" }}>Ownership</th>
+                              <th style={{ padding: "0.55rem 0.75rem", color: "#49585F" }}>Ownership & Details</th>
                               <th style={{ padding: "0.55rem 0.75rem", color: "#49585F" }}>Est. Value</th>
                             </tr>
                           </thead>
@@ -496,16 +504,20 @@ export default function WillDetailInspectorModal({
                                   </div>
                                 </td>
                                 <td style={{ padding: "0.55rem 0.75rem", color: "#49585F" }}>
-                                  <div>{a.identifier || "-"}</div>
-                                  <div style={{ fontSize: "0.7rem", color: "#55636D" }}>{a.addressOrInstitution || ""}</div>
+                                  <div>{a.identifier || a.policyNumber || "-"}</div>
+                                  <div style={{ fontSize: "0.7rem", color: "#55636D" }}>{a.addressOrInstitution || a.insuranceCompany || ""}</div>
                                 </td>
                                 <td style={{ padding: "0.55rem 0.75rem", textTransform: "capitalize", color: "#49585F" }}>
-                                  {a.ownership}
-                                  {a.ownership === "joint" && a.jointOwnerName ? ` (${a.ownershipPercentage ?? 50}% w/ ${a.jointOwnerName})` : ""}
+                                  <div>
+                                    {a.ownership}
+                                    {a.ownership === "joint" && a.jointOwnerName ? ` (${a.ownershipPercentage ?? 50}% w/ ${a.jointOwnerName})` : ""}
+                                  </div>
+                                  {a.nomineeName ? <div style={{ fontSize: "0.68rem", color: "#55636D" }}>Nominee: {a.nomineeName}</div> : null}
                                   {a.hasLoan ? <div style={{ fontSize: "0.68rem", color: "#B91C1C" }}>Loan: {a.loanDetails || "Yes"}</div> : null}
+                                  {a.specialInstructions ? <div style={{ fontSize: "0.68rem", color: "#55636D", textTransform: "none" }}>Note: {a.specialInstructions}</div> : null}
                                 </td>
                                 <td style={{ padding: "0.55rem 0.75rem", fontWeight: 600, color: "#172228" }}>
-                                  {formatINR(a.approximateValue)}
+                                  {formatINR(a.approximateValue || a.sumAssured)}
                                 </td>
                               </tr>
                             ))}
@@ -516,7 +528,7 @@ export default function WillDetailInspectorModal({
                   </div>
 
                   {/* Section 4: Beneficiary Allocations & Residuary */}
-                  <div style={{ border: "1px solid rgba(23, 34, 40, 0.08)", borderRadius: "12px", overflow: "hidden" }}>
+                  <div style={{ border: "1px solid rgba(23, 34, 40, 0.08)", borderRadius: "12px", overflow: "hidden", flexShrink: 0, backgroundColor: "#FFFFFF" }}>
                     <div style={{ backgroundColor: "#FAF7F0", padding: "0.7rem 1rem", borderBottom: "1px solid rgba(23, 34, 40, 0.08)", fontWeight: 700, fontSize: "0.84rem", color: "#172228" }}>
                       4. Beneficiary Allocations & Residuary Estate ({allocations.length})
                     </div>
@@ -524,12 +536,12 @@ export default function WillDetailInspectorModal({
                       <div style={{ display: "flex", gap: "1.5rem", flexWrap: "wrap", paddingBottom: "0.5rem", borderBottom: "1px solid rgba(23, 34, 40, 0.06)" }}>
                         <div>
                           <span style={{ color: "#55636D" }}>Primary Residuary Beneficiary:</span>{" "}
-                          <strong style={{ color: "#172228" }}>{s.residuaryBeneficiaryName || "-"}</strong>
+                          <strong style={{ color: "#172228" }}>{s.residuaryBeneficiaryName || s.residuaryPrimary01Name || "-"}</strong>
                           {s.residuaryPrimary02Name ? ` & ${s.residuaryPrimary02Name}` : ""}
                         </div>
                         <div>
                           <span style={{ color: "#55636D" }}>Backup Residuary Beneficiary:</span>{" "}
-                          <strong style={{ color: "#172228" }}>{s.residuaryAlternateName || "-"}</strong>
+                          <strong style={{ color: "#172228" }}>{s.residuaryAlternateName || s.residuaryBackup01Name || "-"}</strong>
                           {s.residuaryBackup02Name ? ` & ${s.residuaryBackup02Name}` : ""}
                         </div>
                       </div>
@@ -559,8 +571,8 @@ export default function WillDetailInspectorModal({
                   </div>
 
                   {/* Section 5: Executors & Guardians */}
-                  <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "0.75rem" }}>
-                    <div style={{ border: "1px solid rgba(23, 34, 40, 0.08)", borderRadius: "12px", overflow: "hidden" }}>
+                  <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "0.75rem", flexShrink: 0 }}>
+                    <div style={{ border: "1px solid rgba(23, 34, 40, 0.08)", borderRadius: "12px", overflow: "hidden", backgroundColor: "#FFFFFF" }}>
                       <div style={{ backgroundColor: "#FAF7F0", padding: "0.65rem 1rem", borderBottom: "1px solid rgba(23, 34, 40, 0.08)", fontWeight: 700, fontSize: "0.82rem", color: "#172228" }}>
                         5. Executors
                       </div>
@@ -578,7 +590,7 @@ export default function WillDetailInspectorModal({
                       </div>
                     </div>
 
-                    <div style={{ border: "1px solid rgba(23, 34, 40, 0.08)", borderRadius: "12px", overflow: "hidden" }}>
+                    <div style={{ border: "1px solid rgba(23, 34, 40, 0.08)", borderRadius: "12px", overflow: "hidden", backgroundColor: "#FFFFFF" }}>
                       <div style={{ backgroundColor: "#FAF7F0", padding: "0.65rem 1rem", borderBottom: "1px solid rgba(23, 34, 40, 0.08)", fontWeight: 700, fontSize: "0.82rem", color: "#172228" }}>
                         6. Testamentary Guardians
                       </div>
@@ -586,28 +598,37 @@ export default function WillDetailInspectorModal({
                         <div>
                           <div style={{ color: "#55636D", fontWeight: 600 }}>Primary Guardian</div>
                           <div style={{ color: "#172228" }}><strong>{s.guardianPrimary?.name || "Not appointed / N/A"}</strong> {s.guardianPrimary?.relationship ? `(${s.guardianPrimary.relationship})` : ""}</div>
-                          <div style={{ color: "#49585F" }}>{[s.guardianPrimary?.phone, s.guardianPrimary?.email].filter(Boolean).join(" • ")}</div>
+                          <div style={{ color: "#49585F" }}>{[s.guardianPrimary?.phone, s.guardianPrimary?.email, s.guardianPrimary?.address].filter(Boolean).join(" • ")}</div>
                         </div>
                         <div style={{ borderTop: "1px solid rgba(23, 34, 40, 0.06)", paddingTop: "0.45rem" }}>
                           <div style={{ color: "#55636D", fontWeight: 600 }}>Alternate Guardian</div>
                           <div style={{ color: "#172228" }}><strong>{s.guardianAlternate?.name || "Not appointed / N/A"}</strong> {s.guardianAlternate?.relationship ? `(${s.guardianAlternate.relationship})` : ""}</div>
+                          <div style={{ color: "#49585F" }}>{[s.guardianAlternate?.phone, s.guardianAlternate?.email, s.guardianAlternate?.address].filter(Boolean).join(" • ")}</div>
                         </div>
+                        {s.guardianSpecialInstructions && (
+                          <div style={{ borderTop: "1px solid rgba(23, 34, 40, 0.06)", paddingTop: "0.45rem", color: "#49585F" }}>
+                            <span style={{ color: "#55636D", fontWeight: 600 }}>Guardian Instructions:</span> {s.guardianSpecialInstructions}
+                          </div>
+                        )}
                       </div>
                     </div>
                   </div>
 
                   {/* Section 6: Special Wishes & Motivation */}
-                  <div style={{ border: "1px solid rgba(23, 34, 40, 0.08)", borderRadius: "12px", overflow: "hidden" }}>
+                  <div style={{ border: "1px solid rgba(23, 34, 40, 0.08)", borderRadius: "12px", overflow: "hidden", flexShrink: 0, backgroundColor: "#FFFFFF" }}>
                     <div style={{ backgroundColor: "#FAF7F0", padding: "0.65rem 1rem", borderBottom: "1px solid rgba(23, 34, 40, 0.08)", fontWeight: 700, fontSize: "0.82rem", color: "#172228" }}>
                       7. Special Wishes & Emotional Purpose
                     </div>
                     <div style={{ padding: "0.85rem 1rem", fontSize: "0.78rem", display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))", gap: "0.6rem" }}>
                       <div><span style={{ color: "#55636D" }}>Jewellery:</span> <strong style={{ color: "#172228" }}>{s.specialWishes?.jewelleryInstructions || "-"}</strong></div>
                       <div><span style={{ color: "#55636D" }}>Belongings:</span> <strong style={{ color: "#172228" }}>{s.specialWishes?.personalBelongings || "-"}</strong></div>
+                      <div><span style={{ color: "#55636D" }}>Pets Care:</span> <strong style={{ color: "#172228" }}>{s.specialWishes?.petsCare || "-"}</strong></div>
                       <div><span style={{ color: "#55636D" }}>Charitable Gifts:</span> <strong style={{ color: "#172228" }}>{s.specialWishes?.charitableGifts || "-"}</strong></div>
                       <div><span style={{ color: "#55636D" }}>Digital Accounts:</span> <strong style={{ color: "#172228" }}>{s.specialWishes?.digitalAccounts || "-"}</strong></div>
                       <div><span style={{ color: "#55636D" }}>Funeral Wishes:</span> <strong style={{ color: "#172228" }}>{s.specialWishes?.funeralCeremonyWishes || "-"}</strong></div>
-                      <div><span style={{ color: "#55636D" }}>Message to Family:</span> <strong style={{ color: "#172228" }}>{s.specialWishes?.personalMessageToFamily || "-"}</strong></div>
+                      <div style={{ gridColumn: "1 / -1" }}>
+                        <span style={{ color: "#55636D" }}>Message to Family:</span> <strong style={{ color: "#172228" }}>{s.specialWishes?.personalMessageToFamily || "-"}</strong>
+                      </div>
                       <div style={{ gridColumn: "1 / -1" }}>
                         <span style={{ color: "#55636D" }}>Emotional Purpose:</span> <strong style={{ color: "#172228" }}>{s.emotionalReason || "-"}</strong>
                       </div>
@@ -615,13 +636,13 @@ export default function WillDetailInspectorModal({
                   </div>
                 </>
               )}
-            </>
+            </div>
           )}
 
           {activeTab === "account" && (
             <div style={{ display: "flex", flexDirection: "column", gap: "1rem" }}>
               {/* Identity Metadata */}
-              <div style={{ border: "1px solid rgba(23, 34, 40, 0.08)", borderRadius: "12px", padding: "1rem", display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))", gap: "0.75rem", fontSize: "0.82rem", backgroundColor: "#FDFBF7" }}>
+              <div style={{ border: "1px solid rgba(23, 34, 40, 0.08)", borderRadius: "12px", padding: "1rem", display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))", gap: "0.75rem", fontSize: "0.82rem", backgroundColor: "#FDFBF7", flexShrink: 0 }}>
                 <div><span style={{ color: "#55636D" }}>Account ID:</span> <code style={{ fontSize: "0.75rem", color: "#172228" }}>{target.accountId || "None (Anonymous Guest)"}</code></div>
                 <div><span style={{ color: "#55636D" }}>Will Doc ID:</span> <code style={{ fontSize: "0.75rem", color: "#172228" }}>{target.willId || "None"}</code></div>
                 <div><span style={{ color: "#55636D" }}>Guest Session ID:</span> <code style={{ fontSize: "0.75rem", color: "#C65378" }}>{target.sessionId || "N/A (Registered Account)"}</code></div>
@@ -641,7 +662,7 @@ export default function WillDetailInspectorModal({
 
               {/* Admin Quick Actions for Account */}
               {target.accountId && (target.onGrantPlan || target.onUnlockWill) && (
-                <div style={{ border: "1px solid rgba(23, 34, 40, 0.08)", borderRadius: "12px", padding: "1rem", backgroundColor: "#FAF7F0", display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: "0.75rem" }}>
+                <div style={{ border: "1px solid rgba(23, 34, 40, 0.08)", borderRadius: "12px", padding: "1rem", backgroundColor: "#FAF7F0", display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: "0.75rem", flexShrink: 0 }}>
                   <div style={{ fontSize: "0.82rem", fontWeight: 700, color: "#172228" }}>
                     Superadmin Account Controls
                   </div>
@@ -718,7 +739,7 @@ export default function WillDetailInspectorModal({
               )}
 
               {/* Orders / Checkout History */}
-              <div style={{ border: "1px solid rgba(23, 34, 40, 0.08)", borderRadius: "12px", overflow: "hidden" }}>
+              <div style={{ border: "1px solid rgba(23, 34, 40, 0.08)", borderRadius: "12px", overflow: "hidden", flexShrink: 0, backgroundColor: "#FFFFFF" }}>
                 <div style={{ backgroundColor: "#FAF7F0", padding: "0.7rem 1rem", borderBottom: "1px solid rgba(23, 34, 40, 0.08)", fontWeight: 700, fontSize: "0.84rem", color: "#172228" }}>
                   Payment Orders & Checkout Attempts ({target.orders?.length ?? 0})
                 </div>
@@ -794,7 +815,6 @@ export default function WillDetailInspectorModal({
                 borderRadius: "12px",
                 fontSize: "0.75rem",
                 overflowX: "auto",
-                maxHeight: "60vh",
               }}
             >
               {JSON.stringify(target.willState || target, null, 2)}
@@ -810,6 +830,7 @@ export default function WillDetailInspectorModal({
             backgroundColor: "#FAF7F0",
             display: "flex",
             justifyContent: "flex-end",
+            flexShrink: 0,
           }}
         >
           <button

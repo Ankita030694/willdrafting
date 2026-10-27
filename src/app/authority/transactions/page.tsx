@@ -498,7 +498,7 @@ export default function AuthorityTransactionsPage() {
               overflow: "hidden",
             }}
           >
-            <div style={{ padding: "1.1rem 1.35rem", borderBottom: "1px solid rgba(23, 34, 40, 0.08)", backgroundColor: "#FAF7F0", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+            <div style={{ padding: "1.1rem 1.35rem", borderBottom: "1px solid rgba(23, 34, 40, 0.08)", backgroundColor: "#FAF7F0", display: "flex", justifyContent: "space-between", alignItems: "center", flexShrink: 0 }}>
               <div>
                 <h2 style={{ fontSize: "1.1rem", fontWeight: 700, color: "#172228", margin: 0 }}>
                   Order & Gateway Audit: {viewingTxn.txnId}
@@ -516,69 +516,71 @@ export default function AuthorityTransactionsPage() {
               </button>
             </div>
 
-            <div style={{ padding: "1.25rem", overflowY: "auto", display: "flex", flexDirection: "column", gap: "1rem", fontSize: "0.82rem" }}>
-              <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "0.65rem", padding: "0.95rem", backgroundColor: "#FAF7F0", borderRadius: "12px", border: "1px solid rgba(23, 34, 40, 0.08)" }}>
-                <div><span style={{ color: "#55636D" }}>Customer:</span> <strong style={{ color: "#172228" }}>{viewingTxn.customerName}</strong></div>
-                <div><span style={{ color: "#55636D" }}>Email:</span> <strong style={{ color: "#172228" }}>{viewingTxn.email}</strong></div>
-                <div><span style={{ color: "#55636D" }}>Phone:</span> <strong style={{ color: "#172228" }}>{viewingTxn.phone ? `+91 ${viewingTxn.phone}` : "-"}</strong></div>
-                <div><span style={{ color: "#55636D" }}>Account ID:</span> <code style={{ fontSize: "0.75rem", color: "#172228" }}>{viewingTxn.accountId}</code></div>
-                <div><span style={{ color: "#55636D" }}>Plan:</span> <strong style={{ color: "#172228" }}>{viewingTxn.planName}</strong></div>
-                <div><span style={{ color: "#55636D" }}>Order Kind:</span> <strong style={{ textTransform: "capitalize", color: "#172228" }}>{viewingTxn.kind.replace(/_/g, " ")}</strong></div>
-                <div><span style={{ color: "#55636D" }}>Amount:</span> <strong style={{ color: "#3F5C53" }}>₹{viewingTxn.amount}</strong> (Base: ₹{viewingTxn.baseAmount})</div>
-                <div><span style={{ color: "#55636D" }}>Status:</span> <strong style={{ textTransform: "uppercase", color: "#172228" }}>{viewingTxn.status}</strong></div>
-                <div><span style={{ color: "#55636D" }}>Invoice No:</span> <strong style={{ color: "#172228" }}>{viewingTxn.invoiceNo || "-"}</strong></div>
-                <div><span style={{ color: "#55636D" }}>Gateway Method:</span> <strong style={{ color: "#172228" }}>{viewingTxn.method}</strong></div>
-                <div><span style={{ color: "#55636D" }}>PayU mihpayid:</span> <code style={{ color: "#172228" }}>{viewingTxn.gatewayPaymentId || "-"}</code></div>
-                <div><span style={{ color: "#55636D" }}>Bank Ref / UTR:</span> <code style={{ color: "#172228" }}>{viewingTxn.bankRefNum || "-"}</code></div>
-                <div><span style={{ color: "#55636D" }}>Created At:</span> <strong style={{ color: "#172228" }}>{formatDateTime(viewingTxn.createdAt)}</strong></div>
-                <div><span style={{ color: "#55636D" }}>Paid At:</span> <strong style={{ color: "#172228" }}>{formatDateTime(viewingTxn.paidAt)}</strong></div>
-                {viewingTxn.failureReason && (
-                  <div style={{ gridColumn: "1 / -1" }}>
-                    <span style={{ color: "#55636D" }}>Note / Failure Reason:</span> <strong style={{ color: "#172228" }}>{viewingTxn.failureReason}</strong>
-                  </div>
-                )}
-              </div>
-
-              {/* Gateway Events Log */}
-              <div>
-                <div style={{ fontWeight: 700, color: "#172228", marginBottom: "0.5rem" }}>
-                  Gateway Event Trail ({viewingTxn.events?.length || 0} notifications)
+            <div style={{ flex: 1, minHeight: 0, padding: "1.25rem", overflowY: "auto", fontSize: "0.82rem" }}>
+              <div style={{ display: "flex", flexDirection: "column", gap: "1rem" }}>
+                <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "0.65rem", padding: "0.95rem", backgroundColor: "#FAF7F0", borderRadius: "12px", border: "1px solid rgba(23, 34, 40, 0.08)", flexShrink: 0 }}>
+                  <div><span style={{ color: "#55636D" }}>Customer:</span> <strong style={{ color: "#172228" }}>{viewingTxn.customerName}</strong></div>
+                  <div><span style={{ color: "#55636D" }}>Email:</span> <strong style={{ color: "#172228" }}>{viewingTxn.email}</strong></div>
+                  <div><span style={{ color: "#55636D" }}>Phone:</span> <strong style={{ color: "#172228" }}>{viewingTxn.phone ? `+91 ${viewingTxn.phone}` : "-"}</strong></div>
+                  <div><span style={{ color: "#55636D" }}>Account ID:</span> <code style={{ fontSize: "0.75rem", color: "#172228" }}>{viewingTxn.accountId}</code></div>
+                  <div><span style={{ color: "#55636D" }}>Plan:</span> <strong style={{ color: "#172228" }}>{viewingTxn.planName}</strong></div>
+                  <div><span style={{ color: "#55636D" }}>Order Kind:</span> <strong style={{ textTransform: "capitalize", color: "#172228" }}>{viewingTxn.kind.replace(/_/g, " ")}</strong></div>
+                  <div><span style={{ color: "#55636D" }}>Amount:</span> <strong style={{ color: "#3F5C53" }}>₹{viewingTxn.amount}</strong> (Base: ₹{viewingTxn.baseAmount})</div>
+                  <div><span style={{ color: "#55636D" }}>Status:</span> <strong style={{ textTransform: "uppercase", color: "#172228" }}>{viewingTxn.status}</strong></div>
+                  <div><span style={{ color: "#55636D" }}>Invoice No:</span> <strong style={{ color: "#172228" }}>{viewingTxn.invoiceNo || "-"}</strong></div>
+                  <div><span style={{ color: "#55636D" }}>Gateway Method:</span> <strong style={{ color: "#172228" }}>{viewingTxn.method}</strong></div>
+                  <div><span style={{ color: "#55636D" }}>PayU mihpayid:</span> <code style={{ color: "#172228" }}>{viewingTxn.gatewayPaymentId || "-"}</code></div>
+                  <div><span style={{ color: "#55636D" }}>Bank Ref / UTR:</span> <code style={{ color: "#172228" }}>{viewingTxn.bankRefNum || "-"}</code></div>
+                  <div><span style={{ color: "#55636D" }}>Created At:</span> <strong style={{ color: "#172228" }}>{formatDateTime(viewingTxn.createdAt)}</strong></div>
+                  <div><span style={{ color: "#55636D" }}>Paid At:</span> <strong style={{ color: "#172228" }}>{formatDateTime(viewingTxn.paidAt)}</strong></div>
+                  {viewingTxn.failureReason && (
+                    <div style={{ gridColumn: "1 / -1" }}>
+                      <span style={{ color: "#55636D" }}>Note / Failure Reason:</span> <strong style={{ color: "#172228" }}>{viewingTxn.failureReason}</strong>
+                    </div>
+                  )}
                 </div>
-                {!viewingTxn.events || viewingTxn.events.length === 0 ? (
-                  <div style={{ padding: "0.95rem", backgroundColor: "#FAF7F0", borderRadius: "10px", color: "#55636D", fontSize: "0.78rem", border: "1px solid rgba(23, 34, 40, 0.08)" }}>
-                    No PayU callback/webhook events recorded on this order yet (user may have closed the payment tab before completing).
+
+                {/* Gateway Events Log */}
+                <div style={{ flexShrink: 0 }}>
+                  <div style={{ fontWeight: 700, color: "#172228", marginBottom: "0.5rem" }}>
+                    Gateway Event Trail ({viewingTxn.events?.length || 0} notifications)
                   </div>
-                ) : (
-                  <div style={{ display: "flex", flexDirection: "column", gap: "0.6rem" }}>
-                    {viewingTxn.events.map((ev) => (
-                      <div key={ev.eventId} style={{ border: "1px solid rgba(23, 34, 40, 0.08)", borderRadius: "10px", overflow: "hidden" }}>
-                        <div style={{ padding: "0.55rem 0.8rem", backgroundColor: "#FAF7F0", borderBottom: "1px solid rgba(23, 34, 40, 0.08)", display: "flex", justifyContent: "space-between", fontSize: "0.75rem", color: "#172228" }}>
-                          <span>
-                            <strong>{ev.source.toUpperCase()}</strong> • Status: <strong style={{ color: "#C65378" }}>{ev.status}</strong>
-                          </span>
-                          <span style={{ color: "#55636D" }}>{formatDateTime(ev.createdAt)}</span>
+                  {!viewingTxn.events || viewingTxn.events.length === 0 ? (
+                    <div style={{ padding: "0.95rem", backgroundColor: "#FAF7F0", borderRadius: "10px", color: "#55636D", fontSize: "0.78rem", border: "1px solid rgba(23, 34, 40, 0.08)" }}>
+                      No PayU callback/webhook events recorded on this order yet (user may have closed the payment tab before completing).
+                    </div>
+                  ) : (
+                    <div style={{ display: "flex", flexDirection: "column", gap: "0.6rem" }}>
+                      {viewingTxn.events.map((ev) => (
+                        <div key={ev.eventId} style={{ border: "1px solid rgba(23, 34, 40, 0.08)", borderRadius: "10px", overflow: "hidden", flexShrink: 0 }}>
+                          <div style={{ padding: "0.55rem 0.8rem", backgroundColor: "#FAF7F0", borderBottom: "1px solid rgba(23, 34, 40, 0.08)", display: "flex", justifyContent: "space-between", fontSize: "0.75rem", color: "#172228" }}>
+                            <span>
+                              <strong>{ev.source.toUpperCase()}</strong> • Status: <strong style={{ color: "#C65378" }}>{ev.status}</strong>
+                            </span>
+                            <span style={{ color: "#55636D" }}>{formatDateTime(ev.createdAt)}</span>
+                          </div>
+                          <pre
+                            style={{
+                              margin: 0,
+                              padding: "0.7rem 0.85rem",
+                              backgroundColor: "#172228",
+                              color: "#FAF7F0",
+                              fontSize: "0.72rem",
+                              overflowX: "auto",
+                              maxHeight: "220px",
+                            }}
+                          >
+                            {JSON.stringify(ev.payload, null, 2)}
+                          </pre>
                         </div>
-                        <pre
-                          style={{
-                            margin: 0,
-                            padding: "0.7rem 0.85rem",
-                            backgroundColor: "#172228",
-                            color: "#FAF7F0",
-                            fontSize: "0.72rem",
-                            overflowX: "auto",
-                            maxHeight: "220px",
-                          }}
-                        >
-                          {JSON.stringify(ev.payload, null, 2)}
-                        </pre>
-                      </div>
-                    ))}
-                  </div>
-                )}
+                      ))}
+                    </div>
+                  )}
+                </div>
               </div>
             </div>
 
-            <div style={{ padding: "0.85rem 1.35rem", borderTop: "1px solid rgba(23, 34, 40, 0.08)", backgroundColor: "#FAF7F0", display: "flex", justifyContent: "flex-end" }}>
+            <div style={{ padding: "0.85rem 1.35rem", borderTop: "1px solid rgba(23, 34, 40, 0.08)", backgroundColor: "#FAF7F0", display: "flex", justifyContent: "flex-end", flexShrink: 0 }}>
               <button
                 type="button"
                 onClick={() => setViewingTxn(null)}
