@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 640" width="100%" height="100%" style="background:#FAF7F0; font-family:'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+  <defs>
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#172228" />
+      <stop offset="100%" stop-color="#212F35" />
+    </linearGradient>
+    <linearGradient id="emeraldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#064E3B" />
+      <stop offset="100%" stop-color="#047857" />
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#C65378" />
+      <stop offset="100%" stop-color="#9E3B5C" />
+    </linearGradient>
+    <linearGradient id="slateGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#49585F" />
+      <stop offset="100%" stop-color="#334148" />
+    </linearGradient>
+    <filter id="cardShadow" x="-5%" y="-5%" width="110%" height="115%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#172228" flood-opacity="0.08" />
+    </filter>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="1000" height="640" fill="#FAF7F0" />
+  
+  <!-- Title Bar -->
+  <rect x="30" y="24" width="940" height="70" rx="12" fill="url(#headerGrad)" />
+  <text x="60" y="56" fill="#FAF7F0" font-size="20" font-weight="700">Muslim Estate Administration &amp; Succession Flowchart</text>
+  <text x="60" y="76" fill="#A4B3BC" font-size="13">Muslim Personal Law (Shariat) Application Act, 1937 • Mulla's Principles of Mahomedan Law</text>
+  <rect x="830" y="44" width="120" height="28" rx="6" fill="#C65378" />
+  <text x="890" y="63" fill="#FFFFFF" font-size="11" font-weight="700" text-anchor="middle">WILLDRAFTING.IN</text>
+
+  <!-- Step 1: Gross Estate -->
+  <g transform="translate(370, 115)" filter="url(#cardShadow)">
+    <rect width="260" height="64" rx="10" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5" />
+    <text x="130" y="28" fill="#172228" font-size="14" font-weight="800" text-anchor="middle">STEP 1: GROSS ESTATE</text>
+    <text x="130" y="48" fill="#49585F" font-size="12" text-anchor="middle">All movable &amp; immovable assets of deceased</text>
+  </g>
+
+  <!-- Arrow down -->
+  <path d="M 500 179 L 500 205" stroke="#49585F" stroke-width="2" stroke-dasharray="4,4" marker-end="url(#arrow)" />
+
+  <!-- Step 2: Statutory Deductions -->
+  <g transform="translate(260, 205)" filter="url(#cardShadow)">
+    <rect width="480" height="76" rx="10" fill="#FFFBEB" stroke="#FDE68A" stroke-width="1.5" />
+    <text x="240" y="28" fill="#92400E" font-size="13" font-weight="800" text-anchor="middle">STEP 2: MANDATORY STATUTORY DEDUCTIONS (IN STRICT ORDER)</text>
+    <text x="240" y="48" fill="#78350F" font-size="11" text-anchor="middle">1. Funeral &amp; Burial Expenses (Tajheez) • 2. Debts of Deceased (Duyun)</text>
+    <text x="240" y="64" fill="#78350F" font-size="11" font-weight="600" text-anchor="middle">3. Unpaid Mahr (Dower) to Wife (Priority Unsecured Debt)</text>
+  </g>
+
+  <!-- Arrow down to Net Estate -->
+  <path d="M 500 281 L 500 305" stroke="#49585F" stroke-width="2" />
+
+  <!-- Step 3: Net Estate Split Banner -->
+  <g transform="translate(340, 305)">
+    <rect width="320" height="34" rx="8" fill="#172228" />
+    <text x="160" y="22" fill="#FAF7F0" font-size="12" font-weight="700" text-anchor="middle">NET INHERITABLE ESTATE (100%)</text>
+  </g>
+
+  <!-- Left Branch: Wasiyat (Will) -->
+  <path d="M 400 339 L 400 365 L 230 365 L 230 385" stroke="#C65378" stroke-width="2" fill="none" />
+  <g transform="translate(50, 385)" filter="url(#cardShadow)">
+    <rect width="360" height="120" rx="10" fill="#FFFFFF" stroke="#F43F5E" stroke-width="1.5" />
+    <rect width="360" height="30" rx="10" fill="url(#goldGrad)" />
+    <text x="180" y="20" fill="#FFFFFF" font-size="12" font-weight="800" text-anchor="middle">TESTAMENTARY BEQUEST (WASIYAT)</text>
+    <text x="180" y="50" fill="#172228" font-size="13" font-weight="700" text-anchor="middle">Maximum 1/3rd (33.33%) of Net Estate</text>
+    <text x="20" y="74" fill="#49585F" font-size="11">• Sunni: Bequest to non-heir valid; bequest to heir requires all heirs' consent</text>
+    <text x="20" y="92" fill="#49585F" font-size="11">• Shia: Bequest up to 1/3rd valid to heir OR non-heir without heir consent</text>
+    <text x="20" y="110" fill="#9E3B5C" font-size="10.5" font-weight="600">• Bequest &gt; 1/3rd requires consent of legal heirs after death</text>
+  </g>
+
+  <!-- Right Branch: Faraid (Inheritance) -->
+  <path d="M 600 339 L 600 365 L 770 365 L 770 385" stroke="#047857" stroke-width="2" fill="none" />
+  <g transform="translate(590, 385)" filter="url(#cardShadow)">
+    <rect width="360" height="120" rx="10" fill="#FFFFFF" stroke="#10B981" stroke-width="1.5" />
+    <rect width="360" height="30" rx="10" fill="url(#emeraldGrad)" />
+    <text x="180" y="20" fill="#FFFFFF" font-size="12" font-weight="800" text-anchor="middle">LEGAL INHERITANCE (FARAID)</text>
+    <text x="180" y="50" fill="#064E3B" font-size="13" font-weight="700" text-anchor="middle">Remaining 2/3rd (or 100% if no Wasiyat)</text>
+    <text x="20" y="74" fill="#49585F" font-size="11">• Distributed in strict statutory Quranic proportions</text>
+    <text x="20" y="92" fill="#49585F" font-size="11">• Priority 1: Quranic Sharers (Zawil-Furuz) take fixed fractions</text>
+    <text x="20" y="110" fill="#49585F" font-size="11">• Priority 2: Residuaries (Asabah) take the remaining balance</text>
+  </g>
+
+  <!-- Step 4: Bottom Distribution Matrix -->
+  <g transform="translate(50, 525)" filter="url(#cardShadow)">
+    <rect width="900" height="92" rx="10" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5" />
+    
+    <g transform="translate(20, 16)">
+      <rect width="270" height="60" rx="6" fill="#F0FDF4" stroke="#86EFAC" stroke-width="1" />
+      <text x="135" y="22" fill="#166534" font-size="11" font-weight="800" text-anchor="middle">QURANIC SHARERS (ZAWIL-FURUZ)</text>
+      <text x="135" y="38" fill="#49585F" font-size="10" text-anchor="middle">Spouse, Parents, Daughters, Sisters</text>
+      <text x="135" y="52" fill="#166534" font-size="10" font-weight="600" text-anchor="middle">Fixed Quranic fractions (1/8, 1/4, 1/2, 2/3, 1/6)</text>
+    </g>
+
+    <g transform="translate(315, 16)">
+      <rect width="270" height="60" rx="6" fill="#EFF6FF" stroke="#93C5FD" stroke-width="1" />
+      <text x="135" y="22" fill="#1E40AF" font-size="11" font-weight="800" text-anchor="middle">RESIDUARIES (ASABAH)</text>
+      <text x="135" y="38" fill="#49585F" font-size="10" text-anchor="middle">Sons (with daughters 2:1), Brothers, Uncles</text>
+      <text x="135" y="52" fill="#1E40AF" font-size="10" font-weight="600" text-anchor="middle">Inherit residue after Sharers take fixed quotas</text>
+    </g>
+
+    <g transform="translate(610, 16)">
+      <rect width="270" height="60" rx="6" fill="#FFF7ED" stroke="#FDBA74" stroke-width="1" />
+      <text x="135" y="22" fill="#9A3412" font-size="11" font-weight="800" text-anchor="middle">SPECIAL RULES: AUL &amp; RADD</text>
+      <text x="135" y="38" fill="#49585F" font-size="10" text-anchor="middle">Aul: Sum &gt; 1 → Proportional reduction</text>
+      <text x="135" y="52" fill="#9A3412" font-size="10" font-weight="600" text-anchor="middle">Radd: Sum &lt; 1 (no Asabah) → Return to blood sharers</text>
+    </g>
+  </g>
+</svg>

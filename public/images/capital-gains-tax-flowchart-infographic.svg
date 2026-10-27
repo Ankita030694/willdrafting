@@ -1,0 +1,133 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 680" width="100%" height="100%" style="background:#FAF7F0; font-family:system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;">
+  <defs>
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#172228" />
+      <stop offset="100%" stop-color="#22333B" />
+    </linearGradient>
+    <linearGradient id="roseGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#C65378" />
+      <stop offset="100%" stop-color="#A2385C" />
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="100%" stop-color="#F8FAFC" />
+    </linearGradient>
+    <filter id="cardShadow" x="-10%" y="-10%" width="120%" height="125%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#172228" flood-opacity="0.06" />
+    </filter>
+  </defs>
+
+  <!-- Title Header Banner -->
+  <rect x="40" y="30" width="1120" height="90" rx="16" fill="url(#headerGrad)" />
+  <text x="70" y="68" fill="#FAF7F0" font-size="22" font-weight="800" letter-spacing="0.5">STATUTORY DECISION BLUEPRINT: INHERITED PROPERTY CAPITAL GAINS</text>
+  <text x="70" y="98" fill="#C65378" font-size="14" font-weight="600">Finance (No. 2) Act 2024 • Section 49(1) Cost Deeming • CIT v. Manjula J. Shah Indexation Rule</text>
+
+  <!-- Step 1: Inheritance Event -->
+  <g transform="translate(60, 150)">
+    <rect width="240" height="150" rx="12" fill="url(#cardGrad)" stroke="#E2E8F0" stroke-width="2" filter="url(#cardShadow)" />
+    <rect width="240" height="8" rx="4" fill="#5F7E75" />
+    <text x="20" y="38" fill="#172228" font-size="14" font-weight="800">STAGE 1: INHERITANCE</text>
+    <text x="20" y="62" fill="#49585F" font-size="12" font-weight="600">Section 47(iii) IT Act</text>
+    <text x="20" y="88" fill="#172228" font-size="12" font-weight="500">Inheriting via Will or Intestacy</text>
+    <text x="20" y="108" fill="#172228" font-size="12" font-weight="500">attracts ZERO tax on transfer.</text>
+    <rect x="20" y="122" width="120" height="20" rx="6" fill="#DEF7EC" />
+    <text x="28" y="136" fill="#03543F" font-size="10" font-weight="700">TAX FREE AT RECEIPT</text>
+  </g>
+
+  <!-- Arrow 1 to 2 -->
+  <path d="M 300 225 L 340 225" stroke="#CBD5E1" stroke-width="3" stroke-linecap="round" marker-end="url(#arrow)" />
+  <polygon points="340,220 350,225 340,230" fill="#94A3B8" />
+
+  <!-- Step 2: Cost & Holding Determination -->
+  <g transform="translate(350, 150)">
+    <rect width="260" height="150" rx="12" fill="url(#cardGrad)" stroke="#E2E8F0" stroke-width="2" filter="url(#cardShadow)" />
+    <rect width="260" height="8" rx="4" fill="#C65378" />
+    <text x="20" y="38" fill="#172228" font-size="14" font-weight="800">STAGE 2: COST &amp; HOLDING</text>
+    <text x="20" y="62" fill="#C65378" font-size="12" font-weight="600">Section 49(1) &amp; Sec 2(42A)</text>
+    <text x="20" y="88" fill="#172228" font-size="12" font-weight="500">Cost = Cost to Previous Owner.</text>
+    <text x="20" y="108" fill="#172228" font-size="12" font-weight="500">Holding Period includes parents'</text>
+    <text x="20" y="128" fill="#172228" font-size="12" font-weight="500">holding (Manjula J. Shah precedent).</text>
+  </g>
+
+  <!-- Arrow 2 to 3 -->
+  <path d="M 610 225 L 650 225" stroke="#CBD5E1" stroke-width="3" stroke-linecap="round" />
+  <polygon points="650,220 660,225 650,230" fill="#94A3B8" />
+
+  <!-- Step 3: Date Test Pre- vs Post- July 23, 2024 -->
+  <g transform="translate(660, 150)">
+    <rect width="250" height="150" rx="12" fill="url(#cardGrad)" stroke="#E2E8F0" stroke-width="2" filter="url(#cardShadow)" />
+    <rect width="250" height="8" rx="4" fill="#172228" />
+    <text x="20" y="38" fill="#172228" font-size="14" font-weight="800">STAGE 3: STATUTORY TEST</text>
+    <text x="20" y="62" fill="#49585F" font-size="12" font-weight="600">Acquired Before 23 July 2024?</text>
+    <text x="20" y="88" fill="#172228" font-size="12" font-weight="500">If previous owner acquired</text>
+    <text x="20" y="108" fill="#172228" font-size="12" font-weight="500">before July 23, 2024, heir</text>
+    <text x="20" y="128" fill="#172228" font-size="12" font-weight="700">qualifies for Grandfathering!</text>
+  </g>
+
+  <!-- Arrow 3 to Split -->
+  <path d="M 910 225 L 950 225" stroke="#CBD5E1" stroke-width="3" stroke-linecap="round" />
+  <polygon points="950,220 960,225 950,230" fill="#94A3B8" />
+
+  <!-- Step 4: Grandfathering Dual Regime Comparison -->
+  <g transform="translate(960, 150)">
+    <rect width="180" height="150" rx="12" fill="#FEF2F2" stroke="#F87171" stroke-width="2" filter="url(#cardShadow)" />
+    <text x="15" y="38" fill="#991B1B" font-size="13" font-weight="800">GRANDFATHERING</text>
+    <text x="15" y="62" fill="#7F1D1D" font-size="11" font-weight="700">Resident Indian/HUF</text>
+    <text x="15" y="90" fill="#991B1B" font-size="12" font-weight="600">Pay LOWER of:</text>
+    <text x="15" y="112" fill="#172228" font-size="11" font-weight="600">• 20% with CII</text>
+    <text x="15" y="132" fill="#172228" font-size="11" font-weight="600">• 12.5% Flat</text>
+  </g>
+
+  <!-- LOWER LEVEL: 3 Pillar Comparisons & Reductions -->
+
+  <!-- Pillar 1: Old Regime Mechanics -->
+  <g transform="translate(60, 340)">
+    <rect width="330" height="290" rx="14" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5" filter="url(#cardShadow)" />
+    <rect width="330" height="40" rx="14" fill="#EFF6FF" />
+    <text x="20" y="26" fill="#1E40AF" font-size="13" font-weight="800">REGIME A: 20% WITH INDEXATION (CII)</text>
+    <text x="20" y="68" fill="#49585F" font-size="12" font-weight="600">• Indexed Cost Formula:</text>
+    <text x="35" y="90" fill="#172228" font-size="12">Cost × (CII of Sale / CII of Purchase)</text>
+    <text x="20" y="118" fill="#49585F" font-size="12" font-weight="600">• Base Year 2001-02 Rule:</text>
+    <text x="35" y="138" fill="#172228" font-size="12">Pre-2001 assets use April 1, 2001 FMV</text>
+    <text x="35" y="156" fill="#172228" font-size="12">(capped at circle rate ready reckoner)</text>
+    <text x="20" y="184" fill="#49585F" font-size="12" font-weight="600">• Best Suited For:</text>
+    <text x="35" y="204" fill="#172228" font-size="12">Modest property capital appreciation</text>
+    <text x="35" y="222" fill="#172228" font-size="12">where indexation wipes out 70-90% gain.</text>
+    <rect x="20" y="244" width="290" height="32" rx="8" fill="#DBEAFE" />
+    <text x="30" y="265" fill="#1E40AF" font-size="12" font-weight="700">Tax = 20% + 4% Health &amp; Edu Cess</text>
+  </g>
+
+  <!-- Pillar 2: New Regime Mechanics -->
+  <g transform="translate(425, 340)">
+    <rect width="330" height="290" rx="14" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5" filter="url(#cardShadow)" />
+    <rect width="330" height="40" rx="14" fill="#FDF2F8" />
+    <text x="20" y="26" fill="#9D174D" font-size="13" font-weight="800">REGIME B: 12.5% FLAT (NO INDEXATION)</text>
+    <text x="20" y="68" fill="#49585F" font-size="12" font-weight="600">• Actual Cost Formula:</text>
+    <text x="35" y="90" fill="#172228" font-size="12">Net Sale Price - Actual Purchase Cost</text>
+    <text x="20" y="118" fill="#49585F" font-size="12" font-weight="600">• Finance (No. 2) Act 2024 Rule:</text>
+    <text x="35" y="138" fill="#172228" font-size="12">Removes indexation multiplier</text>
+    <text x="35" y="156" fill="#172228" font-size="12">Lower baseline tax rate of 12.5%.</text>
+    <text x="20" y="184" fill="#49585F" font-size="12" font-weight="600">• Best Suited For:</text>
+    <text x="35" y="204" fill="#172228" font-size="12">Skyrocketing prime urban property</text>
+    <text x="35" y="222" fill="#172228" font-size="12">(e.g. 10x-30x return since acquisition).</text>
+    <rect x="20" y="244" width="290" height="32" rx="8" fill="#FCE7F3" />
+    <text x="30" y="265" fill="#9D174D" font-size="12" font-weight="700">Tax = 12.5% + 4% Health &amp; Edu Cess</text>
+  </g>
+
+  <!-- Pillar 3: Exemptions & NRI Rules -->
+  <g transform="translate(790, 340)">
+    <rect width="350" height="290" rx="14" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5" filter="url(#cardShadow)" />
+    <rect width="350" height="40" rx="14" fill="#ECFDF5" />
+    <text x="20" y="26" fill="#065F46" font-size="13" font-weight="800">REINVESTMENT EXEMPTIONS &amp; NRI TDS</text>
+    <text x="20" y="68" fill="#49585F" font-size="12" font-weight="600">• Section 54 (Residential House):</text>
+    <text x="35" y="90" fill="#172228" font-size="12">Invest LTCG in 1 house (up to ₹10 Crore).</text>
+    <text x="20" y="118" fill="#49585F" font-size="12" font-weight="600">• Section 54EC Multi-Heir Multiplier:</text>
+    <text x="35" y="138" fill="#172228" font-size="12">₹50L in REC/NHAI bonds PER CO-HEIR!</text>
+    <text x="35" y="156" fill="#047857" font-size="11" font-weight="700">3 siblings = ₹1.5 Crore tax-free gain.</text>
+    <text x="20" y="184" fill="#49585F" font-size="12" font-weight="600">• NRI Section 195 TDS &amp; Form 13:</text>
+    <text x="35" y="204" fill="#172228" font-size="12">Apply Form 13 to avoid 20%+ TDS</text>
+    <text x="35" y="222" fill="#172228" font-size="12">on gross consideration before sale.</text>
+    <rect x="20" y="244" width="310" height="32" rx="8" fill="#D1FAE5" />
+    <text x="30" y="265" fill="#065F46" font-size="12" font-weight="700">Form 13 Locks Zero Excess Tax Funds</text>
+  </g>
+</svg>

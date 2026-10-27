@@ -36,7 +36,23 @@ export async function GET() {
     }
   >();
 
-  // 1. Include dynamic published blogs from MongoDB at top priority
+  // 1. Include static sitemap pages first (prioritizing newly created templates, tools and legal calculators)
+  for (const page of pages) {
+    const rawHref = page.href.startsWith("/") ? page.href : `/${page.href}`;
+    const absoluteLoc = rawHref === "/" ? BASE_URL : `${BASE_URL}${rawHref}`;
+    const escapedLoc = escapeXml(absoluteLoc);
+
+    if (!urlMap.has(escapedLoc)) {
+      urlMap.set(escapedLoc, {
+        loc: escapedLoc,
+        lastmod: formatDateForXml(page.date),
+        changefreq: page.changefreq || "weekly",
+        priority: (page.priority ?? 0.8).toFixed(1),
+      });
+    }
+  }
+
+  // 2. Include dynamic published blogs from MongoDB
   try {
     const col = await blogsCol();
     const dbBlogs = await col
@@ -59,22 +75,6 @@ export async function GET() {
     }
   } catch (e) {
     console.warn("Could not query MongoDB blogs for sitemap.xml:", e);
-  }
-
-  // 2. Include all static sitemap pages
-  for (const page of pages) {
-    const rawHref = page.href.startsWith("/") ? page.href : `/${page.href}`;
-    const absoluteLoc = rawHref === "/" ? BASE_URL : `${BASE_URL}${rawHref}`;
-    const escapedLoc = escapeXml(absoluteLoc);
-
-    if (!urlMap.has(escapedLoc)) {
-      urlMap.set(escapedLoc, {
-        loc: escapedLoc,
-        lastmod: formatDateForXml(page.date),
-        changefreq: page.changefreq || "weekly",
-        priority: (page.priority ?? 0.8).toFixed(1),
-      });
-    }
   }
 
   const urls = Array.from(urlMap.values());

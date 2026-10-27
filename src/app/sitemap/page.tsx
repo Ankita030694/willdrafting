@@ -49,7 +49,16 @@ export default async function SitemapPage() {
   const seenHrefs = new Set<string>();
   const allLinks: SitemapPageItem[] = [];
 
-  // 1. Dynamically include all published blogs from MongoDB so /sitemap stays 100% synced with /sitemap.xml
+  // 1. Add static SSOT routes first so prioritized templates, tools & calculators appear at the very top of "All" filter
+  for (const item of staticLinks) {
+    const cleanHref = sanitizeHref(item.href);
+    if (!seenHrefs.has(cleanHref)) {
+      seenHrefs.add(cleanHref);
+      allLinks.push(item);
+    }
+  }
+
+  // 2. Dynamically include all published blogs from MongoDB so /sitemap stays 100% synced with /sitemap.xml
   try {
     const col = await blogsCol();
     const dbBlogs = await col
@@ -74,15 +83,6 @@ export default async function SitemapPage() {
     }
   } catch (e) {
     console.warn("Could not query MongoDB blogs for /sitemap:", e);
-  }
-
-  // 2. Merge static SSOT routes without duplicates
-  for (const item of staticLinks) {
-    const cleanHref = sanitizeHref(item.href);
-    if (!seenHrefs.has(cleanHref)) {
-      seenHrefs.add(cleanHref);
-      allLinks.push(item);
-    }
   }
 
   const breadcrumbJsonLd = {

@@ -1,0 +1,129 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 680" width="100%" height="100%" style="background:#FAF7F0; font-family:system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;">
+  <defs>
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#172228" />
+      <stop offset="100%" stop-color="#22333B" />
+    </linearGradient>
+    <linearGradient id="roseGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#C65378" />
+      <stop offset="100%" stop-color="#A2385C" />
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="100%" stop-color="#F8FAFC" />
+    </linearGradient>
+    <filter id="cardShadow" x="-10%" y="-10%" width="120%" height="125%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#172228" flood-opacity="0.06" />
+    </filter>
+  </defs>
+
+  <!-- Title Header Banner -->
+  <rect x="40" y="30" width="1120" height="90" rx="16" fill="url(#headerGrad)" />
+  <text x="70" y="68" fill="#FAF7F0" font-size="22" font-weight="800" letter-spacing="0.5">PROPERTY TRANSFER BLUEPRINT: GIFT DEED vs WILL vs RELEASE DEED</text>
+  <text x="70" y="98" fill="#C65378" font-size="14" font-weight="600">Transfer of Property Act s.122 • Indian Stamp Act 1899 • Indian Succession Act s.63 • Registration Act s.17/18</text>
+
+  <!-- Step 1: Decision Point -->
+  <g transform="translate(50, 150)">
+    <rect width="240" height="200" rx="12" fill="url(#cardGrad)" stroke="#E2E8F0" stroke-width="2" filter="url(#cardShadow)" />
+    <rect width="240" height="8" rx="4" fill="#49585F" />
+    <text x="20" y="38" fill="#172228" font-size="14" font-weight="800">1. NATURE OF TITLE</text>
+    <text x="20" y="62" fill="#49585F" font-size="12" font-weight="600">Ownership Source</text>
+    <text x="20" y="88" fill="#172228" font-size="12" font-weight="500">• Self-Acquired Property:</text>
+    <text x="20" y="108" fill="#49585F" font-size="11" font-weight="500">  Only Gift Deed or Will applies</text>
+    <text x="20" y="132" fill="#172228" font-size="12" font-weight="500">• Ancestral / Co-Owned:</text>
+    <text x="20" y="152" fill="#49585F" font-size="11" font-weight="500">  Release Deed or Gift Deed</text>
+    <rect x="20" y="168" width="200" height="20" rx="6" fill="#F1F5F9" />
+    <text x="28" y="182" fill="#475569" font-size="10" font-weight="700">CHECK PROPERTY CLASSIFICATION</text>
+  </g>
+
+  <!-- Arrow 1 to 2 -->
+  <path d="M 300 250 L 335 250" stroke="#CBD5E1" stroke-width="3" stroke-linecap="round" />
+  <polygon points="335,245 345,250 335,255" fill="#94A3B8" />
+
+  <!-- Step 2: Option A - Gift Deed -->
+  <g transform="translate(355, 150)">
+    <rect width="240" height="200" rx="12" fill="url(#cardGrad)" stroke="#FECDD3" stroke-width="2" filter="url(#cardShadow)" />
+    <rect width="240" height="8" rx="4" fill="#E11D48" />
+    <text x="20" y="38" fill="#9F1239" font-size="14" font-weight="800">2A. GIFT DEED (LIFETIME)</text>
+    <text x="20" y="62" fill="#BE123C" font-size="12" font-weight="600">Immediate Transfer</text>
+    <text x="20" y="88" fill="#172228" font-size="12" font-weight="500">• Stamp Duty: 1% to 7%</text>
+    <text x="20" y="108" fill="#49585F" font-size="11" font-weight="500">  (₹200 to ₹7,00,000+)</text>
+    <text x="20" y="130" fill="#172228" font-size="12" font-weight="500">• Mandatory Registration (1%)</text>
+    <text x="20" y="150" fill="#E11D48" font-size="11" font-weight="600">• Donor LOSES all rights now</text>
+    <rect x="20" y="168" width="200" height="20" rx="6" fill="#FFE4E6" />
+    <text x="28" y="182" fill="#9F1239" font-size="10" font-weight="700">IRREVOCABLE &amp; HIGH CASH OUTFLOW</text>
+  </g>
+
+  <!-- Step 2: Option B - Will (Recommended) -->
+  <g transform="translate(615, 150)">
+    <rect width="260" height="200" rx="12" fill="url(#cardGrad)" stroke="#C65378" stroke-width="2" filter="url(#cardShadow)" />
+    <rect width="260" height="8" rx="4" fill="#C65378" />
+    <text x="20" y="38" fill="#172228" font-size="14" font-weight="800">2B. WILL (TESTAMENTARY)</text>
+    <text x="20" y="62" fill="#C65378" font-size="12" font-weight="600">Post-Death Succession</text>
+    <text x="20" y="88" fill="#172228" font-size="12" font-weight="700">• Stamp Duty: ₹0 (ZERO across India)</text>
+    <text x="20" y="108" fill="#172228" font-size="12" font-weight="700">• Registration: Optional (Sec 18)</text>
+    <text x="20" y="130" fill="#172228" font-size="12" font-weight="500">• Retain 100% Control &amp; Living Rights</text>
+    <text x="20" y="150" fill="#49585F" font-size="11" font-weight="600">• Amend or cancel anytime for free</text>
+    <rect x="20" y="168" width="220" height="20" rx="6" fill="#FAF7F0" stroke="#C65378" stroke-width="1" />
+    <text x="28" y="182" fill="#C65378" font-size="10" font-weight="700">HIGHEST PROTECTION + ₹0 TAX</text>
+  </g>
+
+  <!-- Step 2: Option C - Release Deed -->
+  <g transform="translate(895, 150)">
+    <rect width="255" height="200" rx="12" fill="url(#cardGrad)" stroke="#BAE6FD" stroke-width="2" filter="url(#cardShadow)" />
+    <rect width="255" height="8" rx="4" fill="#0284C7" />
+    <text x="20" y="38" fill="#0369A1" font-size="14" font-weight="800">2C. RELEASE DEED</text>
+    <text x="20" y="62" fill="#0284C7" font-size="12" font-weight="600">Co-Owners / Legal Heirs</text>
+    <text x="20" y="88" fill="#172228" font-size="12" font-weight="500">• Relinquish pre-existing share</text>
+    <text x="20" y="108" fill="#172228" font-size="12" font-weight="500">• Concessional flat duty in MH, UP</text>
+    <text x="20" y="130" fill="#0369A1" font-size="11" font-weight="600">• Cannot transfer sole ownership</text>
+    <text x="20" y="150" fill="#49585F" font-size="11" font-weight="500">• Must be between joint co-heirs</text>
+    <rect x="20" y="168" width="215" height="20" rx="6" fill="#E0F2FE" />
+    <text x="28" y="182" fill="#0369A1" font-size="10" font-weight="700">LIMITED TO JOINT CO-HEIRS</text>
+  </g>
+
+  <!-- Bottom Comparison Card -->
+  <g transform="translate(50, 380)">
+    <rect width="1100" height="260" rx="14" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5" filter="url(#cardShadow)" />
+    <rect width="1100" height="45" rx="14" fill="#172228" />
+    <rect y="25" width="1100" height="20" fill="#172228" />
+    <text x="30" y="28" fill="#FAF7F0" font-size="14" font-weight="800">EXECUTIVE STATUTORY COMPARISON AT A GLANCE</text>
+    
+    <!-- Table Headers -->
+    <text x="30" y="72" fill="#49585F" font-size="12" font-weight="700">CRITERIA</text>
+    <text x="300" y="72" fill="#E11D48" font-size="12" font-weight="700">GIFT DEED (TP ACT S. 122)</text>
+    <text x="620" y="72" fill="#C65378" font-size="12" font-weight="700">REGISTERED / UNREGISTERED WILL</text>
+    <text x="920" y="72" fill="#0284C7" font-size="12" font-weight="700">RELEASE DEED (CO-HEIR)</text>
+
+    <line x1="30" y1="85" x2="1070" y2="85" stroke="#E2E8F0" stroke-width="1" />
+
+    <!-- Row 1 -->
+    <text x="30" y="110" fill="#172228" font-size="12" font-weight="600">Effective Timing</text>
+    <text x="300" y="110" fill="#475569" font-size="12">Immediate upon registration</text>
+    <text x="620" y="110" fill="#172228" font-size="12" font-weight="700">Only after demise of testator</text>
+    <text x="920" y="110" fill="#475569" font-size="12">Immediate upon execution</text>
+
+    <!-- Row 2 -->
+    <text x="30" y="140" fill="#172228" font-size="12" font-weight="600">Stamp Duty Outflow</text>
+    <text x="300" y="140" fill="#E11D48" font-size="12" font-weight="600">1% to 7% (e.g. ₹25K-₹7L+)</text>
+    <text x="620" y="140" fill="#C65378" font-size="12" font-weight="800">₹0 (ZERO in all States)</text>
+    <text x="920" y="140" fill="#0284C7" font-size="12">Nominal / Flat in blood family</text>
+
+    <!-- Row 3 -->
+    <text x="30" y="170" fill="#172228" font-size="12" font-weight="600">Donor Control / Residence</text>
+    <text x="300" y="170" fill="#E11D48" font-size="12">Zero (surrendered immediately)</text>
+    <text x="620" y="170" fill="#172228" font-size="12" font-weight="700">100% full ownership during life</text>
+    <text x="920" y="170" fill="#475569" font-size="12">Relinquishes joint co-share</text>
+
+    <!-- Row 4 -->
+    <text x="30" y="200" fill="#172228" font-size="12" font-weight="600">Revocability</text>
+    <text x="300" y="200" fill="#E11D48" font-size="12">Irrevocable (except MWPSC s.23)</text>
+    <text x="620" y="200" fill="#172228" font-size="12" font-weight="700">100% Revocable &amp; amendable anytime</text>
+    <text x="920" y="200" fill="#475569" font-size="12">Irrevocable once registered</text>
+
+    <!-- Row 5 / Takeaway -->
+    <line x1="30" y1="218" x2="1070" y2="218" stroke="#E2E8F0" stroke-width="1" />
+    <text x="30" y="240" fill="#C65378" font-size="12" font-weight="800">KEY LEGAL TAKEAWAY:</text>
+    <text x="200" y="240" fill="#172228" font-size="12" font-weight="500">Unless an immediate inter-vivos transfer is essential, drafting a Will saves lakhs in stamp duty and preserves full elder security.</text>
+  </g>
+</svg>
