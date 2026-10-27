@@ -6,7 +6,7 @@ export interface TemplateItem {
   metaDescription: string;
   primaryKeyword: string;
   category: string;
-  language: "en" | "hi";
+  language: "en" | "hi" | "mr" | "ta" | "gu" | "te" | "kn" | "bn" | "pa" | "ml";
   readTime: string;
   date: string;
   author: string;
@@ -15,6 +15,210 @@ export interface TemplateItem {
 }
 
 export const TEMPLATES_DATA: TemplateItem[] = [
+  {
+    id: "26",
+    slug: "will-format-kannada-uyilu",
+    title: "Will Format in Kannada: ವಿಲ್ ಬರೆಯುವ ಮಾದರಿ ಕನ್ನಡ (Uyilu Patra)",
+    seoTitle: "ವಿಲ್ ಬರೆಯುವ ಮಾದರಿ ಕನ್ನಡ | Will Format in Kannada Guide",
+    metaDescription:
+      "Download legally valid ವಿಲ್ ಬರೆಯುವ ಮಾದರಿ ಕನ್ನಡ (will format in kannada) under Indian Succession Act 1925 with Karnataka Kaveri 2.0 registration guide.",
+    primaryKeyword: "ವಿಲ್ ಬರೆಯುವ ಮಾದರಿ ಕನ್ನಡ / will format in kannada",
+    category: "Legal Templates",
+    language: "kn",
+    readTime: "15 min",
+    date: "October 27, 2026",
+    author: "Advocate Anuj Anand Malik",
+    authorRole: "Senior Succession Counsel, AMA Legal Solutions",
+    summary:
+      "Complete bilingual Kannada and English legal Will template (ವಿಲ್ ಬರೆಯುವ ಮಾದರಿ ಕನ್ನಡ / ಉಯಿಲು ಪತ್ರ) compliant with Indian Succession Act 1925 s. 63, Karnataka Registration Rules (Kaveri 2.0 portal), zero stamp duty, Karnataka High Court probate exemption, and Bhoomi RTC Pouthi Khata / BBMP e-Aasthi mutation guidelines.",
+  },
+  {
+    id: "25",
+    slug: "will-format-malayalam-maranapathram",
+    title: "Will Format in Malayalam: മരണപത്രം ഫോർമാറ്റ് മലയാളം (Maranapathram)",
+    seoTitle: "മരണപത്രം ഫോർമാറ്റ് മലയാളം | Will Format in Malayalam",
+    metaDescription:
+      "Download legally valid മരണപത്രം ഫോർമാറ്റ് മലയാളം (will format in malayalam) under Indian Succession Act 1925 with Kerala PEARL SRO registration guide.",
+    primaryKeyword: "മരണപത്രം ഫോർമാറ്റ് മലയാളം / will format in malayalam",
+    category: "Legal Templates",
+    language: "ml",
+    readTime: "15 min",
+    date: "October 27, 2026",
+    author: "Advocate Anuj Anand Malik",
+    authorRole: "Senior Succession Counsel, AMA Legal Solutions",
+    summary:
+      "Complete bilingual Malayalam and English legal Will template (മരണപത്രം ഫോർമാറ്റ് മലയാളം) compliant with Indian Succession Act 1925 s. 63, Kerala Registration Rules (PEARL portal), zero stamp duty, Kerala High Court probate exemption, and Thandapper land schedule guidelines.",
+  },
+  {
+    id: "24",
+    slug: "will-format-punjabi-vasiyatnama",
+    title: "Will Format in Punjabi: ਵਸੀਅਤਨਾਮਾ ਫਾਰਮੈਟ ਪੰਜਾਬੀ (Vasiyatnama)",
+    seoTitle: "ਵਸੀਅਤਨਾਮਾ ਫਾਰਮੈਟ ਪੰਜਾਬੀ: Punjabi Will Format | WillDrafting",
+    metaDescription:
+      "Download valid ਵਸੀਅਤਨਾਮਾ ਫਾਰਮੈਟ ਪੰਜਾਬੀ (will format in punjabi) under Indian Succession Act 1925 with agricultural land clauses and Punjab SRO rules.",
+    primaryKeyword: "ਵਸੀਅਤਨਾਮਾ ਫਾਰਮੈਟ ਪੰਜਾਬੀ / will format in punjabi",
+    category: "Legal Templates",
+    language: "pa",
+    readTime: "15 min",
+    date: "October 27, 2026",
+    author: "Advocate Anuj Anand Malik",
+    authorRole: "Senior Succession Counsel, AMA Legal Solutions",
+    summary:
+      "Complete bilingual Punjabi Gurmukhi and English legal Will template (ਵਸੀਅਤਨਾਮਾ ਫਾਰਮੈਟ ਪੰਜਾਬੀ) compliant with Indian Succession Act 1925 s. 63, Punjab Land Revenue Act 1887 agricultural land Khewat/Khatauni/Khasra schedules, FEMA Section 6(5) NRI inheritance protection, and Punjab NGDRS Sub-Registrar execution guidelines.",
+  },
+  {
+    id: "23",
+    slug: "will-format-bengali-ichchapatra",
+    title: "Will Format in Bengali: উইল বা ইচ্ছাপত্র ফরম্যাট বাংলা",
+    seoTitle: "উইল বা ইচ্ছাপত্র ফরম্যাট বাংলা: Will Format | WillDrafting",
+    metaDescription:
+      "Download valid উইল বা ইচ্ছাপত্র ফরম্যাট বাংলা (will format in bengali) under Indian Succession Act 1925 with Dayabhaga rules and Kolkata probate guide.",
+    primaryKeyword: "উইল বা ইচ্ছাপত্র ফরম্যাট বাংলা / will format in bengali",
+    category: "Legal Templates",
+    language: "bn",
+    readTime: "15 min",
+    date: "October 27, 2026",
+    author: "Advocate Anuj Anand Malik",
+    authorRole: "Senior Succession Counsel, AMA Legal Solutions",
+    summary:
+      "Complete bilingual Bengali and English legal Will template (উইল বা ইচ্ছাপত্র ফরম্যাট বাংলা) compliant with Indian Succession Act 1925 s. 63, Dayabhaga School of Hindu Law 100% testamentary freedom, Calcutta High Court Section 213 Kolkata probate rules, and West Bengal e-Nathikaran SRO registration guidelines.",
+  },
+  {
+    id: "22",
+    slug: "will-format-telugu-veelunama",
+    title: "Will Format in Telugu: వీలునామా ఫార్మాట్ తెలుగు (Veelunama)",
+    seoTitle: "వీలునామా ఫార్మాట్ తెలుగు: Telugu Will Format | WillDrafting",
+    metaDescription:
+      "Download legally valid వీలునామా ఫార్మాట్ తెలుగు (will format in telugu) under Indian Succession Act, 1925 with Telangana and AP SRO registration rules.",
+    primaryKeyword: "వీలునామా ఫార్మాట్ తెలుగు / will format in telugu",
+    category: "Legal Templates",
+    language: "te",
+    readTime: "15 min",
+    date: "October 27, 2026",
+    author: "Advocate Anuj Anand Malik",
+    authorRole: "Senior Succession Counsel, AMA Legal Solutions",
+    summary:
+      "Complete bilingual Telugu and English legal Will template (వీలునామా ఫార్మాట్ తెలుగు) compliant with Indian Succession Act 1925 s. 63, Telangana and Andhra Pradesh SRO registration rules, plain paper execution, and US-NRI Telugu parent estate planning guidelines.",
+  },
+  {
+    id: "21",
+    slug: "will-format-marathi-mrutyupatra",
+    title: "Will Format in Marathi: मृत्यूपत्र फॉरमॅट मराठी (इच्छापत्र)",
+    seoTitle: "मृत्यूपत्र फॉरमॅट मराठी: Marathi Will Format | WillDrafting",
+    metaDescription:
+      "कायदेशीर मृत्यूपत्र फॉरमॅट मराठी (will format in marathi). भारतीय वारसा कायदा कलम ६३ नुसार २ साक्षीदार, साध्या कागदावर नमुना आणि वकिलांचे मार्गदर्शन.",
+    primaryKeyword: "मृत्यूपत्र फॉरमॅट मराठी / will format in marathi",
+    category: "Legal Templates",
+    language: "mr",
+    readTime: "15 min",
+    date: "October 27, 2026",
+    author: "Advocate Anuj Anand Malik",
+    authorRole: "Senior Succession Counsel, AMA Legal Solutions",
+    summary:
+      "Complete bilingual Marathi and English legal Will template (मृत्यूपत्र / इच्छापत्र नमुना) compliant with Indian Succession Act 1925 s. 63, Bombay High Court probate rules under Section 213, MCS Act s. 154B-13 housing society rules, and IGR Maharashtra registration checklist.",
+  },
+  {
+    id: "20",
+    slug: "will-format-tamil-uyil-sasanam",
+    title: "Will Format in Tamil: உயில் சாசனம் மாதிரி (Uyil Sasanam)",
+    seoTitle: "உயில் சாசனம் மாதிரி | Will Format in Tamil | WillDrafting",
+    metaDescription:
+      "Download legally valid உயில் எழுதுவது எப்படி மாதிரி (will format in tamil) under Indian Succession Act, 1925 with Chennai probate guidance and SRO rules.",
+    primaryKeyword: "உயில் எழுதுவது எப்படி மாதிரி / will format in tamil",
+    category: "Legal Templates",
+    language: "en",
+    readTime: "15 min",
+    date: "October 27, 2026",
+    author: "Advocate Anuj Anand Malik",
+    authorRole: "Senior Succession Counsel, AMA Legal Solutions",
+    summary:
+      "Complete bilingual Tamil and English legal Will template (உயில் சாசனம் மாதிரி) compliant with Indian Succession Act 1925 s. 63, Chennai Presidency Town probate rules under Section 213, and TNREGINET Sub-Registrar Office execution checklist.",
+  },
+  {
+    id: "19",
+    slug: "pet-care-and-charity-bequest-clause-will-format",
+    title: "Pet Care & Charity Bequest Clause in Will Format India",
+    seoTitle: "Leaving Money to Charity or Pet in Will India | WillDrafting",
+    metaDescription:
+      "Download valid pet care and charity bequest clauses for Wills in India. Structure conditional caretaker funds, 80G NGO gifts, and honorary pet trusts.",
+    primaryKeyword: "leaving money to charity or pet in will india format",
+    category: "Legal Templates",
+    language: "en",
+    readTime: "14 min",
+    date: "October 27, 2026",
+    author: "Advocate Anuj Anand Malik",
+    authorRole: "Senior Succession Counsel, AMA Legal Solutions",
+    summary:
+      "Statutory legal clause templates for lifelong pet caretaking under Section 127 and Section 131 gift-over, along with Section 11(1)(d) 80G charitable corpus bequests and John Vallamattom Supreme Court precedent.",
+  },
+  {
+    id: "19",
+    slug: "special-power-of-attorney-nri-property-inheritance-format",
+    title: "NRI Special Power of Attorney for Inherited Property",
+    seoTitle: "NRI PoA Format: Property Mutation & Probate | WillDrafting",
+    metaDescription:
+      "Download legally valid NRI power of attorney format for property mutation and probate. Powers of Attorney Act compliant draft with embassy attestation.",
+    primaryKeyword: "nri power of attorney format for property mutation and probate",
+    category: "Legal Templates",
+    language: "en",
+    readTime: "15 min",
+    date: "October 27, 2026",
+    author: "Advocate Anuj Anand Malik",
+    authorRole: "Senior Succession Counsel, AMA Legal Solutions",
+    summary:
+      "Statutory Special Power of Attorney format for Non-Resident Indians to manage revenue mutation, court probate, and society transfer with anti-misuse non-sale safeguards and 90-day Indian Stamp Act adjudication.",
+  },
+  {
+    id: "18",
+    slug: "huf-karta-coparcenary-will-clause-format",
+    title: "HUF Karta Coparcenary Will Clause Format",
+    seoTitle: "How to Mention Huf Share in Will Format | WillDrafting.in",
+    metaDescription:
+      "Learn how to mention huf share in will format under Section 30 Hindu Succession Act. Download lawyer-vetted coparcenary clauses and avoid fatal errors.",
+    primaryKeyword: "how to mention huf share in will format",
+    category: "Legal Templates",
+    language: "en",
+    readTime: "12 min",
+    date: "October 27, 2026",
+    author: "Advocate Anuj Anand Malik",
+    authorRole: "Senior Succession Counsel, AMA Legal Solutions",
+    summary:
+      "Statutory legal clause format for bequeathing undivided coparcenary interest in a Hindu Undivided Family under Section 30 of the Hindu Succession Act, 1956, compliant with Radhamma v. Muddukrishna (2019 SC).",
+  },
+  {
+    id: "17",
+    slug: "revocation-of-will-deed-format-india",
+    title: "Revocation of Will Deed Format India | Cancel Registered Will",
+    seoTitle: "Cancel Registered Will in India Format | WillDrafting",
+    metaDescription:
+      "Download legally valid deed of revocation of will format in India. Learn how to cancel a registered will under Section 70 of Indian Succession Act 1925.",
+    primaryKeyword: "how to cancel a registered will in india format",
+    category: "Legal Templates",
+    language: "en",
+    readTime: "15 min",
+    date: "October 27, 2026",
+    author: "Advocate Anuj Anand Malik",
+    authorRole: "Senior Succession Counsel, AMA Legal Solutions",
+    summary:
+      "Statutory Deed of Revocation of Will template and Sub-Registrar Book 3 cancellation protocol under Section 70 of the Indian Succession Act, 1925, comparing standalone revocation against drafting a new Will.",
+  },
+  {
+    id: "16",
+    slug: "partition-deed-format-between-family-members",
+    title: "Partition Deed Format Between Brothers & Family Members",
+    seoTitle: "Partition Deed Format Between Brothers India | WillDrafting",
+    metaDescription:
+      "Download legally valid partition deed format between brothers in India. Features floor-wise UDS schedules, Owelty clauses, and SRO stamp duty rules.",
+    primaryKeyword: "partition deed format between brothers india",
+    category: "Legal Templates",
+    language: "en",
+    readTime: "15 min",
+    date: "October 27, 2026",
+    author: "Advocate Anuj Anand Malik",
+    authorRole: "Senior Succession Counsel, AMA Legal Solutions",
+    summary:
+      "Statutory multi-heir registered partition deed template under Section 17 Registration Act with floor-wise Schedule A/B/C/D demarcations, UDS percentage allocation, and Owelty cash compensation clauses.",
+  },
   {
     id: "15",
     slug: "executor-consent-and-renunciation-letter-format",
