@@ -413,6 +413,21 @@ function splitHtmlForInfographic(html: string): [string, string] {
   return [html, ""];
 }
 
+function safeIsoDate(d: any): string {
+  if (!d) return new Date().toISOString();
+  if (d instanceof Date && !isNaN(d.getTime())) return d.toISOString();
+  if (typeof d === "string") {
+    const dmy = d.trim().match(/^(\d{1,2})-(\d{1,2})-(\d{4})$/);
+    if (dmy) {
+      const parsed = new Date(`${dmy[3]}-${dmy[2].padStart(2, "0")}-${dmy[1].padStart(2, "0")}`);
+      if (!isNaN(parsed.getTime())) return parsed.toISOString();
+    }
+    const parsed = new Date(d);
+    if (!isNaN(parsed.getTime())) return parsed.toISOString();
+  }
+  return new Date().toISOString();
+}
+
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { slug } = await params;
   const dbBlog = await findMongoBlogBySlug(slug);

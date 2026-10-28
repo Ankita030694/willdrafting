@@ -177,6 +177,28 @@ const SERVICE_SCHEMA = {
                 "Advocate-managed municipal and revenue mutation service covering MCD/DDA, BBMP e-Aasthi Khata, 7/12 Varas Nond, and Tehsildar Dakhil Kharij across India.",
             },
           },
+          {
+            "@type": "Offer",
+            "price": "9990",
+            "priceCurrency": "INR",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Gift Deed Drafting & Sub-Registrar Registration India",
+              "description":
+                "High Court advocate drafting of senior-safe and blood-relative gift deeds under Transfer of Property Act, Section 23 MWPSC Act protection covenants, and Sub-Registrar registration.",
+            },
+          },
+          {
+            "@type": "Offer",
+            "price": "9990",
+            "priceCurrency": "INR",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Muslim Wasiyat Drafting & Sharia Estate Planning",
+              "description":
+                "High Court advocate assistance for Sharia-compliant Will drafting under Shariat Act 1937, 1/3rd disposable limit audit, and lifetime Hiba gift structuring.",
+            },
+          },
         ],
       },
     },
@@ -290,6 +312,46 @@ const services: ServiceCard[] = [
     linkText: "Explore Private Trust Services",
     linkHref: "/services/private-family-trust-formation",
     illustrationSrc: "/images/private-family-trust-formation-og.jpg",
+  },
+  {
+    title: "Gift Deed Drafting & Registration",
+    description:
+      "Expert advocate drafting of blood-relative and senior-safe gift deeds under the Transfer of Property Act, 1882, with Section 23 maintenance protection covenants and Sub-Registrar biometric registration.",
+    linkText: "Explore Gift Deed Services",
+    linkHref: "/services/gift-deed-drafting-registration",
+    illustrationSrc: "/images/gift-deed-drafting-registration-og.jpg",
+  },
+  {
+    title: "Muslim Wasiyat & Sharia Estate Planning",
+    description:
+      "Sharia-compliant Will drafting and lifetime Hiba structuring by High Court advocates under the Muslim Personal Law (Shariat) Application Act, 1937, respecting 1/3rd net estate limits, Quranic Faraid shares, and daughter protection.",
+    linkText: "Explore Muslim Wasiyat Services",
+    linkHref: "/services/muslim-wasiyat-sharia-estate-planning",
+    illustrationSrc: "/images/muslim-wasiyat-sharia-estate-planning-og.jpg",
+  },
+  {
+    title: "NRI Inherited Property Sale & Repatriation",
+    description:
+      "Turnkey Advocate & Chartered Accountant counsel for Non-Resident Indians handling inherited property title mutation, SRO sale deeds, Section 197 Lower TDS certificates, and FEMA Form 15CA/15CB USD 1 Million overseas wire remittance.",
+    linkText: "Explore NRI Property Sale Services",
+    linkHref: "/services/nri-inherited-property-sale-repatriation",
+    illustrationSrc: "/images/nri-inherited-property-sale-repatriation-og.jpg",
+  },
+  {
+    title: "IEPF Unclaimed Shares & Bank Recovery",
+    description:
+      "Integrated legal recovery service for deceased unclaimed shares and dormant bank deposits under Companies Act 2013 and RBI DEA Fund rules, combining High Court Succession Certificates, RTA transmission, and Form IEPF-5 filing.",
+    linkText: "Explore IEPF Recovery Services",
+    linkHref: "/services/iepf-unclaimed-shares-bank-recovery",
+    illustrationSrc: "/images/iepf-unclaimed-shares-bank-recovery-og.jpg",
+  },
+  {
+    title: "Business Succession & Family Constitution",
+    description:
+      "Strategic corporate and promoter estate counsel under Companies Act 2013 and Indian Partnership Act 1932 to align personal Wills, Articles of Association (AoA), Shareholders' Agreements (SHA), and Family Constitutions.",
+    linkText: "Explore Business Succession Services",
+    linkHref: "/services/business-succession-family-constitution-lawyer",
+    illustrationSrc: "/images/business-succession-family-constitution-lawyer-og.jpg",
   },
 ];
 

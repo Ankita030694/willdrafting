@@ -12,7 +12,6 @@ import SignupModalHost from "@/components/auth/SignupModalHost";
 const plusJakarta = Plus_Jakarta_Sans({
   variable: "--font-jakarta",
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700", "800"],
   display: "swap",
 });
 
@@ -210,3 +209,4 @@ export default function RootLayout({
     </html>
   );
 }
+

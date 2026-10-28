@@ -47,3 +47,7 @@ next-env.d.ts
 
 # Google service account credentials
 willdrafting-4edcc1043fcb.json
+
+# scripts
+/scripts/
+scripts/
