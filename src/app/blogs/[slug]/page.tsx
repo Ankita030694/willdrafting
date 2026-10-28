@@ -298,7 +298,7 @@ async function findRelatedMongoBlogs(currentSlug: string, count = 3) {
   }
 }
 
-function processHtmlAndExtractToc(rawHtml: string): {
+function processHtmlAndExtractToc(rawHtml: string, fallbackImageSrc?: string): {
   processedHtml: string;
   toc: Array<{ id: string; text: string }>;
 } {
@@ -364,7 +364,7 @@ function processHtmlAndExtractToc(rawHtml: string): {
   html = html.replace(
     /\bsrc=(["'])(\/images\/[^"'\s>]+)\1/gi,
     (_m, q, imgPath) => {
-      const safeSrc = resolveSafeBlogImage(imgPath);
+      const safeSrc = resolveSafeBlogAsset(imgPath, undefined, fallbackImageSrc || "/desktopusp.jpg") || fallbackImageSrc || "/desktopusp.jpg";
       return `src=${q}${safeSrc}${q}`;
     }
   );
@@ -661,7 +661,7 @@ export default async function BlogSlugPage({ params }: PageProps) {
   const relatedArticles = await findRelatedMongoBlogs(canonicalSlug, 3);
 
   const { processedHtml, toc } = dbBlog
-    ? processHtmlAndExtractToc(dbBlog.description || dbBlog.content || "")
+    ? processHtmlAndExtractToc(dbBlog.description || dbBlog.content || "", imageSrc)
     : { processedHtml: "", toc: [] };
 
   const [firstHalfHtml, secondHalfHtml] = dbBlog
