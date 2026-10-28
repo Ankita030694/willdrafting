@@ -23,7 +23,7 @@ Before creating or modifying any page, blog post, location guide, service page, 
    - Never render icon-only `<Link>`/`<a>` without descriptive text or `<span className="sr-only">`.
    - Keep external outlinks ≤ 10 per page and only link to live `200 OK` HTTPS URLs.
 5. **Hreflang:** All pages in a multi-language cluster (`/templates/will-format-*`) must share the exact same reciprocal `alternates.languages` map.
-6. **Images:** Always include explicit `width` and `height` attributes (avoid `<Image fill />` without explicit dimensions) and keep `alt` text **≤ 100 characters**.
-7. **Content Readability (Flesch Reading Ease ≥ 30.0):** Every indexable page must maintain a Flesch Reading Ease score **≥ 30.0** (aim for **≥ 35.0**, zero `Very Hard` pages) by using concise sentences and plain 1–2 syllable words alongside statutory terms.
+6. **Images:** Always include explicit `width` and `height` attributes (avoid `<Image fill />` without explicit dimensions), keep `alt` text **≤ 100 characters**, and ensure every raster image in `public/` and `blog_images` is **≤ 100 kB (`≤ 100,000` bytes)**.
+7. **Content Readability (Flesch Reading Ease ≥ 50.0):** Every indexable page must maintain a Flesch Reading Ease score **≥ 50.0** (aim for **≥ 55.0**, zero `Very Hard` or `Hard` pages) by using concise sentences and plain 1–2 syllable words alongside statutory terms.
 8. **Automated Verification:** Run `node scripts/seo-audit-check.mjs` before committing new or modified pages.
 

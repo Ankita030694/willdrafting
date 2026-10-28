@@ -745,7 +745,7 @@ export default function NoidaLocationClient({ faqs }: Props) {
                     Applicable Offices: <strong>Noida Office, GNIDA, YEIDA, and Gautam Buddha Nagar SROs</strong>
                   </span>
                   <a
-                    href="#legal-citations"
+                    href="#statutory-citations"
                     className="inline-flex items-center gap-1 font-bold text-[#C65378] hover:underline"
                   >
                     <span>Read Allahabad HC Citations</span>

@@ -74,44 +74,44 @@ export const metadata: Metadata = {
 
 const LAKSHADWEEP_FAQS = [
   {
-    q: "Is Will registration mandatory in Lakshadweep?",
-    a: "No. Under Section 18(e) of the Registration Act, 1908, registering a Will is optional in Lakshadweep. A Will drafted on plain white paper and attested by two independent adult witnesses is legally binding. However, registering your Will at the Sub-Registrar Office in Kavaratti or your island Sub-Divisional registry enters it into permanent Book III government records. This safeguards against family disputes during revenue mutation before the Tehsildar.",
+    q: "Is Will filing needed by law in Lakshadweep?",
+    a: "No. Under Section 18(e) of the Act of 1908, filing a Will is your choice in the islands. A Will written on plain white paper and signed by two adult witnesses is valid in law. Still, filing your Will at the SRO in Kavaratti or your local island desk puts it in safe Book III state records. This stops family fights when changing land records before the Tehsildar.",
   },
   {
-    q: "Is probate compulsory for a Will in Lakshadweep under Kerala High Court rules?",
-    a: "No. Under Section 213 read with Section 57 of the Indian Succession Act, 1925, probate is mandatory only for Wills executed within or concerning immovable properties located in the historical presidency towns of Mumbai, Kolkata, and Chennai. Although the Kerala High Court exercises constitutional territorial jurisdiction over Lakshadweep, the islands lie outside presidency town limits. Probate is non-mandatory for island residents, allowing direct property transfer with a registered Will.",
+    q: "Is court probate needed for a Will under Kerala High Court rules?",
+    a: "No. Under Section 213 and Section 57 of the Act of 1925, probate is needed only for Wills made in or for land in Mumbai, Kolkata, and Chennai. Even though the Kerala High Court hears cases for the islands, the islands lie outside those three old towns. Probate is not needed for island residents, so land can pass directly with a valid Will.",
   },
   {
-    q: "What is the difference between Belasha and Velliazha property under island customary law?",
-    a: "Under Lakshadweep Marumakkathayam customary law, property is divided into two distinct classes. Velliazha (ancestral or tarawad property) descends through the female lineage and belongs collectively to the matrilineal family; an individual cannot dispose of it through a Will without unanimous tarawad consent. Conversely, Belasha (self-acquired property) earned through individual enterprise or trade is subject to absolute testamentary freedom and can be freely bequeathed to anyone via a Will.",
+    q: "What is the gap between Belasha and Velliazha land under island custom?",
+    a: "Under local island custom, land falls into two clear groups. Velliazha (family tarawad land) passes down the mother line and belongs to the joint family; one person cannot give it away by Will without full family consent. In contrast, Belasha (self-earned land or cash) bought from your own work or trade is yours to give to anyone you pick in a Will.",
   },
   {
-    q: "Can non-islanders or non-natives inherit or acquire land in Lakshadweep through a Will?",
-    a: "No. Under the Laccadive, Minicoy and Amindivi Islands Land Revenue and Tenancy Regulation, 1965, strict statutory prohibitions prevent non-natives from acquiring, holding, or receiving agricultural or residential land in Lakshadweep without prior written approval from the Union Territory Administrator. Testamentary bequests of immovable land parcels must respect these indigenous protective regulations.",
+    q: "Can non-islanders get or buy land in the islands through a Will?",
+    a: "No. Under the 1965 Land Revenue and Tenancy Rule, strict laws stop non-natives from buying, holding, or getting farm or home land on the islands without prior written approval from the UT Head. Gifts of island land in a Will must follow these local rules.",
   },
   {
-    q: "How does the Land Revenue and Tenancy Regulation 1965 affect Will mutation?",
-    a: "Under Regulation 6 of 1965 and the Tenancy Rules of 1968, agricultural coconut holdings, cowle grants, and homestead plots require formal mutation before the local Tehsildar and Revenue Inspector. Presenting a registered Will alongside the testator death certificate provides conclusive legal proof of testamentary intention, ensuring swift updating of the island Record of Rights without civil litigation.",
+    q: "How does the 1965 Land Rule affect Will name change?",
+    a: "Under Rule 6 of 1965 and the 1968 Tenancy Rules, coconut groves, cowle grants, and home plots need formal name change before the local Tehsildar. Showing a filed Will along with the death slip gives clear legal proof of your plan. This updates the island Record of Rights fast without civil court cases.",
   },
   {
-    q: "What is the official government fee to register a Will at SRO Kavaratti?",
-    a: "Wills are completely exempt from ad-valorem stamp duty across Lakshadweep because they are testamentary instruments taking effect after death. At the Sub-Registrar Office in Kavaratti or island Sub-Divisional registry desks, you pay only nominal statutory registration fees and administrative document processing charges of approximately ₹100 to ₹300. There are no percentage-based property valuation fees.",
+    q: "What is the state fee to file a Will at SRO Kavaratti?",
+    a: "Wills have zero stamp duty in the islands because they take effect only after life. At the SRO in Kavaratti or island sub-desks, you pay only small filing and scan fees of about ₹100 to ₹300. There is no fee based on land price.",
   },
   {
-    q: "How does Will succession work in Minicoy (Maliku) with Athiri and Avakar dwellings?",
-    a: "Minicoy features a distinct island social structure divided into Athiris (traditional village units). Residential dwellings (Avakar) traditionally descend matrilocally to female lineage members who maintain the ancestral homestead. A Will in Minicoy can decisively distribute self-acquired properties, maritime vessels, personal assets, and financial accounts, while ensuring family homestead bequests harmoniously align with village traditions.",
+    q: "How does a Will work in Minicoy (Maliku) with Athiri and Avakar homes?",
+    a: "Minicoy has a clear social setup grouped into Athiris (village units). Family houses (Avakar) pass down the female line to members who care for the home. A Will in Minicoy can clearly pass self-earned assets, boats, personal goods, and bank cash while keeping family house rules in peace.",
   },
   {
-    q: "Can senior citizens or ill testators in Lakshadweep register a Will from home under Section 31?",
-    a: "Yes. Under Section 31 of the Registration Act, 1908, senior citizens, bedridden individuals, or persons unable to undertake sea travel between islands can petition for a commission visit. Supported by an authorized medical fitness certificate, the Sub-Registrar or delegated island revenue magistrate attends the testator residence on Kavaratti, Agatti, Amini, or Andrott for home execution.",
+    q: "Can senior citizens or sick residents file a Will from home under Section 31?",
+    a: "Yes. Under Section 31 of the Act of 1908, seniors, sick persons, or those who cannot take a boat between islands can ask for a home visit. With a doctor health note, the SRO officer or island magistrate visits your home on Kavaratti, Agatti, Amini, or Andrott to complete the signing.",
   },
   {
-    q: "Who can act as attesting witnesses for a Will in Lakshadweep?",
-    a: "Any two adult individuals of sound mind who hold valid government photo identification such as Aadhaar cards or voter IDs can serve as witnesses. Under Section 67 of the Indian Succession Act, witnesses must not be beneficiaries receiving any property, asset, or bequest under the Will. Respected community elders, neighbors, or island medical practitioners are recommended.",
+    q: "Who can sign as witnesses for a Will in the islands?",
+    a: "Any two adults of sound mind with valid photo ID such as Aadhaar cards or voter IDs can act as witnesses. Under Section 67 of the Act of 1925, a witness must not get any land, boat, or cash under the Will. Respected elders, neighbors, or island doctors are great choices.",
   },
   {
-    q: "How does a registered Will help with Village (Dweep) Panchayat mutation?",
-    a: "Under the Lakshadweep Panchayats Regulation, 1994, local Village (Dweep) Panchayats maintain village registers and property tax records. A registered Will provides undeniable legal evidence of succession. This enables the Panchayat Secretary to swiftly substitute the beneficiary name on building assessment books and issue municipal ownership confirmations without delay.",
+    q: "How does a filed Will help with Dweep Panchayat tax records?",
+    a: "Under the 1994 Panchayat Rule, local Dweep Panchayats keep village books and house tax rolls. A filed Will gives clear legal proof of who gets the home. This lets the Panchayat clerk update the new owner name on house tax books right away.",
   },
 ];
 
@@ -302,7 +302,7 @@ export default function LakshadweepLocationPage() {
   return (
     <>
       <script
-        type="form/ld+json"
+        type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaGraph) }}
       />
       <Navbar />

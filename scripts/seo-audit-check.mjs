@@ -232,8 +232,18 @@ const readabilityTargets = [
 
 for (const [routeLabel, files] of readabilityTargets) {
   const flesch = computeFleschScore(files);
-  if (flesch < 30.0) {
-    errors.push(`[Content Readability Very Difficult (Flesch ${flesch.toFixed(2)} < 30.0)] ${routeLabel}`);
+  if (flesch < 44.0) {
+    errors.push(`[Content Readability Difficult (Flesch ${flesch.toFixed(2)} < 44.0 raw / 50.0 rendered)] ${routeLabel}`);
+  }
+}
+
+// 5. Check all raster images in public/ are <= 100,000 bytes (100 kB)
+const publicRasterImages = walk(path.join(ROOT, "public"), (f) => /\.(jpg|jpeg|png|webp)$/i.test(f));
+for (const imgPath of publicRasterImages) {
+  const stat = fs.statSync(imgPath);
+  if (stat.size > 100000) {
+    const rel = path.relative(ROOT, imgPath);
+    errors.push(`[Image Over 100 kB (${stat.size} bytes)] ${rel}`);
   }
 }
 

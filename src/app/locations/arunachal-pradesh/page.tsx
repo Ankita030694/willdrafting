@@ -312,7 +312,7 @@ export default function ArunachalPradeshLocationPage() {
   return (
     <>
       <script
-        type="form/ld+json"
+        type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaGraph) }}
       />
       <Navbar />

@@ -128,19 +128,19 @@ const INITIAL_CHECKLIST = [
   {
     id: "item-2",
     label: "Original Aadhaar Card & PAN of Will maker",
-    detail: "Essential for biometric identity validation, electronic signature, and registry check at the SRO counter.",
+    detail: "Essential for thumb scan identity check, digital signature, and registry check at the SRO counter.",
     checked: true,
   },
   {
     id: "item-3",
     label: "Two Independent Adult Witnesses with Aadhaar",
-    detail: "Must carry original photo IDs and must not be heirs receiving any asset or bequest under the Will.",
+    detail: "Must carry original photo IDs and must not be heirs receiving any asset or gift under the Will.",
     checked: true,
   },
   {
     id: "item-4",
     label: "Medical Mental Fitness Paper (MBBS Doctor)",
-    detail: "Strongly advised for senior citizens. Issued by an island Medical Officer confirming Will mental capacity.",
+    detail: "Strongly advised for senior citizens. Issued by an island Medical Officer confirming Will mental health.",
     checked: false,
   },
   {
@@ -152,7 +152,7 @@ const INITIAL_CHECKLIST = [
   {
     id: "item-6",
     label: "Village (Dweep) Panchayat Assessment Records",
-    detail: "Copy of local island Panchayat house tax receipts or building permit records for home dwellings.",
+    detail: "Copy of local island Panchayat house tax receipts or building permit records for home homes.",
     checked: false,
   },
   {
@@ -246,7 +246,7 @@ export default function LakshadweepLocationClient({ faqs }: Props) {
             <div className="lg:col-span-7 space-y-6 text-left">
               <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/10 border border-white/15 backdrop-blur-xs text-xs font-semibold text-rose-200">
                 <Landmark className="w-3.5 h-3.5 text-[#C65378]" />
-                <span>LAKSHADWEEP &amp; KERALA HIGH COURT JURISDICTION DESK</span>
+                <span>LAKSHADWEEP &amp; KERALA HIGH COURT area DESK</span>
               </div>
 
               {/* Strictly 1 H1 Tag: Length 45 characters */}
@@ -255,7 +255,7 @@ export default function LakshadweepLocationClient({ faqs }: Props) {
               </h1>
 
               <p className="text-base sm:text-lg text-slate-200 leading-relaxed font-normal max-w-2xl">
-                Draft a legally watertight Will for your island assets, Belasha self-acquired assets, coconut groves, and home dwellings. Expert lawyer drafting, Marumakkathayam local compliance, and SRO Kavaratti signing support.
+                Draft a legally watertight Will for your island assets, Belasha self-acquired assets, coconut groves, and home homes. Expert lawyer drafting, mother-line local compliance, and SRO SRO Hub signing support.
               </p>
 
               <div className="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
@@ -272,7 +272,7 @@ export default function LakshadweepLocationClient({ faqs }: Props) {
                   className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full bg-white/10 text-white font-bold text-sm sm:text-base hover:bg-white/15 transition-all border border-white/20 text-center"
                 >
                   <MapPin className="w-4 h-4 text-rose-300" />
-                  <span>SRO Kavaratti Directory</span>
+                  <span>SRO SRO Hub Directory</span>
                 </a>
               </div>
 
@@ -437,7 +437,7 @@ export default function LakshadweepLocationClient({ faqs }: Props) {
                 Probate Mandate
               </span>
               <span className="text-lg sm:text-xl font-extrabold text-[#172228] block">
-                Strictly A Choice
+                fully your choice
               </span>
               <span className="text-[11px] text-emerald-600 font-bold mt-1 inline-block">
                 Sec 213 ISA Exemption
@@ -449,7 +449,7 @@ export default function LakshadweepLocationClient({ faqs }: Props) {
                 Local Law
               </span>
               <span className="text-lg sm:text-xl font-extrabold text-[#172228] block">
-                Marumakkathayam
+                mother-line
               </span>
               <span className="text-[11px] text-[#C65378] font-bold mt-1 inline-block">
                 Belasha vs Velliazha
@@ -461,7 +461,7 @@ export default function LakshadweepLocationClient({ faqs }: Props) {
                 Central Registry
               </span>
               <span className="text-lg sm:text-xl font-extrabold text-[#172228] block">
-                SRO Kavaratti
+                SRO SRO Hub
               </span>
               <span className="text-[11px] text-slate-600 font-bold mt-1 inline-block">
                 Nominal Filing Fees
@@ -485,13 +485,13 @@ export default function LakshadweepLocationClient({ faqs }: Props) {
               <div className="space-y-2">
                 <div className="flex items-center gap-2 text-xs font-black uppercase tracking-wider text-[#C65378]">
                   <Scale className="w-4 h-4 text-[#C65378]" />
-                  <span>CUSTOMARY MATRILINEAL SUCCESSION &amp; ISLAND GOVERNANCE</span>
+                  <span>local mother-line estate &amp; ISLAND GOVERNANCE</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   1. Will Drafting &amp; Legal Estate Framework in Lakshadweep
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed">
-                  Will estate planning across the Union Islands of Lakshadweep presents a unique legal synthesis in the Republic of India. Estate on these thirty-six coral atolls is shaped by the intersection of legal Indian civil laws, island tenancy rules, and deep-seated local mother-line jurisprudence known as <strong>Marumakkathayam</strong>.
+                  Will estate planning across the Union Islands of Lakshadweep presents a unique legal synthesis in the Republic of India. Estate on these thirty-six coral atolls is shaped by the intersection of legal Indian civil laws, island tenancy rules, and deep-seated local mother-line jurisprudence known as <strong>mother-line</strong>.
                 </p>
               </div>
 
@@ -499,17 +499,17 @@ export default function LakshadweepLocationClient({ faqs }: Props) {
                 <div className="p-4 sm:p-5 rounded-2xl bg-white border border-slate-200/90 shadow-xs space-y-2">
                   <div className="flex items-center gap-2 text-slate-900 font-bold text-sm">
                     <ShieldCheck className="w-4 h-4 text-emerald-600" />
-                    <span>Indian Succession Act, 1925</span>
+                    <span>Indian estate Act, 1925</span>
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Governs formal Will signing under Section 63. Requires clear Will maker capacity, voluntary declaration of intent, and witness signing by two non-heir witnesses in each other presence.
+                    Governs formal Will signing under Section 63. Requires clear Will maker health, voluntary declaration of intent, and witness signing by two non-heir witnesses in each other presence.
                   </p>
                 </div>
 
                 <div className="p-4 sm:p-5 rounded-2xl bg-white border border-slate-200/90 shadow-xs space-y-2">
                   <div className="flex items-center gap-2 text-slate-900 font-bold text-sm">
                     <Palmtree className="w-4 h-4 text-[#C65378]" />
-                    <span>Marumakkathayam Local Law</span>
+                    <span>mother-line Local Law</span>
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
                     Draws a decisive legal boundary between <em>Velliazha</em> (undivided family tarawad asset) and <em>Belasha</em> (self-acquired assets). Only self-acquired asset can be freely bequeathed by Will.
@@ -548,17 +548,17 @@ export default function LakshadweepLocationClient({ faqs }: Props) {
             </section>
 
             {/* SECTION 2: MANDATORY VS OPTIONAL REGISTRATION */}
-            <section id="mandatory-vs-a choice" className="scroll-target space-y-6">
+            <section id="mandatory-vs-optional" className="scroll-target space-y-6">
               <div className="space-y-2">
                 <div className="flex items-center gap-2 text-xs font-black uppercase tracking-wider text-[#C65378]">
                   <FileText className="w-4 h-4 text-[#C65378]" />
-                  <span>REGISTRATION ACT, 1908 COMPLIANCE</span>
+                  <span>filing ACT, 1908 COMPLIANCE</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   2. Is Will Filing Needed in Lakshadweep Islands?
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed">
-                  Under Section 18(e) of the Filing Act, 1908, registering a Will is legally a choice throughout Lakshadweep. An plain Will signed on standard white paper before two competent witnesses possesses prima facie validity. However, in an island ecosystem where families often hold overlapping local rights, signing provides indispensable legal safeguards.
+                  Under Section 18(e) of the Filing Act, 1908, filing a Will is legally your choice throughout Lakshadweep. An plain Will signed on standard white paper before two competent witnesses possesses prima facie validity. However, in an island ecosystem where families often hold overlapping local rights, signing provides vital legal safeguards.
                 </p>
               </div>
 
@@ -566,12 +566,12 @@ export default function LakshadweepLocationClient({ faqs }: Props) {
                 <div className="p-5 rounded-2xl bg-white border border-amber-200/90 shadow-xs space-y-3">
                   <div className="flex items-center gap-2 text-amber-900 font-extrabold text-sm">
                     <AlertTriangle className="w-4 h-4 text-amber-600 shrink-0" />
-                    <span>Plain Will Vulnerabilities</span>
+                    <span>Plain Will risks</span>
                   </div>
                   <ul className="text-xs text-slate-600 space-y-2">
                     <li className="flex items-start gap-1.5">
                       <span className="text-amber-500 font-black">•</span>
-                      <span>Susceptible to family allegations of forgery, undue influence, or mental impairment.</span>
+                      <span>open to family claims of forgery, undue influence, or mental impairment.</span>
                     </li>
                     <li className="flex items-start gap-1.5">
                       <span className="text-amber-500 font-black">•</span>
@@ -587,16 +587,16 @@ export default function LakshadweepLocationClient({ faqs }: Props) {
                 <div className="p-5 rounded-2xl bg-white border border-emerald-200/90 shadow-xs space-y-3">
                   <div className="flex items-center gap-2 text-emerald-950 font-extrabold text-sm">
                     <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
-                    <span>Filed Will Advantages at SRO Kavaratti</span>
+                    <span>Filed Will Advantages at SRO SRO Hub</span>
                   </div>
                   <ul className="text-xs text-slate-600 space-y-2">
                     <li className="flex items-start gap-1.5">
                       <span className="text-emerald-500 font-black">•</span>
-                      <span>Enters permanent Book III government custody under official government seal.</span>
+                      <span>Enters safe Book III state custody under official state seal.</span>
                     </li>
                     <li className="flex items-start gap-1.5">
                       <span className="text-emerald-500 font-black">•</span>
-                      <span>Carries a legal presumption of genuine signing under the Indian Evidence Act.</span>
+                      <span>Carries a legal proof of genuine signing under the Indian Evidence Act.</span>
                     </li>
                     <li className="flex items-start gap-1.5">
                       <span className="text-emerald-500 font-black">•</span>
@@ -612,7 +612,7 @@ export default function LakshadweepLocationClient({ faqs }: Props) {
               <div className="space-y-2">
                 <div className="flex items-center gap-2 text-xs font-black uppercase tracking-wider text-[#C65378]">
                   <Landmark className="w-4 h-4 text-[#C65378]" />
-                  <span>KERALA HIGH COURT JURISDICTION</span>
+                  <span>KERALA HIGH COURT area</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   3. Kerala High Court Area &amp; Probate Rules in Lakshadweep
@@ -624,10 +624,10 @@ export default function LakshadweepLocationClient({ faqs }: Props) {
 
               <div className="p-5 sm:p-6 rounded-2xl bg-white border border-slate-200/90 shadow-xs space-y-4">
                 <h3 className="font-extrabold text-base text-slate-900">
-                  Section 213 ISA: Probate is Strictly Non-Needed in Lakshadweep
+                  Section 213 ISA: Probate is fully not needed in Lakshadweep
                 </h3>
                 <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
-                  Under Section 213 read with Section 57 of the Indian Succession Act, 1925, geting court probate is needed only for Wills signed within or concerning assets located inside the historical presidency towns of Mumbai, Kolkata, and Chennai. 
+                  Under Section 213 read with Section 57 of the Indian estate Act, 1925, geting court probate is needed only for Wills signed within or concerning assets located inside the historical presidency towns of Mumbai, Kolkata, and Chennai. 
                 </p>
                 <div className="p-4 rounded-xl bg-slate-50 border border-slate-200 text-xs text-slate-700 space-y-2">
                   <p className="font-semibold text-slate-900">
@@ -645,13 +645,13 @@ export default function LakshadweepLocationClient({ faqs }: Props) {
               <div className="space-y-2">
                 <div className="flex items-center gap-2 text-xs font-black uppercase tracking-wider text-[#C65378]">
                   <Building className="w-4 h-4 text-[#C65378]" />
-                  <span>OFFICIAL ISLAND REGISTRATION OFFICES</span>
+                  <span>OFFICIAL ISLAND filing OFFICES</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  4. SRO Kavaratti &amp; Island Registry Offices Directory
+                  4. SRO SRO Hub &amp; Island Registry Offices Directory
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed">
-                  The Union Islands of Lakshadweep maintains its principal SRO office at Kavaratti, supplemented by Island Magistrates and delegated registry desks across outlying inhabited islands. Select your island hub below for area details and timing:
+                  The Union Islands of Lakshadweep maintains its principal SRO office at SRO Hub, supplemented by Island Magistrates and delegated registry desks across outlying inhabited islands. Select your island hub below for area details and timing:
                 </p>
               </div>
 
@@ -751,7 +751,7 @@ export default function LakshadweepLocationClient({ faqs }: Props) {
 
                 <div className="pt-3 border-t border-slate-100 flex items-center justify-between">
                   <span className="text-xs text-slate-500 font-medium">
-                    Lawyer drafting &amp; registry accompaniment available
+                    Lawyer drafting &amp; registry support available
                   </span>
                   <a
                     href="/start"
@@ -776,7 +776,7 @@ export default function LakshadweepLocationClient({ faqs }: Props) {
                   5. Regional Cities: Will Drafting Coverage Across Lakshadweep
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Estate holdings across Lakshadweep span home assets in the office capital of Kavaratti, tourism and lagoon plots in Agatti, old tarawad holdings in Amini, extensive coconut plantations in Andrott, and matrilocal family residences in Minicoy. Our specialized legal lawyers deliver customized Will drafting, local review, and registry help across all regional island centers:
+                  Estate holdings across Lakshadweep span home assets in the office capital of SRO Hub, tourism and lagoon plots in Agatti, old tarawad holdings in Amini, extensive coconut groves in Andrott, and family family homes in Minicoy. Our expert legal lawyers deliver custom Will drafting, local review, and registry help across all regional island centers:
                 </p>
               </div>
 
@@ -790,12 +790,12 @@ export default function LakshadweepLocationClient({ faqs }: Props) {
                         Capital Office Hub
                       </span>
                       <span className="text-[11px] font-semibold text-slate-500 bg-slate-100 px-2.5 py-1 rounded-lg">
-                        SRO Kavaratti
+                        SRO SRO Hub
                       </span>
                     </div>
 
                     <h3 className="font-extrabold text-lg text-slate-900 group-hover:text-[#C65378] transition-colors">
-                      Will Drafting Services in Kavaratti Island
+                      Will Drafting Services in SRO Hub Island
                     </h3>
 
                     <div className="flex flex-wrap gap-1.5 text-[11px] text-slate-600">
@@ -806,7 +806,7 @@ export default function LakshadweepLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Specialized <strong>Will drafting services in Kavaratti Island</strong> for office officers, business owners, and resident island families. Codifies clear split between government employee benefits, bank deposits, self-acquired home dwellings, and family tarawad shares under Kerala High Court standards.
+                      Specialized <strong>Will drafting services in SRO Hub Island</strong> for office officers, business owners, and resident island families. Codifies clear split between government employee benefits, bank deposits, self-acquired home dwellings, and family tarawad shares under Kerala High Court standards.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -815,7 +815,7 @@ export default function LakshadweepLocationClient({ faqs }: Props) {
                         <span>SRO Hub: District Collectorate Complex</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Direct signing at SRO Kavaratti, lawyer check, and Section 31 doorstep signing for elderly Will makers.
+                        Direct signing at SRO SRO Hub, lawyer check, and Section 31 doorstep signing for elderly Will makers.
                       </p>
                     </div>
                   </div>
@@ -828,7 +828,7 @@ export default function LakshadweepLocationClient({ faqs }: Props) {
                       aria-label="Will Drafting Services in Kavaratti Island"
                       className="inline-flex items-center gap-1.5 text-xs font-bold text-[#C65378] hover:text-[#a13c5d] group-hover:translate-x-0.5 transition-all"
                     >
-                      <span>Draft Kavaratti Will</span>
+                      <span>Draft SRO Hub Will</span>
                       <ArrowRight className="w-3.5 h-3.5" />
                     </Link>
                   </div>
@@ -868,7 +868,7 @@ export default function LakshadweepLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Island Magistrate Complex</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Lagoon tourism estate planning, passenger vessel bequests, and expedited island registry recording.
+                        Lagoon tourism estate planning, passenger vessel gifts, and expedited island registry recording.
                       </p>
                     </div>
                   </div>
@@ -921,7 +921,7 @@ export default function LakshadweepLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Amini Office &amp; Judicial Desk</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Local Marumakkathayam reconciliation, family tree check, and Book III signing.
+                        Local mother-line checks, family tree check, and Book III signing.
                       </p>
                     </div>
                   </div>
@@ -980,7 +980,7 @@ export default function LakshadweepLocationClient({ faqs }: Props) {
                   </div>
 
                   <div className="pt-4 mt-4 border-t border-slate-100 flex items-center justify-between">
-                    <span className="text-xs font-bold text-slate-500">Agro-Plantations &amp; Real Estate</span>
+                    <span className="text-xs font-bold text-slate-500">Agro-groves &amp; Real Estate</span>
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
@@ -1027,7 +1027,7 @@ export default function LakshadweepLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Minicoy SDO &amp; Light House Complex</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Merchant navy seafarer Wills, maritime vessel bequests, and Athiri local homestead protections.
+                        Merchant navy seafarer Wills, maritime vessel gifts, and Athiri local home protections.
                       </p>
                     </div>
                   </div>
@@ -1192,7 +1192,7 @@ export default function LakshadweepLocationClient({ faqs }: Props) {
                   </div>
 
                   <div className="pt-4 mt-4 border-t border-slate-100 flex items-center justify-between">
-                    <span className="text-xs font-bold text-slate-500">Island Homesteads &amp; Craft</span>
+                    <span className="text-xs font-bold text-slate-500">Island homes &amp; Craft</span>
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
@@ -1215,10 +1215,10 @@ export default function LakshadweepLocationClient({ faqs }: Props) {
                   <span>STANDARDIZED ISLAND PROTOCOL</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  6. Step-by-Step SOP: Will Drafting to SRO Kavaratti Filing
+                  6. Step-by-Step SOP: Will Drafting to SRO SRO Hub Filing
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed">
-                  Signing a legally binding Will in Lakshadweep requires methodical progression from asset ID to formal Book III government recording. Follow this checked five-step operating step:
+                  Signing a legally binding Will in Lakshadweep requires methodical progression from asset ID to formal Book III state recording. Follow this checked five-step operating step:
                 </p>
               </div>
 
@@ -1232,7 +1232,7 @@ export default function LakshadweepLocationClient({ faqs }: Props) {
                       Step 1: Segregate Belasha (Self-Acquired) &amp; Velliazha (Family) Assets
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Compile a full inventory of your real estate, coconut trees, bank accounts, and fishing vessels. Categorize each asset to make sure only self-acquired (Belasha) assets are unilaterally bequeathed, preserving mother-line harmony.
+                      Compile a full inventory of your real estate, coconut trees, bank accounts, and fishing vessels. Categorize each asset to make sure only self-acquired (Belasha) assets are freely given, preserving mother-line harmony.
                     </p>
                   </div>
                 </div>
@@ -1246,7 +1246,7 @@ export default function LakshadweepLocationClient({ faqs }: Props) {
                       Step 2: Legal Drafting with Local &amp; Legal Clauses
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Draft your Will with explicit legal clauses complying with Section 63 of the Indian Succession Act, 1925 and island revenue rules. Appoint an executor, nominate substitute heirs, and insert clear revocation clauses for prior instruments.
+                      Draft your Will with explicit legal clauses complying with Section 63 of the Indian estate Act, 1925 and island revenue rules. Appoint an executor, nominate substitute heirs, and insert clear revocation clauses for prior papers.
                     </p>
                   </div>
                 </div>
@@ -1257,7 +1257,7 @@ export default function LakshadweepLocationClient({ faqs }: Props) {
                   </span>
                   <div className="space-y-1">
                     <h3 className="font-extrabold text-base text-slate-900">
-                      Step 3: Witness Signing Before Two Independent Island Witnesses
+                      Step 3: Witness Signing Before Two adult Island Witnesses
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                       Print the Will on standard A4 paper. The Will maker signs each page in the presence of two adult witnesses who hold no beneficial interest under the Will. Both witnesses then sign in the presence of the Will maker.
@@ -1271,10 +1271,10 @@ export default function LakshadweepLocationClient({ faqs }: Props) {
                   </span>
                   <div className="space-y-1">
                     <h3 className="font-extrabold text-base text-slate-900">
-                      Step 4: Submission at SRO Kavaratti or Island Office
+                      Step 4: Submission at SRO SRO Hub or Island Office
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Present the signed original Will, Will maker identity proofs, and witness KYC at the SRO office in Kavaratti or your local island Island Magistrate office. Pay the nominal government signing fee.
+                      Present the signed original Will, Will maker identity proofs, and witness KYC at the SRO office in SRO Hub or your local island Island Magistrate office. Pay the nominal state signing fee.
                     </p>
                   </div>
                 </div>
@@ -1285,10 +1285,10 @@ export default function LakshadweepLocationClient({ faqs }: Props) {
                   </span>
                   <div className="space-y-1">
                     <h3 className="font-extrabold text-base text-slate-900">
-                      Step 5: Verbal Affirmation, Biometrics &amp; Book III Filing
+                      Step 5: Verbal Affirmation, thumb scans &amp; Book III Filing
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      The SRO verifies Will maker voluntariness and Will mental capacity, captures biometric thumbprints, and seals the paper into Book III permanent government archives. An official signing endorsement is issued.
+                      The SRO verifies Will maker free will and Will mental health, captures thumb scan thumbprints, and seals the paper into Book III safe state archives. An official signing stamp is issued.
                     </p>
                   </div>
                 </div>
@@ -1300,7 +1300,7 @@ export default function LakshadweepLocationClient({ faqs }: Props) {
               <div className="space-y-2">
                 <div className="flex items-center gap-2 text-xs font-black uppercase tracking-wider text-[#C65378]">
                   <Home className="w-4 h-4 text-[#C65378]" />
-                  <span>DOORSTEP &amp; ISLAND RESIDENCE EXECUTION</span>
+                  <span>DOORSTEP &amp; ISLAND home signing</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   7. Section 31 Doorstep SRO Filing for Senior Islanders
@@ -1313,10 +1313,10 @@ export default function LakshadweepLocationClient({ faqs }: Props) {
               <div className="p-5 sm:p-6 rounded-2xl bg-white border border-slate-200/90 shadow-xs space-y-4">
                 <div className="flex items-center gap-3 text-slate-900 font-extrabold text-base">
                   <Award className="w-5 h-5 text-[#C65378]" />
-                  <span>Home &amp; Hospital Commission Visits by the SRO</span>
+                  <span>Home &amp; Hospital visit Visits by the SRO</span>
                 </div>
                 <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
-                  Under Section 31 of the Filing Act, 1908, a Will maker unable to travel to SRO Kavaratti or their local island office complex due to bodily infirmity or old age can submit a formal form requesting a home visit.
+                  Under Section 31 of the Filing Act, 1908, a Will maker unable to travel to SRO SRO Hub or their local island office complex due to bodily illness or old age can submit a formal form requesting a home visit.
                 </p>
 
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-2">
@@ -1327,15 +1327,15 @@ export default function LakshadweepLocationClient({ faqs }: Props) {
                     </p>
                   </div>
                   <div className="p-3.5 rounded-xl bg-slate-50 border border-slate-200 space-y-1">
-                    <span className="text-xs font-bold text-slate-900 block">2. Commission Petition</span>
+                    <span className="text-xs font-bold text-slate-900 block">2. visit Petition</span>
                     <p className="text-[11px] text-slate-600">
-                      Formal requisition filed with SRO Kavaratti or the island Island Magistrate stating home coordinates.
+                      Formal request filed with SRO SRO Hub or the island Island Magistrate stating home coordinates.
                     </p>
                   </div>
                   <div className="p-3.5 rounded-xl bg-slate-50 border border-slate-200 space-y-1">
-                    <span className="text-xs font-bold text-slate-900 block">3. In-Home Biometrics</span>
+                    <span className="text-xs font-bold text-slate-900 block">3. In-Home thumb scans</span>
                     <p className="text-[11px] text-slate-600">
-                      The registering officer attends the residence with registry ledgers, recording verbal witness signing and thumb impressions.
+                      The filing officer attends the home with registry ledgers, recording verbal witness signing and thumb impressions.
                     </p>
                   </div>
                 </div>
@@ -1347,13 +1347,13 @@ export default function LakshadweepLocationClient({ faqs }: Props) {
               <div className="space-y-2">
                 <div className="flex items-center gap-2 text-xs font-black uppercase tracking-wider text-[#C65378]">
                   <FileText className="w-4 h-4 text-[#C65378]" />
-                  <span>MANDATORY VERIFICATION DOSSIER</span>
+                  <span>needed check DOSSIER</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   8. Paper Checklist for Lakshadweep SRO offices
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed">
-                  Before presenting your Will for signing at SRO Kavaratti or your island Island registry desk, verify that you have assembled all required papers. Use this free preparation checklist:
+                  Before presenting your Will for signing at SRO SRO Hub or your island Island registry desk, check that you have assembled all required papers. Use this free preparation checklist:
                 </p>
               </div>
 
@@ -1410,13 +1410,13 @@ export default function LakshadweepLocationClient({ faqs }: Props) {
               <div className="space-y-2">
                 <div className="flex items-center gap-2 text-xs font-black uppercase tracking-wider text-[#C65378]">
                   <Home className="w-4 h-4 text-[#C65378]" />
-                  <span>ASSET CLASSIFICATION &amp; CUSTOMARY RULES</span>
+                  <span>ASSET group &amp; local RULES</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   9. Lakshadweep Asset Types: Belasha, Velliazha &amp; Coconut Lands
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed">
-                  Real estate and cash wealth in Lakshadweep differ fundamentally from mainland Indian property. Understanding how your assets fall under island local classifications prevents expensive legal fights:
+                  Real estate and cash wealth in Lakshadweep differ fundamentally from mainland Indian asset. Understanding how your assets fall under island local groups prevents expensive legal fights:
                 </p>
               </div>
 
@@ -1427,7 +1427,7 @@ export default function LakshadweepLocationClient({ faqs }: Props) {
                     <span>Belasha Asset (Self-Acquired)</span>
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Land bought with personal income, newly constructed home houses, shop shops, mechanized fishing boats, copra dryers, motor vehicles, bank deposits, and mutual funds. The Will maker enjoys 100% unilateral Will freedom to bequeath Belasha assets to any chosen person.
+                    Land bought with personal income, newly constructed home houses, shop shops, mechanized fishing boats, copra dryers, motor vehicles, bank deposits, and mutual funds. The Will maker enjoys 100% full Will freedom to give Belasha assets to any chosen person.
                   </p>
                 </div>
 
@@ -1447,17 +1447,17 @@ export default function LakshadweepLocationClient({ faqs }: Props) {
                     <span>Coconut Palm Holdings &amp; Cowle Grants</span>
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Farm land governed by the 1965 Land Revenue and Tenancy Rule. Includes tree usufructuary rights (*Themma*) where coconut trees can be bequeathed separately from underlying land occupancy, requiring precise Will description.
+                    Farm land governed by the 1965 Land Revenue and Tenancy Rule. Includes tree crop rights (*Themma*) where coconut trees can be given separately from underlying land occupancy, requiring precise Will description.
                   </p>
                 </div>
 
                 <div className="p-5 rounded-2xl bg-white border border-slate-200/90 shadow-xs space-y-2">
                   <div className="flex items-center gap-2 text-slate-900 font-extrabold text-sm">
                     <Waves className="w-4 h-4 text-blue-600" />
-                    <span>Minicoy Avakar Dwellings &amp; Vessels</span>
+                    <span>Minicoy Avakar homes &amp; Vessels</span>
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    In Minicoy (Maliku), home houses traditionally pass matrilocally to female lineage heirs who manage the household. Bequests must harmoniously preserve Avakar dwelling estate while freely distributing maritime vessels and savings.
+                    In Minicoy (Maliku), home houses usually pass matrilocally to female lineage heirs who manage the household. gifts must harmoniously preserve Avakar home estate while freely distributing maritime vessels and savings.
                   </p>
                 </div>
               </div>
@@ -1468,13 +1468,13 @@ export default function LakshadweepLocationClient({ faqs }: Props) {
               <div className="space-y-2">
                 <div className="flex items-center gap-2 text-xs font-black uppercase tracking-wider text-[#C65378]">
                   <Stamp className="w-4 h-4 text-[#C65378]" />
-                  <span>TRANSPARENT STATUTORY COSTS</span>
+                  <span>TRANSPARENT legal COSTS</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   10. Official Lakshadweep SRO Filing Fees &amp; Stamp Duty
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed">
-                  Unlike asset sale deeds, gift deeds, or mortgages that attract ad-valorem stamp duty based on circle rates, Wills are Will declarations taking effect solely upon death. So, government charges for registering a Will across Lakshadweep are strictly nominal.
+                  Unlike asset sale deeds, gift deeds, or mortgages that attract ad-valorem stamp duty based on circle rates, Wills are Will declarations taking effect solely upon death. So, state charges for filing a Will across Lakshadweep are fully nominal.
                 </p>
               </div>
 
@@ -1482,7 +1482,7 @@ export default function LakshadweepLocationClient({ faqs }: Props) {
                 <table className="w-full text-left text-xs sm:text-sm">
                   <thead className="bg-slate-50 text-slate-900 border-b border-slate-200 font-extrabold">
                     <tr>
-                      <th className="p-3.5 sm:p-4">Government Fee Component</th>
+                      <th className="p-3.5 sm:p-4">state Fee Component</th>
                       <th className="p-3.5 sm:p-4">Legal Charge</th>
                       <th className="p-3.5 sm:p-4">Legal Office &amp; Details</th>
                     </tr>
@@ -1496,34 +1496,34 @@ export default function LakshadweepLocationClient({ faqs }: Props) {
                         ₹0 (100% Exempt)
                       </td>
                       <td className="p-3.5 sm:p-4 text-xs">
-                        Wills are completely exempt from ad-valorem stamp duty across Lakshadweep. Non-judicial stamp paper is not required.
+                        Wills are fully exempt from ad-valorem stamp duty across Lakshadweep. Non-judicial stamp paper is not required.
                       </td>
                     </tr>
                     <tr>
                       <td className="p-3.5 sm:p-4 font-bold text-slate-900">
-                        SRO Kavaratti Filing Fee
+                        SRO SRO Hub Filing Fee
                       </td>
                       <td className="p-3.5 sm:p-4 font-extrabold text-slate-900">
                         ₹100
                       </td>
                       <td className="p-3.5 sm:p-4 text-xs">
-                        Standard legal fee for registering a Will instrument under Filing Act rules.
+                        Standard legal fee for filing a Will paper under Filing Act rules.
                       </td>
                     </tr>
                     <tr>
                       <td className="p-3.5 sm:p-4 font-bold text-slate-900">
-                        Government Scanning &amp; Archive Charges
+                        state Scanning &amp; Archive Charges
                       </td>
                       <td className="p-3.5 sm:p-4 font-extrabold text-slate-900">
                         ₹100 – ₹200
                       </td>
                       <td className="p-3.5 sm:p-4 text-xs">
-                        Digital scanning and Book III archival storage fee covering official government paper preservation.
+                        Digital scanning and Book III archival storage fee covering official state paper preservation.
                       </td>
                     </tr>
                     <tr>
                       <td className="p-3.5 sm:p-4 font-bold text-slate-900">
-                        Section 31 Doorstep Commission Fee
+                        Section 31 Doorstep visit Fee
                       </td>
                       <td className="p-3.5 sm:p-4 font-extrabold text-slate-900">
                         Nominal Travel Allowance
@@ -1548,7 +1548,7 @@ export default function LakshadweepLocationClient({ faqs }: Props) {
                   11. Transparent Will Packages &amp; Legal Fees in Lakshadweep
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed">
-                  Choose the ideal service tier for your estate planning needs. All drafts include local Marumakkathayam check, Kerala High Court compliance, and step-by-step registry instructions.
+                  Choose the ideal service tier for your estate planning needs. All drafts include local mother-line check, Kerala High Court compliance, and step-by-step registry instructions.
                 </p>
               </div>
 
@@ -1616,7 +1616,7 @@ export default function LakshadweepLocationClient({ faqs }: Props) {
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>Local Marumakkathayam review</span>
+                        <span>Local mother-line review</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
@@ -1648,10 +1648,10 @@ export default function LakshadweepLocationClient({ faqs }: Props) {
                     </span>
                     <div>
                       <span className="text-3xl font-black text-slate-900">₹9,990</span>
-                      <span className="text-xs text-slate-500 block mt-0.5">End-to-end management</span>
+                      <span className="text-xs text-slate-500 block mt-0.5">End-to-end care</span>
                     </div>
                     <p className="text-xs text-slate-600">
-                      Complete done-for-you service including SRO Kavaratti filing, island registry accompaniment, or Section 31 home visit.
+                      Complete done-for-you service including SRO SRO Hub filing, island registry support, or Section 31 home visit.
                     </p>
                     <ul className="text-xs text-slate-700 space-y-2 border-t border-slate-100 pt-3">
                       <li className="flex items-center gap-2">
@@ -1660,7 +1660,7 @@ export default function LakshadweepLocationClient({ faqs }: Props) {
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>SRO Kavaratti slot &amp; token coordination</span>
+                        <span>SRO SRO Hub slot &amp; token coordination</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
@@ -1697,7 +1697,7 @@ export default function LakshadweepLocationClient({ faqs }: Props) {
                   12. Frequently Asked Questions: Will Drafting in Lakshadweep
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed">
-                  Answers to real questions concerning island asset estate, local Marumakkathayam rules, and SRO Kavaratti signing:
+                  Answers to real questions concerning island asset estate, local mother-line rules, and SRO SRO Hub signing:
                 </p>
               </div>
 
@@ -1737,13 +1737,13 @@ export default function LakshadweepLocationClient({ faqs }: Props) {
               <div className="space-y-2">
                 <div className="flex items-center gap-2 text-xs font-black uppercase tracking-wider text-[#C65378]">
                   <Scale className="w-4 h-4 text-[#C65378]" />
-                  <span>AUTHORITATIVE STATUTORY CITATIONS</span>
+                  <span>clear legal CITATIONS</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   13. Legal Citations &amp; Lakshadweep Island Legal Framework
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed">
-                  Every Will prepared through WillDrafting strictly adheres to ruling primary legislation, island rules, and high court precedents:
+                  Every Will prepared through WillDrafting fully adheres to ruling primary legislation, island rules, and high court rulings:
                 </p>
               </div>
 
@@ -1751,10 +1751,10 @@ export default function LakshadweepLocationClient({ faqs }: Props) {
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs">
                   <div className="p-3.5 rounded-xl bg-slate-50 border border-slate-200 space-y-1">
                     <span className="font-extrabold text-slate-900 block">
-                      Section 63, Indian Succession Act, 1925
+                      Section 63, Indian estate Act, 1925
                     </span>
                     <p className="text-slate-600 text-[11px]">
-                      Mandates Will maker signing and two-witness simultaneous witness signing for all unprivileged Wills in India.
+                      Mandates Will maker signing and two-witness joint witness signing for all standard Wills in India.
                     </p>
                   </div>
 
@@ -1763,7 +1763,7 @@ export default function LakshadweepLocationClient({ faqs }: Props) {
                       Section 18(e) &amp; 31, Filing Act, 1908
                     </span>
                     <p className="text-slate-600 text-[11px]">
-                      Designates Will signing as a choice and empowers the registering officer to conduct home commission visits.
+                      Designates Will signing as your choice and empowers the filing officer to conduct home visit visits.
                     </p>
                   </div>
 
@@ -1772,7 +1772,7 @@ export default function LakshadweepLocationClient({ faqs }: Props) {
                       Rule 6 of 1965 (Land Revenue &amp; Tenancy)
                     </span>
                     <p className="text-slate-600 text-[11px]">
-                      Controls land tenure, farm coconut grants, and safeguards non-native land transfer restrictions.
+                      Controls land tenure, farm coconut grants, and safeguards non-native land transfer limits.
                     </p>
                   </div>
 
@@ -1791,7 +1791,7 @@ export default function LakshadweepLocationClient({ faqs }: Props) {
                     Official Rule &amp; Judicial Portals:
                   </p>
                   <p className="text-[11px] text-slate-600">
-                    Lakshadweep Rule Official Portal (lakshadweep.gov.in) · High Court of Kerala (hckerala.gov.in) · District Court Kavaratti (districts.ecourts.gov.in/lakshadweep)
+                    Lakshadweep Rule Official Portal (lakshadweep.gov.in) · High Court of Kerala (hckerala.gov.in) · District Court SRO Hub (districts.ecourts.gov.in/lakshadweep)
                   </p>
                 </div>
               </div>
@@ -1815,7 +1815,7 @@ export default function LakshadweepLocationClient({ faqs }: Props) {
                     Protect Your Island Estate Today
                   </h3>
                   <p className="text-xs text-slate-300 leading-relaxed">
-                    Prevent bitter family passing assets fights. Draft a legally sound Will customized for Lakshadweep asset laws.
+                    Prevent bitter family passing assets fights. Draft a legally sound Will custom for Lakshadweep asset laws.
                   </p>
                 </div>
 
@@ -1826,11 +1826,11 @@ export default function LakshadweepLocationClient({ faqs }: Props) {
                   </div>
                   <div className="flex items-center gap-2">
                     <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
-                    <span>Marumakkathayam local review</span>
+                    <span>mother-line local review</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
-                    <span>SRO Kavaratti filing guidance</span>
+                    <span>SRO SRO Hub filing guidance</span>
                   </div>
                 </div>
 
@@ -1856,7 +1856,7 @@ export default function LakshadweepLocationClient({ faqs }: Props) {
                   <span>Senior Citizen Home Visits</span>
                 </div>
                 <p className="text-xs text-slate-600 leading-relaxed">
-                  Are you or an elderly family member residing on Kavaratti, Agatti, Amini, or Andrott unable to travel to the SRO office? We coordinate Section 31 in-home commission visits with island offices.
+                  Are you or an elderly family member residing on SRO Hub, Agatti, Amini, or Andrott unable to travel to the SRO office? We coordinate Section 31 in-home visit visits with island offices.
                 </p>
                 <a
                   href="/start"
@@ -1876,7 +1876,7 @@ export default function LakshadweepLocationClient({ faqs }: Props) {
                 <ul className="text-xs text-slate-700 space-y-2">
                   <li>
                     <Link
-                      href="/services/will-signing"
+                      href="/services/will-registration"
                       className="hover:text-[#C65378] flex items-center justify-between"
                     >
                       <span>Done-For-You Will Filing</span>
@@ -1962,6 +1962,27 @@ export default function LakshadweepLocationClient({ faqs }: Props) {
             </div>
           </div>
 
+          <div className="mt-4 grid grid-cols-1 sm:grid-cols-3 gap-4">
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Self-Earned vs Family Land</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                You can give your own earned land, house, boat, shop, gold, and bank cash to anyone you pick. Keep joint family plots in a clear list so there is no mix-up.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Home Visit for Seniors</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                Old or sick elders do not need to take a boat to the main island desk. With a doctor note, the local officer can come to your house to check and sign your Will.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Fast Record Change</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                No court probate is needed on the islands. Your heirs can show the signed Will and death slip to the local revenue clerk to put the land and home in their name fast.
+              </p>
+            </div>
+          </div>
+
       </main>
 
       {/* =========================================================================
@@ -1991,7 +2012,7 @@ export default function LakshadweepLocationClient({ faqs }: Props) {
                   Legal Will Drafting Services in Lakshadweep
                 </h4>
                 <p className="text-xs text-slate-300">
-                  Local Marumakkathayam Compliance &amp; SRO Kavaratti Signing
+                  Local mother-line Compliance &amp; SRO SRO Hub Signing
                 </p>
               </div>
               <button

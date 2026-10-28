@@ -640,7 +640,7 @@ export default function LucknowLocationClient({ faqs }: Props) {
             </section>
 
             {/* SECTION 3: LDA PROPERTY MUTATION */}
-            <section id="lda-property-name change" className="scroll-target space-y-6">
+            <section id="lda-property-mutation" className="scroll-target space-y-6">
               <div className="flex items-center gap-2 text-xs font-black uppercase tracking-wider text-[#C65378]">
                 <Building className="w-4 h-4 text-[#C65378]" />
                 <span>SECTION 3: LDA ESTATE TRANSFER RULES</span>

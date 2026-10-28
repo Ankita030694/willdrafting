@@ -78,44 +78,44 @@ export const metadata: Metadata = {
 
 const GHAZIABAD_FAQS = [
   {
-    q: "Is Will registration mandatory in Ghaziabad?",
-    a: "No. Under Section 18(e) of the Registration Act, 1908, registering a Will is optional in Ghaziabad and across Uttar Pradesh. A Will written on standard paper is legally valid if signed before two independent witnesses. However, registering your Will at a Ghaziabad Sub-Registrar Office enters it into permanent Book III government custody. This prevents fraudulent challenges and ensures fast mutation with the Ghaziabad Development Authority (GDA), Nagar Nigam, and high-rise Apartment Owners Associations (AOAs).",
+    q: "Is Will filing needed by law in Ghaziabad?",
+    a: "No. Under Section 18(e) of the Act of 1908, filing a Will is your choice in Ghaziabad and all of UP. A Will on plain white paper is valid if you sign it in front of two adult witnesses. Still, filing your Will at a local SRO puts it in safe Book III state records. This stops fraud claims and speeds up name change with the GDA, Nagar Nigam, and flat groups.",
   },
   {
-    q: "Is probate required for a Will in Ghaziabad under Allahabad High Court rules?",
-    a: "No. Under Section 213 read with Section 57 of the Indian Succession Act, 1925, probate is compulsory only within the historical presidency towns of Mumbai, Kolkata, and Chennai. Ghaziabad lies outside presidency limits under the jurisdiction of the Allahabad High Court. Court probate is strictly non-compulsory in Uttar Pradesh for Hindu, Sikh, Jain, and Buddhist Wills, enabling direct property transfer upon presenting a registered Will.",
+    q: "Is court probate needed for a Will in Ghaziabad?",
+    a: "No. Under Section 213 and Section 57 of the Act of 1925, probate is needed only in Mumbai, Kolkata, and Chennai. Ghaziabad falls under the High Court in UP, outside those three old towns. Court probate is not needed in UP for Hindu, Sikh, Jain, and Buddhist Wills. Your heirs can claim the flat or plot directly with a valid Will.",
   },
   {
-    q: "How are GDA flats and high-rise society apartments in Indirapuram and Vaishali transferred via Will?",
-    a: "High-rise apartments governed by the UP Apartment (Promotion of Construction, Ownership & Maintenance) Act, 2010 and GDA flats are transferred to designated heirs upon submitting the registered Will, original death certificate, legal heir affidavit, and indemnity bond to the Ghaziabad Development Authority and society AOA for title mutation and maintenance ledger substitution.",
+    q: "How do GDA flats and society homes in Indirapuram and Vaishali pass by Will?",
+    a: "Flats under the UP Apartment Act, 2010 and GDA plots pass to your named heirs when they show the Will, death slip, heir note, and bond to the GDA office and flat board. This updates the owner name and maintenance records.",
   },
   {
-    q: "What is the official government fee to register a Will on the UP IGRSUP portal?",
-    a: "Wills are completely exempt from stamp duty across Uttar Pradesh. At Ghaziabad Sub-Registrar offices, testators only pay a nominal flat ₹100 registration fee plus nominal government scanning and user charges of approximately ₹100 to ₹200 generated through the official IGRSUP portal (igrsup.gov.in). There are no ad valorem percentage-based property market value levies.",
+    q: "What is the state fee to file a Will on the UP IGRSUP portal?",
+    a: "Wills have zero stamp duty in UP. At Ghaziabad SRO offices, you only pay a flat ₹100 filing fee plus small scan fees of about ₹100 to ₹200 on the UP portal (igrsup.gov.in). There is no tax based on house market price.",
   },
   {
-    q: "Does a high-rise society nominee automatically own the flat in Ghaziabad?",
-    a: "No. In accordance with Supreme Court precedents including Indrani Wahi v. Registrar of Co-operative Societies, a nominee acts merely as a legal trustee to hold the property until testamentary or intestate succession is settled. True beneficial ownership never passes to a nominee. Only a legally valid Will or succession certificate establishes lawful ownership and title rights.",
+    q: "Does a flat nominee become the real owner in Ghaziabad?",
+    a: "No. As ruled by the Supreme Court, a nominee is only a caretaker who holds the flat in trust for the legal heirs. True ownership never goes to a nominee alone. Only a valid Will or court heir slip gives real title rights.",
   },
   {
-    q: "How do I book an e-appointment on the UP IGRSUP portal for Ghaziabad SROs?",
-    a: "Appointments are scheduled online through the Stamps and Registration Department UP portal (igrsup.gov.in). Select Ghaziabad district and your designated Sub-Registrar Office (e.g., Raj Nagar Collectorate, Sahibabad, or Modi Nagar), enter testator and witness KYC information, remit the statutory ₹100 fee online, and generate an official appointment token slip.",
+    q: "How do I book an online slot on the UP IGRSUP portal for Ghaziabad SROs?",
+    a: "You can book a slot online on the UP Stamps portal (igrsup.gov.in). Pick Ghaziabad district and your local SRO office (such as Raj Nagar, Sahibabad, or Modi Nagar). Fill in the ID details of the Will maker and two witnesses, pay the ₹100 fee online, and print your slot slip.",
   },
   {
-    q: "Can senior citizens in Ghaziabad register a Will from home under Section 31?",
-    a: "Yes. Under Section 31 of the Registration Act, 1908, elderly, bedridden, or mobility-impaired testators in Indirapuram, Vaishali, Vasundhara, or Raj Nagar can apply for a doorstep official visit. An MBBS registered doctor issues a physical disability certificate, and the Sub-Registrar conducts an official home commission with biometric devices.",
+    q: "Can senior citizens in Ghaziabad file a Will from home under Section 31?",
+    a: "Yes. Under Section 31 of the Act of 1908, old or sick residents in Indirapuram, Vaishali, Vasundhara, or Raj Nagar can ask for a home visit. An MBBS doctor gives a health note, and the SRO officer comes to your home with thumb scan tools.",
   },
   {
-    q: "How does a registered Will help with Ghaziabad Nagar Nigam property tax mutation?",
-    a: "Ghaziabad Nagar Nigam mandates proof of succession before changing property tax assessment records (Namaantaran). A registered Will serves as conclusive documentary proof of testamentary intent, expediting municipal record mutation without compelling heirs to undergo expensive civil court proceedings.",
+    q: "How does a filed Will help with Ghaziabad Nagar Nigam house tax change?",
+    a: "The Nagar Nigam asks for proof of heir rights before changing the name on house tax bills. A filed Will serves as strong legal proof of your wishes. It speeds up city tax record changes without long civil court cases.",
   },
   {
-    q: "Who can serve as valid attesting witnesses at Ghaziabad Sub-Registrar offices?",
-    a: "Any two adult individuals of sound mind holding valid Aadhaar cards or government photo IDs can act as witnesses. Crucially, under Section 67 of the Indian Succession Act, attesting witnesses must not be beneficiaries receiving any asset, property, or legacy under the Will. Independent family friends, doctors, or colleagues are recommended.",
+    q: "Who can sign as valid witnesses at Ghaziabad SRO offices?",
+    a: "Any two adults of sound mind with valid Aadhaar cards or photo IDs can act as witnesses. Under Section 67 of the Act of 1925, a witness must not get any gift, cash, or land in the Will. Family friends, doctors, or peers are great choices.",
   },
   {
-    q: "Can Non-Resident Indians (NRIs) make a Will for properties located in Ghaziabad?",
-    a: "Yes. Many NRIs residing in the UAE, USA, UK, Canada, or Singapore hold residential apartments or commercial plots in Ghaziabad. NRIs can draft an airtight Indian Will online. They can execute it abroad before two witnesses and apostille or consularize it, or complete Book III biometric registration before a Ghaziabad Sub-Registrar during their visit to India.",
+    q: "Can NRIs make a Will for flats or plots in Ghaziabad?",
+    a: "Yes. Many NRIs living in the UAE, USA, UK, or Canada own flats or plots in Ghaziabad. NRIs can draft a strong Indian Will online. They can sign it abroad with two witnesses, or file it in Book III at a Ghaziabad SRO during a trip to India.",
   },
 ];
 

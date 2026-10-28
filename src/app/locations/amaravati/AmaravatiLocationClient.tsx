@@ -621,7 +621,7 @@ export default function AmaravatiLocationClient({ faqs }: Props) {
             </section>
 
             {/* SECTION 2: MANDATORY VS OPTIONAL */}
-            <section id="mandatory-vs-a choice" className="scroll-target space-y-6">
+            <section id="mandatory-vs-optional" className="scroll-target space-y-6">
               <div className="space-y-2">
                 <div className="flex items-center gap-2 text-xs font-black uppercase tracking-wider text-[#C65378]">
                   <FileQuestion className="w-4 h-4 text-[#C65378]" />

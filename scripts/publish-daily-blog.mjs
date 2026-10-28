@@ -13,6 +13,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { MongoClient, ObjectId } from "mongodb";
+import sharp from "sharp";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -208,22 +209,42 @@ function extractActionSteps(html, fallbackHeadings = []) {
     .slice(0, 5);
 }
 
+async function compressBufferUnder90KB(buf) {
+  if (buf.byteLength <= 90000) return { buffer: buf, ext: null, contentType: null };
+  const meta = await sharp(buf).metadata();
+  const origW = meta.width || 1200;
+  const widths = [origW, Math.min(origW, 1200), Math.min(origW, 1000), Math.min(origW, 850)];
+  for (const w of widths) {
+    for (const q of [76, 70, 65, 60, 55, 50, 45, 40]) {
+      let pipeline = sharp(buf).flatten({ background: "#ffffff" });
+      if (w < origW) pipeline = pipeline.resize({ width: w, withoutEnlargement: true });
+      const out = await pipeline.jpeg({ quality: q, mozjpeg: true, progressive: true, chromaSubsampling: "4:2:0" }).toBuffer();
+      if (out.byteLength <= 90000) return { buffer: out, ext: "jpg", contentType: "image/jpeg" };
+    }
+  }
+  const fallback = await sharp(buf).flatten({ background: "#ffffff" }).resize({ width: 750, withoutEnlargement: true }).jpeg({ quality: 40, mozjpeg: true, progressive: true }).toBuffer();
+  return { buffer: fallback, ext: "jpg", contentType: "image/jpeg" };
+}
+
 async function storeLocalImageInMongo({ db, localFilePath, slug, kind, prompt }) {
   if (!localFilePath || !fs.existsSync(localFilePath)) {
     throw new Error(
       `Missing local ${kind} image file at "${localFilePath || ""}". Images in the automated funnel MUST be generated via the Gemini 4 Argon 'image-generator' subagent and passed as localHeroImagePath / localInfographicPath.`
     );
   }
-  const fileBuffer = fs.readFileSync(localFilePath);
+  const rawBuffer = fs.readFileSync(localFilePath);
+  const compressed = await compressBufferUnder90KB(rawBuffer);
+  const fileBuffer = compressed.buffer;
   const cleanBase64 = fileBuffer.toString("base64");
   const size = fileBuffer.byteLength;
-  const rawExt = path.extname(localFilePath).toLowerCase().replace(".", "") || "png";
+  const rawExt = compressed.ext || path.extname(localFilePath).toLowerCase().replace(".", "") || "png";
   const contentType =
-    rawExt === "jpg" || rawExt === "jpeg"
+    compressed.contentType ||
+    (rawExt === "jpg" || rawExt === "jpeg"
       ? "image/jpeg"
       : rawExt === "webp"
         ? "image/webp"
-        : "image/png";
+        : "image/png");
   const ext = rawExt === "jpeg" ? "jpg" : rawExt;
   const now = new Date();
 

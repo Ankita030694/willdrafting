@@ -308,7 +308,7 @@ export default function AmaravatiLocationPage() {
   return (
     <>
       <script
-        type="form/ld+json"
+        type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaGraph) }}
       />
       <Navbar />

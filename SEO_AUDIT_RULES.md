@@ -67,9 +67,10 @@ Every new page, component, blog post, location guide, legal tool, and template c
 
 ---
 
-## 7. Images (`width`, `height`, and `alt` Text)
+## 7. Images (`width`, `height`, `alt` Text, and File Size ≤ 100 kB)
 - **Explicit Size Attributes:** Every rendered `<img>` MUST have explicit `width` and `height` HTML attributes (avoid `<Image fill />` without explicit dimensions; use `width={1200} height={675}` with `className="w-full h-full object-cover"` or `className="absolute inset-0 w-full h-full object-cover"`).
 - **Alt Text Limit:** Every image `alt` attribute MUST be descriptive, non-empty, and **≤ 100 characters** (aim for 40–90 characters).
+- **File Size Limit (`Images: Over 100 kB` Prevention):** Every raster image (`.jpg`, `.jpeg`, `.png`, `.webp`) in `public/` and every binary image stored in MongoDB `blog_images` (`/api/blog-images/[id]`) MUST be **≤ 100,000 bytes (100 kB)** (aim for **≤ 92 kB** using progressive MozJPEG or quantized 8-bit PNG via `sharp`).
 
 ---
 
@@ -84,8 +85,8 @@ Every new page, component, blog post, location guide, legal tool, and template c
 
 ---
 
-## 9. Content Readability (Flesch Reading Ease ≥ 30.0 — Zero "Very Hard" Pages)
-- **Minimum Flesch Reading Ease Score:** Every indexable page MUST achieve a **Flesch Reading Ease score ≥ 30.0** (`206.835 - 1.015 × (Words / Sentences) - 84.6 × (Syllables / Words)`), so Screaming Frog never flags `Content: Readability Very Difficult` (`Very Hard`). Aim for **≥ 35.0**.
+## 9. Content Readability (Flesch Reading Ease ≥ 50.0 — Zero "Hard" or "Very Hard" Pages)
+- **Minimum Flesch Reading Ease Score:** Every indexable page MUST achieve a **Flesch Reading Ease score ≥ 50.0** (`206.835 - 1.015 × (Words / Sentences) - 84.6 × (Syllables / Words)`), so Screaming Frog never flags `Content: Readability Very Difficult` (`< 30.0`) or `Content: Readability Difficult` (`30.0–49.9`). Aim for **≥ 55.0**.
 - **Plain-English Legal Writing Rules:**
   - Prefer 1–2 syllable words over heavy multi-syllable words where legal precision is unaffected (`use` instead of `utilize`, `help` instead of `assistance`, `papers` instead of `documentation`, `heirs` instead of `beneficiaries`, `Will maker` instead of `testator`, `needed` instead of `mandatory`, `also` instead of `additionally`/`furthermore`, `so` instead of `consequently`, `check` instead of `verification`/`authentication`, `land and flats` instead of `immovable properties`).
   - Keep sentences concise (**8–16 words** on average) and include plain-English summary cards (`Why Write a Will Now?`, `Who Needs One?`, `How We Help You`) on pages with long statutory or multi-syllable city/state names (such as *Thiruvananthapuram*, *Tiruchirappalli*, *Arunachal Pradesh*, *Lakshadweep*, *Uttarakhand*, *Amaravati*).
