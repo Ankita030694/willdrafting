@@ -7,9 +7,9 @@ import {
   usersCol,
   willsCol,
 } from "@/lib/db/collections";
-import { QUESTIONNAIRE_STEPS } from "@/lib/questionnaireFlow";
 import { PLANS } from "@/lib/plans";
 import type { WillDraftingState } from "@/lib/willDraftingStore";
+import { analyzeWillState } from "@/app/api/admin/drafts/route";
 
 export const dynamic = "force-dynamic";
 
@@ -19,63 +19,13 @@ async function requireAdmin() {
 }
 
 function summarizeWillProgress(state?: WillDraftingState | null) {
-  if (!state) {
-    return {
-      currentStep: 1,
-      currentStepTitle: "Not Started",
-      willStatus: "drafting",
-      selectedPlan: null,
-      sectionsCompleted: 0,
-      completionPercent: 0,
-      familyCount: 0,
-      assetsCount: 0,
-      allocationsCount: 0,
-      totalEstateValue: 0,
-      testatorName: "",
-      testatorEmail: "",
-      testatorPhone: "",
-    };
-  }
-
-  const stepNum = state.currentStep || 1;
-  const stepObj = QUESTIONNAIRE_STEPS.find((s) => s.step === stepNum);
-  const t = state.testator;
-  const hasPersonal = Boolean(t?.fullName?.trim() && (t?.dob || t?.phone || t?.address || t?.state));
-  const familyCount = Array.isArray(state.familyMembers) ? state.familyMembers.length : 0;
-  const assetsCount = Array.isArray(state.assets) ? state.assets.length : 0;
-  const allocationsCount = Array.isArray(state.allocations) ? state.allocations.length : 0;
-  const hasAllocations = allocationsCount > 0 || Boolean(state.residuaryBeneficiaryName?.trim());
-  const hasExecutor = Boolean(state.executorPrimary?.name?.trim());
-  const hasWishes = Boolean(
-    state.specialWishes?.hasNoSpecialWishes ||
-      state.specialWishes?.funeralCeremonyWishes?.trim() ||
-      state.specialWishes?.personalMessageToFamily?.trim() ||
-      state.emotionalReason?.trim()
-  );
-
-  let sectionsCompleted = 0;
-  if (hasPersonal) sectionsCompleted++;
-  if (familyCount > 0) sectionsCompleted++;
-  if (assetsCount > 0) sectionsCompleted++;
-  if (hasAllocations) sectionsCompleted++;
-  if (hasExecutor) sectionsCompleted++;
-  if (hasWishes) sectionsCompleted++;
-
-  const totalEstateValue = Array.isArray(state.assets)
-    ? state.assets.reduce((sum, a) => sum + (Number(a.approximateValue) || 0), 0)
-    : 0;
-
+  const analyzed = analyzeWillState(state);
+  const t = state?.testator;
   return {
-    currentStep: stepNum,
-    currentStepTitle: stepObj?.title || `Step ${stepNum}`,
-    willStatus: state.willStatus || "drafting",
-    selectedPlan: state.selectedPlan || null,
-    sectionsCompleted,
-    completionPercent: Math.round((sectionsCompleted / 6) * 100),
-    familyCount,
-    assetsCount,
-    allocationsCount,
-    totalEstateValue,
+    ...analyzed,
+    currentStep: state ? analyzed.currentStep : 1,
+    currentStepTitle: state ? analyzed.currentStepTitle : "Not Started",
+    willStatus: state ? analyzed.willStatus : "drafting",
     testatorName: t?.fullName?.trim() || "",
     testatorEmail: t?.email?.trim() || "",
     testatorPhone: t?.phone?.trim() || "",

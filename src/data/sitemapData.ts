@@ -1673,6 +1673,14 @@ export const staticPages: SitemapPageItem[] = [
     changefreq: "weekly",
     priority: 0.8,
   },
+  {
+    title: "How to Make an Unchallengeable Will in India That Holds Up",
+    href: "/blogs/how-to-make-an-unchallengeable-will-in-india",
+    category: "Guides",
+    date: "2026-10-27",
+    changefreq: "weekly",
+    priority: 0.8,
+  },
 ];
 
 /**

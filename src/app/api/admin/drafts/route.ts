@@ -59,7 +59,13 @@ export function analyzeWillState(rawState?: WillDraftingState | null) {
   const missingSections: string[] = [];
 
   const hasPersonal = Boolean(
-    t?.fullName?.trim() && (t?.dob?.trim() || t?.address?.trim() || t?.city?.trim() || t?.pan?.trim())
+    t?.fullName?.trim() &&
+      (t?.dob?.trim() ||
+        t?.phone?.trim() ||
+        t?.address?.trim() ||
+        t?.city?.trim() ||
+        t?.state?.trim() ||
+        t?.pan?.trim())
   );
   if (hasPersonal) filledSections.push("About You");
   else missingSections.push("About You");
@@ -84,9 +90,8 @@ export function analyzeWillState(rawState?: WillDraftingState | null) {
   if (hasExecutor) filledSections.push("Executor");
   else missingSections.push("Executor");
 
-  const hasWishes = Boolean(
-    state.specialWishes?.hasNoSpecialWishes ||
-      state.specialWishes?.jewelleryInstructions?.trim() ||
+  const hasWrittenWishes = Boolean(
+    state.specialWishes?.jewelleryInstructions?.trim() ||
       state.specialWishes?.personalBelongings?.trim() ||
       state.specialWishes?.petsCare?.trim() ||
       state.specialWishes?.charitableGifts?.trim() ||
@@ -95,6 +100,8 @@ export function analyzeWillState(rawState?: WillDraftingState | null) {
       state.specialWishes?.personalMessageToFamily?.trim() ||
       state.emotionalReason?.trim()
   );
+  const hasWishes =
+    hasWrittenWishes || Boolean(stepNum > 8 && state.specialWishes?.hasNoSpecialWishes);
   if (hasWishes) filledSections.push("Wishes & Purpose");
   else missingSections.push("Wishes & Purpose");
 
