@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     absolute: "Relinquishment Deed India | Haq Tyag Drafting & Lawyers",
   },
   description:
-    "Draft a valid Relinquishment Deed (Haq Tyag) in India. Transfer inherited property shares legally among co-heirs with guidance from AMA Legal Solutions.",
+    "Draft a valid Relinquishment Deed (Haq Tyag) in India. Transfer inherited property shares legally among co-heirs with guidance from AMA Legal.",
   authors: [{ name: "Advocate Anuj Anand Malik", url: "https://www.linkedin.com/in/iamanujmalik/" }],
   keywords: [
     "relinquishment deed india",
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Relinquishment Deed India | Haq Tyag Drafting & Lawyers",
     description:
-      "Draft a valid Relinquishment Deed (Haq Tyag) in India. Transfer inherited property shares legally among co-heirs with guidance from AMA Legal Solutions.",
+      "Draft a valid Relinquishment Deed (Haq Tyag) in India. Transfer inherited property shares legally among co-heirs with guidance from AMA Legal.",
     url: "https://www.willdrafting.in/services/relinquishment-deed",
     siteName: "WillDrafting.in",
     locale: "en_IN",
@@ -64,7 +64,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Relinquishment Deed India | Haq Tyag Drafting & Lawyers",
     description:
-      "Draft a valid Relinquishment Deed (Haq Tyag) in India. Transfer inherited property shares legally among co-heirs with guidance from AMA Legal Solutions.",
+      "Draft a valid Relinquishment Deed (Haq Tyag) in India. Transfer inherited property shares legally among co-heirs with guidance from AMA Legal.",
     images: ["/images/relinquishment-deed-og.jpg"],
   },
   robots: {
@@ -478,7 +478,7 @@ export default function RelinquishmentDeedPage() {
                 </li>
               </ul>
               <Link
-                href="/blogs/relinquishment-deed-vs-gift-deed-india"
+                href="/blogs/gift-deed-vs-will-india"
                 className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-[0.14em] text-[#172228] hover:text-[#C65378] transition-colors"
               >
                 <span>Read Relinquishment Deed vs Gift Deed Analysis</span>

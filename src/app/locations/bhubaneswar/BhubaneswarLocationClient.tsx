@@ -286,10 +286,10 @@ export default function BhubaneswarLocationClient({ faqs }: Props) {
               >
                 <Image
                   src="/images/will-drafting-in-bhubaneswar.jpg"
-                  alt="Will Drafting in Bhubaneswar: Plan Today, Protect Your Family, Preserve Your Legacy with Confidence"
-                  fill
+                  alt="Will Drafting in Bhubaneswar: Plan Today, Protect Your Family, Preserve Your Legacy"
+                  width={1200} height={675}
                   priority
-                  className="object-cover transition-transform duration-500 group-hover:scale-105"
+                  className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent pointer-events-none" />
                 <div className="absolute bottom-3 left-3 right-3 flex items-center justify-between text-xs text-white/90 bg-black/40 backdrop-blur-xs px-3 py-1.5 rounded-xl border border-white/10">
@@ -1781,8 +1781,8 @@ export default function BhubaneswarLocationClient({ faqs }: Props) {
               <Image
                 src="/images/will-drafting-in-bhubaneswar.jpg"
                 alt="High Resolution Visual: Will Drafting in Bhubaneswar with Lingaraj Temple Landmark"
-                fill
-                className="object-contain"
+                width={1200} height={675}
+                className="absolute inset-0 w-full h-full object-contain"
               />
             </div>
           </div>

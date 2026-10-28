@@ -294,8 +294,8 @@ export default function AndhraPradeshLocationClient({ faqs }: Props) {
                 <Image
                   src="/images/will-drafting-in-andhra-pradesh.jpg"
                   alt="Legal Will Drafting and Property Succession in Andhra Pradesh"
-                  fill
-                  className="object-contain group-hover:scale-102 transition-transform duration-500"
+                  width={1200} height={675}
+                  className="absolute inset-0 w-full h-full object-contain group-hover:scale-102 transition-transform duration-500"
                   priority
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 40vw"
                 />
@@ -778,7 +778,7 @@ export default function AndhraPradeshLocationClient({ faqs }: Props) {
                       Need an advocate to accompany you to this Sub-Registrar Office?
                     </span>
                     <a
-                      href="/service/will-registration"
+                      href="/services/will-registration"
                       className="inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl bg-[#172228] text-white text-xs font-bold hover:bg-slate-800 transition-colors text-center"
                     >
                       <span>Book SRO Advocate Accompaniment</span>
@@ -1685,7 +1685,7 @@ export default function AndhraPradeshLocationClient({ faqs }: Props) {
 
                   <div className="pt-6 mt-6 border-t border-slate-100">
                     <a
-                      href="/service/will-registration"
+                      href="/services/will-registration"
                       className="block text-center w-full py-3 rounded-full bg-slate-100 text-slate-800 font-bold text-xs hover:bg-[#C65378] hover:text-white transition-colors cursor-pointer"
                     >
                       Book Full SRO Assistance
@@ -1851,8 +1851,8 @@ export default function AndhraPradeshLocationClient({ faqs }: Props) {
               <Image
                 src="/images/will-drafting-in-andhra-pradesh.jpg"
                 alt="High Resolution Visual Blueprint: Andhra Pradesh Will Drafting and AP IGRS Registration"
-                fill
-                className="object-contain"
+                width={1200} height={675}
+                className="absolute inset-0 w-full h-full object-contain"
                 priority
               />
             </div>

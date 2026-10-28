@@ -1115,9 +1115,9 @@ Official Seal & Registration Stamp: [Seal]`;
               <div className="relative w-full aspect-[16/9] sm:aspect-[1200/675] rounded-2xl overflow-hidden bg-slate-900 shadow-inner">
                 <Image
                   src="/images/will-contest-challenge-risk-calculator-og.jpg"
-                  alt="Can My Will Be Challenged in Court India - Litigation Risk Scorecard and Fortification Blueprint"
-                  fill
-                  className="object-cover"
+                  alt="Can My Will Be Challenged in Court India - Litigation Risk Scorecard and Fortification"
+                  width={1200} height={675}
+                  className="absolute inset-0 w-full h-full object-cover"
                   sizes="(max-width: 1200px) 100vw, 1200px"
                   priority
                 />
@@ -1800,7 +1800,7 @@ Official Seal & Registration Stamp: [Seal]`}
                     <ExternalLink className="w-3 h-3" />
                   </a>
                   <a
-                    href="https://main.sci.gov.in"
+                    href="https://www.sci.gov.in"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-slate-100 text-slate-800 hover:bg-slate-200 font-semibold"

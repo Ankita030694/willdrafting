@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     absolute: "Will Drafting in Gujarat: Legal Online Will Making Help",
   },
   description:
-    "Draft a legally compliant Will in Gujarat. Expert lawyer assistance, Garvi Gujarat registration advice, and family business succession planning online.",
+    "Draft a legally compliant Will in Gujarat. Expert lawyer assistance, Garvi Gujarat registration advice, and family business succession.",
   keywords: [
     "will drafting in gujarat",
     "will registration garvi gujarat",
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Will Drafting in Gujarat: Legal Online Will Making Help",
     description:
-      "Draft a legally compliant Will in Gujarat. Expert lawyer assistance, Garvi Gujarat registration advice, and family business succession planning online.",
+      "Draft a legally compliant Will in Gujarat. Expert lawyer assistance, Garvi Gujarat registration advice, and family business succession.",
     url: "https://www.willdrafting.in/locations/gujarat",
     siteName: "WillDrafting.in",
     locale: "en_IN",
@@ -63,7 +63,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Will Drafting in Gujarat: Legal Online Will Making Help",
     description:
-      "Draft a legally compliant Will in Gujarat. Expert lawyer assistance, Garvi Gujarat registration advice, and family business succession planning online.",
+      "Draft a legally compliant Will in Gujarat. Expert lawyer assistance, Garvi Gujarat registration advice, and family business succession.",
     images: ["https://www.willdrafting.in/images/will-drafting-in-gujarat-og.jpg"],
   },
   robots: {
@@ -143,7 +143,7 @@ export default function GujaratLocationPage() {
         url: canonicalUrl,
         name: "Will Drafting in Gujarat: Legal Online Will Making Help",
         description:
-          "Draft a legally compliant Will in Gujarat. Expert lawyer assistance, Garvi Gujarat registration advice, and family business succession planning online.",
+          "Draft a legally compliant Will in Gujarat. Expert lawyer assistance, Garvi Gujarat registration advice, and family business succession.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -190,7 +190,7 @@ export default function GujaratLocationPage() {
         "@id": `${canonicalUrl}#legalservice`,
         name: "WillDrafting Gujarat - Business Succession & SRO Registration",
         description:
-          "Professional Will drafting, advocate verification, Garvi Gujarat SRO registration, and business succession planning across Ahmedabad, Surat, Vadodara, and Rajkot.",
+          "Professional Will drafting, advocate verification, Garvi Gujarat SRO registration, and business succession planning across Ahmedabad, Surat.",
         url: canonicalUrl,
         image: imageUrl,
         email: "hello@willdrafting.in",

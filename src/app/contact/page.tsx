@@ -30,7 +30,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Will Drafting Legal Consultation India - Contact Estate Planning Lawyers | WillDrafting.in",
     description:
-      "Book a confidential Will drafting legal consultation in India with AMA Legal Solutions. Get expert estate planning, NRI Will, HUF coparcenary, and Sub-Registrar registration assistance.",
+      "Book a confidential Will drafting legal consultation in India with AMA Legal Solutions. Get expert estate planning, NRI Will, HUF coparcenary.",
     url: "https://www.willdrafting.in/contact",
     siteName: "WillDrafting.in",
     locale: "en_IN",
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Will Drafting Legal Consultation India - Contact Estate Planning Lawyers | WillDrafting.in",
     description:
-      "Book a confidential Will drafting legal consultation in India with AMA Legal Solutions. Get expert estate planning, NRI Will, HUF coparcenary, and Sub-Registrar registration assistance.",
+      "Book a confidential Will drafting legal consultation in India with AMA Legal Solutions. Get expert estate planning, NRI Will, HUF coparcenary.",
     images: ["/desktopusp.jpg"],
   },
   robots: {
@@ -134,9 +134,9 @@ export default function ContactPage() {
 
           {/* Contact Info Column */}
           <div className="lg:col-span-6 flex flex-col order-2 lg:order-1 pt-6 lg:pt-0 border-t border-neutral-200/70 lg:border-t-0">
-            <h2 className="hidden lg:block text-2xl sm:text-3xl lg:text-[2.25rem] font-medium leading-[1.22] tracking-[-0.015em] text-[#111827] mb-6">
+            <p className="hidden lg:block text-2xl sm:text-3xl lg:text-[2.25rem] font-medium leading-[1.22] tracking-[-0.015em] text-[#111827] mb-6">
               Have questions about making a Will in India? Tell us a little about what you need, and our estate planning advocates will help you take the next step.
-            </h2>
+            </p>
 
             <p className="text-[14px] sm:text-[15px] leading-relaxed text-[#4B5563] mb-8 sm:mb-10 max-w-[540px]">
               Whether you need online Will drafting, NRI cross-border estate planning, HUF &amp; ancestral property guidance, or Sub-Registrar Will registration assistance in India, our advisory desk at <strong className="font-semibold text-[#111827]">AMA Legal Solutions</strong> is here to make the process simple and clear.

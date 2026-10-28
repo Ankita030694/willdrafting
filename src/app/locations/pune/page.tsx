@@ -183,7 +183,7 @@ export default function PuneLocationPage() {
         "@id": `${canonicalUrl}#legalservice`,
         name: "WillDrafting Pune - Legal Estate Planning & SRO Registration",
         description:
-          "Professional Will drafting, advocate verification, IGR Maharashtra Sarita registration, and doorstep execution support across Pune, PCMC, and Haveli.",
+          "Professional Will drafting, advocate verification, IGR Maharashtra Sarita registration, and doorstep execution support across Pune, PCMC, and.",
         url: canonicalUrl,
         image: imageUrl,
         telephone: "+91-8700343611",

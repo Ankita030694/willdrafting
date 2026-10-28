@@ -308,8 +308,8 @@ export default function AgraLocationClient({ faqs }: Props) {
                 <Image
                   src="/images/will-drafting-in-agra.jpg"
                   alt="Online Will Drafting and Registration Services in Agra"
-                  fill
-                  className="object-contain group-hover:scale-105 transition-transform duration-500"
+                  width={1200} height={675}
+                  className="absolute inset-0 w-full h-full object-contain group-hover:scale-105 transition-transform duration-500"
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 42vw"
                   priority
                 />
@@ -1884,8 +1884,8 @@ export default function AgraLocationClient({ faqs }: Props) {
               <Image
                 src="/images/will-drafting-in-agra.jpg"
                 alt="High Resolution Visual Blueprint: Agra Will Drafting and SRO Registration"
-                fill
-                className="object-contain"
+                width={1200} height={675}
+                className="absolute inset-0 w-full h-full object-contain"
                 sizes="(max-width: 1200px) 95vw, 1000px"
               />
             </div>

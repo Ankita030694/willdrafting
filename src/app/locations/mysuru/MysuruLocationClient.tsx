@@ -279,9 +279,9 @@ export default function MysuruLocationClient({ faqs }: Props) {
                 <Image
                   src="/images/will-drafting-in-mysuru.jpg"
                   alt="Senior Indian advocate advising retiree clients on legal Will drafting in Mysuru Karnataka"
-                  fill
+                  width={1200} height={675}
                   priority
-                  className="object-cover transition-transform duration-500 group-hover:scale-105"
+                  className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent pointer-events-none" />
                 <div className="absolute bottom-3 left-3 right-3 flex items-center justify-between text-xs text-white/90 bg-black/40 backdrop-blur-xs px-3 py-1.5 rounded-xl border border-white/10">
@@ -1815,8 +1815,8 @@ export default function MysuruLocationClient({ faqs }: Props) {
               <Image
                 src="/images/will-drafting-in-mysuru.jpg"
                 alt="High Resolution Visual Blueprint: Mysuru Will Drafting and Probate Support"
-                fill
-                className="object-contain"
+                width={1200} height={675}
+                className="absolute inset-0 w-full h-full object-contain"
               />
             </div>
           </div>

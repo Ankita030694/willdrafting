@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     absolute: "Testamentary Trust Clause in Will Format | WillDrafting", // exactly 55 characters
   },
   description:
-    "Download testamentary trust clause in will format india under Indian Trusts Act. Staggered milestone payouts at 18, 21, 25 for minor child & special needs.", // exactly 155 characters
+    "Download testamentary trust clause in will format india under Indian Trusts Act. Staggered milestone payouts at 18, 21, 25 for minor child &.", // exactly 155 characters
   keywords: [
     "testamentary trust clause in will format india",
     "minor child trust clause in will india",
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Testamentary Trust Clause in Will Format | WillDrafting",
     description:
-      "Download testamentary trust clause in will format india under Indian Trusts Act. Staggered milestone payouts at 18, 21, 25 for minor child & special needs.",
+      "Download testamentary trust clause in will format india under Indian Trusts Act. Staggered milestone payouts at 18, 21, 25 for minor child &.",
     url: "https://www.willdrafting.in/templates/testamentary-trust-clause-minor-child-will-format",
     siteName: "WillDrafting.in",
     locale: "en_IN",
@@ -53,7 +53,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Testamentary Trust Clause in Will Format | WillDrafting",
     description:
-      "Download testamentary trust clause in will format india under Indian Trusts Act. Staggered milestone payouts at 18, 21, 25 for minor child & special needs.",
+      "Download testamentary trust clause in will format india under Indian Trusts Act. Staggered milestone payouts at 18, 21, 25 for minor child &.",
     images: ["https://www.willdrafting.in/images/testamentary-trust-clause-minor-child-will-format-og.jpg"],
   },
   robots: {
@@ -92,7 +92,7 @@ export default function TestamentaryTrustClausePage() {
         url: canonicalUrl,
         name: "Testamentary Trust Clause in Will Format | WillDrafting",
         description:
-          "Download testamentary trust clause in will format india under Indian Trusts Act. Staggered milestone payouts at 18, 21, 25 for minor child & special needs.",
+          "Download testamentary trust clause in will format india under Indian Trusts Act. Staggered milestone payouts at 18, 21, 25 for minor child &.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -130,7 +130,7 @@ export default function TestamentaryTrustClausePage() {
         name: "Testamentary Trust Clause for Minor Children in Will Format India",
         url: canonicalUrl,
         description:
-          "Lawyer-drafted testamentary trust clause for minor children and special needs dependents under Section 5 of the Indian Trusts Act, 1882 and Indian Succession Act, 1925, featuring trustee fiduciary powers, milestone payouts at ages 18, 21, and 25, and spendthrift protection.",
+          "Lawyer-drafted testamentary trust clause for minor children and special needs dependents under Section 5 of the Indian Trusts Act, 1882 and.",
         fileFormat: "text/html",
         isAccessibleForFree: true,
         image: imageUrl,

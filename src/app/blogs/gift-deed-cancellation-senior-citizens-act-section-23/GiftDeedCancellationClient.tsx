@@ -846,9 +846,9 @@ export default function GiftDeedCancellationClient() {
                 <div className="relative w-full aspect-video">
                   <Image
                     src="/images/gift-deed-cancellation-senior-citizens-act-section-23.jpg"
-                    alt="Can Gift Deed Be Cancelled by Parents Under Senior Citizens Act Section 23 - Urmila Dixit Precedent"
-                    fill
-                    className="object-cover group-hover:scale-[1.01] transition-transform duration-300"
+                    alt="Can Gift Deed Be Cancelled by Parents Under Senior Citizens Act Section 23 - Urmila"
+                    width={1200} height={675}
+                    className="absolute inset-0 w-full h-full object-cover group-hover:scale-[1.01] transition-transform duration-300"
                     priority
                   />
                 </div>
@@ -1560,7 +1560,7 @@ export default function GiftDeedCancellationClient() {
                   {[
                     {
                       name: "Supreme Court of India Judgments",
-                      url: "https://main.sci.gov.in/judgments",
+                      url: "https://www.sci.gov.in/judgments",
                     },
                     {
                       name: "India Code Legislative Repository",
@@ -1842,8 +1842,8 @@ export default function GiftDeedCancellationClient() {
               <Image
                 src="/images/gift-deed-cancellation-senior-citizens-act-section-23.jpg"
                 alt="Can Gift Deed Be Cancelled by Parents Under Senior Citizens Act Section 23"
-                fill
-                className="object-contain"
+                width={1200} height={675}
+                className="absolute inset-0 w-full h-full object-contain"
               />
             </div>
             <div className="p-4 bg-slate-50 border-t border-slate-200 text-xs text-slate-600 flex items-center justify-between">

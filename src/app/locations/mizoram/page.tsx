@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     absolute: "Will Drafting in Mizoram: Online Will & Succession Guide",
   },
   description:
-    "Draft a valid Will in Mizoram. Guidance on Mizo customary law, Mizo Inheritance Act provisions, and Land Settlement Certificate (LSC) property succession.",
+    "Draft a valid Will in Mizoram. Guidance on Mizo customary law, Mizo Inheritance Act provisions, and Land Settlement Certificate (LSC) property.",
   keywords: [
     "will drafting in mizoram",
     "mizo customary inheritance will",
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Will Drafting in Mizoram: Online Will & Succession Guide",
     description:
-      "Draft a valid Will in Mizoram. Guidance on Mizo customary law, Mizo Inheritance Act provisions, and Land Settlement Certificate (LSC) property succession.",
+      "Draft a valid Will in Mizoram. Guidance on Mizo customary law, Mizo Inheritance Act provisions, and Land Settlement Certificate (LSC) property.",
     url: "https://www.willdrafting.in/locations/mizoram",
     siteName: "WillDrafting.in",
     locale: "en_IN",
@@ -60,7 +60,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Will Drafting in Mizoram: Online Will & Succession Guide",
     description:
-      "Draft a valid Will in Mizoram. Guidance on Mizo customary law, Mizo Inheritance Act provisions, and Land Settlement Certificate (LSC) property succession.",
+      "Draft a valid Will in Mizoram. Guidance on Mizo customary law, Mizo Inheritance Act provisions, and Land Settlement Certificate (LSC) property.",
     images: ["https://www.willdrafting.in/images/will-drafting-in-mizoram-og.jpg"],
   },
   robots: {
@@ -140,7 +140,7 @@ export default function MizoramLocationPage() {
         url: canonicalUrl,
         name: "Will Drafting in Mizoram: Online Will & Succession Guide",
         description:
-          "Draft a valid Will in Mizoram. Guidance on Mizo customary law, Mizo Inheritance Act provisions, and Land Settlement Certificate (LSC) property succession.",
+          "Draft a valid Will in Mizoram. Guidance on Mizo customary law, Mizo Inheritance Act provisions, and Land Settlement Certificate (LSC) property.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -187,7 +187,7 @@ export default function MizoramLocationPage() {
         "@id": `${canonicalUrl}#legalservice`,
         name: "WillDrafting Mizoram - Estate Planning & SRO Registration",
         description:
-          "Professional Will drafting, advocate verification, Land Settlement Certificate (LSC) succession, and Sub-Registrar execution support across Mizoram, Aizawl, Lunglei, and Champhai.",
+          "Professional Will drafting, advocate verification, Land Settlement Certificate (LSC) succession, and Sub-Registrar execution support across.",
         url: canonicalUrl,
         image: imageUrl,
         email: "hello@willdrafting.in",

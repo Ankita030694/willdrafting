@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     absolute: "Will Drafting in Punjab: Online Will & NRI Estate Guide",
   },
   description:
-    "Draft a valid Will in Punjab. Expert guidance for NRI ancestral property protection, NGDRS Punjab portal registration, and Jamabandi fard mutation.",
+    "Draft a valid Will in Punjab. Expert guidance for NRI ancestral property protection, NGDRS Punjab portal registration, and Jamabandi fard.",
   keywords: [
     "will drafting in punjab",
     "nri will punjab",
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Will Drafting in Punjab: Online Will & NRI Estate Guide",
     description:
-      "Draft a valid Will in Punjab. Expert guidance for NRI ancestral property protection, NGDRS Punjab portal registration, and Jamabandi fard mutation.",
+      "Draft a valid Will in Punjab. Expert guidance for NRI ancestral property protection, NGDRS Punjab portal registration, and Jamabandi fard.",
     url: "https://www.willdrafting.in/locations/punjab",
     siteName: "WillDrafting.in",
     locale: "en_IN",
@@ -60,7 +60,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Will Drafting in Punjab: Online Will & NRI Estate Guide",
     description:
-      "Draft a valid Will in Punjab. Expert guidance for NRI ancestral property protection, NGDRS Punjab portal registration, and Jamabandi fard mutation.",
+      "Draft a valid Will in Punjab. Expert guidance for NRI ancestral property protection, NGDRS Punjab portal registration, and Jamabandi fard.",
     images: ["https://www.willdrafting.in/images/will-drafting-in-punjab-og.jpg"],
   },
   robots: {
@@ -140,7 +140,7 @@ export default function PunjabLocationPage() {
         url: canonicalUrl,
         name: "Will Drafting in Punjab: Online Will & NRI Estate Guide",
         description:
-          "Draft a valid Will in Punjab. Expert guidance for NRI ancestral property protection, NGDRS Punjab portal registration, and Jamabandi fard mutation.",
+          "Draft a valid Will in Punjab. Expert guidance for NRI ancestral property protection, NGDRS Punjab portal registration, and Jamabandi fard.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -187,7 +187,7 @@ export default function PunjabLocationPage() {
         "@id": `${canonicalUrl}#legalservice`,
         name: "WillDrafting Punjab - NRI Estate Planning & NGDRS Registration",
         description:
-          "Professional Will drafting, advocate verification, NGDRS Punjab SRO registration, and NRI ancestral farmland protection across Ludhiana, Amritsar, Jalandhar, and SAS Nagar Mohali.",
+          "Professional Will drafting, advocate verification, NGDRS Punjab SRO registration, and NRI ancestral farmland protection across Ludhiana.",
         url: canonicalUrl,
         image: imageUrl,
         email: "hello@willdrafting.in",

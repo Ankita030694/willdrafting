@@ -759,9 +759,9 @@ export default function SecondWifeChildrenRightsClient() {
                   <Image
                     src="/images/second-wife-children-property-rights-india.jpg"
                     alt="Second Wife and Children Property Rights in India Legal Framework and Court Precedents"
-                    fill
+                    width={1200} height={675}
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 70vw, 850px"
-                    className="object-cover object-center group-hover:scale-[1.01] transition-transform duration-300"
+                    className="absolute inset-0 w-full h-full object-cover object-center group-hover:scale-[1.01] transition-transform duration-300"
                     priority
                   />
                   <div className="absolute inset-0 bg-black/10 group-hover:bg-black/20 transition-colors flex items-end justify-between p-4">
@@ -1522,8 +1522,8 @@ export default function SecondWifeChildrenRightsClient() {
               <Image
                 src="/images/second-wife-children-property-rights-india.jpg"
                 alt="Second Wife and Children Property Rights in India Full Diagram"
-                fill
-                className="object-contain"
+                width={1200} height={675}
+                className="absolute inset-0 w-full h-full object-contain"
               />
             </div>
             <div className="p-4 bg-slate-800 text-xs text-slate-300 text-center">

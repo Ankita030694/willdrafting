@@ -1118,8 +1118,8 @@ I, [Name of Petitioner / Executor], do hereby declare that the statements made i
                 <Image
                   src="/images/probate-court-fee-timeline-calculator-og.jpg"
                   alt="Probate Court Fee and Timeline Calculator India - State Ad Valorem Slabs and Caps"
-                  fill
-                  className="object-cover"
+                  width={1200} height={675}
+                  className="absolute inset-0 w-full h-full object-cover"
                   sizes="(max-width: 1200px) 100vw, 1200px"
                   priority
                 />
@@ -1840,7 +1840,7 @@ I, [Name of Petitioner / Executor], do hereby declare that the statements made i
 
                 <div className="pt-2 border-t border-slate-100 flex flex-wrap gap-3">
                   <a
-                    href="https://bombayhighcourt.nic.in"
+                    href="https://igrmaharashtra.gov.in"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-blue-50 text-blue-800 hover:bg-blue-100 font-semibold"

@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     absolute: "Will Format in India: Free Legal Template | WillDrafting",
   },
   description:
-    "Download a legally valid Will format in India. Plain paper template with Section 63 witness rules, property schedules, and lawyer review at WillDrafting.",
+    "Download a legally valid Will format in India. Plain paper template with Section 63 witness rules, property schedules, and lawyer review at.",
   keywords: [
     "will format in india",
     "will format pdf",
@@ -30,13 +30,21 @@ export const metadata: Metadata = {
     languages: {
       "en-IN": "https://www.willdrafting.in/templates/will-format-india",
       "hi-IN": "https://www.willdrafting.in/templates/will-format-hindi",
+      "mr-IN": "https://www.willdrafting.in/templates/will-format-marathi-mrutyupatra",
+      "gu-IN": "https://www.willdrafting.in/templates/will-format-gujarati-vasiyatnama",
+      "pa-IN": "https://www.willdrafting.in/templates/will-format-punjabi-vasiyatnama",
+      "bn-IN": "https://www.willdrafting.in/templates/will-format-bengali-ichchapatra",
+      "ta-IN": "https://www.willdrafting.in/templates/will-format-tamil-uyil-sasanam",
+      "te-IN": "https://www.willdrafting.in/templates/will-format-telugu-veelunama",
+      "kn-IN": "https://www.willdrafting.in/templates/will-format-kannada-uyilu",
+      "ml-IN": "https://www.willdrafting.in/templates/will-format-malayalam-maranapathram",
       "x-default": "https://www.willdrafting.in/templates/will-format-india",
     },
   },
   openGraph: {
     title: "Will Format in India: Free Legal Template | WillDrafting",
     description:
-      "Download a legally valid Will format in India. Plain paper template with Section 63 witness rules, property schedules, and lawyer review at WillDrafting.",
+      "Download a legally valid Will format in India. Plain paper template with Section 63 witness rules, property schedules, and lawyer review at.",
     url: "https://www.willdrafting.in/templates/will-format-india",
     siteName: "WillDrafting.in",
     locale: "en_IN",
@@ -54,7 +62,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Will Format in India: Free Legal Template | WillDrafting",
     description:
-      "Download a legally valid Will format in India. Plain paper template with Section 63 witness rules, property schedules, and lawyer review at WillDrafting.",
+      "Download a legally valid Will format in India. Plain paper template with Section 63 witness rules, property schedules, and lawyer review at.",
     images: ["https://www.willdrafting.in/images/will-format-india-og.jpg"],
   },
   robots: {
@@ -91,7 +99,7 @@ export default function WillFormatIndiaPage() {
         url: canonicalUrl,
         name: "Will Format in India: Free Legal Template | WillDrafting",
         description:
-          "Download a legally valid Will format in India. Plain paper template with Section 63 witness rules, property schedules, and lawyer review at WillDrafting.",
+          "Download a legally valid Will format in India. Plain paper template with Section 63 witness rules, property schedules, and lawyer review at.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -128,7 +136,7 @@ export default function WillFormatIndiaPage() {
         "@id": `${canonicalUrl}#howto`,
         name: "How to Draft and Execute a Legally Valid Will in India",
         description:
-          "Step-by-step statutory procedure to execute a legally enforceable Will on plain paper in India under Section 63 of the Indian Succession Act, 1925.",
+          "Step-by-step statutory procedure to execute a legally enforceable Will on plain paper in India under Section 63 of the Indian Succession Act.",
         image: imageUrl,
         totalTime: "PT15M",
         supply: [

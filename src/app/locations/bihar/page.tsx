@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     absolute: "Will Drafting in Bihar: Online Will Registration Guide",
   },
   description:
-    "Create a valid Will in Bihar with advocate assistance. Guidance on Bihar e-Nibandhan portal, Bihar Bhumi Dakhil Kharij mutation, and ancestral land rules.",
+    "Create a valid Will in Bihar with advocate assistance. Guidance on Bihar e-Nibandhan portal, Bihar Bhumi Dakhil Kharij mutation, and ancestral.",
   keywords: [
     "will drafting in bihar",
     "will registration bihar e-nibandhan",
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Will Drafting in Bihar: Online Will Registration Guide",
     description:
-      "Create a valid Will in Bihar with advocate assistance. Guidance on Bihar e-Nibandhan portal, Bihar Bhumi Dakhil Kharij mutation, and ancestral land rules.",
+      "Create a valid Will in Bihar with advocate assistance. Guidance on Bihar e-Nibandhan portal, Bihar Bhumi Dakhil Kharij mutation, and ancestral.",
     url: "https://www.willdrafting.in/locations/bihar",
     siteName: "WillDrafting.in",
     locale: "en_IN",
@@ -63,7 +63,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Will Drafting in Bihar: Online Will Registration Guide",
     description:
-      "Create a valid Will in Bihar with advocate assistance. Guidance on Bihar e-Nibandhan portal, Bihar Bhumi Dakhil Kharij mutation, and ancestral land rules.",
+      "Create a valid Will in Bihar with advocate assistance. Guidance on Bihar e-Nibandhan portal, Bihar Bhumi Dakhil Kharij mutation, and ancestral.",
     images: ["https://www.willdrafting.in/images/will-drafting-in-bihar.jpg"],
   },
   robots: {
@@ -143,7 +143,7 @@ export default function BiharLocationPage() {
         url: canonicalUrl,
         name: "Will Drafting in Bihar: Online Will Registration Guide",
         description:
-          "Create a valid Will in Bihar with advocate assistance. Guidance on Bihar e-Nibandhan portal, Bihar Bhumi Dakhil Kharij mutation, and ancestral land rules.",
+          "Create a valid Will in Bihar with advocate assistance. Guidance on Bihar e-Nibandhan portal, Bihar Bhumi Dakhil Kharij mutation, and ancestral.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -190,7 +190,7 @@ export default function BiharLocationPage() {
         "@id": `${canonicalUrl}#legalservice`,
         name: "WillDrafting Bihar - Land Succession & SRO Registration",
         description:
-          "Professional Will drafting, advocate verification, Bihar e-Nibandhan portal registration, and doorstep execution support across Patna, Gaya, Muzaffarpur, Bhagalpur, and all districts of Bihar.",
+          "Professional Will drafting, advocate verification, Bihar e-Nibandhan portal registration, and doorstep execution support across Patna, Gaya.",
         url: canonicalUrl,
         image: imageUrl,
         email: "hello@willdrafting.in",

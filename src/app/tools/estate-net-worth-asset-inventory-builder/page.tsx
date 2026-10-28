@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     absolute: "Asset Inventory List for Family India | WillDrafting.in", // exactly 54 characters
   },
   description:
-    "Build an asset inventory list for family India under Indian Succession Act. Catalog bank accounts, demat, policies and real estate into a private dossier.", // exactly 154 characters
+    "Build an asset inventory list for family India under Indian Succession Act. Catalog bank accounts, demat, policies and real estate into a.", // exactly 154 characters
   keywords: [
     "asset inventory list for family india",
     "financial dossier for family in case of death",
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Asset Inventory List for Family India | WillDrafting.in",
     description:
-      "Build an asset inventory list for family India under Indian Succession Act. Catalog bank accounts, demat, policies and real estate into a private dossier.",
+      "Build an asset inventory list for family India under Indian Succession Act. Catalog bank accounts, demat, policies and real estate into a.",
     url: "https://www.willdrafting.in/tools/estate-net-worth-asset-inventory-builder",
     siteName: "WillDrafting.in",
     locale: "en_IN",
@@ -53,7 +53,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Asset Inventory List for Family India | WillDrafting.in",
     description:
-      "Build an asset inventory list for family India under Indian Succession Act. Catalog bank accounts, demat, policies and real estate into a private dossier.",
+      "Build an asset inventory list for family India under Indian Succession Act. Catalog bank accounts, demat, policies and real estate into a.",
     images: ["https://www.willdrafting.in/images/estate-net-worth-asset-inventory-builder-og.jpg"],
   },
   robots: {
@@ -90,7 +90,7 @@ export default function EstateAssetInventoryPage() {
         url: canonicalUrl,
         name: "Asset Inventory List for Family India | WillDrafting.in",
         description:
-          "Build an asset inventory list for family India under Indian Succession Act. Catalog bank accounts, demat, policies and real estate into a private dossier.",
+          "Build an asset inventory list for family India under Indian Succession Act. Catalog bank accounts, demat, policies and real estate into a.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -130,7 +130,7 @@ export default function EstateAssetInventoryPage() {
         applicationCategory: "FinanceApplication",
         operatingSystem: "All",
         description:
-          "100% browser-local, zero-server private asset inventory and emergency dossier builder under Indian Succession Act 1925, protecting family wealth against RBI UDGAM and IEPF forfeiture.",
+          "100% browser-local, zero-server private asset inventory and emergency dossier builder under Indian Succession Act 1925, protecting family.",
         image: imageUrl,
         offers: {
           "@type": "Offer",

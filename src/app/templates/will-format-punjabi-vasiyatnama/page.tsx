@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     absolute: "ਵਸੀਅਤਨਾਮਾ ਫਾਰਮੈਟ ਪੰਜਾਬੀ: Punjabi Will Format | WillDrafting", // exactly 59 characters
   },
   description:
-    "Download valid ਵਸੀਅਤਨਾਮਾ ਫਾਰਮੈਟ ਪੰਜਾਬੀ (will format in punjabi) under Indian Succession Act 1925 with agricultural land clauses and Punjab SRO rules.", // exactly 149 characters
+    "Download valid ਵਸੀਅਤਨਾਮਾ ਫਾਰਮੈਟ ਪੰਜਾਬੀ (will format in punjabi) under Indian Succession Act 1925 with agricultural land clauses and Punjab SRO.", // exactly 149 characters
   keywords: [
     "ਵਸੀਅਤਨਾਮਾ ਫਾਰਮੈਟ ਪੰਜਾਬੀ",
     "will format in punjabi",
@@ -29,15 +29,23 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://www.willdrafting.in/templates/will-format-punjabi-vasiyatnama",
     languages: {
-      "pa-IN": "https://www.willdrafting.in/templates/will-format-punjabi-vasiyatnama",
       "en-IN": "https://www.willdrafting.in/templates/will-format-india",
-      "x-default": "https://www.willdrafting.in/templates/will-format-punjabi-vasiyatnama",
+      "hi-IN": "https://www.willdrafting.in/templates/will-format-hindi",
+      "mr-IN": "https://www.willdrafting.in/templates/will-format-marathi-mrutyupatra",
+      "gu-IN": "https://www.willdrafting.in/templates/will-format-gujarati-vasiyatnama",
+      "pa-IN": "https://www.willdrafting.in/templates/will-format-punjabi-vasiyatnama",
+      "bn-IN": "https://www.willdrafting.in/templates/will-format-bengali-ichchapatra",
+      "ta-IN": "https://www.willdrafting.in/templates/will-format-tamil-uyil-sasanam",
+      "te-IN": "https://www.willdrafting.in/templates/will-format-telugu-veelunama",
+      "kn-IN": "https://www.willdrafting.in/templates/will-format-kannada-uyilu",
+      "ml-IN": "https://www.willdrafting.in/templates/will-format-malayalam-maranapathram",
+      "x-default": "https://www.willdrafting.in/templates/will-format-india",
     },
   },
   openGraph: {
     title: "ਵਸੀਅਤਨਾਮਾ ਫਾਰਮੈਟ ਪੰਜਾਬੀ: Punjabi Will Format | WillDrafting",
     description:
-      "Download valid ਵਸੀਅਤਨਾਮਾ ਫਾਰਮੈਟ ਪੰਜਾਬੀ (will format in punjabi) under Indian Succession Act 1925 with agricultural land clauses and Punjab SRO rules.",
+      "Download valid ਵਸੀਅਤਨਾਮਾ ਫਾਰਮੈਟ ਪੰਜਾਬੀ (will format in punjabi) under Indian Succession Act 1925 with agricultural land clauses and Punjab SRO.",
     url: "https://www.willdrafting.in/templates/will-format-punjabi-vasiyatnama",
     siteName: "WillDrafting.in",
     locale: "pa_IN",
@@ -56,7 +64,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "ਵਸੀਅਤਨਾਮਾ ਫਾਰਮੈਟ ਪੰਜਾਬੀ: Punjabi Will Format | WillDrafting",
     description:
-      "Download valid ਵਸੀਅਤਨਾਮਾ ਫਾਰਮੈਟ ਪੰਜਾਬੀ (will format in punjabi) under Indian Succession Act 1925 with agricultural land clauses and Punjab SRO rules.",
+      "Download valid ਵਸੀਅਤਨਾਮਾ ਫਾਰਮੈਟ ਪੰਜਾਬੀ (will format in punjabi) under Indian Succession Act 1925 with agricultural land clauses and Punjab SRO.",
     images: ["https://www.willdrafting.in/images/will-format-punjabi-vasiyatnama-og.jpg"],
   },
   robots: {
@@ -93,7 +101,7 @@ export default function WillFormatPunjabiPage() {
         url: canonicalUrl,
         name: "ਵਸੀਅਤਨਾਮਾ ਫਾਰਮੈਟ ਪੰਜਾਬੀ: Punjabi Will Format | WillDrafting",
         description:
-          "Download valid ਵਸੀਅਤਨਾਮਾ ਫਾਰਮੈਟ ਪੰਜਾਬੀ (will format in punjabi) under Indian Succession Act 1925 with agricultural land clauses and Punjab SRO rules.",
+          "Download valid ਵਸੀਅਤਨਾਮਾ ਫਾਰਮੈਟ ਪੰਜਾਬੀ (will format in punjabi) under Indian Succession Act 1925 with agricultural land clauses and Punjab SRO.",
         inLanguage: "pa-IN",
         primaryImageOfPage: {
           "@type": "ImageObject",
@@ -139,7 +147,7 @@ export default function WillFormatPunjabiPage() {
         name: "ਕਾਨੂੰਨੀ ਵਸੀਅਤਨਾਮਾ ਫਾਰਮੈਟ ਪੰਜਾਬੀ (Punjabi Legal Will Format)",
         url: canonicalUrl,
         description:
-          "Statutory Punjabi Vasiyatnama template compliant with Section 63 of the Indian Succession Act 1925, featuring executor appointment, agricultural land schedule (Khewat/Khatauni/Khasra), NRI cross-border bequests, two witness attestation rules, and Punjab NGDRS SRO registration guidelines.",
+          "Statutory Punjabi Vasiyatnama template compliant with Section 63 of the Indian Succession Act 1925, featuring executor appointment.",
         fileFormat: "text/html",
         isAccessibleForFree: true,
         image: imageUrl,
@@ -158,7 +166,7 @@ export default function WillFormatPunjabiPage() {
         "@id": `${canonicalUrl}#article`,
         headline: "ਵਸੀਅਤਨਾਮਾ ਫਾਰਮੈਟ ਪੰਜਾਬੀ: ਕਾਨੂੰਨੀ ਵਸੀਅਤ ਨਮੂਨਾ ਅਤੇ ਨਿਯਮ",
         description:
-          "Complete legal guide, printable Unicode Gurmukhi Punjabi Vasiyatnama format, agricultural land schedule (Khewat, Khatauni, Khasra), NRI inheritance guidelines, and Punjab Sub-Registrar registration procedure under Indian Succession Act 1925.",
+          "Complete legal guide, printable Unicode Gurmukhi Punjabi Vasiyatnama format, agricultural land schedule (Khewat, Khatauni, Khasra), NRI.",
         image: imageUrl,
         inLanguage: "pa-IN",
         mainEntityOfPage: canonicalUrl,

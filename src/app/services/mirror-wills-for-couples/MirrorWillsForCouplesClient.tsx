@@ -538,8 +538,8 @@ export default function MirrorWillsForCouplesClient() {
                   <Image
                     src="/images/mirror-wills-for-couples-og.jpg"
                     alt="Visual Blueprint: Anatomy of Coordinated Indian Mirror Wills for Couples"
-                    fill
-                    className="object-contain hover:scale-[1.01] transition-transform duration-300"
+                    width={1200} height={675}
+                    className="absolute inset-0 w-full h-full object-contain hover:scale-[1.01] transition-transform duration-300"
                     priority
                   />
                 </div>
@@ -1218,7 +1218,7 @@ export default function MirrorWillsForCouplesClient() {
                     <span>India Code: Indian Succession Act 1925</span>
                   </a>
                   <a
-                    href="https://main.sci.gov.in"
+                    href="https://www.sci.gov.in"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-blue-50 hover:bg-blue-100 text-blue-900 text-xs font-semibold transition-all"
@@ -1244,13 +1244,13 @@ export default function MirrorWillsForCouplesClient() {
                 </span>
                 <div className="flex flex-wrap gap-2">
                   <Link
-                    href="/service/will-registration"
+                    href="/services/will-registration"
                     className="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-800 text-xs font-semibold transition-all"
                   >
                     <span>Will Registration Service</span>
                   </Link>
                   <Link
-                    href="/service/probate-lawyer"
+                    href="/services/probate-lawyer"
                     className="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-800 text-xs font-semibold transition-all"
                   >
                     <span>Probate Lawyers India</span>
@@ -1387,7 +1387,7 @@ export default function MirrorWillsForCouplesClient() {
               </div>
               
               <Link
-                href="/service/will-registration"
+                href="/services/will-registration"
                 className="block p-2.5 rounded-xl border border-slate-100 hover:border-rose-200 hover:bg-rose-50/40 transition-all"
               >
                 <span className="font-bold text-xs text-slate-900 block">Will Registration Service</span>
@@ -1423,7 +1423,7 @@ export default function MirrorWillsForCouplesClient() {
               <span className="text-xs font-bold text-[#172228] block mb-2">Related WillDrafting Guides:</span>
               <div className="flex flex-wrap gap-2">
                 <Link
-                  href="/service/will-registration"
+                  href="/services/will-registration"
                   className="text-[11px] px-3 py-1 rounded-lg bg-slate-100 text-[#172228] hover:bg-slate-200 transition-colors"
                 >
                   Will Registration Service
@@ -1480,8 +1480,8 @@ export default function MirrorWillsForCouplesClient() {
               <Image
                 src="/images/mirror-wills-for-couples-og.jpg"
                 alt="High Resolution Visual Blueprint: Mirror Wills Architecture"
-                fill
-                className="object-contain"
+                width={1200} height={675}
+                className="absolute inset-0 w-full h-full object-contain"
               />
             </div>
           </div>

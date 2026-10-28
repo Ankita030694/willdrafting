@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     absolute: "Will Drafting Charges in India | Online Will Fees",
   },
   description:
-    "Compare fixed Will drafting charges in India: ₹2,490 Online Will, ₹4,990 Lawyer-Verified Will & ₹9,990 Advocate Plan. Zero hidden fees or retainers.",
+    "Compare fixed Will drafting charges in India: ₹2,490 Online Will, ₹4,990 Lawyer-Verified Will & ₹9,990 Advocate Plan. Zero hidden fees or.",
   keywords: [
     "will drafting charges in india",
     "cost of making a will in india",
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Will Drafting Charges in India | Online Will Fees | WillDrafting.in",
     description:
-      "Compare fixed Will drafting charges in India: ₹2,490 Online Will, ₹4,990 Lawyer-Verified Will & ₹9,990 Advocate Plan. Zero hidden fees or retainers.",
+      "Compare fixed Will drafting charges in India: ₹2,490 Online Will, ₹4,990 Lawyer-Verified Will & ₹9,990 Advocate Plan. Zero hidden fees or.",
     url: "https://www.willdrafting.in/pricing",
     siteName: "WillDrafting.in",
     locale: "en_IN",
@@ -65,7 +65,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Will Drafting Charges in India | Online Will Fees | WillDrafting.in",
     description:
-      "Compare fixed Will drafting charges in India: ₹2,490 Online Will, ₹4,990 Lawyer-Verified Will & ₹9,990 Advocate Plan. Zero hidden fees or retainers.",
+      "Compare fixed Will drafting charges in India: ₹2,490 Online Will, ₹4,990 Lawyer-Verified Will & ₹9,990 Advocate Plan. Zero hidden fees or.",
     images: ["/desktopusp.jpg"],
   },
   robots: {

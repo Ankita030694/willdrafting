@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     absolute: "Will Drafting in Mysuru: Registration & Probate Law Guide",
   },
   description:
-    "Draft and register your Will in Mysuru. Expert Karnataka High Court probate guidance, MUDA asset distribution, and advocate consultation across Mysuru.",
+    "Draft and register your Will in Mysuru. Expert Karnataka High Court probate guidance, MUDA asset distribution, and advocate consultation.",
   keywords: [
     "will drafting in mysuru",
     "will drafting in gokulam",
@@ -51,7 +51,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Will Drafting in Mysuru: Registration & Probate Law Guide",
     description:
-      "Draft and register your Will in Mysuru. Expert Karnataka High Court probate guidance, MUDA asset distribution, and advocate consultation across Mysuru.",
+      "Draft and register your Will in Mysuru. Expert Karnataka High Court probate guidance, MUDA asset distribution, and advocate consultation.",
     url: "https://www.willdrafting.in/locations/mysuru",
     siteName: "WillDrafting.in",
     locale: "en_IN",
@@ -69,7 +69,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Will Drafting in Mysuru: Registration & Probate Law Guide",
     description:
-      "Draft and register your Will in Mysuru. Expert Karnataka High Court probate guidance, MUDA asset distribution, and advocate consultation across Mysuru.",
+      "Draft and register your Will in Mysuru. Expert Karnataka High Court probate guidance, MUDA asset distribution, and advocate consultation.",
     images: ["https://www.willdrafting.in/images/will-drafting-in-mysuru.jpg"],
   },
   robots: {
@@ -141,7 +141,7 @@ export default function MysuruLocationPage() {
         url: canonicalUrl,
         name: "Will Drafting in Mysuru: Registration & Probate Law Guide",
         description:
-          "Draft and register your Will in Mysuru. Expert Karnataka High Court probate guidance, MUDA asset distribution, and advocate consultation across Mysuru.",
+          "Draft and register your Will in Mysuru. Expert Karnataka High Court probate guidance, MUDA asset distribution, and advocate consultation.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -188,7 +188,7 @@ export default function MysuruLocationPage() {
         "@id": `${canonicalUrl}#legalservice`,
         name: "WillDrafting Mysuru - Estate Planning, Registration & Probate Guidance",
         description:
-          "Professional Will drafting, lawyer verification, Karnataka Kaveri 2.0 Sub-Registrar registration, and Karnataka High Court probate guidance across Mysuru.",
+          "Professional Will drafting, lawyer verification, Karnataka Kaveri 2.0 Sub-Registrar registration, and Karnataka High Court probate guidance.",
         url: canonicalUrl,
         image: imageUrl,
         telephone: "+91-8700343611",

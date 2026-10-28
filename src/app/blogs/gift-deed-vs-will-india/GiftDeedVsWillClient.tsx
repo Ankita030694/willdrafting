@@ -562,8 +562,8 @@ export default function GiftDeedVsWillClient() {
                   <Image
                     src="/images/gift-deed-vs-will-india.jpg"
                     alt="Gift Deed vs Will in India Legal Comparison Blueprint"
-                    fill
-                    className="object-cover group-hover:scale-[1.02] transition-transform duration-300"
+                    width={1200} height={675}
+                    className="absolute inset-0 w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-300"
                     sizes="(max-width: 1024px) 100vw, 850px"
                     priority
                   />
@@ -1680,8 +1680,8 @@ export default function GiftDeedVsWillClient() {
               <Image
                 src="/images/gift-deed-vs-will-india.jpg"
                 alt="Gift Deed vs Will Comparison Full View"
-                fill
-                className="object-contain"
+                width={1200} height={675}
+                className="absolute inset-0 w-full h-full object-contain"
               />
             </div>
             <p className="text-xs text-slate-500 text-center">

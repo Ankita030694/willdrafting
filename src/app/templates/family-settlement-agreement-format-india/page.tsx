@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     absolute: "Family Settlement Agreement Format India | WillDrafting", // exactly 54 characters
   },
   description:
-    "Download legally valid family settlement agreement format in India. Access past oral memorandum, deed templates, stamp duty rules, and Kale case law.", // exactly 151 characters
+    "Download legally valid family settlement agreement format in India. Access past oral memorandum, deed templates, stamp duty rules, and Kale.", // exactly 151 characters
   keywords: [
     "family settlement agreement format india",
     "memorandum of family settlement format word pdf",
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Family Settlement Agreement Format India | WillDrafting",
     description:
-      "Download legally valid family settlement agreement format in India. Access past oral memorandum, deed templates, stamp duty rules, and Kale case law.",
+      "Download legally valid family settlement agreement format in India. Access past oral memorandum, deed templates, stamp duty rules, and Kale.",
     url: "https://www.willdrafting.in/templates/family-settlement-agreement-format-india",
     siteName: "WillDrafting.in",
     locale: "en_IN",
@@ -53,7 +53,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Family Settlement Agreement Format India | WillDrafting",
     description:
-      "Download legally valid family settlement agreement format in India. Access past oral memorandum, deed templates, stamp duty rules, and Kale case law.",
+      "Download legally valid family settlement agreement format in India. Access past oral memorandum, deed templates, stamp duty rules, and Kale.",
     images: ["https://www.willdrafting.in/images/family-settlement-agreement-format-india-og.jpg"],
   },
   robots: {
@@ -90,7 +90,7 @@ export default function FamilySettlementAgreementPage() {
         url: canonicalUrl,
         name: "Family Settlement Agreement Format India | WillDrafting",
         description:
-          "Download legally valid family settlement agreement format in India. Access past oral memorandum, deed templates, stamp duty rules, and Kale case law.",
+          "Download legally valid family settlement agreement format in India. Access past oral memorandum, deed templates, stamp duty rules, and Kale.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -128,7 +128,7 @@ export default function FamilySettlementAgreementPage() {
         name: "Family Settlement Agreement & Memorandum Formats India",
         url: canonicalUrl,
         description:
-          "Lawyer-vetted family settlement agreement templates for Indian families dividing ancestral and self-acquired properties, featuring past oral settlement memorandum and registered partition deed formats.",
+          "Lawyer-vetted family settlement agreement templates for Indian families dividing ancestral and self-acquired properties, featuring past oral.",
         fileFormat: "text/html",
         isAccessibleForFree: true,
         image: imageUrl,

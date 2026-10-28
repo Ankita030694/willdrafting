@@ -627,9 +627,9 @@ Verified at [PLACE] on this _____ day of _______________ 20___ that the contents
                 <Image
                   src="/images/indemnity-bond-format-bank-deceased-claim-og.jpg"
                   alt="Indemnity Bond Format for Deceased Bank Account Claim Legal Template and State Stamp Duty"
-                  fill
+                  width={1200} height={675}
                   priority
-                  className="object-cover"
+                  className="absolute inset-0 w-full h-full object-cover"
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 75vw, 65vw"
                 />
               </div>

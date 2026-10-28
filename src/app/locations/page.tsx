@@ -9,16 +9,18 @@ export const dynamic = "force-dynamic";
 
 // Strict SEO compliance: Title 50–60 chars, Meta Description 140–155 chars, 0 em-dashes
 export const metadata: Metadata = {
-  title: "Will Drafting in India: 91 Cities & States Directory", // exactly 53 characters
+  title: {
+    absolute: "Will Drafting in India: 91 Cities & States Directory",
+  },
   description:
-    "Find expert online Will drafting and registration services across 91 Indian cities and states. Section 63 compliant succession lawyers across India.", // exactly 151 characters
+    "Find expert online Will drafting and registration services across 91 Indian cities and states. Section 63 compliant succession lawyers across.",
   alternates: {
     canonical: "https://www.willdrafting.in/locations",
   },
   openGraph: {
     title: "Will Drafting in India: 91 Cities & States Directory",
     description:
-      "Find expert online Will drafting and registration services across 91 Indian cities and states. Section 63 compliant succession lawyers across India.",
+      "Find expert online Will drafting and registration services across 91 Indian cities and states. Section 63 compliant succession lawyers across.",
     url: "https://www.willdrafting.in/locations",
     siteName: "WillDrafting",
     locale: "en_IN",
@@ -36,7 +38,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Will Drafting in India: 91 Cities & States Directory",
     description:
-      "Find expert online Will drafting and registration services across 91 Indian cities and states. Section 63 compliant succession lawyers across India.",
+      "Find expert online Will drafting and registration services across 91 Indian cities and states. Section 63 compliant succession lawyers across.",
     images: ["https://www.willdrafting.in/desktopusp.jpg"],
   },
   robots: {

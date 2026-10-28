@@ -79,7 +79,7 @@ export default function TestimonialsSection() {
             <Image
               src="/images/senior-couple.jpg"
               alt="Happy senior Indian couple enjoying retirement together in a lush garden"
-              fill
+              width={1200} height={675}
               style={{ objectFit: "cover" }}
             />
           </div>

@@ -680,8 +680,8 @@ NOW THEREFORE, in consideration of the Bank agreeing to pay the said proceeds to
                 <Image
                   src="/images/affidavit-of-legal-heirs-pedigree-tree-format-og.jpg"
                   alt="Legal Heir Affidavit and Pedigree Tree Format India with Hindu Succession Act Guidelines"
-                  fill
-                  className="object-cover"
+                  width={1200} height={675}
+                  className="absolute inset-0 w-full h-full object-cover"
                   priority
                   sizes="(max-width: 1024px) 100vw, 800px"
                 />

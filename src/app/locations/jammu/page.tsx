@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     absolute: "Will Drafting in Jammu: Online Will Registration Guide",
   },
   description:
-    "Draft a legally valid Will in Jammu. Complete NGDRS token booking, JDA plot transfer guidance, and family estate succession advice with experienced lawyers.",
+    "Draft a legally valid Will in Jammu. Complete NGDRS token booking, JDA plot transfer guidance, and family estate succession advice with.",
   keywords: [
     "will drafting in jammu",
     "will registration ngdrs jammu",
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Will Drafting in Jammu: Online Will Registration Guide",
     description:
-      "Draft a legally valid Will in Jammu. Complete NGDRS token booking, JDA plot transfer guidance, and family estate succession advice with experienced lawyers.",
+      "Draft a legally valid Will in Jammu. Complete NGDRS token booking, JDA plot transfer guidance, and family estate succession advice with.",
     url: "https://www.willdrafting.in/locations/jammu",
     siteName: "WillDrafting.in",
     locale: "en_IN",
@@ -65,7 +65,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Will Drafting in Jammu: Online Will Registration Guide",
     description:
-      "Draft a legally valid Will in Jammu. Complete NGDRS token booking, JDA plot transfer guidance, and family estate succession advice with experienced lawyers.",
+      "Draft a legally valid Will in Jammu. Complete NGDRS token booking, JDA plot transfer guidance, and family estate succession advice with.",
     images: ["https://www.willdrafting.in/images/will-drafting-in-jammu-og.jpg"],
   },
   robots: {
@@ -145,7 +145,7 @@ export default function JammuLocationPage() {
         url: canonicalUrl,
         name: "Will Drafting in Jammu: Online Will Registration Guide",
         description:
-          "Draft a legally valid Will in Jammu. Complete NGDRS token booking, JDA plot transfer guidance, and family estate succession advice with experienced lawyers.",
+          "Draft a legally valid Will in Jammu. Complete NGDRS token booking, JDA plot transfer guidance, and family estate succession advice with.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -192,7 +192,7 @@ export default function JammuLocationPage() {
         "@id": `${canonicalUrl}#legalservice`,
         name: "WillDrafting Jammu - Estate Planning & NGDRS Registration",
         description:
-          "Professional Will drafting, advocate verification, NGDRS J&K registration, JDA plot mutation guidance, and doorstep execution support across Jammu.",
+          "Professional Will drafting, advocate verification, NGDRS J&K registration, JDA plot mutation guidance, and doorstep execution support across.",
         url: canonicalUrl,
         image: imageUrl,
         email: "hello@willdrafting.in",

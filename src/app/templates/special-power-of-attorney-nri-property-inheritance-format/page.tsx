@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     absolute: "NRI PoA Format: Property Mutation & Probate | WillDrafting", // exactly 58 characters
   },
   description:
-    "Download legally valid NRI power of attorney format for property mutation and probate. Powers of Attorney Act compliant draft with embassy attestation.", // exactly 151 characters
+    "Download legally valid NRI power of attorney format for property mutation and probate. Powers of Attorney Act compliant draft with embassy.", // exactly 151 characters
   keywords: [
     "nri power of attorney format for property mutation and probate",
     "special poa format for nri selling inherited property india",
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "NRI PoA Format: Property Mutation & Probate | WillDrafting",
     description:
-      "Download legally valid NRI power of attorney format for property mutation and probate. Powers of Attorney Act compliant draft with embassy attestation.",
+      "Download legally valid NRI power of attorney format for property mutation and probate. Powers of Attorney Act compliant draft with embassy.",
     url: "https://www.willdrafting.in/templates/special-power-of-attorney-nri-property-inheritance-format",
     siteName: "WillDrafting.in",
     locale: "en_IN",
@@ -55,7 +55,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "NRI PoA Format: Property Mutation & Probate | WillDrafting",
     description:
-      "Download legally valid NRI power of attorney format for property mutation and probate. Powers of Attorney Act compliant draft with embassy attestation.",
+      "Download legally valid NRI power of attorney format for property mutation and probate. Powers of Attorney Act compliant draft with embassy.",
     images: ["https://www.willdrafting.in/images/special-power-of-attorney-nri-property-inheritance-format-og.jpg"],
   },
   robots: {
@@ -94,7 +94,7 @@ export default function SpecialPowerOfAttorneyPage() {
         url: canonicalUrl,
         name: "NRI PoA Format: Property Mutation & Probate | WillDrafting",
         description:
-          "Download legally valid NRI power of attorney format for property mutation and probate. Powers of Attorney Act compliant draft with embassy attestation.",
+          "Download legally valid NRI power of attorney format for property mutation and probate. Powers of Attorney Act compliant draft with embassy.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -133,7 +133,7 @@ export default function SpecialPowerOfAttorneyPage() {
         url: canonicalUrl,
         encodingFormat: "application/pdf",
         description:
-          "Statutory Special Power of Attorney template compliant with Powers of Attorney Act 1882, Registration Act 1908 Sections 32 and 33, and Indian Stamp Act Section 18 for NRI property inheritance, revenue mutation, court probate, and society transfer.",
+          "Statutory Special Power of Attorney template compliant with Powers of Attorney Act 1882, Registration Act 1908 Sections 32 and 33, and Indian.",
         image: imageUrl,
         author: {
           "@type": "LegalService",

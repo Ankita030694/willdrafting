@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     absolute: "Will Registration Service India: SRO Process | WillDrafting",
   },
   description:
-    "Complete Will registration service in India. Book SRO appointments, arrange witnesses, schedule Section 31 home visits, and protect your estate legally.",
+    "Complete Will registration service in India. Book SRO appointments, arrange witnesses, schedule Section 31 home visits, and protect your.",
   keywords: [
     "will registration service india",
     "register will at sub registrar",
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Will Registration Service India: SRO Process | WillDrafting",
     description:
-      "Complete Will registration service in India. Book SRO appointments, arrange witnesses, schedule Section 31 home visits, and protect your estate legally.",
+      "Complete Will registration service in India. Book SRO appointments, arrange witnesses, schedule Section 31 home visits, and protect your.",
     url: "https://www.willdrafting.in/services/will-registration",
     siteName: "WillDrafting.in",
     locale: "en_IN",
@@ -56,7 +56,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Will Registration Service India: SRO Process | WillDrafting",
     description:
-      "Complete Will registration service in India. Book SRO appointments, arrange witnesses, schedule Section 31 home visits, and protect your estate legally.",
+      "Complete Will registration service in India. Book SRO appointments, arrange witnesses, schedule Section 31 home visits, and protect your.",
     images: ["https://www.willdrafting.in/images/will-registration-og.jpg"],
   },
   robots: {
@@ -93,7 +93,7 @@ export default function WillRegistrationPage() {
         url: canonicalUrl,
         name: "Will Registration Service India: SRO Process | WillDrafting",
         description:
-          "Complete Will registration service in India. Book SRO appointments, arrange witnesses, schedule Section 31 home visits, and protect your estate legally.",
+          "Complete Will registration service in India. Book SRO appointments, arrange witnesses, schedule Section 31 home visits, and protect your.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",

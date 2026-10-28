@@ -333,9 +333,9 @@ export default function KochiLocationClient({ faqs }: Props) {
                 <Image
                   src="/images/will-drafting-in-kochi-og.jpg"
                   alt="Online Will Drafting and NRI Succession Support in Kochi Ernakulam"
-                  fill
+                  width={1200} height={675}
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 40vw"
-                  className="object-contain sm:object-cover group-hover:scale-105 transition-transform duration-500"
+                  className="absolute inset-0 w-full h-full object-contain sm:object-cover group-hover:scale-105 transition-transform duration-500"
                   priority
                 />
               </div>
@@ -1907,8 +1907,8 @@ export default function KochiLocationClient({ faqs }: Props) {
               <Image
                 src="/images/will-drafting-in-kochi-og.jpg"
                 alt="High Resolution Visual Blueprint: Kochi Will Drafting and PEARLS Registration"
-                fill
-                className="object-contain"
+                width={1200} height={675}
+                className="absolute inset-0 w-full h-full object-contain"
               />
             </div>
           </div>

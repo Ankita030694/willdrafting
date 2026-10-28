@@ -1422,7 +1422,7 @@ export default function AuthorityBlogsPage() {
                       >
                         AI Cover Image Ready
                       </span>
-                      <img
+                      <img width={800} height={450}
                         src={generatedImageUrl}
                         alt="AI Generated Cover"
                         style={{
@@ -1507,7 +1507,7 @@ export default function AuthorityBlogsPage() {
                         border: "1px solid rgba(23, 34, 40, 0.1)",
                       }}
                     >
-                      <img
+                      <img width={800} height={450}
                         src={imagePreview || newBlog.image}
                         alt="Cover Preview"
                         style={{
@@ -1619,7 +1619,7 @@ export default function AuthorityBlogsPage() {
                       >
                         AI Infographic Ready
                       </span>
-                      <img
+                      <img width={800} height={450}
                         src={generatedInfographicUrl}
                         alt="AI Generated Infographic"
                         style={{
@@ -1725,7 +1725,7 @@ export default function AuthorityBlogsPage() {
                         border: "1px solid rgba(23, 34, 40, 0.1)",
                       }}
                     >
-                      <img
+                      <img width={800} height={450}
                         src={infographicPreview || newBlog.infographic}
                         alt="Infographic Preview"
                         style={{
@@ -2138,7 +2138,7 @@ export default function AuthorityBlogsPage() {
                     <td style={{ padding: "1rem 1.25rem" }}>
                       <div style={{ display: "flex", alignItems: "center", gap: "0.9rem" }}>
                         {blog.image ? (
-                          <img
+                          <img width={800} height={450}
                             src={blog.image}
                             alt=""
                             style={{

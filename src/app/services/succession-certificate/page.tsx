@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     absolute: "How to Get Succession Certificate in India: Legal Guide",
   },
   description:
-    "Apply for a succession certificate in India with AMA Legal Solutions. We handle petition drafting, court notices, and asset transmission under ISA 1925.",
+    "Apply for a succession certificate in India with AMA Legal Solutions. We handle petition drafting, court notices, and asset transmission under.",
   keywords: [
     "how to get succession certificate",
     "succession certificate lawyer",
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "How to Get Succession Certificate in India: Legal Guide",
     description:
-      "Apply for a succession certificate in India with AMA Legal Solutions. We handle petition drafting, court notices, and asset transmission under ISA 1925.",
+      "Apply for a succession certificate in India with AMA Legal Solutions. We handle petition drafting, court notices, and asset transmission under.",
     url: "https://www.willdrafting.in/services/succession-certificate",
     siteName: "WillDrafting.in",
     locale: "en_IN",
@@ -54,7 +54,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "How to Get Succession Certificate in India: Legal Guide",
     description:
-      "Apply for a succession certificate in India with AMA Legal Solutions. We handle petition drafting, court notices, and asset transmission under ISA 1925.",
+      "Apply for a succession certificate in India with AMA Legal Solutions. We handle petition drafting, court notices, and asset transmission under.",
     images: ["https://www.willdrafting.in/images/succession-certificate-og.jpg"],
   },
   robots: {
@@ -93,7 +93,7 @@ export default function SuccessionCertificatePage() {
         logo: "https://www.willdrafting.in/Logofinal.svg",
         image: imageUrl,
         description:
-          "Pan-India civil court advocacy specializing in Succession Certificate petitions under Part X of the Indian Succession Act 1925, court citations, newspaper publications, and financial asset transmission.",
+          "Pan-India civil court advocacy specializing in Succession Certificate petitions under Part X of the Indian Succession Act 1925, court.",
         priceRange: "₹₹₹",
         address: {
           "@type": "PostalAddress",
@@ -115,7 +115,7 @@ export default function SuccessionCertificatePage() {
                 "@type": "Service",
                 name: "Uncontested Succession Certificate Petition",
                 description:
-                  "Comprehensive representation for drafting petitions, filing before the competent District Judge, newspaper publication, and securing certificate issuance.",
+                  "Comprehensive representation for drafting petitions, filing before the competent District Judge, newspaper publication, and securing.",
               },
             },
             {
@@ -154,7 +154,7 @@ export default function SuccessionCertificatePage() {
         url: canonicalUrl,
         name: "How to Get Succession Certificate in India: Legal Guide",
         description:
-          "Apply for a succession certificate in India with AMA Legal Solutions. We handle petition drafting, court notices, and asset transmission under ISA 1925.",
+          "Apply for a succession certificate in India with AMA Legal Solutions. We handle petition drafting, court notices, and asset transmission under.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -191,7 +191,7 @@ export default function SuccessionCertificatePage() {
         "@id": `${canonicalUrl}#howto`,
         name: "How to Obtain a Succession Certificate in India",
         description:
-          "Statutory procedure under Part X (Sections 370-390) of the Indian Succession Act 1925 to petition the competent District Civil Court and obtain a Succession Certificate for transmission of debts and securities.",
+          "Statutory procedure under Part X (Sections 370-390) of the Indian Succession Act 1925 to petition the competent District Civil Court and.",
         image: imageUrl,
         totalTime: "P120D",
         supply: [

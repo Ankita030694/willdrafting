@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     absolute: "Will Drafting in Nashik: Legal Online Will Making Guide",
   },
   description:
-    "Create a valid Will in Nashik with legal consultation. Clear guidance on agro-industrial assets, IGR Maharashtra registration, and NMC flat succession.",
+    "Create a valid Will in Nashik with legal consultation. Clear guidance on agro-industrial assets, IGR Maharashtra registration, and NMC flat.",
   keywords: [
     "will drafting in nashik",
     "will registration nashik sro",
@@ -49,7 +49,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Will Drafting in Nashik: Legal Online Will Making Guide",
     description:
-      "Create a valid Will in Nashik with legal consultation. Clear guidance on agro-industrial assets, IGR Maharashtra registration, and NMC flat succession.",
+      "Create a valid Will in Nashik with legal consultation. Clear guidance on agro-industrial assets, IGR Maharashtra registration, and NMC flat.",
     url: "https://www.willdrafting.in/locations/nashik",
     siteName: "WillDrafting.in",
     locale: "en_IN",
@@ -67,7 +67,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Will Drafting in Nashik: Legal Online Will Making Guide",
     description:
-      "Create a valid Will in Nashik with legal consultation. Clear guidance on agro-industrial assets, IGR Maharashtra registration, and NMC flat succession.",
+      "Create a valid Will in Nashik with legal consultation. Clear guidance on agro-industrial assets, IGR Maharashtra registration, and NMC flat.",
     images: ["https://www.willdrafting.in/images/will-drafting-in-nashik-og.jpg"],
   },
   robots: {
@@ -147,7 +147,7 @@ export default function NashikLocationPage() {
         url: canonicalUrl,
         name: "Will Drafting in Nashik: Legal Online Will Making Guide",
         description:
-          "Create a valid Will in Nashik with legal consultation. Clear guidance on agro-industrial assets, IGR Maharashtra registration, and NMC flat succession.",
+          "Create a valid Will in Nashik with legal consultation. Clear guidance on agro-industrial assets, IGR Maharashtra registration, and NMC flat.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -194,7 +194,7 @@ export default function NashikLocationPage() {
         "@id": `${canonicalUrl}#legalservice`,
         name: "WillDrafting Nashik - Estate Planning & SRO Registration",
         description:
-          "Professional Will drafting, advocate verification, IGR Maharashtra e-Stepin registration, and doorstep execution support across Nashik, Panchavati, CIDCO, and Nashik Road.",
+          "Professional Will drafting, advocate verification, IGR Maharashtra e-Stepin registration, and doorstep execution support across Nashik.",
         url: canonicalUrl,
         image: imageUrl,
         telephone: "+91-8700343611",

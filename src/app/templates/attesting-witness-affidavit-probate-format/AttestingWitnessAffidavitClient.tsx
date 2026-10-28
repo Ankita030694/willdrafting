@@ -523,10 +523,10 @@ export default function AttestingWitnessAffidavitClient() {
               <div className="relative aspect-[16/9] w-full bg-slate-900">
                 <Image
                   src="/images/attesting-witness-affidavit-probate-format-og.jpg"
-                  alt="Affidavit of Attesting Witness for Probate of Will Format Indian Succession Act Legal Template"
-                  fill
+                  alt="Affidavit of Attesting Witness for Probate of Will Format Indian Succession Act Legal"
+                  width={1200} height={675}
                   priority
-                  className="object-cover"
+                  className="absolute inset-0 w-full h-full object-cover"
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 75vw, 65vw"
                 />
               </div>

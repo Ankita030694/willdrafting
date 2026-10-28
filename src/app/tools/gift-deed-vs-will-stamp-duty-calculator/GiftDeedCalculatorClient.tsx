@@ -1828,8 +1828,8 @@ export default function GiftDeedCalculatorClient() {
                     <Image
                       src="/images/gift-deed-vs-will-stamp-duty-calculator.jpg"
                       alt="Gift Deed vs Will Stamp Duty Calculator and Legal Ownership Comparison"
-                      fill
-                      className="object-cover rounded-xl"
+                      width={1200} height={675}
+                      className="absolute inset-0 w-full h-full object-cover rounded-xl"
                       sizes="(max-width: 1200px) 100vw, 1200px"
                     />
                   </div>
@@ -2211,22 +2211,35 @@ export default function GiftDeedCalculatorClient() {
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 pt-1">
                   {Object.keys(STATE_RULES).map((key) => {
                     const item = STATE_RULES[key];
+                    const stateSlugMap: Record<string, string> = {
+                      MH: "/locations/maharashtra",
+                      UP: "/locations/uttar-pradesh",
+                      DL: "/locations/delhi",
+                      KA: "/locations/karnataka",
+                      TN: "/locations/tamil-nadu",
+                      GJ: "/locations/gujarat",
+                      HR: "/locations/haryana",
+                      WB: "/locations/west-bengal",
+                      TS: "/locations/telangana",
+                      RJ: "/locations/rajasthan",
+                      PB: "/locations/punjab",
+                      KL: "/locations/kerala",
+                      OTHER: "/locations",
+                    };
                     return (
-                      <a
+                      <Link
                         key={key}
-                        href={item.portalUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
+                        href={stateSlugMap[key] || "/locations"}
                         className="p-3 rounded-xl border border-slate-200 hover:border-[#C65378] transition-colors bg-slate-50/50 flex flex-col justify-between group"
                       >
                         <div className="font-extrabold text-[#172228] group-hover:text-[#C65378] flex items-center justify-between">
                           <span>{item.name}</span>
-                          <ExternalLink className="w-3.5 h-3.5 text-slate-400 group-hover:text-[#C65378]" />
+                          <ArrowRight className="w-3.5 h-3.5 text-slate-400 group-hover:text-[#C65378]" />
                         </div>
                         <div className="text-[11px] text-slate-500 mt-1 line-clamp-1">
                           {item.portalName}
                         </div>
-                      </a>
+                      </Link>
                     );
                   })}
                 </div>

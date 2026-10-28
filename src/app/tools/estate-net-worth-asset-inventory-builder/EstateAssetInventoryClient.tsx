@@ -1284,8 +1284,8 @@ AND I HEREBY DECLARE that the schedule of properties appended to this my Last Wi
                   <Image
                     src="/images/estate-net-worth-asset-inventory-builder-og.jpg"
                     alt="Asset Inventory List for Family India and Emergency Net Worth Vault Dossier"
-                    fill
-                    className="object-cover"
+                    width={1200} height={675}
+                    className="absolute inset-0 w-full h-full object-cover"
                     sizes="(max-width: 1200px) 100vw, 1200px"
                   />
                 </div>

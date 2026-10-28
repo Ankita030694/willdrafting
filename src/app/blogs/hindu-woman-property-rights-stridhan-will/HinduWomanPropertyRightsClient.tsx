@@ -1042,8 +1042,8 @@ export default function HinduWomanPropertyRightsClient() {
                   <Image
                     src="/images/hindu-woman-property-rights-stridhan-will.jpg"
                     alt="Hindu Woman Property Rights Stridhan and Will Legal Framework Blueprint"
-                    fill
-                    className="object-cover group-hover:scale-[1.02] transition-transform duration-300"
+                    width={1200} height={675}
+                    className="absolute inset-0 w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-300"
                     sizes="(max-width: 1024px) 100vw, 850px"
                     priority
                   />
@@ -1757,7 +1757,7 @@ export default function HinduWomanPropertyRightsClient() {
                       <ExternalLink className="w-3 h-3" />
                     </a>
                     <a
-                      href="https://main.sci.gov.in"
+                      href="https://www.sci.gov.in"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-flex items-center gap-1 px-2.5 py-1 rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-800 text-[11px] font-bold"
@@ -2014,8 +2014,8 @@ export default function HinduWomanPropertyRightsClient() {
               <Image
                 src="/images/hindu-woman-property-rights-stridhan-will.jpg"
                 alt="Hindu Woman Property Rights Stridhan Blueprint Full View"
-                fill
-                className="object-contain"
+                width={1200} height={675}
+                className="absolute inset-0 w-full h-full object-contain"
               />
             </div>
             <div className="flex items-center justify-between text-xs text-slate-500 pt-1">

@@ -45,9 +45,17 @@ export const metadata: Metadata = {
   alternates: {
     canonical: PAGE_URL,
     languages: {
-      "hi-IN": PAGE_URL,
-      "en-IN": ENGLISH_PAGE_URL,
-      "x-default": ENGLISH_PAGE_URL,
+      "en-IN": "https://www.willdrafting.in/templates/will-format-india",
+      "hi-IN": "https://www.willdrafting.in/templates/will-format-hindi",
+      "mr-IN": "https://www.willdrafting.in/templates/will-format-marathi-mrutyupatra",
+      "gu-IN": "https://www.willdrafting.in/templates/will-format-gujarati-vasiyatnama",
+      "pa-IN": "https://www.willdrafting.in/templates/will-format-punjabi-vasiyatnama",
+      "bn-IN": "https://www.willdrafting.in/templates/will-format-bengali-ichchapatra",
+      "ta-IN": "https://www.willdrafting.in/templates/will-format-tamil-uyil-sasanam",
+      "te-IN": "https://www.willdrafting.in/templates/will-format-telugu-veelunama",
+      "kn-IN": "https://www.willdrafting.in/templates/will-format-kannada-uyilu",
+      "ml-IN": "https://www.willdrafting.in/templates/will-format-malayalam-maranapathram",
+      "x-default": "https://www.willdrafting.in/templates/will-format-india",
     },
   },
   openGraph: {
@@ -148,7 +156,7 @@ export default function WillFormatHindiPage() {
         "@id": `${PAGE_URL}#howto`,
         name: "हिंदी में कानूनी रूप से मान्य वसीयत कैसे लिखें",
         description:
-          "भारतीय उत्तराधिकार अधिनियम, 1925 की धारा 63 के अनुसार सादे कागज़ पर हिंदी में वसीयत लिखने और दो गवाहों के सामने हस्ताक्षर करने की चरण-दर-चरण प्रक्रिया।",
+          "भारतीय उत्तराधिकार अधिनियम, 1925 की धारा 63 के अनुसार सादे कागज़ पर हिंदी में वसीयत लिखने और दो गवाहों के सामने हस्ताक्षर करने की चरण-दर-चरण.",
         inLanguage: "hi-IN",
         image: OG_IMAGE_URL,
         totalTime: "PT15M",

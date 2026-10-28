@@ -296,8 +296,8 @@ export default function ManipurLocationClient({ faqs }: Props) {
                 <Image
                   src="/images/will-drafting-in-manipur.jpg"
                   alt="Legal Will Drafting and Property Succession in Manipur"
-                  fill
-                  className="object-contain group-hover:scale-102 transition-transform duration-500"
+                  width={1200} height={675}
+                  className="absolute inset-0 w-full h-full object-contain group-hover:scale-102 transition-transform duration-500"
                   priority
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 40vw"
                 />
@@ -448,9 +448,9 @@ export default function ManipurLocationClient({ faqs }: Props) {
               <span className="text-[10px] font-black uppercase tracking-widest text-rose-300 block">
                 LEGAL CONSULTATION
               </span>
-              <h4 className="text-sm font-extrabold leading-snug">
+              <div className="text-sm font-extrabold leading-snug">
                 Need Assistance with Valley Pattas or Hill Land Wills?
-              </h4>
+              </div>
               <p className="text-xs text-slate-300 leading-relaxed">
                 Connect with our senior estate advocates for personalized guidance under Manipur land and succession laws.
               </p>
@@ -1789,8 +1789,8 @@ export default function ManipurLocationClient({ faqs }: Props) {
               <Image
                 src="/images/will-drafting-in-manipur.jpg"
                 alt="High Resolution Visual Blueprint: Manipur Will Drafting and SRO Registration"
-                fill
-                className="object-contain"
+                width={1200} height={675}
+                className="absolute inset-0 w-full h-full object-contain"
                 priority
               />
             </div>

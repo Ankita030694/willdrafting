@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     absolute: "Will Drafting in Nagaland: Customary Succession Guide",
   },
   description:
-    "Draft a legally valid Will in Nagaland. Guidance on Article 371A protections, Naga customary land inheritance, and self-acquired property bequests online.",
+    "Draft a legally valid Will in Nagaland. Guidance on Article 371A protections, Naga customary land inheritance, and self-acquired property.",
   keywords: [
     "will drafting in nagaland",
     "article 371a naga customary law will",
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Will Drafting in Nagaland: Customary Succession Guide",
     description:
-      "Draft a legally valid Will in Nagaland. Guidance on Article 371A protections, Naga customary land inheritance, and self-acquired property bequests online.",
+      "Draft a legally valid Will in Nagaland. Guidance on Article 371A protections, Naga customary land inheritance, and self-acquired property.",
     url: "https://www.willdrafting.in/locations/nagaland",
     siteName: "WillDrafting.in",
     locale: "en_IN",
@@ -62,7 +62,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Will Drafting in Nagaland: Customary Succession Guide",
     description:
-      "Draft a legally valid Will in Nagaland. Guidance on Article 371A protections, Naga customary land inheritance, and self-acquired property bequests online.",
+      "Draft a legally valid Will in Nagaland. Guidance on Article 371A protections, Naga customary land inheritance, and self-acquired property.",
     images: ["https://www.willdrafting.in/images/will-drafting-in-nagaland-og.jpg"],
   },
   robots: {
@@ -142,7 +142,7 @@ export default function NagalandLocationPage() {
         url: canonicalUrl,
         name: "Will Drafting in Nagaland: Customary Succession Guide",
         description:
-          "Draft a legally valid Will in Nagaland. Guidance on Article 371A protections, Naga customary land inheritance, and self-acquired property bequests online.",
+          "Draft a legally valid Will in Nagaland. Guidance on Article 371A protections, Naga customary land inheritance, and self-acquired property.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -189,7 +189,7 @@ export default function NagalandLocationPage() {
         "@id": `${canonicalUrl}#legalservice`,
         name: "WillDrafting Nagaland - Estate Planning & DC SRO Registration",
         description:
-          "Professional Will drafting, advocate verification, Article 371A customary compliance, and Deputy Commissioner registry assistance across Kohima, Dimapur, Mokokchung, and Chumoukedima.",
+          "Professional Will drafting, advocate verification, Article 371A customary compliance, and Deputy Commissioner registry assistance across.",
         url: canonicalUrl,
         image: imageUrl,
         email: "hello@willdrafting.in",

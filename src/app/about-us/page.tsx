@@ -32,7 +32,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "About Us - Will Drafting Law Firm & Estate Planning Advocates in India | WillDrafting.in",
     description:
-      "Powered by AMA Legal Solutions: Meet the estate planning advocates behind WillDrafting.in helping Resident Indians and NRIs draft lawyer-verified Wills under Indian succession law.",
+      "Powered by AMA Legal Solutions: Meet the estate planning advocates behind WillDrafting.in helping Resident Indians and NRIs draft.",
     url: "https://www.willdrafting.in/about-us",
     siteName: "WillDrafting.in",
     locale: "en_IN",
@@ -50,7 +50,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "About Us - Will Drafting Law Firm & Estate Planning Advocates in India | WillDrafting.in",
     description:
-      "Powered by AMA Legal Solutions: Meet the estate planning advocates behind WillDrafting.in helping Resident Indians and NRIs draft lawyer-verified Wills under Indian succession law.",
+      "Powered by AMA Legal Solutions: Meet the estate planning advocates behind WillDrafting.in helping Resident Indians and NRIs draft.",
     images: ["/desktopusp.jpg"],
   },
 };
@@ -148,9 +148,9 @@ export default function AboutUsPage() {
               <Image
                 src="/1.jpg"
                 alt="Senior legal advocate reviewing Indian estate succession documents"
-                fill
+                width={1200} height={675}
                 sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
-                className="object-cover object-center transition-transform duration-700 hover:scale-105"
+                className="absolute inset-0 w-full h-full object-cover object-center transition-transform duration-700 hover:scale-105"
               />
             </div>
 
@@ -174,9 +174,9 @@ export default function AboutUsPage() {
               <Image
                 src="/2.jpg"
                 alt="Legal consultation desk for online testamentary will drafting"
-                fill
+                width={1200} height={675}
                 sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
-                className="object-cover object-center transition-transform duration-700 hover:scale-105"
+                className="absolute inset-0 w-full h-full object-cover object-center transition-transform duration-700 hover:scale-105"
               />
             </div>
 
@@ -185,9 +185,9 @@ export default function AboutUsPage() {
               <Image
                 src="/3.jpg"
                 alt="Legal counsel advising Indian client on inheritance and asset protection"
-                fill
+                width={1200} height={675}
                 sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
-                className="object-cover object-center transition-transform duration-700 group-hover:scale-105"
+                className="absolute inset-0 w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105"
               />
             </div>
 
@@ -211,9 +211,9 @@ export default function AboutUsPage() {
               <Image
                 src="/4.jpg"
                 alt="Lawyer verifying clauses under Indian estate succession law"
-                fill
+                width={1200} height={675}
                 sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
-                className="object-cover object-center transition-transform duration-700 hover:scale-105"
+                className="absolute inset-0 w-full h-full object-cover object-center transition-transform duration-700 hover:scale-105"
               />
             </div>
 

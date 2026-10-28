@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   },
   // Strictly 140-155 characters for Screaming Frog compliance (153 chars)
   description:
-    "Apply for a Legal Heir Certificate in India. Get lawyer help for Tehsildar verification, property mutation, and bank claims under Indian succession laws.",
+    "Apply for a Legal Heir Certificate in India. Get lawyer help for Tehsildar verification, property mutation, and bank claims under Indian.",
   authors: [{ name: "Advocate Anuj Anand Malik", url: "https://www.linkedin.com/in/iamanujmalik/" }],
   keywords: [
     "legal heir certificate india",
@@ -52,7 +52,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Legal Heir Certificate in India: Complete Legal Guide",
     description:
-      "Apply for a Legal Heir Certificate in India. Get lawyer help for Tehsildar verification, property mutation, and bank claims under Indian succession laws.",
+      "Apply for a Legal Heir Certificate in India. Get lawyer help for Tehsildar verification, property mutation, and bank claims under Indian.",
     url: "https://www.willdrafting.in/services/legal-heir",
     siteName: "WillDrafting.in",
     locale: "en_IN",
@@ -70,7 +70,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Legal Heir Certificate in India: Complete Legal Guide",
     description:
-      "Apply for a Legal Heir Certificate in India. Get lawyer help for Tehsildar verification, property mutation, and bank claims under Indian succession laws.",
+      "Apply for a Legal Heir Certificate in India. Get lawyer help for Tehsildar verification, property mutation, and bank claims under Indian.",
     images: ["/images/legal-heir-og.jpg"],
   },
   robots: {
@@ -488,7 +488,7 @@ export default function LegalHeirPage() {
           <figure className="w-full rounded-[28px] overflow-hidden bg-white border border-[#172228]/10 p-3 sm:p-6 shadow-[0_4px_24px_rgba(0,0,0,0.03)]">
             <Image
               src="/images/legal-heir-og.jpg"
-              alt="Official Government of India Succession Certificate and Legal Heir Lineage Document Verification"
+              alt="Official Government of India Succession Certificate and Legal Heir Lineage Document"
               width={1200}
               height={675}
               className="w-full h-auto rounded-2xl"

@@ -311,8 +311,8 @@ export default function AhmedabadLocationClient({ faqs }: Props) {
                 <Image
                   src="/images/will-drafting-in-ahmedabad.jpg"
                   alt="Legal Will Drafting and Business Succession in Ahmedabad Gujarat"
-                  fill
-                  className="object-contain group-hover:scale-105 transition-transform duration-500"
+                  width={1200} height={675}
+                  className="absolute inset-0 w-full h-full object-contain group-hover:scale-105 transition-transform duration-500"
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 42vw"
                   priority
                 />
@@ -553,7 +553,7 @@ export default function AhmedabadLocationClient({ faqs }: Props) {
                 </div>
                 {/* H2: Exactly 45 characters */}
                 <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  1. Will Drafting &amp; Legal Framework in Gujarat
+                  1. Will Drafting &amp; Legal Framework in Ahmedabad
                 </h2>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Succession in Gujarat is governed by the Indian Succession Act, 1925, along with the personal laws of the testator. For Hindus, Jains, Sikhs, and Buddhists, the Hindu Succession Act, 1956 applies under the Mitakshara legal school.
@@ -1880,8 +1880,8 @@ export default function AhmedabadLocationClient({ faqs }: Props) {
               <Image
                 src="/images/will-drafting-in-ahmedabad.jpg"
                 alt="High Resolution Visual Blueprint: Ahmedabad Will Drafting & Business Succession"
-                fill
-                className="object-contain"
+                width={1200} height={675}
+                className="absolute inset-0 w-full h-full object-contain"
                 sizes="(max-width: 1200px) 100vw, 1200px"
               />
             </div>

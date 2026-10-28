@@ -499,9 +499,9 @@ export default function StartAssetWealthDashboard({
           ========================================================================= */}
       <div>
         <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", marginBottom: "0.6rem" }}>
-          <h3 style={{ margin: 0, fontSize: "0.85rem", fontWeight: 700, color: "#172228" }}>
+          <div style={{ margin: 0, fontSize: "0.85rem", fontWeight: 700, color: "#172228" }}>
             {isHi ? "परिसंपत्ति वर्ग विभाजन" : "Asset Class Breakdown"}
-          </h3>
+          </div>
           <span style={{ fontSize: "0.64rem", color: "#49585F" }}>
             {categoryStats.length} {isHi ? "सक्रिय श्रेणियां" : "Active Categories"}
           </span>
@@ -723,13 +723,13 @@ export default function StartAssetWealthDashboard({
               <FileText size={18} />
             </div>
             <div>
-              <h4 style={{ margin: "0 0 0.15rem", fontSize: "0.86rem", fontWeight: 700, color: "#172228" }}>
+              <div style={{ margin: "0 0 0.15rem", fontSize: "0.86rem", fontWeight: 700, color: "#172228" }}>
                 {isReviewed
                   ? (isHi ? "वसीयत तैयार है - बस योजना चुनें" : "Will ready to download, just select the plan")
                   : isAllDetailsSubmitted
                   ? (isHi ? "सभी विवरण सबमिट किए गए - कृपया समीक्षा करें" : "All details submitted, please review, select plan and have your fill")
                   : (isHi ? "प्रश्नावली पूरी करें" : "Complete details to unlock Will generation")}
-              </h4>
+              </div>
               <p style={{ margin: 0, fontSize: "0.68rem", color: "#49585F" }}>
                 {isReviewed
                   ? (isHi

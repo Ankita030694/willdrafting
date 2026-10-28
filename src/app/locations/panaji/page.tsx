@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     absolute: "Will Drafting in Panaji: Goa Civil Code Will Guide",
   },
   description:
-    "Draft a valid Will in Panaji. Expert guidance on the Goa Civil Code, legitime quota rules, Comunidade property succession, and Notary Public registration.",
+    "Draft a valid Will in Panaji. Expert guidance on the Goa Civil Code, legitime quota rules, Comunidade property succession, and Notary Public.",
   keywords: [
     "will drafting in panaji",
     "goa civil code will",
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Will Drafting in Panaji: Goa Civil Code Will Guide",
     description:
-      "Draft a valid Will in Panaji. Expert guidance on the Goa Civil Code, legitime quota rules, Comunidade property succession, and Notary Public registration.",
+      "Draft a valid Will in Panaji. Expert guidance on the Goa Civil Code, legitime quota rules, Comunidade property succession, and Notary Public.",
     url: "https://www.willdrafting.in/locations/panaji",
     siteName: "WillDrafting.in",
     locale: "en_IN",
@@ -62,7 +62,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Will Drafting in Panaji: Goa Civil Code Will Guide",
     description:
-      "Draft a valid Will in Panaji. Expert guidance on the Goa Civil Code, legitime quota rules, Comunidade property succession, and Notary Public registration.",
+      "Draft a valid Will in Panaji. Expert guidance on the Goa Civil Code, legitime quota rules, Comunidade property succession, and Notary Public.",
     images: ["https://www.willdrafting.in/images/will-drafting-in-panaji-og.jpg"],
   },
   robots: {
@@ -142,7 +142,7 @@ export default function PanajiLocationPage() {
         url: canonicalUrl,
         name: "Will Drafting in Panaji: Goa Civil Code Will Guide",
         description:
-          "Draft a valid Will in Panaji. Expert guidance on the Goa Civil Code, legitime quota rules, Comunidade property succession, and Notary Public registration.",
+          "Draft a valid Will in Panaji. Expert guidance on the Goa Civil Code, legitime quota rules, Comunidade property succession, and Notary Public.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -189,7 +189,7 @@ export default function PanajiLocationPage() {
         "@id": `${canonicalUrl}#legalservice`,
         name: "WillDrafting Panaji - Estate Planning & Civil Registrar Assistance",
         description:
-          "Professional Will drafting, advocate verification, Goa Civil Code compliance, and Civil Registrar registration support across Panaji, Miramar, Dona Paula, Caranzalem, and Tiswadi.",
+          "Professional Will drafting, advocate verification, Goa Civil Code compliance, and Civil Registrar registration support across Panaji, Miramar.",
         url: canonicalUrl,
         image: imageUrl,
         email: "hello@willdrafting.in",

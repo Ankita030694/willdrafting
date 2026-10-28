@@ -403,8 +403,8 @@ export default function VaranasiLocationClient({ faqs }: Props) {
                 <Image
                   src="/images/will-drafting-in-varanasi.jpg"
                   alt="Online Will Drafting and Property Protection in Varanasi Uttar Pradesh"
-                  fill
-                  className="object-contain group-hover:scale-102 transition-transform duration-500"
+                  width={1200} height={675}
+                  className="absolute inset-0 w-full h-full object-contain group-hover:scale-102 transition-transform duration-500"
                   priority
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 40vw"
                 />
@@ -529,9 +529,9 @@ export default function VaranasiLocationClient({ faqs }: Props) {
             <div className="bg-white rounded-3xl border border-slate-200/80 p-5 shadow-sm">
               <div className="flex items-center gap-2 pb-3 mb-3 border-b border-slate-100">
                 <Landmark className="w-4 h-4 text-[#C65378]" />
-                <h3 className="text-xs font-mono font-bold uppercase tracking-wider text-slate-800">
+                <div className="text-xs font-mono font-bold uppercase tracking-wider text-slate-800">
                   VARANASI SUCCESSION GUIDE
-                </h3>
+                </div>
               </div>
               <nav className="space-y-1 max-h-[60vh] overflow-y-auto pr-1">
                 {TOC_ITEMS.map((item) => {
@@ -572,9 +572,9 @@ export default function VaranasiLocationClient({ faqs }: Props) {
                 <span className="inline-block px-3 py-1 rounded-full bg-[#C65378]/25 text-[#C65378] text-[11px] font-mono font-bold uppercase tracking-wider">
                   KASHI LEGAL DESK
                 </span>
-                <h4 className="text-base font-extrabold text-white leading-snug">
+                <div className="text-base font-extrabold text-white leading-snug">
                   Protect Your Varanasi Family Legacy
-                </h4>
+                </div>
                 <p className="text-xs text-slate-300 leading-relaxed">
                   Draft an undisputed legal Will online. Avoid bitter partition suits over VDA plots or ancestral havelis.
                 </p>
@@ -1700,7 +1700,7 @@ export default function VaranasiLocationClient({ faqs }: Props) {
                     Will Drafting in Delhi NCR
                   </Link>
                   <Link
-                    href="/service/will-registration"
+                    href="/services/will-registration"
                     className="px-3 py-1.5 rounded-xl bg-[#FAF7F0] hover:bg-slate-200 text-[#C65378] font-semibold transition-all"
                   >
                     SRO Registration Service
@@ -1749,8 +1749,8 @@ export default function VaranasiLocationClient({ faqs }: Props) {
               <Image
                 src="/images/will-drafting-in-varanasi.jpg"
                 alt="High Resolution Visual Blueprint: Varanasi Will Drafting and SRO Registration"
-                fill
-                className="object-contain"
+                width={1200} height={675}
+                className="absolute inset-0 w-full h-full object-contain"
                 priority
               />
             </div>

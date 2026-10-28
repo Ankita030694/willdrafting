@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     absolute: "Will Drafting in Agra: Online Will Registration Support",
   },
   description:
-    "Protect your family property in Agra. Expert lawyer Will drafting, UP Sub-Registrar registration help, and ADA residential property transfer guidance.",
+    "Protect your family property in Agra. Expert lawyer Will drafting, UP Sub-Registrar registration help, and ADA residential property transfer.",
   keywords: [
     "will drafting in agra",
     "will registration up igrs agra",
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Will Drafting in Agra: Online Will Registration Support",
     description:
-      "Protect your family property in Agra. Expert lawyer Will drafting, UP Sub-Registrar registration help, and ADA residential property transfer guidance.",
+      "Protect your family property in Agra. Expert lawyer Will drafting, UP Sub-Registrar registration help, and ADA residential property transfer.",
     url: "https://www.willdrafting.in/locations/agra",
     siteName: "WillDrafting.in",
     locale: "en_IN",
@@ -65,7 +65,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Will Drafting in Agra: Online Will Registration Support",
     description:
-      "Protect your family property in Agra. Expert lawyer Will drafting, UP Sub-Registrar registration help, and ADA residential property transfer guidance.",
+      "Protect your family property in Agra. Expert lawyer Will drafting, UP Sub-Registrar registration help, and ADA residential property transfer.",
     images: ["https://www.willdrafting.in/images/will-drafting-in-agra-og.jpg"],
   },
   robots: {
@@ -141,7 +141,7 @@ export default function AgraLocationPage() {
         url: canonicalUrl,
         name: "Will Drafting in Agra: Online Will Registration Support",
         description:
-          "Protect your family property in Agra. Expert lawyer Will drafting, UP Sub-Registrar registration help, and ADA residential property transfer guidance.",
+          "Protect your family property in Agra. Expert lawyer Will drafting, UP Sub-Registrar registration help, and ADA residential property transfer.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -188,7 +188,7 @@ export default function AgraLocationPage() {
         "@id": `${canonicalUrl}#legalservice`,
         name: "WillDrafting Agra - Legal Estate Planning & SRO Registration",
         description:
-          "Professional Will drafting, advocate verification, UP IGRSUP registration support, and doorstep execution assistance across Agra, ADA schemes, and Dayalbagh.",
+          "Professional Will drafting, advocate verification, UP IGRSUP registration support, and doorstep execution assistance across Agra, ADA schemes.",
         url: canonicalUrl,
         image: imageUrl,
         telephone: "+91-8700343611",

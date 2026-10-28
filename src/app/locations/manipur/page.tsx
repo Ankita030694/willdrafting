@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     absolute: "Will Drafting in Manipur: Online Will Registration Guide",
   },
   description:
-    "Draft a valid Will in Manipur. Complete guidance on valley land title deeds, hill district customary succession practices, and advocate review in Manipur.",
+    "Draft a valid Will in Manipur. Complete guidance on valley land title deeds, hill district customary succession practices, and advocate review.",
   keywords: [
     "will drafting in manipur",
     "will registration imphal",
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Will Drafting in Manipur: Online Will Registration Guide",
     description:
-      "Draft a valid Will in Manipur. Complete guidance on valley land title deeds, hill district customary succession practices, and advocate review in Manipur.",
+      "Draft a valid Will in Manipur. Complete guidance on valley land title deeds, hill district customary succession practices, and advocate review.",
     url: "https://www.willdrafting.in/locations/manipur",
     siteName: "WillDrafting.in",
     locale: "en_IN",
@@ -64,7 +64,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Will Drafting in Manipur: Online Will Registration Guide",
     description:
-      "Draft a valid Will in Manipur. Complete guidance on valley land title deeds, hill district customary succession practices, and advocate review in Manipur.",
+      "Draft a valid Will in Manipur. Complete guidance on valley land title deeds, hill district customary succession practices, and advocate review.",
     images: ["https://www.willdrafting.in/images/will-drafting-in-manipur-og.jpg"],
   },
   robots: {
@@ -144,7 +144,7 @@ export default function ManipurLocationPage() {
         url: canonicalUrl,
         name: "Will Drafting in Manipur: Online Will Registration Guide",
         description:
-          "Draft a valid Will in Manipur. Complete guidance on valley land title deeds, hill district customary succession practices, and advocate review in Manipur.",
+          "Draft a valid Will in Manipur. Complete guidance on valley land title deeds, hill district customary succession practices, and advocate review.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -191,7 +191,7 @@ export default function ManipurLocationPage() {
         "@id": `${canonicalUrl}#legalservice`,
         name: "WillDrafting Manipur - Estate Planning & SRO Registration",
         description:
-          "Professional Will drafting, advocate verification, Sub-Registrar registration, and Section 31 doorstep execution support across Imphal West, Imphal East, Thoubal, Bishnupur, and Churachandpur.",
+          "Professional Will drafting, advocate verification, Sub-Registrar registration, and Section 31 doorstep execution support across Imphal West.",
         url: canonicalUrl,
         image: imageUrl,
         email: "hello@willdrafting.in",

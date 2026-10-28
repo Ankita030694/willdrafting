@@ -858,8 +858,8 @@ Under Section 30 of the Hindu Succession Act, 1956, I bequeath 100% of my title 
                 <Image
                   src="/images/ancestral-vs-self-acquired-property-classifier-og.jpg"
                   alt="Ancestral vs Self-Acquired Property Classifier India - Supreme Court Provenance Guide"
-                  fill
-                  className="object-cover"
+                  width={1200} height={675}
+                  className="absolute inset-0 w-full h-full object-cover"
                   sizes="(max-width: 1200px) 100vw, 1200px"
                 />
               </div>
@@ -1539,7 +1539,7 @@ Under Section 30 of the Hindu Succession Act, 1956, I bequeath 100% of my title 
                     <ExternalLink className="w-3 h-3" />
                   </a>
                   <a
-                    href="https://main.sci.gov.in"
+                    href="https://www.sci.gov.in"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-slate-100 text-slate-800 hover:bg-slate-200 font-semibold"
@@ -1548,7 +1548,7 @@ Under Section 30 of the Hindu Succession Act, 1956, I bequeath 100% of my title 
                     <ExternalLink className="w-3 h-3" />
                   </a>
                   <a
-                    href="https://main.sci.gov.in"
+                    href="https://www.sci.gov.in"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-slate-100 text-slate-800 hover:bg-slate-200 font-semibold"

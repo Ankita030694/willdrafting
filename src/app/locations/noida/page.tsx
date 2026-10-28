@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     absolute: "Will Drafting in Noida: Online Will Registration Support",
   },
   description:
-    "Draft a valid Will in Noida and Greater Noida. Complete guidance for apartment leasehold transfer, Sub-Registrar registration, and legal succession.",
+    "Draft a valid Will in Noida and Greater Noida. Complete guidance for apartment leasehold transfer, Sub-Registrar registration, and legal.",
   keywords: [
     "will drafting in noida",
     "will registration noida sector 33",
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Will Drafting in Noida: Online Will Registration Support",
     description:
-      "Draft a valid Will in Noida and Greater Noida. Complete guidance for apartment leasehold transfer, Sub-Registrar registration, and legal succession.",
+      "Draft a valid Will in Noida and Greater Noida. Complete guidance for apartment leasehold transfer, Sub-Registrar registration, and legal.",
     url: "https://www.willdrafting.in/locations/noida",
     siteName: "WillDrafting.in",
     locale: "en_IN",
@@ -64,7 +64,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Will Drafting in Noida: Online Will Registration Support",
     description:
-      "Draft a valid Will in Noida and Greater Noida. Complete guidance for apartment leasehold transfer, Sub-Registrar registration, and legal succession.",
+      "Draft a valid Will in Noida and Greater Noida. Complete guidance for apartment leasehold transfer, Sub-Registrar registration, and legal.",
     images: ["https://www.willdrafting.in/images/will-drafting-in-noida-og.jpg"],
   },
   robots: {
@@ -140,7 +140,7 @@ export default function NoidaLocationPage() {
         url: canonicalUrl,
         name: "Will Drafting in Noida: Online Will Registration Support",
         description:
-          "Draft a valid Will in Noida and Greater Noida. Complete guidance for apartment leasehold transfer, Sub-Registrar registration, and legal succession.",
+          "Draft a valid Will in Noida and Greater Noida. Complete guidance for apartment leasehold transfer, Sub-Registrar registration, and legal.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -187,7 +187,7 @@ export default function NoidaLocationPage() {
         "@id": `${canonicalUrl}#legalservice`,
         name: "WillDrafting Noida - Estate Planning & SRO Registration",
         description:
-          "Professional Will drafting, lawyer verification, and Sub-Registrar Office e-registration support across Noida, Greater Noida, and Gautam Buddha Nagar NCR.",
+          "Professional Will drafting, lawyer verification, and Sub-Registrar Office e-registration support across Noida, Greater Noida, and Gautam.",
         url: canonicalUrl,
         image: imageUrl,
         telephone: "+91-8700343611",

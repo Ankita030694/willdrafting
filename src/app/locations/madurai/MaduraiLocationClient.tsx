@@ -289,8 +289,8 @@ export default function MaduraiLocationClient({ faqs }: Props) {
                 <Image
                   src="/images/will-drafting-in-madurai.jpg"
                   alt="Legal Will Drafting and Estate Succession Services in Madurai"
-                  fill
-                  className="object-cover group-hover:scale-105 transition-transform duration-500"
+                  width={1200} height={675}
+                  className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   priority
                 />
               </div>
@@ -1762,8 +1762,8 @@ export default function MaduraiLocationClient({ faqs }: Props) {
               <Image
                 src="/images/will-drafting-in-madurai.jpg"
                 alt="High Resolution Visual Blueprint: Madurai Will Drafting and Probate Support"
-                fill
-                className="object-contain"
+                width={1200} height={675}
+                className="absolute inset-0 w-full h-full object-contain"
               />
             </div>
           </div>

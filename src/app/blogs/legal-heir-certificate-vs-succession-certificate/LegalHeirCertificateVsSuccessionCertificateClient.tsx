@@ -730,7 +730,7 @@ export default function LegalHeirCertificateVsSuccessionCertificateClient() {
 
               <div className="pt-2">
                 <Link
-                  href="/service/succession-certificate"
+                  href="/services/succession-certificate"
                   className="inline-flex items-center gap-2 text-xs sm:text-sm font-bold text-[#C65378] hover:underline"
                 >
                   <span>Need an advocate to file your succession petition? View WillDrafting.in service</span>
@@ -789,8 +789,8 @@ export default function LegalHeirCertificateVsSuccessionCertificateClient() {
                   <Image
                     src="/images/legal-heir-certificate-vs-succession-certificate-comparison.jpg"
                     alt="Legal Heir Certificate vs Succession Certificate Split Comparison Guide"
-                    fill
-                    className="object-contain"
+                    width={1200} height={675}
+                    className="absolute inset-0 w-full h-full object-contain"
                     priority
                   />
                 </div>
@@ -1168,7 +1168,7 @@ export default function LegalHeirCertificateVsSuccessionCertificateClient() {
                   <p className="text-xs text-[#55636D]">
                     Drafting, filing, newspaper citations, and court appearances before the District Judge.
                   </p>
-                  <Link href="/service/succession-certificate" className="text-xs font-bold text-[#C65378] inline-flex items-center gap-1">
+                  <Link href="/services/succession-certificate" className="text-xs font-bold text-[#C65378] inline-flex items-center gap-1">
                     <span>Learn More</span> &rarr;
                   </Link>
                 </div>
@@ -1179,7 +1179,7 @@ export default function LegalHeirCertificateVsSuccessionCertificateClient() {
                   <p className="text-xs text-[#55636D]">
                     Mandatory probate petitions in Mumbai, Chennai, Kolkata, and High Court jurisdictions.
                   </p>
-                  <Link href="/service/probate-lawyer" className="text-xs font-bold text-[#C65378] inline-flex items-center gap-1">
+                  <Link href="/services/probate-lawyer" className="text-xs font-bold text-[#C65378] inline-flex items-center gap-1">
                     <span>Learn More</span> &rarr;
                   </Link>
                 </div>
@@ -1296,7 +1296,7 @@ export default function LegalHeirCertificateVsSuccessionCertificateClient() {
                 <span className="text-xs font-bold text-[#172228] block mb-2">Related WillDrafting Guides:</span>
                 <div className="flex flex-wrap gap-2">
                   <Link
-                    href="/service/succession-certificate"
+                    href="/services/succession-certificate"
                     className="text-[11px] px-3 py-1 rounded-lg bg-slate-100 text-[#172228] hover:bg-slate-200"
                   >
                     Succession Certificate Lawyer Service
@@ -1383,7 +1383,7 @@ export default function LegalHeirCertificateVsSuccessionCertificateClient() {
               </p>
               <div className="pt-1">
                 <Link
-                  href="/service/succession-certificate"
+                  href="/services/succession-certificate"
                   className="w-full inline-flex items-center justify-center gap-2 px-5 py-3 rounded-full bg-[#C65378] text-white text-xs font-bold hover:bg-[#a13c5d] transition-all cursor-pointer"
                 >
                   <span>Consult Succession Lawyers</span>
@@ -1428,7 +1428,7 @@ export default function LegalHeirCertificateVsSuccessionCertificateClient() {
               </h3>
               <div className="space-y-2">
                 <Link
-                  href="/service/succession-certificate"
+                  href="/services/succession-certificate"
                   className="block p-2.5 rounded-xl border border-[#172228]/5 hover:border-[#C65378]/30 transition-all hover:bg-slate-50"
                 >
                   <div className="font-bold text-xs text-[#172228]">Succession Certificate Lawyers</div>
@@ -1465,7 +1465,7 @@ export default function LegalHeirCertificateVsSuccessionCertificateClient() {
               <span className="text-xs font-bold text-[#172228] block mb-2">Related WillDrafting Guides:</span>
               <div className="flex flex-wrap gap-2">
                 <Link
-                  href="/service/succession-certificate"
+                  href="/services/succession-certificate"
                   className="text-[11px] px-3 py-1 rounded-lg bg-slate-100 text-[#172228] hover:bg-slate-200 transition-colors"
                 >
                   Succession Certificate Lawyers

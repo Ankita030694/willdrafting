@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     absolute: "Check If Will Is Valid in India: Sec 63 | WillDrafting", // 54 characters
   },
   description:
-    "Use our free 12-question audit tool to check if Will is valid in India under Section 63 & 67 of the Indian Succession Act, 1925. Get your score now.", // 148 characters
+    "Use our free 12-question audit tool to check if Will is valid in India under Section 63 & 67 of the Indian Succession Act, 1925. Get your.", // 148 characters
   keywords: [
     "check if will is valid in india",
     "will validity checker india",
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Check If Will Is Valid in India: Sec 63 | WillDrafting",
     description:
-      "Use our free 12-question audit tool to check if Will is valid in India under Section 63 & 67 of the Indian Succession Act, 1925. Get your score now.",
+      "Use our free 12-question audit tool to check if Will is valid in India under Section 63 & 67 of the Indian Succession Act, 1925. Get your.",
     url: "https://www.willdrafting.in/tools/will-validity-section-63-audit-checker",
     siteName: "WillDrafting.in",
     locale: "en_IN",
@@ -53,7 +53,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Check If Will Is Valid in India: Sec 63 | WillDrafting",
     description:
-      "Use our free 12-question audit tool to check if Will is valid in India under Section 63 & 67 of the Indian Succession Act, 1925. Get your score now.",
+      "Use our free 12-question audit tool to check if Will is valid in India under Section 63 & 67 of the Indian Succession Act, 1925. Get your.",
     images: ["https://www.willdrafting.in/images/will-validity-section-63-audit-checker-og.jpg"],
   },
   robots: {
@@ -90,7 +90,7 @@ export default function WillValidityAuditCheckerPage() {
         url: canonicalUrl,
         name: "Check If Will Is Valid in India: Sec 63 | WillDrafting",
         description:
-          "Use our free 12-question audit tool to check if Will is valid in India under Section 63 & 67 of the Indian Succession Act, 1925. Get your score now.",
+          "Use our free 12-question audit tool to check if Will is valid in India under Section 63 & 67 of the Indian Succession Act, 1925. Get your.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -130,7 +130,7 @@ export default function WillValidityAuditCheckerPage() {
         applicationCategory: "LegalApplication",
         operatingSystem: "All",
         description:
-          "Interactive 12-question legal diagnostic tool that checks if a Will is valid in India under Sections 59, 61, 63, and 67 of the Indian Succession Act, 1925 and calculates a 0 to 100 Court-Defensibility Score.",
+          "Interactive 12-question legal diagnostic tool that checks if a Will is valid in India under Sections 59, 61, 63, and 67 of the Indian.",
         image: imageUrl,
         offers: {
           "@type": "Offer",

@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     absolute: "Demat Transmission Documents Checker Sebi | WillDrafting.in", // exactly 59 characters
   },
   description:
-    "Check demat transmission documents checker sebi rules. Find required forms ISR-5, AMFI T2/T3, threshold limits up to ₹15 Lakh, and legal heir documents.", // exactly 147 characters
+    "Check demat transmission documents checker sebi rules. Find required forms ISR-5, AMFI T2/T3, threshold limits up to ₹15 Lakh, and legal heir.", // exactly 147 characters
   keywords: [
     "demat transmission documents checker sebi",
     "mutual fund transmission checklist cams kfintech",
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Demat Transmission Documents Checker Sebi | WillDrafting.in",
     description:
-      "Check demat transmission documents checker sebi rules. Find required forms ISR-5, AMFI T2/T3, threshold limits up to ₹15 Lakh, and legal heir documents.",
+      "Check demat transmission documents checker sebi rules. Find required forms ISR-5, AMFI T2/T3, threshold limits up to ₹15 Lakh, and legal heir.",
     url: "https://www.willdrafting.in/tools/demat-mutual-fund-transmission-document-finder",
     siteName: "WillDrafting.in",
     locale: "en_IN",
@@ -53,7 +53,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Demat Transmission Documents Checker Sebi | WillDrafting.in",
     description:
-      "Check demat transmission documents checker sebi rules. Find required forms ISR-5, AMFI T2/T3, threshold limits up to ₹15 Lakh, and legal heir documents.",
+      "Check demat transmission documents checker sebi rules. Find required forms ISR-5, AMFI T2/T3, threshold limits up to ₹15 Lakh, and legal heir.",
     images: ["https://www.willdrafting.in/images/demat-mutual-fund-transmission-document-finder-og.jpg"],
   },
   robots: {
@@ -90,7 +90,7 @@ export default function DematTransmissionFinderPage() {
         url: canonicalUrl,
         name: "Demat Transmission Documents Checker Sebi | WillDrafting.in",
         description:
-          "Check demat transmission documents checker sebi rules. Find required forms ISR-5, AMFI T2/T3, threshold limits up to ₹15 Lakh, and legal heir documents.",
+          "Check demat transmission documents checker sebi rules. Find required forms ISR-5, AMFI T2/T3, threshold limits up to ₹15 Lakh, and legal heir.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -130,7 +130,7 @@ export default function DematTransmissionFinderPage() {
         applicationCategory: "FinanceApplication",
         operatingSystem: "All",
         description:
-          "Interactive statutory compliance tool for SEBI demat share transmission and AMFI mutual fund claims. Accurately determines Form ISR-5, AMFI T2/T3 requirements, simplified ₹5L/₹15L threshold limits, and mandatory court document triggers.",
+          "Interactive statutory compliance tool for SEBI demat share transmission and AMFI mutual fund claims. Accurately determines Form ISR-5, AMFI.",
         image: imageUrl,
         offers: {
           "@type": "Offer",

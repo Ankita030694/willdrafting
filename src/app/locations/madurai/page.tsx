@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     absolute: "Will Drafting in Madurai: Registration & Probate Law Guide",
   },
   description:
-    "Draft and register your Will in Madurai. Expert Madras High Court probate advice, asset distribution, and lawyer consultation in Madurai and Tamil Nadu.",
+    "Draft and register your Will in Madurai. Expert Madras High Court probate advice, asset distribution, and lawyer consultation in Madurai and.",
   keywords: [
     "will drafting in madurai",
     "will registration tnreginet madurai",
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Will Drafting in Madurai: Registration & Probate Law Guide",
     description:
-      "Draft and register your Will in Madurai. Expert Madras High Court probate advice, asset distribution, and lawyer consultation in Madurai and Tamil Nadu.",
+      "Draft and register your Will in Madurai. Expert Madras High Court probate advice, asset distribution, and lawyer consultation in Madurai and.",
     url: "https://www.willdrafting.in/locations/madurai",
     siteName: "WillDrafting.in",
     locale: "en_IN",
@@ -63,7 +63,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Will Drafting in Madurai: Registration & Probate Law Guide",
     description:
-      "Draft and register your Will in Madurai. Expert Madras High Court probate advice, asset distribution, and lawyer consultation in Madurai and Tamil Nadu.",
+      "Draft and register your Will in Madurai. Expert Madras High Court probate advice, asset distribution, and lawyer consultation in Madurai and.",
     images: ["https://www.willdrafting.in/images/will-drafting-in-madurai.jpg"],
   },
   robots: {
@@ -135,7 +135,7 @@ export default function MaduraiLocationPage() {
         url: canonicalUrl,
         name: "Will Drafting in Madurai: Registration & Probate Law Guide",
         description:
-          "Draft and register your Will in Madurai. Expert Madras High Court probate advice, asset distribution, and lawyer consultation in Madurai and Tamil Nadu.",
+          "Draft and register your Will in Madurai. Expert Madras High Court probate advice, asset distribution, and lawyer consultation in Madurai and.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -182,7 +182,7 @@ export default function MaduraiLocationPage() {
         "@id": `${canonicalUrl}#legalservice`,
         name: "WillDrafting Madurai - Estate Planning, Registration & Probate Guidance",
         description:
-          "Professional Will drafting, lawyer verification, Tamil Nadu TNREGINET Sub-Registrar registration, and Madras High Court Madurai Bench probate advisory across Madurai district.",
+          "Professional Will drafting, lawyer verification, Tamil Nadu TNREGINET Sub-Registrar registration, and Madras High Court Madurai Bench probate.",
         url: canonicalUrl,
         image: imageUrl,
         telephone: "+91-8700343611",

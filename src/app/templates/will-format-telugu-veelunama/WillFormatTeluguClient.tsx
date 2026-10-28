@@ -461,9 +461,9 @@ Date: __________________________________`;
             <div className="bg-white rounded-2xl p-5 border border-[#172228]/10 shadow-sm">
               <div className="flex items-center gap-2 pb-3 mb-3 border-b border-[#172228]/10">
                 <BookOpen className="w-4 h-4 text-[#C65378]" />
-                <h3 className="text-sm font-bold text-[#172228] uppercase tracking-wider">
+                <div className="text-sm font-bold text-[#172228] uppercase tracking-wider">
                   విషయ సూచిక (Index)
-                </h3>
+                </div>
               </div>
               <nav className="space-y-1 text-xs sm:text-sm">
                 {TOC_ITEMS.map((item) => (
@@ -489,9 +489,9 @@ Date: __________________________________`;
                 <Sparkles className="w-3 h-3" />
                 <span>AI-Assisted Legal Drafting</span>
               </div>
-              <h4 className="text-base font-bold text-white mb-2 leading-snug">
+              <div className="text-base font-bold text-white mb-2 leading-snug">
                 మీ వీలునామాను 15 నిమిషాల్లో ఆన్‌లైన్‌లో రాయండి
-              </h4>
+              </div>
               <p className="text-xs text-white/80 leading-relaxed mb-4">
                 Draft a legally valid Will for your properties in Hyderabad and Andhra Pradesh.
                 You can print it on plain paper right away.
@@ -511,9 +511,9 @@ Date: __________________________________`;
                 <Gavel className="w-4 h-4" />
                 <span>AMA Legal Solutions Advisory</span>
               </div>
-              <h4 className="text-base font-bold text-[#172228] mb-2 leading-snug">
+              <div className="text-base font-bold text-[#172228] mb-2 leading-snug">
                 న్యాయవాది సలహా కావాలా? (Need Advocate Guidance?)
-              </h4>
+              </div>
               <p className="text-xs text-[#172228]/80 leading-relaxed mb-4">
                 Talk to senior lawyers for custom Will drafting, NRI property advice, and dispute prevention.
               </p>
@@ -551,9 +551,9 @@ Date: __________________________________`;
                 <Image
                   src="/images/will-format-telugu-veelunama-og.jpg"
                   alt="Will Format in Telugu: వీలునామా ఫార్మాట్ (Veelunama) Legal Guide"
-                  fill
+                  width={1200} height={675}
                   priority
-                  className="object-cover"
+                  className="absolute inset-0 w-full h-full object-cover"
                   sizes="(max-width: 768px) 100vw, 800px"
                 />
               </div>
@@ -574,9 +574,9 @@ Date: __________________________________`;
                 <Info className="w-4 h-4" />
                 <span>ముఖ్య సారాంశం (Quick Legal Answer)</span>
               </div>
-              <h3 className="text-lg font-extrabold text-[#172228] mb-3">
+              <div className="text-lg font-extrabold text-[#172228] mb-3">
                 తెలుగులో వీలునామా ఎలా రాయాలి? (How to Write a Will in Telugu)
-              </h3>
+              </div>
               <p className="text-sm text-[#172228]/90 leading-relaxed mb-3">
                 భారతీయ వారసత్వ చట్టం 1925 (Indian Succession Act, 1925) సెక్షన్ 63 ప్రకారం, వీలునామాను తెల్ల కాగితంపై
                 తెలుగులో రాయవచ్చును. స్టాంప్ పేపర్ కొనుగోలు చేయవలసిన అవసరం లేదు. వీలునామా కర్త స్వస్థ చిత్తముతో (Sound

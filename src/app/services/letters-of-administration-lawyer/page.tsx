@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     absolute: "Letters of Administration Lawyer India | WillDrafting.in",
   },
   description:
-    "Expert advocate assistance for letters of administration lawyer india under Indian Succession Act, 1925. High Court petition drafting and representation.",
+    "Expert advocate assistance for letters of administration lawyer india under Indian Succession Act, 1925. High Court petition drafting and.",
   authors: [
     {
       name: "Advocate Anuj Anand Malik",
@@ -53,7 +53,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Letters of Administration Lawyer India | WillDrafting.in",
     description:
-      "Expert advocate assistance for letters of administration lawyer india under Indian Succession Act, 1925. High Court petition drafting and representation.",
+      "Expert advocate assistance for letters of administration lawyer india under Indian Succession Act, 1925. High Court petition drafting and.",
     url: "https://www.willdrafting.in/services/letters-of-administration-lawyer",
     siteName: "WillDrafting.in",
     locale: "en_IN",
@@ -71,7 +71,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Letters of Administration Lawyer India | WillDrafting.in",
     description:
-      "Expert advocate assistance for letters of administration lawyer india under Indian Succession Act, 1925. High Court petition drafting and representation.",
+      "Expert advocate assistance for letters of administration lawyer india under Indian Succession Act, 1925. High Court petition drafting and.",
     images: ["/images/letters-of-administration-lawyer-og.jpg"],
   },
   robots: {
@@ -128,7 +128,7 @@ const LOA_SCHEMA = {
       url: "https://www.willdrafting.in/services/letters-of-administration-lawyer",
       name: "Letters of Administration Lawyer India | WillDrafting.in",
       description:
-        "Expert advocate assistance for letters of administration lawyer india under Indian Succession Act, 1925. High Court petition drafting and representation.",
+        "Expert advocate assistance for letters of administration lawyer india under Indian Succession Act, 1925. High Court petition drafting and.",
       datePublished: "2026-10-27",
       dateModified: "2026-10-27",
       author: {
@@ -162,7 +162,7 @@ const LOA_SCHEMA = {
       image:
         "https://www.willdrafting.in/images/letters-of-administration-lawyer-og.jpg",
       description:
-        "Pan-India testamentary legal counsel specializing in High Court and District Court Letters of Administration petitions under Sections 218 and 232 of the Indian Succession Act, 1925.",
+        "Pan-India testamentary legal counsel specializing in High Court and District Court Letters of Administration petitions under Sections 218 and.",
       priceRange: "₹₹₹",
       address: {
         "@type": "PostalAddress",

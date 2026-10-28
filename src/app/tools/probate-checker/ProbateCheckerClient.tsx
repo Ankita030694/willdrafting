@@ -786,7 +786,7 @@ export default function ProbateCheckerClient() {
                   {result.actionType === "lawyer" ? (
                     <>
                       <Link
-                        href="/service/probate-lawyer"
+                        href="/services/probate-lawyer"
                         className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-slate-900 hover:bg-slate-800 text-white font-extrabold text-sm transition-transform hover:-translate-y-0.5"
                       >
                         <UserCheck className="w-4 h-4 text-rose-300" />
@@ -1577,14 +1577,14 @@ export default function ProbateCheckerClient() {
                 {/* Service Grid Chips */}
                 <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 pt-2 text-xs font-bold text-slate-800">
                   <Link
-                    href="/service/probate-lawyer"
+                    href="/services/probate-lawyer"
                     className="p-3 rounded-xl bg-slate-50 hover:bg-rose-50 border border-slate-200 hover:border-rose-200 transition-colors flex items-center justify-between"
                   >
                     <span>Probate Petitions</span>
                     <ArrowRight className="w-3.5 h-3.5 text-[#C65378]" />
                   </Link>
                   <Link
-                    href="/service/nri-will-india"
+                    href="/services/nri-will-india"
                     className="p-3 rounded-xl bg-slate-50 hover:bg-rose-50 border border-slate-200 hover:border-rose-200 transition-colors flex items-center justify-between"
                   >
                     <span>NRI Two-Will Strategy</span>
@@ -1679,7 +1679,7 @@ export default function ProbateCheckerClient() {
                   </div>
                   <div className="flex flex-wrap gap-2">
                     <a
-                      href="https://bombayhighcourt.nic.in"
+                      href="https://igrmaharashtra.gov.in"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-flex items-center gap-1.5 text-[11px] px-3 py-1.5 rounded-lg bg-blue-50 text-blue-800 hover:bg-blue-100 transition-colors font-semibold"
@@ -1732,7 +1732,7 @@ export default function ProbateCheckerClient() {
                   </div>
                   <div className="flex flex-wrap gap-2">
                     <Link
-                      href="/service/probate-lawyer"
+                      href="/services/probate-lawyer"
                       className="text-[11px] px-3 py-1.5 rounded-lg bg-rose-50 text-rose-800 hover:bg-rose-100 transition-colors font-bold"
                     >
                       Probate Legal Services & Petition Filing
@@ -1750,7 +1750,7 @@ export default function ProbateCheckerClient() {
                       Indian Legal Heir Succession Calculator
                     </Link>
                     <Link
-                      href="/service/nri-will-india"
+                      href="/services/nri-will-india"
                       className="text-[11px] px-3 py-1.5 rounded-lg bg-slate-100 text-slate-800 hover:bg-rose-50 hover:text-rose-800 transition-colors font-bold"
                     >
                       NRI Two-Will Strategy Guide
@@ -1830,7 +1830,7 @@ export default function ProbateCheckerClient() {
                 witness depositions, and asset release negotiation nationwide.
               </p>
               <Link
-                href="/service/probate-lawyer"
+                href="/services/probate-lawyer"
                 className="w-full inline-flex items-center justify-center gap-2 px-5 py-3 rounded-full bg-[#C65378] hover:bg-[#a33b5c] text-white font-extrabold text-xs shadow-md transition-transform hover:-translate-y-0.5"
               >
                 <span>Speak With Probate Advocate</span>
@@ -1893,7 +1893,7 @@ export default function ProbateCheckerClient() {
                 </Link>
 
                 <Link
-                  href="/service/nri-will-india"
+                  href="/services/nri-will-india"
                   className="block p-3 rounded-xl border border-slate-100 hover:border-rose-200 hover:bg-rose-50/50 transition-colors"
                 >
                   <div className="font-bold text-slate-900 text-xs">NRI Two-Will Strategy</div>
@@ -1922,7 +1922,7 @@ export default function ProbateCheckerClient() {
               <span className="text-xs font-bold text-[#172228] block mb-2">Related WillDrafting Guides:</span>
               <div className="flex flex-wrap gap-2">
                 <Link
-                  href="/service/probate-lawyer"
+                  href="/services/probate-lawyer"
                   className="text-[11px] px-3 py-1 rounded-lg bg-slate-100 text-[#172228] hover:bg-slate-200 transition-colors"
                 >
                   Probate of Will Lawyers
@@ -1940,7 +1940,7 @@ export default function ProbateCheckerClient() {
                   How to Challenge a Will
                 </Link>
                 <Link
-                  href="/service/succession-certificate"
+                  href="/services/succession-certificate"
                   className="text-[11px] px-3 py-1 rounded-lg bg-slate-100 text-[#172228] hover:bg-slate-200 transition-colors"
                 >
                   Succession Certificate Lawyers

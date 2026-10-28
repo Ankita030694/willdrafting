@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     absolute: "Will Drafting in Arunachal Pradesh: Online Will Guide",
   },
   description:
-    "Draft a valid Will in Arunachal Pradesh. Guidance on customary tribal inheritance practices, Land Holding Certificates (LHC), and legal succession online.",
+    "Draft a valid Will in Arunachal Pradesh. Guidance on customary tribal inheritance practices, Land Holding Certificates (LHC), and legal.",
   keywords: [
     "will drafting in arunachal pradesh",
     "will registration itanagar",
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Will Drafting in Arunachal Pradesh: Online Will Guide",
     description:
-      "Draft a valid Will in Arunachal Pradesh. Guidance on customary tribal inheritance practices, Land Holding Certificates (LHC), and legal succession online.",
+      "Draft a valid Will in Arunachal Pradesh. Guidance on customary tribal inheritance practices, Land Holding Certificates (LHC), and legal.",
     url: "https://www.willdrafting.in/locations/arunachal-pradesh",
     siteName: "WillDrafting.in",
     locale: "en_IN",
@@ -59,7 +59,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Will Drafting in Arunachal Pradesh: Online Will Guide",
     description:
-      "Draft a valid Will in Arunachal Pradesh. Guidance on customary tribal inheritance practices, Land Holding Certificates (LHC), and legal succession online.",
+      "Draft a valid Will in Arunachal Pradesh. Guidance on customary tribal inheritance practices, Land Holding Certificates (LHC), and legal.",
     images: [
       "https://www.willdrafting.in/images/will-drafting-in-arunachal-pradesh-og.jpg",
     ],
@@ -143,7 +143,7 @@ export default function ArunachalPradeshLocationPage() {
         url: canonicalUrl,
         name: "Will Drafting in Arunachal Pradesh: Online Will Guide",
         description:
-          "Draft a valid Will in Arunachal Pradesh. Guidance on customary tribal inheritance practices, Land Holding Certificates (LHC), and legal succession online.",
+          "Draft a valid Will in Arunachal Pradesh. Guidance on customary tribal inheritance practices, Land Holding Certificates (LHC), and legal.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -191,7 +191,7 @@ export default function ArunachalPradeshLocationPage() {
         "@id": `${canonicalUrl}#legalservice`,
         name: "WillDrafting Arunachal Pradesh - Estate Planning & SRO Registration",
         description:
-          "Professional Will drafting, advocate verification, Land Holding Certificate (LHC) succession compliance, SRO Book III registration, and Section 31 doorstep execution support across Arunachal Pradesh.",
+          "Professional Will drafting, advocate verification, Land Holding Certificate (LHC) succession compliance, SRO Book III registration, and.",
         url: canonicalUrl,
         image: imageUrl,
         email: "hello@willdrafting.in",

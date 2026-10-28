@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     absolute: "Bank Deceased Claim Documents Checklist | WillDrafting.in", // exactly 57 characters
   },
   description:
-    "Generate your bank deceased claim documents checklist under RBI rules. Compare SBI, HDFC, ICICI thresholds, indemnity bonds, and claim deceased accounts.", // exactly 153 characters
+    "Generate your bank deceased claim documents checklist under RBI rules. Compare SBI, HDFC, ICICI thresholds, indemnity bonds, and claim.", // exactly 153 characters
   keywords: [
     "bank deceased claim documents checklist",
     "sbi deceased claim calculator documents",
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Bank Deceased Claim Documents Checklist | WillDrafting.in",
     description:
-      "Generate your bank deceased claim documents checklist under RBI rules. Compare SBI, HDFC, ICICI thresholds, indemnity bonds, and claim deceased accounts.",
+      "Generate your bank deceased claim documents checklist under RBI rules. Compare SBI, HDFC, ICICI thresholds, indemnity bonds, and claim.",
     url: "https://www.willdrafting.in/tools/bank-deceased-claim-document-checklist-generator",
     siteName: "WillDrafting.in",
     locale: "en_IN",
@@ -53,7 +53,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Bank Deceased Claim Documents Checklist | WillDrafting.in",
     description:
-      "Generate your bank deceased claim documents checklist under RBI rules. Compare SBI, HDFC, ICICI thresholds, indemnity bonds, and claim deceased accounts.",
+      "Generate your bank deceased claim documents checklist under RBI rules. Compare SBI, HDFC, ICICI thresholds, indemnity bonds, and claim.",
     images: ["https://www.willdrafting.in/images/bank-deceased-claim-document-checklist-generator-og.jpg"],
   },
   robots: {
@@ -92,7 +92,7 @@ export default function BankDeceasedClaimPage() {
         url: canonicalUrl,
         name: "Bank Deceased Claim Documents Checklist | WillDrafting.in",
         description:
-          "Generate your bank deceased claim documents checklist under RBI rules. Compare SBI, HDFC, ICICI thresholds, indemnity bonds, and claim deceased accounts.",
+          "Generate your bank deceased claim documents checklist under RBI rules. Compare SBI, HDFC, ICICI thresholds, indemnity bonds, and claim.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -132,7 +132,7 @@ export default function BankDeceasedClaimPage() {
         applicationCategory: "LegalApplication",
         operatingSystem: "All",
         description:
-          "Interactive statutory compliance tool for generating bank deceased claim document checklists across top 12 Indian banks, comparing RBI simplified claim thresholds against succession certificate mandates.",
+          "Interactive statutory compliance tool for generating bank deceased claim document checklists across top 12 Indian banks, comparing RBI.",
         image: imageUrl,
         offers: {
           "@type": "Offer",

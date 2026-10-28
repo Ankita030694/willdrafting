@@ -633,7 +633,7 @@ export default function SuccessionCertificateClient() {
                 <div className="w-full">
                   <Image
                     src="/images/succession-certificate-og.jpg"
-                    alt="Visual Blueprint of Succession Certificate Legal Procedure and Civil Court Advocacy in India"
+                    alt="Visual Blueprint of Succession Certificate Legal Procedure and Civil Court Advocacy in"
                     width={1376}
                     height={768}
                     className="w-full h-auto block"
@@ -1264,7 +1264,7 @@ export default function SuccessionCertificateClient() {
                       Court Fee Calculator India
                     </Link>
                     <Link
-                      href="/service/probate-lawyer"
+                      href="/services/probate-lawyer"
                       className="px-3 py-1.5 rounded-lg bg-slate-100 hover:bg-rose-50 hover:text-[#C65378] text-slate-700 font-semibold transition-colors border border-slate-200"
                     >
                       Probate of Will Lawyers
@@ -1276,7 +1276,7 @@ export default function SuccessionCertificateClient() {
                       Free Probate Checker Tool
                     </Link>
                     <Link
-                      href="/service/will-registration"
+                      href="/services/will-registration"
                       className="px-3 py-1.5 rounded-lg bg-slate-100 hover:bg-rose-50 hover:text-[#C65378] text-slate-700 font-semibold transition-colors border border-slate-200"
                     >
                       Will Registration Service
@@ -1422,7 +1422,7 @@ export default function SuccessionCertificateClient() {
                 </Link>
 
                 <Link
-                  href="/service/probate-lawyer"
+                  href="/services/probate-lawyer"
                   className="block p-2.5 rounded-xl border border-slate-200 hover:border-[#C65378] hover:bg-rose-50/30 transition-all group"
                 >
                   <div className="text-xs font-bold text-slate-900 group-hover:text-[#C65378]">
@@ -1459,7 +1459,7 @@ export default function SuccessionCertificateClient() {
                   Relinquishment Deed Format
                 </Link>
                 <Link
-                  href="/service/probate-lawyer"
+                  href="/services/probate-lawyer"
                   className="text-[11px] px-3 py-1 rounded-lg bg-slate-100 text-[#172228] hover:bg-slate-200 transition-colors"
                 >
                   Probate of Will Lawyers

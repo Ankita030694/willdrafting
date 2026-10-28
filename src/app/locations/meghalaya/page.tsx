@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     absolute: "Will Drafting in Meghalaya: Matrilineal Succession Guide",
   },
   description:
-    "Draft a valid Will in Meghalaya. Guidance on Khasi and Garo matrilineal customary succession, self-acquired asset bequests, and registration in Shillong.",
+    "Draft a valid Will in Meghalaya. Guidance on Khasi and Garo matrilineal customary succession, self-acquired asset bequests, and registration.",
   keywords: [
     "will drafting in meghalaya",
     "khasi customary succession will",
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Will Drafting in Meghalaya: Matrilineal Succession Guide",
     description:
-      "Draft a valid Will in Meghalaya. Guidance on Khasi and Garo matrilineal customary succession, self-acquired asset bequests, and registration in Shillong.",
+      "Draft a valid Will in Meghalaya. Guidance on Khasi and Garo matrilineal customary succession, self-acquired asset bequests, and registration.",
     url: "https://www.willdrafting.in/locations/meghalaya",
     siteName: "WillDrafting.in",
     locale: "en_IN",
@@ -58,7 +58,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Will Drafting in Meghalaya: Matrilineal Succession Guide",
     description:
-      "Draft a valid Will in Meghalaya. Guidance on Khasi and Garo matrilineal customary succession, self-acquired asset bequests, and registration in Shillong.",
+      "Draft a valid Will in Meghalaya. Guidance on Khasi and Garo matrilineal customary succession, self-acquired asset bequests, and registration.",
     images: ["https://www.willdrafting.in/images/will-drafting-in-meghalaya-og.jpg"],
   },
   robots: {
@@ -138,7 +138,7 @@ export default function MeghalayaLocationPage() {
         url: canonicalUrl,
         name: "Will Drafting in Meghalaya: Matrilineal Succession Guide",
         description:
-          "Draft a valid Will in Meghalaya. Guidance on Khasi and Garo matrilineal customary succession, self-acquired asset bequests, and registration in Shillong.",
+          "Draft a valid Will in Meghalaya. Guidance on Khasi and Garo matrilineal customary succession, self-acquired asset bequests, and registration.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -185,7 +185,7 @@ export default function MeghalayaLocationPage() {
         "@id": `${canonicalUrl}#legalservice`,
         name: "WillDrafting Meghalaya - Estate Planning & SRO Registration",
         description:
-          "Professional Will drafting, customary succession legal counsel, advocate verification, and DC Office Sub-Registrar registration support across Shillong, Tura, Jowai, Nongpoh, and all districts of Meghalaya.",
+          "Professional Will drafting, customary succession legal counsel, advocate verification, and DC Office Sub-Registrar registration support across.",
         url: canonicalUrl,
         image: imageUrl,
         email: "hello@willdrafting.in",

@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     absolute: "Will Drafting in Visakhapatnam: Online Will Making Guide",
   },
   description:
-    "Draft a legally valid Will in Visakhapatnam. Complete AP IGRS registration guidance, coastal asset protection, and senior advocate consultation online.",
+    "Draft a legally valid Will in Visakhapatnam. Complete AP IGRS registration guidance, coastal asset protection, and senior advocate.",
   keywords: [
     "will drafting in visakhapatnam",
     "will registration vizag igrs ap",
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Will Drafting in Visakhapatnam: Online Will Making Guide",
     description:
-      "Draft a legally valid Will in Visakhapatnam. Complete AP IGRS registration guidance, coastal asset protection, and senior advocate consultation online.",
+      "Draft a legally valid Will in Visakhapatnam. Complete AP IGRS registration guidance, coastal asset protection, and senior advocate.",
     url: "https://www.willdrafting.in/locations/visakhapatnam",
     siteName: "WillDrafting.in",
     locale: "en_IN",
@@ -62,7 +62,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Will Drafting in Visakhapatnam: Online Will Making Guide",
     description:
-      "Draft a legally valid Will in Visakhapatnam. Complete AP IGRS registration guidance, coastal asset protection, and senior advocate consultation online.",
+      "Draft a legally valid Will in Visakhapatnam. Complete AP IGRS registration guidance, coastal asset protection, and senior advocate.",
     images: ["https://www.willdrafting.in/images/will-drafting-in-visakhapatnam-og.jpg"],
   },
   robots: {
@@ -142,7 +142,7 @@ export default function VisakhapatnamLocationPage() {
         url: canonicalUrl,
         name: "Will Drafting in Visakhapatnam: Online Will Making Guide",
         description:
-          "Draft a legally valid Will in Visakhapatnam. Complete AP IGRS registration guidance, coastal asset protection, and senior advocate consultation online.",
+          "Draft a legally valid Will in Visakhapatnam. Complete AP IGRS registration guidance, coastal asset protection, and senior advocate.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -189,7 +189,7 @@ export default function VisakhapatnamLocationPage() {
         "@id": `${canonicalUrl}#legalservice`,
         name: "WillDrafting Visakhapatnam - Estate Planning, Naval Succession & AP IGRS Registration",
         description:
-          "Professional Will drafting, naval veteran estate succession advisory, and AP IGRS Sub-Registrar Office registration support across Visakhapatnam and Andhra Pradesh.",
+          "Professional Will drafting, naval veteran estate succession advisory, and AP IGRS Sub-Registrar Office registration support across.",
         url: canonicalUrl,
         image: imageUrl,
         telephone: "+91-8700343611",

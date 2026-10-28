@@ -329,7 +329,7 @@ export default function UttarPradeshLocationClient({ faqs }: Props) {
                   <ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />
                 </button>
                 <Link
-                  href="/service/will-registration"
+                  href="/services/will-registration"
                   className="border border-white/20 hover:border-white/40 text-white font-semibold px-6 py-3.5 rounded-xl hover:bg-white/5 transition-all flex items-center justify-center gap-2 text-center"
                 >
                   <span>Book SRO Registration Assistance</span>
@@ -357,8 +357,8 @@ export default function UttarPradeshLocationClient({ faqs }: Props) {
                 <Image
                   src="/images/will-drafting-in-uttar-pradesh.jpg"
                   alt="Online Will Drafting and Registration Services in Uttar Pradesh"
-                  fill
-                  className="object-contain group-hover:scale-105 transition-transform duration-500"
+                  width={1200} height={675}
+                  className="absolute inset-0 w-full h-full object-contain group-hover:scale-105 transition-transform duration-500"
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 42vw"
                   priority
                 />
@@ -978,7 +978,7 @@ export default function UttarPradeshLocationClient({ faqs }: Props) {
                     Need advocate escort or wheelchair assistance at this SRO?
                   </span>
                   <Link
-                    href="/service/will-registration"
+                    href="/services/will-registration"
                     className="text-[#C65378] hover:text-[#a83d5f] font-bold inline-flex items-center gap-1"
                   >
                     <span>Book Done-For-You Registration Service</span>
@@ -1712,7 +1712,7 @@ export default function UttarPradeshLocationClient({ faqs }: Props) {
                     </ul>
                   </div>
                   <Link
-                    href="/service/will-registration"
+                    href="/services/will-registration"
                     className="w-full py-2.5 rounded-xl border border-slate-300 hover:border-slate-400 font-bold text-xs text-slate-900 transition-colors text-center"
                   >
                     Book SRO Assistance
@@ -1868,8 +1868,8 @@ export default function UttarPradeshLocationClient({ faqs }: Props) {
               <Image
                 src="/images/will-drafting-in-uttar-pradesh.jpg"
                 alt="High Resolution Visual Blueprint: Uttar Pradesh Will Drafting and IGRSUP Registration"
-                fill
-                className="object-contain"
+                width={1200} height={675}
+                className="absolute inset-0 w-full h-full object-contain"
                 sizes="(max-width: 1200px) 95vw, 1000px"
               />
             </div>

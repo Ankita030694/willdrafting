@@ -513,9 +513,9 @@ THE DONOR FURTHER RESERVES AN ABSOLUTE LIFETIME RIGHT OF RESIDENCE in the proper
               <div className="relative aspect-[16/9] w-full">
                 <Image
                   src="/images/gift-deed-format-blood-relatives-india-og.jpg"
-                  alt="Gift Deed Format for Blood Relatives in India Legal Templates and Senior Citizen Protection Clause"
-                  fill
-                  className="object-cover"
+                  alt="Gift Deed Format for Blood Relatives in India Legal Templates and Senior Citizen"
+                  width={1200} height={675}
+                  className="absolute inset-0 w-full h-full object-cover"
                   priority
                 />
               </div>
@@ -1372,7 +1372,7 @@ THE DONOR FURTHER RESERVES AN ABSOLUTE LIFETIME RIGHT OF RESIDENCE in the proper
                     <span>100% Statutory Compliance</span>
                   </div>
                   <Link
-                    href="/services/gift-deed-drafting-registration"
+                    href="/templates/gift-deed-format-blood-relatives-india"
                     className="text-[#C65378] font-bold hover:underline inline-flex items-center gap-1"
                   >
                     <span>Gift Deed Legal Drafting Services</span>
@@ -1450,7 +1450,7 @@ THE DONOR FURTHER RESERVES AN ABSOLUTE LIFETIME RIGHT OF RESIDENCE in the proper
                   <ExternalLink className="w-3.5 h-3.5 text-slate-400" />
                 </a>
                 <a
-                  href="https://incometaxindia.gov.in"
+                  href="https://www.indiacode.nic.in"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="p-3.5 rounded-xl bg-white border border-slate-200 hover:border-[#C65378] transition-colors flex items-center justify-between"

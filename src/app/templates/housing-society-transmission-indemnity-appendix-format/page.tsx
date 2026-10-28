@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     absolute: "Housing Society Share Transfer After Death | WillDrafting", // exactly 57 characters
   },
   description:
-    "Download housing society share transfer formats under MCS Act. Includes editable Appendix 15, 16, 17, and 19 indemnity bonds with step-by-step guidance.", // exactly 152 characters
+    "Download housing society share transfer formats under MCS Act. Includes editable Appendix 15, 16, 17, and 19 indemnity bonds with step-by-step.", // exactly 152 characters
   keywords: [
     "housing society share transfer after death application format",
     "appendix 14 15 16 17 19 maharashtra housing society pdf",
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Housing Society Share Transfer After Death | WillDrafting",
     description:
-      "Download housing society share transfer formats under MCS Act. Includes editable Appendix 15, 16, 17, and 19 indemnity bonds with step-by-step guidance.",
+      "Download housing society share transfer formats under MCS Act. Includes editable Appendix 15, 16, 17, and 19 indemnity bonds with step-by-step.",
     url: "https://www.willdrafting.in/templates/housing-society-transmission-indemnity-appendix-format",
     siteName: "WillDrafting.in",
     locale: "en_IN",
@@ -53,7 +53,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Housing Society Share Transfer After Death | WillDrafting",
     description:
-      "Download housing society share transfer formats under MCS Act. Includes editable Appendix 15, 16, 17, and 19 indemnity bonds with step-by-step guidance.",
+      "Download housing society share transfer formats under MCS Act. Includes editable Appendix 15, 16, 17, and 19 indemnity bonds with step-by-step.",
     images: ["https://www.willdrafting.in/images/housing-society-transmission-indemnity-appendix-format-og.jpg"],
   },
   robots: {
@@ -90,7 +90,7 @@ export default function HousingSocietyTransmissionPage() {
         url: canonicalUrl,
         name: "Housing Society Share Transfer After Death | WillDrafting",
         description:
-          "Download housing society share transfer formats under MCS Act. Includes editable Appendix 15, 16, 17, and 19 indemnity bonds with step-by-step guidance.",
+          "Download housing society share transfer formats under MCS Act. Includes editable Appendix 15, 16, 17, and 19 indemnity bonds with step-by-step.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -128,7 +128,7 @@ export default function HousingSocietyTransmissionPage() {
         name: "Housing Society Transmission and Indemnity Appendix Formats",
         url: canonicalUrl,
         description:
-          "Statutory form pack and legal templates under Maharashtra Co-operative Societies Act Model Bye-Laws including Appendix 15 Nominee Application, Appendix 16 Legal Heir Application, Appendix 17 Public Notice, and Appendix 19 Indemnity Bond.",
+          "Statutory form pack and legal templates under Maharashtra Co-operative Societies Act Model Bye-Laws including Appendix 15 Nominee Application.",
         fileFormat: "text/html",
         isAccessibleForFree: true,
         image: imageUrl,
@@ -147,7 +147,7 @@ export default function HousingSocietyTransmissionPage() {
         "@id": `${canonicalUrl}#article`,
         headline: "Housing Society Transmission Application & Appendix Formats",
         description:
-          "Comprehensive legal guide and editable appendix templates for transmitting cooperative housing society shares and flat ownership after a member passes away.",
+          "Comprehensive legal guide and editable appendix templates for transmitting cooperative housing society shares and flat ownership after a.",
         image: imageUrl,
         mainEntityOfPage: canonicalUrl,
         inLanguage: "en-IN",

@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     absolute: "Will Drafting in Kolkata: Registration & Probate Rules",
   },
   description:
-    "Protect ancestral and self-acquired assets in Kolkata. Learn Calcutta High Court probate rules, Will drafting, and registration across West Bengal.",
+    "Protect ancestral and self-acquired assets in Kolkata. Learn Calcutta High Court probate rules, Will drafting, and registration across West.",
   keywords: [
     "will drafting in kolkata",
     "calcutta high court probate will",
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Will Drafting in Kolkata: Registration & Probate Rules",
     description:
-      "Protect ancestral and self-acquired assets in Kolkata. Learn Calcutta High Court probate rules, Will drafting, and registration across West Bengal.",
+      "Protect ancestral and self-acquired assets in Kolkata. Learn Calcutta High Court probate rules, Will drafting, and registration across West.",
     url: "https://www.willdrafting.in/locations/kolkata",
     siteName: "WillDrafting.in",
     locale: "en_IN",
@@ -63,7 +63,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Will Drafting in Kolkata: Registration & Probate Rules",
     description:
-      "Protect ancestral and self-acquired assets in Kolkata. Learn Calcutta High Court probate rules, Will drafting, and registration across West Bengal.",
+      "Protect ancestral and self-acquired assets in Kolkata. Learn Calcutta High Court probate rules, Will drafting, and registration across West.",
     images: ["https://www.willdrafting.in/images/will-drafting-in-kolkata-og.jpg"],
   },
   robots: {
@@ -143,7 +143,7 @@ export default function KolkataLocationPage() {
         url: canonicalUrl,
         name: "Will Drafting in Kolkata: Registration & Probate Rules",
         description:
-          "Protect ancestral and self-acquired assets in Kolkata. Learn Calcutta High Court probate rules, Will drafting, and registration across West Bengal.",
+          "Protect ancestral and self-acquired assets in Kolkata. Learn Calcutta High Court probate rules, Will drafting, and registration across West.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -190,7 +190,7 @@ export default function KolkataLocationPage() {
         "@id": `${canonicalUrl}#legalservice`,
         name: "WillDrafting Kolkata - Estate Planning, SRO Registration & Calcutta HC Probate",
         description:
-          "Professional Will drafting, Dayabhaga ancestral asset guidance, Calcutta High Court probate compliance, and Sub-Registrar registration across Kolkata and Greater West Bengal.",
+          "Professional Will drafting, Dayabhaga ancestral asset guidance, Calcutta High Court probate compliance, and Sub-Registrar registration across.",
         url: canonicalUrl,
         image: imageUrl,
         email: "hello@willdrafting.in",

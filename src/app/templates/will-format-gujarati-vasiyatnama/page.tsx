@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     absolute: "વસીયતનામું ફોર્મેટ ગુજરાતી | Will Format | WillDrafting", // exactly 55 characters
   },
   description:
-    "Download legally valid વસીયતનામું ફોર્મેટ ગુજરાતી under Indian Succession Act 1925. Free sample clauses, execution rules & Gujarat registration guide.", // exactly 150 characters
+    "Download legally valid વસીયતનામું ફોર્મેટ ગુજરાતી under Indian Succession Act 1925. Free sample clauses, execution rules & Gujarat.", // exactly 150 characters
   keywords: [
     "વસીયતનામું ફોર્મેટ ગુજરાતી",
     "will format in gujarati",
@@ -37,15 +37,23 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://www.willdrafting.in/templates/will-format-gujarati-vasiyatnama",
     languages: {
-      "gu-IN": "https://www.willdrafting.in/templates/will-format-gujarati-vasiyatnama",
       "en-IN": "https://www.willdrafting.in/templates/will-format-india",
-      "x-default": "https://www.willdrafting.in/templates/will-format-gujarati-vasiyatnama",
+      "hi-IN": "https://www.willdrafting.in/templates/will-format-hindi",
+      "mr-IN": "https://www.willdrafting.in/templates/will-format-marathi-mrutyupatra",
+      "gu-IN": "https://www.willdrafting.in/templates/will-format-gujarati-vasiyatnama",
+      "pa-IN": "https://www.willdrafting.in/templates/will-format-punjabi-vasiyatnama",
+      "bn-IN": "https://www.willdrafting.in/templates/will-format-bengali-ichchapatra",
+      "ta-IN": "https://www.willdrafting.in/templates/will-format-tamil-uyil-sasanam",
+      "te-IN": "https://www.willdrafting.in/templates/will-format-telugu-veelunama",
+      "kn-IN": "https://www.willdrafting.in/templates/will-format-kannada-uyilu",
+      "ml-IN": "https://www.willdrafting.in/templates/will-format-malayalam-maranapathram",
+      "x-default": "https://www.willdrafting.in/templates/will-format-india",
     },
   },
   openGraph: {
     title: "વસીયતનામું ફોર્મેટ ગુજરાતી | Will Format | WillDrafting",
     description:
-      "Download legally valid વસીયતનામું ફોર્મેટ ગુજરાતી under Indian Succession Act 1925. Free sample clauses, execution rules & Gujarat registration guide.",
+      "Download legally valid વસીયતનામું ફોર્મેટ ગુજરાતી under Indian Succession Act 1925. Free sample clauses, execution rules & Gujarat.",
     url: "https://www.willdrafting.in/templates/will-format-gujarati-vasiyatnama",
     siteName: "WillDrafting.in",
     locale: "gu_IN",
@@ -64,7 +72,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "વસીયતનામું ફોર્મેટ ગુજરાતી | Will Format | WillDrafting",
     description:
-      "Download legally valid વસીયતનામું ફોર્મેટ ગુજરાતી under Indian Succession Act 1925. Free sample clauses, execution rules & Gujarat registration guide.",
+      "Download legally valid વસીયતનામું ફોર્મેટ ગુજરાતી under Indian Succession Act 1925. Free sample clauses, execution rules & Gujarat.",
     images: ["https://www.willdrafting.in/images/will-format-gujarati-vasiyatnama-og.jpg"],
   },
   robots: {
@@ -101,7 +109,7 @@ export default function WillFormatGujaratiPage() {
         url: canonicalUrl,
         name: "વસીયતનામું ફોર્મેટ ગુજરાતી | Will Format | WillDrafting",
         description:
-          "Download legally valid વસીયતનામું ફોર્મેટ ગુજરાતી under Indian Succession Act 1925. Free sample clauses, execution rules & Gujarat registration guide.",
+          "Download legally valid વસીયતનામું ફોર્મેટ ગુજરાતી under Indian Succession Act 1925. Free sample clauses, execution rules & Gujarat.",
         inLanguage: "gu-IN",
         primaryImageOfPage: {
           "@type": "ImageObject",
@@ -147,7 +155,7 @@ export default function WillFormatGujaratiPage() {
         name: "કાનૂની વસીયતનામું ફોર્મેટ ગુજરાતી (Gujarati Legal Will Format)",
         url: canonicalUrl,
         description:
-          "Statutory Gujarati Vasiyatnama template compliant with Section 63 of the Indian Succession Act 1925, featuring executor appointment, schedule of immovable and movable assets, two attesting witness clauses, and Gujarat SRO registration guidelines.",
+          "Statutory Gujarati Vasiyatnama template compliant with Section 63 of the Indian Succession Act 1925, featuring executor appointment, schedule.",
         fileFormat: "text/html",
         isAccessibleForFree: true,
         image: imageUrl,
@@ -166,7 +174,7 @@ export default function WillFormatGujaratiPage() {
         "@id": `${canonicalUrl}#article`,
         headline: "વસીયતનામું ફોર્મેટ ગુજરાતી: કાનૂની વિલ નમૂનો અને નિયમો",
         description:
-          "Complete legal guide, printable Unicode Gujarati Vasiyatnama format, Gujarati-to-English legal glossary, and Gujarat Sub-Registrar registration procedure under Indian Succession Act 1925.",
+          "Complete legal guide, printable Unicode Gujarati Vasiyatnama format, Gujarati-to-English legal glossary, and Gujarat Sub-Registrar.",
         image: imageUrl,
         inLanguage: "gu-IN",
         mainEntityOfPage: canonicalUrl,

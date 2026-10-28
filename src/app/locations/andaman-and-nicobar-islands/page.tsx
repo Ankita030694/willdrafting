@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     absolute: "Will Drafting in Andaman & Nicobar: Online Will Guide",
   },
   description:
-    "Draft a valid Will in Andaman and Nicobar Islands. Guidance on Port Blair SRO registration, island revenue regulations, and family asset distribution.",
+    "Draft a valid Will in Andaman and Nicobar Islands. Guidance on Port Blair SRO registration, island revenue regulations, and family asset.",
   keywords: [
     "will drafting in andaman and nicobar",
     "will registration port blair",
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Will Drafting in Andaman & Nicobar: Online Will Guide",
     description:
-      "Draft a valid Will in Andaman and Nicobar Islands. Guidance on Port Blair SRO registration, island revenue regulations, and family asset distribution.",
+      "Draft a valid Will in Andaman and Nicobar Islands. Guidance on Port Blair SRO registration, island revenue regulations, and family asset.",
     url: "https://www.willdrafting.in/locations/andaman-and-nicobar-islands",
     siteName: "WillDrafting.in",
     locale: "en_IN",
@@ -59,7 +59,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Will Drafting in Andaman & Nicobar: Online Will Guide",
     description:
-      "Draft a valid Will in Andaman and Nicobar Islands. Guidance on Port Blair SRO registration, island revenue regulations, and family asset distribution.",
+      "Draft a valid Will in Andaman and Nicobar Islands. Guidance on Port Blair SRO registration, island revenue regulations, and family asset.",
     images: ["https://www.willdrafting.in/images/will-drafting-in-andaman-and-nicobar-islands-og.jpg"],
   },
   robots: {
@@ -139,7 +139,7 @@ export default function AndamanLocationPage() {
         url: canonicalUrl,
         name: "Will Drafting in Andaman & Nicobar: Online Will Guide",
         description:
-          "Draft a valid Will in Andaman and Nicobar Islands. Guidance on Port Blair SRO registration, island revenue regulations, and family asset distribution.",
+          "Draft a valid Will in Andaman and Nicobar Islands. Guidance on Port Blair SRO registration, island revenue regulations, and family asset.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -186,7 +186,7 @@ export default function AndamanLocationPage() {
         "@id": `${canonicalUrl}#legalservice`,
         name: "WillDrafting Andaman & Nicobar - Estate Planning & SRO Registration",
         description:
-          "Professional Will drafting, advocate verification, Port Blair Sub-Registrar registration, and Section 31 doorstep execution support across Port Blair, Swaraj Dweep, Diglipur, and Mayabunder.",
+          "Professional Will drafting, advocate verification, Port Blair Sub-Registrar registration, and Section 31 doorstep execution support across.",
         url: canonicalUrl,
         image: imageUrl,
         email: "hello@willdrafting.in",

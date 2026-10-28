@@ -282,9 +282,9 @@ export default function RaipurLocationClient({ faqs }: Props) {
                 <Image
                   src="/images/will-drafting-in-raipur.jpg"
                   alt="Will Drafting Services in Raipur: Legal Succession and Estate Planning"
-                  fill
+                  width={1200} height={675}
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 40vw"
-                  className="object-contain group-hover:scale-105 transition-transform duration-500"
+                  className="absolute inset-0 w-full h-full object-contain group-hover:scale-105 transition-transform duration-500"
                   priority
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent pointer-events-none" />
@@ -529,7 +529,7 @@ export default function RaipurLocationClient({ faqs }: Props) {
                   <span>STATUTORY PROVISIONS</span>
                 </div>
                 <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  1. Will Drafting &amp; Legal Framework in Chhattisgarh
+                  1. Will Drafting &amp; Legal Framework in Raipur
                 </h2>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Executing a legally binding Will in Raipur is governed by two central statutes: the <strong>Indian Succession Act, 1925</strong> and the <strong>Registration Act, 1908</strong>, together with specific tenancy and mutation rules under the <strong>Chhattisgarh Land Revenue Code, 1959</strong>.
@@ -1801,8 +1801,8 @@ export default function RaipurLocationClient({ faqs }: Props) {
                 <Image
                   src="/images/will-drafting-in-raipur.jpg"
                   alt="High Resolution Visual Blueprint: Raipur Will Drafting and NGDRS Registration"
-                  fill
-                  className="object-contain"
+                  width={1200} height={675}
+                  className="absolute inset-0 w-full h-full object-contain"
                 />
               </div>
             </div>

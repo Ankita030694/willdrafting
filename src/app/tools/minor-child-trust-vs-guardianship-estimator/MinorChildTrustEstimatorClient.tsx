@@ -437,9 +437,9 @@ The Testamentary Guardian shall have full custody and care of my minor child's e
                 <Image
                   src="/images/minor-child-trust-vs-guardianship-estimator-og.jpg"
                   alt="Minor Child Trust vs Guardianship Estimator and Inheritance Rules Guide India"
-                  fill
+                  width={1200} height={675}
                   priority
-                  className="object-cover object-center"
+                  className="absolute inset-0 w-full h-full object-cover object-center"
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 70vw, 900px"
                 />
               </div>
@@ -1547,7 +1547,7 @@ The Testamentary Guardian shall have full custody and care of my minor child's e
                     <ExternalLink className="w-3 h-3" />
                   </a>
                   <a
-                    href="https://main.sci.gov.in"
+                    href="https://www.sci.gov.in"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-slate-100 text-slate-800 hover:bg-slate-200 font-semibold"

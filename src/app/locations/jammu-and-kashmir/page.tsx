@@ -189,7 +189,7 @@ export default function JammuAndKashmirLocationPage() {
         "@id": `${canonicalUrl}#legalservice`,
         name: "WillDrafting Jammu & Kashmir - Estate Planning & SRO Registration",
         description:
-          "Professional Will drafting, advocate verification, NGDRS J&K registration scheduling, and doorstep execution support across Srinagar, Jammu, Anantnag, Baramulla, and Udhampur.",
+          "Professional Will drafting, advocate verification, NGDRS J&K registration scheduling, and doorstep execution support across Srinagar, Jammu.",
         url: canonicalUrl,
         image: imageUrl,
         email: "hello@willdrafting.in",

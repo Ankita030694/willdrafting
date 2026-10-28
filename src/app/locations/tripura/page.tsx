@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     absolute: "Will Drafting in Tripura: Online Will Registration Guide",
   },
   description:
-    "Draft a valid Will in Tripura. Expert guidance on TLR & LR Act provisions, tribal area Sixth Schedule land rules, and SRO registration in Agartala.",
+    "Draft a valid Will in Tripura. Expert guidance on TLR & LR Act provisions, tribal area Sixth Schedule land rules, and SRO registration in.",
   keywords: [
     "will drafting in tripura",
     "will registration agartala",
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Will Drafting in Tripura: Online Will Registration Guide",
     description:
-      "Draft a valid Will in Tripura. Expert guidance on TLR & LR Act provisions, tribal area Sixth Schedule land rules, and SRO registration in Agartala.",
+      "Draft a valid Will in Tripura. Expert guidance on TLR & LR Act provisions, tribal area Sixth Schedule land rules, and SRO registration in.",
     url: "https://www.willdrafting.in/locations/tripura",
     siteName: "WillDrafting.in",
     locale: "en_IN",
@@ -62,7 +62,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Will Drafting in Tripura: Online Will Registration Guide",
     description:
-      "Draft a valid Will in Tripura. Expert guidance on TLR & LR Act provisions, tribal area Sixth Schedule land rules, and SRO registration in Agartala.",
+      "Draft a valid Will in Tripura. Expert guidance on TLR & LR Act provisions, tribal area Sixth Schedule land rules, and SRO registration in.",
     images: ["https://www.willdrafting.in/images/will-drafting-in-tripura-og.jpg"],
   },
   robots: {
@@ -142,7 +142,7 @@ export default function TripuraLocationPage() {
         url: canonicalUrl,
         name: "Will Drafting in Tripura: Online Will Registration Guide",
         description:
-          "Draft a valid Will in Tripura. Expert guidance on TLR & LR Act provisions, tribal area Sixth Schedule land rules, and SRO registration in Agartala.",
+          "Draft a valid Will in Tripura. Expert guidance on TLR & LR Act provisions, tribal area Sixth Schedule land rules, and SRO registration in.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -189,7 +189,7 @@ export default function TripuraLocationPage() {
         "@id": `${canonicalUrl}#legalservice`,
         name: "WillDrafting Tripura - Estate Planning & SRO Registration",
         description:
-          "Professional Will drafting, advocate verification, TLR & LR Act compliance, and Sub-Registrar Office assistance across Agartala, Udaipur, Dharmanagar, and Kailashahar.",
+          "Professional Will drafting, advocate verification, TLR & LR Act compliance, and Sub-Registrar Office assistance across Agartala, Udaipur.",
         url: canonicalUrl,
         image: imageUrl,
         email: "hello@willdrafting.in",

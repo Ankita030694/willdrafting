@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     absolute: "Will Drafting in Ranchi: Registration & Probate Law Guide",
   },
   description:
-    "Draft and register your Will in Ranchi. Expert Jharkhand High Court probate guidance, asset distribution, and lawyer consultation in Ranchi & Jharkhand.",
+    "Draft and register your Will in Ranchi. Expert Jharkhand High Court probate guidance, asset distribution, and lawyer consultation in Ranchi &.",
   keywords: [
     "will drafting in ranchi",
     "will registration ngdrs jharkhand",
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Will Drafting in Ranchi: Registration & Probate Law Guide",
     description:
-      "Draft and register your Will in Ranchi. Expert Jharkhand High Court probate guidance, asset distribution, and lawyer consultation in Ranchi & Jharkhand.",
+      "Draft and register your Will in Ranchi. Expert Jharkhand High Court probate guidance, asset distribution, and lawyer consultation in Ranchi &.",
     url: "https://www.willdrafting.in/locations/ranchi",
     siteName: "WillDrafting.in",
     locale: "en_IN",
@@ -62,7 +62,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Will Drafting in Ranchi: Registration & Probate Law Guide",
     description:
-      "Draft and register your Will in Ranchi. Expert Jharkhand High Court probate guidance, asset distribution, and lawyer consultation in Ranchi & Jharkhand.",
+      "Draft and register your Will in Ranchi. Expert Jharkhand High Court probate guidance, asset distribution, and lawyer consultation in Ranchi &.",
     images: ["https://www.willdrafting.in/images/will-drafting-in-ranchi-jharkhand-og.jpg"],
   },
   robots: {
@@ -142,7 +142,7 @@ export default function RanchiLocationPage() {
         url: canonicalUrl,
         name: "Will Drafting in Ranchi: Registration & Probate Law Guide",
         description:
-          "Draft and register your Will in Ranchi. Expert Jharkhand High Court probate guidance, asset distribution, and lawyer consultation in Ranchi & Jharkhand.",
+          "Draft and register your Will in Ranchi. Expert Jharkhand High Court probate guidance, asset distribution, and lawyer consultation in Ranchi &.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -189,7 +189,7 @@ export default function RanchiLocationPage() {
         "@id": `${canonicalUrl}#legalservice`,
         name: "WillDrafting Ranchi - Estate Planning, CNT Act Succession & NGDRS Registration",
         description:
-          "Professional Will drafting, Chota Nagpur Tenancy Act compliance advisory, RRDA and RMC plot inheritance, and Jharkhand NGDRS Sub-Registrar registration support across Ranchi and Jharkhand.",
+          "Professional Will drafting, Chota Nagpur Tenancy Act compliance advisory, RRDA and RMC plot inheritance, and Jharkhand NGDRS Sub-Registrar.",
         url: canonicalUrl,
         image: imageUrl,
         telephone: "+91-8700343611",

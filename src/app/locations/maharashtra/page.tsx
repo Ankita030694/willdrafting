@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     absolute: "Will Drafting in Maharashtra: Probate & Registration Guide",
   },
   description:
-    "Draft and register your Will in Maharashtra. Clear guidance on Section 213 Bombay HC probate rules, IGR Maharashtra e-Stepin, and housing society flats.",
+    "Draft and register your Will in Maharashtra. Clear guidance on Section 213 Bombay HC probate rules, IGR Maharashtra e-Stepin, and housing.",
   keywords: [
     "will drafting in maharashtra",
     "will registration igr maharashtra",
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Will Drafting in Maharashtra: Probate & Registration Guide",
     description:
-      "Draft and register your Will in Maharashtra. Clear guidance on Section 213 Bombay HC probate rules, IGR Maharashtra e-Stepin, and housing society flats.",
+      "Draft and register your Will in Maharashtra. Clear guidance on Section 213 Bombay HC probate rules, IGR Maharashtra e-Stepin, and housing.",
     url: "https://www.willdrafting.in/locations/maharashtra",
     siteName: "WillDrafting.in",
     locale: "en_IN",
@@ -61,7 +61,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Will Drafting in Maharashtra: Probate & Registration Guide",
     description:
-      "Draft and register your Will in Maharashtra. Clear guidance on Section 213 Bombay HC probate rules, IGR Maharashtra e-Stepin, and housing society flats.",
+      "Draft and register your Will in Maharashtra. Clear guidance on Section 213 Bombay HC probate rules, IGR Maharashtra e-Stepin, and housing.",
     images: ["https://www.willdrafting.in/images/will-drafting-in-maharashtra.jpg"],
   },
   robots: {
@@ -133,7 +133,7 @@ export default function MaharashtraLocationPage() {
         url: canonicalUrl,
         name: "Will Drafting in Maharashtra: Probate & Registration Guide",
         description:
-          "Draft and register your Will in Maharashtra. Clear guidance on Section 213 Bombay HC probate rules, IGR Maharashtra e-Stepin, and housing society flats.",
+          "Draft and register your Will in Maharashtra. Clear guidance on Section 213 Bombay HC probate rules, IGR Maharashtra e-Stepin, and housing.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -180,7 +180,7 @@ export default function MaharashtraLocationPage() {
         "@id": `${canonicalUrl}#legalservice`,
         name: "WillDrafting Maharashtra - Legal Estate Planning & SRO Registration",
         description:
-          "Professional Will drafting, advocate verification, IGR Maharashtra e-Stepin registration, and Section 31 doorstep execution support across Mumbai, Pune, Nagpur, Nashik, and all Maharashtra districts.",
+          "Professional Will drafting, advocate verification, IGR Maharashtra e-Stepin registration, and Section 31 doorstep execution support across.",
         url: canonicalUrl,
         image: imageUrl,
         telephone: "+91-8700343611",

@@ -269,7 +269,7 @@ export default function NotarizedVsRegisteredWillClient() {
         badge: "High Legal Shield Required",
         summary:
           "Because your scenario involves either high asset value, disinherited heirs, potential family friction, or elderly health scrutiny, registering your Will at the Sub-Registrar Office provides essential evidentiary weight under Section 60 of the Registration Act.",
-        actionUrl: "/service/will-registration",
+        actionUrl: "/services/will-registration",
         actionText: "Book Advocate-Assisted Will Registration",
       };
     } else {
@@ -952,7 +952,7 @@ export default function NotarizedVsRegisteredWillClient() {
                   </p>
                 </div>
                 <Link
-                  href="/service/will-registration"
+                  href="/services/will-registration"
                   className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-[#172228] text-white text-xs font-bold hover:bg-[#C65378] transition-colors shrink-0"
                 >
                   <span>Explore Will Registration</span>
@@ -1199,8 +1199,8 @@ export default function NotarizedVsRegisteredWillClient() {
                         ? "Plain Will vs Notarized Will vs Registered Will in Indian Legal Chamber"
                         : "Plain Will vs Notarized Will vs Registered Will Document Comparison"
                     }
-                    fill
-                    className="object-cover transition-opacity duration-300"
+                    width={1200} height={675}
+                    className="absolute inset-0 w-full h-full object-cover transition-opacity duration-300"
                     priority
                   />
                 </div>
@@ -1699,7 +1699,7 @@ export default function NotarizedVsRegisteredWillClient() {
                 Our senior advocates handle slot booking, witness coordination, and Sub-Registrar accompaniment across Delhi NCR, Mumbai, Bengaluru, and Pune.
               </p>
               <Link
-                href="/service/will-registration"
+                href="/services/will-registration"
                 className="inline-flex items-center gap-1.5 text-xs font-bold text-[#C65378] hover:underline"
               >
                 <span>Book Will Registration Service</span>
@@ -1752,7 +1752,7 @@ export default function NotarizedVsRegisteredWillClient() {
               <span className="text-xs font-bold text-[#172228] block mb-2">Related WillDrafting Guides:</span>
               <div className="flex flex-wrap gap-2">
                 <Link
-                  href="/service/will-registration"
+                  href="/services/will-registration"
                   className="text-[11px] px-3 py-1 rounded-lg bg-slate-100 text-[#172228] hover:bg-slate-200 transition-colors"
                 >
                   Will Registration Service

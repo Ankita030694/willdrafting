@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     absolute: "వీలునామా ఫార్మాట్ తెలుగు: Telugu Will Format | WillDrafting", // exactly 59 characters
   },
   description:
-    "Download legally valid వీలునామా ఫార్మాట్ తెలుగు (will format in telugu) under Indian Succession Act, 1925 with Telangana and AP SRO registration rules.", // exactly 151 characters
+    "Download legally valid వీలునామా ఫార్మాట్ తెలుగు (will format in telugu) under Indian Succession Act, 1925 with Telangana and AP SRO.", // exactly 151 characters
   keywords: [
     "వీలునామా ఫార్మాట్ తెలుగు",
     "will format in telugu",
@@ -28,15 +28,23 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://www.willdrafting.in/templates/will-format-telugu-veelunama",
     languages: {
+      "en-IN": "https://www.willdrafting.in/templates/will-format-india",
+      "hi-IN": "https://www.willdrafting.in/templates/will-format-hindi",
+      "mr-IN": "https://www.willdrafting.in/templates/will-format-marathi-mrutyupatra",
+      "gu-IN": "https://www.willdrafting.in/templates/will-format-gujarati-vasiyatnama",
+      "pa-IN": "https://www.willdrafting.in/templates/will-format-punjabi-vasiyatnama",
+      "bn-IN": "https://www.willdrafting.in/templates/will-format-bengali-ichchapatra",
+      "ta-IN": "https://www.willdrafting.in/templates/will-format-tamil-uyil-sasanam",
       "te-IN": "https://www.willdrafting.in/templates/will-format-telugu-veelunama",
-      "en-IN": "https://www.willdrafting.in/templates/will-format-telugu-veelunama",
-      "x-default": "https://www.willdrafting.in/templates/will-format-telugu-veelunama",
+      "kn-IN": "https://www.willdrafting.in/templates/will-format-kannada-uyilu",
+      "ml-IN": "https://www.willdrafting.in/templates/will-format-malayalam-maranapathram",
+      "x-default": "https://www.willdrafting.in/templates/will-format-india",
     },
   },
   openGraph: {
     title: "వీలునామా ఫార్మాట్ తెలుగు: Telugu Will Format | WillDrafting",
     description:
-      "Download legally valid వీలునామా ఫార్మాట్ తెలుగు (will format in telugu) under Indian Succession Act, 1925 with Telangana and AP SRO registration rules.",
+      "Download legally valid వీలునామా ఫార్మాట్ తెలుగు (will format in telugu) under Indian Succession Act, 1925 with Telangana and AP SRO.",
     url: "https://www.willdrafting.in/templates/will-format-telugu-veelunama",
     siteName: "WillDrafting.in",
     locale: "te_IN",
@@ -54,7 +62,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "వీలునామా ఫార్మాట్ తెలుగు: Telugu Will Format | WillDrafting",
     description:
-      "Download legally valid వీలునామా ఫార్మాట్ తెలుగు (will format in telugu) under Indian Succession Act, 1925 with Telangana and AP SRO registration rules.",
+      "Download legally valid వీలునామా ఫార్మాట్ తెలుగు (will format in telugu) under Indian Succession Act, 1925 with Telangana and AP SRO.",
     images: ["https://www.willdrafting.in/images/will-format-telugu-veelunama-og.jpg"],
   },
   robots: {
@@ -91,7 +99,7 @@ export default function WillFormatTeluguPage() {
         url: canonicalUrl,
         name: "వీలునామా ఫార్మాట్ తెలుగు: Telugu Will Format | WillDrafting",
         description:
-          "Download legally valid వీలునామా ఫార్మాట్ తెలుగు (will format in telugu) under Indian Succession Act, 1925 with Telangana and AP SRO registration rules.",
+          "Download legally valid వీలునామా ఫార్మాట్ తెలుగు (will format in telugu) under Indian Succession Act, 1925 with Telangana and AP SRO.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -129,7 +137,7 @@ export default function WillFormatTeluguPage() {
         name: "వీలునామా ఫార్మాట్ తెలుగు (Will Format in Telugu)",
         url: canonicalUrl,
         description:
-          "Bilingual Telugu and English legal Will draft template compliant with Section 63 of the Indian Succession Act 1925, Telangana Registration Rules, and Andhra Pradesh IGRS guidelines.",
+          "Bilingual Telugu and English legal Will draft template compliant with Section 63 of the Indian Succession Act 1925, Telangana Registration.",
         fileFormat: "text/html",
         isAccessibleForFree: true,
         image: imageUrl,
@@ -148,7 +156,7 @@ export default function WillFormatTeluguPage() {
         "@id": `${canonicalUrl}#article`,
         headline: "వీలునామా ఫార్మాట్ తెలుగు: Legal Will Format in Telugu Guide",
         description:
-          "Complete legal guide and printable template on how to write a valid Will in Telugu (వీలునామా ఎలా రాయాలి) under Indian Succession Act 1925 with Telangana and AP SRO guidelines.",
+          "Complete legal guide and printable template on how to write a valid Will in Telugu (వీలునామా ఎలా రాయాలి) under Indian Succession Act 1925 with.",
         image: imageUrl,
         mainEntityOfPage: canonicalUrl,
         inLanguage: ["te-IN", "en-IN"],

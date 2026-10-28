@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     absolute: "Christian Will Format India: Legal Template | WillDrafting", // exactly 58 characters
   },
   description:
-    "Download a valid Christian will format in India. Plain paper template with Section 67 witness safeguards, Section 69 marriage rules, and sample clauses.", // exactly 152 characters
+    "Download a valid Christian will format in India. Plain paper template with Section 67 witness safeguards, Section 69 marriage rules, and.", // exactly 152 characters
   keywords: [
     "christian will format india",
     "will format under indian succession act for christians",
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Christian Will Format India: Legal Template | WillDrafting",
     description:
-      "Download a valid Christian will format in India. Plain paper template with Section 67 witness safeguards, Section 69 marriage rules, and sample clauses.",
+      "Download a valid Christian will format in India. Plain paper template with Section 67 witness safeguards, Section 69 marriage rules, and.",
     url: "https://www.willdrafting.in/templates/christian-will-format-india",
     siteName: "WillDrafting.in",
     locale: "en_IN",
@@ -53,7 +53,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Christian Will Format India: Legal Template | WillDrafting",
     description:
-      "Download a valid Christian will format in India. Plain paper template with Section 67 witness safeguards, Section 69 marriage rules, and sample clauses.",
+      "Download a valid Christian will format in India. Plain paper template with Section 67 witness safeguards, Section 69 marriage rules, and.",
     images: ["https://www.willdrafting.in/images/christian-will-format-india-og.jpg"],
   },
   robots: {
@@ -90,7 +90,7 @@ export default function ChristianWillPage() {
         url: canonicalUrl,
         name: "Christian Will Format India: Legal Template | WillDrafting",
         description:
-          "Download a valid Christian will format in India. Plain paper template with Section 67 witness safeguards, Section 69 marriage rules, and sample clauses.",
+          "Download a valid Christian will format in India. Plain paper template with Section 67 witness safeguards, Section 69 marriage rules, and.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -128,7 +128,7 @@ export default function ChristianWillPage() {
         name: "Christian Will Format in India (Indian Succession Act Legal Template)",
         url: canonicalUrl,
         description:
-          "Lawyer-vetted legal Will format for Indian Christians under the Indian Succession Act, 1925. Features Section 67 witness-beneficiary safeguards, Section 69 marriage revocation compliance, and Mary Roy gender parity clauses.",
+          "Lawyer-vetted legal Will format for Indian Christians under the Indian Succession Act, 1925. Features Section 67 witness-beneficiary.",
         image: imageUrl,
         fileFormat: "text/html",
         hasDigitalDocumentPermission: {

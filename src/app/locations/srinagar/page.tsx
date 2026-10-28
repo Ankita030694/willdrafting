@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     absolute: "Will Drafting in Srinagar: Online Will & Property Guide",
   },
   description:
-    "Draft a valid Will in Srinagar. Guidance on NGDRS J&K registration, apple orchard and hotel succession, SMC mutation, and Indian Succession Act rules.",
+    "Draft a valid Will in Srinagar. Guidance on NGDRS J&K registration, apple orchard and hotel succession, SMC mutation, and Indian Succession.",
   keywords: [
     "will drafting in srinagar",
     "will registration ngdrs srinagar",
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Will Drafting in Srinagar: Online Will & Property Guide",
     description:
-      "Draft a valid Will in Srinagar. Guidance on NGDRS J&K registration, apple orchard and hotel succession, SMC mutation, and Indian Succession Act rules.",
+      "Draft a valid Will in Srinagar. Guidance on NGDRS J&K registration, apple orchard and hotel succession, SMC mutation, and Indian Succession.",
     url: "https://www.willdrafting.in/locations/srinagar",
     siteName: "WillDrafting.in",
     locale: "en_IN",
@@ -61,7 +61,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Will Drafting in Srinagar: Online Will & Property Guide",
     description:
-      "Draft a valid Will in Srinagar. Guidance on NGDRS J&K registration, apple orchard and hotel succession, SMC mutation, and Indian Succession Act rules.",
+      "Draft a valid Will in Srinagar. Guidance on NGDRS J&K registration, apple orchard and hotel succession, SMC mutation, and Indian Succession.",
     images: ["https://www.willdrafting.in/images/will-drafting-in-srinagar-og.jpg"],
   },
   robots: {
@@ -141,7 +141,7 @@ export default function SrinagarLocationPage() {
         url: canonicalUrl,
         name: "Will Drafting in Srinagar: Online Will & Property Guide",
         description:
-          "Draft a valid Will in Srinagar. Guidance on NGDRS J&K registration, apple orchard and hotel succession, SMC mutation, and Indian Succession Act rules.",
+          "Draft a valid Will in Srinagar. Guidance on NGDRS J&K registration, apple orchard and hotel succession, SMC mutation, and Indian Succession.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -188,7 +188,7 @@ export default function SrinagarLocationPage() {
         "@id": `${canonicalUrl}#legalservice`,
         name: "WillDrafting Srinagar - Estate Planning & NGDRS Registration",
         description:
-          "Professional Will drafting, advocate verification, NGDRS J&K registration, and doorstep execution support across Srinagar, Rajbagh, Lal Chowk, and Hazratbal.",
+          "Professional Will drafting, advocate verification, NGDRS J&K registration, and doorstep execution support across Srinagar, Rajbagh, Lal Chowk.",
         url: canonicalUrl,
         image: imageUrl,
         email: "hello@willdrafting.in",

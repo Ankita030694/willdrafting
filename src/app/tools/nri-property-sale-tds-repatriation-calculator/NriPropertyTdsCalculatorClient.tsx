@@ -1279,9 +1279,9 @@ The entire balance sale consideration shall be paid by the PURCHASER exclusively
               <div className="relative w-full aspect-[16/9] sm:aspect-[1376/768] rounded-2xl overflow-hidden bg-slate-900 shadow-inner">
                 <Image
                   src="/images/nri-property-sale-tds-repatriation-calculator-og.jpg"
-                  alt="NRI Inherited Property Sale TDS &amp; Repatriation Calculator Blueprint - Section 195 vs Form 13"
-                  fill
-                  className="object-cover"
+                  alt="NRI Inherited Property Sale TDS &amp; Repatriation Calculator Blueprint - Section 195"
+                  width={1200} height={675}
+                  className="absolute inset-0 w-full h-full object-cover"
                   sizes="(max-width: 1200px) 100vw, 1200px"
                   priority
                 />
@@ -1957,7 +1957,7 @@ The PURCHASER (TAN: [Purchaser TAN]) undertakes to deduct TDS strictly as per th
                 </a>
 
                 <Link
-                  href="/services/nri-inherited-property-sale-repatriation"
+                  href="/services/nri-will-india"
                   className="p-3.5 rounded-xl border border-slate-200 bg-white hover:border-[#C65378] transition-colors flex items-center justify-between"
                 >
                   <div>

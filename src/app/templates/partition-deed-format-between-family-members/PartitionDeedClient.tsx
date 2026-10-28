@@ -539,9 +539,9 @@ IT IS EXPRESSLY CLARIFIED that this Owelty equalization sum is paid solely for a
                 <Image
                   src="/images/partition-deed-format-between-family-members-og.jpg"
                   alt="Partition Deed Format Between Brothers India Legal Template and Schedule Guidelines"
-                  fill
+                  width={1200} height={675}
                   priority
-                  className="object-cover transition-transform duration-500 hover:scale-105"
+                  className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 hover:scale-105"
                   sizes="(max-width: 1024px) 100vw, 850px"
                 />
               </div>

@@ -348,7 +348,7 @@ export const BLOG_ARTICLES: BlogArticle[] = [
 //       "registered will benefits",
 //       "will notarization india",
 //     ],
-//     title: "Is a Notarized Will Legally Valid in India? Plain vs Notarized vs Registered",
+//     title: "Is a Notarized Will Valid in India? Registered vs Plain Will",
 //     lead:
 //       "Thousands of Indians pay for notary stamps believing their Will is government-protected. The statutory reality: notarization adds zero legal validity under Section 63 of the Indian Succession Act. A plain paper Will with two witnesses is 100% valid, while registration adds formidable evidentiary weight in court.",
 //     date: "October 21, 2026",

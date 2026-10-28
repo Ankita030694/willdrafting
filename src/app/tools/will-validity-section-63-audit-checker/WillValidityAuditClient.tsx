@@ -1464,8 +1464,8 @@ Date & Official Clinic Stamp: [Date]"`;
                 <Image
                   src="/images/will-validity-section-63-audit-checker-og.jpg"
                   alt="Check If Will Is Valid in India - Section 63 Audit Checker and Court-Defensibility Guide"
-                  fill
-                  className="object-cover"
+                  width={1200} height={675}
+                  className="absolute inset-0 w-full h-full object-cover"
                   sizes="(max-width: 1200px) 100vw, 1200px"
                 />
               </div>
@@ -2193,7 +2193,7 @@ Registration No.: [Reg. No. & State Medical Council] | Official Stamp"`}
                     <ExternalLink className="w-3 h-3" />
                   </a>
                   <a
-                    href="https://main.sci.gov.in"
+                    href="https://www.sci.gov.in"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-blue-50 text-blue-800 hover:bg-blue-100 font-semibold"

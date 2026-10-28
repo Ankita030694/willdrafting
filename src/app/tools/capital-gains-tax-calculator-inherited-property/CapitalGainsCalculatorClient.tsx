@@ -1237,7 +1237,7 @@ AND WHEREAS by virtue of the said testamentary bequest / intestate inheritance a
                           Need Form 13 filed on TRACES before registration?
                         </span>
                         <Link
-                          href="/services/nri-inherited-property-sale-repatriation"
+                          href="/services/nri-will-india"
                           className="inline-flex items-center gap-1 text-xs font-bold text-[#C65378] hover:underline"
                         >
                           <span>Explore NRI Property Repatriation Service</span>
@@ -1262,9 +1262,9 @@ AND WHEREAS by virtue of the said testamentary bequest / intestate inheritance a
               <div className="relative w-full aspect-[16/9] sm:aspect-[1200/675] rounded-2xl overflow-hidden bg-slate-900 shadow-inner">
                 <Image
                   src="/images/capital-gains-tax-calculator-inherited-property-og.jpg"
-                  alt="Capital Gains Tax on Inherited Property Calculator India - Statutory Blueprint & Grandfathering Guide"
-                  fill
-                  className="object-cover"
+                  alt="Capital Gains Tax on Inherited Property Calculator India - Statutory Blueprint &"
+                  width={1200} height={675}
+                  className="absolute inset-0 w-full h-full object-cover"
                   sizes="(max-width: 1200px) 100vw, 1200px"
                 />
               </div>
@@ -1480,7 +1480,7 @@ AND WHEREAS by virtue of the said testamentary bequest / intestate inheritance a
                   </p>
                   <div className="pt-1">
                     <Link
-                      href="/services/nri-inherited-property-sale-repatriation"
+                      href="/services/nri-will-india"
                       className="inline-flex items-center gap-1.5 text-xs font-bold text-[#C65378] hover:text-[#a33b5c]"
                     >
                       <span>Learn about AMA Legal Solutions NRI Property Sale &amp; Repatriation Desk</span>
@@ -1816,7 +1816,7 @@ AND WHEREAS by virtue of the said testamentary bequest / intestate inheritance a
                 {/* Service Grid Chips */}
                 <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 pt-2 text-xs font-bold text-slate-800">
                   <Link
-                    href="/services/nri-inherited-property-sale-repatriation"
+                    href="/services/nri-will-india"
                     className="p-3 rounded-xl bg-slate-50 hover:bg-rose-50 border border-slate-200 hover:border-rose-200 transition-colors flex items-center justify-between"
                   >
                     <span>NRI Inherited Property Desk</span>
@@ -1930,7 +1930,7 @@ AND WHEREAS by virtue of the said testamentary bequest / intestate inheritance a
 
                 <div className="pt-2 border-t border-slate-100 flex flex-wrap gap-3">
                   <a
-                    href="https://incometaxindia.gov.in"
+                    href="https://www.indiacode.nic.in"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-blue-50 text-blue-800 hover:bg-blue-100 font-semibold"
@@ -1988,7 +1988,7 @@ AND WHEREAS by virtue of the said testamentary bequest / intestate inheritance a
                       Indian Legal Will Template
                     </Link>
                     <Link
-                      href="/services/nri-inherited-property-sale-repatriation"
+                      href="/services/nri-will-india"
                       className="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-800 hover:bg-rose-50 hover:text-rose-800 font-bold"
                     >
                       NRI Property Sale Repatriation Desk

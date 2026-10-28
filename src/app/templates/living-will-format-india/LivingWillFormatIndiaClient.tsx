@@ -511,9 +511,9 @@ export default function LivingWillFormatIndiaClient() {
                   QUICK SUMMARY: 4 ESSENTIAL RULES OF A LIVING WILL IN INDIA
                 </span>
               </div>
-              <h3 className="text-lg font-bold text-slate-900 mb-3">
+              <div className="text-lg font-bold text-slate-900 mb-3">
                 What Every Indian Family Should Know About Living Wills
-              </h3>
+              </div>
               <ul className="space-y-2 text-sm text-slate-700">
                 <li className="flex items-start gap-2.5">
                   <CheckCircle2 className="w-4 h-4 text-[#5F7E75] shrink-0 mt-0.5" />
@@ -804,7 +804,7 @@ export default function LivingWillFormatIndiaClient() {
                 <div className="w-full">
                   <Image
                     src="/images/living-will-process-infographic.svg"
-                    alt="Visual Blueprint and SOP for Advance Medical Directive in India under 2023 Supreme Court Order"
+                    alt="Visual Blueprint and SOP for Advance Medical Directive in India under 2023 Supreme"
                     width={1200}
                     height={720}
                     className="w-full h-auto block"
@@ -1245,7 +1245,7 @@ export default function LivingWillFormatIndiaClient() {
                     Indian Succession Calculator &rarr;
                   </Link>
                   <Link
-                    href="/service/nri-will-india"
+                    href="/services/nri-will-india"
                     className="text-xs px-3 py-1.5 rounded-lg bg-white border border-slate-200 hover:border-[#C65378] hover:text-[#C65378] transition-colors"
                   >
                     NRI Indian Will Drafting &rarr;

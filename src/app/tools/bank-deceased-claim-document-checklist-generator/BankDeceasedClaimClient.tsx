@@ -1208,9 +1208,9 @@ export default function BankDeceasedClaimClient() {
               <div className="relative w-full aspect-[16/9] sm:aspect-[1200/675] rounded-2xl overflow-hidden bg-slate-900 shadow-inner">
                 <Image
                   src="/images/bank-deceased-claim-document-checklist-generator-og.jpg"
-                  alt="Bank Deceased Claim Document Checklist Generator - RBI 15-Day Settlement and Bank Annexure Dossier"
-                  fill
-                  className="object-cover"
+                  alt="Bank Deceased Claim Document Checklist Generator - RBI 15-Day Settlement and Bank"
+                  width={1200} height={675}
+                  className="absolute inset-0 w-full h-full object-cover"
                   sizes="(max-width: 1200px) 100vw, 1200px"
                   priority
                 />
@@ -2000,8 +2000,8 @@ Please take notice that failure to disburse funds within 15 days violates RBI Ma
                   <Image
                     src="/images/bank-deceased-claim-document-checklist-generator-og.jpg"
                     alt="Bank Deceased Claim Document Checklist Dossier"
-                    fill
-                    className="object-cover"
+                    width={1200} height={675}
+                    className="absolute inset-0 w-full h-full object-cover"
                     sizes="320px"
                   />
                 </div>

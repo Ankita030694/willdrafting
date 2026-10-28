@@ -296,8 +296,8 @@ export default function HaryanaLocationClient({ faqs }: Props) {
                 <Image
                   src="/images/will-drafting-in-haryana.jpg"
                   alt="Online Will Drafting and SRO Registration Services in Haryana"
-                  fill
-                  className="object-contain group-hover:scale-105 transition-transform duration-500"
+                  width={1200} height={675}
+                  className="absolute inset-0 w-full h-full object-contain group-hover:scale-105 transition-transform duration-500"
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 42vw"
                   priority
                 />
@@ -1166,7 +1166,7 @@ export default function HaryanaLocationClient({ faqs }: Props) {
                     </ul>
                   </div>
                   <a
-                    href="/service/will-registration"
+                    href="/services/will-registration"
                     className="w-full py-3 rounded-xl bg-slate-100 text-[#172228] text-center text-xs font-bold hover:bg-slate-200 transition-colors"
                   >
                     Explore Registration
@@ -1272,8 +1272,8 @@ export default function HaryanaLocationClient({ faqs }: Props) {
             <Image
               src="/images/will-drafting-in-haryana.jpg"
               alt="Will Drafting in Haryana Hero Banner"
-              fill
-              className="object-contain"
+              width={1200} height={675}
+              className="absolute inset-0 w-full h-full object-contain"
               priority
             />
             <button

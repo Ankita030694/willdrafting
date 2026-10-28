@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     absolute: "NRI Will Drafting India | Online Will for Indian Assets",
   },
   description:
-    "Draft a legally valid Indian Will online for NRIs & OCIs. Protect Indian property, NRE/NRO accounts & Demat shares under the Indian Succession Act.",
+    "Draft a legally valid Indian Will online for NRIs & OCIs. Protect Indian property, NRE/NRO accounts & Demat shares under the Indian Succession.",
   authors: [{ name: "Advocate Anuj Anand Malik", url: "https://www.linkedin.com/in/iamanujmalik/" }],
   keywords: [
     "nri will drafting india",
@@ -52,7 +52,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "NRI Will Drafting India | Online Will for Indian Assets",
     description:
-      "Draft a legally valid Indian Will online for NRIs & OCIs. Protect Indian property, NRE/NRO accounts & Demat shares under the Indian Succession Act.",
+      "Draft a legally valid Indian Will online for NRIs & OCIs. Protect Indian property, NRE/NRO accounts & Demat shares under the Indian Succession.",
     url: "https://www.willdrafting.in/services/nri-will-india",
     siteName: "WillDrafting.in",
     locale: "en_IN",
@@ -70,7 +70,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "NRI Will Drafting India | Online Will for Indian Assets",
     description:
-      "Draft a legally valid Indian Will online for NRIs & OCIs. Protect Indian property, NRE/NRO accounts & Demat shares under the Indian Succession Act.",
+      "Draft a legally valid Indian Will online for NRIs & OCIs. Protect Indian property, NRE/NRO accounts & Demat shares under the Indian Succession.",
     images: ["/images/nri-will-india-og.jpg"],
   },
   robots: {

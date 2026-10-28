@@ -549,9 +549,9 @@ export default function ChristianParsiWillClient() {
                   EXECUTIVE BRIEF: 4 KEY SUCCESSION PRINCIPLES
                 </span>
               </div>
-              <h3 className="text-lg font-bold text-slate-900 mb-3">
+              <div className="text-lg font-bold text-slate-900 mb-3">
                 Christian and Parsi Succession Framework in India
-              </h3>
+              </div>
               <ul className="space-y-2.5 text-sm text-slate-700">
                 <li className="flex items-start gap-2.5">
                   <CheckCircle2 className="w-4 h-4 text-[#5F7E75] shrink-0 mt-0.5" />
@@ -911,10 +911,10 @@ export default function ChristianParsiWillClient() {
                   <Image
                     src="/images/christian-parsi-will-indian-succession-act.jpg"
                     alt="Indian Succession Act Part V Sections 31 to 56 Christian and Parsi Will Rules"
-                    fill
+                    width={1200} height={675}
                     priority
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 70vw, 800px"
-                    className="object-cover transition-transform duration-300 hover:scale-[1.01]"
+                    className="absolute inset-0 w-full h-full object-cover transition-transform duration-300 hover:scale-[1.01]"
                   />
                 </div>
                 <div className="pt-3 px-1 flex flex-col sm:flex-row sm:items-center justify-between gap-2 text-xs text-slate-600">
@@ -1420,7 +1420,7 @@ export default function ChristianParsiWillClient() {
                 </span>
                 <div className="flex flex-wrap gap-2">
                   <a
-                    href="https://www.indiacode.nic.in/handle/123456789/2385"
+                    href="https://www.indiacode.nic.in/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-[11px] px-2.5 py-1 rounded-lg bg-blue-50 text-blue-800 hover:bg-blue-100 transition-colors inline-flex items-center gap-1 font-medium"
@@ -1429,7 +1429,7 @@ export default function ChristianParsiWillClient() {
                     <ExternalLink className="w-3 h-3" />
                   </a>
                   <a
-                    href="https://main.sci.gov.in"
+                    href="https://www.sci.gov.in"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-[11px] px-2.5 py-1 rounded-lg bg-blue-50 text-blue-800 hover:bg-blue-100 transition-colors inline-flex items-center gap-1 font-medium"
@@ -1474,7 +1474,7 @@ export default function ChristianParsiWillClient() {
                     Standard Will Format in India &rarr;
                   </Link>
                   <Link
-                    href="/service/will-registration"
+                    href="/services/will-registration"
                     className="text-[11px] px-2.5 py-1 rounded-lg bg-slate-100 text-slate-800 hover:bg-rose-50 hover:text-[#C65378] transition-colors"
                   >
                     Will Registration Service &rarr;
@@ -1636,7 +1636,7 @@ export default function ChristianParsiWillClient() {
                   </div>
                 </Link>
                 <Link
-                  href="/service/will-registration"
+                  href="/services/will-registration"
                   className="block p-2.5 rounded-xl border border-slate-100 hover:border-rose-200 hover:bg-rose-50/30 transition-colors"
                 >
                   <div className="font-bold text-xs text-slate-900">Will Registration Service</div>
@@ -1659,7 +1659,7 @@ export default function ChristianParsiWillClient() {
                   Free Indian Will Format
                 </Link>
                 <Link
-                  href="/service/will-registration"
+                  href="/services/will-registration"
                   className="text-[11px] px-3 py-1 rounded-lg bg-slate-100 text-[#172228] hover:bg-slate-200 transition-colors"
                 >
                   Will Registration Service

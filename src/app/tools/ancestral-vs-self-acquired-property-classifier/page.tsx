@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     absolute: "Ancestral vs Self-Acquired Property Checker | WillDrafting", // exactly 58 characters
   },
   description:
-    "Check if property is ancestral or self-acquired under Hindu Succession Act. Trace provenance under Section 8 vs Section 6 and verify 100% Will rights.", // exactly 150 characters
+    "Check if property is ancestral or self-acquired under Hindu Succession Act. Trace provenance under Section 8 vs Section 6 and verify 100% Will.", // exactly 150 characters
   keywords: [
     "how to check if property is ancestral or self acquired",
     "is property inherited from father ancestral or self acquired",
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Ancestral vs Self-Acquired Property Checker | WillDrafting",
     description:
-      "Check if property is ancestral or self-acquired under Hindu Succession Act. Trace provenance under Section 8 vs Section 6 and verify 100% Will rights.",
+      "Check if property is ancestral or self-acquired under Hindu Succession Act. Trace provenance under Section 8 vs Section 6 and verify 100% Will.",
     url: "https://www.willdrafting.in/tools/ancestral-vs-self-acquired-property-classifier",
     siteName: "WillDrafting.in",
     locale: "en_IN",
@@ -54,7 +54,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Ancestral vs Self-Acquired Property Checker | WillDrafting",
     description:
-      "Check if property is ancestral or self-acquired under Hindu Succession Act. Trace provenance under Section 8 vs Section 6 and verify 100% Will rights.",
+      "Check if property is ancestral or self-acquired under Hindu Succession Act. Trace provenance under Section 8 vs Section 6 and verify 100% Will.",
     images: ["https://www.willdrafting.in/images/ancestral-vs-self-acquired-property-classifier-og.jpg"],
   },
   robots: {
@@ -91,7 +91,7 @@ export default function AncestralPropertyClassifierPage() {
         url: canonicalUrl,
         name: "Ancestral vs Self-Acquired Property Checker | WillDrafting",
         description:
-          "Check if property is ancestral or self-acquired under Hindu Succession Act. Trace provenance under Section 8 vs Section 6 and verify 100% Will rights.",
+          "Check if property is ancestral or self-acquired under Hindu Succession Act. Trace provenance under Section 8 vs Section 6 and verify 100% Will.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -131,7 +131,7 @@ export default function AncestralPropertyClassifierPage() {
         applicationCategory: "LegalApplication",
         operatingSystem: "All",
         description:
-          "Interactive diagnostic tool to classify real estate as ancestral or self-acquired under Hindu Succession Act 1956, tracing provenance across Section 8 vs Section 6, partition deeds, and Supreme Court rulings.",
+          "Interactive diagnostic tool to classify real estate as ancestral or self-acquired under Hindu Succession Act 1956, tracing provenance across.",
         image: imageUrl,
         offers: {
           "@type": "Offer",

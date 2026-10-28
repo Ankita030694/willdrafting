@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     absolute: "Will Drafting in Thiruvananthapuram: Online Will Guide",
   },
   description:
-    "Draft a legally binding Will in Thiruvananthapuram. Expert guidance on PEARLS portal registration, Technopark IT assets, and family wealth succession.",
+    "Draft a legally binding Will in Thiruvananthapuram. Expert guidance on PEARLS portal registration, Technopark IT assets, and family wealth.",
   keywords: [
     "will drafting in thiruvananthapuram",
     "will registration trivandrum pearls",
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Will Drafting in Thiruvananthapuram: Online Will Guide",
     description:
-      "Draft a legally binding Will in Thiruvananthapuram. Expert guidance on PEARLS portal registration, Technopark IT assets, and family wealth succession.",
+      "Draft a legally binding Will in Thiruvananthapuram. Expert guidance on PEARLS portal registration, Technopark IT assets, and family wealth.",
     url: "https://www.willdrafting.in/locations/thiruvananthapuram",
     siteName: "WillDrafting.in",
     locale: "en_IN",
@@ -62,7 +62,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Will Drafting in Thiruvananthapuram: Online Will Guide",
     description:
-      "Draft a legally binding Will in Thiruvananthapuram. Expert guidance on PEARLS portal registration, Technopark IT assets, and family wealth succession.",
+      "Draft a legally binding Will in Thiruvananthapuram. Expert guidance on PEARLS portal registration, Technopark IT assets, and family wealth.",
     images: ["https://www.willdrafting.in/images/will-drafting-in-thiruvananthapuram-og.jpg"],
   },
   robots: {
@@ -142,7 +142,7 @@ export default function ThiruvananthapuramLocationPage() {
         url: canonicalUrl,
         name: "Will Drafting in Thiruvananthapuram: Online Will Guide",
         description:
-          "Draft a legally binding Will in Thiruvananthapuram. Expert guidance on PEARLS portal registration, Technopark IT assets, and family wealth succession.",
+          "Draft a legally binding Will in Thiruvananthapuram. Expert guidance on PEARLS portal registration, Technopark IT assets, and family wealth.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -189,7 +189,7 @@ export default function ThiruvananthapuramLocationPage() {
         "@id": `${canonicalUrl}#legalservice`,
         name: "WillDrafting Thiruvananthapuram - Legal Estate Planning & PEARLS Registration",
         description:
-          "Professional Will drafting, advocate verification, Kerala PEARLS registration, Technopark digital asset planning, and doorstep execution support across Thiruvananthapuram.",
+          "Professional Will drafting, advocate verification, Kerala PEARLS registration, Technopark digital asset planning, and doorstep execution.",
         url: canonicalUrl,
         image: imageUrl,
         telephone: "+91-8700343611",

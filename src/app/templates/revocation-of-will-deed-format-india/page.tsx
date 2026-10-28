@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     absolute: "Cancel Registered Will in India Format | WillDrafting", // exactly 53 characters
   },
   description:
-    "Download legally valid deed of revocation of will format in India. Learn how to cancel a registered will under Section 70 of Indian Succession Act 1925.", // exactly 152 characters
+    "Download legally valid deed of revocation of will format in India. Learn how to cancel a registered will under Section 70 of Indian Succession.", // exactly 152 characters
   keywords: [
     "how to cancel a registered will in india format",
     "deed of revocation of will format india",
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Cancel Registered Will in India Format | WillDrafting",
     description:
-      "Download legally valid deed of revocation of will format in India. Learn how to cancel a registered will under Section 70 of Indian Succession Act 1925.",
+      "Download legally valid deed of revocation of will format in India. Learn how to cancel a registered will under Section 70 of Indian Succession.",
     url: "https://www.willdrafting.in/templates/revocation-of-will-deed-format-india",
     siteName: "WillDrafting.in",
     locale: "en_IN",
@@ -53,7 +53,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Cancel Registered Will in India Format | WillDrafting",
     description:
-      "Download legally valid deed of revocation of will format in India. Learn how to cancel a registered will under Section 70 of Indian Succession Act 1925.",
+      "Download legally valid deed of revocation of will format in India. Learn how to cancel a registered will under Section 70 of Indian Succession.",
     images: ["https://www.willdrafting.in/images/revocation-of-will-deed-format-india-og.jpg"],
   },
   robots: {
@@ -90,7 +90,7 @@ export default function RevocationOfWillPage() {
         url: canonicalUrl,
         name: "Cancel Registered Will in India Format | WillDrafting",
         description:
-          "Download legally valid deed of revocation of will format in India. Learn how to cancel a registered will under Section 70 of Indian Succession Act 1925.",
+          "Download legally valid deed of revocation of will format in India. Learn how to cancel a registered will under Section 70 of Indian Succession.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -128,7 +128,7 @@ export default function RevocationOfWillPage() {
         name: "Deed of Revocation of Will Format India",
         url: canonicalUrl,
         description:
-          "Comprehensive statutory Deed of Revocation of Will format and Sub-Registrar cancellation guidelines under Section 70 of the Indian Succession Act, 1925 and Registration Act, 1908.",
+          "Comprehensive statutory Deed of Revocation of Will format and Sub-Registrar cancellation guidelines under Section 70 of the Indian Succession.",
         fileFormat: "text/html",
         isAccessibleForFree: true,
         image: imageUrl,

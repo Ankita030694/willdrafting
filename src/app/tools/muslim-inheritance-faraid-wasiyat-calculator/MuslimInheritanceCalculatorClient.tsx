@@ -2105,8 +2105,8 @@ export default function MuslimInheritanceCalculatorClient() {
                 <Image
                   src="/images/muslim-inheritance-faraid-wasiyat-calculator-og.jpg"
                   alt="Muslim Inheritance Faraid and Wasiyat Calculator Statutory Guide India"
-                  fill
-                  className="object-contain"
+                  width={1200} height={675}
+                  className="absolute inset-0 w-full h-full object-contain"
                   sizes="(max-width: 1200px) 100vw, 1200px"
                 />
               </div>

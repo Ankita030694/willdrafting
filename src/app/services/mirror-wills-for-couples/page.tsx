@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     absolute: "Mirror Wills for Couples in India: Joint Will Guide",
   },
   description:
-    "Protect your family with mirror wills in India. Avoid risky joint wills, secure mutual clauses under ISA 1925, and draft legally sound wills with AMA.",
+    "Protect your family with mirror wills in India. Avoid risky joint wills, secure mutual clauses under ISA 1925, and draft legally sound wills.",
   keywords: [
     "joint will",
     "mirror will husband wife",
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Mirror Wills for Couples in India: Joint Will Guide",
     description:
-      "Protect your family with mirror wills in India. Avoid risky joint wills, secure mutual clauses under ISA 1925, and draft legally sound wills with AMA.",
+      "Protect your family with mirror wills in India. Avoid risky joint wills, secure mutual clauses under ISA 1925, and draft legally sound wills.",
     url: "https://www.willdrafting.in/services/mirror-wills-for-couples",
     siteName: "WillDrafting.in",
     locale: "en_IN",
@@ -53,7 +53,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Mirror Wills for Couples in India: Joint Will Guide",
     description:
-      "Protect your family with mirror wills in India. Avoid risky joint wills, secure mutual clauses under ISA 1925, and draft legally sound wills with AMA.",
+      "Protect your family with mirror wills in India. Avoid risky joint wills, secure mutual clauses under ISA 1925, and draft legally sound wills.",
     images: ["https://www.willdrafting.in/images/mirror-wills-for-couples-og.jpg"],
   },
   robots: {
@@ -90,7 +90,7 @@ export default function MirrorWillsForCouplesPage() {
         url: canonicalUrl,
         name: "Mirror Wills for Couples in India: Joint Will Guide",
         description:
-          "Protect your family with mirror wills in India. Avoid risky joint wills, secure mutual clauses under ISA 1925, and draft legally sound wills with AMA.",
+          "Protect your family with mirror wills in India. Avoid risky joint wills, secure mutual clauses under ISA 1925, and draft legally sound wills.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -137,7 +137,7 @@ export default function MirrorWillsForCouplesPage() {
           name: "India",
         },
         description:
-          "Specialized estate planning for married couples. We draft two coordinated, legally independent Wills with cross-bequests, survivorship periods, and testamentary guardianship under the Indian Succession Act, 1925.",
+          "Specialized estate planning for married couples. We draft two coordinated, legally independent Wills with cross-bequests, survivorship.",
         offers: [
           {
             "@type": "Offer",

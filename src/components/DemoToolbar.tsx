@@ -369,7 +369,7 @@ export default function DemoToolbar() {
                 </Link>
 
                 <Link
-                  href="/lawyer"
+                  href="/services"
                   onClick={() => setIsExpanded(false)}
                   style={{
                     gridColumn: "span 2",

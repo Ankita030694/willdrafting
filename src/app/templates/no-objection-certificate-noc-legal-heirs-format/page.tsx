@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     absolute: "Legal Heir NOC Format for Property Transfer | WillDrafting", // exactly 58 characters
   },
   description:
-    "Download legally valid noc format from legal heirs for property transfer, bank claims & vehicle mutation. Understand Section 17 Registration Act rules.", // exactly 151 characters
+    "Download legally valid noc format from legal heirs for property transfer, bank claims & vehicle mutation. Understand Section 17 Registration.", // exactly 151 characters
   keywords: [
     "noc format from legal heirs for property transfer",
     "no objection affidavit from legal heirs for bank claim",
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Legal Heir NOC Format for Property Transfer | WillDrafting",
     description:
-      "Download legally valid noc format from legal heirs for property transfer, bank claims & vehicle mutation. Understand Section 17 Registration Act rules.",
+      "Download legally valid noc format from legal heirs for property transfer, bank claims & vehicle mutation. Understand Section 17 Registration.",
     url: "https://www.willdrafting.in/templates/no-objection-certificate-noc-legal-heirs-format",
     siteName: "WillDrafting.in",
     locale: "en_IN",
@@ -53,7 +53,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Legal Heir NOC Format for Property Transfer | WillDrafting",
     description:
-      "Download legally valid noc format from legal heirs for property transfer, bank claims & vehicle mutation. Understand Section 17 Registration Act rules.",
+      "Download legally valid noc format from legal heirs for property transfer, bank claims & vehicle mutation. Understand Section 17 Registration.",
     images: ["https://www.willdrafting.in/images/no-objection-certificate-noc-legal-heirs-format-og.jpg"],
   },
   robots: {
@@ -90,7 +90,7 @@ export default function NoObjectionCertificatePage() {
         url: canonicalUrl,
         name: "Legal Heir NOC Format for Property Transfer | WillDrafting",
         description:
-          "Download legally valid noc format from legal heirs for property transfer, bank claims & vehicle mutation. Understand Section 17 Registration Act rules.",
+          "Download legally valid noc format from legal heirs for property transfer, bank claims & vehicle mutation. Understand Section 17 Registration.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -128,7 +128,7 @@ export default function NoObjectionCertificatePage() {
         name: "No Objection Certificate (NOC) from Legal Heirs Format",
         url: canonicalUrl,
         description:
-          "Lawyer-vetted No Objection Certificate (NOC) formats from legal heirs for property mutation, bank account claims, RTO vehicle transfer, and court probate consent under Indian succession laws.",
+          "Lawyer-vetted No Objection Certificate (NOC) formats from legal heirs for property mutation, bank account claims, RTO vehicle transfer, and.",
         fileFormat: "text/html",
         isAccessibleForFree: true,
         image: imageUrl,

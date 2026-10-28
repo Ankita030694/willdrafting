@@ -1437,8 +1437,8 @@ NOW THIS WILL WITNESSETH that upon my demise, my undivided notional coparcenary 
                   <Image
                     src="/images/huf-coparcenary-share-partition-calculator-og.jpg"
                     alt="HUF Property Share and Coparcenary Partition Calculator India - Statutory Blueprint"
-                    fill
-                    className="object-cover"
+                    width={1200} height={675}
+                    className="absolute inset-0 w-full h-full object-cover"
                     sizes="(max-width: 1200px) 100vw, 1200px"
                     priority={false}
                   />
@@ -1796,7 +1796,7 @@ NOW THIS WILL WITNESSETH that upon my demise, my undivided notional coparcenary 
                     <ExternalLink className="w-3 h-3" />
                   </a>
                   <a
-                    href="https://main.sci.gov.in"
+                    href="https://www.sci.gov.in"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-slate-100 text-slate-800 hover:bg-slate-200 font-semibold"

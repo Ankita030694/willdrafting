@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     absolute: "Will Drafting in Prayagraj: Legal Online Will Guide",
   },
   description:
-    "Draft your Will in Prayagraj with High Court advocate review. Reliable UP IGRS registration guidance, PDA property mutation, and family wealth defense.",
+    "Draft your Will in Prayagraj with High Court advocate review. Reliable UP IGRS registration guidance, PDA property mutation, and family wealth.",
   keywords: [
     "will drafting in prayagraj",
     "will registration allahabad kutchery",
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Will Drafting in Prayagraj: Legal Online Will Guide",
     description:
-      "Draft your Will in Prayagraj with High Court advocate review. Reliable UP IGRS registration guidance, PDA property mutation, and family wealth defense.",
+      "Draft your Will in Prayagraj with High Court advocate review. Reliable UP IGRS registration guidance, PDA property mutation, and family wealth.",
     url: "https://www.willdrafting.in/locations/prayagraj",
     siteName: "WillDrafting.in",
     locale: "en_IN",
@@ -66,7 +66,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Will Drafting in Prayagraj: Legal Online Will Guide",
     description:
-      "Draft your Will in Prayagraj with High Court advocate review. Reliable UP IGRS registration guidance, PDA property mutation, and family wealth defense.",
+      "Draft your Will in Prayagraj with High Court advocate review. Reliable UP IGRS registration guidance, PDA property mutation, and family wealth.",
     images: ["https://www.willdrafting.in/images/will-drafting-in-prayagraj.jpg"],
   },
   robots: {
@@ -146,7 +146,7 @@ export default function PrayagrajLocationPage() {
         url: canonicalUrl,
         name: "Will Drafting in Prayagraj: Legal Online Will Guide",
         description:
-          "Draft your Will in Prayagraj with High Court advocate review. Reliable UP IGRS registration guidance, PDA property mutation, and family wealth defense.",
+          "Draft your Will in Prayagraj with High Court advocate review. Reliable UP IGRS registration guidance, PDA property mutation, and family wealth.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -193,7 +193,7 @@ export default function PrayagrajLocationPage() {
         "@id": `${canonicalUrl}#legalservice`,
         name: "WillDrafting Prayagraj - Estate Planning & SRO Registration",
         description:
-          "Professional Will drafting, High Court advocate review, UP IGRS portal registration, and doorstep execution support across Prayagraj, Civil Lines, and PDA colonies.",
+          "Professional Will drafting, High Court advocate review, UP IGRS portal registration, and doorstep execution support across Prayagraj, Civil.",
         url: canonicalUrl,
         image: imageUrl,
         telephone: "+91-8700343611",

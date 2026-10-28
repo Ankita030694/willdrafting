@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     absolute: "Succession vs Legal Heir Certificate Tool | WillDrafting", // exactly 56 characters
   },
   description:
-    "Determine if you need a succession certificate or legal heir certificate in India. Check movable and immovable asset rules, bank limits, and court fees.", // exactly 152 characters
+    "Determine if you need a succession certificate or legal heir certificate in India. Check movable and immovable asset rules, bank limits, and.", // exactly 152 characters
   keywords: [
     "do i need succession certificate or legal heir certificate",
     "which certificate is required after death in india",
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Succession vs Legal Heir Certificate Tool | WillDrafting",
     description:
-      "Determine if you need a succession certificate or legal heir certificate in India. Check movable and immovable asset rules, bank limits, and court fees.",
+      "Determine if you need a succession certificate or legal heir certificate in India. Check movable and immovable asset rules, bank limits, and.",
     url: "https://www.willdrafting.in/tools/legal-heir-vs-succession-certificate-decision-tool",
     siteName: "WillDrafting.in",
     locale: "en_IN",
@@ -56,7 +56,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Succession vs Legal Heir Certificate Tool | WillDrafting",
     description:
-      "Determine if you need a succession certificate or legal heir certificate in India. Check movable and immovable asset rules, bank limits, and court fees.",
+      "Determine if you need a succession certificate or legal heir certificate in India. Check movable and immovable asset rules, bank limits, and.",
     images: [
       "https://www.willdrafting.in/images/legal-heir-vs-succession-certificate-decision-tool-og.jpg",
     ],
@@ -97,7 +97,7 @@ export default function LegalHeirVsSuccessionCertificateDecisionToolPage() {
         url: canonicalUrl,
         name: "Succession vs Legal Heir Certificate Tool | WillDrafting",
         description:
-          "Determine if you need a succession certificate or legal heir certificate in India. Check movable and immovable asset rules, bank limits, and court fees.",
+          "Determine if you need a succession certificate or legal heir certificate in India. Check movable and immovable asset rules, bank limits, and.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -137,7 +137,7 @@ export default function LegalHeirVsSuccessionCertificateDecisionToolPage() {
         applicationCategory: "LegalApplication",
         operatingSystem: "All",
         description:
-          "Interactive diagnostic wizard under Indian Succession Act 1925 (Part VIII & Part X) and State Revenue Rules. Instantly identifies whether you need a Legal Heir Certificate, Succession Certificate, Probate, Letters of Administration, or Surviving Member Certificate based on asset type, value, and nomination status.",
+          "Interactive diagnostic wizard under Indian Succession Act 1925 (Part VIII & Part X) and State Revenue Rules. Instantly identifies whether you.",
         image: imageUrl,
         offers: {
           "@type": "Offer",

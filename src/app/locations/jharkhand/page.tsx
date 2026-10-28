@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     absolute: "Will Drafting in Jharkhand: Online Will Registration Help",
   },
   description:
-    "Draft your Will in Jharkhand with legal peace of mind. Complete NGDRS Jharkhand registration advice, CNT/SPT Act land compliance, and RMC mutation support.",
+    "Draft your Will in Jharkhand with legal peace of mind. Complete NGDRS Jharkhand registration advice, CNT/SPT Act land compliance, and RMC.",
   keywords: [
     "will drafting in jharkhand",
     "will registration ngdrs jharkhand",
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Will Drafting in Jharkhand: Online Will Registration Help",
     description:
-      "Draft your Will in Jharkhand with legal peace of mind. Complete NGDRS Jharkhand registration advice, CNT/SPT Act land compliance, and RMC mutation support.",
+      "Draft your Will in Jharkhand with legal peace of mind. Complete NGDRS Jharkhand registration advice, CNT/SPT Act land compliance, and RMC.",
     url: "https://www.willdrafting.in/locations/jharkhand",
     siteName: "WillDrafting.in",
     locale: "en_IN",
@@ -66,7 +66,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Will Drafting in Jharkhand: Online Will Registration Help",
     description:
-      "Draft your Will in Jharkhand with legal peace of mind. Complete NGDRS Jharkhand registration advice, CNT/SPT Act land compliance, and RMC mutation support.",
+      "Draft your Will in Jharkhand with legal peace of mind. Complete NGDRS Jharkhand registration advice, CNT/SPT Act land compliance, and RMC.",
     images: ["https://www.willdrafting.in/images/will-drafting-in-jharkhand-og.jpg"],
   },
   robots: {
@@ -146,7 +146,7 @@ export default function JharkhandLocationPage() {
         url: canonicalUrl,
         name: "Will Drafting in Jharkhand: Online Will Registration Help",
         description:
-          "Draft your Will in Jharkhand with legal peace of mind. Complete NGDRS Jharkhand registration advice, CNT/SPT Act land compliance, and RMC mutation support.",
+          "Draft your Will in Jharkhand with legal peace of mind. Complete NGDRS Jharkhand registration advice, CNT/SPT Act land compliance, and RMC.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -193,7 +193,7 @@ export default function JharkhandLocationPage() {
         "@id": `${canonicalUrl}#legalservice`,
         name: "WillDrafting Jharkhand - Estate Planning & SRO Registration",
         description:
-          "Professional Will drafting, advocate verification, NGDRS Jharkhand registration, and Section 31 doorstep execution support across Ranchi, Jamshedpur, Dhanbad, Bokaro, and all Jharkhand districts.",
+          "Professional Will drafting, advocate verification, NGDRS Jharkhand registration, and Section 31 doorstep execution support across Ranchi.",
         url: canonicalUrl,
         image: imageUrl,
         email: "hello@willdrafting.in",

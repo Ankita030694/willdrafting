@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     absolute: "Renunciation of Executorship Format India | WillDrafting.in", // exactly 59 characters
   },
   description:
-    "Download renunciation of executorship format India under Section 230 ISA. Includes executor consent letter, court renunciation deed, and legal SOP.", // exactly 147 characters
+    "Download renunciation of executorship format India under Section 230 ISA. Includes executor consent letter, court renunciation deed, and legal.", // exactly 147 characters
   keywords: [
     "renunciation of executorship format india",
     "executor consent letter format will india",
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Renunciation of Executorship Format India | WillDrafting.in",
     description:
-      "Download renunciation of executorship format India under Section 230 ISA. Includes executor consent letter, court renunciation deed, and legal SOP.",
+      "Download renunciation of executorship format India under Section 230 ISA. Includes executor consent letter, court renunciation deed, and legal.",
     url: "https://www.willdrafting.in/templates/executor-consent-and-renunciation-letter-format",
     siteName: "WillDrafting.in",
     locale: "en_IN",
@@ -56,7 +56,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Renunciation of Executorship Format India | WillDrafting.in",
     description:
-      "Download renunciation of executorship format India under Section 230 ISA. Includes executor consent letter, court renunciation deed, and legal SOP.",
+      "Download renunciation of executorship format India under Section 230 ISA. Includes executor consent letter, court renunciation deed, and legal.",
     images: [
       "https://www.willdrafting.in/images/executor-consent-and-renunciation-letter-format-og.jpg",
     ],
@@ -97,7 +97,7 @@ export default function ExecutorConsentRenunciationPage() {
         url: canonicalUrl,
         name: "Renunciation of Executorship Format India | WillDrafting.in",
         description:
-          "Download renunciation of executorship format India under Section 230 ISA. Includes executor consent letter, court renunciation deed, and legal SOP.",
+          "Download renunciation of executorship format India under Section 230 ISA. Includes executor consent letter, court renunciation deed, and legal.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -162,7 +162,7 @@ export default function ExecutorConsentRenunciationPage() {
         name: "Executor Consent and Renunciation of Executorship Format India",
         url: canonicalUrl,
         description:
-          "Lawyer-vetted templates for Pre-Death Executor Consent Letter and Post-Death Section 230 Court Renunciation Deed under the Indian Succession Act, 1925.",
+          "Lawyer-vetted templates for Pre-Death Executor Consent Letter and Post-Death Section 230 Court Renunciation Deed under the Indian Succession.",
         image: imageUrl,
         fileFormat: "text/html",
         hasDigitalDocumentPermission: {

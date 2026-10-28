@@ -1108,9 +1108,9 @@ ATTESTED & IDENTIFIED BY ADVOCATE / NOTARY PUBLIC`;
               <div className="relative w-full aspect-[16/9] sm:aspect-[1200/675] rounded-2xl overflow-hidden bg-slate-900 shadow-inner">
                 <Image
                   src="/images/housing-society-flat-transfer-document-checker-og.jpg"
-                  alt="Cooperative Housing Society Flat Transfer Document Checker - Maharashtra MCS Act Form 14 to 19 Guide"
-                  fill
-                  className="object-cover"
+                  alt="Cooperative Housing Society Flat Transfer Document Checker - Maharashtra MCS Act Form"
+                  width={1200} height={675}
+                  className="absolute inset-0 w-full h-full object-cover"
                   sizes="(max-width: 1200px) 100vw, 1200px"
                   priority
                 />
@@ -1865,7 +1865,7 @@ We, the undersigned co-heirs of Late [Name of Deceased]...
                     <ExternalLink className="w-3 h-3" />
                   </a>
                   <a
-                    href="https://main.sci.gov.in"
+                    href="https://www.sci.gov.in"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-slate-100 text-slate-800 hover:bg-slate-200 font-semibold"

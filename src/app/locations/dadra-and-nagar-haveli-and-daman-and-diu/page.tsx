@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     absolute: "Will Drafting in Daman, Diu & Dadra: Online Will Guide",
   },
   description:
-    "Draft a valid Will in Daman, Diu & Dadra Nagar Haveli. Guidance on Civil Law succession heritage, industrial estate transfer, and SRO registration.",
+    "Draft a valid Will in Daman, Diu & Dadra Nagar Haveli. Guidance on Civil Law succession heritage, industrial estate transfer, and SRO.",
   keywords: [
     "will drafting in daman and diu",
     "will registration dadra and nagar haveli",
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Will Drafting in Daman, Diu & Dadra: Online Will Guide",
     description:
-      "Draft a valid Will in Daman, Diu & Dadra Nagar Haveli. Guidance on Civil Law succession heritage, industrial estate transfer, and SRO registration.",
+      "Draft a valid Will in Daman, Diu & Dadra Nagar Haveli. Guidance on Civil Law succession heritage, industrial estate transfer, and SRO.",
     url: "https://www.willdrafting.in/locations/dadra-and-nagar-haveli-and-daman-and-diu",
     siteName: "WillDrafting.in",
     locale: "en_IN",
@@ -64,7 +64,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Will Drafting in Daman, Diu & Dadra: Online Will Guide",
     description:
-      "Draft a valid Will in Daman, Diu & Dadra Nagar Haveli. Guidance on Civil Law succession heritage, industrial estate transfer, and SRO registration.",
+      "Draft a valid Will in Daman, Diu & Dadra Nagar Haveli. Guidance on Civil Law succession heritage, industrial estate transfer, and SRO.",
     images: [
       "https://www.willdrafting.in/images/will-drafting-in-dadra-and-nagar-haveli-and-daman-and-diu-og.jpg",
     ],
@@ -148,7 +148,7 @@ export default function DnhDdLocationPage() {
         url: canonicalUrl,
         name: "Will Drafting in Daman, Diu & Dadra: Online Will Guide",
         description:
-          "Draft a valid Will in Daman, Diu & Dadra Nagar Haveli. Guidance on Civil Law succession heritage, industrial estate transfer, and SRO registration.",
+          "Draft a valid Will in Daman, Diu & Dadra Nagar Haveli. Guidance on Civil Law succession heritage, industrial estate transfer, and SRO.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -196,7 +196,7 @@ export default function DnhDdLocationPage() {
         "@id": `${canonicalUrl}#legalservice`,
         name: "WillDrafting Dadra and Nagar Haveli and Daman and Diu - Estate Planning & SRO Registration",
         description:
-          "Professional Will drafting, advocate verification, Sub-Registrar registration, and doorstep execution support across Silvassa, Daman, Diu, and Dadra.",
+          "Professional Will drafting, advocate verification, Sub-Registrar registration, and doorstep execution support across Silvassa, Daman, Diu, and.",
         url: canonicalUrl,
         image: imageUrl,
         email: "hello@willdrafting.in",

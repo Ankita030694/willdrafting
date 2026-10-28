@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     absolute: "Relinquishment Deed Format: Free Template | WillDrafting",
   },
   description:
-    "Download a legally valid relinquishment deed format in India. Learn stamp duty by state, release deed vs gift deed rules, and registration requirements.",
+    "Download a legally valid relinquishment deed format in India. Learn stamp duty by state, release deed vs gift deed rules, and registration.",
   keywords: [
     "relinquishment deed format",
     "release deed format",
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Relinquishment Deed Format: Free Template | WillDrafting",
     description:
-      "Download a legally valid relinquishment deed format in India. Learn stamp duty by state, release deed vs gift deed rules, and registration requirements.",
+      "Download a legally valid relinquishment deed format in India. Learn stamp duty by state, release deed vs gift deed rules, and registration.",
     url: "https://www.willdrafting.in/templates/release-deed-format",
     siteName: "WillDrafting.in",
     locale: "en_IN",
@@ -52,7 +52,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Relinquishment Deed Format: Free Template | WillDrafting",
     description:
-      "Download a legally valid relinquishment deed format in India. Learn stamp duty by state, release deed vs gift deed rules, and registration requirements.",
+      "Download a legally valid relinquishment deed format in India. Learn stamp duty by state, release deed vs gift deed rules, and registration.",
     images: ["https://www.willdrafting.in/images/release-deed-format-og.jpg"],
   },
   robots: {
@@ -89,7 +89,7 @@ export default function ReleaseDeedFormatPage() {
         url: canonicalUrl,
         name: "Relinquishment Deed Format: Free Template | WillDrafting",
         description:
-          "Download a legally valid relinquishment deed format in India. Learn stamp duty by state, release deed vs gift deed rules, and registration requirements.",
+          "Download a legally valid relinquishment deed format in India. Learn stamp duty by state, release deed vs gift deed rules, and registration.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -126,7 +126,7 @@ export default function ReleaseDeedFormatPage() {
         "@id": `${canonicalUrl}#howto`,
         name: "How to Legally Execute and Register a Relinquishment Deed in India",
         description:
-          "Step-by-step statutory procedure to execute and register a legally binding Relinquishment Deed (Haq-Tyag Patra) under Section 17 of the Registration Act, 1908.",
+          "Step-by-step statutory procedure to execute and register a legally binding Relinquishment Deed (Haq-Tyag Patra) under Section 17 of the.",
         image: imageUrl,
         totalTime: "P3D",
         supply: [

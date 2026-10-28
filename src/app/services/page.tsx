@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     absolute: "Online Will Writing Services in India | WillDrafting.in",
   },
   description:
-    "Professional online Will writing services in India under the Indian Succession Act 1925 & Hindu Succession Act 1956 with High Court advocate review.",
+    "Professional online Will writing services in India under the Indian Succession Act 1925 & Hindu Succession Act 1956 with High Court advocate.",
   keywords: [
     "will writing services in india",
     "lawyer verified will online india",
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Online Will Writing Services in India - Lawyer-Verified Will & Estate Planning | WillDrafting.in",
     description:
-      "Professional online Will writing services in India under the Indian Succession Act, 1925 & Hindu Succession Act, 1956. Get a court-ready Will printout, High Court advocate verification & registration assistance.",
+      "Professional online Will writing services in India under the Indian Succession Act, 1925 & Hindu Succession Act, 1956. Get a court-ready Will.",
     url: "https://www.willdrafting.in/services",
     siteName: "WillDrafting.in",
     locale: "en_IN",
@@ -63,7 +63,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Online Will Writing Services in India - Lawyer-Verified Will & Estate Planning | WillDrafting.in",
     description:
-      "Professional online Will writing services in India under the Indian Succession Act, 1925 & Hindu Succession Act, 1956. Get a court-ready Will printout, High Court advocate verification & registration assistance.",
+      "Professional online Will writing services in India under the Indian Succession Act, 1925 & Hindu Succession Act, 1956. Get a court-ready Will.",
     images: ["/images/online-will-drafting-og.jpg"],
   },
   robots: {
@@ -214,7 +214,7 @@ const services: ServiceCard[] = [
   {
     title: "Online Will Drafting & Lawyer Review",
     description:
-      "Create a professionally structured legal Will online from the comfort of your home under the Indian Succession Act, 1925. Clearly document your wishes, allocate immovable and financial assets, appoint guardians for minor children, and have your Will verified by AMA Legal Solutions.",
+      "Create a professionally structured legal Will online from the comfort of your home under the Indian Succession Act, 1925. Clearly document.",
     linkText: "Write your Will",
     linkHref: "/contact",
     illustrationSrc: "/images/online-will-drafting-og.jpg",
@@ -222,7 +222,7 @@ const services: ServiceCard[] = [
   {
     title: "NRI & OCI Indian Will Drafting",
     description:
-      "Specialized Two-Will estate planning for Non-Resident Indians holding immovable property, NRE/NRO accounts, and Demat shares across India, preventing foreign probate re-sealing delays under Section 228 of the Indian Succession Act.",
+      "Specialized Two-Will estate planning for Non-Resident Indians holding immovable property, NRE/NRO accounts, and Demat shares across India.",
     linkText: "Explore NRI Will Services",
     linkHref: "/services/nri-will-india",
     illustrationSrc: "/images/nri-will-india-og.jpg",
@@ -230,7 +230,7 @@ const services: ServiceCard[] = [
   {
     title: "Legal Heir",
     description:
-      "Official Legal Heir Certificate documentation and assistance to establish rightful legal heirs under Indian succession laws for property mutation, insurance claims, and bank transfers.",
+      "Official Legal Heir Certificate documentation and assistance to establish rightful legal heirs under Indian succession laws for property.",
     linkText: "Explore Legal Heir Services",
     linkHref: "/services/legal-heir",
     illustrationSrc: "/images/legal-heir-og.jpg",
@@ -238,7 +238,7 @@ const services: ServiceCard[] = [
   {
     title: "Relinquishment Deed",
     description:
-      "Legally binding Relinquishment Deed (Haq Tyag) drafting and Sub-Registrar registration assistance to smoothly transfer inherited property shares among co-heirs without family friction.",
+      "Legally binding Relinquishment Deed (Haq Tyag) drafting and Sub-Registrar registration assistance to smoothly transfer inherited property.",
     linkText: "Explore Relinquishment Deed",
     linkHref: "/services/relinquishment-deed",
     illustrationSrc: "/images/relinquishment-deed-og.jpg",
@@ -246,7 +246,7 @@ const services: ServiceCard[] = [
   {
     title: "Survivor Member Certificate",
     description:
-      "Fast-track documentation and advisory for obtaining a Surviving Member Certificate (SMC) from revenue authorities to expedite municipal records update and estate transfers.",
+      "Fast-track documentation and advisory for obtaining a Surviving Member Certificate (SMC) from revenue authorities to expedite municipal.",
     linkText: "Explore Survivor Certificate",
     linkHref: "/services/survivor-member-certificate",
     illustrationSrc: "/images/survivor-member-certificate-og.jpg",
@@ -254,7 +254,7 @@ const services: ServiceCard[] = [
   {
     title: "Will Dispute & Probate Litigation",
     description:
-      "High Court advocate representation to challenge forged or coerced Wills under the Indian Succession Act, lodge Section 284 caveats, and defend genuine testamentary bequests against vexatious claims.",
+      "High Court advocate representation to challenge forged or coerced Wills under the Indian Succession Act, lodge Section 284 caveats, and defend.",
     linkText: "Explore Will Dispute Services",
     linkHref: "/services/will-dispute-contest-litigation-lawyer",
     illustrationSrc: "/images/will-dispute-contest-litigation-lawyer-og.jpg",
@@ -262,7 +262,7 @@ const services: ServiceCard[] = [
   {
     title: "Property Mutation & Dakhil Kharij",
     description:
-      "End-to-end advocate assistance for municipal property mutation (MCD, BMC, BBMP Khata) and land revenue Dakhil Kharij (7/12 Varas Nond, Tehsildar Khatauni) after a property owner's demise.",
+      "End-to-end advocate assistance for municipal property mutation (MCD, BMC, BBMP Khata) and land revenue Dakhil Kharij (7/12 Varas Nond.",
     linkText: "Explore Property Mutation Services",
     linkHref: "/services/property-mutation-dakhil-kharij-service",
     illustrationSrc: "/images/property-mutation-dakhil-kharij-service-og.jpg",
@@ -270,7 +270,7 @@ const services: ServiceCard[] = [
     {
     title: "Letters of Administration Lawyer",
     description:
-      "Expert High Court and District Court advocate assistance for Letters of Administration under Sections 218 and 232 of the Indian Succession Act, 1925 to transfer intestate real estate and unlock bank lockers.",
+      "Expert High Court and District Court advocate assistance for Letters of Administration under Sections 218 and 232 of the Indian Succession.",
     linkText: "Explore Letters of Administration",
     linkHref: "/services/letters-of-administration-lawyer",
     illustrationSrc: "/images/letters-of-administration-lawyer-og.jpg",
@@ -278,7 +278,7 @@ const services: ServiceCard[] = [
 {
     title: "Family Settlement Deed & Partition",
     description:
-      "Ironclad Family Settlement Agreement and Partition Deed drafting by High Court advocates under the Registration Act, 1908 and Indian Stamp Act, 1899 to amicably divide ancestral property and resolve succession disputes.",
+      "Ironclad Family Settlement Agreement and Partition Deed drafting by High Court advocates under the Registration Act, 1908 and Indian Stamp.",
     linkText: "Explore Family Settlement Services",
     linkHref: "/services/family-settlement-deed-lawyer",
     illustrationSrc: "/images/family-settlement-deed-lawyer-og.jpg",
@@ -286,7 +286,7 @@ const services: ServiceCard[] = [
   {
     title: "Private Family Trust Formation",
     description:
-      "Bespoke private family trust deed drafting under the Indian Trusts Act, 1882, Sub-Registrar registration, Trust PAN procurement, and estate ring-fencing for HNI families and special needs dependents.",
+      "Bespoke private family trust deed drafting under the Indian Trusts Act, 1882, Sub-Registrar registration, Trust PAN procurement, and estate.",
     linkText: "Explore Private Trust Services",
     linkHref: "/services/private-family-trust-formation",
     illustrationSrc: "/images/private-family-trust-formation-og.jpg",
@@ -407,7 +407,7 @@ export default function ServicePage() {
                                           ? `${service.title} in India - AMA Legal Solutions`
                                           : "Estate planning and Power of Attorney services in India coming soon"
                       }
-                      fill
+                      width={1200} height={675}
                       priority
                       sizes="(max-width: 768px) 100vw, 50vw"
                       className={`${service.illustrationSrc.endsWith(".jpg")

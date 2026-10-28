@@ -404,10 +404,10 @@ Doctor Name: Dr. [Name] | Qualification: [MBBS/MD] | Reg No.: [GMC Reg No.]`;
               <div className="relative aspect-[16/9] w-full rounded-2xl overflow-hidden bg-slate-900">
                 <Image
                   src="/images/will-format-gujarati-vasiyatnama-og.jpg"
-                  alt="વસીયતનામું ફોર્મેટ ગુજરાતી - Legal Will Format in Gujarati with Indian Succession Act Section 63 Execution Rules"
-                  fill
+                  alt="વસીયતનામું ફોર્મેટ ગુજરાતી - Legal Will Format in Gujarati with Indian Succession Act"
+                  width={1200} height={675}
                   priority
-                  className="object-cover"
+                  className="absolute inset-0 w-full h-full object-cover"
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 75vw, 65vw"
                 />
               </div>

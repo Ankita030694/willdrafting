@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     absolute: "Muslim Inheritance Calculator India | WillDrafting.in", // exactly 53 characters
   },
   description:
-    "Use our free interactive Muslim inheritance calculator India under Shariat Act, 1937. Calculate Sunni, Shia, 1/3 Wasiyat, and Faraid shares accurately.", // exactly 151 characters
+    "Use our free interactive Muslim inheritance calculator India under Shariat Act, 1937. Calculate Sunni, Shia, 1/3 Wasiyat, and Faraid shares.", // exactly 151 characters
   keywords: [
     "muslim inheritance calculator india",
     "islamic inheritance calculator sunni shia india",
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Muslim Inheritance Calculator India | WillDrafting.in",
     description:
-      "Use our free interactive Muslim inheritance calculator India under Shariat Act, 1937. Calculate Sunni, Shia, 1/3 Wasiyat, and Faraid shares accurately.",
+      "Use our free interactive Muslim inheritance calculator India under Shariat Act, 1937. Calculate Sunni, Shia, 1/3 Wasiyat, and Faraid shares.",
     url: "https://www.willdrafting.in/tools/muslim-inheritance-faraid-wasiyat-calculator",
     siteName: "WillDrafting.in",
     locale: "en_IN",
@@ -53,7 +53,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Muslim Inheritance Calculator India | WillDrafting.in",
     description:
-      "Use our free interactive Muslim inheritance calculator India under Shariat Act, 1937. Calculate Sunni, Shia, 1/3 Wasiyat, and Faraid shares accurately.",
+      "Use our free interactive Muslim inheritance calculator India under Shariat Act, 1937. Calculate Sunni, Shia, 1/3 Wasiyat, and Faraid shares.",
     images: ["https://www.willdrafting.in/images/muslim-inheritance-faraid-wasiyat-calculator-og.jpg"],
   },
   robots: {
@@ -90,7 +90,7 @@ export default function MuslimInheritanceCalculatorPage() {
         url: canonicalUrl,
         name: "Muslim Inheritance Calculator India | WillDrafting.in",
         description:
-          "Use our free interactive Muslim inheritance calculator India under Shariat Act, 1937. Calculate Sunni, Shia, 1/3 Wasiyat, and Faraid shares accurately.",
+          "Use our free interactive Muslim inheritance calculator India under Shariat Act, 1937. Calculate Sunni, Shia, 1/3 Wasiyat, and Faraid shares.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -130,7 +130,7 @@ export default function MuslimInheritanceCalculatorPage() {
         applicationCategory: "LegalApplication",
         operatingSystem: "All",
         description:
-          "Interactive statutory legal calculator to compute Muslim inheritance shares, 1/3rd Wasiyat bequests, Quranic Sharers (Zawil-Furuz), Residuaries (Asabah), and Aul or Radd adjustments under the Muslim Personal Law (Shariat) Application Act, 1937.",
+          "Interactive statutory legal calculator to compute Muslim inheritance shares, 1/3rd Wasiyat bequests, Quranic Sharers (Zawil-Furuz).",
         image: imageUrl,
         offers: {
           "@type": "Offer",

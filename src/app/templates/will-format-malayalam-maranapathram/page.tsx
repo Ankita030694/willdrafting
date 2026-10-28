@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     absolute: "മരണപത്രം ഫോർമാറ്റ് മലയാളം | Will Format in Malayalam", // exactly 52 characters
   },
   description:
-    "Download legally valid മരണപത്രം ഫോർമാറ്റ് മലയാളം (will format in malayalam) under Indian Succession Act 1925 with Kerala PEARL SRO registration guide.", // exactly 150 characters
+    "Download legally valid മരണപത്രം ഫോർമാറ്റ് മലയാളം (will format in malayalam) under Indian Succession Act 1925 with Kerala PEARL SRO.", // exactly 150 characters
   keywords: [
     "മരണപത്രം ഫോർമാറ്റ് മലയാളം",
     "will format in malayalam",
@@ -27,15 +27,23 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://www.willdrafting.in/templates/will-format-malayalam-maranapathram",
     languages: {
+      "en-IN": "https://www.willdrafting.in/templates/will-format-india",
+      "hi-IN": "https://www.willdrafting.in/templates/will-format-hindi",
+      "mr-IN": "https://www.willdrafting.in/templates/will-format-marathi-mrutyupatra",
+      "gu-IN": "https://www.willdrafting.in/templates/will-format-gujarati-vasiyatnama",
+      "pa-IN": "https://www.willdrafting.in/templates/will-format-punjabi-vasiyatnama",
+      "bn-IN": "https://www.willdrafting.in/templates/will-format-bengali-ichchapatra",
+      "ta-IN": "https://www.willdrafting.in/templates/will-format-tamil-uyil-sasanam",
+      "te-IN": "https://www.willdrafting.in/templates/will-format-telugu-veelunama",
+      "kn-IN": "https://www.willdrafting.in/templates/will-format-kannada-uyilu",
       "ml-IN": "https://www.willdrafting.in/templates/will-format-malayalam-maranapathram",
-      "en-IN": "https://www.willdrafting.in/templates/will-format-malayalam-maranapathram",
-      "x-default": "https://www.willdrafting.in/templates/will-format-malayalam-maranapathram",
+      "x-default": "https://www.willdrafting.in/templates/will-format-india",
     },
   },
   openGraph: {
     title: "മരണപത്രം ഫോർമാറ്റ് മലയാളം | Will Format in Malayalam",
     description:
-      "Download legally valid മരണപത്രം ഫോർമാറ്റ് മലയാളം (will format in malayalam) under Indian Succession Act 1925 with Kerala PEARL SRO registration guide.",
+      "Download legally valid മരണപത്രം ഫോർമാറ്റ് മലയാളം (will format in malayalam) under Indian Succession Act 1925 with Kerala PEARL SRO.",
     url: "https://www.willdrafting.in/templates/will-format-malayalam-maranapathram",
     siteName: "WillDrafting.in",
     locale: "ml_IN",
@@ -53,7 +61,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "മരണപത്രം ഫോർമാറ്റ് മലയാളം | Will Format in Malayalam",
     description:
-      "Download legally valid മരണപത്രം ഫോർമാറ്റ് മലയാളം (will format in malayalam) under Indian Succession Act 1925 with Kerala PEARL SRO registration guide.",
+      "Download legally valid മരണപത്രം ഫോർമാറ്റ് മലയാളം (will format in malayalam) under Indian Succession Act 1925 with Kerala PEARL SRO.",
     images: ["https://www.willdrafting.in/images/will-format-malayalam-maranapathram-og.jpg"],
   },
   robots: {
@@ -90,7 +98,7 @@ export default function WillFormatMalayalamPage() {
         url: canonicalUrl,
         name: "മരണപത്രം ഫോർമാറ്റ് മലയാളം | Will Format in Malayalam",
         description:
-          "Download legally valid മരണപത്രം ഫോർമാറ്റ് മലയാളം (will format in malayalam) under Indian Succession Act 1925 with Kerala PEARL SRO registration guide.",
+          "Download legally valid മരണപത്രം ഫോർമാറ്റ് മലയാളം (will format in malayalam) under Indian Succession Act 1925 with Kerala PEARL SRO.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -128,7 +136,7 @@ export default function WillFormatMalayalamPage() {
         name: "മരണപത്രം ഫോർമാറ്റ് മലയാളം (Will Format in Malayalam)",
         url: canonicalUrl,
         description:
-          "Bilingual Malayalam and English legal Will draft format compliant with Section 63 of the Indian Succession Act 1925, Kerala Registration Rules, PEARL portal guidelines, and Kerala High Court probate exemption rulings.",
+          "Bilingual Malayalam and English legal Will draft format compliant with Section 63 of the Indian Succession Act 1925, Kerala Registration.",
         fileFormat: "text/html",
         isAccessibleForFree: true,
         image: imageUrl,
@@ -147,7 +155,7 @@ export default function WillFormatMalayalamPage() {
         "@id": `${canonicalUrl}#article`,
         headline: "മരണപത്രം ഫോർമാറ്റ് മലയാളം: Legal Will Format in Kerala",
         description:
-          "Complete legal guide and printable template on how to write a valid Will in Malayalam (വിൽപത്രം എഴുതുന്ന വിധം) under Indian Succession Act 1925 with Kerala SRO and revenue mutation rules.",
+          "Complete legal guide and printable template on how to write a valid Will in Malayalam (വിൽപത്രം എഴുതുന്ന വിധം) under Indian Succession Act.",
         image: imageUrl,
         mainEntityOfPage: canonicalUrl,
         inLanguage: ["ml-IN", "en-IN"],

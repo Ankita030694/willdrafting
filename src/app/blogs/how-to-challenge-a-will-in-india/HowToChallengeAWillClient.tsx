@@ -481,9 +481,9 @@ export default function HowToChallengeAWillClient() {
                   EXECUTIVE BRIEF: 4 CARDINAL RULES OF WILL CONTESTS
                 </span>
               </div>
-              <h3 className="text-lg font-bold text-slate-900 mb-3">
+              <div className="text-lg font-bold text-slate-900 mb-3">
                 Challenging vs. Defending a Will in Indian Courts
-              </h3>
+              </div>
               <ul className="space-y-2 text-sm text-slate-700">
                 <li className="flex items-start gap-2.5">
                   <CheckCircle2 className="w-4 h-4 text-[#5F7E75] shrink-0 mt-0.5" />
@@ -846,9 +846,9 @@ export default function HowToChallengeAWillClient() {
                 <div className="relative aspect-video w-full bg-slate-100">
                   <Image
                     src="/images/how-to-challenge-a-will-in-india.jpg"
-                    alt="How to Challenge a Will in India Legal Statutes Indian Succession Act Limitation Act and Court Gavel"
-                    fill
-                    className="object-cover hover:scale-[1.01] transition-transform duration-300"
+                    alt="How to Challenge a Will in India Legal Statutes Indian Succession Act Limitation Act"
+                    width={1200} height={675}
+                    className="absolute inset-0 w-full h-full object-cover hover:scale-[1.01] transition-transform duration-300"
                     sizes="(max-width: 1200px) 100vw, 900px"
                     priority
                   />
@@ -1098,7 +1098,7 @@ export default function HowToChallengeAWillClient() {
                 </span>
                 <div className="flex flex-wrap gap-2 text-xs">
                   <Link
-                    href="/service/probate-lawyer"
+                    href="/services/probate-lawyer"
                     className="px-3 py-1.5 rounded-lg bg-white border border-slate-200 hover:border-[#C65378] text-slate-700 hover:text-[#C65378] transition-colors"
                   >
                     Probate Legal Services
@@ -1245,7 +1245,7 @@ export default function HowToChallengeAWillClient() {
               </span>
               <div className="space-y-2">
                 <Link
-                  href="/service/probate-lawyer"
+                  href="/services/probate-lawyer"
                   className="block p-2.5 rounded-xl border border-slate-100 hover:border-rose-200 hover:bg-rose-50/30 transition-all"
                 >
                   <div className="font-bold text-xs text-slate-900">
@@ -1291,7 +1291,7 @@ export default function HowToChallengeAWillClient() {
               <span className="text-xs font-bold text-[#172228] block mb-2">Related WillDrafting Guides:</span>
               <div className="flex flex-wrap gap-2">
                 <Link
-                  href="/service/probate-lawyer"
+                  href="/services/probate-lawyer"
                   className="text-[11px] px-3 py-1 rounded-lg bg-slate-100 text-[#172228] hover:bg-slate-200 transition-colors"
                 >
                   Probate of Will Lawyers

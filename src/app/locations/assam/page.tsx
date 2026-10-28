@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     absolute: "Will Drafting in Assam: Online Will Registration Guide",
   },
   description:
-    "Draft a legally binding Will in Assam. Complete Panjeeyan registration guidance, tea estate succession, and Dharitree revenue mutation support online.",
+    "Draft a legally binding Will in Assam. Complete Panjeeyan registration guidance, tea estate succession, and Dharitree revenue mutation support.",
   keywords: [
     "will drafting in assam",
     "will registration assam panjeeyan",
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Will Drafting in Assam: Online Will Registration Guide",
     description:
-      "Draft a legally binding Will in Assam. Complete Panjeeyan registration guidance, tea estate succession, and Dharitree revenue mutation support online.",
+      "Draft a legally binding Will in Assam. Complete Panjeeyan registration guidance, tea estate succession, and Dharitree revenue mutation support.",
     url: "https://www.willdrafting.in/locations/assam",
     siteName: "WillDrafting.in",
     locale: "en_IN",
@@ -62,7 +62,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Will Drafting in Assam: Online Will Registration Guide",
     description:
-      "Draft a legally binding Will in Assam. Complete Panjeeyan registration guidance, tea estate succession, and Dharitree revenue mutation support online.",
+      "Draft a legally binding Will in Assam. Complete Panjeeyan registration guidance, tea estate succession, and Dharitree revenue mutation support.",
     images: ["https://www.willdrafting.in/images/will-drafting-in-assam-og.jpg"],
   },
   robots: {
@@ -142,7 +142,7 @@ export default function AssamLocationPage() {
         url: canonicalUrl,
         name: "Will Drafting in Assam: Online Will Registration Guide",
         description:
-          "Draft a legally binding Will in Assam. Complete Panjeeyan registration guidance, tea estate succession, and Dharitree revenue mutation support online.",
+          "Draft a legally binding Will in Assam. Complete Panjeeyan registration guidance, tea estate succession, and Dharitree revenue mutation support.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -189,7 +189,7 @@ export default function AssamLocationPage() {
         "@id": `${canonicalUrl}#legalservice`,
         name: "WillDrafting Assam - Estate Planning & SRO Registration",
         description:
-          "Professional Will drafting, advocate verification, Assam Panjeeyan registration, and doorstep execution support across Guwahati, Dibrugarh, Silchar, Jorhat, Tezpur, and all districts of Assam.",
+          "Professional Will drafting, advocate verification, Assam Panjeeyan registration, and doorstep execution support across Guwahati, Dibrugarh.",
         url: canonicalUrl,
         image: imageUrl,
         email: "hello@willdrafting.in",

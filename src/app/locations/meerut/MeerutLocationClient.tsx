@@ -283,8 +283,8 @@ export default function MeerutLocationClient({ faqs }: Props) {
                 <Image
                   src="/images/will-drafting-in-meerut.jpg"
                   alt="Legal Will Drafting and Property Succession in Meerut Uttar Pradesh"
-                  fill
-                  className="object-contain group-hover:scale-102 transition-transform duration-500"
+                  width={1200} height={675}
+                  className="absolute inset-0 w-full h-full object-contain group-hover:scale-102 transition-transform duration-500"
                   priority
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 40vw"
                 />
@@ -1835,8 +1835,8 @@ export default function MeerutLocationClient({ faqs }: Props) {
               <Image
                 src="/images/will-drafting-in-meerut.jpg"
                 alt="High Resolution Visual Blueprint: Meerut Will Drafting and SRO Registration"
-                fill
-                className="object-contain"
+                width={1200} height={675}
+                className="absolute inset-0 w-full h-full object-contain"
                 priority
               />
             </div>

@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     absolute: "Probate Court Fee Calculator India | WillDrafting.in", // exactly 52 characters
   },
   description:
-    "Calculate probate court fees in Mumbai, Delhi, Kolkata, and Bengaluru. Check state fee caps, citation costs, and timelines under the Court Fees Act, 1870.", // exactly 154 characters
+    "Calculate probate court fees in Mumbai, Delhi, Kolkata, and Bengaluru. Check state fee caps, citation costs, and timelines under the Court.", // exactly 154 characters
   keywords: [
     "probate court fee calculator india",
     "cost of probate of will in mumbai delhi kolkata chennai bangalore",
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Probate Court Fee Calculator India | WillDrafting.in",
     description:
-      "Calculate probate court fees in Mumbai, Delhi, Kolkata, and Bengaluru. Check state fee caps, citation costs, and timelines under the Court Fees Act, 1870.",
+      "Calculate probate court fees in Mumbai, Delhi, Kolkata, and Bengaluru. Check state fee caps, citation costs, and timelines under the Court.",
     url: "https://www.willdrafting.in/tools/probate-court-fee-timeline-calculator",
     siteName: "WillDrafting.in",
     locale: "en_IN",
@@ -52,7 +52,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Probate Court Fee Calculator India | WillDrafting.in",
     description:
-      "Calculate probate court fees in Mumbai, Delhi, Kolkata, and Bengaluru. Check state fee caps, citation costs, and timelines under the Court Fees Act, 1870.",
+      "Calculate probate court fees in Mumbai, Delhi, Kolkata, and Bengaluru. Check state fee caps, citation costs, and timelines under the Court.",
     images: ["https://www.willdrafting.in/images/probate-court-fee-timeline-calculator-og.jpg"],
   },
   robots: {
@@ -89,7 +89,7 @@ export default function ProbateCourtFeeCalculatorPage() {
         url: canonicalUrl,
         name: "Probate Court Fee Calculator India | WillDrafting.in",
         description:
-          "Calculate probate court fees in Mumbai, Delhi, Kolkata, and Bengaluru. Check state fee caps, citation costs, and timelines under the Court Fees Act, 1870.",
+          "Calculate probate court fees in Mumbai, Delhi, Kolkata, and Bengaluru. Check state fee caps, citation costs, and timelines under the Court.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -129,7 +129,7 @@ export default function ProbateCourtFeeCalculatorPage() {
         applicationCategory: "LegalApplication",
         operatingSystem: "All",
         description:
-          "Interactive statutory court fee calculator for Probate and Letters of Administration in India under Court Fees Act 1870 and state fee schedules. Computes ad-valorem rates, Mumbai ₹75,000 cap, citation costs, and contested vs uncontested timelines.",
+          "Interactive statutory court fee calculator for Probate and Letters of Administration in India under Court Fees Act 1870 and state fee.",
         image: imageUrl,
         offers: {
           "@type": "Offer",

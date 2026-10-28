@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     absolute: "Will Drafting in Hyderabad: Online Will & Asset Planning",
   },
   description:
-    "Draft a legally valid Will in Hyderabad. Easy registration via IGRS Telangana, property succession, and experienced advocate review for your family.",
+    "Draft a legally valid Will in Hyderabad. Easy registration via IGRS Telangana, property succession, and experienced advocate review for your.",
   keywords: [
     "will drafting in hyderabad",
     "will registration igrs telangana",
@@ -53,7 +53,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Will Drafting in Hyderabad: Online Will & Asset Planning",
     description:
-      "Draft a legally valid Will in Hyderabad. Easy registration via IGRS Telangana, property succession, and experienced advocate review for your family.",
+      "Draft a legally valid Will in Hyderabad. Easy registration via IGRS Telangana, property succession, and experienced advocate review for your.",
     url: "https://www.willdrafting.in/locations/hyderabad",
     siteName: "WillDrafting.in",
     locale: "en_IN",
@@ -71,7 +71,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Will Drafting in Hyderabad: Online Will & Asset Planning",
     description:
-      "Draft a legally valid Will in Hyderabad. Easy registration via IGRS Telangana, property succession, and experienced advocate review for your family.",
+      "Draft a legally valid Will in Hyderabad. Easy registration via IGRS Telangana, property succession, and experienced advocate review for your.",
     images: ["https://www.willdrafting.in/images/will-drafting-in-hyderabad-og.jpg"],
   },
   robots: {
@@ -151,7 +151,7 @@ export default function HyderabadLocationPage() {
         url: canonicalUrl,
         name: "Will Drafting in Hyderabad: Online Will & Asset Planning",
         description:
-          "Draft a legally valid Will in Hyderabad. Easy registration via IGRS Telangana, property succession, and experienced advocate review for your family.",
+          "Draft a legally valid Will in Hyderabad. Easy registration via IGRS Telangana, property succession, and experienced advocate review for your.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",

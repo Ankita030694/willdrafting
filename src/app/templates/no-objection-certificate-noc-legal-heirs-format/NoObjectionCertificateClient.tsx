@@ -494,10 +494,10 @@ Verified on oath at [City] on [Date]`;
               <div className="relative aspect-[16/9] w-full">
                 <Image
                   src="/images/no-objection-certificate-noc-legal-heirs-format-og.jpg"
-                  alt="No Objection Certificate NOC from Legal Heirs Format for Property, Bank Claims, and Vehicle Transfer"
-                  fill
+                  alt="No Objection Certificate NOC from Legal Heirs Format for Property, Bank Claims, and"
+                  width={1200} height={675}
                   priority
-                  className="object-cover"
+                  className="absolute inset-0 w-full h-full object-cover"
                   sizes="(max-width: 1024px) 100vw, 850px"
                 />
               </div>

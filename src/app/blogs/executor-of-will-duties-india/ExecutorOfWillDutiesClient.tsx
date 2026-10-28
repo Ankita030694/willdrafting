@@ -1041,10 +1041,10 @@ export default function ExecutorOfWillDutiesClient() {
                   <Image
                     src="/images/executor-of-will-duties-india.jpg"
                     alt="Executor of Will Duties in India 90-Day Execution Roadmap"
-                    fill
+                    width={1200} height={675}
                     priority
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 75vw, 60vw"
-                    className="object-cover object-center hover:scale-[1.01] transition-transform duration-300"
+                    className="absolute inset-0 w-full h-full object-cover object-center hover:scale-[1.01] transition-transform duration-300"
                   />
                 </div>
                 <div className="p-4 bg-slate-50 border-t border-slate-200 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 text-xs text-slate-600">
@@ -1440,7 +1440,7 @@ export default function ExecutorOfWillDutiesClient() {
                 </span>
                 <div className="flex flex-wrap gap-2 text-xs">
                   <Link
-                    href="/service/probate-lawyer"
+                    href="/services/probate-lawyer"
                     className="px-3 py-1.5 rounded-lg bg-white border border-slate-200 hover:border-[#C65378] text-slate-700 hover:text-[#C65378] transition-colors"
                   >
                     Probate Legal Services
@@ -1594,7 +1594,7 @@ export default function ExecutorOfWillDutiesClient() {
               </span>
               <div className="space-y-2">
                 <Link
-                  href="/service/probate-lawyer"
+                  href="/services/probate-lawyer"
                   className="block p-2.5 rounded-xl border border-slate-100 hover:border-rose-200 hover:bg-rose-50/30 transition-all"
                 >
                   <div className="font-bold text-xs text-slate-900">
@@ -1653,7 +1653,7 @@ export default function ExecutorOfWillDutiesClient() {
               <span className="text-xs font-bold text-[#172228] block mb-2">Related WillDrafting Guides:</span>
               <div className="flex flex-wrap gap-2">
                 <Link
-                  href="/service/probate-lawyer"
+                  href="/services/probate-lawyer"
                   className="text-[11px] px-3 py-1 rounded-lg bg-slate-100 text-[#172228] hover:bg-slate-200 transition-colors"
                 >
                   Probate of Will Lawyers

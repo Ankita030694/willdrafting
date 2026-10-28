@@ -1097,8 +1097,8 @@ Doctor's Name & Seal: [Official Stamp with Reg No.]"`;
                 <Image
                   src="/images/witness-eligibility-section-67-checker-og.jpg"
                   alt="Who Can Be Witness to a Will in India - Section 67 Checker & Legal Attestation Blueprint"
-                  fill
-                  className="object-cover"
+                  width={1200} height={675}
+                  className="absolute inset-0 w-full h-full object-cover"
                   sizes="(max-width: 1200px) 100vw, 1200px"
                 />
               </div>
@@ -1763,7 +1763,7 @@ Doctor's Name & Seal: [Official Stamp with Reg No.]"`}
 
                 <div className="pt-2 border-t border-slate-100 flex flex-wrap gap-3">
                   <a
-                    href="https://www.indiacode.nic.in/handle/123456789/2385?sam_handle=123456789/1362"
+                    href="https://www.indiacode.nic.in/?sam_handle=123456789/1362"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-blue-50 text-blue-800 hover:bg-blue-100 font-semibold"

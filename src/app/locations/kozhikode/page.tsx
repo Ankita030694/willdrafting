@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     absolute: "Will Drafting in Kozhikode: Online Will & NRI Guide",
   },
   description:
-    "Secure your family assets in Kozhikode. Comprehensive guidance for Gulf NRI property owners, PEARLS portal registration, and lawful estate distribution.",
+    "Secure your family assets in Kozhikode. Comprehensive guidance for Gulf NRI property owners, PEARLS portal registration, and lawful estate.",
   keywords: [
     "will drafting in kozhikode",
     "nri will calicut kerala",
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Will Drafting in Kozhikode: Online Will & NRI Guide",
     description:
-      "Secure your family assets in Kozhikode. Comprehensive guidance for Gulf NRI property owners, PEARLS portal registration, and lawful estate distribution.",
+      "Secure your family assets in Kozhikode. Comprehensive guidance for Gulf NRI property owners, PEARLS portal registration, and lawful estate.",
     url: "https://www.willdrafting.in/locations/kozhikode",
     siteName: "WillDrafting.in",
     locale: "en_IN",
@@ -62,7 +62,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Will Drafting in Kozhikode: Online Will & NRI Guide",
     description:
-      "Secure your family assets in Kozhikode. Comprehensive guidance for Gulf NRI property owners, PEARLS portal registration, and lawful estate distribution.",
+      "Secure your family assets in Kozhikode. Comprehensive guidance for Gulf NRI property owners, PEARLS portal registration, and lawful estate.",
     images: ["https://www.willdrafting.in/images/will-drafting-in-kozhikode-og.jpg"],
   },
   robots: {
@@ -142,7 +142,7 @@ export default function KozhikodeLocationPage() {
         url: canonicalUrl,
         name: "Will Drafting in Kozhikode: Online Will & NRI Guide",
         description:
-          "Secure your family assets in Kozhikode. Comprehensive guidance for Gulf NRI property owners, PEARLS portal registration, and lawful estate distribution.",
+          "Secure your family assets in Kozhikode. Comprehensive guidance for Gulf NRI property owners, PEARLS portal registration, and lawful estate.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -189,7 +189,7 @@ export default function KozhikodeLocationPage() {
         "@id": `${canonicalUrl}#legalservice`,
         name: "WillDrafting Kozhikode - Legal Estate Planning & PEARLS Registration",
         description:
-          "Professional Will drafting, advocate verification, Kerala PEARLS registration, Gulf NRI asset planning, and doorstep execution support across Kozhikode.",
+          "Professional Will drafting, advocate verification, Kerala PEARLS registration, Gulf NRI asset planning, and doorstep execution support across.",
         url: canonicalUrl,
         image: imageUrl,
         telephone: "+91-8700343611",

@@ -284,8 +284,8 @@ export default function RanchiLocationClient({ faqs }: Props) {
                 <Image
                   src="/images/will-drafting-in-ranchi-jharkhand.jpg"
                   alt="Will Drafting in Ranchi Online Legal Guide"
-                  fill
-                  className="object-contain group-hover:scale-105 transition-transform duration-500"
+                  width={1200} height={675}
+                  className="absolute inset-0 w-full h-full object-contain group-hover:scale-105 transition-transform duration-500"
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 42vw"
                   priority
                 />
@@ -1753,8 +1753,8 @@ export default function RanchiLocationClient({ faqs }: Props) {
               <Image
                 src="/images/will-drafting-in-ranchi-jharkhand.jpg"
                 alt="Will Drafting in Ranchi Legal Guide - Full Resolution"
-                fill
-                className="object-cover"
+                width={1200} height={675}
+                className="absolute inset-0 w-full h-full object-cover"
               />
             </div>
             <div className="p-4 bg-slate-900 text-white flex items-center justify-between">

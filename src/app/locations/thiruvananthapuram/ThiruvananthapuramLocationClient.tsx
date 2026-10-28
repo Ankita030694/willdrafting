@@ -310,8 +310,8 @@ export default function ThiruvananthapuramLocationClient({ faqs }: Props) {
                 <Image
                   src="/images/will-drafting-in-thiruvananthapuram.jpg"
                   alt="Online Will Drafting and Registration Services in Thiruvananthapuram Kerala"
-                  fill
-                  className="object-contain group-hover:scale-105 transition-transform duration-500"
+                  width={1200} height={675}
+                  className="absolute inset-0 w-full h-full object-contain group-hover:scale-105 transition-transform duration-500"
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 42vw"
                   priority
                 />
@@ -460,7 +460,7 @@ export default function ThiruvananthapuramLocationClient({ faqs }: Props) {
                 <ShieldCheck className="w-5 h-5 text-rose-300" />
               </div>
               <div>
-                <h4 className="font-extrabold text-base text-white">Need Kerala Legal Support?</h4>
+                <div className="font-extrabold text-base text-white">Need Kerala Legal Support?</div>
                 <p className="text-xs text-slate-300 mt-1 leading-relaxed">
                   Speak directly with a senior estate planning advocate in Thiruvananthapuram for customized Will drafting and PEARLS registration assistance.
                 </p>
@@ -1692,8 +1692,8 @@ export default function ThiruvananthapuramLocationClient({ faqs }: Props) {
               <Image
                 src="/images/will-drafting-in-thiruvananthapuram.jpg"
                 alt="High Resolution Visual Blueprint: Thiruvananthapuram Will Drafting and SRO Registration"
-                fill
-                className="object-contain"
+                width={1200} height={675}
+                className="absolute inset-0 w-full h-full object-contain"
                 sizes="(max-width: 1200px) 95vw, 1000px"
               />
             </div>

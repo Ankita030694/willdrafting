@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     absolute: "Affidavit of Attesting Witness for Probate | WillDrafting", // exactly 56 characters
   },
   description:
-    "Download affidavit of attesting witness for probate of will format in India. Dual templates for Section 281 ISA court verification and contemporaneous signing.", // exactly 151 characters
+    "Download affidavit of attesting witness for probate of will format in India. Dual templates for Section 281 ISA court verification and.", // exactly 151 characters
   keywords: [
     "affidavit of attesting witness for probate of will format",
     "witness declaration format for will india",
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Affidavit of Attesting Witness for Probate | WillDrafting",
     description:
-      "Download affidavit of attesting witness for probate of will format in India. Dual templates for Section 281 ISA court verification and contemporaneous signing.",
+      "Download affidavit of attesting witness for probate of will format in India. Dual templates for Section 281 ISA court verification and.",
     url: "https://www.willdrafting.in/templates/attesting-witness-affidavit-probate-format",
     siteName: "WillDrafting.in",
     locale: "en_IN",
@@ -53,7 +53,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Affidavit of Attesting Witness for Probate | WillDrafting",
     description:
-      "Download affidavit of attesting witness for probate of will format in India. Dual templates for Section 281 ISA court verification and contemporaneous signing.",
+      "Download affidavit of attesting witness for probate of will format in India. Dual templates for Section 281 ISA court verification and.",
     images: ["https://www.willdrafting.in/images/attesting-witness-affidavit-probate-format-og.jpg"],
   },
   robots: {
@@ -90,7 +90,7 @@ export default function AttestingWitnessAffidavitPage() {
         url: canonicalUrl,
         name: "Affidavit of Attesting Witness for Probate | WillDrafting",
         description:
-          "Download affidavit of attesting witness for probate of will format in India. Dual templates for Section 281 ISA court verification and contemporaneous signing.",
+          "Download affidavit of attesting witness for probate of will format in India. Dual templates for Section 281 ISA court verification and.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -129,7 +129,7 @@ export default function AttestingWitnessAffidavitPage() {
         url: canonicalUrl,
         fileFormat: "text/html",
         description:
-          "Statutory legal template pack containing contemporaneous attesting witness affidavit and Section 281 Indian Succession Act probate court verification affidavit.",
+          "Statutory legal template pack containing contemporaneous attesting witness affidavit and Section 281 Indian Succession Act probate court.",
         image: imageUrl,
         inLanguage: "en-IN",
         publisher: {

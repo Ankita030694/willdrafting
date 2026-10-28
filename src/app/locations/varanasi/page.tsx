@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     absolute: "Will Drafting in Varanasi: Online Will & Asset Planning",
   },
   description:
-    "Draft a legally valid Will in Varanasi. Complete guidance on ancestral property succession, UP IGRSUP registration, and VDA property mutation support.",
+    "Draft a legally valid Will in Varanasi. Complete guidance on ancestral property succession, UP IGRSUP registration, and VDA property mutation.",
   keywords: [
     "will drafting in varanasi",
     "will registration up igrs kashi",
@@ -50,7 +50,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Will Drafting in Varanasi: Online Will & Asset Planning",
     description:
-      "Draft a legally valid Will in Varanasi. Complete guidance on ancestral property succession, UP IGRSUP registration, and VDA property mutation support.",
+      "Draft a legally valid Will in Varanasi. Complete guidance on ancestral property succession, UP IGRSUP registration, and VDA property mutation.",
     url: "https://www.willdrafting.in/locations/varanasi",
     siteName: "WillDrafting.in",
     locale: "en_IN",
@@ -68,7 +68,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Will Drafting in Varanasi: Online Will & Asset Planning",
     description:
-      "Draft a legally valid Will in Varanasi. Complete guidance on ancestral property succession, UP IGRSUP registration, and VDA property mutation support.",
+      "Draft a legally valid Will in Varanasi. Complete guidance on ancestral property succession, UP IGRSUP registration, and VDA property mutation.",
     images: ["https://www.willdrafting.in/images/will-drafting-in-varanasi.jpg"],
   },
   robots: {
@@ -148,7 +148,7 @@ export default function VaranasiLocationPage() {
         url: canonicalUrl,
         name: "Will Drafting in Varanasi: Online Will & Asset Planning",
         description:
-          "Draft a legally valid Will in Varanasi. Complete guidance on ancestral property succession, UP IGRSUP registration, and VDA property mutation support.",
+          "Draft a legally valid Will in Varanasi. Complete guidance on ancestral property succession, UP IGRSUP registration, and VDA property mutation.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -195,7 +195,7 @@ export default function VaranasiLocationPage() {
         "@id": `${canonicalUrl}#legalservice`,
         name: "WillDrafting Varanasi - Estate Planning & SRO Registration",
         description:
-          "Professional Will drafting, lawyer verification, ancestral property succession, and Sub-Registrar Office e-registration support across Varanasi and Kashi.",
+          "Professional Will drafting, lawyer verification, ancestral property succession, and Sub-Registrar Office e-registration support across.",
         url: canonicalUrl,
         image: imageUrl,
         telephone: "+91-8700343611",

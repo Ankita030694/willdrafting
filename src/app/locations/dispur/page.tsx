@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     absolute: "Will Drafting in Dispur: Online Will Registration Guide",
   },
   description:
-    "Draft a legally binding Will in Dispur. Expert guidance on Assam Panjeeyan portal registration, GMDA property mutation, and inheritance law consultation.",
+    "Draft a legally binding Will in Dispur. Expert guidance on Assam Panjeeyan portal registration, GMDA property mutation, and inheritance law.",
   keywords: [
     "will drafting in dispur",
     "will registration dispur kamrup",
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Will Drafting in Dispur: Online Will Registration Guide",
     description:
-      "Draft a legally binding Will in Dispur. Expert guidance on Assam Panjeeyan portal registration, GMDA property mutation, and inheritance law consultation.",
+      "Draft a legally binding Will in Dispur. Expert guidance on Assam Panjeeyan portal registration, GMDA property mutation, and inheritance law.",
     url: "https://www.willdrafting.in/locations/dispur",
     siteName: "WillDrafting.in",
     locale: "en_IN",
@@ -64,7 +64,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Will Drafting in Dispur: Online Will Registration Guide",
     description:
-      "Draft a legally binding Will in Dispur. Expert guidance on Assam Panjeeyan portal registration, GMDA property mutation, and inheritance law consultation.",
+      "Draft a legally binding Will in Dispur. Expert guidance on Assam Panjeeyan portal registration, GMDA property mutation, and inheritance law.",
     images: ["https://www.willdrafting.in/images/will-drafting-in-dispur-og.jpg"],
   },
   robots: {
@@ -148,7 +148,7 @@ export default function DispurLocationPage() {
         url: canonicalUrl,
         name: "Will Drafting in Dispur: Online Will Registration Guide",
         description:
-          "Draft a legally binding Will in Dispur. Expert guidance on Assam Panjeeyan portal registration, GMDA property mutation, and inheritance law consultation.",
+          "Draft a legally binding Will in Dispur. Expert guidance on Assam Panjeeyan portal registration, GMDA property mutation, and inheritance law.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -195,7 +195,7 @@ export default function DispurLocationPage() {
         "@id": `${canonicalUrl}#legalservice`,
         name: "WillDrafting Dispur - Estate Planning & SRO Registration",
         description:
-          "Professional Will drafting, advocate verification, Assam Panjeeyan portal appointment scheduling, GMDA plot transfer, and Section 31 doorstep execution across Dispur and Kamrup Metro.",
+          "Professional Will drafting, advocate verification, Assam Panjeeyan portal appointment scheduling, GMDA plot transfer, and Section 31 doorstep.",
         url: canonicalUrl,
         image: imageUrl,
         email: "hello@willdrafting.in",

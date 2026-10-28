@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     absolute: "Will Drafting in Raipur: Online Will & Estate Planning",
   },
   description:
-    "Secure family wealth in Raipur. Professional Will drafting, Chhattisgarh NGDRS registration advice, and seamless RDA property succession assistance.",
+    "Secure family wealth in Raipur. Professional Will drafting, Chhattisgarh NGDRS registration advice, and seamless RDA property succession.",
   keywords: [
     "will drafting in raipur",
     "will registration chhattisgarh ngdrs",
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Will Drafting in Raipur: Online Will & Estate Planning",
     description:
-      "Secure family wealth in Raipur. Professional Will drafting, Chhattisgarh NGDRS registration advice, and seamless RDA property succession assistance.",
+      "Secure family wealth in Raipur. Professional Will drafting, Chhattisgarh NGDRS registration advice, and seamless RDA property succession.",
     url: "https://www.willdrafting.in/locations/raipur",
     siteName: "WillDrafting.in",
     locale: "en_IN",
@@ -63,7 +63,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Will Drafting in Raipur: Online Will & Estate Planning",
     description:
-      "Secure family wealth in Raipur. Professional Will drafting, Chhattisgarh NGDRS registration advice, and seamless RDA property succession assistance.",
+      "Secure family wealth in Raipur. Professional Will drafting, Chhattisgarh NGDRS registration advice, and seamless RDA property succession.",
     images: ["https://www.willdrafting.in/images/will-drafting-in-raipur-og.jpg"],
   },
   robots: {
@@ -143,7 +143,7 @@ export default function RaipurLocationPage() {
         url: canonicalUrl,
         name: "Will Drafting in Raipur: Online Will & Estate Planning",
         description:
-          "Secure family wealth in Raipur. Professional Will drafting, Chhattisgarh NGDRS registration advice, and seamless RDA property succession assistance.",
+          "Secure family wealth in Raipur. Professional Will drafting, Chhattisgarh NGDRS registration advice, and seamless RDA property succession.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -190,7 +190,7 @@ export default function RaipurLocationPage() {
         "@id": `${canonicalUrl}#legalservice`,
         name: "WillDrafting Raipur - Estate Planning & SRO Registration",
         description:
-          "Professional Will drafting, lawyer verification, and Sub-Registrar Office e-registration support across Raipur, Nava Raipur Atal Nagar, and Chhattisgarh.",
+          "Professional Will drafting, lawyer verification, and Sub-Registrar Office e-registration support across Raipur, Nava Raipur Atal Nagar, and.",
         url: canonicalUrl,
         image: imageUrl,
         telephone: "+91-8700343611",

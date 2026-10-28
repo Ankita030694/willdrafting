@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     absolute: "Will Drafting in Bhubaneswar: Registration & Probate Guide",
   },
   description:
-    "Draft and register your Will in Bhubaneswar. Expert Orissa High Court probate guidance, asset distribution, and lawyer consultation across Bhubaneswar.",
+    "Draft and register your Will in Bhubaneswar. Expert Orissa High Court probate guidance, asset distribution, and lawyer consultation across.",
   keywords: [
     "will drafting in bhubaneswar",
     "will drafting in patia",
@@ -53,7 +53,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Will Drafting in Bhubaneswar: Registration & Probate Guide",
     description:
-      "Draft and register your Will in Bhubaneswar. Expert Orissa High Court probate guidance, asset distribution, and lawyer consultation across Bhubaneswar.",
+      "Draft and register your Will in Bhubaneswar. Expert Orissa High Court probate guidance, asset distribution, and lawyer consultation across.",
     url: "https://www.willdrafting.in/locations/bhubaneswar",
     siteName: "WillDrafting.in",
     locale: "en_IN",
@@ -71,7 +71,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Will Drafting in Bhubaneswar: Registration & Probate Guide",
     description:
-      "Draft and register your Will in Bhubaneswar. Expert Orissa High Court probate guidance, asset distribution, and lawyer consultation across Bhubaneswar.",
+      "Draft and register your Will in Bhubaneswar. Expert Orissa High Court probate guidance, asset distribution, and lawyer consultation across.",
     images: ["https://www.willdrafting.in/images/will-drafting-in-bhubaneswar.jpg"],
   },
   robots: {
@@ -143,7 +143,7 @@ export default function BhubaneswarLocationPage() {
         url: canonicalUrl,
         name: "Will Drafting in Bhubaneswar: Registration & Probate Guide",
         description:
-          "Draft and register your Will in Bhubaneswar. Expert Orissa High Court probate guidance, asset distribution, and lawyer consultation across Bhubaneswar.",
+          "Draft and register your Will in Bhubaneswar. Expert Orissa High Court probate guidance, asset distribution, and lawyer consultation across.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -190,7 +190,7 @@ export default function BhubaneswarLocationPage() {
         "@id": `${canonicalUrl}#legalservice`,
         name: "WillDrafting Bhubaneswar - Estate Planning, Registration & Probate Guidance",
         description:
-          "Professional Will drafting, advocate verification, Odisha IGR Sub-Registrar registration, and Orissa High Court probate guidance across Bhubaneswar and Khordha district.",
+          "Professional Will drafting, advocate verification, Odisha IGR Sub-Registrar registration, and Orissa High Court probate guidance across.",
         url: canonicalUrl,
         image: imageUrl,
         telephone: "+91-8700343611",

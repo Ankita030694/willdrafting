@@ -825,9 +825,9 @@ export default function WillVsFamilyTrustClient() {
                   <Image
                     src="/images/will-vs-family-trust-india.jpg"
                     alt="Will vs Family Trust in India: Simple & Straightforward vs Greater Control & Privacy"
-                    fill
+                    width={1200} height={675}
                     sizes="(max-width: 1024px) 100vw, 800px"
-                    className="object-contain p-2 sm:p-4"
+                    className="absolute inset-0 w-full h-full object-contain p-2 sm:p-4"
                     priority
                   />
                 </div>
@@ -1597,7 +1597,7 @@ export default function WillVsFamilyTrustClient() {
                   </span>
                 </Link>
                 <Link
-                  href="/service/nri-will-india"
+                  href="/services/nri-will-india"
                   className="block p-2.5 rounded-xl border border-slate-100 hover:border-rose-200 hover:bg-rose-50/30 transition-all font-semibold text-[#172228]"
                 >
                   NRI Will Drafting &amp; Inheritance
@@ -1641,7 +1641,7 @@ export default function WillVsFamilyTrustClient() {
                   Digital Assets & Crypto Will
                 </Link>
                 <Link
-                  href="/service/will-registration"
+                  href="/services/will-registration"
                   className="text-[11px] px-3 py-1 rounded-lg bg-slate-100 text-[#172228] hover:bg-slate-200 transition-colors"
                 >
                   Will Registration Service

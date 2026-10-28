@@ -1170,8 +1170,8 @@ DEPONENT (EXECUTOR)`;
                 <Image
                   src="/images/executor-duties-90-day-timeline-generator-og.jpg"
                   alt="Executor of Will Checklist India - 90-Day Statutory Roadmap & Duties"
-                  fill
-                  className="object-cover"
+                  width={1200} height={675}
+                  className="absolute inset-0 w-full h-full object-cover"
                   sizes="(max-width: 1200px) 100vw, 1200px"
                   priority
                 />
@@ -1827,7 +1827,7 @@ DEPONENT (EXECUTOR)`;
                     <ExternalLink className="w-3 h-3" />
                   </a>
                   <a
-                    href="https://incometaxindia.gov.in"
+                    href="https://www.indiacode.nic.in"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-blue-50 text-blue-800 hover:bg-blue-100 font-semibold"

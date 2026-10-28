@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     absolute: "Will Dispute Lawyer India: Contest & Probate Advocates",
   },
   description:
-    "Consult an expert will dispute lawyer in India. AMA Legal Solutions challenges forged Wills, files probate caveats, and defends genuine Wills in court.",
+    "Consult an expert will dispute lawyer in India. AMA Legal Solutions challenges forged Wills, files probate caveats, and defends genuine Wills.",
   authors: [{ name: "Advocate Anuj Anand Malik", url: "https://www.linkedin.com/in/iamanujmalik/" }],
   keywords: [
     "will dispute lawyer india",
@@ -56,7 +56,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Will Dispute Lawyer India: Contest & Probate Advocates",
     description:
-      "Consult an expert will dispute lawyer in India. AMA Legal Solutions challenges forged Wills, files probate caveats, and defends genuine Wills in court.",
+      "Consult an expert will dispute lawyer in India. AMA Legal Solutions challenges forged Wills, files probate caveats, and defends genuine Wills.",
     url: "https://www.willdrafting.in/services/will-dispute-contest-litigation-lawyer",
     siteName: "WillDrafting.in",
     locale: "en_IN",
@@ -74,7 +74,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Will Dispute Lawyer India: Contest & Probate Advocates",
     description:
-      "Consult an expert will dispute lawyer in India. AMA Legal Solutions challenges forged Wills, files probate caveats, and defends genuine Wills in court.",
+      "Consult an expert will dispute lawyer in India. AMA Legal Solutions challenges forged Wills, files probate caveats, and defends genuine Wills.",
     images: ["/images/will-dispute-contest-litigation-lawyer-og.jpg"],
   },
   robots: {
@@ -458,11 +458,11 @@ export default function WillDisputeLitigationPage() {
             <div className="relative w-full aspect-[16/9] rounded-2xl overflow-hidden">
               <Image
                 src="/images/will-dispute-contest-litigation-lawyer-og.jpg"
-                alt="Will Dispute and Probate Litigation Advocate Court Representation in India - AMA Legal Solutions"
-                fill
+                alt="Will Dispute and Probate Litigation Advocate Court Representation in India - AMA Legal"
+                width={1200} height={675}
                 priority
                 sizes="(max-width: 1200px) 100vw, 1200px"
-                className="object-cover"
+                className="absolute inset-0 w-full h-full object-cover"
               />
             </div>
             <figcaption className="mt-4 px-2 text-xs sm:text-[13px] text-[#55636D] flex flex-col sm:flex-row sm:items-center justify-between gap-2">

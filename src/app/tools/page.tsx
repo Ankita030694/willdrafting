@@ -9,16 +9,18 @@ export const dynamic = "force-dynamic";
 
 // Strict SEO compliance: Title 50–60 chars, Meta Description 140–155 chars, 0 em-dashes
 export const metadata: Metadata = {
-  title: "Legal Succession Tools & Calculators | WillDrafting", // exactly 51 characters
+  title: {
+    absolute: "Legal Succession Tools & Calculators | WillDrafting",
+  },
   description:
-    "Free legal diagnostic tools, court fee calculators, NRI Will checkers, and Hindu succession share estimators. Compliant with Indian Succession Act 1925.", // exactly 154 characters
+    "Free legal diagnostic tools, court fee calculators, NRI Will checkers, and Hindu succession share estimators under the Indian Succession Act 1925.",
   alternates: {
     canonical: "https://www.willdrafting.in/tools",
   },
   openGraph: {
     title: "Legal Succession Tools & Calculators | WillDrafting",
     description:
-      "Free legal diagnostic tools, court fee calculators, NRI Will checkers, and Hindu succession share estimators. Compliant with Indian Succession Act 1925.",
+      "Free legal diagnostic tools, court fee calculators, NRI Will checkers, and Hindu succession share estimators. Compliant with Indian Succession.",
     url: "https://www.willdrafting.in/tools",
     siteName: "WillDrafting",
     locale: "en_IN",
@@ -36,7 +38,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Legal Succession Tools & Calculators | WillDrafting",
     description:
-      "Free legal diagnostic tools, court fee calculators, NRI Will checkers, and Hindu succession share estimators. Compliant with Indian Succession Act 1925.",
+      "Free legal diagnostic tools, court fee calculators, NRI Will checkers, and Hindu succession share estimators. Compliant with Indian Succession.",
     images: ["https://www.willdrafting.in/desktopusp.jpg"],
   },
   robots: {

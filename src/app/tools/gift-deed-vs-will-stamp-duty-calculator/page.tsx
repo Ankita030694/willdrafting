@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     absolute: "Gift Deed Stamp Duty Calculator vs Will | WillDrafting", // exactly 54 characters
   },
   description:
-    "Calculate gift deed stamp duty for blood relatives across Indian states. Compare gift deed vs release deed vs Will costs and save lakhs with WillDrafting.", // exactly 152 characters
+    "Calculate gift deed stamp duty for blood relatives across Indian states. Compare gift deed vs release deed vs Will costs and save lakhs with.", // exactly 152 characters
   keywords: [
     "gift deed stamp duty calculator for blood relatives",
     "gift deed vs will cost calculator",
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Gift Deed Stamp Duty Calculator vs Will | WillDrafting",
     description:
-      "Calculate gift deed stamp duty for blood relatives across Indian states. Compare gift deed vs release deed vs Will costs and save lakhs with WillDrafting.",
+      "Calculate gift deed stamp duty for blood relatives across Indian states. Compare gift deed vs release deed vs Will costs and save lakhs with.",
     url: "https://www.willdrafting.in/tools/gift-deed-vs-will-stamp-duty-calculator",
     siteName: "WillDrafting.in",
     locale: "en_IN",
@@ -53,7 +53,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Gift Deed Stamp Duty Calculator vs Will | WillDrafting",
     description:
-      "Calculate gift deed stamp duty for blood relatives across Indian states. Compare gift deed vs release deed vs Will costs and save lakhs with WillDrafting.",
+      "Calculate gift deed stamp duty for blood relatives across Indian states. Compare gift deed vs release deed vs Will costs and save lakhs with.",
     images: ["https://www.willdrafting.in/images/gift-deed-vs-will-stamp-duty-calculator-og.jpg"],
   },
   robots: {
@@ -90,7 +90,7 @@ export default function GiftDeedCalculatorPage() {
         url: canonicalUrl,
         name: "Gift Deed Stamp Duty Calculator vs Will | WillDrafting",
         description:
-          "Calculate gift deed stamp duty for blood relatives across Indian states. Compare gift deed vs release deed vs Will costs and save lakhs with WillDrafting.",
+          "Calculate gift deed stamp duty for blood relatives across Indian states. Compare gift deed vs release deed vs Will costs and save lakhs with.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -130,7 +130,7 @@ export default function GiftDeedCalculatorPage() {
         applicationCategory: "LegalApplication",
         operatingSystem: "All",
         description:
-          "Interactive statutory stamp duty calculator for gift deeds, release deeds, and Wills across Indian states including Maharashtra, Uttar Pradesh, Delhi, Karnataka, and Tamil Nadu.",
+          "Interactive statutory stamp duty calculator for gift deeds, release deeds, and Wills across Indian states including Maharashtra, Uttar.",
         image: imageUrl,
         offers: {
           "@type": "Offer",

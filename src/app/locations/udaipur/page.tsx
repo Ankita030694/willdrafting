@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     absolute: "Will Drafting in Udaipur: Online Will & Succession Guide",
   },
   description:
-    "Protect family property in Udaipur. Expert lawyer drafting, ePanjiyan Rajasthan registration guidance, and heritage asset succession without probate.",
+    "Protect family property in Udaipur. Expert lawyer drafting, ePanjiyan Rajasthan registration guidance, and heritage asset succession without.",
   keywords: [
     "will drafting in udaipur",
     "will registration rajasthan epanjiyan udaipur",
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Will Drafting in Udaipur: Online Will & Succession Guide",
     description:
-      "Protect family property in Udaipur. Expert lawyer drafting, ePanjiyan Rajasthan registration guidance, and heritage asset succession without probate.",
+      "Protect family property in Udaipur. Expert lawyer drafting, ePanjiyan Rajasthan registration guidance, and heritage asset succession without.",
     url: "https://www.willdrafting.in/locations/udaipur",
     siteName: "WillDrafting.in",
     locale: "en_IN",
@@ -62,7 +62,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Will Drafting in Udaipur: Online Will & Succession Guide",
     description:
-      "Protect family property in Udaipur. Expert lawyer drafting, ePanjiyan Rajasthan registration guidance, and heritage asset succession without probate.",
+      "Protect family property in Udaipur. Expert lawyer drafting, ePanjiyan Rajasthan registration guidance, and heritage asset succession without.",
     images: ["https://www.willdrafting.in/images/will-drafting-in-udaipur-og.jpg"],
   },
   robots: {
@@ -142,7 +142,7 @@ export default function UdaipurLocationPage() {
         url: canonicalUrl,
         name: "Will Drafting in Udaipur: Online Will & Succession Guide",
         description:
-          "Protect family property in Udaipur. Expert lawyer drafting, ePanjiyan Rajasthan registration guidance, and heritage asset succession without probate.",
+          "Protect family property in Udaipur. Expert lawyer drafting, ePanjiyan Rajasthan registration guidance, and heritage asset succession without.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -189,7 +189,7 @@ export default function UdaipurLocationPage() {
         "@id": `${canonicalUrl}#legalservice`,
         name: "WillDrafting Udaipur - Heritage Estate Planning & SRO Registration",
         description:
-          "Professional Will drafting, advocate verification, ePanjiyan Rajasthan registration support, and doorstep execution across Udaipur, Hiran Magri, Panchwati, Sukher, and Fatehpura.",
+          "Professional Will drafting, advocate verification, ePanjiyan Rajasthan registration support, and doorstep execution across Udaipur, Hiran.",
         url: canonicalUrl,
         image: imageUrl,
         email: "hello@willdrafting.in",

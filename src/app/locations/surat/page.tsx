@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     absolute: "Will Drafting in Surat: Online Will & Business Planning",
   },
   description:
-    "Draft your Will in Surat with expert lawyer review. Secure commercial assets, family business shares, and Gujarat Sub-Registrar registration easily.",
+    "Draft your Will in Surat with expert lawyer review. Secure commercial assets, family business shares, and Gujarat Sub-Registrar registration.",
   keywords: [
     "will drafting in surat",
     "will registration surat gujarat",
@@ -52,7 +52,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Will Drafting in Surat: Online Will & Business Planning",
     description:
-      "Draft your Will in Surat with expert lawyer review. Secure commercial assets, family business shares, and Gujarat Sub-Registrar registration easily.",
+      "Draft your Will in Surat with expert lawyer review. Secure commercial assets, family business shares, and Gujarat Sub-Registrar registration.",
     url: "https://www.willdrafting.in/locations/surat",
     siteName: "WillDrafting.in",
     locale: "en_IN",
@@ -70,7 +70,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Will Drafting in Surat: Online Will & Business Planning",
     description:
-      "Draft your Will in Surat with expert lawyer review. Secure commercial assets, family business shares, and Gujarat Sub-Registrar registration easily.",
+      "Draft your Will in Surat with expert lawyer review. Secure commercial assets, family business shares, and Gujarat Sub-Registrar registration.",
     images: ["https://www.willdrafting.in/images/will-drafting-in-surat-og.jpg"],
   },
   robots: {
@@ -150,7 +150,7 @@ export default function SuratLocationPage() {
         url: canonicalUrl,
         name: "Will Drafting in Surat: Online Will & Business Planning",
         description:
-          "Draft your Will in Surat with expert lawyer review. Secure commercial assets, family business shares, and Gujarat Sub-Registrar registration easily.",
+          "Draft your Will in Surat with expert lawyer review. Secure commercial assets, family business shares, and Gujarat Sub-Registrar registration.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -197,7 +197,7 @@ export default function SuratLocationPage() {
         "@id": `${canonicalUrl}#legalservice`,
         name: "WillDrafting Surat - Commercial Estate Planning & SRO Registration",
         description:
-          "Professional Will drafting, diamond and textile business succession, HUF asset planning, and Sub-Registrar Office e-registration support across Surat, Gujarat.",
+          "Professional Will drafting, diamond and textile business succession, HUF asset planning, and Sub-Registrar Office e-registration support.",
         url: canonicalUrl,
         image: imageUrl,
         telephone: "+91-8700343611",

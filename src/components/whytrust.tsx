@@ -66,10 +66,10 @@ export default function WhyTrust() {
                 <Image
                   src="/desktopusp.jpg"
                   alt="Why Indian families trust WillDrafting for lawyer-verified estate planning"
-                  fill
+                  width={1200} height={675}
                   priority
                   sizes="(max-width: 1024px) 100vw, 540px"
-                  className="object-cover object-center"
+                  className="absolute inset-0 w-full h-full object-cover object-center"
                 />
               </div>
             </div>

@@ -299,8 +299,8 @@ export default function WestBengalLocationClient({ faqs }: Props) {
                 <Image
                   src="/images/will-drafting-in-west-bengal.jpg"
                   alt="Legal Will Drafting and Property Succession in West Bengal"
-                  fill
-                  className="object-contain group-hover:scale-102 transition-transform duration-500"
+                  width={1200} height={675}
+                  className="absolute inset-0 w-full h-full object-contain group-hover:scale-102 transition-transform duration-500"
                   priority
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 40vw"
                 />
@@ -689,7 +689,7 @@ export default function WestBengalLocationClient({ faqs }: Props) {
                   </p>
                   <div className="pt-2">
                     <Link
-                      href="/service/probate-lawyer"
+                      href="/services/probate-lawyer"
                       className="inline-flex items-center gap-1.5 text-xs font-bold text-[#C65378] hover:underline"
                     >
                       <span>Explore Calcutta High Court Probate Services</span>
@@ -822,7 +822,7 @@ export default function WestBengalLocationClient({ faqs }: Props) {
                       Token booking via wbregistration.gov.in
                     </span>
                     <Link
-                      href="/service/will-registration"
+                      href="/services/will-registration"
                       className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-[#C65378] text-white text-xs font-bold hover:bg-[#a13c5d] transition-colors"
                     >
                       <span>Book SRO Assistance</span>
@@ -1879,8 +1879,8 @@ export default function WestBengalLocationClient({ faqs }: Props) {
               <Image
                 src="/images/will-drafting-in-west-bengal.jpg"
                 alt="High Resolution Visual Blueprint: West Bengal Will Drafting and SRO Registration"
-                fill
-                className="object-contain"
+                width={1200} height={675}
+                className="absolute inset-0 w-full h-full object-contain"
                 priority
               />
             </div>

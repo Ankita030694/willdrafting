@@ -370,9 +370,9 @@ export default function WillRegistrationClient() {
                   EXECUTIVE BRIEF: WILL REGISTRATION IN INDIA
                 </span>
               </div>
-              <h3 className="text-lg font-bold text-slate-900 mb-3">
+              <div className="text-lg font-bold text-slate-900 mb-3">
                 Core Rules for Registering a Will at the Sub-Registrar Office
-              </h3>
+              </div>
               <ul className="space-y-2 text-sm text-slate-700">
                 <li className="flex items-start gap-2.5">
                   <CheckCircle2 className="w-4 h-4 text-[#5F7E75] shrink-0 mt-0.5" />
@@ -580,9 +580,9 @@ export default function WillRegistrationClient() {
                 <div className="relative w-full aspect-[16/9] rounded-xl overflow-hidden bg-[#FAF7F0] border border-slate-100 shadow-inner">
                   <Image
                     src="/images/notarized-will-vs-registered-will-india-og.jpg"
-                    alt="Authentic Will Registration at Government Sub-Registrar Office in India under Registration Act 1908"
-                    fill
-                    className="object-cover hover:scale-[1.02] transition-transform duration-500"
+                    alt="Authentic Will Registration at Government Sub-Registrar Office in India under"
+                    width={1200} height={675}
+                    className="absolute inset-0 w-full h-full object-cover hover:scale-[1.02] transition-transform duration-500"
                     priority
                   />
                 </div>
@@ -1217,7 +1217,7 @@ export default function WillRegistrationClient() {
                     Codicil Format to Amend Will
                   </Link>
                   <Link
-                    href="/service/nri-will-india"
+                    href="/services/nri-will-india"
                     className="px-3 py-1.5 rounded-lg bg-slate-100 hover:bg-rose-50 text-slate-700 hover:text-[#C65378] text-xs font-semibold transition-colors"
                   >
                     NRI Will Drafting Services
@@ -1371,7 +1371,7 @@ export default function WillRegistrationClient() {
               </Link>
 
               <Link
-                href="/service/nri-will-india"
+                href="/services/nri-will-india"
                 className="block p-3 rounded-xl border border-slate-100 hover:border-rose-200 hover:bg-rose-50/30 transition-all"
               >
                 <div className="font-bold text-xs text-slate-900">NRI Will Drafting Hub</div>

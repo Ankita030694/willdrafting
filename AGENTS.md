@@ -7,3 +7,22 @@ This version has breaking changes — APIs, conventions, and file structure may 
 This block is written and re-added by `next dev` — verify at `node_modules/next/dist/server/lib/generate-agent-files.js`. Removing it from a diff only re-creates the uncommitted change; committing it with your work keeps the tree clean.
 
 <!-- END:nextjs-agent-rules -->
+
+# Mandatory Technical SEO & Screaming Frog Audit Compliance
+
+Before creating or modifying any page, blog post, location guide, service page, tool, or template in this repository, you **MUST** read and enforce every rule in [`SEO_AUDIT_RULES.md`](./SEO_AUDIT_RULES.md):
+
+1. **Page `<title>`:** Must be **30–60 characters** and **≤ 561 pixels**. Always use `title: { absolute: "..." }` so root `layout.tsx` does not append a duplicate `| WillDrafting.in`.
+2. **Meta Description:** Must be **70–154 characters** and **≤ 985 pixels** (aim for 135–152 characters).
+3. **Heading Hierarchy (`H1` → `H2` → `H3` → `H4`):**
+   - Exactly **1 `<h1>`** per page (**≤ 70 characters**).
+   - Never place `<h2>`, `<h3>`, or `<h4>` before `<h1>`, and never place `<h3>` or `<h4>` between `<h1>` and the first `<h2>`.
+   - Every `<h2>` must be **≤ 70 characters** and unique across pages (never use generic repeated `<h2>The short version</h2>` or duplicate state/city `<h2>` headings).
+4. **Links:**
+   - Zero internal `404` or `308` redirect links (always use `/services/...` plural and `/about-us`).
+   - Never render icon-only `<Link>`/`<a>` without descriptive text or `<span className="sr-only">`.
+   - Keep external outlinks ≤ 10 per page and only link to live `200 OK` HTTPS URLs.
+5. **Hreflang:** All pages in a multi-language cluster (`/templates/will-format-*`) must share the exact same reciprocal `alternates.languages` map.
+6. **Images:** Always include explicit `width` and `height` attributes (avoid `<Image fill />` without explicit dimensions) and keep `alt` text **≤ 100 characters**.
+7. **Automated Verification:** Run `node scripts/seo-audit-check.mjs` before committing new or modified pages.
+

@@ -19,11 +19,11 @@ const plusJakarta = Plus_Jakarta_Sans({
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.willdrafting.in"),
   title: {
-    default: "India's First Online Will Drafting Platform | WillDrafting.in",
+    default: "Online Will Drafting Platform India | WillDrafting.in",
     template: "%s | WillDrafting.in",
   },
   description:
-    "India's first online will drafting platform. Make a legally valid online Will in India in minutes with instant court-ready PDF & advocate review by AMA Legal Solutions.",
+    "India's first online will drafting platform. Make a legally valid Will in India in minutes with court-ready PDF & lawyer review by AMA Legal Solutions.",
   keywords: [
     "india's first online will drafting platform",
     "online will drafting platform india",

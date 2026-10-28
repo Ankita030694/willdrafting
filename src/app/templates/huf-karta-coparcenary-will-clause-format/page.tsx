@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     absolute: "How to Mention Huf Share in Will Format | WillDrafting.in", // exactly 56 characters
   },
   description:
-    "Learn how to mention huf share in will format under Section 30 Hindu Succession Act. Download lawyer-vetted coparcenary clauses and avoid fatal errors.", // exactly 151 characters
+    "Learn how to mention huf share in will format under Section 30 Hindu Succession Act. Download lawyer-vetted coparcenary clauses and avoid.", // exactly 151 characters
   keywords: [
     "how to mention huf share in will format",
     "section 30 hindu succession act will clause format",
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "How to Mention Huf Share in Will Format | WillDrafting.in",
     description:
-      "Learn how to mention huf share in will format under Section 30 Hindu Succession Act. Download lawyer-vetted coparcenary clauses and avoid fatal errors.",
+      "Learn how to mention huf share in will format under Section 30 Hindu Succession Act. Download lawyer-vetted coparcenary clauses and avoid.",
     url: "https://www.willdrafting.in/templates/huf-karta-coparcenary-will-clause-format",
     siteName: "WillDrafting.in",
     locale: "en_IN",
@@ -51,7 +51,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "How to Mention Huf Share in Will Format | WillDrafting.in",
     description:
-      "Learn how to mention huf share in will format under Section 30 Hindu Succession Act. Download lawyer-vetted coparcenary clauses and avoid fatal errors.",
+      "Learn how to mention huf share in will format under Section 30 Hindu Succession Act. Download lawyer-vetted coparcenary clauses and avoid.",
     images: ["https://www.willdrafting.in/images/huf-karta-coparcenary-will-clause-format-og.jpg"],
   },
   robots: {
@@ -88,7 +88,7 @@ export default function HufKartaCoparcenaryWillClausePage() {
         url: canonicalUrl,
         name: "How to Mention Huf Share in Will Format | WillDrafting.in",
         description:
-          "Learn how to mention huf share in will format under Section 30 Hindu Succession Act. Download lawyer-vetted coparcenary clauses and avoid fatal errors.",
+          "Learn how to mention huf share in will format under Section 30 Hindu Succession Act. Download lawyer-vetted coparcenary clauses and avoid.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -126,7 +126,7 @@ export default function HufKartaCoparcenaryWillClausePage() {
         name: "HUF Karta Coparcenary Will Clause Format & Section 30 Bequest Template",
         url: canonicalUrl,
         description:
-          "Statutory legal clause format for bequeathing undivided coparcenary interest in a Hindu Undivided Family (HUF) under Section 30 of the Hindu Succession Act, 1956.",
+          "Statutory legal clause format for bequeathing undivided coparcenary interest in a Hindu Undivided Family (HUF) under Section 30 of the Hindu.",
         fileFormat: "text/html",
         isAccessibleForFree: true,
         image: imageUrl,

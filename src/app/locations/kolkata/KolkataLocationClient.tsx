@@ -310,8 +310,8 @@ export default function KolkataLocationClient({ faqs }: Props) {
                 <Image
                   src="/images/will-drafting-in-kolkata.jpg"
                   alt="Online Will Drafting and Probate Assistance in Kolkata"
-                  fill
-                  className="object-contain group-hover:scale-105 transition-transform duration-500"
+                  width={1200} height={675}
+                  className="absolute inset-0 w-full h-full object-contain group-hover:scale-105 transition-transform duration-500"
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 42vw"
                   priority
                 />
@@ -718,7 +718,7 @@ export default function KolkataLocationClient({ faqs }: Props) {
                   </p>
                   <div className="flex items-center gap-3">
                     <Link
-                      href="/service/probate-lawyer"
+                      href="/services/probate-lawyer"
                       className="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-[#C65378] hover:bg-[#a13c5d] text-white text-xs font-bold transition-colors"
                     >
                       <span>Consult Kolkata Probate Advocate</span>
@@ -1840,8 +1840,8 @@ export default function KolkataLocationClient({ faqs }: Props) {
               <Image
                 src="/images/will-drafting-in-kolkata.jpg"
                 alt="High Resolution Visual Blueprint: Kolkata Will Drafting and Probate Architecture"
-                fill
-                className="object-contain"
+                width={1200} height={675}
+                className="absolute inset-0 w-full h-full object-contain"
                 sizes="(max-width: 1200px) 100vw, 1200px"
               />
             </div>

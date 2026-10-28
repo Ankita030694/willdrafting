@@ -9,16 +9,18 @@ export const dynamic = "force-dynamic";
 
 // Strict SEO compliance: Title 50–60 chars, Meta Description 140–155 chars, 0 em-dashes
 export const metadata: Metadata = {
-  title: "Legal Will & Succession Templates | WillDrafting", // exactly 50 characters
+  title: {
+    absolute: "Legal Will & Succession Templates | WillDrafting",
+  },
   description:
-    "Download legally valid plain paper Will formats, Hindi wasiyatnama, codicils, living wills, and relinquishment deeds under Indian Succession Act 1925.", // exactly 151 characters
+    "Download legally valid plain paper Will formats, Hindi wasiyatnama, codicils, living wills, and relinquishment deeds under Indian Succession.",
   alternates: {
     canonical: "https://www.willdrafting.in/templates",
   },
   openGraph: {
     title: "Legal Will & Succession Templates | WillDrafting",
     description:
-      "Download legally valid plain paper Will formats, Hindi wasiyatnama, codicils, living wills, and relinquishment deeds under Indian Succession Act 1925.",
+      "Download legally valid plain paper Will formats, Hindi wasiyatnama, codicils, living wills, and relinquishment deeds under Indian Succession.",
     url: "https://www.willdrafting.in/templates",
     siteName: "WillDrafting",
     locale: "en_IN",
@@ -36,7 +38,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Legal Will & Succession Templates | WillDrafting",
     description:
-      "Download legally valid plain paper Will formats, Hindi wasiyatnama, codicils, living wills, and relinquishment deeds under Indian Succession Act 1925.",
+      "Download legally valid plain paper Will formats, Hindi wasiyatnama, codicils, living wills, and relinquishment deeds under Indian Succession.",
     images: ["https://www.willdrafting.in/desktopusp.jpg"],
   },
   robots: {

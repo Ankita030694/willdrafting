@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     absolute: "Will Drafting in Telangana: Online Will & Asset Planning",
   },
   description:
-    "Draft a legally valid Will in Telangana. Easy registration via IGRS Telangana, Dharani portal land transfer, and experienced advocate review online.",
+    "Draft a legally valid Will in Telangana. Easy registration via IGRS Telangana, Dharani portal land transfer, and experienced advocate review.",
   keywords: [
     "will drafting in telangana",
     "will registration igrs telangana",
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Will Drafting in Telangana: Online Will & Asset Planning",
     description:
-      "Draft a legally valid Will in Telangana. Easy registration via IGRS Telangana, Dharani portal land transfer, and experienced advocate review online.",
+      "Draft a legally valid Will in Telangana. Easy registration via IGRS Telangana, Dharani portal land transfer, and experienced advocate review.",
     url: "https://www.willdrafting.in/locations/telangana",
     siteName: "WillDrafting.in",
     locale: "en_IN",
@@ -62,7 +62,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Will Drafting in Telangana: Online Will & Asset Planning",
     description:
-      "Draft a legally valid Will in Telangana. Easy registration via IGRS Telangana, Dharani portal land transfer, and experienced advocate review online.",
+      "Draft a legally valid Will in Telangana. Easy registration via IGRS Telangana, Dharani portal land transfer, and experienced advocate review.",
     images: ["https://www.willdrafting.in/images/will-drafting-in-telangana-og.jpg"],
   },
   robots: {
@@ -142,7 +142,7 @@ export default function TelanganaLocationPage() {
         url: canonicalUrl,
         name: "Will Drafting in Telangana: Online Will & Asset Planning",
         description:
-          "Draft a legally valid Will in Telangana. Easy registration via IGRS Telangana, Dharani portal land transfer, and experienced advocate review online.",
+          "Draft a legally valid Will in Telangana. Easy registration via IGRS Telangana, Dharani portal land transfer, and experienced advocate review.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -189,7 +189,7 @@ export default function TelanganaLocationPage() {
         "@id": `${canonicalUrl}#legalservice`,
         name: "WillDrafting Telangana - Estate Planning & SRO Registration",
         description:
-          "Professional Will drafting, advocate verification, IGRS Telangana slot scheduling, Dharani portal land succession, and doorstep execution support across Hyderabad, Warangal, Nizamabad, and Karimnagar.",
+          "Professional Will drafting, advocate verification, IGRS Telangana slot scheduling, Dharani portal land succession, and doorstep execution.",
         url: canonicalUrl,
         image: imageUrl,
         email: "hello@willdrafting.in",

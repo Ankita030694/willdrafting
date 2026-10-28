@@ -296,8 +296,8 @@ export default function MaharashtraLocationClient({ faqs }: Props) {
                 <Image
                   src="/images/will-drafting-in-maharashtra.jpg"
                   alt="Online Will Drafting and Registration Services in Maharashtra"
-                  fill
-                  className="object-contain group-hover:scale-105 transition-transform duration-500"
+                  width={1200} height={675}
+                  className="absolute inset-0 w-full h-full object-contain group-hover:scale-105 transition-transform duration-500"
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 42vw"
                   priority
                 />
@@ -673,7 +673,7 @@ export default function MaharashtraLocationClient({ faqs }: Props) {
                   </ul>
                   <div className="pt-2">
                     <Link
-                      href="/service/probate-lawyer"
+                      href="/services/probate-lawyer"
                       className="text-xs font-bold text-[#C65378] hover:text-[#9e3a5a] inline-flex items-center gap-1.5"
                     >
                       <span>Consult Bombay High Court Probate Lawyers</span>
@@ -1699,8 +1699,8 @@ export default function MaharashtraLocationClient({ faqs }: Props) {
               <Image
                 src="/images/will-drafting-in-maharashtra.jpg"
                 alt="High Resolution Visual Blueprint: Maharashtra Will Drafting and SRO Registration"
-                fill
-                className="object-contain"
+                width={1200} height={675}
+                className="absolute inset-0 w-full h-full object-contain"
                 sizes="(max-width: 1200px) 95vw, 1000px"
               />
             </div>

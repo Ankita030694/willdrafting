@@ -447,8 +447,8 @@ export default function KanpurLocationClient({ faqs }: Props) {
                 <Image
                   src="/images/will-drafting-in-kanpur.jpg"
                   alt="Online Will Drafting and Property Succession in Kanpur Uttar Pradesh"
-                  fill
-                  className="object-contain group-hover:scale-102 transition-transform duration-500"
+                  width={1200} height={675}
+                  className="absolute inset-0 w-full h-full object-contain group-hover:scale-102 transition-transform duration-500"
                   priority
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 40vw"
                 />
@@ -1667,7 +1667,7 @@ export default function KanpurLocationClient({ faqs }: Props) {
                 </a>
 
                 <a
-                  href="http://upbhulekh.gov.in"
+                  href="https://igrsup.gov.in"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="p-5 rounded-2xl bg-white border border-slate-200/90 shadow-xs hover:border-[#C65378] transition-all space-y-1.5 group"
@@ -1742,8 +1742,8 @@ export default function KanpurLocationClient({ faqs }: Props) {
               <Image
                 src="/images/will-drafting-in-kanpur.jpg"
                 alt="High Resolution Visual Blueprint: Kanpur Will Drafting and SRO Registration"
-                fill
-                className="object-contain"
+                width={1200} height={675}
+                className="absolute inset-0 w-full h-full object-contain"
                 priority
               />
             </div>

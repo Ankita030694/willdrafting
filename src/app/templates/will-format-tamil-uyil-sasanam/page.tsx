@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     absolute: "உயில் சாசனம் மாதிரி | Will Format in Tamil | WillDrafting", // exactly 57 characters
   },
   description:
-    "Download legally valid உயில் எழுதுவது எப்படி மாதிரி (will format in tamil) under Indian Succession Act, 1925 with Chennai probate guidance and SRO rules.", // exactly 153 characters
+    "Download legally valid உயில் எழுதுவது எப்படி மாதிரி (will format in tamil) under Indian Succession Act, 1925 with Chennai probate guidance and.", // exactly 153 characters
   keywords: [
     "உயில் எழுதுவது எப்படி மாதிரி",
     "will format in tamil",
@@ -28,15 +28,23 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://www.willdrafting.in/templates/will-format-tamil-uyil-sasanam",
     languages: {
+      "en-IN": "https://www.willdrafting.in/templates/will-format-india",
+      "hi-IN": "https://www.willdrafting.in/templates/will-format-hindi",
+      "mr-IN": "https://www.willdrafting.in/templates/will-format-marathi-mrutyupatra",
+      "gu-IN": "https://www.willdrafting.in/templates/will-format-gujarati-vasiyatnama",
+      "pa-IN": "https://www.willdrafting.in/templates/will-format-punjabi-vasiyatnama",
+      "bn-IN": "https://www.willdrafting.in/templates/will-format-bengali-ichchapatra",
       "ta-IN": "https://www.willdrafting.in/templates/will-format-tamil-uyil-sasanam",
-      "en-IN": "https://www.willdrafting.in/templates/will-format-tamil-uyil-sasanam",
-      "x-default": "https://www.willdrafting.in/templates/will-format-tamil-uyil-sasanam",
+      "te-IN": "https://www.willdrafting.in/templates/will-format-telugu-veelunama",
+      "kn-IN": "https://www.willdrafting.in/templates/will-format-kannada-uyilu",
+      "ml-IN": "https://www.willdrafting.in/templates/will-format-malayalam-maranapathram",
+      "x-default": "https://www.willdrafting.in/templates/will-format-india",
     },
   },
   openGraph: {
     title: "உயில் சாசனம் மாதிரி | Will Format in Tamil | WillDrafting",
     description:
-      "Download legally valid உயில் எழுதுவது எப்படி மாதிரி (will format in tamil) under Indian Succession Act, 1925 with Chennai probate guidance and SRO rules.",
+      "Download legally valid உயில் எழுதுவது எப்படி மாதிரி (will format in tamil) under Indian Succession Act, 1925 with Chennai probate guidance and.",
     url: "https://www.willdrafting.in/templates/will-format-tamil-uyil-sasanam",
     siteName: "WillDrafting.in",
     locale: "ta_IN",
@@ -54,7 +62,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "உயில் சாசனம் மாதிரி | Will Format in Tamil | WillDrafting",
     description:
-      "Download legally valid உயில் எழுதுவது எப்படி மாதிரி (will format in tamil) under Indian Succession Act, 1925 with Chennai probate guidance and SRO rules.",
+      "Download legally valid உயில் எழுதுவது எப்படி மாதிரி (will format in tamil) under Indian Succession Act, 1925 with Chennai probate guidance and.",
     images: ["https://www.willdrafting.in/images/will-format-tamil-uyil-sasanam-og.jpg"],
   },
   robots: {
@@ -91,7 +99,7 @@ export default function WillFormatTamilPage() {
         url: canonicalUrl,
         name: "உயில் சாசனம் மாதிரி | Will Format in Tamil | WillDrafting",
         description:
-          "Download legally valid உயில் எழுதுவது எப்படி மாதிரி (will format in tamil) under Indian Succession Act, 1925 with Chennai probate guidance and SRO rules.",
+          "Download legally valid உயில் எழுதுவது எப்படி மாதிரி (will format in tamil) under Indian Succession Act, 1925 with Chennai probate guidance and.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -129,7 +137,7 @@ export default function WillFormatTamilPage() {
         name: "உயில் சாசனம் மாதிரி (Will Format in Tamil)",
         url: canonicalUrl,
         description:
-          "Bilingual Tamil and English legal Will draft format compliant with Section 63 of the Indian Succession Act 1925, Tamil Nadu Registration Rules, and Madras High Court Chennai probate guidelines.",
+          "Bilingual Tamil and English legal Will draft format compliant with Section 63 of the Indian Succession Act 1925, Tamil Nadu Registration.",
         fileFormat: "text/html",
         isAccessibleForFree: true,
         image: imageUrl,
@@ -148,7 +156,7 @@ export default function WillFormatTamilPage() {
         "@id": `${canonicalUrl}#article`,
         headline: "உயில் சாசனம் மாதிரி: Legal Will Format in Tamil Guide",
         description:
-          "Complete legal guide and printable template on how to write a valid Will in Tamil (உயில் எழுதுவது எப்படி மாதிரி) under Indian Succession Act 1925 with Chennai probate rules.",
+          "Complete legal guide and printable template on how to write a valid Will in Tamil (உயில் எழுதுவது எப்படி மாதிரி) under Indian Succession Act.",
         image: imageUrl,
         mainEntityOfPage: canonicalUrl,
         inLanguage: ["ta-IN", "en-IN"],

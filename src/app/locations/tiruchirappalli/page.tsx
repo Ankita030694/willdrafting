@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     absolute: "Will Drafting in Tiruchirappalli: Legal Online Will Guide",
   },
   description:
-    "Draft a legally valid Will in Tiruchirappalli. Expert lawyer drafting, TNREGINET registration guidance, and hassle-free City Corporation Patta transfer.",
+    "Draft a legally valid Will in Tiruchirappalli. Expert lawyer drafting, TNREGINET registration guidance, and hassle-free City Corporation Patta.",
   keywords: [
     "will drafting in tiruchirappalli",
     "will registration tnreginet trichy",
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Will Drafting in Tiruchirappalli: Legal Online Will Guide",
     description:
-      "Draft a legally valid Will in Tiruchirappalli. Expert lawyer drafting, TNREGINET registration guidance, and hassle-free City Corporation Patta transfer.",
+      "Draft a legally valid Will in Tiruchirappalli. Expert lawyer drafting, TNREGINET registration guidance, and hassle-free City Corporation Patta.",
     url: "https://www.willdrafting.in/locations/tiruchirappalli",
     siteName: "WillDrafting.in",
     locale: "en_IN",
@@ -62,7 +62,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Will Drafting in Tiruchirappalli: Legal Online Will Guide",
     description:
-      "Draft a legally valid Will in Tiruchirappalli. Expert lawyer drafting, TNREGINET registration guidance, and hassle-free City Corporation Patta transfer.",
+      "Draft a legally valid Will in Tiruchirappalli. Expert lawyer drafting, TNREGINET registration guidance, and hassle-free City Corporation Patta.",
     images: ["https://www.willdrafting.in/images/will-drafting-in-tiruchirappalli-og.jpg"],
   },
   robots: {
@@ -142,7 +142,7 @@ export default function TiruchirappalliLocationPage() {
         url: canonicalUrl,
         name: "Will Drafting in Tiruchirappalli: Legal Online Will Guide",
         description:
-          "Draft a legally valid Will in Tiruchirappalli. Expert lawyer drafting, TNREGINET registration guidance, and hassle-free City Corporation Patta transfer.",
+          "Draft a legally valid Will in Tiruchirappalli. Expert lawyer drafting, TNREGINET registration guidance, and hassle-free City Corporation Patta.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -189,7 +189,7 @@ export default function TiruchirappalliLocationPage() {
         "@id": `${canonicalUrl}#legalservice`,
         name: "WillDrafting Tiruchirappalli - Estate Planning & TNREGINET Registration",
         description:
-          "Professional Will drafting, advocate verification, TNREGINET online token booking, and Section 31 doorstep execution support across Tiruchirappalli, Thillai Nagar, Srirangam, and KK Nagar.",
+          "Professional Will drafting, advocate verification, TNREGINET online token booking, and Section 31 doorstep execution support across.",
         url: canonicalUrl,
         image: imageUrl,
         email: "hello@willdrafting.in",

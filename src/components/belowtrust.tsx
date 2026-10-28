@@ -144,9 +144,9 @@ export default function BelowTrust() {
                   <Image
                     src={item.image}
                     alt={item.title}
-                    fill
+                    width={1200} height={675}
                     sizes="100vw"
-                    className="object-cover object-center"
+                    className="absolute inset-0 w-full h-full object-cover object-center"
                   />
                 )}
               </div>
@@ -239,9 +239,9 @@ export default function BelowTrust() {
                       key={active.id}
                       src={active.image}
                       alt={active.title}
-                      fill
+                      width={1200} height={675}
                       sizes="(max-width: 768px) 100vw, 320px"
-                      className="object-cover object-center"
+                      className="absolute inset-0 w-full h-full object-cover object-center"
                     />
                   )}
                 </div>

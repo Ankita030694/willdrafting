@@ -295,9 +295,9 @@ export default function ChandigarhLocationClient({ faqs }: Props) {
                 <Image
                   src="/images/will-drafting-in-chandigarh-og.jpg"
                   alt="Online Will Drafting and Estate Planning in Chandigarh Tricity"
-                  fill
+                  width={1200} height={675}
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 40vw"
-                  className="object-contain group-hover:scale-105 transition-transform duration-500"
+                  className="absolute inset-0 w-full h-full object-contain group-hover:scale-105 transition-transform duration-500"
                   priority
                 />
                 <div className="absolute bottom-3 right-3 bg-black/60 backdrop-blur-xs text-white/90 text-[10px] font-medium px-2.5 py-1 rounded-full pointer-events-none flex items-center gap-1 border border-white/10">
@@ -1772,8 +1772,8 @@ export default function ChandigarhLocationClient({ faqs }: Props) {
               <Image
                 src="/images/will-drafting-in-chandigarh-og.jpg"
                 alt="High Resolution Visual Blueprint: Chandigarh Tricity Will Drafting & SRO Registration"
-                fill
-                className="object-contain"
+                width={1200} height={675}
+                className="absolute inset-0 w-full h-full object-contain"
                 priority
               />
             </div>

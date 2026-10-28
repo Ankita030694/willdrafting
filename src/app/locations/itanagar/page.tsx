@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     absolute: "Will Drafting in Itanagar: Online Will & Asset Guide",
   },
   description:
-    "Draft a valid Will in Itanagar. Clear guidance on customary tribal inheritance, Land Holding Certificates (LHC), and Itanagar DC office registration.",
+    "Draft a valid Will in Itanagar. Clear guidance on customary tribal inheritance, Land Holding Certificates (LHC), and Itanagar DC office.",
   keywords: [
     "will drafting in itanagar",
     "will registration itanagar dc office",
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Will Drafting in Itanagar: Online Will & Asset Guide",
     description:
-      "Draft a valid Will in Itanagar. Clear guidance on customary tribal inheritance, Land Holding Certificates (LHC), and Itanagar DC office registration.",
+      "Draft a valid Will in Itanagar. Clear guidance on customary tribal inheritance, Land Holding Certificates (LHC), and Itanagar DC office.",
     url: "https://www.willdrafting.in/locations/itanagar",
     siteName: "WillDrafting.in",
     locale: "en_IN",
@@ -62,7 +62,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Will Drafting in Itanagar: Online Will & Asset Guide",
     description:
-      "Draft a valid Will in Itanagar. Clear guidance on customary tribal inheritance, Land Holding Certificates (LHC), and Itanagar DC office registration.",
+      "Draft a valid Will in Itanagar. Clear guidance on customary tribal inheritance, Land Holding Certificates (LHC), and Itanagar DC office.",
     images: ["https://www.willdrafting.in/images/will-drafting-in-itanagar-og.jpg"],
   },
   robots: {
@@ -142,7 +142,7 @@ export default function ItanagarLocationPage() {
         url: canonicalUrl,
         name: "Will Drafting in Itanagar: Online Will & Asset Guide",
         description:
-          "Draft a valid Will in Itanagar. Clear guidance on customary tribal inheritance, Land Holding Certificates (LHC), and Itanagar DC office registration.",
+          "Draft a valid Will in Itanagar. Clear guidance on customary tribal inheritance, Land Holding Certificates (LHC), and Itanagar DC office.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -189,7 +189,7 @@ export default function ItanagarLocationPage() {
         "@id": `${canonicalUrl}#legalservice`,
         name: "WillDrafting Itanagar - Tribal Estate Planning & DC Office Registration",
         description:
-          "Professional Will drafting, advocate verification, Land Holding Certificate (LHC) succession, DC Office Capital Complex registration, and doorstep execution support across Itanagar, Naharlagun, Nirjuli, and Papum Pare.",
+          "Professional Will drafting, advocate verification, Land Holding Certificate (LHC) succession, DC Office Capital Complex registration, and.",
         url: canonicalUrl,
         image: imageUrl,
         email: "hello@willdrafting.in",

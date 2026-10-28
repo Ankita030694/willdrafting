@@ -193,7 +193,7 @@ export default function KochiLocationPage() {
         "@id": `${canonicalUrl}#legalservice`,
         name: "WillDrafting Kochi - Estate Planning & Kerala SRO Registration",
         description:
-          "Professional Will drafting, advocate verification, Gulf NRI estate planning, and Sub-Registrar Office e-registration support across Ernakulam District Kerala.",
+          "Professional Will drafting, advocate verification, Gulf NRI estate planning, and Sub-Registrar Office e-registration support across Ernakulam.",
         url: canonicalUrl,
         image: imageUrl,
         telephone: "+91-8700343611",

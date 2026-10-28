@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     absolute: "Will Drafting in Andhra Pradesh: Online Will Making Guide",
   },
   description:
-    "Draft a legally valid Will in Andhra Pradesh. Expert lawyer drafting, AP IGRS registration guidance, and statewide agricultural & urban asset planning.",
+    "Draft a legally valid Will in Andhra Pradesh. Expert lawyer drafting, AP IGRS registration guidance, and statewide agricultural & urban asset.",
   keywords: [
     "will drafting in andhra pradesh",
     "will registration ap igrs",
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Will Drafting in Andhra Pradesh: Online Will Making Guide",
     description:
-      "Draft a legally valid Will in Andhra Pradesh. Expert lawyer drafting, AP IGRS registration guidance, and statewide agricultural & urban asset planning.",
+      "Draft a legally valid Will in Andhra Pradesh. Expert lawyer drafting, AP IGRS registration guidance, and statewide agricultural & urban asset.",
     url: "https://www.willdrafting.in/locations/andhra-pradesh",
     siteName: "WillDrafting.in",
     locale: "en_IN",
@@ -64,7 +64,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Will Drafting in Andhra Pradesh: Online Will Making Guide",
     description:
-      "Draft a legally valid Will in Andhra Pradesh. Expert lawyer drafting, AP IGRS registration guidance, and statewide agricultural & urban asset planning.",
+      "Draft a legally valid Will in Andhra Pradesh. Expert lawyer drafting, AP IGRS registration guidance, and statewide agricultural & urban asset.",
     images: ["https://www.willdrafting.in/images/will-drafting-in-andhra-pradesh-og.jpg"],
   },
   robots: {
@@ -144,7 +144,7 @@ export default function AndhraPradeshLocationPage() {
         url: canonicalUrl,
         name: "Will Drafting in Andhra Pradesh: Online Will Making Guide",
         description:
-          "Draft a legally valid Will in Andhra Pradesh. Expert lawyer drafting, AP IGRS registration guidance, and statewide agricultural & urban asset planning.",
+          "Draft a legally valid Will in Andhra Pradesh. Expert lawyer drafting, AP IGRS registration guidance, and statewide agricultural & urban asset.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -191,7 +191,7 @@ export default function AndhraPradeshLocationPage() {
         "@id": `${canonicalUrl}#legalservice`,
         name: "WillDrafting Andhra Pradesh - Estate Planning & AP IGRS Registration",
         description:
-          "Professional Will drafting, advocate verification, AP IGRS registration guidance, Meebhoomi land record integration, and doorstep execution support across all 26 districts of Andhra Pradesh.",
+          "Professional Will drafting, advocate verification, AP IGRS registration guidance, Meebhoomi land record integration, and doorstep execution.",
         url: canonicalUrl,
         image: imageUrl,
         email: "hello@willdrafting.in",

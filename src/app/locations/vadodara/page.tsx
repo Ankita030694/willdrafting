@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     absolute: "Will Drafting in Vadodara: Legal Online Will Making Help",
   },
   description:
-    "Draft a legally compliant Will in Vadodara. Expert lawyer assistance, Garvi Gujarat registration advice, and family business succession planning online.",
+    "Draft a legally compliant Will in Vadodara. Expert lawyer assistance, Garvi Gujarat registration advice, and family business succession.",
   keywords: [
     "will drafting in vadodara",
     "will drafting services in vadodara",
@@ -55,7 +55,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Will Drafting in Vadodara: Legal Online Will Making Help",
     description:
-      "Draft a legally compliant Will in Vadodara. Expert lawyer assistance, Garvi Gujarat registration advice, and family business succession planning online.",
+      "Draft a legally compliant Will in Vadodara. Expert lawyer assistance, Garvi Gujarat registration advice, and family business succession.",
     url: "https://www.willdrafting.in/locations/vadodara",
     siteName: "WillDrafting.in",
     locale: "en_IN",
@@ -73,7 +73,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Will Drafting in Vadodara: Legal Online Will Making Help",
     description:
-      "Draft a legally compliant Will in Vadodara. Expert lawyer assistance, Garvi Gujarat registration advice, and family business succession planning online.",
+      "Draft a legally compliant Will in Vadodara. Expert lawyer assistance, Garvi Gujarat registration advice, and family business succession.",
     images: ["https://www.willdrafting.in/images/will-drafting-in-vadodara-og.jpg"],
   },
   robots: {
@@ -153,7 +153,7 @@ export default function VadodaraLocationPage() {
         url: canonicalUrl,
         name: "Will Drafting in Vadodara: Legal Online Will Making Help",
         description:
-          "Draft a legally compliant Will in Vadodara. Expert lawyer assistance, Garvi Gujarat registration advice, and family business succession planning online.",
+          "Draft a legally compliant Will in Vadodara. Expert lawyer assistance, Garvi Gujarat registration advice, and family business succession.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -200,7 +200,7 @@ export default function VadodaraLocationPage() {
         "@id": `${canonicalUrl}#legalservice`,
         name: "WillDrafting Vadodara - Estate Planning & SRO Registration",
         description:
-          "Professional Will drafting, lawyer verification, and Sub-Registrar Office e-registration support across all revenue divisions of Vadodara district.",
+          "Professional Will drafting, lawyer verification, and Sub-Registrar Office e-registration support across all revenue divisions of Vadodara.",
         url: canonicalUrl,
         image: imageUrl,
         telephone: "+91-8700343611",

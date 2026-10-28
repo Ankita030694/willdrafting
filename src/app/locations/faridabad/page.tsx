@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     absolute: "Will Drafting in Faridabad: Online Will Making Guide",
   },
   description:
-    "Draft a valid Will in Faridabad NCR. Expert guidance on HSVP plot transfer, Jamabandi registration, and smooth family estate succession without probate.",
+    "Draft a valid Will in Faridabad NCR. Expert guidance on HSVP plot transfer, Jamabandi registration, and smooth family estate succession.",
   keywords: [
     "will drafting in faridabad",
     "will registration haryana jamabandi",
@@ -49,7 +49,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Will Drafting in Faridabad: Online Will Making Guide",
     description:
-      "Draft a valid Will in Faridabad NCR. Expert guidance on HSVP plot transfer, Jamabandi registration, and smooth family estate succession without probate.",
+      "Draft a valid Will in Faridabad NCR. Expert guidance on HSVP plot transfer, Jamabandi registration, and smooth family estate succession.",
     url: "https://www.willdrafting.in/locations/faridabad",
     siteName: "WillDrafting.in",
     locale: "en_IN",
@@ -67,7 +67,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Will Drafting in Faridabad: Online Will Making Guide",
     description:
-      "Draft a valid Will in Faridabad NCR. Expert guidance on HSVP plot transfer, Jamabandi registration, and smooth family estate succession without probate.",
+      "Draft a valid Will in Faridabad NCR. Expert guidance on HSVP plot transfer, Jamabandi registration, and smooth family estate succession.",
     images: ["https://www.willdrafting.in/images/will-drafting-in-faridabad-og.jpg"],
   },
   robots: {
@@ -147,7 +147,7 @@ export default function FaridabadLocationPage() {
         url: canonicalUrl,
         name: "Will Drafting in Faridabad: Online Will Making Guide",
         description:
-          "Draft a valid Will in Faridabad NCR. Expert guidance on HSVP plot transfer, Jamabandi registration, and smooth family estate succession without probate.",
+          "Draft a valid Will in Faridabad NCR. Expert guidance on HSVP plot transfer, Jamabandi registration, and smooth family estate succession.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -194,7 +194,7 @@ export default function FaridabadLocationPage() {
         "@id": `${canonicalUrl}#legalservice`,
         name: "WillDrafting Faridabad - Estate Planning & SRO Registration",
         description:
-          "Professional Will drafting, advocate verification, Haryana Jamabandi registration, and doorstep execution support across Faridabad, Sector 14, Sector 15, Greater Faridabad, and Ballabgarh.",
+          "Professional Will drafting, advocate verification, Haryana Jamabandi registration, and doorstep execution support across Faridabad, Sector 14.",
         url: canonicalUrl,
         image: imageUrl,
         email: "hello@willdrafting.in",

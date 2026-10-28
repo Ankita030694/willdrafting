@@ -24,9 +24,9 @@ export default function Hero() {
           <Image
             src="/images/heronewnewnew.svg"
             alt="Court-ready legal will drafting preview on mobile device"
-            fill
+            width={1200} height={675}
             sizes="100vw"
-            className="object-cover object-center opacity-[0.1] saturate-[1.15] contrast-[1.25]"
+            className="absolute inset-0 w-full h-full object-cover object-center opacity-[0.1] saturate-[1.15] contrast-[1.25]"
             priority
           />
           {/* Lighter tint: image stays prominent, text keeps a soft wash for legibility */}
@@ -50,10 +50,10 @@ export default function Hero() {
             <Image
               src="/images/heronewnewnew.svg"
               alt="Legally valid online will drafting and estate protection platform in India"
-              fill
+              width={1200} height={675}
               priority
               sizes="(max-width: 768px) 100vw, 50vw"
-              className="object-contain object-center"
+              className="absolute inset-0 w-full h-full object-contain object-center"
             />
           </div>
         </div>

@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     absolute: "উইল বা ইচ্ছাপত্র ফরম্যাট বাংলা: Will Format | WillDrafting", // exactly 58 characters
   },
   description:
-    "Download valid উইল বা ইচ্ছাপত্র ফরম্যাট বাংলা (will format in bengali) under Indian Succession Act 1925 with Dayabhaga rules and Kolkata probate guide.", // exactly 151 characters
+    "Download valid উইল বা ইচ্ছাপত্র ফরম্যাট বাংলা (will format in bengali) under Indian Succession Act 1925 with Dayabhaga rules and Kolkata.", // exactly 151 characters
   keywords: [
     "উইল বা ইচ্ছাপত্র ফরম্যাট বাংলা",
     "will format in bengali",
@@ -28,15 +28,23 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://www.willdrafting.in/templates/will-format-bengali-ichchapatra",
     languages: {
+      "en-IN": "https://www.willdrafting.in/templates/will-format-india",
+      "hi-IN": "https://www.willdrafting.in/templates/will-format-hindi",
+      "mr-IN": "https://www.willdrafting.in/templates/will-format-marathi-mrutyupatra",
+      "gu-IN": "https://www.willdrafting.in/templates/will-format-gujarati-vasiyatnama",
+      "pa-IN": "https://www.willdrafting.in/templates/will-format-punjabi-vasiyatnama",
       "bn-IN": "https://www.willdrafting.in/templates/will-format-bengali-ichchapatra",
-      "en-IN": "https://www.willdrafting.in/templates/will-format-bengali-ichchapatra",
-      "x-default": "https://www.willdrafting.in/templates/will-format-bengali-ichchapatra",
+      "ta-IN": "https://www.willdrafting.in/templates/will-format-tamil-uyil-sasanam",
+      "te-IN": "https://www.willdrafting.in/templates/will-format-telugu-veelunama",
+      "kn-IN": "https://www.willdrafting.in/templates/will-format-kannada-uyilu",
+      "ml-IN": "https://www.willdrafting.in/templates/will-format-malayalam-maranapathram",
+      "x-default": "https://www.willdrafting.in/templates/will-format-india",
     },
   },
   openGraph: {
     title: "উইল বা ইচ্ছাপত্র ফরম্যাট বাংলা: Will Format | WillDrafting",
     description:
-      "Download valid উইল বা ইচ্ছাপত্র ফরম্যাট বাংলা (will format in bengali) under Indian Succession Act 1925 with Dayabhaga rules and Kolkata probate guide.",
+      "Download valid উইল বা ইচ্ছাপত্র ফরম্যাট বাংলা (will format in bengali) under Indian Succession Act 1925 with Dayabhaga rules and Kolkata.",
     url: "https://www.willdrafting.in/templates/will-format-bengali-ichchapatra",
     siteName: "WillDrafting.in",
     locale: "bn_IN",
@@ -54,7 +62,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "উইল বা ইচ্ছাপত্র ফরম্যাট বাংলা: Will Format | WillDrafting",
     description:
-      "Download valid উইল বা ইচ্ছাপত্র ফরম্যাট বাংলা (will format in bengali) under Indian Succession Act 1925 with Dayabhaga rules and Kolkata probate guide.",
+      "Download valid উইল বা ইচ্ছাপত্র ফরম্যাট বাংলা (will format in bengali) under Indian Succession Act 1925 with Dayabhaga rules and Kolkata.",
     images: ["https://www.willdrafting.in/images/will-format-bengali-ichchapatra-og.jpg"],
   },
   robots: {
@@ -91,7 +99,7 @@ export default function WillFormatBengaliPage() {
         url: canonicalUrl,
         name: "উইল বা ইচ্ছাপত্র ফরম্যাট বাংলা: Will Format | WillDrafting",
         description:
-          "Download valid উইল বা ইচ্ছাপত্র ফরম্যাট বাংলা (will format in bengali) under Indian Succession Act 1925 with Dayabhaga rules and Kolkata probate guide.",
+          "Download valid উইল বা ইচ্ছাপত্র ফরম্যাট বাংলা (will format in bengali) under Indian Succession Act 1925 with Dayabhaga rules and Kolkata.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -129,7 +137,7 @@ export default function WillFormatBengaliPage() {
         name: "উইল বা ইচ্ছাপত্র ফরম্যাট বাংলা (Will Format in Bengali)",
         url: canonicalUrl,
         description:
-          "Bilingual Bengali and English legal Will draft format compliant with Section 63 of the Indian Succession Act 1925, Dayabhaga School of Hindu Law, West Bengal Registration Rules, and Calcutta High Court Kolkata probate guidelines.",
+          "Bilingual Bengali and English legal Will draft format compliant with Section 63 of the Indian Succession Act 1925, Dayabhaga School of Hindu.",
         fileFormat: "text/html",
         isAccessibleForFree: true,
         image: imageUrl,
@@ -148,7 +156,7 @@ export default function WillFormatBengaliPage() {
         "@id": `${canonicalUrl}#article`,
         headline: "উইল বা ইচ্ছাপত্র ফরম্যাট বাংলা: Legal Will Format Guide",
         description:
-          "Complete legal guide and printable template on how to write a valid Will in Bengali (উইল বা ইচ্ছাপত্র লেখার নিয়ম) under Indian Succession Act 1925 with Dayabhaga law and Kolkata probate rules.",
+          "Complete legal guide and printable template on how to write a valid Will in Bengali (উইল বা ইচ্ছাপত্র লেখার নিয়ম) under Indian Succession Act.",
         image: imageUrl,
         mainEntityOfPage: canonicalUrl,
         inLanguage: ["bn-IN", "en-IN"],

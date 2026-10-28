@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     absolute: "Will Drafting in Dehradun: Registration & Probate Law Guide",
   },
   description:
-    "Draft and register your Will in Dehradun. Expert Uttarakhand High Court probate advice, asset planning, and lawyer guidance across Dehradun & Doon Valley.",
+    "Draft and register your Will in Dehradun. Expert Uttarakhand High Court probate advice, asset planning, and lawyer guidance across Dehradun &.",
   keywords: [
     "will drafting in dehradun",
     "will registration uttarakhand e-prerna dehradun",
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Will Drafting in Dehradun: Registration & Probate Law Guide",
     description:
-      "Draft and register your Will in Dehradun. Expert Uttarakhand High Court probate advice, asset planning, and lawyer guidance across Dehradun & Doon Valley.",
+      "Draft and register your Will in Dehradun. Expert Uttarakhand High Court probate advice, asset planning, and lawyer guidance across Dehradun &.",
     url: "https://www.willdrafting.in/locations/dehradun",
     siteName: "WillDrafting.in",
     locale: "en_IN",
@@ -62,7 +62,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Will Drafting in Dehradun: Registration & Probate Law Guide",
     description:
-      "Draft and register your Will in Dehradun. Expert Uttarakhand High Court probate advice, asset planning, and lawyer guidance across Dehradun & Doon Valley.",
+      "Draft and register your Will in Dehradun. Expert Uttarakhand High Court probate advice, asset planning, and lawyer guidance across Dehradun &.",
     images: ["https://www.willdrafting.in/images/will-drafting-in-dehradun.jpg"],
   },
   robots: {
@@ -134,7 +134,7 @@ export default function DehradunLocationPage() {
         url: canonicalUrl,
         name: "Will Drafting in Dehradun: Registration & Probate Law Guide",
         description:
-          "Draft and register your Will in Dehradun. Expert Uttarakhand High Court probate advice, asset planning, and lawyer guidance across Dehradun & Doon Valley.",
+          "Draft and register your Will in Dehradun. Expert Uttarakhand High Court probate advice, asset planning, and lawyer guidance across Dehradun &.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -181,7 +181,7 @@ export default function DehradunLocationPage() {
         "@id": `${canonicalUrl}#legalservice`,
         name: "WillDrafting Dehradun - Estate Planning, Defense Pensioners & Uttarakhand IGR Registration",
         description:
-          "Professional Will drafting, defense veteran succession advisory, MDDA property inheritance, and Uttarakhand e-Prerna Sub-Registrar registration support across Dehradun and Doon Valley.",
+          "Professional Will drafting, defense veteran succession advisory, MDDA property inheritance, and Uttarakhand e-Prerna Sub-Registrar.",
         url: canonicalUrl,
         image: imageUrl,
         telephone: "+91-8700343611",

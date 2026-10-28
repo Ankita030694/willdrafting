@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     absolute: "Will Drafting in Chandigarh: Online Will Making Guide",
   },
   description:
-    "Draft a legally valid Will in Chandigarh Tricity. Expert guidance on share of property, Sub-Registrar registration, and family succession planning.",
+    "Draft a legally valid Will in Chandigarh Tricity. Expert guidance on share of property, Sub-Registrar registration, and family succession.",
   keywords: [
     "will drafting in chandigarh",
     "will registration tricity mohali panchkula",
@@ -50,7 +50,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Will Drafting in Chandigarh: Online Will Making Guide",
     description:
-      "Draft a legally valid Will in Chandigarh Tricity. Expert guidance on share of property, Sub-Registrar registration, and family succession planning.",
+      "Draft a legally valid Will in Chandigarh Tricity. Expert guidance on share of property, Sub-Registrar registration, and family succession.",
     url: "https://www.willdrafting.in/locations/chandigarh",
     siteName: "WillDrafting.in",
     locale: "en_IN",
@@ -68,7 +68,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Will Drafting in Chandigarh: Online Will Making Guide",
     description:
-      "Draft a legally valid Will in Chandigarh Tricity. Expert guidance on share of property, Sub-Registrar registration, and family succession planning.",
+      "Draft a legally valid Will in Chandigarh Tricity. Expert guidance on share of property, Sub-Registrar registration, and family succession.",
     images: ["https://www.willdrafting.in/images/will-drafting-in-chandigarh-og.jpg"],
   },
   robots: {
@@ -140,7 +140,7 @@ export default function ChandigarhLocationPage() {
         url: canonicalUrl,
         name: "Will Drafting in Chandigarh: Online Will Making Guide",
         description:
-          "Draft a legally valid Will in Chandigarh Tricity. Expert guidance on share of property, Sub-Registrar registration, and family succession planning.",
+          "Draft a legally valid Will in Chandigarh Tricity. Expert guidance on share of property, Sub-Registrar registration, and family succession.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",

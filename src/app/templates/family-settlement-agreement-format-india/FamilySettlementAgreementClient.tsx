@@ -1460,7 +1460,7 @@ Each party covenants that their allotted share is free from any individual charg
                     <ExternalLink className="w-3 h-3" />
                   </a>
                   <a
-                    href="https://incometaxindia.gov.in"
+                    href="https://www.indiacode.nic.in"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-slate-100 text-slate-800 hover:bg-slate-200 font-semibold"

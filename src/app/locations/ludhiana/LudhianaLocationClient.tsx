@@ -310,8 +310,8 @@ export default function LudhianaLocationClient({ faqs }: Props) {
                 <Image
                   src="/images/will-drafting-in-ludhiana.jpg"
                   alt="Online Will Drafting & NRI Asset Protection in Ludhiana"
-                  fill
-                  className="object-contain group-hover:scale-102 transition-transform duration-500"
+                  width={1200} height={675}
+                  className="absolute inset-0 w-full h-full object-contain group-hover:scale-102 transition-transform duration-500"
                   priority
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 40vw"
                 />
@@ -444,9 +444,9 @@ export default function LudhianaLocationClient({ faqs }: Props) {
             <div className="bg-white rounded-2xl p-5 border border-[#172228]/10 shadow-xs">
               <div className="flex items-center gap-2 pb-3 mb-3 border-b border-slate-100 text-[#172228]">
                 <FileText className="w-4 h-4 text-[#C65378]" />
-                <h3 className="font-extrabold text-xs uppercase tracking-wider text-slate-900">
+                <div className="font-extrabold text-xs uppercase tracking-wider text-slate-900">
                   Document Navigation
-                </h3>
+                </div>
               </div>
               <nav className="space-y-1">
                 {TOC_ITEMS.map((item, idx) => (
@@ -852,7 +852,7 @@ export default function LudhianaLocationClient({ faqs }: Props) {
                       Need help booking an appointment slot?
                     </span>
                     <a
-                      href="/service/will-registration"
+                      href="/services/will-registration"
                       className="text-xs font-bold text-[#C65378] hover:underline inline-flex items-center gap-1"
                     >
                       Book SRO Service ↗
@@ -1544,7 +1544,7 @@ export default function LudhianaLocationClient({ faqs }: Props) {
                     </ul>
                   </div>
                   <a
-                    href="/service/will-registration"
+                    href="/services/will-registration"
                     className="w-full inline-flex items-center justify-center py-2.5 px-4 rounded-xl bg-slate-900 text-white font-extrabold text-xs hover:bg-slate-800 transition-colors text-center"
                   >
                     Select Full SRO ₹9,990
@@ -1715,8 +1715,8 @@ export default function LudhianaLocationClient({ faqs }: Props) {
               <Image
                 src="/images/will-drafting-in-ludhiana.jpg"
                 alt="High Resolution Visual Blueprint: Ludhiana Will Drafting and NRI Estate Planning"
-                fill
-                className="object-contain"
+                width={1200} height={675}
+                className="absolute inset-0 w-full h-full object-contain"
                 priority
               />
             </div>

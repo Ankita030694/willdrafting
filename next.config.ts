@@ -492,6 +492,77 @@ const nextConfig: NextConfig = {
         destination: "/blogs",
         permanent: true,
       },
+      {
+        source: "/how-it-works",
+        destination: "/",
+        permanent: true,
+      },
+      {
+        source: "/templates/muslim-will",
+        destination: "/templates/muslim-will-wasiyat-format-india",
+        permanent: true,
+      },
+      {
+        source: "/blogs/relinquishment-deed-vs-gift-deed-india",
+        destination: "/blogs/gift-deed-vs-will-india",
+        permanent: true,
+      },
+      {
+        source: "/services/gift-deed-drafting-registration",
+        destination: "/templates/gift-deed-format-blood-relatives-india",
+        permanent: true,
+      },
+      {
+        source: "/services/nri-inherited-property-sale-repatriation",
+        destination: "/services/nri-will-india",
+        permanent: true,
+      },
+      {
+        source: "/services/iepf-unclaimed-shares-bank-recovery",
+        destination: "/services/succession-certificate",
+        permanent: true,
+      },
+      {
+        source: "/tools/probate-court-fee-calculator-india",
+        destination: "/tools/probate-court-fee-timeline-calculator",
+        permanent: true,
+      },
+      {
+        source: "/glossary",
+        destination: "/blogs",
+        permanent: true,
+      },
+      {
+        source: "/lawyer",
+        destination: "/services",
+        permanent: true,
+      },
+    ];
+  },
+  async headers() {
+    return [
+      {
+        source: "/:path*",
+        headers: [
+          {
+            key: "X-Content-Type-Options",
+            value: "nosniff",
+          },
+          {
+            key: "Referrer-Policy",
+            value: "strict-origin-when-cross-origin",
+          },
+          {
+            key: "X-Frame-Options",
+            value: "SAMEORIGIN",
+          },
+          {
+            key: "Content-Security-Policy",
+            value:
+              "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https:; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: blob: https:; font-src 'self' data: https:; connect-src 'self' https:; frame-src 'self' https://www.google.com https:; media-src 'self' data: blob: https:; object-src 'none'; base-uri 'self'; form-action 'self' https:; frame-ancestors 'self';",
+          },
+        ],
+      },
     ];
   },
 };

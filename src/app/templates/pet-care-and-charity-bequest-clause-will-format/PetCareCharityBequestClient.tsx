@@ -462,9 +462,9 @@ I further bequeath INR ${charityCorpusAmount.toLocaleString(
                 <Image
                   src="/images/pet-care-and-charity-bequest-clause-will-format-og.jpg"
                   alt="Pet Care and Charity Bequest Clause in Will Format India"
-                  fill
+                  width={1200} height={675}
                   priority
-                  className="object-cover"
+                  className="absolute inset-0 w-full h-full object-cover"
                   sizes="(max-width: 1024px) 100vw, 800px"
                 />
               </div>

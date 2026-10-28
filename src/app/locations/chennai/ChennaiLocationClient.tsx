@@ -331,8 +331,8 @@ export default function ChennaiLocationClient({ faqs }: Props) {
                 <Image
                   src="/images/will-drafting-in-chennai.jpg"
                   alt="Legal Will Drafting and Succession Planning in Chennai"
-                  fill
-                  className="object-contain group-hover:scale-105 transition-transform duration-500"
+                  width={1200} height={675}
+                  className="absolute inset-0 w-full h-full object-contain group-hover:scale-105 transition-transform duration-500"
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 42vw"
                   priority
                 />
@@ -736,7 +736,7 @@ export default function ChennaiLocationClient({ faqs }: Props) {
                       <ExternalLink className="w-3.5 h-3.5" />
                     </Link>
                     <Link
-                      href="/service/probate-lawyer"
+                      href="/services/probate-lawyer"
                       className="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-[#C65378] hover:bg-[#a13c5d] text-white text-xs font-bold transition-colors"
                     >
                       <span>Probate Lawyer Services</span>
@@ -1823,8 +1823,8 @@ export default function ChennaiLocationClient({ faqs }: Props) {
               <Image
                 src="/images/will-drafting-in-chennai.jpg"
                 alt="High Resolution Visual Blueprint: Chennai Will Drafting and Probate Architecture"
-                fill
-                className="object-contain"
+                width={1200} height={675}
+                className="absolute inset-0 w-full h-full object-contain"
                 sizes="(max-width: 1200px) 100vw, 1200px"
               />
             </div>

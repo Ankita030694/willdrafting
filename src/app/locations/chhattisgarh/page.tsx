@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     absolute: "Will Drafting in Chhattisgarh: Online Will Making Guide",
   },
   description:
-    "Draft a legally valid Will in Chhattisgarh. Complete NGDRS e-panjiyan guidance, Bhuiyan land portal mutation, and commercial business succession support.",
+    "Draft a legally valid Will in Chhattisgarh. Complete NGDRS e-panjiyan guidance, Bhuiyan land portal mutation, and commercial business.",
   keywords: [
     "will drafting in chhattisgarh",
     "will registration chhattisgarh ngdrs",
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Will Drafting in Chhattisgarh: Online Will Making Guide",
     description:
-      "Draft a legally valid Will in Chhattisgarh. Complete NGDRS e-panjiyan guidance, Bhuiyan land portal mutation, and commercial business succession support.",
+      "Draft a legally valid Will in Chhattisgarh. Complete NGDRS e-panjiyan guidance, Bhuiyan land portal mutation, and commercial business.",
     url: "https://www.willdrafting.in/locations/chhattisgarh",
     siteName: "WillDrafting.in",
     locale: "en_IN",
@@ -66,7 +66,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Will Drafting in Chhattisgarh: Online Will Making Guide",
     description:
-      "Draft a legally valid Will in Chhattisgarh. Complete NGDRS e-panjiyan guidance, Bhuiyan land portal mutation, and commercial business succession support.",
+      "Draft a legally valid Will in Chhattisgarh. Complete NGDRS e-panjiyan guidance, Bhuiyan land portal mutation, and commercial business.",
     images: ["https://www.willdrafting.in/images/will-drafting-in-chhattisgarh-og.jpg"],
   },
   robots: {
@@ -154,7 +154,7 @@ export default function ChhattisgarhLocationPage() {
         url: canonicalUrl,
         name: "Will Drafting in Chhattisgarh: Online Will Making Guide",
         description:
-          "Draft a legally valid Will in Chhattisgarh. Complete NGDRS e-panjiyan guidance, Bhuiyan land portal mutation, and commercial business succession support.",
+          "Draft a legally valid Will in Chhattisgarh. Complete NGDRS e-panjiyan guidance, Bhuiyan land portal mutation, and commercial business.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -201,7 +201,7 @@ export default function ChhattisgarhLocationPage() {
         "@id": `${canonicalUrl}#legalservice`,
         name: "WillDrafting Chhattisgarh - Estate Planning & SRO Registration",
         description:
-          "Professional Will drafting, advocate verification, NGDRS e-Panjiyan registration, and Section 31 doorstep execution support across Raipur, Bilaspur, Durg, Bhilai, Korba, and all Chhattisgarh districts.",
+          "Professional Will drafting, advocate verification, NGDRS e-Panjiyan registration, and Section 31 doorstep execution support across Raipur.",
         url: canonicalUrl,
         image: imageUrl,
         email: "hello@willdrafting.in",

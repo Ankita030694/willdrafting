@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     absolute: "Will Drafting in Gwalior: Online Will Registration Help",
   },
   description:
-    "Draft your Will in Gwalior with expert lawyer review. Reliable MP Sampada registration guidance, GDA property mutation, and family wealth distribution.",
+    "Draft your Will in Gwalior with expert lawyer review. Reliable MP Sampada registration guidance, GDA property mutation, and family wealth.",
   keywords: [
     "will drafting in gwalior",
     "will registration mp sampada gwalior",
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Will Drafting in Gwalior: Online Will Registration Help",
     description:
-      "Draft your Will in Gwalior with expert lawyer review. Reliable MP Sampada registration guidance, GDA property mutation, and family wealth distribution.",
+      "Draft your Will in Gwalior with expert lawyer review. Reliable MP Sampada registration guidance, GDA property mutation, and family wealth.",
     url: "https://www.willdrafting.in/locations/gwalior",
     siteName: "WillDrafting.in",
     locale: "en_IN",
@@ -64,7 +64,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Will Drafting in Gwalior: Online Will Registration Help",
     description:
-      "Draft your Will in Gwalior with expert lawyer review. Reliable MP Sampada registration guidance, GDA property mutation, and family wealth distribution.",
+      "Draft your Will in Gwalior with expert lawyer review. Reliable MP Sampada registration guidance, GDA property mutation, and family wealth.",
     images: ["https://www.willdrafting.in/images/will-drafting-in-gwalior-og.jpg"],
   },
   robots: {
@@ -144,7 +144,7 @@ export default function GwaliorLocationPage() {
         url: canonicalUrl,
         name: "Will Drafting in Gwalior: Online Will Registration Help",
         description:
-          "Draft your Will in Gwalior with expert lawyer review. Reliable MP Sampada registration guidance, GDA property mutation, and family wealth distribution.",
+          "Draft your Will in Gwalior with expert lawyer review. Reliable MP Sampada registration guidance, GDA property mutation, and family wealth.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -191,7 +191,7 @@ export default function GwaliorLocationPage() {
         "@id": `${canonicalUrl}#legalservice`,
         name: "WillDrafting Gwalior - Estate Planning & MP Sampada SRO Registration",
         description:
-          "Professional Will drafting, advocate verification, MP Sampada portal registration, and Section 31 doorstep execution support across Gwalior, Lashkar, City Center, Morar, and Dabra.",
+          "Professional Will drafting, advocate verification, MP Sampada portal registration, and Section 31 doorstep execution support across Gwalior.",
         url: canonicalUrl,
         image: imageUrl,
         email: "hello@willdrafting.in",

@@ -839,8 +839,8 @@ export default function DigitalAssetsCryptoClient() {
                   <Image
                     src="/images/digital-assets-crypto-will-india.jpg"
                     alt="Digital Assets and Crypto Estate Planning Architecture in India"
-                    fill
-                    className="object-cover hover:scale-[1.01] transition-transform duration-300"
+                    width={1200} height={675}
+                    className="absolute inset-0 w-full h-full object-cover hover:scale-[1.01] transition-transform duration-300"
                     priority
                   />
                 </div>

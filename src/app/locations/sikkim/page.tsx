@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     absolute: "Will Drafting in Sikkim: Online Will & Land Law Guide",
   },
   description:
-    "Draft a valid Will in Sikkim. Guidance on Revenue Order No. 1 land protections, Bhutia-Lepcha customary succession, and SRO registration in Gangtok.",
+    "Draft a valid Will in Sikkim. Guidance on Revenue Order No. 1 land protections, Bhutia-Lepcha customary succession, and SRO registration in.",
   keywords: [
     "will drafting in sikkim",
     "revenue order no 1 sikkim will",
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Will Drafting in Sikkim: Online Will & Land Law Guide",
     description:
-      "Draft a valid Will in Sikkim. Guidance on Revenue Order No. 1 land protections, Bhutia-Lepcha customary succession, and SRO registration in Gangtok.",
+      "Draft a valid Will in Sikkim. Guidance on Revenue Order No. 1 land protections, Bhutia-Lepcha customary succession, and SRO registration in.",
     url: "https://www.willdrafting.in/locations/sikkim",
     siteName: "WillDrafting.in",
     locale: "en_IN",
@@ -57,7 +57,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Will Drafting in Sikkim: Online Will & Land Law Guide",
     description:
-      "Draft a valid Will in Sikkim. Guidance on Revenue Order No. 1 land protections, Bhutia-Lepcha customary succession, and SRO registration in Gangtok.",
+      "Draft a valid Will in Sikkim. Guidance on Revenue Order No. 1 land protections, Bhutia-Lepcha customary succession, and SRO registration in.",
     images: ["https://www.willdrafting.in/images/will-drafting-in-sikkim-og.jpg"],
   },
   robots: {
@@ -137,7 +137,7 @@ export default function SikkimLocationPage() {
         url: canonicalUrl,
         name: "Will Drafting in Sikkim: Online Will & Land Law Guide",
         description:
-          "Draft a valid Will in Sikkim. Guidance on Revenue Order No. 1 land protections, Bhutia-Lepcha customary succession, and SRO registration in Gangtok.",
+          "Draft a valid Will in Sikkim. Guidance on Revenue Order No. 1 land protections, Bhutia-Lepcha customary succession, and SRO registration in.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -184,7 +184,7 @@ export default function SikkimLocationPage() {
         "@id": `${canonicalUrl}#legalservice`,
         name: "WillDrafting Sikkim - Estate Planning & SRO Registration",
         description:
-          "Professional Will drafting, advocate verification, Revenue Order No. 1 land protection compliance, and SRO registration support across Gangtok, Namchi, Gyalshing, Pakyong, and Mangan.",
+          "Professional Will drafting, advocate verification, Revenue Order No. 1 land protection compliance, and SRO registration support across.",
         url: canonicalUrl,
         image: imageUrl,
         email: "hello@willdrafting.in",

@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     absolute: "Will Drafting in Gandhinagar: Online Will Making Guide",
   },
   description:
-    "Draft a legally valid Will in Gandhinagar. Clear guidance on Garvi Gujarat SRO registration, GUDA sector plot transfer, and business succession planning.",
+    "Draft a legally valid Will in Gandhinagar. Clear guidance on Garvi Gujarat SRO registration, GUDA sector plot transfer, and business.",
   keywords: [
     "will drafting in gandhinagar",
     "will registration garvi gujarat gandhinagar",
@@ -49,7 +49,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Will Drafting in Gandhinagar: Online Will Making Guide",
     description:
-      "Draft a legally valid Will in Gandhinagar. Clear guidance on Garvi Gujarat SRO registration, GUDA sector plot transfer, and business succession planning.",
+      "Draft a legally valid Will in Gandhinagar. Clear guidance on Garvi Gujarat SRO registration, GUDA sector plot transfer, and business.",
     url: "https://www.willdrafting.in/locations/gandhinagar",
     siteName: "WillDrafting.in",
     locale: "en_IN",
@@ -67,7 +67,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Will Drafting in Gandhinagar: Online Will Making Guide",
     description:
-      "Draft a legally valid Will in Gandhinagar. Clear guidance on Garvi Gujarat SRO registration, GUDA sector plot transfer, and business succession planning.",
+      "Draft a legally valid Will in Gandhinagar. Clear guidance on Garvi Gujarat SRO registration, GUDA sector plot transfer, and business.",
     images: ["https://www.willdrafting.in/images/will-drafting-in-gandhinagar-og.jpg"],
   },
   robots: {
@@ -147,7 +147,7 @@ export default function GandhinagarLocationPage() {
         url: canonicalUrl,
         name: "Will Drafting in Gandhinagar: Online Will Making Guide",
         description:
-          "Draft a legally valid Will in Gandhinagar. Clear guidance on Garvi Gujarat SRO registration, GUDA sector plot transfer, and business succession planning.",
+          "Draft a legally valid Will in Gandhinagar. Clear guidance on Garvi Gujarat SRO registration, GUDA sector plot transfer, and business.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -194,7 +194,7 @@ export default function GandhinagarLocationPage() {
         "@id": `${canonicalUrl}#legalservice`,
         name: "WillDrafting Gandhinagar - Estate Planning & SRO Registration",
         description:
-          "Professional Will drafting, advocate verification, Garvi Gujarat SRO registration, and doorstep execution support across Gandhinagar, GIFT City, Kudasan, and Kalol.",
+          "Professional Will drafting, advocate verification, Garvi Gujarat SRO registration, and doorstep execution support across Gandhinagar, GIFT.",
         url: canonicalUrl,
         image: imageUrl,
         email: "hello@willdrafting.in",

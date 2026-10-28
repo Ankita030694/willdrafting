@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     absolute: "ವಿಲ್ ಬರೆಯುವ ಮಾದರಿ ಕನ್ನಡ | Will Format in Kannada Guide", // exactly 54 characters
   },
   description:
-    "Download legally valid ವಿಲ್ ಬರೆಯುವ ಮಾದರಿ ಕನ್ನಡ (will format in kannada) under Indian Succession Act 1925 with Karnataka Kaveri 2.0 registration guide.", // exactly 150 characters
+    "Download legally valid ವಿಲ್ ಬರೆಯುವ ಮಾದರಿ ಕನ್ನಡ (will format in kannada) under Indian Succession Act 1925 with Karnataka Kaveri 2.0.", // exactly 150 characters
   keywords: [
     "ವಿಲ್ ಬರೆಯುವ ಮಾದರಿ ಕನ್ನಡ",
     "will format in kannada",
@@ -28,15 +28,23 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://www.willdrafting.in/templates/will-format-kannada-uyilu",
     languages: {
+      "en-IN": "https://www.willdrafting.in/templates/will-format-india",
+      "hi-IN": "https://www.willdrafting.in/templates/will-format-hindi",
+      "mr-IN": "https://www.willdrafting.in/templates/will-format-marathi-mrutyupatra",
+      "gu-IN": "https://www.willdrafting.in/templates/will-format-gujarati-vasiyatnama",
+      "pa-IN": "https://www.willdrafting.in/templates/will-format-punjabi-vasiyatnama",
+      "bn-IN": "https://www.willdrafting.in/templates/will-format-bengali-ichchapatra",
+      "ta-IN": "https://www.willdrafting.in/templates/will-format-tamil-uyil-sasanam",
+      "te-IN": "https://www.willdrafting.in/templates/will-format-telugu-veelunama",
       "kn-IN": "https://www.willdrafting.in/templates/will-format-kannada-uyilu",
-      "en-IN": "https://www.willdrafting.in/templates/will-format-kannada-uyilu",
-      "x-default": "https://www.willdrafting.in/templates/will-format-kannada-uyilu",
+      "ml-IN": "https://www.willdrafting.in/templates/will-format-malayalam-maranapathram",
+      "x-default": "https://www.willdrafting.in/templates/will-format-india",
     },
   },
   openGraph: {
     title: "ವಿಲ್ ಬರೆಯುವ ಮಾದರಿ ಕನ್ನಡ | Will Format in Kannada Guide",
     description:
-      "Download legally valid ವಿಲ್ ಬರೆಯುವ ಮಾದರಿ ಕನ್ನಡ (will format in kannada) under Indian Succession Act 1925 with Karnataka Kaveri 2.0 registration guide.",
+      "Download legally valid ವಿಲ್ ಬರೆಯುವ ಮಾದರಿ ಕನ್ನಡ (will format in kannada) under Indian Succession Act 1925 with Karnataka Kaveri 2.0.",
     url: "https://www.willdrafting.in/templates/will-format-kannada-uyilu",
     siteName: "WillDrafting.in",
     locale: "kn_IN",
@@ -54,7 +62,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "ವಿಲ್ ಬರೆಯುವ ಮಾದರಿ ಕನ್ನಡ | Will Format in Kannada Guide",
     description:
-      "Download legally valid ವಿಲ್ ಬರೆಯುವ ಮಾದರಿ ಕನ್ನಡ (will format in kannada) under Indian Succession Act 1925 with Karnataka Kaveri 2.0 registration guide.",
+      "Download legally valid ವಿಲ್ ಬರೆಯುವ ಮಾದರಿ ಕನ್ನಡ (will format in kannada) under Indian Succession Act 1925 with Karnataka Kaveri 2.0.",
     images: ["https://www.willdrafting.in/images/will-format-kannada-uyilu-og.jpg"],
   },
   robots: {
@@ -91,7 +99,7 @@ export default function WillFormatKannadaPage() {
         url: canonicalUrl,
         name: "ವಿಲ್ ಬರೆಯುವ ಮಾದರಿ ಕನ್ನಡ | Will Format in Kannada Guide",
         description:
-          "Download legally valid ವಿಲ್ ಬರೆಯುವ ಮಾದರಿ ಕನ್ನಡ (will format in kannada) under Indian Succession Act 1925 with Karnataka Kaveri 2.0 registration guide.",
+          "Download legally valid ವಿಲ್ ಬರೆಯುವ ಮಾದರಿ ಕನ್ನಡ (will format in kannada) under Indian Succession Act 1925 with Karnataka Kaveri 2.0.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -129,7 +137,7 @@ export default function WillFormatKannadaPage() {
         name: "ವಿಲ್ ಬರೆಯುವ ಮಾದರಿ ಕನ್ನಡ (Will Format in Kannada)",
         url: canonicalUrl,
         description:
-          "Bilingual Kannada and English legal Will draft format compliant with Section 63 of the Indian Succession Act 1925, Karnataka Registration Rules, and Kaveri 2.0 Sub-Registrar guidelines.",
+          "Bilingual Kannada and English legal Will draft format compliant with Section 63 of the Indian Succession Act 1925, Karnataka Registration.",
         fileFormat: "text/html",
         isAccessibleForFree: true,
         image: imageUrl,
@@ -148,7 +156,7 @@ export default function WillFormatKannadaPage() {
         "@id": `${canonicalUrl}#article`,
         headline: "ವಿಲ್ ಬರೆಯುವ ಮಾದರಿ ಕನ್ನಡ: Legal Will Format in Kannada Guide",
         description:
-          "Complete legal guide and printable template on how to write a valid Will in Kannada (ಉಯಿಲು ಪತ್ರ ಮಾದರಿ) under Indian Succession Act 1925 with Kaveri 2.0 registration rules.",
+          "Complete legal guide and printable template on how to write a valid Will in Kannada (ಉಯಿಲು ಪತ್ರ ಮಾದರಿ) under Indian Succession Act 1925 with.",
         image: imageUrl,
         mainEntityOfPage: canonicalUrl,
         inLanguage: ["kn-IN", "en-IN"],

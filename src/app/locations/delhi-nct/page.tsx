@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     absolute: "Will Drafting in Delhi NCT: Registration & Succession",
   },
   description:
-    "Draft a valid Will in NCT of Delhi. Complete DORIS portal registration support, DDA/MCD property mutation, and non-presidency probate advice online.",
+    "Draft a valid Will in NCT of Delhi. Complete DORIS portal registration support, DDA/MCD property mutation, and non-presidency probate advice.",
   keywords: [
     "will drafting in delhi nct",
     "will registration doris delhi",
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Will Drafting in Delhi NCT: Registration & Succession",
     description:
-      "Draft a valid Will in NCT of Delhi. Complete DORIS portal registration support, DDA/MCD property mutation, and non-presidency probate advice online.",
+      "Draft a valid Will in NCT of Delhi. Complete DORIS portal registration support, DDA/MCD property mutation, and non-presidency probate advice.",
     url: "https://www.willdrafting.in/locations/delhi-nct",
     siteName: "WillDrafting.in",
     locale: "en_IN",
@@ -63,7 +63,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Will Drafting in Delhi NCT: Registration & Succession",
     description:
-      "Draft a valid Will in NCT of Delhi. Complete DORIS portal registration support, DDA/MCD property mutation, and non-presidency probate advice online.",
+      "Draft a valid Will in NCT of Delhi. Complete DORIS portal registration support, DDA/MCD property mutation, and non-presidency probate advice.",
     images: ["https://www.willdrafting.in/images/will-drafting-in-delhi-nct-og.jpg"],
   },
   robots: {
@@ -135,7 +135,7 @@ export default function DelhiNCTLocationPage() {
         url: canonicalUrl,
         name: "Will Drafting in Delhi NCT: Registration & Succession",
         description:
-          "Draft a valid Will in NCT of Delhi. Complete DORIS portal registration support, DDA/MCD property mutation, and non-presidency probate advice online.",
+          "Draft a valid Will in NCT of Delhi. Complete DORIS portal registration support, DDA/MCD property mutation, and non-presidency probate advice.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -182,7 +182,7 @@ export default function DelhiNCTLocationPage() {
         "@id": `${canonicalUrl}#legalservice`,
         name: "WillDrafting Delhi NCT - Legal Estate Planning & DORIS Registration",
         description:
-          "Professional Will drafting, advocate verification, DORIS portal registration, and doorstep execution support across all 11 revenue districts of Delhi NCT.",
+          "Professional Will drafting, advocate verification, DORIS portal registration, and doorstep execution support across all 11 revenue districts.",
         url: canonicalUrl,
         image: imageUrl,
         telephone: "+91-8700343611",

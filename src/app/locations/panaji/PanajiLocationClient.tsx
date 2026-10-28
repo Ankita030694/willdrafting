@@ -300,8 +300,8 @@ export default function PanajiLocationClient({ faqs }: Props) {
                 <Image
                   src="/images/will-drafting-in-panaji.jpg"
                   alt="Legal Will Drafting and Property Succession in Panaji Goa"
-                  fill
-                  className="object-contain group-hover:scale-102 transition-transform duration-500"
+                  width={1200} height={675}
+                  className="absolute inset-0 w-full h-full object-contain group-hover:scale-102 transition-transform duration-500"
                   priority
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 40vw"
                 />
@@ -415,9 +415,9 @@ export default function PanajiLocationClient({ faqs }: Props) {
               <span className="text-[11px] font-bold text-rose-300 uppercase tracking-wider">
                 Panaji Advocate Desk
               </span>
-              <h4 className="font-extrabold text-sm leading-snug">
+              <div className="font-extrabold text-sm leading-snug">
                 Need Help with Goa Civil Code Wills?
-              </h4>
+              </div>
               <p className="text-xs text-slate-300 leading-relaxed">
                 Connect with our succession advocates for legitime calculations, inventory assistance, and Civil Registrar registration.
               </p>
@@ -1842,8 +1842,8 @@ export default function PanajiLocationClient({ faqs }: Props) {
               <Image
                 src="/images/will-drafting-in-panaji.jpg"
                 alt="Legal Will Drafting and Property Succession in Panaji Goa"
-                fill
-                className="object-contain"
+                width={1200} height={675}
+                className="absolute inset-0 w-full h-full object-contain"
               />
             </div>
             <div className="p-4 bg-[#172228] flex items-center justify-between border-t border-white/10 text-xs text-slate-300">

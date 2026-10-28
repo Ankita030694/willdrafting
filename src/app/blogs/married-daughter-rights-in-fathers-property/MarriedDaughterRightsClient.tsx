@@ -1127,8 +1127,8 @@ export default function MarriedDaughterRightsClient() {
                   <Image
                     src="/images/married-daughter-rights-in-fathers-property.png"
                     alt="Married Daughter Rights in Father Property in India Visual Guide"
-                    fill
-                    className="object-cover group-hover:scale-[1.02] transition-transform duration-300"
+                    width={1200} height={675}
+                    className="absolute inset-0 w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-300"
                     sizes="(max-width: 1024px) 100vw, 850px"
                     priority
                   />
@@ -1780,8 +1780,8 @@ export default function MarriedDaughterRightsClient() {
               <Image
                 src="/images/married-daughter-rights-in-fathers-property.png"
                 alt="High Resolution Visual Blueprint of Married Daughter Property Rights in India"
-                fill
-                className="object-contain"
+                width={1200} height={675}
+                className="absolute inset-0 w-full h-full object-contain"
                 sizes="(max-width: 1200px) 100vw, 1200px"
               />
             </div>

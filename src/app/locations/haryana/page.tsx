@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     absolute: "Will Drafting in Haryana: Online Will Registration Guide",
   },
   description:
-    "Draft a legally valid Will in Haryana. Complete Jamabandi portal token booking, HSVP plot succession rules, and dispute-free family estate planning in HR.",
+    "Draft a legally valid Will in Haryana. Complete Jamabandi portal token booking, HSVP plot succession rules, and dispute-free family estate.",
   keywords: [
     "will drafting in haryana",
     "will registration jamabandi haryana",
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Will Drafting in Haryana: Online Will Registration Guide",
     description:
-      "Draft a legally valid Will in Haryana. Complete Jamabandi portal token booking, HSVP plot succession rules, and dispute-free family estate planning in HR.",
+      "Draft a legally valid Will in Haryana. Complete Jamabandi portal token booking, HSVP plot succession rules, and dispute-free family estate.",
     url: "https://www.willdrafting.in/locations/haryana",
     siteName: "WillDrafting.in",
     locale: "en_IN",
@@ -61,7 +61,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Will Drafting in Haryana: Online Will Registration Guide",
     description:
-      "Draft a legally valid Will in Haryana. Complete Jamabandi portal token booking, HSVP plot succession rules, and dispute-free family estate planning in HR.",
+      "Draft a legally valid Will in Haryana. Complete Jamabandi portal token booking, HSVP plot succession rules, and dispute-free family estate.",
     images: ["https://www.willdrafting.in/images/will-drafting-in-haryana.jpg"],
   },
   robots: {
@@ -133,7 +133,7 @@ export default function HaryanaLocationPage() {
         url: canonicalUrl,
         name: "Will Drafting in Haryana: Online Will Registration Guide",
         description:
-          "Draft a legally valid Will in Haryana. Complete Jamabandi portal token booking, HSVP plot succession rules, and dispute-free family estate planning in HR.",
+          "Draft a legally valid Will in Haryana. Complete Jamabandi portal token booking, HSVP plot succession rules, and dispute-free family estate.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -180,7 +180,7 @@ export default function HaryanaLocationPage() {
         "@id": `${canonicalUrl}#legalservice`,
         name: "WillDrafting Haryana - Legal Estate Planning & Jamabandi Registration",
         description:
-          "Professional Will drafting, advocate verification, Jamabandi Haryana e-token registration, and Section 31 doorstep execution support across Gurugram, Faridabad, Panchkula, Panipat, Karnal, and all Haryana districts.",
+          "Professional Will drafting, advocate verification, Jamabandi Haryana e-token registration, and Section 31 doorstep execution support across.",
         url: canonicalUrl,
         image: imageUrl,
         telephone: "+91-8700343611",

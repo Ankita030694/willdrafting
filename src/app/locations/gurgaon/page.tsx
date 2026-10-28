@@ -190,7 +190,7 @@ export default function GurgaonLocationPage() {
         "@id": `${canonicalUrl}#legalservice`,
         name: "WillDrafting Gurgaon - Estate Planning & HSVP Succession",
         description:
-          "Professional Will drafting, lawyer verification, and Sub-Registrar Office e-token registration support across Gurgaon, Wazirabad, Badshahpur, and Manesar.",
+          "Professional Will drafting, lawyer verification, and Sub-Registrar Office e-token registration support across Gurgaon, Wazirabad, Badshahpur.",
         url: canonicalUrl,
         image: imageUrl,
         telephone: "+91-8700343611",

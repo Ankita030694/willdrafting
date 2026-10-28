@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     absolute: "Can My Will Be Challenged in Court India | WillDrafting", // exactly 55 characters
   },
   description:
-    "Use our free interactive tool to assess if your Will can be challenged in Indian court under the Indian Succession Act. Calculate dispute risk and fortify now.", // exactly 154 characters
+    "Use our free interactive tool to assess if your Will can be challenged in Indian court under the Indian Succession Act. Calculate dispute risk.", // exactly 154 characters
   keywords: [
     "can my will be challenged in court india",
     "how to make an unchallengeable will in india",
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Can My Will Be Challenged in Court India | WillDrafting",
     description:
-      "Use our free interactive tool to assess if your Will can be challenged in Indian court under the Indian Succession Act. Calculate dispute risk and fortify now.",
+      "Use our free interactive tool to assess if your Will can be challenged in Indian court under the Indian Succession Act. Calculate dispute risk.",
     url: "https://www.willdrafting.in/tools/will-contest-challenge-risk-calculator",
     siteName: "WillDrafting.in",
     locale: "en_IN",
@@ -53,7 +53,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Can My Will Be Challenged in Court India | WillDrafting",
     description:
-      "Use our free interactive tool to assess if your Will can be challenged in Indian court under the Indian Succession Act. Calculate dispute risk and fortify now.",
+      "Use our free interactive tool to assess if your Will can be challenged in Indian court under the Indian Succession Act. Calculate dispute risk.",
     images: ["https://www.willdrafting.in/images/will-contest-challenge-risk-calculator-og.jpg"],
   },
   robots: {
@@ -90,7 +90,7 @@ export default function WillContestChallengeRiskCalculatorPage() {
         url: canonicalUrl,
         name: "Can My Will Be Challenged in Court India | WillDrafting",
         description:
-          "Use our free interactive tool to assess if your Will can be challenged in Indian court under the Indian Succession Act. Calculate dispute risk and fortify now.",
+          "Use our free interactive tool to assess if your Will can be challenged in Indian court under the Indian Succession Act. Calculate dispute risk.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -130,7 +130,7 @@ export default function WillContestChallengeRiskCalculatorPage() {
         applicationCategory: "LegalApplication",
         operatingSystem: "All",
         description:
-          "Interactive judicial risk assessment tool quantifying testamentary dispute probability under Indian Succession Act ss. 59, 61, 63 and landmark Supreme Court rulings.",
+          "Interactive judicial risk assessment tool quantifying testamentary dispute probability under Indian Succession Act ss. 59, 61, 63 and landmark.",
         image: imageUrl,
         offers: {
           "@type": "Offer",

@@ -25,10 +25,10 @@ const services: ServiceCard[] = [
         <Image
           src="/new1servcie.png"
           alt="Online Will Drafting Service under Indian Law"
-          fill
+          width={1200} height={675}
           priority
           sizes="(max-width: 768px) 100vw, 50vw"
-          className="object-contain scale-100 sm:scale-[1.2] transition-transform duration-300"
+          className="absolute inset-0 w-full h-full object-contain scale-100 sm:scale-[1.2] transition-transform duration-300"
         />
       </div>
     ),
@@ -43,10 +43,10 @@ const services: ServiceCard[] = [
         <Image
           src="/comingsoon.png"
           alt="Power of Attorney and Private Trust Advisory Services in India"
-          fill
+          width={1200} height={675}
           priority
           sizes="(max-width: 768px) 100vw, 50vw"
-          className="object-contain scale-100 sm:scale-[1.2] transition-transform duration-300"
+          className="absolute inset-0 w-full h-full object-contain scale-100 sm:scale-[1.2] transition-transform duration-300"
         />
       </div>
     ),

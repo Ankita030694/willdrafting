@@ -298,8 +298,8 @@ export default function GurgaonLocationClient({ faqs }: Props) {
                 <Image
                   src="/images/will-drafting-in-gurgaon.jpg"
                   alt="Online Will Drafting & Asset Protection in Gurgaon NCR"
-                  fill
-                  className="object-contain group-hover:scale-105 transition-transform duration-500"
+                  width={1200} height={675}
+                  className="absolute inset-0 w-full h-full object-contain group-hover:scale-105 transition-transform duration-500"
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 42vw"
                   priority
                 />
@@ -1718,8 +1718,8 @@ export default function GurgaonLocationClient({ faqs }: Props) {
               <Image
                 src="/images/will-drafting-in-gurgaon.jpg"
                 alt="High Resolution Visual Blueprint: Gurgaon Will Drafting and SRO Registration"
-                fill
-                className="object-contain"
+                width={1200} height={675}
+                className="absolute inset-0 w-full h-full object-contain"
               />
             </div>
           </div>

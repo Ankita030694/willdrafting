@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     absolute: "What to Do After Death in India Checklist | WillDrafting", // exactly 56 characters
   },
   description:
-    "Free interactive checklist for legal formalities after death in India. Track 21-day death certificates, RTO Form 31, bank claims, and critical deadlines.", // exactly 153 characters
+    "Free interactive checklist for legal formalities after death in India. Track 21-day death certificates, RTO Form 31, bank claims, and critical.", // exactly 153 characters
   keywords: [
     "what to do after death of family member in india checklist",
     "legal formalities after death in india",
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "What to Do After Death in India Checklist | WillDrafting",
     description:
-      "Free interactive checklist for legal formalities after death in India. Track 21-day death certificates, RTO Form 31, bank claims, and critical deadlines.",
+      "Free interactive checklist for legal formalities after death in India. Track 21-day death certificates, RTO Form 31, bank claims, and critical.",
     url: "https://www.willdrafting.in/tools/post-death-30-day-legal-compliance-tracker",
     siteName: "WillDrafting.in",
     locale: "en_IN",
@@ -53,7 +53,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "What to Do After Death in India Checklist | WillDrafting",
     description:
-      "Free interactive checklist for legal formalities after death in India. Track 21-day death certificates, RTO Form 31, bank claims, and critical deadlines.",
+      "Free interactive checklist for legal formalities after death in India. Track 21-day death certificates, RTO Form 31, bank claims, and critical.",
     images: ["https://www.willdrafting.in/images/post-death-30-day-legal-compliance-tracker-og.jpg"],
   },
   robots: {
@@ -90,7 +90,7 @@ export default function PostDeathTrackerPage() {
         url: canonicalUrl,
         name: "What to Do After Death in India Checklist | WillDrafting",
         description:
-          "Free interactive checklist for legal formalities after death in India. Track 21-day death certificates, RTO Form 31, bank claims, and critical deadlines.",
+          "Free interactive checklist for legal formalities after death in India. Track 21-day death certificates, RTO Form 31, bank claims, and critical.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -130,7 +130,7 @@ export default function PostDeathTrackerPage() {
         applicationCategory: "LegalApplication",
         operatingSystem: "All",
         description:
-          "Interactive statutory compliance tracker and deadline calculator for legal formalities after death in India under Registration of Births and Deaths Act 1969, Central Motor Vehicles Rules Form 31, and Income Tax Act Section 159.",
+          "Interactive statutory compliance tracker and deadline calculator for legal formalities after death in India under Registration of Births and.",
         image: imageUrl,
         offers: {
           "@type": "Offer",

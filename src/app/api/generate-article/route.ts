@@ -25,9 +25,9 @@ const CORE_SITE_LINKS = [
     keywords: ["will drafting cost", "cost of making a will", "will drafting charges", "will pricing"],
   },
   {
-    url: "/how-it-works",
-    title: "How Online Will Drafting Works",
-    keywords: ["how online will works", "will drafting process", "steps to create a will online"],
+    url: "/services/will-registration",
+    title: "Will Registration Service in India",
+    keywords: ["how online will works", "will drafting process", "will registration service"],
   },
   {
     url: "/tools/probate-checker",
@@ -35,7 +35,7 @@ const CORE_SITE_LINKS = [
     keywords: ["probate requirement", "is probate mandatory", "probate checker", "probate in mumbai", "probate in india"],
   },
   {
-    url: "/tools/stamp-duty-calculator",
+    url: "/tools/gift-deed-vs-will-stamp-duty-calculator",
     title: "Stamp Duty & Will Registration Fee Calculator",
     keywords: ["stamp duty on will", "will registration fee", "registration charges for will"],
   },
@@ -45,43 +45,43 @@ const CORE_SITE_LINKS = [
     keywords: ["estate planning tools", "succession planning tools", "inheritance calculators"],
   },
   {
-    url: "/templates/hindu-will",
-    title: "Hindu Will Format & Template under Hindu Succession Act",
-    keywords: ["hindu will format", "hindu succession act will", "hindu will template"],
+    url: "/templates/will-format-india",
+    title: "Indian Will Format & Template under Indian Succession Act",
+    keywords: ["hindu will format", "hindu succession act will", "hindu will template", "will format india"],
   },
   {
-    url: "/templates/muslim-will",
+    url: "/templates/muslim-will-wasiyat-format-india",
     title: "Muslim Will (Wasiyat) Format & Shariat Rules",
     keywords: ["muslim will format", "wasiyat rules", "one third rule muslim will", "muslim succession"],
   },
   {
-    url: "/templates/joint-will",
-    title: "Joint & Mutual Will Format for Married Couples",
+    url: "/templates/joint-mutual-mirror-will-format-husband-wife",
+    title: "Joint & Mirror Will Format for Married Couples",
     keywords: ["joint will", "mutual will", "will for husband and wife", "mirror will"],
   },
   {
-    url: "/templates/living-will",
+    url: "/templates/living-will-format-india",
     title: "Living Will & Advance Medical Directive in India",
     keywords: ["living will", "advance medical directive", "passive euthanasia directive"],
   },
   {
-    url: "/templates/codicil",
+    url: "/templates/codicil-format-india",
     title: "Codicil Format to Amend or Update an Existing Will",
     keywords: ["codicil to a will", "amend a will", "update existing will", "codicil format"],
   },
   {
-    url: "/templates/will-for-nri",
+    url: "/templates/nri-separate-indian-will-format",
     title: "NRI Will Format for Indian Property & Bank Accounts",
     keywords: ["nri will for indian property", "nri succession", "nri estate planning", "foreign citizen indian property will"],
   },
   {
-    url: "/templates/senior-citizens-will",
+    url: "/blogs/senior-citizen-will-doctor-medical-fitness-certificate-india",
     title: "Senior Citizen Will Format & Medical Fitness Certificate",
     keywords: ["senior citizen will", "elderly will drafting", "medical fitness certificate for will"],
   },
   {
-    url: "/templates/property-bequest-will",
-    title: "Property Bequest Will Format for Flats, Land & Ancestral Assets",
+    url: "/tools/ancestral-vs-self-acquired-property-classifier",
+    title: "Ancestral vs Self-Acquired Property Classifier Tool",
     keywords: ["property bequest", "immovable property will", "self acquired property will", "flat inheritance"],
   },
   {
@@ -90,14 +90,14 @@ const CORE_SITE_LINKS = [
     keywords: ["will format india", "sample will format", "will templates"],
   },
   {
-    url: "/glossary",
-    title: "Indian Succession & Will Legal Glossary",
+    url: "/blogs",
+    title: "Indian Succession & Will Legal Guides",
     keywords: ["testator meaning", "executor meaning", "beneficiary meaning", "intestate meaning", "codicil meaning"],
   },
   {
-    url: "/faq",
-    title: "Frequently Asked Questions on Indian Wills",
-    keywords: ["will drafting faqs", "common questions about wills"],
+    url: "/tools/will-checklist",
+    title: "Indian Will Preparation Checklist",
+    keywords: ["will drafting faqs", "common questions about wills", "will checklist"],
   },
   {
     url: "/contact",
@@ -963,11 +963,43 @@ Return ONLY valid JSON.`;
       cleanedDescription = topBox + cleanedDescription;
     }
 
+    const rawTitle = (step1Result.title || "").trim();
+    const safeTitle =
+      rawTitle.length > 65
+        ? rawTitle.slice(0, 63).replace(/\s+\S*$/, "").replace(/[.,;:\-–—]+$/, "")
+        : rawTitle;
+
+    let safeMetaTitle = (step1Result.metaTitle || `${safeTitle} | WillDrafting`).trim();
+    if (safeMetaTitle.length > 56) {
+      safeMetaTitle = safeMetaTitle.replace(/\s*\|\s*WillDrafting(?:\.in)?$/i, "").trim();
+      if (safeMetaTitle.length > 56) {
+        safeMetaTitle = safeMetaTitle.slice(0, 54).replace(/\s+\S*$/, "").replace(/[.,;:\-–—|]+$/, "");
+      }
+    }
+
+    let safeMetaDesc = (step1Result.metaDescription || step1Result.subtitle || "").trim();
+    if (safeMetaDesc.length > 144) {
+      safeMetaDesc =
+        safeMetaDesc.slice(0, 142).replace(/\s+\S*$/, "").replace(/[.,;:\-–—]+$/, "") + ".";
+    }
+
+    cleanedDescription = cleanedDescription.replace(
+      /<h2([^>]*)>([\s\S]*?)<\/h2>/gi,
+      (_full, attrs, inner) => {
+        let plain = inner.replace(/<[^>]*>/g, "").trim();
+        if (plain.length > 65) {
+          plain = plain.slice(0, 63).replace(/\s+\S*$/, "").replace(/[.,;:\-–—]+$/, "");
+          return `<h2${attrs}>${plain}</h2>`;
+        }
+        return _full;
+      }
+    );
+
     const finalPayload = {
-      title: step1Result.title,
+      title: safeTitle,
       subtitle: step1Result.subtitle || "",
-      metaTitle: step1Result.metaTitle || `${step1Result.title} | WillDrafting.in`,
-      metaDescription: step1Result.metaDescription || step1Result.subtitle || "",
+      metaTitle: safeMetaTitle,
+      metaDescription: safeMetaDesc,
       slug:
         step1Result.slug ||
         primaryKeyword

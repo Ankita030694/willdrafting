@@ -610,10 +610,10 @@ Signed and executed before me at the Embassy / Consulate General of India, [City
               <div className="relative aspect-video w-full bg-slate-900">
                 <Image
                   src="/images/executor-consent-and-renunciation-letter-format-og.jpg"
-                  alt="Renunciation of Executorship Format India and Section 230 Indian Succession Act Legal Guide"
-                  fill
+                  alt="Renunciation of Executorship Format India and Section 230 Indian Succession Act Legal"
+                  width={1200} height={675}
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 75vw, 60vw"
-                  className="object-cover"
+                  className="absolute inset-0 w-full h-full object-cover"
                   priority
                 />
               </div>

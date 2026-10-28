@@ -181,7 +181,7 @@ export default function ChennaiLocationPage() {
         "@id": `${canonicalUrl}#legalservice`,
         name: "WillDrafting Chennai - Estate Planning, Probate & SRO Registration",
         description:
-          "Professional Will drafting, Madras High Court probate advisory, and TNREGINET Sub-Registrar Office registration support across Chennai and Tamil Nadu.",
+          "Professional Will drafting, Madras High Court probate advisory, and TNREGINET Sub-Registrar Office registration support across Chennai and.",
         url: canonicalUrl,
         image: imageUrl,
         telephone: "+91-8700343611",

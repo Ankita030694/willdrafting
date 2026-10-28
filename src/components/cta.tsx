@@ -17,9 +17,9 @@ export default function CTA() {
           <Image
             src="/cta/1.png"
             alt="Court-ready legally binding Will document illustration"
-            fill
+            width={1200} height={675}
             sizes="160px"
-            className="object-contain"
+            className="absolute inset-0 w-full h-full object-contain"
           />
         </div>
       </div>
@@ -30,9 +30,9 @@ export default function CTA() {
           <Image
             src="/cta/2.png"
             alt="Confidential estate and asset protection folder"
-            fill
+            width={1200} height={675}
             sizes="144px"
-            className="object-contain"
+            className="absolute inset-0 w-full h-full object-contain"
           />
         </div>
       </div>
@@ -43,9 +43,9 @@ export default function CTA() {
           <Image
             src="/cta/3.png"
             alt="Bar Council advocate verified legal certificate"
-            fill
+            width={1200} height={675}
             sizes="160px"
-            className="object-contain"
+            className="absolute inset-0 w-full h-full object-contain"
           />
         </div>
       </div>
@@ -56,9 +56,9 @@ export default function CTA() {
           <Image
             src="/cta/4.png"
             alt="Comprehensive 7-point legal health check inspection"
-            fill
+            width={1200} height={675}
             sizes="160px"
-            className="object-contain"
+            className="absolute inset-0 w-full h-full object-contain"
           />
         </div>
       </div>
@@ -69,9 +69,9 @@ export default function CTA() {
           <Image
             src="/cta/5.png"
             alt="Family asset protection and minor guardianship plan"
-            fill
+            width={1200} height={675}
             sizes="144px"
-            className="object-contain"
+            className="absolute inset-0 w-full h-full object-contain"
           />
         </div>
       </div>
@@ -82,9 +82,9 @@ export default function CTA() {
           <Image
             src="/cta/6.png"
             alt="Testamentary clause execution and witness attestation scroll"
-            fill
+            width={1200} height={675}
             sizes="160px"
-            className="object-contain"
+            className="absolute inset-0 w-full h-full object-contain"
           />
         </div>
       </div>
@@ -99,18 +99,18 @@ export default function CTA() {
             <Image
               src="/cta/1.png"
               alt="Court-ready legally binding Will document"
-              fill
+              width={1200} height={675}
               sizes="160px"
-              className="object-contain scale-[1.2]"
+              className="absolute inset-0 w-full h-full object-contain scale-[1.2]"
             />
           </div>
           <div className="relative aspect-square w-full flex items-center justify-center">
             <Image
               src="/cta/4.png"
               alt="Comprehensive legal health check report"
-              fill
+              width={1200} height={675}
               sizes="160px"
-              className="object-contain scale-[1.2]"
+              className="absolute inset-0 w-full h-full object-contain scale-[1.2]"
             />
           </div>
         </div>
@@ -151,24 +151,24 @@ export default function CTA() {
               <Image
                 src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=80&q=80"
                 alt="Client avatar Priya Sharma"
-                fill
-                className="object-cover"
+                width={1200} height={675}
+                className="absolute inset-0 w-full h-full object-cover"
               />
             </div>
             <div className="inline-block h-5 w-5 rounded-full ring-2 ring-white overflow-hidden relative">
               <Image
                 src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=80&q=80"
                 alt="Client avatar Rajesh Verma"
-                fill
-                className="object-cover"
+                width={1200} height={675}
+                className="absolute inset-0 w-full h-full object-cover"
               />
             </div>
             <div className="inline-block h-5 w-5 rounded-full ring-2 ring-white overflow-hidden relative">
               <Image
                 src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=80&q=80"
                 alt="Client avatar Sunita Mehta"
-                fill
-                className="object-cover"
+                width={1200} height={675}
+                className="absolute inset-0 w-full h-full object-cover"
               />
             </div>
           </div>
@@ -183,18 +183,18 @@ export default function CTA() {
             <Image
               src="/cta/2.png"
               alt="Secure digital vault estate document folder"
-              fill
+              width={1200} height={675}
               sizes="160px"
-              className="object-contain scale-[1.2]"
+              className="absolute inset-0 w-full h-full object-contain scale-[1.2]"
             />
           </div>
           <div className="relative aspect-square w-full flex items-center justify-center">
             <Image
               src="/cta/6.png"
               alt="Legal Will execution testament scroll"
-              fill
+              width={1200} height={675}
               sizes="160px"
-              className="object-contain scale-[1.2]"
+              className="absolute inset-0 w-full h-full object-contain scale-[1.2]"
             />
           </div>
         </div>

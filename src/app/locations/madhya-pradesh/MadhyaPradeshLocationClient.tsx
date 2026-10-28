@@ -299,8 +299,8 @@ export default function MadhyaPradeshLocationClient({ faqs }: Props) {
                 <Image
                   src="/images/will-drafting-in-madhya-pradesh.jpg"
                   alt="Legal Will Drafting and Property Succession in Madhya Pradesh"
-                  fill
-                  className="object-contain group-hover:scale-102 transition-transform duration-500"
+                  width={1200} height={675}
+                  className="absolute inset-0 w-full h-full object-contain group-hover:scale-102 transition-transform duration-500"
                   priority
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 40vw"
                 />
@@ -414,9 +414,9 @@ export default function MadhyaPradeshLocationClient({ faqs }: Props) {
                   <ShieldCheck className="w-4 h-4" />
                   <span>MP Advocate Support</span>
                 </div>
-                <h4 className="text-sm font-extrabold text-white leading-snug">
+                <div className="text-sm font-extrabold text-white leading-snug">
                   Need Help with MP Sampada Registration?
-                </h4>
+                </div>
                 <p className="text-xs text-slate-300 leading-relaxed">
                   Our estate lawyers draft your Will, schedule your Sub-Registrar slot, and guide you every step.
                 </p>
@@ -1847,8 +1847,8 @@ export default function MadhyaPradeshLocationClient({ faqs }: Props) {
               <Image
                 src="/images/will-drafting-in-madhya-pradesh.jpg"
                 alt="High Resolution Visual Blueprint: Madhya Pradesh Will Drafting and SRO Registration"
-                fill
-                className="object-contain"
+                width={1200} height={675}
+                className="absolute inset-0 w-full h-full object-contain"
                 priority
               />
             </div>

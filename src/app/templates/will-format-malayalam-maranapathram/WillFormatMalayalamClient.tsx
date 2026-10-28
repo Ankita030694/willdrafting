@@ -868,8 +868,8 @@ Date: [Date]`;
                 <Image
                   src="/images/will-format-malayalam-maranapathram-og.jpg"
                   alt="Will Format in Malayalam: മരണപത്രം ഫോർമാറ്റ് മലയാളം (Maranapathram) Legal Template"
-                  fill
-                  className="object-cover"
+                  width={1200} height={675}
+                  className="absolute inset-0 w-full h-full object-cover"
                   sizes="(max-width: 1024px) 100vw, 850px"
                 />
               </div>

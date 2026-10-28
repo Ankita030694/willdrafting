@@ -330,8 +330,8 @@ export default function DelhiLocationClient({ faqs }: Props) {
                 <Image
                   src="/images/will-drafting-in-delhi-og.jpg"
                   alt="Online Will Drafting and Registration in Delhi NCR"
-                  fill
-                  className="object-cover group-hover:scale-105 transition-transform duration-500"
+                  width={1200} height={675}
+                  className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   priority
                 />
               </div>
@@ -1892,8 +1892,8 @@ export default function DelhiLocationClient({ faqs }: Props) {
               <Image
                 src="/images/will-drafting-in-delhi-og.jpg"
                 alt="High Resolution Visual Blueprint: Delhi Will Drafting and SRO Registration"
-                fill
-                className="object-contain"
+                width={1200} height={675}
+                className="absolute inset-0 w-full h-full object-contain"
               />
             </div>
           </div>

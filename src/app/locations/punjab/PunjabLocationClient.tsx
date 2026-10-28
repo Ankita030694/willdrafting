@@ -308,8 +308,8 @@ export default function PunjabLocationClient({ faqs }: Props) {
                 <Image
                   src="/images/will-drafting-in-punjab.jpg"
                   alt="Online Will Drafting and NRI Asset Protection in Punjab"
-                  fill
-                  className="object-contain group-hover:scale-102 transition-transform duration-500"
+                  width={1200} height={675}
+                  className="absolute inset-0 w-full h-full object-contain group-hover:scale-102 transition-transform duration-500"
                   priority
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 40vw"
                 />
@@ -1878,8 +1878,8 @@ export default function PunjabLocationClient({ faqs }: Props) {
               <Image
                 src="/images/will-drafting-in-punjab.jpg"
                 alt="High Resolution Visual Blueprint: Punjab Will Drafting and NGDRS Registration"
-                fill
-                className="object-contain"
+                width={1200} height={675}
+                className="absolute inset-0 w-full h-full object-contain"
                 priority
               />
             </div>

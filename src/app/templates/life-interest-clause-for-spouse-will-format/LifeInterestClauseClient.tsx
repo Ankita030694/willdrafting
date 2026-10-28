@@ -470,10 +470,10 @@ Upon my death, the absolute remainder title in the Schedule Property shall immed
                 <Image
                   src="/images/life-interest-clause-for-spouse-will-format-og.jpg"
                   alt="Life Interest Clause for Spouse in Will Format India and Section 14(2) Protection"
-                  fill
+                  width={1200} height={675}
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 75vw, 900px"
                   priority
-                  className="object-cover"
+                  className="absolute inset-0 w-full h-full object-cover"
                 />
               </div>
               <div className="p-4 bg-slate-50 border-t border-slate-100 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2 text-xs text-slate-600">
@@ -1465,7 +1465,7 @@ Upon my death, the absolute remainder title in the Schedule Property shall immed
 
                 <div className="pt-3 border-t border-slate-100 flex flex-wrap gap-2 text-xs">
                   <a
-                    href="https://main.sci.gov.in"
+                    href="https://www.sci.gov.in"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-slate-100 text-slate-800 hover:bg-slate-200 font-semibold"

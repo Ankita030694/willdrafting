@@ -189,7 +189,7 @@ export default function LadakhLocationPage() {
         "@id": `${canonicalUrl}#legalservice`,
         name: "WillDrafting Ladakh - Estate Planning & SRO Registration",
         description:
-          "Professional Will drafting, advocate verification, Leh & Kargil revenue land records compliance, LAHDC succession, and Section 31 doorstep execution across Ladakh.",
+          "Professional Will drafting, advocate verification, Leh & Kargil revenue land records compliance, LAHDC succession, and Section 31 doorstep.",
         url: canonicalUrl,
         image: imageUrl,
         email: "hello@willdrafting.in",

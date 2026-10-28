@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     absolute: "Will Drafting in Coimbatore: Online Will Making Guide",
   },
   description:
-    "Draft a legally valid Will in Coimbatore. Expert guidance on industrial assets, Tamil Nadu SRO registration, and smooth family wealth distribution.",
+    "Draft a legally valid Will in Coimbatore. Expert guidance on industrial assets, Tamil Nadu SRO registration, and smooth family wealth.",
   keywords: [
     "will drafting in coimbatore",
     "will registration tnreginet coimbatore",
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Will Drafting in Coimbatore: Online Will Making Guide",
     description:
-      "Draft a legally valid Will in Coimbatore. Expert guidance on industrial assets, Tamil Nadu SRO registration, and smooth family wealth distribution.",
+      "Draft a legally valid Will in Coimbatore. Expert guidance on industrial assets, Tamil Nadu SRO registration, and smooth family wealth.",
     url: "https://www.willdrafting.in/locations/coimbatore",
     siteName: "WillDrafting.in",
     locale: "en_IN",
@@ -66,7 +66,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Will Drafting in Coimbatore: Online Will Making Guide",
     description:
-      "Draft a legally valid Will in Coimbatore. Expert guidance on industrial assets, Tamil Nadu SRO registration, and smooth family wealth distribution.",
+      "Draft a legally valid Will in Coimbatore. Expert guidance on industrial assets, Tamil Nadu SRO registration, and smooth family wealth.",
     images: ["https://www.willdrafting.in/images/will-drafting-in-coimbatore-og.jpg"],
   },
   robots: {
@@ -146,7 +146,7 @@ export default function CoimbatoreLocationPage() {
         url: canonicalUrl,
         name: "Will Drafting in Coimbatore: Online Will Making Guide",
         description:
-          "Draft a legally valid Will in Coimbatore. Expert guidance on industrial assets, Tamil Nadu SRO registration, and smooth family wealth distribution.",
+          "Draft a legally valid Will in Coimbatore. Expert guidance on industrial assets, Tamil Nadu SRO registration, and smooth family wealth.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -193,7 +193,7 @@ export default function CoimbatoreLocationPage() {
         "@id": `${canonicalUrl}#legalservice`,
         name: "WillDrafting Coimbatore - Estate Planning, Industrial Succession & SRO Registration",
         description:
-          "Professional Will drafting, industrial family enterprise succession advisory, and TNREGINET Sub-Registrar Office registration support across Coimbatore and Tamil Nadu.",
+          "Professional Will drafting, industrial family enterprise succession advisory, and TNREGINET Sub-Registrar Office registration support across.",
         url: canonicalUrl,
         image: imageUrl,
         telephone: "+91-8700343611",

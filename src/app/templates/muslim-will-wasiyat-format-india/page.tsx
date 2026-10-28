@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     absolute: "Muslim Will Format in India: Wasiyat Guide | WillDrafting", // exactly 57 characters
   },
   description:
-    "Download a legally valid Muslim will format in India. Plain paper Sharia Wasiyatnama template with 1/3rd bequest rule, heir consent annex, and legal guide.", // exactly 155 characters
+    "Download a legally valid Muslim will format in India. Plain paper Sharia Wasiyatnama template with 1/3rd bequest rule, heir consent annex, and.", // exactly 155 characters
   keywords: [
     "muslim will format in india",
     "wasiyatnama format in english and urdu hindi",
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Muslim Will Format in India: Wasiyat Guide | WillDrafting",
     description:
-      "Download a legally valid Muslim will format in India. Plain paper Sharia Wasiyatnama template with 1/3rd bequest rule, heir consent annex, and legal guide.",
+      "Download a legally valid Muslim will format in India. Plain paper Sharia Wasiyatnama template with 1/3rd bequest rule, heir consent annex, and.",
     url: "https://www.willdrafting.in/templates/muslim-will-wasiyat-format-india",
     siteName: "WillDrafting.in",
     locale: "en_IN",
@@ -53,7 +53,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Muslim Will Format in India: Wasiyat Guide | WillDrafting",
     description:
-      "Download a legally valid Muslim will format in India. Plain paper Sharia Wasiyatnama template with 1/3rd bequest rule, heir consent annex, and legal guide.",
+      "Download a legally valid Muslim will format in India. Plain paper Sharia Wasiyatnama template with 1/3rd bequest rule, heir consent annex, and.",
     images: ["https://www.willdrafting.in/images/muslim-will-wasiyat-format-india-og.jpg"],
   },
   robots: {
@@ -90,7 +90,7 @@ export default function MuslimWillPage() {
         url: canonicalUrl,
         name: "Muslim Will Format in India: Wasiyat Guide | WillDrafting",
         description:
-          "Download a legally valid Muslim will format in India. Plain paper Sharia Wasiyatnama template with 1/3rd bequest rule, heir consent annex, and legal guide.",
+          "Download a legally valid Muslim will format in India. Plain paper Sharia Wasiyatnama template with 1/3rd bequest rule, heir consent annex, and.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -128,7 +128,7 @@ export default function MuslimWillPage() {
         name: "Muslim Will Format in India (Wasiyatnama Legal Template)",
         url: canonicalUrl,
         description:
-          "Lawyer-vetted Sharia-compliant Muslim Will (Wasiyatnama) format with 1/3rd discretionary bequest clause and post-death legal heir consent deed under the Muslim Personal Law (Shariat) Application Act, 1937.",
+          "Lawyer-vetted Sharia-compliant Muslim Will (Wasiyatnama) format with 1/3rd discretionary bequest clause and post-death legal heir consent deed.",
         image: imageUrl,
         fileFormat: "text/html",
         hasDigitalDocumentPermission: {

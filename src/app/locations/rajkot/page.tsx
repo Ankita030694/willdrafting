@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     absolute: "Will Drafting in Rajkot: Legal Online Will Making Help",
   },
   description:
-    "Draft a legally binding Will in Rajkot. Expert lawyer review, Garvi Gujarat registration advice, and seamless family business succession planning online.",
+    "Draft a legally binding Will in Rajkot. Expert lawyer review, Garvi Gujarat registration advice, and seamless family business succession.",
   keywords: [
     "will drafting in rajkot",
     "will registration gujarat sub registrar",
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Will Drafting in Rajkot: Legal Online Will Making Help",
     description:
-      "Draft a legally binding Will in Rajkot. Expert lawyer review, Garvi Gujarat registration advice, and seamless family business succession planning online.",
+      "Draft a legally binding Will in Rajkot. Expert lawyer review, Garvi Gujarat registration advice, and seamless family business succession.",
     url: "https://www.willdrafting.in/locations/rajkot",
     siteName: "WillDrafting.in",
     locale: "en_IN",
@@ -64,7 +64,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Will Drafting in Rajkot: Legal Online Will Making Help",
     description:
-      "Draft a legally binding Will in Rajkot. Expert lawyer review, Garvi Gujarat registration advice, and seamless family business succession planning online.",
+      "Draft a legally binding Will in Rajkot. Expert lawyer review, Garvi Gujarat registration advice, and seamless family business succession.",
     images: ["https://www.willdrafting.in/images/will-drafting-in-rajkot-og.jpg"],
   },
   robots: {
@@ -144,7 +144,7 @@ export default function RajkotLocationPage() {
         url: canonicalUrl,
         name: "Will Drafting in Rajkot: Legal Online Will Making Help",
         description:
-          "Draft a legally binding Will in Rajkot. Expert lawyer review, Garvi Gujarat registration advice, and seamless family business succession planning online.",
+          "Draft a legally binding Will in Rajkot. Expert lawyer review, Garvi Gujarat registration advice, and seamless family business succession.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -191,7 +191,7 @@ export default function RajkotLocationPage() {
         "@id": `${canonicalUrl}#legalservice`,
         name: "WillDrafting Rajkot - Estate Planning & SRO Registration",
         description:
-          "Professional Will drafting, advocate consultation, Garvi Gujarat portal appointment booking, and doorstep execution support across Rajkot, Kalawad Road, Yagnik Road, and Aji GIDC.",
+          "Professional Will drafting, advocate consultation, Garvi Gujarat portal appointment booking, and doorstep execution support across Rajkot.",
         url: canonicalUrl,
         image: imageUrl,
         email: "hello@willdrafting.in",

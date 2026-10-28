@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     absolute: "Will Drafting in Amritsar: Online Will & NRI Guide",
   },
   description:
-    "Protect family property in Amritsar. Expert online Will drafting, NGDRS Punjab registration help, and dispute-free succession for NRI ancestral lands.",
+    "Protect family property in Amritsar. Expert online Will drafting, NGDRS Punjab registration help, and dispute-free succession for NRI.",
   keywords: [
     "will drafting in amritsar",
     "nri will amritsar punjab",
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Will Drafting in Amritsar: Online Will & NRI Guide",
     description:
-      "Protect family property in Amritsar. Expert online Will drafting, NGDRS Punjab registration help, and dispute-free succession for NRI ancestral lands.",
+      "Protect family property in Amritsar. Expert online Will drafting, NGDRS Punjab registration help, and dispute-free succession for NRI.",
     url: "https://www.willdrafting.in/locations/amritsar",
     siteName: "WillDrafting.in",
     locale: "en_IN",
@@ -62,7 +62,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Will Drafting in Amritsar: Online Will & NRI Guide",
     description:
-      "Protect family property in Amritsar. Expert online Will drafting, NGDRS Punjab registration help, and dispute-free succession for NRI ancestral lands.",
+      "Protect family property in Amritsar. Expert online Will drafting, NGDRS Punjab registration help, and dispute-free succession for NRI.",
     images: ["https://www.willdrafting.in/images/will-drafting-in-amritsar-og.jpg"],
   },
   robots: {
@@ -142,7 +142,7 @@ export default function AmritsarLocationPage() {
         url: canonicalUrl,
         name: "Will Drafting in Amritsar: Online Will & NRI Guide",
         description:
-          "Protect family property in Amritsar. Expert online Will drafting, NGDRS Punjab registration help, and dispute-free succession for NRI ancestral lands.",
+          "Protect family property in Amritsar. Expert online Will drafting, NGDRS Punjab registration help, and dispute-free succession for NRI.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -189,7 +189,7 @@ export default function AmritsarLocationPage() {
         "@id": `${canonicalUrl}#legalservice`,
         name: "WillDrafting Amritsar - Estate Planning & SRO Registration",
         description:
-          "Professional Will drafting, advocate verification, NGDRS Punjab registration assistance, and Section 31 doorstep execution support across Amritsar, Ranjit Avenue, Civil Lines, Mall Road, and Ajnala.",
+          "Professional Will drafting, advocate verification, NGDRS Punjab registration assistance, and Section 31 doorstep execution support across.",
         url: canonicalUrl,
         image: imageUrl,
         email: "hello@willdrafting.in",

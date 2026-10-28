@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     absolute: "Survivor Member Certificate India | Apply for SMC Online",
   },
   description:
-    "Apply for a Surviving Member Certificate online in India. Fast-track SDM and revenue department approval for bank claims, property mutation, and pension.",
+    "Apply for a Surviving Member Certificate online in India. Fast-track SDM and revenue department approval for bank claims, property mutation.",
   authors: [{ name: "Advocate Anuj Anand Malik", url: "https://www.linkedin.com/in/iamanujmalik/" }],
   keywords: [
     "survivor member certificate",
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Survivor Member Certificate India | Apply for SMC Online",
     description:
-      "Apply for a Surviving Member Certificate online in India. Fast-track SDM and revenue department approval for bank claims, property mutation, and pension.",
+      "Apply for a Surviving Member Certificate online in India. Fast-track SDM and revenue department approval for bank claims, property mutation.",
     url: "https://www.willdrafting.in/services/survivor-member-certificate",
     siteName: "WillDrafting.in",
     locale: "en_IN",
@@ -63,7 +63,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Survivor Member Certificate India | Apply for SMC Online",
     description:
-      "Apply for a Surviving Member Certificate online in India. Fast-track SDM and revenue department approval for bank claims, property mutation, and pension.",
+      "Apply for a Surviving Member Certificate online in India. Fast-track SDM and revenue department approval for bank claims, property mutation.",
     images: ["/images/survivor-member-certificate-og.jpg"],
   },
   robots: {

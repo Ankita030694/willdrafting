@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     absolute: "Will Drafting in Rajasthan: Online Will & Asset Planning",
   },
   description:
-    "Draft a valid Will in Rajasthan. Complete guidance on ancestral property succession, ePanjiyan portal registration, and Apna Khata revenue mutation.",
+    "Draft a valid Will in Rajasthan. Complete guidance on ancestral property succession, ePanjiyan portal registration, and Apna Khata revenue.",
   keywords: [
     "will drafting in rajasthan",
     "will registration rajasthan epanjiyan",
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Will Drafting in Rajasthan: Online Will & Asset Planning",
     description:
-      "Draft a valid Will in Rajasthan. Complete guidance on ancestral property succession, ePanjiyan portal registration, and Apna Khata revenue mutation.",
+      "Draft a valid Will in Rajasthan. Complete guidance on ancestral property succession, ePanjiyan portal registration, and Apna Khata revenue.",
     url: "https://www.willdrafting.in/locations/rajasthan",
     siteName: "WillDrafting.in",
     locale: "en_IN",
@@ -62,7 +62,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Will Drafting in Rajasthan: Online Will & Asset Planning",
     description:
-      "Draft a valid Will in Rajasthan. Complete guidance on ancestral property succession, ePanjiyan portal registration, and Apna Khata revenue mutation.",
+      "Draft a valid Will in Rajasthan. Complete guidance on ancestral property succession, ePanjiyan portal registration, and Apna Khata revenue.",
     images: ["https://www.willdrafting.in/images/will-drafting-in-rajasthan.jpg"],
   },
   robots: {
@@ -134,7 +134,7 @@ export default function RajasthanLocationPage() {
         url: canonicalUrl,
         name: "Will Drafting in Rajasthan: Online Will & Asset Planning",
         description:
-          "Draft a valid Will in Rajasthan. Complete guidance on ancestral property succession, ePanjiyan portal registration, and Apna Khata revenue mutation.",
+          "Draft a valid Will in Rajasthan. Complete guidance on ancestral property succession, ePanjiyan portal registration, and Apna Khata revenue.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -181,7 +181,7 @@ export default function RajasthanLocationPage() {
         "@id": `${canonicalUrl}#legalservice`,
         name: "WillDrafting Rajasthan - Legal Estate Planning & SRO Registration",
         description:
-          "Professional Will drafting, advocate verification, ePanjiyan Rajasthan registration, and doorstep execution support across Jaipur, Jodhpur, Udaipur, Kota, and all Rajasthan districts.",
+          "Professional Will drafting, advocate verification, ePanjiyan Rajasthan registration, and doorstep execution support across Jaipur, Jodhpur.",
         url: canonicalUrl,
         image: imageUrl,
         email: "hello@willdrafting.in",

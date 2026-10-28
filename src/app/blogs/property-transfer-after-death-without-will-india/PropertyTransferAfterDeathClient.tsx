@@ -593,7 +593,7 @@ export default function PropertyTransferAfterDeathClient() {
                 Our advocates assist with Legal Heir Certificates, Relinquishment Deeds, and municipal mutation.
               </p>
               <Link
-                href="/service/succession-certificate"
+                href="/services/succession-certificate"
                 className="text-xs font-bold text-emerald-800 hover:text-emerald-950 flex items-center gap-1"
               >
                 <span>Succession Services &rarr;</span>
@@ -613,9 +613,9 @@ export default function PropertyTransferAfterDeathClient() {
                   EXECUTIVE SUMMARY: 4 GOLDEN RULES OF INTESTATE PROPERTY SUCCESSION
                 </span>
               </div>
-              <h3 className="text-lg font-bold text-slate-900 mb-3">
+              <div className="text-lg font-bold text-slate-900 mb-3">
                 What You Must Know Before Applying for Property Transfer
-              </h3>
+              </div>
               <ul className="space-y-2 text-sm text-slate-700">
                 <li className="flex items-start gap-2.5">
                   <CheckCircle2 className="w-4 h-4 text-[#5F7E75] shrink-0 mt-0.5" />
@@ -933,8 +933,8 @@ export default function PropertyTransferAfterDeathClient() {
                   <Image
                     src="/images/property-transfer-after-death-without-will-india.jpg"
                     alt="Property Transfer After Death of Father Without Will in India Step-by-Step Guide"
-                    fill
-                    className="object-contain"
+                    width={1200} height={675}
+                    className="absolute inset-0 w-full h-full object-contain"
                     priority
                   />
                 </div>
@@ -1230,7 +1230,7 @@ export default function PropertyTransferAfterDeathClient() {
                     </p>
                   </div>
                   <Link
-                    href="/service/succession-certificate"
+                    href="/services/succession-certificate"
                     className="text-xs font-bold text-[#C65378] hover:underline flex items-center gap-1"
                   >
                     <span>Succession Lawyers &rarr;</span>
@@ -1248,7 +1248,7 @@ export default function PropertyTransferAfterDeathClient() {
                     </p>
                   </div>
                   <Link
-                    href="/service/probate-lawyer"
+                    href="/services/probate-lawyer"
                     className="text-xs font-bold text-[#C65378] hover:underline flex items-center gap-1"
                   >
                     <span>Probate Advocates &rarr;</span>
@@ -1492,7 +1492,7 @@ export default function PropertyTransferAfterDeathClient() {
                   </div>
                 </Link>
                 <Link
-                  href="/service/succession-certificate"
+                  href="/services/succession-certificate"
                   className="block p-2.5 rounded-xl border border-slate-100 hover:border-rose-200 hover:bg-rose-50/30 transition-colors"
                 >
                   <div className="font-bold text-xs text-slate-900">Succession Certificate Service</div>
@@ -1515,7 +1515,7 @@ export default function PropertyTransferAfterDeathClient() {
                   Legal Heir vs Succession Certificate
                 </Link>
                 <Link
-                  href="/service/succession-certificate"
+                  href="/services/succession-certificate"
                   className="text-[11px] px-3 py-1 rounded-lg bg-slate-100 text-[#172228] hover:bg-slate-200 transition-colors"
                 >
                   Succession Certificate Lawyers

@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     absolute: "Will Drafting in Lucknow: Online Will Registration Help",
   },
   description:
-    "Secure family wealth in Lucknow. Professional Will drafting, UP IGRS registration guidance, and legal property succession advice by senior lawyers.",
+    "Secure family wealth in Lucknow. Professional Will drafting, UP IGRS registration guidance, and legal property succession advice by senior.",
   keywords: [
     "will drafting in lucknow",
     "will registration up igrs",
@@ -50,7 +50,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Will Drafting in Lucknow: Online Will Registration Help",
     description:
-      "Secure family wealth in Lucknow. Professional Will drafting, UP IGRS registration guidance, and legal property succession advice by senior lawyers.",
+      "Secure family wealth in Lucknow. Professional Will drafting, UP IGRS registration guidance, and legal property succession advice by senior.",
     url: "https://www.willdrafting.in/locations/lucknow",
     siteName: "WillDrafting.in",
     locale: "en_IN",
@@ -68,7 +68,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Will Drafting in Lucknow: Online Will Registration Help",
     description:
-      "Secure family wealth in Lucknow. Professional Will drafting, UP IGRS registration guidance, and legal property succession advice by senior lawyers.",
+      "Secure family wealth in Lucknow. Professional Will drafting, UP IGRS registration guidance, and legal property succession advice by senior.",
     images: ["https://www.willdrafting.in/images/will-drafting-in-lucknow-og.jpg"],
   },
   robots: {
@@ -144,7 +144,7 @@ export default function LucknowLocationPage() {
         url: canonicalUrl,
         name: "Will Drafting in Lucknow: Online Will Registration Help",
         description:
-          "Secure family wealth in Lucknow. Professional Will drafting, UP IGRS registration guidance, and legal property succession advice by senior lawyers.",
+          "Secure family wealth in Lucknow. Professional Will drafting, UP IGRS registration guidance, and legal property succession advice by senior.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -191,7 +191,7 @@ export default function LucknowLocationPage() {
         "@id": `${canonicalUrl}#legalservice`,
         name: "WillDrafting Lucknow - Estate Planning & SRO Registration",
         description:
-          "Expert Will drafting, advocate verification, LDA property mutation guidance, and Sub-Registrar Office e-registration support across Lucknow district.",
+          "Expert Will drafting, advocate verification, LDA property mutation guidance, and Sub-Registrar Office e-registration support across Lucknow.",
         url: canonicalUrl,
         image: imageUrl,
         telephone: "+91-8700343611",

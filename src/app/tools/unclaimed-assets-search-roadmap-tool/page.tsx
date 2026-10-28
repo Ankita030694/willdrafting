@@ -133,7 +133,7 @@ export default function UnclaimedAssetsSearchRoadmapPage() {
         applicationCategory: "LegalApplication",
         operatingSystem: "All",
         description:
-          "Interactive statutory roadmap to discover deceased parents bank accounts, demat equity shares, mutual fund folios, IEPF unclaimed assets, and life insurance policies across 8 official Indian government and regulatory portals.",
+          "Interactive statutory roadmap to discover deceased parents bank accounts, demat equity shares, mutual fund folios, IEPF unclaimed assets, and.",
         image: imageUrl,
         offers: {
           "@type": "Offer",

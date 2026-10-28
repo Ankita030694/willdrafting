@@ -291,8 +291,8 @@ export default function RajkotLocationClient({ faqs }: Props) {
                 <Image
                   src="/images/will-drafting-in-rajkot.jpg"
                   alt="Legal Will Drafting and Business Succession in Rajkot Gujarat"
-                  fill
-                  className="object-contain group-hover:scale-102 transition-transform duration-500"
+                  width={1200} height={675}
+                  className="absolute inset-0 w-full h-full object-contain group-hover:scale-102 transition-transform duration-500"
                   priority
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 40vw"
                 />
@@ -1833,8 +1833,8 @@ export default function RajkotLocationClient({ faqs }: Props) {
               <Image
                 src="/images/will-drafting-in-rajkot.jpg"
                 alt="High Resolution Visual Blueprint: Rajkot Will Drafting and SRO Registration"
-                fill
-                className="object-contain"
+                width={1200} height={675}
+                className="absolute inset-0 w-full h-full object-contain"
                 priority
               />
             </div>

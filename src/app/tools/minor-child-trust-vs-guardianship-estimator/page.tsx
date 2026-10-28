@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     absolute: "Minor Child Inheritance Rules India | WillDrafting.in", // exactly 53 characters
   },
   description:
-    "Learn minor child inheritance rules in India. Compare legal guardianship vs testamentary trusts, model staggered payouts, and protect your children.", // exactly 148 characters
+    "Learn minor child inheritance rules in India. Compare legal guardianship vs testamentary trusts, model staggered payouts, and protect your.", // exactly 148 characters
   keywords: [
     "minor child inheritance rules india",
     "how to leave money to minor child in will india",
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Minor Child Inheritance Rules India | WillDrafting.in",
     description:
-      "Learn minor child inheritance rules in India. Compare legal guardianship vs testamentary trusts, model staggered payouts, and protect your children.",
+      "Learn minor child inheritance rules in India. Compare legal guardianship vs testamentary trusts, model staggered payouts, and protect your.",
     url: "https://www.willdrafting.in/tools/minor-child-trust-vs-guardianship-estimator",
     siteName: "WillDrafting.in",
     locale: "en_IN",
@@ -52,7 +52,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Minor Child Inheritance Rules India | WillDrafting.in",
     description:
-      "Learn minor child inheritance rules in India. Compare legal guardianship vs testamentary trusts, model staggered payouts, and protect your children.",
+      "Learn minor child inheritance rules in India. Compare legal guardianship vs testamentary trusts, model staggered payouts, and protect your.",
     images: ["https://www.willdrafting.in/images/minor-child-trust-vs-guardianship-estimator-og.jpg"],
   },
   robots: {
@@ -89,7 +89,7 @@ export default function MinorChildTrustEstimatorPage() {
         url: canonicalUrl,
         name: "Minor Child Inheritance Rules India | WillDrafting.in",
         description:
-          "Learn minor child inheritance rules in India. Compare legal guardianship vs testamentary trusts, model staggered payouts, and protect your children.",
+          "Learn minor child inheritance rules in India. Compare legal guardianship vs testamentary trusts, model staggered payouts, and protect your.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -129,7 +129,7 @@ export default function MinorChildTrustEstimatorPage() {
         applicationCategory: "LegalApplication",
         operatingSystem: "All",
         description:
-          "Interactive estate planning tool comparing Section 9 HMGA testamentary guardianship vs Indian Trusts Act testamentary private trusts and Section 6 MWP Act life insurance protection for minor children in India.",
+          "Interactive estate planning tool comparing Section 9 HMGA testamentary guardianship vs Indian Trusts Act testamentary private trusts and.",
         image: imageUrl,
         offers: {
           "@type": "Offer",

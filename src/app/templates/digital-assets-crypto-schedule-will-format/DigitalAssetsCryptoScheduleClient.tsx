@@ -472,8 +472,8 @@ Acknowledged by Bank / Locker Custodian: __________________________"`;
                 <Image
                   src="/images/digital-assets-crypto-schedule-will-format-og.jpg"
                   alt="Digital Assets and Crypto Schedule Will Format India Guide and Inventory Template"
-                  fill
-                  className="object-cover transition-transform duration-300 hover:scale-105"
+                  width={1200} height={675}
+                  className="absolute inset-0 w-full h-full object-cover transition-transform duration-300 hover:scale-105"
                   priority
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 75vw, 65vw"
                 />
@@ -1612,7 +1612,7 @@ Statutory Baseline: Indian Succession Act 1925, IT Act 2000, Income Tax Act Sec 
 
                 <div className="pt-2 border-t border-slate-100 flex flex-wrap gap-3">
                   <a
-                    href="https://incometaxindia.gov.in"
+                    href="https://www.indiacode.nic.in"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-blue-50 text-blue-800 hover:bg-blue-100 font-semibold"

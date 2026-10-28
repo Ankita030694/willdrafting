@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     absolute: "CHS Flat Transfer After Death Documents | WillDrafting", // exactly 54 characters
   },
   description:
-    "Check cooperative housing society flat transfer after death documents under MCS Act. Verify Form 14-19, nominee rights, and fee caps with WillDrafting.", // exactly 151 characters
+    "Check cooperative housing society flat transfer after death documents under MCS Act. Verify Form 14-19, nominee rights, and fee caps with.", // exactly 151 characters
   keywords: [
     "cooperative housing society flat transfer after death documents",
     "chs share certificate transfer after death maharashtra",
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "CHS Flat Transfer After Death Documents | WillDrafting",
     description:
-      "Check cooperative housing society flat transfer after death documents under MCS Act. Verify Form 14-19, nominee rights, and fee caps with WillDrafting.",
+      "Check cooperative housing society flat transfer after death documents under MCS Act. Verify Form 14-19, nominee rights, and fee caps with.",
     url: "https://www.willdrafting.in/tools/housing-society-flat-transfer-document-checker",
     siteName: "WillDrafting.in",
     locale: "en_IN",
@@ -53,7 +53,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "CHS Flat Transfer After Death Documents | WillDrafting",
     description:
-      "Check cooperative housing society flat transfer after death documents under MCS Act. Verify Form 14-19, nominee rights, and fee caps with WillDrafting.",
+      "Check cooperative housing society flat transfer after death documents under MCS Act. Verify Form 14-19, nominee rights, and fee caps with.",
     images: ["https://www.willdrafting.in/images/housing-society-flat-transfer-document-checker-og.jpg"],
   },
   robots: {
@@ -92,7 +92,7 @@ export default function HousingSocietyDocumentCheckerPage() {
         url: canonicalUrl,
         name: "CHS Flat Transfer After Death Documents | WillDrafting",
         description:
-          "Check cooperative housing society flat transfer after death documents under MCS Act. Verify Form 14-19, nominee rights, and fee caps with WillDrafting.",
+          "Check cooperative housing society flat transfer after death documents under MCS Act. Verify Form 14-19, nominee rights, and fee caps with.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -132,7 +132,7 @@ export default function HousingSocietyDocumentCheckerPage() {
         applicationCategory: "LegalApplication",
         operatingSystem: "All",
         description:
-          "Diagnostic legal checker mapping Maharashtra MCS Act Section 154B-13, Model Bye-Law Appendix Forms 14 to 19, Delhi Cooperative Societies Act, and Supreme Court Indrani Wahi nominee rights for housing society flat transmission.",
+          "Diagnostic legal checker mapping Maharashtra MCS Act Section 154B-13, Model Bye-Law Appendix Forms 14 to 19, Delhi Cooperative Societies Act.",
         image: imageUrl,
         offers: {
           "@type": "Offer",

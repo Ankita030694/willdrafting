@@ -303,8 +303,8 @@ export default function VisakhapatnamLocationClient({ faqs }: Props) {
                 <Image
                   src="/images/will-drafting-in-visakhapatnam.jpg"
                   alt="Will Drafting in Visakhapatnam Online Legal Guide"
-                  fill
-                  className="object-contain group-hover:scale-105 transition-transform duration-500"
+                  width={1200} height={675}
+                  className="absolute inset-0 w-full h-full object-contain group-hover:scale-105 transition-transform duration-500"
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 42vw"
                   priority
                 />
@@ -1843,8 +1843,8 @@ export default function VisakhapatnamLocationClient({ faqs }: Props) {
               <Image
                 src="/images/will-drafting-in-visakhapatnam.jpg"
                 alt="High Resolution Visual Blueprint: Visakhapatnam Will Drafting and Asset Protection"
-                fill
-                className="object-contain"
+                width={1200} height={675}
+                className="absolute inset-0 w-full h-full object-contain"
                 sizes="(max-width: 1200px) 100vw, 1200px"
               />
             </div>

@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     absolute: "Documents Required for Will in India | WillDrafting",
   },
   description:
-    "Checklist of documents required for making a Will in India. Verify asset papers, witness rules, executor details, and draft online with WillDrafting.",
+    "Checklist of documents required for making a Will in India. Verify asset papers, witness rules, executor details, and draft online with.",
   keywords: [
     "documents required for will in india",
     "will checklist india",
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Documents Required for Will in India | WillDrafting",
     description:
-      "Checklist of documents required for making a Will in India. Verify asset papers, witness rules, executor details, and draft online with WillDrafting.",
+      "Checklist of documents required for making a Will in India. Verify asset papers, witness rules, executor details, and draft online with.",
     url: "https://www.willdrafting.in/tools/will-checklist",
     siteName: "WillDrafting.in",
     locale: "en_IN",
@@ -50,7 +50,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Documents Required for Will in India | WillDrafting",
     description:
-      "Checklist of documents required for making a Will in India. Verify asset papers, witness rules, executor details, and draft online with WillDrafting.",
+      "Checklist of documents required for making a Will in India. Verify asset papers, witness rules, executor details, and draft online with.",
     images: ["https://www.willdrafting.in/images/will-checklist-og.jpg"],
   },
   robots: {
@@ -87,7 +87,7 @@ export default function WillChecklistPage() {
         url: canonicalUrl,
         name: "Documents Required for Will in India | WillDrafting",
         description:
-          "Checklist of documents required for making a Will in India. Verify asset papers, witness rules, executor details, and draft online with WillDrafting.",
+          "Checklist of documents required for making a Will in India. Verify asset papers, witness rules, executor details, and draft online with.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -127,7 +127,7 @@ export default function WillChecklistPage() {
         applicationCategory: "LegalApplication",
         operatingSystem: "All",
         description:
-          "Interactive checklist tool for Indian estate planning covering 15 asset classes, executor and guardian appointments, Section 63 witness compliance, and downloadable document summaries.",
+          "Interactive checklist tool for Indian estate planning covering 15 asset classes, executor and guardian appointments, Section 63 witness.",
         image: imageUrl,
         offers: {
           "@type": "Offer",

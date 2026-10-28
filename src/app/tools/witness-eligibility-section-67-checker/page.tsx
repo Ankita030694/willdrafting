@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     absolute: "Who Can Be Witness to a Will in India | WillDrafting.in", // exactly 55 characters
   },
   description:
-    "Check who can be a witness to a will in India under Section 67 of Indian Succession Act. Verify doctor, lawyer, and family void bequest risks online.", // exactly 150 characters
+    "Check who can be a witness to a will in India under Section 67 of Indian Succession Act. Verify doctor, lawyer, and family void bequest risks.", // exactly 150 characters
   keywords: [
     "who can be witness to a will in india",
     "can wife or son be witness to will",
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Who Can Be Witness to a Will in India | WillDrafting.in",
     description:
-      "Check who can be a witness to a will in India under Section 67 of Indian Succession Act. Verify doctor, lawyer, and family void bequest risks online.",
+      "Check who can be a witness to a will in India under Section 67 of Indian Succession Act. Verify doctor, lawyer, and family void bequest risks.",
     url: "https://www.willdrafting.in/tools/witness-eligibility-section-67-checker",
     siteName: "WillDrafting.in",
     locale: "en_IN",
@@ -53,7 +53,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Who Can Be Witness to a Will in India | WillDrafting.in",
     description:
-      "Check who can be a witness to a will in India under Section 67 of Indian Succession Act. Verify doctor, lawyer, and family void bequest risks online.",
+      "Check who can be a witness to a will in India under Section 67 of Indian Succession Act. Verify doctor, lawyer, and family void bequest risks.",
     images: ["https://www.willdrafting.in/images/witness-eligibility-section-67-checker-og.jpg"],
   },
   robots: {
@@ -90,7 +90,7 @@ export default function WitnessEligibilityCheckerPage() {
         url: canonicalUrl,
         name: "Who Can Be Witness to a Will in India | WillDrafting.in",
         description:
-          "Check who can be a witness to a will in India under Section 67 of Indian Succession Act. Verify doctor, lawyer, and family void bequest risks online.",
+          "Check who can be a witness to a will in India under Section 67 of Indian Succession Act. Verify doctor, lawyer, and family void bequest risks.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -130,7 +130,7 @@ export default function WitnessEligibilityCheckerPage() {
         applicationCategory: "LegalApplication",
         operatingSystem: "All",
         description:
-          "Interactive statutory checker evaluating witness competency, Section 67 void bequest risk, Section 63(c) attestation validity, and Section 67 BSA 2023 probate court proof standards.",
+          "Interactive statutory checker evaluating witness competency, Section 67 void bequest risk, Section 63(c) attestation validity, and Section 67.",
         image: imageUrl,
         offers: {
           "@type": "Offer",

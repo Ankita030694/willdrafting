@@ -477,9 +477,9 @@ DEPONENT`;
                 <Image
                   src="/images/caveat-against-probate-format-india-og.jpg"
                   alt="Caveat Against Probate Format India under Section 284 Indian Succession Act Schedule V"
-                  fill
+                  width={1200} height={675}
                   priority
-                  className="object-cover"
+                  className="absolute inset-0 w-full h-full object-cover"
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 75vw, 60vw"
                 />
               </div>
@@ -1405,7 +1405,7 @@ DEPONENT`}
                     <ExternalLink className="w-3 h-3" />
                   </a>
                   <a
-                    href="https://bombayhighcourt.nic.in"
+                    href="https://igrmaharashtra.gov.in"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-blue-50 text-blue-800 hover:bg-blue-100 font-semibold"

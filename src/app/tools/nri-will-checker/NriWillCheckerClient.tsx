@@ -844,7 +844,7 @@ export default function NriWillCheckerClient() {
                         <ArrowRight className="w-4 h-4" />
                       </a>
                       <a
-                        href="/service/nri-will-india"
+                        href="/services/nri-will-india"
                         className="inline-flex items-center gap-2 px-5 py-3 rounded-full bg-white/10 hover:bg-white/20 border border-white/20 text-white font-semibold text-xs sm:text-sm transition-all"
                       >
                         <span>Consult Cross-Border Lawyers</span>
@@ -1169,8 +1169,8 @@ export default function NriWillCheckerClient() {
                   <Image
                     src="/images/nri-two-will-strategy-infographic.svg"
                     alt="NRI Two-Will Strategy Infographic for Indian Property and Cross-Border Assets"
-                    fill
-                    className="object-contain hover:scale-[1.01] transition-transform duration-300"
+                    width={1200} height={675}
+                    className="absolute inset-0 w-full h-full object-contain hover:scale-[1.01] transition-transform duration-300"
                     priority={false}
                   />
                 </div>
@@ -1562,7 +1562,7 @@ export default function NriWillCheckerClient() {
                   </p>
                 </div>
                 <a
-                  href="/service/nri-will-india"
+                  href="/services/nri-will-india"
                   className="px-6 py-2.5 rounded-full bg-[#C65378] text-white text-xs font-bold hover:bg-[#a13c5d] transition-all whitespace-nowrap"
                 >
                   Book NRI Legal Consult
@@ -1695,7 +1695,7 @@ export default function NriWillCheckerClient() {
                 <span className="text-xs font-bold text-slate-900 block mb-2">Related WillDrafting Guides &amp; Tools:</span>
                 <div className="flex flex-wrap gap-2">
                   <Link
-                    href="/service/nri-will-india"
+                    href="/services/nri-will-india"
                     className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-slate-50 border border-slate-200 text-slate-700 text-xs hover:border-[#C65378] hover:text-[#C65378] transition-colors"
                   >
                     <span>NRI Will Drafting Service</span>
@@ -1841,7 +1841,7 @@ export default function NriWillCheckerClient() {
               </span>
               <div className="space-y-2.5">
                 <Link
-                  href="/service/nri-will-india"
+                  href="/services/nri-will-india"
                   className="block p-2.5 rounded-xl border border-slate-200 hover:border-[#C65378] hover:bg-rose-50/30 transition-all text-xs group"
                 >
                   <div className="font-bold text-slate-900 group-hover:text-[#C65378] flex items-center justify-between">
@@ -1887,7 +1887,7 @@ export default function NriWillCheckerClient() {
               <span className="text-xs font-bold text-[#172228] block mb-2">Related WillDrafting Guides:</span>
               <div className="flex flex-wrap gap-2">
                 <Link
-                  href="/service/nri-will-india"
+                  href="/services/nri-will-india"
                   className="text-[11px] px-3 py-1 rounded-lg bg-slate-100 text-[#172228] hover:bg-slate-200 transition-colors"
                 >
                   NRI Will Drafting Service
@@ -1905,7 +1905,7 @@ export default function NriWillCheckerClient() {
                   Will Preparation Checklist
                 </Link>
                 <Link
-                  href="/service/succession-certificate"
+                  href="/services/succession-certificate"
                   className="text-[11px] px-3 py-1 rounded-lg bg-slate-100 text-[#172228] hover:bg-slate-200 transition-colors"
                 >
                   Succession Certificate Lawyers

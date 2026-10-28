@@ -203,7 +203,7 @@ export default function IndoreLocationPage() {
         "@id": `${canonicalUrl}#legalservice`,
         name: "WillDrafting Indore - Estate Planning & SRO Registration",
         description:
-          "Professional Will drafting, advocate consultation, MP Sampada 2.0 registration, and doorstep execution services across Indore district and Malwa region.",
+          "Professional Will drafting, advocate consultation, MP Sampada 2.0 registration, and doorstep execution services across Indore district and.",
         url: canonicalUrl,
         image: imageUrl,
         telephone: "+91-8700343611",

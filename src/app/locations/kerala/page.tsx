@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     absolute: "Will Drafting in Kerala: Online Will & NRI Estate Guide",
   },
   description:
-    "Draft a legally binding Will in Kerala. Comprehensive support for Gulf NRI property owners, Christian inheritance law, and PEARLS portal SRO registration.",
+    "Draft a legally binding Will in Kerala. Comprehensive support for Gulf NRI property owners, Christian inheritance law, and PEARLS portal SRO.",
   keywords: [
     "will drafting in kerala",
     "nri will kerala",
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Will Drafting in Kerala: Online Will & NRI Estate Guide",
     description:
-      "Draft a legally binding Will in Kerala. Comprehensive support for Gulf NRI property owners, Christian inheritance law, and PEARLS portal SRO registration.",
+      "Draft a legally binding Will in Kerala. Comprehensive support for Gulf NRI property owners, Christian inheritance law, and PEARLS portal SRO.",
     url: "https://www.willdrafting.in/locations/kerala",
     siteName: "WillDrafting.in",
     locale: "en_IN",
@@ -62,7 +62,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Will Drafting in Kerala: Online Will & NRI Estate Guide",
     description:
-      "Draft a legally binding Will in Kerala. Comprehensive support for Gulf NRI property owners, Christian inheritance law, and PEARLS portal SRO registration.",
+      "Draft a legally binding Will in Kerala. Comprehensive support for Gulf NRI property owners, Christian inheritance law, and PEARLS portal SRO.",
     images: ["https://www.willdrafting.in/images/will-drafting-in-kerala-og.jpg"],
   },
   robots: {
@@ -142,7 +142,7 @@ export default function KeralaLocationPage() {
         url: canonicalUrl,
         name: "Will Drafting in Kerala: Online Will & NRI Estate Guide",
         description:
-          "Draft a legally binding Will in Kerala. Comprehensive support for Gulf NRI property owners, Christian inheritance law, and PEARLS portal SRO registration.",
+          "Draft a legally binding Will in Kerala. Comprehensive support for Gulf NRI property owners, Christian inheritance law, and PEARLS portal SRO.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -189,7 +189,7 @@ export default function KeralaLocationPage() {
         "@id": `${canonicalUrl}#legalservice`,
         name: "WillDrafting Kerala - Estate Planning & SRO Registration",
         description:
-          "Professional Will drafting, advocate verification, PEARLS portal registration, Gulf NRI estate planning, and doorstep execution support across Kerala.",
+          "Professional Will drafting, advocate verification, PEARLS portal registration, Gulf NRI estate planning, and doorstep execution support across.",
         url: canonicalUrl,
         image: imageUrl,
         email: "hello@willdrafting.in",

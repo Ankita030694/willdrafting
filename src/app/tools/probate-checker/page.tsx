@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     absolute: "Is Probate Required in India? Free Probate Checker Tool",
   },
   description:
-    "Check if probate is required for your Will in India. Use our free diagnostic tool for Mumbai, Chennai, Kolkata rules, bank demands, and executor guidance.",
+    "Check if probate is required for your Will in India. Use our free diagnostic tool for Mumbai, Chennai, Kolkata rules, bank demands, and.",
   keywords: [
     "is probate required in india",
     "probate required states india",
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Is Probate Required in India? Free Probate Checker Tool",
     description:
-      "Check if probate is required for your Will in India. Use our free diagnostic tool for Mumbai, Chennai, Kolkata rules, bank demands, and executor guidance.",
+      "Check if probate is required for your Will in India. Use our free diagnostic tool for Mumbai, Chennai, Kolkata rules, bank demands, and.",
     url: "https://www.willdrafting.in/tools/probate-checker",
     siteName: "WillDrafting.in",
     locale: "en_IN",
@@ -52,7 +52,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Is Probate Required in India? Free Probate Checker Tool",
     description:
-      "Check if probate is required for your Will in India. Use our free diagnostic tool for Mumbai, Chennai, Kolkata rules, bank demands, and executor guidance.",
+      "Check if probate is required for your Will in India. Use our free diagnostic tool for Mumbai, Chennai, Kolkata rules, bank demands, and.",
     images: ["https://www.willdrafting.in/images/probate-checker-og.jpg"],
   },
   robots: {
@@ -89,7 +89,7 @@ export default function ProbateCheckerPage() {
         url: canonicalUrl,
         name: "Is Probate Required in India? Free Probate Checker Tool",
         description:
-          "Check if probate is required for your Will in India. Use our free diagnostic tool for Mumbai, Chennai, Kolkata rules, bank demands, and executor guidance.",
+          "Check if probate is required for your Will in India. Use our free diagnostic tool for Mumbai, Chennai, Kolkata rules, bank demands, and.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -129,7 +129,7 @@ export default function ProbateCheckerPage() {
         applicationCategory: "LegalApplication",
         operatingSystem: "All",
         description:
-          "Interactive diagnostic legal tool to calculate whether probate is mandatory, recommended, or unnecessary under Section 57 and Section 213 of the Indian Succession Act, 1925.",
+          "Interactive diagnostic legal tool to calculate whether probate is mandatory, recommended, or unnecessary under Section 57 and Section 213 of.",
         image: imageUrl,
         offers: {
           "@type": "Offer",

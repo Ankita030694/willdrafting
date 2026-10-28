@@ -307,8 +307,8 @@ export default function TamilNaduLocationClient({ faqs }: Props) {
                 <Image
                   src="/images/will-drafting-in-tamil-nadu.jpg"
                   alt="Legal Will Drafting and Property Succession in Tamil Nadu"
-                  fill
-                  className="object-contain group-hover:scale-102 transition-transform duration-500"
+                  width={1200} height={675}
+                  className="absolute inset-0 w-full h-full object-contain group-hover:scale-102 transition-transform duration-500"
                   priority
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 40vw"
                 />
@@ -679,7 +679,7 @@ export default function TamilNaduLocationClient({ faqs }: Props) {
                     Probate is required for properties within Chennai city limits. This falls under the original civil jurisdiction of the Madras High Court. The executor must obtain probate before transferring city real estate. The High Court grants probate after public citations.
                   </p>
                   <div className="pt-2 text-xs text-[#C65378] font-bold flex items-center gap-1.5">
-                    <Link href="/service/probate-lawyer" className="inline-flex items-center gap-1 hover:underline">
+                    <Link href="/services/probate-lawyer" className="inline-flex items-center gap-1 hover:underline">
                       <span>Explore Madras High Court Probate Support</span>
                       <ArrowRight className="w-3.5 h-3.5" />
                     </Link>
@@ -1840,8 +1840,8 @@ export default function TamilNaduLocationClient({ faqs }: Props) {
               <Image
                 src="/images/will-drafting-in-tamil-nadu.jpg"
                 alt="High Resolution Visual Blueprint: Tamil Nadu Will Drafting and SRO Registration"
-                fill
-                className="object-contain"
+                width={1200} height={675}
+                className="absolute inset-0 w-full h-full object-contain"
                 priority
               />
             </div>

@@ -324,8 +324,8 @@ export default function CoimbatoreLocationClient({ faqs }: Props) {
                 <Image
                   src="/images/will-drafting-in-coimbatore.jpg"
                   alt="Legal Will Drafting & Wealth Distribution in Coimbatore"
-                  fill
-                  className="object-contain group-hover:scale-105 transition-transform duration-500"
+                  width={1200} height={675}
+                  className="absolute inset-0 w-full h-full object-contain group-hover:scale-105 transition-transform duration-500"
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 42vw"
                   priority
                 />
@@ -1932,9 +1932,9 @@ export default function CoimbatoreLocationClient({ faqs }: Props) {
             <div className="relative w-full aspect-video rounded-xl overflow-hidden bg-black/40">
               <Image
                 src="/images/will-drafting-in-coimbatore.jpg"
-                alt="High Resolution Visual Blueprint: Coimbatore Will Drafting and Industrial Wealth Distribution"
-                fill
-                className="object-contain"
+                alt="High Resolution Visual Blueprint: Coimbatore Will Drafting and Industrial Wealth"
+                width={1200} height={675}
+                className="absolute inset-0 w-full h-full object-contain"
                 sizes="(max-width: 1200px) 100vw, 1200px"
               />
             </div>

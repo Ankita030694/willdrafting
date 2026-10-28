@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     absolute: "Will Drafting in Himachal Pradesh: Online Will Guide",
   },
   description:
-    "Draft a legally valid Will in Himachal Pradesh. Guidance on Section 118 tenancy act compliance, apple orchard succession, and e-Himsugam SRO registration.",
+    "Draft a legally valid Will in Himachal Pradesh. Guidance on Section 118 tenancy act compliance, apple orchard succession, and e-Himsugam SRO.",
   keywords: [
     "will drafting in himachal pradesh",
     "will registration himachal sro",
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Will Drafting in Himachal Pradesh: Online Will Guide",
     description:
-      "Draft a legally valid Will in Himachal Pradesh. Guidance on Section 118 tenancy act compliance, apple orchard succession, and e-Himsugam SRO registration.",
+      "Draft a legally valid Will in Himachal Pradesh. Guidance on Section 118 tenancy act compliance, apple orchard succession, and e-Himsugam SRO.",
     url: "https://www.willdrafting.in/locations/himachal-pradesh",
     siteName: "WillDrafting.in",
     locale: "en_IN",
@@ -60,7 +60,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Will Drafting in Himachal Pradesh: Online Will Guide",
     description:
-      "Draft a legally valid Will in Himachal Pradesh. Guidance on Section 118 tenancy act compliance, apple orchard succession, and e-Himsugam SRO registration.",
+      "Draft a legally valid Will in Himachal Pradesh. Guidance on Section 118 tenancy act compliance, apple orchard succession, and e-Himsugam SRO.",
     images: [
       "https://www.willdrafting.in/images/will-drafting-in-himachal-pradesh-og.jpg",
     ],
@@ -144,7 +144,7 @@ export default function HimachalPradeshLocationPage() {
         url: canonicalUrl,
         name: "Will Drafting in Himachal Pradesh: Online Will Guide",
         description:
-          "Draft a legally valid Will in Himachal Pradesh. Guidance on Section 118 tenancy act compliance, apple orchard succession, and e-Himsugam SRO registration.",
+          "Draft a legally valid Will in Himachal Pradesh. Guidance on Section 118 tenancy act compliance, apple orchard succession, and e-Himsugam SRO.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -192,7 +192,7 @@ export default function HimachalPradeshLocationPage() {
         "@id": `${canonicalUrl}#legalservice`,
         name: "WillDrafting Himachal Pradesh - Estate Planning & SRO Registration",
         description:
-          "Professional Will drafting, advocate verification, Section 118 HP Tenancy Act compliance, e-Himsugam SRO registration, and Section 31 doorstep execution support across Himachal Pradesh.",
+          "Professional Will drafting, advocate verification, Section 118 HP Tenancy Act compliance, e-Himsugam SRO registration, and Section 31 doorstep.",
         url: canonicalUrl,
         image: imageUrl,
         email: "hello@willdrafting.in",

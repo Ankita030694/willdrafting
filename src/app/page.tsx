@@ -14,10 +14,10 @@ import MapSection from "@/components/MapSection";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "India's First Online Will Drafting Platform | WillDrafting.in",
+    absolute: "Online Will Drafting Platform India | WillDrafting.in",
   },
   description:
-    "India's first online will drafting platform. Create a legally valid Will online in India in minutes. Lawyer-verified and court-ready PDF powered by AMA Legal Solutions.",
+    "India's first online will drafting platform. Make a legally valid Will in India in minutes with court-ready PDF & lawyer review by AMA Legal.",
   keywords: [
     "india's first online will drafting platform",
     "online will drafting platform india",
@@ -53,7 +53,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "India's First Online Will Drafting Platform | WillDrafting.in",
     description:
-      "India's first online will drafting platform. Create a legally valid Will online in India in minutes. Lawyer-verified and court-ready PDF powered by AMA Legal Solutions.",
+      "India's first online will drafting platform. Create a legally valid Will online in India in minutes. Lawyer-verified and court-ready PDF.",
     url: "https://www.willdrafting.in",
     siteName: "WillDrafting.in",
     locale: "en_IN",
@@ -71,7 +71,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "India's First Online Will Drafting Platform | WillDrafting.in",
     description:
-      "India's first online will drafting platform. Create a legally valid Will online in India in minutes. Lawyer-verified and court-ready PDF powered by AMA Legal Solutions.",
+      "India's first online will drafting platform. Create a legally valid Will online in India in minutes. Lawyer-verified and court-ready PDF.",
     images: ["/desktopusp.jpg"],
   },
 };

@@ -306,8 +306,8 @@ export default function JaipurLocationClient({ faqs }: Props) {
                 <Image
                   src="/images/will-drafting-in-jaipur.jpg"
                   alt="Online Will Drafting and Property Succession in Jaipur Rajasthan"
-                  fill
-                  className="object-contain group-hover:scale-105 transition-transform duration-500"
+                  width={1200} height={675}
+                  className="absolute inset-0 w-full h-full object-contain group-hover:scale-105 transition-transform duration-500"
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 42vw"
                   priority
                 />
@@ -1895,8 +1895,8 @@ export default function JaipurLocationClient({ faqs }: Props) {
               <Image
                 src="/images/will-drafting-in-jaipur.jpg"
                 alt="Full Resolution: Will Drafting and Property Succession in Jaipur Rajasthan"
-                fill
-                className="object-contain"
+                width={1200} height={675}
+                className="absolute inset-0 w-full h-full object-contain"
                 priority
               />
             </div>

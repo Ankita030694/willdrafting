@@ -307,8 +307,8 @@ export default function BiharLocationClient({ faqs }: Props) {
                 <Image
                   src="/images/will-drafting-in-bihar.jpg"
                   alt="Online Will Drafting and Land Succession Services in Bihar"
-                  fill
-                  className="object-contain group-hover:scale-102 transition-transform duration-500"
+                  width={1200} height={675}
+                  className="absolute inset-0 w-full h-full object-contain group-hover:scale-102 transition-transform duration-500"
                   priority
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 40vw"
                 />
@@ -432,9 +432,9 @@ export default function BiharLocationClient({ faqs }: Props) {
                 <span className="text-[11px] font-bold uppercase tracking-wider text-rose-300">
                   Verified Legal Service
                 </span>
-                <h4 className="font-extrabold text-sm text-white leading-snug">
+                <div className="font-extrabold text-sm text-white leading-snug">
                   Protect Your Bihar Ancestral Land &amp; Property
-                </h4>
+                </div>
                 <p className="text-xs text-slate-300 leading-relaxed">
                   Draft a clear Will online in 15 minutes. Avoid painful court disputes and delayed Dakhil Kharij.
                 </p>
@@ -760,7 +760,7 @@ export default function BiharLocationClient({ faqs }: Props) {
                       Operational Hours: {activeHubData.timings}
                     </span>
                     <a
-                      href="/service/will-registration"
+                      href="/services/will-registration"
                       className="inline-flex items-center gap-1.5 text-xs font-bold text-[#C65378] hover:text-[#a13c5d]"
                     >
                       <span>Book SRO Advocate Accompaniment</span>
@@ -1846,8 +1846,8 @@ export default function BiharLocationClient({ faqs }: Props) {
               <Image
                 src="/images/will-drafting-in-bihar.jpg"
                 alt="High Resolution Visual Blueprint: Bihar Will Drafting and SRO Registration"
-                fill
-                className="object-contain"
+                width={1200} height={675}
+                className="absolute inset-0 w-full h-full object-contain"
                 priority
               />
             </div>

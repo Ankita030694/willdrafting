@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     absolute: "Leaving Money to Charity or Pet in Will India | WillDrafting", // exactly 60 characters
   },
   description:
-    "Download valid pet care and charity bequest clauses for Wills in India. Structure conditional caretaker funds, 80G NGO gifts, and honorary pet trusts.", // exactly 150 characters
+    "Download valid pet care and charity bequest clauses for Wills in India. Structure conditional caretaker funds, 80G NGO gifts, and honorary pet.", // exactly 150 characters
   keywords: [
     "leaving money to charity or pet in will india format",
     "pet trust clause in will india",
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Leaving Money to Charity or Pet in Will India | WillDrafting",
     description:
-      "Download valid pet care and charity bequest clauses for Wills in India. Structure conditional caretaker funds, 80G NGO gifts, and honorary pet trusts.",
+      "Download valid pet care and charity bequest clauses for Wills in India. Structure conditional caretaker funds, 80G NGO gifts, and honorary pet.",
     url: "https://www.willdrafting.in/templates/pet-care-and-charity-bequest-clause-will-format",
     siteName: "WillDrafting.in",
     locale: "en_IN",
@@ -53,7 +53,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Leaving Money to Charity or Pet in Will India | WillDrafting",
     description:
-      "Download valid pet care and charity bequest clauses for Wills in India. Structure conditional caretaker funds, 80G NGO gifts, and honorary pet trusts.",
+      "Download valid pet care and charity bequest clauses for Wills in India. Structure conditional caretaker funds, 80G NGO gifts, and honorary pet.",
     images: ["https://www.willdrafting.in/images/pet-care-and-charity-bequest-clause-will-format-og.jpg"],
   },
   robots: {
@@ -90,7 +90,7 @@ export default function PetCareAndCharityBequestPage() {
         url: canonicalUrl,
         name: "Leaving Money to Charity or Pet in Will India | WillDrafting",
         description:
-          "Download valid pet care and charity bequest clauses for Wills in India. Structure conditional caretaker funds, 80G NGO gifts, and honorary pet trusts.",
+          "Download valid pet care and charity bequest clauses for Wills in India. Structure conditional caretaker funds, 80G NGO gifts, and honorary pet.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -128,7 +128,7 @@ export default function PetCareAndCharityBequestPage() {
         name: "Pet Care and Charity Bequest Clause in Will Format India",
         url: canonicalUrl,
         description:
-          "Statutory legal clauses and testamentary trust formats for providing lifelong maintenance for companion animals and tax-exempt bequests to charitable trusts, NGOs, and religious institutions under Indian law.",
+          "Statutory legal clauses and testamentary trust formats for providing lifelong maintenance for companion animals and tax-exempt bequests to.",
         fileFormat: "text/html",
         isAccessibleForFree: true,
         image: imageUrl,
@@ -147,7 +147,7 @@ export default function PetCareAndCharityBequestPage() {
         "@id": `${canonicalUrl}#article`,
         headline: "Pet Care and Charity Bequest Clause in Will Format",
         description:
-          "Comprehensive legal guide and statutory clause templates for structuring enforceable pet caretaking funds and philanthropic charitable bequests in an Indian Will.",
+          "Comprehensive legal guide and statutory clause templates for structuring enforceable pet caretaking funds and philanthropic charitable.",
         image: imageUrl,
         mainEntityOfPage: canonicalUrl,
         inLanguage: "en-IN",

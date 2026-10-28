@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     absolute: "Do I Need an Indian Will? NRI Will Checker | WillDrafting",
   },
   description:
-    "Do you need a separate Indian Will as an NRI? Use our free diagnostic checker to verify foreign Will validity, FEMA rules, and protect your Indian assets.",
+    "Do you need a separate Indian Will as an NRI? Use our free diagnostic checker to verify foreign Will validity, FEMA rules, and protect your.",
   keywords: [
     "do i need an indian will",
     "NRI will checker",
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Do I Need an Indian Will? NRI Will Checker | WillDrafting",
     description:
-      "Do you need a separate Indian Will as an NRI? Use our free diagnostic checker to verify foreign Will validity, FEMA rules, and protect your Indian assets.",
+      "Do you need a separate Indian Will as an NRI? Use our free diagnostic checker to verify foreign Will validity, FEMA rules, and protect your.",
     url: "https://www.willdrafting.in/tools/nri-will-checker",
     siteName: "WillDrafting.in",
     locale: "en_IN",
@@ -52,7 +52,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Do I Need an Indian Will? NRI Will Checker | WillDrafting",
     description:
-      "Do you need a separate Indian Will as an NRI? Use our free diagnostic checker to verify foreign Will validity, FEMA rules, and protect your Indian assets.",
+      "Do you need a separate Indian Will as an NRI? Use our free diagnostic checker to verify foreign Will validity, FEMA rules, and protect your.",
     images: ["https://www.willdrafting.in/images/nri-will-checker-og.jpg"],
   },
   robots: {
@@ -89,7 +89,7 @@ export default function NriWillCheckerPage() {
         url: canonicalUrl,
         name: "Do I Need an Indian Will? NRI Will Checker | WillDrafting",
         description:
-          "Do you need a separate Indian Will as an NRI? Use our free diagnostic checker to verify foreign Will validity, FEMA rules, and protect your Indian assets.",
+          "Do you need a separate Indian Will as an NRI? Use our free diagnostic checker to verify foreign Will validity, FEMA rules, and protect your.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -129,7 +129,7 @@ export default function NriWillCheckerPage() {
         applicationCategory: "LegalApplication",
         operatingSystem: "All",
         description:
-          "Interactive cross-border estate diagnostic tool for NRIs, OCIs, and PIOs to determine if a separate Indian Will is legally necessary under FEMA and the Indian Succession Act, 1925.",
+          "Interactive cross-border estate diagnostic tool for NRIs, OCIs, and PIOs to determine if a separate Indian Will is legally necessary under.",
         image: imageUrl,
         offers: {
           "@type": "Offer",

@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     absolute: "Gift Deed Format for Blood Relatives India | WillDrafting", // exactly 57 characters
   },
   description:
-    "Download legally valid gift deed format for blood relatives in India. Includes Section 23 senior citizen clause, stamp duty concessions, and Word draft.", // exactly 153 characters
+    "Download legally valid gift deed format for blood relatives in India. Includes Section 23 senior citizen clause, stamp duty concessions, and.", // exactly 153 characters
   keywords: [
     "gift deed format for blood relatives in india",
     "gift deed format father to son daughter",
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Gift Deed Format for Blood Relatives India | WillDrafting",
     description:
-      "Download legally valid gift deed format for blood relatives in India. Includes Section 23 senior citizen clause, stamp duty concessions, and Word draft.",
+      "Download legally valid gift deed format for blood relatives in India. Includes Section 23 senior citizen clause, stamp duty concessions, and.",
     url: "https://www.willdrafting.in/templates/gift-deed-format-blood-relatives-india",
     siteName: "WillDrafting.in",
     locale: "en_IN",
@@ -53,7 +53,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Gift Deed Format for Blood Relatives India | WillDrafting",
     description:
-      "Download legally valid gift deed format for blood relatives in India. Includes Section 23 senior citizen clause, stamp duty concessions, and Word draft.",
+      "Download legally valid gift deed format for blood relatives in India. Includes Section 23 senior citizen clause, stamp duty concessions, and.",
     images: ["https://www.willdrafting.in/images/gift-deed-format-blood-relatives-india-og.jpg"],
   },
   robots: {
@@ -90,7 +90,7 @@ export default function GiftDeedBloodRelativesPage() {
         url: canonicalUrl,
         name: "Gift Deed Format for Blood Relatives India | WillDrafting",
         description:
-          "Download legally valid gift deed format for blood relatives in India. Includes Section 23 senior citizen clause, stamp duty concessions, and Word draft.",
+          "Download legally valid gift deed format for blood relatives in India. Includes Section 23 senior citizen clause, stamp duty concessions, and.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -128,7 +128,7 @@ export default function GiftDeedBloodRelativesPage() {
         name: "Senior-Protected Blood Relative Gift Deed Format India",
         url: canonicalUrl,
         description:
-          "Lawyer-drafted gift deed format for transfers between blood relatives under Sections 122-126 of the Transfer of Property Act, 1882, featuring an enforceable Section 23 Maintenance and Lifetime Residence Revocation clause under the Senior Citizens Act, 2007.",
+          "Lawyer-drafted gift deed format for transfers between blood relatives under Sections 122-126 of the Transfer of Property Act, 1882, featuring.",
         fileFormat: "text/html",
         isAccessibleForFree: true,
         image: imageUrl,

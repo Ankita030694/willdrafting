@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     absolute: "Life Interest Clause in Will Format India | WillDrafting.in", // exactly 59 characters
   },
   description:
-    "Download legally valid life interest clause in will format india under Hindu Succession Act, 1956. Protect spouse lifetime rights and secure children.", // exactly 151 characters
+    "Download legally valid life interest clause in will format india under Hindu Succession Act, 1956. Protect spouse lifetime rights and secure.", // exactly 151 characters
   keywords: [
     "life interest clause in will format india",
     "life estate clause for wife in will india",
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Life Interest Clause in Will Format India | WillDrafting.in",
     description:
-      "Download legally valid life interest clause in will format india under Hindu Succession Act, 1956. Protect spouse lifetime rights and secure children.",
+      "Download legally valid life interest clause in will format india under Hindu Succession Act, 1956. Protect spouse lifetime rights and secure.",
     url: "https://www.willdrafting.in/templates/life-interest-clause-for-spouse-will-format",
     siteName: "WillDrafting.in",
     locale: "en_IN",
@@ -53,7 +53,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Life Interest Clause in Will Format India | WillDrafting.in",
     description:
-      "Download legally valid life interest clause in will format india under Hindu Succession Act, 1956. Protect spouse lifetime rights and secure children.",
+      "Download legally valid life interest clause in will format india under Hindu Succession Act, 1956. Protect spouse lifetime rights and secure.",
     images: ["https://www.willdrafting.in/images/life-interest-clause-for-spouse-will-format-og.jpg"],
   },
   robots: {
@@ -90,7 +90,7 @@ export default function LifeInterestClausePage() {
         url: canonicalUrl,
         name: "Life Interest Clause in Will Format India | WillDrafting.in",
         description:
-          "Download legally valid life interest clause in will format india under Hindu Succession Act, 1956. Protect spouse lifetime rights and secure children.",
+          "Download legally valid life interest clause in will format india under Hindu Succession Act, 1956. Protect spouse lifetime rights and secure.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -128,7 +128,7 @@ export default function LifeInterestClausePage() {
         name: "Supreme Court-Tested Section 14(2) Life Interest Clause Format for Spouse",
         url: canonicalUrl,
         description:
-          "Lawyer-vetted spousal life interest clause templates under Section 14(2) of the Hindu Succession Act, 1956, granting lifetime residential and rental usufruct with vested remainder to children.",
+          "Lawyer-vetted spousal life interest clause templates under Section 14(2) of the Hindu Succession Act, 1956, granting lifetime residential and.",
         image: imageUrl,
         fileFormat: "text/html",
         hasDigitalDocumentPermission: {

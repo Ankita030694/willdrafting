@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     absolute: "Will Drafting in Goa: Portuguese Civil Code Will Guide",
   },
   description:
-    "Draft a valid Will in Goa. Expert guidance on the Goa Civil Code, Comunidade land rules, legitime disposable quota, and Civil Registrar registration.",
+    "Draft a valid Will in Goa. Expert guidance on the Goa Civil Code, Comunidade land rules, legitime disposable quota, and Civil Registrar.",
   keywords: [
     "will drafting in goa",
     "goa civil code will",
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Will Drafting in Goa: Portuguese Civil Code Will Guide",
     description:
-      "Draft a valid Will in Goa. Expert guidance on the Goa Civil Code, Comunidade land rules, legitime disposable quota, and Civil Registrar registration.",
+      "Draft a valid Will in Goa. Expert guidance on the Goa Civil Code, Comunidade land rules, legitime disposable quota, and Civil Registrar.",
     url: "https://www.willdrafting.in/locations/goa",
     siteName: "WillDrafting.in",
     locale: "en_IN",
@@ -66,7 +66,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Will Drafting in Goa: Portuguese Civil Code Will Guide",
     description:
-      "Draft a valid Will in Goa. Expert guidance on the Goa Civil Code, Comunidade land rules, legitime disposable quota, and Civil Registrar registration.",
+      "Draft a valid Will in Goa. Expert guidance on the Goa Civil Code, Comunidade land rules, legitime disposable quota, and Civil Registrar.",
     images: ["https://www.willdrafting.in/images/will-drafting-in-goa-og.jpg"],
   },
   robots: {
@@ -146,7 +146,7 @@ export default function GoaLocationPage() {
         url: canonicalUrl,
         name: "Will Drafting in Goa: Portuguese Civil Code Will Guide",
         description:
-          "Draft a valid Will in Goa. Expert guidance on the Goa Civil Code, Comunidade land rules, legitime disposable quota, and Civil Registrar registration.",
+          "Draft a valid Will in Goa. Expert guidance on the Goa Civil Code, Comunidade land rules, legitime disposable quota, and Civil Registrar.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -193,7 +193,7 @@ export default function GoaLocationPage() {
         "@id": `${canonicalUrl}#legalservice`,
         name: "WillDrafting Goa - Portuguese Civil Code & Estate Succession",
         description:
-          "Professional Will drafting, Portuguese Civil Code consultation, disposable quota allocation, Civil Registrar registration, and doorstep execution across Panaji, Margao, Mapusa, and Vasco da Gama.",
+          "Professional Will drafting, Portuguese Civil Code consultation, disposable quota allocation, Civil Registrar registration, and doorstep.",
         url: canonicalUrl,
         image: imageUrl,
         email: "hello@willdrafting.in",

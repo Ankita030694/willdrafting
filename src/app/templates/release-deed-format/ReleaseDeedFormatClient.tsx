@@ -504,9 +504,9 @@ export default function ReleaseDeedFormatClient() {
                   EXECUTIVE BRIEF: RELINQUISHMENT DEEDS IN INDIA
                 </span>
               </div>
-              <h3 className="text-lg font-bold text-slate-900 mb-3">
+              <div className="text-lg font-bold text-slate-900 mb-3">
                 Key Legal Rules for Relinquishing Inherited Property Shares
-              </h3>
+              </div>
               <ul className="space-y-2 text-sm text-slate-700">
                 <li className="flex items-start gap-2.5">
                   <CheckCircle2 className="w-4 h-4 text-[#5F7E75] shrink-0 mt-0.5" />
@@ -1479,7 +1479,7 @@ export default function ReleaseDeedFormatClient() {
                   Gift Deed vs Will
                 </Link>
                 <Link
-                  href="/service/succession-certificate"
+                  href="/services/succession-certificate"
                   className="text-[11px] px-3 py-1 rounded-lg bg-slate-100 text-[#172228] hover:bg-slate-200 transition-colors"
                 >
                   Succession Certificate Lawyers

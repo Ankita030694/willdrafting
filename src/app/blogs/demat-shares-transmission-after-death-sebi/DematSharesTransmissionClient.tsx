@@ -805,8 +805,8 @@ export default function DematSharesTransmissionClient() {
                   <Image
                     src="/images/demat-shares-transmission-sebi-process.jpg"
                     alt="Transmission of Shares After Death SEBI Demat Account Nominee and Legal Heirs Guide"
-                    fill
-                    className="object-contain"
+                    width={1200} height={675}
+                    className="absolute inset-0 w-full h-full object-contain"
                     priority
                   />
                 </div>
@@ -1115,7 +1115,7 @@ export default function DematSharesTransmissionClient() {
                     Need expert assistance with high-value demat transmission?
                   </div>
                   <Link
-                    href="/service/succession-certificate"
+                    href="/services/succession-certificate"
                     className="inline-flex items-center gap-1.5 font-bold text-[#C65378] hover:underline"
                   >
                     <span>Consult Our Succession Lawyers</span>
@@ -1211,7 +1211,7 @@ export default function DematSharesTransmissionClient() {
                     <ExternalLink className="w-3 h-3" />
                   </a>
                   <a
-                    href="https://nsdl.co.in"
+                    href="https://www.cdslindia.com"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-1.5 text-[11px] px-3 py-1 rounded-lg bg-blue-50 text-blue-900 hover:bg-blue-100"
@@ -1253,7 +1253,7 @@ export default function DematSharesTransmissionClient() {
                 <span className="text-xs font-bold text-[#172228] block mb-2">Related WillDrafting Guides:</span>
                 <div className="flex flex-wrap gap-2">
                   <Link
-                    href="/service/succession-certificate"
+                    href="/services/succession-certificate"
                     className="text-[11px] px-3 py-1 rounded-lg bg-slate-100 text-[#172228] hover:bg-slate-200"
                   >
                     Succession Certificate Lawyers
@@ -1338,7 +1338,7 @@ export default function DematSharesTransmissionClient() {
               </p>
               <div className="pt-1">
                 <Link
-                  href="/service/succession-certificate"
+                  href="/services/succession-certificate"
                   className="w-full inline-flex items-center justify-center gap-2 px-5 py-3 rounded-full bg-[#C65378] text-white text-xs font-bold hover:bg-[#a13c5d] transition-all cursor-pointer"
                 >
                   <span>Consult Succession Lawyers</span>
@@ -1393,7 +1393,7 @@ export default function DematSharesTransmissionClient() {
                 </Link>
 
                 <Link
-                  href="/service/succession-certificate"
+                  href="/services/succession-certificate"
                   className="block p-2.5 rounded-xl border border-[#172228]/5 hover:border-[#C65378]/30 transition-all hover:bg-slate-50"
                 >
                   <div className="font-bold text-xs text-[#172228]">Succession Certificate Lawyers</div>
@@ -1430,7 +1430,7 @@ export default function DematSharesTransmissionClient() {
               <span className="text-xs font-bold text-[#172228] block mb-2">Related WillDrafting Guides:</span>
               <div className="flex flex-wrap gap-2">
                 <Link
-                  href="/service/succession-certificate"
+                  href="/services/succession-certificate"
                   className="text-[11px] px-3 py-1 rounded-lg bg-slate-100 text-[#172228] hover:bg-slate-200 transition-colors"
                 >
                   Succession Certificate Lawyers

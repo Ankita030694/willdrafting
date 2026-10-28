@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     absolute: "Caveat Against Probate Format India | WillDrafting.in", // exactly 53 characters
   },
   description:
-    "Download legally valid caveat against probate format in India under Section 284 Indian Succession Act with Schedule V form and supporting affidavit rules.", // exactly 154 characters
+    "Download legally valid caveat against probate format in India under Section 284 Indian Succession Act with Schedule V form and supporting.", // exactly 154 characters
   keywords: [
     "caveat against probate format india",
     "section 284 indian succession act caveat format",
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Caveat Against Probate Format India | WillDrafting.in",
     description:
-      "Download legally valid caveat against probate format in India under Section 284 Indian Succession Act with Schedule V form and supporting affidavit rules.",
+      "Download legally valid caveat against probate format in India under Section 284 Indian Succession Act with Schedule V form and supporting.",
     url: "https://www.willdrafting.in/templates/caveat-against-probate-format-india",
     siteName: "WillDrafting.in",
     locale: "en_IN",
@@ -53,7 +53,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Caveat Against Probate Format India | WillDrafting.in",
     description:
-      "Download legally valid caveat against probate format in India under Section 284 Indian Succession Act with Schedule V form and supporting affidavit rules.",
+      "Download legally valid caveat against probate format in India under Section 284 Indian Succession Act with Schedule V form and supporting.",
     images: ["https://www.willdrafting.in/images/caveat-against-probate-format-india-og.jpg"],
   },
   robots: {
@@ -90,7 +90,7 @@ export default function CaveatAgainstProbatePage() {
         url: canonicalUrl,
         name: "Caveat Against Probate Format India | WillDrafting.in",
         description:
-          "Download legally valid caveat against probate format in India under Section 284 Indian Succession Act with Schedule V form and supporting affidavit rules.",
+          "Download legally valid caveat against probate format in India under Section 284 Indian Succession Act with Schedule V form and supporting.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -130,7 +130,7 @@ export default function CaveatAgainstProbatePage() {
         url: canonicalUrl,
         fileFormat: "text/html",
         description:
-          "Statutory legal template pack containing Section 284 Indian Succession Act Schedule V probate caveat form, supporting affidavit format, and High Court objection procedure.",
+          "Statutory legal template pack containing Section 284 Indian Succession Act Schedule V probate caveat form, supporting affidavit format, and.",
         image: imageUrl,
         inLanguage: "en-IN",
         publisher: {

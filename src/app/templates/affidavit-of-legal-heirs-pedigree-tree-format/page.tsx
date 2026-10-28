@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     absolute: "Legal Heir Affidavit Format India | WillDrafting.in", // exactly 51 characters
   },
   description:
-    "Download legally valid legal heir affidavit format in India with pedigree family tree, Class I heir shares, notary verification, and revenue rules.", // exactly 147 characters
+    "Download legally valid legal heir affidavit format in India with pedigree family tree, Class I heir shares, notary verification, and revenue.", // exactly 147 characters
   keywords: [
     "legal heir affidavit format india",
     "surviving legal heirs declaration affidavit format",
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Legal Heir Affidavit Format India | WillDrafting.in",
     description:
-      "Download legally valid legal heir affidavit format in India with pedigree family tree, Class I heir shares, notary verification, and revenue rules.",
+      "Download legally valid legal heir affidavit format in India with pedigree family tree, Class I heir shares, notary verification, and revenue.",
     url: "https://www.willdrafting.in/templates/affidavit-of-legal-heirs-pedigree-tree-format",
     siteName: "WillDrafting.in",
     locale: "en_IN",
@@ -53,7 +53,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Legal Heir Affidavit Format India | WillDrafting.in",
     description:
-      "Download legally valid legal heir affidavit format in India with pedigree family tree, Class I heir shares, notary verification, and revenue rules.",
+      "Download legally valid legal heir affidavit format in India with pedigree family tree, Class I heir shares, notary verification, and revenue.",
     images: ["https://www.willdrafting.in/images/affidavit-of-legal-heirs-pedigree-tree-format-og.jpg"],
   },
   robots: {
@@ -90,7 +90,7 @@ export default function AffidavitLegalHeirsPage() {
         url: canonicalUrl,
         name: "Legal Heir Affidavit Format India | WillDrafting.in",
         description:
-          "Download legally valid legal heir affidavit format in India with pedigree family tree, Class I heir shares, notary verification, and revenue rules.",
+          "Download legally valid legal heir affidavit format in India with pedigree family tree, Class I heir shares, notary verification, and revenue.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -128,7 +128,7 @@ export default function AffidavitLegalHeirsPage() {
         name: "Affidavit of Legal Heirs with Pedigree Family Tree (Vamshavali / Pedhinama) Format",
         url: canonicalUrl,
         description:
-          "Lawyer-drafted statutory affidavit format of legal heirs with structured pedigree tree table, predeceased heir branch disclosures, negative declaration, and notary attestation block.",
+          "Lawyer-drafted statutory affidavit format of legal heirs with structured pedigree tree table, predeceased heir branch disclosures, negative.",
         fileFormat: "application/pdf",
         genre: "Legal Heir Declaration Template",
         inLanguage: "en-IN",

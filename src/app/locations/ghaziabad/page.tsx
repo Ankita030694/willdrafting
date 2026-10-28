@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     absolute: "Will Drafting in Ghaziabad: Online Will Services in NCR",
   },
   description:
-    "Secure family property in Ghaziabad. Expert online Will drafting, GDA apartment transfer support, and Sub-Registrar registration guidance across UP NCR.",
+    "Secure family property in Ghaziabad. Expert online Will drafting, GDA apartment transfer support, and Sub-Registrar registration guidance.",
   keywords: [
     "will drafting in ghaziabad",
     "will registration up igrs ghaziabad",
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Will Drafting in Ghaziabad: Online Will Services in NCR",
     description:
-      "Secure family property in Ghaziabad. Expert online Will drafting, GDA apartment transfer support, and Sub-Registrar registration guidance across UP NCR.",
+      "Secure family property in Ghaziabad. Expert online Will drafting, GDA apartment transfer support, and Sub-Registrar registration guidance.",
     url: "https://www.willdrafting.in/locations/ghaziabad",
     siteName: "WillDrafting.in",
     locale: "en_IN",
@@ -64,7 +64,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Will Drafting in Ghaziabad: Online Will Services in NCR",
     description:
-      "Secure family property in Ghaziabad. Expert online Will drafting, GDA apartment transfer support, and Sub-Registrar registration guidance across UP NCR.",
+      "Secure family property in Ghaziabad. Expert online Will drafting, GDA apartment transfer support, and Sub-Registrar registration guidance.",
     images: ["https://www.willdrafting.in/images/will-drafting-in-ghaziabad-og.jpg"],
   },
   robots: {
@@ -144,7 +144,7 @@ export default function GhaziabadLocationPage() {
         url: canonicalUrl,
         name: "Will Drafting in Ghaziabad: Online Will Services in NCR",
         description:
-          "Secure family property in Ghaziabad. Expert online Will drafting, GDA apartment transfer support, and Sub-Registrar registration guidance across UP NCR.",
+          "Secure family property in Ghaziabad. Expert online Will drafting, GDA apartment transfer support, and Sub-Registrar registration guidance.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -191,7 +191,7 @@ export default function GhaziabadLocationPage() {
         "@id": `${canonicalUrl}#legalservice`,
         name: "WillDrafting Ghaziabad - Estate Planning & SRO Registration",
         description:
-          "Professional Will drafting, advocate verification, UP IGRSUP registration, and doorstep execution support across Ghaziabad, Indirapuram, Vaishali, Vasundhara, and Raj Nagar Extension.",
+          "Professional Will drafting, advocate verification, UP IGRSUP registration, and doorstep execution support across Ghaziabad, Indirapuram.",
         url: canonicalUrl,
         image: imageUrl,
         email: "hello@willdrafting.in",

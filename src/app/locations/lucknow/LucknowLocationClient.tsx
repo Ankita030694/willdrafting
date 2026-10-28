@@ -288,9 +288,9 @@ export default function LucknowLocationClient({ faqs }: Props) {
                 <Image
                   src="/images/will-drafting-in-lucknow-og.jpg"
                   alt="Online Will Drafting and Registration Services in Lucknow Uttar Pradesh"
-                  fill
+                  width={1200} height={675}
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 45vw, 500px"
-                  className="object-contain group-hover:scale-105 transition-transform duration-500"
+                  className="absolute inset-0 w-full h-full object-contain group-hover:scale-105 transition-transform duration-500"
                   priority
                 />
               </div>
@@ -1834,7 +1834,7 @@ export default function LucknowLocationClient({ faqs }: Props) {
                   </a>
                   <span>•</span>
                   <a
-                    href="http://upbhulekh.gov.in"
+                    href="https://igrsup.gov.in"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="underline hover:text-[#C65378]"
@@ -1843,7 +1843,7 @@ export default function LucknowLocationClient({ faqs }: Props) {
                   </a>
                   <span>•</span>
                   <a
-                    href="https://ldalucknow.co.in"
+                    href="https://igrsup.gov.in"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="underline hover:text-[#C65378]"
@@ -1852,7 +1852,7 @@ export default function LucknowLocationClient({ faqs }: Props) {
                   </a>
                   <span>•</span>
                   <a
-                    href="http://vaad.up.nic.in"
+                    href="https://igrsup.gov.in"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="underline hover:text-[#C65378]"
@@ -1927,8 +1927,8 @@ export default function LucknowLocationClient({ faqs }: Props) {
               <Image
                 src="/images/will-drafting-in-lucknow-og.jpg"
                 alt="High Resolution Visual Blueprint: Lucknow Will Drafting and Registration"
-                fill
-                className="object-contain"
+                width={1200} height={675}
+                className="absolute inset-0 w-full h-full object-contain"
               />
             </div>
           </div>

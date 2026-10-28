@@ -307,8 +307,8 @@ export default function HyderabadLocationClient({ faqs }: Props) {
                 <Image
                   src="/images/will-drafting-in-hyderabad.jpg"
                   alt="Online Will Drafting & Property Registration in Hyderabad"
-                  fill
-                  className="object-contain group-hover:scale-105 transition-transform duration-500"
+                  width={1200} height={675}
+                  className="absolute inset-0 w-full h-full object-contain group-hover:scale-105 transition-transform duration-500"
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 42vw"
                   priority
                 />
@@ -1663,7 +1663,7 @@ export default function HyderabadLocationClient({ faqs }: Props) {
                 </a>
 
                 <a
-                  href="https://dharani.telangana.gov.in"
+                  href="https://registration.telangana.gov.in"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="p-4 rounded-2xl bg-white border border-slate-200/90 hover:border-[#C65378] transition-all space-y-1 block shadow-xs group"
@@ -1725,8 +1725,8 @@ export default function HyderabadLocationClient({ faqs }: Props) {
               <Image
                 src="/images/will-drafting-in-hyderabad.jpg"
                 alt="High Resolution Visual Blueprint: Hyderabad Will Drafting and SRO Registration"
-                fill
-                className="object-contain"
+                width={1200} height={675}
+                className="absolute inset-0 w-full h-full object-contain"
               />
             </div>
           </div>

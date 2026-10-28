@@ -302,8 +302,8 @@ export default function LakshadweepLocationClient({ faqs }: Props) {
                 <Image
                   src="/images/will-drafting-in-lakshadweep.jpg"
                   alt="Legal Will Drafting and Property Succession in Lakshadweep Islands"
-                  fill
-                  className="object-contain group-hover:scale-102 transition-transform duration-500"
+                  width={1200} height={675}
+                  className="absolute inset-0 w-full h-full object-contain group-hover:scale-102 transition-transform duration-500"
                   priority
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 40vw"
                 />
@@ -1856,7 +1856,7 @@ export default function LakshadweepLocationClient({ faqs }: Props) {
                 <ul className="text-xs text-slate-700 space-y-2">
                   <li>
                     <Link
-                      href="/service/will-registration"
+                      href="/services/will-registration"
                       className="hover:text-[#C65378] flex items-center justify-between"
                     >
                       <span>Done-For-You Will Registration</span>
@@ -1916,8 +1916,8 @@ export default function LakshadweepLocationClient({ faqs }: Props) {
               <Image
                 src="/images/will-drafting-in-lakshadweep-og.jpg"
                 alt="Legal Will Drafting and Property Succession in Lakshadweep Islands"
-                fill
-                className="object-contain"
+                width={1200} height={675}
+                className="absolute inset-0 w-full h-full object-contain"
                 sizes="(max-width: 1200px) 100vw, 1200px"
               />
             </div>

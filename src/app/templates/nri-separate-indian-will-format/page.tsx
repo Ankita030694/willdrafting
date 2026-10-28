@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     absolute: "NRI Will Format for Indian Property | WillDrafting.in", // exactly 53 characters
   },
   description:
-    "Download legally valid NRI will format for Indian property compliant with Indian Succession Act, 1925. Features separate situs and non-conflict clauses.", // exactly 152 characters
+    "Download legally valid NRI will format for Indian property compliant with Indian Succession Act, 1925. Features separate situs and.", // exactly 152 characters
   keywords: [
     "nri will format for indian property",
     "indian will template for nri oci",
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "NRI Will Format for Indian Property | WillDrafting.in",
     description:
-      "Download legally valid NRI will format for Indian property compliant with Indian Succession Act, 1925. Features separate situs and non-conflict clauses.",
+      "Download legally valid NRI will format for Indian property compliant with Indian Succession Act, 1925. Features separate situs and.",
     url: "https://www.willdrafting.in/templates/nri-separate-indian-will-format",
     siteName: "WillDrafting.in",
     locale: "en_IN",
@@ -51,7 +51,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "NRI Will Format for Indian Property | WillDrafting.in",
     description:
-      "Download legally valid NRI will format for Indian property compliant with Indian Succession Act, 1925. Features separate situs and non-conflict clauses.",
+      "Download legally valid NRI will format for Indian property compliant with Indian Succession Act, 1925. Features separate situs and.",
     images: ["https://www.willdrafting.in/images/nri-separate-indian-will-format-og.jpg"],
   },
   robots: {
@@ -88,7 +88,7 @@ export default function NriSeparateIndianWillPage() {
         url: canonicalUrl,
         name: "NRI Will Format for Indian Property | WillDrafting.in",
         description:
-          "Download legally valid NRI will format for Indian property compliant with Indian Succession Act, 1925. Features separate situs and non-conflict clauses.",
+          "Download legally valid NRI will format for Indian property compliant with Indian Succession Act, 1925. Features separate situs and.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -126,7 +126,7 @@ export default function NriSeparateIndianWillPage() {
         name: "NRI Will Format for Indian Property (Separate Indian Situs Will)",
         url: canonicalUrl,
         description:
-          "Lawyer-vetted territory-restricted Indian situs Will template for Non-Resident Indians (NRIs) and Overseas Citizens of India (OCIs) featuring a non-conflict territorial revocation clause.",
+          "Lawyer-vetted territory-restricted Indian situs Will template for Non-Resident Indians (NRIs) and Overseas Citizens of India (OCIs) featuring.",
         image: imageUrl,
         fileFormat: "text/html",
         hasDigitalDocumentPermission: {

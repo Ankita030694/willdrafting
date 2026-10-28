@@ -10,16 +10,18 @@ export const dynamic = "force-dynamic";
 
 // Strict SEO compliance: Title 50–60 chars, Meta Description 140–155 chars, 0 em-dashes
 export const metadata: Metadata = {
-  title: "WillDrafting Sitemap: Complete Legal Directory Index", // exactly 52 characters
+  title: {
+    absolute: "WillDrafting Sitemap: Complete Legal Directory Index",
+  },
   description:
-    "Explore WillDrafting's complete legal directory of online Will drafting services, statutory succession guides, legal templates, and succession tools.", // exactly 149 characters
+    "Explore WillDrafting's complete legal directory of online Will drafting services, statutory succession guides, legal templates, and succession.",
   alternates: {
     canonical: "https://www.willdrafting.in/sitemap",
   },
   openGraph: {
     title: "WillDrafting Sitemap: Complete Legal Directory Index",
     description:
-      "Explore WillDrafting's complete legal directory of online Will drafting services, statutory succession guides, legal templates, and succession tools.",
+      "Explore WillDrafting's complete legal directory of online Will drafting services, statutory succession guides, legal templates, and succession.",
     url: "https://www.willdrafting.in/sitemap",
     siteName: "WillDrafting",
     locale: "en_IN",
@@ -29,7 +31,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "WillDrafting Sitemap: Complete Legal Directory Index",
     description:
-      "Explore WillDrafting's complete legal directory of online Will drafting services, statutory succession guides, legal templates, and succession tools.",
+      "Explore WillDrafting's complete legal directory of online Will drafting services, statutory succession guides, legal templates, and succession.",
   },
   robots: {
     index: true,

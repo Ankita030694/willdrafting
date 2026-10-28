@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     absolute: "Will Drafting in Kanpur: Online Will Registration Guide",
   },
   description:
-    "Secure your family assets in Kanpur. Professional lawyer drafting, UP IGRS registration assistance, and KDA property succession support online in UP.",
+    "Secure your family assets in Kanpur. Professional lawyer drafting, UP IGRS registration assistance, and KDA property succession support online.",
   keywords: [
     "will drafting in kanpur",
     "will registration up igrs kanpur",
@@ -50,7 +50,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Will Drafting in Kanpur: Online Will Registration Guide",
     description:
-      "Secure your family assets in Kanpur. Professional lawyer drafting, UP IGRS registration assistance, and KDA property succession support online in UP.",
+      "Secure your family assets in Kanpur. Professional lawyer drafting, UP IGRS registration assistance, and KDA property succession support online.",
     url: "https://www.willdrafting.in/locations/kanpur",
     siteName: "WillDrafting.in",
     locale: "en_IN",
@@ -68,7 +68,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Will Drafting in Kanpur: Online Will Registration Guide",
     description:
-      "Secure your family assets in Kanpur. Professional lawyer drafting, UP IGRS registration assistance, and KDA property succession support online in UP.",
+      "Secure your family assets in Kanpur. Professional lawyer drafting, UP IGRS registration assistance, and KDA property succession support online.",
     images: ["https://www.willdrafting.in/images/will-drafting-in-kanpur-og.jpg"],
   },
   robots: {
@@ -144,7 +144,7 @@ export default function KanpurLocationPage() {
         url: canonicalUrl,
         name: "Will Drafting in Kanpur: Online Will Registration Guide",
         description:
-          "Secure your family assets in Kanpur. Professional lawyer drafting, UP IGRS registration assistance, and KDA property succession support online in UP.",
+          "Secure your family assets in Kanpur. Professional lawyer drafting, UP IGRS registration assistance, and KDA property succession support online.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",

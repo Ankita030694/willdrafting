@@ -439,9 +439,9 @@ WHY THIS CAUSES PROBLEMS UNDER INDIAN LAW:
                   QUICK SUMMARY: 4 GOLDEN RULES OF SPOUSAL WILLS IN INDIA
                 </span>
               </div>
-              <h3 className="text-lg font-bold text-slate-900 mb-3">
+              <div className="text-lg font-bold text-slate-900 mb-3">
                 Essential Rules Every Indian Couple Should Know
-              </h3>
+              </div>
               <ul className="space-y-2 text-sm text-slate-700">
                 <li className="flex items-start gap-2.5">
                   <CheckCircle2 className="w-4 h-4 text-[#5F7E75] shrink-0 mt-0.5" />
@@ -481,9 +481,9 @@ WHY THIS CAUSES PROBLEMS UNDER INDIAN LAW:
               <div className="relative aspect-video w-full rounded-xl overflow-hidden border border-[#172228]/5 bg-[#172228]/5">
                 <Image
                   src="/images/joint-mutual-mirror-will-format-husband-wife-og.jpg"
-                  alt="Joint and Mirror Will Format for Husband and Wife in India with paired folios and editorial overview"
-                  fill
-                  className="object-cover"
+                  alt="Joint and Mirror Will Format for Husband and Wife in India with paired folios and"
+                  width={1200} height={675}
+                  className="absolute inset-0 w-full h-full object-cover"
                   priority
                 />
               </div>

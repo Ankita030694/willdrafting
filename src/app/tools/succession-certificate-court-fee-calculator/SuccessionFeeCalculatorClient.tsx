@@ -1091,7 +1091,7 @@ export default function SuccessionFeeCalculatorClient() {
                     <span>Need experienced advocates to file for a succession certificate in your local district court?</span>
                   </div>
                   <Link
-                    href="/service/succession-certificate"
+                    href="/services/succession-certificate"
                     className="shrink-0 text-blue-700 hover:text-blue-900 font-bold flex items-center gap-1 hover:underline"
                   >
                     <span>Succession Legal Services</span>
@@ -1320,9 +1320,9 @@ export default function SuccessionFeeCalculatorClient() {
                 <div className="relative w-full aspect-16/9 rounded-xl overflow-hidden bg-slate-50 border border-slate-100">
                   <Image
                     src="/images/succession-certificate-fee-flow-infographic.svg"
-                    alt="Succession Certificate Court Fee Assessment and Issuance SOP Workflow under Indian Succession Act 1925"
-                    fill
-                    className="object-contain hover:scale-[1.01] transition-transform duration-300"
+                    alt="Succession Certificate Court Fee Assessment and Issuance SOP Workflow under Indian"
+                    width={1200} height={675}
+                    className="absolute inset-0 w-full h-full object-contain hover:scale-[1.01] transition-transform duration-300"
                     priority={false}
                   />
                 </div>
@@ -1866,7 +1866,7 @@ export default function SuccessionFeeCalculatorClient() {
                   </div>
                   <div className="flex flex-wrap gap-2">
                     <Link
-                      href="/service/succession-certificate"
+                      href="/services/succession-certificate"
                       className="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-slate-100 text-slate-800 hover:bg-rose-50 hover:text-[#C65378] font-semibold"
                     >
                       <span>Succession Certificate Lawyer Service</span>
@@ -1961,7 +1961,7 @@ export default function SuccessionFeeCalculatorClient() {
                 court appearances across all District Courts.
               </p>
               <Link
-                href="/service/succession-certificate"
+                href="/services/succession-certificate"
                 className="w-full inline-flex items-center justify-center gap-2 py-3 px-4 rounded-full bg-[#C65378] hover:bg-[#a33b5c] text-white font-extrabold text-xs transition-transform hover:-translate-y-0.5 shadow-md"
               >
                 <span>Consult Our Succession Lawyers</span>
@@ -2034,7 +2034,7 @@ export default function SuccessionFeeCalculatorClient() {
               <span className="text-xs font-bold text-[#172228] block mb-2">Related WillDrafting Guides:</span>
               <div className="flex flex-wrap gap-2">
                 <Link
-                  href="/service/succession-certificate"
+                  href="/services/succession-certificate"
                   className="text-[11px] px-3 py-1 rounded-lg bg-slate-100 text-[#172228] hover:bg-slate-200 transition-colors"
                 >
                   Succession Certificate Lawyers

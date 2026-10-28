@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     absolute: "Private Family Trust Registration India | WillDrafting",
   },
   description:
-    "Expert advocate assistance for private family trust registration india under Indian Trusts Act, 1882. High Court lawyer drafting, SRO registration & tax.",
+    "Expert advocate assistance for private family trust registration india under Indian Trusts Act, 1882. High Court lawyer drafting, SRO.",
   authors: [
     {
       name: "Advocate Anuj Anand Malik",
@@ -54,7 +54,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Private Family Trust Registration India | WillDrafting",
     description:
-      "Expert advocate assistance for private family trust registration india under Indian Trusts Act, 1882. High Court lawyer drafting, SRO registration & tax.",
+      "Expert advocate assistance for private family trust registration india under Indian Trusts Act, 1882. High Court lawyer drafting, SRO.",
     url: "https://www.willdrafting.in/services/private-family-trust-formation",
     siteName: "WillDrafting.in",
     locale: "en_IN",
@@ -72,7 +72,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Private Family Trust Registration India | WillDrafting",
     description:
-      "Expert advocate assistance for private family trust registration india under Indian Trusts Act, 1882. High Court lawyer drafting, SRO registration & tax.",
+      "Expert advocate assistance for private family trust registration india under Indian Trusts Act, 1882. High Court lawyer drafting, SRO.",
     images: ["/images/private-family-trust-formation-og.jpg"],
   },
   robots: {
@@ -128,7 +128,7 @@ const TRUST_SCHEMA = {
       url: "https://www.willdrafting.in/services/private-family-trust-formation",
       name: "Private Family Trust Registration India | WillDrafting",
       description:
-        "Expert advocate assistance for private family trust registration india under Indian Trusts Act, 1882. High Court lawyer drafting, SRO registration & tax.",
+        "Expert advocate assistance for private family trust registration india under Indian Trusts Act, 1882. High Court lawyer drafting, SRO.",
       datePublished: "2026-10-27",
       dateModified: "2026-10-27",
       author: {

@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     absolute: "Will Drafting in West Bengal: Probate & Registration Guide",
   },
   description:
-    "Draft your Will in West Bengal. Expert guidance on Calcutta High Court probate mandate, Dayabhaga Hindu law, and e-District West Bengal SRO registration.",
+    "Draft your Will in West Bengal. Expert guidance on Calcutta High Court probate mandate, Dayabhaga Hindu law, and e-District West Bengal SRO.",
   keywords: [
     "will drafting in west bengal",
     "calcutta high court probate will",
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Will Drafting in West Bengal: Probate & Registration Guide",
     description:
-      "Draft your Will in West Bengal. Expert guidance on Calcutta High Court probate mandate, Dayabhaga Hindu law, and e-District West Bengal SRO registration.",
+      "Draft your Will in West Bengal. Expert guidance on Calcutta High Court probate mandate, Dayabhaga Hindu law, and e-District West Bengal SRO.",
     url: "https://www.willdrafting.in/locations/west-bengal",
     siteName: "WillDrafting.in",
     locale: "en_IN",
@@ -64,7 +64,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Will Drafting in West Bengal: Probate & Registration Guide",
     description:
-      "Draft your Will in West Bengal. Expert guidance on Calcutta High Court probate mandate, Dayabhaga Hindu law, and e-District West Bengal SRO registration.",
+      "Draft your Will in West Bengal. Expert guidance on Calcutta High Court probate mandate, Dayabhaga Hindu law, and e-District West Bengal SRO.",
     images: ["https://www.willdrafting.in/images/will-drafting-in-west-bengal-og.jpg"],
   },
   robots: {
@@ -152,7 +152,7 @@ export default function WestBengalLocationPage() {
         url: canonicalUrl,
         name: "Will Drafting in West Bengal: Probate & Registration Guide",
         description:
-          "Draft your Will in West Bengal. Expert guidance on Calcutta High Court probate mandate, Dayabhaga Hindu law, and e-District West Bengal SRO registration.",
+          "Draft your Will in West Bengal. Expert guidance on Calcutta High Court probate mandate, Dayabhaga Hindu law, and e-District West Bengal SRO.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -199,7 +199,7 @@ export default function WestBengalLocationPage() {
         "@id": `${canonicalUrl}#legalservice`,
         name: "WillDrafting West Bengal - Estate Planning, Probate & SRO Registration Desk",
         description:
-          "Professional Will drafting, advocate verification, Calcutta High Court probate guidance, wbregistration.gov.in e-District appointments, and Section 31 doorstep execution across Kolkata, Howrah, Asansol, Siliguri, and all 23 West Bengal districts.",
+          "Professional Will drafting, advocate verification, Calcutta High Court probate guidance, wbregistration.gov.in e-District appointments, and.",
         url: canonicalUrl,
         image: imageUrl,
         email: "hello@willdrafting.in",

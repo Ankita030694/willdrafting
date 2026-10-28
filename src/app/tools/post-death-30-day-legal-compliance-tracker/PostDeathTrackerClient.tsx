@@ -965,9 +965,9 @@ PHASE 4: REVENUE MUTATION, TAXES & CLOSURE (DAYS 91 TO 365)
                 <Image
                   src="/images/post-death-30-day-legal-compliance-tracker.jpg"
                   alt="Post-Death 30-Day Legal Compliance Tracker India Checklist"
-                  fill
+                  width={1200} height={675}
                   priority
-                  className="object-cover"
+                  className="absolute inset-0 w-full h-full object-cover"
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 75vw, 65vw"
                 />
               </div>

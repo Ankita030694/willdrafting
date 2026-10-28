@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     absolute: "Will Drafting in Meerut: Online Will Registration Guide",
   },
   description:
-    "Draft a legally compliant Will in Meerut. Professional lawyer drafting, UP IGRS registration help, and MDA residential property transfer advice in UP.",
+    "Draft a legally compliant Will in Meerut. Professional lawyer drafting, UP IGRS registration help, and MDA residential property transfer.",
   keywords: [
     "will drafting in meerut",
     "will drafting services in meerut",
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Will Drafting in Meerut: Online Will Registration Guide",
     description:
-      "Draft a legally compliant Will in Meerut. Professional lawyer drafting, UP IGRS registration help, and MDA residential property transfer advice in UP.",
+      "Draft a legally compliant Will in Meerut. Professional lawyer drafting, UP IGRS registration help, and MDA residential property transfer.",
     url: "https://www.willdrafting.in/locations/meerut",
     siteName: "WillDrafting.in",
     locale: "en_IN",
@@ -62,7 +62,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Will Drafting in Meerut: Online Will Registration Guide",
     description:
-      "Draft a legally compliant Will in Meerut. Professional lawyer drafting, UP IGRS registration help, and MDA residential property transfer advice in UP.",
+      "Draft a legally compliant Will in Meerut. Professional lawyer drafting, UP IGRS registration help, and MDA residential property transfer.",
     images: ["https://www.willdrafting.in/images/will-drafting-in-meerut-og.jpg"],
   },
   robots: {
@@ -142,7 +142,7 @@ export default function MeerutLocationPage() {
         url: canonicalUrl,
         name: "Will Drafting in Meerut: Online Will Registration Guide",
         description:
-          "Draft a legally compliant Will in Meerut. Professional lawyer drafting, UP IGRS registration help, and MDA residential property transfer advice in UP.",
+          "Draft a legally compliant Will in Meerut. Professional lawyer drafting, UP IGRS registration help, and MDA residential property transfer.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -189,7 +189,7 @@ export default function MeerutLocationPage() {
         "@id": `${canonicalUrl}#legalservice`,
         name: "WillDrafting Meerut - Estate Planning & SRO Registration",
         description:
-          "Professional Will drafting, advocate verification, UP IGRSUP e-Challan appointment booking, and doorstep execution support across Meerut, Shastri Nagar, Saket, Ganga Nagar, and Cantt.",
+          "Professional Will drafting, advocate verification, UP IGRSUP e-Challan appointment booking, and doorstep execution support across Meerut.",
         url: canonicalUrl,
         image: imageUrl,
         email: "hello@willdrafting.in",

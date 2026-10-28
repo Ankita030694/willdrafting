@@ -298,8 +298,8 @@ export default function DnhDdLocationClient({ faqs }: Props) {
                 <Image
                   src="/images/will-drafting-in-dadra-and-nagar-haveli-and-daman-and-diu.jpg"
                   alt="Legal Will Drafting and Property Succession in Dadra and Nagar Haveli and Daman and Diu"
-                  fill
-                  className="object-contain group-hover:scale-102 transition-transform duration-500"
+                  width={1200} height={675}
+                  className="absolute inset-0 w-full h-full object-contain group-hover:scale-102 transition-transform duration-500"
                   priority
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 40vw"
                 />
@@ -770,7 +770,7 @@ export default function DnhDdLocationClient({ faqs }: Props) {
 
                 <div className="flex flex-wrap items-center gap-3 pt-2">
                   <Link
-                    href="/service/probate-lawyer"
+                    href="/services/probate-lawyer"
                     className="inline-flex items-center gap-1.5 text-xs font-bold text-[#C65378] hover:text-[#a13c5d] underline underline-offset-2"
                   >
                     <span>Read our National Probate Guide</span>
@@ -1785,7 +1785,7 @@ export default function DnhDdLocationClient({ faqs }: Props) {
                   </div>
 
                   <a
-                    href="/service/will-registration"
+                    href="/services/will-registration"
                     className="w-full py-3 rounded-2xl bg-slate-900 text-white font-bold text-xs sm:text-sm hover:bg-slate-800 transition-colors text-center cursor-pointer"
                   >
                     Select Full SRO Support
@@ -1949,8 +1949,8 @@ export default function DnhDdLocationClient({ faqs }: Props) {
               <Image
                 src="/images/will-drafting-in-dadra-and-nagar-haveli-and-daman-and-diu.jpg"
                 alt="Legal Will Drafting and Property Succession in Dadra and Nagar Haveli and Daman and Diu"
-                fill
-                className="object-contain"
+                width={1200} height={675}
+                className="absolute inset-0 w-full h-full object-contain"
                 priority
               />
             </div>

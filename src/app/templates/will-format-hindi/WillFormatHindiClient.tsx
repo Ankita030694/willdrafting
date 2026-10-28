@@ -1258,7 +1258,7 @@ export default function WillFormatHindiClient() {
                     उत्तराधिकार हिस्सा कैलकुलेटर &rarr;
                   </Link>
                   <Link
-                    href="/service/nri-will-india"
+                    href="/services/nri-will-india"
                     className="text-[13px] px-3 py-1.5 rounded-lg bg-white border border-slate-200 hover:border-[#C65378] hover:text-[#C65378] transition-colors"
                   >
                     NRI के लिए भारतीय वसीयत &rarr;
@@ -1411,7 +1411,7 @@ export default function WillFormatHindiClient() {
                   English Will Format
                 </Link>
                 <Link
-                  href="/service/will-registration"
+                  href="/services/will-registration"
                   className="text-[11px] px-3 py-1 rounded-lg bg-slate-100 text-[#172228] hover:bg-slate-200 transition-colors"
                 >
                   वसीयत पंजीकरण सेवा

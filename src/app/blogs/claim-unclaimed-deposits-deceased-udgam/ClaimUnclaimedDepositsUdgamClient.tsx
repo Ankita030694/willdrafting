@@ -424,9 +424,9 @@ export default function ClaimUnclaimedDepositsUdgamClient() {
                   EXECUTIVE SUMMARY: 5 GOLDEN RULES FOR UNCLAIMED DEPOSITS
                 </span>
               </div>
-              <h3 className="text-lg font-bold text-slate-900 mb-3">
+              <div className="text-lg font-bold text-slate-900 mb-3">
                 Quick Facts About Claiming Deceased Bank Balances in India
-              </h3>
+              </div>
               <ul className="space-y-2 text-sm text-slate-700">
                 <li className="flex items-start gap-2.5">
                   <CheckCircle2 className="w-4 h-4 text-[#5F7E75] shrink-0 mt-0.5" />
@@ -466,9 +466,9 @@ export default function ClaimUnclaimedDepositsUdgamClient() {
               <div className="relative w-full aspect-[16/9] rounded-xl overflow-hidden border border-[#172228]/10 bg-[#FAF7F0] shadow-inner">
                 <Image
                   src="/images/claim-unclaimed-deposits-deceased-udgam.jpg"
-                  alt="Claim Unclaimed Deposits of Deceased Person on RBI UDGAM Portal with Death Certificate and Legal Heir Forms"
-                  fill
-                  className="object-contain"
+                  alt="Claim Unclaimed Deposits of Deceased Person on RBI UDGAM Portal with Death Certificate"
+                  width={1200} height={675}
+                  className="absolute inset-0 w-full h-full object-contain"
                   priority
                 />
               </div>
@@ -772,7 +772,7 @@ export default function ClaimUnclaimedDepositsUdgamClient() {
                   <div className="p-3 bg-rose-50 rounded-xl text-xs text-[#C65378] flex items-center justify-between">
                     <span>Need help applying for a Succession Certificate in court?</span>
                     <Link
-                      href="/service/succession-certificate"
+                      href="/services/succession-certificate"
                       className="font-bold underline hover:text-[#a13c5d] inline-flex items-center gap-1"
                     >
                       <span>Succession Lawyers</span>
@@ -1125,7 +1125,7 @@ export default function ClaimUnclaimedDepositsUdgamClient() {
                     Legal Heir vs Succession Certificate &rarr;
                   </Link>
                   <Link
-                    href="/service/succession-certificate"
+                    href="/services/succession-certificate"
                     className="text-xs px-3 py-1.5 rounded-lg bg-white border border-slate-200 hover:border-[#C65378] hover:text-[#C65378] transition-colors"
                   >
                     Succession Certificate Legal Service &rarr;
@@ -1319,7 +1319,7 @@ export default function ClaimUnclaimedDepositsUdgamClient() {
                   </div>
                 </Link>
                 <Link
-                  href="/service/succession-certificate"
+                  href="/services/succession-certificate"
                   className="block p-2.5 rounded-xl border border-slate-100 hover:border-rose-200 hover:bg-rose-50/30 transition-colors"
                 >
                   <div className="font-bold text-xs text-slate-900">Court Succession Certificate</div>
@@ -1360,7 +1360,7 @@ export default function ClaimUnclaimedDepositsUdgamClient() {
                   Legal Heir vs Succession Certificate
                 </Link>
                 <Link
-                  href="/service/succession-certificate"
+                  href="/services/succession-certificate"
                   className="text-[11px] px-3 py-1 rounded-lg bg-slate-100 text-[#172228] hover:bg-slate-200 transition-colors"
                 >
                   Succession Certificate Lawyers

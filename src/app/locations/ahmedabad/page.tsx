@@ -195,7 +195,7 @@ export default function AhmedabadLocationPage() {
         "@id": `${canonicalUrl}#legalservice`,
         name: "WillDrafting Ahmedabad - Estate Planning, HUF & SRO Registration",
         description:
-          "Professional Will drafting, HUF estate structuring, and Sub-Registrar Office e-registration support across Ahmedabad and Gandhinagar revenue circles.",
+          "Professional Will drafting, HUF estate structuring, and Sub-Registrar Office e-registration support across Ahmedabad and Gandhinagar revenue.",
         url: canonicalUrl,
         image: imageUrl,
         telephone: "+91-8700343611",

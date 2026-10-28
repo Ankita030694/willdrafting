@@ -418,9 +418,9 @@ Contact Address: [Complete Address]`;
                 <Image
                   src="/images/revocation-of-will-deed-format-india-og.jpg"
                   alt="Deed of Revocation of Will Format India Legal Cancellation Template and SRO Guidelines"
-                  fill
+                  width={1200} height={675}
                   priority
-                  className="object-cover transition-transform duration-500 hover:scale-105"
+                  className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 hover:scale-105"
                   sizes="(max-width: 1024px) 100vw, 850px"
                 />
               </div>

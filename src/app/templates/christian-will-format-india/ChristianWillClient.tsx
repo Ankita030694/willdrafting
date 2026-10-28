@@ -512,8 +512,8 @@ Each of us hereby affirms that we are competent adults, of sound mind, and that 
                 <Image
                   src="/images/christian-will-format-india-og.jpg"
                   alt="Christian Will Format in India Legal Testament Guide and Indian Succession Act Template"
-                  fill
-                  className="object-cover"
+                  width={1200} height={675}
+                  className="absolute inset-0 w-full h-full object-cover"
                   sizes="(max-width: 1200px) 100vw, 1200px"
                 />
               </div>

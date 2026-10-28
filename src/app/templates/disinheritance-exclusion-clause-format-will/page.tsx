@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     absolute: "How to Write Disinheritance Clause in Will | WillDrafting", // exactly 57 characters
   },
   description:
-    "Download valid disinheritance clause in will India format. Exclude heirs safely under Indian Succession Act with 5 tested sample clauses and legal rules.", // exactly 153 characters
+    "Download valid disinheritance clause in will India format. Exclude heirs safely under Indian Succession Act with 5 tested sample clauses and.", // exactly 153 characters
   keywords: [
     "how to write disinheritance clause in will india",
     "clause to exclude son or daughter from will format",
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "How to Write Disinheritance Clause in Will | WillDrafting",
     description:
-      "Download valid disinheritance clause in will India format. Exclude heirs safely under Indian Succession Act with 5 tested sample clauses and legal rules.",
+      "Download valid disinheritance clause in will India format. Exclude heirs safely under Indian Succession Act with 5 tested sample clauses and.",
     url: "https://www.willdrafting.in/templates/disinheritance-exclusion-clause-format-will",
     siteName: "WillDrafting.in",
     locale: "en_IN",
@@ -53,7 +53,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "How to Write Disinheritance Clause in Will | WillDrafting",
     description:
-      "Download valid disinheritance clause in will India format. Exclude heirs safely under Indian Succession Act with 5 tested sample clauses and legal rules.",
+      "Download valid disinheritance clause in will India format. Exclude heirs safely under Indian Succession Act with 5 tested sample clauses and.",
     images: ["https://www.willdrafting.in/images/disinheritance-exclusion-clause-format-will-og.jpg"],
   },
   robots: {
@@ -92,7 +92,7 @@ export default function DisinheritanceClausePage() {
         url: canonicalUrl,
         name: "How to Write Disinheritance Clause in Will | WillDrafting",
         description:
-          "Download valid disinheritance clause in will India format. Exclude heirs safely under Indian Succession Act with 5 tested sample clauses and legal rules.",
+          "Download valid disinheritance clause in will India format. Exclude heirs safely under Indian Succession Act with 5 tested sample clauses and.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -130,7 +130,7 @@ export default function DisinheritanceClausePage() {
         name: "Disinheritance and Exclusion Clause Format in Will India",
         url: canonicalUrl,
         description:
-          "Lawyer-vetted legal exclusion clause templates for Indian Wills complying with Section 59 and 61 of the Indian Succession Act, 1925, and Supreme Court precedent guardrails.",
+          "Lawyer-vetted legal exclusion clause templates for Indian Wills complying with Section 59 and 61 of the Indian Succession Act, 1925, and.",
         image: imageUrl,
         fileFormat: "text/html",
         hasDigitalDocumentPermission: {

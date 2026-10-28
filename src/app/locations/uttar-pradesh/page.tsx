@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     absolute: "Will Drafting in Uttar Pradesh: Online Will Registration",
   },
   description:
-    "Draft a valid Will in Uttar Pradesh. Complete IGRSUP registration support, Section 108 UP Revenue Code agricultural succession, and lawyer drafting.",
+    "Draft a valid Will in Uttar Pradesh. Complete IGRSUP registration support, Section 108 UP Revenue Code agricultural succession, and lawyer.",
   keywords: [
     "will drafting in uttar pradesh",
     "will registration up igrs",
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Will Drafting in Uttar Pradesh: Online Will Registration",
     description:
-      "Draft a valid Will in Uttar Pradesh. Complete IGRSUP registration support, Section 108 UP Revenue Code agricultural succession, and lawyer drafting.",
+      "Draft a valid Will in Uttar Pradesh. Complete IGRSUP registration support, Section 108 UP Revenue Code agricultural succession, and lawyer.",
     url: "https://www.willdrafting.in/locations/uttar-pradesh",
     siteName: "WillDrafting.in",
     locale: "en_IN",
@@ -65,7 +65,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Will Drafting in Uttar Pradesh: Online Will Registration",
     description:
-      "Draft a valid Will in Uttar Pradesh. Complete IGRSUP registration support, Section 108 UP Revenue Code agricultural succession, and lawyer drafting.",
+      "Draft a valid Will in Uttar Pradesh. Complete IGRSUP registration support, Section 108 UP Revenue Code agricultural succession, and lawyer.",
     images: ["https://www.willdrafting.in/images/will-drafting-in-uttar-pradesh.jpg"],
   },
   robots: {
@@ -145,7 +145,7 @@ export default function UttarPradeshLocationPage() {
         url: canonicalUrl,
         name: "Will Drafting in Uttar Pradesh: Online Will Registration",
         description:
-          "Draft a valid Will in Uttar Pradesh. Complete IGRSUP registration support, Section 108 UP Revenue Code agricultural succession, and lawyer drafting.",
+          "Draft a valid Will in Uttar Pradesh. Complete IGRSUP registration support, Section 108 UP Revenue Code agricultural succession, and lawyer.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -192,7 +192,7 @@ export default function UttarPradeshLocationPage() {
         "@id": `${canonicalUrl}#legalservice`,
         name: "WillDrafting Uttar Pradesh - Legal Estate Planning & IGRSUP Registration",
         description:
-          "Professional Will drafting, advocate verification, IGRSUP online registration, Section 108 UP Revenue Code agricultural succession, and Section 31 doorstep execution support across all 75 Uttar Pradesh districts.",
+          "Professional Will drafting, advocate verification, IGRSUP online registration, Section 108 UP Revenue Code agricultural succession, and.",
         url: canonicalUrl,
         image: imageUrl,
         telephone: "+91-8700343611",

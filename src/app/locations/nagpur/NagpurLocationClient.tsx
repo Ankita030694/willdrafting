@@ -294,8 +294,8 @@ export default function NagpurLocationClient({ faqs }: Props) {
                 <Image
                   src="/images/will-drafting-in-nagpur.jpg"
                   alt="Online Will Drafting and Registration Services in Nagpur"
-                  fill
-                  className="object-contain group-hover:scale-105 transition-transform duration-500"
+                  width={1200} height={675}
+                  className="absolute inset-0 w-full h-full object-contain group-hover:scale-105 transition-transform duration-500"
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 42vw"
                   priority
                 />
@@ -1390,7 +1390,7 @@ export default function NagpurLocationClient({ faqs }: Props) {
                     Need home registration for an elderly parent in Dharampeth, Ramdaspeth, or Wardha Road?
                   </div>
                   <a
-                    href="/service/will-registration"
+                    href="/services/will-registration"
                     className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-[#C65378] text-white text-xs font-bold hover:bg-[#a13c5d] transition-all shrink-0 cursor-pointer"
                   >
                     <span>Request SRO Home Visit</span>
@@ -1723,7 +1723,7 @@ export default function NagpurLocationClient({ faqs }: Props) {
                   </div>
 
                   <a
-                    href="/service/will-registration"
+                    href="/services/will-registration"
                     className="w-full py-3 px-4 rounded-xl border border-slate-300 text-slate-800 text-xs font-bold hover:bg-slate-50 transition-all text-center cursor-pointer"
                   >
                     Book SRO Registration
@@ -1858,8 +1858,8 @@ export default function NagpurLocationClient({ faqs }: Props) {
               <Image
                 src="/images/will-drafting-in-nagpur.jpg"
                 alt="High Resolution Visual Blueprint: Nagpur Will Drafting and SRO Registration"
-                fill
-                className="object-contain"
+                width={1200} height={675}
+                className="absolute inset-0 w-full h-full object-contain"
                 sizes="(max-width: 1200px) 95vw, 1000px"
               />
             </div>

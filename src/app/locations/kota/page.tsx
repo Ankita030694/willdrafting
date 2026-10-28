@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     absolute: "Will Drafting in Kota: Online Will Registration Support",
   },
   description:
-    "Draft a legally compliant Will in Kota. Complete guidance on KDA property transfer, ePanjiyan registration, and educational enterprise succession in RJ.",
+    "Draft a legally compliant Will in Kota. Complete guidance on KDA property transfer, ePanjiyan registration, and educational enterprise.",
   keywords: [
     "will drafting in kota",
     "will registration rajasthan epanjiyan kota",
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Will Drafting in Kota: Online Will Registration Support",
     description:
-      "Draft a legally compliant Will in Kota. Complete guidance on KDA property transfer, ePanjiyan registration, and educational enterprise succession in RJ.",
+      "Draft a legally compliant Will in Kota. Complete guidance on KDA property transfer, ePanjiyan registration, and educational enterprise.",
     url: "https://www.willdrafting.in/locations/kota",
     siteName: "WillDrafting.in",
     locale: "en_IN",
@@ -64,7 +64,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Will Drafting in Kota: Online Will Registration Support",
     description:
-      "Draft a legally compliant Will in Kota. Complete guidance on KDA property transfer, ePanjiyan registration, and educational enterprise succession in RJ.",
+      "Draft a legally compliant Will in Kota. Complete guidance on KDA property transfer, ePanjiyan registration, and educational enterprise.",
     images: ["https://www.willdrafting.in/images/will-drafting-in-kota-og.jpg"],
   },
   robots: {
@@ -144,7 +144,7 @@ export default function KotaLocationPage() {
         url: canonicalUrl,
         name: "Will Drafting in Kota: Online Will Registration Support",
         description:
-          "Draft a legally compliant Will in Kota. Complete guidance on KDA property transfer, ePanjiyan registration, and educational enterprise succession in RJ.",
+          "Draft a legally compliant Will in Kota. Complete guidance on KDA property transfer, ePanjiyan registration, and educational enterprise.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -191,7 +191,7 @@ export default function KotaLocationPage() {
         "@id": `${canonicalUrl}#legalservice`,
         name: "WillDrafting Kota - Estate Planning & SRO Registration",
         description:
-          "Professional Will drafting, advocate verification, ePanjiyan Rajasthan registration support, and doorstep execution across Kota, Talwandi, Mahaveer Nagar, Landmark City, and Dadabari.",
+          "Professional Will drafting, advocate verification, ePanjiyan Rajasthan registration support, and doorstep execution across Kota, Talwandi.",
         url: canonicalUrl,
         image: imageUrl,
         email: "hello@willdrafting.in",

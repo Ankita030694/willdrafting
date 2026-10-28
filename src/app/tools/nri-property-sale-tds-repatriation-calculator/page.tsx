@@ -130,7 +130,7 @@ export default function NriPropertySaleTdsCalculatorPage() {
         applicationCategory: "TaxApplication",
         operatingSystem: "All",
         description:
-          "Interactive statutory micro-tool for NRI property sales in India. Computes Section 195 gross TDS deduction, Form 13 lower deduction certificate savings, cash-flow blockage relief, and FEMA USD 1 Million NRO outward repatriation under Form 15CA/15CB.",
+          "Interactive statutory micro-tool for NRI property sales in India. Computes Section 195 gross TDS deduction, Form 13 lower deduction.",
         image: imageUrl,
         offers: {
           "@type": "Offer",

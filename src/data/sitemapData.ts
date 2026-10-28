@@ -1435,14 +1435,6 @@ export const staticPages: SitemapPageItem[] = [
     priority: 1.0,
   },
   {
-    title: "Property Mutation & Dakhil Kharij Service India | WillDrafting",
-    href: "/services/property-mutation-dakhil-kharij-service",
-    category: "Services",
-    date: "27-10-2026",
-    changefreq: "weekly",
-    priority: 1.0,
-  },
-  {
     title: "Will Registration Service India: SRO Process & Home Visits",
     href: "/services/will-registration",
     category: "Services",
@@ -1534,7 +1526,7 @@ export const staticPages: SitemapPageItem[] = [
   },
   {
     title: "About WillDrafting: Succession Advocates & Legal Heritage",
-    href: "/aboutus",
+    href: "/about-us",
     category: "Company",
     date: "15-10-2026",
     changefreq: "monthly",

@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     absolute: "Executor of Will Checklist India | WillDrafting.in", // exactly 51 characters
   },
   description:
-    "Free executor of will checklist India tool. Track 90-day executor duties, probate rules under Indian Succession Act, asset freezing, and Section 159 ITR.", // exactly 153 characters
+    "Free executor of will checklist India tool. Track 90-day executor duties, probate rules under Indian Succession Act, asset freezing, and.", // exactly 153 characters
   keywords: [
     "executor of will checklist india",
     "what to do after been named executor of will",
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Executor of Will Checklist India | WillDrafting.in",
     description:
-      "Free executor of will checklist India tool. Track 90-day executor duties, probate rules under Indian Succession Act, asset freezing, and Section 159 ITR.",
+      "Free executor of will checklist India tool. Track 90-day executor duties, probate rules under Indian Succession Act, asset freezing, and.",
     url: "https://www.willdrafting.in/tools/executor-duties-90-day-timeline-generator",
     siteName: "WillDrafting.in",
     locale: "en_IN",
@@ -53,7 +53,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Executor of Will Checklist India | WillDrafting.in",
     description:
-      "Free executor of will checklist India tool. Track 90-day executor duties, probate rules under Indian Succession Act, asset freezing, and Section 159 ITR.",
+      "Free executor of will checklist India tool. Track 90-day executor duties, probate rules under Indian Succession Act, asset freezing, and.",
     images: ["https://www.willdrafting.in/images/executor-duties-90-day-timeline-generator-og.jpg"],
   },
   robots: {
@@ -90,7 +90,7 @@ export default function ExecutorDutiesTimelinePage() {
         url: canonicalUrl,
         name: "Executor of Will Checklist India | WillDrafting.in",
         description:
-          "Free executor of will checklist India tool. Track 90-day executor duties, probate rules under Indian Succession Act, asset freezing, and Section 159 ITR.",
+          "Free executor of will checklist India tool. Track 90-day executor duties, probate rules under Indian Succession Act, asset freezing, and.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -130,7 +130,7 @@ export default function ExecutorDutiesTimelinePage() {
         applicationCategory: "LegalApplication",
         operatingSystem: "All",
         description:
-          "Personalized 90-day and 180-day Indian executor roadmap generating statutory deadlines under Indian Succession Act, 1925 (Sections 316-369) and Section 159 Income Tax Act for funeral priority, asset freezing, probate, inventory, and transmission.",
+          "Personalized 90-day and 180-day Indian executor roadmap generating statutory deadlines under Indian Succession Act, 1925 (Sections 316-369).",
         image: imageUrl,
         offers: {
           "@type": "Offer",

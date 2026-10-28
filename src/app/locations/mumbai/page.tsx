@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     absolute: "Will Drafting in Mumbai: Registration & Probate Law Guide",
   },
   description:
-    "Draft and register your Will in Mumbai. Expert Bombay High Court probate guidance, asset distribution, and lawyer consultation across Mumbai and MMR.",
+    "Draft and register your Will in Mumbai. Expert Bombay High Court probate guidance, asset distribution, and lawyer consultation across Mumbai.",
   keywords: [
     "will drafting in mumbai",
     "will drafting in borivali",
@@ -52,7 +52,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Will Drafting in Mumbai: Registration & Probate Law Guide",
     description:
-      "Draft and register your Will in Mumbai. Expert Bombay High Court probate guidance, asset distribution, and lawyer consultation across Mumbai and MMR.",
+      "Draft and register your Will in Mumbai. Expert Bombay High Court probate guidance, asset distribution, and lawyer consultation across Mumbai.",
     url: "https://www.willdrafting.in/locations/mumbai",
     siteName: "WillDrafting.in",
     locale: "en_IN",
@@ -70,7 +70,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Will Drafting in Mumbai: Registration & Probate Law Guide",
     description:
-      "Draft and register your Will in Mumbai. Expert Bombay High Court probate guidance, asset distribution, and lawyer consultation across Mumbai and MMR.",
+      "Draft and register your Will in Mumbai. Expert Bombay High Court probate guidance, asset distribution, and lawyer consultation across Mumbai.",
     images: ["https://www.willdrafting.in/images/will-drafting-in-mumbai.jpg"],
   },
   robots: {
@@ -142,7 +142,7 @@ export default function MumbaiLocationPage() {
         url: canonicalUrl,
         name: "Will Drafting in Mumbai: Registration & Probate Law Guide",
         description:
-          "Draft and register your Will in Mumbai. Expert Bombay High Court probate guidance, asset distribution, and lawyer consultation across Mumbai and MMR.",
+          "Draft and register your Will in Mumbai. Expert Bombay High Court probate guidance, asset distribution, and lawyer consultation across Mumbai.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -189,7 +189,7 @@ export default function MumbaiLocationPage() {
         "@id": `${canonicalUrl}#legalservice`,
         name: "WillDrafting Mumbai - Estate Planning, Registration & Probate Guidance",
         description:
-          "Professional Will drafting, lawyer verification, Maharashtra IGR Sub-Registrar registration, and Bombay High Court probate guidance across Mumbai and MMR.",
+          "Professional Will drafting, lawyer verification, Maharashtra IGR Sub-Registrar registration, and Bombay High Court probate guidance across.",
         url: canonicalUrl,
         image: imageUrl,
         telephone: "+91-8700343611",

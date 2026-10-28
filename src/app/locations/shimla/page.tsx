@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     absolute: "Will Drafting in Shimla: Online Will & Property Guide",
   },
   description:
-    "Draft a valid Will in Shimla. Complete guidance on Section 118 HP Tenancy Act, apple orchard succession, Shimla MC mutation, and SRO registration online.",
+    "Draft a valid Will in Shimla. Complete guidance on Section 118 HP Tenancy Act, apple orchard succession, Shimla MC mutation, and SRO.",
   keywords: [
     "will drafting in shimla",
     "will registration shimla sro",
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Will Drafting in Shimla: Online Will & Property Guide",
     description:
-      "Draft a valid Will in Shimla. Complete guidance on Section 118 HP Tenancy Act, apple orchard succession, Shimla MC mutation, and SRO registration online.",
+      "Draft a valid Will in Shimla. Complete guidance on Section 118 HP Tenancy Act, apple orchard succession, Shimla MC mutation, and SRO.",
     url: "https://www.willdrafting.in/locations/shimla",
     siteName: "WillDrafting.in",
     locale: "en_IN",
@@ -60,7 +60,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Will Drafting in Shimla: Online Will & Property Guide",
     description:
-      "Draft a valid Will in Shimla. Complete guidance on Section 118 HP Tenancy Act, apple orchard succession, Shimla MC mutation, and SRO registration online.",
+      "Draft a valid Will in Shimla. Complete guidance on Section 118 HP Tenancy Act, apple orchard succession, Shimla MC mutation, and SRO.",
     images: ["https://www.willdrafting.in/images/will-drafting-in-shimla-og.jpg"],
   },
   robots: {
@@ -140,7 +140,7 @@ export default function ShimlaLocationPage() {
         url: canonicalUrl,
         name: "Will Drafting in Shimla: Online Will & Property Guide",
         description:
-          "Draft a valid Will in Shimla. Complete guidance on Section 118 HP Tenancy Act, apple orchard succession, Shimla MC mutation, and SRO registration online.",
+          "Draft a valid Will in Shimla. Complete guidance on Section 118 HP Tenancy Act, apple orchard succession, Shimla MC mutation, and SRO.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -187,7 +187,7 @@ export default function ShimlaLocationPage() {
         "@id": `${canonicalUrl}#legalservice`,
         name: "WillDrafting Shimla - Estate Planning & SRO Registration",
         description:
-          "Professional Will drafting, advocate verification, Section 118 HP Tenancy Act compliance, e-Himsugam registration, and doorstep execution support across Shimla, Theog, Rohru, and Kotkhai.",
+          "Professional Will drafting, advocate verification, Section 118 HP Tenancy Act compliance, e-Himsugam registration, and doorstep execution.",
         url: canonicalUrl,
         image: imageUrl,
         email: "hello@willdrafting.in",

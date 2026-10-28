@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     absolute: "Will Drafting in Odisha: Legal Online Will Making Guide",
   },
   description:
-    "Create a valid Will in Odisha. Expert lawyer drafting, Odisha e-Registration assistance, Bhulekh land mutation, and family wealth protection online.",
+    "Create a valid Will in Odisha. Expert lawyer drafting, Odisha e-Registration assistance, Bhulekh land mutation, and family wealth protection.",
   keywords: [
     "will drafting in odisha",
     "will registration odisha e-registration",
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Will Drafting in Odisha: Legal Online Will Making Guide",
     description:
-      "Create a valid Will in Odisha. Expert lawyer drafting, Odisha e-Registration assistance, Bhulekh land mutation, and family wealth protection online.",
+      "Create a valid Will in Odisha. Expert lawyer drafting, Odisha e-Registration assistance, Bhulekh land mutation, and family wealth protection.",
     url: "https://www.willdrafting.in/locations/odisha",
     siteName: "WillDrafting.in",
     locale: "en_IN",
@@ -62,7 +62,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Will Drafting in Odisha: Legal Online Will Making Guide",
     description:
-      "Create a valid Will in Odisha. Expert lawyer drafting, Odisha e-Registration assistance, Bhulekh land mutation, and family wealth protection online.",
+      "Create a valid Will in Odisha. Expert lawyer drafting, Odisha e-Registration assistance, Bhulekh land mutation, and family wealth protection.",
     images: ["https://www.willdrafting.in/images/will-drafting-in-odisha-og.jpg"],
   },
   robots: {
@@ -142,7 +142,7 @@ export default function OdishaLocationPage() {
         url: canonicalUrl,
         name: "Will Drafting in Odisha: Legal Online Will Making Guide",
         description:
-          "Create a valid Will in Odisha. Expert lawyer drafting, Odisha e-Registration assistance, Bhulekh land mutation, and family wealth protection online.",
+          "Create a valid Will in Odisha. Expert lawyer drafting, Odisha e-Registration assistance, Bhulekh land mutation, and family wealth protection.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -189,7 +189,7 @@ export default function OdishaLocationPage() {
         "@id": `${canonicalUrl}#legalservice`,
         name: "WillDrafting Odisha - Estate Planning & SRO Registration Desk",
         description:
-          "Professional Will drafting, advocate verification, Odisha e-Registration assistance, Bhulekh land record guidance, and Section 31 doorstep execution across Bhubaneswar, Cuttack, Rourkela, and all Odisha districts.",
+          "Professional Will drafting, advocate verification, Odisha e-Registration assistance, Bhulekh land record guidance, and Section 31 doorstep.",
         url: canonicalUrl,
         image: imageUrl,
         email: "hello@willdrafting.in",

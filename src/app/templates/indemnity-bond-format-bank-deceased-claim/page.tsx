@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     absolute: "Bank Deceased Claim Indemnity Bond Format | WillDrafting", // exactly 56 characters
   },
   description:
-    "Download indemnity bond format for deceased bank account claim under Indian Contract Act and RBI rules. Includes two-surety clause and state stamp duties.", // exactly 154 characters
+    "Download indemnity bond format for deceased bank account claim under Indian Contract Act and RBI rules. Includes two-surety clause and state.", // exactly 154 characters
   keywords: [
     "indemnity bond format for deceased bank account claim",
     "indemnity bond for legal heirs format word",
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Bank Deceased Claim Indemnity Bond Format | WillDrafting",
     description:
-      "Download indemnity bond format for deceased bank account claim under Indian Contract Act and RBI rules. Includes two-surety clause and state stamp duties.",
+      "Download indemnity bond format for deceased bank account claim under Indian Contract Act and RBI rules. Includes two-surety clause and state.",
     url: "https://www.willdrafting.in/templates/indemnity-bond-format-bank-deceased-claim",
     siteName: "WillDrafting.in",
     locale: "en_IN",
@@ -53,7 +53,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Bank Deceased Claim Indemnity Bond Format | WillDrafting",
     description:
-      "Download indemnity bond format for deceased bank account claim under Indian Contract Act and RBI rules. Includes two-surety clause and state stamp duties.",
+      "Download indemnity bond format for deceased bank account claim under Indian Contract Act and RBI rules. Includes two-surety clause and state.",
     images: ["https://www.willdrafting.in/images/indemnity-bond-format-bank-deceased-claim-og.jpg"],
   },
   robots: {
@@ -90,7 +90,7 @@ export default function IndemnityBondFormatPage() {
         url: canonicalUrl,
         name: "Bank Deceased Claim Indemnity Bond Format | WillDrafting",
         description:
-          "Download indemnity bond format for deceased bank account claim under Indian Contract Act and RBI rules. Includes two-surety clause and state stamp duties.",
+          "Download indemnity bond format for deceased bank account claim under Indian Contract Act and RBI rules. Includes two-surety clause and state.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -128,7 +128,7 @@ export default function IndemnityBondFormatPage() {
         name: "Indemnity Bond Format for Deceased Bank Account Claim",
         url: canonicalUrl,
         description:
-          "Lawyer-vetted legal indemnity bond format with two-surety undertaking, affidavit of disclaimer NOC, and state stamp paper guide for claiming deceased depositor balances under Indian Contract Act 1872 and RBI circulars.",
+          "Lawyer-vetted legal indemnity bond format with two-surety undertaking, affidavit of disclaimer NOC, and state stamp paper guide for claiming.",
         fileFormat: "text/html",
         isAccessibleForFree: true,
         image: imageUrl,

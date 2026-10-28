@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     absolute: "Will Drafting in Vijayawada: Registration & Probate Guide",
   },
   description:
-    "Draft your Will in Vijayawada with advocate assistance. Smooth AP IGRS registration guidance, commercial asset transfer, and VMC mutation assistance.",
+    "Draft your Will in Vijayawada with advocate assistance. Smooth AP IGRS registration guidance, commercial asset transfer, and VMC mutation.",
   keywords: [
     "will drafting in vijayawada",
     "will registration ap igrs vijayawada",
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Will Drafting in Vijayawada: Registration & Probate Guide",
     description:
-      "Draft your Will in Vijayawada with advocate assistance. Smooth AP IGRS registration guidance, commercial asset transfer, and VMC mutation assistance.",
+      "Draft your Will in Vijayawada with advocate assistance. Smooth AP IGRS registration guidance, commercial asset transfer, and VMC mutation.",
     url: "https://www.willdrafting.in/locations/vijayawada",
     siteName: "WillDrafting.in",
     locale: "en_IN",
@@ -62,7 +62,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Will Drafting in Vijayawada: Registration & Probate Guide",
     description:
-      "Draft your Will in Vijayawada with advocate assistance. Smooth AP IGRS registration guidance, commercial asset transfer, and VMC mutation assistance.",
+      "Draft your Will in Vijayawada with advocate assistance. Smooth AP IGRS registration guidance, commercial asset transfer, and VMC mutation.",
     images: ["https://www.willdrafting.in/images/will-drafting-in-vijayawada-banner.jpg"],
   },
   robots: {
@@ -142,7 +142,7 @@ export default function VijayawadaLocationPage() {
         url: canonicalUrl,
         name: "Will Drafting in Vijayawada: Registration & Probate Guide",
         description:
-          "Draft your Will in Vijayawada with advocate assistance. Smooth AP IGRS registration guidance, commercial asset transfer, and VMC mutation assistance.",
+          "Draft your Will in Vijayawada with advocate assistance. Smooth AP IGRS registration guidance, commercial asset transfer, and VMC mutation.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -189,7 +189,7 @@ export default function VijayawadaLocationPage() {
         "@id": `${canonicalUrl}#legalservice`,
         name: "WillDrafting Vijayawada - Estate Planning, Commercial Succession & AP IGRS Registration",
         description:
-          "Professional Will drafting, commercial business estate succession advisory, APCRDA plot inheritance, and AP IGRS Sub-Registrar registration support across Vijayawada and Andhra Pradesh.",
+          "Professional Will drafting, commercial business estate succession advisory, APCRDA plot inheritance, and AP IGRS Sub-Registrar registration.",
         url: canonicalUrl,
         image: imageUrl,
         telephone: "+91-8700343611",

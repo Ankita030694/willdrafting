@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     absolute: "Will Drafting in Madhya Pradesh: Online Will & MP Guide",
   },
   description:
-    "Draft a legally valid Will in Madhya Pradesh. Complete MP Sampada 2.0 registration guidance, ancestral land succession rules, and legal consultation in MP.",
+    "Draft a legally valid Will in Madhya Pradesh. Complete MP Sampada 2.0 registration guidance, ancestral land succession rules, and legal.",
   keywords: [
     "will drafting in madhya pradesh",
     "will registration mp sampada",
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Will Drafting in Madhya Pradesh: Online Will & MP Guide",
     description:
-      "Draft a legally valid Will in Madhya Pradesh. Complete MP Sampada 2.0 registration guidance, ancestral land succession rules, and legal consultation in MP.",
+      "Draft a legally valid Will in Madhya Pradesh. Complete MP Sampada 2.0 registration guidance, ancestral land succession rules, and legal.",
     url: "https://www.willdrafting.in/locations/madhya-pradesh",
     siteName: "WillDrafting.in",
     locale: "en_IN",
@@ -62,7 +62,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Will Drafting in Madhya Pradesh: Online Will & MP Guide",
     description:
-      "Draft a legally valid Will in Madhya Pradesh. Complete MP Sampada 2.0 registration guidance, ancestral land succession rules, and legal consultation in MP.",
+      "Draft a legally valid Will in Madhya Pradesh. Complete MP Sampada 2.0 registration guidance, ancestral land succession rules, and legal.",
     images: ["https://www.willdrafting.in/images/will-drafting-in-madhya-pradesh-og.jpg"],
   },
   robots: {
@@ -142,7 +142,7 @@ export default function MadhyaPradeshLocationPage() {
         url: canonicalUrl,
         name: "Will Drafting in Madhya Pradesh: Online Will & MP Guide",
         description:
-          "Draft a legally valid Will in Madhya Pradesh. Complete MP Sampada 2.0 registration guidance, ancestral land succession rules, and legal consultation in MP.",
+          "Draft a legally valid Will in Madhya Pradesh. Complete MP Sampada 2.0 registration guidance, ancestral land succession rules, and legal.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -189,7 +189,7 @@ export default function MadhyaPradeshLocationPage() {
         "@id": `${canonicalUrl}#legalservice`,
         name: "WillDrafting Madhya Pradesh - Estate Planning & SRO Registration",
         description:
-          "Professional Will drafting, advocate verification, MP Sampada 2.0 registration, and Section 31 doorstep execution support across Indore, Bhopal, Jabalpur, Gwalior, and all MP districts.",
+          "Professional Will drafting, advocate verification, MP Sampada 2.0 registration, and Section 31 doorstep execution support across Indore.",
         url: canonicalUrl,
         image: imageUrl,
         email: "hello@willdrafting.in",

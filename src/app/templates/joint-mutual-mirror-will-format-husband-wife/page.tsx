@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     absolute: "Joint Will Format for Husband & Wife India | WillDrafting", // exactly 57 characters
   },
   description:
-    "Download legally valid joint will format for husband and wife in India. Compare joint, mutual, and mirror wills under Indian law with free legal samples.", // exactly 153 characters
+    "Download legally valid joint will format for husband and wife in India. Compare joint, mutual, and mirror wills under Indian law with free.", // exactly 153 characters
   keywords: [
     "joint will format for husband and wife in india",
     "mirror will format india",
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Joint Will Format for Husband & Wife India | WillDrafting",
     description:
-      "Download legally valid joint will format for husband and wife in India. Compare joint, mutual, and mirror wills under Indian law with free legal samples.",
+      "Download legally valid joint will format for husband and wife in India. Compare joint, mutual, and mirror wills under Indian law with free.",
     url: "https://www.willdrafting.in/templates/joint-mutual-mirror-will-format-husband-wife",
     siteName: "WillDrafting.in",
     locale: "en_IN",
@@ -52,7 +52,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Joint Will Format for Husband & Wife India | WillDrafting",
     description:
-      "Download legally valid joint will format for husband and wife in India. Compare joint, mutual, and mirror wills under Indian law with free legal samples.",
+      "Download legally valid joint will format for husband and wife in India. Compare joint, mutual, and mirror wills under Indian law with free.",
     images: ["https://www.willdrafting.in/images/joint-mutual-mirror-will-format-husband-wife-og.jpg"],
   },
   robots: {
@@ -89,7 +89,7 @@ export default function JointMutualMirrorWillPage() {
         url: canonicalUrl,
         name: "Joint Will Format for Husband & Wife India | WillDrafting",
         description:
-          "Download legally valid joint will format for husband and wife in India. Compare joint, mutual, and mirror wills under Indian law with free legal samples.",
+          "Download legally valid joint will format for husband and wife in India. Compare joint, mutual, and mirror wills under Indian law with free.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",

@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     absolute: "Indian Succession Act Calculator & Heir Share Tool",
   },
   description:
-    "Free Indian intestate succession calculator for Hindu (Sec 8 & 15), Muslim (1/3 Wasiyat), Christian & Parsi laws, plus a Will vs Bank Nomination checker.",
+    "Free Indian intestate succession calculator for Hindu (Sec 8 & 15), Muslim (1/3 Wasiyat), Christian & Parsi laws, plus a Will vs Bank.",
   keywords: [
     "indian succession calculator",
     "hindu succession act calculator",
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Indian Succession Act Calculator & Heir Share Tool | WillDrafting.in",
     description:
-      "Calculate exact legal heir shares under Hindu, Muslim, Christian & Parsi intestate succession laws in India and check Will vs. Bank/Demat nomination rules.",
+      "Calculate exact legal heir shares under Hindu, Muslim, Christian & Parsi intestate succession laws in India and check Will vs. Bank/Demat.",
     url: "https://www.willdrafting.in/tools/succession-calculator",
     siteName: "WillDrafting.in",
     locale: "en_IN",
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Indian Succession Act Calculator & Heir Share Tool",
     description:
-      "Free Indian intestate succession calculator for Hindu (Sec 8 & 15), Muslim (1/3 Wasiyat), Christian & Parsi laws, plus a Will vs Bank Nomination checker.",
+      "Free Indian intestate succession calculator for Hindu (Sec 8 & 15), Muslim (1/3 Wasiyat), Christian & Parsi laws, plus a Will vs Bank.",
     images: ["https://www.willdrafting.in/desktopusp.jpg"],
   },
   robots: {

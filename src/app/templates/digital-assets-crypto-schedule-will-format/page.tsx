@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     absolute: "Crypto & Digital Asset Inventory Will India | WillDrafting", // exactly 58 characters
   },
   description:
-    "Download digital asset inventory template for will India. Protect Bitcoin, crypto wallets, and 2FA with 2-part will clauses and sealed legacy memorandum.", // exactly 153 characters
+    "Download digital asset inventory template for will India. Protect Bitcoin, crypto wallets, and 2FA with 2-part will clauses and sealed legacy.", // exactly 153 characters
   keywords: [
     "digital asset inventory template for will india",
     "crypto will clause format india",
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Crypto & Digital Asset Inventory Will India | WillDrafting",
     description:
-      "Download digital asset inventory template for will India. Protect Bitcoin, crypto wallets, and 2FA with 2-part will clauses and sealed legacy memorandum.",
+      "Download digital asset inventory template for will India. Protect Bitcoin, crypto wallets, and 2FA with 2-part will clauses and sealed legacy.",
     url: "https://www.willdrafting.in/templates/digital-assets-crypto-schedule-will-format",
     siteName: "WillDrafting.in",
     locale: "en_IN",
@@ -53,7 +53,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Crypto & Digital Asset Inventory Will India | WillDrafting",
     description:
-      "Download digital asset inventory template for will India. Protect Bitcoin, crypto wallets, and 2FA with 2-part will clauses and sealed legacy memorandum.",
+      "Download digital asset inventory template for will India. Protect Bitcoin, crypto wallets, and 2FA with 2-part will clauses and sealed legacy.",
     images: ["https://www.willdrafting.in/images/digital-assets-crypto-schedule-will-format-og.jpg"],
   },
   robots: {
@@ -92,7 +92,7 @@ export default function DigitalAssetsCryptoSchedulePage() {
         url: canonicalUrl,
         name: "Crypto & Digital Asset Inventory Will India | WillDrafting",
         description:
-          "Download digital asset inventory template for will India. Protect Bitcoin, crypto wallets, and 2FA with 2-part will clauses and sealed legacy memorandum.",
+          "Download digital asset inventory template for will India. Protect Bitcoin, crypto wallets, and 2FA with 2-part will clauses and sealed legacy.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -130,7 +130,7 @@ export default function DigitalAssetsCryptoSchedulePage() {
         name: "Digital Assets and Crypto Schedule Will Format India",
         url: canonicalUrl,
         description:
-          "Two-part legally compliant digital asset inventory template and confidential access memorandum adhering to Indian Succession Act, 1925, Information Technology Act, 2000, and Section 115BBH VDA tax rules.",
+          "Two-part legally compliant digital asset inventory template and confidential access memorandum adhering to Indian Succession Act, 1925.",
         image: imageUrl,
         fileFormat: "text/html",
         hasDigitalDocumentPermission: {

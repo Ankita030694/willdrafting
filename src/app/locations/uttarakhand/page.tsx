@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     absolute: "Will Drafting in Uttarakhand: Online Will & Land Guide",
   },
   description:
-    "Draft a valid Will in Uttarakhand with lawyer review. Complete guidance on Section 154 land ceiling rules, e-Prerna registration, and MDDA mutation.",
+    "Draft a valid Will in Uttarakhand with lawyer review. Complete guidance on Section 154 land ceiling rules, e-Prerna registration, and MDDA.",
   keywords: [
     "will drafting in uttarakhand",
     "will registration uttarakhand e-prerna",
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Will Drafting in Uttarakhand: Online Will & Land Guide",
     description:
-      "Draft a valid Will in Uttarakhand with lawyer review. Complete guidance on Section 154 land ceiling rules, e-Prerna registration, and MDDA mutation.",
+      "Draft a valid Will in Uttarakhand with lawyer review. Complete guidance on Section 154 land ceiling rules, e-Prerna registration, and MDDA.",
     url: "https://www.willdrafting.in/locations/uttarakhand",
     siteName: "WillDrafting.in",
     locale: "en_IN",
@@ -63,7 +63,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Will Drafting in Uttarakhand: Online Will & Land Guide",
     description:
-      "Draft a valid Will in Uttarakhand with lawyer review. Complete guidance on Section 154 land ceiling rules, e-Prerna registration, and MDDA mutation.",
+      "Draft a valid Will in Uttarakhand with lawyer review. Complete guidance on Section 154 land ceiling rules, e-Prerna registration, and MDDA.",
     images: ["https://www.willdrafting.in/images/will-drafting-in-uttarakhand-og.jpg"],
   },
   robots: {
@@ -143,7 +143,7 @@ export default function UttarakhandLocationPage() {
         url: canonicalUrl,
         name: "Will Drafting in Uttarakhand: Online Will & Land Guide",
         description:
-          "Draft a valid Will in Uttarakhand with lawyer review. Complete guidance on Section 154 land ceiling rules, e-Prerna registration, and MDDA mutation.",
+          "Draft a valid Will in Uttarakhand with lawyer review. Complete guidance on Section 154 land ceiling rules, e-Prerna registration, and MDDA.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -190,7 +190,7 @@ export default function UttarakhandLocationPage() {
         "@id": `${canonicalUrl}#legalservice`,
         name: "WillDrafting Uttarakhand - Estate Planning & e-Prerna SRO Registration",
         description:
-          "Professional Will drafting, advocate verification, e-Prerna registration assistance, and Section 31 doorstep execution support across Dehradun, Haridwar, Nainital, Haldwani, and Rishikesh.",
+          "Professional Will drafting, advocate verification, e-Prerna registration assistance, and Section 31 doorstep execution support across.",
         url: canonicalUrl,
         image: imageUrl,
         email: "hello@willdrafting.in",

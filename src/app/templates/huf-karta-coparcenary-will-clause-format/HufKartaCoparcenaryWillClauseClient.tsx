@@ -667,8 +667,8 @@ The surviving coparceners shall be at liberty to continue the HUF entity under i
                 <Image
                   src="/images/huf-karta-coparcenary-will-clause-format-og.jpg"
                   alt="HUF Karta Coparcenary Will Clause Format and Section 30 Bequest Guide"
-                  fill
-                  className="object-cover"
+                  width={1200} height={675}
+                  className="absolute inset-0 w-full h-full object-cover"
                   sizes="(max-width: 1200px) 100vw, 1200px"
                 />
               </div>
@@ -1322,7 +1322,7 @@ The surviving coparceners shall be at liberty to continue the HUF entity under i
                     <ExternalLink className="w-3 h-3" />
                   </a>
                   <a
-                    href="https://main.sci.gov.in"
+                    href="https://www.sci.gov.in"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-blue-50 text-blue-800 hover:bg-blue-100 font-semibold"

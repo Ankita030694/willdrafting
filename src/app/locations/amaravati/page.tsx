@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     absolute: "Will Drafting in Amaravati: Online Will Making Guide",
   },
   description:
-    "Draft a legally valid Will in Amaravati. Guidance on AP IGRS registration, CRDA plot transfer, and Meebhoomi succession planning with lawyer support.",
+    "Draft a legally valid Will in Amaravati. Guidance on AP IGRS registration, CRDA plot transfer, and Meebhoomi succession planning with lawyer.",
   keywords: [
     "will drafting in amaravati",
     "will registration ap igrs amaravati",
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Will Drafting in Amaravati: Online Will Making Guide",
     description:
-      "Draft a legally valid Will in Amaravati. Guidance on AP IGRS registration, CRDA plot transfer, and Meebhoomi succession planning with lawyer support.",
+      "Draft a legally valid Will in Amaravati. Guidance on AP IGRS registration, CRDA plot transfer, and Meebhoomi succession planning with lawyer.",
     url: "https://www.willdrafting.in/locations/amaravati",
     siteName: "WillDrafting.in",
     locale: "en_IN",
@@ -60,7 +60,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Will Drafting in Amaravati: Online Will Making Guide",
     description:
-      "Draft a legally valid Will in Amaravati. Guidance on AP IGRS registration, CRDA plot transfer, and Meebhoomi succession planning with lawyer support.",
+      "Draft a legally valid Will in Amaravati. Guidance on AP IGRS registration, CRDA plot transfer, and Meebhoomi succession planning with lawyer.",
     images: ["https://www.willdrafting.in/images/will-drafting-in-amaravati-og.jpg"],
   },
   robots: {
@@ -140,7 +140,7 @@ export default function AmaravatiLocationPage() {
         url: canonicalUrl,
         name: "Will Drafting in Amaravati: Online Will Making Guide",
         description:
-          "Draft a legally valid Will in Amaravati. Guidance on AP IGRS registration, CRDA plot transfer, and Meebhoomi succession planning with lawyer support.",
+          "Draft a legally valid Will in Amaravati. Guidance on AP IGRS registration, CRDA plot transfer, and Meebhoomi succession planning with lawyer.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -187,7 +187,7 @@ export default function AmaravatiLocationPage() {
         "@id": `${canonicalUrl}#legalservice`,
         name: "WillDrafting Amaravati - Estate Planning & SRO Registration",
         description:
-          "Professional Will drafting, advocate consultation, AP IGRS registration, APCRDA plot succession, and Section 31 doorstep execution support across Amaravati, Velagapudi, Tullur, Mangalagiri, and Tadepalli.",
+          "Professional Will drafting, advocate consultation, AP IGRS registration, APCRDA plot succession, and Section 31 doorstep execution support.",
         url: canonicalUrl,
         image: imageUrl,
         email: "hello@willdrafting.in",

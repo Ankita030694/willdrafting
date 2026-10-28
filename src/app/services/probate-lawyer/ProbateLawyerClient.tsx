@@ -321,9 +321,9 @@ export default function ProbateLawyerClient() {
                   EXECUTIVE BRIEF: WILL PROBATE SERVICES IN INDIA
                 </span>
               </div>
-              <h3 className="text-lg font-bold text-slate-900 mb-3">
+              <div className="text-lg font-bold text-slate-900 mb-3">
                 Key Legal Rules for Executors and Heirs
-              </h3>
+              </div>
               <ul className="space-y-2 text-sm text-slate-700">
                 <li className="flex items-start gap-2.5">
                   <CheckCircle2 className="w-4 h-4 text-[#5F7E75] shrink-0 mt-0.5" />
@@ -1069,19 +1069,19 @@ export default function ProbateLawyerClient() {
                     Probate Checker Tool &rarr;
                   </Link>
                   <Link
-                    href="/service/succession-certificate"
+                    href="/services/succession-certificate"
                     className="text-xs px-3 py-1.5 rounded-lg bg-white border border-slate-200 hover:border-[#C65378] hover:text-[#C65378] transition-colors"
                   >
                     Succession Certificate Lawyer &rarr;
                   </Link>
                   <Link
-                    href="/service/nri-will-india"
+                    href="/services/nri-will-india"
                     className="text-xs px-3 py-1.5 rounded-lg bg-white border border-slate-200 hover:border-[#C65378] hover:text-[#C65378] transition-colors"
                   >
                     NRI Will Drafting Services &rarr;
                   </Link>
                   <Link
-                    href="/service/will-registration"
+                    href="/services/will-registration"
                     className="text-xs px-3 py-1.5 rounded-lg bg-white border border-slate-200 hover:border-[#C65378] hover:text-[#C65378] transition-colors"
                   >
                     Will Registration Service &rarr;
@@ -1229,7 +1229,7 @@ export default function ProbateLawyerClient() {
                   </div>
                 </Link>
                 <Link
-                  href="/service/succession-certificate"
+                  href="/services/succession-certificate"
                   className="block p-2.5 rounded-xl border border-slate-100 hover:border-rose-200 hover:bg-rose-50/30 transition-colors"
                 >
                   <div className="font-bold text-xs text-slate-900">Succession Certificate Service</div>
@@ -1247,7 +1247,7 @@ export default function ProbateLawyerClient() {
                   </div>
                 </Link>
                 <Link
-                  href="/service/nri-will-india"
+                  href="/services/nri-will-india"
                   className="block p-2.5 rounded-xl border border-slate-100 hover:border-rose-200 hover:bg-rose-50/30 transition-colors"
                 >
                   <div className="font-bold text-xs text-slate-900">NRI Will Drafting Services</div>
@@ -1270,7 +1270,7 @@ export default function ProbateLawyerClient() {
                   Is Probate Required in India?
                 </Link>
                 <Link
-                  href="/service/succession-certificate"
+                  href="/services/succession-certificate"
                   className="text-[11px] px-3 py-1 rounded-lg bg-slate-100 text-[#172228] hover:bg-slate-200 transition-colors"
                 >
                   Succession Certificate Lawyers

@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     absolute: "Will Drafting in Karnataka: Expert Online Will Services",
   },
   description:
-    "Create a legally binding Will in Karnataka. Get Kaveri 2.0 registration guidance, tech estate planning, and agricultural land succession support statewide.",
+    "Create a legally binding Will in Karnataka. Get Kaveri 2.0 registration guidance, tech estate planning, and agricultural land succession.",
   keywords: [
     "will drafting in karnataka",
     "will registration kaveri 2.0",
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Will Drafting in Karnataka: Expert Online Will Services",
     description:
-      "Create a legally binding Will in Karnataka. Get Kaveri 2.0 registration guidance, tech estate planning, and agricultural land succession support statewide.",
+      "Create a legally binding Will in Karnataka. Get Kaveri 2.0 registration guidance, tech estate planning, and agricultural land succession.",
     url: "https://www.willdrafting.in/locations/karnataka",
     siteName: "WillDrafting.in",
     locale: "en_IN",
@@ -61,7 +61,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Will Drafting in Karnataka: Expert Online Will Services",
     description:
-      "Create a legally binding Will in Karnataka. Get Kaveri 2.0 registration guidance, tech estate planning, and agricultural land succession support statewide.",
+      "Create a legally binding Will in Karnataka. Get Kaveri 2.0 registration guidance, tech estate planning, and agricultural land succession.",
     images: ["https://www.willdrafting.in/images/will-drafting-in-karnataka-og.jpg"],
   },
   robots: {
@@ -141,7 +141,7 @@ export default function KarnatakaLocationPage() {
         url: canonicalUrl,
         name: "Will Drafting in Karnataka: Expert Online Will Services",
         description:
-          "Create a legally binding Will in Karnataka. Get Kaveri 2.0 registration guidance, tech estate planning, and agricultural land succession support statewide.",
+          "Create a legally binding Will in Karnataka. Get Kaveri 2.0 registration guidance, tech estate planning, and agricultural land succession.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -188,7 +188,7 @@ export default function KarnatakaLocationPage() {
         "@id": `${canonicalUrl}#legalservice`,
         name: "WillDrafting Karnataka - Estate Planning & Kaveri 2.0 Registration",
         description:
-          "Professional Will drafting, advocate verification, Kaveri 2.0 online slot booking, and doorstep execution support across Bengaluru, Mysuru, Mangaluru, Hubballi, Belagavi, and all districts of Karnataka.",
+          "Professional Will drafting, advocate verification, Kaveri 2.0 online slot booking, and doorstep execution support across Bengaluru, Mysuru.",
         url: canonicalUrl,
         image: imageUrl,
         email: "hello@willdrafting.in",

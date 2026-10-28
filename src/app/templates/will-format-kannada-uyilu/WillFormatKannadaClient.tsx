@@ -1340,7 +1340,7 @@ Signature & Official Clinic Stamp: _________________________`;
                 </Link>
 
                 <Link
-                  href="/tools/probate-court-fee-calculator-india"
+                  href="/tools/probate-court-fee-timeline-calculator"
                   className="p-5 rounded-2xl bg-white border border-slate-200 hover:border-[#C65378] transition-all shadow-xs group block"
                 >
                   <div className="flex items-center justify-between mb-2">

@@ -653,8 +653,8 @@ I declare that all my movable and immovable properties are my self-acquired asse
                 <Image
                   src="/images/disinheritance-exclusion-clause-format-will-og.jpg"
                   alt="Disinheritance and Exclusion Clause in Will India Format Legal Guide"
-                  fill
-                  className="object-cover"
+                  width={1200} height={675}
+                  className="absolute inset-0 w-full h-full object-cover"
                   sizes="(max-width: 1200px) 100vw, 1200px"
                   priority
                 />

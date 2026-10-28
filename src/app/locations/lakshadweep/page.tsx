@@ -187,7 +187,7 @@ export default function LakshadweepLocationPage() {
         "@id": `${canonicalUrl}#legalservice`,
         name: "WillDrafting Lakshadweep - Customary Succession & SRO Kavaratti Registration",
         description:
-          "Professional Will drafting, Kerala High Court advocate consultation, Marumakkathayam customary property verification, and SRO Kavaratti registration across Lakshadweep Islands.",
+          "Professional Will drafting, Kerala High Court advocate consultation, Marumakkathayam customary property verification, and SRO Kavaratti.",
         url: canonicalUrl,
         image: imageUrl,
         email: "hello@willdrafting.in",

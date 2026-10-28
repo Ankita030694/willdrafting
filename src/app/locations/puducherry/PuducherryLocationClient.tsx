@@ -314,8 +314,8 @@ export default function PuducherryLocationClient({ faqs }: Props) {
                 <Image
                   src="/images/will-drafting-in-puducherry.jpg"
                   alt="Legal Will Drafting and Estate Planning in Puducherry"
-                  fill
-                  className="object-contain group-hover:scale-102 transition-transform duration-500"
+                  width={1200} height={675}
+                  className="absolute inset-0 w-full h-full object-contain group-hover:scale-102 transition-transform duration-500"
                   priority
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 40vw"
                 />
@@ -773,7 +773,7 @@ export default function PuducherryLocationClient({ faqs }: Props) {
 
                 <div className="pt-2 flex flex-wrap gap-3">
                   <Link
-                    href="/service/probate-lawyer"
+                    href="/services/probate-lawyer"
                     className="inline-flex items-center gap-1.5 text-xs font-bold text-[#C65378] hover:text-[#a13c5d] hover:underline"
                   >
                     <span>Read Madras High Court Probate Support</span>
@@ -1903,8 +1903,8 @@ export default function PuducherryLocationClient({ faqs }: Props) {
               <Image
                 src="/images/will-drafting-in-puducherry.jpg"
                 alt="High Resolution Visual Blueprint: Puducherry Will Drafting and SRO Registration"
-                fill
-                className="object-contain"
+                width={1200} height={675}
+                className="absolute inset-0 w-full h-full object-contain"
                 priority
               />
             </div>

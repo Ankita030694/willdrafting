@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     absolute: "Inherited Property Capital Gains Calculator | WillDrafting", // exactly 58 characters
   },
   description:
-    "Calculate capital gains tax on inherited property in India. Compare 12.5% flat vs 20% indexation, Section 54 deductions, and NRI TDS under Budget 2024 rules.", // exactly 145 characters
+    "Calculate capital gains tax on inherited property in India. Compare 12.5% flat vs 20% indexation, Section 54 deductions, and NRI TDS under.", // exactly 145 characters
   keywords: [
     "capital gains tax on inherited property calculator india",
     "tax on sale of inherited property india",
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Inherited Property Capital Gains Calculator | WillDrafting",
     description:
-      "Calculate capital gains tax on inherited property in India. Compare 12.5% flat vs 20% indexation, Section 54 deductions, and NRI TDS under Budget 2024 rules.",
+      "Calculate capital gains tax on inherited property in India. Compare 12.5% flat vs 20% indexation, Section 54 deductions, and NRI TDS under.",
     url: "https://www.willdrafting.in/tools/capital-gains-tax-calculator-inherited-property",
     siteName: "WillDrafting.in",
     locale: "en_IN",
@@ -53,7 +53,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Inherited Property Capital Gains Calculator | WillDrafting",
     description:
-      "Calculate capital gains tax on inherited property in India. Compare 12.5% flat vs 20% indexation, Section 54 deductions, and NRI TDS under Budget 2024 rules.",
+      "Calculate capital gains tax on inherited property in India. Compare 12.5% flat vs 20% indexation, Section 54 deductions, and NRI TDS under.",
     images: ["https://www.willdrafting.in/images/capital-gains-tax-calculator-inherited-property-og.jpg"],
   },
   robots: {
@@ -90,7 +90,7 @@ export default function CapitalGainsTaxCalculatorPage() {
         url: canonicalUrl,
         name: "Inherited Property Capital Gains Calculator | WillDrafting",
         description:
-          "Calculate capital gains tax on inherited property in India. Compare 12.5% flat vs 20% indexation, Section 54 deductions, and NRI TDS under Budget 2024 rules.",
+          "Calculate capital gains tax on inherited property in India. Compare 12.5% flat vs 20% indexation, Section 54 deductions, and NRI TDS under.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -130,7 +130,7 @@ export default function CapitalGainsTaxCalculatorPage() {
         applicationCategory: "TaxApplication",
         operatingSystem: "All",
         description:
-          "Interactive statutory tax calculator comparing Budget 2024 grandfathering relief (20% with indexation vs 12.5% flat), Section 49(1) cost to previous owner, Section 54/54EC exemptions, and NRI Section 195 TDS.",
+          "Interactive statutory tax calculator comparing Budget 2024 grandfathering relief (20% with indexation vs 12.5% flat), Section 49(1) cost to.",
         image: imageUrl,
         offers: {
           "@type": "Offer",

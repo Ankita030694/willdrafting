@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     absolute: "Will Drafting in Mangaluru: Registration & Probate Law Guide",
   },
   description:
-    "Draft and register your Will in Mangaluru. Expert Karnataka High Court probate guidance, asset distribution, and lawyer consultation across Mangaluru.",
+    "Draft and register your Will in Mangaluru. Expert Karnataka High Court probate guidance, asset distribution, and lawyer consultation across.",
   keywords: [
     "will drafting in mangaluru",
     "will drafting in kodialbail",
@@ -54,7 +54,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Will Drafting in Mangaluru: Registration & Probate Law Guide",
     description:
-      "Draft and register your Will in Mangaluru. Expert Karnataka High Court probate guidance, asset distribution, and lawyer consultation across Mangaluru.",
+      "Draft and register your Will in Mangaluru. Expert Karnataka High Court probate guidance, asset distribution, and lawyer consultation across.",
     url: "https://www.willdrafting.in/locations/mangaluru",
     siteName: "WillDrafting.in",
     locale: "en_IN",
@@ -72,7 +72,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Will Drafting in Mangaluru: Registration & Probate Law Guide",
     description:
-      "Draft and register your Will in Mangaluru. Expert Karnataka High Court probate guidance, asset distribution, and lawyer consultation across Mangaluru.",
+      "Draft and register your Will in Mangaluru. Expert Karnataka High Court probate guidance, asset distribution, and lawyer consultation across.",
     images: ["https://www.willdrafting.in/images/will-drafting-in-mangaluru.jpg"],
   },
   robots: {
@@ -144,7 +144,7 @@ export default function MangaluruLocationPage() {
         url: canonicalUrl,
         name: "Will Drafting in Mangaluru: Registration & Probate Law Guide",
         description:
-          "Draft and register your Will in Mangaluru. Expert Karnataka High Court probate guidance, asset distribution, and lawyer consultation across Mangaluru.",
+          "Draft and register your Will in Mangaluru. Expert Karnataka High Court probate guidance, asset distribution, and lawyer consultation across.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -191,7 +191,7 @@ export default function MangaluruLocationPage() {
         "@id": `${canonicalUrl}#legalservice`,
         name: "WillDrafting Mangaluru - Estate Planning, Registration & Probate Guidance",
         description:
-          "Professional Will drafting, lawyer verification, Karnataka Kaveri 2.0 Sub-Registrar registration, and Karnataka High Court probate guidance across Mangaluru.",
+          "Professional Will drafting, lawyer verification, Karnataka Kaveri 2.0 Sub-Registrar registration, and Karnataka High Court probate guidance.",
         url: canonicalUrl,
         image: imageUrl,
         telephone: "+91-8700343611",

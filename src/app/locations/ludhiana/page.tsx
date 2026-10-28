@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     absolute: "Will Drafting in Ludhiana: Online Will & NRI Estate Help",
   },
   description:
-    "Draft a legally binding Will in Ludhiana. Expert guidance for industrial assets, NRI ancestral property succession, and Punjab Sub-Registrar registration.",
+    "Draft a legally binding Will in Ludhiana. Expert guidance for industrial assets, NRI ancestral property succession, and Punjab Sub-Registrar.",
   keywords: [
     "will drafting in ludhiana",
     "nri will punjab ludhiana",
@@ -51,7 +51,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Will Drafting in Ludhiana: Online Will & NRI Estate Help",
     description:
-      "Draft a legally binding Will in Ludhiana. Expert guidance for industrial assets, NRI ancestral property succession, and Punjab Sub-Registrar registration.",
+      "Draft a legally binding Will in Ludhiana. Expert guidance for industrial assets, NRI ancestral property succession, and Punjab Sub-Registrar.",
     url: "https://www.willdrafting.in/locations/ludhiana",
     siteName: "WillDrafting.in",
     locale: "en_IN",
@@ -69,7 +69,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Will Drafting in Ludhiana: Online Will & NRI Estate Help",
     description:
-      "Draft a legally binding Will in Ludhiana. Expert guidance for industrial assets, NRI ancestral property succession, and Punjab Sub-Registrar registration.",
+      "Draft a legally binding Will in Ludhiana. Expert guidance for industrial assets, NRI ancestral property succession, and Punjab Sub-Registrar.",
     images: ["https://www.willdrafting.in/images/will-drafting-in-ludhiana-og.jpg"],
   },
   robots: {
@@ -149,7 +149,7 @@ export default function LudhianaLocationPage() {
         url: canonicalUrl,
         name: "Will Drafting in Ludhiana: Online Will & NRI Estate Help",
         description:
-          "Draft a legally binding Will in Ludhiana. Expert guidance for industrial assets, NRI ancestral property succession, and Punjab Sub-Registrar registration.",
+          "Draft a legally binding Will in Ludhiana. Expert guidance for industrial assets, NRI ancestral property succession, and Punjab Sub-Registrar.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -196,7 +196,7 @@ export default function LudhianaLocationPage() {
         "@id": `${canonicalUrl}#legalservice`,
         name: "WillDrafting Ludhiana - Estate Planning & SRO Registration",
         description:
-          "Professional Will drafting, lawyer verification, industrial succession structuring, and Sub-Registrar Office e-registration support across Ludhiana district.",
+          "Professional Will drafting, lawyer verification, industrial succession structuring, and Sub-Registrar Office e-registration support across.",
         url: canonicalUrl,
         image: imageUrl,
         telephone: "+91-8700343611",

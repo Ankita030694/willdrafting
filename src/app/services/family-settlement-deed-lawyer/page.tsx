@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     absolute: "Family Settlement Agreement Lawyer India | WillDrafting.in",
   },
   description:
-    "Advocate assistance for family settlement agreement lawyer in India. High Court drafting, SRO partition deed registration, and mutual dispute resolution.",
+    "Advocate assistance for family settlement agreement lawyer in India. High Court drafting, SRO partition deed registration, and mutual dispute.",
   authors: [
     {
       name: "Advocate Anuj Anand Malik",
@@ -50,7 +50,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Family Settlement Agreement Lawyer India | WillDrafting.in",
     description:
-      "Advocate assistance for family settlement agreement lawyer in India. High Court drafting, SRO partition deed registration, and mutual dispute resolution.",
+      "Advocate assistance for family settlement agreement lawyer in India. High Court drafting, SRO partition deed registration, and mutual dispute.",
     url: "https://www.willdrafting.in/services/family-settlement-deed-lawyer",
     siteName: "WillDrafting.in",
     locale: "en_IN",
@@ -68,7 +68,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Family Settlement Agreement Lawyer India | WillDrafting.in",
     description:
-      "Advocate assistance for family settlement agreement lawyer in India. High Court drafting, SRO partition deed registration, and mutual dispute resolution.",
+      "Advocate assistance for family settlement agreement lawyer in India. High Court drafting, SRO partition deed registration, and mutual dispute.",
     images: ["/images/family-settlement-deed-lawyer-og.jpg"],
   },
   robots: {
@@ -125,7 +125,7 @@ const SETTLEMENT_SCHEMA = {
       url: "https://www.willdrafting.in/services/family-settlement-deed-lawyer",
       name: "Family Settlement Agreement Lawyer India | WillDrafting.in",
       description:
-        "Advocate assistance for family settlement agreement lawyer in India. High Court drafting, SRO partition deed registration, and mutual dispute resolution.",
+        "Advocate assistance for family settlement agreement lawyer in India. High Court drafting, SRO partition deed registration, and mutual dispute.",
       datePublished: "2026-10-27",
       dateModified: "2026-10-27",
       author: {
@@ -159,7 +159,7 @@ const SETTLEMENT_SCHEMA = {
       image:
         "https://www.willdrafting.in/images/family-settlement-deed-lawyer-og.jpg",
       description:
-        "Pan-India testamentary, partition, and family property settlement legal counsel specializing in High Court advocacy, SRO partition deeds, and oral settlement memoranda.",
+        "Pan-India testamentary, partition, and family property settlement legal counsel specializing in High Court advocacy, SRO partition deeds, and.",
       priceRange: "₹₹₹",
       address: {
         "@type": "PostalAddress",
@@ -214,7 +214,7 @@ const SETTLEMENT_SCHEMA = {
               "@type": "Service",
               name: "Registered Family Settlement cum Partition Deed with SRO Support",
               description:
-                "Comprehensive partition deed drafting with Schedule A/B/C demarcations, state stamp duty optimization, and Sub-Registrar registration representation.",
+                "Comprehensive partition deed drafting with Schedule A/B/C demarcations, state stamp duty optimization, and Sub-Registrar registration.",
             },
           },
           {

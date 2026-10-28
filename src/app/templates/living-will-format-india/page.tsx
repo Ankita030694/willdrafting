@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     absolute: "Living Will Format India: 2023 Guidelines | WillDrafting",
   },
   description:
-    "Download a valid living will format in India under 2023 SC rules. Free advance medical directive template with notary attestation and hospital SOP guide.",
+    "Download a valid living will format in India under 2023 SC rules. Free advance medical directive template with notary attestation and hospital.",
   keywords: [
     "living will format india",
     "advance medical directive india",
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Living Will Format India: 2023 Guidelines | WillDrafting",
     description:
-      "Download a valid living will format in India under 2023 SC rules. Free advance medical directive template with notary attestation and hospital SOP guide.",
+      "Download a valid living will format in India under 2023 SC rules. Free advance medical directive template with notary attestation and hospital.",
     url: "https://www.willdrafting.in/templates/living-will-format-india",
     siteName: "WillDrafting.in",
     locale: "en_IN",
@@ -52,7 +52,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Living Will Format India: 2023 Guidelines | WillDrafting",
     description:
-      "Download a valid living will format in India under 2023 SC rules. Free advance medical directive template with notary attestation and hospital SOP guide.",
+      "Download a valid living will format in India under 2023 SC rules. Free advance medical directive template with notary attestation and hospital.",
     images: ["https://www.willdrafting.in/images/living-will-format-india-og.jpg"],
   },
   robots: {
@@ -89,7 +89,7 @@ export default function LivingWillFormatIndiaPage() {
         url: canonicalUrl,
         name: "Living Will Format India: 2023 Guidelines | WillDrafting",
         description:
-          "Download a valid living will format in India under 2023 SC rules. Free advance medical directive template with notary attestation and hospital SOP guide.",
+          "Download a valid living will format in India under 2023 SC rules. Free advance medical directive template with notary attestation and hospital.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -126,7 +126,7 @@ export default function LivingWillFormatIndiaPage() {
         "@id": `${canonicalUrl}#howto`,
         name: "How to Execute a Legally Valid Living Will in India",
         description:
-          "Step-by-step statutory procedure to execute an Advance Medical Directive (Living Will) in India under the simplified 2023 Supreme Court guidelines in Common Cause v. Union of India.",
+          "Step-by-step statutory procedure to execute an Advance Medical Directive (Living Will) in India under the simplified 2023 Supreme Court.",
         image: imageUrl,
         totalTime: "PT20M",
         supply: [

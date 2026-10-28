@@ -377,7 +377,7 @@ ${expText}`;
               <ArrowRight className="w-4 h-4" />
             </a>
             <Link
-              href="/services/nri-inherited-property-sale-repatriation"
+              href="/services/nri-will-india"
               className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-full bg-white text-[#172228] hover:bg-slate-100 font-extrabold text-sm sm:text-base transition-transform hover:-translate-y-0.5 shadow-md"
             >
               <Users className="w-4 h-4 text-[#C65378]" />
@@ -479,7 +479,7 @@ ${expText}`;
                 adjudication, and Tehsildar representation.
               </p>
               <Link
-                href="/services/nri-inherited-property-sale-repatriation"
+                href="/services/nri-will-india"
                 className="inline-flex items-center gap-1.5 text-xs font-bold text-white bg-[#C65378] hover:bg-[#a33b5c] px-3 py-1.5 rounded-lg transition-colors"
               >
                 <span>Explore NRI Services</span>
@@ -541,9 +541,9 @@ ${expText}`;
                 <Image
                   src="/images/special-power-of-attorney-nri-property-inheritance-format-og.jpg"
                   alt="NRI Special Power of Attorney Format for Inherited Property Mutation and Probate"
-                  fill
+                  width={1200} height={675}
                   priority
-                  className="object-cover"
+                  className="absolute inset-0 w-full h-full object-cover"
                   sizes="(max-width: 1024px) 100vw, 850px"
                 />
               </div>
@@ -1327,7 +1327,7 @@ ${expText}`;
                     <ArrowRight className="w-4 h-4" />
                   </Link>
                   <Link
-                    href="/services/nri-inherited-property-sale-repatriation"
+                    href="/services/nri-will-india"
                     className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-white hover:bg-slate-100 text-[#172228] border border-slate-300 font-bold text-xs sm:text-sm transition-transform hover:-translate-y-0.5 shadow-xs"
                   >
                     <Globe className="w-4 h-4 text-[#5F7E75]" />
@@ -1512,7 +1512,7 @@ ${expText}`;
                   <span>Draft Challenge-Proof Will</span>
                 </button>
                 <Link
-                  href="/services/nri-inherited-property-sale-repatriation"
+                  href="/services/nri-will-india"
                   className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-full bg-white text-[#172228] hover:bg-slate-100 font-extrabold text-sm transition-transform hover:-translate-y-0.5 shadow-md"
                 >
                   <Users className="w-4 h-4 text-[#C65378]" />
@@ -1558,7 +1558,7 @@ ${expText}`;
               </div>
 
               <Link
-                href="/services/nri-inherited-property-sale-repatriation"
+                href="/services/nri-will-india"
                 className="w-full inline-flex items-center justify-center gap-2 py-3 px-4 rounded-xl bg-[#172228] hover:bg-slate-800 text-white font-bold text-xs transition-colors shadow-sm"
               >
                 <Users className="w-4 h-4 text-rose-300" />

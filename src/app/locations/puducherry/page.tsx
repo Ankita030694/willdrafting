@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     absolute: "Will Drafting in Puducherry: Online Will Making Guide",
   },
   description:
-    "Draft a legally binding Will in Puducherry. Guidance on French Civil Code Renonçants rules, Indian Succession Act, and Sub-Registrar registration in PY.",
+    "Draft a legally binding Will in Puducherry. Guidance on French Civil Code Renonçants rules, Indian Succession Act, and Sub-Registrar.",
   keywords: [
     "will drafting in puducherry",
     "will registration pondicherry sro",
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Will Drafting in Puducherry: Online Will Making Guide",
     description:
-      "Draft a legally binding Will in Puducherry. Guidance on French Civil Code Renonçants rules, Indian Succession Act, and Sub-Registrar registration in PY.",
+      "Draft a legally binding Will in Puducherry. Guidance on French Civil Code Renonçants rules, Indian Succession Act, and Sub-Registrar.",
     url: "https://www.willdrafting.in/locations/puducherry",
     siteName: "WillDrafting.in",
     locale: "en_IN",
@@ -62,7 +62,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Will Drafting in Puducherry: Online Will Making Guide",
     description:
-      "Draft a legally binding Will in Puducherry. Guidance on French Civil Code Renonçants rules, Indian Succession Act, and Sub-Registrar registration in PY.",
+      "Draft a legally binding Will in Puducherry. Guidance on French Civil Code Renonçants rules, Indian Succession Act, and Sub-Registrar.",
     images: ["https://www.willdrafting.in/images/will-drafting-in-puducherry-og.jpg"],
   },
   robots: {
@@ -142,7 +142,7 @@ export default function PuducherryLocationPage() {
         url: canonicalUrl,
         name: "Will Drafting in Puducherry: Online Will Making Guide",
         description:
-          "Draft a legally binding Will in Puducherry. Guidance on French Civil Code Renonçants rules, Indian Succession Act, and Sub-Registrar registration in PY.",
+          "Draft a legally binding Will in Puducherry. Guidance on French Civil Code Renonçants rules, Indian Succession Act, and Sub-Registrar.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -189,7 +189,7 @@ export default function PuducherryLocationPage() {
         "@id": `${canonicalUrl}#legalservice`,
         name: "WillDrafting Puducherry - Estate Planning & SRO Registration",
         description:
-          "Professional Will drafting, advocate verification, French Civil Code and Indian Succession Act consultation, and SRO registration support across Puducherry, Oulgaret, Karaikal, Mahe, and Yanam.",
+          "Professional Will drafting, advocate verification, French Civil Code and Indian Succession Act consultation, and SRO registration support.",
         url: canonicalUrl,
         image: imageUrl,
         email: "hello@willdrafting.in",

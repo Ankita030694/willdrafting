@@ -1033,10 +1033,10 @@ AND WHEREAS it is mutually agreed and understood that in the event the Donee neg
               <div className="relative w-full aspect-[16/9] sm:aspect-[1200/675] rounded-2xl overflow-hidden bg-slate-900 shadow-inner">
                 <Image
                   src="/images/senior-citizen-section-23-gift-revocation-checker-og.jpg"
-                  alt="Senior Citizen Section 23 Gift Deed Revocation Checker - Supreme Court Precedents & Maintenance Tribunal Guide"
-                  fill
+                  alt="Senior Citizen Section 23 Gift Deed Revocation Checker - Supreme Court Precedents &"
+                  width={1200} height={675}
                   priority
-                  className="object-cover"
+                  className="absolute inset-0 w-full h-full object-cover"
                   sizes="(max-width: 1200px) 100vw, 1200px"
                 />
               </div>

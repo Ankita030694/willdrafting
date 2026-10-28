@@ -671,8 +671,8 @@ export default function HufPropertyAfterDeathOfKartaClient() {
                   <Image
                     src="/images/huf-property-after-death-of-karta.jpg"
                     alt="HUF Property After Death of Karta Flow Diagram and Succession Authority"
-                    fill
-                    className="object-cover group-hover:scale-102 transition-transform duration-300"
+                    width={1200} height={675}
+                    className="absolute inset-0 w-full h-full object-cover group-hover:scale-102 transition-transform duration-300"
                     sizes="(max-width: 1200px) 100vw, 900px"
                     priority
                   />
@@ -1709,8 +1709,8 @@ export default function HufPropertyAfterDeathOfKartaClient() {
               <Image
                 src="/images/huf-property-after-death-of-karta.jpg"
                 alt="HUF Property After Death of Karta Full Flow Diagram"
-                fill
-                className="object-contain"
+                width={1200} height={675}
+                className="absolute inset-0 w-full h-full object-contain"
                 sizes="(max-width: 1200px) 100vw, 1200px"
               />
             </div>

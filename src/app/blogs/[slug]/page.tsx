@@ -89,7 +89,11 @@ function processHtmlAndExtractToc(rawHtml: string): {
   let idx = 0;
 
   let html = rawHtml.replace(/<h2([^>]*)>([\s\S]*?)<\/h2>/gi, (_full, attrs, inner) => {
-    const plain = inner.replace(/<[^>]*>/g, "").trim();
+    let plain = inner.replace(/<[^>]*>/g, "").trim();
+    if (plain.length > 68) {
+      plain = plain.slice(0, 66).replace(/\s+\S*$/, "").replace(/[.,;:\-–—]+$/, "");
+      inner = plain;
+    }
     const id =
       plain
         .toLowerCase()
@@ -100,6 +104,15 @@ function processHtmlAndExtractToc(rawHtml: string): {
     }
     return `<h2 id="${id}"${attrs}>${inner}</h2>`;
   });
+
+  // Ensure no <h3> or <h4> appears before the first <h2> (H2: Non-Sequential compliance)
+  const firstH2Idx = html.search(/<h2\b/i);
+  if (firstH2Idx > 0) {
+    const beforeH2 = html
+      .slice(0, firstH2Idx)
+      .replace(/<h([34])([^>]*)>([\s\S]*?)<\/h\1>/gi, "<div$2>$3</div>");
+    html = beforeH2 + html.slice(firstH2Idx);
+  }
 
   // Transform Popular Searches list into pill tags
   html = html.replace(
@@ -143,18 +156,31 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       ? dbBlog.image
       : `https://www.willdrafting.in${dbBlog.image?.startsWith("/") ? "" : "/"}${dbBlog.image || "desktopusp.jpg"}`;
 
+    let safeMetaTitle = (dbBlog.metaTitle || dbBlog.title || "").trim();
+    if (safeMetaTitle.length > 58) {
+      safeMetaTitle = safeMetaTitle.replace(/\s*\|\s*WillDrafting(?:\.in)?$/i, "").trim();
+      if (safeMetaTitle.length > 58) {
+        safeMetaTitle = safeMetaTitle.slice(0, 56).replace(/\s+\S*$/, "").replace(/[.,;:\-–—|]+$/, "");
+      }
+    }
+
+    let safeMetaDesc = (dbBlog.metaDescription || dbBlog.subtitle || "").trim();
+    if (safeMetaDesc.length > 146) {
+      safeMetaDesc = safeMetaDesc.slice(0, 144).replace(/\s+\S*$/, "").replace(/[.,;:\-–—]+$/, "") + ".";
+    }
+
     return {
       title: {
-        absolute: dbBlog.metaTitle || dbBlog.title,
+        absolute: safeMetaTitle,
       },
-      description: dbBlog.metaDescription || dbBlog.subtitle,
+      description: safeMetaDesc,
       keywords: dbBlog.keywords || [],
       alternates: {
         canonical: canonicalUrl,
       },
       openGraph: {
-        title: dbBlog.metaTitle || dbBlog.title,
-        description: dbBlog.metaDescription || dbBlog.subtitle,
+        title: safeMetaTitle,
+        description: safeMetaDesc,
         url: canonicalUrl,
         siteName: "WillDrafting.in",
         locale: "en_IN",
@@ -166,14 +192,14 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
             url: imageUrl,
             width: 1200,
             height: 630,
-            alt: dbBlog.title,
+            alt: (dbBlog.title || "").slice(0, 85),
           },
         ],
       },
       twitter: {
         card: "summary_large_image",
-        title: dbBlog.metaTitle || dbBlog.title,
-        description: dbBlog.metaDescription || dbBlog.subtitle,
+        title: safeMetaTitle,
+        description: safeMetaDesc,
         images: [imageUrl],
       },
     };
@@ -346,11 +372,12 @@ export default async function BlogSlugPage({ params }: PageProps) {
             <Image
               src={imageSrc}
               alt={title}
-              fill
+              width={1200}
+              height={675}
               priority
               unoptimized={imageSrc.startsWith("/api/")}
               sizes="100vw"
-              className="object-cover object-center opacity-[0.25] saturate-[0.9] contrast-[1.05]"
+              className="w-full h-full object-cover object-center opacity-[0.25] saturate-[0.9] contrast-[1.05]"
             />
             <div className="absolute inset-0 bg-gradient-to-r from-[#FAF7F0]/90 via-[#FAF7F0]/70 to-[#FAF7F0]/90" />
             <div className="absolute inset-0 bg-gradient-to-b from-[#FAF7F0]/60 via-transparent to-[#FAF7F0]/80" />
@@ -447,9 +474,9 @@ export default async function BlogSlugPage({ params }: PageProps) {
           <aside className="lg:col-span-4 lg:sticky lg:top-28 space-y-8 order-2 lg:order-1">
             {shortVersion.length > 0 && (
               <div className="bg-[#F4EFE6] border border-[#172228]/10 rounded-2xl p-6 sm:p-7 shadow-xs">
-                <h2 className="text-[15px] font-semibold tracking-wide text-[#111827] uppercase mb-4">
+                <div className="text-[15px] font-semibold tracking-wide text-[#111827] uppercase mb-4">
                   The short version
-                </h2>
+                </div>
                 <ul className="space-y-3.5">
                   {shortVersion.map((point, idx) => (
                     <li
@@ -576,7 +603,9 @@ export default async function BlogSlugPage({ params }: PageProps) {
                       {/* eslint-disable-next-line @next/next/no-img-element */}
                       <img
                         src={infographicSrc}
-                        alt={`${title} - Statutory Infographic`}
+                        alt={`${title.slice(0, 70)} - Statutory Guide`}
+                        width={1200}
+                        height={675}
                         className="w-full h-auto object-contain mx-auto max-h-[680px]"
                       />
                     </div>
@@ -828,9 +857,10 @@ export default async function BlogSlugPage({ params }: PageProps) {
                       <Image
                         src={rel.imageSrc}
                         alt={rel.title}
-                        fill
+                        width={800}
+                        height={500}
                         sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                        className="object-cover object-center group-hover:scale-105 transition-transform duration-500 ease-out"
+                        className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500 ease-out"
                       />
                     </div>
                   </Link>
@@ -856,8 +886,10 @@ export default async function BlogSlugPage({ params }: PageProps) {
 
                   <Link
                     href={`/blogs/${rel.slug}`}
+                    aria-label={`Read ${rel.title}`}
                     className="w-9 h-9 rounded-full border border-neutral-300/80 bg-white flex items-center justify-center text-[#172228] group-hover:bg-[#C65378] group-hover:text-white group-hover:border-[#C65378] transition-all shadow-xs"
                   >
+                    <span className="sr-only">Read {rel.title}</span>
                     <ArrowUpRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
                   </Link>
                 </div>

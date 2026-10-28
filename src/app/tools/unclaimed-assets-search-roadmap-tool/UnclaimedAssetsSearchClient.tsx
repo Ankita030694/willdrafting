@@ -770,9 +770,9 @@ Generated via WillDrafting.in Unclaimed Assets Search Roadmap Tool.`;
               <div className="relative w-full aspect-[16/9] sm:aspect-[1.91/1] bg-slate-900">
                 <Image
                   src="/images/unclaimed-assets-search-roadmap-tool-og.jpg"
-                  alt="Unclaimed Assets Search Roadmap Tool India: Tracing Deceased Parents Bank Accounts, Demat, and IEPF Assets"
-                  fill
-                  className="object-cover"
+                  alt="Unclaimed Assets Search Roadmap Tool India: Tracing Deceased Parents Bank Accounts"
+                  width={1200} height={675}
+                  className="absolute inset-0 w-full h-full object-cover"
                   priority
                 />
               </div>
@@ -2066,7 +2066,7 @@ Yours sincerely,
                 </p>
                 <div className="space-y-2 pt-1">
                   <Link
-                    href="/services/iepf-unclaimed-shares-bank-recovery"
+                    href="/services/succession-certificate"
                     className="w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-full bg-[#C65378] hover:bg-[#a33b5c] text-white font-bold text-xs transition-colors"
                   >
                     <span>View IEPF Recovery Service</span>

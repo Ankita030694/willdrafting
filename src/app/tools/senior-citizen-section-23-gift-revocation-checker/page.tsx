@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     absolute: "Cancel Gift Deed Eligibility Checker | WillDrafting", // exactly 51 characters
   },
   description:
-    "Use our free checker to see if parents can cancel a gift deed under Section 23 Senior Citizens Act. Assess statutory conditions and Supreme Court rulings.", // exactly 154 characters
+    "Use our free checker to see if parents can cancel a gift deed under Section 23 Senior Citizens Act. Assess statutory conditions and Supreme.", // exactly 154 characters
   keywords: [
     "can parents cancel gift deed eligibility checker",
     "section 23 senior citizen act gift deed cancellation",
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Cancel Gift Deed Eligibility Checker | WillDrafting",
     description:
-      "Use our free checker to see if parents can cancel a gift deed under Section 23 Senior Citizens Act. Assess statutory conditions and Supreme Court rulings.",
+      "Use our free checker to see if parents can cancel a gift deed under Section 23 Senior Citizens Act. Assess statutory conditions and Supreme.",
     url: "https://www.willdrafting.in/tools/senior-citizen-section-23-gift-revocation-checker",
     siteName: "WillDrafting.in",
     locale: "en_IN",
@@ -52,7 +52,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Cancel Gift Deed Eligibility Checker | WillDrafting",
     description:
-      "Use our free checker to see if parents can cancel a gift deed under Section 23 Senior Citizens Act. Assess statutory conditions and Supreme Court rulings.",
+      "Use our free checker to see if parents can cancel a gift deed under Section 23 Senior Citizens Act. Assess statutory conditions and Supreme.",
     images: ["https://www.willdrafting.in/images/senior-citizen-section-23-gift-revocation-checker-og.jpg"],
   },
   robots: {
@@ -89,7 +89,7 @@ export default function SeniorCitizenGiftRevocationPage() {
         url: canonicalUrl,
         name: "Cancel Gift Deed Eligibility Checker | WillDrafting",
         description:
-          "Use our free checker to see if parents can cancel a gift deed under Section 23 Senior Citizens Act. Assess statutory conditions and Supreme Court rulings.",
+          "Use our free checker to see if parents can cancel a gift deed under Section 23 Senior Citizens Act. Assess statutory conditions and Supreme.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -129,7 +129,7 @@ export default function SeniorCitizenGiftRevocationPage() {
         applicationCategory: "LegalApplication",
         operatingSystem: "All",
         description:
-          "Interactive diagnostic tool evaluating the 4 statutory conditions under Section 23 of the Maintenance and Welfare of Parents and Senior Citizens Act, 2007, Supreme Court precedents in Urmila Dixit (2025) and Sudesh Chhikara, and Maintenance Tribunal property recovery success probability.",
+          "Interactive diagnostic tool evaluating the 4 statutory conditions under Section 23 of the Maintenance and Welfare of Parents and Senior.",
         image: imageUrl,
         offers: {
           "@type": "Offer",

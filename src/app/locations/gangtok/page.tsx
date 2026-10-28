@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     absolute: "Will Drafting in Gangtok: Online Will & Land Law Guide",
   },
   description:
-    "Draft a valid Will in Gangtok. Guidance on Revenue Order No. 1 land rules, Bhutia-Lepcha succession, GMC property mutation, and SRO Gangtok registration.",
+    "Draft a valid Will in Gangtok. Guidance on Revenue Order No. 1 land rules, Bhutia-Lepcha succession, GMC property mutation, and SRO Gangtok.",
   keywords: [
     "will drafting in gangtok",
     "revenue order no 1 sikkim will",
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Will Drafting in Gangtok: Online Will & Land Law Guide",
     description:
-      "Draft a valid Will in Gangtok. Guidance on Revenue Order No. 1 land rules, Bhutia-Lepcha succession, GMC property mutation, and SRO Gangtok registration.",
+      "Draft a valid Will in Gangtok. Guidance on Revenue Order No. 1 land rules, Bhutia-Lepcha succession, GMC property mutation, and SRO Gangtok.",
     url: "https://www.willdrafting.in/locations/gangtok",
     siteName: "WillDrafting.in",
     locale: "en_IN",
@@ -65,7 +65,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Will Drafting in Gangtok: Online Will & Land Law Guide",
     description:
-      "Draft a valid Will in Gangtok. Guidance on Revenue Order No. 1 land rules, Bhutia-Lepcha succession, GMC property mutation, and SRO Gangtok registration.",
+      "Draft a valid Will in Gangtok. Guidance on Revenue Order No. 1 land rules, Bhutia-Lepcha succession, GMC property mutation, and SRO Gangtok.",
     images: ["https://www.willdrafting.in/images/will-drafting-in-gangtok-og.jpg"],
   },
   robots: {
@@ -145,7 +145,7 @@ export default function GangtokLocationPage() {
         url: canonicalUrl,
         name: "Will Drafting in Gangtok: Online Will & Land Law Guide",
         description:
-          "Draft a valid Will in Gangtok. Guidance on Revenue Order No. 1 land rules, Bhutia-Lepcha succession, GMC property mutation, and SRO Gangtok registration.",
+          "Draft a valid Will in Gangtok. Guidance on Revenue Order No. 1 land rules, Bhutia-Lepcha succession, GMC property mutation, and SRO Gangtok.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -192,7 +192,7 @@ export default function GangtokLocationPage() {
         "@id": `${canonicalUrl}#legalservice`,
         name: "WillDrafting Gangtok - Estate Planning & SRO Registration",
         description:
-          "Professional Will drafting, advocate verification, Revenue Order No. 1 compliance, and Sub-Registrar registration support across Gangtok, Sichey, Tadong, and Sikkim.",
+          "Professional Will drafting, advocate verification, Revenue Order No. 1 compliance, and Sub-Registrar registration support across Gangtok.",
         url: canonicalUrl,
         image: imageUrl,
         email: "hello@willdrafting.in",

@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     absolute: "Will Drafting in Delhi: Online Will Registration Guide",
   },
   description:
-    "Draft a legally valid Will in Delhi. Expert lawyer drafting, e-registration guidance at Sub-Registrar offices, and home execution support across NCR.",
+    "Draft a legally valid Will in Delhi. Expert lawyer drafting, e-registration guidance at Sub-Registrar offices, and home execution support.",
   keywords: [
     "will drafting in delhi",
     "will drafting in hauz khas",
@@ -54,7 +54,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Will Drafting in Delhi: Online Will Registration Guide",
     description:
-      "Draft a legally valid Will in Delhi. Expert lawyer drafting, e-registration guidance at Sub-Registrar offices, and home execution support across NCR.",
+      "Draft a legally valid Will in Delhi. Expert lawyer drafting, e-registration guidance at Sub-Registrar offices, and home execution support.",
     url: "https://www.willdrafting.in/locations/delhi",
     siteName: "WillDrafting.in",
     locale: "en_IN",
@@ -72,7 +72,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Will Drafting in Delhi: Online Will Registration Guide",
     description:
-      "Draft a legally valid Will in Delhi. Expert lawyer drafting, e-registration guidance at Sub-Registrar offices, and home execution support across NCR.",
+      "Draft a legally valid Will in Delhi. Expert lawyer drafting, e-registration guidance at Sub-Registrar offices, and home execution support.",
     images: ["https://www.willdrafting.in/images/will-drafting-in-delhi-og.jpg"],
   },
   robots: {
@@ -144,7 +144,7 @@ export default function DelhiLocationPage() {
         url: canonicalUrl,
         name: "Will Drafting in Delhi: Online Will Registration Guide",
         description:
-          "Draft a legally valid Will in Delhi. Expert lawyer drafting, e-registration guidance at Sub-Registrar offices, and home execution support across NCR.",
+          "Draft a legally valid Will in Delhi. Expert lawyer drafting, e-registration guidance at Sub-Registrar offices, and home execution support.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",

@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     absolute: "Will Drafting in Tamil Nadu: Registration & Probate Law",
   },
   description:
-    "Draft your Will in Tamil Nadu with advocate help. Clear guidance on Madras High Court probate rules, TNREGINET registration, and Patta name change.",
+    "Draft your Will in Tamil Nadu with advocate help. Clear guidance on Madras High Court probate rules, TNREGINET registration, and Patta name.",
   keywords: [
     "will drafting in tamil nadu",
     "will registration tnreginet",
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Will Drafting in Tamil Nadu: Registration & Probate Law",
     description:
-      "Draft your Will in Tamil Nadu with advocate help. Clear guidance on Madras High Court probate rules, TNREGINET registration, and Patta name change.",
+      "Draft your Will in Tamil Nadu with advocate help. Clear guidance on Madras High Court probate rules, TNREGINET registration, and Patta name.",
     url: "https://www.willdrafting.in/locations/tamil-nadu",
     siteName: "WillDrafting.in",
     locale: "en_IN",
@@ -62,7 +62,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Will Drafting in Tamil Nadu: Registration & Probate Law",
     description:
-      "Draft your Will in Tamil Nadu with advocate help. Clear guidance on Madras High Court probate rules, TNREGINET registration, and Patta name change.",
+      "Draft your Will in Tamil Nadu with advocate help. Clear guidance on Madras High Court probate rules, TNREGINET registration, and Patta name.",
     images: ["https://www.willdrafting.in/images/will-drafting-in-tamil-nadu-og.jpg"],
   },
   robots: {
@@ -142,7 +142,7 @@ export default function TamilNaduLocationPage() {
         url: canonicalUrl,
         name: "Will Drafting in Tamil Nadu: Registration & Probate Law",
         description:
-          "Draft your Will in Tamil Nadu with advocate help. Clear guidance on Madras High Court probate rules, TNREGINET registration, and Patta name change.",
+          "Draft your Will in Tamil Nadu with advocate help. Clear guidance on Madras High Court probate rules, TNREGINET registration, and Patta name.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -189,7 +189,7 @@ export default function TamilNaduLocationPage() {
         "@id": `${canonicalUrl}#legalservice`,
         name: "WillDrafting Tamil Nadu - Estate Planning & SRO Registration",
         description:
-          "Professional Will drafting, advocate verification, TNREGINET token booking, Madras High Court probate counsel, and doorstep execution support across Tamil Nadu.",
+          "Professional Will drafting, advocate verification, TNREGINET token booking, Madras High Court probate counsel, and doorstep execution support.",
         url: canonicalUrl,
         image: imageUrl,
         email: "hello@willdrafting.in",

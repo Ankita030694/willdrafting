@@ -193,7 +193,7 @@ export default function BengaluruLocationPage() {
         "@id": `${canonicalUrl}#legalservice`,
         name: "WillDrafting Bengaluru - Estate Planning & Kaveri 2.0 Registration",
         description:
-          "Professional Will drafting, tech startup estate advisory, and Kaveri 2.0 Sub-Registrar Office registration support across Bengaluru Urban and Rural districts.",
+          "Professional Will drafting, tech startup estate advisory, and Kaveri 2.0 Sub-Registrar Office registration support across Bengaluru Urban and.",
         url: canonicalUrl,
         image: imageUrl,
         telephone: "+91-8700343611",

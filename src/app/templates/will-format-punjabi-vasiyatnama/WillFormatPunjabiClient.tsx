@@ -657,7 +657,7 @@ Doctor Signature & Official Seal: __________________________"`;
               <div className="relative w-full">
                 <Image
                   src="/images/will-format-punjabi-vasiyatnama-og.jpg"
-                  alt="ਵਸੀਅਤਨਾਮਾ ਫਾਰਮੈਟ ਪੰਜਾਬੀ - Will Format in Punjabi Legal Document Structure with Agricultural Khewat and NRI Clauses"
+                  alt="ਵਸੀਅਤਨਾਮਾ ਫਾਰਮੈਟ ਪੰਜਾਬੀ - Will Format in Punjabi Legal Document Structure with"
                   width={1200}
                   height={675}
                   className="w-full h-auto object-cover"
@@ -1467,7 +1467,7 @@ Doctor Signature & Official Seal: __________________________"`;
                     <ExternalLink className="w-3 h-3" />
                   </a>
                   <a
-                    href="https://ngdrs.punjab.gov.in"
+                    href="https://jamabandi.punjab.gov.in"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-blue-50 text-blue-800 hover:bg-blue-100 font-semibold"

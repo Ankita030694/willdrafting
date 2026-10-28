@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     absolute: "HUF Property Share Calculator | WillDrafting India", // exactly 50 characters
   },
   description:
-    "Use our free HUF property share calculator under Section 6 Hindu Succession Act. Compute notional partition, daughter rights, and Wills with WillDrafting.", // exactly 154 characters
+    "Use our free HUF property share calculator under Section 6 Hindu Succession Act. Compute notional partition, daughter rights, and Wills with.", // exactly 154 characters
   keywords: [
     "huf property share calculator",
     "ancestral property share calculator india",
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "HUF Property Share Calculator | WillDrafting India",
     description:
-      "Use our free HUF property share calculator under Section 6 Hindu Succession Act. Compute notional partition, daughter rights, and Wills with WillDrafting.",
+      "Use our free HUF property share calculator under Section 6 Hindu Succession Act. Compute notional partition, daughter rights, and Wills with.",
     url: "https://www.willdrafting.in/tools/huf-coparcenary-share-partition-calculator",
     siteName: "WillDrafting.in",
     locale: "en_IN",
@@ -53,7 +53,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "HUF Property Share Calculator | WillDrafting India",
     description:
-      "Use our free HUF property share calculator under Section 6 Hindu Succession Act. Compute notional partition, daughter rights, and Wills with WillDrafting.",
+      "Use our free HUF property share calculator under Section 6 Hindu Succession Act. Compute notional partition, daughter rights, and Wills with.",
     images: ["https://www.willdrafting.in/images/huf-coparcenary-share-partition-calculator-og.jpg"],
   },
   robots: {
@@ -90,7 +90,7 @@ export default function HufPartitionCalculatorPage() {
         url: canonicalUrl,
         name: "HUF Property Share Calculator | WillDrafting India",
         description:
-          "Use our free HUF property share calculator under Section 6 Hindu Succession Act. Compute notional partition, daughter rights, and Wills with WillDrafting.",
+          "Use our free HUF property share calculator under Section 6 Hindu Succession Act. Compute notional partition, daughter rights, and Wills with.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -130,7 +130,7 @@ export default function HufPartitionCalculatorPage() {
         applicationCategory: "LegalApplication",
         operatingSystem: "All",
         description:
-          "Interactive legal calculator computing 2-stage Hindu Undivided Family partition shares under Section 6, Section 8, and Section 30 of the Hindu Succession Act, 1956.",
+          "Interactive legal calculator computing 2-stage Hindu Undivided Family partition shares under Section 6, Section 8, and Section 30 of the Hindu.",
         image: imageUrl,
         offers: {
           "@type": "Offer",

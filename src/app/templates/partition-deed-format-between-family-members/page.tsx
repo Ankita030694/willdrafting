@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     absolute: "Partition Deed Format Between Brothers India | WillDrafting", // exactly 59 characters
   },
   description:
-    "Download legally valid partition deed format between brothers in India. Features floor-wise UDS schedules, Owelty clauses, and SRO stamp duty rules.", // exactly 147 characters
+    "Download legally valid partition deed format between brothers in India. Features floor-wise UDS schedules, Owelty clauses, and SRO stamp duty.", // exactly 147 characters
   keywords: [
     "partition deed format between brothers india",
     "family property partition deed format word pdf",
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Partition Deed Format Between Brothers India | WillDrafting",
     description:
-      "Download legally valid partition deed format between brothers in India. Features floor-wise UDS schedules, Owelty clauses, and SRO stamp duty rules.",
+      "Download legally valid partition deed format between brothers in India. Features floor-wise UDS schedules, Owelty clauses, and SRO stamp duty.",
     url: "https://www.willdrafting.in/templates/partition-deed-format-between-family-members",
     siteName: "WillDrafting.in",
     locale: "en_IN",
@@ -53,7 +53,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Partition Deed Format Between Brothers India | WillDrafting",
     description:
-      "Download legally valid partition deed format between brothers in India. Features floor-wise UDS schedules, Owelty clauses, and SRO stamp duty rules.",
+      "Download legally valid partition deed format between brothers in India. Features floor-wise UDS schedules, Owelty clauses, and SRO stamp duty.",
     images: ["https://www.willdrafting.in/images/partition-deed-format-between-family-members-og.jpg"],
   },
   robots: {
@@ -90,7 +90,7 @@ export default function PartitionDeedFormatPage() {
         url: canonicalUrl,
         name: "Partition Deed Format Between Brothers India | WillDrafting",
         description:
-          "Download legally valid partition deed format between brothers in India. Features floor-wise UDS schedules, Owelty clauses, and SRO stamp duty rules.",
+          "Download legally valid partition deed format between brothers in India. Features floor-wise UDS schedules, Owelty clauses, and SRO stamp duty.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -128,7 +128,7 @@ export default function PartitionDeedFormatPage() {
         name: "Partition Deed Format Between Brothers & Family Members India",
         url: canonicalUrl,
         description:
-          "Comprehensive statutory registered partition deed template for dividing ancestral and multi-floor family real estate in India, compliant with Section 17 Registration Act and Indian Stamp Act.",
+          "Comprehensive statutory registered partition deed template for dividing ancestral and multi-floor family real estate in India, compliant with.",
         fileFormat: "text/html",
         isAccessibleForFree: true,
         image: imageUrl,

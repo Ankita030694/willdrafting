@@ -14,10 +14,10 @@ export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Indian Succession Law & Will Drafting Guides | WillDrafting.in",
+    absolute: "Indian Succession Law & Will Guides | WillDrafting.in",
   },
   description:
-    "Authoritative guides on Indian succession law, Section 63 Will rules, Hindu Succession Act, Muslim Wasiyat, NRI estate planning, and Sub-Registrar fees.",
+    "Authoritative guides on Indian succession law, Section 63 Will rules, Hindu Succession Act, Muslim Wasiyat, NRI estate planning, and.",
   keywords: [
     "indian succession law guides",
     "will drafting rules india blog",
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Indian Succession Law & Will Drafting Guides | WillDrafting.in",
     description:
-      "Authoritative guides on Indian succession law, Section 63 Will rules, Hindu Succession Act, Muslim Wasiyat, NRI estate planning, and Sub-Registrar fees.",
+      "Authoritative guides on Indian succession law, Section 63 Will rules, Hindu Succession Act, Muslim Wasiyat, NRI estate planning, and.",
     url: "https://www.willdrafting.in/blogs",
     siteName: "WillDrafting.in",
     locale: "en_IN",
@@ -54,7 +54,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Indian Succession Law Guides & Will Drafting Rules Blog | WillDrafting.in",
     description:
-      "Authoritative guides on Indian succession law, Will drafting rules under the Indian Succession Act 1925, Hindu Succession Act 1956, Muslim Wasiyat, NRI estate planning & probate.",
+      "Authoritative guides on Indian succession law, Will drafting rules under the Indian Succession Act 1925, Hindu Succession Act 1956, Muslim.",
     images: ["/desktopusp.jpg"],
   },
   robots: {
@@ -75,7 +75,7 @@ const BLOGS_SCHEMA = {
       url: "https://www.willdrafting.in/blogs",
       name: "Indian Succession Law Guides & Will Drafting Rules Blog | WillDrafting.in",
       description:
-        "Authoritative guides on Indian succession law, Will drafting rules under the Indian Succession Act 1925, Hindu Succession Act 1956, Muslim Wasiyat, NRI estate planning & probate.",
+        "Authoritative guides on Indian succession law, Will drafting rules under the Indian Succession Act 1925, Hindu Succession Act 1956, Muslim.",
       publisher: {
         "@id": "https://www.willdrafting.in/#organization",
       },
@@ -197,11 +197,12 @@ export default async function BlogsPage() {
                   <div className="relative w-full aspect-[16/10] rounded-xl overflow-hidden mb-6 bg-neutral-200 border border-[#172228]/5 shadow-xs">
                     <Image
                       src={article.imageSrc}
-                      alt={article.title}
-                      fill
+                      alt={article.title.slice(0, 85)}
+                      width={800}
+                      height={500}
                       unoptimized={article.imageSrc.startsWith("/api/")}
                       sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                      className="object-cover object-center group-hover:scale-105 transition-transform duration-500 ease-out"
+                      className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500 ease-out"
                     />
                   </div>
                 </Link>

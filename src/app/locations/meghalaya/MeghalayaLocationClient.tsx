@@ -307,8 +307,8 @@ export default function MeghalayaLocationClient({ faqs }: Props) {
                 <Image
                   src="/images/will-drafting-in-meghalaya.jpg"
                   alt="Legal Will Drafting and Matrilineal Property Succession in Meghalaya"
-                  fill
-                  className="object-contain group-hover:scale-102 transition-transform duration-500"
+                  width={1200} height={675}
+                  className="absolute inset-0 w-full h-full object-contain group-hover:scale-102 transition-transform duration-500"
                   priority
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 40vw"
                 />
@@ -417,7 +417,7 @@ export default function MeghalayaLocationClient({ faqs }: Props) {
             {/* QUICK CTA CARD */}
             <div className="p-5 rounded-2xl bg-[#172228] text-white text-center space-y-3 shadow-md">
               <ShieldCheck className="w-8 h-8 text-[#C65378] mx-auto" />
-              <h4 className="text-sm font-bold text-white">Protect Your Legacy</h4>
+              <div className="text-sm font-bold text-white">Protect Your Legacy</div>
               <p className="text-xs text-slate-300">
                 Draft a legally airtight Will harmonizing Meghalaya customary succession and self-acquired assets.
               </p>
@@ -1775,8 +1775,8 @@ export default function MeghalayaLocationClient({ faqs }: Props) {
             <Image
               src="/images/will-drafting-in-meghalaya.jpg"
               alt="Legal Will Drafting and Matrilineal Property Succession in Meghalaya"
-              fill
-              className="object-contain"
+              width={1200} height={675}
+              className="absolute inset-0 w-full h-full object-contain"
             />
             <button
               onClick={() => setShowHighResModal(false)}

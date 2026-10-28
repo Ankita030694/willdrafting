@@ -1046,9 +1046,9 @@ NOW THEREFORE, in consideration of the Depository Participant / Registrar and Tr
                 <Image
                   src="/images/demat-mutual-fund-transmission-document-finder-og.jpg"
                   alt="SEBI Demat and Mutual Fund Transmission Document Finder and Legal Checklist"
-                  fill
+                  width={1200} height={675}
                   priority
-                  className="object-cover"
+                  className="absolute inset-0 w-full h-full object-cover"
                   sizes="(max-width: 1200px) 100vw, 1200px"
                 />
               </div>
@@ -1743,7 +1743,7 @@ NOW THEREFORE, in consideration of the Depository Participant / Registrar and Tr
                     <ExternalLink className="w-3 h-3" />
                   </a>
                   <a
-                    href="https://nsdl.co.in"
+                    href="https://www.cdslindia.com"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-blue-50 text-blue-800 hover:bg-blue-100 font-semibold"
@@ -1752,7 +1752,7 @@ NOW THEREFORE, in consideration of the Depository Participant / Registrar and Tr
                     <ExternalLink className="w-3 h-3" />
                   </a>
                   <a
-                    href="https://www.camsonline.com"
+                    href="https://www.kfintech.com"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-slate-100 text-slate-800 hover:bg-slate-200 font-semibold"

@@ -300,8 +300,8 @@ export default function JammuAndKashmirLocationClient({ faqs }: Props) {
                 <Image
                   src="/images/will-drafting-in-jammu-and-kashmir.jpg"
                   alt="Legal Will Drafting and Property Succession in Jammu and Kashmir"
-                  fill
-                  className="object-contain group-hover:scale-102 transition-transform duration-500"
+                  width={1200} height={675}
+                  className="absolute inset-0 w-full h-full object-contain group-hover:scale-102 transition-transform duration-500"
                   priority
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 40vw"
                 />
@@ -1819,8 +1819,8 @@ export default function JammuAndKashmirLocationClient({ faqs }: Props) {
               <Image
                 src="/images/will-drafting-in-jammu-and-kashmir.jpg"
                 alt="Legal Will Drafting and Property Succession in Jammu and Kashmir"
-                fill
-                className="object-contain"
+                width={1200} height={675}
+                className="absolute inset-0 w-full h-full object-contain"
               />
             </div>
             <div className="p-4 flex items-center justify-between text-xs text-white">

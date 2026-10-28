@@ -333,9 +333,9 @@ export default function HousingSocietyTransmissionClient() {
                 <Image
                   src="/images/housing-society-transmission-indemnity-appendix-format-og.jpg"
                   alt="Housing Society Share Transfer After Death Appendix 15 16 17 and 19 Indemnity Bond Formats"
-                  fill
+                  width={1200} height={675}
                   priority
-                  className="object-cover"
+                  className="absolute inset-0 w-full h-full object-cover"
                 />
               </div>
               <div className="p-4 sm:p-5 bg-gradient-to-b from-white to-[#FAF7F0] border-t border-slate-100 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 text-xs">

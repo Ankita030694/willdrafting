@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     absolute: "Probate of Will Lawyers India: Get Court Probate Fast",
   },
   description:
-    "Hire expert probate lawyers in India. We handle High Court probate petitions, contested Wills, and Letters of Administration with complete legal backing.",
+    "Hire expert probate lawyers in India. We handle High Court probate petitions, contested Wills, and Letters of Administration with complete.",
   keywords: [
     "probate of will lawyer",
     "probate services",
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Probate of Will Lawyers India: Get Court Probate Fast",
     description:
-      "Hire expert probate lawyers in India. We handle High Court probate petitions, contested Wills, and Letters of Administration with complete legal backing.",
+      "Hire expert probate lawyers in India. We handle High Court probate petitions, contested Wills, and Letters of Administration with complete.",
     url: "https://www.willdrafting.in/services/probate-lawyer",
     siteName: "WillDrafting.in",
     locale: "en_IN",
@@ -55,7 +55,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Probate of Will Lawyers India: Get Court Probate Fast",
     description:
-      "Hire expert probate lawyers in India. We handle High Court probate petitions, contested Wills, and Letters of Administration with complete legal backing.",
+      "Hire expert probate lawyers in India. We handle High Court probate petitions, contested Wills, and Letters of Administration with complete.",
     images: ["https://www.willdrafting.in/images/probate-lawyer-og.jpg"],
   },
   robots: {
@@ -94,7 +94,7 @@ export default function ProbateLawyerPage() {
         logo: "https://www.willdrafting.in/Logofinal.svg",
         image: imageUrl,
         description:
-          "Pan-India testamentary legal counsel specializing in High Court and District Court probate petitions, Letters of Administration, and contested Will litigation.",
+          "Pan-India testamentary legal counsel specializing in High Court and District Court probate petitions, Letters of Administration, and contested.",
         priceRange: "₹₹₹",
         address: {
           "@type": "PostalAddress",
@@ -151,7 +151,7 @@ export default function ProbateLawyerPage() {
         url: canonicalUrl,
         name: "Probate of Will Lawyers India: Get Court Probate Fast",
         description:
-          "Hire expert probate lawyers in India. We handle High Court probate petitions, contested Wills, and Letters of Administration with complete legal backing.",
+          "Hire expert probate lawyers in India. We handle High Court probate petitions, contested Wills, and Letters of Administration with complete.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",

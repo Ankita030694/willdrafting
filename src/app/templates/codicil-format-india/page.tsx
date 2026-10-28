@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     absolute: "Codicil Format in India: Amend a Will | WillDrafting",
   },
   description:
-    "Download a legally valid Codicil format in India. Learn Section 63 witness rules, Codicil vs New Will guide, and amend your Will safely at WillDrafting.",
+    "Download a legally valid Codicil format in India. Learn Section 63 witness rules, Codicil vs New Will guide, and amend your Will safely at.",
   keywords: [
     "codicil format",
     "how to change a will",
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Codicil Format in India: Amend a Will | WillDrafting",
     description:
-      "Download a legally valid Codicil format in India. Learn Section 63 witness rules, Codicil vs New Will guide, and amend your Will safely at WillDrafting.",
+      "Download a legally valid Codicil format in India. Learn Section 63 witness rules, Codicil vs New Will guide, and amend your Will safely at.",
     url: "https://www.willdrafting.in/templates/codicil-format-india",
     siteName: "WillDrafting.in",
     locale: "en_IN",
@@ -52,7 +52,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Codicil Format in India: Amend a Will | WillDrafting",
     description:
-      "Download a legally valid Codicil format in India. Learn Section 63 witness rules, Codicil vs New Will guide, and amend your Will safely at WillDrafting.",
+      "Download a legally valid Codicil format in India. Learn Section 63 witness rules, Codicil vs New Will guide, and amend your Will safely at.",
     images: ["https://www.willdrafting.in/images/codicil-format-india-og.jpg"],
   },
   robots: {
@@ -89,7 +89,7 @@ export default function CodicilFormatIndiaPage() {
         url: canonicalUrl,
         name: "Codicil Format in India: Amend a Will | WillDrafting",
         description:
-          "Download a legally valid Codicil format in India. Learn Section 63 witness rules, Codicil vs New Will guide, and amend your Will safely at WillDrafting.",
+          "Download a legally valid Codicil format in India. Learn Section 63 witness rules, Codicil vs New Will guide, and amend your Will safely at.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",

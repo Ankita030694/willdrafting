@@ -288,8 +288,8 @@ export default function MumbaiLocationClient({ faqs }: Props) {
                 <Image
                   src="/images/will-drafting-in-mumbai.jpg"
                   alt="Legal Will Drafting and Probate Support Services in Mumbai"
-                  fill
-                  className="object-cover group-hover:scale-105 transition-transform duration-500"
+                  width={1200} height={675}
+                  className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   priority
                 />
               </div>
@@ -1864,8 +1864,8 @@ export default function MumbaiLocationClient({ faqs }: Props) {
               <Image
                 src="/images/will-drafting-in-mumbai.jpg"
                 alt="High Resolution Visual Blueprint: Mumbai Will Drafting and Probate Support"
-                fill
-                className="object-contain"
+                width={1200} height={675}
+                className="absolute inset-0 w-full h-full object-contain"
               />
             </div>
           </div>

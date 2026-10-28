@@ -316,8 +316,8 @@ export default function KozhikodeLocationClient({ faqs }: Props) {
                 <Image
                   src="/images/will-drafting-in-kozhikode.jpg"
                   alt="Online Will Drafting and NRI Succession Planning in Kozhikode Kerala"
-                  fill
-                  className="object-contain group-hover:scale-105 transition-transform duration-500"
+                  width={1200} height={675}
+                  className="absolute inset-0 w-full h-full object-contain group-hover:scale-105 transition-transform duration-500"
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 42vw"
                   priority
                 />
@@ -1612,7 +1612,7 @@ export default function KozhikodeLocationClient({ faqs }: Props) {
                     </ul>
                   </div>
                   <a
-                    href="/service/will-registration"
+                    href="/services/will-registration"
                     className="w-full py-3 px-4 rounded-xl border border-slate-300 font-bold text-xs text-slate-700 hover:bg-slate-50 text-center transition-all"
                   >
                     Select ₹9,990 Plan
@@ -1745,7 +1745,7 @@ export default function KozhikodeLocationClient({ faqs }: Props) {
                     Interactive Will Checklist
                   </Link>
                   <Link
-                    href="/service/will-registration"
+                    href="/services/will-registration"
                     className="px-3 py-1.5 rounded-lg bg-white border border-slate-200 text-slate-700 hover:border-[#C65378] hover:text-[#C65378] transition-all font-medium"
                   >
                     SRO Will Registration Assistance
@@ -1791,8 +1791,8 @@ export default function KozhikodeLocationClient({ faqs }: Props) {
               <Image
                 src="/images/will-drafting-in-kozhikode.jpg"
                 alt="High Resolution Visual Blueprint: Kozhikode Will Drafting and NRI Succession Support"
-                fill
-                className="object-contain"
+                width={1200} height={675}
+                className="absolute inset-0 w-full h-full object-contain"
               />
             </div>
           </div>
