@@ -983,9 +983,9 @@ export default function WillChecklistClient() {
                   INTERACTIVE PLANNING ENGINE
                 </span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug mb-3">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug mb-3">
                 2. Interactive Will Checklist: 15 Assets &amp; Appointments
-              </h2>
+              </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed mb-6 font-normal">
                 Select the asset categories you own below. Check off the documents you have gathered. The tool calculates your Will-Readiness Score in real time and compiles a personalized document dossier.
               </p>
@@ -1312,9 +1312,9 @@ export default function WillChecklistClient() {
                   STATUTORY EVIDENCE REQUIREMENTS
                 </span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
                 3. Testator Identification &amp; Medical Fitness Documents
-              </h2>
+              </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed font-normal">
                 Under Section 59 of the Indian Succession Act, 1925, every person of sound mind not being a minor may dispose of their property by Will. To make a Will bulletproof against frivolous legal challenges, documentation begins with proof of legal identity and testamentary capacity.
               </p>
@@ -1363,9 +1363,9 @@ export default function WillChecklistClient() {
                   CROSS-CATEGORY COMPLIANCE MATRIX
                 </span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
                 4. Comprehensive 15-Asset Documentation Matrix
-              </h2>
+              </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed font-normal">
                 The table below outlines the exact documents, critical identifying clauses, and legal risks for each asset category in India. Use this matrix when assembling your family records.
               </p>
@@ -1458,9 +1458,9 @@ export default function WillChecklistClient() {
                   CRITICAL STATUTORY APPOINTMENTS
                 </span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
                 5. Testamentary Appointments: Executor &amp; Guardian Rules
-              </h2>
+              </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed font-normal">
                 A Will is only as effective as the people appointed to execute it. In India, appointing the right legal officers avoids the high cost of applying for Letters of Administration from the District Court or High Court.
               </p>
@@ -1559,9 +1559,9 @@ export default function WillChecklistClient() {
                   VISUAL BLUEPRINT
                 </span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
                 6. Visual Blueprint: 4 Pillars of a Challenge-Proof Will
-              </h2>
+              </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed font-normal">
                 This diagram illustrates the four essential statutory pillars of Indian Will drafting: Testator proof, asset ownership documents, legal appointments, and execution formalities under Section 63.
               </p>
@@ -1602,9 +1602,9 @@ export default function WillChecklistClient() {
                   VERIFIED EXECUTION PROTOCOL
                 </span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
                 7. Step-by-Step SOP: Checklist to Legally Executed Will
-              </h2>
+              </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed font-normal">
                 Follow this six-stage standard operating procedure to transition from gathering documents to executing a legally binding Will in India.
               </p>
@@ -1678,9 +1678,9 @@ export default function WillChecklistClient() {
                   DEFENSIVE DRAFTING WARNINGS
                 </span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
                 8. Four Fatal Checklist Mistakes to Avoid in India
-              </h2>
+              </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed font-normal">
                 Even sophisticated families make documentation mistakes that lead to years of high court litigation. Avoid these four common traps.
               </p>
@@ -1739,9 +1739,9 @@ export default function WillChecklistClient() {
                   SPECIAL ESTATE SITUATIONS
                 </span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
                 9. Special Scenarios: NRIs, HUF &amp; Digital Currencies
-              </h2>
+              </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed font-normal">
                 Certain estate types require specialized documentation checklists to ensure cross-border and corporate compliance.
               </p>
@@ -1814,9 +1814,9 @@ export default function WillChecklistClient() {
                   STATUTORY VALIDITY COMPARISON
                 </span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
                 10. Plain Paper Validity vs SRO Will Registration Rules
-              </h2>
+              </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed font-normal">
                 Many testators spend unnecessary money on stamp paper. Understand the statutory distinction between a plain paper Will and a registered Will in India.
               </p>
@@ -1877,9 +1877,9 @@ export default function WillChecklistClient() {
                   INSTITUTIONAL LEGAL SOLUTIONS
                 </span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-white tracking-tight leading-snug">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-white tracking-tight leading-snug">
                 11. Institutional Verification: AMA Succession Services
-              </h2>
+              </h3>
               <p className="text-sm md:text-base text-slate-200 leading-relaxed font-normal">
                 WillDrafting.in is powered by AMA Legal Solutions, a premier Indian succession law practice. Our advocates verify estate documents, resolve complex ancestral land titles, and draft customized testamentary instruments for families across 28 Indian states.
               </p>
@@ -1947,9 +1947,9 @@ export default function WillChecklistClient() {
                   DIRECT LEGAL ANSWERS
                 </span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
                 12. Frequently Asked Questions: Documents for Indian Will
-              </h2>
+              </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed font-normal">
                 Clear answers to common questions regarding document requirements, stamp paper, registration, and witness formalities in India.
               </p>
@@ -1995,9 +1995,9 @@ export default function WillChecklistClient() {
                   LEGAL AUTHORITIES &amp; STATUTORY CUSTODY
                 </span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
                 13. Statutory Citations &amp; Verified Government Portals
-              </h2>
+              </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed font-normal">
                 All checklist rules on this page adhere to established Indian succession statutes and Supreme Court binding authorities.
               </p>

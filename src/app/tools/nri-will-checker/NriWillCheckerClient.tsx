@@ -534,9 +534,9 @@ export default function NriWillCheckerClient() {
                   </span>
                 </div>
 
-                <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] mb-3">
+                <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] mb-3">
                   2. Interactive Diagnostic: Do You Need an Indian Will?
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-600 mb-8 max-w-3xl">
                   Select your country of residence, Indian asset holdings, and existing Will status below. Our diagnostic engine evaluates your legal risk profile under Indian private international law in real time.
                 </p>
@@ -876,9 +876,9 @@ export default function NriWillCheckerClient() {
                   PRIVATE INTERNATIONAL LAW &bull; JURISDICTIONAL HARMONY
                 </span>
               </div>
-              <h2 className="text-xl sm:text-2xl font-extrabold text-[#172228] mb-4">
+              <h3 className="text-xl sm:text-2xl font-extrabold text-[#172228] mb-4">
                 3. Two-Will Strategy: Lex Loci Rei Sitae &amp; Jurisdiction
-              </h2>
+              </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed mb-4">
                 Under the legal rule of <em>lex loci rei sitae</em>, real estate is governed by the laws of the place where it sits. This principle is set out in Section 5 of the Indian Succession Act. Foreign courts have no direct authority over Indian property records.
               </p>
@@ -927,9 +927,9 @@ export default function NriWillCheckerClient() {
                   RESERVE BANK OF INDIA &bull; STATUTORY FRAMEWORK
                 </span>
               </div>
-              <h2 className="text-xl sm:text-2xl font-extrabold text-[#172228] mb-4">
+              <h3 className="text-xl sm:text-2xl font-extrabold text-[#172228] mb-4">
                 4. FEMA Succession Rules: Section 6(5) &amp; Land Rights
-              </h2>
+              </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed mb-4">
                 The Reserve Bank of India regulates Indian property owned by NRIs and OCIs under the Foreign Exchange Management Act (FEMA), 1999 and the FEMA Non-Debt Instruments Rules, 2019.
               </p>
@@ -1003,9 +1003,9 @@ export default function NriWillCheckerClient() {
                   STRATEGIC EVALUATION &bull; HEAD-TO-HEAD MATRIX
                 </span>
               </div>
-              <h2 className="text-xl sm:text-2xl font-extrabold text-[#172228] mb-4">
+              <h3 className="text-xl sm:text-2xl font-extrabold text-[#172228] mb-4">
                 5. Strategy Comparison: Single Foreign Will vs Two Wills
-              </h2>
+              </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed mb-6">
                 Compare the single foreign Will approach with the Two-Will strategy below. Notice how having an Indian Will saves time, money, and court stress:
               </p>
@@ -1089,9 +1089,9 @@ export default function NriWillCheckerClient() {
                   STATUTORY RE-SEALING &bull; SECTION 228 EXPLAINED
                 </span>
               </div>
-              <h2 className="text-xl sm:text-2xl font-extrabold text-[#172228] mb-4">
+              <h3 className="text-xl sm:text-2xl font-extrabold text-[#172228] mb-4">
                 6. Section 228 ISA 1925: The Foreign Probate Hurdle
-              </h2>
+              </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed mb-4">
                 Many NRIs think foreign court probate grants work directly in India. Indian banks and land registries do not accept foreign court grants. They cannot act on decrees from courts outside India.
               </p>
@@ -1157,9 +1157,9 @@ export default function NriWillCheckerClient() {
                   VISUAL BLUEPRINT &bull; CROSS-BORDER SUCCESSION PATHWAYS
                 </span>
               </div>
-              <h2 className="text-xl sm:text-2xl font-extrabold text-[#172228] mb-4">
+              <h3 className="text-xl sm:text-2xl font-extrabold text-[#172228] mb-4">
                 7. Succession Visual Blueprint: Cross-Border Flowchart
-              </h2>
+              </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed mb-6">
                 The visual flowchart below compares Path A (relying only on a foreign Will) with Path B (the Two-Will Strategy):
               </p>
@@ -1201,9 +1201,9 @@ export default function NriWillCheckerClient() {
                   OPERATIONAL PROTOCOL &bull; STEP-BY-STEP EXECUTION
                 </span>
               </div>
-              <h2 className="text-xl sm:text-2xl font-extrabold text-[#172228] mb-4">
+              <h3 className="text-xl sm:text-2xl font-extrabold text-[#172228] mb-4">
                 8. Execution Protocol: How NRIs Sign an Indian Will Abroad
-              </h2>
+              </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed mb-6">
                 You do not need to travel to India to sign a valid Indian Will. Under Section 63 of the Indian Succession Act, you can sign it in your home country:
               </p>
@@ -1279,9 +1279,9 @@ export default function NriWillCheckerClient() {
                   WEALTH SHIELD &bull; FOUR ASSET DEFENSE PILLARS
                 </span>
               </div>
-              <h2 className="text-xl sm:text-2xl font-extrabold text-[#172228] mb-4">
+              <h3 className="text-xl sm:text-2xl font-extrabold text-[#172228] mb-4">
                 9. 2x2 Asset Protection Grid: Protecting Overseas Wealth
-              </h2>
+              </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed mb-6">
                 A dedicated Indian Will protects each asset class against delays, disputes, and penalties:
               </p>
@@ -1348,9 +1348,9 @@ export default function NriWillCheckerClient() {
                   CROSS-BORDER BANKING &bull; RBI REPATRIATION SOP
                 </span>
               </div>
-              <h2 className="text-xl sm:text-2xl font-extrabold text-[#172228] mb-4">
+              <h3 className="text-xl sm:text-2xl font-extrabold text-[#172228] mb-4">
                 10. Repatriation Matrix: NRO to NRE Remittance Compliance
-              </h2>
+              </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed mb-4">
                 After inheriting assets, NRI heirs often want to convert rupees into foreign currency and send them home. The Reserve Bank of India permits this under the NRI Repatriation Facility.
               </p>
@@ -1407,9 +1407,9 @@ export default function NriWillCheckerClient() {
                   POST-DEATH TIMELINE &bull; TRANSMISSION MILESTONES
                 </span>
               </div>
-              <h2 className="text-xl sm:text-2xl font-extrabold text-[#172228] mb-4">
+              <h3 className="text-xl sm:text-2xl font-extrabold text-[#172228] mb-4">
                 11. Post-Death Transmission Timeline: NRI Asset Recovery
-              </h2>
+              </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed mb-6">
                 Below is the expected timeline for settling Indian assets with an Indian Will compared to a foreign Will:
               </p>
@@ -1465,9 +1465,9 @@ export default function NriWillCheckerClient() {
                   CASE STUDIES &bull; COMPLEX CROSS-BORDER STRUCTURES
                 </span>
               </div>
-              <h2 className="text-xl sm:text-2xl font-extrabold text-[#172228] mb-4">
+              <h3 className="text-xl sm:text-2xl font-extrabold text-[#172228] mb-4">
                 12. Four Specialized Cross-Border Succession Scenarios
-              </h2>
+              </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed mb-6">
                 Different legal rules apply based on your domicile and asset setup:
               </p>
@@ -1526,9 +1526,9 @@ export default function NriWillCheckerClient() {
                   AMA LEGAL SOLUTIONS &bull; INSTITUTIONAL CREDIBILITY
                 </span>
               </div>
-              <h2 className="text-xl sm:text-2xl font-extrabold text-[#172228] mb-4">
+              <h3 className="text-xl sm:text-2xl font-extrabold text-[#172228] mb-4">
                 13. Institutional Backing: AMA Legal Solutions Advantage
-              </h2>
+              </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed mb-6 font-normal">
                 WillDrafting.in is powered by <strong>AMA Legal Solutions</strong>, a trusted succession law firm in India. Every template and diagnostic tool on our site is designed and updated by practicing High Court advocates.
               </p>
@@ -1581,9 +1581,9 @@ export default function NriWillCheckerClient() {
                   EXPERT LEGAL ANSWERS &bull; STATUTORY FAQ
                 </span>
               </div>
-              <h2 className="text-xl sm:text-2xl font-extrabold text-[#172228] mb-4">
+              <h3 className="text-xl sm:text-2xl font-extrabold text-[#172228] mb-4">
                 14. Frequently Asked Questions: NRI Wills in India
-              </h2>
+              </h3>
               <p className="text-sm md:text-base text-slate-600 mb-6">
                 Clear answers to common questions regarding cross-border succession, witness rules abroad, and FEMA regulations:
               </p>
@@ -1633,9 +1633,9 @@ export default function NriWillCheckerClient() {
                   VERIFIED SOURCES &bull; LEGAL CITATIONS &amp; LINKS
                 </span>
               </div>
-              <h2 className="text-xl sm:text-2xl font-extrabold text-[#172228] mb-4">
+              <h3 className="text-xl sm:text-2xl font-extrabold text-[#172228] mb-4">
                 15. Statutory Citations &amp; Verified Official Resources
-              </h2>
+              </h3>
               <p className="text-xs sm:text-sm text-slate-600 mb-4">
                 This diagnostic framework is grounded in Indian statutory law, Supreme Court precedents, and RBI master directions:
               </p>

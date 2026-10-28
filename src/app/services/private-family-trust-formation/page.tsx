@@ -514,9 +514,9 @@ export default function PrivateFamilyTrustFormationPage() {
               <span>Visual Trust Architecture</span>
             </div>
             {/* H2 #3: 53 characters */}
-            <h2 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-3">
+            <h3 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-3">
               Visual Blueprint: Private Trust Architecture in India
-            </h2>
+            </h3>
             <p className="text-[0.98rem] sm:text-[1.05rem] leading-[1.65] text-[#49585F]">
               A registered Private Family Trust splits asset ownership from control. Trustees hold legal title under the Indian Trusts Act, 1882. Beneficiaries receive steady income and protection.
             </p>
@@ -550,9 +550,9 @@ export default function PrivateFamilyTrustFormationPage() {
               <span>Comparative Legal Framework</span>
             </div>
             {/* H2 #4: 53 characters */}
-            <h2 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-4">
+            <h3 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-4">
               Statutory Comparison: Revocable vs Irrevocable Trusts
-            </h2>
+            </h3>
             <p className="text-[0.98rem] sm:text-[1.05rem] leading-[1.65] text-[#49585F]">
               Every family has clear wealth goals. Income tax laws set simple rules under Sections 160 to 164. Review this guide to pick the right trust for your family.
             </p>
@@ -604,9 +604,9 @@ export default function PrivateFamilyTrustFormationPage() {
                 <span>Specialized Family Protection</span>
               </div>
               {/* H2 #5: 51 characters */}
-              <h2 className="text-[1.75rem] sm:text-[2.3rem] font-medium leading-[1.14] tracking-[-0.02em] text-[#111827] mb-4">
+              <h3 className="text-[1.75rem] sm:text-[2.3rem] font-medium leading-[1.14] tracking-[-0.02em] text-[#111827] mb-4">
                 Special Needs Child Trust: Lifetime Care Protection
-              </h2>
+              </h3>
               <p className="text-[15px] sm:text-[16px] leading-[1.7] text-[#374151] mb-3">
                 Parents of special needs children worry about lifetime care. Leaving cash or property directly to a disabled child creates high risks. Relatives or court guardians might mismanage the funds.
               </p>
@@ -645,9 +645,9 @@ export default function PrivateFamilyTrustFormationPage() {
               <span>Step-by-Step Formation SOP</span>
             </div>
             {/* H2 #6: 53 characters */}
-            <h2 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-3">
+            <h3 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-3">
               4-Step Execution Protocol for Private Trust Formation
-            </h2>
+            </h3>
             <p className="text-[0.98rem] sm:text-[1.05rem] leading-[1.65] text-[#49585F]">
               Setting up a trust is simple with expert counsel. Our High Court advocates handle the whole process. Here is our 4-step roadmap from drafting to registration:
             </p>
@@ -706,9 +706,9 @@ export default function PrivateFamilyTrustFormationPage() {
               <span>Tax Advisory &amp; Compliance</span>
             </div>
             {/* H2 #7: 50 characters */}
-            <h2 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-3">
+            <h3 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-3">
               Income Tax Act Sections 160-164 Taxation Framework
-            </h2>
+            </h3>
             <p className="text-[0.98rem] sm:text-[1.05rem] leading-[1.65] text-[#49585F]">
               Trustees act as legal managers under tax law. Income tax rules depend on trust terms. Here is how tax rules apply to each trust model:
             </p>
@@ -763,9 +763,9 @@ export default function PrivateFamilyTrustFormationPage() {
               <span>Standard Statutory Wording</span>
             </div>
             {/* H2 #8: 50 characters */}
-            <h2 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-3">
+            <h3 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-3">
               Sample Legal Clause: Asset Ring-Fencing Protection
-            </h2>
+            </h3>
             <p className="text-[0.98rem] sm:text-[1.05rem] leading-[1.65] text-[#49585F]">
               Here is a key clause from our standard Irrevocable Trust Deed. It stops creditors from taking trust assets during lawsuits or debt defaults:
             </p>
@@ -796,9 +796,9 @@ export default function PrivateFamilyTrustFormationPage() {
               <span>Transparent Legal Pricing Moat</span>
             </div>
             {/* H2 #9: 53 characters */}
-            <h2 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-4">
+            <h3 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-4">
               AMA Legal Solutions Trust Formation vs Big-4 Advisory
-            </h2>
+            </h3>
             <p className="text-[0.98rem] sm:text-[1.05rem] leading-[1.65] text-[#49585F]">
               Big-4 accounting firms charge heavy fees for trusts. They often hide their prices behind closed doors. AMA Legal Solutions offers clear flat fees and direct High Court lawyer help:
             </p>
@@ -847,9 +847,9 @@ export default function PrivateFamilyTrustFormationPage() {
               <span>Statutory FAQs</span>
             </div>
             {/* H2 #10: 54 characters */}
-            <h2 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-3">
+            <h3 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-3">
               Frequently Asked Questions: Private Trust Registration
-            </h2>
+            </h3>
             <p className="text-[0.98rem] sm:text-[1.05rem] leading-[1.65] text-[#49585F]">
               Find quick answers to common questions about private trust formation, taxes, and court rules:
             </p>

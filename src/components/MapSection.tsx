@@ -6,7 +6,7 @@ export default function MapSection() {
       style={{ backgroundColor: "var(--bg-page)", borderTop: "1px solid var(--border-subtle)" }}
     >
       <div className="container" style={{ textAlign: "center" }}>
-        <h2 style={{ marginBottom: "0.5rem" }}>Find Us</h2>
+        <h3 style={{ marginBottom: "0.5rem", fontSize: "1.5rem", fontWeight: 700 }}>Find Us</h3>
         <p style={{ marginBottom: "1.5rem", color: "var(--text-muted)" }}>
           Visit Will Drafting or find us on Google.
         </p>

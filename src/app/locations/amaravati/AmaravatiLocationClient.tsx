@@ -546,9 +546,9 @@ export default function AmaravatiLocationClient({ faqs }: Props) {
                   <Scale className="w-4 h-4 text-[#C65378]" />
                   <span>STATUTORY PROVISIONS</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   1. Will Drafting &amp; Legal Framework in Amaravati
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Estate planning and succession across Amaravati and the Andhra Pradesh Capital Region are governed primarily by the <strong>Indian Succession Act, 1925</strong>, the <strong>Registration Act, 1908</strong>, and the <strong>Andhra Pradesh Capital Region Development Authority (APCRDA) Act, 2014</strong>. Any adult of sound mind can legally bequeath self-acquired residential real estate, commercial commercial shop freeholds, reconstituted LPS plots, agricultural farmlands, and financial assets.
                 </p>
@@ -607,9 +607,9 @@ export default function AmaravatiLocationClient({ faqs }: Props) {
                   <FileQuestion className="w-4 h-4 text-[#C65378]" />
                   <span>REGISTRATION STATUS</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   2. Is Will Registration Mandatory in Amaravati?
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Under Section 18(e) of the Registration Act, 1908, the registration of a testamentary Will is strictly <strong>optional</strong>. An unregistered Will signed on standard white paper before two independent witnesses is legally enforceable and admissible in court.
                 </p>
@@ -666,9 +666,9 @@ export default function AmaravatiLocationClient({ faqs }: Props) {
                   <Scale className="w-4 h-4 text-[#C65378]" />
                   <span>HIGH COURT JURISPRUDENCE</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   3. Probate Exemption for Amaravati: AP High Court Rule
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   A common misconception among property owners in Andhra Pradesh is that an executor must obtain court probate before transmitting real estate. Under Section 213 read with Section 57 of the Indian Succession Act, 1925, probate is mandatory strictly within the historical presidential territories of Mumbai, Kolkata, and Chennai.
                 </p>
@@ -695,9 +695,9 @@ export default function AmaravatiLocationClient({ faqs }: Props) {
                   <Building className="w-4 h-4 text-[#C65378]" />
                   <span>SUB-REGISTRAR JURISDICTIONS</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   4. Amaravati Sub-Registrar Offices: SRO Jurisdiction
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Under the Registration and Stamps Department of Andhra Pradesh (AP IGRS), testamentary Wills are registered in Book III. You can schedule an appointment at any of the key SRO hubs serving the Amaravati capital region:
                 </p>
@@ -800,9 +800,9 @@ export default function AmaravatiLocationClient({ faqs }: Props) {
                   <MapPin className="w-4 h-4 text-[#C65378]" />
                   <span>REGIONAL CITIES &amp; ASSET NUANCES</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   5. Regional Cities &amp; Zones Across Amaravati Capital
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Estate assets across the Amaravati Capital Region span high-value Land Pooling Scheme (LPS) reconstituted plots in Velagapudi and Tullur, luxury riverfront high-rises in Tadepalli and Mangalagiri, agribusiness and industrial trading assets in Guntur, and commercial developments along the Vijayawada corridor. Our estate advocates deliver customized legal drafting, AP IGRS slot booking, and Sub-Registrar accompaniment across all key regional cities and growth nodes:
                 </p>
@@ -1242,9 +1242,9 @@ export default function AmaravatiLocationClient({ faqs }: Props) {
                   <FileCheck className="w-4 h-4 text-[#C65378]" />
                   <span>5-STEP EXECUTION PROTOCOL</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   6. Step-by-Step SOP: Drafting &amp; AP IGRS Registration
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Follow this verified legal procedure to create an unassailable Will and complete registration before an Amaravati Sub-Registrar:
                 </p>
@@ -1335,9 +1335,9 @@ export default function AmaravatiLocationClient({ faqs }: Props) {
                   <Home className="w-4 h-4 text-[#C65378]" />
                   <span>DOORSTEP REGISTRATION FACILITY</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   7. Section 31 Doorstep SRO Registration for Elders
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   For elderly, infirm, or bedridden citizens who cannot physically navigate Sub-Registrar offices, <strong>Section 31 of the Registration Act, 1908</strong> allows the Sub-Registrar to visit your home or hospital bed:
                 </p>
@@ -1383,9 +1383,9 @@ export default function AmaravatiLocationClient({ faqs }: Props) {
                   <FileCheck className="w-4 h-4 text-[#C65378]" />
                   <span>INTERACTIVE REQUIREMENTS</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   8. Document Checklist for Amaravati Sub-Registrars
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Check off the documents required before visiting the Sub-Registrar Office in Tullur, Mangalagiri, Tadepalli, or Guntur:
                 </p>
@@ -1436,9 +1436,9 @@ export default function AmaravatiLocationClient({ faqs }: Props) {
                   <Building className="w-4 h-4 text-[#C65378]" />
                   <span>ASSET CLASSIFICATIONS</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   9. Amaravati Property Types: CRDA Plots &amp; Meebhoomi Land
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   A legally compliant Amaravati Will can cover diverse real estate and movable assets across Andhra Pradesh:
                 </p>
@@ -1502,9 +1502,9 @@ export default function AmaravatiLocationClient({ faqs }: Props) {
                   <Stamp className="w-4 h-4 text-[#C65378]" />
                   <span>STATUTORY CHARGES</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   10. Official AP IGRS Will Registration Fees &amp; Charges
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Unlike commercial sale deeds or gift transfers that attract 5% to 7.5% stamp duty and registration fees in Andhra Pradesh, testamentary Wills are completely exempt from ad-valorem stamp duty. Official charges in Amaravati are nominal:
                 </p>
@@ -1552,9 +1552,9 @@ export default function AmaravatiLocationClient({ faqs }: Props) {
                   <Award className="w-4 h-4 text-[#C65378]" />
                   <span>TRANSPARENT PLANS</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   11. Transparent Will Drafting Packages in Amaravati
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Choose the legal assistance package tailored to your family&apos;s estate planning and property portfolio in the Amaravati capital region:
                 </p>
@@ -1696,9 +1696,9 @@ export default function AmaravatiLocationClient({ faqs }: Props) {
                   <HelpCircle className="w-4 h-4 text-[#C65378]" />
                   <span>FREQUENTLY ASKED QUESTIONS</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   12. Frequently Asked Questions: Amaravati Will Drafting
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Clear, authoritative answers to common legal questions regarding Will drafting and property registration in Amaravati:
                 </p>
@@ -1740,9 +1740,9 @@ export default function AmaravatiLocationClient({ faqs }: Props) {
                   <Scale className="w-4 h-4 text-[#C65378]" />
                   <span>STATUTORY CITATIONS</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   13. Statutory Citations &amp; Andhra Pradesh Legal Portals
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Our drafting protocols comply strictly with codified Indian statutes and Andhra Pradesh state registration systems:
                 </p>

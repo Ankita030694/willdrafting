@@ -294,10 +294,10 @@ export default function Testimonial() {
             </div>
 
             {/* Editorial Title */}
-            <h2 className="text-[1.65rem] sm:text-[2.25rem] lg:text-[2.45rem] font-bold text-[#172228] leading-[1.1] tracking-tight mb-3">
+            <h3 className="text-[1.65rem] sm:text-[2.25rem] lg:text-[2.45rem] font-bold text-[#172228] leading-[1.1] tracking-tight mb-3">
               Trusted by 160,000+<br />
               Families.
-            </h2>
+            </h3>
 
             <p className="text-[0.85rem] sm:text-[0.92rem] text-[#55636D] leading-relaxed max-w-xl mb-4 sm:mb-5">
               Compassionate guidance and peace of mind for you and your loved ones.

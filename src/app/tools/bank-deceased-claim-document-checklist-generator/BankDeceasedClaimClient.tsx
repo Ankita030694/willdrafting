@@ -839,9 +839,9 @@ export default function BankDeceasedClaimClient() {
                 <Sparkles className="w-4 h-4" />
                 <span>INTERACTIVE COMPLIANCE ENGINE</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 2. Bank Deceased Claim Document Checklist Generator
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Select the bank, account type, claim balance, and nominee status below. Our legal engine will
                 diagnose whether your claim qualifies for simplified settlement, display exact bank annexures,
@@ -1232,9 +1232,9 @@ export default function BankDeceasedClaimClient() {
                 <Scale className="w-4 h-4" />
                 <span>LEGAL PRECEDENT</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 3. Nominee vs Legal Heir Rights: Banking Regulation Act
-              </h2>
+              </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   A widespread misconception among Indian citizens is that a nominee inherits absolute ownership
@@ -1304,9 +1304,9 @@ export default function BankDeceasedClaimClient() {
                 <Building className="w-4 h-4" />
                 <span>BANKING BENCHMARK</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 4. Top 12 Indian Banks Deceased Claim Threshold Limits
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 While bank websites often bury Annexures inside 40-page PDF guidelines, the table below aggregates
                 the Board-approved simplified claim limits, required sureties, and applicable forms across
@@ -1346,9 +1346,9 @@ export default function BankDeceasedClaimClient() {
                 <ShieldCheck className="w-4 h-4" />
                 <span>RISK MITIGATION</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 5. Indemnity Bond &amp; Surety Requirements for Bank Claims
-              </h2>
+              </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   When settling a deceased depositor claim without a registered nominee or court order, the bank
@@ -1376,9 +1376,9 @@ export default function BankDeceasedClaimClient() {
                 <Lock className="w-4 h-4" />
                 <span>SAFE DEPOSIT ACCESS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 6. Safety Locker &amp; Safe Custody Claim Rules After Demise
-              </h2>
+              </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   Claiming the contents of a bank safety locker follows specialized statutory protocols under
@@ -1406,9 +1406,9 @@ export default function BankDeceasedClaimClient() {
                 <Gavel className="w-4 h-4" />
                 <span>JUDICIAL INTERVENTION</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 7. When Is a Court Succession Certificate Truly Mandatory?
-              </h2>
+              </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   Branch managers sometimes unlawfully demand court orders for small balances. Claimants should
@@ -1448,9 +1448,9 @@ export default function BankDeceasedClaimClient() {
                 <FileText className="w-4 h-4" />
                 <span>PROCEDURAL PROTOCOL</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 8. Step-by-Step SOP: Claiming Bank Balance of Deceased
-              </h2>
+              </h3>
               <div className="space-y-4">
                 {[
                   {
@@ -1506,9 +1506,9 @@ export default function BankDeceasedClaimClient() {
                 <TrendingUp className="w-4 h-4" />
                 <span>REAL-WORLD SCENARIOS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 9. Practical Case Studies: SBI, HDFC &amp; ICICI Bank Claims
-              </h2>
+              </h3>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 {/* Case Study 1 */}
@@ -1579,9 +1579,9 @@ export default function BankDeceasedClaimClient() {
                 <FileCheck className="w-4 h-4" />
                 <span>LEGAL DRAFTING ASSETS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 10. Copy-Paste Bank Deceased Claim Affidavits &amp; Bonds
-              </h2>
+              </h3>
 
               {/* Template Box 1: Statutory Indemnity Bond */}
               <div className="rounded-2xl border border-slate-200/90 bg-white p-5 space-y-3 shadow-xs">
@@ -1764,9 +1764,9 @@ Please take notice that failure to disburse funds within 15 days violates RBI Ma
                 <Award className="w-4 h-4" />
                 <span>LEGAL EXPERTISE &amp; TRUST</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 11. Institutional Profile: Legal Excellence &amp; Trust
-              </h2>
+              </h3>
               <div className="bg-white rounded-2xl border border-slate-200/90 p-6 sm:p-8 shadow-xs space-y-5">
                 <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-5 border-b border-slate-100">
                   <div className="space-y-1">
@@ -1824,9 +1824,9 @@ Please take notice that failure to disburse funds within 15 days violates RBI Ma
                 <HelpCircle className="w-4 h-4" />
                 <span>DIRECT ANSWERS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 12. Frequently Asked Questions: Bank Deceased Claims
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Clear, legally verified answers to common questions about bank account claims, indemnity bonds,
                 nomination rules, and RBI timelines:
@@ -1870,9 +1870,9 @@ Please take notice that failure to disburse funds within 15 days violates RBI Ma
                 <Landmark className="w-4 h-4" />
                 <span>PRIMARY LEGAL SOURCES</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 13. Statutory Citations &amp; Official Banking Portals
-              </h2>
+              </h3>
               <div className="bg-white rounded-2xl border border-slate-200/90 p-5 space-y-4 text-xs text-slate-700 shadow-xs">
                 <div>
                   <div className="font-extrabold text-slate-900 mb-1">

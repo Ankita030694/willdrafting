@@ -572,9 +572,9 @@ export default function GujaratLocationClient({ faqs }: Props) {
                   <Scale className="w-4 h-4 text-[#C65378]" />
                   <span>STATUTORY PROVISIONS</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   1. Will Drafting &amp; Legal Framework in Gujarat
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Succession planning and testamentary disposition in Gujarat are governed by the <strong>Indian Succession Act, 1925</strong>, the <strong>Hindu Succession Act, 1956</strong>, the <strong>Registration Act, 1908</strong>, and the <strong>Gujarat Tenancy and Agricultural Lands Act, 1948</strong>. Any adult of sound mind can legally bequeath self-acquired residential real estate, commercial assets, family trading enterprises, and agricultural landholdings.
                 </p>
@@ -633,9 +633,9 @@ export default function GujaratLocationClient({ faqs }: Props) {
                   <FileQuestion className="w-4 h-4 text-[#C65378]" />
                   <span>REGISTRATION STATUS</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   2. Is Will Registration Mandatory in Gujarat?
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Under Section 18(e) of the Registration Act, 1908, registering a Will is strictly <strong>optional</strong> in the State of Gujarat. An unregistered Will executed on plain A4 paper and signed before two independent witnesses satisfies all statutory criteria under Section 63 of the Indian Succession Act.
                 </p>
@@ -697,9 +697,9 @@ export default function GujaratLocationClient({ faqs }: Props) {
                   <Landmark className="w-4 h-4 text-[#C65378]" />
                   <span>JUDICIAL PRECEDENTS</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   3. Gujarat Probate Law: High Court Exemption Standards
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   A common misconception among Gujarat property owners and housing societies is whether probate from the High Court is mandatory before real estate or business assets can be transferred. Under settled Indian jurisprudence, the answer is an unequivocal <strong>no</strong>.
                 </p>
@@ -750,9 +750,9 @@ export default function GujaratLocationClient({ faqs }: Props) {
                   <MapPin className="w-4 h-4 text-[#C65378]" />
                   <span>SRO JURISDICTION DIRECTORY</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   4. Gujarat SRO Directory: Garvi Gujarat Online Booking
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Gujarat operates over 250 Sub-Registrar Offices administered by the Inspector General of Registration (Superintendent of Stamps &amp; Inspector General of Registration Gujarat). Under Section 32 of the Registration Act, your Will can be registered at the SRO having jurisdiction over your residence or where any portion of your immovable property is situated.
                 </p>
@@ -847,9 +847,9 @@ export default function GujaratLocationClient({ faqs }: Props) {
                   <MapPin className="w-4 h-4 text-[#C65378]" />
                   <span>REGIONAL CITIES COVERAGE &amp; ASSET NUANCES</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   5. Regional Cities: City-Wise Will Drafting in Gujarat
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Estate holdings across Gujarat vary from high-rise residential properties in Ahmedabad and Surat, heritage commercial havelis, and petrochemical/chemical plants in Bharuch and Jamnagar, to agricultural farmland in Saurashtra. Our estate advocates deliver customized legal drafting, Garvi Gujarat portal appointment scheduling, and Sub-Registrar accompaniment across all key regional cities:
                 </p>
@@ -1295,9 +1295,9 @@ export default function GujaratLocationClient({ faqs }: Props) {
                   <FileText className="w-4 h-4 text-[#C65378]" />
                   <span>PROCEDURAL ROADMAP</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   6. Step-by-Step SOP: Drafting to Garvi Gujarat Registration
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Follow this verified 5-stage legal standard operating procedure to create, execute, and register your Will before the Sub-Registrar in Gujarat:
                 </p>
@@ -1383,9 +1383,9 @@ export default function GujaratLocationClient({ faqs }: Props) {
                   <Home className="w-4 h-4 text-[#C65378]" />
                   <span>DOORSTEP REGISTRATION FOR SENIORS</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   7. Section 31 Doorstep SRO Registration for Senior Citizens
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   For senior citizens, bedridden individuals, or persons with medical mobility restrictions residing across Gujarat, traveling to the Sub-Registrar Office can pose serious health challenges. Under <strong>Section 31 of the Registration Act, 1908</strong>, the Sub-Registrar possesses legal authority to attend a private residence, nursing home, or hospital to register a Will.
                 </p>
@@ -1438,9 +1438,9 @@ export default function GujaratLocationClient({ faqs }: Props) {
                   <FileCheck className="w-4 h-4 text-[#C65378]" />
                   <span>INTERACTIVE CHECKLIST</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   8. Document Checklist for Gujarat Sub-Registrar Offices
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Prepare your documentation before scheduling your Sub-Registrar appointment. You have organized <strong>{checkedCount} of {checklist.length}</strong> required documents:
                 </p>
@@ -1488,9 +1488,9 @@ export default function GujaratLocationClient({ faqs }: Props) {
                   <Building className="w-4 h-4 text-[#C65378]" />
                   <span>PROPERTY DYNAMICS</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   9. Gujarat Property Types: HUF Firms, AnyRoR Land &amp; GIDC
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Succession procedures in Gujarat vary considerably depending on the nature of property title and regulatory authority:
                 </p>
@@ -1542,9 +1542,9 @@ export default function GujaratLocationClient({ faqs }: Props) {
                   <Stamp className="w-4 h-4 text-[#C65378]" />
                   <span>STATUTORY CHARGES</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   10. Official Garvi Gujarat Registration Fees &amp; Charges
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Unlike property conveyances or gift deeds that attract 4.9% stamp duty plus 1% registration surcharge in Gujarat, testamentary Wills are completely exempt from stamp duty. Government registration fees in Gujarat are purely nominal:
                 </p>
@@ -1592,9 +1592,9 @@ export default function GujaratLocationClient({ faqs }: Props) {
                   <Award className="w-4 h-4 text-[#C65378]" />
                   <span>TRANSPARENT PLANS</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   11. Transparent Will Packages &amp; Legal Fees in Gujarat
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Choose the legal assistance package tailored to your family&apos;s estate planning and business portfolio in Gujarat:
                 </p>
@@ -1736,9 +1736,9 @@ export default function GujaratLocationClient({ faqs }: Props) {
                   <HelpCircle className="w-4 h-4 text-[#C65378]" />
                   <span>FREQUENTLY ASKED QUESTIONS</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   12. Frequently Asked Questions: Will Drafting in Gujarat
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Clear, authoritative answers to common legal questions regarding Will drafting and property registration in Gujarat:
                 </p>
@@ -1781,9 +1781,9 @@ export default function GujaratLocationClient({ faqs }: Props) {
                   <Scale className="w-4 h-4 text-[#C65378]" />
                   <span>STATUTORY CITATIONS</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   13. Statutory Citations &amp; Gujarat Legal Portals
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Our drafting protocols comply strictly with codified Indian statutes and Gujarat state registration systems:
                 </p>

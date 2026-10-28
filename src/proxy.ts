@@ -1,8 +1,40 @@
 import { auth } from "@/auth";
 import { NextResponse } from "next/server";
-import { getPublicOrigin } from "@/lib/http";
+import type { NextFetchEvent, NextRequest } from "next/server";
+import { DEFAULT_SECURITY_HEADERS, getPublicOrigin } from "@/lib/http";
 
-export default auth((req) => {
+const PROXY_SECURITY_HEADERS: Record<string, string> = {
+  ...DEFAULT_SECURITY_HEADERS,
+  "X-Content-Type-Options": "nosniff",
+  "Referrer-Policy": "strict-origin-when-cross-origin",
+  "X-Frame-Options": "SAMEORIGIN",
+  "Content-Security-Policy":
+    "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https:; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: blob: https:; font-src 'self' data: https:; connect-src 'self' https:; frame-src 'self' https://www.google.com https:; media-src 'self' data: blob: https:; object-src 'none'; base-uri 'self'; form-action 'self' https:; frame-ancestors 'self';",
+  "Strict-Transport-Security": "max-age=63072000; includeSubDomains; preload",
+};
+
+function withSecurityHeaders<T extends Response>(res: T): T {
+  for (const [key, value] of Object.entries(PROXY_SECURITY_HEADERS)) {
+    if (!res.headers.has(key)) {
+      res.headers.set(key, value);
+    }
+  }
+  return res;
+}
+
+function isProtectedRoute(pathname: string): boolean {
+  return (
+    pathname === "/authority" ||
+    pathname.startsWith("/authority/") ||
+    pathname === "/dashboard" ||
+    pathname.startsWith("/dashboard/") ||
+    pathname === "/start" ||
+    pathname.startsWith("/start/") ||
+    pathname === "/complete-profile"
+  );
+}
+
+const authMiddleware = auth((req) => {
   const { pathname } = req.nextUrl;
   const origin = getPublicOrigin(req);
   const session = req.auth;
@@ -11,13 +43,13 @@ export default auth((req) => {
   const needsPhone = Boolean(session?.user?.needsPhone);
 
   // 1. Superadmin Portal Protection (/authority and sub-routes)
-  if (pathname.startsWith("/authority")) {
+  if (pathname === "/authority" || pathname.startsWith("/authority/")) {
     if (!isLoggedIn || role !== "superadmin") {
       const loginUrl = new URL("/nullify", origin);
       loginUrl.searchParams.set("callbackUrl", pathname);
-      return NextResponse.redirect(loginUrl);
+      return withSecurityHeaders(NextResponse.redirect(loginUrl));
     }
-    return NextResponse.next();
+    return withSecurityHeaders(NextResponse.next());
   }
 
   // 2. Client Area Protection: dashboard + the whole questionnaire (/start and /start/*).
@@ -32,33 +64,54 @@ export default auth((req) => {
     if (!isLoggedIn) {
       const loginUrl = new URL("/login", origin);
       loginUrl.searchParams.set("callbackUrl", pathname);
-      return NextResponse.redirect(loginUrl);
+      return withSecurityHeaders(NextResponse.redirect(loginUrl));
     }
 
     // Edge-case R2: If user logged in via Google and hasn't provided phone yet
     if (needsPhone && pathname !== "/complete-profile") {
-      return NextResponse.redirect(new URL("/complete-profile", origin));
+      return withSecurityHeaders(
+        NextResponse.redirect(new URL("/complete-profile", origin))
+      );
     }
 
-    return NextResponse.next();
+    return withSecurityHeaders(NextResponse.next());
   }
 
   // 3. Complete Profile route protection
   if (pathname === "/complete-profile") {
     if (!isLoggedIn) {
-      return NextResponse.redirect(new URL("/login", origin));
+      return withSecurityHeaders(NextResponse.redirect(new URL("/login", origin)));
     }
     if (!needsPhone) {
-      return NextResponse.redirect(new URL("/start/dashboard", origin));
+      return withSecurityHeaders(
+        NextResponse.redirect(new URL("/start/dashboard", origin))
+      );
     }
-    return NextResponse.next();
+    return withSecurityHeaders(NextResponse.next());
   }
 
-  return NextResponse.next();
+  return withSecurityHeaders(NextResponse.next());
 });
+
+export default async function proxy(req: NextRequest, event: NextFetchEvent) {
+  if (!isProtectedRoute(req.nextUrl.pathname)) {
+    return withSecurityHeaders(NextResponse.next());
+  }
+
+  const response = await (
+    authMiddleware as unknown as (
+      request: NextRequest,
+      ev: NextFetchEvent
+    ) => Promise<Response | undefined>
+  )(req, event);
+
+  return withSecurityHeaders(response ?? NextResponse.next());
+}
 
 export const config = {
   matcher: [
+    "/",
+    "/:path*",
     "/dashboard/:path*",
     "/dashboard",
     "/start",

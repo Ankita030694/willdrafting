@@ -547,9 +547,9 @@ Acknowledged by Bank / Locker Custodian: __________________________"`;
                 <Layers className="w-4 h-4" />
                 <span>ARCHITECTURAL RESOLUTION</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 2. Two-Part Solution: Public Will vs Sealed Memorandum
-              </h2>
+              </h3>
               <div className="space-y-4 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   To reconcile the strict legal requirement of testamentary clarity with the absolute
@@ -624,9 +624,9 @@ Acknowledged by Bank / Locker Custodian: __________________________"`;
                 <Cpu className="w-4 h-4" />
                 <span>INTERACTIVE DIGITAL ESTATE CONFIGURATOR</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 3. Interactive Digital Asset Inventory Generator
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Select your digital asset holdings, evaluate your probate vulnerability score, and generate a
                 tailored, lawyer-vetted inventory schedule for your Indian estate plan.
@@ -918,9 +918,9 @@ Statutory Baseline: Indian Succession Act 1925, IT Act 2000, Income Tax Act Sec 
                 <Landmark className="w-4 h-4" />
                 <span>STATUTORY ANALYSIS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 4. Indian Legal Framework: IT Act &amp; Section 115BBH Tax
-              </h2>
+              </h3>
               <div className="space-y-4 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   Estate planning for digital assets in India is governed by the intersection of four
@@ -998,9 +998,9 @@ Statutory Baseline: Indian Succession Act 1925, IT Act 2000, Income Tax Act Sec 
                 <Key className="w-4 h-4" />
                 <span>FIDUCIARY GOVERNANCE</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 5. Appointing a Digital Executor: Scope &amp; Authorities
-              </h2>
+              </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   Most general Will executors are elderly family members or lifelong friends who possess
@@ -1040,9 +1040,9 @@ Statutory Baseline: Indian Succession Act 1925, IT Act 2000, Income Tax Act Sec 
                 <Wallet className="w-4 h-4" />
                 <span>CRYPTOGRAPHIC VAULTS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 6. Securing Hardware Wallets &amp; Seed Phrases Offline
-              </h2>
+              </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   For non-custodial self-storage, private keys never touch the internet. The hardware wallet is
@@ -1091,9 +1091,9 @@ Statutory Baseline: Indian Succession Act 1925, IT Act 2000, Income Tax Act Sec 
                 <Globe className="w-4 h-4" />
                 <span>EXCHANGES &amp; DOMAINS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 7. Centralized Exchanges, Domains &amp; Social Accounts
-              </h2>
+              </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   Unlike decentralized wallets, centralized crypto exchanges (FIU-registered entities like
@@ -1134,9 +1134,9 @@ Statutory Baseline: Indian Succession Act 1925, IT Act 2000, Income Tax Act Sec 
                 <Scale className="w-4 h-4" />
                 <span>LEGAL COMPARISON TABLE</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 8. Comparison: Will Clause vs Sealed Memo vs Intestacy
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 How different digital estate transmission approaches compare under Indian testamentary law:
               </p>
@@ -1207,9 +1207,9 @@ Statutory Baseline: Indian Succession Act 1925, IT Act 2000, Income Tax Act Sec 
                 <FileCheck className="w-4 h-4" />
                 <span>PROCEDURAL PROTOCOL</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 9. Step-by-Step SOP: Setting Up Your Digital Estate
-              </h2>
+              </h3>
               <div className="space-y-4">
                 {[
                   {
@@ -1265,9 +1265,9 @@ Statutory Baseline: Indian Succession Act 1925, IT Act 2000, Income Tax Act Sec 
                 <TrendingUp className="w-4 h-4" />
                 <span>REAL CASE STUDIES</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 10. Real Case Scenarios: Seed Leaks &amp; Locked Wallets
-              </h2>
+              </h3>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 {/* Case Study 1 */}
@@ -1341,9 +1341,9 @@ Statutory Baseline: Indian Succession Act 1925, IT Act 2000, Income Tax Act Sec 
                 <FileCheck className="w-4 h-4" />
                 <span>TESTAMENTARY CLAUSES &amp; MEMORANDUM</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 11. Copy-Paste Digital Will Clauses &amp; Sealed Inventory
-              </h2>
+              </h3>
 
               {/* Template Box 1: Public Will Clause */}
               <div className="rounded-2xl border border-slate-200/90 bg-white p-5 space-y-3 shadow-xs">
@@ -1468,9 +1468,9 @@ Statutory Baseline: Indian Succession Act 1925, IT Act 2000, Income Tax Act Sec 
                 <Award className="w-4 h-4" />
                 <span>LEGAL EXPERTISE &amp; PRACTICE</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 12. Institutional Legal Backing: AMA Legal Solutions
-              </h2>
+              </h3>
               <div className="bg-white rounded-2xl border border-slate-200/90 p-6 sm:p-8 shadow-xs space-y-5">
                 <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-5 border-b border-slate-100">
                   <div className="space-y-1">
@@ -1528,9 +1528,9 @@ Statutory Baseline: Indian Succession Act 1925, IT Act 2000, Income Tax Act Sec 
                 <HelpCircle className="w-4 h-4" />
                 <span>DIRECT ANSWERS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 13. Frequently Asked Questions: Crypto Will Formats
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Plain-English answers to critical legal and technical questions on bequeathing cryptocurrency,
                 hardware wallets, and passwords in India:
@@ -1574,9 +1574,9 @@ Statutory Baseline: Indian Succession Act 1925, IT Act 2000, Income Tax Act Sec 
                 <Landmark className="w-4 h-4" />
                 <span>PRIMARY LEGAL SOURCES</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 14. Statutory Citations &amp; Official Tech Legacy Portals
-              </h2>
+              </h3>
               <div className="bg-white rounded-2xl border border-slate-200/90 p-5 space-y-4 text-xs text-slate-700 shadow-xs">
                 <div>
                   <div className="font-extrabold text-slate-900 mb-1">

@@ -490,9 +490,9 @@ export default function WillDisputeLitigationPage() {
               <FileWarning className="w-4 h-4" />
               <span>Statutory Grounds for Challenge</span>
             </div>
-            <h2 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-3">
+            <h3 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-3">
               Grounds to Contest a Suspicious or Forged Will in India
-            </h2>
+            </h3>
             <p className="text-[0.98rem] sm:text-[1.05rem] leading-[1.65] text-[#49585F]">
               In India, courts treat Wills as solemn documents. To challenge a Will successfully, an aggrieved legal heir must prove clear legal grounds under the law:
             </p>
@@ -594,9 +594,9 @@ export default function WillDisputeLitigationPage() {
               <BookOpen className="w-4 h-4" />
               <span>Statutory Evidence Architecture</span>
             </div>
-            <h2 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-3">
+            <h3 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-3">
               Statutory Framework: Indian Succession Act &amp; Sakshya Act
-            </h2>
+            </h3>
             <p className="text-[0.98rem] sm:text-[1.05rem] leading-[1.65] text-[#49585F]">
               Will litigation in India operates at the intersection of succession statutes, evidence law, and specific civil remedies:
             </p>
@@ -666,9 +666,9 @@ export default function WillDisputeLitigationPage() {
               <Scale className="w-4 h-4" />
               <span>Court Jurisdiction Analysis</span>
             </div>
-            <h2 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-4">
+            <h3 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-4">
               Litigation Comparison: Probate Suit vs Civil Partition
-            </h2>
+            </h3>
             <p className="text-[0.98rem] sm:text-[1.05rem] leading-[1.65] text-[#49585F]">
               Choosing the right court is essential. Filing in the wrong forum can lead to rejection of your case. Review how testamentary and civil remedies compare:
             </p>
@@ -711,9 +711,9 @@ export default function WillDisputeLitigationPage() {
               <FileText className="w-4 h-4" />
               <span>Copy-Pasteable Statutory Template</span>
             </div>
-            <h2 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-3">
+            <h3 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-3">
               Copy-Pasteable Probate Caveat Notice Clause Format
-            </h2>
+            </h3>
             <p className="text-[0.98rem] sm:text-[1.05rem] leading-[1.65] text-[#49585F]">
               If you expect a relative to file a fraudulent probate petition, your advocate must lodge a Caveat under Section 284 ISA immediately. Use our court-verified drafting format:
             </p>
@@ -763,9 +763,9 @@ export default function WillDisputeLitigationPage() {
               <ShieldCheck className="w-4 h-4" />
               <span>Courtroom Standard Operating Procedure</span>
             </div>
-            <h2 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-3">
+            <h3 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-3">
               Step-by-Step SOP: From Caveat to High Court Judgment
-            </h2>
+            </h3>
             <p className="text-[0.98rem] sm:text-[1.05rem] leading-[1.65] text-[#49585F]">
               How AMA Legal Solutions manages contested testamentary litigation before District and High Courts:
             </p>
@@ -824,9 +824,9 @@ export default function WillDisputeLitigationPage() {
               <Award className="w-4 h-4" />
               <span>Binding Judicial Precedents</span>
             </div>
-            <h2 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-3">
+            <h3 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-3">
               Landmark Supreme Court Precedents on Disputed Wills
-            </h2>
+            </h3>
             <p className="text-[0.98rem] sm:text-[1.05rem] leading-[1.65] text-[#49585F]">
               Every Will dispute in India is adjudicated against landmark doctrines formulated by the Supreme Court of India:
             </p>
@@ -904,9 +904,9 @@ export default function WillDisputeLitigationPage() {
               <HelpCircle className="w-4 h-4" />
               <span>Testamentary Litigation FAQs</span>
             </div>
-            <h2 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-3">
+            <h3 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-3">
               Frequently Asked Questions: Will Disputes &amp; Litigation
-            </h2>
+            </h3>
             <p className="text-[0.98rem] sm:text-[1.05rem] leading-[1.65] text-[#49585F]">
               Clear answers prepared by senior High Court succession advocates at AMA Legal Solutions:
             </p>
@@ -972,9 +972,9 @@ export default function WillDisputeLitigationPage() {
                 <Users className="w-4 h-4" />
                 <span>Pan-India Court Presence</span>
               </div>
-              <h2 className="text-[1.75rem] sm:text-[2.3rem] font-medium leading-[1.14] tracking-[-0.02em] text-white mb-4">
+              <h3 className="text-[1.75rem] sm:text-[2.3rem] font-medium leading-[1.14] tracking-[-0.02em] text-white mb-4">
                 High Court Advocate Representation Across India
-              </h2>
+              </h3>
               <p className="text-[15px] sm:text-[16px] leading-[1.7] text-gray-300 mb-4">
                 Unlike automated Will platforms that lack courtroom standing, AMA Legal Solutions is an established full-service law firm. Our senior advocates maintain active regular practice before the Supreme Court of India, Delhi High Court, Bombay High Court, Calcutta High Court, Karnataka High Court, Madras High Court, and Principal District Courts.
               </p>

@@ -549,9 +549,9 @@ export default function KolkataLocationClient({ faqs }: Props) {
                   <Scale className="w-4 h-4 text-[#C65378]" />
                   <span>STATUTORY PROVISIONS</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   1. Legal Framework: Indian Succession &amp; Dayabhaga Law
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Will drafting in Kolkata is guided by the <strong>Indian Succession Act, 1925</strong>, the <strong>Registration Act, 1908</strong>, and the historical <strong>Dayabhaga school of Hindu succession</strong>.
                   Any adult of sound mind can write a Will to dispose of real estate, bank deposits, mutual funds, company shares, and jewelry.
@@ -613,9 +613,9 @@ export default function KolkataLocationClient({ faqs }: Props) {
                   <FileQuestion className="w-4 h-4 text-[#C65378]" />
                   <span>REGISTRATION STATUS</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   2. Is Will Registration Mandatory in West Bengal?
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Under Section 18(e) of the Registration Act, 1908, registering a Will is strictly <strong>optional</strong>.
                   An unregistered Will executed on plain paper is legally enforceable in Indian courts if properly executed and attested before two witnesses.
@@ -674,9 +674,9 @@ export default function KolkataLocationClient({ faqs }: Props) {
                   <Landmark className="w-4 h-4 text-[#C65378]" />
                   <span>SECTION 213 COMPLIANCE</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   3. Calcutta High Court Probate Rules: Section 213
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Kolkata holds an exceptional position in Indian succession jurisprudence.
                   As one of the historic British presidency towns alongside Mumbai and Chennai, Kolkata is subject to the mandatory probate provisions of the Indian Succession Act, 1925.
@@ -736,9 +736,9 @@ export default function KolkataLocationClient({ faqs }: Props) {
                   <Building className="w-4 h-4 text-[#C65378]" />
                   <span>REGISTRATION HUBS</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   4. Kolkata Sub-Registrar Offices: SRO Directory
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   In Kolkata, registration of documents is handled across the historic Registrar of Assurances (ARA) and various District Sub-Registrar (DSR) offices under the Directorate of Registration and Stamp Revenue, West Bengal.
                   You can register your Will where you reside or where your real estate is situated:
@@ -841,9 +841,9 @@ export default function KolkataLocationClient({ faqs }: Props) {
                   <MapPin className="w-4 h-4 text-[#C65378]" />
                   <span>LOCAL AREA COVERAGE &amp; SRO HUBS</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   5. Area-Wise Will Drafting Services Across Kolkata Localities
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Looking for legally verified <strong>Will drafting services in Ballygunge, Alipore, Salt Lake, or New Town</strong>? Properties across Kolkata span heritage ancestral rajbaris, modern high-rises in New Town, 999-year leasehold plots in Salt Lake, and luxury condominiums in Ballygunge and Alipore.
                   Our senior advocates provide comprehensive legal drafting and SRO registration support across all key hubs:
@@ -1184,9 +1184,9 @@ export default function KolkataLocationClient({ faqs }: Props) {
                   <FileText className="w-4 h-4 text-[#C65378]" />
                   <span>5-STEP EXECUTION PROTOCOL</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   6. Step-by-Step Will Registration in Kolkata
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Executing a legally binding Will in Kolkata requires statutory compliance with both the Indian Succession Act and West Bengal registration protocols.
                   Follow our verified five-step procedure:
@@ -1285,9 +1285,9 @@ export default function KolkataLocationClient({ faqs }: Props) {
                   <ShieldCheck className="w-4 h-4 text-[#C65378]" />
                   <span>DOORSTEP LEGAL RELIEF</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   7. Section 31 Doorstep Registration for Seniors
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Under Section 31 of the Registration Act, 1908, the Sub-Registrar has the legal authority to visit the private residence, hospital room, or nursing home of a testator who is physically unable to travel.
                   This provides critical dignity and protection for elderly citizens across Kolkata:
@@ -1345,9 +1345,9 @@ export default function KolkataLocationClient({ faqs }: Props) {
                   <FileText className="w-4 h-4 text-[#C65378]" />
                   <span>INTERACTIVE READINESS TOOL</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   8. Documents Checklist for West Bengal Registration
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Ensure you have all necessary paperwork assembled before booking your Kolkata registry appointment.
                   Use this interactive checklist to verify your document readiness:
@@ -1410,9 +1410,9 @@ export default function KolkataLocationClient({ faqs }: Props) {
                   <Building className="w-4 h-4 text-[#C65378]" />
                   <span>ESTATE ARCHITECTURE</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   9. Kolkata Property Types: Ancestral, KMC &amp; Leases
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Real estate in the Kolkata Metropolitan Area presents distinct legal tenures.
                   Your Will must address the specific requirements of each asset class:
@@ -1473,9 +1473,9 @@ export default function KolkataLocationClient({ faqs }: Props) {
                   <Scale className="w-4 h-4 text-[#C65378]" />
                   <span>TRANSPARENT EXPENSE AUDIT</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   10. West Bengal Registration Fees &amp; Stamp Duty Rules
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Registering a Will in West Bengal is highly economical.
                   Under the Indian Stamp Act, 1899, Wills are entirely exempt from stamp duty across India:
@@ -1529,9 +1529,9 @@ export default function KolkataLocationClient({ faqs }: Props) {
                   <Sparkles className="w-4 h-4 text-[#C65378]" />
                   <span>TRANSPARENT LEGAL PACKAGES</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   11. Transparent Will Packages &amp; Legal Fees
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Choose the level of legal support tailored to your estate.
                   All packages include professional advocate review and Calcutta High Court probate compliance checks:
@@ -1685,9 +1685,9 @@ export default function KolkataLocationClient({ faqs }: Props) {
                   <FileQuestion className="w-4 h-4 text-[#C65378]" />
                   <span>COMMON QUESTIONS</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   12. Frequently Asked Questions: Kolkata Wills
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Clear answers to key questions regarding Will registration, Calcutta High Court probate, and Dayabhaga property rights in West Bengal:
                 </p>
@@ -1732,9 +1732,9 @@ export default function KolkataLocationClient({ faqs }: Props) {
                   <Landmark className="w-4 h-4 text-[#C65378]" />
                   <span>LEGAL AUTHORITY &amp; PORTALS</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   13. Statutory References &amp; West Bengal Legal Portals
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Key statutes, judicial authorities, and official government portals governing estate succession and Will registration across Kolkata:
                 </p>

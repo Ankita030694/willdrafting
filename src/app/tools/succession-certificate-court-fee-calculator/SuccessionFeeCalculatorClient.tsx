@@ -840,9 +840,9 @@ export default function SuccessionFeeCalculatorClient() {
                 <Calculator className="w-4 h-4" />
                 <span>ONLINE TOOL</span>
               </div>
-              <h2 className="text-xl sm:text-2xl font-extrabold text-[#172228] tracking-tight">
+              <h3 className="text-xl sm:text-2xl font-extrabold text-[#172228] tracking-tight">
                 2. Interactive Court Fee Calculator by State
-              </h2>
+              </h3>
               <p className="text-sm text-slate-700 leading-relaxed">
                 Select your state and enter the total valuation of the deceased person's movable assets (bank balances,
                 fixed deposits, mutual funds, and shares) to estimate the statutory court fees and procedural costs.
@@ -1109,9 +1109,9 @@ export default function SuccessionFeeCalculatorClient() {
                 <BadgePercent className="w-4 h-4" />
                 <span>STATE COMPARISON</span>
               </div>
-              <h2 className="text-xl sm:text-2xl font-extrabold text-[#172228] tracking-tight">
+              <h3 className="text-xl sm:text-2xl font-extrabold text-[#172228] tracking-tight">
                 3. State-by-State Court Fee Slabs &amp; Maximum Caps
-              </h2>
+              </h3>
               <p className="text-sm text-slate-700 leading-relaxed">
                 Because court fees fall under the State List of the Seventh Schedule of the Indian Constitution,
                 each state legislature amends the Court Fees Act, 1870. The table below outlines the governing statute,
@@ -1220,9 +1220,9 @@ export default function SuccessionFeeCalculatorClient() {
                 <Layers className="w-4 h-4" />
                 <span>ASSET CLASSIFICATION</span>
               </div>
-              <h2 className="text-xl sm:text-2xl font-extrabold text-[#172228] tracking-tight">
+              <h3 className="text-xl sm:text-2xl font-extrabold text-[#172228] tracking-tight">
                 4. Eligible Assets: Movable Debts vs Real Estate
-              </h2>
+              </h3>
               <p className="text-sm text-slate-700 leading-relaxed">
                 A critical legal error made by petitioners is including real estate within a succession certificate
                 petition. Under Section 370 of the Indian Succession Act, civil courts have no jurisdiction to grant
@@ -1307,9 +1307,9 @@ export default function SuccessionFeeCalculatorClient() {
                 <FileSpreadsheet className="w-4 h-4" />
                 <span>VISUAL BLUEPRINT</span>
               </div>
-              <h2 className="text-xl sm:text-2xl font-extrabold text-[#172228] tracking-tight">
+              <h3 className="text-xl sm:text-2xl font-extrabold text-[#172228] tracking-tight">
                 5. Visual Blueprint: Court Fee Assessment SOP
-              </h2>
+              </h3>
               <p className="text-sm text-slate-700 leading-relaxed">
                 The diagram below illustrates the complete statutory journey from the freezing of bank debts upon
                 an intestate death, to petition valuation, ad valorem fee assessment, newspaper citation, and final grant.
@@ -1349,9 +1349,9 @@ export default function SuccessionFeeCalculatorClient() {
                 <FileCheck className="w-4 h-4" />
                 <span>PROCEDURAL GUIDE</span>
               </div>
-              <h2 className="text-xl sm:text-2xl font-extrabold text-[#172228] tracking-tight">
+              <h3 className="text-xl sm:text-2xl font-extrabold text-[#172228] tracking-tight">
                 6. Step-by-Step SOP: Six Stages from Petition to Grant
-              </h2>
+              </h3>
               <p className="text-sm text-slate-700 leading-relaxed">
                 Obtaining a succession certificate requires strict adherence to civil court procedure under the Code
                 of Civil Procedure, 1908 and Part X of the Indian Succession Act, 1925:
@@ -1411,9 +1411,9 @@ export default function SuccessionFeeCalculatorClient() {
                 <Coins className="w-4 h-4" />
                 <span>EXPENSE AUDIT</span>
               </div>
-              <h2 className="text-xl sm:text-2xl font-extrabold text-[#172228] tracking-tight">
+              <h3 className="text-xl sm:text-2xl font-extrabold text-[#172228] tracking-tight">
                 7. Hidden Costs: Publication, Sureties &amp; Stamp Duty
-              </h2>
+              </h3>
               <p className="text-sm text-slate-700 leading-relaxed">
                 Families often budget solely for the ad valorem court fee, only to be surprised by substantial
                 ancillary expenses. The table below provides an itemized breakdown of mandatory expenditures:
@@ -1473,9 +1473,9 @@ export default function SuccessionFeeCalculatorClient() {
                 <TrendingDown className="w-4 h-4" />
                 <span>HEAD-TO-HEAD</span>
               </div>
-              <h2 className="text-xl sm:text-2xl font-extrabold text-[#172228] tracking-tight">
+              <h3 className="text-xl sm:text-2xl font-extrabold text-[#172228] tracking-tight">
                 8. Cost &amp; Time Comparison: Succession Certificate vs Will
-              </h2>
+              </h3>
               <p className="text-sm text-slate-700 leading-relaxed">
                 Evaluating the stark contrast between dying intestate (requiring a court succession certificate)
                 and proactive estate planning through a legally valid Will:
@@ -1534,9 +1534,9 @@ export default function SuccessionFeeCalculatorClient() {
                 <Clock className="w-4 h-4" />
                 <span>TIMELINE MILESTONES</span>
               </div>
-              <h2 className="text-xl sm:text-2xl font-extrabold text-[#172228] tracking-tight">
+              <h3 className="text-xl sm:text-2xl font-extrabold text-[#172228] tracking-tight">
                 9. Procedural Timeline: Petition to Asset Release
-              </h2>
+              </h3>
               <p className="text-sm text-slate-700 leading-relaxed">
                 The expected progression for an uncontested succession certificate petition in Indian District Courts:
               </p>
@@ -1601,9 +1601,9 @@ export default function SuccessionFeeCalculatorClient() {
                 <Gavel className="w-4 h-4" />
                 <span>CASE STUDIES</span>
               </div>
-              <h2 className="text-xl sm:text-2xl font-extrabold text-[#172228] tracking-tight">
+              <h3 className="text-xl sm:text-2xl font-extrabold text-[#172228] tracking-tight">
                 10. Four Specialized Scenarios: Complex Estate Situations
-              </h2>
+              </h3>
               <p className="text-sm text-slate-700 leading-relaxed">
                 Real-world succession certificate petitions frequently involve intricate legal nuances:
               </p>
@@ -1675,9 +1675,9 @@ export default function SuccessionFeeCalculatorClient() {
                 <Sparkles className="w-4 h-4" />
                 <span>PERMANENT REMEDY</span>
               </div>
-              <h2 className="text-xl sm:text-2xl font-extrabold text-[#172228] tracking-tight">
+              <h3 className="text-xl sm:text-2xl font-extrabold text-[#172228] tracking-tight">
                 11. The Permanent Solution: How a Will Avoids Court Fees
-              </h2>
+              </h3>
               <div className="space-y-4 text-sm text-slate-700 leading-relaxed">
                 <p>
                   A succession certificate is not a mandatory requirement of Indian law if a person has drafted a
@@ -1724,9 +1724,9 @@ export default function SuccessionFeeCalculatorClient() {
                 <Award className="w-4 h-4" />
                 <span>LEGAL AUTHORITY</span>
               </div>
-              <h2 className="text-xl sm:text-2xl font-extrabold text-[#172228] tracking-tight">
+              <h3 className="text-xl sm:text-2xl font-extrabold text-[#172228] tracking-tight">
                 12. Institutional Verification: AMA Legal Solutions
-              </h2>
+              </h3>
               <div className="bg-white rounded-2xl border border-slate-200/90 p-6 space-y-4 text-xs sm:text-sm text-slate-700 leading-relaxed">
                 <p>
                   <strong>WillDrafting.in</strong> is powered by <strong>AMA Legal Solutions</strong>, an elite pan-India
@@ -1763,9 +1763,9 @@ export default function SuccessionFeeCalculatorClient() {
                 <HelpCircle className="w-4 h-4" />
                 <span>DIRECT ANSWERS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl font-extrabold text-[#172228] tracking-tight">
+              <h3 className="text-xl sm:text-2xl font-extrabold text-[#172228] tracking-tight">
                 13. Frequently Asked Questions: Succession Certificate Fees
-              </h2>
+              </h3>
               <p className="text-sm text-slate-700 leading-relaxed">
                 Common questions regarding court fee rates, statutory caps, timelines, and exemptions across Indian courts:
               </p>
@@ -1809,9 +1809,9 @@ export default function SuccessionFeeCalculatorClient() {
                 <BookOpen className="w-4 h-4" />
                 <span>AUTHORITY CITATIONS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl font-extrabold text-[#172228] tracking-tight">
+              <h3 className="text-xl sm:text-2xl font-extrabold text-[#172228] tracking-tight">
                 14. Citations &amp; Verified Government Portals
-              </h2>
+              </h3>
               <div className="space-y-3 text-xs text-slate-600 leading-relaxed">
                 <p>
                   This guide and calculator are compiled based on primary Indian statutory provisions and leading

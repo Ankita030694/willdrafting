@@ -606,9 +606,9 @@ export default function AttestingWitnessAffidavitClient() {
                 <Scale className="w-4 h-4" />
                 <span>EVIDENCE ACT &amp; BHARATIYA SAKSHYA ADHINIYAM</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 2. BSA 2023 Section 67: Why Registered Wills Need Witnesses
-              </h2>
+              </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   Many families believe that registering a Will at the Sub-Registrar Office (SRO) makes it self-proving and immune to legal challenge. This is a hazardous misconception.
@@ -631,9 +631,9 @@ export default function AttestingWitnessAffidavitClient() {
                 <Gavel className="w-4 h-4" />
                 <span>LANDMARK JUDICIAL PRECEDENTS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 3. Landmark Precedents: Janki Narayan Bhoir to Iyengar
-              </h2>
+              </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   The Supreme Court of India has established authoritative jurisprudence defining what an attesting witness affidavit must contain:
@@ -693,9 +693,9 @@ export default function AttestingWitnessAffidavitClient() {
                 <FileText className="w-4 h-4" />
                 <span>MANDATORY DUAL TEMPLATE PACK</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 4. Dual Template Pack: Court Probate &amp; Contemporaneous
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Select between the <strong>Contemporaneous Preventative Affidavit</strong> (to execute alongside your Will today) and the <strong>High Court / District Court Probate Petition Affidavit</strong> (for filing under Section 281 ISA post-demise).
               </p>
@@ -905,9 +905,9 @@ export default function AttestingWitnessAffidavitClient() {
                 <Layers className="w-4 h-4" />
                 <span>COMPARATIVE ANALYSIS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 5. Comparison Table: Probate vs Contemporaneous Affidavit
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Understanding the legal distinction between a contemporaneous witness affidavit and a post-death probate court affidavit is critical for estate planning.
               </p>
@@ -970,9 +970,9 @@ export default function AttestingWitnessAffidavitClient() {
                 <Sparkles className="w-4 h-4" />
                 <span>INTERACTIVE DIAGNOSTIC TOOL</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 6. Interactive Witness Competency &amp; Legal Eligibility Tool
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Test your attesting witnesses against Section 63(c) ISA, Section 67 BSA, and Supreme Court rulings to identify potential legal vulnerabilities before court submission.
               </p>
@@ -1245,9 +1245,9 @@ export default function AttestingWitnessAffidavitClient() {
                 <CheckSquare className="w-4 h-4" />
                 <span>PROCEDURAL PROTOCOL</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 7. Step-by-Step SOP: Execution, Swearing &amp; Court Filing
-              </h2>
+              </h3>
               <div className="space-y-4">
                 <div className="p-4 sm:p-5 rounded-2xl bg-white border border-slate-200/90 shadow-2xs space-y-2">
                   <div className="flex items-center gap-2 font-bold text-slate-900 text-sm">
@@ -1317,9 +1317,9 @@ export default function AttestingWitnessAffidavitClient() {
                 <ShieldAlert className="w-4 h-4" />
                 <span>JUDICIAL RISK PREVENTION</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 8. Critical Legal Defects Causing Affidavit Rejection
-              </h2>
+              </h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div className="p-4 rounded-2xl bg-white border border-rose-200 shadow-2xs space-y-2">
                   <div className="text-xs font-bold text-rose-700 flex items-center gap-1.5">
@@ -1369,9 +1369,9 @@ export default function AttestingWitnessAffidavitClient() {
                 <Scale className="w-4 h-4" />
                 <span>CONTINGENCY EVIDENCE PROCEDURES</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 9. Deceased or Hostile Witnesses: Section 68 BSA Protocol
-              </h2>
+              </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   Because Wills often surface decades after execution, it is very common for both attesting witnesses to have passed away or become incapacitated by the time probate is sought.
@@ -1401,9 +1401,9 @@ export default function AttestingWitnessAffidavitClient() {
                 <Award className="w-4 h-4" />
                 <span>LEGAL EXPERTISE &amp; ADVOCATE BACKING</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 10. Professional Legal Backing: AMA Legal Solutions
-              </h2>
+              </h3>
               <div className="p-5 sm:p-7 rounded-3xl bg-white border border-slate-200/90 shadow-2xs space-y-4">
                 <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
                   <div className="w-16 h-16 rounded-full bg-rose-100 text-[#C65378] font-black text-xl flex items-center justify-center shrink-0">
@@ -1447,9 +1447,9 @@ export default function AttestingWitnessAffidavitClient() {
                 <HelpCircle className="w-4 h-4" />
                 <span>FREQUENTLY ASKED QUESTIONS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 11. Frequently Asked Questions: Attesting Witness Rules
-              </h2>
+              </h3>
               <div className="space-y-3">
                 {FAQS.map((faq, idx) => {
                   const isOpen = openFaq === idx;
@@ -1487,9 +1487,9 @@ export default function AttestingWitnessAffidavitClient() {
                 <BookOpen className="w-4 h-4" />
                 <span>STATUTORY CITATIONS &amp; HIGH COURT RULES</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 12. Statutory Citations &amp; High Court Procedural Rules
-              </h2>
+              </h3>
               <div className="overflow-x-auto rounded-2xl border border-slate-200/90 shadow-2xs bg-white">
                 <table className="w-full text-left text-xs text-slate-700 divide-y divide-slate-200">
                   <thead className="bg-slate-50 text-slate-900 font-bold uppercase text-[11px] tracking-wider">

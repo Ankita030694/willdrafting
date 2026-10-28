@@ -380,9 +380,9 @@ export default function ProbateLawyerClient() {
                 <Landmark className="w-4 h-4 text-[#C65378]" />
                 <span>SECTIONS 57 &amp; 213: TERRITORIAL JURISDICTION</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
                 2. Mandatory Jurisdictions: High Court vs District Court
-              </h2>
+              </h3>
               <div className="space-y-3 text-sm md:text-base text-slate-700 leading-relaxed">
                 <p>
                   Whether you need probate depends on where the property is. Under Section 57 and Section 213 of the Indian Succession Act, probate is mandatory for Hindu, Buddhist, Sikh, and Jain Wills in two cases.
@@ -455,9 +455,9 @@ export default function ProbateLawyerClient() {
                 <FileCheck className="w-4 h-4 text-[#C65378]" />
                 <span>COMPARISON MATRIX: TESTAMENTARY INSTRUMENTS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
                 3. Legal Pathways: Probate vs Letters of Administration
-              </h2>
+              </h3>
               <div className="space-y-3 text-sm md:text-base text-slate-700 leading-relaxed">
                 <p>
                   Choosing the right court petition saves both time and legal fees. Many families confuse Probate with Letters of Administration. They also confuse it with Succession Certificates.
@@ -539,9 +539,9 @@ export default function ProbateLawyerClient() {
                 <Briefcase className="w-4 h-4 text-[#C65378]" />
                 <span>SECTION 218 &amp; SECTION 232 PROCEDURE</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
                 4. Letters of Administration: Estates Without an Executor
-              </h2>
+              </h3>
               <div className="space-y-3 text-sm md:text-base text-slate-700 leading-relaxed">
                 <p>
                   Letters of Administration help when probate is not an option. Under Indian law, families need this court order in two situations.
@@ -572,9 +572,9 @@ export default function ProbateLawyerClient() {
                 <FileText className="w-4 h-4 text-[#C65378]" />
                 <span>VISUAL COURT PROTOCOL BLUEPRINT</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
                 5. Visual Blueprint: End to End Probate Court Procedure
-              </h2>
+              </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed">
                 The diagram below shows the four main stages of the probate process in India. It guides you from checking court rules to getting the final grant under the official court seal.
               </p>
@@ -613,9 +613,9 @@ export default function ProbateLawyerClient() {
                 <Clock className="w-4 h-4 text-[#C65378]" />
                 <span>SIX-STAGE STATUTORY PROCEDURE</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
                 6. Step by Step Protocol: From Petition to Court Grant
-              </h2>
+              </h3>
               <div className="space-y-4">
                 {/* Step 1 */}
                 <div className="p-5 rounded-2xl bg-white border border-slate-200 shadow-xs flex items-start gap-4">
@@ -715,9 +715,9 @@ export default function ProbateLawyerClient() {
                 <Gavel className="w-4 h-4 text-[#C65378]" />
                 <span>COMPREHENSIVE LITIGATION TRACKS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
                 7. Four Practice Tracks: Uncontested &amp; Disputed Estates
-              </h2>
+              </h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div className="p-5 rounded-2xl bg-white border border-slate-200 shadow-xs space-y-2">
                   <div className="flex items-center gap-2 text-[#5F7E75]">
@@ -767,9 +767,9 @@ export default function ProbateLawyerClient() {
                 <Scale className="w-4 h-4 text-[#C65378]" />
                 <span>STATE COURT FEES ACT PROVISIONS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
                 8. Court Fee Structure: State Stamp Duties &amp; Legal Caps
-              </h2>
+              </h3>
               <div className="space-y-3 text-sm md:text-base text-slate-700 leading-relaxed">
                 <p>
                   State laws set the court fees for probate cases. Fees depend on the net value of the estate after deducting debts.
@@ -838,9 +838,9 @@ export default function ProbateLawyerClient() {
                 <Clock className="w-4 h-4 text-[#C65378]" />
                 <span>COURT HEARING DURATION EXPECTATIONS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
                 9. Procedural Timeline: Filing to Final Grant of Probate
-              </h2>
+              </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed">
                 Court timelines depend on the court schedule and family cooperation. Uncontested cases follow predictable stages.
               </p>
@@ -897,9 +897,9 @@ export default function ProbateLawyerClient() {
                 <AlertTriangle className="w-4 h-4 text-[#C65378]" />
                 <span>COMPLEX TESTAMENTARY LITIGATION</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
                 10. Specialized Scenarios: Caveats &amp; Challenged Wills
-              </h2>
+              </h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div className="p-5 rounded-2xl bg-white border border-slate-200 shadow-xs space-y-2">
                   <div className="flex items-center gap-2 text-rose-600">
@@ -949,9 +949,9 @@ export default function ProbateLawyerClient() {
                 <Award className="w-4 h-4 text-[#C65378]" />
                 <span>AMA LEGAL SOLUTIONS ADVOCATES</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
                 11. Legal Representation: Expert Succession Advocates
-              </h2>
+              </h3>
               <div className="space-y-3 text-sm md:text-base text-slate-700 leading-relaxed">
                 <p>
                   Probate law requires careful attention to High Court rules and evidence laws. At AMA Legal Solutions, our team guides you at every step.
@@ -982,9 +982,9 @@ export default function ProbateLawyerClient() {
                 <HelpCircle className="w-4 h-4 text-[#C65378]" />
                 <span>CLEAR ANSWERS TO COMMON QUESTIONS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
                 Frequently Asked Questions: Probate Law in India
-              </h2>
+              </h3>
               <p className="text-xs sm:text-sm text-slate-600">
                 Explore definitive answers prepared by senior succession advocates regarding probate procedures, costs, and court timelines:
               </p>
@@ -1029,9 +1029,9 @@ export default function ProbateLawyerClient() {
                 <Scale className="w-4 h-4 text-[#C65378]" />
                 <span>AUTHORITY REFERENCES &amp; INTERNAL RESOURCES</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
                 Statutory Citations: Indian Succession Act Provisions
-              </h2>
+              </h3>
 
               <ul className="space-y-2 text-xs sm:text-sm text-slate-600 list-disc pl-5">
                 <li>

@@ -62,9 +62,9 @@ export default function Process() {
           </div>
 
           {/* Editorial Title */}
-          <h2 className="text-[1.35rem] sm:text-[2.25rem] lg:text-[2.5rem] font-medium text-[#172228] leading-[1.15] sm:leading-[1.1] tracking-tight">
+          <h3 className="text-[1.35rem] sm:text-[2.25rem] lg:text-[2.5rem] font-medium text-[#172228] leading-[1.15] sm:leading-[1.1] tracking-tight">
             Four Simple Steps to Put <br className="hidden sm:inline" /> Your Family&apos;s Future in Writing
-          </h2>
+          </h3>
         </div>
 
         {/* =========================================================================

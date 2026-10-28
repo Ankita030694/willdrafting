@@ -534,9 +534,9 @@ Each of us hereby affirms that we are competent adults, of sound mind, and that 
                 <ShieldAlert className="w-4 h-4 text-rose-600" />
                 <span>COMPETITOR BLIND SPOT #1: SECTION 67</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 2. Section 67 Witness Rule: Disqualification of Beneficiaries
-              </h2>
+              </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   The single most dangerous error in Indian Christian Will drafting is allowing a child,
@@ -582,9 +582,9 @@ Each of us hereby affirms that we are competent adults, of sound mind, and that 
                 <Clock className="w-4 h-4" />
                 <span>COMPETITOR BLIND SPOT #2: SECTION 69</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 3. Section 69 Revocation Rule: Automatic Nullity on Marriage
-              </h2>
+              </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   Another statutory rule unique to Indian Christians and Parsis is{" "}
@@ -621,9 +621,9 @@ Each of us hereby affirms that we are competent adults, of sound mind, and that 
                 <Scale className="w-4 h-4" />
                 <span>LANDMARK SUPREME COURT RULING</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 4. Mary Roy Ruling: Equal Inheritance for Christian Daughters
-              </h2>
+              </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   Prior to 1986, Christian succession in parts of southern India was governed by regional
@@ -660,9 +660,9 @@ Each of us hereby affirms that we are competent adults, of sound mind, and that 
                 <FileText className="w-4 h-4" />
                 <span>LAWYER-VETTED LEGAL ASSET</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 5. Free Christian Will Format Template: Plain Paper Draft
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Use the interactive tabs below to review and copy our lawyer-vetted Christian Will
                 formats, complete with mandatory Section 67 witness disqualification safeguards and
@@ -798,9 +798,9 @@ Each of us hereby affirms that we are competent adults, of sound mind, and that 
                 <Layers className="w-4 h-4" />
                 <span>ESSENTIAL WILL CLAUSES</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 6. Essential Clauses: Residuary Assets, Minors &amp; Church Gifts
-              </h2>
+              </h3>
               <div className="space-y-4 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   A robust Christian Will must contain specific safeguard clauses to prevent future
@@ -872,9 +872,9 @@ Each of us hereby affirms that we are competent adults, of sound mind, and that 
                 <Calculator className="w-4 h-4" />
                 <span>INTERACTIVE DIAGNOSTIC TOOL</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 7. Christian Testamentary &amp; Witness Eligibility Diagnostic Tool
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Check whether your Will complies with Section 67 witness disqualification rules, Section
                 69 marriage revocation laws, and regional probate requirements in 30 seconds.
@@ -1113,9 +1113,9 @@ Each of us hereby affirms that we are competent adults, of sound mind, and that 
                 <Scale className="w-4 h-4" />
                 <span>COMPARATIVE STATUTORY ANALYSIS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 8. Legal Comparison: Christian vs Hindu &amp; Muslim Wills
-              </h2>
+              </h3>
               <div className="space-y-4 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   To understand the unique legal status of Christian Wills in India, examine how the
@@ -1220,9 +1220,9 @@ Each of us hereby affirms that we are competent adults, of sound mind, and that 
                 <Gavel className="w-4 h-4" />
                 <span>COURT PROCEDURES &amp; REGISTRATION</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 9. Probate Rules: Section 213, High Courts &amp; Registration
-              </h2>
+              </h3>
               <div className="space-y-4 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   A frequent question among Christian families is whether they must obtain a Court Probate
@@ -1296,9 +1296,9 @@ Each of us hereby affirms that we are competent adults, of sound mind, and that 
                 <Building className="w-4 h-4" />
                 <span>REGIONAL LEGAL JURISDICTIONS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 10. Regional Succession Nuances: Kerala, Goa &amp; Presidency Towns
-              </h2>
+              </h3>
               <div className="space-y-4 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   Indian Christian succession involves distinct regional variations across key states:
@@ -1355,9 +1355,9 @@ Each of us hereby affirms that we are competent adults, of sound mind, and that 
                 <CheckSquare className="w-4 h-4" />
                 <span>STEP-BY-STEP PROTOCOL</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 11. Step-by-Step SOP: Executing a Valid Christian Will
-              </h2>
+              </h3>
               <div className="space-y-4 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   Follow this verified standard operating procedure to draft and execute a challenge-proof
@@ -1463,9 +1463,9 @@ Each of us hereby affirms that we are competent adults, of sound mind, and that 
                 <AlertCircle className="w-4 h-4" />
                 <span>RISK PREVENTION</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 12. Common Drafting Mistakes &amp; Legal Risk Prevention
-              </h2>
+              </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   Avoid these five critical pitfalls when executing a Christian Will in India:
@@ -1550,9 +1550,9 @@ Each of us hereby affirms that we are competent adults, of sound mind, and that 
                 <Award className="w-4 h-4" />
                 <span>EXPERT LEGAL BACKING</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 13. Legal Excellence: AMA Legal Solutions Succession Team
-              </h2>
+              </h3>
               <div className="bg-white rounded-3xl border border-slate-200/90 shadow-sm p-6 sm:p-8 space-y-6">
                 <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 pb-6 border-b border-slate-100">
                   <div className="w-16 h-16 rounded-2xl bg-slate-900 text-white flex items-center justify-center font-black text-xl shrink-0">
@@ -1621,9 +1621,9 @@ Each of us hereby affirms that we are competent adults, of sound mind, and that 
                 <HelpCircle className="w-4 h-4" />
                 <span>QUESTIONS &amp; ANSWERS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 14. Frequently Asked Questions: Christian Wills in India
-              </h2>
+              </h3>
               <div className="space-y-3">
                 {FAQS.map((faq, index) => {
                   const isOpen = openFaq === index;
@@ -1661,9 +1661,9 @@ Each of us hereby affirms that we are competent adults, of sound mind, and that 
                 <Scroll className="w-4 h-4" />
                 <span>LEGAL AUTHORITIES &amp; STATUTES</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 15. Statutory Citations, Landmark Case Law &amp; Official Acts
-              </h2>
+              </h3>
               <div className="bg-white rounded-2xl border border-slate-200/90 shadow-xs p-5 sm:p-6 space-y-3 text-xs text-slate-600 leading-relaxed">
                 <ul className="space-y-2 list-disc pl-4">
                   <li>

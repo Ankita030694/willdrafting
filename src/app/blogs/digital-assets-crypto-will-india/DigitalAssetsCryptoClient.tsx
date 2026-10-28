@@ -549,9 +549,9 @@ export default function DigitalAssetsCryptoClient() {
                 <Scale className="w-4 h-4" />
                 <span>Statutory Standing</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
                 1. Legal Status: Digital Assets &amp; Crypto in Indian Law
-              </h2>
+              </h3>
               <div className="prose prose-slate max-w-none text-xs sm:text-sm text-slate-700 leading-relaxed space-y-3">
                 <p>
                   A common question Indian investors ask is whether cryptocurrency is legally recognized under inheritance laws. The answer is an unambiguous yes. In the landmark judgment <em>Internet and Mobile Association of India (IMAI) v. Reserve Bank of India (2020)</em>, the Supreme Court struck down the RBI banking ban, establishing that holding, trading, and owning virtual currencies is a constitutionally protected economic activity.
@@ -582,9 +582,9 @@ export default function DigitalAssetsCryptoClient() {
                 <Key className="w-4 h-4" />
                 <span>The Core Security Strategy</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
                 2. The Two-Document Method: Why Never Put Keys in a Will
-              </h2>
+              </h3>
               <div className="prose prose-slate max-w-none text-xs sm:text-sm text-slate-700 leading-relaxed space-y-3">
                 <p>
                   The biggest mistake amateur estate planners make is writing cryptocurrency private keys, 12-word seed phrases, or email passwords directly into their Will. Doing so creates an immediate security disaster.
@@ -675,9 +675,9 @@ export default function DigitalAssetsCryptoClient() {
                 <FileCheck className="w-4 h-4" />
                 <span>Actionable Free Template</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
                 3. Digital Asset Inventory Template: Checklist &amp; Assets
-              </h2>
+              </h3>
               <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
                 Use our comprehensive, clause-annotated Digital Asset Inventory and Access Memorandum. Fill this out, place it in a sealed envelope, and store it safely in your bank locker or safe with instructions for your named executor.
               </p>
@@ -748,9 +748,9 @@ export default function DigitalAssetsCryptoClient() {
                 <DollarSign className="w-4 h-4" />
                 <span>Statutory Tax Implications</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
                 4. VDA Taxation: 30% Tax, 1% TDS &amp; Inheritance Exemptions
-              </h2>
+              </h3>
               <div className="prose prose-slate max-w-none text-xs sm:text-sm text-slate-700 leading-relaxed space-y-3">
                 <p>
                   Crypto tax laws in India are among the strictest in the world. However, Indian tax jurisprudence makes a crucial, positive distinction between an <strong>inheritance transfer</strong> and a <strong>commercial sale</strong>.
@@ -826,9 +826,9 @@ export default function DigitalAssetsCryptoClient() {
                 <HardDrive className="w-4 h-4" />
                 <span>Visual Blueprint</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
                 5. Visual Blueprint: Digital Estate Planning Protocol
-              </h2>
+              </h3>
               <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
                 The diagram below illustrates the complete architecture of a compliant digital estate plan in India: separating the formal, probatable Last Will from the confidential, sealed technical access memorandum.
               </p>
@@ -867,9 +867,9 @@ export default function DigitalAssetsCryptoClient() {
                 <Wallet className="w-4 h-4" />
                 <span>Technical Succession Realities</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
                 6. Crypto Challenges: Hardware Wallets, Keys &amp; Exchanges
-              </h2>
+              </h3>
               <div className="prose prose-slate max-w-none text-xs sm:text-sm text-slate-700 leading-relaxed space-y-3">
                 <p>
                   Unlike standard banking deposits where an RBI circular mandates smooth transmission to legal heirs or nominees within 15 days, cryptocurrency exists across decentralized ledgers and sovereign jurisdictions. Estate planning requires tailored handling across three distinct custody models:
@@ -931,9 +931,9 @@ export default function DigitalAssetsCryptoClient() {
                 <Globe className="w-4 h-4" />
                 <span>Broad Digital Estate</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
                 7. Non-Crypto Assets: Cloud Drives, Domains &amp; Social Media
-              </h2>
+              </h3>
               <div className="prose prose-slate max-w-none text-xs sm:text-sm text-slate-700 leading-relaxed space-y-3">
                 <p>
                   Your digital estate extends far beyond cryptocurrency. In today&apos;s digital-first economy, the average Indian professional holds dozens of digital assets carrying deep sentimental or substantial financial value:
@@ -990,9 +990,9 @@ export default function DigitalAssetsCryptoClient() {
                 <CheckSquare className="w-4 h-4" />
                 <span>6-Stage Implementation Protocol</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
                 8. Step-by-Step SOP: Executing Your Digital Estate Plan
-              </h2>
+              </h3>
               <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
                 Follow this battle-tested standard operating procedure to secure your digital and cryptocurrency holdings under Indian law:
               </p>
@@ -1062,9 +1062,9 @@ export default function DigitalAssetsCryptoClient() {
                 <Cpu className="w-4 h-4" />
                 <span>Smart Automation</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
                 9. Automation Tools: Dead Man Switches &amp; Legacy Contacts
-              </h2>
+              </h3>
               <div className="prose prose-slate max-w-none text-xs sm:text-sm text-slate-700 leading-relaxed space-y-3">
                 <p>
                   Technology itself provides built-in tools to automate succession. Combining legal documents with automated triggers ensures your family is not locked out of vital accounts:
@@ -1111,9 +1111,9 @@ export default function DigitalAssetsCryptoClient() {
                 <CheckSquare className="w-4 h-4" />
                 <span>Interactive Assessment</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
                 10. Interactive Tool: Digital Asset Readiness Assessment
-              </h2>
+              </h3>
               <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
                 Check off the items below to calculate your personal Digital Estate Readiness Score. Find out whether your crypto and online accounts are safe or at high risk of permanent loss.
               </p>
@@ -1235,9 +1235,9 @@ export default function DigitalAssetsCryptoClient() {
                 <ShieldAlert className="w-4 h-4" />
                 <span>Defensive Estate Planning</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
                 11. Three Critical Mistakes in Crypto Estate Planning
-              </h2>
+              </h3>
               <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
                 Over 90% of crypto assets lost after death stem from these three avoidable blunders:
               </p>
@@ -1288,9 +1288,9 @@ export default function DigitalAssetsCryptoClient() {
                 <HelpCircle className="w-4 h-4" />
                 <span>Direct Answers to Common Queries</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
                 12. Frequently Asked Questions: Crypto &amp; Digital Assets
-              </h2>
+              </h3>
               <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
                 Find clear answers to complex legal and technical questions on digital estate planning in India:
               </p>
@@ -1335,9 +1335,9 @@ export default function DigitalAssetsCryptoClient() {
                 <Landmark className="w-4 h-4" />
                 <span>Legal Authority &amp; Government Acts</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
                 13. Statutory Authority: Income Tax &amp; Succession Acts
-              </h2>
+              </h3>
               <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
                 The legal principles, taxation rules, and procedural protections outlined in this guide are grounded in established Indian statutory law and Supreme Court precedents:
               </p>

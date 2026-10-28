@@ -26,7 +26,7 @@ export default function CallToActionBanner() {
       }}
     >
       <div className="container" style={{ textAlign: "center", maxWidth: "760px" }}>
-        <h2
+        <h3
           style={{
             fontSize: "clamp(1.55rem, 5vw, 2.6rem)",
             color: "#FFFFFF",
@@ -37,7 +37,7 @@ export default function CallToActionBanner() {
           }}
         >
           Take 15 minutes today to protect what took a lifetime to build.
-        </h2>
+        </h3>
 
         <p
           style={{

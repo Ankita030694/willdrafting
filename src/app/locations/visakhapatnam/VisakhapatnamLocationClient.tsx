@@ -541,9 +541,9 @@ export default function VisakhapatnamLocationClient({ faqs }: Props) {
                   <Scale className="w-4 h-4 text-[#C65378]" />
                   <span>STATUTORY PROVISIONS</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   1. Will Drafting &amp; Legal Framework in Visakhapatnam
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Making a Will in Visakhapatnam follows the <strong>Indian Succession Act, 1925</strong> and the <strong>Registration Act, 1908</strong>.
                   Any adult of sound mind can make a Will. It lets you pass on flats, plots, bank deposits, and shares to the people you choose.
@@ -604,9 +604,9 @@ export default function VisakhapatnamLocationClient({ faqs }: Props) {
                   <FileText className="w-4 h-4 text-[#C65378]" />
                   <span>REGISTRATION ACT PROVISIONS</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   2. Is Will Registration Mandatory in Andhra Pradesh?
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Under <strong>Section 18(e) of the Registration Act, 1908</strong>, registering a Will is optional in Andhra Pradesh.
                   An unregistered Will written on plain paper and signed before two witnesses is legally valid.
@@ -669,9 +669,9 @@ export default function VisakhapatnamLocationClient({ faqs }: Props) {
                   <Scale className="w-4 h-4 text-[#C65378]" />
                   <span>JUDICIAL PRECEDENT</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   3. Visakhapatnam Probate Rules: Non-Presidency Exemption
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Under <strong>Section 213 of the Indian Succession Act, 1925</strong>, court probate is mandatory only in Mumbai, Kolkata, and Chennai.
                   Probate is a court order that certifies a Will is genuine.
@@ -716,9 +716,9 @@ export default function VisakhapatnamLocationClient({ faqs }: Props) {
                   <Building className="w-4 h-4 text-[#C65378]" />
                   <span>URBAN REVENUE MUTATION</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   4. VMRDA Plots &amp; GVMC Property Mutation by Will
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   In Visakhapatnam, property records are updated by two main bodies:
                   the <strong>VMRDA</strong> for planned layouts, and the <strong>GVMC</strong> for city property tax records.
@@ -783,9 +783,9 @@ export default function VisakhapatnamLocationClient({ faqs }: Props) {
                   <MapPin className="w-4 h-4 text-[#C65378]" />
                   <span>REGISTRATION OFFICES</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   5. Visakhapatnam Sub-Registrar Directory: SRO Hubs
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Under the Registration and Stamps Department of Andhra Pradesh (AP IGRS), Visakhapatnam district has designated Sub-Registrar Offices.
                   Search or select an SRO below to inspect its operational address, jurisdiction, and official timings:
@@ -876,9 +876,9 @@ export default function VisakhapatnamLocationClient({ faqs }: Props) {
                   <Compass className="w-4 h-4 text-[#C65378]" />
                   <span>CITY-WIDE REACH</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   6. Locality Coverage: MVP Colony, Gajuwaka &amp; Beyond
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Our online Will drafting platform and senior advocate assistance cater to all prime residential, defense, and commercial sectors across the Greater Visakhapatnam region:
                 </p>
@@ -1218,9 +1218,9 @@ export default function VisakhapatnamLocationClient({ faqs }: Props) {
                   <FileCheck className="w-4 h-4 text-[#C65378]" />
                   <span>STEP-BY-STEP PROTOCOL</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   7. Step-by-Step AP IGRS Will Registration Protocol
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Registering a Will in Visakhapatnam is done via the AP IGRS portal (<code>registration.ap.gov.in</code>).
                   Here are the 5 easy steps to register your Will:
@@ -1316,9 +1316,9 @@ export default function VisakhapatnamLocationClient({ faqs }: Props) {
                   <Home className="w-4 h-4 text-[#C65378]" />
                   <span>DOORSTEP CONVENIENCE</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   8. Section 31 Doorstep Registration for Seniors
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Under <strong>Section 31 of the Registration Act, 1908</strong>, the Sub-Registrar can visit your home or hospital bed.
                   This service helps senior citizens and unwell people who cannot travel to the registration office.
@@ -1359,9 +1359,9 @@ export default function VisakhapatnamLocationClient({ faqs }: Props) {
                   <FileCheck className="w-4 h-4 text-[#C65378]" />
                   <span>PREPARATION TOOL</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   9. Documents Checklist for Visakhapatnam Will
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Use this interactive checklist to confirm you have assembled all required paperwork before executing your Will or visiting the Visakhapatnam Sub-Registrar Office:
                 </p>
@@ -1419,9 +1419,9 @@ export default function VisakhapatnamLocationClient({ faqs }: Props) {
                   <Building className="w-4 h-4 text-[#C65378]" />
                   <span>ASSET CLASSIFICATIONS</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   10. Vizag Property Types: Port, Naval &amp; Urban Estates
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Visakhapatnam&apos;s diverse economic landscape includes residential developments, defense housing societies, commercial logistics setups, and industrial manufacturing units:
                 </p>
@@ -1497,9 +1497,9 @@ export default function VisakhapatnamLocationClient({ faqs }: Props) {
                   <Stamp className="w-4 h-4 text-[#C65378]" />
                   <span>STATUTORY CHARGES</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   11. AP IGRS Registration Fees &amp; Stamp Duty Exemption
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Unlike sale deeds or gift deeds, executing a Will does not require payment of ad-valorem stamp duty in Andhra Pradesh.
                   Here is the official breakdown of fees payable for Will registration in Visakhapatnam:
@@ -1548,9 +1548,9 @@ export default function VisakhapatnamLocationClient({ faqs }: Props) {
                   <Award className="w-4 h-4 text-[#C65378]" />
                   <span>PLANS &amp; PRICING</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   12. Transparent Will Packages &amp; Senior Advocate Review
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Select the level of legal support tailored to your family&apos;s estate planning needs in Visakhapatnam:
                 </p>
@@ -1692,9 +1692,9 @@ export default function VisakhapatnamLocationClient({ faqs }: Props) {
                   <HelpCircle className="w-4 h-4 text-[#C65378]" />
                   <span>FREQUENTLY ASKED QUESTIONS</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   13. Frequently Asked Questions: Visakhapatnam Wills
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Authoritative legal answers to common questions about executing and registering a Will in Visakhapatnam:
                 </p>
@@ -1737,9 +1737,9 @@ export default function VisakhapatnamLocationClient({ faqs }: Props) {
                   <Scale className="w-4 h-4 text-[#C65378]" />
                   <span>STATUTORY CITATIONS</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   14. Statutory References &amp; Andhra Pradesh Rules
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Our Will drafting protocols comply strictly with central succession statutes and Andhra Pradesh government regulations:
                 </p>

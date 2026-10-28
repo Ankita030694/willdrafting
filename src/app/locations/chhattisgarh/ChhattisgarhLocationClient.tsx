@@ -551,9 +551,9 @@ export default function ChhattisgarhLocationClient({ faqs }: Props) {
                   <Scale className="w-4 h-4 text-[#C65378]" />
                   <span>STATUTORY PROVISIONS</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   1. Will Drafting &amp; Legal Framework in Chhattisgarh
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Succession planning in Chhattisgarh is governed by the <strong>Indian Succession Act, 1925</strong>, the <strong>Registration Act, 1908</strong>, and the <strong>Chhattisgarh Land Revenue Code, 1959</strong>. Any individual of sound mind who has attained the age of majority can legally bequeath self-acquired residential real estate, commercial assets, farmland, and financial investments.
                 </p>
@@ -612,9 +612,9 @@ export default function ChhattisgarhLocationClient({ faqs }: Props) {
                   <FileQuestion className="w-4 h-4 text-[#C65378]" />
                   <span>REGISTRATION STATUS</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   2. Is Will Registration Mandatory in Chhattisgarh?
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Under Section 18(e) of the Registration Act, 1908, the registration of a testamentary Will is strictly <strong>optional</strong>. An unregistered Will signed on standard white paper before two independent witnesses is legally enforceable and admissible in judicial proceedings.
                 </p>
@@ -676,9 +676,9 @@ export default function ChhattisgarhLocationClient({ faqs }: Props) {
                   <Landmark className="w-4 h-4 text-[#C65378]" />
                   <span>JUDICIAL PRECEDENTS</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   3. High Court of Chhattisgarh Probate Law Exemption
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   A frequent question from property holders in Raipur, Bilaspur, and Durg is whether probate from the High Court of Chhattisgarh is compulsory before inheriting real estate. The established legal answer is <strong>no</strong>.
                 </p>
@@ -729,9 +729,9 @@ export default function ChhattisgarhLocationClient({ faqs }: Props) {
                   <MapPin className="w-4 h-4 text-[#C65378]" />
                   <span>SRO JURISDICTION DIRECTORY</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   4. Chhattisgarh SRO Directory: NGDRS Registration Hubs
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Registration in Chhattisgarh is administered by the Commercial Tax (Registration) Department via the National Generic Document Registration System (NGDRS). Under Section 32 of the Registration Act, a Will can be registered at the Sub-Registrar Office where the testator resides or where any portion of the bequeathed property is situated.
                 </p>
@@ -820,9 +820,9 @@ export default function ChhattisgarhLocationClient({ faqs }: Props) {
                   <MapPin className="w-4 h-4 text-[#C65378]" />
                   <span>REGIONAL CITIES COVERAGE &amp; ASSET NUANCES</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   5. Regional Cities: Area-Wise Will Drafting in Chhattisgarh
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Estate holdings across Chhattisgarh span prime residential apartments in Shankar Nagar and Civil Lines, planned plots in Nava Raipur Atal Nagar, commercial wholesale establishments in Pandri and Vyapar Vihar, SAIL Bhilai quarters, sponge iron and rolling mills in Raigarh, and fertile farmlands in Rajnandgaon and Bastar. Our legal advocates offer customized legal drafting, NGDRS portal booking, and Sub-Registrar accompaniment across all key regional hubs:
                 </p>
@@ -1270,9 +1270,9 @@ export default function ChhattisgarhLocationClient({ faqs }: Props) {
                   <FileText className="w-4 h-4 text-[#C65378]" />
                   <span>PROCEDURAL ROADMAP</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   6. Step-by-Step SOP: Online Drafting to NGDRS Registration
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Follow this verified 5-stage legal operating procedure to draft, execute, and register your Will before the Sub-Registrar in Chhattisgarh:
                 </p>
@@ -1358,9 +1358,9 @@ export default function ChhattisgarhLocationClient({ faqs }: Props) {
                   <Home className="w-4 h-4 text-[#C65378]" />
                   <span>DOORSTEP REGISTRATION FOR SENIORS</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   7. Section 31 Doorstep SRO Registration for Senior Citizens
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   For senior citizens, bedridden individuals, or persons with medical mobility restrictions residing in Shankar Nagar, Civil Lines, Nehru Nagar, or rural areas, traveling to the Sub-Registrar Office can be a physical burden. Under <strong>Section 31 of the Registration Act, 1908</strong>, the Sub-Registrar holds legal statutory authority to attend a private residence or hospital to register a Will.
                 </p>
@@ -1413,9 +1413,9 @@ export default function ChhattisgarhLocationClient({ faqs }: Props) {
                   <FileCheck className="w-4 h-4 text-[#C65378]" />
                   <span>INTERACTIVE CHECKLIST</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   8. Document Checklist for Chhattisgarh SRO Registration
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Prepare your documentation before scheduling your Sub-Registrar appointment. You have organized <strong>{checkedCount} of {checklist.length}</strong> required documents:
                 </p>
@@ -1463,9 +1463,9 @@ export default function ChhattisgarhLocationClient({ faqs }: Props) {
                   <Building className="w-4 h-4 text-[#C65378]" />
                   <span>PROPERTY DYNAMICS</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   9. Chhattisgarh Property Types: RDA Plots, Land &amp; Mining
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Succession procedures in Chhattisgarh vary depending on whether the property is urban development authority land, agricultural revenue land, or industrial business assets:
                 </p>
@@ -1517,9 +1517,9 @@ export default function ChhattisgarhLocationClient({ faqs }: Props) {
                   <Stamp className="w-4 h-4 text-[#C65378]" />
                   <span>STATUTORY CHARGES</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   10. Official NGDRS Chhattisgarh Registration Fees &amp; Costs
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Unlike commercial conveyance deeds or gifts that attract substantial ad-valorem stamp duty in Chhattisgarh, testamentary Wills are completely exempt from stamp duty. Government registration charges in Chhattisgarh are nominal:
                 </p>
@@ -1567,9 +1567,9 @@ export default function ChhattisgarhLocationClient({ faqs }: Props) {
                   <Award className="w-4 h-4 text-[#C65378]" />
                   <span>TRANSPARENT PLANS</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   11. Transparent Will Packages &amp; Pricing in Chhattisgarh
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Choose the legal assistance package tailored to your family&apos;s estate planning and property portfolio in Chhattisgarh:
                 </p>
@@ -1711,9 +1711,9 @@ export default function ChhattisgarhLocationClient({ faqs }: Props) {
                   <HelpCircle className="w-4 h-4 text-[#C65378]" />
                   <span>FREQUENTLY ASKED QUESTIONS</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   12. Frequently Asked Questions: Will Making in Chhattisgarh
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Clear, authoritative answers to common legal questions regarding Will drafting and property registration in Chhattisgarh:
                 </p>
@@ -1756,9 +1756,9 @@ export default function ChhattisgarhLocationClient({ faqs }: Props) {
                   <Scale className="w-4 h-4 text-[#C65378]" />
                   <span>STATUTORY CITATIONS</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   13. Statutory Citations &amp; Chhattisgarh Legal Portals
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Our drafting protocols comply strictly with codified Indian statutes and Chhattisgarh state registration systems:
                 </p>

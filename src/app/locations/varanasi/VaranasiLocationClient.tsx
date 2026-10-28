@@ -660,9 +660,9 @@ export default function VaranasiLocationClient({ faqs }: Props) {
               </div>
 
               {/* H2 <= 70 chars, No Em-Dashes */}
-              <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight leading-tight">
+              <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight leading-tight">
                 2. UP Legal Framework: Will Validity &amp; Stamp Duty Relief
-              </h2>
+              </h3>
 
               <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                 Will making in Varanasi is governed by the Indian Succession Act, 1925, and the Registration Act, 1908. To be legally binding in Uttar Pradesh, your Will must fulfill four fundamental statutory requirements:
@@ -732,9 +732,9 @@ export default function VaranasiLocationClient({ faqs }: Props) {
               </div>
 
               {/* H2 <= 70 chars, No Em-Dashes */}
-              <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight leading-tight">
+              <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight leading-tight">
                 3. Will Registration: Mandatory vs Optional Under UP Law
-              </h2>
+              </h3>
 
               <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                 Under Section 18(e) of the Registration Act, 1908, registering a Will is optional in Uttar Pradesh. An unregistered Will signed on plain white paper before two witnesses is legally valid. However, in Varanasi, registering your Will at the local Sub-Registrar Office (SRO) provides immense legal security.
@@ -800,9 +800,9 @@ export default function VaranasiLocationClient({ faqs }: Props) {
               </div>
 
               {/* H2 <= 70 chars, No Em-Dashes */}
-              <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight leading-tight">
+              <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight leading-tight">
                 4. Allahabad High Court Probate Rules: Exemption in UP
-              </h2>
+              </h3>
 
               <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                 Many Varanasi residents worry whether they must obtain court probate before inheriting properties. A probate is a court-certified copy of a Will issued under the seal of a competent civil court.
@@ -839,9 +839,9 @@ export default function VaranasiLocationClient({ faqs }: Props) {
               </div>
 
               {/* H2 <= 70 chars, No Em-Dashes */}
-              <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight leading-tight">
+              <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight leading-tight">
                 5. VDA Property Mutation &amp; Ancestral Haveli Succession
-              </h2>
+              </h3>
 
               <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                 Estate succession in Varanasi involves two distinct categories of immovable assets: modern urban development authority plots and ancient heritage properties.
@@ -893,9 +893,9 @@ export default function VaranasiLocationClient({ faqs }: Props) {
               </div>
 
               {/* H2 <= 70 chars, No Em-Dashes */}
-              <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight leading-tight">
+              <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight leading-tight">
                 6. UP Revenue Code 2006: Farmland Bequests in Varanasi
-              </h2>
+              </h3>
 
               <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                 Many Varanasi families own agricultural or peri-urban farmland in Pindra, Rohania, Sevapuri, Harahua, or near the Lal Bahadur Shastri International Airport belt. Succession for agricultural land in Uttar Pradesh is governed specifically by the <strong>Uttar Pradesh Revenue Code, 2006</strong>, and not by personal succession laws.
@@ -944,9 +944,9 @@ export default function VaranasiLocationClient({ faqs }: Props) {
               </div>
 
               {/* H2 <= 70 chars, No Em-Dashes */}
-              <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight leading-tight">
+              <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight leading-tight">
                 7. Varanasi SRO Directory: Kutchery, Bhelupur &amp; Shivpur
-              </h2>
+              </h3>
 
               <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                 Varanasi district is divided into multiple Sub-Registrar Offices under the Stamps and Registration Department, Uttar Pradesh (IGRSUP). Select an office below to inspect jurisdictions and address details:
@@ -1017,9 +1017,9 @@ export default function VaranasiLocationClient({ faqs }: Props) {
                 </div>
 
                 {/* H2 <= 70 chars, No Em-Dashes */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight leading-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight leading-tight">
                   8. Varanasi Neighborhoods: Full Estate Planning Reach
-                </h2>
+                </h3>
 
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Estate assets in Varanasi span sacred riverfront havelis along the Ganga ghats, modern VDA residential colonies in Sigra and Shivpur, prime commercial showrooms in Mahmoorganj, wholesale handloom trading houses in Chowk, and agricultural land holdings across Pindra and Raja Talab. Our estate advocates deliver customized legal drafting, UP IGRSUP token scheduling, and Sub-Registrar accompaniment across all key micro-markets:
@@ -1112,9 +1112,9 @@ export default function VaranasiLocationClient({ faqs }: Props) {
               </div>
 
               {/* H2 <= 70 chars, No Em-Dashes */}
-              <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight leading-tight">
+              <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight leading-tight">
                 9. Step-by-Step SOP: Drafting to Registration in Kashi
-              </h2>
+              </h3>
 
               <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                 Follow our 5-step Standard Operating Procedure (SOP) to draft and register your Will securely in Varanasi:
@@ -1211,9 +1211,9 @@ export default function VaranasiLocationClient({ faqs }: Props) {
               </div>
 
               {/* H2 <= 70 chars, No Em-Dashes */}
-              <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight leading-tight">
+              <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight leading-tight">
                 10. Section 31 Doorstep SRO Registration for Seniors
-              </h2>
+              </h3>
 
               <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                 Visiting busy government kutchery offices can be challenging for elderly, bedridden, or ailing senior citizens. Under <strong>Section 31 of the Registration Act, 1908</strong>, the law provides an official procedure for doorstep registration at home or in a hospital.
@@ -1265,9 +1265,9 @@ export default function VaranasiLocationClient({ faqs }: Props) {
               </div>
 
               {/* H2 <= 70 chars, No Em-Dashes */}
-              <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight leading-tight">
+              <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight leading-tight">
                 11. Required Documents Checklist: Varanasi SRO Process
-              </h2>
+              </h3>
 
               <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                 Check off your documents below to verify readiness before proceeding to your Varanasi SRO appointment:
@@ -1330,9 +1330,9 @@ export default function VaranasiLocationClient({ faqs }: Props) {
               </div>
 
               {/* H2 <= 70 chars, No Em-Dashes */}
-              <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight leading-tight">
+              <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight leading-tight">
                 12. Varanasi Property Types: Flats, Havelis &amp; Handloom
-              </h2>
+              </h3>
 
               <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                 Estate planning in Varanasi covers unique categories of immovable, movable, and commercial assets:
@@ -1384,9 +1384,9 @@ export default function VaranasiLocationClient({ faqs }: Props) {
               </div>
 
               {/* H2 <= 70 chars, No Em-Dashes */}
-              <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight leading-tight">
+              <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight leading-tight">
                 13. Government Fee Structure: IGRSUP Portal Cost Breakdown
-              </h2>
+              </h3>
 
               <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                 Will registration in Uttar Pradesh is heavily subsidized by the state government to encourage citizens to record testamentary instruments. Unlike sale deeds or gift deeds that attract 5% to 7% stamp duties, Wills attract zero percentage duties.
@@ -1440,9 +1440,9 @@ export default function VaranasiLocationClient({ faqs }: Props) {
               </div>
 
               {/* H2 <= 70 chars, No Em-Dashes */}
-              <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight leading-tight">
+              <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight leading-tight">
                 14. Transparent Legal Fees: Will Drafting &amp; SRO Packages
-              </h2>
+              </h3>
 
               <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                 Choose the estate planning package that fits your family requirements. No hidden charges or unexpected surprise legal fees:
@@ -1571,9 +1571,9 @@ export default function VaranasiLocationClient({ faqs }: Props) {
               </div>
 
               {/* H2 <= 70 chars, No Em-Dashes */}
-              <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight leading-tight">
+              <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight leading-tight">
                 15. Frequently Asked Questions: Will Drafting in Varanasi
-              </h2>
+              </h3>
 
               <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                 Find clear answers to common questions about drafting and registering a Will in Varanasi and Uttar Pradesh:
@@ -1620,9 +1620,9 @@ export default function VaranasiLocationClient({ faqs }: Props) {
               </div>
 
               {/* H2 <= 70 chars, No Em-Dashes */}
-              <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight leading-tight">
+              <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight leading-tight">
                 16. Statutory Citations &amp; Legal Framework References
-              </h2>
+              </h3>
 
               <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                 Every Will drafted through WillDrafting strictly aligns with Indian statutory enactments and judicial precedents:

@@ -173,9 +173,9 @@ export default function RelinquishmentDeedInteractive() {
           <Building2 className="w-4 h-4" />
           <span>Interactive State Protocols &amp; Eligibility Checker</span>
         </div>
-        <h2 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-3">
+        <h3 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-3">
           Interactive State Stamp Duty &amp; Document Estimator
-        </h2>
+        </h3>
         <p className="text-[0.98rem] sm:text-[1.05rem] leading-[1.65] text-[#49585F]">
           Stamp duty and registration rules for Relinquishment Deeds (Haq Tyag) vary across Indian states. Select your state to review official rates, or use our 30-second legal checker to confirm your documentation requirements.
         </p>

@@ -476,9 +476,9 @@ export default function BengaluruLocationClient({ faqs }: Props) {
                 <span>Statutory Compliance</span>
               </div>
 
-              <h2 className="text-xl sm:text-2xl font-black text-slate-900 tracking-tight leading-snug">
+              <h3 className="text-xl sm:text-2xl font-black text-slate-900 tracking-tight leading-snug">
                 1. Karnataka Succession Law: Legal Framework in Bengaluru
-              </h2>
+              </h3>
 
               <p className="text-sm sm:text-base text-slate-700 leading-relaxed font-normal">
                 Every Will made in Bengaluru follows the Indian Succession Act, 1925. Whether you own a flat in Indiranagar or startup equity in Koramangala, three key rules make your Will valid:
@@ -537,9 +537,9 @@ export default function BengaluruLocationClient({ faqs }: Props) {
                 <span>Paperless Governance</span>
               </div>
 
-              <h2 className="text-xl sm:text-2xl font-black text-slate-900 tracking-tight leading-snug">
+              <h3 className="text-xl sm:text-2xl font-black text-slate-900 tracking-tight leading-snug">
                 2. Kaveri 2.0 Portal: Online Will Registration in Karnataka
-              </h2>
+              </h3>
 
               <p className="text-sm sm:text-base text-slate-700 leading-relaxed font-normal">
                 Karnataka created the Kaveri 2.0 site to make registration fast and simple. Registering a Will is optional under Section 18(e) of the Registration Act, 1908. But registering on Kaveri 2.0 stores your Will safely in Book III records.
@@ -594,9 +594,9 @@ export default function BengaluruLocationClient({ faqs }: Props) {
                 <span>Startup Wealth Structuring</span>
               </div>
 
-              <h2 className="text-xl sm:text-2xl font-black text-slate-900 tracking-tight leading-snug">
+              <h3 className="text-xl sm:text-2xl font-black text-slate-900 tracking-tight leading-snug">
                 3. Tech Estates: Startup ESOPs, RSUs &amp; BBMP Khata Properties
-              </h2>
+              </h3>
 
               <p className="text-sm sm:text-base text-slate-700 leading-relaxed font-normal">
                 Tech professionals in Bengaluru need a Will that covers both land and digital wealth. Standard paper forms cannot handle stock grants or municipal land records.
@@ -650,9 +650,9 @@ export default function BengaluruLocationClient({ faqs }: Props) {
                 <span>Court Jurisprudence</span>
               </div>
 
-              <h2 className="text-xl sm:text-2xl font-black text-slate-900 tracking-tight leading-snug">
+              <h3 className="text-xl sm:text-2xl font-black text-slate-900 tracking-tight leading-snug">
                 4. Probate in Bengaluru: Is Court Certification Required?
-              </h2>
+              </h3>
 
               <p className="text-sm sm:text-base text-slate-700 leading-relaxed font-normal">
                 Many people ask if they must get probate from a court in Bengaluru. Probate is an official court order that certifies that a Will is genuine. Under Indian law:
@@ -702,9 +702,9 @@ export default function BengaluruLocationClient({ faqs }: Props) {
                 <span>Fast-Track Protocol</span>
               </div>
 
-              <h2 className="text-xl sm:text-2xl font-black text-slate-900 tracking-tight leading-snug">
+              <h3 className="text-xl sm:text-2xl font-black text-slate-900 tracking-tight leading-snug">
                 5. Step-by-Step SOP: Online Will Process for Bengaluru Techies
-              </h2>
+              </h3>
 
               <p className="text-sm sm:text-base text-slate-700 leading-relaxed font-normal">
                 WillDrafting makes estate planning simple and fast. You can draft your complete Will online from your home or laptop:
@@ -761,9 +761,9 @@ export default function BengaluruLocationClient({ faqs }: Props) {
                 <span>Registration Directory</span>
               </div>
 
-              <h2 className="text-xl sm:text-2xl font-black text-slate-900 tracking-tight leading-snug">
+              <h3 className="text-xl sm:text-2xl font-black text-slate-900 tracking-tight leading-snug">
                 6. Bengaluru SRO Directory: Urban &amp; Rural Registration Zones
-              </h2>
+              </h3>
 
               <p className="text-sm sm:text-base text-slate-700 leading-relaxed font-normal">
                 Bengaluru has over 43 Sub-Registrar offices under the Stamps Department. You can register your Will at the office for your home locality. Search your area below:
@@ -854,9 +854,9 @@ export default function BengaluruLocationClient({ faqs }: Props) {
                   <MapPin className="w-3.5 h-3.5" />
                   <span>LOCAL AREA COVERAGE &amp; TECH CORRIDORS</span>
                 </div>
-                <h2 className="text-xl sm:text-2xl font-black text-slate-900 tracking-tight leading-snug">
+                <h3 className="text-xl sm:text-2xl font-black text-slate-900 tracking-tight leading-snug">
                   7. Area-Wise Will Drafting Services Across Bengaluru Tech Belts &amp; Suburbs
-                </h2>
+                </h3>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed font-normal">
                   Looking for legally verified <strong>Will drafting services in Whitefield, Koramangala, Indiranagar, or Jayanagar</strong>? Property governance and asset structures vary across Bengaluru—from BBMP &apos;A&apos; Khata apartments and startup ESOP portfolios in Koramangala to BDA plotted bungalows in Indiranagar and gated villa communities in Whitefield.
                   Our senior advocates provide tailored legal drafting, Kaveri 2.0 portal slot bookings, and SRO assistance across all zones:
@@ -1300,9 +1300,9 @@ export default function BengaluruLocationClient({ faqs }: Props) {
                 <span>Doorstep SRO Service</span>
               </div>
 
-              <h2 className="text-xl sm:text-2xl font-black text-slate-900 tracking-tight leading-snug">
+              <h3 className="text-xl sm:text-2xl font-black text-slate-900 tracking-tight leading-snug">
                 8. Doorstep Registration: SRO Home Visits for Senior Citizens
-              </h2>
+              </h3>
 
               <p className="text-sm sm:text-base text-slate-700 leading-relaxed font-normal">
                 Senior citizens and bedridden individuals in Bengaluru do not have to stand in line at government offices. Under Section 31 of the Registration Act, 1908, the Sub-Registrar can visit private homes or hospitals.
@@ -1356,9 +1356,9 @@ export default function BengaluruLocationClient({ faqs }: Props) {
                 </div>
               </div>
 
-              <h2 className="text-xl sm:text-2xl font-black text-slate-900 tracking-tight leading-snug">
+              <h3 className="text-xl sm:text-2xl font-black text-slate-900 tracking-tight leading-snug">
                 9. Registration Checklist: Required Documents for Kaveri 2.0
-              </h2>
+              </h3>
 
               <p className="text-sm sm:text-base text-slate-700 leading-relaxed font-normal">
                 Get your papers ready before your Kaveri 2.0 visit in Bengaluru. Check off each item below to verify your file:
@@ -1405,9 +1405,9 @@ export default function BengaluruLocationClient({ faqs }: Props) {
                 <span>Transparent Fees</span>
               </div>
 
-              <h2 className="text-xl sm:text-2xl font-black text-slate-900 tracking-tight leading-snug">
+              <h3 className="text-xl sm:text-2xl font-black text-slate-900 tracking-tight leading-snug">
                 10. Will Drafting Packages: Transparent Pricing for Bengaluru
-              </h2>
+              </h3>
 
               <p className="text-sm sm:text-base text-slate-700 leading-relaxed font-normal">
                 Old law firms charge high hourly fees. We offer fixed, fair pricing. You know the exact cost before we begin.
@@ -1557,9 +1557,9 @@ export default function BengaluruLocationClient({ faqs }: Props) {
                 <span>Clear Clarifications</span>
               </div>
 
-              <h2 className="text-xl sm:text-2xl font-black text-slate-900 tracking-tight leading-snug">
+              <h3 className="text-xl sm:text-2xl font-black text-slate-900 tracking-tight leading-snug">
                 11. Frequently Asked Questions: Bengaluru Will &amp; Succession
-              </h2>
+              </h3>
 
               <p className="text-sm sm:text-base text-slate-700 leading-relaxed font-normal">
                 Common legal questions regarding Will drafting, Kaveri 2.0 registration, and property succession in Bengaluru:
@@ -1606,9 +1606,9 @@ export default function BengaluruLocationClient({ faqs }: Props) {
                 <span>Legal References</span>
               </div>
 
-              <h2 className="text-xl sm:text-2xl font-black text-slate-900 tracking-tight leading-snug">
+              <h3 className="text-xl sm:text-2xl font-black text-slate-900 tracking-tight leading-snug">
                 12. Statutory Authorities: Karnataka Acts &amp; Succession Rules
-              </h2>
+              </h3>
 
               <p className="text-sm sm:text-base text-slate-700 leading-relaxed font-normal">
                 Our drafting work in Bengaluru follows key legal rules and court orders:

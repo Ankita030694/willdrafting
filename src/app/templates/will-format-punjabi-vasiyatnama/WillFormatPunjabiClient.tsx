@@ -573,9 +573,9 @@ Doctor Signature & Official Seal: __________________________"`;
                 <ScrollText className="w-4 h-4" />
                 <span>LEGAL TEMPLATE</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 2. Complete Punjabi Vasiyatnama Format: Gurmukhi Template
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Below is the comprehensive, lawyer-vetted Punjabi Vasiyatnama template. Use the toggle to view
                 either the authentic Gurmukhi Punjabi script or the official English translation.
@@ -682,9 +682,9 @@ Doctor Signature & Official Seal: __________________________"`;
                 <Wheat className="w-4 h-4" />
                 <span>PUNJAB REVENUE SYSTEM</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 3. Agricultural Land Schedule: Khewat, Khatauni &amp; Khasra
-              </h2>
+              </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   The most common reason for mutation rejection or bitter court litigation in Punjab is an
@@ -763,9 +763,9 @@ Doctor Signature & Official Seal: __________________________"`;
                 <Globe className="w-4 h-4" />
                 <span>CROSS-BORDER SUCCESSION</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 4. NRI Children Inheritance: Cross-Border Asset Bequests
-              </h2>
+              </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   With millions of Punjabi families settled in Canada, the United Kingdom, the United States,
@@ -810,9 +810,9 @@ Doctor Signature & Official Seal: __________________________"`;
                 <Scale className="w-4 h-4" />
                 <span>COMPARATIVE ANALYSIS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 5. Legal Comparison: Registered vs Unregistered Punjabi Will
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Examine how different testamentary options compare under Punjab land revenue laws and civil
                 court procedures:
@@ -899,9 +899,9 @@ Doctor Signature & Official Seal: __________________________"`;
                 <Building className="w-4 h-4" />
                 <span>PUNJAB REGISTRATION SOP</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 6. Punjab SRO Registration Guide: NGDRS Appointment &amp; Fees
-              </h2>
+              </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   In Punjab, document registration is digitized under the <strong>National Generic Document
@@ -959,9 +959,9 @@ Doctor Signature & Official Seal: __________________________"`;
                 <Building2 className="w-4 h-4" />
                 <span>PUNJAB LAND REVENUE ACT</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 7. Revenue Mutation SOP: Jamabandi &amp; Patwari Intiqal Process
-              </h2>
+              </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   A Will takes effect only upon the testator&apos;s death. In Punjab, transferring agricultural land
@@ -1008,9 +1008,9 @@ Doctor Signature & Official Seal: __________________________"`;
                 <AlertTriangle className="w-4 h-4" />
                 <span>LITIGATION DEFENSE</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 8. Specific Disinheritance Clauses: Preventing Land Disputes
-              </h2>
+              </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   Under Indian law, a testator has testamentary freedom to bequeath self-acquired property to anyone.
@@ -1066,9 +1066,9 @@ Doctor Signature & Official Seal: __________________________"`;
                 <UserCheck className="w-4 h-4" />
                 <span>EXECUTION PROTOCOL</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 9. Execution Mandate: Attesting Witnesses &amp; Doctor Certificate
-              </h2>
+              </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   Execution rules under Section 63(c) are mandatory. The Supreme Court in{" "}
@@ -1128,9 +1128,9 @@ Doctor Signature & Official Seal: __________________________"`;
                 <BookOpen className="w-4 h-4" />
                 <span>PUNJABI REVENUE VOCABULARY</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 10. Punjabi Legal Glossary: Revenue Terms Explained in English
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Understanding historical revenue terms ensures accurate drafting and prevents patwari misinterpretation:
               </p>
@@ -1156,9 +1156,9 @@ Doctor Signature & Official Seal: __________________________"`;
                 <Gavel className="w-4 h-4" />
                 <span>PRECEDENTS &amp; LITIGATION LESSONS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 11. Landmark Case Studies: Amritsar, Jalandhar &amp; Ludhiana
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Real-world testamentary disputes resolved under Punjab High Court and Supreme Court rulings:
               </p>
@@ -1238,9 +1238,9 @@ Doctor Signature & Official Seal: __________________________"`;
                 <Clock className="w-4 h-4" />
                 <span>STEP-BY-STEP WORKFLOW</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 12. Step-by-Step SOP: Drafting a Legally Binding Punjabi Will
-              </h2>
+              </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   Follow this 6-step Standard Operating Procedure to draft, execute, and safeguard your Punjabi Will:
@@ -1332,9 +1332,9 @@ Doctor Signature & Official Seal: __________________________"`;
                 <Award className="w-4 h-4" />
                 <span>LEGAL EXPERTISE &amp; TRUST SIGNALS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 13. Institutional Profile: Legal Excellence &amp; Trust Signals
-              </h2>
+              </h3>
               <div className="bg-white rounded-2xl border border-slate-200/90 p-6 sm:p-8 shadow-xs space-y-5">
                 <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-5 border-b border-slate-100">
                   <div className="space-y-1">
@@ -1392,9 +1392,9 @@ Doctor Signature & Official Seal: __________________________"`;
                 <HelpCircle className="w-4 h-4" />
                 <span>FREQUENTLY ASKED QUESTIONS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 14. Frequently Asked Questions: Punjabi Vasiyatnama Guide
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Plain-language answers to vital legal questions regarding Gurmukhi Wills, agricultural mutation,
                 and NRI inheritance in Punjab:
@@ -1438,9 +1438,9 @@ Doctor Signature & Official Seal: __________________________"`;
                 <Landmark className="w-4 h-4" />
                 <span>PRIMARY LEGAL SOURCES</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 15. Statutory Citations &amp; Official Punjab Revenue Portals
-              </h2>
+              </h3>
               <div className="bg-white rounded-2xl border border-slate-200/90 p-5 space-y-4 text-xs text-slate-700 shadow-xs">
                 <div>
                   <div className="font-extrabold text-slate-900 mb-1">

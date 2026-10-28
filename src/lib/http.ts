@@ -1,5 +1,14 @@
 import { NextRequest, NextResponse } from "next/server";
 
+export const DEFAULT_SECURITY_HEADERS: Record<string, string> = {
+  "X-Content-Type-Options": "nosniff",
+  "Referrer-Policy": "strict-origin-when-cross-origin",
+  "X-Frame-Options": "SAMEORIGIN",
+  "Content-Security-Policy":
+    "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https:; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: blob: https:; font-src 'self' data: https:; connect-src 'self' https:; frame-src 'self' https://www.google.com https:; media-src 'self' data: blob: https:; object-src 'none'; base-uri 'self'; form-action 'self' https:; frame-ancestors 'self';",
+  "Strict-Transport-Security": "max-age=63072000; includeSubDomains; preload",
+};
+
 export function getClientIp(request: NextRequest): string {
   return (
     request.headers.get("x-forwarded-for")?.split(",")[0]?.trim() ||
@@ -9,7 +18,10 @@ export function getClientIp(request: NextRequest): string {
 }
 
 export function jsonError(message: string, status: number, extra?: Record<string, unknown>) {
-  return NextResponse.json({ error: message, ...extra }, { status });
+  return NextResponse.json(
+    { error: message, ...extra },
+    { status, headers: DEFAULT_SECURITY_HEADERS }
+  );
 }
 
 /** Reads a JSON body without throwing on malformed / empty input. */

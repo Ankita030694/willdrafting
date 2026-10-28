@@ -499,9 +499,9 @@ export default function HaryanaLocationClient({ faqs }: Props) {
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-[#C65378]/10 text-[#C65378] text-xs font-bold uppercase tracking-wider">
                 Statutory Compliance
               </div>
-              <h2 className="text-2xl sm:text-3xl font-extrabold tracking-tight text-[#172228]">
+              <h3 className="text-2xl sm:text-3xl font-extrabold tracking-tight text-[#172228]">
                 2. Haryana Succession Laws &amp; Legal Basis
-              </h2>
+              </h3>
               <div className="prose prose-slate max-w-none text-slate-700 space-y-4 text-sm sm:text-base leading-relaxed">
                 <p>
                   Testamentary succession in Haryana is governed by the <strong>Indian Succession Act, 1925</strong>, along with state-specific land revenue and registration rules:
@@ -561,9 +561,9 @@ export default function HaryanaLocationClient({ faqs }: Props) {
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-[#172228]/10 text-[#172228] text-xs font-bold uppercase tracking-wider">
                 Judicial Precedent
               </div>
-              <h2 className="text-2xl sm:text-3xl font-extrabold tracking-tight text-[#172228]">
+              <h3 className="text-2xl sm:text-3xl font-extrabold tracking-tight text-[#172228]">
                 3. Probate Rules: Punjab &amp; Haryana HC
-              </h2>
+              </h3>
               <div className="prose prose-slate max-w-none text-slate-700 space-y-4 text-sm sm:text-base leading-relaxed">
                 <p>
                   A frequent question among Haryana residents is whether a court probate is mandatory before assets can be transferred.
@@ -629,9 +629,9 @@ export default function HaryanaLocationClient({ faqs }: Props) {
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-[#5F7E75]/10 text-[#5F7E75] text-xs font-bold uppercase tracking-wider">
                 Urban Property Nuances
               </div>
-              <h2 className="text-2xl sm:text-3xl font-extrabold tracking-tight text-[#172228]">
+              <h3 className="text-2xl sm:text-3xl font-extrabold tracking-tight text-[#172228]">
                 4. HSVP Plots &amp; Independent Builder Floors
-              </h2>
+              </h3>
               <div className="prose prose-slate max-w-none text-slate-700 space-y-4 text-sm sm:text-base leading-relaxed">
                 <p>
                   Succession planning in Haryana presents unique architectural and regulatory considerations:
@@ -674,9 +674,9 @@ export default function HaryanaLocationClient({ faqs }: Props) {
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-[#C65378]/10 text-[#C65378] text-xs font-bold uppercase tracking-wider">
                 Book III Registration
               </div>
-              <h2 className="text-2xl sm:text-3xl font-extrabold tracking-tight text-[#172228]">
+              <h3 className="text-2xl sm:text-3xl font-extrabold tracking-tight text-[#172228]">
                 5. Will Registration: Mandatory vs Optional
-              </h2>
+              </h3>
               <div className="prose prose-slate max-w-none text-slate-700 space-y-4 text-sm sm:text-base leading-relaxed">
                 <p>
                   While registering a Will is not legally mandatory, experienced estate lawyers strongly recommend registering it at your local Tehsil office.
@@ -706,9 +706,9 @@ export default function HaryanaLocationClient({ faqs }: Props) {
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-[#172228]/10 text-[#172228] text-xs font-bold uppercase tracking-wider">
                 Tehsil &amp; Sub-Registrar Offices
               </div>
-              <h2 className="text-2xl sm:text-3xl font-extrabold tracking-tight text-[#172228]">
+              <h3 className="text-2xl sm:text-3xl font-extrabold tracking-tight text-[#172228]">
                 6. Haryana Tehsil &amp; Sub-Registrar Directory
-              </h2>
+              </h3>
               <p className="text-sm text-slate-600">
                 Search and explore the major registration divisions across Haryana for Jamabandi token booking:
               </p>
@@ -781,9 +781,9 @@ export default function HaryanaLocationClient({ faqs }: Props) {
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-[#5F7E75]/10 text-[#5F7E75] text-xs font-bold uppercase tracking-wider">
                 Full State Reach
               </div>
-              <h2 className="text-2xl sm:text-3xl font-extrabold tracking-tight text-[#172228]">
+              <h3 className="text-2xl sm:text-3xl font-extrabold tracking-tight text-[#172228]">
                 7. Statewide Coverage Across Haryana
-              </h2>
+              </h3>
               <p className="text-sm text-slate-600">
                 AMA Legal Solutions provides comprehensive online Will drafting and Tehsil registration accompaniment across all 22 districts of Haryana:
               </p>
@@ -839,9 +839,9 @@ export default function HaryanaLocationClient({ faqs }: Props) {
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-[#C65378]/10 text-[#C65378] text-xs font-bold uppercase tracking-wider">
                 Standard Operating Procedure
               </div>
-              <h2 className="text-2xl sm:text-3xl font-extrabold tracking-tight text-[#172228]">
+              <h3 className="text-2xl sm:text-3xl font-extrabold tracking-tight text-[#172228]">
                 8. Step-by-Step SOP: Haryana Will Drafting
-              </h2>
+              </h3>
 
               <div className="space-y-4">
                 {[
@@ -895,9 +895,9 @@ export default function HaryanaLocationClient({ faqs }: Props) {
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-[#5F7E75]/10 text-[#5F7E75] text-xs font-bold uppercase tracking-wider">
                 Senior Citizen Facility
               </div>
-              <h2 className="text-2xl sm:text-3xl font-extrabold tracking-tight text-[#172228]">
+              <h3 className="text-2xl sm:text-3xl font-extrabold tracking-tight text-[#172228]">
                 9. Doorstep Home Registration: Section 31
-              </h2>
+              </h3>
               <div className="prose prose-slate max-w-none text-slate-700 space-y-4 text-sm sm:text-base leading-relaxed">
                 <p>
                   Senior citizens, ailing testators, and hospital-bound patients in Haryana can register their Will without physically traveling to crowded Tehsil premises.
@@ -930,9 +930,9 @@ export default function HaryanaLocationClient({ faqs }: Props) {
                 Interactive Checklist
               </div>
               <div className="flex items-center justify-between flex-wrap gap-3">
-                <h2 className="text-2xl sm:text-3xl font-extrabold tracking-tight text-[#172228]">
+                <h3 className="text-2xl sm:text-3xl font-extrabold tracking-tight text-[#172228]">
                   10. Checklist: Documents for Will in Haryana
-                </h2>
+                </h3>
                 <span className="px-3 py-1 rounded-full bg-emerald-50 text-emerald-800 text-xs font-extrabold border border-emerald-200">
                   {checkedCount} of {checklist.length} Completed
                 </span>
@@ -971,9 +971,9 @@ export default function HaryanaLocationClient({ faqs }: Props) {
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-[#172228]/10 text-[#172228] text-xs font-bold uppercase tracking-wider">
                 Asset Allocation
               </div>
-              <h2 className="text-2xl sm:text-3xl font-extrabold tracking-tight text-[#172228]">
+              <h3 className="text-2xl sm:text-3xl font-extrabold tracking-tight text-[#172228]">
                 11. Asset Types: HSVP, Floors &amp; Farmland
-              </h2>
+              </h3>
 
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                 <div className="bg-white p-5 rounded-xl border border-slate-200 shadow-2xs space-y-2">
@@ -1009,9 +1009,9 @@ export default function HaryanaLocationClient({ faqs }: Props) {
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-[#5F7E75]/10 text-[#5F7E75] text-xs font-bold uppercase tracking-wider">
                 Government Charges
               </div>
-              <h2 className="text-2xl sm:text-3xl font-extrabold tracking-tight text-[#172228]">
+              <h3 className="text-2xl sm:text-3xl font-extrabold tracking-tight text-[#172228]">
                 12. Haryana SRO Registration Fees &amp; Duty
-              </h2>
+              </h3>
               <div className="prose prose-slate max-w-none text-slate-700 space-y-4 text-sm sm:text-base leading-relaxed">
                 <p>
                   Registering a Will in Haryana is very affordable because testamentary instruments are exempt from stamp duty.
@@ -1061,9 +1061,9 @@ export default function HaryanaLocationClient({ faqs }: Props) {
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-[#C65378]/10 text-[#C65378] text-xs font-bold uppercase tracking-wider">
                 Transparent Pricing
               </div>
-              <h2 className="text-2xl sm:text-3xl font-extrabold tracking-tight text-[#172228]">
+              <h3 className="text-2xl sm:text-3xl font-extrabold tracking-tight text-[#172228]">
                 13. Transparent Plans: Haryana Will Drafting
-              </h2>
+              </h3>
 
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 {/* PLAN 1 */}
@@ -1182,9 +1182,9 @@ export default function HaryanaLocationClient({ faqs }: Props) {
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-[#172228]/10 text-[#172228] text-xs font-bold uppercase tracking-wider">
                 Common Questions
               </div>
-              <h2 className="text-2xl sm:text-3xl font-extrabold tracking-tight text-[#172228]">
+              <h3 className="text-2xl sm:text-3xl font-extrabold tracking-tight text-[#172228]">
                 14. Frequently Asked Questions: Haryana Wills
-              </h2>
+              </h3>
 
               <div className="space-y-3">
                 {faqs.map((faq, idx) => (
@@ -1221,9 +1221,9 @@ export default function HaryanaLocationClient({ faqs }: Props) {
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-[#5F7E75]/10 text-[#5F7E75] text-xs font-bold uppercase tracking-wider">
                 Statutory Authorities
               </div>
-              <h2 className="text-2xl sm:text-3xl font-extrabold tracking-tight text-[#172228]">
+              <h3 className="text-2xl sm:text-3xl font-extrabold tracking-tight text-[#172228]">
                 15. Statutory Citations &amp; Legal References
-              </h2>
+              </h3>
 
               <div className="bg-white p-6 rounded-2xl border border-slate-200 shadow-2xs space-y-4 text-xs sm:text-sm text-slate-600">
                 <div className="flex items-start gap-3">

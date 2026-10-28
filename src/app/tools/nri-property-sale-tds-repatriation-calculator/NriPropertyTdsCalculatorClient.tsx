@@ -660,9 +660,9 @@ The entire balance sale consideration shall be paid by the PURCHASER exclusively
                 <Sparkles className="w-4 h-4" />
                 <span>INTERACTIVE FINANCIAL TOOL</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 2. Interactive NRI Property Sale TDS &amp; Cash Flow Tool
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Calculate your Section 195 TDS on gross sale value, compare it against Form 13 Lower TDS on
                 actual capital gains, and estimate your net foreign remittance under the RBI USD 1 Million limit.
@@ -1294,9 +1294,9 @@ The entire balance sale consideration shall be paid by the PURCHASER exclusively
                 <Scale className="w-4 h-4" />
                 <span>LIQUIDITY DEFENSE</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 3. Gross Sale TDS vs Form 13: Cash Flow Blockage Moat
-              </h2>
+              </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   The fundamental financial mistake committed by Non-Resident Indians when selling property in
@@ -1378,9 +1378,9 @@ The entire balance sale consideration shall be paid by the PURCHASER exclusively
                 <Percent className="w-4 h-4" />
                 <span>STATUTORY RATES</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 4. Section 195 TDS Rates: Long Term vs Short Term Gains
-              </h2>
+              </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   Under the Income Tax Act, the rate of withholding tax under Section 195 depends on whether
@@ -1434,9 +1434,9 @@ The entire balance sale consideration shall be paid by the PURCHASER exclusively
                 <FileText className="w-4 h-4" />
                 <span>STEP-BY-STEP PROTOCOL</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 5. Form 13 Lower TDS Certificate: TRACES Filing SOP
-              </h2>
+              </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   Obtaining a Lower Deduction Certificate under Section 197 is a fully digital process on the
@@ -1479,9 +1479,9 @@ The entire balance sale consideration shall be paid by the PURCHASER exclusively
                 <Globe className="w-4 h-4" />
                 <span>FEMA FRAMEWORK</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 6. RBI USD 1 Million Scheme: FEMA Repatriation Limits
-              </h2>
+              </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   Once the property is sold and net proceeds are credited into your <strong>Non-Resident Ordinary (NRO)
@@ -1536,9 +1536,9 @@ The entire balance sale consideration shall be paid by the PURCHASER exclusively
                 <Send className="w-4 h-4" />
                 <span>REPATRIATION FILINGS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 7. Form 15CA &amp; 15CB Protocol: Outward Remittance SOP
-              </h2>
+              </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   To wire funds from an Indian NRO account to an overseas bank account, the Authorized Dealer (AD)
@@ -1571,9 +1571,9 @@ The entire balance sale consideration shall be paid by the PURCHASER exclusively
                 <CreditCard className="w-4 h-4" />
                 <span>BANKING MECHANICS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 8. NRO to NRE Account Transfer: Step-by-Step Pathway
-              </h2>
+              </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   Many NRIs prefer transferring property sale proceeds from their NRO account to their <strong>Non-Resident
@@ -1603,9 +1603,9 @@ The entire balance sale consideration shall be paid by the PURCHASER exclusively
                 <Globe className="w-4 h-4" />
                 <span>CROSS-BORDER TAXATION</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 9. Cross-Border Tax Treaties: DTAA Foreign Tax Credit
-              </h2>
+              </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   A critical concern for NRIs residing in the United States, United Kingdom, Canada, or Australia
@@ -1644,9 +1644,9 @@ The entire balance sale consideration shall be paid by the PURCHASER exclusively
                 <Briefcase className="w-4 h-4" />
                 <span>REAL-WORLD SCENARIOS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 10. Practical NRI Case Studies: USA, UK, UAE &amp; Canada
-              </h2>
+              </h3>
               <div className="space-y-4">
                 {/* Case 1 */}
                 <div className="p-4 sm:p-5 rounded-2xl bg-white border border-slate-200 shadow-xs space-y-2">
@@ -1720,9 +1720,9 @@ The entire balance sale consideration shall be paid by the PURCHASER exclusively
                 <FileCheck className="w-4 h-4" />
                 <span>COPY-PASTE TEMPLATES</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 11. Form 13 Document Checklist &amp; Sale Deed Recital
-              </h2>
+              </h3>
 
               {/* Template Box 1: Sale Deed Recital */}
               <div className="rounded-2xl border border-slate-200 bg-white p-5 sm:p-6 shadow-xs space-y-3">
@@ -1835,9 +1835,9 @@ The PURCHASER (TAN: [Purchaser TAN]) undertakes to deduct TDS strictly as per th
                 <Scale className="w-4 h-4" />
                 <span>INSTITUTIONAL PROFILE</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 12. Cross-Border Legal Advisory: AMA Legal Solutions
-              </h2>
+              </h3>
               <div className="p-6 rounded-2xl bg-white border border-slate-200 shadow-xs space-y-4">
                 <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
                   <div className="w-14 h-14 rounded-2xl bg-[#172228] text-white flex items-center justify-center font-black text-xl shrink-0">
@@ -1873,9 +1873,9 @@ The PURCHASER (TAN: [Purchaser TAN]) undertakes to deduct TDS strictly as per th
                 <HelpCircle className="w-4 h-4" />
                 <span>COMMONLY ASKED QUESTIONS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 13. Frequently Asked Questions: NRI Property TDS &amp; FEMA
-              </h2>
+              </h3>
 
               <div className="space-y-3">
                 {FAQS.map((faq, idx) => {
@@ -1913,9 +1913,9 @@ The PURCHASER (TAN: [Purchaser TAN]) undertakes to deduct TDS strictly as per th
                 <Landmark className="w-4 h-4" />
                 <span>OFFICIAL STATUTES &amp; PORTALS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 14. Statutory Authorities &amp; Official Indian Portals
-              </h2>
+              </h3>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
                 <a
                   href="https://www.incometax.gov.in"

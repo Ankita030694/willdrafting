@@ -513,9 +513,9 @@ export default function BiharLocationClient({ faqs }: Props) {
                   <Scale className="w-4 h-4 text-[#C65378]" />
                   <span>INDIAN SUCCESSION ACT &amp; BIHAR LAWS</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   1. Will Drafting &amp; Land Succession in Bihar
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Making a Will in Bihar protects both city homes and ancestral farm plots. Testamentary succession follows the Indian Succession Act, 1925 and the Bihar Land Mutation Act, 2011. Here are three key legal rules you must know:
                 </p>
@@ -567,9 +567,9 @@ export default function BiharLocationClient({ faqs }: Props) {
                   <Stamp className="w-4 h-4 text-[#C65378]" />
                   <span>REGISTRATION ACT 1908 ANALYSIS</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   2. Is Will Registration Mandatory in Bihar?
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Section 18(e) of the Registration Act, 1908 makes Will registration optional in Bihar. A Will on plain paper with two witness signatures is legally valid. However, an unregistered Will often faces objections during land mutation before the Circle Officer. Registering your Will gives permanent safety.
                 </p>
@@ -623,9 +623,9 @@ export default function BiharLocationClient({ faqs }: Props) {
                   <Scale className="w-4 h-4 text-[#C65378]" />
                   <span>PATNA HIGH COURT JURISPRUDENCE</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   3. Bihar Probate Law: Optional Under Patna High Court
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Probate means getting a court order to confirm a Will. Many property owners in Bihar think probate is required before land transfer. This is not true. Here is how probate works in Bihar:
                 </p>
@@ -675,9 +675,9 @@ export default function BiharLocationClient({ faqs }: Props) {
                   <MapPin className="w-4 h-4 text-[#C65378]" />
                   <span>SRO JURISDICTION DIRECTORY</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   4. Bihar Sub-Registrar Offices: SRO Jurisdiction Directory
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Bihar runs Sub-Registrar Offices under the Registration Department. Under Section 32 of the Registration Act, you can register your Will where you live or where your property is located.
                 </p>
@@ -778,9 +778,9 @@ export default function BiharLocationClient({ faqs }: Props) {
                   <MapPin className="w-4 h-4 text-[#C65378]" />
                   <span>REGIONAL CITIES COVERAGE &amp; ASSET NUANCES</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   5. Regional Cities: City-Wise Will Drafting in Bihar
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Estate assets in Bihar include city flats along Bailey Road in Patna, family homes in Gaya, textile shops in Muzaffarpur, silk units in Bhagalpur, ancestral Mithila havelis in Darbhanga, and fertile farms across Seemanchal and Shahabad. Our estate advocates provide expert legal drafting and Sub-Registrar accompaniment across all key regional hubs:
                 </p>
@@ -1236,9 +1236,9 @@ export default function BiharLocationClient({ faqs }: Props) {
                   <FileCheck className="w-4 h-4 text-[#C65378]" />
                   <span>PROCEDURAL ROADMAP</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   6. Step-by-Step SOP: Drafting to e-Nibandhan in Bihar
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Making a valid Will in Bihar follows 5 simple steps. Each step protects your assets under the Indian Succession Act and Bihar Land Mutation Act:
                 </p>
@@ -1329,9 +1329,9 @@ export default function BiharLocationClient({ faqs }: Props) {
                   <Home className="w-4 h-4 text-[#C65378]" />
                   <span>DOORSTEP REGISTRATION IN BIHAR</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   7. Section 31 Doorstep SRO Registration in Bihar
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Under Section 31 of the Registration Act, 1908, elderly or unwell citizens can register a Will from home or hospital in Bihar.
                 </p>
@@ -1383,9 +1383,9 @@ export default function BiharLocationClient({ faqs }: Props) {
                   <CheckCircle2 className="w-4 h-4 text-[#C65378]" />
                   <span>INTERACTIVE DOCUMENT AUDIT</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   8. Document Checklist for Bihar Sub-Registrar Offices
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Before going to the Sub-Registrar Office, make sure you have all required papers. Use this simple checklist to get ready:
                 </p>
@@ -1448,9 +1448,9 @@ export default function BiharLocationClient({ faqs }: Props) {
                   <Building className="w-4 h-4 text-[#C65378]" />
                   <span>ASSET CLASSIFICATIONS IN BIHAR</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   9. Bihar Property Types: Land, Houses &amp; BIADA Plots
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   A strong Will in Bihar lists every property type according to its land record and revenue rules:
                 </p>
@@ -1506,9 +1506,9 @@ export default function BiharLocationClient({ faqs }: Props) {
                   <Stamp className="w-4 h-4 text-[#C65378]" />
                   <span>STATUTORY FEE BREAKDOWN</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   10. Official Bihar e-Nibandhan Registration Fees
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Unlike sale deeds or gift deeds, testamentary Wills enjoy complete stamp duty exemption in Bihar:
                 </p>
@@ -1556,9 +1556,9 @@ export default function BiharLocationClient({ faqs }: Props) {
                   <Award className="w-4 h-4 text-[#C65378]" />
                   <span>TRANSPARENT PLANS</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   11. Transparent Will Packages &amp; Fees in Bihar
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Choose the legal assistance package tailored to your family&apos;s estate planning and property portfolio in Bihar:
                 </p>
@@ -1700,9 +1700,9 @@ export default function BiharLocationClient({ faqs }: Props) {
                   <HelpCircle className="w-4 h-4 text-[#C65378]" />
                   <span>FREQUENT QUESTIONS</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   12. Frequently Asked Questions: Will Drafting in Bihar
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Essential legal answers regarding Will drafting, e-Nibandhan portal registration, probate exemptions, and land succession across Bihar:
                 </p>
@@ -1742,9 +1742,9 @@ export default function BiharLocationClient({ faqs }: Props) {
                   <Scale className="w-4 h-4 text-[#C65378]" />
                   <span>STATUTORY CITATIONS</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   13. Statutory Citations &amp; Bihar Legal Portals
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Our drafting protocols comply strictly with codified Indian statutes and Bihar state registration systems:
                 </p>

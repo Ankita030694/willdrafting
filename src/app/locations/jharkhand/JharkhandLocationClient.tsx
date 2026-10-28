@@ -514,9 +514,9 @@ export default function JharkhandLocationClient({ faqs }: Props) {
                   <Scale className="w-4 h-4 text-[#C65378]" />
                   <span>STATUTORY SAFEGUARDS</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   2. Legal Framework: Succession &amp; Tenancy Laws in Jharkhand
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Estate planning in Jharkhand operates under central testamentary enactments while strictly honoring foundational regional land tenancy statutes:
                 </p>
@@ -604,9 +604,9 @@ export default function JharkhandLocationClient({ faqs }: Props) {
                   <Stamp className="w-4 h-4 text-[#C65378]" />
                   <span>REGISTRATION ACT, 1908</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   3. Registration Rules: Optional vs Mandatory Will Execution
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Under <strong>Section 18(e) of the Registration Act, 1908</strong>, registering a Will is legally optional in the State of Jharkhand. A Will drafted on plain A4 paper and executed before two independent witnesses carries legal force from the instant of signing. However, in Jharkhand&apos;s land records landscape, registration is overwhelmingly recommended:
                 </p>
@@ -664,9 +664,9 @@ export default function JharkhandLocationClient({ faqs }: Props) {
                   <Landmark className="w-4 h-4 text-[#C65378]" />
                   <span>JUDICIAL JURISPRUDENCE</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   4. Probate Law in Jharkhand: High Court Rules &amp; Exemptions
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   One of the most persistent misconceptions among property owners in Ranchi and Jamshedpur is that a Will must be probated through a civil court before assets can be transferred. This is legally incorrect:
                 </p>
@@ -714,9 +714,9 @@ export default function JharkhandLocationClient({ faqs }: Props) {
                   <MapPin className="w-4 h-4 text-[#C65378]" />
                   <span>NGDRS JURISDICTION DIRECTORY</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   5. Jharkhand SRO Directory: NGDRS Registration Offices
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Jharkhand operates registration offices governed by the National Generic Document Registration System (NGDRS Jharkhand). Under Section 32 of the Registration Act, your Will can be registered at the Sub-Registrar Office having jurisdiction over your place of residence or where any portion of your immovable property is situated:
                 </p>
@@ -818,9 +818,9 @@ export default function JharkhandLocationClient({ faqs }: Props) {
                   <MapPin className="w-4 h-4 text-[#C65378]" />
                   <span>REGIONAL CITIES COVERAGE &amp; ASSET NUANCES</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   6. Regional Cities: Area-Wise Will Drafting in Jharkhand
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Estate assets in Jharkhand span state capital residences in Ranchi, 99-year Tata Steel leasehold plots in Jamshedpur, coal enterprise and trading wealth in Dhanbad, planned steel townships in Bokaro, pilgrimage properties in Deoghar, and ancestral land parcels across North and South Chotanagpur. Our advocates provide tailored drafting and NGDRS support across all key regions:
                 </p>
@@ -1160,9 +1160,9 @@ export default function JharkhandLocationClient({ faqs }: Props) {
                   <FileText className="w-4 h-4 text-[#C65378]" />
                   <span>PROCEDURAL ROADMAP</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   7. 5-Step Legal SOP: How to Draft &amp; Register in Jharkhand
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Follow this verified 5-stage standard operating procedure to create, execute, and register your Will before the Sub-Registrar in Jharkhand:
                 </p>
@@ -1248,9 +1248,9 @@ export default function JharkhandLocationClient({ faqs }: Props) {
                   <Home className="w-4 h-4 text-[#C65378]" />
                   <span>DOORSTEP REGISTRATION FOR SENIORS</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   8. Doorstep Registration: Section 31 Home Visit Facility
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   For elderly, ailing, or bedridden citizens residing in Ashok Nagar, Circuit House Area, Saraidhela, or remote ancestral homes, traveling to a crowded Sub-Registrar Office can be physically daunting. Under <strong>Section 31 of the Registration Act, 1908</strong>, the Sub-Registrar holds statutory power to attend a private home or hospital:
                 </p>
@@ -1303,9 +1303,9 @@ export default function JharkhandLocationClient({ faqs }: Props) {
                   <FileCheck className="w-4 h-4 text-[#C65378]" />
                   <span>PREPARATION CHECKLIST</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   9. Document Checklist: What You Need for SRO Registration
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Use this interactive checklist to verify that all necessary legal records and identities are prepared prior to executing your Will:
                 </p>
@@ -1360,9 +1360,9 @@ export default function JharkhandLocationClient({ faqs }: Props) {
                   <Building className="w-4 h-4 text-[#C65378]" />
                   <span>ASSET INVENTORY</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   10. Property Types Covered: Residential, Leasehold &amp; Land
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Our customized legal drafts encompass all categories of real, commercial, and financial assets across Jharkhand:
                 </p>
@@ -1450,9 +1450,9 @@ export default function JharkhandLocationClient({ faqs }: Props) {
                   <Stamp className="w-4 h-4 text-[#C65378]" />
                   <span>STATUTORY CHARGES</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   11. Registration Fees &amp; Stamp Duty Charges in Jharkhand
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Unlike real estate sale conveyances or gift deeds that attract substantial stamp duty and transfer levies in Jharkhand, testamentary Wills are completely exempt from stamp duty. Government registration charges in Jharkhand are purely nominal:
                 </p>
@@ -1500,9 +1500,9 @@ export default function JharkhandLocationClient({ faqs }: Props) {
                   <Award className="w-4 h-4 text-[#C65378]" />
                   <span>TRANSPARENT PLANS</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   12. Professional Plans &amp; Transparent Legal Drafting Fees
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Choose the legal assistance package tailored to your family&apos;s estate planning and property portfolio in Jharkhand:
                 </p>
@@ -1644,9 +1644,9 @@ export default function JharkhandLocationClient({ faqs }: Props) {
                   <HelpCircle className="w-4 h-4 text-[#C65378]" />
                   <span>FREQUENTLY ASKED QUESTIONS</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   13. Frequently Asked Questions: Jharkhand Will Drafting
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Clear, authoritative answers to common legal questions regarding Will drafting and property registration in Jharkhand:
                 </p>
@@ -1689,9 +1689,9 @@ export default function JharkhandLocationClient({ faqs }: Props) {
                   <Scale className="w-4 h-4 text-[#C65378]" />
                   <span>STATUTORY CITATIONS</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   14. Statutory Citations &amp; Legal Reference Framework
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Our drafting protocols comply strictly with codified Indian statutes and Jharkhand state registration systems:
                 </p>

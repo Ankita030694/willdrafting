@@ -510,9 +510,9 @@ Under Section 30 of the Hindu Succession Act, 1956, I bequeath 100% of my title 
                 <Sparkles className="w-4 h-4" />
                 <span>PROVENANCE TRACE WIZARD</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 2. Interactive Property Provenance Classifier Tool
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Answer the 5 diagnostic questions below. Classify your real estate under Hindu law and
                 verify your 100% legal Will making rights.
@@ -875,9 +875,9 @@ Under Section 30 of the Hindu Succession Act, 1956, I bequeath 100% of my title 
                 <Gavel className="w-4 h-4" />
                 <span>LANDMARK JUDICIAL PRECEDENT</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 3. Section 8 vs Section 6: Landmark Chander Sen Rule
-              </h2>
+              </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   Many people believe that property inherited from a father is always ancestral. This is the
@@ -912,9 +912,9 @@ Under Section 30 of the Hindu Succession Act, 1956, I bequeath 100% of my title 
                 <GitBranch className="w-4 h-4" />
                 <span>COPARCENARY LINEAGE CRITERIA</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 4. The 4-Generation Lineage Test Under Hindu Law
-              </h2>
+              </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   To be legally ancestral, property must meet four clear conditions. It must pass down four
@@ -958,9 +958,9 @@ Under Section 30 of the Hindu Succession Act, 1956, I bequeath 100% of my title 
                 <Scale className="w-4 h-4" />
                 <span>STATUTORY SUCCESSION TESTS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 5. Property Inherited from Father: Section 8 Test
-              </h2>
+              </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   To check property inherited from a father, apply three simple statutory tests:
@@ -1006,9 +1006,9 @@ Under Section 30 of the Hindu Succession Act, 1956, I bequeath 100% of my title 
                 <Building className="w-4 h-4" />
                 <span>SEVERANCE OF COPARCENARY</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 6. Partition Deeds: How Division Alters Legal Status
-              </h2>
+              </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   When family members divide ancestral land through a registered deed, the joint family
@@ -1038,9 +1038,9 @@ Under Section 30 of the Hindu Succession Act, 1956, I bequeath 100% of my title 
                 <Users className="w-4 h-4" />
                 <span>GENDER EQUALITY UNDER SECTION 6</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 7. Daughters&rsquo; Equal Coparcenary Rights: Vineeta Sharma
-              </h2>
+              </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   Before 2005, only male heirs held birthrights in joint family property. The landmark
@@ -1080,9 +1080,9 @@ Under Section 30 of the Hindu Succession Act, 1956, I bequeath 100% of my title 
                 <Scale className="w-4 h-4" />
                 <span>COMPREHENSIVE COMPARISON</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 8. Legal Comparison: Ancestral vs Self-Acquired Assets
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Compare rights of ownership, Will making, and partition claims under the Hindu Succession
                 Act, 1956.
@@ -1187,9 +1187,9 @@ Under Section 30 of the Hindu Succession Act, 1956, I bequeath 100% of my title 
                 <FileCheck className="w-4 h-4" />
                 <span>TITLE DUE DILIGENCE</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 9. Step-by-Step SOP: Tracing Title Provenance in India
-              </h2>
+              </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   Before selling real estate or drafting a Will, trace title provenance to avoid family
@@ -1246,9 +1246,9 @@ Under Section 30 of the Hindu Succession Act, 1956, I bequeath 100% of my title 
                 <Building2 className="w-4 h-4" />
                 <span>PRACTICAL LITIGATION INSIGHTS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 10. Practical Case Studies: Delhi, Bengaluru, Mumbai
-              </h2>
+              </h3>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4 pt-1 text-xs">
                 {/* Case 1: Delhi */}
                 <div className="p-5 rounded-2xl bg-white border border-slate-200/90 shadow-2xs space-y-2.5">
@@ -1327,9 +1327,9 @@ Under Section 30 of the Hindu Succession Act, 1956, I bequeath 100% of my title 
                 <FileText className="w-4 h-4" />
                 <span>LEGAL DRAFTING CLAUSES</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 11. Legal Recital Templates &amp; Verification Checklist
-              </h2>
+              </h3>
 
               {/* Template Box 1: Self-Acquired Declaration Recital */}
               <div className="rounded-2xl border border-slate-200/90 bg-white p-5 space-y-3 shadow-xs">
@@ -1415,9 +1415,9 @@ Under Section 30 of the Hindu Succession Act, 1956, I bequeath 100% of my title 
                 <Award className="w-4 h-4" />
                 <span>LEGAL EXPERTISE &amp; PRACTICE</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 12. Institutional Profile: Legal Excellence &amp; Trust
-              </h2>
+              </h3>
               <div className="bg-white rounded-2xl border border-slate-200/90 p-6 sm:p-8 shadow-xs space-y-5">
                 <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-5 border-b border-slate-100">
                   <div className="space-y-1">
@@ -1480,9 +1480,9 @@ Under Section 30 of the Hindu Succession Act, 1956, I bequeath 100% of my title 
                 <HelpCircle className="w-4 h-4" />
                 <span>DIRECT ANSWERS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 13. Frequently Asked Questions: Ancestral Assets
-              </h2>
+              </h3>
               <div className="space-y-3">
                 {FAQS.map((faq, index) => {
                   const isOpen = openFaq === index;
@@ -1520,9 +1520,9 @@ Under Section 30 of the Hindu Succession Act, 1956, I bequeath 100% of my title 
                 <Scale className="w-4 h-4" />
                 <span>OFFICIAL STATUTORY PORTALS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 14. Statutory Citations &amp; Judicial Portals
-              </h2>
+              </h3>
               <div className="p-5 rounded-2xl bg-white border border-slate-200/90 shadow-xs space-y-4 text-xs text-slate-600">
                 <p>
                   All legal classifications on this page are grounded in Indian statutes and landmark

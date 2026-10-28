@@ -555,9 +555,9 @@ export default function HowToChallengeAWillClient() {
                 <FileWarning className="w-4 h-4" />
                 <span>Section 61 ISA 1925</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
                 2. Undue Influence &amp; Coercion: Proving Involuntary Execution
-              </h2>
+              </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed">
                 Under Section 61 of the Indian Succession Act, a Will obtained by fraud, coercion, or importunity is completely void. Coercion involves physical threats or duress. Undue influence is more subtle. It occurs when a person in a position of dominance overpowers the testator&apos;s mental freedom so that the Will reflects the influencer&apos;s desires rather than the testator&apos;s genuine wishes.
               </p>
@@ -581,9 +581,9 @@ export default function HowToChallengeAWillClient() {
                 <Stethoscope className="w-4 h-4" />
                 <span>Testamentary Capacity</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
                 3. Mental Capacity: Testamentary Soundness Under Section 59
-              </h2>
+              </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed">
                 Section 59 of the Indian Succession Act mandates that every person of sound mind who is not a minor may dispose of their property by Will. To possess testamentary capacity, the testator must understand three essential things: the nature of making a Will, the extent of the property they own, and the persons who naturally expect to inherit from them.
               </p>
@@ -616,9 +616,9 @@ export default function HowToChallengeAWillClient() {
                 <FileCheck className="w-4 h-4" />
                 <span>BSA 2023 &amp; Suspicion Rules</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
                 4. Forgery &amp; Suspicious Circumstances: Section 67 BSA 2023
-              </h2>
+              </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed">
                 When a family member manufactures a fake Will after a parent&apos;s death, the challenger must plead forgery and fraud. Under Section 67 of the Bharatiya Sakshya Adhiniyam, 2023 (which replaces Section 68 of the repealed Indian Evidence Act, 1872), a document required by law to be attested cannot be used in evidence until at least one attesting witness has been called to prove its execution in court.
               </p>
@@ -690,9 +690,9 @@ export default function HowToChallengeAWillClient() {
                 <Clock className="w-4 h-4" />
                 <span>Limitation Act 1963</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
                 5. Limitation Period: Legal Deadlines to Contest a Will
-              </h2>
+              </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed">
                 Many heirs make the tragic error of waiting years before disputing a suspicious Will. The Limitation Act, 1963 sets strict time bars for initiating legal proceedings. If you sleep on your legal rights, the court will dismiss your challenge on the threshold without even evaluating the merits of the fraud.
               </p>
@@ -731,9 +731,9 @@ export default function HowToChallengeAWillClient() {
                 <Building className="w-4 h-4" />
                 <span>Litigation Procedure</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
                 6. Court Procedure: How to File a Will Challenge in India
-              </h2>
+              </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed">
                 The exact court procedure depends on whether the opposing side has filed for probate or is attempting to mutate properties directly at the local revenue office. Here are the procedural pathways governed by the Indian Succession Act, 1925 and the Code of Civil Procedure, 1908 (CPC).
               </p>
@@ -788,9 +788,9 @@ export default function HowToChallengeAWillClient() {
                 <Layers className="w-4 h-4" />
                 <span>Grounds vs Defenses Matrix</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
                 7. Will Contest Comparison: Challenge Grounds vs Defenses
-              </h2>
+              </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed">
                 Whether you are disputing a suspicious Will or protecting your genuine inheritance against hostile relatives, understanding the statutory burden of proof and the required evidentiary standard is vital. This matrix contrasts key challenge grounds with their corresponding legal defenses.
               </p>
@@ -836,9 +836,9 @@ export default function HowToChallengeAWillClient() {
                 <Eye className="w-4 h-4" />
                 <span>Visual Blueprint</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
                 8. Visual Blueprint: The Will Contest &amp; Defense Framework
-              </h2>
+              </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed">
                 Will litigation in India sits at the exact intersection of three primary statutory codes: the Indian Succession Act 1925, the Limitation Act 1963, and the new Bharatiya Sakshya Adhiniyam 2023. The diagram below illustrates the balance between testamentary disposition, family rights, and judicial scrutiny.
               </p>
@@ -870,9 +870,9 @@ export default function HowToChallengeAWillClient() {
                 <FileCode className="w-4 h-4" />
                 <span>6-Stage Legal SOP</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
                 9. Step-by-Step SOP: Procedural Protocol to Contest a Will
-              </h2>
+              </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed">
                 If you suspect that a family member has fabricated a Will or forced an ailing parent into signing, follow this structured procedural protocol. Taking these disciplined steps preserves critical physical evidence and safeguards family assets.
               </p>
@@ -912,9 +912,9 @@ export default function HowToChallengeAWillClient() {
                 <ShieldCheck className="w-4 h-4" />
                 <span>Challenge-Proof Drafting</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
                 10. Defensive Drafting: Make Your Will 100% Challenge-Proof
-              </h2>
+              </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed">
                 If you are planning your own estate, your goal is the exact opposite: ensuring that no disgruntled relative, estranged child, or in-law can tie up your life savings in litigation. By embedding these four defensive safeguards during drafting, you make your Will virtually unassailable in court.
               </p>
@@ -955,9 +955,9 @@ export default function HowToChallengeAWillClient() {
                 <Award className="w-4 h-4" />
                 <span>The Conversion Bridge</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
                 11. How a Valid Will Would Have Avoided Costly Court Disputes
-              </h2>
+              </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed">
                 Over 90% of all inheritance lawsuits in India originate from homemade, ambiguous, or poorly witnessed Wills. When family members are left guessing, or when vague handwritten notes surface years after death, bitter civil suits inevitably drag through the courts for 10 to 20 years.
               </p>
@@ -996,9 +996,9 @@ export default function HowToChallengeAWillClient() {
                 <Split className="w-4 h-4" />
                 <span>Specialized Situations</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
                 12. Specialized Scenarios: Disinherited Heirs &amp; NRI Estates
-              </h2>
+              </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed">
                 Inheritance disputes frequently involve complex family dynamics or assets spread across jurisdictions. Here is how Indian courts handle four common specialized dispute scenarios.
               </p>
@@ -1031,9 +1031,9 @@ export default function HowToChallengeAWillClient() {
                 <HelpCircle className="w-4 h-4" />
                 <span>Direct Answers</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
                 Frequently Asked Questions: Challenging a Will in India
-              </h2>
+              </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed">
                 Straightforward legal answers to the most common questions regarding Will disputes, court time limits, witness rules, and defensive drafting.
               </p>
@@ -1074,9 +1074,9 @@ export default function HowToChallengeAWillClient() {
                 <BookOpen className="w-4 h-4 text-[#5F7E75]" />
                 <span>Legal Authority &amp; Statutory Sources</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
                 Official Legal Authorities, Statutory Sections &amp; Precedents
-              </h2>
+              </h3>
               <ul className="space-y-2 text-xs text-slate-600 list-disc list-inside leading-relaxed">
                 <li>
                   <strong>Indian Succession Act, 1925:</strong> Section 59 (soundness of mind), Section 61 (undue influence &amp; coercion), Section 63 (execution &amp; attestation), Section 67 (void bequests to witnesses), Section 263 (revocation of probate), Section 284 (caveats).

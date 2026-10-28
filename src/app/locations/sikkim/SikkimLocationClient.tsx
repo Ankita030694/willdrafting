@@ -547,9 +547,9 @@ export default function SikkimLocationClient({ faqs }: Props) {
                   <Scale className="w-4 h-4 text-[#C65378]" />
                   <span>STATUTORY PROVISIONS</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   1. Will Drafting &amp; Legal Framework in Sikkim
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Succession planning and testamentary disposition in Sikkim operate under a unique constitutional and statutory framework. While the <strong>Indian Succession Act, 1925</strong> provides core procedural principles for executing a Will, succession in Sikkim is strongly anchored in <strong>Article 371F of the Constitution of India</strong>, the <strong>Registration Act, 1908</strong>, and historic land protection regulations.
                 </p>
@@ -608,9 +608,9 @@ export default function SikkimLocationClient({ faqs }: Props) {
                   <FileText className="w-4 h-4 text-[#C65378]" />
                   <span>REGISTRATION DISCLOSURE</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   2. Is Will Registration Mandatory in Sikkim?
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Under Section 18(e) of the Indian Registration Act, 1908, the registration of a Will is strictly <strong>optional</strong> throughout Sikkim. An unregistered Will signed on plain white A4 paper before two competent witnesses carries full legal validity upon the testator&apos;s death.
                 </p>
@@ -667,9 +667,9 @@ export default function SikkimLocationClient({ faqs }: Props) {
                   <Landmark className="w-4 h-4 text-[#C65378]" />
                   <span>JUDICIAL PRECEDENTS</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   3. Sikkim Probate Law: Exemption Outside Presidency Towns
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   A common question among property owners in Sikkim is whether probate from the High Court of Sikkim or District Court is compulsory before property transmission. The established legal answer is <strong>no</strong>.
                 </p>
@@ -720,9 +720,9 @@ export default function SikkimLocationClient({ faqs }: Props) {
                   <MapPin className="w-4 h-4 text-[#C65378]" />
                   <span>SRO JURISDICTION DIRECTORY</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   4. Sikkim Sub-Registrar Offices: District SRO Directory
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Registration of documents in Sikkim is administered by the Land Revenue and Disaster Management Department through Sub-Registrar Offices located within District Administrative Centres (DAC) and Sub-Divisional Magistrate (SDM) complexes. Under Section 32 of the Registration Act, your Will can be registered at the SRO having jurisdiction over your permanent residence or where your property is situated.
                 </p>
@@ -818,9 +818,9 @@ export default function SikkimLocationClient({ faqs }: Props) {
                   <MapPin className="w-4 h-4 text-[#C65378]" />
                   <span>REGIONAL CITIES COVERAGE &amp; LAND LAWS</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   5. Regional Cities: District-Wise Will Drafting in Sikkim
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Estate assets in Sikkim span high-value urban residential flats in Gangtok, commercial hotels in Pelling and Ravangla, pharmaceutical facilities along the Rangpo corridor, and protected agricultural holdings in Mangan and Namchi. Our estate advocates deliver customized legal drafting, Revenue Order No. 1 compliance verification, and Sub-Registrar accompaniment across all key regional cities:
                 </p>
@@ -1261,9 +1261,9 @@ export default function SikkimLocationClient({ faqs }: Props) {
                   <FileCheck className="w-4 h-4 text-[#C65378]" />
                   <span>STEP-BY-STEP WORKFLOW</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   6. Step-by-Step SOP: Drafting to SRO Registration in Sikkim
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Drafting and executing a legally enforceable Will in Sikkim follows five structured stages designed to ensure complete adherence to both central succession acts and local land protection regulations:
                 </p>
@@ -1354,9 +1354,9 @@ export default function SikkimLocationClient({ faqs }: Props) {
                   <Home className="w-4 h-4 text-[#C65378]" />
                   <span>DOORSTEP SRO REGISTRATION</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   7. Section 31 Doorstep SRO Registration for Senior Citizens
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Navigating Sikkim&apos;s steep Himalayan topography and traveling to District Administrative Centres can pose severe physical challenges for elderly or bedridden citizens. <strong>Section 31 of the Registration Act, 1908</strong> provides a statutory solution through home commission visits.
                 </p>
@@ -1415,9 +1415,9 @@ export default function SikkimLocationClient({ faqs }: Props) {
                   <CheckCircle2 className="w-4 h-4 text-[#C65378]" />
                   <span>PREPARATION AUDIT</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   8. Document Checklist for Sikkim Sub-Registrar Offices
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Ensure all statutory identity, property, and community lineage records are organized prior to your SRO appointment. Check off items below:
                 </p>
@@ -1467,9 +1467,9 @@ export default function SikkimLocationClient({ faqs }: Props) {
                   <Building className="w-4 h-4 text-[#C65378]" />
                   <span>ASSET CLASSIFICATION</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   9. Sikkim Property Types: Gangtok Flats &amp; Ancestral Land
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Asset bequeathals in Sikkim require tailored clauses depending on whether the property consists of self-acquired urban real estate, protected agricultural land, or financial investments:
                 </p>
@@ -1521,9 +1521,9 @@ export default function SikkimLocationClient({ faqs }: Props) {
                   <Stamp className="w-4 h-4 text-[#C65378]" />
                   <span>STATUTORY TARIFF</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   10. Official Sikkim Registration Fees &amp; Stamp Duty Charges
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Unlike property gift deeds or conveyance deeds that attract percentage-based state stamp duty, testamentary Wills in Sikkim enjoy full statutory exemptions from ad-valorem stamp duty:
                 </p>
@@ -1571,9 +1571,9 @@ export default function SikkimLocationClient({ faqs }: Props) {
                   <Award className="w-4 h-4 text-[#C65378]" />
                   <span>TRANSPARENT SERVICE PLANS</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   11. Transparent Will Packages &amp; Legal Fees in Sikkim
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Choose from our structured estate planning packages tailored specifically for Sikkim residents, families, and property owners:
                 </p>
@@ -1719,9 +1719,9 @@ export default function SikkimLocationClient({ faqs }: Props) {
                   <HelpCircle className="w-4 h-4 text-[#C65378]" />
                   <span>FREQUENT QUESTIONS</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   12. Frequently Asked Questions: Will Drafting in Sikkim
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Essential legal and practical answers regarding will drafting, land protections, and registration in Sikkim:
                 </p>
@@ -1768,9 +1768,9 @@ export default function SikkimLocationClient({ faqs }: Props) {
                   <Scale className="w-4 h-4 text-[#C65378]" />
                   <span>STATUTORY CITATIONS</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   13. Statutory Citations &amp; Sikkim Legal Portals
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Our drafting protocols comply strictly with codified Indian statutes and Sikkim state administrative frameworks:
                 </p>

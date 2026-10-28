@@ -488,9 +488,9 @@ export default function BhubaneswarLocationClient({ faqs }: Props) {
                   <Scale className="w-4 h-4 text-[#C65378]" />
                   <span>STATUTORY FOUNDATION</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   1. Legal Framework for Will Drafting in Bhubaneswar
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Making a Will in Bhubaneswar is governed by the Indian Succession Act, 1925, and the Registration Act, 1908.
                   Whether you reside in Nayapalli, own a BDA residential plot in Patia, or hold ancestral farmland in Khordha, your testamentary instrument must meet strict statutory rules to remain enforceable.
@@ -544,9 +544,9 @@ export default function BhubaneswarLocationClient({ faqs }: Props) {
                   <FileCheck className="w-4 h-4 text-[#C65378]" />
                   <span>REGISTRATION PERSPECTIVE</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   2. Is Will Registration Compulsory in Bhubaneswar?
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Under Section 18(e) of the Registration Act, 1908, registering a Will is optional throughout Odisha. An unregistered Will drafted on standard paper is legally binding if signed before two witnesses.
                   However, registering your Will at the local Sub-Registrar Office provides undeniable evidentiary advantages.
@@ -623,9 +623,9 @@ export default function BhubaneswarLocationClient({ faqs }: Props) {
                   <Award className="w-4 h-4 text-[#C65378]" />
                   <span>JUDICIAL PROCEEDING RULES</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   3. Orissa High Court Probate Rules: Section 213
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Many Bhubaneswar property owners mistakenly believe that every Will must undergo probate in court before property can be transferred.
                   Understanding the legal distinction between presidency and non-presidency jurisdictions saves significant time and legal expenses.
@@ -687,9 +687,9 @@ export default function BhubaneswarLocationClient({ faqs }: Props) {
                   <MapPin className="w-4 h-4 text-[#C65378]" />
                   <span>SRO JURISDICTION DIRECTORY</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   4. Bhubaneswar Sub-Registrar Directory &amp; SROs
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Will registration across Bhubaneswar is administered by the Directorate of Registration, Revenue and Disaster Management Department, Government of Odisha.
                   Under Section 32 of the Registration Act, you can register your Will before the Sub-Registrar where you reside or where your immovable properties are situated.
@@ -779,9 +779,9 @@ export default function BhubaneswarLocationClient({ faqs }: Props) {
                   <MapPin className="w-4 h-4 text-[#C65378]" />
                   <span>LOCAL AREA COVERAGE &amp; ASSET NUANCES</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   5. Area-Wise Will Drafting Services in Bhubaneswar
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Bhubaneswar features distinct property markets ranging from government-planned GA leasehold sectors and BDA plotted developments to high-rise IT corridor apartments.
                   Our senior Odisha estate advocates provide customized legal drafting, IGR Odisha e-Registration appointment scheduling, and Sub-Registrar accompaniment across all key micro-markets:
@@ -1122,9 +1122,9 @@ export default function BhubaneswarLocationClient({ faqs }: Props) {
                   <FileText className="w-4 h-4 text-[#C65378]" />
                   <span>SYSTEMATIC PROCEDURE</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   6. Step-by-Step Will Registration in Odisha
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Registering your Will in Bhubaneswar follows a streamlined protocol under the Directorate of Registration, Government of Odisha.
                   Follow these five statutory steps to ensure your Will is registered flawlessly.
@@ -1224,9 +1224,9 @@ export default function BhubaneswarLocationClient({ faqs }: Props) {
                   <Home className="w-4 h-4 text-[#C65378]" />
                   <span>SPECIAL CITIZEN PROVISIONS</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   7. Doorstep Will Registration for Senior Citizens
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   For elderly citizens, bedridden individuals, or hospital patients in Bhubaneswar, visiting a crowded government office can be stressful or physically impossible.
                   The Registration Act provides an official legal remedy.
@@ -1290,9 +1290,9 @@ export default function BhubaneswarLocationClient({ faqs }: Props) {
                   <FileCheck className="w-4 h-4 text-[#C65378]" />
                   <span>PREPARATION CHECKLIST</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   8. Documents Checklist for Will Registration
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Keep these necessary documents organized before scheduling your appointment at the Bhubaneswar Sub-Registrar Office.
                   Use this interactive checklist to verify your preparation.
@@ -1363,9 +1363,9 @@ export default function BhubaneswarLocationClient({ faqs }: Props) {
                   <Building className="w-4 h-4 text-[#C65378]" />
                   <span>BHUBANESWAR LAND TENURES</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   9. Bhubaneswar Real Estate: BDA Plots &amp; GA Leases
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Bhubaneswar is unique among Indian state capitals due to its complex mix of General Administration (GA) leasehold lands, Bhubaneswar Development Authority (BDA) allotments, and private freehold plots.
                   Each category requires specific testamentary drafting.
@@ -1438,9 +1438,9 @@ export default function BhubaneswarLocationClient({ faqs }: Props) {
                   <Stamp className="w-4 h-4 text-[#C65378]" />
                   <span>TRANSPARENT TARIFF STRUCTURE</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   10. Official Stamp Duty &amp; Registration Fees: Odisha
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Unlike property sale deeds or gift deeds that attract substantial percentage-based stamp duties, registering a Will in Odisha is completely exempt from ad valorem stamp duty.
                 </p>
@@ -1493,9 +1493,9 @@ export default function BhubaneswarLocationClient({ faqs }: Props) {
                   <Award className="w-4 h-4 text-[#C65378]" />
                   <span>TRANSPARENT SERVICE PACKAGES</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   11. Transparent Will Packages &amp; Legal Fees
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Choose the right estate planning plan for your family. We offer transparent, flat-fee pricing with zero hidden costs.
                 </p>
@@ -1633,9 +1633,9 @@ export default function BhubaneswarLocationClient({ faqs }: Props) {
                   <HelpCircle className="w-4 h-4 text-[#C65378]" />
                   <span>ANSWERS TO KEY QUESTIONS</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   12. Frequently Asked Questions: Bhubaneswar Wills
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Clear, authoritative answers to common legal inquiries regarding Will drafting, SRO registration, and property succession in Bhubaneswar.
                 </p>
@@ -1678,9 +1678,9 @@ export default function BhubaneswarLocationClient({ faqs }: Props) {
                   <FileQuestion className="w-4 h-4 text-[#C65378]" />
                   <span>LEGAL PROVISIONS &amp; PORTAL</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   13. Statutory References &amp; Odisha IGR Portal
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   All Will drafting and registration protocols in Bhubaneswar operate under established Indian statutes and Odisha state departmental guidelines.
                 </p>

@@ -63,7 +63,7 @@ export const metadata: Metadata = {
         url: "/images/letters-of-administration-lawyer-og.jpg",
         width: 1200,
         height: 630,
-        alt: "Letters of Administration Lawyer India High Court Testamentary Petitions and Asset Transmission Counsel",
+        alt: "Letters of Administration Lawyer India - High Court Testamentary Petition Counsel",
       },
     ],
   },
@@ -568,9 +568,9 @@ export default function LettersOfAdministrationPage() {
               <Scale className="w-4 h-4" />
               <span>Court Strategy Navigator</span>
             </div>
-            <h2 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-3">
+            <h3 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-3">
               Interactive Letters of Administration Decision Tool
-            </h2>
+            </h3>
             <p className="text-[0.98rem] sm:text-[1.05rem] leading-[1.65] text-[#49585F]">
               Determine whether your deceased estate requires Section 218 Letters of
               Administration, Section 232 Will Annexed administration, or Probate:
@@ -589,9 +589,9 @@ export default function LettersOfAdministrationPage() {
               <Gavel className="w-4 h-4" />
               <span>Courtroom &amp; Testamentary Practice</span>
             </div>
-            <h2 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-3">
+            <h3 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-3">
               High Court Testamentary Practice: Representation Asset
-            </h2>
+            </h3>
             <p className="text-[0.98rem] sm:text-[1.05rem] leading-[1.65] text-[#49585F]">
               Testamentary and intestate proceedings under the Indian Succession Act,
               1925 require meticulous compliance with High Court Original Side rules,
@@ -628,9 +628,9 @@ export default function LettersOfAdministrationPage() {
               <FileCheck className="w-4 h-4" />
               <span>Statutory Comparison Matrix</span>
             </div>
-            <h2 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-4">
+            <h3 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-4">
               3-Way Matrix: Probate vs Admin Letters vs Succession
-            </h2>
+            </h3>
             <p className="text-[0.98rem] sm:text-[1.05rem] leading-[1.65] text-[#49585F]">
               Understand the precise statutory boundaries separating Probate, Letters
               of Administration, and Succession Certificates under the Indian Succession
@@ -682,9 +682,9 @@ export default function LettersOfAdministrationPage() {
               <BookOpen className="w-4 h-4" />
               <span>Court-Ready Legal Drafting</span>
             </div>
-            <h2 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-3">
+            <h3 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-3">
               Statutory Format: Section 278 Petition Verification
-            </h2>
+            </h3>
             <p className="text-[0.98rem] sm:text-[1.05rem] leading-[1.65] text-[#49585F]">
               Every petition for Letters of Administration must satisfy the strict
               pleading rules under Section 278 of the Indian Succession Act, 1925.
@@ -758,9 +758,9 @@ export default function LettersOfAdministrationPage() {
               <ShieldCheck className="w-4 h-4" />
               <span>Judicial Filing Protocol</span>
             </div>
-            <h2 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-3">
+            <h3 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-3">
               Step-by-Step Court Roadmap for Letters of Admin
-            </h2>
+            </h3>
             <p className="text-[0.98rem] sm:text-[1.05rem] leading-[1.65] text-[#49585F]">
               Obtaining Letters of Administration requires adherence to procedural
               mandates under the Indian Succession Act, 1925 and High Court Original
@@ -831,9 +831,9 @@ export default function LettersOfAdministrationPage() {
                 <Lock className="w-4 h-4" />
                 <span>Specialized Testamentary Scenarios</span>
               </div>
-              <h2 className="text-[1.75rem] sm:text-[2.3rem] font-medium leading-[1.14] tracking-[-0.02em] text-[#111827] mb-4">
+              <h3 className="text-[1.75rem] sm:text-[2.3rem] font-medium leading-[1.14] tracking-[-0.02em] text-[#111827] mb-4">
                 Bank Locker Release &amp; Section 232 Will Administration
-              </h2>
+              </h3>
               <p className="text-[15px] sm:text-[16px] leading-[1.7] text-[#374151] mb-4">
                 Two circumstances frequently demand Letters of Administration in Indian courts:
               </p>
@@ -885,9 +885,9 @@ export default function LettersOfAdministrationPage() {
               <BookOpen className="w-4 h-4" />
               <span>Statutory FAQs</span>
             </div>
-            <h2 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-3">
+            <h3 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-3">
               Frequently Asked Questions: Letters of Administration
-            </h2>
+            </h3>
             <p className="text-[0.98rem] sm:text-[1.05rem] leading-[1.65] text-[#49585F]">
               Authoritative statutory guidance prepared by the{" "}
               <strong className="text-[#111827]">WillDrafting Editorial Team</strong>{" "}

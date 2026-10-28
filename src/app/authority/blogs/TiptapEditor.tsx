@@ -215,7 +215,7 @@ export default function TiptapEditor({
         }
 
         insertHtmlAtCursor(
-          `<img width={800} height={450} src="${data.imageUrl}" alt="${file.name.replace(/\.[^.]+$/, "")}" style="max-width: 100%; height: auto; border-radius: 0.5rem; margin: 1rem 0;" />`
+          `<img width="800" height="450" src="${data.imageUrl}" alt="${file.name.replace(/\.[^.]+$/, "").slice(0, 80)}" style="max-width: 100%; height: auto; border-radius: 0.5rem; margin: 1rem 0;" />`
         );
       } catch (error) {
         console.error("Error uploading image:", error);

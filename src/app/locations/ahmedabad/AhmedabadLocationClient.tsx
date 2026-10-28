@@ -552,9 +552,9 @@ export default function AhmedabadLocationClient({ faqs }: Props) {
                   <span>STATUTORY FOUNDATION &amp; MITAKSHARA LAW</span>
                 </div>
                 {/* H2: Exactly 45 characters */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   1. Will Drafting &amp; Legal Framework in Ahmedabad
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Succession in Gujarat is governed by the Indian Succession Act, 1925, along with the personal laws of the testator. For Hindus, Jains, Sikhs, and Buddhists, the Hindu Succession Act, 1956 applies under the Mitakshara legal school.
                 </p>
@@ -611,9 +611,9 @@ export default function AhmedabadLocationClient({ faqs }: Props) {
                   <span>REGISTRATION ACT, 1908 (SECTION 18E)</span>
                 </div>
                 {/* H2: Exactly 47 characters */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   2. Is Will Registration Mandatory in Ahmedabad?
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Under Section 18(e) of the Registration Act, 1908, the registration of a Will is optional across Gujarat. An unregistered Will drafted on standard paper is legally enforceable if validly signed by the testator before two competent witnesses.
                 </p>
@@ -682,9 +682,9 @@ export default function AhmedabadLocationClient({ faqs }: Props) {
                   <span>INDIAN SUCCESSION ACT (SECTIONS 213 &amp; 57)</span>
                 </div>
                 {/* H2: Exactly 51 characters */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   3. Ahmedabad Probate Rules: Non-Presidency Town Law
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Unlike Mumbai, Kolkata, or Chennai, probate is not mandatory for Wills executed in Ahmedabad or covering properties situated across Gujarat.
                 </p>
@@ -735,9 +735,9 @@ export default function AhmedabadLocationClient({ faqs }: Props) {
                   <span>COMMERCIAL ENTERPRISE &amp; COPARCENARY STRUCTURING</span>
                 </div>
                 {/* H2: Exactly 53 characters */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   4. HUF Assets &amp; Family Business Succession in Gujarat
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Ahmedabad is Gujarat&apos;s financial and commercial engine. Structuring succession for Hindu Undivided Family (HUF) properties, corporate shareholdings, and industrial units requires strategic legal drafting.
                 </p>
@@ -800,9 +800,9 @@ export default function AhmedabadLocationClient({ faqs }: Props) {
                   <span>JURISDICTIONAL SRO DIRECTORY</span>
                 </div>
                 {/* H2: Exactly 53 characters */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   5. Ahmedabad Sub-Registrar Offices: District Directory
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Under the Inspector General of Registration (IGR Gujarat), Ahmedabad and Gandhinagar are organized into designated Sub-Registrar revenue zones. Find your relevant jurisdictional office below:
                 </p>
@@ -894,9 +894,9 @@ export default function AhmedabadLocationClient({ faqs }: Props) {
                   <span>LOCAL AREA COVERAGE &amp; HUBS</span>
                 </div>
                 {/* H2: Exactly 53 characters */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   6. Area-Wise Will Drafting Services Across Ahmedabad Localities
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Looking for legally verified <strong>Will drafting services in Navrangpura, Bodakdev, SG Highway, or Bopal</strong>? Properties in Ahmedabad span historic pol houses, premium bungalows along Ambli Road, high-rise apartments in Bopal, and commercial offices on S.G. Highway. Our advocates provide tailored drafting and Garvi Gujarat assistance:
                 </p>
@@ -1231,9 +1231,9 @@ export default function AhmedabadLocationClient({ faqs }: Props) {
                   <span>PROCEDURAL REGISTRATION BLUEPRINT</span>
                 </div>
                 {/* H2: Exactly 54 characters */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   7. Step-by-Step Garvi Gujarat Portal Will Registration
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Follow our verified five-stage procedure to draft, execute, and register your Will under the Gujarat revenue system:
                 </p>
@@ -1325,9 +1325,9 @@ export default function AhmedabadLocationClient({ faqs }: Props) {
                   <span>REGISTRATION ACT, 1908 (SECTION 31)</span>
                 </div>
                 {/* H2: Exactly 47 characters */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   8. Section 31 Doorstep Registration for Seniors
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   For senior citizens, bedridden testators, or hospital-admitted individuals who cannot visit an SRO in person, the law offers a compassionate doorstep provision:
                 </p>
@@ -1380,9 +1380,9 @@ export default function AhmedabadLocationClient({ faqs }: Props) {
                   <span>PRE-REGISTRATION VERIFICATION</span>
                 </div>
                 {/* H2: Exactly 48 characters */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   9. Documents Checklist for Gujarat Sub-Registrar
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Carry these verified documents to your Ahmedabad Sub-Registrar appointment. Use our interactive checklist to track your preparation:
                 </p>
@@ -1433,9 +1433,9 @@ export default function AhmedabadLocationClient({ faqs }: Props) {
                   <span>LOCAL ASSET CLASSIFICATIONS</span>
                 </div>
                 {/* H2: Exactly 50 characters */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   10. Ahmedabad Property Types: Freehold, HUF &amp; GIDC
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Real estate in the Ahmedabad metropolitan region encompasses unique statutory frameworks requiring careful legal drafting:
                 </p>
@@ -1508,9 +1508,9 @@ export default function AhmedabadLocationClient({ faqs }: Props) {
                   <span>STATUTORY EXPENSES</span>
                 </div>
                 {/* H2: Exactly 50 characters */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   11. Official Gujarat Stamp Duty &amp; Registration Fees
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   One of the greatest legal benefits of creating a Will in Gujarat is its complete exemption from ad-valorem stamp duty:
                 </p>
@@ -1565,9 +1565,9 @@ export default function AhmedabadLocationClient({ faqs }: Props) {
                   <span>TRANSPARENT LEGAL PACKAGES</span>
                 </div>
                 {/* H2: Exactly 42 characters */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   12. Transparent Will Packages &amp; Legal Fees
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Choose from our clear, fixed-fee packages tailored for Ahmedabad residents, business owners, and non-resident Gujaratis:
                 </p>
@@ -1721,9 +1721,9 @@ export default function AhmedabadLocationClient({ faqs }: Props) {
                   <span>FREQUENT TESTAMENTARY INQUIRIES</span>
                 </div>
                 {/* H2: Exactly 47 characters */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   13. Frequently Asked Questions: Ahmedabad Wills
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Answers to common legal questions regarding Will drafting, HUF assets, and Garvi Gujarat Sub-Registrar registration:
                 </p>
@@ -1769,9 +1769,9 @@ export default function AhmedabadLocationClient({ faqs }: Props) {
                   <span>LEGAL CITATIONS &amp; OFFICIAL WEBSITES</span>
                 </div>
                 {/* H2: Exactly 50 characters */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   14. Statutory References &amp; Gujarat Revenue Portals
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   All estate planning guidance on this page is based on codified Indian succession statutes and official Gujarat state circulars:
                 </p>

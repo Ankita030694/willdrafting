@@ -582,9 +582,9 @@ AND WHEREAS by virtue of the said testamentary bequest / intestate inheritance a
                 <Sparkles className="w-4 h-4" />
                 <span>INTERACTIVE TAX CALCULATOR</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 2. Interactive Capital Gains Tax &amp; Grandfathering Tool
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Enter your property details below to compare the 12.5% Flat Tax Regime against the 20%
                 Indexation Regime under the Finance (No. 2) Act 2024 grandfathering clause.
@@ -1276,9 +1276,9 @@ AND WHEREAS by virtue of the said testamentary bequest / intestate inheritance a
                 <Scale className="w-4 h-4" />
                 <span>FINANCE (NO. 2) ACT 2024</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 3. Budget 2024 Amendment: 12.5% Flat vs 20% Indexation
-              </h2>
+              </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   On July 23, 2024, the Union Budget initially proposed eliminating indexation benefits
@@ -1322,9 +1322,9 @@ AND WHEREAS by virtue of the said testamentary bequest / intestate inheritance a
                 <Gavel className="w-4 h-4" />
                 <span>LANDMARK JUDICIAL PRECEDENT</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 4. Section 49(1) Cost to Previous Owner &amp; Bombay HC Rule
-              </h2>
+              </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   Section 49(1) of the Income Tax Act provides that where an assessee acquires an asset
@@ -1361,9 +1361,9 @@ AND WHEREAS by virtue of the said testamentary bequest / intestate inheritance a
                 <Coins className="w-4 h-4" />
                 <span>BASE YEAR VALUATION MECHANICS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 5. Pre-2001 Valuations: April 1, 2001 FMV vs Stamp Duty
-              </h2>
+              </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   When inheriting ancestral properties bought before April 1, 2001 (e.g., properties
@@ -1402,9 +1402,9 @@ AND WHEREAS by virtue of the said testamentary bequest / intestate inheritance a
                 <Users className="w-4 h-4" />
                 <span>CO-OWNER TAX OPTIMIZATION</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 6. Section 54 &amp; 54EC Multi-Heir Exemption Multiplier
-              </h2>
+              </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   One of the most powerful tax-saving opportunities in Indian real estate occurs when
@@ -1450,9 +1450,9 @@ AND WHEREAS by virtue of the said testamentary bequest / intestate inheritance a
                 <Globe className="w-4 h-4" />
                 <span>CROSS-BORDER TAXATION</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 7. NRI Sellers: Section 195 TDS &amp; Form 13 Lower Deduction
-              </h2>
+              </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   For Non-Resident Indians (NRIs) inheriting and liquidating real estate in India, tax
@@ -1497,9 +1497,9 @@ AND WHEREAS by virtue of the said testamentary bequest / intestate inheritance a
                 <Scale className="w-4 h-4" />
                 <span>STATUTORY COMPARISON TABLE</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 8. Comparison Table: Pre-2024 vs Post-2024 Real Estate Tax
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Key differences between the pre-Budget 2024 regime, the flat 12.5% amendment, and the
                 grandfathered relaxation for inherited property:
@@ -1564,9 +1564,9 @@ AND WHEREAS by virtue of the said testamentary bequest / intestate inheritance a
                 <FileText className="w-4 h-4" />
                 <span>PROCEDURAL PROTOCOL</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 9. Step-by-Step SOP: Inherited Property Sale Checklist
-              </h2>
+              </h3>
               <div className="space-y-4">
                 {[
                   {
@@ -1622,9 +1622,9 @@ AND WHEREAS by virtue of the said testamentary bequest / intestate inheritance a
                 <TrendingUp className="w-4 h-4" />
                 <span>REAL-WORLD APPLICATION</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 10. Practical Case Studies: Real Inheritance Tax Scenarios
-              </h2>
+              </h3>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 {/* Case Study 1 */}
@@ -1697,9 +1697,9 @@ AND WHEREAS by virtue of the said testamentary bequest / intestate inheritance a
                 <FileCheck className="w-4 h-4" />
                 <span>COPY-PASTEABLE LEGAL ASSETS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 11. Copy-Paste Legal Recitals &amp; Form 13 Checklist
-              </h2>
+              </h3>
 
               {/* Template Box 1: Section 49(1) Sale Deed Recital */}
               <div className="rounded-2xl border border-slate-200/90 bg-white p-5 space-y-3 shadow-xs">
@@ -1785,9 +1785,9 @@ AND WHEREAS by virtue of the said testamentary bequest / intestate inheritance a
                 <Award className="w-4 h-4" />
                 <span>LEGAL EXPERTISE &amp; PRACTICE</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 12. Institutional Profile: Legal Excellence &amp; Trust Signals
-              </h2>
+              </h3>
               <div className="bg-white rounded-2xl border border-slate-200/90 p-6 sm:p-8 shadow-xs space-y-5">
                 <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-5 border-b border-slate-100">
                   <div className="space-y-1">
@@ -1846,9 +1846,9 @@ AND WHEREAS by virtue of the said testamentary bequest / intestate inheritance a
                 <HelpCircle className="w-4 h-4" />
                 <span>DIRECT ANSWERS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 13. Frequently Asked Questions: Inherited Property Tax
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Plain-English answers to common questions about capital gains tax, grandfathering, indexation,
                 and NRI sale procedures in India:
@@ -1892,9 +1892,9 @@ AND WHEREAS by virtue of the said testamentary bequest / intestate inheritance a
                 <Landmark className="w-4 h-4" />
                 <span>PRIMARY LEGAL SOURCES</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 14. Statutory Citations &amp; Official Income Tax Portals
-              </h2>
+              </h3>
               <div className="bg-white rounded-2xl border border-slate-200/90 p-5 space-y-4 text-xs text-slate-700 shadow-xs">
                 <div>
                   <div className="font-extrabold text-slate-900 mb-1">

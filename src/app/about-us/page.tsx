@@ -277,9 +277,9 @@ export default function AboutUsPage() {
             <span>HOW WE OPERATE</span>
           </div>
 
-          <h2 className="text-3xl sm:text-4xl lg:text-[3.25rem] font-medium leading-[1.14] tracking-[-0.025em] text-[#111827] mb-12 sm:mb-16">
+          <h3 className="text-3xl sm:text-4xl lg:text-[3.25rem] font-medium leading-[1.14] tracking-[-0.025em] text-[#111827] mb-12 sm:mb-16">
             Three things we believe in.
-          </h2>
+          </h3>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-10 lg:gap-14 pt-8 sm:pt-10 border-t border-[#172228]/10">
             <div className="flex flex-col">

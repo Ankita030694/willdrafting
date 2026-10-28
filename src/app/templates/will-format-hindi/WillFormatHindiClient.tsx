@@ -564,9 +564,9 @@ export default function WillFormatHindiClient() {
                 <PenLine className="w-4 h-4" />
                 <span>खंड 2: निष्पादन के नियम</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
                 2. धारा 63 के नियम: हस्ताक्षर और गवाही सरल हिंदी में
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 धारा 63 बताती है कि एक सामान्य वसीयत कैसे पूरी होती है। कानूनी भाषा कठिन है, इसलिए हमने इसे चार आसान नियमों में बाँटा है।
               </p>
@@ -612,9 +612,9 @@ export default function WillFormatHindiClient() {
                 <FileText className="w-4 h-4" />
                 <span>खंड 3: मुफ्त हिंदी प्रारूप</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
                 3. वसीयतनामा फॉर्मेट: कॉपी और प्रिंट करने योग्य हिंदी प्रारूप
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 नीचे भारतीय संपत्ति के लिए पूरा वसीयतनामा का नमूना है। कोष्ठक [ ] में दी गई जानकारी अपने विवरण से भरें। आप इसे कॉपी कर सकते हैं, Word फ़ाइल में डाउनलोड कर सकते हैं या प्रिंट करके PDF के रूप में सेव कर सकते हैं।
               </p>
@@ -712,9 +712,9 @@ export default function WillFormatHindiClient() {
                 <FileCheck className="w-4 h-4" />
                 <span>खंड 4: वैधता जाँच</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
                 4. क्या यह वसीयत कानूनी रूप से मान्य होगी? जाँच सूची
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 प्रिंट करने से पहले इन बिंदुओं को जाँचें। हर बिंदु पर टिक करें और देखें कि आपकी वसीयत धारा 63 के नियमों पर खरी उतरती है या नहीं।
               </p>
@@ -775,9 +775,9 @@ export default function WillFormatHindiClient() {
                 <AlertTriangle className="w-4 h-4 text-amber-600" />
                 <span>खंड 5: ज़रूरी चेतावनी</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
                 5. धारा 67 चेतावनी: लाभार्थी या उसका जीवनसाथी गवाह न बने
-              </h2>
+              </h3>
               <div className="rounded-2xl bg-amber-50/70 border border-amber-300 p-5 sm:p-6 space-y-3 text-slate-800">
                 <div className="flex items-center gap-2 font-bold text-amber-900 text-sm sm:text-base">
                   <AlertCircle className="w-5 h-5 text-amber-700 shrink-0" />
@@ -803,9 +803,9 @@ export default function WillFormatHindiClient() {
                 <Sparkles className="w-4 h-4" />
                 <span>खंड 6: दृश्य संरचना</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
                 6. वसीयत की संरचना: एक नज़र में पूरा ढाँचा
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 एक मान्य वसीयत का क्रम तय होता है। शीर्षक और घोषणा से शुरू होकर, खंड, हस्ताक्षर और अंत में दो गवाहों का सत्यापन आता है।
               </p>
@@ -843,9 +843,9 @@ export default function WillFormatHindiClient() {
                 <CheckCircle2 className="w-4 h-4 text-[#5F7E75]" />
                 <span>खंड 7: चरण-दर-चरण प्रक्रिया</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
                 7. वसीयत कैसे लिखें: 6 आसान चरणों में पूरी प्रक्रिया
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 वसीयत बनाने के लिए अदालत जाने की ज़रूरत नहीं है। इन छह चरणों का पालन करें और आपकी वसीयत कानूनी रूप से पूरी हो जाएगी।
               </p>
@@ -871,9 +871,9 @@ export default function WillFormatHindiClient() {
                 <AlertCircle className="w-4 h-4 text-rose-600" />
                 <span>खंड 8: आम गलतियाँ</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
                 8. 3 सबसे आम गलतियाँ जो वसीयत को कमज़ोर बना देती हैं
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 छोटी सी चूक भी परिवार को सालों की मुकदमेबाज़ी में फँसा सकती है। हिंदी वसीयत बनाते समय इन तीन गलतियों से बचें।
               </p>
@@ -910,9 +910,9 @@ export default function WillFormatHindiClient() {
                 <Scale className="w-4 h-4" />
                 <span>खंड 9: कानूनी तुलना</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
                 9. सादा, नोटरीकृत और पंजीकृत वसीयत: तुलना तालिका
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 तीनों तरह की वसीयत कानूनन मान्य हैं। फ़र्क केवल सबूत की मज़बूती, खर्च और समय में है।
               </p>
@@ -984,9 +984,9 @@ export default function WillFormatHindiClient() {
                 <Languages className="w-4 h-4" />
                 <span>खंड 10: भाषा से जुड़े नियम</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
                 10. हिंदी में वसीयत: भाषा, पंजीकरण और अनुवाद के नियम
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 धारा 74 के अनुसार वसीयत में किसी तकनीकी शब्द की ज़रूरत नहीं है। आप उसी भाषा में लिखें जिसे आप सबसे अच्छी तरह समझते हैं। इससे बाद में यह आरोप नहीं लगता कि आपको वसीयत की बातें समझ नहीं आई थीं।
               </p>
@@ -1023,9 +1023,9 @@ export default function WillFormatHindiClient() {
                 <Building className="w-4 h-4" />
                 <span>खंड 11: विशेष परिस्थितियाँ</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
                 11. विशेष स्थितियाँ: पैतृक संपत्ति, नाबालिग और मुस्लिम वसीयत
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 आप कितनी संपत्ति अपनी इच्छा से दे सकते हैं, यह संपत्ति के प्रकार और आपके व्यक्तिगत कानून पर निर्भर करता है। इन चार स्थितियों को ध्यान से समझें।
               </p>
@@ -1100,9 +1100,9 @@ export default function WillFormatHindiClient() {
                 <Award className="w-4 h-4" />
                 <span>खंड 12: विश्वसनीयता</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
                 12. AMA Legal Solutions द्वारा जाँची गई कानूनी प्रक्रिया
-              </h2>
+              </h3>
               <div className="bg-white rounded-2xl border border-slate-200/90 p-6 sm:p-8 shadow-xs space-y-4">
                 <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-6 border-b border-slate-100">
                   <div>
@@ -1142,9 +1142,9 @@ export default function WillFormatHindiClient() {
                 <HelpCircle className="w-4 h-4 text-[#C65378]" />
                 <span>खंड 13: सीधे जवाब</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
                 अक्सर पूछे जाने वाले प्रश्न: हिंदी वसीयतनामा
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 वसीयत लिखने, गवाही और पंजीकरण से जुड़े आम सवालों के सरल जवाब।
               </p>
@@ -1191,7 +1191,7 @@ export default function WillFormatHindiClient() {
                 <BookOpen className="w-4 h-4" />
                 <span>खंड 14: कानूनी संदर्भ</span>
               </div>
-              <h2 className="text-lg font-bold text-slate-900">कानूनी संदर्भ और आधिकारिक सरकारी स्रोत</h2>
+              <h3 className="text-lg font-bold text-slate-900">कानूनी संदर्भ और आधिकारिक सरकारी स्रोत</h3>
               <ul className="list-disc pl-5 text-[13px] text-slate-600 space-y-1.5 leading-relaxed">
                 <li>
                   <strong>भारतीय उत्तराधिकार अधिनियम, 1925:</strong> धारा 59 (वसीयत करने की क्षमता), धारा 62 और 70 (वसीयत बदलना या रद्द करना), धारा 63 (निष्पादन और गवाही), धारा 67 (गवाह-लाभार्थी), धारा 71 (बाद में किए गए बदलाव), धारा 74 (शब्दों की स्वतंत्रता) और धारा 222 (निष्पादक को प्रोबेट)।

@@ -22,12 +22,15 @@ Every new page, component, blog post, location guide, legal tool, and template c
 
 ## 3. Heading Hierarchy (`<h1>`, `<h2>`, `<h3>`, `<h4>`)
 - **Single `<h1>`:** Every page MUST have **exactly 1 `<h1>` tag**, and its text MUST be **≤ 70 characters**.
+- **Single `<h2>` per Page (`H2: Multiple` Prevention):** Every indexable page MUST have **exactly 1 `<h2>` tag** (**≤ 70 characters** and unique across all pages).
+  - Keep only the first primary section heading on each page as `<h2>` (placed after `<h1>` and before any `<h3>` or `<h4>`).
+  - Render all subsequent section headings on the page as `<h3>` (preserving visual typography classes/styles) and subsection headings as `<h4>`.
+  - Shared components (`CallToActionBanner`, `FAQSection`, `TestimonialsSection`, `MapSection`, `PoweredByAma`, `GlobalPopup`, interactive calculators, etc.) MUST use `<h3>` or `<div>` instead of `<h2>` so they never introduce multiple `<h2>` tags on any page.
 - **Strict Sequential Hierarchy (`H1` → `H2` → `H3` → `H4`):**
   - Never place an `<h2>`, `<h3>`, or `<h4>` *before* the page's `<h1>`.
-  - Never place an `<h3>` or `<h4>` between the `<h1>` and the first `<h2>` (e.g., in hero summary cards, sidebars, or table-of-contents headers that render before the main article body). Use `<div>`, `<p>`, or `<span>` for non-heading UI badges/labels before the first `<h2>`.
-- **`<h2>` Character Limit:** Every `<h2>` MUST be **≤ 70 characters**. Never wrap body paragraphs in `<h2>` tags.
+  - Never place an `<h3>` or `<h4>` between the `<h1>` and the single `<h2>` (e.g., in hero summary cards, sidebars, or table-of-contents headers that render before the main article body). Use `<div>`, `<p>`, or `<span>` for non-heading UI badges/labels before the `<h2>`.
 - **No Duplicate `<h2>` Across Pages:**
-  - The first two `<h2>` headings on every page (`H2_1` and `H2_2`) MUST be unique to that specific page/topic.
+  - The single `<h2>` heading on every page MUST be unique to that specific page/topic and **≤ 70 characters**.
   - Never use generic repeated `<h2>` tags like `<h2>The short version</h2>` across multiple pages (use a styled `<div>` for repeated UI box labels, or include the specific page topic/city in the `<h2>` text, e.g., `1. Will Drafting & Legal Framework in Ahmedabad`).
 
 ---

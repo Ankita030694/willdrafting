@@ -427,9 +427,9 @@ export default function WillRegistrationClient() {
                 <FileCheck className="w-4 h-4 text-[#C65378]" />
                 <span>COMPARATIVE MATRIX</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
                 2. Registered vs Unregistered Wills: Legal Protection Matrix
-              </h2>
+              </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed">
                 Many people ask if they should register their Will. Both registered and plain paper Wills are valid in India. But a registered Will gives stronger protection to your heirs. Review the table below to compare your choices.
               </p>
@@ -494,9 +494,9 @@ export default function WillRegistrationClient() {
                 <Home className="w-4 h-4 text-[#C65378]" />
                 <span>SENIOR CITIZEN ACCESS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
                 3. Section 31 Home Visit: Registration for Senior Citizens
-              </h2>
+              </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed">
                 Many senior citizens want to register their Will. But visiting a busy office can harm their health. Stairs and crowds cause real stress. Section 31 of the Registration Act solves this through home visits.
               </p>
@@ -514,9 +514,9 @@ export default function WillRegistrationClient() {
                 <FileText className="w-4 h-4 text-[#C65378]" />
                 <span>PRE-APPOINTMENT AUDIT</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
                 4. Essential Documents Checklist for SRO Will Registration
-              </h2>
+              </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed">
                 Going to the registry office without the right papers wastes time. Missing papers cause delays. Use this checklist to ensure your documents are ready before your registration date.
               </p>
@@ -569,9 +569,9 @@ export default function WillRegistrationClient() {
                 <Fingerprint className="w-4 h-4 text-[#C65378]" />
                 <span>PROCEDURAL BLUEPRINT</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
                 5. Visual Blueprint: End-to-End Will Registration Workflow
-              </h2>
+              </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed">
                 The visual below shows official Will registration at the Sub-Registrar Office under the 1908 Act. It features an authenticated Will, registrar endorsement, and official records.
               </p>
@@ -619,9 +619,9 @@ export default function WillRegistrationClient() {
                 <Clock className="w-4 h-4 text-[#C65378]" />
                 <span>STANDARD OPERATING PROCEDURE</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
                 6. Step-by-Step Protocol: SRO Will Registration SOP
-              </h2>
+              </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed">
                 Our legal chamber uses a proven six-step path to register your Will. We make the entire process fast, simple, and free from courthouse stress.
               </p>
@@ -713,9 +713,9 @@ export default function WillRegistrationClient() {
                 <ShieldCheck className="w-4 h-4 text-[#C65378]" />
                 <span>STRATEGIC ASSET SHIELD</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
                 7. Strategic Defense: When Will Registration Is Vital
-              </h2>
+              </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed">
                 Any adult in India can register a Will. But registration is most critical in four family and property situations.
               </p>
@@ -769,9 +769,9 @@ export default function WillRegistrationClient() {
                 <MapPin className="w-4 h-4 text-[#C65378]" />
                 <span>STATE REVENUE MATRIX</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
                 8. State-by-State Guide: SRO Portals &amp; Fee Structures
-              </h2>
+              </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed">
                 State fees for registering a Will are very low in India. Unlike buying land, registering a Will costs only a few hundred rupees. Below is a list of state fees and portals.
               </p>
@@ -842,9 +842,9 @@ export default function WillRegistrationClient() {
                 <Calendar className="w-4 h-4 text-[#C65378]" />
                 <span>EXECUTION MILESTONES</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
                 9. Procedural Timeline: Execution to Certified Delivery
-              </h2>
+              </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed">
                 With our legal team guiding you, Will registration takes only 3 to 5 business days. The timeline below explains each step from first draft to final delivery.
               </p>
@@ -909,9 +909,9 @@ export default function WillRegistrationClient() {
                 <Building className="w-4 h-4 text-[#C65378]" />
                 <span>CASE ROADMAPS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
                 10. Specialized Scenarios: Senior Heirs &amp; NRI Testators
-              </h2>
+              </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed">
                 Will registration changes based on your family needs. Here is how our team handles four common client cases.
               </p>
@@ -965,9 +965,9 @@ export default function WillRegistrationClient() {
                 <Award className="w-4 h-4 text-[#C65378]" />
                 <span>PLANS &amp; PRICING</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
                 11. Service Plans &amp; Transparent Pricing for Will Drafting
-              </h2>
+              </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed">
                 All our plans offer clear pricing with zero hidden costs. Choose the legal plan that matches your estate goals.
               </p>
@@ -1095,9 +1095,9 @@ export default function WillRegistrationClient() {
                 <HelpCircle className="w-4 h-4 text-[#C65378]" />
                 <span>DIRECT ANSWERS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
                 12. Frequently Asked Questions: Will Registration India
-              </h2>
+              </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed">
                 Find direct answers to common questions about Will registration, state fees, and Section 31 home visits in India.
               </p>
@@ -1134,9 +1134,9 @@ export default function WillRegistrationClient() {
             {/* SECTION 14: CITATIONS & AUTHORITY LINKS */}
             <section id="statutory-citations" className="scroll-target space-y-6 pt-6 border-t border-slate-200">
               <div>
-                <h2 className="text-lg font-bold text-slate-900 mb-2">
+                <h3 className="text-lg font-bold text-slate-900 mb-2">
                   13. Statutory Citations &amp; Official Government Portals
-                </h2>
+                </h3>
                 <ul className="list-disc list-inside space-y-1 text-xs text-slate-600">
                   <li>Registration Act, 1908: Section 18(e) (Optional registration of Wills), Section 31 (Registration at private residence), Section 40 &amp; 41 (Procedure on deposit and registration of Wills), Section 57(2) (Confidentiality of Book 3).</li>
                   <li>Indian Succession Act, 1925: Section 63 (Execution of unprivileged Wills), Section 67 (Void bequests to attesting witnesses), Section 62 (Revocability of Wills).</li>

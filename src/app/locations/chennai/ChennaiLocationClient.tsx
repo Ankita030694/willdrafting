@@ -572,9 +572,9 @@ export default function ChennaiLocationClient({ faqs }: Props) {
                   <span>STATUTORY FOUNDATION</span>
                 </div>
                 {/* H2: Exactly 50 characters */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   1. Legal Framework: Chennai Succession &amp; ISA Rules
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Succession planning in Chennai operates under central and state statutes.
                   Every testamentary document must satisfy the Indian Succession Act, 1925 and Tamil Nadu Registration Rules.
@@ -628,9 +628,9 @@ export default function ChennaiLocationClient({ faqs }: Props) {
                   <span>REGISTRATION COMPARISON</span>
                 </div>
                 {/* H2: Exactly 51 characters */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   2. Registration Rules: Optional vs SRO Registration
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Under Section 18(e) of the Registration Act, 1908, registering a Will is optional in Tamil Nadu.
                   However, registration before the Sub-Registrar offers decisive evidentiary advantages in Chennai courts and municipal bodies.
@@ -685,9 +685,9 @@ export default function ChennaiLocationClient({ faqs }: Props) {
                   <span>SECTION 213 COMPLIANCE</span>
                 </div>
                 {/* H2: Exactly 52 characters */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   3. Madras High Court: Mandatory Probate Jurisdiction
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Chennai holds a distinct legal status in Indian succession law.
                   Along with Mumbai and Kolkata, Chennai was one of the historical presidency towns established by Royal Charter.
@@ -755,9 +755,9 @@ export default function ChennaiLocationClient({ faqs }: Props) {
                   <span>SRO JURISDICTION DIRECTORY</span>
                 </div>
                 {/* H2: Exactly 47 characters */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   4. Chennai Sub-Registrar Offices: SRO Directory
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Chennai registration is administered across Chennai Central, Chennai South, and Chennai North zones.
                   Under Section 32 of the Registration Act, your Will can be registered at the Sub-Registrar Office where the testator resides, or where any real estate is situated.
@@ -861,9 +861,9 @@ export default function ChennaiLocationClient({ faqs }: Props) {
                   <span>REGIONAL LOCALITIES</span>
                 </div>
                 {/* H2: Exactly 51 characters */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   5. Area-Wise Will Drafting Services Across Chennai GCC
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Looking for legally verified <strong>Will drafting services in Mylapore, Anna Nagar, Adyar, or OMR</strong>? Our network of High Court advocates and succession experts provides home visits and Sub-Registrar support throughout the Greater Chennai Corporation area:
                 </p>
@@ -1198,9 +1198,9 @@ export default function ChennaiLocationClient({ faqs }: Props) {
                   <span>REGISTRATION PROTOCOL</span>
                 </div>
                 {/* H2: Exactly 51 characters */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   6. Step-by-Step SOP: Chennai Will Registration Flow
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Registering a Will in Chennai is straightforward when following this 5-step standard operating procedure:
                 </p>
@@ -1292,9 +1292,9 @@ export default function ChennaiLocationClient({ faqs }: Props) {
                   <span>DOORSTEP REGISTRATION</span>
                 </div>
                 {/* H2: Exactly 47 characters */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   7. Section 31: Doorstep Home Visits for Seniors
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Under Section 31 of the Registration Act, 1908, senior citizens, bedridden persons, or hospitalised testators can register their Will without visiting the Sub-Registrar Office in person.
                 </p>
@@ -1345,9 +1345,9 @@ export default function ChennaiLocationClient({ faqs }: Props) {
                   <span>PREPARATION CHECKLIST</span>
                 </div>
                 {/* H2: Exactly 53 characters */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   8. Required Documents: Chennai Registration Checklist
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Interactive checklist for registering your Will in Chennai. Click each item to track your progress before visiting the Sub-Registrar:
                 </p>
@@ -1420,9 +1420,9 @@ export default function ChennaiLocationClient({ faqs }: Props) {
                   <span>LOCAL ASSET CLASSES</span>
                 </div>
                 {/* H2: Exactly 52 characters */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   9. Chennai Property Types: GCC, Patta &amp; CMDA Layouts
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Drafting a Will in Chennai requires specific clauses tailored to local real estate tenure and documentation systems:
                 </p>
@@ -1475,9 +1475,9 @@ export default function ChennaiLocationClient({ faqs }: Props) {
                   <span>GOVERNMENT EXPENSES</span>
                 </div>
                 {/* H2: Exactly 49 characters */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   10. Government Fees: TNREGINET Registration Costs
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Unlike property sale deeds that incur high stamp duty in Tamil Nadu, Wills are 100% exempt from stamp duty across India under the Indian Stamp Act, 1899.
                   Government fees for registering a Will on TNREGINET are completely nominal:
@@ -1527,9 +1527,9 @@ export default function ChennaiLocationClient({ faqs }: Props) {
                   <span>PLANS &amp; PRICING</span>
                 </div>
                 {/* H2: Exactly 47 characters */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   11. Service Packages: Transparent Pricing Plans
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Choose the level of legal assistance that fits your estate planning needs in Chennai:
                 </p>
@@ -1672,9 +1672,9 @@ export default function ChennaiLocationClient({ faqs }: Props) {
                   <span>FREQUENTLY ASKED QUESTIONS</span>
                 </div>
                 {/* H2: Exactly 49 characters */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   Frequently Asked Questions: Chennai Will Drafting
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Clear answers to common questions about making and registering a Will in Chennai and Tamil Nadu:
                 </p>
@@ -1718,9 +1718,9 @@ export default function ChennaiLocationClient({ faqs }: Props) {
                   <span>STATUTORY CITATIONS</span>
                 </div>
                 {/* H2: Exactly 46 characters */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   12. Statutory Citations: Indian Succession Law
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Our drafting protocols strictly follow codified Indian statutes and official Tamil Nadu registration portals:
                 </p>

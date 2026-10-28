@@ -46,9 +46,9 @@ export default function EstateComparison() {
             <span className="inline-block text-[10.5px] sm:text-[11px] font-bold tracking-wider uppercase text-[#C65378] bg-[#C65378]/10 px-3 py-0.5 rounded-full mb-1.5">
               Without a Will vs. With a Will
             </span>
-            <h2 className="text-[1.25rem] sm:text-[1.65rem] lg:text-[1.85rem] font-bold text-[#172228] leading-tight">
+            <h3 className="text-[1.25rem] sm:text-[1.65rem] lg:text-[1.85rem] font-bold text-[#172228] leading-tight">
               What Happens If You Die Without a Will?
-            </h2>
+            </h3>
             <p className="text-[0.80rem] sm:text-[0.86rem] text-[#55636D] mt-1">
               Without a Will, government rules decide your family&apos;s inheritance. With a Will, you stay in full control.
             </p>

@@ -487,9 +487,9 @@ export default function LakshadweepLocationClient({ faqs }: Props) {
                   <Scale className="w-4 h-4 text-[#C65378]" />
                   <span>CUSTOMARY MATRILINEAL SUCCESSION &amp; ISLAND GOVERNANCE</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   1. Will Drafting &amp; Legal Succession Framework in Lakshadweep
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed">
                   Testamentary estate planning across the Union Territory of Lakshadweep presents a unique legal synthesis in the Republic of India. Succession on these thirty-six coral atolls is shaped by the intersection of statutory Indian civil laws, island tenancy regulations, and deep-seated customary matrilineal jurisprudence known as <strong>Marumakkathayam</strong>.
                 </p>
@@ -534,9 +534,9 @@ export default function LakshadweepLocationClient({ faqs }: Props) {
                   <FileText className="w-4 h-4 text-[#C65378]" />
                   <span>REGISTRATION ACT, 1908 COMPLIANCE</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   2. Is Will Registration Mandatory in Lakshadweep Islands?
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed">
                   Under Section 18(e) of the Registration Act, 1908, registering a Will is legally optional throughout Lakshadweep. An unregistered Will signed on standard white paper before two competent witnesses possesses prima facie validity. However, in an island ecosystem where families frequently hold overlapping customary rights, registration provides indispensable legal safeguards.
                 </p>
@@ -594,9 +594,9 @@ export default function LakshadweepLocationClient({ faqs }: Props) {
                   <Landmark className="w-4 h-4 text-[#C65378]" />
                   <span>KERALA HIGH COURT JURISDICTION</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   3. Kerala High Court Jurisdiction &amp; Probate Rules in Lakshadweep
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed">
                   Under Article 241 of the Constitution of India and Section 60 of the States Reorganisation Act, 1956, the High Court of Kerala at Ernakulam exercises territorial jurisdiction over Lakshadweep. A frequent question among island residents is whether obtaining High Court probate is compulsory before transferring island estates.
                 </p>
@@ -627,9 +627,9 @@ export default function LakshadweepLocationClient({ faqs }: Props) {
                   <Building className="w-4 h-4 text-[#C65378]" />
                   <span>OFFICIAL ISLAND REGISTRATION OFFICES</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   4. SRO Kavaratti &amp; Island Registry Offices Directory
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed">
                   The Union Territory of Lakshadweep maintains its principal Sub-Registrar Office at Kavaratti, supplemented by Sub-Divisional Magistrates and delegated registry desks across outlying inhabited islands. Select your island hub below for jurisdiction details and timing:
                 </p>
@@ -752,9 +752,9 @@ export default function LakshadweepLocationClient({ faqs }: Props) {
                   <MapPin className="w-4 h-4 text-[#C65378]" />
                   <span>REGIONAL CITIES &amp; ISLAND COVERAGE</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   5. Regional Cities: Will Drafting Coverage Across Lakshadweep
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Estate holdings across Lakshadweep span residential properties in the administrative capital of Kavaratti, tourism and lagoon plots in Agatti, traditional tarawad holdings in Amini, extensive coconut plantations in Andrott, and matrilocal family residences in Minicoy. Our specialized legal advocates deliver customized Will drafting, customary review, and registry assistance across all regional island centers:
                 </p>
@@ -1194,9 +1194,9 @@ export default function LakshadweepLocationClient({ faqs }: Props) {
                   <FileCheck className="w-4 h-4 text-[#C65378]" />
                   <span>STANDARDIZED ISLAND PROTOCOL</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   6. Step-by-Step SOP: Will Drafting to SRO Kavaratti Registration
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed">
                   Executing a legally binding Will in Lakshadweep requires methodical progression from asset identification to formal Book III government recording. Follow this verified five-step operating procedure:
                 </p>
@@ -1282,9 +1282,9 @@ export default function LakshadweepLocationClient({ faqs }: Props) {
                   <Home className="w-4 h-4 text-[#C65378]" />
                   <span>DOORSTEP &amp; ISLAND RESIDENCE EXECUTION</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   7. Section 31 Doorstep SRO Registration for Senior Islanders
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed">
                   Inter-island transit across Lakshadweep often requires passenger ship or helicopter travel that can be physically taxing for elderly, ailing, or bedridden citizens. The Registration Act provides an official legal remedy through <strong>Section 31</strong>.
                 </p>
@@ -1329,9 +1329,9 @@ export default function LakshadweepLocationClient({ faqs }: Props) {
                   <FileText className="w-4 h-4 text-[#C65378]" />
                   <span>MANDATORY VERIFICATION DOSSIER</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   8. Document Checklist for Lakshadweep Sub-Registrar Offices
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed">
                   Before presenting your Will for registration at SRO Kavaratti or your island Sub-Divisional registry desk, verify that you have assembled all required documents. Use this interactive preparation checklist:
                 </p>
@@ -1392,9 +1392,9 @@ export default function LakshadweepLocationClient({ faqs }: Props) {
                   <Home className="w-4 h-4 text-[#C65378]" />
                   <span>ASSET CLASSIFICATION &amp; CUSTOMARY RULES</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   9. Lakshadweep Property Types: Belasha, Velliazha &amp; Coconut Lands
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed">
                   Real estate and movable wealth in Lakshadweep differ fundamentally from mainland Indian property. Understanding how your assets fall under island customary classifications prevents expensive legal disputes:
                 </p>
@@ -1450,9 +1450,9 @@ export default function LakshadweepLocationClient({ faqs }: Props) {
                   <Stamp className="w-4 h-4 text-[#C65378]" />
                   <span>TRANSPARENT STATUTORY COSTS</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   10. Official Lakshadweep SRO Registration Fees &amp; Stamp Duty
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed">
                   Unlike property sale deeds, gift deeds, or mortgages that attract ad-valorem stamp duty based on circle rates, Wills are testamentary declarations taking effect solely upon death. Consequently, government charges for registering a Will across Lakshadweep are strictly nominal.
                 </p>
@@ -1524,9 +1524,9 @@ export default function LakshadweepLocationClient({ faqs }: Props) {
                   <Award className="w-4 h-4 text-[#C65378]" />
                   <span>TRANSPARENT SERVICE PACKAGES</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   11. Transparent Will Packages &amp; Legal Fees in Lakshadweep
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed">
                   Choose the ideal service tier for your estate planning needs. All drafts include customary Marumakkathayam verification, Kerala High Court compliance, and step-by-step registry instructions.
                 </p>
@@ -1673,9 +1673,9 @@ export default function LakshadweepLocationClient({ faqs }: Props) {
                   <HelpCircle className="w-4 h-4 text-[#C65378]" />
                   <span>COMMONLY ASKED QUESTIONS</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   12. Frequently Asked Questions: Will Drafting in Lakshadweep
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed">
                   Answers to real questions concerning island property succession, customary Marumakkathayam rules, and SRO Kavaratti registration:
                 </p>
@@ -1719,9 +1719,9 @@ export default function LakshadweepLocationClient({ faqs }: Props) {
                   <Scale className="w-4 h-4 text-[#C65378]" />
                   <span>AUTHORITATIVE STATUTORY CITATIONS</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   13. Statutory Citations &amp; Lakshadweep Island Legal Framework
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed">
                   Every Will prepared through WillDrafting strictly adheres to governing primary legislation, island regulations, and high court precedents:
                 </p>

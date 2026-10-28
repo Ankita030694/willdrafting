@@ -451,9 +451,9 @@ export default function TestamentaryTrustClauseClient() {
                 <AlertTriangle className="w-4 h-4 text-amber-600" />
                 <span>LEGAL PITFALLS TO PREVENT</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 2. The Pitfall: Why Direct Minor Bequests Trigger Court Delay
-              </h2>
+              </h3>
               <div className="space-y-4 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   When parents draft a simple Will stating &ldquo;I leave my flat and investments equally to my minor
@@ -505,9 +505,9 @@ export default function TestamentaryTrustClauseClient() {
                 <Layers className="w-4 h-4" />
                 <span>STRUCTURED COMPARISON</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 3. Legal Comparison: Direct Inheritance vs Testamentary Trust
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Examine how a Testamentary Trust compares against direct Will bequests and living private trusts
                 under Indian succession and trust statutes:
@@ -600,9 +600,9 @@ export default function TestamentaryTrustClauseClient() {
                 <Building className="w-4 h-4" />
                 <span>LEGAL MECHANICS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 4. Core Architecture: 4 Pillars of a Minor Child Trust
-              </h2>
+              </h3>
               <div className="space-y-4 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   Under Section 6 of the Indian Trusts Act, 1882, a valid private trust requires four essential
@@ -670,9 +670,9 @@ export default function TestamentaryTrustClauseClient() {
                 <Clock className="w-4 h-4" />
                 <span>CAPITAL PRESERVATION STRATEGY</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 5. Milestone Payout Schedule: Staggered Vesting at 18, 21, 25
-              </h2>
+              </h3>
               <div className="space-y-4 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   Under Sections 119 and 120 of the Indian Succession Act, 1925, testators have the statutory right
@@ -738,9 +738,9 @@ export default function TestamentaryTrustClauseClient() {
                 <Heart className="w-4 h-4 text-rose-500" />
                 <span>VULNERABLE HEIR SAFEGUARDS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 6. Special Needs Child Trust: Lifelong Care &amp; Safeguards
-              </h2>
+              </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   For parents of children with physical, cognitive, or psychiatric disabilities (such as autism,
@@ -793,9 +793,9 @@ export default function TestamentaryTrustClauseClient() {
                 <ShieldCheck className="w-4 h-4 text-[#5F7E75]" />
                 <span>CREDITOR &amp; MATRIMONIAL SHIELD</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 7. Spendthrift Protection: Shielding Corpus from Creditors
-              </h2>
+              </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   A major risk in modern estate transmission is that a child may face future business insolvency,
@@ -829,9 +829,9 @@ export default function TestamentaryTrustClauseClient() {
                 <Copy className="w-4 h-4" />
                 <span>READY-TO-USE LEGAL CLAUSE BOX</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 8. Ready-to-Use Legal Clauses: Complete Copyable Formats
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Select your required clause variant below. These clauses have been vetted by Senior Succession Counsel
                 compliant with the Indian Trusts Act, 1882 and Indian Succession Act, 1925. Click &ldquo;Copy Clause to Clipboard&rdquo;
@@ -928,9 +928,9 @@ export default function TestamentaryTrustClauseClient() {
                 <CalendarCheck className="w-4 h-4" />
                 <span>OPERATIONAL PROTOCOL</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 9. Step-by-Step SOP: Executing a Will with a Trust Clause
-              </h2>
+              </h3>
               <div className="space-y-4 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   To ensure that your testamentary trust clause executes seamlessly upon your demise without family
@@ -1025,9 +1025,9 @@ export default function TestamentaryTrustClauseClient() {
                 <DollarSign className="w-4 h-4 text-emerald-600" />
                 <span>INCOME TAX ACT, 1961</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 10. Income Tax Treatment: Representative Assessee Slabs
-              </h2>
+              </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   A common worry among parents is how rental yield, interest, and dividends earned by the testamentary
@@ -1071,9 +1071,9 @@ export default function TestamentaryTrustClauseClient() {
                 <Users className="w-4 h-4" />
                 <span>REAL-WORLD SCENARIOS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 11. Real-World Precedents: Practical Family Case Studies
-              </h2>
+              </h3>
               <div className="space-y-4 text-slate-700 leading-relaxed text-sm md:text-base">
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                   {/* Case 1 */}
@@ -1122,9 +1122,9 @@ export default function TestamentaryTrustClauseClient() {
                   <Calculator className="w-3.5 h-3.5 text-[#C65378]" />
                   <span>INTERACTIVE DIAGNOSTIC CALCULATOR</span>
                 </div>
-                <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-white tracking-tight">
+                <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-white tracking-tight">
                   12. Diagnostic Tool: Minor Trust vs Guardianship Estimator
-                </h2>
+                </h3>
                 <p className="text-xs sm:text-sm text-white/80 leading-relaxed max-w-2xl">
                   Wondering whether your family situation requires a simple guardian nomination or an advanced
                   Testamentary Trust? Use our interactive diagnostic tool to calculate Section 29 court approval
@@ -1148,9 +1148,9 @@ export default function TestamentaryTrustClauseClient() {
                 <FileCheck className="w-4 h-4" />
                 <span>TRUSTEE SOP CHECKLIST</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 13. Trustee Operational Checklist: Post-Demise Action Plan
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Share this practical 10-point operational checklist with your nominated trustees so they know exact
                 post-demise legal procedures:
@@ -1217,9 +1217,9 @@ export default function TestamentaryTrustClauseClient() {
                 <HelpCircle className="w-4 h-4" />
                 <span>FREQUENTLY ASKED QUESTIONS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 Frequently Asked Questions: Testamentary Trust Clauses
-              </h2>
+              </h3>
               <div className="space-y-3 pt-2">
                 {FAQS.map((faq, idx) => {
                   const isOpen = openFaq === idx;
@@ -1257,9 +1257,9 @@ export default function TestamentaryTrustClauseClient() {
                 <Award className="w-4 h-4 text-[#C65378]" />
                 <span>LEGAL EXPERTISE &amp; INSTITUTIONAL BACKING</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 Legal Backing: Senior Succession Counsel &amp; AMA Solutions
-              </h2>
+              </h3>
               <div className="bg-white rounded-3xl border border-slate-200/90 p-6 sm:p-8 space-y-4 shadow-xs">
                 <div className="flex items-center gap-4">
                   <div className="w-14 h-14 rounded-full bg-rose-100 text-[#C65378] font-black text-lg flex items-center justify-center shrink-0">
@@ -1300,9 +1300,9 @@ export default function TestamentaryTrustClauseClient() {
                 <Scale className="w-4 h-4" />
                 <span>OFFICIAL PORTALS &amp; STATUTES</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 Statutory Citations: Governing Indian Acts &amp; Precedents
-              </h2>
+              </h3>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs text-slate-700">
                 <div className="p-3.5 rounded-xl bg-white border border-slate-200/90 shadow-xs space-y-1">
                   <div className="font-bold text-slate-900">Indian Trusts Act, 1882</div>

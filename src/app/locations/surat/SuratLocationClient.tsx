@@ -557,9 +557,9 @@ export default function SuratLocationClient({ faqs }: Props) {
                   <span>STATUTORY PROVISIONS</span>
                 </div>
                 {/* H2: 51 characters */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   1. Legal Framework: Will Drafting in Surat, Gujarat
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Testamentary succession in Surat is governed by the <strong>Indian Succession Act, 1925</strong> alongside the <strong>Registration Act, 1908</strong> and <strong>Gujarat Stamp Act, 1958</strong>.
                   Any individual of sound mind who has attained majority can draft a Will to determine the exact distribution of their self-acquired real estate, commercial businesses, company equity, bank balances, and precious assets.
@@ -622,9 +622,9 @@ export default function SuratLocationClient({ faqs }: Props) {
                   <span>REGISTRATION STATUS</span>
                 </div>
                 {/* H2: 52 characters */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   2. Is Will Registration Mandatory in Surat, Gujarat?
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Under Section 18(e) of the Registration Act, 1908, the registration of a Will is strictly <strong>optional</strong> across Gujarat.
                   An unregistered Will executed on plain white paper is legally valid and admissible in Indian courts, provided it complies with the formal execution rules under Section 63 of the Indian Succession Act.
@@ -683,9 +683,9 @@ export default function SuratLocationClient({ faqs }: Props) {
                   <span>GUJARAT HIGH COURT PRECEDENTS</span>
                 </div>
                 {/* H2: 55 characters */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   3. Surat Probate Rules: Gujarat Non-Presidency Town Law
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   A common concern among Surat business founders and property holders is whether court probate is mandatory to implement a Will.
                   The definitive legal answer is <strong>no</strong>.
@@ -739,9 +739,9 @@ export default function SuratLocationClient({ faqs }: Props) {
                   <span>SRO JURISDICTION DIRECTORY</span>
                 </div>
                 {/* H2: 51 characters */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   4. Surat Sub-Registrar Offices: SRO Zone Directory
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Surat district is administered through dedicated Sub-Registrar circles covering urban municipal zones and major industrial corridors.
                   Under Section 32 of the Registration Act, your Will can be registered at the SRO jurisdiction where you reside or where any part of your estate is located.
@@ -845,9 +845,9 @@ export default function SuratLocationClient({ faqs }: Props) {
                   <span>LOCAL AREA COVERAGE &amp; SRO HUBS</span>
                 </div>
                 {/* H2: 58 characters */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   5. Area-Wise Will Drafting Services Across Surat Localities
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Looking for legally verified <strong>Will drafting services in Vesu, Varachha, Ring Road, Adajan, or DREAM City</strong>?
                   From diamond trading bourses and bustling Ring Road textile markets to high-end residential towers in Vesu and waterfront properties in Adajan, our senior advocates provide specialized legal drafting, Garvi Gujarat portal appointment scheduling, and Sub-Registrar accompaniment across Surat:
@@ -1289,9 +1289,9 @@ export default function SuratLocationClient({ faqs }: Props) {
                   <span>STEP-BY-STEP PROCEDURE</span>
                 </div>
                 {/* H2: 51 characters */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   6. Step-by-Step Will Registration in Surat, Gujarat
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Registering a Will before a Surat Sub-Registrar follows a defined legal workflow under Gujarat Revenue Department rules.
                   Here is the verified 5-step procedure:
@@ -1379,9 +1379,9 @@ export default function SuratLocationClient({ faqs }: Props) {
                   <span>DOORSTEP SRO REGISTRATION</span>
                 </div>
                 {/* H2: 44 characters */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   7. Section 31 Doorstep Registration in Surat
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   For elderly, unwell, or mobility-impaired testators across Surat, navigating busy government complexes like Bahumali Bhavan or Mini Bazar can be stressful.
                   Under <strong>Section 31 of the Registration Act, 1908</strong>, the Sub-Registrar is legally empowered to attend the testator&apos;s private residence or healthcare facility to execute registration.
@@ -1436,9 +1436,9 @@ export default function SuratLocationClient({ faqs }: Props) {
                   <span>INTERACTIVE CHECKLIST</span>
                 </div>
                 {/* H2: 46 characters */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   8. Documents Checklist for Surat Sub-Registrar
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Prepare your essential documentation before attending the Sub-Registrar office.
                   You have completed <strong>{checkedCount} of {checklist.length}</strong> items:
@@ -1488,9 +1488,9 @@ export default function SuratLocationClient({ faqs }: Props) {
                   <span>COMMERCIAL &amp; PROPERTY SUCCESSION</span>
                 </div>
                 {/* H2: 52 characters */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   9. Surat Asset Succession: Diamonds, Textiles &amp; GIDC
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Succession planning in Surat requires careful structuring based on specific commercial and statutory regulations governing local businesses:
                 </p>
@@ -1543,9 +1543,9 @@ export default function SuratLocationClient({ faqs }: Props) {
                   <span>OFFICIAL CHARGES</span>
                 </div>
                 {/* H2: 52 characters */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   10. Official Gujarat Government Fees &amp; Stamp Charges
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Unlike property conveyance deeds that incur significant ad-valorem stamp duty and municipal surcharges, Wills are 100% exempt from stamp duty across Gujarat under the Gujarat Stamp Act, 1958.
                   Official government fees at Surat Sub-Registrar offices are strictly nominal:
@@ -1595,9 +1595,9 @@ export default function SuratLocationClient({ faqs }: Props) {
                   <span>PLANS &amp; PRICING</span>
                 </div>
                 {/* H2: 48 characters */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   11. Transparent Surat Will Packages &amp; Legal Fees
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Select the level of legal support tailored to your family&apos;s asset structure and business succession needs in Surat:
                 </p>
@@ -1740,9 +1740,9 @@ export default function SuratLocationClient({ faqs }: Props) {
                   <span>FREQUENTLY ASKED QUESTIONS</span>
                 </div>
                 {/* H2: 43 characters */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   12. Frequently Asked Questions: Surat Wills
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Authoritative answers to common questions regarding Will drafting, diamond business planning, and SRO registration in Surat:
                 </p>
@@ -1786,9 +1786,9 @@ export default function SuratLocationClient({ faqs }: Props) {
                   <span>STATUTORY CITATIONS</span>
                 </div>
                 {/* H2: 48 characters */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   13. Statutory References &amp; Gujarat Legal Portals
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   All WillDrafting protocols comply strictly with central statutes, Gujarat state legislation, and official registration systems:
                 </p>

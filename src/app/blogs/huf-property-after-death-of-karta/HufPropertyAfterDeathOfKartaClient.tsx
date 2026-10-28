@@ -406,9 +406,9 @@ export default function HufPropertyAfterDeathOfKartaClient() {
                 <Building className="w-4 h-4" />
                 <span>Legal Status &amp; Family Continuity</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
                 1. What Happens to HUF When the Karta Passes Away?
-              </h2>
+              </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed">
                 When the head of an Indian joint family passes away, grieving families often worry that the Hindu Undivided Family (HUF) is automatically terminated. Many fear that bank accounts will freeze permanently, businesses will close, or properties will enter legal limbo.
               </p>
@@ -435,9 +435,9 @@ export default function HufPropertyAfterDeathOfKartaClient() {
                 <Gavel className="w-4 h-4" />
                 <span>Succession to Kartaship</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
                 2. Who Becomes the New Karta: Rules &amp; Precedents
-              </h2>
+              </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed">
                 Under traditional Hindu Mitakshara jurisprudence, Kartaship is not an elective political office. It devolves by operation of law based on seniority among living coparceners.
               </p>
@@ -480,9 +480,9 @@ export default function HufPropertyAfterDeathOfKartaClient() {
                 <Calculator className="w-4 h-4" />
                 <span>Statutory Asset Division</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
                 3. HSA Section 6: Deemed Partition on Karta Death
-              </h2>
+              </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed">
                 Prior to 2005, an undivided coparcenary share devolved by the doctrine of survivorship (passing only to surviving male coparceners). Following the landmark 2005 amendment to the Hindu Succession Act, Section 6(3) abolished pure survivorship when female relatives or daughters survive.
               </p>
@@ -555,9 +555,9 @@ export default function HufPropertyAfterDeathOfKartaClient() {
                 <FileCheck className="w-4 h-4" />
                 <span>Testamentary Freedom Under HSA Sec 30</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
                 4. Can the Karta Will HUF Property Under Section 30?
-              </h2>
+              </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed">
                 This is one of the most frequently asked questions in Indian estate planning. Many patriarchs mistakenly draft Wills stating: <em>&quot;I give our entire ancestral family home to my younger son.&quot;</em>
               </p>
@@ -587,9 +587,9 @@ export default function HufPropertyAfterDeathOfKartaClient() {
                 <Scale className="w-4 h-4" />
                 <span>Asset Classification</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
                 5. HUF Property vs Karta Personal Assets Comparison
-              </h2>
+              </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed">
                 Before drafting a Will or distributing assets after a death, family members must strictly segregate HUF joint assets from the Karta&apos;s individual self-acquired estate.
               </p>
@@ -655,9 +655,9 @@ export default function HufPropertyAfterDeathOfKartaClient() {
                 <Sparkles className="w-4 h-4" />
                 <span>Visual Roadmap &amp; Flow Diagram</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
                 6. Visual Flowchart: HUF Assets &amp; Karta Succession
-              </h2>
+              </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed">
                 Review this visual blueprint illustrating how Karta succession, Section 6 deemed partition, and Section 30 testamentary bequests interact when the Karta passes away.
               </p>
@@ -767,9 +767,9 @@ export default function HufPropertyAfterDeathOfKartaClient() {
                 <Calculator className="w-4 h-4" />
                 <span>Simulation Tool</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
                 7. Interactive Coparcenary Share &amp; Partition Tool
-              </h2>
+              </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed">
                 Estimate how deemed partition divides your family&apos;s HUF assets upon the death of the Karta based on your exact family configuration.
               </p>
@@ -972,9 +972,9 @@ export default function HufPropertyAfterDeathOfKartaClient() {
                 <Landmark className="w-4 h-4" />
                 <span>Taxation &amp; Regulatory Compliance</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
                 8. Tax Implications: Income Tax Section 171 &amp; KYC
-              </h2>
+              </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed">
                 Navigating the Income Tax Act, 1961 is essential after the demise of the Karta. The HUF possesses a separate PAN and is treated as a distinct person under Section 2(31) of the Act.
               </p>
@@ -1014,9 +1014,9 @@ export default function HufPropertyAfterDeathOfKartaClient() {
                 <FileText className="w-4 h-4" />
                 <span>Practical Protocol</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
                 9. Step-by-Step SOP: Updating Karta Records &amp; Bank
-              </h2>
+              </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed">
                 Follow this 6-stage standard operating procedure to update institutions, bank accounts, and tax records smoothly following the Karta&apos;s death:
               </p>
@@ -1102,9 +1102,9 @@ export default function HufPropertyAfterDeathOfKartaClient() {
                 <AlertTriangle className="w-4 h-4" />
                 <span>Risk Prevention</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
                 10. Common HUF Property Mistakes Families Must Avoid
-              </h2>
+              </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed">
                 During stressful bereavement, families frequently commit avoidable procedural errors that trigger tax penalties or years of bitter partition litigation.
               </p>
@@ -1158,9 +1158,9 @@ export default function HufPropertyAfterDeathOfKartaClient() {
                 <Users className="w-4 h-4" />
                 <span>Case Studies</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
                 11. 4 Real Life Family Scenarios After Karta Death
-              </h2>
+              </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed">
                 Review these common scenarios illustrating how Indian succession statutes apply in real-world family arrangements:
               </p>
@@ -1218,9 +1218,9 @@ export default function HufPropertyAfterDeathOfKartaClient() {
                 <FileText className="w-4 h-4" />
                 <span>Drafting Strategy</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
                 12. How to Handle HUF Property in Your Last Will
-              </h2>
+              </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed">
                 When drafting a Will in India, precision in language prevents family disputes. Here is the recommended clause structure when addressing an undivided coparcenary interest:
               </p>
@@ -1264,9 +1264,9 @@ export default function HufPropertyAfterDeathOfKartaClient() {
                 <FileCheck className="w-4 h-4" />
                 <span>Interactive Audit Protocol</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
                 13. Post-Death HUF Legal &amp; Estate Audit Checklist
-              </h2>
+              </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed">
                 Use this interactive verification checklist to ensure your family fulfills all statutory obligations under the Hindu Succession Act and Income Tax Act.
               </p>
@@ -1346,9 +1346,9 @@ export default function HufPropertyAfterDeathOfKartaClient() {
                 <HelpCircle className="w-4 h-4" />
                 <span>Direct Answers</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
                 14. Frequently Asked Questions: HUF Karta Succession
-              </h2>
+              </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed">
                 Find clear answers to everyday questions regarding HUF assets, partition, and succession rights after the Karta&apos;s death:
               </p>
@@ -1433,9 +1433,9 @@ export default function HufPropertyAfterDeathOfKartaClient() {
                 <Scale className="w-4 h-4" />
                 <span>Statutory Authority &amp; Links</span>
               </div>
-              <h2 className="text-xl sm:text-2xl font-extrabold text-slate-900 tracking-tight leading-snug">
+              <h3 className="text-xl sm:text-2xl font-extrabold text-slate-900 tracking-tight leading-snug">
                 15. Statutory Authorities &amp; Landmark Judicial Precedents
-              </h2>
+              </h3>
               <div className="space-y-2 text-xs text-slate-600 leading-relaxed">
                 <p>
                   <strong>Statutory Enactments:</strong> Hindu Succession Act, 1956 (Section 6: Devolution of interest in coparcenary property; Section 8: General rules of succession in the case of males; Section 30: Testamentary disposition); Income Tax Act, 1961 (Section 171: Assessment after partition of a Hindu undivided family; Section 47(i): Transactions not regarded as transfer; Section 49(1): Cost of acquisition).

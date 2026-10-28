@@ -122,9 +122,9 @@ export default function FAQ() {
               </div>
 
               {/* Main Headline */}
-              <h2 className="text-[1.65rem] sm:text-[2.25rem] lg:text-[2.45rem] font-medium text-[#111827] leading-[1.12] tracking-tight mb-3">
+              <h3 className="text-[1.65rem] sm:text-[2.25rem] lg:text-[2.45rem] font-medium text-[#111827] leading-[1.12] tracking-tight mb-3">
                 Simple answers to common questions.
-              </h2>
+              </h3>
 
               <p className="text-[0.84rem] sm:text-[0.90rem] leading-[1.6] text-[#55636D] max-w-[420px] mb-4">
                 Everything you need to know about filling in your family and asset details, verifying your Will, and signing it at home.

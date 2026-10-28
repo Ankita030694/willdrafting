@@ -519,9 +519,9 @@ export default function MumbaiLocationClient({ faqs }: Props) {
                   <Scale className="w-4 h-4 text-[#C65378]" />
                   <span>STATUTORY PROVISIONS</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   1. Legal Framework for Will Drafting in Mumbai
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Writing a Will in Mumbai is governed by the <strong>Indian Succession Act, 1925</strong> and the <strong>Registration Act, 1908</strong>.
                   Any adult of sound mind who has reached 18 years can make a Will to distribute their assets.
@@ -583,9 +583,9 @@ export default function MumbaiLocationClient({ faqs }: Props) {
                   <FileQuestion className="w-4 h-4 text-[#C65378]" />
                   <span>REGISTRATION STATUS</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   2. Is Will Registration Compulsory in Mumbai?
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Under Section 18(e) of the Registration Act, 1908, registering a Will is <strong>optional</strong>.
                   An unregistered Will on plain white paper is legally valid in Indian courts if properly attested.
@@ -644,9 +644,9 @@ export default function MumbaiLocationClient({ faqs }: Props) {
                   <Landmark className="w-4 h-4 text-[#C65378]" />
                   <span>HIGH COURT JURISDICTION</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   3. Bombay High Court Probate Rules: Section 213
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Probate is an official court order certifying that a Will is genuine.
                   It grants the executor legal power to manage and distribute the estate.
@@ -719,9 +719,9 @@ export default function MumbaiLocationClient({ faqs }: Props) {
                   <MapPin className="w-4 h-4 text-[#C65378]" />
                   <span>SRO JURISDICTION DIRECTORY</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   4. Mumbai &amp; MMR Sub-Registrar Office Directory
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Will registration in Maharashtra is handled by the Department of Registration and Stamps (IGR Maharashtra).
                   Under Section 32 of the Registration Act, you can register your Will where you live or where your property is located.
@@ -823,9 +823,9 @@ export default function MumbaiLocationClient({ faqs }: Props) {
                   <MapPin className="w-4 h-4 text-[#C65378]" />
                   <span>LOCAL AREA COVERAGE &amp; SRO HUBS</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   5. Area-Wise Will Drafting Services Across Mumbai &amp; MMR Suburbs
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Looking for legally verified <strong>Will drafting services in Borivali, Bandra, Andheri, or South Mumbai</strong>? Cooperative society bye-laws, property ownership models, and Sub-Registrar jurisdictions vary significantly across Mumbai.
                   Whether you own a high-rise CHS apartment in Borivali, a commercial floor in BKC, an ancestral bungalow in Bandra, or a gated township home in Thane, our High Court advocates deliver tailored drafting, registration, and probate advisory:
@@ -1275,9 +1275,9 @@ export default function MumbaiLocationClient({ faqs }: Props) {
                   <FileText className="w-4 h-4 text-[#C65378]" />
                   <span>STEP-BY-STEP PROCEDURE</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   6. Step-by-Step Will Registration in Maharashtra
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Registering your Will in Mumbai follows five clear steps set by Maharashtra registration rules:
                 </p>
@@ -1363,9 +1363,9 @@ export default function MumbaiLocationClient({ faqs }: Props) {
                   <Home className="w-4 h-4 text-[#C65378]" />
                   <span>DOORSTEP REGISTRATION</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   7. Doorstep Will Registration for Senior Citizens
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Traffic and stairs at government offices can be difficult for seniors in Mumbai.
                   Under <strong>Section 31 of the Registration Act, 1908</strong>, the Sub-Registrar can visit your home, hospital, or care home to register your Will.
@@ -1419,9 +1419,9 @@ export default function MumbaiLocationClient({ faqs }: Props) {
                   <FileCheck className="w-4 h-4 text-[#C65378]" />
                   <span>INTERACTIVE CHECKLIST</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   8. Documents Checklist for Will Registration
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Prepare your paperwork before visiting the Sub-Registrar Office in Mumbai.
                   You have completed <strong>{checkedCount} of {checklist.length}</strong> items:
@@ -1470,9 +1470,9 @@ export default function MumbaiLocationClient({ faqs }: Props) {
                   <Building className="w-4 h-4 text-[#C65378]" />
                   <span>PROPERTY SUCCESSION RULES</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   9. Mumbai Real Estate: CHS Flats, SRA &amp; Parsi Homes
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Property succession in Mumbai depends on how your ownership is held.
                   Here is how a Will affects major Mumbai property types:
@@ -1525,9 +1525,9 @@ export default function MumbaiLocationClient({ faqs }: Props) {
                   <Stamp className="w-4 h-4 text-[#C65378]" />
                   <span>OFFICIAL CHARGES</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   10. Official Stamp Duty &amp; Registration Fees in Mumbai
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Property sale deeds incur high stamp duty in Mumbai.
                   In contrast, Wills are 100 percent exempt from stamp duty across Maharashtra under Article 64 of Schedule I of the Maharashtra Stamp Act.
@@ -1577,9 +1577,9 @@ export default function MumbaiLocationClient({ faqs }: Props) {
                   <Award className="w-4 h-4 text-[#C65378]" />
                   <span>PLANS &amp; PRICING</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   11. Transparent Will Packages &amp; Legal Fees
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Select the level of professional support best suited to your family&apos;s estate planning requirements across Mumbai and MMR:
                 </p>
@@ -1718,9 +1718,9 @@ export default function MumbaiLocationClient({ faqs }: Props) {
                   <HelpCircle className="w-4 h-4 text-[#C65378]" />
                   <span>FREQUENTLY ASKED QUESTIONS</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   12. Frequently Asked Questions: Mumbai Wills
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Accurate answers to practical legal questions about making, registering, and probating a Will in Mumbai:
                 </p>
@@ -1763,9 +1763,9 @@ export default function MumbaiLocationClient({ faqs }: Props) {
                   <Scale className="w-4 h-4 text-[#C65378]" />
                   <span>STATUTORY CITATIONS</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   13. Statutory References &amp; Maharashtra IGR Portals
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Our estate planning workflows follow codified Indian laws and Maharashtra state rules:
                 </p>

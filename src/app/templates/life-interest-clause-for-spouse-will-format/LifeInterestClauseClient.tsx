@@ -548,9 +548,9 @@ Upon my death, the absolute remainder title in the Schedule Property shall immed
                 <AlertTriangle className="w-4 h-4 text-amber-600" />
                 <span>JUDICIAL RISK ANALYSIS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 2. The Fatal Section 14(1) Trap: V. Tulasamma Doctrine Explained
-              </h2>
+              </h3>
               <div className="prose prose-slate max-w-none text-xs sm:text-sm text-slate-700 leading-relaxed space-y-3">
                 <p>
                   The single greatest pitfall in drafting an Indian Will is falling into the &quot;Section 14(1)
@@ -595,9 +595,9 @@ Upon my death, the absolute remainder title in the Schedule Property shall immed
                 <Gavel className="w-4 h-4" />
                 <span>LANDMARK SUPREME COURT DOCTRINE</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 3. Supreme Court Safe Harbor: Sadhu Singh &amp; Ranvir Dewan Rulings
-              </h2>
+              </h3>
               <div className="prose prose-slate max-w-none text-xs sm:text-sm text-slate-700 leading-relaxed space-y-3">
                 <p>
                   Recognizing the acute danger of eroding testamentary freedom under Section 30 of the Hindu Succession
@@ -670,9 +670,9 @@ Upon my death, the absolute remainder title in the Schedule Property shall immed
                 <Sliders className="w-4 h-4" />
                 <span>INTERACTIVE LEGAL BUILDER</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 4. Interactive Life Interest Clause Customizer &amp; Validator Tool
-              </h2>
+              </h3>
               <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                 Configure your family situation below. Our legal engine automatically integrates Section 14(2) safe
                 harbor declarations, strict non-alienation covenants, and Section 119 ISA vested remainders.
@@ -868,9 +868,9 @@ Upon my death, the absolute remainder title in the Schedule Property shall immed
                 <FileCheck className="w-4 h-4" />
                 <span>SUPREME COURT TESTED FORMAT</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 5. Supreme Court-Tested Section 14(2) Life Interest Clause Format
-              </h2>
+              </h3>
               <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                 This full master clause can be directly inserted into your Will draft. It integrates the rigorous
                 doctrines established in <em>Sadhu Singh</em> and <em>Ranvir Dewan</em>, providing complete legal immunity
@@ -927,9 +927,9 @@ Upon my death, the absolute remainder title in the Schedule Property shall immed
                 <Coins className="w-4 h-4" />
                 <span>FINANCIAL SECURITY FOR SURVIVING SPOUSE</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 6. Usufructuary Rental Rights &amp; Maintenance Allocation Clauses
-              </h2>
+              </h3>
               <div className="prose prose-slate max-w-none text-xs sm:text-sm text-slate-700 leading-relaxed space-y-3">
                 <p>
                   A critical error in many amateur Wills is conferring only a right of personal residence without
@@ -984,9 +984,9 @@ Upon my death, the absolute remainder title in the Schedule Property shall immed
                 <Building className="w-4 h-4" />
                 <span>LAND RECORDS &amp; PREVENTING FRAUD</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 7. Municipal Mutation Protocols &amp; SRO Non-Alienation Covenants
-              </h2>
+              </h3>
               <div className="prose prose-slate max-w-none text-xs sm:text-sm text-slate-700 leading-relaxed space-y-3">
                 <p>
                   Even with a perfect Will, administrative disputes can arise at municipal corporations (e.g., MCD,
@@ -1041,9 +1041,9 @@ Upon my death, the absolute remainder title in the Schedule Property shall immed
                 <Clock className="w-4 h-4" />
                 <span>INDIAN SUCCESSION ACT JURISPRUDENCE</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 8. Vested Remainder vs Contingent Interest: Section 119 ISA Rules
-              </h2>
+              </h3>
               <div className="prose prose-slate max-w-none text-xs sm:text-sm text-slate-700 leading-relaxed space-y-3">
                 <p>
                   To ensure that children are completely insulated against litigation, estate planners must understand
@@ -1089,9 +1089,9 @@ Upon my death, the absolute remainder title in the Schedule Property shall immed
                 <FileSpreadsheet className="w-4 h-4" />
                 <span>LEGAL MECHANISM COMPARISON</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 9. Legal Comparison: Section 14(1) vs 14(2) vs Absolute Bequests
-              </h2>
+              </h3>
               <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                 Review the structural, legal, and operational differences between spousal disposition methods under
                 Indian succession laws.
@@ -1161,9 +1161,9 @@ Upon my death, the absolute remainder title in the Schedule Property shall immed
                 <Building2 className="w-4 h-4" />
                 <span>REAL ESTATE LITIGATION PRECEDENTS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 10. Practical Case Studies: Delhi, Bengaluru &amp; Mumbai Wills
-              </h2>
+              </h3>
               <div className="space-y-4">
                 {/* Case 1: South Delhi */}
                 <div className="p-5 rounded-2xl bg-white border border-slate-200/90 shadow-xs space-y-2.5">
@@ -1248,9 +1248,9 @@ Upon my death, the absolute remainder title in the Schedule Property shall immed
                 <FileCheck className="w-4 h-4" />
                 <span>TESTAMENTARY PROTOCOL</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 11. Step-by-Step SOP: Execution, Witnessing &amp; SRO Registration
-              </h2>
+              </h3>
               <div className="space-y-3">
                 <div className="p-4 rounded-xl bg-white border border-slate-200 flex items-start gap-3">
                   <div className="w-7 h-7 rounded-full bg-rose-100 text-[#C65378] font-bold flex items-center justify-center shrink-0 text-xs">
@@ -1335,9 +1335,9 @@ Upon my death, the absolute remainder title in the Schedule Property shall immed
                 <Award className="w-4 h-4" />
                 <span>LEGAL EXPERTISE &amp; PRACTICE</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 12. Institutional Profile: Legal Excellence &amp; Trust Signals
-              </h2>
+              </h3>
               <div className="bg-white rounded-2xl border border-slate-200/90 p-6 sm:p-8 shadow-xs space-y-5">
                 <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-5 border-b border-slate-100">
                   <div className="space-y-1">
@@ -1395,9 +1395,9 @@ Upon my death, the absolute remainder title in the Schedule Property shall immed
                 <HelpCircle className="w-4 h-4" />
                 <span>DIRECT ANSWERS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 13. Frequently Asked Questions: Life Interest Spousal Wills
-              </h2>
+              </h3>
               <div className="space-y-3">
                 {FAQS.map((faq, idx) => {
                   const isOpen = openFaq === idx;
@@ -1435,9 +1435,9 @@ Upon my death, the absolute remainder title in the Schedule Property shall immed
                 <Scale className="w-4 h-4" />
                 <span>AUTHORITY &amp; REPOSITORIES</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 14. Statutory Citations &amp; High Court Precedent Registry
-              </h2>
+              </h3>
               <div className="bg-white rounded-2xl border border-slate-200/90 p-5 space-y-4 shadow-xs text-xs text-slate-600 leading-relaxed">
                 <p>
                   The legal principles and templates presented on this page are grounded in authoritative statutory

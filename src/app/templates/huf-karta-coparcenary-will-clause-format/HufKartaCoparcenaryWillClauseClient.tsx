@@ -427,9 +427,9 @@ The surviving coparceners shall be at liberty to continue the HUF entity under i
                 <Calculator className="w-4 h-4" />
                 <span>INTERACTIVE SIMULATOR</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 2. Interactive Tool: HUF Notional Partition Calculator
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Under Section 6(3) of the Act, your share is found by a legal fiction. This is called a notional partition.
                 The law assumes a partition happened just before death. Use this tool to compute your exact share.
@@ -688,9 +688,9 @@ The surviving coparceners shall be at liberty to continue the HUF entity under i
                 <Scale className="w-4 h-4" />
                 <span>ON-PAGE ASSET: CLAUSE COMPARATOR</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 3. Void vs Valid HUF Bequest Clauses Comparison Table
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Compare common drafting mistakes against the Supreme Court approved Section 30 wording.
                 Using incorrect phrasing leads to probate disputes and civil court injunctions.
@@ -789,9 +789,9 @@ The surviving coparceners shall be at liberty to continue the HUF entity under i
                 <BookOpen className="w-4 h-4" />
                 <span>STATUTORY ANALYSIS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 4. Section 30 Hindu Succession Act: Coparcenary Rights
-              </h2>
+              </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   Section 30 of the Hindu Succession Act grants full power to write a will for your HUF share. Before 1956,
@@ -822,9 +822,9 @@ The surviving coparceners shall be at liberty to continue the HUF entity under i
                 <Gavel className="w-4 h-4" />
                 <span>LANDMARK JUDICIAL PRECEDENT</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 5. Radhamma v. Muddukrishna: Landmark Supreme Court Ruling
-              </h2>
+              </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   In Radhamma v. Muddukrishna (2019), the Supreme Court settled this exact issue. A Hindu family head gave
@@ -870,9 +870,9 @@ The surviving coparceners shall be at liberty to continue the HUF entity under i
                 <FileText className="w-4 h-4" />
                 <span>LAWYER-VETTED CLAUSE TEMPLATES</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 6. Download Section 30 HUF Coparcenary Will Clause Format
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Copy and insert these lawyer-vetted statutory clauses directly into your Will. Each template is drafted
                 to withstand scrutiny in High Courts and probate proceedings.
@@ -1039,9 +1039,9 @@ The surviving coparceners shall be at liberty to continue the HUF entity under i
                 <ShieldCheck className="w-4 h-4" />
                 <span>POWERS &amp; RESTRICTIONS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 7. HUF Karta Powers: Self-Acquired vs Coparcenary Estate
-              </h2>
+              </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   Many family heads make a basic mistake. They think managing the HUF means they own it. During his lifetime,
@@ -1078,9 +1078,9 @@ The surviving coparceners shall be at liberty to continue the HUF entity under i
                 <Users className="w-4 h-4" />
                 <span>GENDER EQUALITY &amp; COPARCENARY</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 8. Daughter Coparcenary Rights Under Vineeta Sharma Ruling
-              </h2>
+              </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   In 2020, the Supreme Court delivered the historic Vineeta Sharma verdict. The Court ruled that daughters
@@ -1107,9 +1107,9 @@ The surviving coparceners shall be at liberty to continue the HUF entity under i
                 <CheckCircle2 className="w-4 h-4" />
                 <span>PRACTICAL DRAFTING SOP</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 9. Step-by-Step SOP: Drafting HUF Coparcenary Will Clauses
-              </h2>
+              </h3>
               <div className="space-y-4 text-xs sm:text-sm text-slate-700">
                 <div className="flex items-start gap-3 p-4 rounded-xl bg-white border border-slate-200">
                   <div className="w-7 h-7 rounded-full bg-slate-900 text-white font-black text-xs flex items-center justify-center shrink-0">
@@ -1159,9 +1159,9 @@ The surviving coparceners shall be at liberty to continue the HUF entity under i
                 <AlertCircle className="w-4 h-4" />
                 <span>LITIGATION PITFALLS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 10. Five Fatal HUF Bequest Mistakes That Invalidate Wills
-              </h2>
+              </h3>
               <div className="space-y-3 text-xs sm:text-sm text-slate-700">
                 <div className="p-4 rounded-xl bg-white border border-rose-200 space-y-1">
                   <strong className="text-rose-900 text-sm flex items-center gap-1.5">
@@ -1221,9 +1221,9 @@ The surviving coparceners shall be at liberty to continue the HUF entity under i
                 <HelpCircle className="w-4 h-4" />
                 <span>FREQUENTLY ASKED QUESTIONS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 11. Frequently Asked Questions: HUF Share Will Formats
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm">
                 Get direct legal answers to common questions about bequeathing HUF coparcenary interests in India.
               </p>
@@ -1265,9 +1265,9 @@ The surviving coparceners shall be at liberty to continue the HUF entity under i
                 <Landmark className="w-4 h-4" />
                 <span>AUTHORITY &amp; CITATIONS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 12. Statutory Citations &amp; High Court Precedents
-              </h2>
+              </h3>
 
               <div className="bg-white rounded-3xl border border-slate-200/90 shadow-sm p-5 sm:p-7 space-y-4 text-xs leading-relaxed">
                 <div>

@@ -372,6 +372,9 @@ export default function ServicePage() {
             SERVICES CARDS
             ========================================================================= */}
         <section className="w-full mb-16 sm:mb-20">
+          <h2 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-8">
+            Explore Our Will Drafting &amp; Succession Legal Services
+          </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
             {services.map((service, index) => (
               <div
@@ -384,7 +387,7 @@ export default function ServicePage() {
                       src={service.illustrationSrc}
                       alt={
                         service.title === "Online Will Drafting & Lawyer Review"
-                          ? "Online Will Drafting and Lawyer Verification Services under Indian Succession Act - AMA Legal Solutions"
+                          ? "Online Will Drafting and Lawyer Verification Services in India - WillDrafting.in"
                           : service.title === "Legal Heir"
                             ? "Official Legal Heir Certificate Documentation and Verification Services in India"
                             : service.title === "Relinquishment Deed"
@@ -396,15 +399,15 @@ export default function ServicePage() {
                                 : service.title === "Will Dispute & Probate Litigation"
                                   ? "Will Dispute and Probate Litigation Lawyers in India - AMA Legal Solutions"
                                   : service.title === "Letters of Administration Lawyer" || service.title === "Letters of Administration"
-                                  ? "Letters of Administration Court Representation and Advocate Petitions in India - AMA Legal Solutions"
+                                  ? "Letters of Administration Court Representation Services in India - WillDrafting.in"
                                   : service.title === "Family Settlement Deed & Partition"
-                                    ? "Family Settlement Agreement and Partition Deed Drafting Services in India - AMA Legal Solutions"
+                                    ? "Family Settlement Agreement and Partition Deed Services in India - WillDrafting.in"
                                     : service.title === "Private Family Trust Formation"
                                       ? "Private Family Trust Formation and Registration in India - AMA Legal Solutions"
                                       : service.title === "NRI & OCI Indian Will Drafting"
                                         ? "NRI and OCI Indian Will Drafting and Cross-Border Estate Planning Services in India"
                                         : !service.isComingSoon
-                                          ? `${service.title} in India - AMA Legal Solutions`
+                                          ? `${service.title} in India - AMA Legal Solutions`.slice(0, 85)
                                           : "Estate planning and Power of Attorney services in India coming soon"
                       }
                       width={1200} height={675}
@@ -420,9 +423,9 @@ export default function ServicePage() {
 
                 <div className="p-8 sm:p-10 flex flex-col flex-grow justify-between">
                   <div>
-                    <h2 className="text-2xl sm:text-[1.75rem] font-medium text-[#111827] mb-3 group-hover:text-[#C65378] transition-colors duration-200">
+                    <h3 className="text-2xl sm:text-[1.75rem] font-medium text-[#111827] mb-3 group-hover:text-[#C65378] transition-colors duration-200">
                       {service.title}
-                    </h2>
+                    </h3>
                     <p className="text-[#49585F] text-[15px] sm:text-[16px] leading-[1.6] mb-8 font-normal">
                       {service.description}
                     </p>
@@ -457,9 +460,9 @@ export default function ServicePage() {
             <div className="inline-flex items-center text-[#C65378] text-[0.75rem] font-bold tracking-[0.16em] uppercase mb-3">
               <span>Indian Personal Law Coverage</span>
             </div>
-            <h2 className="text-[1.85rem] sm:text-[2.4rem] lg:text-[2.85rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-4">
+            <h3 className="text-[1.85rem] sm:text-[2.4rem] lg:text-[2.85rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-4">
               How Will Drafting Works Across Every Personal Law in India
-            </h2>
+            </h3>
             <p className="text-[0.98rem] sm:text-[1.06rem] leading-[1.65] text-[#49585F]">
               Succession and testamentary limits in India depend on the personal law governing the testator and the location of the assets. Our platform and advocates at <span className="font-semibold text-[#111827]">AMA Legal Solutions</span> structure your Will in strict compliance with your governing statute:
             </p>

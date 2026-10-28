@@ -137,9 +137,9 @@ export default function EstateFolderSection() {
             </div>
 
             {/* Main Editorial Heading */}
-            <h2 className="text-[1.65rem] sm:text-[2.25rem] lg:text-[2.5rem] font-medium text-[#172228] leading-[1.15] tracking-tight mb-3">
+            <h3 className="text-[1.65rem] sm:text-[2.25rem] lg:text-[2.5rem] font-medium text-[#172228] leading-[1.15] tracking-tight mb-3">
               All Your Important Will &amp; Estate Documents in One Secure Place.
-            </h2>
+            </h3>
 
             {/* Subtitle */}
             <p className="text-[0.85rem] sm:text-[0.92rem] text-[#55636D] leading-relaxed max-w-xl mb-4 sm:mb-5">

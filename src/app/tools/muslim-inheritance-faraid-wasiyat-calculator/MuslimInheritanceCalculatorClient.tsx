@@ -1387,9 +1387,9 @@ export default function MuslimInheritanceCalculatorClient() {
                 <Sparkles className="w-4 h-4" />
                 <span>INTERACTIVE INHERITANCE CALCULATOR</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 2. Interactive Muslim Inheritance &amp; Wasiyat Calculator
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Configure your school of jurisprudence, estate valuation, deductions, and surviving family heirs below to compute precise Quranic shares, residuary allocations, and Wasiyat bequests.
               </p>
@@ -2117,9 +2117,9 @@ export default function MuslimInheritanceCalculatorClient() {
                 <Clock className="w-4 h-4" />
                 <span>ESTATE ADMINISTRATION SEQUENCE</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 3. Estate Order: Funeral, Debts, Mahr &amp; Net Residue
-              </h2>
+              </h3>
 
               <div className="space-y-4 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
@@ -2177,9 +2177,9 @@ export default function MuslimInheritanceCalculatorClient() {
                 <Percent className="w-4 h-4" />
                 <span>TESTAMENTARY LIMITS IN ISLAM</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 4. The 1/3rd Wasiyat Rule: Testamentary Bequest Limits
-              </h2>
+              </h3>
 
               <div className="space-y-4 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
@@ -2226,9 +2226,9 @@ export default function MuslimInheritanceCalculatorClient() {
                 <Scale className="w-4 h-4" />
                 <span>JURISPRUDENCE BREAKDOWN</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 5. Sunni Hanafi vs Shia Ithna Ashari Rules Compared
-              </h2>
+              </h3>
 
               <div className="space-y-4 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
@@ -2311,9 +2311,9 @@ export default function MuslimInheritanceCalculatorClient() {
                 <Users className="w-4 h-4" />
                 <span>FIXED QURANIC FRACTIONS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 6. Quranic Sharers: Zawil Furuz Fixed Portions
-              </h2>
+              </h3>
 
               <div className="space-y-4 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
@@ -2379,9 +2379,9 @@ export default function MuslimInheritanceCalculatorClient() {
                 <Scale className="w-4 h-4" />
                 <span>RESIDUE DISTRIBUTION</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 7. Residuaries: Asabah Inheritance &amp; Male-Female Ratio
-              </h2>
+              </h3>
 
               <div className="space-y-4 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
@@ -2409,9 +2409,9 @@ export default function MuslimInheritanceCalculatorClient() {
                 <AlertTriangle className="w-4 h-4" />
                 <span>CRITICAL SUCCESSION SCENARIO</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 8. The Daughter-Only Dilemma: Agnatic Heirs &amp; Solutions
-              </h2>
+              </h3>
 
               <div className="space-y-4 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
@@ -2453,9 +2453,9 @@ export default function MuslimInheritanceCalculatorClient() {
                 <Percent className="w-4 h-4" />
                 <span>MATHEMATICAL BALANCES</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 9. Mathematical Adjustments: Doctrine of Aul &amp; Radd
-              </h2>
+              </h3>
 
               <div className="space-y-4 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
@@ -2500,9 +2500,9 @@ export default function MuslimInheritanceCalculatorClient() {
                 <Sparkles className="w-4 h-4" />
                 <span>STRATEGIC ESTATE PLANNING</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 10. Lifetime Gift vs Will: Hiba for Complete Ownership
-              </h2>
+              </h3>
 
               <div className="space-y-4 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
@@ -2557,9 +2557,9 @@ export default function MuslimInheritanceCalculatorClient() {
                 <FileCheck className="w-4 h-4" />
                 <span>ESTATE LIQUIDATION PROTOCOL</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 11. Step-by-Step SOP: Settling a Muslim Estate in India
-              </h2>
+              </h3>
 
               <div className="space-y-4 mt-6">
                 <div className="flex items-start gap-4 p-5 rounded-2xl bg-white border border-slate-200/90 shadow-xs">
@@ -2629,9 +2629,9 @@ export default function MuslimInheritanceCalculatorClient() {
                 <Landmark className="w-4 h-4" />
                 <span>COURT INSTRUMENTS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 12. Succession Certificate vs Letters of Administration
-              </h2>
+              </h3>
 
               <div className="space-y-4 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
@@ -2684,9 +2684,9 @@ export default function MuslimInheritanceCalculatorClient() {
                 <Copy className="w-4 h-4" />
                 <span>ADVOCATE-DRAFTED LEGAL CLAUSES</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 13. Copy-Paste Legal Wasiyat Clauses &amp; Heir Consent
-              </h2>
+              </h3>
 
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Use these standard legal clauses in your Sharia-compliant Will or estate settlement deed:
@@ -2793,9 +2793,9 @@ export default function MuslimInheritanceCalculatorClient() {
                 <Award className="w-4 h-4" />
                 <span>INSTITUTIONAL TRUST &amp; EXPERTISE</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 14. Institutional Profile: Legal Excellence &amp; Trust
-              </h2>
+              </h3>
 
               <div className="rounded-3xl bg-[#172228] text-white p-6 sm:p-8 md:p-10 shadow-xl space-y-6">
                 <div className="max-w-3xl space-y-3">
@@ -2842,9 +2842,9 @@ export default function MuslimInheritanceCalculatorClient() {
                 <HelpCircle className="w-4 h-4" />
                 <span>CLEAR ANSWERS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 15. Frequently Asked Questions: Muslim Inheritance India
-              </h2>
+              </h3>
 
               <div className="mt-6 space-y-3">
                 {[
@@ -2923,9 +2923,9 @@ export default function MuslimInheritanceCalculatorClient() {
                 <BookOpen className="w-4 h-4" />
                 <span>LEGAL CITATIONS &amp; AUTHORITIES</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 16. Statutory Citations: Acts, Precedents &amp; Legal Texts
-              </h2>
+              </h3>
 
               <div className="bg-white rounded-2xl border border-slate-200/90 shadow-xs p-5 sm:p-6 space-y-3 text-xs sm:text-sm text-slate-600 leading-relaxed">
                 <p>

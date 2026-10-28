@@ -293,9 +293,9 @@ export default function MirrorWillsForCouplesClient() {
                 <Scale className="w-4 h-4 text-[#C65378]" />
                 <span>LEGAL FRAMEWORK</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
                 1. Statutory Distinction: Mirror Wills vs Risky Joint Wills
-              </h2>
+              </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed">
                 Many married couples in India ask if they can sign one single will together.
                 A single document may sound easy, but Indian law treats joint wills with great caution.
@@ -327,9 +327,9 @@ export default function MirrorWillsForCouplesClient() {
                 <Layers className="w-4 h-4 text-[#C65378]" />
                 <span>PORTFOLIO ALLOCATION</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
                 2. Asset Protection Matrix: Representative Couple Estate Plan
-              </h2>
+              </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed">
                 Most modern Indian families own many kinds of assets.
                 These include joint flats, single bank accounts, mutual funds, and gold.
@@ -389,9 +389,9 @@ export default function MirrorWillsForCouplesClient() {
                 <Scale className="w-4 h-4 text-[#C65378]" />
                 <span>COMPARATIVE MATRIX</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
                 3. Comparative Legal Analysis: Mirror Will vs Joint vs Mutual
-              </h2>
+              </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed">
                 Many people do not know the difference between mirror wills, joint wills, and mutual wills.
                 Each type works very differently in India.
@@ -458,9 +458,9 @@ export default function MirrorWillsForCouplesClient() {
                 <AlertTriangle className="w-4 h-4 text-[#C65378]" />
                 <span>LEGAL PITFALLS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
                 4. Why Joint Wills Are Legally Vulnerable under Indian Law
-              </h2>
+              </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed">
                 Many couples believe that writing one joint will saves time and money.
                 However, Indian court cases show the opposite.
@@ -522,9 +522,9 @@ export default function MirrorWillsForCouplesClient() {
                 <FileCheck className="w-4 h-4 text-[#C65378]" />
                 <span>VISUAL BLUEPRINT</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
                 5. Visual Blueprint: Anatomy of Coordinated Indian Mirror Wills
-              </h2>
+              </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed">
                 Visualizing the legal structure of Mirror Wills ensures no essential protection is overlooked.
                 Click on the diagram below to inspect the structure, attestation blocks, and clauses in high resolution.
@@ -565,9 +565,9 @@ export default function MirrorWillsForCouplesClient() {
                 <Clock className="w-4 h-4 text-[#C65378]" />
                 <span>EXECUTION WORKFLOW</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
                 6. Step-by-Step SOP: Executing Dual Mirror Wills in India
-              </h2>
+              </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed">
                 Writing mirror wills requires two steps: matching the plans and signing separate papers.
                 Follow these six simple steps to ensure your wills are legally sound.
@@ -666,9 +666,9 @@ export default function MirrorWillsForCouplesClient() {
                 <ShieldCheck className="w-4 h-4 text-[#C65378]" />
                 <span>ESSENTIAL DRAFTING CLAUSES</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
                 7. Key Protective Clauses Every Married Couple Must Include
-              </h2>
+              </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed">
                 A strong mirror will protects your family from legal headaches.
                 Make sure your lawyer includes these four vital terms:
@@ -758,9 +758,9 @@ export default function MirrorWillsForCouplesClient() {
                 <AlertTriangle className="w-4 h-4 text-[#C65378]" />
                 <span>RISK MANAGEMENT</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
                 8. Statutory Risk Matrix: Blended Families &amp; Inherited Assets
-              </h2>
+              </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed">
                 Standard mirror wills work great when both spouses have the same children.
                 However, for blended families or ancestral property, you need extra care.
@@ -815,9 +815,9 @@ export default function MirrorWillsForCouplesClient() {
                 <Calendar className="w-4 h-4 text-[#C65378]" />
                 <span>SUCCESSION TIMELINE</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
                 9. Procedural Timeline: First Death to Final Asset Distribution
-              </h2>
+              </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed">
                 Knowing how mirror wills work over time gives couples peace of mind.
                 Here is the sequence of events from signing to final transfer.
@@ -883,9 +883,9 @@ export default function MirrorWillsForCouplesClient() {
                 <Users className="w-4 h-4 text-[#C65378]" />
                 <span>REAL-WORLD APPLICATION</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
                 10. Specialized Scenarios: Business Owners, NRIs &amp; Minor Heirs
-              </h2>
+              </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed">
                 Different families have different needs.
                 Here is how mirror wills help four common types of couples:
@@ -948,9 +948,9 @@ export default function MirrorWillsForCouplesClient() {
                 <Award className="w-4 h-4 text-[#C65378]" />
                 <span>PLANS &amp; PRICING</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
                 11. AMA Couple Will Service: Advocate Drafting &amp; Transparent Fees
-              </h2>
+              </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed">
                 We offer clear, fixed pricing with no hidden charges.
                 Choose the legal drafting plan that fits your family best.
@@ -1079,9 +1079,9 @@ export default function MirrorWillsForCouplesClient() {
                 <HelpCircle className="w-4 h-4 text-[#C65378]" />
                 <span>DIRECT ANSWERS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
                 12. Frequently Asked Questions: Mirror Wills for Indian Couples
-              </h2>
+              </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed">
                 Clear answers to questions couples often ask about Indian wills.
               </p>
@@ -1164,9 +1164,9 @@ export default function MirrorWillsForCouplesClient() {
                 <Landmark className="w-4 h-4 text-[#C65378]" />
                 <span>LEGAL CITATIONS &amp; VERIFIED SOURCES</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
                 13. Statutory Authority Citations &amp; Official Judicial Precedents
-              </h2>
+              </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed">
                 This legal analysis is grounded in codified Indian succession statutes and binding Supreme Court decisions:
               </p>

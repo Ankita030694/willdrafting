@@ -106,9 +106,9 @@ export default function WillDisputeInteractive() {
           <Scale className="w-4 h-4" />
           <span>Interactive Litigation Architecture</span>
         </div>
-        <h2 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-3">
+        <h3 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-3">
           Dual-Track Legal Hub: Challenging vs Defending a Will
-        </h2>
+        </h3>
         <p className="text-[0.98rem] sm:text-[1.05rem] leading-[1.65] text-[#49585F]">
           Whether you need to challenge a fraudulent testamentary instrument or defend a genuine Will against mischievous caveats, AMA Legal Solutions deploys dedicated High Court litigation advocates:
         </p>

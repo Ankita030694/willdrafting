@@ -561,9 +561,9 @@ Official Seal & Registration Stamp: [Seal]`;
                 <Sparkles className="w-4 h-4" />
                 <span>INTERACTIVE RISK AUDIT TOOL</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 2. Interactive Will Contest &amp; Challenge Risk Calculator
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Select your parameters below to evaluate how an Indian civil court or probate bench would
                 view your Will under the landmark <em>Kavita Kanwar</em> and <em>Shivakumar</em> precedents.
@@ -1130,9 +1130,9 @@ Official Seal & Registration Stamp: [Seal]`;
                 <Scale className="w-4 h-4" />
                 <span>LANDMARK JUDICIAL PRECEDENTS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 3. Kavita Kanwar &amp; Shivakumar: Suspicious Circumstances
-              </h2>
+              </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   In a probate or civil suit regarding a Will, Indian courts do not act as ordinary civil
@@ -1179,9 +1179,9 @@ Official Seal & Registration Stamp: [Seal]`;
                 <Gavel className="w-4 h-4" />
                 <span>LEGAL GROUNDS OF ACTION</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 4. Top 6 Grounds for Challenging a Will in Indian Court
-              </h2>
+              </h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 {[
                   {
@@ -1232,9 +1232,9 @@ Official Seal & Registration Stamp: [Seal]`;
                 <Lock className="w-4 h-4" />
                 <span>EVIDENTIARY VALUE</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 5. Unregistered vs Registered Wills: Court Evidentiary Weight
-              </h2>
+              </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   Under Section 18(e) of the Registration Act, 1908, the registration of a Will in India is
@@ -1280,9 +1280,9 @@ Official Seal & Registration Stamp: [Seal]`;
                 <Eye className="w-4 h-4" />
                 <span>STATUTORY FORFEITURE</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 6. Attestation Pitfalls: Section 67 Void Bequest Hazards
-              </h2>
+              </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   One of the most dangerous, irreversible traps in Indian Will drafting involves <strong>Section 67
@@ -1314,9 +1314,9 @@ Official Seal & Registration Stamp: [Seal]`;
                 <Video className="w-4 h-4" />
                 <span>EVIDENTIARY FORTIFICATION</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 7. Video Recording &amp; Medical Fitness Certification Protocol
-              </h2>
+              </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   To make a Will practically unchallengeable in court, succession litigators recommend combining
@@ -1358,9 +1358,9 @@ Official Seal & Registration Stamp: [Seal]`;
                 <Scale className="w-4 h-4" />
                 <span>JUDICIAL MATRIX</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 8. Comparison Table: Grounds of Challenge vs Standard of Proof
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 How Indian courts allocate the burden of proof when legal heirs challenge a Will:
               </p>
@@ -1417,9 +1417,9 @@ Official Seal & Registration Stamp: [Seal]`;
                 <FileText className="w-4 h-4" />
                 <span>ACTIONABLE SOP</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 9. Step-by-Step SOP: 5-Point Will Fortification Protocol
-              </h2>
+              </h3>
               <div className="space-y-4">
                 {[
                   {
@@ -1470,9 +1470,9 @@ Official Seal & Registration Stamp: [Seal]`;
                 <TrendingUp className="w-4 h-4" />
                 <span>REAL-WORLD VERDICTS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 10. Practical Case Studies: Supreme Court &amp; High Court Rulings
-              </h2>
+              </h3>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 {/* Case 1 */}
@@ -1545,9 +1545,9 @@ Official Seal & Registration Stamp: [Seal]`;
                 <FileCheck className="w-4 h-4" />
                 <span>VERIFIED LEGAL CLAUSES</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 11. Copy-Pasteable Legal Recital Clauses &amp; Fortification Checklist
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Copy and paste these verified clauses into your draft to safeguard against judicial suspicion:
               </p>
@@ -1665,9 +1665,9 @@ Official Seal & Registration Stamp: [Seal]`}
                 <ShieldCheck className="w-4 h-4" />
                 <span>INSTITUTIONAL CREDENTIALS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 12. Legal Backing &amp; Senior Succession Advocate Profile
-              </h2>
+              </h3>
               <div className="p-6 rounded-3xl bg-white border border-slate-200/90 shadow-xs space-y-4">
                 <div className="flex flex-col sm:flex-row sm:items-center gap-4">
                   <div className="w-16 h-16 rounded-full bg-rose-100 text-[#C65378] font-black text-xl flex items-center justify-center shrink-0">
@@ -1710,9 +1710,9 @@ Official Seal & Registration Stamp: [Seal]`}
                 <BookOpen className="w-4 h-4" />
                 <span>FREQUENTLY ASKED QUESTIONS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 13. Frequently Asked Questions: Will Contest Risks
-              </h2>
+              </h3>
               <div className="space-y-3">
                 {FAQS.map((faq, index) => {
                   const isOpen = openFaq === index;
@@ -1750,9 +1750,9 @@ Official Seal & Registration Stamp: [Seal]`}
                 <ExternalLink className="w-4 h-4" />
                 <span>STATUTORY CITATIONS &amp; PORTALS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 14. Statutory Citations &amp; Official Judicial Portals
-              </h2>
+              </h3>
               <div className="p-5 rounded-2xl bg-white border border-slate-200 space-y-3 text-xs">
                 <div>
                   <div className="font-extrabold text-slate-900 mb-1">

@@ -1091,9 +1091,9 @@ export default function GiftDeedCalculatorClient() {
                 <Sparkles className="w-4 h-4" />
                 <span>INTERACTIVE STAMP DUTY CALCULATOR</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 2. Interactive Stamp Duty &amp; Registration Fee Calculator
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Select your property state, family relationship, and property valuation to
                 instantly calculate exact stamp duty, registration fees, and compare your financial
@@ -1450,9 +1450,9 @@ export default function GiftDeedCalculatorClient() {
                 <Landmark className="w-4 h-4" />
                 <span>STATE STAMP SCHEDULES</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 3. State Stamp Duty Schedules: Blood Relative Concessions
-              </h2>
+              </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   Under the Indian Constitution (Seventh Schedule, Entry 63 of the State List), stamp
@@ -1588,9 +1588,9 @@ export default function GiftDeedCalculatorClient() {
                 <Gavel className="w-4 h-4" />
                 <span>JUDICIAL PRECEDENTS &amp; ELDER SECURITY</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 4. Landmark Precedents: Senior Citizens Act &amp; Revocation
-              </h2>
+              </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   The most severe risk of executing a Gift Deed is legal finality. Under Section 126
@@ -1638,9 +1638,9 @@ export default function GiftDeedCalculatorClient() {
                 <Percent className="w-4 h-4" />
                 <span>INCOME TAX &amp; CAPITAL GAINS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 5. Income Tax Treatment: Section 56(2)(x) &amp; Capital Gains
-              </h2>
+              </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   Both Gift Deeds and Wills enjoy favorable income tax exemptions at the moment of
@@ -1700,9 +1700,9 @@ export default function GiftDeedCalculatorClient() {
                 <Layers className="w-4 h-4" />
                 <span>COMPREHENSIVE COMPARISON TABLE</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 6. Structural Comparison Table: Gift Deed vs Will vs Release
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Compare all three instruments side-by-side across statutory parameters, costs,
                 revocability, and operational timing.
@@ -1843,9 +1843,9 @@ export default function GiftDeedCalculatorClient() {
                 <Clock className="w-4 h-4" />
                 <span>VERIFIED PRACTICE PROTOCOL</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 7. Step-by-Step SOP: Choosing the Right Property Transfer Mode
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Follow this verified 5-step protocol prepared by AMA Legal Solutions senior estate
                 advocates before signing any deed or executing a property transfer.
@@ -1944,9 +1944,9 @@ export default function GiftDeedCalculatorClient() {
                 <Users className="w-4 h-4" />
                 <span>REAL FAMILY CASE STUDIES</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 8. Real Family Scenarios: Maharashtra, UP, Delhi &amp; Karnataka
-              </h2>
+              </h3>
 
               <div className="space-y-4 pt-1">
                 {/* Case 1: Pune */}
@@ -2014,9 +2014,9 @@ export default function GiftDeedCalculatorClient() {
                 <FileText className="w-4 h-4" />
                 <span>COPY-PASTEABLE STATUTORY CLAUSES</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 9. Legal Clause Templates: Senior Citizen Gift vs Will Clause
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Use these verified statutory clauses drafted by AMA Legal Solutions senior advocates
                 to protect your legal rights.
@@ -2097,9 +2097,9 @@ export default function GiftDeedCalculatorClient() {
                 <Award className="w-4 h-4" />
                 <span>LEGAL EXPERTISE &amp; PRACTICE BENCH</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 10. Advocate Profile: AMA Legal Solutions Estate Advisory
-              </h2>
+              </h3>
               <div className="bg-white rounded-2xl border border-slate-200/90 p-6 sm:p-8 shadow-xs space-y-5">
                 <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-5 border-b border-slate-100">
                   <div className="space-y-1">
@@ -2157,9 +2157,9 @@ export default function GiftDeedCalculatorClient() {
                 <HelpCircle className="w-4 h-4" />
                 <span>DIRECT ANSWERS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 11. Frequently Asked Questions: Gift Deed vs Will Stamp Duty
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Clear layman explanations for the most common questions raised by Indian families
                 and senior citizens regarding property transfer duties.
@@ -2199,9 +2199,9 @@ export default function GiftDeedCalculatorClient() {
                 <Landmark className="w-4 h-4" />
                 <span>STATUTORY CITATIONS &amp; PORTALS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 12. Statutory Citations &amp; Official State Stamp Duty Portals
-              </h2>
+              </h3>
 
               <div className="bg-white rounded-2xl border border-slate-200/90 p-6 sm:p-7 shadow-xs space-y-4 text-xs">
                 <div className="font-extrabold text-slate-900 mb-1">

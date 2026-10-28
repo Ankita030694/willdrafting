@@ -558,9 +558,9 @@ WHY THIS CAUSES PROBLEMS UNDER INDIAN LAW:
                 <Gavel className="w-3.5 h-3.5" />
                 <span>Judicial Authority</span>
               </div>
-              <h2 className="text-xl sm:text-2xl font-bold text-[#172228]">
+              <h3 className="text-xl sm:text-2xl font-bold text-[#172228]">
                 2. Supreme Court Precedents: Kochu Govindan &amp; Dilharshankar
-              </h2>
+              </h3>
               <p className="text-sm sm:text-base text-[#49585F] leading-relaxed">
                 The Supreme Court of India has examined joint and mutual wills in two landmark
                 cases. These judgments show why separate Mirror Wills are the safest path for
@@ -621,9 +621,9 @@ WHY THIS CAUSES PROBLEMS UNDER INDIAN LAW:
                 <Layers className="w-3.5 h-3.5" />
                 <span>Feature Comparison</span>
               </div>
-              <h2 className="text-xl sm:text-2xl font-bold text-[#172228]">
+              <h3 className="text-xl sm:text-2xl font-bold text-[#172228]">
                 3. Comparative Analysis: Joint vs Mutual vs Mirror Wills
-              </h2>
+              </h3>
               <p className="text-sm sm:text-base text-[#49585F] leading-relaxed">
                 Before choosing a format, see how these three options compare in Indian civil
                 courts, land offices, and banks.
@@ -709,9 +709,9 @@ WHY THIS CAUSES PROBLEMS UNDER INDIAN LAW:
                 <AlertTriangle className="w-3.5 h-3.5" />
                 <span>The Joint Will Trap</span>
               </div>
-              <h2 className="text-xl sm:text-2xl font-bold text-[#172228]">
+              <h3 className="text-xl sm:text-2xl font-bold text-[#172228]">
                 4. Why Indian Couples Need Paired Mirror Wills Instead
-              </h2>
+              </h3>
               <p className="text-sm sm:text-base text-[#49585F] leading-relaxed">
                 Generic joint Will templates found online cause serious practical problems in India.
                 Here are four reasons why married couples should write two separate Mirror Wills
@@ -783,9 +783,9 @@ WHY THIS CAUSES PROBLEMS UNDER INDIAN LAW:
                 <FileCheck className="w-3.5 h-3.5" />
                 <span>Copy-Paste Legal Templates</span>
               </div>
-              <h2 className="text-xl sm:text-2xl font-bold text-[#172228]">
+              <h3 className="text-xl sm:text-2xl font-bold text-[#172228]">
                 5. Free Paired Mirror Will Formats: Husband &amp; Wife Drafts
-              </h2>
+              </h3>
               <p className="text-sm sm:text-base text-[#49585F] leading-relaxed">
                 Use these verified templates to prepare separate Mirror Wills on plain white paper.
                 Each partner must execute their own document before two independent adult
@@ -908,9 +908,9 @@ WHY THIS CAUSES PROBLEMS UNDER INDIAN LAW:
                 <ShieldCheck className="w-3.5 h-3.5" />
                 <span>Drafting Anatomy</span>
               </div>
-              <h2 className="text-xl sm:text-2xl font-bold text-[#172228]">
+              <h3 className="text-xl sm:text-2xl font-bold text-[#172228]">
                 6. Key Clauses Every Spousal Will Must Include in India
-              </h2>
+              </h3>
               <p className="text-sm sm:text-base text-[#49585F] leading-relaxed">
                 To protect your surviving partner from future disputes, include these five core
                 clauses in your Mirror Wills:
@@ -991,9 +991,9 @@ WHY THIS CAUSES PROBLEMS UNDER INDIAN LAW:
                 <Calculator className="w-3.5 h-3.5" />
                 <span>Couple Will Assessment Tool</span>
               </div>
-              <h2 className="text-xl sm:text-2xl font-bold text-[#172228]">
+              <h3 className="text-xl sm:text-2xl font-bold text-[#172228]">
                 7. Interactive Assessment: Find the Right Will for Couples
-              </h2>
+              </h3>
               <p className="text-sm sm:text-base text-[#49585F] leading-relaxed">
                 Answer three quick questions to see whether standard Mirror Wills or a Life
                 Interest clause fits your family:
@@ -1183,9 +1183,9 @@ WHY THIS CAUSES PROBLEMS UNDER INDIAN LAW:
                 <Clock className="w-3.5 h-3.5" />
                 <span>Execution Protocol</span>
               </div>
-              <h2 className="text-xl sm:text-2xl font-bold text-[#172228]">
+              <h3 className="text-xl sm:text-2xl font-bold text-[#172228]">
                 8. Step-by-Step SOP: Executing Your Mirror Wills Legally
-              </h2>
+              </h3>
               <p className="text-sm sm:text-base text-[#49585F] leading-relaxed">
                 Follow these six steps to execute your spousal Wills properly under Section 63 of
                 the Indian Succession Act:
@@ -1291,9 +1291,9 @@ WHY THIS CAUSES PROBLEMS UNDER INDIAN LAW:
                 <ShieldAlert className="w-3.5 h-3.5" />
                 <span>Risk Prevention</span>
               </div>
-              <h2 className="text-xl sm:text-2xl font-bold text-[#172228]">
+              <h3 className="text-xl sm:text-2xl font-bold text-[#172228]">
                 9. Common Mistakes to Avoid in Spousal Will Drafting
-              </h2>
+              </h3>
               <p className="text-sm sm:text-base text-[#49585F] leading-relaxed">
                 Avoid these four common mistakes when preparing spousal Wills in India:
               </p>
@@ -1387,9 +1387,9 @@ WHY THIS CAUSES PROBLEMS UNDER INDIAN LAW:
                 <Award className="w-3.5 h-3.5" />
                 <span>Legal Authority</span>
               </div>
-              <h2 className="text-xl sm:text-2xl font-bold text-[#172228]">
+              <h3 className="text-xl sm:text-2xl font-bold text-[#172228]">
                 10. Professional Legal Support from AMA Legal Solutions
-              </h2>
+              </h3>
               <p className="text-sm sm:text-base text-[#49585F] leading-relaxed">
                 WillDrafting.in is supported by <strong>AMA Legal Solutions</strong>, an Indian law
                 firm focused on estate planning, family trusts, High Court probate petitions, and
@@ -1434,9 +1434,9 @@ WHY THIS CAUSES PROBLEMS UNDER INDIAN LAW:
                 <HelpCircle className="w-3.5 h-3.5" />
                 <span>Clear Answers</span>
               </div>
-              <h2 className="text-xl sm:text-2xl font-bold text-[#172228]">
+              <h3 className="text-xl sm:text-2xl font-bold text-[#172228]">
                 11. Frequently Asked Questions on Spousal Wills in India
-              </h2>
+              </h3>
               <p className="text-sm sm:text-base text-[#49585F] leading-relaxed">
                 Find clear answers to common questions about drafting spousal wills, mirror
                 instruments, and protecting joint family assets in India.
@@ -1476,9 +1476,9 @@ WHY THIS CAUSES PROBLEMS UNDER INDIAN LAW:
                 <Landmark className="w-3.5 h-3.5" />
                 <span>Statutory Authority</span>
               </div>
-              <h2 className="text-xl sm:text-2xl font-bold text-[#172228]">
+              <h3 className="text-xl sm:text-2xl font-bold text-[#172228]">
                 12. Statutory Provisions &amp; Legal Citation Directory
-              </h2>
+              </h3>
               <p className="text-sm sm:text-base text-[#49585F] leading-relaxed">
                 Review the primary statutory provisions and court authorities governing spousal
                 wills and property succession in India:

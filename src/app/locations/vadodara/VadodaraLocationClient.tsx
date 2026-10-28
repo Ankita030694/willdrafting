@@ -529,9 +529,9 @@ export default function VadodaraLocationClient({ faqs }: Props) {
                 <span className="text-xs font-mono tracking-widest uppercase font-bold text-[#C65378]">
                   SECTION 01
                 </span>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   1. Will Drafting &amp; Legal Framework in Vadodara
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Vadodara (historically known as Baroda) is recognized as the cultural and educational capital of Gujarat, while simultaneously hosting massive petrochemical, pharmaceutical, and engineering industrial hubs. From ancestral residential properties in the historic walled city pols of Mandvi and Dandia Bazar, to sprawling bungalows in Alkapuri and Old Padra Road, and contemporary high-rise townships across Gotri, Vasna-Bhayli, and Sevasi, estate planning in Vadodara demands nuanced legal attention.
                 </p>
@@ -568,9 +568,9 @@ export default function VadodaraLocationClient({ faqs }: Props) {
                 <span className="text-xs font-mono tracking-widest uppercase font-bold text-[#C65378]">
                   SECTION 02
                 </span>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   2. Is Will Registration Mandatory in Vadodara?
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Under Indian jurisprudence, making and registering a Will is governed by the Indian Succession Act, 1925 and the Registration Act, 1908. In Vadodara, registration is legally optional under Section 18(e) of the Registration Act, 1908. A handwritten or typed Will executed on standard A4 paper, signed by the testator in the physical presence of two independent adult attesting witnesses, is legally enforceable from the day of execution.
                 </p>
@@ -622,9 +622,9 @@ export default function VadodaraLocationClient({ faqs }: Props) {
                 <span className="text-xs font-mono tracking-widest uppercase font-bold text-[#C65378]">
                   SECTION 03
                 </span>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   3. Vadodara Probate Rules: Non-Presidency Town Law
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   A common misconception among property owners in Vadodara is that every Will must be probated by a court before assets can be transferred. Under Indian law, probate is the formal process by which a competent civil court certifies the authenticity of a Will. However, statutory provisions strictly distinguish historical presidential cities from other territories.
                 </p>
@@ -665,9 +665,9 @@ export default function VadodaraLocationClient({ faqs }: Props) {
                 <span className="text-xs font-mono tracking-widest uppercase font-bold text-[#C65378]">
                   SECTION 04
                 </span>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   4. HUF Assets &amp; Chemical MSME Succession in Vadodara
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Vadodara is celebrated for its multi-generational commercial and industrial prosperity. Managing the succession of family-owned chemical processing plants, pharmaceutical formulations, engineering workshops, and ancestral Hindu Undivided Family (HUF) estates requires specialized testamentary drafting.
                 </p>
@@ -714,9 +714,9 @@ export default function VadodaraLocationClient({ faqs }: Props) {
                 <span className="text-xs font-mono tracking-widest uppercase font-bold text-[#C65378]">
                   SECTION 05
                 </span>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   5. Vadodara Sub-Registrar Offices: District Directory
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Will registration in Vadodara is administered by the Inspector General of Registration Gujarat. You can register your Will at any Sub-Registrar office having territorial jurisdiction over your permanent residence or where your primary immovable property is situated.
                 </p>
@@ -816,9 +816,9 @@ export default function VadodaraLocationClient({ faqs }: Props) {
                 <span className="text-xs font-mono tracking-widest uppercase font-bold text-[#C65378]">
                   SECTION 06
                 </span>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   6. Area-Wise Will Drafting Across Vadodara Localities
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Looking for legally verified <strong>Will drafting services in Alkapuri, Gotri, Manjalpur, or Karelibaug</strong>? Property categories across Vadodara range from luxury bungalows and gated villa schemes to heritage pol residences, VUDA plotted layouts, and GIDC industrial plots.
                   Our senior advocates provide verified legal drafting, Garvi Gujarat portal slot booking, and Sub-Registrar accompaniment across all key residential and industrial clusters:
@@ -1158,9 +1158,9 @@ export default function VadodaraLocationClient({ faqs }: Props) {
                 <span className="text-xs font-mono tracking-widest uppercase font-bold text-[#C65378]">
                   SECTION 07
                 </span>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   7. Step-by-Step Garvi Gujarat Portal Will Registration
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Registering a Will in Vadodara is performed through the Gujarat government&apos;s digital land and property registry portal (Garvi Gujarat). Follow this tested 5-step Standard Operating Procedure:
                 </p>
@@ -1250,9 +1250,9 @@ export default function VadodaraLocationClient({ faqs }: Props) {
                 <span className="text-xs font-mono tracking-widest uppercase font-bold text-[#C65378]">
                   SECTION 08
                 </span>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   8. Section 31 Doorstep Registration for Seniors
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   For senior citizens, bedridden individuals, hospitalized testators, or business executives unable to navigate crowded government offices, Indian law provides a statutory remedy for registration at personal residences.
                 </p>
@@ -1289,9 +1289,9 @@ export default function VadodaraLocationClient({ faqs }: Props) {
                 <span className="text-xs font-mono tracking-widest uppercase font-bold text-[#C65378]">
                   SECTION 09
                 </span>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   9. Documents Checklist for Gujarat Sub-Registrar
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Interactive checklist of statutory documents required when presenting a Will for registration at any Vadodara Sub-Registrar Office:
                 </p>
@@ -1347,9 +1347,9 @@ export default function VadodaraLocationClient({ faqs }: Props) {
                 <span className="text-xs font-mono tracking-widest uppercase font-bold text-[#C65378]">
                   SECTION 10
                 </span>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   10. Vadodara Property Types: Freehold, VMC &amp; VUDA
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Real estate holdings across Vadodara require precise drafting tailored to their statutory tenure and issuing authority:
                 </p>
@@ -1389,9 +1389,9 @@ export default function VadodaraLocationClient({ faqs }: Props) {
                 <span className="text-xs font-mono tracking-widest uppercase font-bold text-[#C65378]">
                   SECTION 11
                 </span>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   11. Official Gujarat Stamp Duty &amp; Registration Fees
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Unlike sale deeds or gift deeds which attract substantial ad valorem stamp duty (4.9% plus local surcharges in Gujarat), Wills are treated with total statutory exemption to promote voluntary family succession.
                 </p>
@@ -1422,9 +1422,9 @@ export default function VadodaraLocationClient({ faqs }: Props) {
                 <span className="text-xs font-mono tracking-widest uppercase font-bold text-[#C65378]">
                   SECTION 12
                 </span>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   12. Transparent Will Packages &amp; Legal Fees
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Choose the legal support package tailored to your estate size and registration preferences:
                 </p>
@@ -1540,9 +1540,9 @@ export default function VadodaraLocationClient({ faqs }: Props) {
                 <span className="text-xs font-mono tracking-widest uppercase font-bold text-[#C65378]">
                   SECTION 13
                 </span>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   13. Frequently Asked Questions: Vadodara Wills
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Answers to common legal questions regarding Will drafting, HUF assets, and Garvi Gujarat Sub-Registrar registration:
                 </p>
@@ -1586,9 +1586,9 @@ export default function VadodaraLocationClient({ faqs }: Props) {
                 <span className="text-xs font-mono tracking-widest uppercase font-bold text-[#C65378]">
                   SECTION 14
                 </span>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   14. Statutory References &amp; Gujarat Revenue Portals
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Authoritative legislative acts, judicial precedents, and government web portals governing Will execution in Gujarat:
                 </p>

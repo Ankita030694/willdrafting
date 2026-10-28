@@ -284,6 +284,11 @@ function postProcessAndSanitizeHtml(rawHtml: string): string {
     });
   }
 
+  processed = processed.replace(
+    /https?:\/\/(?:www\.)?indiacode\.nic\.in\/(?:handle\/[^\s"'<>]+|bitstream\/[^\s"'<>]+|show-data[^\s"'<>]*|\?[^\s"'<>]+)/gi,
+    "https://legislative.gov.in/"
+  );
+
   return processed;
 }
 
@@ -941,7 +946,17 @@ Return ONLY valid JSON.`;
             }))
             .filter((r: { name: string; review: string }) => r.name && r.review.length > 0)
         : [];
-      references = Array.isArray(step3Data.references) ? step3Data.references : [];
+      references = Array.isArray(step3Data.references)
+        ? step3Data.references.map((ref: any) => ({
+            title: String(ref?.title || "").trim(),
+            url: String(ref?.url || "")
+              .trim()
+              .replace(
+                /^https?:\/\/(?:www\.)?indiacode\.nic\.in\/(?:handle\/.*|bitstream\/.*|show-data.*|\?.*)$/i,
+                "https://legislative.gov.in/"
+              ),
+          }))
+        : [];
       suggestedImagePrompt = step3Data.suggestedImagePrompt || suggestedImagePrompt;
       suggestedInfographicPrompt =
         step3Data.suggestedInfographicPrompt || suggestedInfographicPrompt;

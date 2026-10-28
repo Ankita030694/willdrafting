@@ -548,9 +548,9 @@ export default function JammuAndKashmirLocationClient({ faqs }: Props) {
                   <Scale className="w-4 h-4 text-[#C65378]" />
                   <span>STATUTORY PROVISIONS</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   1. Will Drafting &amp; Legal Framework in Jammu &amp; Kashmir
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Estate planning and testamentary succession across Jammu and Kashmir are governed by the <strong>Indian Succession Act, 1925</strong>, the <strong>Registration Act, 1908</strong>, and the <strong>Jammu and Kashmir Reorganisation Act, 2019</strong>. Any individual of sound mind can legally bequeath self-acquired residential real estate, commercial hotels, agricultural orchards, and financial investments.
                 </p>
@@ -596,9 +596,9 @@ export default function JammuAndKashmirLocationClient({ faqs }: Props) {
                   <FileCheck className="w-4 h-4 text-[#C65378]" />
                   <span>REGISTRATION ADVISORY</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   2. Is Will Registration Mandatory in Jammu &amp; Kashmir?
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Under Section 18(e) of the Registration Act, 1908, the registration of a Will is legally optional throughout Jammu and Kashmir. An unregistered Will signed on plain white paper before two independent witnesses is recognized by courts. However, official registration through NGDRS J&amp;K provides crucial legal safeguards.
                 </p>
@@ -651,9 +651,9 @@ export default function JammuAndKashmirLocationClient({ faqs }: Props) {
                   <Scale className="w-4 h-4 text-[#C65378]" />
                   <span>JUDICIAL PRECEDENTS</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   3. J&amp;K Probate Law: High Court Exemption &amp; Succession Rules
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Under Section 213 read with Section 57 of the Indian Succession Act, 1925, obtaining court probate is compulsory only for Wills executed within or concerning immovable properties located in the historical presidency towns of Mumbai, Kolkata, and Chennai. The <strong>High Court of Jammu &amp; Kashmir and Ladakh</strong> has affirmed that probate is strictly non-compulsory in J&amp;K.
                 </p>
@@ -693,9 +693,9 @@ export default function JammuAndKashmirLocationClient({ faqs }: Props) {
                   <Building className="w-4 h-4 text-[#C65378]" />
                   <span>REGISTRATION HUBS</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   4. J&amp;K Sub-Registrar Offices: NGDRS Registration Directory
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Will registration across the Union Territory of Jammu and Kashmir is conducted through the National Generic Document Registration System (NGDRS J&amp;K). Explore key Sub-Registrar Offices serving both Kashmir and Jammu divisions:
                 </p>
@@ -778,9 +778,9 @@ export default function JammuAndKashmirLocationClient({ faqs }: Props) {
                   <MapPin className="w-4 h-4 text-[#C65378]" />
                   <span>REGIONAL CITIES &amp; ASSET NUANCES</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   5. Regional Cities: Will Drafting Across Jammu &amp; Kashmir
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Estate assets in Jammu and Kashmir encompass urban freeholds in Srinagar and Jammu, commercial hotels and Dal Lake houseboats, world-famous apple orchards in Sopore and Shopian, saffron fields in Pampore, and industrial units in Bari Brahmana and Rangreth. Our legal team provides customized drafting and NGDRS J&amp;K coordination across all regional cities:
                 </p>
@@ -1228,9 +1228,9 @@ export default function JammuAndKashmirLocationClient({ faqs }: Props) {
                   <FileText className="w-4 h-4 text-[#C65378]" />
                   <span>PROCEDURAL ROADMAP</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   6. Step-by-Step SOP: Drafting to NGDRS Registration in J&amp;K
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Executing an enforceable Will in Jammu and Kashmir follows five standardized procedural milestones from asset collation to Book III SRO biometric thumbprinting:
                 </p>
@@ -1321,9 +1321,9 @@ export default function JammuAndKashmirLocationClient({ faqs }: Props) {
                   <Home className="w-4 h-4 text-[#C65378]" />
                   <span>DOORSTEP REGISTRATION</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   7. Section 31 Doorstep SRO Registration for Senior Citizens
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Under Section 31 of the Registration Act, 1908, elderly, bedridden, or hospitalized testators residing across Jammu and Kashmir are legally entitled to request doorstep registration. An authorized Sub-Registrar visits your private residence or healthcare facility.
                 </p>
@@ -1371,9 +1371,9 @@ export default function JammuAndKashmirLocationClient({ faqs }: Props) {
                   <FileCheck className="w-4 h-4 text-[#C65378]" />
                   <span>CHECKLIST &amp; PREREQUISITES</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   8. Document Checklist for J&amp;K Sub-Registrar Offices
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Interactive document preparation checklist for your NGDRS J&amp;K Sub-Registrar appointment. Check items off as you prepare:
                 </p>
@@ -1426,9 +1426,9 @@ export default function JammuAndKashmirLocationClient({ faqs }: Props) {
                   <Trees className="w-4 h-4 text-[#C65378]" />
                   <span>ASSET CLASSIFICATION</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   9. J&amp;K Property Types: Freeholds, Apple Orchards &amp; Hotels
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Jammu and Kashmir presents a diverse portfolio of asset classes. Here is how distinct property holdings are bequeathed and legally transferred under an enforceable Will:
                 </p>
@@ -1480,9 +1480,9 @@ export default function JammuAndKashmirLocationClient({ faqs }: Props) {
                   <Stamp className="w-4 h-4 text-[#C65378]" />
                   <span>GOVERNMENT STATUTORY LEVIES</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   10. Official NGDRS J&amp;K Registration Fees &amp; Stamp Duties
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   In Jammu and Kashmir, testamentary Wills are completely exempt from ad-valorem stamp duty based on property market valuation. Registration fees are charged at flat government rates:
                 </p>
@@ -1527,9 +1527,9 @@ export default function JammuAndKashmirLocationClient({ faqs }: Props) {
                   <Award className="w-4 h-4 text-[#C65378]" />
                   <span>TRANSPARENT LEGAL PACKAGES</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   11. Transparent Will Packages &amp; Legal Fees in J&amp;K
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Choose the legal assistance tier suited to your estate complexity. Fixed transparent fees with zero hidden charges:
                 </p>
@@ -1675,9 +1675,9 @@ export default function JammuAndKashmirLocationClient({ faqs }: Props) {
                   <HelpCircle className="w-4 h-4 text-[#C65378]" />
                   <span>COMMON QUERIES</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   12. Frequently Asked Questions: Will Drafting in J&amp;K
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Clear answers to key statutory, registration, and succession queries concerning estate planning across Jammu and Kashmir:
                 </p>
@@ -1725,9 +1725,9 @@ export default function JammuAndKashmirLocationClient({ faqs }: Props) {
                   <Scale className="w-4 h-4 text-[#C65378]" />
                   <span>STATUTORY CITATIONS</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   13. Statutory Citations &amp; J&amp;K Legal Government Portals
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Key legislation and official government portals governing estate succession, property records, and document registration in Jammu and Kashmir:
                 </p>

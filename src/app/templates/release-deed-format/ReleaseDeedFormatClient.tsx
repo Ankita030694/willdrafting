@@ -566,9 +566,9 @@ export default function ReleaseDeedFormatClient() {
                 <FileCheck className="w-4 h-4" />
                 <span>SECTION 2: COMPLIANCE AUDIT</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 2. Interactive Audit: Section 17 Registration Checklist
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Before presenting your relinquishment deed at the Sub-Registrar Office, verify your preparation against these six essential statutory checkpoints.
               </p>
@@ -635,9 +635,9 @@ export default function ReleaseDeedFormatClient() {
                 <FileText className="w-4 h-4" />
                 <span>SECTION 3: FREE DOWNLOADABLE FORMAT</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 3. Clause-Annotated Format: Free Printable Release Deed
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Below is a full legal template for a Relinquishment Deed approved by succession and real estate advocates. Copy the text directly or print it for execution on non-judicial e-stamp paper.
               </p>
@@ -729,9 +729,9 @@ export default function ReleaseDeedFormatClient() {
                 <Scale className="w-4 h-4" />
                 <span>SECTION 4: COMPARATIVE ANALYSIS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 4. 3-Way Matrix: Release vs Gift vs Relinquishment Deed
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Homeowners frequently confuse Relinquishment Deeds, Release Deeds, and Gift Deeds. Choosing the incorrect instrument leads to Sub-Registrar rejections and unnecessary stamp duty.
               </p>
@@ -800,9 +800,9 @@ export default function ReleaseDeedFormatClient() {
                 <AlertTriangle className="w-4 h-4 text-amber-600" />
                 <span>SECTION 5: CRITICAL LEGAL WARNING</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 5. Critical Rules: When NOT to Use a Relinquishment Deed
-              </h2>
+              </h3>
               <div className="rounded-2xl bg-amber-50/70 border border-amber-300 p-5 sm:p-6 space-y-4 text-slate-800">
                 <div className="flex items-center gap-2 font-bold text-amber-900 text-sm sm:text-base">
                   <AlertCircle className="w-5 h-5 text-amber-700 shrink-0" />
@@ -843,9 +843,9 @@ export default function ReleaseDeedFormatClient() {
                 <Building className="w-4 h-4" />
                 <span>SECTION 6: STAMP DUTY SCHEDULES</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 6. State Stamp Duty Guide: Rates for Blood Relatives
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Stamp duty rates on release deeds vary significantly across Indian states. Most state legislatures provide concessional rates when the deed is executed between immediate family members without monetary consideration.
               </p>
@@ -912,9 +912,9 @@ export default function ReleaseDeedFormatClient() {
                 <Sparkles className="w-4 h-4" />
                 <span>SECTION 7: VISUAL BLUEPRINT</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 7. Visual Blueprint: Anatomy of an Indian Release Deed
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 A legally enforceable Relinquishment Deed follows an orderly statutory structure. Below is the blueprint illustrating how title recitals, share extinction, municipal mutation consent, and SRO registration connect.
               </p>
@@ -953,9 +953,9 @@ export default function ReleaseDeedFormatClient() {
                 <CheckCircle2 className="w-4 h-4 text-[#5F7E75]" />
                 <span>SECTION 8: EXECUTION WORKFLOW</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 8. Step-by-Step SOP: Five Milestones to SRO Registration
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Registering a Relinquishment Deed in India requires following five strict procedural milestones.
               </p>
@@ -1010,9 +1010,9 @@ export default function ReleaseDeedFormatClient() {
                 <AlertCircle className="w-4 h-4 text-rose-600" />
                 <span>SECTION 9: COMMON MISTAKES</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 9. Three Fatal Mistakes That Trigger SRO Rejections
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Avoid these three common drafting and procedural errors when executing an Indian release deed.
               </p>
@@ -1062,9 +1062,9 @@ export default function ReleaseDeedFormatClient() {
                 <Home className="w-4 h-4 text-[#C65378]" />
                 <span>SECTION 10: THE PROACTIVE ALTERNATIVE</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 10. Estate Strategy: How a Will Would Have Avoided This
-              </h2>
+              </h3>
               <div className="rounded-2xl bg-gradient-to-br from-rose-50/70 to-slate-50 border border-rose-200 p-6 sm:p-8 space-y-4">
                 <div className="flex items-center gap-3">
                   <div className="w-10 h-10 rounded-full bg-[#C65378] text-white flex items-center justify-center font-bold">
@@ -1113,9 +1113,9 @@ export default function ReleaseDeedFormatClient() {
                 <Building className="w-4 h-4" />
                 <span>SECTION 11: COMMON USE CASES</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 11. Four Specialized Scenarios for Property Release
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Review these four common real-world scenarios where executing a registered Relinquishment Deed is the standard legal procedure.
               </p>
@@ -1169,9 +1169,9 @@ export default function ReleaseDeedFormatClient() {
                 <Award className="w-4 h-4" />
                 <span>SECTION 12: INSTITUTIONAL BACKING</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 12. Institutional Verification: Powered by AMA Legal
-              </h2>
+              </h3>
               <div className="bg-white rounded-2xl border border-slate-200/90 p-6 sm:p-8 shadow-xs space-y-4">
                 <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-6 border-b border-slate-100">
                   <div>
@@ -1213,9 +1213,9 @@ export default function ReleaseDeedFormatClient() {
                 <HelpCircle className="w-4 h-4 text-[#C65378]" />
                 <span>SECTION 13: DIRECT ANSWERS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 Frequently Asked Questions: Relinquishment Deeds
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Find clear answers to common questions about executing, witnessing, and registering a Relinquishment Deed in India.
               </p>
@@ -1254,9 +1254,9 @@ export default function ReleaseDeedFormatClient() {
                 <BookOpen className="w-4 h-4" />
                 <span>SECTION 14: STATUTORY CITATIONS &amp; REFERENCES</span>
               </div>
-              <h2 className="text-lg font-bold text-slate-900">
+              <h3 className="text-lg font-bold text-slate-900">
                 Statutory Citations and Official Legal Resources
-              </h2>
+              </h3>
               <ul className="list-disc pl-5 text-xs text-slate-600 space-y-1.5 leading-relaxed">
                 <li>
                   <strong>Registration Act, 1908:</strong> Section 17(1)(b) (compulsory registration of non-testamentary instruments transferring or extinguishing immovable property rights) and Section 49 (inadmissibility of unregistered documents).

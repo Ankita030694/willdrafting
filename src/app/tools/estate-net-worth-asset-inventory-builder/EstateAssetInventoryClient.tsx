@@ -771,9 +771,9 @@ AND I HEREBY DECLARE that the schedule of properties appended to this my Last Wi
                 <Sparkles className="w-4 h-4" />
                 <span>INTERACTIVE ASSET VAULT</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 2. Interactive Family Asset &amp; Net Worth Inventory Vault
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Catalog your assets and liabilities below. This tool computes your consolidated estate net
                 worth, evaluates your <strong>Nomination Health Score</strong> to flag UDGAM/IEPF forfeiture risks,
@@ -1236,9 +1236,9 @@ AND I HEREBY DECLARE that the schedule of properties appended to this my Last Wi
                 <AlertCircle className="w-4 h-4" />
                 <span>UNCLAIMED WEALTH IN INDIA</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 3. The 48,000 Crore Trap: How Unclaimed Assets End in UDGAM
-              </h2>
+              </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   According to official data presented by the Ministry of Finance in Parliament, as of 2024,
@@ -1301,9 +1301,9 @@ AND I HEREBY DECLARE that the schedule of properties appended to this my Last Wi
                 <FolderLock className="w-4 h-4" />
                 <span>EMERGENCY RED FILE PROTOCOL</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 4. The Family Red File: Essential Documents Every Spouse Needs
-              </h2>
+              </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   In Indian personal finance forums (such as r/personalfinanceindia), the concept of an
@@ -1350,9 +1350,9 @@ AND I HEREBY DECLARE that the schedule of properties appended to this my Last Wi
                 <Layers className="w-4 h-4" />
                 <span>COMPARATIVE ANALYSIS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 5. Comparing Asset Records: Sheets vs Red File vs Valid Will
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Many individuals assume a casual Google Sheet or note in their smartphone is sufficient.
                 Review the structural comparison below to understand the legal and operational differences:
@@ -1445,9 +1445,9 @@ AND I HEREBY DECLARE that the schedule of properties appended to this my Last Wi
                 <FileCheck className="w-4 h-4" />
                 <span>PROCEDURAL ROADMAP</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 6. Step-by-Step SOP: Building Your Family Financial Dossier
-              </h2>
+              </h3>
               <div className="space-y-4">
                 {[
                   {
@@ -1526,9 +1526,9 @@ AND I HEREBY DECLARE that the schedule of properties appended to this my Last Wi
                 <Scale className="w-4 h-4" />
                 <span>LEGAL REPRESENTATIVE TAXATION</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 7. Section 159 Income Tax Act: Legal Representative Duties
-              </h2>
+              </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   A vital reason to maintain an exact net worth statement is <strong>Section 159 of the
@@ -1555,9 +1555,9 @@ AND I HEREBY DECLARE that the schedule of properties appended to this my Last Wi
                 <HardDrive className="w-4 h-4" />
                 <span>MODERN WEALTH ACCESS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 8. Digital Assets &amp; Locker Access: Critical Transmission Rules
-              </h2>
+              </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   Today&rsquo;s estate planning goes far beyond physical real estate and gold. Millions of
@@ -1597,9 +1597,9 @@ AND I HEREBY DECLARE that the schedule of properties appended to this my Last Wi
                 <Award className="w-4 h-4" />
                 <span>REAL-WORLD LITIGATION PRECEDENTS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 9. Practical Case Studies: Bengaluru, Mumbai &amp; Delhi Families
-              </h2>
+              </h3>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                 {/* Case 1: Bengaluru Tech Exec */}
                 <div className="p-5 rounded-2xl bg-white border border-slate-200/90 shadow-2xs space-y-2">
@@ -1657,9 +1657,9 @@ AND I HEREBY DECLARE that the schedule of properties appended to this my Last Wi
                 <Copy className="w-4 h-4" />
                 <span>STATUTORY TEMPLATES</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 10. Copy-Paste Legal Clauses &amp; Emergency Disclosure Templates
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Use these verified advocate-drafted clauses in your legal Will or family emergency memorandum:
               </p>
@@ -1748,9 +1748,9 @@ AND I HEREBY DECLARE that the schedule of properties appended to this my Last Wi
                 <Award className="w-4 h-4" />
                 <span>PRACTICE CREDENTIALS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 11. Institutional Legal Backing: AMA Legal Solutions Profile
-              </h2>
+              </h3>
               <div className="p-6 rounded-3xl bg-white border border-slate-200/90 shadow-xs space-y-4">
                 <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-4 border-b border-slate-100">
                   <div className="flex items-center gap-3">
@@ -1795,9 +1795,9 @@ AND I HEREBY DECLARE that the schedule of properties appended to this my Last Wi
                 <HelpCircle className="w-4 h-4" />
                 <span>FREQUENTLY ASKED QUESTIONS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 12. Frequently Asked Questions: Family Asset Inventories
-              </h2>
+              </h3>
               <div className="space-y-3">
                 {FAQS.map((faq, idx) => {
                   const isOpen = openFaq === idx;
@@ -1835,9 +1835,9 @@ AND I HEREBY DECLARE that the schedule of properties appended to this my Last Wi
                 <Scale className="w-4 h-4" />
                 <span>LEGAL CITATIONS &amp; REGULATORY PORTALS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 13. Statutory Citations &amp; Central Regulatory Portals
-              </h2>
+              </h3>
               <div className="p-5 rounded-2xl bg-white border border-slate-200 space-y-3 text-xs text-slate-600 leading-relaxed">
                 <div className="font-bold text-slate-900 text-sm">Governing Statutes &amp; Official Portals:</div>
                 <ul className="space-y-1.5 list-disc pl-4">

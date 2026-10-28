@@ -71,6 +71,11 @@ for (const file of tsxFiles) {
     errors.push(`[Redirecting /service/ link] ${rel}`);
   }
 
+  // Check timed-out India Code DSpace handle / sam_handle URLs
+  if (/["']https?:\/\/(?:www\.)?indiacode\.nic\.in\/(?:handle\/|bitstream\/|\?sam_handle=)/i.test(content)) {
+    errors.push(`[Timed-out India Code handle URL] ${rel}`);
+  }
+
   // Check <Image ... fill />
   const imgTags = content.match(/<Image\b[^>]*\/>/gs) || [];
   for (const tag of imgTags) {
@@ -79,10 +84,36 @@ for (const file of tsxFiles) {
     }
   }
 
-  // Check alt > 100 chars
-  const altMatches = content.matchAll(/alt="([^"]{101,})"/g);
+  // Check alt > 100 chars (static double/single-quoted alt=, openGraph alt:, and string literals inside JSX alt={...})
+  const altMatches = content.matchAll(/\balt\s*[:=]\s*(["'])((?:\\.|(?!\1)[\s\S])*?)\1/g);
   for (const m of altMatches) {
-    errors.push(`[Image alt > 100 chars (${m[1].length})] ${rel}`);
+    if (m[2].length > 100) {
+      errors.push(`[Image alt > 100 chars (${m[2].length})] ${rel}`);
+    }
+  }
+  const jsxAltStarts = content.matchAll(/\balt\s*=\s*\{/g);
+  for (const m of jsxAltStarts) {
+    let idx = m.index + m[0].length;
+    let depth = 1;
+    let quote = null;
+    while (idx < content.length && depth > 0) {
+      const ch = content[idx];
+      if (quote) {
+        if (ch === "\\") idx++;
+        else if (ch === quote) quote = null;
+      } else {
+        if (ch === '"' || ch === "'" || ch === "`") quote = ch;
+        else if (ch === "{") depth++;
+        else if (ch === "}") depth--;
+      }
+      idx++;
+    }
+    const expr = content.slice(m.index + m[0].length, idx - 1);
+    for (const lit of expr.matchAll(/(["'])((?:\\.|(?!\1)[\s\S])*?)\1/g)) {
+      if (lit[2].length > 100) {
+        errors.push(`[JSX Image alt literal > 100 chars (${lit[2].length})] ${rel}`);
+      }
+    }
   }
 
   // Check non-sequential H3/H4 between H1 and first H2
@@ -94,6 +125,59 @@ for (const file of tsxFiles) {
       errors.push(`[Non-sequential H3/H4 before first H2] ${rel}`);
     }
   }
+
+  // Enforce single <h2> per indexable route file (excluding dynamic [slug] which enforces single H2 at runtime/idx===0)
+  const isNonIndexableRoute =
+    rel.includes("/dashboard/") ||
+    rel.includes("/nullify/") ||
+    rel.includes("/thank-you/") ||
+    rel.includes("/print/") ||
+    rel.includes("/login/") ||
+    rel.includes("/complete-profile/");
+
+  if (rel.startsWith("src/app/") && !isNonIndexableRoute && !rel.includes("[slug]")) {
+    const h2Matches = [...content.matchAll(/<h2\b[^>]*>([\s\S]*?)<\/h2>/g)];
+    if (h2Matches.length > 1) {
+      errors.push(`[H2: Multiple (${h2Matches.length} <h2> tags found, max 1 allowed)] ${rel}`);
+    }
+    for (const m of h2Matches) {
+      const plainH2 = m[1].replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim();
+      if (plainH2.length > 70) {
+        errors.push(`[H2 > 70 chars (${plainH2.length})] ${rel}: "${plainH2}"`);
+      }
+    }
+  }
+}
+
+// 3. Check Security Headers in next.config.ts, proxy, and public route handlers
+const securityHeaderFiles = [
+  "next.config.ts",
+  "src/app/sitemap.xml/route.ts",
+  "src/app/api/rss/route.ts",
+  "src/app/api/blog-images/[id]/route.ts",
+  "src/proxy.ts",
+  "src/lib/http.ts",
+];
+for (const rel of securityHeaderFiles) {
+  const full = path.join(ROOT, rel);
+  if (!fs.existsSync(full)) continue;
+  const content = fs.readFileSync(full, "utf8");
+  for (const requiredHeader of [
+    "X-Content-Type-Options",
+    "Referrer-Policy",
+    "X-Frame-Options",
+    "Content-Security-Policy",
+    "Strict-Transport-Security",
+  ]) {
+    if (!content.includes(requiredHeader)) {
+      errors.push(`[Missing Security Header ${requiredHeader}] ${rel}`);
+    }
+  }
+}
+
+const proxyContent = fs.readFileSync(path.join(ROOT, "src/proxy.ts"), "utf8");
+if (!proxyContent.includes('"/:path*"')) {
+  errors.push(`[Proxy matcher missing global "/:path*" coverage] src/proxy.ts`);
 }
 
 if (errors.length > 0) {

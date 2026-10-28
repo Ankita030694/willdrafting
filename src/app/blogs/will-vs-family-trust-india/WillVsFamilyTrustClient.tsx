@@ -533,9 +533,9 @@ export default function WillVsFamilyTrustClient() {
                 </span>
               </div>
 
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
                 1. Fundamental Concepts: Understanding Wills and Trusts
-              </h2>
+              </h3>
 
               <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                 Before comparing costs and tax benefits, we must understand the core legal difference between these two instruments. Indian succession law treats them in fundamentally distinct ways.
@@ -589,9 +589,9 @@ export default function WillVsFamilyTrustClient() {
                 </span>
               </div>
 
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
                 2. Head-to-Head Comparison: Will vs Private Family Trust
-              </h2>
+              </h3>
 
               <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                 To evaluate which instrument fits your family wealth goals, examine this detailed side-by-side comparison across eleven crucial parameters:
@@ -655,9 +655,9 @@ export default function WillVsFamilyTrustClient() {
                 </span>
               </div>
 
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
                 3. When a Will is 100% Sufficient for Most Indian Families
-              </h2>
+              </h3>
 
               <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                 Despite marketing from corporate wealth managers pushing high-fee family trusts, the statistical reality is that more than 90% of Indian households only need a well-drafted Will. Here is why:
@@ -733,9 +733,9 @@ export default function WillVsFamilyTrustClient() {
                 </span>
               </div>
 
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
                 4. When a Private Family Trust Makes Strategic Sense
-              </h2>
+              </h3>
 
               <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                 While a Will handles straightforward bequests, certain complex family situations and substantial net worth brackets demand the structural protections of a Private Family Trust:
@@ -811,9 +811,9 @@ export default function WillVsFamilyTrustClient() {
                 </span>
               </div>
 
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
                 5. Visual Comparison: Will vs Family Trust Breakdown
-              </h2>
+              </h3>
 
               <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                 This diagram illustrates the core dichotomy between a straightforward testamentary Will and a private family trust:
@@ -917,9 +917,9 @@ export default function WillVsFamilyTrustClient() {
                 </span>
               </div>
 
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
                 6. Trust Classifications: Revocable vs Irrevocable
-              </h2>
+              </h3>
 
               <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                 If you decide that a Private Family Trust is appropriate for your family, you must choose its structural classification under the Indian Trusts Act, 1882. There are two primary dividing lines:
@@ -1000,9 +1000,9 @@ export default function WillVsFamilyTrustClient() {
                 </span>
               </div>
 
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
                 7. Taxation Framework: Income Tax Act Sections 161 &amp; 164
-              </h2>
+              </h3>
 
               <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                 Tax planning is a decisive factor in choosing between a Will and a Family Trust. India currently has zero inheritance tax or estate duty, but income tax rules apply differently to each structure:
@@ -1091,9 +1091,9 @@ export default function WillVsFamilyTrustClient() {
                 </span>
               </div>
 
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
                 8. Asset Protection: Shielding Estates from Creditors
-              </h2>
+              </h3>
 
               <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                 For promoters, business directors, startup founders, and professionals facing commercial risks, asset protection is paramount. Here is how Indian courts handle creditor claims against Wills and Trusts:
@@ -1139,9 +1139,9 @@ export default function WillVsFamilyTrustClient() {
                 </span>
               </div>
 
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
                 9. Privacy and Probate: Public Records vs Private Wealth
-              </h2>
+              </h3>
 
               <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                 Many families overlook the privacy implications of estate planning until it is too late. The difference between a public probate proceeding and private trust administration is profound:
@@ -1211,9 +1211,9 @@ export default function WillVsFamilyTrustClient() {
                 </span>
               </div>
 
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
                 10. Hybrid Strategy: Pour-Over Wills &amp; Testamentary Trusts
-              </h2>
+              </h3>
 
               <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                 You do not necessarily have to choose exclusively between a Will and a Family Trust. Sophisticated Indian estate planners frequently combine both vehicles into a unified, leak-proof structure:
@@ -1262,9 +1262,9 @@ export default function WillVsFamilyTrustClient() {
                 </span>
               </div>
 
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
                 11. Estate Strategy Selector: Interactive Decision Tool
-              </h2>
+              </h3>
 
               <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                 Answer four simple questions to receive an instant, objective legal recommendation tailored to your family&apos;s financial profile:
@@ -1428,9 +1428,9 @@ export default function WillVsFamilyTrustClient() {
                 </span>
               </div>
 
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
                 12. Frequently Asked Questions: Will vs Family Trust
-              </h2>
+              </h3>
 
               <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                 Clear, straightforward answers to the most common questions regarding Wills, Private Family Trusts, and Indian succession planning:

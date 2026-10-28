@@ -524,9 +524,9 @@ export default function PatnaLocationClient({ faqs }: Props) {
                   <Scale className="w-4 h-4 text-[#C65378]" />
                   <span>STATUTORY PROVISIONS</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   1. Will Drafting &amp; Legal Framework in Patna Bihar
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Writing a legally enforceable Will in Patna is regulated by the <strong>Indian Succession Act, 1925</strong>, the <strong>Registration Act, 1908</strong>, and the <strong>Bihar Land Reforms (Fixation of Ceiling Area and Acquisition of Surplus Land) Act</strong> alongside the <strong>Bihar State Mutation Act</strong>. Any adult of sound mind can bequeath their self-acquired real estate, bank deposits, mutual funds, company equity, and jewelry.
                 </p>
@@ -585,9 +585,9 @@ export default function PatnaLocationClient({ faqs }: Props) {
                   <Stamp className="w-4 h-4 text-[#C65378]" />
                   <span>LEGAL VALIDITY &amp; PROOF</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   2. Is Will Registration Mandatory in Patna?
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Under Section 18(e) of the Indian Registration Act, 1908, registering a Will is <strong>strictly optional</strong> in Bihar. An unregistered Will signed by the testator in the presence of two witnesses is legally valid. However, in Bihar&apos;s land administration context, an unregistered Will is highly vulnerable to objections and allegations of fabrication during revenue mutation:
                 </p>
@@ -640,9 +640,9 @@ export default function PatnaLocationClient({ faqs }: Props) {
                   <Landmark className="w-4 h-4 text-[#C65378]" />
                   <span>HIGH COURT JURISPRUDENCE</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   3. Patna Probate Rules: Non-Presidency Law
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   A common question among property owners in Bihar is whether a Will must be probated by a court before assets can be transferred. Under <strong>Section 213 read with Section 57 of the Indian Succession Act, 1925</strong>, probate is mandatory only within the historical presidential towns of Mumbai, Kolkata, and Chennai.
                 </p>
@@ -673,9 +673,9 @@ export default function PatnaLocationClient({ faqs }: Props) {
                   <MapPin className="w-4 h-4 text-[#C65378]" />
                   <span>SRO JURISDICTION DIRECTORY</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   4. Patna Sub-Registrar Offices: SRO Directory
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Patna district operates five key Sub-Registrar Offices under the Bihar Registration, Excise &amp; Prohibition Department. Under Section 32 of the Registration Act, a Will can be registered at the Sub-Registrar Office having jurisdiction over where the testator resides or where any immovable property is situated.
                 </p>
@@ -777,9 +777,9 @@ export default function PatnaLocationClient({ faqs }: Props) {
                   <MapPin className="w-4 h-4 text-[#C65378]" />
                   <span>LOCAL AREA COVERAGE &amp; MICRO-MARKETS</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   5. Area-Wise Will Drafting Across Patna Localities
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Looking to draft a legally binding <strong>Will in Bailey Road, Boring Road, Kankarbagh, or Danapur</strong>? Real estate across Patna spans ancestral Khatiyan holdings, PRDA planned plots, private developer high-rises, and prime commercial shops along Fraser Road. Our legal team provides customized drafting, Bihar e-Nibandhan portal appointment scheduling, and Sub-Registrar accompaniment across all key residential and commercial hubs:
                 </p>
@@ -1219,9 +1219,9 @@ export default function PatnaLocationClient({ faqs }: Props) {
                   <FileCheck className="w-4 h-4 text-[#C65378]" />
                   <span>STEP-BY-STEP SOP</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   6. Bihar Bhumi Dakhil Kharij &amp; e-Nibandhan SOP
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Registering a Will in Patna and ensuring future land mutation follows a systematic five-stage standard operating procedure:
                 </p>
@@ -1312,9 +1312,9 @@ export default function PatnaLocationClient({ faqs }: Props) {
                   <Home className="w-4 h-4 text-[#C65378]" />
                   <span>DOORSTEP REGISTRATION</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   7. Section 31 Doorstep Registration for Seniors
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Senior citizens, hospitalized individuals, and bedridden testators residing in Patna are not required to travel to congested Sub-Registrar offices. Under <strong>Section 31 of the Registration Act, 1908</strong>, the Sub-Registrar has statutory authority to visit the testator&apos;s home or hospital room:
                 </p>
@@ -1360,9 +1360,9 @@ export default function PatnaLocationClient({ faqs }: Props) {
                   <FileText className="w-4 h-4 text-[#C65378]" />
                   <span>DOCUMENT PREPARATION</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   8. Documents Checklist for Patna Sub-Registrar
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Interactive document preparation checklist for registering your Will at Patna Sub-Registrar offices. Track required documents before your e-Nibandhan appointment:
                 </p>
@@ -1417,9 +1417,9 @@ export default function PatnaLocationClient({ faqs }: Props) {
                   <Building className="w-4 h-4 text-[#C65378]" />
                   <span>ASSET SPECIFICS</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   9. Patna Property Types: Khatiyan, PRDA &amp; PMC
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Succession procedures in Patna depend directly on property tenure and classification under Bihar revenue and municipal authorities:
                 </p>
@@ -1471,9 +1471,9 @@ export default function PatnaLocationClient({ faqs }: Props) {
                   <Stamp className="w-4 h-4 text-[#C65378]" />
                   <span>TRANSPARENT SRO SCHEDULE</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   10. Official Bihar Government Fees &amp; Charges
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Unlike commercial sale deeds or gift deeds that attract substantial ad-valorem stamp duty, Wills are 100% exempt from stamp duty across Bihar under the Indian Stamp Act, 1899:
                 </p>
@@ -1521,9 +1521,9 @@ export default function PatnaLocationClient({ faqs }: Props) {
                   <Award className="w-4 h-4 text-[#C65378]" />
                   <span>PLANS &amp; PRICING</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   11. Transparent Will Packages &amp; Legal Fees
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Choose the level of legal assistance that fits your family estate planning requirements in Patna:
                 </p>
@@ -1665,9 +1665,9 @@ export default function PatnaLocationClient({ faqs }: Props) {
                   <HelpCircle className="w-4 h-4 text-[#C65378]" />
                   <span>FREQUENTLY ASKED QUESTIONS</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   12. Frequently Asked Questions: Patna Wills
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Clear answers to key queries on drafting and registering a Will in Patna:
                 </p>
@@ -1710,9 +1710,9 @@ export default function PatnaLocationClient({ faqs }: Props) {
                   <Scale className="w-4 h-4 text-[#C65378]" />
                   <span>STATUTORY CITATIONS</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   13. Statutory References &amp; Bihar Legal Portals
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Our estate planning protocols comply strictly with central statutes and official Bihar revenue systems:
                 </p>

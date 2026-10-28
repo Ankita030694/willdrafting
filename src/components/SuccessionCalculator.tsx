@@ -836,9 +836,9 @@ export default function SuccessionCalculator() {
               <span className="text-[11px] font-bold uppercase tracking-[0.16em] text-[#C65378] block mb-1">
                 Step-by-Step Statutory Inputs
               </span>
-              <h2 className="text-xl sm:text-2xl font-medium text-[#111827]">
+              <h3 className="text-xl sm:text-2xl font-medium text-[#111827]">
                 Configure Family & Estate Profile
-              </h2>
+              </h3>
             </div>
 
             {/* 1. Personal Law Selector */}
@@ -1184,9 +1184,9 @@ export default function SuccessionCalculator() {
               <span className="text-[11px] font-bold uppercase tracking-[0.16em] text-[#C65378] block mb-1">
                 Supreme Court Precedent Checker
               </span>
-              <h2 className="text-xl sm:text-2xl font-medium text-[#111827]">
+              <h3 className="text-xl sm:text-2xl font-medium text-[#111827]">
                 Check Your Asset Nomination Risk
-              </h2>
+              </h3>
             </div>
 
             <div className="space-y-2">

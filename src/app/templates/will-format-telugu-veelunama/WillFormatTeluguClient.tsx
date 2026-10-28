@@ -659,9 +659,9 @@ Date: __________________________________`;
                 <FileText className="w-3.5 h-3.5" />
                 <span>ప్రామాణిక వీలునామా డ్రాఫ్ట్ • NATIVE TELUGU FORMAT</span>
               </div>
-              <h2 className="text-xl sm:text-2xl font-extrabold text-[#172228] leading-tight">
+              <h3 className="text-xl sm:text-2xl font-extrabold text-[#172228] leading-tight">
                 2. Complete Veelunama Format: Native Telugu Will Draft
-              </h2>
+              </h3>
               <p className="text-sm text-[#172228]/80 leading-relaxed">
                 ఈ క్రింది తెలుగు వీలునామా నమూనాను ఏ4 సైజు తెల్ల కాగితంపై లేదా గ్రీన్ లెడ్జర్ పేపర్‌పై ఉపయోగించవచ్చు.
                 బ్రాకెట్లలో [ ] ఉన్న వివరాలను మీ ఆస్తులకు అనుగుణంగా మార్చుకోండి:
@@ -855,9 +855,9 @@ Date: __________________________________`;
                 <Globe className="w-3.5 h-3.5" />
                 <span>ఆంగ్ల అనువాదం • ENGLISH TRANSLATION</span>
               </div>
-              <h2 className="text-xl sm:text-2xl font-extrabold text-[#172228] leading-tight">
+              <h3 className="text-xl sm:text-2xl font-extrabold text-[#172228] leading-tight">
                 3. English Translation: Telugu Veelunama Clauses Explained
-              </h2>
+              </h3>
               <p className="text-sm text-[#172228]/80 leading-relaxed">
                 Banks and courts often ask for an English copy of a Telugu Will. Here is a clear English explanation
                 of each key clause:
@@ -924,9 +924,9 @@ Date: __________________________________`;
                 <Sliders className="w-3.5 h-3.5" />
                 <span>అనుకూల నిబంధనలు • CLAUSE SELECTOR</span>
               </div>
-              <h2 className="text-xl sm:text-2xl font-extrabold text-[#172228] leading-tight">
+              <h3 className="text-xl sm:text-2xl font-extrabold text-[#172228] leading-tight">
                 4. Interactive Clause Selector: Tailor Your Telugu Will
-              </h2>
+              </h3>
               <p className="text-sm text-[#172228]/80 leading-relaxed">
                 ప్రతి కుటుంబ పరిస్థితి విభిన్నంగా ఉంటుంది. మీ అవసరాలకు తగిన ప్రత్యేక నిబంధనను ఎంచుకుని వీలునామాలో చేర్చుకోండి:
               </p>
@@ -1012,9 +1012,9 @@ Date: __________________________________`;
                 <Globe className="w-3.5 h-3.5" />
                 <span>ఎన్నారై మార్గదర్శకాలు • US-NRI TELUGU MOAT</span>
               </div>
-              <h2 className="text-xl sm:text-2xl font-extrabold text-[#172228] leading-tight">
+              <h3 className="text-xl sm:text-2xl font-extrabold text-[#172228] leading-tight">
                 5. US-NRI Telugu Checklist: Property in Hyderabad &amp; AP
-              </h2>
+              </h3>
               <p className="text-sm text-[#172228]/80 leading-relaxed">
                 Many Telugu families living in the USA own apartments and land in Hyderabad and Andhra Pradesh.
                 A US Living Trust does not work smoothly in India. Here is what you should do:
@@ -1096,9 +1096,9 @@ Date: __________________________________`;
                 <Calculator className="w-3.5 h-3.5" />
                 <span>రిజిస్ట్రేషన్ ఫీజు • SRO FEE CALCULATOR</span>
               </div>
-              <h2 className="text-xl sm:text-2xl font-extrabold text-[#172228] leading-tight">
+              <h3 className="text-xl sm:text-2xl font-extrabold text-[#172228] leading-tight">
                 6. Telangana &amp; Andhra Pradesh SRO Will Registration Rules
-              </h2>
+              </h3>
               <p className="text-sm text-[#172228]/80 leading-relaxed">
                 Registering a Will in Telangana or Andhra Pradesh has very low government fees.
                 Use this simple tool to estimate your official fees:
@@ -1173,9 +1173,9 @@ Date: __________________________________`;
                 <Layers className="w-3.5 h-3.5" />
                 <span>సమగ్ర పోలిక • COMPARISON TABLE</span>
               </div>
-              <h2 className="text-xl sm:text-2xl font-extrabold text-[#172228] leading-tight">
+              <h3 className="text-xl sm:text-2xl font-extrabold text-[#172228] leading-tight">
                 7. Comparison: Registered Veelunama vs Gift vs Varisu Nama
-              </h2>
+              </h3>
               <p className="text-sm text-[#172228]/80 leading-relaxed">
                 ఆస్తి బదిలీ కొరకు రిజిస్టర్డ్ వీలునామా, గిఫ్ట్ డీడ్ (దాన పత్రం), మరియు లీగల్ హెయిర్ సర్టిఫికేట్ (వారిసు నామా)
                 మధ్య ఉన్న చట్టపరమైన తేడాలు:
@@ -1235,9 +1235,9 @@ Date: __________________________________`;
                 <Clock className="w-3.5 h-3.5" />
                 <span>విధాన క్రమం • STEP-BY-STEP SOP</span>
               </div>
-              <h2 className="text-xl sm:text-2xl font-extrabold text-[#172228] leading-tight">
+              <h3 className="text-xl sm:text-2xl font-extrabold text-[#172228] leading-tight">
                 8. Step-by-Step SOP: Drafting to SRO Registration
-              </h2>
+              </h3>
               <p className="text-sm text-[#172228]/80 leading-relaxed">
                 Follow these five simple steps to draft and register your Will in Telangana or Andhra Pradesh:
               </p>
@@ -1318,9 +1318,9 @@ Date: __________________________________`;
                 <Gavel className="w-3.5 h-3.5" />
                 <span>తీర్పులు &amp; విశ్లేషణ • CASE STUDIES</span>
               </div>
-              <h2 className="text-xl sm:text-2xl font-extrabold text-[#172228] leading-tight">
+              <h3 className="text-xl sm:text-2xl font-extrabold text-[#172228] leading-tight">
                 9. Practical Case Studies: Hyderabad &amp; Visakhapatnam Courts
-              </h2>
+              </h3>
               <p className="text-sm text-[#172228]/80 leading-relaxed">
                 Real disputes in civil courts teach valuable lessons about how to protect your estate from challenges:
               </p>
@@ -1364,9 +1364,9 @@ Date: __________________________________`;
                 <FileCheck className="w-3.5 h-3.5" />
                 <span>డాక్యుమెంట్ చెక్‌లిస్ట్ • MANDATORY DOCUMENTS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl font-extrabold text-[#172228] leading-tight">
+              <h3 className="text-xl sm:text-2xl font-extrabold text-[#172228] leading-tight">
                 10. Sub-Registrar Document Checklist &amp; Doctor Certificate
-              </h2>
+              </h3>
               <p className="text-sm text-[#172228]/80 leading-relaxed">
                 Take these essential documents with you when you visit the Sub-Registrar Office:
               </p>
@@ -1428,9 +1428,9 @@ Date: __________________________________`;
                 <Calculator className="w-3.5 h-3.5" />
                 <span>ఉచిత ఆన్‌లైన్ టూల్స్ • ESTATE PLANNING TOOLS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl font-extrabold text-[#172228] leading-tight">
+              <h3 className="text-xl sm:text-2xl font-extrabold text-[#172228] leading-tight">
                 11. Contextual Succession Calculators &amp; Estate Planning Tools
-              </h2>
+              </h3>
               <p className="text-sm text-[#172228]/80 leading-relaxed">
                 Use our free legal tools to calculate taxes on inherited property or book professional Will registration:
               </p>
@@ -1478,9 +1478,9 @@ Date: __________________________________`;
                 <Award className="w-3.5 h-3.5" />
                 <span>విశ్వసనీయత • LEGAL AUTHORITY</span>
               </div>
-              <h2 className="text-xl sm:text-2xl font-extrabold text-[#172228] leading-tight">
+              <h3 className="text-xl sm:text-2xl font-extrabold text-[#172228] leading-tight">
                 12. Legal Authority: Senior Succession Counsel Profile
-              </h2>
+              </h3>
               <p className="text-sm text-[#172228]/80 leading-relaxed">
                 All templates and guides on WillDrafting are verified by practicing succession lawyers:
               </p>
@@ -1517,9 +1517,9 @@ Date: __________________________________`;
                 <HelpCircle className="w-3.5 h-3.5" />
                 <span>ప్రశ్నోత్తరాలు • FREQUENTLY ASKED QUESTIONS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl font-extrabold text-[#172228] leading-tight">
+              <h3 className="text-xl sm:text-2xl font-extrabold text-[#172228] leading-tight">
                 13. Frequently Asked Questions: Telugu Veelunama Format
-              </h2>
+              </h3>
               <p className="text-sm text-[#172228]/80 leading-relaxed">
                 తెలుగు వీలునామాకు సంబంధించి అత్యంత సాధారణంగా అడిగే చట్టపరమైన ప్రశ్నలకు సమాధానాలు:
               </p>
@@ -1559,9 +1559,9 @@ Date: __________________________________`;
                 <BookOpen className="w-3.5 h-3.5" />
                 <span>అధికారిక మూలాలు • OFFICIAL STATUTORY CITATIONS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl font-extrabold text-[#172228] leading-tight">
+              <h3 className="text-xl sm:text-2xl font-extrabold text-[#172228] leading-tight">
                 14. Official Telangana &amp; Andhra Pradesh Legal References
-              </h2>
+              </h3>
               <p className="text-sm text-[#172228]/80 leading-relaxed">
                 ఈ పేజీలో పేర్కొన్న వివరాలన్నీ కింది భారతీయ చట్టాలు మరియు అధికారిక పోర్టళ్ల ప్రకారం నిర్ధారించబడ్డాయి:
               </p>

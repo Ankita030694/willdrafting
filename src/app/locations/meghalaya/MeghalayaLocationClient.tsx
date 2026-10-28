@@ -506,9 +506,9 @@ export default function MeghalayaLocationClient({ faqs }: Props) {
                   <span>STATUTORY CODIFICATION &amp; CUSTOMARY LAWS</span>
                 </div>
                 {/* H2: Exactly 58 characters */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   2. Legal Framework: Khasi, Garo &amp; Jaintia Succession Law
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed">
                   Estate planning in Meghalaya is governed by an integrated matrix of central succession statutes, constitutional Sixth Schedule safeguards, local customary lineage enactments, and land transfer regulations:
                 </p>
@@ -565,9 +565,9 @@ export default function MeghalayaLocationClient({ faqs }: Props) {
                   <span>REGISTRATION ACT, 1908 COMPLIANCE</span>
                 </div>
                 {/* H2: Exactly 56 characters */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   3. Will Registration: Mandatory vs Optional in Meghalaya
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed">
                   Under Section 18(e) of the Registration Act, 1908, registering a Will is legally optional in Meghalaya. A Will executed on plain white A4 paper signed in the presence of two witnesses is legally enforceable upon execution. However, registering the document at the Sub-Registrar Office in the Deputy Commissioner&apos;s complex provides vital evidentiary protection against customary clan litigation:
                 </p>
@@ -624,9 +624,9 @@ export default function MeghalayaLocationClient({ faqs }: Props) {
                   <span>HIGH COURT OF MEGHALAYA PRECEDENTS</span>
                 </div>
                 {/* H2: Exactly 53 characters */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   4. High Court of Meghalaya: Probate Rules &amp; Precedents
-                </h2>
+                </h3>
                 <div className="space-y-4 text-sm md:text-base text-slate-700 leading-relaxed">
                   <p>
                     Under Section 213 read with Section 57 of the Indian Succession Act, 1925, obtaining court probate for a Will is mandatory <strong>only within the historical presidency towns of Mumbai, Kolkata, and Chennai</strong>. Because the State of Meghalaya lies outside these presidency boundaries, court probate is strictly <strong>non-compulsory</strong>.
@@ -656,9 +656,9 @@ export default function MeghalayaLocationClient({ faqs }: Props) {
                   <span>REGISTRATION OFFICES DIRECTORY</span>
                 </div>
                 {/* H2: Exactly 52 characters */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   5. Meghalaya Sub-Registrar Directory &amp; DC Office Hubs
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed">
                   Will registration in Meghalaya is administered by Sub-Registrars operating within the Deputy Commissioner&apos;s (DC) Office in each district headquarters. Search below to find your jurisdictional registry office:
                 </p>
@@ -757,9 +757,9 @@ export default function MeghalayaLocationClient({ faqs }: Props) {
                   <span>REGIONAL CITIES COVERAGE &amp; ASSET NUANCES</span>
                 </div>
                 {/* H2: Exactly 58 characters */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   6. Regional Cities: District-Wise Will Drafting in Meghalaya
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Estate assets in Meghalaya range from prime residential properties and commercial establishments in Shillong, agricultural and horticultural estates in the Khasi and Jaintia Hills, plantation holdings in the Garo Hills, to industrial belts along the Ri-Bhoi highway. Our estate advocates deliver customized legal drafting, DC Office Sub-Registrar scheduling, and doorstep execution across all regional centers:
                 </p>
@@ -1200,9 +1200,9 @@ export default function MeghalayaLocationClient({ faqs }: Props) {
                   <span>STEP-BY-STEP OPERATING PROCEDURE</span>
                 </div>
                 {/* H2: Exactly 55 characters */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   7. 5-Step SOP: Drafting to SRO Registration in Meghalaya
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed">
                   Executing an enforceable Will in Meghalaya follows an orderly five-stage legal process ensuring full conformity with customary traditions and statutory registration acts:
                 </p>
@@ -1289,9 +1289,9 @@ export default function MeghalayaLocationClient({ faqs }: Props) {
                   <span>DOORSTEP &amp; HOSPITAL REGISTRATION SUPPORT</span>
                 </div>
                 {/* H2: Exactly 55 characters */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   8. Section 31 Registration Act: Home Visits in Meghalaya
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed">
                   For senior citizens, bedridden testators, or hospital inpatients in Meghalaya who cannot physically travel to the DC Office registry counter, <strong>Section 31 of the Registration Act, 1908</strong> allows the Sub-Registrar to visit the testator&apos;s residence or hospital:
                 </p>
@@ -1329,9 +1329,9 @@ export default function MeghalayaLocationClient({ faqs }: Props) {
                   <span>PREPARATION &amp; VERIFICATION CHECKLIST</span>
                 </div>
                 {/* H2: Exactly 52 characters */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   9. Essential Documents for Meghalaya Will Registration
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed">
                   Review the essential documents required for drafting and registering a Will before the Sub-Registrar in Meghalaya. Check each item as you prepare:
                 </p>
@@ -1388,9 +1388,9 @@ export default function MeghalayaLocationClient({ faqs }: Props) {
                   <span>ASSET CLASSIFICATION &amp; LAND LAWS</span>
                 </div>
                 {/* H2: Exactly 55 characters */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   10. Property Types: Self-Acquired Assets &amp; Land Holdings
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed">
                   Different property categories in Meghalaya require precise statutory drafting to ensure testamentary legality:
                 </p>
@@ -1443,9 +1443,9 @@ export default function MeghalayaLocationClient({ faqs }: Props) {
                   <span>TRANSPARENT GOVERNMENT TARIFFS</span>
                 </div>
                 {/* H2: Exactly 47 characters */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   11. Stamp Duty Exemptions &amp; SRO Fees in Meghalaya
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed">
                   Under the Indian Stamp Act as adopted in Meghalaya, Wills are <strong>completely exempt from stamp duty</strong>. You do not need to buy expensive stamp papers:
                 </p>
@@ -1502,9 +1502,9 @@ export default function MeghalayaLocationClient({ faqs }: Props) {
                   <span>TRANSPARENT LEGAL PACKAGES</span>
                 </div>
                 {/* H2: Exactly 53 characters */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   12. Transparent Pricing: Meghalaya Will Drafting Plans
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed">
                   Choose the plan that fits your family estate requirements. Transparent pricing with zero hidden charges:
                 </p>
@@ -1643,9 +1643,9 @@ export default function MeghalayaLocationClient({ faqs }: Props) {
                   <span>COMMON LEGAL QUERIES</span>
                 </div>
                 {/* H2: Exactly 54 characters */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   Frequently Asked Questions: Will Drafting in Meghalaya
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed">
                   Answers to frequent questions about Meghalaya succession, Khasi-Garo customary inheritance, and Will registration:
                 </p>
@@ -1689,9 +1689,9 @@ export default function MeghalayaLocationClient({ faqs }: Props) {
                   <span>LEGAL AUTHORITIES &amp; STATUTORY CODES</span>
                 </div>
                 {/* H2: Exactly 54 characters */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   13. Statutory Citations &amp; Legal References in Meghalaya
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed">
                   Every Will drafted by our advocates strictly incorporates and complies with applicable statutory enactments:
                 </p>

@@ -481,9 +481,9 @@ export default function NagalandLocationClient({ faqs }: Props) {
                   <span>CUSTOMARY PROTECTIONS &amp; STATUTORY CODES</span>
                 </div>
                 {/* H2 <= 70 chars: 58 chars */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   2. Legal Framework: Customary Law vs Indian Succession Act
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Estate devolution in Nagaland operates under two concurrent legal mechanisms: constitutional protections safeguarding tribal customary heritage, and statutory provisions governing self-acquired property and movable assets.
                 </p>
@@ -533,9 +533,9 @@ export default function NagalandLocationClient({ faqs }: Props) {
                   <span>REGISTRATION ACT, 1908 COMPLIANCE</span>
                 </div>
                 {/* H2 <= 70 chars: 54 chars */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   3. Will Registration in Nagaland: DC Office &amp; Book III
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Under Section 18(e) of the Registration Act, 1908, registering a Will is optional in Nagaland. An unwritten or unregistered Will signed before two witnesses is legally valid. However, formal registration before the Deputy Commissioner provides decisive legal advantages.
                 </p>
@@ -588,9 +588,9 @@ export default function NagalandLocationClient({ faqs }: Props) {
                   <span>GAUHATI HIGH COURT JURISDICTION</span>
                 </div>
                 {/* H2 <= 70 chars: 55 chars */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   4. Gauhati High Court: Probate Rules for Nagaland Wills
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   One of the most frequent misconceptions among property owners in Nagaland is whether an executor must secure court probate before executing a Will. The legal position under Gauhati High Court jurisprudence is unequivocal:
                 </p>
@@ -638,9 +638,9 @@ export default function NagalandLocationClient({ faqs }: Props) {
                   <span>REGISTRATION OFFICES ACROSS NAGALAND</span>
                 </div>
                 {/* H2 <= 70 chars: 54 chars */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   5. District Directory: Nagaland SRO &amp; DC Legal Registry
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   In Nagaland, the Deputy Commissioner (DC), Additional Deputy Commissioner (ADC), or Sub-Divisional Officer (Civil) functions as the District Registrar and Sub-Registrar under the Registration Act, 1908. Select your district hub below to view administrative registry details:
                 </p>
@@ -733,9 +733,9 @@ export default function NagalandLocationClient({ faqs }: Props) {
                   <span>REGIONAL CITIES COVERAGE &amp; ASSET NUANCES</span>
                 </div>
                 {/* H2 <= 70 chars: 53 chars */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   6. Regional Cities: Area-Wise Will Drafting in Nagaland
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Asset portfolios in Nagaland vary widely from high-value commercial properties in Dimapur and administrative family estates in Kohima to educational infrastructure in Chumoukedima and cultural town holdings in Mokokchung. Our estate advocates provide customized legal drafting, Article 371A safeguards, and Deputy Commissioner registry accompaniment across all key regional cities:
                 </p>
@@ -1176,9 +1176,9 @@ export default function NagalandLocationClient({ faqs }: Props) {
                   <span>STEP-BY-STEP LEGAL PROCEDURE</span>
                 </div>
                 {/* H2 <= 70 chars: 50 chars */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   7. 5-Step Process: Legal Will Drafting in Nagaland
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Executing a legally binding Will in Nagaland requires strict adherence to constitutional safeguards, statutory attestation, and district registration protocols:
                 </p>
@@ -1270,9 +1270,9 @@ export default function NagalandLocationClient({ faqs }: Props) {
                   <span>DOORSTEP ADVOCATE &amp; REGISTRATION SERVICE</span>
                 </div>
                 {/* H2 <= 70 chars: 51 chars */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   8. Doorstep Execution: Section 31 Home Registration
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   For elderly testators, bedridden individuals, or persons with mobility restrictions in Kohima, Dimapur, or district hill areas, visiting government offices can be challenging. Under <strong>Section 31 of the Registration Act, 1908</strong>, registration can take place directly at your residence.
                 </p>
@@ -1333,9 +1333,9 @@ export default function NagalandLocationClient({ faqs }: Props) {
                   <span>REGISTRATION PREPARATION</span>
                 </div>
                 {/* H2 <= 70 chars: 52 chars */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   9. Essential Documents for Nagaland Will Registration
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Interactive checklist for registering your Will in Nagaland. Click each document as you assemble your paperwork:
                 </p>
@@ -1393,9 +1393,9 @@ export default function NagalandLocationClient({ faqs }: Props) {
                   <span>ASSET CLASSIFICATION &amp; CLAUSES</span>
                 </div>
                 {/* H2 <= 70 chars: 58 chars */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   10. Property Categories: Ancestral vs Self-Acquired Assets
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Estate planning in Nagaland requires precise demarcation across four distinct asset classes to ensure complete enforceability:
                 </p>
@@ -1464,9 +1464,9 @@ export default function NagalandLocationClient({ faqs }: Props) {
                   <span>STATUTORY FEE SCHEDULE</span>
                 </div>
                 {/* H2 <= 70 chars: 54 chars */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   11. Registration Fees &amp; Stamp Duty Schedule in Nagaland
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Unlike property gifts or sale deeds which attract heavy ad-valorem stamp duty and registration fees, Wills are testamentary instruments and enjoy substantial statutory exemptions across Nagaland:
                 </p>
@@ -1534,9 +1534,9 @@ export default function NagalandLocationClient({ faqs }: Props) {
                   <span>TRANSPARENT FIXED FEES</span>
                 </div>
                 {/* H2 <= 70 chars: 50 chars */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   12. Professional Will Drafting Packages in Nagaland
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Fixed pricing packages with zero hidden fees. All options include legally vetted clauses, Article 371A safeguards, and complete testamentary protection:
                 </p>
@@ -1667,9 +1667,9 @@ export default function NagalandLocationClient({ faqs }: Props) {
                   <span>LEGAL FAQ &amp; ADVISORY</span>
                 </div>
                 {/* H2 <= 70 chars: 51 chars */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   Frequently Asked Questions: Nagaland Will Drafting
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Clear answers to key legal questions about making a Will in Nagaland, Article 371A safeguards, and property succession:
                 </p>
@@ -1711,9 +1711,9 @@ export default function NagalandLocationClient({ faqs }: Props) {
                   <span>STATUTORY AUTHORITIES</span>
                 </div>
                 {/* H2 <= 70 chars: 57 chars */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   Statutory References: Nagaland Succession &amp; Property Laws
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Key constitutional and legal statutes governing estate planning, customary protections, and registration in Nagaland:
                 </p>

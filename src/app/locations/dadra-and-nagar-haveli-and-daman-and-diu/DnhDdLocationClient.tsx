@@ -570,9 +570,9 @@ export default function DnhDdLocationClient({ faqs }: Props) {
                   <span>STATUTORY FOUNDATION &amp; SUCCESSION JURISPRUDENCE</span>
                 </div>
                 {/* H2: 52 chars (<= 70) */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   1. Legal Framework: Succession in Dadra, Daman &amp; Diu
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Estate succession across Dadra and Nagar Haveli and Daman and Diu represents a distinct blend of national statutory law and unique historical administrative traditions. While the Indian Succession Act, 1925 governs the execution, attestation, and revocation of Wills, local property transfer mechanisms interface with the Union Territory Administration, municipal corporations, and agrarian land reforms.
                 </p>
@@ -637,9 +637,9 @@ export default function DnhDdLocationClient({ faqs }: Props) {
                   <span>REGISTRATION ACT 1908 COMPLIANCE</span>
                 </div>
                 {/* H2: 51 chars (<= 70) */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   2. Registration Rules: Optional vs Book III Custody
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Under Section 18(e) of the Registration Act, 1908, the registration of a testamentary Will is strictly optional throughout the Union Territory. A Will written on ordinary white paper and attested by two witnesses is legally enforceable in Indian courts. However, registering the Will before the Sub-Registrar provides immense evidentiary benefits:
                 </p>
@@ -721,9 +721,9 @@ export default function DnhDdLocationClient({ faqs }: Props) {
                   <span>BOMBAY HIGH COURT PROBATE JURISDICTION</span>
                 </div>
                 {/* H2: 53 chars (<= 70) */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   3. Bombay High Court Jurisdiction &amp; Probate Exemption
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   A common point of confusion among property owners in Dadra and Nagar Haveli and Daman and Diu is whether probate is mandatory, given that the High Court of Bombay exercises judicial supervision over the Union Territory. The legal reality is clear and favorable:
                 </p>
@@ -796,9 +796,9 @@ export default function DnhDdLocationClient({ faqs }: Props) {
                   <span>REGISTRATION OFFICES &amp; JURISDICTIONS</span>
                 </div>
                 {/* H2: 53 chars (<= 70) */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   4. SRO Directory: Silvassa, Daman &amp; Diu Registry Hubs
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Locate your designated Sub-Registrar Office in Dadra and Nagar Haveli, Daman, or Diu. Filter by region to review official office addresses, geographic jurisdictions, and appointment protocols:
                 </p>
@@ -902,9 +902,9 @@ export default function DnhDdLocationClient({ faqs }: Props) {
                   <span>REGIONAL CITIES &amp; ASSET SUCCESSION NUANCES</span>
                 </div>
                 {/* H2: 57 chars (<= 70) */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   5. Regional Cities: Succession Across DNH and Daman &amp; Diu
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Estate assets in Dadra and Nagar Haveli and Daman and Diu span high-capacity manufacturing plants and corporate headquarters in Silvassa, Portuguese-era coastal estates and beachfront hotels in Daman, heritage fishing and tourism assets in Diu, and agricultural holdings across rural belts. Our advocates deliver customized legal drafting and registry accompaniment across every key hub:
                 </p>
@@ -1242,9 +1242,9 @@ export default function DnhDdLocationClient({ faqs }: Props) {
                   <span>STEP-BY-STEP OPERATING PROCEDURE</span>
                 </div>
                 {/* H2: 50 chars (<= 70) */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   6. 5-Step Process: Draft and Register Your UT Will
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Follow this verified standard legal protocol to draft, attest, and register your Will in Dadra and Nagar Haveli, Daman, or Diu:
                 </p>
@@ -1351,9 +1351,9 @@ export default function DnhDdLocationClient({ faqs }: Props) {
                   <span>DOORSTEP &amp; HOSPITAL REGISTRATION COMMISSION</span>
                 </div>
                 {/* H2: 45 chars (<= 70) */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   7. Doorstep SRO Registration Under Section 31
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   For senior citizens, bedridden individuals, or factory founders unable to travel to the registry counter, Section 31 of the Registration Act, 1908 provides a legal doorstep commission facility:
                 </p>
@@ -1422,9 +1422,9 @@ export default function DnhDdLocationClient({ faqs }: Props) {
                   <span>REGISTRATION DOCUMENTATION REQUIREMENTS</span>
                 </div>
                 {/* H2: 52 chars (<= 70) */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   8. Documents Required: Checklist for UT Registration
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Interactive document preparation checklist for your registration appearance before the Sub-Registrar in Silvassa, Daman, or Diu ({checkedCount} of {checklist.length} completed):
                 </p>
@@ -1487,9 +1487,9 @@ export default function DnhDdLocationClient({ faqs }: Props) {
                   <span>ASSET BEQUEST CATEGORIES</span>
                 </div>
                 {/* H2: 55 chars (<= 70) */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   9. Asset Categories: Industrial, Heritage &amp; Urban Plots
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   A comprehensive testamentary Will can cover every category of immovable and movable assets owned within Dadra and Nagar Haveli and Daman and Diu or across India:
                 </p>
@@ -1581,9 +1581,9 @@ export default function DnhDdLocationClient({ faqs }: Props) {
                   <span>STATUTORY FEE STRUCTURE</span>
                 </div>
                 {/* H2: 50 chars (<= 70) */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   10. Fees &amp; Stamp Duty: Registration Schedule in UT
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Testamentary instruments enjoy significant statutory fee concessions compared to inter-vivos property transfers like gift deeds or sale deeds:
                 </p>
@@ -1643,9 +1643,9 @@ export default function DnhDdLocationClient({ faqs }: Props) {
                   <span>TRANSPARENT LEGAL SERVICES &amp; PRICING</span>
                 </div>
                 {/* H2: 49 chars (<= 70) */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   11. Packages &amp; Pricing: Transparent Legal Support
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Choose the plan that matches your family&apos;s estate planning and registration requirements:
                 </p>
@@ -1805,9 +1805,9 @@ export default function DnhDdLocationClient({ faqs }: Props) {
                   <span>COMMONLY ASKED QUESTIONS</span>
                 </div>
                 {/* H2: 54 chars (<= 70) */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   12. Frequently Asked Questions: Succession in DNH &amp; DD
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Clear answers to key practical questions regarding Will making, registration, probate exemption, and property succession in Dadra and Nagar Haveli and Daman and Diu:
                 </p>
@@ -1856,9 +1856,9 @@ export default function DnhDdLocationClient({ faqs }: Props) {
                   <span>STATUTORY CITATIONS &amp; LEGAL REFERENCES</span>
                 </div>
                 {/* H2: 53 chars (<= 70) */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   13. Statutory Provisions: Governing Succession &amp; Land
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Formal legal provisions governing testamentary drafting, attestation, registration, and property mutation in Dadra and Nagar Haveli and Daman and Diu:
                 </p>

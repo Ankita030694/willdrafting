@@ -501,9 +501,9 @@ export default function DehradunLocationClient({ faqs }: Props) {
                 </div>
 
                 {/* H2 #2: Length 47 chars */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   1. Legal Framework for Will Drafting in Dehradun
-                </h2>
+                </h3>
 
                 <p className="text-slate-700 leading-relaxed text-sm sm:text-base">
                   Will drafting in Dehradun follows the Indian Succession Act, 1925. Section 2(h) defines a Will. It is a legal declaration of your wishes for your property after death. Any adult of sound mind can make a valid Will. You can bequeath your homes, plots, savings, and personal assets.
@@ -553,9 +553,9 @@ export default function DehradunLocationClient({ faqs }: Props) {
                 </div>
 
                 {/* H2 #3: Length 46 chars */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   2. Is Will Registration Compulsory in Dehradun?
-                </h2>
+                </h3>
 
                 <p className="text-slate-700 leading-relaxed text-sm sm:text-base">
                   Many people in Dehradun ask if Will registration is mandatory. Under Section 18(e) of the Registration Act, 1908, registration is optional in India. A Will written on plain paper is legally valid if properly signed and witnessed.
@@ -620,9 +620,9 @@ export default function DehradunLocationClient({ faqs }: Props) {
                 </div>
 
                 {/* H2 #4: Length 50 chars */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   3. Uttarakhand Probate Rules: Section 213 Exemption
-                </h2>
+                </h3>
 
                 <p className="text-slate-700 leading-relaxed text-sm sm:text-base">
                   Probate is a court order certifying that a Will is genuine. Under Section 213 and Section 57 of the Indian Succession Act, probate is mandatory only in Mumbai, Kolkata, and Chennai. These are the historical presidency towns.
@@ -664,9 +664,9 @@ export default function DehradunLocationClient({ faqs }: Props) {
                 </div>
 
                 {/* H2 #5: Length 48 chars decoded, 52 chars raw */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   4. Dehradun Sub-Registrar Office Directory &amp; SROs
-                </h2>
+                </h3>
 
                 <p className="text-slate-700 leading-relaxed text-sm sm:text-base">
                   Dehradun has several registry offices. You can register your Will at any local office where you live. Search for your area below:
@@ -761,9 +761,9 @@ export default function DehradunLocationClient({ faqs }: Props) {
                     <span>LOCAL AREA COVERAGE &amp; ASSET NUANCES</span>
                   </div>
                   {/* H2 #6: Length 50 chars */}
-                  <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                  <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                     5. Area-Wise Will Drafting Services Across Dehradun
-                  </h2>
+                  </h3>
                   <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                     Estate assets in Dehradun span heritage colonial bungalows along Rajpur Road and Dalanwala, institutional residences in Vasant Vihar, defense estates in Clement Town and Garhi Cantt, modern high-rises along Sahastradhara Road, and agricultural farmhouses in Doiwala. Our estate advocates deliver customized legal drafting, Uttarakhand e-Prerna slot scheduling, and Sub-Registrar accompaniment across all key micro-markets:
                   </p>
@@ -1216,9 +1216,9 @@ export default function DehradunLocationClient({ faqs }: Props) {
                 </div>
 
                 {/* H2 #7: Length 48 chars */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   6. Step-by-Step Will Registration in Uttarakhand
-                </h2>
+                </h3>
 
                 <p className="text-slate-700 leading-relaxed text-sm sm:text-base">
                   Registering your Will in Dehradun is simple with the Uttarakhand e-Prerna portal. Follow these five clear steps:
@@ -1304,9 +1304,9 @@ export default function DehradunLocationClient({ faqs }: Props) {
                 </div>
 
                 {/* H2 #8: Length 48 chars */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   7. Doorstep Will Registration for Senior Citizens
-                </h2>
+                </h3>
 
                 <p className="text-slate-700 leading-relaxed text-sm sm:text-base">
                   Many elderly people in Dehradun cannot visit government offices easily. Under Section 31, the registrar can visit your home or hospital room.
@@ -1367,9 +1367,9 @@ export default function DehradunLocationClient({ faqs }: Props) {
                 </div>
 
                 {/* H2 #9: Length 46 chars */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   8. Documents Checklist for Dehradun Will Making
-                </h2>
+                </h3>
 
                 <p className="text-slate-700 leading-relaxed text-sm sm:text-base">
                   Keep these papers ready before you make your Will. Check off each item to see your progress:
@@ -1424,9 +1424,9 @@ export default function DehradunLocationClient({ faqs }: Props) {
                 </div>
 
                 {/* H2 #10: Length 50 chars decoded, 54 chars raw */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   9. Dehradun Real Estate: MDDA Plots &amp; Hill Estates
-                </h2>
+                </h3>
 
                 <p className="text-slate-700 leading-relaxed text-sm sm:text-base">
                   Real estate in Dehradun includes different types of property. Each category requires clear words in your Will:
@@ -1491,9 +1491,9 @@ export default function DehradunLocationClient({ faqs }: Props) {
                 </div>
 
                 {/* H2 #11: Length 52 chars decoded, 56 chars raw */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   10. Official Stamp Duty &amp; Registration Fees: Dehradun
-                </h2>
+                </h3>
 
                 <p className="text-slate-700 leading-relaxed text-sm sm:text-base">
                   Making a Will in Uttarakhand is very cost-effective. You pay zero stamp duty to the state government. You only pay small user fees at the Sub-Registrar Office.
@@ -1550,9 +1550,9 @@ export default function DehradunLocationClient({ faqs }: Props) {
                 </div>
 
                 {/* H2 #12: Length 42 chars decoded, 46 chars raw */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   11. Transparent Will Packages &amp; Legal Fees
-                </h2>
+                </h3>
 
                 <p className="text-slate-700 leading-relaxed text-sm sm:text-base">
                   Pick the right legal plan for your family in Dehradun:
@@ -1684,9 +1684,9 @@ export default function DehradunLocationClient({ faqs }: Props) {
                 </div>
 
                 {/* H2 #13: Length 45 chars */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   12. Frequently Asked Questions: Dehradun Wills
-                </h2>
+                </h3>
 
                 <p className="text-slate-700 leading-relaxed text-sm sm:text-base">
                   Here are quick answers to common questions about drafting and registering a Will in Dehradun:
@@ -1734,9 +1734,9 @@ export default function DehradunLocationClient({ faqs }: Props) {
                 </div>
 
                 {/* H2 #14: Length 48 chars decoded, 52 chars raw */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   13. Statutory References &amp; Uttarakhand IGR Rules
-                </h2>
+                </h3>
 
                 <p className="text-slate-700 leading-relaxed text-sm sm:text-base">
                   Every Will from WillDrafting follows Indian law and key Supreme Court judgments:

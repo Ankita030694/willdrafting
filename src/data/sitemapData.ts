@@ -1673,6 +1673,14 @@ export const staticPages: SitemapPageItem[] = [
     changefreq: "weekly",
     priority: 0.8,
   },
+  {
+    title: "Video Recording of Will Signing in India: Rules & Word Script",
+    href: "/blogs/video-recording-of-will-signing-rules-india",
+    category: "Guides",
+    date: "2026-10-28",
+    changefreq: "weekly",
+    priority: 0.8,
+  },
 ];
 
 /**

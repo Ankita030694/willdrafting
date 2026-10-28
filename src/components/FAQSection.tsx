@@ -48,7 +48,7 @@ export default function FAQSection() {
       <div className="container" style={{ maxWidth: "800px" }}>
         {/* Section Header */}
         <div className="faq-header-wrap" style={{ textAlign: "center", marginBottom: "3rem" }}>
-          <h2
+          <h3
             style={{
               fontSize: "clamp(1.55rem, 4.5vw, 2.5rem)",
               color: "var(--color-navy)",
@@ -58,7 +58,7 @@ export default function FAQSection() {
             }}
           >
             Frequently Asked Questions
-          </h2>
+          </h3>
           <p style={{ fontSize: "clamp(0.92rem, 2.5vw, 1.05rem)", color: "var(--color-charcoal)", lineHeight: 1.65, margin: 0 }}>
             Common questions about Indian succession law, online drafting, and execution.
           </p>

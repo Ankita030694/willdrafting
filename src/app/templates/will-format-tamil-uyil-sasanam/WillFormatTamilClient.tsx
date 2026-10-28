@@ -552,9 +552,9 @@ WITNESS 2: [Name, Address, ID Proof]`;
               </div>
 
               {/* H2: <= 70 chars, NO em-dash */}
-              <h2 className="text-xl sm:text-2xl font-extrabold text-[#172228] leading-tight">
+              <h3 className="text-xl sm:text-2xl font-extrabold text-[#172228] leading-tight">
                 2. Complete Uyil Sasanam Format: Native Tamil Draft
-              </h2>
+              </h3>
 
               <p className="text-slate-700 text-sm sm:text-base leading-relaxed">
                 This legal draft uses clear Tamil words accepted by Sub-Registrar Offices across Tamil Nadu.
@@ -608,9 +608,9 @@ WITNESS 2: [Name, Address, ID Proof]`;
               </div>
 
               {/* H2: <= 70 chars, NO em-dash */}
-              <h2 className="text-xl sm:text-2xl font-extrabold text-[#172228] leading-tight">
+              <h3 className="text-xl sm:text-2xl font-extrabold text-[#172228] leading-tight">
                 3. English Translation: Tamil Uyil Clauses Explained
-              </h2>
+              </h3>
 
               <p className="text-slate-700 text-sm sm:text-base leading-relaxed">
                 Here is the English meaning for each key clause in the Tamil Uyil. This helps NRI family
@@ -660,9 +660,9 @@ WITNESS 2: [Name, Address, ID Proof]`;
               </div>
 
               {/* H2: <= 70 chars, NO em-dash */}
-              <h2 className="text-xl sm:text-2xl font-extrabold text-[#172228] leading-tight">
+              <h3 className="text-xl sm:text-2xl font-extrabold text-[#172228] leading-tight">
                 4. Interactive Clause Selector: Tailor Your Uyil
-              </h2>
+              </h3>
 
               <p className="text-slate-700 text-sm sm:text-base leading-relaxed">
                 Choose your family setup and property type to create a custom clause in Tamil for your Will.
@@ -755,9 +755,9 @@ WITNESS 2: [Name, Address, ID Proof]`;
               </div>
 
               {/* H2: <= 70 chars, NO em-dash */}
-              <h2 className="text-xl sm:text-2xl font-extrabold text-[#172228] leading-tight">
+              <h3 className="text-xl sm:text-2xl font-extrabold text-[#172228] leading-tight">
                 5. Chennai Probate Moat: Section 213 High Court Rules
-              </h2>
+              </h3>
 
               <p className="text-slate-700 text-sm sm:text-base leading-relaxed">
                 Many online guides miss the special probate rule for Chennai under Section 213 of the Indian
@@ -806,9 +806,9 @@ WITNESS 2: [Name, Address, ID Proof]`;
               </div>
 
               {/* H2: <= 70 chars, NO em-dash */}
-              <h2 className="text-xl sm:text-2xl font-extrabold text-[#172228] leading-tight">
+              <h3 className="text-xl sm:text-2xl font-extrabold text-[#172228] leading-tight">
                 6. Tamil Nadu SRO Fee Calculator &amp; Registration Rules
-              </h2>
+              </h3>
 
               <p className="text-slate-700 text-sm sm:text-base leading-relaxed">
                 Many agents ask for large fees to register a Will. Under Tamil Nadu law, stamp duty on a Will is
@@ -912,9 +912,9 @@ WITNESS 2: [Name, Address, ID Proof]`;
               </div>
 
               {/* H2: <= 70 chars, NO em-dash */}
-              <h2 className="text-xl sm:text-2xl font-extrabold text-[#172228] leading-tight">
+              <h3 className="text-xl sm:text-2xl font-extrabold text-[#172228] leading-tight">
                 7. Comparison: Registered Uyil vs Settlement vs Patta
-              </h2>
+              </h3>
 
               <p className="text-slate-700 text-sm sm:text-base leading-relaxed">
                 See how a registered Uyil differs from a Settlement Deed and an intestate Varisu Certificate.
@@ -976,9 +976,9 @@ WITNESS 2: [Name, Address, ID Proof]`;
               </div>
 
               {/* H2: <= 70 chars, NO em-dash */}
-              <h2 className="text-xl sm:text-2xl font-extrabold text-[#172228] leading-tight">
+              <h3 className="text-xl sm:text-2xl font-extrabold text-[#172228] leading-tight">
                 8. Step-by-Step SOP: Drafting to Registration in TN
-              </h2>
+              </h3>
 
               <p className="text-slate-700 text-sm sm:text-base leading-relaxed">
                 Follow these five clear steps to draft, sign, and register a solid Uyil in Tamil Nadu.
@@ -1072,9 +1072,9 @@ WITNESS 2: [Name, Address, ID Proof]`;
               </div>
 
               {/* H2: <= 70 chars, NO em-dash */}
-              <h2 className="text-xl sm:text-2xl font-extrabold text-[#172228] leading-tight">
+              <h3 className="text-xl sm:text-2xl font-extrabold text-[#172228] leading-tight">
                 9. Practical Case Studies: Chennai, Madurai &amp; Kovai
-              </h2>
+              </h3>
 
               <p className="text-slate-700 text-sm sm:text-base leading-relaxed">
                 Real cases show why following Tamil Nadu Will rules protects family harmony.
@@ -1137,9 +1137,9 @@ WITNESS 2: [Name, Address, ID Proof]`;
               </div>
 
               {/* H2: <= 70 chars, NO em-dash */}
-              <h2 className="text-xl sm:text-2xl font-extrabold text-[#172228] leading-tight">
+              <h3 className="text-xl sm:text-2xl font-extrabold text-[#172228] leading-tight">
                 10. Sub-Registrar Document Checklist &amp; Medical Cert
-              </h2>
+              </h3>
 
               <p className="text-slate-700 text-sm sm:text-base leading-relaxed">
                 Carry these items when you visit the Sub-Registrar Office to register your Uyil.
@@ -1172,9 +1172,9 @@ WITNESS 2: [Name, Address, ID Proof]`;
               </div>
 
               {/* H2: <= 70 chars, NO em-dash */}
-              <h2 className="text-xl sm:text-2xl font-extrabold text-[#172228] leading-tight">
+              <h3 className="text-xl sm:text-2xl font-extrabold text-[#172228] leading-tight">
                 11. Contextual Estate Calculators &amp; Succession Tools
-              </h2>
+              </h3>
 
               <p className="text-slate-700 text-sm sm:text-base leading-relaxed">
                 Making a Will connects to capital gains tax, family property checks, and witness rules. Use
@@ -1254,9 +1254,9 @@ WITNESS 2: [Name, Address, ID Proof]`;
               </div>
 
               {/* H2: <= 70 chars, NO em-dash */}
-              <h2 className="text-xl sm:text-2xl font-extrabold text-[#172228] leading-tight">
+              <h3 className="text-xl sm:text-2xl font-extrabold text-[#172228] leading-tight">
                 12. Legal Backing: Senior Counsel Succession Profile
-              </h2>
+              </h3>
 
               <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 p-5 rounded-2xl bg-[#FAF7F0] border border-slate-200">
                 <div className="w-14 h-14 rounded-full bg-[#172228] text-rose-200 font-extrabold text-lg flex items-center justify-center shrink-0">
@@ -1290,9 +1290,9 @@ WITNESS 2: [Name, Address, ID Proof]`;
               </div>
 
               {/* H2: <= 70 chars, NO em-dash */}
-              <h2 className="text-xl sm:text-2xl font-extrabold text-[#172228] leading-tight">
+              <h3 className="text-xl sm:text-2xl font-extrabold text-[#172228] leading-tight">
                 13. Frequently Asked Questions: Tamil Uyil Sasanam
-              </h2>
+              </h3>
 
               <div className="divide-y divide-slate-200 pt-2">
                 {FAQS_DATA.map((faq, idx) => {
@@ -1327,9 +1327,9 @@ WITNESS 2: [Name, Address, ID Proof]`;
               </div>
 
               {/* H2: <= 70 chars, NO em-dash */}
-              <h2 className="text-xl sm:text-2xl font-extrabold text-[#172228] leading-tight">
+              <h3 className="text-xl sm:text-2xl font-extrabold text-[#172228] leading-tight">
                 14. Official Tamil Nadu Statutory References &amp; Acts
-              </h2>
+              </h3>
 
               <ul className="text-xs sm:text-sm text-slate-700 space-y-2 leading-relaxed">
                 <li className="flex items-start gap-2">

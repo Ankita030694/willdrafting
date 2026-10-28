@@ -13,6 +13,31 @@ function escapeXml(str: string): string {
     .replace(/'/g, "&apos;");
 }
 
+function toSafeUtcDateString(...candidates: unknown[]): string {
+  for (const val of candidates) {
+    if (!val) continue;
+    if (val instanceof Date && !isNaN(val.getTime())) {
+      return val.toUTCString();
+    }
+    if (typeof val === "string") {
+      const trimmed = val.trim();
+      const dmyOrMdy = trimmed.match(/^(\d{1,2})[-/.](\d{1,2})[-/.](\d{4})$/);
+      if (dmyOrMdy) {
+        const p1 = Number(dmyOrMdy[1]);
+        const p2 = Number(dmyOrMdy[2]);
+        const year = Number(dmyOrMdy[3]);
+        const day = p2 > 12 ? p2 : p1;
+        const month = p2 > 12 ? p1 : p2;
+        const d = new Date(Date.UTC(year, month - 1, day));
+        if (!isNaN(d.getTime())) return d.toUTCString();
+      }
+      const parsed = new Date(trimmed);
+      if (!isNaN(parsed.getTime())) return parsed.toUTCString();
+    }
+  }
+  return new Date().toUTCString();
+}
+
 export async function GET() {
   try {
     const baseUrl = "https://www.willdrafting.in";
@@ -40,7 +65,7 @@ export async function GET() {
         title: b.title,
         slug: b.slug,
         description: b.metaDescription || b.subtitle || "",
-        pubDate: new Date(b.date || b.createdAt).toUTCString(),
+        pubDate: toSafeUtcDateString(b.date, b.createdAt),
         author: b.author || "Advocate Anuj Anand Malik",
         category: b.category || "Indian Succession Law",
       });
@@ -94,10 +119,26 @@ ${rssItems}
       headers: {
         "Content-Type": "application/xml; charset=utf-8",
         "Cache-Control": "public, s-maxage=3600, stale-while-revalidate=3600",
+        "X-Content-Type-Options": "nosniff",
+        "Referrer-Policy": "strict-origin-when-cross-origin",
+        "X-Frame-Options": "SAMEORIGIN",
+        "Content-Security-Policy":
+          "default-src 'self'; style-src 'unsafe-inline'; object-src 'none'; base-uri 'self'; frame-ancestors 'self';",
+        "Strict-Transport-Security": "max-age=63072000; includeSubDomains; preload",
       },
     });
   } catch (error) {
     console.error("GET /api/rss error:", error);
-    return new NextResponse("Failed to generate RSS feed", { status: 500 });
+    return new NextResponse("Failed to generate RSS feed", {
+      status: 500,
+      headers: {
+        "X-Content-Type-Options": "nosniff",
+        "Referrer-Policy": "strict-origin-when-cross-origin",
+        "X-Frame-Options": "SAMEORIGIN",
+        "Content-Security-Policy":
+          "default-src 'self'; style-src 'unsafe-inline'; object-src 'none'; base-uri 'self'; frame-ancestors 'self';",
+        "Strict-Transport-Security": "max-age=63072000; includeSubDomains; preload",
+      },
+    });
   }
 }

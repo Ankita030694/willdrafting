@@ -116,11 +116,11 @@ export default function CTA() {
         </div>
 
         {/* Main Heading */}
-        <h2 className="text-[1.65rem] sm:text-[2.25rem] lg:text-[2.45rem] font-normal leading-[1.12] tracking-tight mb-2">
+        <h3 className="text-[1.65rem] sm:text-[2.25rem] lg:text-[2.45rem] font-normal leading-[1.12] tracking-tight mb-2">
           <span className="text-[#172228] block">
             Don&apos;t Leave Your Family Guessing.
           </span>
-        </h2>
+        </h3>
 
         {/* Subtitle / Description */}
         <div className="text-[0.82rem] sm:text-[0.90rem] leading-[1.6] text-[#55636D] max-w-[620px] mx-auto mb-4 space-y-2.5">

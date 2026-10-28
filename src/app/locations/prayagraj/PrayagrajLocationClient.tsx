@@ -729,9 +729,9 @@ export default function PrayagrajLocationClient({ faqs }: Props) {
                   <span>STATUTORY PROVISIONS</span>
                 </div>
                 {/* H2 2: Exactly 48 characters */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   1. Will Drafting &amp; Succession Laws in Prayagraj
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Writing a Will in Prayagraj is governed by the <strong>Indian Succession Act, 1925</strong>, the <strong>Registration Act, 1908</strong>, and the <strong>Uttar Pradesh Revenue Code, 2006</strong>.
                   Any adult of sound mind who is at least 18 years old can make a Will to transfer self-acquired real estate, bank deposits, jewelry, and commercial equity.
@@ -794,9 +794,9 @@ export default function PrayagrajLocationClient({ faqs }: Props) {
                   <span>REGISTRATION PROCEDURE</span>
                 </div>
                 {/* H2 3: Exactly 55 characters */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   2. Will Registration in Prayagraj: Rules &amp; Legal Value
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Under <strong>Section 18(e) of the Registration Act, 1908</strong>, registering a Will in Uttar Pradesh is voluntary.
                   An unregistered Will executed before two independent witnesses is legally enforceable.
@@ -855,9 +855,9 @@ export default function PrayagrajLocationClient({ faqs }: Props) {
                   <span>JUDICIAL PRECEDENTS</span>
                 </div>
                 {/* H2 4: Exactly 53 characters */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   3. Is Probate Mandatory for Properties in Prayagraj?
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   <strong>No. Court probate is strictly optional in Prayagraj and across Uttar Pradesh.</strong>
                 </p>
@@ -902,9 +902,9 @@ export default function PrayagrajLocationClient({ faqs }: Props) {
                   <span>REGISTRY JURISDICTIONS</span>
                 </div>
                 {/* H2 5: Exactly 51 characters */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   4. Prayagraj Sub-Registrar Offices &amp; SRO Directory
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Prayagraj district operates multiple Sub-Registrar Offices under the Inspector General of Registration and Stamps Uttar Pradesh (IGRSUP). Select the appropriate SRO based on your property location or residence:
                 </p>
@@ -965,9 +965,9 @@ export default function PrayagrajLocationClient({ faqs }: Props) {
                   <span>LOCAL PRACTICE AREAS</span>
                 </div>
                 {/* H2 6: Exactly 51 characters */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   5. Area-Wise Will Drafting in Prayagraj Localities
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Looking for legally verified <strong>Will drafting services in Civil Lines, George Town, Naini, or Kalindipuram</strong>? Property ownership models, PDA leasehold conditions, and Sub-Registrar jurisdictions vary significantly across Prayagraj. Whether you own a colonial bungalow in Civil Lines, a planned PDA plot in Kalindipuram, or ancestral farmland in Soraon, our High Court advocates deliver tailored drafting, registration, and estate advisory:
                 </p>
@@ -1046,9 +1046,9 @@ export default function PrayagrajLocationClient({ faqs }: Props) {
                   <span>STEP-BY-STEP WORKFLOW</span>
                 </div>
                 {/* H2 7: Exactly 51 characters */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   6. Step-by-Step SOP: Will Drafting to Registration
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Follow this verified five-step protocol to draft and register your Will in Prayagraj without administrative delays:
                 </p>
@@ -1140,9 +1140,9 @@ export default function PrayagrajLocationClient({ faqs }: Props) {
                   <span>SPECIAL COMMISSION VISIT</span>
                 </div>
                 {/* H2 8: Exactly 53 characters */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   7. Section 31 Doorstep SRO Registration in Prayagraj
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Under <strong>Section 31 of the Registration Act, 1908</strong>, individuals who are physically unable to travel to the Sub-Registrar office can request a home visit by the Sub-Registrar. This service is widely utilized by senior citizens, retired judicial officers, and ailing residents across Civil Lines, George Town, and Tagore Town.
                 </p>
@@ -1182,9 +1182,9 @@ export default function PrayagrajLocationClient({ faqs }: Props) {
                   <span>VERIFICATION CHECKLIST</span>
                 </div>
                 {/* H2 9: Exactly 52 characters */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   8. Mandatory Document Checklist for Prayagraj Wills
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Use this interactive checklist to prepare your documents before visiting the Prayagraj Sub-Registrar office:
                 </p>
@@ -1236,9 +1236,9 @@ export default function PrayagrajLocationClient({ faqs }: Props) {
                   <span>ASSET CLASSIFICATIONS</span>
                 </div>
                 {/* H2 10: Exactly 50 characters */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   9. Estate Asset Distribution: PDA Plots &amp; Havelis
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   A comprehensive Will should clearly itemize all categories of movable and immovable property held across Prayagraj:
                 </p>
@@ -1295,9 +1295,9 @@ export default function PrayagrajLocationClient({ faqs }: Props) {
                   <span>GOVERNMENT CHARGES</span>
                 </div>
                 {/* H2 11: Exactly 49 characters */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   10. Registration Charges &amp; Zero Stamp Duty in UP
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Under the Indian Stamp Act as applicable to Uttar Pradesh, <strong>Wills are completely exempt from stamp duty</strong>. You do not pay percentage-based fees on your property valuation.
                 </p>
@@ -1332,9 +1332,9 @@ export default function PrayagrajLocationClient({ faqs }: Props) {
                   <span>TRANSPARENT PLANS</span>
                 </div>
                 {/* H2 12: Exactly 49 characters */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   11. Transparent Pricing: Prayagraj Will Packages
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Choose the estate planning package tailored to your family assets in Prayagraj. Clear pricing with zero hidden fees:
                 </p>
@@ -1467,9 +1467,9 @@ export default function PrayagrajLocationClient({ faqs }: Props) {
                   <span>COMMON QUESTIONS</span>
                 </div>
                 {/* H2 13: Exactly 55 characters */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   Frequently Asked Questions: Will Drafting in Prayagraj
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Clear, authoritative answers to common legal queries about Will drafting, probate, and SRO registration in Prayagraj:
                 </p>
@@ -1514,9 +1514,9 @@ export default function PrayagrajLocationClient({ faqs }: Props) {
                   <span>LEGAL AUTHORITIES</span>
                 </div>
                 {/* H2 14: Exactly 49 characters */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   12. Statutory Citations &amp; Legal Precedents in UP
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Every Will prepared through WillDrafting strictly complies with binding Indian enactments and judicial precedents:
                 </p>

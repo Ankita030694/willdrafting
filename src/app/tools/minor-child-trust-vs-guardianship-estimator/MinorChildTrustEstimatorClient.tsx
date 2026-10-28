@@ -508,9 +508,9 @@ The Testamentary Guardian shall have full custody and care of my minor child's e
                 <AlertTriangle className="w-4 h-4" />
                 <span>CRITICAL LEGAL PITFALL</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 2. The Guardian Trap: Section 8 HMGA &amp; Court Lockups
-              </h2>
+              </h3>
               <div className="bg-white rounded-2xl border border-rose-200/80 p-5 sm:p-6 space-y-4 shadow-xs text-sm text-slate-700 leading-relaxed">
                 <div className="flex items-start gap-3 p-4 rounded-xl bg-rose-50/70 border border-rose-200 text-rose-900 text-xs sm:text-sm">
                   <ShieldAlert className="w-5 h-5 text-rose-600 shrink-0 mt-0.5" />
@@ -558,9 +558,9 @@ The Testamentary Guardian shall have full custody and care of my minor child's e
                     <Calculator className="w-4 h-4" />
                     <span>INTERACTIVE DIAGNOSTIC ENGINE</span>
                   </div>
-                  <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+                  <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                     3. Minor Child Trust vs Guardianship Interactive Tool
-                  </h2>
+                  </h3>
                 </div>
                 <button
                   type="button"
@@ -888,9 +888,9 @@ The Testamentary Guardian shall have full custody and care of my minor child's e
                 <Layers className="w-4 h-4" />
                 <span>STRUCTURED COMPARISON</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 4. Comparative Matrix: Guardian vs Testamentary Trust
-              </h2>
+              </h3>
               <div className="bg-white rounded-2xl border border-slate-200/90 shadow-xs overflow-hidden">
                 <div className="overflow-x-auto">
                   <table className="w-full text-xs text-left border-collapse">
@@ -951,9 +951,9 @@ The Testamentary Guardian shall have full custody and care of my minor child's e
                 <ShieldCheck className="w-4 h-4" />
                 <span>IRREVOCABLE STATUTORY PROTECTION</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 5. Section 6 MWP Act: Protecting Term Insurance Payouts
-              </h2>
+              </h3>
               <div className="bg-white rounded-2xl border border-slate-200/90 p-5 sm:p-6 space-y-4 shadow-xs text-sm text-slate-700 leading-relaxed">
                 <p>
                   Many young parents hold 1 Crore to 5 Crore in term life insurance. Yet standard nominations
@@ -997,9 +997,9 @@ The Testamentary Guardian shall have full custody and care of my minor child's e
                 <Clock className="w-4 h-4" />
                 <span>FINANCIAL MATURITY TIMELINE</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 6. Milestone Architecture: Staggered Payout Schedules
-              </h2>
+              </h3>
               <div className="bg-white rounded-2xl border border-slate-200/90 p-5 sm:p-6 space-y-4 shadow-xs text-sm text-slate-700 leading-relaxed">
                 <p>
                   Handing a multi-crore estate to an 18-year-old child brings big risks. Many young heirs
@@ -1045,9 +1045,9 @@ The Testamentary Guardian shall have full custody and care of my minor child's e
                 <Users className="w-4 h-4" />
                 <span>GOVERNANCE &amp; CHECKS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 7. Trustee &amp; Guardian Selection: Segregated Governance
-              </h2>
+              </h3>
               <div className="bg-white rounded-2xl border border-slate-200/90 p-5 sm:p-6 space-y-4 shadow-xs text-sm text-slate-700 leading-relaxed">
                 <p>
                   Do not name the same person as both guardian and sole trustee. Splitting these two roles
@@ -1090,9 +1090,9 @@ The Testamentary Guardian shall have full custody and care of my minor child's e
                 <BookOpen className="w-4 h-4" />
                 <span>CASE STUDIES</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 8. Real Scenarios: Young Parents, NRIs &amp; Single Heirs
-              </h2>
+              </h3>
               <div className="space-y-4">
                 <div className="bg-white rounded-2xl border border-slate-200/90 p-5 space-y-2 shadow-xs">
                   <div className="flex items-center justify-between">
@@ -1167,9 +1167,9 @@ The Testamentary Guardian shall have full custody and care of my minor child's e
                 <FileCheck className="w-4 h-4" />
                 <span>PRACTICAL IMPLEMENTATION</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 9. Step-by-Step SOP: Setting Up Child Protection Trusts
-              </h2>
+              </h3>
               <div className="bg-white rounded-2xl border border-slate-200/90 p-5 sm:p-6 shadow-xs space-y-4 text-xs sm:text-sm text-slate-700">
                 <div className="space-y-3">
                   <div className="flex items-start gap-3">
@@ -1242,9 +1242,9 @@ The Testamentary Guardian shall have full custody and care of my minor child's e
                 <FileText className="w-4 h-4" />
                 <span>LEGAL DRAFTING ASSETS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 10. Copy-Paste Testamentary Trust Clauses &amp; Recitals
-              </h2>
+              </h3>
 
               <div className="rounded-2xl border border-slate-200/90 bg-white p-5 space-y-3 shadow-xs">
                 <div className="flex items-center justify-between">
@@ -1332,9 +1332,9 @@ The Testamentary Guardian shall have full custody and care of my minor child's e
                   )}
                 </button>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 11. 10-Point Estate Planning Checklist for Young Parents
-              </h2>
+              </h3>
               <div className="bg-white rounded-2xl border border-slate-200/90 p-5 sm:p-6 shadow-xs">
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs text-slate-700">
                   <div className="flex items-start gap-2.5 p-3 rounded-xl bg-slate-50 border border-slate-100">
@@ -1387,9 +1387,9 @@ The Testamentary Guardian shall have full custody and care of my minor child's e
                 <Award className="w-4 h-4" />
                 <span>LEGAL EXPERTISE &amp; PRACTICE</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 12. Institutional Profile: Legal Excellence &amp; Trust
-              </h2>
+              </h3>
               <div className="bg-white rounded-2xl border border-slate-200/90 p-6 sm:p-8 shadow-xs space-y-5">
                 <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-5 border-b border-slate-100">
                   <div className="space-y-1">
@@ -1446,9 +1446,9 @@ The Testamentary Guardian shall have full custody and care of my minor child's e
                 <HelpCircle className="w-4 h-4" />
                 <span>DIRECT ANSWERS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 13. Frequently Asked Questions: Minor Child Inheritance
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Plain-English answers to critical legal questions regarding minor child inheritance,
                 guardianship lockups, and testamentary trusts in India:
@@ -1491,9 +1491,9 @@ The Testamentary Guardian shall have full custody and care of my minor child's e
                 <Landmark className="w-4 h-4" />
                 <span>PRIMARY LEGAL SOURCES</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 14. Governing Acts, Sections &amp; Official Judicial Portals
-              </h2>
+              </h3>
               <div className="bg-white rounded-2xl border border-slate-200/90 p-5 space-y-4 text-xs text-slate-700 shadow-xs">
                 <div>
                   <div className="font-extrabold text-slate-900 mb-1">

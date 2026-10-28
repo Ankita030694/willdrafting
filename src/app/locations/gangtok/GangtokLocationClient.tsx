@@ -542,9 +542,9 @@ export default function GangtokLocationClient({ faqs }: Props) {
                   <Scale className="w-4 h-4 text-[#C65378]" />
                   <span>STATUTORY PROVISIONS</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   1. Will Drafting &amp; Legal Framework in Gangtok
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Succession planning in Gangtok and Sikkim operates within a specialized constitutional and statutory architecture. While general testamentary rights are governed by the <strong>Indian Succession Act, 1925</strong> and the <strong>Registration Act, 1908</strong>, Article 371F of the Constitution of India preserves pre-existing Sikkim laws, customary practices, and land protection mandates.
                 </p>
@@ -603,9 +603,9 @@ export default function GangtokLocationClient({ faqs }: Props) {
                   <FileQuestion className="w-4 h-4 text-[#C65378]" />
                   <span>REGISTRATION STATUS</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   2. Is Will Registration Mandatory in Gangtok?
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Under Section 18(e) of the Registration Act, 1908, the registration of a testamentary Will is strictly <strong>optional</strong>. An unregistered Will signed on standard white paper before two independent adult witnesses is legally valid and admissible in court proceedings.
                 </p>
@@ -667,9 +667,9 @@ export default function GangtokLocationClient({ faqs }: Props) {
                   <Landmark className="w-4 h-4 text-[#C65378]" />
                   <span>JUDICIAL PRECEDENTS</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   3. Gangtok Probate Law: Exemption Outside Presidency Towns
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   A common uncertainty among Gangtok property owners is whether probate from a civil court or the High Court of Sikkim is legally mandatory before beneficiaries can inherit property. The settled legal answer is <strong>no</strong>.
                 </p>
@@ -720,9 +720,9 @@ export default function GangtokLocationClient({ faqs }: Props) {
                   <MapPin className="w-4 h-4 text-[#C65378]" />
                   <span>SRO JURISDICTION DIRECTORY</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   4. Gangtok Sub-Registrar Office: SRO Registration Directory
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Will registration across Gangtok and Sikkim is administered by the respective District Collectorates and Sub-Registrar Offices. Under Section 32 of the Registration Act, 1908, your Will can be registered at the Sub-Registrar Office having jurisdiction over your primary residence or where your immovable estate is situated:
                 </p>
@@ -822,9 +822,9 @@ export default function GangtokLocationClient({ faqs }: Props) {
                   <MapPin className="w-4 h-4 text-[#C65378]" />
                   <span>REGIONAL CITIES &amp; SIKKIM JURISDICTIONS</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   5. Regional Cities: Will Drafting in Gangtok &amp; Sikkim
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Estate planning and property succession across Gangtok and Sikkim encompass urban commercial real estate along MG Marg and Deorali, residential hills in Tadong and Sichey, pharmaceutical and trading establishments in Singtam and Rangpo, and customary ancestral holdings in Namchi, Gyalshing, and Mangan. Governed by Article 371F of the Constitution and Revenue Order No. 1 of 1917, our estate advocates deliver customized legal drafting, GMC mutation compliance, and Sub-Registrar accompaniment across all key regional cities:
                 </p>
@@ -1264,9 +1264,9 @@ export default function GangtokLocationClient({ faqs }: Props) {
                   <FileText className="w-4 h-4 text-[#C65378]" />
                   <span>PROCEDURAL ROADMAP</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   6. Step-by-Step SOP: Drafting to SRO Registration in Gangtok
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Follow this verified 5-stage legal operating procedure to prepare, execute, and register your Will before the Sub-Registrar in Gangtok, Sikkim:
                 </p>
@@ -1352,9 +1352,9 @@ export default function GangtokLocationClient({ faqs }: Props) {
                   <Home className="w-4 h-4 text-[#C65378]" />
                   <span>DOORSTEP REGISTRATION FOR SENIORS</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   7. Section 31 Doorstep SRO Registration for Senior Citizens
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Gangtok&apos;s steep Himalayan topography and harsh winter climate can make traveling to the District Administrative Centre at Sichey difficult for senior citizens, bedridden individuals, or persons with medical mobility restrictions. Under <strong>Section 31 of the Registration Act, 1908</strong>, the Sub-Registrar holds statutory power to attend a private residence or medical hospital to register a Will.
                 </p>
@@ -1407,9 +1407,9 @@ export default function GangtokLocationClient({ faqs }: Props) {
                   <FileCheck className="w-4 h-4 text-[#C65378]" />
                   <span>INTERACTIVE CHECKLIST</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   8. Document Checklist for Gangtok Sub-Registrar Office
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Prepare your documents before visiting the District Administrative Centre Sichey or scheduling a home visit. You have verified <strong>{checkedCount} of {checklist.length}</strong> required documents:
                 </p>
@@ -1455,9 +1455,9 @@ export default function GangtokLocationClient({ faqs }: Props) {
                   <Building className="w-4 h-4 text-[#C65378]" />
                   <span>PROPERTY DYNAMICS</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   9. Gangtok Property Types: GMC Flats, Land &amp; Ancestral Plots
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Succession procedures across Gangtok vary depending on the nature of property tenure, municipal boundaries, and constitutional land protections:
                 </p>
@@ -1509,9 +1509,9 @@ export default function GangtokLocationClient({ faqs }: Props) {
                   <Stamp className="w-4 h-4 text-[#C65378]" />
                   <span>STATUTORY CHARGES</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   10. Official Sikkim SRO Registration Fees &amp; Stamp Duty
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Unlike commercial sale deeds or gift deeds that attract substantial stamp duty and transfer charges in Sikkim, testamentary Wills are completely exempt from ad valorem property value stamp duty. Government registration charges in Gangtok are purely nominal:
                 </p>
@@ -1559,9 +1559,9 @@ export default function GangtokLocationClient({ faqs }: Props) {
                   <Award className="w-4 h-4 text-[#C65378]" />
                   <span>TRANSPARENT PLANS</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   11. Transparent Will Packages &amp; Legal Fees in Gangtok
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Choose the legal assistance package tailored to your family&apos;s estate planning needs and property portfolio in Gangtok:
                 </p>
@@ -1703,9 +1703,9 @@ export default function GangtokLocationClient({ faqs }: Props) {
                   <HelpCircle className="w-4 h-4 text-[#C65378]" />
                   <span>FREQUENTLY ASKED QUESTIONS</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   12. Frequently Asked Questions: Will Drafting in Gangtok
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Clear, authoritative answers to common legal questions regarding Will drafting, land laws, and registration in Gangtok:
                 </p>
@@ -1747,9 +1747,9 @@ export default function GangtokLocationClient({ faqs }: Props) {
                   <Scale className="w-4 h-4 text-[#C65378]" />
                   <span>STATUTORY CITATIONS</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   13. Statutory Citations &amp; Sikkim Legal Framework
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Our drafting protocols comply strictly with codified Indian statutes, Sikkim pre-merger protected enactments, and local registration rules:
                 </p>

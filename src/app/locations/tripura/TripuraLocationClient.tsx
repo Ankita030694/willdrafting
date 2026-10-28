@@ -563,9 +563,9 @@ export default function TripuraLocationClient({ faqs }: Props) {
                   <span>STATUTORY PROVISIONS</span>
                 </div>
                 {/* H2 <= 70 chars: 47 chars */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   1. Will Drafting &amp; Legal Framework in Tripura
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Testamentary succession in Tripura operates at the intersection of the <strong>Indian Succession Act, 1925</strong>, the <strong>Registration Act, 1908</strong>, and the <strong>Tripura Land Revenue and Land Reforms Act, 1960 (TLR &amp; LR Act)</strong>. Any adult of sound mind possesses testamentary capacity to bequeath self-acquired urban properties, residential apartments, bank deposits, mutual funds, commercial ventures, and agricultural land holdings.
                 </p>
@@ -636,9 +636,9 @@ export default function TripuraLocationClient({ faqs }: Props) {
                   <span>REGISTRATION PARADIGM</span>
                 </div>
                 {/* H2 <= 70 chars: 55 chars */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   2. Mandatory vs Optional: Registering a Will in Tripura
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Under Section 18(e) of the <strong>Registration Act, 1908</strong>, the registration of a Will is strictly optional across India, including Tripura. An unregistered Will drafted on standard A4 paper, signed by the testator in the physical presence of two independent witnesses, holds full legal force.
                 </p>
@@ -704,9 +704,9 @@ export default function TripuraLocationClient({ faqs }: Props) {
                   <span>HIGH COURT OF TRIPURA JURISPRUDENCE</span>
                 </div>
                 {/* H2 <= 70 chars: 55 chars */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   3. High Court of Tripura: Succession &amp; Probate Mandates
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   One of the most frequent legal misconceptions among estate owners in Tripura is that a Will must be probated in court before properties can be transferred. Under <strong>Section 213 read with Section 57 of the Indian Succession Act, 1925</strong>, probate is mandatory only for Wills made within or involving immovable properties located in the historical presidency towns of Mumbai, Kolkata, and Chennai.
                 </p>
@@ -752,9 +752,9 @@ export default function TripuraLocationClient({ faqs }: Props) {
                   <span>DISTRICT REGISTRATION HUBS</span>
                 </div>
                 {/* H2 <= 70 chars: 50 chars */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   4. Tripura SRO Directory: Agartala &amp; District Hubs
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Tripura operates Sub-Registrar Offices (SROs) administered by the Directorate of Land Records &amp; Settlement under the Revenue Department. Find your designated SRO hub, jurisdiction coverage, and operational details below:
                 </p>
@@ -867,9 +867,9 @@ export default function TripuraLocationClient({ faqs }: Props) {
                   <span>REGIONAL CITIES COVERAGE &amp; ASSET NUANCES</span>
                 </div>
                 {/* H2 <= 70 chars: 54 chars */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   5. Regional Cities: Area-Wise Will Drafting in Tripura
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Estate assets in Tripura span high-value urban residential flats in Agartala Municipal Corporation wards, commercial holdings along national highways, border trade developments in Sabroom and Sonamura, tea garden interests in Unakoti, and agricultural Nal, Lunga, and Tilla lands in Gomati and North Tripura. Our estate advocates deliver customized legal drafting and SRO accompaniment across all key regional cities:
                 </p>
@@ -1318,9 +1318,9 @@ export default function TripuraLocationClient({ faqs }: Props) {
                   <span>PROCEDURAL ROADMAP</span>
                 </div>
                 {/* H2 <= 70 chars: 52 chars */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   6. 5-Step Process: Will Drafting to SRO Registration
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Follow this standardized 5-step legal protocol to draft, attest, and register your Will in Tripura with absolute compliance under the Indian Succession Act, 1925 and the TLR &amp; LR Act, 1960:
                 </p>
@@ -1412,9 +1412,9 @@ export default function TripuraLocationClient({ faqs }: Props) {
                   <span>DOORSTEP REGISTRATION FACILITY</span>
                 </div>
                 {/* H2 <= 70 chars: 52 chars */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   7. Section 31 Home Visit: Doorstep Will Registration
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Under <strong>Section 31 of the Registration Act, 1908</strong>, an individual who is physically unable to attend the Sub-Registrar Office due to advanced age, severe illness, or medical immobility can lawfully petition for registration at their private residence or hospital room in Tripura.
                 </p>
@@ -1464,9 +1464,9 @@ export default function TripuraLocationClient({ faqs }: Props) {
                   <span>REGISTRATION READINESS</span>
                 </div>
                 {/* H2 <= 70 chars: 56 chars */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   8. Checklist: Documents for Will Registration in Tripura
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Use this interactive checklist to verify that all necessary documents and statutory credentials are in order before attending your Sub-Registrar Office appointment:
                 </p>
@@ -1524,9 +1524,9 @@ export default function TripuraLocationClient({ faqs }: Props) {
                   <span>TRIPURA ASSET CLASSIFICATIONS</span>
                 </div>
                 {/* H2 <= 70 chars: 52 chars */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   9. Property Types: TTAADC Land, Patta &amp; Urban Flats
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Succession planning in Tripura requires precise legal classification of each asset category to avoid conflicts with local land revenue laws, tribal autonomy councils, and municipal rules:
                 </p>
@@ -1587,9 +1587,9 @@ export default function TripuraLocationClient({ faqs }: Props) {
                   <span>STATUTORY FEE BREAKDOWN</span>
                 </div>
                 {/* H2 <= 70 chars: 50 chars */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   10. Stamp Duty &amp; Govt Registration Fees in Tripura
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Registering a Will in Tripura does not attract heavy property conveyance taxes. Here is the official fee framework:
                 </p>
@@ -1638,9 +1638,9 @@ export default function TripuraLocationClient({ faqs }: Props) {
                   <span>TRANSPARENT LEGAL PACKAGES</span>
                 </div>
                 {/* H2 <= 70 chars: 55 chars */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   11. Packages &amp; Pricing: Lawyer Will Drafting in Tripura
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Choose the legal support tier that matches your estate complexity. Fixed transparent pricing with zero hidden charges:
                 </p>
@@ -1782,9 +1782,9 @@ export default function TripuraLocationClient({ faqs }: Props) {
                   <span>CLEAR ANSWERS</span>
                 </div>
                 {/* H2 <= 70 chars: 53 chars */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   12. Frequently Asked Questions: Tripura Will Drafting
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Authoritative legal answers on Will drafting, TLR &amp; LR Act rules, SRO registration, and property inheritance in Tripura:
                 </p>
@@ -1830,9 +1830,9 @@ export default function TripuraLocationClient({ faqs }: Props) {
                   <span>AUTHORITATIVE STATUTES</span>
                 </div>
                 {/* H2 <= 70 chars: 46 chars */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   13. Statutory Legal Acts &amp; Land Law Precedents
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Our estate planning instruments adhere strictly to primary statutory codes and High Court precedents:
                 </p>

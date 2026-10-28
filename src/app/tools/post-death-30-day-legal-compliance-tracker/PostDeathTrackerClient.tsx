@@ -1019,9 +1019,9 @@ PHASE 4: REVENUE MUTATION, TAXES & CLOSURE (DAYS 91 TO 365)
                 <Sparkles className="w-4 h-4" />
                 <span>DYNAMIC COMPLIANCE ENGINE</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 2. Interactive 30-Day Post-Death Compliance Tracker
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Select or enter the <strong>Date of Demise</strong> below to automatically compute all
                 statutory cutoff dates, municipal deadlines, RTO notice windows, and document protection steps.
@@ -1422,9 +1422,9 @@ PHASE 4: REVENUE MUTATION, TAXES & CLOSURE (DAYS 91 TO 365)
                 <AlertTriangle className="w-4 h-4" />
                 <span>COMPETITOR BLIND SPOT &amp; RANKING MOAT</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 3. The 3 Irreversible Mistakes Bereaved Families Make
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Generic post-death guides instruct families to cancel every card and document immediately.
                 In Indian jurisprudence, doing so causes catastrophic administrative paralysis. Understand
@@ -1492,9 +1492,9 @@ PHASE 4: REVENUE MUTATION, TAXES & CLOSURE (DAYS 91 TO 365)
                 <Clock className="w-4 h-4" />
                 <span>CHRONOLOGICAL MILESTONES</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 4. Phase 1: Days 1 to 7 Immediate Evidence &amp; Medical Records
-              </h2>
+              </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   The first 7 days require compassionate dignity alongside meticulous evidence gathering.
@@ -1522,9 +1522,9 @@ PHASE 4: REVENUE MUTATION, TAXES & CLOSURE (DAYS 91 TO 365)
                 <Calendar className="w-4 h-4" />
                 <span>MUNICIPAL FILINGS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 5. Phase 2: Days 8 to 21 Municipal Death Registration
-              </h2>
+              </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   The 21-day mark under Section 8 of the Registration of Births and Deaths Act is the most
@@ -1554,9 +1554,9 @@ PHASE 4: REVENUE MUTATION, TAXES & CLOSURE (DAYS 91 TO 365)
                 <Car className="w-4 h-4" />
                 <span>STATUTORY NOTICES &amp; CLAIMS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 6. Phase 3: Days 22 to 90 RTO Notice &amp; Asset Claims
-              </h2>
+              </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   Phase 3 brings two rigid 30-day compliance cutoffs that many families overlook. First,
@@ -1584,9 +1584,9 @@ PHASE 4: REVENUE MUTATION, TAXES & CLOSURE (DAYS 91 TO 365)
                 <Building className="w-4 h-4" />
                 <span>LAND MUTATION &amp; ESTATE CLOSURE</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 7. Phase 4: Days 91 to 365 Land Mutation &amp; Section 159 ITR
-              </h2>
+              </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   Phase 4 centers on real estate title mutation and final tax compliance. For inherited houses,
@@ -1615,9 +1615,9 @@ PHASE 4: REVENUE MUTATION, TAXES & CLOSURE (DAYS 91 TO 365)
                 <FileSpreadsheet className="w-4 h-4" />
                 <span>COMPARISON MATRIX</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 8. Document Guide: What to Cancel vs What to Retain
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Use this structured comparison matrix to understand exactly which records to block immediately
                 versus which documents must be retained active until estate transmission concludes:
@@ -1730,9 +1730,9 @@ PHASE 4: REVENUE MUTATION, TAXES & CLOSURE (DAYS 91 TO 365)
                 <CreditCard className="w-4 h-4" />
                 <span>BANKING JURISPRUDENCE</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 9. Bank Accounts &amp; RBI Deceased Depositor Guidelines
-              </h2>
+              </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   A critical legal distinction under Indian law is that a <strong>bank nominee is not the owner</strong>
@@ -1761,9 +1761,9 @@ PHASE 4: REVENUE MUTATION, TAXES & CLOSURE (DAYS 91 TO 365)
                 <Car className="w-4 h-4" />
                 <span>MOTOR VEHICLE RULES</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 10. Motor Vehicle Transfer: CMVR Rule 56 &amp; Form 31
-              </h2>
+              </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   Vehicle succession is governed under <strong>Rule 56 of the Central Motor Vehicles Rules, 1989</strong>.
@@ -1795,9 +1795,9 @@ PHASE 4: REVENUE MUTATION, TAXES & CLOSURE (DAYS 91 TO 365)
                 <FileCheck className="w-4 h-4" />
                 <span>COPY-PASTE LEGAL ASSETS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 11. Copy-Paste Legal Notice Templates &amp; Claim Forms
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Use these verified statutory notice templates to communicate with transport authorities,
                 bank branch managers, and insurance companies:
@@ -1914,9 +1914,9 @@ Enclosed: Certified Copy of Death Certificate, Passbook Copy, and Claimant KYC.`
                 <Scale className="w-4 h-4" />
                 <span>INTERACTIVE TOOLS &amp; SUCCESSION SERVICES</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 12. Professional Succession Support &amp; Advocate Review
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Handling post-death compliance often uncovers complex estate challenges. Explore our
                 companion succession micro-tools and legal services:
@@ -2015,9 +2015,9 @@ Enclosed: Certified Copy of Death Certificate, Passbook Copy, and Claimant KYC.`
                 <HelpCircle className="w-4 h-4" />
                 <span>FREQUENTLY ASKED QUESTIONS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 13. Frequently Asked Questions: Post-Death Compliance
-              </h2>
+              </h3>
               <div className="space-y-3">
                 {FAQS.map((faq, idx) => {
                   const isOpen = openFaq === idx;
@@ -2056,9 +2056,9 @@ Enclosed: Certified Copy of Death Certificate, Passbook Copy, and Claimant KYC.`
                 <ShieldCheck className="w-4 h-4" />
                 <span>LEGAL AUTHORITIES &amp; PORTALS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 14. Governing Acts, Landmark Rulings &amp; Official Portals
-              </h2>
+              </h3>
               <div className="p-5 rounded-2xl bg-white border border-slate-200/90 space-y-3 shadow-xs text-xs text-slate-600 leading-relaxed">
                 <p>
                   <strong>Statutory Framework:</strong> Registration of Births and Deaths Act, 1969 (Act No.

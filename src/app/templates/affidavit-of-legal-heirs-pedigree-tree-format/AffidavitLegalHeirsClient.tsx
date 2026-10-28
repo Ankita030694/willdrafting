@@ -731,9 +731,9 @@ NOW THEREFORE, in consideration of the Bank agreeing to pay the said proceeds to
                 <Scale className="w-4 h-4" />
                 <span>STATUTORY FOUNDATION</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 2. Statutory Foundation: HSA 1956 &amp; BSA 2023 Rules
-              </h2>
+              </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   A legal heirship affidavit derives its legal validity from several key Indian statutes:
@@ -791,9 +791,9 @@ NOW THEREFORE, in consideration of the Bank agreeing to pay the said proceeds to
                 <Users className="w-4 h-4" />
                 <span>COMPETITOR BLIND SPOT &amp; RANKING MOAT</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 3. Predeceased vs Surviving Heirs: The Missing Moat
-              </h2>
+              </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   Most generic affidavit drafts found online make a catastrophic legal mistake: <strong>they only list
@@ -835,9 +835,9 @@ NOW THEREFORE, in consideration of the Bank agreeing to pay the said proceeds to
                 <Calculator className="w-4 h-4" />
                 <span>INTERACTIVE SUCCESSION ENGINE</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 4. Interactive Legal Heir &amp; Pedigree Tree Generator
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Configure the family tree below to compute exact statutory Class I shares under Section 10 of the
                 Hindu Succession Act, 1956, and generate a structured pedigree table for your stamp paper affidavit.
@@ -1158,9 +1158,9 @@ NOW THEREFORE, in consideration of the Bank agreeing to pay the said proceeds to
                 <Layers className="w-4 h-4" />
                 <span>LEGAL CERTIFICATE COMPARISON</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 5. Legal Heir vs SMC vs Succession Certificate
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Many families confuse revenue legal heir certificates with civil court decrees. The table below outlines
                 the exact differences across statutory authority, property coverage, fees, and processing times:
@@ -1226,9 +1226,9 @@ NOW THEREFORE, in consideration of the Bank agreeing to pay the said proceeds to
                 <FileText className="w-4 h-4" />
                 <span>LAWYER-VETTED LEGAL DRAFT</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 6. Format 1: Legal Heir Affidavit with Pedigree Tree
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Print this format on prescribed non-judicial e-stamp paper (₹10 to ₹100 depending on state rules),
                 affix the deponent&rsquo;s passport photograph, sign before a Notary Public, and obtain two local
@@ -1343,9 +1343,9 @@ NOTARY PUBLIC / OATH COMMISSIONER
                 <Globe className="w-4 h-4" />
                 <span>STATE REVENUE PROCEDURES</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 7. State Revenue Formats: Pedhinama &amp; Vamshavali
-              </h2>
+              </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   While the substantive rules of intestate succession are governed uniformly by the Hindu Succession Act,
@@ -1409,9 +1409,9 @@ NOTARY PUBLIC / OATH COMMISSIONER
                 <Lock className="w-4 h-4" />
                 <span>LEGAL DRAFTING DEFENSES</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 8. Key Clauses: Negative Declaration &amp; Indemnity
-              </h2>
+              </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   A legally robust legal heir affidavit must incorporate three critical statutory safeguards to prevent
@@ -1459,9 +1459,9 @@ NOTARY PUBLIC / OATH COMMISSIONER
                 <Clock className="w-4 h-4" />
                 <span>PROCEDURAL TIMELINE &amp; EXECUTION</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 9. Step-by-Step SOP: Stamping to Tehsildar Filing
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Follow this verified 6-step legal protocol to execute and submit your legal heir affidavit without
                 procedural delays:
@@ -1522,9 +1522,9 @@ NOTARY PUBLIC / OATH COMMISSIONER
                 <Building className="w-4 h-4" />
                 <span>PRACTICAL PRECEDENTS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 10. Real Post-Death Case Studies in India
-              </h2>
+              </h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div className="p-5 rounded-2xl bg-white border border-slate-200/90 shadow-xs space-y-3">
                   <div className="flex items-center justify-between text-xs font-bold">
@@ -1579,9 +1579,9 @@ NOTARY PUBLIC / OATH COMMISSIONER
                 <FileCheck className="w-4 h-4" />
                 <span>COPYABLE ANCILLARY CLAUSES</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 11. Copy-Paste Revenue &amp; Bank Undertaking Clauses
-              </h2>
+              </h3>
 
               {/* Clause Box 1: Negative Declaration */}
               <div className="rounded-2xl border border-slate-200/90 bg-white p-5 space-y-3 shadow-xs">
@@ -1679,9 +1679,9 @@ NOW THEREFORE, in consideration of the Bank agreeing to pay the said proceeds to
                 <Award className="w-4 h-4" />
                 <span>LEGAL EXPERTISE &amp; PRACTICE</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 12. Legal Review &amp; Advocate Credentials
-              </h2>
+              </h3>
               <div className="bg-white rounded-2xl border border-slate-200/90 p-6 sm:p-8 shadow-xs space-y-5">
                 <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-5 border-b border-slate-100">
                   <div className="space-y-1">
@@ -1730,9 +1730,9 @@ NOW THEREFORE, in consideration of the Bank agreeing to pay the said proceeds to
                 <HelpCircle className="w-4 h-4" />
                 <span>FREQUENT QUESTIONS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 13. Frequently Asked Questions: Legal Heirship
-              </h2>
+              </h3>
               <div className="space-y-3">
                 {FAQS.map((faq, idx) => {
                   const isOpen = openFaq === idx;
@@ -1770,13 +1770,13 @@ NOW THEREFORE, in consideration of the Bank agreeing to pay the said proceeds to
                 <Building2 className="w-4 h-4" />
                 <span>AUTHORITATIVE SOURCES &amp; PORTALS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 14. Statutory Citations &amp; Official Revenue Portals
-              </h2>
+              </h3>
               <div className="rounded-2xl bg-white border border-slate-200/90 p-5 sm:p-6 space-y-4 shadow-xs text-xs">
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3">
                   <a
-                    href="https://www.indiacode.nic.in/handle/123456789/1392"
+                    href="https://legislative.gov.in/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center justify-between p-3 rounded-xl bg-slate-50 hover:bg-slate-100 text-slate-800 font-semibold border border-slate-200/60"

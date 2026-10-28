@@ -485,9 +485,9 @@ export default function ItanagarLocationClient({ faqs }: Props) {
                   <span>STATUTORY &amp; CUSTOMARY LAWS</span>
                 </div>
                 {/* Length: 55 characters */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   2. Legal Framework: Tribal Succession &amp; LHC Regulations
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Estate succession in Itanagar follows clear statutory safeguards. These laws protect tribal rights while letting you bequeath self-acquired assets freely:
                 </p>
@@ -544,9 +544,9 @@ export default function ItanagarLocationClient({ faqs }: Props) {
                   <span>EVIDENTIARY VALUE</span>
                 </div>
                 {/* Length: 53 characters */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   3. Will Registration: Mandatory vs Optional under Law
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Under Section 18(e) of the Registration Act, 1908, Will registration is optional in Arunachal Pradesh. A Will written on plain white paper signed by two witnesses is valid. Even so, registering your Will at the DC Office offers important benefits:
                 </p>
@@ -595,9 +595,9 @@ export default function ItanagarLocationClient({ faqs }: Props) {
                   <span>GAUHATI HIGH COURT JURISDICTION</span>
                 </div>
                 {/* Length: 54 characters */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   4. Gauhati High Court Probate Rules for Itanagar Wills
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Probate is a court order certifying that a Will is authentic. Many people in Itanagar believe that probate is mandatory. This is a common legal misunderstanding.
                 </p>
@@ -630,9 +630,9 @@ export default function ItanagarLocationClient({ faqs }: Props) {
                   <span>REGISTRATION HUBS</span>
                 </div>
                 {/* Length: 47 characters */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   5. Itanagar DC Office &amp; Sub-Registrar Directory
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Find your registration office in the Capital Complex and Papum Pare district. Select a hub below for address details, timings, and area coverage:
                 </p>
@@ -721,9 +721,9 @@ export default function ItanagarLocationClient({ faqs }: Props) {
                   <span>LOCAL AREA COVERAGE &amp; ASSET NUANCES</span>
                 </div>
                 {/* Length: 58 characters */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   6. Localities Covered: Area-Wise Will Drafting in Itanagar
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Properties in Itanagar include shops in Bank Tinali, homes in Niti Vihar, and plots in Naharlagun and Nirjuli. Our legal team offers Will drafting and DC Office assistance across all local areas:
                 </p>
@@ -1058,9 +1058,9 @@ export default function ItanagarLocationClient({ faqs }: Props) {
                   <span>PROCEDURAL ROADMAP</span>
                 </div>
                 {/* Length: 53 characters */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   7. 5-Step Process: Drafting to DC Office Registration
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Follow this verified 5-stage legal operating procedure to draft, execute, and register your Will before the Deputy Commissioner in Itanagar:
                 </p>
@@ -1147,9 +1147,9 @@ export default function ItanagarLocationClient({ faqs }: Props) {
                   <span>DOORSTEP REGISTRATION FOR SENIORS</span>
                 </div>
                 {/* Length: 52 characters */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   8. Section 31 Home Visit: Doorstep Will Registration
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   For senior citizens, hospitalized patients, or bedridden individuals residing in Bank Tinali, Niti Vihar, or Naharlagun, visiting the registry office in hilly terrain can be difficult. Under <strong>Section 31 of the Registration Act, 1908</strong>, the registering officer can attend your home or hospital to complete registration:
                 </p>
@@ -1203,9 +1203,9 @@ export default function ItanagarLocationClient({ faqs }: Props) {
                   <span>INTERACTIVE CHECKLIST</span>
                 </div>
                 {/* Length: 54 characters */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   9. Mandatory Checklist: Required Documents in Itanagar
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Ensure all records are compiled before finalizing your Will. You have organized <strong>{checkedCount} of {checklist.length}</strong> required documents:
                 </p>
@@ -1254,9 +1254,9 @@ export default function ItanagarLocationClient({ faqs }: Props) {
                   <span>PROPERTY DYNAMICS</span>
                 </div>
                 {/* Length: 55 characters */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   10. Property Classification: LHC, Tribal &amp; Urban Assets
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Succession procedures in Itanagar depend directly on whether an asset falls under codified civil laws, Land Holding Certificates, or customary clan traditions:
                 </p>
@@ -1309,9 +1309,9 @@ export default function ItanagarLocationClient({ faqs }: Props) {
                   <span>STATUTORY CHARGES</span>
                 </div>
                 {/* Length: 55 characters */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   11. Registration Fees &amp; Stamp Duty Schedule in Itanagar
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Unlike property gift deeds or sale deeds that attract percentage-based transfer stamp duties, testamentary Wills are completely exempt from ad valorem stamp duties. Government charges in Itanagar are nominal:
                 </p>
@@ -1360,9 +1360,9 @@ export default function ItanagarLocationClient({ faqs }: Props) {
                   <span>TRANSPARENT PLANS</span>
                 </div>
                 {/* Length: 53 characters */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   12. Professional Plans &amp; Transparent Pricing Packages
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Choose the legal assistance package tailored to your family&apos;s estate planning and property portfolio in Itanagar:
                 </p>
@@ -1505,9 +1505,9 @@ export default function ItanagarLocationClient({ faqs }: Props) {
                   <span>FREQUENTLY ASKED QUESTIONS</span>
                 </div>
                 {/* Length: 56 characters */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   13. Frequently Asked Questions on Itanagar Will Drafting
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Clear, authoritative answers to common legal questions regarding Will drafting and property registration in Itanagar:
                 </p>
@@ -1551,9 +1551,9 @@ export default function ItanagarLocationClient({ faqs }: Props) {
                   <span>STATUTORY CITATIONS</span>
                 </div>
                 {/* Length: 56 characters */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   14. Statutory References &amp; High Court Case Law Citations
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Our drafting protocols comply strictly with codified Indian statutes and Arunachal Pradesh land administration regulations:
                 </p>

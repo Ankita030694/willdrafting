@@ -176,9 +176,9 @@ export default function FamilyTrustInteractive() {
             <span>Interactive Trust Blueprint Explorer</span>
           </div>
           {/* H2 <= 70 chars */}
-          <h2 className="text-[1.85rem] sm:text-[2.35rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-3">
+          <h3 className="text-[1.85rem] sm:text-[2.35rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-3">
             Interactive Trust Structuring &amp; Diagnostic Tool
-          </h2>
+          </h3>
           <p className="text-[0.98rem] sm:text-[1.05rem] leading-[1.65] text-[#49585F]">
             Select your family wealth scenario to inspect statutory protections, tax treatment, and drafting requirements under the Indian Trusts Act, 1882:
           </p>

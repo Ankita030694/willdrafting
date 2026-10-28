@@ -574,9 +574,9 @@ export default function JammuLocationClient({ faqs }: Props) {
                   <Scale className="w-4 h-4 text-[#C65378]" />
                   <span>STATUTORY CODIFICATION</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   1. Will Drafting &amp; Legal Framework in Jammu
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Testamentary succession in the Union Territory of Jammu and Kashmir has transitioned to unified central Indian statutes. Understanding this codified framework protects your family against inheritance disputes and revenue record deadlocks:
                 </p>
@@ -635,9 +635,9 @@ export default function JammuLocationClient({ faqs }: Props) {
                   <Stamp className="w-4 h-4 text-[#C65378]" />
                   <span>REGISTRATION ACT, 1908</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   2. Is Will Registration Mandatory in Jammu?
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Under Section 18(e) of the Registration Act, 1908, the registration of a Will is <strong>optional in Jammu</strong>. A Will executed on plain white paper signed by the testator in the presence of two adult witnesses is legally valid. However, choosing not to register introduces severe procedural and legal vulnerabilities:
                 </p>
@@ -705,9 +705,9 @@ export default function JammuLocationClient({ faqs }: Props) {
                   <Scale className="w-4 h-4 text-[#C65378]" />
                   <span>HIGH COURT OF J&amp;K AND LADAKH JURISPRUDENCE</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   3. Jammu Probate Law: High Court Succession Rules
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   A common question for Jammu property owners is whether obtaining probate from a civil court is mandatory before beneficiaries can inherit assets. Here is the settled legal position:
                 </p>
@@ -754,9 +754,9 @@ export default function JammuLocationClient({ faqs }: Props) {
                   <Building className="w-4 h-4 text-[#C65378]" />
                   <span>REGISTRATION OFFICES DIRECTORY</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   4. Jammu Sub-Registrar Offices: NGDRS SRO Directory
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Jammu district is divided into distinct registration jurisdictions under the Revenue Department of J&amp;K. Use the interactive directory below to locate your designated Sub-Registrar Office:
                 </p>
@@ -856,9 +856,9 @@ export default function JammuLocationClient({ faqs }: Props) {
                   <MapPin className="w-4 h-4 text-[#C65378]" />
                   <span>LOCAL AREA COVERAGE &amp; ASSET NUANCES</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   5. Localities Covered: Area-Wise Will Drafting in Jammu
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Estate assets in Jammu span prestigious JDA planned sectors in Gandhi Nagar and Trikuta Nagar, high-growth suburban corridors in Channi Himmat and Sainik Colony, judicial residential hubs around Janipur and Roop Nagar, industrial factories in Gangyal, and fertile Basmati farmlands in RS Pura. Our estate advocates deliver customized legal drafting, NGDRS J&amp;K slot scheduling, and Sub-Registrar accompaniment across all key micro-markets:
                 </p>
@@ -1298,9 +1298,9 @@ export default function JammuLocationClient({ faqs }: Props) {
                   <FileCheck className="w-4 h-4 text-[#C65378]" />
                   <span>PROCEDURAL ROADMAP</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   6. Step-by-Step SOP: Drafting to NGDRS Registration in Jammu
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Drafting and registering an unassailable Will in Jammu follows an orderly, legally verified 5-stage protocol:
                 </p>
@@ -1406,9 +1406,9 @@ export default function JammuLocationClient({ faqs }: Props) {
                   <Home className="w-4 h-4 text-[#C65378]" />
                   <span>DOORSTEP CONVENIENCE FOR SENIORS</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   7. Section 31 Doorstep SRO Registration for Senior Citizens
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Under Section 31 of the Registration Act, 1908, senior citizens, bedridden individuals, and persons suffering from acute medical infirmities in Jammu can register their Will from the comfort of their home:
                 </p>
@@ -1462,9 +1462,9 @@ export default function JammuLocationClient({ faqs }: Props) {
                   <FileText className="w-4 h-4 text-[#C65378]" />
                   <span>MANDATORY DOCUMENTATION</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   8. Document Checklist for Jammu Sub-Registrar Offices
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Ensure you carry all mandatory documents to avoid rejection or multiple visits to the Sub-Registrar Office in Jammu:
                 </p>
@@ -1522,9 +1522,9 @@ export default function JammuLocationClient({ faqs }: Props) {
                   <Home className="w-4 h-4 text-[#C65378]" />
                   <span>ESTATE ASSET INVENTORY</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   9. Jammu Property Types: JDA Plots, JMC Houses &amp; Farmland
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Each asset class in Jammu entails distinct legal and municipal transfer requirements upon succession:
                 </p>
@@ -1580,9 +1580,9 @@ export default function JammuLocationClient({ faqs }: Props) {
                   <Stamp className="w-4 h-4 text-[#C65378]" />
                   <span>TRANSPARENT GOVERNMENT TARIFFS</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   10. Official NGDRS J&amp;K Registration Fees &amp; Charges
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Unlike sale deeds or gift deeds, testamentary Wills in Jammu and Kashmir do not attract property valuation stamp duty. Here is the exact official government cost structure:
                 </p>
@@ -1630,9 +1630,9 @@ export default function JammuLocationClient({ faqs }: Props) {
                   <Award className="w-4 h-4 text-[#C65378]" />
                   <span>TRANSPARENT LEGAL PACKAGES</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   11. Transparent Will Packages &amp; Legal Fees in Jammu
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Choose from our lawyer-led Will drafting and registration packages tailored for Jammu families:
                 </p>
@@ -1778,9 +1778,9 @@ export default function JammuLocationClient({ faqs }: Props) {
                   <HelpCircle className="w-4 h-4 text-[#C65378]" />
                   <span>FREQUENTLY ASKED QUESTIONS</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   12. Frequently Asked Questions: Will Drafting in Jammu
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Clear, authoritative answers to common legal questions regarding Will drafting and property registration in Jammu:
                 </p>
@@ -1823,9 +1823,9 @@ export default function JammuLocationClient({ faqs }: Props) {
                   <Scale className="w-4 h-4 text-[#C65378]" />
                   <span>STATUTORY CITATIONS</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   13. Statutory Citations &amp; Jammu Legal Authorities
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Our drafting protocols comply strictly with codified Indian statutes and Jammu registration systems:
                 </p>

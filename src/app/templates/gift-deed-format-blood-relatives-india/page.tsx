@@ -45,7 +45,7 @@ export const metadata: Metadata = {
         url: "https://www.willdrafting.in/images/gift-deed-format-blood-relatives-india-og.jpg",
         width: 1200,
         height: 675,
-        alt: "Gift Deed Format for Blood Relatives in India Legal Templates and Senior Citizen Protection Clause",
+        alt: "Gift Deed Format for Blood Relatives in India - Legal Template and Protection Clause",
       },
     ],
   },

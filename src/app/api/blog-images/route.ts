@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { ObjectId } from "mongodb";
 import { auth } from "@/auth";
 import { blogImagesCol } from "@/lib/db/collections";
+import { DEFAULT_SECURITY_HEADERS } from "@/lib/http";
 
 export const dynamic = "force-dynamic";
 
@@ -32,23 +33,29 @@ export async function GET(req: NextRequest) {
       .limit(limit)
       .toArray();
 
-    return NextResponse.json({
-      success: true,
-      images: docs.map((d) => ({
-        id: d._id.toString(),
-        url: `/api/blog-images/${d._id.toString()}`,
-        kind: d.kind,
-        filename: d.filename,
-        mimeType: d.mimeType,
-        size: d.size,
-        prompt: d.prompt || null,
-        blogSlug: d.blogSlug || null,
-        createdAt: d.createdAt,
-      })),
-    });
+    return NextResponse.json(
+      {
+        success: true,
+        images: docs.map((d) => ({
+          id: d._id.toString(),
+          url: `/api/blog-images/${d._id.toString()}`,
+          kind: d.kind,
+          filename: d.filename,
+          mimeType: d.mimeType,
+          size: d.size,
+          prompt: d.prompt || null,
+          blogSlug: d.blogSlug || null,
+          createdAt: d.createdAt,
+        })),
+      },
+      { headers: DEFAULT_SECURITY_HEADERS }
+    );
   } catch (error) {
     console.error("GET /api/blog-images error:", error);
-    return NextResponse.json({ error: "Failed to list blog images" }, { status: 500 });
+    return NextResponse.json(
+      { error: "Failed to list blog images" },
+      { status: 500, headers: DEFAULT_SECURITY_HEADERS }
+    );
   }
 }
 

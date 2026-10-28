@@ -585,9 +585,9 @@ THE DONOR FURTHER RESERVES AN ABSOLUTE LIFETIME RIGHT OF RESIDENCE in the proper
                 <HeartHandshake className="w-4 h-4" />
                 <span>TAXATION EXEMPTION</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 2. Blood Relative Definition &amp; Section 56(2) Tax Rules
-              </h2>
+              </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   Gifting property to close relatives has huge tax advantages. Normally, if someone receives
@@ -642,9 +642,9 @@ THE DONOR FURTHER RESERVES AN ABSOLUTE LIFETIME RIGHT OF RESIDENCE in the proper
                 <Layers className="w-4 h-4" />
                 <span>STATE REVENUE CONCESSIONS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 3. State Stamp Duty Matrix: Concessions for Relatives
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Each state sets its own stamp duty rates. Standard sale deeds usually carry 5% to 7% duty.
                 However, many states charge much lower rates when you gift property to close family members:
@@ -688,9 +688,9 @@ THE DONOR FURTHER RESERVES AN ABSOLUTE LIFETIME RIGHT OF RESIDENCE in the proper
                 <AlertTriangle className="w-4 h-4" />
                 <span>LEGAL PITFALL TO AVOID</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 4. The Unconditional Gift Trap: Why Online Deeds Fail
-              </h2>
+              </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   Many elderly parents face serious trouble after gifting a home to their children. They often
@@ -721,9 +721,9 @@ THE DONOR FURTHER RESERVES AN ABSOLUTE LIFETIME RIGHT OF RESIDENCE in the proper
                 <Scale className="w-4 h-4" />
                 <span>STATUTORY SAFETY NET</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 5. Section 23 Senior Citizens Act: Legal Revocation Power
-              </h2>
+              </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   To protect elderly parents from abandonment, Parliament passed the{" "}
@@ -754,9 +754,9 @@ THE DONOR FURTHER RESERVES AN ABSOLUTE LIFETIME RIGHT OF RESIDENCE in the proper
                 <Award className="w-4 h-4" />
                 <span>LANDMARK JUDGMENTS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 6. Supreme Court Rulings: Sudesh Chhikara &amp; Urmila Dixit
-              </h2>
+              </h3>
               <div className="space-y-4 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   The Supreme Court has set clear rules for cancelling gift deeds under Section 23:
@@ -802,9 +802,9 @@ THE DONOR FURTHER RESERVES AN ABSOLUTE LIFETIME RIGHT OF RESIDENCE in the proper
                 <FileText className="w-4 h-4" />
                 <span>DECISION MATRIX</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 7. Gift Deed vs Will: Comparison for Indian Families
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Before registering a gift deed, ask yourself if a Will is a better option. Here is how they compare:
               </p>
@@ -860,9 +860,9 @@ THE DONOR FURTHER RESERVES AN ABSOLUTE LIFETIME RIGHT OF RESIDENCE in the proper
                 <Calculator className="w-4 h-4" />
                 <span>INTERACTIVE UTILITY</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 8. Interactive Gift Deed Clause &amp; Stamp Duty Customizer
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Select your relationship and state below to estimate government charges and build your protective clause:
               </p>
@@ -1010,9 +1010,9 @@ THE DONOR FURTHER RESERVES AN ABSOLUTE LIFETIME RIGHT OF RESIDENCE in the proper
                 <FileCheck className="w-4 h-4" />
                 <span>COMPLETE LEGAL TEMPLATE</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 9. Senior-Protected Blood Relative Gift Deed Format
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Below is the full gift deed draft with built-in Section 23 protections. Click the button to copy
                 the text for your word processor:
@@ -1138,9 +1138,9 @@ THE DONOR FURTHER RESERVES AN ABSOLUTE LIFETIME RIGHT OF RESIDENCE in the proper
                 <Clock className="w-4 h-4" />
                 <span>PROCEDURAL PROTOCOL</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 10. Step-by-Step SOP: SRO Registration Protocol
-              </h2>
+              </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   Follow these clear steps to register your gift deed at the Sub-Registrar Office:
@@ -1221,9 +1221,9 @@ THE DONOR FURTHER RESERVES AN ABSOLUTE LIFETIME RIGHT OF RESIDENCE in the proper
                 <FileCheck className="w-4 h-4" />
                 <span>PRE-REGISTRATION DUE DILIGENCE</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 11. Mandatory Verification Checklist Before Registration
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Make sure you have these key documents ready before visiting the Sub-Registrar:
               </p>
@@ -1277,9 +1277,9 @@ THE DONOR FURTHER RESERVES AN ABSOLUTE LIFETIME RIGHT OF RESIDENCE in the proper
                 <Users className="w-4 h-4" />
                 <span>PRACTICAL LITIGATION INSIGHTS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 12. Real-World Case Studies: Noida, Mumbai &amp; Bangalore
-              </h2>
+              </h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div className="bg-white rounded-2xl border border-slate-200 p-5 space-y-2">
                   <div className="text-[11px] font-bold uppercase text-[#C65378] tracking-wider">
@@ -1342,9 +1342,9 @@ THE DONOR FURTHER RESERVES AN ABSOLUTE LIFETIME RIGHT OF RESIDENCE in the proper
                 <Award className="w-4 h-4" />
                 <span>LEGAL EXPERTISE &amp; REVIEW</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 13. Senior Succession Legal Team &amp; Advocate Verification
-              </h2>
+              </h3>
               <div className="bg-white rounded-3xl border border-slate-200 p-6 sm:p-7 space-y-4">
                 <div className="flex items-start sm:items-center gap-4">
                   <div className="w-16 h-16 rounded-full bg-rose-100 text-[#C65378] font-black text-xl flex items-center justify-center shrink-0">
@@ -1388,9 +1388,9 @@ THE DONOR FURTHER RESERVES AN ABSOLUTE LIFETIME RIGHT OF RESIDENCE in the proper
                 <HelpCircle className="w-4 h-4" />
                 <span>FREQUENT QUESTIONS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 14. Frequently Asked Questions: Blood Relative Gifts
-              </h2>
+              </h3>
               <div className="space-y-3">
                 {FAQS.map((faq, index) => {
                   const isOpen = openFaq === index;
@@ -1427,9 +1427,9 @@ THE DONOR FURTHER RESERVES AN ABSOLUTE LIFETIME RIGHT OF RESIDENCE in the proper
                 <BookOpen className="w-4 h-4" />
                 <span>OFFICIAL PORTALS &amp; STATUTES</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 15. Statutory Citations &amp; Official Revenue Portals
-              </h2>
+              </h3>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
                 <a
                   href="https://legislative.gov.in"

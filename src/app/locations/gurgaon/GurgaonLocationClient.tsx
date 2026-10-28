@@ -539,9 +539,9 @@ export default function GurgaonLocationClient({ faqs }: Props) {
                   <span>STATUTORY FRAMEWORK</span>
                 </div>
                 {/* H2 tag: 49 characters */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   1. Will Drafting &amp; Legal Framework in Gurgaon NCR
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Estate succession across Gurgaon and Haryana is governed by the <strong>Indian Succession Act, 1925</strong>, the <strong>Registration Act, 1908</strong>, and the <strong>Haryana Apartment Ownership Act, 1983</strong>.
                   Any competent adult possessing sound mental faculties can execute a Will to dispose of self-acquired plots, builder floors, demat shares, and bank balances.
@@ -604,9 +604,9 @@ export default function GurgaonLocationClient({ faqs }: Props) {
                   <span>REGISTRATION PROVISIONS</span>
                 </div>
                 {/* H2 tag: 46 characters */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   2. Is Will Registration Mandatory in Gurugram?
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Under Section 18(e) of the Registration Act, 1908, registering a Will is strictly <strong>optional</strong>.
                   An unregistered Will executed on plain white paper is legally valid in Indian courts if it fulfills statutory signature and attestation requirements.
@@ -666,9 +666,9 @@ export default function GurgaonLocationClient({ faqs }: Props) {
                   <span>ESTATE OFFICER PROCEDURES</span>
                 </div>
                 {/* H2 tag: 50 characters */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   3. HSVP Plot &amp; Builder Floor Succession in Gurgaon
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Residential plots developed by the <strong>Haryana Shehri Vikas Pradhikaran (HSVP)</strong> and independent builder floors constructed on them are subject to specialized transfer rules upon the owner&apos;s death.
                   Haryana allows the registration of independent residential floors with individual conveyance deeds.
@@ -722,9 +722,9 @@ export default function GurgaonLocationClient({ faqs }: Props) {
                   <span>HIGH COURT RULINGS</span>
                 </div>
                 {/* H2 tag: 47 characters */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   4. Punjab &amp; Haryana HC Probate Rules in Gurgaon
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   A frequent question from Gurgaon property owners is whether they must secure court probate before transferring estate assets.
                   In Haryana, the legal answer is <strong>no</strong>.
@@ -778,9 +778,9 @@ export default function GurgaonLocationClient({ faqs }: Props) {
                   <span>TEHSIL JURISDICTION DIRECTORY</span>
                 </div>
                 {/* H2 tag: 47 characters */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   5. Gurugram Sub-Registrar Directory: SRO Tehsils
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Gurugram district is divided into designated Tehsil and Sub-Tehsil registration jurisdictions.
                   Under Section 32 of the Registration Act, your Will can be registered at the Tehsil where the testator resides, or where any part of the real estate is situated.
@@ -884,9 +884,9 @@ export default function GurgaonLocationClient({ faqs }: Props) {
                   <span>LOCAL AREA COVERAGE &amp; HUBS</span>
                 </div>
                 {/* H2 tag: 48 characters */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   6. Area-Wise Will Drafting Services Across Gurgaon NCR
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Looking for legally verified <strong>Will drafting services in DLF Phase 1-5, Golf Course Road, Sohna Road, or New Gurgaon</strong>? Properties across Gurgaon encompass freehold plots in HSVP sectors, gated condominium towers, independent builder floors, and luxury farmhouses.
                   Our senior advocates provide legally vetted drafting, Jamabandi e-token scheduling, and Sub-Registrar accompaniment across all key micro-markets:
@@ -1116,9 +1116,9 @@ export default function GurgaonLocationClient({ faqs }: Props) {
                   <span>STEP-BY-STEP PROCEDURE</span>
                 </div>
                 {/* H2 tag: 46 characters */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   7. Step-by-Step Will Registration on Jamabandi
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Registering a Will in Gurugram follows the Haryana land revenue computerized registration protocol (HALRIS).
                   Here is the 5-step registration process:
@@ -1206,9 +1206,9 @@ export default function GurgaonLocationClient({ faqs }: Props) {
                   <span>DOORSTEP REGISTRATION</span>
                 </div>
                 {/* H2 tag: 49 characters */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   8. Section 31 Doorstep SRO Registration in Gurgaon
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Many senior citizens in Gurgaon find it physically demanding to climb stairs or navigate crowded corridors at Tehsil offices.
                   Under <strong>Section 31 of the Registration Act, 1908</strong>, the Sub-Registrar possesses statutory authority to visit a person&apos;s home, hospital room, or nursing care facility to register a Will.
@@ -1263,9 +1263,9 @@ export default function GurgaonLocationClient({ faqs }: Props) {
                   <span>INTERACTIVE CHECKLIST</span>
                 </div>
                 {/* H2 tag: 48 characters */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   9. Documents Checklist for Gurugram Sub-Registrar
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Prepare your documents before visiting the Tehsil office.
                   You have completed <strong>{checkedCount} of {checklist.length}</strong> items:
@@ -1315,9 +1315,9 @@ export default function GurgaonLocationClient({ faqs }: Props) {
                   <span>PROPERTY TYPES</span>
                 </div>
                 {/* H2 tag: 46 characters */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   10. Gurgaon Property Types: HSVP, DLF &amp; Condos
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Succession procedures in Gurgaon vary depending on property title structure and governing development authorities:
                 </p>
@@ -1370,9 +1370,9 @@ export default function GurgaonLocationClient({ faqs }: Props) {
                   <span>OFFICIAL CHARGES</span>
                 </div>
                 {/* H2 tag: 45 characters */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   11. Official Haryana Government Fees &amp; Charges
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Unlike property conveyance deeds that incur 5% to 7% stamp duty, Wills are 100% exempt from stamp duty across Haryana under the Indian Stamp Act, 1899.
                   Government charges at Gurgaon Tehsil offices are strictly nominal:
@@ -1422,9 +1422,9 @@ export default function GurgaonLocationClient({ faqs }: Props) {
                   <span>PLANS &amp; PRICING</span>
                 </div>
                 {/* H2 tag: 48 characters */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   12. Transparent Will Packages &amp; Legal Fees in NCR
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Choose the level of legal assistance tailored to your family&apos;s estate planning needs in Gurgaon NCR:
                 </p>
@@ -1567,9 +1567,9 @@ export default function GurgaonLocationClient({ faqs }: Props) {
                   <span>FREQUENTLY ASKED QUESTIONS</span>
                 </div>
                 {/* H2 tag: 44 characters */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   13. Frequently Asked Questions: Gurgaon Wills
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Clear answers to common questions about making and registering a Will in Gurgaon NCR:
                 </p>
@@ -1613,9 +1613,9 @@ export default function GurgaonLocationClient({ faqs }: Props) {
                   <span>STATUTORY CITATIONS</span>
                 </div>
                 {/* H2 tag: 48 characters */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   14. Statutory Acts &amp; Haryana Land Revenue Portals
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Our drafting protocols comply strictly with codified Indian statutes and official Haryana revenue channels:
                 </p>

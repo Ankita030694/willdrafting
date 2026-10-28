@@ -547,7 +547,7 @@ export default function GiftDeedVsWillClient() {
                 <span>Executive Decision Summary</span>
               </div>
               <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
-                1. Quick Decision Matrix: Gift Deed vs Will at a Glance
+                Executive Decision Summary: Gift Deed vs Will in India
               </h2>
               <p className="text-slate-700 text-sm sm:text-base leading-relaxed">
                 When transferring real estate or family wealth in India, property owners face a fundamental dilemma: should they execute an immediate <strong className="text-[#172228]">Gift Deed</strong> or draft a testamentary <strong className="text-[#172228]">Last Will and Testament</strong>? The decision boils down to three decisive legal pillars: <strong className="text-[#C65378]">Control</strong>, <strong className="text-[#C65378]">Certainty</strong>, and <strong className="text-[#C65378]">Upfront Cost</strong>.
@@ -612,9 +612,9 @@ export default function GiftDeedVsWillClient() {
                 <Layers className="w-4 h-4" />
                 <span>Side-by-Side Evaluation</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
                 1. Quick Decision Matrix: Gift Deed vs Will at a Glance
-              </h2>
+              </h3>
               <p className="text-slate-700 text-sm sm:text-base leading-relaxed">
                 The comprehensive comparison below highlights the statutory, financial, and practical distinctions between transferring property under a Gift Deed versus bequeathing it through a Will.
               </p>
@@ -649,9 +649,9 @@ export default function GiftDeedVsWillClient() {
                 <Gavel className="w-4 h-4" />
                 <span>Statutory Framework</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
                 2. Core Legal Differences: Ownership, Control &amp; Timing
-              </h2>
+              </h3>
               <div className="space-y-4 text-slate-700 text-sm sm:text-base leading-relaxed">
                 <p>
                   To make an informed decision, one must look beyond informal family conversations and examine the precise mechanisms established by the Indian legal system.
@@ -704,9 +704,9 @@ export default function GiftDeedVsWillClient() {
                 <Coins className="w-4 h-4" />
                 <span>Financial Outflow Analysis</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
                 3. Stamp Duty &amp; Registration Charges: State-Wise Analysis
-              </h2>
+              </h3>
               <p className="text-slate-700 text-sm sm:text-base leading-relaxed">
                 The most significant barrier to executing a Gift Deed is the immediate government fee. While Wills are completely exempt from stamp duty across every state in India, Gift Deeds attract varying stamp duties, often reaching several lakhs of rupees.
               </p>
@@ -749,9 +749,9 @@ export default function GiftDeedVsWillClient() {
                 <Calculator className="w-4 h-4" />
                 <span>Financial Case Study</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
                 4. Worked Cost Case Study: ₹50 Lakh Property in Maharashtra
-              </h2>
+              </h3>
               <p className="text-slate-700 text-sm sm:text-base leading-relaxed">
                 Consider an elderly father in Pune or Mumbai gifting a residential apartment with a ready reckoner market value of <strong className="text-slate-900">₹50,00,000</strong> to his adult son. Here is the exact mathematical cost difference between executing a Gift Deed versus drafting a Will:
               </p>
@@ -852,9 +852,9 @@ export default function GiftDeedVsWillClient() {
                 <Landmark className="w-4 h-4" />
                 <span>Tax Law Deep-Dive</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
                 5. Income Tax Section 56(2)(x): Gift Tax &amp; Capital Gains
-              </h2>
+              </h3>
               <div className="space-y-4 text-slate-700 text-sm sm:text-base leading-relaxed">
                 <p>
                   India abolished the Gift Tax Act in 1998, but gifts are now regulated under <strong className="text-slate-900">Section 56(2)(x) of the Income Tax Act, 1961</strong> as &apos;Income from Other Sources&apos;. Understanding these tax rules is critical before drafting any document.
@@ -917,9 +917,9 @@ export default function GiftDeedVsWillClient() {
                 <CheckCircle2 className="w-4 h-4" />
                 <span>Strategic Scenarios</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
                 6. When a Gift Deed Is Better: 4 Realistic Family Scenarios
-              </h2>
+              </h3>
               <p className="text-slate-700 text-sm sm:text-base leading-relaxed">
                 Despite higher upfront stamp duty and loss of control, a registered Gift Deed is the superior legal vehicle in specific circumstances:
               </p>
@@ -973,9 +973,9 @@ export default function GiftDeedVsWillClient() {
                 <ShieldCheck className="w-4 h-4" />
                 <span>Protection &amp; Independence</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
                 7. When a Will Is Better: Retaining Control &amp; Flexibility
-              </h2>
+              </h3>
               <p className="text-slate-700 text-sm sm:text-base leading-relaxed">
                 For over 80% of Indian families, drafting a comprehensive Last Will is the far superior legal strategy. Here is why estate planning advocates consistently recommend Wills:
               </p>
@@ -1029,9 +1029,9 @@ export default function GiftDeedVsWillClient() {
                 <Scale className="w-4 h-4" />
                 <span>Statutory Elder Remedy</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
                 8. Senior Citizens Act Section 23: Cancelling a Gift Deed
-              </h2>
+              </h3>
               <div className="space-y-4 text-slate-700 text-sm sm:text-base leading-relaxed">
                 <p>
                   Can parents cancel a registered Gift Deed if their children abandon them? Under standard property law (Section 126 of TPA), a gift cannot be revoked unilaterally. However, Parliament introduced a potent statutory exception for aging parents.
@@ -1073,9 +1073,9 @@ export default function GiftDeedVsWillClient() {
                 <Split className="w-4 h-4" />
                 <span>Diagnostic Logic</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
                 9. Step-by-Step Decision Protocol: Choosing the Right Path
-              </h2>
+              </h3>
               <p className="text-slate-700 text-sm sm:text-base leading-relaxed">
                 Follow this simple 4-step diagnostic decision framework to determine which instrument matches your personal family and financial profile:
               </p>
@@ -1121,9 +1121,9 @@ export default function GiftDeedVsWillClient() {
                 <Calculator className="w-4 h-4" />
                 <span>Dynamic Assessment Tool</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
                 10. Interactive Cost &amp; Decision Calculator: Plan Your Asset
-              </h2>
+              </h3>
               <p className="text-slate-700 text-sm sm:text-base leading-relaxed">
                 Test your property value and state to see immediate estimated stamp duty, registration charges, and how much cash you save by choosing a Will:
               </p>
@@ -1267,9 +1267,9 @@ export default function GiftDeedVsWillClient() {
                 <CheckSquare className="w-4 h-4" />
                 <span>Verified Legal Checklist</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
                 11. Printable Estate Planning Checklist: Gift Deed vs Will
-              </h2>
+              </h3>
               <p className="text-slate-700 text-sm sm:text-base leading-relaxed">
                 Use this actionable, practitioner-verified checklist to conduct due diligence before signing any title document or transferring assets to children:
               </p>
@@ -1333,9 +1333,9 @@ export default function GiftDeedVsWillClient() {
                 <HelpCircle className="w-4 h-4" />
                 <span>Common Questions</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
                 Frequently Asked Questions: Gift Deed vs Will in India
-              </h2>
+              </h3>
 
               <div className="space-y-3">
                 {[
@@ -1411,9 +1411,9 @@ export default function GiftDeedVsWillClient() {
                 <Scale className="w-4 h-4" />
                 <span>Statutory References</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
                 Official Statutory Authorities &amp; Landmark Judicial Rulings
-              </h2>
+              </h3>
 
               <div className="overflow-x-auto bg-white rounded-2xl border border-slate-200/80 shadow-xs">
                 <table className="w-full text-left text-xs sm:text-sm border-collapse">

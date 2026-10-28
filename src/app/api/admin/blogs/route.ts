@@ -12,6 +12,58 @@ function estimateReadTime(html: string): string {
   return `${minutes} min`;
 }
 
+function normalizeBlogDate(rawValue: unknown, fallback?: unknown): string {
+  const candidates = [rawValue, fallback];
+  for (const val of candidates) {
+    if (!val) continue;
+    if (val instanceof Date && !isNaN(val.getTime())) {
+      return val.toISOString().split("T")[0];
+    }
+    if (typeof val === "string") {
+      const trimmed = val.trim();
+      const dmyOrMdy = trimmed.match(/^(\d{1,2})[-/.](\d{1,2})[-/.](\d{4})$/);
+      if (dmyOrMdy) {
+        const p1 = Number(dmyOrMdy[1]);
+        const p2 = Number(dmyOrMdy[2]);
+        const year = Number(dmyOrMdy[3]);
+        const day = p2 > 12 ? p2 : p1;
+        const month = p2 > 12 ? p1 : p2;
+        const d = new Date(Date.UTC(year, month - 1, day));
+        if (
+          !isNaN(d.getTime()) &&
+          d.getUTCFullYear() === year &&
+          d.getUTCMonth() + 1 === month &&
+          d.getUTCDate() === day
+        ) {
+          return d.toISOString().split("T")[0];
+        }
+      }
+      const ymd = trimmed.match(/^(\d{4})[-/.](\d{1,2})[-/.](\d{1,2})$/);
+      if (ymd) {
+        const year = Number(ymd[1]);
+        const p1 = Number(ymd[2]);
+        const p2 = Number(ymd[3]);
+        const month = p1 > 12 ? p2 : p1;
+        const day = p1 > 12 ? p1 : p2;
+        const d = new Date(Date.UTC(year, month - 1, day));
+        if (
+          !isNaN(d.getTime()) &&
+          d.getUTCFullYear() === year &&
+          d.getUTCMonth() + 1 === month &&
+          d.getUTCDate() === day
+        ) {
+          return d.toISOString().split("T")[0];
+        }
+      }
+      const parsed = new Date(trimmed);
+      if (!isNaN(parsed.getTime())) {
+        return parsed.toISOString().split("T")[0];
+      }
+    }
+  }
+  return new Date().toISOString().split("T")[0];
+}
+
 function serializeBlog(doc: BlogDoc) {
   const htmlBody = doc.description || doc.content || "";
   return {
@@ -21,7 +73,7 @@ function serializeBlog(doc: BlogDoc) {
     slug: doc.slug,
     category: doc.category || "Indian Succession Law",
     readTime: doc.readTime || doc.readingTime || estimateReadTime(htmlBody),
-    date: doc.date || new Date(doc.createdAt).toISOString().split("T")[0],
+    date: normalizeBlogDate(doc.date, doc.createdAt),
     image: doc.image || "/desktopusp.jpg",
     imageId: doc.imageId || null,
     infographic: doc.infographic || "",
@@ -92,11 +144,14 @@ export async function POST(req: NextRequest) {
       .replace(/^-+|-+$/g, "");
 
     const slug = rawSlug || `will-guide-${Date.now()}`;
-    const description = String(body.description || "");
+    const description = String(body.description || "").replace(
+      /https?:\/\/(?:www\.)?indiacode\.nic\.in\/(?:handle\/[^\s"'<>]+|bitstream\/[^\s"'<>]+|show-data[^\s"'<>]*|\?[^\s"'<>]+)/gi,
+      "https://legislative.gov.in/"
+    );
     const subtitle = String(body.subtitle || "").trim();
     const category = String(body.category || "Indian Succession Law").trim();
     const readTime = String(body.readTime || "").trim() || estimateReadTime(description);
-    const date = String(body.date || new Date().toISOString().split("T")[0]).trim();
+    const date = normalizeBlogDate(body.date);
     const image = String(body.image || "/desktopusp.jpg").trim();
     const imageId = body.imageId ? String(body.imageId).trim() : null;
     const infographic = body.infographic ? String(body.infographic).trim() : null;
@@ -146,7 +201,12 @@ export async function POST(req: NextRequest) {
       ? body.references
           .map((ref: Record<string, unknown>) => ({
             title: String(ref?.title || "").trim(),
-            url: String(ref?.url || "").trim(),
+            url: String(ref?.url || "")
+              .trim()
+              .replace(
+                /^https?:\/\/(?:www\.)?indiacode\.nic\.in\/(?:handle\/.*|bitstream\/.*|show-data.*|\?.*)$/i,
+                "https://legislative.gov.in/"
+              ),
           }))
           .filter((ref: BlogReferenceItem) => ref.title)
       : [];

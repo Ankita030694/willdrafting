@@ -608,9 +608,9 @@ ${expText}`;
                 <AlertTriangle className="w-4 h-4 text-amber-600" />
                 <span>RISK PREVENTION &amp; LITIGATION DEFENSE</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 2. Anti-Misuse Special PoA: Restricting Authority on Assets
-              </h2>
+              </h3>
               <div className="space-y-4 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   The biggest blind spot in conventional legal documentation is the dangerous reliance on generic
@@ -656,9 +656,9 @@ ${expText}`;
                 <Sliders className="w-4 h-4" />
                 <span>INTERACTIVE CUSTOMIZER</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 3. Interactive Tool: Custom Special PoA Clause Builder
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Configure your specific overseas jurisdiction, target Indian state, and representation needs
                 below to instantly generate a legally customized Special PoA clause pack.
@@ -815,9 +815,9 @@ ${expText}`;
                 <FileText className="w-4 h-4" />
                 <span>PRIMARY TEMPLATE BOX</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 4. Downloadable Format: Restricted Non-Sale Special PoA
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 This is the complete, statutory <strong>Anti-Misuse Special Power of Attorney format</strong>.
                 It restricts the attorney solely to revenue mutation, municipal tax Khata, housing society share
@@ -868,9 +868,9 @@ ${expText}`;
                 <DollarSign className="w-4 h-4 text-emerald-600" />
                 <span>AUTHORIZED SALE VARIANT</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 5. Alternative Format: Special PoA for Sale with Escrow
-              </h2>
+              </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   When the NRI heir has already concluded revenue mutation and now desires to sell the inherited
@@ -929,9 +929,9 @@ ${expText}`;
                 <Scale className="w-4 h-4" />
                 <span>COMPARATIVE ANALYSIS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 6. Legal Comparison: Special PoA vs GPA vs Sale Deed PoA
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Understanding the critical statutory distinctions between different powers of attorney prevents
                 costly litigation and unauthorized property alienation.
@@ -996,9 +996,9 @@ ${expText}`;
                 <Globe className="w-4 h-4" />
                 <span>OVERSEAS EXECUTION PROTOCOL</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 7. Embassy Attestation vs Hague Apostille: Complete SOP
-              </h2>
+              </h3>
               <div className="space-y-4 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   To make a Power of Attorney executed abroad admissible in India, an NRI must follow one of two
@@ -1077,9 +1077,9 @@ ${expText}`;
                 <Clock className="w-4 h-4" />
                 <span>SECTION 18 INDIAN STAMP ACT</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 8. The 90-Day Adjudication Rule: Section 18 Stamp Act
-              </h2>
+              </h3>
               <div className="space-y-4 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   Execution and consular attestation abroad is only half the battle. Once the physical document
@@ -1139,9 +1139,9 @@ ${expText}`;
                 <Gavel className="w-4 h-4" />
                 <span>INHERITANCE TRANSMISSION WORKFLOW</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 9. Mutation &amp; Court Probate Procedures for Non-Residents
-              </h2>
+              </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   Once the Special PoA is stamped and adjudicated, your attorney can represent you across three
@@ -1183,9 +1183,9 @@ ${expText}`;
                 <Building2 className="w-4 h-4" />
                 <span>REAL-WORLD SCENARIOS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 10. Practical Case Scenarios: Delhi, Punjab &amp; Mumbai
-              </h2>
+              </h3>
 
               <div className="space-y-4">
                 {/* Case 1 */}
@@ -1262,9 +1262,9 @@ ${expText}`;
                 <FileCheck className="w-4 h-4" />
                 <span>STEP-BY-STEP VERIFICATION</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 11. Mandatory Document Checklist for Embassy &amp; Collector
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Ensure you carry and courier every document in this checklist to prevent delays or rejection
                 before the Indian Embassy, state Apostille officer, or Indian Stamp Collector.
@@ -1297,9 +1297,9 @@ ${expText}`;
                 <Calculator className="w-4 h-4 text-[#C65378]" />
                 <span>TAX OPTIMIZATION &amp; BUDGET 2024 COMPLIANCE</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 12. Calculate Capital Gains Tax on Future Property Sale
-              </h2>
+              </h3>
 
               <div className="rounded-3xl border border-rose-200/90 bg-gradient-to-br from-rose-50/80 via-white to-amber-50/80 p-6 sm:p-8 space-y-4 shadow-sm">
                 <div className="space-y-2">
@@ -1343,9 +1343,9 @@ ${expText}`;
                 <Award className="w-4 h-4" />
                 <span>LEGAL VERIFICATION &amp; ETHICS COMPLIANCE</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 13. Institutional Legal Profile &amp; Advocate Verification
-              </h2>
+              </h3>
 
               <div className="bg-white rounded-3xl border border-slate-200/90 shadow-sm p-6 sm:p-8 space-y-5">
                 <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
@@ -1407,9 +1407,9 @@ ${expText}`;
                 <HelpCircle className="w-4 h-4" />
                 <span>FREQUENTLY ASKED QUESTIONS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 14. Frequently Asked Questions: NRI Power of Attorney
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Clear legal answers to the most common queries raised by Non-Resident Indians managing inherited
                 property transmission from abroad.
@@ -1451,9 +1451,9 @@ ${expText}`;
                 <BookOpen className="w-4 h-4" />
                 <span>STATUTORY AUTHORITIES &amp; EXTERNAL PORTALS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 15. Statutory Citations &amp; Official Consular Portals
-              </h2>
+              </h3>
 
               <div className="rounded-2xl border border-slate-200 bg-white p-5 space-y-3 text-xs sm:text-sm text-slate-700">
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">

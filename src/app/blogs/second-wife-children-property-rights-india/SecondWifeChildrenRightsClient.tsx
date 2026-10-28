@@ -557,9 +557,9 @@ export default function SecondWifeChildrenRightsClient() {
                 <Layers className="w-4 h-4" />
                 <span>Statutory Foundations</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
                 1. Legal Status of Second Marriage: Void vs Valid
-              </h2>
+              </h3>
               <p className="text-slate-700 text-sm sm:text-base leading-relaxed">
                 Before analyzing property rights, one must examine the legal validity of the second marriage under the <strong>Hindu Marriage Act, 1955 (HMA)</strong>. Under Indian law, Hindu marriages are strictly monogamous. Whether a second wife has legal standing as a surviving spouse depends entirely on the status of the first marriage on the day the second wedding took place.
               </p>
@@ -610,9 +610,9 @@ export default function SecondWifeChildrenRightsClient() {
                 <Users className="w-4 h-4" />
                 <span>Statutory Legitimacy</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
                 2. HMA Section 16: Legitimacy of All Children
-              </h2>
+              </h3>
               <p className="text-slate-700 text-sm sm:text-base leading-relaxed">
                 Prior to legal reforms, children born of invalid or bigamous unions were historically branded with social stigma and denied property rights. To put an end to this injustice, Parliament enacted and later expanded <strong>Section 16 of the Hindu Marriage Act, 1955</strong>.
               </p>
@@ -646,9 +646,9 @@ export default function SecondWifeChildrenRightsClient() {
                 <Gavel className="w-4 h-4" />
                 <span>Landmark Supreme Court Verdict</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
                 3. Revanasiddappa Ruling: Supreme Court 2023 Verdict
-              </h2>
+              </h3>
               <p className="text-slate-700 text-sm sm:text-base leading-relaxed">
                 For decades, there was intense judicial debate across Indian courts regarding whether Section 16(3) allowed children of void marriages to claim a share in <em>ancestral coparcenary property</em>, or only in their father's <em>self-acquired property</em>. Earlier rulings like <em>Jinia Keotin (2003)</em> had taken a restrictive view.
               </p>
@@ -686,9 +686,9 @@ export default function SecondWifeChildrenRightsClient() {
                 <FileSpreadsheet className="w-4 h-4" />
                 <span>Comparative Entitlements</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
                 4. Who Gets What: Comprehensive Rights Matrix Table
-              </h2>
+              </h3>
               <p className="text-slate-700 text-sm sm:text-base leading-relaxed">
                 This authoritative reference matrix breaks down the exact legal rights of each family member across different property categories, with and without a Will:
               </p>
@@ -746,9 +746,9 @@ export default function SecondWifeChildrenRightsClient() {
                 <Eye className="w-4 h-4" />
                 <span>Visual Legal Architecture</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
                 5. Visual Blueprint: Inheritance Law in Blended Families
-              </h2>
+              </h3>
               <p className="text-slate-700 text-sm sm:text-base leading-relaxed">
                 The visual framework below illustrates how the Supreme Court and Indian succession statutes balance property claims between first and second families, ensuring that the innocent children are never left without economic protection:
               </p>
@@ -790,9 +790,9 @@ export default function SecondWifeChildrenRightsClient() {
                 <Calculator className="w-4 h-4" />
                 <span>Interactive Legal Tool</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
                 6. Interactive Share Estimator: Blended Family Tool
-              </h2>
+              </h3>
               <p className="text-slate-700 text-sm sm:text-base leading-relaxed">
                 Calculate the exact percentage and estimated value in Rupees each family member inherits under the Hindu Succession Act and Supreme Court guidelines when the father dies without a Will:
               </p>
@@ -956,9 +956,9 @@ export default function SecondWifeChildrenRightsClient() {
                 <Heart className="w-4 h-4" />
                 <span>Spousal Entitlements</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
                 7. Second Wife Rights: Maintenance vs Inheritance
-              </h2>
+              </h3>
               <p className="text-slate-700 text-sm sm:text-base leading-relaxed">
                 A critical distinction in Indian matrimonial jurisprudence is the difference between the <strong>right to property inheritance</strong> and the <strong>right to maintenance</strong>. While an invalid second marriage denies succession rights under the Hindu Succession Act, courts have progressively created legal shields to prevent destitute women from being abandoned.
               </p>
@@ -1002,9 +1002,9 @@ export default function SecondWifeChildrenRightsClient() {
                 <FileCheck className="w-4 h-4" />
                 <span>Enforcement Protocol</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
                 8. Step-by-Step SOP: How to Claim Your Legal Share
-              </h2>
+              </h3>
               <p className="text-slate-700 text-sm sm:text-base leading-relaxed">
                 If children or family members of a second marriage face resistance, exclusion, or illegal property sale attempts from the first family, follow this proven 6-stage legal protocol:
               </p>
@@ -1062,9 +1062,9 @@ export default function SecondWifeChildrenRightsClient() {
                 <FileText className="w-4 h-4" />
                 <span>Printable Legal Toolkit</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
                 9. Printable Legal Protocol: Blended Family Checklist
-              </h2>
+              </h3>
               <p className="text-slate-700 text-sm sm:text-base leading-relaxed">
                 Use this comprehensive, clause-annotated legal checklist to safeguard your inheritance and navigate revenue and court proceedings without procedural missteps:
               </p>
@@ -1112,9 +1112,9 @@ export default function SecondWifeChildrenRightsClient() {
                 <AlertCircle className="w-4 h-4" />
                 <span>Legal Clarity</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
                 10. 6 Dangerous Inheritance Myths in Second Marriages
-              </h2>
+              </h3>
               <p className="text-slate-700 text-sm sm:text-base leading-relaxed">
                 Misinformation surrounding blended family property rights often leads to families losing their lawful inheritance or entering into fraudulent settlements:
               </p>
@@ -1145,9 +1145,9 @@ export default function SecondWifeChildrenRightsClient() {
                 <ShieldAlert className="w-4 h-4 text-[#C65378]" />
                 <span>The Definitive Solution</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-white tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-white tracking-tight">
                 11. Why a Will is Essential in Blended Families
-              </h2>
+              </h3>
               <p className="text-slate-200 text-sm sm:text-base leading-relaxed">
                 When a person passes away without a Will (intestate), the law applies rigid statutory formulas that almost inevitably trigger bitter, multi-decade litigation between the first and second families. The absence of a Will leaves bank accounts frozen, properties locked in injunctions, and vulnerable family members penniless.
               </p>
@@ -1199,9 +1199,9 @@ export default function SecondWifeChildrenRightsClient() {
                 <Landmark className="w-4 h-4" />
                 <span>Comparative Personal Laws</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
                 12. Other Personal Laws: Muslim, Christian &amp; Parsi Rules
-              </h2>
+              </h3>
               <p className="text-slate-700 text-sm sm:text-base leading-relaxed">
                 Succession laws in India vary significantly across different religious communities. Here is how second marriage property rights operate for other communities:
               </p>
@@ -1230,9 +1230,9 @@ export default function SecondWifeChildrenRightsClient() {
                 <HelpCircle className="w-4 h-4" />
                 <span>Common Enquiries</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
                 Frequently Asked Questions: Second Wife &amp; Child Rights
-              </h2>
+              </h3>
               <p className="text-slate-700 text-sm sm:text-base leading-relaxed">
                 Direct, practical answers to common questions regarding second wife and child inheritance in India:
               </p>
@@ -1271,9 +1271,9 @@ export default function SecondWifeChildrenRightsClient() {
                 <Award className="w-4 h-4" />
                 <span>Statutory References</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
                 Statutory Citations: Acts &amp; Landmark Precedents
-              </h2>
+              </h3>
               <div className="text-xs sm:text-sm text-slate-700 space-y-2">
                 <p>This guide is authored with reference to primary statutory provisions and Supreme Court authorities:</p>
                 <ul className="list-disc pl-5 space-y-1 text-slate-600 text-xs">

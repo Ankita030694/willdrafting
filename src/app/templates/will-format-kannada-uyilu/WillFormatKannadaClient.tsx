@@ -566,9 +566,9 @@ Name: [Full Name] | Address: [Address] | ID: [Aadhaar No]`;
                 <FileText className="w-4 h-4" />
                 <span>NATIVE KANNADA TEMPLATE</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 2. Complete Uyilu Patra Format: Native Kannada Draft
-              </h2>
+              </h3>
               <p className="text-sm text-slate-600 leading-relaxed">
                 The following is the full, legally robust Kannada Uyilu draft tailored for property owners in Bengaluru,
                 Mysuru, Mangaluru, Belagavi, and across Karnataka. You can review, copy, and customize this draft directly.
@@ -621,9 +621,9 @@ Name: [Full Name] | Address: [Address] | ID: [Aadhaar No]`;
                 <Globe className="w-4 h-4" />
                 <span>BILINGUAL LEGAL ANATOMY</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 3. English Translation: Kannada Uyilu Clauses Explained
-              </h2>
+              </h3>
               <p className="text-sm text-slate-700 leading-relaxed">
                 For bank managers, overseas family members, non-resident Indians (NRIs), and corporate employers who require
                 an English translation of the Kannada document, here is the complete clause-by-clause English counterpart.
@@ -665,9 +665,9 @@ Name: [Full Name] | Address: [Address] | ID: [Aadhaar No]`;
                 <Sliders className="w-4 h-4" />
                 <span>INTERACTIVE GENERATOR</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 4. Interactive Clause Selector: Tailor Your Kannada Will
-              </h2>
+              </h3>
               <p className="text-sm text-slate-700 leading-relaxed">
                 Customize your Kannada Will clauses depending on whether your property is self-acquired or ancestral, and
                 whether you wish to grant life interest to your spouse or appoint an independent executor.
@@ -842,9 +842,9 @@ Name: [Full Name] | Address: [Address] | ID: [Aadhaar No]`;
                 <Gavel className="w-4 h-4" />
                 <span>LEGAL MOAT &amp; JURISPRUDENCE</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 5. Karnataka Probate Moat: Why Bangalore Probate Exempt
-              </h2>
+              </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   A critical legal distinction exists between real estate in Karnataka and properties in Mumbai, Kolkata,
@@ -879,9 +879,9 @@ Name: [Full Name] | Address: [Address] | ID: [Aadhaar No]`;
                 <Calculator className="w-4 h-4" />
                 <span>OFFICIAL SRO FEE CALCULATOR</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 6. Kaveri 2.0 SRO Fee Estimator &amp; Registration Guide
-              </h2>
+              </h3>
               <p className="text-sm text-slate-700 leading-relaxed">
                 Estimate the exact government registration fee at your local Karnataka Sub-Registrar Office (SRO) under
                 the Kaveri 2.0 portal rules.
@@ -979,9 +979,9 @@ Name: [Full Name] | Address: [Address] | ID: [Aadhaar No]`;
                 <Layers className="w-4 h-4" />
                 <span>COMPARATIVE ANALYSIS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 7. Comparison: Registered Uyilu vs Unregistered vs Gift
-              </h2>
+              </h3>
               <p className="text-sm text-slate-700 leading-relaxed">
                 Understand the statutory, taxation, and revenue mutation differences between various estate transmission
                 methods recognized under Karnataka land laws.
@@ -1047,9 +1047,9 @@ Name: [Full Name] | Address: [Address] | ID: [Aadhaar No]`;
                 <Clock className="w-4 h-4" />
                 <span>STEP-BY-STEP PROTOCOL</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 8. Step-by-Step SOP: Kaveri 2.0 Will Registration in SRO
-              </h2>
+              </h3>
               <div className="space-y-4 text-sm text-slate-700 leading-relaxed">
                 <div className="flex gap-4 items-start p-4 rounded-xl bg-white border border-slate-200">
                   <div className="w-8 h-8 rounded-full bg-[#172228] text-white flex items-center justify-center font-bold text-xs shrink-0">
@@ -1128,9 +1128,9 @@ Name: [Full Name] | Address: [Address] | ID: [Aadhaar No]`;
                 <Building2 className="w-4 h-4" />
                 <span>POST-DEATH PROPERTY TRANSMISSION</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 9. Bhoomi RTC Pouthi Khata &amp; BBMP e-Khata Mutation SOP
-              </h2>
+              </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   Upon the demise of the testator, property ownership does not transfer automatically in government records.
@@ -1174,9 +1174,9 @@ Name: [Full Name] | Address: [Address] | ID: [Aadhaar No]`;
                 <Users className="w-4 h-4" />
                 <span>REAL-LIFE SCENARIOS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 10. Practical Case Studies: Bengaluru, Mysuru &amp; Hubballi
-              </h2>
+              </h3>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                 <div className="p-4 rounded-2xl bg-white border border-slate-200 space-y-2 shadow-xs">
                   <div className="text-xs font-bold text-[#C65378] uppercase">Case 1: Bengaluru Apartment</div>
@@ -1216,9 +1216,9 @@ Name: [Full Name] | Address: [Address] | ID: [Aadhaar No]`;
                 <FileCheck className="w-4 h-4" />
                 <span>VERIFICATION ASSETS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 11. Sub-Registrar Document Checklist &amp; Doctor Certificate
-              </h2>
+              </h3>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 {/* Checklist Box */}
@@ -1315,9 +1315,9 @@ Signature & Official Clinic Stamp: _________________________`;
                 <Calculator className="w-4 h-4" />
                 <span>INTERACTIVE SUCCESSION TOOLS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 12. Contextual Estate Calculators &amp; Succession Tools
-              </h2>
+              </h3>
               <p className="text-sm text-slate-700 leading-relaxed">
                 Planning your estate involves tax optimization and succession valuation. Use our specialized statutory tools:
               </p>
@@ -1363,9 +1363,9 @@ Signature & Official Clinic Stamp: _________________________`;
                 <Award className="w-4 h-4" />
                 <span>LEGAL COUNSEL AUTHORSHIP</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 13. Legal Backing: Senior Counsel Succession Profile
-              </h2>
+              </h3>
               <div className="p-6 rounded-3xl bg-white border border-slate-200 shadow-sm space-y-4">
                 <div className="flex items-center gap-4">
                   <div className="w-14 h-14 rounded-full bg-rose-100 text-[#C65378] font-black text-lg flex items-center justify-center shrink-0">
@@ -1400,9 +1400,9 @@ Signature & Official Clinic Stamp: _________________________`;
                 <HelpCircle className="w-4 h-4" />
                 <span>FREQUENTLY ASKED QUESTIONS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 14. Frequently Asked Questions: Kannada Uyilu Patra
-              </h2>
+              </h3>
               <div className="space-y-3">
                 {FAQS_DATA.map((faq, index) => {
                   const isOpen = openFaq === index;
@@ -1440,9 +1440,9 @@ Signature & Official Clinic Stamp: _________________________`;
                 <BookOpen className="w-4 h-4" />
                 <span>OFFICIAL PORTALS &amp; STATUTES</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 15. Official Karnataka Statutory References &amp; Portals
-              </h2>
+              </h3>
               <div className="p-5 rounded-2xl bg-slate-900 text-white space-y-3 text-xs">
                 <div className="font-bold text-rose-300">Authoritative Karnataka Government Portals:</div>
                 <ul className="space-y-2 text-slate-300">

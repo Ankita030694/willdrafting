@@ -573,9 +573,9 @@ export default function LivingWillFormatIndiaClient() {
                 <FileCheck className="w-4 h-4" />
                 <span>SECTION 2: COMPLIANCE AUDIT</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 2. Statutory Checklist: Advance Medical Directive Validity
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Before printing your Living Will, review these statutory essentials. Check each item to confirm that your document adheres to current Indian legal standards.
               </p>
@@ -642,9 +642,9 @@ export default function LivingWillFormatIndiaClient() {
                 <FileText className="w-4 h-4" />
                 <span>SECTION 3: FREE DOWNLOADABLE TEMPLATE</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 3. Clause-Annotated Living Will Format for India
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Below is a comprehensive, advocate-approved Living Will template aligned with the 2023 Supreme Court guidelines. You can copy the text or print it directly on standard paper.
               </p>
@@ -736,9 +736,9 @@ export default function LivingWillFormatIndiaClient() {
                 <UserCheck className="w-4 h-4 text-[#5F7E75]" />
                 <span>SECTION 4: SURROGATE DECISION-MAKER</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 4. Surrogate Healthcare Decision-Maker Legal Rules
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 A Living Will cannot enforce itself. When a patient falls into a coma or persistent vegetative state, someone must physically deliver the document to the hospital administration and advocate for the patient. This role is performed by the <strong>Surrogate Decision-Maker</strong>.
               </p>
@@ -792,9 +792,9 @@ export default function LivingWillFormatIndiaClient() {
                 <Activity className="w-4 h-4" />
                 <span>SECTION 5: VISUAL BLUEPRINT</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 5. Visual Blueprint: Living Will Execution & Review SOP
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Executing and activating an Advance Medical Directive involves a two-phase protocol. The diagram below illustrates the complete statutory workflow under the 2023 Supreme Court guidelines.
               </p>
@@ -833,9 +833,9 @@ export default function LivingWillFormatIndiaClient() {
                 <CheckCircle2 className="w-4 h-4 text-[#5F7E75]" />
                 <span>SECTION 6: EXECUTION WORKFLOW</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 6. Step-by-Step SOP: Six Stages from Drafting to Activation
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Executing an Advance Medical Directive does not require complex litigation. Follow these six progressive milestones to ensure your directive is legally water-tight.
               </p>
@@ -895,9 +895,9 @@ export default function LivingWillFormatIndiaClient() {
                 <AlertCircle className="w-4 h-4 text-rose-600" />
                 <span>SECTION 7: COMMON MISTAKES</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 7. Three Critical DIY Mistakes in Indian Living Wills
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Because living wills are relatively new in India, drafting errors are frequent. Avoid these three fatal pitfalls when creating your document.
               </p>
@@ -947,9 +947,9 @@ export default function LivingWillFormatIndiaClient() {
                 <Scale className="w-4 h-4" />
                 <span>SECTION 8: STATUTORY COMPARISON</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 8. Comparative Matrix: 2018 Judgment vs 2023 Modified Rules
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Examine the profound differences between the original 2018 guidelines and the 2023 Supreme Court modifications that made living wills genuinely accessible.
               </p>
@@ -1005,9 +1005,9 @@ export default function LivingWillFormatIndiaClient() {
                 <Clock className="w-4 h-4" />
                 <span>SECTION 9: TIMELINE & MILESTONES</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 9. Procedural Timeline: Primary and Secondary Medical Boards
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Understanding the hospital activation timeline gives peace of mind that a patient will not be left to suffer prolonged invasive procedures against their will.
               </p>
@@ -1064,9 +1064,9 @@ export default function LivingWillFormatIndiaClient() {
                 <Building className="w-4 h-4" />
                 <span>SECTION 10: COMPLEX SCENARIOS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 10. Specialized Scenarios: Dementia, Palliative Care & Organs
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Advance care planning often intersects with specific medical and legal dilemmas. Review these four specialized scenarios.
               </p>
@@ -1120,9 +1120,9 @@ export default function LivingWillFormatIndiaClient() {
                 <Award className="w-4 h-4" />
                 <span>SECTION 11: INSTITUTIONAL BACKING</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 11. Institutional Backing: Powered by AMA Legal Solutions
-              </h2>
+              </h3>
               <div className="bg-white rounded-2xl border border-slate-200/90 p-6 sm:p-8 shadow-xs space-y-4">
                 <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-6 border-b border-slate-100">
                   <div>
@@ -1164,9 +1164,9 @@ export default function LivingWillFormatIndiaClient() {
                 <HelpCircle className="w-4 h-4 text-[#C65378]" />
                 <span>SECTION 12: DIRECT ANSWERS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 Frequently Asked Questions: Living Wills in India
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Find clear answers to common questions about executing, witnessing, and enforcing an Advance Medical Directive in India.
               </p>
@@ -1205,9 +1205,9 @@ export default function LivingWillFormatIndiaClient() {
                 <BookOpen className="w-4 h-4" />
                 <span>SECTION 13: STATUTORY CITATIONS & REFERENCES</span>
               </div>
-              <h2 className="text-lg font-bold text-slate-900">
+              <h3 className="text-lg font-bold text-slate-900">
                 Statutory Citations: Supreme Court Orders and Article 21
-              </h2>
+              </h3>
               <ul className="list-disc pl-5 text-xs text-slate-600 space-y-1.5 leading-relaxed">
                 <li>
                   <strong>Constitution of India:</strong> Article 21 (Fundamental right to life, bodily autonomy, and human dignity).

@@ -225,9 +225,9 @@ export default function SurvivorMemberInteractive() {
           <Building2 className="w-4 h-4" />
           <span>Interactive State Protocols &amp; Document Checker</span>
         </div>
-        <h2 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-3">
+        <h3 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-3">
           Interactive SMC State Authority &amp; Document Selector
-        </h2>
+        </h3>
         <p className="text-[0.98rem] sm:text-[1.05rem] leading-[1.65] text-[#49585F]">
           Issuing rules for Surviving Member Certificates vary across Indian states. Select your state to review official issuing offices, or use our 30-second checker to identify your required papers:
         </p>

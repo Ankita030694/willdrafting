@@ -549,9 +549,9 @@ Verified on oath at [City] on [Date]`;
                 <Sliders className="w-4 h-4" />
                 <span>INTERACTIVE LEGAL TOOL</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 2. Interactive 4-in-1 Legal Heir NOC Generator
-              </h2>
+              </h3>
               <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                 Select your required NOC category below, enter the deceased parent&apos;s details, releasing heirs, and
                 asset identifiers. Our interactive engine instantly drafts the legally vetted certificate with state-specific
@@ -846,9 +846,9 @@ Verified on oath at [City] on [Date]`;
                 <Gavel className="w-4 h-4" />
                 <span>LANDMARK JUDICIAL PRECEDENT</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 3. Supreme Court Precedent: When Plain NOC Fails
-              </h2>
+              </h3>
               <div className="prose prose-slate max-w-none text-xs sm:text-sm text-slate-700 leading-relaxed space-y-3">
                 <p>
                   The biggest trap in Indian inheritance administration occurs when legal heirs assume that signing
@@ -909,9 +909,9 @@ Verified on oath at [City] on [Date]`;
                 <Scale className="w-4 h-4" />
                 <span>STATUTORY COMPARISON</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 4. Legal Comparison: NOC vs Release Deed vs FSA
-              </h2>
+              </h3>
               <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                 Understand the precise statutory differences between an informal NOC, a registered Relinquishment
                 Deed, a Family Settlement Agreement (FSA), and a Gift Deed before executing any legal document.
@@ -983,9 +983,9 @@ Verified on oath at [City] on [Date]`;
                 <Landmark className="w-4 h-4" />
                 <span>FINANCIAL INSTITUTION COMPLIANCE</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 5. Bank Account &amp; FD Claim NOC: RBI Guidelines
-              </h2>
+              </h3>
               <div className="prose prose-slate max-w-none text-xs sm:text-sm text-slate-700 leading-relaxed space-y-3">
                 <p>
                   When a bank customer passes away without a registered nominee in their savings, current, or fixed
@@ -1024,9 +1024,9 @@ Verified on oath at [City] on [Date]`;
                 <Building className="w-4 h-4" />
                 <span>CIVIC BODY PROTOCOLS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 6. Municipal Property Mutation &amp; Electricity NOC
-              </h2>
+              </h3>
               <div className="prose prose-slate max-w-none text-xs sm:text-sm text-slate-700 leading-relaxed space-y-3">
                 <p>
                   Municipal mutation (known variously as <em>Dakhil Kharij</em>, <em>Nagar Nigam Namantaran</em>, or
@@ -1055,9 +1055,9 @@ Verified on oath at [City] on [Date]`;
                 <Car className="w-4 h-4" />
                 <span>MOTOR VEHICLES FRAMEWORK</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 7. RTO Form 31 Vehicle RC Transfer NOC Rules
-              </h2>
+              </h3>
               <div className="prose prose-slate max-w-none text-xs sm:text-sm text-slate-700 leading-relaxed space-y-3">
                 <p>
                   Transferring vehicle ownership upon the death of the registered owner is governed by <strong>Section 50
@@ -1090,9 +1090,9 @@ Verified on oath at [City] on [Date]`;
                 <Scale className="w-4 h-4" />
                 <span>TESTAMENTARY JURISDICTION</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 8. Court Probate &amp; Succession Certificate Consent
-              </h2>
+              </h3>
               <div className="prose prose-slate max-w-none text-xs sm:text-sm text-slate-700 leading-relaxed space-y-3">
                 <p>
                   When an executor files a petition for Probate under Section 276 of the Indian Succession Act, 1925,
@@ -1145,9 +1145,9 @@ Verified on oath at [City] on [Date]`;
                 <FileSignature className="w-4 h-4" />
                 <span>STATE STAMP ACT COMPLIANCE</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 9. Stamp Paper Value, Notarization &amp; Affidavits
-              </h2>
+              </h3>
               <div className="prose prose-slate max-w-none text-xs sm:text-sm text-slate-700 leading-relaxed space-y-3">
                 <p>
                   An administrative No Objection Certificate is typically drafted as an Affidavit and must be printed
@@ -1202,9 +1202,9 @@ Verified on oath at [City] on [Date]`;
                 <Scale className="w-4 h-4" />
                 <span>CASE STUDY ANALYSIS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 10. Judicial Precedents: Unregistered NOC Disputes
-              </h2>
+              </h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs leading-relaxed">
                 {/* Case 1 */}
                 <div className="p-5 rounded-2xl bg-white border border-slate-200/90 shadow-xs space-y-2">
@@ -1243,9 +1243,9 @@ Verified on oath at [City] on [Date]`;
                 <Copy className="w-4 h-4" />
                 <span>COPY-PASTEABLE LEGAL CLAUSES</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 11. Ready-to-Use NOC Templates &amp; Verification Text
-              </h2>
+              </h3>
 
               {/* Template Box 1: Municipal Mutation NOC */}
               <div className="rounded-2xl border border-slate-200/90 bg-white p-5 space-y-3 shadow-xs">
@@ -1428,9 +1428,9 @@ NOTARY PUBLIC WITH SEAL`}
                 <Award className="w-4 h-4" />
                 <span>LEGAL EXPERTISE &amp; PRACTICE</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 12. Institutional Legal Backing: AMA Legal Solutions
-              </h2>
+              </h3>
               <div className="bg-white rounded-3xl border border-slate-200/90 p-6 sm:p-8 shadow-xs space-y-5">
                 <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-5 border-b border-slate-100">
                   <div className="space-y-1">
@@ -1488,9 +1488,9 @@ NOTARY PUBLIC WITH SEAL`}
                 <HelpCircle className="w-4 h-4" />
                 <span>DIRECT ANSWERS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 13. Frequently Asked Questions: Legal Heir NOCs
-              </h2>
+              </h3>
 
               <div className="space-y-3 pt-2">
                 {FAQS.map((faq, index) => {
@@ -1529,9 +1529,9 @@ NOTARY PUBLIC WITH SEAL`}
                 <Landmark className="w-4 h-4" />
                 <span>LEGAL CITATIONS &amp; PORTALS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 14. Governing Statutes &amp; Official Legal Authorities
-              </h2>
+              </h3>
 
               <div className="bg-white rounded-3xl border border-slate-200/90 p-5 sm:p-7 shadow-xs space-y-4 text-xs">
                 <div className="space-y-2">

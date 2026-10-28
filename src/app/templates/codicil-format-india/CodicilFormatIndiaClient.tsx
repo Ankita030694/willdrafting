@@ -531,9 +531,9 @@ export default function CodicilFormatIndiaClient() {
                 <FileCheck className="w-4 h-4" />
                 <span>SECTION 2: COMPLIANCE AUDIT</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 2. Interactive Audit: Section 63 & 71 Validity Checklist
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Before signing your Codicil, audit it against these six statutory checkpoints. Ensure your amendment complies with Section 63 and Section 71 of the Indian Succession Act.
               </p>
@@ -600,9 +600,9 @@ export default function CodicilFormatIndiaClient() {
                 <FileText className="w-4 h-4" />
                 <span>SECTION 3: FREE DOWNLOADABLE FORMAT</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 3. Clause-Annotated Codicil Format: Free Printable Template
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Below is a comprehensive Codicil format approved by succession advocates. It covers executor replacement, specific bequest modifications, and statutory republication. Copy it directly or print it for execution.
               </p>
@@ -694,9 +694,9 @@ export default function CodicilFormatIndiaClient() {
                 <Scale className="w-4 h-4" />
                 <span>SECTION 4: DECISION MATRIX</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 4. Codicil or New Will: Comprehensive Decision Matrix
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Deciding between executing a Codicil and drafting an entirely new Will depends on the scope of changes and future litigation risk. Use this comparison table to choose the safest path.
               </p>
@@ -759,9 +759,9 @@ export default function CodicilFormatIndiaClient() {
                 <AlertTriangle className="w-4 h-4 text-amber-600" />
                 <span>SECTION 5: CRITICAL STATUTORY WARNING</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 5. Section 71 Warning: Why Pen Alterations Invalidate a Will
-              </h2>
+              </h3>
               <div className="rounded-2xl bg-amber-50/70 border border-amber-300 p-5 sm:p-6 space-y-3 text-slate-800">
                 <div className="flex items-center gap-2 font-bold text-amber-900 text-sm sm:text-base">
                   <AlertCircle className="w-5 h-5 text-amber-700 shrink-0" />
@@ -787,9 +787,9 @@ export default function CodicilFormatIndiaClient() {
                 <Sparkles className="w-4 h-4" />
                 <span>SECTION 6: VISUAL BLUEPRINT</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 6. Visual Blueprint: Anatomy of an Indian Codicil Document
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 An enforceable Codicil follows an orderly statutory structure. Below is the blueprint showing how recitals, specific amendments, republication, and Section 63 witness attestation connect.
               </p>
@@ -828,9 +828,9 @@ export default function CodicilFormatIndiaClient() {
                 <CheckCircle2 className="w-4 h-4 text-[#5F7E75]" />
                 <span>SECTION 7: EXECUTION WORKFLOW</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 7. Step-by-Step SOP: Five Milestones to Execute a Codicil
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Executing a Codicil in India is straightforward when you follow these five sequential milestones.
               </p>
@@ -885,9 +885,9 @@ export default function CodicilFormatIndiaClient() {
                 <AlertCircle className="w-4 h-4 text-rose-600" />
                 <span>SECTION 8: COMMON MISTAKES</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 8. Three Fatal Codicil Mistakes That Trigger Court Disputes
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Avoid these three common drafting and execution mistakes when amending an Indian Will.
               </p>
@@ -937,9 +937,9 @@ export default function CodicilFormatIndiaClient() {
                 <Scale className="w-4 h-4" />
                 <span>SECTION 9: JUDICIAL INTERPRETATION</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 9. How a Codicil Relates to the Original Will in Court
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Understanding how Indian courts interpret a Will and its Codicil together is essential for dispute-free estate administration.
               </p>
@@ -982,9 +982,9 @@ export default function CodicilFormatIndiaClient() {
                 <Building className="w-4 h-4" />
                 <span>SECTION 10: COMMON USE CASES</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 10. Four Specialized Scenarios for Codicils in India
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Review these four common real-world scenarios where executing a Codicil is the ideal legal solution.
               </p>
@@ -1038,9 +1038,9 @@ export default function CodicilFormatIndiaClient() {
                 <Award className="w-4 h-4" />
                 <span>SECTION 11: INSTITUTIONAL BACKING</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 11. Institutional Verification: Powered by AMA Legal
-              </h2>
+              </h3>
               <div className="bg-white rounded-2xl border border-slate-200/90 p-6 sm:p-8 shadow-xs space-y-4">
                 <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-6 border-b border-slate-100">
                   <div>
@@ -1082,9 +1082,9 @@ export default function CodicilFormatIndiaClient() {
                 <HelpCircle className="w-4 h-4 text-[#C65378]" />
                 <span>SECTION 12: DIRECT ANSWERS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 Frequently Asked Questions: Codicils & Will Amendments
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Find clear answers to common questions about executing, witnessing, and registering a Codicil in India.
               </p>
@@ -1123,9 +1123,9 @@ export default function CodicilFormatIndiaClient() {
                 <BookOpen className="w-4 h-4" />
                 <span>SECTION 13: STATUTORY CITATIONS & REFERENCES</span>
               </div>
-              <h2 className="text-lg font-bold text-slate-900">
+              <h3 className="text-lg font-bold text-slate-900">
                 Statutory Citations and Official Legal Resources
-              </h2>
+              </h3>
               <ul className="list-disc pl-5 text-xs text-slate-600 space-y-1.5 leading-relaxed">
                 <li>
                   <strong>Indian Succession Act, 1925:</strong> Section 2(b) (definition of codicil), Section 59 (testamentary capacity), Section 62 (revocability), Section 63 (two-witness attestation rules), Section 64 (incorporation of papers), Section 67 (bequest to witness void), and Section 71 (effect of obliteration or alteration).

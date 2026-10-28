@@ -257,6 +257,9 @@ export default function SuccessionCalculatorPage() {
 
         {/* Interactive Calculator Component */}
         <section aria-label="Interactive Succession Calculator" className="mb-20">
+          <h2 className="text-2xl sm:text-3xl font-medium tracking-tight text-[#111827] mb-6">
+            Calculate Legal Heir Shares &amp; Nomination Risk
+          </h2>
           <SuccessionCalculator />
         </section>
 
@@ -266,9 +269,9 @@ export default function SuccessionCalculatorPage() {
             <span className="text-[11px] font-bold uppercase tracking-[0.16em] text-[#C65378] block mb-2">
               Statutory Reference Matrix
             </span>
-            <h2 className="text-2xl sm:text-3xl font-medium tracking-tight text-[#111827]">
+            <h3 className="text-2xl sm:text-3xl font-medium tracking-tight text-[#111827]">
               Statutory Comparison: Intestate Succession vs. Written Will
-            </h2>
+            </h3>
           </div>
 
           <div className="overflow-x-auto rounded-2xl border border-[#172228]/15 bg-white shadow-xs">
@@ -368,9 +371,9 @@ export default function SuccessionCalculatorPage() {
         {/* Editorial Guide Section */}
         <section className="grid grid-cols-1 lg:grid-cols-12 gap-8 mb-20">
           <div className="lg:col-span-8 bg-white border border-[#172228]/10 rounded-3xl p-7 sm:p-10 space-y-5">
-            <h2 className="text-2xl sm:text-3xl font-medium text-[#111827]">
+            <h3 className="text-2xl sm:text-3xl font-medium text-[#111827]">
               How Intestate Succession Works Across 4 Personal Laws
-            </h2>
+            </h3>
             <p className="text-[16px] leading-[1.8] text-[#374151]">
               When an Indian citizen or NRI/OCI holding assets in India passes away without leaving a validly executed Will under{" "}
               <strong className="font-semibold text-[#111827]">
@@ -465,9 +468,9 @@ export default function SuccessionCalculatorPage() {
         <section className="space-y-6">
           <div className="flex items-center gap-2.5">
             <ShieldCheck className="w-5 h-5 text-[#C65378]" />
-            <h2 className="text-2xl sm:text-3xl font-medium tracking-tight text-[#111827]">
+            <h3 className="text-2xl sm:text-3xl font-medium tracking-tight text-[#111827]">
               Frequently Asked Questions on Indian Inheritance Shares
-            </h2>
+            </h3>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

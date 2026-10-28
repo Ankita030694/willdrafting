@@ -682,9 +682,9 @@ Verified at [PLACE] on this _____ day of _______________ 20___ that the contents
                 <Layers className="w-4 h-4" />
                 <span>LEGAL PATHWAYS COMPARISON</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 2. Claim Pathways: Nominee vs Indemnity Bond vs Probate
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Review how different deceased claim procedures compare in terms of court intervention, costs,
                 timelines, and legal risks.
@@ -765,9 +765,9 @@ Verified at [PLACE] on this _____ day of _______________ 20___ that the contents
                 <Sparkles className="w-4 h-4" />
                 <span>INTERACTIVE DRAFT SELECTOR &amp; CUSTOMIZER</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 3. Interactive Indemnity Bond Format &amp; Clause Selector
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Select your required template below. You can use standard bracketed placeholders or toggle
                 the live customizer to enter your deceased family member&apos;s details for a ready-to-print draft.
@@ -957,9 +957,9 @@ Verified at [PLACE] on this _____ day of _______________ 20___ that the contents
                 <FileText className="w-4 h-4" />
                 <span>FORMAT 1: COMPLETE VETTED TEMPLATE</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 4. Format 1: Bank Deceased Account Claim Indemnity Bond
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 This comprehensive format includes the Section 124 indemnity covenant, Section 128 joint and
                 several surety guarantee, court cost reimbursement clause, and notary public attestation block.
@@ -1014,9 +1014,9 @@ Verified at [PLACE] on this _____ day of _______________ 20___ that the contents
                 <Lock className="w-4 h-4" />
                 <span>FORMAT 2: SAFE DEPOSIT LOCKERS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 5. Format 2: Bank Locker Claim Indemnity Bond Template
-              </h2>
+              </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   Claiming the contents of a deceased depositor&apos;s safe deposit locker requires special safeguards
@@ -1068,9 +1068,9 @@ Verified at [PLACE] on this _____ day of _______________ 20___ that the contents
                 <UserCheck className="w-4 h-4" />
                 <span>SURETYSHIP JURISPRUDENCE</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 6. Two-Surety Guarantee &amp; Solvent Undertaking Clause
-              </h2>
+              </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   Why do Indian banks insist on two sureties rather than accepting an indemnity bond signed only
@@ -1114,9 +1114,9 @@ Verified at [PLACE] on this _____ day of _______________ 20___ that the contents
                 <Scale className="w-4 h-4" />
                 <span>FORMAT 3: HEIR DISCLAIMER &amp; NOC</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 7. Format 3: Legal Heir NOC &amp; Affidavit of Disclaimer
-              </h2>
+              </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   When a deceased parent leaves behind multiple adult children and a surviving spouse, all
@@ -1167,9 +1167,9 @@ Verified at [PLACE] on this _____ day of _______________ 20___ that the contents
                 <Coins className="w-4 h-4" />
                 <span>STATE STAMP PAPER VALUES</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 8. State Stamp Duty Denominations for Indemnity Bonds
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Under the Indian Stamp Act, 1899 and state amendments, an indemnity bond must be executed on
                 non-judicial stamp paper of the appropriate denomination. Using insufficient stamp duty renders
@@ -1221,9 +1221,9 @@ Verified at [PLACE] on this _____ day of _______________ 20___ that the contents
                 <Clock className="w-4 h-4" />
                 <span>STEP-BY-STEP PROTOCOL</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 9. Step-by-Step SOP: Settling Bank Deceased Balances
-              </h2>
+              </h3>
               <div className="space-y-4">
                 <div className="flex items-start gap-3 p-4 bg-white rounded-2xl border border-slate-200 shadow-xs">
                   <div className="w-7 h-7 rounded-full bg-rose-100 text-[#C65378] font-black text-xs flex items-center justify-center shrink-0">
@@ -1298,9 +1298,9 @@ Verified at [PLACE] on this _____ day of _______________ 20___ that the contents
                 <Building2 className="w-4 h-4" />
                 <span>INSTITUTIONAL LIMITS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 10. Bank-Wise Threshold Limits for Deceased Claims
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Under RBI rules, each commercial bank fixes its own threshold limit for settling claims without
                 a Succession Certificate. Balances below these limits are settled solely on an Indemnity Bond.
@@ -1335,9 +1335,9 @@ Verified at [PLACE] on this _____ day of _______________ 20___ that the contents
                 <AlertCircle className="w-4 h-4" />
                 <span>BANK REJECTION SAFEGUARDS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 11. Common Reasons Banks Reject Deceased Claim Bonds
-              </h2>
+              </h3>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs sm:text-sm">
                 <div className="p-4 rounded-2xl bg-white border border-slate-200 shadow-xs space-y-1.5">
                   <div className="font-extrabold text-rose-700 flex items-center gap-1.5">
@@ -1392,9 +1392,9 @@ Verified at [PLACE] on this _____ day of _______________ 20___ that the contents
                 <Scale className="w-4 h-4" />
                 <span>PRACTICAL CASE STUDIES</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 12. Real Settlement Case Studies: SBI, HDFC &amp; PNB
-              </h2>
+              </h3>
               <div className="space-y-4 text-xs sm:text-sm">
                 <div className="p-5 bg-white rounded-2xl border border-slate-200 shadow-xs space-y-2">
                   <div className="flex items-center justify-between">
@@ -1488,9 +1488,9 @@ Verified at [PLACE] on this _____ day of _______________ 20___ that the contents
                 <ShieldCheck className="w-4 h-4" />
                 <span>LEGAL REVIEW &amp; ADVOCATE BACKING</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 13. Legal Review &amp; Advocate Backing by AMA Solutions
-              </h2>
+              </h3>
               <div className="p-5 sm:p-6 bg-white rounded-3xl border border-slate-200/90 shadow-xs space-y-4">
                 <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
                   <div className="w-16 h-16 rounded-full bg-rose-100 text-[#C65378] font-black text-xl flex items-center justify-center shrink-0">
@@ -1529,9 +1529,9 @@ Verified at [PLACE] on this _____ day of _______________ 20___ that the contents
                 <HelpCircle className="w-4 h-4" />
                 <span>FREQUENTLY ASKED QUESTIONS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 14. Frequently Asked Questions: Bank Deceased Claims
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Answers to common practical questions regarding bank deceased depositor claims, indemnity bonds,
                 surety liabilities, and RBI circular timelines.
@@ -1575,9 +1575,9 @@ Verified at [PLACE] on this _____ day of _______________ 20___ that the contents
                 <Landmark className="w-4 h-4" />
                 <span>STATUTORY CITATIONS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 15. Statutory Citations &amp; Official Banking Circulars
-              </h2>
+              </h3>
               <div className="p-5 bg-white rounded-2xl border border-slate-200 shadow-xs space-y-3 text-xs sm:text-sm text-slate-700 leading-relaxed">
                 <p>
                   This guide and its accompanying legal formats are grounded in the following official statutes

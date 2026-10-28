@@ -554,9 +554,9 @@ export default function NagpurLocationClient({ faqs }: Props) {
                   Statutory Principles
                 </span>
                 {/* H2: Exactly 44 chars */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   1. Will Drafting &amp; Succession Laws in Nagpur
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Every Will drafted for assets in Nagpur must comply with the <strong>Indian Succession Act, 1925</strong>, the <strong>Registration Act, 1908</strong>, and the <strong>Maharashtra Stamp Act</strong>. The legal framework governing testamentary succession in Nagpur provides distinct procedural advantages:
                 </p>
@@ -610,9 +610,9 @@ export default function NagpurLocationClient({ faqs }: Props) {
                   Strategic Advantages
                 </span>
                 {/* H2: Exactly 51 chars */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   2. Will Registration in Nagpur: Rules &amp; Legal Value
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   While registering a Will is optional under Section 18(e) of the Registration Act, registering your document before the Nagpur Sub-Registrar creates a state-preserved record in official <strong>Book III</strong>. Here is how a registered Will compares to an unregistered document:
                 </p>
@@ -673,9 +673,9 @@ export default function NagpurLocationClient({ faqs }: Props) {
                   Jurisdictional Clarity
                 </span>
                 {/* H2: Exactly 49 chars */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   3. Is Probate Mandatory for Properties in Nagpur?
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   One of the most frequent misconceptions among property owners in Vidarbha is that every Will in Maharashtra requires probate from the Bombay High Court. <strong>This is legally incorrect for Nagpur.</strong>
                 </p>
@@ -734,9 +734,9 @@ export default function NagpurLocationClient({ faqs }: Props) {
                   Registration Locations
                 </span>
                 {/* H2: Exactly 47 chars */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   4. Nagpur Sub-Registrar Offices &amp; SRO Directory
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Nagpur district operates 6 primary Sub-Registrar Offices under the Inspector General of Registration (IGR Maharashtra). Under Section 31 of the Registration Act, registration of a Will can take place at the SRO within whose jurisdiction the testator resides:
                 </p>
@@ -797,9 +797,9 @@ export default function NagpurLocationClient({ faqs }: Props) {
                   Neighborhood Coverage
                 </span>
                 {/* H2: Exactly 48 chars */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   5. Area-Wise Will Drafting Services Across Nagpur
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Looking for legally verified <strong>Will drafting services in Dharampeth, Civil Lines, Wardha Road, or Gandhibagh</strong>? Our senior estate planning advocates provide comprehensive legal drafting, IGR Maharashtra e-Stepin slot scheduling, and Sub-Registrar accompaniment tailored to the specific property dynamics of Nagpur:
                 </p>
@@ -1249,9 +1249,9 @@ export default function NagpurLocationClient({ faqs }: Props) {
                   Procedural SOP
                 </span>
                 {/* H2: Exactly 51 chars */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   6. Step-by-Step SOP: Will Drafting to Registration
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Drafting and registering your Will in Nagpur follows a clear 5-step standard operating procedure supervised by our Bombay High Court legal team:
                 </p>
@@ -1344,9 +1344,9 @@ export default function NagpurLocationClient({ faqs }: Props) {
                   Accessibility &amp; Senior Care
                 </span>
                 {/* H2: Exactly 48 chars */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   7. Section 31 Doorstep SRO Registration in Nagpur
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   For senior citizens, bedridden individuals, or patients undergoing treatment in Nagpur hospitals (such as in Dhantoli medical hub, Kingsway Hospital, or Alexis/Max Healthcare), traveling to the Sub-Registrar Office can be difficult or impossible. <strong>Section 31 of the Registration Act, 1908</strong> provides a compassionate, legally sound solution:
                 </p>
@@ -1409,9 +1409,9 @@ export default function NagpurLocationClient({ faqs }: Props) {
                   Preparation &amp; Verification
                 </span>
                 {/* H2: Exactly 46 chars */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   8. Mandatory Document Checklist for Nagpur Wills
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Interactive checklist to prepare your documents before signing or visiting the Nagpur Sub-Registrar Office:
                 </p>
@@ -1470,9 +1470,9 @@ export default function NagpurLocationClient({ faqs }: Props) {
                   Asset Classes
                 </span>
                 {/* H2: Exactly 46 chars */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   9. Estate Asset Distribution: NMC, NIT &amp; Land
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Nagpur has unique property governance structures ranging from Nagpur Improvement Trust (NIT) layouts to Vidarbha agricultural farmland. Here is how your Will covers each asset class:
                 </p>
@@ -1538,9 +1538,9 @@ export default function NagpurLocationClient({ faqs }: Props) {
                   Government Fee Structure
                 </span>
                 {/* H2: Exactly 52 chars */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   10. Registration Charges &amp; Zero Stamp Duty in Nagpur
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Unlike property gift deeds or sale conveyances which attract 5% to 7% stamp duty in Maharashtra, <strong>Wills enjoy total exemption from stamp duty</strong> across Nagpur:
                 </p>
@@ -1588,9 +1588,9 @@ export default function NagpurLocationClient({ faqs }: Props) {
                   Transparent Pricing
                 </span>
                 {/* H2: Exactly 51 chars */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   11. Transparent Pricing: Nagpur Will Making Packages
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Choose the plan that fits your family estate requirements. Transparent pricing with zero hidden charges:
                 </p>
@@ -1741,9 +1741,9 @@ export default function NagpurLocationClient({ faqs }: Props) {
                   Clear Answers
                 </span>
                 {/* H2: Exactly 51 chars */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   Frequently Asked Questions: Will Drafting in Nagpur
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Answers to the most common legal questions regarding Will drafting, NIT plot transfers, and IGR registration in Nagpur:
                 </p>
@@ -1791,9 +1791,9 @@ export default function NagpurLocationClient({ faqs }: Props) {
                   Judicial References
                 </span>
                 {/* H2: Exactly 51 chars */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   12. Statutory Citations &amp; Vidarbha Legal Precedents
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Authoritative legislative provisions and judicial precedents governing Will drafting and succession in Nagpur and Maharashtra:
                 </p>

@@ -720,9 +720,9 @@ I, [Name of Petitioner / Executor], do hereby declare that the statements made i
                 <Sparkles className="w-4 h-4" />
                 <span>INTERACTIVE COURT FEE TOOL</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 2. Interactive Probate Court Fee &amp; Timeline Calculator
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Select your state, enter the asset valuations and allowable deductions, and choose your
                 litigation posture to compute exact ad-valorem court fees, statutory caps, publication
@@ -1132,9 +1132,9 @@ I, [Name of Petitioner / Executor], do hereby declare that the statements made i
                 <Scale className="w-4 h-4" />
                 <span>STATE SLABS &amp; CEILINGS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 3. State-Wise Ad Valorem Court Fee Slabs &amp; Statutory Caps
-              </h2>
+              </h3>
               <div className="space-y-4 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   In India, each state sets its own court fees. Under Entry 3 of List II in the
@@ -1204,9 +1204,9 @@ I, [Name of Petitioner / Executor], do hereby declare that the statements made i
                 <FileText className="w-4 h-4" />
                 <span>PROCEDURAL DISBURSEMENTS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 4. Citation Publication &amp; Collector Valuation Expenses
-              </h2>
+              </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   Besides court fees, you must budget for basic court expenses. These costs are required
@@ -1253,9 +1253,9 @@ I, [Name of Petitioner / Executor], do hereby declare that the statements made i
                 <Building className="w-4 h-4" />
                 <span>PECUNIARY JURISDICTION</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 5. High Court vs District Court: Jurisdiction &amp; Filing
-              </h2>
+              </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   Where do you file your probate case? Under Section 264 of the Indian Succession Act, you
@@ -1315,9 +1315,9 @@ I, [Name of Petitioner / Executor], do hereby declare that the statements made i
                 <Clock className="w-4 h-4" />
                 <span>TIMELINE DYNAMICS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 6. Uncontested vs Contested Probate: Procedural Timelines
-              </h2>
+              </h3>
               <div className="space-y-4 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   How long does probate take? It depends on whether any relative objects. If someone files
@@ -1369,9 +1369,9 @@ I, [Name of Petitioner / Executor], do hereby declare that the statements made i
                 <Scale className="w-4 h-4" />
                 <span>LEGAL REMEDY COMPARISON</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 7. Succession Certificate vs Probate Comparison
-              </h2>
+              </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   Many families ask whether they need a Probate, Letters of Administration, or a
@@ -1430,9 +1430,9 @@ I, [Name of Petitioner / Executor], do hereby declare that the statements made i
                 <Layers className="w-4 h-4" />
                 <span>STATE COMPARISON MATRIX</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 8. Comprehensive State-by-State Court Fee Comparison
-              </h2>
+              </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   Here is how court fees and timelines compare across major Indian states for an estate
@@ -1504,9 +1504,9 @@ I, [Name of Petitioner / Executor], do hereby declare that the statements made i
                 <FileCheck className="w-4 h-4" />
                 <span>PROCEDURAL PLAYBOOK</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 9. Step-by-Step SOP: Filing Probate in High Court
-              </h2>
+              </h3>
               <div className="space-y-4">
                 {[
                   {
@@ -1567,9 +1567,9 @@ I, [Name of Petitioner / Executor], do hereby declare that the statements made i
                 <TrendingUp className="w-4 h-4" />
                 <span>REAL-WORLD SCENARIOS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 10. Practical Case Studies: Mumbai, Delhi &amp; Bengaluru
-              </h2>
+              </h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div className="p-5 rounded-2xl bg-white border border-slate-200/90 shadow-xs space-y-3">
                   <div className="flex items-center justify-between text-xs font-bold text-slate-800">
@@ -1617,9 +1617,9 @@ I, [Name of Petitioner / Executor], do hereby declare that the statements made i
                 <FileSignature className="w-4 h-4" />
                 <span>LEGAL TEMPLATES &amp; CHECKLISTS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 11. Schedule III Valuation Form &amp; Petition Checklist
-              </h2>
+              </h3>
 
               {/* Template Box 1: Schedule III Valuation Format */}
               <div className="rounded-2xl border border-slate-200/90 bg-white p-5 sm:p-6 space-y-3 shadow-xs">
@@ -1723,9 +1723,9 @@ I, [Name of Petitioner / Executor], do hereby declare that the statements made i
                 <ShieldCheck className="w-4 h-4" />
                 <span>LEGAL EXPERTISE</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 12. AMA Legal Solutions: High Court Testamentary Practice
-              </h2>
+              </h3>
               <div className="p-6 rounded-3xl bg-white border border-slate-200/90 shadow-xs space-y-4">
                 <div className="flex items-center gap-4">
                   <div className="w-14 h-14 rounded-full bg-rose-100 text-[#C65378] font-black text-lg flex items-center justify-center shrink-0">
@@ -1769,9 +1769,9 @@ I, [Name of Petitioner / Executor], do hereby declare that the statements made i
                 <HelpCircle className="w-4 h-4" />
                 <span>FREQUENTLY ASKED QUESTIONS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 13. Frequently Asked Questions: Probate Court Fees
-              </h2>
+              </h3>
               <div className="space-y-3">
                 {FAQS.map((faq, index) => {
                   const isOpen = openFaq === index;
@@ -1809,9 +1809,9 @@ I, [Name of Petitioner / Executor], do hereby declare that the statements made i
                 <Gavel className="w-4 h-4" />
                 <span>STATUTORY CITATIONS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 14. Governing Judicial Precedents &amp; Legal Authorities
-              </h2>
+              </h3>
               <div className="p-5 sm:p-6 rounded-3xl bg-white border border-slate-200/90 shadow-xs space-y-4 text-xs leading-relaxed">
                 <div className="space-y-2">
                   <div className="font-extrabold text-slate-900">Landmark Supreme Court Precedents:</div>

@@ -517,9 +517,9 @@ I expressly declare and confirm that this Will shall NOT revoke, amend, supersed
                 <ShieldAlert className="w-4 h-4" />
                 <span>USER DEMAND SIGNAL &amp; WARNING</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 2. The NRI Revocation Trap: Global vs Situs-Specific Wills
-              </h2>
+              </h3>
               <div className="bg-rose-50/70 border border-rose-200/90 rounded-2xl p-5 sm:p-6 space-y-4">
                 <div className="flex items-center gap-2 font-black text-rose-900 text-sm">
                   <AlertTriangle className="w-4 h-4 text-[#C65378]" />
@@ -558,9 +558,9 @@ I expressly declare and confirm that this Will shall NOT revoke, amend, supersed
                 <Scale className="w-4 h-4" />
                 <span>FOREIGN EXCHANGE COMPLIANCE</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 3. FEMA &amp; RBI Rules: Immovable Assets Held by NRIs &amp; OCIs
-              </h2>
+              </h3>
               <div className="prose prose-slate max-w-none text-xs sm:text-sm text-slate-700 leading-relaxed space-y-3">
                 <p>
                   Estate planning for overseas Indians must harmonize the <strong>Indian Succession Act, 1925</strong> with
@@ -605,9 +605,9 @@ I expressly declare and confirm that this Will shall NOT revoke, amend, supersed
                 <Layers className="w-4 h-4" />
                 <span>STRUCTURED COMPARISON</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 4. Comparative Matrix: Single Global Will vs Dual Wills
-              </h2>
+              </h3>
               <div className="overflow-x-auto rounded-2xl border border-slate-200 bg-white shadow-xs">
                 <table className="w-full text-left text-xs sm:text-sm border-collapse">
                   <thead>
@@ -687,9 +687,9 @@ I expressly declare and confirm that this Will shall NOT revoke, amend, supersed
                 <FileText className="w-4 h-4" />
                 <span>LEGAL INSTRUMENT DRAFT</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 5. Copy-Pasteable Template: NRI Separate Indian Situs Will
-              </h2>
+              </h3>
               <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                 Below is the complete, lawyer-drafted Indian Situs Will format for Non-Resident Indians and OCIs.
                 Click &ldquo;Copy Complete Template&rdquo; to copy the editable text into Word, Google Docs, or your preferred editor.
@@ -798,9 +798,9 @@ Signature & Seal: ____________________________`}
                 <Scale className="w-4 h-4" />
                 <span>MANDATORY CLAUSE ANALYSIS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 6. Essential Clauses: Non-Conflict &amp; Indian Executor Powers
-              </h2>
+              </h3>
               <div className="space-y-4">
                 {/* Standalone Snippet 1: Non-Conflict Revocation */}
                 <div className="rounded-2xl border border-slate-200 bg-white p-5 space-y-3 shadow-xs">
@@ -863,9 +863,9 @@ I expressly declare and confirm that this Will shall NOT revoke, amend, supersed
                 <Gavel className="w-4 h-4" />
                 <span>CROSS-BORDER PROBATE JURISDICTION</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 7. Cross-Border Probate: Ancillary Letters vs Fresh Probate
-              </h2>
+              </h3>
               <div className="prose prose-slate max-w-none text-xs sm:text-sm text-slate-700 leading-relaxed space-y-3">
                 <p>
                   NRIs frequently ask: <em>&ldquo;Can I simply use my California or UK probate order in India?&rdquo;</em>
@@ -903,9 +903,9 @@ I expressly declare and confirm that this Will shall NOT revoke, amend, supersed
                 <Coins className="w-4 h-4" />
                 <span>FEMA CAPITAL REPATRIATION</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 8. Repatriation Protocol: RBI USD 1M Limit &amp; Form 15CA 15CB
-              </h2>
+              </h3>
               <div className="prose prose-slate max-w-none text-xs sm:text-sm text-slate-700 leading-relaxed space-y-3">
                 <p>
                   Once inherited assets in India are transmitted or liquidated, an NRI beneficiary faces the challenge of
@@ -945,9 +945,9 @@ I expressly declare and confirm that this Will shall NOT revoke, amend, supersed
                 <Calculator className="w-4 h-4" />
                 <span>CAPITAL GAINS &amp; TDS COMPLIANCE</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 9. Tax Planning: Section 195 TDS &amp; Inherited Property Sales
-              </h2>
+              </h3>
               <div className="prose prose-slate max-w-none text-xs sm:text-sm text-slate-700 leading-relaxed space-y-3">
                 <p>
                   When your NRI heirs eventually sell inherited immovable property in India, they encounter <strong>Section 195 of the Income Tax Act, 1961</strong>.
@@ -1006,9 +1006,9 @@ I expressly declare and confirm that this Will shall NOT revoke, amend, supersed
                 <Award className="w-4 h-4" />
                 <span>STEP-BY-STEP EXECUTION PROTOCOL</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 10. Execution SOP: High Commission Attestation Protocol
-              </h2>
+              </h3>
               <div className="prose prose-slate max-w-none text-xs sm:text-sm text-slate-700 leading-relaxed space-y-3">
                 <p>
                   Executing an Indian Will while living abroad must adhere strictly to <strong>Section 63 of the Indian Succession Act, 1925</strong>.
@@ -1091,9 +1091,9 @@ I expressly declare and confirm that this Will shall NOT revoke, amend, supersed
                 <Award className="w-4 h-4" />
                 <span>LEGAL EXPERTISE &amp; PRACTICE</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 11. Institutional Profile: Legal Excellence &amp; Trust Signals
-              </h2>
+              </h3>
               <div className="bg-white rounded-2xl border border-slate-200/90 p-6 sm:p-8 shadow-xs space-y-5">
                 <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-5 border-b border-slate-100">
                   <div className="space-y-1">
@@ -1174,9 +1174,9 @@ I expressly declare and confirm that this Will shall NOT revoke, amend, supersed
                 <HelpCircle className="w-4 h-4" />
                 <span>FREQUENTLY ASKED QUESTIONS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 Frequently Asked Questions: NRI Wills for Indian Property
-              </h2>
+              </h3>
               <div className="space-y-3">
                 {FAQS.map((faq, index) => {
                   const isOpen = openFaq === index;
@@ -1214,9 +1214,9 @@ I expressly declare and confirm that this Will shall NOT revoke, amend, supersed
                 <ExternalLink className="w-4 h-4" />
                 <span>STATUTORY REPOSITORY &amp; OFFICIAL CITATIONS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 Statutory Citations: Indian Succession Act &amp; RBI Directives
-              </h2>
+              </h3>
               <div className="bg-white rounded-2xl border border-slate-200/90 p-5 space-y-4 text-xs text-slate-600 shadow-xs">
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                   <a

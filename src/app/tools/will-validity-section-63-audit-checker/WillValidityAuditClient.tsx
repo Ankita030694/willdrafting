@@ -977,9 +977,9 @@ Date & Official Clinic Stamp: [Date]"`;
                 <Sparkles className="w-4 h-4" />
                 <span>INTERACTIVE DIAGNOSTIC ENGINE</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 2. Interactive Section 63 Will Validity Audit Checker
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Answer the 12 statutory questions below based on your current draft or existing Will. The tool
                 instantly computes your <strong>0 to 100 Court-Defensibility Score</strong> and flags every
@@ -1477,9 +1477,9 @@ Date & Official Clinic Stamp: [Date]"`;
                 <Scale className="w-4 h-4" />
                 <span>MANDATORY EXECUTION STATUTE</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 3. Section 63 Indian Succession Act: 3 Mandatory Rules
-              </h2>
+              </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   Section 63 of the Indian Succession Act, 1925 is the backbone of testamentary validity in
@@ -1535,9 +1535,9 @@ Date & Official Clinic Stamp: [Date]"`;
                 <AlertOctagon className="w-4 h-4" />
                 <span>BENEFICIARY WITNESS TRAP</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 4. Section 67 Witness Disqualification and Void Bequests
-              </h2>
+              </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   When families write a DIY Will at home, the testator often asks their wife, son, daughter,
@@ -1574,9 +1574,9 @@ Date & Official Clinic Stamp: [Date]"`;
                 <Gavel className="w-4 h-4" />
                 <span>SUPREME COURT JURISPRUDENCE</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 5. Supreme Court Suspicious Circumstances Checklist
-              </h2>
+              </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   In the landmark judgment{" "}
@@ -1638,9 +1638,9 @@ Date & Official Clinic Stamp: [Date]"`;
                 <Eye className="w-4 h-4" />
                 <span>EXECUTION FORMAT MYTHS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 6. Plain Paper, Handwritten, eSign, and Video Will Rules
-              </h2>
+              </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   Modern technology and foreign movies have created widespread confusion in India regarding
@@ -1684,9 +1684,9 @@ Date & Official Clinic Stamp: [Date]"`;
                 <Stethoscope className="w-4 h-4" />
                 <span>TESTAMENTARY CAPACITY</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 7. Section 59 Sound Mind and Medical Fitness Proof
-              </h2>
+              </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   Under <strong>Section 59 of the Indian Succession Act, 1925</strong>, every person of sound
@@ -1729,9 +1729,9 @@ Date & Official Clinic Stamp: [Date]"`;
                 <Scale className="w-4 h-4" />
                 <span>STATUTORY COMPARISON TABLE</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 8. Comparison Table: Fatal Defects vs Curable Errors
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Use this quick statutory reference table to distinguish mistakes that make a Will completely
                 void from errors that create litigation risk or remain legally valid:
@@ -1820,9 +1820,9 @@ Date & Official Clinic Stamp: [Date]"`;
                 <FileText className="w-4 h-4" />
                 <span>REMEDIATION PROTOCOL</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 9. Step-by-Step SOP: How to Fix a Defective DIY Will
-              </h2>
+              </h3>
               <div className="space-y-4">
                 {[
                   {
@@ -1878,9 +1878,9 @@ Date & Official Clinic Stamp: [Date]"`;
                 <TrendingUp className="w-4 h-4" />
                 <span>COURTROOM REALITY</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 10. Real Case Studies: Valid vs Invalid Wills in Court
-              </h2>
+              </h3>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 {/* Case Study 1 */}
@@ -1953,9 +1953,9 @@ Date & Official Clinic Stamp: [Date]"`;
                 <FileCheck className="w-4 h-4" />
                 <span>COPY-PASTEABLE LEGAL ASSETS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 11. Copy-Paste Section 63(c) Attestation and Doctor Clauses
-              </h2>
+              </h3>
 
               {/* Template Box 1: Section 63(c) Simultaneous Witness Attestation Clause */}
               <div className="rounded-2xl border border-slate-200/90 bg-white p-5 space-y-3 shadow-xs">
@@ -2040,9 +2040,9 @@ Registration No.: [Reg. No. & State Medical Council] | Official Stamp"`}
                 <Award className="w-4 h-4" />
                 <span>LEGAL EXPERTISE &amp; PRACTICE</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 12. Institutional Profile: Testamentary Legal Practice
-              </h2>
+              </h3>
               <div className="bg-white rounded-2xl border border-slate-200/90 p-6 sm:p-8 shadow-xs space-y-5">
                 <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-5 border-b border-slate-100">
                   <div className="space-y-1">
@@ -2101,9 +2101,9 @@ Registration No.: [Reg. No. & State Medical Council] | Official Stamp"`}
                 <HelpCircle className="w-4 h-4" />
                 <span>DIRECT ANSWERS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 13. Frequently Asked Questions: Will Validity in India
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Direct plain-English answers to common questions on how to check if a Will is valid in India:
               </p>
@@ -2146,9 +2146,9 @@ Registration No.: [Reg. No. & State Medical Council] | Official Stamp"`}
                 <Landmark className="w-4 h-4" />
                 <span>PRIMARY LEGAL SOURCES</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 14. Statutory Citations and Official Legal Portals
-              </h2>
+              </h3>
               <div className="bg-white rounded-2xl border border-slate-200/90 p-5 space-y-4 text-xs text-slate-700 shadow-xs">
                 <div>
                   <div className="font-extrabold text-slate-900 mb-1">

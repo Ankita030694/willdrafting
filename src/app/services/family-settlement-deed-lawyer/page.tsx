@@ -540,9 +540,9 @@ export default function FamilySettlementDeedLawyerPage() {
               <FileCheck className="w-4 h-4" />
               <span>Visual Legal Documentation</span>
             </div>
-            <h2 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-3">
+            <h3 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-3">
               Visual Legal Framework: Settlement Deed vs Partition
-            </h2>
+            </h3>
             <p className="text-[0.98rem] sm:text-[1.05rem] leading-[1.65] text-[#49585F]">
               How an ironclad Family Settlement Deed drafted by High Court
               advocates secures your family title, complies with Sub-Registrar
@@ -580,9 +580,9 @@ export default function FamilySettlementDeedLawyerPage() {
               <Landmark className="w-4 h-4" />
               <span>Statutory Comparison Table</span>
             </div>
-            <h2 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-4">
+            <h3 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-4">
               Deed vs Memorandum: Key Legal Differences
-            </h2>
+            </h3>
             <p className="text-[0.98rem] sm:text-[1.05rem] leading-[1.65] text-[#49585F]">
               Choosing the wrong legal instrument leads to heavy stamp duty
               penalties or future court disputes. Compare how Indian law treats
@@ -643,9 +643,9 @@ export default function FamilySettlementDeedLawyerPage() {
               <ShieldCheck className="w-4 h-4" />
               <span>SRO Execution Protocol</span>
             </div>
-            <h2 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-3">
+            <h3 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-3">
               Statutory 4-Step Family Settlement Roadmap
-            </h2>
+            </h3>
             <p className="text-[0.98rem] sm:text-[1.05rem] leading-[1.65] text-[#49585F]">
               Our High Court advocates handle the complete settlement lifecycle.
               Follow this structured 4-step path to divide family assets
@@ -705,9 +705,9 @@ export default function FamilySettlementDeedLawyerPage() {
               <FileCheck className="w-4 h-4" />
               <span>Drafting Architecture</span>
             </div>
-            <h2 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-3">
+            <h3 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-3">
               Essential Past-Tense Legal Recital Clause
-            </h2>
+            </h3>
             <p className="text-[0.98rem] sm:text-[1.05rem] leading-[1.65] text-[#49585F]">
               In Kale v. Deputy Director of Consolidation, the Supreme Court ruled
               that word choice decides registration. Present-tense words create
@@ -836,9 +836,9 @@ export default function FamilySettlementDeedLawyerPage() {
                 <Users className="w-4 h-4" />
                 <span>Hindu Succession Act Compliance</span>
               </div>
-              <h2 className="text-[1.75rem] sm:text-[2.3rem] font-medium leading-[1.14] tracking-[-0.02em] text-[#111827] mb-4">
+              <h3 className="text-[1.75rem] sm:text-[2.3rem] font-medium leading-[1.14] tracking-[-0.02em] text-[#111827] mb-4">
                 Ancestral Property &amp; Coparcenary Rights
-              </h2>
+              </h3>
               <p className="text-[15px] sm:text-[16px] leading-[1.7] text-[#374151] mb-4">
                 Under Section 6 of the Hindu Succession Act, 1956, coparceners
                 get equal birth rights in ancestral land. In{" "}
@@ -883,9 +883,9 @@ export default function FamilySettlementDeedLawyerPage() {
               <BookOpen className="w-4 h-4" />
               <span>Settlement Law FAQs</span>
             </div>
-            <h2 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-3">
+            <h3 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-3">
               Frequently Asked Questions: Family Settlements
-            </h2>
+            </h3>
             <p className="text-[0.98rem] sm:text-[1.05rem] leading-[1.65] text-[#49585F]">
               Clear legal answers prepared by the{" "}
               <strong className="text-[#111827]">

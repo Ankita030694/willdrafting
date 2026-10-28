@@ -864,9 +864,9 @@ Generated via WillDrafting.in Unclaimed Assets Search Roadmap Tool.`;
                     </button>
                   </div>
                 </div>
-                <h2 className="text-xl sm:text-2xl font-black text-slate-900">
+                <h3 className="text-xl sm:text-2xl font-black text-slate-900">
                   2. Interactive Asset Detective: 8-Portal Discovery Roadmap
-                </h2>
+                </h3>
                 <p className="text-xs sm:text-sm text-slate-600">
                   Select the documents and credentials you currently have in hand. The tool dynamically
                   calculates your asset traceability score and reveals the exact statutory discovery steps.
@@ -1157,9 +1157,9 @@ Generated via WillDrafting.in Unclaimed Assets Search Roadmap Tool.`;
                 <FileText className="w-4 h-4" />
                 <span>CENTRALIZED TAX DATABASE</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 3. Income Tax AIS: Section 159 Legal Heir Registration SOP
-              </h2>
+              </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   The Single Most Comprehensive Tool for tracing unknown financial assets in India is the{" "}
@@ -1226,9 +1226,9 @@ Generated via WillDrafting.in Unclaimed Assets Search Roadmap Tool.`;
                 <Coins className="w-4 h-4" />
                 <span>SECURITIES &amp; EQUITIES TRACE</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 4. Mutual Funds &amp; Demat: CAS Protocol via CDSL &amp; MFCentral
-              </h2>
+              </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   Tracing stock portfolios and mutual fund folios was historically an exhausting process
@@ -1270,9 +1270,9 @@ Generated via WillDrafting.in Unclaimed Assets Search Roadmap Tool.`;
                 <Building className="w-4 h-4" />
                 <span>CENTRAL BANK RECOVERY GATEWAY</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 5. RBI UDGAM Portal: Trace Dormant &amp; Inactive Bank Accounts
-              </h2>
+              </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   Under Section 26A of the Banking Regulation Act, 1949, all commercial and cooperative banks
@@ -1310,9 +1310,9 @@ Generated via WillDrafting.in Unclaimed Assets Search Roadmap Tool.`;
                 <Scale className="w-4 h-4" />
                 <span>MINISTRY OF CORPORATE AFFAIRS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 6. IEPF Shares &amp; Dividends: MCA Verification &amp; Recovery
-              </h2>
+              </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   Under Section 124(6) of the Companies Act, 2013, if dividends declared by a listed Indian
@@ -1356,9 +1356,9 @@ Generated via WillDrafting.in Unclaimed Assets Search Roadmap Tool.`;
                 <ShieldCheck className="w-4 h-4" />
                 <span>IRDAI CENTRALIZED REPOSITORY</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 7. Bima Bharosa &amp; Life Insurance: Finding Forgotten Policies
-              </h2>
+              </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   Life Insurance Corporation of India (LIC) and private life insurers hold thousands of crores
@@ -1397,9 +1397,9 @@ Generated via WillDrafting.in Unclaimed Assets Search Roadmap Tool.`;
                 <Briefcase className="w-4 h-4" />
                 <span>RETIREMENT &amp; SMALL SAVINGS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 8. EPFO &amp; Post Office Schemes: Tracing Provident Fund &amp; PPF
-              </h2>
+              </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   For salaried parents, substantial wealth is frequently locked in the Employees&apos;
@@ -1436,9 +1436,9 @@ Generated via WillDrafting.in Unclaimed Assets Search Roadmap Tool.`;
                 <Layers className="w-4 h-4" />
                 <span>COMPARATIVE STATUTORY DIRECTORY</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 9. Official Portals Comparison: Authority &amp; Access Rules
-              </h2>
+              </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   The following comparison table summarizes the 8 statutory portals, their governing legal
@@ -1524,9 +1524,9 @@ Generated via WillDrafting.in Unclaimed Assets Search Roadmap Tool.`;
                 <Clock className="w-4 h-4" />
                 <span>PROCEDURAL ROADMAP</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 10. Step-by-Step SOP: Asset Discovery to Claim Transmission
-              </h2>
+              </h3>
               <div className="space-y-4 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   To maximize efficiency and prevent duplicate legal paperwork, legal heirs should execute
@@ -1600,9 +1600,9 @@ Generated via WillDrafting.in Unclaimed Assets Search Roadmap Tool.`;
                 <Award className="w-4 h-4" />
                 <span>REAL-WORLD SUCCESS STORIES</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 11. Case Studies: Delhi, Mumbai &amp; Bengaluru Recoveries
-              </h2>
+              </h3>
               <div className="space-y-4 text-slate-700 leading-relaxed text-sm md:text-base">
                 {/* Case 1 */}
                 <div className="rounded-2xl bg-white border border-slate-200 p-5 space-y-2 shadow-xs">
@@ -1672,9 +1672,9 @@ Generated via WillDrafting.in Unclaimed Assets Search Roadmap Tool.`;
                 <FileCheck className="w-4 h-4" />
                 <span>DOWNLOADABLE LEGAL FORMATS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 12. Statutory Letter Templates: Bank Intimation &amp; Folio Search
-              </h2>
+              </h3>
               <p className="text-sm text-slate-700 leading-relaxed">
                 Use these lawyer-drafted, copy-pasteable legal notice templates to formally request account
                 disclosures from banks and Registrars &amp; Transfer Agents (RTAs) without unnecessary delays:
@@ -1784,9 +1784,9 @@ Yours sincerely,
                 <Award className="w-4 h-4" />
                 <span>LEGAL COUNSEL &amp; LITIGATION DESK</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 13. Institutional Backing: Senior Succession Advocates &amp; Team
-              </h2>
+              </h3>
               <div className="rounded-3xl bg-white border border-slate-200 p-6 sm:p-7 shadow-xs space-y-4">
                 <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
                   <div className="w-16 h-16 rounded-full bg-rose-100 text-[#C65378] font-black text-xl flex items-center justify-center shrink-0">
@@ -1830,9 +1830,9 @@ Yours sincerely,
                 <HelpCircle className="w-4 h-4" />
                 <span>FREQUENTLY ASKED QUESTIONS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 14. Frequently Asked Questions: Tracing Deceased Parents Assets
-              </h2>
+              </h3>
               <div className="space-y-3">
                 {FAQS.map((faq, idx) => {
                   const isOpen = openFaq === idx;
@@ -1869,9 +1869,9 @@ Yours sincerely,
                 <BookOpen className="w-4 h-4" />
                 <span>OFFICIAL STATUTORY PORTAL DIRECTORY</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 15. Statutory Authorities &amp; Official Government Portal Directory
-              </h2>
+              </h3>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2 text-xs">
                 <a
                   href="https://udgam.rbi.org.in"

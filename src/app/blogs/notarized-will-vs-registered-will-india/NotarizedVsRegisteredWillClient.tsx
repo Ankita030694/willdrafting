@@ -522,9 +522,9 @@ export default function NotarizedVsRegisteredWillClient() {
                 </span>
               </div>
 
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
                 1. Three-Way Matrix: Plain vs Notarized vs Registered
-              </h2>
+              </h3>
 
               <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                 To understand where each option stands, examine this side-by-side comparison of a Plain Paper Will, a Notarized Will, and a Registered Will across ten vital legal and procedural parameters:
@@ -594,9 +594,9 @@ export default function NotarizedVsRegisteredWillClient() {
                 </span>
               </div>
 
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
                 2. Legal Reality: Why Notarization Adds No Legal Force
-              </h2>
+              </h3>
 
               <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                 A widespread misconception across urban and rural India is that getting a Will stamped by an advocate with a red or blue notary seal makes it &quot;government approved&quot;. In legal reality, notarization does nothing of the sort.
@@ -640,9 +640,9 @@ export default function NotarizedVsRegisteredWillClient() {
                 </span>
               </div>
 
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
                 3. Section 63 Mandate: What Truly Makes a Will Valid
-              </h2>
+              </h3>
 
               <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                 If neither stamp paper nor notarization creates validity, what does? The answer lies exclusively in <strong>Section 63 of the Indian Succession Act, 1925</strong>. If these statutory prerequisites are satisfied, the Will is 100% enforceable in any Indian court:
@@ -757,9 +757,9 @@ export default function NotarizedVsRegisteredWillClient() {
                 </span>
               </div>
 
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
                 4. Evidentiary Weight: Why Registration Matters in Court
-              </h2>
+              </h3>
 
               <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                 If an unregistered Will is 100% legally valid, why do succession advocates strongly advise registering Wills for significant estates? The difference lies not in validity, but in <strong>evidentiary weight and survivability under litigation</strong>.
@@ -827,9 +827,9 @@ export default function NotarizedVsRegisteredWillClient() {
                 </span>
               </div>
 
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
                 5. Section 18 Analysis: Registration is Never Compulsory
-              </h2>
+              </h3>
 
               <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                 Many citizens ask: <em>&quot;If an unregistered Will is challenged, will the judge throw it out because I didn&apos;t go to the registry office?&quot;</em> The categorical answer is <strong>NO</strong>.
@@ -861,9 +861,9 @@ export default function NotarizedVsRegisteredWillClient() {
                 </span>
               </div>
 
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
                 6. When Registration is Worth It: High-Risk Scenarios
-              </h2>
+              </h3>
 
               <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                 While registration requires scheduling an appointment, paying nominal fees, and visiting the Sub-Registrar Office with two witnesses, it is strongly advised in the following five high-stakes circumstances:
@@ -972,9 +972,9 @@ export default function NotarizedVsRegisteredWillClient() {
                 </span>
               </div>
 
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
                 7. When Plain or Notarized is Enough: Practical Advice
-              </h2>
+              </h3>
 
               <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                 You do not need to register your Will in every circumstance. Executing a valid Section 63 Will on plain paper (or obtaining a quick notarization for personal comfort) is completely practical and legally adequate in these situations:
@@ -1030,9 +1030,9 @@ export default function NotarizedVsRegisteredWillClient() {
                 </span>
               </div>
 
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
                 8. Step-by-Step SOP: Executing and Registering a Will
-              </h2>
+              </h3>
 
               <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                 Follow this verified 5-step roadmap to draft, execute, and optionally register your Will without costly legal mistakes:
@@ -1136,9 +1136,9 @@ export default function NotarizedVsRegisteredWillClient() {
                 </span>
               </div>
 
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
                 9. Visual Breakdown: Anatomy of Indian Testamentary Deeds
-              </h2>
+              </h3>
 
               <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                 Notice the three distinct physical appearances of testamentary documents in India. Each reflects a different statutory treatment under Indian succession law:
@@ -1248,9 +1248,9 @@ export default function NotarizedVsRegisteredWillClient() {
                 </span>
               </div>
 
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
                 10. Four Common Myths About Will Notarization in India
-              </h2>
+              </h3>
 
               <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                 Let us dispel the most damaging folklore that leads Indian citizens into unnecessary expenses or bitter court disputes:
@@ -1310,9 +1310,9 @@ export default function NotarizedVsRegisteredWillClient() {
                 </span>
               </div>
 
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
                 11. Interactive Decision Tool: Do You Need Registration?
-              </h2>
+              </h3>
 
               <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                 Answer these four quick questions to determine whether a plain paper Section 63 Will is sufficient for your family, or whether registering your Will at the Sub-Registrar Office is essential:
@@ -1480,9 +1480,9 @@ export default function NotarizedVsRegisteredWillClient() {
                 </span>
               </div>
 
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
                 12. Frequently Asked Questions: Notarized vs Registered
-              </h2>
+              </h3>
 
               <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                 Clear, straightforward answers to the most common questions regarding Will notarization, registration, and Section 63 validity in India:
@@ -1530,9 +1530,9 @@ export default function NotarizedVsRegisteredWillClient() {
                 </span>
               </div>
 
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
                 13. Statutory Provisions: Section 63 &amp; Registration Act
-              </h2>
+              </h3>
 
               <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                 Authoritative legislative provisions governing the drafting, attestation, notarization, and registration of Wills in India:

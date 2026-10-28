@@ -590,9 +590,9 @@ Doctor's Name & Seal: [Official Stamp with Reg No.]"`;
                 <Sparkles className="w-4 h-4" />
                 <span>INTERACTIVE DIAGNOSTIC TOOL</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 2. Interactive Witness Eligibility &amp; Section 67 Checker
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Select your religion and configure the profile of both proposed witnesses below. Get an
                 instant statutory evaluation, void bequest risk analysis, and Court-Defensibility Score.
@@ -1110,9 +1110,9 @@ Doctor's Name & Seal: [Official Stamp with Reg No.]"`;
                 <Scale className="w-4 h-4" />
                 <span>LEGAL DISTINCTION</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 3. Hindu vs Christian Wills: The Schedule III Distinction
-              </h2>
+              </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   Most online guides make a dangerous legal error by applying Section 67 indiscriminately to
@@ -1158,9 +1158,9 @@ Doctor's Name & Seal: [Official Stamp with Reg No.]"`;
                 <Users className="w-4 h-4" />
                 <span>FAMILY WITNESSES</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 4. Can Beneficiaries, Spouses, or Heirs Be Witnesses?
-              </h2>
+              </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   A frequent question asked during Will drafting is: <em>"Can my wife, son, or daughter sign as a witness?"</em>
@@ -1201,9 +1201,9 @@ Doctor's Name & Seal: [Official Stamp with Reg No.]"`;
                 <Stethoscope className="w-4 h-4" />
                 <span>EXPERT WITNESSES</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 5. Doctors &amp; Lawyers as Witnesses: Evidentiary Value
-              </h2>
+              </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   The most effective strategy to create a challenge-proof Will in India is selecting
@@ -1243,9 +1243,9 @@ Doctor's Name & Seal: [Official Stamp with Reg No.]"`;
                 <Gavel className="w-4 h-4" />
                 <span>FIDUCIARY APPOINTMENTS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 6. Executor as Witness: Section 68 Competency Rules
-              </h2>
+              </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   Can the person appointed to distribute your estate also attest your Will?
@@ -1272,9 +1272,9 @@ Doctor's Name & Seal: [Official Stamp with Reg No.]"`;
                 <FileCheck className="w-4 h-4" />
                 <span>COURT EVIDENCE STANDARDS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 7. Section 67 BSA 2023: Proving a Will in Probate Court
-              </h2>
+              </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   Effective July 1, 2024, the Indian Evidence Act, 1872 was replaced by the
@@ -1317,9 +1317,9 @@ Doctor's Name & Seal: [Official Stamp with Reg No.]"`;
                 <UserX className="w-4 h-4" />
                 <span>STATUTORY DISQUALIFICATIONS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 8. Disqualified Witnesses: Minors, Blind Persons &amp; More
-              </h2>
+              </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   The following individuals are legally disqualified from being attesting witnesses in India:
@@ -1375,9 +1375,9 @@ Doctor's Name & Seal: [Official Stamp with Reg No.]"`;
                 <Calculator className="w-4 h-4" />
                 <span>COMPARATIVE MATRIX</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 9. Witness Category Comparison: Risk &amp; Legal Standing
-              </h2>
+              </h3>
               <div className="overflow-x-auto rounded-2xl border border-slate-200 bg-white shadow-xs">
                 <table className="w-full text-left text-xs sm:text-sm text-slate-700 divide-y divide-slate-200">
                   <thead className="bg-slate-900 text-white text-[11px] uppercase tracking-wider font-extrabold">
@@ -1443,9 +1443,9 @@ Doctor's Name & Seal: [Official Stamp with Reg No.]"`;
                 <CheckCircle2 className="w-4 h-4" />
                 <span>EXECUTION PROTOCOL</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 10. Step-by-Step SOP: Executing a Challenge-Proof Will
-              </h2>
+              </h3>
               <div className="space-y-4">
                 {[
                   {
@@ -1503,9 +1503,9 @@ Doctor's Name & Seal: [Official Stamp with Reg No.]"`;
                 <Landmark className="w-4 h-4" />
                 <span>CASE LAW PRECEDENTS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 11. Landmark Supreme Court Rulings on Attesting Witnesses
-              </h2>
+              </h3>
               <div className="space-y-4 text-xs sm:text-sm text-slate-700">
                 <div className="p-5 rounded-2xl bg-white border border-slate-200/90 shadow-xs space-y-2">
                   <div className="flex items-center justify-between">
@@ -1551,9 +1551,9 @@ Doctor's Name & Seal: [Official Stamp with Reg No.]"`;
                 <FileSignature className="w-4 h-4" />
                 <span>LEGAL CLAUSE TEMPLATES</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 12. Standard Attestation Clauses &amp; Certificate Templates
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Copy and incorporate these statutory clauses into your Will draft to ensure full compliance
                 with Section 63(c) of the Indian Succession Act, 1925.
@@ -1651,9 +1651,9 @@ Doctor's Name & Seal: [Official Stamp with Reg No.]"`}
                 <ShieldCheck className="w-4 h-4" />
                 <span>LEGAL SCRUTINY &amp; COUNSEL</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 13. Advocate Verification &amp; Legal Scrutiny Process
-              </h2>
+              </h3>
               <div className="bg-white rounded-3xl border border-slate-200/90 shadow-sm p-6 sm:p-7 space-y-4">
                 <div className="flex items-center gap-4">
                   <div className="w-14 h-14 rounded-full bg-rose-100 text-[#C65378] font-black text-base flex items-center justify-center shrink-0">
@@ -1695,9 +1695,9 @@ Doctor's Name & Seal: [Official Stamp with Reg No.]"`}
                 <HelpCircle className="w-4 h-4" />
                 <span>CLARIFICATIONS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 14. Frequently Asked Questions: Will Witnesses in India
-              </h2>
+              </h3>
               <div className="space-y-3">
                 {FAQS.map((faq, idx) => {
                   const isOpen = openFaq === idx;
@@ -1735,9 +1735,9 @@ Doctor's Name & Seal: [Official Stamp with Reg No.]"`}
                 <BookOpen className="w-4 h-4" />
                 <span>OFFICIAL PORTALS &amp; CITATIONS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 15. Statutory References &amp; Official Legislative Portals
-              </h2>
+              </h3>
               <div className="bg-white rounded-3xl border border-slate-200/90 shadow-xs p-6 space-y-4 text-xs sm:text-sm text-slate-700">
                 <div className="font-extrabold text-slate-900">
                   Governing Acts &amp; Statutory Codes:
@@ -1763,7 +1763,7 @@ Doctor's Name & Seal: [Official Stamp with Reg No.]"`}
 
                 <div className="pt-2 border-t border-slate-100 flex flex-wrap gap-3">
                   <a
-                    href="https://www.indiacode.nic.in/?sam_handle=123456789/1362"
+                    href="https://legislative.gov.in/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-blue-50 text-blue-800 hover:bg-blue-100 font-semibold"

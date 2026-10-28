@@ -150,9 +150,9 @@ export default function FamilySettlementInteractive() {
           <Scale className="w-4 h-4" />
           <span>Interactive Settlement Navigator</span>
         </div>
-        <h2 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-3">
+        <h3 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-3">
           Explore Family Settlement Strategies by Property Type
-        </h2>
+        </h3>
         <p className="text-[0.98rem] sm:text-[1.05rem] leading-[1.65] text-[#49585F]">
           Different family property disputes need distinct legal drafting.
           Select your scenario below to see the governing Indian laws, process

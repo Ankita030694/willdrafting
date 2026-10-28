@@ -103,7 +103,18 @@ export async function PUT(
       updateFields.readTime = body.readTime.trim();
     }
     if (typeof body.date === "string") {
-      updateFields.date = body.date.trim();
+      const trimmedDate = body.date.trim();
+      const dmyOrMdy = trimmedDate.match(/^(\d{1,2})[-/.](\d{1,2})[-/.](\d{4})$/);
+      if (dmyOrMdy) {
+        const p1 = Number(dmyOrMdy[1]);
+        const p2 = Number(dmyOrMdy[2]);
+        const year = Number(dmyOrMdy[3]);
+        const day = p2 > 12 ? p2 : p1;
+        const month = p2 > 12 ? p1 : p2;
+        updateFields.date = `${year}-${String(month).padStart(2, "0")}-${String(day).padStart(2, "0")}`;
+      } else {
+        updateFields.date = trimmedDate;
+      }
     }
     if (typeof body.image === "string") {
       updateFields.image = body.image.trim();
@@ -118,7 +129,10 @@ export async function PUT(
       updateFields.infographicId = body.infographicId ? String(body.infographicId).trim() : null;
     }
     if (typeof body.description === "string") {
-      updateFields.description = body.description;
+      updateFields.description = body.description.replace(
+        /https?:\/\/(?:www\.)?indiacode\.nic\.in\/(?:handle\/[^\s"'<>]+|bitstream\/[^\s"'<>]+|show-data[^\s"'<>]*|\?[^\s"'<>]+)/gi,
+        "https://legislative.gov.in/"
+      );
     }
     if (typeof body.metaTitle === "string") {
       updateFields.metaTitle = body.metaTitle.trim();
@@ -170,7 +184,12 @@ export async function PUT(
       updateFields.references = body.references
         .map((ref: Record<string, unknown>) => ({
           title: String(ref?.title || "").trim(),
-          url: String(ref?.url || "").trim(),
+          url: String(ref?.url || "")
+            .trim()
+            .replace(
+              /^https?:\/\/(?:www\.)?indiacode\.nic\.in\/(?:handle\/.*|bitstream\/.*|show-data.*|\?.*)$/i,
+              "https://legislative.gov.in/"
+            ),
         }))
         .filter((ref: BlogReferenceItem) => ref.title);
     }

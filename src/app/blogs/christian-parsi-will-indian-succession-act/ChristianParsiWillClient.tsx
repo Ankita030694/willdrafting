@@ -626,9 +626,9 @@ export default function ChristianParsiWillClient() {
                 <Users className="w-4 h-4" />
                 <span>SECTION 2: CHRISTIAN INTESTACY</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 2. Christian Succession: Legal Heirs &amp; Share Allocations
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 When an Indian Christian passes away without leaving a Will, property devolves under Sections 31 to 49 of the Indian Succession Act, 1925. The statute makes no distinction between ancestral and self-acquired property; all assets merge into one unified estate.
               </p>
@@ -756,9 +756,9 @@ export default function ChristianParsiWillClient() {
                 <Scale className="w-4 h-4" />
                 <span>SECTION 3: PARSI INTESTACY</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 3. Parsi Succession Rules: 1991 Reforms &amp; Heir Shares
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Parsi intestate succession is regulated by Sections 50 to 56 of the Indian Succession Act, 1925. Parsi succession contains unique statutory features, especially concerning parents&apos; inheritance rights and the historic gender equality reforms of 1991.
               </p>
@@ -820,9 +820,9 @@ export default function ChristianParsiWillClient() {
                 <FileCheck className="w-4 h-4" />
                 <span>SECTION 4: COMPARATIVE ANALYSIS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 4. Intestacy Matrix: Christian vs Parsi vs Hindu Rules
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Understanding how Christian and Parsi succession compares to Hindu and Muslim inheritance laws illustrates why personal-law literacy is vital for multi-religious families and estate planning.
               </p>
@@ -861,9 +861,9 @@ export default function ChristianParsiWillClient() {
                 <Shield className="w-4 h-4" />
                 <span>SECTION 5: TESTAMENTARY FREEDOM</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 5. Testamentary Freedom: No Coparcenary Restrictions
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 One of the greatest legal advantages enjoyed by Indian Christians and Parsis under the Indian Succession Act, 1925, is <strong>complete, unrestricted testamentary freedom</strong>.
               </p>
@@ -898,9 +898,9 @@ export default function ChristianParsiWillClient() {
                 <Sparkles className="w-4 h-4" />
                 <span>SECTION 6: VISUAL ANATOMY</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 6. Statutory Blueprint: Execution Under Succession Act
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 A valid Will under the Indian Succession Act, 1925, harmonizes statutory compliance across Part V and Part VI. The graphic below illustrates the essential statutory foundations for Christian and Parsi estate planning.
               </p>
@@ -940,9 +940,9 @@ export default function ChristianParsiWillClient() {
                 <Clock className="w-4 h-4" />
                 <span>SECTION 7: PROCEDURAL GUIDE</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 7. 6-Stage Protocol: Drafting an Enforceable Indian Will
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 To guarantee your Will withstands scrutiny under Section 63 of the Indian Succession Act, follow this advocate-approved 6-stage protocol:
               </p>
@@ -999,9 +999,9 @@ export default function ChristianParsiWillClient() {
                 <Anchor className="w-4 h-4" />
                 <span>SECTION 8: ARMED FORCES EXEMPTIONS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 8. Privileged Wills: Armed Forces &amp; Mariners Framework
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Recognizing the hazardous conditions of active warfare and seafaring, the Indian Succession Act provides a specialized legal exception known as a <strong>Privileged Will</strong> under Sections 65 and 66.
               </p>
@@ -1045,9 +1045,9 @@ export default function ChristianParsiWillClient() {
                 <Sliders className="w-4 h-4" />
                 <span>SECTION 9: INTERACTIVE AUDIT TOOL</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 9. Share Calculator: Instant Estate Division Audit
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Test your family scenario below. Toggle between Christian and Parsi rules to see how the Indian Succession Act divides an intestate estate without a Will.
               </p>
@@ -1245,9 +1245,9 @@ export default function ChristianParsiWillClient() {
                 <AlertTriangle className="w-4 h-4" />
                 <span>SECTION 10: INVALIDATION DEFENSE</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 10. Four Common Traps: Testamentary Invalidation Risks
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Even sophisticated testators frequently make avoidable legal errors that result in court challenges, forfeiture of bequests, or prolonged litigation:
               </p>
@@ -1301,9 +1301,9 @@ export default function ChristianParsiWillClient() {
                 <Compass className="w-4 h-4" />
                 <span>SECTION 11: COMPLEX SCENARIOS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 11. Specialized Scenarios: Interfaith &amp; Global Estates
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Cross-border investments and inter-faith marriages introduce unique jurisdictional overlaps under Indian succession jurisprudence:
               </p>
@@ -1357,9 +1357,9 @@ export default function ChristianParsiWillClient() {
                 <HelpCircle className="w-4 h-4" />
                 <span>DIRECT ANSWERS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 Frequently Asked Questions: Christian &amp; Parsi Wills
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Clear answers to common questions regarding Christian and Parsi inheritance laws, testamentary rights, and execution requirements under the Indian Succession Act.
               </p>
@@ -1401,9 +1401,9 @@ export default function ChristianParsiWillClient() {
             {/* SECTION 13: CITATIONS & AUTHORITY LINKS */}
             <section id="statutory-citations" className="scroll-target scroll-mt-28 pt-6 border-t border-slate-200 space-y-5">
               <div className="space-y-2">
-                <h2 className="text-base sm:text-lg font-bold text-slate-900">
+                <h3 className="text-base sm:text-lg font-bold text-slate-900">
                   Statutory References &amp; Official Succession Authorities
-                </h2>
+                </h3>
                 <ul className="text-xs text-slate-600 space-y-1.5 list-disc pl-5">
                   <li>Indian Succession Act, 1925 (Act No. 39 of 1925), Part V (ss. 31-56) &amp; Part VI (ss. 59-191).</li>
                   <li>Indian Succession (Amendment) Act, 1991 (Act 51 of 1991) &bull; Equal shares for Parsi sons and daughters.</li>

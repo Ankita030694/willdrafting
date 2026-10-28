@@ -648,9 +648,9 @@ IT IS EXPRESSLY CLARIFIED that this Owelty equalization sum is paid solely for a
                 <Calculator className="w-4 h-4" />
                 <span>INTERACTIVE PARTITION &amp; OWELTY CALCULATOR</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 2. Interactive Partition &amp; Owelty Equalization Tool
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Use this statutory partition calculator to allocate multi-floor or land shares among brothers,
                 calculate the required Undivided Share of Land (UDS) percentage, determine Owelty equalization
@@ -896,9 +896,9 @@ IT IS EXPRESSLY CLARIFIED that this Owelty equalization sum is paid solely for a
                 <FileSpreadsheet className="w-4 h-4" />
                 <span>LEGAL INSTRUMENT COMPARISON</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 3. Partition Deed vs Family Settlement Agreement
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Choosing the wrong legal instrument can lead to severe stamp duty penalties, registration
                 rejections, or title disputes. Review how a registered Partition Deed compares to a Family
@@ -970,9 +970,9 @@ IT IS EXPRESSLY CLARIFIED that this Owelty equalization sum is paid solely for a
                 <Layers className="w-4 h-4" />
                 <span>COMPETITOR BLIND SPOT: SCHEDULE DEMARCATION</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 4. Floor-Wise Demarcation &amp; Undivided Share of Land
-              </h2>
+              </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   The single biggest error found in online partition deed templates is the total absence of
@@ -1052,9 +1052,9 @@ IT IS EXPRESSLY CLARIFIED that this Owelty equalization sum is paid solely for a
                 <Coins className="w-4 h-4" />
                 <span>EQUALIZATION COMPENSATION</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 5. Owelty Equalization Clauses &amp; Tax Neutrality
-              </h2>
+              </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   In practice, real estate rarely divides into mathematically identical shares. For instance, in a
@@ -1116,9 +1116,9 @@ IT IS EXPRESSLY CLARIFIED that this Owelty equalization sum is paid solely for a
                 <MapPin className="w-4 h-4" />
                 <span>STATE REVENUE LAWS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 6. State-Wise Stamp Duty &amp; SRO Registration Charges
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Under the Indian Constitution, Stamp Duty on property instruments falls under the concurrent and state
                 lists. Most states provide significant concessions for partition deeds executed among blood relatives:
@@ -1155,9 +1155,9 @@ IT IS EXPRESSLY CLARIFIED that this Owelty equalization sum is paid solely for a
                 <FileText className="w-4 h-4" />
                 <span>LAWYER-VETTED LEGAL DRAFT</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 7. Complete Registered Partition Deed Format Template
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Below is the complete, Sub-Registrar compliant Partition Deed format designed specifically for brothers
                 and family members dividing multi-floor residential property or plots:
@@ -1260,9 +1260,9 @@ WITNESSES:
                 <FileCheck className="w-4 h-4" />
                 <span>PROCEDURAL STEP-BY-STEP PROTOCOL</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 8. Sub-Registrar Office Execution &amp; Registration SOP
-              </h2>
+              </h3>
               <div className="space-y-4">
                 {[
                   {
@@ -1346,9 +1346,9 @@ WITNESSES:
                 <Scale className="w-4 h-4" />
                 <span>LANDMARK PRECEDENTS &amp; DAUGHTER RIGHTS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 9. Coparcenary Rights: Daughters, HUF &amp; Minors
-              </h2>
+              </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   A critical legal risk that invalidates dozens of family partition deeds in civil court is the
@@ -1390,9 +1390,9 @@ WITNESSES:
                 <BookOpen className="w-4 h-4" />
                 <span>PRACTICAL REAL-WORLD PRECEDENTS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 10. Practical Case Studies: Delhi, Bengaluru &amp; Mumbai
-              </h2>
+              </h3>
               <div className="space-y-4">
                 <div className="p-5 rounded-2xl bg-white border border-slate-200/90 shadow-xs space-y-2">
                   <div className="flex items-center justify-between text-xs font-bold text-[#C65378]">
@@ -1436,9 +1436,9 @@ WITNESSES:
                 <Scale className="w-4 h-4" />
                 <span>LEGAL CITATIONS &amp; DESK</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 11. Statutory Citations &amp; Advocate Profile
-              </h2>
+              </h3>
               <div className="rounded-2xl bg-white border border-slate-200/90 p-5 sm:p-6 shadow-xs space-y-4 text-xs">
                 <div className="font-extrabold text-slate-900 text-sm">
                   Primary Governing Provisions of Indian Law:
@@ -1513,9 +1513,9 @@ WITNESSES:
                 <HelpCircle className="w-4 h-4" />
                 <span>FREQUENTLY ASKED QUESTIONS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 12. Frequently Asked Questions: Partition Deeds
-              </h2>
+              </h3>
               <div className="space-y-3">
                 {FAQS.map((faq, idx) => {
                   const isOpen = openFaq === idx;

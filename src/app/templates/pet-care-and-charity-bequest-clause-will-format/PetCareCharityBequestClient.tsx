@@ -599,9 +599,9 @@ I further bequeath INR ${charityCorpusAmount.toLocaleString(
                     <Calculator className="w-4 h-4" />
                     <span>STATUTORY ESTATE ALLOCATION CALCULATOR</span>
                   </div>
-                  <h2 className="text-xl sm:text-2xl font-black text-slate-900 tracking-tight mt-1">
+                  <h3 className="text-xl sm:text-2xl font-black text-slate-900 tracking-tight mt-1">
                     2. Interactive Pet Care &amp; Charity Allocation Calculator
-                  </h2>
+                  </h3>
                 </div>
                 <span className="self-start sm:self-auto px-3 py-1 rounded-full bg-emerald-50 text-emerald-700 text-xs font-bold border border-emerald-200">
                   Compounded @ {annualInflationRate}% Inflation
@@ -884,9 +884,9 @@ I further bequeath INR ${charityCorpusAmount.toLocaleString(
                 SECTION 3: DIRECT BEQUEST VS CARETAKER TRUST: LEGAL COMPARISON
                 =================================================================== */}
             <section id="direct-vs-trust-comparison" className="space-y-4">
-              <h2 className="text-xl sm:text-2xl font-black text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl font-black text-slate-900 tracking-tight">
                 3. Direct Bequest vs Caretaker Trust: Legal Comparison
-              </h2>
+              </h3>
               <p className="text-sm text-slate-700 leading-relaxed">
                 Choosing the appropriate testamentary framework determines whether your intentions will
                 stand in court or be struck down as invalid. The table below compares the legal mechanics,
@@ -975,9 +975,9 @@ I further bequeath INR ${charityCorpusAmount.toLocaleString(
                 SECTION 4: CONDITIONAL CARETAKER BEQUEST: GIFT-OVER MECHANICS
                 =================================================================== */}
             <section id="conditional-caretaker-bequest" className="space-y-4">
-              <h2 className="text-xl sm:text-2xl font-black text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl font-black text-slate-900 tracking-tight">
                 4. Conditional Caretaker Bequest: Gift-Over Mechanics
-              </h2>
+              </h3>
               <p className="text-sm text-slate-700 leading-relaxed">
                 The most popular and legally robust solution for single testators is naming a human caregiver
                 (such as a domestic help, trusted sibling, or friend) and attaching strict conditions
@@ -1027,9 +1027,9 @@ I further bequeath INR ${charityCorpusAmount.toLocaleString(
                 SECTION 5: TESTAMENTARY PET CARE TRUST: INDIAN TRUSTS ACT MODEL
                 =================================================================== */}
             <section id="testamentary-pet-trust" className="space-y-4">
-              <h2 className="text-xl sm:text-2xl font-black text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl font-black text-slate-900 tracking-tight">
                 5. Testamentary Pet Care Trust: Indian Trusts Act Model
-              </h2>
+              </h3>
               <p className="text-sm text-slate-700 leading-relaxed">
                 For High-Net-Worth Individuals (HNIs) owning multiple companion animals, horses, or rare
                 species with extended life expectancies, a simple caretaker bequest may lack sufficient
@@ -1066,9 +1066,9 @@ I further bequeath INR ${charityCorpusAmount.toLocaleString(
                 SECTION 6: CHARITABLE BEQUESTS TO NGOS & SECTION 80G BENEFITS
                 =================================================================== */}
             <section id="charitable-bequests-80g" className="space-y-4">
-              <h2 className="text-xl sm:text-2xl font-black text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl font-black text-slate-900 tracking-tight">
                 6. Charitable Bequests to NGOs &amp; Section 80G Benefits
-              </h2>
+              </h3>
               <p className="text-sm text-slate-700 leading-relaxed">
                 Leaving a legacy to charitable causes, such as animal sanctuaries, cancer research hospitals,
                 orphanages, or religious institutions, is one of the most noble acts of testamentary planning.
@@ -1111,9 +1111,9 @@ I further bequeath INR ${charityCorpusAmount.toLocaleString(
                 SECTION 7: SECTION 118 ISA: JOHN VALLAMATTOM SUPREME COURT RULE
                 =================================================================== */}
             <section id="section-118-supreme-court" className="space-y-4">
-              <h2 className="text-xl sm:text-2xl font-black text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl font-black text-slate-900 tracking-tight">
                 7. Section 118 ISA: John Vallamattom Supreme Court Rule
-              </h2>
+              </h3>
               <p className="text-sm text-slate-700 leading-relaxed">
                 Many outdated legal guides and templates cite Section 118 of the Indian Succession Act,
                 1925, warning testators that charitable bequests will be declared void if executed less than
@@ -1185,9 +1185,9 @@ I further bequeath INR ${charityCorpusAmount.toLocaleString(
                   <div className="text-xs font-bold text-[#C65378] uppercase tracking-wider">
                     READY-TO-USE LEGAL FORMATS
                   </div>
-                  <h2 className="text-xl sm:text-2xl font-black text-slate-900 tracking-tight">
+                  <h3 className="text-xl sm:text-2xl font-black text-slate-900 tracking-tight">
                     8. Verifiable Pet Care Clauses &amp; 80G Charity Formats
-                  </h2>
+                  </h3>
                 </div>
                 <button
                   type="button"
@@ -1257,9 +1257,9 @@ I further bequeath INR ${charityCorpusAmount.toLocaleString(
                 SECTION 9: SRO REGISTRATION & WITNESS SELECTION GUIDELINES
                 =================================================================== */}
             <section id="sro-witness-rules" className="space-y-4">
-              <h2 className="text-xl sm:text-2xl font-black text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl font-black text-slate-900 tracking-tight">
                 9. SRO Registration &amp; Witness Selection Guidelines
-              </h2>
+              </h3>
               <p className="text-sm text-slate-700 leading-relaxed">
                 When drafting non-standard testamentary provisions (such as conditioning bequests for animal
                 welfare or allocating substantial capital to public trusts), relatives are far more prone to
@@ -1330,9 +1330,9 @@ I further bequeath INR ${charityCorpusAmount.toLocaleString(
                 SECTION 10: REAL CASE STUDIES: DELHI, MUMBAI & BENGALURU
                 =================================================================== */}
             <section id="practical-case-studies" className="space-y-4">
-              <h2 className="text-xl sm:text-2xl font-black text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl font-black text-slate-900 tracking-tight">
                 10. Real Case Studies: Delhi, Mumbai &amp; Bengaluru
-              </h2>
+              </h3>
               <p className="text-sm text-slate-700 leading-relaxed">
                 Examining practical scenarios drafted by our succession attorneys illustrates how to balance
                 compassion for companion animals with rock-solid legal protection against predatory family
@@ -1385,9 +1385,9 @@ I further bequeath INR ${charityCorpusAmount.toLocaleString(
                 SECTION 11: INSTITUTIONAL PROFILE: AMA LEGAL SOLUTIONS
                 =================================================================== */}
             <section id="institutional-profile" className="space-y-4">
-              <h2 className="text-xl sm:text-2xl font-black text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl font-black text-slate-900 tracking-tight">
                 11. Institutional Profile: AMA Legal Solutions
-              </h2>
+              </h3>
               <div className="rounded-3xl bg-white border border-slate-200 shadow-sm p-6 sm:p-8 space-y-5">
                 <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 pb-5 border-b border-slate-100">
                   <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-[#172228] to-slate-800 text-white flex items-center justify-center font-black text-xl shrink-0 shadow-md">
@@ -1456,9 +1456,9 @@ I further bequeath INR ${charityCorpusAmount.toLocaleString(
                 <span className="text-xs font-bold text-[#C65378] uppercase tracking-wider">
                   STATUTORY FAQS
                 </span>
-                <h2 className="text-xl sm:text-2xl font-black text-slate-900 tracking-tight">
+                <h3 className="text-xl sm:text-2xl font-black text-slate-900 tracking-tight">
                   12. Frequently Asked Questions: Pet &amp; Charity Bequests
-                </h2>
+                </h3>
               </div>
 
               <div className="space-y-3">
@@ -1496,9 +1496,9 @@ I further bequeath INR ${charityCorpusAmount.toLocaleString(
                 SECTION 13: STATUTORY CITATIONS & OFFICIAL LEGAL AUTHORITIES
                 =================================================================== */}
             <section id="statutory-citations" className="space-y-4">
-              <h2 className="text-xl sm:text-2xl font-black text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl font-black text-slate-900 tracking-tight">
                 13. Statutory Citations &amp; Official Legal Authorities
-              </h2>
+              </h3>
               <div className="rounded-2xl bg-white border border-slate-200 p-5 space-y-3 text-xs text-slate-600">
                 <p className="leading-relaxed">
                   The clauses and legal rules presented on this page are governed by the following statutory
@@ -1541,9 +1541,9 @@ I further bequeath INR ${charityCorpusAmount.toLocaleString(
                 <span>SECURE YOUR PET &amp; PHILANTHROPIC LEGACY TODAY</span>
               </div>
 
-              <h2 className="text-xl sm:text-3xl font-black text-white max-w-2xl mx-auto leading-snug">
+              <h3 className="text-xl sm:text-3xl font-black text-white max-w-2xl mx-auto leading-snug">
                 Draft a Legally Enforceable Will with Custom Pet &amp; Charity Clauses
-              </h2>
+              </h3>
 
               <p className="text-xs sm:text-sm text-slate-300 max-w-2xl mx-auto leading-relaxed">
                 Protect your loyal companion from abandonment and ensure your charitable donations reach

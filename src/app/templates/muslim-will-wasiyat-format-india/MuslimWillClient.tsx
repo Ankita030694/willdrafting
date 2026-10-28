@@ -518,9 +518,9 @@ WITNESSES:
                 <Percent className="w-4 h-4" />
                 <span>AL-THULUTH BEQUEST QUOTA</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 2. The One-Third Bequest Limit (Al-Thuluth) Explained
-              </h2>
+              </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   The most critical legal rule governing Muslim wills is the <strong>One-Third Rule (Al-Thuluth)</strong>.
@@ -575,9 +575,9 @@ WITNESSES:
                 <Scale className="w-4 h-4" />
                 <span>JURISPRUDENTIAL DIVERGENCE</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 3. Sunni vs Shia Will Rules: Bequests to Legal Heirs
-              </h2>
+              </h3>
               <div className="space-y-4 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   Indian courts recognize crucial jurisprudential differences between the Sunni school (Hanafi,
@@ -662,9 +662,9 @@ WITNESSES:
                 <Sparkles className="w-4 h-4" />
                 <span>INTERACTIVE COMPLIANCE TOOL</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 4. Interactive Sharia Estate &amp; Bequest Calculator
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Use our diagnostic calculator to verify whether your planned bequests comply with the 1/3rd
                 discretionary limit or trigger the mandatory legal heir consent requirement under Indian law.
@@ -848,9 +848,9 @@ WITNESSES:
                 <FileText className="w-4 h-4" />
                 <span>COPY-PASTEABLE WASIYAT TEMPLATE</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 5. Free Muslim Wasiyatnama Format (English Draft)
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Below is a lawyer-vetted Indian Wasiyatnama format drafted in accordance with the Shariat
                 Application Act, 1937. Use the tabs below to copy the full document or individual clauses.
@@ -948,9 +948,9 @@ WITNESSES:
                 <FileCheck className="w-4 h-4" />
                 <span>WILLDRAFTING LEGAL MOAT ASSET</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 6. Post-Death Legal Heir Consent Deed (Annexure Format)
-              </h2>
+              </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   Most online Islamic will templates are drafted for the UK or US and fail to address Indian
@@ -1001,9 +1001,9 @@ WITNESSES:
                 <UserCheck className="w-4 h-4" />
                 <span>FIDUCIARY POWERS &amp; DUTIES</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 7. Role &amp; Legal Powers of the Executor (Al-Wasi) in India
-              </h2>
+              </h3>
               <div className="space-y-4 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   In Islamic testamentary jurisprudence, an executor is known as <strong>Al-Wasi</strong>.
@@ -1044,9 +1044,9 @@ WITNESSES:
                 <Layers className="w-4 h-4" />
                 <span>STATUTORY COMPARISON</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 8. Comparative Analysis: Muslim Will vs General Indian Will
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Understanding how an Islamic Wasiyatnama differs from a standard Indian Will under the Indian
                 Succession Act is vital to drafting an unchallengeable document.
@@ -1105,9 +1105,9 @@ WITNESSES:
                 <Clock className="w-4 h-4" />
                 <span>EXECUTION PROTOCOL</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 9. Step-by-Step SOP: Drafting &amp; Executing a Wasiyatnama
-              </h2>
+              </h3>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 {[
                   {
@@ -1163,9 +1163,9 @@ WITNESSES:
                 <ShieldAlert className="w-4 h-4" />
                 <span>LEGAL PITFALLS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 10. Common Mistakes in Muslim Wills &amp; How to Prevent Them
-              </h2>
+              </h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div className="p-5 rounded-2xl bg-white border border-rose-200 shadow-xs space-y-2">
                   <div className="font-extrabold text-sm text-rose-900 flex items-center gap-2">
@@ -1217,9 +1217,9 @@ WITNESSES:
                 <Award className="w-4 h-4" />
                 <span>LEGAL EXPERTISE &amp; PRACTICE</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 11. Institutional Profile: Legal Excellence &amp; Trust
-              </h2>
+              </h3>
               <div className="bg-white rounded-2xl border border-slate-200/90 p-6 sm:p-8 shadow-xs space-y-5">
                 <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-5 border-b border-slate-100">
                   <div className="space-y-1">
@@ -1260,9 +1260,9 @@ WITNESSES:
                 <HelpCircle className="w-4 h-4" />
                 <span>COMMON QUESTIONS ANSWERED</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 12. Frequently Asked Questions: Muslim Wills in India
-              </h2>
+              </h3>
               <div className="space-y-3">
                 {FAQS.map((faq, index) => {
                   const isOpen = openFaq === index;
@@ -1300,9 +1300,9 @@ WITNESSES:
                 <Landmark className="w-4 h-4" />
                 <span>PRIMARY LEGAL SOURCES</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 13. Statutory Citations &amp; Islamic Legal Authorities
-              </h2>
+              </h3>
               <div className="bg-white rounded-2xl border border-slate-200/90 p-5 sm:p-6 shadow-xs space-y-4 text-xs">
                 <div className="space-y-2">
                   <div className="font-extrabold text-slate-900">

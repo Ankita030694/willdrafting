@@ -5,6 +5,7 @@ const nextConfig: NextConfig = {
   reactCompiler: true,
   serverExternalPackages: ["@sparticuz/chromium", "puppeteer-core"],
   images: {
+    unoptimized: true,
     dangerouslyAllowSVG: true,
     contentDispositionType: "inline",
     contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
@@ -443,6 +444,11 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       {
+        source: "/service/muslim-will-wasiyat",
+        destination: "/templates/muslim-will-wasiyat-format-india",
+        permanent: true,
+      },
+      {
         source: "/service/:slug*",
         destination: "/services/:slug*",
         permanent: true,
@@ -503,8 +509,18 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       {
+        source: "/services/muslim-will-wasiyat",
+        destination: "/templates/muslim-will-wasiyat-format-india",
+        permanent: true,
+      },
+      {
         source: "/blogs/relinquishment-deed-vs-gift-deed-india",
         destination: "/blogs/gift-deed-vs-will-india",
+        permanent: true,
+      },
+      {
+        source: "/blogs/stridhan-property-rights-married-woman-india",
+        destination: "/blogs/hindu-woman-property-rights-stridhan-will",
         permanent: true,
       },
       {
@@ -540,28 +556,50 @@ const nextConfig: NextConfig = {
     ];
   },
   async headers() {
+    const securityHeaders = [
+      {
+        key: "X-Content-Type-Options",
+        value: "nosniff",
+      },
+      {
+        key: "Referrer-Policy",
+        value: "strict-origin-when-cross-origin",
+      },
+      {
+        key: "X-Frame-Options",
+        value: "SAMEORIGIN",
+      },
+      {
+        key: "Content-Security-Policy",
+        value:
+          "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https:; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: blob: https:; font-src 'self' data: https:; connect-src 'self' https:; frame-src 'self' https://www.google.com https:; media-src 'self' data: blob: https:; object-src 'none'; base-uri 'self'; form-action 'self' https:; frame-ancestors 'self';",
+      },
+      {
+        key: "Strict-Transport-Security",
+        value: "max-age=63072000; includeSubDomains; preload",
+      },
+    ];
+
     return [
       {
+        source: "/",
+        headers: securityHeaders,
+      },
+      {
         source: "/:path*",
-        headers: [
-          {
-            key: "X-Content-Type-Options",
-            value: "nosniff",
-          },
-          {
-            key: "Referrer-Policy",
-            value: "strict-origin-when-cross-origin",
-          },
-          {
-            key: "X-Frame-Options",
-            value: "SAMEORIGIN",
-          },
-          {
-            key: "Content-Security-Policy",
-            value:
-              "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https:; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: blob: https:; font-src 'self' data: https:; connect-src 'self' https:; frame-src 'self' https://www.google.com https:; media-src 'self' data: blob: https:; object-src 'none'; base-uri 'self'; form-action 'self' https:; frame-ancestors 'self';",
-          },
-        ],
+        headers: securityHeaders,
+      },
+      {
+        source: "/(.*)",
+        headers: securityHeaders,
+      },
+      {
+        source: "/_next/static/:path*",
+        headers: securityHeaders,
+      },
+      {
+        source: "/_next/image",
+        headers: securityHeaders,
       },
     ];
   },

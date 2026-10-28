@@ -514,9 +514,9 @@ export default function NoidaLocationClient({ faqs }: Props) {
                   <Scale className="w-4 h-4 text-[#C65378]" />
                   <span>STATUTORY PROVISIONS</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   1. Will Drafting &amp; Legal Framework in Noida NCR
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Testamentary disposition in Gautam Buddha Nagar is governed primarily by the <strong>Indian Succession Act, 1925</strong>, the <strong>Registration Act, 1908</strong>, and statutory guidelines framed under the <strong>UP Industrial Area Development Act, 1976</strong>.
                   Any adult of sound mind can bequeath their self-acquired real estate, bank deposits, mutual funds, and commercial interests.
@@ -569,9 +569,9 @@ export default function NoidaLocationClient({ faqs }: Props) {
                   <Stamp className="w-4 h-4 text-[#C65378]" />
                   <span>REGISTRATION ACT SECTION 18</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   2. Optional Will Registration Under Section 18 UP
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Under Section 18(e) of the Registration Act, 1908, the registration of a Will is legally optional throughout Uttar Pradesh.
                   An unregistered Will executed on plain paper is valid in law, provided execution and attestation satisfy Section 63 of the Indian Succession Act.
@@ -631,9 +631,9 @@ export default function NoidaLocationClient({ faqs }: Props) {
                   <Building className="w-4 h-4 text-[#C65378]" />
                   <span>AUTHORITY LEASEHOLD SYSTEM</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   3. Noida &amp; Greater Noida 90-Year Leasehold Transfer
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Unlike Delhi or Mumbai where properties frequently feature freehold titles, <strong>all land in Noida, Greater Noida, and Yamuna Expressway is leasehold</strong> owned by the Uttar Pradesh Government.
                   The New Okhla Industrial Development Authority (NOIDA) and Greater Noida Industrial Development Authority (GNIDA) execute master leases to developers, who in turn execute 90-year <strong>Tripartite Sub-Lease Deeds</strong> to apartment buyers.
@@ -712,9 +712,9 @@ export default function NoidaLocationClient({ faqs }: Props) {
                   <Landmark className="w-4 h-4 text-[#C65378]" />
                   <span>JUDICIAL PRECEDENTS</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   4. Allahabad High Court Probate Exemption in UP
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   One of the most persistent misconceptions among Noida property buyers relocating from Mumbai or Kolkata is that court probate is mandatory to inherit flats.
                   Under the Indian Succession Act, 1925, <strong>probate is strictly optional in Uttar Pradesh</strong>:
@@ -762,9 +762,9 @@ export default function NoidaLocationClient({ faqs }: Props) {
                   <Building className="w-4 h-4 text-[#C65378]" />
                   <span>REGISTRATION OFFICES</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   5. Gautam Buddha Nagar Sub-Registrar Directory
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Gautam Buddha Nagar district houses four key Sub-Registrar Offices.
                   Under Section 32 of the Registration Act, your Will can be registered at the SRO within whose sub-district you reside or where your apartment is located.
@@ -866,9 +866,9 @@ export default function NoidaLocationClient({ faqs }: Props) {
                   <MapPin className="w-4 h-4 text-[#C65378]" />
                   <span>LOCAL AREA COVERAGE &amp; HUBS</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   6. Area-Wise Will Drafting Services Across Noida Localities
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Looking for legally verified <strong>Will drafting services in Noida Expressway, Sector 50, Noida Extension, or Greater Noida</strong>? Property categories across Gautam Buddha Nagar range from luxury high-rise condominium towers along Noida Expressway to established sector kothis and sprawling Greater Noida townships.
                   Our senior advocates provide verified legal drafting, IGRSUP slot booking, and Sub-Registrar accompaniment across all key residential clusters:
@@ -1095,9 +1095,9 @@ export default function NoidaLocationClient({ faqs }: Props) {
                   <FileText className="w-4 h-4 text-[#C65378]" />
                   <span>5-STEP EXECUTION PROTOCOL</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   7. Step-by-Step Will Drafting &amp; Registration SOP
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Follow this standardized 5-step Standard Operating Procedure to draft your Will online and secure physical or doorstep registration in Gautam Buddha Nagar:
                 </p>
@@ -1188,9 +1188,9 @@ export default function NoidaLocationClient({ faqs }: Props) {
                   <Home className="w-4 h-4 text-[#C65378]" />
                   <span>DOORSTEP REGISTRATION</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   8. Section 31 Doorstep Will Registration in Noida
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   For senior citizens, bedridden individuals, or medically vulnerable residents across Noida and Greater Noida condominiums, visiting the bustling Sector 33 SRO can be challenging.
                   The law provides a dignified, fully legal alternative through <strong>Section 31 of the Registration Act, 1908</strong>:
@@ -1252,9 +1252,9 @@ export default function NoidaLocationClient({ faqs }: Props) {
                   <FileCheck className="w-4 h-4 text-[#C65378]" />
                   <span>INTERACTIVE CHECKLIST</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   9. Document Checklist for Noida Sub-Registrar
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Assemble your paperwork before heading to the Sub-Registrar office.
                   You have completed <strong>{checkedCount} of {checklist.length}</strong> items:
@@ -1303,9 +1303,9 @@ export default function NoidaLocationClient({ faqs }: Props) {
                   <Building className="w-4 h-4 text-[#C65378]" />
                   <span>PROPERTY SUCCESSION RULES</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   10. Noida Leasehold Apartments &amp; Commercial Assets
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Succession in Gautam Buddha Nagar depends heavily on whether your property is an apartment tripartite sub-lease, an individual Authority plot, or a commercial space:
                 </p>
@@ -1357,9 +1357,9 @@ export default function NoidaLocationClient({ faqs }: Props) {
                   <Stamp className="w-4 h-4 text-[#C65378]" />
                   <span>OFFICIAL UP TARIFF</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   11. IGRSUP Portal Registration Fees &amp; Stamp Exemptions
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Will registration in Uttar Pradesh is remarkably affordable because Wills are completely exempt from ad-valorem stamp duty:
                 </p>
@@ -1407,9 +1407,9 @@ export default function NoidaLocationClient({ faqs }: Props) {
                   <Award className="w-4 h-4 text-[#C65378]" />
                   <span>PLANS &amp; PRICING</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   12. Transparent Will Packages &amp; Legal Fees in Noida
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Choose the level of legal assistance that fits your family&apos;s estate planning needs in Gautam Buddha Nagar NCR:
                 </p>
@@ -1555,9 +1555,9 @@ export default function NoidaLocationClient({ faqs }: Props) {
                   <HelpCircle className="w-4 h-4 text-[#C65378]" />
                   <span>FREQUENTLY ASKED QUESTIONS</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   13. Frequently Asked Questions: Noida Wills &amp; Probate
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Clear legal answers to common questions about making and registering a Will in Gautam Buddha Nagar:
                 </p>
@@ -1600,9 +1600,9 @@ export default function NoidaLocationClient({ faqs }: Props) {
                   <Scale className="w-4 h-4 text-[#C65378]" />
                   <span>STATUTORY CITATIONS</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   14. Statutory Acts &amp; Allahabad HC Judgments in UP
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Our drafting protocols strictly follow codified Indian succession statutes and official Uttar Pradesh registration channels:
                 </p>

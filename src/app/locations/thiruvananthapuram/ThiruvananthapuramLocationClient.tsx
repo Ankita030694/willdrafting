@@ -544,9 +544,9 @@ export default function ThiruvananthapuramLocationClient({ faqs }: Props) {
                   <span>STATUTORY PROVISIONS</span>
                 </div>
                 {/* H2 <= 70 chars: 56 chars */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   1. Will Drafting &amp; Succession Laws in Thiruvananthapuram
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Writing a Will in Thiruvananthapuram is governed primarily by the <strong>Indian Succession Act, 1925</strong>, the <strong>Registration Act, 1908</strong>, and the <strong>Kerala Land Tax Act</strong>.
                   Any adult of sound mind who has attained 18 years of age can execute a Will to distribute self-acquired real estate, bank deposits, mutual funds, and business holdings.
@@ -609,9 +609,9 @@ export default function ThiruvananthapuramLocationClient({ faqs }: Props) {
                   <span>REGISTRATION PERSPECTIVE</span>
                 </div>
                 {/* H2 <= 70 chars: 51 chars */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   2. Will Registration in Kerala: PEARLS Portal Rules
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Under <strong>Section 18(e) of the Registration Act, 1908</strong>, registering a Will is completely optional throughout the State of Kerala.
                   An unregistered Will executed on plain paper is just as valid as a registered one, provided it meets the execution criteria laid down in Section 63 of the Indian Succession Act.
@@ -673,9 +673,9 @@ export default function ThiruvananthapuramLocationClient({ faqs }: Props) {
                   <span>JUDICIAL PROBATE DOCTRINE</span>
                 </div>
                 {/* H2 <= 70 chars: 52 chars */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   3. Is Probate Mandatory for Properties in Trivandrum?
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   <strong>No. Court probate is NOT compulsory for properties located in Thiruvananthapuram or anywhere in the State of Kerala.</strong>
                 </p>
@@ -714,9 +714,9 @@ export default function ThiruvananthapuramLocationClient({ faqs }: Props) {
                   <span>REGISTRATION HUBS</span>
                 </div>
                 {/* H2 <= 70 chars: 58 chars */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   4. Thiruvananthapuram SRO Offices &amp; Registration Directory
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Under <strong>Section 32 of the Registration Act, 1908</strong>, a Will can be registered at the Sub-Registrar Office having jurisdiction over your residential domicile, or where your primary immovable property is situated, or before any Sub-Registrar within the district.
                   Find your nearest Thiruvananthapuram SRO below:
@@ -798,9 +798,9 @@ export default function ThiruvananthapuramLocationClient({ faqs }: Props) {
                   <span>LOCAL JURISDICTION</span>
                 </div>
                 {/* H2 <= 70 chars: 63 chars */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   5. Area-Wise Will Drafting Across Thiruvananthapuram Localities
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Succession planning requirements in Thiruvananthapuram vary greatly depending on neighborhood property characteristics and resident profiles:
                 </p>
@@ -1147,9 +1147,9 @@ export default function ThiruvananthapuramLocationClient({ faqs }: Props) {
                   <span>EXECUTION WORKFLOW</span>
                 </div>
                 {/* H2 <= 70 chars: 49 chars */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   6. Step-by-Step SOP: Will Drafting to Registration
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Follow this verified five-step standard operating procedure to draft, execute, and optionally register your Will in Thiruvananthapuram:
                 </p>
@@ -1230,9 +1230,9 @@ export default function ThiruvananthapuramLocationClient({ faqs }: Props) {
                   <span>SENIOR CITIZEN ASSISTANCE</span>
                 </div>
                 {/* H2 <= 70 chars: 52 chars */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   7. Section 31 Doorstep SRO Registration in Trivandrum
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   For elderly testators, retired civil servants, defense veterans, or individuals undergoing medical recovery who cannot physically travel to an SRO, <strong>Section 31 of the Registration Act, 1908</strong> allows for registration at home or in a hospital.
                 </p>
@@ -1279,9 +1279,9 @@ export default function ThiruvananthapuramLocationClient({ faqs }: Props) {
                   <span>PREREQUISITES</span>
                 </div>
                 {/* H2 <= 70 chars: 51 chars */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   8. Mandatory Document Checklist for Trivandrum Wills
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Check off the necessary items before executing your Will or proceeding to your local Thiruvananthapuram SRO:
                 </p>
@@ -1334,9 +1334,9 @@ export default function ThiruvananthapuramLocationClient({ faqs }: Props) {
                   <span>PORTFOLIO ALLOCATION</span>
                 </div>
                 {/* H2 <= 70 chars: 55 chars */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   9. Estate Asset Distribution: Tech Equity &amp; Real Estate
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   A comprehensive estate plan must account for every category of movable and immovable property held in Kerala or worldwide:
                 </p>
@@ -1397,9 +1397,9 @@ export default function ThiruvananthapuramLocationClient({ faqs }: Props) {
                   <span>STATUTORY EXPENDITURE</span>
                 </div>
                 {/* H2 <= 70 chars: 51 chars */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   10. Registration Charges &amp; Zero Stamp Duty in Kerala
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Unlike property gift deeds or sale deeds that attract heavy percentage-based stamp duty in Kerala, a Will enjoys zero stamp duty:
                 </p>
@@ -1434,9 +1434,9 @@ export default function ThiruvananthapuramLocationClient({ faqs }: Props) {
                   <span>TRANSPARENT PRICING</span>
                 </div>
                 {/* H2 <= 70 chars: 56 chars */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   11. Transparent Pricing: Trivandrum Will Making Packages
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Choose from our clear, all-inclusive legal service packages tailored for Trivandrum families:
                 </p>
@@ -1578,9 +1578,9 @@ export default function ThiruvananthapuramLocationClient({ faqs }: Props) {
                   <span>COMMON QUESTIONS</span>
                 </div>
                 {/* H2 <= 70 chars: 54 chars */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   Frequently Asked Questions: Will Drafting in Trivandrum
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Clear, authoritative answers to common legal questions regarding Wills and succession in Thiruvananthapuram:
                 </p>
@@ -1625,9 +1625,9 @@ export default function ThiruvananthapuramLocationClient({ faqs }: Props) {
                   <span>AUTHORITATIVE SOURCES</span>
                 </div>
                 {/* H2 <= 70 chars: 54 chars */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   12. Statutory Citations &amp; Kerala High Court Precedents
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Our Will drafting protocols strictly conform to foundational statutory provisions and landmark jurisprudence:
                 </p>

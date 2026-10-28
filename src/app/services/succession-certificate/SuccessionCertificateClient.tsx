@@ -400,9 +400,9 @@ export default function SuccessionCertificateClient() {
                 <Coins className="w-4 h-4 text-[#C65378]" />
                 <span>SCOPE OF MOVABLE DEBTS &amp; SECURITIES</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
                 2. Eligible Movable Assets: Debts &amp; Securities Covered
-              </h2>
+              </h3>
               <div className="space-y-3 text-sm md:text-base text-slate-700 leading-relaxed">
                 <p>
                   Section 370 of the Indian Succession Act strictly delineates the scope of a Succession Certificate to <strong>&quot;debts and securities&quot;</strong>. It cannot be utilized to transfer title to real estate, agricultural parcels, or residential buildings.
@@ -478,9 +478,9 @@ export default function SuccessionCertificateClient() {
                 <FileCheck className="w-4 h-4 text-[#C65378]" />
                 <span>HEAD-TO-HEAD COMPARISON MATRIX</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
                 3. Comparison Guide: Succession vs Legal Heir Certificate
-              </h2>
+              </h3>
               <div className="space-y-3 text-sm md:text-base text-slate-700 leading-relaxed">
                 <p>
                   A common point of confusion for bereaved families is whether they need a <strong>Legal Heir Certificate (Varisu)</strong> or a <strong>Succession Certificate</strong>. Both prove family lineage, but their legal weight and institutional acceptance differ fundamentally.
@@ -562,9 +562,9 @@ export default function SuccessionCertificateClient() {
                 <Users className="w-4 h-4 text-[#C65378]" />
                 <span>LOCUS STANDI &amp; SUCCESSION LAWS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
                 4. Eligibility Criteria: Who Can File Court Petition
-              </h2>
+              </h3>
               <div className="space-y-3 text-sm md:text-base text-slate-700 leading-relaxed">
                 <p>
                   Under Section 372 of the Indian Succession Act, any individual claiming a beneficial interest in the debts or securities of the deceased has locus standi to petition the court. The applicant must establish their exact statutory pedigree under their respective personal succession laws:
@@ -621,9 +621,9 @@ export default function SuccessionCertificateClient() {
                 <FileText className="w-4 h-4 text-[#C65378]" />
                 <span>VISUAL COURT PROTOCOL BLUEPRINT</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
                 5. Visual Blueprint: Court Petition &amp; Issuance Flowchart
-              </h2>
+              </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed">
                 The diagram below illustrates the complete statutory journey under Part X of the Indian Succession Act, 1925. From gathering asset schedules and filing the verified petition to newspaper publication and certificate sealing, every milestone requires precise legal compliance.
               </p>
@@ -662,9 +662,9 @@ export default function SuccessionCertificateClient() {
                 <Clock className="w-4 h-4 text-[#C65378]" />
                 <span>SIX-STAGE STATUTORY PROCEDURE</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
                 6. Step-by-Step SOP: Six-Stage Court Petition Procedure
-              </h2>
+              </h3>
               <div className="space-y-4">
                 {/* Step 1 */}
                 <div className="p-4 sm:p-5 rounded-2xl bg-white border border-slate-200">
@@ -764,9 +764,9 @@ export default function SuccessionCertificateClient() {
                 <FileCheck className="w-4 h-4 text-[#C65378]" />
                 <span>COMPREHENSIVE FILING DOSSIER</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
                 7. Mandatory Documents: Filing Checklist &amp; Affidavits
-              </h2>
+              </h3>
               <div className="space-y-3 text-sm md:text-base text-slate-700 leading-relaxed">
                 <p>
                   Defective documentation is the primary reason petitions languish in court registries. Our legal team drafts, reviews, and assembles the complete court dossier prior to filing:
@@ -835,9 +835,9 @@ export default function SuccessionCertificateClient() {
                 <Calculator className="w-4 h-4 text-[#C65378]" />
                 <span>STATE COURT FEES &amp; STATUTORY CAPS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
                 8. Court Fee Structure: State-Wise Percentage &amp; Caps
-              </h2>
+              </h3>
               <div className="space-y-3 text-sm md:text-base text-slate-700 leading-relaxed">
                 <p>
                   Court fees for Succession Certificates are regulated by individual State Court Fees Acts. While some states impose an ad-valorem percentage with an upper ceiling, other states calculate fees proportionally without any maximum cap.
@@ -929,9 +929,9 @@ export default function SuccessionCertificateClient() {
                 <Clock className="w-4 h-4 text-[#C65378]" />
                 <span>REALISTIC CASE PROGRESSION</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
                 9. Procedural Timeline: Petition Filing to Final Grant
-              </h2>
+              </h3>
               <div className="space-y-3 text-sm md:text-base text-slate-700 leading-relaxed">
                 <p>
                   While judicial procedures in India can occasionally encounter scheduling delays, an uncontested Succession Certificate petition managed by experienced counsel follows a structured, milestone-driven progression:
@@ -1004,9 +1004,9 @@ export default function SuccessionCertificateClient() {
                 <Gavel className="w-4 h-4 text-[#C65378]" />
                 <span>CONTESTED SUCCESSION ADVOCACY</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
                 10. Caveats &amp; Objections: Handling Contested Succession
-              </h2>
+              </h3>
               <div className="space-y-3 text-sm md:text-base text-slate-700 leading-relaxed">
                 <p>
                   While the majority of petitions proceed smoothly on uncontested grounds, complications arise when a estranged relative, rival claimant, or purported testamentary legatee enters the fray:
@@ -1044,9 +1044,9 @@ export default function SuccessionCertificateClient() {
                 <ShieldCheck className="w-4 h-4 text-[#C65378]" />
                 <span>PREVENTIVE ESTATE PLANNING</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
                 11. Why Draft a Will: Avoid Lengthy Court Proceedings
-              </h2>
+              </h3>
               <div className="space-y-3 text-sm md:text-base text-slate-700 leading-relaxed">
                 <p>
                   Applying for a Succession Certificate is an emergency post-death remedy required only because the deceased did not execute an operative Last Will and Testament during their lifetime.
@@ -1111,9 +1111,9 @@ export default function SuccessionCertificateClient() {
                 <Briefcase className="w-4 h-4 text-[#C65378]" />
                 <span>END-TO-END CIVIL COURT REPRESENTATION</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
                 12. AMA Legal Services: End-to-End Court Representation
-              </h2>
+              </h3>
               <div className="space-y-3 text-sm md:text-base text-slate-700 leading-relaxed">
                 <p>
                   AMA Legal Solutions is a premier Indian law firm with a dedicated Testamentary and Estate Succession Practice. We take complete ownership of your succession certificate proceedings from initial filing to institutional payout:
@@ -1184,9 +1184,9 @@ export default function SuccessionCertificateClient() {
                 <HelpCircle className="w-4 h-4 text-[#C65378]" />
                 <span>CLEAR ANSWERS TO CRITICAL QUESTIONS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
                 Frequently Asked Questions: Succession Certificate India
-              </h2>
+              </h3>
               <div className="space-y-3">
                 {FAQS.map((faq, idx) => {
                   const isOpen = openFaq === idx;
@@ -1223,9 +1223,9 @@ export default function SuccessionCertificateClient() {
                 <Scale className="w-4 h-4 text-[#C65378]" />
                 <span>STATUTORY CITATIONS &amp; LANDMARK PRECEDENTS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
                 14. Statutory Citations: High Court Precedents &amp; Acts
-              </h2>
+              </h3>
               <div className="space-y-3 text-xs sm:text-sm text-slate-700 leading-relaxed">
                 <p>
                   Every succession petition drafted by AMA Legal Solutions adheres strictly to codified statutes and landmark Supreme Court of India precedents:

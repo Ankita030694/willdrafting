@@ -721,9 +721,9 @@ ATTESTED & IDENTIFIED BY ADVOCATE / NOTARY PUBLIC`;
                 <Sparkles className="w-4 h-4" />
                 <span>DIAGNOSTIC COMPLIANCE ENGINE</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 2. Interactive Housing Society Flat Transfer Document Checker
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Select your state, legal status, and family situation. Get an instant checklist of Appendix forms, fee limits, and probate rules.
               </p>
@@ -1126,9 +1126,9 @@ ATTESTED & IDENTIFIED BY ADVOCATE / NOTARY PUBLIC`;
                 <Scale className="w-4 h-4" />
                 <span>STATUTORY SUCCESSION HIERARCHY</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 3. Section 154B-13: Legal Hierarchy for Society Flat Transfer
-              </h2>
+              </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   Before 2019, many societies gave full ownership to nominees under Section 30. They often
@@ -1194,9 +1194,9 @@ ATTESTED & IDENTIFIED BY ADVOCATE / NOTARY PUBLIC`;
                 <Gavel className="w-4 h-4" />
                 <span>LANDMARK JUDICIAL PRECEDENTS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 4. Supreme Court Precedents: Indrani Wahi &amp; Sarbati Devi
-              </h2>
+              </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   Managing committees frequently misunderstand the legal consequences of nomination. Two
@@ -1250,9 +1250,9 @@ ATTESTED & IDENTIFIED BY ADVOCATE / NOTARY PUBLIC`;
                 <FileText className="w-4 h-4" />
                 <span>STATUTORY PROCEDURAL FORMS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 5. Model Bye-Law Appendix Forms: Form 14, 15, 17 &amp; 19
-              </h2>
+              </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   In Maharashtra, the Commissioner for Co-operation and Registrar of Co-operative Societies
@@ -1334,9 +1334,9 @@ ATTESTED & IDENTIFIED BY ADVOCATE / NOTARY PUBLIC`;
                 <HandCoins className="w-4 h-4" />
                 <span>STATUTORY FEE REGULATION</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 6. Society Transfer Fee Ceiling: The 25,000 Rupee Cap Rule
-              </h2>
+              </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   Many housing societies ask for illegal money when a member dies. They ask for Rs. 50,000 to
@@ -1379,9 +1379,9 @@ ATTESTED & IDENTIFIED BY ADVOCATE / NOTARY PUBLIC`;
                 <Newspaper className="w-4 h-4" />
                 <span>PUBLIC NOTICE PROTOCOL</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 7. Newspaper Public Notice: 15-Day Objection Period Protocol
-              </h2>
+              </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   When transferring a flat without court probate, the society must protect itself. Bye-Laws 35
@@ -1426,9 +1426,9 @@ ATTESTED & IDENTIFIED BY ADVOCATE / NOTARY PUBLIC`;
                 <Building2 className="w-4 h-4" />
                 <span>MULTI-STATE COMPARISON</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 8. State Comparison: Maharashtra, Delhi &amp; Karnataka Rules
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 While cooperative principles remain similar, specific statutory sections, fee caps, and
                 nominee rights vary across major Indian states:
@@ -1514,9 +1514,9 @@ ATTESTED & IDENTIFIED BY ADVOCATE / NOTARY PUBLIC`;
                 <FileCheck className="w-4 h-4" />
                 <span>PRACTICAL EXECUTION ROADMAP</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 9. Step-by-Step SOP: Flat Transmission Protocol for Heirs
-              </h2>
+              </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   To secure an orderly transfer without litigation or bureaucratic rejection, follow this
@@ -1584,9 +1584,9 @@ ATTESTED & IDENTIFIED BY ADVOCATE / NOTARY PUBLIC`;
                 <Home className="w-4 h-4" />
                 <span>REAL-WORLD SCENARIOS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 10. Practical Case Scenarios: Mumbai, Pune &amp; Delhi Societies
-              </h2>
+              </h3>
               <div className="space-y-4 text-slate-700 leading-relaxed text-sm md:text-base">
                 <div className="p-5 rounded-2xl bg-white border border-slate-200/90 shadow-xs space-y-2">
                   <div className="font-extrabold text-xs text-slate-900 flex items-center gap-2">
@@ -1636,9 +1636,9 @@ ATTESTED & IDENTIFIED BY ADVOCATE / NOTARY PUBLIC`;
                 <Copy className="w-4 h-4" />
                 <span>COPY-PASTEABLE STATUTORY FORMATS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 11. Appendix 17 Indemnity Bond &amp; Heir NOC Affidavit Formats
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Use these legal formats for your indemnity bond and co-heir NOC affidavits. Click copy to paste the text onto stamp paper.
               </p>
@@ -1756,9 +1756,9 @@ We, the undersigned co-heirs of Late [Name of Deceased]...
                 <Scale className="w-4 h-4" />
                 <span>LEGAL REVIEW &amp; AUTHORSHIP</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 12. Institutional Legal Backing &amp; Advocate Profile
-              </h2>
+              </h3>
               <div className="bg-white rounded-2xl border border-slate-200/90 p-5 sm:p-6 shadow-xs space-y-4">
                 <div className="flex flex-col sm:flex-row sm:items-center gap-4">
                   <div className="w-16 h-16 rounded-full bg-rose-100 text-[#C65378] font-black text-xl flex items-center justify-center shrink-0">
@@ -1797,9 +1797,9 @@ We, the undersigned co-heirs of Late [Name of Deceased]...
                 <HelpCircle className="w-4 h-4" />
                 <span>COMMON CLARIFICATIONS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 13. Frequently Asked Questions: Housing Society Flat Transfer
-              </h2>
+              </h3>
               <div className="space-y-3">
                 {FAQS.map((faq, index) => {
                   const isOpen = openFaq === index;
@@ -1837,9 +1837,9 @@ We, the undersigned co-heirs of Late [Name of Deceased]...
                 <Landmark className="w-4 h-4" />
                 <span>OFFICIAL PORTALS &amp; REFERENCES</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 14. Statutory Citations &amp; Official Cooperative Portals
-              </h2>
+              </h3>
               <div className="p-5 rounded-2xl bg-white border border-slate-200/90 shadow-xs space-y-3 text-xs text-slate-700 leading-relaxed">
                 <p>
                   Official statutory portals and government repositories for verifying cooperative housing

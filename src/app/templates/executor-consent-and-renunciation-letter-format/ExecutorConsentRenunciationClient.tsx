@@ -711,9 +711,9 @@ Signed and executed before me at the Embassy / Consulate General of India, [City
                 =================================================================== */}
             <section id="interactive-templates" className="space-y-4">
               <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
-                <h2 className="text-xl sm:text-2xl font-black text-[#172228] tracking-tight">
+                <h3 className="text-xl sm:text-2xl font-black text-[#172228] tracking-tight">
                   2. Interactive Legal Formats: Consent &amp; Renunciation
-                </h2>
+                </h3>
                 <div className="flex items-center gap-2">
                   <button
                     onClick={copyTemplateToClipboard}
@@ -804,9 +804,9 @@ Signed and executed before me at the Embassy / Consulate General of India, [City
                 SECTION 3: PRE-DEATH CONSENT VS POST-DEATH RENUNCIATION
                 =================================================================== */}
             <section id="consent-vs-renunciation" className="space-y-4">
-              <h2 className="text-xl sm:text-2xl font-black text-[#172228] tracking-tight">
+              <h3 className="text-xl sm:text-2xl font-black text-[#172228] tracking-tight">
                 3. Pre-Death Consent Letter vs Post-Death Renunciation
-              </h2>
+              </h3>
               <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                 Many testators make the grave mistake of naming an executor without ever asking them.
                 When the testator dies, the surprised executor frequently ignores court notices or
@@ -921,9 +921,9 @@ Signed and executed before me at the Embassy / Consulate General of India, [City
                 SECTION 4: THE DOCTRINE OF INTERMEDDLING
                 =================================================================== */}
             <section id="intermeddling-doctrine" className="space-y-4">
-              <h2 className="text-xl sm:text-2xl font-black text-[#172228] tracking-tight">
+              <h3 className="text-xl sm:text-2xl font-black text-[#172228] tracking-tight">
                 4. The Doctrine of Intermeddling: When Renunciation Fails
-              </h2>
+              </h3>
               <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                 A common misconception is that an executor can step in, operate the deceased person&apos;s
                 bank accounts, collect rent, or sell some shares, and then simply sign a renunciation
@@ -982,9 +982,9 @@ Signed and executed before me at the Embassy / Consulate General of India, [City
                 SECTION 5: STRUCTURED COMPARISON TABLE
                 =================================================================== */}
             <section id="comparison-table" className="space-y-4">
-              <h2 className="text-xl sm:text-2xl font-black text-[#172228] tracking-tight">
+              <h3 className="text-xl sm:text-2xl font-black text-[#172228] tracking-tight">
                 5. Legal Comparison: Executorship Transfer Mechanisms
-              </h2>
+              </h3>
               <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                 When an executor cannot or will not fulfill their duties, multiple legal pathways exist
                 under the Indian Succession Act. The table below compares their procedure, cost, and
@@ -1062,9 +1062,9 @@ Signed and executed before me at the Embassy / Consulate General of India, [City
                 SECTION 6: NRI & FOREIGN EXECUTOR RENUNCIATION PROTOCOL
                 =================================================================== */}
             <section id="nri-executor-protocol" className="space-y-4">
-              <h2 className="text-xl sm:text-2xl font-black text-[#172228] tracking-tight">
+              <h3 className="text-xl sm:text-2xl font-black text-[#172228] tracking-tight">
                 6. NRI &amp; Foreign Executor Renunciation Protocol: Form 10
-              </h2>
+              </h3>
               <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                 With millions of global Indians living in the United States, United Kingdom, Canada,
                 and UAE, a common scenario occurs where an NRI child or sibling is appointed executor
@@ -1125,9 +1125,9 @@ Signed and executed before me at the Embassy / Consulate General of India, [City
                 SECTION 7: STEP-BY-STEP SOP
                 =================================================================== */}
             <section id="step-by-step-sop" className="space-y-4">
-              <h2 className="text-xl sm:text-2xl font-black text-[#172228] tracking-tight">
+              <h3 className="text-xl sm:text-2xl font-black text-[#172228] tracking-tight">
                 7. Step-by-Step SOP: Section 230 Court Filing Protocol
-              </h2>
+              </h3>
               <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                 Follow this 5-stage standard operating procedure to transition from an unwilling
                 executor to obtaining Letters of Administration smoothly:
@@ -1220,9 +1220,9 @@ Signed and executed before me at the Embassy / Consulate General of India, [City
                 SECTION 8: INTERACTIVE RENUNCIATION EVALUATOR TOOL
                 =================================================================== */}
             <section id="interactive-evaluator" className="space-y-4">
-              <h2 className="text-xl sm:text-2xl font-black text-[#172228] tracking-tight">
+              <h3 className="text-xl sm:text-2xl font-black text-[#172228] tracking-tight">
                 8. Interactive Renunciation &amp; LOA Readiness Evaluator
-              </h2>
+              </h3>
               <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                 Use this diagnostic tool to evaluate your executor scenario and determine the exact
                 legal documentation, court citations, and procedural route required:
@@ -1336,9 +1336,9 @@ Signed and executed before me at the Embassy / Consulate General of India, [City
                 SECTION 9: REAL CASE STUDIES
                 =================================================================== */}
             <section id="real-case-studies" className="space-y-4">
-              <h2 className="text-xl sm:text-2xl font-black text-[#172228] tracking-tight">
+              <h3 className="text-xl sm:text-2xl font-black text-[#172228] tracking-tight">
                 9. Real Case Studies: Delhi, Mumbai and Bengaluru Estates
-              </h2>
+              </h3>
               <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                 Practical insights from real estate administration challenges handled across Indian
                 courts:
@@ -1396,9 +1396,9 @@ Signed and executed before me at the Embassy / Consulate General of India, [City
                 SECTION 10: INSTITUTIONAL ADVOCATE PROFILE
                 =================================================================== */}
             <section id="institutional-profile" className="space-y-4">
-              <h2 className="text-xl sm:text-2xl font-black text-[#172228] tracking-tight">
+              <h3 className="text-xl sm:text-2xl font-black text-[#172228] tracking-tight">
                 10. Testamentary Defense &amp; Legal Advocate Verification
-              </h2>
+              </h3>
               <div className="p-5 sm:p-6 rounded-2xl bg-white border border-slate-200 shadow-xs space-y-4">
                 <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
                   <div className="w-14 h-14 rounded-2xl bg-[#172228] text-white flex items-center justify-center font-black text-xl shrink-0">
@@ -1438,9 +1438,9 @@ Signed and executed before me at the Embassy / Consulate General of India, [City
                 SECTION 11: FREQUENTLY ASKED QUESTIONS
                 =================================================================== */}
             <section id="frequently-asked-questions" className="space-y-4">
-              <h2 className="text-xl sm:text-2xl font-black text-[#172228] tracking-tight">
+              <h3 className="text-xl sm:text-2xl font-black text-[#172228] tracking-tight">
                 11. Frequently Asked Questions: Executor Renunciation
-              </h2>
+              </h3>
               <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                 Clear answers to common questions regarding Section 230 renunciation and executor
                 responsibilities in India:
@@ -1480,9 +1480,9 @@ Signed and executed before me at the Embassy / Consulate General of India, [City
                 SECTION 12: STATUTORY CITATIONS & PRECEDENTS
                 =================================================================== */}
             <section id="statutory-citations" className="space-y-4">
-              <h2 className="text-xl sm:text-2xl font-black text-[#172228] tracking-tight">
+              <h3 className="text-xl sm:text-2xl font-black text-[#172228] tracking-tight">
                 12. Statutory Citations &amp; High Court Precedent Index
-              </h2>
+              </h3>
               <div className="p-4 sm:p-5 rounded-2xl bg-white border border-slate-200 shadow-xs space-y-3 text-xs text-slate-600">
                 <div className="font-bold text-slate-800 text-xs sm:text-sm">
                   Primary Statutory Authorities &amp; Case Precedents:

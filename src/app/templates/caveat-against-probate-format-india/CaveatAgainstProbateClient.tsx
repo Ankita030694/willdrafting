@@ -534,9 +534,9 @@ DEPONENT`;
                 <Calculator className="w-4 h-4" />
                 <span>DIAGNOSTIC &amp; LIMITATION CALCULATOR</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 2. Interactive Caveat &amp; Limitation Calculator
-              </h2>
+              </h3>
               <p className="text-xs sm:text-sm text-slate-600">
                 Check if you have the legal right to object to a Will. Find your exact deadline to file your sworn
                 affidavit in court.
@@ -711,9 +711,9 @@ DEPONENT`;
                 <Scale className="w-4 h-4" />
                 <span>PROCEDURAL COMPARISON</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 3. Section 148A CPC vs Section 284 ISA Caveat
-              </h2>
+              </h3>
               <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                 Many lawyers file a general civil caveat by mistake. But civil caveats under Section 148A of the CPC
                 do not work for probate. Here is how Section 284 probate caveats differ:
@@ -791,9 +791,9 @@ DEPONENT`;
                 <FileText className="w-4 h-4" />
                 <span>COPY-PASTE TEMPLATE 1</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 4. Statutory Schedule V Probate Caveat Format
-              </h2>
+              </h3>
               <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                 Use this legal format to lodge a caveat before a District Judge or High Court. Fill in your
                 details in the brackets before filing.
@@ -870,9 +870,9 @@ ADVOCATE FOR CAVEATOR                                CAVEATOR
                 <FileCheck className="w-4 h-4" />
                 <span>COPY-PASTE TEMPLATE 2</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 5. Affidavit in Support of Caveat Legal Format
-              </h2>
+              </h3>
               <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                 This affidavit is your main defense against a disputed Will. You must file it within 8 days in
                 Bombay or 14 days in Delhi and Calcutta after getting court notice.
@@ -946,9 +946,9 @@ DEPONENT`}
                 <Gavel className="w-4 h-4" />
                 <span>LANDMARK JUDICIAL PRECEDENTS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 6. Establishing Caveatable Interest Precedents
-              </h2>
+              </h3>
               <div className="bg-white rounded-2xl border border-slate-200/90 p-5 sm:p-6 shadow-xs space-y-4 text-xs sm:text-sm text-slate-700 leading-relaxed">
                 <p>
                   You cannot contest a Will just because you are angry. You must prove a real legal interest in the
@@ -995,9 +995,9 @@ DEPONENT`}
                 <Building2 className="w-4 h-4" />
                 <span>STATE JURISDICTIONS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 7. High Court Rules: Bombay, Calcutta &amp; Delhi
-              </h2>
+              </h3>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs">
                 {/* Bombay High Court */}
                 <div className="p-5 rounded-2xl bg-white border border-slate-200 shadow-xs space-y-2">
@@ -1043,9 +1043,9 @@ DEPONENT`}
                 <Scale className="w-4 h-4" />
                 <span>LITIGATION TRANSFORMATION</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 8. Section 295 ISA: Conversion to Regular Suit
-              </h2>
+              </h3>
               <div className="bg-white rounded-2xl border border-slate-200/90 p-5 sm:p-6 shadow-xs space-y-4 text-xs sm:text-sm text-slate-700 leading-relaxed">
                 <p>
                   Once you file your supporting affidavit, the case changes completely. Under Section 295 of the Act,
@@ -1080,9 +1080,9 @@ DEPONENT`}
                 <FileCheck className="w-4 h-4" />
                 <span>PRACTICAL LITIGATION SOP</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 9. Step-by-Step SOP: Lodging a Probate Caveat
-              </h2>
+              </h3>
               <div className="bg-white rounded-2xl border border-slate-200/90 p-5 sm:p-6 shadow-xs space-y-4">
                 <div className="space-y-3">
                   <div className="flex items-start gap-3 p-3 bg-slate-50 rounded-xl border border-slate-200 text-xs">
@@ -1166,9 +1166,9 @@ DEPONENT`}
                 <AlertCircle className="w-4 h-4" />
                 <span>PREVENT PROCEDURAL FORFEITURE</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 10. Four Fatal Mistakes When Opposing Probate
-              </h2>
+              </h3>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs">
                 <div className="p-4 rounded-2xl bg-white border border-slate-200 shadow-xs space-y-1.5">
                   <div className="font-extrabold text-rose-600 text-xs flex items-center gap-1.5">
@@ -1260,9 +1260,9 @@ DEPONENT`}
                 <Award className="w-4 h-4" />
                 <span>LEGAL EXPERTISE &amp; PRACTICE</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 11. Institutional Profile: Legal Excellence
-              </h2>
+              </h3>
               <div className="bg-white rounded-2xl border border-slate-200/90 p-6 sm:p-8 shadow-xs space-y-5">
                 <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-5 border-b border-slate-100">
                   <div className="space-y-1">
@@ -1317,9 +1317,9 @@ DEPONENT`}
                 <HelpCircle className="w-4 h-4" />
                 <span>DIRECT ANSWERS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 12. Frequently Asked Questions: Probate Caveat
-              </h2>
+              </h3>
               <div className="space-y-3">
                 {FAQS.map((faq, idx) => {
                   const isOpen = openFaq === idx;
@@ -1357,9 +1357,9 @@ DEPONENT`}
                 <Landmark className="w-4 h-4" />
                 <span>STATUTORY CITATIONS &amp; OFFICIAL PORTALS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 13. Statutory Provisions &amp; High Court Rules
-              </h2>
+              </h3>
               <div className="bg-white rounded-2xl border border-slate-200/90 p-5 sm:p-6 shadow-xs space-y-4 text-xs">
                 <div className="space-y-2">
                   <div className="font-extrabold text-slate-900">

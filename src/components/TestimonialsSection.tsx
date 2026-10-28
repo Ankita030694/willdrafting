@@ -48,7 +48,7 @@ export default function TestimonialsSection() {
           className="story-grid"
         >
           <div style={{ padding: "3rem 3.5rem" }} className="story-content">
-            <h2
+            <h3
               style={{
                 fontSize: "clamp(1.45rem, 4vw, 2.25rem)",
                 color: "var(--color-navy)",
@@ -59,7 +59,7 @@ export default function TestimonialsSection() {
               }}
             >
               &ldquo;The greatest gift we left our children was certainty.&rdquo;
-            </h2>
+            </h3>
             <p style={{ fontSize: "clamp(0.92rem, 2.5vw, 1.05rem)", color: "var(--color-charcoal)", lineHeight: 1.65, marginBottom: "1.5rem" }}>
               Planning your estate is not about death; it is about sparing your loved ones the agonizing delays,
               expenses, and emotional strain of contested succession certificates in probate court.

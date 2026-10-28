@@ -62,7 +62,7 @@ export const metadata: Metadata = {
         url: "/images/nri-will-india-og.jpg",
         width: 1200,
         height: 630,
-        alt: "NRI and OCI Indian Will Drafting Services for Immovable Property, NRE/NRO Accounts, and Demat Shares in India",
+        alt: "NRI and OCI Indian Will Drafting Services for Property, NRE/NRO and Demat Assets",
       },
     ],
   },
@@ -469,9 +469,9 @@ export default function NriWillIndiaPage() {
               <FileCheck className="w-4 h-4" />
               <span>Visual Legal Comparison</span>
             </div>
-            <h2 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-3">
+            <h3 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-3">
               Infographic: Foreign Will vs. NRI Two-Will Strategy
-            </h2>
+            </h3>
             <p className="text-[0.98rem] sm:text-[1.05rem] leading-[1.65] text-[#49585F]">
               How a separate Indian Will bypasses foreign probate re-sealing under Section 228 of the Indian Succession Act, 1925 and accelerates NRO repatriation:
             </p>
@@ -503,9 +503,9 @@ export default function NriWillIndiaPage() {
               <Landmark className="w-4 h-4" />
               <span>FEMA 1999 &amp; RBI Repatriation Rules</span>
             </div>
-            <h2 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-4">
+            <h3 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-4">
               FEMA Rules &amp; USD 1 Million Repatriation for NRIs
-            </h2>
+            </h3>
             <p className="text-[0.98rem] sm:text-[1.05rem] leading-[1.65] text-[#49585F]">
               Inheriting property in India is 100% tax-free under Section 56(2)(x) of the Income Tax Act, 1961. However, mutating title and wiring sale proceeds abroad through an Authorised Dealer (AD) bank requires strict compliance with the <strong className="text-[#111827]">Foreign Exchange Management Act (FEMA), 1999</strong>:
             </p>
@@ -546,9 +546,9 @@ export default function NriWillIndiaPage() {
               <ShieldCheck className="w-4 h-4" />
               <span>Section 63 Execution Protocol</span>
             </div>
-            <h2 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-3">
+            <h3 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-3">
               How NRIs Sign a Valid Indian Will from Abroad
-            </h2>
+            </h3>
             <p className="text-[0.98rem] sm:text-[1.05rem] leading-[1.65] text-[#49585F]">
               You do not need to travel to India or purchase non-judicial stamp paper to make a legally enforceable Indian Will. Follow these 4 statutory steps from your home abroad:
             </p>
@@ -603,9 +603,9 @@ export default function NriWillIndiaPage() {
                 <Users className="w-4 h-4" />
                 <span>For NRIs Supporting Parents in India</span>
               </div>
-              <h2 className="text-[1.75rem] sm:text-[2.3rem] font-medium leading-[1.14] tracking-[-0.02em] text-[#111827] mb-4">
+              <h3 className="text-[1.75rem] sm:text-[2.3rem] font-medium leading-[1.14] tracking-[-0.02em] text-[#111827] mb-4">
                 Helping Elderly Parents in India Make Their Will
-              </h2>
+              </h3>
               <p className="text-[15px] sm:text-[16px] leading-[1.7] text-[#374151] mb-4">
                 One of the most stressful situations for NRIs in the US, UK, UAE, Canada, and Australia occurs when aging parents in Delhi, Mumbai, Bengaluru, Chennai, Pune, Hyderabad, or Kolkata pass away without a clear Will, leaving NRI children to take repeated international flights for court Succession Certificates and bank KYC clearances.
               </p>
@@ -640,9 +640,9 @@ export default function NriWillIndiaPage() {
               <BookOpen className="w-4 h-4" />
               <span>NRI Succession Law FAQs</span>
             </div>
-            <h2 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-3">
+            <h3 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-3">
               Frequently Asked Questions on NRI Wills in India
-            </h2>
+            </h3>
             <p className="text-[0.98rem] sm:text-[1.05rem] leading-[1.65] text-[#49585F]">
               Clear statutory answers prepared by the <strong className="text-[#111827]">WillDrafting Editorial Team</strong> and verified by <strong className="text-[#111827]">AMA Legal Solutions</strong>:
             </p>

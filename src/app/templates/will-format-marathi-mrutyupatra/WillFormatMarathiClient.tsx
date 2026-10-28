@@ -381,9 +381,9 @@ export default function WillFormatMarathiClient() {
                 <FileText className="w-4 h-4" />
                 <span>कायदेशीर मृत्यूपत्र मसुदा</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 2. मृत्यूपत्र फॉरमॅट मराठी: प्रत्यक्ष कायदेशीर नमुना
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 खाली मुंबई, पुणे, नाशिक, नागपूरसह संपूर्ण महाराष्ट्रात कायदेशीरदृष्ट्या पूर्णपणे ग्राह्य असणारा अधिकृत <strong>मृत्यूपत्र फॉरमॅट मराठी (Mrutyupatra Format)</strong> दिलेला आहे. हा मसुदा तुम्ही कॉपी करू शकता किंवा डाऊनलोड करून साध्या कागदावर टाईप करू शकता.
               </p>
@@ -479,9 +479,9 @@ export default function WillFormatMarathiClient() {
                 <Globe className="w-4 h-4" />
                 <span>द्विभाषिक तुलना व भाषांतर</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 3. द्विभाषिक तुलना: मराठी नमुना आणि इंग्रजी भाषांतर
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 कुटुंबातील इतर सदस्यांना किंवा बँकेत/सोसायटीत सादर करण्यासाठी बऱ्याचदा मराठी मृत्यूपत्राचा इंग्रजी अनुवाद लागतो. खालील बटणे वापरून तुम्ही मराठी आणि इंग्रजी कायदेशीर मजकुराची तुलना करू शकता.
               </p>
@@ -610,9 +610,9 @@ export default function WillFormatMarathiClient() {
                 <Building className="w-4 h-4" />
                 <span>महाराष्ट्र विशिष्ट कायदेशीर बारकावे</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 4. मुंबई व महाराष्ट्रातील विशेष कायदेशीर तरतुदी
-              </h2>
+              </h3>
               <div className="space-y-4 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   महाराष्ट्रामध्ये मृत्यूपत्र करताना इतर राज्यांपेक्षा काही अतिशय महत्त्वाचे स्थानिक कायदेशीर नियम आणि हायकोर्टाचे अधिकारक्षेत्र लागू होते:
@@ -692,9 +692,9 @@ export default function WillFormatMarathiClient() {
                 <Layers className="w-4 h-4" />
                 <span>कायदेशीर पर्यायांची तुलना</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 5. तुलना तक्ता: नोंदणीकृत मृत्यूपत्र विरुद्ध इतर पर्याय
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 स्वतःच्या मिळकतीचे वाटप करताना नोंदणीकृत मृत्यूपत्र, साध्या कागदावरील मृत्यूपत्र, बक्षीसपत्र (Gift Deed) आणि विना-मृत्यूपत्र वारसा हक्क यामध्ये नेमका काय फरक आहे ते खालील तक्त्यावरून समजून घ्या:
               </p>
@@ -748,9 +748,9 @@ export default function WillFormatMarathiClient() {
                 <BookOpen className="w-4 h-4" />
                 <span>कायदेशीर संज्ञा व अर्थ</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 6. मराठी ते इंग्रजी कायदेशीर संज्ञा शब्दकोश
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 मृत्यूपत्र, दस्तनोंदणी आणि महसूल दप्तरी वापरल्या जाणाऱ्या महत्त्वाच्या मराठी शब्दांचे इंग्रजी कायदेशीर प्रतिशब्द व त्यांचा अचूक अर्थ खाली दिला आहे:
               </p>
@@ -780,9 +780,9 @@ export default function WillFormatMarathiClient() {
                 <Clock className="w-4 h-4" />
                 <span>कृती आराखडा व टप्पे</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 7. टप्प्याटप्प्याने प्रक्रिया: मृत्यूपत्र कसे तयार करावे?
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 मृत्यूपत्र तयार करताना कोणतीही चूक होऊ नये आणि भविष्यात ते न्यायालयात निर्विवाद सिद्ध व्हावे, यासाठी खालील ५ सोप्या टप्प्यांचा अवलंब करा:
               </p>
@@ -866,9 +866,9 @@ export default function WillFormatMarathiClient() {
                 <HelpCircle className="w-4 h-4" />
                 <span>शंका निरसन</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 8. वारंवार विचारले जाणारे प्रश्न: मृत्यूपत्र मार्गदर्शन
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 मराठीत मृत्यूपत्र लिहिताना नागरिकांच्या मनात वारंवार निर्माण होणाऱ्या महत्त्वाच्या कायदेशीर प्रश्नांची उत्तरे:
               </p>
@@ -910,9 +910,9 @@ export default function WillFormatMarathiClient() {
                 <Award className="w-4 h-4" />
                 <span>कायदेशीर संदर्भ व प्राधिकार</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 9. कायदेशीर संदर्भ आणि सर्वोच्च न्यायालय निकाल
-              </h2>
+              </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-xs sm:text-sm">
                 <p>
                   या पृष्ठावरील माहिती आणि मृत्यूपत्र नमुना खालील केंद्रीय व राज्यस्तरीय कायदे आणि उच्च व सर्वोच्च न्यायालयाच्या निर्देशांवर आधारित आहे:

@@ -542,9 +542,9 @@ export default function MaharashtraLocationClient({ faqs }: Props) {
                 <span className="text-xs font-mono font-bold tracking-widest uppercase text-[#C65378] block mb-1">
                   STATUTORY GOVERNANCE
                 </span>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   1. Will Drafting &amp; Succession Laws in Maharashtra
-                </h2>
+                </h3>
               </div>
 
               <div className="prose prose-slate max-w-none text-slate-700 text-sm sm:text-base leading-relaxed space-y-4">
@@ -632,9 +632,9 @@ export default function MaharashtraLocationClient({ faqs }: Props) {
                 <span className="text-xs font-mono font-bold tracking-widest uppercase text-[#C65378] block mb-1">
                   JUDICIAL JURISDICTION
                 </span>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   2. Bombay High Court Probate Rules: Section 213 ISA
-                </h2>
+                </h3>
               </div>
 
               <div className="prose prose-slate max-w-none text-slate-700 text-sm sm:text-base leading-relaxed space-y-4">
@@ -729,9 +729,9 @@ export default function MaharashtraLocationClient({ faqs }: Props) {
                 <span className="text-xs font-mono font-bold tracking-widest uppercase text-[#C65378] block mb-1">
                   HOUSING SOCIETY LAW
                 </span>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   3. Housing Society Flats: MCS Act &amp; Nominee vs Heir
-                </h2>
+                </h3>
               </div>
 
               <div className="prose prose-slate max-w-none text-slate-700 text-sm sm:text-base leading-relaxed space-y-4">
@@ -779,9 +779,9 @@ export default function MaharashtraLocationClient({ faqs }: Props) {
                 <span className="text-xs font-mono font-bold tracking-widest uppercase text-[#C65378] block mb-1">
                   REGISTRATION RULES
                 </span>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   4. Will Registration: Mandatory vs Optional Status
-                </h2>
+                </h3>
               </div>
 
               <div className="prose prose-slate max-w-none text-slate-700 text-sm sm:text-base leading-relaxed space-y-4">
@@ -837,9 +837,9 @@ export default function MaharashtraLocationClient({ faqs }: Props) {
                 <span className="text-xs font-mono font-bold tracking-widest uppercase text-[#C65378] block mb-1">
                   OFFICIAL DIRECTORY
                 </span>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   5. Maharashtra SRO Directory: City &amp; District Registry
-                </h2>
+                </h3>
               </div>
 
               <p className="text-sm md:text-base text-slate-700 leading-relaxed">
@@ -929,9 +929,9 @@ export default function MaharashtraLocationClient({ faqs }: Props) {
                 <span className="text-xs font-mono font-bold tracking-widest uppercase text-[#C65378] block mb-1">
                   METROPOLITAN SERVICES
                 </span>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   6. Key Cities &amp; Regional Will Services in Maharashtra
-                </h2>
+                </h3>
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
@@ -1073,9 +1073,9 @@ export default function MaharashtraLocationClient({ faqs }: Props) {
                 <span className="text-xs font-mono font-bold tracking-widest uppercase text-[#C65378] block mb-1">
                   STANDARD OPERATING PROCEDURE
                 </span>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   7. Step-by-Step SOP: Will Drafting to Registration
-                </h2>
+                </h3>
               </div>
 
               <div className="space-y-4">
@@ -1164,9 +1164,9 @@ export default function MaharashtraLocationClient({ faqs }: Props) {
                 <span className="text-xs font-mono font-bold tracking-widest uppercase text-[#C65378] block mb-1">
                   SENIOR CITIZEN CONVENIENCE
                 </span>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   8. Section 31 Doorstep SRO Registration in Maharashtra
-                </h2>
+                </h3>
               </div>
 
               <div className="prose prose-slate max-w-none text-slate-700 text-sm sm:text-base leading-relaxed space-y-4">
@@ -1219,9 +1219,9 @@ export default function MaharashtraLocationClient({ faqs }: Props) {
                     <span className="text-xs font-mono font-bold tracking-widest uppercase text-[#C65378] block mb-1">
                       VERIFICATION READINESS
                     </span>
-                    <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                    <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                       9. Mandatory Document Checklist for Maharashtra Wills
-                    </h2>
+                    </h3>
                   </div>
                   <div className="px-3.5 py-1.5 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-800 text-xs font-bold self-start sm:self-auto">
                     {checkedCount} of {checklist.length} Verified
@@ -1274,9 +1274,9 @@ export default function MaharashtraLocationClient({ faqs }: Props) {
                 <span className="text-xs font-mono font-bold tracking-widest uppercase text-[#C65378] block mb-1">
                   ASSET DIVERSIFICATION
                 </span>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   10. Property Succession: CHS Flats, 7/12 Land &amp; Demat
-                </h2>
+                </h3>
               </div>
 
               <div className="prose prose-slate max-w-none text-slate-700 text-sm sm:text-base leading-relaxed space-y-4">
@@ -1340,9 +1340,9 @@ export default function MaharashtraLocationClient({ faqs }: Props) {
                 <span className="text-xs font-mono font-bold tracking-widest uppercase text-[#C65378] block mb-1">
                   OFFICIAL TARIFF
                 </span>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   11. Registration Charges &amp; Zero Stamp Duty in Maharashtra
-                </h2>
+                </h3>
               </div>
 
               <div className="prose prose-slate max-w-none text-slate-700 text-sm sm:text-base leading-relaxed space-y-4">
@@ -1394,9 +1394,9 @@ export default function MaharashtraLocationClient({ faqs }: Props) {
                 <span className="text-xs font-mono font-bold tracking-widest uppercase text-[#C65378] block mb-1">
                   TRANSPARENT VALUE
                 </span>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   12. Transparent Pricing: Maharashtra Will Packages
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl mt-2">
                   Select the level of legal assistance best suited to your family&apos;s assets across Maharashtra:
                 </p>
@@ -1535,9 +1535,9 @@ export default function MaharashtraLocationClient({ faqs }: Props) {
                 <span className="text-xs font-mono font-bold tracking-widest uppercase text-[#C65378] block mb-1">
                   COMMON INQUIRIES
                 </span>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   Frequently Asked Questions: Maharashtra Wills
-                </h2>
+                </h3>
               </div>
 
               <div className="space-y-3">
@@ -1580,9 +1580,9 @@ export default function MaharashtraLocationClient({ faqs }: Props) {
                 <span className="text-xs font-mono font-bold tracking-widest uppercase text-[#C65378] block mb-1">
                   AUTHORITATIVE SOURCES
                 </span>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   13. Statutory Citations &amp; High Court Precedents
-                </h2>
+                </h3>
               </div>
 
               <div className="rounded-3xl bg-white border border-slate-200/90 p-6 md:p-8 shadow-xs space-y-4 text-xs sm:text-sm text-slate-700">

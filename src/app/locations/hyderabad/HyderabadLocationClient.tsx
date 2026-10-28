@@ -546,9 +546,9 @@ export default function HyderabadLocationClient({ faqs }: Props) {
                   <Scale className="w-4 h-4 text-[#C65378]" />
                   <span>STATUTORY PROVISIONS</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   1. Will Drafting &amp; Legal Framework in Hyderabad
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Estate distribution in Hyderabad is governed by the <strong>Indian Succession Act, 1925</strong>, the <strong>Registration Act, 1908</strong>, and the rules of the Telangana Registration and Stamps Department (IGRS Telangana).
                   Any adult of sound mind can write a Will to dispose of self-acquired real estate, bank deposits, mutual funds, company shares, and family heirlooms.
@@ -610,9 +610,9 @@ export default function HyderabadLocationClient({ faqs }: Props) {
                   <Stamp className="w-4 h-4 text-[#C65378]" />
                   <span>REGISTRATION ACT SECTION 18(E)</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   2. Is Will Registration Mandatory in Telangana?
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Under <strong>Section 18(e) of the Registration Act, 1908</strong>, registering a Will is optional across Hyderabad and the State of Telangana.
                   An unregistered Will executed on plain paper and signed before two witnesses is legally enforceable.
@@ -671,9 +671,9 @@ export default function HyderabadLocationClient({ faqs }: Props) {
                   <Scale className="w-4 h-4 text-[#C65378]" />
                   <span>SECTION 213 INDIAN SUCCESSION ACT</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   3. Hyderabad Probate Rules: Non-Presidency Town Law
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   One of the most frequent misconceptions among Hyderabad property owners is that court probate is compulsory.
                   Under <strong>Section 213(2) read with Section 57(a) and (b) of the Indian Succession Act, 1925</strong>, obtaining probate from a civil court is mandatory <em>only</em> if the Will is executed within the ordinary original civil jurisdiction of Mumbai, Kolkata, or Chennai, or concerns immovable property situated in those three historic presidency cities.
@@ -708,9 +708,9 @@ export default function HyderabadLocationClient({ faqs }: Props) {
                   <Building className="w-4 h-4 text-[#C65378]" />
                   <span>IGRS TELANGANA SRO NETWORK</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   4. Hyderabad Sub-Registrar Offices: SRO Directory
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   The Hyderabad metropolitan region spans three key revenue registration districts: <strong>Hyderabad District</strong>, <strong>Ranga Reddy District</strong>, and <strong>Medchal-Malkajgiri District</strong>.
                   Find your local Sub-Registrar Office, jurisdiction localities, and official working hours below:
@@ -769,9 +769,9 @@ export default function HyderabadLocationClient({ faqs }: Props) {
                   <MapPin className="w-4 h-4 text-[#C65378]" />
                   <span>LOCAL AREA COVERAGE &amp; SRO HUBS</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   5. Area-Wise Will Drafting Services Across Hyderabad Regions
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Looking for legally verified <strong>Will drafting services in Banjara Hills, HITEC City, Gachibowli, or Secunderabad</strong>? Properties across Greater Hyderabad range from luxury gated community villas in Kokapet and Tellapur to high-rise IT apartments in HITEC City, commercial prime plots in Banjara Hills, and cantonment residences in Secunderabad.
                   Our senior advocates provide comprehensive legal drafting, IGRS slot booking, and Sub-Registrar accompaniment across all key micro-markets:
@@ -1112,9 +1112,9 @@ export default function HyderabadLocationClient({ faqs }: Props) {
                   <FileCheck className="w-4 h-4 text-[#C65378]" />
                   <span>5-STEP EXECUTION PROTOCOL</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   6. Step-by-Step Will Registration in Hyderabad
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Registering a Will in Hyderabad is straightforward when backed by competent legal counsel.
                   Follow our verified five-step protocol to create an airtight Will and register it through the IGRS Telangana portal:
@@ -1209,9 +1209,9 @@ export default function HyderabadLocationClient({ faqs }: Props) {
                   <Home className="w-4 h-4 text-[#C65378]" />
                   <span>DOORSTEP REGISTRATION FOR SENIOR CITIZENS</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   7. Section 31 Doorstep Registration for Seniors
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Visiting a crowded government Sub-Registrar Office can be physically exhausting for senior citizens, bedridden elders, or medically infirm testators.
                   <strong>Section 31 of the Registration Act, 1908</strong> allows the Sub-Registrar to visit the testator&apos;s residence or hospital room to complete formal Will registration:
@@ -1258,9 +1258,9 @@ export default function HyderabadLocationClient({ faqs }: Props) {
                   <FileText className="w-4 h-4 text-[#C65378]" />
                   <span>REGISTRATION DOCUMENTATION</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   8. Documents Checklist for IGRS Sub-Registrar
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Keep these mandatory documents organized before visiting the Sub-Registrar Office in Hyderabad.
                   Use our interactive checklist below to track your preparation:
@@ -1318,9 +1318,9 @@ export default function HyderabadLocationClient({ faqs }: Props) {
                   <Building className="w-4 h-4 text-[#C65378]" />
                   <span>MUNICIPAL &amp; REVENUE CLASSIFICATIONS</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   9. Hyderabad Property Types: GHMC, HMDA &amp; Plots
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Succession procedures in Hyderabad differ depending on property ownership category.
                   Here is how a legally valid Will addresses specific asset classes:
@@ -1379,9 +1379,9 @@ export default function HyderabadLocationClient({ faqs }: Props) {
                   <Stamp className="w-4 h-4 text-[#C65378]" />
                   <span>IGRS TELANGANA FEE SCHEDULE</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   10. Official Telangana Government Fees &amp; Charges
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Many citizens mistakenly believe that registering a Will costs a percentage of property market value.
                   In reality, Wills are <strong>completely exempt from stamp duty</strong> across Telangana under the Indian Stamp Act, 1899.
@@ -1431,9 +1431,9 @@ export default function HyderabadLocationClient({ faqs }: Props) {
                   <Award className="w-4 h-4 text-[#C65378]" />
                   <span>TRANSPARENT LEGAL PACKAGES</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   11. Transparent Will Packages &amp; Legal Fees
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Select the estate planning package tailored to your family situation.
                   All packages include advocate review, customized Telugu estate clauses, and clear legal guidance:
@@ -1578,9 +1578,9 @@ export default function HyderabadLocationClient({ faqs }: Props) {
                   <HelpCircle className="w-4 h-4 text-[#C65378]" />
                   <span>COMMON QUERIES</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   12. Frequently Asked Questions: Hyderabad Wills
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Clear answers to key legal questions about Will drafting, SRO registration, and asset distribution in Hyderabad:
                 </p>
@@ -1623,9 +1623,9 @@ export default function HyderabadLocationClient({ faqs }: Props) {
                   <Landmark className="w-4 h-4 text-[#C65378]" />
                   <span>OFFICIAL PORTALS &amp; CITATIONS</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   13. Statutory References &amp; Telangana Legal Links
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Authoritative statutes and official Telangana state web portals governing Will drafting and succession:
                 </p>

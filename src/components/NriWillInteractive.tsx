@@ -209,9 +209,9 @@ export default function NriWillInteractive() {
             <Globe className="w-4 h-4" />
             <span>Country-Specific Execution &amp; Tax Rules</span>
           </div>
-          <h2 className="text-[1.85rem] sm:text-[2.4rem] lg:text-[2.85rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-4">
+          <h3 className="text-[1.85rem] sm:text-[2.4rem] lg:text-[2.85rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-4">
             NRI Will Rules by Country of Residence
-          </h2>
+          </h3>
           <p className="text-[0.98rem] sm:text-[1.06rem] leading-[1.65] text-[#49585F]">
             Select your country of residence to see how your local Will or Living Trust interacts with the <span className="font-semibold text-[#111827]">Indian Succession Act, 1925</span>, Hague Apostille rules, and Indian Consulate attestation:
           </p>
@@ -335,9 +335,9 @@ export default function NriWillInteractive() {
             <Clock className="w-4 h-4" />
             <span>Interactive NRI Assessment Tool</span>
           </div>
-          <h2 className="text-[1.75rem] sm:text-[2.25rem] font-medium leading-[1.14] tracking-[-0.02em] text-[#111827] mb-3">
+          <h3 className="text-[1.75rem] sm:text-[2.25rem] font-medium leading-[1.14] tracking-[-0.02em] text-[#111827] mb-3">
             Do You Need a Separate Indian Will? Check in 30 Seconds
-          </h2>
+          </h3>
           <p className="text-[0.95rem] sm:text-[1.02rem] leading-[1.6] text-[#49585F]">
             Select your overseas residence, your Indian asset profile, and your current estate setup to see your exact legal roadmap under Indian succession and FEMA laws:
           </p>

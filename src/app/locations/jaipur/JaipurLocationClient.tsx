@@ -547,9 +547,9 @@ export default function JaipurLocationClient({ faqs }: Props) {
                   <span>STATUTORY PROVISIONS</span>
                 </div>
                 {/* H2: 48 characters */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   1. Will Drafting &amp; Legal Framework in Jaipur City
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Estate planning in Jaipur is governed by two central statutes: the <strong>Indian Succession Act, 1925</strong> and the <strong>Registration Act, 1908</strong>.
                   Any adult of sound mind can write a Will to bequeath their self-acquired real estate, bank deposits, mutual funds, company equity, and jewelry.
@@ -612,9 +612,9 @@ export default function JaipurLocationClient({ faqs }: Props) {
                   <span>REGISTRATION STATUS</span>
                 </div>
                 {/* H2: 46 characters */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   2. Is Will Registration Mandatory in Rajasthan?
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Under Section 18(e) of the Registration Act, 1908, registering a Will is entirely <strong>optional</strong>.
                   An unregistered Will executed on plain white paper is 100% legally enforceable in Indian courts, provided it satisfies standard attestation rules.
@@ -674,9 +674,9 @@ export default function JaipurLocationClient({ faqs }: Props) {
                   <span>HIGH COURT PRECEDENTS</span>
                 </div>
                 {/* H2: 49 characters */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   3. Jaipur Probate Rules: Rajasthan High Court Law
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   One of the most frequent questions Jaipur homeowners ask is whether they must obtain court probate.
                   The legal answer is <strong>no</strong>.
@@ -730,9 +730,9 @@ export default function JaipurLocationClient({ faqs }: Props) {
                   <span>SRO JURISDICTION DIRECTORY</span>
                 </div>
                 {/* H2: 49 characters */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   4. Jaipur Sub-Registrar Offices: Circle Directory
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Jaipur is organized into major Sub-Registrar circles under the Inspector General of Registration and Stamps (IGRS Rajasthan).
                   Under Section 32 of the Registration Act, your Will can be registered at the Sub-Registrar Office where the testator resides, or where real estate assets are situated.
@@ -836,9 +836,9 @@ export default function JaipurLocationClient({ faqs }: Props) {
                   <span>LOCAL AREA COVERAGE &amp; SRO HUBS</span>
                 </div>
                 {/* H2: 51 characters */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   5. Area-Wise Will Drafting Services Across Jaipur Localities
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Looking for legally verified <strong>Will drafting services in Vaishali Nagar, Malviya Nagar, Mansarovar, or C-Scheme</strong>? Jaipur real estate ranges from JDA 99-year leasehold plots and luxury private bungalows to ancestral Havelis in the Pink City and RHB housing schemes.
                   Our senior advocates provide verified legal drafting, ePanjiyan portal booking, and Sub-Registrar accompaniment across all key Jaipur circles:
@@ -1288,9 +1288,9 @@ export default function JaipurLocationClient({ faqs }: Props) {
                   <span>STEP-BY-STEP PROCEDURE</span>
                 </div>
                 {/* H2: 47 characters */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   6. Step-by-Step Will Registration in Jaipur SOP
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Registering your Will before a Jaipur Sub-Registrar follows an organized protocol governed by the Inspector General of Registration and Stamps (IGRS Rajasthan).
                   Here is the verified 5-step SOP:
@@ -1378,9 +1378,9 @@ export default function JaipurLocationClient({ faqs }: Props) {
                   <span>DOORSTEP SRO REGISTRATION</span>
                 </div>
                 {/* H2: 47 characters */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   7. Section 31 Doorstep Registration for Seniors
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Many senior citizens in Jaipur find it physically difficult to navigate busy government complexes at Mini Secretariat Bani Park or Jhotwara.
                   Under <strong>Section 31 of the Registration Act, 1908</strong>, the Sub-Registrar has the legal authority to personally visit a person&apos;s residence, nursing facility, or hospital to complete registration.
@@ -1435,9 +1435,9 @@ export default function JaipurLocationClient({ faqs }: Props) {
                   <span>INTERACTIVE CHECKLIST</span>
                 </div>
                 {/* H2: 46 characters */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   8. Documents Checklist for Jaipur Sub-Registrar
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Assemble your paperwork before proceeding to the Sub-Registrar office.
                   You have completed <strong>{checkedCount} of {checklist.length}</strong> items:
@@ -1487,9 +1487,9 @@ export default function JaipurLocationClient({ faqs }: Props) {
                   <span>PROPERTY SUCCESSION RULES</span>
                 </div>
                 {/* H2: 47 characters */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   9. Jaipur Property Types: JDA Plots &amp; Ancestral
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Succession in Jaipur depends significantly on the origin of property title and development jurisdiction.
                   Here is how a Will affects different Jaipur real estate categories:
@@ -1543,9 +1543,9 @@ export default function JaipurLocationClient({ faqs }: Props) {
                   <span>OFFICIAL CHARGES</span>
                 </div>
                 {/* H2: 48 characters */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   10. Official Rajasthan Government Fees &amp; Charges
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Unlike property sale deeds that incur 5% to 7% stamp duty in Rajasthan, Wills are completely exempt from stamp duty under the Rajasthan Stamp Act, 1998.
                   Government fees for registering a Will in Jaipur are strictly nominal:
@@ -1595,9 +1595,9 @@ export default function JaipurLocationClient({ faqs }: Props) {
                   <span>PLANS &amp; PRICING</span>
                 </div>
                 {/* H2: 51 characters */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   11. Transparent Will Packages &amp; Legal Fees in Jaipur
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Choose the level of legal assistance that fits your family&apos;s estate planning needs in Jaipur:
                 </p>
@@ -1740,9 +1740,9 @@ export default function JaipurLocationClient({ faqs }: Props) {
                   <span>FREQUENTLY ASKED QUESTIONS</span>
                 </div>
                 {/* H2: 44 characters */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   12. Frequently Asked Questions: Jaipur Wills
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Clear answers to common questions about making and registering a Will in Jaipur:
                 </p>
@@ -1786,9 +1786,9 @@ export default function JaipurLocationClient({ faqs }: Props) {
                   <span>STATUTORY CITATIONS</span>
                 </div>
                 {/* H2: 51 characters */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   13. Statutory References &amp; Rajasthan Legal Portals
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Our drafting protocols strictly follow codified Indian succession statutes and official Rajasthan government registration channels:
                 </p>

@@ -562,9 +562,9 @@ export default function LudhianaLocationClient({ faqs }: Props) {
               <div className="inline-flex items-center gap-2 text-xs font-extrabold tracking-wider uppercase text-[#C65378] bg-rose-50 px-3 py-1 rounded-full border border-rose-100">
                 <span>Section 2</span>
               </div>
-              <h2 className="text-2xl sm:text-3xl font-extrabold text-[#172228] tracking-tight">
+              <h3 className="text-2xl sm:text-3xl font-extrabold text-[#172228] tracking-tight">
                 2. Punjab Legal Framework: Why Probate Is Optional
-              </h2>
+              </h3>
 
               <p className="text-base text-slate-700 leading-relaxed">
                 Many families in Ludhiana harbor the misconception that a Will cannot be enforced without an expensive and time-consuming court probate decree.
@@ -593,9 +593,9 @@ export default function LudhianaLocationClient({ faqs }: Props) {
               <div className="inline-flex items-center gap-2 text-xs font-extrabold tracking-wider uppercase text-[#C65378] bg-rose-50 px-3 py-1 rounded-full border border-rose-100">
                 <span>Section 3</span>
               </div>
-              <h2 className="text-2xl sm:text-3xl font-extrabold text-[#172228] tracking-tight">
+              <h3 className="text-2xl sm:text-3xl font-extrabold text-[#172228] tracking-tight">
                 3. Registered vs Unregistered Wills: GLADA &amp; Land Mutation
-              </h2>
+              </h3>
 
               <p className="text-base text-slate-700 leading-relaxed">
                 Under Section 18(e) of the Registration Act, 1908, Will registration is optional.
@@ -674,9 +674,9 @@ export default function LudhianaLocationClient({ faqs }: Props) {
               <div className="inline-flex items-center gap-2 text-xs font-extrabold tracking-wider uppercase text-[#C65378] bg-rose-50 px-3 py-1 rounded-full border border-rose-100">
                 <span>Section 4</span>
               </div>
-              <h2 className="text-2xl sm:text-3xl font-extrabold text-[#172228] tracking-tight">
+              <h3 className="text-2xl sm:text-3xl font-extrabold text-[#172228] tracking-tight">
                 4. Succession Planning for Focal Point &amp; Industrial Units
-              </h2>
+              </h3>
 
               <p className="text-base text-slate-700 leading-relaxed">
                 Ludhiana produces roughly 90% of India&apos;s winter knitwear, over 70% of bicycles and bicycle parts, and massive quantities of precision engineering tools.
@@ -713,9 +713,9 @@ export default function LudhianaLocationClient({ faqs }: Props) {
               <div className="inline-flex items-center gap-2 text-xs font-extrabold tracking-wider uppercase text-[#C65378] bg-rose-50 px-3 py-1 rounded-full border border-rose-100">
                 <span>Section 5</span>
               </div>
-              <h2 className="text-2xl sm:text-3xl font-extrabold text-[#172228] tracking-tight">
+              <h3 className="text-2xl sm:text-3xl font-extrabold text-[#172228] tracking-tight">
                 5. Protecting NRI Ancestral Agricultural Farmland
-              </h2>
+              </h3>
 
               <p className="text-base text-slate-700 leading-relaxed">
                 For the diaspora settled in Surrey, Brampton, Southall, Birmingham, or Melbourne, their strongest emotional and financial roots remain ancestral land in Punjab.
@@ -749,9 +749,9 @@ export default function LudhianaLocationClient({ faqs }: Props) {
               <div className="inline-flex items-center gap-2 text-xs font-extrabold tracking-wider uppercase text-[#C65378] bg-rose-50 px-3 py-1 rounded-full border border-rose-100">
                 <span>Section 6</span>
               </div>
-              <h2 className="text-2xl sm:text-3xl font-extrabold text-[#172228] tracking-tight">
+              <h3 className="text-2xl sm:text-3xl font-extrabold text-[#172228] tracking-tight">
                 6. Ludhiana Sub-Registrar Offices: Locations &amp; Contacts
-              </h2>
+              </h3>
 
               <p className="text-base text-slate-700 leading-relaxed">
                 Will registration in Punjab is administered by the Department of Revenue, Rehabilitation and Disaster Management via the <strong>National Generic Document Registration System (NGDRS Punjab)</strong>.
@@ -869,9 +869,9 @@ export default function LudhianaLocationClient({ faqs }: Props) {
                   <MapPin className="w-4 h-4 text-[#C65378]" />
                   <span>LOCAL AREA COVERAGE &amp; HUBS</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-[#172228] tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-[#172228] tracking-tight">
                   7. Local Neighborhood Coverage Across Ludhiana District
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Looking for legally verified <strong>Will drafting services in Sarabha Nagar, Model Town, BRS Nagar, Focal Point, or Sahnewal</strong>? Properties across Ludhiana district range from established heritage kothis and GLADA planned plots to high-output industrial manufacturing complexes in Focal Point and sprawling NRI ancestral farmland in Malwa tehsils.
                   Our senior advocates provide verified legal drafting, NGDRS Punjab slot booking, and Sub-Registrar accompaniment across all key residential and industrial clusters:
@@ -1204,9 +1204,9 @@ export default function LudhianaLocationClient({ faqs }: Props) {
               <div className="inline-flex items-center gap-2 text-xs font-extrabold tracking-wider uppercase text-[#C65378] bg-rose-50 px-3 py-1 rounded-full border border-rose-100">
                 <span>Section 8</span>
               </div>
-              <h2 className="text-2xl sm:text-3xl font-extrabold text-[#172228] tracking-tight">
+              <h3 className="text-2xl sm:text-3xl font-extrabold text-[#172228] tracking-tight">
                 8. Step-by-Step SOP: Drafting to NGDRS Registration
-              </h2>
+              </h3>
 
               <p className="text-base text-slate-700 leading-relaxed">
                 Follow our streamlined standard operating procedure (SOP) to draft and officially register your Will in Ludhiana without procedural hassle:
@@ -1263,9 +1263,9 @@ export default function LudhianaLocationClient({ faqs }: Props) {
               <div className="inline-flex items-center gap-2 text-xs font-extrabold tracking-wider uppercase text-[#C65378] bg-rose-50 px-3 py-1 rounded-full border border-rose-100">
                 <span>Section 9</span>
               </div>
-              <h2 className="text-2xl sm:text-3xl font-extrabold text-[#172228] tracking-tight">
+              <h3 className="text-2xl sm:text-3xl font-extrabold text-[#172228] tracking-tight">
                 9. Section 31 Doorstep Home Registration in Ludhiana
-              </h2>
+              </h3>
 
               <p className="text-base text-slate-700 leading-relaxed">
                 For many elderly, bedridden, or medically unwell residents in Model Town, Sarabha Nagar, or Civil Lines, traveling to the bustling Mini Secretariat is a painful physical ordeal.
@@ -1302,9 +1302,9 @@ export default function LudhianaLocationClient({ faqs }: Props) {
               <div className="inline-flex items-center gap-2 text-xs font-extrabold tracking-wider uppercase text-[#C65378] bg-rose-50 px-3 py-1 rounded-full border border-rose-100">
                 <span>Section 10</span>
               </div>
-              <h2 className="text-2xl sm:text-3xl font-extrabold text-[#172228] tracking-tight">
+              <h3 className="text-2xl sm:text-3xl font-extrabold text-[#172228] tracking-tight">
                 10. Document Checklist for Ludhiana Will Registration
-              </h2>
+              </h3>
 
               <p className="text-base text-slate-700 leading-relaxed">
                 Use our interactive readiness checklist before heading to the Sub-Registrar office or booking your NGDRS slot:
@@ -1367,9 +1367,9 @@ export default function LudhianaLocationClient({ faqs }: Props) {
               <div className="inline-flex items-center gap-2 text-xs font-extrabold tracking-wider uppercase text-[#C65378] bg-rose-50 px-3 py-1 rounded-full border border-rose-100">
                 <span>Section 11</span>
               </div>
-              <h2 className="text-2xl sm:text-3xl font-extrabold text-[#172228] tracking-tight">
+              <h3 className="text-2xl sm:text-3xl font-extrabold text-[#172228] tracking-tight">
                 11. NGDRS Punjab Portal Fees &amp; Official Stamp Exemption
-              </h2>
+              </h3>
 
               <p className="text-base text-slate-700 leading-relaxed">
                 A common reason residents hesitate to make a Will is the fear of paying high stamp duty equivalent to property sale deeds.
@@ -1408,9 +1408,9 @@ export default function LudhianaLocationClient({ faqs }: Props) {
               <div className="inline-flex items-center gap-2 text-xs font-extrabold tracking-wider uppercase text-[#C65378] bg-rose-50 px-3 py-1 rounded-full border border-rose-100">
                 <span>Section 12</span>
               </div>
-              <h2 className="text-2xl sm:text-3xl font-extrabold text-[#172228] tracking-tight">
+              <h3 className="text-2xl sm:text-3xl font-extrabold text-[#172228] tracking-tight">
                 12. Transparent Pricing Plans for Ludhiana Residents
-              </h2>
+              </h3>
 
               <p className="text-base text-slate-700 leading-relaxed">
                 Choose the service package that aligns with your estate complexity, whether you require a straightforward personal Will or comprehensive industrial succession planning:
@@ -1558,9 +1558,9 @@ export default function LudhianaLocationClient({ faqs }: Props) {
               <div className="inline-flex items-center gap-2 text-xs font-extrabold tracking-wider uppercase text-[#C65378] bg-rose-50 px-3 py-1 rounded-full border border-rose-100">
                 <span>Section 13</span>
               </div>
-              <h2 className="text-2xl sm:text-3xl font-extrabold text-[#172228] tracking-tight">
+              <h3 className="text-2xl sm:text-3xl font-extrabold text-[#172228] tracking-tight">
                 13. Frequently Asked Questions on Ludhiana Wills
-              </h2>
+              </h3>
 
               <p className="text-base text-slate-700 leading-relaxed">
                 Find answers to common legal and procedural questions regarding drafting and registering a Will in Ludhiana and Punjab:
@@ -1601,9 +1601,9 @@ export default function LudhianaLocationClient({ faqs }: Props) {
               <div className="inline-flex items-center gap-2 text-xs font-extrabold tracking-wider uppercase text-[#C65378] bg-rose-50 px-3 py-1 rounded-full border border-rose-100">
                 <span>Section 14</span>
               </div>
-              <h2 className="text-2xl sm:text-3xl font-extrabold text-[#172228] tracking-tight">
+              <h3 className="text-2xl sm:text-3xl font-extrabold text-[#172228] tracking-tight">
                 14. Statutory Citations: Succession &amp; Registration Laws
-              </h2>
+              </h3>
 
               <p className="text-base text-slate-700 leading-relaxed">
                 All Will drafting, witnessing, and registration protocols executed by WillDrafting in Ludhiana strictly comply with Indian statutory legislation and Punjab revenue directions:

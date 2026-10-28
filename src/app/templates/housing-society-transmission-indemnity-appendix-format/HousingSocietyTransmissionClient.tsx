@@ -446,9 +446,9 @@ export default function HousingSocietyTransmissionClient() {
                 <Gavel className="w-4 h-4" />
                 <span>LANDMARK SUPREME COURT DOCTRINE</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 2. Nominee vs Legal Heir Rights: The Supreme Court Rule
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 One of the most persistent misconceptions in Indian real estate is that a nominee named in housing society records
                 becomes the absolute owner of the flat upon the member's death. This misconception leads to bitter family disputes and
@@ -483,9 +483,9 @@ export default function HousingSocietyTransmissionClient() {
                 <Calculator className="w-4 h-4" />
                 <span>INTERACTIVE COMPLIANCE TOOL</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 3. CHS Transmission Route &amp; Legal Fee Calculator
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Select your family situation below to identify the exact statutory route, required appendices, and audit whether your
                 society is charging illegal transfer fees:
@@ -679,9 +679,9 @@ export default function HousingSocietyTransmissionClient() {
                 <FileText className="w-4 h-4" />
                 <span>EDITABLE TEMPLATE 1</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 4. Appendix 15: Form of Application by Nominee Member
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Use this statutory application format under <strong>Model Bye-Law 34</strong> if the deceased member previously submitted
                 a valid nomination in your name. Fill in the bracketed placeholders and submit it to the Society Secretary along with
@@ -803,9 +803,9 @@ Place: [City/Place]`}
                 <FileText className="w-4 h-4" />
                 <span>EDITABLE TEMPLATE 2</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 5. Appendix 16: Application by Legal Heirs (No Nominee)
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Use this statutory application format under <strong>Model Bye-Law 35</strong> when the deceased member did NOT make
                 any nomination during their lifetime, or when the nominee has died. Surviving legal heirs can apply jointly, or one heir
@@ -933,9 +933,9 @@ Place: [City/Place]`}
                 <Globe className="w-4 h-4" />
                 <span>EDITABLE TEMPLATE 3</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 6. Appendix 17: Public Notice Format for Newspapers
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Under Model Bye-Law 35, when transmission is processed without a nomination or probate, the housing society must publish
                 this statutory 14-day public notice in two local newspapers (one in English and one in Marathi/regional language) at
@@ -1031,9 +1031,9 @@ Place: [City/Place]`}
                 <ShieldCheck className="w-4 h-4" />
                 <span>EDITABLE TEMPLATE 4</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 7. Appendix 19: Indemnity Bond Format on Stamp Paper
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Under Model Bye-Law 35, the applicant legal heir or nominee must execute an Indemnity Bond in <strong>Appendix 19</strong>.
                 This must be printed on Non-Judicial Stamp Paper of <strong>₹200 or ₹500</strong> (as per Article 34 of the Maharashtra Stamp Act),
@@ -1159,9 +1159,9 @@ NOTARIZED BEFORE ME`}
                 <Layers className="w-4 h-4" />
                 <span>COMPARATIVE STATUTORY ANALYSIS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 8. Comparison Table: Transmission Paths &amp; Documents
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Housing societies across Maharashtra follow different procedural standards depending on whether a nomination, Will,
                 or family consensus exists. The table below outlines the statutory requirements for each path:
@@ -1224,9 +1224,9 @@ NOTARIZED BEFORE ME`}
                 <ShieldAlert className="w-4 h-4" />
                 <span>LEGAL DEFENSE &amp; CONSUMER PROTECTION</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 9. Society Transfer Charges: Defeating Illegal Demands
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Managing committees often exploit grieving families by claiming that "society bye-laws require a ₹50,000 donation"
                 or "₹1,00,000 building development fund" to process a flat transmission. These demands are completely illegal under Maharashtra law.
@@ -1341,9 +1341,9 @@ Date: [Date]`,
                 <Clock className="w-4 h-4" />
                 <span>CHRONOLOGICAL EXECUTION PROTOCOL</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 10. Step-by-Step SOP: Transmission Approval Timeline
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Follow this 5-stage standard operating procedure to secure flat transmission within the statutory 90-day window
                 mandated by Section 154B-13:
@@ -1438,9 +1438,9 @@ Date: [Date]`,
                 <Award className="w-4 h-4" />
                 <span>GROUND VALIDATION &amp; PRECEDENTS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 11. Real Case Studies: Mumbai, Pune &amp; Thane CHS
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Real-world examples of how Indian families navigated society transmission challenges:
               </p>
@@ -1507,9 +1507,9 @@ Date: [Date]`,
                 <Award className="w-4 h-4" />
                 <span>INSTITUTIONAL EXPERTISE</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 12. Professional Legal Backing &amp; Advocate Profile
-              </h2>
+              </h3>
               <div className="bg-white rounded-3xl border border-slate-200/90 p-6 sm:p-7 shadow-xs space-y-4">
                 <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
                   <div className="w-16 h-16 rounded-full bg-rose-100 text-[#C65378] font-black text-xl flex items-center justify-center shrink-0">
@@ -1552,9 +1552,9 @@ Date: [Date]`,
                 <HelpCircle className="w-4 h-4" />
                 <span>FREQUENTLY ASKED QUESTIONS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 13. Frequently Asked Questions: CHS Flat Transmission
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Plain-English answers to common questions about housing society flat transfer after death in Maharashtra:
               </p>
@@ -1597,9 +1597,9 @@ Date: [Date]`,
                 <Landmark className="w-4 h-4" />
                 <span>PRIMARY LEGAL SOURCES</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 14. Statutory Citations &amp; Official Cooperative Portals
-              </h2>
+              </h3>
               <div className="bg-white rounded-2xl border border-slate-200/90 p-5 space-y-4 text-xs text-slate-700 shadow-xs">
                 <div>
                   <div className="font-extrabold text-slate-900 mb-1">
@@ -1635,7 +1635,7 @@ Date: [Date]`,
                     <ExternalLink className="w-3 h-3" />
                   </a>
                   <a
-                    href="https://indiacode.nic.in"
+                    href="https://www.indiacode.nic.in/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-slate-100 text-slate-800 hover:bg-slate-200 font-semibold"

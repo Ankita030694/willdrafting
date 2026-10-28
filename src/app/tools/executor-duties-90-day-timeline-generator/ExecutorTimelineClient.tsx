@@ -773,9 +773,9 @@ DEPONENT (EXECUTOR)`;
                 <Sparkles className="w-4 h-4" />
                 <span>INTERACTIVE 90-DAY &amp; 180-DAY ROADMAP ENGINE</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 2. Interactive 90-Day Executor Timeline Generator
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Select the date of death, city jurisdiction, asset classes, and family harmony status.
                 Our engine automatically calculates your precise calendar milestones, statutory court
@@ -1184,9 +1184,9 @@ DEPONENT (EXECUTOR)`;
                 <Clock className="w-4 h-4" />
                 <span>PHASE 1: DAYS 1 TO 14</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 3. First 14 Days: Immediate Duties &amp; Funeral Priority
-              </h2>
+              </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   The first 14 days after the testator&rsquo;s demise are critical for preventing asset loss
@@ -1222,9 +1222,9 @@ DEPONENT (EXECUTOR)`;
                 <Landmark className="w-4 h-4" />
                 <span>PHASE 2: DAYS 15 TO 45</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 4. Days 15 to 45: Asset Freezing &amp; Debt Hierarchy
-              </h2>
+              </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   Once death certificates are issued by the Municipal Corporation, the executor must formally
@@ -1267,9 +1267,9 @@ DEPONENT (EXECUTOR)`;
                 <Scale className="w-4 h-4" />
                 <span>PHASE 3: DAYS 46 TO 90</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 5. Days 46 to 90: Probate Filings &amp; Tax Compliance
-              </h2>
+              </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   Between day 46 and day 90, the executor must resolve legal court filings and income tax
@@ -1311,9 +1311,9 @@ DEPONENT (EXECUTOR)`;
                 <Gavel className="w-4 h-4" />
                 <span>STATUTORY TIME LIMITS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 6. Section 317 Statutory Deadlines: 6 &amp; 12 Month SOP
-              </h2>
+              </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   Section 317(1) of the Indian Succession Act imposes two strict statutory deadlines on an
@@ -1354,9 +1354,9 @@ DEPONENT (EXECUTOR)`;
                 <Scale className="w-4 h-4" />
                 <span>JURISDICTIONAL COMPARISON</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 7. Presidency Towns vs Non-Presidency Executor Rules
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Whether you need to file a formal High Court probate petition depends strictly on geographic
                 jurisdiction under Sections 57 and 213 of the Indian Succession Act:
@@ -1414,9 +1414,9 @@ DEPONENT (EXECUTOR)`;
                 <AlertTriangle className="w-4 h-4" />
                 <span>FIDUCIARY RISK MANAGEMENT</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 8. Section 369 Devastavit: Personal Liability Risks
-              </h2>
+              </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   Section 369 of the Indian Succession Act codifies the doctrine of <em>devastavit</em> (waste
@@ -1444,9 +1444,9 @@ DEPONENT (EXECUTOR)`;
                 <FileText className="w-4 h-4" />
                 <span>PROCEDURAL PROTOCOL</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 9. Step-by-Step SOP: Settling Bank &amp; Demat Accounts
-              </h2>
+              </h3>
               <div className="space-y-4">
                 {[
                   {
@@ -1492,9 +1492,9 @@ DEPONENT (EXECUTOR)`;
                 <TrendingUp className="w-4 h-4" />
                 <span>REAL-WORLD CASE STUDIES</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 10. Practical Case Studies: Delhi, Mumbai &amp; Bengaluru
-              </h2>
+              </h3>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 {/* Case 1: Mumbai High Court Probate */}
@@ -1567,9 +1567,9 @@ DEPONENT (EXECUTOR)`;
                 <FileCheck className="w-4 h-4" />
                 <span>COPY-PASTEABLE STATUTORY TEMPLATES</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 11. Copy-Paste Legal Notices &amp; Executor Assent Deed
-              </h2>
+              </h3>
 
               {/* Template Box 1: Section 360 Notice */}
               <div className="rounded-2xl border border-slate-200/90 bg-white p-5 space-y-3 shadow-xs">
@@ -1665,9 +1665,9 @@ DEPONENT (EXECUTOR)`;
                 <Award className="w-4 h-4" />
                 <span>LEGAL EXPERTISE &amp; PRACTICE</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 12. Institutional Profile: Legal Excellence &amp; Trust
-              </h2>
+              </h3>
               <div className="bg-white rounded-2xl border border-slate-200/90 p-6 sm:p-8 shadow-xs space-y-5">
                 <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-5 border-b border-slate-100">
                   <div className="space-y-1">
@@ -1726,9 +1726,9 @@ DEPONENT (EXECUTOR)`;
                 <HelpCircle className="w-4 h-4" />
                 <span>DIRECT ANSWERS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 13. Frequently Asked Questions: Executor Duties India
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Plain-English answers to crucial questions about executor rights, probate rules, debt priority,
                 and legal protections under Indian law:
@@ -1772,9 +1772,9 @@ DEPONENT (EXECUTOR)`;
                 <Landmark className="w-4 h-4" />
                 <span>PRIMARY LEGAL SOURCES</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 14. Statutory Citations &amp; Official Testamentary Links
-              </h2>
+              </h3>
               <div className="bg-white rounded-2xl border border-slate-200/90 p-5 space-y-4 text-xs text-slate-700 shadow-xs">
                 <div>
                   <div className="font-extrabold text-slate-900 mb-1">

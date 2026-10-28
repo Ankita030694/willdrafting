@@ -45,7 +45,7 @@ export const metadata: Metadata = {
         url: "https://www.willdrafting.in/images/attesting-witness-affidavit-probate-format-og.jpg",
         width: 1200,
         height: 675,
-        alt: "Affidavit of Attesting Witness for Probate of Will Format Indian Succession Act Legal Template",
+        alt: "Affidavit of Attesting Witness for Probate of Will Format in India Legal Template",
       },
     ],
   },

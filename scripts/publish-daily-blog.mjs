@@ -54,6 +54,69 @@ function getIstDateString() {
   return formatter.format(new Date());
 }
 
+function parseStrictYmd(year, month, day) {
+  if (
+    !Number.isInteger(year) ||
+    !Number.isInteger(month) ||
+    !Number.isInteger(day) ||
+    year < 1900 ||
+    year > 2100 ||
+    month < 1 ||
+    month > 12 ||
+    day < 1 ||
+    day > 31
+  ) {
+    return null;
+  }
+  const d = new Date(Date.UTC(year, month - 1, day, 0, 0, 0, 0));
+  if (
+    isNaN(d.getTime()) ||
+    d.getUTCFullYear() !== year ||
+    d.getUTCMonth() + 1 !== month ||
+    d.getUTCDate() !== day
+  ) {
+    return null;
+  }
+  return d;
+}
+
+function normalizeIsoDate(rawDate) {
+  if (typeof rawDate === "string") {
+    const trimmed = rawDate.trim();
+    const dmyOrMdy = trimmed.match(/^(\d{1,2})[-/.](\d{1,2})[-/.](\d{4})$/);
+    if (dmyOrMdy) {
+      const p1 = Number(dmyOrMdy[1]);
+      const p2 = Number(dmyOrMdy[2]);
+      const year = Number(dmyOrMdy[3]);
+      const dmyDate = parseStrictYmd(year, p2, p1);
+      if (dmyDate) return dmyDate.toISOString().split("T")[0];
+      const mdyDate = parseStrictYmd(year, p1, p2);
+      if (mdyDate) return mdyDate.toISOString().split("T")[0];
+      return getIstDateString();
+    }
+    const ymdOrYdm = trimmed.match(/^(\d{4})[-/.](\d{1,2})[-/.](\d{1,2})$/);
+    if (ymdOrYdm) {
+      const year = Number(ymdOrYdm[1]);
+      const p1 = Number(ymdOrYdm[2]);
+      const p2 = Number(ymdOrYdm[3]);
+      const ymdDate = parseStrictYmd(year, p1, p2);
+      if (ymdDate) return ymdDate.toISOString().split("T")[0];
+      const ydmDate = parseStrictYmd(year, p2, p1);
+      if (ydmDate) return ydmDate.toISOString().split("T")[0];
+      return getIstDateString();
+    }
+    const parsed = new Date(trimmed);
+    if (!isNaN(parsed.getTime())) {
+      try {
+        return parsed.toISOString().split("T")[0];
+      } catch {
+        // Fall through to IST date
+      }
+    }
+  }
+  return getIstDateString();
+}
+
 function stripEmDashes(str) {
   if (typeof str !== "string") return str;
   return str
@@ -328,6 +391,10 @@ async function run() {
       // Ensure no inner <h1> tags exist inside content body
       content = content.replace(/<h1(\s[^>]*)?>/gi, "<h2$1>").replace(/<\/h1>/gi, "</h2>");
       content = content.replace(/<div\s+data-infographic-slot=["']1["']\s*><\/div>\s*/gi, "").trim();
+      content = content.replace(
+        /https?:\/\/(?:www\.)?indiacode\.nic\.in\/(?:handle\/[^\s"'<>]+|bitstream\/[^\s"'<>]+|show-data[^\s"'<>]*|\?[^\s"'<>]+)/gi,
+        "https://legislative.gov.in/"
+      );
 
       // Validate Screaming Frog rules
       const errors = [];
@@ -397,7 +464,7 @@ async function run() {
                 review: reviewText,
                 comment: reviewText,
                 ...(location ? { location } : {}),
-                date: String(r.date || getIstDateString()).trim(),
+                date: normalizeIsoDate(r.date),
               };
             })
             .filter((r) => r.name && r.review)
@@ -431,7 +498,12 @@ async function run() {
         ? rawPayload.references
             .map((ref) => ({
               title: stripEmDashes(String(ref?.title || "").trim()),
-              url: String(ref?.url || "").trim(),
+              url: String(ref?.url || "")
+                .trim()
+                .replace(
+                  /^https?:\/\/(?:www\.)?indiacode\.nic\.in\/(?:handle\/.*|bitstream\/.*|show-data.*|\?.*)$/i,
+                  "https://legislative.gov.in/"
+                ),
             }))
             .filter((ref) => ref.title)
         : [];
@@ -468,7 +540,7 @@ async function run() {
             });
 
       const now = new Date();
-      const istDate = rawPayload.date || getIstDateString();
+      const istDate = normalizeIsoDate(rawPayload.date);
 
       const blogDoc = {
         title,

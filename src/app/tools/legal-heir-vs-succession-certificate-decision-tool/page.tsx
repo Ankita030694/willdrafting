@@ -48,7 +48,7 @@ export const metadata: Metadata = {
         url: "https://www.willdrafting.in/images/legal-heir-vs-succession-certificate-decision-tool-og.jpg",
         width: 1200,
         height: 675,
-        alt: "Legal Heir vs Succession Certificate Decision Tool India and Post-Death Asset Transmission Guide",
+        alt: "Legal Heir vs Succession Certificate Decision Tool India - Asset Transmission Guide",
       },
     ],
   },

@@ -134,6 +134,9 @@ export default function LocationsClient({ initialLocations }: LocationsClientPro
 
       {/* Main Content Area */}
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-20">
+        <h2 className="text-lg sm:text-xl font-semibold text-[#172228] mb-4">
+          Browse State &amp; City Will Drafting Guides Across India
+        </h2>
         {/* Category Filter Pills & Results Counter Bar */}
         <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4 pb-6 mb-8 border-b border-[#172228]/10">
           {/* Filter Tabs */}
@@ -173,9 +176,9 @@ export default function LocationsClient({ initialLocations }: LocationsClientPro
             <div className="w-16 h-16 mx-auto mb-4 rounded-2xl bg-[#FAF7F0] flex items-center justify-center text-[#55636D]">
               <FolderArchive className="w-8 h-8 text-[#55636D]" />
             </div>
-            <h2 className="text-xl font-bold text-[#172228] mb-2">
+            <h3 className="text-xl font-bold text-[#172228] mb-2">
               No matching locations found
-            </h2>
+            </h3>
             <p className="text-sm text-[#49585F] mb-6 leading-relaxed">
               We couldn&apos;t find any location matching &quot;{searchQuery}&quot; in{" "}
               {activeFilter === "All" ? "all locations" : activeFilter}. Try a
@@ -217,9 +220,9 @@ export default function LocationsClient({ initialLocations }: LocationsClientPro
                     </div>
 
                     {/* Location Title */}
-                    <h2 className="text-[15px] font-semibold text-[#172228] group-hover:text-[#C65378] transition-colors leading-snug line-clamp-3 mb-2">
+                    <h3 className="text-[15px] font-semibold text-[#172228] group-hover:text-[#C65378] transition-colors leading-snug line-clamp-3 mb-2">
                       {loc.title}
-                    </h2>
+                    </h3>
                   </div>
 
                   {/* Card Bottom Meta matching screenshot */}

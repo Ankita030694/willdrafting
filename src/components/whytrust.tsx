@@ -39,10 +39,10 @@ export default function WhyTrust() {
               ========================================================================= */}
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-center pb-7 sm:pb-8 mb-7 sm:mb-8 border-b border-[#172228]/10">
             <div className="lg:col-span-7 text-left">
-              <h2 className="text-[1.65rem] sm:text-[2.25rem] lg:text-[2.5rem] font-medium text-[#172228] leading-[1.14] tracking-tight mb-3">
+              <h3 className="text-[1.65rem] sm:text-[2.25rem] lg:text-[2.5rem] font-medium text-[#172228] leading-[1.14] tracking-tight mb-3">
                 It&apos;s Not About What You Leave Behind. <br />
                 It&apos;s About Who You Leave It For.
-              </h2>
+              </h3>
               <p className="text-[0.85rem] sm:text-[0.92rem] text-[#49585F] leading-[1.6] max-w-2xl mb-4 font-sans">
                 You&apos;ve spent years building your home, savings, investments, business, and everything that matters to you. A Will puts your wishes in writing, helps protect your assets, and gives your family clarity about your future plans.
               </p>

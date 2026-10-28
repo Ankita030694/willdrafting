@@ -663,9 +663,9 @@ NOW THIS WILL WITNESSETH that upon my demise, my undivided notional coparcenary 
                 <Sparkles className="w-4 h-4" />
                 <span>INTERACTIVE PARTITION CALCULATOR</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 2. Interactive HUF Coparcenary &amp; Partition Calculator
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Enter your ancestral estate valuation and family coparcenary composition below to
                 compute statutory Stage 1 notional partition shares and compare Section 30 Will
@@ -1218,9 +1218,9 @@ NOW THIS WILL WITNESSETH that upon my demise, my undivided notional coparcenary 
                 <Gavel className="w-4 h-4" />
                 <span>STATUTORY MECHANISM</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 3. Section 6 Notional Partition: The 2-Stage Formula
-              </h2>
+              </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   When an HUF coparcener passes away, the law does not immediately dissolve the family.
@@ -1256,9 +1256,9 @@ NOW THIS WILL WITNESSETH that upon my demise, my undivided notional coparcenary 
                 <Scale className="w-4 h-4" />
                 <span>LANDMARK PRECEDENT</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 4. Daughter Coparcenary Rights: Vineeta Sharma Precedent
-              </h2>
+              </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   Prior to 2005, daughters were excluded from Mitakshara coparcenary property. The Hindu
@@ -1318,9 +1318,9 @@ NOW THIS WILL WITNESSETH that upon my demise, my undivided notional coparcenary 
                 <FileText className="w-4 h-4" />
                 <span>TESTAMENTARY PLANNING</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 5. Section 30 Wills: Bequeathing Undivided HUF Shares
-              </h2>
+              </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   A widespread myth across India suggests that HUF ancestral property cannot be willed away.
@@ -1342,9 +1342,9 @@ NOW THIS WILL WITNESSETH that upon my demise, my undivided notional coparcenary 
                 <Scale className="w-4 h-4" />
                 <span>LEGAL DISTINCTION</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 6. Comparison: HUF Ancestral vs Self-Acquired Property
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Before drafting your Will, it is essential to distinguish between HUF coparcenary assets,
                 self-acquired assets, and a woman&apos;s Stridhan.
@@ -1425,9 +1425,9 @@ NOW THIS WILL WITNESSETH that upon my demise, my undivided notional coparcenary 
                   </div>
                   <span className="text-[11px] font-semibold text-slate-500">Hindu Succession Act 1956</span>
                 </div>
-                <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                   7. Visual Flowchart: Step-by-Step HUF Partition Blueprint
-                </h2>
+                </h3>
                 <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                   The statutory visual blueprint below illustrates the two-stage partition mechanism,
                   highlighting the critical divide between executing a Section 30 Will versus dying
@@ -1452,9 +1452,9 @@ NOW THIS WILL WITNESSETH that upon my demise, my undivided notional coparcenary 
                 <Building2 className="w-4 h-4" />
                 <span>DISPUTE RESOLUTION</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 8. How to Avoid Family Disputes: Registered Partition Deeds
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Civil partition lawsuits in India often take 15 to 30 years to reach final decree.
                 Families can avoid bitter court litigation through two primary mechanisms:
@@ -1495,9 +1495,9 @@ NOW THIS WILL WITNESSETH that upon my demise, my undivided notional coparcenary 
                 <Layers className="w-4 h-4" />
                 <span>PRACTICAL CASE STUDIES</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 9. Practical Case Studies: Delhi, Jaipur &amp; Mumbai HUFs
-              </h2>
+              </h3>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                 {/* Case Study 1 */}
@@ -1566,9 +1566,9 @@ NOW THIS WILL WITNESSETH that upon my demise, my undivided notional coparcenary 
                 <FileCheck className="w-4 h-4" />
                 <span>COPY-PASTEABLE LEGAL ASSETS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 10. Copy-Paste Legal Clause: Section 30 Will Bequest Format
-              </h2>
+              </h3>
 
               {/* Template Box 1: Section 30 Will Clause */}
               <div className="rounded-2xl border border-slate-200/90 bg-white p-5 space-y-3 shadow-xs">
@@ -1656,9 +1656,9 @@ NOW THIS WILL WITNESSETH that upon my demise, my undivided notional coparcenary 
                 <Award className="w-4 h-4" />
                 <span>LEGAL EXPERTISE &amp; PRACTICE</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 11. Institutional Profile: Legal Excellence &amp; Trust Signals
-              </h2>
+              </h3>
               <div className="bg-white rounded-2xl border border-slate-200/90 p-6 sm:p-8 shadow-xs space-y-5">
                 <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-5 border-b border-slate-100">
                   <div className="space-y-1">
@@ -1717,9 +1717,9 @@ NOW THIS WILL WITNESSETH that upon my demise, my undivided notional coparcenary 
                 <HelpCircle className="w-4 h-4" />
                 <span>DIRECT ANSWERS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 12. Frequently Asked Questions: HUF Property Partition
-              </h2>
+              </h3>
               <div className="space-y-3 pt-2">
                 {FAQS.map((faq, idx) => (
                   <div
@@ -1755,9 +1755,9 @@ NOW THIS WILL WITNESSETH that upon my demise, my undivided notional coparcenary 
                 <Landmark className="w-4 h-4" />
                 <span>AUTHORITATIVE CITATIONS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 13. Statutory Authorities &amp; Landmark Judicial Precedents
-              </h2>
+              </h3>
               <div className="bg-white rounded-2xl border border-slate-200/90 p-5 sm:p-6 shadow-xs space-y-4 text-xs">
                 <div className="space-y-2">
                   <div className="font-extrabold text-slate-900 mb-1">

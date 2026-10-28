@@ -4,6 +4,14 @@ import { blogImagesCol } from "@/lib/db/collections";
 
 export const dynamic = "force-dynamic";
 
+const SECURITY_HEADERS = {
+  "X-Content-Type-Options": "nosniff",
+  "Referrer-Policy": "strict-origin-when-cross-origin",
+  "X-Frame-Options": "SAMEORIGIN",
+  "Content-Security-Policy": "default-src 'self'; script-src 'none'; sandbox;",
+  "Strict-Transport-Security": "max-age=63072000; includeSubDomains; preload",
+};
+
 export async function GET(
   _req: NextRequest,
   { params }: { params: Promise<{ id: string }> }
@@ -14,14 +22,20 @@ export async function GET(
     const cleanId = rawId.replace(/\.(png|jpg|jpeg|webp|gif|svg)$/i, "").trim();
 
     if (!ObjectId.isValid(cleanId)) {
-      return new NextResponse("Invalid image ID", { status: 400 });
+      return new NextResponse("Invalid image ID", {
+        status: 400,
+        headers: SECURITY_HEADERS,
+      });
     }
 
     const col = await blogImagesCol();
     const doc = await col.findOne({ _id: new ObjectId(cleanId) });
 
     if (!doc || !doc.base64) {
-      return new NextResponse("Image not found", { status: 404 });
+      return new NextResponse("Image not found", {
+        status: 404,
+        headers: SECURITY_HEADERS,
+      });
     }
 
     // Strip any accidental data URL prefix before decoding
@@ -33,6 +47,7 @@ export async function GET(
     return new NextResponse(buffer, {
       status: 200,
       headers: {
+        ...SECURITY_HEADERS,
         "Content-Type": mimeType,
         "Content-Length": String(buffer.byteLength),
         "Content-Disposition": `inline; filename="${safeFilename}"`,
@@ -41,6 +56,9 @@ export async function GET(
     });
   } catch (error) {
     console.error("Error serving MongoDB base64 blog image:", error);
-    return new NextResponse("Internal Server Error", { status: 500 });
+    return new NextResponse("Internal Server Error", {
+      status: 500,
+      headers: SECURITY_HEADERS,
+    });
   }
 }

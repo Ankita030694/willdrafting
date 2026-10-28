@@ -560,9 +560,9 @@ I declare that all my movable and immovable properties are my self-acquired asse
                 <ShieldAlert className="w-4 h-4" />
                 <span>JUDICIAL SCRUTINY</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 2. Supreme Court Doctrine: Suspicious Circumstances Rule
-              </h2>
+              </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   While you have the legal right to disinherit an heir, Indian courts examine such Wills with great
@@ -596,9 +596,9 @@ I declare that all my movable and immovable properties are my self-acquired asse
                 <Scale className="w-4 h-4" />
                 <span>PROPERTY RIGHTS BOUNDARIES</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 3. Property Limits: Self-Acquired vs Ancestral Estates
-              </h2>
+              </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   Before writing an exclusion clause, you must verify the legal character of your property. Under
@@ -670,9 +670,9 @@ I declare that all my movable and immovable properties are my self-acquired asse
                 <Sparkles className="w-4 h-4" />
                 <span>INTERACTIVE LEGAL TOOL</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 4. Interactive Exclusion Clause Drafter &amp; Risk Tool
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Customize your exclusion clause below. Select the family member, legal justification, and protective
                 safeguards to generate a court-tested clause and evaluate your Will contest vulnerability.
@@ -947,9 +947,9 @@ I declare that all my movable and immovable properties are my self-acquired asse
                 <BookOpen className="w-4 h-4" />
                 <span>MANDATORY ON-PAGE ASSET</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 5. Five Legally Vetted Disinheritance Clause Templates
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Choose from five standardized, lawyer-approved exclusion clauses. Each template addresses a specific
                 real-world family circumstance recognized by Indian courts.
@@ -1005,9 +1005,9 @@ I declare that all my movable and immovable properties are my self-acquired asse
                 <Scale className="w-4 h-4" />
                 <span>RISK MATRIX</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 6. Legal Comparison: Silent Omission vs Explicit Clause
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Compare the legal consequences of leaving an heir out silently versus using a structured, legally sound
                 exclusion clause.
@@ -1065,9 +1065,9 @@ I declare that all my movable and immovable properties are my self-acquired asse
                 <ShieldCheck className="w-4 h-4" />
                 <span>PREVENTATIVE CHECKLIST</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 7. Seven Essential Guardrails for a Bulletproof Will
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Follow this seven-point checklist to ensure your disinheritance clause withstands judicial review in
                 any civil court or High Court probate proceeding.
@@ -1162,9 +1162,9 @@ I declare that all my movable and immovable properties are my self-acquired asse
                 <Gavel className="w-4 h-4" />
                 <span>CASE LAW ANALYSIS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 8. Landmark Precedents: Ram Piari to Kavita Kanwar
-              </h2>
+              </h3>
               <div className="space-y-4 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   Indian judicial history demonstrates that the validity of an exclusion clause depends heavily on
@@ -1218,9 +1218,9 @@ I declare that all my movable and immovable properties are my self-acquired asse
                 <Clock className="w-4 h-4" />
                 <span>PROCEDURAL PROTOCOL</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 9. Step-by-Step SOP: Drafting and Registering the Will
-              </h2>
+              </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <ol className="list-decimal pl-5 space-y-3 text-xs sm:text-sm">
                   <li>
@@ -1257,9 +1257,9 @@ I declare that all my movable and immovable properties are my self-acquired asse
                 <HeartHandshake className="w-4 h-4" />
                 <span>STATUTORY ALIGNMENT</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 10. Neglect Defense: Senior Citizens Act 2007 Link
-              </h2>
+              </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   Under the Maintenance and Welfare of Parents and Senior Citizens Act, 2007, adult children are legally
@@ -1284,9 +1284,9 @@ I declare that all my movable and immovable properties are my self-acquired asse
                 <Award className="w-4 h-4" />
                 <span>LEGAL EXPERTISE</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 11. Legal Backing: AMA Legal Solutions Succession Desk
-              </h2>
+              </h3>
               <div className="p-5 sm:p-6 rounded-3xl bg-white border border-slate-200/90 shadow-xs space-y-3">
                 <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
                   WillDrafting is backed by senior testamentary counsels and High Court advocates at AMA Legal
@@ -1316,9 +1316,9 @@ I declare that all my movable and immovable properties are my self-acquired asse
                 <HelpCircle className="w-4 h-4" />
                 <span>FREQUENTLY ASKED QUESTIONS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 12. Frequently Asked Questions: Disinheriting Legal Heirs
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Common questions answered by testamentary lawyers on excluding natural heirs in Indian Wills.
               </p>
@@ -1359,9 +1359,9 @@ I declare that all my movable and immovable properties are my self-acquired asse
                 <Scale className="w-4 h-4" />
                 <span>STATUTORY AUTHORITIES</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 13. Statutory Citations &amp; High Court Precedents
-              </h2>
+              </h3>
               <div className="p-5 rounded-2xl bg-white border border-slate-200/90 shadow-2xs space-y-3 text-xs text-slate-700">
                 <p className="leading-relaxed">
                   All clauses and legal recommendations in this guide are drafted in strict accordance with the

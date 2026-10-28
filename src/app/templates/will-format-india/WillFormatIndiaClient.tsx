@@ -547,9 +547,9 @@ export default function WillFormatIndiaClient() {
                 <FileCheck className="w-4 h-4" />
                 <span>SECTION 2: COMPLIANCE AUDIT</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 2. Interactive Checklist: Section 63 Legal Requirements
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Before printing your Will, review these essential statutory criteria. Check each item to verify that your document complies with Indian law.
               </p>
@@ -616,9 +616,9 @@ export default function WillFormatIndiaClient() {
                 <FileText className="w-4 h-4" />
                 <span>SECTION 3: FREE DOWNLOADABLE TEMPLATE</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 3. Clause-Annotated Will Format: Free Downloadable Template
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Below is a comprehensive, advocate-approved Will format tailored for Indian properties and financial assets. You can copy it directly or print it for execution.
               </p>
@@ -710,9 +710,9 @@ export default function WillFormatIndiaClient() {
                 <AlertTriangle className="w-4 h-4 text-amber-600" />
                 <span>SECTION 4: IMPORTANT WARNING</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 4. Who Should NOT Sign as a Witness (Section 67 Warning)
-              </h2>
+              </h3>
               <div className="rounded-2xl bg-amber-50/70 border border-amber-300 p-5 sm:p-6 space-y-3 text-slate-800">
                 <div className="flex items-center gap-2 font-bold text-amber-900 text-sm sm:text-base">
                   <AlertCircle className="w-5 h-5 text-amber-700 shrink-0" />
@@ -738,9 +738,9 @@ export default function WillFormatIndiaClient() {
                 <Sparkles className="w-4 h-4" />
                 <span>SECTION 5: VISUAL ANATOMY</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 5. Visual Blueprint: Anatomy of an Enforceable Indian Will
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 An enforceable Will follows a logical statutory anatomy. Below is the blueprint illustrating the proper structural hierarchy from title to witness attestation.
               </p>
@@ -779,9 +779,9 @@ export default function WillFormatIndiaClient() {
                 <CheckCircle2 className="w-4 h-4 text-[#5F7E75]" />
                 <span>SECTION 6: HOW TO DO IT</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 6. Easy 6-Step Guide to Make Your Will
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Making a Will does not need complicated legal running around. Follow these six straightforward steps:
               </p>
@@ -841,9 +841,9 @@ export default function WillFormatIndiaClient() {
                 <AlertCircle className="w-4 h-4 text-rose-600" />
                 <span>SECTION 7: COMMON MISTAKES</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 7. Three Common Mistakes to Avoid
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Simple oversights can cause unnecessary confusion or court disputes for your family. Watch out for these three common traps:
               </p>
@@ -893,9 +893,9 @@ export default function WillFormatIndiaClient() {
                 <Scale className="w-4 h-4" />
                 <span>SECTION 8: LEGAL COMPARISON</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 8. Comparative Matrix: Plain Paper, Notarized, and Registered
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Evaluate the legal differences between plain paper execution, notary attestation, and sub-registrar registration.
               </p>
@@ -952,9 +952,9 @@ export default function WillFormatIndiaClient() {
                 <Clock className="w-4 h-4" />
                 <span>SECTION 9: TIMELINE & MILESTONES</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 9. Procedural Timeline: Drafting to Estate Transmission
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Understand the lifecycle of your Will from the day of execution through final asset transmission to your loved ones.
               </p>
@@ -1011,9 +1011,9 @@ export default function WillFormatIndiaClient() {
                 <Building className="w-4 h-4" />
                 <span>SECTION 10: PROPERTY TYPES EXPLAINED</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 10. Can You Give Away Any Property? (Own Property vs Ancestral Property)
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 What you can give in your Will depends on how you acquired the property. Here is how Indian law treats different situations:
               </p>
@@ -1067,9 +1067,9 @@ export default function WillFormatIndiaClient() {
                 <Award className="w-4 h-4" />
                 <span>SECTION 11: INSTITUTIONAL BACKING</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 11. Institutional Backing: Powered by AMA Legal Solutions
-              </h2>
+              </h3>
               <div className="bg-white rounded-2xl border border-slate-200/90 p-6 sm:p-8 shadow-xs space-y-4">
                 <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-6 border-b border-slate-100">
                   <div>
@@ -1111,9 +1111,9 @@ export default function WillFormatIndiaClient() {
                 <HelpCircle className="w-4 h-4 text-[#C65378]" />
                 <span>SECTION 12: DIRECT ANSWERS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 Frequently Asked Questions: Will Formats and Indian Law
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Find clear answers to common questions about executing, witnessing, and registering your Will in India.
               </p>
@@ -1152,9 +1152,9 @@ export default function WillFormatIndiaClient() {
                 <BookOpen className="w-4 h-4" />
                 <span>SECTION 13: STATUTORY CITATIONS & REFERENCES</span>
               </div>
-              <h2 className="text-lg font-bold text-slate-900">
+              <h3 className="text-lg font-bold text-slate-900">
                 Statutory Citations and Official Government Resources
-              </h2>
+              </h3>
               <ul className="list-disc pl-5 text-xs text-slate-600 space-y-1.5 leading-relaxed">
                 <li>
                   <strong>Indian Succession Act, 1925:</strong> Section 59 (testamentary capacity), Section 62 (revocability), Section 63 (attestation rules), Section 67 (witness disqualification), and Section 222 (probate granted to executor).

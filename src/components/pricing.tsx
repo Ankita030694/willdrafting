@@ -85,9 +85,9 @@ export default function Pricing() {
           </div>
 
           {/* Main Title */}
-          <h2 className="text-[1.65rem] sm:text-[2.25rem] lg:text-[2.45rem] font-medium text-[#172228] leading-[1.1] tracking-tight mb-2.5">
+          <h3 className="text-[1.65rem] sm:text-[2.25rem] lg:text-[2.45rem] font-medium text-[#172228] leading-[1.1] tracking-tight mb-2.5">
             Choose The Right Plan For Your Family &amp; Estate.
-          </h2>
+          </h3>
 
           <p className="text-[0.85rem] sm:text-[0.92rem] text-[#55636D] leading-relaxed max-w-2xl">
             Clear, fixed-price online Will making cost in India with zero hidden lawyer fees. Pick a one-time plan tailored to your estate and upgrade seamlessly anytime your family or assets evolve.

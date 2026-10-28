@@ -672,9 +672,9 @@ export default function PropertyTransferAfterDeathClient() {
                 <Users className="w-4 h-4" />
                 <span>CLASS I LEGAL HEIRS MATRIX</span>
               </div>
-              <h2 className="text-xl sm:text-2xl font-extrabold text-slate-900 leading-snug">
+              <h3 className="text-xl sm:text-2xl font-extrabold text-slate-900 leading-snug">
                 2. Who Inherits: Hindu Succession Act Section 8 Rules
-              </h2>
+              </h3>
               <div className="space-y-3.5 text-slate-700 text-sm sm:text-base leading-relaxed">
                 <p>
                   Section 8 of the Hindu Succession Act, 1956 lays down a strict priority order for who inherits a deceased male&apos;s property. The law groups relatives into four distinct tiers:
@@ -739,9 +739,9 @@ export default function PropertyTransferAfterDeathClient() {
                 <Layers className="w-4 h-4" />
                 <span>STEP-BY-STEP PROCEDURE</span>
               </div>
-              <h2 className="text-xl sm:text-2xl font-extrabold text-slate-900 leading-snug">
+              <h3 className="text-xl sm:text-2xl font-extrabold text-slate-900 leading-snug">
                 3. Complete 5-Step Property Transfer Roadmap
-              </h2>
+              </h3>
               <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                 Transferring real estate when there is no Will requires completing five chronological phases across civic, revenue, and registration authorities. Skipping any step creates defective title that prevents bank loans and future sales.
               </p>
@@ -807,9 +807,9 @@ export default function PropertyTransferAfterDeathClient() {
                 <Gavel className="w-4 h-4" />
                 <span>LANDMARK JUDICIAL PRINCIPLES</span>
               </div>
-              <h2 className="text-xl sm:text-2xl font-extrabold text-slate-900 leading-snug">
+              <h3 className="text-xl sm:text-2xl font-extrabold text-slate-900 leading-snug">
                 4. Title Ownership vs Municipal Property Mutation
-              </h2>
+              </h3>
               <div className="space-y-3.5 text-slate-700 text-sm sm:text-base leading-relaxed">
                 <p>
                   One of the most dangerous misconceptions in Indian real estate is treating a <strong>mutation entry (Dakhil Kharij / Khata / Patta)</strong> as proof of property ownership. Thousands of families assume that because their name appears on the municipal property tax receipt or electricity bill, they hold unshakeable legal title.
@@ -838,9 +838,9 @@ export default function PropertyTransferAfterDeathClient() {
                 <FileCheck className="w-4 h-4" />
                 <span>COMPREHENSIVE DOSSIER</span>
               </div>
-              <h2 className="text-xl sm:text-2xl font-extrabold text-slate-900 leading-snug">
+              <h3 className="text-xl sm:text-2xl font-extrabold text-slate-900 leading-snug">
                 5. Essential Documents Checklist for Property Transfer
-              </h2>
+              </h3>
               <p className="text-sm text-slate-700 leading-relaxed">
                 Before submitting applications to the Sub-Registrar Office or Municipal Corporation, assemble this 12-point document pack. Use the interactive checkboxes below to track your readiness.
               </p>
@@ -920,9 +920,9 @@ export default function PropertyTransferAfterDeathClient() {
                 <Home className="w-4 h-4" />
                 <span>VISUAL ROADMAP & SUCCESSION OVERVIEW</span>
               </div>
-              <h2 className="text-xl sm:text-2xl font-extrabold text-slate-900 leading-snug">
+              <h3 className="text-xl sm:text-2xl font-extrabold text-slate-900 leading-snug">
                 6. Step-by-Step Visual Roadmap: Death to Mutation
-              </h2>
+              </h3>
               <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                 The visual guide below illustrates the transition from original property ownership under the deceased father to legal mutation among surviving heirs under the Hindu Succession Act.
               </p>
@@ -964,9 +964,9 @@ export default function PropertyTransferAfterDeathClient() {
                 <Split className="w-4 h-4" />
                 <span>ESTATE PLANNING COMPARISON</span>
               </div>
-              <h2 className="text-xl sm:text-2xl font-extrabold text-slate-900 leading-snug">
+              <h3 className="text-xl sm:text-2xl font-extrabold text-slate-900 leading-snug">
                 7. Transfer With a Will vs Transfer Without a Will
-              </h2>
+              </h3>
               <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                 When a family member dies with a Will, property transfer is an orderly administrative task. Without a Will, it often turns into a multi-year ordeal involving Sub-Registrar queues, legal notices, and family friction.
               </p>
@@ -1022,9 +1022,9 @@ export default function PropertyTransferAfterDeathClient() {
                 <Scroll className="w-4 h-4" />
                 <span>LEGAL TRANSFER INSTRUMENTS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl font-extrabold text-slate-900 leading-snug">
+              <h3 className="text-xl sm:text-2xl font-extrabold text-slate-900 leading-snug">
                 8. Relinquishment Deed: Giving Up or Consolidating Shares
-              </h2>
+              </h3>
               <div className="space-y-3.5 text-slate-700 text-sm sm:text-base leading-relaxed">
                 <p>
                   In the vast majority of Indian households, when the father passes away, the sons and daughters agree that the mother should remain the sole owner of the family home during her lifetime. How can this be legally achieved?
@@ -1085,9 +1085,9 @@ export default function PropertyTransferAfterDeathClient() {
                 <AlertCircle className="w-4 h-4" />
                 <span>PRACTICAL OBSTACLES</span>
               </div>
-              <h2 className="text-xl sm:text-2xl font-extrabold text-slate-900 leading-snug">
+              <h3 className="text-xl sm:text-2xl font-extrabold text-slate-900 leading-snug">
                 9. Handling Complex Scenarios: Disputes, NRIs & Minors
-              </h2>
+              </h3>
               <div className="space-y-4 text-slate-700 text-sm sm:text-base leading-relaxed">
                 {/* Scenario 1: Disputes */}
                 <div className="p-5 rounded-2xl bg-white border border-slate-200 shadow-xs space-y-2">
@@ -1130,9 +1130,9 @@ export default function PropertyTransferAfterDeathClient() {
                 <Sparkles className="w-4 h-4" />
                 <span>PREVENTIVE ESTATE PLANNING</span>
               </div>
-              <h2 className="text-xl sm:text-2xl font-extrabold text-slate-900 leading-snug">
+              <h3 className="text-xl sm:text-2xl font-extrabold text-slate-900 leading-snug">
                 10. How Writing a Will Eliminates Succession Hardships
-              </h2>
+              </h3>
               <div className="p-6 sm:p-8 rounded-3xl bg-[#172228] text-white shadow-xl space-y-6">
                 <div className="space-y-3">
                   <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-rose-500/20 text-rose-300 text-xs font-bold uppercase tracking-wider">
@@ -1211,9 +1211,9 @@ export default function PropertyTransferAfterDeathClient() {
                 <Award className="w-4 h-4" />
                 <span>ASSISTANCE FROM WillDrafting.in</span>
               </div>
-              <h2 className="text-xl sm:text-2xl font-extrabold text-slate-900 leading-snug">
+              <h3 className="text-xl sm:text-2xl font-extrabold text-slate-900 leading-snug">
                 11. Professional Legal Support from WillDrafting.in
-              </h2>
+              </h3>
               <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                 If your family is currently dealing with the aftermath of an intestate demise, navigating municipal offices and drafting registered deeds can feel overwhelming. The experienced property advocates at WillDrafting.in provide end-to-end representation:
               </p>
@@ -1281,9 +1281,9 @@ export default function PropertyTransferAfterDeathClient() {
                 <HelpCircle className="w-4 h-4" />
                 <span>COMMONLY ASKED QUESTIONS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl font-extrabold text-slate-900 leading-snug">
+              <h3 className="text-xl sm:text-2xl font-extrabold text-slate-900 leading-snug">
                 12. Frequently Asked Questions on Property Succession
-              </h2>
+              </h3>
               <p className="text-sm text-slate-700 leading-relaxed">
                 Clear, straightforward answers to the practical legal questions families encounter when transferring property after death without a Will.
               </p>
@@ -1324,9 +1324,9 @@ export default function PropertyTransferAfterDeathClient() {
                 <BookOpen className="w-4 h-4" />
                 <span>OFFICIAL STATUTES & CITATIONS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl font-extrabold text-slate-900 leading-snug">
+              <h3 className="text-xl sm:text-2xl font-extrabold text-slate-900 leading-snug">
                 13. Relevant Laws, Statutory Sections & Court Rulings
-              </h2>
+              </h3>
               <div className="p-5 rounded-2xl bg-white border border-slate-200 text-xs sm:text-sm text-slate-700 space-y-3">
                 <p>
                   This guide is authored in strict conformity with applicable Central legislation and binding jurisprudence of the Supreme Court of India:

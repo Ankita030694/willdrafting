@@ -45,7 +45,7 @@ export const metadata: Metadata = {
         url: "https://www.willdrafting.in/images/will-contest-challenge-risk-calculator-og.jpg",
         width: 1200,
         height: 675,
-        alt: "Can My Will Be Challenged in Court India - Litigation Risk Scorecard and Fortification Guide",
+        alt: "Can My Will Be Challenged in Court India - Litigation Risk Scorecard and Guide",
       },
     ],
   },

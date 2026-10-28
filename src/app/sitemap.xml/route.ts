@@ -101,6 +101,11 @@ ${xmlEntries}
       "Content-Type": "application/xml; charset=utf-8",
       "Cache-Control": "public, s-maxage=3600, stale-while-revalidate=86400",
       "X-Content-Type-Options": "nosniff",
+      "Referrer-Policy": "strict-origin-when-cross-origin",
+      "X-Frame-Options": "SAMEORIGIN",
+      "Content-Security-Policy":
+        "default-src 'self'; style-src 'unsafe-inline'; object-src 'none'; base-uri 'self'; frame-ancestors 'self';",
+      "Strict-Transport-Security": "max-age=63072000; includeSubDomains; preload",
     },
   });
 }

@@ -15,9 +15,9 @@ Before creating or modifying any page, blog post, location guide, service page, 
 1. **Page `<title>`:** Must be **30–60 characters** and **≤ 561 pixels**. Always use `title: { absolute: "..." }` so root `layout.tsx` does not append a duplicate `| WillDrafting.in`.
 2. **Meta Description:** Must be **70–154 characters** and **≤ 985 pixels** (aim for 135–152 characters).
 3. **Heading Hierarchy (`H1` → `H2` → `H3` → `H4`):**
-   - Exactly **1 `<h1>`** per page (**≤ 70 characters**).
-   - Never place `<h2>`, `<h3>`, or `<h4>` before `<h1>`, and never place `<h3>` or `<h4>` between `<h1>` and the first `<h2>`.
-   - Every `<h2>` must be **≤ 70 characters** and unique across pages (never use generic repeated `<h2>The short version</h2>` or duplicate state/city `<h2>` headings).
+   - Exactly **1 `<h1>`** (**≤ 70 characters**) and **1 `<h2>`** (**≤ 70 characters**, unique across pages) per indexable page. Render all subsequent section headings as `<h3>` (preserving visual classes/styles) so Screaming Frog never flags `H2: Multiple`.
+   - Never place `<h2>`, `<h3>`, or `<h4>` before `<h1>`, and never place `<h3>` or `<h4>` between `<h1>` and the single `<h2>`.
+   - Shared components (`CallToActionBanner`, `FAQSection`, `TestimonialsSection`, `MapSection`, `PoweredByAma`, `GlobalPopup`, interactive calculators) must use `<h3>` or `<div>` instead of `<h2>`.
 4. **Links:**
    - Zero internal `404` or `308` redirect links (always use `/services/...` plural and `/about-us`).
    - Never render icon-only `<Link>`/`<a>` without descriptive text or `<span className="sr-only">`.

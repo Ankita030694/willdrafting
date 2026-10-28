@@ -490,9 +490,9 @@ AND WHEREAS it is mutually agreed and understood that in the event the Donee neg
                 <Sparkles className="w-4 h-4" />
                 <span>INTERACTIVE EVALUATOR</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 2. Interactive Section 23 Gift Revocation Checker
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Answer the 5 statutory questions below to evaluate whether your property transfer qualifies
                 for cancellation under Section 23 and calculate your Tribunal recovery probability.
@@ -1053,9 +1053,9 @@ AND WHEREAS it is mutually agreed and understood that in the event the Donee neg
                 <Scale className="w-4 h-4" />
                 <span>JUDICIAL PRECEDENTS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 3. Landmark Precedents: Urmila Dixit vs Sudesh Chhikara
-              </h2>
+              </h3>
               <div className="space-y-4 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   Judicial interpretation of Section 23 has witnessed historic developments in the Supreme
@@ -1123,9 +1123,9 @@ AND WHEREAS it is mutually agreed and understood that in the event the Donee neg
                 <FileCheck className="w-4 h-4" />
                 <span>STATUTORY CRITERIA</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 4. The 4 Statutory Prerequisite Conditions Explained
-              </h2>
+              </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   To secure an order of gift cancellation from the Maintenance Tribunal under Section
@@ -1209,9 +1209,9 @@ AND WHEREAS it is mutually agreed and understood that in the event the Donee neg
                 <Scale className="w-4 h-4" />
                 <span>SUCCESSION STRATEGY</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 5. Property Comparison: Why a Will Beats a Gift Deed
-              </h2>
+              </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   Most parents execute gift deeds because they wish to avoid future probate procedures or
@@ -1306,9 +1306,9 @@ AND WHEREAS it is mutually agreed and understood that in the event the Donee neg
                 <Gavel className="w-4 h-4" />
                 <span>PROCEDURAL ROADMAP</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 6. Tribunal Filing SOP: Procedure Before the SDM Court
-              </h2>
+              </h3>
               <div className="space-y-4 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   A petition under Section 23 is not filed in a regular Civil Court. It is presented before
@@ -1407,9 +1407,9 @@ AND WHEREAS it is mutually agreed and understood that in the event the Donee neg
                 <Building className="w-4 h-4" />
                 <span>THIRD PARTY ALIENATION</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 7. Section 23(2) Rule: When Property Is Sold to Third Party
-              </h2>
+              </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   A frequent challenge arises when a child who received a gift deed rapidly sells or
@@ -1444,9 +1444,9 @@ AND WHEREAS it is mutually agreed and understood that in the event the Donee neg
                 <AlertTriangle className="w-4 h-4" />
                 <span>CRIMINAL LIABILITY</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 8. Section 24 Penalties: Abandonment &amp; Criminal Liability
-              </h2>
+              </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   In addition to civil property revocation under Section 23, the MWPSC Act imposes direct
@@ -1473,9 +1473,9 @@ AND WHEREAS it is mutually agreed and understood that in the event the Donee neg
                 <Users className="w-4 h-4" />
                 <span>CASE SCENARIOS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 9. Practical Case Studies: Delhi, Bengaluru, Mumbai
-              </h2>
+              </h3>
               <div className="space-y-4 text-slate-700 leading-relaxed text-sm md:text-base">
                 <div className="p-5 rounded-2xl bg-white border border-slate-200/90 shadow-xs space-y-2">
                   <div className="flex items-center justify-between text-xs font-bold text-slate-900">
@@ -1529,9 +1529,9 @@ AND WHEREAS it is mutually agreed and understood that in the event the Donee neg
                 <Copy className="w-4 h-4" />
                 <span>DRAFTING TEMPLATES &amp; CHECKLIST</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 10. Protective Recital Clauses &amp; Tribunal Checklist
-              </h2>
+              </h3>
               <div className="space-y-4 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   If you are currently contemplating gifting property to a child, you must include a
@@ -1613,9 +1613,9 @@ AND WHEREAS it is mutually agreed and understood that in the event the Donee neg
                 <Award className="w-4 h-4" />
                 <span>INSTITUTIONAL PROFILE</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 11. Institutional Profile: AMA Legal Solutions Counsel
-              </h2>
+              </h3>
               <div className="rounded-3xl bg-white border border-slate-200/90 shadow-sm p-6 sm:p-8 space-y-4">
                 <div className="flex flex-col sm:flex-row sm:items-center gap-4">
                   <div className="w-16 h-16 rounded-full bg-rose-100 text-[#C65378] font-black text-xl flex items-center justify-center shrink-0">
@@ -1659,9 +1659,9 @@ AND WHEREAS it is mutually agreed and understood that in the event the Donee neg
                 <HelpCircle className="w-4 h-4" />
                 <span>FREQUENTLY ASKED QUESTIONS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 12. Frequently Asked Questions: Gift Deed Revocation
-              </h2>
+              </h3>
               <div className="space-y-3 pt-2">
                 {FAQS.map((faq, idx) => {
                   const isOpen = openFaq === idx;
@@ -1699,9 +1699,9 @@ AND WHEREAS it is mutually agreed and understood that in the event the Donee neg
                 <BookOpen className="w-4 h-4" />
                 <span>STATUTORY CITATIONS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 13. Statutory Citations &amp; Legal Redressal Resources
-              </h2>
+              </h3>
               <div className="rounded-2xl bg-white border border-slate-200/90 p-5 space-y-3 text-xs text-slate-700 leading-relaxed">
                 <p>
                   <strong>Primary Legislation:</strong> Maintenance and Welfare of Parents and Senior

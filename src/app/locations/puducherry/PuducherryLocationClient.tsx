@@ -561,9 +561,9 @@ export default function PuducherryLocationClient({ faqs }: Props) {
                   <span>STATUTORY FOUNDATION &amp; JURISPRUDENCE</span>
                 </div>
                 {/* H2 <= 70 chars (48 chars) */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   1. Will Drafting &amp; Legal Framework in Puducherry
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Puducherry has a unique legal history. Under the 1956 Treaty of Cession, the territory has two legal systems for Wills:
                 </p>
@@ -668,9 +668,9 @@ export default function PuducherryLocationClient({ faqs }: Props) {
                   <span>SECTION 18(E) REGISTRATION ACT ANALYSIS</span>
                 </div>
                 {/* H2 <= 70 chars (48 chars) */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   2. Is Will Registration Mandatory in Puducherry?
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Under Section 18(e) of the Registration Act, 1908, registering a Will is optional in Puducherry. A Will on plain paper is valid if signed before two neutral witnesses.
                 </p>
@@ -729,9 +729,9 @@ export default function PuducherryLocationClient({ faqs }: Props) {
                   <span>MADRAS HIGH COURT JURISDICTION</span>
                 </div>
                 {/* H2 <= 70 chars (49 chars) */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   3. Puducherry Probate Law: Madras High Court Rules
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Many property owners worry about court probate. Under Section 213 of the Indian Succession Act, 1925, probate is required only in three old presidency towns. These are Chennai, Mumbai, and Kolkata. Other regions are exempt.
                 </p>
@@ -798,9 +798,9 @@ export default function PuducherryLocationClient({ faqs }: Props) {
                   <span>GOVERNMENT REGISTRATION OFFICES</span>
                 </div>
                 {/* H2 <= 70 chars (49 chars) */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   4. Puducherry Sub-Registrar Offices: SRO Directory
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Puducherry has 9 Sub-Registrar Offices across its four enclaves. Use our locator to find your local registration office:
                 </p>
@@ -892,9 +892,9 @@ export default function PuducherryLocationClient({ faqs }: Props) {
                   <span>REGIONAL CITIES &amp; ENCLAVE COVERAGE</span>
                 </div>
                 {/* H2 <= 70 chars (48 chars) */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   5. Regional Cities: Coverage Across Puducherry UT
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Property in Puducherry includes colonial villas in White Town, apartments in Oulgaret, factories in Sedarapet, and farmlands in Villianur. It also includes coastal plots in Karaikal, Mahe, and Yanam. Our lawyers cover every region:
                 </p>
@@ -1335,9 +1335,9 @@ export default function PuducherryLocationClient({ faqs }: Props) {
                   <span>SYSTEMATIC PROCEDURE</span>
                 </div>
                 {/* H2 <= 70 chars (48 chars) */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   6. Step-by-Step SOP: Drafting to SRO Registration
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Making a valid Will in Puducherry is straightforward. Follow our simple 5-step guide:
                 </p>
@@ -1429,9 +1429,9 @@ export default function PuducherryLocationClient({ faqs }: Props) {
                   <span>DOORSTEP CONVENIENCE FOR SENIORS</span>
                 </div>
                 {/* H2 <= 70 chars (50 chars) */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   7. Section 31 Doorstep SRO Registration for Seniors
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Under Section 31 of the Registration Act, 1908, senior citizens and unwell persons do not need to visit the registry office:
                 </p>
@@ -1483,9 +1483,9 @@ export default function PuducherryLocationClient({ faqs }: Props) {
                   <span>REGISTRATION READINESS CHECK</span>
                 </div>
                 {/* H2 <= 70 chars (47 chars) */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   8. Document Checklist for Puducherry SRO Offices
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Keep these documents ready before your SRO visit. Use our checklist to track your progress ({checkedCount} of {checklist.length} completed):
                 </p>
@@ -1528,9 +1528,9 @@ export default function PuducherryLocationClient({ faqs }: Props) {
                   <span>LOCAL REAL ESTATE SUCCESSION</span>
                 </div>
                 {/* H2 <= 70 chars (51 chars) */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   9. Puducherry Property Types: Heritage Villas &amp; Land
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Each type of property in Puducherry needs clear clauses for smooth name transfer:
                 </p>
@@ -1583,9 +1583,9 @@ export default function PuducherryLocationClient({ faqs }: Props) {
                   <span>TRANSPARENT GOVERNMENT EXPENSES</span>
                 </div>
                 {/* H2 <= 70 chars (43 chars) */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   10. Official Puducherry SRO Registration Fees
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Registering a Will in Puducherry is very affordable. Unlike sale or gift deeds, a Will has no percentage-based stamp duty:
                 </p>
@@ -1636,9 +1636,9 @@ export default function PuducherryLocationClient({ faqs }: Props) {
                   <span>TRANSPARENT LEGAL ASSISTANCE</span>
                 </div>
                 {/* H2 <= 70 chars (47 chars) */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   11. Transparent Will Packages &amp; Legal Fees in PY
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Choose the plan that suits your estate requirements. All packages include lawyer check and full compliance with Puducherry legal provisions:
                 </p>
@@ -1778,9 +1778,9 @@ export default function PuducherryLocationClient({ faqs }: Props) {
                   <span>COMMONLY ASKED QUESTIONS</span>
                 </div>
                 {/* H2 <= 70 chars (50 chars) */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   12. Frequently Asked Questions: Wills in Puducherry
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Find clear answers to key questions on Will drafting, French succession rules, and SRO registration in Puducherry:
                 </p>
@@ -1826,9 +1826,9 @@ export default function PuducherryLocationClient({ faqs }: Props) {
                   <span>LEGAL SOURCES &amp; OFFICIAL PORTALS</span>
                 </div>
                 {/* H2 <= 70 chars (50 chars) */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   13. Legal Citations &amp; Puducherry Legal Portals
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Wills and property transfers in Puducherry are governed by these key laws and official portals:
                 </p>

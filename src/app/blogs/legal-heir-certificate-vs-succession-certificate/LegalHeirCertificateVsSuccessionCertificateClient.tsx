@@ -558,9 +558,9 @@ export default function LegalHeirCertificateVsSuccessionCertificateClient() {
                 <Scale className="w-4 h-4 text-[#C65378]" />
                 <span>Statutory Authority &amp; Legal Hierarchy</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight leading-snug">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight leading-snug">
                 1. Statutory Framework: Indian Succession Act &amp; State Rules
-              </h2>
+              </h3>
               <p className="text-sm md:text-base text-[#55636D] leading-relaxed">
                 When a person dies without a Will in India, their estate follows intestate succession rules. Family members face strict demands from banks, mutual funds, and revenue offices. Each agency asks for legal proof before releasing money or transferring property records.
               </p>
@@ -587,9 +587,9 @@ export default function LegalHeirCertificateVsSuccessionCertificateClient() {
                 <Layers className="w-4 h-4 text-[#C65378]" />
                 <span>Head-to-Head Evaluation</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight leading-snug">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight leading-snug">
                 2. Head-to-Head Comparison: Core Differences at a Glance
-              </h2>
+              </h3>
               <p className="text-sm md:text-base text-[#55636D] leading-relaxed">
                 Review this direct legal comparison before applying. Understanding these parameters helps you avoid wasted fees and needless delays.
               </p>
@@ -630,9 +630,9 @@ export default function LegalHeirCertificateVsSuccessionCertificateClient() {
                 <FileCheck className="w-4 h-4 text-[#C65378]" />
                 <span>Decision Flowchart</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight leading-snug">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight leading-snug">
                 3. Which Certificate Do You Need: Asset-by-Asset Guide
-              </h2>
+              </h3>
               <p className="text-sm md:text-base text-[#55636D] leading-relaxed">
                 The document you need depends on the type of asset. Follow this guide to see whether you should visit the Tehsildar or approach the District Court.
               </p>
@@ -671,9 +671,9 @@ export default function LegalHeirCertificateVsSuccessionCertificateClient() {
                 <Gavel className="w-4 h-4 text-[#C65378]" />
                 <span>Part X Indian Succession Act</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight leading-snug">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight leading-snug">
                 4. Succession Certificate in Court: Part X Jurisdiction
-              </h2>
+              </h3>
               <p className="text-sm md:text-base text-[#55636D] leading-relaxed">
                 Part X of the Indian Succession Act, 1925 governs the judicial recovery of debts and securities. Understanding these core sections protects your rights during court proceedings:
               </p>
@@ -745,9 +745,9 @@ export default function LegalHeirCertificateVsSuccessionCertificateClient() {
                 <Building className="w-4 h-4 text-[#C65378]" />
                 <span>Administrative Revenue Hierarchy</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight leading-snug">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight leading-snug">
                 5. Legal Heir Certificate: Tehsildar &amp; SDM Procedure
-              </h2>
+              </h3>
               <p className="text-sm md:text-base text-[#55636D] leading-relaxed">
                 Getting a Legal Heir Certificate is an administrative process. Family members apply online through the state revenue portal or visit the local Tehsil office.
               </p>
@@ -777,9 +777,9 @@ export default function LegalHeirCertificateVsSuccessionCertificateClient() {
                 <Layers className="w-4 h-4 text-[#C65378]" />
                 <span>Statutory Blueprint</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight leading-snug">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight leading-snug">
                 6. Visual Blueprint: Decision Flowchart &amp; Framework
-              </h2>
+              </h3>
               <p className="text-sm md:text-base text-[#55636D] leading-relaxed">
                 The visual comparison below illustrates the core distinction between a Legal Heir Certificate and a Succession Certificate. Notice how property mutation and family kinship follow the revenue track, while bank accounts, shares, and court decrees follow the judicial track.
               </p>
@@ -819,9 +819,9 @@ export default function LegalHeirCertificateVsSuccessionCertificateClient() {
                 <FileText className="w-4 h-4 text-[#C65378]" />
                 <span>Documentation SOP</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight leading-snug">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight leading-snug">
                 7. Documents Required: Comprehensive Preparation SOP
-              </h2>
+              </h3>
               <p className="text-sm md:text-base text-[#55636D] leading-relaxed">
                 Missing paperwork causes delay in both revenue offices and courts. Select a tab below to check the exact document list for each procedure.
               </p>
@@ -923,9 +923,9 @@ export default function LegalHeirCertificateVsSuccessionCertificateClient() {
                 <Landmark className="w-4 h-4 text-[#C65378]" />
                 <span>Pan-India E-Governance</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight leading-snug">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight leading-snug">
                 8. State Portal Directory: Where to Apply Across India
-              </h2>
+              </h3>
               <p className="text-sm md:text-base text-[#55636D] leading-relaxed">
                 Most states offer online applications for Legal Heir certificates. The directory below lists the designated portals, fees, and processing times for major states:
               </p>
@@ -978,9 +978,9 @@ export default function LegalHeirCertificateVsSuccessionCertificateClient() {
                 <Layers className="w-4 h-4 text-[#C65378]" />
                 <span>Post-Issuance Roadmap</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight leading-snug">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight leading-snug">
                 9. Next Steps: Claiming Assets After Certificate Issuance
-              </h2>
+              </h3>
               <p className="text-sm md:text-base text-[#55636D] leading-relaxed">
                 Getting the certificate is only the first step. To transfer title or access funds, heirs submit certified copies to each asset institution:
               </p>
@@ -1043,9 +1043,9 @@ export default function LegalHeirCertificateVsSuccessionCertificateClient() {
                 <Clock className="w-4 h-4 text-[#C65378]" />
                 <span>Financial &amp; Time Investment</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight leading-snug">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight leading-snug">
                 10. Cost &amp; Timeline Comparison: Court Fees vs SRO Delays
-              </h2>
+              </h3>
               <p className="text-sm md:text-base text-[#55636D] leading-relaxed">
                 A Succession Certificate costs more because of ad valorem court fees. Instead of a flat charge, state laws calculate fees as a percentage of total assets:
               </p>
@@ -1085,9 +1085,9 @@ export default function LegalHeirCertificateVsSuccessionCertificateClient() {
                 <ShieldCheck className="w-4 h-4 text-[#C65378]" />
                 <span>Strategic Estate Planning</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight leading-snug">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight leading-snug">
                 11. How a Valid Will Avoids Both Certificates Entirely
-              </h2>
+              </h3>
               <p className="text-sm md:text-base text-[#55636D] leading-relaxed">
                 The struggle of visiting revenue offices, newspaper notices, and court hearings happens only when someone dies without a Will.
               </p>
@@ -1154,9 +1154,9 @@ export default function LegalHeirCertificateVsSuccessionCertificateClient() {
                 <Award className="w-4 h-4 text-[#C65378]" />
                 <span>WillDrafting.in</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight leading-snug">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight leading-snug">
                 12. Professional Succession Legal Services by AMA
-              </h2>
+              </h3>
               <p className="text-sm md:text-base text-[#55636D] leading-relaxed">
                 If your family is handling an intestate demise, dealing with revenue departments and civil courts can be hard. WillDrafting.in offers full legal support:
               </p>
@@ -1203,9 +1203,9 @@ export default function LegalHeirCertificateVsSuccessionCertificateClient() {
                 <HelpCircle className="w-4 h-4 text-[#C65378]" />
                 <span>Direct Answers</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight leading-snug">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight leading-snug">
                 13. Frequently Asked Questions: Succession &amp; Heirship
-              </h2>
+              </h3>
 
               <div className="space-y-3 pt-2">
                 {FAQ_ITEMS.map((item, idx) => {
@@ -1244,9 +1244,9 @@ export default function LegalHeirCertificateVsSuccessionCertificateClient() {
                 <BookOpen className="w-4 h-4 text-[#C65378]" />
                 <span>Authoritative Legal Sources</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight leading-snug">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight leading-snug">
                 14. Statutory Citations &amp; Official Government Portals
-              </h2>
+              </h3>
 
               <div className="space-y-2 text-xs text-[#55636D] leading-relaxed">
                 <p><strong>Primary Legislation:</strong></p>

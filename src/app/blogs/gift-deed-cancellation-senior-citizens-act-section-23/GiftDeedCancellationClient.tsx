@@ -538,9 +538,9 @@ export default function GiftDeedCancellationClient() {
                 <Scale className="w-4 h-4" />
                 <span>Statutory Authority &bull; MWPSC Act 2007</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
                 1. Section 23 Explained: Senior Citizens Act Protection
-              </h2>
+              </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed">
                 The Parliament of India enacted the <em>Maintenance and Welfare of Parents and Senior Citizens Act, 2007</em> (MWPSC Act) to ensure dignified living and economic security for elders. The cornerstone protection for family properties is codified under <strong>Section 23(1)</strong>.
               </p>
@@ -597,9 +597,9 @@ export default function GiftDeedCancellationClient() {
                 <Gavel className="w-4 h-4" />
                 <span>Supreme Court Landmark &bull; January 2025</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
                 2. Supreme Court Ruling: Urmila Dixit v Sunil Sharan Dixit
-              </h2>
+              </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed">
                 On <strong>January 2, 2025</strong>, the Supreme Court of India delivered a monumental judgment in <em>Urmila Dixit v. Sunil Sharan Dixit &amp; Ors.</em> (<strong>2025 INSC 20</strong>, Civil Appeal No. 10927 of 2024). The Division Bench, comprising Hon&apos;ble Justice C.T. Ravikumar and Hon&apos;ble Justice Sanjay Karol (judgment authored by Justice Karol), resolved a long-standing controversy regarding conditional gift deeds.
               </p>
@@ -664,9 +664,9 @@ export default function GiftDeedCancellationClient() {
                 <FileText className="w-4 h-4" />
                 <span>Transfer of Property Act vs Senior Citizens Act</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
                 3. When Can a Gift Deed Be Cancelled vs Irrevocable?
-              </h2>
+              </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed">
                 Under Section 126 of the <em>Transfer of Property Act, 1882</em> (TPA), the general principle of Indian property law is that a completed gift cannot be revoked at the mere will of the donor. Once accepted by the donee and registered, it transfers legal ownership permanently.
               </p>
@@ -748,9 +748,9 @@ export default function GiftDeedCancellationClient() {
                 <FileSignature className="w-4 h-4" />
                 <span>Unique Drafting Asset &bull; Free Lawyer-Verified Clause</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
                 4. Maintenance Condition Clause: Free Sample Drafting
-              </h2>
+              </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed">
                 If you are a parent considering a gift deed or settlement deed, you must never sign a standard template drafted by property brokers. To ensure protection under Section 23 of the MWPSC Act, 2007, ensure this exact lawyer-approved covenant is incorporated into the deed.
               </p>
@@ -834,9 +834,9 @@ export default function GiftDeedCancellationClient() {
                 <Eye className="w-4 h-4" />
                 <span>Visual Blueprint &bull; Statutory Judicial Flow</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
                 5. Visual Blueprint: Gift Cancellation Roadmap
-              </h2>
+              </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed">
                 The diagram below illustrates the comprehensive statutory architecture of gift deed cancellation in India, capturing the legal stages from gift deed execution to Maintenance Tribunal voiding under Section 23.
               </p>
@@ -881,9 +881,9 @@ export default function GiftDeedCancellationClient() {
                 <Layers className="w-4 h-4" />
                 <span>Procedural Protocol &bull; 6-Stage SOP</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
                 6. How Parents File Before the Maintenance Tribunal
-              </h2>
+              </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed">
                 Cancelling a gift deed under the Senior Citizens Act does not require an expensive civil suit in District Court. The proceeding is conducted before the specialized <strong>Maintenance Tribunal</strong> presided over by the Sub-Divisional Magistrate (SDM/SDO).
               </p>
@@ -947,9 +947,9 @@ export default function GiftDeedCancellationClient() {
                 <ShieldCheck className="w-4 h-4" />
                 <span>Evidentiary Dossier &bull; 4 Legal Pillars</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
                 7. Key Evidence Required to Cancel a Gift Deed
-              </h2>
+              </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed">
                 Maintenance Tribunals conduct summary proceedings, making documentary evidence decisive. Parents must present concrete records across four specific evidentiary pillars to withstand appellate scrutiny.
               </p>
@@ -1004,9 +1004,9 @@ export default function GiftDeedCancellationClient() {
                 <Building className="w-4 h-4" />
                 <span>Judicial Hierarchy &bull; Appeals Process</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
                 8. Three-Tier Appeals: Tribunal, Collector, High Court
-              </h2>
+              </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed">
                 When a Maintenance Tribunal passes an order voiding a gift deed, aggrieved children frequently attempt to stall eviction by filing appeals. Understanding the jurisdictional hierarchy ensures parents are prepared for every stage of litigation.
               </p>
@@ -1063,9 +1063,9 @@ export default function GiftDeedCancellationClient() {
                 <Clock className="w-4 h-4" />
                 <span>Statutory Timeframe &bull; Procedural Milestones</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
                 9. Procedural Timeline: From Notice to Possession Recovery
-              </h2>
+              </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed">
                 Section 5(6) of the Act establishes an expedited timeline to prevent elderly parents from enduring prolonged civil trials. The table below charts the realistic procedural lifecycle from initial notice to full physical repossession.
               </p>
@@ -1134,9 +1134,9 @@ export default function GiftDeedCancellationClient() {
                 <AlertTriangle className="w-4 h-4" />
                 <span>Specialized Situations &bull; Practical Defense</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
                 10. Four Complex Scenarios: Daughters-in-Law &amp; Third Parties
-              </h2>
+              </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed">
                 Property disputes involving senior citizens often intersect with other matrimonial and property laws. Here is how Indian courts handle four frequent conflict scenarios.
               </p>
@@ -1191,9 +1191,9 @@ export default function GiftDeedCancellationClient() {
                 <ShieldCheck className="w-4 h-4" />
                 <span>Competitor Gap &bull; Estate Planning Truth</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
                 11. Why a Will is Safer Than a Conditional Gift Deed
-              </h2>
+              </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed">
                 While the Supreme Court&apos;s <em>Urmila Dixit</em> ruling provides historic protection, consider the emotional reality: <strong>an elderly mother had to fight her own son through four layers of courts all the way to the Supreme Court of India</strong> to reclaim her home.
               </p>
@@ -1280,9 +1280,9 @@ export default function GiftDeedCancellationClient() {
                 <Zap className="w-4 h-4" />
                 <span>Interactive Assessment Tool &bull; Instant Analysis</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
                 12. Interactive Check: Are You at Risk Under a Gift Deed?
-              </h2>
+              </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed">
                 Use this free diagnostic tool to evaluate your property transfer risk under the Senior Citizens Act, 2007 and discover the safest legal strategy for your family.
               </p>
@@ -1438,9 +1438,9 @@ export default function GiftDeedCancellationClient() {
                 <HelpCircle className="w-4 h-4" />
                 <span>Frequently Asked Questions &bull; Direct Answers</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
                 13. Frequently Asked Questions: Cancelling a Gift Deed
-              </h2>
+              </h3>
               <p className="text-sm text-slate-600 leading-relaxed">
                 Click any question below to expand detailed legal explanations from our senior succession advocates.
               </p>
@@ -1527,9 +1527,9 @@ export default function GiftDeedCancellationClient() {
                 <BookOpen className="w-4 h-4" />
                 <span>Statutory Authority &bull; Verified References</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#172228] tracking-tight">
                 14. Official Legal Citations &amp; Statutory References
-              </h2>
+              </h3>
 
               <div className="space-y-3 text-xs sm:text-sm text-slate-700 leading-relaxed">
                 <p>

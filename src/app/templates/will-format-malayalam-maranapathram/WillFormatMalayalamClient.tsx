@@ -590,9 +590,9 @@ Date: [Date]`;
                 <ScrollText className="w-4 h-4" />
                 <span>ഔദ്യോഗിക കരട് രൂപം</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 2. Complete Maranapathram Format: Native Malayalam Draft
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 കേരളത്തിലെ സബ് രജിസ്ട്രാർ ഓഫീസുകൾക്കും റവന്യൂ വില്ലേജ് ഓഫീസുകൾക്കും അനുയോജ്യമായ പൂർണ്ണ
                 മലയാളം വിൽപത്രം കരട് താഴെ നൽകുന്നു. ഇത് പകർത്തി നിങ്ങളുടെ വിശദാംശങ്ങൾ അനുസരിച്ച് മാറ്റിയെഴുതാവുന്നതാണ്.
@@ -644,9 +644,9 @@ Date: [Date]`;
                 <Globe className="w-4 h-4" />
                 <span>ഇംഗ്ലീഷ് പരിഭാഷ</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 3. English Translation: Malayalam Will Clauses Explained
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 For Non-Resident Indians (NRIs) living in the Gulf, UK, US, and financial institutions
                 requiring an English translation of Malayalam Will clauses, below is the legally certified
@@ -689,9 +689,9 @@ Date: [Date]`;
                 <Sliders className="w-4 h-4" />
                 <span>പ്രത്യേക വ്യവസ്ഥകൾ</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 4. Interactive Clause Selector: Customize Your Kerala Will
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 കുടുംബത്തിന്റെ സവിശേഷ സാഹചര്യങ്ങൾക്കനുസരിച്ച് വിൽപത്രത്തിൽ ഉൾപ്പെടുത്തേണ്ട പ്രത്യേക
                 വ്യവസ്ഥകൾ താഴെ നിന്നും തിരഞ്ഞെടുക്കുക:
@@ -767,9 +767,9 @@ Date: [Date]`;
                 <Building className="w-4 h-4" />
                 <span>ഭൂമി ഷെഡ്യൂൾ രേഖപ്പെടുത്തൽ</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 5. Kerala Land Schedule: Resurvey &amp; Thandapper Details
-              </h2>
+              </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   കേരളത്തിൽ രജിസ്ട്രേഷൻ നടത്തുമ്പോഴും വില്ലേജ് ഓഫീസിൽ പോക്കുവരവ് (പോക്കുവരവ് / കരമടയ്ക്കൽ)
@@ -831,9 +831,9 @@ Date: [Date]`;
                 <Scale className="w-4 h-4" />
                 <span>ഹൈക്കോടതി വിധി &amp; പ്രൊബേറ്റ് ഇളവ്</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 6. Kerala Probate Moat: Why High Court Probate Is Exempt
-              </h2>
+              </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   ഇന്ത്യയിലെ പല ഓൺലൈൻ പോർട്ടലുകളും ബാങ്കുകളും വിൽപത്ര പ്രകാരം സ്വത്ത് കൈമാറ്റം ചെയ്യാൻ
@@ -889,9 +889,9 @@ Date: [Date]`;
                 <Calculator className="w-4 h-4" />
                 <span>രജിസ്ട്രേഷൻ ഫീസ് കാൽക്കുലേറ്റർ</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 7. PEARL Portal Fee Guide &amp; SRO Registration Rules
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 കേരള രജിസ്ട്രേഷൻ വകുപ്പിന്റെ PEARL പോർട്ടൽ ചട്ടങ്ങൾ അനുസരിച്ചുള്ള ഔദ്യോഗിക സർക്കാർ ഫീസ്
                 താഴെ കണക്കാക്കാം:
@@ -989,9 +989,9 @@ Date: [Date]`;
                 <FileCheck className="w-4 h-4" />
                 <span>താരതമ്യ പട്ടിക</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 8. Comparison: Registered Will vs Dhanam vs Ozhivupathram
-              </h2>
+              </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   കേരളത്തിൽ കുടുംബ സ്വത്തുക്കൾ അടുത്ത തലമുറയിലേക്ക് കൈമാറാൻ വിൽപത്രം കൂടാതെ ധനനിശ്ചയം
@@ -1052,9 +1052,9 @@ Date: [Date]`;
                 <FileText className="w-4 h-4" />
                 <span>ഘട്ടങ്ങൾ (SOP)</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 9. Step-by-Step SOP: Drafting to Registration in Kerala
-              </h2>
+              </h3>
               <div className="space-y-4 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   കേരളത്തിൽ ഒരു വിൽപത്രം തയ്യാറാക്കി രജിസ്ട്രേഷൻ പൂർത്തിയാക്കുന്നതിനുള്ള 5 സുപ്രധാന ഘട്ടങ്ങൾ:
@@ -1147,9 +1147,9 @@ Date: [Date]`;
                 <Building2 className="w-4 h-4" />
                 <span>പോക്കുവരവ് &amp; തണ്ടപ്പേർ മാറ്റം</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 10. Pokkuvarav SOP: Thandapper Transfer at Village Office
-              </h2>
+              </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   വിൽപത്രം എഴുതിയ വ്യക്തി മരണമടഞ്ഞാൽ മാത്രമേ വിൽപത്രം പ്രാബല്യത്തിൽ വരികയുള്ളൂ. മരണശേഷം
@@ -1181,9 +1181,9 @@ Date: [Date]`;
                 <UserCheck className="w-4 h-4" />
                 <span>കേസ് പഠനങ്ങൾ</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 11. Practical Case Studies: Kochi, Kozhikode &amp; Thrissur
-              </h2>
+              </h3>
               <div className="space-y-4 text-slate-700 leading-relaxed text-sm md:text-base">
                 {/* Case 1 */}
                 <div className="bg-white rounded-2xl border border-slate-200 p-5 space-y-2">
@@ -1242,9 +1242,9 @@ Date: [Date]`;
                 <FileCheck className="w-4 h-4" />
                 <span>രേഖകളും മെഡിക്കൽ സർട്ടിഫിക്കറ്റും</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 12. Sub-Registrar Document Checklist &amp; Doctor Certificate
-              </h2>
+              </h3>
 
               {/* SRO Checklist */}
               <div className="bg-white rounded-3xl border border-slate-200/90 shadow-sm p-5 sm:p-7 space-y-4">
@@ -1311,9 +1311,9 @@ Date: [Date]`;
                 <Calculator className="w-4 h-4" />
                 <span>ബന്ധപ്പെട്ട കാൽക്കുലേറ്ററുകൾ &amp; ടൂളുകൾ</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 13. Contextual Estate Calculators &amp; Succession Tools
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 വിൽപത്ര തയ്യാറാക്കലിനും അനന്തരാവകാശ സ്വത്തുക്കളുടെ നികുതി കണക്കാക്കലിനുമുള്ള മറ്റ് ഓൺലൈൻ ടൂളുകൾ:
               </p>
@@ -1391,9 +1391,9 @@ Date: [Date]`;
                 <Scale className="w-4 h-4" />
                 <span>അഭിഭാഷക മേൽനോട്ടം</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 14. Legal Backing: Senior Counsel Succession Profile
-              </h2>
+              </h3>
               <div className="bg-white rounded-3xl border border-slate-200/90 shadow-sm p-6 sm:p-8 space-y-4">
                 <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
                   <div className="w-16 h-16 rounded-full bg-rose-100 text-[#C65378] font-black text-xl flex items-center justify-center shrink-0">
@@ -1433,9 +1433,9 @@ Date: [Date]`;
                 <HelpCircle className="w-4 h-4" />
                 <span>സംശയനിവാരണം</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 15. Frequently Asked Questions: Kerala Maranapathram
-              </h2>
+              </h3>
               <div className="space-y-3">
                 {FAQS_DATA.map((faq, idx) => {
                   const isOpen = openFaq === idx;
@@ -1473,9 +1473,9 @@ Date: [Date]`;
                 <Landmark className="w-4 h-4" />
                 <span>ഔദ്യോഗിക റഫറൻസുകൾ</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 16. Official Kerala Statutory References &amp; Portals
-              </h2>
+              </h3>
               <div className="bg-white rounded-3xl border border-slate-200/90 shadow-sm p-5 sm:p-7 space-y-4 text-xs sm:text-sm text-slate-700 leading-relaxed">
                 <p>
                   ഈ മാർഗ്ഗനിർദ്ദേശങ്ങളിൽ പരാമർശിച്ചിട്ടുള്ള ഔദ്യോഗിക നിയമങ്ങളും സർക്കാർ പോർട്ടലുകളും താഴെ നൽകുന്നു:

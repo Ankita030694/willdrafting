@@ -45,7 +45,7 @@ export const metadata: Metadata = {
         url: "https://www.willdrafting.in/images/housing-society-flat-transfer-document-checker-og.jpg",
         width: 1376,
         height: 768,
-        alt: "Cooperative Housing Society Flat Transfer After Death Document Checker - Form 14 to 19 and MCS Act Guide",
+        alt: "Cooperative Housing Society Flat Transfer After Death Document Checker - Form 14-19",
       },
     ],
   },

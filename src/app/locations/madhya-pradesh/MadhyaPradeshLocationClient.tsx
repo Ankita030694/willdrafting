@@ -539,9 +539,9 @@ export default function MadhyaPradeshLocationClient({ faqs }: Props) {
                   <Scale className="w-4 h-4 text-[#C65378]" />
                   <span>STATUTORY ARCHITECTURE &amp; REVENUE CODES</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   1. Will Drafting &amp; Legal Framework in Madhya Pradesh
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Testamentary succession across Madhya Pradesh is governed by central statutes and state revenue laws. Understanding how these acts interact guarantees that your Will remains valid, contest-proof, and smoothly enforceable upon demise:
                 </p>
@@ -644,9 +644,9 @@ export default function MadhyaPradeshLocationClient({ faqs }: Props) {
                   <HelpCircle className="w-4 h-4 text-[#C65378]" />
                   <span>SECTION 18(e) REGISTRATION ACT ANALYSIS</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   2. Is Will Registration Mandatory in Madhya Pradesh?
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Under Section 18(e) of the Registration Act, 1908, Will registration is strictly <strong>optional</strong> across Madhya Pradesh. A Will written or typed on plain A4 paper is legally enforceable if properly executed. However, legal advisors strongly encourage registration for several practical reasons:
                 </p>
@@ -692,9 +692,9 @@ export default function MadhyaPradeshLocationClient({ faqs }: Props) {
                   <Scale className="w-4 h-4 text-[#C65378]" />
                   <span>HIGH COURT OF MADHYA PRADESH JURISPRUDENCE</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   3. MP Probate Law: Complete Exemption in Madhya Pradesh
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   One of the most common legal questions from property owners in Madhya Pradesh is whether their executors must obtain a court probate before transferring properties. The legal answer under MP High Court precedents is clear and definitive:
                 </p>
@@ -729,9 +729,9 @@ export default function MadhyaPradeshLocationClient({ faqs }: Props) {
                   <MapPin className="w-4 h-4 text-[#C65378]" />
                   <span>REGISTRATION HUBS &amp; DISTRICT OFFICES</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   4. MP Sub-Registrar Offices: District SRO Directory
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Under MP Sampada 2.0, appointment slots can be booked at your local Sub-Registrar Office. Search our verified registry directory across Indore, Bhopal, Jabalpur, Gwalior, and Ujjain:
                 </p>
@@ -807,9 +807,9 @@ export default function MadhyaPradeshLocationClient({ faqs }: Props) {
                   <Building className="w-4 h-4 text-[#C65378]" />
                   <span>REGIONAL CITIES COVERAGE &amp; ASSET NUANCES</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   5. Regional Cities: District-Wise Will Drafting in MP
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Estate assets in Madhya Pradesh span commercial hubs and IDA townships in Indore, government administrative colonies in Bhopal, legal and military cantonments in Jabalpur, historic Havelis in Gwalior, and extensive agricultural acreage on MP Bhulekh. Our estate advocates deliver customized legal drafting, MP Sampada 2.0 slot booking, and Sub-Registrar accompaniment across all key regional cities:
                 </p>
@@ -1257,9 +1257,9 @@ export default function MadhyaPradeshLocationClient({ faqs }: Props) {
                   <FileCheck className="w-4 h-4 text-[#C65378]" />
                   <span>STANDARD OPERATING PROCEDURE</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   6. Step-by-Step SOP: Drafting to MP Sampada Registration
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Follow this five-step standard operating procedure to prepare, execute, and register an enforceable Will before any Sub-Registrar across Madhya Pradesh:
                 </p>
@@ -1350,9 +1350,9 @@ export default function MadhyaPradeshLocationClient({ faqs }: Props) {
                   <Home className="w-4 h-4 text-[#C65378]" />
                   <span>DOORSTEP SUB-REGISTRAR EXECUTION</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   7. Section 31 Doorstep SRO Registration for Senior Citizens
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Visiting crowded government registry offices can be strenuous for elderly, bedridden, or medically unwell individuals. Section 31 of the Registration Act, 1908 provides a legal mechanism for doorstep registration:
                 </p>
@@ -1417,9 +1417,9 @@ export default function MadhyaPradeshLocationClient({ faqs }: Props) {
                   <FileCheck className="w-4 h-4 text-[#C65378]" />
                   <span>VERIFICATION &amp; COMPLIANCE REQUIREMENTS</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   8. Document Checklist for MP Sub-Registrar Offices
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Ensure you carry all mandatory documents to prevent delays during your MP Sampada appointment. Use our interactive checklist to track your preparation:
                 </p>
@@ -1480,9 +1480,9 @@ export default function MadhyaPradeshLocationClient({ faqs }: Props) {
                   <Home className="w-4 h-4 text-[#C65378]" />
                   <span>MADHYA PRADESH ASSET CATEGORIES</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   9. MP Property Types: IDA, BDA Plots &amp; Farmland
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Real estate in Madhya Pradesh comprises distinct statutory tenures. Your Will should address each property category according to its specific succession dynamics:
                 </p>
@@ -1538,9 +1538,9 @@ export default function MadhyaPradeshLocationClient({ faqs }: Props) {
                   <Stamp className="w-4 h-4 text-[#C65378]" />
                   <span>GOVERNMENT CHARGES &amp; STAMP EXEMPTION</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   10. Official MP Sampada Registration Fees &amp; Charges
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Unlike sale deeds or gift deeds, executing and registering a Will in Madhya Pradesh does not attract ad-valorem stamp duty. The government charges are purely nominal:
                 </p>
@@ -1588,9 +1588,9 @@ export default function MadhyaPradeshLocationClient({ faqs }: Props) {
                   <Award className="w-4 h-4 text-[#C65378]" />
                   <span>TRANSPARENT VALUE-BASED PACKAGES</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   11. Transparent Will Packages &amp; Legal Fees in MP
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Select the estate planning package that fits your family&apos;s assets. All options feature lawyer drafting with zero hidden charges:
                 </p>
@@ -1735,9 +1735,9 @@ export default function MadhyaPradeshLocationClient({ faqs }: Props) {
                   <HelpCircle className="w-4 h-4 text-[#C65378]" />
                   <span>MADHYA PRADESH SUCCESSION QUERIES</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   12. Frequently Asked Questions: Will Drafting in MP
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Clear answers to key legal questions about Will drafting, MP Sampada registration, probate exemption, and property transfers in Madhya Pradesh:
                 </p>
@@ -1782,9 +1782,9 @@ export default function MadhyaPradeshLocationClient({ faqs }: Props) {
                   <Landmark className="w-4 h-4 text-[#C65378]" />
                   <span>OFFICIAL STATUTES &amp; LEGAL PORTALS</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   13. Statutory Citations &amp; MP Legal Framework
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Our estate planning services strictly adhere to applicable central statutes, state enactments, and authoritative online government portals across Madhya Pradesh:
                 </p>

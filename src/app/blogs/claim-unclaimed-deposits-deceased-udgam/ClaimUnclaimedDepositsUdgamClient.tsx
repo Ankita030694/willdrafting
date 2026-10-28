@@ -534,9 +534,9 @@ export default function ClaimUnclaimedDepositsUdgamClient() {
                 <Scale className="w-4 h-4" />
                 <span>SECTION 2: THE STATUTORY MECHANISM</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 2. Scale of Unclaimed Money: The RBI DEA Fund Explained
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Why does bank money become &quot;unclaimed&quot; in India? The answer lies in the 10-year rule enacted under Section 26 of the Banking Regulation Act, 1949.
               </p>
@@ -572,9 +572,9 @@ export default function ClaimUnclaimedDepositsUdgamClient() {
                 <Search className="w-4 h-4" />
                 <span>SECTION 3: PORTAL ROADMAP</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 3. Step-by-Step Guide: How to Search Deceased on UDGAM
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Searching for a deceased relative&apos;s unclaimed accounts on UDGAM takes less than 10 minutes. Follow these practical steps to pull up dormant bank records:
               </p>
@@ -617,9 +617,9 @@ export default function ClaimUnclaimedDepositsUdgamClient() {
                 <FileCheck className="w-4 h-4" />
                 <span>SECTION 4: VERIFICATION DOSSIER</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 4. Required Documents: Claiming with or Without a Nominee
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Once you have identified the bank and generated the UDRN, you must assemble the claim dossier. The exact paperwork depends entirely on whether a registered nominee exists on the account.
               </p>
@@ -789,9 +789,9 @@ export default function ClaimUnclaimedDepositsUdgamClient() {
                 <CreditCard className="w-4 h-4" />
                 <span>SECTION 5: MONETARY CEILINGS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 5. Bank Claim Thresholds: Small Claims vs Large Claims
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Under RBI directives, every bank&apos;s Board of Directors has established an internal monetary ceiling. Within this limit, branch managers can settle claims on an indemnity basis without asking grieving families to spend tens of thousands on court fees and lawyers.
               </p>
@@ -851,9 +851,9 @@ export default function ClaimUnclaimedDepositsUdgamClient() {
                 <Layers className="w-4 h-4" />
                 <span>SECTION 6: ASSET CATEGORIES</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 6. Claim Process by Account: Savings, FDs, RDs &amp; PPF
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Different financial products have distinct interest calculation rules and operational procedures when transferred to the DEA Fund:
               </p>
@@ -907,9 +907,9 @@ export default function ClaimUnclaimedDepositsUdgamClient() {
                 <Scale className="w-4 h-4" />
                 <span>SECTION 7: HEAD-TO-HEAD COMPARISON</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 7. Head-to-Head Comparison: Three Bank Claim Pathways
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Understanding which route your family qualifies for is essential before you spend money on stamp paper, affidavits, or legal counsel:
               </p>
@@ -946,9 +946,9 @@ export default function ClaimUnclaimedDepositsUdgamClient() {
                 <Clock className="w-4 h-4" />
                 <span>SECTION 8: TURNAROUND TIMES</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 8. Timeline Expectations: How Long Does Settlement Take?
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 How quickly will the bank transfer the money to your account? The answer depends strictly on documentation completeness and regulatory deadlines:
               </p>
@@ -996,9 +996,9 @@ export default function ClaimUnclaimedDepositsUdgamClient() {
                 <ShieldCheck className="w-4 h-4" />
                 <span>SECTION 9: PROACTIVE ESTATE PLANNING</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 9. How a Will and Matched Nominees Prevent Frozen Money
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Why did over <strong>₹78,000 Crore</strong> end up stranded in the DEA Fund in the first place? In 95% of cases, it happens because of two simple mistakes:
               </p>
@@ -1051,9 +1051,9 @@ export default function ClaimUnclaimedDepositsUdgamClient() {
                 <AlertTriangle className="w-4 h-4" />
                 <span>SECTION 10: PITFALLS &amp; DEFENSES</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 10. Common Rejection Reasons and How to Avoid Them
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Bank legal departments reject roughly 25% of first-time deceased depositor claims due to avoidable clerical errors:
               </p>
@@ -1097,9 +1097,9 @@ export default function ClaimUnclaimedDepositsUdgamClient() {
                 <BookOpen className="w-4 h-4" />
                 <span>SECTION 11: REGULATORY CITATIONS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 11. Legal Framework and Official Statutory Citations
-              </h2>
+              </h3>
               <ul className="list-disc pl-5 text-xs text-slate-600 space-y-2 leading-relaxed">
                 <li>
                   <strong>Banking Regulation Act, 1949:</strong> Section 26 (Return of Unclaimed Deposits), Section 26A (Depositor Education and Awareness Fund), Section 45ZA to 45ZF (Nomination Facilities).
@@ -1158,9 +1158,9 @@ export default function ClaimUnclaimedDepositsUdgamClient() {
                 <HelpCircle className="w-4 h-4 text-[#C65378]" />
                 <span>SECTION 12: DIRECT ANSWERS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 Frequently Asked Questions: Claiming Deceased Deposits
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Find clear statutory answers to common questions about claiming unclaimed money from UDGAM and the RBI DEA Fund.
               </p>

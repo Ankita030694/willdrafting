@@ -547,9 +547,9 @@ export default function KarnatakaLocationClient({ faqs }: Props) {
                   <span>STATUTORY CODIFICATION IN KARNATAKA</span>
                 </div>
                 {/* H2: Length 47 chars <= 70 */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   1. Will Drafting &amp; Legal Framework in Karnataka
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Testamentary succession in Karnataka is regulated by central statutes alongside specialized state land revenue and municipal laws:
                 </p>
@@ -606,9 +606,9 @@ export default function KarnatakaLocationClient({ faqs }: Props) {
                   <span>KAVERI 2.0 REGISTRATION PROTOCOLS</span>
                 </div>
                 {/* H2: Length 46 chars <= 70 */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   2. Is Will Registration Mandatory in Karnataka?
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   While Will registration is legally optional under Section 18(e) of the Registration Act, 1908, senior estate advocates universally advise formal Book III registration in Karnataka for three critical reasons:
                 </p>
@@ -663,9 +663,9 @@ export default function KarnatakaLocationClient({ faqs }: Props) {
                   <span>HIGH COURT OF KARNATAKA JURISPRUDENCE</span>
                 </div>
                 {/* H2: Length 56 chars <= 70 */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   3. Karnataka Probate Law: High Court Exemption Standards
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   A widespread misconception among property owners in Bengaluru and across Karnataka is that probate from a civil court is compulsory before inherited real estate or bank accounts can be transferred.
                 </p>
@@ -695,9 +695,9 @@ export default function KarnatakaLocationClient({ faqs }: Props) {
                   <span>DEPARTMENT OF STAMPS &amp; REGISTRATION DIRECTORY</span>
                 </div>
                 {/* H2: Length 52 chars <= 70 */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   4. Karnataka SRO Directory: Kaveri 2.0 Online Booking
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Will registration across all 31 districts of Karnataka is processed through the state government&apos;s modernized <strong>Kaveri 2.0 Portal</strong> (kaveri.karnataka.gov.in). Use the directory below to explore major Sub-Registrar Office hubs, operational timings, and territorial jurisdictions:
                 </p>
@@ -783,9 +783,9 @@ export default function KarnatakaLocationClient({ faqs }: Props) {
                   <span>REGIONAL CITIES COVERAGE &amp; ASSET NUANCES</span>
                 </div>
                 {/* H2: Length 55 chars <= 70 */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   5. Regional Cities: City-Wise Will Drafting in Karnataka
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Estate holdings across Karnataka vary widely, from multi-crore tech equity, unvested ESOPs, and BBMP luxury apartments in Bengaluru, to MUDA residential layouts in Mysuru, coastal export and tile units in Mangaluru, engineering foundries in Belagavi, and APMC wholesale firms in Hubballi. Our estate advocates deliver customized legal drafting, Kaveri 2.0 online slot scheduling, and Sub-Registrar accompaniment across all key regional cities:
                 </p>
@@ -1133,9 +1133,9 @@ export default function KarnatakaLocationClient({ faqs }: Props) {
                   <span>SYSTEMATIC 5-STEP PROTOCOL</span>
                 </div>
                 {/* H2: Length 55 chars <= 70 */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   6. Step-by-Step SOP: Drafting to Kaveri 2.0 Registration
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Follow this verified standard operating procedure to draft, execute, and register your Will under Karnataka jurisdiction:
                 </p>
@@ -1227,9 +1227,9 @@ export default function KarnatakaLocationClient({ faqs }: Props) {
                   <span>DOORSTEP REGISTRATION IN KARNATAKA</span>
                 </div>
                 {/* H2: Length 59 chars <= 70 */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   7. Section 31 Doorstep SRO Registration for Senior Citizens
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   For elderly citizens, bedridden individuals, or patients who cannot physically travel to congested Sub-Registrar offices in Bengaluru, Mysuru, or Mangaluru, Karnataka law provides a compassionate statutory remedy:
                 </p>
@@ -1264,9 +1264,9 @@ export default function KarnatakaLocationClient({ faqs }: Props) {
                   <span>VERIFICATION AUDIT CHECKLIST</span>
                 </div>
                 {/* H2: Length 57 chars <= 70 */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   8. Document Checklist for Karnataka Sub-Registrar Offices
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Use this interactive checklist to verify that all necessary paperwork is ready before your Kaveri 2.0 SRO appointment:
                 </p>
@@ -1317,9 +1317,9 @@ export default function KarnatakaLocationClient({ faqs }: Props) {
                   <span>ESTATE CLASSES &amp; ASSET SPECIFICITIES</span>
                 </div>
                 {/* H2: Length 59 chars <= 70 */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   9. Karnataka Property Types: Tech Assets, BBMP &amp; Bhoomi Land
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Succession planning across Karnataka requires distinct legal clauses for each asset class:
                 </p>
@@ -1376,9 +1376,9 @@ export default function KarnatakaLocationClient({ faqs }: Props) {
                   <span>TRANSPARENT GOVERNMENT TARIFFS</span>
                 </div>
                 {/* H2: Length 50 chars <= 70 */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   10. Official Kaveri 2.0 Registration Fees &amp; Charges
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Unlike sale deeds or gift deeds which attract substantial ad valorem stamp duty in Karnataka, registering a Will involves nominal government fees:
                 </p>
@@ -1427,9 +1427,9 @@ export default function KarnatakaLocationClient({ faqs }: Props) {
                   <span>TRANSPARENT PROFESSIONAL PLANS</span>
                 </div>
                 {/* H2: Length 53 chars <= 70 */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   11. Transparent Will Packages &amp; Legal Fees in Karnataka
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Choose the drafting and registration package suited to your estate complexity. Fixed transparent pricing with zero hidden fees:
                 </p>
@@ -1577,9 +1577,9 @@ export default function KarnatakaLocationClient({ faqs }: Props) {
                   <span>COMMONLY ASKED LEGAL QUESTIONS</span>
                 </div>
                 {/* H2: Length 58 chars <= 70 */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   12. Frequently Asked Questions: Will Drafting in Karnataka
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Get clear, advocate-verified answers to common questions regarding Will drafting, Kaveri 2.0 registration, and property succession across Karnataka:
                 </p>
@@ -1622,9 +1622,9 @@ export default function KarnatakaLocationClient({ faqs }: Props) {
                   <span>STATUTORY CITATIONS &amp; GOVERNMENT PORTALS</span>
                 </div>
                 {/* H2: Length 48 chars <= 70 */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   13. Statutory Citations &amp; Karnataka Legal Portals
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Testamentary instruments in Karnataka operate under the authority of key statutes and official government digital platforms:
                 </p>

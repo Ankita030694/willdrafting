@@ -477,9 +477,9 @@ export default function LegalHeirPage() {
               <FileCheck className="w-4 h-4" />
               <span>Official Document Anatomy</span>
             </div>
-            <h2 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-3">
+            <h3 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-3">
               Official Legal Heir Document Anatomy
-            </h2>
+            </h3>
             <p className="text-[0.98rem] sm:text-[1.05rem] leading-[1.65] text-[#49585F]">
               Here is how an official succession paper looks in India. It includes an official state seal, revenue office stamp, and a verified family tree.
             </p>
@@ -512,9 +512,9 @@ export default function LegalHeirPage() {
               <Scale className="w-4 h-4" />
               <span>Statutory Comparison Matrix</span>
             </div>
-            <h2 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-4">
+            <h3 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-4">
               Legal Heir Certificate vs Court Succession Certificate
-            </h2>
+            </h3>
             <p className="text-[0.98rem] sm:text-[1.05rem] leading-[1.65] text-[#49585F]">
               Choosing the right legal path saves you time and money. Check the differences between revenue certificates and court orders below.
             </p>
@@ -555,9 +555,9 @@ export default function LegalHeirPage() {
               <ShieldCheck className="w-4 h-4" />
               <span>5-Step Revenue Protocol</span>
             </div>
-            <h2 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-3">
+            <h3 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-3">
               How to Get a Legal Heir Certificate in India
-            </h2>
+            </h3>
             <p className="text-[0.98rem] sm:text-[1.05rem] leading-[1.65] text-[#49585F]">
               Follow this 5-step roadmap made by our high court lawyers. It helps your application pass local revenue checks without delay.
             </p>
@@ -617,9 +617,9 @@ export default function LegalHeirPage() {
                 <Users className="w-4 h-4" />
                 <span>Family Settlement &amp; Dispute Protection</span>
               </div>
-              <h2 className="text-[1.75rem] sm:text-[2.3rem] font-medium leading-[1.14] tracking-[-0.02em] text-[#111827] mb-4">
+              <h3 className="text-[1.75rem] sm:text-[2.3rem] font-medium leading-[1.14] tracking-[-0.02em] text-[#111827] mb-4">
                 Handling Sibling Disputes, Sisters &amp; NRI Co-Heirs
-              </h2>
+              </h3>
               <p className="text-[15px] sm:text-[16px] leading-[1.7] text-[#374151] mb-4">
                 Estate issues often start when siblings disagree or live abroad. Sometimes brothers try to leave married sisters out of property papers.
               </p>
@@ -654,9 +654,9 @@ export default function LegalHeirPage() {
               <BookOpen className="w-4 h-4" />
               <span>Legal Heir Statutory FAQs</span>
             </div>
-            <h2 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-3">
+            <h3 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-3">
               Frequently Asked Questions on Legal Heir Certificates
-            </h2>
+            </h3>
             <p className="text-[0.98rem] sm:text-[1.05rem] leading-[1.65] text-[#49585F]">
               Here are clear legal answers from our team at AMA Legal Solutions:
             </p>

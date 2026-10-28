@@ -750,13 +750,13 @@ export default function PricingPage() {
             <div className="inline-flex items-center text-[#C65378] text-[0.75rem] font-bold tracking-[0.16em] uppercase mb-2.5">
               <span>Indian Statutory Exemptions</span>
             </div>
-            {/* H2 < 70 chars (53 chars) */}
-            <h2
+            {/* H3 < 70 chars (53 chars) */}
+            <h3
               id="statutory-savings-heading"
               className="text-[1.85rem] sm:text-[2.4rem] lg:text-[2.75rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-3"
             >
               Why Making a Will in India Costs Less Than You Think
-            </h2>
+            </h3>
             <p className="text-[0.98rem] sm:text-[1.05rem] text-[#49585F] leading-relaxed">
               Many families overpay for stamp papers, mandatory registration brokers, or recurring codicil fees. Here is what Indian statutory law actually states:
             </p>
@@ -836,13 +836,13 @@ export default function PricingPage() {
             <div className="inline-flex items-center text-[#C65378] text-[0.75rem] font-bold tracking-[0.16em] uppercase mb-2.5">
               <span>Detailed Plan Specifications</span>
             </div>
-            {/* H2 < 70 chars (44 chars) */}
-            <h2
+            {/* H3 < 70 chars (44 chars) */}
+            <h3
               id="comparison-matrix-heading"
               className="text-[1.85rem] sm:text-[2.4rem] lg:text-[2.75rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-3"
             >
               Full Feature &amp; Statutory Comparison Matrix
-            </h2>
+            </h3>
             <p className="text-[0.98rem] sm:text-[1.05rem] text-[#49585F] leading-relaxed">
               Compare every clause, advocate verification step, and execution deliverable across our three plans and traditional law firm retainers.
             </p>
@@ -918,13 +918,13 @@ export default function PricingPage() {
               <div className="inline-flex items-center text-[#C65378] text-[0.75rem] font-bold tracking-[0.16em] uppercase mb-2.5">
                 <span>Common Pricing Questions</span>
               </div>
-              {/* H2 < 70 chars (44 chars) */}
-              <h2
+              {/* H3 < 70 chars (44 chars) */}
+              <h3
                 id="pricing-faq-heading"
                 className="text-[1.85rem] sm:text-[2.25rem] font-medium leading-[1.15] tracking-[-0.02em] text-[#111827] mb-4"
               >
                 Frequently Asked Questions on Will Charges
-              </h2>
+              </h3>
               <p className="text-sm sm:text-[0.95rem] text-[#49585F] leading-relaxed mb-6">
                 Straightforward answers about our one-time fee structure, stamp duty exemptions, and advocate verification under Indian succession law.
               </p>

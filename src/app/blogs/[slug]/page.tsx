@@ -1,8 +1,11 @@
 import React from "react";
+import fs from "node:fs";
+import path from "node:path";
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { ObjectId } from "mongodb";
 import {
   ArrowLeft,
   ArrowUpRight,
@@ -16,7 +19,7 @@ import {
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { BLOG_ARTICLES, getArticleBySlug, getRelatedArticles } from "@/data/blogs";
-import { blogsCol } from "@/lib/db/collections";
+import { blogImagesCol, blogsCol } from "@/lib/db/collections";
 import type { BlogDoc } from "@/lib/db/types";
 
 export const dynamic = "force-dynamic";
@@ -26,6 +29,137 @@ interface PageProps {
   params: Promise<{
     slug: string;
   }>;
+}
+
+const PUBLIC_DIR = path.resolve(process.cwd(), "public");
+
+function extractBlogImageObjectId(rawValue?: string | null): string | null {
+  if (!rawValue || typeof rawValue !== "string") return null;
+  let pathname = rawValue.trim();
+  if (/^https?:\/\//i.test(pathname)) {
+    try {
+      const parsed = new URL(pathname);
+      const host = parsed.hostname.toLowerCase();
+      if (host === "willdrafting.in" || host === "www.willdrafting.in") {
+        pathname = parsed.pathname;
+      } else {
+        return null;
+      }
+    } catch {
+      return null;
+    }
+  }
+  pathname = pathname.split(/[?#]/)[0].trim();
+  const match = pathname.match(/^\/api\/blog-images\/([^/]+)$/);
+  if (!match) return null;
+  const cleanId = match[1].replace(/\.(png|jpg|jpeg|webp|gif|svg)$/i, "").trim();
+  return /^[a-fA-F0-9]{24}$/.test(cleanId) ? cleanId.toLowerCase() : null;
+}
+
+async function getValidBlogImageIds(
+  rawValues: Array<string | null | undefined>
+): Promise<Set<string> | undefined> {
+  const candidateHexIds = Array.from(
+    new Set(
+      rawValues
+        .map((v) => extractBlogImageObjectId(v))
+        .filter((id): id is string => Boolean(id))
+    )
+  );
+  if (candidateHexIds.length === 0) return new Set<string>();
+  try {
+    const imgCol = await blogImagesCol();
+    const existingImgs = await imgCol
+      .find(
+        { _id: { $in: candidateHexIds.map((id) => new ObjectId(id)) } },
+        { projection: { _id: 1 } }
+      )
+      .toArray();
+    return new Set(existingImgs.map((doc) => doc._id.toString().toLowerCase()));
+  } catch {
+    return undefined;
+  }
+}
+
+function resolveSafeBlogAsset(
+  rawImage?: string | null,
+  validBlogImageIds?: Set<string>,
+  fallback: string | null = "/desktopusp.jpg"
+): string | null {
+  if (!rawImage || typeof rawImage !== "string") return fallback;
+  const trimmed = rawImage.trim();
+  if (!trimmed) return fallback;
+
+  if (/^data:image\/[a-zA-Z0-9.+-]+;base64,/i.test(trimmed)) {
+    return trimmed;
+  }
+
+  let candidatePath = trimmed;
+  if (/^https?:\/\//i.test(trimmed)) {
+    try {
+      const parsed = new URL(trimmed);
+      const host = parsed.hostname.toLowerCase();
+      if (host === "willdrafting.in" || host === "www.willdrafting.in") {
+        candidatePath = parsed.pathname;
+      } else {
+        return trimmed;
+      }
+    } catch {
+      return fallback;
+    }
+  }
+
+  const cleanPathname = candidatePath.split(/[?#]/)[0].trim();
+  if (!cleanPathname) return fallback;
+
+  if (cleanPathname.startsWith("/api/")) {
+    const objectId = extractBlogImageObjectId(cleanPathname);
+    if (!objectId) return fallback;
+    if (validBlogImageIds && !validBlogImageIds.has(objectId)) {
+      return fallback;
+    }
+    return cleanPathname;
+  }
+
+  let decodedRelPath = cleanPathname.startsWith("/")
+    ? cleanPathname.slice(1)
+    : cleanPathname;
+  try {
+    decodedRelPath = decodeURIComponent(decodedRelPath);
+  } catch {
+    return fallback;
+  }
+  if (!decodedRelPath) return fallback;
+
+  const fullPublicPath = path.resolve(PUBLIC_DIR, decodedRelPath);
+  if (
+    fullPublicPath !== PUBLIC_DIR &&
+    fullPublicPath.startsWith(PUBLIC_DIR + path.sep)
+  ) {
+    try {
+      if (fs.statSync(fullPublicPath).isFile()) {
+        return cleanPathname.startsWith("/") ? cleanPathname : `/${cleanPathname}`;
+      }
+    } catch {
+      // File does not exist in public/
+    }
+  }
+
+  return fallback;
+}
+
+function resolveSafeBlogImage(
+  rawImage?: string | null,
+  validBlogImageIds?: Set<string>
+): string {
+  return resolveSafeBlogAsset(rawImage, validBlogImageIds, "/desktopusp.jpg") || "/desktopusp.jpg";
+}
+
+function resolveSafeInfographicImage(
+  rawImage?: string | null,
+  validBlogImageIds?: Set<string>
+): string | null {
+  return resolveSafeBlogAsset(rawImage, validBlogImageIds, null);
 }
 
 /* Hardcoded generateStaticParams commented out — blogs are rendered from MongoDB:
@@ -42,6 +176,90 @@ export async function generateStaticParams() {
   return params;
 }
 */
+
+function parseStrictYmd(year: number, month: number, day: number): Date | null {
+  if (
+    !Number.isInteger(year) ||
+    !Number.isInteger(month) ||
+    !Number.isInteger(day) ||
+    year < 1900 ||
+    year > 2100 ||
+    month < 1 ||
+    month > 12 ||
+    day < 1 ||
+    day > 31
+  ) {
+    return null;
+  }
+  const d = new Date(Date.UTC(year, month - 1, day, 0, 0, 0, 0));
+  if (
+    isNaN(d.getTime()) ||
+    d.getUTCFullYear() !== year ||
+    d.getUTCMonth() + 1 !== month ||
+    d.getUTCDate() !== day
+  ) {
+    return null;
+  }
+  return d;
+}
+
+function parseFlexibleDate(value: unknown): Date | null {
+  if (!value) return null;
+  if (value instanceof Date) {
+    return isNaN(value.getTime()) ? null : value;
+  }
+  if (typeof value === "number") {
+    const d = new Date(value);
+    return isNaN(d.getTime()) ? null : d;
+  }
+  if (typeof value === "string") {
+    const trimmed = value.trim();
+    if (!trimmed) return null;
+    const dmyOrMdy = trimmed.match(/^(\d{1,2})[-/.](\d{1,2})[-/.](\d{4})$/);
+    if (dmyOrMdy) {
+      const p1 = Number(dmyOrMdy[1]);
+      const p2 = Number(dmyOrMdy[2]);
+      const year = Number(dmyOrMdy[3]);
+      const dmyDate = parseStrictYmd(year, p2, p1);
+      if (dmyDate) return dmyDate;
+      const mdyDate = parseStrictYmd(year, p1, p2);
+      if (mdyDate) return mdyDate;
+      return null;
+    }
+    const ymdOrYdm = trimmed.match(/^(\d{4})[-/.](\d{1,2})[-/.](\d{1,2})$/);
+    if (ymdOrYdm) {
+      const year = Number(ymdOrYdm[1]);
+      const p1 = Number(ymdOrYdm[2]);
+      const p2 = Number(ymdOrYdm[3]);
+      const ymdDate = parseStrictYmd(year, p1, p2);
+      if (ymdDate) return ymdDate;
+      const ydmDate = parseStrictYmd(year, p2, p1);
+      if (ydmDate) return ydmDate;
+      return null;
+    }
+    const parsed = new Date(trimmed);
+    if (!isNaN(parsed.getTime())) return parsed;
+  }
+  return null;
+}
+
+function toSafeIsoDateString(...candidates: unknown[]): string {
+  for (const candidate of candidates) {
+    const parsed = parseFlexibleDate(candidate);
+    if (parsed) {
+      try {
+        return parsed.toISOString();
+      } catch {
+        // Ignore RangeError on out-of-range Date objects
+      }
+    }
+  }
+  return new Date().toISOString();
+}
+
+function normalizeBlogDateString(value: unknown, fallback?: unknown): string {
+  return toSafeIsoDateString(value, fallback).split("T")[0];
+}
 
 async function findMongoBlogBySlug(slug: string): Promise<BlogDoc | null> {
   try {
@@ -64,15 +282,16 @@ async function findRelatedMongoBlogs(currentSlug: string, count = 3) {
       .sort({ createdAt: -1 })
       .limit(count)
       .toArray();
+    const validIds = await getValidBlogImageIds(docs.map((d) => d.image));
     return docs.map((d) => ({
       id: d._id.toString(),
       slug: d.slug,
-      title: d.title,
+      title: String(d.title || "Indian Succession Law Guide"),
       lead: d.subtitle || d.metaDescription || "",
       category: d.category || "Indian Succession Law",
       readTime: d.readTime || d.readingTime || "10 min",
-      date: d.date || "2026-10-21",
-      imageSrc: d.image || "/desktopusp.jpg",
+      date: normalizeBlogDateString(d.date, d.createdAt),
+      imageSrc: resolveSafeBlogImage(d.image, validIds),
     }));
   } catch {
     return [];
@@ -87,6 +306,7 @@ function processHtmlAndExtractToc(rawHtml: string): {
 
   const toc: Array<{ id: string; text: string }> = [];
   let idx = 0;
+  let h2Count = 0;
 
   let html = rawHtml.replace(/<h2([^>]*)>([\s\S]*?)<\/h2>/gi, (_full, attrs, inner) => {
     let plain = inner.replace(/<[^>]*>/g, "").trim();
@@ -102,7 +322,11 @@ function processHtmlAndExtractToc(rawHtml: string): {
     if (plain && !/popular searches/i.test(plain)) {
       toc.push({ id, text: plain });
     }
-    return `<h2 id="${id}"${attrs}>${inner}</h2>`;
+    h2Count += 1;
+    if (h2Count === 1) {
+      return `<h2 id="${id}"${attrs}>${inner}</h2>`;
+    }
+    return `<h3 id="${id}" class="wd-article-section-h3"${attrs}>${inner}</h3>`;
   });
 
   // Ensure no <h3> or <h4> appears before the first <h2> (H2: Non-Sequential compliance)
@@ -125,11 +349,33 @@ function processHtmlAndExtractToc(rawHtml: string): {
   // Wrap tables in responsive container
   html = html.replace(/<table([\s\S]*?)<\/table>/gi, '<div class="wd-blog-table-wrap"><table$1</table></div>');
 
+  // Replace timed-out India Code DSpace handle/bitstream/query URLs with live https://legislative.gov.in/
+  html = html.replace(
+    /https?:\/\/(?:www\.)?indiacode\.nic\.in\/(?:handle\/[^\s"'<>]+|bitstream\/[^\s"'<>]+|show-data[^\s"'<>]*|\?[^\s"'<>]+)/gi,
+    "https://legislative.gov.in/"
+  );
+
+  // Cap any inline <img> alt text (double- or single-quoted) to <= 85 characters
+  html = html
+    .replace(/\balt="([^"]{86,})"/gi, (_m, altText) => `alt="${altText.slice(0, 85).trim()}"`)
+    .replace(/\balt='([^']{86,})'/gi, (_m, altText) => `alt='${altText.slice(0, 85).trim()}'`);
+
+  // Normalize any legacy /services/muslim-will-wasiyat links to the canonical template URL
+  html = html
+    .replace(
+      /\/services?\/muslim-will-wasiyat\b/gi,
+      "/templates/muslim-will-wasiyat-format-india"
+    )
+    .replace(
+      /\/blogs\/stridhan-property-rights-married-woman-india\b/gi,
+      "/blogs/hindu-woman-property-rights-stridhan-will"
+    );
+
   return { processedHtml: html, toc };
 }
 
 function splitHtmlForInfographic(html: string): [string, string] {
-  const h2Matches = Array.from(html.matchAll(/<h2\b[^>]*>/gi));
+  const h2Matches = Array.from(html.matchAll(/<(?:h2|h3[^>]*wd-article-section-h3)\b[^>]*>/gi));
   if (h2Matches.length >= 2) {
     const mid = Math.floor(h2Matches.length / 2);
     const splitIndex = h2Matches[mid].index ?? -1;
@@ -152,11 +398,13 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
   if (dbBlog) {
     const canonicalUrl = `https://www.willdrafting.in/blogs/${dbBlog.slug}`;
-    const imageUrl = dbBlog.image?.startsWith("http")
-      ? dbBlog.image
-      : `https://www.willdrafting.in${dbBlog.image?.startsWith("/") ? "" : "/"}${dbBlog.image || "desktopusp.jpg"}`;
+    const validIds = await getValidBlogImageIds([dbBlog.image]);
+    const safeImagePath = resolveSafeBlogImage(dbBlog.image, validIds);
+    const imageUrl = safeImagePath.startsWith("http")
+      ? safeImagePath
+      : `https://www.willdrafting.in${safeImagePath.startsWith("/") ? "" : "/"}${safeImagePath}`;
 
-    let safeMetaTitle = (dbBlog.metaTitle || dbBlog.title || "").trim();
+    let safeMetaTitle = String(dbBlog.metaTitle || dbBlog.title || "").trim();
     if (safeMetaTitle.length > 58) {
       safeMetaTitle = safeMetaTitle.replace(/\s*\|\s*WillDrafting(?:\.in)?$/i, "").trim();
       if (safeMetaTitle.length > 58) {
@@ -164,7 +412,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       }
     }
 
-    let safeMetaDesc = (dbBlog.metaDescription || dbBlog.subtitle || "").trim();
+    let safeMetaDesc = String(dbBlog.metaDescription || dbBlog.subtitle || "").trim();
     if (safeMetaDesc.length > 146) {
       safeMetaDesc = safeMetaDesc.slice(0, 144).replace(/\s+\S*$/, "").replace(/[.,;:\-–—]+$/, "") + ".";
     }
@@ -174,7 +422,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
         absolute: safeMetaTitle,
       },
       description: safeMetaDesc,
-      keywords: dbBlog.keywords || [],
+      keywords: Array.isArray(dbBlog.keywords) ? dbBlog.keywords.filter(Boolean).map(String) : [],
       alternates: {
         canonical: canonicalUrl,
       },
@@ -185,14 +433,14 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
         siteName: "WillDrafting.in",
         locale: "en_IN",
         type: "article",
-        publishedTime: new Date(dbBlog.date || dbBlog.createdAt).toISOString(),
-        authors: [dbBlog.author || "Advocate Anuj Anand Malik"],
+        publishedTime: toSafeIsoDateString(dbBlog.date, dbBlog.createdAt),
+        authors: [String(dbBlog.author || "Advocate Anuj Anand Malik")],
         images: [
           {
             url: imageUrl,
             width: 1200,
             height: 630,
-            alt: (dbBlog.title || "").slice(0, 85),
+            alt: String(dbBlog.title || "").slice(0, 85),
           },
         ],
       },
@@ -222,31 +470,49 @@ export default async function BlogSlugPage({ params }: PageProps) {
     notFound();
   }
 
-  const title = dbBlog ? dbBlog.title : staticArticle!.title;
-  const lead = dbBlog ? dbBlog.subtitle : staticArticle!.lead;
-  const category = dbBlog ? dbBlog.category : staticArticle!.category;
-  const dateStr = dbBlog ? dbBlog.date : staticArticle!.date;
-  const readTime = dbBlog ? dbBlog.readTime || dbBlog.readingTime || "10 min" : staticArticle!.readTime;
-  const author = dbBlog ? dbBlog.author || "Advocate Anuj Anand Malik" : staticArticle!.author;
+  const validBlogImageIds = await getValidBlogImageIds([
+    dbBlog?.image,
+    dbBlog?.infographic,
+  ]);
+  const title = String(dbBlog ? dbBlog.title || "Indian Succession Law Guide" : staticArticle!.title);
+  const lead = String(dbBlog ? dbBlog.subtitle || dbBlog.metaDescription || "" : staticArticle!.lead);
+  const category = String(dbBlog ? dbBlog.category || "Indian Succession Law" : staticArticle!.category);
+  const dateStr = dbBlog ? normalizeBlogDateString(dbBlog.date, dbBlog.createdAt) : staticArticle!.date;
+  const readTime = String(dbBlog ? dbBlog.readTime || dbBlog.readingTime || "10 min" : staticArticle!.readTime);
+  const author = String(dbBlog ? dbBlog.author || "Advocate Anuj Anand Malik" : staticArticle!.author);
   const authorRole = dbBlog
-    ? dbBlog.authorRole || "Senior Succession & Trust Counsel, WillDrafting.in"
+    ? String(dbBlog.authorRole || "Senior Succession & Trust Counsel, WillDrafting.in")
     : staticArticle!.authorRole.replace(/WillDrafting.in/gi, "WillDrafting.in");
-  const imageSrc = dbBlog ? dbBlog.image || "/desktopusp.jpg" : staticArticle!.imageSrc;
-  const infographicSrc = dbBlog?.infographic || null;
-  const canonicalSlug = dbBlog ? dbBlog.slug : staticArticle!.slug;
-  const metaDescription = dbBlog ? dbBlog.metaDescription || dbBlog.subtitle : staticArticle!.metaDescription;
-  const keywords = dbBlog ? dbBlog.keywords || [] : staticArticle!.keywords;
-  const shortVersion = dbBlog ? dbBlog.shortVersion || [] : staticArticle!.shortVersion;
-  const actionSteps = dbBlog ? dbBlog.actionSteps || [] : staticArticle!.actionSteps;
-  const faqs = dbBlog ? dbBlog.faqs || [] : staticArticle!.faqs || [];
-  const rawReviews = dbBlog ? dbBlog.reviews || [] : [];
+  const imageSrc = resolveSafeBlogImage(
+    dbBlog ? dbBlog.image : staticArticle!.imageSrc,
+    validBlogImageIds
+  );
+  const infographicSrc = resolveSafeInfographicImage(
+    dbBlog?.infographic,
+    validBlogImageIds
+  );
+  const canonicalSlug = String(dbBlog ? dbBlog.slug || slug : staticArticle!.slug);
+  const metaDescription = String(dbBlog ? dbBlog.metaDescription || dbBlog.subtitle || "" : staticArticle!.metaDescription);
+  const keywords = Array.isArray(dbBlog ? dbBlog.keywords : staticArticle!.keywords)
+    ? (dbBlog ? dbBlog.keywords! : staticArticle!.keywords).filter(Boolean).map(String)
+    : [];
+  const shortVersion = Array.isArray(dbBlog ? dbBlog.shortVersion : staticArticle!.shortVersion)
+    ? (dbBlog ? dbBlog.shortVersion! : staticArticle!.shortVersion).filter(Boolean).map(String)
+    : [];
+  const actionSteps = Array.isArray(dbBlog ? dbBlog.actionSteps : staticArticle!.actionSteps)
+    ? (dbBlog ? dbBlog.actionSteps! : staticArticle!.actionSteps).filter(Boolean).map(String)
+    : [];
+  const faqs = Array.isArray(dbBlog ? dbBlog.faqs : staticArticle!.faqs)
+    ? (dbBlog ? dbBlog.faqs! : staticArticle!.faqs!).filter((f) => f && f.question && f.answer)
+    : [];
+  const rawReviews = dbBlog && Array.isArray(dbBlog.reviews) ? dbBlog.reviews : [];
   const reviews = rawReviews
     .map((r: any) => ({
       name: String(r?.name || "")
         .replace(/\s*\((?:illustrative|sample|fictional).*?\)/gi, "")
         .trim(),
       location: r?.location ? String(r.location).trim() : undefined,
-      rating: Number(r?.rating) || 5,
+      rating: Math.min(5, Math.max(1, Math.round(Number(r?.rating) || 5))),
       review: String(r?.review || r?.comment || r?.text || "")
         .replace(
           /^(?:\[?(?:Illustrative|Sample|Fictional|Example|Hypothetical)[^:\]]*[:\]]\s*)+/i,
@@ -255,8 +521,19 @@ export default async function BlogSlugPage({ params }: PageProps) {
         .trim(),
     }))
     .filter((r) => r.name && r.review.length > 0);
-  const references = dbBlog ? dbBlog.references || [] : [];
-  const disclaimer = (
+  const references = (dbBlog && Array.isArray(dbBlog.references) ? dbBlog.references : [])
+    .filter((ref) => ref && ref.title)
+    .map((ref) => ({
+      ...ref,
+      title: String(ref.title),
+      url: typeof ref.url === "string" && ref.url
+        ? ref.url.replace(
+            /^https?:\/\/(?:www\.)?indiacode\.nic\.in\/(?:handle\/.*|bitstream\/.*|show-data.*|\?.*)$/i,
+            "https://legislative.gov.in/"
+          )
+        : undefined,
+    }));
+  const disclaimer = String(
     dbBlog?.disclaimer ||
     staticArticle?.disclaimer ||
     "This legal guide is published for educational and estate planning awareness under the Indian Succession Act, 1925. For customized estate planning, consult an advocate on WillDrafting.in."
@@ -279,8 +556,8 @@ export default async function BlogSlugPage({ params }: PageProps) {
       description: metaDescription,
       keywords: keywords.join(", "),
       image: imageUrl,
-      datePublished: new Date(dateStr || Date.now()).toISOString(),
-      dateModified: new Date(dbBlog?.updatedAt || dateStr || Date.now()).toISOString(),
+      datePublished: toSafeIsoDateString(dateStr, dbBlog?.createdAt),
+      dateModified: toSafeIsoDateString(dbBlog?.updatedAt, dateStr, dbBlog?.createdAt),
       mainEntityOfPage: canonicalUrl,
       author: {
         "@type": "Person",
@@ -371,11 +648,11 @@ export default async function BlogSlugPage({ params }: PageProps) {
           <div className="absolute inset-0 pointer-events-none select-none z-0 overflow-hidden">
             <Image
               src={imageSrc}
-              alt={title}
+              alt={title.slice(0, 85)}
               width={1200}
               height={675}
               priority
-              unoptimized={imageSrc.startsWith("/api/")}
+              unoptimized
               sizes="100vw"
               className="w-full h-full object-cover object-center opacity-[0.25] saturate-[0.9] contrast-[1.05]"
             />
@@ -603,7 +880,7 @@ export default async function BlogSlugPage({ params }: PageProps) {
                       {/* eslint-disable-next-line @next/next/no-img-element */}
                       <img
                         src={infographicSrc}
-                        alt={`${title.slice(0, 70)} - Statutory Guide`}
+                        alt={`${title.slice(0, 65)} - Statutory Guide`}
                         width={1200}
                         height={675}
                         className="w-full h-auto object-contain mx-auto max-h-[680px]"
@@ -623,9 +900,15 @@ export default async function BlogSlugPage({ params }: PageProps) {
               <>
                 {staticArticle!.sections.map((section, idx) => (
                   <section key={idx} className="space-y-5">
-                    <h2 className="text-2xl sm:text-[1.85rem] font-medium leading-[1.28] tracking-[-0.02em] text-[#111827]">
-                      {section.heading}
-                    </h2>
+                    {idx === 0 ? (
+                      <h2 className="text-2xl sm:text-[1.85rem] font-medium leading-[1.28] tracking-[-0.02em] text-[#111827]">
+                        {section.heading}
+                      </h2>
+                    ) : (
+                      <h3 className="text-2xl sm:text-[1.85rem] font-medium leading-[1.28] tracking-[-0.02em] text-[#111827]">
+                        {section.heading}
+                      </h3>
+                    )}
 
                     <div className="space-y-4 text-[16.5px] sm:text-[17px] leading-[1.8] text-[#374151] font-normal">
                       {section.paragraphs.map((p, pIdx) => (
@@ -643,9 +926,9 @@ export default async function BlogSlugPage({ params }: PageProps) {
 
                 {staticArticle!.tableData && (
                   <section className="space-y-4 pt-2">
-                    <h2 className="text-2xl sm:text-[1.75rem] font-medium leading-[1.28] tracking-[-0.02em] text-[#111827]">
+                    <h3 className="text-2xl sm:text-[1.75rem] font-medium leading-[1.28] tracking-[-0.02em] text-[#111827]">
                       {staticArticle!.tableData.heading}
-                    </h2>
+                    </h3>
                     <p className="text-sm text-[#6B7280]">
                       {staticArticle!.tableData.caption}
                     </p>
@@ -692,9 +975,9 @@ export default async function BlogSlugPage({ params }: PageProps) {
                     <div className="flex items-start gap-3">
                       <FileText className="w-6 h-6 text-[#C65378] shrink-0 mt-1" />
                       <div>
-                        <h2 className="text-xl sm:text-2xl font-medium tracking-tight text-[#111827]">
+                        <h3 className="text-xl sm:text-2xl font-medium tracking-tight text-[#111827]">
                           {staticArticle!.templateBox.heading}
-                        </h2>
+                        </h3>
                         <p className="text-sm text-[#6B7280] mt-1">
                           {staticArticle!.templateBox.subtitle}
                         </p>
@@ -711,9 +994,9 @@ export default async function BlogSlugPage({ params }: PageProps) {
             {/* "What to do next" Action Steps Card */}
             {actionSteps.length > 0 && (
               <div className="bg-[#FAF7F0] border border-[#172228]/15 rounded-2xl p-7 sm:p-9 mt-12 shadow-xs">
-                <h2 className="text-xl sm:text-2xl font-medium tracking-tight text-[#111827] mb-5">
+                <h3 className="text-xl sm:text-2xl font-medium tracking-tight text-[#111827] mb-5">
                   What to do next
-                </h2>
+                </h3>
                 <div className="space-y-4">
                   {actionSteps.map((step, sIdx) => (
                     <div key={sIdx} className="flex items-start gap-3.5">
@@ -732,9 +1015,9 @@ export default async function BlogSlugPage({ params }: PageProps) {
               <section className="space-y-5 pt-4">
                 <div className="flex items-center gap-2.5">
                   <ShieldCheck className="w-5 h-5 text-[#C65378]" />
-                  <h2 className="text-2xl sm:text-[1.75rem] font-medium tracking-tight text-[#111827]">
+                  <h3 className="text-2xl sm:text-[1.75rem] font-medium tracking-tight text-[#111827]">
                     Frequently Asked Statutory Questions
-                  </h2>
+                  </h3>
                 </div>
                 <div className="space-y-4">
                   {faqs.map((faq, fIdx) => (
@@ -757,9 +1040,9 @@ export default async function BlogSlugPage({ params }: PageProps) {
             {/* Client Reviews (if present) */}
             {reviews.length > 0 && (
               <section className="space-y-5 pt-4">
-                <h2 className="text-2xl sm:text-[1.75rem] font-medium tracking-tight text-[#111827]">
+                <h3 className="text-2xl sm:text-[1.75rem] font-medium tracking-tight text-[#111827]">
                   Verified WillDrafting.in Client Experiences
-                </h2>
+                </h3>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
                   {reviews.map((rev, rIdx) => (
                     <div
@@ -831,9 +1114,9 @@ export default async function BlogSlugPage({ params }: PageProps) {
               <span className="text-[0.75rem] font-bold tracking-[0.16em] uppercase text-[#C65378] block mb-2">
                 Continue Reading
               </span>
-              <h2 className="text-3xl sm:text-4xl font-medium tracking-tight text-[#111827]">
+              <h3 className="text-3xl sm:text-4xl font-medium tracking-tight text-[#111827]">
                 More from the journal
-              </h2>
+              </h3>
             </div>
 
             <Link
@@ -856,9 +1139,10 @@ export default async function BlogSlugPage({ params }: PageProps) {
                     <div className="relative w-full aspect-[16/10] rounded-xl overflow-hidden mb-6 bg-neutral-200 border border-[#172228]/5 shadow-xs">
                       <Image
                         src={rel.imageSrc}
-                        alt={rel.title}
+                        alt={rel.title.slice(0, 85)}
                         width={800}
                         height={500}
+                        unoptimized
                         sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                         className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500 ease-out"
                       />
@@ -908,7 +1192,8 @@ export default async function BlogSlugPage({ params }: PageProps) {
           margin-top: 2.2rem;
           margin-bottom: 1rem;
         }
-        .wd-article-html h2 {
+        .wd-article-html h2,
+        .wd-article-html h3.wd-article-section-h3 {
           font-size: 1.75rem;
           font-weight: 500;
           line-height: 1.28;
@@ -918,7 +1203,7 @@ export default async function BlogSlugPage({ params }: PageProps) {
           margin-bottom: 1rem;
           scroll-margin-top: 7rem;
         }
-        .wd-article-html h3 {
+        .wd-article-html h3:not(.wd-article-section-h3) {
           font-size: 1.28rem;
           font-weight: 600;
           color: #172228;

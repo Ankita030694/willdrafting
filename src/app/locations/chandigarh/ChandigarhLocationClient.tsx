@@ -540,9 +540,9 @@ export default function ChandigarhLocationClient({ faqs }: Props) {
                   <span>STATUTORY PROVISIONS</span>
                 </div>
                 {/* Length: 58 characters */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   1. Legal Framework: Will Drafting &amp; Succession in Tricity
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Writing a Will in Chandigarh is governed by the <strong>Indian Succession Act, 1925</strong> and the <strong>Registration Act, 1908</strong>.
                   Any adult of sound mind can make a Will to dispose of their self-acquired properties, bank accounts, stocks, and personal assets.
@@ -606,9 +606,9 @@ export default function ChandigarhLocationClient({ faqs }: Props) {
                   <span>REGISTRATION STATUS</span>
                 </div>
                 {/* Length: 49 characters */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   2. Is Will Registration Mandatory in Chandigarh?
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Under Section 18(e) of the Registration Act, 1908, registering a Will is <strong>optional</strong>.
                   An unregistered Will executed on plain paper is legally valid in Indian courts if properly attested by two independent witnesses.
@@ -668,9 +668,9 @@ export default function ChandigarhLocationClient({ faqs }: Props) {
                   <span>HIGH COURT PRECEDENTS</span>
                 </div>
                 {/* Length: 56 characters */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   3. Chandigarh Probate Rules: High Court Legal Precedents
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   A common question among property owners in Chandigarh and Mohali is whether they must obtain court probate.
                   In most cases, the answer is <strong>no</strong>.
@@ -724,9 +724,9 @@ export default function ChandigarhLocationClient({ faqs }: Props) {
                   <span>SRO JURISDICTION DIRECTORY</span>
                 </div>
                 {/* Length: 52 characters */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   4. Chandigarh Tricity Sub-Registrar Office Directory
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Under Section 32 of the Registration Act, your Will can be registered at the Sub-Registrar Office where you reside or where any part of your real estate is situated.
                   Select your region below to review office locations, jurisdiction boundaries, and appointment links:
@@ -830,9 +830,9 @@ export default function ChandigarhLocationClient({ faqs }: Props) {
                   <span>LOCAL AREA COVERAGE &amp; SRO HUBS</span>
                 </div>
                 {/* Length: 67 characters */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   5. Area-Wise Will Drafting Services Across Chandigarh &amp; Tricity Localities
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Looking for legally verified <strong>Will drafting services in Sectors 2 to 11, Sectors 32 to 37, Mohali, Panchkula, or New Chandigarh</strong>?
                   Property configurations across the Tricity range from heritage kanal kothis and CHB residential flats to GMADA plots in Mohali and HSVP builder floors in Panchkula.
@@ -1169,9 +1169,9 @@ export default function ChandigarhLocationClient({ faqs }: Props) {
                   <span>STEP-BY-STEP PROCEDURE</span>
                 </div>
                 {/* Length: 47 characters */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   6. Step-by-Step Will Registration in Chandigarh
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Registering your Will before a Sub-Registrar in Chandigarh or the Tricity follows an organized statutory process.
                   Here is the verified 5-step SOP:
@@ -1259,9 +1259,9 @@ export default function ChandigarhLocationClient({ faqs }: Props) {
                   <span>DOORSTEP SRO REGISTRATION</span>
                 </div>
                 {/* Length: 55 characters */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   7. Section 31 Doorstep Registration for Tricity Seniors
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Chandigarh has one of India&apos;s highest proportions of senior citizens and retired armed forces personnel living in Sectors 33, 34, 35, and 36.
                   Under <strong>Section 31 of the Registration Act, 1908</strong>, elderly or infirm citizens who cannot easily visit the Sector 17 Sub-Registrar Office can request a home registration visit.
@@ -1316,9 +1316,9 @@ export default function ChandigarhLocationClient({ faqs }: Props) {
                   <span>INTERACTIVE CHECKLIST</span>
                 </div>
                 {/* Length: 50 characters */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   8. Documents Checklist for Chandigarh Sub-Registrar
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Prepare your documents before visiting the Sub-Registrar office.
                   You have completed <strong>{checkedCount} of {checklist.length}</strong> checklist items:
@@ -1368,9 +1368,9 @@ export default function ChandigarhLocationClient({ faqs }: Props) {
                   <span>PROPERTY SUCCESSION RULES</span>
                 </div>
                 {/* Length: 54 characters */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   9. Chandigarh Property Types: CHB Flats &amp; Estate Rules
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Succession in Chandigarh is heavily influenced by municipal allotment terms and UT building regulations.
                   Here is how a Will affects different Tricity property categories:
@@ -1424,9 +1424,9 @@ export default function ChandigarhLocationClient({ faqs }: Props) {
                   <span>OFFICIAL CHARGES</span>
                 </div>
                 {/* Length: 52 characters */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   10. Official Chandigarh Government Fees &amp; Stamp Duty
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Unlike property sale deeds that attract heavy stamp duties, Wills are completely exempt from stamp duty across India under the Indian Stamp Act, 1899.
                   Government registration fees in Chandigarh and the Tricity are nominal:
@@ -1476,9 +1476,9 @@ export default function ChandigarhLocationClient({ faqs }: Props) {
                   <span>PLANS &amp; PRICING</span>
                 </div>
                 {/* Length: 53 characters */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   11. Transparent Will Packages &amp; Legal Fees in Tricity
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Choose the level of legal support suited to your family&apos;s succession needs in Chandigarh, Mohali, or Panchkula:
                 </p>
@@ -1621,9 +1621,9 @@ export default function ChandigarhLocationClient({ faqs }: Props) {
                   <span>FREQUENTLY ASKED QUESTIONS</span>
                 </div>
                 {/* Length: 48 characters */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   12. Frequently Asked Questions: Chandigarh Wills
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Straightforward answers to common questions about making and registering a Will in Chandigarh and the Tricity:
                 </p>
@@ -1667,9 +1667,9 @@ export default function ChandigarhLocationClient({ faqs }: Props) {
                   <span>STATUTORY CITATIONS</span>
                 </div>
                 {/* Length: 51 characters */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   13. Statutory References &amp; Chandigarh Legal Portals
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Our estate planning protocols strictly comply with codified Indian statutes and official state registration systems:
                 </p>

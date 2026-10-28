@@ -549,9 +549,9 @@ export default function AssamLocationClient({ faqs }: Props) {
                   <span>STATUTORY PROVISIONS</span>
                 </div>
                 {/* H2: Exactly 55 characters */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   1. Legal Framework: Will Drafting &amp; Succession in Assam
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Testamentary succession across Assam is governed by the <strong>Indian Succession Act, 1925</strong>, the <strong>Registration Act, 1908</strong>, and the <strong>Assam Land and Revenue Regulation, 1886</strong>. Every adult of sound mind has the legal right to dispose of their self-acquired real estate, tea garden rights, agricultural land, and financial savings.
                 </p>
@@ -611,9 +611,9 @@ export default function AssamLocationClient({ faqs }: Props) {
                   <span>REGISTRATION STATUS</span>
                 </div>
                 {/* H2: Exactly 53 characters */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   2. Registration Status: Mandatory vs Optional in Assam
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Under Section 18(e) of the Registration Act, 1908, the registration of a testamentary Will is strictly <strong>optional</strong>. An unregistered Will signed on standard white paper before two independent witnesses is legally enforceable and admissible in judicial proceedings.
                 </p>
@@ -676,9 +676,9 @@ export default function AssamLocationClient({ faqs }: Props) {
                   <span>JUDICIAL PRECEDENTS</span>
                 </div>
                 {/* H2: Exactly 55 characters */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   3. Gauhati High Court Probate Rules: Assam Jurisprudence
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   A common point of confusion among property owners in Assam is whether obtaining probate from the Gauhati High Court or District Judge is compulsory. Under settled Indian succession law, the answer is <strong>no</strong>.
                 </p>
@@ -730,9 +730,9 @@ export default function AssamLocationClient({ faqs }: Props) {
                   <span>SRO JURISDICTION DIRECTORY</span>
                 </div>
                 {/* H2: Exactly 50 characters */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   4. Assam SRO Hubs: Panjeeyan Registration Directory
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Assam manages registration through designated Sub-Registrar Offices under the Directorate of Registration, Government of Assam. Using the <strong>Assam Panjeeyan portal (panjeeyan.assam.gov.in)</strong>, testators can schedule registration slots at the registry office where they permanently reside or where any part of their property is situated.
                 </p>
@@ -835,9 +835,9 @@ export default function AssamLocationClient({ faqs }: Props) {
                   <span>REGIONAL CITIES COVERAGE &amp; ASSET NUANCES</span>
                 </div>
                 {/* H2: Exactly 52 characters */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   5. Regional Cities: City-Wise Will Drafting in Assam
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Estate assets in Assam span modern high-rise apartments in Guwahati, colonial bungalows and tea estates in Dibrugarh and Jorhat, commercial hubs in Silchar and Tinsukia, and expansive agricultural lands across central and lower Assam. Our estate advocates deliver customized legal drafting, Assam Panjeeyan slot booking, and Sub-Registrar accompaniment across all key regional cities:
                 </p>
@@ -1278,9 +1278,9 @@ export default function AssamLocationClient({ faqs }: Props) {
                   <span>PROCEDURAL ROADMAP</span>
                 </div>
                 {/* H2: Exactly 53 characters */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   6. Step-by-Step SOP: Drafting to Registration in Assam
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Follow this verified 5-stage legal standard operating procedure to create, execute, and register your Will before the Sub-Registrar in Assam:
                 </p>
@@ -1367,9 +1367,9 @@ export default function AssamLocationClient({ faqs }: Props) {
                   <span>DOORSTEP REGISTRATION FOR SENIORS</span>
                 </div>
                 {/* H2: Exactly 51 characters */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   7. Section 31 Doorstep SRO Registration for Seniors
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   For elderly, unwell, or bedridden citizens residing in Guwahati, Dibrugarh, Silchar, or remote tea estates, traveling to the Sub-Registrar Office can be physically demanding. Under <strong>Section 31 of the Registration Act, 1908</strong>, the Sub-Registrar possesses legal authority to attend a private residence or hospital to register a Will.
                 </p>
@@ -1423,9 +1423,9 @@ export default function AssamLocationClient({ faqs }: Props) {
                   <span>INTERACTIVE CHECKLIST</span>
                 </div>
                 {/* H2: Exactly 52 characters */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   8. Document Checklist for Assam Sub-Registrar Offices
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Prepare your documentation before scheduling your Sub-Registrar appointment. You have organized <strong>{checkedCount} of {checklist.length}</strong> required documents:
                 </p>
@@ -1474,9 +1474,9 @@ export default function AssamLocationClient({ faqs }: Props) {
                   <span>PROPERTY DYNAMICS</span>
                 </div>
                 {/* H2: Exactly 52 characters */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   9. Assam Asset Classes: Tea Estates, Land &amp; GMC Flats
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Succession procedures in Assam depend directly on property categorization, land revenue tenures, and urban municipal authorities:
                 </p>
@@ -1529,9 +1529,9 @@ export default function AssamLocationClient({ faqs }: Props) {
                   <span>STATUTORY CHARGES</span>
                 </div>
                 {/* H2: Exactly 53 characters */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   10. Official Panjeeyan Registration Fees &amp; Stamp Duty
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Unlike commercial property sale deeds or gift transfers that attract high ad-valorem stamp duty in Assam, testamentary Wills are completely exempt from stamp duty. Government registration charges in Assam are purely nominal:
                 </p>
@@ -1580,9 +1580,9 @@ export default function AssamLocationClient({ faqs }: Props) {
                   <span>TRANSPARENT PLANS</span>
                 </div>
                 {/* H2: Exactly 50 characters */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   11. Transparent Will Packages &amp; Legal Fees in Assam
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Choose the legal assistance package tailored to your family&apos;s estate planning and property portfolio in Assam:
                 </p>
@@ -1725,9 +1725,9 @@ export default function AssamLocationClient({ faqs }: Props) {
                   <span>FREQUENTLY ASKED QUESTIONS</span>
                 </div>
                 {/* H2: Exactly 53 characters */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   12. Frequently Asked Questions: Will Drafting in Assam
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Clear, authoritative answers to common legal questions regarding Will drafting and property registration in Assam:
                 </p>
@@ -1771,9 +1771,9 @@ export default function AssamLocationClient({ faqs }: Props) {
                   <span>STATUTORY CITATIONS</span>
                 </div>
                 {/* H2: Exactly 49 characters */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   13. Statutory Citations &amp; Assam Government Portals
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Our drafting protocols comply strictly with codified Indian succession statutes and Assam state registration systems:
                 </p>

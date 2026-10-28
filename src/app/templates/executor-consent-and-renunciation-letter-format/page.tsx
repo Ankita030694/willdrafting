@@ -48,7 +48,7 @@ export const metadata: Metadata = {
         url: "https://www.willdrafting.in/images/executor-consent-and-renunciation-letter-format-og.jpg",
         width: 1200,
         height: 675,
-        alt: "Renunciation of Executorship Format India and Section 230 Indian Succession Act Legal Guide",
+        alt: "Renunciation of Executorship Format India - Section 230 Indian Succession Act Guide",
       },
     ],
   },

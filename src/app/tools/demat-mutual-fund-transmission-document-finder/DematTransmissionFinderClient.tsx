@@ -600,9 +600,9 @@ NOW THEREFORE, in consideration of the Depository Participant / Registrar and Tr
                 <Sparkles className="w-4 h-4" />
                 <span>INTERACTIVE COMPLIANCE TOOL</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 2. Interactive Demat &amp; Mutual Fund Document Finder Tool
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Select your asset details below to instantly determine exact form codes, document checklists,
                 and whether court succession intervention is mandatory under current SEBI and AMFI regulations.
@@ -1064,9 +1064,9 @@ NOW THEREFORE, in consideration of the Depository Participant / Registrar and Tr
                 <Layers className="w-4 h-4" />
                 <span>STATUTORY THRESHOLDS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 3. SEBI Transmission Limits: ₹5 Lakh vs ₹15 Lakh Threshold
-              </h2>
+              </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   To eliminate undue hardship on grieving families, SEBI established separate simplified limits
@@ -1114,9 +1114,9 @@ NOW THEREFORE, in consideration of the Depository Participant / Registrar and Tr
                 <Scale className="w-4 h-4" />
                 <span>LANDMARK PRECEDENT</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 4. Landmark SC Ruling: Shakti Yezdani on Nominee Rights
-              </h2>
+              </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   A pervasive myth among Indian investors is that appointing a nominee makes them the absolute,
@@ -1155,9 +1155,9 @@ NOW THEREFORE, in consideration of the Depository Participant / Registrar and Tr
                 <FileText className="w-4 h-4" />
                 <span>DEPOSITORY OPERATIONAL GUIDE</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 5. Depository Transmission: CDSL vs NSDL Form ISR-5 Guide
-              </h2>
+              </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   Both Central Depository Services India Limited (CDSL) and National Securities Depository Limited (NSDL)
@@ -1210,9 +1210,9 @@ NOW THEREFORE, in consideration of the Depository Participant / Registrar and Tr
                 <Coins className="w-4 h-4" />
                 <span>MUTUAL FUND SOP</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 6. Mutual Fund Transmission: CAMS &amp; KFintech Form T2 &amp; T3
-              </h2>
+              </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   Unlike demat accounts which aggregate all shares under one depository, mutual funds are maintained
@@ -1252,9 +1252,9 @@ NOW THEREFORE, in consideration of the Depository Participant / Registrar and Tr
                 <FileCheck className="w-4 h-4" />
                 <span>PHYSICAL SHARES PROTOCOL</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 7. Physical Shares Transmission: SEBI Form ISR-4 Demat SOP
-              </h2>
+              </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   Millions of Indian families hold physical paper share certificates purchased in the 1980s and 1990s
@@ -1301,9 +1301,9 @@ NOW THEREFORE, in consideration of the Depository Participant / Registrar and Tr
                 <Layers className="w-4 h-4" />
                 <span>COMPARATIVE MATRIX</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 8. Regulatory Comparison: Joint vs Nominee vs Legal Heirs
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm">
                 The table below summarizes transmission procedures across all holding formats and regulatory routes:
               </p>
@@ -1403,9 +1403,9 @@ NOW THEREFORE, in consideration of the Depository Participant / Registrar and Tr
                 <FileCheck className="w-4 h-4" />
                 <span>PROCEDURAL BLUEPRINT</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 9. Step-by-Step SOP: Securities Transmission Procedure
-              </h2>
+              </h3>
               <div className="space-y-4 text-xs sm:text-sm text-slate-700 leading-relaxed">
                 <div className="p-4 rounded-2xl bg-white border border-slate-200/90 shadow-2xs space-y-1.5">
                   <div className="font-extrabold text-slate-900 flex items-center gap-2">
@@ -1470,9 +1470,9 @@ NOW THEREFORE, in consideration of the Depository Participant / Registrar and Tr
                 <Award className="w-4 h-4" />
                 <span>REAL-WORLD RESOLUTIONS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 10. Practical Case Studies: CDSL, CAMS &amp; RTA Recoveries
-              </h2>
+              </h3>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                 <div className="p-4 rounded-2xl bg-white border border-slate-200/90 shadow-2xs space-y-2">
                   <div className="text-xs font-bold uppercase tracking-wider text-[#C65378]">CASE STUDY A: MUMBAI</div>
@@ -1512,9 +1512,9 @@ NOW THEREFORE, in consideration of the Depository Participant / Registrar and Tr
                 <Copy className="w-4 h-4" />
                 <span>TEMPLATE REPOSITORY</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 11. Legal Recitals &amp; Copy-Paste Indemnity Bond Clauses
-              </h2>
+              </h3>
 
               {/* Template Box 1: Form ISR-5 Annexure B Indemnity Clause */}
               <div className="rounded-2xl border border-slate-200/90 bg-white p-5 space-y-3 shadow-xs">
@@ -1592,9 +1592,9 @@ NOW THEREFORE, in consideration of the Depository Participant / Registrar and Tr
                 <Award className="w-4 h-4" />
                 <span>LEGAL EXPERTISE &amp; PRACTICE</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 12. Institutional Profile: Legal Excellence &amp; Trust Signals
-              </h2>
+              </h3>
               <div className="bg-white rounded-2xl border border-slate-200/90 p-6 sm:p-8 shadow-xs space-y-5">
                 <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-5 border-b border-slate-100">
                   <div className="space-y-1">
@@ -1651,9 +1651,9 @@ NOW THEREFORE, in consideration of the Depository Participant / Registrar and Tr
                 <HelpCircle className="w-4 h-4" />
                 <span>DIRECT ANSWERS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 13. Frequently Asked Questions: Securities Transmission
-              </h2>
+              </h3>
               <div className="space-y-3">
                 {FAQS.map((faq, index) => {
                   const isOpen = openFaq === index;
@@ -1691,9 +1691,9 @@ NOW THEREFORE, in consideration of the Depository Participant / Registrar and Tr
                 <Landmark className="w-4 h-4" />
                 <span>OFFICIAL PORTALS &amp; REFERENCES</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 14. Official Portals, Regulatory Circulars &amp; Citations
-              </h2>
+              </h3>
               <div className="bg-white rounded-2xl border border-slate-200/90 p-5 sm:p-6 shadow-xs space-y-4 text-xs">
                 <div>
                   <div className="font-extrabold text-slate-900 mb-1">

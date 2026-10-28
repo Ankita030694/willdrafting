@@ -504,9 +504,9 @@ export default function RelinquishmentDeedPage() {
               <Scale className="w-4 h-4" />
               <span>Comparative Legal Analysis</span>
             </div>
-            <h2 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-4">
+            <h3 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-4">
               Relinquishment Deed vs Gift Deed &amp; Sale Deed Comparison
-            </h2>
+            </h3>
             <p className="text-[0.98rem] sm:text-[1.05rem] leading-[1.65] text-[#49585F]">
               Choosing the right legal deed saves money and time. A Relinquishment Deed is used only between co-heirs. A Gift Deed or Sale Deed is used for third parties. Most Indian states offer lower stamp duty for family co-heirs. Review the simple table below to compare your choices:
             </p>
@@ -547,9 +547,9 @@ export default function RelinquishmentDeedPage() {
               <Landmark className="w-4 h-4" />
               <span>State Stamp Schedules</span>
             </div>
-            <h2 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-4">
+            <h3 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-4">
               State Stamp Duty Rates for Relinquishment Deeds in India
-            </h2>
+            </h3>
             <p className="text-[0.98rem] sm:text-[1.05rem] leading-[1.65] text-[#49585F]">
               Most Indian states offer lower stamp duty for family deeds. For example, Delhi charges a flat stamp fee for family co-heirs. Uttar Pradesh also offers a low flat rate for blood relatives. Check your state rates in the table below before booking your slot:
             </p>
@@ -590,9 +590,9 @@ export default function RelinquishmentDeedPage() {
               <ShieldCheck className="w-4 h-4" />
               <span>Step-by-Step Execution Protocol</span>
             </div>
-            <h2 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-3">
+            <h3 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-3">
               4-Step Registration Protocol at Sub-Registrar Office
-            </h2>
+            </h3>
             <p className="text-[0.98rem] sm:text-[1.05rem] leading-[1.65] text-[#49585F]">
               You do not need to worry about complex court visits. Our team guides you through four clear steps. We check your documents, prepare your draft, pay fees online, and book your Sub-Registrar visit:
             </p>
@@ -647,9 +647,9 @@ export default function RelinquishmentDeedPage() {
                 <Users className="w-4 h-4" />
                 <span>NRI &amp; Overseas Co-Heir Assistance</span>
               </div>
-              <h2 className="text-[1.75rem] sm:text-[2.3rem] font-medium leading-[1.14] tracking-[-0.02em] text-[#111827] mb-4">
+              <h3 className="text-[1.75rem] sm:text-[2.3rem] font-medium leading-[1.14] tracking-[-0.02em] text-[#111827] mb-4">
                 NRI Haq Tyag Execution: Apostille &amp; Power of Attorney
-              </h2>
+              </h3>
               <p className="text-[15px] sm:text-[16px] leading-[1.7] text-[#374151] mb-4">
                 Overseas co-heirs do not need to fly to India. When settling family homes in Delhi, Mumbai, Bengaluru, or Punjab, NRI siblings can manage the process from abroad.
               </p>
@@ -684,9 +684,9 @@ export default function RelinquishmentDeedPage() {
               <BookOpen className="w-4 h-4" />
               <span>Legal Knowledge Base</span>
             </div>
-            <h2 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-3">
+            <h3 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-3">
               Frequently Asked Questions on Relinquishment Deeds
-            </h2>
+            </h3>
             <p className="text-[0.98rem] sm:text-[1.05rem] leading-[1.65] text-[#49585F]">
               Clear legal answers help you make safe choices. Read our simple guide below to learn more about Haq Tyag and your property rights:
             </p>

@@ -484,9 +484,9 @@ Contact Address: [Complete Address]`;
                 <Layers className="w-4 h-4" />
                 <span>COMPARATIVE ANALYSIS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 2. Comparison: Standalone Revocation Deed vs Making New Will
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Under Section 70, you have two primary legal instruments to nullify an earlier Will. Understanding the differences is
                 crucial before deciding your next step.
@@ -562,9 +562,9 @@ Contact Address: [Complete Address]`;
                 <Compass className="w-4 h-4" />
                 <span>DECISION MATRIX</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 3. Interactive Route Assessment: Which Method Fits You?
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Select your primary goal below to see the recommended legal pathway under Indian succession law.
               </p>
@@ -728,9 +728,9 @@ Contact Address: [Complete Address]`;
                 <FileSignature className="w-4 h-4" />
                 <span>LAWYER-VETTED LEGAL DRAFT</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 4. Standalone Deed of Revocation of Will Format (Full Text)
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 This complete statutory format is compliant with Section 70 of the Indian Succession Act, 1925 and Section 18 of the
                 Registration Act, 1908. It can be printed on non-judicial stamp paper of appropriate value as per state stamp rules.
@@ -829,9 +829,9 @@ Aadhaar No.: ___________________________`}
                 <FileCheck className="w-4 h-4" />
                 <span>EXPRESS REVOCATION CLAUSE</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 5. Express Revocation Clause to Insert into a New Will
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 If you are creating a new Will, inserting this express revocation clause at the beginning ensures that all prior registered
                 or unregistered Wills and codicils are legally superseded and extinguished.
@@ -883,9 +883,9 @@ I hereby absolutely revoke, cancel, annul, and set aside all my former Wills, Co
                 <Building className="w-4 h-4" />
                 <span>SUB-REGISTRAR OFFICE PROCEDURE</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 6. SRO Cancellation Protocol: Notifying the Sub-Registrar
-              </h2>
+              </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   While registering a Will is optional under Section 18(e) of the Registration Act, 1908, cancelling an already-registered
@@ -927,9 +927,9 @@ I hereby absolutely revoke, cancel, annul, and set aside all my former Wills, Co
                 <Clock className="w-4 h-4" />
                 <span>PROCEDURAL PLAYBOOK</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 7. Step-by-Step SOP: Cancelling an Old Registered Will
-              </h2>
+              </h3>
 
               <div className="space-y-3">
                 {[
@@ -986,9 +986,9 @@ I hereby absolutely revoke, cancel, annul, and set aside all my former Wills, Co
                 <TrendingUp className="w-4 h-4" />
                 <span>REAL-WORLD SCENARIOS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 8. Practical Case Studies: Delhi, Bengaluru &amp; Mumbai SROs
-              </h2>
+              </h3>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 {/* Case 1 */}
@@ -1051,9 +1051,9 @@ I hereby absolutely revoke, cancel, annul, and set aside all my former Wills, Co
                 <AlertTriangle className="w-4 h-4" />
                 <span>LEGAL PITFALLS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 9. Common Mistakes When Revoking a Registered Will in India
-              </h2>
+              </h3>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div className="p-4 rounded-2xl bg-white border border-rose-200/80 shadow-2xs space-y-2">
@@ -1104,9 +1104,9 @@ I hereby absolutely revoke, cancel, annul, and set aside all my former Wills, Co
                 <FileCheck className="w-4 h-4" />
                 <span>INTIMATION NOTICE &amp; CHECKLIST</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 10. Sub-Registrar Revocation Notice &amp; Verification Checklist
-              </h2>
+              </h3>
 
               {/* Template Box: Notice to SRO */}
               <div className="rounded-2xl border border-slate-200/90 bg-white p-5 space-y-3 shadow-xs">
@@ -1243,9 +1243,9 @@ Name: [Full Legal Name of Testator]`}
                 <ShieldCheck className="w-4 h-4" />
                 <span>INSTITUTIONAL CREDENTIALS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 11. Verified Legal Backing &amp; Senior Advocate Review
-              </h2>
+              </h3>
 
               <div className="p-5 sm:p-6 rounded-3xl bg-white border border-slate-200/90 shadow-xs space-y-4">
                 <div className="flex items-start gap-4">
@@ -1282,9 +1282,9 @@ Name: [Full Legal Name of Testator]`}
                 <FileQuestion className="w-4 h-4" />
                 <span>FREQUENTLY ASKED QUESTIONS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 12. Frequently Asked Questions: Cancelling a Will in India
-              </h2>
+              </h3>
 
               <div className="space-y-3">
                 {FAQS.map((faq, index) => {
@@ -1323,9 +1323,9 @@ Name: [Full Legal Name of Testator]`}
                 <Landmark className="w-4 h-4" />
                 <span>STATUTORY CITATIONS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 13. Statutory Citations &amp; Official Succession Portals
-              </h2>
+              </h3>
 
               <div className="p-5 rounded-2xl bg-white border border-slate-200/90 shadow-xs space-y-3 text-xs">
                 <div className="font-extrabold text-slate-900 mb-1">

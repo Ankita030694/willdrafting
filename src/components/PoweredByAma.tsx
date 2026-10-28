@@ -40,13 +40,13 @@ export default function PoweredByAma() {
           {/* Top Co-Branded Lockup Bar */}
           <div className="relative z-10 flex flex-col lg:flex-row lg:items-center lg:justify-between gap-5 sm:gap-6 pb-6 mb-6 border-b border-[#172228]/10">
             <div>
-              <h2 className="text-[1.6rem] sm:text-[2.1rem] lg:text-[2.35rem] font-medium text-[#172228] leading-[1.15] tracking-tight max-w-2xl">
+              <h3 className="text-[1.6rem] sm:text-[2.1rem] lg:text-[2.35rem] font-medium text-[#172228] leading-[1.15] tracking-tight max-w-2xl">
                 WillDrafting.in is Powered by{" "}
                 <span className="text-[#30261C] underline decoration-[#D29E0D]/60 decoration-2 underline-offset-8">
                   AMA Legal Solutions
                 </span>
                 .
-              </h2>
+              </h3>
             </div>
 
             {/* Dual Logo Lockup Card: WillDrafting.in × AMA Legal Solutions */}

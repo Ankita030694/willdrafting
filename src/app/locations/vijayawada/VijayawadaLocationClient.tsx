@@ -528,9 +528,9 @@ export default function VijayawadaLocationClient({ faqs }: Props) {
                   <Scale className="w-4 h-4 text-[#C65378]" />
                   <span>STATUTORY FOUNDATION &amp; JURISPRUDENCE</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   1. Legal Framework for Will Drafting in Vijayawada
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Testamentary succession in Vijayawada and across Andhra Pradesh is governed by the <strong>Indian Succession Act, 1925</strong>, the <strong>Registration Act, 1908</strong>, and the <strong>Transfer of Property Act, 1882</strong>.
                   Whether you are planning succession for family residential apartments in Benz Circle, commercial shops in Governorpet, auto-ancillary industrial sheds in Jawahar Auto Nagar, or fertile agricultural lands in the Krishna delta, your Will must satisfy precise legal standards.
@@ -587,9 +587,9 @@ export default function VijayawadaLocationClient({ faqs }: Props) {
                   <Stamp className="w-4 h-4 text-[#C65378]" />
                   <span>REGISTRATION ACT, 1908 COMPLIANCE</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   2. Is Will Registration Compulsory in Vijayawada?
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Under <strong>Section 18(e) of the Registration Act, 1908</strong>, registering a Will is legally optional throughout Andhra Pradesh.
                   An unregistered Will executed on plain A4 sheet before two witnesses holds valid legal force.
@@ -650,9 +650,9 @@ export default function VijayawadaLocationClient({ faqs }: Props) {
                   <Landmark className="w-4 h-4 text-[#C65378]" />
                   <span>HIGH COURT OF ANDHRA PRADESH RULES</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   3. Andhra Pradesh Probate Rules: Section 213 Exemption
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   One of the most persistent misconceptions among property owners in Vijayawada is that a Will must be probated in court before assets can be transferred.
                   Under Indian succession law, this is strictly incorrect for Andhra Pradesh.
@@ -699,9 +699,9 @@ export default function VijayawadaLocationClient({ faqs }: Props) {
                   <Compass className="w-4 h-4 text-[#C65378]" />
                   <span>SRO JURISDICTION DIRECTORY</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   4. Vijayawada Sub-Registrar Office Directory &amp; SROs
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Will registration across Vijayawada is administered by the Registration and Stamps Department, Government of Andhra Pradesh (AP IGRS).
                   Under Section 32 of the Registration Act, you can register your Will before the Sub-Registrar where you reside or where your immovable properties are situated.
@@ -802,9 +802,9 @@ export default function VijayawadaLocationClient({ faqs }: Props) {
                   <MapPin className="w-4 h-4 text-[#C65378]" />
                   <span>LOCAL AREA COVERAGE &amp; HUBS</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   5. Area-Wise Will Drafting Services Across Vijayawada
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Seeking advocate-supervised <strong>Will drafting services in Benz Circle, Governorpet, Patamata, Gunadala, or Gannavaram</strong>?
                   Property ownership frameworks, APCRDA pooling layout conditions, VMC guidelines, and Sub-Registrar jurisdictions vary across the NTR district.
@@ -1122,9 +1122,9 @@ export default function VijayawadaLocationClient({ faqs }: Props) {
                   <FileCheck className="w-4 h-4 text-[#C65378]" />
                   <span>AP IGRS STANDARD OPERATING PROCEDURE</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   6. Step-by-Step Will Registration in Andhra Pradesh
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Registering a Will in Vijayawada is conducted through the <strong>Registration &amp; Stamps Department of Andhra Pradesh (AP IGRS)</strong>.
                   Our senior advocates guide you seamlessly through each statutory phase:
@@ -1216,9 +1216,9 @@ export default function VijayawadaLocationClient({ faqs }: Props) {
                   <Home className="w-4 h-4 text-[#C65378]" />
                   <span>SECTION 31 REGISTRATION ACT</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   7. Doorstep Will Registration for Senior Citizens
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   For elderly, infirm, or hospitalized testators residing in Benz Circle, Moghalrajpuram, Suryaraopeta, or anywhere in the Vijayawada metropolitan area, visiting an SRO may be physically unfeasible.
                   The law provides a compassionate, lawful solution.
@@ -1279,9 +1279,9 @@ export default function VijayawadaLocationClient({ faqs }: Props) {
                   <FileText className="w-4 h-4 text-[#C65378]" />
                   <span>PREPARATION &amp; DOCUMENTATION</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   8. Documents Checklist for Vijayawada Will Making
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Before visiting the Sub-Registrar Office in Vijayawada or finalizing your document online, ensure you have gathered all necessary proofs. Use our interactive checklist to track your readiness:
                 </p>
@@ -1340,9 +1340,9 @@ export default function VijayawadaLocationClient({ faqs }: Props) {
                   <Building className="w-4 h-4 text-[#C65378]" />
                   <span>ASSET SPECIFIC SUCCESSION GUIDANCE</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   9. Vijayawada Real Estate: APCRDA Plots &amp; VMC Estates
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Asset bequeathal in Vijayawada entails distinct municipal, urban development, and agricultural regulations. Here is how our legal drafts ensure title security across each local category:
                 </p>
@@ -1402,9 +1402,9 @@ export default function VijayawadaLocationClient({ faqs }: Props) {
                   <Stamp className="w-4 h-4 text-[#C65378]" />
                   <span>TRANSPARENT STATUTORY COSTS</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   10. Official Stamp Duty &amp; Registration Fees: Vijayawada
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Unlike conveyance deeds or gift deeds that attract 5% to 7.5% stamp duty plus transfer duty in Andhra Pradesh, registering a Will is exceptionally economical under state law:
                 </p>
@@ -1457,9 +1457,9 @@ export default function VijayawadaLocationClient({ faqs }: Props) {
                   <Award className="w-4 h-4 text-[#C65378]" />
                   <span>TRANSPARENT LEGAL PRICING</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   11. Transparent Will Packages &amp; Legal Fees
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Choose the level of legal support tailored to your family&apos;s assets. No hidden consultation charges, no surprise fees:
                 </p>
@@ -1607,9 +1607,9 @@ export default function VijayawadaLocationClient({ faqs }: Props) {
                   <HelpCircle className="w-4 h-4 text-[#C65378]" />
                   <span>COMMONLY ASKED QUESTIONS</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   12. Frequently Asked Questions: Vijayawada Wills
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Essential legal answers regarding Will drafting, AP IGRS registration, and probate exemption in Vijayawada:
                 </p>
@@ -1653,9 +1653,9 @@ export default function VijayawadaLocationClient({ faqs }: Props) {
                   <Scale className="w-4 h-4 text-[#C65378]" />
                   <span>LEGAL PROVISIONS &amp; AUTHORITIES</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   13. Statutory References &amp; Andhra Pradesh IGRS Rules
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Every Will crafted on our platform adheres to strict Indian statutory law and Andhra Pradesh state circulars:
                 </p>

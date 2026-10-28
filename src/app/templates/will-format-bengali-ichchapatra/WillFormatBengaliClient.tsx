@@ -589,9 +589,9 @@ Official Clinic Seal: [Rubber Stamp]`;
                 <ScrollText className="w-4 h-4" />
                 <span>NATIVE VERNACULAR TEMPLATE</span>
               </div>
-              <h2 className="text-xl sm:text-2xl font-bold text-[#172228]">
+              <h3 className="text-xl sm:text-2xl font-bold text-[#172228]">
                 2. Complete Bengali Ichchapatra Format: Native Draft
-              </h2>
+              </h3>
               <p className="text-sm text-slate-700 leading-relaxed">
                 Below is the complete legal text of a valid Will in Bengali (উইল বা ইচ্ছাপত্র). This draft
                 incorporates Dayabhaga title declarations, Section 63 attestation clauses, executor
@@ -634,9 +634,9 @@ Official Clinic Seal: [Rubber Stamp]`;
                 <Globe className="w-4 h-4" />
                 <span>BILINGUAL REFERENCE &amp; CLAUSE NOTES</span>
               </div>
-              <h2 className="text-xl sm:text-2xl font-bold text-[#172228]">
+              <h3 className="text-xl sm:text-2xl font-bold text-[#172228]">
                 3. English Translation: Bengali Will Clauses Explained
-              </h2>
+              </h3>
               <p className="text-sm text-slate-700 leading-relaxed">
                 If you are an NRI or drafting a bilingual Will for properties in West Bengal, here is the
                 exact English equivalent of each Bengali clause. This ensures complete alignment between
@@ -679,9 +679,9 @@ Official Clinic Seal: [Rubber Stamp]`;
                 <Sliders className="w-4 h-4" />
                 <span>TAILOR YOUR WILL DRAFT</span>
               </div>
-              <h2 className="text-xl sm:text-2xl font-bold text-[#172228]">
+              <h3 className="text-xl sm:text-2xl font-bold text-[#172228]">
                 4. Interactive Clause Selector: Tailor Your Bengali Will
-              </h2>
+              </h3>
               <p className="text-sm text-slate-700 leading-relaxed">
                 Select specific legal situations below to view and copy specialized legal clauses designed
                 specifically for West Bengal property laws and Dayabhaga jurisprudence:
@@ -787,9 +787,9 @@ Official Clinic Seal: [Rubber Stamp]`;
                 <Gavel className="w-4 h-4" />
                 <span>CALCUTTA HIGH COURT JURISDICTION</span>
               </div>
-              <h2 className="text-xl sm:text-2xl font-bold text-[#172228]">
+              <h3 className="text-xl sm:text-2xl font-bold text-[#172228]">
                 5. Kolkata High Court Probate Moat: Section 213 Rules
-              </h2>
+              </h3>
               <div className="text-sm text-slate-700 leading-relaxed space-y-3">
                 <p>
                   Section 213 read with Section 57(a) &amp; (b) of the Indian Succession Act, 1925
@@ -868,9 +868,9 @@ Official Clinic Seal: [Rubber Stamp]`;
                 <Calculator className="w-4 h-4" />
                 <span>OFFICIAL WBDOR FEES CALCULATOR</span>
               </div>
-              <h2 className="text-xl sm:text-2xl font-bold text-[#172228]">
+              <h3 className="text-xl sm:text-2xl font-bold text-[#172228]">
                 6. West Bengal SRO Registration: e-Nathikaran Fee Guide
-              </h2>
+              </h3>
               <p className="text-sm text-slate-700 leading-relaxed">
                 Will registration in West Bengal is conducted under the Directorate of Registration and
                 Stamp Revenue (WBDOR) via the <strong>e-Nathikaran portal</strong>. Because a Will does not
@@ -970,9 +970,9 @@ Official Clinic Seal: [Rubber Stamp]`;
                 <Layers className="w-4 h-4" />
                 <span>LEGAL PATHWAY COMPARISON</span>
               </div>
-              <h2 className="text-xl sm:text-2xl font-bold text-[#172228]">
+              <h3 className="text-xl sm:text-2xl font-bold text-[#172228]">
                 7. Legal Comparison: Registered Will vs Warish Certificate
-              </h2>
+              </h3>
               <p className="text-sm text-slate-700 leading-relaxed">
                 When someone passes away in West Bengal, property transmission follows either intestate
                 succession (via Warish Certificate) or testamentary succession (via Will/Probate). Here is
@@ -1039,9 +1039,9 @@ Official Clinic Seal: [Rubber Stamp]`;
                 <FileCheck className="w-4 h-4" />
                 <span>EXECUTION PROTOCOL IN WEST BENGAL</span>
               </div>
-              <h2 className="text-xl sm:text-2xl font-bold text-[#172228]">
+              <h3 className="text-xl sm:text-2xl font-bold text-[#172228]">
                 8. Step-by-Step SOP: Drafting to Registration in Bengal
-              </h2>
+              </h3>
               <div className="space-y-4">
                 {[
                   {
@@ -1092,9 +1092,9 @@ Official Clinic Seal: [Rubber Stamp]`;
                 <Scale className="w-4 h-4" />
                 <span>REAL LITIGATION SCENARIOS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl font-bold text-[#172228]">
+              <h3 className="text-xl sm:text-2xl font-bold text-[#172228]">
                 9. Practical Case Studies: Kolkata, Salt Lake &amp; Howrah
-              </h2>
+              </h3>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                 <div className="p-4 rounded-2xl bg-white border border-slate-200 shadow-xs space-y-2">
                   <div className="text-[11px] font-bold text-[#C65378] uppercase tracking-wide">
@@ -1150,9 +1150,9 @@ Official Clinic Seal: [Rubber Stamp]`;
                 <FileCheck className="w-4 h-4" />
                 <span>REGISTRATION CHECKLIST &amp; DOCTOR CERT</span>
               </div>
-              <h2 className="text-xl sm:text-2xl font-bold text-[#172228]">
+              <h3 className="text-xl sm:text-2xl font-bold text-[#172228]">
                 10. Sub-Registrar Document Checklist &amp; Medical Certificate
-              </h2>
+              </h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 {/* Checklist Card */}
                 <div className="p-5 rounded-2xl bg-white border border-slate-200 shadow-xs space-y-3">
@@ -1225,9 +1225,9 @@ Official Clinic Seal: [Rubber Stamp]`;
                 <Calculator className="w-4 h-4" />
                 <span>INTERACTIVE ESTATE PLANNING TOOLS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl font-bold text-[#172228]">
+              <h3 className="text-xl sm:text-2xl font-bold text-[#172228]">
                 11. Contextual Estate Calculators &amp; Succession Tools
-              </h2>
+              </h3>
               <p className="text-sm text-slate-700 leading-relaxed">
                 Use our suite of legal calculators to estimate tax on inherited property, verify court
                 probate expenses, and check witness eligibility under Indian succession laws:
@@ -1307,9 +1307,9 @@ Official Clinic Seal: [Rubber Stamp]`;
                 <UserCheck className="w-4 h-4" />
                 <span>EDITORIAL &amp; LEGAL OVERSIGHT</span>
               </div>
-              <h2 className="text-xl sm:text-2xl font-bold text-[#172228]">
+              <h3 className="text-xl sm:text-2xl font-bold text-[#172228]">
                 12. Legal Backing: Senior Succession Counsel Profile
-              </h2>
+              </h3>
               <div className="rounded-2xl bg-white border border-slate-200 p-5 sm:p-6 shadow-xs flex flex-col sm:flex-row items-center sm:items-start gap-5">
                 <div className="w-20 h-20 rounded-full bg-[#172228] text-white flex items-center justify-center font-extrabold text-2xl shrink-0 shadow-md">
                   AM
@@ -1352,9 +1352,9 @@ Official Clinic Seal: [Rubber Stamp]`;
                 <HelpCircle className="w-4 h-4" />
                 <span>FREQUENTLY ASKED QUESTIONS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl font-bold text-[#172228]">
+              <h3 className="text-xl sm:text-2xl font-bold text-[#172228]">
                 13. Frequently Asked Questions: Bengali Ichchapatra
-              </h2>
+              </h3>
               <div className="space-y-3">
                 {FAQS_DATA.map((faq, idx) => {
                   const isOpen = openFaq === idx;
@@ -1391,9 +1391,9 @@ Official Clinic Seal: [Rubber Stamp]`;
                 <BookOpen className="w-4 h-4" />
                 <span>STATUTORY REPOSITORY</span>
               </div>
-              <h2 className="text-xl sm:text-2xl font-bold text-[#172228]">
+              <h3 className="text-xl sm:text-2xl font-bold text-[#172228]">
                 14. Statutory Citations: Bengal Land &amp; Succession Acts
-              </h2>
+              </h3>
               <div className="overflow-x-auto rounded-2xl border border-slate-200 bg-white shadow-xs">
                 <table className="w-full text-left text-xs border-collapse">
                   <thead>

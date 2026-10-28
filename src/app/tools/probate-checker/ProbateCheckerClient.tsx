@@ -591,9 +591,9 @@ export default function ProbateCheckerClient() {
                 <Sparkles className="w-4 h-4" />
                 <span>5-STEP PROBATE CHECKER</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 2. Interactive Diagnostic Tool: Check Probate Requirement
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Select Yes or No for the 5 statutory criteria below. The diagnostic engine applies
                 Sections 57, 213, 222, and 228 of the Indian Succession Act to determine if your
@@ -828,9 +828,9 @@ export default function ProbateCheckerClient() {
                 <Building className="w-4 h-4" />
                 <span>GEOGRAPHIC JURISDICTION</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 3. Presidential Towns Rule: Section 57 & 213 Jurisdictions
-              </h2>
+              </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   A common point of confusion among Indian families is why probate is required in
@@ -888,9 +888,9 @@ export default function ProbateCheckerClient() {
                 <Scale className="w-4 h-4" />
                 <span>STATUTORY EVALUATION MATRIX</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 4. Diagnostic Matrix: Legal Triggers & Practical Impact
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Review the 5 primary factors that govern whether a Will must go to court in India.
               </p>
@@ -970,9 +970,9 @@ export default function ProbateCheckerClient() {
                 <MapPin className="w-4 h-4" />
                 <span>STATEWISE LEGAL GUIDE</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 5. State-by-State Guide: Where Probate is Mandatory in India
-              </h2>
+              </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   Court probate rules vary dramatically across Indian states. The table below details
@@ -1093,9 +1093,9 @@ export default function ProbateCheckerClient() {
                 <Sparkles className="w-4 h-4" />
                 <span>VISUAL BLUEPRINT</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 6. Visual Blueprint: Indian Probate Assessment Architecture
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 An authoritative roadmap illustrating how the 5 statutory criteria direct an estate
                 toward mandatory probate, Letters of Administration, or seamless direct transfer.
@@ -1135,9 +1135,9 @@ export default function ProbateCheckerClient() {
                 <Clock className="w-4 h-4" />
                 <span>COURT PROCEDURE PROTOCOL</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 7. Step-by-Step SOP: High Court Probate Petition Protocol
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 When probate is required, the named executor must follow a strict statutory
                 procedure under the Indian Succession Act, 1925, and relevant High Court Original
@@ -1254,9 +1254,9 @@ export default function ProbateCheckerClient() {
                 <Scale className="w-4 h-4" />
                 <span>COMPARATIVE JURISPRUDENCE</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 8. Legal Instruments Compared: Probate vs LOA vs Succession
-              </h2>
+              </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   Indian law provides three distinct court instruments to administer or clear title
@@ -1328,9 +1328,9 @@ export default function ProbateCheckerClient() {
                 <DollarSign className="w-4 h-4" />
                 <span>EXPENSES & TIMEFRAMES</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 9. Court Fees & Realistic Timelines: State-Wise Breakdown
-              </h2>
+              </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   Court fees for probate petitions are calculated on an ad valorem percentage based
@@ -1404,9 +1404,9 @@ export default function ProbateCheckerClient() {
                 <ShieldCheck className="w-4 h-4" />
                 <span>DEFENSIVE DRAFTING</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 10. Defensive Estate Planning: Avoiding Court Friction
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 If your property is outside Mumbai, Chennai, and Kolkata, you can completely avoid
                 expensive court probate by following 4 defensive estate drafting rules:
@@ -1473,9 +1473,9 @@ export default function ProbateCheckerClient() {
                 <Building2 className="w-4 h-4" />
                 <span>COMPLEX TESTAMENTARY CASES</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 11. Specialized Scenarios: Foreign Wills, NRI Assets & CHS
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Certain estate scenarios involve unique legal hurdles that demand specialized
                 statutory compliance:
@@ -1546,9 +1546,9 @@ export default function ProbateCheckerClient() {
                 <Award className="w-4 h-4" />
                 <span>LEGAL EXPERTISE & PRACTICE</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 12. Institutional Profile: Legal Excellence & Trust Signals
-              </h2>
+              </h3>
               <div className="bg-white rounded-2xl border border-slate-200/90 p-6 sm:p-8 shadow-xs space-y-5">
                 <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-5 border-b border-slate-100">
                   <div className="space-y-1">
@@ -1610,9 +1610,9 @@ export default function ProbateCheckerClient() {
                 <HelpCircle className="w-4 h-4" />
                 <span>DIRECT ANSWERS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 Frequently Asked Questions: Probate of Will in India
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Plain-English answers to the most common legal questions about court probate,
                 jurisdiction rules, timelines, and costs in India:
@@ -1659,9 +1659,9 @@ export default function ProbateCheckerClient() {
                 <BookOpen className="w-4 h-4" />
                 <span>AUTHORITY & CITATIONS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 Statutory Citations: Acts, Rules & Authoritative Portals
-              </h2>
+              </h3>
               <div className="space-y-3 text-xs sm:text-sm text-slate-700 leading-relaxed">
                 <p>This diagnostic tool is calibrated under the following statutory provisions:</p>
                 <ul className="list-disc pl-5 space-y-1.5 text-xs text-slate-600">

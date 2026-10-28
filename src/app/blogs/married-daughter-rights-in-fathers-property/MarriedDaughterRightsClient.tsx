@@ -574,9 +574,9 @@ export default function MarriedDaughterRightsClient() {
                 <Layers className="w-4 h-4" />
                 <span>Statutory Decision Matrix</span>
               </div>
-              <h2 className="text-xl sm:text-2xl font-extrabold text-[#172228] leading-tight">
+              <h3 className="text-xl sm:text-2xl font-extrabold text-[#172228] leading-tight">
                 1. Ancestral vs Self-Acquired: The 2x2 Property Rights Matrix
-              </h2>
+              </h3>
               <p className="text-slate-700 text-sm sm:text-base leading-relaxed">
                 A married daughter&apos;s legal inheritance rights depend on two critical legal variables:{" "}
                 <strong>(1) Property Nature</strong> (Ancestral vs Self-Acquired) and <strong>(2) Testamentary Status</strong>{" "}
@@ -695,9 +695,9 @@ export default function MarriedDaughterRightsClient() {
                 <Scale className="w-4 h-4" />
                 <span>Statutory Authority</span>
               </div>
-              <h2 className="text-xl sm:text-2xl font-extrabold text-[#172228] leading-tight">
+              <h3 className="text-xl sm:text-2xl font-extrabold text-[#172228] leading-tight">
                 2. Hindu Succession Act 2005: Equal Coparcenary by Birth
-              </h2>
+              </h3>
               <div className="bg-white rounded-2xl border border-slate-200/80 p-6 space-y-4 text-slate-700 text-sm sm:text-base leading-relaxed">
                 <p>
                   The foundational charter of daughters&apos; property rights in India is the{" "}
@@ -764,9 +764,9 @@ export default function MarriedDaughterRightsClient() {
                 <Gavel className="w-4 h-4" />
                 <span>Landmark Supreme Court Precedent</span>
               </div>
-              <h2 className="text-xl sm:text-2xl font-extrabold text-[#172228] leading-tight">
+              <h3 className="text-xl sm:text-2xl font-extrabold text-[#172228] leading-tight">
                 3. Vineeta Sharma (2020) Ruling: Retrospective Legal Equality
-              </h2>
+              </h3>
               <div className="bg-white rounded-2xl border border-slate-200/80 p-6 space-y-4 text-slate-700 text-sm sm:text-base leading-relaxed">
                 <p>
                   Following the 2005 amendment, Indian courts were divided by conflicting judgments regarding whether a
@@ -823,9 +823,9 @@ export default function MarriedDaughterRightsClient() {
                 <Landmark className="w-4 h-4" />
                 <span>Property Classification</span>
               </div>
-              <h2 className="text-xl sm:text-2xl font-extrabold text-[#172228] leading-tight">
+              <h3 className="text-xl sm:text-2xl font-extrabold text-[#172228] leading-tight">
                 4. Self-Acquired Property: Rules With and Without a Will
-              </h2>
+              </h3>
               <div className="bg-white rounded-2xl border border-slate-200/80 p-6 space-y-4 text-slate-700 text-sm sm:text-base leading-relaxed">
                 <p>
                   Self-acquired property is any asset purchased by the father using his own earnings, savings, business
@@ -885,9 +885,9 @@ export default function MarriedDaughterRightsClient() {
                 <Building className="w-4 h-4" />
                 <span>Coparcenary Mechanics</span>
               </div>
-              <h2 className="text-xl sm:text-2xl font-extrabold text-[#172228] leading-tight">
+              <h3 className="text-xl sm:text-2xl font-extrabold text-[#172228] leading-tight">
                 5. Ancestral Property: Coparcenary Share &amp; HUF Rights
-              </h2>
+              </h3>
               <div className="bg-white rounded-2xl border border-slate-200/80 p-6 space-y-4 text-slate-700 text-sm sm:text-base leading-relaxed">
                 <p>
                   Ancestral property strictly refers to property inherited up to <strong>four generations</strong> of
@@ -938,9 +938,9 @@ export default function MarriedDaughterRightsClient() {
                 <Calculator className="w-4 h-4" />
                 <span>Interactive Legal Tool</span>
               </div>
-              <h2 className="text-xl sm:text-2xl font-extrabold text-[#172228] leading-tight">
+              <h3 className="text-xl sm:text-2xl font-extrabold text-[#172228] leading-tight">
                 6. Calculate Your Share: Interactive Inheritance Calculator
-              </h2>
+              </h3>
               <p className="text-slate-700 text-sm sm:text-base leading-relaxed">
                 Estimate a married daughter&apos;s statutory inheritance share based on your family structure, property
                 classification, and estimated estate value.
@@ -1110,9 +1110,9 @@ export default function MarriedDaughterRightsClient() {
                 <Eye className="w-4 h-4" />
                 <span>Visual Legal Blueprint</span>
               </div>
-              <h2 className="text-xl sm:text-2xl font-extrabold text-[#172228] leading-tight">
+              <h3 className="text-xl sm:text-2xl font-extrabold text-[#172228] leading-tight">
                 7. Visual Blueprint: Daughter Inheritance Rights in India
-              </h2>
+              </h3>
               <p className="text-slate-700 text-sm sm:text-base leading-relaxed">
                 The visual roadmap below captures the core transformation brought about by the 2005 Hindu Succession
                 Amendment and the Supreme Court&apos;s <em>Vineeta Sharma</em> judgment.
@@ -1167,9 +1167,9 @@ export default function MarriedDaughterRightsClient() {
                 <Clock className="w-4 h-4" />
                 <span>Enforcement Protocol</span>
               </div>
-              <h2 className="text-xl sm:text-2xl font-extrabold text-[#172228] leading-tight">
+              <h3 className="text-xl sm:text-2xl font-extrabold text-[#172228] leading-tight">
                 8. Step-by-Step SOP: What to Do If Your Share Is Denied
-              </h2>
+              </h3>
               <p className="text-slate-700 text-sm sm:text-base leading-relaxed">
                 If brothers, uncles, or relatives refuse to recognize your lawful inheritance or attempt to sell family
                 properties behind your back, execute this 5-stage legal protocol immediately.
@@ -1288,9 +1288,9 @@ export default function MarriedDaughterRightsClient() {
                 <ShieldAlert className="w-4 h-4" />
                 <span>Legal Caution</span>
               </div>
-              <h2 className="text-xl sm:text-2xl font-extrabold text-[#172228] leading-tight">
+              <h3 className="text-xl sm:text-2xl font-extrabold text-[#172228] leading-tight">
                 9. Relinquishment Deeds: Can You Be Forced to Sign an NOC?
-              </h2>
+              </h3>
               <div className="bg-white rounded-2xl border border-slate-200/80 p-6 space-y-4 text-slate-700 text-sm sm:text-base leading-relaxed">
                 <p>
                   In countless Indian households, brothers pressure married sisters to sign &ldquo;No Objection
@@ -1340,9 +1340,9 @@ export default function MarriedDaughterRightsClient() {
                 <Heart className="w-4 h-4" />
                 <span>Women&apos;s Absolute Property</span>
               </div>
-              <h2 className="text-xl sm:text-2xl font-extrabold text-[#172228] leading-tight">
+              <h3 className="text-xl sm:text-2xl font-extrabold text-[#172228] leading-tight">
                 10. Stridhan vs Father Property: Key Legal Distinctions
-              </h2>
+              </h3>
               <div className="bg-white rounded-2xl border border-slate-200/80 p-6 space-y-4 text-slate-700 text-sm sm:text-base leading-relaxed">
                 <p>
                   A common misconception across India is that if a father gave gold jewelry, cash gifts, or funded a
@@ -1394,9 +1394,9 @@ export default function MarriedDaughterRightsClient() {
                 <HelpCircle className="w-4 h-4" />
                 <span>Myth Busters</span>
               </div>
-              <h2 className="text-xl sm:text-2xl font-extrabold text-[#172228] leading-tight">
+              <h3 className="text-xl sm:text-2xl font-extrabold text-[#172228] leading-tight">
                 11. Common Myths About Married Daughters and Property Rights
-              </h2>
+              </h3>
               <div className="space-y-3">
                 {MYTHS_LIST.map((item, idx) => (
                   <div
@@ -1428,9 +1428,9 @@ export default function MarriedDaughterRightsClient() {
                   <Sparkles className="w-3.5 h-3.5 text-[#C65378]" />
                   <span>THE PERMANENT SOLUTION</span>
                 </div>
-                <h2 className="text-xl sm:text-2xl font-extrabold leading-snug text-white">
+                <h3 className="text-xl sm:text-2xl font-extrabold leading-snug text-white">
                   Don&apos;t Let Property Disputes Disinherit Your Daughter
-                </h2>
+                </h3>
                 <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
                   Drafting a legally binding Will on WillDrafting.in takes just 15 minutes. It lets you catalog all your ancestral and self-acquired assets, name your married daughters as direct beneficiaries, and eliminate bitter sibling disputes before they reach civil courts.
                 </p>
@@ -1462,9 +1462,9 @@ export default function MarriedDaughterRightsClient() {
                 <Globe2Icon className="w-4 h-4" />
                 <span>Comparative Succession Law</span>
               </div>
-              <h2 className="text-xl sm:text-2xl font-extrabold text-[#172228] leading-tight">
+              <h3 className="text-xl sm:text-2xl font-extrabold text-[#172228] leading-tight">
                 13. Rights Under Muslim, Christian &amp; Parsi Personal Laws
-              </h2>
+              </h3>
               <div className="bg-white rounded-2xl border border-slate-200/80 p-6 space-y-4 text-slate-700 text-sm sm:text-base leading-relaxed">
                 <p>
                   While the Hindu Succession Act applies to Hindus, Buddhists, Jains, and Sikhs, succession rights for
@@ -1511,9 +1511,9 @@ export default function MarriedDaughterRightsClient() {
                 <HelpCircle className="w-4 h-4" />
                 <span>Frequently Asked Questions</span>
               </div>
-              <h2 className="text-xl sm:text-2xl font-extrabold text-[#172228] leading-tight">
+              <h3 className="text-xl sm:text-2xl font-extrabold text-[#172228] leading-tight">
                 14. Frequently Asked Questions: Daughter Property Rights
-              </h2>
+              </h3>
 
               <div className="space-y-3">
                 {FAQ_ITEMS.map((item, index) => {
@@ -1551,9 +1551,9 @@ export default function MarriedDaughterRightsClient() {
                 <BookOpen className="w-4 h-4 text-[#5F7E75]" />
                 <span>Legal Framework &amp; Authorities</span>
               </div>
-              <h2 className="text-xl sm:text-2xl font-extrabold text-[#172228] leading-tight">
+              <h3 className="text-xl sm:text-2xl font-extrabold text-[#172228] leading-tight">
                 15. Official Legal Citations &amp; Landmark Court Precedents
-              </h2>
+              </h3>
               <div className="bg-white rounded-2xl border border-slate-200/80 p-6 space-y-3 text-xs sm:text-sm text-slate-600">
                 <ul className="space-y-2 list-disc list-inside">
                   <li>

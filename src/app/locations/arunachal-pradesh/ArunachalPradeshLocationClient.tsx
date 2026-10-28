@@ -494,9 +494,9 @@ export default function ArunachalPradeshLocationClient({ faqs }: Props) {
                   <Scale className="w-4 h-4 text-[#C65378]" />
                   <span>FOUNDATIONAL SUCCESSION BLUEPRINT</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   1. Will Drafting &amp; Legal Framework in Arunachal Pradesh
-                </h2>
+                </h3>
               </div>
 
               <div className="prose prose-slate max-w-none text-sm sm:text-base leading-relaxed text-slate-700 space-y-4">
@@ -549,9 +549,9 @@ export default function ArunachalPradeshLocationClient({ faqs }: Props) {
                   <FileCheck className="w-4 h-4 text-[#C65378]" />
                   <span>REGISTRATION ACT, 1908 ANALYSIS</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   2. Is Will Registration Mandatory in Arunachal Pradesh?
-                </h2>
+                </h3>
               </div>
 
               <div className="prose prose-slate max-w-none text-sm sm:text-base leading-relaxed text-slate-700 space-y-4">
@@ -611,9 +611,9 @@ export default function ArunachalPradeshLocationClient({ faqs }: Props) {
                   <Scale className="w-4 h-4 text-[#C65378]" />
                   <span>GAUHATI HIGH COURT JURISDICTION</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   3. Probate Law: Gauhati High Court Itanagar Succession
-                </h2>
+                </h3>
               </div>
 
               <div className="prose prose-slate max-w-none text-sm sm:text-base leading-relaxed text-slate-700 space-y-4">
@@ -643,9 +643,9 @@ export default function ArunachalPradeshLocationClient({ faqs }: Props) {
                   <Building className="w-4 h-4 text-[#C65378]" />
                   <span>DISTRICT ADMINISTRATIVE DIRECTORY</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   4. Arunachal Pradesh SRO Directory: Sub-Registrar Hubs
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   In Arunachal Pradesh, registration functions are administered under the Deputy Commissioner (DC) and Additional Deputy Commissioner (ADC) offices across each district headquarters. Search or select your jurisdictional hub below for registration details:
                 </p>
@@ -734,9 +734,9 @@ export default function ArunachalPradeshLocationClient({ faqs }: Props) {
                   <MapPin className="w-4 h-4 text-[#C65378]" />
                   <span>REGIONAL CITIES COVERAGE &amp; ASSET NUANCES</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   5. Regional Cities: City-Wise Will Drafting in Arunachal
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Estate holdings across Arunachal Pradesh span urban residential buildings in Itanagar and Naharlagun, high-value commercial establishments along arterial highways, horticultural kiwi and apple orchards in Tawang and Bomdila, and rich bamboo plantations in Ziro. Our estate advocates provide customized legal drafting, Land Holding Certificate (LHC) compliance, and Sub-Registrar accompaniment across all key regional cities:
                 </p>
@@ -1070,9 +1070,9 @@ export default function ArunachalPradeshLocationClient({ faqs }: Props) {
                   <FileText className="w-4 h-4 text-[#C65378]" />
                   <span>SYSTEMATIC EXECUTION BLUEPRINT</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   6. Step-by-Step SOP: Drafting to Registration in Arunachal
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Executing a legally foolproof Will in Arunachal Pradesh follows five structured phases from initial estate asset compilation to formal government Book III registration:
                 </p>
@@ -1163,9 +1163,9 @@ export default function ArunachalPradeshLocationClient({ faqs }: Props) {
                   <Home className="w-4 h-4 text-[#C65378]" />
                   <span>DOORSTEP LEGAL ACCESSIBILITY</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   7. Section 31 Doorstep Will Registration in Arunachal
-                </h2>
+                </h3>
               </div>
 
               <div className="prose prose-slate max-w-none text-sm sm:text-base leading-relaxed text-slate-700 space-y-4">
@@ -1209,9 +1209,9 @@ export default function ArunachalPradeshLocationClient({ faqs }: Props) {
                   <FileCheck className="w-4 h-4 text-[#C65378]" />
                   <span>REGISTRATION DOCKET PREPARATION</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   8. Required Documents for Will Registration in Arunachal
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Interactive checklist for registration before the Sub-Registrar or Deputy Commissioner office. Use this to prepare your document file:
                 </p>
@@ -1272,9 +1272,9 @@ export default function ArunachalPradeshLocationClient({ faqs }: Props) {
                   <Home className="w-4 h-4 text-[#C65378]" />
                   <span>ASSET CLASSIFICATIONS &amp; REGULATORY RULES</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   9. Arunachal Asset Succession: LHC, Land &amp; Savings
-                </h2>
+                </h3>
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
@@ -1331,9 +1331,9 @@ export default function ArunachalPradeshLocationClient({ faqs }: Props) {
                   <Stamp className="w-4 h-4 text-[#C65378]" />
                   <span>GOVERNMENT STATUTORY SCHEDULE</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   10. SRO Registration Fees &amp; Stamp Duty in Arunachal
-                </h2>
+                </h3>
               </div>
 
               <div className="prose prose-slate max-w-none text-sm sm:text-base leading-relaxed text-slate-700 space-y-4">
@@ -1373,9 +1373,9 @@ export default function ArunachalPradeshLocationClient({ faqs }: Props) {
                   <Award className="w-4 h-4 text-[#C65378]" />
                   <span>TRANSPARENT LEGAL ASSISTANCE PLANS</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   11. Transparent Plans &amp; Pricing for Arunachal Residents
-                </h2>
+                </h3>
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
@@ -1508,9 +1508,9 @@ export default function ArunachalPradeshLocationClient({ faqs }: Props) {
                   <HelpCircle className="w-4 h-4 text-[#C65378]" />
                   <span>AUTHORITATIVE ANSWERS</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   Frequently Asked Questions: Will Drafting in Arunachal
-                </h2>
+                </h3>
               </div>
 
               <div className="space-y-3">
@@ -1550,9 +1550,9 @@ export default function ArunachalPradeshLocationClient({ faqs }: Props) {
                   <Scale className="w-4 h-4 text-[#C65378]" />
                   <span>LEGAL CODE &amp; STATUTORY REFERENCES</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   13. Statutory Citations &amp; Arunachal Pradesh Land Laws
-                </h2>
+                </h3>
               </div>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs text-slate-700">
@@ -1577,9 +1577,9 @@ export default function ArunachalPradeshLocationClient({ faqs }: Props) {
 
             {/* BOTTOM CTA BANNER */}
             <div className="rounded-3xl bg-[#172228] text-white p-8 sm:p-10 text-center space-y-5 border border-white/10 shadow-xl">
-              <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-white">
+              <h3 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-white">
                 Protect Your Family Estate in Arunachal Pradesh Today
-              </h2>
+              </h3>
               <p className="text-sm sm:text-base text-slate-300 max-w-2xl mx-auto leading-relaxed">
                 Take the decisive step to secure your Land Holding Certificates (LHC), commercial assets, and family legacy. Draft an ironclad Will with advocate oversight and complete Book III registration.
               </p>

@@ -175,7 +175,7 @@ export default function GlobalPopup() {
 
         {/* Clean Header without logo */}
         <div style={{ textAlign: "center", marginBottom: "1.25rem" }}>
-          <h2
+          <div
             style={{
               fontSize: "1.35rem",
               fontWeight: 700,
@@ -185,7 +185,7 @@ export default function GlobalPopup() {
             }}
           >
             Start Your Will
-          </h2>
+          </div>
         </div>
 
         {/* Embedded Intake Form */}

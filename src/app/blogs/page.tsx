@@ -1,14 +1,17 @@
 import React from "react";
+import fs from "node:fs";
+import path from "node:path";
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import { ObjectId } from "mongodb";
 import Navbar from "@/components/Navbar";
 import FAQ from "@/components/faq";
 import CTA from "@/components/cta";
 import Footer from "@/components/Footer";
 import { ArrowUpRight } from "lucide-react";
 import { BLOG_ARTICLES } from "@/data/blogs";
-import { blogsCol } from "@/lib/db/collections";
+import { blogImagesCol, blogsCol } from "@/lib/db/collections";
 
 export const dynamic = "force-dynamic";
 
@@ -115,6 +118,97 @@ interface UnifiedBlogCard {
   imageSrc: string;
 }
 
+const PUBLIC_DIR = path.resolve(process.cwd(), "public");
+
+function extractBlogImageObjectId(rawValue?: string | null): string | null {
+  if (!rawValue || typeof rawValue !== "string") return null;
+  let pathname = rawValue.trim();
+  if (/^https?:\/\//i.test(pathname)) {
+    try {
+      const parsed = new URL(pathname);
+      const host = parsed.hostname.toLowerCase();
+      if (host === "willdrafting.in" || host === "www.willdrafting.in") {
+        pathname = parsed.pathname;
+      } else {
+        return null;
+      }
+    } catch {
+      return null;
+    }
+  }
+  pathname = pathname.split(/[?#]/)[0].trim();
+  const match = pathname.match(/^\/api\/blog-images\/([^/]+)$/);
+  if (!match) return null;
+  const cleanId = match[1].replace(/\.(png|jpg|jpeg|webp|gif|svg)$/i, "").trim();
+  return /^[a-fA-F0-9]{24}$/.test(cleanId) ? cleanId.toLowerCase() : null;
+}
+
+function resolveSafeBlogImage(
+  rawImage?: string | null,
+  validBlogImageIds?: Set<string>
+): string {
+  if (!rawImage || typeof rawImage !== "string") return "/desktopusp.jpg";
+  const trimmed = rawImage.trim();
+  if (!trimmed) return "/desktopusp.jpg";
+
+  if (/^data:image\/[a-zA-Z0-9.+-]+;base64,/i.test(trimmed)) {
+    return trimmed;
+  }
+
+  let candidatePath = trimmed;
+  if (/^https?:\/\//i.test(trimmed)) {
+    try {
+      const parsed = new URL(trimmed);
+      const host = parsed.hostname.toLowerCase();
+      if (host === "willdrafting.in" || host === "www.willdrafting.in") {
+        candidatePath = parsed.pathname;
+      } else {
+        return trimmed;
+      }
+    } catch {
+      return "/desktopusp.jpg";
+    }
+  }
+
+  const cleanPathname = candidatePath.split(/[?#]/)[0].trim();
+  if (!cleanPathname) return "/desktopusp.jpg";
+
+  if (cleanPathname.startsWith("/api/")) {
+    const objectId = extractBlogImageObjectId(cleanPathname);
+    if (!objectId) return "/desktopusp.jpg";
+    if (validBlogImageIds && !validBlogImageIds.has(objectId)) {
+      return "/desktopusp.jpg";
+    }
+    return cleanPathname;
+  }
+
+  let decodedRelPath = cleanPathname.startsWith("/")
+    ? cleanPathname.slice(1)
+    : cleanPathname;
+  try {
+    decodedRelPath = decodeURIComponent(decodedRelPath);
+  } catch {
+    return "/desktopusp.jpg";
+  }
+  if (!decodedRelPath) return "/desktopusp.jpg";
+
+  const fullPublicPath = path.resolve(PUBLIC_DIR, decodedRelPath);
+  if (
+    fullPublicPath !== PUBLIC_DIR &&
+    fullPublicPath.startsWith(PUBLIC_DIR + path.sep)
+  ) {
+    try {
+      if (fs.statSync(fullPublicPath).isFile()) {
+        return cleanPathname.startsWith("/") ? cleanPathname : `/${cleanPathname}`;
+      }
+    } catch {
+      // File does not exist in public/
+    }
+  }
+
+  return "/desktopusp.jpg";
+}
+
 export default async function BlogsPage() {
   const unifiedCards: UnifiedBlogCard[] = [];
   const seenSlugs = new Set<string>();
@@ -125,6 +219,27 @@ export default async function BlogsPage() {
       .find({ status: "PUBLISHED" })
       .sort({ createdAt: -1 })
       .toArray();
+
+    const candidateHexIds = Array.from(
+      new Set(
+        dbBlogs
+          .map((b) => extractBlogImageObjectId(b.image))
+          .filter((id): id is string => Boolean(id))
+      )
+    );
+    const validBlogImageIds = new Set<string>();
+    if (candidateHexIds.length > 0) {
+      const imgCol = await blogImagesCol();
+      const existingImgs = await imgCol
+        .find(
+          { _id: { $in: candidateHexIds.map((id) => new ObjectId(id)) } },
+          { projection: { _id: 1 } }
+        )
+        .toArray();
+      for (const doc of existingImgs) {
+        validBlogImageIds.add(doc._id.toString().toLowerCase());
+      }
+    }
 
     for (const b of dbBlogs) {
       if (!b.slug) continue;
@@ -141,7 +256,7 @@ export default async function BlogsPage() {
           day: "numeric",
           year: "numeric",
         }),
-        imageSrc: b.image || "/desktopusp.jpg",
+        imageSrc: resolveSafeBlogImage(b.image, validBlogImageIds),
       });
     }
   } catch (error) {
@@ -181,6 +296,9 @@ export default async function BlogsPage() {
           <h1 className="text-[2rem] sm:text-[2.2rem] lg:text-[3.4rem] font-medium leading-[1.12] tracking-[-0.025em] text-[#111827]">
             Blogs
           </h1>
+          <h2 className="mt-3 text-base sm:text-lg font-medium text-[#49585F]">
+            Indian Succession Law, Probate &amp; Will Drafting Guides
+          </h2>
         </div>
 
         {/* =========================================================================
@@ -200,7 +318,7 @@ export default async function BlogsPage() {
                       alt={article.title.slice(0, 85)}
                       width={800}
                       height={500}
-                      unoptimized={article.imageSrc.startsWith("/api/")}
+                      unoptimized
                       sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                       className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500 ease-out"
                     />
@@ -213,9 +331,9 @@ export default async function BlogsPage() {
                 </div>
 
                 <Link href={`/blogs/${article.slug}`}>
-                  <h2 className="text-xl sm:text-[1.35rem] font-medium leading-[1.25] text-[#111827] mb-3 group-hover:text-[#C65378] transition-colors duration-200">
+                  <h3 className="text-xl sm:text-[1.35rem] font-medium leading-[1.25] text-[#111827] mb-3 group-hover:text-[#C65378] transition-colors duration-200">
                     {article.title}
-                  </h2>
+                  </h3>
                 </Link>
 
                 <p className="text-[#49585F] text-[15px] leading-[1.6] mb-6 line-clamp-3">

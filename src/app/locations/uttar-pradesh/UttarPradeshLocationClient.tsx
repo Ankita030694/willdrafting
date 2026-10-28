@@ -604,9 +604,9 @@ export default function UttarPradeshLocationClient({ faqs }: Props) {
               </div>
 
               {/* H2: Exactly 51 characters */}
-              <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                 1. Will Drafting &amp; Succession Laws in Uttar Pradesh
-              </h2>
+              </h3>
 
               <div className="space-y-4 text-slate-700 text-sm sm:text-base leading-relaxed mt-6">
                 <p>
@@ -680,9 +680,9 @@ export default function UttarPradeshLocationClient({ faqs }: Props) {
               </div>
 
               {/* H2: Exactly 49 characters */}
-              <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                 2. Will Registration in UP: IGRSUP Rules &amp; Status
-              </h2>
+              </h3>
 
               <div className="space-y-4 text-slate-700 text-sm sm:text-base leading-relaxed mt-6">
                 <p>
@@ -760,9 +760,9 @@ export default function UttarPradeshLocationClient({ faqs }: Props) {
               </div>
 
               {/* H2: Exactly 53 characters */}
-              <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                 3. Probate in Uttar Pradesh: Allahabad HC Jurisdiction
-              </h2>
+              </h3>
 
               <div className="space-y-4 text-slate-700 text-sm sm:text-base leading-relaxed mt-6">
                 <p>
@@ -825,9 +825,9 @@ export default function UttarPradeshLocationClient({ faqs }: Props) {
               </div>
 
               {/* H2: Exactly 52 characters */}
-              <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                 4. Section 108 UP Revenue Code: Agricultural Farmland
-              </h2>
+              </h3>
 
               <div className="space-y-4 text-slate-700 text-sm sm:text-base leading-relaxed mt-6">
                 <p>
@@ -894,9 +894,9 @@ export default function UttarPradeshLocationClient({ faqs }: Props) {
               </div>
 
               {/* H2: Exactly 55 characters */}
-              <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                 5. Uttar Pradesh SRO Directory: District &amp; Sub-Registrar
-              </h2>
+              </h3>
 
               <p className="text-slate-700 text-sm sm:text-base leading-relaxed mt-4 mb-6">
                 Uttar Pradesh operates hundreds of Sub-Registrar Offices administered by the Stamps and 
@@ -999,9 +999,9 @@ export default function UttarPradeshLocationClient({ faqs }: Props) {
               </div>
 
               {/* H2: Exactly 52 characters */}
-              <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                 6. Regional Will Drafting Across Uttar Pradesh Cities
-              </h2>
+              </h3>
 
               <p className="text-slate-700 text-sm sm:text-base leading-relaxed mt-4 mb-6">
                 Estate succession practices differ between high-rise NCR developments, heritage Awadh properties, 
@@ -1211,9 +1211,9 @@ export default function UttarPradeshLocationClient({ faqs }: Props) {
               </div>
 
               {/* H2: Exactly 49 characters */}
-              <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                 7. Step-by-Step SOP: Will Drafting to Registration
-              </h2>
+              </h3>
 
               <p className="text-slate-700 text-sm sm:text-base leading-relaxed mt-4 mb-6">
                 Creating an enforceable Will in Uttar Pradesh is simple when following our verified 
@@ -1318,9 +1318,9 @@ export default function UttarPradeshLocationClient({ faqs }: Props) {
               </div>
 
               {/* H2: Exactly 44 characters */}
-              <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                 8. Section 31 Doorstep SRO Registration in UP
-              </h2>
+              </h3>
 
               <div className="space-y-4 text-slate-700 text-sm sm:text-base leading-relaxed mt-6">
                 <p>
@@ -1384,9 +1384,9 @@ export default function UttarPradeshLocationClient({ faqs }: Props) {
               </div>
 
               {/* H2: Exactly 53 characters */}
-              <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                 9. Mandatory Document Checklist for Uttar Pradesh Wills
-              </h2>
+              </h3>
 
               <p className="text-slate-700 text-sm sm:text-base leading-relaxed mt-4 mb-6">
                 Use this interactive pre-registration checklist to verify your documents before booking your 
@@ -1460,9 +1460,9 @@ export default function UttarPradeshLocationClient({ faqs }: Props) {
               </div>
 
               {/* H2: Exactly 52 characters */}
-              <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                 10. Estate Asset Distribution: Authority Flats &amp; Land
-              </h2>
+              </h3>
 
               <p className="text-slate-700 text-sm sm:text-base leading-relaxed mt-4 mb-6">
                 A robust Uttar Pradesh Will must be structured to accommodate varying property classifications:
@@ -1529,9 +1529,9 @@ export default function UttarPradeshLocationClient({ faqs }: Props) {
               </div>
 
               {/* H2: Exactly 52 characters */}
-              <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                 11. Registration Charges &amp; Stamp Duty in Uttar Pradesh
-              </h2>
+              </h3>
 
               <div className="space-y-4 text-slate-700 text-sm sm:text-base leading-relaxed mt-6">
                 <p>
@@ -1592,9 +1592,9 @@ export default function UttarPradeshLocationClient({ faqs }: Props) {
               </div>
 
               {/* H2: Exactly 50 characters */}
-              <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                 12. Transparent Pricing: Uttar Pradesh Will Packages
-              </h2>
+              </h3>
 
               <p className="text-slate-700 text-sm sm:text-base leading-relaxed mt-4 mb-6">
                 Transparent legal drafting and registration support tailored for families across Uttar Pradesh:
@@ -1732,9 +1732,9 @@ export default function UttarPradeshLocationClient({ faqs }: Props) {
               </div>
 
               {/* H2: Exactly 47 characters */}
-              <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                 Frequently Asked Questions: Will Drafting in UP
-              </h2>
+              </h3>
 
               <p className="text-slate-700 text-sm sm:text-base leading-relaxed mt-4 mb-6">
                 Find clear answers to common questions regarding Will drafting, IGRSUP registration, 
@@ -1784,9 +1784,9 @@ export default function UttarPradeshLocationClient({ faqs }: Props) {
               </div>
 
               {/* H2: Exactly 47 characters */}
-              <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                 13. Statutory Citations &amp; Legal Precedents in UP
-              </h2>
+              </h3>
 
               <p className="text-slate-700 text-sm sm:text-base leading-relaxed mt-4 mb-6">
                 Authoritative legal foundations governing testamentary succession and registration across Uttar Pradesh:

@@ -552,9 +552,9 @@ export default function UttarakhandLocationClient({ faqs }: Props) {
                   <span>STATUTORY PROVISIONS</span>
                 </div>
                 {/* H2: 48 chars */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   1. Will Drafting &amp; Legal Framework in Uttarakhand
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Will drafting and succession planning across Uttarakhand are governed by the <strong>Indian Succession Act, 1925</strong>, the <strong>Registration Act, 1908</strong>, and the <strong>Uttar Pradesh Zamindari Abolition and Land Reforms Act, 1950 (as adapted in Uttarakhand)</strong>. Any adult of sound mind can legally bequeath freehold residential properties, defense pensions and gratuities, commercial units, and ancestral agricultural holdings.
                 </p>
@@ -614,9 +614,9 @@ export default function UttarakhandLocationClient({ faqs }: Props) {
                   <span>REGISTRATION STATUS</span>
                 </div>
                 {/* H2: 49 chars */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   2. Is Will Registration Mandatory in Uttarakhand?
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Under Section 18(e) of the Registration Act, 1908, the registration of a testamentary Will is strictly <strong>optional</strong>. An unregistered Will signed on standard white paper before two independent witnesses is legally valid and admissible in court.
                 </p>
@@ -679,9 +679,9 @@ export default function UttarakhandLocationClient({ faqs }: Props) {
                   <span>JUDICIAL PRECEDENTS</span>
                 </div>
                 {/* H2: 46 chars */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   3. Uttarakhand Probate Law: High Court Position
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   A common question among property owners in Dehradun and Nainital is whether probate from the High Court of Uttarakhand is mandatory to inherit property under a Will. The established legal answer is <strong>no</strong>.
                 </p>
@@ -733,9 +733,9 @@ export default function UttarakhandLocationClient({ faqs }: Props) {
                   <span>SRO JURISDICTION DIRECTORY</span>
                 </div>
                 {/* H2: 50 chars */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   4. Uttarakhand SRO Directory: Sub-Registrar Offices
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Uttarakhand operates computerized Sub-Registrar Offices across all 13 revenue districts under the Stamps and Registration Department via the <strong>e-Prerna</strong> portal (`registration.uk.gov.in`). Under Section 32 of the Registration Act, your Will can be registered at the Sub-Registrar Office within whose sub-district you reside or where any part of your immovable property is situated.
                 </p>
@@ -836,9 +836,9 @@ export default function UttarakhandLocationClient({ faqs }: Props) {
                   <span>REGIONAL CITIES &amp; ASSET NUANCES</span>
                 </div>
                 {/* H2: 57 chars */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   5. Regional Cities: Area-Wise Will Drafting in Uttarakhand
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Estate assets in Uttarakhand span upscale residential societies in Dehradun, pilgrimage and industrial hubs in Haridwar and Roorkee, scenic hill bungalows in Nainital and Mussoorie, and high-yield agricultural belts in Udham Singh Nagar. Our legal team provides customized drafting, e-Prerna appointment scheduling, and Sub-Registrar accompaniment across all key micro-markets:
                 </p>
@@ -1173,9 +1173,9 @@ export default function UttarakhandLocationClient({ faqs }: Props) {
                   <span>PROCEDURAL ROADMAP</span>
                 </div>
                 {/* H2: 48 chars */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   6. Step-by-Step SOP: e-Prerna Registration Process
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Follow this verified 5-stage legal operating procedure to create, execute, and register your Will before the Sub-Registrar in Uttarakhand:
                 </p>
@@ -1262,9 +1262,9 @@ export default function UttarakhandLocationClient({ faqs }: Props) {
                   <span>DOORSTEP REGISTRATION FOR SENIORS</span>
                 </div>
                 {/* H2: 49 chars */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   7. Section 31 Doorstep SRO Registration for Seniors
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   For elderly citizens, unwell testators, or retired veterans residing in Dehradun, Haridwar, Haldwani, or hillside homes, traveling to a crowded Sub-Registrar Office can be physically demanding. Under <strong>Section 31 of the Registration Act, 1908</strong>, the Sub-Registrar possesses legal authority to attend a private home or hospital room to execute a Will.
                 </p>
@@ -1318,9 +1318,9 @@ export default function UttarakhandLocationClient({ faqs }: Props) {
                   <span>INTERACTIVE CHECKLIST</span>
                 </div>
                 {/* H2: 48 chars */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   8. Document Checklist for Uttarakhand SRO Offices
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Prepare your documentation before scheduling your Sub-Registrar appointment. You have organized <strong>{checkedCount} of {checklist.length}</strong> required documents:
                 </p>
@@ -1367,9 +1367,9 @@ export default function UttarakhandLocationClient({ faqs }: Props) {
                   <span>PROPERTY DYNAMICS</span>
                 </div>
                 {/* H2: 52 chars */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   9. Uttarakhand Property Types: MDDA Plots &amp; Hill Land
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Succession procedures in Uttarakhand vary significantly depending on the nature of property tenure and governing authority:
                 </p>
@@ -1422,9 +1422,9 @@ export default function UttarakhandLocationClient({ faqs }: Props) {
                   <span>STATUTORY CHARGES</span>
                 </div>
                 {/* H2: 51 chars */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   10. Official Uttarakhand e-Prerna SRO Fees &amp; Charges
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Unlike commercial property conveyances or gift deeds that attract 5% to 7% stamp duty in Uttarakhand, testamentary Wills are completely exempt from stamp duty. Government registration fees are purely nominal:
                 </p>
@@ -1473,9 +1473,9 @@ export default function UttarakhandLocationClient({ faqs }: Props) {
                   <span>TRANSPARENT PLANS</span>
                 </div>
                 {/* H2: 50 chars */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   11. Transparent Will Packages &amp; Fees in Uttarakhand
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Choose the legal assistance package tailored to your family&apos;s estate planning and property portfolio in Uttarakhand:
                 </p>
@@ -1618,9 +1618,9 @@ export default function UttarakhandLocationClient({ faqs }: Props) {
                   <span>FREQUENTLY ASKED QUESTIONS</span>
                 </div>
                 {/* H2: 48 chars */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   12. Frequently Asked Questions: Uttarakhand Wills
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Clear, authoritative answers to common legal questions regarding Will drafting and property registration in Uttarakhand:
                 </p>
@@ -1663,9 +1663,9 @@ export default function UttarakhandLocationClient({ faqs }: Props) {
                   <span>STATUTORY CITATIONS</span>
                 </div>
                 {/* H2: 50 chars */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   13. Statutory Citations &amp; Uttarakhand Legal Portals
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Our drafting protocols comply strictly with codified Indian statutes and Uttarakhand state registration systems:
                 </p>

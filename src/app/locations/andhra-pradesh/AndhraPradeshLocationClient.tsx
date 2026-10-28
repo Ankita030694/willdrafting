@@ -533,9 +533,9 @@ export default function AndhraPradeshLocationClient({ faqs }: Props) {
                   <Scale className="w-4 h-4 text-[#C65378]" />
                   <span>STATUTORY FRAMEWORK &amp; CODE</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   1. Will Drafting &amp; Legal Framework in Andhra Pradesh
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Succession in Andhra Pradesh is governed by central statutory codes integrated with state land and municipal laws. Whether allocating residential apartments in Visakhapatnam, commercial establishments in Vijayawada, or fertile Godavari agricultural farmland, testamentary dispositions must comply with three core legal pillars:
                 </p>
@@ -587,9 +587,9 @@ export default function AndhraPradeshLocationClient({ faqs }: Props) {
                   <FileCheck className="w-4 h-4 text-[#C65378]" />
                   <span>REGISTRATION COMPARISON MATRIX</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   2. Is Will Registration Mandatory in Andhra Pradesh?
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   While unregistered Wills executed on plain paper are legally recognized, estate planners and legal practitioners strongly advise registering your Will at the local AP Sub-Registrar Office. Registration establishes conclusive government custody under Book III and prevents family challenges:
                 </p>
@@ -650,9 +650,9 @@ export default function AndhraPradeshLocationClient({ faqs }: Props) {
                   <Award className="w-4 h-4 text-[#C65378]" />
                   <span>AP HIGH COURT JURISPRUDENCE</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   3. AP Probate Law: Exemption Under High Court Rules
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   One of the most frequent misconceptions among property owners in Andhra Pradesh is whether a Will must be probated by a court before transferring ownership. Under Indian succession jurisprudence, the answer is clear:
                 </p>
@@ -705,9 +705,9 @@ export default function AndhraPradeshLocationClient({ faqs }: Props) {
                   <Building className="w-4 h-4 text-[#C65378]" />
                   <span>REGISTRATION JURISDICTION HUBS</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   4. AP Sub-Registrar Offices: District SRO Directory
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Wills can be registered at any Sub-Registrar Office within the revenue district where the testator resides or where any part of the immovable property is located. Explore key registration hubs across Andhra Pradesh:
                 </p>
@@ -796,9 +796,9 @@ export default function AndhraPradeshLocationClient({ faqs }: Props) {
                   <MapPin className="w-4 h-4 text-[#C65378]" />
                   <span>REGIONAL CITIES &amp; ASSET SUCCESSION</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   5. Regional Cities: Will Drafting Across Andhra Pradesh
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Estate assets in Andhra Pradesh span coastal commercial hubs, high-growth IT corridors in Visakhapatnam, capital region lands in Amaravati, trading centers in Vijayawada, and agricultural delta farmlands in Godavari and Krishna. Our estate advocates deliver customized legal drafting, AP IGRS slot booking, and Sub-Registrar accompaniment across all key regional cities:
                 </p>
@@ -1238,9 +1238,9 @@ export default function AndhraPradeshLocationClient({ faqs }: Props) {
                   <FileText className="w-4 h-4 text-[#C65378]" />
                   <span>PROCEDURAL ROADMAP</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   6. Step-by-Step SOP: Drafting to AP IGRS Registration
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Registering a Will in Andhra Pradesh is straightforward when following the statutory sequence. Here is the verified 5-step Standard Operating Procedure (SOP) managed by our estate advocates:
                 </p>
@@ -1326,9 +1326,9 @@ export default function AndhraPradeshLocationClient({ faqs }: Props) {
                   <Home className="w-4 h-4 text-[#C65378]" />
                   <span>DOORSTEP CONVENIENCE</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   7. Section 31 Doorstep SRO Registration in Andhra Pradesh
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   For senior citizens, bedridden testators, or hospital-bound individuals who cannot physically travel to the registration complex, Indian law provides a dignified alternative:
                 </p>
@@ -1378,9 +1378,9 @@ export default function AndhraPradeshLocationClient({ faqs }: Props) {
                   <FileCheck className="w-4 h-4 text-[#C65378]" />
                   <span>READINESS AUDIT</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   8. Document Checklist for AP Sub-Registrar Offices
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Ensure you have all necessary documentation ready before your AP IGRS appointment slot. Check off the items below:
                 </p>
@@ -1443,9 +1443,9 @@ export default function AndhraPradeshLocationClient({ faqs }: Props) {
                   <Home className="w-4 h-4 text-[#C65378]" />
                   <span>ASSET CLASSIFICATION</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   9. Andhra Property Types: VMRDA, APCRDA &amp; Farmland
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   A legally robust Will must accurately describe property according to its statutory authority to ensure prompt name substitution after the testator&apos;s lifetime:
                 </p>
@@ -1501,9 +1501,9 @@ export default function AndhraPradeshLocationClient({ faqs }: Props) {
                   <Stamp className="w-4 h-4 text-[#C65378]" />
                   <span>STATUTORY CHARGES BREAKDOWN</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   10. Official AP IGRS Registration Fees &amp; Stamp Duty
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Unlike commercial sale deeds or gift settlements that attract 5% to 7.5% stamp duty in Andhra Pradesh, testamentary Wills are completely exempt from stamp duty. Government registration charges are strictly nominal:
                 </p>
@@ -1552,9 +1552,9 @@ export default function AndhraPradeshLocationClient({ faqs }: Props) {
                   <Sparkles className="w-4 h-4 text-[#C65378]" />
                   <span>TRANSPARENT SERVICES</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   11. Transparent Will Packages &amp; Legal Fees in AP
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Choose the level of legal assistance that matches your estate requirements. Zero hidden fees, clear deliverables, and verified High Court advocate review:
                 </p>
@@ -1702,9 +1702,9 @@ export default function AndhraPradeshLocationClient({ faqs }: Props) {
                   <HelpCircle className="w-4 h-4 text-[#C65378]" />
                   <span>LOCAL QUESTIONS ANSWERED</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   12. Frequently Asked Questions: Will Drafting in AP
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Clear answers to key statutory questions regarding registration, probate exemptions, Meebhoomi land mutations, and witness rules in Andhra Pradesh:
                 </p>
@@ -1747,9 +1747,9 @@ export default function AndhraPradeshLocationClient({ faqs }: Props) {
                   <Landmark className="w-4 h-4 text-[#C65378]" />
                   <span>LEGAL AUTHORITIES &amp; STATUTES</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   13. Statutory Citations &amp; AP Legal Framework Portals
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Will drafting and testamentary succession in Andhra Pradesh are rooted in verified statutory frameworks and official government e-services:
                 </p>

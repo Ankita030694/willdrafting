@@ -569,9 +569,9 @@ export default function KozhikodeLocationClient({ faqs }: Props) {
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-rose-50 border border-rose-200/60 text-xs font-mono font-semibold text-[#C65378] uppercase">
                 Section 2 · Statutory Framework
               </div>
-              <h2 className="text-2xl sm:text-3xl font-extrabold text-[#172228] tracking-tight">
+              <h3 className="text-2xl sm:text-3xl font-extrabold text-[#172228] tracking-tight">
                 2. Kerala Succession Law: Governing Legal Acts &amp; Rules
-              </h2>
+              </h3>
               <div className="prose prose-slate max-w-none text-slate-700 space-y-4 text-base leading-relaxed">
                 <p>
                   Every testamentary document drafted in Kozhikode operates within central statutes and Kerala state rules.
@@ -633,9 +633,9 @@ export default function KozhikodeLocationClient({ faqs }: Props) {
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-rose-50 border border-rose-200/60 text-xs font-mono font-semibold text-[#C65378] uppercase">
                 Section 3 · Registration Analysis
               </div>
-              <h2 className="text-2xl sm:text-3xl font-extrabold text-[#172228] tracking-tight">
+              <h3 className="text-2xl sm:text-3xl font-extrabold text-[#172228] tracking-tight">
                 3. Will Registration in Kerala: Mandatory vs Optional Rules
-              </h2>
+              </h3>
               <div className="prose prose-slate max-w-none text-slate-700 space-y-4 text-base leading-relaxed">
                 <p>
                   Clients frequently ask whether they must register their Will at a Kozhikode Sub-Registrar Office.
@@ -701,9 +701,9 @@ export default function KozhikodeLocationClient({ faqs }: Props) {
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-rose-50 border border-rose-200/60 text-xs font-mono font-semibold text-[#C65378] uppercase">
                 Section 4 · Probate Guidance
               </div>
-              <h2 className="text-2xl sm:text-3xl font-extrabold text-[#172228] tracking-tight">
+              <h3 className="text-2xl sm:text-3xl font-extrabold text-[#172228] tracking-tight">
                 4. Probate Exemption in Kerala: Court Order vs Succession Will
-              </h2>
+              </h3>
               <div className="prose prose-slate max-w-none text-slate-700 space-y-4 text-base leading-relaxed">
                 <p>
                   A common point of confusion is whether property owners in Kozhikode must obtain court probate.
@@ -763,9 +763,9 @@ export default function KozhikodeLocationClient({ faqs }: Props) {
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-rose-50 border border-rose-200/60 text-xs font-mono font-semibold text-[#C65378] uppercase">
                 Section 5 · SRO Directory
               </div>
-              <h2 className="text-2xl sm:text-3xl font-extrabold text-[#172228] tracking-tight">
+              <h3 className="text-2xl sm:text-3xl font-extrabold text-[#172228] tracking-tight">
                 5. Kozhikode Sub-Registrar Directory: SRO Office Timings
-              </h2>
+              </h3>
               <div className="prose prose-slate max-w-none text-slate-700 space-y-4 text-base leading-relaxed">
                 <p>
                   Kozhikode district operates multiple Sub-Registrar Offices under the Registration Department of Kerala.
@@ -854,9 +854,9 @@ export default function KozhikodeLocationClient({ faqs }: Props) {
                   <MapPin className="w-4 h-4 text-[#C65378]" />
                   <span>LOCAL AREA COVERAGE &amp; SRO HUBS</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   6. Kozhikode Regional Coverage: Calicut Hubs &amp; Suburbs
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Looking for legally verified <strong>Will drafting services in Nadakkavu, Mavoor Road, Beach Road, or Civil Station</strong>? Property ownership models, commercial traditions, and Sub-Registrar jurisdictions vary across Kozhikode.
                   Whether you own a commercial trading enterprise on Big Bazaar, a high-rise apartment on Mavoor Road, an ancestral Tharavadu in Chevayur, or Gulf NRI investments, our Kerala High Court advocates deliver tailored drafting, registration, and succession advisory:
@@ -1203,9 +1203,9 @@ export default function KozhikodeLocationClient({ faqs }: Props) {
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-rose-50 border border-rose-200/60 text-xs font-mono font-semibold text-[#C65378] uppercase">
                 Section 7 · Standard Operating Procedure
               </div>
-              <h2 className="text-2xl sm:text-3xl font-extrabold text-[#172228] tracking-tight">
+              <h3 className="text-2xl sm:text-3xl font-extrabold text-[#172228] tracking-tight">
                 7. Five-Step Will Drafting SOP: Kerala PEARLS Registration
-              </h2>
+              </h3>
               <div className="prose prose-slate max-w-none text-slate-700 space-y-4 text-base leading-relaxed">
                 <p>
                   Drafting and registering your Will in Kozhikode is simple and transparent through our structured procedure.
@@ -1288,9 +1288,9 @@ export default function KozhikodeLocationClient({ faqs }: Props) {
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-rose-50 border border-rose-200/60 text-xs font-mono font-semibold text-[#C65378] uppercase">
                 Section 8 · Doorstep Execution
               </div>
-              <h2 className="text-2xl sm:text-3xl font-extrabold text-[#172228] tracking-tight">
+              <h3 className="text-2xl sm:text-3xl font-extrabold text-[#172228] tracking-tight">
                 8. Section 31 Doorstep Registration: Home Visits for Seniors
-              </h2>
+              </h3>
               <div className="prose prose-slate max-w-none text-slate-700 space-y-4 text-base leading-relaxed">
                 <p>
                   For many senior citizens, retired teachers, and bedridden residents across Nadakkavu, Mavoor Road,
@@ -1335,9 +1335,9 @@ export default function KozhikodeLocationClient({ faqs }: Props) {
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-rose-50 border border-rose-200/60 text-xs font-mono font-semibold text-[#C65378] uppercase">
                 Section 9 · Documentation
               </div>
-              <h2 className="text-2xl sm:text-3xl font-extrabold text-[#172228] tracking-tight">
+              <h3 className="text-2xl sm:text-3xl font-extrabold text-[#172228] tracking-tight">
                 9. Document Checklist: Requirements for Kozhikode Wills
-              </h2>
+              </h3>
               <div className="prose prose-slate max-w-none text-slate-700 space-y-4 text-base leading-relaxed">
                 <p>
                   Ensure you have all necessary paperwork prepared before visiting the Kozhikode Sub-Registrar Office.
@@ -1400,9 +1400,9 @@ export default function KozhikodeLocationClient({ faqs }: Props) {
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-rose-50 border border-rose-200/60 text-xs font-mono font-semibold text-[#C65378] uppercase">
                 Section 10 · Asset Structuring
               </div>
-              <h2 className="text-2xl sm:text-3xl font-extrabold text-[#172228] tracking-tight">
+              <h3 className="text-2xl sm:text-3xl font-extrabold text-[#172228] tracking-tight">
                 10. Malabar Trading &amp; Gulf NRI Estate Structuring Rules
-              </h2>
+              </h3>
               <div className="prose prose-slate max-w-none text-slate-700 space-y-4 text-base leading-relaxed">
                 <p>
                   Kozhikode presents specialized asset patterns that require experienced legal structuring.
@@ -1456,9 +1456,9 @@ export default function KozhikodeLocationClient({ faqs }: Props) {
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-rose-50 border border-rose-200/60 text-xs font-mono font-semibold text-[#C65378] uppercase">
                 Section 11 · Costs &amp; Fees
               </div>
-              <h2 className="text-2xl sm:text-3xl font-extrabold text-[#172228] tracking-tight">
+              <h3 className="text-2xl sm:text-3xl font-extrabold text-[#172228] tracking-tight">
                 11. Kerala Registration Fees: Stamp Duty &amp; PEARLS Charges
-              </h2>
+              </h3>
               <div className="prose prose-slate max-w-none text-slate-700 space-y-4 text-base leading-relaxed">
                 <p>
                   A major myth is that registering a Will in Kerala requires high percentage-based stamp duties like a sale deed.
@@ -1495,9 +1495,9 @@ export default function KozhikodeLocationClient({ faqs }: Props) {
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-rose-50 border border-rose-200/60 text-xs font-mono font-semibold text-[#C65378] uppercase">
                 Section 12 · Transparent Pricing
               </div>
-              <h2 className="text-2xl sm:text-3xl font-extrabold text-[#172228] tracking-tight">
+              <h3 className="text-2xl sm:text-3xl font-extrabold text-[#172228] tracking-tight">
                 12. Transparent Will Drafting Packages: Kozhikode Pricing
-              </h2>
+              </h3>
               <div className="prose prose-slate max-w-none text-slate-700 space-y-4 text-base leading-relaxed">
                 <p>
                   We believe in upfront, transparent legal fees with zero hidden charges.
@@ -1628,9 +1628,9 @@ export default function KozhikodeLocationClient({ faqs }: Props) {
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-rose-50 border border-rose-200/60 text-xs font-mono font-semibold text-[#C65378] uppercase">
                 Section 13 · Questions &amp; Answers
               </div>
-              <h2 className="text-2xl sm:text-3xl font-extrabold text-[#172228] tracking-tight">
+              <h3 className="text-2xl sm:text-3xl font-extrabold text-[#172228] tracking-tight">
                 13. Frequently Asked Questions: Will Drafting in Kozhikode
-              </h2>
+              </h3>
               <div className="prose prose-slate max-w-none text-slate-700 space-y-4 text-base leading-relaxed">
                 <p>
                   Clear, authoritative legal answers to common questions regarding Will drafting, Kerala PEARLS registration,
@@ -1680,9 +1680,9 @@ export default function KozhikodeLocationClient({ faqs }: Props) {
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-rose-50 border border-rose-200/60 text-xs font-mono font-semibold text-[#C65378] uppercase">
                 Section 14 · Legal References
               </div>
-              <h2 className="text-2xl sm:text-3xl font-extrabold text-[#172228] tracking-tight">
+              <h3 className="text-2xl sm:text-3xl font-extrabold text-[#172228] tracking-tight">
                 14. Governing Statutory Provisions: Indian Succession Acts
-              </h2>
+              </h3>
               <div className="prose prose-slate max-w-none text-slate-700 space-y-4 text-base leading-relaxed">
                 <p>
                   Every Will drafted through WillDrafting.in adheres strictly to the codified provisions of Indian legislation

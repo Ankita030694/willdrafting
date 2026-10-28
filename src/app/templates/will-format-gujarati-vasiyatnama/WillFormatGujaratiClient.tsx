@@ -470,9 +470,9 @@ Doctor Name: Dr. [Name] | Qualification: [MBBS/MD] | Reg No.: [GMC Reg No.]`;
                 <ScrollText className="w-4 h-4" />
                 <span>કાનૂની ડ્રાફ્ટ ટેમ્પલેટ</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 2. Native Gujarati Vasiyatnama Format Template
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 નીચે ભારતીય ઉત્તરાધિકાર અધિનિયમની કલમ ૬૩ મુજબ તૈયાર કરેલું સંપૂર્ણ ગુજરાતી વસીયતનામું
                 આપેલ છે. તમે તેને સીધું કોપી કરી તમારી મિલકતની વિગતો ઉમેરી શકો છો અથવા પ્રિન્ટ કરી શકો છો.
@@ -603,9 +603,9 @@ ______________________________
                 <BookOpen className="w-4 h-4" />
                 <span>કાનૂની શબ્દાવલી અને અર્થ</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 3. Gujarati to English Legal Glossary &amp; Terms
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 ગુજરાતી વસીયતનામામાં વપરાતા કાનૂની શબ્દો અને તેના અંગ્રેજી સમકક્ષ શબ્દોનો સ્પષ્ટ અર્થ:
               </p>
@@ -639,9 +639,9 @@ ______________________________
                 <Building className="w-4 h-4" />
                 <span>સબ-રજિસ્ટ્રાર કચેરી નોંધણી પ્રક્રિયા</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 4. Step-by-Step SOP: Will Registration in Gujarat
-              </h2>
+              </h3>
               <div className="space-y-4 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   જો તમે તમારા ગુજરાતી વસીયતનામાની સબ-રજિસ્ટ્રાર કચેરી ખાતે કાયદેસર નોંધણી કરાવવા માંગતા હો,
@@ -702,9 +702,9 @@ ______________________________
                 <Scale className="w-4 h-4" />
                 <span>કાનૂની સરખામણી કોષ્ટક</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 5. Comparison: Plain Paper vs Registered Will
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 સાદા કાગળ પર કરેલા વિલ અને સબ-રજિસ્ટ્રાર કચેરીએ નોંધાયેલા વિલ વચ્ચેનો કાનૂની તફાવત:
               </p>
@@ -762,9 +762,9 @@ ______________________________
                 <AlertTriangle className="w-4 h-4 text-amber-600" />
                 <span>ખેતીની જમીન અને ગણોત ધારો</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 6. Gujarat Tenancy Act: Agricultural Land Bequest
-              </h2>
+              </h3>
               <div className="bg-amber-50/70 border border-amber-200/90 rounded-2xl p-5 space-y-3 text-xs sm:text-sm text-slate-800 leading-relaxed">
                 <div className="font-extrabold text-slate-900 flex items-center gap-2 text-sm sm:text-base">
                   <ShieldCheck className="w-5 h-5 text-amber-700 shrink-0" />
@@ -795,9 +795,9 @@ ______________________________
                 <CheckCircle2 className="w-4 h-4 text-emerald-600" />
                 <span>કાનૂની પૂર્તતા ચેકલિસ્ટ</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 7. Crucial Clauses: Section 63 Execution Checklist
-              </h2>
+              </h3>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs sm:text-sm text-slate-700">
                 <div className="p-3.5 rounded-xl bg-white border border-slate-200/90 shadow-2xs flex items-start gap-2.5">
                   <Check className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
@@ -836,9 +836,9 @@ ______________________________
                 <Calculator className="w-4 h-4" />
                 <span>સંબંધિત કાનૂની અને ટેક્સ ટૂલ્સ</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 8. Succession Tools &amp; Capital Gains Calculators
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 વારસાગત મિલકતો પર ટેક્સ બચાવવા અને કાયદેસર હિસ્સાની ગણતરી કરવા માટે અમારા ઇન્ટરેક્ટિવ
                 ટૂલ્સનો ઉપયોગ કરો:
@@ -918,9 +918,9 @@ ______________________________
                 <Award className="w-4 h-4" />
                 <span>વાસ્તવિક કેસ સ્ટડીઝ</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 9. Practical Case Studies: Ahmedabad &amp; Surat NRIs
-              </h2>
+              </h3>
               <div className="space-y-4 text-xs sm:text-sm text-slate-700 leading-relaxed">
                 <div className="p-5 rounded-2xl bg-white border border-slate-200 shadow-2xs space-y-2">
                   <div className="font-extrabold text-slate-900 text-sm">
@@ -955,9 +955,9 @@ ______________________________
                 <FileCheck className="w-4 h-4" />
                 <span>કાનૂની અટેસ્ટેશન અને ફિટનેસ ફોર્મેટ</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 10. Copy-Paste Witness Attestation Clause in Gujarati
-              </h2>
+              </h3>
 
               {/* Clause Box 1 */}
               <div className="rounded-2xl border border-slate-200/90 bg-white p-5 space-y-3 shadow-xs">
@@ -1025,9 +1025,9 @@ Doctor Name: Dr. [Name] | Qualification: [MBBS/MD] | Reg No.: [GMC Reg No.]`}
                 <Award className="w-4 h-4" />
                 <span>કાનૂની કુશળતા અને અનુભવ</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 11. Institutional Profile: Succession Legal Bench
-              </h2>
+              </h3>
               <div className="bg-white rounded-2xl border border-slate-200/90 p-6 sm:p-8 shadow-xs space-y-5">
                 <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-5 border-b border-slate-100">
                   <div className="space-y-1">
@@ -1085,9 +1085,9 @@ Doctor Name: Dr. [Name] | Qualification: [MBBS/MD] | Reg No.: [GMC Reg No.]`}
                 <HelpCircle className="w-4 h-4" />
                 <span>વારંવાર પૂછાતા પ્રશ્નો</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 12. Frequently Asked Questions: Gujarati Vasiyatnama
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 ગુજરાતી વસીયતનામાની કાનૂની માન્યતા, સાક્ષીઓ અને રજિસ્ટ્રેશન વિશે વારંવાર પૂછાતા પ્રશ્નોના
                 સીધા જવાબો:
@@ -1131,9 +1131,9 @@ Doctor Name: Dr. [Name] | Qualification: [MBBS/MD] | Reg No.: [GMC Reg No.]`}
                 <Landmark className="w-4 h-4" />
                 <span>સત્તાવાર કાનૂની પોર્ટલ અને સંદર્ભો</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 13. Statutory Citations &amp; Gujarat Revenue Portals
-              </h2>
+              </h3>
               <div className="bg-white rounded-2xl border border-slate-200/90 p-5 space-y-4 text-xs text-slate-700 shadow-xs">
                 <div>
                   <div className="font-extrabold text-slate-900 mb-1">

@@ -536,9 +536,9 @@ export default function FaridabadLocationClient({ faqs }: Props) {
                   <Scale className="w-4 h-4 text-[#C65378]" />
                   <span>STATUTORY FOUNDATION &amp; JURISPRUDENCE</span>
                 </div>
-                <h2 className="text-xl md:text-2xl font-extrabold text-slate-900 tracking-tight leading-snug">
+                <h3 className="text-xl md:text-2xl font-extrabold text-slate-900 tracking-tight leading-snug">
                   1. Legal Framework: Indian Succession Act in Faridabad
-                </h2>
+                </h3>
                 <p className="text-xs sm:text-sm text-slate-600 leading-relaxed max-w-4xl">
                   Testamentary succession across Faridabad District is governed by the Indian Succession Act, 1925, alongside specific state property enactments including the Haryana Shehri Vikas Pradhikaran Act, 1977 and the Haryana Municipal Corporation Act, 1994. Whether bequeathing an independent residential floor in Sector 14, an industrial factory in Sector 24, or a multi-story apartment in Greater Faridabad, an enforceable Will requires strict adherence to statutory principles:
                 </p>
@@ -624,9 +624,9 @@ export default function FaridabadLocationClient({ faqs }: Props) {
                   <Stamp className="w-4 h-4 text-[#C65378]" />
                   <span>REGISTRATION ACT 1908 COMPLIANCE</span>
                 </div>
-                <h2 className="text-xl md:text-2xl font-extrabold text-slate-900 tracking-tight leading-snug">
+                <h3 className="text-xl md:text-2xl font-extrabold text-slate-900 tracking-tight leading-snug">
                   2. Registration Rules: Optional vs Government Registered
-                </h2>
+                </h3>
                 <p className="text-xs sm:text-sm text-slate-600 leading-relaxed max-w-4xl">
                   Under Section 18(e) of the Registration Act, 1908, the registration of a Will is strictly optional across India, including Haryana. An unregistered Will signed on an ordinary sheet of A4 paper before two witnesses is 100% legally enforceable in court. However, leaving a Will unregistered in an urban industrial hub like Faridabad carries serious strategic disadvantages:
                 </p>
@@ -695,9 +695,9 @@ export default function FaridabadLocationClient({ faqs }: Props) {
                   <Scale className="w-4 h-4 text-[#C65378]" />
                   <span>HIGH COURT RULING &amp; SECTION 213 EXEMPTION</span>
                 </div>
-                <h2 className="text-xl md:text-2xl font-extrabold text-slate-900 tracking-tight leading-snug">
+                <h3 className="text-xl md:text-2xl font-extrabold text-slate-900 tracking-tight leading-snug">
                   3. Probate Rules: Punjab &amp; Haryana High Court Exemption
-                </h2>
+                </h3>
                 <p className="text-xs sm:text-sm text-slate-600 leading-relaxed max-w-4xl">
                   One of the most persistent misconceptions among property owners in Faridabad is that every Will must be probated in a civil court before real estate can be transferred. In Haryana, this is legally untrue. The statutory framework and binding High Court precedents provide complete clarity:
                 </p>
@@ -747,9 +747,9 @@ export default function FaridabadLocationClient({ faqs }: Props) {
                   <Building className="w-4 h-4 text-[#C65378]" />
                   <span>REGISTRATION HUBS &amp; JURISDICTIONS</span>
                 </div>
-                <h2 className="text-xl md:text-2xl font-extrabold text-slate-900 tracking-tight leading-snug">
+                <h3 className="text-xl md:text-2xl font-extrabold text-slate-900 tracking-tight leading-snug">
                   4. SRO Directory: Faridabad Sub-Registrar Offices
-                </h2>
+                </h3>
                 <p className="text-xs sm:text-sm text-slate-600 leading-relaxed max-w-4xl">
                   Faridabad District comprises five principal Sub-Registrar and Sub-Tehsil registration jurisdictions under the Revenue Department of Haryana. Use the interactive directory below to identify your designated SRO, office address, and jurisdiction:
                 </p>
@@ -838,9 +838,9 @@ export default function FaridabadLocationClient({ faqs }: Props) {
                   <MapPin className="w-4 h-4 text-[#C65378]" />
                   <span>FARIDABAD DISTRICT REGIONAL DIVISION</span>
                 </div>
-                <h2 className="text-xl md:text-2xl font-extrabold text-slate-900 tracking-tight leading-snug">
+                <h3 className="text-xl md:text-2xl font-extrabold text-slate-900 tracking-tight leading-snug">
                   5. Local Areas: Comprehensive Faridabad Coverage
-                </h2>
+                </h3>
                 <p className="text-xs sm:text-sm text-slate-600 leading-relaxed max-w-4xl">
                   Estate assets in Faridabad span prime plotted sectors with independent builder floors in Sectors 14, 15, and 16, modern high-rise condominiums across Greater Faridabad (Neharpar), established commercial hubs in NIT, luxury villas near Surajkund, and auto-manufacturing plants along Mathura Road. Our legal advocates provide bespoke testamentary drafting, Jamabandi Haryana slot scheduling, and Sub-Registrar accompaniment across all key micro-markets:
                 </p>
@@ -1281,9 +1281,9 @@ export default function FaridabadLocationClient({ faqs }: Props) {
                   <FileCheck className="w-4 h-4 text-[#C65378]" />
                   <span>STEP-BY-STEP PROCEDURAL PROTOCOL</span>
                 </div>
-                <h2 className="text-xl md:text-2xl font-extrabold text-slate-900 tracking-tight leading-snug">
+                <h3 className="text-xl md:text-2xl font-extrabold text-slate-900 tracking-tight leading-snug">
                   6. 5-Step Process: From Asset Mapping to SRO Registration
-                </h2>
+                </h3>
                 <p className="text-xs sm:text-sm text-slate-600 leading-relaxed max-w-4xl">
                   Drafting and registering an enforceable Will in Faridabad follows a structured legal workflow under the Indian Succession Act, 1925 and the Haryana Registration Rules:
                 </p>
@@ -1369,9 +1369,9 @@ export default function FaridabadLocationClient({ faqs }: Props) {
                   <Home className="w-4 h-4 text-[#C65378]" />
                   <span>REGISTRATION ACT 1908 SECTION 31</span>
                 </div>
-                <h2 className="text-xl md:text-2xl font-extrabold text-slate-900 tracking-tight leading-snug">
+                <h3 className="text-xl md:text-2xl font-extrabold text-slate-900 tracking-tight leading-snug">
                   7. Home Registration: Section 31 Doorstep Facility
-                </h2>
+                </h3>
                 <p className="text-xs sm:text-sm text-slate-600 leading-relaxed max-w-4xl">
                   For senior citizens, bedridden individuals, or persons suffering from severe mobility challenges in Faridabad, the law provides an official doorstep registration facility under Section 31 of the Registration Act, 1908:
                 </p>
@@ -1414,9 +1414,9 @@ export default function FaridabadLocationClient({ faqs }: Props) {
                   <FileText className="w-4 h-4 text-[#C65378]" />
                   <span>PREPARATION &amp; SRO VERIFICATION</span>
                 </div>
-                <h2 className="text-xl md:text-2xl font-extrabold text-slate-900 tracking-tight leading-snug">
+                <h3 className="text-xl md:text-2xl font-extrabold text-slate-900 tracking-tight leading-snug">
                   8. Documents Checklist: Interactive Requirements Tool
-                </h2>
+                </h3>
                 <p className="text-xs sm:text-sm text-slate-600 leading-relaxed max-w-4xl">
                   Use this interactive checklist to prepare all essential records before drafting and registering your Will in Faridabad. Check items as you assemble them:
                 </p>
@@ -1476,9 +1476,9 @@ export default function FaridabadLocationClient({ faqs }: Props) {
                   <Building className="w-4 h-4 text-[#C65378]" />
                   <span>ASSET CLASSIFICATION IN FARIDABAD</span>
                 </div>
-                <h2 className="text-xl md:text-2xl font-extrabold text-slate-900 tracking-tight leading-snug">
+                <h3 className="text-xl md:text-2xl font-extrabold text-slate-900 tracking-tight leading-snug">
                   9. Property Types: HSVP Plots, Builder Floors &amp; High-Rises
-                </h2>
+                </h3>
                 <p className="text-xs sm:text-sm text-slate-600 leading-relaxed max-w-4xl">
                   Faridabad presents a unique combination of planned government development authority plotted sectors, independent builder floors, multi-story private builder condominiums, and heavy industrial facilities. Each requires tailored testamentary language:
                 </p>
@@ -1530,9 +1530,9 @@ export default function FaridabadLocationClient({ faqs }: Props) {
                   <Award className="w-4 h-4 text-[#C65378]" />
                   <span>TRANSPARENT EXPENSE BREAKDOWN</span>
                 </div>
-                <h2 className="text-xl md:text-2xl font-extrabold text-slate-900 tracking-tight leading-snug">
+                <h3 className="text-xl md:text-2xl font-extrabold text-slate-900 tracking-tight leading-snug">
                   10. Fees &amp; Charges: Complete Haryana Fee Structure
-                </h2>
+                </h3>
                 <p className="text-xs sm:text-sm text-slate-600 leading-relaxed max-w-4xl">
                   Will registration in Haryana is intentionally subsidized to encourage citizens to formalize their succession. Unlike gift deeds or sale conveyances, registering a Will incurs zero percentage-based stamp duty:
                 </p>
@@ -1587,9 +1587,9 @@ export default function FaridabadLocationClient({ faqs }: Props) {
                   <Sparkles className="w-4 h-4 text-[#C65378]" />
                   <span>TRANSPARENT LEGAL SERVICES</span>
                 </div>
-                <h2 className="text-xl md:text-2xl font-extrabold text-slate-900 tracking-tight leading-snug">
+                <h3 className="text-xl md:text-2xl font-extrabold text-slate-900 tracking-tight leading-snug">
                   11. Plans &amp; Pricing: Transparent Legal Assistance Tiers
-                </h2>
+                </h3>
                 <p className="text-xs sm:text-sm text-slate-600 leading-relaxed max-w-4xl">
                   Choose the level of legal support tailored to your family&apos;s estate size and registration preferences in Faridabad:
                 </p>
@@ -1731,9 +1731,9 @@ export default function FaridabadLocationClient({ faqs }: Props) {
                   <HelpCircle className="w-4 h-4 text-[#C65378]" />
                   <span>COMMON QUERIES RESOLVED</span>
                 </div>
-                <h2 className="text-xl md:text-2xl font-extrabold text-slate-900 tracking-tight leading-snug">
+                <h3 className="text-xl md:text-2xl font-extrabold text-slate-900 tracking-tight leading-snug">
                   12. FAQ: Frequently Asked Questions in Faridabad
-                </h2>
+                </h3>
                 <p className="text-xs sm:text-sm text-slate-600 leading-relaxed max-w-4xl">
                   Detailed legal answers to frequent questions regarding Will making, HSVP plot transfer, MCF mutation, and SRO registration in Faridabad:
                 </p>
@@ -1778,9 +1778,9 @@ export default function FaridabadLocationClient({ faqs }: Props) {
                   <Scale className="w-4 h-4 text-[#C65378]" />
                   <span>AUTHORITATIVE STATUTES &amp; RULINGS</span>
                 </div>
-                <h2 className="text-xl md:text-2xl font-extrabold text-slate-900 tracking-tight leading-snug">
+                <h3 className="text-xl md:text-2xl font-extrabold text-slate-900 tracking-tight leading-snug">
                   13. Statutory Refs: Acts, Sections &amp; Judicial Precedents
-                </h2>
+                </h3>
                 <p className="text-xs sm:text-sm text-slate-600 leading-relaxed max-w-4xl">
                   Every legal principle and procedural guideline on this page is anchored in codified Indian and Haryana state enactments:
                 </p>

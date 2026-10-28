@@ -764,9 +764,9 @@ export default function ExecutorOfWillDutiesClient() {
                 <Scale className="w-4 h-4" />
                 <span>Statutory Authority</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
                 1. Legal Definition &amp; Duties Under the ISA
-              </h2>
+              </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed">
                 When a family member or friend passes away and leaves a Last Will, someone must take charge of carrying out their final wishes. In Indian law, this person is known as the <strong>Executor</strong>.
               </p>
@@ -793,9 +793,9 @@ export default function ExecutorOfWillDutiesClient() {
                 <Layers className="w-4 h-4" />
                 <span>Legal Comparison</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
                 2. Executor vs Administrator vs Nominee
-              </h2>
+              </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed">
                 Many families confuse an executor with an administrator or a bank nominee. These three roles are completely distinct under Indian law. Understanding who has what legal power prevents bitter disputes:
               </p>
@@ -842,9 +842,9 @@ export default function ExecutorOfWillDutiesClient() {
                 <DollarSign className="w-4 h-4" />
                 <span>Statutory Order of Settlement</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
                 3. Priority of Debts &amp; ISA Section 325
-              </h2>
+              </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed">
                 The most dangerous mistake an inexperienced executor can make is handing over cash, jewellery, or property to beneficiaries right away. Under <strong>Section 325 of the Indian Succession Act</strong>, all debts of the deceased person <strong>must be paid before any legacy or inheritance is distributed</strong>.
               </p>
@@ -904,9 +904,9 @@ export default function ExecutorOfWillDutiesClient() {
                 <FileSpreadsheet className="w-4 h-4" />
                 <span>Action Plan &amp; Download</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
                 4. Printable 90-Day Executor Action Plan
-              </h2>
+              </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed">
                 Estate administration can feel overwhelming during bereavement. This comprehensive, lawyer-approved 90-day checklist organizes every single statutory responsibility into clean weekly phases.
               </p>
@@ -955,9 +955,9 @@ export default function ExecutorOfWillDutiesClient() {
                 <FileCheck className="w-4 h-4" />
                 <span>Live Audit Tool</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
                 5. Interactive Legal Compliance Checklist
-              </h2>
+              </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed">
                 Track your real-time administration progress. Click each compliance checkpoint as you complete it to verify statutory readiness under the Indian Succession Act:
               </p>
@@ -1029,9 +1029,9 @@ export default function ExecutorOfWillDutiesClient() {
                 <Eye className="w-4 h-4" />
                 <span>Statutory Blueprint</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
                 6. Visual Blueprint: First 90 Days Roadmap
-              </h2>
+              </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed">
                 The chart below visually diagrams the complete ecosystem of an executor&rsquo;s duties in India, from securing the physical Will to institutional bank freezes, real estate mutation, and final accounting:
               </p>
@@ -1071,9 +1071,9 @@ export default function ExecutorOfWillDutiesClient() {
                 <Clock className="w-4 h-4" />
                 <span>Chronological Protocol</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
                 7. Step-by-Step SOP: Settling an Estate
-              </h2>
+              </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed">
                 Follow this verified 6-stage Standard Operating Procedure (SOP) to ensure zero legal errors, rapid transmission, and clean asset transfers:
               </p>
@@ -1114,9 +1114,9 @@ export default function ExecutorOfWillDutiesClient() {
                 <ShieldCheck className="w-4 h-4" />
                 <span>Fiduciary Authority</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
                 8. Legal Powers &amp; Restrictions of Executors
-              </h2>
+              </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed">
                 An executor is vested with broad statutory powers to manage the estate, but these powers come with strict fiduciary boundaries. You cannot treat estate property as your own personal domain:
               </p>
@@ -1169,9 +1169,9 @@ export default function ExecutorOfWillDutiesClient() {
                 <UserCheck className="w-4 h-4" />
                 <span>Statutory Renunciation</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
                 9. Can an Executor Refuse or Resign?
-              </h2>
+              </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed">
                 Yes. In India, nobody can force you to serve as an executor against your will. Being appointed in someone&rsquo;s Will is a proposal, not a mandatory legal summons.
               </p>
@@ -1198,9 +1198,9 @@ export default function ExecutorOfWillDutiesClient() {
                 <AlertTriangle className="w-4 h-4" />
                 <span>Pitfalls &amp; Liabilities</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
                 10. Common Mistakes by First-Time Executors
-              </h2>
+              </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed">
                 Most executors are grieving relatives who have never administered an estate before. Avoid these four common legal errors that lead to family disputes and court litigation:
               </p>
@@ -1257,9 +1257,9 @@ export default function ExecutorOfWillDutiesClient() {
                 <Sparkles className="w-4 h-4 text-[#C65378]" />
                 <span>THE CONVERSION BRIDGE</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-white tracking-tight leading-snug">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-white tracking-tight leading-snug">
                 11. Why Naming an Executor Saves Your Family
-              </h2>
+              </h3>
               <p className="text-sm sm:text-base text-slate-200 leading-relaxed">
                 When someone dies without a Will in India (intestate), there is no executor. The entire family is thrown into administrative chaos. Relatives must spend months arguing over who should manage the assets, obtaining legal heir certificates, and petitioning civil courts for Letters of Administration or Succession Certificates.
               </p>
@@ -1291,9 +1291,9 @@ export default function ExecutorOfWillDutiesClient() {
                 <Users className="w-4 h-4" />
                 <span>Real-World Edge Cases</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
                 12. NRI Executors &amp; Multiple Co-Executors
-              </h2>
+              </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed">
                 Estates often involve cross-border families, co-executors, or dual roles. Here is how Indian succession law governs these common real-world scenarios:
               </p>
@@ -1329,9 +1329,9 @@ export default function ExecutorOfWillDutiesClient() {
                 <Building className="w-4 h-4" />
                 <span>Advocate Support</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
                 13. Estate Settlement Lawyers at WillDrafting.in
-              </h2>
+              </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed">
                 Estate administration does not have to be handled alone. WillDrafting.in provides comprehensive legal counsel to executors, administrators, and beneficiaries across all major Indian states:
               </p>
@@ -1375,9 +1375,9 @@ export default function ExecutorOfWillDutiesClient() {
                 <HelpCircle className="w-4 h-4" />
                 <span>Direct Answers</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
                 14. Frequently Asked Questions: Executor Duties
-              </h2>
+              </h3>
               <p className="text-sm md:text-base text-slate-700 leading-relaxed">
                 Clear, straightforward answers to the most common legal questions about executor duties, probate requirements, personal liability, and asset transmission under Indian law:
               </p>
@@ -1419,9 +1419,9 @@ export default function ExecutorOfWillDutiesClient() {
                 <BookOpen className="w-4 h-4 text-[#5F7E75]" />
                 <span>Legal Authority &amp; Statutory Sources</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
                 15. Official Acts, Sections &amp; Court Rulings
-              </h2>
+              </h3>
               <ul className="space-y-2 text-xs text-slate-600 list-disc list-inside leading-relaxed">
                 <li>
                   <strong>Indian Succession Act, 1925:</strong> Section 2(c) (definition of executor), Section 211 (property vests in executor), Section 213 (probate requirements), Section 222 (probate only to appointed executor), Section 229 &amp; 230 (renunciation of probate), Section 307 (power to dispose property), Section 317 (inventory &amp; account within 6/12 months), Sections 320 to 325 (priority of debts), Section 332 (assent of executor), Section 368 (liability for devastavit).

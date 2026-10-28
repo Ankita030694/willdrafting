@@ -558,9 +558,9 @@ export default function CoimbatoreLocationClient({ faqs }: Props) {
                   <Scale className="w-4 h-4 text-[#C65378]" />
                   <span>STATUTORY PROVISIONS</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   1. Will Drafting &amp; Legal Framework in Coimbatore
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Estate planning in Coimbatore is governed by the <strong>Indian Succession Act, 1925</strong> and the <strong>Registration Act, 1908</strong>.
                   Any individual of sound mind who has reached 18 years of age can execute a Will to dispose of self-acquired residential real estate, commercial commercial sheds, bank accounts, and demat shares.
@@ -622,9 +622,9 @@ export default function CoimbatoreLocationClient({ faqs }: Props) {
                   <FileQuestion className="w-4 h-4 text-[#C65378]" />
                   <span>REGISTRATION STATUS</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   2. Is Will Registration Mandatory in Coimbatore?
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Under Section 18(e) of the Registration Act, 1908, registering a Will is entirely <strong>optional</strong> in Coimbatore and throughout Tamil Nadu.
                   An unregistered Will executed on plain paper and signed before two independent witnesses is legally enforceable in court.
@@ -683,9 +683,9 @@ export default function CoimbatoreLocationClient({ faqs }: Props) {
                   <Landmark className="w-4 h-4 text-[#C65378]" />
                   <span>JUDICIAL PRECEDENTS</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   3. Coimbatore Probate Rules: Non-Presidency Exemption
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Many Coimbatore property owners mistakenly assume they must approach the Madras High Court for a probate grant before transferring real estate.
                   Under Indian succession jurisprudence, this assumption is completely unfounded.
@@ -738,9 +738,9 @@ export default function CoimbatoreLocationClient({ faqs }: Props) {
                   <Factory className="w-4 h-4 text-[#C65378]" />
                   <span>KONGU INDUSTRIAL SUCCESSION</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   4. Industrial &amp; Textile Enterprise Asset Succession
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Coimbatore&apos;s commercial economy is built upon generational entrepreneurship.
                   Bequeathing a multi-crore textile mill or precision engineering enterprise requires customized legal mechanisms far beyond a simple residential Will:
@@ -793,9 +793,9 @@ export default function CoimbatoreLocationClient({ faqs }: Props) {
                   <MapPin className="w-4 h-4 text-[#C65378]" />
                   <span>SRO JURISDICTION DIRECTORY</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   5. Coimbatore Sub-Registrar Directory: SRO Hubs
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Coimbatore district is served by multiple Sub-Registrar Offices under the Tamil Nadu Commercial Taxes and Registration Department.
                   Under Section 32 of the Registration Act, your Will can be registered at the SRO where you reside or where your family properties are located.
@@ -896,9 +896,9 @@ export default function CoimbatoreLocationClient({ faqs }: Props) {
                   <MapPin className="w-4 h-4 text-[#C65378]" />
                   <span>LOCAL AREA COVERAGE &amp; SRO HUBS</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   6. Locality Coverage: RS Puram, Race Course &amp; Beyond
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Looking for legally verified <strong>Will drafting services in RS Puram, Race Course, Peelamedu, or Gandhipuram</strong>?
                   Whether your estate comprises high-value residential bungalows, commercial shopping complexes, or textile manufacturing facilities, our advocates provide comprehensive drafting and Sub-Registrar accompaniment:
@@ -1339,9 +1339,9 @@ export default function CoimbatoreLocationClient({ faqs }: Props) {
                   <FileText className="w-4 h-4 text-[#C65378]" />
                   <span>STEP-BY-STEP PROCEDURE</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   7. Step-by-Step TNREGINET Will Registration SOP
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Registering your Will before a Coimbatore Sub-Registrar follows a structured protocol under Tamil Nadu Commercial Taxes and Registration Department rules.
                   Here is the verified 5-step procedure:
@@ -1428,9 +1428,9 @@ export default function CoimbatoreLocationClient({ faqs }: Props) {
                   <Home className="w-4 h-4 text-[#C65378]" />
                   <span>DOORSTEP SRO REGISTRATION</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   8. Section 31 Doorstep Registration for Seniors
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Many senior industrialists, textile pioneers, and elderly citizens in Coimbatore find it physically strenuous to visit government offices or wait at busy counters.
                   Under <strong>Section 31 of the Registration Act, 1908</strong>, the Sub-Registrar is legally authorized to visit a person&apos;s residence or hospital room to conduct execution and registration.
@@ -1484,9 +1484,9 @@ export default function CoimbatoreLocationClient({ faqs }: Props) {
                   <FileCheck className="w-4 h-4 text-[#C65378]" />
                   <span>INTERACTIVE CHECKLIST</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   9. Documents Checklist for Coimbatore Registration
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Prepare your documents before visiting the Sub-Registrar Office.
                   You have verified <strong>{checkedCount} of {checklist.length}</strong> items:
@@ -1533,9 +1533,9 @@ export default function CoimbatoreLocationClient({ faqs }: Props) {
                   <Building className="w-4 h-4 text-[#C65378]" />
                   <span>PROPERTY SUCCESSION RULES</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   10. Property Categories: Mills, Foundries &amp; Homes
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Succession dynamics across Coimbatore vary substantially based on property tenure and commercial nature.
                   Here is how a Will regulates different asset categories in the Kongu region:
@@ -1588,9 +1588,9 @@ export default function CoimbatoreLocationClient({ faqs }: Props) {
                   <Stamp className="w-4 h-4 text-[#C65378]" />
                   <span>OFFICIAL CHARGES</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   11. Official Tamil Nadu Government Fees &amp; Charges
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Unlike property conveyance deeds that incur heavy stamp duty and transfer charges in Tamil Nadu, testamentary Wills are completely exempt from stamp duty under the Indian Stamp Act, 1899.
                   Government charges at Coimbatore SRO counters are strictly nominal:
@@ -1639,9 +1639,9 @@ export default function CoimbatoreLocationClient({ faqs }: Props) {
                   <Award className="w-4 h-4 text-[#C65378]" />
                   <span>PLANS &amp; PRICING</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   12. Transparent Will Packages &amp; Legal Assistance
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Select the level of legal support tailored to your family&apos;s estate planning needs in Coimbatore:
                 </p>
@@ -1783,9 +1783,9 @@ export default function CoimbatoreLocationClient({ faqs }: Props) {
                   <HelpCircle className="w-4 h-4 text-[#C65378]" />
                   <span>FREQUENTLY ASKED QUESTIONS</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   13. Frequently Asked Questions: Coimbatore Estate Wills
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Authoritative legal answers to common questions about executing and registering a Will in Coimbatore:
                 </p>
@@ -1827,9 +1827,9 @@ export default function CoimbatoreLocationClient({ faqs }: Props) {
                   <Scale className="w-4 h-4 text-[#C65378]" />
                   <span>STATUTORY CITATIONS</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   14. Statutory References &amp; Tamil Nadu Land Rules
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Our Will drafting protocols comply strictly with central succession statutes and Tamil Nadu revenue guidelines:
                 </p>

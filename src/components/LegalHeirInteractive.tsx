@@ -138,9 +138,9 @@ export default function LegalHeirInteractive() {
           <Building2 className="w-4 h-4" />
           <span>State-Wise Revenue Authorities &amp; Interactive Checker</span>
         </div>
-        <h2 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-3">
+        <h3 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-3">
           State Revenue Protocols &amp; 30-Second Heir Checker
-        </h2>
+        </h3>
         <p className="text-[0.98rem] sm:text-[1.05rem] leading-[1.65] text-[#49585F]">
           Each state in India has its own revenue rules for heir certificates. Select your state or check your legal heirs and required papers below.
         </p>

@@ -730,9 +730,9 @@ export default function LegalHeirVsSuccessionClient() {
                 <Sparkles className="w-4 h-4" />
                 <span>INTERACTIVE 4-CLICK DECISION TOOL</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 2. Interactive Decision Tool: Find Required Document
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Select your State, Asset Type, Monetary Value, and Nomination status. The diagnostic engine
                 cross-references the Indian Succession Act, RBI Master Directions, and SEBI regulations to
@@ -1278,9 +1278,9 @@ export default function LegalHeirVsSuccessionClient() {
                 <Scale className="w-4 h-4" />
                 <span>STATUTORY COMPARISON MATRIX</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 3. Detailed Comparison: Five Key Post-Death Documents
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Understanding the legal distinctions between these five certificates prevents
                 jurisdictional errors and institutional rejections.
@@ -1397,9 +1397,9 @@ export default function LegalHeirVsSuccessionClient() {
                 <Landmark className="w-4 h-4" />
                 <span>BANKING REGULATIONS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 4. Bank Accounts &amp; FDs: RBI Master Circular Thresholds
-              </h2>
+              </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   The Reserve Bank of India has issued comprehensive directives under its Master Direction
@@ -1450,9 +1450,9 @@ export default function LegalHeirVsSuccessionClient() {
                 <TrendingUp className="w-4 h-4" />
                 <span>SEBI CAPITAL MARKET RULES</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 5. Demat &amp; Mutual Funds: SEBI Simplified Transmission
-              </h2>
+              </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   For physical share certificates, demat accounts with CDSL or NSDL, and mutual fund units
@@ -1498,9 +1498,9 @@ export default function LegalHeirVsSuccessionClient() {
                 <Building className="w-4 h-4" />
                 <span>REAL ESTATE &amp; LAND RULES</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 6. Immovable Property: Revenue Mutation vs Civil Court
-              </h2>
+              </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   One of the most persistent errors made by property buyers and heirs in India is applying
@@ -1560,9 +1560,9 @@ export default function LegalHeirVsSuccessionClient() {
                 <FileSpreadsheet className="w-4 h-4" />
                 <span>LEGAL PROCEDURE GUIDE</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 7. Step-by-Step SOP: Obtaining Succession Certificate
-              </h2>
+              </h3>
               <div className="space-y-4">
                 <p className="text-slate-700 text-sm md:text-base leading-relaxed">
                   When institutional thresholds or bank legal departments mandate a Civil Court Succession
@@ -1675,9 +1675,9 @@ export default function LegalHeirVsSuccessionClient() {
                 <Coins className="w-4 h-4" />
                 <span>COURT FEES &amp; COSTS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 8. State-Wise Court Fees &amp; Ad Valorem Stamp Duty Rates
-              </h2>
+              </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   Court fee for succession certificates is a state subject under Entry 3 of List II of the
@@ -1750,9 +1750,9 @@ export default function LegalHeirVsSuccessionClient() {
                 <FileText className="w-4 h-4" />
                 <span>REAL LITIGATION PRECEDENTS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 9. Practical Case Studies: Real Post-Death Scenarios
-              </h2>
+              </h3>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 {/* Case 1 */}
@@ -1826,9 +1826,9 @@ export default function LegalHeirVsSuccessionClient() {
                 <FileCheck className="w-4 h-4" />
                 <span>COPY-PASTEABLE LEGAL ASSETS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 10. Copy-Paste Legal Formats &amp; Document Checklist
-              </h2>
+              </h3>
 
               {/* Template Box 1: Bank Deceased Claim Indemnity Bond */}
               <div className="rounded-2xl border border-slate-200/90 bg-white p-5 space-y-3 shadow-xs">
@@ -1983,9 +1983,9 @@ Petitioner Signature: __________________`,
                 <Award className="w-4 h-4" />
                 <span>LEGAL EXPERTISE &amp; PRACTICE</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 11. Institutional Profile: Legal Excellence &amp; Trust
-              </h2>
+              </h3>
               <div className="bg-white rounded-2xl border border-slate-200/90 p-6 sm:p-8 shadow-xs space-y-5">
                 <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-5 border-b border-slate-100">
                   <div className="space-y-1">
@@ -2044,9 +2044,9 @@ Petitioner Signature: __________________`,
                 <HelpCircle className="w-4 h-4" />
                 <span>DIRECT ANSWERS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 12. Frequently Asked Questions: Succession &amp; Heirship
-              </h2>
+              </h3>
 
               <div className="space-y-3">
                 {FAQS.map((faq, index) => {
@@ -2085,9 +2085,9 @@ Petitioner Signature: __________________`,
                 <ExternalLink className="w-4 h-4" />
                 <span>PRIMARY LEGAL SOURCES</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 13. Statutory Citations &amp; Official Government Portals
-              </h2>
+              </h3>
               <div className="bg-white rounded-2xl border border-slate-200/90 p-5 space-y-4 text-xs text-slate-700 shadow-xs">
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3">
                   <a

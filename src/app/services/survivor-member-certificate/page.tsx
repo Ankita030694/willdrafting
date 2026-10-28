@@ -55,7 +55,7 @@ export const metadata: Metadata = {
         url: "/images/survivor-member-certificate-og.jpg",
         width: 1200,
         height: 630,
-        alt: "Surviving Member Certificate SMC Application and Verification in India by AMA Legal Solutions",
+        alt: "Surviving Member Certificate SMC Application and Verification Services in India",
       },
     ],
   },
@@ -501,9 +501,9 @@ export default function SurvivorMemberCertificatePage() {
               <Scale className="w-4 h-4" />
               <span>Comparative Legal Analysis</span>
             </div>
-            <h2 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-4">
+            <h3 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-4">
               Surviving Member vs Legal Heir vs Succession Certificate
-            </h2>
+            </h3>
             <p className="text-[0.98rem] sm:text-[1.05rem] leading-[1.65] text-[#49585F]">
               Families often confuse these three legal papers. An SMC is an executive order from an SDM. A Legal Heir paper comes from a Tehsildar. A Succession Certificate comes only from a civil court. You need court papers for high-value stocks and debts. Check the simple table below to compare your choices:
             </p>
@@ -544,9 +544,9 @@ export default function SurvivorMemberCertificatePage() {
               <Landmark className="w-4 h-4" />
               <span>Statutory Usage Matrix</span>
             </div>
-            <h2 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-4">
+            <h3 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-4">
               Purpose Matrix: When You Need a Surviving Member Paper
-            </h2>
+            </h3>
             <p className="text-[0.98rem] sm:text-[1.05rem] leading-[1.65] text-[#49585F]">
               Government offices and banks need clear proof of heirs. The table below lists standard uses for an SMC across India:
             </p>
@@ -587,9 +587,9 @@ export default function SurvivorMemberCertificatePage() {
               <ShieldCheck className="w-4 h-4" />
               <span>Step-by-Step Procedure</span>
             </div>
-            <h2 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-3">
+            <h3 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-3">
               4-Step Application Protocol for Quick SMC Issuance
-            </h2>
+            </h3>
             <p className="text-[0.98rem] sm:text-[1.05rem] leading-[1.65] text-[#49585F]">
               Applying for an SMC is simple when your papers are ready. Our team guides you through four clear steps. We help you avoid delays:
             </p>
@@ -644,9 +644,9 @@ export default function SurvivorMemberCertificatePage() {
                 <Users className="w-4 h-4" />
                 <span>NRI &amp; Overseas Family Support</span>
               </div>
-              <h2 className="text-[1.75rem] sm:text-[2.3rem] font-medium leading-[1.14] tracking-[-0.02em] text-[#111827] mb-4">
+              <h3 className="text-[1.75rem] sm:text-[2.3rem] font-medium leading-[1.14] tracking-[-0.02em] text-[#111827] mb-4">
                 NRI Heirs: How to Execute SMC Affidavits from Abroad
-              </h2>
+              </h3>
               <p className="text-[15px] sm:text-[16px] leading-[1.7] text-[#374151] mb-4">
                 Overseas family members do not need to travel to India. NRI siblings can sign papers from their home abroad.
               </p>
@@ -681,9 +681,9 @@ export default function SurvivorMemberCertificatePage() {
               <BookOpen className="w-4 h-4" />
               <span>Legal Knowledge Base</span>
             </div>
-            <h2 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-3">
+            <h3 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-3">
               Frequently Asked Questions on Surviving Member Papers
-            </h2>
+            </h3>
             <p className="text-[0.98rem] sm:text-[1.05rem] leading-[1.65] text-[#49585F]">
               Clear legal answers help you resolve family estate matters. Read our simple guide below to know your rights:
             </p>

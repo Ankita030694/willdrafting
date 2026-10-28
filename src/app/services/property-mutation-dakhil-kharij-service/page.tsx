@@ -511,9 +511,9 @@ export default function PropertyMutationPage() {
               <FileCheck className="w-4 h-4" />
               <span>Advocate-Managed Asset Transmission</span>
             </div>
-            <h2 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-3">
+            <h3 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-3">
               Visual Legal Overview: Advocate-Managed Property Mutation
-            </h2>
+            </h3>
             <p className="text-[0.98rem] sm:text-[1.05rem] leading-[1.65] text-[#49585F]">
               How our High Court legal team coordinates municipal and revenue records across Delhi MCD/DDA, Bengaluru BBMP Khata, Mumbai BMC/7-12, and Uttar Pradesh Tehsildar offices:
             </p>
@@ -546,9 +546,9 @@ export default function PropertyMutationPage() {
               <Scale className="w-4 h-4" />
               <span>Supreme Court Precedent &amp; Judicial Reality</span>
             </div>
-            <h2 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-4">
+            <h3 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-4">
               Mutation vs Registry: Why Title Deeds Are Not Tax Records
-            </h2>
+            </h3>
             <p className="text-[0.98rem] sm:text-[1.05rem] leading-[1.65] text-[#49585F]">
               A common misconception among Indian homeowners is believing that having a registered Sale Deed or Will automatically completes property transfer. The Supreme Court in <strong className="text-[#111827]">Sawarni v. Inder Kaur</strong> firmly established the boundary between legal title and municipal mutation:
             </p>
@@ -589,9 +589,9 @@ export default function PropertyMutationPage() {
               <FileText className="w-4 h-4" />
               <span>Statutory Compliance Matrix</span>
             </div>
-            <h2 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-3">
+            <h3 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-3">
               Document Requirements: Mutation With Will vs Intestate Case
-            </h2>
+            </h3>
             <p className="text-[0.98rem] sm:text-[1.05rem] leading-[1.65] text-[#49585F]">
               The documents required by municipal corporations and revenue tehsildars depend heavily on whether the deceased owner left a valid Will:
             </p>
@@ -701,9 +701,9 @@ export default function PropertyMutationPage() {
               <ShieldCheck className="w-4 h-4" />
               <span>Advocate-Managed Execution Protocol</span>
             </div>
-            <h2 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-3">
+            <h3 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-3">
               Step-by-Step SOP: Advocate-Managed Property Mutation Protocol
-            </h2>
+            </h3>
             <p className="text-[0.98rem] sm:text-[1.05rem] leading-[1.65] text-[#49585F]">
               How AMA Legal Solutions transitions parental property records smoothly through a rigorous 4-step conveyancing protocol:
             </p>
@@ -757,9 +757,9 @@ export default function PropertyMutationPage() {
               <FileCheck className="w-4 h-4" />
               <span>Court-Ready Drafting Template</span>
             </div>
-            <h2 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-3">
+            <h3 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-3">
               Statutory Checklist &amp; Affidavit Format for Property Mutation
-            </h2>
+            </h3>
             <p className="text-[0.98rem] sm:text-[1.05rem] leading-[1.65] text-[#49585F]">
               Every municipal authority and revenue tehsildar in India requires a formal sworn affidavit. Below is our advocate-verified draft template:
             </p>
@@ -810,9 +810,9 @@ export default function PropertyMutationPage() {
                 <Users className="w-4 h-4" />
                 <span>Specialized Cross-Border Service</span>
               </div>
-              <h2 className="text-[1.75rem] sm:text-[2.3rem] font-medium leading-[1.14] tracking-[-0.02em] text-[#111827] mb-4">
+              <h3 className="text-[1.75rem] sm:text-[2.3rem] font-medium leading-[1.14] tracking-[-0.02em] text-[#111827] mb-4">
                 For NRIs &amp; Remote Heirs: Smooth Property Mutation from Abroad
-              </h2>
+              </h3>
               <p className="text-[15px] sm:text-[16px] leading-[1.7] text-[#374151] mb-4">
                 Managing parental property mutation in Bengaluru, Delhi NCR, Mumbai, Hyderabad, or Lucknow from the United States, United Kingdom, UAE, Canada, or Australia is notoriously frustrating. Dealing with local revenue clerks, verifying boundary records, and tracking 15-day objection periods often forces NRIs to take repeated expensive international flights.
               </p>
@@ -847,9 +847,9 @@ export default function PropertyMutationPage() {
               <BookOpen className="w-4 h-4" />
               <span>Statutory FAQs &amp; Judicial Guidance</span>
             </div>
-            <h2 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-3">
+            <h3 className="text-[1.85rem] sm:text-[2.4rem] font-medium leading-[1.12] tracking-[-0.02em] text-[#111827] mb-3">
               Frequently Asked Questions on Property Mutation in India
-            </h2>
+            </h3>
             <p className="text-[0.98rem] sm:text-[1.05rem] leading-[1.65] text-[#49585F]">
               Authoritative answers prepared by the <strong className="text-[#111827]">WillDrafting Editorial Team</strong> and verified by <strong className="text-[#111827]">AMA Legal Solutions</strong> advocates:
             </p>
@@ -872,9 +872,9 @@ export default function PropertyMutationPage() {
           {/* Contextual Internal Links Bar (H2 <= 70 chars: 54 chars) */}
           <div className="mt-10 p-6 sm:p-8 rounded-2xl bg-white border border-[#172228]/10 flex flex-col lg:flex-row lg:items-center justify-between gap-6">
             <div>
-              <h2 className="text-xs font-bold uppercase tracking-[0.15em] text-[#C65378] mb-1">
+              <h3 className="text-xs font-bold uppercase tracking-[0.15em] text-[#C65378] mb-1">
                 Related Property Transmission Guides &amp; Legal Resources
-              </h2>
+              </h3>
               <p className="text-sm text-[#49585F]">
                 Explore related estate transmission and revenue conveyancing services:
               </p>

@@ -425,9 +425,9 @@ export default function FamilySettlementAgreementClient() {
                 <Gavel className="w-4 h-4" />
                 <span>LANDMARK JUDICIAL PRECEDENTS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 2. Kale v. Deputy Director: Landmark Supreme Court Tests
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 The foundational judgment governing all family settlements in India is the three-judge bench
                 ruling of the Supreme Court in <strong>Kale v. Deputy Director of Consolidation (AIR 1976 SC 807)</strong>.
@@ -508,9 +508,9 @@ export default function FamilySettlementAgreementClient() {
                 <Layers className="w-4 h-4" />
                 <span>COMPARATIVE ANALYSIS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 3. Memorandum of Oral Settlement vs Partition Deed Table
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Understanding whether you need a past-tense Memorandum or a registered Partition Deed is
                 essential to avoid legal delays and save substantial stamp duty costs:
@@ -601,9 +601,9 @@ export default function FamilySettlementAgreementClient() {
                 <Calculator className="w-4 h-4" />
                 <span>INTERACTIVE DRAFTING SELECTOR</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 4. Interactive Family Settlement Drafting Selector
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Use our diagnostic selector below to determine whether your family needs a Past-Tense
                 Memorandum or a Registered Partition Deed, and estimate your state stamp duty savings:
@@ -775,9 +775,9 @@ export default function FamilySettlementAgreementClient() {
                 <FileText className="w-4 h-4" />
                 <span>LEGAL TEMPLATE 1</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 5. Format 1: Memorandum of Past Oral Family Settlement
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Use this format when family members have <strong>already orally partitioned</strong> their
                 properties on an earlier date and are now putting the agreed terms into writing merely for
@@ -897,9 +897,9 @@ NOW, THEREFORE, THIS MEMORANDUM CONFIRMS:
                 <Building className="w-4 h-4" />
                 <span>LEGAL TEMPLATE 2</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 6. Format 2: Registered Operative Family Settlement Deed
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Use this format when the family wishes to divide properties <strong>fresh today</strong> in
                 writing and register the deed formally before the Sub-Registrar Office (SRO). This format uses
@@ -977,9 +977,9 @@ Each party covenants that their allotted share is free from any individual charg
                 <FileCheck className="w-4 h-4" />
                 <span>MANDATORY DRAFTING CLAUSES</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 7. Essential Clauses Every Family Settlement Must Have
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Whether you draft an oral memorandum or an operative deed, including these four protective
                 clauses prevents future litigation and protects family titles:
@@ -1063,9 +1063,9 @@ Each party covenants that their allotted share is free from any individual charg
                 <Scale className="w-4 h-4" />
                 <span>REGISTRATION &amp; STAMP LAWS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 8. Section 17 Registration Act &amp; Stamp Duty Analysis
-              </h2>
+              </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   The legal validity of a family settlement in court hinges upon Section 17 and Section 49 of
@@ -1121,9 +1121,9 @@ Each party covenants that their allotted share is free from any individual charg
                 <Coins className="w-4 h-4" />
                 <span>INCOME TAX EXEMPTIONS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 9. Tax Impact: Section 47 Exemption &amp; Capital Gains
-              </h2>
+              </h3>
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   A critical financial advantage of executing a family settlement agreement is its complete
@@ -1176,9 +1176,9 @@ Each party covenants that their allotted share is free from any individual charg
                 <Clock className="w-4 h-4" />
                 <span>STEP-BY-STEP SOP</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 10. Step-by-Step SOP: Execution to Revenue Mutation
-              </h2>
+              </h3>
 
               <div className="space-y-3">
                 {[
@@ -1230,9 +1230,9 @@ Each party covenants that their allotted share is free from any individual charg
                 <TrendingUp className="w-4 h-4" />
                 <span>PRACTICAL CASE STUDIES</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 11. Practical Case Studies: Real Family Asset Division
-              </h2>
+              </h3>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 {/* Case Study 1 */}
@@ -1303,9 +1303,9 @@ Each party covenants that their allotted share is free from any individual charg
                 <Award className="w-4 h-4" />
                 <span>INSTITUTIONAL PROFILE</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 12. Legal Backing &amp; Senior Advocate Review Bench
-              </h2>
+              </h3>
               <div className="rounded-3xl bg-white border border-slate-200/90 p-6 sm:p-7 space-y-4 shadow-xs">
                 <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 pb-4 border-b border-slate-100">
                   <div>
@@ -1361,9 +1361,9 @@ Each party covenants that their allotted share is free from any individual charg
                 <HelpCircle className="w-4 h-4" />
                 <span>DIRECT ANSWERS</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 13. Frequently Asked Questions: Family Settlement
-              </h2>
+              </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                 Answers to common legal questions regarding family settlement agreements, stamp duty, and
                 oral memorandum validity in India:
@@ -1407,9 +1407,9 @@ Each party covenants that their allotted share is free from any individual charg
                 <Landmark className="w-4 h-4" />
                 <span>PRIMARY LEGAL SOURCES</span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
                 14. Statutory Citations &amp; Official Judicial Portals
-              </h2>
+              </h3>
               <div className="bg-white rounded-2xl border border-slate-200/90 p-5 space-y-4 text-xs text-slate-700 shadow-xs">
                 <div>
                   <div className="font-extrabold text-slate-900 mb-1">

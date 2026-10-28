@@ -538,9 +538,9 @@ export default function AmritsarLocationClient({ faqs }: Props) {
                   <Scale className="w-4 h-4 text-[#C65378]" />
                   <span>STATUTORY FRAMEWORK &amp; ESTATE JURISDICTION</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   1. Punjab Estate Framework: Indian Succession Act Rules
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Succession in Amritsar is governed by the Indian Succession Act, 1925, alongside the Hindu Succession Act, 1956 and the Punjab Land Revenue Act, 1887. Whether you own self-acquired bungalows in Ranjit Avenue, ancestral agricultural land in Ajnala, or commercial havelis near the Golden Temple, executing a verified Will eliminates ambiguous intestate inheritance.
                 </p>
@@ -592,9 +592,9 @@ export default function AmritsarLocationClient({ faqs }: Props) {
                   <Stamp className="w-4 h-4 text-[#C65378]" />
                   <span>REGISTRATION LEGALITIES &amp; EVIDENTIARY VALUE</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   2. Voluntary Registration: NGDRS Punjab Book III Rules
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Under Section 18(e) of the Registration Act, 1908, registering a Will is optional in Punjab. A Will written on ordinary white paper is legally valid if properly executed. However, registering your Will at an Amritsar Sub-Registrar Office through NGDRS Punjab provides decisive evidentiary advantages.
                 </p>
@@ -658,9 +658,9 @@ export default function AmritsarLocationClient({ faqs }: Props) {
                   <Scale className="w-4 h-4 text-[#C65378]" />
                   <span>JUDICIAL PRECEDENTS &amp; COURT EXEMPTION</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   3. Probate Exemption: Punjab &amp; Haryana High Court Law
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   One of the most persistent misconceptions among property owners in Amritsar is that a court-issued probate is mandatory to inherit or mutate property. Under the Indian Succession Act, probate is compulsory only within the presidency towns of Mumbai, Kolkata, and Chennai.
                 </p>
@@ -708,9 +708,9 @@ export default function AmritsarLocationClient({ faqs }: Props) {
                   <MapPin className="w-4 h-4 text-[#C65378]" />
                   <span>SRO JURISDICTION DIRECTORY</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   4. Amritsar Sub-Registrar Offices: SRO District Directory
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Amritsar district operates designated Sub-Registrar Offices under the Department of Revenue, Rehabilitation and Disaster Management Punjab (NGDRS Punjab). Under Section 32 of the Registration Act, your Will can be registered at the Sub-Registrar Office having jurisdiction over your permanent residence or where any part of your real estate is situated.
                 </p>
@@ -812,9 +812,9 @@ export default function AmritsarLocationClient({ faqs }: Props) {
                   <MapPin className="w-4 h-4 text-[#C65378]" />
                   <span>LOCAL AREA COVERAGE &amp; ASSET NUANCES</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   5. Localities Covered: Area-Wise Will Drafting in Amritsar
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Real estate in Amritsar spans prestigious planned residential sectors in Ranjit Avenue and Green Avenue, historic commercial trade hubs around the Golden Temple, defense bungalows in Cantonment, and NRI ancestral farmlands in Ajnala and Baba Bakala. Our estate planning advocates provide specialized drafting, NGDRS slot booking, and Sub-Registrar accompaniment across all key micro-markets:
                 </p>
@@ -1254,9 +1254,9 @@ export default function AmritsarLocationClient({ faqs }: Props) {
                   <FileCheck className="w-4 h-4 text-[#C65378]" />
                   <span>SYSTEMATIC REGISTRATION PROTOCOL</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   6. Step-by-Step SOP: Online Will Registration in Amritsar
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Registering a Will in Amritsar through the NGDRS Punjab portal ensures seamless legal protection. Our five-step standard operating procedure guarantees full compliance with the Registration Act and Punjab Revenue department standards:
                 </p>
@@ -1347,9 +1347,9 @@ export default function AmritsarLocationClient({ faqs }: Props) {
                   <Home className="w-4 h-4 text-[#C65378]" />
                   <span>DOORSTEP REGISTRATION FOR ELDERLY &amp; BEDRIDDEN</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   7. Section 31 Doorstep Registry: Senior Citizen Home Visits
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Visiting the busy Kachehri or Majitha Road Sub-Registrar offices can be physically challenging for elderly testators, ailing individuals, or persons with mobility restrictions. Section 31 of the Registration Act, 1908 provides a legal mechanism for official home visits across Amritsar.
                 </p>
@@ -1403,9 +1403,9 @@ export default function AmritsarLocationClient({ faqs }: Props) {
                   <FileText className="w-4 h-4 text-[#C65378]" />
                   <span>INTERACTIVE DOCUMENT AUDIT</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   8. Amritsar Will Document Checklist: Verification Protocol
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Before booking your NGDRS Punjab appointment, ensure you have all mandatory original documents and verified copies ready. Check off each item below:
                 </p>
@@ -1466,9 +1466,9 @@ export default function AmritsarLocationClient({ faqs }: Props) {
                   <Building className="w-4 h-4 text-[#C65378]" />
                   <span>ASSET CLASSIFICATIONS &amp; CLAUSE DRAFTING</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   9. Amritsar Property Bequests: ADA, MCA &amp; Farmlands
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Estate assets in Amritsar represent varied legal ownership structures. Each property category requires custom statutory clauses to ensure clean transmission:
                 </p>
@@ -1536,9 +1536,9 @@ export default function AmritsarLocationClient({ faqs }: Props) {
                   <Stamp className="w-4 h-4 text-[#C65378]" />
                   <span>TRANSPARENT PUNJAB REVENUE SCHEDULE</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   10. Government Fees: Punjab Registration &amp; Stamp Exemption
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Unlike sale deeds or gift deeds that attract 5% to 7% stamp duty in Punjab, testamentary Wills are completely exempt from ad-valorem stamp duty under the Indian Stamp Act, 1899.
                 </p>
@@ -1605,9 +1605,9 @@ export default function AmritsarLocationClient({ faqs }: Props) {
                   <Award className="w-4 h-4 text-[#C65378]" />
                   <span>TRANSPARENT LEGAL ASSISTANCE PLANS</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   11. Transparent Pricing: Amritsar Will Drafting Plans
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Choose the plan that suits your family&apos;s estate planning needs. No hidden charges, no percentage-based commissions:
                 </p>
@@ -1754,9 +1754,9 @@ export default function AmritsarLocationClient({ faqs }: Props) {
                   <HelpCircle className="w-4 h-4 text-[#C65378]" />
                   <span>COMMONLY ASKED QUESTIONS</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   12. Frequently Asked Questions: Amritsar Will Services
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Essential legal answers regarding Will drafting, Punjab registration, probate non-mandatory status, and NRI succession:
                 </p>
@@ -1804,9 +1804,9 @@ export default function AmritsarLocationClient({ faqs }: Props) {
                   <Scale className="w-4 h-4 text-[#C65378]" />
                   <span>AUTHORITATIVE STATUTES &amp; CODES</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   13. Statutory Provisions: Governing Succession in Punjab
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Every Will drafted by our legal team is constructed strictly in accordance with Indian testamentary jurisprudence and Punjab State land codes:
                 </p>
