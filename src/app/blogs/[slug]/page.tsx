@@ -360,6 +360,15 @@ function processHtmlAndExtractToc(rawHtml: string): {
     .replace(/\balt="([^"]{86,})"/gi, (_m, altText) => `alt="${altText.slice(0, 85).trim()}"`)
     .replace(/\balt='([^']{86,})'/gi, (_m, altText) => `alt='${altText.slice(0, 85).trim()}'`);
 
+  // Validate any inline <img src="/images/..."> against public/ so missing static image paths never 404
+  html = html.replace(
+    /\bsrc=(["'])(\/images\/[^"'\s>]+)\1/gi,
+    (_m, q, imgPath) => {
+      const safeSrc = resolveSafeBlogImage(imgPath);
+      return `src=${q}${safeSrc}${q}`;
+    }
+  );
+
   // Normalize any legacy /services/muslim-will-wasiyat links to the canonical template URL
   html = html
     .replace(
