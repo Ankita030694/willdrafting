@@ -846,14 +846,12 @@ export default function DelhiNCTLocationClient({ faqs }: Props) {
                       Registration slots must be pre-booked online via the Delhi DORIS portal before visiting the SRO counter.
                     </span>
                   </div>
-                  <a
-                    href="https://doris.delhiservices.gov.in"
-                    target="_blank"
-                    rel="noopener noreferrer"
+                  <Link
+                    href="/services/will-registration"
                     className="font-bold text-amber-900 underline hover:text-amber-950 shrink-0 ml-2"
                   >
-                    DORIS Portal &rarr;
-                  </a>
+                    SRO Booking Guide &rarr;
+                  </Link>
                 </div>
               </div>
             </section>

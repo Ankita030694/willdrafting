@@ -3,6 +3,7 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   devIndicators: false,
   reactCompiler: true,
+  htmlLimitedBots: /.*/,
   serverExternalPackages: ["@sparticuz/chromium", "puppeteer-core"],
   images: {
     unoptimized: true,

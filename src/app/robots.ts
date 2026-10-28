@@ -23,6 +23,8 @@ export default function robots(): MetadataRoute.Robots {
           "/locations/*",
           "/contact",
           "/sitemap",
+          "/api/blog-images",
+          "/api/blog-images/*",
         ],
         disallow: [
           "/start",
