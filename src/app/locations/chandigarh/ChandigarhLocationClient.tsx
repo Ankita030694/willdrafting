@@ -112,14 +112,14 @@ const INITIAL_CHECKLIST = [
   },
   {
     id: "item-2",
-    label: "Testator Proof of Identity",
+    label: "Will maker Proof of Identity",
     detail: "Original Aadhaar card or Indian Passport along with two photocopies.",
     checked: false,
   },
   {
     id: "item-3",
     label: "Two Independent Witnesses",
-    detail: "Adult witnesses with original Aadhaar cards who are not beneficiaries under the Will.",
+    detail: "Adult witnesses with original Aadhaar cards who are not heirs under the Will.",
     checked: false,
   },
   {
@@ -131,13 +131,13 @@ const INITIAL_CHECKLIST = [
   {
     id: "item-5",
     label: "MBBS Doctor Fitness Certificate",
-    detail: "Required for testators aged 60+ to certify sound testamentary capacity and mental fitness.",
+    detail: "Required for testators aged 60+ to certify sound sound mind and mental fitness.",
     checked: false,
   },
   {
     id: "item-6",
     label: "Passport-Sized Color Photos",
-    detail: "Two recent photographs each for the testator and both independent witnesses.",
+    detail: "Two recent photographs each for the Will maker and both independent witnesses.",
     checked: false,
   },
   {
@@ -149,7 +149,7 @@ const INITIAL_CHECKLIST = [
   {
     id: "item-8",
     label: "Proof of Ordinary Residence in Tricity",
-    detail: "Electricity bill, water connection bill, or voter ID verifying residential address.",
+    detail: "Electricity bill, water connection bill, or voter ID verifying home address.",
     checked: false,
   },
 ];
@@ -247,8 +247,8 @@ export default function ChandigarhLocationClient({ faqs }: Props) {
               </h1>
 
               <p className="text-base sm:text-lg text-slate-200 leading-relaxed font-normal max-w-2xl">
-                Draft a legally valid Will for your Estate Office plots, Chandigarh Housing Board (CHB) flats, and GMADA or HSVP properties.
-                Get advocate guidance on impartibility rules, Sub-Registrar registration, and doorstep execution across the Tricity.
+                Draft a legally valid Will for your Estate Office plots, Chandigarh Housing Board (CHB) flats, and GMADA or HSVP assets.
+                Get lawyer guidance on impartibility rules, Sub-Registrar registration, and doorstep signing across the Tricity.
               </p>
 
               <div className="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
@@ -505,7 +505,7 @@ export default function ChandigarhLocationClient({ faqs }: Props) {
                       <span>Probate Exemption</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Chandigarh is not a historical British presidency town. The Punjab &amp; Haryana High Court has ruled that probate is not mandatory for local Hindu, Sikh, Jain, or Buddhist estates.
+                      Chandigarh is not a historical British presidency town. The Punjab &amp; Haryana High Court has ruled that probate is not needed for local Hindu, Sikh, Jain, or Buddhist estates.
                     </p>
                   </div>
 
@@ -515,7 +515,7 @@ export default function ChandigarhLocationClient({ faqs }: Props) {
                       <span>CHB Direct Transfer</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      The Chandigarh Housing Board (CHB) accepts registered Wills for quick flat mutation, avoiding public notices, indemnity bonds, and dispute delays.
+                      The Chandigarh Housing Board (CHB) accepts registered Wills for quick flat name change, avoiding public notices, indemnity bonds, and fight delays.
                     </p>
                   </div>
 
@@ -545,13 +545,13 @@ export default function ChandigarhLocationClient({ faqs }: Props) {
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Writing a Will in Chandigarh is governed by the <strong>Indian Succession Act, 1925</strong> and the <strong>Registration Act, 1908</strong>.
-                  Any adult of sound mind can make a Will to dispose of their self-acquired properties, bank accounts, stocks, and personal assets.
+                  Any adult of sound mind can make a Will to dispose of their self-acquired assets, bank accounts, stocks, and personal assets.
                 </p>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Chandigarh presents special legal considerations.
-                  Residential houses in Chandigarh are subject to strict building bylaws and a Supreme Court ban on plot fragmentation.
-                  In addition, families frequently own properties across state boundaries in Mohali and Panchkula.
-                  A professionally drafted Will ensures seamless transmission without title deadlock.
+                  Home houses in Chandigarh are subject to strict building bylaws and a Supreme Court ban on plot fragmentation.
+                  In addition, families often own assets across state boundaries in Mohali and Panchkula.
+                  A professionally drafted Will ensures seamless transfer without title deadlock.
                 </p>
               </div>
 
@@ -562,7 +562,7 @@ export default function ChandigarhLocationClient({ faqs }: Props) {
                   </span>
                   <h3 className="font-bold text-sm text-slate-900">Legal Age</h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    The testator must be at least 18 years of age and in sound mental health (Section 59).
+                    The Will maker must be at least 18 years of age and in sound mental health (Section 59).
                   </p>
                 </div>
 
@@ -582,7 +582,7 @@ export default function ChandigarhLocationClient({ faqs }: Props) {
                   </span>
                   <h3 className="font-bold text-sm text-slate-900">Two Witnesses</h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    The testator must sign the Will in the direct presence of two adult witnesses (Section 63).
+                    The Will maker must sign the Will in the direct presence of two adult witnesses (Section 63).
                   </p>
                 </div>
 
@@ -592,7 +592,7 @@ export default function ChandigarhLocationClient({ faqs }: Props) {
                   </span>
                   <h3 className="font-bold text-sm text-slate-900">Independent</h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Witnesses must not be beneficiaries receiving any asset or gift under the Will (Section 67).
+                    Witnesses must not be heirs receiving any asset or gift under the Will (Section 67).
                   </p>
                 </div>
               </div>
@@ -607,14 +607,14 @@ export default function ChandigarhLocationClient({ faqs }: Props) {
                 </div>
                 {/* Length: 49 characters */}
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  2. Is Will Registration Mandatory in Chandigarh?
+                  2. Is Will Registration Needed in Chandigarh?
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Under Section 18(e) of the Registration Act, 1908, registering a Will is <strong>optional</strong>.
-                  An unregistered Will executed on plain paper is legally valid in Indian courts if properly attested by two independent witnesses.
+                  An unregistered Will signed on plain paper is legally valid in Indian courts if properly attested by two independent witnesses.
                 </p>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  However, registering your Will at the Sector 17 Sub-Registrar Office in Chandigarh is strongly advised by legal experts.
+                  However, registering your Will at the Sector 17 SRO office in Chandigarh is strongly advised by legal experts.
                   Here is how a registered Will compares with an unregistered document:
                 </p>
               </div>
@@ -636,17 +636,17 @@ export default function ChandigarhLocationClient({ faqs }: Props) {
                       <td className="p-4 bg-slate-50/20">Kept in personal custody with risks of loss or theft</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-semibold">CHB Transfer Procedure</td>
+                      <td className="p-4 font-semibold">CHB Transfer Step</td>
                       <td className="p-4 bg-rose-50/20">Sanctioned quickly without newspaper advertisements</td>
-                      <td className="p-4 bg-slate-50/20">Mandatory public notices and heavy indemnity bonds</td>
+                      <td className="p-4 bg-slate-50/20">Needed public notices and heavy indemnity bonds</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-semibold">Estate Office Mutation</td>
+                      <td className="p-4 font-semibold">Estate Office Name Change</td>
                       <td className="p-4 bg-rose-50/20">Direct ownership substitution with certified copy</td>
                       <td className="p-4 bg-slate-50/20">Requires personal appearance and NOCs from all legal heirs</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-semibold">Legal Evidentiary Value</td>
+                      <td className="p-4 font-semibold">Legal Proof Value</td>
                       <td className="p-4 bg-rose-50/20">Presumption of genuineness under Section 60</td>
                       <td className="p-4 bg-slate-50/20">Vulnerable to claims of forgery, pressure, or dementia</td>
                     </tr>
@@ -672,12 +672,12 @@ export default function ChandigarhLocationClient({ faqs }: Props) {
                   3. Chandigarh Probate Rules: High Court Legal Precedents
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  A common question among property owners in Chandigarh and Mohali is whether they must obtain court probate.
+                  A common question among property owners in Chandigarh and Mohali is whether they must get court probate.
                   In most cases, the answer is <strong>no</strong>.
                 </p>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Under Section 213 read with Section 57 of the Indian Succession Act, 1925, probate is mandatory only if the Will was made in, or deals with properties inside, Mumbai, Kolkata, or Chennai.
-                  Because Chandigarh, Punjab, and Haryana are non-presidency territories, court probate is not mandatory for Hindu, Sikh, Jain, or Buddhist testators.
+                  Under Section 213 read with Section 57 of the Indian Succession Act, 1925, probate is needed only if the Will was made in, or deals with assets inside, Mumbai, Kolkata, or Chennai.
+                  Because Chandigarh, Punjab, and Haryana are non-presidency territories, court probate is not needed for Hindu, Sikh, Jain, or Buddhist testators.
                 </p>
               </div>
 
@@ -690,7 +690,7 @@ export default function ChandigarhLocationClient({ faqs }: Props) {
                     Punjab &amp; Haryana High Court Decisions
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    In landmark judgments including <em>Ram Chand v. Sardara Singh (AIR 1962 P&amp;H 382)</em> and <em>Madan Lal v. Dev Raj (AIR 1974 P&amp;H 239)</em>, the High Court held that probate is not required to establish legal rights under a Will in Chandigarh or Punjab.
+                    In landmark judgments including <em>Ram Chand v. Sardara Singh (AIR 1962 P&amp;H 382)</em> and <em>Madan Lal v. Dev Raj (AIR 1974 P&amp;H 239)</em>, the High Court held that probate is not required to set up legal rights under a Will in Chandigarh or Punjab.
                   </p>
                   <div className="pt-2 text-xs text-slate-500 flex items-center gap-1.5">
                     <Check className="w-3.5 h-3.5 text-emerald-600" />
@@ -710,7 +710,7 @@ export default function ChandigarhLocationClient({ faqs }: Props) {
                   </p>
                   <div className="pt-2 text-xs text-slate-500 flex items-center gap-1.5">
                     <AlertTriangle className="w-3.5 h-3.5 text-[#C65378]" />
-                    <span>Provides conclusive judgment in rem binding all legal heirs</span>
+                    <span>Provides strong judgment in rem binding all legal heirs</span>
                   </div>
                 </div>
               </div>
@@ -725,11 +725,11 @@ export default function ChandigarhLocationClient({ faqs }: Props) {
                 </div>
                 {/* Length: 52 characters */}
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  4. Chandigarh Tricity Sub-Registrar Office Directory
+                  4. Chandigarh Tricity SRO office Directory
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Under Section 32 of the Registration Act, your Will can be registered at the Sub-Registrar Office where you reside or where any part of your real estate is situated.
-                  Select your region below to review office locations, jurisdiction boundaries, and appointment links:
+                  Under Section 32 of the Registration Act, your Will can be registered at the SRO office where you reside or where any part of your real estate is situated.
+                  Select your region below to review office locations, area boundaries, and appointment links:
                 </p>
               </div>
 
@@ -835,8 +835,8 @@ export default function ChandigarhLocationClient({ faqs }: Props) {
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Looking for legally verified <strong>Will drafting services in Sectors 2 to 11, Sectors 32 to 37, Mohali, Panchkula, or New Chandigarh</strong>?
-                  Property configurations across the Tricity range from heritage kanal kothis and CHB residential flats to GMADA plots in Mohali and HSVP builder floors in Panchkula.
-                  Our senior advocates provide comprehensive legal drafting, custom testamentary clauses, and end-to-end Sub-Registrar accompaniment across all key sectors:
+                  Property configurations across the Tricity range from heritage kanal kothis and CHB home flats to GMADA plots in Mohali and HSVP builder floors in Panchkula.
+                  Our senior lawyers provide full legal drafting, custom testamentary clauses, and end-to-end Sub-Registrar accompaniment across all key sectors:
                 </p>
               </div>
 
@@ -866,7 +866,7 @@ export default function ChandigarhLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Our specialized <strong>Will drafting services in Sectors 2 to 11</strong> cater to high-value independent heritage kothis owned by business families, senior advocates, and retired bureaucrats. Due to strict architectural preservation laws and the ban on plot fragmentation, dividing houses into separate floors is prohibited. Our advocates prepare clear single-heir bequests or compensatory financial settlements to avoid costly partition litigation.
+                      Our specialized <strong>Will drafting services in Sectors 2 to 11</strong> cater to high-value independent heritage kothis owned by business families, senior lawyers, and retired bureaucrats. Due to strict architectural preservation laws and the ban on plot fragmentation, dividing houses into separate floors is prohibited. Our lawyers prepare clear single-heir bequests or compensatory financial settlements to avoid costly split court fights.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -875,7 +875,7 @@ export default function ChandigarhLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Estate Office Complex, Sector 17</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Comprehensive estate planning, family trust structuring, and advocate accompaniment at the Sector 17 Sub-Registrar Office.
+                        Full estate planning, family trust structuring, and lawyer accompaniment at the Sector 17 SRO office.
                       </p>
                     </div>
                   </div>
@@ -919,16 +919,16 @@ export default function ChandigarhLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Through our professional <strong>Will drafting services in Sectors 32 to 37</strong>, we provide end-to-end estate planning for retired military officers, doctors, and senior professionals across Sectors 33, 34, 35, and 36. Our legal team arranges medical fitness certifications and home registration visits under Section 31 of the Registration Act, ensuring seamless succession for marla kothis, pension benefits, and bank locker assets.
+                      Through our professional <strong>Will drafting services in Sectors 32 to 37</strong>, we provide end-to-end estate planning for retired military officers, doctors, and senior professionals across Sectors 33, 34, 35, and 36. Our legal team arranges medical fitness certifications and home registration visits under Section 31 of the Registration Act, making sure seamless succession for marla kothis, pension benefits, and bank locker assets.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
                       <div className="flex items-center gap-2 font-bold text-slate-900">
                         <Building className="w-3.5 h-3.5 text-[#C65378]" />
-                        <span>SRO Hub: Sector 17 Sub-Registrar Office</span>
+                        <span>SRO Hub: Sector 17 SRO office</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Section 31 home commission coordination for elderly defense personnel, doctor certificate drafting, and independent witness attestation.
+                        Section 31 home commission coordination for elderly defense personnel, doctor paper drafting, and independent witness attestation.
                       </p>
                     </div>
                   </div>
@@ -972,7 +972,7 @@ export default function ChandigarhLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Avail specialized <strong>Will drafting services for CHB Flats</strong> across Sectors 38, 44, 49, 51, and 63. If an owner passes away leaving an unregistered Will, the Chandigarh Housing Board demands public notices in English and Punjabi dailies, along with affidavits from all legal heirs. A legally registered Will drafted by our advocates guarantees direct title transfer without municipal hurdles.
+                      Avail specialized <strong>Will drafting services for CHB Flats</strong> across Sectors 38, 44, 49, 51, and 63. If an owner passes away leaving an unregistered Will, the Chandigarh Housing Board demands public notices in English and Punjabi dailies, along with affidavits from all legal heirs. A legally registered Will drafted by our lawyers guarantees direct title transfer without municipal hurdles.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -987,7 +987,7 @@ export default function ChandigarhLocationClient({ faqs }: Props) {
                   </div>
 
                   <div className="pt-4 mt-4 border-t border-slate-100 flex items-center justify-between">
-                    <span className="text-xs font-bold text-slate-500">CHB Mutation Guaranteed</span>
+                    <span className="text-xs font-bold text-slate-500">CHB Name Change Guaranteed</span>
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
@@ -1021,20 +1021,20 @@ export default function ChandigarhLocationClient({ faqs }: Props) {
                       <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Phase 1 to 11</span>
                       <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Sectors 68, 70, 71 &amp; 79</span>
                       <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Aerocity &amp; IT City</span>
-                      <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">GMADA Residential Plots</span>
+                      <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">GMADA Home Plots</span>
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Our expert <strong>Will drafting services in SAS Nagar / Mohali</strong> cover extensive GMADA plotted sectors and private builder apartments across Phases 1 to 11, Sectors 68 to 79, and Aerocity. GMADA title mutation requires specific testamentary proof to transfer allotment letters and conveyance deeds. We assist with Punjab NGDRS e-appointment booking at the Sector 76 District Administrative Complex.
+                      Our expert <strong>Will drafting services in SAS Nagar / Mohali</strong> cover extensive GMADA plotted sectors and private builder apartments across Phases 1 to 11, Sectors 68 to 79, and Aerocity. GMADA title name change requires specific testamentary proof to transfer allotment letters and conveyance deeds. We assist with Punjab NGDRS e-appointment booking at the Sector 76 District Office Complex.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
                       <div className="flex items-center gap-2 font-bold text-slate-900">
                         <Building className="w-3.5 h-3.5 text-[#C65378]" />
-                        <span>SRO Hub: District Administrative Complex, Sector 76</span>
+                        <span>SRO Hub: District Office Complex, Sector 76</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Punjab NGDRS appointment booking, advocate accompaniment before the Mohali Sub-Registrar, and GMADA mutation advisory.
+                        Punjab NGDRS appointment booking, lawyer accompaniment before the Mohali Sub-Registrar, and GMADA name change advisory.
                       </p>
                     </div>
                   </div>
@@ -1078,7 +1078,7 @@ export default function ChandigarhLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      We deliver compliant <strong>Will drafting services in Panchkula &amp; MDC</strong> for residential sectors, Mansa Devi Complex, and HSVP (HUDA) builder floors. Transferring HSVP plots and builder floors after death requires strict adherence to Haryana transfer policies. We coordinate appointment slots on the Haryana Jamabandi portal and attend registration at the Sector 1 Mini Secretariat.
+                      We deliver compliant <strong>Will drafting services in Panchkula &amp; MDC</strong> for home sectors, Mansa Devi Complex, and HSVP (HUDA) builder floors. Transferring HSVP plots and builder floors after death requires strict adherence to Haryana transfer policies. We coordinate appointment slots on the Haryana Jamabandi portal and attend registration at the Sector 1 Mini Secretariat.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1087,7 +1087,7 @@ export default function ChandigarhLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Mini Secretariat, Sector 1, Panchkula</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        HALRIS e-appointment scheduling, HSVP builder floor transfer clauses, and doorstep execution for senior citizens.
+                        HALRIS e-appointment scheduling, HSVP builder floor transfer clauses, and doorstep signing for senior citizens.
                       </p>
                     </div>
                   </div>
@@ -1131,7 +1131,7 @@ export default function ChandigarhLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Comprehensive <strong>Will drafting services in New Chandigarh &amp; Zirakpur</strong> cover modern luxury villas, high-rise apartments, and commercial SCOs across Mullanpur, Eco City, Medi City, and VIP Road. We ensure seamless succession across developer agreements, apartment owners&apos; associations (AOA), and cooperative society memberships with remote NRI support.
+                      Full <strong>Will drafting services in New Chandigarh &amp; Zirakpur</strong> cover modern luxury villas, high-rise apartments, and shop SCOs across Mullanpur, Eco City, Medi City, and VIP Road. We make sure seamless succession across developer agreements, apartment owners&apos; associations (AOA), and cooperative society memberships with remote NRI support.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1140,7 +1140,7 @@ export default function ChandigarhLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Kharar Tehsil &amp; Dera Bassi Sub-Registrar</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Comprehensive builder-buyer contract succession, developer NOC guidance, and NRI remote drafting support.
+                        Full builder-buyer contract succession, developer NOC guidance, and NRI remote drafting support.
                       </p>
                     </div>
                   </div>
@@ -1173,7 +1173,7 @@ export default function ChandigarhLocationClient({ faqs }: Props) {
                   6. Step-by-Step Will Registration in Chandigarh
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Registering your Will before a Sub-Registrar in Chandigarh or the Tricity follows an organized statutory process.
+                  Registering your Will before a Sub-Registrar in Chandigarh or the Tricity follows an organized legal process.
                   Here is the verified 5-step SOP:
                 </p>
               </div>
@@ -1202,7 +1202,7 @@ export default function ChandigarhLocationClient({ faqs }: Props) {
                       Doctor Certificate
                     </h3>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Procure an MBBS medical certificate for testators aged 60+ confirming sound mental capacity.
+                      Procure an MBBS medical paper for testators aged 60+ confirming sound mental capacity.
                     </p>
                   </div>
                 </div>
@@ -1230,7 +1230,7 @@ export default function ChandigarhLocationClient({ faqs }: Props) {
                       SRO Appearance
                     </h3>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Testator and two independent witnesses appear with original Aadhaar cards before the Sub-Registrar.
+                      Will maker and two independent witnesses appear with original Aadhaar cards before the Sub-Registrar.
                     </p>
                   </div>
                 </div>
@@ -1264,7 +1264,7 @@ export default function ChandigarhLocationClient({ faqs }: Props) {
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Chandigarh has one of India&apos;s highest proportions of senior citizens and retired armed forces personnel living in Sectors 33, 34, 35, and 36.
-                  Under <strong>Section 31 of the Registration Act, 1908</strong>, elderly or infirm citizens who cannot easily visit the Sector 17 Sub-Registrar Office can request a home registration visit.
+                  Under <strong>Section 31 of the Registration Act, 1908</strong>, elderly or infirm citizens who cannot easily visit the Sector 17 SRO office can request a home registration visit.
                 </p>
               </div>
 
@@ -1284,8 +1284,8 @@ export default function ChandigarhLocationClient({ faqs }: Props) {
                   <div className="flex items-start gap-3 p-4 rounded-2xl bg-slate-50 border border-slate-100">
                     <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
                     <div>
-                      <strong className="text-slate-900 block">Advocate Commission Filing</strong>
-                      <span className="text-slate-600">Our legal team files the home visit application before the Sector 17 Sub-Registrar.</span>
+                      <strong className="text-slate-900 block">Lawyer Commission Filing</strong>
+                      <span className="text-slate-600">Our legal team files the home visit form before the Sector 17 Sub-Registrar.</span>
                     </div>
                   </div>
 
@@ -1320,7 +1320,7 @@ export default function ChandigarhLocationClient({ faqs }: Props) {
                   8. Documents Checklist for Chandigarh Sub-Registrar
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Prepare your documents before visiting the Sub-Registrar office.
+                  Prepare your documents before visiting the SRO office.
                   You have completed <strong>{checkedCount} of {checklist.length}</strong> checklist items:
                 </p>
               </div>
@@ -1398,19 +1398,19 @@ export default function ChandigarhLocationClient({ faqs }: Props) {
                     Independent Marla &amp; Kanal Kothis
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Under Supreme Court rulings, residential plots in Chandigarh cannot be bifurcated into separate apartment shares. Wills must designate unified ownership or clear financial alternatives.
+                    Under Supreme Court rulings, home plots in Chandigarh cannot be bifurcated into separate apartment shares. Wills must designate unified ownership or clear financial alternatives.
                   </p>
                 </div>
 
                 <div className="bg-white rounded-3xl border border-slate-200/90 p-6 shadow-xs space-y-3">
                   <span className="px-3 py-1 rounded-full bg-emerald-100 text-emerald-800 text-xs font-bold uppercase">
-                    Commercial Units
+                    Shop Units
                   </span>
                   <h3 className="font-bold text-base text-slate-900">
-                    Commercial SCOs &amp; SCFs
+                    Shop SCOs &amp; SCFs
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Commercial shops in Sectors 17, 22, and 35 generate substantial rental yield. Our Wills codify rental income apportionment, tenancy rights, and commercial partnership continuity.
+                    Shop shops in Sectors 17, 22, and 35 generate substantial rental yield. Our Wills codify rental income apportionment, tenancy rights, and shop partnership continuity.
                   </p>
                 </div>
               </div>
@@ -1498,7 +1498,7 @@ export default function ChandigarhLocationClient({ faqs }: Props) {
                       ₹1,990
                     </div>
                     <p className="text-xs text-slate-600">
-                      Ideal for simple estates with residential property, bank accounts, and demat holdings.
+                      Ideal for simple estates with home property, bank accounts, and demat holdings.
                     </p>
                     <ul className="space-y-2.5 text-xs text-slate-700 pt-3 border-t border-slate-100">
                       <li className="flex items-center gap-2">
@@ -1507,7 +1507,7 @@ export default function ChandigarhLocationClient({ faqs }: Props) {
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>Legally vetted statutory clauses</span>
+                        <span>Legally vetted legal clauses</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
@@ -1531,16 +1531,16 @@ export default function ChandigarhLocationClient({ faqs }: Props) {
                   </div>
                   <div className="space-y-4">
                     <span className="text-xs font-bold uppercase tracking-wider text-[#C65378]">
-                      Comprehensive
+                      Full
                     </span>
                     <h3 className="font-extrabold text-xl text-slate-900">
-                      Advocate Consultation
+                      Lawyer Talk
                     </h3>
                     <div className="text-3xl font-black text-slate-900">
                       ₹4,990
                     </div>
                     <p className="text-xs text-slate-600">
-                      Senior estate advocate review for CHB flats, Estate Office kothis, and multi-heir assets.
+                      Senior estate lawyer review for CHB flats, Estate Office kothis, and multi-heir assets.
                     </p>
                     <ul className="space-y-2.5 text-xs text-slate-700 pt-3 border-t border-slate-100">
                       <li className="flex items-center gap-2">
@@ -1553,7 +1553,7 @@ export default function ChandigarhLocationClient({ faqs }: Props) {
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>Impartibility &amp; commercial clauses</span>
+                        <span>Impartibility &amp; shop clauses</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
@@ -1565,7 +1565,7 @@ export default function ChandigarhLocationClient({ faqs }: Props) {
                     href="/contact"
                     className="mt-6 w-full py-3 rounded-xl bg-[#C65378] text-white text-xs font-bold text-center hover:bg-[#a13c5d] transition-colors cursor-pointer"
                   >
-                    Book Advocate Call
+                    Book Lawyer Call
                   </a>
                 </div>
 
@@ -1582,7 +1582,7 @@ export default function ChandigarhLocationClient({ faqs }: Props) {
                       ₹9,990
                     </div>
                     <p className="text-xs text-slate-600">
-                      Full end-to-end registration assistance at Chandigarh, Mohali, or Panchkula Sub-Registrar offices.
+                      Full end-to-end registration help at Chandigarh, Mohali, or Panchkula Sub-Registrar offices.
                     </p>
                     <ul className="space-y-2.5 text-xs text-slate-700 pt-3 border-t border-slate-100">
                       <li className="flex items-center gap-2">
@@ -1591,7 +1591,7 @@ export default function ChandigarhLocationClient({ faqs }: Props) {
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>Advocate physically attends with you</span>
+                        <span>Lawyer physically attends with you</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
@@ -1668,7 +1668,7 @@ export default function ChandigarhLocationClient({ faqs }: Props) {
                 </div>
                 {/* Length: 51 characters */}
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  13. Statutory References &amp; Chandigarh Legal Portals
+                  13. Legal References &amp; Chandigarh Legal Portals
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Our estate planning protocols strictly comply with codified Indian statutes and official state registration systems:
@@ -1720,7 +1720,7 @@ export default function ChandigarhLocationClient({ faqs }: Props) {
                 Protect Your Chandigarh Tricity Estate Today
               </h3>
               <p className="text-sm sm:text-base text-slate-200 max-w-2xl mx-auto leading-relaxed">
-                Do not leave your hard-earned Tricity assets to costly property disputes.
+                Do not leave your hard-earned Tricity assets to costly property fights.
                 Draft a legally binding Will online in minutes or consult our senior estate lawyers.
               </p>
               <div className="pt-3 flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -1735,7 +1735,7 @@ export default function ChandigarhLocationClient({ faqs }: Props) {
                   href="/contact"
                   className="w-full sm:w-auto px-6 py-3.5 rounded-full bg-white/10 text-white font-bold text-sm sm:text-base hover:bg-white/20 transition-all border border-white/20"
                 >
-                  Book Lawyer Consultation
+                  Book Lawyer Talk
                 </a>
               </div>
             </section>

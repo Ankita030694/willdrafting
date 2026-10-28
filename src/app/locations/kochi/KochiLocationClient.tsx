@@ -150,8 +150,8 @@ const INITIAL_CHECKLIST = [
   },
   {
     id: "item-2",
-    label: "Original Aadhaar Card & PAN of Testator",
-    detail: "Required for biometric identity verification and digital photograph capture at the Kerala SRO.",
+    label: "Original Aadhaar Card & PAN of Will maker",
+    detail: "Required for biometric identity check and digital photograph capture at the Kerala SRO.",
     checked: true,
   },
   {
@@ -163,25 +163,25 @@ const INITIAL_CHECKLIST = [
   {
     id: "item-4",
     label: "Two Independent Adult Witnesses with IDs",
-    detail: "Witnesses must carry original Aadhaar or Voter ID. They must not be beneficiaries under the Will.",
+    detail: "Witnesses must carry original Aadhaar or Voter ID. They must not be heirs under the Will.",
     checked: true,
   },
   {
     id: "item-5",
     label: "Land Tax Receipt & Thandapper Number",
-    detail: "Recent land tax receipt from the Village Office to ensure accurate property identification and Pokkuvaravu.",
+    detail: "Recent land tax receipt from the Village Office to make sure accurate property ID and Pokkuvaravu.",
     checked: false,
   },
   {
     id: "item-6",
     label: "Title Deeds (Aadheeram / Prior Deeds)",
-    detail: "Registered sale deed, partition deed, or GCDA allotment letter to extract exact survey numbers and boundaries.",
+    detail: "Registered sale deed, split deed, or GCDA allotment letter to extract exact survey numbers and boundaries.",
     checked: false,
   },
   {
     id: "item-7",
     label: "Doctor Medical Capacity Certificate",
-    detail: "MBBS medical certificate confirming sound mind, mandatory for testators aged 60+ or home visits.",
+    detail: "MBBS medical paper confirming sound mind, needed for testators aged 60+ or home visits.",
     checked: false,
   },
   {
@@ -285,8 +285,8 @@ export default function KochiLocationClient({ faqs }: Props) {
               </h1>
 
               <p className="text-base sm:text-lg text-slate-200 leading-relaxed font-normal max-w-2xl">
-                Draft a legally binding Will for your Kochi waterfront flats, ancestral Purayidom plots, and bank savings.
-                Get expert advocate drafting, Christian inheritance guidance, PEARLS registration support, and doorstep execution across Ernakulam.
+                Draft a legally binding Will for your Kochi waterfront flats, family Purayidom plots, and bank savings.
+                Get expert lawyer drafting, Christian inheritance guidance, PEARLS registration support, and doorstep signing across Ernakulam.
               </p>
 
               <div className="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
@@ -311,7 +311,7 @@ export default function KochiLocationClient({ faqs }: Props) {
               <div className="pt-4 grid grid-cols-3 gap-3 border-t border-white/10 text-xs text-slate-300">
                 <div className="flex items-center gap-2">
                   <Check className="w-4 h-4 text-emerald-400 shrink-0" />
-                  <span>High Court Advocate Vetted</span>
+                  <span>High Court Lawyer Vetted</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <Check className="w-4 h-4 text-emerald-400 shrink-0" />
@@ -531,10 +531,10 @@ export default function KochiLocationClient({ faqs }: Props) {
                   <div className="p-4 rounded-2xl bg-slate-50/70 border border-slate-100 space-y-1.5">
                     <div className="flex items-center gap-2 font-bold text-sm text-slate-900">
                       <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
-                      <span>Probate Not Compulsory</span>
+                      <span>Probate Not Needed</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Kochi is a non-presidency town under the Kerala High Court. Probate is not mandatory in Kerala under Section 213 of the Indian Succession Act, enabling direct revenue title mutation.
+                      Kochi is a non-presidency town under the Kerala High Court. Probate is not needed in Kerala under Section 213 of the Indian Succession Act, enabling direct revenue title name change.
                     </p>
                   </div>
 
@@ -544,7 +544,7 @@ export default function KochiLocationClient({ faqs }: Props) {
                       <span>Zero Stamp Duty</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Wills incur ₹0 stamp duty in Kerala. At the local Sub-Registrar Office, testators pay only a flat nominal registration fee of ₹1,000 and scanning charges.
+                      Wills incur ₹0 stamp duty in Kerala. At the local SRO office, testators pay only a flat nominal registration fee of ₹1,000 and scanning charges.
                     </p>
                   </div>
 
@@ -577,8 +577,8 @@ export default function KochiLocationClient({ faqs }: Props) {
                 </p>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Kochi features diverse property profiles.
-                  Families frequently hold luxury high-rise apartments in Marine Drive, ancestral rubber or coconut Purayidom land in Aluva, GCDA plots in Panampilly Nagar, or IT corridor villas in Kakkanad.
-                  Without an unambiguous Will, estates face lengthy title delays during Village Office mutation.
+                  Families often hold luxury high-rise apartments in Marine Drive, family rubber or coconut Purayidom land in Aluva, GCDA plots in Panampilly Nagar, or IT corridor villas in Kakkanad.
+                  Without an clear Will, estates face lengthy title delays during Village Office name change.
                 </p>
               </div>
 
@@ -589,7 +589,7 @@ export default function KochiLocationClient({ faqs }: Props) {
                   </span>
                   <h3 className="font-bold text-sm text-slate-900">Legal Capacity</h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    The testator must be at least 18 years of age and in sound mental health (Section 59).
+                    The Will maker must be at least 18 years of age and in sound mental health (Section 59).
                   </p>
                 </div>
 
@@ -599,7 +599,7 @@ export default function KochiLocationClient({ faqs }: Props) {
                   </span>
                   <h3 className="font-bold text-sm text-slate-900">Free Consent</h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Must be executed voluntarily without coercion, family duress, or fraud (Section 61).
+                    Must be signed voluntarily without coercion, family duress, or fraud (Section 61).
                   </p>
                 </div>
 
@@ -617,7 +617,7 @@ export default function KochiLocationClient({ faqs }: Props) {
                   <span className="w-8 h-8 rounded-xl bg-rose-50 text-[#C65378] flex items-center justify-center font-bold text-sm">
                     <ShieldCheck className="w-4 h-4" />
                   </span>
-                  <h3 className="font-bold text-sm text-slate-900">Non-Beneficiary</h3>
+                  <h3 className="font-bold text-sm text-slate-900">Non-Heir</h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
                     Witnesses and their spouses must not receive any gift or bequest under the Will (Section 67).
                   </p>
@@ -633,14 +633,14 @@ export default function KochiLocationClient({ faqs }: Props) {
                   <span>REGISTRATION STATUS</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  2. Is Will Registration Mandatory in Ernakulam Kerala?
+                  2. Is Will Registration Needed in Ernakulam Kerala?
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Under Section 18(e) of the Registration Act, 1908, registering a Will is completely <strong>optional</strong>.
-                  An unregistered Will executed on plain white paper is legally valid in Indian courts, provided it complies with Section 63 attestation requirements.
+                  An unregistered Will signed on plain white paper is legally valid in Indian courts, provided it complies with Section 63 attestation rules.
                 </p>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Nonetheless, in urban Kochi and across Ernakulam district, registering your Will at the Sub-Registrar Office via the PEARLS portal is strongly advised by senior lawyers.
+                  Nonetheless, in urban Kochi and across Ernakulam district, registering your Will at the SRO office via the PEARLS portal is strongly advised by senior lawyers.
                   Here is how a registered Will compares against an unregistered document:
                 </p>
               </div>
@@ -662,19 +662,19 @@ export default function KochiLocationClient({ faqs }: Props) {
                       <td className="p-4 bg-slate-50/20">Private possession; risk of misplacement, fire, or theft</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-semibold">Risk of Forgery Disputes</td>
+                      <td className="p-4 font-semibold">Risk of Forgery Fights</td>
                       <td className="p-4 bg-rose-50/20">Minimal. Biometric photos and thumb impressions recorded</td>
                       <td className="p-4 bg-slate-50/20">High. Relatives often claim fake signature or dementia</td>
                     </tr>
                     <tr>
                       <td className="p-4 font-semibold">Village Office Pokkuvaravu</td>
-                      <td className="p-4 bg-rose-50/20">Immediate title transfer upon death certificate verification</td>
+                      <td className="p-4 bg-rose-50/20">Immediate title transfer upon death paper check</td>
                       <td className="p-4 bg-slate-50/20">Village officers routinely demand consent affidavits from all heirs</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-semibold">Evidentiary Presumption</td>
-                      <td className="p-4 bg-rose-50/20">Strong judicial presumption of genuine execution under Section 60</td>
-                      <td className="p-4 bg-slate-50/20">Beneficiary must formally prove sound mind in civil court</td>
+                      <td className="p-4 font-semibold">Proof Presumption</td>
+                      <td className="p-4 bg-rose-50/20">Strong judicial presumption of genuine signing under Section 60</td>
+                      <td className="p-4 bg-slate-50/20">Heir must formally prove sound mind in civil court</td>
                     </tr>
                     <tr>
                       <td className="p-4 font-semibold">Official Kerala Fee</td>
@@ -697,12 +697,12 @@ export default function KochiLocationClient({ faqs }: Props) {
                   3. Kochi Probate Rules: Kerala Non-Presidency Town Law
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Homeowners and Gulf NRIs frequently inquire whether probate from the Kerala High Court or District Court is required before dealing with inherited property in Kochi.
-                  Under settled Indian law, <strong>probate is not compulsory in Kerala</strong>.
+                  Homeowners and Gulf NRIs often inquire whether probate from the Kerala High Court or District Court is required before dealing with inherited property in Kochi.
+                  Under settled Indian law, <strong>probate is not needed in Kerala</strong>.
                 </p>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Section 213 read with Section 57(a) and 57(b) of the Indian Succession Act, 1925 restricts compulsory probate strictly to historical presidency towns (Mumbai, Kolkata, and Chennai).
-                  Because Kochi and Ernakulam were never presidency jurisdictions, court probate is strictly optional.
+                  Section 213 read with Section 57(a) and 57(b) of the Indian Succession Act, 1925 restricts needed probate strictly to historical presidency towns (Mumbai, Kolkata, and Chennai).
+                  Because Kochi and Ernakulam were never presidency areas, court probate is strictly optional.
                 </p>
               </div>
 
@@ -719,7 +719,7 @@ export default function KochiLocationClient({ faqs }: Props) {
                   </p>
                   <div className="pt-2 text-xs text-slate-500 flex items-center gap-1.5">
                     <Check className="w-3.5 h-3.5 text-emerald-600" />
-                    <span>Allows direct land mutation without high court litigation</span>
+                    <span>Allows direct land name change without high court court fights</span>
                   </div>
                 </div>
 
@@ -731,11 +731,11 @@ export default function KochiLocationClient({ faqs }: Props) {
                     When is Probate Desirable in Ernakulam?
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Filing for Letters of Administration or Probate before the District Court at Ernakulam is beneficial when non-resident siblings challenge the Will, or when commercial banks insist on court orders for substantial high-value overseas deposits.
+                    Filing for Letters of Administration or Probate before the District Court at Ernakulam is beneficial when non-resident siblings challenge the Will, or when shop banks insist on court orders for substantial high-value overseas deposits.
                   </p>
                   <div className="pt-2 text-xs text-slate-500 flex items-center gap-1.5">
                     <AlertTriangle className="w-3.5 h-3.5 text-[#C65378]" />
-                    <span>Conclusive judgment in rem binding against all worldwide claimants</span>
+                    <span>Strong judgment in rem binding against all worldwide claimants</span>
                   </div>
                 </div>
               </div>
@@ -757,7 +757,7 @@ export default function KochiLocationClient({ faqs }: Props) {
                 </p>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Historically, Syrian Christians in Travancore and Cochin were governed by archaic state enactments (the Travancore Christian Succession Act, 1916) which restricted daughters to a fraction of the estate.
-                  In the historic verdict <strong>Mary Roy v. State of Kerala (1986)</strong>, the Supreme Court declared that these state acts lapsed in 1951, confirming equal rights for daughters under intestate succession.
+                  In the historic verdict <strong>Mary Roy v. State of Kerala (1986)</strong>, the Supreme Court declared that these state acts lapsed in 1951, confirming equal rights for daughters under without a Will succession.
                 </p>
               </div>
 
@@ -770,7 +770,7 @@ export default function KochiLocationClient({ faqs }: Props) {
                     Bequeathing Self-Acquired Assets
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Under Section 59 of the Indian Succession Act, a Christian testator enjoys absolute freedom to distribute self-acquired property to any child, spouse, or charitable institution through a Will.
+                    Under Section 59 of the Indian Succession Act, a Christian Will maker enjoys absolute freedom to distribute self-acquired property to any child, spouse, or charitable institution through a Will.
                   </p>
                 </div>
 
@@ -788,13 +788,13 @@ export default function KochiLocationClient({ faqs }: Props) {
 
                 <div className="bg-white rounded-3xl border border-slate-200/90 p-6 shadow-xs space-y-3">
                   <span className="px-3 py-1 rounded-full bg-emerald-100 text-emerald-800 text-xs font-bold uppercase">
-                    Preventing Partition Suits
+                    Preventing Split Suits
                   </span>
                   <h3 className="font-bold text-base text-slate-900">
                     Clarifying Stridhanom Bequests
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Customary marriage gifts (stridhanom) often create bitter legal disputes among siblings after parents pass away. A registered Will explicitly specifies asset allocation, eliminating court battles.
+                    Customary marriage gifts (stridhanom) often create bitter legal fights among siblings after parents pass away. A registered Will explicitly specifies asset allocation, eliminating court battles.
                   </p>
                 </div>
               </div>
@@ -823,7 +823,7 @@ export default function KochiLocationClient({ faqs }: Props) {
                   <div className="space-y-3 p-5 rounded-2xl bg-slate-50 border border-slate-100">
                     <div className="flex items-center gap-2 font-bold text-slate-900 text-base">
                       <Plane className="w-5 h-5 text-[#C65378]" />
-                      <span>Execution from Abroad Without Travel</span>
+                      <span>Signing from Abroad Without Travel</span>
                     </div>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                       You do not need to take leave or travel to Kerala to execute a Will. Under Section 63 of the Indian Succession Act, an Indian citizen can sign their Will anywhere in the world in the presence of two witnesses. SRO registration can be finalized during your next visit.
@@ -836,14 +836,14 @@ export default function KochiLocationClient({ faqs }: Props) {
                       <span>Dual Will Strategy (UAE / Gulf Assets)</span>
                     </div>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      For NRIs with bank balances or properties in Dubai (DIFC) and Kochi, executing two separate Wills is the gold standard: one covering Indian immovable assets under Indian law, and another registered with the DIFC Wills Service Centre for UAE assets.
+                      For NRIs with bank balances or assets in Dubai (DIFC) and Kochi, signing two separate Wills is the gold standard: one covering Indian immovable assets under Indian law, and another registered with the DIFC Wills Service Centre for UAE assets.
                     </p>
                   </div>
 
                   <div className="space-y-3 p-5 rounded-2xl bg-slate-50 border border-slate-100">
                     <div className="flex items-center gap-2 font-bold text-slate-900 text-base">
                       <Landmark className="w-5 h-5 text-[#C65378]" />
-                      <span>NRE / NRO Bank &amp; Portfolio Transmission</span>
+                      <span>NRE / NRO Bank &amp; Portfolio Transfer</span>
                     </div>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                       Nomination in NRE/FCNR fixed deposits and mutual fund portfolios makes the nominee a temporary trustee, not the absolute legal owner. A clear Will ensures swift fund repatriation to designated heirs without RBI hurdles.
@@ -856,7 +856,7 @@ export default function KochiLocationClient({ faqs }: Props) {
                       <span>Power of Attorney Representation</span>
                     </div>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Our advocate network coordinates with your family in Ernakulam, preparing POA documents and managing documentation before Village Offices, GCDA, and Cochin Corporation authorities.
+                      Our lawyer network coordinates with your family in Ernakulam, preparing POA documents and managing papers before Village Offices, GCDA, and Cochin Corporation offices.
                     </p>
                   </div>
                 </div>
@@ -875,7 +875,7 @@ export default function KochiLocationClient({ faqs }: Props) {
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Ernakulam district contains more than 14 Sub-Registrar Offices under the Kerala Registration Department.
-                  Under Section 32 of the Registration Act, your Will can be registered at the Sub-Registrar Office where the testator resides, or where any part of the real estate is situated.
+                  Under Section 32 of the Registration Act, your Will can be registered at the SRO office where the Will maker resides, or where any part of the real estate is situated.
                 </p>
               </div>
 
@@ -947,7 +947,7 @@ export default function KochiLocationClient({ faqs }: Props) {
                       <p className="text-slate-600">{activeDistrictData.timings}</p>
                     </div>
                     <div className="md:col-span-2 space-y-1">
-                      <span className="font-bold text-slate-900 block">Jurisdiction Localities Covered:</span>
+                      <span className="font-bold text-slate-900 block">Area Localities Covered:</span>
                       <p className="text-slate-600 leading-relaxed">{activeDistrictData.areas}</p>
                     </div>
                   </div>
@@ -960,7 +960,7 @@ export default function KochiLocationClient({ faqs }: Props) {
                       href="/contact"
                       className="inline-flex items-center gap-1.5 font-bold text-[#C65378] hover:underline"
                     >
-                      <span>Request Advocate Assistance for {activeDistrictData.name}</span>
+                      <span>Request Lawyer Help for {activeDistrictData.name}</span>
                       <ArrowRight className="w-3.5 h-3.5" />
                     </a>
                   </div>
@@ -979,8 +979,8 @@ export default function KochiLocationClient({ faqs }: Props) {
                   7. Area-Wise Will Drafting Services Across Kochi Localities
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Seeking advocate-vetted <strong>Will drafting services in Marine Drive, Kakkanad, Panampilly Nagar, or Aluva</strong>? Property types across Kochi span luxury waterfront high-rises and IT corridor gated communities to ancestral rubber Purayidom plots and GCDA allotments.
-                  Our senior advocates provide legally verified Will drafting, PEARLS e-token scheduling, and SRO accompaniment across all prime neighborhoods:
+                  Seeking lawyer-vetted <strong>Will drafting services in Marine Drive, Kakkanad, Panampilly Nagar, or Aluva</strong>? Property types across Kochi span luxury waterfront high-rises and IT corridor gated communities to family rubber Purayidom plots and GCDA allotments.
+                  Our senior lawyers provide legally verified Will drafting, PEARLS e-token scheduling, and SRO accompaniment across all prime neighborhoods:
                 </p>
               </div>
 
@@ -1010,7 +1010,7 @@ export default function KochiLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Specialized <strong>Will drafting services in Marine Drive</strong> for prime seafront penthouses, luxury high-rises (Puravankara, Tata Tritvam), and commercial establishments on MG Road. Probate is optional in Kerala—a registered Will provides conclusive testamentary proof for Kochi Municipal Corporation property tax mutation.
+                      Specialized <strong>Will drafting services in Marine Drive</strong> for prime seafront penthouses, luxury high-rises (Puravankara, Tata Tritvam), and shop establishments on MG Road. Probate is optional in Kerala—a registered Will provides strong testamentary proof for Kochi Municipal Corporation property tax name change.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1019,7 +1019,7 @@ export default function KochiLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Hospital Road, Marine Drive (SRO Ernakulam)</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        PEARLS portal e-token scheduling, Hospital Road SRO advocate accompaniment, and Section 31 home visits for seniors across Marine Drive.
+                        PEARLS portal e-token scheduling, Hospital Road SRO lawyer accompaniment, and Section 31 home visits for seniors across Marine Drive.
                       </p>
                     </div>
                   </div>
@@ -1063,7 +1063,7 @@ export default function KochiLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Tailored <strong>Will drafting services in Kakkanad</strong> for tech leaders, software professionals, and Gulf investors owning apartments in DLF Riverside, Skyline, or Asset Homes. Includes comprehensive clauses for overseas tech stock (RSUs), startup equity, and Thrikkakara Village Office Pokkuvaravu.
+                      Tailored <strong>Will drafting services in Kakkanad</strong> for tech leaders, software professionals, and Gulf investors owning apartments in DLF Riverside, Skyline, or Asset Homes. Includes full clauses for overseas tech stock (RSUs), startup equity, and Thrikkakara Village Office Pokkuvaravu.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1072,7 +1072,7 @@ export default function KochiLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Civil Station Complex, Kakkanad</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Direct assistance for gated apartment owners, fast PEARLS biometric slots, and independent witness arrangement.
+                        Direct help for gated apartment owners, fast PEARLS biometric slots, and independent witness arrangement.
                       </p>
                     </div>
                   </div>
@@ -1097,7 +1097,7 @@ export default function KochiLocationClient({ faqs }: Props) {
                     <div className="flex items-center justify-between gap-2">
                       <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-rose-50 text-[#C65378] border border-rose-100">
                         <MapPin className="w-3.5 h-3.5" />
-                        Prime Residential
+                        Prime Home
                       </span>
                       <span className="text-[11px] font-semibold text-slate-500 bg-slate-100 px-2.5 py-1 rounded-lg">
                         SRO Ernakulam
@@ -1110,13 +1110,13 @@ export default function KochiLocationClient({ faqs }: Props) {
 
                     <div className="flex flex-wrap gap-1.5 text-[11px] text-slate-600">
                       <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Panampilly Main Avenues</span>
-                      <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Girinagar Residential Colony</span>
+                      <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Girinagar Home Colony</span>
                       <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Kadavanthra Junction</span>
                       <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Gandhi Nagar &amp; Thevara</span>
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Elite <strong>Will drafting services in Panampilly Nagar</strong> and Kadavanthra for high-value independent villas, GCDA allotted plots, and prominent Syrian Christian estates. Codifies life-interest clauses for surviving spouses, doctor fitness certificates, and undivided shares to avoid litigation.
+                      Elite <strong>Will drafting services in Panampilly Nagar</strong> and Kadavanthra for high-value independent villas, GCDA allotted plots, and prominent Syrian Christian estates. Codifies life-interest clauses for surviving spouses, doctor fitness papers, and undivided shares to avoid court fights.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1125,7 +1125,7 @@ export default function KochiLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Ernakulam &amp; Tripunithura SROs</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Section 31 doorstep registration for senior citizens, GCDA title verification, and custom Christian inheritance drafting.
+                        Section 31 doorstep registration for senior citizens, GCDA title check, and custom Christian inheritance drafting.
                       </p>
                     </div>
                   </div>
@@ -1169,7 +1169,7 @@ export default function KochiLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Authoritative <strong>Will drafting services in Fort Kochi</strong> for colonial Portuguese/Dutch heritage bungalows, spice trade commercial godowns, and Anglo-Indian and Latin Catholic estates. Resolves intricate joint-ownership and prior-deed succession challenges under Kerala revenue norms.
+                      Authoritative <strong>Will drafting services in Fort Kochi</strong> for colonial Portuguese/Dutch heritage bungalows, spice trade shop godowns, and Anglo-Indian and Latin Catholic estates. Resolves intricate joint-ownership and prior-deed succession fights under Kerala revenue norms.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1184,7 +1184,7 @@ export default function KochiLocationClient({ faqs }: Props) {
                   </div>
 
                   <div className="pt-4 mt-4 border-t border-slate-100 flex items-center justify-between">
-                    <span className="text-xs font-bold text-slate-500">Heritage &amp; Commercial Assets</span>
+                    <span className="text-xs font-bold text-slate-500">Heritage &amp; Shop Assets</span>
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
@@ -1222,7 +1222,7 @@ export default function KochiLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Comprehensive <strong>Will drafting services in Tripunithura</strong> and Maradu for royal family heritage properties, backwater luxury apartments, and riverbank villas. Formulates strict non-dispute provisions and ensures hassle-free municipal property tax transfer.
+                      Full <strong>Will drafting services in Tripunithura</strong> and Maradu for royal family heritage assets, backwater luxury apartments, and riverbank villas. Formulates strict non-fight rules and ensures hassle-free municipal property tax transfer.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1231,13 +1231,13 @@ export default function KochiLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Hill Palace Road, Tripunithura</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Maradu waterfront apartment registration support, ancestral partition validation, and Hill Palace SRO token booking.
+                        Maradu waterfront apartment registration support, family split validation, and Hill Palace SRO token booking.
                       </p>
                     </div>
                   </div>
 
                   <div className="pt-4 mt-4 border-t border-slate-100 flex items-center justify-between">
-                    <span className="text-xs font-bold text-slate-500">Backwater &amp; Palace Properties</span>
+                    <span className="text-xs font-bold text-slate-500">Backwater &amp; Palace Assets</span>
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
@@ -1275,7 +1275,7 @@ export default function KochiLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Trusted <strong>Will drafting services in Aluva</strong> and Angamaly for large agricultural plantations, family Purayidom homesteads, and Gulf NRI residences along the Periyar. Integrates Thandapper land tax account numbers to secure immediate Village Office Pokkuvaravu.
+                      Trusted <strong>Will drafting services in Aluva</strong> and Angamaly for large farm plantations, family Purayidom homesteads, and Gulf NRI residences along the Periyar. Integrates Thandapper land tax account numbers to secure immediate Village Office Pokkuvaravu.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1284,7 +1284,7 @@ export default function KochiLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Mini Civil Station Aluva &amp; TB Road Angamaly</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Coordination for airport corridor landholdings, agricultural land bequests, and elderly doorstep execution.
+                        Coordination for airport corridor landholdings, farm land bequests, and elderly doorstep signing.
                       </p>
                     </div>
                   </div>
@@ -1317,7 +1317,7 @@ export default function KochiLocationClient({ faqs }: Props) {
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Registering your Will in Ernakulam follows a transparent online workflow managed by the Kerala Registration Department through the PEARLS portal.
-                  Here is the verified 5-step standard procedure:
+                  Here is the verified 5-step standard step:
                 </p>
               </div>
 
@@ -1345,7 +1345,7 @@ export default function KochiLocationClient({ faqs }: Props) {
                       Doctor Certificate
                     </h3>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Procure an MBBS medical certificate for testators aged 60+ confirming sound mental capacity and consciousness.
+                      Procure an MBBS medical paper for testators aged 60+ confirming sound mental capacity and consciousness.
                     </p>
                   </div>
                 </div>
@@ -1370,10 +1370,10 @@ export default function KochiLocationClient({ faqs }: Props) {
                       4
                     </span>
                     <h3 className="font-bold text-sm text-slate-900">
-                      Witness Verification
+                      Witness Check
                     </h3>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Visit the Sub-Registrar Office with two independent witnesses carrying original Aadhaar cards and passport photos.
+                      Visit the SRO office with two independent witnesses carrying original Aadhaar cards and passport photos.
                     </p>
                   </div>
                 </div>
@@ -1405,8 +1405,8 @@ export default function KochiLocationClient({ faqs }: Props) {
                   9. Section 31 Doorstep Registration for Kochi Seniors
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Senior citizens, ailing testators, or hospital-bound individuals in Kochi often find it exhausting to climb stairs at government offices or navigate busy queues.
-                  Under <strong>Section 31 of the Registration Act, 1908</strong>, the Sub-Registrar has the statutory discretion to attend a person&apos;s private residence or hospital room to conduct registration.
+                  Senior citizens, ailing testators, or hospital-bound people in Kochi often find it exhausting to climb stairs at government offices or navigate busy queues.
+                  Under <strong>Section 31 of the Registration Act, 1908</strong>, the Sub-Registrar has the legal discretion to attend a person&apos;s private residence or hospital room to conduct registration.
                 </p>
               </div>
 
@@ -1426,8 +1426,8 @@ export default function KochiLocationClient({ faqs }: Props) {
                   <div className="flex items-start gap-3 p-4 rounded-2xl bg-slate-50 border border-slate-100">
                     <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
                     <div>
-                      <strong className="text-slate-900 block">Commission Application</strong>
-                      <span className="text-slate-600">Our advocates submit the formal Section 31 commission petition before the jurisdictional Ernakulam Sub-Registrar.</span>
+                      <strong className="text-slate-900 block">Commission Form</strong>
+                      <span className="text-slate-600">Our lawyers submit the formal Section 31 commission petition before the jurisdictional Ernakulam Sub-Registrar.</span>
                     </div>
                   </div>
 
@@ -1461,7 +1461,7 @@ export default function KochiLocationClient({ faqs }: Props) {
                   10. Documents Checklist for Ernakulam Sub-Registrars
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Organize your necessary paperwork before heading to the Sub-Registrar office or booking your online token.
+                  Organize your necessary paperwork before heading to the SRO office or booking your online token.
                   You have completed <strong>{checkedCount} of {checklist.length}</strong> items:
                 </p>
               </div>
@@ -1512,7 +1512,7 @@ export default function KochiLocationClient({ faqs }: Props) {
                   11. Kochi Property Types: GCDA, Coastal Land &amp; Villas
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Succession procedures in Ernakulam depend significantly on the originating allotment and title category.
+                  Succession steps in Ernakulam depend significantly on the originating allotment and title category.
                   Here is how a Will operates across diverse Kochi property types:
                 </p>
               </div>
@@ -1526,7 +1526,7 @@ export default function KochiLocationClient({ faqs }: Props) {
                     Greater Cochin Authority Plots
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    GCDA and Goshree Islands Development Authority (GIDA) require a registered Will to re-allot residential plots in Panampilly Nagar or Marine Drive without requiring full legal heirship certificates.
+                    GCDA and Goshree Islands Development Authority (GIDA) require a registered Will to re-allot home plots in Panampilly Nagar or Marine Drive without requiring full legal heirship papers.
                   </p>
                 </div>
 
@@ -1538,7 +1538,7 @@ export default function KochiLocationClient({ faqs }: Props) {
                     High-Rise Societies &amp; Condos
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Common in Kakkanad, Maradu, and Marine Drive. Wills must explicitly define undivided impartible rights in the common land and car parking slots to prevent disputes with housing associations.
+                    Common in Kakkanad, Maradu, and Marine Drive. Wills must explicitly define undivided impartible rights in the common land and car parking slots to prevent fights with housing associations.
                   </p>
                 </div>
 
@@ -1547,10 +1547,10 @@ export default function KochiLocationClient({ faqs }: Props) {
                     Purayidom &amp; Plantations
                   </span>
                   <h3 className="font-bold text-base text-slate-900">
-                    Ancestral Compounds &amp; Rubber
+                    Family Compounds &amp; Rubber
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Ancestral family compounds across Aluva, Angamaly, and North Paravur require precise boundary schedules and Thandapper references to ensure seamless Pokkuvaravu at local Village Offices.
+                    Family family compounds across Aluva, Angamaly, and North Paravur require precise boundary schedules and Thandapper references to make sure seamless Pokkuvaravu at local Village Offices.
                   </p>
                 </div>
               </div>
@@ -1615,10 +1615,10 @@ export default function KochiLocationClient({ faqs }: Props) {
                   <span>PLANS &amp; PRICING</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  13. Transparent Will Packages &amp; Kochi Advocate Pricing
+                  13. Transparent Will Packages &amp; Kochi Lawyer Pricing
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Choose the level of legal assistance tailored to your family estate and cross-border NRI requirements in Kochi:
+                  Choose the level of legal help tailored to your family estate and cross-border NRI rules in Kochi:
                 </p>
               </div>
 
@@ -1636,7 +1636,7 @@ export default function KochiLocationClient({ faqs }: Props) {
                       ₹1,990
                     </div>
                     <p className="text-xs text-slate-600">
-                      Ideal for simple estates with residential flats, bank accounts, and mutual funds.
+                      Ideal for simple estates with home flats, bank accounts, and mutual funds.
                     </p>
                     <ul className="space-y-2.5 text-xs text-slate-700 pt-3 border-t border-slate-100">
                       <li className="flex items-center gap-2">
@@ -1645,7 +1645,7 @@ export default function KochiLocationClient({ faqs }: Props) {
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>Legally vetted statutory clauses</span>
+                        <span>Legally vetted legal clauses</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
@@ -1669,16 +1669,16 @@ export default function KochiLocationClient({ faqs }: Props) {
                   </div>
                   <div className="space-y-4">
                     <span className="text-xs font-bold uppercase tracking-wider text-[#C65378]">
-                      Comprehensive
+                      Full
                     </span>
                     <h3 className="font-extrabold text-xl text-slate-900">
-                      Advocate &amp; NRI Review
+                      Lawyer &amp; NRI Review
                     </h3>
                     <div className="text-3xl font-black text-slate-900">
                       ₹4,990
                     </div>
                     <p className="text-xs text-slate-600">
-                      Senior Kerala High Court advocate consultation for Christian succession, Gulf NRIs, and multiple properties.
+                      Senior Kerala High Court lawyer talk for Christian succession, Gulf NRIs, and multiple assets.
                     </p>
                     <ul className="space-y-2.5 text-xs text-slate-700 pt-3 border-t border-slate-100">
                       <li className="flex items-center gap-2">
@@ -1687,7 +1687,7 @@ export default function KochiLocationClient({ faqs }: Props) {
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>1-on-1 video call with senior advocate</span>
+                        <span>1-on-1 video call with senior lawyer</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
@@ -1703,7 +1703,7 @@ export default function KochiLocationClient({ faqs }: Props) {
                     href="/contact"
                     className="mt-6 w-full py-3 rounded-xl bg-[#C65378] text-white text-xs font-bold text-center hover:bg-[#a13c5d] transition-colors cursor-pointer"
                   >
-                    Book Advocate Call
+                    Book Lawyer Call
                   </a>
                 </div>
 
@@ -1720,7 +1720,7 @@ export default function KochiLocationClient({ faqs }: Props) {
                       ₹9,990
                     </div>
                     <p className="text-xs text-slate-600">
-                      Full end-to-end registration assistance at any of Ernakulam&apos;s Sub-Registrar offices.
+                      Full end-to-end registration help at any of Ernakulam&apos;s Sub-Registrar offices.
                     </p>
                     <ul className="space-y-2.5 text-xs text-slate-700 pt-3 border-t border-slate-100">
                       <li className="flex items-center gap-2">
@@ -1729,7 +1729,7 @@ export default function KochiLocationClient({ faqs }: Props) {
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>Advocate physically attends at Kerala SRO</span>
+                        <span>Lawyer physically attends at Kerala SRO</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
@@ -1762,7 +1762,7 @@ export default function KochiLocationClient({ faqs }: Props) {
                   14. Frequently Asked Questions: Kochi &amp; NRI Wills
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Straightforward answers to frequently asked legal questions regarding Will drafting and registration in Kochi and Kerala:
+                  Straightforward answers to often asked legal questions regarding Will drafting and registration in Kochi and Kerala:
                 </p>
               </div>
 
@@ -1804,7 +1804,7 @@ export default function KochiLocationClient({ faqs }: Props) {
                   <span>STATUTORY CITATIONS</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  15. Statutory References &amp; Kerala Registration Portals
+                  15. Legal References &amp; Kerala Registration Portals
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Our estate planning and drafting protocols strictly comply with codified Indian legislation and official Kerala government portals:
@@ -1857,7 +1857,7 @@ export default function KochiLocationClient({ faqs }: Props) {
               </h3>
               <p className="text-sm sm:text-base text-slate-200 max-w-2xl mx-auto leading-relaxed">
                 Do not leave your hard-earned Kochi real estate and NRI investments to lengthy revenue court delays.
-                Draft a legally binding Will online in minutes or consult our senior Kerala estate advocates.
+                Draft a legally binding Will online in minutes or consult our senior Kerala estate lawyers.
               </p>
               <div className="pt-3 flex flex-col sm:flex-row items-center justify-center gap-4">
                 <a
@@ -1871,7 +1871,7 @@ export default function KochiLocationClient({ faqs }: Props) {
                   href="/contact"
                   className="w-full sm:w-auto px-8 py-3.5 rounded-full bg-white/10 text-white font-bold text-sm sm:text-base hover:bg-white/15 transition-all border border-white/20"
                 >
-                  Schedule Advocate Consultation
+                  Schedule Lawyer Talk
                 </a>
               </div>
             </section>

@@ -124,19 +124,19 @@ const INITIAL_CHECKLIST = [
   },
   {
     id: "item-2",
-    label: "Original Aadhaar Card & PAN of Testator",
+    label: "Original Aadhaar Card & PAN of Will maker",
     detail: "Essential for biometric identity validation, electronic thumbprint, and digital photo capture at the SRO/ARA counter.",
     checked: true,
   },
   {
     id: "item-3",
     label: "Two Independent Adult Witnesses with Photo IDs",
-    detail: "Must carry original photo IDs and must not be beneficiaries receiving any legacy or bequest under the Will.",
+    detail: "Must carry original photo IDs and must not be heirs receiving any legacy or bequest under the Will.",
     checked: true,
   },
   {
     id: "item-4",
-    label: "Doctor Mental Fitness Certificate (MBBS / MD)",
+    label: "Doctor Sound Mind Note (MBBS / MD)",
     detail: "Strongly advised for senior citizens aged 60+. Certifies testamentary mental soundness and lucidity.",
     checked: false,
   },
@@ -148,14 +148,14 @@ const INITIAL_CHECKLIST = [
   },
   {
     id: "item-6",
-    label: "KMC Property Tax Receipts & Municipal Mutation Records",
-    detail: "Copy of Kolkata Municipal Corporation tax bills, society share certificates, or municipality assessment records.",
+    label: "KMC Property Tax Receipts & Municipal Name Change Records",
+    detail: "Copy of Kolkata Municipal Corporation tax bills, society share papers, or town office assessment records.",
     checked: false,
   },
   {
     id: "item-7",
     label: "Banglarbhumi RoR (Khatian / Parcha) for Rural Land",
-    detail: "Recent computerized land records for agricultural parcels or homesteads across West Bengal districts.",
+    detail: "Recent computerized land records for farm parcels or homesteads across West Bengal districts.",
     checked: false,
   },
 ];
@@ -346,7 +346,7 @@ export default function WestBengalLocationClient({ faqs }: Props) {
                 ₹0 Stamp Duty
               </span>
               <span className="text-[9px] min-[390px]:text-[10px] sm:text-xs font-bold uppercase tracking-wider text-[#55636D] mt-1 leading-tight">
-                100% Statutory Exemption
+                100% Legal Exemption
               </span>
             </div>
 
@@ -471,7 +471,7 @@ export default function WestBengalLocationClient({ faqs }: Props) {
                   <span>Dayabhaga Law Protected</span>
                 </div>
                 <p className="text-[11px] text-slate-500 leading-relaxed">
-                  Drafted by verified advocates in compliance with Calcutta High Court rules and West Bengal Registration Directorate.
+                  Drafted by verified lawyers in compliance with Calcutta High Court rules and West Bengal Registration Directorate.
                 </p>
                 <Link
                   href="/start"
@@ -506,8 +506,8 @@ export default function WestBengalLocationClient({ faqs }: Props) {
                     <h3>Key Legal Facts in West Bengal</h3>
                   </div>
                   <ul className="space-y-2 text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    <li>• <strong>Dayabhaga School:</strong> Testators enjoy total testamentary freedom over ancestral and self-acquired assets without coparcenary restrictions.</li>
-                    <li>• <strong>Dual Probate Rule:</strong> Section 213 ISA makes probate compulsory in Kolkata presidency town, but optional across remaining district jurisdictions.</li>
+                    <li>• <strong>Dayabhaga School:</strong> Testators enjoy total testamentary freedom over family and self-acquired assets without joint family restrictions.</li>
+                    <li>• <strong>Dual Probate Rule:</strong> Section 213 ISA makes probate needed in Kolkata presidency town, but optional across remaining district areas.</li>
                     <li>• <strong>100% Stamp Duty Exemption:</strong> Wills attract zero ad-valorem stamp duty across West Bengal; only nominal ₹100 registration fee applies.</li>
                     <li>• <strong>Online Token System:</strong> e-District portal (wbregistration.gov.in) enables slot booking across ARAs and Sub-Registrars.</li>
                   </ul>
@@ -516,12 +516,12 @@ export default function WestBengalLocationClient({ faqs }: Props) {
                 <div className="rounded-3xl p-6 bg-rose-50/50 border border-rose-100 shadow-xs space-y-3">
                   <div className="flex items-center gap-2.5 text-[#C65378] font-bold text-base">
                     <AlertTriangle className="w-5 h-5 text-[#C65378] shrink-0" />
-                    <h3>Risks of Dying Intestate in Bengal</h3>
+                    <h3>Risks of Dying Without a Will in Bengal</h3>
                   </div>
                   <ul className="space-y-2 text-xs sm:text-sm text-slate-700 leading-relaxed">
-                    <li>• <strong>Unwanted Fragmentation:</strong> Intestate death triggers equal distribution among Class I heirs, leading to gridlock over heritage family homes.</li>
-                    <li>• <strong>KMC Mutation Freezes:</strong> Kolkata Municipal Corporation blocks name substitution when conflicting legal heir claims emerge.</li>
-                    <li>• <strong>Salt Lake Lease Disputes:</strong> Urban Development Department leasehold transfers stall indefinitely without explicit testamentary bequest.</li>
+                    <li>• <strong>Unwanted Fragmentation:</strong> Without a Will death triggers equal split among Class I heirs, leading to gridlock over heritage family homes.</li>
+                    <li>• <strong>KMC Name Change Freezes:</strong> Kolkata Municipal Corporation blocks name substitution when conflicting legal heir claims emerge.</li>
+                    <li>• <strong>Salt Lake Lease Fights:</strong> Urban Development Department leasehold transfers stall indefinitely without explicit testamentary bequest.</li>
                     <li>• <strong>Succession Certificate Costs:</strong> District civil court succession suits consume 2 to 5 years with heavy legal expenses.</li>
                   </ul>
                 </div>
@@ -552,7 +552,7 @@ export default function WestBengalLocationClient({ faqs }: Props) {
                   The Dayabhaga Advantage: Absolute Testamentary Freedom
                 </h3>
                 <p>
-                  In the vast majority of India, Hindu property inheritance follows the <strong>Mitakshara School</strong>, where sons and daughters acquire an automatic coparcenary share by birth in ancestral property. Consequently, a parent under Mitakshara cannot easily will away ancestral coparcenary property without potential challenges from children.
+                  In the vast majority of India, Hindu property inheritance follows the <strong>Mitakshara School</strong>, where sons and daughters acquire an automatic joint family share by birth in family property. So, a parent under Mitakshara cannot easily will away family joint family property without potential fights from children.
                 </p>
                 <p>
                   In contrast, West Bengal historically adheres to the <strong>Dayabhaga School of Hindu Law</strong>. Under Dayabhaga principles:
@@ -560,7 +560,7 @@ export default function WestBengalLocationClient({ faqs }: Props) {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pt-2">
                   <div className="p-4 rounded-2xl bg-slate-50 border border-slate-100 space-y-2">
                     <span className="font-bold text-slate-900 block text-xs uppercase tracking-wider text-[#C65378]">
-                      No Birthright in Ancestral Assets
+                      No Birthright in Family Assets
                     </span>
                     <p className="text-xs text-slate-600 leading-relaxed">
                       Children do not acquire any ownership interest by birth. The father or titleholder maintains exclusive ownership and control during their entire lifetime.
@@ -571,7 +571,7 @@ export default function WestBengalLocationClient({ faqs }: Props) {
                       Complete Testamentary Right
                     </span>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      The property holder can bequeath both ancestral and self-acquired assets to any chosen person or charity through a Will, without requiring children&apos;s consent.
+                      The property holder can bequeath both family and self-acquired assets to any chosen person or charity through a Will, without requiring children&apos;s consent.
                     </p>
                   </div>
                 </div>
@@ -581,10 +581,10 @@ export default function WestBengalLocationClient({ faqs }: Props) {
                     Codified Statutes Governing West Bengal Wills:
                   </h4>
                   <ul className="space-y-1 text-xs text-slate-600">
-                    <li>• <strong>Indian Succession Act, 1925 (ISA):</strong> Sections 59 (testamentary capacity), 61 (freedom from coercion), 63 (mandatory attestation by two witnesses), and 213 (probate rules).</li>
+                    <li>• <strong>Indian Succession Act, 1925 (ISA):</strong> Sections 59 (sound mind), 61 (freedom from coercion), 63 (needed attestation by two witnesses), and 213 (probate rules).</li>
                     <li>• <strong>Registration Act, 1908:</strong> Section 18(e) (optional registration) and Section 31 (doorstep registration by special commission).</li>
-                    <li>• <strong>West Bengal Land Reforms Act, 1955:</strong> Sets ceiling limits and agricultural mutation procedures on the Banglarbhumi portal.</li>
-                    <li>• <strong>West Bengal Co-operative Societies Act, 2006:</strong> Governs share transfer procedures in housing societies.</li>
+                    <li>• <strong>West Bengal Land Reforms Act, 1955:</strong> Sets ceiling limits and farm name change steps on the Banglarbhumi portal.</li>
+                    <li>• <strong>West Bengal Co-operative Societies Act, 2006:</strong> Governs share transfer steps in housing societies.</li>
                   </ul>
                 </div>
               </div>
@@ -598,7 +598,7 @@ export default function WestBengalLocationClient({ faqs }: Props) {
                   <span>REGISTRATION STATUTE</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  2. Is Will Registration Mandatory Across West Bengal?
+                  2. Is Will Registration Needed Across West Bengal?
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Under Indian law, registration of a Will remains optional, but the strategic advantages of registering in West Bengal are immense:
@@ -616,7 +616,7 @@ export default function WestBengalLocationClient({ faqs }: Props) {
                   </thead>
                   <tbody className="divide-y divide-slate-100 text-slate-700">
                     <tr>
-                      <td className="p-4 font-semibold">Statutory Validity (Sec 18e)</td>
+                      <td className="p-4 font-semibold">Legal Validity (Sec 18e)</td>
                       <td className="p-4">Legally valid if signed by 2 witnesses</td>
                       <td className="p-4 text-emerald-700 font-bold">Valid with official government presumption</td>
                     </tr>
@@ -626,14 +626,14 @@ export default function WestBengalLocationClient({ faqs }: Props) {
                       <td className="p-4">Permanently archived in Book III SRO vault</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-semibold">KMC / Municipality Mutation</td>
+                      <td className="p-4 font-semibold">KMC / Municipality Name Change</td>
                       <td className="p-4">Frequently contested; lengthy scrutiny</td>
-                      <td className="p-4 font-bold text-slate-900">Accelerated mutation across municipal bodies</td>
+                      <td className="p-4 font-bold text-slate-900">Accelerated name change across municipal bodies</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-semibold">Evidentiary Value in Court</td>
-                      <td className="p-4">High burden to prove genuine execution</td>
-                      <td className="p-4 text-emerald-700 font-bold">Strong evidentiary presumption of sanity &amp; execution</td>
+                      <td className="p-4 font-semibold">Proof Value in Court</td>
+                      <td className="p-4">High burden to prove genuine signing</td>
+                      <td className="p-4 text-emerald-700 font-bold">Strong proof presumption of sanity &amp; signing</td>
                     </tr>
                     <tr>
                       <td className="p-4 font-semibold">Government Fee in WB</td>
@@ -647,7 +647,7 @@ export default function WestBengalLocationClient({ faqs }: Props) {
               <div className="p-4 rounded-2xl bg-amber-50/60 border border-amber-200/80 text-xs sm:text-sm text-amber-900 space-y-1.5">
                 <strong className="block font-bold">Legal Recommendation for West Bengal Residents:</strong>
                 <p>
-                  While unregistered Wills are technically valid under Section 18(e), property authorities such as Kolkata Municipal Corporation (KMC), Bidhannagar Municipality, and BL&amp;LRO offices subject unregistered Wills to strict inquiry. Registering your Will before an ARA or Sub-Registrar establishes undeniable official proof of execution.
+                  While unregistered Wills are technically valid under Section 18(e), property offices such as Kolkata Municipal Corporation (KMC), Bidhannagar Municipality, and BL&amp;LRO offices subject unregistered Wills to strict inquiry. Registering your Will before an ARA or Sub-Registrar establishes undeniable official proof of signing.
                 </p>
               </div>
             </section>
@@ -672,17 +672,17 @@ export default function WestBengalLocationClient({ faqs }: Props) {
                 <div className="rounded-3xl bg-white border-2 border-[#C65378]/30 p-6 shadow-xs space-y-4">
                   <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-rose-50 text-[#C65378] border border-rose-100">
                     <Building className="w-3.5 h-3.5" />
-                    Kolkata Presidency Town (Mandatory Probate)
+                    Kolkata Presidency Town (Needed Probate)
                   </div>
                   <h3 className="font-extrabold text-lg text-slate-900">
-                    Calcutta High Court OOCJ Jurisdiction
+                    Calcutta High Court OOCJ Area
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Under <strong>Section 213 read with Section 57(a) and 57(b) of the ISA</strong>, probate is <strong>legally compulsory</strong> for Wills executed by Hindus, Buddhists, Sikhs, and Jains where:
+                    Under <strong>Section 213 read with Section 57(a) and 57(b) of the ISA</strong>, probate is <strong>legally needed</strong> for Wills signed by Hindus, Buddhists, Sikhs, and Jains where:
                   </p>
                   <ul className="space-y-1.5 text-xs text-slate-600">
-                    <li>• The Will was executed within the historical presidency limits of Kolkata.</li>
-                    <li>• Immovable property bequeathed under the Will is situated within Kolkata municipal presidency limits.</li>
+                    <li>• The Will was signed within the historical presidency limits of Kolkata.</li>
+                    <li>• Land and flats bequeathed under the Will is situated within Kolkata municipal presidency limits.</li>
                   </ul>
                   <p className="text-xs text-slate-500">
                     Financial institutions, KMC, and registry offices in Kolkata will not transfer title without a Probate or Letters of Administration granted by the Calcutta High Court.
@@ -708,21 +708,21 @@ export default function WestBengalLocationClient({ faqs }: Props) {
                     All Districts Outside Kolkata Presidency
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    For properties situated outside Kolkata presidency town (such as Howrah, Paschim Bardhaman, Siliguri, Hooghly, North/South 24 Parganas districts, Murshidabad, and Medinipur), <strong>probate is NOT mandatory</strong> under Section 213.
+                    For assets situated outside Kolkata presidency town (such as Howrah, Paschim Bardhaman, Siliguri, Hooghly, North/South 24 Parganas districts, Murshidabad, and Medinipur), <strong>probate is NOT needed</strong> under Section 213.
                   </p>
                   <ul className="space-y-1.5 text-xs text-slate-600">
-                    <li>• A registered Will allows direct mutation with local municipal corporations and BL&amp;LRO offices.</li>
-                    <li>• Probate becomes necessary only if a disgruntled legal heir challenges the Will in a civil district court.</li>
+                    <li>• A registered Will allows direct name change with local municipal corporations and BL&amp;LRO offices.</li>
+                    <li>• Probate becomes necessary only if a disgruntled legal heir fights the Will in a civil district court.</li>
                   </ul>
                   <p className="text-xs text-slate-500">
-                    District judges possess testamentary jurisdiction under Section 264 ISA if a probate petition is filed voluntarily to silence future challenges.
+                    District judges possess testamentary area under Section 264 ISA if a probate petition is filed voluntarily to silence future fights.
                   </p>
                   <div className="pt-2">
                     <Link
                       href="/tools/probate-checker"
                       className="inline-flex items-center gap-1.5 text-xs font-bold text-slate-700 hover:text-slate-900 hover:underline"
                     >
-                      <span>Check Your Probate Requirement Online</span>
+                      <span>Check Your Probate Rule Online</span>
                       <ArrowRight className="w-3.5 h-3.5" />
                     </Link>
                   </div>
@@ -825,7 +825,7 @@ export default function WestBengalLocationClient({ faqs }: Props) {
                       href="/services/will-registration"
                       className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-[#C65378] text-white text-xs font-bold hover:bg-[#a13c5d] transition-colors"
                     >
-                      <span>Book SRO Assistance</span>
+                      <span>Book SRO Help</span>
                       <ArrowRight className="w-3.5 h-3.5" />
                     </Link>
                   </div>
@@ -844,7 +844,7 @@ export default function WestBengalLocationClient({ faqs }: Props) {
                   5. Regional Cities: Will Drafting in West Bengal
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Estate assets in West Bengal span high-value heritage mansions and modern condominiums in Kolkata, dense urban enclaves in Howrah, planned industrial townships in Asansol and Durgapur, tea gardens and tourism hubs in Siliguri, port assets in Haldia, and agricultural lands across Bardhaman and Murshidabad. Our legal team delivers customized legal drafting, wbregistration.gov.in appointment booking, and Sub-Registrar accompaniment across all key regional hubs:
+                  Estate assets in West Bengal span high-value heritage mansions and modern condominiums in Kolkata, dense urban enclaves in Howrah, planned industrial townships in Asansol and Durgapur, tea gardens and tourism hubs in Siliguri, port assets in Haldia, and farm lands across Bardhaman and Murshidabad. Our legal team delivers customized legal drafting, wbregistration.gov.in appointment booking, and Sub-Registrar accompaniment across all key regional hubs:
                 </p>
               </div>
 
@@ -876,7 +876,7 @@ export default function WestBengalLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Specialized <strong>Will drafting services in Kolkata</strong> covering luxury high-rises, heritage properties, and housing society apartments. Structures clear clauses addressing Calcutta High Court probate mandates under Section 213 ISA, KMC mutation compliance, and Salt Lake 99-year leasehold succession.
+                      Specialized <strong>Will drafting services in Kolkata</strong> covering luxury high-rises, heritage assets, and housing society apartments. Structures clear clauses addressing Calcutta High Court probate mandates under Section 213 ISA, KMC name change compliance, and Salt Lake 99-year leasehold succession.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -931,7 +931,7 @@ export default function WestBengalLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Customized <strong>Will drafting in Howrah</strong> and the historic Hooghly riverbank for commercial warehouses, foundry enterprises, and residential ancestral properties. Clarifies probate exemption outside Kolkata presidency limits for rapid Howrah Municipal Corporation mutation.
+                      Customized <strong>Will drafting in Howrah</strong> and the historic Hooghly riverbank for shop warehouses, foundry enterprises, and home family assets. Clarifies probate exemption outside Kolkata presidency limits for rapid Howrah Municipal Corporation name change.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -940,7 +940,7 @@ export default function WestBengalLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Howrah Collectorate &amp; Serampore Court</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Direct filing at Howrah DSR on MG Road, Serampore SRO, and home execution assistance across Shibpur and Liluah.
+                        Direct filing at Howrah DSR on MG Road, Serampore SRO, and home signing help across Shibpur and Liluah.
                       </p>
                     </div>
                   </div>
@@ -985,7 +985,7 @@ export default function WestBengalLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Legal Will drafting for commercial holdings, industrial machinery leases, residential plots, and mining transport fleets in Asansol Municipal Corporation (AMC) wards. Ensures seamless Asansol District Court probate exemption recognition.
+                      Legal Will drafting for shop holdings, industrial machinery leases, home plots, and mining transport fleets in Asansol Municipal Corporation (AMC) wards. Ensures seamless Asansol District Court probate exemption recognition.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -994,7 +994,7 @@ export default function WestBengalLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Asansol Court Compound, Court Road</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Fast-track appointment scheduling on wbregistration.gov.in and advocate verification at Asansol DSR counter.
+                        Fast-track appointment scheduling on wbregistration.gov.in and lawyer check at Asansol DSR counter.
                       </p>
                     </div>
                   </div>
@@ -1045,7 +1045,7 @@ export default function WestBengalLocationClient({ faqs }: Props) {
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
                       <div className="flex items-center gap-2 font-bold text-slate-900">
                         <Building className="w-3.5 h-3.5 text-[#C65378]" />
-                        <span>SRO Hub: City Centre Administrative Building</span>
+                        <span>SRO Hub: City Centre Office Building</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
                         Smooth biometric recording at Durgapur SRO, GRIPS e-payment, and Section 31 home visits for elderly pensioners.
@@ -1073,7 +1073,7 @@ export default function WestBengalLocationClient({ faqs }: Props) {
                     <div className="flex items-center justify-between gap-2">
                       <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-rose-50 text-[#C65378] border border-rose-100">
                         <MapPin className="w-3.5 h-3.5" />
-                        North Bengal Commercial Gateway
+                        North Bengal Shop Gateway
                       </span>
                       <span className="text-[11px] font-semibold text-slate-500 bg-slate-100 px-2.5 py-1 rounded-lg">
                         DSR Siliguri &amp; Darjeeling
@@ -1093,7 +1093,7 @@ export default function WestBengalLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Comprehensive <strong>Will drafting in Siliguri</strong> for commercial logistics hubs, retail complexes along Sevoke Road, tea estate interests, and residential properties. Ensures compliant Banglarbhumi land record updates across Darjeeling and Jalpaiguri.
+                      Full <strong>Will drafting in Siliguri</strong> for shop logistics hubs, retail complexes along Sevoke Road, tea estate interests, and home assets. Ensures compliant Banglarbhumi land record updates across Darjeeling and Jalpaiguri.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1102,7 +1102,7 @@ export default function WestBengalLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Siliguri Court Compound, Kutcheri Road</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Assistance with biometric appointments at Siliguri DSR and doorstep execution in Matigara and tea estate bungalows.
+                        Help with biometric appointments at Siliguri DSR and doorstep signing in Matigara and tea estate bungalows.
                       </p>
                     </div>
                   </div>
@@ -1147,7 +1147,7 @@ export default function WestBengalLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Estate planning for railway personnel, academic faculty, and port-adjacent commercial plot holders across Paschim and Purba Medinipur. Smooth transfer of railway colony private properties and commercial holdings.
+                      Estate planning for railway personnel, academic faculty, and port-adjacent shop plot holders across Paschim and Purba Medinipur. Smooth transfer of railway colony private assets and shop holdings.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1181,7 +1181,7 @@ export default function WestBengalLocationClient({ faqs }: Props) {
                     <div className="flex items-center justify-between gap-2">
                       <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-rose-50 text-[#C65378] border border-rose-100">
                         <MapPin className="w-3.5 h-3.5" />
-                        Agricultural Granary &amp; Heritage
+                        Farm Granary &amp; Heritage
                       </span>
                       <span className="text-[11px] font-semibold text-slate-500 bg-slate-100 px-2.5 py-1 rounded-lg">
                         DSR Purba Bardhaman
@@ -1201,7 +1201,7 @@ export default function WestBengalLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Agricultural estate planning for rice mill owners, ancestral farmland holders, and urban residential properties in Bardhaman town. Prevents fragmenting agricultural tracts and secures Banglarbhumi land mutation.
+                      Farm estate planning for rice mill owners, family farmland holders, and urban home assets in Bardhaman town. Prevents fragmenting farm tracts and secures Banglarbhumi land name change.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1210,7 +1210,7 @@ export default function WestBengalLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Bardhaman Collectorate Court Compound</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Appointment coordination at DSR Bardhaman and doorstep execution for senior agricultural estate holders.
+                        Appointment coordination at DSR Bardhaman and doorstep signing for senior farm estate holders.
                       </p>
                     </div>
                   </div>
@@ -1255,7 +1255,7 @@ export default function WestBengalLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Dedicated legal support for ancestral Rajbaris, silk trading businesses, mango orchard parcels, and residential properties across Murshidabad and Malda. Resolves multi-branch inheritance complexity under Dayabhaga law.
+                      Dedicated legal support for family Rajbaris, silk trading businesses, mango orchard parcels, and home assets across Murshidabad and Malda. Resolves multi-branch inheritance complexity under Dayabhaga law.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1264,7 +1264,7 @@ export default function WestBengalLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Berhampore Court &amp; Malda Collectorate</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        End-to-end token generation on wbregistration.gov.in and advocate verification at Berhampore DSR.
+                        End-to-end token generation on wbregistration.gov.in and lawyer check at Berhampore DSR.
                       </p>
                     </div>
                   </div>
@@ -1296,7 +1296,7 @@ export default function WestBengalLocationClient({ faqs }: Props) {
                   6. Step-by-Step SOP: Will Drafting to WB Registration
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Follow this verified 5-stage legal operating procedure to draft, execute, and register your Will in West Bengal:
+                  Follow this verified 5-stage legal operating step to draft, execute, and register your Will in West Bengal:
                 </p>
               </div>
 
@@ -1321,7 +1321,7 @@ export default function WestBengalLocationClient({ faqs }: Props) {
                       2
                     </span>
                     <h3 className="font-bold text-sm text-slate-900">
-                      Advocate Drafting
+                      Lawyer Drafting
                     </h3>
                     <p className="text-xs text-slate-600 leading-relaxed">
                       Draft customized legal clauses reflecting Dayabhaga freedom, survivorship, executor powers, and minor guardian appointments.
@@ -1335,10 +1335,10 @@ export default function WestBengalLocationClient({ faqs }: Props) {
                       3
                     </span>
                     <h3 className="font-bold text-sm text-slate-900">
-                      Valid Execution
+                      Valid Signing
                     </h3>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Print on A4 paper and sign each page in the physical presence of two independent non-beneficiary adult witnesses.
+                      Print on A4 paper and sign each page in the physical presence of two independent non-heir adult witnesses.
                     </p>
                   </div>
                 </div>
@@ -1404,15 +1404,15 @@ export default function WestBengalLocationClient({ faqs }: Props) {
                   <div className="flex items-start gap-3 p-4 rounded-2xl bg-slate-50 border border-slate-100">
                     <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
                     <div>
-                      <strong className="text-slate-900 block">Commission Application</strong>
-                      <span className="text-slate-600">Our legal advocates draft and submit the formal Section 31 special commission petition before the jurisdictional ARA or Sub-Registrar.</span>
+                      <strong className="text-slate-900 block">Commission Form</strong>
+                      <span className="text-slate-600">Our legal lawyers draft and submit the formal Section 31 special commission petition before the jurisdictional ARA or Sub-Registrar.</span>
                     </div>
                   </div>
 
                   <div className="flex items-start gap-3 p-4 rounded-2xl bg-slate-50 border border-slate-100">
                     <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
                     <div>
-                      <strong className="text-slate-900 block">Statutory Commission Fee</strong>
+                      <strong className="text-slate-900 block">Legal Commission Fee</strong>
                       <span className="text-slate-600">A nominal government commissioner fee is paid through the GRIPS portal to schedule the official officer home visit.</span>
                     </div>
                   </div>
@@ -1439,7 +1439,7 @@ export default function WestBengalLocationClient({ faqs }: Props) {
                   8. Document Checklist for West Bengal Registration Offices
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Prepare your documentation before scheduling your Sub-Registrar appointment. You have organized <strong>{checkedCount} of {checklist.length}</strong> required documents:
+                  Prepare your papers before scheduling your Sub-Registrar appointment. You have organized <strong>{checkedCount} of {checklist.length}</strong> required documents:
                 </p>
               </div>
 
@@ -1487,7 +1487,7 @@ export default function WestBengalLocationClient({ faqs }: Props) {
                   9. Asset Classes &amp; Succession Rules Across West Bengal
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Succession procedures in West Bengal depend substantially on the nature of property title and regulatory authority:
+                  Succession steps in West Bengal depend substantially on the nature of property title and regulatory authority:
                 </p>
               </div>
 
@@ -1500,19 +1500,19 @@ export default function WestBengalLocationClient({ faqs }: Props) {
                     KMC &amp; Housing Societies
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Under the West Bengal Co-operative Societies Act, a society nominee acts as a trustee. True ownership passes through a Will. For flats inside Kolkata presidency limits, a Calcutta High Court probate grant is submitted alongside the KMC Form A mutation petition.
+                    Under the West Bengal Co-operative Societies Act, a society nominee acts as a trustee. True ownership passes through a Will. For flats inside Kolkata presidency limits, a Calcutta High Court probate grant is submitted alongside the KMC Form A name change petition.
                   </p>
                 </div>
 
                 <div className="bg-white rounded-3xl border border-slate-200/90 p-6 shadow-xs space-y-3">
                   <span className="px-3 py-1 rounded-full bg-amber-100 text-amber-800 text-xs font-bold uppercase">
-                    Agricultural &amp; Rural Lands
+                    Farm &amp; Rural Lands
                   </span>
                   <h3 className="font-bold text-base text-slate-900">
                     Banglarbhumi RoR (Parcha)
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Farmland parcels and rural homesteads in Purba Bardhaman, Nadia, or Hooghly require careful drafting to respect land ceilings. The beneficiary submits the registered Will to the local BL&amp;LRO to update the Khatian on banglarbhumi.gov.in.
+                    Farmland parcels and rural homesteads in Purba Bardhaman, Nadia, or Hooghly require careful drafting to respect land ceilings. The heir submits the registered Will to the local BL&amp;LRO to update the Khatian on banglarbhumi.gov.in.
                   </p>
                 </div>
 
@@ -1524,7 +1524,7 @@ export default function WestBengalLocationClient({ faqs }: Props) {
                     Salt Lake &amp; New Town Plots
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Residential plots leased by the Urban Development Department in Salt Lake (Bidhannagar) or WBHIDCO in New Town demand explicit testamentary bequest. Fresh lease substitution deeds are executed upon submission of testamentary proof.
+                    Home plots leased by the Urban Development Department in Salt Lake (Bidhannagar) or WBHIDCO in New Town demand explicit testamentary bequest. Fresh lease substitution deeds are signed upon submission of testamentary proof.
                   </p>
                 </div>
               </div>
@@ -1541,7 +1541,7 @@ export default function WestBengalLocationClient({ faqs }: Props) {
                   10. Registration Fees &amp; Stamp Duty in West Bengal
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Unlike commercial property sales that incur 5% to 7% stamp duty in West Bengal, testamentary Wills are completely exempt from stamp duty. Government charges at ARAs and Sub-Registrar offices are purely nominal:
+                  Unlike shop property sales that incur 5% to 7% stamp duty in West Bengal, testamentary Wills are completely exempt from stamp duty. Government charges at ARAs and Sub-Registrar offices are purely nominal:
                 </p>
               </div>
 
@@ -1550,7 +1550,7 @@ export default function WestBengalLocationClient({ faqs }: Props) {
                   <thead>
                     <tr className="bg-slate-100/80 border-b border-slate-200 text-slate-800">
                       <th className="p-4 font-bold">Fee Component</th>
-                      <th className="p-4 font-bold">Statutory Amount</th>
+                      <th className="p-4 font-bold">Legal Amount</th>
                       <th className="p-4 font-bold">Remittance Authority</th>
                     </tr>
                   </thead>
@@ -1562,7 +1562,7 @@ export default function WestBengalLocationClient({ faqs }: Props) {
                     </tr>
                     <tr>
                       <td className="p-4 font-semibold">SRO Book III Registration Fee</td>
-                      <td className="p-4 font-bold text-[#C65378]">₹100 (Flat Statutory Fee)</td>
+                      <td className="p-4 font-bold text-[#C65378]">₹100 (Flat Legal Fee)</td>
                       <td className="p-4">Directorate of Registration via GRIPS</td>
                     </tr>
                     <tr>
@@ -1591,7 +1591,7 @@ export default function WestBengalLocationClient({ faqs }: Props) {
                   11. Transparent Pricing Plans for West Bengal Wills
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Choose the legal assistance package tailored to your family&apos;s estate planning and property portfolio in West Bengal:
+                  Choose the legal help package tailored to your family&apos;s estate planning and property portfolio in West Bengal:
                 </p>
               </div>
 
@@ -1618,11 +1618,11 @@ export default function WestBengalLocationClient({ faqs }: Props) {
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>Dayabhaga compliant statutory clauses</span>
+                        <span>Dayabhaga compliant legal clauses</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>Instant PDF download &amp; execution guide</span>
+                        <span>Instant PDF download &amp; signing guide</span>
                       </li>
                     </ul>
                   </div>
@@ -1642,16 +1642,16 @@ export default function WestBengalLocationClient({ faqs }: Props) {
                   </div>
                   <div className="space-y-4">
                     <span className="text-xs font-bold uppercase tracking-wider text-[#C65378]">
-                      Comprehensive
+                      Full
                     </span>
                     <h3 className="font-extrabold text-xl text-slate-900">
-                      Advocate Consultation
+                      Lawyer Talk
                     </h3>
                     <div className="text-3xl font-black text-slate-900">
                       ₹4,990
                     </div>
                     <p className="text-xs text-slate-600">
-                      Senior estate advocate review for KMC flats, Salt Lake leaseholds, and Calcutta High Court probate evaluation.
+                      Senior estate lawyer review for KMC flats, Salt Lake leaseholds, and Calcutta High Court probate evaluation.
                     </p>
                     <ul className="space-y-2.5 text-xs text-slate-700 pt-3 border-t border-slate-100">
                       <li className="flex items-center gap-2">
@@ -1660,7 +1660,7 @@ export default function WestBengalLocationClient({ faqs }: Props) {
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>1-on-1 video call with senior advocate</span>
+                        <span>1-on-1 video call with senior lawyer</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
@@ -1676,7 +1676,7 @@ export default function WestBengalLocationClient({ faqs }: Props) {
                     href="/contact"
                     className="mt-6 w-full py-3 rounded-xl bg-[#C65378] text-white text-xs font-bold text-center hover:bg-[#a13c5d] transition-colors cursor-pointer"
                   >
-                    Book Advocate Call
+                    Book Lawyer Call
                   </a>
                 </div>
 
@@ -1693,7 +1693,7 @@ export default function WestBengalLocationClient({ faqs }: Props) {
                       ₹9,990
                     </div>
                     <p className="text-xs text-slate-600">
-                      End-to-end registration coordination across ARA Kolkata or any West Bengal District Sub-Registrar Office.
+                      End-to-end registration coordination across ARA Kolkata or any West Bengal District SRO office.
                     </p>
                     <ul className="space-y-2.5 text-xs text-slate-700 pt-3 border-t border-slate-100">
                       <li className="flex items-center gap-2">
@@ -1702,7 +1702,7 @@ export default function WestBengalLocationClient({ faqs }: Props) {
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>Advocate physically attends SRO / ARA</span>
+                        <span>Lawyer physically attends SRO / ARA</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
@@ -1776,7 +1776,7 @@ export default function WestBengalLocationClient({ faqs }: Props) {
                   <span>STATUTORY CITATIONS</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  13. Statutory Citations &amp; West Bengal Legal Portals
+                  13. Legal Citations &amp; West Bengal Legal Portals
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Our estate drafting complies strictly with codified Indian statutes and West Bengal registration systems:
@@ -1789,7 +1789,7 @@ export default function WestBengalLocationClient({ faqs }: Props) {
                     Indian Succession Act 1925
                   </span>
                   <p className="text-xs text-slate-600">
-                    Sections 59, 63, and Section 213 (Calcutta Presidency Mandatory Probate Mandate).
+                    Sections 59, 63, and Section 213 (Calcutta Presidency Needed Probate Mandate).
                   </p>
                 </div>
 
@@ -1825,10 +1825,10 @@ export default function WestBengalLocationClient({ faqs }: Props) {
             {/* BOTTOM CONVERSION CTA BANNER */}
             <section className="rounded-3xl bg-gradient-to-br from-[#172228] to-[#212F35] text-white p-8 sm:p-12 text-center space-y-5 shadow-xl">
               <h3 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-white">
-                Protect Your West Bengal Properties &amp; Family Legacy
+                Protect Your West Bengal Assets &amp; Family Legacy
               </h3>
               <p className="text-sm sm:text-base text-slate-200 max-w-2xl mx-auto leading-relaxed">
-                Do not leave your hard-earned West Bengal apartments, business enterprises, or ancestral lands to inheritance disputes. Draft a legally binding Will online today or consult our senior Calcutta High Court advocates.
+                Do not leave your hard-earned West Bengal apartments, business enterprises, or family lands to inheritance fights. Draft a legally binding Will online today or consult our senior Calcutta High Court lawyers.
               </p>
               <div className="pt-3 flex flex-col sm:flex-row items-center justify-center gap-4">
                 <a
@@ -1842,7 +1842,7 @@ export default function WestBengalLocationClient({ faqs }: Props) {
                   href="/contact"
                   className="w-full sm:w-auto px-6 py-3.5 rounded-full bg-white/10 text-white font-bold text-sm sm:text-base hover:bg-white/20 transition-all border border-white/20"
                 >
-                  Book Advocate Consultation
+                  Book Lawyer Talk
                 </a>
               </div>
             </section>

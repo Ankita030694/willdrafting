@@ -140,8 +140,8 @@ const INITIAL_CHECKLIST = [
   },
   {
     id: "item-2",
-    label: "Original Aadhaar Card & PAN of Testator",
-    detail: "Mandatory for biometric identity validation, digital photo capture, and official thumbprint at the SRO counter.",
+    label: "Original Aadhaar Card & PAN of Will maker",
+    detail: "Needed for biometric identity validation, digital photo capture, and official thumbprint at the SRO counter.",
     checked: true,
   },
   {
@@ -152,8 +152,8 @@ const INITIAL_CHECKLIST = [
   },
   {
     id: "item-4",
-    label: "Doctor Mental Fitness Certificate (MBBS / MD)",
-    detail: "Advised for senior testators aged 60+. Certifies sound mind, memory, and full testamentary capacity.",
+    label: "Doctor Sound Mind Note (MBBS / MD)",
+    detail: "Advised for senior testators aged 60+. Certifies sound mind, memory, and full sound mind.",
     checked: false,
   },
   {
@@ -164,14 +164,14 @@ const INITIAL_CHECKLIST = [
   },
   {
     id: "item-6",
-    label: "Municipal Property Tax Receipts (Puducherry / Oulgaret)",
+    label: "City House Tax Receipts (Puducherry / Oulgaret)",
     detail: "Recent property tax assessment receipts confirming municipal assessment numbers and door addresses.",
     checked: false,
   },
   {
     id: "item-7",
     label: "Patta / Chitta & Registered Title Deeds",
-    detail: "Computerized revenue records from Nilamagal portal and original sale or partition deeds for all assets.",
+    detail: "Computerized revenue records from Nilamagal portal and original sale or split deeds for all assets.",
     checked: false,
   },
 ];
@@ -292,7 +292,7 @@ export default function PuducherryLocationClient({ faqs }: Props) {
               <div className="pt-4 grid grid-cols-3 gap-3 border-t border-white/10 text-xs text-slate-300">
                 <div className="flex items-center gap-2">
                   <Check className="w-4 h-4 text-emerald-400 shrink-0" />
-                  <span>Madras HC Jurisdiction</span>
+                  <span>Madras HC Area</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <Check className="w-4 h-4 text-emerald-400 shrink-0" />
@@ -526,17 +526,17 @@ export default function PuducherryLocationClient({ faqs }: Props) {
                       <span>Optional Registration</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Will registration is optional under Section 18(e). Registering in Book III at a Puducherry SRO prevents property litigation.
+                      Will registration is optional under Section 18(e). Registering in Book III at a Puducherry SRO prevents property court fights.
                     </p>
                   </div>
 
                   <div className="p-4 rounded-2xl bg-slate-50/70 border border-slate-100 space-y-1.5">
                     <div className="flex items-center gap-2 font-bold text-sm text-slate-900">
                       <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
-                      <span>Probate Is Not Mandatory</span>
+                      <span>Probate Is Not Needed</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Puducherry lies outside the Chennai presidency town limits. Under Section 213 of the ISA, probate is non-mandatory.
+                      Puducherry lies outside the Chennai presidency town limits. Under Section 213 of the ISA, probate is non-needed.
                     </p>
                   </div>
 
@@ -546,7 +546,7 @@ export default function PuducherryLocationClient({ faqs }: Props) {
                       <span>Section 31 Doorstep SRO Visits</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Seniors and bedridden testators can book a doorstep SRO visit. A basic doctor fitness certificate is all that is required.
+                      Seniors and bedridden testators can book a doorstep SRO visit. A basic doctor fitness paper is all that is required.
                     </p>
                   </div>
                 </div>
@@ -605,7 +605,7 @@ export default function PuducherryLocationClient({ faqs }: Props) {
                   <div className="p-3 rounded-xl bg-emerald-50/70 border border-emerald-200/60 text-xs text-emerald-900 space-y-1">
                     <span className="font-bold block">Absolute Testamentary Freedom:</span>
                     <span>
-                      General citizens enjoy complete freedom to bequeath self-acquired properties, bank deposits, and shares to any chosen heir without mandatory family reservations.
+                      General citizens enjoy complete freedom to bequeath self-acquired assets, bank deposits, and shares to any chosen heir without needed family reservations.
                     </span>
                   </div>
                 </div>
@@ -642,10 +642,10 @@ export default function PuducherryLocationClient({ faqs }: Props) {
                       <tr>
                         <td className="p-3.5 sm:p-4 font-semibold text-slate-900">Disinheriting Children</td>
                         <td className="p-3.5 sm:p-4">Legally void; children can claim reserve share</td>
-                        <td className="p-3.5 sm:p-4">Permissible for self-acquired properties</td>
+                        <td className="p-3.5 sm:p-4">Permissible for self-acquired assets</td>
                       </tr>
                       <tr>
-                        <td className="p-3.5 sm:p-4 font-semibold text-slate-900">Witness Requirement</td>
+                        <td className="p-3.5 sm:p-4 font-semibold text-slate-900">Witness Rule</td>
                         <td className="p-3.5 sm:p-4">Two adult witnesses or notarial act</td>
                         <td className="p-3.5 sm:p-4">Two neutral non-heir witnesses</td>
                       </tr>
@@ -669,7 +669,7 @@ export default function PuducherryLocationClient({ faqs }: Props) {
                 </div>
                 {/* H2 <= 70 chars (48 chars) */}
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  2. Is Will Registration Mandatory in Puducherry?
+                  2. Is Will Registration Needed in Puducherry?
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Under Section 18(e) of the Registration Act, 1908, registering a Will is optional in Puducherry. A Will on plain paper is valid if signed before two neutral witnesses.
@@ -685,7 +685,7 @@ export default function PuducherryLocationClient({ faqs }: Props) {
                   <ul className="space-y-2 text-xs sm:text-sm text-slate-600">
                     <li className="flex items-start gap-2">
                       <span className="w-1.5 h-1.5 rounded-full bg-rose-500 mt-2 shrink-0" />
-                      <span>Subject to forgery and suspicious circumstance challenges in local courts.</span>
+                      <span>Subject to forgery and suspicious circumstance fights in local courts.</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="w-1.5 h-1.5 rounded-full bg-rose-500 mt-2 shrink-0" />
@@ -710,11 +710,11 @@ export default function PuducherryLocationClient({ faqs }: Props) {
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 mt-2 shrink-0" />
-                      <span>Biometric thumbprints and digital photographs confirm the testator's direct presence.</span>
+                      <span>Biometric thumbprints and digital photographs confirm the Will maker's direct presence.</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 mt-2 shrink-0" />
-                      <span>Enables seamless Patta and municipal tax mutation on the Nilamagal portal.</span>
+                      <span>Enables seamless Patta and municipal tax name change on the Nilamagal portal.</span>
                     </li>
                   </ul>
                 </div>
@@ -747,7 +747,7 @@ export default function PuducherryLocationClient({ faqs }: Props) {
                       Why Probate Is Strictly Optional in Puducherry
                     </h3>
                     <p className="text-xs text-slate-500">
-                      Territorial boundaries of Ordinary Original Civil Jurisdiction (OOCJ)
+                      Territorial boundaries of Ordinary Original Civil Area (OOCJ)
                     </p>
                   </div>
                 </div>
@@ -760,13 +760,13 @@ export default function PuducherryLocationClient({ faqs }: Props) {
                   <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1">
                     <span className="font-bold text-slate-900 block">General Transfer Route:</span>
                     <span className="text-slate-600">
-                      Heirs submit the death certificate, registered Will copy, and legal heir statement to municipal and revenue authorities directly.
+                      Heirs submit the death paper, registered Will copy, and legal heir statement to municipal and revenue offices directly.
                     </span>
                   </div>
                   <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1">
                     <span className="font-bold text-slate-900 block">When Probate Helps:</span>
                     <span className="text-slate-600">
-                      Advised if family members launch contentious civil disputes or if substantial overseas banking assets are involved.
+                      Advised if family members launch contentious civil fights or if substantial overseas banking assets are involved.
                     </span>
                   </div>
                 </div>
@@ -926,7 +926,7 @@ export default function PuducherryLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Specialized <strong>Will drafting in White Town</strong> for high-value colonial villas, French heritage mansions, and commercial boutiques. Accommodates French Civil Code reserve quotas for Renonçants families, multi-owner shared party walls, and heritage covenants.
+                      Specialized <strong>Will drafting in White Town</strong> for high-value colonial villas, French heritage mansions, and shop boutiques. Accommodates French Civil Code reserve quotas for Renonçants families, multi-owner shared party walls, and heritage covenants.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -935,7 +935,7 @@ export default function PuducherryLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Saram, Villianur Main Road</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Registration at SRO Puducherry, advocate support, and Section 31 home visits for senior residents.
+                        Registration at SRO Puducherry, lawyer support, and Section 31 home visits for senior residents.
                       </p>
                     </div>
                   </div>
@@ -979,7 +979,7 @@ export default function PuducherryLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Complete <strong>Will drafting in Oulgaret</strong> and Lawspet for modern multi-storey apartments, neutral row houses, and plotted layouts. Formulates clear bequest shares, smooth Oulgaret municipal property tax mutation, and bank deposit nominations.
+                      Complete <strong>Will drafting in Oulgaret</strong> and Lawspet for modern multi-storey apartments, neutral row houses, and plotted layouts. Formulates clear bequest shares, smooth Oulgaret municipal property tax name change, and bank deposit nominations.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -988,7 +988,7 @@ export default function PuducherryLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Jawahar Nagar, Boomianpet</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Book III registration, advocate check, and swift municipal mutation compliance.
+                        Book III registration, lawyer check, and swift municipal name change compliance.
                       </p>
                     </div>
                   </div>
@@ -1032,7 +1032,7 @@ export default function PuducherryLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Customized <strong>Will drafting in Villianur</strong> for traditional family residences, commercial shops, and industrial plots in the Sedarapet PIPDIC zone. Resolves ancestral joint family questions and structures business succession seamlessly.
+                      Customized <strong>Will drafting in Villianur</strong> for traditional family residences, shop shops, and industrial plots in the Sedarapet PIPDIC zone. Resolves family joint family questions and structures business succession seamlessly.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1041,13 +1041,13 @@ export default function PuducherryLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Sub-Taluk Office Road, Villianur</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        PIPDIC lease transfer clauses, agricultural survey record check, and SRO registration.
+                        PIPDIC lease transfer clauses, farm survey record check, and SRO registration.
                       </p>
                     </div>
                   </div>
 
                   <div className="pt-4 mt-4 border-t border-slate-100 flex items-center justify-between">
-                    <span className="text-xs font-bold text-slate-500">Commercial &amp; Industrial</span>
+                    <span className="text-xs font-bold text-slate-500">Shop &amp; Industrial</span>
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
@@ -1085,7 +1085,7 @@ export default function PuducherryLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Tailored <strong>Will drafting in Ariyankuppam</strong> and Nonankuppam for coastal residences, tourism properties, and coconut plantations near Chunnambar. Establishes legal certainty for family heirs, preventing title clouds and partition disputes.
+                      Tailored <strong>Will drafting in Ariyankuppam</strong> and Nonankuppam for coastal residences, tourism assets, and coconut plantations near Chunnambar. Establishes legal certainty for family heirs, preventing title clouds and split fights.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1138,7 +1138,7 @@ export default function PuducherryLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Specialized <strong>Will drafting in Bahour</strong> for agricultural wetlands, lake basin paddy farms, and village ancestral holdings. Enables direct mutation in Directorate of Survey records and Nilamagal patta updates after the testator's demise.
+                      Specialized <strong>Will drafting in Bahour</strong> for farm wetlands, lake basin paddy farms, and village family holdings. Enables direct name change in Directorate of Survey records and Nilamagal patta updates after the Will maker's demise.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1147,7 +1147,7 @@ export default function PuducherryLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Main Road, Near Bus Stand, Bahour</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Revenue patta chitta mapping, ancestral partition check, and SRO Bahour booking.
+                        Revenue patta chitta mapping, family split check, and SRO Bahour booking.
                       </p>
                     </div>
                   </div>
@@ -1191,7 +1191,7 @@ export default function PuducherryLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Expert <strong>Will drafting in Karaikal</strong> for port logistics warehouses, commercial temple properties in Thirunallar, and fertile Cauvery delta farmlands. Protects family inheritances from regional boundary disputes with Tamil Nadu.
+                      Expert <strong>Will drafting in Karaikal</strong> for port logistics warehouses, shop temple assets in Thirunallar, and fertile Cauvery delta farmlands. Protects family inheritances from regional boundary fights with Tamil Nadu.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1253,7 +1253,7 @@ export default function PuducherryLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Civil Station Complex, Mahe</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Registration at Civil Station Mahe, NRI estate planning, and doorstep execution for elderly residents.
+                        Registration at Civil Station Mahe, NRI estate planning, and doorstep signing for elderly residents.
                       </p>
                     </div>
                   </div>
@@ -1297,7 +1297,7 @@ export default function PuducherryLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Complete <strong>Will drafting in Yanam</strong> for Godavari riverfront commercial properties, aquaculture farms, and ancestral residential homes enclosed within Andhra Pradesh. Resolves bilingual succession nuances cleanly.
+                      Complete <strong>Will drafting in Yanam</strong> for Godavari riverfront shop assets, aquaculture farms, and family home homes enclosed within Andhra Pradesh. Resolves bilingual succession nuances cleanly.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1312,7 +1312,7 @@ export default function PuducherryLocationClient({ faqs }: Props) {
                   </div>
 
                   <div className="pt-4 mt-4 border-t border-slate-100 flex items-center justify-between">
-                    <span className="text-xs font-bold text-slate-500">Delta Plots &amp; Commercial</span>
+                    <span className="text-xs font-bold text-slate-500">Delta Plots &amp; Shop</span>
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
@@ -1354,7 +1354,7 @@ export default function PuducherryLocationClient({ faqs }: Props) {
                       Succession Regime Audit &amp; Asset Inventory
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Establish whether you fall under the French Civil Code (Renonçant status) or the Indian Succession Act. Compile all assets including residential homes in White Town or Oulgaret, farmlands, bank accounts, and gold jewelry.
+                      Establish whether you fall under the French Civil Code (Renonçant status) or the Indian Succession Act. Compile all assets including home homes in White Town or Oulgaret, farmlands, bank accounts, and gold jewelry.
                     </p>
                   </div>
                 </div>
@@ -1369,7 +1369,7 @@ export default function PuducherryLocationClient({ faqs }: Props) {
                       Draft Customized Legal Clauses
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Include legal clauses defining specific bequests, residuary clauses, executor appointments, and guardian choices for minor children. For Renonçants, ensure gifts stay strictly within the disposable quota.
+                      Include legal clauses defining specific bequests, residuary clauses, executor appointments, and guardian choices for minor children. For Renonçants, make sure gifts stay strictly within the disposable quota.
                     </p>
                   </div>
                 </div>
@@ -1384,7 +1384,7 @@ export default function PuducherryLocationClient({ faqs }: Props) {
                       Physical Signing Before Two Neutral Witnesses
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Print the final draft on white A4 paper. The testator and two neutral adult witnesses who are not heirs sign every page together under Section 63 of the Indian Succession Act.
+                      Print the final draft on white A4 paper. The Will maker and two neutral adult witnesses who are not heirs sign every page together under Section 63 of the Indian Succession Act.
                     </p>
                   </div>
                 </div>
@@ -1396,10 +1396,10 @@ export default function PuducherryLocationClient({ faqs }: Props) {
                   </div>
                   <div className="space-y-1.5 flex-1">
                     <h3 className="font-extrabold text-base text-slate-900">
-                      Sub-Registrar Office Slot Scheduling
+                      SRO office Slot Scheduling
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Schedule your appointment at the jurisdictional Sub-Registrar Office in Puducherry, Oulgaret, Villianur, Bahour, Karaikal, Mahe, or Yanam. Pay the nominal government registration fee online or at the treasury counter.
+                      Schedule your appointment at the jurisdictional SRO office in Puducherry, Oulgaret, Villianur, Bahour, Karaikal, Mahe, or Yanam. Pay the nominal government registration fee online or at the treasury counter.
                     </p>
                   </div>
                 </div>
@@ -1414,7 +1414,7 @@ export default function PuducherryLocationClient({ faqs }: Props) {
                       Biometric Attestation &amp; Book III Storage
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Visit the SRO with your two attesting witnesses. Complete verbal confirmation, digital photographs, and biometric thumb impressions. The Sub-Registrar archives the original Will in Book III government custody and issues your registered copy.
+                      Visit the SRO with your two witnesses. Complete verbal confirmation, digital photographs, and biometric thumb impressions. The Sub-Registrar archives the original Will in Book III government custody and issues your registered copy.
                     </p>
                   </div>
                 </div>
@@ -1456,13 +1456,13 @@ export default function PuducherryLocationClient({ faqs }: Props) {
                   <div className="p-3.5 rounded-2xl bg-slate-50 border border-slate-100 space-y-1">
                     <span className="font-bold text-slate-900 block">1. Medical Certificate:</span>
                     <span className="text-slate-600">
-                      A registered medical doctor (MBBS) certifies the testator's physical inability to visit the office and confirms sound mental capacity.
+                      A registered medical doctor (MBBS) certifies the Will maker's physical inability to visit the office and confirms sound mental capacity.
                     </span>
                   </div>
                   <div className="p-3.5 rounded-2xl bg-slate-50 border border-slate-100 space-y-1">
                     <span className="font-bold text-slate-900 block">2. Commission Order:</span>
                     <span className="text-slate-600">
-                      Our advocate files a formal Section 31 application before the District Registrar or Sub-Registrar to secure a commission visit order.
+                      Our lawyer files a formal Section 31 form before the District Registrar or Sub-Registrar to secure a commission visit order.
                     </span>
                   </div>
                   <div className="p-3.5 rounded-2xl bg-slate-50 border border-slate-100 space-y-1">
@@ -1545,7 +1545,7 @@ export default function PuducherryLocationClient({ faqs }: Props) {
                     Heritage Villas in White Town
                   </h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    French colonial properties feature shared party walls and historic conservation covenants. Wills must precisely allocate separate physical units and specify maintenance duties.
+                    French colonial assets feature shared party walls and historic conservation covenants. Wills must precisely allocate separate physical units and specify maintenance duties.
                   </p>
                 </div>
 
@@ -1569,7 +1569,7 @@ export default function PuducherryLocationClient({ faqs }: Props) {
                     Farmlands in Villianur &amp; Bahour
                   </h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Paddy fields and agricultural tracts require explicit survey numbers, sub-division boundaries, and patta references for automatic mutation on the Nilamagal portal.
+                    Paddy fields and farm tracts require explicit survey numbers, sub-division boundaries, and patta references for automatic name change on the Nilamagal portal.
                   </p>
                 </div>
               </div>
@@ -1640,7 +1640,7 @@ export default function PuducherryLocationClient({ faqs }: Props) {
                   11. Transparent Will Packages &amp; Legal Fees in PY
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Choose the plan that suits your estate requirements. All packages include lawyer check and full compliance with Puducherry legal provisions:
+                  Choose the plan that suits your estate rules. All packages include lawyer check and full compliance with Puducherry legal rules:
                 </p>
               </div>
 
@@ -1701,7 +1701,7 @@ export default function PuducherryLocationClient({ faqs }: Props) {
                     <ul className="space-y-2.5 text-xs text-slate-600">
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>Senior advocate review &amp; video advice</span>
+                        <span>Senior lawyer review &amp; video advice</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
@@ -1723,7 +1723,7 @@ export default function PuducherryLocationClient({ faqs }: Props) {
                       onClick={handleStartDraft}
                       className="w-full py-3 rounded-2xl bg-[#C65378] text-white font-bold text-xs text-center block hover:bg-[#a13c5d] transition-colors shadow-md shadow-[#C65378]/25"
                     >
-                      Book Advocate Review
+                      Book Lawyer Review
                     </a>
                   </div>
                 </div>
@@ -1736,7 +1736,7 @@ export default function PuducherryLocationClient({ faqs }: Props) {
                     </span>
                     <div className="space-y-1">
                       <div className="text-3xl font-black text-slate-900">₹9,990</div>
-                      <p className="text-xs text-slate-500">Full advocate attendance &amp; home visits</p>
+                      <p className="text-xs text-slate-500">Full lawyer attendance &amp; home visits</p>
                     </div>
                     <ul className="space-y-2.5 text-xs text-slate-600">
                       <li className="flex items-center gap-2">
@@ -1749,7 +1749,7 @@ export default function PuducherryLocationClient({ faqs }: Props) {
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>Physical advocate support at the SRO</span>
+                        <span>Physical lawyer support at the SRO</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
@@ -1840,7 +1840,7 @@ export default function PuducherryLocationClient({ faqs }: Props) {
                     Indian Succession Act, 1925 (Sections 59, 63 &amp; 213)
                   </span>
                   <p className="text-xs text-slate-500 leading-relaxed">
-                    Defines sound mind criteria, valid attestation by two witnesses, and restricts mandatory probate to Chennai presidency town limits.
+                    Defines sound mind criteria, valid attestation by two witnesses, and restricts needed probate to Chennai presidency town limits.
                   </p>
                 </div>
 
@@ -1909,7 +1909,7 @@ export default function PuducherryLocationClient({ faqs }: Props) {
               />
             </div>
             <div className="pt-2 flex items-center justify-between text-xs text-slate-400">
-              <span>Sub-Registrar Registered &amp; Municipal Mutation Ready</span>
+              <span>Sub-Registrar Registered &amp; Municipal Name Change Ready</span>
               <a
                 href="/start"
                 onClick={(e) => {

@@ -124,19 +124,19 @@ const INITIAL_CHECKLIST = [
   },
   {
     id: "item-2",
-    label: "Original Aadhaar Card & PAN of Testator",
+    label: "Original Aadhaar Card & PAN of Will maker",
     detail: "Essential for biometric identity validation, electronic thumbprint, and digital photo at Kota SRO counter.",
     checked: true,
   },
   {
     id: "item-3",
     label: "Two Independent Adult Witnesses with Aadhaar",
-    detail: "Must carry original photo IDs and must not be beneficiaries receiving any asset or legacy under the Will.",
+    detail: "Must carry original photo IDs and must not be heirs receiving any asset or legacy under the Will.",
     checked: true,
   },
   {
     id: "item-4",
-    label: "Doctor Mental Fitness Certificate (MBBS / MD)",
+    label: "Doctor Sound Mind Note (MBBS / MD)",
     detail: "Strongly advised for senior citizens aged 60+. Certifies testamentary mental soundness and lucidity.",
     checked: false,
   },
@@ -154,8 +154,8 @@ const INITIAL_CHECKLIST = [
   },
   {
     id: "item-7",
-    label: "Hostel Commercial Licenses & Mining Leases",
-    detail: "Commercial hostel operating records, coaching entity shares, or Ramganj Mandi Kota stone mining leases.",
+    label: "Hostel Shop Licenses & Mining Leases",
+    detail: "Shop hostel operating records, coaching entity shares, or Ramganj Mandi Kota stone mining leases.",
     checked: false,
   },
 ];
@@ -252,7 +252,7 @@ export default function KotaLocationClient({ faqs }: Props) {
               </h1>
 
               <p className="text-base sm:text-lg text-slate-200 leading-relaxed font-normal max-w-2xl">
-                Draft a legally watertight Will for your KDA residential plots, student hostel complexes, coaching business equity, and Kota stone industrial units. Get senior advocate drafting, ePanjiyan Rajasthan booking, and Section 31 doorstep execution.
+                Draft a legally watertight Will for your KDA home plots, student hostel complexes, coaching business equity, and Kota stone industrial units. Get senior lawyer drafting, ePanjiyan Rajasthan booking, and Section 31 doorstep signing.
               </p>
 
               <div className="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
@@ -277,7 +277,7 @@ export default function KotaLocationClient({ faqs }: Props) {
               <div className="pt-4 grid grid-cols-3 gap-3 border-t border-white/10 text-xs text-slate-300">
                 <div className="flex items-center gap-2">
                   <Check className="w-4 h-4 text-emerald-400 shrink-0" />
-                  <span>Rajasthan HC Advocate Vetted</span>
+                  <span>Rajasthan HC Lawyer Vetted</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <Check className="w-4 h-4 text-emerald-400 shrink-0" />
@@ -308,7 +308,7 @@ export default function KotaLocationClient({ faqs }: Props) {
               <div className="mt-3 flex items-center justify-between px-2 text-xs text-slate-300">
                 <span className="flex items-center gap-1.5 font-medium text-slate-300">
                   <Sparkles className="w-3.5 h-3.5 text-[#C65378]" />
-                  Kota Urban &amp; Commercial Succession Blueprint
+                  Kota Urban &amp; Shop Succession Blueprint
                 </span>
                 <button
                   onClick={() => setShowHighResModal(true)}
@@ -498,17 +498,17 @@ export default function KotaLocationClient({ faqs }: Props) {
                       <span>Optional Registration</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Will registration is optional under Section 18(e) of the Registration Act, 1908. While an unregistered Will signed before two witnesses is legally binding, registering at a Kota SRO provides permanent Book III government custody against forgery and family disputes.
+                      Will registration is optional under Section 18(e) of the Registration Act, 1908. While an unregistered Will signed before two witnesses is legally binding, registering at a Kota SRO provides permanent Book III government custody against forgery and family fights.
                     </p>
                   </div>
 
                   <div className="p-4 rounded-2xl bg-slate-50/70 border border-slate-100 space-y-1.5">
                     <div className="flex items-center gap-2 font-bold text-sm text-slate-900">
                       <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
-                      <span>Probate Non-Compulsory</span>
+                      <span>Probate Non-Needed</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Kota lies outside the historical presidency towns of Mumbai, Kolkata, and Chennai. Under Section 213 of the Indian Succession Act, court probate is optional in Rajasthan, enabling direct plot mutation with a registered Will.
+                      Kota lies outside the historical presidency towns of Mumbai, Kolkata, and Chennai. Under Section 213 of the Indian Succession Act, court probate is optional in Rajasthan, enabling direct plot name change with a registered Will.
                     </p>
                   </div>
 
@@ -525,7 +525,7 @@ export default function KotaLocationClient({ faqs }: Props) {
                   <div className="p-4 rounded-2xl bg-slate-50/70 border border-slate-100 space-y-1.5">
                     <div className="flex items-center gap-2 font-bold text-sm text-slate-900">
                       <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
-                      <span>KDA &amp; Hostel Business Mutation</span>
+                      <span>KDA &amp; Hostel Business Name Change</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
                       A registered Will expedites title transfer with the Kota Development Authority (KDA), facilitates ownership succession for Landmark City student hostels, and transfers Ramganj Mandi quarry leases without court suits.
@@ -546,10 +546,10 @@ export default function KotaLocationClient({ faqs }: Props) {
                   1. Will Drafting &amp; Legal Framework in Kota
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Succession planning and Will drafting in Kota are anchored in the <strong>Indian Succession Act, 1925</strong>, the <strong>Registration Act, 1908</strong>, and the <strong>Rajasthan Urban Improvement Act / KDA Regulations</strong>. Any adult citizen possessing testamentary sound mind can bequeath self-acquired residential real estate, commercial student hostel properties, coaching institute company shares, and financial portfolios.
+                  Succession planning and Will drafting in Kota are anchored in the <strong>Indian Succession Act, 1925</strong>, the <strong>Registration Act, 1908</strong>, and the <strong>Rajasthan Urban Improvement Act / KDA Regulations</strong>. Any adult citizen possessing testamentary sound mind can bequeath self-acquired home real estate, shop student hostel assets, coaching institute company shares, and financial portfolios.
                 </p>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Kota presents a distinctive asset landscape as the premier coaching education hub of India. Families often own multi-storey student hostel buildings in Landmark City and Rajeev Gandhi Nagar, planned residential bungalows in Talwandi and Mahaveer Nagar, alongside Kota stone quarry leases in Ramganj Mandi. Without a carefully structured Will, surviving heirs face severe administrative gridlock across KDA development desks, municipal licensing divisions, and mining authorities.
+                  Kota presents a distinctive asset landscape as the premier coaching education hub of India. Families often own multi-storey student hostel buildings in Landmark City and Rajeev Gandhi Nagar, planned home bungalows in Talwandi and Mahaveer Nagar, alongside Kota stone quarry leases in Ramganj Mandi. Without a carefully structured Will, surviving heirs face severe office gridlock across KDA development desks, municipal licensing divisions, and mining offices.
                 </p>
               </div>
 
@@ -560,7 +560,7 @@ export default function KotaLocationClient({ faqs }: Props) {
                   </span>
                   <h3 className="font-bold text-sm text-slate-900">Legal Capacity</h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    The testator must be a major aged 18 years or older with sound testamentary mental capacity (Section 59).
+                    The Will maker must be a major aged 18 years or older with sound testamentary mental capacity (Section 59).
                   </p>
                 </div>
 
@@ -570,7 +570,7 @@ export default function KotaLocationClient({ faqs }: Props) {
                   </span>
                   <h3 className="font-bold text-sm text-slate-900">Free Consent</h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Executed voluntarily without undue influence, fraudulent misrepresentation, or family coercion (Section 61).
+                    Signed voluntarily without undue influence, fraudulent misrepresentation, or family coercion (Section 61).
                   </p>
                 </div>
 
@@ -580,7 +580,7 @@ export default function KotaLocationClient({ faqs }: Props) {
                   </span>
                   <h3 className="font-bold text-sm text-slate-900">Two Witnesses</h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Must be signed in the physical presence of at least two independent adult attesting witnesses (Section 63).
+                    Must be signed in the physical presence of at least two independent adult witnesses (Section 63).
                   </p>
                 </div>
 
@@ -588,9 +588,9 @@ export default function KotaLocationClient({ faqs }: Props) {
                   <span className="w-8 h-8 rounded-xl bg-rose-50 text-[#C65378] flex items-center justify-center font-bold text-sm">
                     <ShieldCheck className="w-4 h-4" />
                   </span>
-                  <h3 className="font-bold text-sm text-slate-900">Non-Beneficiary</h3>
+                  <h3 className="font-bold text-sm text-slate-900">Non-Heir</h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Attesting witnesses and their spouses must not receive any legacy or property under the Will (Section 67).
+                    Witnesses and their spouses must not receive any legacy or property under the Will (Section 67).
                   </p>
                 </div>
               </div>
@@ -604,13 +604,13 @@ export default function KotaLocationClient({ faqs }: Props) {
                   <span>REGISTRATION STATUS</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  2. Is Will Registration Mandatory in Kota?
+                  2. Is Will Registration Needed in Kota?
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Under Section 18(e) of the Registration Act, 1908, the registration of a testamentary Will is strictly <strong>optional</strong>. An unregistered Will drafted on white paper and attested by two independent witnesses holds legal validity and can be produced before judicial authorities.
+                  Under Section 18(e) of the Registration Act, 1908, the registration of a testamentary Will is strictly <strong>optional</strong>. An unregistered Will drafted on white paper and attested by two independent witnesses holds legal validity and can be produced before judicial offices.
                 </p>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  However, with premier commercial coaching complexes, sprawling hostel establishments in Landmark City, and prime residential sectors in Talwandi, senior Rajasthan High Court advocates strongly recommend formal registration. An official Book III registration at Kota SRO creates a permanent government record, completely neutralizing allegations of forgery or coercion during property mutation.
+                  However, with premier shop coaching complexes, sprawling hostel establishments in Landmark City, and prime home sectors in Talwandi, senior Rajasthan High Court lawyers strongly recommend formal registration. An official Book III registration at Kota SRO creates a permanent government record, completely neutralizing allegations of forgery or coercion during property name change.
                 </p>
               </div>
 
@@ -632,18 +632,18 @@ export default function KotaLocationClient({ faqs }: Props) {
                     </tr>
                     <tr>
                       <td className="p-4 font-semibold">Protection from Challenge</td>
-                      <td className="p-4 bg-rose-50/20">Strong legal presumption of genuine execution</td>
-                      <td className="p-4 bg-slate-50/20">High vulnerability to claims of fraud, duress, or dementia</td>
+                      <td className="p-4 bg-rose-50/20">Strong legal presumption of genuine signing</td>
+                      <td className="p-4 bg-slate-50/20">High risk to claims of fraud, duress, or dementia</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-semibold">KDA Plot Mutation</td>
+                      <td className="p-4 font-semibold">KDA Plot Name Change</td>
                       <td className="p-4 bg-rose-50/20">Direct transfer on presenting certified copy</td>
                       <td className="p-4 bg-slate-50/20">KDA officers often demand court orders or multiple NOCs</td>
                     </tr>
                     <tr>
                       <td className="p-4 font-semibold">Student Hostel Succession</td>
-                      <td className="p-4 bg-rose-50/20">Seamless license and commercial lease devolution</td>
-                      <td className="p-4 bg-slate-50/20">Disputes among heirs disrupt active student operations</td>
+                      <td className="p-4 bg-rose-50/20">Seamless license and shop lease devolution</td>
+                      <td className="p-4 bg-slate-50/20">Fights among heirs disrupt active student operations</td>
                     </tr>
                     <tr>
                       <td className="p-4 font-semibold">Mining Leases (Ramganj Mandi)</td>
@@ -671,23 +671,23 @@ export default function KotaLocationClient({ faqs }: Props) {
                   3. Kota Probate Law: Exemption Under Rajasthan Rules
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  A common dilemma among Kota property owners is whether probate from the High Court is mandatory before real estate or bank accounts can be transferred. The definitive legal answer is <strong>no</strong>.
+                  A common dilemma among Kota property owners is whether probate from the High Court is needed before real estate or bank accounts can be transferred. The definitive legal answer is <strong>no</strong>.
                 </p>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Under Section 213 read with Section 57 of the Indian Succession Act, 1925, probate is legally mandatory solely for Wills executed within or properties situated within the presidency towns of Mumbai, Kolkata, and Chennai. Kota is a non-presidency district governed by the Rajasthan High Court. The High Court has consistently ruled that probate is optional for Hindu, Sikh, Jain, and Buddhist testators in Rajasthan, enabling direct property succession with a registered Will.
+                  Under Section 213 read with Section 57 of the Indian Succession Act, 1925, probate is legally needed solely for Wills signed within or assets situated within the presidency towns of Mumbai, Kolkata, and Chennai. Kota is a non-presidency district governed by the Rajasthan High Court. The High Court has consistently ruled that probate is optional for Hindu, Sikh, Jain, and Buddhist testators in Rajasthan, enabling direct property succession with a registered Will.
                 </p>
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="bg-white rounded-3xl border border-slate-200/90 p-6 shadow-xs space-y-3">
                   <span className="px-3 py-1 rounded-full bg-emerald-100 text-emerald-800 text-xs font-extrabold uppercase">
-                    Settled Law: Non-Compulsory
+                    Settled Law: Non-Needed
                   </span>
                   <h3 className="font-bold text-base text-slate-900">
                     Rajasthan High Court Jurisprudence
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    The Rajasthan High Court has clearly held that Section 213(1) does not apply to Wills executed outside historical presidency towns. In Kota, a registered Will is fully operational for KDA plot substitution, commercial hostel lease renewal, and direct banking transmission without obtaining a probate decree.
+                    The Rajasthan High Court has clearly held that Section 213(1) does not apply to Wills signed outside historical presidency towns. In Kota, a registered Will is fully operational for KDA plot substitution, shop hostel lease renewal, and direct banking transfer without getting a probate decree.
                   </p>
                   <div className="pt-2 text-xs text-slate-500 flex items-center gap-1.5">
                     <Check className="w-3.5 h-3.5 text-emerald-600" />
@@ -703,11 +703,11 @@ export default function KotaLocationClient({ faqs }: Props) {
                     When is Probate Filed in Kota District Court?
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    An executor may voluntarily petition for probate or letters of administration before the District Judge in Kota only if disinherited relatives initiate hostile partition suits or dispute testamentary mental capacity. A court probate decree operates <em>in rem</em>, establishing uncontestable worldwide legal ownership.
+                    An executor may voluntarily petition for probate or letters of management before the District Judge in Kota only if disinherited relatives initiate hostile split suits or fight testamentary mental capacity. A court probate decree operates <em>in rem</em>, establishing uncontestable worldwide legal ownership.
                   </p>
                   <div className="pt-2 text-xs text-slate-500 flex items-center gap-1.5">
                     <AlertTriangle className="w-3.5 h-3.5 text-[#C65378]" />
-                    <span>Judicial determination that extinguishes all future legal challenges</span>
+                    <span>Judicial determination that extinguishes all future legal fights</span>
                   </div>
                 </div>
               </div>
@@ -721,10 +721,10 @@ export default function KotaLocationClient({ faqs }: Props) {
                   <span>SRO JURISDICTION DIRECTORY</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  4. Kota Sub-Registrar Offices: SRO Jurisdiction Directory
+                  4. Kota Sub-Registrar Offices: SRO Area Directory
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Kota district operates dedicated Sub-Registrar Offices under the Registration &amp; Stamps Department Rajasthan (ePanjiyan Rajasthan). Under Section 32 of the Registration Act, your Will can be registered at the Sub-Registrar Office having jurisdiction over your permanent domicile or where your real estate is situated.
+                  Kota district operates dedicated Sub-Registrar Offices under the Registration &amp; Stamps Department Rajasthan (ePanjiyan Rajasthan). Under Section 32 of the Registration Act, your Will can be registered at the SRO office having area over your permanent domicile or where your real estate is situated.
                 </p>
               </div>
 
@@ -794,7 +794,7 @@ export default function KotaLocationClient({ faqs }: Props) {
                       <p className="text-slate-600">{activeHubData.timings}</p>
                     </div>
                     <div className="md:col-span-2 space-y-1">
-                      <span className="font-bold text-slate-900 block">Key Localities in Jurisdiction:</span>
+                      <span className="font-bold text-slate-900 block">Key Localities in Area:</span>
                       <p className="text-slate-600 leading-relaxed">{activeHubData.areas}</p>
                     </div>
                   </div>
@@ -807,7 +807,7 @@ export default function KotaLocationClient({ faqs }: Props) {
                       href="/contact"
                       className="inline-flex items-center gap-1.5 font-bold text-[#C65378] hover:underline"
                     >
-                      <span>Request Advocate Assistance for {activeHubData.name}</span>
+                      <span>Request Lawyer Help for {activeHubData.name}</span>
                       <ArrowRight className="w-3.5 h-3.5" />
                     </a>
                   </div>
@@ -826,7 +826,7 @@ export default function KotaLocationClient({ faqs }: Props) {
                   5. Local Areas &amp; Local Areas: Will Drafting in Kota
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Estate assets in Kota span high-value student hostel complexes in Landmark City and Rajeev Gandhi Nagar, planned residential sectors in Talwandi and Mahaveer Nagar, Kota stone processing units in Anantpura, and mining leases in regional Hadoti cities like Ramganj Mandi and Bundi. Our estate advocates deliver customized legal drafting, ePanjiyan slot scheduling, and Sub-Registrar accompaniment across all key micro-markets:
+                  Estate assets in Kota span high-value student hostel complexes in Landmark City and Rajeev Gandhi Nagar, planned home sectors in Talwandi and Mahaveer Nagar, Kota stone processing units in Anantpura, and mining leases in regional Hadoti cities like Ramganj Mandi and Bundi. Our estate lawyers deliver customized legal drafting, ePanjiyan slot scheduling, and Sub-Registrar accompaniment across all key micro-markets:
                 </p>
               </div>
 
@@ -856,7 +856,7 @@ export default function KotaLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Specialized <strong>Will drafting services in Landmark City</strong> and Rajeev Gandhi Nagar for multi-storey student hostel buildings, mess facilities, and student accommodation businesses. Separates immovable hostel real estate from operational lease contracts to ensure seamless business continuity without academic disruption.
+                      Specialized <strong>Will drafting services in Landmark City</strong> and Rajeev Gandhi Nagar for multi-storey student hostel buildings, mess facilities, and student accommodation businesses. Separates immovable hostel real estate from operational lease contracts to make sure seamless business continuity without academic disruption.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -865,7 +865,7 @@ export default function KotaLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Mahaveer Nagar &amp; Kunhari Sub-Divisions</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        ePanjiyan booking, advocate accompaniment, and commercial hostel succession planning for hostel owners.
+                        ePanjiyan booking, lawyer accompaniment, and shop hostel succession planning for hostel owners.
                       </p>
                     </div>
                   </div>
@@ -890,7 +890,7 @@ export default function KotaLocationClient({ faqs }: Props) {
                     <div className="flex items-center justify-between gap-2">
                       <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-rose-50 text-[#C65378] border border-rose-100">
                         <MapPin className="w-3.5 h-3.5" />
-                        Prime Residential &amp; Education Hub
+                        Prime Home &amp; Education Hub
                       </span>
                       <span className="text-[11px] font-semibold text-slate-500 bg-slate-100 px-2.5 py-1 rounded-lg">
                         SRO Mahaveer Nagar
@@ -909,22 +909,22 @@ export default function KotaLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Customized <strong>Will drafting services in Talwandi</strong> and Mahaveer Nagar for established family residences, commercial coaching centers, and medical practitioners. Codifies clear life-interest provisions for surviving spouses and enables fast KDA plot mutation without court intervention.
+                      Customized <strong>Will drafting services in Talwandi</strong> and Mahaveer Nagar for established family residences, shop coaching centers, and medical practitioners. Codifies clear life-interest rules for surviving spouses and enables fast KDA plot name change without court intervention.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
                       <div className="flex items-center gap-2 font-bold text-slate-900">
                         <Building className="w-3.5 h-3.5 text-[#C65378]" />
-                        <span>SRO Hub: Sector 3 Commercial Center, Mahaveer Nagar</span>
+                        <span>SRO Hub: Sector 3 Shop Center, Mahaveer Nagar</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        KDA residential plot mutation protocols, life-interest protections, and private estate planning.
+                        KDA home plot name change protocols, life-interest protections, and private estate planning.
                       </p>
                     </div>
                   </div>
 
                   <div className="pt-4 mt-4 border-t border-slate-100 flex items-center justify-between">
-                    <span className="text-xs font-bold text-slate-500">Residential &amp; Commercial</span>
+                    <span className="text-xs font-bold text-slate-500">Home &amp; Shop</span>
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
@@ -962,7 +962,7 @@ export default function KotaLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Personalized <strong>Will drafting services in Dadabari</strong> and Shastri Nagar for independent houses, multi-generational family estates, and senior citizen homes. Categorizes ancestral properties versus self-acquired assets to ensure full legal protection from future partition claims.
+                      Personalized <strong>Will drafting services in Dadabari</strong> and Shastri Nagar for independent houses, multi-generational family estates, and senior citizen homes. Categorizes family assets versus self-acquired assets to make sure full legal protection from future split claims.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -971,7 +971,7 @@ export default function KotaLocationClient({ faqs }: Props) {
                         <span>SRO Hub: District Collectorate Compound, Civil Lines</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Section 31 doorstep execution for elderly testators and verified Book III registration.
+                        Section 31 doorstep signing for elderly testators and verified Book III registration.
                       </p>
                     </div>
                   </div>
@@ -996,7 +996,7 @@ export default function KotaLocationClient({ faqs }: Props) {
                     <div className="flex items-center justify-between gap-2">
                       <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-rose-50 text-[#C65378] border border-rose-100">
                         <Scale className="w-3.5 h-3.5" />
-                        Administrative &amp; Judicial Belt
+                        Office &amp; Judicial Belt
                       </span>
                       <span className="text-[11px] font-semibold text-slate-500 bg-slate-100 px-2.5 py-1 rounded-lg">
                         SRO Kota 1 (Civil Lines)
@@ -1024,7 +1024,7 @@ export default function KotaLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Mini Secretariat Complex, Kota</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Complete advocate accompaniment, ePanjiyan Rajasthan filing, and Book III certified copies.
+                        Complete lawyer accompaniment, ePanjiyan Rajasthan filing, and Book III certified copies.
                       </p>
                     </div>
                   </div>
@@ -1068,13 +1068,13 @@ export default function KotaLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Specialized <strong>Will drafting services in Kunhari</strong> and Chambal Riverfront enclaves for contemporary multi-storey apartments, riverside gated townships, and commercial retail establishments along Bundi Road. Ensures smooth KDA lease deed name transfers without succession delays.
+                      Specialized <strong>Will drafting services in Kunhari</strong> and Chambal Riverfront enclaves for contemporary multi-storey apartments, riverside gated townships, and shop retail establishments along Bundi Road. Ensures smooth KDA lease deed name transfers without succession delays.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
                       <div className="flex items-center gap-2 font-bold text-slate-900">
                         <Building className="w-3.5 h-3.5 text-[#C65378]" />
-                        <span>SRO Hub: KDA Commercial Complex, Bundi Road, Kunhari</span>
+                        <span>SRO Hub: KDA Shop Complex, Bundi Road, Kunhari</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
                         High-rise apartment share devolution, KDA leasehold transfer, and ePanjiyan booking.
@@ -1121,7 +1121,7 @@ export default function KotaLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Tailored <strong>Will drafting services in Rampura</strong> and Ladpura for multi-generation mercantile families, wholesale textile traders, ancestral havelis, and commercial market properties. Clarifies partnership firm capital shares, HUF coparcenary assets, and shop tenancy rights.
+                      Tailored <strong>Will drafting services in Rampura</strong> and Ladpura for multi-generation mercantile families, wholesale textile traders, family havelis, and shop market assets. Clarifies partnership firm capital shares, HUF joint family assets, and shop tenancy rights.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1130,13 +1130,13 @@ export default function KotaLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Tehsil Complex, Ladpura, Near Rampura</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Trading firm share bequeathal, ancestral property division, and Book III SRO registration.
+                        Trading firm share bequeathal, family property division, and Book III SRO registration.
                       </p>
                     </div>
                   </div>
 
                   <div className="pt-4 mt-4 border-t border-slate-100 flex items-center justify-between">
-                    <span className="text-xs font-bold text-slate-500">Ancestral Havelis &amp; Traders</span>
+                    <span className="text-xs font-bold text-slate-500">Family Havelis &amp; Traders</span>
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
@@ -1174,7 +1174,7 @@ export default function KotaLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Specialized <strong>Will drafting services in Anantpura</strong> and Indraprastha Industrial Area for factory owners, chemical MSME founders, and Kota stone cutting units. Structures transfer of RIICO industrial leasehold plots, manufacturing machinery, company equity, and commercial bank loans.
+                      Specialized <strong>Will drafting services in Anantpura</strong> and Indraprastha Industrial Area for factory owners, chemical MSME founders, and Kota stone cutting units. Structures transfer of RIICO industrial leasehold plots, manufacturing machinery, company equity, and shop bank loans.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1227,7 +1227,7 @@ export default function KotaLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Comprehensive <strong>Will drafting services across regional Hadoti cities</strong> including Ramganj Mandi, Bundi, and Baran. Formulates watertight bequests for Kota stone quarry concessions, mining leasehold rights under Rajasthan Minor Mineral Rules, agricultural land holdings, and heritage properties.
+                      Full <strong>Will drafting services across regional Hadoti cities</strong> including Ramganj Mandi, Bundi, and Baran. Formulates watertight bequests for Kota stone quarry concessions, mining leasehold rights under Rajasthan Minor Mineral Rules, farm land holdings, and heritage assets.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1236,7 +1236,7 @@ export default function KotaLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Tehsil Registry Offices, Ramganj Mandi, Bundi &amp; Baran</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Stone mining lease succession, agricultural revenue mutations, and regional SRO coordination.
+                        Stone mining lease succession, farm revenue mutations, and regional SRO coordination.
                       </p>
                     </div>
                   </div>
@@ -1268,7 +1268,7 @@ export default function KotaLocationClient({ faqs }: Props) {
                   6. Step-by-Step SOP: Drafting to ePanjiyan Registration
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Follow this verified 5-stage legal standard operating procedure to create, execute, and register your Will before the Sub-Registrar in Kota:
+                  Follow this verified 5-stage legal standard operating step to create, execute, and register your Will before the Sub-Registrar in Kota:
                 </p>
               </div>
 
@@ -1293,7 +1293,7 @@ export default function KotaLocationClient({ faqs }: Props) {
                       2
                     </span>
                     <h3 className="font-bold text-sm text-slate-900">
-                      Advocate Drafting
+                      Lawyer Drafting
                     </h3>
                     <p className="text-xs text-slate-600 leading-relaxed">
                       Draft customized legal clauses covering revocation of prior instruments, survivorship, executor powers, and minor guardianships.
@@ -1307,10 +1307,10 @@ export default function KotaLocationClient({ faqs }: Props) {
                       3
                     </span>
                     <h3 className="font-bold text-sm text-slate-900">
-                      Valid Execution
+                      Valid Signing
                     </h3>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Print on A4 paper and sign each page in the physical presence of two independent non-beneficiary adult witnesses.
+                      Print on A4 paper and sign each page in the physical presence of two independent non-heir adult witnesses.
                     </p>
                   </div>
                 </div>
@@ -1356,7 +1356,7 @@ export default function KotaLocationClient({ faqs }: Props) {
                   7. Section 31 Doorstep SRO Registration for Senior Citizens
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  For elderly, infirm, or bedridden citizens residing in Talwandi, Dadabari, Mahaveer Nagar, or regional Hadoti towns, traveling to the Sub-Registrar Office can be a physical ordeal. Under <strong>Section 31 of the Registration Act, 1908</strong>, the Sub-Registrar possesses legal authority to attend a private residence or hospital to register a Will.
+                  For elderly, infirm, or bedridden citizens residing in Talwandi, Dadabari, Mahaveer Nagar, or regional Hadoti towns, traveling to the SRO office can be a physical ordeal. Under <strong>Section 31 of the Registration Act, 1908</strong>, the Sub-Registrar possesses legal authority to attend a private residence or hospital to register a Will.
                 </p>
               </div>
 
@@ -1411,7 +1411,7 @@ export default function KotaLocationClient({ faqs }: Props) {
                   8. Document Checklist for Kota Sub-Registrar Offices
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Prepare your documentation before scheduling your Sub-Registrar appointment. You have organized <strong>{checkedCount} of {checklist.length}</strong> required documents:
+                  Prepare your papers before scheduling your Sub-Registrar appointment. You have organized <strong>{checkedCount} of {checklist.length}</strong> required documents:
                 </p>
               </div>
 
@@ -1459,7 +1459,7 @@ export default function KotaLocationClient({ faqs }: Props) {
                   9. Kota Property Types: KDA Plots, Hostels &amp; Mining Assets
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Succession procedures in Kota vary considerably depending on the nature of property title and regulatory authority:
+                  Succession steps in Kota vary considerably depending on the nature of property title and regulatory authority:
                 </p>
               </div>
 
@@ -1472,7 +1472,7 @@ export default function KotaLocationClient({ faqs }: Props) {
                     KDA Plots &amp; Nagar Nigam Dwellings
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Under Kota Development Authority (KDA) rules, a registered Will allows direct mutation of leasehold or freehold residential plots across Talwandi and Mahaveer Nagar without requiring a succession certificate from court.
+                    Under Kota Development Authority (KDA) rules, a registered Will allows direct name change of leasehold or freehold home plots across Talwandi and Mahaveer Nagar without requiring a succession paper from court.
                   </p>
                 </div>
 
@@ -1484,7 +1484,7 @@ export default function KotaLocationClient({ faqs }: Props) {
                     Hostel Buildings &amp; EdTech Equity
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Multi-storey student hostels in Landmark City and Rajeev Gandhi Nagar require distinct clauses for commercial property lease rights, kitchen amenities, and partnership equity to prevent management voids.
+                    Multi-storey student hostels in Landmark City and Rajeev Gandhi Nagar require distinct clauses for shop property lease rights, kitchen amenities, and partnership equity to prevent management voids.
                   </p>
                 </div>
 
@@ -1513,7 +1513,7 @@ export default function KotaLocationClient({ faqs }: Props) {
                   10. Official ePanjiyan Rajasthan Registration Fees &amp; Charges
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Unlike commercial sale deeds or gift transfers that incur high ad-valorem stamp duty in Rajasthan, testamentary Wills are completely exempt from stamp duty. Government registration fees in Kota are purely nominal:
+                  Unlike shop sale deeds or gift transfers that incur high ad-valorem stamp duty in Rajasthan, testamentary Wills are completely exempt from stamp duty. Government registration fees in Kota are purely nominal:
                 </p>
               </div>
 
@@ -1522,7 +1522,7 @@ export default function KotaLocationClient({ faqs }: Props) {
                   <thead>
                     <tr className="bg-slate-100/80 border-b border-slate-200 text-slate-800">
                       <th className="p-4 font-bold">Fee Component</th>
-                      <th className="p-4 font-bold">Statutory Amount</th>
+                      <th className="p-4 font-bold">Legal Amount</th>
                       <th className="p-4 font-bold">Remittance Authority</th>
                     </tr>
                   </thead>
@@ -1534,7 +1534,7 @@ export default function KotaLocationClient({ faqs }: Props) {
                     </tr>
                     <tr>
                       <td className="p-4 font-semibold">SRO Book III Registration Fee</td>
-                      <td className="p-4 font-bold text-[#C65378]">₹100 (Flat Statutory Fee)</td>
+                      <td className="p-4 font-bold text-[#C65378]">₹100 (Flat Legal Fee)</td>
                       <td className="p-4">Registration &amp; Stamps Dept via e-GRAS</td>
                     </tr>
                     <tr>
@@ -1563,7 +1563,7 @@ export default function KotaLocationClient({ faqs }: Props) {
                   11. Transparent Will Packages &amp; Legal Fees in Kota
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Choose the legal assistance package tailored to your family&apos;s estate planning and property portfolio in Kota:
+                  Choose the legal help package tailored to your family&apos;s estate planning and property portfolio in Kota:
                 </p>
               </div>
 
@@ -1590,11 +1590,11 @@ export default function KotaLocationClient({ faqs }: Props) {
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>Legally vetted statutory clauses</span>
+                        <span>Legally vetted legal clauses</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>Instant PDF download &amp; execution guide</span>
+                        <span>Instant PDF download &amp; signing guide</span>
                       </li>
                     </ul>
                   </div>
@@ -1614,16 +1614,16 @@ export default function KotaLocationClient({ faqs }: Props) {
                   </div>
                   <div className="space-y-4">
                     <span className="text-xs font-bold uppercase tracking-wider text-[#C65378]">
-                      Comprehensive
+                      Full
                     </span>
                     <h3 className="font-extrabold text-xl text-slate-900">
-                      Advocate Consultation
+                      Lawyer Talk
                     </h3>
                     <div className="text-3xl font-black text-slate-900">
                       ₹4,990
                     </div>
                     <p className="text-xs text-slate-600">
-                      Senior estate advocate review for KDA plots, student hostels, and multi-heir portfolios.
+                      Senior estate lawyer review for KDA plots, student hostels, and multi-heir portfolios.
                     </p>
                     <ul className="space-y-2.5 text-xs text-slate-700 pt-3 border-t border-slate-100">
                       <li className="flex items-center gap-2">
@@ -1632,7 +1632,7 @@ export default function KotaLocationClient({ faqs }: Props) {
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>1-on-1 video call with senior advocate</span>
+                        <span>1-on-1 video call with senior lawyer</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
@@ -1648,7 +1648,7 @@ export default function KotaLocationClient({ faqs }: Props) {
                     href="/contact"
                     className="mt-6 w-full py-3 rounded-xl bg-[#C65378] text-white text-xs font-bold text-center hover:bg-[#a13c5d] transition-colors cursor-pointer"
                   >
-                    Book Advocate Call
+                    Book Lawyer Call
                   </a>
                 </div>
 
@@ -1665,7 +1665,7 @@ export default function KotaLocationClient({ faqs }: Props) {
                       ₹9,990
                     </div>
                     <p className="text-xs text-slate-600">
-                      End-to-end registration coordination across any Kota Sub-Registrar Office or home visit.
+                      End-to-end registration coordination across any Kota SRO office or home visit.
                     </p>
                     <ul className="space-y-2.5 text-xs text-slate-700 pt-3 border-t border-slate-100">
                       <li className="flex items-center gap-2">
@@ -1674,7 +1674,7 @@ export default function KotaLocationClient({ faqs }: Props) {
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>Advocate physically attends Kota SRO</span>
+                        <span>Lawyer physically attends Kota SRO</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
@@ -1748,7 +1748,7 @@ export default function KotaLocationClient({ faqs }: Props) {
                   <span>STATUTORY CITATIONS</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  13. Statutory Citations &amp; Rajasthan Legal Portals
+                  13. Legal Citations &amp; Rajasthan Legal Portals
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Our drafting protocols comply strictly with codified Indian statutes and Rajasthan state registration systems:
@@ -1797,10 +1797,10 @@ export default function KotaLocationClient({ faqs }: Props) {
             {/* BOTTOM CONVERSION CTA BANNER */}
             <section className="rounded-3xl bg-gradient-to-br from-[#172228] to-[#212F35] text-white p-8 sm:p-12 text-center space-y-5 shadow-xl">
               <h3 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-white">
-                Protect Your Kota Properties &amp; Family Legacy
+                Protect Your Kota Assets &amp; Family Legacy
               </h3>
               <p className="text-sm sm:text-base text-slate-200 max-w-2xl mx-auto leading-relaxed">
-                Do not leave your hard-earned Kota plots, coaching hostel investments, or industrial assets to inheritance disputes. Draft a legally binding Will online today or consult our senior Rajasthan High Court advocates.
+                Do not leave your hard-earned Kota plots, coaching hostel investments, or industrial assets to inheritance fights. Draft a legally binding Will online today or consult our senior Rajasthan High Court lawyers.
               </p>
               <div className="pt-3 flex flex-col sm:flex-row items-center justify-center gap-4">
                 <a
@@ -1814,7 +1814,7 @@ export default function KotaLocationClient({ faqs }: Props) {
                   href="/contact"
                   className="w-full sm:w-auto px-6 py-3.5 rounded-full bg-white/10 text-white font-bold text-sm sm:text-base hover:bg-white/20 transition-all border border-white/20"
                 >
-                  Book Advocate Consultation
+                  Book Lawyer Talk
                 </a>
               </div>
             </section>
@@ -1857,7 +1857,7 @@ export default function KotaLocationClient({ faqs }: Props) {
               />
             </div>
             <div className="pt-3 flex items-center justify-between text-xs text-slate-500">
-              <span>Kota SRO Registered &amp; KDA Mutation Compliant</span>
+              <span>Kota SRO Registered &amp; KDA Name Change Compliant</span>
               <a
                 href="/start"
                 onClick={(e) => {

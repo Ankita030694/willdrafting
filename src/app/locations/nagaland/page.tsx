@@ -140,9 +140,9 @@ export default function NagalandLocationPage() {
         "@type": "WebPage",
         "@id": `${canonicalUrl}#webpage`,
         url: canonicalUrl,
-        name: "Will Drafting in Nagaland: Customary Succession Guide",
+        name: "Will Drafting in Nagaland: Local Estate Guide",
         description:
-          "Draft a legally valid Will in Nagaland. Guidance on Article 371A protections, Naga customary land inheritance, and self-acquired property.",
+          "Draft a legally valid Will in Nagaland. Guidance on Article 371A protections, Naga local land passing assets, and self-acquired asset.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -154,7 +154,7 @@ export default function NagalandLocationPage() {
           url: imageUrl,
           width: 1200,
           height: 630,
-          caption: "Legal Will Drafting and Property Succession in Nagaland",
+          caption: "Legal Will Drafting and Asset Estate in Nagaland",
         },
         breadcrumb: {
           "@id": `${canonicalUrl}#breadcrumb`,
@@ -189,7 +189,7 @@ export default function NagalandLocationPage() {
         "@id": `${canonicalUrl}#legalservice`,
         name: "WillDrafting Nagaland - Estate Planning & DC SRO Registration",
         description:
-          "Professional Will drafting, advocate verification, Article 371A customary compliance, and Deputy Commissioner registry assistance across.",
+          "Professional Will drafting, lawyer check, Article 371A local compliance, and Deputy Commissioner registry help across.",
         url: canonicalUrl,
         image: imageUrl,
         email: "hello@willdrafting.in",
@@ -237,7 +237,7 @@ export default function NagalandLocationPage() {
               priceCurrency: "INR",
               itemOffered: {
                 "@type": "Service",
-                name: "Senior Advocate Will Consultation & Customary Review",
+                name: "Senior Lawyer Will Talk & Local Review",
               },
             },
             {
@@ -257,20 +257,20 @@ export default function NagalandLocationPage() {
         "@id": `${canonicalUrl}#howto`,
         name: "How to Draft and Register a Will in Nagaland",
         description:
-          "Five clear legal steps to draft and register an enforceable Will under Naga customary protections and Indian succession laws.",
+          "Five clear legal steps to draft and register an enforceable Will under Naga local protections and Indian succession laws.",
         totalTime: "P3D",
         step: [
           {
             "@type": "HowToStep",
             position: 1,
-            name: "Categorize Ancestral and Self-Acquired Assets",
-            text: "Distinguish between tribal ancestral clan holdings and self-acquired urban properties in Dimapur or Kohima, bank savings, vehicles, and commercial ventures.",
+            name: "Categorize Family and Self-Acquired Assets",
+            text: "Distinguish between tribal family clan holdings and self-acquired urban assets in Dimapur or Kohima, bank savings, vehicles, and shop ventures.",
           },
           {
             "@type": "HowToStep",
             position: 2,
             name: "Incorporate Article 371A Compliant Clauses",
-            text: "Draft legally sound clauses aligning with Article 371A safeguards, statutory land transfer regulations, designated beneficiaries, and executor appointments.",
+            text: "Draft legally sound clauses aligning with Article 371A safeguards, legal land transfer regulations, designated heirs, and executor appointments.",
           },
           {
             "@type": "HowToStep",
@@ -282,13 +282,13 @@ export default function NagalandLocationPage() {
             "@type": "HowToStep",
             position: 4,
             name: "Submit at Deputy Commissioner Registry",
-            text: "Present the executed Will at the Office of the Deputy Commissioner or Sub-Divisional Officer (Civil) in your district and remit nominal statutory fees.",
+            text: "Present the signed Will at the Office of the Deputy Commissioner or Sub-Divisional Officer (Civil) in your district and remit nominal legal fees.",
           },
           {
             "@type": "HowToStep",
             position: 5,
             name: "Obtain Book III Registration Endorsement",
-            text: "Complete personal appearance and identity verification with both witnesses to receive the official government Book III registration endorsement.",
+            text: "Complete personal appearance and identity check with both witnesses to receive the official government Book III signing endorsement.",
           },
         ],
       },
@@ -310,7 +310,7 @@ export default function NagalandLocationPage() {
   return (
     <>
       <script
-        type="application/ld+json"
+        type="form/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaGraph) }}
       />
       <Navbar />

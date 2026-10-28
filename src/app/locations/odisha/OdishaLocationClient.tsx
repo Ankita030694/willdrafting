@@ -132,19 +132,19 @@ const INITIAL_CHECKLIST = [
   },
   {
     id: "item-2",
-    label: "Original Aadhaar Card & PAN of Testator",
-    detail: "Mandatory for biometric identity validation, electronic thumbprint, and digital photo capture at the SRO.",
+    label: "Original Aadhaar Card & PAN of Will maker",
+    detail: "Needed for biometric identity validation, electronic thumbprint, and digital photo capture at the SRO.",
     checked: true,
   },
   {
     id: "item-3",
     label: "Two Independent Adult Witnesses with Photo IDs",
-    detail: "Must carry original Aadhaar or government IDs and must not be beneficiaries receiving any bequest under the Will.",
+    detail: "Must carry original Aadhaar or government IDs and must not be heirs receiving any bequest under the Will.",
     checked: true,
   },
   {
     id: "item-4",
-    label: "Doctor Mental Fitness Certificate (MBBS / MD)",
+    label: "Doctor Sound Mind Note (MBBS / MD)",
     detail: "Strongly recommended for senior citizens aged 60+. Certifies testamentary mental competence and lucidity.",
     checked: false,
   },
@@ -163,7 +163,7 @@ const INITIAL_CHECKLIST = [
   {
     id: "item-7",
     label: "Bhulekh Odisha RoR (Patta / Khatian) Records",
-    detail: "Recent computerized land records from bhulekh.ori.nic.in for agricultural parcels or plotted lands.",
+    detail: "Recent computerized land records from bhulekh.ori.nic.in for farm parcels or plotted lands.",
     checked: false,
   },
 ];
@@ -260,7 +260,7 @@ export default function OdishaLocationClient({ faqs }: Props) {
               </h1>
 
               <p className="text-base sm:text-lg text-slate-200 leading-relaxed font-normal max-w-2xl">
-                Draft a watertight legal Will for your Bhubaneswar GA leasehold plots, BDA and CDA apartments, Bhulekh farmland, and family investments. Get senior advocate drafting, Odisha e-Registration assistance, and Section 31 doorstep execution.
+                Draft a watertight legal Will for your Bhubaneswar GA leasehold plots, BDA and CDA apartments, Bhulekh farmland, and family investments. Get senior lawyer drafting, Odisha e-Registration help, and Section 31 doorstep signing.
               </p>
 
               <div className="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
@@ -285,7 +285,7 @@ export default function OdishaLocationClient({ faqs }: Props) {
               <div className="pt-4 grid grid-cols-3 gap-3 border-t border-white/10 text-xs text-slate-300">
                 <div className="flex items-center gap-2">
                   <Check className="w-4 h-4 text-emerald-400 shrink-0" />
-                  <span>Orissa HC Advocate Vetted</span>
+                  <span>Orissa HC Lawyer Vetted</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <Check className="w-4 h-4 text-emerald-400 shrink-0" />
@@ -511,17 +511,17 @@ export default function OdishaLocationClient({ faqs }: Props) {
                       <span>Optional Registration</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Will registration is optional under Section 18(e) of the Registration Act, 1908. While an unregistered Will signed before two witnesses is valid, official Book III registration at an Odisha Sub-Registrar Office provides conclusive authenticity against property disputes.
+                      Will registration is optional under Section 18(e) of the Registration Act, 1908. While an unregistered Will signed before two witnesses is valid, official Book III registration at an Odisha SRO office provides strong authenticity against property fights.
                     </p>
                   </div>
 
                   <div className="p-4 rounded-2xl bg-slate-50/70 border border-slate-100 space-y-1.5">
                     <div className="flex items-center gap-2 font-bold text-sm text-slate-900">
                       <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
-                      <span>Probate Non-Compulsory</span>
+                      <span>Probate Non-Needed</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Odisha lies outside the historical presidency towns of Kolkata, Mumbai, and Chennai. Under Section 213 of the Indian Succession Act, probate from the Orissa High Court is non-compulsory, enabling direct title transfer with a registered Will.
+                      Odisha lies outside the historical presidency towns of Kolkata, Mumbai, and Chennai. Under Section 213 of the Indian Succession Act, probate from the Orissa High Court is non-needed, enabling direct title transfer with a registered Will.
                     </p>
                   </div>
 
@@ -531,17 +531,17 @@ export default function OdishaLocationClient({ faqs }: Props) {
                       <span>Zero Odisha Stamp Duty</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Testamentary Wills are completely exempt from stamp duty across Odisha under the Indian Stamp Act. You only pay a flat nominal registration fee of approximately ₹100 plus minor scanning fees at the Sub-Registrar Office.
+                      Testamentary Wills are completely exempt from stamp duty across Odisha under the Indian Stamp Act. You only pay a flat nominal registration fee of about ₹100 plus minor scanning fees at the SRO office.
                     </p>
                   </div>
 
                   <div className="p-4 rounded-2xl bg-slate-50/70 border border-slate-100 space-y-1.5">
                     <div className="flex items-center gap-2 font-bold text-sm text-slate-900">
                       <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
-                      <span>Bhulekh &amp; GA Leasehold Mutation</span>
+                      <span>Bhulekh &amp; GA Leasehold Name Change</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      A registered Will expedites leasehold substitution with the General Administration Department in Bhubaneswar, facilitates BDA and CDA plot transfers, and simplifies Record of Rights (RoR) mutation on Bhulekh Odisha.
+                      A registered Will expedites leasehold substitution with the General Administration Department in Bhubaneswar, facilitates BDA and CDA plot transfers, and simplifies Record of Rights (RoR) name change on Bhulekh Odisha.
                     </p>
                   </div>
                 </div>
@@ -559,10 +559,10 @@ export default function OdishaLocationClient({ faqs }: Props) {
                   1. Will Drafting &amp; Legal Framework in Odisha
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Succession planning and testamentary Will drafting in Odisha are governed by the <strong>Indian Succession Act, 1925</strong>, the <strong>Registration Act, 1908</strong>, and the <strong>Odisha Land Reforms Act, 1960</strong>. Any adult of sound mind can legally bequeath self-acquired residential property, agricultural holdings, business equity, and financial investments.
+                  Succession planning and testamentary Will drafting in Odisha are governed by the <strong>Indian Succession Act, 1925</strong>, the <strong>Registration Act, 1908</strong>, and the <strong>Odisha Land Reforms Act, 1960</strong>. Any adult of sound mind can legally bequeath self-acquired home property, farm holdings, business equity, and financial investments.
                 </p>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Odisha presents a distinct property ecosystem. A family in Bhubaneswar or Cuttack often holds 99-year leasehold plots from the General Administration (GA) Department, residential allotments from BDA or CDA, ancestral farmland recorded under Bhulekh RoR, and modern corporate investments. Without an expertly drafted Will, heirs face protracted multi-agency administrative delays across tahasils, municipal corporation tax desks, and development authorities.
+                  Odisha presents a distinct property ecosystem. A family in Bhubaneswar or Cuttack often holds 99-year leasehold plots from the General Administration (GA) Department, home allotments from BDA or CDA, family farmland recorded under Bhulekh RoR, and modern corporate investments. Without an expertly drafted Will, heirs face protracted multi-agency office delays across tahasils, municipal corporation tax desks, and development offices.
                 </p>
               </div>
 
@@ -573,7 +573,7 @@ export default function OdishaLocationClient({ faqs }: Props) {
                   </span>
                   <h3 className="font-bold text-sm text-slate-900">Legal Capacity</h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    The testator must be a major aged 18 years or older possessing sound testamentary mental capacity (Section 59).
+                    The Will maker must be a major aged 18 years or older possessing sound testamentary mental capacity (Section 59).
                   </p>
                 </div>
 
@@ -583,7 +583,7 @@ export default function OdishaLocationClient({ faqs }: Props) {
                   </span>
                   <h3 className="font-bold text-sm text-slate-900">Free Consent</h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Executed voluntarily without undue influence, fraudulent inducement, or family coercion (Section 61).
+                    Signed voluntarily without undue influence, fraudulent inducement, or family coercion (Section 61).
                   </p>
                 </div>
 
@@ -593,7 +593,7 @@ export default function OdishaLocationClient({ faqs }: Props) {
                   </span>
                   <h3 className="font-bold text-sm text-slate-900">Two Witnesses</h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Must be signed in the physical presence of at least two independent adult attesting witnesses (Section 63).
+                    Must be signed in the physical presence of at least two independent adult witnesses (Section 63).
                   </p>
                 </div>
 
@@ -601,9 +601,9 @@ export default function OdishaLocationClient({ faqs }: Props) {
                   <span className="w-8 h-8 rounded-xl bg-rose-50 text-[#C65378] flex items-center justify-center font-bold text-sm">
                     <ShieldCheck className="w-4 h-4" />
                   </span>
-                  <h3 className="font-bold text-sm text-slate-900">Non-Beneficiary</h3>
+                  <h3 className="font-bold text-sm text-slate-900">Non-Heir</h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Attesting witnesses and their spouses must not receive any legacy or property under the Will (Section 67).
+                    Witnesses and their spouses must not receive any legacy or property under the Will (Section 67).
                   </p>
                 </div>
               </div>
@@ -617,13 +617,13 @@ export default function OdishaLocationClient({ faqs }: Props) {
                   <span>REGISTRATION STATUS</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  2. Is Will Registration Mandatory in Odisha?
+                  2. Is Will Registration Needed in Odisha?
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Under Section 18(e) of the Registration Act, 1908, Will registration is strictly <strong>optional</strong> across Odisha. An unregistered Will signed on standard white paper before two independent witnesses is legally valid and admissible in court.
                 </p>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  However, with surging property valuations across Bhubaneswar, Cuttack, and Rourkela, experienced advocates strongly advise formal registration. An official Book III registration at an Odisha Sub-Registrar Office confirms the testator appeared in person, established their identity, and signed willingly. This eliminates future allegations of foul play or forged signatures.
+                  However, with surging property valuations across Bhubaneswar, Cuttack, and Rourkela, experienced lawyers strongly advise formal registration. An official Book III registration at an Odisha SRO office confirms the Will maker appeared in person, established their identity, and signed willingly. This eliminates future allegations of foul play or forged signatures.
                 </p>
               </div>
 
@@ -645,8 +645,8 @@ export default function OdishaLocationClient({ faqs }: Props) {
                     </tr>
                     <tr>
                       <td className="p-4 font-semibold">Legal Authenticity</td>
-                      <td className="p-4 bg-rose-50/20">High statutory presumption of genuine execution</td>
-                      <td className="p-4 bg-slate-50/20">Vulnerable to challenges claiming mental incapacity</td>
+                      <td className="p-4 bg-rose-50/20">High legal presumption of genuine signing</td>
+                      <td className="p-4 bg-slate-50/20">Vulnerable to fights claiming mental incapacity</td>
                     </tr>
                     <tr>
                       <td className="p-4 font-semibold">GA Leasehold Substitution</td>
@@ -656,11 +656,11 @@ export default function OdishaLocationClient({ faqs }: Props) {
                     <tr>
                       <td className="p-4 font-semibold">BDA &amp; CDA Plot Transfer</td>
                       <td className="p-4 bg-rose-50/20">Direct ownership substitution in development records</td>
-                      <td className="p-4 bg-slate-50/20">May require succession certificate or court decree</td>
+                      <td className="p-4 bg-slate-50/20">May require succession paper or court decree</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-semibold">Bhulekh RoR Mutation</td>
-                      <td className="p-4 bg-rose-50/20">Tahasildar approves mutation without dispute delays</td>
+                      <td className="p-4 font-semibold">Bhulekh RoR Name Change</td>
+                      <td className="p-4 bg-rose-50/20">Tahasildar approves name change without fight delays</td>
                       <td className="p-4 bg-slate-50/20">Frequent objections from co-heirs during proclamation</td>
                     </tr>
                     <tr>
@@ -684,43 +684,43 @@ export default function OdishaLocationClient({ faqs }: Props) {
                   3. Odisha Probate Law: Exemption Under Orissa High Court
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  A widespread misconception among property owners in Odisha is whether obtaining court probate from the High Court of Orissa or the District Judge is compulsory before inheriting assets. Under settled legal doctrine, the answer is <strong>no</strong>.
+                  A widespread misconception among property owners in Odisha is whether getting court probate from the High Court of Orissa or the District Judge is needed before inheriting assets. Under settled legal doctrine, the answer is <strong>no</strong>.
                 </p>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Under Section 213 read with Section 57(a) and 57(b) of the Indian Succession Act, 1925, probate is compulsory only for Wills executed within or properties situated within the historical presidency towns of Mumbai, Kolkata, and Chennai. Odisha was never part of these presidential territories. The High Court of Orissa in Cuttack has consistently held that court probate is non-mandatory for Hindu, Buddhist, Sikh, Jain, and Muslim Wills in Odisha.
+                  Under Section 213 read with Section 57(a) and 57(b) of the Indian Succession Act, 1925, probate is needed only for Wills signed within or assets situated within the historical presidency towns of Mumbai, Kolkata, and Chennai. Odisha was never part of these presidential territories. The High Court of Orissa in Cuttack has consistently held that court probate is non-needed for Hindu, Buddhist, Sikh, Jain, and Muslim Wills in Odisha.
                 </p>
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="bg-white rounded-3xl border border-slate-200/90 p-6 shadow-xs space-y-3">
                   <span className="px-3 py-1 rounded-full bg-emerald-100 text-emerald-800 text-xs font-extrabold uppercase">
-                    Settled Law: Non-Compulsory
+                    Settled Law: Non-Needed
                   </span>
                   <h3 className="font-bold text-base text-slate-900">
                     High Court of Orissa Precedents
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    The High Court of Orissa has repeatedly ruled that a legatee under a Will executed in Odisha can establish title without obtaining probate. A registered Will serves as conclusive proof of testamentary disposition for Bhulekh land mutation, GA lease transfer, BDA/CDA records, and banking asset transmission.
+                    The High Court of Orissa has repeatedly ruled that a legatee under a Will signed in Odisha can set up title without getting probate. A registered Will serves as strong proof of Will for Bhulekh land name change, GA lease transfer, BDA/CDA records, and banking asset transfer.
                   </p>
                   <div className="pt-2 text-xs text-slate-500 flex items-center gap-1.5">
                     <Check className="w-3.5 h-3.5 text-emerald-600" />
-                    <span>Enables immediate asset transmission without High Court delays</span>
+                    <span>Enables immediate asset transfer without High Court delays</span>
                   </div>
                 </div>
 
                 <div className="bg-white rounded-3xl border border-rose-200 p-6 shadow-xs space-y-3 bg-rose-50/30">
                   <span className="px-3 py-1 rounded-full bg-rose-100 text-[#C65378] text-xs font-extrabold uppercase">
-                    Voluntary Filings: High-Value Disputes
+                    Voluntary Filings: High-Value Fights
                   </span>
                   <h3 className="font-bold text-base text-slate-900">
                     When is Probate Filed in Odisha Courts?
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    An executor may voluntarily file for probate or letters of administration before the District Judge in Bhubaneswar, Cuttack, or Berhampur only when estranged relatives dispute the testator&apos;s mental soundness or institute partition suits. A grant of probate provides an undisputed judgment <em>in rem</em> that conclusively settles ownership.
+                    An executor may voluntarily file for probate or letters of management before the District Judge in Bhubaneswar, Cuttack, or Berhampur only when estranged relatives fight the Will maker&apos;s mental soundness or institute split suits. A grant of probate provides an undisputed judgment <em>in rem</em> that conclusively settles ownership.
                   </p>
                   <div className="pt-2 text-xs text-slate-500 flex items-center gap-1.5">
                     <AlertTriangle className="w-3.5 h-3.5 text-[#C65378]" />
-                    <span>Conclusive judicial decree against any collateral inheritance claims</span>
+                    <span>Strong judicial decree against any collateral inheritance claims</span>
                   </div>
                 </div>
               </div>
@@ -734,10 +734,10 @@ export default function OdishaLocationClient({ faqs }: Props) {
                   <span>SRO JURISDICTION DIRECTORY</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  4. Odisha Sub-Registrar Offices: SRO Jurisdiction Directory
+                  4. Odisha Sub-Registrar Offices: SRO Area Directory
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Odisha operates designated District Sub-Registrar (DSR) and Sub-Registrar Offices under the Directorate of Registration, Revenue &amp; Disaster Management Department. Under Section 32 of the Registration Act, your Will can be registered at the Sub-Registrar Office having jurisdiction over your residence or where any of your properties are located.
+                  Odisha operates designated District Sub-Registrar (DSR) and Sub-Registrar Offices under the Directorate of Registration, Revenue &amp; Disaster Management Department. Under Section 32 of the Registration Act, your Will can be registered at the SRO office having area over your residence or where any of your assets are located.
                 </p>
               </div>
 
@@ -782,7 +782,7 @@ export default function OdishaLocationClient({ faqs }: Props) {
                     <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200/80 pb-3">
                       <div>
                         <span className="text-[10px] font-mono uppercase tracking-wider text-[#C65378] font-bold">
-                          Designated Jurisdiction
+                          Designated Area
                         </span>
                         <h4 className="text-base sm:text-lg font-extrabold text-slate-900">
                           {activeHubData.sro}
@@ -828,7 +828,7 @@ export default function OdishaLocationClient({ faqs }: Props) {
                   5. Regional Cities: City-Wise Will Drafting in Odisha
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Estate assets in Odisha span 99-year GA residential leases and BDA plots in Bhubaneswar, heritage family properties and CDA colonies in Cuttack, steel township houses in Rourkela, spiritual seaside estates in Puri, silk trade units in Berhampur, western industrial plots in Sambalpur, and mining corridors across Angul and Jharsuguda. Our estate advocates deliver customized legal drafting, Odisha e-Registration assistance, and Sub-Registrar accompaniment across all key regional hubs:
+                  Estate assets in Odisha span 99-year GA home leases and BDA plots in Bhubaneswar, heritage family assets and CDA colonies in Cuttack, steel township houses in Rourkela, spiritual seaside estates in Puri, silk trade units in Berhampur, western industrial plots in Sambalpur, and mining corridors across Angul and Jharsuguda. Our estate lawyers deliver customized legal drafting, Odisha e-Registration help, and Sub-Registrar accompaniment across all key regional hubs:
                 </p>
               </div>
 
@@ -858,7 +858,7 @@ export default function OdishaLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Specialized <strong>Will drafting services in Bhubaneswar</strong> for General Administration (GA) Department 99-year leasehold plots, BDA housing schemes, and luxury apartments in Patia. Formulates clear clauses for GA lease substitution, BMC property tax mutation, and financial portfolio distribution.
+                      Specialized <strong>Will drafting services in Bhubaneswar</strong> for General Administration (GA) Department 99-year leasehold plots, BDA housing schemes, and luxury apartments in Patia. Formulates clear clauses for GA lease substitution, BMC property tax name change, and financial portfolio split.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -867,7 +867,7 @@ export default function OdishaLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Khandagiri DSR &amp; Unit 2 Master Canteen</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Odisha e-Registration slot booking, advocate physical attendance, and Section 31 doorstep execution for senior citizens.
+                        Odisha e-Registration slot booking, lawyer physical attendance, and Section 31 doorstep signing for senior citizens.
                       </p>
                     </div>
                   </div>
@@ -911,7 +911,7 @@ export default function OdishaLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Expert <strong>Will drafting services in Cuttack</strong> for Cuttack Development Authority (CDA) leasehold and freehold plots, ancestral joint family properties, and commercial complexes in Badambadi. Codifies clear bequests to prevent civil court litigation under Orissa High Court jurisprudence.
+                      Expert <strong>Will drafting services in Cuttack</strong> for Cuttack Development Authority (CDA) leasehold and freehold plots, family joint family assets, and shop complexes in Badambadi. Codifies clear bequests to prevent civil court court fights under Orissa High Court jurisprudence.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -920,13 +920,13 @@ export default function OdishaLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Collectorate Compound, Chandini Chowk</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        CDA allotment transfer compliance, High Court advocate review, and certified Book III record collection.
+                        CDA allotment transfer compliance, High Court lawyer review, and certified Book III record collection.
                       </p>
                     </div>
                   </div>
 
                   <div className="pt-4 mt-4 border-t border-slate-100 flex items-center justify-between">
-                    <span className="text-xs font-bold text-slate-500">CDA Sectors &amp; Ancestral Homes</span>
+                    <span className="text-xs font-bold text-slate-500">CDA Sectors &amp; Family Homes</span>
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
@@ -964,7 +964,7 @@ export default function OdishaLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Comprehensive <strong>Will drafting services in Rourkela</strong> for steel plant employees, mining contractors, and residential property owners across Chhend Colony and Civil Township. Details Rourkela Development Authority (RDA) property transfers and corporate terminal benefits.
+                      Full <strong>Will drafting services in Rourkela</strong> for steel plant employees, mining contractors, and home property owners across Chhend Colony and Civil Township. Details Rourkela Development Authority (RDA) property transfers and corporate terminal benefits.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1017,7 +1017,7 @@ export default function OdishaLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Dedicated <strong>Will drafting services in Puri</strong> for beachfront hotels, family holiday homes, ancestral properties along Grand Road, and PKDA residential plots. Solves complex questions of Matha land vs freehold title and guarantees smooth succession without disputes.
+                      Dedicated <strong>Will drafting services in Puri</strong> for beachfront hotels, family holiday homes, family assets along Grand Road, and PKDA home plots. Solves complex questions of Matha land vs freehold title and guarantees smooth succession without fights.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1026,7 +1026,7 @@ export default function OdishaLocationClient({ faqs }: Props) {
                         <span>SRO Hub: District Collectorate Campus, VIP Road</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Doorstep SRO visits for senior pilgrims and residents, title verification, and Book III registration.
+                        Doorstep SRO visits for senior pilgrims and residents, title check, and Book III registration.
                       </p>
                     </div>
                   </div>
@@ -1051,7 +1051,7 @@ export default function OdishaLocationClient({ faqs }: Props) {
                     <div className="flex items-center justify-between gap-2">
                       <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-rose-50 text-[#C65378] border border-rose-100">
                         <MapPin className="w-3.5 h-3.5" />
-                        Southern Commercial Hub
+                        Southern Shop Hub
                       </span>
                       <span className="text-[11px] font-semibold text-slate-500 bg-slate-100 px-2.5 py-1 rounded-lg">
                         SRO Berhampur (Ganjam)
@@ -1070,7 +1070,7 @@ export default function OdishaLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Customized <strong>Will drafting services in Berhampur</strong> for traditional silk traders, wholesale business owners, and BeDA residential property holders across Ganjam district. Clarifies business ownership succession and smooth municipal mutation with BeMC.
+                      Customized <strong>Will drafting services in Berhampur</strong> for traditional silk traders, wholesale business owners, and BeDA home property holders across Ganjam district. Clarifies business ownership succession and smooth municipal name change with BeMC.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1085,7 +1085,7 @@ export default function OdishaLocationClient({ faqs }: Props) {
                   </div>
 
                   <div className="pt-4 mt-4 border-t border-slate-100 flex items-center justify-between">
-                    <span className="text-xs font-bold text-slate-500">Commercial &amp; Residential</span>
+                    <span className="text-xs font-bold text-slate-500">Shop &amp; Home</span>
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
@@ -1123,7 +1123,7 @@ export default function OdishaLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Professional <strong>Will drafting services in Sambalpur</strong> and Burla for university faculty, power and aluminium sector professionals, and SDA plotted homeowners. Ensures seamless title succession and protection of ancestral agricultural land under Bhulekh RoR.
+                      Professional <strong>Will drafting services in Sambalpur</strong> and Burla for university faculty, power and aluminium sector professionals, and SDA plotted homeowners. Ensures seamless title succession and protection of family farm land under Bhulekh RoR.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1132,7 +1132,7 @@ export default function OdishaLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Revenue Complex, Kacheri Road</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        SDA plot documentation review, Bhulekh mutation guidance, and Sub-Registrar accompaniment.
+                        SDA plot papers review, Bhulekh name change guidance, and Sub-Registrar accompaniment.
                       </p>
                     </div>
                   </div>
@@ -1176,7 +1176,7 @@ export default function OdishaLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Reliable <strong>Will drafting services in Balasore</strong> for maritime export business owners, agro-industrialists, and residential plot holders. Eliminates disputes over coastal land parcels and ensures direct mutation under the Odisha Mutation Manual.
+                      Reliable <strong>Will drafting services in Balasore</strong> for maritime export business owners, agro-industrialists, and home plot holders. Eliminates fights over coastal land parcels and ensures direct name change under the Odisha Name Change Manual.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1185,7 +1185,7 @@ export default function OdishaLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Collectorate Campus, OT Road</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Bhulekh land extract verification, e-Registration slot booking, and local advocate support.
+                        Bhulekh land extract check, e-Registration slot booking, and local lawyer support.
                       </p>
                     </div>
                   </div>
@@ -1229,7 +1229,7 @@ export default function OdishaLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Specialized <strong>Will drafting services in Angul and Jharsuguda</strong> for engineers, power plant executives, and industrial vendors. Formulates unambiguous bequests for plotted company colonies, commercial warehouses, and demat wealth.
+                      Specialized <strong>Will drafting services in Angul and Jharsuguda</strong> for engineers, power plant executives, and industrial vendors. Formulates clear bequests for plotted company colonies, shop warehouses, and demat wealth.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1270,7 +1270,7 @@ export default function OdishaLocationClient({ faqs }: Props) {
                   6. Step-by-Step SOP: Drafting to SRO Registration in Odisha
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Follow this verified 5-stage legal operating procedure to draft, execute, and register your Will before the Sub-Registrar in Odisha:
+                  Follow this verified 5-stage legal operating step to draft, execute, and register your Will before the Sub-Registrar in Odisha:
                 </p>
               </div>
 
@@ -1295,7 +1295,7 @@ export default function OdishaLocationClient({ faqs }: Props) {
                       2
                     </span>
                     <h3 className="font-bold text-sm text-slate-900">
-                      Advocate Drafting
+                      Lawyer Drafting
                     </h3>
                     <p className="text-xs text-slate-600 leading-relaxed">
                       Draft customized legal clauses covering revocation of previous wills, survivorship, executor powers, and minor guardianships.
@@ -1309,10 +1309,10 @@ export default function OdishaLocationClient({ faqs }: Props) {
                       3
                     </span>
                     <h3 className="font-bold text-sm text-slate-900">
-                      Valid Execution
+                      Valid Signing
                     </h3>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Print on standard A4 paper and sign each page in the physical presence of two independent non-beneficiary adult witnesses.
+                      Print on standard A4 paper and sign each page in the physical presence of two independent non-heir adult witnesses.
                     </p>
                   </div>
                 </div>
@@ -1340,7 +1340,7 @@ export default function OdishaLocationClient({ faqs }: Props) {
                       SRO Biometrics
                     </h3>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Visit the Odisha SRO with witnesses for identity verification, photo capture, and biometric thumbprint to seal Book III entry.
+                      Visit the Odisha SRO with witnesses for identity check, photo capture, and biometric thumbprint to seal Book III entry.
                     </p>
                   </div>
                 </div>
@@ -1358,7 +1358,7 @@ export default function OdishaLocationClient({ faqs }: Props) {
                   7. Section 31 Doorstep SRO Registration for Senior Citizens
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  For elderly, retired civil servants, or bedridden citizens residing in Saheed Nagar, Jayadev Vihar, CDA Cuttack, or regional districts, traveling to the Sub-Registrar Office can be physically challenging. Under <strong>Section 31 of the Registration Act, 1908</strong>, the Sub-Registrar holds statutory authority to attend a private residence or medical care facility to register a Will.
+                  For elderly, retired civil servants, or bedridden citizens residing in Saheed Nagar, Jayadev Vihar, CDA Cuttack, or regional districts, traveling to the SRO office can be physically challenging. Under <strong>Section 31 of the Registration Act, 1908</strong>, the Sub-Registrar holds legal authority to attend a private residence or medical care facility to register a Will.
                 </p>
               </div>
 
@@ -1378,7 +1378,7 @@ export default function OdishaLocationClient({ faqs }: Props) {
                   <div className="flex items-start gap-3 p-4 rounded-2xl bg-slate-50 border border-slate-100">
                     <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
                     <div>
-                      <strong className="text-slate-900 block">Commission Application</strong>
+                      <strong className="text-slate-900 block">Commission Form</strong>
                       <span className="text-slate-600">Our legal team prepares and submits the formal Section 31 special commission petition before the jurisdictional Odisha Sub-Registrar.</span>
                     </div>
                   </div>
@@ -1413,7 +1413,7 @@ export default function OdishaLocationClient({ faqs }: Props) {
                   8. Document Checklist for Odisha Sub-Registrar Offices
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Prepare your documentation before booking your Sub-Registrar appointment. You have organized <strong>{checkedCount} of {checklist.length}</strong> required documents:
+                  Prepare your papers before booking your Sub-Registrar appointment. You have organized <strong>{checkedCount} of {checklist.length}</strong> required documents:
                 </p>
               </div>
 
@@ -1463,7 +1463,7 @@ export default function OdishaLocationClient({ faqs }: Props) {
                   9. Odisha Property Types: GA Leases, BDA Plots &amp; Farmland
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Succession procedures in Odisha vary considerably depending on the nature of title and governing authority:
+                  Succession steps in Odisha vary considerably depending on the nature of title and governing authority:
                 </p>
               </div>
 
@@ -1476,7 +1476,7 @@ export default function OdishaLocationClient({ faqs }: Props) {
                     GA Department 99-Year Leases
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Residential plots in Bhubaneswar Units 1 to 9, Saheed Nagar, and Nayapalli are held on 99-year GA department leases. A registered Will directs the GA &amp; PG Department to execute a fresh leasehold substitution deed without civil court litigation.
+                    Home plots in Bhubaneswar Units 1 to 9, Saheed Nagar, and Nayapalli are held on 99-year GA department leases. A registered Will directs the GA &amp; PG Department to execute a fresh leasehold substitution deed without civil court court fights.
                   </p>
                 </div>
 
@@ -1488,19 +1488,19 @@ export default function OdishaLocationClient({ faqs }: Props) {
                     BDA &amp; CDA Freehold Schemes
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Allotments in BDA colonies across Bhubaneswar or CDA Sectors 1 to 14 in Cuttack require clear testamentary identification. The registered Will enables the beneficiary to substitute title directly in the development authority&apos;s records.
+                    Allotments in BDA colonies across Bhubaneswar or CDA Sectors 1 to 14 in Cuttack require clear testamentary ID. The registered Will enables the heir to substitute title directly in the development authority&apos;s records.
                   </p>
                 </div>
 
                 <div className="bg-white rounded-3xl border border-slate-200/90 p-6 shadow-xs space-y-3">
                   <span className="px-3 py-1 rounded-full bg-emerald-100 text-emerald-800 text-xs font-bold uppercase">
-                    Bhulekh Agricultural Land
+                    Bhulekh Farm Land
                   </span>
                   <h3 className="font-bold text-base text-slate-900">
                     Bhulekh RoR &amp; OLR Compliance
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Agricultural land across coastal and western Odisha requires bequests structured in compliance with ceiling limits and tribal transfer safeguards under Sections 22 and 23 of the Odisha Land Reforms Act, 1960.
+                    Farm land across coastal and western Odisha requires bequests structured in compliance with ceiling limits and tribal transfer safeguards under Sections 22 and 23 of the Odisha Land Reforms Act, 1960.
                   </p>
                 </div>
               </div>
@@ -1517,7 +1517,7 @@ export default function OdishaLocationClient({ faqs }: Props) {
                   10. Official IGR Odisha Registration Fees &amp; Charges
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Unlike commercial property sale deeds that attract significant stamp duty in Odisha, testamentary Wills are completely exempt from stamp duty. Government registration fees in Odisha are purely nominal:
+                  Unlike shop property sale deeds that attract significant stamp duty in Odisha, testamentary Wills are completely exempt from stamp duty. Government registration fees in Odisha are purely nominal:
                 </p>
               </div>
 
@@ -1526,7 +1526,7 @@ export default function OdishaLocationClient({ faqs }: Props) {
                   <thead>
                     <tr className="bg-slate-100/80 border-b border-slate-200 text-slate-800">
                       <th className="p-4 font-bold">Fee Component</th>
-                      <th className="p-4 font-bold">Statutory Amount</th>
+                      <th className="p-4 font-bold">Legal Amount</th>
                       <th className="p-4 font-bold">Remittance Authority</th>
                     </tr>
                   </thead>
@@ -1538,7 +1538,7 @@ export default function OdishaLocationClient({ faqs }: Props) {
                     </tr>
                     <tr>
                       <td className="p-4 font-semibold">SRO Book III Registration Fee</td>
-                      <td className="p-4 font-bold text-[#C65378]">₹100 (Flat Statutory Fee)</td>
+                      <td className="p-4 font-bold text-[#C65378]">₹100 (Flat Legal Fee)</td>
                       <td className="p-4">Directorate of Registration Odisha</td>
                     </tr>
                     <tr>
@@ -1567,7 +1567,7 @@ export default function OdishaLocationClient({ faqs }: Props) {
                   11. Transparent Will Packages &amp; Legal Fees in Odisha
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Choose the legal assistance package tailored to your family&apos;s estate planning and property portfolio in Odisha:
+                  Choose the legal help package tailored to your family&apos;s estate planning and property portfolio in Odisha:
                 </p>
               </div>
 
@@ -1594,11 +1594,11 @@ export default function OdishaLocationClient({ faqs }: Props) {
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>Legally vetted statutory clauses</span>
+                        <span>Legally vetted legal clauses</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>Instant PDF download &amp; execution guide</span>
+                        <span>Instant PDF download &amp; signing guide</span>
                       </li>
                     </ul>
                   </div>
@@ -1618,16 +1618,16 @@ export default function OdishaLocationClient({ faqs }: Props) {
                   </div>
                   <div className="space-y-4">
                     <span className="text-xs font-bold uppercase tracking-wider text-[#C65378]">
-                      Comprehensive
+                      Full
                     </span>
                     <h3 className="font-extrabold text-xl text-slate-900">
-                      Advocate Consultation
+                      Lawyer Talk
                     </h3>
                     <div className="text-3xl font-black text-slate-900">
                       ₹4,990
                     </div>
                     <p className="text-xs text-slate-600">
-                      Senior estate advocate review for GA leaseholds, BDA/CDA plots, and multi-heir portfolios.
+                      Senior estate lawyer review for GA leaseholds, BDA/CDA plots, and multi-heir portfolios.
                     </p>
                     <ul className="space-y-2.5 text-xs text-slate-700 pt-3 border-t border-slate-100">
                       <li className="flex items-center gap-2">
@@ -1636,7 +1636,7 @@ export default function OdishaLocationClient({ faqs }: Props) {
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>1-on-1 video call with senior advocate</span>
+                        <span>1-on-1 video call with senior lawyer</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
@@ -1652,7 +1652,7 @@ export default function OdishaLocationClient({ faqs }: Props) {
                     href="/contact"
                     className="mt-6 w-full py-3 rounded-xl bg-[#C65378] text-white text-xs font-bold text-center hover:bg-[#a13c5d] transition-colors cursor-pointer"
                   >
-                    Book Advocate Call
+                    Book Lawyer Call
                   </a>
                 </div>
 
@@ -1669,7 +1669,7 @@ export default function OdishaLocationClient({ faqs }: Props) {
                       ₹9,990
                     </div>
                     <p className="text-xs text-slate-600">
-                      End-to-end registration coordination across any Odisha Sub-Registrar Office or home visit.
+                      End-to-end registration coordination across any Odisha SRO office or home visit.
                     </p>
                     <ul className="space-y-2.5 text-xs text-slate-700 pt-3 border-t border-slate-100">
                       <li className="flex items-center gap-2">
@@ -1678,7 +1678,7 @@ export default function OdishaLocationClient({ faqs }: Props) {
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>Advocate physically attends Odisha SRO</span>
+                        <span>Lawyer physically attends Odisha SRO</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
@@ -1753,7 +1753,7 @@ export default function OdishaLocationClient({ faqs }: Props) {
                   <span>STATUTORY CITATIONS</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  13. Statutory Citations &amp; Odisha Legal Portals
+                  13. Legal Citations &amp; Odisha Legal Portals
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Our drafting protocols comply strictly with codified Indian statutes and Odisha state registration frameworks:
@@ -1802,10 +1802,10 @@ export default function OdishaLocationClient({ faqs }: Props) {
             {/* BOTTOM CONVERSION CTA BANNER */}
             <section className="rounded-3xl bg-gradient-to-br from-[#172228] to-[#212F35] text-white p-8 sm:p-12 text-center space-y-5 shadow-xl">
               <h3 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-white">
-                Protect Your Odisha Properties &amp; Family Legacy
+                Protect Your Odisha Assets &amp; Family Legacy
               </h3>
               <p className="text-sm sm:text-base text-slate-200 max-w-2xl mx-auto leading-relaxed">
-                Do not leave your hard-earned Odisha plots, GA leaseholds, or family lands to administrative delays. Draft a legally binding Will online today or consult our senior High Court advocates.
+                Do not leave your hard-earned Odisha plots, GA leaseholds, or family lands to office delays. Draft a legally binding Will online today or consult our senior High Court lawyers.
               </p>
               <div className="pt-3 flex flex-col sm:flex-row items-center justify-center gap-4">
                 <a
@@ -1819,7 +1819,7 @@ export default function OdishaLocationClient({ faqs }: Props) {
                   href="/contact"
                   className="w-full sm:w-auto px-6 py-3.5 rounded-full bg-white/10 text-white font-bold text-sm sm:text-base hover:bg-white/20 transition-all border border-white/20"
                 >
-                  Book Advocate Consultation
+                  Book Lawyer Talk
                 </a>
               </div>
             </section>
@@ -1862,7 +1862,7 @@ export default function OdishaLocationClient({ faqs }: Props) {
               />
             </div>
             <div className="pt-3 flex items-center justify-between text-xs text-slate-500">
-              <span>Odisha SRO Registered &amp; GA / Bhulekh Mutation Compliant</span>
+              <span>Odisha SRO Registered &amp; GA / Bhulekh Name Change Compliant</span>
               <a
                 href="/start"
                 onClick={(e) => {

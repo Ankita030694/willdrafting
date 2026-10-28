@@ -100,19 +100,19 @@ const INITIAL_CHECKLIST = [
   },
   {
     id: "item-2",
-    label: "Original Aadhaar Card & PAN of Testator",
-    detail: "Essential for biometric identity validation and Assam Panjeeyan portal photograph verification.",
+    label: "Original Aadhaar Card & PAN of Will maker",
+    detail: "Essential for biometric identity validation and Assam Panjeeyan portal photograph check.",
     checked: true,
   },
   {
     id: "item-3",
     label: "Two Independent Adult Witnesses with KYC",
-    detail: "Must carry original photo IDs and must not be beneficiaries receiving any asset under the Will.",
+    detail: "Must carry original photo IDs and must not be heirs receiving any asset under the Will.",
     checked: true,
   },
   {
     id: "item-4",
-    label: "Doctor Mental Fitness Certificate (MBBS / MD)",
+    label: "Doctor Sound Mind Note (MBBS / MD)",
     detail: "Strongly advised for senior citizens aged 60+. Certifies testamentary mental capacity and lucidity.",
     checked: false,
   },
@@ -131,7 +131,7 @@ const INITIAL_CHECKLIST = [
   {
     id: "item-7",
     label: "Jamabandi & Periodic Myadi Patta Records",
-    detail: "Recent computerized land records from Dharitree portal for agricultural plots or homestead land.",
+    detail: "Recent computerized land records from Dharitree portal for farm plots or homestead land.",
     checked: false,
   },
 ];
@@ -225,7 +225,7 @@ export default function DispurLocationClient({ faqs }: Props) {
               </h1>
 
               <p className="text-base sm:text-lg text-slate-200 leading-relaxed font-normal max-w-2xl">
-                Draft an enforceable, legally watertight Will for your GMDA residential plots, GMC municipal apartments, GS Road commercial properties, and periodic Myadi Patta holdings. Get senior advocate drafting, Assam Panjeeyan slot booking, and Section 31 doorstep execution.
+                Draft an enforceable, legally watertight Will for your GMDA home plots, GMC municipal apartments, GS Road shop assets, and periodic Myadi Patta holdings. Get senior lawyer drafting, Assam Panjeeyan slot booking, and Section 31 doorstep signing.
               </p>
 
               <div className="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
@@ -476,17 +476,17 @@ export default function DispurLocationClient({ faqs }: Props) {
                       <span>Optional Registration</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Will registration is optional under Section 18(e) of the Registration Act, 1908. An unregistered Will signed before two witnesses is legally valid, but official Book III SRO registration provides absolute authenticity against property challenges.
+                      Will registration is optional under Section 18(e) of the Registration Act, 1908. An unregistered Will signed before two witnesses is legally valid, but official Book III SRO registration provides absolute authenticity against property fights.
                     </p>
                   </div>
 
                   <div className="p-4 rounded-2xl bg-slate-50/70 border border-slate-100 space-y-1.5">
                     <div className="flex items-center gap-2 font-bold text-sm text-slate-900">
                       <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
-                      <span>Probate Non-Compulsory</span>
+                      <span>Probate Non-Needed</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Dispur lies outside the historical presidency towns. Under Section 213 of the Indian Succession Act and Gauhati High Court jurisprudence, court probate is strictly non-compulsory in Assam, enabling direct mutation with a registered Will.
+                      Dispur lies outside the historical presidency towns. Under Section 213 of the Indian Succession Act and Gauhati High Court jurisprudence, court probate is strictly non-needed in Assam, enabling direct name change with a registered Will.
                     </p>
                   </div>
 
@@ -503,7 +503,7 @@ export default function DispurLocationClient({ faqs }: Props) {
                   <div className="p-4 rounded-2xl bg-slate-50/70 border border-slate-100 space-y-1.5">
                     <div className="flex items-center gap-2 font-bold text-sm text-slate-900">
                       <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
-                      <span>GMDA &amp; Dharitree Land Mutation</span>
+                      <span>GMDA &amp; Dharitree Land Name Change</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
                       A registered Will expedites ownership transfer with the Guwahati Metropolitan Development Authority (GMDA), GMC municipal assessment registers, and Circle Office Dharitree portal for periodic Myadi Patta holdings.
@@ -524,10 +524,10 @@ export default function DispurLocationClient({ faqs }: Props) {
                   1. Will Drafting &amp; Legal Framework in Dispur
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Will drafting and succession planning across Dispur and Kamrup Metropolitan district are governed by the <strong>Indian Succession Act, 1925</strong>, the <strong>Registration Act, 1908</strong>, and the <strong>Assam Land and Revenue Regulation, 1886</strong>. Any adult of sound mind can legally bequeath self-acquired residential property, GMDA plots, periodic Myadi Patta lands, commercial business shares, and movable savings.
+                  Will drafting and succession planning across Dispur and Kamrup Metropolitan district are governed by the <strong>Indian Succession Act, 1925</strong>, the <strong>Registration Act, 1908</strong>, and the <strong>Assam Land and Revenue Regulation, 1886</strong>. Any adult of sound mind can legally bequeath self-acquired home property, GMDA plots, periodic Myadi Patta lands, shop business shares, and movable savings.
                 </p>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  As the seat of the Assam Government and capital administrative center, Dispur presents a unique mixture of property holdings. Residents own modern multi-story apartments along GS Road, GMDA allotted residential plots in Six Mile, ancestral Myadi Patta homesteads in Beltola and Kahilipara, and commercial showrooms in Ganeshguri. Without a meticulously drafted Will, surviving heirs encounter administrative deadlock across the Circle Office, GMDA desks, and GMC revenue counters.
+                  As the seat of the Assam Government and capital office center, Dispur presents a unique mixture of property holdings. Residents own modern multi-story apartments along GS Road, GMDA allotted home plots in Six Mile, family Myadi Patta homesteads in Beltola and Kahilipara, and shop showrooms in Ganeshguri. Without a meticulously drafted Will, surviving heirs encounter office deadlock across the Circle Office, GMDA desks, and GMC revenue counters.
                 </p>
               </div>
 
@@ -538,7 +538,7 @@ export default function DispurLocationClient({ faqs }: Props) {
                   </span>
                   <h3 className="font-bold text-sm text-slate-900">Legal Capacity</h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    The testator must be a major aged 18 years or older with sound testamentary mental capacity (Section 59).
+                    The Will maker must be a major aged 18 years or older with sound testamentary mental capacity (Section 59).
                   </p>
                 </div>
 
@@ -548,7 +548,7 @@ export default function DispurLocationClient({ faqs }: Props) {
                   </span>
                   <h3 className="font-bold text-sm text-slate-900">Free Consent</h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Executed voluntarily without undue influence, fraudulent representations, or family coercion (Section 61).
+                    Signed voluntarily without undue influence, fraudulent representations, or family coercion (Section 61).
                   </p>
                 </div>
 
@@ -558,7 +558,7 @@ export default function DispurLocationClient({ faqs }: Props) {
                   </span>
                   <h3 className="font-bold text-sm text-slate-900">Two Witnesses</h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Must be signed in the physical presence of at least two independent adult attesting witnesses (Section 63).
+                    Must be signed in the physical presence of at least two independent adult witnesses (Section 63).
                   </p>
                 </div>
 
@@ -566,9 +566,9 @@ export default function DispurLocationClient({ faqs }: Props) {
                   <span className="w-8 h-8 rounded-xl bg-rose-50 text-[#C65378] flex items-center justify-center font-bold text-sm">
                     <ShieldCheck className="w-4 h-4" />
                   </span>
-                  <h3 className="font-bold text-sm text-slate-900">Non-Beneficiary</h3>
+                  <h3 className="font-bold text-sm text-slate-900">Non-Heir</h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Attesting witnesses and their spouses must not receive any legacy or property under the Will (Section 67).
+                    Witnesses and their spouses must not receive any legacy or property under the Will (Section 67).
                   </p>
                 </div>
               </div>
@@ -582,13 +582,13 @@ export default function DispurLocationClient({ faqs }: Props) {
                   <span>REGISTRATION STATUS</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  2. Is Will Registration Mandatory in Dispur?
+                  2. Is Will Registration Needed in Dispur?
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Under Section 18(e) of the Registration Act, 1908, the registration of a testamentary Will is strictly <strong>optional</strong>. An unregistered Will signed on standard white paper before two independent witnesses is legally valid and admissible in court.
                 </p>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  However, with rapidly escalating real estate valuations along GS Road, Beltola, and Six Mile, estate planning advocates strongly advise formal registration at the Sub-Registrar Office. An official Book III registration eliminates suspicion of forged signatures, ensures verified government storage, and guarantees seamless ownership transfer across Assam government agencies.
+                  However, with rapidly escalating real estate valuations along GS Road, Beltola, and Six Mile, estate planning lawyers strongly advise formal registration at the SRO office. An official Book III registration eliminates suspicion of forged signatures, ensures verified government storage, and guarantees seamless ownership transfer across Assam government agencies.
                 </p>
               </div>
 
@@ -610,21 +610,21 @@ export default function DispurLocationClient({ faqs }: Props) {
                     </tr>
                     <tr>
                       <td className="p-4 font-semibold">Protection from Challenge</td>
-                      <td className="p-4 bg-rose-50/20">High legal presumption of genuine execution</td>
+                      <td className="p-4 bg-rose-50/20">High legal presumption of genuine signing</td>
                       <td className="p-4 bg-slate-50/20">Vulnerable to allegations of fraud or coercion</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-semibold">GMDA Plot &amp; Flat Mutation</td>
+                      <td className="p-4 font-semibold">GMDA Plot &amp; Flat Name Change</td>
                       <td className="p-4 bg-rose-50/20">Direct transfer on presenting certified copy</td>
                       <td className="p-4 bg-slate-50/20">GMDA officials often demand indemnity bonds or legal heir NOCs</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-semibold">GMC Property Tax Mutation</td>
+                      <td className="p-4 font-semibold">GMC Property Tax Name Change</td>
                       <td className="p-4 bg-rose-50/20">Smooth holding substitution in municipal records</td>
-                      <td className="p-4 bg-slate-50/20">Municipal assessment officers may withhold mutation</td>
+                      <td className="p-4 bg-slate-50/20">Municipal assessment officers may withhold name change</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-semibold">Dharitree Myadi Patta Mutation</td>
+                      <td className="p-4 font-semibold">Dharitree Myadi Patta Name Change</td>
                       <td className="p-4 bg-rose-50/20">Accepted by Dispur Circle Officer for rapid entry</td>
                       <td className="p-4 bg-slate-50/20">Frequent objections from collateral heirs during notice period</td>
                     </tr>
@@ -649,43 +649,43 @@ export default function DispurLocationClient({ faqs }: Props) {
                   3. Dispur Probate Law: Gauhati High Court Jurisprudence
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  One of the most persistent misconceptions among Dispur property owners is whether probate from the Gauhati High Court is compulsory before inheriting real estate. The settled legal answer is <strong>no</strong>.
+                  One of the most persistent misconceptions among Dispur property owners is whether probate from the Gauhati High Court is needed before inheriting real estate. The settled legal answer is <strong>no</strong>.
                 </p>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Under Section 213 read with Section 57(a) and 57(b) of the Indian Succession Act, 1925, probate is mandatory solely for Wills executed within or properties situated within the historical presidency towns of Calcutta, Madras, and Bombay. Assam is a non-presidency territory. The Gauhati High Court has repeatedly held that obtaining court probate is strictly non-compulsory for Hindu, Buddhist, Sikh, and Jain testators in Dispur and Kamrup Metro.
+                  Under Section 213 read with Section 57(a) and 57(b) of the Indian Succession Act, 1925, probate is needed solely for Wills signed within or assets situated within the historical presidency towns of Calcutta, Madras, and Bombay. Assam is a non-presidency territory. The Gauhati High Court has repeatedly held that getting court probate is strictly non-needed for Hindu, Buddhist, Sikh, and Jain testators in Dispur and Kamrup Metro.
                 </p>
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="bg-white rounded-3xl border border-slate-200/90 p-6 shadow-xs space-y-3">
                   <span className="px-3 py-1 rounded-full bg-emerald-100 text-emerald-800 text-xs font-extrabold uppercase">
-                    Settled Law: Non-Compulsory
+                    Settled Law: Non-Needed
                   </span>
                   <h3 className="font-bold text-base text-slate-900">
                     Gauhati High Court Precedents
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    The Gauhati High Court has established that a legatee or executor can establish their right to property in Assam without obtaining probate or letters of administration. A registered Will under Book III is fully operational for GMDA plot transfer, GMC municipal mutation, bank account claims, and share transmissions.
+                    The Gauhati High Court has established that a legatee or executor can set up their right to property in Assam without getting probate or letters of management. A registered Will under Book III is fully operational for GMDA plot transfer, GMC municipal name change, bank account claims, and share transmissions.
                   </p>
                   <div className="pt-2 text-xs text-slate-500 flex items-center gap-1.5">
                     <Check className="w-3.5 h-3.5 text-emerald-600" />
-                    <span>Enables immediate asset transmission without High Court delays</span>
+                    <span>Enables immediate asset transfer without High Court delays</span>
                   </div>
                 </div>
 
                 <div className="bg-white rounded-3xl border border-rose-200 p-6 shadow-xs space-y-3 bg-rose-50/30">
                   <span className="px-3 py-1 rounded-full bg-rose-100 text-[#C65378] text-xs font-extrabold uppercase">
-                    Voluntary Filings: High-Value Disputes
+                    Voluntary Filings: High-Value Fights
                   </span>
                   <h3 className="font-bold text-base text-slate-900">
                     When is Probate Filed in Kamrup Metro Court?
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    An executor may voluntarily petition for probate before the District Judge, Kamrup Metropolitan at Panbazar, if disgruntled legal heirs initiate partition lawsuits, dispute testamentary sanity, or contest property boundaries. A probate decree operates <em>in rem</em> and permanently silences collateral disputes.
+                    An executor may voluntarily petition for probate before the District Judge, Kamrup Metropolitan at Panbazar, if disgruntled legal heirs initiate split lawsuits, fight testamentary sanity, or contest property boundaries. A probate decree operates <em>in rem</em> and permanently silences collateral fights.
                   </p>
                   <div className="pt-2 text-xs text-slate-500 flex items-center gap-1.5">
                     <AlertTriangle className="w-3.5 h-3.5 text-[#C65378]" />
-                    <span>Conclusive judicial decree against any collateral challenges</span>
+                    <span>Strong judicial decree against any collateral fights</span>
                   </div>
                 </div>
               </div>
@@ -766,7 +766,7 @@ export default function DispurLocationClient({ faqs }: Props) {
                   5. Step-by-Step SOP: Drafting to Registration in Dispur
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Follow this verified 5-stage legal operating procedure to create, execute, and register your Will before the Sub-Registrar in Dispur:
+                  Follow this verified 5-stage legal operating step to create, execute, and register your Will before the Sub-Registrar in Dispur:
                 </p>
               </div>
 
@@ -791,7 +791,7 @@ export default function DispurLocationClient({ faqs }: Props) {
                       2
                     </span>
                     <h3 className="font-bold text-sm text-slate-900">
-                      Advocate Drafting
+                      Lawyer Drafting
                     </h3>
                     <p className="text-xs text-slate-600 leading-relaxed">
                       Draft customized legal clauses covering revocation of past wills, survivorship, executor powers, and minor guardianships.
@@ -805,10 +805,10 @@ export default function DispurLocationClient({ faqs }: Props) {
                       3
                     </span>
                     <h3 className="font-bold text-sm text-slate-900">
-                      Valid Execution
+                      Valid Signing
                     </h3>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Print on A4 paper and sign each page in the physical presence of two independent non-beneficiary adult witnesses.
+                      Print on A4 paper and sign each page in the physical presence of two independent non-heir adult witnesses.
                     </p>
                   </div>
                 </div>
@@ -836,7 +836,7 @@ export default function DispurLocationClient({ faqs }: Props) {
                       SRO Biometrics
                     </h3>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Visit Dispur SRO with witnesses for verbal verification, photo capture, and biometric thumbprint to seal Book III entry.
+                      Visit Dispur SRO with witnesses for verbal check, photo capture, and biometric thumbprint to seal Book III entry.
                     </p>
                   </div>
                 </div>
@@ -854,7 +854,7 @@ export default function DispurLocationClient({ faqs }: Props) {
                   6. Local Area Coverage: Will Drafting Across Dispur
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Estate assets across Dispur span high-value GMDA residential plots, Assam Secretariat capital administrative zones, prime commercial avenues along GS Road and Ganeshguri, and periodic Myadi Patta homesteads across Beltola, Hatigaon, and Kahilipara. Our estate planning advocates provide specialized Will drafting, Assam Panjeeyan portal slot scheduling, and Sub-Registrar accompaniment across all key capital micro-markets:
+                  Estate assets across Dispur span high-value GMDA home plots, Assam Secretariat capital office zones, prime shop avenues along GS Road and Ganeshguri, and periodic Myadi Patta homesteads across Beltola, Hatigaon, and Kahilipara. Our estate planning lawyers provide specialized Will drafting, Assam Panjeeyan portal slot scheduling, and Sub-Registrar accompaniment across all key capital micro-markets:
                 </p>
               </div>
 
@@ -865,7 +865,7 @@ export default function DispurLocationClient({ faqs }: Props) {
                     <div className="flex items-center justify-between gap-2">
                       <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-rose-50 text-[#C65378] border border-rose-100">
                         <MapPin className="w-3.5 h-3.5" />
-                        Capital Administrative Core
+                        Capital Office Core
                       </span>
                       <span className="text-[11px] font-semibold text-slate-500 bg-slate-100 px-2.5 py-1 rounded-lg">
                         SRO Dispur (Capital Complex)
@@ -884,7 +884,7 @@ export default function DispurLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Specialized <strong>Will drafting services in Dispur Capital Complex</strong> and Janata Bhawan zone for senior civil servants, government executives, and long-term capital residents. Codifies succession of GMDA allotted residential plots, government housing society rights, GPF and civil pension gratuities, and public sector bank deposits to ensure frictionless estate transmission without dispute.
+                      Specialized <strong>Will drafting services in Dispur Capital Complex</strong> and Janata Bhawan zone for senior civil servants, government executives, and long-term capital residents. Codifies succession of GMDA allotted home plots, government housing society rights, GPF and civil pension gratuities, and public sector bank deposits to make sure frictionless estate transfer without fight.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -893,7 +893,7 @@ export default function DispurLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Capital Complex Belt, Near Secretariat</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Assam Panjeeyan online slot booking, physical advocate accompaniment, and Section 31 doorstep execution for retired bureaucrats.
+                        Assam Panjeeyan online slot booking, physical lawyer accompaniment, and Section 31 doorstep signing for retired bureaucrats.
                       </p>
                     </div>
                   </div>
@@ -918,7 +918,7 @@ export default function DispurLocationClient({ faqs }: Props) {
                     <div className="flex items-center justify-between gap-2">
                       <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-rose-50 text-[#C65378] border border-rose-100">
                         <Building className="w-3.5 h-3.5" />
-                        Prime Commercial Spine
+                        Prime Shop Spine
                       </span>
                       <span className="text-[11px] font-semibold text-slate-500 bg-slate-100 px-2.5 py-1 rounded-lg">
                         SRO Dispur &amp; Kamrup Metro
@@ -937,7 +937,7 @@ export default function DispurLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Customized <strong>Will drafting services in GS Road and Ganeshguri</strong> for prime commercial properties, corporate retail spaces, multistory apartments, and high-turnover business establishments. Structures clear commercial leasehold bequests, partnership interest succession, shop establishment license transfers, and demat wealth distribution.
+                      Customized <strong>Will drafting services in GS Road and Ganeshguri</strong> for prime shop assets, corporate retail spaces, multistory apartments, and high-turnover business establishments. Structures clear shop leasehold bequests, partnership interest succession, shop establishment license transfers, and demat wealth split.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -946,13 +946,13 @@ export default function DispurLocationClient({ faqs }: Props) {
                         <span>SRO Hub: SRO Dispur &amp; Panbazar DC Office</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Commercial asset mapping, multi-heir equitable division, and expedited Book III registration under Assam Panjeeyan.
+                        Shop asset mapping, multi-heir equitable division, and expedited Book III registration under Assam Panjeeyan.
                       </p>
                     </div>
                   </div>
 
                   <div className="pt-4 mt-4 border-t border-slate-100 flex items-center justify-between">
-                    <span className="text-xs font-bold text-slate-500">Commercial &amp; High-Rise Flats</span>
+                    <span className="text-xs font-bold text-slate-500">Shop &amp; High-Rise Flats</span>
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
@@ -971,7 +971,7 @@ export default function DispurLocationClient({ faqs }: Props) {
                     <div className="flex items-center justify-between gap-2">
                       <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-rose-50 text-[#C65378] border border-rose-100">
                         <MapPin className="w-3.5 h-3.5" />
-                        South-East Residential Hub
+                        South-East Home Hub
                       </span>
                       <span className="text-[11px] font-semibold text-slate-500 bg-slate-100 px-2.5 py-1 rounded-lg">
                         SRO Dispur / Kamrup Metro
@@ -990,16 +990,16 @@ export default function DispurLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Comprehensive <strong>Will drafting services in Beltola and Survey</strong> for premium residential apartments, independent duplex homes, and vibrant family trading enterprises. Formulates precise share distributions between sons and daughters, GMC holding tax mutations, bank locker allocations, and surviving spouse life-interest clauses.
+                      Full <strong>Will drafting services in Beltola and Survey</strong> for premium home apartments, independent duplex homes, and vibrant family trading enterprises. Formulates precise share distributions between sons and daughters, GMC holding tax mutations, bank locker allocations, and surviving spouse life-interest clauses.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
                       <div className="flex items-center gap-2 font-bold text-slate-900">
                         <Building className="w-3.5 h-3.5 text-[#C65378]" />
-                        <span>SRO Hub: Sub-Registrar Office Dispur</span>
+                        <span>SRO Hub: SRO office Dispur</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Smooth Panjeeyan slot scheduling, independent witness attestation, and doorstep verification for senior citizens.
+                        Smooth Panjeeyan slot scheduling, independent witness attestation, and doorstep check for senior citizens.
                       </p>
                     </div>
                   </div>
@@ -1043,7 +1043,7 @@ export default function DispurLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Tailored <strong>Will drafting services in Hatigaon and Sijubari</strong> for multistory residential housing schemes, cooperative residential societies, and ancestral landholdings. Eliminates inheritance friction under personal succession laws, facilitating rapid name substitution in GMC municipal records and Circle Office Jamabandi registers.
+                      Tailored <strong>Will drafting services in Hatigaon and Sijubari</strong> for multistory home housing schemes, cooperative home societies, and family landholdings. Eliminates inheritance friction under personal succession laws, facilitating rapid name substitution in GMC municipal records and Circle Office Jamabandi registers.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1052,7 +1052,7 @@ export default function DispurLocationClient({ faqs }: Props) {
                         <span>SRO Hub: SRO Dispur Capital Zone</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Complete asset documentation review, biometric scheduling, and certified copy delivery from Book III.
+                        Complete asset papers review, biometric scheduling, and certified copy delivery from Book III.
                       </p>
                     </div>
                   </div>
@@ -1077,7 +1077,7 @@ export default function DispurLocationClient({ faqs }: Props) {
                     <div className="flex items-center justify-between gap-2">
                       <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-rose-50 text-[#C65378] border border-rose-100">
                         <Building className="w-3.5 h-3.5" />
-                        VIP Residential Corridor
+                        VIP Home Corridor
                       </span>
                       <span className="text-[11px] font-semibold text-slate-500 bg-slate-100 px-2.5 py-1 rounded-lg">
                         SRO Dispur (Kamrup Metro)
@@ -1096,7 +1096,7 @@ export default function DispurLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Expert <strong>Will drafting services in Six Mile and VIP Road</strong> for doctors, corporate professionals, and high-net-worth families owning luxury gated community villas and GMDA approved properties. Codifies digital assets, mutual funds, healthcare clinics, and clear survivorship clauses without civil court delays.
+                      Expert <strong>Will drafting services in Six Mile and VIP Road</strong> for doctors, corporate professionals, and high-net-worth families owning luxury gated community villas and GMDA approved assets. Codifies digital assets, mutual funds, healthcare clinics, and clear survivorship clauses without civil court delays.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1149,7 +1149,7 @@ export default function DispurLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Dedicated <strong>Will drafting services in Kahilipara and Jatia</strong> for independent family bungalows, hill-view plotted land, and ancestral homesteads. Resolves multi-heir land partition issues, preserves family properties across generations, and ensures statutory compliance with GMDA master plan regulations.
+                      Dedicated <strong>Will drafting services in Kahilipara and Jatia</strong> for independent family bungalows, hill-view plotted land, and family homesteads. Resolves multi-heir land split issues, preserves family assets across generations, and ensures legal compliance with GMDA master plan regulations.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1158,7 +1158,7 @@ export default function DispurLocationClient({ faqs }: Props) {
                         <span>SRO Hub: SRO Dispur / DC Office Complex</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Support for ancestral homestead succession, Dharitree mutation, and Book III registration.
+                        Support for family homestead succession, Dharitree name change, and Book III registration.
                       </p>
                     </div>
                   </div>
@@ -1202,7 +1202,7 @@ export default function DispurLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Specialized <strong>Will drafting services in Panjabari and Shilpgram</strong> for quiet residential developments, artist retreats, institutional residences, and family land parcels. Formulates protective trust provisions for elderly dependents and minor children, with clear executor appointment to avoid administrative delays.
+                      Specialized <strong>Will drafting services in Panjabari and Shilpgram</strong> for quiet home developments, artist retreats, institutional residences, and family land parcels. Formulates protective trust rules for elderly dependents and minor children, with clear executor appointment to avoid office delays.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1211,7 +1211,7 @@ export default function DispurLocationClient({ faqs }: Props) {
                         <span>SRO Hub: SRO Dispur Registry</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Doctor mental fitness certificates, independent witness coordination, and seamless Panjeeyan e-challan payment.
+                        Doctor mental fitness papers, independent witness coordination, and seamless Panjeeyan e-challan payment.
                       </p>
                     </div>
                   </div>
@@ -1255,7 +1255,7 @@ export default function DispurLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Comprehensive <strong>Will drafting services in Basistha and NH-27</strong> for suburban commercial transport yards, warehouses, mixed residential buildings, and periodic Myadi Patta holdings. Formulates legally airtight bequests satisfying the Assam Land and Revenue Regulation, preventing unauthorized land disputes.
+                      Full <strong>Will drafting services in Basistha and NH-27</strong> for suburban shop transport yards, warehouses, mixed home buildings, and periodic Myadi Patta holdings. Formulates legally airtight bequests satisfying the Assam Land and Revenue Regulation, preventing unauthorized land fights.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1264,7 +1264,7 @@ export default function DispurLocationClient({ faqs }: Props) {
                         <span>SRO Hub: SRO Sonapur / SRO Dispur</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Suburban land verification, Dharitree Jamabandi cross-checks, and Panjeeyan registration support.
+                        Suburban land check, Dharitree Jamabandi cross-checks, and Panjeeyan registration support.
                       </p>
                     </div>
                   </div>
@@ -1296,7 +1296,7 @@ export default function DispurLocationClient({ faqs }: Props) {
                   7. Section 31 Doorstep SRO Registration for Seniors
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  For elderly, unwell, or bedridden citizens residing in Dispur, Beltola, Hatigaon, or Six Mile, traveling to the Sub-Registrar Office can be a physical challenge. Under <strong>Section 31 of the Registration Act, 1908</strong>, the Sub-Registrar possesses legal authority to attend a private residence or medical care facility to register a Will.
+                  For elderly, unwell, or bedridden citizens residing in Dispur, Beltola, Hatigaon, or Six Mile, traveling to the SRO office can be a physical challenge. Under <strong>Section 31 of the Registration Act, 1908</strong>, the Sub-Registrar possesses legal authority to attend a private residence or medical care facility to register a Will.
                 </p>
               </div>
 
@@ -1316,7 +1316,7 @@ export default function DispurLocationClient({ faqs }: Props) {
                   <div className="flex items-start gap-3 p-4 rounded-2xl bg-slate-50 border border-slate-100">
                     <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
                     <div>
-                      <strong className="text-slate-900 block">Commission Application</strong>
+                      <strong className="text-slate-900 block">Commission Form</strong>
                       <span className="text-slate-600">Our legal team drafts and submits the formal Section 31 special commission petition before the jurisdictional Dispur Sub-Registrar.</span>
                     </div>
                   </div>
@@ -1351,7 +1351,7 @@ export default function DispurLocationClient({ faqs }: Props) {
                   8. Document Checklist for Dispur SRO Will Registration
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Prepare your documentation before scheduling your Sub-Registrar appointment. You have organized <strong>{checkedCount} of {checklist.length}</strong> required documents:
+                  Prepare your papers before scheduling your Sub-Registrar appointment. You have organized <strong>{checkedCount} of {checklist.length}</strong> required documents:
                 </p>
               </div>
 
@@ -1401,7 +1401,7 @@ export default function DispurLocationClient({ faqs }: Props) {
                   9. Dispur Property Types: GMDA Plots &amp; Myadi Patta Lands
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Succession procedures across Dispur vary considerably depending on the nature of property tenure and regulatory jurisdiction:
+                  Succession steps across Dispur vary considerably depending on the nature of property tenure and regulatory area:
                 </p>
               </div>
 
@@ -1414,7 +1414,7 @@ export default function DispurLocationClient({ faqs }: Props) {
                     GMDA Sanctioned Layouts
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Under GMDA master plans, transfer of residential plots and multi-story apartments requires testamentary clarity. A registered Will directs GMC and GMDA desks to mutate property tax records and allotment titles without demanding costly succession certificates.
+                    Under GMDA master plans, transfer of home plots and multi-story apartments requires testamentary clarity. A registered Will directs GMC and GMDA desks to mutate property tax records and allotment titles without demanding costly succession papers.
                   </p>
                 </div>
 
@@ -1426,19 +1426,19 @@ export default function DispurLocationClient({ faqs }: Props) {
                     Periodic Myadi Patta Holdings
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Permanent transferable land in Dispur Circle held under Myadi Patta can be bequeathed legally. Beneficiaries submit the registered Will to the Circle Officer for mutation via the Dharitree portal under the Assam Land and Revenue Regulation, 1886.
+                    Permanent transferable land in Dispur Circle held under Myadi Patta can be bequeathed legally. Heirs submit the registered Will to the Circle Officer for name change via the Dharitree portal under the Assam Land and Revenue Regulation, 1886.
                   </p>
                 </div>
 
                 <div className="bg-white rounded-3xl border border-slate-200/90 p-6 shadow-xs space-y-3">
                   <span className="px-3 py-1 rounded-full bg-emerald-100 text-emerald-800 text-xs font-bold uppercase">
-                    Commercial Enterprises
+                    Shop Enterprises
                   </span>
                   <h3 className="font-bold text-base text-slate-900">
-                    GS Road Commercial Assets
+                    GS Road Shop Assets
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    For commercial showrooms, retail shops, and corporate offices along GS Road and Ganeshguri, testamentary drafting clearly demarcates partnership shares, proprietary business bank accounts, and commercial lease rights.
+                    For shop showrooms, retail shops, and corporate offices along GS Road and Ganeshguri, testamentary drafting clearly demarcates partnership shares, proprietary business bank accounts, and shop lease rights.
                   </p>
                 </div>
               </div>
@@ -1455,7 +1455,7 @@ export default function DispurLocationClient({ faqs }: Props) {
                   10. Official Assam Panjeeyan Registration Fees &amp; Costs
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Unlike commercial sale conveyances or gift deeds that attract substantial stamp duty in Assam, testamentary Wills are completely exempt from stamp duty. Government registration charges in Dispur are nominal:
+                  Unlike shop sale conveyances or gift deeds that attract substantial stamp duty in Assam, testamentary Wills are completely exempt from stamp duty. Government registration charges in Dispur are nominal:
                 </p>
               </div>
 
@@ -1464,7 +1464,7 @@ export default function DispurLocationClient({ faqs }: Props) {
                   <thead>
                     <tr className="bg-slate-100/80 border-b border-slate-200 text-slate-800">
                       <th className="p-4 font-bold">Fee Component</th>
-                      <th className="p-4 font-bold">Statutory Amount</th>
+                      <th className="p-4 font-bold">Legal Amount</th>
                       <th className="p-4 font-bold">Remittance Authority</th>
                     </tr>
                   </thead>
@@ -1486,7 +1486,7 @@ export default function DispurLocationClient({ faqs }: Props) {
                     </tr>
                     <tr>
                       <td className="p-4 font-semibold">Section 31 Special Commission (Home Visit)</td>
-                      <td className="p-4 font-bold">Nominal Statutory Fee</td>
+                      <td className="p-4 font-bold">Nominal Legal Fee</td>
                       <td className="p-4">Doorstep Official Commissioner Fee</td>
                     </tr>
                   </tbody>
@@ -1505,7 +1505,7 @@ export default function DispurLocationClient({ faqs }: Props) {
                   11. Transparent Will Packages &amp; Legal Plans in Dispur
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Choose the legal assistance package tailored to your family&apos;s estate planning and property portfolio in Dispur:
+                  Choose the legal help package tailored to your family&apos;s estate planning and property portfolio in Dispur:
                 </p>
               </div>
 
@@ -1532,11 +1532,11 @@ export default function DispurLocationClient({ faqs }: Props) {
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>Legally vetted statutory clauses</span>
+                        <span>Legally vetted legal clauses</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>Instant PDF download &amp; execution guide</span>
+                        <span>Instant PDF download &amp; signing guide</span>
                       </li>
                     </ul>
                   </div>
@@ -1559,21 +1559,21 @@ export default function DispurLocationClient({ faqs }: Props) {
                   </div>
                   <div className="space-y-4">
                     <span className="text-xs font-bold uppercase tracking-wider text-[#C65378]">
-                      Advocate Consultation
+                      Lawyer Talk
                     </span>
                     <h3 className="font-extrabold text-xl text-slate-900">
-                      Advocate Drafting &amp; Review
+                      Lawyer Drafting &amp; Review
                     </h3>
                     <div className="text-3xl font-black text-slate-900">
                       ₹4,990
                     </div>
                     <p className="text-xs text-slate-600">
-                      Recommended for families with GMDA residential plots, Myadi Patta land, and business holdings.
+                      Recommended for families with GMDA home plots, Myadi Patta land, and business holdings.
                     </p>
                     <ul className="space-y-2.5 text-xs text-slate-700 pt-3 border-t border-slate-100">
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>1-on-1 Senior High Court Advocate call</span>
+                        <span>1-on-1 Senior High Court Lawyer call</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
@@ -1585,7 +1585,7 @@ export default function DispurLocationClient({ faqs }: Props) {
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>Doctor mental fitness certificate template</span>
+                        <span>Doctor mental fitness paper template</span>
                       </li>
                     </ul>
                   </div>
@@ -1596,7 +1596,7 @@ export default function DispurLocationClient({ faqs }: Props) {
                       onClick={handleStartDraft}
                       className="block w-full py-3 px-4 text-center rounded-xl bg-[#C65378] text-white font-bold text-xs hover:bg-[#a13c5d] transition-colors shadow-sm"
                     >
-                      Book Advocate Plan
+                      Book Lawyer Plan
                     </Link>
                   </div>
                 </div>
@@ -1605,7 +1605,7 @@ export default function DispurLocationClient({ faqs }: Props) {
                 <div className="rounded-3xl bg-white border border-slate-200/90 p-6 shadow-xs flex flex-col justify-between">
                   <div className="space-y-4">
                     <span className="text-xs font-bold uppercase tracking-wider text-slate-500">
-                      Comprehensive SRO Support
+                      Full SRO Support
                     </span>
                     <h3 className="font-extrabold text-xl text-slate-900">
                       SRO Registration &amp; Doorstep
@@ -1614,12 +1614,12 @@ export default function DispurLocationClient({ faqs }: Props) {
                       ₹9,990
                     </div>
                     <p className="text-xs text-slate-600">
-                      Complete end-to-end service including Dispur SRO physical assistance or Section 31 home visit.
+                      Complete end-to-end service including Dispur SRO physical help or Section 31 home visit.
                     </p>
                     <ul className="space-y-2.5 text-xs text-slate-700 pt-3 border-t border-slate-100">
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>Advocate accompaniment at Dispur SRO</span>
+                        <span>Lawyer accompaniment at Dispur SRO</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
@@ -1660,7 +1660,7 @@ export default function DispurLocationClient({ faqs }: Props) {
                   12. Frequently Asked Questions: Will Drafting in Dispur
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Clear, authoritative answers from senior estate planning advocates regarding Will drafting and registration in Dispur:
+                  Clear, authoritative answers from senior estate planning lawyers regarding Will drafting and registration in Dispur:
                 </p>
               </div>
 
@@ -1706,10 +1706,10 @@ export default function DispurLocationClient({ faqs }: Props) {
                   <span>STATUTORY CITATIONS</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  13. Statutory Provisions &amp; Assam Legal References
+                  13. Legal Rules &amp; Assam Legal References
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Key legislative acts and government portals governing Will drafting, execution, and registration in Dispur:
+                  Key legislative acts and government portals governing Will drafting, signing, and registration in Dispur:
                 </p>
               </div>
 
@@ -1719,7 +1719,7 @@ export default function DispurLocationClient({ faqs }: Props) {
                     Indian Succession Act 1925
                   </span>
                   <p className="text-xs text-slate-600">
-                    Section 59 (Testamentary Capacity), Section 63 (Execution &amp; Attestation), and Section 213 (Probate Territorial Limits).
+                    Section 59 (Testamentary Capacity), Section 63 (Signing &amp; Attestation), and Section 213 (Probate Territorial Limits).
                   </p>
                 </div>
 
@@ -1737,7 +1737,7 @@ export default function DispurLocationClient({ faqs }: Props) {
                     Assam Land and Revenue Regulation 1886
                   </span>
                   <p className="text-xs text-slate-600">
-                    Provisions for Jamabandi and Myadi Patta mutation via Dharitree portal under the Circle Officer.
+                    Rules for Jamabandi and Myadi Patta name change via Dharitree portal under the Circle Officer.
                   </p>
                 </div>
 
@@ -1755,10 +1755,10 @@ export default function DispurLocationClient({ faqs }: Props) {
             {/* BOTTOM CONVERSION CTA BANNER */}
             <section className="rounded-3xl bg-gradient-to-br from-[#172228] to-[#212F35] text-white p-8 sm:p-12 text-center space-y-5 shadow-xl">
               <h3 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-white">
-                Protect Your Dispur Properties &amp; Family Legacy
+                Protect Your Dispur Assets &amp; Family Legacy
               </h3>
               <p className="text-sm sm:text-base text-slate-200 max-w-2xl mx-auto leading-relaxed">
-                Do not leave your hard-earned Dispur GMDA plots, GS Road commercial assets, or Myadi Patta holdings to administrative deadlock. Draft a legally binding Will online today or consult our senior Gauhati High Court advocates.
+                Do not leave your hard-earned Dispur GMDA plots, GS Road shop assets, or Myadi Patta holdings to office deadlock. Draft a legally binding Will online today or consult our senior Gauhati High Court lawyers.
               </p>
               <div className="pt-3 flex flex-col sm:flex-row items-center justify-center gap-4">
                 <Link
@@ -1772,7 +1772,7 @@ export default function DispurLocationClient({ faqs }: Props) {
                   href="/contact"
                   className="w-full sm:w-auto px-6 py-3.5 rounded-full bg-white/10 text-white font-bold text-sm sm:text-base hover:bg-white/20 transition-all border border-white/20"
                 >
-                  Book Advocate Consultation
+                  Book Lawyer Talk
                 </Link>
               </div>
             </section>
@@ -1815,7 +1815,7 @@ export default function DispurLocationClient({ faqs }: Props) {
               />
             </div>
             <div className="pt-3 flex items-center justify-between text-xs text-slate-500">
-              <span>Dispur SRO Registered &amp; GMDA / GMC Mutation Compliant</span>
+              <span>Dispur SRO Registered &amp; GMDA / GMC Name Change Compliant</span>
               <Link
                 href="/start"
                 onClick={(e) => {

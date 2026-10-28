@@ -117,7 +117,7 @@ const INITIAL_CHECKLIST = [
   },
   {
     id: "item-2",
-    label: "Aadhaar Card of the Testator",
+    label: "Aadhaar Card of the Will maker",
     desc: "Carry your original Aadhaar card and photocopies for ID check.",
     checked: true,
   },
@@ -453,7 +453,7 @@ export default function BengaluruLocationClient({ faqs }: Props) {
             <section id="bengaluru-overview" className="scroll-target bg-white rounded-2xl p-6 sm:p-8 border border-slate-200/80 shadow-xs space-y-4">
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-100 text-xs font-bold uppercase tracking-wider text-slate-700">
                 <MapPin className="w-3.5 h-3.5 text-[#C65378]" />
-                <span>Bengaluru Urban &amp; Rural Jurisdiction</span>
+                <span>Bengaluru Urban &amp; Rural Area</span>
               </div>
               <h2 className="text-xl sm:text-2xl font-black text-slate-900 tracking-tight leading-snug">
                 Estate Succession for India&apos;s Technology Capital
@@ -473,7 +473,7 @@ export default function BengaluruLocationClient({ faqs }: Props) {
             <section id="karnataka-legal-framework" className="scroll-target bg-white rounded-2xl p-6 sm:p-8 border border-slate-200/80 shadow-xs space-y-6">
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-rose-50 text-xs font-bold uppercase tracking-wider text-[#C65378]">
                 <Scale className="w-3.5 h-3.5" />
-                <span>Statutory Compliance</span>
+                <span>Legal Compliance</span>
               </div>
 
               <h3 className="text-xl sm:text-2xl font-black text-slate-900 tracking-tight leading-snug">
@@ -511,7 +511,7 @@ export default function BengaluruLocationClient({ faqs }: Props) {
                   </div>
                   <h3 className="text-sm font-bold text-slate-900">Neutral Witnesses</h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Under Section 67, witnesses cannot receive gifts in the Will. Beneficiaries must never sign as witnesses.
+                    Under Section 67, witnesses cannot receive gifts in the Will. Heirs must never sign as witnesses.
                   </p>
                 </div>
               </div>
@@ -522,7 +522,7 @@ export default function BengaluruLocationClient({ faqs }: Props) {
                   <span>Self-Acquired Assets vs Family Property</span>
                 </div>
                 <p>
-                  You can give away all property that you bought or earned yourself. This includes savings, startup shares, and flats. For ancestral Hindu property, you can only give your own share under Section 30 of the Hindu Succession Act.
+                  You can give away all property that you bought or earned yourself. This includes savings, startup shares, and flats. For family Hindu property, you can only give your own share under Section 30 of the Hindu Succession Act.
                 </p>
               </div>
             </section>
@@ -595,7 +595,7 @@ export default function BengaluruLocationClient({ faqs }: Props) {
               </div>
 
               <h3 className="text-xl sm:text-2xl font-black text-slate-900 tracking-tight leading-snug">
-                3. Tech Estates: Startup ESOPs, RSUs &amp; BBMP Khata Properties
+                3. Tech Estates: Startup ESOPs, RSUs &amp; BBMP Khata Assets
               </h3>
 
               <p className="text-sm sm:text-base text-slate-700 leading-relaxed font-normal">
@@ -632,10 +632,10 @@ export default function BengaluruLocationClient({ faqs }: Props) {
                   <span>BBMP A Khata vs B Khata Succession Guide</span>
                 </div>
                 <p className="text-xs sm:text-sm text-slate-200 leading-relaxed">
-                  BBMP maintains two property tax registers. An <strong>A Khata</strong> certificate shows full compliance with approved building plans. A <strong>B Khata</strong> entry is a tax listing for unapproved layouts or buildings without an Occupancy Certificate (OC).
+                  BBMP maintains two property tax registers. An <strong>A Khata</strong> paper shows full compliance with approved building plans. A <strong>B Khata</strong> entry is a tax listing for unapproved layouts or buildings without an Occupancy Certificate (OC).
                 </p>
                 <p className="text-xs sm:text-sm text-slate-200 leading-relaxed">
-                  You can give away both A Khata and B Khata property in your Will. A registered Will helps your heirs update property records on the BBMP e-Aasthi website without long disputes.
+                  You can give away both A Khata and B Khata property in your Will. A registered Will helps your heirs update property records on the BBMP e-Aasthi website without long fights.
                 </p>
               </div>
             </section>
@@ -661,10 +661,10 @@ export default function BengaluruLocationClient({ faqs }: Props) {
               <div className="p-5 rounded-2xl bg-emerald-50/70 border border-emerald-200 space-y-2">
                 <div className="flex items-center gap-2 text-emerald-950 font-extrabold text-sm sm:text-base">
                   <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0" />
-                  <span>Probate is NOT Mandatory for Bengaluru Wills</span>
+                  <span>Probate is NOT Needed for Bengaluru Wills</span>
                 </div>
                 <p className="text-xs sm:text-sm text-emerald-900 leading-relaxed">
-                  Under Section 213 read with Section 57 of the Indian Succession Act, 1925, probate is only compulsory in the old presidency towns of Mumbai, Kolkata, and Chennai. The Karnataka High Court has held that probate is optional for Hindus, Sikhs, Jains, and Buddhists in Bengaluru.
+                  Under Section 213 read with Section 57 of the Indian Succession Act, 1925, probate is only needed in the old presidency towns of Mumbai, Kolkata, and Chennai. The Karnataka High Court has held that probate is optional for Hindus, Sikhs, Jains, and Buddhists in Bengaluru.
                 </p>
               </div>
 
@@ -735,7 +735,7 @@ export default function BengaluruLocationClient({ faqs }: Props) {
                   {
                     num: "05",
                     title: "Quick Biometric Visit at the SRO",
-                    desc: "Visit your local Sub-Registrar office once with your witnesses for a fast 15-minute photo and thumb scan.",
+                    desc: "Visit your local SRO office once with your witnesses for a fast 15-minute photo and thumb scan.",
                   },
                 ].map((step, index) => (
                   <div key={index} className="flex items-start gap-4 p-4 rounded-xl bg-slate-50 border border-slate-200/80">
@@ -859,7 +859,7 @@ export default function BengaluruLocationClient({ faqs }: Props) {
                 </h3>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed font-normal">
                   Looking for legally verified <strong>Will drafting services in Whitefield, Koramangala, Indiranagar, or Jayanagar</strong>? Property governance and asset structures vary across Bengaluru—from BBMP &apos;A&apos; Khata apartments and startup ESOP portfolios in Koramangala to BDA plotted bungalows in Indiranagar and gated villa communities in Whitefield.
-                  Our senior advocates provide tailored legal drafting, Kaveri 2.0 portal slot bookings, and SRO assistance across all zones:
+                  Our senior lawyers provide tailored legal drafting, Kaveri 2.0 portal slot bookings, and SRO help across all zones:
                 </p>
               </div>
 
@@ -898,7 +898,7 @@ export default function BengaluruLocationClient({ faqs }: Props) {
                         <span>SRO Hub: BDA Complex, Koramangala &amp; Gandhinagar</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Kaveri 2.0 biometric scheduling, ESOP trust succession clauses, and prompt legal execution.
+                        Kaveri 2.0 biometric scheduling, ESOP trust succession clauses, and prompt legal signing.
                       </p>
                     </div>
                   </div>
@@ -942,7 +942,7 @@ export default function BengaluruLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Prime <strong>Will drafting services in Indiranagar</strong> and Domlur for BDA freehold plotted bungalows, heritage residential estates, and valuable retail commercial leases. Ensures clear single-heir succession or structured partition with smooth BBMP Khata bifurcation.
+                      Prime <strong>Will drafting services in Indiranagar</strong> and Domlur for BDA freehold plotted bungalows, heritage home estates, and valuable retail shop leases. Ensures clear single-heir succession or structured split with smooth BBMP Khata bifurcation.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -951,7 +951,7 @@ export default function BengaluruLocationClient({ faqs }: Props) {
                         <span>SRO Hub: BDA Complex, Indiranagar &amp; Shivajinagar</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Doorstep Section 31 visits for senior testators, commercial rental bequest clauses, and Kaveri 2.0 booking.
+                        Doorstep Section 31 visits for senior testators, shop rental bequest clauses, and Kaveri 2.0 booking.
                       </p>
                     </div>
                   </div>
@@ -995,7 +995,7 @@ export default function BengaluruLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Dedicated <strong>Will drafting services in Whitefield</strong> and Marathahalli for gated villa enclaves, luxury high-rises, and tech leaders. We craft dual-jurisdiction mirror Wills for NRIs holding multinational bank portfolios, RSUs, and properties across India and abroad.
+                      Dedicated <strong>Will drafting services in Whitefield</strong> and Marathahalli for gated villa enclaves, luxury high-rises, and tech leaders. We craft dual-area mirror Wills for NRIs holding multinational bank portfolios, RSUs, and assets across India and abroad.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1004,7 +1004,7 @@ export default function BengaluruLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Mini Vidhana Soudha, KR Puram &amp; Whitefield</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        NRI remote consultation, Kaveri 2.0 biometric scheduling, and gated society succession support.
+                        NRI remote talk, Kaveri 2.0 biometric scheduling, and gated society succession support.
                       </p>
                     </div>
                   </div>
@@ -1048,7 +1048,7 @@ export default function BengaluruLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Generational <strong>Will drafting services in Jayanagar</strong> and JP Nagar for traditional family residences, ancestral properties, and retail businesses. Multi-heir distribution plans, registered MBBS doctor mental fitness certificates, and Section 31 doorstep execution.
+                      Generational <strong>Will drafting services in Jayanagar</strong> and JP Nagar for traditional family residences, family assets, and retail businesses. Multi-heir split plans, registered MBBS doctor mental fitness papers, and Section 31 doorstep signing.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1057,7 +1057,7 @@ export default function BengaluruLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Jayanagar 9th Block &amp; Basavanagudi Mini Office</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Section 31 home visits for elderly citizens, doctor certificates, and ancestral wealth safeguarding.
+                        Section 31 home visits for elderly citizens, doctor papers, and family wealth safeguarding.
                       </p>
                     </div>
                   </div>
@@ -1154,7 +1154,7 @@ export default function BengaluruLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Comprehensive <strong>Will drafting services in Yelahanka</strong> and Hebbal for Manyata tech park executives and senior defense retirees. Unambiguous succession deeds covering plotted BIAPPA layouts, commercial lands, and lakeside apartments.
+                      Full <strong>Will drafting services in Yelahanka</strong> and Hebbal for Manyata tech park executives and senior defense retirees. Clear succession deeds covering plotted BIAPPA layouts, shop lands, and lakeside apartments.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1207,7 +1207,7 @@ export default function BengaluruLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      West Bengaluru is characterized by established business families, ancestral properties, and precious jewelry collections.
+                      West Bengaluru is characterized by established business families, family assets, and precious jewelry collections.
                       Our team guides testators in appointing unbiased executors, safeguarding gold bequests via bank locker inventories, and completing Kaveri 2.0 registration without family friction.
                     </p>
 
@@ -1261,7 +1261,7 @@ export default function BengaluruLocationClient({ faqs }: Props) {
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                       With high-density gated communities housing engineers from global tech firms, ORR residents need agile digital estate planning.
-                      We ensure seamless transmission of mutual fund units, demat stocks, offshore bank accounts, and high-rise apartments without intestate succession delays.
+                      We make sure seamless transfer of mutual fund units, demat stocks, offshore bank accounts, and high-rise apartments without without a Will succession delays.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1270,7 +1270,7 @@ export default function BengaluruLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Kaveri 2.0 Portal Online &amp; SRO Shivajinagar</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        End-to-end Kaveri 2.0 biometric scheduling, digital folio bequests, and senior advocate consultation.
+                        End-to-end Kaveri 2.0 biometric scheduling, digital folio bequests, and senior lawyer talk.
                       </p>
                     </div>
                   </div>
@@ -1305,7 +1305,7 @@ export default function BengaluruLocationClient({ faqs }: Props) {
               </h3>
 
               <p className="text-sm sm:text-base text-slate-700 leading-relaxed font-normal">
-                Senior citizens and bedridden individuals in Bengaluru do not have to stand in line at government offices. Under Section 31 of the Registration Act, 1908, the Sub-Registrar can visit private homes or hospitals.
+                Senior citizens and bedridden people in Bengaluru do not have to stand in line at government offices. Under Section 31 of the Registration Act, 1908, the Sub-Registrar can visit private homes or hospitals.
               </p>
 
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4 pt-2">
@@ -1349,7 +1349,7 @@ export default function BengaluruLocationClient({ faqs }: Props) {
               <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-100 pb-3">
                 <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-100 text-xs font-bold uppercase tracking-wider text-slate-700">
                   <FileCheck className="w-3.5 h-3.5 text-[#C65378]" />
-                  <span>Interactive Verification</span>
+                  <span>Interactive Check</span>
                 </div>
                 <div className="text-xs font-bold text-slate-600">
                   Progress: <span className="text-[#C65378] font-black">{checkedCount}</span> / {checklist.length} Completed
@@ -1452,7 +1452,7 @@ export default function BengaluruLocationClient({ faqs }: Props) {
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
-                        <span>Executor and beneficiary terms</span>
+                        <span>Executor and heir terms</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
@@ -1475,7 +1475,7 @@ export default function BengaluruLocationClient({ faqs }: Props) {
                     Recommended for Tech Workforce
                   </div>
                   <div className="space-y-4">
-                    <span className="text-xs font-bold uppercase tracking-wider text-rose-300">Advocate Consult</span>
+                    <span className="text-xs font-bold uppercase tracking-wider text-rose-300">Lawyer Consult</span>
                     <h3 className="text-lg font-bold text-white">Tech Estate &amp; ESOP Plan</h3>
                     <div className="text-3xl font-black text-white">₹4,990</div>
                     <p className="text-xs text-slate-300">
@@ -1488,7 +1488,7 @@ export default function BengaluruLocationClient({ faqs }: Props) {
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-3.5 h-3.5 text-rose-300 shrink-0" />
-                        <span>1-on-1 talk with Senior Estate Advocate</span>
+                        <span>1-on-1 talk with Senior Estate Lawyer</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-3.5 h-3.5 text-rose-300 shrink-0" />
@@ -1607,7 +1607,7 @@ export default function BengaluruLocationClient({ faqs }: Props) {
               </div>
 
               <h3 className="text-xl sm:text-2xl font-black text-slate-900 tracking-tight leading-snug">
-                12. Statutory Authorities: Karnataka Acts &amp; Succession Rules
+                12. Legal Offices: Karnataka Acts &amp; Succession Rules
               </h3>
 
               <p className="text-sm sm:text-base text-slate-700 leading-relaxed font-normal">
@@ -1672,7 +1672,7 @@ export default function BengaluruLocationClient({ faqs }: Props) {
                   Draft Your Bengaluru Will in Under 20 Minutes
                 </h3>
                 <p className="text-xs sm:text-sm text-slate-300 leading-relaxed font-normal">
-                  Protect your real estate, ESOPs, and investments from future family disputes. Start drafting online or book a consultation with our Bengaluru succession advocates.
+                  Protect your real estate, ESOPs, and investments from future family fights. Start drafting online or book a talk with our Bengaluru succession lawyers.
                 </p>
               </div>
 
@@ -1688,7 +1688,7 @@ export default function BengaluruLocationClient({ faqs }: Props) {
                   href="/contact"
                   className="w-full sm:w-auto px-6 py-3.5 rounded-full bg-white/10 hover:bg-white/15 text-white font-semibold text-sm sm:text-base border border-white/20 transition-all text-center"
                 >
-                  Book Lawyer Consultation
+                  Book Lawyer Talk
                 </Link>
               </div>
             </section>

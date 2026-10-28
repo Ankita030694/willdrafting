@@ -108,32 +108,32 @@ const INITIAL_CHECKLIST = [
   },
   {
     id: "item-2",
-    label: "Original Aadhaar Card & PAN of Testator",
-    detail: "Required for biometric identity verification, photo recording, and official Book III registry records.",
+    label: "Original Aadhaar Card & PAN of Will maker",
+    detail: "Required for biometric identity check, photo recording, and official Book III registry records.",
     checked: true,
   },
   {
     id: "item-3",
     label: "Two Independent Adult Witnesses with Photo IDs",
-    detail: "Must carry original identity cards. In accordance with law, witnesses cannot be beneficiaries under the Will.",
+    detail: "Must carry original identity cards. In accordance with law, witnesses cannot be heirs under the Will.",
     checked: true,
   },
   {
     id: "item-4",
-    label: "Doctor Mental Fitness Certificate (MBBS / MD)",
-    detail: "Advised for testators aged 60 and above. Confirms sound mental testamentary capacity at execution.",
+    label: "Doctor Sound Mind Note (MBBS / MD)",
+    detail: "Advised for testators aged 60 and above. Confirms sound mental sound mind at signing.",
     checked: false,
   },
   {
     id: "item-5",
     label: "Land Holding Certificate (LHC) & Property Deeds",
-    detail: "Official LHC issued by the Deputy Commissioner for residential plots, homesteads, or commercial spaces.",
+    detail: "Official LHC issued by the Deputy Commissioner for home plots, homesteads, or shop spaces.",
     checked: false,
   },
   {
     id: "item-6",
     label: "Itanagar Capital Complex Address Proof & Tax Receipts",
-    detail: "Recent electricity bills, municipal assessment slips, or trade license copies for commercial premises.",
+    detail: "Recent electricity bills, municipal assessment slips, or trade license copies for shop premises.",
     checked: false,
   },
   {
@@ -236,7 +236,7 @@ export default function ItanagarLocationClient({ faqs }: Props) {
               </h1>
 
               <p className="text-base sm:text-lg text-slate-200 leading-relaxed font-normal max-w-2xl">
-                Draft a legal Will for your LHC land, homes, shops, and bank savings in Itanagar Capital Complex. Get advocate drafting, tribal law guidance, and DC Office registration help.
+                Draft a legal Will for your LHC land, homes, shops, and bank savings in Itanagar Capital Complex. Get lawyer drafting, tribal law guidance, and DC Office registration help.
               </p>
 
               <div className="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
@@ -337,7 +337,7 @@ export default function ItanagarLocationClient({ faqs }: Props) {
             {/* Stat 3 */}
             <div className="bg-white/70 sm:bg-transparent rounded-xl sm:rounded-none p-2.5 sm:p-3 border border-[#172228]/10 sm:border-0 md:border-l md:border-[#172228]/10 shadow-2xs sm:shadow-none flex flex-col items-center justify-center">
               <span className="block text-sm min-[390px]:text-base sm:text-xl lg:text-2xl font-extrabold text-[#172228] tracking-tight leading-tight whitespace-nowrap">
-                100% Non-Mandatory
+                100% Non-Needed
               </span>
               <span className="text-[9px] min-[390px]:text-[10px] sm:text-xs font-bold uppercase tracking-wider text-[#55636D] mt-1 leading-tight">
                 Gauhati HC Probate Exemption
@@ -350,7 +350,7 @@ export default function ItanagarLocationClient({ faqs }: Props) {
                 48-Hour Turnaround
               </span>
               <span className="text-[9px] min-[390px]:text-[10px] sm:text-xs font-bold uppercase tracking-wider text-[#55636D] mt-1 leading-tight">
-                Senior Advocate Drafting
+                Senior Lawyer Drafting
               </span>
             </div>
           </div>
@@ -450,7 +450,7 @@ export default function ItanagarLocationClient({ faqs }: Props) {
                   1. Overview: Will Drafting &amp; Asset Protection in Itanagar
                 </h2>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Itanagar is the capital and administrative hub of Arunachal Pradesh. Making a Will here combines civil law with tribal customs. Whether you own LHC plots in Bank Tinali, shops in Ganga Market, or homes in Naharlagun, a Will protects your family.
+                  Itanagar is the capital and office hub of Arunachal Pradesh. Making a Will here combines civil law with tribal customs. Whether you own LHC plots in Bank Tinali, shops in Ganga Market, or homes in Naharlagun, a Will protects your family.
                 </p>
               </div>
 
@@ -462,13 +462,13 @@ export default function ItanagarLocationClient({ faqs }: Props) {
                 </div>
                 <ul className="space-y-2 text-xs sm:text-sm text-amber-950 leading-relaxed list-disc list-inside">
                   <li>
-                    <strong>Land Holding Certificates (LHC):</strong> Formal land rights in urban Itanagar come from LHC records issued by the DC Office. Wills must cite exact certificate details.
+                    <strong>Land Holding Certificates (LHC):</strong> Formal land rights in urban Itanagar come from LHC records issued by the DC Office. Wills must cite exact paper details.
                   </li>
                   <li>
-                    <strong>Customary Tribal Rules:</strong> Ancestral tribal land belongs to indigenous clans. State laws prevent transferring tribal land to non-tribal persons.
+                    <strong>Customary Tribal Rules:</strong> Family tribal land belongs to indigenous clans. State laws prevent transferring tribal land to non-tribal persons.
                   </li>
                   <li>
-                    <strong>High Court Precedents:</strong> The Gauhati High Court confirms that probate is not mandatory for properties situated within Arunachal Pradesh.
+                    <strong>High Court Precedents:</strong> The Gauhati High Court confirms that probate is not needed for assets situated within Arunachal Pradesh.
                   </li>
                   <li>
                     <strong>Nominee Rights:</strong> Bank nominees only receive funds as temporary trustees. Only a valid Will decides final ownership.
@@ -489,7 +489,7 @@ export default function ItanagarLocationClient({ faqs }: Props) {
                   2. Legal Framework: Tribal Succession &amp; LHC Regulations
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Estate succession in Itanagar follows clear statutory safeguards. These laws protect tribal rights while letting you bequeath self-acquired assets freely:
+                  Estate succession in Itanagar follows clear legal safeguards. These laws protect tribal rights while letting you bequeath self-acquired assets freely:
                 </p>
               </div>
 
@@ -510,7 +510,7 @@ export default function ItanagarLocationClient({ faqs }: Props) {
                     Arunachal Land Settlement &amp; Records Act
                   </h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Governs Land Holding Certificates (LHC) and municipal mutation under the District Administration.
+                    Governs Land Holding Certificates (LHC) and municipal name change under the District Administration.
                   </p>
                 </div>
 
@@ -520,7 +520,7 @@ export default function ItanagarLocationClient({ faqs }: Props) {
                     Indian Succession Act 1925
                   </h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Defines execution rules under Section 63. Requires two independent witnesses and clear executor powers.
+                    Defines signing rules under Section 63. Requires two independent witnesses and clear executor powers.
                   </p>
                 </div>
 
@@ -545,7 +545,7 @@ export default function ItanagarLocationClient({ faqs }: Props) {
                 </div>
                 {/* Length: 53 characters */}
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  3. Will Registration: Mandatory vs Optional under Law
+                  3. Will Registration: Needed vs Optional under Law
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Under Section 18(e) of the Registration Act, 1908, Will registration is optional in Arunachal Pradesh. A Will written on plain white paper signed by two witnesses is valid. Even so, registering your Will at the DC Office offers important benefits:
@@ -570,17 +570,17 @@ export default function ItanagarLocationClient({ faqs }: Props) {
                     <tr>
                       <td className="p-4 font-semibold">Legal Presumption of Genuineness</td>
                       <td className="p-4 text-slate-500">Requires strict proof in court</td>
-                      <td className="p-4 text-emerald-700 font-bold">Strong prima facie evidentiary proof</td>
+                      <td className="p-4 text-emerald-700 font-bold">Strong prima facie proof proof</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-semibold">LHC Land Mutation</td>
+                      <td className="p-4 font-semibold">LHC Land Name Change</td>
                       <td className="p-4 text-slate-500">Subject to lengthy heir inquiries</td>
                       <td className="p-4 text-emerald-700 font-bold">Expedited DC Office title transfer</td>
                     </tr>
                     <tr>
                       <td className="p-4 font-semibold">Protection Against False Claims</td>
-                      <td className="p-4 text-slate-500">Vulnerable to family disputes</td>
-                      <td className="p-4 text-emerald-700 font-bold">Testator photo and biometric record</td>
+                      <td className="p-4 text-slate-500">Vulnerable to family fights</td>
+                      <td className="p-4 text-emerald-700 font-bold">Will maker photo and biometric record</td>
                     </tr>
                   </tbody>
                 </table>
@@ -599,13 +599,13 @@ export default function ItanagarLocationClient({ faqs }: Props) {
                   4. Gauhati High Court Probate Rules for Itanagar Wills
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Probate is a court order certifying that a Will is authentic. Many people in Itanagar believe that probate is mandatory. This is a common legal misunderstanding.
+                  Probate is a court order certifying that a Will is authentic. Many people in Itanagar believe that probate is needed. This is a common legal misunderstanding.
                 </p>
               </div>
 
               <div className="bg-white rounded-3xl border border-slate-200/90 p-6 md:p-8 shadow-xs space-y-4">
                 <h3 className="font-bold text-base text-slate-900">
-                  Why Probate is Non-Mandatory in Itanagar:
+                  Why Probate is Non-Needed in Itanagar:
                 </h3>
                 <div className="space-y-3 text-xs sm:text-sm text-slate-600 leading-relaxed">
                   <p>
@@ -617,7 +617,7 @@ export default function ItanagarLocationClient({ faqs }: Props) {
                 </div>
 
                 <div className="p-4 rounded-2xl bg-emerald-50 border border-emerald-200 text-xs sm:text-sm text-emerald-950 font-medium">
-                  ✓ <strong>Direct Administrative Transfer:</strong> You do not need to spend months in court for probate when you hold a registered Will in Itanagar.
+                  ✓ <strong>Direct Office Transfer:</strong> You do not need to spend months in court for probate when you hold a registered Will in Itanagar.
                 </div>
               </div>
             </section>
@@ -672,7 +672,7 @@ export default function ItanagarLocationClient({ faqs }: Props) {
                 <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-slate-100 pb-4">
                   <div>
                     <span className="text-xs font-bold uppercase tracking-wider text-[#C65378]">
-                      Official Jurisdiction
+                      Official Area
                     </span>
                     <h3 className="text-lg sm:text-xl font-extrabold text-slate-900 mt-0.5">
                       {activeHubData.sro}
@@ -700,13 +700,13 @@ export default function ItanagarLocationClient({ faqs }: Props) {
 
                 <div className="pt-4 border-t border-slate-100 flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-3">
                   <span className="text-xs text-slate-500 font-medium">
-                    Advocate accompaniment &amp; appointment scheduling available
+                    Lawyer accompaniment &amp; appointment scheduling available
                   </span>
                   <Link
                     href="/contact"
                     className="inline-flex items-center justify-center gap-1.5 px-5 py-2.5 rounded-xl bg-[#172228] text-white text-xs font-bold hover:bg-slate-800 transition-colors"
                   >
-                    <span>Request Assistance for {activeHubData.name}</span>
+                    <span>Request Help for {activeHubData.name}</span>
                     <ArrowRight className="w-3.5 h-3.5" />
                   </Link>
                 </div>
@@ -725,7 +725,7 @@ export default function ItanagarLocationClient({ faqs }: Props) {
                   6. Localities Covered: Area-Wise Will Drafting in Itanagar
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Properties in Itanagar include shops in Bank Tinali, homes in Niti Vihar, and plots in Naharlagun and Nirjuli. Our legal team offers Will drafting and DC Office assistance across all local areas:
+                  Assets in Itanagar include shops in Bank Tinali, homes in Niti Vihar, and plots in Naharlagun and Nirjuli. Our legal team offers Will drafting and DC Office help across all local areas:
                 </p>
               </div>
 
@@ -736,7 +736,7 @@ export default function ItanagarLocationClient({ faqs }: Props) {
                     <div className="flex items-center justify-between gap-2">
                       <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-rose-50 text-[#C65378] border border-rose-100">
                         <MapPin className="w-3.5 h-3.5" />
-                        Commercial Core
+                        Shop Core
                       </span>
                       <span className="text-[11px] font-semibold text-slate-500 bg-slate-100 px-2.5 py-1 rounded-lg">
                         DC Office Capital Complex
@@ -755,7 +755,7 @@ export default function ItanagarLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Specialized <strong>Will drafting services in Bank Tinali</strong> and Ganga Market for commercial complexes and shops. It specifies business succession, tenancy rights, and Land Holding Certificate transfers to prevent family disputes.
+                      Specialized <strong>Will drafting services in Bank Tinali</strong> and Ganga Market for shop complexes and shops. It specifies business succession, tenancy rights, and Land Holding Certificate transfers to prevent family fights.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -764,7 +764,7 @@ export default function ItanagarLocationClient({ faqs }: Props) {
                         <span>SRO Hub: DC Office Capital Complex, Itanagar</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Advocate assistance, appointment booking, and Section 31 home visits for senior business owners.
+                        Lawyer help, appointment booking, and Section 31 home visits for senior business owners.
                       </p>
                     </div>
                   </div>
@@ -789,7 +789,7 @@ export default function ItanagarLocationClient({ faqs }: Props) {
                     <div className="flex items-center justify-between gap-2">
                       <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-rose-50 text-[#C65378] border border-rose-100">
                         <MapPin className="w-3.5 h-3.5" />
-                        Commercial &amp; Rail Belt
+                        Shop &amp; Rail Belt
                       </span>
                       <span className="text-[11px] font-semibold text-slate-500 bg-slate-100 px-2.5 py-1 rounded-lg">
                         SDO Naharlagun
@@ -808,7 +808,7 @@ export default function ItanagarLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Tailored <strong>Will drafting services in Naharlagun</strong> and Model Village for traders and homeowners. Includes clear bequests for commercial plots, warehouse spaces, and financial investments without court delays.
+                      Tailored <strong>Will drafting services in Naharlagun</strong> and Model Village for traders and homeowners. Includes clear bequests for shop plots, warehouse spaces, and financial investments without court delays.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -817,13 +817,13 @@ export default function ItanagarLocationClient({ faqs }: Props) {
                         <span>SRO Hub: ADC / SDO Office Complex, Naharlagun</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Complete documentation review, biometric scheduling, and certified Book III registry copy collection.
+                        Complete papers review, biometric scheduling, and certified Book III registry copy collection.
                       </p>
                     </div>
                   </div>
 
                   <div className="pt-4 mt-4 border-t border-slate-100 flex items-center justify-between">
-                    <span className="text-xs font-bold text-slate-500">Commercial &amp; Residential</span>
+                    <span className="text-xs font-bold text-slate-500">Shop &amp; Home</span>
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
@@ -861,7 +861,7 @@ export default function ItanagarLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Comprehensive <strong>Will drafting services in Niti Vihar</strong> for senior civil servants and doctors. Structures residential homes, GPF funds, pensions, and family asset bequests with doctor mental capacity certificates.
+                      Full <strong>Will drafting services in Niti Vihar</strong> for senior civil servants and doctors. Structures home homes, GPF funds, pensions, and family asset bequests with doctor mental capacity papers.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -870,7 +870,7 @@ export default function ItanagarLocationClient({ faqs }: Props) {
                         <span>SRO Hub: DC Office Capital Complex, Itanagar</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        High-net-worth estate mapping, confidential drafting, and doorstep Section 31 execution support.
+                        High-net-worth estate mapping, confidential drafting, and doorstep Section 31 signing support.
                       </p>
                     </div>
                   </div>
@@ -914,7 +914,7 @@ export default function ItanagarLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Dedicated <strong>Will drafting services in Nirjuli</strong> for professors, scientists, and shop owners along NH-415. Covers academic pensions, book copyrights, residential LHC plots, and family business holdings.
+                      Dedicated <strong>Will drafting services in Nirjuli</strong> for professors, scientists, and shop owners along NH-415. Covers academic pensions, book copyrights, home LHC plots, and family business holdings.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -923,13 +923,13 @@ export default function ItanagarLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Nirjuli Circle Registry Office</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Circle office appointment scheduling, witness assistance, and digital Will drafting support.
+                        Circle office appointment scheduling, witness help, and digital Will drafting support.
                       </p>
                     </div>
                   </div>
 
                   <div className="pt-4 mt-4 border-t border-slate-100 flex items-center justify-between">
-                    <span className="text-xs font-bold text-slate-500">Academic &amp; Commercial</span>
+                    <span className="text-xs font-bold text-slate-500">Academic &amp; Shop</span>
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
@@ -967,7 +967,7 @@ export default function ItanagarLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Expert <strong>Will drafting services in Chimpu</strong> and Vivek Vihar for residential layouts and plotted homesteads. Sets clear share divisions among sons and daughters while safeguarding family unity.
+                      Expert <strong>Will drafting services in Chimpu</strong> and Vivek Vihar for home layouts and plotted homesteads. Sets clear share divisions among sons and daughters while safeguarding family unity.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -976,7 +976,7 @@ export default function ItanagarLocationClient({ faqs }: Props) {
                         <span>SRO Hub: DC Office Capital Complex, Itanagar</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        LHC parcel description vetting, independent witness verification, and DC Office submission.
+                        LHC parcel description vetting, independent witness check, and DC Office submission.
                       </p>
                     </div>
                   </div>
@@ -1020,7 +1020,7 @@ export default function ItanagarLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Customized <strong>Will drafting services in Doimukh and Yupia</strong> for agricultural orchards, university faculty, and suburban estates. Ensures smooth land mutation with Papum Pare district revenue authorities.
+                      Customized <strong>Will drafting services in Doimukh and Yupia</strong> for farm orchards, university faculty, and suburban estates. Ensures smooth land name change with Papum Pare district revenue offices.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1062,7 +1062,7 @@ export default function ItanagarLocationClient({ faqs }: Props) {
                   7. 5-Step Process: Drafting to DC Office Registration
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Follow this verified 5-stage legal operating procedure to draft, execute, and register your Will before the Deputy Commissioner in Itanagar:
+                  Follow this verified 5-stage legal operating step to draft, execute, and register your Will before the Deputy Commissioner in Itanagar:
                 </p>
               </div>
 
@@ -1076,7 +1076,7 @@ export default function ItanagarLocationClient({ faqs }: Props) {
                       Asset Inventory
                     </h3>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Compile complete details of LHC numbers, bank deposits, GPF, vehicles, and commercial properties.
+                      Compile complete details of LHC numbers, bank deposits, GPF, vehicles, and shop assets.
                     </p>
                   </div>
                 </div>
@@ -1087,7 +1087,7 @@ export default function ItanagarLocationClient({ faqs }: Props) {
                       2
                     </span>
                     <h3 className="font-bold text-sm text-slate-900">
-                      Advocate Drafting
+                      Lawyer Drafting
                     </h3>
                     <p className="text-xs text-slate-600 leading-relaxed">
                       Formulate legally binding clauses respecting tribal customary protections, revocations, and executor powers.
@@ -1101,10 +1101,10 @@ export default function ItanagarLocationClient({ faqs }: Props) {
                       3
                     </span>
                     <h3 className="font-bold text-sm text-slate-900">
-                      Valid Execution
+                      Valid Signing
                     </h3>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Print on standard white A4 sheets and sign each page before two independent non-beneficiary witnesses.
+                      Print on standard white A4 sheets and sign each page before two independent non-heir witnesses.
                     </p>
                   </div>
                 </div>
@@ -1132,7 +1132,7 @@ export default function ItanagarLocationClient({ faqs }: Props) {
                       Book III Entry
                     </h3>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Complete oral attestation and biometric verification to secure permanent Book III government registration.
+                      Complete oral attestation and biometric check to secure permanent Book III government registration.
                     </p>
                   </div>
                 </div>
@@ -1151,7 +1151,7 @@ export default function ItanagarLocationClient({ faqs }: Props) {
                   8. Section 31 Home Visit: Doorstep Will Registration
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  For senior citizens, hospitalized patients, or bedridden individuals residing in Bank Tinali, Niti Vihar, or Naharlagun, visiting the registry office in hilly terrain can be difficult. Under <strong>Section 31 of the Registration Act, 1908</strong>, the registering officer can attend your home or hospital to complete registration:
+                  For senior citizens, hospitalized patients, or bedridden people residing in Bank Tinali, Niti Vihar, or Naharlagun, visiting the registry office in hilly terrain can be difficult. Under <strong>Section 31 of the Registration Act, 1908</strong>, the registering officer can attend your home or hospital to complete registration:
                 </p>
               </div>
 
@@ -1163,15 +1163,15 @@ export default function ItanagarLocationClient({ faqs }: Props) {
                   <div className="flex items-start gap-3 p-4 rounded-2xl bg-slate-50 border border-slate-100">
                     <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
                     <div>
-                      <strong className="text-slate-900 block">Doctor Mental Fitness Certificate</strong>
-                      <span className="text-slate-600">A registered MBBS or MD doctor certifies that the testator is of sound mind but medically restricted from traveling.</span>
+                      <strong className="text-slate-900 block">Doctor Sound Mind Note</strong>
+                      <span className="text-slate-600">A registered MBBS or MD doctor certifies that the Will maker is of sound mind but medically restricted from traveling.</span>
                     </div>
                   </div>
 
                   <div className="flex items-start gap-3 p-4 rounded-2xl bg-slate-50 border border-slate-100">
                     <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
                     <div>
-                      <strong className="text-slate-900 block">Commission Application</strong>
+                      <strong className="text-slate-900 block">Commission Form</strong>
                       <span className="text-slate-600">Our legal team files the Section 31 special commission petition before the Deputy Commissioner Capital Complex.</span>
                     </div>
                   </div>
@@ -1179,7 +1179,7 @@ export default function ItanagarLocationClient({ faqs }: Props) {
                   <div className="flex items-start gap-3 p-4 rounded-2xl bg-slate-50 border border-slate-100">
                     <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
                     <div>
-                      <strong className="text-slate-900 block">Statutory Commission Fee</strong>
+                      <strong className="text-slate-900 block">Legal Commission Fee</strong>
                       <span className="text-slate-600">Nominal official commission charges are remitted to schedule the registry official visit.</span>
                     </div>
                   </div>
@@ -1188,7 +1188,7 @@ export default function ItanagarLocationClient({ faqs }: Props) {
                     <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
                     <div>
                       <strong className="text-slate-900 block">Doorstep Identity &amp; Biometrics</strong>
-                      <span className="text-slate-600">The officer visits your residence to witness execution, capture signatures, and record identity verification.</span>
+                      <span className="text-slate-600">The officer visits your residence to witness signing, capture signatures, and record identity check.</span>
                     </div>
                   </div>
                 </div>
@@ -1204,7 +1204,7 @@ export default function ItanagarLocationClient({ faqs }: Props) {
                 </div>
                 {/* Length: 54 characters */}
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  9. Mandatory Checklist: Required Documents in Itanagar
+                  9. Needed Checklist: Required Documents in Itanagar
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Ensure all records are compiled before finalizing your Will. You have organized <strong>{checkedCount} of {checklist.length}</strong> required documents:
@@ -1258,7 +1258,7 @@ export default function ItanagarLocationClient({ faqs }: Props) {
                   10. Property Classification: LHC, Tribal &amp; Urban Assets
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Succession procedures in Itanagar depend directly on whether an asset falls under codified civil laws, Land Holding Certificates, or customary clan traditions:
+                  Succession steps in Itanagar depend directly on whether an asset falls under codified civil laws, Land Holding Certificates, or customary clan traditions:
                 </p>
               </div>
 
@@ -1271,7 +1271,7 @@ export default function ItanagarLocationClient({ faqs }: Props) {
                     Land Holding Certificates (LHC)
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Urban plots in Itanagar and Naharlagun with Land Holding Certificates can be bequeathed. The registered Will directs the DC Office to update beneficiary names in land revenue records.
+                    Urban plots in Itanagar and Naharlagun with Land Holding Certificates can be bequeathed. The registered Will directs the DC Office to update heir names in land revenue records.
                   </p>
                 </div>
 
@@ -1280,22 +1280,22 @@ export default function ItanagarLocationClient({ faqs }: Props) {
                     Customary Holdings
                   </span>
                   <h3 className="font-bold text-base text-slate-900">
-                    Ancestral Community Lands
+                    Family Community Lands
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Ancestral tribal land governed by clan customs cannot be bequeathed outside the indigenous tribe. Wills ensure ancestral property remains protected within the rightful family line.
+                    Family tribal land governed by clan customs cannot be bequeathed outside the indigenous tribe. Wills make sure family property remains protected within the rightful family line.
                   </p>
                 </div>
 
                 <div className="bg-white rounded-3xl border border-slate-200/90 p-6 shadow-xs space-y-3">
                   <span className="px-3 py-1 rounded-full bg-emerald-100 text-emerald-800 text-xs font-bold uppercase">
-                    Commercial &amp; Financial
+                    Shop &amp; Financial
                   </span>
                   <h3 className="font-bold text-base text-slate-900">
                     Businesses, Deposits &amp; Pensions
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Retail shops, contractor firms, SBI bank deposits, GPF, and mutual funds are 100% testamentary assets. They pass directly to the designated beneficiary named in your Will.
+                    Retail shops, contractor firms, SBI bank deposits, GPF, and mutual funds are 100% testamentary assets. They pass directly to the designated heir named in your Will.
                   </p>
                 </div>
               </div>
@@ -1322,7 +1322,7 @@ export default function ItanagarLocationClient({ faqs }: Props) {
                   <thead>
                     <tr className="bg-slate-100/80 border-b border-slate-200 text-slate-800">
                       <th className="p-4 font-bold">Fee Component</th>
-                      <th className="p-4 font-bold">Statutory Amount</th>
+                      <th className="p-4 font-bold">Legal Amount</th>
                       <th className="p-4 font-bold">Remittance Authority</th>
                     </tr>
                   </thead>
@@ -1364,7 +1364,7 @@ export default function ItanagarLocationClient({ faqs }: Props) {
                   12. Professional Plans &amp; Transparent Pricing Packages
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Choose the legal assistance package tailored to your family&apos;s estate planning and property portfolio in Itanagar:
+                  Choose the legal help package tailored to your family&apos;s estate planning and property portfolio in Itanagar:
                 </p>
               </div>
 
@@ -1382,7 +1382,7 @@ export default function ItanagarLocationClient({ faqs }: Props) {
                       ₹1,990
                     </div>
                     <p className="text-xs text-slate-600">
-                      Ideal for individuals with residential LHC plots, bank accounts, and movable assets.
+                      Ideal for people with home LHC plots, bank accounts, and movable assets.
                     </p>
                     <ul className="space-y-2.5 text-xs text-slate-700 pt-3 border-t border-slate-100">
                       <li className="flex items-center gap-2">
@@ -1391,11 +1391,11 @@ export default function ItanagarLocationClient({ faqs }: Props) {
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>Legally vetted statutory clauses</span>
+                        <span>Legally vetted legal clauses</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>Instant PDF download &amp; execution guide</span>
+                        <span>Instant PDF download &amp; signing guide</span>
                       </li>
                     </ul>
                   </div>
@@ -1415,16 +1415,16 @@ export default function ItanagarLocationClient({ faqs }: Props) {
                   </div>
                   <div className="space-y-4">
                     <span className="text-xs font-bold uppercase tracking-wider text-[#C65378]">
-                      Comprehensive
+                      Full
                     </span>
                     <h3 className="font-extrabold text-xl text-slate-900">
-                      Advocate Consultation
+                      Lawyer Talk
                     </h3>
                     <div className="text-3xl font-black text-slate-900">
                       ₹4,990
                     </div>
                     <p className="text-xs text-slate-600">
-                      Senior estate advocate review for LHC land, commercial shops, and multi-heir distribution.
+                      Senior estate lawyer review for LHC land, shop shops, and multi-heir split.
                     </p>
                     <ul className="space-y-2.5 text-xs text-slate-700 pt-3 border-t border-slate-100">
                       <li className="flex items-center gap-2">
@@ -1433,7 +1433,7 @@ export default function ItanagarLocationClient({ faqs }: Props) {
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>1-on-1 video call with senior advocate</span>
+                        <span>1-on-1 video call with senior lawyer</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
@@ -1449,7 +1449,7 @@ export default function ItanagarLocationClient({ faqs }: Props) {
                     href="/contact"
                     className="mt-6 w-full py-3 rounded-xl bg-[#C65378] text-white text-xs font-bold text-center hover:bg-[#a13c5d] transition-colors cursor-pointer"
                   >
-                    Book Advocate Call
+                    Book Lawyer Call
                   </Link>
                 </div>
 
@@ -1475,7 +1475,7 @@ export default function ItanagarLocationClient({ faqs }: Props) {
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>Advocate physically attends registry</span>
+                        <span>Lawyer physically attends registry</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
@@ -1552,10 +1552,10 @@ export default function ItanagarLocationClient({ faqs }: Props) {
                 </div>
                 {/* Length: 56 characters */}
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  14. Statutory References &amp; High Court Case Law Citations
+                  14. Legal References &amp; High Court Case Law Citations
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Our drafting protocols comply strictly with codified Indian statutes and Arunachal Pradesh land administration regulations:
+                  Our drafting protocols comply strictly with codified Indian statutes and Arunachal Pradesh land management regulations:
                 </p>
               </div>
 
@@ -1583,7 +1583,7 @@ export default function ItanagarLocationClient({ faqs }: Props) {
                     Arunachal Land Records Act
                   </span>
                   <p className="text-xs text-slate-600">
-                    Provisions governing Land Holding Certificates (LHC) and DC Office title mutation.
+                    Rules governing Land Holding Certificates (LHC) and DC Office title name change.
                   </p>
                 </div>
 
@@ -1592,7 +1592,7 @@ export default function ItanagarLocationClient({ faqs }: Props) {
                     Gauhati High Court Precedent
                   </span>
                   <p className="text-xs text-slate-600">
-                    Judicial rulings affirming non-mandatory probate status across Arunachal Pradesh.
+                    Judicial rulings affirming non-needed probate status across Arunachal Pradesh.
                   </p>
                 </div>
               </div>
@@ -1604,7 +1604,7 @@ export default function ItanagarLocationClient({ faqs }: Props) {
                 Protect Your Itanagar Assets &amp; Family Legacy
               </h3>
               <p className="text-sm sm:text-base text-slate-200 max-w-2xl mx-auto leading-relaxed">
-                Do not leave your valuable Land Holding Certificates, family businesses, or savings to administrative deadlock. Draft a legally binding Will online today or consult our senior estate advocates.
+                Do not leave your valuable Land Holding Certificates, family businesses, or savings to office deadlock. Draft a legally binding Will online today or consult our senior estate lawyers.
               </p>
               <div className="pt-3 flex flex-col sm:flex-row items-center justify-center gap-4">
                 <Link
@@ -1618,7 +1618,7 @@ export default function ItanagarLocationClient({ faqs }: Props) {
                   href="/contact"
                   className="w-full sm:w-auto px-6 py-3.5 rounded-full bg-white/10 text-white font-bold text-sm sm:text-base hover:bg-white/20 transition-all border border-white/20"
                 >
-                  Book Advocate Consultation
+                  Book Lawyer Talk
                 </Link>
               </div>
             </section>

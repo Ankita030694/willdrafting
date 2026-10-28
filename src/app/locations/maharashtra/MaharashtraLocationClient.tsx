@@ -119,20 +119,20 @@ const INITIAL_CHECKLIST = [
   },
   {
     id: "item-2",
-    label: "Original Aadhaar Card & PAN of the Testator",
+    label: "Original Aadhaar Card & PAN of the Will maker",
     detail: "Required for biometric thumbprint scanning and live webcam photograph capture on the IGR Maharashtra SARITA / e-Stepin system.",
     checked: true,
   },
   {
     id: "item-3",
     label: "Two Independent Adult Witnesses with Aadhaar",
-    detail: "Both witnesses must carry original government photo IDs and must not be beneficiaries receiving any asset under the Will.",
+    detail: "Both witnesses must carry original government photo IDs and must not be heirs receiving any asset under the Will.",
     checked: true,
   },
   {
     id: "item-4",
-    label: "Doctor Mental Fitness Certificate (For Seniors)",
-    detail: "Issued by a registered MBBS medical practitioner certifying sound mind, memory, and understanding to eliminate testamentary capacity challenges.",
+    label: "Doctor Sound Mind Note (For Seniors)",
+    detail: "Issued by a registered MBBS medical practitioner certifying sound mind, memory, and understanding to eliminate sound mind fights.",
     checked: true,
   },
   {
@@ -143,8 +143,8 @@ const INITIAL_CHECKLIST = [
   },
   {
     id: "item-6",
-    label: "Agricultural Land 7/12 & 8A Extracts (For Rural Lands)",
-    detail: "Recent computerized Satbara Utara showing exact gut numbers, taluka, and mutation entry numbers (Ferfar).",
+    label: "Farm Land 7/12 & 8A Extracts (For Rural Lands)",
+    detail: "Recent computerized Satbara Utara showing exact gut numbers, taluka, and name change entry numbers (Ferfar).",
     checked: false,
   },
   {
@@ -249,7 +249,7 @@ export default function MaharashtraLocationClient({ faqs }: Props) {
 
               <p className="text-base sm:text-lg text-slate-200 leading-relaxed font-normal max-w-2xl">
                 Protect your Mumbai, Pune, Nagpur, and statewide assets with legally sound testamentary planning.
-                Navigate Bombay High Court probate rules, IGR Maharashtra e-Stepin registration, and cooperative housing society nominations with certified estate advocates.
+                Navigate Bombay High Court probate rules, IGR Maharashtra e-Stepin registration, and cooperative housing society nominations with certified estate lawyers.
               </p>
 
               <div className="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
@@ -274,7 +274,7 @@ export default function MaharashtraLocationClient({ faqs }: Props) {
               <div className="pt-4 grid grid-cols-3 gap-3 border-t border-white/10 text-xs text-slate-300">
                 <div className="flex items-center gap-2">
                   <Check className="w-4 h-4 text-emerald-400 shrink-0" />
-                  <span>Bombay HC Advocate Vetted</span>
+                  <span>Bombay HC Lawyer Vetted</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <Check className="w-4 h-4 text-emerald-400 shrink-0" />
@@ -475,10 +475,10 @@ export default function MaharashtraLocationClient({ faqs }: Props) {
 
               <div className="prose prose-slate max-w-none text-slate-700 text-sm sm:text-base leading-relaxed space-y-4">
                 <p>
-                  Maharashtra stands as India&apos;s commercial capital and highest-value real estate landscape. From multi-crore cooperative housing society apartments in South Mumbai, Bandra, and Pune, to sprawling IT corridor condominiums in Hinjewadi, Kharadi, and Thane, estate distribution in Maharashtra carries unique statutory complexities.
+                  Maharashtra stands as India&apos;s shop capital and highest-value real estate landscape. From multi-crore cooperative housing society apartments in South Mumbai, Bandra, and Pune, to sprawling IT corridor condominiums in Hinjewadi, Kharadi, and Thane, estate split in Maharashtra carries unique legal complexities.
                 </p>
                 <p>
-                  Succession planning across Maharashtra requires meticulous alignment with three distinct legal pillars: the territorial probate rules under <strong>Section 213 of the Indian Succession Act, 1925</strong> (which differentiates Mumbai presidency limits from the rest of Maharashtra), the <strong>Maharashtra Co-operative Societies Act, 1960</strong> regarding nominal society memberships, and the <strong>Maharashtra Stamp Act</strong> ensuring complete stamp duty exemption for testamentary documents.
+                  Succession planning across Maharashtra requires meticulous alignment with three distinct legal pillars: the territorial probate rules under <strong>Section 213 of the Indian Succession Act, 1925</strong> (which differentiates Mumbai presidency limits from the rest of Maharashtra), the <strong>Maharashtra Co-operative Societies Act, 1960</strong> regarding nominal society memberships, and the <strong>Maharashtra Stamp Act</strong> making sure complete stamp duty exemption for testamentary documents.
                 </p>
               </div>
 
@@ -503,7 +503,7 @@ export default function MaharashtraLocationClient({ faqs }: Props) {
                   <div>
                     <h3 className="font-extrabold text-slate-900 text-sm mb-1">Section 213 Dual Territorial Rule</h3>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Probate is mandatory for Mumbai presidency properties, but legally optional for Pune, Nagpur, Nashik, and all non-presidency Maharashtra districts.
+                      Probate is needed for Mumbai presidency assets, but legally optional for Pune, Nagpur, Nashik, and all non-presidency Maharashtra districts.
                     </p>
                   </div>
                 </div>
@@ -515,7 +515,7 @@ export default function MaharashtraLocationClient({ faqs }: Props) {
                   <div>
                     <h3 className="font-extrabold text-slate-900 text-sm mb-1">CHS Nominee vs Beneficial Legal Heir</h3>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Under Section 30 of the MCS Act, a society nominee acts strictly as a trustee. A registered Will guarantees undisputed title transfer to intended beneficiaries.
+                      Under Section 30 of the MCS Act, a society nominee acts strictly as a trustee. A registered Will guarantees undisputed title transfer to intended heirs.
                     </p>
                   </div>
                 </div>
@@ -549,7 +549,7 @@ export default function MaharashtraLocationClient({ faqs }: Props) {
 
               <div className="prose prose-slate max-w-none text-slate-700 text-sm sm:text-base leading-relaxed space-y-4">
                 <p>
-                  Every testamentary document executed within the State of Maharashtra derives legal validity from statutory enactments enforced uniformly across India, supplemented by state-specific stamp and registration codes:
+                  Every testamentary document signed within the State of Maharashtra derives legal validity from legal enactments enforced uniformly across India, supplemented by state-specific stamp and registration codes:
                 </p>
               </div>
 
@@ -558,9 +558,9 @@ export default function MaharashtraLocationClient({ faqs }: Props) {
                 <table className="w-full text-left text-xs sm:text-sm">
                   <thead className="bg-[#172228] text-white uppercase text-[11px] font-mono tracking-wider">
                     <tr>
-                      <th className="py-3.5 px-4 sm:px-6">Statutory Enactment</th>
+                      <th className="py-3.5 px-4 sm:px-6">Legal Enactment</th>
                       <th className="py-3.5 px-4 sm:px-6">Legal Mandate in Maharashtra</th>
-                      <th className="py-3.5 px-4 sm:px-6">Practical Effect for Testator</th>
+                      <th className="py-3.5 px-4 sm:px-6">Practical Effect for Will maker</th>
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-slate-100 text-slate-700">
@@ -569,10 +569,10 @@ export default function MaharashtraLocationClient({ faqs }: Props) {
                         Section 59, Indian Succession Act, 1925
                       </td>
                       <td className="py-4 px-4 sm:px-6">
-                        Testator must possess testamentary capacity (sound mind, memory, and age of majority).
+                        Will maker must possess sound mind (sound mind, memory, and age of majority).
                       </td>
                       <td className="py-4 px-4 sm:px-6 text-slate-600">
-                        Senior citizens benefit from attaching an MBBS medical certificate to preempt incapacity challenges.
+                        Senior citizens benefit from attaching an MBBS medical paper to preempt incapacity fights.
                       </td>
                     </tr>
                     <tr className="hover:bg-slate-50 transition-colors">
@@ -580,10 +580,10 @@ export default function MaharashtraLocationClient({ faqs }: Props) {
                         Section 63, Indian Succession Act, 1925
                       </td>
                       <td className="py-4 px-4 sm:px-6">
-                        Attestation by at least two independent adult witnesses who saw the testator sign.
+                        Attestation by at least two independent adult witnesses who saw the Will maker sign.
                       </td>
                       <td className="py-4 px-4 sm:px-6 text-slate-600">
-                        Beneficiaries or their spouses should NEVER sign as attesting witnesses to protect bequest validity.
+                        Heirs or their spouses should NEVER sign as witnesses to protect bequest validity.
                       </td>
                     </tr>
                     <tr className="hover:bg-slate-50 transition-colors">
@@ -591,10 +591,10 @@ export default function MaharashtraLocationClient({ faqs }: Props) {
                         Article 64, Maharashtra Stamp Act
                       </td>
                       <td className="py-4 px-4 sm:px-6">
-                        Absolute exemption from stamp duty for Wills executed anywhere within Maharashtra.
+                        Absolute exemption from stamp duty for Wills signed anywhere within Maharashtra.
                       </td>
                       <td className="py-4 px-4 sm:px-6 text-slate-600">
-                        Executing on plain white A4 paper is 100% legally enforceable; non-judicial stamp paper is unrequired.
+                        Signing on plain white A4 paper is 100% legally enforceable; non-judicial stamp paper is unrequired.
                       </td>
                     </tr>
                     <tr className="hover:bg-slate-50 transition-colors">
@@ -605,7 +605,7 @@ export default function MaharashtraLocationClient({ faqs }: Props) {
                         Registration of Wills remains legally optional before Maharashtra Sub-Registrars.
                       </td>
                       <td className="py-4 px-4 sm:px-6 text-slate-600">
-                        Registration under Book III creates an unassailable government record that accelerates municipal mutation.
+                        Registration under Book III creates an unassailable government record that accelerates municipal name change.
                       </td>
                     </tr>
                     <tr className="hover:bg-slate-50 transition-colors">
@@ -616,7 +616,7 @@ export default function MaharashtraLocationClient({ faqs }: Props) {
                         Nomination in housing societies transfers membership as a fiduciary, not beneficial title.
                       </td>
                       <td className="py-4 px-4 sm:px-6 text-slate-600">
-                        A valid Will is essential to ensure intended family heirs receive unencumbered title to CHS flats.
+                        A valid Will is essential to make sure intended family heirs receive unencumbered title to CHS flats.
                       </td>
                     </tr>
                   </tbody>
@@ -627,7 +627,7 @@ export default function MaharashtraLocationClient({ faqs }: Props) {
             {/* -----------------------------------------------------------------
                 SECTION 3: BOMBAY HIGH COURT PROBATE RULES (SECTION 213 ISA)
                 ----------------------------------------------------------------- */}
-            <section id="probate-jurisdiction-rules" className="scroll-mt-24 space-y-6">
+            <section id="probate-area-rules" className="scroll-mt-24 space-y-6">
               <div className="border-b border-slate-200/80 pb-4">
                 <span className="text-xs font-mono font-bold tracking-widest uppercase text-[#C65378] block mb-1">
                   JUDICIAL JURISDICTION
@@ -639,7 +639,7 @@ export default function MaharashtraLocationClient({ faqs }: Props) {
 
               <div className="prose prose-slate max-w-none text-slate-700 text-sm sm:text-base leading-relaxed space-y-4">
                 <p>
-                  The most widely misunderstood legal issue in Maharashtra succession law is the requirement for court probate. Under Section 213(1) read with Section 57(a) &amp; (b) of the Indian Succession Act, 1925, Maharashtra has a distinct territorial division established during the British Presidency administration:
+                  The most widely misunderstood legal issue in Maharashtra succession law is the rule for court probate. Under Section 213(1) read with Section 57(a) &amp; (b) of the Indian Succession Act, 1925, Maharashtra has a distinct territorial division established during the British Presidency management:
                 </p>
               </div>
 
@@ -652,10 +652,10 @@ export default function MaharashtraLocationClient({ faqs }: Props) {
                     <span>MUMBAI PRESIDENCY JURISDICTION</span>
                   </div>
                   <h3 className="font-extrabold text-lg text-slate-900">
-                    Probate is Statutorily Mandatory
+                    Probate is Statutorily Needed
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    If a Will is made by a Hindu, Buddhist, Sikh, or Jain within the Ordinary Original Civil Jurisdiction of the High Court of Bombay (the historic island city of Mumbai and designated presidency limits), or if immovable properties bequeathed under the Will are situated inside Mumbai presidency limits, <strong>Section 213 mandates court probate</strong>.
+                    If a Will is made by a Hindu, Buddhist, Sikh, or Jain within the Ordinary Original Civil Area of the High Court of Bombay (the historic island city of Mumbai and designated presidency limits), or if land and flats bequeathed under the Will are situated inside Mumbai presidency limits, <strong>Section 213 mandates court probate</strong>.
                   </p>
                   <ul className="text-xs text-slate-600 space-y-2 pt-2 border-t border-slate-100">
                     <li className="flex items-center gap-2">
@@ -668,7 +668,7 @@ export default function MaharashtraLocationClient({ faqs }: Props) {
                     </li>
                     <li className="flex items-center gap-2">
                       <Check className="w-3.5 h-3.5 text-[#C65378] shrink-0" />
-                      <span>Petition filed before the Testamentary &amp; Intestate Division of Bombay High Court.</span>
+                      <span>Petition filed before the Testamentary &amp; Without a Will Division of Bombay High Court.</span>
                     </li>
                   </ul>
                   <div className="pt-2">
@@ -692,7 +692,7 @@ export default function MaharashtraLocationClient({ faqs }: Props) {
                     Probate is Legally Optional
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    For all other cities and districts in Maharashtra—including Pune, Pimpri-Chinchwad, Nagpur, Nashik, Chhatrapati Sambhajinagar, Thane, Navi Mumbai, Kolhapur, and Solapur—<strong>probate is strictly non-compulsory</strong> under settled Supreme Court precedents (<em>Clarence Pais v. Union of India</em>) and Bombay High Court rulings.
+                    For all other cities and districts in Maharashtra—including Pune, Pimpri-Chinchwad, Nagpur, Nashik, Chhatrapati Sambhajinagar, Thane, Navi Mumbai, Kolhapur, and Solapur—<strong>probate is strictly non-needed</strong> under settled Supreme Court precedents (<em>Clarence Pais v. Union of India</em>) and Bombay High Court rulings.
                   </p>
                   <ul className="text-xs text-slate-600 space-y-2 pt-2 border-t border-slate-100">
                     <li className="flex items-center gap-2">
@@ -705,7 +705,7 @@ export default function MaharashtraLocationClient({ faqs }: Props) {
                     </li>
                     <li className="flex items-center gap-2">
                       <Check className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
-                      <span>Court intervention is needed only if a disappointed heir files a civil dispute.</span>
+                      <span>Court intervention is needed only if a disappointed heir files a civil fight.</span>
                     </li>
                   </ul>
                   <div className="pt-2">
@@ -739,7 +739,7 @@ export default function MaharashtraLocationClient({ faqs }: Props) {
                   Over 100,000 Cooperative Housing Societies (CHS) exist in Maharashtra. Thousands of families mistakenly assume that submitting a society nomination form (Form 14 under Model Bye-Laws) makes the nominee the absolute owner of the flat upon the owner&apos;s death.
                 </p>
                 <p>
-                  This assumption is completely incorrect under Indian succession jurisprudence and has led to protracted litigation in the Bombay High Court and Maharashtra Co-operative Appellate Courts:
+                  This assumption is completely incorrect under Indian succession jurisprudence and has led to protracted court fights in the Bombay High Court and Maharashtra Co-operative Appellate Courts:
                 </p>
               </div>
 
@@ -752,7 +752,7 @@ export default function MaharashtraLocationClient({ faqs }: Props) {
                   In the landmark judgment of <em>Indrani Wahi v. Registrar of Co-operative Societies (2016)</em>, followed consistently by the Bombay High Court in <em>Ramdas Shivram Sattur v. Rameshchandra</em>, the courts unequivocally held:
                 </p>
                 <div className="p-4 rounded-2xl bg-slate-50 border-l-4 border-[#C65378] text-xs sm:text-sm text-slate-800 font-medium italic">
-                  &ldquo;A nominee of a flat in a cooperative housing society does not become the absolute owner of the property. The nominee is merely an agent or trustee holding the membership and shares in trust on behalf of the legal heirs entitled under testamentary succession (a valid Will) or intestate succession law.&rdquo;
+                  &ldquo;A nominee of a flat in a cooperative housing society does not become the absolute owner of the property. The nominee is merely an agent or trustee holding the membership and shares in trust on behalf of the legal heirs entitled under testamentary succession (a valid Will) or without a Will succession law.&rdquo;
                 </div>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
                   <div className="p-4 rounded-xl bg-amber-50/70 border border-amber-200/80">
@@ -762,7 +762,7 @@ export default function MaharashtraLocationClient({ faqs }: Props) {
                     </p>
                   </div>
                   <div className="p-4 rounded-xl bg-emerald-50/70 border border-emerald-200/80">
-                    <span className="font-bold text-emerald-900 text-xs block mb-1">Will Beneficiary&apos;s True Title</span>
+                    <span className="font-bold text-emerald-900 text-xs block mb-1">Will Heir&apos;s True Title</span>
                     <p className="text-xs text-emerald-800 leading-relaxed">
                       Holds 100% legal and equitable ownership, including the right to sell the flat, lease it, or transfer proceeds to their own children.
                     </p>
@@ -780,7 +780,7 @@ export default function MaharashtraLocationClient({ faqs }: Props) {
                   REGISTRATION RULES
                 </span>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  4. Will Registration: Mandatory vs Optional Status
+                  4. Will Registration: Needed vs Optional Status
                 </h3>
               </div>
 
@@ -789,7 +789,7 @@ export default function MaharashtraLocationClient({ faqs }: Props) {
                   Under Section 18(e) of the Registration Act, 1908, the registration of a Will is legally optional throughout Maharashtra. An unregistered Will drafted on plain A4 bond paper and attested by two competent adult witnesses is entirely valid in the eyes of law.
                 </p>
                 <p>
-                  However, in high-stakes metropolitan markets across Maharashtra, relying on an unregistered Will exposes your beneficiaries to severe administrative delays and hostile challenges:
+                  However, in high-stakes metropolitan markets across Maharashtra, relying on an unregistered Will exposes your heirs to severe office delays and hostile fights:
                 </p>
               </div>
 
@@ -798,14 +798,14 @@ export default function MaharashtraLocationClient({ faqs }: Props) {
                 <table className="w-full text-left text-xs sm:text-sm">
                   <thead className="bg-[#172228] text-white uppercase text-[11px] font-mono tracking-wider">
                     <tr>
-                      <th className="py-3.5 px-4 sm:px-6">Verification Factor</th>
+                      <th className="py-3.5 px-4 sm:px-6">Check Factor</th>
                       <th className="py-3.5 px-4 sm:px-6">Unregistered Will</th>
                       <th className="py-3.5 px-4 sm:px-6">IGR Maharashtra Registered Will</th>
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-slate-100 text-slate-700">
                     <tr className="hover:bg-slate-50 transition-colors">
-                      <td className="py-4 px-4 sm:px-6 font-bold text-slate-900">Proof of Genuine Execution</td>
+                      <td className="py-4 px-4 sm:px-6 font-bold text-slate-900">Proof of Genuine Signing</td>
                       <td className="py-4 px-4 sm:px-6 text-rose-600">Must be proved in court; easily challenged for forgery or undue influence.</td>
                       <td className="py-4 px-4 sm:px-6 text-emerald-700 font-semibold">Self-authenticating government record under Book III with biometric logs.</td>
                     </tr>
@@ -817,12 +817,12 @@ export default function MaharashtraLocationClient({ faqs }: Props) {
                     <tr className="hover:bg-slate-50 transition-colors">
                       <td className="py-4 px-4 sm:px-6 font-bold text-slate-900">Housing Society Flat Transfer</td>
                       <td className="py-4 px-4 sm:px-6 text-slate-600">Societies demand indemnity bonds, NOCs from all heirs, or court probate.</td>
-                      <td className="py-4 px-4 sm:px-6 text-emerald-700 font-semibold">Direct transfer of society share certificate under Bye-Law 35 procedures.</td>
+                      <td className="py-4 px-4 sm:px-6 text-emerald-700 font-semibold">Direct transfer of society share paper under Bye-Law 35 steps.</td>
                     </tr>
                     <tr className="hover:bg-slate-50 transition-colors">
-                      <td className="py-4 px-4 sm:px-6 font-bold text-slate-900">Municipal &amp; 7/12 Land Mutation</td>
+                      <td className="py-4 px-4 sm:px-6 font-bold text-slate-900">Municipal &amp; 7/12 Land Name Change</td>
                       <td className="py-4 px-4 sm:px-6 text-slate-600">Talathis and ward offices often conduct protracted hearings with all relatives.</td>
-                      <td className="py-4 px-4 sm:px-6 text-emerald-700 font-semibold">Swift Form 6 Ferfar mutation and computerized Satbara name entry.</td>
+                      <td className="py-4 px-4 sm:px-6 text-emerald-700 font-semibold">Swift Form 6 Ferfar name change and computerized Satbara name entry.</td>
                     </tr>
                   </tbody>
                 </table>
@@ -843,7 +843,7 @@ export default function MaharashtraLocationClient({ faqs }: Props) {
               </div>
 
               <p className="text-sm md:text-base text-slate-700 leading-relaxed">
-                The Inspector General of Registration (IGR) Maharashtra oversees hundreds of Sub-Registrar Offices organized across 6 major administrative revenue divisions. Use our directory to locate your designated registry office:
+                The Inspector General of Registration (IGR) Maharashtra oversees hundreds of Sub-Registrar Offices organized across 6 major office revenue divisions. Use our directory to locate your designated registry office:
               </p>
 
               {/* SEARCH FILTER */}
@@ -987,7 +987,7 @@ export default function MaharashtraLocationClient({ faqs }: Props) {
                       <span className="text-[10px] font-mono text-emerald-700 uppercase font-bold shrink-0">High Court Bench</span>
                     </h3>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Comprehensive estate planning across Nagpur City, MIHAN industrial assets, NMC municipal plots, and ancestral agricultural lands.
+                      Full estate planning across Nagpur City, MIHAN industrial assets, NMC municipal plots, and family farm lands.
                     </p>
                   </div>
                   <div className="pt-4 border-t border-slate-100 mt-4">
@@ -1009,7 +1009,7 @@ export default function MaharashtraLocationClient({ faqs }: Props) {
                       <span className="text-[10px] font-mono text-emerald-700 uppercase font-bold shrink-0">Industrial &amp; Agro</span>
                     </h3>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Tailored succession planning for vineyard estates, MIDC industrial units in Satpur/Ambad, and residential properties across Canada Corner.
+                      Tailored succession planning for vineyard estates, MIDC industrial units in Satpur/Ambad, and home assets across Canada Corner.
                     </p>
                   </div>
                   <div className="pt-4 border-t border-slate-100 mt-4">
@@ -1031,7 +1031,7 @@ export default function MaharashtraLocationClient({ faqs }: Props) {
                       <span className="text-[10px] font-mono text-blue-700 uppercase font-bold shrink-0">CIDCO / TMC</span>
                     </h3>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Succession solutions for CIDCO 99-year leasehold apartments, TMC residential complexes, and Vashi/Belapur commercial office suites.
+                      Succession solutions for CIDCO 99-year leasehold apartments, TMC home complexes, and Vashi/Belapur shop office suites.
                     </p>
                   </div>
                   <div className="pt-4 border-t border-slate-100 mt-4">
@@ -1053,7 +1053,7 @@ export default function MaharashtraLocationClient({ faqs }: Props) {
                       <span className="text-[10px] font-mono text-emerald-700 uppercase font-bold shrink-0">High Court Bench</span>
                     </h3>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Estate planning across Marathwada, AURIC smart city investments, Waluj manufacturing plants, and Samarth Nagar residential units.
+                      Estate planning across Marathwada, AURIC smart city investments, Waluj manufacturing plants, and Samarth Nagar home units.
                     </p>
                   </div>
                   <div className="pt-4 border-t border-slate-100 mt-4">
@@ -1086,10 +1086,10 @@ export default function MaharashtraLocationClient({ faqs }: Props) {
                   </div>
                   <div className="space-y-1.5">
                     <h3 className="font-extrabold text-base text-slate-900">
-                      Compile Asset Portfolio &amp; Beneficiary Distribution
+                      Compile Asset Portfolio &amp; Heir Split
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Document every asset held across Maharashtra: cooperative flat share certificates, CIDCO leasehold documents, agricultural 7/12 extracts, demat portfolios (NSDL/CDSL), bank accounts, and business equity. Designate primary beneficiaries and contingent alternates.
+                      Document every asset held across Maharashtra: cooperative flat share papers, CIDCO leasehold documents, farm 7/12 extracts, demat portfolios (NSDL/CDSL), bank accounts, and business equity. Designate primary heirs and contingent alternates.
                     </p>
                   </div>
                 </div>
@@ -1104,7 +1104,7 @@ export default function MaharashtraLocationClient({ faqs }: Props) {
                       Draft Will with Bombay High Court Legal Clauses
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Draft your Will incorporating crucial clauses: revocation of prior wills, appointment of an independent executor, specific asset bequests, and residuary clauses. Consult certified estate advocates to ensure strict compliance with Section 63 of the Indian Succession Act.
+                      Draft your Will incorporating crucial clauses: revocation of prior wills, appointment of an independent executor, specific asset bequests, and residuary clauses. Consult certified estate lawyers to make sure strict compliance with Section 63 of the Indian Succession Act.
                     </p>
                   </div>
                 </div>
@@ -1116,10 +1116,10 @@ export default function MaharashtraLocationClient({ faqs }: Props) {
                   </div>
                   <div className="space-y-1.5">
                     <h3 className="font-extrabold text-base text-slate-900">
-                      Execution &amp; Two-Witness Attestation on Plain Paper
+                      Signing &amp; Two-Witness Attestation on Plain Paper
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Print the drafted Will on plain white A4 bond paper (₹0 stamp duty under Article 64). The testator signs each page in the presence of two independent adult witnesses. For seniors, attach an MBBS doctor mental fitness certificate issued on the same day.
+                      Print the drafted Will on plain white A4 bond paper (₹0 stamp duty under Article 64). The Will maker signs each page in the presence of two independent adult witnesses. For seniors, attach an MBBS doctor mental fitness paper issued on the same day.
                     </p>
                   </div>
                 </div>
@@ -1134,7 +1134,7 @@ export default function MaharashtraLocationClient({ faqs }: Props) {
                       Schedule Appointment on IGR Maharashtra e-Stepin
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Visit the official Inspector General of Registration Maharashtra portal (igrmaharashtra.gov.in). Use the SARITA e-Stepin module to select your district Sub-Registrar office, fill in party information, pay the nominal ₹100 registration fee online, and generate your appointment token.
+                      Visit the official Inspector General of Registration Maharashtra portal (igrmaharashtra.gov.in). Use the SARITA e-Stepin module to select your district SRO office, fill in party information, pay the nominal ₹100 registration fee online, and generate your appointment token.
                     </p>
                   </div>
                 </div>
@@ -1149,7 +1149,7 @@ export default function MaharashtraLocationClient({ faqs }: Props) {
                       Biometric Scanning &amp; Book III Archival at SRO
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      On the appointed day, the testator and both witnesses visit the Sub-Registrar office with original Aadhaar cards. The SRO official verifies identities, records live webcam photos, captures biometric thumbprints, and issues the registered Book III registration certificate.
+                      On the appointed day, the Will maker and both witnesses visit the SRO office with original Aadhaar cards. The SRO official verifies identities, records live webcam photos, captures biometric thumbprints, and issues the registered Book III registration paper.
                     </p>
                   </div>
                 </div>
@@ -1171,7 +1171,7 @@ export default function MaharashtraLocationClient({ faqs }: Props) {
 
               <div className="prose prose-slate max-w-none text-slate-700 text-sm sm:text-base leading-relaxed space-y-4">
                 <p>
-                  Senior citizens, ailing individuals, or bedridden hospital patients often find traveling to crowded Sub-Registrar offices physically daunting. Under <strong>Section 31 of the Registration Act, 1908</strong>, Maharashtra law provides an official doorstep registration procedure:
+                  Senior citizens, ailing people, or bedridden hospital patients often find traveling to crowded Sub-Registrar offices physically daunting. Under <strong>Section 31 of the Registration Act, 1908</strong>, Maharashtra law provides an official doorstep registration step:
                 </p>
               </div>
 
@@ -1190,13 +1190,13 @@ export default function MaharashtraLocationClient({ faqs }: Props) {
                   <div className="p-4 rounded-2xl bg-slate-50 border border-slate-100 space-y-2">
                     <span className="text-xs font-bold text-slate-900 block">1. Medical Travel Inability</span>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      A registered MBBS medical practitioner certifies that the testator is medically infirm or bedridden and unable to visit the SRO.
+                      A registered MBBS medical practitioner certifies that the Will maker is medically infirm or bedridden and unable to visit the SRO.
                     </p>
                   </div>
                   <div className="p-4 rounded-2xl bg-slate-50 border border-slate-100 space-y-2">
                     <span className="text-xs font-bold text-slate-900 block">2. SRO Formal Deputation</span>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      The Sub-Registrar reviews the application, collects nominal government conveyance fees, and schedules a home visit commission.
+                      The Sub-Registrar reviews the form, collects nominal government conveyance fees, and schedules a home visit commission.
                     </p>
                   </div>
                   <div className="p-4 rounded-2xl bg-slate-50 border border-slate-100 space-y-2">
@@ -1220,7 +1220,7 @@ export default function MaharashtraLocationClient({ faqs }: Props) {
                       VERIFICATION READINESS
                     </span>
                     <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                      9. Mandatory Document Checklist for Maharashtra Wills
+                      9. Needed Document Checklist for Maharashtra Wills
                     </h3>
                   </div>
                   <div className="px-3.5 py-1.5 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-800 text-xs font-bold self-start sm:self-auto">
@@ -1230,7 +1230,7 @@ export default function MaharashtraLocationClient({ faqs }: Props) {
               </div>
 
               <p className="text-sm md:text-base text-slate-700 leading-relaxed">
-                Check off each item to ensure your Maharashtra Will execution and SRO registration proceed without statutory objections or clerical rejections:
+                Check off each item to make sure your Maharashtra Will signing and SRO registration proceed without legal objections or clerical rejections:
               </p>
 
               <div className="space-y-3">
@@ -1281,7 +1281,7 @@ export default function MaharashtraLocationClient({ faqs }: Props) {
 
               <div className="prose prose-slate max-w-none text-slate-700 text-sm sm:text-base leading-relaxed space-y-4">
                 <p>
-                  Maharashtra estates comprise diverse property categories, each governed by specific statutory transfer regulations:
+                  Maharashtra estates comprise diverse property categories, each governed by specific legal transfer regulations:
                 </p>
               </div>
 
@@ -1293,7 +1293,7 @@ export default function MaharashtraLocationClient({ faqs }: Props) {
                     <span>Cooperative Society Flats (CHS)</span>
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Governed by the MCS Act, 1960. Precision drafting must cite the exact society registration number, share certificate numbers, flat number, and distinctive share numbers to enable seamless title transfer under Bye-Law 35.
+                    Governed by the MCS Act, 1960. Precision drafting must cite the exact society registration number, share paper numbers, flat number, and distinctive share numbers to enable seamless title transfer under Bye-Law 35.
                   </p>
                 </div>
 
@@ -1304,18 +1304,18 @@ export default function MaharashtraLocationClient({ faqs }: Props) {
                     <span>CIDCO &amp; MHADA Leasehold Units</span>
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Prevalent across Navi Mumbai, Nashik, and suburban Mumbai. Bequests must account for tripartite lease agreements, NOC transfer requirements, and statutory transfer charges levied by development authorities.
+                    Prevalent across Navi Mumbai, Nashik, and suburban Mumbai. Bequests must account for tripartite lease agreements, NOC transfer rules, and legal transfer charges levied by development offices.
                   </p>
                 </div>
 
-                {/* 3. 7/12 Agricultural Lands */}
+                {/* 3. 7/12 Farm Lands */}
                 <div className="rounded-2xl bg-white border border-slate-200/90 p-5 shadow-xs space-y-2.5">
                   <div className="flex items-center gap-2 text-emerald-700 font-bold text-sm">
                     <Landmark className="w-4 h-4" />
-                    <span>7/12 Agricultural &amp; Ancestral Lands</span>
+                    <span>7/12 Farm &amp; Family Lands</span>
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Under Section 63 of the Maharashtra Tenancy and Agricultural Lands Act, non-agriculturists face restrictions. Precision Will drafting guarantees that ancestral and self-acquired farmland passes smoothly via revenue Form 6 Ferfar mutation.
+                    Under Section 63 of the Maharashtra Tenancy and Farm Lands Act, non-agriculturists face restrictions. Precision Will drafting guarantees that family and self-acquired farmland passes smoothly via revenue Form 6 Ferfar name change.
                   </p>
                 </div>
 
@@ -1347,7 +1347,7 @@ export default function MaharashtraLocationClient({ faqs }: Props) {
 
               <div className="prose prose-slate max-w-none text-slate-700 text-sm sm:text-base leading-relaxed space-y-4">
                 <p>
-                  A common misconception is that registering a Will requires paying exorbitant percentage-based stamp duties similar to gift deeds or sale deeds. Under Maharashtra law, testamentary dispositions enjoy complete statutory exemptions:
+                  A common misconception is that registering a Will requires paying exorbitant percentage-based stamp duties similar to gift deeds or sale deeds. Under Maharashtra law, testamentary dispositions enjoy complete legal exemptions:
                 </p>
               </div>
 
@@ -1398,7 +1398,7 @@ export default function MaharashtraLocationClient({ faqs }: Props) {
                   12. Transparent Pricing: Maharashtra Will Packages
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl mt-2">
-                  Select the level of legal assistance best suited to your family&apos;s assets across Maharashtra:
+                  Select the level of legal help best suited to your family&apos;s assets across Maharashtra:
                 </p>
               </div>
 
@@ -1410,7 +1410,7 @@ export default function MaharashtraLocationClient({ faqs }: Props) {
                     <h3 className="font-extrabold text-xl text-slate-900">Online Will Drafting</h3>
                     <div className="text-3xl font-black text-slate-900">₹1,990</div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Ideal for individuals with straightforward assets such as a single flat, bank deposits, and mutual funds.
+                      Ideal for people with straightforward assets such as a single flat, bank deposits, and mutual funds.
                     </p>
                     <ul className="text-xs text-slate-600 space-y-2 pt-2 border-t border-slate-100">
                       <li className="flex items-center gap-2">
@@ -1427,7 +1427,7 @@ export default function MaharashtraLocationClient({ faqs }: Props) {
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
-                        <span>Execution &amp; attestation guide</span>
+                        <span>Signing &amp; attestation guide</span>
                       </li>
                     </ul>
                   </div>
@@ -1447,15 +1447,15 @@ export default function MaharashtraLocationClient({ faqs }: Props) {
                   </span>
                   <div className="space-y-4">
                     <span className="text-xs font-bold uppercase tracking-wider text-[#C65378]">Professional</span>
-                    <h3 className="font-extrabold text-xl text-slate-900">Advocate Consultation &amp; Review</h3>
+                    <h3 className="font-extrabold text-xl text-slate-900">Lawyer Talk &amp; Review</h3>
                     <div className="text-3xl font-black text-slate-900">₹4,990</div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Recommended for families owning multiple flats, tech RSUs, or ancestral properties across Maharashtra.
+                      Recommended for families owning multiple flats, tech RSUs, or family assets across Maharashtra.
                     </p>
                     <ul className="text-xs text-slate-600 space-y-2 pt-2 border-t border-slate-100">
                       <li className="flex items-center gap-2">
                         <Check className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
-                        <span>1-on-1 Senior High Court Advocate Consultation</span>
+                        <span>1-on-1 Senior High Court Lawyer Talk</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
@@ -1467,11 +1467,11 @@ export default function MaharashtraLocationClient({ faqs }: Props) {
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
-                        <span>Doctor fitness certificate format included</span>
+                        <span>Doctor fitness paper format included</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
-                        <span>Two rounds of advocate revisions</span>
+                        <span>Two rounds of lawyer revisions</span>
                       </li>
                     </ul>
                   </div>
@@ -1480,23 +1480,23 @@ export default function MaharashtraLocationClient({ faqs }: Props) {
                     onClick={handleStartDraft}
                     className="mt-6 w-full py-2.5 rounded-xl bg-[#C65378] text-white text-xs font-extrabold hover:bg-[#a13c5d] transition-colors text-center cursor-pointer shadow-md shadow-[#C65378]/25"
                   >
-                    Book Advocate Consultation
+                    Book Lawyer Talk
                   </a>
                 </div>
 
                 {/* PLAN 3 */}
                 <div className="rounded-3xl bg-white border border-slate-200/90 p-6 shadow-xs flex flex-col justify-between">
                   <div className="space-y-4">
-                    <span className="text-xs font-bold uppercase tracking-wider text-slate-500">Comprehensive</span>
+                    <span className="text-xs font-bold uppercase tracking-wider text-slate-500">Full</span>
                     <h3 className="font-extrabold text-xl text-slate-900">Complete SRO Registration</h3>
                     <div className="text-3xl font-black text-slate-900">₹9,990</div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Turnkey end-to-end support including IGR slot booking, advocate accompaniment, or Section 31 doorstep execution.
+                      Turnkey end-to-end support including IGR slot booking, lawyer accompaniment, or Section 31 doorstep signing.
                     </p>
                     <ul className="text-xs text-slate-600 space-y-2 pt-2 border-t border-slate-100">
                       <li className="flex items-center gap-2">
                         <Check className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
-                        <span>All Advocate Review &amp; Consultation benefits</span>
+                        <span>All Lawyer Review &amp; Talk benefits</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
@@ -1504,7 +1504,7 @@ export default function MaharashtraLocationClient({ faqs }: Props) {
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
-                        <span>Advocate coordination at your local SRO</span>
+                        <span>Lawyer coordination at your local SRO</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
@@ -1581,7 +1581,7 @@ export default function MaharashtraLocationClient({ faqs }: Props) {
                   AUTHORITATIVE SOURCES
                 </span>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  13. Statutory Citations &amp; High Court Precedents
+                  13. Legal Citations &amp; High Court Precedents
                 </h3>
               </div>
 
@@ -1592,7 +1592,7 @@ export default function MaharashtraLocationClient({ faqs }: Props) {
                     <div>
                       <strong className="text-slate-900">Indian Succession Act, 1925 (Act No. 39 of 1925):</strong>
                       <span className="text-slate-600 ml-1">
-                        Sections 57, 59, 63, 213, 214, and 273 establishing execution rules and territorial probate jurisdiction.
+                        Sections 57, 59, 63, 213, 214, and 273 establishing signing rules and territorial probate area.
                       </span>
                     </div>
                   </div>
@@ -1651,10 +1651,10 @@ export default function MaharashtraLocationClient({ faqs }: Props) {
                     PROTECT YOUR FAMILY TODAY
                   </span>
                   <h3 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
-                    Secure Your Maharashtra Estate with Certified Advocates
+                    Secure Your Maharashtra Estate with Certified Lawyers
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
-                    Avoid probate delays, housing society disputes, and inheritance confusion. Create your legally verified Will today with complete support.
+                    Avoid probate delays, housing society fights, and inheritance confusion. Create your legally verified Will today with complete support.
                   </p>
                 </div>
                 <a

@@ -236,8 +236,8 @@ export default function RanchiLocationClient({ faqs }: Props) {
               </h1>
 
               <p className="text-base sm:text-lg text-slate-200 leading-relaxed font-normal max-w-2xl">
-                Protect family residential properties, RRDA plots, Chota Nagpur raiyati lands, and commercial business assets across Ranchi.
-                Get experienced advocate drafting, NGDRS Jharkhand slot booking, and Section 31 doorstep home visits for senior testators.
+                Protect family home assets, RRDA plots, Chota Nagpur raiyati lands, and shop business assets across Ranchi.
+                Get experienced lawyer drafting, NGDRS Jharkhand slot booking, and Section 31 doorstep home visits for senior testators.
               </p>
 
               <div className="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
@@ -465,7 +465,7 @@ export default function RanchiLocationClient({ faqs }: Props) {
                   <div className="p-4 rounded-2xl bg-slate-50/70 border border-slate-100 space-y-1.5">
                     <div className="flex items-center gap-2 font-bold text-sm text-slate-900">
                       <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
-                      <span>Probate Not Mandatory in Jharkhand</span>
+                      <span>Probate Not Needed in Jharkhand</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
                       Ranchi is a non-presidency capital under the High Court of Jharkhand. Under Section 213 of the Indian Succession Act, court probate is strictly optional for Hindu, Jain, Sikh, and Buddhist Wills.
@@ -478,17 +478,17 @@ export default function RanchiLocationClient({ faqs }: Props) {
                       <span>Zero Stamp Duty across State</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Wills in Jharkhand are completely exempt from stamp duty. Sub-Registrars charge only a flat nominal registration fee of approximately ₹1,000 for official Book III archival.
+                      Wills in Jharkhand are completely exempt from stamp duty. Sub-Registrars charge only a flat nominal registration fee of about ₹1,000 for official Book III archival.
                     </p>
                   </div>
 
                   <div className="p-4 rounded-2xl bg-slate-50/70 border border-slate-100 space-y-1.5">
                     <div className="flex items-center gap-2 font-bold text-sm text-slate-900">
                       <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
-                      <span>RMC &amp; RRDA Direct Mutation</span>
+                      <span>RMC &amp; RRDA Direct Name Change</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      A registered Will enables swift municipal holding tax mutation in Ranchi Municipal Corporation (RMC) and hassle-free plot transmissions with RRDA without court delays.
+                      A registered Will enables swift municipal holding tax name change in Ranchi Municipal Corporation (RMC) and hassle-free plot transmissions with RRDA without court delays.
                     </p>
                   </div>
 
@@ -498,7 +498,7 @@ export default function RanchiLocationClient({ faqs }: Props) {
                       <span>Section 31 Doorstep Facility</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Elderly or bedridden citizens in Ashok Nagar, Morabadi, and Kanke Road can request the Sub-Registrar to visit their home or hospital with an MBBS doctor fitness certificate.
+                      Elderly or bedridden citizens in Ashok Nagar, Morabadi, and Kanke Road can request the Sub-Registrar to visit their home or hospital with an MBBS doctor fitness paper.
                     </p>
                   </div>
                 </div>
@@ -518,7 +518,7 @@ export default function RanchiLocationClient({ faqs }: Props) {
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Testamentary succession in Ranchi and across Jharkhand is governed by the <strong>Indian Succession Act, 1925</strong>, the <strong>Registration Act, 1908</strong>, and state-specific land legislations including the <strong>Chota Nagpur Tenancy Act, 1908 (CNT Act)</strong>.
-                  Whether you are planning succession for family residential bungalows in Ashok Nagar, modern apartments along Kanke Road, commercial shops in Upper Bazar, or agricultural lands in Namkum and Ormanjhi, your Will must satisfy precise legal standards.
+                  Whether you are planning succession for family home bungalows in Ashok Nagar, modern apartments along Kanke Road, shop shops in Upper Bazar, or farm lands in Namkum and Ormanjhi, your Will must satisfy precise legal standards.
                 </p>
               </div>
 
@@ -526,7 +526,7 @@ export default function RanchiLocationClient({ faqs }: Props) {
                 <div className="rounded-2xl bg-white border border-slate-200/90 p-5 shadow-xs space-y-2">
                   <div className="flex items-center gap-2 font-bold text-sm text-slate-900">
                     <Award className="w-4 h-4 text-[#C65378]" />
-                    <span>Testator Capacity</span>
+                    <span>Will maker Capacity</span>
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
                     Under Section 59 of the Indian Succession Act, every person of sound mind who has attained majority can make a Will. Senior citizens with physical ailments can validly execute provided they possess testamentary disposing clarity.
@@ -539,7 +539,7 @@ export default function RanchiLocationClient({ faqs }: Props) {
                     <span>Attestation by Two Witnesses</span>
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Under Section 63, the Will must be signed by the testator in the presence of at least two independent adult witnesses. Under Section 67, witnesses must never be beneficiaries receiving any bequest under the document.
+                    Under Section 63, the Will must be signed by the Will maker in the presence of at least two independent adult witnesses. Under Section 67, witnesses must never be heirs receiving any bequest under the document.
                   </p>
                 </div>
 
@@ -549,7 +549,7 @@ export default function RanchiLocationClient({ faqs }: Props) {
                     <span>RRDA &amp; Raiyati Scope</span>
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    A Will can bequeath self-acquired properties, RRDA allocated residential plots, general raiyati land holdings, commercial partnership equities, bank accounts, and demat shares without encumbrance.
+                    A Will can bequeath self-acquired assets, RRDA allocated home plots, general raiyati land holdings, shop partnership equities, bank accounts, and demat shares without encumbrance.
                   </p>
                 </div>
               </div>
@@ -559,7 +559,7 @@ export default function RanchiLocationClient({ faqs }: Props) {
                 <div className="space-y-1">
                   <span className="font-bold text-[#C65378]">Crucial Chota Nagpur Tenancy Act (CNT Act) Nuance:</span>
                   <p className="text-slate-700 leading-relaxed">
-                    Under Section 46 of the CNT Act, ancestral lands belonging to Scheduled Tribes cannot be alienated, transferred, or bequeathed to non-tribals or contrary to customary tribal succession. Our Ranchi legal team meticulously verifies Khatiyan entries, Jamabandi records, and land categories to ensure your Will is 100% compliant with local tenancy jurisprudence.
+                    Under Section 46 of the CNT Act, family lands belonging to Scheduled Tribes cannot be alienated, transferred, or bequeathed to non-tribals or contrary to customary tribal succession. Our Ranchi legal team meticulously verifies Khatiyan entries, Jamabandi records, and land categories to make sure your Will is 100% compliant with local tenancy jurisprudence.
                   </p>
                 </div>
               </div>
@@ -574,12 +574,12 @@ export default function RanchiLocationClient({ faqs }: Props) {
                 </div>
                 {/* H2: Exactly 45 characters (<= 70) */}
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  2. Is Will Registration Compulsory in Ranchi?
+                  2. Is Will Registration Needed in Ranchi?
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Under <strong>Section 18(e) of the Registration Act, 1908</strong>, registering a Will is legally optional throughout Jharkhand.
-                  An unregistered Will drafted on plain A4 paper and executed before two witnesses has lawful standing.
-                  However, registering your Will before the Sub-Registrar provides critical legal protection against land grabbers, fraudulent partition claims, and property disputes.
+                  An unregistered Will drafted on plain A4 paper and signed before two witnesses has lawful standing.
+                  However, registering your Will before the Sub-Registrar provides critical legal protection against land grabbers, fraudulent split claims, and property fights.
                 </p>
               </div>
 
@@ -595,7 +595,7 @@ export default function RanchiLocationClient({ faqs }: Props) {
                   </thead>
                   <tbody className="divide-y divide-slate-100 text-slate-700">
                     <tr>
-                      <td className="p-3 sm:p-4 font-semibold">Statutory Validity</td>
+                      <td className="p-3 sm:p-4 font-semibold">Legal Validity</td>
                       <td className="p-3 sm:p-4">Valid under Section 63 ISA</td>
                       <td className="p-3 sm:p-4 font-semibold text-slate-900">Valid under Section 63 ISA &amp; Registration Act</td>
                     </tr>
@@ -605,14 +605,14 @@ export default function RanchiLocationClient({ faqs }: Props) {
                       <td className="p-3 sm:p-4 font-semibold text-emerald-700">Archived in Book III at Ranchi SRO</td>
                     </tr>
                     <tr>
-                      <td className="p-3 sm:p-4 font-semibold">RMC Holding Tax Mutation</td>
+                      <td className="p-3 sm:p-4 font-semibold">RMC Holding Tax Name Change</td>
                       <td className="p-3 sm:p-4">Requires extensive legal heir affidavits &amp; notices</td>
                       <td className="p-3 sm:p-4 font-semibold text-emerald-700">Swift processing by RMC revenue inspectors</td>
                     </tr>
                     <tr className="bg-slate-50/50">
-                      <td className="p-3 sm:p-4 font-semibold">RRDA &amp; Circle Office Mutation</td>
+                      <td className="p-3 sm:p-4 font-semibold">RRDA &amp; Circle Office Name Change</td>
                       <td className="p-3 sm:p-4">High scrutiny; vulnerable to third-party objections</td>
-                      <td className="p-3 sm:p-4 font-semibold text-emerald-700">Direct transmission in Jharbhoomi Jamabandi</td>
+                      <td className="p-3 sm:p-4 font-semibold text-emerald-700">Direct transfer in Jharbhoomi Jamabandi</td>
                     </tr>
                     <tr>
                       <td className="p-3 sm:p-4 font-semibold">Risk of Loss or Destruction</td>
@@ -642,7 +642,7 @@ export default function RanchiLocationClient({ faqs }: Props) {
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   A common question among property owners in Ranchi is whether a Will must receive court probate before heirs can take possession.
-                  Under Indian succession law, this is completely optional for properties located in Jharkhand.
+                  Under Indian succession law, this is completely optional for assets located in Jharkhand.
                 </p>
               </div>
 
@@ -651,11 +651,11 @@ export default function RanchiLocationClient({ faqs }: Props) {
                   The Non-Presidency Territory Rule under Section 213
                 </h3>
                 <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
-                  Under <strong>Section 213 read with Section 57(a) and 57(b) of the Indian Succession Act, 1925</strong>, obtaining probate or letters of administration is mandatory only for Wills executed inside the historical presidency towns of Bombay (Mumbai), Calcutta (Kolkata), and Madras (Chennai), or for properties situated within those territories.
+                  Under <strong>Section 213 read with Section 57(a) and 57(b) of the Indian Succession Act, 1925</strong>, getting probate or letters of management is needed only for Wills signed inside the historical presidency towns of Bombay (Mumbai), Calcutta (Kolkata), and Madras (Chennai), or for assets situated within those territories.
                 </p>
                 <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
-                  Ranchi is a non-presidency capital under the jurisdiction of the <strong>High Court of Jharkhand</strong>.
-                  The Supreme Court of India in the landmark decision of <em>Clarence Pais &amp; Ors. v. Union of India (AIR 2001 SC 1151)</em> and repeated rulings by the Jharkhand High Court confirm that probate is non-mandatory for Hindu, Jain, Sikh, and Buddhist testators outside historical presidency jurisdictions.
+                  Ranchi is a non-presidency capital under the area of the <strong>High Court of Jharkhand</strong>.
+                  The Supreme Court of India in the landmark decision of <em>Clarence Pais &amp; Ors. v. Union of India (AIR 2001 SC 1151)</em> and repeated rulings by the Jharkhand High Court confirm that probate is non-needed for Hindu, Jain, Sikh, and Buddhist testators outside historical presidency areas.
                 </p>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pt-3">
@@ -664,7 +664,7 @@ export default function RanchiLocationClient({ faqs }: Props) {
                       Practical Consequence
                     </span>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Beneficiaries in Ranchi do not need to spend years and lakhs of rupees in civil court to probate an uncontested Will before claiming bank accounts or mutating land title.
+                      Heirs in Ranchi do not need to spend years and lakhs of rupees in civil court to probate an uncontested Will before claiming bank accounts or mutating land title.
                     </p>
                   </div>
                   <div className="p-4 rounded-xl bg-slate-50 border border-slate-100 space-y-1">
@@ -672,7 +672,7 @@ export default function RanchiLocationClient({ faqs }: Props) {
                       Why Registration is Vital
                     </span>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Since court probate is not mandatory, registering your Will at the Ranchi Sub-Registrar Office serves as the gold standard of authenticity before RMC, banks, and revenue circle officers.
+                      Since court probate is not needed, registering your Will at the Ranchi SRO office serves as the gold standard of authenticity before RMC, banks, and revenue circle officers.
                     </p>
                   </div>
                 </div>
@@ -688,7 +688,7 @@ export default function RanchiLocationClient({ faqs }: Props) {
                 </div>
                 {/* H2: Exactly 46 characters (<= 70) */}
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  4. Ranchi Sub-Registrar Office Directory &amp; SROs
+                  4. Ranchi SRO office Directory &amp; SROs
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Will registration across Ranchi is administered by the Department of Registration, Government of Jharkhand through the <strong>National Generic Document Registration System (NGDRS Jharkhand)</strong>.
@@ -775,7 +775,7 @@ export default function RanchiLocationClient({ faqs }: Props) {
                       href="/contact"
                       className="inline-flex items-center gap-1.5 font-bold text-[#C65378] hover:underline"
                     >
-                      <span>Request Advocate Support for {activeSroData.name}</span>
+                      <span>Request Lawyer Support for {activeSroData.name}</span>
                       <ArrowRight className="w-3.5 h-3.5" />
                     </Link>
                   </div>
@@ -795,9 +795,9 @@ export default function RanchiLocationClient({ faqs }: Props) {
                   5. Area-Wise Will Drafting Services Across Ranchi
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Seeking advocate-supervised <strong>Will drafting services in Ashok Nagar, Morabadi, Bariatu, Kanke Road, Doranda, or Lalpur</strong>?
+                  Seeking lawyer-supervised <strong>Will drafting services in Ashok Nagar, Morabadi, Bariatu, Kanke Road, Doranda, or Lalpur</strong>?
                   Ranchi encompasses distinct property ownership frameworks, RRDA housing board covenants, RMC municipal bylaws, and Chota Nagpur Tenancy Act classifications.
-                  Whether you own an ancestral bungalow in Morabadi, an RRDA plot in Ashok Nagar, or commercial units on Main Road, our estate lawyers provide tailored legal solutions:
+                  Whether you own an family bungalow in Morabadi, an RRDA plot in Ashok Nagar, or shop units on Main Road, our estate lawyers provide tailored legal solutions:
                 </p>
               </div>
 
@@ -833,13 +833,13 @@ export default function RanchiLocationClient({ faqs }: Props) {
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
                       <div className="font-bold text-slate-900">Key Legal Considerations:</div>
                       <p className="text-slate-600">
-                        Clear RMC holding numbers, RRDA plot allotment clauses, and life-interest protections prevent painful partition disputes among children.
+                        Clear RMC holding numbers, RRDA plot allotment clauses, and life-interest protections prevent painful split fights among children.
                       </p>
                     </div>
                   </div>
 
                   <div className="pt-4 border-t border-slate-100 mt-4 flex items-center justify-between">
-                    <span className="text-xs font-semibold text-slate-500">Jurisdiction: SRO Ranchi Sadar / Argora Anchal</span>
+                    <span className="text-xs font-semibold text-slate-500">Area: SRO Ranchi Sadar / Argora Anchal</span>
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
@@ -877,19 +877,19 @@ export default function RanchiLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Eminent for historical residences, expansive estates, educational leaders, and intellectuals. We formulate custom estate distributions for ancestral bungalows, high-rise luxury flats, and valuable family heirloom art or book collections.
+                      Eminent for historical residences, expansive estates, educational leaders, and intellectuals. We formulate custom estate distributions for family bungalows, high-rise luxury flats, and valuable family heirloom art or book collections.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
                       <div className="font-bold text-slate-900">Key Legal Considerations:</div>
                       <p className="text-slate-600">
-                        Exact boundaries, Khatiyan survey verification, and specific bequeathals protect multi-crore estates from fraudulent land claims.
+                        Exact boundaries, Khatiyan survey check, and specific bequeathals protect multi-crore estates from fraudulent land claims.
                       </p>
                     </div>
                   </div>
 
                   <div className="pt-4 border-t border-slate-100 mt-4 flex items-center justify-between">
-                    <span className="text-xs font-semibold text-slate-500">Jurisdiction: SRO Ranchi Sadar / SRO Kanke</span>
+                    <span className="text-xs font-semibold text-slate-500">Area: SRO Ranchi Sadar / SRO Kanke</span>
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
@@ -927,19 +927,19 @@ export default function RanchiLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Home to senior doctors, RIMS professors, medical clinics, and modern residential townships. We assist medical professionals with clinical asset transmission, diagnostic equipment bequests, and mutual Wills for doctor spouses.
+                      Home to senior doctors, RIMS professors, medical clinics, and modern home townships. We assist medical professionals with clinical asset transfer, diagnostic equipment bequests, and mutual Wills for doctor spouses.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
                       <div className="font-bold text-slate-900">Key Legal Considerations:</div>
                       <p className="text-slate-600">
-                        Separation of commercial clinic leases from personal residential assets guarantees smooth inheritance without institutional roadblocks.
+                        Separation of shop clinic leases from personal home assets guarantees smooth inheritance without institutional roadblocks.
                       </p>
                     </div>
                   </div>
 
                   <div className="pt-4 border-t border-slate-100 mt-4 flex items-center justify-between">
-                    <span className="text-xs font-semibold text-slate-500">Jurisdiction: SRO Ranchi Sadar / Town Anchal</span>
+                    <span className="text-xs font-semibold text-slate-500">Area: SRO Ranchi Sadar / Town Anchal</span>
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
@@ -983,13 +983,13 @@ export default function RanchiLocationClient({ faqs }: Props) {
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
                       <div className="font-bold text-slate-900">Key Legal Considerations:</div>
                       <p className="text-slate-600">
-                        Rigorous verification of non-tribal raiyati land nature prevents post-death challenges before the Sub-Divisional Officer (SDO) or Circle Officer.
+                        Rigorous check of non-tribal raiyati land nature prevents post-death fights before the Sub-Divisional Officer (SDO) or Circle Officer.
                       </p>
                     </div>
                   </div>
 
                   <div className="pt-4 border-t border-slate-100 mt-4 flex items-center justify-between">
-                    <span className="text-xs font-semibold text-slate-500">Jurisdiction: SRO Kanke / Kanke Anchal</span>
+                    <span className="text-xs font-semibold text-slate-500">Area: SRO Kanke / Kanke Anchal</span>
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
@@ -1008,7 +1008,7 @@ export default function RanchiLocationClient({ faqs }: Props) {
                     <div className="flex items-center justify-between gap-2">
                       <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-rose-50 text-[#C65378] border border-rose-100">
                         <MapPin className="w-3.5 h-3.5" />
-                        Administrative &amp; Airport Belt
+                        Office &amp; Airport Belt
                       </span>
                       <span className="text-[11px] font-semibold text-slate-500 bg-slate-100 px-2.5 py-1 rounded-lg">
                         SRO Namkum / Sadar
@@ -1023,23 +1023,23 @@ export default function RanchiLocationClient({ faqs }: Props) {
                       <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Nepal House Secretariat Belt</span>
                       <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Birsa Munda Airport Environs</span>
                       <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Doranda High Court Old Campus</span>
-                      <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Hinoo Chowk Commercial</span>
+                      <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Hinoo Chowk Shop</span>
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Historic administrative hub housing government secretariats, defense cantonment officers, and well-settled family households. We assist senior government pensioners and defense families with seamless testamentary planning.
+                      Historic office hub housing government secretariats, defense cantonment officers, and well-settled family households. We assist senior government pensioners and defense families with seamless testamentary planning.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
                       <div className="font-bold text-slate-900">Key Legal Considerations:</div>
                       <p className="text-slate-600">
-                        Explicit pension nominee alignment and bank locker bequeathals prevent inter-family administrative impasses after death.
+                        Explicit pension nominee alignment and bank locker bequeathals prevent inter-family office impasses after death.
                       </p>
                     </div>
                   </div>
 
                   <div className="pt-4 border-t border-slate-100 mt-4 flex items-center justify-between">
-                    <span className="text-xs font-semibold text-slate-500">Jurisdiction: SRO Namkum / Town Anchal</span>
+                    <span className="text-xs font-semibold text-slate-500">Area: SRO Namkum / Town Anchal</span>
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
@@ -1058,7 +1058,7 @@ export default function RanchiLocationClient({ faqs }: Props) {
                     <div className="flex items-center justify-between gap-2">
                       <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-rose-50 text-[#C65378] border border-rose-100">
                         <MapPin className="w-3.5 h-3.5" />
-                        Commercial &amp; Wholesale Center
+                        Shop &amp; Wholesale Center
                       </span>
                       <span className="text-[11px] font-semibold text-slate-500 bg-slate-100 px-2.5 py-1 rounded-lg">
                         SRO Ranchi Sadar
@@ -1072,12 +1072,12 @@ export default function RanchiLocationClient({ faqs }: Props) {
                     <div className="flex flex-wrap gap-1.5 text-[11px] text-slate-600">
                       <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Upper Bazar Wholesale Mandi</span>
                       <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Lalpur Retail Hub</span>
-                      <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Circular Road Commercial</span>
+                      <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Circular Road Shop</span>
                       <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Main Road Showroom Strip</span>
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Ranchi&apos;s business epicenter with wholesale traders, jewellers, textile merchants, and commercial complex owners. We formulate robust business succession plans protecting commercial freeholds, partnership shares, and warehouse leases.
+                      Ranchi&apos;s business epicenter with wholesale traders, jewellers, textile merchants, and shop complex owners. We formulate robust business succession plans protecting shop freeholds, partnership shares, and warehouse leases.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1089,14 +1089,14 @@ export default function RanchiLocationClient({ faqs }: Props) {
                   </div>
 
                   <div className="pt-4 border-t border-slate-100 mt-4 flex items-center justify-between">
-                    <span className="text-xs font-semibold text-slate-500">Jurisdiction: SRO Ranchi Sadar (Kutchery)</span>
+                    <span className="text-xs font-semibold text-slate-500">Area: SRO Ranchi Sadar (Kutchery)</span>
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
                       aria-label="Will Drafting Services in Lalpur Circular Road Upper Bazar"
                       className="inline-flex items-center gap-1.5 text-xs font-bold text-[#C65378] hover:text-[#a13c5d] group-hover:translate-x-0.5 transition-all"
                     >
-                      <span>Draft Commercial Will</span>
+                      <span>Draft Shop Will</span>
                       <ArrowRight className="w-3.5 h-3.5" />
                     </Link>
                   </div>
@@ -1117,7 +1117,7 @@ export default function RanchiLocationClient({ faqs }: Props) {
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Registering a Will in Ranchi is conducted through the <strong>Department of Registration, Government of Jharkhand (NGDRS Jharkhand)</strong>.
-                  Our senior advocates guide you seamlessly through each statutory phase:
+                  Our senior lawyers guide you seamlessly through each legal phase:
                 </p>
               </div>
 
@@ -1129,10 +1129,10 @@ export default function RanchiLocationClient({ faqs }: Props) {
                   </div>
                   <div className="space-y-1.5 flex-1">
                     <h3 className="font-extrabold text-base text-slate-900">
-                      Asset Inventory &amp; CNT Act Verification
+                      Asset Inventory &amp; CNT Act Check
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Compile complete ownership documents of your Ranchi properties, including RMC municipal holding tax receipts, RRDA plot allotment letters, bank account details, demat portfolios, and Khatiyan survey land records. Verify that lands are non-tribal general raiyati assets under CNT Act parameters.
+                      Compile complete ownership documents of your Ranchi assets, including RMC municipal holding tax receipts, RRDA plot allotment letters, bank account details, demat portfolios, and Khatiyan survey land records. Verify that lands are non-tribal general raiyati assets under CNT Act parameters.
                     </p>
                   </div>
                 </div>
@@ -1144,10 +1144,10 @@ export default function RanchiLocationClient({ faqs }: Props) {
                   </div>
                   <div className="space-y-1.5 flex-1">
                     <h3 className="font-extrabold text-base text-slate-900">
-                      Advocate Drafting &amp; Custom Legal Clauses
+                      Lawyer Drafting &amp; Custom Legal Clauses
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Our legal specialists draft a tailored testamentary document. We incorporate unequivocal revocation of prior Wills, specific asset bequeathals, residuary estate provisions, Jharkhand High Court probate exemption affirmations, and clear administrative powers for your executor.
+                      Our legal experts draft a tailored testamentary document. We incorporate unequivocal revocation of prior Wills, specific asset bequeathals, residuary estate rules, Jharkhand High Court probate exemption affirmations, and clear office powers for your executor.
                     </p>
                   </div>
                 </div>
@@ -1159,10 +1159,10 @@ export default function RanchiLocationClient({ faqs }: Props) {
                   </div>
                   <div className="space-y-1.5 flex-1">
                     <h3 className="font-extrabold text-base text-slate-900">
-                      Execution &amp; Attestation by Two Witnesses
+                      Signing &amp; Attestation by Two Witnesses
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Print the drafted Will on durable bond or standard executive paper. The testator signs or affixes their thumb impression at the bottom of each page in the concurrent presence of two independent adult witnesses who sign as attestors. If the testator is elderly, an MBBS doctor mental fitness certificate is appended.
+                      Print the drafted Will on durable bond or standard executive paper. The Will maker signs or affixes their thumb impression at the bottom of each page in the concurrent presence of two independent adult witnesses who sign as attestors. If the Will maker is elderly, an MBBS doctor mental fitness paper is appended.
                     </p>
                   </div>
                 </div>
@@ -1177,7 +1177,7 @@ export default function RanchiLocationClient({ faqs }: Props) {
                       NGDRS Jharkhand Online Slot Booking &amp; e-Gras Challan
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Our team logs into the NGDRS Jharkhand portal (<em>ngdrs.jharkhand.gov.in</em>), inputs document particulars under Book III, selects your jurisdictional Ranchi SRO (such as Ranchi Sadar Kutchery or Kanke), and pays the statutory ₹1,000 fee via e-Gras online government challan. We confirm your preferred time slot appointment slip.
+                      Our team logs into the NGDRS Jharkhand portal (<em>ngdrs.jharkhand.gov.in</em>), inputs document particulars under Book III, selects your jurisdictional Ranchi SRO (such as Ranchi Sadar Kutchery or Kanke), and pays the legal ₹1,000 fee via e-Gras online government challan. We confirm your preferred time slot appointment slip.
                     </p>
                   </div>
                 </div>
@@ -1192,7 +1192,7 @@ export default function RanchiLocationClient({ faqs }: Props) {
                       SRO Attendance, Biometrics &amp; Book III Archival
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      The testator and both witnesses visit the Sub-Registrar Office with original Aadhaar cards and appointment slips. The Sub-Registrar captures digital photographs, verifies biometric fingerprints, records the entry into Book III, and hands over the certified registered Will copy with official endorsement stamps.
+                      The Will maker and both witnesses visit the SRO office with original Aadhaar cards and appointment slips. The Sub-Registrar captures digital photographs, verifies biometric fingerprints, records the entry into Book III, and hands over the certified registered Will copy with official endorsement stamps.
                     </p>
                   </div>
                 </div>
@@ -1226,27 +1226,27 @@ export default function RanchiLocationClient({ faqs }: Props) {
                       Sub-Registrar Home Visit under Section 31
                     </h3>
                     <p className="text-xs text-slate-500">
-                      Applicable across all Sub-Registrar jurisdictions in Jharkhand
+                      Applicable across all Sub-Registrar areas in Jharkhand
                     </p>
                   </div>
                 </div>
 
                 <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
-                  Under <strong>Section 31 of the Registration Act, 1908</strong>, the Sub-Registrar has discretionary authority to attend the private residence or hospital bedside of a testator who cannot travel to the registration office due to age or medical infirmity.
+                  Under <strong>Section 31 of the Registration Act, 1908</strong>, the Sub-Registrar has discretionary authority to attend the private residence or hospital bedside of a Will maker who cannot travel to the registration office due to age or medical infirmity.
                 </p>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div className="p-4 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
                     <span className="font-bold text-slate-900 block">Medical Certificate Mandate:</span>
                     <p className="text-slate-600">
-                      A registered medical practitioner (MBBS doctor) must issue a written certificate confirming that the testator is mentally lucid and in sound testamentary disposing state of mind.
+                      A registered medical practitioner (MBBS doctor) must issue a written paper confirming that the Will maker is mentally lucid and in sound testamentary disposing state of mind.
                     </p>
                   </div>
 
                   <div className="p-4 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
                     <span className="font-bold text-slate-900 block">Official Commission Fee:</span>
                     <p className="text-slate-600">
-                      A statutory private attendance commission fee is paid through the Jharkhand e-Gras portal, covering the Sub-Registrar official visit and travel escort.
+                      A legal private attendance commission fee is paid through the Jharkhand e-Gras portal, covering the Sub-Registrar official visit and travel escort.
                     </p>
                   </div>
                 </div>
@@ -1275,7 +1275,7 @@ export default function RanchiLocationClient({ faqs }: Props) {
                   8. Documents Checklist for Ranchi Will Making
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Before visiting the Sub-Registrar Office in Ranchi or finalizing your document online, verify that you have gathered all necessary proofs. Use our interactive checklist to track your readiness:
+                  Before visiting the SRO office in Ranchi or finalizing your document online, verify that you have gathered all necessary proofs. Use our interactive checklist to track your readiness:
                 </p>
               </div>
 
@@ -1337,7 +1337,7 @@ export default function RanchiLocationClient({ faqs }: Props) {
                   9. Ranchi Real Estate: RRDA Plots &amp; CNT Act Rules
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Asset bequeathal in Ranchi involves distinct municipal, urban development, and Chota Nagpur Tenancy Act requirements. Here is how our legal drafts ensure title clarity across local asset categories:
+                  Asset bequeathal in Ranchi involves distinct municipal, urban development, and Chota Nagpur Tenancy Act rules. Here is how our legal drafts make sure title clarity across local asset categories:
                 </p>
               </div>
 
@@ -1346,10 +1346,10 @@ export default function RanchiLocationClient({ faqs }: Props) {
                 <div className="p-5 sm:p-6 rounded-2xl bg-white border border-slate-200/90 shadow-xs space-y-2.5">
                   <div className="flex items-center gap-2 text-sm font-bold text-slate-900">
                     <Landmark className="w-4 h-4 text-[#C65378]" />
-                    <span>RRDA Approved Residential Plots</span>
+                    <span>RRDA Approved Home Plots</span>
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Thousands of families in Ranchi own residential and commercial plots developed under Ranchi Regional Development Authority (RRDA) schemes. Our drafts record exact RRDA layout sanction numbers, plot measurements, and mutation rights to ensure smooth title transmission.
+                    Thousands of families in Ranchi own home and shop plots developed under Ranchi Regional Development Authority (RRDA) schemes. Our drafts record exact RRDA layout sanction numbers, plot measurements, and name change rights to make sure smooth title transfer.
                   </p>
                 </div>
 
@@ -1360,7 +1360,7 @@ export default function RanchiLocationClient({ faqs }: Props) {
                     <span>RMC Freehold Apartments &amp; Houses</span>
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Properties within Ranchi Municipal Corporation (RMC) limits require specific holding numbers, ward entries, and registered deed citations. A registered Will allows the beneficiary to achieve name mutation directly through the RMC citizen portal without bureaucratic delays.
+                    Assets within Ranchi Municipal Corporation (RMC) limits require specific holding numbers, ward entries, and registered deed citations. A registered Will allows the heir to achieve name name change directly through the RMC citizen portal without bureaucratic delays.
                   </p>
                 </div>
 
@@ -1371,7 +1371,7 @@ export default function RanchiLocationClient({ faqs }: Props) {
                     <span>Chota Nagpur Tenancy (CNT) Raiyati Land</span>
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Agricultural and semi-urban lands in Kanke, Namkum, and Ormanjhi are governed by the CNT Act. We specify CS/RS Khatiyan numbers, Thana numbers, Khata and Khesra plot numbers, and Jharbhoomi Jamabandi details to prevent contentious tenancy litigations.
+                    Farm and semi-urban lands in Kanke, Namkum, and Ormanjhi are governed by the CNT Act. We specify CS/RS Khatiyan numbers, Thana numbers, Khata and Khesra plot numbers, and Jharbhoomi Jamabandi details to prevent contentious tenancy litigations.
                   </p>
                 </div>
 
@@ -1379,10 +1379,10 @@ export default function RanchiLocationClient({ faqs }: Props) {
                 <div className="p-5 sm:p-6 rounded-2xl bg-white border border-slate-200/90 shadow-xs space-y-2.5">
                   <div className="flex items-center gap-2 text-sm font-bold text-slate-900">
                     <Sparkles className="w-4 h-4 text-[#C65378]" />
-                    <span>Commercial Showrooms &amp; Small Enterprises</span>
+                    <span>Shop Showrooms &amp; Small Enterprises</span>
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Commercial assets in Upper Bazar, Lalpur, Main Road, or Tupudana industrial park require distinct clauses for business leases, GST transitions, partnership interests, and creditor liabilities to ensure uninterrupted business continuity.
+                    Shop assets in Upper Bazar, Lalpur, Main Road, or Tupudana industrial park require distinct clauses for business leases, GST transitions, partnership interests, and creditor liabilities to make sure uninterrupted business continuity.
                   </p>
                 </div>
               </div>
@@ -1408,7 +1408,7 @@ export default function RanchiLocationClient({ faqs }: Props) {
                 <table className="w-full text-left text-xs sm:text-sm border-collapse">
                   <thead>
                     <tr className="bg-slate-100/80 text-slate-800 border-b border-slate-200">
-                      <th className="p-3 sm:p-4 font-bold">Statutory Fee Component</th>
+                      <th className="p-3 sm:p-4 font-bold">Legal Fee Component</th>
                       <th className="p-3 sm:p-4 font-bold text-[#C65378]">Official Jharkhand Tariff</th>
                       <th className="p-3 sm:p-4 font-bold text-slate-600">Remarks &amp; Mode of Payment</th>
                     </tr>
@@ -1422,7 +1422,7 @@ export default function RanchiLocationClient({ faqs }: Props) {
                     <tr className="bg-slate-50/50">
                       <td className="p-3 sm:p-4 font-semibold">Book III Registration Fee</td>
                       <td className="p-3 sm:p-4 font-bold text-slate-900">₹1,000</td>
-                      <td className="p-3 sm:p-4">Flat statutory fee payable via e-Gras online challan</td>
+                      <td className="p-3 sm:p-4">Flat legal fee payable via e-Gras online challan</td>
                     </tr>
                     <tr>
                       <td className="p-3 sm:p-4 font-semibold">User &amp; Computer Charges</td>
@@ -1436,7 +1436,7 @@ export default function RanchiLocationClient({ faqs }: Props) {
                     </tr>
                     <tr>
                       <td className="p-3 sm:p-4 font-semibold">Certified Copy of Registered Will</td>
-                      <td className="p-3 sm:p-4 font-bold text-slate-900">Nominal Application Fee</td>
+                      <td className="p-3 sm:p-4 font-bold text-slate-900">Nominal Form Fee</td>
                       <td className="p-3 sm:p-4">Available from SRO archives after registration</td>
                     </tr>
                   </tbody>
@@ -1456,7 +1456,7 @@ export default function RanchiLocationClient({ faqs }: Props) {
                   11. Transparent Will Packages &amp; Legal Fees
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Choose the level of legal support tailored to your family&apos;s assets. No hidden consultation charges, no surprise fees:
+                  Choose the level of legal support tailored to your family&apos;s assets. No hidden talk charges, no surprise fees:
                 </p>
               </div>
 
@@ -1472,7 +1472,7 @@ export default function RanchiLocationClient({ faqs }: Props) {
                       <span className="text-xs text-slate-500">/ one-time</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Ideal for nuclear families with straightforward residential apartments and bank accounts in Ranchi.
+                      Ideal for nuclear families with straightforward home apartments and bank accounts in Ranchi.
                     </p>
 
                     <ul className="space-y-2 text-xs text-slate-700 pt-2 border-t border-slate-100">
@@ -1490,7 +1490,7 @@ export default function RanchiLocationClient({ faqs }: Props) {
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
-                        <span>Self-Execution Guide</span>
+                        <span>Self-Signing Guide</span>
                       </li>
                     </ul>
                   </div>
@@ -1512,20 +1512,20 @@ export default function RanchiLocationClient({ faqs }: Props) {
 
                   <div className="space-y-4">
                     <span className="text-xs font-bold uppercase tracking-wider text-[#C65378] block">
-                      Advocate Consultation &amp; Custom Draft
+                      Lawyer Talk &amp; Custom Draft
                     </span>
                     <div className="flex items-baseline gap-1">
                       <span className="text-3xl font-black text-slate-900">₹4,990</span>
                       <span className="text-xs text-slate-500">/ one-time</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Custom drafting by senior estate advocates for RRDA plots, CNT Act compliant lands, and business assets.
+                      Custom drafting by senior estate lawyers for RRDA plots, CNT Act compliant lands, and business assets.
                     </p>
 
                     <ul className="space-y-2 text-xs text-slate-700 pt-2 border-t border-slate-100">
                       <li className="flex items-center gap-2">
                         <Check className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
-                        <span>Senior Advocate Consultation</span>
+                        <span>Senior Lawyer Talk</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
@@ -1547,7 +1547,7 @@ export default function RanchiLocationClient({ faqs }: Props) {
                     onClick={handleStartDraft}
                     className="mt-6 w-full py-2.5 rounded-full bg-[#C65378] text-white font-bold text-xs hover:bg-[#a13c5d] transition-all text-center block shadow-md shadow-[#C65378]/25"
                   >
-                    Consult Senior Advocate
+                    Consult Senior Lawyer
                   </a>
                 </div>
 
@@ -1576,7 +1576,7 @@ export default function RanchiLocationClient({ faqs }: Props) {
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
-                        <span>Advocate Accompaniment at SRO</span>
+                        <span>Lawyer Accompaniment at SRO</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
@@ -1651,7 +1651,7 @@ export default function RanchiLocationClient({ faqs }: Props) {
                 </div>
                 {/* H2: Exactly 48 characters (<= 70) */}
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  13. Statutory References &amp; Jharkhand NGDRS Rules
+                  13. Legal References &amp; Jharkhand NGDRS Rules
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Every Will crafted on our platform adheres to strict Indian statutory law and Jharkhand state circulars:
@@ -1667,7 +1667,7 @@ export default function RanchiLocationClient({ faqs }: Props) {
                     Testamentary Capacity &amp; Attestation
                   </h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Mandates sound disposing mind and signature before two independent witnesses who are not beneficiaries.
+                    Mandates sound disposing mind and signature before two independent witnesses who are not heirs.
                   </p>
                 </div>
 
@@ -1679,7 +1679,7 @@ export default function RanchiLocationClient({ faqs }: Props) {
                     Non-Presidency Probate Exemption
                   </h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Exempts Hindu, Sikh, Jain, and Buddhist testators in Jharkhand from mandatory court probate proceedings.
+                    Exempts Hindu, Sikh, Jain, and Buddhist testators in Jharkhand from needed court probate proceedings.
                   </p>
                 </div>
 
@@ -1724,7 +1724,7 @@ export default function RanchiLocationClient({ faqs }: Props) {
                     RRDA &amp; RMC Municipal Regulations
                   </span>
                   <h3 className="font-extrabold text-sm text-slate-900">
-                    Municipal &amp; Urban Land Mutation
+                    Municipal &amp; Urban Land Name Change
                   </h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
                     Framework for transferring approved RRDA layouts and municipal holding tax records through Circle Offices and RMC.

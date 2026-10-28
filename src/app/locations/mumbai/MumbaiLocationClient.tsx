@@ -114,14 +114,14 @@ const INITIAL_CHECKLIST = [
   },
   {
     id: "item-2",
-    label: "Original Aadhaar Card & PAN of Testator",
-    detail: "Necessary for biometric thumbprint authentication and live web-camera photography at the SRO counter.",
+    label: "Original Aadhaar Card & PAN of Will maker",
+    detail: "Necessary for biometric thumbprint check and live web-camera photography at the SRO counter.",
     checked: true,
   },
   {
     id: "item-3",
     label: "Two Independent Adult Witnesses with Aadhaar",
-    detail: "Both witnesses must carry original photo IDs and must not be beneficiaries receiving bequests in the Will.",
+    detail: "Both witnesses must carry original photo IDs and must not be heirs receiving bequests in the Will.",
     checked: true,
   },
   {
@@ -145,7 +145,7 @@ const INITIAL_CHECKLIST = [
   {
     id: "item-7",
     label: "Two Passport-Sized Photographs Each",
-    detail: "Recent color photographs of the testator and both attesting witnesses for pasting in official Book III registers.",
+    detail: "Recent color photographs of the Will maker and both witnesses for pasting in official Book III registers.",
     checked: false,
   },
 ];
@@ -241,8 +241,8 @@ export default function MumbaiLocationClient({ faqs }: Props) {
               </h1>
 
               <p className="text-base sm:text-lg text-slate-200 leading-relaxed font-normal max-w-2xl">
-                Draft a legally valid Will for your Mumbai cooperative housing society flats, commercial spaces, and demat investments.
-                Get senior advocate drafting, IGR Maharashtra e-Stepin registration guidance, and Bombay High Court probate advisory across Mumbai and MMR.
+                Draft a legally valid Will for your Mumbai cooperative housing society flats, shop spaces, and demat investments.
+                Get senior lawyer drafting, IGR Maharashtra e-Stepin registration guidance, and Bombay High Court probate advisory across Mumbai and MMR.
               </p>
 
               <div className="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
@@ -266,7 +266,7 @@ export default function MumbaiLocationClient({ faqs }: Props) {
               <div className="pt-4 grid grid-cols-3 gap-3 border-t border-white/10 text-xs text-slate-300">
                 <div className="flex items-center gap-2">
                   <Check className="w-4 h-4 text-emerald-400 shrink-0" />
-                  <span>High Court Advocate Vetted</span>
+                  <span>High Court Lawyer Vetted</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <Check className="w-4 h-4 text-emerald-400 shrink-0" />
@@ -495,7 +495,7 @@ export default function MumbaiLocationClient({ faqs }: Props) {
                       <span>Zero Stamp Duty</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Wills incur zero stamp duty in Maharashtra under Article 64. At the Sub-Registrar Office, you pay only a flat one hundred rupee fee plus nominal scanning charges.
+                      Wills incur zero stamp duty in Maharashtra under Article 64. At the SRO office, you pay only a flat one hundred rupee fee plus nominal scanning charges.
                     </p>
                   </div>
 
@@ -505,7 +505,7 @@ export default function MumbaiLocationClient({ faqs }: Props) {
                       <span>Smooth CHS Flat Transfer</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Most Mumbai homes are cooperative society flats. A registered Will directs the society to transfer share certificates smoothly and prevents disputes between nominees and legal heirs.
+                      Most Mumbai homes are cooperative society flats. A registered Will directs the society to transfer share papers smoothly and prevents fights between nominees and legal heirs.
                     </p>
                   </div>
                 </div>
@@ -528,8 +528,8 @@ export default function MumbaiLocationClient({ faqs }: Props) {
                 </p>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Mumbai families often hold unique assets.
-                  These include cooperative housing society flats, commercial offices in BKC, mutual funds, and demat folios.
-                  A clearly drafted Will protects your loved ones from bitter property disputes.
+                  These include cooperative housing society flats, shop offices in BKC, mutual funds, and demat folios.
+                  A clearly drafted Will protects your loved ones from bitter property fights.
                 </p>
               </div>
 
@@ -540,7 +540,7 @@ export default function MumbaiLocationClient({ faqs }: Props) {
                   </span>
                   <h3 className="font-bold text-sm text-slate-900">Legal Capacity</h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    The testator must be at least 18 years old and possess a sound mind (Section 59).
+                    The Will maker must be at least 18 years old and possess a sound mind (Section 59).
                   </p>
                 </div>
 
@@ -584,14 +584,14 @@ export default function MumbaiLocationClient({ faqs }: Props) {
                   <span>REGISTRATION STATUS</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  2. Is Will Registration Compulsory in Mumbai?
+                  2. Is Will Registration Needed in Mumbai?
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Under Section 18(e) of the Registration Act, 1908, registering a Will is <strong>optional</strong>.
                   An unregistered Will on plain white paper is legally valid in Indian courts if properly attested.
                 </p>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  However, registering your Will at a Mumbai Sub-Registrar office offers great legal benefits.
+                  However, registering your Will at a Mumbai SRO office offers great legal benefits.
                   Here is how registered Wills compare against unregistered papers:
                 </p>
               </div>
@@ -623,13 +623,13 @@ export default function MumbaiLocationClient({ faqs }: Props) {
                       <td className="p-4 bg-slate-50/20">Society committees often demand indemnity bonds or court succession orders</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-semibold">Judicial Evidentiary Value</td>
-                      <td className="p-4 bg-rose-50/20">Statutory presumption of genuine execution under Section 60</td>
-                      <td className="p-4 bg-slate-50/20">Heirs must formally establish testamentary capacity from the start</td>
+                      <td className="p-4 font-semibold">Judicial Proof Value</td>
+                      <td className="p-4 bg-rose-50/20">Legal presumption of genuine signing under Section 60</td>
+                      <td className="p-4 bg-slate-50/20">Heirs must formally set up sound mind from the start</td>
                     </tr>
                     <tr>
                       <td className="p-4 font-semibold">Official Maharashtra Fee</td>
-                      <td className="p-4 bg-rose-50/20 font-bold text-[#C65378]">Flat ₹100 statutory registration fee</td>
+                      <td className="p-4 bg-rose-50/20 font-bold text-[#C65378]">Flat ₹100 legal registration fee</td>
                       <td className="p-4 bg-slate-50/20 font-bold text-slate-700">₹0 cost</td>
                     </tr>
                   </tbody>
@@ -661,13 +661,13 @@ export default function MumbaiLocationClient({ faqs }: Props) {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="bg-white rounded-3xl border border-slate-200/90 p-6 shadow-xs space-y-3">
                   <span className="px-3 py-1 rounded-full bg-emerald-100 text-emerald-800 text-xs font-extrabold uppercase">
-                    Execution vs Probate
+                    Signing vs Probate
                   </span>
                   <h3 className="font-bold text-base text-slate-900">
                     Understanding Key Legal Distinctions
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Executing a Will means signing and attesting the paper. Registration records it with the state Sub-Registrar. In contrast, probate is a decree from the High Court or District Judge that binds the whole world.
+                    Signing a Will means signing and attesting the paper. Registration records it with the state Sub-Registrar. In contrast, probate is a decree from the High Court or District Judge that binds the whole world.
                   </p>
                   <div className="pt-2 text-xs text-slate-500 flex items-center gap-1.5">
                     <Check className="w-3.5 h-3.5 text-emerald-600" />
@@ -683,7 +683,7 @@ export default function MumbaiLocationClient({ faqs }: Props) {
                     When is Probate Necessary in Mumbai Today?
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Filing a probate petition before the Bombay High Court or City Civil Court is vital when heirs contest a Will. It is also needed when selling high-value properties or when banks and housing societies require court clearance.
+                    Filing a probate petition before the Bombay High Court or City Civil Court is vital when heirs contest a Will. It is also needed when selling high-value assets or when banks and housing societies require court clearance.
                   </p>
                   <div className="pt-2 text-xs text-slate-500 flex items-center gap-1.5">
                     <AlertTriangle className="w-3.5 h-3.5 text-[#C65378]" />
@@ -699,7 +699,7 @@ export default function MumbaiLocationClient({ faqs }: Props) {
                     Unsure if your Mumbai estate requires Bombay High Court probate?
                   </h4>
                   <p className="text-xs text-slate-600 mt-1">
-                    Use our free diagnostic assessment tool to check probate requirements based on your asset location and family structure.
+                    Use our free diagnostic assessment tool to check probate rules based on your asset location and family structure.
                   </p>
                 </div>
                 <Link
@@ -720,7 +720,7 @@ export default function MumbaiLocationClient({ faqs }: Props) {
                   <span>SRO JURISDICTION DIRECTORY</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  4. Mumbai &amp; MMR Sub-Registrar Office Directory
+                  4. Mumbai &amp; MMR SRO office Directory
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Will registration in Maharashtra is handled by the Department of Registration and Stamps (IGR Maharashtra).
@@ -808,7 +808,7 @@ export default function MumbaiLocationClient({ faqs }: Props) {
                     <Link href="/contact"
                       className="inline-flex items-center gap-1.5 font-bold text-[#C65378] hover:underline"
                     >
-                      <span>Request Advocate Support for {activeDistrictData.name}</span>
+                      <span>Request Lawyer Support for {activeDistrictData.name}</span>
                       <ArrowRight className="w-3.5 h-3.5" />
                     </Link>
                   </div>
@@ -827,8 +827,8 @@ export default function MumbaiLocationClient({ faqs }: Props) {
                   5. Area-Wise Will Drafting Services Across Mumbai &amp; MMR Suburbs
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Looking for legally verified <strong>Will drafting services in Borivali, Bandra, Andheri, or South Mumbai</strong>? Cooperative society bye-laws, property ownership models, and Sub-Registrar jurisdictions vary significantly across Mumbai.
-                  Whether you own a high-rise CHS apartment in Borivali, a commercial floor in BKC, an ancestral bungalow in Bandra, or a gated township home in Thane, our High Court advocates deliver tailored drafting, registration, and probate advisory:
+                  Looking for legally verified <strong>Will drafting services in Borivali, Bandra, Andheri, or South Mumbai</strong>? Cooperative society bye-laws, property ownership models, and Sub-Registrar areas vary significantly across Mumbai.
+                  Whether you own a high-rise CHS apartment in Borivali, a shop floor in BKC, an family bungalow in Bandra, or a gated township home in Thane, our High Court lawyers deliver tailored drafting, registration, and probate advisory:
                 </p>
               </div>
 
@@ -859,7 +859,7 @@ export default function MumbaiLocationClient({ faqs }: Props) {
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                       Looking for professional <strong>Will drafting services in Borivali &amp; Kandivali</strong>? Borivali and Kandivali have the highest density of Cooperative Housing Societies (CHS) in Mumbai, many undergoing active redevelopment.
-                      Under Maharashtra Model Bye-laws 34 and 35, making a Will ensures your cooperative society share certificates transfer directly to your chosen heir without requiring expensive court indemnity bonds or probate disputes among siblings.
+                      Under Maharashtra Model Bye-laws 34 and 35, making a Will ensures your cooperative society share papers transfer directly to your chosen heir without requiring expensive court indemnity bonds or probate fights among siblings.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -868,7 +868,7 @@ export default function MumbaiLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Ambedkar Bhavan, Borivali West</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Assistance with IGR e-Stepin slot booking, Book III registration, and Section 31 home visits for senior residents across IC Colony and Gorai.
+                        Help with IGR e-Stepin slot booking, Book III registration, and Section 31 home visits for senior residents across IC Colony and Gorai.
                       </p>
                     </div>
                   </div>
@@ -914,7 +914,7 @@ export default function MumbaiLocationClient({ faqs }: Props) {
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                       Get specialized <strong>Will drafting services in Thane &amp; Ghodbunder Road</strong>. Thane&apos;s real estate landscape features large integrated townships (Hiranandani Estate, Lodha, Rustomjee) alongside established societies in Naupada.
-                      Our advocates draft airtight bequests for self-acquired high-rise flats, commercial office units, and demat accounts, while coordinating registration at the Thane Collectorate SRO at Court Naka.
+                      Our lawyers draft airtight bequests for self-acquired high-rise flats, shop office units, and demat accounts, while coordinating registration at the Thane Collectorate SRO at Court Naka.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -923,13 +923,13 @@ export default function MumbaiLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Court Naka Collectorate, Thane West</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Full advocate accompanied registration, home execution for senior citizens, and nominee-to-heir succession planning across MMR.
+                        Full lawyer accompanied registration, home signing for senior citizens, and nominee-to-heir succession planning across MMR.
                       </p>
                     </div>
                   </div>
 
                   <div className="pt-4 mt-4 border-t border-slate-100 flex items-center justify-between">
-                    <span className="text-xs font-bold text-slate-500">Thane Court Jurisdiction</span>
+                    <span className="text-xs font-bold text-slate-500">Thane Court Area</span>
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
@@ -967,8 +967,8 @@ export default function MumbaiLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Opt for premier <strong>Will drafting services in Andheri &amp; Juhu</strong>. Andheri combines luxury residential societies, media production businesses, and commercial hubs.
-                      We specialize in multi-asset Wills covering residential penthouses in Lokhandwala, studio royalties, commercial warehouses in MIDC, and international mutual funds, ensuring clean execution before independent witnesses.
+                      Opt for premier <strong>Will drafting services in Andheri &amp; Juhu</strong>. Andheri combines luxury home societies, media production businesses, and shop hubs.
+                      We specialize in multi-asset Wills covering home penthouses in Lokhandwala, studio royalties, shop warehouses in MIDC, and international mutual funds, making sure clean signing before independent witnesses.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -983,7 +983,7 @@ export default function MumbaiLocationClient({ faqs }: Props) {
                   </div>
 
                   <div className="pt-4 mt-4 border-t border-slate-100 flex items-center justify-between">
-                    <span className="text-xs font-bold text-slate-500">Commercial &amp; CHS Assets</span>
+                    <span className="text-xs font-bold text-slate-500">Shop &amp; CHS Assets</span>
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
@@ -1028,10 +1028,10 @@ export default function MumbaiLocationClient({ faqs }: Props) {
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
                       <div className="flex items-center gap-2 font-bold text-slate-900">
                         <Building className="w-3.5 h-3.5 text-[#C65378]" />
-                        <span>SRO Hub: Administrative Building, Bandra East</span>
+                        <span>SRO Hub: Office Building, Bandra East</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Senior advocate 1-on-1 consultations, private home execution, and comprehensive Bombay High Court probate advisory.
+                        Senior lawyer 1-on-1 consultations, private home signing, and full Bombay High Court probate advisory.
                       </p>
                     </div>
                   </div>
@@ -1075,8 +1075,8 @@ export default function MumbaiLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Consult High Court advocates for <strong>Will drafting services in South Mumbai (Colaba, Malabar Hill, Fort)</strong>. South Mumbai properties fall squarely within the Ordinary Original Civil Jurisdiction of the Bombay High Court.
-                      Our legal team guides families through complex tenancy rights under the Maharashtra Rent Control Act, heritage freehold mansions, family trusts, art collections, and mandatory High Court probate petitions.
+                      Consult High Court lawyers for <strong>Will drafting services in South Mumbai (Colaba, Malabar Hill, Fort)</strong>. South Mumbai assets fall squarely within the Ordinary Original Civil Area of the Bombay High Court.
+                      Our legal team guides families through complex tenancy rights under the Maharashtra Rent Control Act, heritage freehold mansions, family trusts, art collections, and needed High Court probate petitions.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1085,7 +1085,7 @@ export default function MumbaiLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Old Custom House, Fort, Mumbai</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Complete support for Book III archival, witness verification, and testamentary petitions before the Bombay High Court.
+                        Complete support for Book III archival, witness check, and testamentary petitions before the Bombay High Court.
                       </p>
                     </div>
                   </div>
@@ -1130,7 +1130,7 @@ export default function MumbaiLocationClient({ faqs }: Props) {
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                       Avail end-to-end <strong>Will drafting services in Navi Mumbai (Vashi, Nerul, Belapur)</strong>. Navi Mumbai real estate often involves CIDCO leasehold plots, tripartite transfer agreements, and newly formed cooperative societies.
-                      A clear, registered Will enables smooth legal heir mutation at CIDCO Bhavan and NMMC municipal offices without requiring endless NOCs or court litigation.
+                      A clear, registered Will enables smooth legal heir name change at CIDCO Bhavan and NMMC municipal offices without requiring endless NOCs or court court fights.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1139,7 +1139,7 @@ export default function MumbaiLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Konkan Bhavan, CBD Belapur &amp; Sector 19 Vashi</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        CIDCO leasehold verification, Kaveri/IGR e-Stepin slot appointments, and seamless local registration assistance.
+                        CIDCO leasehold check, Kaveri/IGR e-Stepin slot appointments, and seamless local registration help.
                       </p>
                     </div>
                   </div>
@@ -1183,8 +1183,8 @@ export default function MumbaiLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Protect your heritage with <strong>Will drafting services in Chembur, Ghatkopar &amp; Eastern Suburbs</strong>. The Eastern Suburbs house vibrant mercantile families, ancestral housing societies, and redevelopment projects along the LBS Marg corridor.
-                      We help family businesses draft clean succession plans dividing commercial shops, residential flats, gold assets, and bank lockers fairly to prevent contentious probate proceedings.
+                      Protect your heritage with <strong>Will drafting services in Chembur, Ghatkopar &amp; Eastern Suburbs</strong>. The Eastern Suburbs house vibrant mercantile families, family housing societies, and redevelopment projects along the LBS Marg corridor.
+                      We help family businesses draft clean succession plans dividing shop shops, home flats, gold assets, and bank lockers fairly to prevent contentious probate proceedings.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1193,7 +1193,7 @@ export default function MumbaiLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Kurla Tahsil Complex &amp; Chembur Admin Office</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Doctor fitness certificates, Section 31 home commissioner visits, and advocate verification across Chembur and Ghatkopar.
+                        Doctor fitness papers, Section 31 home commissioner visits, and lawyer check across Chembur and Ghatkopar.
                       </p>
                     </div>
                   </div>
@@ -1237,8 +1237,8 @@ export default function MumbaiLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Comprehensive <strong>Will drafting services in Goregaon &amp; Malad</strong>. With a massive concentration of corporate executives, IT professionals, and modern gated towers, Goregaon and Malad residents require digital and physical estate protection.
-                      We ensure your mutual fund portfolios, demat shares, crypto assets, and residential flats pass cleanly without society nomination conflicts.
+                      Full <strong>Will drafting services in Goregaon &amp; Malad</strong>. With a massive concentration of corporate executives, IT professionals, and modern gated towers, Goregaon and Malad residents require digital and physical estate protection.
+                      We make sure your mutual fund portfolios, demat shares, crypto assets, and home flats pass cleanly without society nomination conflicts.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1247,7 +1247,7 @@ export default function MumbaiLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Tahsil Office, Goregaon</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Instant online Will draft creation, advocate consultation, and SRO appointment booking on igrmaharashtra.gov.in.
+                        Instant online Will draft creation, lawyer talk, and SRO appointment booking on igrmaharashtra.gov.in.
                       </p>
                     </div>
                   </div>
@@ -1307,7 +1307,7 @@ export default function MumbaiLocationClient({ faqs }: Props) {
                       Doctor Certificate
                     </h3>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Get an MBBS medical fitness certificate confirming sound mind, especially for senior testators.
+                      Get an MBBS medical fitness paper confirming sound mind, especially for senior testators.
                     </p>
                   </div>
                 </div>
@@ -1389,7 +1389,7 @@ export default function MumbaiLocationClient({ faqs }: Props) {
                     <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
                     <div>
                       <strong className="text-slate-900 block">Commission Petition</strong>
-                      <span className="text-slate-600">Our advocates file the special commission petition before the local Sub-Registrar.</span>
+                      <span className="text-slate-600">Our lawyers file the special commission petition before the local Sub-Registrar.</span>
                     </div>
                   </div>
 
@@ -1423,7 +1423,7 @@ export default function MumbaiLocationClient({ faqs }: Props) {
                   8. Documents Checklist for Will Registration
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Prepare your paperwork before visiting the Sub-Registrar Office in Mumbai.
+                  Prepare your paperwork before visiting the SRO office in Mumbai.
                   You have completed <strong>{checkedCount} of {checklist.length}</strong> items:
                 </p>
               </div>
@@ -1488,7 +1488,7 @@ export default function MumbaiLocationClient({ faqs }: Props) {
                     Cooperative Housing Society Flats
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Under Maharashtra cooperative society bye-laws, a nominee is only a custodian. A registered Will directs the society to transfer the share certificate to the rightful heir without demanding court indemnity bonds.
+                    Under Maharashtra cooperative society bye-laws, a nominee is only a custodian. A registered Will directs the society to transfer the share paper to the rightful heir without demanding court indemnity bonds.
                   </p>
                 </div>
 
@@ -1500,7 +1500,7 @@ export default function MumbaiLocationClient({ faqs }: Props) {
                     South Mumbai &amp; Parsi Colonies
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    High-value homes in South Mumbai, Bandra, and Parsi colonies require clear revocation clauses. They also need named executors and probate planning to stop partition suits.
+                    High-value homes in South Mumbai, Bandra, and Parsi colonies require clear revocation clauses. They also need named executors and probate planning to stop split suits.
                   </p>
                 </div>
 
@@ -1512,7 +1512,7 @@ export default function MumbaiLocationClient({ faqs }: Props) {
                     Suburban Apartments &amp; MHADA
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Homes in Andheri, Borivali, and Thane must specify undivided land shares, car parking, and chain title deeds to enable clean municipal mutation.
+                    Homes in Andheri, Borivali, and Thane must specify undivided land shares, car parking, and chain title deeds to enable clean municipal name change.
                   </p>
                 </div>
               </div>
@@ -1581,7 +1581,7 @@ export default function MumbaiLocationClient({ faqs }: Props) {
                   11. Transparent Will Packages &amp; Legal Fees
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Select the level of professional support best suited to your family&apos;s estate planning requirements across Mumbai and MMR:
+                  Select the level of professional support best suited to your family&apos;s estate planning rules across Mumbai and MMR:
                 </p>
               </div>
 
@@ -1599,7 +1599,7 @@ export default function MumbaiLocationClient({ faqs }: Props) {
                       ₹1,990
                     </div>
                     <p className="text-xs text-slate-600">
-                      Ideal for simple estates with bank accounts, mutual funds, and residential property.
+                      Ideal for simple estates with bank accounts, mutual funds, and home property.
                     </p>
                     <ul className="space-y-2.5 text-xs text-slate-700 pt-3 border-t border-slate-100">
                       <li className="flex items-center gap-2">
@@ -1608,7 +1608,7 @@ export default function MumbaiLocationClient({ faqs }: Props) {
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>Legally vetted statutory clauses</span>
+                        <span>Legally vetted legal clauses</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
@@ -1631,16 +1631,16 @@ export default function MumbaiLocationClient({ faqs }: Props) {
                   </div>
                   <div className="space-y-4">
                     <span className="text-xs font-bold uppercase tracking-wider text-[#C65378]">
-                      Comprehensive
+                      Full
                     </span>
                     <h3 className="font-extrabold text-xl text-slate-900">
-                      Advocate Consultation
+                      Lawyer Talk
                     </h3>
                     <div className="text-3xl font-black text-slate-900">
                       ₹4,990
                     </div>
                     <p className="text-xs text-slate-600">
-                      Senior estate advocate review for CHS apartments, commercial units, and probate planning.
+                      Senior estate lawyer review for CHS apartments, shop units, and probate planning.
                     </p>
                     <ul className="space-y-2.5 text-xs text-slate-700 pt-3 border-t border-slate-100">
                       <li className="flex items-center gap-2">
@@ -1649,7 +1649,7 @@ export default function MumbaiLocationClient({ faqs }: Props) {
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>1-on-1 consultation with senior advocate</span>
+                        <span>1-on-1 talk with senior lawyer</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
@@ -1664,7 +1664,7 @@ export default function MumbaiLocationClient({ faqs }: Props) {
                   <Link href="/contact"
                     className="mt-6 w-full py-3 rounded-xl bg-[#C65378] text-white text-xs font-bold text-center hover:bg-[#a13c5d] transition-colors cursor-pointer"
                   >
-                    Book Advocate Call
+                    Book Lawyer Call
                   </Link>
                 </div>
 
@@ -1681,7 +1681,7 @@ export default function MumbaiLocationClient({ faqs }: Props) {
                       ₹9,990
                     </div>
                     <p className="text-xs text-slate-600">
-                      Full end-to-end registration assistance at Sub-Registrar offices across Mumbai and MMR.
+                      Full end-to-end registration help at Sub-Registrar offices across Mumbai and MMR.
                     </p>
                     <ul className="space-y-2.5 text-xs text-slate-700 pt-3 border-t border-slate-100">
                       <li className="flex items-center gap-2">
@@ -1690,7 +1690,7 @@ export default function MumbaiLocationClient({ faqs }: Props) {
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>Advocate attends with you at SRO</span>
+                        <span>Lawyer attends with you at SRO</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
@@ -1764,7 +1764,7 @@ export default function MumbaiLocationClient({ faqs }: Props) {
                   <span>STATUTORY CITATIONS</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  13. Statutory References &amp; Maharashtra IGR Portals
+                  13. Legal References &amp; Maharashtra IGR Portals
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Our estate planning workflows follow codified Indian laws and Maharashtra state rules:
@@ -1777,7 +1777,7 @@ export default function MumbaiLocationClient({ faqs }: Props) {
                     Indian Succession Act 1925
                   </span>
                   <p className="text-xs text-slate-600">
-                    Sections 59, 63, 67, and Section 213 read with Section 57 (Probate Jurisdiction).
+                    Sections 59, 63, 67, and Section 213 read with Section 57 (Probate Area).
                   </p>
                 </div>
 
@@ -1804,7 +1804,7 @@ export default function MumbaiLocationClient({ faqs }: Props) {
                     Bombay High Court Precedents
                   </span>
                   <p className="text-xs text-slate-600">
-                    Testamentary and Intestate Jurisdiction precedents on Section 213 probate.
+                    Testamentary and Without a Will Area precedents on Section 213 probate.
                   </p>
                 </div>
               </div>
@@ -1813,11 +1813,11 @@ export default function MumbaiLocationClient({ faqs }: Props) {
             {/* BOTTOM CONVERSION CTA BANNER */}
             <section className="rounded-3xl bg-gradient-to-br from-[#172228] to-[#212F35] text-white p-8 sm:p-12 text-center space-y-5 shadow-xl">
               <h3 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-white">
-                Protect Your Mumbai Properties &amp; Family Today
+                Protect Your Mumbai Assets &amp; Family Today
               </h3>
               <p className="text-sm sm:text-base text-slate-200 max-w-2xl mx-auto leading-relaxed">
                 Ensure your Mumbai cooperative society flats and financial assets pass smoothly to your loved ones.
-                Draft a legally valid Will online or consult our experienced estate advocates today.
+                Draft a legally valid Will online or consult our experienced estate lawyers today.
               </p>
               <div className="pt-3 flex flex-col sm:flex-row items-center justify-center gap-4">
                 <Link href="/start"
@@ -1829,7 +1829,7 @@ export default function MumbaiLocationClient({ faqs }: Props) {
                 <Link href="/contact"
                   className="w-full sm:w-auto px-6 py-3.5 rounded-full bg-white/10 text-white font-bold text-sm sm:text-base hover:bg-white/20 transition-all border border-white/20"
                 >
-                  Book Lawyer Consultation
+                  Book Lawyer Talk
                 </Link>
               </div>
             </section>

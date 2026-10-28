@@ -76,44 +76,44 @@ export const metadata: Metadata = {
 
 const KERALA_FAQS = [
   {
-    q: "Is Will registration mandatory in Kerala?",
-    a: "No. Under Section 18(e) of the Registration Act, 1908, registering a Will is optional in Kerala. A Will signed on standard paper before two independent witnesses is legally valid. However, registering your Will at a Kerala Sub-Registrar Office via the PEARLS portal enters it into permanent Book III government custody. This prevents fraudulent title challenges and enables seamless Thandapper mutation and municipal tax transfers.",
+    q: "Is Will registration required by law in Kerala?",
+    a: "No. Under Section 18(e) of the Registration Act, 1908, filing a Will at the SRO is optional in Kerala. A Will signed on plain white paper before two witnesses is valid. Still, recording your Will at a Kerala SRO through the PEARLS portal stores it in safe Book III state records. This stops fake title claims and speeds up Thandapper and city house tax transfers.",
   },
   {
-    q: "Is probate required for a Will in Kerala under High Court rules?",
-    a: "No. Under Section 213 read with Section 57 of the Indian Succession Act, 1925, probate is compulsory only within the historical presidency towns of Mumbai, Kolkata, and Chennai. Kerala is a non-presidency jurisdiction under the Kerala High Court. Probate is strictly non-compulsory in Kerala, allowing legal heirs to transfer properties, bank deposits, and plantations directly using a registered Will.",
+    q: "Is court probate needed for a Will in Kerala?",
+    a: "No. Under Section 213 and Section 57 of the Indian Succession Act, 1925, court probate is needed only in the old presidency cities of Mumbai, Kolkata, and Chennai. Kerala falls under the Kerala High Court, where probate is not required. Heirs can transfer land, bank funds, and farms directly using a registered Will.",
   },
   {
     q: "How do Christian succession laws apply to Wills in Kerala?",
-    a: "Following the historic Supreme Court ruling in Mary Roy v. State of Kerala, Christian succession in Kerala is governed by Part V of the Indian Succession Act, 1925. Any Christian individual can execute a Will to distribute self-acquired and ancestral property freely to chosen beneficiaries, daughters, sons, or charitable trusts without statutory discrimination or mandatory equal-share restrictions.",
+    a: "After the Supreme Court ruling in Mary Roy v. State of Kerala, Christian succession in Kerala follows Part V of the Indian Succession Act, 1925. Any Christian adult can sign a Will to pass self-earned and family property freely to chosen heirs, daughters, sons, or trusts without equal-share limits.",
   },
   {
-    q: "Can Gulf NRIs draft and execute a Will for properties in Kerala?",
-    a: "Yes. Non-Resident Indians residing in the UAE, Saudi Arabia, Qatar, Kuwait, Oman, or Bahrain can draft an India-specific Will online. NRIs can execute the Will abroad before two adult witnesses and attest it at the Indian Embassy or Consulate, or complete formal Book III registration before a Kerala Sub-Registrar during their visit to India.",
+    q: "Can Gulf NRIs draft and sign a Will for properties in Kerala?",
+    a: "Yes. NRIs living in the UAE, Saudi Arabia, Qatar, Kuwait, Oman, or Bahrain can draft an India Will online. NRIs can sign the Will abroad in front of two adult witnesses, or record it in Book III at a Kerala SRO during a trip to India.",
   },
   {
-    q: "What is the official government fee to register a Will in Kerala?",
-    a: "Testamentary Wills are completely exempt from ad valorem stamp duty across Kerala. At the Sub-Registrar Office, testators pay a nominal statutory registration fee of ₹100 along with modest computer scanning and service charges through the Kerala e-Treasury portal. There are no percentage-based property market value charges.",
+    q: "What is the state fee to register a Will in Kerala?",
+    a: "Wills pay zero stamp duty across Kerala. At the SRO desk, owners pay only a flat ₹100 state fee plus small page scan charges through the Kerala e-Treasury portal. There are no percentage fees based on land value.",
   },
   {
     q: "How does a registered Will help in Thandapper transfer and Pokkuvaravu?",
-    a: "After the testator's demise, the beneficiary presents the registered Will and death certificate to the jurisdictional Village Officer. Under the Kerala Transfer of Registry Rules, 1966, the Village Officer processes Pokkuvaravu (mutation) and transfers the Thandapper account on the revenue portal (revenue.kerala.gov.in) without requiring costly civil court succession certificates.",
+    a: "After the owner passes away, the heir shows the registered Will and death certificate to the local Village Officer. Under the Kerala Transfer of Registry Rules, 1966, the Village Officer completes Pokkuvaravu (mutation) and moves the Thandapper account on revenue.kerala.gov.in without a slow court case.",
   },
   {
-    q: "How do I book an appointment on the Kerala Registration PEARLS portal?",
-    a: "Appointments are scheduled online through the Registration Department Kerala PEARLS portal (keralaregistration.gov.in). You select your local Sub-Registrar Office, enter testator and witness KYC details, upload the draft document, remit the registration fees via e-Treasury, and generate an official e-token acknowledgment with a confirmed time slot.",
+    q: "How do I book a slot on the Kerala PEARLS portal?",
+    a: "You can book your slot online on the Kerala PEARLS portal (keralaregistration.gov.in). Pick your local SRO desk, enter owner and witness ID details, pay the state fee online, and print your e-token slip with a confirmed time slot.",
   },
   {
-    q: "Can senior citizens in Kerala register a Will from home under Section 31?",
-    a: "Yes. Under Section 31 of the Registration Act, 1908, senior citizens, bedridden individuals, or persons with mobility restrictions can request a doorstep commission. An MBBS doctor certifies that the testator is mentally lucid but unable to travel. The Sub-Registrar visits the residence or hospital with portable biometric equipment to register the Will.",
+    q: "Can seniors in Kerala register a Will from home under Section 31?",
+    a: "Yes. Under Section 31 of the Registration Act, 1908, seniors or unwell owners who cannot travel can ask for a home visit. An MBBS doctor writes a note confirming a clear mind. The SRO officer then visits your home or hospital room with a hand-held thumb scanner to record the Will.",
   },
   {
-    q: "Does a nominee automatically own property or bank accounts in Kerala?",
-    a: "No. Under settled Supreme Court law and banking regulations, a nominee acts merely as a temporary custodian to receive funds or society shares. True beneficial ownership passes strictly to the legal beneficiaries named in the deceased's valid Will or through statutory succession laws.",
+    q: "Does a bank nominee become the true owner of property in Kerala?",
+    a: "No. Under settled Supreme Court law and RBI rules, a nominee is only a caretaker who receives funds or shares after death. True ownership passes strictly to the legal heirs named in a valid Will.",
   },
   {
-    q: "How are rubber, tea, and spice plantation estates in Kerala bequeathed?",
-    a: "Large plantations in Kottayam, Idukki, or Wayanad can be bequeathed through specific testamentary clauses. The Will should clearly define survey boundaries, estate management powers, partnership shares, and partition terms to comply with the Kerala Land Reforms Act and prevent operational deadlock among heirs.",
+    q: "How are rubber, tea, and spice estates in Kerala passed by Will?",
+    a: "Large estates in Kottayam, Idukki, or Wayanad can be passed through clear clauses in your Will. The Will should list survey numbers, estate powers, and share rules to meet the Kerala Land Reforms Act and stop family fights.",
   },
 ];
 
@@ -142,7 +142,7 @@ export default function KeralaLocationPage() {
         url: canonicalUrl,
         name: "Will Drafting in Kerala: Online Will & NRI Estate Guide",
         description:
-          "Draft a legally binding Will in Kerala. Comprehensive support for Gulf NRI property owners, Christian inheritance law, and PEARLS portal SRO.",
+          "Draft a legally binding Will in Kerala. Full support for Gulf NRI property owners, Christian inheritance law, and PEARLS portal SRO.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -189,7 +189,7 @@ export default function KeralaLocationPage() {
         "@id": `${canonicalUrl}#legalservice`,
         name: "WillDrafting Kerala - Estate Planning & SRO Registration",
         description:
-          "Professional Will drafting, advocate verification, PEARLS portal registration, Gulf NRI estate planning, and doorstep execution support across.",
+          "Professional Will drafting, advocate check, PEARLS portal signing, Gulf NRI estate planning, and doorstep execution support across.",
         url: canonicalUrl,
         image: imageUrl,
         email: "hello@willdrafting.in",
@@ -200,7 +200,7 @@ export default function KeralaLocationPage() {
           addressCountry: "IN",
         },
         areaServed: [
-          { "@type": "AdministrativeArea", name: "Kerala" },
+          { "@type": "OfficeArea", name: "Kerala" },
           { "@type": "City", name: "Kochi" },
           { "@type": "City", name: "Ernakulam" },
           { "@type": "City", name: "Thiruvananthapuram" },
@@ -262,8 +262,8 @@ export default function KeralaLocationPage() {
           {
             "@type": "HowToStep",
             position: 1,
-            name: "Compile Comprehensive Asset Inventory",
-            text: "List your Kerala immovable properties including apartments in Kochi or Trivandrum, ancestral homes, rubber plantations, bank deposits, and cross-border Gulf assets. Designate beneficiaries and an executor.",
+            name: "Compile Full Asset Inventory",
+            text: "List your Kerala land and flats including apartments in Kochi or Trivandrum, ancestral homes, rubber plantations, bank deposits, and cross-border Gulf assets. Designate heirs and an executor.",
           },
           {
             "@type": "HowToStep",
@@ -281,13 +281,13 @@ export default function KeralaLocationPage() {
             "@type": "HowToStep",
             position: 4,
             name: "Book PEARLS Portal SRO Slot",
-            text: "Schedule your registration appointment on the Registration Department Kerala PEARLS portal (keralaregistration.gov.in) and pay nominal statutory fees through the e-Treasury portal.",
+            text: "Schedule your signing appointment on the Registration Department Kerala PEARLS portal (keralasigning.gov.in) and pay nominal statutory fees through the e-Treasury portal.",
           },
           {
             "@type": "HowToStep",
             position: 5,
             name: "Complete Biometrics at Kerala SRO",
-            text: "Attend the Sub-Registrar office with both witnesses for verbal verification, digital photo capture, and biometric thumbprinting to complete permanent Book III registration.",
+            text: "Attend the SRO office with both witnesses for verbal check, digital photo capture, and biometric thumbprinting to complete permanent Book III signing.",
           },
         ],
       },

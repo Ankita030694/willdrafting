@@ -84,7 +84,7 @@ export default function SitemapClient({ initialLinks }: SitemapClientProps) {
           {/* Badge */}
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-[#C65378]/25 text-[0.75rem] font-bold tracking-[0.14em] uppercase text-[#C65378] mb-5 shadow-2xs">
             <span className="w-2 h-2 rounded-full bg-[#C65378] animate-pulse" />
-            <span>{initialLinks.length} Curated Legal Pages &amp; Guides</span>
+            <span>{initialLinks.length} Legal Pages &amp; Guides</span>
           </div>
 
           {/* H1 Heading */}
@@ -94,8 +94,7 @@ export default function SitemapClient({ initialLinks }: SitemapClientProps) {
 
           {/* Subtitle */}
           <p className="max-w-2xl mx-auto text-[0.98rem] sm:text-[1.08rem] leading-[1.65] text-[#49585F] font-normal">
-            Explore our complete index of online Will drafting services, Indian
-            succession law guides, printable templates, and statutory calculators.
+            Browse our full list of online Will services, state law guides, free Will formats, and free legal tools. Pick a tab below or type a word to find the exact page you need.
           </p>
 
           {/* Search Bar in Hero */}
@@ -109,7 +108,7 @@ export default function SitemapClient({ initialLinks }: SitemapClientProps) {
                 type="text"
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
-                placeholder="Search by topic, keyword, or page URL (e.g. NRI will, codicil, probate)..."
+                placeholder="Search by topic, word, or city (e.g. NRI will, probate, Delhi)..."
                 className="w-full py-4 pr-10 text-sm sm:text-base text-[#172228] bg-transparent placeholder-[#8A969E] focus:outline-none"
               />
               {searchQuery && (
@@ -129,9 +128,12 @@ export default function SitemapClient({ initialLinks }: SitemapClientProps) {
 
       {/* Main Content Area */}
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-20">
-        <h2 className="text-lg sm:text-xl font-semibold text-[#172228] mb-4">
-          Complete WillDrafting.in Legal Index &amp; Page Directory
+        <h2 className="text-lg sm:text-xl font-semibold text-[#172228] mb-2">
+          All WillDrafting Pages, Tools &amp; State Guides
         </h2>
+        <p className="text-xs sm:text-sm text-[#49585F] mb-5 leading-relaxed">
+          Each card links straight to a free tool, Will format, state guide, or legal service. Click any card to open the page.
+        </p>
         {/* Category Filter Pills & Results Counter Bar */}
         <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4 pb-6 mb-8 border-b border-[#172228]/10">
           {/* Category Tabs */}
@@ -224,8 +226,8 @@ export default function SitemapClient({ initialLinks }: SitemapClientProps) {
 
                   {/* Card Bottom Meta */}
                   <div className="pt-3 mt-3 border-t border-[#172228]/[0.06] flex items-center justify-between text-[11px] text-[#55636D] font-medium">
-                    <span className="font-mono text-[11px] text-[#8A969E] group-hover:text-[#55636D] truncate max-w-[150px]">
-                      {link.href}
+                    <span className="text-[11px] text-[#8A969E] group-hover:text-[#55636D] font-semibold">
+                      Read Page
                     </span>
                     {displayDate && (
                       <span className="flex items-center gap-1 text-[#8A969E]">
@@ -249,11 +251,10 @@ export default function SitemapClient({ initialLinks }: SitemapClientProps) {
               </div>
               <div>
                 <h3 className="text-base font-bold text-[#172228] mb-1">
-                  Section 63 Compliant
+                  Valid Under Law
                 </h3>
                 <p className="text-xs sm:text-sm text-[#49585F] leading-relaxed">
-                  Every template and guide adheres to the Indian Succession Act, 1925
-                  and statutory witness execution requirements.
+                  Each Will format and guide follows the Indian Succession Act, 1925. All forms meet the two-witness signing rule in Section 63.
                 </p>
               </div>
             </div>
@@ -264,11 +265,10 @@ export default function SitemapClient({ initialLinks }: SitemapClientProps) {
               </div>
               <div>
                 <h3 className="text-base font-bold text-[#172228] mb-1">
-                  Single Source of Truth
+                  Live Page Index
                 </h3>
                 <p className="text-xs sm:text-sm text-[#49585F] leading-relaxed">
-                  All pages are synchronized in real-time between this interactive
-                  directory and the search engine XML sitemap.
+                  All links on this page stay in sync with our search map. New guides, tools, and state pages show up here first.
                 </p>
               </div>
             </div>
@@ -279,11 +279,10 @@ export default function SitemapClient({ initialLinks }: SitemapClientProps) {
               </div>
               <div>
                 <h3 className="text-base font-bold text-[#172228] mb-1">
-                  Lawyer Vetted Formats
+                  Checked by Lawyers
                 </h3>
                 <p className="text-xs sm:text-sm text-[#49585F] leading-relaxed">
-                  Drafted and reviewed by succession advocates at AMA Legal Solutions
-                  for real-world validity across all Indian states.
+                  Each draft and guide is checked by our legal team at AMA Legal Solutions so your family plan stays safe in every Indian state.
                 </p>
               </div>
             </div>

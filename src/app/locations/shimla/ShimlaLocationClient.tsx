@@ -124,37 +124,37 @@ const INITIAL_CHECKLIST = [
   },
   {
     id: "item-2",
-    label: "Original Aadhaar Card & PAN of Testator",
+    label: "Original Aadhaar Card & PAN of Will maker",
     detail: "Essential for biometric identity validation, electronic thumbprint, and digital photo at the SRO counter.",
     checked: true,
   },
   {
     id: "item-3",
     label: "Two Independent Adult Witnesses with Aadhaar",
-    detail: "Must carry original photo IDs and must not be beneficiaries receiving any asset under the Will.",
+    detail: "Must carry original photo IDs and must not be heirs receiving any asset under the Will.",
     checked: true,
   },
   {
     id: "item-4",
-    label: "Doctor Mental Fitness Certificate (MBBS / MD)",
+    label: "Doctor Sound Mind Note (MBBS / MD)",
     detail: "Strongly advised for senior citizens aged 60+. Certifies testamentary mental soundness and lucidity.",
     checked: false,
   },
   {
     id: "item-5",
     label: "HimBhoomi Jamabandi & Nakal Farad (For Orchards)",
-    detail: "Recent computerized land records with Khasra and Khatauni numbers for apple orchards and agricultural land.",
+    detail: "Recent computerized land records with Khasra and Khatauni numbers for apple orchards and farm land.",
     checked: false,
   },
   {
     id: "item-6",
     label: "Shimla MC Property Tax Receipts or HIMUDA Conveyance",
-    detail: "Assessment records for SMC core/green belt properties or HIMUDA allotment letters in New Shimla.",
+    detail: "Assessment records for SMC core/green belt assets or HIMUDA allotment letters in New Shimla.",
     checked: false,
   },
   {
     id: "item-7",
-    label: "Section 118 Status Verification Documents",
+    label: "Section 118 Status Check Documents",
     detail: "Proof of Himachal Pradesh agriculturist status or relevant state sanction details if applicable.",
     checked: false,
   },
@@ -252,7 +252,7 @@ export default function ShimlaLocationClient({ faqs }: Props) {
               </h1>
 
               <p className="text-base sm:text-lg text-slate-200 leading-relaxed font-normal max-w-2xl">
-                Draft a legally sound Will for your Shimla Municipal Corporation residences, HIMUDA apartments in New Shimla, and apple orchards in Theog and Kotkhai. Ensure Section 118 HP Tenancy Act compliance, e-Himsugam booking, and doorstep Section 31 execution.
+                Draft a legally sound Will for your Shimla Municipal Corporation residences, HIMUDA apartments in New Shimla, and apple orchards in Theog and Kotkhai. Ensure Section 118 HP Tenancy Act compliance, e-Himsugam booking, and doorstep Section 31 signing.
               </p>
 
               <div className="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
@@ -505,10 +505,10 @@ export default function ShimlaLocationClient({ faqs }: Props) {
                   <div className="p-4 rounded-2xl bg-slate-50/70 border border-slate-100 space-y-1.5">
                     <div className="flex items-center gap-2 font-bold text-sm text-slate-900">
                       <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
-                      <span>Probate Non-Compulsory</span>
+                      <span>Probate Non-Needed</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Shimla is a non-presidency town jurisdiction. Under Section 213 of the Indian Succession Act, court probate is strictly non-compulsory in Himachal Pradesh, permitting direct title transfer with a registered Will.
+                      Shimla is a non-presidency town area. Under Section 213 of the Indian Succession Act, court probate is strictly non-needed in Himachal Pradesh, permitting direct title transfer with a registered Will.
                     </p>
                   </div>
 
@@ -518,17 +518,17 @@ export default function ShimlaLocationClient({ faqs }: Props) {
                       <span>Section 118 Compliance</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Himachal Pradesh Tenancy and Land Reforms Act protects agricultural land and apple orchards. Bequests to legal heirs are smooth, while bequests to non-agriculturists require strict statutory compliance.
+                      Himachal Pradesh Tenancy and Land Reforms Act protects farm land and apple orchards. Bequests to legal heirs are smooth, while bequests to non-agriculturists require strict legal compliance.
                     </p>
                   </div>
 
                   <div className="p-4 rounded-2xl bg-slate-50/70 border border-slate-100 space-y-1.5">
                     <div className="flex items-center gap-2 font-bold text-sm text-slate-900">
                       <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
-                      <span>SMC &amp; HimBhoomi Mutation</span>
+                      <span>SMC &amp; HimBhoomi Name Change</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      A registered Will expedites ownership mutation with the Shimla Municipal Corporation (SMC) for urban properties and streamlines Intiqal Jamabandi entries for rural apple orchards on HimBhoomi.
+                      A registered Will expedites ownership name change with the Shimla Municipal Corporation (SMC) for urban assets and streamlines Intiqal Jamabandi entries for rural apple orchards on HimBhoomi.
                     </p>
                   </div>
                 </div>
@@ -546,7 +546,7 @@ export default function ShimlaLocationClient({ faqs }: Props) {
                   1. Will Drafting &amp; Legal Framework in Shimla
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Estate succession and testamentary Will drafting in Shimla are governed by the <strong>Indian Succession Act, 1925</strong>, the <strong>Registration Act, 1908</strong>, and the <strong>Himachal Pradesh Tenancy and Land Reforms Act, 1972</strong>. Any adult of sound mind can legally bequeath self-acquired residential property, agricultural apple orchards, commercial assets, and financial savings.
+                  Estate succession and testamentary Will drafting in Shimla are governed by the <strong>Indian Succession Act, 1925</strong>, the <strong>Registration Act, 1908</strong>, and the <strong>Himachal Pradesh Tenancy and Land Reforms Act, 1972</strong>. Any adult of sound mind can legally bequeath self-acquired home property, farm apple orchards, shop assets, and financial savings.
                 </p>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Shimla features diverse and specialized asset categories. A family portfolio often comprises colonial heritage apartments in Shimla Urban core areas, modern HIMUDA flats in New Shimla or Kasumpti, and high-value apple orchards across Theog, Kotkhai, Rohru, and Jubbal. Without a carefully formulated Will, surviving successors face extensive procedural friction across municipal desks, revenue Patwaris, and Tehsildar courts.
@@ -560,7 +560,7 @@ export default function ShimlaLocationClient({ faqs }: Props) {
                   </span>
                   <h3 className="font-bold text-sm text-slate-900">Legal Capacity</h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    The testator must be a major aged 18 years or older possessing sound testamentary mental capacity (Section 59).
+                    The Will maker must be a major aged 18 years or older possessing sound testamentary mental capacity (Section 59).
                   </p>
                 </div>
 
@@ -570,7 +570,7 @@ export default function ShimlaLocationClient({ faqs }: Props) {
                   </span>
                   <h3 className="font-bold text-sm text-slate-900">Free Consent</h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Executed voluntarily without undue influence, fraudulent inducement, or familial coercion (Section 61).
+                    Signed voluntarily without undue influence, fraudulent inducement, or familial coercion (Section 61).
                   </p>
                 </div>
 
@@ -580,7 +580,7 @@ export default function ShimlaLocationClient({ faqs }: Props) {
                   </span>
                   <h3 className="font-bold text-sm text-slate-900">Two Witnesses</h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Must be signed in the physical presence of at least two independent adult attesting witnesses (Section 63).
+                    Must be signed in the physical presence of at least two independent adult witnesses (Section 63).
                   </p>
                 </div>
 
@@ -588,9 +588,9 @@ export default function ShimlaLocationClient({ faqs }: Props) {
                   <span className="w-8 h-8 rounded-xl bg-rose-50 text-[#C65378] flex items-center justify-center font-bold text-sm">
                     <ShieldCheck className="w-4 h-4" />
                   </span>
-                  <h3 className="font-bold text-sm text-slate-900">Non-Beneficiary</h3>
+                  <h3 className="font-bold text-sm text-slate-900">Non-Heir</h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Attesting witnesses and their spouses must not receive any legacy or property under the Will (Section 67).
+                    Witnesses and their spouses must not receive any legacy or property under the Will (Section 67).
                   </p>
                 </div>
               </div>
@@ -604,13 +604,13 @@ export default function ShimlaLocationClient({ faqs }: Props) {
                   <span>REGISTRATION STATUS</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  2. Is Will Registration Mandatory in Shimla?
+                  2. Is Will Registration Needed in Shimla?
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Under Section 18(e) of the Registration Act, 1908, the registration of a testamentary Will is strictly <strong>optional</strong>. An unregistered Will signed on standard white paper before two independent witnesses is legally binding and admissible in court proceedings.
                 </p>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Nevertheless, given the substantial commercial value of apple orchards in upper Shimla and prime residential apartments along The Mall and New Shimla, senior legal counsel strongly recommend registration. An official Book III registration eliminates suspicions of forged execution and guarantees straightforward ownership transmission across government revenue bodies.
+                  Still, given the substantial shop value of apple orchards in upper Shimla and prime home apartments along The Mall and New Shimla, senior legal counsel strongly recommend registration. An official Book III registration eliminates suspicions of forged signing and guarantees straightforward ownership transfer across government revenue bodies.
                 </p>
               </div>
 
@@ -632,16 +632,16 @@ export default function ShimlaLocationClient({ faqs }: Props) {
                     </tr>
                     <tr>
                       <td className="p-4 font-semibold">Protection from Challenge</td>
-                      <td className="p-4 bg-rose-50/20">Strong legal presumption of genuine execution</td>
+                      <td className="p-4 bg-rose-50/20">Strong legal presumption of genuine signing</td>
                       <td className="p-4 bg-slate-50/20">Prone to allegations of forgery or undue pressure</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-semibold">Shimla MC Property Mutation</td>
-                      <td className="p-4 bg-rose-50/20">Expedited mutation on presenting registered copy</td>
-                      <td className="p-4 bg-slate-50/20">Municipal authorities may request legal heir NOCs</td>
+                      <td className="p-4 font-semibold">Shimla MC Property Name Change</td>
+                      <td className="p-4 bg-rose-50/20">Expedited name change on presenting registered copy</td>
+                      <td className="p-4 bg-slate-50/20">Municipal offices may request legal heir NOCs</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-semibold">HimBhoomi Orchard Mutation (Intiqal)</td>
+                      <td className="p-4 font-semibold">HimBhoomi Orchard Name Change (Intiqal)</td>
                       <td className="p-4 bg-rose-50/20">Directly recorded by Patwari and sanctioned by Tehsildar</td>
                       <td className="p-4 bg-slate-50/20">Likely to encounter objections during village proclamation</td>
                     </tr>
@@ -681,14 +681,14 @@ export default function ShimlaLocationClient({ faqs }: Props) {
                     Section 118 Tenancy Protection
                   </span>
                   <h3 className="font-bold text-base text-slate-900">
-                    Apple Orchards &amp; Agricultural Land Rules
+                    Apple Orchards &amp; Farm Land Rules
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Section 118 prohibits the transfer of agricultural land to non-agriculturists in Himachal Pradesh. Legitimate natural heirs can inherit agricultural parcels, apple orchards, and rural homesteads through a Will without seeking prior state government approval. However, attempting to bequeath farmland to a non-agriculturist or third party without prior statutory permission under Section 118(2)(h) is void ab initio and can lead to land vesting in the State.
+                    Section 118 prohibits the transfer of farm land to non-agriculturists in Himachal Pradesh. Legitimate natural heirs can inherit farm parcels, apple orchards, and rural homesteads through a Will without seeking prior state government approval. However, attempting to bequeath farmland to a non-agriculturist or third party without prior legal permission under Section 118(2)(h) is void ab initio and can lead to land vesting in the State.
                   </p>
                   <div className="pt-2 text-xs text-slate-500 flex items-center gap-1.5">
                     <Check className="w-3.5 h-3.5 text-emerald-600" />
-                    <span>Protects ancestral family orchards from unlawful confiscation</span>
+                    <span>Protects family family orchards from unlawful confiscation</span>
                   </div>
                 </div>
 
@@ -697,14 +697,14 @@ export default function ShimlaLocationClient({ faqs }: Props) {
                     High Court of HP Precedent
                   </span>
                   <h3 className="font-bold text-base text-slate-900">
-                    Probate Non-Compulsory in Himachal Pradesh
+                    Probate Non-Needed in Himachal Pradesh
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Under Section 213 read with Section 57 of the Indian Succession Act, probate is mandatory solely for Wills executed within or properties situated within the presidency towns of Mumbai, Kolkata, and Chennai. The High Court of Himachal Pradesh in Shimla has established that court probate is not compulsory for Hindu, Sikh, Jain, and Buddhist Wills in Himachal, allowing rapid property mutation upon presenting a registered Will.
+                    Under Section 213 read with Section 57 of the Indian Succession Act, probate is needed solely for Wills signed within or assets situated within the presidency towns of Mumbai, Kolkata, and Chennai. The High Court of Himachal Pradesh in Shimla has established that court probate is not needed for Hindu, Sikh, Jain, and Buddhist Wills in Himachal, allowing rapid property name change upon presenting a registered Will.
                   </p>
                   <div className="pt-2 text-xs text-slate-500 flex items-center gap-1.5">
                     <AlertTriangle className="w-3.5 h-3.5 text-[#C65378]" />
-                    <span>Saves years of costly civil litigation and court fees</span>
+                    <span>Saves years of costly civil court fights and court fees</span>
                   </div>
                 </div>
               </div>
@@ -721,7 +721,7 @@ export default function ShimlaLocationClient({ faqs }: Props) {
                   4. Shimla Sub-Registrar Offices: SRO Directory
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Shimla district operates designated Sub-Registrar Offices under the Himachal Pradesh Revenue Department. Under Section 32 of the Registration Act, your testamentary Will can be registered at the Sub-Registrar Office having jurisdiction over your place of residence or where your immovable property is located.
+                  Shimla district operates designated Sub-Registrar Offices under the Himachal Pradesh Revenue Department. Under Section 32 of the Registration Act, your testamentary Will can be registered at the SRO office having area over your place of residence or where your land and flats is located.
                 </p>
               </div>
 
@@ -791,7 +791,7 @@ export default function ShimlaLocationClient({ faqs }: Props) {
                       <p className="text-slate-600">{activeHubData.timings}</p>
                     </div>
                     <div className="md:col-span-2 space-y-1">
-                      <span className="font-bold text-slate-900 block">Key Localities in Jurisdiction:</span>
+                      <span className="font-bold text-slate-900 block">Key Localities in Area:</span>
                       <p className="text-slate-600 leading-relaxed">{activeHubData.areas}</p>
                     </div>
                   </div>
@@ -810,7 +810,7 @@ export default function ShimlaLocationClient({ faqs }: Props) {
                   5. Local Areas: Area-Wise Will Drafting in HP
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Estate assets across Shimla and neighboring regional districts encompass colonial heritage residences in Shimla Urban, modern HIMUDA apartments in New Shimla and Kasumpti, industrial facilities along the Solan corridor, and lucrative apple orchards throughout Theog, Kotkhai, Rohru, and Jubbal. Our legal advocates provide customized drafting, appointment scheduling, and Sub-Registrar accompaniment across all key regions:
+                  Estate assets across Shimla and neighboring regional districts encompass colonial heritage residences in Shimla Urban, modern HIMUDA apartments in New Shimla and Kasumpti, industrial facilities along the Solan corridor, and lucrative apple orchards throughout Theog, Kotkhai, Rohru, and Jubbal. Our legal lawyers provide customized drafting, appointment scheduling, and Sub-Registrar accompaniment across all key regions:
                 </p>
               </div>
 
@@ -841,7 +841,7 @@ export default function ShimlaLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Specialized <strong>Will drafting services in Shimla Urban</strong> for heritage cottages, multi-storey residential properties, and prime commercial shops along The Mall. Formulates clear provisions compliant with Shimla Municipal Corporation core area bylaws, joint family floor allocations, and bank deposits.
+                      Specialized <strong>Will drafting services in Shimla Urban</strong> for heritage cottages, multi-storey home assets, and prime shop shops along The Mall. Formulates clear rules compliant with Shimla Municipal Corporation core area bylaws, joint family floor allocations, and bank deposits.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -850,7 +850,7 @@ export default function ShimlaLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Deputy Commissioner Office, The Mall</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Slot scheduling at DC Office SRO, advocate physical attendance, and Section 31 doorstep execution for elderly hill residents.
+                        Slot scheduling at DC Office SRO, lawyer physical attendance, and Section 31 doorstep signing for elderly hill residents.
                       </p>
                     </div>
                   </div>
@@ -875,7 +875,7 @@ export default function ShimlaLocationClient({ faqs }: Props) {
                     <div className="flex items-center justify-between gap-2">
                       <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-rose-50 text-[#C65378] border border-rose-100">
                         <MapPin className="w-3.5 h-3.5" />
-                        Planned Residential Hub
+                        Planned Home Hub
                       </span>
                       <span className="text-[11px] font-semibold text-slate-500 bg-slate-100 px-2.5 py-1 rounded-lg">
                         SRO Shimla Rural (Boileauganj)
@@ -895,7 +895,7 @@ export default function ShimlaLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Customized <strong>Will drafting services in New Shimla</strong> and Kasumpti for HIMUDA planned residential flats, duplex housing units, and independent villas. Formulates airtight testamentary clauses ensuring straightforward leasehold transfer with HIMUDA and swift SMC property tax substitution.
+                      Customized <strong>Will drafting services in New Shimla</strong> and Kasumpti for HIMUDA planned home flats, duplex housing units, and independent villas. Formulates airtight testamentary clauses making sure straightforward leasehold transfer with HIMUDA and swift SMC property tax substitution.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -904,7 +904,7 @@ export default function ShimlaLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Tehsil Complex, Boileauganj</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        HIMUDA allotment compliance, doctor mental soundness certificates, and expedited Book III SRO entry.
+                        HIMUDA allotment compliance, doctor mental soundness papers, and expedited Book III SRO entry.
                       </p>
                     </div>
                   </div>
@@ -949,7 +949,7 @@ export default function ShimlaLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Comprehensive <strong>Will drafting services in Theog</strong> and Fagu for commercial apple orchards, controlled atmosphere (CA) cold stores, and packaging facilities. Resolves partition issues among siblings, prevents uneven orchard fragmentation, and verifies complete Section 118 agriculturist alignment.
+                      Full <strong>Will drafting services in Theog</strong> and Fagu for shop apple orchards, controlled atmosphere (CA) cold stores, and packaging facilities. Resolves split issues among siblings, prevents uneven orchard fragmentation, and verifies complete Section 118 agriculturist alignment.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -958,7 +958,7 @@ export default function ShimlaLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Tehsil Karyalaya, Theog</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        HimBhoomi Khasra mapping, Intiqal mutation guidance, and SRO Theog execution coordination.
+                        HimBhoomi Khasra mapping, Intiqal name change guidance, and SRO Theog signing coordination.
                       </p>
                     </div>
                   </div>
@@ -1002,13 +1002,13 @@ export default function ShimlaLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Tailored <strong>Will drafting services in Kotkhai and Jubbal</strong> for premium Royal Delicious apple plantations, ancestral estates, and agricultural river lands. Establishes enforceable life interest clauses for surviving spouses, smooth revenue inheritance, and clear water-source usage agreements.
+                      Tailored <strong>Will drafting services in Kotkhai and Jubbal</strong> for premium Royal Delicious apple plantations, family estates, and farm river lands. Establishes enforceable life interest clauses for surviving spouses, smooth revenue inheritance, and clear water-source usage agreements.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
                       <div className="flex items-center gap-2 font-bold text-slate-900">
                         <Building className="w-3.5 h-3.5 text-[#C65378]" />
-                        <span>SRO Hub: Tehsil Administrative Complex, Kotkhai</span>
+                        <span>SRO Hub: Tehsil Office Complex, Kotkhai</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
                         Complete revenue record review, biometric scheduling, and certified copy delivery.
@@ -1055,7 +1055,7 @@ export default function ShimlaLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Expert <strong>Will drafting services in Rohru and Chirgaon</strong> for high-altitude apple plantations, private trout fish farms, and commercial buildings. Formulates unambiguous asset bequests that protect family rights against intestate disputes and village revenue contestations.
+                      Expert <strong>Will drafting services in Rohru and Chirgaon</strong> for high-altitude apple plantations, private trout fish farms, and shop buildings. Formulates clear asset bequests that protect family rights against without a Will fights and village revenue contestations.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1064,7 +1064,7 @@ export default function ShimlaLocationClient({ faqs }: Props) {
                         <span>SRO Hub: SDM Complex, Rohru</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Section 118 verification, Intiqal guidance with Halqa Patwari, and Book III registration.
+                        Section 118 check, Intiqal guidance with Halqa Patwari, and Book III registration.
                       </p>
                     </div>
                   </div>
@@ -1089,7 +1089,7 @@ export default function ShimlaLocationClient({ faqs }: Props) {
                     <div className="flex items-center justify-between gap-2">
                       <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-rose-50 text-[#C65378] border border-rose-100">
                         <Landmark className="w-3.5 h-3.5" />
-                        Satluj Valley Commercial Hub
+                        Satluj Valley Shop Hub
                       </span>
                       <span className="text-[11px] font-semibold text-slate-500 bg-slate-100 px-2.5 py-1 rounded-lg">
                         SRO Rampur Bushahr
@@ -1108,7 +1108,7 @@ export default function ShimlaLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Dedicated <strong>Will drafting services in Rampur Bushahr</strong> for multi-generational commercial trading families, residential buildings, and Satluj basin agro-holdings. Protects self-acquired family businesses and streamlines inheritance without civil court complications.
+                      Dedicated <strong>Will drafting services in Rampur Bushahr</strong> for multi-generational shop trading families, home buildings, and Satluj basin agro-holdings. Protects self-acquired family businesses and streamlines inheritance without civil court complications.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1117,13 +1117,13 @@ export default function ShimlaLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Mini Secretariat, Rampur Bushahr</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Doorstep registration for elderly family elders, SRO booking, and advocate accompaniment.
+                        Doorstep registration for elderly family elders, SRO booking, and lawyer accompaniment.
                       </p>
                     </div>
                   </div>
 
                   <div className="pt-4 mt-4 border-t border-slate-100 flex items-center justify-between">
-                    <span className="text-xs font-bold text-slate-500">Commercial &amp; Farmland Assets</span>
+                    <span className="text-xs font-bold text-slate-500">Shop &amp; Farmland Assets</span>
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
@@ -1161,22 +1161,22 @@ export default function ShimlaLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Comprehensive <strong>Will drafting services in Solan and Kandaghat</strong> for industrial pharma founders, NH5 commercial developments, and private hillside residences. Formulates airtight cross-border estate succession for families with properties across HP and Chandigarh Tricity.
+                      Full <strong>Will drafting services in Solan and Kandaghat</strong> for industrial pharma founders, NH5 shop developments, and private hillside residences. Formulates airtight cross-border estate succession for families with assets across HP and Chandigarh Tricity.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
                       <div className="flex items-center gap-2 font-bold text-slate-900">
                         <Building className="w-3.5 h-3.5 text-[#C65378]" />
-                        <span>SRO Hub: District Administrative Complex, Solan</span>
+                        <span>SRO Hub: District Office Complex, Solan</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Corporate equity succession, MSME asset partitioning, and SRO Solan registration assistance.
+                        Corporate equity succession, MSME asset partitioning, and SRO Solan registration help.
                       </p>
                     </div>
                   </div>
 
                   <div className="pt-4 mt-4 border-t border-slate-100 flex items-center justify-between">
-                    <span className="text-xs font-bold text-slate-500">Highway &amp; Residential Plots</span>
+                    <span className="text-xs font-bold text-slate-500">Highway &amp; Home Plots</span>
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
@@ -1214,7 +1214,7 @@ export default function ShimlaLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Customized <strong>Will drafting services in Mashobra and Kasauli</strong> for luxury holiday cottages, eco-tourism resorts, and private forest-adjacent properties. Handles Cantonment Board lease rules, commercial tourism permits, and Section 118 clearance nuances smoothly.
+                      Customized <strong>Will drafting services in Mashobra and Kasauli</strong> for luxury holiday cottages, eco-tourism resorts, and private forest-adjacent assets. Handles Cantonment Board lease rules, shop tourism permits, and Section 118 clearance nuances smoothly.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1255,7 +1255,7 @@ export default function ShimlaLocationClient({ faqs }: Props) {
                   6. Step-by-Step SOP: Drafting to SRO Registration
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Follow this verified 5-stage legal operating procedure to formulate, execute, and register your Will before the Sub-Registrar in Shimla:
+                  Follow this verified 5-stage legal operating step to formulate, execute, and register your Will before the Sub-Registrar in Shimla:
                 </p>
               </div>
 
@@ -1269,7 +1269,7 @@ export default function ShimlaLocationClient({ faqs }: Props) {
                       Asset Audit
                     </h3>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Compile complete details of SMC properties, HIMUDA flats, HimBhoomi orchard Khasras, bank accounts, and demat assets.
+                      Compile complete details of SMC assets, HIMUDA flats, HimBhoomi orchard Khasras, bank accounts, and demat assets.
                     </p>
                   </div>
                 </div>
@@ -1280,7 +1280,7 @@ export default function ShimlaLocationClient({ faqs }: Props) {
                       2
                     </span>
                     <h3 className="font-bold text-sm text-slate-900">
-                      Advocate Drafting
+                      Lawyer Drafting
                     </h3>
                     <p className="text-xs text-slate-600 leading-relaxed">
                       Draft customized legal clauses addressing Section 118 compliance, revocation of past wills, survivorship, and executor powers.
@@ -1294,10 +1294,10 @@ export default function ShimlaLocationClient({ faqs }: Props) {
                       3
                     </span>
                     <h3 className="font-bold text-sm text-slate-900">
-                      Valid Execution
+                      Valid Signing
                     </h3>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Print on standard A4 paper and sign each page in the physical presence of two independent non-beneficiary adult witnesses.
+                      Print on standard A4 paper and sign each page in the physical presence of two independent non-heir adult witnesses.
                     </p>
                   </div>
                 </div>
@@ -1343,7 +1343,7 @@ export default function ShimlaLocationClient({ faqs }: Props) {
                   7. Section 31 Doorstep SRO Registration in Shimla
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Navigating Shimla&apos;s steep pedestrian gradients, narrow hill roads, and stairs to government offices presents a real physical obstacle for senior citizens and bedridden individuals. Under <strong>Section 31 of the Registration Act, 1908</strong>, the Sub-Registrar possesses legal discretion to attend a private residence to register a testamentary Will.
+                  Navigating Shimla&apos;s steep pedestrian gradients, narrow hill roads, and stairs to government offices presents a real physical obstacle for senior citizens and bedridden people. Under <strong>Section 31 of the Registration Act, 1908</strong>, the Sub-Registrar possesses legal discretion to attend a private residence to register a testamentary Will.
                 </p>
               </div>
 
@@ -1363,7 +1363,7 @@ export default function ShimlaLocationClient({ faqs }: Props) {
                   <div className="flex items-start gap-3 p-4 rounded-2xl bg-slate-50 border border-slate-100">
                     <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
                     <div>
-                      <strong className="text-slate-900 block">Commission Application</strong>
+                      <strong className="text-slate-900 block">Commission Form</strong>
                       <span className="text-slate-600">Our legal team drafts and submits the formal Section 31 special commission petition before the jurisdictional Shimla Sub-Registrar.</span>
                     </div>
                   </div>
@@ -1398,7 +1398,7 @@ export default function ShimlaLocationClient({ faqs }: Props) {
                   8. Document Checklist for Shimla Sub-Registrar
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Prepare your documentation before attending your Sub-Registrar appointment. You have organized <strong>{checkedCount} of {checklist.length}</strong> required documents:
+                  Prepare your papers before attending your Sub-Registrar appointment. You have organized <strong>{checkedCount} of {checklist.length}</strong> required documents:
                 </p>
               </div>
 
@@ -1446,20 +1446,20 @@ export default function ShimlaLocationClient({ faqs }: Props) {
                   9. Shimla Property Types: Orchards, SMC &amp; HIMUDA
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Succession procedures in Shimla vary considerably based on the classification of the property title and local planning authority:
+                  Succession steps in Shimla vary considerably based on the classification of the property title and local planning authority:
                 </p>
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <div className="bg-white rounded-3xl border border-slate-200/90 p-6 shadow-xs space-y-3">
                   <span className="px-3 py-1 rounded-full bg-rose-100 text-[#C65378] text-xs font-bold uppercase">
-                    Municipal Corporation Properties
+                    Municipal Corporation Assets
                   </span>
                   <h3 className="font-bold text-base text-slate-900">
-                    SMC Core &amp; Green Belt Properties
+                    SMC Core &amp; Green Belt Assets
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Under Shimla Municipal Corporation rules, properties within designated heritage or green corridors face strict building constraints. A registered Will directs the SMC assessment branch to update property tax registers without probate delays.
+                    Under Shimla Municipal Corporation rules, assets within designated heritage or green corridors face strict building constraints. A registered Will directs the SMC assessment branch to update property tax registers without probate delays.
                   </p>
                 </div>
 
@@ -1483,7 +1483,7 @@ export default function ShimlaLocationClient({ faqs }: Props) {
                     New Shimla HIMUDA Schemes
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    For HIMUDA leasehold or freehold flats in New Shimla and Kasumpti, testamentary succession enables direct name substitution in housing authority records, avoiding expensive succession suits and lengthy administrative hold-ups.
+                    For HIMUDA leasehold or freehold flats in New Shimla and Kasumpti, testamentary succession enables direct name substitution in housing authority records, avoiding expensive succession suits and lengthy office hold-ups.
                   </p>
                 </div>
               </div>
@@ -1500,7 +1500,7 @@ export default function ShimlaLocationClient({ faqs }: Props) {
                   10. Official Himachal Pradesh Will Registration Fees
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Unlike commercial sale deeds or gift deeds that attract 5% to 8% stamp duty in Himachal Pradesh, testamentary Wills are completely exempt from stamp duty. Government registration fees in Shimla are purely nominal:
+                  Unlike shop sale deeds or gift deeds that attract 5% to 8% stamp duty in Himachal Pradesh, testamentary Wills are completely exempt from stamp duty. Government registration fees in Shimla are purely nominal:
                 </p>
               </div>
 
@@ -1509,7 +1509,7 @@ export default function ShimlaLocationClient({ faqs }: Props) {
                   <thead>
                     <tr className="bg-slate-100/80 border-b border-slate-200 text-slate-800">
                       <th className="p-4 font-bold">Fee Component</th>
-                      <th className="p-4 font-bold">Statutory Amount</th>
+                      <th className="p-4 font-bold">Legal Amount</th>
                       <th className="p-4 font-bold">Remittance Authority</th>
                     </tr>
                   </thead>
@@ -1550,7 +1550,7 @@ export default function ShimlaLocationClient({ faqs }: Props) {
                   11. Transparent Will Packages &amp; Legal Fees in Shimla
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Choose the legal assistance package tailored to your family&apos;s estate planning and property portfolio in Shimla:
+                  Choose the legal help package tailored to your family&apos;s estate planning and property portfolio in Shimla:
                 </p>
               </div>
 
@@ -1577,11 +1577,11 @@ export default function ShimlaLocationClient({ faqs }: Props) {
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>Legally vetted statutory clauses</span>
+                        <span>Legally vetted legal clauses</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>Instant PDF download &amp; execution guide</span>
+                        <span>Instant PDF download &amp; signing guide</span>
                       </li>
                     </ul>
                   </div>
@@ -1601,16 +1601,16 @@ export default function ShimlaLocationClient({ faqs }: Props) {
                   </div>
                   <div className="space-y-4">
                     <span className="text-xs font-bold uppercase tracking-wider text-[#C65378]">
-                      Comprehensive
+                      Full
                     </span>
                     <h3 className="font-extrabold text-xl text-slate-900">
-                      Advocate Consultation
+                      Lawyer Talk
                     </h3>
                     <div className="text-3xl font-black text-slate-900">
                       ₹4,990
                     </div>
                     <p className="text-xs text-slate-600">
-                      Senior estate advocate review for SMC residences, apple orchards, and Section 118 compliance.
+                      Senior estate lawyer review for SMC residences, apple orchards, and Section 118 compliance.
                     </p>
                     <ul className="space-y-2.5 text-xs text-slate-700 pt-3 border-t border-slate-100">
                       <li className="flex items-center gap-2">
@@ -1619,7 +1619,7 @@ export default function ShimlaLocationClient({ faqs }: Props) {
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>1-on-1 video call with senior advocate</span>
+                        <span>1-on-1 video call with senior lawyer</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
@@ -1635,7 +1635,7 @@ export default function ShimlaLocationClient({ faqs }: Props) {
                     href="/contact"
                     className="mt-6 w-full py-3 rounded-xl bg-[#C65378] text-white text-xs font-bold text-center hover:bg-[#a13c5d] transition-colors cursor-pointer"
                   >
-                    Book Advocate Call
+                    Book Lawyer Call
                   </a>
                 </div>
 
@@ -1652,7 +1652,7 @@ export default function ShimlaLocationClient({ faqs }: Props) {
                       ₹9,990
                     </div>
                     <p className="text-xs text-slate-600">
-                      End-to-end registration coordination across any Shimla Sub-Registrar Office or hill home visit.
+                      End-to-end registration coordination across any Shimla SRO office or hill home visit.
                     </p>
                     <ul className="space-y-2.5 text-xs text-slate-700 pt-3 border-t border-slate-100">
                       <li className="flex items-center gap-2">
@@ -1661,7 +1661,7 @@ export default function ShimlaLocationClient({ faqs }: Props) {
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>Advocate physically attends Shimla SRO</span>
+                        <span>Lawyer physically attends Shimla SRO</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
@@ -1735,7 +1735,7 @@ export default function ShimlaLocationClient({ faqs }: Props) {
                   <span>STATUTORY CITATIONS</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  13. Statutory Citations &amp; Himachal Legal Framework
+                  13. Legal Citations &amp; Himachal Legal Framework
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Our drafting protocols comply strictly with codified Indian statutes and Himachal Pradesh land registration frameworks:
@@ -1775,7 +1775,7 @@ export default function ShimlaLocationClient({ faqs }: Props) {
                     HimBhoomi Land Revenue Portal
                   </span>
                   <p className="text-xs text-slate-600">
-                    Himachal Pradesh Land Revenue Act 1954: Online Jamabandi &amp; Intiqal Mutation.
+                    Himachal Pradesh Land Revenue Act 1954: Online Jamabandi &amp; Intiqal Name Change.
                   </p>
                 </div>
               </div>
@@ -1784,10 +1784,10 @@ export default function ShimlaLocationClient({ faqs }: Props) {
             {/* BOTTOM CONVERSION CTA BANNER */}
             <section className="rounded-3xl bg-gradient-to-br from-[#172228] to-[#212F35] text-white p-8 sm:p-12 text-center space-y-5 shadow-xl">
               <h3 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-white">
-                Protect Your Shimla Properties &amp; Family Legacy
+                Protect Your Shimla Assets &amp; Family Legacy
               </h3>
               <p className="text-sm sm:text-base text-slate-200 max-w-2xl mx-auto leading-relaxed">
-                Do not leave your hard-earned Shimla residences, HIMUDA flats, or apple orchards to administrative disputes. Draft a legally binding Will online today or consult our senior Himachal legal advocates.
+                Do not leave your hard-earned Shimla residences, HIMUDA flats, or apple orchards to office fights. Draft a legally binding Will online today or consult our senior Himachal legal lawyers.
               </p>
               <div className="pt-3 flex flex-col sm:flex-row items-center justify-center gap-4">
                 <a
@@ -1801,7 +1801,7 @@ export default function ShimlaLocationClient({ faqs }: Props) {
                   href="/contact"
                   className="w-full sm:w-auto px-6 py-3.5 rounded-full bg-white/10 text-white font-bold text-sm sm:text-base hover:bg-white/20 transition-all border border-white/20"
                 >
-                  Book Advocate Consultation
+                  Book Lawyer Talk
                 </a>
               </div>
             </section>

@@ -132,7 +132,7 @@ const INITIAL_CHECKLIST = [
   },
   {
     id: "item-2",
-    label: "Original Aadhaar Card & PAN of Testator",
+    label: "Original Aadhaar Card & PAN of Will maker",
     detail: "Needed for ID check, thumbprints, and digital photos at the registry office.",
     checked: true,
   },
@@ -144,7 +144,7 @@ const INITIAL_CHECKLIST = [
   },
   {
     id: "item-4",
-    label: "Doctor Mental Fitness Certificate (MBBS / MD)",
+    label: "Doctor Sound Mind Note (MBBS / MD)",
     detail: "Recommended for elders aged 60+. Confirms sound mind and clear thinking.",
     checked: false,
   },
@@ -163,7 +163,7 @@ const INITIAL_CHECKLIST = [
   {
     id: "item-7",
     label: "Parivarik Bantwara / Batwaranama / Vanshavali Details",
-    detail: "Family lineage tree or recorded partition deed that clarifies your separate share.",
+    detail: "Family lineage tree or recorded split deed that clarifies your separate share.",
     checked: false,
   },
 ];
@@ -260,7 +260,7 @@ export default function BiharLocationClient({ faqs }: Props) {
               </h1>
 
               <p className="text-base sm:text-lg text-slate-200 leading-relaxed font-normal max-w-2xl">
-                Draft a legally valid Will for your flats, shops, and ancestral farmland in Bihar. Get advocate drafting, Bihar e-Nibandhan portal appointment booking, and full Bihar Bhumi Dakhil Kharij protection.
+                Draft a legally valid Will for your flats, shops, and family farmland in Bihar. Get lawyer drafting, Bihar e-Nibandhan portal appointment booking, and full Bihar Bhumi Dakhil Kharij protection.
               </p>
 
               <div className="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
@@ -285,7 +285,7 @@ export default function BiharLocationClient({ faqs }: Props) {
               <div className="pt-4 grid grid-cols-3 gap-3 border-t border-white/10 text-xs text-slate-300">
                 <div className="flex items-center gap-2">
                   <Check className="w-4 h-4 text-emerald-400 shrink-0" />
-                  <span>Patna HC Advocate Vetted</span>
+                  <span>Patna HC Lawyer Vetted</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <Check className="w-4 h-4 text-emerald-400 shrink-0" />
@@ -433,10 +433,10 @@ export default function BiharLocationClient({ faqs }: Props) {
                   Verified Legal Service
                 </span>
                 <div className="font-extrabold text-sm text-white leading-snug">
-                  Protect Your Bihar Ancestral Land &amp; Property
+                  Protect Your Bihar Family Land &amp; Property
                 </div>
                 <p className="text-xs text-slate-300 leading-relaxed">
-                  Draft a clear Will online in 15 minutes. Avoid painful court disputes and delayed Dakhil Kharij.
+                  Draft a clear Will online in 15 minutes. Avoid painful court fights and delayed Dakhil Kharij.
                 </p>
                 <a
                   href="/start"
@@ -469,14 +469,14 @@ export default function BiharLocationClient({ faqs }: Props) {
                       <span>Optional Registration</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Will registration is optional under Section 18(e) of the Registration Act, 1908. A plain paper Will signed before two witnesses is valid. Registering your Will in Book III gives permanent proof against family disputes.
+                      Will registration is optional under Section 18(e) of the Registration Act, 1908. A plain paper Will signed before two witnesses is valid. Registering your Will in Book III gives permanent proof against family fights.
                     </p>
                   </div>
 
                   <div className="p-4 rounded-2xl bg-slate-50/70 border border-slate-100 space-y-1.5">
                     <div className="flex items-center gap-2 font-bold text-sm text-slate-900">
                       <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
-                      <span>Probate Non-Compulsory</span>
+                      <span>Probate Non-Needed</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
                       Bihar is not a presidency town. Under Section 213 of the Indian Succession Act, court probate is optional in Bihar. You can transfer property directly with a registered Will.
@@ -489,7 +489,7 @@ export default function BiharLocationClient({ faqs }: Props) {
                       <span>Zero Bihar Stamp Duty</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Wills are 100% exempt from stamp duty across Bihar. You pay only a small ₹100 registration fee plus scanning charges at your Sub-Registrar Office.
+                      Wills are 100% exempt from stamp duty across Bihar. You pay only a small ₹100 registration fee plus scanning charges at your SRO office.
                     </p>
                   </div>
 
@@ -499,7 +499,7 @@ export default function BiharLocationClient({ faqs }: Props) {
                       <span>Bihar Bhumi Dakhil Kharij</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      A registered Will helps you get fast land mutation on the Bihar Bhumi portal. Circle Officers use registered Wills to update Jamabandi records without civil court cases.
+                      A registered Will helps you get fast land name change on the Bihar Bhumi portal. Circle Officers use registered Wills to update Jamabandi records without civil court cases.
                     </p>
                   </div>
                 </div>
@@ -517,7 +517,7 @@ export default function BiharLocationClient({ faqs }: Props) {
                   1. Will Drafting &amp; Land Succession in Bihar
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Making a Will in Bihar protects both city homes and ancestral farm plots. Testamentary succession follows the Indian Succession Act, 1925 and the Bihar Land Mutation Act, 2011. Here are three key legal rules you must know:
+                  Making a Will in Bihar protects both city homes and family farm plots. Testamentary succession follows the Indian Succession Act, 1925 and the Bihar Land Name Change Act, 2011. Here are three key legal rules you must know:
                 </p>
               </div>
 
@@ -530,7 +530,7 @@ export default function BiharLocationClient({ faqs }: Props) {
                     Section 59: Testamentary Capacity
                   </h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Any adult of sound mind can make a Will in Bihar. This includes senior citizens with ancestral land or city flats. A doctor fitness certificate proves clear mental health and stops false claims.
+                    Any adult of sound mind can make a Will in Bihar. This includes senior citizens with family land or city flats. A doctor fitness paper proves clear mental health and stops false claims.
                   </p>
                 </div>
 
@@ -551,7 +551,7 @@ export default function BiharLocationClient({ faqs }: Props) {
                     <Building className="w-5 h-5" />
                   </div>
                   <h3 className="font-extrabold text-base text-slate-900">
-                    Bihar Bhumi Mutation Alignment
+                    Bihar Bhumi Name Change Alignment
                   </h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
                     A good Bihar Will clearly lists your Thana number, Khata, Khesra (Plot), and Jamabandi details. This helps the Circle Officer approve online Dakhil Kharij quickly.
@@ -568,10 +568,10 @@ export default function BiharLocationClient({ faqs }: Props) {
                   <span>REGISTRATION ACT 1908 ANALYSIS</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  2. Is Will Registration Mandatory in Bihar?
+                  2. Is Will Registration Needed in Bihar?
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Section 18(e) of the Registration Act, 1908 makes Will registration optional in Bihar. A Will on plain paper with two witness signatures is legally valid. However, an unregistered Will often faces objections during land mutation before the Circle Officer. Registering your Will gives permanent safety.
+                  Section 18(e) of the Registration Act, 1908 makes Will registration optional in Bihar. A Will on plain paper with two witness signatures is legally valid. However, an unregistered Will often faces objections during land name change before the Circle Officer. Registering your Will gives permanent safety.
                 </p>
               </div>
 
@@ -594,7 +594,7 @@ export default function BiharLocationClient({ faqs }: Props) {
                     <tr>
                       <td className="p-4 font-bold text-slate-900">Bihar Bhumi Dakhil Kharij</td>
                       <td className="p-4">Frequent objections by Circle Officers and co-heirs</td>
-                      <td className="p-4 font-bold text-emerald-700">Direct mutation under Bihar Land Mutation Act</td>
+                      <td className="p-4 font-bold text-emerald-700">Direct name change under Bihar Land Name Change Act</td>
                     </tr>
                     <tr>
                       <td className="p-4 font-bold text-slate-900">Tampering &amp; Loss Risk</td>
@@ -603,7 +603,7 @@ export default function BiharLocationClient({ faqs }: Props) {
                     </tr>
                     <tr>
                       <td className="p-4 font-bold text-slate-900">Patna Municipal Corporation</td>
-                      <td className="p-4">Requires court succession certificates</td>
+                      <td className="p-4">Requires court succession papers</td>
                       <td className="p-4 font-bold text-emerald-700">Quick name change on property tax records</td>
                     </tr>
                     <tr>
@@ -645,7 +645,7 @@ export default function BiharLocationClient({ faqs }: Props) {
                   </p>
                   <div className="pt-2 text-xs text-slate-500 flex items-center gap-1.5">
                     <Check className="w-3.5 h-3.5 text-emerald-600" />
-                    <span>Direct mutation possible without High Court probate</span>
+                    <span>Direct name change possible without High Court probate</span>
                   </div>
                 </div>
 
@@ -662,7 +662,7 @@ export default function BiharLocationClient({ faqs }: Props) {
                   </p>
                   <div className="pt-2 text-xs text-slate-500 flex items-center gap-1.5">
                     <AlertTriangle className="w-3.5 h-3.5 text-[#C65378]" />
-                    <span>Court order stops all third-party property disputes</span>
+                    <span>Court order stops all third-party property fights</span>
                   </div>
                 </div>
               </div>
@@ -676,7 +676,7 @@ export default function BiharLocationClient({ faqs }: Props) {
                   <span>SRO JURISDICTION DIRECTORY</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  4. Bihar Sub-Registrar Offices: SRO Jurisdiction Directory
+                  4. Bihar Sub-Registrar Offices: SRO Area Directory
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Bihar runs Sub-Registrar Offices under the Registration Department. Under Section 32 of the Registration Act, you can register your Will where you live or where your property is located.
@@ -763,7 +763,7 @@ export default function BiharLocationClient({ faqs }: Props) {
                       href="/services/will-registration"
                       className="inline-flex items-center gap-1.5 text-xs font-bold text-[#C65378] hover:text-[#a13c5d]"
                     >
-                      <span>Book SRO Advocate Accompaniment</span>
+                      <span>Book SRO Lawyer Accompaniment</span>
                       <ArrowRight className="w-3.5 h-3.5" />
                     </a>
                   </div>
@@ -782,7 +782,7 @@ export default function BiharLocationClient({ faqs }: Props) {
                   5. Regional Cities: City-Wise Will Drafting in Bihar
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Estate assets in Bihar include city flats along Bailey Road in Patna, family homes in Gaya, textile shops in Muzaffarpur, silk units in Bhagalpur, ancestral Mithila havelis in Darbhanga, and fertile farms across Seemanchal and Shahabad. Our estate advocates provide expert legal drafting and Sub-Registrar accompaniment across all key regional hubs:
+                  Estate assets in Bihar include city flats along Bailey Road in Patna, family homes in Gaya, textile shops in Muzaffarpur, silk units in Bhagalpur, family Mithila havelis in Darbhanga, and fertile farms across Seemanchal and Shahabad. Our estate lawyers provide expert legal drafting and Sub-Registrar accompaniment across all key regional hubs:
                 </p>
               </div>
 
@@ -814,7 +814,7 @@ export default function BiharLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Specialized <strong>Will drafting services in Patna</strong> and Danapur for city apartments, PRDA residential plots, commercial shops, and bank lockers. We handle Patna Municipal Corporation (PMC) property tax mutation, parking allocations, and demat account transfers to keep family peace.
+                      Specialized <strong>Will drafting services in Patna</strong> and Danapur for city apartments, PRDA home plots, shop shops, and bank lockers. We handle Patna Municipal Corporation (PMC) property tax name change, parking allocations, and demat account transfers to keep family peace.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -823,13 +823,13 @@ export default function BiharLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Kutchery Compound &amp; Danapur Sub-Division</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        e-Nibandhan slot booking at Patna Sadar and Danapur, advocate attendance, and Section 31 home visits for seniors.
+                        e-Nibandhan slot booking at Patna Sadar and Danapur, lawyer attendance, and Section 31 home visits for seniors.
                       </p>
                     </div>
                   </div>
 
                   <div className="pt-4 mt-4 border-t border-slate-100 flex items-center justify-between">
-                    <span className="text-xs font-bold text-slate-500">PMC Flats &amp; Commercial Assets</span>
+                    <span className="text-xs font-bold text-slate-500">PMC Flats &amp; Shop Assets</span>
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
@@ -869,7 +869,7 @@ export default function BiharLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Custom <strong>Will drafting services in Gaya</strong> and Bodh Gaya for family homes, hotels, and ancestral farmland. We add clear protections for surviving spouses, divide shares cleanly between children, and ensure fast mutation on the Bihar Bhumi portal.
+                      Custom <strong>Will drafting services in Gaya</strong> and Bodh Gaya for family homes, hotels, and family farmland. We add clear protections for surviving spouses, divide shares cleanly between children, and make sure fast name change on the Bihar Bhumi portal.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -903,7 +903,7 @@ export default function BiharLocationClient({ faqs }: Props) {
                     <div className="flex items-center justify-between gap-2">
                       <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-rose-50 text-[#C65378] border border-rose-100">
                         <MapPin className="w-3.5 h-3.5" />
-                        North Bihar Commercial Capital
+                        North Bihar Shop Capital
                       </span>
                       <span className="text-[11px] font-semibold text-slate-500 bg-slate-100 px-2.5 py-1 rounded-lg">
                         SRO Muzaffarpur Sadar
@@ -924,7 +924,7 @@ export default function BiharLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Complete <strong>Will drafting services in Muzaffarpur</strong> for Sutapatti textile wholesale shops, city houses under Nagar Nigam, and lychee orchards. We help business families pass assets to the next generation without messy partition suits.
+                      Complete <strong>Will drafting services in Muzaffarpur</strong> for Sutapatti textile wholesale shops, city houses under Nagar Nigam, and lychee orchards. We help business families pass assets to the next generation without messy split suits.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -933,7 +933,7 @@ export default function BiharLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Company Bagh Road, Muzaffarpur</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Business estate planning, lychee land verification, and e-Nibandhan registration.
+                        Business estate planning, lychee land check, and e-Nibandhan registration.
                       </p>
                     </div>
                   </div>
@@ -979,7 +979,7 @@ export default function BiharLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Reliable <strong>Will drafting services in Bhagalpur</strong> for Nathnagar silk weaving units, riverside homes, and fertile farms in Sabour. We help you draft clear bequests that avoid disputes among legal heirs in Khatiyan land.
+                      Reliable <strong>Will drafting services in Bhagalpur</strong> for Nathnagar silk weaving units, riverside homes, and fertile farms in Sabour. We help you draft clear bequests that avoid fights among legal heirs in Khatiyan land.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -988,7 +988,7 @@ export default function BiharLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Kachhari Parisar, Tilka Manjhi</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Complete SRO attendance, witness verification, and doorstep visits under Section 31.
+                        Complete SRO attendance, witness check, and doorstep visits under Section 31.
                       </p>
                     </div>
                   </div>
@@ -1034,7 +1034,7 @@ export default function BiharLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Custom <strong>Will drafting services in Darbhanga</strong> for Mithila ancestral havelis, townhouses, medical clinics, and makhana pond farms. We record your family lineage tree (Vanshavali) and stop informal partition disputes.
+                      Custom <strong>Will drafting services in Darbhanga</strong> for Mithila family havelis, townhouses, medical clinics, and makhana pond farms. We record your family lineage tree (Vanshavali) and stop informal split fights.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1049,7 +1049,7 @@ export default function BiharLocationClient({ faqs }: Props) {
                   </div>
 
                   <div className="pt-4 mt-4 border-t border-slate-100 flex items-center justify-between">
-                    <span className="text-xs font-bold text-slate-500">Ancestral Haveli &amp; Farmland</span>
+                    <span className="text-xs font-bold text-slate-500">Family Haveli &amp; Farmland</span>
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
@@ -1089,7 +1089,7 @@ export default function BiharLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Specialized <strong>Will drafting services in Purnia</strong> for Gulabbagh grain trading firms, Line Bazar commercial clinics, and maize farmlands across Seemanchal. We make Bihar Bhumi land mutation fast and hassle-free.
+                      Specialized <strong>Will drafting services in Purnia</strong> for Gulabbagh grain trading firms, Line Bazar shop clinics, and maize farmlands across Seemanchal. We make Bihar Bhumi land name change fast and hassle-free.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1144,7 +1144,7 @@ export default function BiharLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Focused <strong>Will drafting services in Begusarai</strong> and Barauni for industrial units, residential plots, BIADA industrial lease land, and farmland. We set clear rules for company shares, factory equipment, and homes.
+                      Focused <strong>Will drafting services in Begusarai</strong> and Barauni for industrial units, home plots, BIADA industrial lease land, and farmland. We set clear rules for company shares, factory equipment, and homes.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1153,7 +1153,7 @@ export default function BiharLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Near Pokhariya Overbridge</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        BIADA lease transfer clauses, industrial equity planning, and SRO execution.
+                        BIADA lease transfer clauses, industrial equity planning, and SRO signing.
                       </p>
                     </div>
                   </div>
@@ -1199,7 +1199,7 @@ export default function BiharLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Solid <strong>Will drafting services in Ara</strong> and Bhojpur for canal-irrigated farmland, family havelis, and market plots. We record clear family partition terms, protect daughters&apos; rights, and help you get fast Circle Office mutation.
+                      Solid <strong>Will drafting services in Ara</strong> and Bhojpur for canal-irrigated farmland, family havelis, and market plots. We record clear family split terms, protect daughters&apos; rights, and help you get fast Circle Office name change.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1240,7 +1240,7 @@ export default function BiharLocationClient({ faqs }: Props) {
                   6. Step-by-Step SOP: Drafting to e-Nibandhan in Bihar
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Making a valid Will in Bihar follows 5 simple steps. Each step protects your assets under the Indian Succession Act and Bihar Land Mutation Act:
+                  Making a valid Will in Bihar follows 5 simple steps. Each step protects your assets under the Indian Succession Act and Bihar Land Name Change Act:
                 </p>
               </div>
 
@@ -1252,7 +1252,7 @@ export default function BiharLocationClient({ faqs }: Props) {
                   </div>
                   <div className="space-y-1.5 flex-1">
                     <h3 className="font-extrabold text-base text-slate-900">
-                      Asset Mapping &amp; Khatiyan / Jamabandi Verification
+                      Asset Mapping &amp; Khatiyan / Jamabandi Check
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                       Make a list of all your assets. For farmland, write down the Revenue Thana, Khata, Khesra, and Jamabandi numbers. For city flats, list the sale deed, municipal holding, and bank accounts.
@@ -1267,10 +1267,10 @@ export default function BiharLocationClient({ faqs }: Props) {
                   </div>
                   <div className="space-y-1.5 flex-1">
                     <h3 className="font-extrabold text-base text-slate-900">
-                      Advocate Drafting &amp; Custom Bequest Structuring
+                      Lawyer Drafting &amp; Custom Bequest Structuring
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Our advocates draft your Will with clear terms. We cancel old Wills, set clear shares for heirs, and appoint a trusted executor to handle your estate.
+                      Our lawyers draft your Will with clear terms. We cancel old Wills, set clear shares for heirs, and appoint a trusted executor to handle your estate.
                     </p>
                   </div>
                 </div>
@@ -1285,7 +1285,7 @@ export default function BiharLocationClient({ faqs }: Props) {
                       Physical Attestation Before Two Independent Witnesses
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Print your Will on plain A4 sheets. Sign each page in front of two adult witnesses. Witnesses sign right after you. Attach a doctor certificate for seniors.
+                      Print your Will on plain A4 sheets. Sign each page in front of two adult witnesses. Witnesses sign right after you. Attach a doctor paper for seniors.
                     </p>
                   </div>
                 </div>
@@ -1315,7 +1315,7 @@ export default function BiharLocationClient({ faqs }: Props) {
                       SRO Attendance &amp; Book III Permanent Registration
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Visit the Sub-Registrar Office with your two witnesses. Our advocate helps you finish ID checks, photo capture, and thumbprints for Book III custody.
+                      Visit the SRO office with your two witnesses. Our lawyer helps you finish ID checks, photo capture, and thumbprints for Book III custody.
                     </p>
                   </div>
                 </div>
@@ -1347,13 +1347,13 @@ export default function BiharLocationClient({ faqs }: Props) {
                       Doctor&apos;s Fitness &amp; Inability Certificate
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      An MBBS doctor issues a certificate stating the person cannot travel but has a sound mind. This protects the Will against false claims.
+                      An MBBS doctor issues a paper stating the person cannot travel but has a sound mind. This protects the Will against false claims.
                     </p>
                   </div>
 
                   <div className="space-y-3">
                     <span className="text-xs font-bold uppercase tracking-wider text-[#C65378]">
-                      Official Commission Procedure
+                      Official Commission Step
                     </span>
                     <h3 className="font-extrabold text-base text-slate-900">
                       Sub-Registrar Residence Visit
@@ -1370,7 +1370,7 @@ export default function BiharLocationClient({ faqs }: Props) {
                     <span className="font-bold text-slate-900 block mb-0.5">
                       AMA Legal Solutions Doorstep Coordination
                     </span>
-                    Our legal team drafts the commission petition, liaises with the District Registrar, files the medical dossier, and coordinates the official Sub-Registrar visit to ensure complete comfort for your elderly family members.
+                    Our legal team drafts the commission petition, liaises with the District Registrar, files the medical dossier, and coordinates the official Sub-Registrar visit to make sure complete comfort for your elderly family members.
                   </div>
                 </div>
               </div>
@@ -1387,7 +1387,7 @@ export default function BiharLocationClient({ faqs }: Props) {
                   8. Document Checklist for Bihar Sub-Registrar Offices
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Before going to the Sub-Registrar Office, make sure you have all required papers. Use this simple checklist to get ready:
+                  Before going to the SRO office, make sure you have all required papers. Use this simple checklist to get ready:
                 </p>
               </div>
 
@@ -1463,24 +1463,24 @@ export default function BiharLocationClient({ faqs }: Props) {
                     <span>Urban Apartments &amp; Municipal Houses</span>
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Flats and houses in Patna, Gaya, Muzaffarpur, and Bhagalpur. We list sale deeds, tax numbers, and parking slots so your heirs get easy mutation.
+                    Flats and houses in Patna, Gaya, Muzaffarpur, and Bhagalpur. We list sale deeds, tax numbers, and parking slots so your heirs get easy name change.
                   </p>
                 </div>
 
                 <div className="p-5 rounded-3xl bg-white border border-slate-200/90 shadow-xs space-y-2.5">
                   <div className="flex items-center gap-2 font-extrabold text-sm text-slate-900">
                     <Wheat className="w-4 h-4 text-[#C65378]" />
-                    <span>Ancestral Khatiyani &amp; Raiyati Farmland</span>
+                    <span>Family Khatiyani &amp; Raiyati Farmland</span>
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Agricultural land recorded under Khatiyan surveys. A Will transfers your partitioned share with Khata, Khesra, and Jamabandi details for quick Dakhil Kharij.
+                    Farm land recorded under Khatiyan surveys. A Will transfers your partitioned share with Khata, Khesra, and Jamabandi details for quick Dakhil Kharij.
                   </p>
                 </div>
 
                 <div className="p-5 rounded-3xl bg-white border border-slate-200/90 shadow-xs space-y-2.5">
                   <div className="flex items-center gap-2 font-extrabold text-sm text-slate-900">
                     <Factory className="w-4 h-4 text-[#C65378]" />
-                    <span>BIADA Industrial Plots &amp; Commercial Shops</span>
+                    <span>BIADA Industrial Plots &amp; Shop Shops</span>
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
                     Retail shops in wholesale markets and factory lease land from BIADA. We add clauses that follow lease terms and company rules.
@@ -1519,15 +1519,15 @@ export default function BiharLocationClient({ faqs }: Props) {
                   <thead className="bg-slate-50 border-b border-slate-200 text-slate-700">
                     <tr>
                       <th className="p-4 font-extrabold">Fee Component</th>
-                      <th className="p-4 font-extrabold">Applicable Statutory Rate</th>
-                      <th className="p-4 font-extrabold text-[#C65378]">Bihar Practical Application</th>
+                      <th className="p-4 font-extrabold">Applicable Legal Rate</th>
+                      <th className="p-4 font-extrabold text-[#C65378]">Bihar Practical Form</th>
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-slate-100 text-slate-600">
                     <tr>
                       <td className="p-4 font-bold text-slate-900">Stamp Duty</td>
                       <td className="p-4">100% Exempt (₹0)</td>
-                      <td className="p-4">Wills can be executed on plain white A4 paper</td>
+                      <td className="p-4">Wills can be signed on plain white A4 paper</td>
                     </tr>
                     <tr>
                       <td className="p-4 font-bold text-slate-900">SRO Registration Fee</td>
@@ -1540,7 +1540,7 @@ export default function BiharLocationClient({ faqs }: Props) {
                       <td className="p-4">Digital scanning and permanent Book III electronic custody</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-bold text-slate-900">Property Valuation Charges</td>
+                      <td className="p-4 font-bold text-slate-900">Property Price Check Charges</td>
                       <td className="p-4">Nil (0%)</td>
                       <td className="p-4">No percentage fee based on circle rates or market value</td>
                     </tr>
@@ -1560,7 +1560,7 @@ export default function BiharLocationClient({ faqs }: Props) {
                   11. Transparent Will Packages &amp; Fees in Bihar
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Choose the legal assistance package tailored to your family&apos;s estate planning and property portfolio in Bihar:
+                  Choose the legal help package tailored to your family&apos;s estate planning and property portfolio in Bihar:
                 </p>
               </div>
 
@@ -1587,11 +1587,11 @@ export default function BiharLocationClient({ faqs }: Props) {
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>Legally vetted statutory clauses</span>
+                        <span>Legally vetted legal clauses</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>Instant PDF download &amp; execution guide</span>
+                        <span>Instant PDF download &amp; signing guide</span>
                       </li>
                     </ul>
                   </div>
@@ -1611,16 +1611,16 @@ export default function BiharLocationClient({ faqs }: Props) {
                   </div>
                   <div className="space-y-4">
                     <span className="text-xs font-bold uppercase tracking-wider text-[#C65378]">
-                      Comprehensive
+                      Full
                     </span>
                     <h3 className="font-extrabold text-xl text-slate-900">
-                      Advocate Consultation
+                      Lawyer Talk
                     </h3>
                     <div className="text-3xl font-black text-slate-900">
                       ₹4,990
                     </div>
                     <p className="text-xs text-slate-600">
-                      Senior estate advocate review for ancestral Khatiyani land, multiple heirs, and urban apartments.
+                      Senior estate lawyer review for family Khatiyani land, multiple heirs, and urban apartments.
                     </p>
                     <ul className="space-y-2.5 text-xs text-slate-700 pt-3 border-t border-slate-100">
                       <li className="flex items-center gap-2">
@@ -1629,7 +1629,7 @@ export default function BiharLocationClient({ faqs }: Props) {
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>1-on-1 video call with senior advocate</span>
+                        <span>1-on-1 video call with senior lawyer</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
@@ -1645,7 +1645,7 @@ export default function BiharLocationClient({ faqs }: Props) {
                     href="/contact"
                     className="mt-6 w-full py-3 rounded-xl bg-[#C65378] text-white text-xs font-bold text-center hover:bg-[#a13c5d] transition-colors cursor-pointer"
                   >
-                    Book Advocate Call
+                    Book Lawyer Call
                   </a>
                 </div>
 
@@ -1662,7 +1662,7 @@ export default function BiharLocationClient({ faqs }: Props) {
                       ₹9,990
                     </div>
                     <p className="text-xs text-slate-600">
-                      End-to-end registration coordination across any Bihar Sub-Registrar Office or home visit.
+                      End-to-end registration coordination across any Bihar SRO office or home visit.
                     </p>
                     <ul className="space-y-2.5 text-xs text-slate-700 pt-3 border-t border-slate-100">
                       <li className="flex items-center gap-2">
@@ -1671,7 +1671,7 @@ export default function BiharLocationClient({ faqs }: Props) {
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>Advocate physically attends Bihar SRO</span>
+                        <span>Lawyer physically attends Bihar SRO</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
@@ -1743,7 +1743,7 @@ export default function BiharLocationClient({ faqs }: Props) {
                   <span>STATUTORY CITATIONS</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  13. Statutory Citations &amp; Bihar Legal Portals
+                  13. Legal Citations &amp; Bihar Legal Portals
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Our drafting protocols comply strictly with codified Indian statutes and Bihar state registration systems:
@@ -1771,10 +1771,10 @@ export default function BiharLocationClient({ faqs }: Props) {
 
                 <div className="bg-white rounded-2xl border border-slate-200/80 p-5 space-y-1.5 shadow-xs">
                   <span className="font-bold text-xs text-slate-900 block">
-                    Bihar Land Mutation Act 2011
+                    Bihar Land Name Change Act 2011
                   </span>
                   <p className="text-xs text-slate-600">
-                    Sections 3, 5, and 6 (Online Dakhil Kharij mutation procedure via Bihar Bhumi).
+                    Sections 3, 5, and 6 (Online Dakhil Kharij name change step via Bihar Bhumi).
                   </p>
                 </div>
 
@@ -1792,10 +1792,10 @@ export default function BiharLocationClient({ faqs }: Props) {
             {/* BOTTOM CONVERSION CTA BANNER */}
             <section className="rounded-3xl bg-gradient-to-br from-[#172228] to-[#212F35] text-white p-8 sm:p-12 text-center space-y-5 shadow-xl">
               <h3 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-white">
-                Protect Your Bihar Properties &amp; Family Legacy
+                Protect Your Bihar Assets &amp; Family Legacy
               </h3>
               <p className="text-sm sm:text-base text-slate-200 max-w-2xl mx-auto leading-relaxed">
-                Do not leave your hard-earned Bihar flats, ancestral farmlands, or family businesses to lengthy partition suits and mutation gridlock. Draft a legally binding Will online today or consult our senior Patna High Court advocates.
+                Do not leave your hard-earned Bihar flats, family farmlands, or family businesses to lengthy split suits and name change gridlock. Draft a legally binding Will online today or consult our senior Patna High Court lawyers.
               </p>
               <div className="pt-3 flex flex-col sm:flex-row items-center justify-center gap-4">
                 <a
@@ -1809,7 +1809,7 @@ export default function BiharLocationClient({ faqs }: Props) {
                   href="/contact"
                   className="w-full sm:w-auto px-6 py-3.5 rounded-full bg-white/10 text-white font-bold text-sm sm:text-base hover:bg-white/20 transition-all border border-white/20"
                 >
-                  Book Advocate Consultation
+                  Book Lawyer Talk
                 </a>
               </div>
             </section>
@@ -1852,7 +1852,7 @@ export default function BiharLocationClient({ faqs }: Props) {
               />
             </div>
             <div className="pt-3 flex items-center justify-between text-xs text-slate-500">
-              <span>Bihar e-Nibandhan Registered &amp; Bihar Bhumi Mutation Compliant</span>
+              <span>Bihar e-Nibandhan Registered &amp; Bihar Bhumi Name Change Compliant</span>
               <a
                 href="/start"
                 onClick={handleStartDraft}

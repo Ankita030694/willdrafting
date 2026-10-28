@@ -116,19 +116,19 @@ const INITIAL_CHECKLIST = [
   },
   {
     id: "item-2",
-    label: "Original Aadhaar Card & PAN of Testator",
+    label: "Original Aadhaar Card & PAN of Will maker",
     detail: "Essential for biometric identity validation, electronic thumbprint, and digital photo on the NGDRS portal.",
     checked: true,
   },
   {
     id: "item-3",
     label: "Two Independent Adult Witnesses with Aadhaar",
-    detail: "Must carry original photo IDs and must not be beneficiaries receiving any asset under the Will.",
+    detail: "Must carry original photo IDs and must not be heirs receiving any asset under the Will.",
     checked: true,
   },
   {
     id: "item-4",
-    label: "Doctor Mental Fitness Certificate (MBBS / MD)",
+    label: "Doctor Sound Mind Note (MBBS / MD)",
     detail: "Strongly advised for senior citizens aged 60+. Certifies testamentary mental capacity and lucidity.",
     checked: false,
   },
@@ -141,7 +141,7 @@ const INITIAL_CHECKLIST = [
   {
     id: "item-6",
     label: "SMC Property Tax Receipts & Title Deeds",
-    detail: "Copy of Srinagar Municipal Corporation property tax records and registered purchase deeds.",
+    detail: "Copy of Srinagar Municipal Corporation property tax records and registered buy deeds.",
     checked: false,
   },
   {
@@ -244,7 +244,7 @@ export default function SrinagarLocationClient({ faqs }: Props) {
               </h1>
 
               <p className="text-base sm:text-lg text-slate-200 leading-relaxed font-normal max-w-2xl">
-                Draft a legally watertight Will for your SMC residential houses, Dal Lake houseboats, commercial hotels, apple orchards, and financial portfolios. Get senior advocate drafting, NGDRS J&amp;K slot booking, and Section 31 doorstep execution.
+                Draft a legally watertight Will for your SMC home houses, Dal Lake houseboats, shop hotels, apple orchards, and financial portfolios. Get senior lawyer drafting, NGDRS J&amp;K slot booking, and Section 31 doorstep signing.
               </p>
 
               <div className="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
@@ -269,7 +269,7 @@ export default function SrinagarLocationClient({ faqs }: Props) {
               <div className="pt-4 grid grid-cols-3 gap-3 border-t border-white/10 text-xs text-slate-300">
                 <div className="flex items-center gap-2">
                   <Check className="w-4 h-4 text-emerald-400 shrink-0" />
-                  <span>J&amp;K High Court Advocate Vetted</span>
+                  <span>J&amp;K High Court Lawyer Vetted</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <Check className="w-4 h-4 text-emerald-400 shrink-0" />
@@ -496,17 +496,17 @@ export default function SrinagarLocationClient({ faqs }: Props) {
                       <span>Optional Registration</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Will registration is optional under Section 18(e) of the Registration Act, 1908. An unregistered Will signed before two witnesses is valid, but official Book III registration through the NGDRS J&amp;K portal provides decisive evidentiary protection.
+                      Will registration is optional under Section 18(e) of the Registration Act, 1908. An unregistered Will signed before two witnesses is valid, but official Book III registration through the NGDRS J&amp;K portal provides decisive proof protection.
                     </p>
                   </div>
 
                   <div className="p-4 rounded-2xl bg-slate-50/70 border border-slate-100 space-y-1.5">
                     <div className="flex items-center gap-2 font-bold text-sm text-slate-900">
                       <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
-                      <span>Probate Non-Compulsory</span>
+                      <span>Probate Non-Needed</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Srinagar lies outside the historical presidency towns of Mumbai, Kolkata, and Chennai. Under Section 213 of the Indian Succession Act, court probate is strictly non-compulsory in Srinagar, allowing direct asset mutation with a registered Will.
+                      Srinagar lies outside the historical presidency towns of Mumbai, Kolkata, and Chennai. Under Section 213 of the Indian Succession Act, court probate is strictly non-needed in Srinagar, allowing direct asset name change with a registered Will.
                     </p>
                   </div>
 
@@ -516,7 +516,7 @@ export default function SrinagarLocationClient({ faqs }: Props) {
                       <span>NGDRS Online Booking</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Appointments and document uploads are handled digitally via the National Generic Document Registration System (ngdrs.jk.gov.in). Testamentary Wills incur zero ad-valorem stamp duty and only nominal statutory registration fees.
+                      Appointments and document uploads are handled digitally via the National Generic Document Registration System (ngdrs.jk.gov.in). Testamentary Wills incur zero ad-valorem stamp duty and only nominal legal registration fees.
                     </p>
                   </div>
 
@@ -526,7 +526,7 @@ export default function SrinagarLocationClient({ faqs }: Props) {
                       <span>SMC &amp; Revenue Land Intiqal</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      A registered Will expedites ownership mutation with the Srinagar Municipal Corporation (SMC) and enables seamless Intiqal entry for apple orchards, walnut groves, and heritage estates under the J&amp;K Land Revenue Act.
+                      A registered Will expedites ownership name change with the Srinagar Municipal Corporation (SMC) and enables seamless Intiqal entry for apple orchards, walnut groves, and heritage estates under the J&amp;K Land Revenue Act.
                     </p>
                   </div>
                 </div>
@@ -545,10 +545,10 @@ export default function SrinagarLocationClient({ faqs }: Props) {
                   1. Will Drafting &amp; Legal Framework in Srinagar, J&amp;K
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Succession planning and testamentary dispositions in Srinagar are governed by the <strong>Indian Succession Act, 1925</strong>, the <strong>Registration Act, 1908</strong>, and the <strong>Jammu and Kashmir Land Revenue Act, 1996 Bk</strong>. Any adult of sound mind can legally bequeath self-acquired residential property, commercial establishments, agricultural orchards, and financial investments.
+                  Succession planning and testamentary dispositions in Srinagar are governed by the <strong>Indian Succession Act, 1925</strong>, the <strong>Registration Act, 1908</strong>, and the <strong>Jammu and Kashmir Land Revenue Act, 1996 Bk</strong>. Any adult of sound mind can legally bequeath self-acquired home property, shop establishments, farm orchards, and financial investments.
                 </p>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Srinagar features a unique blend of heritage and modern asset classes. A Kashmiri family may own a modern residence in Hyderpora or Sanat Nagar, commercial establishments in Lal Chowk or Karan Nagar, traditional houseboats on Dal Lake, and ancestral apple orchards in Harwan or Nishat. Without a meticulously drafted Will, heirs face prolonged administrative delays across municipal wards, tourism desks, and rural revenue circles.
+                  Srinagar features a unique blend of heritage and modern asset classes. A Kashmiri family may own a modern residence in Hyderpora or Sanat Nagar, shop establishments in Lal Chowk or Karan Nagar, traditional houseboats on Dal Lake, and family apple orchards in Harwan or Nishat. Without a meticulously drafted Will, heirs face prolonged office delays across municipal wards, tourism desks, and rural revenue circles.
                 </p>
               </div>
 
@@ -559,7 +559,7 @@ export default function SrinagarLocationClient({ faqs }: Props) {
                   </span>
                   <h3 className="font-bold text-sm text-slate-900">Legal Capacity</h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    The testator must be a major aged 18 years or older with sound testamentary mental capacity (Section 59).
+                    The Will maker must be a major aged 18 years or older with sound testamentary mental capacity (Section 59).
                   </p>
                 </div>
 
@@ -569,7 +569,7 @@ export default function SrinagarLocationClient({ faqs }: Props) {
                   </span>
                   <h3 className="font-bold text-sm text-slate-900">Free Consent</h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Executed voluntarily without undue influence, coercion, or misrepresentation (Section 61).
+                    Signed voluntarily without undue influence, coercion, or misrepresentation (Section 61).
                   </p>
                 </div>
 
@@ -579,7 +579,7 @@ export default function SrinagarLocationClient({ faqs }: Props) {
                   </span>
                   <h3 className="font-bold text-sm text-slate-900">Two Witnesses</h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Must be signed in the physical presence of at least two independent adult attesting witnesses (Section 63).
+                    Must be signed in the physical presence of at least two independent adult witnesses (Section 63).
                   </p>
                 </div>
 
@@ -587,9 +587,9 @@ export default function SrinagarLocationClient({ faqs }: Props) {
                   <span className="w-8 h-8 rounded-xl bg-rose-50 text-[#C65378] flex items-center justify-center font-bold text-sm">
                     <ShieldCheck className="w-4 h-4" />
                   </span>
-                  <h3 className="font-bold text-sm text-slate-900">Non-Beneficiary</h3>
+                  <h3 className="font-bold text-sm text-slate-900">Non-Heir</h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Attesting witnesses and their spouses must not receive any legacy or property under the Will (Section 67).
+                    Witnesses and their spouses must not receive any legacy or property under the Will (Section 67).
                   </p>
                 </div>
               </div>
@@ -604,13 +604,13 @@ export default function SrinagarLocationClient({ faqs }: Props) {
                 </div>
                 {/* H2: Exactly 51 chars (≤ 70 chars) */}
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  2. Is Will Registration Mandatory in Srinagar, J&amp;K?
+                  2. Is Will Registration Needed in Srinagar, J&amp;K?
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Under Section 18(e) of the Registration Act, 1908, registering a Will is strictly <strong>optional</strong>. An unregistered Will signed on plain white paper before two independent witnesses is valid and recognized in law.
                 </p>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  However, with rising property valuations across Rajbagh, Lal Chowk, and the Boulevard corridor, estate advocates strongly advise registration via the NGDRS portal. Book III registration records the document in official government archives, eliminating allegations of forged signatures and facilitating seamless title updates.
+                  However, with rising property valuations across Rajbagh, Lal Chowk, and the Boulevard corridor, estate lawyers strongly advise registration via the NGDRS portal. Book III registration records the document in official government archives, eliminating allegations of forged signatures and facilitating seamless title updates.
                 </p>
               </div>
 
@@ -632,12 +632,12 @@ export default function SrinagarLocationClient({ faqs }: Props) {
                     </tr>
                     <tr>
                       <td className="p-4 font-semibold">Protection from Challenge</td>
-                      <td className="p-4 bg-rose-50/20">High legal presumption of genuine execution and mental capacity</td>
+                      <td className="p-4 bg-rose-50/20">High legal presumption of genuine signing and mental capacity</td>
                       <td className="p-4 bg-slate-50/20">Vulnerable to allegations of coercion or mental incapacity</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-semibold">SMC Municipal Mutation</td>
-                      <td className="p-4 bg-rose-50/20">Swift mutation on presenting certified registered copy</td>
+                      <td className="p-4 font-semibold">SMC Municipal Name Change</td>
+                      <td className="p-4 bg-rose-50/20">Swift name change on presenting certified registered copy</td>
                       <td className="p-4 bg-slate-50/20">SMC officials often require multiple heir affidavits or court orders</td>
                     </tr>
                     <tr>
@@ -648,11 +648,11 @@ export default function SrinagarLocationClient({ faqs }: Props) {
                     <tr>
                       <td className="p-4 font-semibold">Houseboat &amp; Hotel Licenses</td>
                       <td className="p-4 bg-rose-50/20">Direct transfer with Kashmir Tourism Department</td>
-                      <td className="p-4 bg-slate-50/20">Demands legal heir certificates or civil court decrees</td>
+                      <td className="p-4 bg-slate-50/20">Demands legal heir papers or civil court decrees</td>
                     </tr>
                     <tr>
                       <td className="p-4 font-semibold">Government Registration Cost</td>
-                      <td className="p-4 bg-rose-50/20 font-bold text-[#C65378]">Nominal statutory fee + scanning charges</td>
+                      <td className="p-4 bg-rose-50/20 font-bold text-[#C65378]">Nominal legal fee + scanning charges</td>
                       <td className="p-4 bg-slate-50/20 font-bold text-slate-700">₹0 cost</td>
                     </tr>
                   </tbody>
@@ -675,40 +675,40 @@ export default function SrinagarLocationClient({ faqs }: Props) {
                   A common question among property owners in Srinagar is whether probate from the High Court of Jammu &amp; Kashmir and Ladakh is required before bequeathing or transferring real estate. The settled legal answer is <strong>no</strong>.
                 </p>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Under Section 213 read with Section 57(a) and 57(b) of the Indian Succession Act, 1925, probate is mandatory only for Wills executed within or properties situated inside the historical presidency towns of Mumbai, Kolkata, and Chennai. Since Srinagar is located outside presidency limits, probate is strictly non-compulsory.
+                  Under Section 213 read with Section 57(a) and 57(b) of the Indian Succession Act, 1925, probate is needed only for Wills signed within or assets situated inside the historical presidency towns of Mumbai, Kolkata, and Chennai. Since Srinagar is located outside presidency limits, probate is strictly non-needed.
                 </p>
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="bg-white rounded-3xl border border-slate-200/90 p-6 shadow-xs space-y-3">
                   <span className="px-3 py-1 rounded-full bg-emerald-100 text-emerald-800 text-xs font-extrabold uppercase">
-                    Settled Law: Non-Compulsory
+                    Settled Law: Non-Needed
                   </span>
                   <h3 className="font-bold text-base text-slate-900">
                     High Court of J&amp;K and Ladakh Precedents
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    The High Court has repeatedly clarified that obtaining court probate is not mandatory for Indian citizens executing Wills in Jammu and Kashmir. Beneficiaries can directly execute property transmission, update SMC tax registers, and transfer bank deposits using an authentic registered Will.
+                    The High Court has repeatedly clarified that getting court probate is not needed for Indian citizens signing Wills in Jammu and Kashmir. Heirs can directly execute property transfer, update SMC tax registers, and transfer bank deposits using an authentic registered Will.
                   </p>
                   <div className="pt-2 text-xs text-slate-500 flex items-center gap-1.5">
                     <Check className="w-3.5 h-3.5 text-emerald-600" />
-                    <span>Enables immediate asset transmission without court delays</span>
+                    <span>Enables immediate asset transfer without court delays</span>
                   </div>
                 </div>
 
                 <div className="bg-white rounded-3xl border border-rose-200 p-6 shadow-xs space-y-3 bg-rose-50/30">
                   <span className="px-3 py-1 rounded-full bg-rose-100 text-[#C65378] text-xs font-extrabold uppercase">
-                    Voluntary Filings: High-Value Disputes
+                    Voluntary Filings: High-Value Fights
                   </span>
                   <h3 className="font-bold text-base text-slate-900">
                     When is Probate Filed in Srinagar District Court?
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    An executor may voluntarily file for probate or letters of administration before the Principal District Judge in Srinagar only if distant co-heirs file partition suits or contest testamentary soundness. A judicial grant of probate operates as a judgment <em>in rem</em> that conclusively settles ownership.
+                    An executor may voluntarily file for probate or letters of management before the Principal District Judge in Srinagar only if distant co-heirs file split suits or contest testamentary soundness. A judicial grant of probate operates as a judgment <em>in rem</em> that conclusively settles ownership.
                   </p>
                   <div className="pt-2 text-xs text-slate-500 flex items-center gap-1.5">
                     <AlertTriangle className="w-3.5 h-3.5 text-[#C65378]" />
-                    <span>Conclusive judicial decree against any collateral claims</span>
+                    <span>Strong judicial decree against any collateral claims</span>
                   </div>
                 </div>
               </div>
@@ -726,7 +726,7 @@ export default function SrinagarLocationClient({ faqs }: Props) {
                   4. Srinagar Sub-Registrar Offices: NGDRS SRO Directory
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Srinagar district operates specialized Sub-Registrar Offices under the Department of Registration, J&amp;K, using the National Generic Document Registration System (NGDRS). Under Section 32 of the Registration Act, your Will can be registered at the Sub-Registrar Office having jurisdiction over your permanent residence or property location.
+                  Srinagar district operates specialized Sub-Registrar Offices under the Department of Registration, J&amp;K, using the National Generic Document Registration System (NGDRS). Under Section 32 of the Registration Act, your Will can be registered at the SRO office having area over your permanent residence or property location.
                 </p>
               </div>
 
@@ -798,7 +798,7 @@ export default function SrinagarLocationClient({ faqs }: Props) {
                       <p className="text-slate-600">{activeHubData.timings}</p>
                     </div>
                     <div className="md:col-span-2 space-y-1">
-                      <span className="font-bold text-slate-900 block">Key Localities in Jurisdiction:</span>
+                      <span className="font-bold text-slate-900 block">Key Localities in Area:</span>
                       <p className="text-slate-600 leading-relaxed">{activeHubData.areas}</p>
                     </div>
                   </div>
@@ -811,7 +811,7 @@ export default function SrinagarLocationClient({ faqs }: Props) {
                       href="/contact"
                       className="inline-flex items-center gap-1.5 font-bold text-[#C65378] hover:underline"
                     >
-                      <span>Request Advocate Assistance for {activeHubData.name}</span>
+                      <span>Request Lawyer Help for {activeHubData.name}</span>
                       <ArrowRight className="w-3.5 h-3.5" />
                     </a>
                   </div>
@@ -831,7 +831,7 @@ export default function SrinagarLocationClient({ faqs }: Props) {
                   5. Localities Covered: Area-Wise Will Drafting Srinagar
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Estate holdings in Srinagar encompass upscale residential colonies in Rajbagh and Jawahar Nagar, prime commercial centers in Lal Chowk and Karan Nagar, lakeside hotels and houseboats along Boulevard Road, modern developments in Hyderpora, and historic orchards in Harwan and Nishat. Our legal advocates deliver bespoke drafting, NGDRS slot scheduling, and Sub-Registrar accompaniment across all key zones:
+                  Estate holdings in Srinagar encompass upscale home colonies in Rajbagh and Jawahar Nagar, prime shop centers in Lal Chowk and Karan Nagar, lakeside hotels and houseboats along Boulevard Road, modern developments in Hyderpora, and historic orchards in Harwan and Nishat. Our legal lawyers deliver bespoke drafting, NGDRS slot scheduling, and Sub-Registrar accompaniment across all key zones:
                 </p>
               </div>
 
@@ -861,7 +861,7 @@ export default function SrinagarLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Specialized <strong>Will drafting services in Rajbagh</strong> and Jawahar Nagar for premium independent villas, guest houses, and riverfront properties along the Jhelum. Formulates clear clauses for multi-storey residential bequests, commercial lease rights, and bank portfolios to prevent inheritance conflicts.
+                      Specialized <strong>Will drafting services in Rajbagh</strong> and Jawahar Nagar for premium independent villas, guest houses, and riverfront assets along the Jhelum. Formulates clear clauses for multi-storey home bequests, shop lease rights, and bank portfolios to prevent inheritance conflicts.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -870,7 +870,7 @@ export default function SrinagarLocationClient({ faqs }: Props) {
                         <span>SRO Hub: DC Office Complex, Tankipora</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        NGDRS appointment booking, advocate accompaniment, and Section 31 doorstep execution for senior citizens.
+                        NGDRS appointment booking, lawyer accompaniment, and Section 31 doorstep signing for senior citizens.
                       </p>
                     </div>
                   </div>
@@ -895,7 +895,7 @@ export default function SrinagarLocationClient({ faqs }: Props) {
                     <div className="flex items-center justify-between gap-2">
                       <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-rose-50 text-[#C65378] border border-rose-100">
                         <MapPin className="w-3.5 h-3.5" />
-                        Commercial Core
+                        Shop Core
                       </span>
                       <span className="text-[11px] font-semibold text-slate-500 bg-slate-100 px-2.5 py-1 rounded-lg">
                         SRO Srinagar Khas-I / Kothibagh
@@ -914,7 +914,7 @@ export default function SrinagarLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Customized <strong>Will drafting services in Lal Chowk</strong> and Karan Nagar for business families, commercial showrooms, retail shops, and medical clinics. Codifies multi-generational family enterprise succession, partner profit sharing, and commercial SMC property tax mutation.
+                      Customized <strong>Will drafting services in Lal Chowk</strong> and Karan Nagar for business families, shop showrooms, retail shops, and medical clinics. Codifies multi-generational family enterprise succession, partner profit sharing, and shop SMC property tax name change.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -923,13 +923,13 @@ export default function SrinagarLocationClient({ faqs }: Props) {
                         <span>SRO Hub: DC Office Complex &amp; Kothibagh</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        High-value commercial estate structuring, family asset mapping, and expedited Book III registration.
+                        High-value shop estate structuring, family asset mapping, and expedited Book III registration.
                       </p>
                     </div>
                   </div>
 
                   <div className="pt-4 mt-4 border-t border-slate-100 flex items-center justify-between">
-                    <span className="text-xs font-bold text-slate-500">Commercial &amp; Business Assets</span>
+                    <span className="text-xs font-bold text-slate-500">Shop &amp; Business Assets</span>
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
@@ -1020,7 +1020,7 @@ export default function SrinagarLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Comprehensive <strong>Will drafting services in Hyderpora</strong> and Sanat Nagar for modern residential bungalows, civil service residences, and plotted developments. Establishes clear shares for sons and daughters, bank locker transmissions, and smooth SMC property tax register updates.
+                      Full <strong>Will drafting services in Hyderpora</strong> and Sanat Nagar for modern home bungalows, civil service residences, and plotted developments. Establishes clear shares for sons and daughters, bank locker transmissions, and smooth SMC property tax register updates.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1029,7 +1029,7 @@ export default function SrinagarLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Chanapora Registry, DC Complex</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Seamless NGDRS slot scheduling, independent witness attestation, and doorstep verification for retired officers.
+                        Seamless NGDRS slot scheduling, independent witness attestation, and doorstep check for retired officers.
                       </p>
                     </div>
                   </div>
@@ -1082,7 +1082,7 @@ export default function SrinagarLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Harwan Sub-Division / Srinagar East</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Computerized Jamabandi verification, orchard partition protocols, and NGDRS registration support.
+                        Computerized Jamabandi check, orchard split protocols, and NGDRS registration support.
                       </p>
                     </div>
                   </div>
@@ -1126,7 +1126,7 @@ export default function SrinagarLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Specialized <strong>Will drafting services in Downtown Srinagar</strong> for historic ancestral family homes with Khatamband ceilings, artisan pashmina workshops, and market retail outlets. Resolves complex multi-branch co-parcenary shares, protecting self-acquired bequests from family challenges.
+                      Specialized <strong>Will drafting services in Downtown Srinagar</strong> for historic family family homes with Khatamband ceilings, artisan pashmina workshops, and market retail outlets. Resolves complex multi-branch co-parcenary shares, protecting self-acquired bequests from family fights.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1135,13 +1135,13 @@ export default function SrinagarLocationClient({ faqs }: Props) {
                         <span>SRO Hub: SDM Office, Bemina / Eidgah Complex</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Ancestral home partition advice, artisan inventory bequests, and NGDRS Book III registration.
+                        Family home split advice, artisan inventory bequests, and NGDRS Book III registration.
                       </p>
                     </div>
                   </div>
 
                   <div className="pt-4 mt-4 border-t border-slate-100 flex items-center justify-between">
-                    <span className="text-xs font-bold text-slate-500">Ancestral Homes &amp; Artisan Units</span>
+                    <span className="text-xs font-bold text-slate-500">Family Homes &amp; Artisan Units</span>
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
@@ -1160,7 +1160,7 @@ export default function SrinagarLocationClient({ faqs }: Props) {
                     <div className="flex items-center justify-between gap-2">
                       <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-rose-50 text-[#C65378] border border-rose-100">
                         <Scale className="w-3.5 h-3.5" />
-                        West Commercial &amp; Courts
+                        West Shop &amp; Courts
                       </span>
                       <span className="text-[11px] font-semibold text-slate-500 bg-slate-100 px-2.5 py-1 rounded-lg">
                         SRO Srinagar West (Shalteng)
@@ -1179,7 +1179,7 @@ export default function SrinagarLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Expert <strong>Will drafting services in Batamaloo and Bemina</strong> for wholesale traders, transport logistics operators, and residential homeowners near the High Court complex at Mominabad. Protects fruit mandi trade assets, godowns, and SDA allotted leasehold plots.
+                      Expert <strong>Will drafting services in Batamaloo and Bemina</strong> for wholesale traders, transport logistics operators, and home homeowners near the High Court complex at Mominabad. Protects fruit mandi trade assets, godowns, and SDA allotted leasehold plots.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1188,13 +1188,13 @@ export default function SrinagarLocationClient({ faqs }: Props) {
                         <span>SRO Hub: SDM Office Shalteng / Tengpora</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Wholesale mandi license transfers, SDA leasehold documentation, and swift registration.
+                        Wholesale mandi license transfers, SDA leasehold papers, and swift registration.
                       </p>
                     </div>
                   </div>
 
                   <div className="pt-4 mt-4 border-t border-slate-100 flex items-center justify-between">
-                    <span className="text-xs font-bold text-slate-500">Commercial &amp; SDA Plots</span>
+                    <span className="text-xs font-bold text-slate-500">Shop &amp; SDA Plots</span>
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
@@ -1232,7 +1232,7 @@ export default function SrinagarLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Reliable <strong>Will drafting services in Pantha Chowk</strong> and Lasjan for highway logistics hubs, industrial warehouses, and expanding suburban plotted developments. Formulates unambiguous asset distribution for non-resident heirs, business partners, and surviving spouses.
+                      Reliable <strong>Will drafting services in Pantha Chowk</strong> and Lasjan for highway logistics hubs, industrial warehouses, and expanding suburban plotted developments. Formulates clear asset split for non-resident heirs, business partners, and surviving spouses.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1241,7 +1241,7 @@ export default function SrinagarLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Pantha Chowk Sub-Registry, Tankipora</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Highway commercial title review, revenue Intiqal guidance, and biometric scheduling.
+                        Highway shop title review, revenue Intiqal guidance, and biometric scheduling.
                       </p>
                     </div>
                   </div>
@@ -1274,7 +1274,7 @@ export default function SrinagarLocationClient({ faqs }: Props) {
                   6. Step-by-Step SOP: Drafting to NGDRS Registration
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Follow this verified 5-stage legal operating procedure to create, execute, and register your Will before the Sub-Registrar in Srinagar:
+                  Follow this verified 5-stage legal operating step to create, execute, and register your Will before the Sub-Registrar in Srinagar:
                 </p>
               </div>
 
@@ -1299,7 +1299,7 @@ export default function SrinagarLocationClient({ faqs }: Props) {
                       2
                     </span>
                     <h3 className="font-bold text-sm text-slate-900">
-                      Advocate Drafting
+                      Lawyer Drafting
                     </h3>
                     <p className="text-xs text-slate-600 leading-relaxed">
                       Draft customized legal clauses covering revocation of past wills, survivorship, executor powers, and minor guardianships.
@@ -1313,10 +1313,10 @@ export default function SrinagarLocationClient({ faqs }: Props) {
                       3
                     </span>
                     <h3 className="font-bold text-sm text-slate-900">
-                      Valid Execution
+                      Valid Signing
                     </h3>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Print on A4 paper and sign each page in the physical presence of two independent non-beneficiary adult witnesses.
+                      Print on A4 paper and sign each page in the physical presence of two independent non-heir adult witnesses.
                     </p>
                   </div>
                 </div>
@@ -1330,7 +1330,7 @@ export default function SrinagarLocationClient({ faqs }: Props) {
                       NGDRS Booking
                     </h3>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Schedule your slot on the NGDRS portal (ngdrs.jk.gov.in) and remit statutory fees online via J&amp;K GRAS challan.
+                      Schedule your slot on the NGDRS portal (ngdrs.jk.gov.in) and remit legal fees online via J&amp;K GRAS challan.
                     </p>
                   </div>
                 </div>
@@ -1363,7 +1363,7 @@ export default function SrinagarLocationClient({ faqs }: Props) {
                   7. Section 31 Doorstep SRO Registration for Seniors
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  For elderly, unwell, or bedridden citizens residing in Rajbagh, Hyderpora, Sanat Nagar, or lakeside residences, traveling to the Sub-Registrar Office during freezing winter weather can be challenging. Under <strong>Section 31 of the Registration Act, 1908</strong>, the Sub-Registrar possesses legal authority to attend a private residence or hospital to register a Will.
+                  For elderly, unwell, or bedridden citizens residing in Rajbagh, Hyderpora, Sanat Nagar, or lakeside residences, traveling to the SRO office during freezing winter weather can be challenging. Under <strong>Section 31 of the Registration Act, 1908</strong>, the Sub-Registrar possesses legal authority to attend a private residence or hospital to register a Will.
                 </p>
               </div>
 
@@ -1383,7 +1383,7 @@ export default function SrinagarLocationClient({ faqs }: Props) {
                   <div className="flex items-start gap-3 p-4 rounded-2xl bg-slate-50 border border-slate-100">
                     <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
                     <div>
-                      <strong className="text-slate-900 block">Commission Application</strong>
+                      <strong className="text-slate-900 block">Commission Form</strong>
                       <span className="text-slate-600">Our legal team drafts and submits the formal Section 31 special commission petition before the jurisdictional Srinagar Sub-Registrar.</span>
                     </div>
                   </div>
@@ -1419,7 +1419,7 @@ export default function SrinagarLocationClient({ faqs }: Props) {
                   8. Document Checklist for Srinagar Sub-Registrar Offices
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Prepare your documentation before scheduling your Sub-Registrar appointment. You have organized <strong>{checkedCount} of {checklist.length}</strong> required documents:
+                  Prepare your papers before scheduling your Sub-Registrar appointment. You have organized <strong>{checkedCount} of {checklist.length}</strong> required documents:
                 </p>
               </div>
 
@@ -1470,17 +1470,17 @@ export default function SrinagarLocationClient({ faqs }: Props) {
                   9. Srinagar Property Types: SMC Flats, Orchards &amp; Hotels
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Succession procedures in Srinagar differ depending on the nature of the asset and jurisdictional authority:
+                  Succession steps in Srinagar differ depending on the nature of the asset and jurisdictional authority:
                 </p>
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <div className="bg-white rounded-3xl border border-slate-200/90 p-6 shadow-xs space-y-3">
                   <span className="px-3 py-1 rounded-full bg-rose-100 text-[#C65378] text-xs font-bold uppercase">
-                    Municipal Properties
+                    Municipal Assets
                   </span>
                   <h3 className="font-bold text-base text-slate-900">
-                    SMC Residential Houses &amp; Flats
+                    SMC Home Houses &amp; Flats
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                     Srinagar Municipal Corporation (SMC) requires clear proof before substituting names on property tax registers. A registered Will directs the ward revenue officer to update assessment records without court orders.
@@ -1492,10 +1492,10 @@ export default function SrinagarLocationClient({ faqs }: Props) {
                     Apple Orchards &amp; Farmland
                   </span>
                   <h3 className="font-bold text-base text-slate-900">
-                    Revenue Land &amp; Intiqal Mutation
+                    Revenue Land &amp; Intiqal Name Change
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Apple and walnut orchards in Harwan, Nishat, or Shalimar require precise drafting. A certified copy of the registered Will is presented to the Tehsildar for an Intiqal mutation entry under the J&amp;K Land Revenue Act.
+                    Apple and walnut orchards in Harwan, Nishat, or Shalimar require precise drafting. A certified copy of the registered Will is presented to the Tehsildar for an Intiqal name change entry under the J&amp;K Land Revenue Act.
                   </p>
                 </div>
 
@@ -1507,7 +1507,7 @@ export default function SrinagarLocationClient({ faqs }: Props) {
                     Dal Lake Houseboats &amp; Hotels
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    For houseboats on Dal and Nigeen lakes or hotels along Boulevard Road, bequeathing physical equity, tourism licenses, and water surface permits requires tailored clauses to prevent family disputes.
+                    For houseboats on Dal and Nigeen lakes or hotels along Boulevard Road, bequeathing physical equity, tourism licenses, and water surface permits requires tailored clauses to prevent family fights.
                   </p>
                 </div>
               </div>
@@ -1525,7 +1525,7 @@ export default function SrinagarLocationClient({ faqs }: Props) {
                   10. Official NGDRS Registration Fees &amp; Charges in J&amp;K
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Unlike commercial sale deeds or conveyances that incur significant stamp duty, testamentary Wills are completely exempt from ad-valorem stamp duty across Jammu and Kashmir. Government registration charges on the NGDRS portal are nominal:
+                  Unlike shop sale deeds or conveyances that incur significant stamp duty, testamentary Wills are completely exempt from ad-valorem stamp duty across Jammu and Kashmir. Government registration charges on the NGDRS portal are nominal:
                 </p>
               </div>
 
@@ -1534,7 +1534,7 @@ export default function SrinagarLocationClient({ faqs }: Props) {
                   <thead>
                     <tr className="bg-slate-100/80 border-b border-slate-200 text-slate-800">
                       <th className="p-4 font-bold">Fee Component</th>
-                      <th className="p-4 font-bold">Statutory Amount</th>
+                      <th className="p-4 font-bold">Legal Amount</th>
                       <th className="p-4 font-bold">Remittance Authority</th>
                     </tr>
                   </thead>
@@ -1546,7 +1546,7 @@ export default function SrinagarLocationClient({ faqs }: Props) {
                     </tr>
                     <tr>
                       <td className="p-4 font-semibold">NGDRS Book III Registration Fee</td>
-                      <td className="p-4 font-bold text-[#C65378]">Nominal Statutory Fee</td>
+                      <td className="p-4 font-bold text-[#C65378]">Nominal Legal Fee</td>
                       <td className="p-4">Department of Registration J&amp;K via GRAS</td>
                     </tr>
                     <tr>
@@ -1576,7 +1576,7 @@ export default function SrinagarLocationClient({ faqs }: Props) {
                   11. Transparent Will Packages &amp; Legal Fees in Srinagar
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Choose the legal assistance package tailored to your family estate planning and property portfolio in Srinagar:
+                  Choose the legal help package tailored to your family estate planning and property portfolio in Srinagar:
                 </p>
               </div>
 
@@ -1594,7 +1594,7 @@ export default function SrinagarLocationClient({ faqs }: Props) {
                       ₹1,990
                     </div>
                     <p className="text-xs text-slate-600">
-                      Ideal for individual homeowners with SMC residential properties, bank accounts, and demat assets.
+                      Ideal for individual homeowners with SMC home assets, bank accounts, and demat assets.
                     </p>
                     <ul className="space-y-2.5 text-xs text-slate-700 pt-3 border-t border-slate-100">
                       <li className="flex items-center gap-2">
@@ -1603,11 +1603,11 @@ export default function SrinagarLocationClient({ faqs }: Props) {
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>Legally vetted statutory clauses</span>
+                        <span>Legally vetted legal clauses</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>Instant PDF download &amp; execution guide</span>
+                        <span>Instant PDF download &amp; signing guide</span>
                       </li>
                     </ul>
                   </div>
@@ -1627,16 +1627,16 @@ export default function SrinagarLocationClient({ faqs }: Props) {
                   </div>
                   <div className="space-y-4">
                     <span className="text-xs font-bold uppercase tracking-wider text-[#C65378]">
-                      Comprehensive
+                      Full
                     </span>
                     <h3 className="font-extrabold text-xl text-slate-900">
-                      Advocate Consultation
+                      Lawyer Talk
                     </h3>
                     <div className="text-3xl font-black text-slate-900">
                       ₹4,990
                     </div>
                     <p className="text-xs text-slate-600">
-                      Senior estate advocate review for SMC houses, apple orchards, and multi-heir family portfolios.
+                      Senior estate lawyer review for SMC houses, apple orchards, and multi-heir family portfolios.
                     </p>
                     <ul className="space-y-2.5 text-xs text-slate-700 pt-3 border-t border-slate-100">
                       <li className="flex items-center gap-2">
@@ -1645,7 +1645,7 @@ export default function SrinagarLocationClient({ faqs }: Props) {
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>1-on-1 video call with senior advocate</span>
+                        <span>1-on-1 video call with senior lawyer</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
@@ -1661,7 +1661,7 @@ export default function SrinagarLocationClient({ faqs }: Props) {
                     href="/contact"
                     className="mt-6 w-full py-3 rounded-xl bg-[#C65378] text-white text-xs font-bold text-center hover:bg-[#a13c5d] transition-colors cursor-pointer"
                   >
-                    Book Advocate Call
+                    Book Lawyer Call
                   </a>
                 </div>
 
@@ -1678,7 +1678,7 @@ export default function SrinagarLocationClient({ faqs }: Props) {
                       ₹9,990
                     </div>
                     <p className="text-xs text-slate-600">
-                      End-to-end registration coordination across any Srinagar Sub-Registrar Office or home visit.
+                      End-to-end registration coordination across any Srinagar SRO office or home visit.
                     </p>
                     <ul className="space-y-2.5 text-xs text-slate-700 pt-3 border-t border-slate-100">
                       <li className="flex items-center gap-2">
@@ -1687,7 +1687,7 @@ export default function SrinagarLocationClient({ faqs }: Props) {
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>Advocate physically attends Srinagar SRO</span>
+                        <span>Lawyer physically attends Srinagar SRO</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
@@ -1764,7 +1764,7 @@ export default function SrinagarLocationClient({ faqs }: Props) {
                 </div>
                 {/* H2: Exactly 56 chars (≤ 70 chars) */}
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  13. Statutory Citations &amp; Jammu and Kashmir Legal Portals
+                  13. Legal Citations &amp; Jammu and Kashmir Legal Portals
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Our drafting protocols comply strictly with codified Indian statutes and Jammu &amp; Kashmir registration systems:
@@ -1795,7 +1795,7 @@ export default function SrinagarLocationClient({ faqs }: Props) {
                     J&amp;K Land Revenue Act 1996 Bk
                   </span>
                   <p className="text-xs text-slate-600">
-                    Provisions for agricultural land mutation (Intiqal) and computerized Jamabandi updates.
+                    Rules for farm land name change (Intiqal) and computerized Jamabandi updates.
                   </p>
                 </div>
 
@@ -1813,10 +1813,10 @@ export default function SrinagarLocationClient({ faqs }: Props) {
             {/* BOTTOM CONVERSION CTA BANNER */}
             <section className="rounded-3xl bg-gradient-to-br from-[#172228] to-[#212F35] text-white p-8 sm:p-12 text-center space-y-5 shadow-xl">
               <h3 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-white">
-                Protect Your Srinagar Properties &amp; Family Legacy
+                Protect Your Srinagar Assets &amp; Family Legacy
               </h3>
               <p className="text-sm sm:text-base text-slate-200 max-w-2xl mx-auto leading-relaxed">
-                Do not leave your hard-earned Srinagar homes, businesses, or orchards to administrative uncertainty. Draft a legally binding Will online today or consult our senior High Court advocates.
+                Do not leave your hard-earned Srinagar homes, businesses, or orchards to office uncertainty. Draft a legally binding Will online today or consult our senior High Court lawyers.
               </p>
               <div className="pt-3 flex flex-col sm:flex-row items-center justify-center gap-4">
                 <a
@@ -1830,7 +1830,7 @@ export default function SrinagarLocationClient({ faqs }: Props) {
                   href="/contact"
                   className="w-full sm:w-auto px-6 py-3.5 rounded-full bg-white/10 text-white font-bold text-sm sm:text-base hover:bg-white/20 transition-all border border-white/20"
                 >
-                  Book Advocate Consultation
+                  Book Lawyer Talk
                 </a>
               </div>
             </section>
@@ -1873,7 +1873,7 @@ export default function SrinagarLocationClient({ faqs }: Props) {
               />
             </div>
             <div className="pt-3 flex items-center justify-between text-xs text-slate-500">
-              <span>Srinagar SRO Registered &amp; SMC Mutation Compliant</span>
+              <span>Srinagar SRO Registered &amp; SMC Name Change Compliant</span>
               <a
                 href="/start"
                 onClick={(e) => {

@@ -106,26 +106,26 @@ const INITIAL_CHECKLIST = [
   },
   {
     id: "item-2",
-    label: "Original Aadhaar Card & PAN of Testator",
-    detail: "Mandatory for biometric fingerprinting, iris verification, and digital photo capture at the SRO counter.",
+    label: "Original Aadhaar Card & PAN of Will maker",
+    detail: "Needed for biometric fingerprinting, iris check, and digital photo capture at the SRO counter.",
     checked: true,
   },
   {
     id: "item-3",
     label: "Two Independent Adult Witnesses with Original IDs",
-    detail: "Witnesses must not be beneficiaries or spouse of beneficiaries. They must bring original Aadhaar or Voter IDs.",
+    detail: "Witnesses must not be heirs or spouse of heirs. They must bring original Aadhaar or Voter IDs.",
     checked: true,
   },
   {
     id: "item-4",
     label: "Doctor's Mental Fitness Certificate (MBBS)",
-    detail: "Strongly recommended for senior testators aged 60+ to certify sound testamentary capacity under Section 59.",
+    detail: "Strongly recommended for senior testators aged 60+ to certify sound sound mind under Section 59.",
     checked: false,
   },
   {
     id: "item-5",
     label: "Bihar Bhumi Jamabandi & Khatiyan Records",
-    detail: "Survey Khata, Khesra, Thana number, and Jamabandi Register-II extracts for ancestral or agricultural land parcels.",
+    detail: "Survey Khata, Khesra, Thana number, and Jamabandi Register-II extracts for family or farm land parcels.",
     checked: false,
   },
   {
@@ -235,7 +235,7 @@ export default function PatnaLocationClient({ faqs }: Props) {
               </h1>
 
               <p className="text-base sm:text-lg text-slate-200 leading-relaxed font-normal max-w-2xl">
-                Draft a legally binding Will in Patna. Protect your ancestral Khatiyan land, PMC houses, and modern apartments with senior advocate drafting, Bihar e-Nibandhan portal registration, and doorstep execution support.
+                Draft a legally binding Will in Patna. Protect your family Khatiyan land, PMC houses, and modern apartments with senior lawyer drafting, Bihar e-Nibandhan portal registration, and doorstep signing support.
               </p>
 
               <div className="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
@@ -260,7 +260,7 @@ export default function PatnaLocationClient({ faqs }: Props) {
               <div className="pt-4 grid grid-cols-3 gap-3 border-t border-white/10 text-xs text-slate-300">
                 <div className="flex items-center gap-2">
                   <Check className="w-4 h-4 text-emerald-400 shrink-0" />
-                  <span>High Court Advocate Vetted</span>
+                  <span>High Court Lawyer Vetted</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <Check className="w-4 h-4 text-emerald-400 shrink-0" />
@@ -487,10 +487,10 @@ export default function PatnaLocationClient({ faqs }: Props) {
                   <div className="p-4 rounded-2xl bg-slate-50/70 border border-slate-100 space-y-1.5">
                     <div className="flex items-center gap-2 font-bold text-sm text-slate-900">
                       <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
-                      <span>Probate Not Compulsory</span>
+                      <span>Probate Not Needed</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Patna is a non-presidency town. Unlike Mumbai, Kolkata, or Chennai, court probate is not mandatory under Section 213 of the Indian Succession Act for Hindu, Sikh, Jain, or Buddhist estates across Bihar.
+                      Patna is a non-presidency town. Unlike Mumbai, Kolkata, or Chennai, court probate is not needed under Section 213 of the Indian Succession Act for Hindu, Sikh, Jain, or Buddhist estates across Bihar.
                     </p>
                   </div>
 
@@ -500,7 +500,7 @@ export default function PatnaLocationClient({ faqs }: Props) {
                       <span>Zero Bihar Stamp Duty</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Wills are 100% exempt from ad-valorem stamp duty across Bihar. Testators only pay a nominal registration fee and portal scanning charge at the Sub-Registrar Office via the Bihar e-Nibandhan portal.
+                      Wills are 100% exempt from ad-valorem stamp duty across Bihar. Testators only pay a nominal registration fee and portal scanning charge at the SRO office via the Bihar e-Nibandhan portal.
                     </p>
                   </div>
 
@@ -510,7 +510,7 @@ export default function PatnaLocationClient({ faqs }: Props) {
                       <span>Bihar Bhumi Dakhil Kharij</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      A registered Will directly links to the Bihar Bhumi portal, enabling smooth land mutation (दाख़िल ख़ारिज) before the Circle Officer (CO) and protecting ancestral Khatiyan land from fraudulent sales.
+                      A registered Will directly links to the Bihar Bhumi portal, enabling smooth land name change (दाख़िल ख़ारिज) before the Circle Officer (CO) and protecting family Khatiyan land from fraudulent sales.
                     </p>
                   </div>
                 </div>
@@ -528,10 +528,10 @@ export default function PatnaLocationClient({ faqs }: Props) {
                   1. Will Drafting &amp; Legal Framework in Patna Bihar
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Writing a legally enforceable Will in Patna is regulated by the <strong>Indian Succession Act, 1925</strong>, the <strong>Registration Act, 1908</strong>, and the <strong>Bihar Land Reforms (Fixation of Ceiling Area and Acquisition of Surplus Land) Act</strong> alongside the <strong>Bihar State Mutation Act</strong>. Any adult of sound mind can bequeath their self-acquired real estate, bank deposits, mutual funds, company equity, and jewelry.
+                  Writing a legally enforceable Will in Patna is regulated by the <strong>Indian Succession Act, 1925</strong>, the <strong>Registration Act, 1908</strong>, and the <strong>Bihar Land Reforms (Fixation of Ceiling Area and Acquisition of Surplus Land) Act</strong> alongside the <strong>Bihar State Name Change Act</strong>. Any adult of sound mind can bequeath their self-acquired real estate, bank deposits, mutual funds, company equity, and jewelry.
                 </p>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  In Patna and adjoining rural belts of Danapur, Phulwari Sharif, and Bihta, real estate property tenures include ancestral Khatiyan lands recorded in Survey Register-II (Jamabandi), Patna Regional Development Authority (PRDA) plots, Patna Municipal Corporation (PMC) houses in Kankarbagh and Rajendra Nagar, and high-rise condominiums along Bailey Road. Given widespread property boundary disputes and inheritance friction in Bihar, executing a clear, advocate-vetted Will is essential to shield surviving family members.
+                  In Patna and adjoining rural belts of Danapur, Phulwari Sharif, and Bihta, real estate property tenures include family Khatiyan lands recorded in Survey Register-II (Jamabandi), Patna Regional Development Authority (PRDA) plots, Patna Municipal Corporation (PMC) houses in Kankarbagh and Rajendra Nagar, and high-rise condominiums along Bailey Road. Given widespread property boundary fights and inheritance friction in Bihar, signing a clear, lawyer-vetted Will is essential to shield surviving family members.
                 </p>
               </div>
 
@@ -542,7 +542,7 @@ export default function PatnaLocationClient({ faqs }: Props) {
                   </span>
                   <h3 className="font-bold text-sm text-slate-900">Legal Capacity</h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    The testator must be at least 18 years of age and possess sound disposing mind under Section 59.
+                    The Will maker must be at least 18 years of age and possess sound disposing mind under Section 59.
                   </p>
                 </div>
 
@@ -552,7 +552,7 @@ export default function PatnaLocationClient({ faqs }: Props) {
                   </span>
                   <h3 className="font-bold text-sm text-slate-900">Attesting Witnesses</h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Under Section 63, the testator must sign before two adult independent witnesses who also sign in each other&apos;s presence.
+                    Under Section 63, the Will maker must sign before two adult independent witnesses who also sign in each other&apos;s presence.
                   </p>
                 </div>
 
@@ -562,7 +562,7 @@ export default function PatnaLocationClient({ faqs }: Props) {
                   </span>
                   <h3 className="font-bold text-sm text-slate-900">Plain White Paper</h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Wills do not require non-judicial stamp paper in Bihar. Standard white A4 paper meets all statutory criteria.
+                    Wills do not require non-judicial stamp paper in Bihar. Standard white A4 paper meets all legal criteria.
                   </p>
                 </div>
 
@@ -572,7 +572,7 @@ export default function PatnaLocationClient({ faqs }: Props) {
                   </span>
                   <h3 className="font-bold text-sm text-slate-900">Testamentary Freedom</h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Testators have complete testamentary freedom to bequeath self-acquired properties, excluding forced heirship claims.
+                    Testators have complete testamentary freedom to bequeath self-acquired assets, excluding forced heirship claims.
                   </p>
                 </div>
               </div>
@@ -586,10 +586,10 @@ export default function PatnaLocationClient({ faqs }: Props) {
                   <span>LEGAL VALIDITY &amp; PROOF</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  2. Is Will Registration Mandatory in Patna?
+                  2. Is Will Registration Needed in Patna?
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Under Section 18(e) of the Indian Registration Act, 1908, registering a Will is <strong>strictly optional</strong> in Bihar. An unregistered Will signed by the testator in the presence of two witnesses is legally valid. However, in Bihar&apos;s land administration context, an unregistered Will is highly vulnerable to objections and allegations of fabrication during revenue mutation:
+                  Under Section 18(e) of the Indian Registration Act, 1908, registering a Will is <strong>strictly optional</strong> in Bihar. An unregistered Will signed by the Will maker in the presence of two witnesses is legally valid. However, in Bihar&apos;s land management context, an unregistered Will is highly vulnerable to objections and allegations of fabrication during revenue name change:
                 </p>
               </div>
 
@@ -606,12 +606,12 @@ export default function PatnaLocationClient({ faqs }: Props) {
                     <tr>
                       <td className="p-4 font-semibold text-slate-900">Legal Validity</td>
                       <td className="p-4">Valid under Section 63 ISA</td>
-                      <td className="p-4 font-semibold text-emerald-700">Valid with statutory presumption of authenticity</td>
+                      <td className="p-4 font-semibold text-emerald-700">Valid with legal presumption of authenticity</td>
                     </tr>
                     <tr>
                       <td className="p-4 font-semibold text-slate-900">Bihar Bhumi Dakhil Kharij</td>
                       <td className="p-4 text-amber-700">High risk of objection before Circle Officer (CO)</td>
-                      <td className="p-4 font-semibold text-emerald-700">Direct verification via e-Nibandhan portal</td>
+                      <td className="p-4 font-semibold text-emerald-700">Direct check via e-Nibandhan portal</td>
                     </tr>
                     <tr>
                       <td className="p-4 font-semibold text-slate-900">Protection Against Fraud</td>
@@ -619,9 +619,9 @@ export default function PatnaLocationClient({ faqs }: Props) {
                       <td className="p-4 font-semibold text-emerald-700">Biometric fingerprint &amp; photo archived in SRO records</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-semibold text-slate-900">PMC Municipal Mutation</td>
+                      <td className="p-4 font-semibold text-slate-900">PMC Municipal Name Change</td>
                       <td className="p-4">Requires extensive affidavits and indemnity bonds</td>
-                      <td className="p-4 font-semibold text-emerald-700">Expedited Holding Tax mutation without dispute</td>
+                      <td className="p-4 font-semibold text-emerald-700">Expedited Holding Tax name change without fight</td>
                     </tr>
                     <tr>
                       <td className="p-4 font-semibold text-slate-900">Certified Copy Retrieval</td>
@@ -644,10 +644,10 @@ export default function PatnaLocationClient({ faqs }: Props) {
                   3. Patna Probate Rules: Non-Presidency Law
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  A common question among property owners in Bihar is whether a Will must be probated by a court before assets can be transferred. Under <strong>Section 213 read with Section 57 of the Indian Succession Act, 1925</strong>, probate is mandatory only within the historical presidential towns of Mumbai, Kolkata, and Chennai.
+                  A common question among property owners in Bihar is whether a Will must be probated by a court before assets can be transferred. Under <strong>Section 213 read with Section 57 of the Indian Succession Act, 1925</strong>, probate is needed only within the historical presidential towns of Mumbai, Kolkata, and Chennai.
                 </p>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  <strong>Patna is a non-presidency town.</strong> The Patna High Court has settled in landmark rulings that obtaining a grant of probate or Letters of Administration is <strong>not mandatory</strong> for Hindu, Sikh, Jain, or Buddhist Wills in Bihar. Financial institutions, the Patna Municipal Corporation, and revenue authorities must recognize a valid Will without insisting on a court probate decree.
+                  <strong>Patna is a non-presidency town.</strong> The Patna High Court has settled in landmark rulings that getting a grant of probate or Letters of Administration is <strong>not needed</strong> for Hindu, Sikh, Jain, or Buddhist Wills in Bihar. Financial institutions, the Patna Municipal Corporation, and revenue offices must recognize a valid Will without insisting on a court probate decree.
                 </p>
               </div>
 
@@ -659,7 +659,7 @@ export default function PatnaLocationClient({ faqs }: Props) {
                       When is Court Action Required in Bihar?
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Court proceedings become necessary only if disgruntled legal heirs lodge a formal civil title suit challenging the genuineness of the Will, alleging coercion, or disputing the testator&apos;s mental capacity. In such contested cases, the beneficiary can petition the District Judge at Patna Civil Court or the Patna High Court for Letters of Administration or Probate to confirm testamentary title.
+                      Court proceedings become necessary only if disgruntled legal heirs lodge a formal civil title suit challenging the genuineness of the Will, alleging coercion, or disputing the Will maker&apos;s mental capacity. In such contested cases, the heir can petition the District Judge at Patna Civil Court or the Patna High Court for Letters of Administration or Probate to confirm testamentary title.
                     </p>
                   </div>
                 </div>
@@ -677,7 +677,7 @@ export default function PatnaLocationClient({ faqs }: Props) {
                   4. Patna Sub-Registrar Offices: SRO Directory
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Patna district operates five key Sub-Registrar Offices under the Bihar Registration, Excise &amp; Prohibition Department. Under Section 32 of the Registration Act, a Will can be registered at the Sub-Registrar Office having jurisdiction over where the testator resides or where any immovable property is situated.
+                  Patna district operates five key Sub-Registrar Offices under the Bihar Registration, Excise &amp; Prohibition Department. Under Section 32 of the Registration Act, a Will can be registered at the SRO office having area over where the Will maker resides or where any land and flats is situated.
                 </p>
               </div>
 
@@ -749,7 +749,7 @@ export default function PatnaLocationClient({ faqs }: Props) {
                       <p className="text-slate-600">{activeDistrictData.timings}</p>
                     </div>
                     <div className="md:col-span-2 space-y-1">
-                      <span className="font-bold text-slate-900 block">Jurisdiction Localities Covered:</span>
+                      <span className="font-bold text-slate-900 block">Area Localities Covered:</span>
                       <p className="text-slate-600 leading-relaxed">{activeDistrictData.areas}</p>
                     </div>
                   </div>
@@ -762,7 +762,7 @@ export default function PatnaLocationClient({ faqs }: Props) {
                       href="/contact"
                       className="inline-flex items-center gap-1.5 font-bold text-[#C65378] hover:underline"
                     >
-                      <span>Request Advocate Accompaniment for {activeDistrictData.name}</span>
+                      <span>Request Lawyer Accompaniment for {activeDistrictData.name}</span>
                       <ArrowRight className="w-3.5 h-3.5" />
                     </a>
                   </div>
@@ -781,7 +781,7 @@ export default function PatnaLocationClient({ faqs }: Props) {
                   5. Area-Wise Will Drafting Across Patna Localities
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Looking to draft a legally binding <strong>Will in Bailey Road, Boring Road, Kankarbagh, or Danapur</strong>? Real estate across Patna spans ancestral Khatiyan holdings, PRDA planned plots, private developer high-rises, and prime commercial shops along Fraser Road. Our legal team provides customized drafting, Bihar e-Nibandhan portal appointment scheduling, and Sub-Registrar accompaniment across all key residential and commercial hubs:
+                  Looking to draft a legally binding <strong>Will in Bailey Road, Boring Road, Kankarbagh, or Danapur</strong>? Real estate across Patna spans family Khatiyan holdings, PRDA planned plots, private developer high-rises, and prime shop shops along Fraser Road. Our legal team provides customized drafting, Bihar e-Nibandhan portal appointment scheduling, and Sub-Registrar accompaniment across all key home and shop hubs:
                 </p>
               </div>
 
@@ -811,7 +811,7 @@ export default function PatnaLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Specialized <strong>Will drafting in Boring Road and Bailey Road</strong> for premium apartments, multi-story family bungalows, and commercial office floors. Structuring precise legal clauses protects family wealth and ensures seamless PMC municipal mutation.
+                      Specialized <strong>Will drafting in Boring Road and Bailey Road</strong> for premium apartments, multi-story family bungalows, and shop office floors. Structuring precise legal clauses protects family wealth and ensures seamless PMC municipal name change.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -820,7 +820,7 @@ export default function PatnaLocationClient({ faqs }: Props) {
                         <span>SRO Hub: SRO Patna Sadar (Collectorate)</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        e-Nibandhan token generation, senior advocate accompaniment, and Section 31 home visits for elderly citizens.
+                        e-Nibandhan token generation, senior lawyer accompaniment, and Section 31 home visits for elderly citizens.
                       </p>
                     </div>
                   </div>
@@ -845,7 +845,7 @@ export default function PatnaLocationClient({ faqs }: Props) {
                     <div className="flex items-center justify-between gap-2">
                       <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-rose-50 text-[#C65378] border border-rose-100">
                         <MapPin className="w-3.5 h-3.5" />
-                        South-East Residential
+                        South-East Home
                       </span>
                       <span className="text-[11px] font-semibold text-slate-500 bg-slate-100 px-2.5 py-1 rounded-lg">
                         SRO East / Sadar
@@ -864,7 +864,7 @@ export default function PatnaLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Expert <strong>Will drafting in Kankarbagh</strong> (one of Asia&apos;s largest residential colonies) and Rajendra Nagar. Tailored for PRDA plotted houses, nursing homes, and residential plots to guarantee direct municipal Holding Tax transfer.
+                      Expert <strong>Will drafting in Kankarbagh</strong> (one of Asia&apos;s largest home colonies) and Rajendra Nagar. Tailored for PRDA plotted houses, nursing homes, and home plots to guarantee direct municipal Holding Tax transfer.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -873,7 +873,7 @@ export default function PatnaLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Patna Sadar (East Division)</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Assistance with PRDA allotment succession records and doorstep medical fitness attestation.
+                        Help with PRDA allotment succession records and doorstep medical fitness attestation.
                       </p>
                     </div>
                   </div>
@@ -917,16 +917,16 @@ export default function PatnaLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Customized <strong>Will drafting in Danapur and Saguna More</strong> for new high-rise residential societies and agricultural land along the Bihta corridor. Incorporating precise Bihar Bhumi Khasra and Khata survey numbers prevents future title objections.
+                      Customized <strong>Will drafting in Danapur and Saguna More</strong> for new high-rise home societies and farm land along the Bihta corridor. Incorporating precise Bihar Bhumi Khasra and Khata survey numbers prevents future title objections.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
                       <div className="flex items-center gap-2 font-bold text-slate-900">
                         <Building className="w-3.5 h-3.5 text-[#C65378]" />
-                        <span>SRO Hub: Sub-Registrar Office Danapur</span>
+                        <span>SRO Hub: SRO office Danapur</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Danapur court campus biometric registration, token slots, and revenue mutation assistance.
+                        Danapur court campus biometric registration, token slots, and revenue name change help.
                       </p>
                     </div>
                   </div>
@@ -970,7 +970,7 @@ export default function PatnaLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Specialized <strong>Will drafting in Anisabad and Phulwari Sharif</strong> covering independent houses, ancestral land holdings, and suburban gated colonies. Drafting adheres to personal inheritance laws and Bihar revenue mutation codes.
+                      Specialized <strong>Will drafting in Anisabad and Phulwari Sharif</strong> covering independent houses, family land holdings, and suburban gated colonies. Drafting adheres to personal inheritance laws and Bihar revenue name change codes.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -979,7 +979,7 @@ export default function PatnaLocationClient({ faqs }: Props) {
                         <span>SRO Hub: SRO Phulwari Sharif (Block Office)</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Fast slot booking on Bihar e-Nibandhan with advocate verification and biometric token generation.
+                        Fast slot booking on Bihar e-Nibandhan with lawyer check and biometric token generation.
                       </p>
                     </div>
                   </div>
@@ -1004,7 +1004,7 @@ export default function PatnaLocationClient({ faqs }: Props) {
                     <div className="flex items-center justify-between gap-2">
                       <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-rose-50 text-[#C65378] border border-rose-100">
                         <MapPin className="w-3.5 h-3.5" />
-                        Commercial Heart &amp; CBD
+                        Shop Heart &amp; CBD
                       </span>
                       <span className="text-[11px] font-semibold text-slate-500 bg-slate-100 px-2.5 py-1 rounded-lg">
                         SRO Patna Sadar
@@ -1016,14 +1016,14 @@ export default function PatnaLocationClient({ faqs }: Props) {
                     </h3>
 
                     <div className="flex flex-wrap gap-1.5 text-[11px] text-slate-600">
-                      <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Fraser Road Commercial</span>
+                      <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Fraser Road Shop</span>
                       <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Exhibition Road</span>
                       <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Dak Bungalow Crossing</span>
                       <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Gandhi Maidan Environs</span>
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Tailored <strong>Will drafting in Fraser Road and Exhibition Road</strong> for prime commercial showrooms, ancestral joint properties, corporate shares, and demat folios. Protects commercial tenancy succession and partnership equity.
+                      Tailored <strong>Will drafting in Fraser Road and Exhibition Road</strong> for prime shop showrooms, family joint assets, corporate shares, and demat folios. Protects shop tenancy succession and partnership equity.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1032,13 +1032,13 @@ export default function PatnaLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Collectorate Campus, Near Gandhi Maidan</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Direct SRO Sadar counter execution, business succession structuring, and demat portfolio transmission.
+                        Direct SRO Sadar counter signing, business succession structuring, and demat portfolio transfer.
                       </p>
                     </div>
                   </div>
 
                   <div className="pt-4 mt-4 border-t border-slate-100 flex items-center justify-between">
-                    <span className="text-xs font-bold text-slate-500">Commercial &amp; Demat Portfolios</span>
+                    <span className="text-xs font-bold text-slate-500">Shop &amp; Demat Portfolios</span>
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
@@ -1076,7 +1076,7 @@ export default function PatnaLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Traditional <strong>Will drafting in Patna City and Gulzarbagh</strong> for historic mercantile families, joint business establishments, wholesale godowns, and heritage ancestral kothis. Clear division of undivided shares prevents multi-generation civil litigation.
+                      Traditional <strong>Will drafting in Patna City and Gulzarbagh</strong> for historic mercantile families, joint business establishments, wholesale godowns, and heritage family kothis. Clear division of undivided shares prevents multi-generation civil court fights.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1085,7 +1085,7 @@ export default function PatnaLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Government Printing Press Campus, Gulzarbagh</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        SRO Patna City counter facilitation, family coparcenary settlement, and witness attestation.
+                        SRO Patna City counter facilitation, family joint family settlement, and witness attestation.
                       </p>
                     </div>
                   </div>
@@ -1110,7 +1110,7 @@ export default function PatnaLocationClient({ faqs }: Props) {
                     <div className="flex items-center justify-between gap-2">
                       <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-rose-50 text-[#C65378] border border-rose-100">
                         <MapPin className="w-3.5 h-3.5" />
-                        North-West Residential
+                        North-West Home
                       </span>
                       <span className="text-[11px] font-semibold text-slate-500 bg-slate-100 px-2.5 py-1 rounded-lg">
                         SRO Patna Sadar
@@ -1129,7 +1129,7 @@ export default function PatnaLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Reliable <strong>Will drafting in Ashiana Nagar and Digha</strong> for cooperative housing societies, independent duplexes, and riverfront properties. Clear testamentary clauses ensure swift municipal transfer with Patna Municipal Corporation.
+                      Reliable <strong>Will drafting in Ashiana Nagar and Digha</strong> for cooperative housing societies, independent duplexes, and riverfront assets. Clear testamentary clauses make sure swift municipal transfer with Patna Municipal Corporation.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1138,7 +1138,7 @@ export default function PatnaLocationClient({ faqs }: Props) {
                         <span>SRO Hub: SRO Patna Sadar (Revenue Wing)</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Online Bihar e-Nibandhan slot booking, home registration under Section 31, and doctor fitness certificate coordination.
+                        Online Bihar e-Nibandhan slot booking, home registration under Section 31, and doctor fitness paper coordination.
                       </p>
                     </div>
                   </div>
@@ -1182,7 +1182,7 @@ export default function PatnaLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Future-ready <strong>Will drafting in Bihta and Khagaul</strong> for agricultural land parcels, newly acquired residential plots, and institutional corridor properties. Includes exact Survey Khatiyan and Khesra numbers for Bihar Bhumi Dakhil Kharij mutation.
+                      Future-ready <strong>Will drafting in Bihta and Khagaul</strong> for farm land parcels, newly acquired home plots, and institutional corridor assets. Includes exact Survey Khatiyan and Khesra numbers for Bihar Bhumi Dakhil Kharij name change.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1191,7 +1191,7 @@ export default function PatnaLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Sub-Divisional Complex, Danapur / Bihta Link</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Danapur SRO deed registration, Jamabandi verification, and Circle Officer mutation assistance.
+                        Danapur SRO deed registration, Jamabandi check, and Circle Officer name change help.
                       </p>
                     </div>
                   </div>
@@ -1223,7 +1223,7 @@ export default function PatnaLocationClient({ faqs }: Props) {
                   6. Bihar Bhumi Dakhil Kharij &amp; e-Nibandhan SOP
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Registering a Will in Patna and ensuring future land mutation follows a systematic five-stage standard operating procedure:
+                  Registering a Will in Patna and making sure future land name change follows a systematic five-stage standard operating step:
                 </p>
               </div>
 
@@ -1235,10 +1235,10 @@ export default function PatnaLocationClient({ faqs }: Props) {
                   </div>
                   <div className="space-y-1">
                     <h3 className="font-extrabold text-base text-slate-900">
-                      Estate Audit &amp; Land Record Verification
+                      Estate Audit &amp; Land Record Check
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Compile a detailed schedule of all assets. For Patna immovable properties, record the exact Survey Khata, Khesra, Thana number, and Jamabandi details from the Bihar Bhumi portal. Gather bank account details, demat statements, and jewelry lists.
+                      Compile a detailed schedule of all assets. For Patna land and flats, record the exact Survey Khata, Khesra, Thana number, and Jamabandi details from the Bihar Bhumi portal. Gather bank account details, demat statements, and jewelry lists.
                     </p>
                   </div>
                 </div>
@@ -1250,7 +1250,7 @@ export default function PatnaLocationClient({ faqs }: Props) {
                   </div>
                   <div className="space-y-1">
                     <h3 className="font-extrabold text-base text-slate-900">
-                      Advocate Drafting &amp; Custom Succession Clauses
+                      Lawyer Drafting &amp; Custom Succession Clauses
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                       Draft your Will through our platform or with a senior Patna estate lawyer. Essential clauses include clear revocation of past wills, specific bequest shares, appointment of a trusted executor, and survivorship arrangements.
@@ -1265,10 +1265,10 @@ export default function PatnaLocationClient({ faqs }: Props) {
                   </div>
                   <div className="space-y-1">
                     <h3 className="font-extrabold text-base text-slate-900">
-                      Execution &amp; Attestation by Two Witnesses
+                      Signing &amp; Attestation by Two Witnesses
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Print the final Will draft on standard white paper. The testator signs each page in the simultaneous presence of two independent adult witnesses who then append their signatures and identity details as required under Section 63.
+                      Print the final Will draft on standard white paper. The Will maker signs each page in the simultaneous presence of two independent adult witnesses who then append their signatures and identity details as required under Section 63.
                     </p>
                   </div>
                 </div>
@@ -1283,7 +1283,7 @@ export default function PatnaLocationClient({ faqs }: Props) {
                       Slot Booking on Bihar e-Nibandhan Portal
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Log into <code>biharregservices.gov.in</code>, select your jurisdictional Sub-Registrar Office (Patna Sadar, Danapur, Phulwari Sharif, or Patna City), enter KYC details, pay the nominal government fee, and generate your e-appointment slip.
+                      Log into <code>biharregservices.gov.in</code>, select your jurisdictional SRO office (Patna Sadar, Danapur, Phulwari Sharif, or Patna City), enter KYC details, pay the nominal government fee, and generate your e-appointment slip.
                     </p>
                   </div>
                 </div>
@@ -1298,7 +1298,7 @@ export default function PatnaLocationClient({ faqs }: Props) {
                       SRO Biometric Capture &amp; Book III Registration
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Visit the Sub-Registrar Office with your two witnesses and original IDs. The Sub-Registrar completes biometric verification, captures digital photographs, and records the Will in the official Book III register, returning the endorsed registered deed.
+                      Visit the SRO office with your two witnesses and original IDs. The Sub-Registrar completes biometric check, captures digital photographs, and records the Will in the official Book III register, returning the endorsed registered deed.
                     </p>
                   </div>
                 </div>
@@ -1316,7 +1316,7 @@ export default function PatnaLocationClient({ faqs }: Props) {
                   7. Section 31 Doorstep Registration for Seniors
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Senior citizens, hospitalized individuals, and bedridden testators residing in Patna are not required to travel to congested Sub-Registrar offices. Under <strong>Section 31 of the Registration Act, 1908</strong>, the Sub-Registrar has statutory authority to visit the testator&apos;s home or hospital room:
+                  Senior citizens, hospitalized people, and bedridden testators residing in Patna are not required to travel to congested Sub-Registrar offices. Under <strong>Section 31 of the Registration Act, 1908</strong>, the Sub-Registrar has legal authority to visit the Will maker&apos;s home or hospital room:
                 </p>
               </div>
 
@@ -1371,7 +1371,7 @@ export default function PatnaLocationClient({ faqs }: Props) {
               <div className="bg-white rounded-3xl border border-slate-200/90 p-6 shadow-xs space-y-4">
                 <div className="flex items-center justify-between pb-3 border-b border-slate-100">
                   <span className="text-xs font-bold uppercase tracking-wider text-slate-500">
-                    Mandatory Dossier Checklist
+                    Needed Dossier Checklist
                   </span>
                   <span className="px-3 py-1 rounded-full bg-rose-50 text-[#C65378] text-xs font-extrabold">
                     {checkedCount} of {checklist.length} Completed
@@ -1421,7 +1421,7 @@ export default function PatnaLocationClient({ faqs }: Props) {
                   9. Patna Property Types: Khatiyan, PRDA &amp; PMC
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Succession procedures in Patna depend directly on property tenure and classification under Bihar revenue and municipal authorities:
+                  Succession steps in Patna depend directly on property tenure and classification under Bihar revenue and municipal offices:
                 </p>
               </div>
 
@@ -1431,10 +1431,10 @@ export default function PatnaLocationClient({ faqs }: Props) {
                     <Landmark className="w-5 h-5" />
                   </div>
                   <h3 className="font-extrabold text-base text-slate-900">
-                    Ancestral Khatiyan Land
+                    Family Khatiyan Land
                   </h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Ancestral agricultural holdings across Patna district require precise reference to Cadastral/Revisional Survey Khatiyan records, Khesra numbers, and Jamabandi receipts to facilitate flawless Dakhil Kharij mutation before the Circle Officer.
+                    Family farm holdings across Patna district require precise reference to Cadastral/Revisional Survey Khatiyan records, Khesra numbers, and Jamabandi receipts to facilitate flawless Dakhil Kharij name change before the Circle Officer.
                   </p>
                 </div>
 
@@ -1443,10 +1443,10 @@ export default function PatnaLocationClient({ faqs }: Props) {
                     <Home className="w-5 h-5" />
                   </div>
                   <h3 className="font-extrabold text-base text-slate-900">
-                    PRDA Plotted Properties
+                    PRDA Plotted Assets
                   </h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Residential plots allotted by the former Patna Regional Development Authority (PRDA) in Kankarbagh, Lohia Nagar, and Hanuman Nagar can be transferred directly to beneficiaries upon presenting a registered Will and death certificate.
+                    Home plots allotted by the former Patna Regional Development Authority (PRDA) in Kankarbagh, Lohia Nagar, and Hanuman Nagar can be transferred directly to heirs upon presenting a registered Will and death paper.
                   </p>
                 </div>
 
@@ -1458,7 +1458,7 @@ export default function PatnaLocationClient({ faqs }: Props) {
                     PMC Flats &amp; Holding Tax
                   </h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Modern high-rise flats along Bailey Road and Boring Road require municipal assessment mutation (Holding Tax Namantaran) under Patna Municipal Corporation rules. A registered Will prevents conflicting claims from distant heirs.
+                    Modern high-rise flats along Bailey Road and Boring Road require municipal assessment name change (Holding Tax Namantaran) under Patna Municipal Corporation rules. A registered Will prevents conflicting claims from distant heirs.
                   </p>
                 </div>
               </div>
@@ -1475,7 +1475,7 @@ export default function PatnaLocationClient({ faqs }: Props) {
                   10. Official Bihar Government Fees &amp; Charges
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Unlike commercial sale deeds or gift deeds that attract substantial ad-valorem stamp duty, Wills are 100% exempt from stamp duty across Bihar under the Indian Stamp Act, 1899:
+                  Unlike shop sale deeds or gift deeds that attract substantial ad-valorem stamp duty, Wills are 100% exempt from stamp duty across Bihar under the Indian Stamp Act, 1899:
                 </p>
               </div>
 
@@ -1525,7 +1525,7 @@ export default function PatnaLocationClient({ faqs }: Props) {
                   11. Transparent Will Packages &amp; Legal Fees
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Choose the level of legal assistance that fits your family estate planning requirements in Patna:
+                  Choose the level of legal help that fits your family estate planning rules in Patna:
                 </p>
               </div>
 
@@ -1543,7 +1543,7 @@ export default function PatnaLocationClient({ faqs }: Props) {
                       ₹1,990
                     </div>
                     <p className="text-xs text-slate-600">
-                      Ideal for nuclear families with residential apartments, bank fixed deposits, and mutual funds.
+                      Ideal for nuclear families with home apartments, bank fixed deposits, and mutual funds.
                     </p>
                     <ul className="space-y-2.5 text-xs text-slate-700 pt-3 border-t border-slate-100">
                       <li className="flex items-center gap-2">
@@ -1552,7 +1552,7 @@ export default function PatnaLocationClient({ faqs }: Props) {
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>Legally vetted statutory clauses</span>
+                        <span>Legally vetted legal clauses</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
@@ -1576,16 +1576,16 @@ export default function PatnaLocationClient({ faqs }: Props) {
                   </div>
                   <div className="space-y-4">
                     <span className="text-xs font-bold uppercase tracking-wider text-[#C65378]">
-                      Comprehensive
+                      Full
                     </span>
                     <h3 className="font-extrabold text-xl text-slate-900">
-                      Advocate Consultation
+                      Lawyer Talk
                     </h3>
                     <div className="text-3xl font-black text-slate-900">
                       ₹4,990
                     </div>
                     <p className="text-xs text-slate-600">
-                      Senior estate advocate review for ancestral Khatiyan land, PRDA plots, and family succession clarity.
+                      Senior estate lawyer review for family Khatiyan land, PRDA plots, and family succession clarity.
                     </p>
                     <ul className="space-y-2.5 text-xs text-slate-700 pt-3 border-t border-slate-100">
                       <li className="flex items-center gap-2">
@@ -1610,7 +1610,7 @@ export default function PatnaLocationClient({ faqs }: Props) {
                     href="/contact"
                     className="mt-6 w-full py-3 rounded-xl bg-[#C65378] text-white text-xs font-bold text-center hover:bg-[#a13c5d] transition-colors cursor-pointer"
                   >
-                    Book Advocate Call
+                    Book Lawyer Call
                   </a>
                 </div>
 
@@ -1627,7 +1627,7 @@ export default function PatnaLocationClient({ faqs }: Props) {
                       ₹9,990
                     </div>
                     <p className="text-xs text-slate-600">
-                      Full end-to-end registration assistance across all 5 Patna Sub-Registrar offices.
+                      Full end-to-end registration help across all 5 Patna Sub-Registrar offices.
                     </p>
                     <ul className="space-y-2.5 text-xs text-slate-700 pt-3 border-t border-slate-100">
                       <li className="flex items-center gap-2">
@@ -1636,7 +1636,7 @@ export default function PatnaLocationClient({ faqs }: Props) {
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>Advocate physically attends SRO with you</span>
+                        <span>Lawyer physically attends SRO with you</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
@@ -1711,7 +1711,7 @@ export default function PatnaLocationClient({ faqs }: Props) {
                   <span>STATUTORY CITATIONS</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  13. Statutory References &amp; Bihar Legal Portals
+                  13. Legal References &amp; Bihar Legal Portals
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Our estate planning protocols comply strictly with central statutes and official Bihar revenue systems:
@@ -1763,7 +1763,7 @@ export default function PatnaLocationClient({ faqs }: Props) {
                 Protect Your Patna Assets &amp; Loved Ones Today
               </h3>
               <p className="text-sm sm:text-base text-slate-200 max-w-2xl mx-auto leading-relaxed">
-                Do not allow your ancestral lands or hard-earned Patna properties to get trapped in prolonged family litigation. Draft a legally binding Will in minutes or consult our senior succession advocates.
+                Do not allow your family lands or hard-earned Patna assets to get trapped in prolonged family court fights. Draft a legally binding Will in minutes or consult our senior succession lawyers.
               </p>
               <div className="pt-3 flex flex-col sm:flex-row items-center justify-center gap-4">
                 <a
@@ -1777,7 +1777,7 @@ export default function PatnaLocationClient({ faqs }: Props) {
                   href="/contact"
                   className="w-full sm:w-auto px-6 py-3.5 rounded-full bg-white/10 text-white font-bold text-sm sm:text-base hover:bg-white/20 transition-all border border-white/20"
                 >
-                  Book Lawyer Consultation
+                  Book Lawyer Talk
                 </a>
               </div>
             </section>

@@ -124,38 +124,38 @@ const INITIAL_CHECKLIST = [
   },
   {
     id: "item-2",
-    label: "Original Aadhaar Card & PAN of Testator",
+    label: "Original Aadhaar Card & PAN of Will maker",
     detail: "Essential for biometric identity validation, electronic thumbprint, and digital photo at the SRO counter.",
     checked: true,
   },
   {
     id: "item-3",
-    label: "Sikkim Certificate of Identification / Residential Proof",
-    detail: "Sikkim Subject Certificate, Certificate of Identification (COI), or voter identity proof for revenue verification.",
+    label: "Sikkim Certificate of ID / Home Proof",
+    detail: "Sikkim Subject Certificate, Certificate of ID (COI), or voter identity proof for revenue check.",
     checked: true,
   },
   {
     id: "item-4",
     label: "Two Independent Adult Witnesses with Photo IDs",
-    detail: "Must carry original government photo IDs and must not be beneficiaries receiving any asset under the Will.",
+    detail: "Must carry original government photo IDs and must not be heirs receiving any asset under the Will.",
     checked: true,
   },
   {
     id: "item-5",
-    label: "Doctor Mental Fitness Certificate (MBBS / MD)",
+    label: "Doctor Sound Mind Note (MBBS / MD)",
     detail: "Advised for senior testators aged 60+. Certifies testamentary mental capacity, soundness of mind, and lucidity.",
     checked: false,
   },
   {
     id: "item-6",
-    label: "GMC Property Tax Receipts & Municipal Mutation Records",
+    label: "GMC Property Tax Receipts & Municipal Name Change Records",
     detail: "Copy of Gangtok Municipal Corporation property tax assessment and building ownership records for urban homes.",
     checked: false,
   },
   {
     id: "item-7",
-    label: "Revenue Land Records (Parcha Khatiyan / Mutation Slips)",
-    detail: "Certified land parchas confirming Revenue Order No. 1 compliance for ancestral or rural holdings in Sikkim.",
+    label: "Revenue Land Records (Parcha Khatiyan / Name Change Slips)",
+    detail: "Certified land parchas confirming Revenue Order No. 1 compliance for family or rural holdings in Sikkim.",
     checked: false,
   },
 ];
@@ -252,7 +252,7 @@ export default function GangtokLocationClient({ faqs }: Props) {
               </h1>
 
               <p className="text-base sm:text-lg text-slate-200 leading-relaxed font-normal max-w-2xl">
-                Draft a legally watertight Will for your Gangtok Municipal Corporation residential houses, MG Marg commercial establishments, hotel leases, and ancestral land parcels. Get advocate verification, Revenue Order No. 1 compliance, and SRO DAC Sichey registration.
+                Draft a legally watertight Will for your Gangtok Municipal Corporation home houses, MG Marg shop establishments, hotel leases, and family land parcels. Get lawyer check, Revenue Order No. 1 compliance, and SRO DAC Sichey registration.
               </p>
 
               <div className="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
@@ -498,7 +498,7 @@ export default function GangtokLocationClient({ faqs }: Props) {
                       <span>Optional Registration</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Will registration is optional under Section 18(e) of the Registration Act, 1908. A handwritten or typed Will signed before two witnesses is legally valid, while official Book III SRO registration provides permanent protection against probate disputes.
+                      Will registration is optional under Section 18(e) of the Registration Act, 1908. A handwritten or typed Will signed before two witnesses is legally valid, while official Book III SRO registration provides permanent protection against probate fights.
                     </p>
                   </div>
 
@@ -508,27 +508,27 @@ export default function GangtokLocationClient({ faqs }: Props) {
                       <span>Revenue Order No. 1</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Protected under Article 371F of the Constitution. Ancestral lands of Bhutias and Lepchas cannot be alienated to non-tribals or outsiders through a testamentary Will. Wills must respect statutory tribal land boundaries.
+                      Protected under Article 371F of the Constitution. Family lands of Bhutias and Lepchas cannot be alienated to non-tribals or outsiders through a testamentary Will. Wills must respect legal tribal land boundaries.
                     </p>
                   </div>
 
                   <div className="p-4 rounded-2xl bg-slate-50/70 border border-slate-100 space-y-1.5">
                     <div className="flex items-center gap-2 font-bold text-sm text-slate-900">
                       <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
-                      <span>Probate Non-Compulsory</span>
+                      <span>Probate Non-Needed</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Gangtok lies outside the historical presidency towns of Mumbai, Kolkata, and Chennai. Under Section 213 of the Indian Succession Act, court probate is strictly non-compulsory in Gangtok, enabling direct property mutation with a registered Will.
+                      Gangtok lies outside the historical presidency towns of Mumbai, Kolkata, and Chennai. Under Section 213 of the Indian Succession Act, court probate is strictly non-needed in Gangtok, enabling direct property name change with a registered Will.
                     </p>
                   </div>
 
                   <div className="p-4 rounded-2xl bg-slate-50/70 border border-slate-100 space-y-1.5">
                     <div className="flex items-center gap-2 font-bold text-sm text-slate-900">
                       <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
-                      <span>GMC Municipal Mutation</span>
+                      <span>GMC Municipal Name Change</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      A registered Will accelerates title substitution with the Gangtok Municipal Corporation (GMC) for property taxes, building permits, and commercial trade license updates across MG Marg, Deorali, and Tadong.
+                      A registered Will accelerates title substitution with the Gangtok Municipal Corporation (GMC) for property taxes, building permits, and shop trade license updates across MG Marg, Deorali, and Tadong.
                     </p>
                   </div>
                 </div>
@@ -546,10 +546,10 @@ export default function GangtokLocationClient({ faqs }: Props) {
                   1. Will Drafting &amp; Legal Framework in Gangtok
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Succession planning in Gangtok and Sikkim operates within a specialized constitutional and statutory architecture. While general testamentary rights are governed by the <strong>Indian Succession Act, 1925</strong> and the <strong>Registration Act, 1908</strong>, Article 371F of the Constitution of India preserves pre-existing Sikkim laws, customary practices, and land protection mandates.
+                  Succession planning in Gangtok and Sikkim operates within a specialized constitutional and legal architecture. While general testamentary rights are governed by the <strong>Indian Succession Act, 1925</strong> and the <strong>Registration Act, 1908</strong>, Article 371F of the Constitution of India preserves pre-existing Sikkim laws, customary practices, and land protection mandates.
                 </p>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Property owners in Gangtok frequently hold multi-faceted assets: commercial hotels or shops on MG Marg or Tibet Road, residential houses under Gangtok Municipal Corporation (GMC) jurisdiction, rural farmland parchas in surrounding valleys, and bank fixed deposits. Drafting a legally valid Will prevents title bottlenecks between urban municipal authorities and rural land revenue offices.
+                  Property owners in Gangtok often hold multi-faceted assets: shop hotels or shops on MG Marg or Tibet Road, home houses under Gangtok Municipal Corporation (GMC) area, rural farmland parchas in surrounding valleys, and bank fixed deposits. Drafting a legally valid Will prevents title bottlenecks between urban municipal offices and rural land revenue offices.
                 </p>
               </div>
 
@@ -560,7 +560,7 @@ export default function GangtokLocationClient({ faqs }: Props) {
                   </span>
                   <h3 className="font-bold text-sm text-slate-900">Legal Capacity</h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    The testator must be a major aged 18 years or older possessing sound testamentary mental capacity (Section 59).
+                    The Will maker must be a major aged 18 years or older possessing sound testamentary mental capacity (Section 59).
                   </p>
                 </div>
 
@@ -570,7 +570,7 @@ export default function GangtokLocationClient({ faqs }: Props) {
                   </span>
                   <h3 className="font-bold text-sm text-slate-900">Free Consent</h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Executed voluntarily without undue influence, fraudulent coercion, or duress by potential beneficiaries (Section 61).
+                    Signed voluntarily without undue influence, fraudulent coercion, or duress by potential heirs (Section 61).
                   </p>
                 </div>
 
@@ -580,7 +580,7 @@ export default function GangtokLocationClient({ faqs }: Props) {
                   </span>
                   <h3 className="font-bold text-sm text-slate-900">Two Witnesses</h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Must be signed in the physical presence of at least two independent adult attesting witnesses (Section 63).
+                    Must be signed in the physical presence of at least two independent adult witnesses (Section 63).
                   </p>
                 </div>
 
@@ -604,13 +604,13 @@ export default function GangtokLocationClient({ faqs }: Props) {
                   <span>REGISTRATION STATUS</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  2. Is Will Registration Mandatory in Gangtok?
+                  2. Is Will Registration Needed in Gangtok?
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Under Section 18(e) of the Registration Act, 1908, the registration of a testamentary Will is strictly <strong>optional</strong>. An unregistered Will signed on standard white paper before two independent adult witnesses is legally valid and admissible in court proceedings.
                 </p>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  However, with prime commercial property valuations rising rapidly along MG Marg, Deorali, and Tadong, estate advocates strongly recommend registering your Will before the Sub-Registrar at the District Administrative Centre (DAC), Sichey. Official Book III registration preserves the document in permanent government records, eliminating allegations of forged signatures or suspicious timing.
+                  However, with prime shop property valuations rising rapidly along MG Marg, Deorali, and Tadong, estate lawyers strongly recommend registering your Will before the Sub-Registrar at the District Office Centre (DAC), Sichey. Official Book III registration preserves the document in permanent government records, eliminating allegations of forged signatures or suspicious timing.
                 </p>
               </div>
 
@@ -632,27 +632,27 @@ export default function GangtokLocationClient({ faqs }: Props) {
                     </tr>
                     <tr>
                       <td className="p-4 font-semibold">Protection from Challenge</td>
-                      <td className="p-4 bg-rose-50/20">Strong legal presumption of genuine execution and mental sanity</td>
+                      <td className="p-4 bg-rose-50/20">Strong legal presumption of genuine signing and mental sanity</td>
                       <td className="p-4 bg-slate-50/20">Prone to contentious claims of fraud, undue influence, or coercion</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-semibold">GMC Municipal Mutation</td>
+                      <td className="p-4 font-semibold">GMC Municipal Name Change</td>
                       <td className="p-4 bg-rose-50/20">Direct ownership update on presenting certified SRO copy</td>
-                      <td className="p-4 bg-slate-50/20">GMC officers often require succession certificates or family NOCs</td>
+                      <td className="p-4 bg-slate-50/20">GMC officers often require succession papers or family NOCs</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-semibold">Revenue Land Record Mutation</td>
+                      <td className="p-4 font-semibold">Revenue Land Record Name Change</td>
                       <td className="p-4 bg-rose-50/20">Accepted smoothly by Revenue Officer for Parcha Khatiyan update</td>
                       <td className="p-4 bg-slate-50/20">Frequent objections raised by collateral heirs during public notice</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-semibold">Bank Locker &amp; FD Transmission</td>
+                      <td className="p-4 font-semibold">Bank Locker &amp; FD Transfer</td>
                       <td className="p-4 bg-rose-50/20">Expedited release of accounts and financial investments</td>
                       <td className="p-4 bg-slate-50/20">Banks may demand extensive indemnity bonds or court decrees</td>
                     </tr>
                     <tr>
                       <td className="p-4 font-semibold">Government Registration Fee</td>
-                      <td className="p-4 bg-rose-50/20 font-bold text-[#C65378]">Nominal statutory fee + scanning charges</td>
+                      <td className="p-4 bg-rose-50/20 font-bold text-[#C65378]">Nominal legal fee + scanning charges</td>
                       <td className="p-4 bg-slate-50/20 font-bold text-slate-700">₹0 cost</td>
                     </tr>
                   </tbody>
@@ -671,43 +671,43 @@ export default function GangtokLocationClient({ faqs }: Props) {
                   3. Gangtok Probate Law: Exemption Outside Presidency Towns
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  A common uncertainty among Gangtok property owners is whether probate from a civil court or the High Court of Sikkim is legally mandatory before beneficiaries can inherit property. The settled legal answer is <strong>no</strong>.
+                  A common uncertainty among Gangtok property owners is whether probate from a civil court or the High Court of Sikkim is legally needed before heirs can inherit property. The settled legal answer is <strong>no</strong>.
                 </p>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Under Section 213 read with Section 57 of the Indian Succession Act, 1925, probate is compulsory solely for Wills executed within or properties situated within the historical presidency towns of Mumbai, Kolkata, and Chennai. Gangtok is not a presidency town. Therefore, court probate is strictly non-compulsory for Hindu, Buddhist, Sikh, and Jain testators in Sikkim.
+                  Under Section 213 read with Section 57 of the Indian Succession Act, 1925, probate is needed solely for Wills signed within or assets situated within the historical presidency towns of Mumbai, Kolkata, and Chennai. Gangtok is not a presidency town. Therefore, court probate is strictly non-needed for Hindu, Buddhist, Sikh, and Jain testators in Sikkim.
                 </p>
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="bg-white rounded-3xl border border-slate-200/90 p-6 shadow-xs space-y-3">
                   <span className="px-3 py-1 rounded-full bg-emerald-100 text-emerald-800 text-xs font-extrabold uppercase">
-                    Settled Law: Non-Compulsory
+                    Settled Law: Non-Needed
                   </span>
                   <h3 className="font-bold text-base text-slate-900">
                     High Court of Sikkim Jurisprudence
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    The High Court of Sikkim has consistently recognized that probate is not a prerequisite for establishing rights under a Will in Sikkim outside the historical presidency limits. A registered Will constitutes solid documentary proof for mutating GMC property tax records, transferring hotel commercial licenses, and releasing bank fixed deposits.
+                    The High Court of Sikkim has consistently recognized that probate is not a prerequisite for establishing rights under a Will in Sikkim outside the historical presidency limits. A registered Will constitutes solid documentary proof for mutating GMC property tax records, transferring hotel shop licenses, and releasing bank fixed deposits.
                   </p>
                   <div className="pt-2 text-xs text-slate-500 flex items-center gap-1.5">
                     <Check className="w-3.5 h-3.5 text-emerald-600" />
-                    <span>Enables immediate asset transmission without lengthy court probate suits</span>
+                    <span>Enables immediate asset transfer without lengthy court probate suits</span>
                   </div>
                 </div>
 
                 <div className="bg-white rounded-3xl border border-rose-200 p-6 shadow-xs space-y-3 bg-rose-50/30">
                   <span className="px-3 py-1 rounded-full bg-rose-100 text-[#C65378] text-xs font-extrabold uppercase">
-                    Voluntary Filings: High-Value Disputes
+                    Voluntary Filings: High-Value Fights
                   </span>
                   <h3 className="font-bold text-base text-slate-900">
                     When is Probate Filed in District Court Gangtok?
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    An executor or beneficiary may choose to file for probate or letters of administration before the District and Sessions Judge, East Sikkim at Gangtok only when hostile legal heirs challenge the testator&apos;s mental soundness or allege fraudulent execution. A court-granted probate delivers a conclusive judgment <em>in rem</em>.
+                    An executor or heir may choose to file for probate or letters of management before the District and Sessions Judge, East Sikkim at Gangtok only when hostile legal heirs challenge the Will maker&apos;s mental soundness or allege fraudulent signing. A court-granted probate delivers a strong judgment <em>in rem</em>.
                   </p>
                   <div className="pt-2 text-xs text-slate-500 flex items-center gap-1.5">
                     <AlertTriangle className="w-3.5 h-3.5 text-[#C65378]" />
-                    <span>Conclusive decree that permanently forecloses collateral civil claims</span>
+                    <span>Strong decree that permanently forecloses collateral civil claims</span>
                   </div>
                 </div>
               </div>
@@ -721,10 +721,10 @@ export default function GangtokLocationClient({ faqs }: Props) {
                   <span>SRO JURISDICTION DIRECTORY</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  4. Gangtok Sub-Registrar Office: SRO Registration Directory
+                  4. Gangtok SRO office: SRO Registration Directory
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Will registration across Gangtok and Sikkim is administered by the respective District Collectorates and Sub-Registrar Offices. Under Section 32 of the Registration Act, 1908, your Will can be registered at the Sub-Registrar Office having jurisdiction over your primary residence or where your immovable estate is situated:
+                  Will registration across Gangtok and Sikkim is administered by the respective District Collectorates and Sub-Registrar Offices. Under Section 32 of the Registration Act, 1908, your Will can be registered at the SRO office having area over your primary residence or where your immovable estate is situated:
                 </p>
               </div>
 
@@ -794,7 +794,7 @@ export default function GangtokLocationClient({ faqs }: Props) {
                       <p className="text-slate-600">{activeHubData.timings}</p>
                     </div>
                     <div className="md:col-span-2 space-y-1">
-                      <span className="font-bold text-slate-900 block">Key Localities in Jurisdiction:</span>
+                      <span className="font-bold text-slate-900 block">Key Localities in Area:</span>
                       <p className="text-slate-600 leading-relaxed">{activeHubData.areas}</p>
                     </div>
                   </div>
@@ -807,7 +807,7 @@ export default function GangtokLocationClient({ faqs }: Props) {
                       href="/contact"
                       className="inline-flex items-center gap-1.5 font-bold text-[#C65378] hover:underline"
                     >
-                      <span>Request Advocate Assistance for {activeHubData.name}</span>
+                      <span>Request Lawyer Help for {activeHubData.name}</span>
                       <ArrowRight className="w-3.5 h-3.5" />
                     </a>
                   </div>
@@ -826,7 +826,7 @@ export default function GangtokLocationClient({ faqs }: Props) {
                   5. Regional Cities: Will Drafting in Gangtok &amp; Sikkim
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Estate planning and property succession across Gangtok and Sikkim encompass urban commercial real estate along MG Marg and Deorali, residential hills in Tadong and Sichey, pharmaceutical and trading establishments in Singtam and Rangpo, and customary ancestral holdings in Namchi, Gyalshing, and Mangan. Governed by Article 371F of the Constitution and Revenue Order No. 1 of 1917, our estate advocates deliver customized legal drafting, GMC mutation compliance, and Sub-Registrar accompaniment across all key regional cities:
+                  Estate planning and property succession across Gangtok and Sikkim encompass urban shop real estate along MG Marg and Deorali, home hills in Tadong and Sichey, pharmaceutical and trading establishments in Singtam and Rangpo, and customary family holdings in Namchi, Gyalshing, and Mangan. Governed by Article 371F of the Constitution and Revenue Order No. 1 of 1917, our estate lawyers deliver customized legal drafting, GMC name change compliance, and Sub-Registrar accompaniment across all key regional cities:
                 </p>
               </div>
 
@@ -837,7 +837,7 @@ export default function GangtokLocationClient({ faqs }: Props) {
                     <div className="flex items-center justify-between gap-2">
                       <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-rose-50 text-[#C65378] border border-rose-100">
                         <MapPin className="w-3.5 h-3.5" />
-                        Commercial Heart &amp; Tourism
+                        Shop Heart &amp; Tourism
                       </span>
                       <span className="text-[11px] font-semibold text-slate-500 bg-slate-100 px-2.5 py-1 rounded-lg">
                         SRO Gangtok (DAC Sichey)
@@ -856,22 +856,22 @@ export default function GangtokLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Specialized <strong>Will drafting services in MG Marg and Deorali</strong> for prime commercial shopping complexes, heritage hotel properties, rooftop restaurants, and residential buildings. Formulates unambiguous clauses for Gangtok Municipal Corporation (GMC) trade license transfer, commercial leasehold renewals, and equal distribution of rental income among legal heirs.
+                      Specialized <strong>Will drafting services in MG Marg and Deorali</strong> for prime shop shopping complexes, heritage hotel assets, rooftop restaurants, and home buildings. Formulates clear clauses for Gangtok Municipal Corporation (GMC) trade license transfer, shop leasehold renewals, and equal split of rental income among legal heirs.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
                       <div className="flex items-center gap-2 font-bold text-slate-900">
                         <Building className="w-3.5 h-3.5 text-[#C65378]" />
-                        <span>SRO Hub: District Administrative Centre, Sichey</span>
+                        <span>SRO Hub: District Office Centre, Sichey</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        SRO appointment scheduling, advocate physical attendance at DAC Sichey, and Section 31 doorstep execution for elderly testators.
+                        SRO appointment scheduling, lawyer physical attendance at DAC Sichey, and Section 31 doorstep signing for elderly testators.
                       </p>
                     </div>
                   </div>
 
                   <div className="pt-4 mt-4 border-t border-slate-100 flex items-center justify-between">
-                    <span className="text-xs font-bold text-slate-500">Commercial &amp; Hotel Properties</span>
+                    <span className="text-xs font-bold text-slate-500">Shop &amp; Hotel Assets</span>
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
@@ -909,7 +909,7 @@ export default function GangtokLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Customized <strong>Will drafting services in Tadong and Ranipool</strong> for university faculty, healthcare professionals, and family homeowners along National Highway 10. Structures succession for multi-storey residential complexes, rental hostel units, mutual fund holdings, and GMC municipal tax assessment entries.
+                      Customized <strong>Will drafting services in Tadong and Ranipool</strong> for university faculty, healthcare professionals, and family homeowners along National Highway 10. Structures succession for multi-storey home complexes, rental hostel units, mutual fund holdings, and GMC municipal tax assessment entries.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -918,7 +918,7 @@ export default function GangtokLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Sub-Divisional Magistrate Complex, Tadong</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Smooth registration support, witness verification, and expedited Book III government record entry.
+                        Smooth registration support, witness check, and expedited Book III government record entry.
                       </p>
                     </div>
                   </div>
@@ -943,7 +943,7 @@ export default function GangtokLocationClient({ faqs }: Props) {
                     <div className="flex items-center justify-between gap-2">
                       <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-rose-50 text-[#C65378] border border-rose-100">
                         <MapPin className="w-3.5 h-3.5" />
-                        Judicial &amp; Administrative Zone
+                        Judicial &amp; Office Zone
                       </span>
                       <span className="text-[11px] font-semibold text-slate-500 bg-slate-100 px-2.5 py-1 rounded-lg">
                         SRO Gangtok East (DAC)
@@ -962,16 +962,16 @@ export default function GangtokLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Comprehensive <strong>Will drafting services in Sichey and Burtuk</strong> for civil servants, retired judicial officers, and plotted estate owners near the High Court of Sikkim. Establishes unambiguous estate transmission for hillside residential villas, bank deposits, demat portfolios, and explicit revocation of prior testamentary instruments.
+                      Full <strong>Will drafting services in Sichey and Burtuk</strong> for civil servants, retired judicial officers, and plotted estate owners near the High Court of Sikkim. Establishes clear estate transfer for hillside home villas, bank deposits, demat portfolios, and explicit revocation of prior testamentary instruments.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
                       <div className="flex items-center gap-2 font-bold text-slate-900">
                         <Building className="w-3.5 h-3.5 text-[#C65378]" />
-                        <span>SRO Hub: District Administrative Centre, Sichey</span>
+                        <span>SRO Hub: District Office Centre, Sichey</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Immediate proximity to SRO Gangtok, rapid document processing, and senior advocate consultation.
+                        Immediate proximity to SRO Gangtok, rapid document processing, and senior lawyer talk.
                       </p>
                     </div>
                   </div>
@@ -1015,16 +1015,16 @@ export default function GangtokLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Tailored <strong>Will drafting services in Namchi and Jorethang</strong> for South Sikkim business proprietors, trading merchants at the Rangeet confluence, and tea estate/farmland holders. Codifies family enterprise succession, commercial godowns, and compliance with South Sikkim District Collectorate land records.
+                      Tailored <strong>Will drafting services in Namchi and Jorethang</strong> for South Sikkim business proprietors, trading merchants at the Rangeet confluence, and tea estate/farmland holders. Codifies family enterprise succession, shop godowns, and compliance with South Sikkim District Collectorate land records.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
                       <div className="flex items-center gap-2 font-bold text-slate-900">
                         <Building className="w-3.5 h-3.5 text-[#C65378]" />
-                        <span>SRO Hub: District Administrative Centre, Namchi</span>
+                        <span>SRO Hub: District Office Centre, Namchi</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Complete documentation review, Namchi Sub-Registrar appointment scheduling, and Book III execution.
+                        Complete papers review, Namchi Sub-Registrar appointment scheduling, and Book III signing.
                       </p>
                     </div>
                   </div>
@@ -1068,7 +1068,7 @@ export default function GangtokLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Specialized <strong>Will drafting services in Singtam and Rangpo</strong> for pharmaceutical enterprise directors, logistics operators, and commercial wholesale traders. Organizes corporate shareholding succession, industrial lease transfers with Commerce and Industries Department, and commercial real estate conveyances.
+                      Specialized <strong>Will drafting services in Singtam and Rangpo</strong> for pharmaceutical enterprise directors, logistics operators, and shop wholesale traders. Organizes corporate shareholding succession, industrial lease transfers with Commerce and Industries Department, and shop real estate conveyances.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1121,16 +1121,16 @@ export default function GangtokLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Expert <strong>Will drafting services in Gyalshing and Pelling</strong> for luxury resort owners, eco-tourism homestay operators, and ancestral landholders. Clarifies customary succession norms for Bhutia and Lepcha families, separates homestay operational licenses from freehold real estate, and prevents land fragmentation.
+                      Expert <strong>Will drafting services in Gyalshing and Pelling</strong> for luxury resort owners, eco-tourism homestay operators, and family landholders. Clarifies customary succession norms for Bhutia and Lepcha families, separates homestay operational licenses from freehold real estate, and prevents land fragmentation.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
                       <div className="flex items-center gap-2 font-bold text-slate-900">
                         <Building className="w-3.5 h-3.5 text-[#C65378]" />
-                        <span>SRO Hub: District Administrative Centre, Gyalshing</span>
+                        <span>SRO Hub: District Office Centre, Gyalshing</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Customary land law alignment, resort asset bequests, and Sub-Registrar registration assistance.
+                        Customary land law alignment, resort asset bequests, and Sub-Registrar registration help.
                       </p>
                     </div>
                   </div>
@@ -1174,13 +1174,13 @@ export default function GangtokLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Specialized <strong>Will drafting services in Mangan and Chungthang</strong> operating under rigorous statutory scrutiny. Enforces strict compliance with Revenue Order No. 1 of 1917, protecting Dzongu tribal lands and traditional Dzumsa community self-governance conventions while ensuring valid movable asset transfers.
+                      Specialized <strong>Will drafting services in Mangan and Chungthang</strong> operating under rigorous legal scrutiny. Enforces strict compliance with Revenue Order No. 1 of 1917, protecting Dzongu tribal lands and traditional Dzumsa community self-governance conventions while making sure valid movable asset transfers.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
                       <div className="flex items-center gap-2 font-bold text-slate-900">
                         <Building className="w-3.5 h-3.5 text-[#C65378]" />
-                        <span>SRO Hub: District Administrative Centre, Mangan</span>
+                        <span>SRO Hub: District Office Centre, Mangan</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
                         Tribal land succession compliance, customary law reconciliation, and official SRO Mangan registration.
@@ -1227,13 +1227,13 @@ export default function GangtokLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Dedicated <strong>Will drafting services in Pakyong and Rhenock</strong> for fast-appreciating airport corridor lands, cardamom agro-holdings, and residential plotted properties. Protects testators from unvetted land deals and ensures clear Parcha Khatiyan mutation across the newly established Pakyong District.
+                      Dedicated <strong>Will drafting services in Pakyong and Rhenock</strong> for fast-appreciating airport corridor lands, cardamom agro-holdings, and home plotted assets. Protects testators from unvetted land deals and ensures clear Parcha Khatiyan name change across the newly established Pakyong District.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
                       <div className="flex items-center gap-2 font-bold text-slate-900">
                         <Building className="w-3.5 h-3.5 text-[#C65378]" />
-                        <span>SRO Hub: District Administrative Centre, Pakyong</span>
+                        <span>SRO Hub: District Office Centre, Pakyong</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
                         Airport vicinity land succession, cardamon plantation bequests, and Pakyong SRO registration.
@@ -1268,7 +1268,7 @@ export default function GangtokLocationClient({ faqs }: Props) {
                   6. Step-by-Step SOP: Drafting to SRO Registration in Gangtok
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Follow this verified 5-stage legal operating procedure to prepare, execute, and register your Will before the Sub-Registrar in Gangtok, Sikkim:
+                  Follow this verified 5-stage legal operating step to prepare, execute, and register your Will before the Sub-Registrar in Gangtok, Sikkim:
                 </p>
               </div>
 
@@ -1282,7 +1282,7 @@ export default function GangtokLocationClient({ faqs }: Props) {
                       Asset Audit
                     </h3>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Compile complete details of GMC houses, commercial shops, rural land parchas, bank accounts, and demat assets.
+                      Compile complete details of GMC houses, shop shops, rural land parchas, bank accounts, and demat assets.
                     </p>
                   </div>
                 </div>
@@ -1296,7 +1296,7 @@ export default function GangtokLocationClient({ faqs }: Props) {
                       Land Check
                     </h3>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Verify Revenue Order No. 1 and Article 371F compliance to ensure ancestral land bequests remain legally valid.
+                      Verify Revenue Order No. 1 and Article 371F compliance to make sure family land bequests remain legally valid.
                     </p>
                   </div>
                 </div>
@@ -1307,7 +1307,7 @@ export default function GangtokLocationClient({ faqs }: Props) {
                       3
                     </span>
                     <h3 className="font-bold text-sm text-slate-900">
-                      Advocate Drafting
+                      Lawyer Drafting
                     </h3>
                     <p className="text-xs text-slate-600 leading-relaxed">
                       Draft customized legal clauses covering revocation of prior wills, survivorship, executor powers, and minor guardianships.
@@ -1321,10 +1321,10 @@ export default function GangtokLocationClient({ faqs }: Props) {
                       4
                     </span>
                     <h3 className="font-bold text-sm text-slate-900">
-                      Valid Execution
+                      Valid Signing
                     </h3>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Print on A4 paper and sign each page in the physical presence of two independent non-beneficiary adult witnesses.
+                      Print on A4 paper and sign each page in the physical presence of two independent non-heir adult witnesses.
                     </p>
                   </div>
                 </div>
@@ -1356,7 +1356,7 @@ export default function GangtokLocationClient({ faqs }: Props) {
                   7. Section 31 Doorstep SRO Registration for Senior Citizens
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Gangtok&apos;s steep Himalayan topography and harsh winter climate can make traveling to the District Administrative Centre at Sichey difficult for senior citizens, bedridden individuals, or persons with medical mobility restrictions. Under <strong>Section 31 of the Registration Act, 1908</strong>, the Sub-Registrar holds statutory power to attend a private residence or medical hospital to register a Will.
+                  Gangtok&apos;s steep Himalayan topography and harsh winter climate can make traveling to the District Office Centre at Sichey difficult for senior citizens, bedridden people, or persons with medical mobility restrictions. Under <strong>Section 31 of the Registration Act, 1908</strong>, the Sub-Registrar holds legal power to attend a private residence or medical hospital to register a Will.
                 </p>
               </div>
 
@@ -1376,7 +1376,7 @@ export default function GangtokLocationClient({ faqs }: Props) {
                   <div className="flex items-start gap-3 p-4 rounded-2xl bg-slate-50 border border-slate-100">
                     <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
                     <div>
-                      <strong className="text-slate-900 block">Commission Application</strong>
+                      <strong className="text-slate-900 block">Commission Form</strong>
                       <span className="text-slate-600">Our legal counsel prepares and submits the formal Section 31 special commission petition before the jurisdictional Gangtok Sub-Registrar.</span>
                     </div>
                   </div>
@@ -1408,10 +1408,10 @@ export default function GangtokLocationClient({ faqs }: Props) {
                   <span>INTERACTIVE CHECKLIST</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  8. Document Checklist for Gangtok Sub-Registrar Office
+                  8. Document Checklist for Gangtok SRO office
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Prepare your documents before visiting the District Administrative Centre Sichey or scheduling a home visit. You have verified <strong>{checkedCount} of {checklist.length}</strong> required documents:
+                  Prepare your documents before visiting the District Office Centre Sichey or scheduling a home visit. You have verified <strong>{checkedCount} of {checklist.length}</strong> required documents:
                 </p>
               </div>
 
@@ -1456,23 +1456,23 @@ export default function GangtokLocationClient({ faqs }: Props) {
                   <span>PROPERTY DYNAMICS</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  9. Gangtok Property Types: GMC Flats, Land &amp; Ancestral Plots
+                  9. Gangtok Property Types: GMC Flats, Land &amp; Family Plots
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Succession procedures across Gangtok vary depending on the nature of property tenure, municipal boundaries, and constitutional land protections:
+                  Succession steps across Gangtok vary depending on the nature of property tenure, municipal boundaries, and constitutional land protections:
                 </p>
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <div className="bg-white rounded-3xl border border-slate-200/90 p-6 shadow-xs space-y-3">
                   <span className="px-3 py-1 rounded-full bg-rose-100 text-[#C65378] text-xs font-bold uppercase">
-                    Municipal Urban Properties
+                    Municipal Urban Assets
                   </span>
                   <h3 className="font-bold text-base text-slate-900">
                     GMC Houses &amp; MG Marg Shops
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Urban buildings under Gangtok Municipal Corporation (GMC) jurisdiction require clear municipal tax register mutation. The registered Will directs GMC to substitute ownership on property tax registers and trade licenses without court delays.
+                    Urban buildings under Gangtok Municipal Corporation (GMC) area require clear municipal tax register name change. The registered Will directs GMC to substitute ownership on property tax registers and trade licenses without court delays.
                   </p>
                 </div>
 
@@ -1481,22 +1481,22 @@ export default function GangtokLocationClient({ faqs }: Props) {
                     Protected Tribal Holdings
                   </span>
                   <h3 className="font-bold text-base text-slate-900">
-                    Bhutia-Lepcha Ancestral Lands
+                    Bhutia-Lepcha Family Lands
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Ancestral tribal lands governed by Revenue Order No. 1 of 1917 demand careful drafting. Bequests of restricted ancestral lands must remain strictly within eligible community lines to ensure full enforceability before the District Revenue Authority.
+                    Family tribal lands governed by Revenue Order No. 1 of 1917 demand careful drafting. Bequests of restricted family lands must remain strictly within eligible community lines to make sure full enforceability before the District Revenue Authority.
                   </p>
                 </div>
 
                 <div className="bg-white rounded-3xl border border-slate-200/90 p-6 shadow-xs space-y-3">
                   <span className="px-3 py-1 rounded-full bg-emerald-100 text-emerald-800 text-xs font-bold uppercase">
-                    Commercial &amp; Hospitality
+                    Shop &amp; Hospitality
                   </span>
                   <h3 className="font-bold text-base text-slate-900">
                     Hotels, Homestays &amp; Pharma Units
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Tourism resorts in Gangtok and Pelling, commercial fleet vehicles, and manufacturing or trading units in Singtam and Rangpo require customized clauses governing ongoing business management, trade permits, and corporate shares.
+                    Tourism resorts in Gangtok and Pelling, shop fleet vehicles, and manufacturing or trading units in Singtam and Rangpo require customized clauses governing ongoing business management, trade permits, and corporate shares.
                   </p>
                 </div>
               </div>
@@ -1513,7 +1513,7 @@ export default function GangtokLocationClient({ faqs }: Props) {
                   10. Official Sikkim SRO Registration Fees &amp; Stamp Duty
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Unlike commercial sale deeds or gift deeds that attract substantial stamp duty and transfer charges in Sikkim, testamentary Wills are completely exempt from ad valorem property value stamp duty. Government registration charges in Gangtok are purely nominal:
+                  Unlike shop sale deeds or gift deeds that attract substantial stamp duty and transfer charges in Sikkim, testamentary Wills are completely exempt from ad valorem property value stamp duty. Government registration charges in Gangtok are purely nominal:
                 </p>
               </div>
 
@@ -1522,7 +1522,7 @@ export default function GangtokLocationClient({ faqs }: Props) {
                   <thead>
                     <tr className="bg-slate-100/80 border-b border-slate-200 text-slate-800">
                       <th className="p-4 font-bold">Fee Component</th>
-                      <th className="p-4 font-bold">Statutory Amount</th>
+                      <th className="p-4 font-bold">Legal Amount</th>
                       <th className="p-4 font-bold">Remittance Authority</th>
                     </tr>
                   </thead>
@@ -1535,7 +1535,7 @@ export default function GangtokLocationClient({ faqs }: Props) {
                     <tr>
                       <td className="p-4 font-semibold">SRO Book III Registration Fee</td>
                       <td className="p-4 font-bold text-[#C65378]">Nominal Government Fee</td>
-                      <td className="p-4">Sub-Registrar Office Gangtok (DAC Sichey)</td>
+                      <td className="p-4">SRO office Gangtok (DAC Sichey)</td>
                     </tr>
                     <tr>
                       <td className="p-4 font-semibold">Computer Scanning &amp; Archival Charges</td>
@@ -1563,7 +1563,7 @@ export default function GangtokLocationClient({ faqs }: Props) {
                   11. Transparent Will Packages &amp; Legal Fees in Gangtok
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Choose the legal assistance package tailored to your family&apos;s estate planning needs and property portfolio in Gangtok:
+                  Choose the legal help package tailored to your family&apos;s estate planning needs and property portfolio in Gangtok:
                 </p>
               </div>
 
@@ -1581,7 +1581,7 @@ export default function GangtokLocationClient({ faqs }: Props) {
                       ₹1,990
                     </div>
                     <p className="text-xs text-slate-600">
-                      Ideal for individual homeowners with GMC residential houses, bank savings, and demat assets.
+                      Ideal for individual homeowners with GMC home houses, bank savings, and demat assets.
                     </p>
                     <ul className="space-y-2.5 text-xs text-slate-700 pt-3 border-t border-slate-100">
                       <li className="flex items-center gap-2">
@@ -1590,11 +1590,11 @@ export default function GangtokLocationClient({ faqs }: Props) {
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>Legally vetted statutory clauses</span>
+                        <span>Legally vetted legal clauses</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>Instant PDF download &amp; execution guide</span>
+                        <span>Instant PDF download &amp; signing guide</span>
                       </li>
                     </ul>
                   </div>
@@ -1614,16 +1614,16 @@ export default function GangtokLocationClient({ faqs }: Props) {
                   </div>
                   <div className="space-y-4">
                     <span className="text-xs font-bold uppercase tracking-wider text-[#C65378]">
-                      Comprehensive
+                      Full
                     </span>
                     <h3 className="font-extrabold text-xl text-slate-900">
-                      Advocate Consultation
+                      Lawyer Talk
                     </h3>
                     <div className="text-3xl font-black text-slate-900">
                       ₹4,990
                     </div>
                     <p className="text-xs text-slate-600">
-                      Senior estate advocate review for GMC properties, Revenue Order No. 1 compliance, and multi-heir estates.
+                      Senior estate lawyer review for GMC assets, Revenue Order No. 1 compliance, and multi-heir estates.
                     </p>
                     <ul className="space-y-2.5 text-xs text-slate-700 pt-3 border-t border-slate-100">
                       <li className="flex items-center gap-2">
@@ -1632,7 +1632,7 @@ export default function GangtokLocationClient({ faqs }: Props) {
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>1-on-1 consultation with senior advocate</span>
+                        <span>1-on-1 talk with senior lawyer</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
@@ -1648,7 +1648,7 @@ export default function GangtokLocationClient({ faqs }: Props) {
                     href="/contact"
                     className="mt-6 w-full py-3 rounded-xl bg-[#C65378] text-white text-xs font-bold text-center hover:bg-[#a13c5d] transition-colors cursor-pointer"
                   >
-                    Book Advocate Call
+                    Book Lawyer Call
                   </a>
                 </div>
 
@@ -1674,7 +1674,7 @@ export default function GangtokLocationClient({ faqs }: Props) {
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>Advocate physically attends DAC Sichey</span>
+                        <span>Lawyer physically attends DAC Sichey</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
@@ -1748,7 +1748,7 @@ export default function GangtokLocationClient({ faqs }: Props) {
                   <span>STATUTORY CITATIONS</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  13. Statutory Citations &amp; Sikkim Legal Framework
+                  13. Legal Citations &amp; Sikkim Legal Framework
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Our drafting protocols comply strictly with codified Indian statutes, Sikkim pre-merger protected enactments, and local registration rules:
@@ -1779,7 +1779,7 @@ export default function GangtokLocationClient({ faqs }: Props) {
                     Revenue Order No. 1 of 1917
                   </span>
                   <p className="text-xs text-slate-600">
-                    Statutory prohibition on alienation of Bhutia-Lepcha ancestral lands to non-tribals.
+                    Legal prohibition on alienation of Bhutia-Lepcha family lands to non-tribals.
                   </p>
                 </div>
 
@@ -1800,7 +1800,7 @@ export default function GangtokLocationClient({ faqs }: Props) {
                 Protect Your Gangtok Estate &amp; Family Heritage
               </h3>
               <p className="text-sm sm:text-base text-slate-200 max-w-2xl mx-auto leading-relaxed">
-                Do not leave your hard-earned Gangtok homes, businesses, or land holdings to legal deadlock. Draft a legally sound Will online today or consult our senior estate planning advocates.
+                Do not leave your hard-earned Gangtok homes, businesses, or land holdings to legal deadlock. Draft a legally sound Will online today or consult our senior estate planning lawyers.
               </p>
               <div className="pt-3 flex flex-col sm:flex-row items-center justify-center gap-4">
                 <a
@@ -1814,7 +1814,7 @@ export default function GangtokLocationClient({ faqs }: Props) {
                   href="/contact"
                   className="w-full sm:w-auto px-6 py-3.5 rounded-full bg-white/10 text-white font-bold text-sm sm:text-base hover:bg-white/20 transition-all border border-white/20"
                 >
-                  Book Advocate Consultation
+                  Book Lawyer Talk
                 </a>
               </div>
             </section>

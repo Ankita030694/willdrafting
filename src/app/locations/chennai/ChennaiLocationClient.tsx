@@ -155,20 +155,20 @@ const INITIAL_CHECKLIST = [
   },
   {
     id: "item-2",
-    label: "Original Aadhaar Card & PAN of Testator",
-    detail: "Required for biometric identity verification and digital photograph capture at the Chennai SRO counter.",
+    label: "Original Aadhaar Card & PAN of Will maker",
+    detail: "Required for biometric identity check and digital photograph capture at the Chennai SRO counter.",
     checked: true,
   },
   {
     id: "item-3",
     label: "Two Independent Adult Witnesses with Aadhaar",
-    detail: "Witnesses must carry original photo IDs and must not be beneficiaries receiving property in the Will.",
+    detail: "Witnesses must carry original photo IDs and must not be heirs receiving property in the Will.",
     checked: true,
   },
   {
     id: "item-4",
-    label: "Doctor Mental Fitness Certificate (For Seniors)",
-    detail: "Signed by an MBBS doctor. Confirms sound mental capacity and protects against future probate challenges.",
+    label: "Doctor Sound Mind Note (For Seniors)",
+    detail: "Signed by an MBBS doctor. Confirms sound mental capacity and protects against future probate fights.",
     checked: false,
   },
   {
@@ -186,7 +186,7 @@ const INITIAL_CHECKLIST = [
   {
     id: "item-7",
     label: "Two Passport-Sized Photographs Each",
-    detail: "Recent color passport photos for the testator and both witnesses for pasting in official Book III registers.",
+    detail: "Recent color passport photos for the Will maker and both witnesses for pasting in official Book III registers.",
     checked: false,
   },
 ];
@@ -284,7 +284,7 @@ export default function ChennaiLocationClient({ faqs }: Props) {
 
               <p className="text-base sm:text-lg text-slate-200 leading-relaxed font-normal max-w-2xl">
                 Draft a legally valid Will for your Chennai flats, CMDA plots, and bank investments.
-                Get expert Madras High Court probate guidance, TNREGINET online registration help, and doorstep execution for senior citizens.
+                Get expert Madras High Court probate guidance, TNREGINET online registration help, and doorstep signing for senior citizens.
               </p>
 
               <div className="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
@@ -527,7 +527,7 @@ export default function ChennaiLocationClient({ faqs }: Props) {
                       <span>Madras HC Probate Rule</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Chennai is a presidency town. Under Section 213 of the Indian Succession Act, probate is compulsory for Wills executed within Chennai or covering Chennai immovable properties.
+                      Chennai is a presidency town. Under Section 213 of the Indian Succession Act, probate is needed for Wills signed within Chennai or covering Chennai land and flats.
                     </p>
                   </div>
 
@@ -537,14 +537,14 @@ export default function ChennaiLocationClient({ faqs }: Props) {
                       <span>TNREGINET Digital Appointments</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Book online appointment tokens on <code>tnreginet.gov.in</code>. Pay nominal fees of ₹100 online and complete biometrics at your local Chennai Sub-Registrar Office.
+                      Book online appointment tokens on <code>tnreginet.gov.in</code>. Pay nominal fees of ₹100 online and complete biometrics at your local Chennai SRO office.
                     </p>
                   </div>
 
                   <div className="p-4 rounded-2xl bg-slate-50/70 border border-slate-100 space-y-1.5">
                     <div className="flex items-center gap-2 font-bold text-sm text-slate-900">
                       <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
-                      <span>Greater Chennai Corporation Mutation</span>
+                      <span>Greater Chennai Corporation Name Change</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
                       A registered Will accelerates property tax name change with Greater Chennai Corporation (GCC) and Patta transfer through Tamil Nadu e-Sevai centers.
@@ -557,7 +557,7 @@ export default function ChennaiLocationClient({ faqs }: Props) {
                       <span>Section 31 Doorstep Service</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Senior citizens in Mylapore, Adyar, and Anna Nagar can request a Sub-Registrar home visit with an MBBS doctor fitness certificate under Section 31.
+                      Senior citizens in Mylapore, Adyar, and Anna Nagar can request a Sub-Registrar home visit with an MBBS doctor fitness paper under Section 31.
                     </p>
                   </div>
                 </div>
@@ -590,7 +590,7 @@ export default function ChennaiLocationClient({ faqs }: Props) {
                     Sound Mind &amp; Capacity
                   </h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Under Section 59 of the Indian Succession Act, any person of sound mind who is not a minor may dispose of property by Will. For senior citizens, obtaining a medical fitness certificate from an MBBS practitioner validates testamentary capacity against future challenges.
+                    Under Section 59 of the Indian Succession Act, any person of sound mind who is not a minor may dispose of property by Will. For senior citizens, getting a medical fitness paper from an MBBS practitioner validates sound mind against future fights.
                   </p>
                 </div>
 
@@ -602,7 +602,7 @@ export default function ChennaiLocationClient({ faqs }: Props) {
                     Two Independent Witnesses
                   </h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Section 63(c) requires the testator to sign in the presence of at least two adult witnesses. Under Section 67, beneficiaries and their spouses cannot be attesting witnesses. Choosing independent friends, doctors, or neighbours ensures complete legal validity.
+                    Section 63(c) requires the Will maker to sign in the presence of at least two adult witnesses. Under Section 67, heirs and their spouses cannot be witnesses. Choosing independent friends, doctors, or neighbours ensures complete legal validity.
                   </p>
                 </div>
 
@@ -614,7 +614,7 @@ export default function ChennaiLocationClient({ faqs }: Props) {
                     Executor Appointment
                   </h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Appointing an executor is essential in Chennai because probate is compulsory under Section 213. The executor petitions the Madras High Court or City Civil Court to secure probate and oversee the legal distribution of your assets.
+                    Appointing an executor is essential in Chennai because probate is needed under Section 213. The executor petitions the Madras High Court or City Civil Court to secure probate and oversee the legal split of your assets.
                   </p>
                 </div>
               </div>
@@ -633,7 +633,7 @@ export default function ChennaiLocationClient({ faqs }: Props) {
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Under Section 18(e) of the Registration Act, 1908, registering a Will is optional in Tamil Nadu.
-                  However, registration before the Sub-Registrar offers decisive evidentiary advantages in Chennai courts and municipal bodies.
+                  However, registration before the Sub-Registrar offers decisive proof advantages in Chennai courts and municipal bodies.
                 </p>
               </div>
 
@@ -650,7 +650,7 @@ export default function ChennaiLocationClient({ faqs }: Props) {
                     <tr>
                       <td className="p-4 font-semibold text-slate-900">Legal Validity</td>
                       <td className="p-4">Legally valid if signed before 2 witnesses</td>
-                      <td className="p-4 text-emerald-700 font-bold">Valid with high evidentiary presumption</td>
+                      <td className="p-4 text-emerald-700 font-bold">Valid with high proof presumption</td>
                     </tr>
                     <tr>
                       <td className="p-4 font-semibold text-slate-900">Tampering &amp; Loss Risk</td>
@@ -658,17 +658,17 @@ export default function ChennaiLocationClient({ faqs }: Props) {
                       <td className="p-4 text-emerald-700 font-bold">Zero: Safely archived in SRO Book III records</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-semibold text-slate-900">Patta &amp; GCC Mutation</td>
+                      <td className="p-4 font-semibold text-slate-900">Patta &amp; GCC Name Change</td>
                       <td className="p-4">Requires detailed inquiry and survivor consents</td>
-                      <td className="p-4 text-emerald-700 font-bold">Fast-track name mutation with GCC and e-Sevai</td>
+                      <td className="p-4 text-emerald-700 font-bold">Fast-track name name change with GCC and e-Sevai</td>
                     </tr>
                     <tr>
                       <td className="p-4 font-semibold text-slate-900">Madras HC Probate</td>
-                      <td className="p-4">Requires intensive proof of testator signature</td>
-                      <td className="p-4 text-emerald-700 font-bold">Biometrics and officer verification simplify probate</td>
+                      <td className="p-4">Requires intensive proof of Will maker signature</td>
+                      <td className="p-4 text-emerald-700 font-bold">Biometrics and officer check simplify probate</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-semibold text-slate-900">Bank &amp; Demat Transmission</td>
+                      <td className="p-4 font-semibold text-slate-900">Bank &amp; Demat Transfer</td>
                       <td className="p-4">Banks often demand indemnity bonds or court orders</td>
                       <td className="p-4 text-emerald-700 font-bold">Accepted smoothly by Chennai bank branches</td>
                     </tr>
@@ -686,7 +686,7 @@ export default function ChennaiLocationClient({ faqs }: Props) {
                 </div>
                 {/* H2: Exactly 52 characters */}
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  3. Madras High Court: Mandatory Probate Jurisdiction
+                  3. Madras High Court: Needed Probate Area
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Chennai holds a distinct legal status in Indian succession law.
@@ -702,10 +702,10 @@ export default function ChennaiLocationClient({ faqs }: Props) {
                       <span>Section 213 Indian Succession Act Applies</span>
                     </div>
                     <p>
-                      Section 213(1) establishes that no right as executor or legatee can be established in any court unless probate or letters of administration have been granted.
+                      Section 213(1) establishes that no right as executor or legatee can be established in any court unless probate or letters of management have been granted.
                     </p>
                     <p>
-                      By virtue of Section 57(a) and 57(b), this rule compulsorily applies to Hindu, Buddhist, Sikh, and Jain Wills made within the Ordinary Original Civil Jurisdiction of the Madras High Court, or involving immovable property situated within Chennai city limits.
+                      By virtue of Section 57(a) and 57(b), this rule compulsorily applies to Hindu, Buddhist, Sikh, and Jain Wills made within the Ordinary Original Civil Area of the Madras High Court, or involving land and flats situated within Chennai city limits.
                     </p>
                   </div>
 
@@ -715,17 +715,17 @@ export default function ChennaiLocationClient({ faqs }: Props) {
                       <span>Chennai vs Rest of Tamil Nadu</span>
                     </div>
                     <p>
-                      For Wills made outside Chennai concerning properties outside Chennai limits (such as Coimbatore, Madurai, Trichy, or Salem), probate is <strong>not mandatory</strong> unless contested.
+                      For Wills made outside Chennai concerning assets outside Chennai limits (such as Coimbatore, Madurai, Trichy, or Salem), probate is <strong>not needed</strong> unless contested.
                     </p>
                     <p>
-                      However, if a resident in Coimbatore executes a Will bequeathing an apartment in Mylapore or Anna Nagar, that Will <strong>must be probated</strong> in Chennai courts to establish clean title.
+                      However, if a resident in Coimbatore executes a Will bequeathing an apartment in Mylapore or Anna Nagar, that Will <strong>must be probated</strong> in Chennai courts to set up clean title.
                     </p>
                   </div>
                 </div>
 
                 <div className="pt-4 border-t border-slate-100 flex flex-col sm:flex-row items-center justify-between gap-4">
                   <p className="text-xs text-slate-600">
-                    Need to verify whether your property falls under mandatory Madras High Court probate jurisdiction?
+                    Need to verify whether your property falls under needed Madras High Court probate area?
                   </p>
                   <div className="flex items-center gap-3">
                     <Link
@@ -760,7 +760,7 @@ export default function ChennaiLocationClient({ faqs }: Props) {
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Chennai registration is administered across Chennai Central, Chennai South, and Chennai North zones.
-                  Under Section 32 of the Registration Act, your Will can be registered at the Sub-Registrar Office where the testator resides, or where any real estate is situated.
+                  Under Section 32 of the Registration Act, your Will can be registered at the SRO office where the Will maker resides, or where any real estate is situated.
                 </p>
               </div>
 
@@ -845,7 +845,7 @@ export default function ChennaiLocationClient({ faqs }: Props) {
                       href="/contact"
                       className="inline-flex items-center gap-1.5 font-bold text-[#C65378] hover:underline"
                     >
-                      <span>Request Advocate Assistance for {activeDistrictData.name}</span>
+                      <span>Request Lawyer Help for {activeDistrictData.name}</span>
                       <ArrowRight className="w-3.5 h-3.5" />
                     </a>
                   </div>
@@ -865,7 +865,7 @@ export default function ChennaiLocationClient({ faqs }: Props) {
                   5. Area-Wise Will Drafting Services Across Chennai GCC
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Looking for legally verified <strong>Will drafting services in Mylapore, Anna Nagar, Adyar, or OMR</strong>? Our network of High Court advocates and succession experts provides home visits and Sub-Registrar support throughout the Greater Chennai Corporation area:
+                  Looking for legally verified <strong>Will drafting services in Mylapore, Anna Nagar, Adyar, or OMR</strong>? Our network of High Court lawyers and succession experts provides home visits and Sub-Registrar support throughout the Greater Chennai Corporation area:
                 </p>
               </div>
 
@@ -895,7 +895,7 @@ export default function ChennaiLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Looking for professional <strong>Will drafting services in Mylapore &amp; Mandaveli</strong>? Ancestral family homes, traditional agraharams, and undivided family properties in Mylapore and Mandaveli require meticulous boundary definitions, life interest bequests for surviving spouses, and Madras High Court probate structuring.
+                      Looking for professional <strong>Will drafting services in Mylapore &amp; Mandaveli</strong>? Family family homes, traditional agraharams, and undivided family assets in Mylapore and Mandaveli require meticulous boundary definitions, life interest bequests for surviving spouses, and Madras High Court probate structuring.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -904,13 +904,13 @@ export default function ChennaiLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Taluk Office Complex, Kutchery Road (SRO Mylapore)</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        TNREGINET portal appointment booking, advocate accompaniment, and Section 31 doorstep execution for senior citizens across Mylapore.
+                        TNREGINET portal appointment booking, lawyer accompaniment, and Section 31 doorstep signing for senior citizens across Mylapore.
                       </p>
                     </div>
                   </div>
 
                   <div className="pt-4 mt-4 border-t border-slate-100 flex items-center justify-between">
-                    <span className="text-xs font-bold text-slate-500">Mandatory Probate · ₹0 Stamp Duty</span>
+                    <span className="text-xs font-bold text-slate-500">Needed Probate · ₹0 Stamp Duty</span>
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
@@ -929,7 +929,7 @@ export default function ChennaiLocationClient({ faqs }: Props) {
                     <div className="flex items-center justify-between gap-2">
                       <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-rose-50 text-[#C65378] border border-rose-100">
                         <MapPin className="w-3.5 h-3.5" />
-                        Elite Suburbs &amp; Commercial Hubs
+                        Elite Suburbs &amp; Shop Hubs
                       </span>
                       <span className="text-[11px] font-semibold text-slate-500 bg-slate-100 px-2.5 py-1 rounded-lg">
                         SRO Central / Triplicane
@@ -948,7 +948,7 @@ export default function ChennaiLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Get specialized <strong>Will drafting services in Alwarpet &amp; George Town</strong>. Covers wholesale commercial trading units and ancestral godowns in George Town alongside elite residential apartments in Alwarpet. Precision drafting handles commercial lease rentals, business succession, and coparcenary partition records.
+                      Get specialized <strong>Will drafting services in Alwarpet &amp; George Town</strong>. Covers wholesale shop trading units and family godowns in George Town alongside elite home apartments in Alwarpet. Precision drafting handles shop lease rentals, business succession, and joint family split records.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -957,13 +957,13 @@ export default function ChennaiLocationClient({ faqs }: Props) {
                         <span>SRO Hub: 182 Bharathi Salai, Royapettah (SRO Central Chennai)</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Comprehensive assistance for high-value business succession wills, bank locker inventory bequests, and TNREGINET Book-III registration.
+                        Full help for high-value business succession wills, bank locker inventory bequests, and TNREGINET Book-III registration.
                       </p>
                     </div>
                   </div>
 
                   <div className="pt-4 mt-4 border-t border-slate-100 flex items-center justify-between">
-                    <span className="text-xs font-bold text-slate-500">Commercial Assets · High Court Probate</span>
+                    <span className="text-xs font-bold text-slate-500">Shop Assets · High Court Probate</span>
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
@@ -1001,7 +1001,7 @@ export default function ChennaiLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Opt for premier <strong>Will drafting services in Anna Nagar &amp; Kilpauk</strong>. Prime residential plots, multi-floor builder homes, and commercial establishments in Anna Nagar and Kilpauk require precise asset allocation, CMDA layout specifications, and legal guardianship clauses for minor children.
+                      Opt for premier <strong>Will drafting services in Anna Nagar &amp; Kilpauk</strong>. Prime home plots, multi-floor builder homes, and shop establishments in Anna Nagar and Kilpauk require precise asset allocation, CMDA layout specifications, and legal guardianship clauses for minor children.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1010,7 +1010,7 @@ export default function ChennaiLocationClient({ faqs }: Props) {
                         <span>SRO Hub: W-Block, 3rd Main Road, Anna Nagar West (SRO Anna Nagar)</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Advocate consultation, token scheduling on tnreginet.gov.in, and Greater Chennai Corporation (GCC) property tax mutation guidance.
+                        Lawyer talk, token scheduling on tnreginet.gov.in, and Greater Chennai Corporation (GCC) property tax name change guidance.
                       </p>
                     </div>
                   </div>
@@ -1054,7 +1054,7 @@ export default function ChennaiLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Secure expert <strong>Will drafting services in Adyar, Besant Nagar &amp; ECR</strong>. High-value bungalows, seaside villas, and luxury residential floors in Adyar and Besant Nagar demand robust revocation clauses, MBBS doctor medical capacity certifications, and named executors for Madras High Court probate.
+                      Secure expert <strong>Will drafting services in Adyar, Besant Nagar &amp; ECR</strong>. High-value bungalows, seaside villas, and luxury home floors in Adyar and Besant Nagar demand robust revocation clauses, MBBS doctor medical capacity certifications, and named executors for Madras High Court probate.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1063,7 +1063,7 @@ export default function ChennaiLocationClient({ faqs }: Props) {
                         <span>SRO Hub: 4th Cross Street, Gandhi Nagar (SRO Adyar)</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Doorstep advocate consultation for elderly residents, dual-witness coordination, and coastal property succession planning.
+                        Doorstep lawyer talk for elderly residents, dual-witness coordination, and coastal property succession planning.
                       </p>
                     </div>
                   </div>
@@ -1107,7 +1107,7 @@ export default function ChennaiLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Comprehensive <strong>Will drafting services in Velachery &amp; OMR Corridor</strong>. Tech professionals and NRIs owning multistory apartments in gated communities along the OMR corridor benefit from digital drafting, US stocks and vested RSUs bequests, Demat account transmissions, and nominee harmonization.
+                      Full <strong>Will drafting services in Velachery &amp; OMR Corridor</strong>. Tech professionals and NRIs owning multistory apartments in gated communities along the OMR corridor benefit from digital drafting, US stocks and vested RSUs bequests, Demat account transmissions, and nominee harmonization.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1116,7 +1116,7 @@ export default function ChennaiLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Rajiv Gandhi Salai (OMR), Sholinganallur</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Online consultation, remote witness scheduling, and cross-border tech asset succession planning for software professionals.
+                        Online talk, remote witness scheduling, and cross-border tech asset succession planning for software professionals.
                       </p>
                     </div>
                   </div>
@@ -1160,7 +1160,7 @@ export default function ChennaiLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Protect your family assets with <strong>Will drafting services in T. Nagar &amp; Nungambakkam</strong>. Traditional family estates, commercial showrooms near Panagal Park, and multi-generational family flats in T. Nagar and Nungambakkam. Clear testamentary shares among siblings to prevent costly family title disputes.
+                      Protect your family assets with <strong>Will drafting services in T. Nagar &amp; Nungambakkam</strong>. Traditional family estates, shop showrooms near Panagal Park, and multi-generational family flats in T. Nagar and Nungambakkam. Clear testamentary shares among siblings to prevent costly family title fights.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1169,7 +1169,7 @@ export default function ChennaiLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Integrated Registration Complex, 571 Anna Salai (Saidapet)</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Experienced High Court advocate drafting, fast-track SRO appointment booking, and GCC property tax title transfer support.
+                        Experienced High Court lawyer drafting, fast-track SRO appointment booking, and GCC property tax title transfer support.
                       </p>
                     </div>
                   </div>
@@ -1202,7 +1202,7 @@ export default function ChennaiLocationClient({ faqs }: Props) {
                   6. Step-by-Step SOP: Chennai Will Registration Flow
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Registering a Will in Chennai is straightforward when following this 5-step standard operating procedure:
+                  Registering a Will in Chennai is straightforward when following this 5-step standard operating step:
                 </p>
               </div>
 
@@ -1217,7 +1217,7 @@ export default function ChennaiLocationClient({ faqs }: Props) {
                       Inventory Assets &amp; Designate an Executor
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      List all Chennai immovable properties (GCC survey numbers, Patta numbers, flat details), bank accounts, demat holdings, and life insurance policies. Appoint a trustworthy executor who will administer the estate under Madras High Court probate proceedings.
+                      List all Chennai land and flats (GCC survey numbers, Patta numbers, flat details), bank accounts, demat holdings, and life insurance policies. Appoint a trustworthy executor who will administer the estate under Madras High Court probate proceedings.
                     </p>
                   </div>
                 </div>
@@ -1232,7 +1232,7 @@ export default function ChennaiLocationClient({ faqs }: Props) {
                       Draft Will with Custom Legal Clauses
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Use our online drafting platform or consult a senior estate advocate. Ensure the Will contains express revocation of prior testaments, clear division of shares, alternate bequests, and residuary estate distribution clauses.
+                      Use our online drafting platform or consult a senior estate lawyer. Ensure the Will contains express revocation of prior testaments, clear division of shares, alternate bequests, and residuary estate split clauses.
                     </p>
                   </div>
                 </div>
@@ -1247,7 +1247,7 @@ export default function ChennaiLocationClient({ faqs }: Props) {
                       Execute Before Two Independent Witnesses
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Print the Will on plain A4 sheets. The testator must sign or place a thumb impression on each page in the presence of two independent adult witnesses. Under Section 67 ISA, witnesses must not be beneficiaries under the Will.
+                      Print the Will on plain A4 sheets. The Will maker must sign or place a thumb impression on each page in the presence of two independent adult witnesses. Under Section 67 ISA, witnesses must not be heirs under the Will.
                     </p>
                   </div>
                 </div>
@@ -1274,10 +1274,10 @@ export default function ChennaiLocationClient({ faqs }: Props) {
                   </div>
                   <div className="space-y-1">
                     <h3 className="font-extrabold text-slate-900 text-sm sm:text-base">
-                      Biometric Verification &amp; Official Book III Registration
+                      Biometric Check &amp; Official Book III Registration
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Visit the Sub-Registrar Office at the appointed slot with your two witnesses. The Sub-Registrar captures biometric thumbprints and digital photographs, examines the testator, and records the document permanently in official Book III registers.
+                      Visit the SRO office at the appointed slot with your two witnesses. The Sub-Registrar captures biometric thumbprints and digital photographs, examines the Will maker, and records the document permanently in official Book III registers.
                     </p>
                   </div>
                 </div>
@@ -1296,7 +1296,7 @@ export default function ChennaiLocationClient({ faqs }: Props) {
                   7. Section 31: Doorstep Home Visits for Seniors
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Under Section 31 of the Registration Act, 1908, senior citizens, bedridden persons, or hospitalised testators can register their Will without visiting the Sub-Registrar Office in person.
+                  Under Section 31 of the Registration Act, 1908, senior citizens, bedridden persons, or hospitalised testators can register their Will without visiting the SRO office in person.
                 </p>
               </div>
 
@@ -1304,11 +1304,11 @@ export default function ChennaiLocationClient({ faqs }: Props) {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div className="space-y-2">
                     <h3 className="font-extrabold text-slate-900 text-base">
-                      Doorstep Procedure in Chennai
+                      Doorstep Step in Chennai
                     </h3>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      An application is submitted to the jurisdictional Sub-Registrar citing medical grounds under Section 31.
-                      Upon paying the prescribed government commission and travel fee, the Sub-Registrar personally visits the testator&apos;s residence or hospital room with official recording equipment.
+                      An form is submitted to the jurisdictional Sub-Registrar citing medical grounds under Section 31.
+                      Upon paying the prescribed government commission and travel fee, the Sub-Registrar personally visits the Will maker&apos;s residence or hospital room with official recording equipment.
                     </p>
                   </div>
 
@@ -1317,14 +1317,14 @@ export default function ChennaiLocationClient({ faqs }: Props) {
                       Doctor Fitness Certificate Required
                     </h3>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      A registered medical practitioner (MBBS or higher) must examine the testator on the day of registration and issue a certificate of mental soundness. This confirms the testator acted freely without coercion or dementia.
+                      A registered medical practitioner (MBBS or higher) must examine the Will maker on the day of registration and issue a paper of mental soundness. This confirms the Will maker acted freely without coercion or dementia.
                     </p>
                   </div>
                 </div>
 
                 <div className="pt-4 border-t border-slate-100 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs">
                   <span className="text-slate-500">
-                    Our Chennai advocates manage Section 31 petitions and doctor coordination across all 11 zones.
+                    Our Chennai lawyers manage Section 31 petitions and doctor coordination across all 11 zones.
                   </span>
                   <a
                     href="/contact"
@@ -1424,7 +1424,7 @@ export default function ChennaiLocationClient({ faqs }: Props) {
                   9. Chennai Property Types: GCC, Patta &amp; CMDA Layouts
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Drafting a Will in Chennai requires specific clauses tailored to local real estate tenure and documentation systems:
+                  Drafting a Will in Chennai requires specific clauses tailored to local real estate tenure and papers systems:
                 </p>
               </div>
 
@@ -1434,7 +1434,7 @@ export default function ChennaiLocationClient({ faqs }: Props) {
                     Municipal
                   </span>
                   <h3 className="font-extrabold text-slate-900 text-base">
-                    GCC Residential Apartments
+                    GCC Home Apartments
                   </h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
                     Multistory flats in Besant Nagar, Alwarpet, and Kilpauk require specific mentions of Undivided Share of Land (UDS), car park allocations, and Greater Chennai Corporation property tax assessment numbers.
@@ -1449,7 +1449,7 @@ export default function ChennaiLocationClient({ faqs }: Props) {
                     CMDA Layout Plots &amp; Patta
                   </h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Independent residential plots approved by Chennai Metropolitan Development Authority (CMDA) must cite town survey numbers, Patta passbook numbers, and registered parent title deeds for seamless e-Sevai transfer.
+                    Independent home plots approved by Chennai Metropolitan Development Authority (CMDA) must cite town survey numbers, Patta passbook numbers, and registered parent title deeds for seamless e-Sevai transfer.
                   </p>
                 </div>
 
@@ -1461,7 +1461,7 @@ export default function ChennaiLocationClient({ faqs }: Props) {
                     TNHB Housing Board Allotments
                   </h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Tamil Nadu Housing Board (TNHB) flats and plots in Anna Nagar, KK Nagar, and Mogappair require sale deed copies and clearance certificates from the Executive Engineer before executing succession transfers.
+                    Tamil Nadu Housing Board (TNHB) flats and plots in Anna Nagar, KK Nagar, and Mogappair require sale deed copies and clearance papers from the Executive Engineer before signing succession transfers.
                   </p>
                 </div>
               </div>
@@ -1531,7 +1531,7 @@ export default function ChennaiLocationClient({ faqs }: Props) {
                   11. Service Packages: Transparent Pricing Plans
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Choose the level of legal assistance that fits your estate planning needs in Chennai:
+                  Choose the level of legal help that fits your estate planning needs in Chennai:
                 </p>
               </div>
 
@@ -1549,7 +1549,7 @@ export default function ChennaiLocationClient({ faqs }: Props) {
                       ₹1,990
                     </div>
                     <p className="text-xs text-slate-600">
-                      Ideal for simple estates with bank accounts, mutual funds, and residential flats.
+                      Ideal for simple estates with bank accounts, mutual funds, and home flats.
                     </p>
                     <ul className="space-y-2.5 text-xs text-slate-700 pt-3 border-t border-slate-100">
                       <li className="flex items-center gap-2">
@@ -1558,7 +1558,7 @@ export default function ChennaiLocationClient({ faqs }: Props) {
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>Legally vetted statutory clauses</span>
+                        <span>Legally vetted legal clauses</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
@@ -1582,16 +1582,16 @@ export default function ChennaiLocationClient({ faqs }: Props) {
                   </div>
                   <div className="space-y-4">
                     <span className="text-xs font-bold uppercase tracking-wider text-[#C65378]">
-                      Comprehensive
+                      Full
                     </span>
                     <h3 className="font-extrabold text-xl text-slate-900">
-                      Advocate Consultation
+                      Lawyer Talk
                     </h3>
                     <div className="text-3xl font-black text-slate-900">
                       ₹4,990
                     </div>
                     <p className="text-xs text-slate-600">
-                      Senior estate advocate review for GCC apartments, CMDA plots, and probate planning.
+                      Senior estate lawyer review for GCC apartments, CMDA plots, and probate planning.
                     </p>
                     <ul className="space-y-2.5 text-xs text-slate-700 pt-3 border-t border-slate-100">
                       <li className="flex items-center gap-2">
@@ -1600,7 +1600,7 @@ export default function ChennaiLocationClient({ faqs }: Props) {
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>1-on-1 consultation with senior advocate</span>
+                        <span>1-on-1 talk with senior lawyer</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
@@ -1616,7 +1616,7 @@ export default function ChennaiLocationClient({ faqs }: Props) {
                     href="/contact"
                     className="mt-6 w-full py-3 rounded-xl bg-[#C65378] text-white text-xs font-bold text-center hover:bg-[#a13c5d] transition-colors cursor-pointer"
                   >
-                    Book Advocate Call
+                    Book Lawyer Call
                   </a>
                 </div>
 
@@ -1633,7 +1633,7 @@ export default function ChennaiLocationClient({ faqs }: Props) {
                       ₹9,990
                     </div>
                     <p className="text-xs text-slate-600">
-                      End-to-end registration assistance at any Chennai Sub-Registrar office.
+                      End-to-end registration help at any Chennai SRO office.
                     </p>
                     <ul className="space-y-2.5 text-xs text-slate-700 pt-3 border-t border-slate-100">
                       <li className="flex items-center gap-2">
@@ -1642,7 +1642,7 @@ export default function ChennaiLocationClient({ faqs }: Props) {
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>Advocate physically attends SRO with you</span>
+                        <span>Lawyer physically attends SRO with you</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
@@ -1719,7 +1719,7 @@ export default function ChennaiLocationClient({ faqs }: Props) {
                 </div>
                 {/* H2: Exactly 46 characters */}
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  12. Statutory Citations: Indian Succession Law
+                  12. Legal Citations: Indian Succession Law
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Our drafting protocols strictly follow codified Indian statutes and official Tamil Nadu registration portals:
@@ -1759,7 +1759,7 @@ export default function ChennaiLocationClient({ faqs }: Props) {
                     Madras High Court Rules
                   </span>
                   <p className="text-xs text-slate-600">
-                    Original Side Rules governing Testamentary and Intestate Jurisdiction for probate grant.
+                    Original Side Rules governing Testamentary and Without a Will Area for probate grant.
                   </p>
                 </div>
               </div>
@@ -1768,10 +1768,10 @@ export default function ChennaiLocationClient({ faqs }: Props) {
             {/* BOTTOM CONVERSION CTA BANNER */}
             <section className="rounded-3xl bg-gradient-to-br from-[#172228] to-[#212F35] text-white p-8 sm:p-12 text-center space-y-5 shadow-xl">
               <h3 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-white">
-                Protect Your Chennai Properties &amp; Family Today
+                Protect Your Chennai Assets &amp; Family Today
               </h3>
               <p className="text-sm sm:text-base text-slate-200 max-w-2xl mx-auto leading-relaxed">
-                Do not leave your hard-earned Chennai assets to lengthy partition litigation.
+                Do not leave your hard-earned Chennai assets to lengthy split court fights.
                 Draft a legally binding Will in minutes or consult our senior estate lawyers.
               </p>
               <div className="pt-3 flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -1786,7 +1786,7 @@ export default function ChennaiLocationClient({ faqs }: Props) {
                   href="/contact"
                   className="w-full sm:w-auto px-6 py-3.5 rounded-full bg-white/10 text-white font-bold text-sm sm:text-base hover:bg-white/20 transition-all border border-white/20"
                 >
-                  Book Lawyer Consultation
+                  Book Lawyer Talk
                 </a>
               </div>
             </section>

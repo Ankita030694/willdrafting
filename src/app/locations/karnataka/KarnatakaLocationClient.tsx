@@ -133,19 +133,19 @@ const INITIAL_CHECKLIST = [
   },
   {
     id: "item-2",
-    label: "Original Aadhaar Card & PAN of Testator",
+    label: "Original Aadhaar Card & PAN of Will maker",
     detail: "Essential for biometric identity validation, electronic thumbprint, and digital photo on Kaveri 2.0.",
     checked: true,
   },
   {
     id: "item-3",
     label: "Two Independent Adult Witnesses with Aadhaar",
-    detail: "Must carry original photo IDs and must not be beneficiaries receiving any asset under the Will.",
+    detail: "Must carry original photo IDs and must not be heirs receiving any asset under the Will.",
     checked: true,
   },
   {
     id: "item-4",
-    label: "Doctor Mental Fitness Certificate (MBBS / MD)",
+    label: "Doctor Sound Mind Note (MBBS / MD)",
     detail: "Strongly advised for senior citizens aged 60+. Certifies testamentary mental soundness and lucidity.",
     checked: false,
   },
@@ -164,7 +164,7 @@ const INITIAL_CHECKLIST = [
   {
     id: "item-7",
     label: "Bhoomi RTC / Pahani Extracts (For Farmland / Plantation)",
-    detail: "Recent computerized land records for coffee plantations, coconut groves, and agricultural farmlands.",
+    detail: "Recent computerized land records for coffee plantations, coconut groves, and farm farmlands.",
     checked: false,
   },
 ];
@@ -261,7 +261,7 @@ export default function KarnatakaLocationClient({ faqs }: Props) {
               </h1>
 
               <p className="text-base sm:text-lg text-slate-200 leading-relaxed font-normal max-w-2xl">
-                Draft a legally watertight Will for BBMP apartments, BDA &amp; MUDA plots, tech startup ESOPs, US equities, and Bhoomi agricultural farmlands across Karnataka. Senior advocate drafting, Kaveri 2.0 registration guidance, and Section 31 doorstep execution.
+                Draft a legally watertight Will for BBMP apartments, BDA &amp; MUDA plots, tech startup ESOPs, US equities, and Bhoomi farm farmlands across Karnataka. Senior lawyer drafting, Kaveri 2.0 registration guidance, and Section 31 doorstep signing.
               </p>
 
               <div className="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
@@ -286,7 +286,7 @@ export default function KarnatakaLocationClient({ faqs }: Props) {
               <div className="pt-4 grid grid-cols-3 gap-3 border-t border-white/10 text-xs text-slate-300">
                 <div className="flex items-center gap-2">
                   <Check className="w-4 h-4 text-emerald-400 shrink-0" />
-                  <span>Karnataka HC Advocate Vetted</span>
+                  <span>Karnataka HC Lawyer Vetted</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <Check className="w-4 h-4 text-emerald-400 shrink-0" />
@@ -420,7 +420,7 @@ export default function KarnatakaLocationClient({ faqs }: Props) {
                   <span>STATEWIDE LEGAL ADVICE</span>
                 </div>
                 <p className="text-xs text-slate-300 leading-relaxed">
-                  Need senior advocate review for tech equity, BBMP flats, or Bhoomi farmland across Karnataka?
+                  Need senior lawyer review for tech equity, BBMP flats, or Bhoomi farmland across Karnataka?
                 </p>
                 <a
                   href="/start"
@@ -482,7 +482,7 @@ export default function KarnatakaLocationClient({ faqs }: Props) {
                 </h2>
 
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
-                  Drafting an enforceable Will in Karnataka requires harmonizing modern digital wealth (startup stock options, tech equity, US RSUs) with tangible real estate (BBMP &apos;A&apos; Khata apartments, BDA layouts, MUDA plots, and Bhoomi agricultural lands). Under the <strong>Indian Succession Act, 1925</strong> and the <strong>Registration Act, 1908</strong>, Karnataka is a non-presidency jurisdiction where court probate is non-mandatory. A properly registered Will at the Sub-Registrar Office via the Kaveri 2.0 portal guarantees swift municipal mutation and complete protection against family disputes.
+                  Drafting an enforceable Will in Karnataka requires harmonizing modern digital wealth (startup stock options, tech equity, US RSUs) with tangible real estate (BBMP &apos;A&apos; Khata apartments, BDA layouts, MUDA plots, and Bhoomi farm lands). Under the <strong>Indian Succession Act, 1925</strong> and the <strong>Registration Act, 1908</strong>, Karnataka is a non-presidency area where court probate is non-needed. A properly registered Will at the SRO office via the Kaveri 2.0 portal guarantees swift municipal name change and complete protection against family fights.
                 </p>
 
                 {/* COMPARISON TABLE */}
@@ -493,38 +493,38 @@ export default function KarnatakaLocationClient({ faqs }: Props) {
                         <th className="p-3.5 font-bold">Succession Parameter</th>
                         <th className="p-3.5 font-bold">Unregistered Will</th>
                         <th className="p-3.5 font-bold text-rose-300">Registered Will (Kaveri 2.0)</th>
-                        <th className="p-3.5 font-bold">No Will (Intestate)</th>
+                        <th className="p-3.5 font-bold">No Will (Without a Will)</th>
                       </tr>
                     </thead>
                     <tbody className="divide-y divide-slate-200 bg-white text-slate-700">
                       <tr>
                         <td className="p-3.5 font-bold text-slate-900">Legal Validity in Karnataka</td>
                         <td className="p-3.5">Valid if signed by 2 witnesses</td>
-                        <td className="p-3.5 font-semibold text-emerald-700">Highest evidentiary presumption</td>
+                        <td className="p-3.5 font-semibold text-emerald-700">Highest proof presumption</td>
                         <td className="p-3.5 text-rose-600">State succession laws apply</td>
                       </tr>
                       <tr>
-                        <td className="p-3.5 font-bold text-slate-900">BBMP e-Khata Mutation</td>
+                        <td className="p-3.5 font-bold text-slate-900">BBMP e-Khata Name Change</td>
                         <td className="p-3.5">May require affidavits / NOC</td>
                         <td className="p-3.5 font-semibold text-emerald-700">Direct e-Aasthi substitution</td>
-                        <td className="p-3.5">Succession certificate required</td>
+                        <td className="p-3.5">Succession paper required</td>
                       </tr>
                       <tr>
-                        <td className="p-3.5 font-bold text-slate-900">Bhoomi Farmland Mutation</td>
+                        <td className="p-3.5 font-bold text-slate-900">Bhoomi Farmland Name Change</td>
                         <td className="p-3.5">Revenue inquiries / objections</td>
                         <td className="p-3.5 font-semibold text-emerald-700">Direct Pahani / RTC update</td>
                         <td className="p-3.5">Equal division among Class-I heirs</td>
                       </tr>
                       <tr>
-                        <td className="p-3.5 font-bold text-slate-900">High Court Probate Requirement</td>
+                        <td className="p-3.5 font-bold text-slate-900">High Court Probate Rule</td>
                         <td className="p-3.5">Optional in Karnataka</td>
-                        <td className="p-3.5 font-semibold text-emerald-700">Completely non-mandatory</td>
+                        <td className="p-3.5 font-semibold text-emerald-700">Completely non-needed</td>
                         <td className="p-3.5">Succession petition needed</td>
                       </tr>
                       <tr>
                         <td className="p-3.5 font-bold text-slate-900">Tech Stocks &amp; Startup ESOPs</td>
                         <td className="p-3.5">Company board review delays</td>
-                        <td className="p-3.5 font-semibold text-emerald-700">Smooth corporate transmission</td>
+                        <td className="p-3.5 font-semibold text-emerald-700">Smooth corporate transfer</td>
                         <td className="p-3.5">Lengthy legal heir certification</td>
                       </tr>
                       <tr>
@@ -562,7 +562,7 @@ export default function KarnatakaLocationClient({ faqs }: Props) {
                     <span>Indian Succession Act, 1925</span>
                   </div>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Section 59 establishes testamentary capacity (sound mind and legal age). Section 63 governs execution formalities: the testator must sign or affix their mark in the concurrent presence of two independent attesting witnesses.
+                    Section 59 establishes sound mind (sound mind and legal age). Section 63 governs signing formalities: the Will maker must sign or affix their mark in the concurrent presence of two independent witnesses.
                   </p>
                 </div>
 
@@ -592,7 +592,7 @@ export default function KarnatakaLocationClient({ faqs }: Props) {
                     <span>Karnataka Land Revenue Act, 1964</span>
                   </div>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Section 128 regulates acquisition of land rights by succession. Testamentary bequests of agricultural land are updated on computerized Bhoomi RTC / Pahani records without civil court intervention.
+                    Section 128 regulates acquisition of land rights by succession. Testamentary bequests of farm land are updated on computerized Bhoomi RTC / Pahani records without civil court intervention.
                   </p>
                 </div>
               </div>
@@ -607,10 +607,10 @@ export default function KarnatakaLocationClient({ faqs }: Props) {
                 </div>
                 {/* H2: Length 46 chars <= 70 */}
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  2. Is Will Registration Mandatory in Karnataka?
+                  2. Is Will Registration Needed in Karnataka?
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  While Will registration is legally optional under Section 18(e) of the Registration Act, 1908, senior estate advocates universally advise formal Book III registration in Karnataka for three critical reasons:
+                  While Will registration is legally optional under Section 18(e) of the Registration Act, 1908, senior estate lawyers universally advise formal Book III registration in Karnataka for three critical reasons:
                 </p>
               </div>
 
@@ -620,10 +620,10 @@ export default function KarnatakaLocationClient({ faqs }: Props) {
                     <ShieldCheck className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
                     <div>
                       <h3 className="font-extrabold text-sm sm:text-base text-slate-900">
-                        1. Conclusive Evidentiary Value Under Section 60
+                        1. Strong Proof Value Under Section 60
                       </h3>
                       <p className="text-xs sm:text-sm text-slate-600 mt-1 leading-relaxed">
-                        When a Sub-Registrar registers a Will on the Kaveri 2.0 portal, the officer verifies the testator&apos;s physical presence, mental competence, and identity via Aadhaar biometrics. Indian courts attach a strong presumption of genuine execution to registered instruments.
+                        When a Sub-Registrar registers a Will on the Kaveri 2.0 portal, the officer verifies the Will maker&apos;s physical presence, mental competence, and identity via Aadhaar biometrics. Indian courts attach a strong presumption of genuine signing to registered instruments.
                       </p>
                     </div>
                   </div>
@@ -635,7 +635,7 @@ export default function KarnatakaLocationClient({ faqs }: Props) {
                         2. Permanent Book III Government Archive
                       </h3>
                       <p className="text-xs sm:text-sm text-slate-600 mt-1 leading-relaxed">
-                        An unregistered Will kept in private drawers risks being misplaced, stolen, or surreptitiously destroyed by disgruntled heirs. A registered Will remains permanently encrypted in the Karnataka Department of Stamps and Registration archives. Certified copies can always be retrieved upon providing the testator&apos;s death certificate.
+                        An unregistered Will kept in private drawers risks being misplaced, stolen, or surreptitiously destroyed by disgruntled heirs. A registered Will remains permanently encrypted in the Karnataka Department of Stamps and Registration archives. Certified copies can always be retrieved upon providing the Will maker&apos;s death paper.
                       </p>
                     </div>
                   </div>
@@ -644,10 +644,10 @@ export default function KarnatakaLocationClient({ faqs }: Props) {
                     <ShieldCheck className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
                     <div>
                       <h3 className="font-extrabold text-sm sm:text-base text-slate-900">
-                        3. Friction-Free BBMP e-Aasthi &amp; Bhoomi Mutation
+                        3. Friction-Free BBMP e-Aasthi &amp; Bhoomi Name Change
                       </h3>
                       <p className="text-xs sm:text-sm text-slate-600 mt-1 leading-relaxed">
-                        Bengaluru civic bodies (BBMP, BDA), Mysuru MUDA, and rural revenue authorities readily process mutation entries when presented with an authenticated Book III registered Will, bypassing lengthy public objection notices and civil succession disputes.
+                        Bengaluru civic bodies (BBMP, BDA), Mysuru MUDA, and rural revenue offices readily process name change entries when presented with an authenticated Book III registered Will, bypassing lengthy public objection notices and civil succession fights.
                       </p>
                     </div>
                   </div>
@@ -667,21 +667,21 @@ export default function KarnatakaLocationClient({ faqs }: Props) {
                   3. Karnataka Probate Law: High Court Exemption Standards
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  A widespread misconception among property owners in Bengaluru and across Karnataka is that probate from a civil court is compulsory before inherited real estate or bank accounts can be transferred.
+                  A widespread misconception among property owners in Bengaluru and across Karnataka is that probate from a civil court is needed before inherited real estate or bank accounts can be transferred.
                 </p>
               </div>
 
               <div className="p-6 rounded-3xl bg-white border border-slate-200/90 space-y-4">
                 <div className="p-4 rounded-2xl bg-emerald-50 border border-emerald-200 text-xs sm:text-sm text-emerald-900 font-medium leading-relaxed">
-                  <strong>The Law in Karnataka:</strong> Under Section 213(2) read with Section 57(a) and (b) of the Indian Succession Act, 1925, probate is compulsory <strong>only</strong> for Wills executed within the territorial limits of the former ordinary original civil jurisdiction of the High Courts of Bombay, Calcutta, and Madras, or where immovable property falls within those presidency territories.
+                  <strong>The Law in Karnataka:</strong> Under Section 213(2) read with Section 57(a) and (b) of the Indian Succession Act, 1925, probate is needed <strong>only</strong> for Wills signed within the territorial limits of the former ordinary original civil area of the High Courts of Bombay, Calcutta, and Madras, or where land and flats falls within those presidency territories.
                 </div>
 
                 <div className="space-y-3 text-xs sm:text-sm text-slate-700 leading-relaxed">
                   <p>
-                    Karnataka is a <strong>non-presidency territory</strong>. The High Court of Karnataka has established that probate or letters of administration are <strong>not mandatory</strong> for establishing testamentary rights in Karnataka for Indian citizens, including Hindus, Buddhists, Sikhs, Jains, Christians, and Muslims.
+                    Karnataka is a <strong>non-presidency territory</strong>. The High Court of Karnataka has established that probate or letters of management are <strong>not needed</strong> for establishing testamentary rights in Karnataka for Indian citizens, including Hindus, Buddhists, Sikhs, Jains, Christians, and Muslims.
                   </p>
                   <p>
-                    This means beneficiaries do not need to incur exorbitant civil court filing fees (up to 3% to 5% of property value) or endure years of court litigation. Producing the original registered Will, death certificate, and legal heir tree enables direct transmission across Karnataka.
+                    This means heirs do not need to incur exorbitant civil court filing fees (up to 3% to 5% of property value) or endure years of court court fights. Producing the original registered Will, death paper, and legal heir tree enables direct transfer across Karnataka.
                   </p>
                 </div>
               </div>
@@ -699,7 +699,7 @@ export default function KarnatakaLocationClient({ faqs }: Props) {
                   4. Karnataka SRO Directory: Kaveri 2.0 Online Booking
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Will registration across all 31 districts of Karnataka is processed through the state government&apos;s modernized <strong>Kaveri 2.0 Portal</strong> (kaveri.karnataka.gov.in). Use the directory below to explore major Sub-Registrar Office hubs, operational timings, and territorial jurisdictions:
+                  Will registration across all 31 districts of Karnataka is processed through the state government&apos;s modernized <strong>Kaveri 2.0 Portal</strong> (kaveri.karnataka.gov.in). Use the directory below to explore major SRO office hubs, operational timings, and territorial areas:
                 </p>
               </div>
 
@@ -765,7 +765,7 @@ export default function KarnatakaLocationClient({ faqs }: Props) {
                 </div>
 
                 <div className="pt-2">
-                  <span className="text-slate-500 block text-xs font-semibold mb-1">Jurisdiction Coverage:</span>
+                  <span className="text-slate-500 block text-xs font-semibold mb-1">Area Coverage:</span>
                   <p className="text-xs text-slate-700 font-medium bg-slate-50 p-3 rounded-xl border border-slate-100">
                     {activeHubData.areas}
                   </p>
@@ -787,7 +787,7 @@ export default function KarnatakaLocationClient({ faqs }: Props) {
                   5. Regional Cities: City-Wise Will Drafting in Karnataka
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Estate holdings across Karnataka vary widely, from multi-crore tech equity, unvested ESOPs, and BBMP luxury apartments in Bengaluru, to MUDA residential layouts in Mysuru, coastal export and tile units in Mangaluru, engineering foundries in Belagavi, and APMC wholesale firms in Hubballi. Our estate advocates deliver customized legal drafting, Kaveri 2.0 online slot scheduling, and Sub-Registrar accompaniment across all key regional cities:
+                  Estate holdings across Karnataka vary widely, from multi-crore tech equity, unvested ESOPs, and BBMP luxury apartments in Bengaluru, to MUDA home layouts in Mysuru, coastal export and tile units in Mangaluru, engineering foundries in Belagavi, and APMC wholesale firms in Hubballi. Our estate lawyers deliver customized legal drafting, Kaveri 2.0 online slot scheduling, and Sub-Registrar accompaniment across all key regional cities:
                 </p>
               </div>
 
@@ -819,7 +819,7 @@ export default function KarnatakaLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Specialized <strong>Will drafting services in Bengaluru</strong> for tech executives, startup founders, and NRIs. Protects vested and unvested ESOPs, US RSUs (Morgan Stanley / Charles Schwab), intellectual property, and BBMP &apos;A&apos; Khata gated community villas to prevent family dispute.
+                      Specialized <strong>Will drafting services in Bengaluru</strong> for tech executives, startup founders, and NRIs. Protects vested and unvested ESOPs, US RSUs (Morgan Stanley / Charles Schwab), intellectual property, and BBMP &apos;A&apos; Khata gated community villas to prevent family fight.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -874,7 +874,7 @@ export default function KarnatakaLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Customized <strong>Will drafting services in Mysuru</strong> for ancestral heritage bungalows, MUDA residential plots, and silk/handicraft trading businesses. Features clear life-interest provisions for surviving spouses and clean MUDA Khata transfer guidelines.
+                      Customized <strong>Will drafting services in Mysuru</strong> for family heritage bungalows, MUDA home plots, and silk/handicraft trading businesses. Features clear life-interest rules for surviving spouses and clean MUDA Khata transfer guidelines.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -929,7 +929,7 @@ export default function KarnatakaLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Dedicated <strong>Will drafting services in Mangaluru and Udupi</strong> for coastal commercial businesses, tile/cashew export enterprises, and Gulf/overseas NRI repatriated assets. Drafted to ensure seamless Mangaluru City Corporation (MCC) mutation and bank transmission.
+                      Dedicated <strong>Will drafting services in Mangaluru and Udupi</strong> for coastal shop businesses, tile/cashew export enterprises, and Gulf/overseas NRI repatriated assets. Drafted to make sure seamless Mangaluru City Corporation (MCC) name change and bank transfer.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -963,7 +963,7 @@ export default function KarnatakaLocationClient({ faqs }: Props) {
                     <div className="flex items-center justify-between gap-2">
                       <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-rose-50 text-[#C65378] border border-rose-100">
                         <MapPin className="w-3.5 h-3.5" />
-                        North Karnataka Commercial Hub
+                        North Karnataka Shop Hub
                       </span>
                       <span className="text-[11px] font-semibold text-slate-500 bg-slate-100 px-2.5 py-1 rounded-lg">
                         SRO Hubballi City &amp; Dharwad
@@ -984,7 +984,7 @@ export default function KarnatakaLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Expert <strong>Will drafting services in Hubballi-Dharwad</strong> tailored to wholesale APMC trade enterprises, manufacturing units in Gokul Road industrial estate, and HDMC residential properties under Karnataka High Court Dharwad Bench jurisdiction.
+                      Expert <strong>Will drafting services in Hubballi-Dharwad</strong> tailored to wholesale APMC trade enterprises, manufacturing units in Gokul Road industrial estate, and HDMC home assets under Karnataka High Court Dharwad Bench area.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -993,13 +993,13 @@ export default function KarnatakaLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Court Circle, Lamington Road</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Mini Vidhana Soudha slot booking, business asset inventorying, and physical advocate accompaniment.
+                        Mini Vidhana Soudha slot booking, business asset inventorying, and physical lawyer accompaniment.
                       </p>
                     </div>
                   </div>
 
                   <div className="pt-4 mt-4 border-t border-slate-100 flex items-center justify-between">
-                    <span className="text-xs font-bold text-slate-500">Commercial Trade &amp; HDMC Flats</span>
+                    <span className="text-xs font-bold text-slate-500">Shop Trade &amp; HDMC Flats</span>
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
@@ -1039,7 +1039,7 @@ export default function KarnatakaLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Structured <strong>Will drafting services in Belagavi</strong> for precision engineering foundries in Udyambag MIDC/KIADB, Cantonment residential leaseholds, and cross-border Maharashtra-Karnataka family assets with bilingual legal precision.
+                      Structured <strong>Will drafting services in Belagavi</strong> for precision engineering foundries in Udyambag MIDC/KIADB, Cantonment home leaseholds, and cross-border Maharashtra-Karnataka family assets with bilingual legal precision.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1048,7 +1048,7 @@ export default function KarnatakaLocationClient({ faqs }: Props) {
                         <span>SRO Hub: DC Office Compound, Club Road</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Belagavi SRO Kaveri 2.0 booking, Cantonment Board succession verification, and Section 31 home visits.
+                        Belagavi SRO Kaveri 2.0 booking, Cantonment Board succession check, and Section 31 home visits.
                       </p>
                     </div>
                   </div>
@@ -1094,7 +1094,7 @@ export default function KarnatakaLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Comprehensive <strong>Will drafting services in Kalaburagi and Ballari</strong> for dal mill agro-industries, commercial mining equipment, and agricultural farmlands under Bhoomi. Integrates Section 128 of Karnataka Land Revenue Act for smooth RTC mutation.
+                      Full <strong>Will drafting services in Kalaburagi and Ballari</strong> for dal mill agro-industries, shop mining equipment, and farm farmlands under Bhoomi. Integrates Section 128 of Karnataka Land Revenue Act for smooth RTC name change.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1103,13 +1103,13 @@ export default function KarnatakaLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Sedam Road &amp; Station Road Ballari</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Mini Vidhana Soudha registry facilitation, Bhoomi portal succession guidance, and agricultural land verification.
+                        Mini Vidhana Soudha registry facilitation, Bhoomi portal succession guidance, and farm land check.
                       </p>
                     </div>
                   </div>
 
                   <div className="pt-4 mt-4 border-t border-slate-100 flex items-center justify-between">
-                    <span className="text-xs font-bold text-slate-500">Agro-Farms &amp; Bhoomi RTC Mutation</span>
+                    <span className="text-xs font-bold text-slate-500">Agro-Farms &amp; Bhoomi RTC Name Change</span>
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
@@ -1137,7 +1137,7 @@ export default function KarnatakaLocationClient({ faqs }: Props) {
                   6. Step-by-Step SOP: Drafting to Kaveri 2.0 Registration
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Follow this verified standard operating procedure to draft, execute, and register your Will under Karnataka jurisdiction:
+                  Follow this verified standard operating step to draft, execute, and register your Will under Karnataka area:
                 </p>
               </div>
 
@@ -1152,7 +1152,7 @@ export default function KarnatakaLocationClient({ faqs }: Props) {
                       Compile Asset Schedule &amp; Successor List
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Compile full asset particulars: BBMP e-Khata numbers, BDA/MUDA allottee documents, survey numbers for Bhoomi agricultural land, stock broker demat client IDs, tech company ESOP grants, and bank account numbers. Identify primary and alternate beneficiaries, and appoint a capable executor.
+                      Compile full asset particulars: BBMP e-Khata numbers, BDA/MUDA allottee documents, survey numbers for Bhoomi farm land, stock broker demat client IDs, tech company ESOP grants, and bank account numbers. Identify primary and alternate heirs, and appoint a capable executor.
                     </p>
                   </div>
                 </div>
@@ -1164,10 +1164,10 @@ export default function KarnatakaLocationClient({ faqs }: Props) {
                   </div>
                   <div className="space-y-1">
                     <h3 className="font-extrabold text-sm sm:text-base text-slate-900">
-                      Draft Customized Clauses with Advocate Review
+                      Draft Customized Clauses with Lawyer Review
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Our legal specialists craft statutory clauses: unequivocal revocation of prior instruments, specific legacy bequests, residuary clauses, testamentary trusts for minor children, and clear life-interest allocations for surviving spouses.
+                      Our legal experts craft legal clauses: unequivocal revocation of prior instruments, specific legacy bequests, residuary clauses, testamentary trusts for minor children, and clear life-interest allocations for surviving spouses.
                     </p>
                   </div>
                 </div>
@@ -1197,7 +1197,7 @@ export default function KarnatakaLocationClient({ faqs }: Props) {
                       Book Kaveri 2.0 Appointment &amp; Pay KII-Challan
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Log into the Kaveri 2.0 portal (kaveri.karnataka.gov.in), enter testator and witness KYC details, generate the KII-challan for the ₹200 registration fee plus ₹200 scanning charges, and reserve your preferred time slot at the jurisdictional SRO.
+                      Log into the Kaveri 2.0 portal (kaveri.karnataka.gov.in), enter Will maker and witness KYC details, generate the KII-challan for the ₹200 registration fee plus ₹200 scanning charges, and reserve your preferred time slot at the jurisdictional SRO.
                     </p>
                   </div>
                 </div>
@@ -1212,7 +1212,7 @@ export default function KarnatakaLocationClient({ faqs }: Props) {
                       Sub-Registrar Biometrics &amp; Book III Registration
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Visit the Sub-Registrar Office with both witnesses. The Sub-Registrar verifies mental soundness, captures live webcam photographs and digital thumb impressions, endorses the certificate under Section 60, and hands over the registered Will deed.
+                      Visit the SRO office with both witnesses. The Sub-Registrar verifies mental soundness, captures live webcam photographs and digital thumb impressions, endorses the paper under Section 60, and hands over the registered Will deed.
                     </p>
                   </div>
                 </div>
@@ -1231,7 +1231,7 @@ export default function KarnatakaLocationClient({ faqs }: Props) {
                   7. Section 31 Doorstep SRO Registration for Senior Citizens
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  For elderly citizens, bedridden individuals, or patients who cannot physically travel to congested Sub-Registrar offices in Bengaluru, Mysuru, or Mangaluru, Karnataka law provides a compassionate statutory remedy:
+                  For elderly citizens, bedridden people, or patients who cannot physically travel to congested Sub-Registrar offices in Bengaluru, Mysuru, or Mangaluru, Karnataka law provides a compassionate legal remedy:
                 </p>
               </div>
 
@@ -1240,16 +1240,16 @@ export default function KarnatakaLocationClient({ faqs }: Props) {
                   <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
                   <div className="space-y-1 text-xs sm:text-sm text-slate-700 leading-relaxed">
                     <h3 className="font-extrabold text-slate-900 text-sm sm:text-base">
-                      Section 31 Special Commission Provisions
+                      Section 31 Special Commission Rules
                     </h3>
                     <p>
-                      Under <strong>Section 31 of the Registration Act, 1908</strong>, the Sub-Registrar is legally empowered to attend the private residence, nursing home, or hospital of a testator to accept a Will for Book III registration.
+                      Under <strong>Section 31 of the Registration Act, 1908</strong>, the Sub-Registrar is legally empowered to attend the private residence, nursing home, or hospital of a Will maker to accept a Will for Book III registration.
                     </p>
                     <p>
-                      A registered medical practitioner (MBBS/MD) issues a certificate confirming that while the testator is physically unable to travel, their mental faculties, cognitive comprehension, and testamentary understanding are 100% sound.
+                      A registered medical practitioner (MBBS/MD) issues a paper confirming that while the Will maker is physically unable to travel, their mental faculties, cognitive comprehension, and testamentary understanding are 100% sound.
                     </p>
                     <p>
-                      Our advocate team handles the entire Section 31 requisition petition, schedules the commissioner date with the local SRO, and coordinates the biometric capture equipment directly at your home.
+                      Our lawyer team handles the entire Section 31 requisition petition, schedules the commissioner date with the local SRO, and coordinates the biometric capture equipment directly at your home.
                     </p>
                   </div>
                 </div>
@@ -1332,7 +1332,7 @@ export default function KarnatakaLocationClient({ faqs }: Props) {
                     <span>Tech Startup Equity, ESOPs &amp; RSUs</span>
                   </div>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Testamentary treatment for unvested and vested employee stock options, founder shares, US tech equities (RSUs via overseas brokerages), and intellectual property portfolios. Ensures clear transmission without corporate board disputes.
+                    Testamentary treatment for unvested and vested employee stock options, founder shares, US tech equities (RSUs via overseas brokerages), and intellectual property portfolios. Ensures clear transfer without corporate board fights.
                   </p>
                 </div>
 
@@ -1342,7 +1342,7 @@ export default function KarnatakaLocationClient({ faqs }: Props) {
                     <span>BBMP &apos;A&apos; Khata &amp; &apos;B&apos; Khata Apartments</span>
                   </div>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Addresses undivided share of land (UDS), dedicated basement car parking slots, and e-Aasthi municipal registration for residential high-rises and gated societies across Bengaluru Urban and Rural.
+                    Addresses undivided share of land (UDS), dedicated basement car parking slots, and e-Aasthi municipal registration for home high-rises and gated societies across Bengaluru Urban and Rural.
                   </p>
                 </div>
 
@@ -1352,17 +1352,17 @@ export default function KarnatakaLocationClient({ faqs }: Props) {
                     <span>BDA &amp; MUDA Allottee Plots</span>
                   </div>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Testamentary bequests of development authority plots in Bengaluru and Mysuru. Includes lease-cum-sale agreements, conditional allotment clauses, and possession certificates to ensure seamless authority transfer.
+                    Testamentary bequests of development authority plots in Bengaluru and Mysuru. Includes lease-cum-sale agreements, conditional allotment clauses, and possession papers to make sure seamless authority transfer.
                   </p>
                 </div>
 
                 <div className="p-5 rounded-2xl bg-white border border-slate-200/90 space-y-2">
                   <div className="flex items-center gap-2 text-slate-900 font-extrabold text-sm sm:text-base">
                     <Wheat className="w-4 h-4 text-[#C65378]" />
-                    <span>Bhoomi Agricultural Lands &amp; Plantations</span>
+                    <span>Bhoomi Farm Lands &amp; Plantations</span>
                   </div>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Farmland, coconut groves, and coffee plantations across Mandya, Hassan, and Kodagu governed by the Karnataka Land Reforms Act. Bequeathed lands are mutated via Bhoomi RTC records without civil court litigation.
+                    Farmland, coconut groves, and coffee plantations across Mandya, Hassan, and Kodagu governed by the Karnataka Land Reforms Act. Bequeathed lands are mutated via Bhoomi RTC records without civil court court fights.
                   </p>
                 </div>
               </div>
@@ -1389,7 +1389,7 @@ export default function KarnatakaLocationClient({ faqs }: Props) {
                   <thead className="bg-[#172228] text-white">
                     <tr>
                       <th className="p-3.5 font-bold">Government Fee Head</th>
-                      <th className="p-3.5 font-bold">Statutory Rate in Karnataka</th>
+                      <th className="p-3.5 font-bold">Legal Rate in Karnataka</th>
                       <th className="p-3.5 font-bold">Payment Method</th>
                     </tr>
                   </thead>
@@ -1400,7 +1400,7 @@ export default function KarnatakaLocationClient({ faqs }: Props) {
                       <td className="p-3.5">Exempt under Karnataka Stamp Act</td>
                     </tr>
                     <tr>
-                      <td className="p-3.5 font-bold text-slate-900">Statutory Registration Fee</td>
+                      <td className="p-3.5 font-bold text-slate-900">Legal Registration Fee</td>
                       <td className="p-3.5 font-semibold text-slate-900">₹200 (Nominal flat fee)</td>
                       <td className="p-3.5">KII-Challan on Kaveri 2.0 portal</td>
                     </tr>
@@ -1412,7 +1412,7 @@ export default function KarnatakaLocationClient({ faqs }: Props) {
                     <tr>
                       <td className="p-3.5 font-bold text-slate-900">Section 31 Doorstep Visit Fee</td>
                       <td className="p-3.5 font-semibold text-slate-900">₹1,000 + conveyance charges</td>
-                      <td className="p-3.5">Paid at SRO with medical certificate</td>
+                      <td className="p-3.5">Paid at SRO with medical paper</td>
                     </tr>
                   </tbody>
                 </table>
@@ -1448,7 +1448,7 @@ export default function KarnatakaLocationClient({ faqs }: Props) {
                       <span className="text-xs text-slate-500 font-semibold">one-time</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Ideal for standard residential flats, bank accounts, and simple single-family inheritances.
+                      Ideal for standard home flats, bank accounts, and simple single-family inheritances.
                     </p>
                     <ul className="space-y-2 text-xs text-slate-700 pt-2 border-t border-slate-100">
                       <li className="flex items-center gap-2">
@@ -1461,7 +1461,7 @@ export default function KarnatakaLocationClient({ faqs }: Props) {
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600" />
-                        <span>Witness execution instructions</span>
+                        <span>Witness signing instructions</span>
                       </li>
                     </ul>
                   </div>
@@ -1485,7 +1485,7 @@ export default function KarnatakaLocationClient({ faqs }: Props) {
                     <span className="text-xs font-extrabold uppercase tracking-wider text-[#C65378]">
                       ADVOCATE CONSULTATION
                     </span>
-                    <h3 className="text-xl font-extrabold text-slate-900">Senior Advocate Review</h3>
+                    <h3 className="text-xl font-extrabold text-slate-900">Senior Lawyer Review</h3>
                     <div className="flex items-baseline gap-1">
                       <span className="text-3xl font-black text-[#C65378]">₹4,990</span>
                       <span className="text-xs text-slate-500 font-semibold">one-time</span>
@@ -1496,7 +1496,7 @@ export default function KarnatakaLocationClient({ faqs }: Props) {
                     <ul className="space-y-2 text-xs text-slate-700 pt-2 border-t border-slate-100">
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600" />
-                        <span>1-on-1 Senior Advocate call</span>
+                        <span>1-on-1 Senior Lawyer call</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600" />
@@ -1504,11 +1504,11 @@ export default function KarnatakaLocationClient({ faqs }: Props) {
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600" />
-                        <span>Bhoomi agricultural clauses</span>
+                        <span>Bhoomi farm clauses</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600" />
-                        <span>Doctor capacity certificate format</span>
+                        <span>Doctor capacity paper format</span>
                       </li>
                     </ul>
                   </div>
@@ -1518,7 +1518,7 @@ export default function KarnatakaLocationClient({ faqs }: Props) {
                       onClick={handleStartDraft}
                       className="block w-full py-3 rounded-xl bg-[#C65378] text-white hover:bg-[#a13c5d] font-bold text-center text-xs transition-colors cursor-pointer shadow-md"
                     >
-                      Choose Advocate Review
+                      Choose Lawyer Review
                     </a>
                   </div>
                 </div>
@@ -1540,7 +1540,7 @@ export default function KarnatakaLocationClient({ faqs }: Props) {
                     <ul className="space-y-2 text-xs text-slate-700 pt-2 border-t border-slate-100">
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600" />
-                        <span>Everything in Advocate Review</span>
+                        <span>Everything in Lawyer Review</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600" />
@@ -1548,11 +1548,11 @@ export default function KarnatakaLocationClient({ faqs }: Props) {
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600" />
-                        <span>Advocate presence at SRO registry</span>
+                        <span>Lawyer presence at SRO registry</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600" />
-                        <span>Section 31 doorstep assistance</span>
+                        <span>Section 31 doorstep help</span>
                       </li>
                     </ul>
                   </div>
@@ -1581,7 +1581,7 @@ export default function KarnatakaLocationClient({ faqs }: Props) {
                   12. Frequently Asked Questions: Will Drafting in Karnataka
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Get clear, advocate-verified answers to common questions regarding Will drafting, Kaveri 2.0 registration, and property succession across Karnataka:
+                  Get clear, lawyer-verified answers to common questions regarding Will drafting, Kaveri 2.0 registration, and property succession across Karnataka:
                 </p>
               </div>
 
@@ -1623,7 +1623,7 @@ export default function KarnatakaLocationClient({ faqs }: Props) {
                 </div>
                 {/* H2: Length 48 chars <= 70 */}
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  13. Statutory Citations &amp; Karnataka Legal Portals
+                  13. Legal Citations &amp; Karnataka Legal Portals
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Testamentary instruments in Karnataka operate under the authority of key statutes and official government digital platforms:
@@ -1641,7 +1641,7 @@ export default function KarnatakaLocationClient({ faqs }: Props) {
                 <div className="p-4 rounded-2xl bg-white border border-slate-200/90 space-y-1.5">
                   <span className="font-bold text-slate-900 block">Bhoomi Karnataka Portal</span>
                   <p className="text-slate-600 text-xs">
-                    bhoomi.karnataka.gov.in - Revenue Department portal for land records, online mutation (Pahani / RTC), and mutation status tracking under Section 128 KLRA.
+                    bhoomi.karnataka.gov.in - Revenue Department portal for land records, online name change (Pahani / RTC), and name change status tracking under Section 128 KLRA.
                   </p>
                 </div>
 
@@ -1655,7 +1655,7 @@ export default function KarnatakaLocationClient({ faqs }: Props) {
                 <div className="p-4 rounded-2xl bg-white border border-slate-200/90 space-y-1.5">
                   <span className="font-bold text-slate-900 block">High Court of Karnataka</span>
                   <p className="text-slate-600 text-xs">
-                    karnatakahiighcourt.kar.nic.in - Principal Bench Bengaluru, Dharwad Bench, and Kalaburagi Bench judicial precedents confirming non-mandatory probate.
+                    karnatakahiighcourt.kar.nic.in - Principal Bench Bengaluru, Dharwad Bench, and Kalaburagi Bench judicial precedents confirming non-needed probate.
                   </p>
                 </div>
               </div>

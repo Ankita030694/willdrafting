@@ -347,20 +347,20 @@ const INITIAL_CHECKLIST = [
   },
   {
     id: "item-2",
-    label: "Original Aadhaar Card & PAN of the Testator",
+    label: "Original Aadhaar Card & PAN of the Will maker",
     detail: "Required for biometric thumbprint scanning and digital photo capture on the UP IGRSUP portal.",
     checked: true,
   },
   {
     id: "item-3",
     label: "Two Independent Adult Witnesses with Aadhaar",
-    detail: "Both witnesses must carry original photo IDs and must not be beneficiaries receiving assets under the Will.",
+    detail: "Both witnesses must carry original photo IDs and must not be heirs receiving assets under the Will.",
     checked: true,
   },
   {
     id: "item-4",
     label: "Doctor's Mental Capacity Certificate (For Seniors)",
-    detail: "Issued by a registered MBBS doctor certifying sound testamentary capacity to eliminate dementia challenges.",
+    detail: "Issued by a registered MBBS doctor certifying sound sound mind to eliminate dementia fights.",
     checked: false,
   },
   {
@@ -378,7 +378,7 @@ const INITIAL_CHECKLIST = [
   {
     id: "item-7",
     label: "Two Recent Color Passport Photos Each",
-    detail: "Clear passport photographs for the testator and both attesting witnesses to paste into SRO Book III registers.",
+    detail: "Clear passport photographs for the Will maker and both witnesses to paste into SRO Book III registers.",
     checked: false,
   },
 ];
@@ -470,8 +470,8 @@ export default function PrayagrajLocationClient({ faqs }: Props) {
               </h1>
 
               <p className="text-base sm:text-lg text-slate-200 leading-relaxed font-normal max-w-2xl">
-                Draft a legally binding Will for your PDA plots, Civil Lines bungalows, Sangam region ancestral homes, and savings.
-                Get advocate drafting, UP IGRSUP portal registration assistance, and doorstep execution for senior citizens across Prayagraj.
+                Draft a legally binding Will for your PDA plots, Civil Lines bungalows, Sangam region family homes, and savings.
+                Get lawyer drafting, UP IGRSUP portal registration help, and doorstep signing for senior citizens across Prayagraj.
               </p>
 
               <div className="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
@@ -496,7 +496,7 @@ export default function PrayagrajLocationClient({ faqs }: Props) {
               <div className="pt-4 grid grid-cols-3 gap-3 border-t border-white/10 text-xs text-slate-300">
                 <div className="flex items-center gap-2">
                   <Check className="w-4 h-4 text-emerald-400 shrink-0" />
-                  <span>Allahabad HC Advocate Vetted</span>
+                  <span>Allahabad HC Lawyer Vetted</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <Check className="w-4 h-4 text-emerald-400 shrink-0" />
@@ -691,10 +691,10 @@ export default function PrayagrajLocationClient({ faqs }: Props) {
                   <div className="p-4 rounded-2xl bg-slate-50/70 border border-slate-100 space-y-1.5">
                     <div className="flex items-center gap-2 font-bold text-sm text-slate-900">
                       <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
-                      <span>Probate Non-Compulsory in UP</span>
+                      <span>Probate Non-Needed in UP</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Court probate is non-compulsory in Prayagraj under Section 213 of the Indian Succession Act. The Allahabad High Court confirms beneficiaries inherit without mandatory probate petitions.
+                      Court probate is non-needed in Prayagraj under Section 213 of the Indian Succession Act. The Allahabad High Court confirms heirs inherit without needed probate petitions.
                     </p>
                   </div>
 
@@ -711,10 +711,10 @@ export default function PrayagrajLocationClient({ faqs }: Props) {
                   <div className="p-4 rounded-2xl bg-slate-50/70 border border-slate-100 space-y-1.5">
                     <div className="flex items-center gap-2 font-bold text-sm text-slate-900">
                       <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
-                      <span>Seamless PDA &amp; Nagar Nigam Mutation</span>
+                      <span>Seamless PDA &amp; Nagar Nigam Name Change</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      A registered Will drastically speeds up Prayagraj Development Authority (PDA) transfer and Nagar Nigam property tax mutation (Namantaran) without court succession suits.
+                      A registered Will drastically speeds up Prayagraj Development Authority (PDA) transfer and Nagar Nigam property tax name change (Namantaran) without court succession suits.
                     </p>
                   </div>
                 </div>
@@ -734,12 +734,12 @@ export default function PrayagrajLocationClient({ faqs }: Props) {
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Writing a Will in Prayagraj is governed by the <strong>Indian Succession Act, 1925</strong>, the <strong>Registration Act, 1908</strong>, and the <strong>Uttar Pradesh Revenue Code, 2006</strong>.
-                  Any adult of sound mind who is at least 18 years old can make a Will to transfer self-acquired real estate, bank deposits, jewelry, and commercial equity.
+                  Any adult of sound mind who is at least 18 years old can make a Will to transfer self-acquired real estate, bank deposits, jewelry, and shop equity.
                 </p>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   As the historic seat of the Allahabad High Court, Prayagraj has a distinguished legal culture.
-                  Families hold colonial bungalows in Civil Lines and George Town, PDA housing plots in Kalindipuram and Naini, and ancestral holdings across Daraganj and Phaphamau.
-                  A professionally drafted Will ensures your estate transfers smoothly without bitter family litigation.
+                  Families hold colonial bungalows in Civil Lines and George Town, PDA housing plots in Kalindipuram and Naini, and family holdings across Daraganj and Phaphamau.
+                  A professionally drafted Will ensures your estate transfers smoothly without bitter family court fights.
                 </p>
               </div>
 
@@ -750,7 +750,7 @@ export default function PrayagrajLocationClient({ faqs }: Props) {
                   </span>
                   <h3 className="font-bold text-sm text-slate-900">Legal Capacity</h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    The testator must be at least 18 years of age and in sound mental mind (Section 59).
+                    The Will maker must be at least 18 years of age and in sound mental mind (Section 59).
                   </p>
                 </div>
 
@@ -799,8 +799,8 @@ export default function PrayagrajLocationClient({ faqs }: Props) {
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Under <strong>Section 18(e) of the Registration Act, 1908</strong>, registering a Will in Uttar Pradesh is voluntary.
-                  An unregistered Will executed before two independent witnesses is legally enforceable.
-                  However, registering your Will at the Prayagraj Sub-Registrar Office provides undeniable evidentiary weight before courts and government authorities.
+                  An unregistered Will signed before two independent witnesses is legally enforceable.
+                  However, registering your Will at the Prayagraj SRO office provides undeniable proof weight before courts and government offices.
                 </p>
               </div>
 
@@ -817,14 +817,14 @@ export default function PrayagrajLocationClient({ faqs }: Props) {
                     </thead>
                     <tbody className="divide-y divide-slate-100 text-slate-700">
                       <tr className="hover:bg-slate-50/50">
-                        <td className="py-3.5 px-5 font-bold text-slate-900">Statutory Validity</td>
+                        <td className="py-3.5 px-5 font-bold text-slate-900">Legal Validity</td>
                         <td className="py-3.5 px-5">Valid under Section 63 ISA</td>
                         <td className="py-3.5 px-5 font-semibold text-emerald-700">Valid + Presumed genuine under Section 114</td>
                       </tr>
                       <tr className="hover:bg-slate-50/50">
-                        <td className="py-3.5 px-5 font-bold text-slate-900">PDA Property Mutation</td>
+                        <td className="py-3.5 px-5 font-bold text-slate-900">PDA Property Name Change</td>
                         <td className="py-3.5 px-5">Requires public notices, indemnity bonds, or delay</td>
-                        <td className="py-3.5 px-5 font-semibold text-emerald-700">Fast mutation on PDA records without objections</td>
+                        <td className="py-3.5 px-5 font-semibold text-emerald-700">Fast name change on PDA records without objections</td>
                       </tr>
                       <tr className="hover:bg-slate-50/50">
                         <td className="py-3.5 px-5 font-bold text-slate-900">Govt Safe Custody</td>
@@ -856,16 +856,16 @@ export default function PrayagrajLocationClient({ faqs }: Props) {
                 </div>
                 {/* H2 4: Exactly 53 characters */}
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  3. Is Probate Mandatory for Properties in Prayagraj?
+                  3. Is Probate Needed for Assets in Prayagraj?
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   <strong>No. Court probate is strictly optional in Prayagraj and across Uttar Pradesh.</strong>
                 </p>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Under <strong>Section 213(2) read with Section 57 of the Indian Succession Act, 1925</strong>, the requirement of obtaining a probate applies only to Wills made by Hindus, Buddhists, Sikhs, and Jains within the historic presidential cities of Kolkata, Chennai, and Mumbai, or where immovable property falls within those presidency territories.
+                  Under <strong>Section 213(2) read with Section 57 of the Indian Succession Act, 1925</strong>, the rule of getting a probate applies only to Wills made by Hindus, Buddhists, Sikhs, and Jains within the historic presidential cities of Kolkata, Chennai, and Mumbai, or where land and flats falls within those presidency territories.
                 </p>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  The Allahabad High Court has consistently held in landmark judgments that beneficiaries in Uttar Pradesh can mutate PDA plots, transfer bank deposits, and establish title without mandatory probate proceedings.
+                  The Allahabad High Court has consistently held in landmark judgments that heirs in Uttar Pradesh can mutate PDA plots, transfer bank deposits, and set up title without needed probate proceedings.
                 </p>
               </div>
 
@@ -879,17 +879,17 @@ export default function PrayagrajLocationClient({ faqs }: Props) {
                       Allahabad High Court Jurisprudence on Probate
                     </h3>
                     <p className="text-xs text-rose-200">
-                      Non-presidency statutory exemption under Section 213 of the Indian Succession Act
+                      Non-presidency legal exemption under Section 213 of the Indian Succession Act
                     </p>
                   </div>
                 </div>
                 <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
-                  In repeated rulings, the Allahabad High Court has affirmed that Section 213 does not bar beneficiaries in Uttar Pradesh from asserting legal rights under a genuine Will in civil or revenue proceedings. This saves families years of court delays and hundreds of thousands in court valuation fees.
+                  In repeated rulings, the Allahabad High Court has affirmed that Section 213 does not bar heirs in Uttar Pradesh from asserting legal rights under a genuine Will in civil or revenue proceedings. This saves families years of court delays and hundreds of thousands in court price check fees.
                 </p>
                 <div className="pt-2 flex flex-wrap gap-2 text-xs font-semibold text-slate-300">
-                  <span className="px-3 py-1 rounded-full bg-white/10">No Mandatory High Court Petition</span>
-                  <span className="px-3 py-1 rounded-full bg-white/10">No Ad Valorem Court Valuation Fees</span>
-                  <span className="px-3 py-1 rounded-full bg-white/10">Direct PDA &amp; Revenue Mutation</span>
+                  <span className="px-3 py-1 rounded-full bg-white/10">No Needed High Court Petition</span>
+                  <span className="px-3 py-1 rounded-full bg-white/10">No Ad Valorem Court Price Check Fees</span>
+                  <span className="px-3 py-1 rounded-full bg-white/10">Direct PDA &amp; Revenue Name Change</span>
                 </div>
               </div>
             </section>
@@ -969,7 +969,7 @@ export default function PrayagrajLocationClient({ faqs }: Props) {
                   5. Area-Wise Will Drafting in Prayagraj Localities
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Looking for legally verified <strong>Will drafting services in Civil Lines, George Town, Naini, or Kalindipuram</strong>? Property ownership models, PDA leasehold conditions, and Sub-Registrar jurisdictions vary significantly across Prayagraj. Whether you own a colonial bungalow in Civil Lines, a planned PDA plot in Kalindipuram, or ancestral farmland in Soraon, our High Court advocates deliver tailored drafting, registration, and estate advisory:
+                  Looking for legally verified <strong>Will drafting services in Civil Lines, George Town, Naini, or Kalindipuram</strong>? Property ownership models, PDA leasehold conditions, and Sub-Registrar areas vary significantly across Prayagraj. Whether you own a colonial bungalow in Civil Lines, a planned PDA plot in Kalindipuram, or family farmland in Soraon, our High Court lawyers deliver tailored drafting, registration, and estate advisory:
                 </p>
               </div>
 
@@ -1050,7 +1050,7 @@ export default function PrayagrajLocationClient({ faqs }: Props) {
                   6. Step-by-Step SOP: Will Drafting to Registration
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Follow this verified five-step protocol to draft and register your Will in Prayagraj without administrative delays:
+                  Follow this verified five-step protocol to draft and register your Will in Prayagraj without office delays:
                 </p>
               </div>
 
@@ -1062,10 +1062,10 @@ export default function PrayagrajLocationClient({ faqs }: Props) {
                   </div>
                   <div className="space-y-1.5 flex-1">
                     <h3 className="font-bold text-base text-slate-900">
-                      Step 1: Inventory Assets, Debts, and Beneficiaries
+                      Step 1: Inventory Assets, Debts, and Heirs
                     </h3>
                     <p className="text-xs md:text-sm text-slate-600 leading-relaxed">
-                      Compile a complete list of your assets: PDA plots, Civil Lines bungalows, ancestral holdings in Daraganj, bank fixed deposits, mutual funds, demat equities, and gold. Specify full legal names, relationships, and assign a trusted executor to administer the estate.
+                      Compile a complete list of your assets: PDA plots, Civil Lines bungalows, family holdings in Daraganj, bank fixed deposits, mutual funds, demat equities, and gold. Specify full legal names, relationships, and assign a trusted executor to administer the estate.
                     </p>
                   </div>
                 </div>
@@ -1077,10 +1077,10 @@ export default function PrayagrajLocationClient({ faqs }: Props) {
                   </div>
                   <div className="space-y-1.5 flex-1">
                     <h3 className="font-bold text-base text-slate-900">
-                      Step 2: Draft Will with High Court Advocate Oversight
+                      Step 2: Draft Will with High Court Lawyer Oversight
                     </h3>
                     <p className="text-xs md:text-sm text-slate-600 leading-relaxed">
-                      Draft your custom Will through our secure platform or consult a senior succession lawyer. We incorporate crucial clauses: explicit revocation of prior testaments, survivorship provisions, life interest terms for spouses, and clear demarcation of coparcenary interests.
+                      Draft your custom Will through our secure platform or consult a senior succession lawyer. We incorporate crucial clauses: explicit revocation of prior testaments, survivorship rules, life interest terms for spouses, and clear demarcation of joint family interests.
                     </p>
                   </div>
                 </div>
@@ -1095,7 +1095,7 @@ export default function PrayagrajLocationClient({ faqs }: Props) {
                       Step 3: Attest Before Two Independent Witnesses
                     </h3>
                     <p className="text-xs md:text-sm text-slate-600 leading-relaxed">
-                      Print the final draft on standard white A4 sheets. Under Section 63 of the Indian Succession Act, sign the footer of every page in the direct physical presence of two adult witnesses. The witnesses sign immediately after, confirming they witnessed your voluntary execution.
+                      Print the final draft on standard white A4 sheets. Under Section 63 of the Indian Succession Act, sign the footer of every page in the direct physical presence of two adult witnesses. The witnesses sign right away after, confirming they witnessed your voluntary signing.
                     </p>
                   </div>
                 </div>
@@ -1110,7 +1110,7 @@ export default function PrayagrajLocationClient({ faqs }: Props) {
                       Step 4: Book Prayagraj SRO Appointment on IGRSUP Portal
                     </h3>
                     <p className="text-xs md:text-sm text-slate-600 leading-relaxed">
-                      Log in to the Uttar Pradesh registration portal (igrsup.gov.in). Select your Prayagraj SRO (Kutchery Sadar, Naini, Phaphamau, or Jhunsi). Enter the testator and witness details, pay the nominal government fee, and download the official appointment token slip.
+                      Log in to the Uttar Pradesh registration portal (igrsup.gov.in). Select your Prayagraj SRO (Kutchery Sadar, Naini, Phaphamau, or Jhunsi). Enter the Will maker and witness details, pay the nominal government fee, and download the official appointment token slip.
                     </p>
                   </div>
                 </div>
@@ -1122,10 +1122,10 @@ export default function PrayagrajLocationClient({ faqs }: Props) {
                   </div>
                   <div className="space-y-1.5 flex-1">
                     <h3 className="font-bold text-base text-slate-900">
-                      Step 5: Biometric Verification &amp; SRO Registration
+                      Step 5: Biometric Check &amp; SRO Registration
                     </h3>
                     <p className="text-xs md:text-sm text-slate-600 leading-relaxed">
-                      Visit the Sub-Registrar office on your scheduled date with your two witnesses and original IDs. The officer conducts biometric fingerprint verification, captures live digital webcam photographs, and registers the Will into official Book III government records.
+                      Visit the SRO office on your scheduled date with your two witnesses and original IDs. The officer conducts biometric fingerprint check, captures live digital webcam photographs, and registers the Will into official Book III government records.
                     </p>
                   </div>
                 </div>
@@ -1144,7 +1144,7 @@ export default function PrayagrajLocationClient({ faqs }: Props) {
                   7. Section 31 Doorstep SRO Registration in Prayagraj
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Under <strong>Section 31 of the Registration Act, 1908</strong>, individuals who are physically unable to travel to the Sub-Registrar office can request a home visit by the Sub-Registrar. This service is widely utilized by senior citizens, retired judicial officers, and ailing residents across Civil Lines, George Town, and Tagore Town.
+                  Under <strong>Section 31 of the Registration Act, 1908</strong>, people who are physically unable to travel to the SRO office can request a home visit by the Sub-Registrar. This service is widely utilized by senior citizens, retired judicial officers, and ailing residents across Civil Lines, George Town, and Tagore Town.
                 </p>
               </div>
 
@@ -1153,14 +1153,14 @@ export default function PrayagrajLocationClient({ faqs }: Props) {
                   <div className="p-4 rounded-2xl bg-rose-50/50 border border-rose-100 space-y-1.5">
                     <h3 className="font-bold text-sm text-[#C65378]">Medical Certificate</h3>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      A registered MBBS practitioner must certify that the testator is medically unable to travel to the Kutchery office due to age, illness, or mobility limits.
+                      A registered MBBS practitioner must certify that the Will maker is medically unable to travel to the Kutchery office due to age, illness, or mobility limits.
                     </p>
                   </div>
 
                   <div className="p-4 rounded-2xl bg-rose-50/50 border border-rose-100 space-y-1.5">
                     <h3 className="font-bold text-sm text-[#C65378]">Official Petition</h3>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      An application is submitted to the Prayagraj Sub-Registrar explaining the medical condition along with the nominal government commission fee.
+                      An form is submitted to the Prayagraj Sub-Registrar explaining the medical condition along with the nominal government commission fee.
                     </p>
                   </div>
 
@@ -1183,10 +1183,10 @@ export default function PrayagrajLocationClient({ faqs }: Props) {
                 </div>
                 {/* H2 9: Exactly 52 characters */}
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  8. Mandatory Document Checklist for Prayagraj Wills
+                  8. Needed Document Checklist for Prayagraj Wills
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Use this interactive checklist to prepare your documents before visiting the Prayagraj Sub-Registrar office:
+                  Use this interactive checklist to prepare your documents before visiting the Prayagraj SRO office:
                 </p>
               </div>
 
@@ -1237,10 +1237,10 @@ export default function PrayagrajLocationClient({ faqs }: Props) {
                 </div>
                 {/* H2 10: Exactly 50 characters */}
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  9. Estate Asset Distribution: PDA Plots &amp; Havelis
+                  9. Estate Asset Split: PDA Plots &amp; Havelis
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  A comprehensive Will should clearly itemize all categories of movable and immovable property held across Prayagraj:
+                  A full Will should clearly itemize all categories of movable and land and flats held across Prayagraj:
                 </p>
               </div>
 
@@ -1251,7 +1251,7 @@ export default function PrayagrajLocationClient({ faqs }: Props) {
                     <span>PDA Plots &amp; Housing Schemes</span>
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Residential and commercial plots allocated by the Prayagraj Development Authority (PDA) in Kalindipuram, Naini, Shantipuram, and ADA schemes. Mention allotment numbers and freehold conversion status.
+                    Home and shop plots allocated by the Prayagraj Development Authority (PDA) in Kalindipuram, Naini, Shantipuram, and ADA schemes. Mention allotment numbers and freehold conversion status.
                   </p>
                 </div>
 
@@ -1261,17 +1261,17 @@ export default function PrayagrajLocationClient({ faqs }: Props) {
                     <span>Colonial Bungalows &amp; Historic Havelis</span>
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Sprawling compounds in Civil Lines, George Town, and Daraganj. If holding an undivided coparcenary share, clearly define your separate testamentary rights to avoid partition disputes.
+                    Sprawling compounds in Civil Lines, George Town, and Daraganj. If holding an undivided joint family share, clearly define your separate testamentary rights to avoid split fights.
                   </p>
                 </div>
 
                 <div className="p-5 rounded-2xl bg-white border border-slate-200/90 shadow-xs space-y-2">
                   <div className="flex items-center gap-2 font-bold text-sm text-slate-900">
                     <Landmark className="w-4 h-4 text-[#C65378]" />
-                    <span>Agricultural Lands (UP Revenue Code)</span>
+                    <span>Farm Lands (UP Revenue Code)</span>
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Farmland holdings across Soraon, Phulpur, and Karchhana. Under Section 107 of the UP Revenue Code 2006, ensure bequests comply with ceiling limits and Khatauni land records.
+                    Farmland holdings across Soraon, Phulpur, and Karchhana. Under Section 107 of the UP Revenue Code 2006, make sure bequests comply with ceiling limits and Khatauni land records.
                   </p>
                 </div>
 
@@ -1281,7 +1281,7 @@ export default function PrayagrajLocationClient({ faqs }: Props) {
                     <span>Financial Investments &amp; Bank Deposits</span>
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Savings accounts, fixed deposits, demat stock portfolios, and mutual funds. A Will overrides nominee designations to ensure lawful transmission to your intended family members.
+                    Savings accounts, fixed deposits, demat stock portfolios, and mutual funds. A Will overrides nominee designations to make sure lawful transfer to your intended family members.
                   </p>
                 </div>
               </div>
@@ -1299,7 +1299,7 @@ export default function PrayagrajLocationClient({ faqs }: Props) {
                   10. Registration Charges &amp; Zero Stamp Duty in UP
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Under the Indian Stamp Act as applicable to Uttar Pradesh, <strong>Wills are completely exempt from stamp duty</strong>. You do not pay percentage-based fees on your property valuation.
+                  Under the Indian Stamp Act as applicable to Uttar Pradesh, <strong>Wills are completely exempt from stamp duty</strong>. You do not pay percentage-based fees on your property price check.
                 </p>
               </div>
 
@@ -1383,7 +1383,7 @@ export default function PrayagrajLocationClient({ faqs }: Props) {
                   </span>
                   <div className="space-y-3">
                     <span className="px-3 py-1 rounded-full bg-rose-50 text-[#C65378] text-[10px] font-bold uppercase tracking-wider">
-                      Advocate Consultation
+                      Lawyer Talk
                     </span>
                     <h3 className="font-extrabold text-xl text-slate-900">High Court Review</h3>
                     <div className="flex items-baseline gap-1">
@@ -1393,11 +1393,11 @@ export default function PrayagrajLocationClient({ faqs }: Props) {
                     <ul className="text-xs text-slate-600 space-y-2 border-t border-slate-100 pt-3">
                       <li className="flex items-center gap-2">
                         <Check className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
-                        <span>Allahabad High Court advocate review</span>
+                        <span>Allahabad High Court lawyer review</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
-                        <span>PDA plots &amp; ancestral haveli clauses</span>
+                        <span>PDA plots &amp; family haveli clauses</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
@@ -1405,7 +1405,7 @@ export default function PrayagrajLocationClient({ faqs }: Props) {
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
-                        <span>Doctor capacity certificate guidance</span>
+                        <span>Doctor capacity paper guidance</span>
                       </li>
                     </ul>
                   </div>
@@ -1414,7 +1414,7 @@ export default function PrayagrajLocationClient({ faqs }: Props) {
                     onClick={handleStartDraft}
                     className="w-full py-2.5 rounded-xl bg-[#C65378] text-white font-bold text-xs text-center hover:bg-[#a13c5d] transition-colors shadow-xs"
                   >
-                    Get Advocate Plan
+                    Get Lawyer Plan
                   </a>
                 </div>
 
@@ -1422,7 +1422,7 @@ export default function PrayagrajLocationClient({ faqs }: Props) {
                 <div className="p-6 rounded-3xl bg-white border border-slate-200/90 shadow-xs space-y-4 flex flex-col justify-between">
                   <div className="space-y-3">
                     <span className="px-3 py-1 rounded-full bg-slate-100 text-slate-700 text-[10px] font-bold uppercase tracking-wider">
-                      End-to-End Execution
+                      End-to-End Signing
                     </span>
                     <h3 className="font-extrabold text-xl text-slate-900">SRO Registration</h3>
                     <div className="flex items-baseline gap-1">
@@ -1432,7 +1432,7 @@ export default function PrayagrajLocationClient({ faqs }: Props) {
                     <ul className="text-xs text-slate-600 space-y-2 border-t border-slate-100 pt-3">
                       <li className="flex items-center gap-2">
                         <Check className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
-                        <span>Senior advocate drafting &amp; consultation</span>
+                        <span>Senior lawyer drafting &amp; talk</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
@@ -1440,7 +1440,7 @@ export default function PrayagrajLocationClient({ faqs }: Props) {
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
-                        <span>Advocate accompaniment at Prayagraj SRO</span>
+                        <span>Lawyer accompaniment at Prayagraj SRO</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
@@ -1515,7 +1515,7 @@ export default function PrayagrajLocationClient({ faqs }: Props) {
                 </div>
                 {/* H2 14: Exactly 49 characters */}
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  12. Statutory Citations &amp; Legal Precedents in UP
+                  12. Legal Citations &amp; Legal Precedents in UP
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Every Will prepared through WillDrafting strictly complies with binding Indian enactments and judicial precedents:
@@ -1524,19 +1524,19 @@ export default function PrayagrajLocationClient({ faqs }: Props) {
 
               <div className="rounded-3xl bg-white border border-slate-200/90 p-6 md:p-8 shadow-xs space-y-3 text-xs text-slate-700 leading-relaxed">
                 <p>
-                  <strong>Indian Succession Act, 1925:</strong> Section 59 (Sound mind and testamentary capacity); Section 61 (Void wills due to fraud, coercion, or importunity); Section 63 (Mandatory execution before two attesting witnesses); Section 213 read with Section 57 (Non-compulsory nature of probate outside historic presidency jurisdictions).
+                  <strong>Indian Succession Act, 1925:</strong> Section 59 (Sound mind and sound mind); Section 61 (Void wills due to fraud, coercion, or importunity); Section 63 (Needed signing before two witnesses); Section 213 read with Section 57 (Non-needed nature of probate outside historic presidency areas).
                 </p>
                 <p>
-                  <strong>Registration Act, 1908:</strong> Section 18(e) (Optional registration of wills); Section 31 (Special commission home execution by Sub-Registrar); Section 40 and Section 41 (Procedure for presenting wills for registration).
+                  <strong>Registration Act, 1908:</strong> Section 18(e) (Optional registration of wills); Section 31 (Special commission home signing by Sub-Registrar); Section 40 and Section 41 (Step for presenting wills for registration).
                 </p>
                 <p>
-                  <strong>Uttar Pradesh Revenue Code, 2006:</strong> Section 107 (Bequest of agricultural land by Bhumidhar holding transferable rights); Section 108 (Succession order and maintenance provisions).
+                  <strong>Uttar Pradesh Revenue Code, 2006:</strong> Section 107 (Bequest of farm land by Bhumidhar holding transferable rights); Section 108 (Succession order and maintenance rules).
                 </p>
                 <p>
                   <strong>Uttar Pradesh Urban Planning and Development Act, 1973:</strong> Regulations governing Prayagraj Development Authority (PDA) leasehold transfers, freehold mutations, and legal heir substitutions.
                 </p>
                 <p>
-                  <strong>Judicial Precedents:</strong> <em>Balwant Singh v. Gurbachan Singh</em> (Probate non-requirement outside presidency towns); <em>Clarence Pais v. Union of India</em> (AIR 2001 SC 1151, confirming uniform probate exemption across non-presidency areas).
+                  <strong>Judicial Precedents:</strong> <em>Balwant Singh v. Gurbachan Singh</em> (Probate non-rule outside presidency towns); <em>Clarence Pais v. Union of India</em> (AIR 2001 SC 1151, confirming uniform probate exemption across non-presidency areas).
                 </p>
               </div>
             </section>

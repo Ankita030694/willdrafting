@@ -107,20 +107,20 @@ const INITIAL_CHECKLIST = [
   },
   {
     id: "item-2",
-    label: "Original Aadhaar Card & PAN of Testator",
+    label: "Original Aadhaar Card & PAN of Will maker",
     detail: "Essential for biometric identity validation, electronic thumbprint, and digital photo capture at the SRO counter.",
     checked: true,
   },
   {
     id: "item-3",
     label: "Two Independent Adult Witnesses with Aadhaar",
-    detail: "Must carry original photo IDs and must not be beneficiaries receiving any asset or bequest under the Will.",
+    detail: "Must carry original photo IDs and must not be heirs receiving any asset or bequest under the Will.",
     checked: true,
   },
   {
     id: "item-4",
-    label: "Doctor Mental Fitness Certificate (MBBS / MD)",
-    detail: "Strongly advised for senior citizens aged 60+. Certifies sound testamentary capacity and alert cognitive mind.",
+    label: "Doctor Sound Mind Note (MBBS / MD)",
+    detail: "Strongly advised for senior citizens aged 60+. Certifies sound sound mind and alert cognitive mind.",
     checked: false,
   },
   {
@@ -138,7 +138,7 @@ const INITIAL_CHECKLIST = [
   {
     id: "item-7",
     label: "MCF Property Tax Receipt & Assigned Property ID",
-    detail: "Municipal Corporation of Faridabad tax receipt or NDC showing verified property coordinates for smooth mutation.",
+    detail: "Municipal Corporation of Faridabad tax receipt or NDC showing verified property coordinates for smooth name change.",
     checked: false,
   },
   {
@@ -241,7 +241,7 @@ export default function FaridabadLocationClient({ faqs }: Props) {
               </h1>
 
               <p className="text-base sm:text-lg text-slate-200 leading-relaxed font-normal max-w-2xl">
-                Draft a legally watertight Will for your HSVP plotted sectors, independent builder floors, Greater Faridabad high-rises, and Mathura Road industrial units. Get Punjab &amp; Haryana High Court advocate drafting, Jamabandi Haryana slot booking, and Section 31 doorstep execution.
+                Draft a legally watertight Will for your HSVP plotted sectors, independent builder floors, Greater Faridabad high-rises, and Mathura Road industrial units. Get Punjab &amp; Haryana High Court lawyer drafting, Jamabandi Haryana slot booking, and Section 31 doorstep signing.
               </p>
 
               <div className="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
@@ -266,7 +266,7 @@ export default function FaridabadLocationClient({ faqs }: Props) {
               <div className="pt-4 grid grid-cols-3 gap-3 border-t border-white/10 text-xs text-slate-300">
                 <div className="flex items-center gap-2">
                   <Check className="w-4 h-4 text-emerald-400 shrink-0" />
-                  <span>P&amp;H High Court Advocate Vetted</span>
+                  <span>P&amp;H High Court Lawyer Vetted</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <Check className="w-4 h-4 text-emerald-400 shrink-0" />
@@ -492,24 +492,24 @@ export default function FaridabadLocationClient({ faqs }: Props) {
                       <span>Optional Registration</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Wills written on standard white paper and attested by two witnesses are legally binding in Faridabad under Section 18(e) of the Registration Act, 1908. Sub-Registrar registration at Sector 12 Mini Secretariat is optional but eliminates future validity challenges.
+                      Wills written on standard white paper and attested by two witnesses are legally binding in Faridabad under Section 18(e) of the Registration Act, 1908. Sub-Registrar registration at Sector 12 Mini Secretariat is optional but eliminates future validity fights.
                     </p>
                   </div>
 
                   <div className="p-4 rounded-2xl bg-slate-50/70 border border-slate-100 space-y-1.5">
                     <div className="flex items-center gap-2 font-bold text-sm text-slate-900">
                       <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
-                      <span>Probate Not Mandatory</span>
+                      <span>Probate Not Needed</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Under Punjab &amp; Haryana High Court rulings, probate is non-mandatory in Haryana for Hindus, Sikhs, Jains, Buddhists, and Christians. Beneficiaries bypass civil court probate petitions and transfer property directly.
+                      Under Punjab &amp; Haryana High Court rulings, probate is non-needed in Haryana for Hindus, Sikhs, Jains, Buddhists, and Christians. Heirs bypass civil court probate petitions and transfer property directly.
                     </p>
                   </div>
 
                   <div className="p-4 rounded-2xl bg-slate-50/70 border border-slate-100 space-y-1.5">
                     <div className="flex items-center gap-2 font-bold text-sm text-slate-900">
                       <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
-                      <span>HSVP &amp; MCF Direct Mutation</span>
+                      <span>HSVP &amp; MCF Direct Name Change</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
                       Haryana Shehri Vikas Pradhikaran (HSVP) and Municipal Corporation of Faridabad (MCF) update ownership registers, Property IDs, and sector plot records directly on the basis of a registered Will.
@@ -540,7 +540,7 @@ export default function FaridabadLocationClient({ faqs }: Props) {
                   1. Legal Framework: Indian Succession Act in Faridabad
                 </h3>
                 <p className="text-xs sm:text-sm text-slate-600 leading-relaxed max-w-4xl">
-                  Testamentary succession across Faridabad District is governed by the Indian Succession Act, 1925, alongside specific state property enactments including the Haryana Shehri Vikas Pradhikaran Act, 1977 and the Haryana Municipal Corporation Act, 1994. Whether bequeathing an independent residential floor in Sector 14, an industrial factory in Sector 24, or a multi-story apartment in Greater Faridabad, an enforceable Will requires strict adherence to statutory principles:
+                  Testamentary succession across Faridabad District is governed by the Indian Succession Act, 1925, alongside specific state property enactments including the Haryana Shehri Vikas Pradhikaran Act, 1977 and the Haryana Municipal Corporation Act, 1994. Whether bequeathing an independent home floor in Sector 14, an industrial factory in Sector 24, or a multi-story apartment in Greater Faridabad, an enforceable Will requires strict adherence to legal principles:
                 </p>
               </div>
 
@@ -551,7 +551,7 @@ export default function FaridabadLocationClient({ faqs }: Props) {
                   </div>
                   <h3 className="font-bold text-slate-900 text-sm">Testamentary Capacity</h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Any person of sound mind who has attained majority (18 years) can make a Will. For elderly testators in Faridabad, procuring a registered medical practitioner&apos;s mental fitness certificate on the date of signing prevents future challenges regarding cognitive decline or undue influence.
+                    Any person of sound mind who has attained majority (18 years) can make a Will. For elderly testators in Faridabad, procuring a registered medical practitioner&apos;s mental fitness paper on the date of signing prevents future fights regarding cognitive decline or undue influence.
                   </p>
                 </div>
 
@@ -559,9 +559,9 @@ export default function FaridabadLocationClient({ faqs }: Props) {
                   <div className="w-9 h-9 rounded-xl bg-rose-50 flex items-center justify-center text-[#C65378] font-bold text-sm">
                     § 63
                   </div>
-                  <h3 className="font-bold text-slate-900 text-sm">Execution &amp; Attestation</h3>
+                  <h3 className="font-bold text-slate-900 text-sm">Signing &amp; Attestation</h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    The testator must sign or affix their thumb impression on each page of the Will. Crucially, the document must be attested by at least two competent adult witnesses who observe the testator executing the Will and sign in each other&apos;s mutual presence.
+                    The Will maker must sign or affix their thumb impression on each page of the Will. Crucially, the document must be attested by at least two competent adult witnesses who observe the Will maker signing the Will and sign in each other&apos;s mutual presence.
                   </p>
                 </div>
 
@@ -571,7 +571,7 @@ export default function FaridabadLocationClient({ faqs }: Props) {
                   </div>
                   <h3 className="font-bold text-slate-900 text-sm">Witness Disqualification</h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Under Section 67, any bequest made to an attesting witness or to their spouse is void. In Faridabad, family members designated to inherit property should never sign as attesting witnesses; neutral family friends, neighbors, or long-standing professionals must be engaged.
+                    Under Section 67, any bequest made to an attesting witness or to their spouse is void. In Faridabad, family members designated to inherit property should never sign as witnesses; neutral family friends, neighbors, or long-standing professionals must be engaged.
                   </p>
                 </div>
               </div>
@@ -587,19 +587,19 @@ export default function FaridabadLocationClient({ faqs }: Props) {
                       <tr className="border-b border-slate-200 bg-slate-50/70 font-semibold text-slate-900">
                         <th className="py-3 px-4">Parameter</th>
                         <th className="py-3 px-4">With a Registered Will</th>
-                        <th className="py-3 px-4">Intestate (No Will)</th>
+                        <th className="py-3 px-4">Without a Will (No Will)</th>
                       </tr>
                     </thead>
                     <tbody className="divide-y divide-slate-100">
                       <tr>
-                        <td className="py-3 px-4 font-bold text-slate-800">Asset Distribution</td>
-                        <td className="py-3 px-4 text-emerald-700 font-medium">As explicitly designated by the testator</td>
-                        <td className="py-3 px-4 text-rose-700">Divided strictly per statutory personal laws among all Class-I heirs</td>
+                        <td className="py-3 px-4 font-bold text-slate-800">Asset Split</td>
+                        <td className="py-3 px-4 text-emerald-700 font-medium">As explicitly designated by the Will maker</td>
+                        <td className="py-3 px-4 text-rose-700">Divided strictly per legal personal laws among all Class-I heirs</td>
                       </tr>
                       <tr>
-                        <td className="py-3 px-4 font-bold text-slate-800">HSVP Plot Mutation</td>
+                        <td className="py-3 px-4 font-bold text-slate-800">HSVP Plot Name Change</td>
                         <td className="py-3 px-4 text-emerald-700 font-medium">Direct substitution via registered Will and indemnity bond</td>
-                        <td className="py-3 px-4 text-rose-700">Requires all legal heirs to execute registered relinquishment deeds or court certificate</td>
+                        <td className="py-3 px-4 text-rose-700">Requires all legal heirs to execute registered relinquishment deeds or court paper</td>
                       </tr>
                       <tr>
                         <td className="py-3 px-4 font-bold text-slate-800">MCF Property ID Transfer</td>
@@ -607,9 +607,9 @@ export default function FaridabadLocationClient({ faqs }: Props) {
                         <td className="py-3 px-4 text-rose-700">Joint ownership recorded for all legal heirs, freezing unilateral sales or redevelopment</td>
                       </tr>
                       <tr>
-                        <td className="py-3 px-4 font-bold text-slate-800">Family Dispute Vulnerability</td>
+                        <td className="py-3 px-4 font-bold text-slate-800">Family Fight Vulnerability</td>
                         <td className="py-3 px-4 text-emerald-700 font-medium">Minimized; clear exclusion clauses and mental capacity evidence</td>
-                        <td className="py-3 px-4 text-rose-700">Extremely high; partition suits in Faridabad District Court frequently drag for 8-15 years</td>
+                        <td className="py-3 px-4 text-rose-700">Extremely high; split suits in Faridabad District Court often drag for 8-15 years</td>
                       </tr>
                     </tbody>
                   </table>
@@ -649,11 +649,11 @@ export default function FaridabadLocationClient({ faqs }: Props) {
                     </li>
                     <li className="flex items-start gap-2">
                       <AlertTriangle className="w-4 h-4 text-amber-500 shrink-0 mt-0.5" />
-                      <span>HSVP estate officers and municipal authorities often demand court declarations before accepting unregistered Wills.</span>
+                      <span>HSVP estate officers and municipal offices often demand court declarations before accepting unregistered Wills.</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <AlertTriangle className="w-4 h-4 text-amber-500 shrink-0 mt-0.5" />
-                      <span>Burden of proving authenticity in court falls heavily on the beneficiary if contested.</span>
+                      <span>Burden of proving authenticity in court falls heavily on the heir if contested.</span>
                     </li>
                   </ul>
                 </div>
@@ -673,11 +673,11 @@ export default function FaridabadLocationClient({ faqs }: Props) {
                     </li>
                     <li className="flex items-start gap-2">
                       <Check className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
-                      <span>Presumption of genuine execution under Section 114 of the Indian Evidence Act.</span>
+                      <span>Presumption of genuine signing under Section 114 of the Indian Evidence Act.</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <Check className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
-                      <span>Direct property mutation accepted by HSVP, MCF, builder agencies, and banks without civil suits.</span>
+                      <span>Direct property name change accepted by HSVP, MCF, builder agencies, and banks without civil suits.</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <Check className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
@@ -699,7 +699,7 @@ export default function FaridabadLocationClient({ faqs }: Props) {
                   3. Probate Rules: Punjab &amp; Haryana High Court Exemption
                 </h3>
                 <p className="text-xs sm:text-sm text-slate-600 leading-relaxed max-w-4xl">
-                  One of the most persistent misconceptions among property owners in Faridabad is that every Will must be probated in a civil court before real estate can be transferred. In Haryana, this is legally untrue. The statutory framework and binding High Court precedents provide complete clarity:
+                  One of the most persistent misconceptions among property owners in Faridabad is that every Will must be probated in a civil court before real estate can be transferred. In Haryana, this is legally untrue. The legal framework and binding High Court precedents provide complete clarity:
                 </p>
               </div>
 
@@ -707,33 +707,33 @@ export default function FaridabadLocationClient({ faqs }: Props) {
                 <div className="p-4 rounded-xl bg-amber-50/60 border border-amber-200/70 text-xs text-amber-900 leading-relaxed space-y-1.5">
                   <div className="font-bold flex items-center gap-1.5 text-amber-950 text-sm">
                     <AlertTriangle className="w-4 h-4 text-amber-600 shrink-0" />
-                    <span>Statutory Exemption under Section 213(2) Indian Succession Act</span>
+                    <span>Legal Exemption under Section 213(2) Indian Succession Act</span>
                   </div>
                   <p>
-                    Section 213(1) of the Indian Succession Act mandates court probate to establish a right as executor or legatee under a Will. However, sub-section (2) explicitly restricts this mandate to Wills executed within the presidential territories of Calcutta, Madras, and Bombay, or Wills relating to immovable properties situated within those territories under Section 57(a) and (b).
+                    Section 213(1) of the Indian Succession Act mandates court probate to set up a right as executor or legatee under a Will. However, sub-section (2) explicitly restricts this mandate to Wills signed within the presidential territories of Calcutta, Madras, and Bombay, or Wills relating to land and flats situated within those territories under Section 57(a) and (b).
                   </p>
                 </div>
 
                 <div className="space-y-3 text-xs sm:text-sm text-slate-700 leading-relaxed">
                   <p>
-                    The <strong>Punjab and Haryana High Court</strong> has reiterated across dozens of landmark judgments (including <em>Behari Lal Ram Charan v. Karam Chand</em> and subsequent Division Bench rulings) that testamentary instruments executed in Haryana, Punjab, or Chandigarh do not fall within the territorial ambit of Section 57(a) and (b).
+                    The <strong>Punjab and Haryana High Court</strong> has reiterated across dozens of landmark judgments (including <em>Behari Lal Ram Charan v. Karam Chand</em> and subsequent Division Bench rulings) that testamentary instruments signed in Haryana, Punjab, or Chandigarh do not fall within the territorial ambit of Section 57(a) and (b).
                   </p>
                   <p>
-                    Consequently, <strong>probate is strictly non-mandatory in Faridabad</strong> for Hindus, Sikhs, Jains, Buddhists, and Christians. Beneficiaries inheriting HSVP residential plots, commercial shops, builder floors, or bank deposits do not need to institute costly, multi-year probate proceedings in the Faridabad District and Sessions Court.
+                    So, <strong>probate is strictly non-needed in Faridabad</strong> for Hindus, Sikhs, Jains, Buddhists, and Christians. Heirs inheriting HSVP home plots, shop shops, builder floors, or bank deposits do not need to institute costly, multi-year probate proceedings in the Faridabad District and Sessions Court.
                   </p>
                 </div>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
                   <div className="p-3.5 rounded-xl bg-slate-50 border border-slate-100 text-xs">
-                    <span className="font-bold text-slate-900 block mb-1">Direct HSVP Sector Mutation</span>
+                    <span className="font-bold text-slate-900 block mb-1">Direct HSVP Sector Name Change</span>
                     <span className="text-slate-600">
-                      Estate officers across Faridabad HSVP sectors process name substitutions upon receipt of the registered Will, death certificate, affidavit, and public notice in newspapers.
+                      Estate officers across Faridabad HSVP sectors process name substitutions upon receipt of the registered Will, death paper, affidavit, and public notice in newspapers.
                     </span>
                   </div>
                   <div className="p-3.5 rounded-xl bg-slate-50 border border-slate-100 text-xs">
-                    <span className="font-bold text-slate-900 block mb-1">Financial Asset Transmission</span>
+                    <span className="font-bold text-slate-900 block mb-1">Financial Asset Transfer</span>
                     <span className="text-slate-600">
-                      Banks and mutual fund depositories in Faridabad release balances, Demat portfolios, and locker contents directly to designated Will beneficiaries without requiring court letters of administration.
+                      Banks and mutual fund depositories in Faridabad release balances, Demat portfolios, and locker contents directly to designated Will heirs without requiring court letters of management.
                     </span>
                   </div>
                 </div>
@@ -751,7 +751,7 @@ export default function FaridabadLocationClient({ faqs }: Props) {
                   4. SRO Directory: Faridabad Sub-Registrar Offices
                 </h3>
                 <p className="text-xs sm:text-sm text-slate-600 leading-relaxed max-w-4xl">
-                  Faridabad District comprises five principal Sub-Registrar and Sub-Tehsil registration jurisdictions under the Revenue Department of Haryana. Use the interactive directory below to identify your designated SRO, office address, and jurisdiction:
+                  Faridabad District comprises five principal Sub-Registrar and Sub-Tehsil registration areas under the Revenue Department of Haryana. Use the interactive directory below to identify your designated SRO, office address, and area:
                 </p>
               </div>
 
@@ -822,7 +822,7 @@ export default function FaridabadLocationClient({ faqs }: Props) {
                     onClick={handleStartDraft}
                     className="inline-flex items-center gap-1.5 font-bold text-[#C65378] hover:text-[#a13c5d]"
                   >
-                    <span>Book Advocate Accompaniment</span>
+                    <span>Book Lawyer Accompaniment</span>
                     <ArrowRight className="w-3.5 h-3.5" />
                   </a>
                 </div>
@@ -839,10 +839,10 @@ export default function FaridabadLocationClient({ faqs }: Props) {
                   <span>FARIDABAD DISTRICT REGIONAL DIVISION</span>
                 </div>
                 <h3 className="text-xl md:text-2xl font-extrabold text-slate-900 tracking-tight leading-snug">
-                  5. Local Areas: Comprehensive Faridabad Coverage
+                  5. Local Areas: Full Faridabad Coverage
                 </h3>
                 <p className="text-xs sm:text-sm text-slate-600 leading-relaxed max-w-4xl">
-                  Estate assets in Faridabad span prime plotted sectors with independent builder floors in Sectors 14, 15, and 16, modern high-rise condominiums across Greater Faridabad (Neharpar), established commercial hubs in NIT, luxury villas near Surajkund, and auto-manufacturing plants along Mathura Road. Our legal advocates provide bespoke testamentary drafting, Jamabandi Haryana slot scheduling, and Sub-Registrar accompaniment across all key micro-markets:
+                  Estate assets in Faridabad span prime plotted sectors with independent builder floors in Sectors 14, 15, and 16, modern high-rise condominiums across Greater Faridabad (Neharpar), established shop hubs in NIT, luxury villas near Surajkund, and auto-manufacturing plants along Mathura Road. Our legal lawyers provide bespoke testamentary drafting, Jamabandi Haryana slot scheduling, and Sub-Registrar accompaniment across all key micro-markets:
                 </p>
               </div>
 
@@ -872,7 +872,7 @@ export default function FaridabadLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Specialized <strong>Will drafting services in Sectors 14, 15, 16 &amp; 17</strong> for upscale HSVP independent bungalows, newly redeveloped builder floors, and commercial SCOs. Formulates unequivocal floor-wise division, common roof access covenants, stilt parking rights, and mutual fund bequests to prevent future family disputes.
+                      Specialized <strong>Will drafting services in Sectors 14, 15, 16 &amp; 17</strong> for upscale HSVP independent bungalows, newly redeveloped builder floors, and shop SCOs. Formulates unequivocal floor-wise division, common roof access covenants, stilt parking rights, and mutual fund bequests to prevent future family fights.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -881,7 +881,7 @@ export default function FaridabadLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Mini Secretariat, Sector 12</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Jamabandi online token booking, advocate physical representation, and Section 31 doorstep execution for senior citizens.
+                        Jamabandi online token booking, lawyer physical representation, and Section 31 doorstep signing for senior citizens.
                       </p>
                     </div>
                   </div>
@@ -935,7 +935,7 @@ export default function FaridabadLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Sector 12 Neharpar Desk</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        High-rise apartment title verification, developer NOC procedures, and expedited Jamabandi registration.
+                        High-rise apartment title check, developer NOC steps, and expedited Jamabandi registration.
                       </p>
                     </div>
                   </div>
@@ -979,7 +979,7 @@ export default function FaridabadLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Comprehensive <strong>Will drafting services in Sector 21C</strong> and surrounding sectors for premium residential villas, builder floors, and doctor clinics near Surajkund road. Incorporates medical fitness certifications, surviving spouse life-interest protections, and smooth MCF Property ID mutation.
+                      Full <strong>Will drafting services in Sector 21C</strong> and surrounding sectors for premium home villas, builder floors, and doctor clinics near Surajkund road. Incorporates medical fitness certifications, surviving spouse life-interest protections, and smooth MCF Property ID name change.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -988,7 +988,7 @@ export default function FaridabadLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Sector 12 Mini Secretariat</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Seamless Jamabandi token booking, independent witness attestation, and doorstep verification for seniors.
+                        Seamless Jamabandi token booking, independent witness attestation, and doorstep check for seniors.
                       </p>
                     </div>
                   </div>
@@ -1013,7 +1013,7 @@ export default function FaridabadLocationClient({ faqs }: Props) {
                     <div className="flex items-center justify-between gap-2">
                       <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-rose-50 text-[#C65378] border border-rose-100">
                         <Building className="w-3.5 h-3.5" />
-                        Commercial &amp; Colony Hub
+                        Shop &amp; Colony Hub
                       </span>
                       <span className="text-[11px] font-semibold text-slate-500 bg-slate-100 px-2.5 py-1 rounded-lg">
                         SRO Badkhal / Sector 12
@@ -1032,7 +1032,7 @@ export default function FaridabadLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Tailored <strong>Will drafting services in NIT Faridabad</strong> and Sainik Colony for commercial shop owners, established traders, and residential floor owners. Resolves coparcenary ancestral property ambiguities, ensures clear sole proprietorship and retail enterprise succession, and eliminates partition lawsuits.
+                      Tailored <strong>Will drafting services in NIT Faridabad</strong> and Sainik Colony for shop shop owners, established traders, and home floor owners. Resolves joint family family property ambiguities, ensures clear sole proprietorship and retail enterprise succession, and eliminates split lawsuits.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1041,13 +1041,13 @@ export default function FaridabadLocationClient({ faqs }: Props) {
                         <span>SRO Hub: SDM Badkhal &amp; Sector 12</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Commercial asset inventory, trading firm partner shares, and Book III registration filing.
+                        Shop asset inventory, trading firm partner shares, and Book III registration filing.
                       </p>
                     </div>
                   </div>
 
                   <div className="pt-4 mt-4 border-t border-slate-100 flex items-center justify-between">
-                    <span className="text-xs font-bold text-slate-500">Commercial &amp; Plotted Floors</span>
+                    <span className="text-xs font-bold text-slate-500">Shop &amp; Plotted Floors</span>
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
@@ -1191,7 +1191,7 @@ export default function FaridabadLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Authoritative <strong>Will drafting services in Ballabgarh</strong> for residential plots, Housing Board flats, commercial godowns, and ancestral properties near Raja Nahar Singh Palace. Ensures foolproof drafting complying with Haryana Land Revenue Code and Jamabandi registration at Ballabgarh Tehsil.
+                      Authoritative <strong>Will drafting services in Ballabgarh</strong> for home plots, Housing Board flats, shop godowns, and family assets near Raja Nahar Singh Palace. Ensures foolproof drafting complying with Haryana Land Revenue Code and Jamabandi registration at Ballabgarh Tehsil.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1200,13 +1200,13 @@ export default function FaridabadLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Tigaon Road, Ballabgarh Tehsil</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Ballabgarh Tehsil registration token, witness management, and municipal mutation advisory.
+                        Ballabgarh Tehsil registration token, witness management, and municipal name change advisory.
                       </p>
                     </div>
                   </div>
 
                   <div className="pt-4 mt-4 border-t border-slate-100 flex items-center justify-between">
-                    <span className="text-xs font-bold text-slate-500">Housing Board &amp; Ancestral</span>
+                    <span className="text-xs font-bold text-slate-500">Housing Board &amp; Family</span>
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
@@ -1240,11 +1240,11 @@ export default function FaridabadLocationClient({ faqs }: Props) {
                       <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Sector 28 Metro</span>
                       <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Sector 29 Plotted</span>
                       <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Sector 30 HUDA</span>
-                      <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Sector 31 Commercial</span>
+                      <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Sector 31 Shop</span>
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Strategic <strong>Will drafting services in Sectors 28 to 31</strong> along the Violet Line Metro corridor and Delhi-Mathura Highway. Codifies independent floor ownership, commercial showroom leases, and joint bank accounts, streamlining succession across Haryana urban local bodies and financial institutions.
+                      Strategic <strong>Will drafting services in Sectors 28 to 31</strong> along the Violet Line Metro corridor and Delhi-Mathura Highway. Codifies independent floor ownership, shop showroom leases, and joint bank accounts, streamlining succession across Haryana urban local bodies and financial institutions.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1299,7 +1299,7 @@ export default function FaridabadLocationClient({ faqs }: Props) {
                       Compile Asset Inventory &amp; HSVP Property IDs
                     </h3>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      List all immovable assets across Faridabad including HSVP plot numbers, builder floor demarcations, Greater Faridabad high-rise apartment units, and MCF Property IDs. Collate movable assets including Demat accounts, fixed deposits, life insurance, and corporate shares. Designate specific beneficiaries and an executor.
+                      List all immovable assets across Faridabad including HSVP plot numbers, builder floor demarcations, Greater Faridabad high-rise apartment units, and MCF Property IDs. Collate movable assets including Demat accounts, fixed deposits, life insurance, and corporate shares. Designate specific heirs and an executor.
                     </p>
                   </div>
                 </div>
@@ -1310,10 +1310,10 @@ export default function FaridabadLocationClient({ faqs }: Props) {
                   </div>
                   <div className="space-y-1 flex-1">
                     <h3 className="font-bold text-slate-900 text-sm sm:text-base">
-                      Professional Advocate Drafting &amp; Custom Clauses
+                      Professional Lawyer Drafting &amp; Custom Clauses
                     </h3>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Our senior succession advocates draft your Will incorporating vital protective provisions: revocation of previous wills, survivorship clauses, minor child testamentary guardian designations, life-interest rights for surviving spouses, and specific residuary bequests.
+                      Our senior succession lawyers draft your Will incorporating vital protective rules: revocation of previous wills, survivorship clauses, minor child testamentary guardian designations, life-interest rights for surviving spouses, and specific residuary bequests.
                     </p>
                   </div>
                 </div>
@@ -1324,10 +1324,10 @@ export default function FaridabadLocationClient({ faqs }: Props) {
                   </div>
                   <div className="space-y-1 flex-1">
                     <h3 className="font-bold text-slate-900 text-sm sm:text-base">
-                      Execution Before Two Independent Witnesses
+                      Signing Before Two Independent Witnesses
                     </h3>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Print the drafted Will on plain white A4 paper. The testator signs or places their thumb impression on each sheet in the physical presence of two adult attesting witnesses. The witnesses, who must hold no beneficial interest in the estate, sign under the attestation clause in each other&apos;s sight.
+                      Print the drafted Will on plain white A4 paper. The Will maker signs or places their thumb impression on each sheet in the physical presence of two adult witnesses. The witnesses, who must hold no beneficial interest in the estate, sign under the attestation clause in each other&apos;s sight.
                     </p>
                   </div>
                 </div>
@@ -1341,7 +1341,7 @@ export default function FaridabadLocationClient({ faqs }: Props) {
                       Book Jamabandi Haryana e-Appointment Slot
                     </h3>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Log in to the Jamabandi Haryana portal (jamabandi.nic.in) under Deed Registration e-Appointment. Enter the testator and witness KYC information, select your jurisdictional Sub-Registrar (Faridabad Sector 12 or Ballabgarh), pay the nominal ₹100 registration fee online, and download the confirmed appointment token.
+                      Log in to the Jamabandi Haryana portal (jamabandi.nic.in) under Deed Registration e-Appointment. Enter the Will maker and witness KYC information, select your jurisdictional Sub-Registrar (Faridabad Sector 12 or Ballabgarh), pay the nominal ₹100 registration fee online, and download the confirmed appointment token.
                     </p>
                   </div>
                 </div>
@@ -1355,7 +1355,7 @@ export default function FaridabadLocationClient({ faqs }: Props) {
                       Biometric Capture &amp; SRO Book III Registration
                     </h3>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Attend the designated Sub-Registrar Office along with both witnesses. The Sub-Registrar verifies personal identities, captures digital photographs and biometric thumbprints, and verifies free testamentary capacity. The Will is recorded in Book III government custody and returned with an official registration stamp.
+                      Attend the designated SRO office along with both witnesses. The Sub-Registrar verifies personal identities, captures digital photographs and biometric thumbprints, and verifies free sound mind. The Will is recorded in Book III government custody and returned with an official registration stamp.
                     </p>
                   </div>
                 </div>
@@ -1373,7 +1373,7 @@ export default function FaridabadLocationClient({ faqs }: Props) {
                   7. Home Registration: Section 31 Doorstep Facility
                 </h3>
                 <p className="text-xs sm:text-sm text-slate-600 leading-relaxed max-w-4xl">
-                  For senior citizens, bedridden individuals, or persons suffering from severe mobility challenges in Faridabad, the law provides an official doorstep registration facility under Section 31 of the Registration Act, 1908:
+                  For senior citizens, bedridden people, or persons suffering from severe mobility fights in Faridabad, the law provides an official doorstep registration facility under Section 31 of the Registration Act, 1908:
                 </p>
               </div>
 
@@ -1382,27 +1382,27 @@ export default function FaridabadLocationClient({ faqs }: Props) {
                   <div className="p-4 rounded-2xl bg-slate-50 border border-slate-100 space-y-1.5">
                     <span className="font-bold text-slate-900 text-sm block">1. Medical Certification</span>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      An MBBS/MD doctor issues a formal certificate attesting that the testator is physically unable to travel to the SRO while confirming they are in sound, lucid mental health to execute a Will.
+                      An MBBS/MD doctor issues a formal paper attesting that the Will maker is physically unable to travel to the SRO while confirming they are in sound, lucid mental health to execute a Will.
                     </p>
                   </div>
 
                   <div className="p-4 rounded-2xl bg-slate-50 border border-slate-100 space-y-1.5">
                     <span className="font-bold text-slate-900 text-sm block">2. SRO Commission Filing</span>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      An application is submitted to the Sub-Registrar in Sector 12 or Ballabgarh along with the medical certificate, draft Will, and applicable government commission travel fee.
+                      An form is submitted to the Sub-Registrar in Sector 12 or Ballabgarh along with the medical paper, draft Will, and applicable government commission travel fee.
                     </p>
                   </div>
 
                   <div className="p-4 rounded-2xl bg-slate-50 border border-slate-100 space-y-1.5">
-                    <span className="font-bold text-slate-900 text-sm block">3. Doorstep Biometric Execution</span>
+                    <span className="font-bold text-slate-900 text-sm block">3. Doorstep Biometric Signing</span>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      The Sub-Registrar or an authorized registration officer visits the testator&apos;s home in Sector 14, 15, 21C, Charmwood Village, or Neharpar with portable biometric equipment to complete registration.
+                      The Sub-Registrar or an authorized registration officer visits the Will maker&apos;s home in Sector 14, 15, 21C, Charmwood Village, or Neharpar with portable biometric equipment to complete registration.
                     </p>
                   </div>
                 </div>
 
                 <div className="p-4 rounded-2xl bg-rose-50/60 border border-rose-100 text-xs text-slate-700 leading-relaxed">
-                  <strong>WillDrafting Assistance:</strong> Our legal team manages the end-to-end Section 31 process, drafting the formal commission application, coordinating SRO visit schedules, and preparing doctor fitness certificates.
+                  <strong>WillDrafting Help:</strong> Our legal team manages the end-to-end Section 31 process, drafting the formal commission form, coordinating SRO visit schedules, and preparing doctor fitness papers.
                 </div>
               </div>
             </section>
@@ -1415,7 +1415,7 @@ export default function FaridabadLocationClient({ faqs }: Props) {
                   <span>PREPARATION &amp; SRO VERIFICATION</span>
                 </div>
                 <h3 className="text-xl md:text-2xl font-extrabold text-slate-900 tracking-tight leading-snug">
-                  8. Documents Checklist: Interactive Requirements Tool
+                  8. Documents Checklist: Interactive Rules Tool
                 </h3>
                 <p className="text-xs sm:text-sm text-slate-600 leading-relaxed max-w-4xl">
                   Use this interactive checklist to prepare all essential records before drafting and registering your Will in Faridabad. Check items as you assemble them:
@@ -1508,16 +1508,16 @@ export default function FaridabadLocationClient({ faqs }: Props) {
                     Industrial Units &amp; Manufacturing Plots along Mathura Road
                   </h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    MSME factories across Sectors 24, 25, 58, and 59 involve complex assets including HSIIDC/HSVP leasehold deeds, heavy plant machinery, and private corporate shares. Wills must define share transmission under the Companies Act 2013 and partner profit ratios.
+                    MSME factories across Sectors 24, 25, 58, and 59 involve complex assets including HSIIDC/HSVP leasehold deeds, heavy plant machinery, and private corporate shares. Wills must define share transfer under the Companies Act 2013 and partner profit ratios.
                   </p>
                 </div>
 
                 <div className="rounded-2xl bg-white border border-slate-200/90 p-5 shadow-xs space-y-2">
                   <h3 className="font-bold text-slate-900 text-sm sm:text-base">
-                    Agricultural Lands &amp; Farmhouses in Tigaon / Dhauj
+                    Farm Lands &amp; Farmhouses in Tigaon / Dhauj
                   </h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Farmland and rural farmhouses in the Aravalli foothill belt or Ballabgarh rural revenue circles must be bequeathed with exact Khasra and Khewet numbers from the Haryana Jamabandi land records to ensure straightforward Form 6 mutation by the local Patwari.
+                    Farmland and rural farmhouses in the Aravalli foothill belt or Ballabgarh rural revenue circles must be bequeathed with exact Khasra and Khewet numbers from the Haryana Jamabandi land records to make sure straightforward Form 6 name change by the local Patwari.
                   </p>
                 </div>
               </div>
@@ -1544,7 +1544,7 @@ export default function FaridabadLocationClient({ faqs }: Props) {
                     <thead>
                       <tr className="border-b border-slate-200 bg-slate-50/70 font-semibold text-slate-900">
                         <th className="py-3 px-4">Component</th>
-                        <th className="py-3 px-4">Haryana Statutory Rate</th>
+                        <th className="py-3 px-4">Haryana Legal Rate</th>
                         <th className="py-3 px-4">Notes &amp; Guidelines</th>
                       </tr>
                     </thead>
@@ -1567,12 +1567,12 @@ export default function FaridabadLocationClient({ faqs }: Props) {
                       <tr>
                         <td className="py-3 px-4 font-bold text-slate-800">Section 31 Home Visit Commission</td>
                         <td className="py-3 px-4 font-bold text-slate-800">₹500 – ₹1,000</td>
-                        <td className="py-3 px-4">Applicable when Sub-Registrar visits testator residence for doorstep biometric execution</td>
+                        <td className="py-3 px-4">Applicable when Sub-Registrar visits Will maker residence for doorstep biometric signing</td>
                       </tr>
                       <tr>
                         <td className="py-3 px-4 font-bold text-slate-800">Court Probate Savings</td>
                         <td className="py-3 px-4 text-emerald-700 font-bold">Saves ₹1,00,000 – ₹3,00,000+</td>
-                        <td className="py-3 px-4">Because probate is optional in Haryana, families save hefty civil court fees and advocate litigation costs</td>
+                        <td className="py-3 px-4">Because probate is optional in Haryana, families save hefty civil court fees and lawyer court fights costs</td>
                       </tr>
                     </tbody>
                   </table>
@@ -1588,7 +1588,7 @@ export default function FaridabadLocationClient({ faqs }: Props) {
                   <span>TRANSPARENT LEGAL SERVICES</span>
                 </div>
                 <h3 className="text-xl md:text-2xl font-extrabold text-slate-900 tracking-tight leading-snug">
-                  11. Plans &amp; Pricing: Transparent Legal Assistance Tiers
+                  11. Plans &amp; Pricing: Transparent Legal Help Tiers
                 </h3>
                 <p className="text-xs sm:text-sm text-slate-600 leading-relaxed max-w-4xl">
                   Choose the level of legal support tailored to your family&apos;s estate size and registration preferences in Faridabad:
@@ -1606,12 +1606,12 @@ export default function FaridabadLocationClient({ faqs }: Props) {
                       <span className="text-xs text-slate-500 font-medium">all-inclusive</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Ideal for individuals seeking a legally watertight Will drafted by an experienced succession advocate.
+                      Ideal for people seeking a legally watertight Will drafted by an experienced succession lawyer.
                     </p>
                     <ul className="space-y-2 text-xs text-slate-600 pt-2 border-t border-slate-100">
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>High Court Advocate Vetted</span>
+                        <span>High Court Lawyer Vetted</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
@@ -1623,7 +1623,7 @@ export default function FaridabadLocationClient({ faqs }: Props) {
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>Execution &amp; Witness Guidelines</span>
+                        <span>Signing &amp; Witness Guidelines</span>
                       </li>
                     </ul>
                   </div>
@@ -1643,8 +1643,8 @@ export default function FaridabadLocationClient({ faqs }: Props) {
                     MOST POPULAR
                   </div>
                   <div className="space-y-3">
-                    <span className="text-xs font-bold uppercase tracking-wider text-[#C65378]">Comprehensive</span>
-                    <h3 className="text-lg font-extrabold text-slate-900">Advocate Consultation &amp; Review</h3>
+                    <span className="text-xs font-bold uppercase tracking-wider text-[#C65378]">Full</span>
+                    <h3 className="text-lg font-extrabold text-slate-900">Lawyer Talk &amp; Review</h3>
                     <div className="flex items-baseline gap-1">
                       <span className="text-3xl font-black text-slate-900">₹4,990</span>
                       <span className="text-xs text-slate-500 font-medium">all-inclusive</span>
@@ -1655,7 +1655,7 @@ export default function FaridabadLocationClient({ faqs }: Props) {
                     <ul className="space-y-2 text-xs text-slate-600 pt-2 border-t border-slate-100">
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>1-on-1 Senior Advocate Consultation</span>
+                        <span>1-on-1 Senior Lawyer Talk</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
@@ -1677,7 +1677,7 @@ export default function FaridabadLocationClient({ faqs }: Props) {
                     onClick={handleStartDraft}
                     className="w-full py-3 rounded-xl bg-[#C65378] text-white text-xs font-bold text-center hover:bg-[#a13c5d] transition-colors shadow-sm"
                   >
-                    Select Comprehensive
+                    Select Full
                   </a>
                 </div>
 
@@ -1735,7 +1735,7 @@ export default function FaridabadLocationClient({ faqs }: Props) {
                   12. FAQ: Frequently Asked Questions in Faridabad
                 </h3>
                 <p className="text-xs sm:text-sm text-slate-600 leading-relaxed max-w-4xl">
-                  Detailed legal answers to frequent questions regarding Will making, HSVP plot transfer, MCF mutation, and SRO registration in Faridabad:
+                  Detailed legal answers to frequent questions regarding Will making, HSVP plot transfer, MCF name change, and SRO registration in Faridabad:
                 </p>
               </div>
 
@@ -1779,7 +1779,7 @@ export default function FaridabadLocationClient({ faqs }: Props) {
                   <span>AUTHORITATIVE STATUTES &amp; RULINGS</span>
                 </div>
                 <h3 className="text-xl md:text-2xl font-extrabold text-slate-900 tracking-tight leading-snug">
-                  13. Statutory Refs: Acts, Sections &amp; Judicial Precedents
+                  13. Legal Refs: Acts, Sections &amp; Judicial Precedents
                 </h3>
                 <p className="text-xs sm:text-sm text-slate-600 leading-relaxed max-w-4xl">
                   Every legal principle and procedural guideline on this page is anchored in codified Indian and Haryana state enactments:
@@ -1790,7 +1790,7 @@ export default function FaridabadLocationClient({ faqs }: Props) {
                 <div className="p-4 rounded-2xl bg-white border border-slate-200/90 shadow-2xs space-y-1.5">
                   <span className="font-bold text-slate-900 block">Indian Succession Act, 1925</span>
                   <span className="text-slate-600 block leading-relaxed">
-                    Sections 59 (testamentary capacity), 63 (execution &amp; attestation), 67 (witness voiding), 213 (probate applicability limited to presidency towns), and 218 (administration).
+                    Sections 59 (sound mind), 63 (signing &amp; attestation), 67 (witness voiding), 213 (probate applicability limited to presidency towns), and 218 (management).
                   </span>
                 </div>
 
@@ -1811,7 +1811,7 @@ export default function FaridabadLocationClient({ faqs }: Props) {
                 <div className="p-4 rounded-2xl bg-white border border-slate-200/90 shadow-2xs space-y-1.5">
                   <span className="font-bold text-slate-900 block">Punjab &amp; Haryana High Court Jurisprudence</span>
                   <span className="text-slate-600 block leading-relaxed">
-                    Landmark decisions confirming that obtaining probate is non-mandatory in Haryana for Hindus, Sikhs, Jains, Buddhists, and Christians, permitting direct revenue mutation.
+                    Landmark decisions confirming that getting probate is non-needed in Haryana for Hindus, Sikhs, Jains, Buddhists, and Christians, permitting direct revenue name change.
                   </span>
                 </div>
               </div>

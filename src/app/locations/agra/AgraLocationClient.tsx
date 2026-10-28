@@ -133,20 +133,20 @@ const INITIAL_CHECKLIST = [
   },
   {
     id: "item-2",
-    label: "Original Aadhaar Card & PAN of the Testator",
+    label: "Original Aadhaar Card & PAN of the Will maker",
     detail: "Required for biometric thumbprint scanning and live webcam photo capture on the UP IGRSUP portal.",
     checked: true,
   },
   {
     id: "item-3",
     label: "Two Independent Adult Witnesses with Aadhaar",
-    detail: "Both witnesses must carry original photo IDs and must not be beneficiaries receiving assets under the Will.",
+    detail: "Both witnesses must carry original photo IDs and must not be heirs receiving assets under the Will.",
     checked: true,
   },
   {
     id: "item-4",
     label: "Doctor's Mental Capacity Certificate (For Seniors)",
-    detail: "Issued by a registered MBBS practitioner certifying sound testamentary capacity to eliminate incapacity claims.",
+    detail: "Issued by a registered MBBS practitioner certifying sound sound mind to eliminate incapacity claims.",
     checked: false,
   },
   {
@@ -164,7 +164,7 @@ const INITIAL_CHECKLIST = [
   {
     id: "item-7",
     label: "Two Recent Color Passport Photos Each",
-    detail: "Clear passport photographs for the testator and both attesting witnesses to paste into SRO Book III registers.",
+    detail: "Clear passport photographs for the Will maker and both witnesses to paste into SRO Book III registers.",
     checked: false,
   },
 ];
@@ -260,8 +260,8 @@ export default function AgraLocationClient({ faqs }: Props) {
               </h1>
 
               <p className="text-base sm:text-lg text-slate-200 leading-relaxed font-normal max-w-2xl">
-                Draft a legally binding Will for your ADA residential plots, independent houses, footwear enterprises, and family savings.
-                Get advocate drafting, UP IGRSUP portal registration assistance, and doorstep execution for senior citizens across Agra.
+                Draft a legally binding Will for your ADA home plots, independent houses, footwear enterprises, and family savings.
+                Get lawyer drafting, UP IGRSUP portal registration help, and doorstep signing for senior citizens across Agra.
               </p>
 
               <div className="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
@@ -286,7 +286,7 @@ export default function AgraLocationClient({ faqs }: Props) {
               <div className="pt-4 grid grid-cols-3 gap-3 border-t border-white/10 text-xs text-slate-300">
                 <div className="flex items-center gap-2">
                   <Check className="w-4 h-4 text-emerald-400 shrink-0" />
-                  <span>Allahabad HC Advocate Vetted</span>
+                  <span>Allahabad HC Lawyer Vetted</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <Check className="w-4 h-4 text-emerald-400 shrink-0" />
@@ -348,7 +348,7 @@ export default function AgraLocationClient({ faqs }: Props) {
             {/* Stat 3 */}
             <div className="bg-white/70 sm:bg-transparent rounded-xl sm:rounded-none p-2.5 sm:p-3 border border-[#172228]/10 sm:border-0 md:border-l md:border-[#172228]/10 shadow-2xs sm:shadow-none flex flex-col items-center justify-center">
               <span className="block text-sm min-[390px]:text-base sm:text-xl lg:text-2xl font-extrabold text-[#172228] tracking-tight leading-tight whitespace-nowrap">
-                Non-Compulsory
+                Non-Needed
               </span>
               <span className="text-[9px] min-[390px]:text-[10px] sm:text-xs font-bold uppercase tracking-wider text-[#55636D] mt-1 leading-tight">
                 Probate Outside Presidency
@@ -507,10 +507,10 @@ export default function AgraLocationClient({ faqs }: Props) {
                   <div className="p-4 rounded-2xl bg-slate-50/70 border border-slate-100 space-y-1.5">
                     <div className="flex items-center gap-2 font-bold text-sm text-slate-900">
                       <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
-                      <span>Probate Non-Compulsory</span>
+                      <span>Probate Non-Needed</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Unlike Mumbai, Chennai, and Kolkata, court probate is strictly optional in Agra under Section 213 of the Indian Succession Act. Beneficiaries inherit without mandatory High Court petitions.
+                      Unlike Mumbai, Chennai, and Kolkata, court probate is strictly optional in Agra under Section 213 of the Indian Succession Act. Heirs inherit without needed High Court petitions.
                     </p>
                   </div>
 
@@ -527,10 +527,10 @@ export default function AgraLocationClient({ faqs }: Props) {
                   <div className="p-4 rounded-2xl bg-slate-50/70 border border-slate-100 space-y-1.5">
                     <div className="flex items-center gap-2 font-bold text-sm text-slate-900">
                       <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
-                      <span>Fast ADA &amp; Municipal Mutation</span>
+                      <span>Fast ADA &amp; Municipal Name Change</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      A registered Will expedites property mutation across Agra Development Authority (ADA) residential schemes, Agra Nagar Nigam records, and UP Revenue Code agricultural Khatauni updates.
+                      A registered Will expedites property name change across Agra Development Authority (ADA) home schemes, Agra Nagar Nigam records, and UP Revenue Code farm Khatauni updates.
                     </p>
                   </div>
                 </div>
@@ -549,12 +549,12 @@ export default function AgraLocationClient({ faqs }: Props) {
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Writing a Will in Agra is governed by the <strong>Indian Succession Act, 1925</strong>, the <strong>Registration Act, 1908</strong>, and the <strong>Uttar Pradesh Revenue Code, 2006</strong>.
-                  Any adult of sound mind who is at least 18 years old can make a Will to transfer self-acquired real estate, business equity, bank accounts, and ancestral shares.
+                  Any adult of sound mind who is at least 18 years old can make a Will to transfer self-acquired real estate, business equity, bank accounts, and family shares.
                 </p>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Agra features a unique multi-tier property landscape.
-                  Families hold ancestral Havelis in the old city, ADA plots in Dayalbagh and Shastri Puram, footwear manufacturing units in Sikandra and Nunhai, hotels on Fatehabad Road, and farmland across Fatehabad and Kirawali.
-                  A professionally drafted Will ensures your life work transfers securely without protracted courtroom disputes.
+                  Families hold family Havelis in the old city, ADA plots in Dayalbagh and Shastri Puram, footwear manufacturing units in Sikandra and Nunhai, hotels on Fatehabad Road, and farmland across Fatehabad and Kirawali.
+                  A professionally drafted Will ensures your life work transfers securely without protracted courtroom fights.
                 </p>
               </div>
 
@@ -565,7 +565,7 @@ export default function AgraLocationClient({ faqs }: Props) {
                   </span>
                   <h3 className="font-bold text-sm text-slate-900">Legal Capacity</h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    The testator must be at least 18 years old and in sound testamentary mental health (Section 59).
+                    The Will maker must be at least 18 years old and in sound testamentary mental health (Section 59).
                   </p>
                 </div>
 
@@ -595,7 +595,7 @@ export default function AgraLocationClient({ faqs }: Props) {
                   </span>
                   <h3 className="font-bold text-sm text-slate-900">Independent</h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Witnesses must not be beneficiaries receiving any property under the Will (Section 67).
+                    Witnesses must not be heirs receiving any property under the Will (Section 67).
                   </p>
                 </div>
               </div>
@@ -613,10 +613,10 @@ export default function AgraLocationClient({ faqs }: Props) {
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Under Section 18(e) of the Registration Act, 1908, registering a Will is <strong>optional</strong>.
-                  A Will written on plain A4 paper is fully valid in Indian courts if properly executed and attested by two witnesses.
+                  A Will written on plain A4 paper is fully valid in Indian courts if properly signed and attested by two witnesses.
                 </p>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  However, registering your Will at an Agra Sub-Registrar Office provides decisive evidentiary weight.
+                  However, registering your Will at an Agra SRO office provides decisive proof weight.
                   The document is preserved in government Book III registers, which stops false claims of forgery or tampering:
                 </p>
               </div>
@@ -643,17 +643,17 @@ export default function AgraLocationClient({ faqs }: Props) {
                       <td className="p-4 bg-slate-50/20">Lower. Disgruntled legal heirs often claim signature fabrication or suspicious circumstances</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-semibold">ADA Property Mutation</td>
-                      <td className="p-4 bg-rose-50/20">Accepted directly by Agra Development Authority without mandatory newspaper advertisements</td>
+                      <td className="p-4 font-semibold">ADA Property Name Change</td>
+                      <td className="p-4 bg-rose-50/20">Accepted directly by Agra Development Authority without needed newspaper advertisements</td>
                       <td className="p-4 bg-slate-50/20">ADA demands 30-day public notice in two newspapers, affidavits, and heavy indemnity bonds</td>
                     </tr>
                     <tr>
                       <td className="p-4 font-semibold">Agra Nagar Nigam Transfer</td>
                       <td className="p-4 bg-rose-50/20">Streamlines house tax record updates (Dakhil Kharij) across municipal zones</td>
-                      <td className="p-4 bg-slate-50/20">Municipal assessors may delay mutation until all legal heirs provide certified consent</td>
+                      <td className="p-4 bg-slate-50/20">Municipal assessors may delay name change until all legal heirs provide certified consent</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-semibold">Statutory Government Fee</td>
+                      <td className="p-4 font-semibold">Legal Government Fee</td>
                       <td className="p-4 bg-rose-50/20 font-bold text-[#C65378]">Flat ₹100 registration fee plus nominal scanning</td>
                       <td className="p-4 bg-slate-50/20 font-bold text-slate-700">₹0 government fee</td>
                     </tr>
@@ -670,14 +670,14 @@ export default function AgraLocationClient({ faqs }: Props) {
                   <span>JURISDICTION RULES</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  3. Is Probate Mandatory for Properties in Agra?
+                  3. Is Probate Needed for Assets in Agra?
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Probate is a court decree certifying the legal authenticity of a Will, granted by a court of competent jurisdiction.
-                  It confers legal authority upon the executor to distribute the deceased testator&apos;s assets.
+                  Probate is a court decree certifying the legal authenticity of a Will, granted by a court of competent area.
+                  It confers legal authority upon the executor to distribute the deceased Will maker&apos;s assets.
                 </p>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Under <strong>Section 213(2) read with Section 57(a) and (b) of the Indian Succession Act, 1925</strong>, probate is compulsory only for Wills made within the historical presidency towns of Mumbai, Kolkata, and Chennai, or where immovable property is situated within those presidency limits.
+                  Under <strong>Section 213(2) read with Section 57(a) and (b) of the Indian Succession Act, 1925</strong>, probate is needed only for Wills made within the historical presidency towns of Mumbai, Kolkata, and Chennai, or where land and flats is situated within those presidency limits.
                   <strong> Agra is not a presidency town.</strong>
                 </p>
               </div>
@@ -688,14 +688,14 @@ export default function AgraLocationClient({ faqs }: Props) {
                     UP Legal Exemption
                   </span>
                   <h3 className="font-bold text-base text-slate-900">
-                    Probate Non-Compulsory in Agra
+                    Probate Non-Needed in Agra
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    The Allahabad High Court has consistently held that for Hindu, Sikh, Jain, and Buddhist Wills executed in Agra and Uttar Pradesh, obtaining court probate is not mandatory to establish title over local immovable or movable assets.
+                    The Allahabad High Court has consistently held that for Hindu, Sikh, Jain, and Buddhist Wills signed in Agra and Uttar Pradesh, getting court probate is not needed to set up title over local immovable or movable assets.
                   </p>
                   <div className="pt-2 text-xs text-slate-500 flex items-center gap-1.5">
                     <Check className="w-3.5 h-3.5 text-emerald-600" />
-                    <span>Saves years of civil court litigation and heavy court fees</span>
+                    <span>Saves years of civil court court fights and heavy court fees</span>
                   </div>
                 </div>
 
@@ -707,11 +707,11 @@ export default function AgraLocationClient({ faqs }: Props) {
                     When is Probate or Succession Advice Needed?
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    While probate is optional in Agra, families may still apply for Letters of Administration or a Succession Certificate if a contentious legal heir challenges the Will in the Agra District Court, or if nationalized banks demand judicial sanction.
+                    While probate is optional in Agra, families may still apply for Letters of Administration or a Succession Certificate if a contentious legal heir fights the Will in the Agra District Court, or if nationalized banks demand judicial sanction.
                   </p>
                   <div className="pt-2 text-xs text-slate-500 flex items-center gap-1.5">
                     <AlertTriangle className="w-3.5 h-3.5 text-[#C65378]" />
-                    <span>A registered Will drastically minimizes any dispute risks</span>
+                    <span>A registered Will drastically minimizes any fight risks</span>
                   </div>
                 </div>
               </div>
@@ -720,10 +720,10 @@ export default function AgraLocationClient({ faqs }: Props) {
               <div className="p-5 rounded-2xl bg-white border border-slate-200/90 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 shadow-xs">
                 <div>
                   <h4 className="font-bold text-sm text-slate-900">
-                    Do you also own real estate or ancestral property in Mumbai or Kolkata?
+                    Do you also own real estate or family property in Mumbai or Kolkata?
                   </h4>
                   <p className="text-xs text-slate-600 mt-1">
-                    If your Agra Will encompasses properties located within Greater Mumbai, Kolkata, or Chennai, presidency town probate requirements may apply to those specific properties.
+                    If your Agra Will encompasses assets located within Greater Mumbai, Kolkata, or Chennai, presidency town probate rules may apply to those specific assets.
                   </p>
                 </div>
                 <Link
@@ -748,7 +748,7 @@ export default function AgraLocationClient({ faqs }: Props) {
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Will registration across Agra district is administered by the Stamps and Registration Department of Uttar Pradesh (IGRSUP).
-                  Under Section 32 of the Registration Act, you can present your Will at the Sub-Registrar office having jurisdiction over your residence.
+                  Under Section 32 of the Registration Act, you can present your Will at the SRO office having area over your residence.
                 </p>
               </div>
 
@@ -856,7 +856,7 @@ export default function AgraLocationClient({ faqs }: Props) {
                   5. Area-Wise Will Drafting Services Across Agra Localities
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Looking for legally verified <strong>Will drafting services in Dayalbagh, Kamla Nagar, Civil Lines, or Sanjay Place</strong>? Our senior estate planning advocates provide comprehensive legal drafting, UP IGRSUP portal slot booking, and Sub-Registrar accompaniment tailored to the specific property dynamics of Agra:
+                  Looking for legally verified <strong>Will drafting services in Dayalbagh, Kamla Nagar, Civil Lines, or Sanjay Place</strong>? Our senior estate planning lawyers provide full legal drafting, UP IGRSUP portal slot booking, and Sub-Registrar accompaniment tailored to the specific property dynamics of Agra:
                 </p>
               </div>
 
@@ -867,7 +867,7 @@ export default function AgraLocationClient({ faqs }: Props) {
                     <div className="flex items-center justify-between gap-2">
                       <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-rose-50 text-[#C65378] border border-rose-100">
                         <MapPin className="w-3.5 h-3.5" />
-                        North Residential &amp; Educational
+                        North Home &amp; Educational
                       </span>
                       <span className="text-[11px] font-semibold text-slate-500 bg-slate-100 px-2.5 py-1 rounded-lg">
                         SRO Agra III (Khandari)
@@ -887,16 +887,16 @@ export default function AgraLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Specialized <strong>Will drafting services in Dayalbagh</strong> and Swami Bagh for peaceful residential bungalows, retired educationists, family savings, and independent plots, ensuring seamless inheritance without inter-family contention.
+                      Specialized <strong>Will drafting services in Dayalbagh</strong> and Swami Bagh for peaceful home bungalows, retired educationists, family savings, and independent plots, making sure seamless inheritance without inter-family contention.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
                       <div className="flex items-center gap-2 font-bold text-slate-900">
                         <Building className="w-3.5 h-3.5 text-[#C65378]" />
-                        <span>SRO Hub: Government Administrative Complex, Khandari</span>
+                        <span>SRO Hub: Government Office Complex, Khandari</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        UP IGRSUP appointment scheduling, advocate representation, and Section 31 home visits for elderly testators across Dayalbagh.
+                        UP IGRSUP appointment scheduling, lawyer representation, and Section 31 home visits for elderly testators across Dayalbagh.
                       </p>
                     </div>
                   </div>
@@ -921,7 +921,7 @@ export default function AgraLocationClient({ faqs }: Props) {
                     <div className="flex items-center justify-between gap-2">
                       <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-rose-50 text-[#C65378] border border-rose-100">
                         <MapPin className="w-3.5 h-3.5" />
-                        North-East Commercial &amp; Homes
+                        North-East Shop &amp; Homes
                       </span>
                       <span className="text-[11px] font-semibold text-slate-500 bg-slate-100 px-2.5 py-1 rounded-lg">
                         SRO Agra III (Khandari)
@@ -941,16 +941,16 @@ export default function AgraLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Leading <strong>Will drafting services in Kamla Nagar</strong> and Balkeshwar for multi-generational business families, trading house owners, commercial storefronts, and mutual fund investment portfolios.
+                      Leading <strong>Will drafting services in Kamla Nagar</strong> and Balkeshwar for multi-generational business families, trading house owners, shop storefronts, and mutual fund investment portfolios.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
                       <div className="flex items-center gap-2 font-bold text-slate-900">
                         <Building className="w-3.5 h-3.5 text-[#C65378]" />
-                        <span>SRO Hub: Transport Nagar / Khandari Administrative Annex</span>
+                        <span>SRO Hub: Transport Nagar / Khandari Office Annex</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Rapid e-token generation on igrsup.gov.in, advocate review, and Book III registration for Kamla Nagar residents.
+                        Rapid e-token generation on igrsup.gov.in, lawyer review, and Book III registration for Kamla Nagar residents.
                       </p>
                     </div>
                   </div>
@@ -975,7 +975,7 @@ export default function AgraLocationClient({ faqs }: Props) {
                     <div className="flex items-center justify-between gap-2">
                       <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-rose-50 text-[#C65378] border border-rose-100">
                         <MapPin className="w-3.5 h-3.5" />
-                        Commercial &amp; Financial Heart
+                        Shop &amp; Financial Heart
                       </span>
                       <span className="text-[11px] font-semibold text-slate-500 bg-slate-100 px-2.5 py-1 rounded-lg">
                         SRO Agra I (Civil Lines)
@@ -989,13 +989,13 @@ export default function AgraLocationClient({ faqs }: Props) {
                     <div className="flex flex-wrap gap-1.5 text-[11px] text-slate-600">
                       <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Sanjay Place Complex</span>
                       <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Hariparwat Crossing</span>
-                      <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">MG Road Commercial</span>
+                      <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">MG Road Shop</span>
                       <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Raja Ki Mandi</span>
                       <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Professors Colony</span>
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      High-net-worth <strong>Will drafting services in Civil Lines</strong> and Sanjay Place for corporate office spaces, commercial complexes, doctor clinics, equity portfolios, and testamentary trust formations.
+                      High-net-worth <strong>Will drafting services in Civil Lines</strong> and Sanjay Place for corporate office spaces, shop complexes, doctor clinics, equity portfolios, and testamentary trust formations.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1004,7 +1004,7 @@ export default function AgraLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Collectorate Compound, Civil Lines</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Direct advocate representation at the apex Collectorate registry, doctor coordination, and rapid Book III entry.
+                        Direct lawyer representation at the apex Collectorate registry, doctor coordination, and rapid Book III entry.
                       </p>
                     </div>
                   </div>
@@ -1058,7 +1058,7 @@ export default function AgraLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Tehsil Sadar Compound, Near Agra Cantt</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Hospitality asset ring-fencing, partnership share succession, and dedicated advocate guidance at SRO Sadar.
+                        Hospitality asset ring-fencing, partnership share succession, and dedicated lawyer guidance at SRO Sadar.
                       </p>
                     </div>
                   </div>
@@ -1083,7 +1083,7 @@ export default function AgraLocationClient({ faqs }: Props) {
                     <div className="flex items-center justify-between gap-2">
                       <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-rose-50 text-[#C65378] border border-rose-100">
                         <MapPin className="w-3.5 h-3.5" />
-                        ADA Plotted Residential &amp; Footwear
+                        ADA Plotted Home &amp; Footwear
                       </span>
                       <span className="text-[11px] font-semibold text-slate-500 bg-slate-100 px-2.5 py-1 rounded-lg">
                         SRO Agra III (Khandari)
@@ -1103,7 +1103,7 @@ export default function AgraLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Structured <strong>Will drafting services in Shastri Puram</strong> and Sikandra for Agra Development Authority (ADA) residential plots, duplex villas, and MSME footwear workshop premises.
+                      Structured <strong>Will drafting services in Shastri Puram</strong> and Sikandra for Agra Development Authority (ADA) home plots, duplex villas, and MSME footwear workshop premises.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1112,7 +1112,7 @@ export default function AgraLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Transport Nagar Sub-Registry Wing</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        ADA allotment paper review, fast mutation advice, and prompt IGRSUP e-appointment booking.
+                        ADA allotment paper review, fast name change advice, and prompt IGRSUP e-appointment booking.
                       </p>
                     </div>
                   </div>
@@ -1157,16 +1157,16 @@ export default function AgraLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Reliable <strong>Will drafting services in Sadar Bazar</strong> and Agra Cantt for retail store owners, commercial premises, cantonment boundary residences, and ancestral family jewellery bequests.
+                      Reliable <strong>Will drafting services in Sadar Bazar</strong> and Agra Cantt for retail store owners, shop premises, cantonment boundary residences, and family family jewellery bequests.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
                       <div className="flex items-center gap-2 font-bold text-slate-900">
                         <Building className="w-3.5 h-3.5 text-[#C65378]" />
-                        <span>SRO Hub: Tehsil Sadar Administrative Annex</span>
+                        <span>SRO Hub: Tehsil Sadar Office Annex</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Complete support for cantonment board property verification and SRO registration execution.
+                        Complete support for cantonment board property check and SRO registration signing.
                       </p>
                     </div>
                   </div>
@@ -1217,7 +1217,7 @@ export default function AgraLocationClient({ faqs }: Props) {
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
                       <div className="flex items-center gap-2 font-bold text-slate-900">
                         <Building className="w-3.5 h-3.5 text-[#C65378]" />
-                        <span>SRO Hub: Trans-Yamuna Administrative Wing</span>
+                        <span>SRO Hub: Trans-Yamuna Office Wing</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
                         Corporate asset ring-fencing, factory deed reviews, and expedited Book III registration for industrial promoters.
@@ -1245,7 +1245,7 @@ export default function AgraLocationClient({ faqs }: Props) {
                     <div className="flex items-center justify-between gap-2">
                       <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-rose-50 text-[#C65378] border border-rose-100">
                         <MapPin className="w-3.5 h-3.5" />
-                        Agricultural &amp; Cold Storage
+                        Farm &amp; Cold Storage
                       </span>
                       <span className="text-[11px] font-semibold text-slate-500 bg-slate-100 px-2.5 py-1 rounded-lg">
                         SRO Fatehabad
@@ -1265,16 +1265,16 @@ export default function AgraLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Agricultural <strong>Will drafting services in Fatehabad</strong> and Shamsabad under Section 107 of the UP Revenue Code, 2006 for farm holdings, cold storages, and ancestral rural properties.
+                      Farm <strong>Will drafting services in Fatehabad</strong> and Shamsabad under Section 107 of the UP Revenue Code, 2006 for farm holdings, cold storages, and family rural assets.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
                       <div className="flex items-center gap-2 font-bold text-slate-900">
                         <Building className="w-3.5 h-3.5 text-[#C65378]" />
-                        <span>SRO Hub: Tehsil Fatehabad Administrative Campus</span>
+                        <span>SRO Hub: Tehsil Fatehabad Office Campus</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Khatauni verification, UP Bhulekh mutation alignment, and physical advocate support at SRO Fatehabad.
+                        Khatauni check, UP Bhulekh name change alignment, and physical lawyer support at SRO Fatehabad.
                       </p>
                     </div>
                   </div>
@@ -1306,7 +1306,7 @@ export default function AgraLocationClient({ faqs }: Props) {
                   6. Step-by-Step SOP: Will Drafting to Registration
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Follow this verified standard operating procedure to prepare, execute, and optionally register your Will in Agra:
+                  Follow this verified standard operating step to prepare, execute, and optionally register your Will in Agra:
                 </p>
               </div>
 
@@ -1318,10 +1318,10 @@ export default function AgraLocationClient({ faqs }: Props) {
                   </span>
                   <div className="space-y-1">
                     <h3 className="font-bold text-sm sm:text-base text-slate-900">
-                      Inventory Assets &amp; Identify Beneficiaries
+                      Inventory Assets &amp; Identify Heirs
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Compile a complete list of your properties in Agra and beyond. Include ADA allotment numbers, registered sale deeds, Nagar Nigam house tax assessments, factory assets, bank folios, and agricultural Khatauni details. Appoint a trustworthy executor.
+                      Compile a complete list of your assets in Agra and beyond. Include ADA allotment numbers, registered sale deeds, Nagar Nigam house tax assessments, factory assets, bank folios, and farm Khatauni details. Appoint a trustworthy executor.
                     </p>
                   </div>
                 </div>
@@ -1333,7 +1333,7 @@ export default function AgraLocationClient({ faqs }: Props) {
                   </span>
                   <div className="space-y-1">
                     <h3 className="font-bold text-sm sm:text-base text-slate-900">
-                      Draft Legal Will with Succession Advocate
+                      Draft Legal Will with Succession Lawyer
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                       Work with our specialized succession lawyers to structure custom clauses. Include clear revocation of prior Wills, specific bequests, survivorship terms, and a residual clause to cover any future acquisitions.
@@ -1366,7 +1366,7 @@ export default function AgraLocationClient({ faqs }: Props) {
                       Book UP IGRSUP Appointment Online
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Log in to the Stamps and Registration portal (igrsup.gov.in) and enter the Document Registration portal. Select your local Agra Sub-Registrar office, upload party information, pay the ₹100 registration fee online, and download the e-appointment token.
+                      Log in to the Stamps and Registration portal (igrsup.gov.in) and enter the Document Registration portal. Select your local Agra SRO office, upload party information, pay the ₹100 registration fee online, and download the e-appointment token.
                     </p>
                   </div>
                 </div>
@@ -1378,10 +1378,10 @@ export default function AgraLocationClient({ faqs }: Props) {
                   </span>
                   <div className="space-y-1">
                     <h3 className="font-bold text-sm sm:text-base text-slate-900">
-                      Complete Biometric Verification at Agra SRO
+                      Complete Biometric Check at Agra SRO
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Visit the Sub-Registrar office during your scheduled slot with both witnesses, original Aadhaar cards, and passport photos. The officer records biometric fingerprints, takes live webcam photos, files the Will into Book III records, and issues your registered document.
+                      Visit the SRO office during your scheduled slot with both witnesses, original Aadhaar cards, and passport photos. The officer records biometric fingerprints, takes live webcam photos, files the Will into Book III records, and issues your registered document.
                     </p>
                   </div>
                 </div>
@@ -1400,7 +1400,7 @@ export default function AgraLocationClient({ faqs }: Props) {
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Visiting crowded government registry offices in Civil Lines or Sadar can be demanding for elderly citizens, bedridden testators, or hospital patients.
-                  <strong> Section 31 of the Registration Act, 1908</strong> allows the Sub-Registrar to visit the testator&apos;s residence or hospital room under exceptional circumstances.
+                  <strong> Section 31 of the Registration Act, 1908</strong> allows the Sub-Registrar to visit the Will maker&apos;s residence or hospital room under exceptional circumstances.
                 </p>
               </div>
 
@@ -1416,7 +1416,7 @@ export default function AgraLocationClient({ faqs }: Props) {
                     </span>
                     <h4 className="font-bold text-sm text-slate-900">Doctor Fitness Certificate</h4>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      A registered MBBS practitioner examines the testator and certifies sound mental capacity while noting physical inability to travel to the SRO.
+                      A registered MBBS practitioner examines the Will maker and certifies sound mental capacity while noting physical inability to travel to the SRO.
                     </p>
                   </div>
 
@@ -1424,9 +1424,9 @@ export default function AgraLocationClient({ faqs }: Props) {
                     <span className="w-7 h-7 rounded-lg bg-rose-100 text-[#C65378] flex items-center justify-center font-bold text-xs">
                       2
                     </span>
-                    <h4 className="font-bold text-sm text-slate-900">SRO Commission Application</h4>
+                    <h4 className="font-bold text-sm text-slate-900">SRO Commission Form</h4>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Our legal team files a formal Section 31 petition before the concerned Agra Sub-Registrar along with the doctor&apos;s certificate and pays the official commission visit fee.
+                      Our legal team files a formal Section 31 petition before the concerned Agra Sub-Registrar along with the doctor&apos;s paper and pays the official commission visit fee.
                     </p>
                   </div>
 
@@ -1458,10 +1458,10 @@ export default function AgraLocationClient({ faqs }: Props) {
                   <span>PREPARATION CHECKLIST</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  8. Mandatory Document Checklist for Agra Wills
+                  8. Needed Document Checklist for Agra Wills
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Keep these verified records ready before executing and registering your Will in Agra:
+                  Keep these verified records ready before signing and registering your Will in Agra:
                 </p>
               </div>
 
@@ -1514,7 +1514,7 @@ export default function AgraLocationClient({ faqs }: Props) {
                   <span>ASSET CLASSIFICATION</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  9. Estate Asset Distribution: ADA Plots &amp; Business Assets
+                  9. Estate Asset Split: ADA Plots &amp; Business Assets
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   A legally compliant Will should address the distinctive asset classes prevalent across Agra:
@@ -1525,20 +1525,20 @@ export default function AgraLocationClient({ faqs }: Props) {
                 {/* ASSET 1 */}
                 <div className="bg-white rounded-2xl border border-slate-200/90 p-5 shadow-xs space-y-2">
                   <h3 className="font-bold text-sm sm:text-base text-slate-900">
-                    Agra Development Authority (ADA) Residential Plots &amp; Flats
+                    Agra Development Authority (ADA) Home Plots &amp; Flats
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    ADA administers residential schemes across Shastri Puram, Sikandra, and Dayalbagh. For registered Wills, ADA updates leasehold and freehold records smoothly. Unregistered Wills trigger costly newspaper publication notices and lengthy indemnity requirements.
+                    ADA administers home schemes across Shastri Puram, Sikandra, and Dayalbagh. For registered Wills, ADA updates leasehold and freehold records smoothly. Unregistered Wills trigger costly newspaper publication notices and lengthy indemnity rules.
                   </p>
                 </div>
 
                 {/* ASSET 2 */}
                 <div className="bg-white rounded-2xl border border-slate-200/90 p-5 shadow-xs space-y-2">
                   <h3 className="font-bold text-sm sm:text-base text-slate-900">
-                    Agra Nagar Nigam Property Tax Mutation (Dakhil Kharij)
+                    Agra Nagar Nigam Property Tax Name Change (Dakhil Kharij)
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Municipal records (*Bhavan Kar*) for houses in Kamla Nagar, Civil Lines, or ancestral Havelis in the old city require formal name substitution upon the owner&apos;s death. A registered Will accompanied by death certificates avoids prolonged municipal delays.
+                    Municipal records (*Bhavan Kar*) for houses in Kamla Nagar, Civil Lines, or family Havelis in the old city require formal name substitution upon the owner&apos;s death. A registered Will accompanied by death papers avoids prolonged municipal delays.
                   </p>
                 </div>
 
@@ -1555,20 +1555,20 @@ export default function AgraLocationClient({ faqs }: Props) {
                 {/* ASSET 4 */}
                 <div className="bg-white rounded-2xl border border-slate-200/90 p-5 shadow-xs space-y-2">
                   <h3 className="font-bold text-sm sm:text-base text-slate-900">
-                    Tourist Hospitality Properties &amp; Hotels on Fatehabad Road
+                    Tourist Hospitality Assets &amp; Hotels on Fatehabad Road
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Hotels, guest houses, and handicraft showrooms along the Tajganj and Fatehabad Road corridor need tailored succession structures. Defining management rights, leasehold interests, and dividend distributions prevents bitter partnership disputes.
+                    Hotels, guest houses, and handicraft showrooms along the Tajganj and Fatehabad Road corridor need tailored succession structures. Defining management rights, leasehold interests, and dividend distributions prevents bitter partnership fights.
                   </p>
                 </div>
 
                 {/* ASSET 5 */}
                 <div className="bg-white rounded-2xl border border-slate-200/90 p-5 shadow-xs space-y-2 md:col-span-2">
                   <h3 className="font-bold text-sm sm:text-base text-slate-900">
-                    Agricultural Land &amp; UP Revenue Code 2006 (Section 107)
+                    Farm Land &amp; UP Revenue Code 2006 (Section 107)
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Under Section 107 of the Uttar Pradesh Revenue Code, 2006, a Bhumidhar with transferable rights can bequeath farmland in Fatehabad, Shamsabad, or Achhnera. The bequest must respect land ceiling rules and dependent provisions under Section 108, updated in Khatauni records via UP Bhulekh.
+                    Under Section 107 of the Uttar Pradesh Revenue Code, 2006, a Bhumidhar with transferable rights can bequeath farmland in Fatehabad, Shamsabad, or Achhnera. The bequest must respect land ceiling rules and dependent rules under Section 108, updated in Khatauni records via UP Bhulekh.
                   </p>
                 </div>
               </div>
@@ -1599,7 +1599,7 @@ export default function AgraLocationClient({ faqs }: Props) {
                 <div className="bg-white rounded-2xl border border-slate-200/90 p-5 shadow-xs text-center space-y-1">
                   <span className="text-2xl font-black text-slate-900">₹100</span>
                   <h4 className="font-bold text-xs uppercase tracking-wider text-slate-800">SRO Registration Fee</h4>
-                  <p className="text-[11px] text-slate-500">Fixed statutory government registration fee across Agra</p>
+                  <p className="text-[11px] text-slate-500">Fixed legal government registration fee across Agra</p>
                 </div>
 
                 <div className="bg-white rounded-2xl border border-slate-200/90 p-5 shadow-xs text-center space-y-1">
@@ -1621,7 +1621,7 @@ export default function AgraLocationClient({ faqs }: Props) {
                   11. Transparent Pricing: Agra Will Making Packages
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Select the level of professional support best suited to your family&apos;s estate planning requirements across Agra:
+                  Select the level of professional support best suited to your family&apos;s estate planning rules across Agra:
                 </p>
               </div>
 
@@ -1633,7 +1633,7 @@ export default function AgraLocationClient({ faqs }: Props) {
                     <h3 className="font-extrabold text-xl text-slate-900">Online Will Drafting</h3>
                     <div className="text-3xl font-black text-slate-900">₹1,990</div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Ideal for individuals with straightforward assets like an ADA plot or house, bank deposits, and mutual funds.
+                      Ideal for people with straightforward assets like an ADA plot or house, bank deposits, and mutual funds.
                     </p>
                     <ul className="text-xs text-slate-600 space-y-2 pt-2 border-t border-slate-100">
                       <li className="flex items-center gap-2">
@@ -1650,7 +1650,7 @@ export default function AgraLocationClient({ faqs }: Props) {
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
-                        <span>Execution &amp; attestation guide</span>
+                        <span>Signing &amp; attestation guide</span>
                       </li>
                     </ul>
                   </div>
@@ -1670,15 +1670,15 @@ export default function AgraLocationClient({ faqs }: Props) {
                   </span>
                   <div className="space-y-4">
                     <span className="text-xs font-bold uppercase tracking-wider text-[#C65378]">Professional</span>
-                    <h3 className="font-extrabold text-xl text-slate-900">Advocate Consultation &amp; Review</h3>
+                    <h3 className="font-extrabold text-xl text-slate-900">Lawyer Talk &amp; Review</h3>
                     <div className="text-3xl font-black text-slate-900">₹4,990</div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Recommended for Agra families owning multiple properties, footwear businesses, or farmland.
+                      Recommended for Agra families owning multiple assets, footwear businesses, or farmland.
                     </p>
                     <ul className="text-xs text-slate-600 space-y-2 pt-2 border-t border-slate-100">
                       <li className="flex items-center gap-2">
                         <Check className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
-                        <span>1-on-1 Senior Advocate Consultation</span>
+                        <span>1-on-1 Senior Lawyer Talk</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
@@ -1686,7 +1686,7 @@ export default function AgraLocationClient({ faqs }: Props) {
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
-                        <span>Doctor certificate format included</span>
+                        <span>Doctor paper format included</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
@@ -1698,14 +1698,14 @@ export default function AgraLocationClient({ faqs }: Props) {
                     href="/contact"
                     className="mt-6 w-full py-2.5 rounded-xl bg-[#C65378] text-white text-xs font-bold hover:bg-[#a13c5d] transition-colors text-center cursor-pointer"
                   >
-                    Book Advocate Call
+                    Book Lawyer Call
                   </a>
                 </div>
 
                 {/* PLAN 3 */}
                 <div className="rounded-3xl bg-white border border-slate-200/90 p-6 shadow-xs flex flex-col justify-between">
                   <div className="space-y-4">
-                    <span className="text-xs font-bold uppercase tracking-wider text-slate-500">Comprehensive</span>
+                    <span className="text-xs font-bold uppercase tracking-wider text-slate-500">Full</span>
                     <h3 className="font-extrabold text-xl text-slate-900">Complete SRO Registration</h3>
                     <div className="text-3xl font-black text-slate-900">₹9,990</div>
                     <p className="text-xs text-slate-600 leading-relaxed">
@@ -1722,7 +1722,7 @@ export default function AgraLocationClient({ faqs }: Props) {
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
-                        <span>Physical advocate accompaniment at SRO</span>
+                        <span>Physical lawyer accompaniment at SRO</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
@@ -1798,7 +1798,7 @@ export default function AgraLocationClient({ faqs }: Props) {
                   <span>LEGAL REFERENCES</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  12. Statutory Citations &amp; Legal Precedents in UP
+                  12. Legal Citations &amp; Legal Precedents in UP
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Every Will drafted through WillDrafting.in is constructed in strict adherence to authoritative Indian statutes and judicial rulings:
@@ -1811,7 +1811,7 @@ export default function AgraLocationClient({ faqs }: Props) {
                     Indian Succession Act, 1925 (Sections 59, 61, 63, 67, 213):
                   </span>
                   <p className="text-slate-600 leading-relaxed">
-                    Governs sound testamentary mind, voluntary consent, two-witness execution, and specifies that court probate is non-mandatory outside historical presidency limits.
+                    Governs sound testamentary mind, voluntary consent, two-witness signing, and specifies that court probate is non-needed outside historical presidency limits.
                   </p>
                 </div>
 
@@ -1829,7 +1829,7 @@ export default function AgraLocationClient({ faqs }: Props) {
                     Indian Stamp Act, 1899 (Schedule I-B, Article 64 as applicable to UP):
                   </span>
                   <p className="text-slate-600 leading-relaxed">
-                    Grants complete exemption from ad-valorem stamp duty for Wills executed and presented for registration anywhere in the State of Uttar Pradesh.
+                    Grants complete exemption from ad-valorem stamp duty for Wills signed and presented for registration anywhere in the State of Uttar Pradesh.
                   </p>
                 </div>
 
@@ -1838,7 +1838,7 @@ export default function AgraLocationClient({ faqs }: Props) {
                     Uttar Pradesh Revenue Code, 2006 (Sections 107 &amp; 108):
                   </span>
                   <p className="text-slate-600 leading-relaxed">
-                    Governs testamentary succession of agricultural land held by Bhumidhars with transferable rights, subject to statutory land ceiling limits and dependent welfare safeguards.
+                    Governs testamentary succession of farm land held by Bhumidhars with transferable rights, subject to legal land ceiling limits and dependent welfare safeguards.
                   </p>
                 </div>
 
@@ -1847,7 +1847,7 @@ export default function AgraLocationClient({ faqs }: Props) {
                     Allahabad High Court Precedents on Non-Presidency Probate:
                   </span>
                   <p className="text-slate-600 leading-relaxed">
-                    Multiple Allahabad High Court decisions affirm that for properties in Agra and throughout Uttar Pradesh, an executor or legatee can establish rights without obtaining formal probate decrees.
+                    Multiple Allahabad High Court decisions affirm that for assets in Agra and throughout Uttar Pradesh, an executor or legatee can set up rights without getting formal probate decrees.
                   </p>
                 </div>
               </div>

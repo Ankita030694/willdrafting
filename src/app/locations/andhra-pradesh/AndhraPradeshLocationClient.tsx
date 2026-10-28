@@ -124,19 +124,19 @@ const INITIAL_CHECKLIST = [
   },
   {
     id: "item-2",
-    label: "Original Aadhaar Card & PAN of Testator",
+    label: "Original Aadhaar Card & PAN of Will maker",
     detail: "Essential for biometric identity validation, electronic thumbprinting, and digital web-camera photo at the AP Sub-Registrar counter.",
     checked: true,
   },
   {
     id: "item-3",
     label: "Two Independent Adult Witnesses with Aadhaar",
-    detail: "Must carry original photo IDs and must not be beneficiaries receiving any property or bequest under the Will.",
+    detail: "Must carry original photo IDs and must not be heirs receiving any property or bequest under the Will.",
     checked: true,
   },
   {
     id: "item-4",
-    label: "Doctor Mental Fitness Certificate (MBBS / MD)",
+    label: "Doctor Sound Mind Note (MBBS / MD)",
     detail: "Strongly advised for senior citizens aged 60+. Certifies testamentary mental capacity, soundness of mind, and voluntariness.",
     checked: false,
   },
@@ -148,14 +148,14 @@ const INITIAL_CHECKLIST = [
   },
   {
     id: "item-6",
-    label: "Municipal Property Tax Receipts & Registered Deeds",
+    label: "City House Tax Receipts & Registered Deeds",
     detail: "Copies of GVMC, VMC, GMC, or local municipal property tax receipts and registered sale or gift deeds.",
     checked: false,
   },
   {
     id: "item-7",
     label: "Meebhoomi 1-B Adangal & Pattadar Passbook (For Farmland)",
-    detail: "Recent computerized land records and digital e-Pattadar passbooks from meebhoomi.ap.gov.in for agricultural parcels.",
+    detail: "Recent computerized land records and digital e-Pattadar passbooks from meebhoomi.ap.gov.in for farm parcels.",
     checked: false,
   },
 ];
@@ -247,7 +247,7 @@ export default function AndhraPradeshLocationClient({ faqs }: Props) {
               </h1>
 
               <p className="text-base sm:text-lg text-slate-200 leading-relaxed font-normal max-w-2xl">
-                Draft a legally airtight Will for your urban apartments in Visakhapatnam and Vijayawada, APCRDA plots in Amaravati, commercial assets, and Meebhoomi agricultural farmlands. Get expert advocate drafting, AP IGRS registration guidance, and Section 31 doorstep execution.
+                Draft a legally airtight Will for your urban apartments in Visakhapatnam and Vijayawada, APCRDA plots in Amaravati, shop assets, and Meebhoomi farm farmlands. Get expert lawyer drafting, AP IGRS registration guidance, and Section 31 doorstep signing.
               </p>
 
               <div className="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
@@ -341,7 +341,7 @@ export default function AndhraPradeshLocationClient({ faqs }: Props) {
                 ₹0 Stamp Duty
               </span>
               <span className="text-[9px] min-[390px]:text-[10px] sm:text-xs font-bold uppercase tracking-wider text-[#55636D] mt-1 leading-tight">
-                100% Statutory Exemption
+                100% Legal Exemption
               </span>
             </div>
 
@@ -361,7 +361,7 @@ export default function AndhraPradeshLocationClient({ faqs }: Props) {
                 Meebhoomi Sync
               </span>
               <span className="text-[9px] min-[390px]:text-[10px] sm:text-xs font-bold uppercase tracking-wider text-[#55636D] mt-1 leading-tight">
-                1-B Adangal &amp; Passbook Mutation
+                1-B Adangal &amp; Passbook Name Change
               </span>
             </div>
           </div>
@@ -489,14 +489,14 @@ export default function AndhraPradeshLocationClient({ faqs }: Props) {
                       <span>Optional Registration</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Will registration is optional under Section 18(e) of the Registration Act, 1908. An unregistered Will signed before two witnesses is legally binding. However, registering your Will in Book III of the local AP Sub-Registrar Office provides undeniable evidentiary validity.
+                      Will registration is optional under Section 18(e) of the Registration Act, 1908. An unregistered Will signed before two witnesses is legally binding. However, registering your Will in Book III of the local AP SRO office provides undeniable proof validity.
                     </p>
                   </div>
 
                   <div className="p-4 rounded-2xl bg-slate-50/70 border border-slate-100 space-y-1.5">
                     <div className="flex items-center gap-2 font-bold text-sm text-slate-900">
                       <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
-                      <span>Probate Non-Compulsory</span>
+                      <span>Probate Non-Needed</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
                       Andhra Pradesh is a non-presidency state. Under Section 213 of the Indian Succession Act, court probate is strictly optional in Andhra Pradesh. Legal heirs can transfer title and mutate records without High Court probate.
@@ -509,17 +509,17 @@ export default function AndhraPradeshLocationClient({ faqs }: Props) {
                       <span>Zero Andhra Stamp Duty</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Wills are 100% exempt from ad-valorem stamp duty across Andhra Pradesh. You only pay nominal registration charges (₹100 to ₹200) and minor computer scanning charges at the Sub-Registrar Office.
+                      Wills are 100% exempt from ad-valorem stamp duty across Andhra Pradesh. You only pay nominal registration charges (₹100 to ₹200) and minor computer scanning charges at the SRO office.
                     </p>
                   </div>
 
                   <div className="p-4 rounded-2xl bg-slate-50/70 border border-slate-100 space-y-1.5">
                     <div className="flex items-center gap-2 font-bold text-sm text-slate-900">
                       <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
-                      <span>Meebhoomi &amp; Municipal Mutation</span>
+                      <span>Meebhoomi &amp; Municipal Name Change</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      A registered Will expedites online property tax mutation with GVMC, VMC, and GMC, and enables smooth 1-B Adangal and e-Pattadar passbook updates for agricultural land on the Meebhoomi portal.
+                      A registered Will expedites online property tax name change with GVMC, VMC, and GMC, and enables smooth 1-B Adangal and e-Pattadar passbook updates for farm land on the Meebhoomi portal.
                     </p>
                   </div>
                 </div>
@@ -537,7 +537,7 @@ export default function AndhraPradeshLocationClient({ faqs }: Props) {
                   1. Will Drafting &amp; Legal Framework in Andhra Pradesh
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Succession in Andhra Pradesh is governed by central statutory codes integrated with state land and municipal laws. Whether allocating residential apartments in Visakhapatnam, commercial establishments in Vijayawada, or fertile Godavari agricultural farmland, testamentary dispositions must comply with three core legal pillars:
+                  Succession in Andhra Pradesh is governed by central legal codes integrated with state land and municipal laws. Whether allocating home apartments in Visakhapatnam, shop establishments in Vijayawada, or fertile Godavari farm farmland, testamentary dispositions must comply with three core legal pillars:
                 </p>
               </div>
 
@@ -550,7 +550,7 @@ export default function AndhraPradeshLocationClient({ faqs }: Props) {
                     Section 63, Indian Succession Act, 1925
                   </h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Mandates that every Will must be signed by the testator in the presence of at least two adult witnesses. Each witness must attest that the testator executed the instrument voluntarily while in a sound disposing state of mind.
+                    Mandates that every Will must be signed by the Will maker in the presence of at least two adult witnesses. Each witness must attest that the Will maker signed the instrument voluntarily while in a sound disposing state of mind.
                   </p>
                 </div>
 
@@ -574,7 +574,7 @@ export default function AndhraPradeshLocationClient({ faqs }: Props) {
                     AP Rights in Land &amp; Passbooks Act
                   </h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Governs agricultural title mutation across Andhra Pradesh. Under this statute, revenue authorities update the Record of Rights (ROR) on the Meebhoomi portal directly upon production of a registered Will and death certificate.
+                    Governs farm title name change across Andhra Pradesh. Under this statute, revenue offices update the Record of Rights (ROR) on the Meebhoomi portal directly upon production of a registered Will and death paper.
                   </p>
                 </div>
               </div>
@@ -588,10 +588,10 @@ export default function AndhraPradeshLocationClient({ faqs }: Props) {
                   <span>REGISTRATION COMPARISON MATRIX</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  2. Is Will Registration Mandatory in Andhra Pradesh?
+                  2. Is Will Registration Needed in Andhra Pradesh?
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  While unregistered Wills executed on plain paper are legally recognized, estate planners and legal practitioners strongly advise registering your Will at the local AP Sub-Registrar Office. Registration establishes conclusive government custody under Book III and prevents family challenges:
+                  While unregistered Wills signed on plain paper are legally recognized, estate planners and legal practitioners strongly advise registering your Will at the local AP SRO office. Registration establishes strong government custody under Book III and prevents family fights:
                 </p>
               </div>
 
@@ -618,9 +618,9 @@ export default function AndhraPradeshLocationClient({ faqs }: Props) {
                         <td className="p-4">Held privately; vulnerable to loss or tampering</td>
                       </tr>
                       <tr>
-                        <td className="p-4 font-bold text-slate-900">Evidentiary Presumption in Court</td>
-                        <td className="p-4 bg-rose-50/30 font-medium">Strong legal presumption of genuine execution</td>
-                        <td className="p-4">Beneficiary must formally prove handwriting &amp; mental soundness</td>
+                        <td className="p-4 font-bold text-slate-900">Proof Presumption in Court</td>
+                        <td className="p-4 bg-rose-50/30 font-medium">Strong legal presumption of genuine signing</td>
+                        <td className="p-4">Heir must formally prove handwriting &amp; mental soundness</td>
                       </tr>
                       <tr>
                         <td className="p-4 font-bold text-slate-900">Risk of Forgery or Coercion Claims</td>
@@ -628,9 +628,9 @@ export default function AndhraPradeshLocationClient({ faqs }: Props) {
                         <td className="p-4 text-amber-700 font-semibold">High risk of challenge by excluded relatives</td>
                       </tr>
                       <tr>
-                        <td className="p-4 font-bold text-slate-900">Meebhoomi &amp; Municipal Mutation</td>
-                        <td className="p-4 bg-rose-50/30 text-emerald-800 font-semibold">Fast single-window name mutation</td>
-                        <td className="p-4">Revenue officials often demand court succession certificates</td>
+                        <td className="p-4 font-bold text-slate-900">Meebhoomi &amp; Municipal Name Change</td>
+                        <td className="p-4 bg-rose-50/30 text-emerald-800 font-semibold">Fast single-window name name change</td>
+                        <td className="p-4">Revenue officials often demand court succession papers</td>
                       </tr>
                       <tr>
                         <td className="p-4 font-bold text-slate-900">Government Stamp Duty</td>
@@ -665,10 +665,10 @@ export default function AndhraPradeshLocationClient({ faqs }: Props) {
                   </div>
                   <div className="space-y-2">
                     <h3 className="font-extrabold text-lg text-slate-900">
-                      Probate Is Strictly Optional for Andhra Pradesh Properties
+                      Probate Is Strictly Optional for Andhra Pradesh Assets
                     </h3>
                     <p className="text-sm text-slate-600 leading-relaxed">
-                      Under Section 213(1) read with Section 57(a) and 57(b) of the Indian Succession Act, 1925, probate is mandatory only for Wills executed within or covering immovable assets inside the historic presidency towns of Mumbai, Kolkata, and Chennai. Because Andhra Pradesh has never been a presidency town, the High Court of Andhra Pradesh at Amaravati has ruled that obtaining probate is entirely non-mandatory for Hindu, Buddhist, Sikh, and Jain Wills.
+                      Under Section 213(1) read with Section 57(a) and 57(b) of the Indian Succession Act, 1925, probate is needed only for Wills signed within or covering immovable assets inside the historic presidency towns of Mumbai, Kolkata, and Chennai. Because Andhra Pradesh has never been a presidency town, the High Court of Andhra Pradesh at Amaravati has ruled that getting probate is entirely non-needed for Hindu, Buddhist, Sikh, and Jain Wills.
                     </p>
                   </div>
                 </div>
@@ -679,7 +679,7 @@ export default function AndhraPradeshLocationClient({ faqs }: Props) {
                     <span>Important Distinction: Probate vs. Title Challenge</span>
                   </div>
                   <p className="text-amber-800 leading-relaxed">
-                    While municipal bodies (GVMC, VMC, GMC) and Tahsildars cannot insist on court probate for routine mutation, any disgruntled legal heir can still file a regular civil suit challenging testamentary capacity, coercion, or fraud. Registering your Will on the AP IGRS portal provides the strongest defense against such frivolous litigation.
+                    While municipal bodies (GVMC, VMC, GMC) and Tahsildars cannot insist on court probate for routine name change, any disgruntled legal heir can still file a regular civil suit challenging sound mind, coercion, or fraud. Registering your Will on the AP IGRS portal provides the strongest defense against such frivolous court fights.
                   </p>
                 </div>
 
@@ -709,7 +709,7 @@ export default function AndhraPradeshLocationClient({ faqs }: Props) {
                   4. AP Sub-Registrar Offices: District SRO Directory
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Wills can be registered at any Sub-Registrar Office within the revenue district where the testator resides or where any part of the immovable property is located. Explore key registration hubs across Andhra Pradesh:
+                  Wills can be registered at any SRO office within the revenue district where the Will maker resides or where any part of the land and flats is located. Explore key registration hubs across Andhra Pradesh:
                 </p>
               </div>
 
@@ -775,13 +775,13 @@ export default function AndhraPradeshLocationClient({ faqs }: Props) {
 
                   <div className="pt-3 border-t border-slate-100 flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-3">
                     <span className="text-xs text-slate-500">
-                      Need an advocate to accompany you to this Sub-Registrar Office?
+                      Need an lawyer to accompany you to this SRO office?
                     </span>
                     <a
                       href="/services/will-registration"
                       className="inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl bg-[#172228] text-white text-xs font-bold hover:bg-slate-800 transition-colors text-center"
                     >
-                      <span>Book SRO Advocate Accompaniment</span>
+                      <span>Book SRO Lawyer Accompaniment</span>
                       <ArrowRight className="w-3.5 h-3.5" />
                     </a>
                   </div>
@@ -800,7 +800,7 @@ export default function AndhraPradeshLocationClient({ faqs }: Props) {
                   5. Regional Cities: Will Drafting Across Andhra Pradesh
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Estate assets in Andhra Pradesh span coastal commercial hubs, high-growth IT corridors in Visakhapatnam, capital region lands in Amaravati, trading centers in Vijayawada, and agricultural delta farmlands in Godavari and Krishna. Our estate advocates deliver customized legal drafting, AP IGRS slot booking, and Sub-Registrar accompaniment across all key regional cities:
+                  Estate assets in Andhra Pradesh span coastal shop hubs, high-growth IT corridors in Visakhapatnam, capital region lands in Amaravati, trading centers in Vijayawada, and farm delta farmlands in Godavari and Krishna. Our estate lawyers deliver customized legal drafting, AP IGRS slot booking, and Sub-Registrar accompaniment across all key regional cities:
                 </p>
               </div>
 
@@ -830,7 +830,7 @@ export default function AndhraPradeshLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Specialized <strong>Will drafting services in Visakhapatnam</strong> for luxury beachfront apartments, VMRDA plotted layouts, defense personnel retirement estates, and commercial logistics firms. Prepares watertight clauses for Greater Visakhapatnam Municipal Corporation (GVMC) property tax name substitution.
+                      Specialized <strong>Will drafting services in Visakhapatnam</strong> for luxury beachfront apartments, VMRDA plotted layouts, defense personnel retirement estates, and shop logistics firms. Prepares watertight clauses for Greater Visakhapatnam Municipal Corporation (GVMC) property tax name substitution.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -839,7 +839,7 @@ export default function AndhraPradeshLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Dwarakanagar, MVP Colony &amp; Gajuwaka</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        AP IGRS slot booking, advocate physical attendance at Dwarakanagar SRO, and Section 31 doorstep execution for naval veterans and senior citizens.
+                        AP IGRS slot booking, lawyer physical attendance at Dwarakanagar SRO, and Section 31 doorstep signing for naval veterans and senior citizens.
                       </p>
                     </div>
                   </div>
@@ -864,7 +864,7 @@ export default function AndhraPradeshLocationClient({ faqs }: Props) {
                     <div className="flex items-center justify-between gap-2">
                       <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-rose-50 text-[#C65378] border border-rose-100">
                         <MapPin className="w-3.5 h-3.5" />
-                        Commercial Capital &amp; NTR District
+                        Shop Capital &amp; NTR District
                       </span>
                       <span className="text-[11px] font-semibold text-slate-500 bg-slate-100 px-2.5 py-1 rounded-lg">
                         SRO Governorpet &amp; Patamata
@@ -883,7 +883,7 @@ export default function AndhraPradeshLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Tailored <strong>Will drafting services in Vijayawada</strong> for commercial trading family businesses, multi-story commercial buildings on MG Road, and Krishna delta agricultural lands. Includes clear partnership succession clauses and Vijayawada Municipal Corporation (VMC) mutation roadmap.
+                      Tailored <strong>Will drafting services in Vijayawada</strong> for shop trading family businesses, multi-story shop buildings on MG Road, and Krishna delta farm lands. Includes clear partnership succession clauses and Vijayawada Municipal Corporation (VMC) name change roadmap.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -892,7 +892,7 @@ export default function AndhraPradeshLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Governorpet, Patamata &amp; Gunadala</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Complete AP IGRS slot booking, token issuance, and home registration assistance across Benz Circle, Moghalrajpuram, and Suryaraopeta.
+                        Complete AP IGRS slot booking, token issuance, and home registration help across Benz Circle, Moghalrajpuram, and Suryaraopeta.
                       </p>
                     </div>
                   </div>
@@ -936,7 +936,7 @@ export default function AndhraPradeshLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Expert <strong>Will drafting in Guntur &amp; Amaravati</strong> addressing APCRDA land pooling reconstitution plots, high-value commercial properties, and chili/tobacco export businesses. Ensures flawless succession before APCRDA single-window portals and GMC records.
+                      Expert <strong>Will drafting in Guntur &amp; Amaravati</strong> addressing APCRDA land pooling reconstitution plots, high-value shop assets, and chili/tobacco export businesses. Ensures flawless succession before APCRDA single-window portals and GMC records.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -945,7 +945,7 @@ export default function AndhraPradeshLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Guntur Collectorate &amp; Mangalagiri</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        AP IGRS slot registration, advocate verification of APCRDA allotment deeds, and home registration visits across Guntur urban zones.
+                        AP IGRS slot registration, lawyer check of APCRDA allotment deeds, and home registration visits across Guntur urban zones.
                       </p>
                     </div>
                   </div>
@@ -989,7 +989,7 @@ export default function AndhraPradeshLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Customized <strong>Will drafting services in Tirupati</strong> covering TUDA approved residential layouts, hospitality businesses, private educational assets, and agricultural groves in Chittoor district. Clarifies religious charitable trust bequests and family survivorship rights.
+                      Customized <strong>Will drafting services in Tirupati</strong> covering TUDA approved home layouts, hospitality businesses, private educational assets, and farm groves in Chittoor district. Clarifies religious charitable trust bequests and family survivorship rights.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -998,7 +998,7 @@ export default function AndhraPradeshLocationClient({ faqs }: Props) {
                         <span>SRO Hub: TUDA Complex, Bhavani Nagar</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        AP IGRS slot booking, token tracking, and Section 31 home execution for senior citizens and pilgrims residing in Tirupati urban.
+                        AP IGRS slot booking, token tracking, and Section 31 home signing for senior citizens and pilgrims residing in Tirupati urban.
                       </p>
                     </div>
                   </div>
@@ -1042,7 +1042,7 @@ export default function AndhraPradeshLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Comprehensive <strong>Will drafting in Rajamahendravaram</strong> for riverfront properties, paper and agro-processing businesses, and fertile Godavari paddy farmlands. Structures smooth Meebhoomi 1-B Adangal revenue succession without family litigation.
+                      Full <strong>Will drafting in Rajamahendravaram</strong> for riverfront assets, paper and agro-processing businesses, and fertile Godavari paddy farmlands. Structures smooth Meebhoomi 1-B Adangal revenue succession without family court fights.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1051,7 +1051,7 @@ export default function AndhraPradeshLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Danavaipeta &amp; Dowleswaram</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        AP IGRS slot scheduling, advocate accompaniment, and doorstep registration for elderly residents across Danavaipeta and T. Nagar.
+                        AP IGRS slot scheduling, lawyer accompaniment, and doorstep registration for elderly residents across Danavaipeta and T. Nagar.
                       </p>
                     </div>
                   </div>
@@ -1095,7 +1095,7 @@ export default function AndhraPradeshLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Specialized <strong>Will drafting services in Kakinada</strong> for port logistics infrastructure, aquaculture hatcheries, and Konaseema coconut plantations. Protects multi-generational agricultural tenures and commercial deepwater shipping shares.
+                      Specialized <strong>Will drafting services in Kakinada</strong> for port logistics infrastructure, aquaculture hatcheries, and Konaseema coconut plantations. Protects multi-generational farm tenures and shop deepwater shipping shares.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1104,7 +1104,7 @@ export default function AndhraPradeshLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Kakinada Collectorate &amp; Amalapuram</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        AP IGRS online appointment assistance, CFMS cyber challan processing, and advocate doorstep registration across East Godavari coastal belts.
+                        AP IGRS online appointment help, CFMS cyber challan processing, and lawyer doorstep registration across East Godavari coastal belts.
                       </p>
                     </div>
                   </div>
@@ -1148,7 +1148,7 @@ export default function AndhraPradeshLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Strategic <strong>Will drafting in Nellore</strong> for shrimp aquaculture estates, mica processing units, port ancillary warehousing, and residential layouts in Magunta Layout. Ensures seamless succession before Nellore Municipal Corporation and port authorities.
+                      Strategic <strong>Will drafting in Nellore</strong> for shrimp aquaculture estates, mica processing units, port ancillary warehousing, and home layouts in Magunta Layout. Ensures seamless succession before Nellore Municipal Corporation and port offices.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1157,7 +1157,7 @@ export default function AndhraPradeshLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Dargamitta Registration Complex</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        AP IGRS slot booking, advocate review of industrial and coastal aquaculture leaseholds, and Section 31 home registration.
+                        AP IGRS slot booking, lawyer review of industrial and coastal aquaculture leaseholds, and Section 31 home registration.
                       </p>
                     </div>
                   </div>
@@ -1201,7 +1201,7 @@ export default function AndhraPradeshLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Authoritative <strong>Will drafting in Kurnool &amp; Anantapur</strong> covering granite quarrying rights, cement factory shares, solar park leases, and dryland groundnut farms. Codifies undivided ancestral shares under Mitakshara Hindu law and KUDA layouts.
+                      Authoritative <strong>Will drafting in Kurnool &amp; Anantapur</strong> covering granite quarrying rights, cement factory shares, solar park leases, and dryland groundnut farms. Codifies undivided family shares under Mitakshara Hindu law and KUDA layouts.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1210,7 +1210,7 @@ export default function AndhraPradeshLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Kurnool Urban &amp; Ananthapuramu</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Complete AP IGRS slot booking, token issuance, and home registration assistance across Kurnool, Nandyal, and Anantapur.
+                        Complete AP IGRS slot booking, token issuance, and home registration help across Kurnool, Nandyal, and Anantapur.
                       </p>
                     </div>
                   </div>
@@ -1242,7 +1242,7 @@ export default function AndhraPradeshLocationClient({ faqs }: Props) {
                   6. Step-by-Step SOP: Drafting to AP IGRS Registration
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Registering a Will in Andhra Pradesh is straightforward when following the statutory sequence. Here is the verified 5-step Standard Operating Procedure (SOP) managed by our estate advocates:
+                  Registering a Will in Andhra Pradesh is straightforward when following the legal sequence. Here is the verified 5-step Standard Operating Step (SOP) managed by our estate lawyers:
                 </p>
               </div>
 
@@ -1254,10 +1254,10 @@ export default function AndhraPradeshLocationClient({ faqs }: Props) {
                     <span className="text-xs font-bold text-slate-500">Asset Audit</span>
                   </div>
                   <h3 className="font-extrabold text-base text-slate-900">
-                    Comprehensive Asset Inventory &amp; Beneficiary Structuring
+                    Full Asset Inventory &amp; Heir Structuring
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Collate clear descriptions of all real estate (GVMC, VMC, APCRDA, VMRDA, or TUDA layouts), agricultural survey numbers with Meebhoomi 1-B extracts, bank accounts, mutual funds, and business shares. Appoint an executor and outline alternate beneficiaries.
+                    Collate clear descriptions of all real estate (GVMC, VMC, APCRDA, VMRDA, or TUDA layouts), farm survey numbers with Meebhoomi 1-B extracts, bank accounts, mutual funds, and business shares. Appoint an executor and outline alternate heirs.
                   </p>
                 </div>
 
@@ -1268,10 +1268,10 @@ export default function AndhraPradeshLocationClient({ faqs }: Props) {
                     <span className="text-xs font-bold text-slate-500">Legal Drafting</span>
                   </div>
                   <h3 className="font-extrabold text-base text-slate-900">
-                    Advocate Drafting with Testamentary Safeguards
+                    Lawyer Drafting with Testamentary Safeguards
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Our senior High Court advocates draft clear testamentary clauses that explicitly revoke past instruments, provide life interest clauses for spouses where desired, appoint guardians for minor children, and allocate residuary assets.
+                    Our senior High Court lawyers draft clear testamentary clauses that explicitly revoke past instruments, provide life interest clauses for spouses where desired, appoint guardians for minor children, and allocate residuary assets.
                   </p>
                 </div>
 
@@ -1282,10 +1282,10 @@ export default function AndhraPradeshLocationClient({ faqs }: Props) {
                     <span className="text-xs font-bold text-slate-500">Physical Attestation</span>
                   </div>
                   <h3 className="font-extrabold text-base text-slate-900">
-                    Physical Execution in the Presence of Two Witnesses
+                    Physical Signing in the Presence of Two Witnesses
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Print the approved Will on standard A4 executive bond paper. The testator signs or affixes their thumb impression at the foot of each page before two independent, non-beneficiary witnesses who sign immediately afterwards.
+                    Print the approved Will on standard A4 executive bond paper. The Will maker signs or affixes their thumb impression at the foot of each page before two independent, non-heir witnesses who sign right away afterwards.
                   </p>
                 </div>
 
@@ -1299,7 +1299,7 @@ export default function AndhraPradeshLocationClient({ faqs }: Props) {
                     AP IGRS Public Data Entry &amp; Cyber Challan Generation
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Our legal team submits the Public Data Entry (PDE) on registration.ap.gov.in, uploads testator and witness KYC information, pays the nominal registration fee via CFMS cyber treasury challan, and books a confirmed time slot.
+                    Our legal team submits the Public Data Entry (PDE) on registration.ap.gov.in, uploads Will maker and witness KYC information, pays the nominal registration fee via CFMS cyber treasury challan, and books a confirmed time slot.
                   </p>
                 </div>
 
@@ -1310,10 +1310,10 @@ export default function AndhraPradeshLocationClient({ faqs }: Props) {
                     <span className="text-xs font-bold text-slate-500">SRO Finalization</span>
                   </div>
                   <h3 className="font-extrabold text-base text-slate-900">
-                    Biometric Authentication &amp; Book III Safe Custody
+                    Biometric Check &amp; Book III Safe Custody
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    The testator and both witnesses attend the designated AP Sub-Registrar Office accompanied by our advocate. After biometric thumbprinting and live digital photo capture, the original Will is registered into Book III and returned with official government endorsement.
+                    The Will maker and both witnesses attend the designated AP SRO office accompanied by our lawyer. After biometric thumbprinting and live digital photo capture, the original Will is registered into Book III and returned with official government endorsement.
                   </p>
                 </div>
               </div>
@@ -1330,7 +1330,7 @@ export default function AndhraPradeshLocationClient({ faqs }: Props) {
                   7. Section 31 Doorstep SRO Registration in Andhra Pradesh
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  For senior citizens, bedridden testators, or hospital-bound individuals who cannot physically travel to the registration complex, Indian law provides a dignified alternative:
+                  For senior citizens, bedridden testators, or hospital-bound people who cannot physically travel to the registration complex, Indian law provides a dignified alternative:
                 </p>
               </div>
 
@@ -1339,20 +1339,20 @@ export default function AndhraPradeshLocationClient({ faqs }: Props) {
                   Sub-Registrar Home &amp; Hospital Attendance Protocol
                 </h3>
                 <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                  Under Section 31 of the Registration Act, 1908, the Sub-Registrar is legally empowered to attend the private residence or hospital room of a testator upon special cause. Our advocate desk coordinates the entire statutory commission workflow:
+                  Under Section 31 of the Registration Act, 1908, the Sub-Registrar is legally empowered to attend the private residence or hospital room of a Will maker upon special cause. Our lawyer desk coordinates the entire legal commission workflow:
                 </p>
 
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-2">
                   <div className="p-3.5 rounded-xl bg-slate-50 border border-slate-100 space-y-1">
                     <span className="font-bold text-xs text-slate-900 block">1. Doctor Fitness Certificate</span>
                     <p className="text-[11px] text-slate-500">
-                      An MBBS/MD doctor issues a certificate confirming testamentary lucidity and certifying travel disability.
+                      An MBBS/MD doctor issues a paper confirming testamentary lucidity and certifying travel disability.
                     </p>
                   </div>
                   <div className="p-3.5 rounded-xl bg-slate-50 border border-slate-100 space-y-1">
-                    <span className="font-bold text-xs text-slate-900 block">2. Formal SRO Application</span>
+                    <span className="font-bold text-xs text-slate-900 block">2. Formal SRO Form</span>
                     <p className="text-[11px] text-slate-500">
-                      We submit a formal petition under Section 31 with the medical certificate to the District Registrar.
+                      We submit a formal petition under Section 31 with the medical paper to the District Registrar.
                     </p>
                   </div>
                   <div className="p-3.5 rounded-xl bg-slate-50 border border-slate-100 space-y-1">
@@ -1382,7 +1382,7 @@ export default function AndhraPradeshLocationClient({ faqs }: Props) {
                   8. Document Checklist for AP Sub-Registrar Offices
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Ensure you have all necessary documentation ready before your AP IGRS appointment slot. Check off the items below:
+                  Ensure you have all necessary papers ready before your AP IGRS appointment slot. Check off the items below:
                 </p>
               </div>
 
@@ -1447,7 +1447,7 @@ export default function AndhraPradeshLocationClient({ faqs }: Props) {
                   9. Andhra Property Types: VMRDA, APCRDA &amp; Farmland
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  A legally robust Will must accurately describe property according to its statutory authority to ensure prompt name substitution after the testator&apos;s lifetime:
+                  A legally robust Will must accurately describe property according to its legal authority to make sure prompt name substitution after the Will maker&apos;s lifetime:
                 </p>
               </div>
 
@@ -1468,24 +1468,24 @@ export default function AndhraPradeshLocationClient({ faqs }: Props) {
                     <span>Development Authority Plots &amp; Leases</span>
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Plotted layouts and leasehold/freehold allotments under APCRDA (Amaravati), VMRDA (Visakhapatnam), and TUDA (Tirupati). Explicitly cites allotment letters, possession certificates, and master development plans to avoid authority transfer penalties.
+                    Plotted layouts and leasehold/freehold allotments under APCRDA (Amaravati), VMRDA (Visakhapatnam), and TUDA (Tirupati). Explicitly cites allotment letters, possession papers, and master development plans to avoid authority transfer penalties.
                   </p>
                 </div>
 
                 <div className="p-5 rounded-2xl bg-white border border-slate-200/90 space-y-2 shadow-xs">
                   <div className="flex items-center gap-2 font-extrabold text-slate-900 text-sm">
                     <Wheat className="w-4 h-4 text-[#C65378]" />
-                    <span>Meebhoomi Agricultural Farmland &amp; Aqua Farms</span>
+                    <span>Meebhoomi Farm Farmland &amp; Aqua Farms</span>
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Fertile paddy land, horticulture orchards, and coastal aquaculture shrimp ponds. Bequests are drafted using exact survey numbers, sub-division numbers, and 1-B Namuna khatas to facilitate immediate Tahsildar mutation.
+                    Fertile paddy land, horticulture orchards, and coastal aquaculture shrimp ponds. Bequests are drafted using exact survey numbers, sub-division numbers, and 1-B Namuna khatas to facilitate immediate Tahsildar name change.
                   </p>
                 </div>
 
                 <div className="p-5 rounded-2xl bg-white border border-slate-200/90 space-y-2 shadow-xs">
                   <div className="flex items-center gap-2 font-extrabold text-slate-900 text-sm">
                     <Factory className="w-4 h-4 text-[#C65378]" />
-                    <span>Commercial Showrooms, MSMEs &amp; Financial Wealth</span>
+                    <span>Shop Showrooms, MSMEs &amp; Financial Wealth</span>
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
                     Wholesale trading stores in Governorpet, auto ancillary units in Gajuwaka, Demat share portfolios, bank fixed deposits, and mutual funds. Overrides nominee status to guarantee undisputed legal ownership.
@@ -1505,7 +1505,7 @@ export default function AndhraPradeshLocationClient({ faqs }: Props) {
                   10. Official AP IGRS Registration Fees &amp; Stamp Duty
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Unlike commercial sale deeds or gift settlements that attract 5% to 7.5% stamp duty in Andhra Pradesh, testamentary Wills are completely exempt from stamp duty. Government registration charges are strictly nominal:
+                  Unlike shop sale deeds or gift settlements that attract 5% to 7.5% stamp duty in Andhra Pradesh, testamentary Wills are completely exempt from stamp duty. Government registration charges are strictly nominal:
                 </p>
               </div>
 
@@ -1515,8 +1515,8 @@ export default function AndhraPradeshLocationClient({ faqs }: Props) {
                   <thead className="bg-[#172228] text-white font-mono uppercase tracking-wider text-[11px]">
                     <tr>
                       <th className="p-4">Government Fee Head</th>
-                      <th className="p-4 text-rose-300">Statutory Rate in AP</th>
-                      <th className="p-4 text-slate-300">Official Beneficiary Authority</th>
+                      <th className="p-4 text-rose-300">Legal Rate in AP</th>
+                      <th className="p-4 text-slate-300">Official Heir Authority</th>
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-slate-100 text-slate-700">
@@ -1526,7 +1526,7 @@ export default function AndhraPradeshLocationClient({ faqs }: Props) {
                       <td className="p-4">Government of Andhra Pradesh</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-semibold">AP IGRS Statutory Registration Fee</td>
+                      <td className="p-4 font-semibold">AP IGRS Legal Registration Fee</td>
                       <td className="p-4 font-bold text-slate-900">₹100 to ₹200</td>
                       <td className="p-4">Registration &amp; Stamps Department</td>
                     </tr>
@@ -1556,7 +1556,7 @@ export default function AndhraPradeshLocationClient({ faqs }: Props) {
                   11. Transparent Will Packages &amp; Legal Fees in AP
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Choose the level of legal assistance that matches your estate requirements. Zero hidden fees, clear deliverables, and verified High Court advocate review:
+                  Choose the level of legal help that matches your estate rules. Zero hidden fees, clear deliverables, and verified High Court lawyer review:
                 </p>
               </div>
 
@@ -1573,7 +1573,7 @@ export default function AndhraPradeshLocationClient({ faqs }: Props) {
                       <span className="text-xs text-slate-500">/ one-time</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Ideal for individuals with straightforward estates comprising residential flats, bank accounts, and investments.
+                      Ideal for people with straightforward estates comprising home flats, bank accounts, and investments.
                     </p>
                     <ul className="space-y-2 pt-2 text-xs text-slate-700">
                       <li className="flex items-center gap-2">
@@ -1609,15 +1609,15 @@ export default function AndhraPradeshLocationClient({ faqs }: Props) {
 
                   <div className="space-y-4 pt-2">
                     <span className="text-xs font-mono font-bold uppercase tracking-wider text-rose-300">
-                      Comprehensive
+                      Full
                     </span>
-                    <h3 className="font-extrabold text-xl text-white">Advocate Assisted Will</h3>
+                    <h3 className="font-extrabold text-xl text-white">Lawyer Assisted Will</h3>
                     <div className="flex items-baseline gap-1">
                       <span className="text-3xl font-black text-white">₹4,990</span>
                       <span className="text-xs text-slate-300">/ one-time</span>
                     </div>
                     <p className="text-xs text-slate-200 leading-relaxed">
-                      Recommended for families with agricultural land, APCRDA/VMRDA plots, multi-property portfolios, and business assets.
+                      Recommended for families with farm land, APCRDA/VMRDA plots, multi-property portfolios, and business assets.
                     </p>
                     <ul className="space-y-2 pt-2 text-xs text-slate-200">
                       <li className="flex items-center gap-2">
@@ -1626,7 +1626,7 @@ export default function AndhraPradeshLocationClient({ faqs }: Props) {
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-3.5 h-3.5 text-rose-400 shrink-0" />
-                        <span>Senior High Court Advocate Consultation</span>
+                        <span>Senior High Court Lawyer Talk</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-3.5 h-3.5 text-rose-400 shrink-0" />
@@ -1634,7 +1634,7 @@ export default function AndhraPradeshLocationClient({ faqs }: Props) {
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-3.5 h-3.5 text-rose-400 shrink-0" />
-                        <span>AP IGRS Online Booking Assistance</span>
+                        <span>AP IGRS Online Booking Help</span>
                       </li>
                     </ul>
                   </div>
@@ -1644,7 +1644,7 @@ export default function AndhraPradeshLocationClient({ faqs }: Props) {
                       onClick={handleStartDraft}
                       className="w-full py-3.5 rounded-full bg-[#C65378] text-white font-extrabold text-xs hover:bg-[#a13c5d] transition-colors cursor-pointer shadow-lg shadow-[#C65378]/30"
                     >
-                      Get Advocate Assisted Will
+                      Get Lawyer Assisted Will
                     </button>
                   </div>
                 </div>
@@ -1661,12 +1661,12 @@ export default function AndhraPradeshLocationClient({ faqs }: Props) {
                       <span className="text-xs text-slate-500">/ one-time</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Complete done-for-you service with advocate accompanying you to the Sub-Registrar Office or arranging Section 31 home visits.
+                      Complete done-for-you service with lawyer accompanying you to the SRO office or arranging Section 31 home visits.
                     </p>
                     <ul className="space-y-2 pt-2 text-xs text-slate-700">
                       <li className="flex items-center gap-2">
                         <Check className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
-                        <span>Complete Advocate Drafting &amp; Review</span>
+                        <span>Complete Lawyer Drafting &amp; Review</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
@@ -1674,7 +1674,7 @@ export default function AndhraPradeshLocationClient({ faqs }: Props) {
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
-                        <span>Physical Advocate Attendance at SRO</span>
+                        <span>Physical Lawyer Attendance at SRO</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
@@ -1688,7 +1688,7 @@ export default function AndhraPradeshLocationClient({ faqs }: Props) {
                       href="/services/will-registration"
                       className="block text-center w-full py-3 rounded-full bg-slate-100 text-slate-800 font-bold text-xs hover:bg-[#C65378] hover:text-white transition-colors cursor-pointer"
                     >
-                      Book Full SRO Assistance
+                      Book Full SRO Help
                     </a>
                   </div>
                 </div>
@@ -1706,7 +1706,7 @@ export default function AndhraPradeshLocationClient({ faqs }: Props) {
                   12. Frequently Asked Questions: Will Drafting in AP
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Clear answers to key statutory questions regarding registration, probate exemptions, Meebhoomi land mutations, and witness rules in Andhra Pradesh:
+                  Clear answers to key legal questions regarding registration, probate exemptions, Meebhoomi land mutations, and witness rules in Andhra Pradesh:
                 </p>
               </div>
 
@@ -1748,10 +1748,10 @@ export default function AndhraPradeshLocationClient({ faqs }: Props) {
                   <span>LEGAL AUTHORITIES &amp; STATUTES</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  13. Statutory Citations &amp; AP Legal Framework Portals
+                  13. Legal Citations &amp; AP Legal Framework Portals
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Will drafting and testamentary succession in Andhra Pradesh are rooted in verified statutory frameworks and official government e-services:
+                  Will drafting and testamentary succession in Andhra Pradesh are rooted in verified legal frameworks and official government e-services:
                 </p>
               </div>
 
@@ -1761,7 +1761,7 @@ export default function AndhraPradeshLocationClient({ faqs }: Props) {
                     Indian Succession Act, 1925
                   </span>
                   <p className="text-xs text-slate-600">
-                    Section 63 (Execution &amp; Attestation), Section 57 &amp; Section 213 (Probate Jurisdiction and non-presidency rules).
+                    Section 63 (Signing &amp; Attestation), Section 57 &amp; Section 213 (Probate Area and non-presidency rules).
                   </p>
                 </div>
 
@@ -1779,7 +1779,7 @@ export default function AndhraPradeshLocationClient({ faqs }: Props) {
                     AP Rights in Land &amp; Pattadar Pass Books Act
                   </span>
                   <p className="text-xs text-slate-600">
-                    Governs title mutation for agricultural lands via 1-B Adangal on the official Meebhoomi portal (<code>meebhoomi.ap.gov.in</code>).
+                    Governs title name change for farm lands via 1-B Adangal on the official Meebhoomi portal (<code>meebhoomi.ap.gov.in</code>).
                   </p>
                 </div>
 
@@ -1797,10 +1797,10 @@ export default function AndhraPradeshLocationClient({ faqs }: Props) {
             {/* BOTTOM CONVERSION CTA BANNER */}
             <section className="rounded-3xl bg-gradient-to-br from-[#172228] to-[#212F35] text-white p-8 sm:p-12 text-center space-y-5 shadow-xl">
               <h3 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-white">
-                Protect Your Andhra Properties &amp; Family Legacy
+                Protect Your Andhra Assets &amp; Family Legacy
               </h3>
               <p className="text-sm sm:text-base text-slate-200 max-w-2xl mx-auto leading-relaxed">
-                Do not leave your hard-earned Andhra Pradesh flats, commercial businesses, or agricultural lands to administrative delays or family disputes. Draft a legally valid Will online today or consult our senior advocates.
+                Do not leave your hard-earned Andhra Pradesh flats, shop businesses, or farm lands to office delays or family fights. Draft a legally valid Will online today or consult our senior lawyers.
               </p>
               <div className="pt-3 flex flex-col sm:flex-row items-center justify-center gap-4">
                 <a
@@ -1814,7 +1814,7 @@ export default function AndhraPradeshLocationClient({ faqs }: Props) {
                   href="/contact"
                   className="w-full sm:w-auto px-6 py-3.5 rounded-full bg-white/10 text-white font-bold text-sm sm:text-base hover:bg-white/20 transition-all border border-white/20"
                 >
-                  Book Advocate Consultation
+                  Book Lawyer Talk
                 </a>
               </div>
             </section>
@@ -1857,7 +1857,7 @@ export default function AndhraPradeshLocationClient({ faqs }: Props) {
               />
             </div>
             <div className="pt-3 flex items-center justify-between text-xs text-slate-500">
-              <span>AP IGRS Registered &amp; Meebhoomi Mutation Compliant</span>
+              <span>AP IGRS Registered &amp; Meebhoomi Name Change Compliant</span>
               <a
                 href="/start"
                 onClick={(e) => {

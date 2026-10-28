@@ -108,19 +108,19 @@ const INITIAL_CHECKLIST = [
   },
   {
     id: "item-2",
-    label: "Original Aadhaar Card & PAN of Testator",
+    label: "Original Aadhaar Card & PAN of Will maker",
     detail: "Essential for biometric identity validation, electronic thumbprint, and digital photo at the SRO counter.",
     checked: true,
   },
   {
     id: "item-3",
     label: "Two Independent Adult Witnesses with Aadhaar",
-    detail: "Must carry original photo IDs and must not be beneficiaries receiving any asset under the Will.",
+    detail: "Must carry original photo IDs and must not be heirs receiving any asset under the Will.",
     checked: true,
   },
   {
     id: "item-4",
-    label: "Doctor Mental Fitness Certificate (MBBS / MD)",
+    label: "Doctor Sound Mind Note (MBBS / MD)",
     detail: "Strongly advised for senior citizens aged 60+. Certifies testamentary mental soundness and lucidity.",
     checked: false,
   },
@@ -139,7 +139,7 @@ const INITIAL_CHECKLIST = [
   {
     id: "item-7",
     label: "UP Bhulekh Khatauni & Farmland Records (If Applicable)",
-    detail: "Recent computerized land records for agricultural holdings in Mawana, Sardhana, or Daurala.",
+    detail: "Recent computerized land records for farm holdings in Mawana, Sardhana, or Daurala.",
     checked: false,
   },
 ];
@@ -236,7 +236,7 @@ export default function MeerutLocationClient({ faqs }: Props) {
               </h1>
 
               <p className="text-base sm:text-lg text-slate-200 leading-relaxed font-normal max-w-2xl">
-                Draft a legally watertight Will for your MDA residential plots, Shastri Nagar bungalows, sports manufacturing enterprises, and Mawana agricultural farmland. Senior advocate drafting, UP IGRSUP e-Appointment assistance, and Section 31 doorstep execution.
+                Draft a legally watertight Will for your MDA home plots, Shastri Nagar bungalows, sports manufacturing enterprises, and Mawana farm farmland. Senior lawyer drafting, UP IGRSUP e-Appointment help, and Section 31 doorstep signing.
               </p>
 
               <div className="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
@@ -292,7 +292,7 @@ export default function MeerutLocationClient({ faqs }: Props) {
               <div className="mt-3 flex items-center justify-between px-2 text-xs text-slate-300">
                 <span className="flex items-center gap-1.5 font-medium text-slate-300">
                   <Sparkles className="w-3.5 h-3.5 text-[#C65378]" />
-                  Meerut Estate &amp; Commercial Succession Blueprint
+                  Meerut Estate &amp; Shop Succession Blueprint
                 </span>
                 <button
                   onClick={() => setShowHighResModal(true)}
@@ -482,7 +482,7 @@ export default function MeerutLocationClient({ faqs }: Props) {
                       <span>Optional Registration</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Will registration is optional under Section 18(e) of the Registration Act, 1908. An unregistered Will signed before two witnesses is valid, but official Book III SRO registration provides absolute authenticity against property disputes.
+                      Will registration is optional under Section 18(e) of the Registration Act, 1908. An unregistered Will signed before two witnesses is valid, but official Book III SRO registration provides absolute authenticity against property fights.
                     </p>
                   </div>
 
@@ -492,7 +492,7 @@ export default function MeerutLocationClient({ faqs }: Props) {
                       <span>Probate Strictly Optional</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Meerut lies in Uttar Pradesh under the Allahabad High Court. Under Section 213 of the Indian Succession Act, court probate is strictly non-compulsory in UP, enabling direct property title mutation with a registered Will.
+                      Meerut lies in Uttar Pradesh under the Allahabad High Court. Under Section 213 of the Indian Succession Act, court probate is strictly non-needed in UP, enabling direct property title name change with a registered Will.
                     </p>
                   </div>
 
@@ -502,14 +502,14 @@ export default function MeerutLocationClient({ faqs }: Props) {
                       <span>Zero UP Stamp Duty</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Testamentary Wills are completely exempt from stamp duty across Uttar Pradesh. You only pay a flat ₹100 registration fee plus nominal scanning charges at the Sub-Registrar Office via the IGRSUP portal.
+                      Testamentary Wills are completely exempt from stamp duty across Uttar Pradesh. You only pay a flat ₹100 registration fee plus nominal scanning charges at the SRO office via the IGRSUP portal.
                     </p>
                   </div>
 
                   <div className="p-4 rounded-2xl bg-slate-50/70 border border-slate-100 space-y-1.5">
                     <div className="flex items-center gap-2 font-bold text-sm text-slate-900">
                       <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
-                      <span>MDA &amp; Farmland Mutation</span>
+                      <span>MDA &amp; Farmland Name Change</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
                       A registered Will accelerates plot ownership substitution with Meerut Development Authority (MDA), Meerut Nagar Nigam records, and Section 108 UP Revenue Code farmland succession in UP Bhulekh.
@@ -530,10 +530,10 @@ export default function MeerutLocationClient({ faqs }: Props) {
                   1. Will Drafting &amp; Legal Framework in Meerut
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Will drafting and succession planning across Meerut district are governed by the <strong>Indian Succession Act, 1925</strong>, the <strong>Registration Act, 1908</strong>, and the <strong>Uttar Pradesh Revenue Code, 2006</strong>. Any adult of sound testamentary mind can legally bequeath self-acquired residential property, agricultural holdings, commercial business equity, and financial assets.
+                  Will drafting and succession planning across Meerut district are governed by the <strong>Indian Succession Act, 1925</strong>, the <strong>Registration Act, 1908</strong>, and the <strong>Uttar Pradesh Revenue Code, 2006</strong>. Any adult of sound testamentary mind can legally bequeath self-acquired home property, farm holdings, shop business equity, and financial assets.
                 </p>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Meerut features a distinctive convergence of asset types. Families frequently hold MDA plotted residences in Shastri Nagar or Ganga Nagar, high-value sports goods manufacturing enterprises in Partapur and Mohkampur, Cantonment leasehold bungalows along Mall Road, and agricultural sugarcane acreage in Mawana and Sardhana. Without an unambiguous, legally vetted Will, surviving successors face protracted administrative delays across MDA property desks, Nagar Nigam registers, and rural revenue Tehsils.
+                  Meerut features a distinctive convergence of asset types. Families often hold MDA plotted residences in Shastri Nagar or Ganga Nagar, high-value sports goods manufacturing enterprises in Partapur and Mohkampur, Cantonment leasehold bungalows along Mall Road, and farm sugarcane acreage in Mawana and Sardhana. Without an clear, legally vetted Will, surviving successors face protracted office delays across MDA property desks, Nagar Nigam registers, and rural revenue Tehsils.
                 </p>
               </div>
 
@@ -544,7 +544,7 @@ export default function MeerutLocationClient({ faqs }: Props) {
                   </span>
                   <h3 className="font-bold text-sm text-slate-900">Legal Capacity</h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    The testator must be a major aged 18 years or older with sound testamentary mental capacity (Section 59).
+                    The Will maker must be a major aged 18 years or older with sound testamentary mental capacity (Section 59).
                   </p>
                 </div>
 
@@ -554,7 +554,7 @@ export default function MeerutLocationClient({ faqs }: Props) {
                   </span>
                   <h3 className="font-bold text-sm text-slate-900">Free Consent</h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Executed voluntarily without undue influence, fraudulent misrepresentations, or family coercion (Section 61).
+                    Signed voluntarily without undue influence, fraudulent misrepresentations, or family coercion (Section 61).
                   </p>
                 </div>
 
@@ -564,7 +564,7 @@ export default function MeerutLocationClient({ faqs }: Props) {
                   </span>
                   <h3 className="font-bold text-sm text-slate-900">Two Witnesses</h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Must be signed in the physical presence of at least two independent adult attesting witnesses (Section 63).
+                    Must be signed in the physical presence of at least two independent adult witnesses (Section 63).
                   </p>
                 </div>
 
@@ -572,9 +572,9 @@ export default function MeerutLocationClient({ faqs }: Props) {
                   <span className="w-8 h-8 rounded-xl bg-rose-50 text-[#C65378] flex items-center justify-center font-bold text-sm">
                     <ShieldCheck className="w-4 h-4" />
                   </span>
-                  <h3 className="font-bold text-sm text-slate-900">Non-Beneficiary</h3>
+                  <h3 className="font-bold text-sm text-slate-900">Non-Heir</h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Attesting witnesses and their spouses must not receive any legacy or property under the Will (Section 67).
+                    Witnesses and their spouses must not receive any legacy or property under the Will (Section 67).
                   </p>
                 </div>
               </div>
@@ -588,13 +588,13 @@ export default function MeerutLocationClient({ faqs }: Props) {
                   <span>REGISTRATION STATUS</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  2. Is Will Registration Mandatory in Meerut?
+                  2. Is Will Registration Needed in Meerut?
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Under Section 18(e) of the Registration Act, 1908, the registration of a testamentary Will is strictly <strong>optional</strong> in Uttar Pradesh. An unregistered Will signed on standard white paper before two independent witnesses possesses full legal validity.
                 </p>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  However, given rapidly increasing property values across Shastri Nagar, Saket, and Delhi-Meerut Expressway growth zones, legal experts strongly recommend formal registration at the Meerut Sub-Registrar Office. Official Book III registration preserves the document in permanent state archives, negates allegations of forged signatures, and facilitates immediate ownership substitution.
+                  However, given rapidly increasing property values across Shastri Nagar, Saket, and Delhi-Meerut Expressway growth zones, legal experts strongly recommend formal registration at the Meerut SRO office. Official Book III registration preserves the document in permanent state archives, negates allegations of forged signatures, and facilitates immediate ownership substitution.
                 </p>
               </div>
 
@@ -615,22 +615,22 @@ export default function MeerutLocationClient({ faqs }: Props) {
                       <td className="p-4 bg-slate-50/20">Stored privately; susceptible to misplacement or tampering</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-semibold">Evidentiary Strength</td>
-                      <td className="p-4 bg-rose-50/20">Strong legal presumption of genuine voluntary execution</td>
+                      <td className="p-4 font-semibold">Proof Strength</td>
+                      <td className="p-4 bg-rose-50/20">Strong legal presumption of genuine voluntary signing</td>
                       <td className="p-4 bg-slate-50/20">Easily challenged for alleged fraud, forgery, or coercion</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-semibold">MDA Plot &amp; Flat Mutation</td>
+                      <td className="p-4 font-semibold">MDA Plot &amp; Flat Name Change</td>
                       <td className="p-4 bg-rose-50/20">Prompt title transfer on presenting certified copy</td>
                       <td className="p-4 bg-slate-50/20">MDA officials routinely insist on indemnities or family NOCs</td>
                     </tr>
                     <tr>
                       <td className="p-4 font-semibold">Nagar Nigam Assessment Transfer</td>
                       <td className="p-4 bg-rose-50/20">Fast name substitution on municipal tax registers</td>
-                      <td className="p-4 bg-slate-50/20">Lengthy public notice periods and objection procedures</td>
+                      <td className="p-4 bg-slate-50/20">Lengthy public notice periods and objection steps</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-semibold">UP Bhulekh Land Mutation (Dakhil Kharij)</td>
+                      <td className="p-4 font-semibold">UP Bhulekh Land Name Change (Dakhil Kharij)</td>
                       <td className="p-4 bg-rose-50/20">Accepted by Revenue Tehsildar for swift Khatauni update</td>
                       <td className="p-4 bg-slate-50/20">Frequent rival claims and objections from legal heirs</td>
                     </tr>
@@ -655,43 +655,43 @@ export default function MeerutLocationClient({ faqs }: Props) {
                   3. Meerut Probate Law: Exemption in Uttar Pradesh
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  A widespread misconception among Meerut residents is whether an executor must obtain court probate before inheriting real estate or movable property. Under established Indian succession jurisprudence, the answer is <strong>strictly no</strong>.
+                  A widespread misconception among Meerut residents is whether an executor must get court probate before inheriting real estate or movable property. Under established Indian succession jurisprudence, the answer is <strong>strictly no</strong>.
                 </p>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Under Section 213 read in conjunction with Section 57(a) and 57(b) of the Indian Succession Act, 1925, probate is mandatory solely for Wills executed within or concerning properties located within the historic presidency towns of Mumbai, Kolkata, and Chennai. The Allahabad High Court has consistently ruled that probate is non-mandatory in Uttar Pradesh.
+                  Under Section 213 read in conjunction with Section 57(a) and 57(b) of the Indian Succession Act, 1925, probate is needed solely for Wills signed within or concerning assets located within the historic presidency towns of Mumbai, Kolkata, and Chennai. The Allahabad High Court has consistently ruled that probate is non-needed in Uttar Pradesh.
                 </p>
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="bg-white rounded-3xl border border-slate-200/90 p-6 shadow-xs space-y-3">
                   <span className="px-3 py-1 rounded-full bg-emerald-100 text-emerald-800 text-xs font-extrabold uppercase">
-                    Settled Law: Non-Compulsory in UP
+                    Settled Law: Non-Needed in UP
                   </span>
                   <h3 className="font-bold text-base text-slate-900">
                     Allahabad High Court Jurisprudence
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    The Allahabad High Court has reaffirmed that Section 213(1) does not bar an executor or legatee from establishing title under an unprobated Will in Uttar Pradesh. A registered Will serves as conclusive documentary evidence for MDA property transfer, municipal records, banking assets, and business equity without lengthy civil court delays.
+                    The Allahabad High Court has reaffirmed that Section 213(1) does not bar an executor or legatee from establishing title under an unprobated Will in Uttar Pradesh. A registered Will serves as strong documentary evidence for MDA property transfer, municipal records, banking assets, and business equity without lengthy civil court delays.
                   </p>
                   <div className="pt-2 text-xs text-slate-500 flex items-center gap-1.5">
                     <Check className="w-3.5 h-3.5 text-emerald-600" />
-                    <span>Enables immediate asset transmission without High Court delays</span>
+                    <span>Enables immediate asset transfer without High Court delays</span>
                   </div>
                 </div>
 
                 <div className="bg-white rounded-3xl border border-rose-200 p-6 shadow-xs space-y-3 bg-rose-50/30">
                   <span className="px-3 py-1 rounded-full bg-rose-100 text-[#C65378] text-xs font-extrabold uppercase">
-                    Voluntary Filings: High-Value Disputes
+                    Voluntary Filings: High-Value Fights
                   </span>
                   <h3 className="font-bold text-base text-slate-900">
                     When is Probate Filed in Meerut District Court?
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    An executor may voluntarily petition for probate or letters of administration before the District Judge at Meerut Kutchery only when hostile legal heirs initiate partition lawsuits or contest testamentary mental soundness. A grant of probate provides an undisputed judgment <em>in rem</em> that conclusively settles ownership.
+                    An executor may voluntarily petition for probate or letters of management before the District Judge at Meerut Kutchery only when hostile legal heirs initiate split lawsuits or contest testamentary mental soundness. A grant of probate provides an undisputed judgment <em>in rem</em> that conclusively settles ownership.
                   </p>
                   <div className="pt-2 text-xs text-slate-500 flex items-center gap-1.5">
                     <AlertTriangle className="w-3.5 h-3.5 text-[#C65378]" />
-                    <span>Conclusive judicial decree against any collateral claims</span>
+                    <span>Strong judicial decree against any collateral claims</span>
                   </div>
                 </div>
               </div>
@@ -705,10 +705,10 @@ export default function MeerutLocationClient({ faqs }: Props) {
                   <span>SRO JURISDICTION DIRECTORY</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  4. Meerut Sub-Registrar Offices: SRO Jurisdiction Directory
+                  4. Meerut Sub-Registrar Offices: SRO Area Directory
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Meerut district operates dedicated Sub-Registrar Offices under the Stamps and Registration Department Uttar Pradesh (IGRSUP). Under Section 32 of the Registration Act, your Will can be registered at the Sub-Registrar Office having jurisdiction over your primary residence or where any portion of your immovable property is located.
+                  Meerut district operates dedicated Sub-Registrar Offices under the Stamps and Registration Department Uttar Pradesh (IGRSUP). Under Section 32 of the Registration Act, your Will can be registered at the SRO office having area over your primary residence or where any portion of your land and flats is located.
                 </p>
               </div>
 
@@ -778,7 +778,7 @@ export default function MeerutLocationClient({ faqs }: Props) {
                       <p className="text-slate-600">{activeHubData.timings}</p>
                     </div>
                     <div className="md:col-span-2 space-y-1">
-                      <span className="font-bold text-slate-900 block">Key Localities in Jurisdiction:</span>
+                      <span className="font-bold text-slate-900 block">Key Localities in Area:</span>
                       <p className="text-slate-600 leading-relaxed">{activeHubData.areas}</p>
                     </div>
                   </div>
@@ -791,7 +791,7 @@ export default function MeerutLocationClient({ faqs }: Props) {
                       href="/contact"
                       className="inline-flex items-center gap-1.5 font-bold text-[#C65378] hover:underline"
                     >
-                      <span>Request Advocate Assistance for {activeHubData.name}</span>
+                      <span>Request Lawyer Help for {activeHubData.name}</span>
                       <ArrowRight className="w-3.5 h-3.5" />
                     </a>
                   </div>
@@ -810,7 +810,7 @@ export default function MeerutLocationClient({ faqs }: Props) {
                   5. Local Areas: Area-Wise Will Drafting in Meerut
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Estate assets in Meerut district encompass upscale MDA residential colonies in Shastri Nagar and Saket, historic bungalows in Meerut Cantonment, sports goods factories along Delhi Road, high-growth university zones in Ganga Nagar, and agricultural sugarcane farmland in the regional cities of Mawana and Sardhana. Our legal experts deliver customized testamentary drafting, UP IGRSUP slot booking, and Sub-Registrar accompaniment across all key micro-markets:
+                  Estate assets in Meerut district encompass upscale MDA home colonies in Shastri Nagar and Saket, historic bungalows in Meerut Cantonment, sports goods factories along Delhi Road, high-growth university zones in Ganga Nagar, and farm sugarcane farmland in the regional cities of Mawana and Sardhana. Our legal experts deliver customized testamentary drafting, UP IGRSUP slot booking, and Sub-Registrar accompaniment across all key micro-markets:
                 </p>
               </div>
 
@@ -840,7 +840,7 @@ export default function MeerutLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Specialized <strong>Will drafting services in Shastri Nagar</strong> and Jagriti Vihar for premium MDA plotted houses, doctor clinics, and multi-storey residences. Formulates unambiguous share allocations, mutual fund bequests, and fast MDA mutation under the UP Urban Planning and Development Act, 1973.
+                      Specialized <strong>Will drafting services in Shastri Nagar</strong> and Jagriti Vihar for premium MDA plotted houses, doctor clinics, and multi-storey residences. Formulates clear share allocations, mutual fund bequests, and fast MDA name change under the UP Urban Planning and Development Act, 1973.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -849,7 +849,7 @@ export default function MeerutLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Collectorate Compound, Kutchery</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        UP IGRSUP e-Appointment scheduling at Kutchery SRO, advocate accompaniment, and Section 31 home visits for seniors.
+                        UP IGRSUP e-Appointment scheduling at Kutchery SRO, lawyer accompaniment, and Section 31 home visits for seniors.
                       </p>
                     </div>
                   </div>
@@ -886,14 +886,14 @@ export default function MeerutLocationClient({ faqs }: Props) {
                     </h3>
 
                     <div className="flex flex-wrap gap-1.5 text-[11px] text-slate-600">
-                      <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Saket Residential Enclave</span>
+                      <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Saket Home Enclave</span>
                       <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Civil Lines</span>
                       <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Boundary Road</span>
                       <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Mangal Pandey Nagar</span>
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Customized <strong>Will drafting services in Saket</strong> and Civil Lines for distinguished families, senior advocates, and civil dignitaries. Provides comprehensive life-interest clauses for surviving spouses, sole ownership allocation for freehold plots, and doctor-certified mental capacity attestations.
+                      Customized <strong>Will drafting services in Saket</strong> and Civil Lines for distinguished families, senior lawyers, and civil dignitaries. Provides full life-interest clauses for surviving spouses, sole ownership allocation for freehold plots, and doctor-certified mental capacity attestations.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -941,7 +941,7 @@ export default function MeerutLocationClient({ faqs }: Props) {
                     <div className="flex flex-wrap gap-1.5 text-[11px] text-slate-600">
                       <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Mall Road Bungalows</span>
                       <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Cariappa Marg</span>
-                      <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Sadar Bazaar Commercial</span>
+                      <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Sadar Bazaar Shop</span>
                       <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Gandhi Bagh Belts</span>
                     </div>
 
@@ -955,7 +955,7 @@ export default function MeerutLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Near Cantt Board Office, Tehsil</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Doorstep registration for elderly veterans and pensioners, IGRSUP booking, and advocate accompaniment.
+                        Doorstep registration for elderly veterans and pensioners, IGRSUP booking, and lawyer accompaniment.
                       </p>
                     </div>
                   </div>
@@ -999,7 +999,7 @@ export default function MeerutLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Comprehensive <strong>Will drafting services in Ganga Nagar</strong> for MDA residential plots, independent builder duplexes, and educational corridor properties. Guarantees unambiguous share distribution among legal heirs, nominee clarity, and swift Nagar Nigam mutation.
+                      Full <strong>Will drafting services in Ganga Nagar</strong> for MDA home plots, independent builder duplexes, and educational corridor assets. Guarantees clear share split among legal heirs, nominee clarity, and swift Nagar Nigam name change.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1008,7 +1008,7 @@ export default function MeerutLocationClient({ faqs }: Props) {
                         <span>SRO Hub: SRO II Collectorate Complex</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Full documentation validation, IGRSUP slot generation, and certified copy delivery.
+                        Full papers validation, IGRSUP slot generation, and certified copy delivery.
                       </p>
                     </div>
                   </div>
@@ -1052,7 +1052,7 @@ export default function MeerutLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Specialized <strong>Will drafting services in Mohkampur and Partapur</strong> for sports goods manufacturers, cricket bat exporters, and manufacturing entrepreneurs. Governs transfer of UPSIDA factory leases, partnership capital, export machinery, and commercial trademarks.
+                      Specialized <strong>Will drafting services in Mohkampur and Partapur</strong> for sports goods manufacturers, cricket bat exporters, and manufacturing entrepreneurs. Governs transfer of UPSIDA factory leases, partnership capital, export machinery, and shop trademarks.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1105,7 +1105,7 @@ export default function MeerutLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Dedicated <strong>Will drafting services in Mawana and Hastinapur</strong> for commercial establishments, sugar processing units, and agricultural farmland. Structures bequests compliant with Section 108 of the Uttar Pradesh Revenue Code, 2006, preventing rural landholding fragmentation.
+                      Dedicated <strong>Will drafting services in Mawana and Hastinapur</strong> for shop establishments, sugar processing units, and farm farmland. Structures bequests compliant with Section 108 of the Uttar Pradesh Revenue Code, 2006, preventing rural landholding fragmentation.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1114,7 +1114,7 @@ export default function MeerutLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Tehsil Compound, Mawana-Meerut Road</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        UP Bhulekh Khatauni mutation guidance, Section 108 compliance, and Book III registration.
+                        UP Bhulekh Khatauni name change guidance, Section 108 compliance, and Book III registration.
                       </p>
                     </div>
                   </div>
@@ -1158,7 +1158,7 @@ export default function MeerutLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Specialized <strong>Will drafting services in Sardhana and Daurala</strong> for ancestral estates, mango orchards, commercial shops, and agricultural acreage. Protects multi-generational family land against rival claims and ensures prompt Tehsildar Dakhil Kharij mutation.
+                      Specialized <strong>Will drafting services in Sardhana and Daurala</strong> for family estates, mango orchards, shop shops, and farm acreage. Protects multi-generational family land against rival claims and ensures prompt Tehsildar Dakhil Kharij name change.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1167,7 +1167,7 @@ export default function MeerutLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Tehsil Karyalaya Compound, Sardhana</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Agricultural succession, ancestral partition documentation, and SRO Sardhana appointment support.
+                        Farm succession, family split papers, and SRO Sardhana appointment support.
                       </p>
                     </div>
                   </div>
@@ -1211,7 +1211,7 @@ export default function MeerutLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Tailored <strong>Will drafting services in Modipuram</strong> and Pallavpuram for MDA residential colonies, commercial complexes on Roorkee Road, and Delhi commuter apartments. Eliminates intestate legal entanglements and secures smooth title mutation in MDA records.
+                      Tailored <strong>Will drafting services in Modipuram</strong> and Pallavpuram for MDA home colonies, shop complexes on Roorkee Road, and Delhi commuter apartments. Eliminates without a Will legal entanglements and secures smooth title name change in MDA records.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1220,7 +1220,7 @@ export default function MeerutLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Sub-Registrar II Collectorate / Roorkee Road</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        MDA title verification, IGRSUP token generation, and Sub-Registrar accompaniment.
+                        MDA title check, IGRSUP token generation, and Sub-Registrar accompaniment.
                       </p>
                     </div>
                   </div>
@@ -1252,7 +1252,7 @@ export default function MeerutLocationClient({ faqs }: Props) {
                   6. Step-by-Step SOP: Drafting to IGRSUP Registration
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Follow this verified 5-stage legal operating procedure to draft, execute, and register your Will before the Sub-Registrar in Meerut:
+                  Follow this verified 5-stage legal operating step to draft, execute, and register your Will before the Sub-Registrar in Meerut:
                 </p>
               </div>
 
@@ -1277,7 +1277,7 @@ export default function MeerutLocationClient({ faqs }: Props) {
                       2
                     </span>
                     <h3 className="font-bold text-sm text-slate-900">
-                      Advocate Drafting
+                      Lawyer Drafting
                     </h3>
                     <p className="text-xs text-slate-600 leading-relaxed">
                       Draft customized legal clauses covering revocation of prior wills, survivorship, executor powers, and minor guardianships.
@@ -1291,10 +1291,10 @@ export default function MeerutLocationClient({ faqs }: Props) {
                       3
                     </span>
                     <h3 className="font-bold text-sm text-slate-900">
-                      Valid Execution
+                      Valid Signing
                     </h3>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Print on A4 paper and sign each page in the physical presence of two independent non-beneficiary adult witnesses.
+                      Print on A4 paper and sign each page in the physical presence of two independent non-heir adult witnesses.
                     </p>
                   </div>
                 </div>
@@ -1340,7 +1340,7 @@ export default function MeerutLocationClient({ faqs }: Props) {
                   7. Section 31 Doorstep SRO Registration for Senior Citizens
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  For elderly, infirm, or medically restricted citizens residing in Shastri Nagar, Saket, Civil Lines, or rural residences, visiting the Sub-Registrar Office can be a physical challenge. Under <strong>Section 31 of the Registration Act, 1908</strong>, the Sub-Registrar possesses legal authority to attend a private residence or medical care facility to register a Will.
+                  For elderly, infirm, or medically restricted citizens residing in Shastri Nagar, Saket, Civil Lines, or rural residences, visiting the SRO office can be a physical challenge. Under <strong>Section 31 of the Registration Act, 1908</strong>, the Sub-Registrar possesses legal authority to attend a private residence or medical care facility to register a Will.
                 </p>
               </div>
 
@@ -1395,7 +1395,7 @@ export default function MeerutLocationClient({ faqs }: Props) {
                   8. Document Checklist for Meerut Sub-Registrar Offices
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Organize your documentation before booking your Sub-Registrar appointment. You have verified <strong>{checkedCount} of {checklist.length}</strong> required documents:
+                  Organize your papers before booking your Sub-Registrar appointment. You have verified <strong>{checkedCount} of {checklist.length}</strong> required documents:
                 </p>
               </div>
 
@@ -1443,7 +1443,7 @@ export default function MeerutLocationClient({ faqs }: Props) {
                   9. Meerut Property Types: MDA Plots, Cantt &amp; Farmland
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Succession procedures across Meerut vary depending on property classifications and governing administrative authorities:
+                  Succession steps across Meerut vary depending on property classifications and governing office offices:
                 </p>
               </div>
 
@@ -1456,7 +1456,7 @@ export default function MeerutLocationClient({ faqs }: Props) {
                     MDA Plots &amp; Duplexes
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Under the UP Urban Planning and Development Act, 1973, MDA residential plots in Shastri Nagar and Ganga Nagar require official substitution. Presenting a registered Will enables direct transfer in MDA records without court succession decrees.
+                    Under the UP Urban Planning and Development Act, 1973, MDA home plots in Shastri Nagar and Ganga Nagar require official substitution. Presenting a registered Will enables direct transfer in MDA records without court succession decrees.
                   </p>
                 </div>
 
@@ -1465,10 +1465,10 @@ export default function MeerutLocationClient({ faqs }: Props) {
                     UP Revenue Code 2006
                   </span>
                   <h3 className="font-bold text-base text-slate-900">
-                    Agricultural Khatauni Land
+                    Farm Khatauni Land
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Agricultural land across Mawana and Sardhana is governed by Section 108 of the UP Revenue Code, 2006. Testamentary bequests must respect statutory ceiling limits. A registered Will facilitates swift Dakhil Kharij mutation in UP Bhulekh records.
+                    Farm land across Mawana and Sardhana is governed by Section 108 of the UP Revenue Code, 2006. Testamentary bequests must respect legal ceiling limits. A registered Will facilitates swift Dakhil Kharij name change in UP Bhulekh records.
                   </p>
                 </div>
 
@@ -1506,7 +1506,7 @@ export default function MeerutLocationClient({ faqs }: Props) {
                   <thead>
                     <tr className="bg-slate-100/80 border-b border-slate-200 text-slate-800">
                       <th className="p-4 font-bold">Fee Component</th>
-                      <th className="p-4 font-bold">Statutory Amount</th>
+                      <th className="p-4 font-bold">Legal Amount</th>
                       <th className="p-4 font-bold">Remittance Authority</th>
                     </tr>
                   </thead>
@@ -1518,7 +1518,7 @@ export default function MeerutLocationClient({ faqs }: Props) {
                     </tr>
                     <tr>
                       <td className="p-4 font-semibold">SRO Book III Registration Fee</td>
-                      <td className="p-4 font-bold text-[#C65378]">₹100 (Flat Statutory Fee)</td>
+                      <td className="p-4 font-bold text-[#C65378]">₹100 (Flat Legal Fee)</td>
                       <td className="p-4">IGRSUP via e-Challan Portal</td>
                     </tr>
                     <tr>
@@ -1547,7 +1547,7 @@ export default function MeerutLocationClient({ faqs }: Props) {
                   11. Transparent Will Packages &amp; Legal Fees in Meerut
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Choose the legal service package matched to your family&apos;s estate planning requirements in Meerut:
+                  Choose the legal service package matched to your family&apos;s estate planning rules in Meerut:
                 </p>
               </div>
 
@@ -1565,7 +1565,7 @@ export default function MeerutLocationClient({ faqs }: Props) {
                       ₹1,990
                     </div>
                     <p className="text-xs text-slate-600">
-                      Ideal for individual homeowners with MDA residential plots, bank accounts, and demat assets.
+                      Ideal for individual homeowners with MDA home plots, bank accounts, and demat assets.
                     </p>
                     <ul className="space-y-2.5 text-xs text-slate-700 pt-3 border-t border-slate-100">
                       <li className="flex items-center gap-2">
@@ -1574,11 +1574,11 @@ export default function MeerutLocationClient({ faqs }: Props) {
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>Legally vetted statutory clauses</span>
+                        <span>Legally vetted legal clauses</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>Instant PDF download &amp; execution guide</span>
+                        <span>Instant PDF download &amp; signing guide</span>
                       </li>
                     </ul>
                   </div>
@@ -1598,16 +1598,16 @@ export default function MeerutLocationClient({ faqs }: Props) {
                   </div>
                   <div className="space-y-4">
                     <span className="text-xs font-bold uppercase tracking-wider text-[#C65378]">
-                      Comprehensive
+                      Full
                     </span>
                     <h3 className="font-extrabold text-xl text-slate-900">
-                      Advocate Consultation
+                      Lawyer Talk
                     </h3>
                     <div className="text-3xl font-black text-slate-900">
                       ₹4,990
                     </div>
                     <p className="text-xs text-slate-600">
-                      Senior estate advocate review for MDA plots, Mawana farmland, and multi-heir portfolios.
+                      Senior estate lawyer review for MDA plots, Mawana farmland, and multi-heir portfolios.
                     </p>
                     <ul className="space-y-2.5 text-xs text-slate-700 pt-3 border-t border-slate-100">
                       <li className="flex items-center gap-2">
@@ -1616,7 +1616,7 @@ export default function MeerutLocationClient({ faqs }: Props) {
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>1-on-1 video call with senior advocate</span>
+                        <span>1-on-1 video call with senior lawyer</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
@@ -1632,7 +1632,7 @@ export default function MeerutLocationClient({ faqs }: Props) {
                     href="/contact"
                     className="mt-6 w-full py-3 rounded-xl bg-[#C65378] text-white text-xs font-bold text-center hover:bg-[#a13c5d] transition-colors cursor-pointer"
                   >
-                    Book Advocate Call
+                    Book Lawyer Call
                   </a>
                 </div>
 
@@ -1649,7 +1649,7 @@ export default function MeerutLocationClient({ faqs }: Props) {
                       ₹9,990
                     </div>
                     <p className="text-xs text-slate-600">
-                      End-to-end registration coordination across any Meerut Sub-Registrar Office or home visit.
+                      End-to-end registration coordination across any Meerut SRO office or home visit.
                     </p>
                     <ul className="space-y-2.5 text-xs text-slate-700 pt-3 border-t border-slate-100">
                       <li className="flex items-center gap-2">
@@ -1658,7 +1658,7 @@ export default function MeerutLocationClient({ faqs }: Props) {
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>Advocate physically attends Meerut SRO</span>
+                        <span>Lawyer physically attends Meerut SRO</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
@@ -1732,7 +1732,7 @@ export default function MeerutLocationClient({ faqs }: Props) {
                   <span>STATUTORY CITATIONS</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  13. Statutory Citations &amp; Uttar Pradesh Legal Portals
+                  13. Legal Citations &amp; Uttar Pradesh Legal Portals
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Our drafting protocols comply strictly with codified Indian statutes and Uttar Pradesh state registration systems:
@@ -1763,7 +1763,7 @@ export default function MeerutLocationClient({ faqs }: Props) {
                     UP Revenue Code 2006
                   </span>
                   <p className="text-xs text-slate-600">
-                    Section 108 (Succession and Testamentary Bequest of Agricultural Farmland in UP).
+                    Section 108 (Succession and Testamentary Bequest of Farm Farmland in UP).
                   </p>
                 </div>
 
@@ -1781,10 +1781,10 @@ export default function MeerutLocationClient({ faqs }: Props) {
             {/* BOTTOM CONVERSION CTA BANNER */}
             <section className="rounded-3xl bg-gradient-to-br from-[#172228] to-[#212F35] text-white p-8 sm:p-12 text-center space-y-5 shadow-xl">
               <h3 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-white">
-                Protect Your Meerut Properties &amp; Family Legacy
+                Protect Your Meerut Assets &amp; Family Legacy
               </h3>
               <p className="text-sm sm:text-base text-slate-200 max-w-2xl mx-auto leading-relaxed">
-                Do not leave your hard-earned Meerut plots, business units, or agricultural lands to contentious disputes. Draft a legally binding Will online today or consult our senior Allahabad High Court advocates.
+                Do not leave your hard-earned Meerut plots, business units, or farm lands to contentious fights. Draft a legally binding Will online today or consult our senior Allahabad High Court lawyers.
               </p>
               <div className="pt-3 flex flex-col sm:flex-row items-center justify-center gap-4">
                 <a
@@ -1798,7 +1798,7 @@ export default function MeerutLocationClient({ faqs }: Props) {
                   href="/contact"
                   className="w-full sm:w-auto px-6 py-3.5 rounded-full bg-white/10 text-white font-bold text-sm sm:text-base hover:bg-white/20 transition-all border border-white/20"
                 >
-                  Book Advocate Consultation
+                  Book Lawyer Talk
                 </a>
               </div>
             </section>
@@ -1841,7 +1841,7 @@ export default function MeerutLocationClient({ faqs }: Props) {
               />
             </div>
             <div className="pt-3 flex items-center justify-between text-xs text-slate-500">
-              <span>Meerut SRO Registered &amp; MDA Mutation Compliant</span>
+              <span>Meerut SRO Registered &amp; MDA Name Change Compliant</span>
               <a
                 href="/start"
                 onClick={(e) => {

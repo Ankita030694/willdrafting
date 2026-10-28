@@ -73,9 +73,20 @@ Every new page, component, blog post, location guide, legal tool, and template c
 
 ---
 
-## 8. Security Headers
-- Managed globally in [`next.config.ts`](file:///Users/amalegalsolutions/Desktop/AMAWORK/willdrafting/next.config.ts) across all routes (`/:path*`):
+## 8. Security Headers & Synchronous `<head>` Metadata
+- Managed globally in [`next.config.ts`](file:///Users/amalegalsolutions/Desktop/AMAWORK/willdrafting/next.config.ts) and [`src/proxy.ts`](file:///Users/amalegalsolutions/Desktop/AMAWORK/willdrafting/src/proxy.ts) across all routes (`/:path*`):
   - `X-Content-Type-Options: nosniff`
   - `Referrer-Policy: strict-origin-when-cross-origin`
   - `X-Frame-Options: SAMEORIGIN`
   - `Content-Security-Policy`
+  - `Strict-Transport-Security`
+- Set `htmlLimitedBots: /.*/` in [`next.config.ts`](file:///Users/amalegalsolutions/Desktop/AMAWORK/willdrafting/next.config.ts) so Next.js always renders `<title>`, `<meta name="description">`, `<meta name="robots">`, and `<link rel="canonical">` inside `<head>` and never streams them into `<body>`.
+
+---
+
+## 9. Content Readability (Flesch Reading Ease ≥ 30.0 — Zero "Very Hard" Pages)
+- **Minimum Flesch Reading Ease Score:** Every indexable page MUST achieve a **Flesch Reading Ease score ≥ 30.0** (`206.835 - 1.015 × (Words / Sentences) - 84.6 × (Syllables / Words)`), so Screaming Frog never flags `Content: Readability Very Difficult` (`Very Hard`). Aim for **≥ 35.0**.
+- **Plain-English Legal Writing Rules:**
+  - Prefer 1–2 syllable words over heavy multi-syllable words where legal precision is unaffected (`use` instead of `utilize`, `help` instead of `assistance`, `papers` instead of `documentation`, `heirs` instead of `beneficiaries`, `Will maker` instead of `testator`, `needed` instead of `mandatory`, `also` instead of `additionally`/`furthermore`, `so` instead of `consequently`, `check` instead of `verification`/`authentication`, `land and flats` instead of `immovable properties`).
+  - Keep sentences concise (**8–16 words** on average) and include plain-English summary cards (`Why Write a Will Now?`, `Who Needs One?`, `How We Help You`) on pages with long statutory or multi-syllable city/state names (such as *Thiruvananthapuram*, *Tiruchirappalli*, *Arunachal Pradesh*, *Lakshadweep*, *Uttarakhand*, *Amaravati*).
+  - Verify readability via `node scripts/seo-audit-check.mjs`.

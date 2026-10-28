@@ -110,42 +110,42 @@ const INITIAL_CHECKLIST = [
   },
   {
     id: "item-2",
-    label: "Original Aadhaar Card & PAN of Testator",
+    label: "Original Aadhaar Card & PAN of Will maker",
     detail:
-      "Mandatory for biometric identity verification, photo recording, and official Book III government entry.",
+      "Needed for biometric identity check, photo recording, and official Book III government entry.",
     checked: true,
   },
   {
     id: "item-3",
     label: "Two Independent Adult Attesting Witnesses",
     detail:
-      "Must carry original government photo IDs and cannot be beneficiaries or spouses of beneficiaries under the Will.",
+      "Must carry original government photo IDs and cannot be heirs or spouses of heirs under the Will.",
     checked: true,
   },
   {
     id: "item-4",
-    label: "MBBS Doctor Mental Fitness Certificate",
+    label: "MBBS Doctor Sound Mind Note",
     detail:
-      "Strongly recommended for senior citizens (60+) to certify testamentary lucidity and ward off future challenges.",
+      "Strongly recommended for senior citizens (60+) to certify testamentary lucidity and ward off future fights.",
     checked: false,
   },
   {
     id: "item-5",
     label: "Industrial Estate Allotment / Title Documents",
     detail:
-      "Lease allotment letter, DIC registration, or title deeds for Silvassa factories and commercial units.",
+      "Lease allotment letter, DIC registration, or title deeds for Silvassa factories and shop units.",
     checked: false,
   },
   {
     id: "item-6",
-    label: "Portuguese Ancestral Records (If Applicable in Daman/Diu)",
+    label: "Portuguese Family Records (If Applicable in Daman/Diu)",
     detail:
-      "Documents evidencing matrimonial property regime or ancestral share to prevent community property conflicts.",
+      "Documents evidencing matrimonial property regime or family share to prevent community property conflicts.",
     checked: false,
   },
   {
     id: "item-7",
-    label: "Statutory SRO Fee Challan / Receipt",
+    label: "Legal SRO Fee Challan / Receipt",
     detail:
       "Challan receipt evidencing payment of nominal government registration and document processing fees.",
     checked: false,
@@ -251,7 +251,7 @@ export default function DnhDdLocationClient({ faqs }: Props) {
               </h1>
 
               <p className="text-base sm:text-lg text-slate-200 leading-relaxed font-normal max-w-2xl">
-                Draft a legally watertight Will for your Silvassa manufacturing units, Portuguese-era coastal estates in Daman, island properties in Diu, and ancestral lands. Senior advocate drafting, Sub-Registrar Book III registration, and Section 31 doorstep execution.
+                Draft a legally watertight Will for your Silvassa manufacturing units, Portuguese-era coastal estates in Daman, island assets in Diu, and family lands. Senior lawyer drafting, Sub-Registrar Book III registration, and Section 31 doorstep signing.
               </p>
 
               <div className="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
@@ -276,7 +276,7 @@ export default function DnhDdLocationClient({ faqs }: Props) {
               <div className="pt-4 grid grid-cols-3 gap-3 border-t border-white/10 text-xs text-slate-300">
                 <div className="flex items-center gap-2">
                   <Check className="w-4 h-4 text-emerald-400 shrink-0" />
-                  <span>Bombay HC Advocate Vetted</span>
+                  <span>Bombay HC Lawyer Vetted</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <Check className="w-4 h-4 text-emerald-400 shrink-0" />
@@ -518,7 +518,7 @@ export default function DnhDdLocationClient({ faqs }: Props) {
                       <span>Zero Stamp Duty</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Wills attract ₹0 ad-valorem stamp duty in the Union Territory. Only nominal statutory registration charges (₹100 to ₹500) apply at the Sub-Registrar counter.
+                      Wills attract ₹0 ad-valorem stamp duty in the Union Territory. Only nominal legal registration charges (₹100 to ₹500) apply at the Sub-Registrar counter.
                     </p>
                   </div>
 
@@ -538,7 +538,7 @@ export default function DnhDdLocationClient({ faqs }: Props) {
                       <span>Portuguese Civil Code Nuance</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      In Daman and Diu, ancestral estates harmonize historical communion of assets with the Indian Succession Act 1925 to resolve community property questions.
+                      In Daman and Diu, family estates harmonize historical communion of assets with the Indian Succession Act 1925 to resolve community property questions.
                     </p>
                   </div>
                 </div>
@@ -574,7 +574,7 @@ export default function DnhDdLocationClient({ faqs }: Props) {
                   1. Legal Framework: Succession in Dadra, Daman &amp; Diu
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Estate succession across Dadra and Nagar Haveli and Daman and Diu represents a distinct blend of national statutory law and unique historical administrative traditions. While the Indian Succession Act, 1925 governs the execution, attestation, and revocation of Wills, local property transfer mechanisms interface with the Union Territory Administration, municipal corporations, and agrarian land reforms.
+                  Estate succession across Dadra and Nagar Haveli and Daman and Diu represents a distinct blend of national legal law and unique historical office traditions. While the Indian Succession Act, 1925 governs the signing, attestation, and revocation of Wills, local property transfer mechanisms interface with the Union Territory Administration, municipal corporations, and agrarian land reforms.
                 </p>
               </div>
 
@@ -587,7 +587,7 @@ export default function DnhDdLocationClient({ faqs }: Props) {
                     Section 63 Indian Succession Act, 1925
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Every valid testamentary instrument in the UT requires: (a) intention of the testator expressed in writing, (b) personal signature or thumbmark of the testator, and (c) attestation by at least two independent adult witnesses who observe the testator signing.
+                    Every valid testamentary instrument in the UT requires: (a) intention of the Will maker expressed in writing, (b) personal signature or thumbmark of the Will maker, and (c) attestation by at least two independent adult witnesses who observe the Will maker signing.
                   </p>
                 </div>
 
@@ -599,7 +599,7 @@ export default function DnhDdLocationClient({ faqs }: Props) {
                     Portuguese Civil Code Remnants in Daman &amp; Diu
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Prior to liberation in 1961, Daman and Diu were governed by the Portuguese Civil Code of 1867. For native families, ancestral holdings may involve marital communion of property. Our advocates ensure your Will cleanly isolates your disposable estate without infringing on legitimate family reserves.
+                    Prior to liberation in 1961, Daman and Diu were governed by the Portuguese Civil Code of 1867. For native families, family holdings may involve marital communion of property. Our lawyers make sure your Will cleanly isolates your disposable estate without infringing on legitimate family reserves.
                   </p>
                 </div>
 
@@ -611,7 +611,7 @@ export default function DnhDdLocationClient({ faqs }: Props) {
                     Dadra &amp; Nagar Haveli Land Reforms Regulation, 1971
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Under Section 8 of the DNH Land Reforms Regulation 1971, agricultural occupancy rights held by Scheduled Tribe individuals (Varli, Dhodia, Kokna) cannot be transferred or bequeathed to non-tribals. Wills must uphold these statutory restrictions to secure lawful mutation.
+                    Under Section 8 of the DNH Land Reforms Regulation 1971, farm occupancy rights held by Scheduled Tribe people (Varli, Dhodia, Kokna) cannot be transferred or bequeathed to non-tribals. Wills must uphold these legal restrictions to secure lawful name change.
                   </p>
                 </div>
 
@@ -620,10 +620,10 @@ export default function DnhDdLocationClient({ faqs }: Props) {
                     <Building className="w-5 h-5" />
                   </div>
                   <h3 className="font-extrabold text-base text-slate-900">
-                    The UT Merger Act, 2019 &amp; Administrative Unified Control
+                    The UT Merger Act, 2019 &amp; Office Unified Control
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Enacted under Act 44 of 2019, the merger unified administrative structures while preserving existing regional property rights. Registration processes at Silvassa, Daman, and Diu Sub-Registrar Offices operate with uniform efficiency under the Administrator.
+                    Enacted under Act 44 of 2019, the merger unified office structures while preserving existing regional property rights. Registration processes at Silvassa, Daman, and Diu Sub-Registrar Offices operate with uniform efficiency under the Administrator.
                   </p>
                 </div>
               </div>
@@ -641,7 +641,7 @@ export default function DnhDdLocationClient({ faqs }: Props) {
                   2. Registration Rules: Optional vs Book III Custody
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Under Section 18(e) of the Registration Act, 1908, the registration of a testamentary Will is strictly optional throughout the Union Territory. A Will written on ordinary white paper and attested by two witnesses is legally enforceable in Indian courts. However, registering the Will before the Sub-Registrar provides immense evidentiary benefits:
+                  Under Section 18(e) of the Registration Act, 1908, the registration of a testamentary Will is strictly optional throughout the Union Territory. A Will written on ordinary white paper and attested by two witnesses is legally enforceable in Indian courts. However, registering the Will before the Sub-Registrar provides immense proof benefits:
                 </p>
               </div>
 
@@ -658,7 +658,7 @@ export default function DnhDdLocationClient({ faqs }: Props) {
                   </div>
                   <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-[#C65378] text-white">
                     <ShieldCheck className="w-3.5 h-3.5" />
-                    Statutory Comparison
+                    Legal Comparison
                   </span>
                 </div>
 
@@ -676,14 +676,14 @@ export default function DnhDdLocationClient({ faqs }: Props) {
                         <td className="p-4 sm:p-5 font-bold text-slate-900">Legal Validity</td>
                         <td className="p-4 sm:p-5">Valid under Section 63 Indian Succession Act</td>
                         <td className="p-4 sm:p-5 font-bold text-emerald-700 bg-rose-50/30">
-                          Valid with statutory presumption of genuine execution
+                          Valid with legal presumption of genuine signing
                         </td>
                       </tr>
                       <tr className="hover:bg-slate-50/50 transition-colors">
                         <td className="p-4 sm:p-5 font-bold text-slate-900">Government Record</td>
                         <td className="p-4 sm:p-5">Zero official record; vulnerable to loss or destruction</td>
                         <td className="p-4 sm:p-5 font-bold text-emerald-700 bg-rose-50/30">
-                          Permanent sealed custody in Book III at the Sub-Registrar Office
+                          Permanent sealed custody in Book III at the SRO office
                         </td>
                       </tr>
                       <tr className="hover:bg-slate-50/50 transition-colors">
@@ -694,17 +694,17 @@ export default function DnhDdLocationClient({ faqs }: Props) {
                         </td>
                       </tr>
                       <tr className="hover:bg-slate-50/50 transition-colors">
-                        <td className="p-4 sm:p-5 font-bold text-slate-900">Industrial &amp; Land Mutation</td>
+                        <td className="p-4 sm:p-5 font-bold text-slate-900">Industrial &amp; Land Name Change</td>
                         <td className="p-4 sm:p-5">Mamlatdar/DIC may mandate civil court succession order</td>
                         <td className="p-4 sm:p-5 font-bold text-emerald-700 bg-rose-50/30">
-                          Expedited mutation on revenue records, SMC/DMC registers, and DIC
+                          Expedited name change on revenue records, SMC/DMC registers, and DIC
                         </td>
                       </tr>
                       <tr className="hover:bg-slate-50/50 transition-colors">
                         <td className="p-4 sm:p-5 font-bold text-slate-900">Certified Copy Replacement</td>
                         <td className="p-4 sm:p-5">Impossible if original is misplaced or concealed</td>
                         <td className="p-4 sm:p-5 font-bold text-emerald-700 bg-rose-50/30">
-                          Executor can obtain certified copies from SRO upon testator&apos;s death
+                          Executor can get certified copies from SRO upon Will maker&apos;s death
                         </td>
                       </tr>
                     </tbody>
@@ -722,10 +722,10 @@ export default function DnhDdLocationClient({ faqs }: Props) {
                 </div>
                 {/* H2: 53 chars (<= 70) */}
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  3. Bombay High Court Jurisdiction &amp; Probate Exemption
+                  3. Bombay High Court Area &amp; Probate Exemption
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  A common point of confusion among property owners in Dadra and Nagar Haveli and Daman and Diu is whether probate is mandatory, given that the High Court of Bombay exercises judicial supervision over the Union Territory. The legal reality is clear and favorable:
+                  A common point of confusion among property owners in Dadra and Nagar Haveli and Daman and Diu is whether probate is needed, given that the High Court of Bombay exercises judicial supervision over the Union Territory. The legal reality is clear and favorable:
                 </p>
               </div>
 
@@ -739,19 +739,19 @@ export default function DnhDdLocationClient({ faqs }: Props) {
                       Probate Is Strictly Optional Outside Greater Mumbai
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Under Section 213 read with Section 57(a) and 57(b) of the Indian Succession Act, 1925, obtaining probate is mandatory only for Wills made by Hindus, Buddhists, Sikhs, or Jains within the historical Ordinary Original Civil Jurisdiction of the Bombay High Court (the island city and suburban territory of Greater Mumbai).
+                      Under Section 213 read with Section 57(a) and 57(b) of the Indian Succession Act, 1925, getting probate is needed only for Wills made by Hindus, Buddhists, Sikhs, or Jains within the historical Ordinary Original Civil Area of the Bombay High Court (the island city and suburban territory of Greater Mumbai).
                     </p>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Because Dadra and Nagar Haveli, Daman, and Diu lie completely outside the presidency city of Mumbai, <strong>probate is non-compulsory</strong>. The Bombay High Court has consistently affirmed that legal heirs can establish rights over immovable assets, factories, and bank accounts in the UT without filing an expensive and lengthy probate petition.
+                      Because Dadra and Nagar Haveli, Daman, and Diu lie completely outside the presidency city of Mumbai, <strong>probate is non-needed</strong>. The Bombay High Court has consistently affirmed that legal heirs can set up rights over immovable assets, factories, and bank accounts in the UT without filing an expensive and lengthy probate petition.
                     </p>
                   </div>
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4 pt-4 border-t border-slate-100">
                   <div className="p-4 rounded-2xl bg-slate-50 border border-slate-100 space-y-1.5">
-                    <span className="text-[11px] font-bold uppercase tracking-wider text-[#C65378]">Direct Land Mutation</span>
+                    <span className="text-[11px] font-bold uppercase tracking-wider text-[#C65378]">Direct Land Name Change</span>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Mamlatdar and Talathi offices mutate agricultural land records directly based on the registered Will and death certificate.
+                      Mamlatdar and Talathi offices mutate farm land records directly based on the registered Will and death paper.
                     </p>
                   </div>
                   <div className="p-4 rounded-2xl bg-slate-50 border border-slate-100 space-y-1.5">
@@ -800,7 +800,7 @@ export default function DnhDdLocationClient({ faqs }: Props) {
                   4. SRO Directory: Silvassa, Daman &amp; Diu Registry Hubs
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Locate your designated Sub-Registrar Office in Dadra and Nagar Haveli, Daman, or Diu. Filter by region to review official office addresses, geographic jurisdictions, and appointment protocols:
+                  Locate your designated SRO office in Dadra and Nagar Haveli, Daman, or Diu. Filter by region to review official office addresses, geographic areas, and appointment protocols:
                 </p>
               </div>
 
@@ -880,14 +880,14 @@ export default function DnhDdLocationClient({ faqs }: Props) {
 
                 <div className="pt-4 border-t border-slate-100 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
                   <p className="text-xs text-slate-500">
-                    Need advocate accompaniment or doorstep biometric execution at this registry?
+                    Need lawyer accompaniment or doorstep biometric signing at this registry?
                   </p>
                   <a
                     href="/start"
                     onClick={handleStartDraft}
                     className="inline-flex items-center gap-1.5 text-xs font-bold text-[#C65378] hover:text-[#a13c5d]"
                   >
-                    <span>Request Advocate Assistance for {activeHubData.name}</span>
+                    <span>Request Lawyer Help for {activeHubData.name}</span>
                     <ArrowRight className="w-3.5 h-3.5" />
                   </a>
                 </div>
@@ -906,7 +906,7 @@ export default function DnhDdLocationClient({ faqs }: Props) {
                   5. Regional Cities: Succession Across DNH and Daman &amp; Diu
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Estate assets in Dadra and Nagar Haveli and Daman and Diu span high-capacity manufacturing plants and corporate headquarters in Silvassa, Portuguese-era coastal estates and beachfront hotels in Daman, heritage fishing and tourism assets in Diu, and agricultural holdings across rural belts. Our advocates deliver customized legal drafting and registry accompaniment across every key hub:
+                  Estate assets in Dadra and Nagar Haveli and Daman and Diu span high-capacity manufacturing plants and corporate headquarters in Silvassa, Portuguese-era coastal estates and beachfront hotels in Daman, heritage fishing and tourism assets in Diu, and farm holdings across rural belts. Our lawyers deliver customized legal drafting and registry accompaniment across every key hub:
                 </p>
               </div>
 
@@ -937,7 +937,7 @@ export default function DnhDdLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Specialized <strong>Will drafting services in Silvassa &amp; Amli</strong> for factory founders, packaging units, and industrial promoters. Codifies transfer of Administration leasehold plots, DIC licenses, commercial bank guarantees, and private company shares to avoid inter-generational corporate deadlocks.
+                      Specialized <strong>Will drafting services in Silvassa &amp; Amli</strong> for factory founders, packaging units, and industrial promoters. Codifies transfer of Administration leasehold plots, DIC licenses, shop bank guarantees, and private company shares to avoid inter-generational corporate deadlocks.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -946,7 +946,7 @@ export default function DnhDdLocationClient({ faqs }: Props) {
                         <span>SRO Hub: District Collectorate, Silvassa</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Fast-track appointment scheduling, physical advocate attendance, and Section 31 home visits for business founders.
+                        Fast-track appointment scheduling, physical lawyer attendance, and Section 31 home visits for business founders.
                       </p>
                     </div>
                   </div>
@@ -991,7 +991,7 @@ export default function DnhDdLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Customized <strong>Will drafting services in Daman</strong> for ancestral Portuguese villas, beachfront hotels, commercial shops, and residential apartments. Formulates bequests harmonizing Portuguese Civil Code property traditions with the Indian Succession Act 1925 to resolve community estate entitlements.
+                      Customized <strong>Will drafting services in Daman</strong> for family Portuguese villas, beachfront hotels, shop shops, and home apartments. Formulates bequests harmonizing Portuguese Civil Code property traditions with the Indian Succession Act 1925 to resolve community estate entitlements.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1000,13 +1000,13 @@ export default function DnhDdLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Civil Registrar Complex, Dholar</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Book III registration, NRI power of attorney alignment, and municipal property tax mutation assistance.
+                        Book III registration, NRI power of attorney alignment, and municipal property tax name change help.
                       </p>
                     </div>
                   </div>
 
                   <div className="pt-4 mt-4 border-t border-slate-100 flex items-center justify-between">
-                    <span className="text-xs font-bold text-slate-500">Commercial &amp; Coastal Heritage</span>
+                    <span className="text-xs font-bold text-slate-500">Shop &amp; Coastal Heritage</span>
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
@@ -1045,7 +1045,7 @@ export default function DnhDdLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Authoritative <strong>Will drafting services in Diu</strong> for historic townhouses, seaside hospitality resorts, and mechanized fishing fleet assets. Protects ancestral family bequests across generations and safeguards NRI properties held by families residing in the UK, Portugal, or Africa.
+                      Authoritative <strong>Will drafting services in Diu</strong> for historic townhouses, seaside hospitality resorts, and mechanized fishing fleet assets. Protects family family bequests across generations and safeguards NRI assets held by families residing in the UK, Portugal, or Africa.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1098,7 +1098,7 @@ export default function DnhDdLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Practical <strong>Will drafting services in Dadra &amp; Naroli</strong> for plastic converters, textile spinning mills, and logistics warehouses bordering Gujarat. Details testamentary distribution of partnership capitals, commercial godowns, and GST business accounts with clear executor powers.
+                      Practical <strong>Will drafting services in Dadra &amp; Naroli</strong> for plastic converters, textile spinning mills, and logistics warehouses bordering Gujarat. Details testamentary split of partnership capitals, shop godowns, and GST business accounts with clear executor powers.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1151,7 +1151,7 @@ export default function DnhDdLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Reliable <strong>Will drafting services in Khanvel &amp; Dudhani</strong> for agricultural orchards, eco-tourism resorts, and private farmhouses. Ensures strict compliance with Section 8 of the DNH Land Reforms Regulation 1971 regarding tribal tenancy protections and revenue record mutation.
+                      Reliable <strong>Will drafting services in Khanvel &amp; Dudhani</strong> for farm orchards, eco-tourism resorts, and private farmhouses. Ensures strict compliance with Section 8 of the DNH Land Reforms Regulation 1971 regarding tribal tenancy protections and revenue record name change.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1160,7 +1160,7 @@ export default function DnhDdLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Mamlatdar Office Compound, Khanvel</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Mamlatdar revenue coordination, tribal tenancy compliance review, and village record mutation.
+                        Mamlatdar revenue coordination, tribal tenancy compliance review, and village record name change.
                       </p>
                     </div>
                   </div>
@@ -1213,7 +1213,7 @@ export default function DnhDdLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Civil Registrar Complex, Moti Daman</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Corporate asset scheduling, industrial lease transfer documentation, and Sub-Registrar execution.
+                        Corporate asset scheduling, industrial lease transfer papers, and Sub-Registrar signing.
                       </p>
                     </div>
                   </div>
@@ -1258,13 +1258,13 @@ export default function DnhDdLocationClient({ faqs }: Props) {
                   </div>
                   <div className="space-y-2 flex-1">
                     <h3 className="font-extrabold text-lg text-slate-900">
-                      Compile Asset Inventory &amp; Beneficiaries
+                      Compile Asset Inventory &amp; Heirs
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      List all your assets: Silvassa manufacturing plants, Daman coastal residences, Diu townhouses, agricultural farmlands, demat shares, and bank deposits. Assign specific shares to beneficiaries and appoint a trusted executor to oversee administration.
+                      List all your assets: Silvassa manufacturing plants, Daman coastal residences, Diu townhouses, farm farmlands, demat shares, and bank deposits. Assign specific shares to heirs and appoint a trusted executor to oversee management.
                     </p>
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 text-xs text-slate-600">
-                      <strong>Pro-Tip:</strong> Clearly distinguish between self-acquired property and inherited ancestral land, noting any Portuguese Civil Code community share where relevant.
+                      <strong>Pro-Tip:</strong> Clearly distinguish between self-acquired property and inherited family land, noting any Portuguese Civil Code community share where relevant.
                     </div>
                   </div>
                 </div>
@@ -1276,13 +1276,13 @@ export default function DnhDdLocationClient({ faqs }: Props) {
                   </div>
                   <div className="space-y-2 flex-1">
                     <h3 className="font-extrabold text-lg text-slate-900">
-                      Advocate Drafting &amp; Custom Legal Clauses
+                      Lawyer Drafting &amp; Custom Legal Clauses
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                       Our senior legal team customizes your Will with explicit revocation clauses for prior instruments, executor powers, debt liquidation mandates, and guardian designations for minor children.
                     </p>
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 text-xs text-slate-600">
-                      <strong>Pro-Tip:</strong> Include alternate beneficiaries in case of simultaneous demise to eliminate the risk of partial intestacy.
+                      <strong>Pro-Tip:</strong> Include alternate heirs in case of simultaneous demise to eliminate the risk of partial intestacy.
                     </div>
                   </div>
                 </div>
@@ -1300,7 +1300,7 @@ export default function DnhDdLocationClient({ faqs }: Props) {
                       Print the Will on high-quality A4 paper. Under Section 63 of the Indian Succession Act, sign every page before two adult witnesses who hold zero beneficial interest in the estate.
                     </p>
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 text-xs text-slate-600">
-                      <strong>Pro-Tip:</strong> Avoid using beneficiaries&apos; spouses or relatives as witnesses, as Section 67 ISA can invalidate bequests made to attesting parties.
+                      <strong>Pro-Tip:</strong> Avoid using heirs&apos; spouses or relatives as witnesses, as Section 67 ISA can invalidate bequests made to attesting parties.
                     </div>
                   </div>
                 </div>
@@ -1315,7 +1315,7 @@ export default function DnhDdLocationClient({ faqs }: Props) {
                       Sub-Registrar Slot Scheduling &amp; Fee Remittance
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Schedule your registration appearance at the Sub-Registrar Office in Silvassa, Daman, or Diu. Remit nominal government registration fees and scanning charges.
+                      Schedule your registration appearance at the SRO office in Silvassa, Daman, or Diu. Remit nominal government registration fees and scanning charges.
                     </p>
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 text-xs text-slate-600">
                       <strong>Pro-Tip:</strong> Wills are exempt from ad valorem stamp duty across the UT. Only flat registration and scanning fees apply.
@@ -1336,7 +1336,7 @@ export default function DnhDdLocationClient({ faqs }: Props) {
                       Attend the SRO with your two witnesses. The Sub-Registrar verifies personal identity, captures digital photographs and electronic thumbprints, and seals the document in Book III government custody.
                     </p>
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 text-xs text-slate-600">
-                      <strong>Pro-Tip:</strong> The registered Will is returned with an official endorsement seal, establishing undeniable evidentiary weight.
+                      <strong>Pro-Tip:</strong> The registered Will is returned with an official endorsement seal, establishing undeniable proof weight.
                     </div>
                   </div>
                 </div>
@@ -1355,7 +1355,7 @@ export default function DnhDdLocationClient({ faqs }: Props) {
                   7. Doorstep SRO Registration Under Section 31
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  For senior citizens, bedridden individuals, or factory founders unable to travel to the registry counter, Section 31 of the Registration Act, 1908 provides a legal doorstep commission facility:
+                  For senior citizens, bedridden people, or factory founders unable to travel to the registry counter, Section 31 of the Registration Act, 1908 provides a legal doorstep commission facility:
                 </p>
               </div>
 
@@ -1369,7 +1369,7 @@ export default function DnhDdLocationClient({ faqs }: Props) {
                       Medical Fitness Certificate
                     </h3>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      A registered MBBS or MD medical practitioner certifies that the testator is mentally sound, lucid, and possesses full testamentary capacity, but physically unable to travel.
+                      A registered MBBS or MD medical practitioner certifies that the Will maker is mentally sound, lucid, and possesses full sound mind, but physically unable to travel.
                     </p>
                   </div>
 
@@ -1381,7 +1381,7 @@ export default function DnhDdLocationClient({ faqs }: Props) {
                       Formal SRO Petition &amp; Commission
                     </h3>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Our advocates draft and file a formal commission application with the Sub-Registrar Office in Silvassa, Daman, or Diu along with the doctor&apos;s certificate and travel fee.
+                      Our lawyers draft and file a formal commission form with the SRO office in Silvassa, Daman, or Diu along with the doctor&apos;s paper and travel fee.
                     </p>
                   </div>
 
@@ -1390,10 +1390,10 @@ export default function DnhDdLocationClient({ faqs }: Props) {
                       C
                     </div>
                     <h3 className="font-extrabold text-sm sm:text-base text-slate-900">
-                      Home Biometric Verification
+                      Home Biometric Check
                     </h3>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      The Sub-Registrar personally visits the testator&apos;s residence or hospital room with portable biometric equipment, witnesses the execution, and registers the Will into Book III.
+                      The Sub-Registrar personally visits the Will maker&apos;s residence or hospital room with portable biometric equipment, witnesses the signing, and registers the Will into Book III.
                     </p>
                   </div>
                 </div>
@@ -1466,7 +1466,7 @@ export default function DnhDdLocationClient({ faqs }: Props) {
 
                 <div className="pt-4 border-t border-slate-100 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 text-xs text-slate-500">
                   <span>
-                    Our legal advisors cross-examine all document chains prior to registration to ensure 100% first-time acceptance.
+                    Our legal advisors cross-examine all document chains prior to registration to make sure 100% first-time acceptance.
                   </span>
                   <a
                     href="/tools/will-checklist"
@@ -1491,7 +1491,7 @@ export default function DnhDdLocationClient({ faqs }: Props) {
                   9. Asset Categories: Industrial, Heritage &amp; Urban Plots
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  A comprehensive testamentary Will can cover every category of immovable and movable assets owned within Dadra and Nagar Haveli and Daman and Diu or across India:
+                  A full testamentary Will can cover every category of immovable and movable assets owned within Dadra and Nagar Haveli and Daman and Diu or across India:
                 </p>
               </div>
 
@@ -1516,7 +1516,7 @@ export default function DnhDdLocationClient({ faqs }: Props) {
                     Portuguese Heritage Houses
                   </h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Ancestral stone residences in Moti Daman and Diu Fort quarter, coastal townhouses, and family heritage compounds.
+                    Family stone residences in Moti Daman and Diu Fort quarter, coastal townhouses, and family heritage compounds.
                   </p>
                 </div>
 
@@ -1525,10 +1525,10 @@ export default function DnhDdLocationClient({ faqs }: Props) {
                     <Wheat className="w-4 h-4" />
                   </div>
                   <h3 className="font-extrabold text-sm sm:text-base text-slate-900">
-                    Agricultural &amp; Tenancy Lands
+                    Farm &amp; Tenancy Lands
                   </h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Orchards, farmland, and rural parcels in DNH adhering to the Land Reforms Regulation 1971 for lawful mutation.
+                    Orchards, farmland, and rural parcels in DNH adhering to the Land Reforms Regulation 1971 for lawful name change.
                   </p>
                 </div>
 
@@ -1540,7 +1540,7 @@ export default function DnhDdLocationClient({ faqs }: Props) {
                     Coastal Resorts &amp; Hotels
                   </h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Hospitality properties along Devka, Jampore, and Nagoa beaches, restaurant businesses, and commercial leases.
+                    Hospitality assets along Devka, Jampore, and Nagoa beaches, restaurant businesses, and shop leases.
                   </p>
                 </div>
 
@@ -1549,7 +1549,7 @@ export default function DnhDdLocationClient({ faqs }: Props) {
                     <Home className="w-4 h-4" />
                   </div>
                   <h3 className="font-extrabold text-sm sm:text-base text-slate-900">
-                    Residential Flats &amp; Plots
+                    Home Flats &amp; Plots
                   </h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
                     Modern apartments and row houses in Silvassa and Nani Daman registered under SMC and DMC property tax registers.
@@ -1585,7 +1585,7 @@ export default function DnhDdLocationClient({ faqs }: Props) {
                   10. Fees &amp; Stamp Duty: Registration Schedule in UT
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Testamentary instruments enjoy significant statutory fee concessions compared to inter-vivos property transfers like gift deeds or sale deeds:
+                  Testamentary instruments enjoy significant legal fee concessions compared to inter-vivos property transfers like gift deeds or sale deeds:
                 </p>
               </div>
 
@@ -1611,14 +1611,14 @@ export default function DnhDdLocationClient({ faqs }: Props) {
                         <td className="p-4 sm:p-5 font-bold text-emerald-700">
                           Nominal flat fee (₹100 - ₹500 + scanning)
                         </td>
-                        <td className="p-4 sm:p-5">Takes effect only after testator&apos;s death</td>
+                        <td className="p-4 sm:p-5">Takes effect only after Will maker&apos;s death</td>
                       </tr>
                       <tr className="hover:bg-slate-50/50 transition-colors">
                         <td className="p-4 sm:p-5 font-bold text-slate-900">
                           Gift Deed (Family Transfer)
                         </td>
                         <td className="p-4 sm:p-5">Ad-valorem percentage on market value</td>
-                        <td className="p-4 sm:p-5">1% of property valuation</td>
+                        <td className="p-4 sm:p-5">1% of property price check</td>
                         <td className="p-4 sm:p-5">Immediate transfer of ownership</td>
                       </tr>
                       <tr className="hover:bg-slate-50/50 transition-colors">
@@ -1647,7 +1647,7 @@ export default function DnhDdLocationClient({ faqs }: Props) {
                   11. Packages &amp; Pricing: Transparent Legal Support
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Choose the plan that matches your family&apos;s estate planning and registration requirements:
+                  Choose the plan that matches your family&apos;s estate planning and registration rules:
                 </p>
               </div>
 
@@ -1663,7 +1663,7 @@ export default function DnhDdLocationClient({ faqs }: Props) {
                         <span className="text-3xl sm:text-4xl font-extrabold text-slate-900">₹1,990</span>
                         <span className="text-xs text-slate-500 font-semibold">one-time</span>
                       </div>
-                      <p className="text-xs text-slate-500">For residential flats, plots &amp; investments</p>
+                      <p className="text-xs text-slate-500">For home flats, plots &amp; investments</p>
                     </div>
 
                     <ul className="space-y-2.5 text-xs text-slate-600 pt-3 border-t border-slate-100">
@@ -1703,7 +1703,7 @@ export default function DnhDdLocationClient({ faqs }: Props) {
 
                   <div className="space-y-4">
                     <span className="text-[11px] font-bold uppercase tracking-wider text-[#C65378]">
-                      Advocate Consultation &amp; Review
+                      Lawyer Talk &amp; Review
                     </span>
                     <div className="space-y-1">
                       <div className="flex items-baseline gap-1">
@@ -1720,7 +1720,7 @@ export default function DnhDdLocationClient({ faqs }: Props) {
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
-                        <span>1-on-1 consultation with senior succession advocate</span>
+                        <span>1-on-1 talk with senior succession lawyer</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
@@ -1732,7 +1732,7 @@ export default function DnhDdLocationClient({ faqs }: Props) {
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
-                        <span>Doctor mental fitness certificate format</span>
+                        <span>Doctor mental fitness paper format</span>
                       </li>
                     </ul>
                   </div>
@@ -1742,7 +1742,7 @@ export default function DnhDdLocationClient({ faqs }: Props) {
                     onClick={handleStartDraft}
                     className="w-full py-3 rounded-2xl bg-[#C65378] text-white font-bold text-xs sm:text-sm hover:bg-[#a13c5d] transition-colors text-center cursor-pointer shadow-md shadow-[#C65378]/25"
                   >
-                    Select Advocate Review
+                    Select Lawyer Review
                   </a>
                 </div>
 
@@ -1763,7 +1763,7 @@ export default function DnhDdLocationClient({ faqs }: Props) {
                     <ul className="space-y-2.5 text-xs text-slate-600 pt-3 border-t border-slate-100">
                       <li className="flex items-center gap-2">
                         <Check className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
-                        <span>Complete advocate drafting &amp; legal review</span>
+                        <span>Complete lawyer drafting &amp; legal review</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
@@ -1771,7 +1771,7 @@ export default function DnhDdLocationClient({ faqs }: Props) {
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
-                        <span>Physical advocate accompaniment at the registry counter</span>
+                        <span>Physical lawyer accompaniment at the registry counter</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
@@ -1857,10 +1857,10 @@ export default function DnhDdLocationClient({ faqs }: Props) {
                 </div>
                 {/* H2: 53 chars (<= 70) */}
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  13. Statutory Provisions: Governing Succession &amp; Land
+                  13. Legal Rules: Governing Succession &amp; Land
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Formal legal provisions governing testamentary drafting, attestation, registration, and property mutation in Dadra and Nagar Haveli and Daman and Diu:
+                  Formal legal rules governing testamentary drafting, attestation, registration, and property name change in Dadra and Nagar Haveli and Daman and Diu:
                 </p>
               </div>
 
@@ -1870,7 +1870,7 @@ export default function DnhDdLocationClient({ faqs }: Props) {
                     Section 63, Indian Succession Act, 1925
                   </span>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Mandates the formal rules of execution for unprivileged Wills: writing, testator&apos;s signature or mark, and attestation by two or more independent witnesses.
+                    Mandates the formal rules of signing for unprivileged Wills: writing, Will maker&apos;s signature or mark, and attestation by two or more independent witnesses.
                   </p>
                 </div>
 
@@ -1888,7 +1888,7 @@ export default function DnhDdLocationClient({ faqs }: Props) {
                     Portuguese Civil Code, 1867 (Daman &amp; Diu)
                   </span>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Preserves historical civil law provisions regarding communion of matrimonial property (communio bonorum) and reserved legal portions for native lineages.
+                    Preserves historical civil law rules regarding communion of matrimonial property (communio bonorum) and reserved legal portions for native lineages.
                   </p>
                 </div>
 
@@ -1897,7 +1897,7 @@ export default function DnhDdLocationClient({ faqs }: Props) {
                     Dadra &amp; Nagar Haveli Land Reforms Regulation, 1971
                   </span>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Section 8 strictly restricts the alienation or transfer of agricultural occupancy rights held by Scheduled Tribe occupants to non-tribal persons.
+                    Section 8 strictly restricts the alienation or transfer of farm occupancy rights held by Scheduled Tribe occupants to non-tribal persons.
                   </p>
                 </div>
 
@@ -1906,7 +1906,7 @@ export default function DnhDdLocationClient({ faqs }: Props) {
                     Section 213, Indian Succession Act, 1925
                   </span>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Confirms that High Court probate is not compulsory for Wills concerning immovable properties situated outside historical presidency town limits.
+                    Confirms that High Court probate is not needed for Wills concerning land and flats situated outside historical presidency town limits.
                   </p>
                 </div>
 
@@ -1915,7 +1915,7 @@ export default function DnhDdLocationClient({ faqs }: Props) {
                     The Dadra &amp; Nagar Haveli and Daman &amp; Diu Merger Act, 2019
                   </span>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Act 44 of 2019 unified the administrative framework of both territories under a single Union Territory while preserving existing regional land records.
+                    Act 44 of 2019 unified the office framework of both territories under a single Union Territory while preserving existing regional land records.
                   </p>
                 </div>
               </div>

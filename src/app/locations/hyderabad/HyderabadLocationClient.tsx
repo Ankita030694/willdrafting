@@ -130,14 +130,14 @@ const INITIAL_CHECKLIST = [
   },
   {
     id: "item-2",
-    label: "Original Aadhaar Card & PAN of Testator",
-    detail: "Required for biometric identity verification and digital webcam photograph capture at the Sub-Registrar counter.",
+    label: "Original Aadhaar Card & PAN of Will maker",
+    detail: "Required for biometric identity check and digital webcam photograph capture at the Sub-Registrar counter.",
     checked: true,
   },
   {
     id: "item-3",
     label: "Two Independent Adult Witnesses with Original IDs",
-    detail: "Both witnesses must carry their original Aadhaar cards and be individuals who are not beneficiaries under the Will.",
+    detail: "Both witnesses must carry their original Aadhaar cards and be people who are not heirs under the Will.",
     checked: true,
   },
   {
@@ -149,7 +149,7 @@ const INITIAL_CHECKLIST = [
   {
     id: "item-5",
     label: "Property Title Documents & GHMC PTIN / Dharani Passbook",
-    detail: "Registered sale deeds, partition deeds, GHMC property tax receipts, or Dharani passbook survey numbers for exact asset schedule.",
+    detail: "Registered sale deeds, split deeds, GHMC property tax receipts, or Dharani passbook survey numbers for exact asset schedule.",
     checked: false,
   },
   {
@@ -161,7 +161,7 @@ const INITIAL_CHECKLIST = [
   {
     id: "item-7",
     label: "Two Passport-Sized Photographs",
-    detail: "Recent color photographs of the testator and both witnesses for physical record pasting in Book-III registers.",
+    detail: "Recent color photographs of the Will maker and both witnesses for physical record pasting in Book-III registers.",
     checked: false,
   },
 ];
@@ -260,7 +260,7 @@ export default function HyderabadLocationClient({ faqs }: Props) {
 
               <p className="text-base sm:text-lg text-slate-200 leading-relaxed font-normal max-w-2xl">
                 Draft a legally sound Will for your GHMC apartments, HMDA plots, and tech company shares.
-                Get expert advocate drafting, IGRS Telangana appointment support, and doorstep registration for senior citizens across Hyderabad, Secunderabad, and Cyberabad.
+                Get expert lawyer drafting, IGRS Telangana appointment support, and doorstep registration for senior citizens across Hyderabad, Secunderabad, and Cyberabad.
               </p>
 
               <div className="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
@@ -285,7 +285,7 @@ export default function HyderabadLocationClient({ faqs }: Props) {
               <div className="pt-4 grid grid-cols-3 gap-3 border-t border-white/10 text-xs text-slate-300">
                 <div className="flex items-center gap-2">
                   <Check className="w-4 h-4 text-emerald-400 shrink-0" />
-                  <span>High Court Advocate Vetted</span>
+                  <span>High Court Lawyer Vetted</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <Check className="w-4 h-4 text-emerald-400 shrink-0" />
@@ -509,10 +509,10 @@ export default function HyderabadLocationClient({ faqs }: Props) {
                   <div className="p-4 rounded-2xl bg-slate-50/70 border border-slate-100 space-y-1.5">
                     <div className="flex items-center gap-2 font-bold text-sm text-slate-900">
                       <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
-                      <span>Probate Not Compulsory</span>
+                      <span>Probate Not Needed</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Hyderabad is a non-presidency town. Unlike Mumbai, Kolkata, or Chennai, court probate is not compulsory in Telangana for Hindu, Sikh, Jain, or Buddhist Wills under Section 213 of the Indian Succession Act.
+                      Hyderabad is a non-presidency town. Unlike Mumbai, Kolkata, or Chennai, court probate is not needed in Telangana for Hindu, Sikh, Jain, or Buddhist Wills under Section 213 of the Indian Succession Act.
                     </p>
                   </div>
 
@@ -522,17 +522,17 @@ export default function HyderabadLocationClient({ faqs }: Props) {
                       <span>Zero Stamp Duty</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Wills incur ₹0 stamp duty across Telangana. At the Sub-Registrar Office, testators pay only a flat nominal registration fee and minimal computer processing charges.
+                      Wills incur ₹0 stamp duty across Telangana. At the SRO office, testators pay only a flat nominal registration fee and minimal computer processing charges.
                     </p>
                   </div>
 
                   <div className="p-4 rounded-2xl bg-slate-50/70 border border-slate-100 space-y-1.5">
                     <div className="flex items-center gap-2 font-bold text-sm text-slate-900">
                       <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
-                      <span>GHMC &amp; Dharani Mutation</span>
+                      <span>GHMC &amp; Dharani Name Change</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      A registered Will enables swift ownership mutation before the Greater Hyderabad Municipal Corporation (GHMC), HMDA, and on the Dharani portal for peri-urban agricultural lands.
+                      A registered Will enables swift ownership name change before the Greater Hyderabad Municipal Corporation (GHMC), HMDA, and on the Dharani portal for peri-urban farm lands.
                     </p>
                   </div>
                 </div>
@@ -550,13 +550,13 @@ export default function HyderabadLocationClient({ faqs }: Props) {
                   1. Will Drafting &amp; Legal Framework in Hyderabad
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Estate distribution in Hyderabad is governed by the <strong>Indian Succession Act, 1925</strong>, the <strong>Registration Act, 1908</strong>, and the rules of the Telangana Registration and Stamps Department (IGRS Telangana).
+                  Estate split in Hyderabad is governed by the <strong>Indian Succession Act, 1925</strong>, the <strong>Registration Act, 1908</strong>, and the rules of the Telangana Registration and Stamps Department (IGRS Telangana).
                   Any adult of sound mind can write a Will to dispose of self-acquired real estate, bank deposits, mutual funds, company shares, and family heirlooms.
                 </p>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Hyderabad features unique estate dynamics.
-                  A family may own an ancestral property in Secunderabad, a commercial showroom in Banjara Hills, an apartment in Kondapur, or tech equity options in HITEC City.
-                  Telugu family traditions also involve clarifying <em>Pasupu-Kumkuma</em> (stridhana gifts given to daughters during marriage) against the residue estate to prevent subsequent partition suits.
+                  A family may own an family property in Secunderabad, a shop showroom in Banjara Hills, an apartment in Kondapur, or tech equity options in HITEC City.
+                  Telugu family traditions also involve clarifying <em>Pasupu-Kumkuma</em> (stridhana gifts given to daughters during marriage) against the residue estate to prevent subsequent split suits.
                 </p>
               </div>
 
@@ -567,7 +567,7 @@ export default function HyderabadLocationClient({ faqs }: Props) {
                   </span>
                   <h3 className="font-bold text-sm text-slate-900">Legal Age</h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    The testator must be at least 18 years old and possess sound disposing mind and memory (Section 59).
+                    The Will maker must be at least 18 years old and possess sound disposing mind and memory (Section 59).
                   </p>
                 </div>
 
@@ -587,7 +587,7 @@ export default function HyderabadLocationClient({ faqs }: Props) {
                   </span>
                   <h3 className="font-bold text-sm text-slate-900">Two Witnesses</h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Signed before two independent adult witnesses who attest seeing the testator sign (Section 63(c)).
+                    Signed before two independent adult witnesses who attest seeing the Will maker sign (Section 63(c)).
                   </p>
                 </div>
 
@@ -597,7 +597,7 @@ export default function HyderabadLocationClient({ faqs }: Props) {
                   </span>
                   <h3 className="font-bold text-sm text-slate-900">Revocable</h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    The testator can modify, amend via codicil, or completely revoke the Will at any point during their lifetime.
+                    The Will maker can modify, amend via codicil, or completely revoke the Will at any point during their lifetime.
                   </p>
                 </div>
               </div>
@@ -611,15 +611,15 @@ export default function HyderabadLocationClient({ faqs }: Props) {
                   <span>REGISTRATION ACT SECTION 18(E)</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  2. Is Will Registration Mandatory in Telangana?
+                  2. Is Will Registration Needed in Telangana?
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Under <strong>Section 18(e) of the Registration Act, 1908</strong>, registering a Will is optional across Hyderabad and the State of Telangana.
-                  An unregistered Will executed on plain paper and signed before two witnesses is legally enforceable.
+                  An unregistered Will signed on plain paper and signed before two witnesses is legally enforceable.
                 </p>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  However, registration before the Sub-Registrar Office via IGRS Telangana provides immense practical and evidentiary advantages.
-                  It permanently records the testator&apos;s physical presence, biometric thumb scan, and mental soundness in government Book-III archives, making fraudulent challenges nearly impossible to sustain in court.
+                  However, registration before the SRO office via IGRS Telangana provides immense practical and proof advantages.
+                  It permanently records the Will maker&apos;s physical presence, biometric thumb scan, and mental soundness in government Book-III archives, making fraudulent fights nearly impossible to sustain in court.
                 </p>
               </div>
 
@@ -636,7 +636,7 @@ export default function HyderabadLocationClient({ faqs }: Props) {
                   <tbody className="divide-y divide-slate-100 text-slate-700">
                     <tr>
                       <td className="p-3.5 sm:p-4 font-semibold text-slate-900">Legal Validity</td>
-                      <td className="p-3.5 sm:p-4 text-emerald-700 font-medium">Valid with strong statutory presumption</td>
+                      <td className="p-3.5 sm:p-4 text-emerald-700 font-medium">Valid with strong legal presumption</td>
                       <td className="p-3.5 sm:p-4 text-slate-600">Valid if signature &amp; attestation are proven</td>
                     </tr>
                     <tr>
@@ -645,13 +645,13 @@ export default function HyderabadLocationClient({ faqs }: Props) {
                       <td className="p-3.5 sm:p-4 text-rose-600 font-medium">None; depends on witness testimony later</td>
                     </tr>
                     <tr>
-                      <td className="p-3.5 sm:p-4 font-semibold text-slate-900">GHMC &amp; Dharani Mutation</td>
-                      <td className="p-3.5 sm:p-4 text-emerald-700 font-medium">Smooth municipal and revenue mutation</td>
-                      <td className="p-3.5 sm:p-4 text-amber-700 font-medium">Often delayed; authorities seek indemnity bonds</td>
+                      <td className="p-3.5 sm:p-4 font-semibold text-slate-900">GHMC &amp; Dharani Name Change</td>
+                      <td className="p-3.5 sm:p-4 text-emerald-700 font-medium">Smooth municipal and revenue name change</td>
+                      <td className="p-3.5 sm:p-4 text-amber-700 font-medium">Often delayed; offices seek indemnity bonds</td>
                     </tr>
                     <tr>
                       <td className="p-3.5 sm:p-4 font-semibold text-slate-900">Court Challenge Defense</td>
-                      <td className="p-3.5 sm:p-4 text-emerald-700 font-medium">Very high evidentiary weight in civil courts</td>
+                      <td className="p-3.5 sm:p-4 text-emerald-700 font-medium">Very high proof weight in civil courts</td>
                       <td className="p-3.5 sm:p-4 text-rose-600 font-medium">Vulnerable to claims of forgery or coercion</td>
                     </tr>
                     <tr>
@@ -675,13 +675,13 @@ export default function HyderabadLocationClient({ faqs }: Props) {
                   3. Hyderabad Probate Rules: Non-Presidency Town Law
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  One of the most frequent misconceptions among Hyderabad property owners is that court probate is compulsory.
-                  Under <strong>Section 213(2) read with Section 57(a) and (b) of the Indian Succession Act, 1925</strong>, obtaining probate from a civil court is mandatory <em>only</em> if the Will is executed within the ordinary original civil jurisdiction of Mumbai, Kolkata, or Chennai, or concerns immovable property situated in those three historic presidency cities.
+                  One of the most frequent misconceptions among Hyderabad property owners is that court probate is needed.
+                  Under <strong>Section 213(2) read with Section 57(a) and (b) of the Indian Succession Act, 1925</strong>, getting probate from a civil court is needed <em>only</em> if the Will is signed within the ordinary original civil area of Mumbai, Kolkata, or Chennai, or concerns land and flats situated in those three historic presidency cities.
                 </p>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Hyderabad and the State of Telangana are non-presidency jurisdictions.
-                  The <strong>Hon&apos;ble High Court for the State of Telangana</strong> has settled in extensive jurisprudence that Hindu, Sikh, Jain, and Buddhist Wills executed in Hyderabad do not require mandatory probate.
-                  Beneficiaries can establish title directly before GHMC, banks, mutual fund registrars, and registrar offices without filing for court probate.
+                  Hyderabad and the State of Telangana are non-presidency areas.
+                  The <strong>Hon&apos;ble High Court for the State of Telangana</strong> has settled in extensive jurisprudence that Hindu, Sikh, Jain, and Buddhist Wills signed in Hyderabad do not require needed probate.
+                  Heirs can set up title directly before GHMC, banks, mutual fund registrars, and registrar offices without filing for court probate.
                 </p>
               </div>
 
@@ -691,11 +691,11 @@ export default function HyderabadLocationClient({ faqs }: Props) {
                   <span>When is Probate Recommended or Sought in Hyderabad?</span>
                 </div>
                 <p className="text-xs sm:text-sm text-amber-800 leading-relaxed">
-                  While probate is not statutory mandatory in Hyderabad, an executor may voluntarily apply for probate before the City Civil Court, Hyderabad or the High Court if:
+                  While probate is not legal needed in Hyderabad, an executor may voluntarily apply for probate before the City Civil Court, Hyderabad or the High Court if:
                 </p>
                 <ul className="text-xs sm:text-sm text-amber-800 space-y-1.5 list-disc list-inside">
-                  <li>Disgruntled legal heirs threaten intense litigation or claim the testator lacked mental capacity.</li>
-                  <li>The testator bequeathed high-value commercial properties in Jubilee Hills or Banjara Hills with complex corporate structures.</li>
+                  <li>Disgruntled legal heirs threaten intense court fights or claim the Will maker lacked mental capacity.</li>
+                  <li>The Will maker bequeathed high-value shop assets in Jubilee Hills or Banjara Hills with complex corporate structures.</li>
                   <li>Certain foreign financial institutions or overseas property registries request a court-certified grant of probate.</li>
                 </ul>
               </div>
@@ -713,7 +713,7 @@ export default function HyderabadLocationClient({ faqs }: Props) {
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   The Hyderabad metropolitan region spans three key revenue registration districts: <strong>Hyderabad District</strong>, <strong>Ranga Reddy District</strong>, and <strong>Medchal-Malkajgiri District</strong>.
-                  Find your local Sub-Registrar Office, jurisdiction localities, and official working hours below:
+                  Find your local SRO office, area localities, and official working hours below:
                 </p>
               </div>
 
@@ -773,8 +773,8 @@ export default function HyderabadLocationClient({ faqs }: Props) {
                   5. Area-Wise Will Drafting Services Across Hyderabad Regions
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Looking for legally verified <strong>Will drafting services in Banjara Hills, HITEC City, Gachibowli, or Secunderabad</strong>? Properties across Greater Hyderabad range from luxury gated community villas in Kokapet and Tellapur to high-rise IT apartments in HITEC City, commercial prime plots in Banjara Hills, and cantonment residences in Secunderabad.
-                  Our senior advocates provide comprehensive legal drafting, IGRS slot booking, and Sub-Registrar accompaniment across all key micro-markets:
+                  Looking for legally verified <strong>Will drafting services in Banjara Hills, HITEC City, Gachibowli, or Secunderabad</strong>? Assets across Greater Hyderabad range from luxury gated community villas in Kokapet and Tellapur to high-rise IT apartments in HITEC City, shop prime plots in Banjara Hills, and cantonment residences in Secunderabad.
+                  Our senior lawyers provide full legal drafting, IGRS slot booking, and Sub-Registrar accompaniment across all key micro-markets:
                 </p>
               </div>
 
@@ -805,7 +805,7 @@ export default function HyderabadLocationClient({ faqs }: Props) {
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                       Looking for professional <strong>Will drafting services in Banjara Hills &amp; Jubilee Hills</strong>? Banjara Hills and Jubilee Hills house prominent industrial families, film personalities, and business leaders.
-                      Our advocates draft sophisticated testamentary structures covering luxury independent villas, commercial rental properties, family business shareholding, and private trust bequests.
+                      Our lawyers draft sophisticated testamentary structures covering luxury independent villas, shop rental assets, family business shareholding, and private trust bequests.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -814,7 +814,7 @@ export default function HyderabadLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Red Hills Complex, Nampally (SRO Banjara Hills)</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        IGRS portal slot booking, advocate representation, and Section 31 doorstep execution for elderly testators across Jubilee Hills and Banjara Hills.
+                        IGRS portal slot booking, lawyer representation, and Section 31 doorstep signing for elderly testators across Jubilee Hills and Banjara Hills.
                       </p>
                     </div>
                   </div>
@@ -859,7 +859,7 @@ export default function HyderabadLocationClient({ faqs }: Props) {
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                       Get specialized <strong>Will drafting services in HITEC City &amp; Gachibowli</strong>. Cyberabad represents software professionals, tech entrepreneurs, and corporate executives.
-                      Wills for IT professionals incorporate comprehensive global asset clauses: US stocks, vested RSUs (Microsoft, Google, Oracle), Indian mutual funds, Demat accounts, and luxury gated community flats.
+                      Wills for IT professionals incorporate full global asset clauses: US stocks, vested RSUs (Microsoft, Google, Oracle), Indian mutual funds, Demat accounts, and luxury gated community flats.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -868,7 +868,7 @@ export default function HyderabadLocationClient({ faqs }: Props) {
                         <span>SRO Hub: MIG Complex, Chandanagar (SRO Serilingampally)</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Fast-track appointment scheduling, dual-witness arrangement, and digital nominee-beneficiary synchronization.
+                        Fast-track appointment scheduling, dual-witness arrangement, and digital nominee-heir synchronization.
                       </p>
                     </div>
                   </div>
@@ -912,8 +912,8 @@ export default function HyderabadLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Opt for premier <strong>Will drafting services in Kondapur, Tellapur &amp; Kokapet</strong>. West Hyderabad&apos;s luxury boom encompasses high-rise residential towers, duplex villas, and premium commercial projects.
-                      Our legal specialists structure unambiguous testamentary bequests that specify builder-buyer agreements, undivided share of land (UDS), and society maintenance transfers.
+                      Opt for premier <strong>Will drafting services in Kondapur, Tellapur &amp; Kokapet</strong>. West Hyderabad&apos;s luxury boom encompasses high-rise home towers, duplex villas, and premium shop projects.
+                      Our legal experts structure clear testamentary bequests that specify builder-buyer agreements, undivided share of land (UDS), and society maintenance transfers.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -922,7 +922,7 @@ export default function HyderabadLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Pillar No 143, Attapur &amp; Serilingampally</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Specialized drafting for high-value gated community villas, NRI ownership clauses, and GHMC PTIN mutation guidance.
+                        Specialized drafting for high-value gated community villas, NRI ownership clauses, and GHMC PTIN name change guidance.
                       </p>
                     </div>
                   </div>
@@ -966,8 +966,8 @@ export default function HyderabadLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Secure expert <strong>Will drafting services in Secunderabad &amp; Marredpally</strong>. Secunderabad features established independent houses, heritage bungalows, and armed forces cantonment properties.
-                      Our advocates assist senior citizens and defence veterans with Section 31 home registration visits and precise partition declarations for ancestral family estates.
+                      Secure expert <strong>Will drafting services in Secunderabad &amp; Marredpally</strong>. Secunderabad features established independent houses, heritage bungalows, and armed forces cantonment assets.
+                      Our lawyers assist senior citizens and defence veterans with Section 31 home registration visits and precise split declarations for family family estates.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -976,13 +976,13 @@ export default function HyderabadLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Clock Tower Complex, SD Road &amp; Marredpally</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Senior advocate consultation, doorstep execution for retired veterans, and Secunderabad Cantonment Board title records assistance.
+                        Senior lawyer talk, doorstep signing for retired veterans, and Secunderabad Cantonment Board title records help.
                       </p>
                     </div>
                   </div>
 
                   <div className="pt-4 mt-4 border-t border-slate-100 flex items-center justify-between">
-                    <span className="text-xs font-bold text-slate-500">Cantonment &amp; Ancestral Estates</span>
+                    <span className="text-xs font-bold text-slate-500">Cantonment &amp; Family Estates</span>
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
@@ -1001,7 +1001,7 @@ export default function HyderabadLocationClient({ faqs }: Props) {
                     <div className="flex items-center justify-between gap-2">
                       <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-rose-50 text-[#C65378] border border-rose-100">
                         <MapPin className="w-3.5 h-3.5" />
-                        North-West Residential Core
+                        North-West Home Core
                       </span>
                       <span className="text-[11px] font-semibold text-slate-500 bg-slate-100 px-2.5 py-1 rounded-lg">
                         SRO Kukatpally
@@ -1020,8 +1020,8 @@ export default function HyderabadLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Comprehensive <strong>Will drafting services in Kukatpally &amp; Miyapur</strong>. KPHB and surrounding suburbs represent massive residential clusters of double-income families and Telugu business owners.
-                      We ensure smooth testamentary planning for residential apartments, independent builder floors, commercial retail units, and bank locker contents.
+                      Full <strong>Will drafting services in Kukatpally &amp; Miyapur</strong>. KPHB and surrounding suburbs represent massive home clusters of double-income families and Telugu business owners.
+                      We make sure smooth testamentary planning for home apartments, independent builder floors, shop retail units, and bank locker contents.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1030,7 +1030,7 @@ export default function HyderabadLocationClient({ faqs }: Props) {
                         <span>SRO Hub: KPHB Colony 4th Phase (SRO Kukatpally)</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Local advocate drafting, IGRS appointment token generation, and GHMC circle office mutation coordination.
+                        Local lawyer drafting, IGRS appointment token generation, and GHMC circle office name change coordination.
                       </p>
                     </div>
                   </div>
@@ -1074,8 +1074,8 @@ export default function HyderabadLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Protect your family assets with <strong>Will drafting services in Dilsukhnagar &amp; LB Nagar</strong>. East Hyderabad features longstanding family residences, commercial markets, and plotting ventures.
-                      Drafting a registered Will clarifies coparcenary rights among multiple siblings, demarcates self-acquired assets, and prevents property disputes across generations.
+                      Protect your family assets with <strong>Will drafting services in Dilsukhnagar &amp; LB Nagar</strong>. East Hyderabad features longstanding family residences, shop markets, and plotting ventures.
+                      Drafting a registered Will clarifies joint family rights among multiple siblings, demarcates self-acquired assets, and prevents property fights across generations.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1084,7 +1084,7 @@ export default function HyderabadLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Chikkadpally &amp; Uppal Sub-Registrar Offices</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Complete support for Telugu family wills, partition deed references, and GHMC PTIN title transfers.
+                        Complete support for Telugu family wills, split deed references, and GHMC PTIN title transfers.
                       </p>
                     </div>
                   </div>
@@ -1129,11 +1129,11 @@ export default function HyderabadLocationClient({ faqs }: Props) {
                   </div>
                   <div className="space-y-1.5 flex-1">
                     <h3 className="font-extrabold text-base text-slate-900">
-                      Asset Inventory &amp; Beneficiary Mapping
+                      Asset Inventory &amp; Heir Mapping
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Compile an exhaustive schedule of all immovable and movable assets: GHMC apartments, HMDA plots, Dharani agricultural lands, bank accounts, mutual funds, company equity, and locker contents.
-                      Identify primary beneficiaries, alternate beneficiaries, and appoint an independent Executor.
+                      Compile an exhaustive schedule of all immovable and movable assets: GHMC apartments, HMDA plots, Dharani farm lands, bank accounts, mutual funds, company equity, and locker contents.
+                      Identify primary heirs, alternate heirs, and appoint an independent Executor.
                     </p>
                   </div>
                 </div>
@@ -1145,11 +1145,11 @@ export default function HyderabadLocationClient({ faqs }: Props) {
                   </div>
                   <div className="space-y-1.5 flex-1">
                     <h3 className="font-extrabold text-base text-slate-900">
-                      Advocate Drafting &amp; Custom Legal Clauses
+                      Lawyer Drafting &amp; Custom Legal Clauses
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Draft the Will incorporating mandatory statutory clauses: revocation of prior wills, sound mental capacity declaration, survivorship provisions, and specific bequests.
-                      For Telugu families, include clarifications regarding earlier partition deeds (<em>Vibhaga Pathram</em>) or gifts given during marriage (<em>Pasupu-Kumkuma</em>).
+                      Draft the Will incorporating needed legal clauses: revocation of prior wills, sound mental capacity declaration, survivorship rules, and specific bequests.
+                      For Telugu families, include clarifications regarding earlier split deeds (<em>Vibhaga Pathram</em>) or gifts given during marriage (<em>Pasupu-Kumkuma</em>).
                     </p>
                   </div>
                 </div>
@@ -1161,10 +1161,10 @@ export default function HyderabadLocationClient({ faqs }: Props) {
                   </div>
                   <div className="space-y-1.5 flex-1">
                     <h3 className="font-extrabold text-base text-slate-900">
-                      Execution Before Two Independent Witnesses
+                      Signing Before Two Independent Witnesses
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Print the final Will on plain white A4 paper. Under Section 63(c) of the Indian Succession Act, the testator signs or affixes thumb impressions at the foot of each page in the simultaneous presence of two independent witnesses who are not beneficiaries.
+                      Print the final Will on plain white A4 paper. Under Section 63(c) of the Indian Succession Act, the Will maker signs or affixes thumb impressions at the foot of each page in the simultaneous presence of two independent witnesses who are not heirs.
                     </p>
                   </div>
                 </div>
@@ -1180,7 +1180,7 @@ export default function HyderabadLocationClient({ faqs }: Props) {
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                       Book an official registration appointment on <strong>registration.telangana.gov.in</strong>.
-                      Select your designated Sub-Registrar Office, input testator and witness KYC details, pay the nominal government fee online, and download the official appointment token.
+                      Select your designated SRO office, input Will maker and witness KYC details, pay the nominal government fee online, and download the official appointment token.
                     </p>
                   </div>
                 </div>
@@ -1192,10 +1192,10 @@ export default function HyderabadLocationClient({ faqs }: Props) {
                   </div>
                   <div className="space-y-1.5 flex-1">
                     <h3 className="font-extrabold text-base text-slate-900">
-                      SRO Biometric Verification &amp; Book-III Registration
+                      SRO Biometric Check &amp; Book-III Registration
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Visit the Sub-Registrar Office with your two witnesses and original IDs. The Sub-Registrar captures biometric thumb scans and digital webcam photos, records the Will in Book-III, and returns the registered document with an official registration stamp and endorsement.
+                      Visit the SRO office with your two witnesses and original IDs. The Sub-Registrar captures biometric thumb scans and digital webcam photos, records the Will in Book-III, and returns the registered document with an official registration stamp and endorsement.
                     </p>
                   </div>
                 </div>
@@ -1213,8 +1213,8 @@ export default function HyderabadLocationClient({ faqs }: Props) {
                   7. Section 31 Doorstep Registration for Seniors
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Visiting a crowded government Sub-Registrar Office can be physically exhausting for senior citizens, bedridden elders, or medically infirm testators.
-                  <strong>Section 31 of the Registration Act, 1908</strong> allows the Sub-Registrar to visit the testator&apos;s residence or hospital room to complete formal Will registration:
+                  Visiting a crowded government SRO office can be physically exhausting for senior citizens, bedridden elders, or medically infirm testators.
+                  <strong>Section 31 of the Registration Act, 1908</strong> allows the Sub-Registrar to visit the Will maker&apos;s residence or hospital room to complete formal Will registration:
                 </p>
               </div>
 
@@ -1225,7 +1225,7 @@ export default function HyderabadLocationClient({ faqs }: Props) {
                   </div>
                   <h3 className="font-bold text-sm text-slate-900">Doctor Fitness Certificate</h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Obtain a medical certificate from a registered MBBS practitioner certifying that the testator is of sound mind, memory, and capable of understanding the disposition.
+                    Obtain a medical paper from a registered MBBS practitioner certifying that the Will maker is of sound mind, memory, and capable of understanding the disposition.
                   </p>
                 </div>
 
@@ -1233,9 +1233,9 @@ export default function HyderabadLocationClient({ faqs }: Props) {
                   <div className="w-8 h-8 rounded-xl bg-rose-50 text-[#C65378] flex items-center justify-center font-bold text-sm">
                     2
                   </div>
-                  <h3 className="font-bold text-sm text-slate-900">Advance SRO Application</h3>
+                  <h3 className="font-bold text-sm text-slate-900">Advance SRO Form</h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Submit a formal requisition letter to the District Registrar along with the doctor&apos;s certificate, requesting an official home visit under Section 31.
+                    Submit a formal requisition letter to the District Registrar along with the doctor&apos;s paper, requesting an official home visit under Section 31.
                   </p>
                 </div>
 
@@ -1262,7 +1262,7 @@ export default function HyderabadLocationClient({ faqs }: Props) {
                   8. Documents Checklist for IGRS Sub-Registrar
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Keep these mandatory documents organized before visiting the Sub-Registrar Office in Hyderabad.
+                  Keep these needed documents organized before visiting the SRO office in Hyderabad.
                   Use our interactive checklist below to track your preparation:
                 </p>
               </div>
@@ -1322,7 +1322,7 @@ export default function HyderabadLocationClient({ faqs }: Props) {
                   9. Hyderabad Property Types: GHMC, HMDA &amp; Plots
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Succession procedures in Hyderabad differ depending on property ownership category.
+                  Succession steps in Hyderabad differ depending on property ownership category.
                   Here is how a legally valid Will addresses specific asset classes:
                 </p>
               </div>
@@ -1331,14 +1331,14 @@ export default function HyderabadLocationClient({ faqs }: Props) {
                 <div className="bg-white rounded-2xl border border-slate-200/90 p-5 shadow-xs space-y-2">
                   <h3 className="font-bold text-sm text-slate-900">GHMC Apartments &amp; Flats</h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Apartments registered with GHMC Property Tax Identification Numbers (PTIN). A registered Will enables straightforward municipal mutation and transfer of water (HMWSSB) and electricity connections.
+                    Apartments registered with GHMC Property Tax ID Numbers (PTIN). A registered Will enables straightforward municipal name change and transfer of water (HMWSSB) and electricity connections.
                   </p>
                 </div>
 
                 <div className="bg-white rounded-2xl border border-slate-200/90 p-5 shadow-xs space-y-2">
                   <h3 className="font-bold text-sm text-slate-900">HMDA Approved Layout Plots</h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Open residential plots in HMDA layouts across Tellapur, Mokila, and Ghatkesar. The Will must accurately state layout permit numbers, plot numbers, and boundary measurements.
+                    Open home plots in HMDA layouts across Tellapur, Mokila, and Ghatkesar. The Will must accurately state layout permit numbers, plot numbers, and boundary measurements.
                   </p>
                 </div>
 
@@ -1350,23 +1350,23 @@ export default function HyderabadLocationClient({ faqs }: Props) {
                 </div>
 
                 <div className="bg-white rounded-2xl border border-slate-200/90 p-5 shadow-xs space-y-2">
-                  <h3 className="font-bold text-sm text-slate-900">Dharani Agricultural Lands</h3>
+                  <h3 className="font-bold text-sm text-slate-900">Dharani Farm Lands</h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Farmlands and peri-urban farmhouses in Ranga Reddy and Medchal. Succession requires mutation through the Tahsildar on the Dharani portal based on clear testamentary title.
+                    Farmlands and peri-urban farmhouses in Ranga Reddy and Medchal. Succession requires name change through the Tahsildar on the Dharani portal based on clear testamentary title.
                   </p>
                 </div>
 
                 <div className="bg-white rounded-2xl border border-slate-200/90 p-5 shadow-xs space-y-2">
                   <h3 className="font-bold text-sm text-slate-900">IT Shares, RSUs &amp; Crypto</h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    US equities, vested RSUs, ESOPs, and crypto holdings of Cyberabad software professionals. An appointed executor coordinates global transmission with brokerage platforms.
+                    US equities, vested RSUs, ESOPs, and crypto holdings of Cyberabad software professionals. An appointed executor coordinates global transfer with brokerage platforms.
                   </p>
                 </div>
 
                 <div className="bg-white rounded-2xl border border-slate-200/90 p-5 shadow-xs space-y-2">
-                  <h3 className="font-bold text-sm text-slate-900">Commercial &amp; Trade Units</h3>
+                  <h3 className="font-bold text-sm text-slate-900">Shop &amp; Trade Units</h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Retail shops in General Bazaar, Secunderabad, or commercial office spaces in Madhapur. Incorporate lease rental assignment clauses directly to named beneficiaries.
+                    Retail shops in General Bazaar, Secunderabad, or shop office spaces in Madhapur. Incorporate lease rental assignment clauses directly to named heirs.
                   </p>
                 </div>
               </div>
@@ -1385,7 +1385,7 @@ export default function HyderabadLocationClient({ faqs }: Props) {
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Many citizens mistakenly believe that registering a Will costs a percentage of property market value.
                   In reality, Wills are <strong>completely exempt from stamp duty</strong> across Telangana under the Indian Stamp Act, 1899.
-                  Only flat statutory fees apply at the Sub-Registrar Office:
+                  Only flat legal fees apply at the SRO office:
                 </p>
               </div>
 
@@ -1393,7 +1393,7 @@ export default function HyderabadLocationClient({ faqs }: Props) {
                 <table className="w-full text-left text-xs sm:text-sm">
                   <thead className="bg-slate-50 text-slate-900 font-bold border-b border-slate-200">
                     <tr>
-                      <th className="p-3.5 sm:p-4">Statutory Fee Component</th>
+                      <th className="p-3.5 sm:p-4">Legal Fee Component</th>
                       <th className="p-3.5 sm:p-4">Government Charge</th>
                       <th className="p-3.5 sm:p-4">Legal Authority &amp; Notes</th>
                     </tr>
@@ -1407,7 +1407,7 @@ export default function HyderabadLocationClient({ faqs }: Props) {
                     <tr>
                       <td className="p-3.5 sm:p-4 font-semibold text-slate-900">IGRS Registration Fee</td>
                       <td className="p-3.5 sm:p-4 text-slate-900 font-bold">₹200 to ₹1,000</td>
-                      <td className="p-3.5 sm:p-4 text-slate-600">Nominal statutory Book-III registration fee</td>
+                      <td className="p-3.5 sm:p-4 text-slate-600">Nominal legal Book-III registration fee</td>
                     </tr>
                     <tr>
                       <td className="p-3.5 sm:p-4 font-semibold text-slate-900">Computer Scanning Charges</td>
@@ -1436,7 +1436,7 @@ export default function HyderabadLocationClient({ faqs }: Props) {
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Select the estate planning package tailored to your family situation.
-                  All packages include advocate review, customized Telugu estate clauses, and clear legal guidance:
+                  All packages include lawyer review, customized Telugu estate clauses, and clear legal guidance:
                 </p>
               </div>
 
@@ -1449,7 +1449,7 @@ export default function HyderabadLocationClient({ faqs }: Props) {
                     </div>
                     <div>
                       <div className="text-3xl font-black text-slate-900">₹1,990</div>
-                      <div className="text-xs text-slate-500 mt-1">Single Testator · Standard Assets</div>
+                      <div className="text-xs text-slate-500 mt-1">Single Will maker · Standard Assets</div>
                     </div>
                     <ul className="text-xs space-y-2.5 text-slate-600">
                       <li className="flex items-center gap-2">
@@ -1466,7 +1466,7 @@ export default function HyderabadLocationClient({ faqs }: Props) {
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>Witness execution instructions</span>
+                        <span>Witness signing instructions</span>
                       </li>
                     </ul>
                   </div>
@@ -1487,16 +1487,16 @@ export default function HyderabadLocationClient({ faqs }: Props) {
                   </div>
                   <div className="space-y-4">
                     <div className="inline-block px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-rose-50 text-[#C65378]">
-                      Comprehensive Advocate
+                      Full Lawyer
                     </div>
                     <div>
                       <div className="text-3xl font-black text-slate-900">₹4,990</div>
-                      <div className="text-xs text-slate-500 mt-1">High Court Advocate Consultation</div>
+                      <div className="text-xs text-slate-500 mt-1">High Court Lawyer Talk</div>
                     </div>
                     <ul className="text-xs space-y-2.5 text-slate-600">
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>1-on-1 advocate consultation call</span>
+                        <span>1-on-1 lawyer talk call</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
@@ -1504,11 +1504,11 @@ export default function HyderabadLocationClient({ faqs }: Props) {
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>Telugu coparcenary &amp; Pasupu-Kumkuma clauses</span>
+                        <span>Telugu joint family &amp; Pasupu-Kumkuma clauses</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>Doctor fitness certificate format</span>
+                        <span>Doctor fitness paper format</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
@@ -1522,7 +1522,7 @@ export default function HyderabadLocationClient({ faqs }: Props) {
                     onClick={handleStartDraft}
                     className="w-full py-3 rounded-full bg-[#C65378] text-white font-bold text-xs text-center hover:bg-[#a13c5d] transition-colors block cursor-pointer shadow-md shadow-[#C65378]/25"
                   >
-                    Select Comprehensive
+                    Select Full
                   </a>
                 </div>
 
@@ -1539,7 +1539,7 @@ export default function HyderabadLocationClient({ faqs }: Props) {
                     <ul className="text-xs space-y-2.5 text-slate-600">
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>Senior advocate drafting &amp; review</span>
+                        <span>Senior lawyer drafting &amp; review</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
@@ -1547,7 +1547,7 @@ export default function HyderabadLocationClient({ faqs }: Props) {
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>Physical advocate accompaniment at SRO</span>
+                        <span>Physical lawyer accompaniment at SRO</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
@@ -1582,7 +1582,7 @@ export default function HyderabadLocationClient({ faqs }: Props) {
                   12. Frequently Asked Questions: Hyderabad Wills
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Clear answers to key legal questions about Will drafting, SRO registration, and asset distribution in Hyderabad:
+                  Clear answers to key legal questions about Will drafting, SRO registration, and asset split in Hyderabad:
                 </p>
               </div>
 
@@ -1624,7 +1624,7 @@ export default function HyderabadLocationClient({ faqs }: Props) {
                   <span>OFFICIAL PORTALS &amp; CITATIONS</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  13. Statutory References &amp; Telangana Legal Links
+                  13. Legal References &amp; Telangana Legal Links
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Authoritative statutes and official Telangana state web portals governing Will drafting and succession:
@@ -1658,7 +1658,7 @@ export default function HyderabadLocationClient({ faqs }: Props) {
                     <ArrowRight className="w-3.5 h-3.5 text-slate-400 group-hover:text-[#C65378] group-hover:translate-x-0.5 transition-all" />
                   </div>
                   <p className="text-[11px] text-slate-500">
-                    Property tax mutation and title transfer portal across Greater Hyderabad.
+                    Property tax name change and title transfer portal across Greater Hyderabad.
                   </p>
                 </a>
 
@@ -1673,7 +1673,7 @@ export default function HyderabadLocationClient({ faqs }: Props) {
                     <ArrowRight className="w-3.5 h-3.5 text-slate-400 group-hover:text-[#C65378] group-hover:translate-x-0.5 transition-all" />
                   </div>
                   <p className="text-[11px] text-slate-500">
-                    Agricultural land records, passbooks, and succession mutation in Telangana.
+                    Farm land records, passbooks, and succession name change in Telangana.
                   </p>
                 </a>
 
@@ -1688,7 +1688,7 @@ export default function HyderabadLocationClient({ faqs }: Props) {
                     <ArrowRight className="w-3.5 h-3.5 text-slate-400 group-hover:text-[#C65378] group-hover:translate-x-0.5 transition-all" />
                   </div>
                   <p className="text-[11px] text-slate-500">
-                    Judicial decisions regarding Indian Succession Act, non-presidency probate, and coparcenary rights.
+                    Judicial decisions regarding Indian Succession Act, non-presidency probate, and joint family rights.
                   </p>
                 </a>
               </div>

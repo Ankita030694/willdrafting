@@ -133,19 +133,19 @@ const INITIAL_CHECKLIST = [
   },
   {
     id: "item-2",
-    label: "Original Aadhaar Card & PAN of the Testator",
-    detail: "Mandatory for identity verification, photograph capture, and thumbprint impression before the Sub-Registrar.",
+    label: "Original Aadhaar Card & PAN of the Will maker",
+    detail: "Needed for identity check, photograph capture, and thumbprint impression before the Sub-Registrar.",
     checked: true,
   },
   {
     id: "item-3",
     label: "Two Independent Adult Witnesses with Photo IDs",
-    detail: "Must carry original Aadhaar cards and must not be beneficiaries receiving any property under the Will.",
+    detail: "Must carry original Aadhaar cards and must not be heirs receiving any property under the Will.",
     checked: true,
   },
   {
     id: "item-4",
-    label: "Doctor Mental Fitness Certificate (MBBS / MD)",
+    label: "Doctor Sound Mind Note (MBBS / MD)",
     detail: "Recommended for elderly testators. Confirms testamentary mental clarity, memory, and sound disposition.",
     checked: false,
   },
@@ -157,7 +157,7 @@ const INITIAL_CHECKLIST = [
   },
   {
     id: "item-6",
-    label: "Passport Size Photographs of Testator & Witnesses",
+    label: "Passport Size Photographs of Will maker & Witnesses",
     detail: "Recent passport-sized color photos for official Book III registry registers and Sub-Registrar records.",
     checked: true,
   },
@@ -249,7 +249,7 @@ export default function ManipurLocationClient({ faqs }: Props) {
               </h1>
 
               <p className="text-base sm:text-lg text-slate-200 leading-relaxed font-normal max-w-2xl">
-                Draft a legally sound Will for your Imphal valley Patta land, residential homesteads (Ingkhol), urban commercial assets, and hill district self-acquired holdings. Get verified lawyer drafting, Section 158 MLR &amp; LR Act compliance, and Sub-Registrar registration assistance.
+                Draft a legally sound Will for your Imphal valley Patta land, home homesteads (Ingkhol), urban shop assets, and hill district self-acquired holdings. Get verified lawyer drafting, Section 158 MLR &amp; LR Act compliance, and Sub-Registrar registration help.
               </p>
 
               <div className="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
@@ -274,7 +274,7 @@ export default function ManipurLocationClient({ faqs }: Props) {
               <div className="pt-4 grid grid-cols-3 gap-3 border-t border-white/10 text-xs text-slate-300">
                 <div className="flex items-center gap-2">
                   <Check className="w-4 h-4 text-emerald-400 shrink-0" />
-                  <span>High Court Advocate Vetted</span>
+                  <span>High Court Lawyer Vetted</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <Check className="w-4 h-4 text-emerald-400 shrink-0" />
@@ -449,10 +449,10 @@ export default function ManipurLocationClient({ faqs }: Props) {
                 LEGAL CONSULTATION
               </span>
               <div className="text-sm font-extrabold leading-snug">
-                Need Assistance with Valley Pattas or Hill Land Wills?
+                Need Help with Valley Pattas or Hill Land Wills?
               </div>
               <p className="text-xs text-slate-300 leading-relaxed">
-                Connect with our senior estate advocates for personalized guidance under Manipur land and succession laws.
+                Connect with our senior estate lawyers for personalized guidance under Manipur land and succession laws.
               </p>
               <a
                 href="/contact"
@@ -484,17 +484,17 @@ export default function ManipurLocationClient({ faqs }: Props) {
                       <span>Optional Registration</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Will registration is optional under Section 18(e) of the Registration Act, 1908. While an unregistered Will signed before two witnesses is legally valid, formal Book III SRO registration provides indisputable public proof against succession disputes.
+                      Will registration is optional under Section 18(e) of the Registration Act, 1908. While an unregistered Will signed before two witnesses is legally valid, formal Book III SRO registration provides indisputable public proof against succession fights.
                     </p>
                   </div>
 
                   <div className="p-4 rounded-2xl bg-slate-50/70 border border-slate-100 space-y-1.5">
                     <div className="flex items-center gap-2 font-bold text-sm text-slate-900">
                       <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
-                      <span>Probate Non-Compulsory</span>
+                      <span>Probate Non-Needed</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Under Section 213 of the Indian Succession Act, probate is mandatory solely in presidency towns. Manipur lies outside presidency limits. The High Court of Manipur confirms that court probate is non-mandatory for direct title mutation.
+                      Under Section 213 of the Indian Succession Act, probate is needed solely in presidency towns. Manipur lies outside presidency limits. The High Court of Manipur confirms that court probate is non-needed for direct title name change.
                     </p>
                   </div>
 
@@ -511,10 +511,10 @@ export default function ManipurLocationClient({ faqs }: Props) {
                   <div className="p-4 rounded-2xl bg-slate-50/70 border border-slate-100 space-y-1.5">
                     <div className="flex items-center gap-2 font-bold text-sm text-slate-900">
                       <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
-                      <span>Loucha Pathap Land Mutation</span>
+                      <span>Loucha Pathap Land Name Change</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      A registered Will expedites Record of Rights (Jamabandi) mutation with Sub-Deputy Collectors (SDCs) and updates Dag/Patta records seamlessly on the official Loucha Pathap portal across Imphal, Thoubal, and Bishnupur.
+                      A registered Will expedites Record of Rights (Jamabandi) name change with Sub-Deputy Collectors (SDCs) and updates Dag/Patta records seamlessly on the official Loucha Pathap portal across Imphal, Thoubal, and Bishnupur.
                     </p>
                   </div>
                 </div>
@@ -532,10 +532,10 @@ export default function ManipurLocationClient({ faqs }: Props) {
                   1. Will Drafting &amp; Legal Framework in Manipur
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Succession planning and testamentary disposition in Manipur are guided by the <strong>Indian Succession Act, 1925</strong>, the <strong>Registration Act, 1908</strong>, and the <strong>Manipur Land Revenue and Land Reforms Act, 1960</strong>. Any adult of sound mind can legally bequeath self-acquired residential property, agricultural fields (Lou), homestead land (Ingkhol), and financial savings.
+                  Succession planning and Will in Manipur are guided by the <strong>Indian Succession Act, 1925</strong>, the <strong>Registration Act, 1908</strong>, and the <strong>Manipur Land Revenue and Land Reforms Act, 1960</strong>. Any adult of sound mind can legally bequeath self-acquired home property, farm fields (Lou), homestead land (Ingkhol), and financial savings.
                 </p>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Estate planning in Manipur requires careful balance between codified revenue statutes in the valley districts and customary tribal traditions in the hill regions. Without an advocate-drafted Will, surviving family members often face prolonged administrative delay before revenue offices, civil courts, and local municipal desks.
+                  Estate planning in Manipur requires careful balance between codified revenue statutes in the valley districts and customary tribal traditions in the hill regions. Without an lawyer-drafted Will, surviving family members often face prolonged office delay before revenue offices, civil courts, and local municipal desks.
                 </p>
               </div>
 
@@ -546,7 +546,7 @@ export default function ManipurLocationClient({ faqs }: Props) {
                   </span>
                   <h3 className="font-bold text-sm text-slate-900">Legal Capacity</h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    The testator must be a major aged 18 years or older with sound testamentary mental capacity (Section 59).
+                    The Will maker must be a major aged 18 years or older with sound testamentary mental capacity (Section 59).
                   </p>
                 </div>
 
@@ -556,7 +556,7 @@ export default function ManipurLocationClient({ faqs }: Props) {
                   </span>
                   <h3 className="font-bold text-sm text-slate-900">Free Consent</h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Executed voluntarily without undue influence, coercion, fraudulent representations, or duress (Section 61).
+                    Signed voluntarily without undue influence, coercion, fraudulent representations, or duress (Section 61).
                   </p>
                 </div>
 
@@ -566,7 +566,7 @@ export default function ManipurLocationClient({ faqs }: Props) {
                   </span>
                   <h3 className="font-bold text-sm text-slate-900">Two Witnesses</h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Must be signed in the physical presence of at least two independent adult attesting witnesses (Section 63).
+                    Must be signed in the physical presence of at least two independent adult witnesses (Section 63).
                   </p>
                 </div>
 
@@ -574,9 +574,9 @@ export default function ManipurLocationClient({ faqs }: Props) {
                   <span className="w-8 h-8 rounded-xl bg-rose-50 text-[#C65378] flex items-center justify-center font-bold text-sm">
                     <ShieldCheck className="w-4 h-4" />
                   </span>
-                  <h3 className="font-bold text-sm text-slate-900">Non-Beneficiary</h3>
+                  <h3 className="font-bold text-sm text-slate-900">Non-Heir</h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Attesting witnesses and their spouses must not receive any legacy or property under the Will (Section 67).
+                    Witnesses and their spouses must not receive any legacy or property under the Will (Section 67).
                   </p>
                 </div>
               </div>
@@ -593,7 +593,7 @@ export default function ManipurLocationClient({ faqs }: Props) {
                   2. Valley Land Deeds &amp; Hill Customary Succession
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Manipur has a distinct legal duality in land tenure and property succession between its central valley districts and autonomous hill districts. Understanding this distinction is vital to ensure your Will remains legally enforceable.
+                  Manipur has a distinct legal duality in land tenure and property succession between its central valley districts and autonomous hill districts. Understanding this distinction is vital to make sure your Will remains legally enforceable.
                 </p>
               </div>
 
@@ -606,11 +606,11 @@ export default function ManipurLocationClient({ faqs }: Props) {
                     Imphal West, Imphal East, Thoubal, Kakching, Bishnupur
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Governed by the Manipur Land Revenue and Land Reforms Act, 1960. Landholders hold individual Patta rights recorded in the Jamabandi. Self-acquired Patta plots, residential homesteads (Ingkhol), and agricultural fields (Lou) can be bequeathed freely via a Will. However, under Section 158 of the Act, land belonging to a Scheduled Tribe person cannot be bequeathed to a non-tribal person.
+                    Governed by the Manipur Land Revenue and Land Reforms Act, 1960. Landholders hold individual Patta rights recorded in the Jamabandi. Self-acquired Patta plots, home homesteads (Ingkhol), and farm fields (Lou) can be bequeathed freely via a Will. However, under Section 158 of the Act, land belonging to a Scheduled Tribe person cannot be bequeathed to a non-tribal person.
                   </p>
                   <div className="pt-2 text-xs text-slate-500 flex items-center gap-1.5">
                     <Check className="w-3.5 h-3.5 text-emerald-600" />
-                    <span>Enables smooth digital mutation on the state Loucha Pathap portal</span>
+                    <span>Enables smooth digital name change on the state Loucha Pathap portal</span>
                   </div>
                 </div>
 
@@ -622,11 +622,11 @@ export default function ManipurLocationClient({ faqs }: Props) {
                     Churachandpur, Ukhrul, Senapati, Tamenglong, Chandel
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Ancestral village lands are administered under customary tribal practices and Village Authorities. While ancestral clan lands often follow customary patrilineal rules, an individual possesses clear testamentary freedom under the Indian Succession Act to bequeath self-acquired town properties, residential buildings in district headquarters, bank accounts, and transport assets.
+                    Family village lands are administered under customary tribal practices and Village Offices. While family clan lands often follow customary patrilineal rules, an individual possesses clear testamentary freedom under the Indian Succession Act to bequeath self-acquired town assets, home buildings in district headquarters, bank accounts, and transport assets.
                   </p>
                   <div className="pt-2 text-xs text-slate-500 flex items-center gap-1.5">
                     <Check className="w-3.5 h-3.5 text-emerald-600" />
-                    <span>Protects self-acquired urban assets from customary family disputes</span>
+                    <span>Protects self-acquired urban assets from customary family fights</span>
                   </div>
                 </div>
               </div>
@@ -640,13 +640,13 @@ export default function ManipurLocationClient({ faqs }: Props) {
                   <span>REGISTRATION STATUS</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  3. Is Will Registration Mandatory in Manipur?
+                  3. Is Will Registration Needed in Manipur?
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Under Section 18(e) of the Registration Act, 1908, the registration of a Will is strictly <strong>optional</strong>. A Will executed on standard white paper and signed in the presence of two witnesses is legally valid and admissible before judicial authorities in Manipur.
+                  Under Section 18(e) of the Registration Act, 1908, the registration of a Will is strictly <strong>optional</strong>. A Will signed on standard white paper and signed in the presence of two witnesses is legally valid and admissible before judicial offices in Manipur.
                 </p>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  However, with rising land values across Imphal, Porompat, and Greater Imphal corridors, legal professionals strongly recommend formal registration. An official Book III registration at your jurisdictional Sub-Registrar Office establishes high legal credibility and prevents claims of forged signatures or post-demise tampering.
+                  However, with rising land values across Imphal, Porompat, and Greater Imphal corridors, legal professionals strongly recommend formal registration. An official Book III registration at your jurisdictional SRO office establishes high legal credibility and prevents claims of forged signatures or post-demise tampering.
                 </p>
               </div>
 
@@ -668,22 +668,22 @@ export default function ManipurLocationClient({ faqs }: Props) {
                     </tr>
                     <tr>
                       <td className="p-4 font-semibold">Protection from Challenge</td>
-                      <td className="p-4 bg-rose-50/20">Strong legal presumption of valid testamentary execution</td>
+                      <td className="p-4 bg-rose-50/20">Strong legal presumption of valid testamentary signing</td>
                       <td className="p-4 bg-slate-50/20">Prone to allegations of forgery, coercion, or undue pressure</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-semibold">Loucha Pathap Land Mutation</td>
-                      <td className="p-4 bg-rose-50/20">SDC and SDO process mutation swiftly on presenting certified copy</td>
-                      <td className="p-4 bg-slate-50/20">Revenue officers may insist on succession certificates or NOCs</td>
+                      <td className="p-4 font-semibold">Loucha Pathap Land Name Change</td>
+                      <td className="p-4 bg-rose-50/20">SDC and SDO process name change swiftly on presenting certified copy</td>
+                      <td className="p-4 bg-slate-50/20">Revenue officers may insist on succession papers or NOCs</td>
                     </tr>
                     <tr>
                       <td className="p-4 font-semibold">Imphal Municipal Corporation</td>
-                      <td className="p-4 bg-rose-50/20">Direct property tax assessment update for residential homes</td>
-                      <td className="p-4 bg-slate-50/20">Heirs often referred to civil court for legal heir verification</td>
+                      <td className="p-4 bg-rose-50/20">Direct property tax assessment update for home homes</td>
+                      <td className="p-4 bg-slate-50/20">Heirs often referred to civil court for legal heir check</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-semibold">Bank &amp; Demat Transmission</td>
-                      <td className="p-4 bg-rose-50/20">Swift asset transmission without demanding indemnity bonds</td>
+                      <td className="p-4 font-semibold">Bank &amp; Demat Transfer</td>
+                      <td className="p-4 bg-rose-50/20">Swift asset transfer without demanding indemnity bonds</td>
                       <td className="p-4 bg-slate-50/20">Lengthy legal scrutiny and co-heir disclaimer affidavits required</td>
                     </tr>
                     <tr>
@@ -707,27 +707,27 @@ export default function ManipurLocationClient({ faqs }: Props) {
                   4. Manipur Probate Law: High Court Exemption Rules
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  A common point of confusion among property owners in Manipur is whether an executor must obtain court probate before distributing real estate. Under prevailing law, the answer is <strong>no</strong>.
+                  A common point of confusion among property owners in Manipur is whether an executor must get court probate before distributing real estate. Under prevailing law, the answer is <strong>no</strong>.
                 </p>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Under Section 213 read with Section 57(a) and 57(b) of the Indian Succession Act, 1925, obtaining probate is mandatory only for Wills executed in or covering properties situated in the historical presidency towns of Mumbai, Kolkata, and Chennai. The territorial jurisdiction of Manipur has never formed part of a presidency town. The High Court of Manipur in Imphal consistently follows this settled legal principle.
+                  Under Section 213 read with Section 57(a) and 57(b) of the Indian Succession Act, 1925, getting probate is needed only for Wills signed in or covering assets situated in the historical presidency towns of Mumbai, Kolkata, and Chennai. The territorial area of Manipur has never formed part of a presidency town. The High Court of Manipur in Imphal consistently follows this settled legal principle.
                 </p>
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="bg-white rounded-3xl border border-slate-200/90 p-6 shadow-xs space-y-3">
                   <span className="px-3 py-1 rounded-full bg-emerald-100 text-emerald-800 text-xs font-extrabold uppercase">
-                    Settled Law: Non-Compulsory
+                    Settled Law: Non-Needed
                   </span>
                   <h3 className="font-bold text-base text-slate-900">
                     High Court of Manipur Position
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Probate is not a legal prerequisite for establishing rights under a Will in Manipur for Hindus, Christians, Sikhs, Buddhists, or Jains. A legally registered Will, supported by the testator&apos;s death certificate and legal heir documentation, is completely sufficient for revenue authorities to effect mutation in the Jamabandi.
+                    Probate is not a legal prerequisite for establishing rights under a Will in Manipur for Hindus, Christians, Sikhs, Buddhists, or Jains. A legally registered Will, supported by the Will maker&apos;s death paper and legal heir papers, is completely sufficient for revenue offices to effect name change in the Jamabandi.
                   </p>
                   <div className="pt-2 text-xs text-slate-500 flex items-center gap-1.5">
                     <Check className="w-3.5 h-3.5 text-emerald-600" />
-                    <span>Enables immediate asset transmission without lengthy civil court litigation</span>
+                    <span>Enables immediate asset transfer without lengthy civil court court fights</span>
                   </div>
                 </div>
 
@@ -739,11 +739,11 @@ export default function ManipurLocationClient({ faqs }: Props) {
                     When is Probate Filed in Manipur District Courts?
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    An executor may voluntarily petition for probate or letters of administration before the District Judge (e.g., at Lamphelpat Court Complex for Imphal West) if disgruntled legal heirs initiate partition suits, allege suspicious circumstances, or dispute the testator&apos;s mental soundness. A grant of probate conclusively binds all parties as a judgment <em>in rem</em>.
+                    An executor may voluntarily petition for probate or letters of management before the District Judge (e.g., at Lamphelpat Court Complex for Imphal West) if disgruntled legal heirs initiate split suits, allege suspicious circumstances, or fight the Will maker&apos;s mental soundness. A grant of probate conclusively binds all parties as a judgment <em>in rem</em>.
                   </p>
                   <div className="pt-2 text-xs text-slate-500 flex items-center gap-1.5">
                     <AlertTriangle className="w-3.5 h-3.5 text-[#C65378]" />
-                    <span>Provides conclusive judicial validation against hostile collateral challenges</span>
+                    <span>Provides strong judicial validation against hostile collateral fights</span>
                   </div>
                 </div>
               </div>
@@ -760,7 +760,7 @@ export default function ManipurLocationClient({ faqs }: Props) {
                   5. Manipur Sub-Registrar Offices: District Directory
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Manipur operates Sub-Registrar Offices under the Department of Taxes &amp; Registration, Government of Manipur. Under Section 32 of the Registration Act, your Will can be registered at the Sub-Registrar Office having jurisdiction over your place of residence or where your immovable property is located.
+                  Manipur operates Sub-Registrar Offices under the Department of Taxes &amp; Registration, Government of Manipur. Under Section 32 of the Registration Act, your Will can be registered at the SRO office having area over your place of residence or where your land and flats is located.
                 </p>
               </div>
 
@@ -858,7 +858,7 @@ export default function ManipurLocationClient({ faqs }: Props) {
                   6. Regional Cities: Area-Wise Will Drafting in Manipur
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Estate holdings in Manipur span prime commercial markets and residential colonies in Greater Imphal, fertile agricultural valley belts in Thoubal and Kakching, lake basin fishery holdings in Bishnupur, and autonomous hill district properties in Churachandpur and Ukhrul. Our legal specialists deliver tailored drafting and SRO registration support across all key regional cities:
+                  Estate holdings in Manipur span prime shop markets and home colonies in Greater Imphal, fertile farm valley belts in Thoubal and Kakching, lake basin fishery holdings in Bishnupur, and autonomous hill district assets in Churachandpur and Ukhrul. Our legal experts deliver tailored drafting and SRO registration support across all key regional cities:
                 </p>
               </div>
 
@@ -869,7 +869,7 @@ export default function ManipurLocationClient({ faqs }: Props) {
                     <div className="flex items-center justify-between gap-2">
                       <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-rose-50 text-[#C65378] border border-rose-100">
                         <MapPin className="w-3.5 h-3.5" />
-                        Capital Administrative Hub
+                        Capital Office Hub
                       </span>
                       <span className="text-[11px] font-semibold text-slate-500 bg-slate-100 px-2.5 py-1 rounded-lg">
                         SRO Imphal West (Lamphelpat)
@@ -890,7 +890,7 @@ export default function ManipurLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Specialized <strong>Will drafting services in Imphal West</strong> for high-value residential homesteads (Ingkhol), commercial showroom spaces, and multi-story apartments along RIMS Road and Singjamei. Formulates clear clauses for Dag/Patta succession, Imphal Municipal Corporation property tax mutation, and bank deposit bequests.
+                      Specialized <strong>Will drafting services in Imphal West</strong> for high-value home homesteads (Ingkhol), shop showroom spaces, and multi-story apartments along RIMS Road and Singjamei. Formulates clear clauses for Dag/Patta succession, Imphal Municipal Corporation property tax name change, and bank deposit bequests.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -899,7 +899,7 @@ export default function ManipurLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Lamphelpat DC Office Complex</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Book III registration at Lamphelpat, advocate legal verification, and Section 31 doorstep execution for senior citizens.
+                        Book III registration at Lamphelpat, lawyer legal check, and Section 31 doorstep signing for senior citizens.
                       </p>
                     </div>
                   </div>
@@ -924,7 +924,7 @@ export default function ManipurLocationClient({ faqs }: Props) {
                     <div className="flex items-center justify-between gap-2">
                       <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-rose-50 text-[#C65378] border border-rose-100">
                         <MapPin className="w-3.5 h-3.5" />
-                        Heritage &amp; Residential
+                        Heritage &amp; Home
                       </span>
                       <span className="text-[11px] font-semibold text-slate-500 bg-slate-100 px-2.5 py-1 rounded-lg">
                         SRO Imphal East (Porompat)
@@ -945,7 +945,7 @@ export default function ManipurLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Customized <strong>Will drafting services in Imphal East</strong> for family homesteads, ancestral residential compounds around Palace Compound, and commercial plots near Lamlong Bazar. Incorporates life-interest protection for surviving spouses and clear Jamabandi division among legal successors.
+                      Customized <strong>Will drafting services in Imphal East</strong> for family homesteads, family home compounds around Palace Compound, and shop plots near Lamlong Bazar. Incorporates life-interest protection for surviving spouses and clear Jamabandi division among legal successors.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -954,7 +954,7 @@ export default function ManipurLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Porompat DC Office Complex</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Loucha Pathap title mapping, Sub-Deputy Collector mutation facilitation, and expedited SRO registration.
+                        Loucha Pathap title mapping, Sub-Deputy Collector name change facilitation, and expedited SRO registration.
                       </p>
                     </div>
                   </div>
@@ -979,7 +979,7 @@ export default function ManipurLocationClient({ faqs }: Props) {
                     <div className="flex items-center justify-between gap-2">
                       <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-rose-50 text-[#C65378] border border-rose-100">
                         <MapPin className="w-3.5 h-3.5" />
-                        Agricultural &amp; Trade Hub
+                        Farm &amp; Trade Hub
                       </span>
                       <span className="text-[11px] font-semibold text-slate-500 bg-slate-100 px-2.5 py-1 rounded-lg">
                         SRO Thoubal &amp; Kakching
@@ -1000,7 +1000,7 @@ export default function ManipurLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Expert <strong>Will drafting services in Thoubal and Kakching</strong> focusing on agricultural paddy land (Lou), private fish farming ponds (Pukhri), and commercial market shops. Prevents land fragmentation and complies with MLR &amp; LR Act ceiling and partition guidelines.
+                      Expert <strong>Will drafting services in Thoubal and Kakching</strong> focusing on farm paddy land (Lou), private fish farming ponds (Pukhri), and shop market shops. Prevents land fragmentation and complies with MLR &amp; LR Act ceiling and split guidelines.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1009,13 +1009,13 @@ export default function ManipurLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Mini Secretariat Thoubal &amp; Kakching</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Paddy land succession clauses, SDC Thoubal revenue mutation, and SRO Book III registration.
+                        Paddy land succession clauses, SDC Thoubal revenue name change, and SRO Book III registration.
                       </p>
                     </div>
                   </div>
 
                   <div className="pt-4 mt-4 border-t border-slate-100 flex items-center justify-between">
-                    <span className="text-xs font-bold text-slate-500">Paddy Land &amp; Commercial Shops</span>
+                    <span className="text-xs font-bold text-slate-500">Paddy Land &amp; Shop Shops</span>
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
@@ -1055,7 +1055,7 @@ export default function ManipurLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Dedicated <strong>Will drafting services in Bishnupur and Moirang</strong> for residential land, fishery leases, tourism commercial ventures near Loktak Lake, and traditional homestead plots. Ensures seamless ownership transfer without family disputes or revenue court objections.
+                      Dedicated <strong>Will drafting services in Bishnupur and Moirang</strong> for home land, fishery leases, tourism shop ventures near Loktak Lake, and traditional homestead plots. Ensures seamless ownership transfer without family fights or revenue court objections.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1064,13 +1064,13 @@ export default function ManipurLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Mini Secretariat Bishnupur</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Patta land verification, Loktak commercial asset bequeathals, and Sub-Registrar Book III registration.
+                        Patta land check, Loktak shop asset bequeathals, and Sub-Registrar Book III registration.
                       </p>
                     </div>
                   </div>
 
                   <div className="pt-4 mt-4 border-t border-slate-100 flex items-center justify-between">
-                    <span className="text-xs font-bold text-slate-500">Residential &amp; Fishery Assets</span>
+                    <span className="text-xs font-bold text-slate-500">Home &amp; Fishery Assets</span>
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
@@ -1089,7 +1089,7 @@ export default function ManipurLocationClient({ faqs }: Props) {
                     <div className="flex items-center justify-between gap-2">
                       <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-rose-50 text-[#C65378] border border-rose-100">
                         <MapPin className="w-3.5 h-3.5" />
-                        Southern Hill Commercial Center
+                        Southern Hill Shop Center
                       </span>
                       <span className="text-[11px] font-semibold text-slate-500 bg-slate-100 px-2.5 py-1 rounded-lg">
                         SRO Churachandpur (Tuibong)
@@ -1110,7 +1110,7 @@ export default function ManipurLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Comprehensive <strong>Will drafting services in Churachandpur</strong> for self-acquired urban properties, town buildings, commercial establishments along Tedim Road, and banking portfolios. Balances local customary succession practices with written testamentary protections for daughters, surviving spouses, and younger sons.
+                      Full <strong>Will drafting services in Churachandpur</strong> for self-acquired urban assets, town buildings, shop establishments along Tedim Road, and banking portfolios. Balances local customary succession practices with written testamentary protections for daughters, surviving spouses, and younger sons.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1165,7 +1165,7 @@ export default function ManipurLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Authoritative <strong>Will drafting services in Ukhrul and Senapati</strong> for self-acquired residential homes in town centers, commercial fleets, retail stores, and financial savings. Clarifies individual property ownership alongside customary village authority principles to secure harmonious family succession.
+                      Authoritative <strong>Will drafting services in Ukhrul and Senapati</strong> for self-acquired home homes in town centers, shop fleets, retail stores, and financial savings. Clarifies individual property ownership alongside customary village authority principles to secure harmonious family succession.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1206,7 +1206,7 @@ export default function ManipurLocationClient({ faqs }: Props) {
                   7. Step-by-Step SOP: Drafting to Registration in Manipur
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Follow this verified 5-stage legal operating procedure to draft, execute, and register your Will before the Sub-Registrar in Manipur:
+                  Follow this verified 5-stage legal operating step to draft, execute, and register your Will before the Sub-Registrar in Manipur:
                 </p>
               </div>
 
@@ -1231,7 +1231,7 @@ export default function ManipurLocationClient({ faqs }: Props) {
                       2
                     </span>
                     <h3 className="font-bold text-sm text-slate-900">
-                      Advocate Drafting
+                      Lawyer Drafting
                     </h3>
                     <p className="text-xs text-slate-600 leading-relaxed">
                       Draft customized legal clauses covering revocation of prior wills, survivorship, executor powers, and minor guardianships.
@@ -1245,10 +1245,10 @@ export default function ManipurLocationClient({ faqs }: Props) {
                       3
                     </span>
                     <h3 className="font-bold text-sm text-slate-900">
-                      Valid Execution
+                      Valid Signing
                     </h3>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Print on clean white paper and sign each page in the physical presence of two independent non-beneficiary adult witnesses.
+                      Print on clean white paper and sign each page in the physical presence of two independent non-heir adult witnesses.
                     </p>
                   </div>
                 </div>
@@ -1262,7 +1262,7 @@ export default function ManipurLocationClient({ faqs }: Props) {
                       SRO Scheduling
                     </h3>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Schedule your presentation slot with your local Manipur Sub-Registrar Office and pay the nominal statutory registration fees.
+                      Schedule your presentation slot with your local Manipur SRO office and pay the nominal legal registration fees.
                     </p>
                   </div>
                 </div>
@@ -1294,7 +1294,7 @@ export default function ManipurLocationClient({ faqs }: Props) {
                   8. Section 31 Doorstep SRO Registration for Seniors
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  For elderly, unwell, or bedridden citizens residing in Imphal West, Imphal East, or other districts of Manipur, visiting the registry office in person can be medically difficult. Under <strong>Section 31 of the Registration Act, 1908</strong>, the Sub-Registrar has statutory authority to attend a private home or hospital to register a Will.
+                  For elderly, unwell, or bedridden citizens residing in Imphal West, Imphal East, or other districts of Manipur, visiting the registry office in person can be medically difficult. Under <strong>Section 31 of the Registration Act, 1908</strong>, the Sub-Registrar has legal authority to attend a private home or hospital to register a Will.
                 </p>
               </div>
 
@@ -1306,7 +1306,7 @@ export default function ManipurLocationClient({ faqs }: Props) {
                   <div className="flex items-start gap-3 p-4 rounded-2xl bg-slate-50 border border-slate-100">
                     <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
                     <div>
-                      <strong className="text-slate-900 block">Doctor Mental Fitness Certificate</strong>
+                      <strong className="text-slate-900 block">Doctor Sound Mind Note</strong>
                       <span className="text-slate-600">A registered MBBS doctor certifies that the senior citizen is of sound testamentary mind but physically advised against traveling.</span>
                     </div>
                   </div>
@@ -1314,7 +1314,7 @@ export default function ManipurLocationClient({ faqs }: Props) {
                   <div className="flex items-start gap-3 p-4 rounded-2xl bg-slate-50 border border-slate-100">
                     <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
                     <div>
-                      <strong className="text-slate-900 block">Commission Application</strong>
+                      <strong className="text-slate-900 block">Commission Form</strong>
                       <span className="text-slate-600">Our estate legal team prepares and submits the formal Section 31 home visit commission petition before the jurisdictional Sub-Registrar.</span>
                     </div>
                   </div>
@@ -1323,7 +1323,7 @@ export default function ManipurLocationClient({ faqs }: Props) {
                     <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
                     <div>
                       <strong className="text-slate-900 block">Nominal Commission Fee</strong>
-                      <span className="text-slate-600">The statutory government commission fee is paid through the designated treasury challan to schedule the officer visit.</span>
+                      <span className="text-slate-600">The legal government commission fee is paid through the designated treasury challan to schedule the officer visit.</span>
                     </div>
                   </div>
 
@@ -1331,7 +1331,7 @@ export default function ManipurLocationClient({ faqs }: Props) {
                     <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
                     <div>
                       <strong className="text-slate-900 block">Official Officer Attendance</strong>
-                      <span className="text-slate-600">The Sub-Registrar visits your residence, verifies the testator and witnesses in person, captures signatures, and logs Book III records.</span>
+                      <span className="text-slate-600">The Sub-Registrar visits your residence, verifies the Will maker and witnesses in person, captures signatures, and logs Book III records.</span>
                     </div>
                   </div>
                 </div>
@@ -1349,7 +1349,7 @@ export default function ManipurLocationClient({ faqs }: Props) {
                   9. Document Checklist for Manipur Sub-Registrar Offices
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Prepare your documentation before scheduling your Sub-Registrar appointment. You have organized <strong>{checkedCount} of {checklist.length}</strong> required documents:
+                  Prepare your papers before scheduling your Sub-Registrar appointment. You have organized <strong>{checkedCount} of {checklist.length}</strong> required documents:
                 </p>
               </div>
 
@@ -1397,7 +1397,7 @@ export default function ManipurLocationClient({ faqs }: Props) {
                   10. Manipur Property Assets: Valley Pattas &amp; Hill Lands
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Succession procedures in Manipur vary significantly depending on whether the asset is valley revenue land, urban commercial property, or hill district holdings:
+                  Succession steps in Manipur vary significantly depending on whether the asset is valley revenue land, urban shop property, or hill district holdings:
                 </p>
               </div>
 
@@ -1410,7 +1410,7 @@ export default function ManipurLocationClient({ faqs }: Props) {
                     Patta Lands &amp; Ingkhol Plots
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Under the MLR &amp; LR Act 1960, individual landholders hold Patta rights recorded in the Jamabandi. The Will must accurately state the Dag and Patta numbers. A registered Will enables the SDC to process mutation directly on the Loucha Pathap portal.
+                    Under the MLR &amp; LR Act 1960, individual landholders hold Patta rights recorded in the Jamabandi. The Will must accurately state the Dag and Patta numbers. A registered Will enables the SDC to process name change directly on the Loucha Pathap portal.
                   </p>
                 </div>
 
@@ -1422,7 +1422,7 @@ export default function ManipurLocationClient({ faqs }: Props) {
                     Customary Lands &amp; Town Homes
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Ancestral tribal land is governed by customary traditions. For self-acquired town buildings, residential plots, and shops in Churachandpur, Ukhrul, or Senapati, a written Will ensures clear transmission to intended heirs without clan disputes.
+                    Family tribal land is governed by customary traditions. For self-acquired town buildings, home plots, and shops in Churachandpur, Ukhrul, or Senapati, a written Will ensures clear transfer to intended heirs without clan fights.
                   </p>
                 </div>
 
@@ -1431,10 +1431,10 @@ export default function ManipurLocationClient({ faqs }: Props) {
                     Movable &amp; Digital Assets
                   </span>
                   <h3 className="font-bold text-base text-slate-900">
-                    Banks, Demat &amp; Commercial Units
+                    Banks, Demat &amp; Shop Units
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Bank accounts with SBI, Punjab National Bank, or Manipur Rural Bank, commercial vehicles, gold ornaments, and demat shares require explicit executor powers and residuary clauses to enable swift transmission.
+                    Bank accounts with SBI, Punjab National Bank, or Manipur Rural Bank, shop vehicles, gold ornaments, and demat shares require explicit executor powers and residuary clauses to enable swift transfer.
                   </p>
                 </div>
               </div>
@@ -1451,7 +1451,7 @@ export default function ManipurLocationClient({ faqs }: Props) {
                   11. Manipur SRO Registration Fees &amp; Stamp Duty Schedule
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Unlike commercial sale deeds or gift transfers that incur substantial stamp duties in Manipur, testamentary Wills are completely exempt from ad-valorem stamp duty. Statutory registry fees in Manipur are purely nominal:
+                  Unlike shop sale deeds or gift transfers that incur substantial stamp duties in Manipur, testamentary Wills are completely exempt from ad-valorem stamp duty. Legal registry fees in Manipur are purely nominal:
                 </p>
               </div>
 
@@ -1460,7 +1460,7 @@ export default function ManipurLocationClient({ faqs }: Props) {
                   <thead>
                     <tr className="bg-slate-100/80 border-b border-slate-200 text-slate-800">
                       <th className="p-4 font-bold">Fee Component</th>
-                      <th className="p-4 font-bold">Statutory Amount</th>
+                      <th className="p-4 font-bold">Legal Amount</th>
                       <th className="p-4 font-bold">Remittance Authority</th>
                     </tr>
                   </thead>
@@ -1472,7 +1472,7 @@ export default function ManipurLocationClient({ faqs }: Props) {
                     </tr>
                     <tr>
                       <td className="p-4 font-semibold">SRO Book III Registration Fee</td>
-                      <td className="p-4 font-bold text-[#C65378]">₹100 – ₹200 (Nominal Statutory Fee)</td>
+                      <td className="p-4 font-bold text-[#C65378]">₹100 – ₹200 (Nominal Legal Fee)</td>
                       <td className="p-4">Manipur Registration Department</td>
                     </tr>
                     <tr>
@@ -1501,7 +1501,7 @@ export default function ManipurLocationClient({ faqs }: Props) {
                   12. Transparent Will Packages &amp; Legal Fees in Manipur
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Choose the legal assistance package tailored to your family&apos;s estate planning and property portfolio in Manipur:
+                  Choose the legal help package tailored to your family&apos;s estate planning and property portfolio in Manipur:
                 </p>
               </div>
 
@@ -1528,11 +1528,11 @@ export default function ManipurLocationClient({ faqs }: Props) {
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>Legally vetted statutory clauses</span>
+                        <span>Legally vetted legal clauses</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>Instant PDF download &amp; execution guide</span>
+                        <span>Instant PDF download &amp; signing guide</span>
                       </li>
                     </ul>
                   </div>
@@ -1552,16 +1552,16 @@ export default function ManipurLocationClient({ faqs }: Props) {
                   </div>
                   <div className="space-y-4">
                     <span className="text-xs font-bold uppercase tracking-wider text-[#C65378]">
-                      Comprehensive
+                      Full
                     </span>
                     <h3 className="font-extrabold text-xl text-slate-900">
-                      Advocate Consultation
+                      Lawyer Talk
                     </h3>
                     <div className="text-3xl font-black text-slate-900">
                       ₹4,990
                     </div>
                     <p className="text-xs text-slate-600">
-                      Senior estate advocate review for valley Pattas, hill holdings, and multi-heir distribution.
+                      Senior estate lawyer review for valley Pattas, hill holdings, and multi-heir split.
                     </p>
                     <ul className="space-y-2.5 text-xs text-slate-700 pt-3 border-t border-slate-100">
                       <li className="flex items-center gap-2">
@@ -1570,11 +1570,11 @@ export default function ManipurLocationClient({ faqs }: Props) {
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>1-on-1 video call with senior advocate</span>
+                        <span>1-on-1 video call with senior lawyer</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>Section 158 MLR &amp; LR Act verification</span>
+                        <span>Section 158 MLR &amp; LR Act check</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
@@ -1586,7 +1586,7 @@ export default function ManipurLocationClient({ faqs }: Props) {
                     href="/contact"
                     className="mt-6 w-full py-3 rounded-xl bg-[#C65378] text-white text-xs font-bold text-center hover:bg-[#a13c5d] transition-colors cursor-pointer"
                   >
-                    Book Advocate Call
+                    Book Lawyer Call
                   </a>
                 </div>
 
@@ -1603,7 +1603,7 @@ export default function ManipurLocationClient({ faqs }: Props) {
                       ₹9,990
                     </div>
                     <p className="text-xs text-slate-600">
-                      End-to-end registration coordination across any Manipur Sub-Registrar Office or home visit.
+                      End-to-end registration coordination across any Manipur SRO office or home visit.
                     </p>
                     <ul className="space-y-2.5 text-xs text-slate-700 pt-3 border-t border-slate-100">
                       <li className="flex items-center gap-2">
@@ -1612,7 +1612,7 @@ export default function ManipurLocationClient({ faqs }: Props) {
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>Advocate physically attends Manipur SRO</span>
+                        <span>Lawyer physically attends Manipur SRO</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
@@ -1686,7 +1686,7 @@ export default function ManipurLocationClient({ faqs }: Props) {
                   <span>STATUTORY CITATIONS</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  14. Statutory References &amp; Manipur Legal Portals
+                  14. Legal References &amp; Manipur Legal Portals
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Our drafting protocols comply strictly with codified Indian statutes and Manipur state land registration frameworks:
@@ -1717,7 +1717,7 @@ export default function ManipurLocationClient({ faqs }: Props) {
                     MLR &amp; LR Act 1960
                   </span>
                   <p className="text-xs text-slate-600">
-                    Section 158 (Tribal land transfer restrictions) and Sub-Deputy Collector Jamabandi mutation.
+                    Section 158 (Tribal land transfer restrictions) and Sub-Deputy Collector Jamabandi name change.
                   </p>
                 </div>
 
@@ -1726,7 +1726,7 @@ export default function ManipurLocationClient({ faqs }: Props) {
                     Loucha Pathap Portal
                   </span>
                   <p className="text-xs text-slate-600">
-                    Official Manipur land records &amp; Jamabandi verification portal: <code>louchapathap.nic.in</code>.
+                    Official Manipur land records &amp; Jamabandi check portal: <code>louchapathap.nic.in</code>.
                   </p>
                 </div>
               </div>
@@ -1735,10 +1735,10 @@ export default function ManipurLocationClient({ faqs }: Props) {
             {/* BOTTOM CONVERSION CTA BANNER */}
             <section className="rounded-3xl bg-gradient-to-br from-[#172228] to-[#212F35] text-white p-8 sm:p-12 text-center space-y-5 shadow-xl">
               <h3 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-white">
-                Protect Your Manipur Properties &amp; Family Legacy
+                Protect Your Manipur Assets &amp; Family Legacy
               </h3>
               <p className="text-sm sm:text-base text-slate-200 max-w-2xl mx-auto leading-relaxed">
-                Do not leave your hard-earned Manipur Patta land, family homesteads, or commercial savings to administrative confusion. Draft a legally binding Will online today or consult our senior advocates.
+                Do not leave your hard-earned Manipur Patta land, family homesteads, or shop savings to office confusion. Draft a legally binding Will online today or consult our senior lawyers.
               </p>
               <div className="pt-3 flex flex-col sm:flex-row items-center justify-center gap-4">
                 <a
@@ -1752,7 +1752,7 @@ export default function ManipurLocationClient({ faqs }: Props) {
                   href="/contact"
                   className="w-full sm:w-auto px-6 py-3.5 rounded-full bg-white/10 text-white font-bold text-sm sm:text-base hover:bg-white/20 transition-all border border-white/20"
                 >
-                  Book Advocate Consultation
+                  Book Lawyer Talk
                 </a>
               </div>
             </section>
@@ -1795,7 +1795,7 @@ export default function ManipurLocationClient({ faqs }: Props) {
               />
             </div>
             <div className="pt-3 flex items-center justify-between text-xs text-slate-500">
-              <span>Manipur SRO Registered &amp; Loucha Pathap Mutation Compliant</span>
+              <span>Manipur SRO Registered &amp; Loucha Pathap Name Change Compliant</span>
               <a
                 href="/start"
                 onClick={(e) => {

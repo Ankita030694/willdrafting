@@ -124,19 +124,19 @@ const INITIAL_CHECKLIST = [
   },
   {
     id: "item-2",
-    label: "Original Aadhaar Card & PAN of Testator",
+    label: "Original Aadhaar Card & PAN of Will maker",
     detail: "Essential for biometric identity validation, electronic thumbprint, and digital photo capture at the SRO counter.",
     checked: true,
   },
   {
     id: "item-3",
     label: "Two Independent Adult Witnesses with Aadhaar",
-    detail: "Must carry original photo IDs and must not be beneficiaries receiving any property or asset under the Will.",
+    detail: "Must carry original photo IDs and must not be heirs receiving any property or asset under the Will.",
     checked: true,
   },
   {
     id: "item-4",
-    label: "Doctor Mental Fitness Certificate (MBBS / MD)",
+    label: "Doctor Sound Mind Note (MBBS / MD)",
     detail: "Strongly recommended for senior citizens aged 60+. Certifies testamentary mental capacity and lucidity.",
     checked: false,
   },
@@ -148,20 +148,20 @@ const INITIAL_CHECKLIST = [
   },
   {
     id: "item-6",
-    label: "Municipal Property Tax Receipts (RMC / JNAC / DMC)",
-    detail: "Current holding tax paid challans proving accurate house number, ward, and municipal identification.",
+    label: "City House Tax Receipts (RMC / JNAC / DMC)",
+    detail: "Current holding tax paid challans proving accurate house number, ward, and municipal ID.",
     checked: false,
   },
   {
     id: "item-7",
-    label: "Jharbhoomi Land Records / Khatiyan / Mutation Slips",
-    detail: "Computerized Khasra and Khatiyan extract for ancestral or agricultural land proving clear non-tribal or transferable title.",
+    label: "Jharbhoomi Land Records / Khatiyan / Name Change Slips",
+    detail: "Computerized Khasra and Khatiyan extract for family or farm land proving clear non-tribal or transferable title.",
     checked: false,
   },
   {
     id: "item-8",
     label: "Tata Steel Sub-Lease Papers (For Jamshedpur Assets)",
-    detail: "Sub-lease deed copies issued by Tata Steel Land Department for properties in Bistupur, Kadma, or Circuit House Area.",
+    detail: "Sub-lease deed copies issued by Tata Steel Land Department for assets in Bistupur, Kadma, or Circuit House Area.",
     checked: false,
   },
 ];
@@ -268,7 +268,7 @@ export default function JharkhandLocationClient({ faqs }: Props) {
               </h1>
 
               <p className="text-base sm:text-lg text-slate-200 leading-relaxed font-normal max-w-2xl">
-                Draft a legally binding Will for your Ranchi municipal homes, Tata Steel sub-leasehold plots in Jamshedpur, Dhanbad commercial assets, and Jharbhoomi ancestral lands. Ensure complete compliance with CNT and SPT tenancy safeguards, senior advocate drafting, NGDRS Jharkhand slot booking, and Section 31 doorstep execution.
+                Draft a legally binding Will for your Ranchi municipal homes, Tata Steel sub-leasehold plots in Jamshedpur, Dhanbad shop assets, and Jharbhoomi family lands. Ensure complete compliance with CNT and SPT tenancy safeguards, senior lawyer drafting, NGDRS Jharkhand slot booking, and Section 31 doorstep signing.
               </p>
 
               <div className="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
@@ -474,13 +474,13 @@ export default function JharkhandLocationClient({ faqs }: Props) {
 
               <div className="prose prose-slate max-w-none text-slate-700 text-sm sm:text-base leading-relaxed space-y-4">
                 <p>
-                  Securing your family&apos;s financial future in Jharkhand demands an estate plan that reconciles modern urban wealth with intricate regional land tenures. From high-value private bungalows in Ranchi&apos;s Ashok Nagar and Morabadi to unique 99-year Tata Steel sub-leasehold residential plots in Jamshedpur, coal trading commercial complexes in Dhanbad, and ancestral agricultural parcels across all 24 districts, bequeathing assets requires precision.
+                  Securing your family&apos;s financial future in Jharkhand demands an estate plan that reconciles modern urban wealth with intricate regional land tenures. From high-value private bungalows in Ranchi&apos;s Ashok Nagar and Morabadi to unique 99-year Tata Steel sub-leasehold home plots in Jamshedpur, coal trading shop complexes in Dhanbad, and family farm parcels across all 24 districts, bequeathing assets requires precision.
                 </p>
                 <p>
-                  A properly drafted and registered testamentary Will serves as your final voice. It completely supersedes default intestate succession disputes under personal laws, eliminates conflicting claims among extended family branches, and provides unassailable documentary authority during digital mutation on the official <strong>Jharbhoomi land records portal</strong>.
+                  A properly drafted and registered testamentary Will serves as your final voice. It completely supersedes default without a Will succession fights under personal laws, eliminates conflicting claims among extended family branches, and provides unassailable documentary authority during digital name change on the official <strong>Jharbhoomi land records portal</strong>.
                 </p>
                 <p>
-                  Our legal platform connects Jharkhand testators directly with experienced estate advocates. We combine compliant statutory drafting with seamless <strong>NGDRS Jharkhand e-Panjiyan</strong> appointment scheduling, doctor mental fitness certification, and <strong>Section 31 doorstep execution</strong> across Ranchi, Jamshedpur, Dhanbad, Bokaro, and all surrounding districts.
+                  Our legal platform connects Jharkhand testators directly with experienced estate lawyers. We combine compliant legal drafting with seamless <strong>NGDRS Jharkhand e-Panjiyan</strong> appointment scheduling, doctor mental fitness certification, and <strong>Section 31 doorstep signing</strong> across Ranchi, Jamshedpur, Dhanbad, Bokaro, and all surrounding districts.
                 </p>
               </div>
 
@@ -493,9 +493,9 @@ export default function JharkhandLocationClient({ faqs }: Props) {
                   </span>
                 </div>
                 <div className="bg-white rounded-2xl border border-slate-200/90 p-4 shadow-xs">
-                  <span className="text-2xl font-black text-slate-900 block">Non-Mandatory</span>
+                  <span className="text-2xl font-black text-slate-900 block">Non-Needed</span>
                   <span className="text-xs text-slate-600 font-medium">
-                    Civil court probate is non-mandatory under Jharkhand High Court non-presidency rules.
+                    Civil court probate is non-needed under Jharkhand High Court non-presidency rules.
                   </span>
                 </div>
                 <div className="bg-white rounded-2xl border border-slate-200/90 p-4 shadow-xs">
@@ -533,7 +533,7 @@ export default function JharkhandLocationClient({ faqs }: Props) {
                       Indian Succession Act, 1925
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Governs the testamentary disposition of movable and immovable property. Under <strong>Section 59</strong>, any adult of sound mind may dispose of their property by Will. Under <strong>Section 63</strong>, the testator must sign each page in the physical presence of at least two independent adult witnesses who attest in their presence.
+                      Governs the Will of movable and land and flats. Under <strong>Section 59</strong>, any adult of sound mind may dispose of their property by Will. Under <strong>Section 63</strong>, the Will maker must sign each page in the physical presence of at least two independent adult witnesses who attest in their presence.
                     </p>
                   </div>
                   <div className="pt-3 border-t border-slate-100 text-xs text-slate-500">
@@ -551,11 +551,11 @@ export default function JharkhandLocationClient({ faqs }: Props) {
                       Chota Nagpur Tenancy (CNT) Act, 1908
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Enacted to protect indigenous land rights across Ranchi, Dhanbad, Bokaro, and Hazaribagh. <strong>Section 46 and Section 71A</strong> prohibit the alienation or transfer of tribal raiyati land to non-tribals. A Will cannot be used as an evasive tool to transfer tribal holdings to non-tribal entities; our advocates ensure clear non-tribal title certification.
+                      Enacted to protect indigenous land rights across Ranchi, Dhanbad, Bokaro, and Hazaribagh. <strong>Section 46 and Section 71A</strong> prohibit the alienation or transfer of tribal raiyati land to non-tribals. A Will cannot be used as an evasive tool to transfer tribal holdings to non-tribal entities; our lawyers make sure clear non-tribal title certification.
                     </p>
                   </div>
                   <div className="pt-3 border-t border-slate-100 text-xs text-slate-500">
-                    Urban non-tribal municipal properties are completely transferable via Will.
+                    Urban non-tribal municipal assets are completely transferable via Will.
                   </div>
                 </div>
 
@@ -569,11 +569,11 @@ export default function JharkhandLocationClient({ faqs }: Props) {
                       Santhal Parganas Tenancy (SPT) Act, 1949
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Governs Deoghar, Dumka, Godda, Jamtara, Pakur, and Sahibganj. <strong>Section 20</strong> strictly forbids transfer of raiyati lands by sale, gift, mortgage, or Will unless backed by recognized customary village tenancy records. Urban freehold and municipal holding tax properties in Deoghar and Jasidih remain fully bequeathable.
+                      Governs Deoghar, Dumka, Godda, Jamtara, Pakur, and Sahibganj. <strong>Section 20</strong> strictly forbids transfer of raiyati lands by sale, gift, mortgage, or Will unless backed by recognized customary village tenancy records. Urban freehold and municipal holding tax assets in Deoghar and Jasidih remain fully bequeathable.
                     </p>
                   </div>
                   <div className="pt-3 border-t border-slate-100 text-xs text-slate-500">
-                    Mandatory review prevents post-demise rejection during revenue circle mutation.
+                    Needed review prevents post-demise rejection during revenue circle name change.
                   </div>
                 </div>
 
@@ -584,10 +584,10 @@ export default function JharkhandLocationClient({ faqs }: Props) {
                       Digital Revenue Portal
                     </span>
                     <h3 className="font-extrabold text-lg text-slate-900">
-                      Jharbhoomi Land Mutation Protocol
+                      Jharbhoomi Land Name Change Protocol
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      The Department of Revenue, Registration and Land Reforms Jharkhand manages all rural and peri-urban land mutation via the <strong>Jharbhoomi portal</strong> (<code>jharbhoomi.jharkhand.gov.in</code>). Presenting a Book III registered Will ensures the Circle Officer initiates swift public notice and updates the digital Khatiyan without litigation.
+                      The Department of Revenue, Registration and Land Reforms Jharkhand manages all rural and peri-urban land name change via the <strong>Jharbhoomi portal</strong> (<code>jharbhoomi.jharkhand.gov.in</code>). Presenting a Book III registered Will ensures the Circle Officer initiates swift public notice and updates the digital Khatiyan without court fights.
                     </p>
                   </div>
                   <div className="pt-3 border-t border-slate-100 text-xs text-slate-500">
@@ -605,10 +605,10 @@ export default function JharkhandLocationClient({ faqs }: Props) {
                   <span>REGISTRATION ACT, 1908</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  3. Registration Rules: Optional vs Mandatory Will Execution
+                  3. Registration Rules: Optional vs Needed Will Signing
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Under <strong>Section 18(e) of the Registration Act, 1908</strong>, registering a Will is legally optional in the State of Jharkhand. A Will drafted on plain A4 paper and executed before two independent witnesses carries legal force from the instant of signing. However, in Jharkhand&apos;s land records landscape, registration is overwhelmingly recommended:
+                  Under <strong>Section 18(e) of the Registration Act, 1908</strong>, registering a Will is legally optional in the State of Jharkhand. A Will drafted on plain A4 paper and signed before two independent witnesses carries legal force from the instant of signing. However, in Jharkhand&apos;s land records landscape, registration is overwhelmingly recommended:
                 </p>
               </div>
 
@@ -638,9 +638,9 @@ export default function JharkhandLocationClient({ faqs }: Props) {
                       <td className="p-4 font-bold text-emerald-700">Virtually immune; verified by Sub-Registrar biometrics</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-semibold">Jharbhoomi &amp; RMC Mutation</td>
+                      <td className="p-4 font-semibold">Jharbhoomi &amp; RMC Name Change</td>
                       <td className="p-4">Slow; circle officers often demand affidavits</td>
-                      <td className="p-4 font-bold text-[#C65378]">Fast digital mutation and tax record transfer</td>
+                      <td className="p-4 font-bold text-[#C65378]">Fast digital name change and tax record transfer</td>
                     </tr>
                     <tr>
                       <td className="p-4 font-semibold">Tata Steel Lease Transfer (Jamshedpur)</td>
@@ -650,7 +650,7 @@ export default function JharkhandLocationClient({ faqs }: Props) {
                     <tr>
                       <td className="p-4 font-semibold">Official Registration Cost</td>
                       <td className="p-4">₹0</td>
-                      <td className="p-4 font-bold text-slate-900">₹100 flat statutory fee + nominal scanning</td>
+                      <td className="p-4 font-bold text-slate-900">₹100 flat legal fee + nominal scanning</td>
                     </tr>
                   </tbody>
                 </table>
@@ -679,13 +679,13 @@ export default function JharkhandLocationClient({ faqs }: Props) {
                   </div>
                   <div className="space-y-2">
                     <h3 className="font-extrabold text-lg text-slate-900">
-                      Probate is Non-Mandatory in Jharkhand under Section 213 ISA
+                      Probate is Non-Needed in Jharkhand under Section 213 ISA
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Under <strong>Section 213 read with Section 57 of the Indian Succession Act, 1925</strong>, court probate is compulsory only within the historical presidential towns of Mumbai, Kolkata, and Chennai, or for Wills executed within those territories concerning real estate situated there.
+                      Under <strong>Section 213 read with Section 57 of the Indian Succession Act, 1925</strong>, court probate is needed only within the historical presidential towns of Mumbai, Kolkata, and Chennai, or for Wills signed within those territories concerning real estate situated there.
                     </p>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      The <strong>High Court of Jharkhand at Ranchi</strong> has affirmed that for Hindu, Sikh, Jain, Buddhist, and Christian testators residing in Jharkhand, probate is strictly non-compulsory. Beneficiaries can directly apply for municipal tax name changes, bank account transfers, and Jharbhoomi mutation by producing the registered Will and certified death certificate.
+                      The <strong>High Court of Jharkhand at Ranchi</strong> has affirmed that for Hindu, Sikh, Jain, Buddhist, and Christian testators residing in Jharkhand, probate is strictly non-needed. Heirs can directly apply for municipal tax name changes, bank account transfers, and Jharbhoomi name change by producing the registered Will and certified death paper.
                     </p>
                   </div>
                 </div>
@@ -694,14 +694,14 @@ export default function JharkhandLocationClient({ faqs }: Props) {
                   <div className="space-y-0.5">
                     <span className="font-bold text-slate-900 block">When is Probate Advisable in Jharkhand?</span>
                     <span className="text-slate-600">
-                      Only when hostile legal heirs challenge the authenticity of the Will in a civil partition suit, or when the testator held immovable assets located inside Kolkata, Mumbai, or Chennai presidency limits.
+                      Only when hostile legal heirs challenge the authenticity of the Will in a civil split suit, or when the Will maker held immovable assets located inside Kolkata, Mumbai, or Chennai presidency limits.
                     </span>
                   </div>
                   <a
                     href="#service-pricing"
                     className="shrink-0 font-bold text-[#C65378] hover:underline"
                   >
-                    Consult an Advocate →
+                    Consult an Lawyer →
                   </a>
                 </div>
               </div>
@@ -718,7 +718,7 @@ export default function JharkhandLocationClient({ faqs }: Props) {
                   5. Jharkhand SRO Directory: NGDRS Registration Offices
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Jharkhand operates registration offices governed by the National Generic Document Registration System (NGDRS Jharkhand). Under Section 32 of the Registration Act, your Will can be registered at the Sub-Registrar Office having jurisdiction over your place of residence or where any portion of your immovable property is situated:
+                  Jharkhand operates registration offices governed by the National Generic Document Registration System (NGDRS Jharkhand). Under Section 32 of the Registration Act, your Will can be registered at the SRO office having area over your place of residence or where any portion of your land and flats is situated:
                 </p>
               </div>
 
@@ -790,7 +790,7 @@ export default function JharkhandLocationClient({ faqs }: Props) {
                       <p className="text-slate-600">{activeHubData.timings}</p>
                     </div>
                     <div className="md:col-span-2 space-y-1">
-                      <span className="font-bold text-slate-900 block">Key Localities in Jurisdiction:</span>
+                      <span className="font-bold text-slate-900 block">Key Localities in Area:</span>
                       <p className="text-slate-600 leading-relaxed">{activeHubData.areas}</p>
                     </div>
                   </div>
@@ -803,7 +803,7 @@ export default function JharkhandLocationClient({ faqs }: Props) {
                       href="/contact"
                       className="inline-flex items-center gap-1.5 font-bold text-[#C65378] hover:underline"
                     >
-                      <span>Request Advocate Assistance for {activeHubData.name}</span>
+                      <span>Request Lawyer Help for {activeHubData.name}</span>
                       <ArrowRight className="w-3.5 h-3.5" />
                     </a>
                   </div>
@@ -822,7 +822,7 @@ export default function JharkhandLocationClient({ faqs }: Props) {
                   6. Regional Cities: Area-Wise Will Drafting in Jharkhand
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Estate assets in Jharkhand span state capital residences in Ranchi, 99-year Tata Steel leasehold plots in Jamshedpur, coal enterprise and trading wealth in Dhanbad, planned steel townships in Bokaro, pilgrimage properties in Deoghar, and ancestral land parcels across North and South Chotanagpur. Our advocates provide tailored drafting and NGDRS support across all key regions:
+                  Estate assets in Jharkhand span state capital residences in Ranchi, 99-year Tata Steel leasehold plots in Jamshedpur, coal enterprise and trading wealth in Dhanbad, planned steel townships in Bokaro, pilgrimage assets in Deoghar, and family land parcels across North and South Chotanagpur. Our lawyers provide tailored drafting and NGDRS support across all key regions:
                 </p>
               </div>
 
@@ -853,7 +853,7 @@ export default function JharkhandLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Specialized <strong>Will drafting services in Ranchi</strong> for Ranchi Regional Development Authority (RRDA) plotted layouts, RMC municipal apartments, and private residences. Formulates watertight bequests ensuring full compliance with non-tribal ownership provisions of the CNT Act, municipal holding tax mutation, and liquid mutual fund distribution.
+                      Specialized <strong>Will drafting services in Ranchi</strong> for Ranchi Regional Development Authority (RRDA) plotted layouts, RMC municipal apartments, and private residences. Formulates watertight bequests making sure full compliance with non-tribal ownership rules of the CNT Act, municipal holding tax name change, and liquid mutual fund split.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -862,7 +862,7 @@ export default function JharkhandLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Kutchery Sadar, Ranchi</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        NGDRS token booking, advocate physical attendance at Kutchery SRO, and Section 31 home visits in Ashok Nagar and Kanke.
+                        NGDRS token booking, lawyer physical attendance at Kutchery SRO, and Section 31 home visits in Ashok Nagar and Kanke.
                       </p>
                     </div>
                   </div>
@@ -907,7 +907,7 @@ export default function JharkhandLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Expert <strong>Will drafting services in Jamshedpur</strong> addressing unique Tata Steel residential sub-leasehold plots and company bungalows. Incorporates testamentary clauses that facilitate seamless verification by the Tata Steel Land Department and JNAC holding tax department to prevent succession deadlocks.
+                      Expert <strong>Will drafting services in Jamshedpur</strong> addressing unique Tata Steel home sub-leasehold plots and company bungalows. Incorporates testamentary clauses that facilitate seamless check by the Tata Steel Land Department and JNAC holding tax department to prevent succession deadlocks.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -916,7 +916,7 @@ export default function JharkhandLocationClient({ faqs }: Props) {
                         <span>SRO Hub: DC Office Compound, Sakchi</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Sakchi SRO execution, Tata Steel sub-leasehold transfer protocols, and Section 31 doorstep service for senior Tata executives.
+                        Sakchi SRO signing, Tata Steel sub-leasehold transfer protocols, and Section 31 doorstep service for senior Tata executives.
                       </p>
                     </div>
                   </div>
@@ -961,7 +961,7 @@ export default function JharkhandLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Customized <strong>Will drafting services in Dhanbad</strong> for commercial showrooms in Bank More, residential complexes along Saraidhela, and mining logistics firms. Codifies BCCL/CCL retirement funds, commercial transport fleet assets, and DMC municipal tax records to protect family enterprise continuity.
+                      Customized <strong>Will drafting services in Dhanbad</strong> for shop showrooms in Bank More, home complexes along Saraidhela, and mining logistics firms. Codifies BCCL/CCL retirement funds, shop transport fleet assets, and DMC municipal tax records to protect family enterprise continuity.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -976,7 +976,7 @@ export default function JharkhandLocationClient({ faqs }: Props) {
                   </div>
 
                   <div className="pt-4 mt-4 border-t border-slate-100 flex items-center justify-between">
-                    <span className="text-xs font-bold text-slate-500">Commercial &amp; Mining Assets</span>
+                    <span className="text-xs font-bold text-slate-500">Shop &amp; Mining Assets</span>
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
@@ -1015,7 +1015,7 @@ export default function JharkhandLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Structured <strong>Will drafting services in Bokaro and Chas</strong> for SAIL employee cooperative societies, independent houses in Chas, and industrial engineering ancillaries in Balidih. Protects family inheritance from disputes, specifies executor powers, and ensures seamless computerized mutation.
+                      Structured <strong>Will drafting services in Bokaro and Chas</strong> for SAIL employee cooperative societies, independent houses in Chas, and industrial engineering ancillaries in Balidih. Protects family inheritance from fights, specifies executor powers, and ensures seamless computerized name change.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1069,7 +1069,7 @@ export default function JharkhandLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Dedicated <strong>Will drafting services in Deoghar</strong> and the Santhal Pargana division respecting Section 20 of the SPT Act, 1949. Protects urban freehold properties, hospitality assets, and non-raiyati residential plots from unauthorized inheritance claims while keeping tribal land tenure intact.
+                      Dedicated <strong>Will drafting services in Deoghar</strong> and the Santhal Pargana division respecting Section 20 of the SPT Act, 1949. Protects urban freehold assets, hospitality assets, and non-raiyati home plots from unauthorized inheritance claims while keeping tribal land tenure intact.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1078,7 +1078,7 @@ export default function JharkhandLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Civil Court Road, Deoghar</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Expert SPT tenancy verification, hotel/guest house succession planning, and Sub-Registrar accompaniment.
+                        Expert SPT tenancy check, hotel/guest house succession planning, and Sub-Registrar accompaniment.
                       </p>
                     </div>
                   </div>
@@ -1123,7 +1123,7 @@ export default function JharkhandLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Authoritative <strong>Will drafting in Hazaribagh, Ramgarh, and Giridih</strong> for ancestral agricultural parcels, mica and stone processing firms, and commercial properties along the NH-33 corridor. Formulates clear bequest shares that satisfy Jharbhoomi digital mutation norms.
+                      Authoritative <strong>Will drafting in Hazaribagh, Ramgarh, and Giridih</strong> for family farm parcels, mica and stone processing firms, and shop assets along the NH-33 corridor. Formulates clear bequest shares that satisfy Jharbhoomi digital name change norms.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1132,13 +1132,13 @@ export default function JharkhandLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Collectorate Complex, Hazaribagh</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Khatiyan verification, mineral and trade firm succession, and Section 31 doorstep assistance across rural estates.
+                        Khatiyan check, mineral and trade firm succession, and Section 31 doorstep help across rural estates.
                       </p>
                     </div>
                   </div>
 
                   <div className="pt-4 mt-4 border-t border-slate-100 flex items-center justify-between">
-                    <span className="text-xs font-bold text-slate-500">Ancestral Lands &amp; Mines</span>
+                    <span className="text-xs font-bold text-slate-500">Family Lands &amp; Mines</span>
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
@@ -1164,7 +1164,7 @@ export default function JharkhandLocationClient({ faqs }: Props) {
                   7. 5-Step Legal SOP: How to Draft &amp; Register in Jharkhand
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Follow this verified 5-stage standard operating procedure to create, execute, and register your Will before the Sub-Registrar in Jharkhand:
+                  Follow this verified 5-stage standard operating step to create, execute, and register your Will before the Sub-Registrar in Jharkhand:
                 </p>
               </div>
 
@@ -1189,7 +1189,7 @@ export default function JharkhandLocationClient({ faqs }: Props) {
                       2
                     </span>
                     <h3 className="font-bold text-sm text-slate-900">
-                      Advocate Drafting
+                      Lawyer Drafting
                     </h3>
                     <p className="text-xs text-slate-600 leading-relaxed">
                       Draft customized legal clauses covering revocation of past wills, survivorship, executor powers, minor guardianships, and community law compliance.
@@ -1203,10 +1203,10 @@ export default function JharkhandLocationClient({ faqs }: Props) {
                       3
                     </span>
                     <h3 className="font-bold text-sm text-slate-900">
-                      Valid Execution
+                      Valid Signing
                     </h3>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Print on standard A4 paper and sign each page in the physical presence of two independent non-beneficiary adult witnesses holding valid Aadhaar cards.
+                      Print on standard A4 paper and sign each page in the physical presence of two independent non-heir adult witnesses holding valid Aadhaar cards.
                     </p>
                   </div>
                 </div>
@@ -1234,7 +1234,7 @@ export default function JharkhandLocationClient({ faqs }: Props) {
                       SRO Biometrics
                     </h3>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Visit the Sub-Registrar office with witnesses for verbal verification, photo capture, and biometric thumbprinting to complete permanent Book III registry.
+                      Visit the SRO office with witnesses for verbal check, photo capture, and biometric thumbprinting to complete permanent Book III registry.
                     </p>
                   </div>
                 </div>
@@ -1252,7 +1252,7 @@ export default function JharkhandLocationClient({ faqs }: Props) {
                   8. Doorstep Registration: Section 31 Home Visit Facility
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  For elderly, ailing, or bedridden citizens residing in Ashok Nagar, Circuit House Area, Saraidhela, or remote ancestral homes, traveling to a crowded Sub-Registrar Office can be physically daunting. Under <strong>Section 31 of the Registration Act, 1908</strong>, the Sub-Registrar holds statutory power to attend a private home or hospital:
+                  For elderly, ailing, or bedridden citizens residing in Ashok Nagar, Circuit House Area, Saraidhela, or remote family homes, traveling to a crowded SRO office can be physically daunting. Under <strong>Section 31 of the Registration Act, 1908</strong>, the Sub-Registrar holds legal power to attend a private home or hospital:
                 </p>
               </div>
 
@@ -1273,7 +1273,7 @@ export default function JharkhandLocationClient({ faqs }: Props) {
                     <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
                     <div>
                       <strong className="text-slate-900 block">Special Commission Petition</strong>
-                      <span className="text-slate-600">Our legal team files the Section 31 home-visit application before the jurisdictional District Sub-Registrar.</span>
+                      <span className="text-slate-600">Our legal team files the Section 31 home-visit form before the jurisdictional District Sub-Registrar.</span>
                     </div>
                   </div>
 
@@ -1281,7 +1281,7 @@ export default function JharkhandLocationClient({ faqs }: Props) {
                     <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
                     <div>
                       <strong className="text-slate-900 block">Official Commission Fee</strong>
-                      <span className="text-slate-600">A nominal statutory government fee is deposited via the official treasury e-Challan to schedule the officer visit.</span>
+                      <span className="text-slate-600">A nominal legal government fee is deposited via the official treasury e-Challan to schedule the officer visit.</span>
                     </div>
                   </div>
 
@@ -1307,7 +1307,7 @@ export default function JharkhandLocationClient({ faqs }: Props) {
                   9. Document Checklist: What You Need for SRO Registration
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Use this interactive checklist to verify that all necessary legal records and identities are prepared prior to executing your Will:
+                  Use this interactive checklist to verify that all necessary legal records and identities are prepared prior to signing your Will:
                 </p>
               </div>
 
@@ -1342,12 +1342,12 @@ export default function JharkhandLocationClient({ faqs }: Props) {
                 </div>
 
                 <div className="pt-4 border-t border-slate-100 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 text-xs text-slate-500">
-                  <span>Need personalized document audit from an estate advocate?</span>
+                  <span>Need personalized document audit from an estate lawyer?</span>
                   <a
                     href="#service-pricing"
                     className="font-bold text-[#C65378] hover:underline"
                   >
-                    View Comprehensive Plans →
+                    View Full Plans →
                   </a>
                 </div>
               </div>
@@ -1361,10 +1361,10 @@ export default function JharkhandLocationClient({ faqs }: Props) {
                   <span>ASSET INVENTORY</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  10. Property Types Covered: Residential, Leasehold &amp; Land
+                  10. Property Types Covered: Home, Leasehold &amp; Land
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Our customized legal drafts encompass all categories of real, commercial, and financial assets across Jharkhand:
+                  Our customized legal drafts encompass all categories of real, shop, and financial assets across Jharkhand:
                 </p>
               </div>
 
@@ -1377,7 +1377,7 @@ export default function JharkhandLocationClient({ faqs }: Props) {
                     Municipal Freehold Homes
                   </h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Apartments, builder floors, and residential houses registered under Ranchi Municipal Corporation (RMC), Chas Municipal, or DMC holding tax registers.
+                    Apartments, builder floors, and home houses registered under Ranchi Municipal Corporation (RMC), Chas Municipal, or DMC holding tax registers.
                   </p>
                 </div>
 
@@ -1389,7 +1389,7 @@ export default function JharkhandLocationClient({ faqs }: Props) {
                     Tata Steel Sub-Leasehold
                   </h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Long-term 99-year residential sub-leases granted by Tata Steel across Jamshedpur&apos;s Circuit House Area, Bistupur, Northern Town, and Kadma.
+                    Long-term 99-year home sub-leases granted by Tata Steel across Jamshedpur&apos;s Circuit House Area, Bistupur, Northern Town, and Kadma.
                   </p>
                 </div>
 
@@ -1401,7 +1401,7 @@ export default function JharkhandLocationClient({ faqs }: Props) {
                     Jharbhoomi Farmland
                   </h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Non-tribal agricultural acreage and ancestral groves recorded on computerized Khatiyan and Khasra sheets across all 24 revenue circles.
+                    Non-tribal farm acreage and family groves recorded on computerized Khatiyan and Khasra sheets across all 24 revenue circles.
                   </p>
                 </div>
 
@@ -1413,7 +1413,7 @@ export default function JharkhandLocationClient({ faqs }: Props) {
                     Trade &amp; Mining Ancillaries
                   </h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Commercial retail shops in Bank More, coal trading logistics partnerships, stone crushing units, and private limited company shares.
+                    Shop retail shops in Bank More, coal trading logistics partnerships, stone crushing units, and private limited company shares.
                   </p>
                 </div>
 
@@ -1463,7 +1463,7 @@ export default function JharkhandLocationClient({ faqs }: Props) {
                   <thead>
                     <tr className="bg-slate-100/80 border-b border-slate-200 text-slate-800">
                       <th className="p-4 font-bold">Fee Component</th>
-                      <th className="p-4 font-bold">Statutory Amount</th>
+                      <th className="p-4 font-bold">Legal Amount</th>
                       <th className="p-4 font-bold">Remittance Mode</th>
                     </tr>
                   </thead>
@@ -1475,7 +1475,7 @@ export default function JharkhandLocationClient({ faqs }: Props) {
                     </tr>
                     <tr>
                       <td className="p-4 font-semibold">SRO Book III Registration Fee</td>
-                      <td className="p-4 font-bold text-[#C65378]">₹100 (Flat Statutory Fee)</td>
+                      <td className="p-4 font-bold text-[#C65378]">₹100 (Flat Legal Fee)</td>
                       <td className="p-4">NGDRS Jharkhand via e-Challan</td>
                     </tr>
                     <tr>
@@ -1504,7 +1504,7 @@ export default function JharkhandLocationClient({ faqs }: Props) {
                   12. Professional Plans &amp; Transparent Legal Drafting Fees
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Choose the legal assistance package tailored to your family&apos;s estate planning and property portfolio in Jharkhand:
+                  Choose the legal help package tailored to your family&apos;s estate planning and property portfolio in Jharkhand:
                 </p>
               </div>
 
@@ -1531,11 +1531,11 @@ export default function JharkhandLocationClient({ faqs }: Props) {
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>Legally vetted statutory clauses</span>
+                        <span>Legally vetted legal clauses</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>Instant PDF download &amp; execution guide</span>
+                        <span>Instant PDF download &amp; signing guide</span>
                       </li>
                     </ul>
                   </div>
@@ -1555,16 +1555,16 @@ export default function JharkhandLocationClient({ faqs }: Props) {
                   </div>
                   <div className="space-y-4">
                     <span className="text-xs font-bold uppercase tracking-wider text-[#C65378]">
-                      Comprehensive
+                      Full
                     </span>
                     <h3 className="font-extrabold text-xl text-slate-900">
-                      Advocate Consultation
+                      Lawyer Talk
                     </h3>
                     <div className="text-3xl font-black text-slate-900">
                       ₹4,990
                     </div>
                     <p className="text-xs text-slate-600">
-                      Senior estate advocate review for RMC homes, Tata Steel sub-leases, and multi-heir estates.
+                      Senior estate lawyer review for RMC homes, Tata Steel sub-leases, and multi-heir estates.
                     </p>
                     <ul className="space-y-2.5 text-xs text-slate-700 pt-3 border-t border-slate-100">
                       <li className="flex items-center gap-2">
@@ -1573,7 +1573,7 @@ export default function JharkhandLocationClient({ faqs }: Props) {
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>1-on-1 video call with senior advocate</span>
+                        <span>1-on-1 video call with senior lawyer</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
@@ -1589,7 +1589,7 @@ export default function JharkhandLocationClient({ faqs }: Props) {
                     href="/contact"
                     className="mt-6 w-full py-3 rounded-xl bg-[#C65378] text-white text-xs font-bold text-center hover:bg-[#a13c5d] transition-colors cursor-pointer"
                   >
-                    Book Advocate Call
+                    Book Lawyer Call
                   </a>
                 </div>
 
@@ -1606,7 +1606,7 @@ export default function JharkhandLocationClient({ faqs }: Props) {
                       ₹9,990
                     </div>
                     <p className="text-xs text-slate-600">
-                      End-to-end registration coordination across any Jharkhand Sub-Registrar Office or home visit.
+                      End-to-end registration coordination across any Jharkhand SRO office or home visit.
                     </p>
                     <ul className="space-y-2.5 text-xs text-slate-700 pt-3 border-t border-slate-100">
                       <li className="flex items-center gap-2">
@@ -1615,7 +1615,7 @@ export default function JharkhandLocationClient({ faqs }: Props) {
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>Advocate physically attends SRO</span>
+                        <span>Lawyer physically attends SRO</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
@@ -1690,7 +1690,7 @@ export default function JharkhandLocationClient({ faqs }: Props) {
                   <span>STATUTORY CITATIONS</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  14. Statutory Citations &amp; Legal Reference Framework
+                  14. Legal Citations &amp; Legal Reference Framework
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Our drafting protocols comply strictly with codified Indian statutes and Jharkhand state registration systems:
@@ -1739,10 +1739,10 @@ export default function JharkhandLocationClient({ faqs }: Props) {
             {/* BOTTOM CONVERSION CTA BANNER */}
             <section className="rounded-3xl bg-gradient-to-br from-[#172228] to-[#212F35] text-white p-8 sm:p-12 text-center space-y-5 shadow-xl">
               <h3 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-white">
-                Protect Your Jharkhand Properties &amp; Family Legacy
+                Protect Your Jharkhand Assets &amp; Family Legacy
               </h3>
               <p className="text-slate-300 text-xs sm:text-sm md:text-base max-w-2xl mx-auto leading-relaxed">
-                Draft a legally vetted, CNT-compliant Will in less than 15 minutes. Secure Book III registration before your local Sub-Registrar or request an advocate home visit.
+                Draft a legally vetted, CNT-compliant Will in less than 15 minutes. Secure Book III registration before your local Sub-Registrar or request an lawyer home visit.
               </p>
               <div className="pt-2 flex flex-col sm:flex-row items-center justify-center gap-4">
                 <a
@@ -1756,7 +1756,7 @@ export default function JharkhandLocationClient({ faqs }: Props) {
                   href="/contact"
                   className="w-full sm:w-auto px-8 py-4 rounded-xl bg-white/10 text-white font-bold text-sm hover:bg-white/15 transition-all border border-white/20 backdrop-blur-xs cursor-pointer"
                 >
-                  Consult an Estate Advocate
+                  Consult an Estate Lawyer
                 </a>
               </div>
             </section>
@@ -1800,7 +1800,7 @@ export default function JharkhandLocationClient({ faqs }: Props) {
               />
             </div>
             <div className="pt-3 flex items-center justify-between text-xs text-slate-300">
-              <span>Jharkhand NGDRS Registered &amp; Jharbhoomi Mutation Compliant</span>
+              <span>Jharkhand NGDRS Registered &amp; Jharbhoomi Name Change Compliant</span>
               <a
                 href="/start"
                 onClick={(e) => {

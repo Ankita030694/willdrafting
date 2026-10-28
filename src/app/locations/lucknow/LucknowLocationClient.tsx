@@ -115,7 +115,7 @@ const INITIAL_CHECKLIST = [
   },
   {
     id: "item-2",
-    label: "Original Aadhaar Card & PAN of Testator",
+    label: "Original Aadhaar Card & PAN of Will maker",
     detail: "Required for identity checks and digital photo capture at the Lucknow SRO counter.",
     checked: true,
   },
@@ -146,7 +146,7 @@ const INITIAL_CHECKLIST = [
   {
     id: "item-7",
     label: "Two Passport Photos Each",
-    detail: "Recent color passport photos for testator and both witnesses for Book III records.",
+    detail: "Recent color passport photos for Will maker and both witnesses for Book III records.",
     checked: false,
   },
 ];
@@ -266,7 +266,7 @@ export default function LucknowLocationClient({ faqs }: Props) {
               <div className="pt-4 grid grid-cols-3 gap-3 border-t border-white/10 text-xs text-slate-300">
                 <div className="flex items-center gap-2">
                   <Check className="w-4 h-4 text-emerald-400 shrink-0" />
-                  <span>LDA Mutation Ready</span>
+                  <span>LDA Name Change Ready</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <Check className="w-4 h-4 text-emerald-400 shrink-0" />
@@ -486,7 +486,7 @@ export default function LucknowLocationClient({ faqs }: Props) {
                   <div className="p-4 rounded-2xl bg-slate-50/70 border border-slate-100 space-y-1.5">
                     <div className="flex items-center gap-2 font-bold text-sm text-slate-900">
                       <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
-                      <span>Probate Not Mandatory</span>
+                      <span>Probate Not Needed</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
                       Lucknow was never a British presidency town. The Allahabad High Court has ruled that probate is not needed in Uttar Pradesh for Hindu, Sikh, Jain, or Buddhist Wills.
@@ -499,7 +499,7 @@ export default function LucknowLocationClient({ faqs }: Props) {
                       <span>Zero Stamp Duty</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Wills do not require stamp duty in Uttar Pradesh. At the Lucknow Sub-Registrar Office, you pay only a flat ₹100 registration fee and minor scanning charges.
+                      Wills do not require stamp duty in Uttar Pradesh. At the Lucknow SRO office, you pay only a flat ₹100 registration fee and minor scanning charges.
                     </p>
                   </div>
 
@@ -527,10 +527,10 @@ export default function LucknowLocationClient({ faqs }: Props) {
               </h3>
               <div className="prose prose-slate max-w-none text-slate-700 leading-relaxed space-y-4">
                 <p>
-                  Estate planning in Lucknow follows Indian succession laws and UP land rules. You may own an LDA house in Gomti Nagar, an old family home in Chowk, or farmland in Mohanlalganj. Making a clear Will protects your family from property disputes.
+                  Estate planning in Lucknow follows Indian succession laws and UP land rules. You may own an LDA house in Gomti Nagar, an old family home in Chowk, or farmland in Mohanlalganj. Making a clear Will protects your family from property fights.
                 </p>
                 <p>
-                  Under Section 59 of the Indian Succession Act, 1925, any adult of sound mind can write a Will. You can give away your self-earned house, land, cash, and bank funds. For ancestral property, Hindu family members can also give their undivided share under Section 30 of the Hindu Succession Act, 1956.
+                  Under Section 59 of the Indian Succession Act, 1925, any adult of sound mind can write a Will. You can give away your self-earned house, land, cash, and bank funds. For family property, Hindu family members can also give their undivided share under Section 30 of the Hindu Succession Act, 1956.
                 </p>
               </div>
 
@@ -542,7 +542,7 @@ export default function LucknowLocationClient({ faqs }: Props) {
                   </div>
                   <h3 className="font-extrabold text-slate-900 text-sm">Sound Disposing Mind</h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    The person making the Will must understand their assets and decisions. A doctor fitness certificate is helpful for senior citizens.
+                    The person making the Will must understand their assets and decisions. A doctor fitness paper is helpful for senior citizens.
                   </p>
                 </div>
 
@@ -592,7 +592,7 @@ export default function LucknowLocationClient({ faqs }: Props) {
                   Under Section 18(e) of the Registration Act, 1908, registering a Will is optional in Uttar Pradesh. A Will written on plain white paper is legally valid if two witnesses sign it.
                 </p>
                 <p>
-                  Even so, registering your Will at the Lucknow Sub-Registrar Office offers major benefits. Under Section 114 of the Indian Evidence Act, courts presume a registered Will is genuine. This makes it very hard for disgruntled relatives to claim the Will is fake.
+                  Even so, registering your Will at the Lucknow SRO office offers major benefits. Under Section 114 of the Indian Evidence Act, courts presume a registered Will is genuine. This makes it very hard for disgruntled relatives to claim the Will is fake.
                 </p>
               </div>
 
@@ -619,8 +619,8 @@ export default function LucknowLocationClient({ faqs }: Props) {
                         <td className="p-3.5 sm:p-4 text-emerald-700 font-semibold">Direct transfer without long public notices</td>
                       </tr>
                       <tr>
-                        <td className="p-3.5 sm:p-4 font-bold text-slate-900">Tehsil Land Mutation</td>
-                        <td className="p-3.5 sm:p-4">High risk of disputes by relatives</td>
+                        <td className="p-3.5 sm:p-4 font-bold text-slate-900">Tehsil Land Name Change</td>
+                        <td className="p-3.5 sm:p-4">High risk of fights by relatives</td>
                         <td className="p-3.5 sm:p-4 text-emerald-700 font-semibold">Quick order under UP Revenue Code</td>
                       </tr>
                       <tr>
@@ -640,17 +640,17 @@ export default function LucknowLocationClient({ faqs }: Props) {
             </section>
 
             {/* SECTION 3: LDA PROPERTY MUTATION */}
-            <section id="lda-property-mutation" className="scroll-target space-y-6">
+            <section id="lda-property-name change" className="scroll-target space-y-6">
               <div className="flex items-center gap-2 text-xs font-black uppercase tracking-wider text-[#C65378]">
                 <Building className="w-4 h-4 text-[#C65378]" />
                 <span>SECTION 3: LDA ESTATE TRANSFER RULES</span>
               </div>
               <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                3. LDA Property Will Transfer: Mutation Guidelines
+                3. LDA Property Will Transfer: Name Change Guidelines
               </h3>
               <div className="prose prose-slate max-w-none text-slate-700 leading-relaxed space-y-4">
                 <p>
-                  The Lucknow Development Authority (LDA) handles plots and apartments in Gomti Nagar, Jankipuram, and Kanpur Road. When an owner passes away, the legal heir must apply for name transfer (mutation) at Pradhikaran Bhawan in Gomti Nagar.
+                  The Lucknow Development Authority (LDA) handles plots and apartments in Gomti Nagar, Jankipuram, and Kanpur Road. When an owner passes away, the legal heir must apply for name transfer (name change) at Pradhikaran Bhawan in Gomti Nagar.
                 </p>
                 <p>
                   A registered Will makes this process fast and simple. For an unregistered Will, the LDA often asks for newspaper ads, a 30-day objection wait, and costly indemnity bonds. A registered Will helps you skip long delays and transfer the property directly.
@@ -664,9 +664,9 @@ export default function LucknowLocationClient({ faqs }: Props) {
                     1
                   </div>
                   <div className="space-y-1">
-                    <h3 className="font-extrabold text-slate-900 text-sm">Submit Application &amp; Documents</h3>
+                    <h3 className="font-extrabold text-slate-900 text-sm">Submit Form &amp; Documents</h3>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Apply on the LDA portal with your allotment letter, sale deed, death certificate, and registered Will copy.
+                      Apply on the LDA portal with your allotment letter, sale deed, death paper, and registered Will copy.
                     </p>
                   </div>
                 </div>
@@ -688,7 +688,7 @@ export default function LucknowLocationClient({ faqs }: Props) {
                     3
                   </div>
                   <div className="space-y-1">
-                    <h3 className="font-extrabold text-slate-900 text-sm">LDA Mutation Order</h3>
+                    <h3 className="font-extrabold text-slate-900 text-sm">LDA Name Change Order</h3>
                     <p className="text-xs text-slate-600 leading-relaxed">
                       After checking your files, the LDA issues a fresh transfer letter in your name.
                     </p>
@@ -704,11 +704,11 @@ export default function LucknowLocationClient({ faqs }: Props) {
                 <span>SECTION 4: AGRICULTURAL SUCCESSION</span>
               </div>
               <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                4. UP Revenue Code 2006: Agricultural Land in Will
+                4. UP Revenue Code 2006: Farm Land in Will
               </h3>
               <div className="prose prose-slate max-w-none text-slate-700 leading-relaxed space-y-4">
                 <p>
-                  Succession to farmland in Lucknow follows the Uttar Pradesh Revenue Code, 2006. This state law takes priority over general personal laws for agricultural land. It applies to rural lands in Mohanlalganj, Malihabad, and Bakshi Ka Talab.
+                  Succession to farmland in Lucknow follows the Uttar Pradesh Revenue Code, 2006. This state law takes priority over general personal laws for farm land. It applies to rural lands in Mohanlalganj, Malihabad, and Bakshi Ka Talab.
                 </p>
                 <p>
                   Under Section 107 of the UP Revenue Code, 2006, a Bhumidhar with transferable rights can bequeath their land by Will. Keep these key legal rules in mind:
@@ -731,18 +731,18 @@ export default function LucknowLocationClient({ faqs }: Props) {
                 <div className="p-4.5 rounded-2xl bg-white border border-slate-200/90 shadow-xs space-y-2">
                   <div className="flex items-center gap-2 text-rose-700 font-bold text-xs uppercase">
                     <ShieldCheck className="w-4 h-4 text-[#C65378]" />
-                    <span>Statutory Order</span>
+                    <span>Legal Order</span>
                   </div>
                   <h3 className="font-extrabold text-slate-900 text-sm">Female Landholder Rule</h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    A woman who inherited land under statutory succession must follow the order in Section 108 and 109.
+                    A woman who inherited land under legal succession must follow the order in Section 108 and 109.
                   </p>
                 </div>
 
                 <div className="p-4.5 rounded-2xl bg-white border border-slate-200/90 shadow-xs space-y-2">
                   <div className="flex items-center gap-2 text-rose-700 font-bold text-xs uppercase">
                     <CheckCircle2 className="w-4 h-4 text-emerald-600" />
-                    <span>Tehsil Mutation</span>
+                    <span>Tehsil Name Change</span>
                   </div>
                   <h3 className="font-extrabold text-slate-900 text-sm">Khatauni ROR Entry</h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
@@ -763,7 +763,7 @@ export default function LucknowLocationClient({ faqs }: Props) {
               </h3>
               <div className="prose prose-slate max-w-none text-slate-700 leading-relaxed space-y-4">
                 <p>
-                  Under Section 213 and Section 57 of the Indian Succession Act, 1925, court probate is mandatory only in Mumbai, Kolkata, and Chennai. These are historic British presidency towns.
+                  Under Section 213 and Section 57 of the Indian Succession Act, 1925, court probate is needed only in Mumbai, Kolkata, and Chennai. These are historic British presidency towns.
                 </p>
                 <p>
                   Lucknow is not a presidency town. The Hon&apos;ble Allahabad High Court has ruled that probate is strictly optional in Uttar Pradesh. Key rulings include <em>Smt. Raj Rani v. Rama Devi</em> and <em>Ram Chand v. Deputy Director of Consolidation</em>.
@@ -779,7 +779,7 @@ export default function LucknowLocationClient({ faqs }: Props) {
                   <span>Key Takeaway for Lucknow Residents</span>
                 </div>
                 <p className="text-xs text-emerald-800 leading-relaxed">
-                  You do not need to spend months seeking probate from the District Court at Kaisarbagh. A registered Will executed on UP IGRSUP provides complete authority for asset transfer across Lucknow.
+                  You do not need to spend months seeking probate from the District Court at Kaisarbagh. A registered Will signed on UP IGRSUP provides complete authority for asset transfer across Lucknow.
                 </p>
               </div>
             </section>
@@ -794,7 +794,7 @@ export default function LucknowLocationClient({ faqs }: Props) {
                 6. Lucknow Sub-Registrar Offices: Tehsil Directory
               </h3>
               <p className="text-sm text-slate-600 leading-relaxed">
-                Will registration in Lucknow happens at the Sub-Registrar Office where you live or where your property is located. Use the search box below to find your nearest registration office:
+                Will registration in Lucknow happens at the SRO office where you live or where your property is located. Use the search box below to find your nearest registration office:
               </p>
 
               {/* SEARCH FILTER */}
@@ -859,8 +859,8 @@ export default function LucknowLocationClient({ faqs }: Props) {
                   7. Locality-Wise Will Drafting Services Across Lucknow Areas
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Looking for legally verified <strong>Will drafting services in Gomti Nagar, Aliganj, Hazratganj, or Indira Nagar</strong>? Property categories across Lucknow range from LDA freehold plots and UPHDB Awas Vikas sectors to luxury condominiums along Shaheed Path, ancestral havelis in Old Lucknow, and mango farmlands in Malihabad.
-                  Our senior advocates provide customized legal drafting, UP IGRSUP portal slot booking, and Sub-Registrar accompaniment tailored to your locality:
+                  Looking for legally verified <strong>Will drafting services in Gomti Nagar, Aliganj, Hazratganj, or Indira Nagar</strong>? Property categories across Lucknow range from LDA freehold plots and UPHDB Awas Vikas sectors to luxury condominiums along Shaheed Path, family havelis in Old Lucknow, and mango farmlands in Malihabad.
+                  Our senior lawyers provide customized legal drafting, UP IGRSUP portal slot booking, and Sub-Registrar accompaniment tailored to your locality:
                 </p>
               </div>
 
@@ -891,7 +891,7 @@ export default function LucknowLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Specialized <strong>Will drafting services in Aliganj</strong> and Mahanagar for prime LDA freehold plots, duplex homes, and commercial shops in Kapoorthala. Probate is optional in UP—a registered Will gives heirs undisputed title mutation before LDA and Lucknow Nagar Nigam.
+                      Specialized <strong>Will drafting services in Aliganj</strong> and Mahanagar for prime LDA freehold plots, duplex homes, and shop shops in Kapoorthala. Probate is optional in UP—a registered Will gives heirs undisputed title name change before LDA and Lucknow Nagar Nigam.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -900,7 +900,7 @@ export default function LucknowLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Vikas Nagar Mini Secretariat (SRO III &amp; IV)</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        UP IGRSUP biometric scheduling, LDA freehold mutation clauses, and doorstep Section 31 visits for senior testators across Aliganj.
+                        UP IGRSUP biometric scheduling, LDA freehold name change clauses, and doorstep Section 31 visits for senior testators across Aliganj.
                       </p>
                     </div>
                   </div>
@@ -938,14 +938,14 @@ export default function LucknowLocationClient({ faqs }: Props) {
 
                     <div className="flex flex-wrap gap-1.5 text-[11px] text-slate-600">
                       <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Gomti Nagar (Vipin, Vipul, Vishal)</span>
-                      <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Vibhuti Khand Commercial &amp; IT</span>
+                      <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Vibhuti Khand Shop &amp; IT</span>
                       <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Gomti Nagar Extension (Shaheed Path)</span>
                       <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Patrakarpuram &amp; Mithai Kothi</span>
                       <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Ekana Stadium Belt</span>
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Dedicated <strong>Will drafting services in Gomti Nagar</strong> and Gomti Nagar Extension for planned LDA villas, multi-storey luxury flats, and Vibhuti Khand IT offices. Includes precise clauses for LDA leasehold conversion, flat distribution, and NRI asset succession.
+                      Dedicated <strong>Will drafting services in Gomti Nagar</strong> and Gomti Nagar Extension for planned LDA villas, multi-storey luxury flats, and Vibhuti Khand IT offices. Includes precise clauses for LDA leasehold conversion, flat split, and NRI asset succession.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -954,7 +954,7 @@ export default function LucknowLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Sector 8 Indira Nagar &amp; Vikas Nagar</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Comprehensive support for LDA Pradhikaran Bhawan mutation, NRI estate planning, and expedited Book III registration.
+                        Full support for LDA Pradhikaran Bhawan name change, NRI estate planning, and expedited Book III registration.
                       </p>
                     </div>
                   </div>
@@ -999,7 +999,7 @@ export default function LucknowLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Premium <strong>Will drafting services in Hazratganj</strong> and Civil Lines for prime ancestral bungalows, heritage freehold parcels, and retail establishments along MG Marg. Tailored for rental cashflow bequests and dispute-proof family distributions.
+                      Premium <strong>Will drafting services in Hazratganj</strong> and Civil Lines for prime family bungalows, heritage freehold parcels, and retail establishments along MG Marg. Tailored for rental cashflow bequests and fight-proof family distributions.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1008,7 +1008,7 @@ export default function LucknowLocationClient({ faqs }: Props) {
                         <span>SRO Hub: District Collectorate, Kaisarbagh (SRO I &amp; II)</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Advocate representation at Lucknow Sadar Kutchery, senior doctor mental fitness certificates, and private trust creation.
+                        Lawyer representation at Lucknow Sadar Kutchery, senior doctor mental fitness papers, and private trust creation.
                       </p>
                     </div>
                   </div>
@@ -1033,7 +1033,7 @@ export default function LucknowLocationClient({ faqs }: Props) {
                     <div className="flex items-center justify-between gap-2">
                       <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-rose-50 text-[#C65378] border border-rose-100">
                         <MapPin className="w-3.5 h-3.5" />
-                        Awas Vikas Residential
+                        Awas Vikas Home
                       </span>
                       <span className="text-[11px] font-semibold text-slate-500 bg-slate-100 px-2.5 py-1 rounded-lg">
                         SRO Lucknow IV
@@ -1053,7 +1053,7 @@ export default function LucknowLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Expert <strong>Will drafting services in Indira Nagar</strong> and Kalyanpur for Asia&apos;s largest housing colony under UP Housing Board (UPHDB). Covers smooth house mutation, bank FD transmissions, and equity demat porting.
+                      Expert <strong>Will drafting services in Indira Nagar</strong> and Kalyanpur for Asia&apos;s largest housing colony under UP Housing Board (UPHDB). Covers smooth house name change, bank FD transmissions, and equity demat porting.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1062,7 +1062,7 @@ export default function LucknowLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Sector 8 Indira Nagar Mini Secretariat</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Doorstep Section 31 commissioner visits for senior citizens, UPHDB mutation guidance, and swift IGRSUP registration.
+                        Doorstep Section 31 commissioner visits for senior citizens, UPHDB name change guidance, and swift IGRSUP registration.
                       </p>
                     </div>
                   </div>
@@ -1116,7 +1116,7 @@ export default function LucknowLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Tehsil Compound, Mohanlalganj</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        E-slot scheduling at Mohanlalganj SRO, builder sub-lease succession verification, and biometric registration support.
+                        E-slot scheduling at Mohanlalganj SRO, builder sub-lease succession check, and biometric registration support.
                       </p>
                     </div>
                   </div>
@@ -1161,7 +1161,7 @@ export default function LucknowLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Professional <strong>Will drafting services in Jankipuram</strong> and Sitapur Road corridor for LDA planned sectors, builder floors, and institutional residential pockets with clear title transmission safeguards.
+                      Professional <strong>Will drafting services in Jankipuram</strong> and Sitapur Road corridor for LDA planned sectors, builder floors, and institutional home pockets with clear title transfer safeguards.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1170,7 +1170,7 @@ export default function LucknowLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Tehsil Compound, Bakshi Ka Talab (BKT)</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Support for BKT SRO registration, LDA Janhit portal mutation, and doctor mental capacity certification.
+                        Support for BKT SRO registration, LDA Janhit portal name change, and doctor mental capacity certification.
                       </p>
                     </div>
                   </div>
@@ -1215,7 +1215,7 @@ export default function LucknowLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Trusted <strong>Will drafting services in Ashiyana</strong> and Kanpur Road for defense personnel, retired civil officers, and commercial property owners across Alambagh and Singar Nagar.
+                      Trusted <strong>Will drafting services in Ashiyana</strong> and Kanpur Road for defense personnel, retired civil officers, and shop property owners across Alambagh and Singar Nagar.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1224,7 +1224,7 @@ export default function LucknowLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Tehsil Sarojini Nagar / Transport Nagar</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Dedicated advocate attendance, Section 31 doorstep execution for armed forces veterans, and Book III registration.
+                        Dedicated lawyer attendance, Section 31 doorstep signing for armed forces veterans, and Book III registration.
                       </p>
                     </div>
                   </div>
@@ -1269,7 +1269,7 @@ export default function LucknowLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Heritage <strong>Will drafting services in Chowk</strong>, Aminabad, and Malihabad for joint ancestral havelis, retail trading shops, and agricultural mango orchards compliant with UP Revenue Code Section 107.
+                      Heritage <strong>Will drafting services in Chowk</strong>, Aminabad, and Malihabad for joint family havelis, retail trading shops, and farm mango orchards compliant with UP Revenue Code Section 107.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1278,7 +1278,7 @@ export default function LucknowLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Kaisarbagh Kutchery &amp; Malihabad Tehsil</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Specialized HUF share structuring, UP Revenue Code Section 107 compliance, and ancestral estate protection.
+                        Specialized HUF share structuring, UP Revenue Code Section 107 compliance, and family estate protection.
                       </p>
                     </div>
                   </div>
@@ -1321,7 +1321,7 @@ export default function LucknowLocationClient({ faqs }: Props) {
                     1
                   </div>
                   <div className="space-y-1">
-                    <h3 className="font-extrabold text-slate-900 text-sm sm:text-base">List Assets &amp; Beneficiaries</h3>
+                    <h3 className="font-extrabold text-slate-900 text-sm sm:text-base">List Assets &amp; Heirs</h3>
                     <p className="text-xs text-slate-600 leading-relaxed">
                       Make a list of your flats, bank accounts, shares, and land. Choose your heirs and name a trusted executor.
                     </p>
@@ -1333,7 +1333,7 @@ export default function LucknowLocationClient({ faqs }: Props) {
                     2
                   </div>
                   <div className="space-y-1">
-                    <h3 className="font-extrabold text-slate-900 text-sm sm:text-base">Legal Drafting with UP Statutory Clauses</h3>
+                    <h3 className="font-extrabold text-slate-900 text-sm sm:text-base">Legal Drafting with UP Legal Clauses</h3>
                     <p className="text-xs text-slate-600 leading-relaxed">
                       Draft your Will with clear clauses. Include revocation of old Wills, mental sound mind, and LDA transfer instructions.
                     </p>
@@ -1345,7 +1345,7 @@ export default function LucknowLocationClient({ faqs }: Props) {
                     3
                   </div>
                   <div className="space-y-1">
-                    <h3 className="font-extrabold text-slate-900 text-sm sm:text-base">Physical Execution Before Two Witnesses</h3>
+                    <h3 className="font-extrabold text-slate-900 text-sm sm:text-base">Physical Signing Before Two Witnesses</h3>
                     <p className="text-xs text-slate-600 leading-relaxed">
                       Print the Will on plain A4 sheets. Sign each page in front of two adult witnesses who also sign.
                     </p>
@@ -1359,7 +1359,7 @@ export default function LucknowLocationClient({ faqs }: Props) {
                   <div className="space-y-1">
                     <h3 className="font-extrabold text-slate-900 text-sm sm:text-base">Online IGRSUP Portal Slot Booking</h3>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Book an online appointment on igrsup.gov.in for your Lucknow Sub-Registrar Office. Pay the ₹100 fee online.
+                      Book an online appointment on igrsup.gov.in for your Lucknow SRO office. Pay the ₹100 fee online.
                     </p>
                   </div>
                 </div>
@@ -1369,9 +1369,9 @@ export default function LucknowLocationClient({ faqs }: Props) {
                     5
                   </div>
                   <div className="space-y-1">
-                    <h3 className="font-extrabold text-slate-900 text-sm sm:text-base">Biometric Verification at Lucknow SRO</h3>
+                    <h3 className="font-extrabold text-slate-900 text-sm sm:text-base">Biometric Check at Lucknow SRO</h3>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Visit the Sub-Registrar office with two witnesses and your Aadhaar cards. Provide fingerprints, take a photo, and receive your registered Will.
+                      Visit the SRO office with two witnesses and your Aadhaar cards. Provide fingerprints, take a photo, and receive your registered Will.
                     </p>
                   </div>
                 </div>
@@ -1392,7 +1392,7 @@ export default function LucknowLocationClient({ faqs }: Props) {
                   Visiting government offices at Kaisarbagh or Vikas Nagar can be hard for elderly or ill persons. Under Section 31 of the Registration Act, 1908, the Sub-Registrar can visit your home or hospital in Lucknow to register your Will.
                 </p>
                 <p>
-                  Our legal team handles the complete Section 31 request. We arrange the doctor certificate, pay government travel fees, and set up the home visit.
+                  Our legal team handles the complete Section 31 request. We arrange the doctor paper, pay government travel fees, and set up the home visit.
                 </p>
               </div>
 
@@ -1439,7 +1439,7 @@ export default function LucknowLocationClient({ faqs }: Props) {
               </div>
 
               <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                Ensure you carry all mandatory documents on your appointment date. Click each item below to verify your readiness:
+                Ensure you carry all needed documents on your appointment date. Click each item below to verify your readiness:
               </p>
 
               <div className="space-y-3 pt-1">
@@ -1516,7 +1516,7 @@ export default function LucknowLocationClient({ faqs }: Props) {
                 <div className="p-5 rounded-2xl bg-white border border-slate-200/90 shadow-xs space-y-2">
                   <div className="flex items-center gap-2 font-extrabold text-sm text-slate-900">
                     <Home className="w-4 h-4 text-amber-600" />
-                    <span>Ancestral Homes &amp; Freehold Land</span>
+                    <span>Family Homes &amp; Freehold Land</span>
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
                     Old family homes in Hazratganj and Chowk need a family tree and name transfer before the Lucknow Municipal Corporation (LMC).
@@ -1526,7 +1526,7 @@ export default function LucknowLocationClient({ faqs }: Props) {
                 <div className="p-5 rounded-2xl bg-white border border-slate-200/90 shadow-xs space-y-2">
                   <div className="flex items-center gap-2 font-extrabold text-sm text-slate-900">
                     <Scale className="w-4 h-4 text-emerald-600" />
-                    <span>Agricultural Land &amp; Mango Orchards</span>
+                    <span>Farm Land &amp; Mango Orchards</span>
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
                     Farmland in Mohanlalganj, Malihabad, and BKT must list Khasra and Khatauni numbers for quick transfer under the UP Revenue Code.
@@ -1557,7 +1557,7 @@ export default function LucknowLocationClient({ faqs }: Props) {
                     <thead className="bg-slate-50 border-b border-slate-200 text-slate-700 font-extrabold">
                       <tr>
                         <th className="p-3.5 sm:p-4">Official UP Government Fee Component</th>
-                        <th className="p-3.5 sm:p-4">Statutory Charge</th>
+                        <th className="p-3.5 sm:p-4">Legal Charge</th>
                         <th className="p-3.5 sm:p-4">Legal Citation / Note</th>
                       </tr>
                     </thead>
@@ -1580,7 +1580,7 @@ export default function LucknowLocationClient({ faqs }: Props) {
                       <tr>
                         <td className="p-3.5 sm:p-4 font-bold text-slate-900">Certified Copy of Registered Will</td>
                         <td className="p-3.5 sm:p-4 font-bold text-slate-800">₹100 per copy</td>
-                        <td className="p-3.5 sm:p-4">Available only to testator during lifetime</td>
+                        <td className="p-3.5 sm:p-4">Available only to Will maker during lifetime</td>
                       </tr>
                       <tr>
                         <td className="p-3.5 sm:p-4 font-bold text-slate-900">Section 31 Doorstep Inspection Fee</td>
@@ -1603,7 +1603,7 @@ export default function LucknowLocationClient({ faqs }: Props) {
                 13. Transparent Will Packages &amp; Legal Fees in Lucknow
               </h3>
               <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                Choose the service tier that fits your family estate requirements. Transparent pricing with zero hidden costs:
+                Choose the service tier that fits your family estate rules. Transparent pricing with zero hidden costs:
               </p>
 
               {/* PRICING CARDS */}
@@ -1625,11 +1625,11 @@ export default function LucknowLocationClient({ faqs }: Props) {
                     <ul className="space-y-2 text-xs text-slate-700 pt-2 border-t border-slate-100">
                       <li className="flex items-center gap-2">
                         <Check className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
-                        <span>High Court Advocate Vetted</span>
+                        <span>High Court Lawyer Vetted</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
-                        <span>LDA &amp; Bank Mutation Clauses</span>
+                        <span>LDA &amp; Bank Name Change Clauses</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
@@ -1637,7 +1637,7 @@ export default function LucknowLocationClient({ faqs }: Props) {
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
-                        <span>Execution &amp; Witnessing Guide</span>
+                        <span>Signing &amp; Witnessing Guide</span>
                       </li>
                     </ul>
                   </div>
@@ -1659,7 +1659,7 @@ export default function LucknowLocationClient({ faqs }: Props) {
                     <span className="text-[10px] font-mono font-bold uppercase tracking-wider text-rose-300">
                       CONSULTATION PLAN
                     </span>
-                    <h3 className="text-lg font-extrabold text-white">Senior Advocate Will Review</h3>
+                    <h3 className="text-lg font-extrabold text-white">Senior Lawyer Will Review</h3>
                     <div className="flex items-baseline gap-1">
                       <span className="text-3xl font-black text-white">₹4,990</span>
                       <span className="text-xs text-slate-400">/ one-time</span>
@@ -1690,7 +1690,7 @@ export default function LucknowLocationClient({ faqs }: Props) {
                     href="/contact"
                     className="w-full py-3 rounded-full bg-[#C65378] text-white font-extrabold text-xs text-center hover:bg-[#a13c5d] transition-colors shadow-lg shadow-[#C65378]/30 block"
                   >
-                    Book Lawyer Consultation
+                    Book Lawyer Talk
                   </Link>
                 </div>
 
@@ -1731,7 +1731,7 @@ export default function LucknowLocationClient({ faqs }: Props) {
                     href="/contact"
                     className="w-full py-3 rounded-full bg-slate-100 text-slate-900 font-extrabold text-xs text-center hover:bg-slate-200 transition-colors block"
                   >
-                    Request SRO Assistance
+                    Request SRO Help
                   </Link>
                 </div>
               </div>
@@ -1788,7 +1788,7 @@ export default function LucknowLocationClient({ faqs }: Props) {
                 <span>SECTION 15: LEGAL CITATIONS &amp; PORTALS</span>
               </div>
               <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                15. Statutory Acts &amp; Allahabad HC Judgments in UP
+                15. Legal Acts &amp; Allahabad HC Judgments in UP
               </h3>
               <div className="prose prose-slate max-w-none text-slate-700 leading-relaxed space-y-4">
                 <p>
@@ -1799,7 +1799,7 @@ export default function LucknowLocationClient({ faqs }: Props) {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-1 text-xs text-slate-600">
                 <div className="p-4 rounded-2xl bg-white border border-slate-200/90 space-y-1.5">
                   <div className="font-extrabold text-slate-900">Indian Succession Act, 1925</div>
-                  <p>Section 59 (Testamentary capacity), Section 63 (Mandatory two-witness attestation), and Section 213/57 (Probate scope limited to presidency towns).</p>
+                  <p>Section 59 (Sound mind), Section 63 (Needed two-witness attestation), and Section 213/57 (Probate scope limited to presidency towns).</p>
                 </div>
 
                 <div className="p-4 rounded-2xl bg-white border border-slate-200/90 space-y-1.5">
@@ -1809,7 +1809,7 @@ export default function LucknowLocationClient({ faqs }: Props) {
 
                 <div className="p-4 rounded-2xl bg-white border border-slate-200/90 space-y-1.5">
                   <div className="font-extrabold text-slate-900">UP Revenue Code, 2006</div>
-                  <p>Section 107 (Bequest by Bhumidhar with transferable rights), Section 108/109 (Succession rules), and Section 34/35 (Mutation in Khatauni).</p>
+                  <p>Section 107 (Bequest by Bhumidhar with transferable rights), Section 108/109 (Succession rules), and Section 34/35 (Name Change in Khatauni).</p>
                 </div>
 
                 <div className="p-4 rounded-2xl bg-white border border-slate-200/90 space-y-1.5">
@@ -1871,10 +1871,10 @@ export default function LucknowLocationClient({ faqs }: Props) {
                   SECURE YOUR LUCKNOW ESTATE TODAY
                 </span>
                 <h3 className="text-2xl sm:text-3xl font-extrabold tracking-tight leading-tight">
-                  Protect Your Family Wealth &amp; Properties in Lucknow
+                  Protect Your Family Wealth &amp; Assets in Lucknow
                 </h3>
                 <p className="text-xs sm:text-sm text-slate-300 leading-relaxed font-normal">
-                  Avoid future family disputes, prolonged LDA mutation delays, and unnecessary litigation. Draft your legally binding Will online in under 15 minutes or speak to our senior advocates.
+                  Avoid future family fights, prolonged LDA name change delays, and unnecessary court fights. Draft your legally binding Will online in under 15 minutes or speak to our senior lawyers.
                 </p>
               </div>
 

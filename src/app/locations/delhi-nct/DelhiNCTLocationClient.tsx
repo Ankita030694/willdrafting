@@ -147,20 +147,20 @@ const INITIAL_CHECKLIST = [
   },
   {
     id: "item-2",
-    label: "Original Aadhaar Card & PAN of the Testator",
+    label: "Original Aadhaar Card & PAN of the Will maker",
     detail: "Required for biometric thumbprint scanning and live webcam photo capture on the Delhi DORIS portal.",
     checked: true,
   },
   {
     id: "item-3",
     label: "Two Independent Adult Witnesses with Aadhaar",
-    detail: "Both witnesses must carry original photo IDs and must not be beneficiaries receiving assets under the Will.",
+    detail: "Both witnesses must carry original photo IDs and must not be heirs receiving assets under the Will.",
     checked: true,
   },
   {
     id: "item-4",
     label: "Doctor's Mental Capacity Certificate (For Seniors)",
-    detail: "Issued by a registered MBBS practitioner certifying sound testamentary capacity to eliminate dementia challenges.",
+    detail: "Issued by a registered MBBS practitioner certifying sound sound mind to eliminate dementia fights.",
     checked: false,
   },
   {
@@ -178,7 +178,7 @@ const INITIAL_CHECKLIST = [
   {
     id: "item-7",
     label: "Two Recent Color Passport Photos Each",
-    detail: "Clear passport photographs for the testator and both attesting witnesses to paste into SRO Book III registers.",
+    detail: "Clear passport photographs for the Will maker and both witnesses to paste into SRO Book III registers.",
     checked: false,
   },
 ];
@@ -274,8 +274,8 @@ export default function DelhiNCTLocationClient({ faqs }: Props) {
               </h1>
 
               <p className="text-base sm:text-lg text-slate-200 leading-relaxed font-normal max-w-2xl">
-                Draft a legally valid Will for your DDA apartments, independent builder floors, ancestral land, mutual funds, and demat holdings.
-                Get advocate drafting, DORIS portal e-appointment assistance, and doorstep execution for senior citizens across Delhi NCT.
+                Draft a legally valid Will for your DDA apartments, independent builder floors, family land, mutual funds, and demat holdings.
+                Get lawyer drafting, DORIS portal e-appointment help, and doorstep signing for senior citizens across Delhi NCT.
               </p>
 
               <div className="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
@@ -300,7 +300,7 @@ export default function DelhiNCTLocationClient({ faqs }: Props) {
               <div className="pt-4 grid grid-cols-3 gap-3 border-t border-white/10 text-xs text-slate-300">
                 <div className="flex items-center gap-2">
                   <Check className="w-4 h-4 text-emerald-400 shrink-0" />
-                  <span>Delhi HC Advocate Vetted</span>
+                  <span>Delhi HC Lawyer Vetted</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <Check className="w-4 h-4 text-emerald-400 shrink-0" />
@@ -521,10 +521,10 @@ export default function DelhiNCTLocationClient({ faqs }: Props) {
                   <div className="p-4 rounded-2xl bg-slate-50/70 border border-slate-100 space-y-1.5">
                     <div className="flex items-center gap-2 font-bold text-sm text-slate-900">
                       <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
-                      <span>Probate Non-Compulsory</span>
+                      <span>Probate Non-Needed</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Delhi is a non-presidency town. Under Section 213 of the Indian Succession Act, probate is optional for Delhi properties, saving years of court delays and hefty fees.
+                      Delhi is a non-presidency town. Under Section 213 of the Indian Succession Act, probate is optional for Delhi assets, saving years of court delays and hefty fees.
                     </p>
                   </div>
 
@@ -541,7 +541,7 @@ export default function DelhiNCTLocationClient({ faqs }: Props) {
                   <div className="p-4 rounded-2xl bg-slate-50/70 border border-slate-100 space-y-1.5">
                     <div className="flex items-center gap-2 font-bold text-sm text-slate-900">
                       <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
-                      <span>Direct DDA &amp; MCD Mutation</span>
+                      <span>Direct DDA &amp; MCD Name Change</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
                       A registered Will expedites property tax name transfer across MCD zones, DDA freehold conveyance deeds, and L&amp;DO leasehold mutations without legal hassles.
@@ -563,12 +563,12 @@ export default function DelhiNCTLocationClient({ faqs }: Props) {
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Drafting a Will in Delhi is governed by the <strong>Indian Succession Act, 1925</strong> and the <strong>Registration Act, 1908</strong>.
-                  Any adult of sound mind who has attained 18 years of age can make a Will to bequeath self-acquired properties, bank deposits, mutual funds, demat equities, and personal effects.
+                  Any adult of sound mind who has attained 18 years of age can make a Will to bequeath self-acquired assets, bank deposits, mutual funds, demat equities, and personal effects.
                 </p>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Delhi presents a unique property fabric.
-                  Families hold DDA freehold flats in Dwarka or Rohini, ancestral Havelis in Old Delhi, multi-story independent builder floors in Greater Kailash, and corporate equity portfolios in New Delhi.
-                  A professionally drafted Will ensures your estate is transferred seamlessly without bitter family litigation.
+                  Families hold DDA freehold flats in Dwarka or Rohini, family Havelis in Old Delhi, multi-story independent builder floors in Greater Kailash, and corporate equity portfolios in New Delhi.
+                  A professionally drafted Will ensures your estate is transferred seamlessly without bitter family court fights.
                 </p>
               </div>
 
@@ -579,7 +579,7 @@ export default function DelhiNCTLocationClient({ faqs }: Props) {
                   </span>
                   <h3 className="font-bold text-sm text-slate-900">Legal Capacity</h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    The testator must be at least 18 years old and possess sound testamentary capacity (Section 59).
+                    The Will maker must be at least 18 years old and possess sound sound mind (Section 59).
                   </p>
                 </div>
 
@@ -609,7 +609,7 @@ export default function DelhiNCTLocationClient({ faqs }: Props) {
                   </span>
                   <h3 className="font-bold text-sm text-slate-900">Independent</h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Witnesses must not be beneficiaries receiving any asset under the Will (Section 67).
+                    Witnesses must not be heirs receiving any asset under the Will (Section 67).
                   </p>
                 </div>
               </div>
@@ -630,7 +630,7 @@ export default function DelhiNCTLocationClient({ faqs }: Props) {
                   A Will written on plain A4 paper is legally valid before Delhi courts if signed in the presence of two independent witnesses.
                 </p>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  However, registering your Will at a Delhi Sub-Registrar Office via the DORIS portal provides decisive advantages.
+                  However, registering your Will at a Delhi SRO office via the DORIS portal provides decisive advantages.
                   The document is preserved in government Book III registers, which stops false claims of forgery or tampering:
                 </p>
               </div>
@@ -657,17 +657,17 @@ export default function DelhiNCTLocationClient({ faqs }: Props) {
                       <td className="p-4 bg-slate-50/20">Lower. Disgruntled legal heirs often claim forged signatures or coercion</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-semibold">DDA &amp; MCD Mutation</td>
+                      <td className="p-4 font-semibold">DDA &amp; MCD Name Change</td>
                       <td className="p-4 bg-rose-50/20">Accepted directly for property tax name change and conveyance deed transfer</td>
-                      <td className="p-4 bg-slate-50/20">Authorities frequently demand succession certificates or survivor affidavits</td>
+                      <td className="p-4 bg-slate-50/20">Offices often demand succession papers or survivor affidavits</td>
                     </tr>
                     <tr>
                       <td className="p-4 font-semibold">Society Flat Transfer (CGHS)</td>
-                      <td className="p-4 bg-rose-50/20">Simplifies share certificate transfer in Dwarka and Rohini housing societies</td>
+                      <td className="p-4 bg-rose-50/20">Simplifies share paper transfer in Dwarka and Rohini housing societies</td>
                       <td className="p-4 bg-slate-50/20">Society managing committees may require family consensus and indemnity bonds</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-semibold">Statutory Government Fee</td>
+                      <td className="p-4 font-semibold">Legal Government Fee</td>
                       <td className="p-4 bg-rose-50/20 font-bold text-[#C65378]">Flat ₹100 registration fee plus nominal scanning</td>
                       <td className="p-4 bg-slate-50/20 font-bold text-slate-700">₹0 government fee</td>
                     </tr>
@@ -684,14 +684,14 @@ export default function DelhiNCTLocationClient({ faqs }: Props) {
                   <span>JURISDICTION RULES</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  3. Is Probate Mandatory for Properties in Delhi NCT?
+                  3. Is Probate Needed for Assets in Delhi NCT?
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Probate is a court decree certifying the genuineness of a Will and appointing the executor to manage the deceased testator&apos;s assets.
+                  Probate is a court decree certifying the genuineness of a Will and appointing the executor to manage the deceased Will maker&apos;s assets.
                 </p>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Under <strong>Section 213(2) read with Section 57(a) and (b) of the Indian Succession Act, 1925</strong>, probate is mandatory only in the historical presidency towns of Mumbai, Kolkata, and Chennai.
-                  <strong> Delhi is a non-presidency territory.</strong> The Delhi High Court has held in multiple judgments that probate is non-compulsory for Hindu, Sikh, Jain, and Buddhist Wills in Delhi.
+                  Under <strong>Section 213(2) read with Section 57(a) and (b) of the Indian Succession Act, 1925</strong>, probate is needed only in the historical presidency towns of Mumbai, Kolkata, and Chennai.
+                  <strong> Delhi is a non-presidency territory.</strong> The Delhi High Court has held in multiple judgments that probate is non-needed for Hindu, Sikh, Jain, and Buddhist Wills in Delhi.
                 </p>
               </div>
 
@@ -704,11 +704,11 @@ export default function DelhiNCTLocationClient({ faqs }: Props) {
                     Probate Strictly Optional in Delhi
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Landmark Delhi High Court rulings confirm that an executor or legatee can establish ownership rights over Delhi properties, bank deposits, and shares without applying for court probate decrees.
+                    Landmark Delhi High Court rulings confirm that an executor or legatee can set up ownership rights over Delhi assets, bank deposits, and shares without applying for court probate decrees.
                   </p>
                   <div className="pt-2 text-xs text-slate-500 flex items-center gap-1.5">
                     <Check className="w-3.5 h-3.5 text-emerald-600" />
-                    <span>Saves high court fees and years of civil court litigation</span>
+                    <span>Saves high court fees and years of civil court court fights</span>
                   </div>
                 </div>
 
@@ -720,11 +720,11 @@ export default function DelhiNCTLocationClient({ faqs }: Props) {
                     When is Probate or Succession Advice Needed?
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    While probate is optional in Delhi, an executor may voluntarily apply for probate if a contentious legal heir challenges the Will in the District Court (Tis Hazari, Saket, or Dwarka), or if institutional bodies raise objections.
+                    While probate is optional in Delhi, an executor may voluntarily apply for probate if a contentious legal heir fights the Will in the District Court (Tis Hazari, Saket, or Dwarka), or if institutional bodies raise objections.
                   </p>
                   <div className="pt-2 text-xs text-slate-500 flex items-center gap-1.5">
                     <AlertTriangle className="w-3.5 h-3.5 text-[#C65378]" />
-                    <span>A registered Will drastically minimizes dispute vulnerabilities</span>
+                    <span>A registered Will drastically minimizes fight risks</span>
                   </div>
                 </div>
               </div>
@@ -733,10 +733,10 @@ export default function DelhiNCTLocationClient({ faqs }: Props) {
               <div className="p-5 rounded-2xl bg-white border border-slate-200/90 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 shadow-xs">
                 <div>
                   <h4 className="font-bold text-sm text-slate-900">
-                    Do you also hold flats or ancestral property in Mumbai or Kolkata?
+                    Do you also hold flats or family property in Mumbai or Kolkata?
                   </h4>
                   <p className="text-xs text-slate-600 mt-1">
-                    If your Delhi Will includes real estate located within Mumbai or Kolkata, presidency town probate mandates may apply to those specific properties.
+                    If your Delhi Will includes real estate located within Mumbai or Kolkata, presidency town probate mandates may apply to those specific assets.
                   </p>
                 </div>
                 <Link
@@ -761,7 +761,7 @@ export default function DelhiNCTLocationClient({ faqs }: Props) {
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Will registration across Delhi NCT is administered by the Revenue Department, Government of NCT of Delhi.
-                  Under Section 32 of the Registration Act, you can present your Will at the Sub-Registrar office having jurisdiction over your residence.
+                  Under Section 32 of the Registration Act, you can present your Will at the SRO office having area over your residence.
                 </p>
               </div>
 
@@ -867,7 +867,7 @@ export default function DelhiNCTLocationClient({ faqs }: Props) {
                   5. Area-Wise Will Drafting Services Across Delhi NCT Localities
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Looking for legally verified <strong>Will drafting services in South Delhi, Dwarka, Rohini, or Preet Vihar</strong>? Our senior succession advocates offer end-to-end legal drafting, DORIS portal slot booking, and Sub-Registrar accompaniment tailored to the specific property dynamics of Delhi NCT:
+                  Looking for legally verified <strong>Will drafting services in South Delhi, Dwarka, Rohini, or Preet Vihar</strong>? Our senior succession lawyers offer end-to-end legal drafting, DORIS portal slot booking, and Sub-Registrar accompaniment tailored to the specific property dynamics of Delhi NCT:
                 </p>
               </div>
 
@@ -878,7 +878,7 @@ export default function DelhiNCTLocationClient({ faqs }: Props) {
                     <div className="flex items-center justify-between gap-2">
                       <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-rose-50 text-[#C65378] border border-rose-100">
                         <MapPin className="w-3.5 h-3.5" />
-                        South Prime Residential
+                        South Prime Home
                       </span>
                       <span className="text-[11px] font-semibold text-slate-500 bg-slate-100 px-2.5 py-1 rounded-lg">
                         SRO V (Saket / Mehrauli)
@@ -898,7 +898,7 @@ export default function DelhiNCTLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Specialized <strong>Will drafting services in South Delhi</strong> for independent builder floors, DDA SFS flats, company equities, and mutual fund portfolios, preventing inheritance disputes among siblings.
+                      Specialized <strong>Will drafting services in South Delhi</strong> for independent builder floors, DDA SFS flats, company equities, and mutual fund portfolios, preventing inheritance fights among siblings.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -907,7 +907,7 @@ export default function DelhiNCTLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Tehsil Building, Mehrauli Badarpur Road, Saket</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        DORIS e-appointment scheduling, senior advocate representation, and Section 31 home visits for elderly testators across Saket, Hauz Khas, and Vasant Kunj.
+                        DORIS e-appointment scheduling, senior lawyer representation, and Section 31 home visits for elderly testators across Saket, Hauz Khas, and Vasant Kunj.
                       </p>
                     </div>
                   </div>
@@ -952,7 +952,7 @@ export default function DelhiNCTLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Tailored <strong>Will drafting services in Dwarka</strong> for cooperative group housing societies (CGHS), DDA HIG/MIG flats, commercial shops, and demat investments with clear society membership succession.
+                      Tailored <strong>Will drafting services in Dwarka</strong> for cooperative group housing societies (CGHS), DDA HIG/MIG flats, shop shops, and demat investments with clear society membership succession.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -961,7 +961,7 @@ export default function DelhiNCTLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Sub-Registrar Complex, Sector 10, Dwarka</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Fast-track DORIS token booking, doctor certificate coordination, and physical advocate assistance at the Dwarka SRO registry office.
+                        Fast-track DORIS token booking, doctor paper coordination, and physical lawyer help at the Dwarka SRO registry office.
                       </p>
                     </div>
                   </div>
@@ -1015,7 +1015,7 @@ export default function DelhiNCTLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Old MCD Office, Lajpat Nagar IV</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Doorstep commissioner execution under Section 31 for senior citizens residing in Defence Colony, Maharani Bagh, and GK.
+                        Doorstep commissioner signing under Section 31 for senior citizens residing in Defence Colony, Maharani Bagh, and GK.
                       </p>
                     </div>
                   </div>
@@ -1040,7 +1040,7 @@ export default function DelhiNCTLocationClient({ faqs }: Props) {
                     <div className="flex items-center justify-between gap-2">
                       <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-rose-50 text-[#C65378] border border-rose-100">
                         <MapPin className="w-3.5 h-3.5" />
-                        West Residential Core
+                        West Home Core
                       </span>
                       <span className="text-[11px] font-semibold text-slate-500 bg-slate-100 px-2.5 py-1 rounded-lg">
                         SRO II (Janakpuri &amp; Punjabi Bagh)
@@ -1060,7 +1060,7 @@ export default function DelhiNCTLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Trusted <strong>Will drafting services in Janakpuri</strong> and Punjabi Bagh for independent kothis, builder floors with stilt parking, commercial shop succession, and family gold jewellery bequests.
+                      Trusted <strong>Will drafting services in Janakpuri</strong> and Punjabi Bagh for independent kothis, builder floors with stilt parking, shop shop succession, and family gold jewellery bequests.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1069,7 +1069,7 @@ export default function DelhiNCTLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Community Centre Janakpuri / Basai Darapur</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Complete MCD property mutation guidance, terrace rights division clauses, and physical Sub-Registrar accompaniment.
+                        Complete MCD property name change guidance, terrace rights division clauses, and physical Sub-Registrar accompaniment.
                       </p>
                     </div>
                   </div>
@@ -1114,7 +1114,7 @@ export default function DelhiNCTLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Comprehensive <strong>Will drafting services in Rohini</strong> and Pitampura for DDA plots, builder floor apartments, industrial units in Mangolpuri, and ancestral family assets.
+                      Full <strong>Will drafting services in Rohini</strong> and Pitampura for DDA plots, builder floor apartments, industrial units in Mangolpuri, and family family assets.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1123,7 +1123,7 @@ export default function DelhiNCTLocationClient({ faqs }: Props) {
                         <span>SRO Hub: SDM Complex, MP Enclave Pitampura / Rohini Sec 10</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Rapid DORIS portal slot confirmation, senior advocate review, and direct mutation guidance at the North West Delhi DM complex.
+                        Rapid DORIS portal slot confirmation, senior lawyer review, and direct name change guidance at the North West Delhi DM complex.
                       </p>
                     </div>
                   </div>
@@ -1148,7 +1148,7 @@ export default function DelhiNCTLocationClient({ faqs }: Props) {
                     <div className="flex items-center justify-between gap-2">
                       <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-rose-50 text-[#C65378] border border-rose-100">
                         <MapPin className="w-3.5 h-3.5" />
-                        East Residential Townships
+                        East Home Townships
                       </span>
                       <span className="text-[11px] font-semibold text-slate-500 bg-slate-100 px-2.5 py-1 rounded-lg">
                         SRO VIII (Geeta Colony / Preet Vihar)
@@ -1168,7 +1168,7 @@ export default function DelhiNCTLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Dedicated <strong>Will drafting services in East Delhi</strong> for CGHS group housing societies in Patparganj, DDA flats in Mayur Vihar, and commercial properties on Vikas Marg.
+                      Dedicated <strong>Will drafting services in East Delhi</strong> for CGHS group housing societies in Patparganj, DDA flats in Mayur Vihar, and shop assets on Vikas Marg.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1177,7 +1177,7 @@ export default function DelhiNCTLocationClient({ faqs }: Props) {
                         <span>SRO Hub: DC Office Complex, LM Bandh Marg, Geeta Colony</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Online DORIS e-challan processing, society membership verification, and seamless Geeta Colony SRO Book III registration.
+                        Online DORIS e-challan processing, society membership check, and seamless Geeta Colony SRO Book III registration.
                       </p>
                     </div>
                   </div>
@@ -1222,7 +1222,7 @@ export default function DelhiNCTLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Heritage <strong>Will drafting services in Central Delhi</strong> for high-value ancestral properties, commercial shops in Karol Bagh, L&amp;DO leasehold bungalows, and family business holdings.
+                      Heritage <strong>Will drafting services in Central Delhi</strong> for high-value family assets, shop shops in Karol Bagh, L&amp;DO leasehold bungalows, and family business holdings.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1231,7 +1231,7 @@ export default function DelhiNCTLocationClient({ faqs }: Props) {
                         <span>SRO Hub: DDA Vikas Sadan INA / Asaf Ali Road Complex</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        L&amp;DO leasehold to freehold conversion consultation, doctor certificate coordination, and priority SRO registration.
+                        L&amp;DO leasehold to freehold conversion talk, doctor paper coordination, and priority SRO registration.
                       </p>
                     </div>
                   </div>
@@ -1276,7 +1276,7 @@ export default function DelhiNCTLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Customized <strong>Will drafting services in Vivek Vihar</strong> and Shahdara for family bungalows, multi-floor residential properties, trading business equities, and bank safe deposit lockers.
+                      Customized <strong>Will drafting services in Vivek Vihar</strong> and Shahdara for family bungalows, multi-floor home assets, trading business equities, and bank safe deposit lockers.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1285,7 +1285,7 @@ export default function DelhiNCTLocationClient({ faqs }: Props) {
                         <span>SRO Hub: DDA Community Centre, B-Block, Vivek Vihar</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Section 31 home visits for elderly citizens in Vivek Vihar and Karkardooma, with complete advocate support.
+                        Section 31 home visits for elderly citizens in Vivek Vihar and Karkardooma, with complete lawyer support.
                       </p>
                     </div>
                   </div>
@@ -1317,7 +1317,7 @@ export default function DelhiNCTLocationClient({ faqs }: Props) {
                   6. Step-by-Step SOP: Will Drafting to DORIS Registration
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Follow this verified standard operating procedure to prepare, execute, and optionally register your Will in Delhi NCT:
+                  Follow this verified standard operating step to prepare, execute, and optionally register your Will in Delhi NCT:
                 </p>
               </div>
 
@@ -1329,7 +1329,7 @@ export default function DelhiNCTLocationClient({ faqs }: Props) {
                   </span>
                   <div className="space-y-1">
                     <h3 className="font-bold text-sm sm:text-base text-slate-900">
-                      Inventory Assets &amp; Identify Beneficiaries
+                      Inventory Assets &amp; Identify Heirs
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                       Compile a complete list of your movable and immovable assets in Delhi and across India. Include DDA flat allotment details, builder floor numbers, MCD property tax IDs, bank accounts, and demat folios. Designate an executor to administer the estate.
@@ -1344,10 +1344,10 @@ export default function DelhiNCTLocationClient({ faqs }: Props) {
                   </span>
                   <div className="space-y-1">
                     <h3 className="font-bold text-sm sm:text-base text-slate-900">
-                      Draft Legal Will with Succession Advocate
+                      Draft Legal Will with Succession Lawyer
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Work with our specialized estate lawyers to frame custom legal clauses. Include explicit revocation of past Wills, specific bequests, survivorship provisions, and a residual clause to capture any future assets.
+                      Work with our specialized estate lawyers to frame custom legal clauses. Include explicit revocation of past Wills, specific bequests, survivorship rules, and a residual clause to capture any future assets.
                     </p>
                   </div>
                 </div>
@@ -1377,7 +1377,7 @@ export default function DelhiNCTLocationClient({ faqs }: Props) {
                       Book Delhi DORIS Portal Appointment Online
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Log in to the Delhi DORIS portal (doris.delhiservices.gov.in) and navigate to the e-appointment section. Select your designated Sub-Registrar office, upload party details, pay the nominal ₹100 registration fee via e-challan, and download the appointment receipt.
+                      Log in to the Delhi DORIS portal (doris.delhiservices.gov.in) and navigate to the e-appointment section. Select your designated SRO office, upload party details, pay the nominal ₹100 registration fee via e-challan, and download the appointment receipt.
                     </p>
                   </div>
                 </div>
@@ -1389,10 +1389,10 @@ export default function DelhiNCTLocationClient({ faqs }: Props) {
                   </span>
                   <div className="space-y-1">
                     <h3 className="font-bold text-sm sm:text-base text-slate-900">
-                      Complete Biometric Verification at Delhi SRO
+                      Complete Biometric Check at Delhi SRO
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Visit the Sub-Registrar office during your allotted slot with both witnesses, original Aadhaar cards, and passport photos. The Sub-Registrar captures biometric thumbprints and digital photographs, enters the Will into Book III registers, and returns the registered document.
+                      Visit the SRO office during your allotted slot with both witnesses, original Aadhaar cards, and passport photos. The Sub-Registrar captures biometric thumbprints and digital photographs, enters the Will into Book III registers, and returns the registered document.
                     </p>
                   </div>
                 </div>
@@ -1410,8 +1410,8 @@ export default function DelhiNCTLocationClient({ faqs }: Props) {
                   7. Section 31 Doorstep SRO Registration in Delhi NCT
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Visiting bustling government registry offices can be exhausting for senior citizens, hospitalized individuals, or those with mobility challenges.
-                  <strong> Section 31 of the Registration Act, 1908</strong> allows the Sub-Registrar to visit the testator&apos;s home or hospital in special cases.
+                  Visiting bustling government registry offices can be exhausting for senior citizens, hospitalized people, or those with mobility fights.
+                  <strong> Section 31 of the Registration Act, 1908</strong> allows the Sub-Registrar to visit the Will maker&apos;s home or hospital in special cases.
                 </p>
               </div>
 
@@ -1427,7 +1427,7 @@ export default function DelhiNCTLocationClient({ faqs }: Props) {
                     </span>
                     <h4 className="font-bold text-sm text-slate-900">Doctor Fitness Certificate</h4>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      A registered MBBS practitioner examines the testator and issues a medical certificate stating they are mentally sound but physically unable to travel to the SRO.
+                      A registered MBBS practitioner examines the Will maker and issues a medical paper stating they are mentally sound but physically unable to travel to the SRO.
                     </p>
                   </div>
 
@@ -1435,9 +1435,9 @@ export default function DelhiNCTLocationClient({ faqs }: Props) {
                     <span className="w-7 h-7 rounded-lg bg-rose-100 text-[#C65378] flex items-center justify-center font-bold text-xs">
                       2
                     </span>
-                    <h4 className="font-bold text-sm text-slate-900">SRO Commission Application</h4>
+                    <h4 className="font-bold text-sm text-slate-900">SRO Commission Form</h4>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Our legal team files a formal Section 31 petition before the concerned Delhi Sub-Registrar along with the doctor&apos;s certificate and pays the official commission visit fee.
+                      Our legal team files a formal Section 31 petition before the concerned Delhi Sub-Registrar along with the doctor&apos;s paper and pays the official commission visit fee.
                     </p>
                   </div>
 
@@ -1469,10 +1469,10 @@ export default function DelhiNCTLocationClient({ faqs }: Props) {
                   <span>PREPARATION CHECKLIST</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  8. Mandatory Document Checklist for Delhi NCT Wills
+                  8. Needed Document Checklist for Delhi NCT Wills
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Keep these verified records ready before executing and registering your Will in Delhi NCT:
+                  Keep these verified records ready before signing and registering your Will in Delhi NCT:
                 </p>
               </div>
 
@@ -1525,7 +1525,7 @@ export default function DelhiNCTLocationClient({ faqs }: Props) {
                   <span>ASSET CLASSIFICATION</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  9. Estate Asset Distribution: DDA Flats &amp; MCD Mutation
+                  9. Estate Asset Split: DDA Flats &amp; MCD Name Change
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   A legally compliant Will should address the distinctive asset classes prevalent across the National Capital Territory of Delhi:
@@ -1539,7 +1539,7 @@ export default function DelhiNCTLocationClient({ faqs }: Props) {
                     DDA Freehold &amp; Leasehold Flats
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Delhi Development Authority (DDA) flats in Dwarka, Rohini, or Vasant Kunj require clear testamentary succession. If the flat is leasehold, the Will specifies conversion to freehold. A registered Will expedites mutation and conveyance deed execution at Vikas Sadan without probate.
+                    Delhi Development Authority (DDA) flats in Dwarka, Rohini, or Vasant Kunj require clear testamentary succession. If the flat is leasehold, the Will specifies conversion to freehold. A registered Will expedites name change and conveyance deed signing at Vikas Sadan without probate.
                   </p>
                 </div>
 
@@ -1549,17 +1549,17 @@ export default function DelhiNCTLocationClient({ faqs }: Props) {
                     Independent Builder Floors &amp; Terrace Rights
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Multi-story builder floors in South and West Delhi demand explicit demarcation of individual floor ownership, stilt parking bays, terrace access rights, and undivided impartible ownership in the underlying plot, preventing costly disputes among floor owners.
+                    Multi-story builder floors in South and West Delhi demand explicit demarcation of individual floor ownership, stilt parking bays, terrace access rights, and undivided impartible ownership in the underlying plot, preventing costly fights among floor owners.
                   </p>
                 </div>
 
                 {/* ASSET 3 */}
                 <div className="bg-white rounded-2xl border border-slate-200/90 p-5 shadow-xs space-y-2">
                   <h3 className="font-bold text-sm sm:text-base text-slate-900">
-                    MCD Property Tax Mutation (Aam Adalat / Portal)
+                    MCD Property Tax Name Change (Aam Adalat / Portal)
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Property tax records (*UPIC*) must reflect the heir&apos;s name after the testator&apos;s demise. Municipal Corporation of Delhi (MCD) accepts a registered Will along with an indemnity bond and death certificate for direct mutation without mandating court succession certificates.
+                    Property tax records (*UPIC*) must reflect the heir&apos;s name after the Will maker&apos;s demise. Municipal Corporation of Delhi (MCD) accepts a registered Will along with an indemnity bond and death paper for direct name change without mandating court succession papers.
                   </p>
                 </div>
 
@@ -1569,7 +1569,7 @@ export default function DelhiNCTLocationClient({ faqs }: Props) {
                     Cooperative Group Housing Societies (CGHS)
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Under Delhi Cooperative Societies rules and Supreme Court rulings, society nominees hold the flat merely as fiduciary trustees. A registered Will directs the managing committee to transfer the official share certificate to the true legal beneficiary.
+                    Under Delhi Cooperative Societies rules and Supreme Court rulings, society nominees hold the flat merely as fiduciary trustees. A registered Will directs the managing committee to transfer the official share paper to the true legal heir.
                   </p>
                 </div>
               </div>
@@ -1600,7 +1600,7 @@ export default function DelhiNCTLocationClient({ faqs }: Props) {
                 <div className="bg-white rounded-2xl border border-slate-200/90 p-5 shadow-xs text-center space-y-1">
                   <span className="text-2xl font-black text-slate-900">₹100</span>
                   <h4 className="font-bold text-xs uppercase tracking-wider text-slate-800">SRO Registration Fee</h4>
-                  <p className="text-[11px] text-slate-500">Fixed statutory government fee across all 11 Delhi districts</p>
+                  <p className="text-[11px] text-slate-500">Fixed legal government fee across all 11 Delhi districts</p>
                 </div>
 
                 <div className="bg-white rounded-2xl border border-slate-200/90 p-5 shadow-xs text-center space-y-1">
@@ -1622,7 +1622,7 @@ export default function DelhiNCTLocationClient({ faqs }: Props) {
                   11. Transparent Pricing: Delhi NCT Will Making Packages
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Select the level of professional support best suited to your family&apos;s estate planning requirements across Delhi NCT:
+                  Select the level of professional support best suited to your family&apos;s estate planning rules across Delhi NCT:
                 </p>
               </div>
 
@@ -1634,7 +1634,7 @@ export default function DelhiNCTLocationClient({ faqs }: Props) {
                     <h3 className="font-extrabold text-xl text-slate-900">Online Will Drafting</h3>
                     <div className="text-3xl font-black text-slate-900">₹1,990</div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Ideal for individuals with straightforward assets like a single DDA flat, bank deposits, and mutual funds.
+                      Ideal for people with straightforward assets like a single DDA flat, bank deposits, and mutual funds.
                     </p>
                     <ul className="text-xs text-slate-600 space-y-2 pt-2 border-t border-slate-100">
                       <li className="flex items-center gap-2">
@@ -1651,7 +1651,7 @@ export default function DelhiNCTLocationClient({ faqs }: Props) {
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
-                        <span>Execution &amp; attestation guide</span>
+                        <span>Signing &amp; attestation guide</span>
                       </li>
                     </ul>
                   </div>
@@ -1671,23 +1671,23 @@ export default function DelhiNCTLocationClient({ faqs }: Props) {
                   </span>
                   <div className="space-y-4">
                     <span className="text-xs font-bold uppercase tracking-wider text-[#C65378]">Professional</span>
-                    <h3 className="font-extrabold text-xl text-slate-900">Advocate Consultation &amp; Review</h3>
+                    <h3 className="font-extrabold text-xl text-slate-900">Lawyer Talk &amp; Review</h3>
                     <div className="text-3xl font-black text-slate-900">₹4,990</div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Recommended for Delhi families owning builder floors, multiple DDA flats, or ancestral assets.
+                      Recommended for Delhi families owning builder floors, multiple DDA flats, or family assets.
                     </p>
                     <ul className="text-xs text-slate-600 space-y-2 pt-2 border-t border-slate-100">
                       <li className="flex items-center gap-2">
                         <Check className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
-                        <span>1-on-1 Senior Advocate Consultation</span>
+                        <span>1-on-1 Senior Lawyer Talk</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
-                        <span>Custom clauses for DDA/MCD properties</span>
+                        <span>Custom clauses for DDA/MCD assets</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
-                        <span>Doctor certificate format included</span>
+                        <span>Doctor paper format included</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
@@ -1699,18 +1699,18 @@ export default function DelhiNCTLocationClient({ faqs }: Props) {
                     href="/contact"
                     className="mt-6 w-full py-2.5 rounded-xl bg-[#C65378] text-white text-xs font-bold hover:bg-[#a13c5d] transition-colors text-center cursor-pointer"
                   >
-                    Book Advocate Call
+                    Book Lawyer Call
                   </a>
                 </div>
 
                 {/* PLAN 3 */}
                 <div className="rounded-3xl bg-white border border-slate-200/90 p-6 shadow-xs flex flex-col justify-between">
                   <div className="space-y-4">
-                    <span className="text-xs font-bold uppercase tracking-wider text-slate-500">Comprehensive</span>
+                    <span className="text-xs font-bold uppercase tracking-wider text-slate-500">Full</span>
                     <h3 className="font-extrabold text-xl text-slate-900">Complete SRO Registration</h3>
                     <div className="text-3xl font-black text-slate-900">₹9,990</div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Full turnkey service including DORIS portal slot booking and physical advocate accompaniment.
+                      Full turnkey service including DORIS portal slot booking and physical lawyer accompaniment.
                     </p>
                     <ul className="text-xs text-slate-600 space-y-2 pt-2 border-t border-slate-100">
                       <li className="flex items-center gap-2">
@@ -1723,7 +1723,7 @@ export default function DelhiNCTLocationClient({ faqs }: Props) {
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
-                        <span>Physical advocate assistance at SRO</span>
+                        <span>Physical lawyer help at SRO</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
@@ -1799,7 +1799,7 @@ export default function DelhiNCTLocationClient({ faqs }: Props) {
                   <span>LEGAL REFERENCES</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  12. Statutory Citations &amp; Delhi High Court Precedents
+                  12. Legal Citations &amp; Delhi High Court Precedents
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Every Will drafted through WillDrafting.in is constructed in strict adherence to authoritative Indian statutes and judicial rulings:
@@ -1812,7 +1812,7 @@ export default function DelhiNCTLocationClient({ faqs }: Props) {
                     Indian Succession Act, 1925 (Sections 59, 61, 63, 67, 213):
                   </span>
                   <p className="text-slate-600 leading-relaxed">
-                    Governs sound testamentary mind, voluntary consent, two-witness execution, and specifies that court probate is non-mandatory outside historical presidency limits.
+                    Governs sound testamentary mind, voluntary consent, two-witness signing, and specifies that court probate is non-needed outside historical presidency limits.
                   </p>
                 </div>
 
@@ -1830,7 +1830,7 @@ export default function DelhiNCTLocationClient({ faqs }: Props) {
                     Indian Stamp Act, 1899 (Exemption on Wills):
                   </span>
                   <p className="text-slate-600 leading-relaxed">
-                    Grants complete exemption from ad-valorem stamp duty for Wills executed and presented for registration anywhere in the National Capital Territory of Delhi.
+                    Grants complete exemption from ad-valorem stamp duty for Wills signed and presented for registration anywhere in the National Capital Territory of Delhi.
                   </p>
                 </div>
 
@@ -1845,10 +1845,10 @@ export default function DelhiNCTLocationClient({ faqs }: Props) {
 
                 <div className="space-y-1 pt-2 border-t border-slate-100">
                   <span className="font-bold text-slate-900 block">
-                    DDA &amp; MCD Mutation Directives:
+                    DDA &amp; MCD Name Change Directives:
                   </span>
                   <p className="text-slate-600 leading-relaxed">
-                    Administrative guidelines issued by DDA and MCD officially provide for property mutation upon production of a registered Will, death certificate, and standard indemnity bond without court probate.
+                    Office guidelines issued by DDA and MCD officially provide for property name change upon production of a registered Will, death paper, and standard indemnity bond without court probate.
                   </p>
                 </div>
               </div>

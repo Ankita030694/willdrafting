@@ -106,26 +106,26 @@ const INITIAL_CHECKLIST = [
   },
   {
     id: "item-2",
-    label: "Original Aadhaar Card & PAN of Testator",
-    detail: "Required for biometric thumb verification and web-camera digital photography at the Raipur SRO counter.",
+    label: "Original Aadhaar Card & PAN of Will maker",
+    detail: "Required for biometric thumb check and web-camera digital photography at the Raipur SRO counter.",
     checked: true,
   },
   {
     id: "item-3",
     label: "Two Independent Adult Witnesses with Aadhaar",
-    detail: "Witnesses must carry original photo IDs and must not be beneficiaries receiving any property under the Will.",
+    detail: "Witnesses must carry original photo IDs and must not be heirs receiving any property under the Will.",
     checked: true,
   },
   {
     id: "item-4",
     label: "Doctor's Mental Fitness Certificate (For Seniors)",
-    detail: "Issued by a registered MBBS doctor. Certifies sound testamentary capacity and prevents future allegations of incapacity.",
+    detail: "Issued by a registered MBBS doctor. Certifies sound sound mind and prevents future allegations of incapacity.",
     checked: false,
   },
   {
     id: "item-5",
     label: "Chhattisgarh NGDRS Online Appointment Slip",
-    detail: "Official e-appointment receipt downloaded from ngdrs.cg.gov.in displaying your application reference number and time slot.",
+    detail: "Official e-appointment receipt downloaded from ngdrs.cg.gov.in displaying your form reference number and time slot.",
     checked: false,
   },
   {
@@ -137,7 +137,7 @@ const INITIAL_CHECKLIST = [
   {
     id: "item-7",
     label: "Two Passport-Sized Photographs Each",
-    detail: "Recent color passport photographs of the testator and both attesting witnesses for pasting in the official Book III registers.",
+    detail: "Recent color passport photographs of the Will maker and both witnesses for pasting in the official Book III registers.",
     checked: false,
   },
 ];
@@ -235,7 +235,7 @@ export default function RaipurLocationClient({ faqs }: Props) {
 
               <p className="text-base sm:text-lg text-slate-200 leading-relaxed font-normal max-w-2xl">
                 Protect your RDA plots in Kamal Vihar, Nava Raipur smart city homes, steel trading business equity, and family assets.
-                Get senior advocate drafting, Chhattisgarh NGDRS registration advice, and Section 31 doorstep execution across Raipur.
+                Get senior lawyer drafting, Chhattisgarh NGDRS registration advice, and Section 31 doorstep signing across Raipur.
               </p>
 
               <div className="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
@@ -260,7 +260,7 @@ export default function RaipurLocationClient({ faqs }: Props) {
               <div className="pt-4 grid grid-cols-3 gap-3 border-t border-white/10 text-xs text-slate-300">
                 <div className="flex items-center gap-2">
                   <Check className="w-4 h-4 text-emerald-400 shrink-0" />
-                  <span>High Court Advocate Vetted</span>
+                  <span>High Court Lawyer Vetted</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <Check className="w-4 h-4 text-emerald-400 shrink-0" />
@@ -491,7 +491,7 @@ export default function RaipurLocationClient({ faqs }: Props) {
                   <div className="p-4 rounded-2xl bg-slate-50/70 border border-slate-100 space-y-1.5">
                     <div className="flex items-center gap-2 font-bold text-sm text-slate-900">
                       <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
-                      <span>Probate Not Mandatory</span>
+                      <span>Probate Not Needed</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
                       Raipur was never a British presidency town. Under Section 213 of the Indian Succession Act, court probate is optional in Chhattisgarh, enabling direct property transfer and bank claim release.
@@ -504,14 +504,14 @@ export default function RaipurLocationClient({ faqs }: Props) {
                       <span>Zero Stamp Duty</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Wills incur ₹0 ad-valorem stamp duty in Chhattisgarh. At the Sub-Registrar Office, testators pay only a flat nominal registration charge and standard NGDRS portal scanning fees.
+                      Wills incur ₹0 ad-valorem stamp duty in Chhattisgarh. At the SRO office, testators pay only a flat nominal registration charge and standard NGDRS portal scanning fees.
                     </p>
                   </div>
 
                   <div className="p-4 rounded-2xl bg-slate-50/70 border border-slate-100 space-y-1.5">
                     <div className="flex items-center gap-2 font-bold text-sm text-slate-900">
                       <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
-                      <span>Direct RDA &amp; NRANVP Mutation</span>
+                      <span>Direct RDA &amp; NRANVP Name Change</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
                       A registered Will expedites title transfer before the Raipur Development Authority (RDA), Nava Raipur Atal Nagar Vikas Pradhikaran, and Raipur Municipal Corporation (RMC) tax registries.
@@ -532,13 +532,13 @@ export default function RaipurLocationClient({ faqs }: Props) {
                   1. Will Drafting &amp; Legal Framework in Raipur
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Executing a legally binding Will in Raipur is governed by two central statutes: the <strong>Indian Succession Act, 1925</strong> and the <strong>Registration Act, 1908</strong>, together with specific tenancy and mutation rules under the <strong>Chhattisgarh Land Revenue Code, 1959</strong>.
-                  Any adult of sound mental disposition has the unfettered legal authority to dispose of their self-acquired real estate, commercial assets, bank fixed deposits, mutual funds, company equity, and ancestral shares to the extent permitted by personal law.
+                  Signing a legally binding Will in Raipur is governed by two central statutes: the <strong>Indian Succession Act, 1925</strong> and the <strong>Registration Act, 1908</strong>, together with specific tenancy and name change rules under the <strong>Chhattisgarh Land Revenue Code, 1959</strong>.
+                  Any adult of sound mental disposition has the unfettered legal authority to dispose of their self-acquired real estate, shop assets, bank fixed deposits, mutual funds, company equity, and family shares to the extent permitted by personal law.
                 </p>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Raipur represents the industrial, commercial, and administrative core of Chhattisgarh.
-                  Local families often possess diverse asset portfolios: RDA residential plots in Kamal Vihar or Indraprastha, smart city allotments in Nava Raipur Atal Nagar, wholesale textile units in Pandri, or equity in rolling mills and sponge iron complexes across Urla and Siltara.
-                  Without an unambiguous, lawyer-vetted Will, your estate can become tangled in protracted family partition suits before the Raipur Civil Court.
+                  Raipur represents the industrial, shop, and office core of Chhattisgarh.
+                  Local families often possess diverse asset portfolios: RDA home plots in Kamal Vihar or Indraprastha, smart city allotments in Nava Raipur Atal Nagar, wholesale textile units in Pandri, or equity in rolling mills and sponge iron complexes across Urla and Siltara.
+                  Without an clear, lawyer-vetted Will, your estate can become tangled in protracted family split suits before the Raipur Civil Court.
                 </p>
               </div>
 
@@ -549,7 +549,7 @@ export default function RaipurLocationClient({ faqs }: Props) {
                   </span>
                   <h3 className="font-bold text-sm text-slate-900">Legal Majority</h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    The testator must be at least 18 years of age and in sound testamentary disposition (Section 59).
+                    The Will maker must be at least 18 years of age and in sound Will (Section 59).
                   </p>
                 </div>
 
@@ -557,9 +557,9 @@ export default function RaipurLocationClient({ faqs }: Props) {
                   <span className="w-8 h-8 rounded-xl bg-rose-50 text-[#C65378] flex items-center justify-center font-bold text-sm">
                     <Check className="w-4 h-4" />
                   </span>
-                  <h3 className="font-bold text-sm text-slate-900">Voluntary Execution</h3>
+                  <h3 className="font-bold text-sm text-slate-900">Voluntary Signing</h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Executed freely without undue family pressure, coercion, or misrepresentation (Section 61).
+                    Signed freely without undue family pressure, coercion, or misrepresentation (Section 61).
                   </p>
                 </div>
 
@@ -569,7 +569,7 @@ export default function RaipurLocationClient({ faqs }: Props) {
                   </span>
                   <h3 className="font-bold text-sm text-slate-900">Two Witnesses</h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Must be signed in the simultaneous presence of two adult attesting witnesses (Section 63).
+                    Must be signed in the simultaneous presence of two adult witnesses (Section 63).
                   </p>
                 </div>
 
@@ -579,7 +579,7 @@ export default function RaipurLocationClient({ faqs }: Props) {
                   </span>
                   <h3 className="font-bold text-sm text-slate-900">Independent Status</h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Witnesses must not be beneficiaries receiving any legacy under the drafted Will (Section 67).
+                    Witnesses must not be heirs receiving any legacy under the drafted Will (Section 67).
                   </p>
                 </div>
               </div>
@@ -593,14 +593,14 @@ export default function RaipurLocationClient({ faqs }: Props) {
                   <span>REGISTRATION STATUS</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  2. Is Will Registration Mandatory in Chhattisgarh?
+                  2. Is Will Registration Needed in Chhattisgarh?
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Under Section 18(e) of the Registration Act, 1908, registering a Will is entirely <strong>optional</strong> in the State of Chhattisgarh.
-                  An unregistered Will executed on plain white A4 paper is legally valid and admissible in evidence before revenue officers and civil judges, provided the formal requirements of Section 63 of the Indian Succession Act are fulfilled.
+                  An unregistered Will signed on plain white A4 paper is legally valid and admissible in evidence before revenue officers and civil judges, provided the formal rules of Section 63 of the Indian Succession Act are fulfilled.
                 </p>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Nevertheless, estate advocates in Raipur strongly urge testators to formally register their Will through the Chhattisgarh NGDRS system.
+                  Still, estate lawyers in Raipur strongly urge testators to formally register their Will through the Chhattisgarh NGDRS system.
                   Registration produces an immutable government record in Book III, creating a strong legal presumption of authenticity under Section 60:
                 </p>
               </div>
@@ -618,23 +618,23 @@ export default function RaipurLocationClient({ faqs }: Props) {
                   <tbody className="divide-y divide-slate-100 text-slate-700">
                     <tr>
                       <td className="p-4 font-semibold">Government Record Keeping</td>
-                      <td className="p-4 bg-rose-50/20">Stored permanently in Book III archives at the Raipur Sub-Registrar Office</td>
+                      <td className="p-4 bg-rose-50/20">Stored permanently in Book III archives at the Raipur SRO office</td>
                       <td className="p-4 bg-slate-50/20">Kept in private possession; high risk of physical loss, theft, or destruction</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-semibold">Risk of Forgery Disputes</td>
+                      <td className="p-4 font-semibold">Risk of Forgery Fights</td>
                       <td className="p-4 bg-rose-50/20">Negligible. Biometric thumb impressions and photos recorded before Sub-Registrar</td>
                       <td className="p-4 bg-slate-50/20">Elevated. Discontented relatives routinely claim signature manipulation or forgery</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-semibold">RDA &amp; NRANVP Mutation</td>
-                      <td className="p-4 bg-rose-50/20">Expedited mutation in Kamal Vihar or Nava Raipur with certified copy from SRO</td>
-                      <td className="p-4 bg-slate-50/20">Officers frequently demand non-objection affidavits from all Class I legal heirs</td>
+                      <td className="p-4 font-semibold">RDA &amp; NRANVP Name Change</td>
+                      <td className="p-4 bg-rose-50/20">Expedited name change in Kamal Vihar or Nava Raipur with certified copy from SRO</td>
+                      <td className="p-4 bg-slate-50/20">Officers often demand non-objection affidavits from all Class I legal heirs</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-semibold">Evidentiary Presumption</td>
-                      <td className="p-4 bg-rose-50/20">Strong judicial presumption of genuine execution under Section 60 Registration Act</td>
-                      <td className="p-4 bg-slate-50/20">Beneficiary carries full burden of proving testamentary capacity and absence of fraud</td>
+                      <td className="p-4 font-semibold">Proof Presumption</td>
+                      <td className="p-4 bg-rose-50/20">Strong judicial presumption of genuine signing under Section 60 Registration Act</td>
+                      <td className="p-4 bg-slate-50/20">Heir carries full burden of proving sound mind and absence of fraud</td>
                     </tr>
                     <tr>
                       <td className="p-4 font-semibold">Chhattisgarh SRO Fee</td>
@@ -657,12 +657,12 @@ export default function RaipurLocationClient({ faqs }: Props) {
                   3. Raipur Probate Rules: Non-Presidency Town Law
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  A common point of confusion among property owners in Raipur is whether obtaining court probate from a civil judge is legally necessary.
-                  The clear statutory position is <strong>no</strong>.
+                  A common point of confusion among property owners in Raipur is whether getting court probate from a civil judge is legally necessary.
+                  The clear legal position is <strong>no</strong>.
                 </p>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Under Section 213 read in conjunction with Section 57(a) and 57(b) of the Indian Succession Act, 1925, obtaining court probate is compulsory only if the Will was executed within, or disposes of immovable property located within, the historic presidency towns of Mumbai, Kolkata, or Chennai.
-                  Raipur and the entire state of Chhattisgarh fall under non-presidency jurisdiction, governed by the High Court of Chhattisgarh at Bilaspur.
+                  Under Section 213 read in conjunction with Section 57(a) and 57(b) of the Indian Succession Act, 1925, getting court probate is needed only if the Will was signed within, or disposes of land and flats located within, the historic presidency towns of Mumbai, Kolkata, or Chennai.
+                  Raipur and the entire state of Chhattisgarh fall under non-presidency area, governed by the High Court of Chhattisgarh at Bilaspur.
                 </p>
               </div>
 
@@ -675,11 +675,11 @@ export default function RaipurLocationClient({ faqs }: Props) {
                     Chhattisgarh High Court Jurisprudence
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Following the Supreme Court precedent in <em>Clarence Pais v. Union of India</em>, the High Court of Chhattisgarh has consistently affirmed that an executor of a Hindu, Buddhist, Jain, or Sikh Will in Chhattisgarh is not required to obtain probate before asserting proprietary rights.
+                    Following the Supreme Court precedent in <em>Clarence Pais v. Union of India</em>, the High Court of Chhattisgarh has consistently affirmed that an executor of a Hindu, Buddhist, Jain, or Sikh Will in Chhattisgarh is not required to get probate before asserting proprietary rights.
                   </p>
                   <div className="pt-2 text-xs text-slate-500 flex items-center gap-1.5">
                     <Check className="w-3.5 h-3.5 text-emerald-600" />
-                    <span>Permits direct RDA mutation, bank claim payout, and share transfer</span>
+                    <span>Permits direct RDA name change, bank claim payout, and share transfer</span>
                   </div>
                 </div>
 
@@ -691,7 +691,7 @@ export default function RaipurLocationClient({ faqs }: Props) {
                     When Should You Consider Probate in Raipur?
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Filing an optional probate application before the District Judge at the Raipur District Court Complex (near Kutchery Chowk) is beneficial if legal heirs contest the Will, if substantial ancestral industrial units are involved, or if multinational banks raise objections.
+                    Filing an optional probate form before the District Judge at the Raipur District Court Complex (near Kutchery Chowk) is beneficial if legal heirs contest the Will, if substantial family industrial units are involved, or if multinational banks raise objections.
                   </p>
                   <div className="pt-2 text-xs text-slate-500 flex items-center gap-1.5">
                     <AlertTriangle className="w-3.5 h-3.5 text-[#C65378]" />
@@ -712,7 +712,7 @@ export default function RaipurLocationClient({ faqs }: Props) {
                   4. Raipur SRO Directory: Civil Lines, Pandri &amp; Nava
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Under Section 32 of the Registration Act, 1908, a Will can be presented for registration at the Sub-Registrar Office within whose sub-district the testator resides.
+                  Under Section 32 of the Registration Act, 1908, a Will can be presented for registration at the SRO office within whose sub-district the Will maker resides.
                   Select your area below to view the designated SRO office, address, and operational details:
                 </p>
               </div>
@@ -823,7 +823,7 @@ export default function RaipurLocationClient({ faqs }: Props) {
                   5. Local Coverage: Raipur &amp; Nava Raipur Atal Nagar
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Estate assets in Raipur span upscale residential residences in Shankar Nagar and Civil Lines, expansive RDA schemes like Kamal Vihar, greenfield smart city developments in Nava Raipur Atal Nagar, commercial wholesale centers in Pandri, and heavy steel industrial complexes in Urla and Siltara. Our estate advocates deliver customized legal drafting, Chhattisgarh NGDRS e-Panjiyan slot scheduling, and Sub-Registrar accompaniment across all key micro-markets:
+                  Estate assets in Raipur span upscale home residences in Shankar Nagar and Civil Lines, expansive RDA schemes like Kamal Vihar, greenfield smart city developments in Nava Raipur Atal Nagar, shop wholesale centers in Pandri, and heavy steel industrial complexes in Urla and Siltara. Our estate lawyers deliver customized legal drafting, Chhattisgarh NGDRS e-Panjiyan slot scheduling, and Sub-Registrar accompaniment across all key micro-markets:
                 </p>
               </div>
 
@@ -854,7 +854,7 @@ export default function RaipurLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Specialized <strong>Will drafting on Shankar Nagar and Civil Lines</strong> for premium freehold bungalows, duplex kothis, and high-rise apartments. Codifies clear title devolution for residential estates, bank locker allocations, mutual funds, and precious family jewelry to prevent co-parcenary partition disputes.
+                      Specialized <strong>Will drafting on Shankar Nagar and Civil Lines</strong> for premium freehold bungalows, duplex kothis, and high-rise apartments. Codifies clear title devolution for home estates, bank locker allocations, mutual funds, and precious family jewelry to prevent co-parcenary split fights.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -863,7 +863,7 @@ export default function RaipurLocationClient({ faqs }: Props) {
                         <span>SRO Hub: District Collectorate, Civil Lines</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Chhattisgarh NGDRS slot booking, advocate physical attendance, and Section 31 doorstep execution for senior citizens.
+                        Chhattisgarh NGDRS slot booking, lawyer physical attendance, and Section 31 doorstep signing for senior citizens.
                       </p>
                     </div>
                   </div>
@@ -907,7 +907,7 @@ export default function RaipurLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Customized <strong>Will drafting in Kamal Vihar</strong> and Nava Raipur Atal Nagar for plotted residential schemes and smart sector apartments. Includes precise clauses for NRANVP 99-year leasehold succession, RDA allotment letter transfers, and direct municipal tax mutation without court succession certificates.
+                      Customized <strong>Will drafting in Kamal Vihar</strong> and Nava Raipur Atal Nagar for plotted home schemes and smart sector apartments. Includes precise clauses for NRANVP 99-year leasehold succession, RDA allotment letter transfers, and direct municipal tax name change without court succession papers.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -916,7 +916,7 @@ export default function RaipurLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Sector 19 Mantralaya Zone &amp; Collectorate</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        RDA allotment record verification, NRANVP lease succession drafting, and e-Panjiyan Book III registration.
+                        RDA allotment record check, NRANVP lease succession drafting, and e-Panjiyan Book III registration.
                       </p>
                     </div>
                   </div>
@@ -941,7 +941,7 @@ export default function RaipurLocationClient({ faqs }: Props) {
                     <div className="flex items-center justify-between gap-2">
                       <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-rose-50 text-[#C65378] border border-rose-100">
                         <MapPin className="w-3.5 h-3.5" />
-                        Prime Commercial Core
+                        Prime Shop Core
                       </span>
                       <span className="text-[11px] font-semibold text-slate-500 bg-slate-100 px-2.5 py-1 rounded-lg">
                         SRO Raipur 2 (Pandri)
@@ -961,7 +961,7 @@ export default function RaipurLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Specialized <strong>Will drafting in Pandri and Devendra Nagar</strong> for business families owning commercial showrooms, textile wholesale shops, and residential floors. Protects business continuity through partnership equity bequests, proprietary trade licenses, director loans, and commercial asset distribution.
+                      Specialized <strong>Will drafting in Pandri and Devendra Nagar</strong> for business families owning shop showrooms, textile wholesale shops, and home floors. Protects business continuity through partnership equity bequests, proprietary trade licenses, director loans, and shop asset split.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -970,13 +970,13 @@ export default function RaipurLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Near Cloth Market Complex, Pandri</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Business equity transmission, commercial property documentation, and expedited Book III registration.
+                        Business equity transfer, shop property papers, and expedited Book III registration.
                       </p>
                     </div>
                   </div>
 
                   <div className="pt-4 mt-4 border-t border-slate-100 flex items-center justify-between">
-                    <span className="text-xs font-bold text-slate-500">Commercial &amp; Residential</span>
+                    <span className="text-xs font-bold text-slate-500">Shop &amp; Home</span>
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
@@ -1014,7 +1014,7 @@ export default function RaipurLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Exclusive <strong>Will drafting on VIP Road and Telibandha</strong> for luxury gated communities, villas, penthouses, and commercial plots. Formulates clear life-interest covenants for surviving spouses, structured trust bequeathals for minor grandchildren, and overseas investment transfer clauses for NRI family members.
+                      Exclusive <strong>Will drafting on VIP Road and Telibandha</strong> for luxury gated communities, villas, penthouses, and shop plots. Formulates clear life-interest covenants for surviving spouses, structured trust bequeathals for minor grandchildren, and overseas investment transfer clauses for NRI family members.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1068,7 +1068,7 @@ export default function RaipurLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Comprehensive <strong>Will drafting in Urla and Siltara</strong> for industrialists operating sponge iron plants, steel rolling mills, and logistics parks. Structures succession for CSIDC leasehold industrial plots, corporate shareholdings under Companies Act 2013, factory machinery, and bank guarantees to prevent operational freeze.
+                      Full <strong>Will drafting in Urla and Siltara</strong> for industrialists operating sponge iron plants, steel rolling mills, and logistics parks. Structures succession for CSIDC leasehold industrial plots, corporate shareholdings under Companies Act 2013, factory machinery, and bank guarantees to prevent operational freeze.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1122,7 +1122,7 @@ export default function RaipurLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Focused <strong>Will drafting in Samta Colony and Choubey Colony</strong> for multi-generational family homes, ancestral bungalows, and clinic establishments. Resolves ancestral versus self-acquired property complexities, specifies clear floor-wise distributions for siblings, and secures medical sound-mind certificates for elderly testators.
+                      Focused <strong>Will drafting in Samta Colony and Choubey Colony</strong> for multi-generational family homes, family bungalows, and clinic establishments. Resolves family versus self-acquired property complexities, specifies clear floor-wise distributions for siblings, and secures medical sound-mind papers for elderly testators.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1131,13 +1131,13 @@ export default function RaipurLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Pandri &amp; Civil Lines Collectorate</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Doorstep registration for senior residents, ancestral property succession advice, and NGDRS slot booking.
+                        Doorstep registration for senior residents, family property succession advice, and NGDRS slot booking.
                       </p>
                     </div>
                   </div>
 
                   <div className="pt-4 mt-4 border-t border-slate-100 flex items-center justify-between">
-                    <span className="text-xs font-bold text-slate-500">Ancestral Homes &amp; Modern Floors</span>
+                    <span className="text-xs font-bold text-slate-500">Family Homes &amp; Modern Floors</span>
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
@@ -1163,8 +1163,8 @@ export default function RaipurLocationClient({ faqs }: Props) {
                   6. Step-by-Step SOP: Chhattisgarh NGDRS Portal
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Registering a Will in Raipur is executed through the Chhattisgarh National Generic Document Registration System (NGDRS) portal.
-                  Follow our verified 5-stage standard operating procedure:
+                  Registering a Will in Raipur is signed through the Chhattisgarh National Generic Document Registration System (NGDRS) portal.
+                  Follow our verified 5-stage standard operating step:
                 </p>
               </div>
 
@@ -1175,10 +1175,10 @@ export default function RaipurLocationClient({ faqs }: Props) {
                   </span>
                   <div className="space-y-1">
                     <h3 className="font-bold text-sm sm:text-base text-slate-900">
-                      Asset Inventory &amp; Beneficiary Structuring
+                      Asset Inventory &amp; Heir Structuring
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Compile complete documentation for your Raipur holdings: RDA plot numbers in Kamal Vihar, Nava Raipur lease details, Bhuiyan agricultural Khasra numbers, bank accounts, and trading partnership shares. Appoint your primary beneficiaries and select an honest executor.
+                      Compile complete papers for your Raipur holdings: RDA plot numbers in Kamal Vihar, Nava Raipur lease details, Bhuiyan farm Khasra numbers, bank accounts, and trading partnership shares. Appoint your primary heirs and select an honest executor.
                     </p>
                   </div>
                 </div>
@@ -1189,10 +1189,10 @@ export default function RaipurLocationClient({ faqs }: Props) {
                   </span>
                   <div className="space-y-1">
                     <h3 className="font-bold text-sm sm:text-base text-slate-900">
-                      Drafting with Statutory Succession Clauses
+                      Drafting with Legal Succession Clauses
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Draft your Will incorporating imperative legal clauses: revocation of prior testaments, clear allocation of specific assets, residuary bequest provisions, executor powers, and survivorship covenants tailored for Chhattisgarh revenue mutation rules.
+                      Draft your Will incorporating imperative legal clauses: revocation of prior testaments, clear allocation of specific assets, residuary bequest rules, executor powers, and survivorship covenants tailored for Chhattisgarh revenue name change rules.
                     </p>
                   </div>
                 </div>
@@ -1203,10 +1203,10 @@ export default function RaipurLocationClient({ faqs }: Props) {
                   </span>
                   <div className="space-y-1">
                     <h3 className="font-bold text-sm sm:text-base text-slate-900">
-                      Execution Before Two Independent Witnesses
+                      Signing Before Two Independent Witnesses
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Print the drafted Will on plain white A4 paper. The testator signs or affixes thumb impressions on every single page in the simultaneous presence of two independent adult witnesses who sign their names and addresses as attesters.
+                      Print the drafted Will on plain white A4 paper. The Will maker signs or affixes thumb impressions on every single page in the simultaneous presence of two independent adult witnesses who sign their names and addresses as attesters.
                     </p>
                   </div>
                 </div>
@@ -1220,7 +1220,7 @@ export default function RaipurLocationClient({ faqs }: Props) {
                       NGDRS Chhattisgarh Citizen Data Entry &amp; Slot Booking
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Log on to <code>ngdrs.cg.gov.in</code>. Enter citizen data, party details (testator and witnesses), select the designated Raipur Sub-Registrar Office, pay the nominal government fee online, and download your official appointment slip with time slot.
+                      Log on to <code>ngdrs.cg.gov.in</code>. Enter citizen data, party details (Will maker and witnesses), select the designated Raipur SRO office, pay the nominal government fee online, and download your official appointment slip with time slot.
                     </p>
                   </div>
                 </div>
@@ -1234,7 +1234,7 @@ export default function RaipurLocationClient({ faqs }: Props) {
                       Biometric Capture &amp; SRO Book III Registration
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Visit the Sub-Registrar Office with your two witnesses and original Aadhaar cards. The Sub-Registrar verifies personal identities, records digital fingerprints and photographs, and enters the document into official Book III registers, providing a certified registered copy.
+                      Visit the SRO office with your two witnesses and original Aadhaar cards. The Sub-Registrar verifies personal identities, records digital fingerprints and photographs, and enters the document into official Book III registers, providing a certified registered copy.
                     </p>
                   </div>
                 </div>
@@ -1252,7 +1252,7 @@ export default function RaipurLocationClient({ faqs }: Props) {
                   7. Section 31 Home Visit: Doorstep Will Registration
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Under <strong>Section 31 of the Registration Act, 1908</strong>, testators who are unable to travel to the Sub-Registrar Office due to advanced age, severe illness, paralysis, or hospitalization can request the Sub-Registrar to attend their private residence or hospital room in Raipur.
+                  Under <strong>Section 31 of the Registration Act, 1908</strong>, testators who are unable to travel to the SRO office due to advanced age, severe illness, paralysis, or hospitalization can request the Sub-Registrar to attend their private residence or hospital room in Raipur.
                 </p>
               </div>
 
@@ -1271,31 +1271,31 @@ export default function RaipurLocationClient({ faqs }: Props) {
                   <div className="p-4 rounded-2xl bg-slate-50 border border-slate-100 space-y-1.5">
                     <span className="font-bold text-xs text-slate-900 block flex items-center gap-1.5">
                       <FileCheck className="w-3.5 h-3.5 text-[#C65378]" />
-                      Statutory Formalities
+                      Legal Formalities
                     </span>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      A formal commission requisition submitted to the District Registrar, backed by a medical fitness certificate from a registered MBBS practitioner certifying sound mental capacity.
+                      A formal commission requisition submitted to the District Registrar, backed by a medical fitness paper from a registered MBBS practitioner certifying sound mental capacity.
                     </p>
                   </div>
 
                   <div className="p-4 rounded-2xl bg-slate-50 border border-slate-100 space-y-1.5">
                     <span className="font-bold text-xs text-slate-900 block flex items-center gap-1.5">
                       <Stamp className="w-3.5 h-3.5 text-[#C65378]" />
-                      Doorstep Procedure
+                      Doorstep Step
                     </span>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      The Sub-Registrar visits the residence with biometric equipment, confirms the testator&apos;s voluntariness, collects thumb impressions and photos, and seals the registration.
+                      The Sub-Registrar visits the residence with biometric equipment, confirms the Will maker&apos;s voluntariness, collects thumb impressions and photos, and seals the registration.
                     </p>
                   </div>
                 </div>
 
                 <div className="pt-3 border-t border-slate-100 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-slate-600">
-                  <span>Our Raipur advocate team prepares the complete Section 31 petition dossier and coordinates government commission schedules.</span>
+                  <span>Our Raipur lawyer team prepares the complete Section 31 petition dossier and coordinates government commission schedules.</span>
                   <a
                     href="/contact"
                     className="font-bold text-[#C65378] hover:text-[#a13c5d] shrink-0 flex items-center gap-1"
                   >
-                    <span>Request Section 31 Assistance</span>
+                    <span>Request Section 31 Help</span>
                     <ArrowRight className="w-3 h-3" />
                   </a>
                 </div>
@@ -1313,7 +1313,7 @@ export default function RaipurLocationClient({ faqs }: Props) {
                   8. Raipur Will Documents: Pre-Registration Checklist
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Review the necessary documentation prior to drafting and visiting the Raipur Sub-Registrar Office. Use our interactive checklist to track your readiness:
+                  Review the necessary papers prior to drafting and visiting the Raipur SRO office. Use our interactive checklist to track your readiness:
                 </p>
               </div>
 
@@ -1321,7 +1321,7 @@ export default function RaipurLocationClient({ faqs }: Props) {
               <div className="bg-white rounded-3xl border border-slate-200/90 p-6 md:p-8 shadow-xs space-y-5">
                 <div className="flex items-center justify-between pb-4 border-b border-slate-100">
                   <span className="font-extrabold text-sm sm:text-base text-slate-900">
-                    Mandatory Dossier Checklist
+                    Needed Dossier Checklist
                   </span>
                   <span className="px-3 py-1 rounded-full bg-rose-50 text-[#C65378] font-bold text-xs">
                     {checkedCount} of {checklist.length} Completed
@@ -1388,7 +1388,7 @@ export default function RaipurLocationClient({ faqs }: Props) {
                     RDA Allotment Plots &amp; Schemes
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Raipur Development Authority (RDA) schemes like Kamal Vihar, Indraprastha, and Kaushalya Mata Vihar require specific allotment schedule references. Our drafts incorporate RDA transfer covenants, ensuring smooth lease-to-freehold conversion and direct administrative succession without objections.
+                    Raipur Development Authority (RDA) schemes like Kamal Vihar, Indraprastha, and Kaushalya Mata Vihar require specific allotment schedule references. Our drafts incorporate RDA transfer covenants, making sure smooth lease-to-freehold conversion and direct office succession without objections.
                   </p>
                 </div>
 
@@ -1397,10 +1397,10 @@ export default function RaipurLocationClient({ faqs }: Props) {
                     <Landmark className="w-4 h-4" />
                   </div>
                   <h3 className="font-extrabold text-base text-slate-900">
-                    Nava Raipur Atal Nagar Smart City Properties
+                    Nava Raipur Atal Nagar Smart City Assets
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Properties under Nava Raipur Atal Nagar Vikas Pradhikaran (NRANVP) operate under structured 99-year lease deeds or freehold allotments. We draft succession clauses compliant with NRANVP Estate Department protocols to prevent lease forfeiture or costly legal heir litigation.
+                    Assets under Nava Raipur Atal Nagar Vikas Pradhikaran (NRANVP) operate under structured 99-year lease deeds or freehold allotments. We draft succession clauses compliant with NRANVP Estate Department protocols to prevent lease forfeiture or costly legal heir court fights.
                   </p>
                 </div>
 
@@ -1421,10 +1421,10 @@ export default function RaipurLocationClient({ faqs }: Props) {
                     <Scale className="w-4 h-4" />
                   </div>
                   <h3 className="font-extrabold text-base text-slate-900">
-                    Agricultural Farmland &amp; Bhuiyan Records
+                    Farm Farmland &amp; Bhuiyan Records
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Succession of rural farmlands and farmhouses in Dharsiwa, Abhanpur, and Mandir Hasaud is governed by the Chhattisgarh Land Revenue Code, 1959. A registered Will enables direct Tahsildar mutation on the state Bhuiyan digital land portal (bhuiyan.cg.nic.in).
+                    Succession of rural farmlands and farmhouses in Dharsiwa, Abhanpur, and Mandir Hasaud is governed by the Chhattisgarh Land Revenue Code, 1959. A registered Will enables direct Tahsildar name change on the state Bhuiyan digital land portal (bhuiyan.cg.nic.in).
                   </p>
                 </div>
               </div>
@@ -1464,7 +1464,7 @@ export default function RaipurLocationClient({ faqs }: Props) {
                     <tr>
                       <td className="p-4 font-semibold">Government Registration Fee</td>
                       <td className="p-4 font-extrabold text-[#C65378]">₹100 to ₹500</td>
-                      <td className="p-4 text-slate-600">Commercial Tax (Registration) Department Chhattisgarh Book III schedule</td>
+                      <td className="p-4 text-slate-600">Shop Tax (Registration) Department Chhattisgarh Book III schedule</td>
                     </tr>
                     <tr>
                       <td className="p-4 font-semibold">NGDRS User &amp; Scanning Fee</td>
@@ -1479,7 +1479,7 @@ export default function RaipurLocationClient({ faqs }: Props) {
                     <tr>
                       <td className="p-4 font-semibold">Certified Copy of Registered Will</td>
                       <td className="p-4">₹100 to ₹200</td>
-                      <td className="p-4 text-slate-600">Issued to the testator during lifetime or to beneficiaries post demise</td>
+                      <td className="p-4 text-slate-600">Issued to the Will maker during lifetime or to heirs post demise</td>
                     </tr>
                   </tbody>
                 </table>
@@ -1497,7 +1497,7 @@ export default function RaipurLocationClient({ faqs }: Props) {
                   11. Transparent Pricing: Raipur Will Drafting Plans
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Choose the transparent legal plan tailored to your family estate requirements in Raipur and Nava Raipur:
+                  Choose the transparent legal plan tailored to your family estate rules in Raipur and Nava Raipur:
                 </p>
               </div>
 
@@ -1515,7 +1515,7 @@ export default function RaipurLocationClient({ faqs }: Props) {
                       ₹1,990
                     </div>
                     <p className="text-xs text-slate-600">
-                      Ideal for individual testators with residential flats, bank savings, and simple nuclear family distribution.
+                      Ideal for individual testators with home flats, bank savings, and simple nuclear family split.
                     </p>
                     <ul className="space-y-2.5 text-xs text-slate-700 pt-3 border-t border-slate-100">
                       <li className="flex items-center gap-2">
@@ -1555,21 +1555,21 @@ export default function RaipurLocationClient({ faqs }: Props) {
                   </span>
                   <div className="space-y-4">
                     <span className="text-xs font-bold uppercase tracking-wider text-[#C65378]">
-                      Advocate Assisted
+                      Lawyer Assisted
                     </span>
                     <h3 className="font-extrabold text-xl text-slate-900">
-                      Senior Lawyer Consultation
+                      Senior Lawyer Talk
                     </h3>
                     <div className="text-3xl font-black text-slate-900">
                       ₹4,990
                     </div>
                     <p className="text-xs text-slate-600">
-                      Designed for families with multiple RDA properties, commercial shops in Pandri, or complex business succession.
+                      Designed for families with multiple RDA assets, shop shops in Pandri, or complex business succession.
                     </p>
                     <ul className="space-y-2.5 text-xs text-slate-700 pt-3 border-t border-slate-100">
                       <li className="flex items-center gap-2">
                         <Check className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
-                        <span>1-on-1 consultation with estate advocate</span>
+                        <span>1-on-1 talk with estate lawyer</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
@@ -1590,7 +1590,7 @@ export default function RaipurLocationClient({ faqs }: Props) {
                       href="/contact"
                       className="w-full py-3 rounded-full bg-[#C65378] text-white font-bold text-xs sm:text-sm hover:bg-[#a13c5d] transition-all flex items-center justify-center gap-2 cursor-pointer shadow-md shadow-[#C65378]/25"
                     >
-                      <span>Book Advocate Consultation</span>
+                      <span>Book Lawyer Talk</span>
                       <ArrowRight className="w-3.5 h-3.5" />
                     </a>
                   </div>
@@ -1600,7 +1600,7 @@ export default function RaipurLocationClient({ faqs }: Props) {
                 <div className="rounded-3xl bg-white border border-slate-200/90 p-6 shadow-xs flex flex-col justify-between">
                   <div className="space-y-4">
                     <span className="text-xs font-bold uppercase tracking-wider text-slate-500">
-                      Comprehensive SRO Support
+                      Full SRO Support
                     </span>
                     <h3 className="font-extrabold text-xl text-slate-900">
                       Full SRO Registration &amp; Doorstep
@@ -1609,7 +1609,7 @@ export default function RaipurLocationClient({ faqs }: Props) {
                       ₹9,990
                     </div>
                     <p className="text-xs text-slate-600">
-                      Complete end-to-end guidance including Chhattisgarh NGDRS appointment booking, advocate escort, or Section 31 home visit.
+                      Complete end-to-end guidance including Chhattisgarh NGDRS appointment booking, lawyer escort, or Section 31 home visit.
                     </p>
                     <ul className="space-y-2.5 text-xs text-slate-700 pt-3 border-t border-slate-100">
                       <li className="flex items-center gap-2">
@@ -1626,7 +1626,7 @@ export default function RaipurLocationClient({ faqs }: Props) {
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
-                        <span>Physical advocate coordination at Raipur SRO</span>
+                        <span>Physical lawyer coordination at Raipur SRO</span>
                       </li>
                     </ul>
                   </div>
@@ -1696,7 +1696,7 @@ export default function RaipurLocationClient({ faqs }: Props) {
                   <span>STATUTORY CITATIONS</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  12. Statutory References &amp; Chhattisgarh Legal Portals
+                  12. Legal References &amp; Chhattisgarh Legal Portals
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Our drafting protocols strictly follow codified Indian statutes and official Chhattisgarh government registration portals:
@@ -1736,7 +1736,7 @@ export default function RaipurLocationClient({ faqs }: Props) {
                     High Court Bilaspur Precedents
                   </span>
                   <p className="text-xs text-slate-600">
-                    Affirmed judgments exempting Chhattisgarh Wills from compulsory probate.
+                    Affirmed judgments exempting Chhattisgarh Wills from needed probate.
                   </p>
                 </div>
               </div>
@@ -1745,7 +1745,7 @@ export default function RaipurLocationClient({ faqs }: Props) {
             {/* BOTTOM CONVERSION CTA BANNER */}
             <section className="rounded-3xl bg-gradient-to-br from-[#172228] to-[#212F35] text-white p-8 sm:p-12 text-center space-y-5 shadow-xl">
               <h3 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-white">
-                Protect Your Raipur Properties &amp; Family Today
+                Protect Your Raipur Assets &amp; Family Today
               </h3>
               <p className="text-sm sm:text-base text-slate-200 max-w-2xl mx-auto leading-relaxed">
                 Do not leave your hard-earned Raipur, Kamal Vihar, and Nava Raipur assets to painful family court battles.
@@ -1763,7 +1763,7 @@ export default function RaipurLocationClient({ faqs }: Props) {
                   href="/contact"
                   className="w-full sm:w-auto px-6 py-3.5 rounded-full bg-white/10 text-white font-bold text-sm sm:text-base hover:bg-white/20 transition-all border border-white/20"
                 >
-                  Book Lawyer Consultation
+                  Book Lawyer Talk
                 </a>
               </div>
             </section>

@@ -140,7 +140,7 @@ export default function AmaravatiLocationPage() {
         url: canonicalUrl,
         name: "Will Drafting in Amaravati: Online Will Making Guide",
         description:
-          "Draft a legally valid Will in Amaravati. Guidance on AP IGRS registration, CRDA plot transfer, and Meebhoomi succession planning with lawyer.",
+          "Draft a legally valid Will in Amaravati. Guidance on AP IGRS signing, CRDA plot transfer, and Meebhoomi estate planning with lawyer.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -152,7 +152,7 @@ export default function AmaravatiLocationPage() {
           url: imageUrl,
           width: 1200,
           height: 630,
-          caption: "Legal Will Drafting and Property Succession in Amaravati Andhra Pradesh",
+          caption: "Legal Will Drafting and Asset Estate in Amaravati Andhra Pradesh",
         },
         breadcrumb: {
           "@id": `${canonicalUrl}#breadcrumb`,
@@ -187,7 +187,7 @@ export default function AmaravatiLocationPage() {
         "@id": `${canonicalUrl}#legalservice`,
         name: "WillDrafting Amaravati - Estate Planning & SRO Registration",
         description:
-          "Professional Will drafting, advocate consultation, AP IGRS registration, APCRDA plot succession, and Section 31 doorstep execution support.",
+          "Professional Will drafting, lawyer talk, AP IGRS signing, APCRDA plot estate, and Section 31 doorstep signing support.",
         url: canonicalUrl,
         image: imageUrl,
         email: "hello@willdrafting.in",
@@ -235,7 +235,7 @@ export default function AmaravatiLocationPage() {
               priceCurrency: "INR",
               itemOffered: {
                 "@type": "Service",
-                name: "Senior Advocate Will Consultation & APCRDA Review",
+                name: "Senior Lawyer Will Talk & APCRDA Review",
               },
             },
             {
@@ -261,14 +261,14 @@ export default function AmaravatiLocationPage() {
           {
             "@type": "HowToStep",
             position: 1,
-            name: "Compile Asset Inventory and Beneficiary Allocations",
-            text: "List your Amaravati real estate including APCRDA residential and commercial returnable plots, agricultural land in Tullur or Mangalagiri, bank accounts, and demat holdings. Designate beneficiaries and an executor.",
+            name: "Compile Asset Inventory and Heir Allocations",
+            text: "List your Amaravati real estate including APCRDA home and shop returnable plots, farm land in Tullur or Mangalagiri, bank accounts, and demat holdings. Designate heirs and an executor.",
           },
           {
             "@type": "HowToStep",
             position: 2,
             name: "Draft Customized Legal Clauses",
-            text: "Draft your Will using legally vetted statutory clauses tailored to Andhra Pradesh revenue laws, APCRDA LPOC regulations, survivorship terms, and prior instrument revocations.",
+            text: "Draft your Will using legally vetted legal clauses tailored to Andhra Pradesh revenue laws, APCRDA LPOC regulations, survivorship terms, and prior instrument revocations.",
           },
           {
             "@type": "HowToStep",
@@ -280,13 +280,13 @@ export default function AmaravatiLocationPage() {
             "@type": "HowToStep",
             position: 4,
             name: "Book AP IGRS Appointment Slot",
-            text: "Schedule your registration appointment on the AP IGRS portal (registration.ap.gov.in) for your jurisdictional Amaravati SRO and pay the flat ₹1,000 statutory registration fee via CFMS.",
+            text: "Schedule your signing appointment on the AP IGRS portal (signing.ap.gov.in) for your areaal Amaravati SRO and pay the flat ₹1,000 legal signing fee via CFMS.",
           },
           {
             "@type": "HowToStep",
             position: 5,
             name: "Complete Biometrics at Amaravati SRO",
-            text: "Visit the Sub-Registrar office with both witnesses for verbal attestation, photo capture, and biometric thumbprinting to complete official Book III registration.",
+            text: "Visit the SRO office with both witnesses for verbal attestation, photo capture, and biometric thumbprinting to complete official Book III signing.",
           },
         ],
       },
@@ -308,7 +308,7 @@ export default function AmaravatiLocationPage() {
   return (
     <>
       <script
-        type="application/ld+json"
+        type="form/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaGraph) }}
       />
       <Navbar />

@@ -124,38 +124,38 @@ const INITIAL_CHECKLIST = [
   },
   {
     id: "item-2",
-    label: "Original Aadhaar Card & PAN of Testator",
+    label: "Original Aadhaar Card & PAN of Will maker",
     detail: "Essential for biometric identity validation, electronic thumbprint, and digital photo at the SRO counter.",
     checked: true,
   },
   {
     id: "item-3",
     label: "Two Independent Adult Witnesses with Aadhaar",
-    detail: "Must carry original photo IDs and must not be beneficiaries receiving any asset or plot under the Will.",
+    detail: "Must carry original photo IDs and must not be heirs receiving any asset or plot under the Will.",
     checked: true,
   },
   {
     id: "item-4",
-    label: "Doctor Mental Fitness Certificate (MBBS / MD)",
+    label: "Doctor Sound Mind Note (MBBS / MD)",
     detail: "Strongly advised for senior citizens aged 60+. Certifies testamentary mental soundness and lucidity.",
     checked: false,
   },
   {
     id: "item-5",
     label: "AP IGRS Appointment Slip & CFMS Challan",
-    detail: "Official time-slot booking receipt from registration.ap.gov.in along with the paid CFMS challan.",
+    detail: "Official time-slot booking receipt from signing.ap.gov.in along with the paid CFMS challan.",
     checked: false,
   },
   {
     id: "item-6",
     label: "APCRDA Plot Allotment / LPOC Certificates",
-    detail: "Copy of Land Pooling Ownership Certificate or development authority allotment for capital city plots.",
+    detail: "Copy of Land Pooling Ownership Certificate or development office allotment for capital city plots.",
     checked: false,
   },
   {
     id: "item-7",
     label: "Meebhoomi 1-B & Digital Pattadar Passbook",
-    detail: "Recent computerized land records for agricultural parcels and farm lands across the capital region.",
+    detail: "Recent computerized land records for farm parcels and farm lands across the capital region.",
     checked: false,
   },
 ];
@@ -252,7 +252,7 @@ export default function AmaravatiLocationClient({ faqs }: Props) {
               </h1>
 
               <p className="text-base sm:text-lg text-slate-200 leading-relaxed font-normal max-w-2xl">
-                Draft a legally watertight Will for your APCRDA returnable plots, capital region apartments, Meebhoomi farmlands, and commercial assets. Benefit from High Court advocate drafting, AP IGRS registration support, and Section 31 doorstep execution.
+                Draft a legally watertight Will for your APCRDA returnable plots, capital region apartments, Meebhoomi farmlands, and shop assets. Benefit from High Court lawyer drafting, AP IGRS signing support, and Section 31 doorstep signing.
               </p>
 
               <div className="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
@@ -277,7 +277,7 @@ export default function AmaravatiLocationClient({ faqs }: Props) {
               <div className="pt-4 grid grid-cols-3 gap-3 border-t border-white/10 text-xs text-slate-300">
                 <div className="flex items-center gap-2">
                   <Check className="w-4 h-4 text-emerald-400 shrink-0" />
-                  <span>AP High Court Advocate Vetted</span>
+                  <span>AP High Court Lawyer Vetted</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <Check className="w-4 h-4 text-emerald-400 shrink-0" />
@@ -298,7 +298,7 @@ export default function AmaravatiLocationClient({ faqs }: Props) {
               >
                 <Image
                   src="/images/will-drafting-in-amaravati.jpg"
-                  alt="Legal Will Drafting and Property Succession in Amaravati Andhra Pradesh"
+                  alt="Legal Will Drafting and Asset Estate in Amaravati Andhra Pradesh"
                   width={1200} height={675}
                   className="absolute inset-0 w-full h-full object-contain group-hover:scale-102 transition-transform duration-500"
                   priority
@@ -353,7 +353,7 @@ export default function AmaravatiLocationClient({ faqs }: Props) {
             {/* Stat 3 */}
             <div className="bg-white/70 sm:bg-transparent rounded-xl sm:rounded-none p-2.5 sm:p-3 border border-[#172228]/10 sm:border-0 md:border-l md:border-[#172228]/10 shadow-2xs sm:shadow-none flex flex-col items-center justify-center">
               <span className="block text-sm min-[390px]:text-base sm:text-xl lg:text-2xl font-extrabold text-[#172228] tracking-tight leading-tight whitespace-nowrap">
-                Optional Probate
+                A Choice Probate
               </span>
               <span className="text-[9px] min-[390px]:text-[10px] sm:text-xs font-bold uppercase tracking-wider text-[#55636D] mt-1 leading-tight">
                 AP High Court Section 213 Rule
@@ -469,7 +469,7 @@ export default function AmaravatiLocationClient({ faqs }: Props) {
                   <span>AP High Court Jurisprudence</span>
                 </div>
                 <p className="text-[11px] text-slate-500 leading-relaxed">
-                  Compliant with AP IGRS Book III guidelines, APCRDA plot transfer rules, and Meebhoomi succession protocols.
+                  Compliant with AP IGRS Book III guidelines, APCRDA plot transfer rules, and Meebhoomi estate protocols.
                 </p>
                 <a
                   href="/start"
@@ -499,20 +499,20 @@ export default function AmaravatiLocationClient({ faqs }: Props) {
                   <div className="p-4 rounded-2xl bg-slate-50/70 border border-slate-100 space-y-1.5">
                     <div className="flex items-center gap-2 font-bold text-sm text-slate-900">
                       <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
-                      <span>Optional Registration</span>
+                      <span>A Choice Registration</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Will registration is optional under Section 18(e) of the Registration Act, 1908. An unregistered Will signed before two witnesses is legally valid, but official Book III AP IGRS registration provides indisputable proof against title disputes.
+                      Will signing is a choice under Section 18(e) of the Registration Act, 1908. An plain Will signed before two witnesses is legally valid, but official Book III AP IGRS signing provides indisputable proof against title fights.
                     </p>
                   </div>
 
                   <div className="p-4 rounded-2xl bg-slate-50/70 border border-slate-100 space-y-1.5">
                     <div className="flex items-center gap-2 font-bold text-sm text-slate-900">
                       <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
-                      <span>Probate Non-Mandatory</span>
+                      <span>Probate Non-Needed</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Amaravati is governed under the High Court of Andhra Pradesh at Nelapadu. Under Section 213 of the Indian Succession Act, probate is non-mandatory, allowing direct property transfer with a registered Will without civil court probate delays.
+                      Amaravati is governed under the High Court of Andhra Pradesh at Nelapadu. Under Section 213 of the Indian Succession Act, probate is non-needed, allowing direct asset transfer with a filed Will without civil court probate delays.
                     </p>
                   </div>
 
@@ -522,17 +522,37 @@ export default function AmaravatiLocationClient({ faqs }: Props) {
                       <span>Zero Ad-Valorem Stamp Duty</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Wills are 100% exempt from ad-valorem market value stamp duty under the Indian Stamp Act. You only pay a flat statutory registration fee of ₹1,000 plus nominal scanning charges at Amaravati Sub-Registrar Offices.
+                      Wills are 100% exempt from ad-valorem market value stamp duty under the Indian Stamp Act. You only pay a flat legal signing fee of ₹1,000 plus nominal scanning charges at Amaravati SRO offices.
                     </p>
                   </div>
 
                   <div className="p-4 rounded-2xl bg-slate-50/70 border border-slate-100 space-y-1.5">
                     <div className="flex items-center gap-2 font-bold text-sm text-slate-900">
                       <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
-                      <span>APCRDA &amp; Meebhoomi Mutation</span>
+                      <span>APCRDA &amp; Meebhoomi Name Change</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      A registered Will guarantees streamlined title mutation for Land Pooling Scheme (LPS) reconstituted plots through APCRDA and enables swift 1-B Record of Rights and Pattadar Passbook updates on the Meebhoomi portal.
+                      A filed Will guarantees streamlined title name change for Land Pooling Scheme (LPS) reconstituted plots through APCRDA and enables swift 1-B Record of Rights and Pattadar Passbook updates on the Meebhoomi portal.
+                    </p>
+                  </div>
+                </div>
+                <div className="mt-6 grid grid-cols-1 sm:grid-cols-3 gap-4 border-t border-slate-100 pt-6">
+                  <div className="p-4 rounded-xl bg-slate-50 border border-slate-200">
+                    <p className="text-xs font-bold text-slate-900 mb-1">Why Write a Will Now?</p>
+                    <p className="text-xs text-slate-600 leading-relaxed">
+                      A clear Will protects your spouse and kids. It stops long court fights. You pick who gets your house, land, shop, gold, and bank cash. Wait no more to put your plan in writing.
+                    </p>
+                  </div>
+                  <div className="p-4 rounded-xl bg-slate-50 border border-slate-200">
+                    <p className="text-xs font-bold text-slate-900 mb-1">Who Needs One?</p>
+                    <p className="text-xs text-slate-600 leading-relaxed">
+                      Every home owner, plot holder, trader, and NRI with assets in Amaravati should have a Will. Plain words make your wishes safe, clear, and strong in law.
+                    </p>
+                  </div>
+                  <div className="p-4 rounded-xl bg-slate-50 border border-slate-200">
+                    <p className="text-xs font-bold text-slate-900 mb-1">How We Help You</p>
+                    <p className="text-xs text-slate-600 leading-relaxed">
+                      Our lawyers check your land slips and tax bills. We write your Will in clear text. Then we help you sign it with two adult witnesses and file it at the local SRO.
                     </p>
                   </div>
                 </div>
@@ -550,10 +570,10 @@ export default function AmaravatiLocationClient({ faqs }: Props) {
                   1. Will Drafting &amp; Legal Framework in Amaravati
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Estate planning and succession across Amaravati and the Andhra Pradesh Capital Region are governed primarily by the <strong>Indian Succession Act, 1925</strong>, the <strong>Registration Act, 1908</strong>, and the <strong>Andhra Pradesh Capital Region Development Authority (APCRDA) Act, 2014</strong>. Any adult of sound mind can legally bequeath self-acquired residential real estate, commercial commercial shop freeholds, reconstituted LPS plots, agricultural farmlands, and financial assets.
+                  Estate planning and estate across Amaravati and the Andhra Pradesh Capital Region are governed primarily by the <strong>Indian Succession Act, 1925</strong>, the <strong>Registration Act, 1908</strong>, and the <strong>Andhra Pradesh Capital Region Development Office (APCRDA) Act, 2014</strong>. Any adult of sound mind can legally bequeath self-acquired home real estate, shop shop shop freeholds, reconstituted LPS plots, farm farmlands, and financial assets.
                 </p>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Amaravati presents an intricate matrix of property classes. A family estate often combines returnable residential and commercial Land Pooling Ownership Certificates (LPOC) issued by APCRDA in Tullur and Mandadam, high-growth apartments in Mangalagiri and Tadepalli, agribusiness enterprises in Guntur, and ancestral agricultural lands on Meebhoomi records. Without an advocate-drafted Will, legal heirs face protracted administrative roadblocks across the APCRDA Land Wing, Tahsildar revenue offices, and local Ward Sachivalayams.
+                  Amaravati presents an intricate matrix of asset classes. A family estate often combines returnable home and shop Land Pooling Ownership Certificates (LPOC) issued by APCRDA in Tullur and Mandadam, high-growth apartments in Mangalagiri and Tadepalli, agribusiness enterprises in Guntur, and family farm lands on Meebhoomi records. Without an lawyer-drafted Will, legal heirs face protracted office roadblocks across the APCRDA Land Wing, Tahsildar revenue offices, and local Ward Sachivalayams.
                 </p>
               </div>
 
@@ -564,7 +584,7 @@ export default function AmaravatiLocationClient({ faqs }: Props) {
                   </span>
                   <h3 className="font-bold text-sm text-slate-900">Legal Capacity</h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    The testator must be a major aged 18 years or older possessing testamentary mental capacity and soundness of mind (Section 59).
+                    The Will maker must be a major aged 18 years or older possessing testamentary mental capacity and soundness of mind (Section 59).
                   </p>
                 </div>
 
@@ -574,7 +594,7 @@ export default function AmaravatiLocationClient({ faqs }: Props) {
                   </span>
                   <h3 className="font-bold text-sm text-slate-900">Free Consent</h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Executed voluntarily without undue influence, fraudulent misrepresentation, coercion, or family duress (Section 61).
+                    Signed voluntarily without undue influence, fraudulent misrepresentation, coercion, or family duress (Section 61).
                   </p>
                 </div>
 
@@ -584,7 +604,7 @@ export default function AmaravatiLocationClient({ faqs }: Props) {
                   </span>
                   <h3 className="font-bold text-sm text-slate-900">Two Witnesses</h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Must be signed in the simultaneous physical presence of at least two independent adult attesting witnesses (Section 63).
+                    Must be signed in the simultaneous physical presence of at least two independent adult witnesses (Section 63).
                   </p>
                 </div>
 
@@ -592,29 +612,29 @@ export default function AmaravatiLocationClient({ faqs }: Props) {
                   <span className="w-8 h-8 rounded-xl bg-rose-50 text-[#C65378] flex items-center justify-center font-bold text-sm">
                     <ShieldCheck className="w-4 h-4" />
                   </span>
-                  <h3 className="font-bold text-sm text-slate-900">Non-Beneficiary</h3>
+                  <h3 className="font-bold text-sm text-slate-900">Non-Heir</h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Attesting witnesses and their spouses must not receive any legacy, plot, or bequest under the Will (Section 67).
+                    Witnesses and their spouses must not receive any legacy, plot, or bequest under the Will (Section 67).
                   </p>
                 </div>
               </div>
             </section>
 
             {/* SECTION 2: MANDATORY VS OPTIONAL */}
-            <section id="mandatory-vs-optional" className="scroll-target space-y-6">
+            <section id="mandatory-vs-a choice" className="scroll-target space-y-6">
               <div className="space-y-2">
                 <div className="flex items-center gap-2 text-xs font-black uppercase tracking-wider text-[#C65378]">
                   <FileQuestion className="w-4 h-4 text-[#C65378]" />
                   <span>REGISTRATION STATUS</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  2. Is Will Registration Mandatory in Amaravati?
+                  2. Is Will Registration Needed in Amaravati?
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Under Section 18(e) of the Registration Act, 1908, the registration of a testamentary Will is strictly <strong>optional</strong>. An unregistered Will signed on standard white paper before two independent witnesses is legally enforceable and admissible in court.
+                  Under Section 18(e) of the Registration Act, 1908, the signing of a testamentary Will is strictly <strong>a choice</strong>. An plain Will signed on standard white paper before two independent witnesses is legally enforceable and admissible in court.
                 </p>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  However, given the multi-crore valuations of capital region plots and land pooling assets across Amaravati, Tullur, and Mangalagiri, senior estate lawyers strongly advise formal registration. An official Book III entry in AP IGRS government custody shields your family from fraudulent claims, suspicious signatures, and prolonged mutation delays.
+                  However, given the multi-crore valuations of capital region plots and land pooling assets across Amaravati, Tullur, and Mangalagiri, senior estate lawyers strongly advise formal signing. An official Book III entry in AP IGRS government custody shields your family from fraudulent claims, suspicious signatures, and prolonged name change delays.
                 </p>
               </div>
 
@@ -624,29 +644,29 @@ export default function AmaravatiLocationClient({ faqs }: Props) {
                   <thead>
                     <tr className="bg-slate-100/80 border-b border-slate-200 text-slate-800">
                       <th className="p-4 font-bold">Legal Parameter</th>
-                      <th className="p-4 font-bold">Registered Will (AP IGRS Book III)</th>
-                      <th className="p-4 font-bold">Unregistered Will (White Paper)</th>
+                      <th className="p-4 font-bold">Filed Will (AP IGRS Book III)</th>
+                      <th className="p-4 font-bold">Plain Will (White Paper)</th>
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-slate-100 text-slate-700">
                     <tr>
-                      <td className="p-4 font-semibold">Statutory Validity</td>
+                      <td className="p-4 font-semibold">Legal Validity</td>
                       <td className="p-4 text-emerald-700 font-bold">Full legal validity under Section 17 &amp; 18</td>
                       <td className="p-4">Valid under Section 63 Indian Succession Act</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-semibold">APCRDA Plot Transmission</td>
+                      <td className="p-4 font-semibold">APCRDA Plot Transfer</td>
                       <td className="p-4 text-emerald-700 font-bold">Immediate recognition by Land Administration Wing</td>
                       <td className="p-4">May require legal heir affidavits or no-objection bonds</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-semibold">Meebhoomi Revenue Mutation</td>
+                      <td className="p-4 font-semibold">Meebhoomi Revenue Name Change</td>
                       <td className="p-4 text-emerald-700 font-bold">Swift 1-B updating &amp; Pattadar Passbook issuance</td>
                       <td className="p-4">Subject to revenue inquiry and family notices</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-semibold">Presumption of Authenticity</td>
-                      <td className="p-4 text-emerald-700 font-bold">Strong evidentiary presumption under Section 114</td>
+                      <td className="p-4 font-semibold">Presumption of Truth</td>
+                      <td className="p-4 text-emerald-700 font-bold">Strong proof presumption under Section 114</td>
                       <td className="p-4">Burden of proving genuineness rests on propounder</td>
                     </tr>
                     <tr>
@@ -670,20 +690,20 @@ export default function AmaravatiLocationClient({ faqs }: Props) {
                   3. Probate Exemption for Amaravati: AP High Court Rule
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  A common misconception among property owners in Andhra Pradesh is that an executor must obtain court probate before transmitting real estate. Under Section 213 read with Section 57 of the Indian Succession Act, 1925, probate is mandatory strictly within the historical presidential territories of Mumbai, Kolkata, and Chennai.
+                  A common misconception among asset owners in Andhra Pradesh is that an executor must get court probate before transmitting real estate. Under Section 213 read with Section 57 of the Indian Succession Act, 1925, probate is needed strictly within the historical presidential territories of Mumbai, Kolkata, and Chennai.
                 </p>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Amaravati is a non-presidency capital governed under the <strong>High Court of Andhra Pradesh at Nelapadu</strong>. The Supreme Court in <em>Clarence Pais v. Union of India</em> and subsequent Andhra Pradesh High Court judgments have established that probate is non-mandatory for Hindu, Buddhist, Sikh, and Jain testators. Beneficiaries can directly execute property transmission using a registered Will.
+                  Amaravati is a non-presidency capital governed under the <strong>High Court of Andhra Pradesh at Nelapadu</strong>. The Supreme Court in <em>Clarence Pais v. Union of India</em> and subsequent Andhra Pradesh High Court judgments have set uped that probate is non-needed for Hindu, Buddhist, Sikh, and Jain Will makers. Heirs can directly execute asset transfer using a filed Will.
                 </p>
               </div>
 
               <div className="p-6 rounded-3xl bg-amber-50/60 border border-amber-200/80 space-y-3">
                 <div className="flex items-center gap-2 font-bold text-amber-950 text-sm sm:text-base">
                   <AlertTriangle className="w-5 h-5 text-amber-600 shrink-0" />
-                  <span>Key Practical Impact for Amaravati Property Owners</span>
+                  <span>Key Practical Impact for Amaravati Asset Owners</span>
                 </div>
                 <p className="text-xs sm:text-sm text-amber-900 leading-relaxed">
-                  Because probate is non-compulsory in Andhra Pradesh, heirs do not need to spend 1 to 3 years and tens of thousands of rupees on civil court fees. When your Will is drafted with precise legal descriptions and registered at the local Sub-Registrar Office, government authorities like APCRDA and local municipalities accept the registered instrument directly.
+                  Because probate is non-needed in Andhra Pradesh, heirs do not need to spend 1 to 3 years and tens of thousands of rupees on civil court fees. When your Will is drafted with precise legal descriptions and filed at the local SRO office, government offices like APCRDA and local municipalities accept the filed instrument directly.
                 </p>
               </div>
             </section>
@@ -696,10 +716,10 @@ export default function AmaravatiLocationClient({ faqs }: Props) {
                   <span>SUB-REGISTRAR JURISDICTIONS</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  4. Amaravati Sub-Registrar Offices: SRO Jurisdiction
+                  4. Amaravati SRO offices: SRO Area
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Under the Registration and Stamps Department of Andhra Pradesh (AP IGRS), testamentary Wills are registered in Book III. You can schedule an appointment at any of the key SRO hubs serving the Amaravati capital region:
+                  Under the Registration and Stamps Office of Andhra Pradesh (AP IGRS), testamentary Wills are filed in Book III. You can schedule an appointment at any of the key SRO hubs serving the Amaravati capital region:
                 </p>
               </div>
 
@@ -763,7 +783,7 @@ export default function AmaravatiLocationClient({ faqs }: Props) {
 
                       <div>
                         <span className="block text-[11px] font-mono uppercase font-bold text-slate-400">
-                          Jurisdiction &amp; Local Coverage
+                          Area &amp; Local Coverage
                         </span>
                         <p className="font-medium text-slate-800 mt-0.5 leading-relaxed">
                           {activeHubData.areas}
@@ -804,7 +824,7 @@ export default function AmaravatiLocationClient({ faqs }: Props) {
                   5. Regional Cities &amp; Zones Across Amaravati Capital
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Estate assets across the Amaravati Capital Region span high-value Land Pooling Scheme (LPS) reconstituted plots in Velagapudi and Tullur, luxury riverfront high-rises in Tadepalli and Mangalagiri, agribusiness and industrial trading assets in Guntur, and commercial developments along the Vijayawada corridor. Our estate advocates deliver customized legal drafting, AP IGRS slot booking, and Sub-Registrar accompaniment across all key regional cities and growth nodes:
+                  Estate assets across the Amaravati Capital Region span high-value Land Pooling Scheme (LPS) reconstituted plots in Velagapudi and Tullur, luxury riverfront high-rises in Tadepalli and Mangalagiri, agribusiness and industrial trading assets in Guntur, and shop developments along the Vijayawada corridor. Our estate lawyers deliver customized legal drafting, AP IGRS slot booking, and Sub-Registrar accompaniment across all key regional cities and growth nodes:
                 </p>
               </div>
 
@@ -834,7 +854,7 @@ export default function AmaravatiLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Specialized <strong>Will drafting services in Velagapudi</strong> and Nelapadu for civil servants, senior advocates, and capital zone landholders. Drafts clear succession terms for APCRDA residential plots, chamber properties, and financial investment portfolios to eliminate inter-generational ambiguity.
+                      Specialized <strong>Will drafting services in Velagapudi</strong> and Nelapadu for civil servants, senior lawyers, and capital zone landholders. Drafts clear estate terms for APCRDA home plots, chamber assets, and financial investment portfolios to eliminate inter-generational ambiguity.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -843,7 +863,7 @@ export default function AmaravatiLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Tullur Mandal Revenue Complex</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        AP IGRS slot scheduling at Tullur SRO, advocate physical presence, and Section 31 home visits for senior residents.
+                        AP IGRS slot scheduling at Tullur SRO, lawyer physical presence, and Section 31 home visits for senior residents.
                       </p>
                     </div>
                   </div>
@@ -887,7 +907,7 @@ export default function AmaravatiLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Customized <strong>Will drafting services in Mangalagiri</strong> and Tadepalli for premium gated villa communities, IT corridor apartments, and riverfront penthouses. Details apartment society share transfers, parking bays, and multi-currency NRI succession.
+                      Customized <strong>Will drafting services in Mangalagiri</strong> and Tadepalli for premium gated villa communities, IT corridor apartments, and riverfront penthouses. Details apartment society share transfers, parking bays, and multi-currency NRI estate.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -896,13 +916,13 @@ export default function AmaravatiLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Mangalagiri Town &amp; Tadepalli SRO</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        High-net-worth estate planning, doctor capacity certifications, and streamlined Book III registration.
+                        High-net-worth estate planning, doctor capacity certifications, and streamlined Book III signing.
                       </p>
                     </div>
                   </div>
 
                   <div className="pt-4 mt-4 border-t border-slate-100 flex items-center justify-between">
-                    <span className="text-xs font-bold text-slate-500">Commercial &amp; Residential</span>
+                    <span className="text-xs font-bold text-slate-500">Shop &amp; Home</span>
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
@@ -940,7 +960,7 @@ export default function AmaravatiLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Specialized <strong>Will drafting services in Tullur</strong> for Land Pooling Scheme (LPS) participants. Formulates legally bulletproof bequests for returnable commercial and residential plots, Land Pooling Ownership Certificates (LPOC), and annual government annuity entitlements.
+                      Specialized <strong>Will drafting services in Tullur</strong> for Land Pooling Scheme (LPS) participants. Formulates legally bulletproof bequests for returnable shop and home plots, Land Pooling Ownership Certificates (LPOC), and annual government annuity entitlements.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -949,7 +969,7 @@ export default function AmaravatiLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Tullur SRO &amp; APCRDA Land Wing</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Clear codification of LPS survey numbers, reconstituted plot allotments, and Tahsildar revenue mutation.
+                        Clear codification of LPS survey numbers, reconstituted plot allotments, and Tahsildar revenue name change.
                       </p>
                     </div>
                   </div>
@@ -974,7 +994,7 @@ export default function AmaravatiLocationClient({ faqs }: Props) {
                     <div className="flex items-center justify-between gap-2">
                       <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-rose-50 text-[#C65378] border border-rose-100">
                         <MapPin className="w-3.5 h-3.5" />
-                        Twin City Commercial Anchor
+                        Twin City Shop Anchor
                       </span>
                       <span className="text-[11px] font-semibold text-slate-500 bg-slate-100 px-2.5 py-1 rounded-lg">
                         SRO Guntur (Pattabhipuram)
@@ -993,7 +1013,7 @@ export default function AmaravatiLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Comprehensive <strong>Will drafting services in Guntur</strong> for trading dynasties, cold storage operators, and doctors. Codifies succession of commercial buildings, partnership firm capital accounts, private company shares, and gold reserves.
+                      Full <strong>Will drafting services in Guntur</strong> for trading dynasties, cold storage operators, and doctors. Codifies estate of shop buildings, partnership firm capital accounts, private company shares, and gold reserves.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1002,7 +1022,7 @@ export default function AmaravatiLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Registration Bhavan, Pattabhipuram</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        GMC property tax record mutation, business succession structuring, and senior citizen home registration.
+                        GMC asset tax record name change, business estate structuring, and senior citizen home signing.
                       </p>
                     </div>
                   </div>
@@ -1046,7 +1066,7 @@ export default function AmaravatiLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Targeted <strong>Will drafting services in Vijayawada</strong> connecting commercial trading interests with Amaravati assets. Safeguards family businesses in Governorpet, auto ancillary units in Auto Nagar, and luxury riverview apartments.
+                      Targeted <strong>Will drafting services in Vijayawada</strong> connecting shop trading interests with Amaravati assets. Safeguards family businesses in Governorpet, auto ancillary units in Auto Nagar, and luxury riverview apartments.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1055,13 +1075,13 @@ export default function AmaravatiLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Governorpet &amp; Patamata SROs</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        VMC mutation assistance, business continuity trusts, and Book III registration coordination.
+                        VMC name change help, business continuity trusts, and Book III signing coordination.
                       </p>
                     </div>
                   </div>
 
                   <div className="pt-4 mt-4 border-t border-slate-100 flex items-center justify-between">
-                    <span className="text-xs font-bold text-slate-500">Commercial &amp; Wholesale</span>
+                    <span className="text-xs font-bold text-slate-500">Shop &amp; Wholesale</span>
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
@@ -1099,7 +1119,7 @@ export default function AmaravatiLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Tailored <strong>Will drafting in Amaravati Heritage Town</strong> and Dharanikota for ancestral residential homes, riverfront agricultural orchards, and temple belt holdings. Protects Meebhoomi revenue records and prevents family land disputes.
+                      Tailored <strong>Will drafting in Amaravati Heritage Town</strong> and Dharanikota for family home homes, riverfront farm orchards, and temple belt holdings. Protects Meebhoomi revenue records and prevents family land fights.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1108,7 +1128,7 @@ export default function AmaravatiLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Amaravati Tehsil Compound</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Agricultural passbook transmission, Adangal verification, and local SRO registration.
+                        Farm passbook transfer, Adangal check, and local SRO signing.
                       </p>
                     </div>
                   </div>
@@ -1152,7 +1172,7 @@ export default function AmaravatiLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Customized <strong>Will drafting in Tenali</strong> for prosperous agricultural families, rice mill owners, and commercial property holders. Accurately specifies canal-irrigated farmland parcels, turmeric trade assets, and urban real estate.
+                      Customized <strong>Will drafting in Tenali</strong> for prosperous farm families, rice mill owners, and shop asset holders. Accurately specifies canal-irrigated farmland parcels, turmeric trade assets, and urban real estate.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1161,7 +1181,7 @@ export default function AmaravatiLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Taluk Office Road, Tenali</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        1-B mutation compliance, digital passbook transmission, and Sub-Registrar appointment assistance.
+                        1-B name change compliance, digital passbook transfer, and Sub-Registrar appointment help.
                       </p>
                     </div>
                   </div>
@@ -1205,7 +1225,7 @@ export default function AmaravatiLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Strategic <strong>Will drafting in Gannavaram</strong> for logistics hub operators, IT professionals, and plotted corridor investors. Structures succession of warehousing leases, commercial land investments, and corporate equity.
+                      Strategic <strong>Will drafting in Gannavaram</strong> for logistics hub operators, IT professionals, and plotted corridor investors. Structures estate of warehousing leases, shop land investments, and corporate equity.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1214,7 +1234,7 @@ export default function AmaravatiLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Gannavaram &amp; Kankipadu SROs</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        High-growth asset protection, seamless corporate transfers, and fast-track Book III registration.
+                        High-growth asset safety, seamless corporate transfers, and fast-track Book III signing.
                       </p>
                     </div>
                   </div>
@@ -1246,7 +1266,7 @@ export default function AmaravatiLocationClient({ faqs }: Props) {
                   6. Step-by-Step SOP: Drafting &amp; AP IGRS Registration
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Follow this verified legal procedure to create an unassailable Will and complete registration before an Amaravati Sub-Registrar:
+                  Follow this verified legal step to create an unassailable Will and complete signing before an Amaravati Sub-Registrar:
                 </p>
               </div>
 
@@ -1261,7 +1281,7 @@ export default function AmaravatiLocationClient({ faqs }: Props) {
                       Compile Asset Schedule &amp; Successors
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Assemble property documentation: APCRDA plot allotment letters, Land Pooling Ownership Certificates (LPOC), registered sale deeds for Mangalagiri/Tadepalli apartments, Meebhoomi 1-B extracts, bank accounts, and demat account folios. Designate trusted beneficiaries and appoint a capable executor.
+                      Assemble asset papers: APCRDA plot allotment letters, Land Pooling Ownership Certificates (LPOC), filed sale deeds for Mangalagiri/Tadepalli apartments, Meebhoomi 1-B extracts, bank accounts, and demat account folios. Designate trusted heirs and appoint a capable executor.
                     </p>
                   </div>
                 </div>
@@ -1276,7 +1296,7 @@ export default function AmaravatiLocationClient({ faqs }: Props) {
                       Draft Legally Watertight Clauses
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Structure your Will using statutory terminology. Incorporate clear revocations of previous instruments, survivorship clauses, residual asset provisions, and testamentary guardian nominations for minor children. Our High Court advocates review the draft to ensure APCRDA alignment.
+                      Structure your Will using legal terminology. Incorporate clear revocations of previous instruments, survivorship clauses, residual asset rules, and testamentary guardian nominations for minor children. Our High Court lawyers review the draft to make sure APCRDA alignment.
                     </p>
                   </div>
                 </div>
@@ -1291,7 +1311,7 @@ export default function AmaravatiLocationClient({ faqs }: Props) {
                       Physical Signing Before Two Independent Witnesses
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Print the document on standard white A4 paper. Under Section 63 of the Indian Succession Act, you sign or thumb-impress each page in the simultaneous presence of two independent adult witnesses who sign as attesting witnesses.
+                      Print the document on standard white A4 paper. Under Section 63 of the Indian Succession Act, you sign or thumb-impress each page in the simultaneous presence of two independent adult witnesses who sign as witnesses.
                     </p>
                   </div>
                 </div>
@@ -1306,7 +1326,7 @@ export default function AmaravatiLocationClient({ faqs }: Props) {
                       Schedule AP IGRS Appointment &amp; Generate CFMS Challan
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Log onto the AP IGRS portal (<code>registration.ap.gov.in</code>), choose your jurisdictional SRO (Tullur, Mangalagiri, Tadepalli, or Guntur), enter party KYC details, and remit the flat statutory registration fee of ₹1,000 through the CFMS payment gateway.
+                      Log onto the AP IGRS portal (<code>signing.ap.gov.in</code>), choose your areaal SRO (Tullur, Mangalagiri, Tadepalli, or Guntur), enter party KYC details, and remit the flat legal signing fee of ₹1,000 through the CFMS payment gateway.
                     </p>
                   </div>
                 </div>
@@ -1321,7 +1341,7 @@ export default function AmaravatiLocationClient({ faqs }: Props) {
                       Attend SRO for Biometric Registration
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Appear before the Sub-Registrar along with both witnesses. The Sub-Registrar conducts verbal verification of testamentary intent, captures electronic thumbprints, and photographs all parties. The Will is sealed into permanent Book III government custody and issued with a certified registration endorsement.
+                      Appear before the Sub-Registrar along with both witnesses. The Sub-Registrar conducts verbal check of testamentary intent, captures electronic thumbprints, and photographs all parties. The Will is sealed into permanent Book III government custody and issued with a certified signing endorsement.
                     </p>
                   </div>
                 </div>
@@ -1339,7 +1359,7 @@ export default function AmaravatiLocationClient({ faqs }: Props) {
                   7. Section 31 Doorstep SRO Registration for Elders
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  For elderly, infirm, or bedridden citizens who cannot physically navigate Sub-Registrar offices, <strong>Section 31 of the Registration Act, 1908</strong> allows the Sub-Registrar to visit your home or hospital bed:
+                  For elderly, infirm, or bedridden citizens who cannot physically navigate SRO offices, <strong>Section 31 of the Registration Act, 1908</strong> allows the Sub-Registrar to visit your home or hospital bed:
                 </p>
               </div>
 
@@ -1350,7 +1370,7 @@ export default function AmaravatiLocationClient({ faqs }: Props) {
                   </span>
                   <h3 className="font-bold text-sm text-slate-900">Doctor Fitness Certificate</h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    A registered medical practitioner (MBBS doctor) issues a fitness certificate certifying testamentary sound mind and inability to travel to the SRO.
+                    A filed medical practitioner (MBBS doctor) issues a fitness paper certifying testamentary sound mind and inability to travel to the SRO.
                   </p>
                 </div>
 
@@ -1387,7 +1407,7 @@ export default function AmaravatiLocationClient({ faqs }: Props) {
                   8. Document Checklist for Amaravati Sub-Registrars
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Check off the documents required before visiting the Sub-Registrar Office in Tullur, Mangalagiri, Tadepalli, or Guntur:
+                  Check off the documents required before visiting the SRO office in Tullur, Mangalagiri, Tadepalli, or Guntur:
                 </p>
               </div>
 
@@ -1437,7 +1457,7 @@ export default function AmaravatiLocationClient({ faqs }: Props) {
                   <span>ASSET CLASSIFICATIONS</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  9. Amaravati Property Types: CRDA Plots &amp; Meebhoomi Land
+                  9. Amaravati Asset Types: CRDA Plots &amp; Meebhoomi Land
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   A legally compliant Amaravati Will can cover diverse real estate and movable assets across Andhra Pradesh:
@@ -1453,7 +1473,7 @@ export default function AmaravatiLocationClient({ faqs }: Props) {
                     APCRDA Land Pooling (LPS) Plots
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Reconstituted residential and commercial plots allocated in Tullur, Nelapadu, Mandadam, and Rayapudi under the Land Pooling Scheme. Specifies LPOC certificate numbers, layout sector codes, and government annuity payouts.
+                    Reconstituted home and shop plots allocated in Tullur, Nelapadu, Mandadam, and Rayapudi under the Land Pooling Scheme. Specifies LPOC paper numbers, layout sector codes, and government annuity payouts.
                   </p>
                 </div>
 
@@ -1462,10 +1482,10 @@ export default function AmaravatiLocationClient({ faqs }: Props) {
                     <Wheat className="w-4 h-4" />
                   </div>
                   <h3 className="font-extrabold text-base text-slate-900">
-                    Meebhoomi Agricultural Farmlands
+                    Meebhoomi Farm Farmlands
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Canal-irrigated paddy fields, horticulture orchards, and delta farmlands in Tenali, Dharanikota, and Guntur rural. Details survey numbers, khata numbers, and computerized Pattadar Passbook succession.
+                    Canal-irrigated paddy fields, horticulture orchards, and delta farmlands in Tenali, Dharanikota, and Guntur rural. Details survey numbers, khata numbers, and computerized Pattadar Passbook estate.
                   </p>
                 </div>
 
@@ -1477,7 +1497,7 @@ export default function AmaravatiLocationClient({ faqs }: Props) {
                     Gated Apartments &amp; Riverfront Villas
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Apartments in Mangalagiri, riverfront villas in Tadepalli and Undavalli, and residential homes in Guntur. Codifies undivided share of land (UDS), dedicated car parking allocations, and society membership shares.
+                    Apartments in Mangalagiri, riverfront villas in Tadepalli and Undavalli, and home homes in Guntur. Codifies undivided share of land (UDS), dedicated car parking allocations, and society membership shares.
                   </p>
                 </div>
 
@@ -1486,10 +1506,10 @@ export default function AmaravatiLocationClient({ faqs }: Props) {
                     <Factory className="w-4 h-4" />
                   </div>
                   <h3 className="font-extrabold text-base text-slate-900">
-                    Commercial Showrooms &amp; Agri-Businesses
+                    Shop Showrooms &amp; Agri-Businesses
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Commercial shop freeholds in Guntur Brodipet and Vijayawada Governorpet, cold storage facilities, partnership equities, demat portfolios, mutual funds, and bank locker authorizations.
+                    Shop shop freeholds in Guntur Brodipet and Vijayawada Governorpet, cold storage facilities, partnership equities, demat portfolios, mutual funds, and bank locker authorizations.
                   </p>
                 </div>
               </div>
@@ -1506,7 +1526,7 @@ export default function AmaravatiLocationClient({ faqs }: Props) {
                   10. Official AP IGRS Will Registration Fees &amp; Charges
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Unlike commercial sale deeds or gift transfers that attract 5% to 7.5% stamp duty and registration fees in Andhra Pradesh, testamentary Wills are completely exempt from ad-valorem stamp duty. Official charges in Amaravati are nominal:
+                  Unlike shop sale deeds or gift transfers that attract 5% to 7.5% stamp duty and signing fees in Andhra Pradesh, testamentary Wills are completely exempt from ad-valorem stamp duty. Official charges in Amaravati are nominal:
                 </p>
               </div>
 
@@ -1515,8 +1535,8 @@ export default function AmaravatiLocationClient({ faqs }: Props) {
                   <thead>
                     <tr className="bg-slate-100/80 border-b border-slate-200 text-slate-800">
                       <th className="p-4 font-bold">Fee Component</th>
-                      <th className="p-4 font-bold">Statutory Amount</th>
-                      <th className="p-4 font-bold">Remittance Authority</th>
+                      <th className="p-4 font-bold">Legal Amount</th>
+                      <th className="p-4 font-bold">Remittance Office</th>
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-slate-100 text-slate-700">
@@ -1527,7 +1547,7 @@ export default function AmaravatiLocationClient({ faqs }: Props) {
                     </tr>
                     <tr>
                       <td className="p-4 font-semibold">SRO Book III Registration Fee</td>
-                      <td className="p-4 font-bold text-[#C65378]">₹1,000 (Flat Statutory Fee)</td>
+                      <td className="p-4 font-bold text-[#C65378]">₹1,000 (Flat Legal Fee)</td>
                       <td className="p-4">AP IGRS via CFMS Portal</td>
                     </tr>
                     <tr>
@@ -1556,7 +1576,7 @@ export default function AmaravatiLocationClient({ faqs }: Props) {
                   11. Transparent Will Drafting Packages in Amaravati
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Choose the legal assistance package tailored to your family&apos;s estate planning and property portfolio in the Amaravati capital region:
+                  Choose the legal help package tailored to your family&apos;s estate planning and asset portfolio in the Amaravati capital region:
                 </p>
               </div>
 
@@ -1574,7 +1594,7 @@ export default function AmaravatiLocationClient({ faqs }: Props) {
                       ₹1,990
                     </div>
                     <p className="text-xs text-slate-600">
-                      Ideal for individual homeowners with apartments, bank deposits, and demat holdings.
+                      Ideal for single homeowners with apartments, bank deposits, and demat holdings.
                     </p>
                     <ul className="space-y-2.5 text-xs text-slate-700 pt-3 border-t border-slate-100">
                       <li className="flex items-center gap-2">
@@ -1583,11 +1603,11 @@ export default function AmaravatiLocationClient({ faqs }: Props) {
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>Legally vetted statutory clauses</span>
+                        <span>Legally vetted legal clauses</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>Instant PDF download &amp; execution guide</span>
+                        <span>Instant PDF download &amp; signing guide</span>
                       </li>
                     </ul>
                   </div>
@@ -1607,16 +1627,16 @@ export default function AmaravatiLocationClient({ faqs }: Props) {
                   </div>
                   <div className="space-y-4">
                     <span className="text-xs font-bold uppercase tracking-wider text-[#C65378]">
-                      Comprehensive
+                      Full
                     </span>
                     <h3 className="font-extrabold text-xl text-slate-900">
-                      Advocate Consultation
+                      Lawyer Talk
                     </h3>
                     <div className="text-3xl font-black text-slate-900">
                       ₹4,990
                     </div>
                     <p className="text-xs text-slate-600">
-                      High Court advocate review for APCRDA plots, Meebhoomi farmlands, and multi-heir portfolios.
+                      High Court lawyer review for APCRDA plots, Meebhoomi farmlands, and multi-heir portfolios.
                     </p>
                     <ul className="space-y-2.5 text-xs text-slate-700 pt-3 border-t border-slate-100">
                       <li className="flex items-center gap-2">
@@ -1625,7 +1645,7 @@ export default function AmaravatiLocationClient({ faqs }: Props) {
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>1-on-1 video call with senior advocate</span>
+                        <span>1-on-1 video call with senior lawyer</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
@@ -1641,7 +1661,7 @@ export default function AmaravatiLocationClient({ faqs }: Props) {
                     href="/contact"
                     className="mt-6 w-full py-3 rounded-xl bg-[#C65378] text-white text-xs font-bold text-center hover:bg-[#a13c5d] transition-colors cursor-pointer"
                   >
-                    Book Advocate Call
+                    Book Lawyer Call
                   </a>
                 </div>
 
@@ -1658,7 +1678,7 @@ export default function AmaravatiLocationClient({ faqs }: Props) {
                       ₹9,990
                     </div>
                     <p className="text-xs text-slate-600">
-                      End-to-end registration coordination across any Amaravati Sub-Registrar Office or home visit.
+                      End-to-end signing coordination across any Amaravati SRO office or home visit.
                     </p>
                     <ul className="space-y-2.5 text-xs text-slate-700 pt-3 border-t border-slate-100">
                       <li className="flex items-center gap-2">
@@ -1667,7 +1687,7 @@ export default function AmaravatiLocationClient({ faqs }: Props) {
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>Advocate physically attends Amaravati SRO</span>
+                        <span>Lawyer physically attends Amaravati SRO</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
@@ -1700,7 +1720,7 @@ export default function AmaravatiLocationClient({ faqs }: Props) {
                   12. Frequently Asked Questions: Amaravati Will Drafting
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Clear, authoritative answers to common legal questions regarding Will drafting and property registration in Amaravati:
+                  Clear, authoritative answers to common legal questions regarding Will drafting and asset signing in Amaravati:
                 </p>
               </div>
 
@@ -1741,10 +1761,10 @@ export default function AmaravatiLocationClient({ faqs }: Props) {
                   <span>STATUTORY CITATIONS</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  13. Statutory Citations &amp; Andhra Pradesh Legal Portals
+                  13. Legal Citations &amp; Andhra Pradesh Legal Portals
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Our drafting protocols comply strictly with codified Indian statutes and Andhra Pradesh state registration systems:
+                  Our drafting protocols comply strictly with codified Indian statutes and Andhra Pradesh state signing systems:
                 </p>
               </div>
 
@@ -1763,7 +1783,7 @@ export default function AmaravatiLocationClient({ faqs }: Props) {
                     Registration Act 1908
                   </span>
                   <p className="text-xs text-slate-600">
-                    Section 18(e) (Optional Registration) and Section 31 (Special Commission Home Visit).
+                    Section 18(e) (A Choice Registration) and Section 31 (Special Commission Home Visit).
                   </p>
                 </div>
 
@@ -1772,7 +1792,7 @@ export default function AmaravatiLocationClient({ faqs }: Props) {
                     APCRDA Act 2014
                   </span>
                   <p className="text-xs text-slate-600">
-                    Land Pooling Scheme (LPS) Rules and reconstituted plot succession regulations.
+                    Land Pooling Scheme (LPS) Rules and reconstituted plot estate regulations.
                   </p>
                 </div>
 
@@ -1781,7 +1801,7 @@ export default function AmaravatiLocationClient({ faqs }: Props) {
                     AP IGRS &amp; Meebhoomi Portals
                   </span>
                   <p className="text-xs text-slate-600">
-                    Official registration portal: <code>registration.ap.gov.in</code> &amp; <code>meebhoomi.ap.gov.in</code>.
+                    Official signing portal: <code>signing.ap.gov.in</code> &amp; <code>meebhoomi.ap.gov.in</code>.
                   </p>
                 </div>
               </div>
@@ -1790,10 +1810,10 @@ export default function AmaravatiLocationClient({ faqs }: Props) {
             {/* BOTTOM CONVERSION CTA BANNER */}
             <section className="rounded-3xl bg-gradient-to-br from-[#172228] to-[#212F35] text-white p-8 sm:p-12 text-center space-y-5 shadow-xl">
               <h3 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-white">
-                Protect Your Amaravati Properties &amp; Family Legacy
+                Protect Your Amaravati Assets &amp; Family Legacy
               </h3>
               <p className="text-sm sm:text-base text-slate-200 max-w-2xl mx-auto leading-relaxed">
-                Do not leave your hard-earned Amaravati plots, homes, or farmlands to administrative gridlock. Draft a legally binding Will online today or consult our senior Andhra Pradesh High Court advocates.
+                Do not leave your hard-earned Amaravati plots, homes, or farmlands to office gridlock. Draft a legally binding Will online today or consult our senior Andhra Pradesh High Court lawyers.
               </p>
               <div className="pt-3 flex flex-col sm:flex-row items-center justify-center gap-4">
                 <a
@@ -1807,7 +1827,7 @@ export default function AmaravatiLocationClient({ faqs }: Props) {
                   href="/contact"
                   className="w-full sm:w-auto px-6 py-3.5 rounded-full bg-white/10 text-white font-bold text-sm sm:text-base hover:bg-white/20 transition-all border border-white/20"
                 >
-                  Book Advocate Consultation
+                  Book Lawyer Talk
                 </a>
               </div>
             </section>
@@ -1831,7 +1851,7 @@ export default function AmaravatiLocationClient({ faqs }: Props) {
           >
             <div className="flex items-center justify-between pb-3 border-b border-slate-200">
               <span className="font-bold text-sm text-slate-900">
-                Visual Blueprint: Amaravati Will Drafting &amp; Property Succession Framework
+                Visual Blueprint: Amaravati Will Drafting &amp; Asset Estate Framework
               </span>
               <button
                 onClick={() => setShowHighResModal(false)}
@@ -1850,7 +1870,7 @@ export default function AmaravatiLocationClient({ faqs }: Props) {
               />
             </div>
             <div className="pt-3 flex items-center justify-between text-xs text-slate-500">
-              <span>Amaravati SRO Registered &amp; APCRDA Mutation Compliant</span>
+              <span>Amaravati SRO Filed &amp; APCRDA Name Change Compliant</span>
               <a
                 href="/start"
                 onClick={(e) => {

@@ -77,44 +77,44 @@ export const metadata: Metadata = {
 
 const UTTARAKHAND_FAQS = [
   {
-    q: "Is Will registration mandatory in Uttarakhand?",
-    a: "No. Under Section 18(e) of the Registration Act, 1908, registering a Will is optional in Uttarakhand. A Will written on plain white paper is legally valid if signed before two independent witnesses. However, registering your Will at a Sub-Registrar Office via the e-Prerna portal enters it into permanent Book III government custody. This prevents family challenges and simplifies property mutation with MDDA, Nagar Nigam, and Revenue Tehsildars.",
+    q: "Is Will registration required by law in Uttarakhand?",
+    a: "No. Under Section 18(e) of the Registration Act, 1908, recording a Will at the SRO is optional in Uttarakhand. A Will written on plain white paper is valid if you sign it in front of two witnesses. Still, filing your Will at an SRO through the e-Prerna portal stores it in safe Book III records. This stops family fights and speeds up title transfers with MDDA, Nagar Nigam, and local Tehsil offices.",
   },
   {
-    q: "Is probate compulsory for properties in Uttarakhand under High Court rules?",
-    a: "No. Under Section 213 read with Section 57 of the Indian Succession Act, 1925, probate is compulsory only in the historical presidency towns of Mumbai, Kolkata, and Chennai. The High Court of Uttarakhand at Nainital has settled that probate is non-mandatory for Hindu, Sikh, Jain, Buddhist, and Muslim testators. Legal heirs can directly mutate properties using a registered Will and death certificate.",
+    q: "Is court probate needed for properties in Uttarakhand?",
+    a: "No. Under Section 213 and Section 57 of the Indian Succession Act, 1925, court probate is needed only in Mumbai, Kolkata, and Chennai. The High Court at Nainital rules that probate is not required for Hindu, Sikh, Jain, Buddhist, or Muslim Wills in Uttarakhand. Heirs can update land records directly with a registered Will and a death certificate.",
   },
   {
-    q: "How does Section 154 UPZA&LR land ceiling affect Will inheritance in Uttarakhand?",
-    a: "Section 154 of the UPZA&LR Act (as adapted in Uttarakhand) restricts non-domiciles from purchasing more than 250 square meters of agricultural or rural land without state sanction. However, testamentary succession by lawful heirs through a valid Will is recognized under revenue jurisprudence. A registered Will clearly establishes bona fide inheritance, protecting ancestral lands from illegal transaction disputes.",
+    q: "How does the Section 154 land cap affect a Will in Uttarakhand?",
+    a: "Section 154 of the UPZA&LR Act caps non-residents at 250 square meters when buying farm land in Uttarakhand. However, passing land to legal heirs through a valid Will is protected by law. A registered Will gives clear proof of family succession and keeps your farm and hill land safe from title disputes.",
   },
   {
-    q: "What is the official government fee to register a Will in Uttarakhand?",
-    a: "Wills are 100% exempt from ad valorem stamp duty across Uttarakhand. You can execute your Will on standard A4 plain paper without buying expensive non-judicial stamp paper. At Uttarakhand Sub-Registrar offices, you only pay a nominal flat registration fee of ₹100 plus standard electronic scanning and user charges of approximately ₹100 to ₹200.",
+    q: "What is the state fee to register a Will in Uttarakhand?",
+    a: "Wills pay zero stamp duty across Uttarakhand. You can print your Will on plain white A4 paper without buying stamp paper. At any Uttarakhand SRO desk, you pay only a flat ₹100 state fee plus ₹100 to ₹200 for page scans.",
   },
   {
-    q: "How do I book an e-Prerna portal appointment for Will registration in Uttarakhand?",
-    a: "Appointments are scheduled online through the Stamps and Registration Department portal at registration.uk.gov.in (e-Prerna). You select your district Sub-Registrar Office (such as Dehradun, Haridwar, or Haldwani), enter testator and witness identification details, generate the appointment slip, and visit the office at the chosen time slot.",
+    q: "How do I book an e-Prerna slot to register a Will in Uttarakhand?",
+    a: "You can book your slot online on the state portal at registration.uk.gov.in (e-Prerna). Pick your local SRO desk (such as Dehradun, Haridwar, or Haldwani), enter your ID and witness details, print the slip, and visit the office at your booked time.",
   },
   {
-    q: "Can senior citizens register a Will from home under Section 31 in Uttarakhand?",
-    a: "Yes. Under Section 31 of the Registration Act, 1908, senior citizens, bedridden individuals, or persons with medical mobility restrictions can request a doorstep commissioner visit. With an MBBS doctor's certificate confirming medical inability to travel, the Sub-Registrar visits your residence in Dehradun, Haridwar, Haldwani, or Rishikesh with portable biometric devices.",
+    q: "Can seniors register a Will from home under Section 31 in Uttarakhand?",
+    a: "Yes. Under Section 31 of the Registration Act, 1908, seniors or unwell owners who cannot travel can ask for a home visit. With a doctor's note, the SRO officer brings a thumb scanner and camera to your home in Dehradun, Haridwar, Haldwani, or Rishikesh.",
   },
   {
-    q: "How does a registered Will help with MDDA and Nagar Nigam property mutation?",
-    a: "Development bodies like MDDA and municipal bodies like Nagar Nigam Dehradun require conclusive proof of succession before updating ownership on municipal assessment registers (Namantaran). A registered Will provides verified testamentary proof, eliminating the need for expensive civil court succession certificates or contentious legal heir affidavits.",
+    q: "How does a registered Will help with MDDA and city tax mutation?",
+    a: "Civic boards like MDDA and Nagar Nigam Dehradun ask for clear proof of succession before they update the owner's name on house tax records (Namantaran). A registered Will gives trusted proof so your heirs do not need a slow civil court order.",
   },
   {
-    q: "Can defense veterans and retired officers in Dehradun bequeath pensions and cantonment property?",
-    a: "Dehradun is home to thousands of retired armed forces officers and civil servants. A Will can bequeath freehold residential properties, bank accounts, demat portfolios, and personal effects. While statutory military family pensions follow specific defense service pension regulations, bequeathing private savings, gratuity payouts, and cantonment freehold properties requires a clear Will.",
+    q: "Can army veterans in Dehradun pass pensions and cantt homes by Will?",
+    a: "Yes. Dehradun is home to many retired army officers and civil staff. A Will lets you pass freehold homes, bank accounts, stocks, and personal goods to your chosen heirs. While service family pensions follow defense rules, your savings, gratuity funds, and freehold cantt homes pass smoothly under a clear Will.",
   },
   {
-    q: "Who can serve as valid attesting witnesses at Uttarakhand Sub-Registrar offices?",
-    a: "Any two adult individuals of sound mind holding valid Aadhaar cards or government photo IDs can act as attesting witnesses. Under Section 67 of the Indian Succession Act, witnesses must not be beneficiaries receiving any property under the Will. Family doctors, trusted neighbors, or long-time friends are ideal choices.",
+    q: "Who can sign as a valid witness at an Uttarakhand SRO?",
+    a: "Any two adults of sound mind with valid Aadhaar cards or state photo IDs can sign as witnesses. Under Section 67 of the Indian Succession Act, a witness must not be an heir who gets property in the Will. Family doctors, neighbors, or friends are great choices.",
   },
   {
-    q: "Can non-domiciles or NRIs bequeath or inherit ancestral properties in Uttarakhand?",
-    a: "Yes. Non-domiciles and Non-Resident Indians (NRIs) who lawfully own property in Uttarakhand can execute a valid Will. NRIs residing abroad can draft their Will online, execute it before two witnesses, and have it notarized or apostilled, or complete formal Book III registration before an Uttarakhand Sub-Registrar during their visit to India.",
+    q: "Can non-residents or NRIs pass or inherit land in Uttarakhand?",
+    a: "Yes. Non-residents and NRIs who own land or flats in Uttarakhand can make a valid Will. NRIs living abroad can draft their Will online, sign it before two witnesses, or record it in Book III at an Uttarakhand SRO during a trip to India.",
   },
 ];
 
@@ -143,7 +143,7 @@ export default function UttarakhandLocationPage() {
         url: canonicalUrl,
         name: "Will Drafting in Uttarakhand: Online Will & Land Guide",
         description:
-          "Draft a valid Will in Uttarakhand with lawyer review. Complete guidance on Section 154 land ceiling rules, e-Prerna registration, and MDDA.",
+          "Draft a valid Will in Uttarakhand with lawyer review. Complete guidance on Section 154 land ceiling rules, e-Prerna signing, and MDDA.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -190,7 +190,7 @@ export default function UttarakhandLocationPage() {
         "@id": `${canonicalUrl}#legalservice`,
         name: "WillDrafting Uttarakhand - Estate Planning & e-Prerna SRO Registration",
         description:
-          "Professional Will drafting, advocate verification, e-Prerna registration assistance, and Section 31 doorstep execution support across.",
+          "Professional Will drafting, advocate check, e-Prerna signing help, and Section 31 doorstep execution support across.",
         url: canonicalUrl,
         image: imageUrl,
         email: "hello@willdrafting.in",
@@ -263,13 +263,13 @@ export default function UttarakhandLocationPage() {
             "@type": "HowToStep",
             position: 1,
             name: "Compile Uttarakhand Asset Inventory and Successors",
-            text: "List your Uttarakhand real estate including MDDA residential plots, Nagar Nigam flats, rural land holdings, bank accounts, and defense pension portfolios. Designate beneficiaries and an executor.",
+            text: "List your Uttarakhand real estate including MDDA residential plots, Nagar Nigam flats, rural land holdings, bank accounts, and defense pension portfolios. Designate heirs and an executor.",
           },
           {
             "@type": "HowToStep",
             position: 2,
             name: "Draft Section 154 Compliant Legal Clauses",
-            text: "Draft your Will using verified statutory clauses for clear asset distribution, Section 154 UPZA&LR land ceiling compliance, guardian appointments for minors, and revocation of prior wills.",
+            text: "Draft your Will using verified statutory clauses for clear asset split, Section 154 UPZA&LR land ceiling compliance, guardian appointments for minors, and revocation of prior wills.",
           },
           {
             "@type": "HowToStep",
@@ -281,13 +281,13 @@ export default function UttarakhandLocationPage() {
             "@type": "HowToStep",
             position: 4,
             name: "Book Uttarakhand e-Prerna Portal Slot",
-            text: "Schedule your registration appointment on the e-Prerna portal (registration.uk.gov.in) for your relevant Uttarakhand SRO and remit the nominal ₹100 registration fee online.",
+            text: "Schedule your signing appointment on the e-Prerna portal (signing.uk.gov.in) for your relevant Uttarakhand SRO and remit the nominal ₹100 signing fee online.",
           },
           {
             "@type": "HowToStep",
             position: 5,
             name: "Complete Biometrics at Uttarakhand SRO",
-            text: "Visit the Sub-Registrar office with both witnesses for identity verification, digital photography, and biometric thumbprinting to complete Book III government registration.",
+            text: "Visit the SRO office with both witnesses for identity check, digital photography, and biometric thumbprinting to complete Book III government signing.",
           },
         ],
       },

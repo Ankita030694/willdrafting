@@ -134,20 +134,20 @@ const INITIAL_CHECKLIST = [
   },
   {
     id: "item-2",
-    label: "Original Aadhaar Card & PAN of the Testator",
-    detail: "Mandatory for biometric thumbprint authentication and live photo capture on the ePanjiyan Rajasthan portal.",
+    label: "Original Aadhaar Card & PAN of the Will maker",
+    detail: "Needed for biometric thumbprint check and live photo capture on the ePanjiyan Rajasthan portal.",
     checked: true,
   },
   {
     id: "item-3",
     label: "Two Independent Adult Witnesses with Aadhaar",
-    detail: "Both witnesses must carry original photo IDs and must not be beneficiaries receiving assets under the Will.",
+    detail: "Both witnesses must carry original photo IDs and must not be heirs receiving assets under the Will.",
     checked: true,
   },
   {
     id: "item-4",
     label: "Doctor's Mental Capacity Certificate (For Seniors)",
-    detail: "Issued by a registered MBBS practitioner certifying sound testamentary capacity to eliminate cognitive dispute claims.",
+    detail: "Issued by a registered MBBS practitioner certifying sound sound mind to eliminate cognitive fight claims.",
     checked: false,
   },
   {
@@ -165,7 +165,7 @@ const INITIAL_CHECKLIST = [
   {
     id: "item-7",
     label: "Two Recent Color Passport Photos Each",
-    detail: "Clear passport photographs of the testator and both attesting witnesses to paste into Sub-Registrar Book III registers.",
+    detail: "Clear passport photographs of the Will maker and both witnesses to paste into Sub-Registrar Book III registers.",
     checked: false,
   },
 ];
@@ -262,8 +262,8 @@ export default function RajasthanLocationClient({ faqs }: Props) {
               </h1>
 
               <p className="text-base sm:text-lg text-slate-200 leading-relaxed font-normal max-w-2xl">
-                Draft a legally binding Will for your JDA and UIT plots, ancestral Havelis, Apna Khata agricultural land, mutual funds, and demat assets.
-                Get advocate drafting, ePanjiyan portal registration support, and doorstep execution for senior citizens across Rajasthan.
+                Draft a legally binding Will for your JDA and UIT plots, family Havelis, Apna Khata farm land, mutual funds, and demat assets.
+                Get lawyer drafting, ePanjiyan portal registration support, and doorstep signing for senior citizens across Rajasthan.
               </p>
 
               <div className="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
@@ -288,7 +288,7 @@ export default function RajasthanLocationClient({ faqs }: Props) {
               <div className="pt-4 grid grid-cols-3 gap-3 border-t border-white/10 text-xs text-slate-300">
                 <div className="flex items-center gap-2">
                   <Check className="w-4 h-4 text-emerald-400 shrink-0" />
-                  <span>Rajasthan HC Advocate Vetted</span>
+                  <span>Rajasthan HC Lawyer Vetted</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <Check className="w-4 h-4 text-emerald-400 shrink-0" />
@@ -351,7 +351,7 @@ export default function RajasthanLocationClient({ faqs }: Props) {
             {/* Stat 3 */}
             <div className="bg-white/70 sm:bg-transparent rounded-xl sm:rounded-none p-2.5 sm:p-3 border border-[#172228]/10 sm:border-0 md:border-l md:border-[#172228]/10 shadow-2xs sm:shadow-none flex flex-col items-center justify-center">
               <span className="block text-sm min-[390px]:text-base sm:text-xl lg:text-2xl font-extrabold text-[#172228] tracking-tight leading-tight whitespace-nowrap">
-                Non-Compulsory
+                Non-Needed
               </span>
               <span className="text-[9px] min-[390px]:text-[10px] sm:text-xs font-bold uppercase tracking-wider text-[#55636D] mt-1 leading-tight">
                 Probate in Rajasthan
@@ -513,10 +513,10 @@ export default function RajasthanLocationClient({ faqs }: Props) {
                   <div className="p-4 rounded-2xl bg-slate-50/70 border border-slate-100 space-y-1.5">
                     <div className="flex items-center gap-2 font-bold text-sm text-slate-900">
                       <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
-                      <span>Probate Non-Compulsory</span>
+                      <span>Probate Non-Needed</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Rajasthan is a non-presidency state under Section 213 of the Indian Succession Act. Beneficiaries inherit real estate without obtaining costly court probate decrees unless contested.
+                      Rajasthan is a non-presidency state under Section 213 of the Indian Succession Act. Heirs inherit real estate without getting costly court probate decrees unless contested.
                     </p>
                   </div>
 
@@ -533,10 +533,10 @@ export default function RajasthanLocationClient({ faqs }: Props) {
                   <div className="p-4 rounded-2xl bg-slate-50/70 border border-slate-100 space-y-1.5">
                     <div className="flex items-center gap-2 font-bold text-sm text-slate-900">
                       <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
-                      <span>Fast JDA &amp; Apna Khata Mutation</span>
+                      <span>Fast JDA &amp; Apna Khata Name Change</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      A registered Will expedites leasehold and patta transfers across JDA and UITs, alongside smooth Jamabandi land revenue mutation (Namantran) on the Apna Khata portal.
+                      A registered Will expedites leasehold and patta transfers across JDA and UITs, alongside smooth Jamabandi land revenue name change (Namantran) on the Apna Khata portal.
                     </p>
                   </div>
                 </div>
@@ -559,8 +559,8 @@ export default function RajasthanLocationClient({ faqs }: Props) {
                 </p>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Rajasthan presents unique estate structures.
-                  Families hold historic ancestral Havelis in Jaipur and Shekhawati, JDA residential plots, agricultural farmland recorded in Apna Khata Jamabandis, and modern industrial units in Bhiwadi.
-                  Under Section 30 of the Hindu Succession Act, 1956, a testator can lawfully bequeath their individual undivided Mitakshara coparcenary interest alongside self-acquired assets.
+                  Families hold historic family Havelis in Jaipur and Shekhawati, JDA home plots, farm farmland recorded in Apna Khata Jamabandis, and modern industrial units in Bhiwadi.
+                  Under Section 30 of the Hindu Succession Act, 1956, a Will maker can lawfully bequeath their individual undivided Mitakshara joint family interest alongside self-acquired assets.
                 </p>
               </div>
 
@@ -571,7 +571,7 @@ export default function RajasthanLocationClient({ faqs }: Props) {
                   </span>
                   <h3 className="font-bold text-sm text-slate-900">Legal Capacity</h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    The testator must be at least 18 years of age and in sound mental mind (Section 59).
+                    The Will maker must be at least 18 years of age and in sound mental mind (Section 59).
                   </p>
                 </div>
 
@@ -601,7 +601,7 @@ export default function RajasthanLocationClient({ faqs }: Props) {
                   </span>
                   <h3 className="font-bold text-sm text-slate-900">Independent</h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Witnesses must not be beneficiaries receiving any asset under the Will (Section 67).
+                    Witnesses must not be heirs receiving any asset under the Will (Section 67).
                   </p>
                 </div>
               </div>
@@ -622,7 +622,7 @@ export default function RajasthanLocationClient({ faqs }: Props) {
                   A Will written on plain white paper is legally enforceable across Indian courts if attested by two independent witnesses.
                 </p>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  However, registering your Will at a Rajasthan Sub-Registrar Office provides undeniable evidentiary advantages.
+                  However, registering your Will at a Rajasthan SRO office provides undeniable proof advantages.
                   The document is preserved in government Book III registers, preventing claims of forgery or unlawful suppression:
                 </p>
               </div>
@@ -650,16 +650,16 @@ export default function RajasthanLocationClient({ faqs }: Props) {
                     </tr>
                     <tr>
                       <td className="p-4 font-semibold">JDA &amp; UIT Plot Transfer</td>
-                      <td className="p-4 bg-rose-50/20">Accepted directly for leasehold patta transfer and municipal mutation</td>
-                      <td className="p-4 bg-slate-50/20">Authorities may demand civil court succession certificates or family indemnity bonds</td>
+                      <td className="p-4 bg-rose-50/20">Accepted directly for leasehold patta transfer and municipal name change</td>
+                      <td className="p-4 bg-slate-50/20">Offices may demand civil court succession papers or family indemnity bonds</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-semibold">Apna Khata Land Mutation</td>
+                      <td className="p-4 font-semibold">Apna Khata Land Name Change</td>
                       <td className="p-4 bg-rose-50/20">Expedites Patwari and Tehsildar Namantran in Jamabandi revenue records</td>
                       <td className="p-4 bg-slate-50/20">Revenue officials often require prolonged family hearings and consensus affidavits</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-semibold">Statutory Government Fee</td>
+                      <td className="p-4 font-semibold">Legal Government Fee</td>
                       <td className="p-4 bg-rose-50/20 font-bold text-[#C65378]">Flat ₹100 registration fee plus nominal scanning</td>
                       <td className="p-4 bg-slate-50/20 font-bold text-slate-700">₹0 government fee</td>
                     </tr>
@@ -676,14 +676,14 @@ export default function RajasthanLocationClient({ faqs }: Props) {
                   <span>JURISDICTION RULES</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  3. Is Probate Mandatory for Properties in Rajasthan?
+                  3. Is Probate Needed for Assets in Rajasthan?
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Probate is a court certification issued by a competent civil court establishing the validity of a Will.
                   It confers official legal authority upon the designated executor to administer the estate.
                 </p>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Under <strong>Section 213(2) read with Section 57 of the Indian Succession Act, 1925</strong>, probate is compulsory only for Wills executed within Mumbai, Kolkata, and Chennai, or where immovable property falls within those historical presidency boundaries.
+                  Under <strong>Section 213(2) read with Section 57 of the Indian Succession Act, 1925</strong>, probate is needed only for Wills signed within Mumbai, Kolkata, and Chennai, or where land and flats falls within those historical presidency boundaries.
                   <strong> Rajasthan is a non-presidency state.</strong>
                 </p>
               </div>
@@ -694,10 +694,10 @@ export default function RajasthanLocationClient({ faqs }: Props) {
                     Rajasthan Legal Exemption
                   </span>
                   <h3 className="font-bold text-base text-slate-900">
-                    Probate Non-Compulsory Across Rajasthan
+                    Probate Non-Needed Across Rajasthan
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    The Rajasthan High Court (Principal Seat at Jodhpur and Bench at Jaipur) has consistently affirmed that for Hindu, Sikh, Jain, and Buddhist Wills in Rajasthan, court probate is not mandatory to claim ownership over local real estate or bank balances.
+                    The Rajasthan High Court (Principal Seat at Jodhpur and Bench at Jaipur) has consistently affirmed that for Hindu, Sikh, Jain, and Buddhist Wills in Rajasthan, court probate is not needed to claim ownership over local real estate or bank balances.
                   </p>
                   <div className="pt-2 text-xs text-slate-500 flex items-center gap-1.5">
                     <Check className="w-3.5 h-3.5 text-emerald-600" />
@@ -713,11 +713,11 @@ export default function RajasthanLocationClient({ faqs }: Props) {
                     When Court Probate or Succession Advice Arises
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    While probate is non-compulsory in Rajasthan, families may file for probate or Letters of Administration if an estranged legal heir files a partition suit, or if nationalized banks demand court confirmation for large intestate balances.
+                    While probate is non-needed in Rajasthan, families may file for probate or Letters of Administration if an estranged legal heir files a split suit, or if nationalized banks demand court confirmation for large without a Will balances.
                   </p>
                   <div className="pt-2 text-xs text-slate-500 flex items-center gap-1.5">
                     <AlertTriangle className="w-3.5 h-3.5 text-[#C65378]" />
-                    <span>A registered Will drastically minimizes dispute vulnerabilities</span>
+                    <span>A registered Will drastically minimizes fight risks</span>
                   </div>
                 </div>
               </div>
@@ -729,7 +729,7 @@ export default function RajasthanLocationClient({ faqs }: Props) {
                     Do you also hold property in Mumbai, Kolkata, or Chennai?
                   </h4>
                   <p className="text-xs text-slate-600 mt-1">
-                    If your Rajasthan Will bequeaths real estate situated in historical presidency limits, High Court probate rules may apply to those specific properties.
+                    If your Rajasthan Will bequeaths real estate situated in historical presidency limits, High Court probate rules may apply to those specific assets.
                   </p>
                 </div>
                 <Link
@@ -754,7 +754,7 @@ export default function RajasthanLocationClient({ faqs }: Props) {
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Will registration across Rajasthan is administered by the Registration and Stamps Department, Government of Rajasthan.
-                  Under Section 32 of the Registration Act, you can present your Will at the Sub-Registrar office having jurisdiction over your residence.
+                  Under Section 32 of the Registration Act, you can present your Will at the SRO office having area over your residence.
                 </p>
               </div>
 
@@ -862,7 +862,7 @@ export default function RajasthanLocationClient({ faqs }: Props) {
                   5. Regional Cities &amp; District Will Drafting Services
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Looking for legally verified <strong>Will drafting services in Jaipur, Jodhpur, Udaipur, or Kota</strong>? Our senior estate planning advocates provide comprehensive legal drafting, ePanjiyan Rajasthan portal slot scheduling, and Sub-Registrar accompaniment tailored to the specific property dynamics across Rajasthan:
+                  Looking for legally verified <strong>Will drafting services in Jaipur, Jodhpur, Udaipur, or Kota</strong>? Our senior estate planning lawyers provide full legal drafting, ePanjiyan Rajasthan portal slot scheduling, and Sub-Registrar accompaniment tailored to the specific property dynamics across Rajasthan:
                 </p>
               </div>
 
@@ -893,7 +893,7 @@ export default function RajasthanLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Specialized <strong>Will drafting services in Jaipur</strong> for JDA leasehold and freehold plots, multistory society apartments, ancestral Havelis, and demat portfolios, preventing costly legal battles among family members.
+                      Specialized <strong>Will drafting services in Jaipur</strong> for JDA leasehold and freehold plots, multistory society apartments, family Havelis, and demat portfolios, preventing costly legal battles among family members.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -902,7 +902,7 @@ export default function RajasthanLocationClient({ faqs }: Props) {
                         <span>SRO Hub: District Collectorate, Bani Park &amp; JDA Complex</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        ePanjiyan Rajasthan token scheduling, advocate representation, and Section 31 home visits for senior citizens across Jaipur.
+                        ePanjiyan Rajasthan token scheduling, lawyer representation, and Section 31 home visits for senior citizens across Jaipur.
                       </p>
                     </div>
                   </div>
@@ -947,7 +947,7 @@ export default function RajasthanLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Authoritative <strong>Will drafting services in Jodhpur</strong> under the direct jurisdiction of the Rajasthan High Court Principal Seat. Protects joint Mitakshara coparcenary interests, handicraft export units, and stone quarry assets.
+                      Authoritative <strong>Will drafting services in Jodhpur</strong> under the direct area of the Rajasthan High Court Principal Seat. Protects joint Mitakshara joint family interests, handicraft export units, and stone quarry assets.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -956,7 +956,7 @@ export default function RajasthanLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Collectorate Compound, Near High Court, Paota</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Jodhpur Development Authority patta transfer assistance, ePanjiyan fee payment, and seamless Book III registration.
+                        Jodhpur Development Authority patta transfer help, ePanjiyan fee payment, and seamless Book III registration.
                       </p>
                     </div>
                   </div>
@@ -1001,7 +1001,7 @@ export default function RajasthanLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Custom <strong>Will drafting services in Udaipur</strong> for heritage hotels, marble processing leases, UIT residential plots, and tourism enterprises, ensuring conflict-free intergenerational succession.
+                      Custom <strong>Will drafting services in Udaipur</strong> for heritage hotels, marble processing leases, UIT home plots, and tourism enterprises, making sure conflict-free intergenerational succession.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1010,7 +1010,7 @@ export default function RajasthanLocationClient({ faqs }: Props) {
                         <span>SRO Hub: UIT Complex, Saheli Marg, Udaipur</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        UIT Udaipur mutation coordination, NRI inheritance structuring, and local Sub-Registrar execution.
+                        UIT Udaipur name change coordination, NRI inheritance structuring, and local Sub-Registrar signing.
                       </p>
                     </div>
                   </div>
@@ -1035,7 +1035,7 @@ export default function RajasthanLocationClient({ faqs }: Props) {
                     <div className="flex items-center justify-between gap-2">
                       <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-rose-50 text-[#C65378] border border-rose-100">
                         <MapPin className="w-3.5 h-3.5" />
-                        Hadoti Education &amp; Commercial Hub
+                        Hadoti Education &amp; Shop Hub
                       </span>
                       <span className="text-[11px] font-semibold text-slate-500 bg-slate-100 px-2.5 py-1 rounded-lg">
                         SRO Kota 1 &amp; 2 (CAD Circle)
@@ -1055,7 +1055,7 @@ export default function RajasthanLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Comprehensive <strong>Will drafting services in Kota</strong> for student hostel commercial properties, coaching infrastructure, KDA residential plots, and agricultural land along the Chambal river basin.
+                      Full <strong>Will drafting services in Kota</strong> for student hostel shop assets, coaching infrastructure, KDA home plots, and farm land along the Chambal river basin.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1064,7 +1064,7 @@ export default function RajasthanLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Mini Secretariat Complex, CAD Circle, Kota</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        KDA property mutation advisory, hostel commercial asset protection, and doorstep registration for seniors.
+                        KDA property name change advisory, hostel shop asset protection, and doorstep registration for seniors.
                       </p>
                     </div>
                   </div>
@@ -1109,7 +1109,7 @@ export default function RajasthanLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Trusted <strong>Will drafting services in Ajmer</strong> and Pushkar for residential freeholds, ADA development plots, institutional trusts, and ancestral commercial shops around the historic bazaars.
+                      Trusted <strong>Will drafting services in Ajmer</strong> and Pushkar for home freeholds, ADA development plots, institutional trusts, and family shop shops around the historic bazaars.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1163,16 +1163,16 @@ export default function RajasthanLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Expert <strong>Will drafting services in Bikaner</strong> for heritage ancestral Havelis, Indira Gandhi Canal irrigated agricultural land, ceramic industries, and confectionery business assets.
+                      Expert <strong>Will drafting services in Bikaner</strong> for heritage family Havelis, Indira Gandhi Canal irrigated farm land, ceramic industries, and confectionery business assets.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
                       <div className="flex items-center gap-2 font-bold text-slate-900">
                         <Building className="w-3.5 h-3.5 text-[#C65378]" />
-                        <span>SRO Hub: Collectorate Administrative Complex, Bikaner</span>
+                        <span>SRO Hub: Collectorate Office Complex, Bikaner</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        UIT Bikaner land mutation verification and fast-track Book III registration assistance.
+                        UIT Bikaner land name change check and fast-track Book III registration help.
                       </p>
                     </div>
                   </div>
@@ -1217,7 +1217,7 @@ export default function RajasthanLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Strategic <strong>Will drafting services in Bhiwadi</strong> and Neemrana tailored for factory promoters, MSME manufacturing units, RIICO industrial plots, and modern NCR residential apartments.
+                      Strategic <strong>Will drafting services in Bhiwadi</strong> and Neemrana tailored for factory promoters, MSME manufacturing units, RIICO industrial plots, and modern NCR home apartments.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1226,7 +1226,7 @@ export default function RajasthanLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Mini Secretariat Alwar &amp; RIICO Complex Bhiwadi</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        RIICO plot transfer structuring, partnership succession clauses, and prompt SRO execution.
+                        RIICO plot transfer structuring, partnership succession clauses, and prompt SRO signing.
                       </p>
                     </div>
                   </div>
@@ -1271,7 +1271,7 @@ export default function RajasthanLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Dedicated <strong>Will drafting services in Bhilwara</strong> and Sikar for textile weaving mills, trading businesses, ancestral Shekhawati frescoes and Havelis, alongside agricultural farms in Apna Khata.
+                      Dedicated <strong>Will drafting services in Bhilwara</strong> and Sikar for textile weaving mills, trading businesses, family Shekhawati frescoes and Havelis, alongside farm farms in Apna Khata.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1312,7 +1312,7 @@ export default function RajasthanLocationClient({ faqs }: Props) {
                   6. Step-by-Step SOP: Will Drafting to Registration
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Follow this verified standard operating procedure to prepare, execute, and optionally register your Will in Rajasthan:
+                  Follow this verified standard operating step to prepare, execute, and optionally register your Will in Rajasthan:
                 </p>
               </div>
 
@@ -1324,10 +1324,10 @@ export default function RajasthanLocationClient({ faqs }: Props) {
                   </span>
                   <div className="space-y-1">
                     <h3 className="font-bold text-sm sm:text-base text-slate-900">
-                      Inventory Assets &amp; Identify Beneficiaries
+                      Inventory Assets &amp; Identify Heirs
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Compile a comprehensive inventory of your real estate and financial assets in Rajasthan. Include JDA and UIT plot lease deeds, Apna Khata Khasra and Jamabandi details, bank accounts, and demat accounts. Appoint a trustworthy executor to administer the estate.
+                      Compile a full inventory of your real estate and financial assets in Rajasthan. Include JDA and UIT plot lease deeds, Apna Khata Khasra and Jamabandi details, bank accounts, and demat accounts. Appoint a trustworthy executor to administer the estate.
                     </p>
                   </div>
                 </div>
@@ -1339,10 +1339,10 @@ export default function RajasthanLocationClient({ faqs }: Props) {
                   </span>
                   <div className="space-y-1">
                     <h3 className="font-bold text-sm sm:text-base text-slate-900">
-                      Draft Legal Will with Succession Advocate
+                      Draft Legal Will with Succession Lawyer
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Work with our specialized succession lawyers to structure customized clauses. Clearly distinguish between self-acquired properties and individual undivided shares in Mitakshara coparcenary property, and include explicit revocation and residual bequest clauses.
+                      Work with our specialized succession lawyers to structure customized clauses. Clearly distinguish between self-acquired assets and individual undivided shares in Mitakshara joint family property, and include explicit revocation and residual bequest clauses.
                     </p>
                   </div>
                 </div>
@@ -1357,7 +1357,7 @@ export default function RajasthanLocationClient({ faqs }: Props) {
                       Execute &amp; Attest Before Two Witnesses
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Print the Will on plain A4 paper. Sign or place your thumb impression on each page in the continuous presence of two independent adult witnesses. Both witnesses then sign and record their complete names, residential addresses, and Aadhaar numbers.
+                      Print the Will on plain A4 paper. Sign or place your thumb impression on each page in the continuous presence of two independent adult witnesses. Both witnesses then sign and record their complete names, home addresses, and Aadhaar numbers.
                     </p>
                   </div>
                 </div>
@@ -1384,10 +1384,10 @@ export default function RajasthanLocationClient({ faqs }: Props) {
                   </span>
                   <div className="space-y-1">
                     <h3 className="font-bold text-sm sm:text-base text-slate-900">
-                      Complete Biometric Verification at Rajasthan SRO
+                      Complete Biometric Check at Rajasthan SRO
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Visit the Sub-Registrar office during your allotted slot with both attesting witnesses, original Aadhaar cards, and passport photos. The Sub-Registrar records biometric fingerprints and digital webcam photos, registers the Will into official Book III records, and returns the original document.
+                      Visit the SRO office during your allotted slot with both witnesses, original Aadhaar cards, and passport photos. The Sub-Registrar records biometric fingerprints and digital webcam photos, registers the Will into official Book III records, and returns the original document.
                     </p>
                   </div>
                 </div>
@@ -1405,8 +1405,8 @@ export default function RajasthanLocationClient({ faqs }: Props) {
                   7. Section 31 Doorstep SRO Registration in Rajasthan
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Visiting government registration offices can be difficult for senior citizens, ailing individuals, or persons with mobility constraints.
-                  <strong> Section 31 of the Registration Act, 1908</strong> authorizes the Sub-Registrar to visit the testator&apos;s residence or hospital in special cases.
+                  Visiting government registration offices can be difficult for senior citizens, ailing people, or persons with mobility constraints.
+                  <strong> Section 31 of the Registration Act, 1908</strong> authorizes the Sub-Registrar to visit the Will maker&apos;s residence or hospital in special cases.
                 </p>
               </div>
 
@@ -1422,7 +1422,7 @@ export default function RajasthanLocationClient({ faqs }: Props) {
                     </span>
                     <h4 className="font-bold text-sm text-slate-900">Doctor Fitness Certificate</h4>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      A registered MBBS practitioner examines the testator and issues a medical certificate stating they possess sound mental capacity but are physically unable to travel.
+                      A registered MBBS practitioner examines the Will maker and issues a medical paper stating they possess sound mental capacity but are physically unable to travel.
                     </p>
                   </div>
 
@@ -1430,9 +1430,9 @@ export default function RajasthanLocationClient({ faqs }: Props) {
                     <span className="w-7 h-7 rounded-lg bg-rose-100 text-[#C65378] flex items-center justify-center font-bold text-xs">
                       2
                     </span>
-                    <h4 className="font-bold text-sm text-slate-900">SRO Commission Application</h4>
+                    <h4 className="font-bold text-sm text-slate-900">SRO Commission Form</h4>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Our legal team files a formal Section 31 petition before the local Rajasthan Sub-Registrar along with the doctor&apos;s certificate and pays the official government commission visit fee.
+                      Our legal team files a formal Section 31 petition before the local Rajasthan Sub-Registrar along with the doctor&apos;s paper and pays the official government commission visit fee.
                     </p>
                   </div>
 
@@ -1450,7 +1450,7 @@ export default function RajasthanLocationClient({ faqs }: Props) {
                 <div className="p-4 rounded-2xl bg-rose-50/50 border border-rose-100 flex items-center gap-3 text-xs text-rose-950">
                   <CheckCircle2 className="w-4 h-4 text-[#C65378] shrink-0" />
                   <span>
-                    Our Rajasthan legal associates provide full assistance with medical certificate formats, petition drafting, and SRO appointment scheduling.
+                    Our Rajasthan legal associates provide full help with medical paper formats, petition drafting, and SRO appointment scheduling.
                   </span>
                 </div>
               </div>
@@ -1464,10 +1464,10 @@ export default function RajasthanLocationClient({ faqs }: Props) {
                   <span>PREPARATION CHECKLIST</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  8. Mandatory Document Checklist for Rajasthan Wills
+                  8. Needed Document Checklist for Rajasthan Wills
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Keep these verified records ready before executing and registering your Will in Rajasthan:
+                  Keep these verified records ready before signing and registering your Will in Rajasthan:
                 </p>
               </div>
 
@@ -1520,7 +1520,7 @@ export default function RajasthanLocationClient({ faqs }: Props) {
                   <span>ASSET CLASSIFICATION</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  9. Estate Asset Distribution: JDA, UIT &amp; Apna Khata
+                  9. Estate Asset Split: JDA, UIT &amp; Apna Khata
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   A legally robust Will must accurately address the distinct categories of immovable and movable assets situated across Rajasthan:
@@ -1534,27 +1534,27 @@ export default function RajasthanLocationClient({ faqs }: Props) {
                     JDA &amp; UIT Leasehold and Freehold Plots
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Plots allotted by the Jaipur Development Authority (JDA) or Urban Improvement Trusts (UITs in Jodhpur, Udaipur, Kota, Ajmer) under 99-year leases require unambiguous testamentary devolution. A registered Will facilitates direct name substitution in development authority registers without civil court intervention.
+                    Plots allotted by the Jaipur Development Authority (JDA) or Urban Improvement Trusts (UITs in Jodhpur, Udaipur, Kota, Ajmer) under 99-year leases require clear testamentary devolution. A registered Will facilitates direct name substitution in development authority registers without civil court intervention.
                   </p>
                 </div>
 
                 {/* ASSET 2 */}
                 <div className="bg-white rounded-2xl border border-slate-200/90 p-5 shadow-xs space-y-2">
                   <h3 className="font-bold text-sm sm:text-base text-slate-900">
-                    Agricultural Land &amp; Apna Khata Mutation (Namantran)
+                    Farm Land &amp; Apna Khata Name Change (Namantran)
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Agricultural land recorded on the Apna Khata portal requires mutation (Namantran) in the Jamabandi under the Rajasthan Land Revenue Act, 1956. A registered Will accompanied by a death certificate allows the local Patwari and Tehsildar to update revenue records smoothly.
+                    Farm land recorded on the Apna Khata portal requires name change (Namantran) in the Jamabandi under the Rajasthan Land Revenue Act, 1956. A registered Will accompanied by a death paper allows the local Patwari and Tehsildar to update revenue records smoothly.
                   </p>
                 </div>
 
                 {/* ASSET 3 */}
                 <div className="bg-white rounded-2xl border border-slate-200/90 p-5 shadow-xs space-y-2">
                   <h3 className="font-bold text-sm sm:text-base text-slate-900">
-                    Ancestral Havelis &amp; Mitakshara Coparcenary Interests
+                    Family Havelis &amp; Mitakshara Joint family Interests
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Under Mitakshara coparcenary law prevalent across Rajasthan, ancestral Havelis belong collectively to all coparceners. While the whole estate cannot be willed away unilaterally, Section 30 of the Hindu Succession Act, 1956 permits the testator to bequeath their individual undivided coparcenary share.
+                    Under Mitakshara joint family law prevalent across Rajasthan, family Havelis belong collectively to all coparceners. While the whole estate cannot be willed away unilaterally, Section 30 of the Hindu Succession Act, 1956 permits the Will maker to bequeath their individual undivided joint family share.
                   </p>
                 </div>
 
@@ -1564,7 +1564,7 @@ export default function RajasthanLocationClient({ faqs }: Props) {
                     Financial Securities, Mutual Funds &amp; Bank Deposits
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Bank accounts, fixed deposits, demat shares, and gold jewellery must be clearly bequeathed. Under Indian law, bank nominees serve solely as fiduciary trustees for the beneficiaries designated in the Will. A precise Will ensures immediate transmission without inter-family conflict.
+                    Bank accounts, fixed deposits, demat shares, and gold jewellery must be clearly bequeathed. Under Indian law, bank nominees serve solely as fiduciary trustees for the heirs designated in the Will. A precise Will ensures immediate transfer without inter-family conflict.
                   </p>
                 </div>
               </div>
@@ -1581,7 +1581,7 @@ export default function RajasthanLocationClient({ faqs }: Props) {
                   10. Registration Charges &amp; Zero Stamp Duty in Rajasthan
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Unlike sale deeds that attract significant stamp duty across Rajasthan, Will registration is exempt from property valuation tax:
+                  Unlike sale deeds that attract significant stamp duty across Rajasthan, Will registration is exempt from property price check tax:
                 </p>
               </div>
 
@@ -1595,7 +1595,7 @@ export default function RajasthanLocationClient({ faqs }: Props) {
                 <div className="bg-white rounded-2xl border border-slate-200/90 p-5 shadow-xs text-center space-y-1">
                   <span className="text-2xl font-black text-slate-900">₹100</span>
                   <h4 className="font-bold text-xs uppercase tracking-wider text-slate-800">SRO Registration Fee</h4>
-                  <p className="text-[11px] text-slate-500">Fixed statutory government fee paid via e-GRAS challan</p>
+                  <p className="text-[11px] text-slate-500">Fixed legal government fee paid via e-GRAS challan</p>
                 </div>
 
                 <div className="bg-white rounded-2xl border border-slate-200/90 p-5 shadow-xs text-center space-y-1">
@@ -1629,7 +1629,7 @@ export default function RajasthanLocationClient({ faqs }: Props) {
                     <h3 className="font-extrabold text-xl text-slate-900">Online Will Drafting</h3>
                     <div className="text-3xl font-black text-slate-900">₹1,990</div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Ideal for individuals with straightforward assets such as a single residential plot, bank deposits, and mutual funds.
+                      Ideal for people with straightforward assets such as a single home plot, bank deposits, and mutual funds.
                     </p>
                     <ul className="text-xs text-slate-600 space-y-2 pt-2 border-t border-slate-100">
                       <li className="flex items-center gap-2">
@@ -1646,7 +1646,7 @@ export default function RajasthanLocationClient({ faqs }: Props) {
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
-                        <span>Execution &amp; attestation guide</span>
+                        <span>Signing &amp; attestation guide</span>
                       </li>
                     </ul>
                   </div>
@@ -1666,23 +1666,23 @@ export default function RajasthanLocationClient({ faqs }: Props) {
                   </span>
                   <div className="space-y-4">
                     <span className="text-xs font-bold uppercase tracking-wider text-[#C65378]">Professional</span>
-                    <h3 className="font-extrabold text-xl text-slate-900">Advocate Consultation &amp; Review</h3>
+                    <h3 className="font-extrabold text-xl text-slate-900">Lawyer Talk &amp; Review</h3>
                     <div className="text-3xl font-black text-slate-900">₹4,990</div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Recommended for families with multiple JDA/UIT plots, Apna Khata agricultural land, or ancestral coparcenary properties.
+                      Recommended for families with multiple JDA/UIT plots, Apna Khata farm land, or family joint family assets.
                     </p>
                     <ul className="text-xs text-slate-600 space-y-2 pt-2 border-t border-slate-100">
                       <li className="flex items-center gap-2">
                         <Check className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
-                        <span>1-on-1 Senior Advocate Consultation</span>
+                        <span>1-on-1 Senior Lawyer Talk</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
-                        <span>Mitakshara &amp; coparcenary share clarity</span>
+                        <span>Mitakshara &amp; joint family share clarity</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
-                        <span>Doctor certificate format included</span>
+                        <span>Doctor paper format included</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
@@ -1694,14 +1694,14 @@ export default function RajasthanLocationClient({ faqs }: Props) {
                     href="/contact"
                     className="mt-6 w-full py-2.5 rounded-xl bg-[#C65378] text-white text-xs font-bold hover:bg-[#a13c5d] transition-colors text-center cursor-pointer"
                   >
-                    Book Advocate Call
+                    Book Lawyer Call
                   </a>
                 </div>
 
                 {/* PLAN 3 */}
                 <div className="rounded-3xl bg-white border border-slate-200/90 p-6 shadow-xs flex flex-col justify-between">
                   <div className="space-y-4">
-                    <span className="text-xs font-bold uppercase tracking-wider text-slate-500">Comprehensive</span>
+                    <span className="text-xs font-bold uppercase tracking-wider text-slate-500">Full</span>
                     <h3 className="font-extrabold text-xl text-slate-900">Complete SRO Registration</h3>
                     <div className="text-3xl font-black text-slate-900">₹9,990</div>
                     <p className="text-xs text-slate-600 leading-relaxed">
@@ -1718,7 +1718,7 @@ export default function RajasthanLocationClient({ faqs }: Props) {
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
-                        <span>Physical advocate assistance at SRO</span>
+                        <span>Physical lawyer help at SRO</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
@@ -1794,7 +1794,7 @@ export default function RajasthanLocationClient({ faqs }: Props) {
                   <span>LEGAL REFERENCES</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  12. Statutory Citations &amp; Legal Precedents in Rajasthan
+                  12. Legal Citations &amp; Legal Precedents in Rajasthan
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Every Will drafted through WillDrafting.in is constructed in strict adherence to authoritative Indian statutes and judicial rulings:
@@ -1807,7 +1807,7 @@ export default function RajasthanLocationClient({ faqs }: Props) {
                     Indian Succession Act, 1925 (Sections 59, 61, 63, 67, 213):
                   </span>
                   <p className="text-slate-600 leading-relaxed">
-                    Governs sound testamentary capacity, voluntary consent, two-witness execution, and specifies that court probate is non-mandatory outside historical presidency limits.
+                    Governs sound sound mind, voluntary consent, two-witness signing, and specifies that court probate is non-needed outside historical presidency limits.
                   </p>
                 </div>
 
@@ -1825,7 +1825,7 @@ export default function RajasthanLocationClient({ faqs }: Props) {
                     Rajasthan Stamp Act, 1998:
                   </span>
                   <p className="text-slate-600 leading-relaxed">
-                    Grants complete exemption from ad-valorem stamp duty for Wills executed and presented for registration across the State of Rajasthan.
+                    Grants complete exemption from ad-valorem stamp duty for Wills signed and presented for registration across the State of Rajasthan.
                   </p>
                 </div>
 
@@ -1834,7 +1834,7 @@ export default function RajasthanLocationClient({ faqs }: Props) {
                     Rajasthan Land Revenue Act, 1956 &amp; Apna Khata Rules:
                   </span>
                   <p className="text-slate-600 leading-relaxed">
-                    Regulates succession mutation (Namantran) for agricultural and rural land holdings in village Jamabandis based on registered or attested testamentary bequests.
+                    Regulates succession name change (Namantran) for farm and rural land holdings in village Jamabandis based on registered or attested testamentary bequests.
                   </p>
                 </div>
 
@@ -1843,7 +1843,7 @@ export default function RajasthanLocationClient({ faqs }: Props) {
                     Rajasthan High Court Judgments on Non-Presidency Probate:
                   </span>
                   <p className="text-slate-600 leading-relaxed">
-                    Multiple Rajasthan High Court rulings affirm that for properties situated in Jaipur, Jodhpur, and across Rajasthan, a beneficiary can establish ownership rights without obtaining formal court probate decrees.
+                    Multiple Rajasthan High Court rulings affirm that for assets situated in Jaipur, Jodhpur, and across Rajasthan, a heir can set up ownership rights without getting formal court probate decrees.
                   </p>
                 </div>
               </div>

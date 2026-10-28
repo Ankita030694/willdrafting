@@ -110,44 +110,44 @@ const TRICHY_SRO_HUBS = [
 const INITIAL_CHECKLIST = [
   {
     id: "item-1",
-    label: "Two Printed Copies of the Will Document",
-    detail: "Printed on standard white A4 sheets. Under Tamil Nadu law, non-judicial stamp paper is not required.",
+    label: "Two Printed Copies of the Will",
+    detail: "Print on plain white A4 paper. Under Tamil Nadu law, stamp paper is not needed.",
     checked: true,
   },
   {
     id: "item-2",
-    label: "Original Aadhaar Card & PAN of Testator",
-    detail: "Essential for biometric identity validation, electronic thumbprint, and digital photo at the SRO counter.",
+    label: "Your Original Aadhaar & PAN Card",
+    detail: "Needed for thumb scan, ID check, and live photo at the SRO desk.",
     checked: true,
   },
   {
     id: "item-3",
-    label: "Two Independent Adult Witnesses with Aadhaar",
-    detail: "Must carry original photo IDs and must not be beneficiaries receiving any asset or bequest under the Will.",
+    label: "Two Adult Witnesses with Aadhaar",
+    detail: "Must bring original photo IDs. They cannot be heirs named in the Will.",
     checked: true,
   },
   {
     id: "item-4",
-    label: "Doctor Mental Fitness Certificate (MBBS / MD)",
-    detail: "Strongly advised for senior citizens aged 60+. Certifies testamentary mental capacity, lucidity, and free will.",
+    label: "Doctor Sound Mind Note (MBBS / MD)",
+    detail: "Advised for elders aged 60+. Proves clear mind and free choice when signing.",
     checked: false,
   },
   {
     id: "item-5",
-    label: "TNREGINET Online Appointment Token Slip",
-    detail: "Official time-slot booking receipt downloaded from the tnreginet.gov.in portal with registration fee receipt.",
+    label: "TNREGINET Online Slot Slip",
+    detail: "Time slot slip and fee receipt printed from the tnreginet.gov.in portal.",
     checked: false,
   },
   {
     id: "item-6",
-    label: "Trichy City Corporation Property Tax Receipts & Registered Deeds",
-    detail: "Copy of Tiruchirappalli City Corporation tax assessments, registered sale deeds, or allotment letters.",
+    label: "Trichy House Tax Bills & Sale Deeds",
+    detail: "Copy of Trichy city tax bills, sale deeds, or plot letters for clear details.",
     checked: false,
   },
   {
     id: "item-7",
-    label: "Tamil Nilam Patta / Chitta Extract (For Farmland / Plots)",
-    detail: "Computerized revenue records for agricultural land parcels in Lalgudi, Manachanallur, or delta taluks.",
+    label: "Tamil Nilam Patta / Chitta Copy (For Land)",
+    detail: "Online land slips for farm plots in Lalgudi, Manachanallur, or delta towns.",
     checked: false,
   },
 ];
@@ -244,7 +244,7 @@ export default function TiruchirappalliLocationClient({ faqs }: Props) {
               </h1>
 
               <p className="text-base sm:text-lg text-slate-200 leading-relaxed font-normal max-w-2xl">
-                Draft a legally watertight Will for your Tiruchirappalli City Corporation flats, Srirangam heritage properties, BHEL industrial units, and Kaveri delta agricultural lands. Get senior advocate drafting, TNREGINET registration guidance, and Section 31 doorstep execution.
+                Draft a legally watertight Will for your Tiruchirappalli City Corporation flats, Srirangam heritage assets, BHEL industrial units, and Kaveri delta farm lands. Get senior lawyer drafting, TNREGINET signing guidance, and Section 31 doorstep signing.
               </p>
 
               <div className="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
@@ -269,7 +269,7 @@ export default function TiruchirappalliLocationClient({ faqs }: Props) {
               <div className="pt-4 grid grid-cols-3 gap-3 border-t border-white/10 text-xs text-slate-300">
                 <div className="flex items-center gap-2">
                   <Check className="w-4 h-4 text-emerald-400 shrink-0" />
-                  <span>Madras HC Advocate Vetted</span>
+                  <span>Madras HC Lawyer Vetted</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <Check className="w-4 h-4 text-emerald-400 shrink-0" />
@@ -478,7 +478,7 @@ export default function TiruchirappalliLocationClient({ faqs }: Props) {
               <div className="rounded-3xl bg-white border-l-[6px] border-l-[#C65378] border border-slate-200/90 p-6 md:p-8 shadow-xs">
                 <div className="flex items-center gap-2 text-xs font-black uppercase tracking-wider text-[#C65378] mb-3">
                   <Sparkles className="w-4 h-4 text-[#C65378]" />
-                  <span>TRICHY ESTATE SUCCESSION BRIEF</span>
+                  <span>TRICHY WILL MAKING GUIDE</span>
                 </div>
                 <h2 className="text-xl md:text-2xl font-extrabold text-slate-900 tracking-tight leading-snug mb-6">
                   Key Highlights: Will Making &amp; Registration in Trichy
@@ -490,17 +490,17 @@ export default function TiruchirappalliLocationClient({ faqs }: Props) {
                       <span>Optional Registration</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Will registration is optional under Section 18(e) of the Registration Act, 1908. An unregistered Will signed before two witnesses is legally valid, but TNREGINET Book III registration provides unshakeable authenticity against family disputes.
+                      Filing a Will is optional under Section 18(e) of the Registration Act, 1908. A Will signed on plain paper before two witnesses is valid. Still, Book III filing on TNREGINET gives strong legal proof and stops family fights.
                     </p>
                   </div>
 
                   <div className="p-4 rounded-2xl bg-slate-50/70 border border-slate-100 space-y-1.5">
                     <div className="flex items-center gap-2 font-bold text-sm text-slate-900">
                       <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
-                      <span>Probate Non-Compulsory</span>
+                      <span>No Court Probate Needed</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Tiruchirappalli lies outside Chennai presidency town limits. Under Section 213 of the Indian Succession Act, Madras High Court probate is strictly optional in Trichy, enabling direct property transfer with a registered Will.
+                      Trichy is outside the old Chennai presidency zone. Under Section 213 of the Indian Succession Act, Madras High Court probate is not needed in Trichy. A registered Will lets heirs transfer homes and land right away.
                     </p>
                   </div>
 
@@ -510,17 +510,37 @@ export default function TiruchirappalliLocationClient({ faqs }: Props) {
                       <span>Zero Tamil Nadu Stamp Duty</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Wills are completely exempt from stamp duty across Tamil Nadu. You only pay a flat ₹100 registration fee plus nominal computer scanning charges at the Sub-Registrar Office via TNREGINET.
+                      Wills have zero stamp duty across Tamil Nadu. You only pay a flat ₹100 filing fee plus small scan charges at the SRO office via TNREGINET.
                     </p>
                   </div>
 
                   <div className="p-4 rounded-2xl bg-slate-50/70 border border-slate-100 space-y-1.5">
                     <div className="flex items-center gap-2 font-bold text-sm text-slate-900">
                       <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
-                      <span>TCC &amp; Tamil Nilam Patta Mutation</span>
+                      <span>TCC &amp; Tamil Nilam Patta Update</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      A registered Will expedites ownership mutation with Tiruchirappalli City Corporation (TCC) tax registers and enables smooth Tamil Nilam Patta and Chitta name transfer for delta agricultural holdings.
+                      A registered Will speeds up name changes on Trichy City (TCC) house tax bills and makes Tamil Nilam Patta and Chitta transfers smooth for delta farm land.
+                    </p>
+                  </div>
+                </div>
+                <div className="mt-6 grid grid-cols-1 sm:grid-cols-3 gap-4 border-t border-slate-100 pt-6">
+                  <div className="p-4 rounded-xl bg-slate-50 border border-slate-200">
+                    <p className="text-xs font-bold text-slate-900 mb-1">Why Write a Will Now?</p>
+                    <p className="text-xs text-slate-600 leading-relaxed">
+                      A clear Will protects your spouse and kids. It stops long court fights. You pick who gets your house, land, gold, and bank cash.
+                    </p>
+                  </div>
+                  <div className="p-4 rounded-xl bg-slate-50 border border-slate-200">
+                    <p className="text-xs font-bold text-slate-900 mb-1">Who Needs One?</p>
+                    <p className="text-xs text-slate-600 leading-relaxed">
+                      Every home owner, engineer, farmer, and NRI with assets in Trichy should have a Will. Simple words make it safe and strong.
+                    </p>
+                  </div>
+                  <div className="p-4 rounded-xl bg-slate-50 border border-slate-200">
+                    <p className="text-xs font-bold text-slate-900 mb-1">How We Help You</p>
+                    <p className="text-xs text-slate-600 leading-relaxed">
+                      Our lawyers check your Patta and tax deeds. We write your Will in clear text. Then we help you sign and file it at the local SRO.
                     </p>
                   </div>
                 </div>
@@ -532,16 +552,16 @@ export default function TiruchirappalliLocationClient({ faqs }: Props) {
               <div className="space-y-2">
                 <div className="flex items-center gap-2 text-xs font-black uppercase tracking-wider text-[#C65378]">
                   <Scale className="w-4 h-4 text-[#C65378]" />
-                  <span>STATUTORY PROVISIONS</span>
+                  <span>CORE STATE LAWS</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   1. Will Drafting &amp; Legal Framework in Tiruchirappalli
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Will drafting and succession planning across Tiruchirappalli district are governed by the <strong>Indian Succession Act, 1925</strong>, the <strong>Registration Act, 1908</strong>, and the <strong>Tamil Nadu Patta Pass Book Act, 1983</strong>. Any adult of sound testamentary mind can legally bequeath self-acquired residential apartments, commercial retail spaces, ancestral agraharam properties, and agricultural land holdings.
+                  Wills across Trichy follow the <strong>Indian Succession Act, 1925</strong>, the <strong>Registration Act, 1908</strong>, and the <strong>Tamil Nadu Patta Pass Book Act, 1983</strong>. Any adult with a sound mind can pass their own flats, shops, Srirangam homes, and delta farm land to the heirs they pick.
                 </p>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Tiruchirappalli represents an important confluence of industrial, cultural, and agrarian assets. A family estate may include a modern residential apartment in Thillai Nagar or KK Nagar, an engineering ancillary workshop in Thiruverumbur or Thuvakudi, an ancestral heritage house in Srirangam, and fertile delta agricultural land in Lalgudi. Without a professionally drafted Will, surviving heirs encounter multi-department bureaucratic hurdles across City Corporation tax desks, the Tamil Nilam portal, and the Tahsildar revenue office.
+                  A Trichy family estate may hold a flat in Thillai Nagar or KK Nagar, a workshop in Thiruverumbur, an old family home in Srirangam, and wet land in Lalgudi. Without a clear Will, your heirs face long delays at the City tax desk, the Tamil Nilam portal, and the Tahsildar office.
                 </p>
               </div>
 
@@ -550,9 +570,9 @@ export default function TiruchirappalliLocationClient({ faqs }: Props) {
                   <span className="w-8 h-8 rounded-xl bg-rose-50 text-[#C65378] flex items-center justify-center font-bold text-sm">
                     18+
                   </span>
-                  <h3 className="font-bold text-sm text-slate-900">Legal Capacity</h3>
+                  <h3 className="font-bold text-sm text-slate-900">Sound Mind</h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    The testator must be a major aged 18 years or older with sound testamentary mental capacity (Section 59).
+                    You must be 18 or older and have a clear, sound mind when you sign (Section 59).
                   </p>
                 </div>
 
@@ -560,9 +580,9 @@ export default function TiruchirappalliLocationClient({ faqs }: Props) {
                   <span className="w-8 h-8 rounded-xl bg-rose-50 text-[#C65378] flex items-center justify-center font-bold text-sm">
                     <Check className="w-4 h-4" />
                   </span>
-                  <h3 className="font-bold text-sm text-slate-900">Free Consent</h3>
+                  <h3 className="font-bold text-sm text-slate-900">Free Choice</h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Executed voluntarily without undue influence, fraudulent inducement, or family coercion (Section 61).
+                    You must sign freely without force, tricks, or family pressure (Section 61).
                   </p>
                 </div>
 
@@ -572,7 +592,7 @@ export default function TiruchirappalliLocationClient({ faqs }: Props) {
                   </span>
                   <h3 className="font-bold text-sm text-slate-900">Two Witnesses</h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Must be signed in the physical presence of at least two independent adult attesting witnesses (Section 63).
+                    You must sign in front of at least two adult witnesses who also sign the page (Section 63).
                   </p>
                 </div>
 
@@ -580,9 +600,9 @@ export default function TiruchirappalliLocationClient({ faqs }: Props) {
                   <span className="w-8 h-8 rounded-xl bg-rose-50 text-[#C65378] flex items-center justify-center font-bold text-sm">
                     <ShieldCheck className="w-4 h-4" />
                   </span>
-                  <h3 className="font-bold text-sm text-slate-900">Non-Beneficiary</h3>
+                  <h3 className="font-bold text-sm text-slate-900">Neutral Witnesses</h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Attesting witnesses and their spouses must not receive any legacy or property under the Will (Section 67).
+                    Witnesses and their spouses must not get any gift or land in the Will (Section 67).
                   </p>
                 </div>
               </div>
@@ -593,16 +613,16 @@ export default function TiruchirappalliLocationClient({ faqs }: Props) {
               <div className="space-y-2">
                 <div className="flex items-center gap-2 text-xs font-black uppercase tracking-wider text-[#C65378]">
                   <FileQuestion className="w-4 h-4 text-[#C65378]" />
-                  <span>REGISTRATION STATUS</span>
+                  <span>FILING RULES</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  2. Is Will Registration Mandatory in Tiruchirappalli?
+                  2. Is Will Registration Needed in Tiruchirappalli?
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Under Section 18(e) of the Registration Act, 1908, the registration of a testamentary Will is strictly <strong>optional</strong>. An unregistered Will signed on standard white paper before two independent witnesses is legally valid and admissible before judicial authorities.
+                  Under Section 18(e) of the Registration Act, 1908, filing a Will at the SRO is <strong>optional</strong>. An unfiled Will signed on plain white paper before two witnesses is valid in court.
                 </p>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  However, with surging property valuations along Thillai Nagar, Cantonment, Srirangam, and the Trichy airport corridor, senior advocates strongly advise formal registration at the Sub-Registrar Office. An official Book III registration eliminates suspicion of forged signatures, creates a permanent government record, and guarantees frictionless mutation across municipal and revenue portals.
+                  Still, land prices in Thillai Nagar, Cantonment, Srirangam, and the airport road are high. Lawyers strongly advise filing your Will at the SRO office. A Book III record stops claims of fake signatures and makes tax and Patta updates fast.
                 </p>
               </div>
 
@@ -611,40 +631,40 @@ export default function TiruchirappalliLocationClient({ faqs }: Props) {
                 <table className="w-full text-left border-collapse text-xs sm:text-sm">
                   <thead>
                     <tr className="bg-slate-100/80 border-b border-slate-200 text-slate-800">
-                      <th className="p-4 font-bold">Succession Parameter</th>
+                      <th className="p-4 font-bold">Key Factor</th>
                       <th className="p-4 font-bold text-rose-900 bg-rose-50/60">Registered Will (Trichy SRO)</th>
                       <th className="p-4 font-bold text-slate-800 bg-slate-50/60">Unregistered Will (Plain Paper)</th>
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-slate-100 text-slate-700">
                     <tr>
-                      <td className="p-4 font-semibold">Government Record</td>
-                      <td className="p-4 bg-rose-50/20">Stored securely in Book III government registry</td>
-                      <td className="p-4 bg-slate-50/20">Stored privately; susceptible to misplacement or tampering</td>
+                      <td className="p-4 font-semibold">Safe Storage</td>
+                      <td className="p-4 bg-rose-50/20">Locked safely in Book III at the SRO</td>
+                      <td className="p-4 bg-slate-50/20">Kept at home; easy to lose, hide, or damage</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-semibold">Protection from Challenge</td>
-                      <td className="p-4 bg-rose-50/20">High legal presumption of genuine execution</td>
-                      <td className="p-4 bg-slate-50/20">Vulnerable to allegations of fraud or coercion</td>
+                      <td className="p-4 font-semibold">Safety from Fights</td>
+                      <td className="p-4 bg-rose-50/20">Strong legal proof that you signed it freely</td>
+                      <td className="p-4 bg-slate-50/20">Easy for relatives to claim fraud or pressure</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-semibold">Tiruchirappalli Corporation Mutation</td>
-                      <td className="p-4 bg-rose-50/20">Direct transfer on presenting certified Book III copy</td>
-                      <td className="p-4 bg-slate-50/20">Corporation officials frequently demand indemnity bonds or NOCs</td>
+                      <td className="p-4 font-semibold">Trichy City Tax Update</td>
+                      <td className="p-4 bg-rose-50/20">Direct name change with a Book III copy</td>
+                      <td className="p-4 bg-slate-50/20">Clerks often ask for extra bonds or NOCs</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-semibold">Tamil Nilam Patta Transfer</td>
-                      <td className="p-4 bg-rose-50/20">Smooth Patta name substitution by Revenue Tahsildar</td>
-                      <td className="p-4 bg-slate-50/20">Revenue officials may delay or require court declaration</td>
+                      <td className="p-4 font-semibold">Tamil Nilam Patta Update</td>
+                      <td className="p-4 bg-rose-50/20">Smooth Patta name change by the Tahsildar</td>
+                      <td className="p-4 bg-slate-50/20">Officers may delay or ask for a court order</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-semibold">Bank Accounts &amp; Demat Portfolios</td>
-                      <td className="p-4 bg-rose-50/20">Accepted swiftly by nationalized banks and depository participants</td>
-                      <td className="p-4 bg-slate-50/20">Banks often insist on survivor succession certificates</td>
+                      <td className="p-4 font-semibold">Bank &amp; Demat Accounts</td>
+                      <td className="p-4 bg-rose-50/20">Accepted fast by banks and share firms</td>
+                      <td className="p-4 bg-slate-50/20">Banks often ask for costly court orders</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-semibold">Government Registration Cost</td>
-                      <td className="p-4 bg-rose-50/20 font-bold text-[#C65378]">Flat ₹100 fee + scanning charges</td>
+                      <td className="p-4 font-semibold">SRO Filing Fee</td>
+                      <td className="p-4 bg-rose-50/20 font-bold text-[#C65378]">Flat ₹100 fee + scan fee</td>
                       <td className="p-4 bg-slate-50/20 font-bold text-slate-700">₹0 cost</td>
                     </tr>
                   </tbody>
@@ -657,49 +677,49 @@ export default function TiruchirappalliLocationClient({ faqs }: Props) {
               <div className="space-y-2">
                 <div className="flex items-center gap-2 text-xs font-black uppercase tracking-wider text-[#C65378]">
                   <Landmark className="w-4 h-4 text-[#C65378]" />
-                  <span>JUDICIAL PRECEDENTS</span>
+                  <span>HIGH COURT RULES</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   3. Trichy Probate Law: Exemption Outside Chennai Limits
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  One of the most widespread misconceptions among Tiruchirappalli property owners is whether probate from the Madras High Court is mandatory before heirs can transfer property. The clear legal answer is <strong>no</strong>.
+                  Many home owners in Trichy ask if they need probate from the Madras High Court before heirs can take over property. The clear legal answer is <strong>no</strong>.
                 </p>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Under Section 213 read with Section 57(a) and 57(b) of the Indian Succession Act, 1925, probate is mandatory solely for Wills executed within or properties situated within the historical presidency towns of Chennai (Madras), Mumbai (Bombay), and Kolkata (Calcutta). Tiruchirappalli is a mofussil district outside Chennai presidency limits falling under the territorial jurisdiction of the Madras High Court (Madurai Bench).
+                  Under Section 213 and Section 57 of the Indian Succession Act, 1925, probate is needed only for Wills signed in or covering land in Chennai, Mumbai, and Kolkata. Trichy is outside the old Chennai presidency limits and falls under the Madurai Bench of the Madras High Court.
                 </p>
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="bg-white rounded-3xl border border-slate-200/90 p-6 shadow-xs space-y-3">
                   <span className="px-3 py-1 rounded-full bg-emerald-100 text-emerald-800 text-xs font-extrabold uppercase">
-                    Settled Law: Non-Compulsory
+                    Clear Rule: Not Needed
                   </span>
                   <h3 className="font-bold text-base text-slate-900">
-                    Madras High Court Precedents
+                    Madras High Court Rulings
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    The Madras High Court has established across landmark judgments that probate is not compulsory for Hindu, Buddhist, Sikh, or Jain Wills executed outside the original civil jurisdiction of Chennai city. A registered Will is fully operational for Tiruchirappalli City Corporation tax transfer, Tamil Nilam Patta mutation, and banking transmissions without High Court probate.
+                    The Madras High Court has ruled many times that probate is not needed for Hindu, Buddhist, Sikh, or Jain Wills outside Chennai city. A registered Will works right away for Trichy City tax updates, Tamil Nilam Patta transfers, and bank claims without court probate.
                   </p>
                   <div className="pt-2 text-xs text-slate-500 flex items-center gap-1.5">
                     <Check className="w-3.5 h-3.5 text-emerald-600" />
-                    <span>Enables immediate asset transmission without High Court delays</span>
+                    <span>Allows fast asset transfer without High Court waits</span>
                   </div>
                 </div>
 
                 <div className="bg-white rounded-3xl border border-rose-200 p-6 shadow-xs space-y-3 bg-rose-50/30">
                   <span className="px-3 py-1 rounded-full bg-rose-100 text-[#C65378] text-xs font-extrabold uppercase">
-                    Voluntary Filings: Contested Assets
+                    Optional Filing: Family Fights
                   </span>
                   <h3 className="font-bold text-base text-slate-900">
                     When is Probate Filed in Trichy District Court?
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    An executor may voluntarily petition the Principal District Court in Tiruchirappalli for probate or letters of administration only if disputing legal heirs file partition suits or challenge testamentary soundness. A decree of probate represents a judgment <em>in rem</em> that conclusively settles ownership against the whole world.
+                    An executor may choose to apply to the Principal District Court in Trichy for probate only if angry relatives file civil suits or question the signer&apos;s mind. A court probate order settles ownership for good against all claims.
                   </p>
                   <div className="pt-2 text-xs text-slate-500 flex items-center gap-1.5">
                     <AlertTriangle className="w-3.5 h-3.5 text-[#C65378]" />
-                    <span>Conclusive judicial decree against any third-party claims</span>
+                    <span>Final court order that blocks outside claims</span>
                   </div>
                 </div>
               </div>
@@ -713,10 +733,10 @@ export default function TiruchirappalliLocationClient({ faqs }: Props) {
                   <span>SRO JURISDICTION DIRECTORY</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  4. Tiruchirappalli Sub-Registrar Offices: SRO Directory
+                  4. Tiruchirappalli SRO offices: SRO Directory
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Tiruchirappalli district operates designated Sub-Registrar Offices under the Commercial Taxes and Registration Department Tamil Nadu (TNREGINET). Under Section 32 of the Registration Act, your Will can be registered at the Sub-Registrar Office having jurisdiction over your permanent residence or where any portion of your immovable property is located.
+                  Tiruchirappalli district operates designated SRO offices under the Shop Taxes and Registration Department Tamil Nadu (TNREGINET). Under Section 32 of the Registration Act, your Will can be registered at the SRO office having area over your permanent residence or where any portion of your land and flats is located.
                 </p>
               </div>
 
@@ -786,7 +806,7 @@ export default function TiruchirappalliLocationClient({ faqs }: Props) {
                       <p className="text-slate-600">{activeHubData.timings}</p>
                     </div>
                     <div className="md:col-span-2 space-y-1">
-                      <span className="font-bold text-slate-900 block">Key Localities in Jurisdiction:</span>
+                      <span className="font-bold text-slate-900 block">Key Localities in Area:</span>
                       <p className="text-slate-600 leading-relaxed">{activeHubData.areas}</p>
                     </div>
                   </div>
@@ -805,7 +825,7 @@ export default function TiruchirappalliLocationClient({ faqs }: Props) {
                   5. Regional Cities &amp; Areas Covered in Tiruchirappalli
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Estate assets across Tiruchirappalli and the central Tamil Nadu river basin span prestigious multi-storey apartments and commercial retail establishments in Thillai Nagar and Cantonment, ancestral heritage agraharams on the sacred temple island of Srirangam, modern plotted layouts in KK Nagar and Crawford, heavy fabrication ancillaries around the BHEL Thuvakudi corridor, and rich agricultural paddy wetlands across the Kaveri and Coleroon river belts. Our estate planning advocates deliver customized legal drafting, TNREGINET online token scheduling, and Sub-Registrar accompaniment across all key micro-markets:
+                  Estate assets across Tiruchirappalli and the central Tamil Nadu river basin span prestigious multi-storey apartments and shop retail set upments in Thillai Nagar and Cantonment, family heritage agraharams on the sacred temple island of Srirangam, modern plotted layouts in KK Nagar and Crawford, heavy fabrication ancillaries around the BHEL Thuvakudi corridor, and rich farm paddy wetlands across the Kaveri and Coleroon river belts. Our estate planning lawyers deliver customized legal drafting, TNREGINET online token scheduling, and Sub-Registrar accompaniment across all key micro-markets:
                 </p>
               </div>
 
@@ -816,7 +836,7 @@ export default function TiruchirappalliLocationClient({ faqs }: Props) {
                     <div className="flex items-center justify-between gap-2">
                       <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-rose-50 text-[#C65378] border border-rose-100">
                         <MapPin className="w-3.5 h-3.5" />
-                        Central Commercial &amp; Medical Hub
+                        Central Shop &amp; Medical Hub
                       </span>
                       <span className="text-[11px] font-semibold text-slate-500 bg-slate-100 px-2.5 py-1 rounded-lg">
                         SRO Thillai Nagar
@@ -844,7 +864,7 @@ export default function TiruchirappalliLocationClient({ faqs }: Props) {
                         <span>SRO Hub: 11th Cross, Salai Road</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Online TNREGINET token booking at Thillai Nagar SRO, senior advocate accompaniment, and Section 31 doorstep execution for senior citizens.
+                        Online TNREGINET token booking at Thillai Nagar SRO, senior lawyer accompaniment, and Section 31 doorstep signing for senior citizens.
                       </p>
                     </div>
                   </div>
@@ -888,7 +908,7 @@ export default function TiruchirappalliLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Expert <strong>Will drafting services in Srirangam</strong> and Thiruvanaikoil for ancestral agraharam houses, independent heritage bungalows, and modern riverside apartments. Resolves co-parcenary ambiguities, undivided ancestral property shares, and family succession clarity without protracted civil litigation.
+                      Expert <strong>Will drafting services in Srirangam</strong> and Thiruvanaikoil for family agraharam houses, independent heritage bungalows, and modern riverside apartments. Resolves co-parcenary ambiguities, undivided family property shares, and family succession clarity without protracted civil court fights.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -897,13 +917,13 @@ export default function TiruchirappalliLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Gandhi Road, Srirangam</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Heritage property boundary descriptions, temple endowment land clarity, and doorstep registration for elderly devotees.
+                        Heritage property boundary descriptions, temple endowment land clarity, and doorstep signing for elderly devotees.
                       </p>
                     </div>
                   </div>
 
                   <div className="pt-4 mt-4 border-t border-slate-100 flex items-center justify-between">
-                    <span className="text-xs font-bold text-slate-500">Ancestral &amp; Residential</span>
+                    <span className="text-xs font-bold text-slate-500">Family &amp; Home</span>
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
@@ -941,7 +961,7 @@ export default function TiruchirappalliLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Comprehensive <strong>Will drafting services in KK Nagar</strong> and Airport Road for planned residential layouts, NRI investments, and standalone duplex homes. Formulates specific bequests for financial savings, public provident funds, and multi-story houses with clear floor-wise distribution.
+                      Full <strong>Will drafting services in KK Nagar</strong> and Airport Road for planned home layouts, NRI investments, and standalone duplex homes. Formulates clear bequests for financial savings, public provident funds, and multi-story houses with clear floor-wise split.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -950,13 +970,13 @@ export default function TiruchirappalliLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Golden Rock Main Road</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Fast token scheduling, biometric authentication, and simplified municipal tax mutation under Tiruchirappalli City Corporation.
+                        Fast token scheduling, biometric check, and simplified municipal tax name change under Tiruchirappalli City Corporation.
                       </p>
                     </div>
                   </div>
 
                   <div className="pt-4 mt-4 border-t border-slate-100 flex items-center justify-between">
-                    <span className="text-xs font-bold text-slate-500">Residential &amp; Commercial</span>
+                    <span className="text-xs font-bold text-slate-500">Home &amp; Shop</span>
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
@@ -1047,7 +1067,7 @@ export default function TiruchirappalliLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Cross-district estate structuring for family portfolios spanning Tiruchirappalli, Karur textile export businesses, Thanjavur delta properties, and Pudukkottai holdings. Unifies diverse regional properties into a single legally authoritative instrument recognized across all district registry hubs.
+                      Cross-district estate structuring for family portfolios spanning Tiruchirappalli, Karur textile export businesses, Thanjavur delta assets, and Pudukkottai holdings. Unifies diverse regional assets into a single legally authoritative instrument recognized across all district registry hubs.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1081,7 +1101,7 @@ export default function TiruchirappalliLocationClient({ faqs }: Props) {
                     <div className="flex items-center justify-between gap-2">
                       <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-rose-50 text-[#C65378] border border-rose-100">
                         <Wheat className="w-3.5 h-3.5" />
-                        Delta Agricultural &amp; Agro-Industrial
+                        Delta Farm &amp; Agro-Industrial
                       </span>
                       <span className="text-[11px] font-semibold text-slate-500 bg-slate-100 px-2.5 py-1 rounded-lg">
                         SRO Lalgudi &amp; Manachanallur
@@ -1100,7 +1120,7 @@ export default function TiruchirappalliLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Agricultural succession and <strong>Will drafting services in Lalgudi</strong> and Manachanallur for Kaveri and Coleroon river basin wet lands (Nanjai), dry agricultural plots (Punjai), modern rice milling units, and coconut groves. Ensures smooth Tamil Nilam online Patta/Chitta transfers and VAO field verification without dispute.
+                      Farm succession and <strong>Will drafting services in Lalgudi</strong> and Manachanallur for Kaveri and Coleroon river basin wet lands (Nanjai), dry farm plots (Punjai), modern rice milling units, and coconut groves. Ensures smooth Tamil Nilam online Patta/Chitta transfers and VAO field check without fight.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1109,7 +1129,7 @@ export default function TiruchirappalliLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Taluk Office Road, Lalgudi</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Agricultural survey number mapping, sub-division identification, and revenue mutation facilitation under Tamil Nadu law.
+                        Farm survey number mapping, sub-division ID, and revenue name change facilitation under Tamil Nadu law.
                       </p>
                     </div>
                   </div>
@@ -1141,7 +1161,7 @@ export default function TiruchirappalliLocationClient({ faqs }: Props) {
                   6. Step-by-Step SOP: Drafting to TNREGINET in Trichy
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Follow this verified 5-stage legal operating procedure to create, execute, and register your Will before the Sub-Registrar in Tiruchirappalli:
+                  Follow this verified 5-stage legal operating step to create, execute, and register your Will before the Sub-Registrar in Tiruchirappalli:
                 </p>
               </div>
 
@@ -1166,7 +1186,7 @@ export default function TiruchirappalliLocationClient({ faqs }: Props) {
                       2
                     </span>
                     <h3 className="font-bold text-sm text-slate-900">
-                      Advocate Drafting
+                      Lawyer Drafting
                     </h3>
                     <p className="text-xs text-slate-600 leading-relaxed">
                       Draft customized legal clauses covering revocation of past wills, survivorship, executor powers, and minor guardianships under Tamil Nadu laws.
@@ -1180,10 +1200,10 @@ export default function TiruchirappalliLocationClient({ faqs }: Props) {
                       3
                     </span>
                     <h3 className="font-bold text-sm text-slate-900">
-                      Valid Execution
+                      Valid Signing
                     </h3>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Print on standard white A4 paper and sign each page in the physical presence of two independent non-beneficiary adult witnesses.
+                      Print on standard white A4 paper and sign each page in the physical presence of two independent non-heir adult witnesses.
                     </p>
                   </div>
                 </div>
@@ -1197,7 +1217,7 @@ export default function TiruchirappalliLocationClient({ faqs }: Props) {
                       TNREGINET Token
                     </h3>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Schedule your slot on TNREGINET (tnreginet.gov.in), enter KYC details, and remit the flat statutory ₹100 registration fee online.
+                      Schedule your slot on TNREGINET (tnreginet.gov.in), enter KYC details, and remit the flat legal ₹100 signing fee online.
                     </p>
                   </div>
                 </div>
@@ -1211,7 +1231,7 @@ export default function TiruchirappalliLocationClient({ faqs }: Props) {
                       SRO Biometrics
                     </h3>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Visit the Trichy SRO with witnesses for verbal verification, photo capture, and biometric thumbprint to seal official Book III entry.
+                      Visit the Trichy SRO with witnesses for verbal check, photo capture, and biometric thumbprint to seal official Book III entry.
                     </p>
                   </div>
                 </div>
@@ -1229,7 +1249,7 @@ export default function TiruchirappalliLocationClient({ faqs }: Props) {
                   7. Section 31 Doorstep SRO Registration for Seniors
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  For senior citizens, bedridden individuals, or persons with medical mobility restrictions residing in Thillai Nagar, Srirangam, KK Nagar, or delta rural areas, traveling to the Sub-Registrar Office can be a challenging physical endeavor. Under <strong>Section 31 of the Registration Act, 1908</strong>, the Sub-Registrar is legally empowered to attend a private residence or healthcare facility to register a Will.
+                  For senior citizens, bedridden people, or persons with medical mobility restrictions residing in Thillai Nagar, Srirangam, KK Nagar, or delta rural areas, traveling to the SRO office can be a challenging physical endeavor. Under <strong>Section 31 of the Registration Act, 1908</strong>, the Sub-Registrar is legally empowered to attend a private residence or healthcare facility to register a Will.
                 </p>
               </div>
 
@@ -1242,7 +1262,7 @@ export default function TiruchirappalliLocationClient({ faqs }: Props) {
                     <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
                     <div>
                       <strong className="text-slate-900 block">Doctor Mental Soundness Certificate</strong>
-                      <span className="text-slate-600">A registered MBBS or MD doctor certifies that the testator is of sound mind but medically advised against physical travel to the registry.</span>
+                      <span className="text-slate-600">A registered MBBS or MD doctor certifies that the Will maker is of sound mind but medically advised against physical travel to the registry.</span>
                     </div>
                   </div>
 
@@ -1250,7 +1270,7 @@ export default function TiruchirappalliLocationClient({ faqs }: Props) {
                     <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
                     <div>
                       <strong className="text-slate-900 block">Special Commission Petition</strong>
-                      <span className="text-slate-600">Our legal team prepares and files the formal Section 31 doorstep commission request before the jurisdictional Tiruchirappalli Sub-Registrar.</span>
+                      <span className="text-slate-600">Our legal team prepares and files the formal Section 31 doorstep commission request before the areaal Tiruchirappalli Sub-Registrar.</span>
                     </div>
                   </div>
 
@@ -1281,10 +1301,10 @@ export default function TiruchirappalliLocationClient({ faqs }: Props) {
                   <span>INTERACTIVE CHECKLIST</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  8. Document Checklist for Trichy Sub-Registrar Offices
+                  8. Document Checklist for Trichy SRO offices
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Prepare your documentation before scheduling your Sub-Registrar appointment. You have organized <strong>{checkedCount} of {checklist.length}</strong> required documents:
+                  Prepare your papers before scheduling your Sub-Registrar appointment. You have organized <strong>{checkedCount} of {checklist.length}</strong> required documents:
                 </p>
               </div>
 
@@ -1332,32 +1352,32 @@ export default function TiruchirappalliLocationClient({ faqs }: Props) {
                   9. Trichy Property Types: Corporation Plots &amp; Patta Land
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Succession procedures in Tiruchirappalli vary considerably depending on the nature of property title and regulatory authority:
+                  Succession steps in Tiruchirappalli vary considerably depending on the nature of property title and regulatory authority:
                 </p>
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <div className="bg-white rounded-3xl border border-slate-200/90 p-6 shadow-xs space-y-3">
                   <span className="px-3 py-1 rounded-full bg-rose-100 text-[#C65378] text-xs font-bold uppercase">
-                    TCC Municipal Properties
+                    TCC Municipal Assets
                   </span>
                   <h3 className="font-bold text-base text-slate-900">
                     City Corporation Flats &amp; Plots
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Tiruchirappalli City Corporation properties in Thillai Nagar, Cantonment, and KK Nagar require precise undivided share (UDS) allocation and property tax assessment numbers for instant mutation in municipal records.
+                    Tiruchirappalli City Corporation assets in Thillai Nagar, Cantonment, and KK Nagar require precise undivided share (UDS) allocation and property tax assessment numbers for instant name change in municipal records.
                   </p>
                 </div>
 
                 <div className="bg-white rounded-3xl border border-slate-200/90 p-6 shadow-xs space-y-3">
                   <span className="px-3 py-1 rounded-full bg-amber-100 text-amber-800 text-xs font-bold uppercase">
-                    Delta Agricultural Land
+                    Delta Farm Land
                   </span>
                   <h3 className="font-bold text-base text-slate-900">
                     Tamil Nilam Patta &amp; Chitta Holdings
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Kaveri and Coleroon river basin wet lands (Nanjai) and dry lands (Punjai) in Lalgudi and Manachanallur require explicit survey numbers and sub-divisions to ensure seamless Tamil Nilam online Patta name transfers.
+                    Kaveri and Coleroon river basin wet lands (Nanjai) and dry lands (Punjai) in Lalgudi and Manachanallur require explicit survey numbers and sub-divisions to make sure seamless Tamil Nilam online Patta name transfers.
                   </p>
                 </div>
 
@@ -1386,7 +1406,7 @@ export default function TiruchirappalliLocationClient({ faqs }: Props) {
                   10. Official TNREGINET Will Registration Fees in Trichy
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Unlike real estate sale deeds or gift deeds that attract 7% to 9% stamp duty and registration fees in Tamil Nadu, testamentary Wills are completely exempt from stamp duty. Government registration charges across Tiruchirappalli are purely nominal:
+                  Unlike real estate sale deeds or gift deeds that attract 7% to 9% stamp duty and signing fees in Tamil Nadu, testamentary Wills are completely exempt from stamp duty. Government signing charges across Tiruchirappalli are purely nominal:
                 </p>
               </div>
 
@@ -1395,7 +1415,7 @@ export default function TiruchirappalliLocationClient({ faqs }: Props) {
                   <thead>
                     <tr className="bg-slate-100/80 border-b border-slate-200 text-slate-800">
                       <th className="p-4 font-bold">Fee Component</th>
-                      <th className="p-4 font-bold">Statutory Amount</th>
+                      <th className="p-4 font-bold">Legal Amount</th>
                       <th className="p-4 font-bold">Remittance Authority</th>
                     </tr>
                   </thead>
@@ -1403,11 +1423,11 @@ export default function TiruchirappalliLocationClient({ faqs }: Props) {
                     <tr>
                       <td className="p-4 font-semibold">Tamil Nadu Stamp Duty on Will</td>
                       <td className="p-4 text-emerald-700 font-bold">₹0 (Completely Exempt under State Law)</td>
-                      <td className="p-4">Commercial Taxes &amp; Registration Dept TN</td>
+                      <td className="p-4">Shop Taxes &amp; Registration Dept TN</td>
                     </tr>
                     <tr>
                       <td className="p-4 font-semibold">SRO Book III Registration Fee</td>
-                      <td className="p-4 font-bold text-[#C65378]">₹100 (Flat Statutory Fee)</td>
+                      <td className="p-4 font-bold text-[#C65378]">₹100 (Flat Legal Fee)</td>
                       <td className="p-4">TNREGINET Portal (tnreginet.gov.in)</td>
                     </tr>
                     <tr>
@@ -1436,7 +1456,7 @@ export default function TiruchirappalliLocationClient({ faqs }: Props) {
                   11. Transparent Will Packages &amp; Legal Fees in Trichy
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Choose the legal assistance package tailored to your family&apos;s estate planning and property portfolio in Tiruchirappalli:
+                  Choose the legal help package tailored to your family&apos;s estate planning and property portfolio in Tiruchirappalli:
                 </p>
               </div>
 
@@ -1454,7 +1474,7 @@ export default function TiruchirappalliLocationClient({ faqs }: Props) {
                       ₹1,990
                     </div>
                     <p className="text-xs text-slate-600">
-                      Ideal for individual homeowners with City Corporation apartments, bank accounts, and demat assets.
+                      Ideal for single homeowners with City Corporation apartments, bank accounts, and demat assets.
                     </p>
                     <ul className="space-y-2.5 text-xs text-slate-700 pt-3 border-t border-slate-100">
                       <li className="flex items-center gap-2">
@@ -1463,11 +1483,11 @@ export default function TiruchirappalliLocationClient({ faqs }: Props) {
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>Legally vetted statutory clauses</span>
+                        <span>Legally vetted legal clauses</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>Instant PDF download &amp; execution guide</span>
+                        <span>Instant PDF download &amp; signing guide</span>
                       </li>
                     </ul>
                   </div>
@@ -1487,16 +1507,16 @@ export default function TiruchirappalliLocationClient({ faqs }: Props) {
                   </div>
                   <div className="space-y-4">
                     <span className="text-xs font-bold uppercase tracking-wider text-[#C65378]">
-                      Comprehensive
+                      Full
                     </span>
                     <h3 className="font-extrabold text-xl text-slate-900">
-                      Advocate Consultation
+                      Lawyer Talk
                     </h3>
                     <div className="text-3xl font-black text-slate-900">
                       ₹4,990
                     </div>
                     <p className="text-xs text-slate-600">
-                      Senior estate advocate review for Corporation flats, Srirangam ancestral homes, and delta farmland.
+                      Senior estate lawyer review for Corporation flats, Srirangam family homes, and delta farmland.
                     </p>
                     <ul className="space-y-2.5 text-xs text-slate-700 pt-3 border-t border-slate-100">
                       <li className="flex items-center gap-2">
@@ -1505,7 +1525,7 @@ export default function TiruchirappalliLocationClient({ faqs }: Props) {
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>1-on-1 video call with senior advocate</span>
+                        <span>1-on-1 video call with senior lawyer</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
@@ -1521,7 +1541,7 @@ export default function TiruchirappalliLocationClient({ faqs }: Props) {
                     href="/contact"
                     className="mt-6 w-full py-3 rounded-xl bg-[#C65378] text-white text-xs font-bold text-center hover:bg-[#a13c5d] transition-colors cursor-pointer"
                   >
-                    Book Advocate Call
+                    Book Lawyer Call
                   </a>
                 </div>
 
@@ -1538,7 +1558,7 @@ export default function TiruchirappalliLocationClient({ faqs }: Props) {
                       ₹9,990
                     </div>
                     <p className="text-xs text-slate-600">
-                      End-to-end registration coordination across any Trichy Sub-Registrar Office or doorstep visit.
+                      End-to-end signing coordination across any Trichy SRO office or doorstep visit.
                     </p>
                     <ul className="space-y-2.5 text-xs text-slate-700 pt-3 border-t border-slate-100">
                       <li className="flex items-center gap-2">
@@ -1547,7 +1567,7 @@ export default function TiruchirappalliLocationClient({ faqs }: Props) {
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>Advocate physically attends Trichy SRO</span>
+                        <span>Lawyer physically attends Trichy SRO</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
@@ -1580,7 +1600,7 @@ export default function TiruchirappalliLocationClient({ faqs }: Props) {
                   12. Frequently Asked Questions: Will Drafting in Trichy
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Clear, authoritative answers to common legal questions regarding Will drafting, Patta transfer, and TNREGINET registration in Tiruchirappalli:
+                  Clear, authoritative answers to common legal questions regarding Will drafting, Patta transfer, and TNREGINET signing in Tiruchirappalli:
                 </p>
               </div>
 
@@ -1621,10 +1641,10 @@ export default function TiruchirappalliLocationClient({ faqs }: Props) {
                   <span>STATUTORY CITATIONS</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  13. Statutory Citations &amp; Tamil Nadu Legal Portals
+                  13. Legal Citations &amp; Tamil Nadu Legal Portals
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Our drafting protocols comply strictly with codified Indian succession statutes and Tamil Nadu state registration systems:
+                  Our drafting protocols comply strictly with codified Indian succession statutes and Tamil Nadu state signing systems:
                 </p>
               </div>
 
@@ -1652,7 +1672,7 @@ export default function TiruchirappalliLocationClient({ faqs }: Props) {
                     Tamil Nadu Patta Pass Book Act
                   </span>
                   <p className="text-xs text-slate-600">
-                    Tamil Nilam Portal: <code>eservices.tn.gov.in</code> for Patta/Chitta mutation based on registered Wills.
+                    Tamil Nilam Portal: <code>eservices.tn.gov.in</code> for Patta/Chitta name change based on registered Wills.
                   </p>
                 </div>
 
@@ -1661,7 +1681,7 @@ export default function TiruchirappalliLocationClient({ faqs }: Props) {
                     TNREGINET Official Portal
                   </span>
                   <p className="text-xs text-slate-600">
-                    Official registration appointment portal: <code>tnreginet.gov.in</code> (Flat ₹100 registration fee).
+                    Official signing appointment portal: <code>tnreginet.gov.in</code> (Flat ₹100 signing fee).
                   </p>
                 </div>
               </div>
@@ -1670,10 +1690,10 @@ export default function TiruchirappalliLocationClient({ faqs }: Props) {
             {/* BOTTOM CONVERSION CTA BANNER */}
             <section className="rounded-3xl bg-gradient-to-br from-[#172228] to-[#212F35] text-white p-8 sm:p-12 text-center space-y-5 shadow-xl">
               <h3 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-white">
-                Protect Your Trichy Properties &amp; Family Legacy
+                Protect Your Trichy Assets &amp; Family Legacy
               </h3>
               <p className="text-sm sm:text-base text-slate-200 max-w-2xl mx-auto leading-relaxed">
-                Do not leave your hard-earned Tiruchirappalli flats, businesses, or farmlands to administrative gridlock. Draft a legally binding Will online today or consult our senior Madras High Court advocates.
+                Do not leave your hard-earned Tiruchirappalli flats, businesses, or farmlands to office gridlock. Draft a legally binding Will online today or consult our senior Madras High Court lawyers.
               </p>
               <div className="pt-3 flex flex-col sm:flex-row items-center justify-center gap-4">
                 <a
@@ -1687,7 +1707,7 @@ export default function TiruchirappalliLocationClient({ faqs }: Props) {
                   href="/contact"
                   className="w-full sm:w-auto px-6 py-3.5 rounded-full bg-white/10 text-white font-bold text-sm sm:text-base hover:bg-white/20 transition-all border border-white/20"
                 >
-                  Book Advocate Consultation
+                  Book Lawyer Talk
                 </a>
               </div>
             </section>
@@ -1730,7 +1750,7 @@ export default function TiruchirappalliLocationClient({ faqs }: Props) {
               />
             </div>
             <div className="pt-3 flex items-center justify-between text-xs text-slate-500">
-              <span>Trichy SRO Registered &amp; TCC Mutation Compliant</span>
+              <span>Trichy SRO Registered &amp; TCC Name Change Compliant</span>
               <a
                 href="/start"
                 onClick={(e) => {

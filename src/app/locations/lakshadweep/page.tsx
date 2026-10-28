@@ -138,9 +138,9 @@ export default function LakshadweepLocationPage() {
         "@type": "WebPage",
         "@id": `${canonicalUrl}#webpage`,
         url: canonicalUrl,
-        name: "Will Drafting in Lakshadweep: Customary Will Guide",
+        name: "Will Drafting in Lakshadweep: Local Will Guide",
         description:
-          "Draft a valid Will in Lakshadweep. Guidance on Marumakkathayam customary property, island tenancy regulations, and SRO Kavaratti registration.",
+          "Draft a valid Will in Lakshadweep. Guidance on Marumakkathayam local asset, island tenancy regulations, and SRO Kavaratti signing.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -152,7 +152,7 @@ export default function LakshadweepLocationPage() {
           url: imageUrl,
           width: 1200,
           height: 630,
-          caption: "Legal Will Drafting and Property Succession in Lakshadweep Islands",
+          caption: "Legal Will Drafting and Asset Estate in Lakshadweep Islands",
         },
         breadcrumb: {
           "@id": `${canonicalUrl}#breadcrumb`,
@@ -185,9 +185,9 @@ export default function LakshadweepLocationPage() {
       {
         "@type": "LegalService",
         "@id": `${canonicalUrl}#legalservice`,
-        name: "WillDrafting Lakshadweep - Customary Succession & SRO Kavaratti Registration",
+        name: "WillDrafting Lakshadweep - Local Estate & SRO Kavaratti Registration",
         description:
-          "Professional Will drafting, Kerala High Court advocate consultation, Marumakkathayam customary property verification, and SRO Kavaratti.",
+          "Professional Will drafting, Kerala High Court lawyer talk, Marumakkathayam local asset check, and SRO Kavaratti.",
         url: canonicalUrl,
         image: imageUrl,
         email: "hello@willdrafting.in",
@@ -229,7 +229,7 @@ export default function LakshadweepLocationPage() {
               priceCurrency: "INR",
               itemOffered: {
                 "@type": "Service",
-                name: "Senior Advocate Consultation & Marumakkathayam Customary Review",
+                name: "Senior Lawyer Talk & Marumakkathayam Local Review",
               },
             },
             {
@@ -256,13 +256,13 @@ export default function LakshadweepLocationPage() {
             "@type": "HowToStep",
             position: 1,
             name: "Distinguish Belasha from Velliazha Assets",
-            text: "List your self-acquired Belasha properties, bank savings, and fishing vessels separately from tarawad ancestral Velliazha holdings. Designate beneficiaries and an executor.",
+            text: "List your self-acquired Belasha assets, bank savings, and fishing vessels separately from tarawad family Velliazha holdings. Designate heirs and an executor.",
           },
           {
             "@type": "HowToStep",
             position: 2,
-            name: "Draft Customized Legal and Customary Clauses",
-            text: "Draft your Will using verified statutory clauses adhering to Section 63 of the Indian Succession Act, island land revenue rules, and customary matrilineal requirements.",
+            name: "Draft Customized Legal and Local Clauses",
+            text: "Draft your Will using verified legal clauses adhering to Section 63 of the Indian Succession Act, island land revenue rules, and local matrilineal rules.",
           },
           {
             "@type": "HowToStep",
@@ -274,13 +274,13 @@ export default function LakshadweepLocationPage() {
             "@type": "HowToStep",
             position: 4,
             name: "Submit at SRO Kavaratti or Island Sub-Division",
-            text: "Present the executed Will to the Sub-Registrar Office in Kavaratti or your local island Sub-Divisional registry office, remitting nominal government registration fees.",
+            text: "Present the signed Will to the SRO office in Kavaratti or your local island Sub-Divisional registry office, remitting nominal government signing fees.",
           },
           {
             "@type": "HowToStep",
             position: 5,
             name: "Complete Verbal Attestation and Book III Entry",
-            text: "Appear with both witnesses for identity verification, thumb impressions, and verbal affirmation to finalize official Book III government recording.",
+            text: "Appear with both witnesses for identity check, thumb impressions, and verbal affirmation to finalize official Book III government recording.",
           },
         ],
       },
@@ -302,7 +302,7 @@ export default function LakshadweepLocationPage() {
   return (
     <>
       <script
-        type="application/ld+json"
+        type="form/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaGraph) }}
       />
       <Navbar />

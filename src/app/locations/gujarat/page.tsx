@@ -78,43 +78,43 @@ export const metadata: Metadata = {
 const GUJARAT_FAQS = [
   {
     q: "Is Will registration mandatory in Gujarat?",
-    a: "No. Under Section 18(e) of the Registration Act, 1908, registering a Will is optional in Gujarat. An unregistered Will executed on plain paper and signed before two independent witnesses is legally enforceable. However, registering your Will at the local Sub-Registrar Office via the Garvi Gujarat portal enters the document into official Book III government custody. This creates irrefutable evidence of genuine execution and prevents property disputes during municipal or AnyRoR land record transfers.",
+    a: "No. Under Section 18(e) of the Registration Act, 1908, filing a Will is optional in Gujarat. A Will on plain paper signed before two witnesses is valid. Still, filing it at the local SRO via the Garvi Gujarat portal saves it in Book III custody. This gives strong proof and stops family fights during town or AnyRoR land updates.",
   },
   {
     q: "Is court probate required for a Will in Gujarat under High Court rules?",
-    a: "No. Under Section 213 read with Section 57 of the Indian Succession Act, 1925, probate is mandatory solely in the historical presidency towns of Mumbai, Kolkata, and Chennai. Gujarat is a non-presidency jurisdiction. The High Court of Gujarat, through landmark rulings including Minaxiben Shashikant Patel v. Dave Sundarlal Chunilal (AIR 2002 Guj 122) and Kiritbhai Dayabhai Patel v. State of Gujarat, has established that court probate is non-mandatory for establishing rights under a Will in Gujarat.",
+    a: "No. Under Section 213 and Section 57 of the Indian Succession Act, 1925, probate is needed only in Mumbai, Kolkata, and Chennai. Gujarat is outside those zones. The Gujarat High Court ruled in Minaxiben Shashikant Patel v. Dave Sundarlal Chunilal (AIR 2002 Guj 122) that court probate is not needed to claim rights under a Will in Gujarat.",
   },
   {
     q: "How does a Will handle HUF business succession and trading firms in Gujarat?",
-    a: "Under Mitakshara Hindu law applicable across Gujarat, joint coparcenary property belongs to the HUF as a collective entity. While a Karta cannot bequeath the entire undivided HUF business, Section 30 of the Hindu Succession Act, 1956 empowers any coparcener to lawfully bequeath their individual undivided share. Self-acquired proprietary firms, company equity, and commercial real estate can be transferred directly to chosen successors.",
+    a: "Under Hindu law in Gujarat, joint family property belongs to the whole HUF. A Karta cannot give away the whole HUF firm, but Section 30 of the Hindu Succession Act, 1956 lets any member pass their own share by Will. You can also pass your own shops, shares, and flats to any heir you pick.",
   },
   {
     q: "What is the official government fee to register a Will in Gujarat?",
-    a: "Wills are completely exempt from stamp duty across the state under the Gujarat Stamp Act, 1958. At Gujarat Sub-Registrar offices, testators pay only a flat statutory registration fee of one hundred rupees. Modest computer scanning and data processing charges of ₹100 to ₹200 apply through the Cyber Treasury portal. There is zero percentage-based property market value duty.",
+    a: "Wills have zero stamp duty across the state under the Gujarat Stamp Act, 1958. At Gujarat SRO offices, you pay only a flat ₹100 filing fee plus ₹100 to ₹200 for page scans on the Cyber Treasury portal. There is no tax based on your land value.",
   },
   {
     q: "How is agricultural land transferred via Will on the AnyRoR Gujarat portal?",
-    a: "Testamentary transfer of agricultural land across Gujarat must strictly conform to Section 63 of the Gujarat Tenancy and Agricultural Lands Act, 1948, which prohibits transfer to non-agriculturists. Provided the beneficiary qualifies as an agriculturist, the registered Will and death certificate are submitted to the Talathi to initiate an e-Dhara (Pherfar) mutation entry on the AnyRoR portal (anyror.gujarat.gov.in) to update the 7/12 and 8A extracts.",
+    a: "Passing farm land by Will in Gujarat must follow Section 63 of the Gujarat Tenancy Act, 1948, which bars giving farm land to non-farmers. If your heir is a farmer, they give the registered Will and death certificate to the Talathi to start an e-Dhara (Pherfar) update on AnyRoR (anyror.gujarat.gov.in) for the 7/12 and 8A slips.",
   },
   {
     q: "How do I book an SRO appointment on the Garvi Gujarat portal?",
-    a: "Appointments are scheduled online through the official Inspector General of Registration Gujarat portal (garvi.gujarat.gov.in). You select the jurisdictional Sub-Registrar Office, enter the testator and witness KYC information, upload the Will draft, generate the e-Challan for the statutory fee through the Cyber Treasury gateway, and obtain a confirmed appointment token.",
+    a: "You book a slot online on the Garvi Gujarat portal (garvi.gujarat.gov.in). Pick your local SRO, enter ID details for yourself and two witnesses, pay the ₹100 fee on Cyber Treasury, and print your slot token.",
   },
   {
     q: "Can senior citizens in Gujarat register a Will from home under Section 31?",
-    a: "Yes. Under Section 31 of the Registration Act, 1908, senior citizens, bedridden persons, or medically unwell testators can request a home visit by the Sub-Registrar. A registered MBBS doctor must certify that the testator is mentally competent but physically unable to travel. The Sub-Registrar visits the residence with portable biometric equipment to complete registration.",
+    a: "Yes. Under Section 31 of the Registration Act, 1908, elders or sick people who cannot travel can ask for a home visit. An MBBS doctor writes a note saying the person has a sound mind. The officer then comes to your home with a thumb scan kit.",
   },
   {
     q: "How does a registered Will facilitate GIDC industrial plot lease transfer?",
-    a: "Industrial plots and factory sheds allotted by the Gujarat Industrial Development Corporation (GIDC) in industrial estates such as Vatva, Naroda, Makarpura, Sachin, or Aji require documented testamentary transfer. A registered Will naming the chosen successor enables smooth GIDC lease transmission without requiring expensive civil court succession certificates.",
+    a: "Factory plots and sheds leased from GIDC in zones like Vatva, Naroda, Makarpura, Sachin, or Aji need clear Will proof for transfer. A registered Will naming your heir makes GIDC lease updates fast without costly court orders.",
   },
   {
     q: "Who can serve as valid attesting witnesses at Gujarat Sub-Registrar offices?",
-    a: "Any two adult individuals of sound mind holding valid government photo IDs such as Aadhaar cards can serve as witnesses. Under Section 67 of the Indian Succession Act, witnesses and their spouses must not be beneficiaries receiving any property or legacy under the Will. Family friends, physicians, or independent professionals are ideal candidates.",
+    a: "Any two adults of sound mind with valid photo IDs like Aadhaar cards can be witnesses. Under Section 67 of the Indian Succession Act, witnesses and their spouses must not receive any gift or property in the Will.",
   },
   {
     q: "Can Non-Resident Gujaratis (NRGs) create a Will for properties in Gujarat?",
-    a: "Yes. Thousands of Non-Resident Gujaratis (NRGs) living in the USA, UK, Canada, Australia, and the Middle East hold ancestral properties, apartments, and commercial assets in Gujarat. NRGs can draft a compliant Indian Will online. They can execute it abroad before two independent witnesses and have it apostilled, or register it before a Gujarat Sub-Registrar during an India visit.",
+    a: "Yes. Many NRGs in the USA, UK, Canada, Australia, and the Gulf own homes, plots, and shops in Gujarat. NRGs can draft a clear Indian Will online. They can sign it abroad with two witnesses or file it at a Gujarat SRO during a trip to India.",
   },
 ];
 
@@ -143,7 +143,7 @@ export default function GujaratLocationPage() {
         url: canonicalUrl,
         name: "Will Drafting in Gujarat: Legal Online Will Making Help",
         description:
-          "Draft a legally compliant Will in Gujarat. Expert lawyer assistance, Garvi Gujarat registration advice, and family business succession.",
+          "Draft a legally compliant Will in Gujarat. Expert lawyer help, Garvi Gujarat signing advice, and family business succession.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -190,7 +190,7 @@ export default function GujaratLocationPage() {
         "@id": `${canonicalUrl}#legalservice`,
         name: "WillDrafting Gujarat - Business Succession & SRO Registration",
         description:
-          "Professional Will drafting, advocate verification, Garvi Gujarat SRO registration, and business succession planning across Ahmedabad, Surat.",
+          "Professional Will drafting, advocate check, Garvi Gujarat SRO signing, and business succession planning across Ahmedabad, Surat.",
         url: canonicalUrl,
         image: imageUrl,
         email: "hello@willdrafting.in",
@@ -271,25 +271,25 @@ export default function GujaratLocationPage() {
             "@type": "HowToStep",
             position: 2,
             name: "Draft Customized Legal Clauses",
-            text: "Draft your Will using legally vetted clauses for business succession, non-lapse distributions, survivorship, and executor authority.",
+            text: "Draft your Will using legally vetted clauses for business succession, non-lapse splits, survivorship, and executor authority.",
           },
           {
             "@type": "HowToStep",
             position: 3,
             name: "Execute Before Two Independent Witnesses",
-            text: "Print the document on standard A4 paper and sign each page in the physical presence of two independent non-beneficiary witnesses.",
+            text: "Print the document on standard A4 paper and sign each page in the physical presence of two independent non-heir witnesses.",
           },
           {
             "@type": "HowToStep",
             position: 4,
             name: "Book Slot on Garvi Gujarat Portal",
-            text: "Schedule your registration appointment on the Garvi Gujarat portal (garvi.gujarat.gov.in) and pay the ₹100 registration fee via Cyber Treasury.",
+            text: "Schedule your signing appointment on the Garvi Gujarat portal (garvi.gujarat.gov.in) and pay the ₹100 signing fee via Cyber Treasury.",
           },
           {
             "@type": "HowToStep",
             position: 5,
             name: "Complete Biometrics at Gujarat SRO",
-            text: "Visit the local Sub-Registrar Office with both witnesses for identity verification, photo capture, and biometric thumbprinting to complete Book III registration.",
+            text: "Visit the local SRO office with both witnesses for identity check, photo capture, and biometric thumbprinting to complete Book III signing.",
           },
         ],
       },

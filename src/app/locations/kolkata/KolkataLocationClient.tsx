@@ -121,7 +121,7 @@ const KOLKATA_DISTRICTS = [
 const INITIAL_CHECKLIST = [
   {
     id: "item-1",
-    label: "Testator Identity & Age Proof",
+    label: "Will maker Identity & Age Proof",
     detail: "Aadhaar card, PAN card, or Passport confirming identity and legal age (18+).",
     checked: false,
   },
@@ -139,26 +139,26 @@ const INITIAL_CHECKLIST = [
   },
   {
     id: "item-4",
-    label: "Doctor Mental Fitness Certificate",
-    detail: "Signed by a registered MBBS physician confirming sound testamentary capacity and alert mind.",
+    label: "Doctor Sound Mind Note",
+    detail: "Signed by a registered MBBS physician confirming sound sound mind and alert mind.",
     checked: false,
   },
   {
     id: "item-5",
     label: "Two Independent Adult Witnesses",
-    detail: "Two adult witnesses with valid photo IDs who are not beneficiaries or legatees in the Will.",
+    detail: "Two adult witnesses with valid photo IDs who are not heirs or legatees in the Will.",
     checked: false,
   },
   {
     id: "item-6",
     label: "Designated Executor Details",
-    detail: "Full legal name, residential address, and phone number of the executor who will file for probate.",
+    detail: "Full legal name, home address, and phone number of the executor who will file for probate.",
     checked: false,
   },
   {
     id: "item-7",
     label: "Dayabhaga Share Demarcation",
-    detail: "Clear description of ancestral shares, self-acquired flats, and movable bank/demat portfolios.",
+    detail: "Clear description of family shares, self-acquired flats, and movable bank/demat portfolios.",
     checked: false,
   },
   {
@@ -262,8 +262,8 @@ export default function KolkataLocationClient({ faqs }: Props) {
               </h1>
 
               <p className="text-base sm:text-lg text-slate-200 leading-relaxed font-normal max-w-2xl">
-                Protect your ancestral and self-acquired assets across Kolkata.
-                Get expert advocate drafting, Calcutta High Court probate guidance, and West Bengal SRO e-appointment support.
+                Protect your family and self-acquired assets across Kolkata.
+                Get expert lawyer drafting, Calcutta High Court probate guidance, and West Bengal SRO e-appointment support.
               </p>
 
               <div className="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
@@ -309,7 +309,7 @@ export default function KolkataLocationClient({ faqs }: Props) {
               >
                 <Image
                   src="/images/will-drafting-in-kolkata.jpg"
-                  alt="Online Will Drafting and Probate Assistance in Kolkata"
+                  alt="Online Will Drafting and Probate Help in Kolkata"
                   width={1200} height={675}
                   className="absolute inset-0 w-full h-full object-contain group-hover:scale-105 transition-transform duration-500"
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 42vw"
@@ -505,17 +505,17 @@ export default function KolkataLocationClient({ faqs }: Props) {
                       <span>Dayabhaga Heritage</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      West Bengal follows the Dayabhaga school of Hindu law. Unlike Mitakshara coparcenary rules, children have no birthright in ancestral property. The father has full legal authority to bequeath all property freely.
+                      West Bengal follows the Dayabhaga school of Hindu law. Unlike Mitakshara joint family rules, children have no birthright in family property. The father has full legal authority to bequeath all property freely.
                     </p>
                   </div>
 
                   <div className="p-4 rounded-2xl bg-slate-50/70 border border-slate-100 space-y-1.5">
                     <div className="flex items-center gap-2 font-bold text-sm text-slate-900">
                       <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
-                      <span>Mandatory Probate in Kolkata</span>
+                      <span>Needed Probate in Kolkata</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Under Section 213 of the Indian Succession Act, 1925, probate is compulsory for Hindu, Buddhist, Sikh, and Jain Wills executed or holding property within the Calcutta High Court original civil jurisdiction.
+                      Under Section 213 of the Indian Succession Act, 1925, probate is needed for Hindu, Buddhist, Sikh, and Jain Wills signed or holding property within the Calcutta High Court original civil area.
                     </p>
                   </div>
 
@@ -532,7 +532,7 @@ export default function KolkataLocationClient({ faqs }: Props) {
                   <div className="p-4 rounded-2xl bg-slate-50/70 border border-slate-100 space-y-1.5">
                     <div className="flex items-center gap-2 font-bold text-sm text-slate-900">
                       <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
-                      <span>Smooth KMC Mutation</span>
+                      <span>Smooth KMC Name Change</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
                       A probated and registered Will enables rapid name substitution before the Kolkata Municipal Corporation (KMC) Revenue Department and Urban Development Department for Salt Lake leaseholds.
@@ -559,7 +559,7 @@ export default function KolkataLocationClient({ faqs }: Props) {
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Kolkata possesses distinctive estate succession rules.
                   In West Bengal, the Dayabhaga system ensures the property owner enjoys complete ownership during their lifetime.
-                  Whether your assets include an ancestral rajbari in North Kolkata, a flat in Ballygunge, or a commercial shop on Park Street, drafting a structured Will prevents bitter family partition lawsuits.
+                  Whether your assets include an family rajbari in North Kolkata, a flat in Ballygunge, or a shop shop on Park Street, drafting a structured Will prevents bitter family split lawsuits.
                 </p>
               </div>
 
@@ -570,7 +570,7 @@ export default function KolkataLocationClient({ faqs }: Props) {
                   </span>
                   <h3 className="font-bold text-sm text-slate-900">Legal Capacity</h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    The testator must be at least 18 years old and possess sound testamentary capacity (Section 59).
+                    The Will maker must be at least 18 years old and possess sound sound mind (Section 59).
                   </p>
                 </div>
 
@@ -580,7 +580,7 @@ export default function KolkataLocationClient({ faqs }: Props) {
                   </span>
                   <h3 className="font-bold text-sm text-slate-900">Free Consent</h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    The document must be executed voluntarily without family coercion, undue influence, or fraud (Section 61).
+                    The document must be signed voluntarily without family coercion, undue influence, or fraud (Section 61).
                   </p>
                 </div>
 
@@ -614,15 +614,15 @@ export default function KolkataLocationClient({ faqs }: Props) {
                   <span>REGISTRATION STATUS</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  2. Is Will Registration Mandatory in West Bengal?
+                  2. Is Will Registration Needed in West Bengal?
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Under Section 18(e) of the Registration Act, 1908, registering a Will is strictly <strong>optional</strong>.
-                  An unregistered Will executed on plain paper is legally enforceable in Indian courts if properly executed and attested before two witnesses.
+                  An unregistered Will signed on plain paper is legally enforceable in Indian courts if properly signed and attested before two witnesses.
                 </p>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   However, in Kolkata, registering your Will at the Registrar of Assurances (ARA) or District Sub-Registrar (DSR) office is strongly advised by legal counsel.
-                  A registered Will creates vital documentary proof that significantly eases the mandatory Calcutta High Court probate process:
+                  A registered Will creates vital documentary proof that significantly eases the needed Calcutta High Court probate process:
                 </p>
               </div>
 
@@ -644,11 +644,11 @@ export default function KolkataLocationClient({ faqs }: Props) {
                     </tr>
                     <tr>
                       <td className="p-4 font-semibold">Calcutta HC Probate</td>
-                      <td className="p-4 bg-rose-50/20">Biometrics and official seal simplify proof of due execution</td>
+                      <td className="p-4 bg-rose-50/20">Biometrics and official seal simplify proof of due signing</td>
                       <td className="p-4 bg-slate-50/20">Disputing relatives can easily allege forgery or undue influence</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-semibold">KMC Property Mutation</td>
+                      <td className="p-4 font-semibold">KMC Property Name Change</td>
                       <td className="p-4 bg-rose-50/20">Accelerated municipal approval with certified government copy</td>
                       <td className="p-4 bg-slate-50/20">Municipal assessors often require affidavits from all legal heirs</td>
                     </tr>
@@ -659,7 +659,7 @@ export default function KolkataLocationClient({ faqs }: Props) {
                     </tr>
                     <tr>
                       <td className="p-4 font-semibold">West Bengal Govt Fee</td>
-                      <td className="p-4 bg-rose-50/20 font-bold text-[#C65378]">Flat ₹100 - ₹200 statutory fee</td>
+                      <td className="p-4 bg-rose-50/20 font-bold text-[#C65378]">Flat ₹100 - ₹200 legal fee</td>
                       <td className="p-4 bg-slate-50/20 font-bold text-slate-700">₹0 government fee</td>
                     </tr>
                   </tbody>
@@ -679,7 +679,7 @@ export default function KolkataLocationClient({ faqs }: Props) {
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Kolkata holds an exceptional position in Indian succession jurisprudence.
-                  As one of the historic British presidency towns alongside Mumbai and Chennai, Kolkata is subject to the mandatory probate provisions of the Indian Succession Act, 1925.
+                  As one of the historic British presidency towns alongside Mumbai and Chennai, Kolkata is subject to the needed probate rules of the Indian Succession Act, 1925.
                 </p>
               </div>
 
@@ -688,13 +688,13 @@ export default function KolkataLocationClient({ faqs }: Props) {
                   <div className="p-4 rounded-2xl bg-amber-50 border border-amber-200 text-amber-900 text-xs leading-relaxed space-y-2 md:w-1/2">
                     <div className="flex items-center gap-2 font-bold text-sm text-amber-900">
                       <AlertTriangle className="w-4 h-4 text-amber-600 shrink-0" />
-                      <span>Section 213: Mandatory Probate Requirement</span>
+                      <span>Section 213: Needed Probate Rule</span>
                     </div>
                     <p>
-                      Section 213(1) of the Indian Succession Act provides that no right as executor or legatee can be established in any court of justice unless probate or letters of administration have been formally granted.
+                      Section 213(1) of the Indian Succession Act provides that no right as executor or legatee can be established in any court of justice unless probate or letters of management have been formally granted.
                     </p>
                     <p>
-                      Under Section 57(a) and 57(b), this statutory mandate applies compulsorily to Hindu, Buddhist, Sikh, and Jain Wills executed within the Ordinary Original Civil Jurisdiction of the Calcutta High Court, or where the Will relates to immovable property situated within those colonial limits.
+                      Under Section 57(a) and 57(b), this legal mandate applies compulsorily to Hindu, Buddhist, Sikh, and Jain Wills signed within the Ordinary Original Civil Area of the Calcutta High Court, or where the Will relates to land and flats situated within those colonial limits.
                     </p>
                   </div>
 
@@ -704,24 +704,24 @@ export default function KolkataLocationClient({ faqs }: Props) {
                       <span>Calcutta High Court vs District Courts</span>
                     </div>
                     <p>
-                      For properties situated within the core colonial limits of Kolkata (Original Side), probate petitions are filed before the Calcutta High Court.
+                      For assets situated within the core colonial limits of Kolkata (Original Side), probate petitions are filed before the Calcutta High Court.
                     </p>
                     <p>
-                      For properties situated in extended suburban areas (such as Alipore, Behala, Jadavpur, Salt Lake, and Barasat), probate or letters of administration petitions are filed before the competent District Judge at Alipore (South 24 Parganas) or Barasat (North 24 Parganas).
+                      For assets situated in extended suburban areas (such as Alipore, Behala, Jadavpur, Salt Lake, and Barasat), probate or letters of management petitions are filed before the competent District Judge at Alipore (South 24 Parganas) or Barasat (North 24 Parganas).
                     </p>
                   </div>
                 </div>
 
                 <div className="pt-4 border-t border-slate-100 flex flex-col sm:flex-row items-center justify-between gap-4">
                   <p className="text-xs text-slate-600">
-                    Need to draft a Will specifically structured to pass Calcutta High Court probate without delay?
+                    Need to draft a Will mainly structured to pass Calcutta High Court probate without delay?
                   </p>
                   <div className="flex items-center gap-3">
                     <Link
                       href="/services/probate-lawyer"
                       className="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-[#C65378] hover:bg-[#a13c5d] text-white text-xs font-bold transition-colors"
                     >
-                      <span>Consult Kolkata Probate Advocate</span>
+                      <span>Consult Kolkata Probate Lawyer</span>
                       <ArrowRight className="w-3.5 h-3.5" />
                     </Link>
                   </div>
@@ -813,7 +813,7 @@ export default function KolkataLocationClient({ faqs }: Props) {
                       <p className="text-slate-600">{activeDistrictData.timings}</p>
                     </div>
                     <div className="md:col-span-2 space-y-1">
-                      <span className="font-bold text-slate-900 block">Jurisdiction Localities Covered:</span>
+                      <span className="font-bold text-slate-900 block">Area Localities Covered:</span>
                       <p className="text-slate-600 leading-relaxed">{activeDistrictData.areas}</p>
                     </div>
                   </div>
@@ -826,7 +826,7 @@ export default function KolkataLocationClient({ faqs }: Props) {
                       href="/contact"
                       className="inline-flex items-center gap-1.5 font-bold text-[#C65378] hover:underline"
                     >
-                      <span>Request Advocate Assistance for {activeDistrictData.name}</span>
+                      <span>Request Lawyer Help for {activeDistrictData.name}</span>
                       <ArrowRight className="w-3.5 h-3.5" />
                     </a>
                   </div>
@@ -845,8 +845,8 @@ export default function KolkataLocationClient({ faqs }: Props) {
                   5. Area-Wise Will Drafting Services Across Kolkata Localities
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Looking for legally verified <strong>Will drafting services in Ballygunge, Alipore, Salt Lake, or New Town</strong>? Properties across Kolkata span heritage ancestral rajbaris, modern high-rises in New Town, 999-year leasehold plots in Salt Lake, and luxury condominiums in Ballygunge and Alipore.
-                  Our senior advocates provide comprehensive legal drafting and SRO registration support across all key hubs:
+                  Looking for legally verified <strong>Will drafting services in Ballygunge, Alipore, Salt Lake, or New Town</strong>? Assets across Kolkata span heritage family rajbaris, modern high-rises in New Town, 999-year leasehold plots in Salt Lake, and luxury condominiums in Ballygunge and Alipore.
+                  Our senior lawyers provide full legal drafting and SRO registration support across all key hubs:
                 </p>
               </div>
 
@@ -876,8 +876,8 @@ export default function KolkataLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Looking for professional <strong>Will drafting services in Ballygunge &amp; Alipore</strong>? Ballygunge and Alipore host prestigious residential estates, luxury bungalows, and high-value family trusts.
-                      Our advocates draft customized bequests covering KMC tax mutations, demat securities, and multi-generational real estate allocations to prevent contentious partition disputes before the District Judge at Alipore.
+                      Looking for professional <strong>Will drafting services in Ballygunge &amp; Alipore</strong>? Ballygunge and Alipore host prestigious home estates, luxury bungalows, and high-value family trusts.
+                      Our lawyers draft customized bequests covering KMC tax mutations, demat securities, and multi-generational real estate allocations to prevent contentious split fights before the District Judge at Alipore.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -930,8 +930,8 @@ export default function KolkataLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Get specialized <strong>Will drafting services in Park Street &amp; BBD Bagh</strong>. Central Kolkata encompasses prominent commercial properties, tenanted premises under the West Bengal Premises Tenancy Act, and century-old family businesses.
-                      Because properties lie directly within Calcutta High Court original civil jurisdiction, mandatory probate clauses and clear executor powers are essential.
+                      Get specialized <strong>Will drafting services in Park Street &amp; BBD Bagh</strong>. Central Kolkata encompasses prominent shop assets, tenanted premises under the West Bengal Premises Tenancy Act, and century-old family businesses.
+                      Because assets lie directly within Calcutta High Court original civil area, needed probate clauses and clear executor powers are essential.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -984,7 +984,7 @@ export default function KolkataLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Opt for premier <strong>Will drafting services in Salt Lake &amp; New Town</strong>. Salt Lake properties feature 999-year leasehold plots allotted by the Urban Development Department, requiring specific testamentary compliance for Nagarayan Bhavan mutation.
+                      Opt for premier <strong>Will drafting services in Salt Lake &amp; New Town</strong>. Salt Lake assets feature 999-year leasehold plots allotted by the Urban Development Department, requiring specific testamentary compliance for Nagarayan Bhavan name change.
                       In New Town, high-rise apartment bequests demand clear nomination and co-operative society succession clauses.
                     </p>
 
@@ -1038,8 +1038,8 @@ export default function KolkataLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Secure expert <strong>Will drafting services in Shyambazar &amp; Shobhabazar</strong>. North Kolkata holds generations-old family properties, undivided Dayabhaga co-heir estates, and heritage structures.
-                      Under Dayabhaga law, a father holds unrestricted right to dispose of ancestral assets. A structured Will defines precise room or floor distributions, eliminating joint tenancy stalemates.
+                      Secure expert <strong>Will drafting services in Shyambazar &amp; Shobhabazar</strong>. North Kolkata holds generations-old family assets, undivided Dayabhaga co-heir estates, and heritage structures.
+                      Under Dayabhaga law, a father holds unrestricted right to dispose of family assets. A structured Will defines precise room or floor distributions, eliminating joint tenancy stalemates.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1054,7 +1054,7 @@ export default function KolkataLocationClient({ faqs }: Props) {
                   </div>
 
                   <div className="pt-4 mt-4 border-t border-slate-100 flex items-center justify-between">
-                    <span className="text-xs font-bold text-slate-500">Dayabhaga Ancestral Asset Security</span>
+                    <span className="text-xs font-bold text-slate-500">Dayabhaga Family Asset Security</span>
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
@@ -1092,7 +1092,7 @@ export default function KolkataLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Comprehensive <strong>Will drafting services in Jadavpur, Kasba &amp; Garia</strong>. This expansive residential zone features multi-story cooperative apartments, standalone houses, and hospital hub properties along the EM Bypass.
+                      Full <strong>Will drafting services in Jadavpur, Kasba &amp; Garia</strong>. This expansive home zone features multi-story cooperative apartments, standalone houses, and hospital hub assets along the EM Bypass.
                       Our estate planning ensures swift KMC Assessee Number updates, bank account transmissions, and hassle-free executor guidance.
                     </p>
 
@@ -1108,7 +1108,7 @@ export default function KolkataLocationClient({ faqs }: Props) {
                   </div>
 
                   <div className="pt-4 mt-4 border-t border-slate-100 flex items-center justify-between">
-                    <span className="text-xs font-bold text-slate-500">KMC Tax &amp; Bank Account Transmission</span>
+                    <span className="text-xs font-bold text-slate-500">KMC Tax &amp; Bank Account Transfer</span>
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
@@ -1147,7 +1147,7 @@ export default function KolkataLocationClient({ faqs }: Props) {
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                       Protect your family assets with <strong>Will drafting services in Behala, Thakurpukur &amp; Joka</strong>. Covering extensive freehold housing societies and developing townships along Diamond Harbour Road.
-                      Our legal team assists in drafting unambiguous bequests for family homes, resolving undivided ancestral shares, and coordinating SRO Behala registration with zero stamp duty.
+                      Our legal team assists in drafting clear bequests for family homes, resolving undivided family shares, and coordinating SRO Behala registration with zero stamp duty.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1156,7 +1156,7 @@ export default function KolkataLocationClient({ faqs }: Props) {
                         <span>Registry Hub: SRO Behala, Diamond Harbour Road</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Prompt slot booking on wbregistration.gov.in and advocate accompaniment for testators.
+                        Prompt slot booking on wbregistration.gov.in and lawyer accompaniment for testators.
                       </p>
                     </div>
                   </div>
@@ -1188,8 +1188,8 @@ export default function KolkataLocationClient({ faqs }: Props) {
                   6. Step-by-Step Will Registration in Kolkata
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Executing a legally binding Will in Kolkata requires statutory compliance with both the Indian Succession Act and West Bengal registration protocols.
-                  Follow our verified five-step procedure:
+                  Signing a legally binding Will in Kolkata requires legal compliance with both the Indian Succession Act and West Bengal registration protocols.
+                  Follow our verified five-step step:
                 </p>
               </div>
 
@@ -1204,8 +1204,8 @@ export default function KolkataLocationClient({ faqs }: Props) {
                       Catalog Assets and Clarify Dayabhaga Title
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      List all immovable properties in Kolkata with their KMC Assessee Numbers, Salt Lake lease details, or Rajarhat allotment numbers.
-                      Under Dayabhaga law, verify that you hold sole ownership without conflicting co-heir disputes. Document your bank accounts, mutual funds, and demat accounts.
+                      List all land and flats in Kolkata with their KMC Assessee Numbers, Salt Lake lease details, or Rajarhat allotment numbers.
+                      Under Dayabhaga law, verify that you hold sole ownership without conflicting co-heir fights. Document your bank accounts, mutual funds, and demat accounts.
                     </p>
                   </div>
                 </div>
@@ -1220,8 +1220,8 @@ export default function KolkataLocationClient({ faqs }: Props) {
                       Draft Specialized Clauses with Kolkata Estate Counsel
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Draft your Will incorporating specific revocation of prior wills, survivorship clauses, and unambiguous executor appointments.
-                      Since Kolkata properties fall under mandatory Calcutta High Court probate rules, exact wording prevents future citation challenges by distant relatives.
+                      Draft your Will incorporating specific revocation of prior wills, survivorship clauses, and clear executor appointments.
+                      Since Kolkata assets fall under needed Calcutta High Court probate rules, exact wording prevents future citation fights by distant relatives.
                     </p>
                   </div>
                 </div>
@@ -1237,7 +1237,7 @@ export default function KolkataLocationClient({ faqs }: Props) {
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                       Print the final Will on plain white A4 paper.
-                      Sign the bottom of each page in the physical presence of two adult witnesses who are not beneficiaries or spouses of beneficiaries.
+                      Sign the bottom of each page in the physical presence of two adult witnesses who are not heirs or spouses of heirs.
                       Both witnesses must sign the attestation clause in your presence (Section 63 compliance).
                     </p>
                   </div>
@@ -1253,8 +1253,8 @@ export default function KolkataLocationClient({ faqs }: Props) {
                       Book West Bengal e-District / Registration Token
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Log onto the West Bengal Directorate of Registration portal (wbregistration.gov.in) to generate your e-Deed application for Book III.
-                      Select your jurisdiction SRO (ARA Kolkata, DSR Alipore, SRO Bidhannagar, or SRO Behala), pay the nominal fee, and download the appointment token.
+                      Log onto the West Bengal Directorate of Registration portal (wbregistration.gov.in) to generate your e-Deed form for Book III.
+                      Select your area SRO (ARA Kolkata, DSR Alipore, SRO Bidhannagar, or SRO Behala), pay the nominal fee, and download the appointment token.
                     </p>
                   </div>
                 </div>
@@ -1266,11 +1266,11 @@ export default function KolkataLocationClient({ faqs }: Props) {
                   </div>
                   <div className="space-y-1.5">
                     <h3 className="font-extrabold text-base text-slate-900">
-                      Complete Biometric Verification at the Registry Office
+                      Complete Biometric Check at the Registry Office
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                       Visit the SRO with your two witnesses and original photo IDs.
-                      The Sub-Registrar captures biometric thumbprints and digital photographs of the testator and witnesses.
+                      The Sub-Registrar captures biometric thumbprints and digital photographs of the Will maker and witnesses.
                       The Will is entered into Book III, and the original endorsed document is returned or deposited in sealed custody under Section 42.
                     </p>
                   </div>
@@ -1289,7 +1289,7 @@ export default function KolkataLocationClient({ faqs }: Props) {
                   7. Section 31 Doorstep Registration for Seniors
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Under Section 31 of the Registration Act, 1908, the Sub-Registrar has the legal authority to visit the private residence, hospital room, or nursing home of a testator who is physically unable to travel.
+                  Under Section 31 of the Registration Act, 1908, the Sub-Registrar has the legal authority to visit the private residence, hospital room, or nursing home of a Will maker who is physically unable to travel.
                   This provides critical dignity and protection for elderly citizens across Kolkata:
                 </p>
               </div>
@@ -1299,19 +1299,19 @@ export default function KolkataLocationClient({ faqs }: Props) {
                   <div className="p-4 rounded-2xl bg-slate-50 border border-slate-100 space-y-1.5">
                     <span className="font-bold text-sm text-slate-900 block">1. Medical Certificate</span>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Obtain an MBBS doctor certificate declaring the testator is physically unable to visit the registry office but possesses sound mental alertness.
+                      Obtain an MBBS doctor paper declaring the Will maker is physically unable to visit the registry office but possesses sound mental alertness.
                     </p>
                   </div>
 
                   <div className="p-4 rounded-2xl bg-slate-50 border border-slate-100 space-y-1.5">
                     <span className="font-bold text-sm text-slate-900 block">2. Commission Requisition</span>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Our advocate files a formal petition before the Registrar of Assurances or District Sub-Registrar along with the doctor certificate and government fee.
+                      Our lawyer files a formal petition before the Registrar of Assurances or District Sub-Registrar along with the doctor paper and government fee.
                     </p>
                   </div>
 
                   <div className="p-4 rounded-2xl bg-slate-50 border border-slate-100 space-y-1.5">
-                    <span className="font-bold text-sm text-slate-900 block">3. Home Execution</span>
+                    <span className="font-bold text-sm text-slate-900 block">3. Home Signing</span>
                     <p className="text-xs text-slate-600 leading-relaxed">
                       The Sub-Registrar visits your Kolkata residence with portable biometric equipment to record signatures, thumbprints, and witness attestations.
                     </p>
@@ -1324,7 +1324,7 @@ export default function KolkataLocationClient({ faqs }: Props) {
                       Need Doorstep Registration for an Elderly Parent in Kolkata?
                     </span>
                     <p className="text-xs text-slate-600">
-                      Our Kolkata estate team coordinates the doctor certificate, SRO petition, and commission scheduling from start to finish.
+                      Our Kolkata estate team coordinates the doctor paper, SRO petition, and commission scheduling from start to finish.
                     </p>
                   </div>
                   <a
@@ -1411,11 +1411,11 @@ export default function KolkataLocationClient({ faqs }: Props) {
                   <span>ESTATE ARCHITECTURE</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  9. Kolkata Property Types: Ancestral, KMC &amp; Leases
+                  9. Kolkata Property Types: Family, KMC &amp; Leases
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Real estate in the Kolkata Metropolitan Area presents distinct legal tenures.
-                  Your Will must address the specific requirements of each asset class:
+                  Your Will must address the specific rules of each asset class:
                 </p>
               </div>
 
@@ -1423,10 +1423,10 @@ export default function KolkataLocationClient({ faqs }: Props) {
                 <div className="p-5 rounded-2xl bg-white border border-slate-200/90 space-y-2 shadow-xs">
                   <h3 className="font-extrabold text-sm text-slate-900 flex items-center gap-2">
                     <Landmark className="w-4 h-4 text-[#C65378]" />
-                    <span>Dayabhaga Ancestral Property</span>
+                    <span>Dayabhaga Family Property</span>
                   </h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Under Dayabhaga law, ancestral assets do not vest by birth. The patriarch or matriarch holds absolute ownership.
+                    Under Dayabhaga law, family assets do not vest by birth. The patriarch or matriarch holds absolute ownership.
                     The Will should clearly demarcate physical portions or fractional shares to prevent co-heir deadlocks.
                   </p>
                 </div>
@@ -1437,8 +1437,8 @@ export default function KolkataLocationClient({ faqs }: Props) {
                     <span>KMC Freehold Apartments &amp; Houses</span>
                   </h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Freehold properties governed by the Kolkata Municipal Corporation require KMC Assessee Number updating.
-                    A probated Will is the gold standard document for title mutation without demanding non-encumbrance indemnities.
+                    Freehold assets governed by the Kolkata Municipal Corporation require KMC Assessee Number updating.
+                    A probated Will is the gold standard document for title name change without demanding non-encumbrance indemnities.
                   </p>
                 </div>
 
@@ -1456,7 +1456,7 @@ export default function KolkataLocationClient({ faqs }: Props) {
                 <div className="p-5 rounded-2xl bg-white border border-slate-200/90 space-y-2 shadow-xs">
                   <h3 className="font-extrabold text-sm text-slate-900 flex items-center gap-2">
                     <Scale className="w-4 h-4 text-[#C65378]" />
-                    <span>Thika Tenancy &amp; Tenanted Properties</span>
+                    <span>Thika Tenancy &amp; Tenanted Assets</span>
                   </h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
                     Under the West Bengal Thika Tenancy Act, land vests with the State while structures belong to the tenant.
@@ -1486,7 +1486,7 @@ export default function KolkataLocationClient({ faqs }: Props) {
                 <table className="w-full text-left border-collapse text-xs sm:text-sm">
                   <thead>
                     <tr className="bg-slate-100/80 border-b border-slate-200 text-slate-800">
-                      <th className="p-4 font-bold">Statutory Fee Head</th>
+                      <th className="p-4 font-bold">Legal Fee Head</th>
                       <th className="p-4 font-bold">Government Amount</th>
                       <th className="p-4 font-bold">Legal Notes</th>
                     </tr>
@@ -1500,7 +1500,7 @@ export default function KolkataLocationClient({ faqs }: Props) {
                     <tr>
                       <td className="p-4 font-semibold">Sub-Registrar Registration Fee</td>
                       <td className="p-4 font-extrabold text-slate-900">₹100 to ₹200</td>
-                      <td className="p-4">Nominal statutory registration fee under West Bengal Registration Rules.</td>
+                      <td className="p-4">Nominal legal registration fee under West Bengal Registration Rules.</td>
                     </tr>
                     <tr>
                       <td className="p-4 font-semibold">Scanning &amp; User Charges</td>
@@ -1534,7 +1534,7 @@ export default function KolkataLocationClient({ faqs }: Props) {
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Choose the level of legal support tailored to your estate.
-                  All packages include professional advocate review and Calcutta High Court probate compliance checks:
+                  All packages include professional lawyer review and Calcutta High Court probate compliance checks:
                 </p>
               </div>
 
@@ -1553,12 +1553,12 @@ export default function KolkataLocationClient({ faqs }: Props) {
                       <span className="text-xs text-slate-500 font-bold">one-time</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Ideal for individuals with straightforward assets like a Kolkata apartment, bank deposits, and demat shares.
+                      Ideal for people with straightforward assets like a Kolkata apartment, bank deposits, and demat shares.
                     </p>
                     <ul className="space-y-2.5 text-xs text-slate-700 pt-3 border-t border-slate-100">
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>High Court Advocate Vetted</span>
+                        <span>High Court Lawyer Vetted</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
@@ -1594,14 +1594,14 @@ export default function KolkataLocationClient({ faqs }: Props) {
                       COMPREHENSIVE PLAN
                     </span>
                     <h3 className="text-xl font-extrabold text-white">
-                      Senior Advocate Review
+                      Senior Lawyer Review
                     </h3>
                     <div className="flex items-baseline gap-1">
                       <span className="text-3xl font-black text-white">₹4,990</span>
                       <span className="text-xs text-slate-300 font-bold">one-time</span>
                     </div>
                     <p className="text-xs text-slate-300 leading-relaxed">
-                      Recommended for estates involving Dayabhaga ancestral shares, Salt Lake leases, or business assets.
+                      Recommended for estates involving Dayabhaga family shares, Salt Lake leases, or business assets.
                     </p>
                     <ul className="space-y-2.5 text-xs text-slate-200 pt-3 border-t border-white/10">
                       <li className="flex items-center gap-2">
@@ -1610,7 +1610,7 @@ export default function KolkataLocationClient({ faqs }: Props) {
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-400 shrink-0" />
-                        <span>1-on-1 Senior Advocate Consultation</span>
+                        <span>1-on-1 Senior Lawyer Talk</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-400 shrink-0" />
@@ -1618,7 +1618,7 @@ export default function KolkataLocationClient({ faqs }: Props) {
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-400 shrink-0" />
-                        <span>Custom Ancestral Asset Clauses</span>
+                        <span>Custom Family Asset Clauses</span>
                       </li>
                     </ul>
                   </div>
@@ -1628,7 +1628,7 @@ export default function KolkataLocationClient({ faqs }: Props) {
                     onClick={handleStartDraft}
                     className="w-full py-3 rounded-2xl bg-[#C65378] hover:bg-[#a13c5d] text-white text-xs font-bold text-center transition-colors shadow-md cursor-pointer"
                   >
-                    Select Comprehensive Plan
+                    Select Full Plan
                   </a>
                 </div>
 
@@ -1646,12 +1646,12 @@ export default function KolkataLocationClient({ faqs }: Props) {
                       <span className="text-xs text-slate-500 font-bold">one-time</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      End-to-end management including West Bengal portal booking, advocate attendance, and Section 31 home visits.
+                      End-to-end management including West Bengal portal booking, lawyer attendance, and Section 31 home visits.
                     </p>
                     <ul className="space-y-2.5 text-xs text-slate-700 pt-3 border-t border-slate-100">
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>Everything in Comprehensive</span>
+                        <span>Everything in Full</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
@@ -1659,7 +1659,7 @@ export default function KolkataLocationClient({ faqs }: Props) {
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>Physical Advocate SRO Attendance</span>
+                        <span>Physical Lawyer SRO Attendance</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
@@ -1733,10 +1733,10 @@ export default function KolkataLocationClient({ faqs }: Props) {
                   <span>LEGAL AUTHORITY &amp; PORTALS</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  13. Statutory References &amp; West Bengal Legal Portals
+                  13. Legal References &amp; West Bengal Legal Portals
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Key statutes, judicial authorities, and official government portals governing estate succession and Will registration across Kolkata:
+                  Key statutes, judicial offices, and official government portals governing estate succession and Will registration across Kolkata:
                 </p>
               </div>
 
@@ -1746,7 +1746,7 @@ export default function KolkataLocationClient({ faqs }: Props) {
                     Indian Succession Act, 1925
                   </span>
                   <p className="text-xs text-slate-600">
-                    Sections 59, 63, 67, and Section 213 read with Section 57 (Presidency Town Mandatory Probate Rules).
+                    Sections 59, 63, 67, and Section 213 read with Section 57 (Presidency Town Needed Probate Rules).
                   </p>
                 </div>
 
@@ -1764,7 +1764,7 @@ export default function KolkataLocationClient({ faqs }: Props) {
                     Court Fees (West Bengal Amendment) Act
                   </span>
                   <p className="text-xs text-slate-600">
-                    Governs ad-valorem probate court fees with a statutory maximum ceiling of ₹50,000 for high-value estates.
+                    Governs ad-valorem probate court fees with a legal maximum ceiling of ₹50,000 for high-value estates.
                   </p>
                 </div>
 
@@ -1803,7 +1803,7 @@ export default function KolkataLocationClient({ faqs }: Props) {
                     Calcutta High Court (Original Side)
                   </span>
                   <p className="text-xs text-slate-600">
-                    High Court of Judicature at Calcutta testamentary jurisdiction for grants of probate and letters of administration.
+                    High Court of Judicature at Calcutta testamentary area for grants of probate and letters of management.
                   </p>
                 </div>
               </div>

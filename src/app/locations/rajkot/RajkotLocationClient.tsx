@@ -116,19 +116,19 @@ const INITIAL_CHECKLIST = [
   },
   {
     id: "item-2",
-    label: "Original Aadhaar Card & PAN of Testator",
+    label: "Original Aadhaar Card & PAN of Will maker",
     detail: "Essential for biometric identity validation, electronic thumbprint, and digital photo at the SRO counter.",
     checked: true,
   },
   {
     id: "item-3",
     label: "Two Independent Adult Witnesses with Aadhaar",
-    detail: "Must carry original photo IDs and must not be beneficiaries receiving any asset under the Will.",
+    detail: "Must carry original photo IDs and must not be heirs receiving any asset under the Will.",
     checked: true,
   },
   {
     id: "item-4",
-    label: "Doctor Mental Fitness Certificate (MBBS / MD)",
+    label: "Doctor Sound Mind Note (MBBS / MD)",
     detail: "Strongly advised for senior citizens aged 60+. Certifies testamentary mental soundness and lucidity.",
     checked: false,
   },
@@ -269,7 +269,7 @@ export default function RajkotLocationClient({ faqs }: Props) {
               <div className="pt-4 grid grid-cols-3 gap-3 border-t border-white/10 text-xs text-slate-300">
                 <div className="flex items-center gap-2">
                   <Check className="w-4 h-4 text-emerald-400 shrink-0" />
-                  <span>Gujarat High Court Advocate Vetted</span>
+                  <span>Gujarat High Court Lawyer Vetted</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <Check className="w-4 h-4 text-emerald-400 shrink-0" />
@@ -490,14 +490,14 @@ export default function RajkotLocationClient({ faqs }: Props) {
                       <span>Optional Registration</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Will registration is optional under Section 18(e) of the Registration Act, 1908. An unregistered Will signed before two witnesses is valid, but official Book III SRO registration provides absolute authenticity against property disputes.
+                      Will registration is optional under Section 18(e) of the Registration Act, 1908. An unregistered Will signed before two witnesses is valid, but official Book III SRO registration provides absolute authenticity against property fights.
                     </p>
                   </div>
 
                   <div className="p-4 rounded-2xl bg-slate-50/70 border border-slate-100 space-y-1.5">
                     <div className="flex items-center gap-2 font-bold text-sm text-slate-900">
                       <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
-                      <span>Probate Non-Compulsory</span>
+                      <span>Probate Non-Needed</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
                       Rajkot lies outside the historic presidency towns. Court probate is optional in Gujarat under Section 213 of the Indian Succession Act. You can transfer property titles directly with a registered Will.
@@ -510,17 +510,17 @@ export default function RajkotLocationClient({ faqs }: Props) {
                       <span>Zero Gujarat Stamp Duty</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Wills are exempt from stamp duty across Gujarat. You only pay a flat ₹100 registration fee plus small scanning fees at the Sub-Registrar Office.
+                      Wills are exempt from stamp duty across Gujarat. You only pay a flat ₹100 registration fee plus small scanning fees at the SRO office.
                     </p>
                   </div>
 
                   <div className="p-4 rounded-2xl bg-slate-50/70 border border-slate-100 space-y-1.5">
                     <div className="flex items-center gap-2 font-bold text-sm text-slate-900">
                       <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
-                      <span>RMC &amp; RUDA Mutation</span>
+                      <span>RMC &amp; RUDA Name Change</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      A registered Will speeds up property tax mutation (Varasdar Nond) with RMC. It also enables quick property card and plot allotment updates with RUDA.
+                      A registered Will speeds up property tax name change (Varasdar Nond) with RMC. It also enables quick property card and plot allotment updates with RUDA.
                     </p>
                   </div>
                 </div>
@@ -538,7 +538,7 @@ export default function RajkotLocationClient({ faqs }: Props) {
                   1. Will Drafting &amp; Legal Framework in Rajkot
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Estate succession in Rajkot follows the Indian Succession Act, 1925 and the Registration Act, 1908. Wills are also governed by the Gujarat Stamp Act, 1958. You may own a factory in Aji GIDC, a bullion shop in Soni Bazar, or a home on Kalawad Road. A clear Will ensures your assets pass smoothly to your loved ones without family disputes.
+                  Estate succession in Rajkot follows the Indian Succession Act, 1925 and the Registration Act, 1908. Wills are also governed by the Gujarat Stamp Act, 1958. You may own a factory in Aji GIDC, a bullion shop in Soni Bazar, or a home on Kalawad Road. A clear Will ensures your assets pass smoothly to your loved ones without family fights.
                 </p>
               </div>
 
@@ -551,7 +551,7 @@ export default function RajkotLocationClient({ faqs }: Props) {
                     Section 59: Sound Testamentary Capacity
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Any adult of sound mind can make a Will. You can pass on your self-acquired homes, shops, factory plots, and savings. A doctor fitness certificate confirms your clear mind and free will.
+                    Any adult of sound mind can make a Will. You can pass on your self-acquired homes, shops, factory plots, and savings. A doctor fitness paper confirms your clear mind and free will.
                   </p>
                 </div>
 
@@ -560,10 +560,10 @@ export default function RajkotLocationClient({ faqs }: Props) {
                     <ShieldCheck className="w-5 h-5" />
                   </div>
                   <h3 className="font-bold text-base text-slate-900">
-                    Section 63: Mandatory Attestation
+                    Section 63: Needed Attestation
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    The testator must sign or affix their mark to the Will in the physical presence of at least two adult witnesses. The witnesses must attest the instrument in the testator&apos;s sight to satisfy Section 63(c).
+                    The Will maker must sign or affix their mark to the Will in the physical presence of at least two adult witnesses. The witnesses must attest the instrument in the Will maker&apos;s sight to satisfy Section 63(c).
                   </p>
                 </div>
 
@@ -572,7 +572,7 @@ export default function RajkotLocationClient({ faqs }: Props) {
                     <Landmark className="w-5 h-5" />
                   </div>
                   <h3 className="font-bold text-base text-slate-900">
-                    Section 67: Non-Beneficiary Witnesses
+                    Section 67: Non-Heir Witnesses
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                     A gift in a Will to a witness or their spouse is void under Section 67. In Rajkot, pick neutral witnesses such as trusted friends, family doctors, or accountants.
@@ -589,10 +589,10 @@ export default function RajkotLocationClient({ faqs }: Props) {
                   <span>SECTION 18(e) REGISTRATION ACT</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  2. Is Will Registration Mandatory in Rajkot?
+                  2. Is Will Registration Needed in Rajkot?
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Under Section 18(e) of the Registration Act, Will registration is optional in Rajkot. An unregistered Will on plain paper with two witness signatures is legally valid. However, real estate and business assets in Rajkot are valuable. Registering your Will at the Sub-Registrar Office prevents family fraud and disputes:
+                  Under Section 18(e) of the Registration Act, Will registration is optional in Rajkot. An unregistered Will on plain paper with two witness signatures is legally valid. However, real estate and business assets in Rajkot are valuable. Registering your Will at the SRO office prevents family fraud and fights:
                 </p>
               </div>
 
@@ -608,19 +608,19 @@ export default function RajkotLocationClient({ faqs }: Props) {
                   </thead>
                   <tbody className="divide-y divide-slate-100 text-slate-700">
                     <tr>
-                      <td className="p-4 font-semibold">Statutory Validity</td>
+                      <td className="p-4 font-semibold">Legal Validity</td>
                       <td className="p-4">Valid under Section 63 Indian Succession Act</td>
                       <td className="p-4 font-semibold text-emerald-700">Valid + Government Book III Archival Record</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-semibold">RMC Property Mutation</td>
+                      <td className="p-4 font-semibold">RMC Property Name Change</td>
                       <td className="p-4">May require detailed inquiries &amp; affidavits</td>
                       <td className="p-4 font-semibold text-emerald-700">Fast Varasdar Nond property tax entry</td>
                     </tr>
                     <tr>
                       <td className="p-4 font-semibold">RUDA Plot Transfer</td>
-                      <td className="p-4">Risk of title disputes and civil objections</td>
-                      <td className="p-4 font-semibold text-emerald-700">Conclusive proof of genuine testamentary intent</td>
+                      <td className="p-4">Risk of title fights and civil objections</td>
+                      <td className="p-4 font-semibold text-emerald-700">Strong proof of genuine testamentary intent</td>
                     </tr>
                     <tr>
                       <td className="p-4 font-semibold">Risk of Document Loss</td>
@@ -628,7 +628,7 @@ export default function RajkotLocationClient({ faqs }: Props) {
                       <td className="p-4 font-semibold text-emerald-700">Zero; certified copies available from SRO archives</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-semibold">Forgery Challenges</td>
+                      <td className="p-4 font-semibold">Forgery Fights</td>
                       <td className="p-4 text-rose-600 font-medium">Susceptible to claims of coercion or fraud</td>
                       <td className="p-4 font-semibold text-emerald-700">Sub-Registrar confirms identity and mental clarity</td>
                     </tr>
@@ -653,17 +653,17 @@ export default function RajkotLocationClient({ faqs }: Props) {
                   3. Rajkot Probate Law: Exemption in Gujarat
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  A common question among property owners in Rajkot is whether probate from a civil court is mandatory before executing testamentary transfers. Under Gujarat High Court jurisdiction, the answer is <strong>no</strong>.
+                  A common question among property owners in Rajkot is whether probate from a civil court is needed before signing testamentary transfers. Under Gujarat High Court area, the answer is <strong>no</strong>.
                 </p>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Under Section 213 and Section 57 of the Indian Succession Act, probate is compulsory only in old presidency towns. These are Mumbai, Kolkata, and Chennai. Rajkot lies outside presidency limits. The Gujarat High Court has repeatedly ruled that probate is not mandatory for Hindu, Jain, Sikh, and Buddhist Wills in Gujarat.
+                  Under Section 213 and Section 57 of the Indian Succession Act, probate is needed only in old presidency towns. These are Mumbai, Kolkata, and Chennai. Rajkot lies outside presidency limits. The Gujarat High Court has repeatedly ruled that probate is not needed for Hindu, Jain, Sikh, and Buddhist Wills in Gujarat.
                 </p>
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="bg-white rounded-3xl border border-slate-200/90 p-6 shadow-xs space-y-3">
                   <span className="px-3 py-1 rounded-full bg-emerald-100 text-emerald-800 text-xs font-extrabold uppercase">
-                    Settled Law: Non-Compulsory
+                    Settled Law: Non-Needed
                   </span>
                   <h3 className="font-bold text-base text-slate-900">
                     Gujarat High Court Precedents
@@ -673,23 +673,23 @@ export default function RajkotLocationClient({ faqs }: Props) {
                   </p>
                   <div className="pt-2 text-xs text-slate-500 flex items-center gap-1.5">
                     <Check className="w-3.5 h-3.5 text-emerald-600" />
-                    <span>Enables immediate asset transmission without High Court delays</span>
+                    <span>Enables immediate asset transfer without High Court delays</span>
                   </div>
                 </div>
 
                 <div className="bg-white rounded-3xl border border-rose-200 p-6 shadow-xs space-y-3 bg-rose-50/30">
                   <span className="px-3 py-1 rounded-full bg-rose-100 text-[#C65378] text-xs font-extrabold uppercase">
-                    Voluntary Filings: High-Value Disputes
+                    Voluntary Filings: High-Value Fights
                   </span>
                   <h3 className="font-bold text-base text-slate-900">
                     When is Probate Filed in Rajkot District Court?
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    An executor may voluntarily file for probate or letters of administration before the Principal District Judge in Rajkot only if excluded legal heirs file partition suits or challenge the testator&apos;s mental soundness. A grant of probate provides an undisputed judgment <em>in rem</em>.
+                    An executor may voluntarily file for probate or letters of management before the Principal District Judge in Rajkot only if excluded legal heirs file split suits or challenge the Will maker&apos;s mental soundness. A grant of probate provides an undisputed judgment <em>in rem</em>.
                   </p>
                   <div className="pt-2 text-xs text-slate-500 flex items-center gap-1.5">
                     <AlertTriangle className="w-3.5 h-3.5 text-[#C65378]" />
-                    <span>Conclusive judicial decree against any collateral claims</span>
+                    <span>Strong judicial decree against any collateral claims</span>
                   </div>
                 </div>
               </div>
@@ -703,7 +703,7 @@ export default function RajkotLocationClient({ faqs }: Props) {
                   <span>SRO JURISDICTION DIRECTORY</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  4. Rajkot Sub-Registrar Offices: SRO Jurisdiction Directory
+                  4. Rajkot Sub-Registrar Offices: SRO Area Directory
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Rajkot has designated Sub-Registrar Offices under Garvi Gujarat. Under Section 32 of the Registration Act, you can register your Will where you live or where your property is located.
@@ -776,7 +776,7 @@ export default function RajkotLocationClient({ faqs }: Props) {
                       <p className="text-slate-600">{activeHubData.timings}</p>
                     </div>
                     <div className="md:col-span-2 space-y-1">
-                      <span className="font-bold text-slate-900 block">Key Localities in Jurisdiction:</span>
+                      <span className="font-bold text-slate-900 block">Key Localities in Area:</span>
                       <p className="text-slate-600 leading-relaxed">{activeHubData.areas}</p>
                     </div>
                   </div>
@@ -789,7 +789,7 @@ export default function RajkotLocationClient({ faqs }: Props) {
                       href="/contact"
                       className="inline-flex items-center gap-1.5 font-bold text-[#C65378] hover:underline"
                     >
-                      <span>Request Advocate Assistance for {activeHubData.name}</span>
+                      <span>Request Lawyer Help for {activeHubData.name}</span>
                       <ArrowRight className="w-3.5 h-3.5" />
                     </a>
                   </div>
@@ -808,7 +808,7 @@ export default function RajkotLocationClient({ faqs }: Props) {
                   5. Localities Covered: Area-Wise Will Drafting in Rajkot
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Properties in Rajkot include homes on Kalawad Road, offices on Yagnik Road, jewelry shops in Soni Bazar, and factories in Aji and Metoda GIDC. Our lawyers provide custom drafting, Garvi Gujarat portal slot booking, and Sub-Registrar support across all city zones:
+                  Assets in Rajkot include homes on Kalawad Road, offices on Yagnik Road, jewelry shops in Soni Bazar, and factories in Aji and Metoda GIDC. Our lawyers provide custom drafting, Garvi Gujarat portal slot booking, and Sub-Registrar support across all city zones:
                 </p>
               </div>
 
@@ -847,7 +847,7 @@ export default function RajkotLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Mavdi Main Road &amp; Bahumali Bhavan</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Garvi Gujarat online appointment booking, advocate accompaniment, and Section 31 doorstep execution for elderly residents.
+                        Garvi Gujarat online appointment booking, lawyer accompaniment, and Section 31 doorstep signing for elderly residents.
                       </p>
                     </div>
                   </div>
@@ -872,7 +872,7 @@ export default function RajkotLocationClient({ faqs }: Props) {
                     <div className="flex items-center justify-between gap-2">
                       <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-rose-50 text-[#C65378] border border-rose-100">
                         <MapPin className="w-3.5 h-3.5" />
-                        Prime Central Commercial
+                        Prime Central Shop
                       </span>
                       <span className="text-[11px] font-semibold text-slate-500 bg-slate-100 px-2.5 py-1 rounded-lg">
                         SRO Rajkot 1 (Old Collectorate)
@@ -891,7 +891,7 @@ export default function RajkotLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Custom <strong>Will drafting services in Yagnik Road</strong> and Dharmendra Road for medical clinics, offices, and retail showrooms. Protects family businesses, creates life-interest rights for spouses, and ensures clear commercial succession.
+                      Custom <strong>Will drafting services in Yagnik Road</strong> and Dharmendra Road for medical clinics, offices, and retail showrooms. Protects family businesses, creates life-interest rights for spouses, and ensures clear shop succession.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -900,7 +900,7 @@ export default function RajkotLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Old Collectorate Compound, Near Jubilee Garden</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        High-net-worth commercial estate structuring, family asset mapping, and expedited Book III registration.
+                        High-net-worth shop estate structuring, family asset mapping, and expedited Book III registration.
                       </p>
                     </div>
                   </div>
@@ -944,7 +944,7 @@ export default function RajkotLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Comprehensive <strong>Will drafting services in Mavdi and Nana Mava</strong> for new flats, penthouses, and row houses on 150 Feet Ring Road. Sets clear share allocations for sons and daughters and enables fast RMC property tax mutation.
+                      Full <strong>Will drafting services in Mavdi and Nana Mava</strong> for new flats, penthouses, and row houses on 150 Feet Ring Road. Sets clear share allocations for sons and daughters and enables fast RMC property tax name change.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -978,7 +978,7 @@ export default function RajkotLocationClient({ faqs }: Props) {
                     <div className="flex items-center justify-between gap-2">
                       <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-rose-50 text-[#C65378] border border-rose-100">
                         <MapPin className="w-3.5 h-3.5" />
-                        West Plotted Residential
+                        West Plotted Home
                       </span>
                       <span className="text-[11px] font-semibold text-slate-500 bg-slate-100 px-2.5 py-1 rounded-lg">
                         SRO Rajkot 2 (Ring Road / Mavdi)
@@ -997,7 +997,7 @@ export default function RajkotLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Tailored <strong>Will drafting services in Raiya Road</strong> and Sadhu Vaswani Road for bungalows, society flats, and bank lockers. Eliminates inheritance disputes among family members and ensures fast name updates in RMC records.
+                      Tailored <strong>Will drafting services in Raiya Road</strong> and Sadhu Vaswani Road for bungalows, society flats, and bank lockers. Eliminates inheritance fights among family members and ensures fast name updates in RMC records.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1006,7 +1006,7 @@ export default function RajkotLocationClient({ faqs }: Props) {
                         <span>SRO Hub: SRO 2 Mavdi / Ring Road</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Complete documentation review, biometric scheduling, and doorstep commissioner assistance.
+                        Complete papers review, biometric scheduling, and doorstep commissioner help.
                       </p>
                     </div>
                   </div>
@@ -1050,7 +1050,7 @@ export default function RajkotLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Dedicated <strong>Will drafting services in Soni Bazar</strong> and Palace Road for gold bullion traders and jewelry makers. Clearly separates self-acquired wealth from ancestral HUF capital and establishes smooth succession for family firms.
+                      Dedicated <strong>Will drafting services in Soni Bazar</strong> and Palace Road for gold bullion traders and jewelry makers. Clearly separates self-acquired wealth from family HUF capital and establishes smooth succession for family firms.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1059,7 +1059,7 @@ export default function RajkotLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Old Collectorate Compound (SRO 1)</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Guidance for ancestral shop succession, HUF asset partitions, and permanent Book III government archiving.
+                        Guidance for family shop succession, HUF asset partitions, and permanent Book III government archiving.
                       </p>
                     </div>
                   </div>
@@ -1165,7 +1165,7 @@ export default function RajkotLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Taluka Seva Sadan, Kotda Sangani / Shapar</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Industrial leasehold succession, business loan security release, and advocate representation.
+                        Industrial leasehold succession, business loan security release, and lawyer representation.
                       </p>
                     </div>
                   </div>
@@ -1218,7 +1218,7 @@ export default function RajkotLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Tehsil Office Complex, Lodhika (Metoda SRO)</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        GIDC compliance documentation, international business succession, and certified Book III records.
+                        GIDC compliance papers, international business succession, and certified Book III records.
                       </p>
                     </div>
                   </div>
@@ -1250,7 +1250,7 @@ export default function RajkotLocationClient({ faqs }: Props) {
                   6. Step-by-Step SOP: Drafting to Garvi Gujarat Registration
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Follow this verified 5-stage legal operating procedure to create, execute, and register your Will before the Sub-Registrar in Rajkot:
+                  Follow this verified 5-stage legal operating step to create, execute, and register your Will before the Sub-Registrar in Rajkot:
                 </p>
               </div>
 
@@ -1275,7 +1275,7 @@ export default function RajkotLocationClient({ faqs }: Props) {
                       2
                     </span>
                     <h3 className="font-bold text-sm text-slate-900">
-                      Advocate Drafting
+                      Lawyer Drafting
                     </h3>
                     <p className="text-xs text-slate-600 leading-relaxed">
                       Draft customized legal clauses covering revocation of past wills, survivorship, executor powers, and minor guardianships.
@@ -1289,10 +1289,10 @@ export default function RajkotLocationClient({ faqs }: Props) {
                       3
                     </span>
                     <h3 className="font-bold text-sm text-slate-900">
-                      Valid Execution
+                      Valid Signing
                     </h3>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Print on A4 paper and sign each page in the physical presence of two independent non-beneficiary adult witnesses.
+                      Print on A4 paper and sign each page in the physical presence of two independent non-heir adult witnesses.
                     </p>
                   </div>
                 </div>
@@ -1320,7 +1320,7 @@ export default function RajkotLocationClient({ faqs }: Props) {
                       SRO Biometrics
                     </h3>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Visit Rajkot SRO with witnesses for verbal verification, photo capture, and biometric thumbprint to seal Book III entry.
+                      Visit Rajkot SRO with witnesses for verbal check, photo capture, and biometric thumbprint to seal Book III entry.
                     </p>
                   </div>
                 </div>
@@ -1358,7 +1358,7 @@ export default function RajkotLocationClient({ faqs }: Props) {
                   <div className="flex items-start gap-3 p-4 rounded-2xl bg-slate-50 border border-slate-100">
                     <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
                     <div>
-                      <strong className="text-slate-900 block">Commission Application</strong>
+                      <strong className="text-slate-900 block">Commission Form</strong>
                       <span className="text-slate-600">Our legal team drafts and submits the formal Section 31 special commission petition before the jurisdictional Rajkot Sub-Registrar.</span>
                     </div>
                   </div>
@@ -1393,7 +1393,7 @@ export default function RajkotLocationClient({ faqs }: Props) {
                   8. Document Checklist for Rajkot Sub-Registrar Offices
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Prepare your documentation before scheduling your Sub-Registrar appointment. You have organized <strong>{checkedCount} of {checklist.length}</strong> required documents:
+                  Prepare your papers before scheduling your Sub-Registrar appointment. You have organized <strong>{checkedCount} of {checklist.length}</strong> required documents:
                 </p>
               </div>
 
@@ -1441,20 +1441,20 @@ export default function RajkotLocationClient({ faqs }: Props) {
                   9. Rajkot Property Types: RUDA Plots, Bullion &amp; Foundries
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Succession procedures in Rajkot vary considerably depending on the nature of property title, urban authority, and commercial sector:
+                  Succession steps in Rajkot vary considerably depending on the nature of property title, urban authority, and shop sector:
                 </p>
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <div className="bg-white rounded-3xl border border-slate-200/90 p-6 shadow-xs space-y-3">
                   <span className="px-3 py-1 rounded-full bg-rose-100 text-[#C65378] text-xs font-bold uppercase">
-                    RUDA &amp; RMC Residential
+                    RUDA &amp; RMC Home
                   </span>
                   <h3 className="font-bold text-base text-slate-900">
                     Bungalows, Plots &amp; Flats
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    RUDA plots and RMC flats need name updates in city survey records (Property Card) and tax books (Varasdar Nond). A registered Will avoids costly court certificates.
+                    RUDA plots and RMC flats need name updates in city survey records (Property Card) and tax books (Varasdar Nond). A registered Will avoids costly court papers.
                   </p>
                 </div>
 
@@ -1504,7 +1504,7 @@ export default function RajkotLocationClient({ faqs }: Props) {
                   <thead>
                     <tr className="bg-slate-100/80 border-b border-slate-200 text-slate-800">
                       <th className="p-4 font-bold">Fee Component</th>
-                      <th className="p-4 font-bold">Statutory Amount</th>
+                      <th className="p-4 font-bold">Legal Amount</th>
                       <th className="p-4 font-bold">Remittance Authority</th>
                     </tr>
                   </thead>
@@ -1516,7 +1516,7 @@ export default function RajkotLocationClient({ faqs }: Props) {
                     </tr>
                     <tr>
                       <td className="p-4 font-semibold">SRO Book III Registration Fee</td>
-                      <td className="p-4 font-bold text-[#C65378]">₹100 (Flat Statutory Fee)</td>
+                      <td className="p-4 font-bold text-[#C65378]">₹100 (Flat Legal Fee)</td>
                       <td className="p-4">Garvi Gujarat via Cyber Treasury Portal</td>
                     </tr>
                     <tr>
@@ -1545,7 +1545,7 @@ export default function RajkotLocationClient({ faqs }: Props) {
                   11. Transparent Will Packages &amp; Legal Fees in Rajkot
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Choose the legal assistance package tailored to your family&apos;s estate planning and property portfolio in Rajkot:
+                  Choose the legal help package tailored to your family&apos;s estate planning and property portfolio in Rajkot:
                 </p>
               </div>
 
@@ -1572,11 +1572,11 @@ export default function RajkotLocationClient({ faqs }: Props) {
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>Legally vetted statutory clauses</span>
+                        <span>Legally vetted legal clauses</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>Instant PDF download &amp; execution guide</span>
+                        <span>Instant PDF download &amp; signing guide</span>
                       </li>
                     </ul>
                   </div>
@@ -1596,16 +1596,16 @@ export default function RajkotLocationClient({ faqs }: Props) {
                   </div>
                   <div className="space-y-4">
                     <span className="text-xs font-bold uppercase tracking-wider text-[#C65378]">
-                      Comprehensive
+                      Full
                     </span>
                     <h3 className="font-extrabold text-xl text-slate-900">
-                      Advocate Consultation
+                      Lawyer Talk
                     </h3>
                     <div className="text-3xl font-black text-slate-900">
                       ₹4,990
                     </div>
                     <p className="text-xs text-slate-600">
-                      Senior estate advocate review for engineering units, bullion trade assets, and multi-heir portfolios.
+                      Senior estate lawyer review for engineering units, bullion trade assets, and multi-heir portfolios.
                     </p>
                     <ul className="space-y-2.5 text-xs text-slate-700 pt-3 border-t border-slate-100">
                       <li className="flex items-center gap-2">
@@ -1614,7 +1614,7 @@ export default function RajkotLocationClient({ faqs }: Props) {
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>1-on-1 video call with senior advocate</span>
+                        <span>1-on-1 video call with senior lawyer</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
@@ -1630,7 +1630,7 @@ export default function RajkotLocationClient({ faqs }: Props) {
                     href="/contact"
                     className="mt-6 w-full py-3 rounded-xl bg-[#C65378] text-white text-xs font-bold text-center hover:bg-[#a13c5d] transition-colors cursor-pointer"
                   >
-                    Book Advocate Call
+                    Book Lawyer Call
                   </a>
                 </div>
 
@@ -1647,7 +1647,7 @@ export default function RajkotLocationClient({ faqs }: Props) {
                       ₹9,990
                     </div>
                     <p className="text-xs text-slate-600">
-                      End-to-end registration coordination across any Rajkot Sub-Registrar Office or home visit.
+                      End-to-end registration coordination across any Rajkot SRO office or home visit.
                     </p>
                     <ul className="space-y-2.5 text-xs text-slate-700 pt-3 border-t border-slate-100">
                       <li className="flex items-center gap-2">
@@ -1656,7 +1656,7 @@ export default function RajkotLocationClient({ faqs }: Props) {
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>Advocate physically attends Rajkot SRO</span>
+                        <span>Lawyer physically attends Rajkot SRO</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
@@ -1730,7 +1730,7 @@ export default function RajkotLocationClient({ faqs }: Props) {
                   <span>STATUTORY CITATIONS</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  13. Statutory Citations &amp; Gujarat Legal Portals
+                  13. Legal Citations &amp; Gujarat Legal Portals
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Our drafting protocols comply strictly with codified Indian statutes and Gujarat state registration systems:
@@ -1779,7 +1779,7 @@ export default function RajkotLocationClient({ faqs }: Props) {
             {/* BOTTOM CONVERSION CTA BANNER */}
             <section className="rounded-3xl bg-gradient-to-br from-[#172228] to-[#212F35] text-white p-8 sm:p-12 text-center space-y-5 shadow-xl">
               <h3 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-white">
-                Protect Your Rajkot Properties &amp; Family Legacy
+                Protect Your Rajkot Assets &amp; Family Legacy
               </h3>
               <p className="text-sm sm:text-base text-slate-300 max-w-2xl mx-auto leading-relaxed">
                 Protect your family home, business, and savings today. Our team helps you write and register a legally solid Will in Rajkot.
@@ -1797,7 +1797,7 @@ export default function RajkotLocationClient({ faqs }: Props) {
                   href="/contact"
                   className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-white/10 text-white font-bold text-sm sm:text-base hover:bg-white/15 transition-all border border-white/20 text-center"
                 >
-                  <span>Consult an Advocate</span>
+                  <span>Consult an Lawyer</span>
                 </a>
               </div>
             </section>
@@ -1839,7 +1839,7 @@ export default function RajkotLocationClient({ faqs }: Props) {
               />
             </div>
             <div className="pt-3 flex items-center justify-between text-xs text-slate-500">
-              <span>Rajkot SRO Registered &amp; RMC / RUDA Mutation Compliant</span>
+              <span>Rajkot SRO Registered &amp; RMC / RUDA Name Change Compliant</span>
               <a
                 href="/start"
                 onClick={(e) => {

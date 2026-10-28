@@ -143,7 +143,7 @@ export default function ArunachalPradeshLocationPage() {
         url: canonicalUrl,
         name: "Will Drafting in Arunachal Pradesh: Online Will Guide",
         description:
-          "Draft a valid Will in Arunachal Pradesh. Guidance on customary tribal inheritance practices, Land Holding Certificates (LHC), and legal.",
+          "Draft a valid Will in Arunachal Pradesh. Guidance on local tribal passing assets practices, Land Holding Certificates (LHC), and legal.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -156,7 +156,7 @@ export default function ArunachalPradeshLocationPage() {
           width: 1200,
           height: 630,
           caption:
-            "Legal Will Drafting and Property Succession in Arunachal Pradesh",
+            "Legal Will Drafting and Asset Estate in Arunachal Pradesh",
         },
         breadcrumb: {
           "@id": `${canonicalUrl}#breadcrumb`,
@@ -191,7 +191,7 @@ export default function ArunachalPradeshLocationPage() {
         "@id": `${canonicalUrl}#legalservice`,
         name: "WillDrafting Arunachal Pradesh - Estate Planning & SRO Registration",
         description:
-          "Professional Will drafting, advocate verification, Land Holding Certificate (LHC) succession compliance, SRO Book III registration, and.",
+          "Professional Will drafting, lawyer check, Land Holding Certificate (LHC) estate compliance, SRO Book III signing, and.",
         url: canonicalUrl,
         image: imageUrl,
         email: "hello@willdrafting.in",
@@ -239,7 +239,7 @@ export default function ArunachalPradeshLocationPage() {
               priceCurrency: "INR",
               itemOffered: {
                 "@type": "Service",
-                name: "Senior Advocate Will Consultation & Customary Review",
+                name: "Senior Lawyer Will Talk & Local Review",
               },
             },
             {
@@ -266,31 +266,31 @@ export default function ArunachalPradeshLocationPage() {
             "@type": "HowToStep",
             position: 1,
             name: "Compile Estate Assets & Land Holding Certificates (LHC)",
-            text: "List your urban homes, commercial buildings, bank investments, and tribal land parcels with exact Land Holding Certificate (LHC) numbers, issuing DC office details, circle, and boundary descriptions. Designate trusted beneficiaries and an executor.",
+            text: "List your urban homes, shop buildings, bank investments, and tribal land parcels with exact Land Holding Certificate (LHC) numbers, issuing DC office details, circle, and boundary descriptions. Designate trusted heirs and an executor.",
           },
           {
             "@type": "HowToStep",
             position: 2,
-            name: "Draft Customary & Statutory Compliant Testamentary Clauses",
-            text: "Structure your Will with verified statutory clauses aligning with the Arunachal Pradesh (Land Settlement and Records) Act, 2000, ensuring bequests of tribal lands are made to eligible tribal heirs and establishing unambiguous executor powers.",
+            name: "Draft Local & Legal Compliant Testamentary Clauses",
+            text: "Structure your Will with verified legal clauses aligning with the Arunachal Pradesh (Land Settlement and Records) Act, 2000, making sure bequests of tribal lands are made to eligible tribal heirs and set uping clear executor powers.",
           },
           {
             "@type": "HowToStep",
             position: 3,
-            name: "Execute Before Two Independent Attesting Witnesses",
-            text: "Print the document on standard A4 paper and sign each page in the physical presence of two adult witnesses who receive no legacy or property under the Will.",
+            name: "Execute Before Two Adult Witnesses with ID",
+            text: "Print the document on standard A4 paper and sign each page in the physical presence of two adult witnesses who receive no legacy or asset under the Will.",
           },
           {
             "@type": "HowToStep",
             position: 4,
             name: "Schedule Sub-Registrar / DC Office Appointment",
-            text: "Coordinate with your jurisdictional Deputy Commissioner (DC) / Additional DC Sub-Registrar Office in Itanagar, Yupia, Pasighat, Tawang, or Ziro and pay nominal government registration charges.",
+            text: "Coordinate with your areaal Deputy Commissioner (DC) / Additional DC SRO office in Itanagar, Yupia, Pasighat, Tawang, or Ziro and pay nominal government signing charges.",
           },
           {
             "@type": "HowToStep",
             position: 5,
-            name: "Complete Verification & Book III Registration at SRO",
-            text: "Attend the Sub-Registrar Office with both attesting witnesses for verbal verification, photo capture, and biometric thumbprinting to complete permanent Book III registration.",
+            name: "Complete Check & Book III Registration at SRO",
+            text: "Attend the SRO office with both witnesses for verbal check, photo capture, and biometric thumbprinting to complete permanent Book III signing.",
           },
         ],
       },
@@ -312,7 +312,7 @@ export default function ArunachalPradeshLocationPage() {
   return (
     <>
       <script
-        type="application/ld+json"
+        type="form/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaGraph) }}
       />
       <Navbar />

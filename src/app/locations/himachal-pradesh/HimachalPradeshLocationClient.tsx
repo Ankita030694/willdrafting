@@ -124,37 +124,37 @@ const INITIAL_CHECKLIST = [
   },
   {
     id: "item-2",
-    label: "Original Aadhaar Card & PAN of Testator",
-    detail: "Mandatory for biometric identity validation, electronic thumbprint, and digital photo capture at the SRO counter.",
+    label: "Original Aadhaar Card & PAN of Will maker",
+    detail: "Needed for biometric identity validation, electronic thumbprint, and digital photo capture at the SRO counter.",
     checked: true,
   },
   {
     id: "item-3",
     label: "Two Independent Adult Witnesses with Aadhaar",
-    detail: "Must carry original photo IDs and must not be beneficiaries receiving any asset or orchard under the Will.",
+    detail: "Must carry original photo IDs and must not be heirs receiving any asset or orchard under the Will.",
     checked: true,
   },
   {
     id: "item-4",
-    label: "Doctor Mental Fitness Certificate (MBBS / MD)",
+    label: "Doctor Sound Mind Note (MBBS / MD)",
     detail: "Strongly recommended for senior testators aged 60+. Certifies testamentary mental capacity and lucidity.",
     checked: false,
   },
   {
     id: "item-5",
     label: "HimBhoomi Jamabandi / Revenue Extracts (Khasra & Khatauni)",
-    detail: "Recent computerized land records from himbhoomi.hp.gov.in verifying agricultural farmland and apple orchard parcels.",
+    detail: "Recent computerized land records from himbhoomi.hp.gov.in verifying farm farmland and apple orchard parcels.",
     checked: false,
   },
   {
     id: "item-6",
     label: "Section 118 Status & Natural Legal Heir Proof",
-    detail: "Documentary records confirming beneficiaries qualify as legal heirs under Section 118 of the HP Tenancy Act.",
+    detail: "Documentary records confirming heirs qualify as legal heirs under Section 118 of the HP Tenancy Act.",
     checked: false,
   },
   {
     id: "item-7",
-    label: "Municipal Property Tax Receipts & HIMUDA Allotment Deeds",
+    label: "City House Tax Receipts & HIMUDA Allotment Deeds",
     detail: "Copies of Shimla, Dharamshala, or Solan municipal property tax receipts and HIMUDA allotment conveyance papers.",
     checked: false,
   },
@@ -254,7 +254,7 @@ export default function HimachalPradeshLocationClient({ faqs }: Props) {
               </h1>
 
               <p className="text-base sm:text-lg text-slate-200 leading-relaxed font-normal max-w-2xl">
-                Draft a legally watertight Will for your residential homes, apple orchards in Shimla and Kullu, HIMUDA flats, and commercial estates. Get senior advocate drafting, Section 118 HP Tenancy Act compliance, e-Himsugam SRO booking, and Section 31 doorstep execution.
+                Draft a legally watertight Will for your home homes, apple orchards in Shimla and Kullu, HIMUDA flats, and shop estates. Get senior lawyer drafting, Section 118 HP Tenancy Act compliance, e-Himsugam SRO booking, and Section 31 doorstep signing.
               </p>
 
               <div className="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
@@ -279,7 +279,7 @@ export default function HimachalPradeshLocationClient({ faqs }: Props) {
               <div className="pt-4 grid grid-cols-3 gap-3 border-t border-white/10 text-xs text-slate-300">
                 <div className="flex items-center gap-2">
                   <Check className="w-4 h-4 text-emerald-400 shrink-0" />
-                  <span>HP High Court Advocate Vetted</span>
+                  <span>HP High Court Lawyer Vetted</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <Check className="w-4 h-4 text-emerald-400 shrink-0" />
@@ -357,7 +357,7 @@ export default function HimachalPradeshLocationClient({ faqs }: Props) {
                 Optional Probate
               </span>
               <span className="text-[9px] min-[390px]:text-[10px] sm:text-xs font-bold uppercase tracking-wider text-[#55636D] mt-1 leading-tight">
-                Non-Presidency Jurisdiction
+                Non-Presidency Area
               </span>
             </div>
 
@@ -510,17 +510,17 @@ export default function HimachalPradeshLocationClient({ faqs }: Props) {
                       <span>Optional Registration</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Will registration is optional under Section 18(e) of the Registration Act, 1908. While an unregistered Will signed before two witnesses is legally valid, formal Book III SRO registration provides indisputable evidentiary standing against property litigation.
+                      Will registration is optional under Section 18(e) of the Registration Act, 1908. While an unregistered Will signed before two witnesses is legally valid, formal Book III SRO registration provides indisputable proof standing against property court fights.
                     </p>
                   </div>
 
                   <div className="p-4 rounded-2xl bg-slate-50/70 border border-slate-100 space-y-1.5">
                     <div className="flex items-center gap-2 font-bold text-sm text-slate-900">
                       <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
-                      <span>Probate Non-Compulsory</span>
+                      <span>Probate Non-Needed</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Himachal Pradesh lies outside presidency town jurisdictions. Under Section 213 of the Indian Succession Act, court probate is strictly non-compulsory in Himachal Pradesh, permitting immediate revenue mutation with a registered Will.
+                      Himachal Pradesh lies outside presidency town areas. Under Section 213 of the Indian Succession Act, court probate is strictly non-needed in Himachal Pradesh, permitting immediate revenue name change with a registered Will.
                     </p>
                   </div>
 
@@ -530,7 +530,7 @@ export default function HimachalPradeshLocationClient({ faqs }: Props) {
                       <span>Zero Stamp Duty</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Testamentary Wills are completely exempt from stamp duty across Himachal Pradesh under the Indian Stamp Act. Testators pay only a flat nominal registration fee of approximately ₹100 to ₹500 at the jurisdictional Sub-Registrar Office.
+                      Testamentary Wills are completely exempt from stamp duty across Himachal Pradesh under the Indian Stamp Act. Testators pay only a flat nominal registration fee of about ₹100 to ₹500 at the jurisdictional SRO office.
                     </p>
                   </div>
 
@@ -540,7 +540,7 @@ export default function HimachalPradeshLocationClient({ faqs }: Props) {
                       <span>HimBhoomi &amp; Section 118 Compliance</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      A registered Will ensures seamless Intiqal mutation on the HimBhoomi portal. Precise drafting protects apple orchards and agricultural holdings from procedural objections under Section 118 of the HP Tenancy Act.
+                      A registered Will ensures seamless Intiqal name change on the HimBhoomi portal. Precise drafting protects apple orchards and farm holdings from procedural objections under Section 118 of the HP Tenancy Act.
                     </p>
                   </div>
                 </div>
@@ -561,10 +561,10 @@ export default function HimachalPradeshLocationClient({ faqs }: Props) {
                   1. Will Drafting &amp; Legal Framework in Himachal Pradesh
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Succession planning and testamentary dispositions in Himachal Pradesh are governed by the <strong>Indian Succession Act, 1925</strong>, the <strong>Registration Act, 1908</strong>, and the <strong>Himachal Pradesh Tenancy and Land Reforms Act, 1972</strong>. Any individual of sound mind who has attained the age of majority can bequeath their self-acquired residential property, agricultural holdings, commercial units, and movable assets.
+                  Succession planning and testamentary dispositions in Himachal Pradesh are governed by the <strong>Indian Succession Act, 1925</strong>, the <strong>Registration Act, 1908</strong>, and the <strong>Himachal Pradesh Tenancy and Land Reforms Act, 1972</strong>. Any individual of sound mind who has attained the age of majority can bequeath their self-acquired home property, farm holdings, shop units, and movable assets.
                 </p>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Himachal Pradesh possesses distinct land tenure dynamics. Property holdings frequently comprise ancestral apple orchards in Rohru, Jubbal, or Kullu, residential cottages in Shimla or Dharamshala, industrial units in Baddi, and tea gardens in Palampur. A carefully drafted Will ensures testamentary intentions are recognized by revenue officers, preventing disputes between surviving family members.
+                  Himachal Pradesh possesses distinct land tenure dynamics. Property holdings often comprise family apple orchards in Rohru, Jubbal, or Kullu, home cottages in Shimla or Dharamshala, industrial units in Baddi, and tea gardens in Palampur. A carefully drafted Will ensures testamentary intentions are recognized by revenue officers, preventing fights between surviving family members.
                 </p>
               </div>
 
@@ -575,7 +575,7 @@ export default function HimachalPradeshLocationClient({ faqs }: Props) {
                   </span>
                   <h3 className="font-bold text-sm text-slate-900">Legal Capacity</h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    The testator must be at least 18 years of age and possess testamentary mental soundness under Section 59.
+                    The Will maker must be at least 18 years of age and possess testamentary mental soundness under Section 59.
                   </p>
                 </div>
 
@@ -585,7 +585,7 @@ export default function HimachalPradeshLocationClient({ faqs }: Props) {
                   </span>
                   <h3 className="font-bold text-sm text-slate-900">Free Consent</h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Executed voluntarily without undue influence, deception, or family coercion under Section 61.
+                    Signed voluntarily without undue influence, deception, or family coercion under Section 61.
                   </p>
                 </div>
 
@@ -595,7 +595,7 @@ export default function HimachalPradeshLocationClient({ faqs }: Props) {
                   </span>
                   <h3 className="font-bold text-sm text-slate-900">Two Witnesses</h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Must be signed in the physical presence of two independent adult attesting witnesses under Section 63.
+                    Must be signed in the physical presence of two independent adult witnesses under Section 63.
                   </p>
                 </div>
 
@@ -603,9 +603,9 @@ export default function HimachalPradeshLocationClient({ faqs }: Props) {
                   <span className="w-8 h-8 rounded-xl bg-rose-50 text-[#C65378] flex items-center justify-center font-bold text-sm">
                     <ShieldCheck className="w-4 h-4" />
                   </span>
-                  <h3 className="font-bold text-sm text-slate-900">Non-Beneficiary</h3>
+                  <h3 className="font-bold text-sm text-slate-900">Non-Heir</h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Attesting witnesses and their spouses must not be beneficiaries receiving any bequest under Section 67.
+                    Witnesses and their spouses must not be heirs receiving any bequest under Section 67.
                   </p>
                 </div>
               </div>
@@ -622,13 +622,13 @@ export default function HimachalPradeshLocationClient({ faqs }: Props) {
                   <span>REGISTRATION STATUS</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  2. Is Will Registration Mandatory in Himachal Pradesh?
+                  2. Is Will Registration Needed in Himachal Pradesh?
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Under Section 18(e) of the Registration Act, 1908, the registration of a testamentary Will is strictly <strong>optional</strong>. An unregistered Will signed on ordinary paper before two independent witnesses is legally valid and recognized in judicial proceedings.
                 </p>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  However, given the substantial market value of apple orchards and strict regulatory controls under Section 118, advocates strongly recommend formal registration before the Sub-Registrar. Official Book III registration preserves the document in permanent government records, eliminating allegations of forged signatures and simplifying revenue mutation.
+                  However, given the substantial market value of apple orchards and strict regulatory controls under Section 118, lawyers strongly recommend formal registration before the Sub-Registrar. Official Book III registration preserves the document in permanent government records, eliminating allegations of forged signatures and simplifying revenue name change.
                 </p>
               </div>
 
@@ -657,21 +657,21 @@ export default function HimachalPradeshLocationClient({ faqs }: Props) {
                       </td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-semibold">Evidentiary Strength</td>
+                      <td className="p-4 font-semibold">Proof Strength</td>
                       <td className="p-4 bg-rose-50/20">
-                        High statutory presumption of genuine execution
+                        High legal presumption of genuine signing
                       </td>
                       <td className="p-4 bg-slate-50/20">
-                        Susceptible to challenges asserting fraud or undue influence
+                        Susceptible to fights asserting fraud or undue influence
                       </td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-semibold">HimBhoomi Land &amp; Orchard Mutation</td>
+                      <td className="p-4 font-semibold">HimBhoomi Land &amp; Orchard Name Change</td>
                       <td className="p-4 bg-rose-50/20">
                         Expedited Intiqal entry attested by Revenue Tehsildar
                       </td>
                       <td className="p-4 bg-slate-50/20">
-                        Frequent objections and delays during Halqa Patwari verification
+                        Frequent objections and delays during Halqa Patwari check
                       </td>
                     </tr>
                     <tr>
@@ -720,23 +720,23 @@ export default function HimachalPradeshLocationClient({ faqs }: Props) {
                   3. Probate Law: Himachal Pradesh High Court Succession
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Property owners in Himachal Pradesh often ask whether probate from the High Court is mandatory before inheriting assets. Under codified law, the answer is <strong>no</strong>.
+                  Property owners in Himachal Pradesh often ask whether probate from the High Court is needed before inheriting assets. Under codified law, the answer is <strong>no</strong>.
                 </p>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Under Section 213 read with Section 57 of the Indian Succession Act, 1925, probate is mandatory solely for Wills executed within or covering immovable assets located in the historical presidency towns of Mumbai, Kolkata, and Chennai. Himachal Pradesh is a non-presidency state. The High Court of Himachal Pradesh has confirmed that probate is not compulsory for Hindu, Buddhist, Sikh, or Jain Wills.
+                  Under Section 213 read with Section 57 of the Indian Succession Act, 1925, probate is needed solely for Wills signed within or covering immovable assets located in the historical presidency towns of Mumbai, Kolkata, and Chennai. Himachal Pradesh is a non-presidency state. The High Court of Himachal Pradesh has confirmed that probate is not needed for Hindu, Buddhist, Sikh, or Jain Wills.
                 </p>
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="bg-white rounded-3xl border border-slate-200/90 p-6 shadow-xs space-y-3">
                   <span className="px-3 py-1 rounded-full bg-emerald-100 text-emerald-800 text-xs font-extrabold uppercase">
-                    Settled Law: Non-Compulsory
+                    Settled Law: Non-Needed
                   </span>
                   <h3 className="font-bold text-base text-slate-900">
                     Himachal Pradesh High Court Precedents
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    The High Court of Himachal Pradesh has consistently ruled that an executor or legatee is not required to obtain a probate decree to establish property rights in civil courts or revenue offices. A validly executed Will provides direct legal authority for mutation and municipal records.
+                    The High Court of Himachal Pradesh has consistently ruled that an executor or legatee is not required to get a probate decree to set up property rights in civil courts or revenue offices. A validly signed Will provides direct legal authority for name change and municipal records.
                   </p>
                   <div className="pt-2 text-xs text-slate-500 flex items-center gap-1.5">
                     <Check className="w-3.5 h-3.5 text-emerald-600" />
@@ -752,7 +752,7 @@ export default function HimachalPradeshLocationClient({ faqs }: Props) {
                     When is Probate Filed in District Courts?
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    An executor may voluntarily file a petition for probate or letters of administration before the District Judge in Shimla, Dharamshala, or Mandi if hostile co-heirs file partition suits or contest testamentary capacity. A probate decree conclusively settles ownership rights against all claimants.
+                    An executor may voluntarily file a petition for probate or letters of management before the District Judge in Shimla, Dharamshala, or Mandi if hostile co-heirs file split suits or contest sound mind. A probate decree conclusively settles ownership rights against all claimants.
                   </p>
                   <div className="pt-2 text-xs text-slate-500 flex items-center gap-1.5">
                     <AlertTriangle className="w-3.5 h-3.5 text-[#C65378]" />
@@ -776,7 +776,7 @@ export default function HimachalPradeshLocationClient({ faqs }: Props) {
                   4. Himachal Pradesh SRO Directory: Sub-Registrar Hubs
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Himachal Pradesh operates designated Sub-Registrar Offices across all twelve revenue districts. Under Section 32 of the Registration Act, 1908, your Will can be registered at the Sub-Registrar Office having jurisdiction over your primary residence or where any portion of your immovable property is situated.
+                  Himachal Pradesh operates designated Sub-Registrar Offices across all twelve revenue districts. Under Section 32 of the Registration Act, 1908, your Will can be registered at the SRO office having area over your primary residence or where any portion of your land and flats is situated.
                 </p>
               </div>
 
@@ -849,7 +849,7 @@ export default function HimachalPradeshLocationClient({ faqs }: Props) {
                       <p className="text-slate-600">{activeHubData.timings}</p>
                     </div>
                     <div className="md:col-span-2 space-y-1">
-                      <span className="font-bold text-slate-900 block">Key Localities in Jurisdiction:</span>
+                      <span className="font-bold text-slate-900 block">Key Localities in Area:</span>
                       <p className="text-slate-600 leading-relaxed">{activeHubData.areas}</p>
                     </div>
                   </div>
@@ -862,7 +862,7 @@ export default function HimachalPradeshLocationClient({ faqs }: Props) {
                       href="/contact"
                       className="inline-flex items-center gap-1.5 font-bold text-[#C65378] hover:underline"
                     >
-                      <span>Request Advocate Assistance for {activeHubData.name}</span>
+                      <span>Request Lawyer Help for {activeHubData.name}</span>
                       <ArrowRight className="w-3.5 h-3.5" />
                     </Link>
                   </div>
@@ -884,7 +884,7 @@ export default function HimachalPradeshLocationClient({ faqs }: Props) {
                   5. Regional Cities: City-Wise Will Drafting in Himachal
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Estate assets across Himachal Pradesh span historic urban residences and cottages in Shimla and Dharamshala, commercial tourism properties in Manali and Kullu, manufacturing units in Solan and Baddi, and high-altitude apple orchards across upper Shimla, Kinnaur, and Mandi. Our estate advocates provide customized legal drafting, Section 118 compliance, and Sub-Registrar accompaniment across all key regional cities:
+                  Estate assets across Himachal Pradesh span historic urban residences and cottages in Shimla and Dharamshala, shop tourism assets in Manali and Kullu, manufacturing units in Solan and Baddi, and high-altitude apple orchards across upper Shimla, Kinnaur, and Mandi. Our estate lawyers provide customized legal drafting, Section 118 compliance, and Sub-Registrar accompaniment across all key regional cities:
                 </p>
               </div>
 
@@ -914,7 +914,7 @@ export default function HimachalPradeshLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Specialized <strong>Will drafting services in Shimla</strong> and the upper apple belt for heritage residences, Shimla Municipal Corporation apartments, and prize apple orchards in Rohru, Jubbal, and Theog. Formulates clear Section 118 legal heir compliance and revenue partition clauses to prevent family disputes.
+                      Specialized <strong>Will drafting services in Shimla</strong> and the upper apple belt for heritage residences, Shimla Municipal Corporation apartments, and prize apple orchards in Rohru, Jubbal, and Theog. Formulates clear Section 118 legal heir compliance and revenue split clauses to prevent family fights.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -923,7 +923,7 @@ export default function HimachalPradeshLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Chaura Maidan DC Office &amp; Theog Tehsil</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Advocate accompaniment at Shimla SRO, HimBhoomi Jamabandi verification, and doorstep execution for senior testators.
+                        Lawyer accompaniment at Shimla SRO, HimBhoomi Jamabandi check, and doorstep signing for senior testators.
                       </p>
                     </div>
                   </div>
@@ -967,7 +967,7 @@ export default function HimachalPradeshLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Comprehensive <strong>Will drafting services in Dharamshala</strong>, Palampur, and Kangra for commercial tourism homestays, tea estates, and residential properties. Incorporates doctor mental soundness certificates, clear executor appointments, and smooth Dharamshala Municipal Corporation mutation.
+                      Full <strong>Will drafting services in Dharamshala</strong>, Palampur, and Kangra for shop tourism homestays, tea estates, and home assets. Incorporates doctor mental soundness papers, clear executor appointments, and smooth Dharamshala Municipal Corporation name change.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -976,7 +976,7 @@ export default function HimachalPradeshLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Mini Secretariat Complex, Dharamshala</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Tea estate succession, commercial hospitality assets, and Kangra Collectorate SRO appointment support.
+                        Tea estate succession, shop hospitality assets, and Kangra Collectorate SRO appointment support.
                       </p>
                     </div>
                   </div>
@@ -1020,7 +1020,7 @@ export default function HimachalPradeshLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Customized <strong>Will drafting services in Solan and Baddi</strong> for pharmaceutical factory owners, MSME industrial manufacturing units, and HIMUDA residential plots. Solves cross-generational corporate share succession, commercial leases, and industrial land transfer requirements.
+                      Customized <strong>Will drafting services in Solan and Baddi</strong> for pharmaceutical factory owners, MSME industrial manufacturing units, and HIMUDA home plots. Solves cross-generational corporate share succession, shop leases, and industrial land transfer rules.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1073,16 +1073,16 @@ export default function HimachalPradeshLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Authoritative <strong>Will drafting services in Mandi</strong> and Sundernagar for commercial trading premises, ancestral residential properties, and fertile agricultural holdings in Balh valley. Safeguards family legacies with unambiguous share divisions and reliable witness protocols.
+                      Authoritative <strong>Will drafting services in Mandi</strong> and Sundernagar for shop trading premises, family home assets, and fertile farm holdings in Balh valley. Safeguards family legacies with clear share divisions and reliable witness protocols.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
                       <div className="flex items-center gap-2 font-bold text-slate-900">
                         <Building className="w-3.5 h-3.5 text-[#C65378]" />
-                        <span>SRO Hub: District Administrative Complex, Mandi</span>
+                        <span>SRO Hub: District Office Complex, Mandi</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Balh valley agricultural mutation, commercial shop bequests, and Mandi Tehsil registration assistance.
+                        Balh valley farm name change, shop shop bequests, and Mandi Tehsil registration help.
                       </p>
                     </div>
                   </div>
@@ -1126,7 +1126,7 @@ export default function HimachalPradeshLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Specialized <strong>Will drafting services in Kullu and Manali</strong> for riverside resorts, luxury cottages, adventure tourism firms, and apple orchards along the Beas basin. Protects commercial hospitality licenses and ensures lawful testamentary transfer under Section 118.
+                      Specialized <strong>Will drafting services in Kullu and Manali</strong> for riverside resorts, luxury cottages, adventure tourism firms, and apple orchards along the Beas basin. Protects shop hospitality licenses and ensures lawful testamentary transfer under Section 118.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1179,7 +1179,7 @@ export default function HimachalPradeshLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Reliable <strong>Will drafting services in Hamirpur and Bilaspur</strong> for armed forces veterans, education sector professionals, and residential property owners. Simplifies distribution of defense pensions, mutual fund portfolios, and independent residential houses without probate delays.
+                      Reliable <strong>Will drafting services in Hamirpur and Bilaspur</strong> for armed forces veterans, education sector professionals, and home property owners. Simplifies split of defense pensions, mutual fund portfolios, and independent home houses without probate delays.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1194,7 +1194,7 @@ export default function HimachalPradeshLocationClient({ faqs }: Props) {
                   </div>
 
                   <div className="pt-4 mt-4 border-t border-slate-100 flex items-center justify-between">
-                    <span className="text-xs font-bold text-slate-500">Veterans &amp; Residential Homes</span>
+                    <span className="text-xs font-bold text-slate-500">Veterans &amp; Home Homes</span>
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
@@ -1232,7 +1232,7 @@ export default function HimachalPradeshLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Specialized <strong>Will drafting services in Una and Paonta Sahib</strong> for agricultural landholdings, commercial warehousing units, and industrial manufacturing plants bordering Punjab and Haryana. Coordinates interstate estate planning and local revenue mutation.
+                      Specialized <strong>Will drafting services in Una and Paonta Sahib</strong> for farm landholdings, shop warehousing units, and industrial manufacturing plants bordering Punjab and Haryana. Coordinates interstate estate planning and local revenue name change.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1241,7 +1241,7 @@ export default function HimachalPradeshLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Una Tehsil &amp; Paonta Sahib Sub-Division</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Interstate asset mapping, industrial warehouse succession, and Jamabandi fard mutation.
+                        Interstate asset mapping, industrial warehouse succession, and Jamabandi fard name change.
                       </p>
                     </div>
                   </div>
@@ -1285,7 +1285,7 @@ export default function HimachalPradeshLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Expert <strong>Will drafting services in Kinnaur and Chamba</strong> for high-altitude apple orchards, tribal land succession, and colonial-era cottages in Dalhousie. Handles customary tribal succession nuances and ensures non-violation of statutory land transfer codes.
+                      Expert <strong>Will drafting services in Kinnaur and Chamba</strong> for high-altitude apple orchards, tribal land succession, and colonial-era cottages in Dalhousie. Handles customary tribal succession nuances and ensures non-violation of legal land transfer codes.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1329,7 +1329,7 @@ export default function HimachalPradeshLocationClient({ faqs }: Props) {
                   6. Step-by-Step SOP: Drafting to Registration in HP
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Follow this verified 5-stage legal operating procedure to draft, execute, and register your Will before the Sub-Registrar in Himachal Pradesh:
+                  Follow this verified 5-stage legal operating step to draft, execute, and register your Will before the Sub-Registrar in Himachal Pradesh:
                 </p>
               </div>
 
@@ -1343,7 +1343,7 @@ export default function HimachalPradeshLocationClient({ faqs }: Props) {
                       Estate &amp; Orchard Audit
                     </h3>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Compile complete details of residential houses, HIMUDA flats, HimBhoomi orchard Khasra numbers, and financial assets.
+                      Compile complete details of home houses, HIMUDA flats, HimBhoomi orchard Khasra numbers, and financial assets.
                     </p>
                   </div>
                 </div>
@@ -1357,7 +1357,7 @@ export default function HimachalPradeshLocationClient({ faqs }: Props) {
                       Section 118 Review
                     </h3>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Draft statutory clauses ensuring agricultural land transfers comply with Section 118 and designate legal heirs clearly.
+                      Draft legal clauses making sure farm land transfers comply with Section 118 and designate legal heirs clearly.
                     </p>
                   </div>
                 </div>
@@ -1368,10 +1368,10 @@ export default function HimachalPradeshLocationClient({ faqs }: Props) {
                       3
                     </span>
                     <h3 className="font-bold text-sm text-slate-900">
-                      Valid Execution
+                      Valid Signing
                     </h3>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Print on A4 paper and sign each page in the physical presence of two independent non-beneficiary adult witnesses.
+                      Print on A4 paper and sign each page in the physical presence of two independent non-heir adult witnesses.
                     </p>
                   </div>
                 </div>
@@ -1399,7 +1399,7 @@ export default function HimachalPradeshLocationClient({ faqs }: Props) {
                       SRO Biometrics
                     </h3>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Visit Himachal Tehsil SRO with witnesses for identity verification, photographs, and biometrics to complete Book III entry.
+                      Visit Himachal Tehsil SRO with witnesses for identity check, photographs, and biometrics to complete Book III entry.
                     </p>
                   </div>
                 </div>
@@ -1441,7 +1441,7 @@ export default function HimachalPradeshLocationClient({ faqs }: Props) {
                     <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
                     <div>
                       <strong className="text-slate-900 block">Special Commission Petition</strong>
-                      <span className="text-slate-600">Our legal team drafts and submits the formal Section 31 application before the jurisdictional Himachal Sub-Registrar.</span>
+                      <span className="text-slate-600">Our legal team drafts and submits the formal Section 31 form before the jurisdictional Himachal Sub-Registrar.</span>
                     </div>
                   </div>
 
@@ -1478,7 +1478,7 @@ export default function HimachalPradeshLocationClient({ faqs }: Props) {
                   8. Required Documents for Will Registration in Himachal
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Prepare your documents before attending the Sub-Registrar Office. You have organized <strong>{checkedCount} of {checklist.length}</strong> required documents:
+                  Prepare your documents before attending the SRO office. You have organized <strong>{checkedCount} of {checklist.length}</strong> required documents:
                 </p>
               </div>
 
@@ -1531,7 +1531,7 @@ export default function HimachalPradeshLocationClient({ faqs }: Props) {
                   9. Himachal Asset Succession: Orchards, Land &amp; Homes
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Succession procedures across Himachal Pradesh depend directly on whether the property is agricultural, urban leasehold, or commercial:
+                  Succession steps across Himachal Pradesh depend directly on whether the property is farm, urban leasehold, or shop:
                 </p>
               </div>
 
@@ -1544,7 +1544,7 @@ export default function HimachalPradeshLocationClient({ faqs }: Props) {
                     HimBhoomi Jamabandi &amp; Orchards
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Agricultural land and apple orchards in Rohru, Jubbal, or Kullu require meticulous Khasra citation. Clear testamentary bequests enable prompt Intiqal mutation before the Halqa Patwari while maintaining full Section 118 compliance.
+                    Farm land and apple orchards in Rohru, Jubbal, or Kullu require meticulous Khasra citation. Clear testamentary bequests enable prompt Intiqal name change before the Halqa Patwari while maintaining full Section 118 compliance.
                   </p>
                 </div>
 
@@ -1556,7 +1556,7 @@ export default function HimachalPradeshLocationClient({ faqs }: Props) {
                     Municipal Homes &amp; HIMUDA Plots
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Apartments and plotted properties under HIMUDA or Municipal Corporations in Shimla, Dharamshala, and Solan transfer directly to beneficiaries upon submitting the registered Will, death certificate, and identity records.
+                    Apartments and plotted assets under HIMUDA or Municipal Corporations in Shimla, Dharamshala, and Solan transfer directly to heirs upon submitting the registered Will, death paper, and identity records.
                   </p>
                 </div>
 
@@ -1568,7 +1568,7 @@ export default function HimachalPradeshLocationClient({ faqs }: Props) {
                     Baddi Factories &amp; Manali Resorts
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Industrial manufacturing units in Baddi-Barotiwala and commercial tourism resorts in Manali demand explicit testamentary bequeathal of leasehold rights, operating licenses, partner capital, and movable equipment.
+                    Industrial manufacturing units in Baddi-Barotiwala and shop tourism resorts in Manali demand explicit testamentary bequeathal of leasehold rights, operating licenses, partner capital, and movable equipment.
                   </p>
                 </div>
               </div>
@@ -1588,7 +1588,7 @@ export default function HimachalPradeshLocationClient({ faqs }: Props) {
                   10. SRO Registration Fees &amp; Stamp Duty in Himachal
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Unlike commercial sale deeds or gift transfers that incur high ad valorem stamp duty, testamentary Wills are completely exempt from stamp duty in Himachal Pradesh. Government registration charges are strictly nominal:
+                  Unlike shop sale deeds or gift transfers that incur high ad valorem stamp duty, testamentary Wills are completely exempt from stamp duty in Himachal Pradesh. Government registration charges are strictly nominal:
                 </p>
               </div>
 
@@ -1597,7 +1597,7 @@ export default function HimachalPradeshLocationClient({ faqs }: Props) {
                   <thead>
                     <tr className="bg-slate-100/80 border-b border-slate-200 text-slate-800">
                       <th className="p-4 font-bold">Fee Component</th>
-                      <th className="p-4 font-bold">Statutory Amount</th>
+                      <th className="p-4 font-bold">Legal Amount</th>
                       <th className="p-4 font-bold">Remittance Authority</th>
                     </tr>
                   </thead>
@@ -1656,7 +1656,7 @@ export default function HimachalPradeshLocationClient({ faqs }: Props) {
                       ₹1,990
                     </div>
                     <p className="text-xs text-slate-600">
-                      Ideal for individuals with residential houses, bank accounts, and mutual fund portfolios.
+                      Ideal for people with home houses, bank accounts, and mutual fund portfolios.
                     </p>
                     <ul className="space-y-2.5 text-xs text-slate-700 pt-3 border-t border-slate-100">
                       <li className="flex items-center gap-2">
@@ -1665,11 +1665,11 @@ export default function HimachalPradeshLocationClient({ faqs }: Props) {
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>Legally vetted statutory clauses</span>
+                        <span>Legally vetted legal clauses</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>Instant PDF download &amp; execution guide</span>
+                        <span>Instant PDF download &amp; signing guide</span>
                       </li>
                     </ul>
                   </div>
@@ -1689,16 +1689,16 @@ export default function HimachalPradeshLocationClient({ faqs }: Props) {
                   </div>
                   <div className="space-y-4">
                     <span className="text-xs font-bold uppercase tracking-wider text-[#C65378]">
-                      Comprehensive
+                      Full
                     </span>
                     <h3 className="font-extrabold text-xl text-slate-900">
-                      Advocate Consultation
+                      Lawyer Talk
                     </h3>
                     <div className="text-3xl font-black text-slate-900">
                       ₹4,990
                     </div>
                     <p className="text-xs text-slate-600">
-                      Senior estate advocate review for apple orchards, Section 118 compliance, and multi-heir estates.
+                      Senior estate lawyer review for apple orchards, Section 118 compliance, and multi-heir estates.
                     </p>
                     <ul className="space-y-2.5 text-xs text-slate-700 pt-3 border-t border-slate-100">
                       <li className="flex items-center gap-2">
@@ -1707,7 +1707,7 @@ export default function HimachalPradeshLocationClient({ faqs }: Props) {
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>1-on-1 video call with senior advocate</span>
+                        <span>1-on-1 video call with senior lawyer</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
@@ -1723,7 +1723,7 @@ export default function HimachalPradeshLocationClient({ faqs }: Props) {
                     href="/contact"
                     className="mt-6 w-full py-3 rounded-xl bg-[#C65378] text-white text-xs font-bold text-center hover:bg-[#a13c5d] transition-colors cursor-pointer"
                   >
-                    Book Advocate Call
+                    Book Lawyer Call
                   </Link>
                 </div>
 
@@ -1740,7 +1740,7 @@ export default function HimachalPradeshLocationClient({ faqs }: Props) {
                       ₹9,990
                     </div>
                     <p className="text-xs text-slate-600">
-                      End-to-end registration coordination across any Himachal Pradesh Sub-Registrar Office or home visit.
+                      End-to-end registration coordination across any Himachal Pradesh SRO office or home visit.
                     </p>
                     <ul className="space-y-2.5 text-xs text-slate-700 pt-3 border-t border-slate-100">
                       <li className="flex items-center gap-2">
@@ -1749,7 +1749,7 @@ export default function HimachalPradeshLocationClient({ faqs }: Props) {
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>Advocate physically attends Himachal SRO</span>
+                        <span>Lawyer physically attends Himachal SRO</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
@@ -1830,7 +1830,7 @@ export default function HimachalPradeshLocationClient({ faqs }: Props) {
                   <span>STATUTORY CITATIONS</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  13. Statutory Citations &amp; Himachal Pradesh Land Laws
+                  13. Legal Citations &amp; Himachal Pradesh Land Laws
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Our drafting protocols comply strictly with codified Indian statutes and Himachal Pradesh state land systems:
@@ -1852,7 +1852,7 @@ export default function HimachalPradeshLocationClient({ faqs }: Props) {
                     HP Tenancy &amp; Land Reforms 1972
                   </span>
                   <p className="text-xs text-slate-600">
-                    Section 118 (Restricted transfer of agricultural land to non-agriculturists).
+                    Section 118 (Restricted transfer of farm land to non-agriculturists).
                   </p>
                 </div>
 
@@ -1882,7 +1882,7 @@ export default function HimachalPradeshLocationClient({ faqs }: Props) {
                 Protect Your Family Estate in Himachal Pradesh Today
               </h3>
               <p className="text-sm sm:text-base text-slate-200 max-w-2xl mx-auto leading-relaxed">
-                Do not leave your hard-earned Himachal orchards, homes, or commercial assets to intestate uncertainty. Draft a legally binding Will online today or consult our senior Himachal Pradesh advocates.
+                Do not leave your hard-earned Himachal orchards, homes, or shop assets to without a Will uncertainty. Draft a legally binding Will online today or consult our senior Himachal Pradesh lawyers.
               </p>
               <div className="pt-3 flex flex-col sm:flex-row items-center justify-center gap-4">
                 <a
@@ -1896,7 +1896,7 @@ export default function HimachalPradeshLocationClient({ faqs }: Props) {
                   href="/contact"
                   className="w-full sm:w-auto px-6 py-3.5 rounded-full bg-white/10 text-white font-bold text-sm sm:text-base hover:bg-white/20 transition-all border border-white/20"
                 >
-                  Book Advocate Consultation
+                  Book Lawyer Talk
                 </Link>
               </div>
             </section>

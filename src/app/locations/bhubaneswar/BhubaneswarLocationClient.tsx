@@ -114,26 +114,26 @@ const INITIAL_CHECKLIST = [
   },
   {
     id: "item-2",
-    label: "Original Aadhaar Card & PAN of Testator",
-    detail: "Required for biometric fingerprint authentication and web-camera photography at the Bhubaneswar SRO.",
+    label: "Original Aadhaar Card & PAN of Will maker",
+    detail: "Required for biometric fingerprint check and web-camera photography at the Bhubaneswar SRO.",
     checked: true,
   },
   {
     id: "item-3",
     label: "Two Independent Adult Witnesses with Photo IDs",
-    detail: "Both witnesses must carry original photo IDs and must not be beneficiaries receiving property in the Will.",
+    detail: "Both witnesses must carry original photo IDs and must not be heirs receiving property in the Will.",
     checked: true,
   },
   {
     id: "item-4",
     label: "Doctor's Mental Fitness Certificate (For Seniors)",
-    detail: "Issued by an MBBS doctor. Confirms sound testamentary capacity and protects against incapacity disputes.",
+    detail: "Issued by an MBBS doctor. Confirms sound sound mind and protects against incapacity fights.",
     checked: false,
   },
   {
     id: "item-5",
     label: "IGR Odisha e-Registration Slot Booking Slip",
-    detail: "Online booking confirmation from igrodisha.gov.in displaying your application token and time slot.",
+    detail: "Online booking confirmation from igrodisha.gov.in displaying your form token and time slot.",
     checked: false,
   },
   {
@@ -145,7 +145,7 @@ const INITIAL_CHECKLIST = [
   {
     id: "item-7",
     label: "Two Passport-Sized Photographs Each",
-    detail: "Recent color photographs of the testator and both witnesses for pasting into the official Book III registers.",
+    detail: "Recent color photographs of the Will maker and both witnesses for pasting into the official Book III registers.",
     checked: false,
   },
 ];
@@ -241,8 +241,8 @@ export default function BhubaneswarLocationClient({ faqs }: Props) {
               </h1>
 
               <p className="text-base sm:text-lg text-slate-200 leading-relaxed font-normal max-w-2xl">
-                Protect your family with an advocate-drafted Will tailored for Bhubaneswar properties.
-                Secure your BDA plots, GA Department leasehold flats, freehold ancestral lands, and bank investments under Odisha succession laws.
+                Protect your family with an lawyer-drafted Will tailored for Bhubaneswar assets.
+                Secure your BDA plots, GA Department leasehold flats, freehold family lands, and bank investments under Odisha succession laws.
               </p>
 
               <div className="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
@@ -265,7 +265,7 @@ export default function BhubaneswarLocationClient({ faqs }: Props) {
               <div className="pt-4 grid grid-cols-1 sm:grid-cols-3 gap-3 border-t border-white/15 text-xs text-slate-300">
                 <div className="flex items-center gap-2">
                   <ShieldCheck className="w-4 h-4 text-emerald-400 shrink-0" />
-                  <span>High Court Advocate Vetted</span>
+                  <span>High Court Lawyer Vetted</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
@@ -451,10 +451,10 @@ export default function BhubaneswarLocationClient({ faqs }: Props) {
                   <div className="p-4 rounded-2xl bg-slate-50/70 border border-slate-100 space-y-1.5">
                     <div className="flex items-center gap-2 font-bold text-sm text-slate-900">
                       <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
-                      <span>No Mandatory Probate</span>
+                      <span>No Needed Probate</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Probate is not mandatory in Odisha under Section 213 of the Indian Succession Act. Beneficiaries can mutate BDA, GA Department, and private freehold lands directly before municipal and revenue authorities.
+                      Probate is not needed in Odisha under Section 213 of the Indian Succession Act. Heirs can mutate BDA, GA Department, and private freehold lands directly before municipal and revenue offices.
                     </p>
                   </div>
 
@@ -464,7 +464,7 @@ export default function BhubaneswarLocationClient({ faqs }: Props) {
                       <span>Zero Stamp Duty</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Wills attract zero ad valorem stamp duty across Odisha. At the Sub-Registrar Office, testators pay only a flat nominal registration fee of ₹100 plus standard scanning charges.
+                      Wills attract zero ad valorem stamp duty across Odisha. At the SRO office, testators pay only a flat nominal registration fee of ₹100 plus standard scanning charges.
                     </p>
                   </div>
 
@@ -493,7 +493,7 @@ export default function BhubaneswarLocationClient({ faqs }: Props) {
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Making a Will in Bhubaneswar is governed by the Indian Succession Act, 1925, and the Registration Act, 1908.
-                  Whether you reside in Nayapalli, own a BDA residential plot in Patia, or hold ancestral farmland in Khordha, your testamentary instrument must meet strict statutory rules to remain enforceable.
+                  Whether you reside in Nayapalli, own a BDA home plot in Patia, or hold family farmland in Khordha, your testamentary instrument must meet strict legal rules to remain enforceable.
                 </p>
               </div>
 
@@ -504,7 +504,7 @@ export default function BhubaneswarLocationClient({ faqs }: Props) {
                   </div>
                   <h3 className="font-extrabold text-slate-900 text-base">Testamentary Capacity</h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Under Section 59, any person of sound mind who is not a minor can make a Will. For elderly testators in Bhubaneswar, securing an MBBS doctor fitness certificate prevents testamentary incapacity challenges.
+                    Under Section 59, any person of sound mind who is not a minor can make a Will. For elderly testators in Bhubaneswar, securing an MBBS doctor fitness paper prevents testamentary incapacity fights.
                   </p>
                 </div>
 
@@ -512,9 +512,9 @@ export default function BhubaneswarLocationClient({ faqs }: Props) {
                   <div className="w-10 h-10 rounded-2xl bg-rose-50 text-[#C65378] flex items-center justify-center font-bold text-base">
                     63
                   </div>
-                  <h3 className="font-extrabold text-slate-900 text-base">Valid Execution &amp; Attestation</h3>
+                  <h3 className="font-extrabold text-slate-900 text-base">Valid Signing &amp; Attestation</h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Section 63 mandates that the testator must sign or affix their mark to the Will in the presence of at least two independent adult witnesses. Each witness must sign in the testator&apos;s physical presence.
+                    Section 63 mandates that the Will maker must sign or affix their mark to the Will in the presence of at least two independent adult witnesses. Each witness must sign in the Will maker&apos;s physical presence.
                   </p>
                 </div>
 
@@ -524,7 +524,7 @@ export default function BhubaneswarLocationClient({ faqs }: Props) {
                   </div>
                   <h3 className="font-extrabold text-slate-900 text-base">Witness Disqualification</h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Under Section 67, an attesting witness cannot be a beneficiary under the Will. If a beneficiary or their spouse signs as an attesting witness, the bequest to that person becomes completely void.
+                    Under Section 67, an attesting witness cannot be a heir under the Will. If a heir or their spouse signs as an attesting witness, the bequest to that person becomes completely void.
                   </p>
                 </div>
               </div>
@@ -532,7 +532,7 @@ export default function BhubaneswarLocationClient({ faqs }: Props) {
               <div className="bg-amber-50/70 border border-amber-200/80 rounded-2xl p-4 text-xs text-amber-900 flex items-start gap-3">
                 <AlertTriangle className="w-4 h-4 text-amber-600 shrink-0 mt-0.5" />
                 <p className="leading-relaxed">
-                  <strong>Important Rule for Bhubaneswar Property Owners:</strong> A Will only applies to your self-acquired assets and your defined separate share in ancestral property. You cannot bequeath an undivided coparcenary interest without proper partition under the Hindu Succession Act, 1956.
+                  <strong>Important Rule for Bhubaneswar Property Owners:</strong> A Will only applies to your self-acquired assets and your defined separate share in family property. You cannot bequeath an undivided joint family interest without proper split under the Hindu Succession Act, 1956.
                 </p>
               </div>
             </section>
@@ -545,11 +545,11 @@ export default function BhubaneswarLocationClient({ faqs }: Props) {
                   <span>REGISTRATION PERSPECTIVE</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  2. Is Will Registration Compulsory in Bhubaneswar?
+                  2. Is Will Registration Needed in Bhubaneswar?
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Under Section 18(e) of the Registration Act, 1908, registering a Will is optional throughout Odisha. An unregistered Will drafted on standard paper is legally binding if signed before two witnesses.
-                  However, registering your Will at the local Sub-Registrar Office provides undeniable evidentiary advantages.
+                  However, registering your Will at the local SRO office provides undeniable proof advantages.
                 </p>
               </div>
 
@@ -566,30 +566,30 @@ export default function BhubaneswarLocationClient({ faqs }: Props) {
                     </thead>
                     <tbody className="divide-y divide-slate-100 text-slate-700">
                       <tr>
-                        <td className="p-4 sm:p-5 font-bold text-slate-900">Statutory Presumption</td>
+                        <td className="p-4 sm:p-5 font-bold text-slate-900">Legal Presumption</td>
                         <td className="p-4 sm:p-5 bg-emerald-50/20 text-emerald-900 font-semibold">
-                          Strong presumption of genuine execution under Sections 58 &amp; 60 of the Registration Act.
+                          Strong presumption of genuine signing under Sections 58 &amp; 60 of the Registration Act.
                         </td>
                         <td className="p-4 sm:p-5 text-slate-600">
-                          Carries no statutory presumption; propounder must prove authenticity if contested.
+                          Carries no legal presumption; propounder must prove authenticity if contested.
                         </td>
                       </tr>
                       <tr>
                         <td className="p-4 sm:p-5 font-bold text-slate-900">Government Archival</td>
                         <td className="p-4 sm:p-5 bg-emerald-50/20 text-emerald-900 font-semibold">
-                          Stored permanently in government Book III registers at the Bhubaneswar Sub-Registrar Office.
+                          Stored permanently in government Book III registers at the Bhubaneswar SRO office.
                         </td>
                         <td className="p-4 sm:p-5 text-slate-600">
                           Risk of physical loss, theft, mutilation, or suppression by dissatisfied relatives.
                         </td>
                       </tr>
                       <tr>
-                        <td className="p-4 sm:p-5 font-bold text-slate-900">BDA &amp; GA Mutation</td>
+                        <td className="p-4 sm:p-5 font-bold text-slate-900">BDA &amp; GA Name Change</td>
                         <td className="p-4 sm:p-5 bg-emerald-50/20 text-emerald-900 font-semibold">
                           Smoothly processed by BDA and GA Department after standard 30-day public notice.
                         </td>
                         <td className="p-4 sm:p-5 text-slate-600">
-                          Frequent objections by legal heirs; authorities may demand court succession orders.
+                          Frequent objections by legal heirs; offices may demand court succession orders.
                         </td>
                       </tr>
                       <tr>
@@ -628,21 +628,21 @@ export default function BhubaneswarLocationClient({ faqs }: Props) {
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Many Bhubaneswar property owners mistakenly believe that every Will must undergo probate in court before property can be transferred.
-                  Understanding the legal distinction between presidency and non-presidency jurisdictions saves significant time and legal expenses.
+                  Understanding the legal distinction between presidency and non-presidency areas saves significant time and legal expenses.
                 </p>
               </div>
 
               <div className="bg-white rounded-3xl border border-slate-200/90 p-6 md:p-8 shadow-xs space-y-6">
                 <div className="space-y-3">
                   <h3 className="text-lg font-extrabold text-slate-900">
-                    Why Probate is Not Mandatory in Bhubaneswar
+                    Why Probate is Not Needed in Bhubaneswar
                   </h3>
                   <p className="text-sm text-slate-700 leading-relaxed">
-                    Under Section 213 read with Section 57(a) and 57(b) of the Indian Succession Act, 1925, probate is mandatory only for Wills executed by Hindus, Buddhists, Sikhs, or Jains within the historical Presidency towns of Bombay, Calcutta, and Madras, or where immovable property falls within those municipal boundaries.
+                    Under Section 213 read with Section 57(a) and 57(b) of the Indian Succession Act, 1925, probate is needed only for Wills signed by Hindus, Buddhists, Sikhs, or Jains within the historical Presidency towns of Bombay, Calcutta, and Madras, or where land and flats falls within those municipal boundaries.
                   </p>
                   <p className="text-sm text-slate-700 leading-relaxed">
-                    The Orissa High Court has affirmed in multiple landmark rulings that probate is optional for properties situated in Bhubaneswar, Cuttack, and throughout Odisha.
-                    Beneficiaries can initiate property mutation before the Tahsildar, BDA, or BMC immediately upon presenting the registered Will and death certificate.
+                    The Orissa High Court has affirmed in multiple landmark rulings that probate is optional for assets situated in Bhubaneswar, Cuttack, and throughout Odisha.
+                    Heirs can initiate property name change before the Tahsildar, BDA, or BMC right away upon presenting the registered Will and death paper.
                   </p>
                 </div>
 
@@ -654,13 +654,13 @@ export default function BhubaneswarLocationClient({ faqs }: Props) {
                     <div className="flex items-start gap-2.5 p-3 rounded-xl bg-slate-50 border border-slate-100">
                       <Check className="w-4 h-4 text-[#C65378] shrink-0 mt-0.5" />
                       <span>
-                        <strong>Disputed Wills:</strong> When legal heirs challenge the authenticity of the Will or claim unequal distribution.
+                        <strong>Disputed Wills:</strong> When legal heirs challenge the authenticity of the Will or claim unequal split.
                       </span>
                     </div>
                     <div className="flex items-start gap-2.5 p-3 rounded-xl bg-slate-50 border border-slate-100">
                       <Check className="w-4 h-4 text-[#C65378] shrink-0 mt-0.5" />
                       <span>
-                        <strong>Multi-City Estate:</strong> When the testator owned additional real estate in Mumbai, Kolkata, or Chennai requiring mandatory probate.
+                        <strong>Multi-City Estate:</strong> When the Will maker owned additional real estate in Mumbai, Kolkata, or Chennai requiring needed probate.
                       </span>
                     </div>
                     <div className="flex items-start gap-2.5 p-3 rounded-xl bg-slate-50 border border-slate-100">
@@ -692,7 +692,7 @@ export default function BhubaneswarLocationClient({ faqs }: Props) {
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Will registration across Bhubaneswar is administered by the Directorate of Registration, Revenue and Disaster Management Department, Government of Odisha.
-                  Under Section 32 of the Registration Act, you can register your Will before the Sub-Registrar where you reside or where your immovable properties are situated.
+                  Under Section 32 of the Registration Act, you can register your Will before the Sub-Registrar where you reside or where your land and flats are situated.
                 </p>
               </div>
 
@@ -784,7 +784,7 @@ export default function BhubaneswarLocationClient({ faqs }: Props) {
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Bhubaneswar features distinct property markets ranging from government-planned GA leasehold sectors and BDA plotted developments to high-rise IT corridor apartments.
-                  Our senior Odisha estate advocates provide customized legal drafting, IGR Odisha e-Registration appointment scheduling, and Sub-Registrar accompaniment across all key micro-markets:
+                  Our senior Odisha estate lawyers provide customized legal drafting, IGR Odisha e-Registration appointment scheduling, and Sub-Registrar accompaniment across all key micro-markets:
                 </p>
               </div>
 
@@ -815,7 +815,7 @@ export default function BhubaneswarLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Specialized <strong>Will drafting services in Patia</strong> and Infocity for tech professionals, NRI families, and high-rise apartment owners in projects like DLF Cybercity, Tata Ariyana, and Falcon Crest. Seamlessly codifies multi-story apartment shares, equity portfolios, overseas NRE accounts, and digital assets with clear dispute-free succession.
+                      Specialized <strong>Will drafting services in Patia</strong> and Infocity for tech professionals, NRI families, and high-rise apartment owners in projects like DLF Cybercity, Tata Ariyana, and Falcon Crest. Seamlessly codifies multi-story apartment shares, equity portfolios, overseas NRE accounts, and digital assets with clear fight-free succession.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -824,7 +824,7 @@ export default function BhubaneswarLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Chandaka / Patia (Near Infocity Square)</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Online e-Registration booking on igrodisha.gov.in, advocate biometric assistance, and Section 31 doorstep execution for elderly testators.
+                        Online e-Registration booking on igrodisha.gov.in, lawyer biometric help, and Section 31 doorstep signing for elderly testators.
                       </p>
                     </div>
                   </div>
@@ -869,7 +869,7 @@ export default function BhubaneswarLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Customized <strong>Will drafting services in Nayapalli</strong> and Jayadev Vihar for premium BDA plotted bungalows, independent floors, and commercial complexes. Incorporates floor-wise property partition clauses, doctor mental capacity certificates for seniors, and life-interest provisions ensuring surviving spouses retain uninterrupted residential rights.
+                      Customized <strong>Will drafting services in Nayapalli</strong> and Jayadev Vihar for premium BDA plotted bungalows, independent floors, and shop complexes. Incorporates floor-wise property split clauses, doctor mental capacity papers for seniors, and life-interest rules making sure surviving spouses retain uninterrupted home rights.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -878,13 +878,13 @@ export default function BhubaneswarLocationClient({ faqs }: Props) {
                         <span>SRO Hub: DSR Unit-2 &amp; SRO Khandagiri</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        BDA mutation compliance, expedited Book III registration, and private advocate verification for high-net-worth family estates.
+                        BDA name change compliance, expedited Book III registration, and private lawyer check for high-net-worth family estates.
                       </p>
                     </div>
                   </div>
 
                   <div className="pt-4 mt-4 border-t border-slate-100 flex items-center justify-between">
-                    <span className="text-xs font-bold text-slate-500">BDA Plots &amp; Commercial</span>
+                    <span className="text-xs font-bold text-slate-500">BDA Plots &amp; Shop</span>
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
@@ -923,7 +923,7 @@ export default function BhubaneswarLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Expert <strong>Will drafting services in Saheed Nagar</strong> and central capital zones for legacy General Administration (GA) Department 90-year leasehold plots, commercial showrooms, and multi-generational business firms. Details GA lease renewal rights, conversion to freehold status under Odisha land policies, and partnership asset transmission to avert probate delays.
+                      Expert <strong>Will drafting services in Saheed Nagar</strong> and central capital zones for legacy General Administration (GA) Department 90-year leasehold plots, shop showrooms, and multi-generational business firms. Details GA lease renewal rights, conversion to freehold status under Odisha land policies, and partnership asset transfer to avert probate delays.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -932,13 +932,13 @@ export default function BhubaneswarLocationClient({ faqs }: Props) {
                         <span>SRO Hub: District Sub-Registrar Unit-2 (Ashok Nagar)</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Specialized GA leasehold transfer documentation, treasury e-Challan handling, and legal heir succession mapping.
+                        Specialized GA leasehold transfer papers, treasury e-Challan handling, and legal heir succession mapping.
                       </p>
                     </div>
                   </div>
 
                   <div className="pt-4 mt-4 border-t border-slate-100 flex items-center justify-between">
-                    <span className="text-xs font-bold text-slate-500">GA Leasehold &amp; Commercial</span>
+                    <span className="text-xs font-bold text-slate-500">GA Leasehold &amp; Shop</span>
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
@@ -957,7 +957,7 @@ export default function BhubaneswarLocationClient({ faqs }: Props) {
                     <div className="flex items-center justify-between gap-2">
                       <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-rose-50 text-[#C65378] border border-rose-100">
                         <MapPin className="w-3.5 h-3.5" />
-                        South-West Residential Belt
+                        South-West Home Belt
                       </span>
                       <span className="text-[11px] font-semibold text-slate-500 bg-slate-100 px-2.5 py-1 rounded-lg">
                         SRO Bhubaneswar-II (Khandagiri)
@@ -977,7 +977,7 @@ export default function BhubaneswarLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Tailored <strong>Will drafting services in Khandagiri</strong> and Pokhariput for retired civil servants, defense veterans, and healthcare professionals in Pokhariput, Jagamara, and Khandagiri duplex colonies. Enforces clean partition among non-resident adult children, bank locker bequests, and medical fitness verification under Section 59 of the Indian Succession Act.
+                      Tailored <strong>Will drafting services in Khandagiri</strong> and Pokhariput for retired civil servants, defense veterans, and healthcare professionals in Pokhariput, Jagamara, and Khandagiri duplex colonies. Enforces clean split among non-resident adult children, bank locker bequests, and medical fitness check under Section 59 of the Indian Succession Act.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1011,7 +1011,7 @@ export default function BhubaneswarLocationClient({ faqs }: Props) {
                     <div className="flex items-center justify-between gap-2">
                       <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-rose-50 text-[#C65378] border border-rose-100">
                         <MapPin className="w-3.5 h-3.5" />
-                        Historic Core &amp; Ancestral Holdings
+                        Historic Core &amp; Family Holdings
                       </span>
                       <span className="text-[11px] font-semibold text-slate-500 bg-slate-100 px-2.5 py-1 rounded-lg">
                         DSR Bhubaneswar (Ashok Nagar)
@@ -1031,7 +1031,7 @@ export default function BhubaneswarLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Specialized <strong>Will drafting services in Old Town</strong> and Forest Park for historic family residences, ancestral properties, and trust-endowed holdings in Old Town and Forest Park. Strictly segregates personal self-acquired assets from coparcenary Hindu joint family estates, preventing long-drawn title objections before civil courts and revenue Tahsils.
+                      Specialized <strong>Will drafting services in Old Town</strong> and Forest Park for historic family residences, family assets, and trust-endowed holdings in Old Town and Forest Park. Strictly segregates personal self-acquired assets from joint family Hindu joint family estates, preventing long-drawn title objections before civil courts and revenue Tahsils.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1040,13 +1040,13 @@ export default function BhubaneswarLocationClient({ faqs }: Props) {
                         <span>SRO Hub: DSR Unit-2 (Capital Hospital Road)</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Ancestral land title vetting, Bhulekh Odisha RoR verification, and conclusive Book III registration under Section 60.
+                        Family land title vetting, Bhulekh Odisha RoR check, and strong Book III registration under Section 60.
                       </p>
                     </div>
                   </div>
 
                   <div className="pt-4 mt-4 border-t border-slate-100 flex items-center justify-between">
-                    <span className="text-xs font-bold text-slate-500">Ancestral &amp; Freehold Estates</span>
+                    <span className="text-xs font-bold text-slate-500">Family &amp; Freehold Estates</span>
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
@@ -1085,7 +1085,7 @@ export default function BhubaneswarLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Comprehensive <strong>Will drafting services in Pahala</strong> and Hanspal for newly developed residential townships, gated villa colonies, and commercial godowns along the Bhubaneswar-Cuttack NH-16 corridor. Coordinates smooth Bhulekh Odisha e-Mutation, BMC municipal holding updates, and clear bequests of agricultural or converted homestead plots.
+                      Full <strong>Will drafting services in Pahala</strong> and Hanspal for newly developed home townships, gated villa colonies, and shop godowns along the Bhubaneswar-Cuttack NH-16 corridor. Coordinates smooth Bhulekh Odisha e-Name Change, BMC municipal holding updates, and clear bequests of farm or converted homestead plots.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1094,7 +1094,7 @@ export default function BhubaneswarLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Balianta Block Office (NH-16 Bypass)</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        e-Token registration, Tahsil land record matching, and advocate accompaniment for hassle-free execution.
+                        e-Token registration, Tahsil land record matching, and lawyer accompaniment for hassle-free signing.
                       </p>
                     </div>
                   </div>
@@ -1127,7 +1127,7 @@ export default function BhubaneswarLocationClient({ faqs }: Props) {
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Registering your Will in Bhubaneswar follows a streamlined protocol under the Directorate of Registration, Government of Odisha.
-                  Follow these five statutory steps to ensure your Will is registered flawlessly.
+                  Follow these five legal steps to make sure your Will is registered flawlessly.
                 </p>
               </div>
 
@@ -1156,11 +1156,11 @@ export default function BhubaneswarLocationClient({ faqs }: Props) {
                   </div>
                   <div className="space-y-2 flex-1">
                     <h3 className="text-base sm:text-lg font-extrabold text-slate-900">
-                      Step 2: Draft Will with High Court Advocate Vetting
+                      Step 2: Draft Will with High Court Lawyer Vetting
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Draft your Will incorporating statutory revocation of past testaments, specific bequests, survivorship clauses, and residuary clauses.
-                      Our senior Odisha advocates ensure the draft is completely unambiguous to prevent future misinterpretations.
+                      Draft your Will incorporating legal revocation of past testaments, specific bequests, survivorship clauses, and residuary clauses.
+                      Our senior Odisha lawyers make sure the draft is completely clear to prevent future misinterpretations.
                     </p>
                   </div>
                 </div>
@@ -1176,8 +1176,8 @@ export default function BhubaneswarLocationClient({ faqs }: Props) {
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                       Print the final document on clean white A4 sheets.
-                      The testator signs or places their thumb impression on each page in the simultaneous presence of two independent adult witnesses who are not beneficiaries.
-                      For senior testators, obtain a doctor&apos;s fitness certificate on the execution date.
+                      The Will maker signs or places their thumb impression on each page in the simultaneous presence of two independent adult witnesses who are not heirs.
+                      For senior testators, get a doctor&apos;s fitness paper on the signing date.
                     </p>
                   </div>
                 </div>
@@ -1193,7 +1193,7 @@ export default function BhubaneswarLocationClient({ faqs }: Props) {
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                       Access the IGR Odisha portal (igrodisha.gov.in).
-                      Navigate to the e-Registration module, input testator and witness identification details, upload deed drafts, and schedule an e-Token appointment slot.
+                      Navigate to the e-Registration module, input Will maker and witness ID details, upload deed drafts, and schedule an e-Token appointment slot.
                       Pay the nominal ₹100 registration fee via the Odisha Treasury e-Challan gateway.
                     </p>
                   </div>
@@ -1206,10 +1206,10 @@ export default function BhubaneswarLocationClient({ faqs }: Props) {
                   </div>
                   <div className="space-y-2 flex-1">
                     <h3 className="text-base sm:text-lg font-extrabold text-slate-900">
-                      Step 5: Attend SRO for Biometric Verification
+                      Step 5: Attend SRO for Biometric Check
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Visit the Sub-Registrar Office with both witnesses carrying original Aadhaar cards and PAN cards.
+                      Visit the SRO office with both witnesses carrying original Aadhaar cards and PAN cards.
                       The registering officer verifies identities, captures digital photographs and biometric thumb impressions, and issues the official Book III registration endorsement.
                     </p>
                   </div>
@@ -1228,7 +1228,7 @@ export default function BhubaneswarLocationClient({ faqs }: Props) {
                   7. Doorstep Will Registration for Senior Citizens
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  For elderly citizens, bedridden individuals, or hospital patients in Bhubaneswar, visiting a crowded government office can be stressful or physically impossible.
+                  For elderly citizens, bedridden people, or hospital patients in Bhubaneswar, visiting a crowded government office can be stressful or physically impossible.
                   The Registration Act provides an official legal remedy.
                 </p>
               </div>
@@ -1239,35 +1239,35 @@ export default function BhubaneswarLocationClient({ faqs }: Props) {
                     Section 31 Commission Visit by Sub-Registrar
                   </h3>
                   <p className="text-sm text-slate-700 leading-relaxed">
-                    Under Section 31 of the Registration Act, 1908, the Sub-Registrar is legally empowered to attend the private residence, nursing home, or hospital of a testator to complete document registration.
-                    This statutory accommodation ensures full legal validity without requiring the testator to travel.
+                    Under Section 31 of the Registration Act, 1908, the Sub-Registrar is legally empowered to attend the private residence, nursing home, or hospital of a Will maker to complete document registration.
+                    This legal accommodation ensures full legal validity without requiring the Will maker to travel.
                   </p>
                 </div>
 
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-2">
                   <div className="p-4 rounded-2xl bg-slate-50 border border-slate-100 space-y-2">
                     <span className="text-xs font-black uppercase text-[#C65378] tracking-wider block">
-                      Requirement 1
+                      Rule 1
                     </span>
                     <h4 className="font-bold text-sm text-slate-900">Medical Certificate</h4>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      A registered MBBS practitioner must certify that the testator is physically unable to travel to the Sub-Registrar Office while possessing full mental clarity.
+                      A registered MBBS practitioner must certify that the Will maker is physically unable to travel to the SRO office while possessing full mental clarity.
                     </p>
                   </div>
 
                   <div className="p-4 rounded-2xl bg-slate-50 border border-slate-100 space-y-2">
                     <span className="text-xs font-black uppercase text-[#C65378] tracking-wider block">
-                      Requirement 2
+                      Rule 2
                     </span>
                     <h4 className="font-bold text-sm text-slate-900">Formal Requisition</h4>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Submit a written application to the jurisdictional Bhubaneswar Sub-Registrar specifying the residential address and requesting a commission visit.
+                      Submit a written form to the jurisdictional Bhubaneswar Sub-Registrar specifying the home address and requesting a commission visit.
                     </p>
                   </div>
 
                   <div className="p-4 rounded-2xl bg-slate-50 border border-slate-100 space-y-2">
                     <span className="text-xs font-black uppercase text-[#C65378] tracking-wider block">
-                      Requirement 3
+                      Rule 3
                     </span>
                     <h4 className="font-bold text-sm text-slate-900">Commission Fee</h4>
                     <p className="text-xs text-slate-600 leading-relaxed">
@@ -1278,7 +1278,7 @@ export default function BhubaneswarLocationClient({ faqs }: Props) {
 
                 <p className="text-xs text-slate-600 leading-relaxed bg-slate-50 p-4 rounded-2xl border border-slate-200/70">
                   During the doorstep visit, the Sub-Registrar brings portable biometric fingerprint scanners and digital cameras.
-                  Both attesting witnesses must be physically present at the residence with their original photo identity cards to complete the registration.
+                  Both witnesses must be physically present at the residence with their original photo identity cards to complete the registration.
                 </p>
               </div>
             </section>
@@ -1294,7 +1294,7 @@ export default function BhubaneswarLocationClient({ faqs }: Props) {
                   8. Documents Checklist for Will Registration
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Keep these necessary documents organized before scheduling your appointment at the Bhubaneswar Sub-Registrar Office.
+                  Keep these necessary documents organized before scheduling your appointment at the Bhubaneswar SRO office.
                   Use this interactive checklist to verify your preparation.
                 </p>
               </div>
@@ -1382,7 +1382,7 @@ export default function BhubaneswarLocationClient({ faqs }: Props) {
                     General Administration (GA) Plots
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Most residential lands in Units 1 to 9, Saheed Nagar, and Surya Nagar were originally allotted on 90-year or 99-year leases by the GA Department, Government of Odisha.
+                    Most home lands in Units 1 to 9, Saheed Nagar, and Surya Nagar were originally allotted on 90-year or 99-year leases by the GA Department, Government of Odisha.
                     A Will must explicitly reference the original lease deed, lease renewal entitlements, and conversion rights to freehold status under the state&apos;s freehold conversion policy.
                   </p>
                 </div>
@@ -1396,7 +1396,7 @@ export default function BhubaneswarLocationClient({ faqs }: Props) {
                     Bhubaneswar Development Authority Sites
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    BDA plotted developments in Chandrasekharpur, Pokhariput, Kalinga Nagar, and Jayadev Vihar require succession mutation before BDA.
+                    BDA plotted developments in Chandrasekharpur, Pokhariput, Kalinga Nagar, and Jayadev Vihar require succession name change before BDA.
                     A registered Will with accurate allotment letter numbers and NOC prerequisites allows seamless transfer of leasehold or freehold title without civil court suits.
                   </p>
                 </div>
@@ -1410,22 +1410,22 @@ export default function BhubaneswarLocationClient({ faqs }: Props) {
                     Bhulekh Odisha Record of Rights (RoR)
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Freehold lands across Balianta, Pahala, Jatni, and Khordha require mutation in the state Bhulekh portal.
-                    Clearly itemizing the Khata number, Plot number, Mouza, and Tahsil details ensures the Tahsildar completes e-Mutation under the Odisha Land Reforms Act without title objections.
+                    Freehold lands across Balianta, Pahala, Jatni, and Khordha require name change in the state Bhulekh portal.
+                    Clearly itemizing the Khata number, Plot number, Mouza, and Tahsil details ensures the Tahsildar completes e-Name Change under the Odisha Land Reforms Act without title objections.
                   </p>
                 </div>
 
                 <div className="bg-white rounded-3xl border border-slate-200/90 p-5 sm:p-6 shadow-xs space-y-3">
                   <div className="inline-flex items-center gap-2 text-xs font-bold text-[#C65378] bg-rose-50 px-2.5 py-1 rounded-lg">
                     <FileText className="w-3.5 h-3.5" />
-                    <span>BMC Municipal Properties</span>
+                    <span>BMC Municipal Assets</span>
                   </div>
                   <h3 className="font-extrabold text-base text-slate-900">
                     BMC Holding Tax &amp; Apartment Shares
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    For high-rise apartments and commercial establishments in Patia and Nayapalli, the Bhubaneswar Municipal Corporation (BMC) assesses property holding tax.
-                    The Will should instruct the executor to mutate the municipal holding assessment and update apartment society membership records immediately upon demise.
+                    For high-rise apartments and shop establishments in Patia and Nayapalli, the Bhubaneswar Municipal Corporation (BMC) assesses property holding tax.
+                    The Will should instruct the executor to mutate the municipal holding assessment and update apartment society membership records right away upon demise.
                   </p>
                 </div>
               </div>
@@ -1478,8 +1478,8 @@ export default function BhubaneswarLocationClient({ faqs }: Props) {
                     Comparison: Will vs Gift Deed for Bhubaneswar Property
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Executing a Gift Deed in Odisha requires paying 5% stamp duty plus a 2% registration fee based on the prevailing benchmark valuation of the property.
-                    For a property valued at ₹1 crore in Patia or Nayapalli, a Gift Deed costs approximately ₹7,00,000 in government charges alone.
+                    Signing a Gift Deed in Odisha requires paying 5% stamp duty plus a 2% registration fee based on the prevailing benchmark price check of the property.
+                    For a property valued at ₹1 crore in Patia or Nayapalli, a Gift Deed costs about ₹7,00,000 in government charges alone.
                     In contrast, transferring the exact same property through a registered Will costs merely ₹200 to ₹300 in official government fees.
                   </p>
                 </div>
@@ -1511,7 +1511,7 @@ export default function BhubaneswarLocationClient({ faqs }: Props) {
                     <h3 className="text-xl font-extrabold text-slate-900">Online Will Drafting</h3>
                     <div className="text-3xl font-extrabold text-slate-900">₹1,990</div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Ideal for individuals with straightforward estates seeking a legally valid, lawyer-verified Will format.
+                      Ideal for people with straightforward estates seeking a legally valid, lawyer-verified Will format.
                     </p>
                     <ul className="space-y-2 pt-2 text-xs text-slate-700">
                       <li className="flex items-center gap-2">
@@ -1524,11 +1524,11 @@ export default function BhubaneswarLocationClient({ faqs }: Props) {
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>Lawyer verification within 24 hours</span>
+                        <span>Lawyer check within 24 hours</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>Ready-to-print execution copy</span>
+                        <span>Ready-to-print signing copy</span>
                       </li>
                     </ul>
                   </div>
@@ -1550,10 +1550,10 @@ export default function BhubaneswarLocationClient({ faqs }: Props) {
                     <span className="text-xs font-black uppercase text-[#C65378] tracking-wider block">
                       EXPERT CONSULT
                     </span>
-                    <h3 className="text-xl font-extrabold text-slate-900">Advocate Consultation</h3>
+                    <h3 className="text-xl font-extrabold text-slate-900">Lawyer Talk</h3>
                     <div className="text-3xl font-extrabold text-[#C65378]">₹4,990</div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Tailored for families with BDA plots, GA leases, commercial properties, or multi-heir distribution needs.
+                      Tailored for families with BDA plots, GA leases, shop assets, or multi-heir split needs.
                     </p>
                     <ul className="space-y-2 pt-2 text-xs text-slate-700">
                       <li className="flex items-center gap-2">
@@ -1562,7 +1562,7 @@ export default function BhubaneswarLocationClient({ faqs }: Props) {
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>1-on-1 Senior Odisha Advocate video call</span>
+                        <span>1-on-1 Senior Odisha Lawyer video call</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
@@ -1570,11 +1570,11 @@ export default function BhubaneswarLocationClient({ faqs }: Props) {
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>Dispute-prevention &amp; life-interest clauses</span>
+                        <span>Fight-prevention &amp; life-interest clauses</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>Doctor fitness certificate format</span>
+                        <span>Doctor fitness paper format</span>
                       </li>
                     </ul>
                   </div>
@@ -1582,7 +1582,7 @@ export default function BhubaneswarLocationClient({ faqs }: Props) {
                     href="/contact"
                     className="w-full py-3 rounded-full bg-[#C65378] text-white font-bold text-xs sm:text-sm hover:bg-[#a13c5d] transition-all text-center cursor-pointer shadow-md shadow-[#C65378]/25"
                   >
-                    Book Advocate Call
+                    Book Lawyer Call
                   </Link>
                 </div>
 
@@ -1595,12 +1595,12 @@ export default function BhubaneswarLocationClient({ faqs }: Props) {
                     <h3 className="text-xl font-extrabold text-slate-900">SRO Registration Concierge</h3>
                     <div className="text-3xl font-extrabold text-slate-900">₹9,990</div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Complete end-to-end guidance including advocate drafting, IGR Odisha slot booking, and SRO assistance.
+                      Complete end-to-end guidance including lawyer drafting, IGR Odisha slot booking, and SRO help.
                     </p>
                     <ul className="space-y-2 pt-2 text-xs text-slate-700">
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>Everything in Advocate Consultation</span>
+                        <span>Everything in Lawyer Talk</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
@@ -1608,11 +1608,11 @@ export default function BhubaneswarLocationClient({ faqs }: Props) {
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>Local advocate accompaniment at SRO</span>
+                        <span>Local lawyer accompaniment at SRO</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>Section 31 doorstep visit assistance</span>
+                        <span>Section 31 doorstep visit help</span>
                       </li>
                     </ul>
                   </div>
@@ -1679,7 +1679,7 @@ export default function BhubaneswarLocationClient({ faqs }: Props) {
                   <span>LEGAL PROVISIONS &amp; PORTAL</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  13. Statutory References &amp; Odisha IGR Portal
+                  13. Legal References &amp; Odisha IGR Portal
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   All Will drafting and registration protocols in Bhubaneswar operate under established Indian statutes and Odisha state departmental guidelines.
@@ -1692,7 +1692,7 @@ export default function BhubaneswarLocationClient({ faqs }: Props) {
                     Indian Succession Act 1925
                   </span>
                   <p className="text-xs text-slate-600">
-                    Sections 59, 63, 67, and Section 213 read with Section 57 (Probate Jurisdiction).
+                    Sections 59, 63, 67, and Section 213 read with Section 57 (Probate Area).
                   </p>
                 </div>
 
@@ -1728,11 +1728,11 @@ export default function BhubaneswarLocationClient({ faqs }: Props) {
             {/* BOTTOM CONVERSION CTA BANNER */}
             <section className="rounded-3xl bg-gradient-to-br from-[#172228] to-[#212F35] text-white p-8 sm:p-12 text-center space-y-5 shadow-xl">
               <h3 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-white">
-                Protect Your Bhubaneswar Properties &amp; Family Today
+                Protect Your Bhubaneswar Assets &amp; Family Today
               </h3>
               <p className="text-sm sm:text-base text-slate-200 max-w-2xl mx-auto leading-relaxed">
                 Ensure your BDA plots, GA Department leasehold flats, and financial investments transition seamlessly to your loved ones.
-                Draft a legally sound Will online or consult our experienced Odisha estate planning advocates today.
+                Draft a legally sound Will online or consult our experienced Odisha estate planning lawyers today.
               </p>
               <div className="pt-3 flex flex-col sm:flex-row items-center justify-center gap-4">
                 <Link
@@ -1746,7 +1746,7 @@ export default function BhubaneswarLocationClient({ faqs }: Props) {
                   href="/contact"
                   className="w-full sm:w-auto px-6 py-3.5 rounded-full bg-white/10 text-white font-bold text-sm sm:text-base hover:bg-white/20 transition-all border border-white/20"
                 >
-                  Book Lawyer Consultation
+                  Book Lawyer Talk
                 </Link>
               </div>
             </section>

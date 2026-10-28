@@ -77,43 +77,43 @@ export const metadata: Metadata = {
 const TIRUCHIRAPPALLI_FAQS = [
   {
     q: "Is Will registration mandatory in Tiruchirappalli?",
-    a: "No. Under Section 18(e) of the Registration Act, 1908, registering a Will is optional in Tiruchirappalli. A Will executed on plain white paper and signed in the presence of two independent witnesses is legally valid. However, registering your Will via the TNREGINET portal and placing it in official Book III custody at a Tiruchirappalli Sub-Registrar Office provides undeniable authenticity, preventing fraudulent claims and expediting City Corporation and Patta mutations.",
+    a: "No. Under Section 18(e) of the Registration Act, 1908, filing a Will is optional in Trichy. A Will on plain white paper signed in front of two witnesses is valid. Still, filing it on TNREGINET and keeping it in Book III at a Trichy SRO gives strong proof. It stops fake claims and speeds up City tax and Patta updates.",
   },
   {
     q: "Is probate required for a Will in Tiruchirappalli under Madras High Court rules?",
-    a: "No. Under Section 213 read with Section 57 of the Indian Succession Act, 1925, probate is compulsory only within the historical presidency towns of Chennai, Mumbai, and Kolkata. Tiruchirappalli is a non-presidency mofussil district falling under the territorial jurisdiction of the Madras High Court (Madurai Bench). Probate is strictly optional for Hindu, Sikh, Jain, and Buddhist Wills in Trichy, allowing immediate property transmission.",
+    a: "No. Under Section 213 and Section 57 of the Indian Succession Act, 1925, probate is needed only in Chennai, Mumbai, and Kolkata. Trichy is outside those old zones and falls under the Madurai Bench of the Madras High Court. Probate is optional for Hindu, Sikh, Jain, and Buddhist Wills in Trichy.",
   },
   {
     q: "What is the official government fee to register a Will in Tiruchirappalli?",
-    a: "Wills are 100% exempt from stamp duty across Tamil Nadu under the Indian Stamp Act as applicable to the state. At Tiruchirappalli Sub-Registrar offices, testators only pay a flat statutory registration fee of ₹100 along with nominal government computer scanning charges of approximately ₹100. There are no percentage-based property market value charges.",
+    a: "Wills have zero stamp duty across Tamil Nadu. At Trichy SRO offices, you pay a flat ₹100 filing fee plus about ₹100 for page scans. There is no tax based on your land or house value.",
   },
   {
     q: "How is Patta transferred after death using a registered Will in Tiruchirappalli?",
-    a: "For revenue plots and delta agricultural holdings, the beneficiary applies through the Tamil Nadu Government's Tamil Nilam portal (eservices.tn.gov.in). By submitting the registered Will, testator death certificate, legal heir certificate, and Encumbrance Certificate (EC), the jurisdictional Tahsildar approves the transfer and issues an updated Patta and Chitta extract.",
+    a: "For plots and delta farm land, the heir applies on the Tamil Nilam portal (eservices.tn.gov.in). You upload the registered Will, death certificate, heir certificate, and EC. The local Tahsildar checks the files and issues a new Patta and Chitta in the heir's name.",
   },
   {
     q: "How do I book an online appointment on TNREGINET for Will registration in Trichy?",
-    a: "Appointments are scheduled online on the TNREGINET portal (tnreginet.gov.in). You log in, select the relevant Sub-Registrar Office (such as SRO Court Compound, SRO Thillai Nagar, or SRO Srirangam), enter testator and witness KYC details, generate the appointment token, and visit the office with original documents during the designated time slot.",
+    a: "You book a slot on the TNREGINET site (tnreginet.gov.in). Log in, pick your SRO (like Court Compound, Thillai Nagar, or Srirangam), enter ID details, print the token slip, and visit the office at your booked time.",
   },
   {
     q: "Can senior citizens in Srirangam or Thillai Nagar register a Will from home under Section 31?",
-    a: "Yes. Under Section 31 of the Registration Act, 1908, senior citizens, bedridden persons, or testators with severe mobility restrictions can request a home commission visit. A registered MBBS doctor certifies that the individual is of sound testamentary mind but physically unable to travel. The Sub-Registrar then attends your residence with biometric verification devices.",
+    a: "Yes. Under Section 31 of the Registration Act, 1908, elders or sick people who cannot travel can ask for a home visit. An MBBS doctor writes a note saying the person has a clear mind. The officer then comes to your home with a thumb scan kit.",
   },
   {
     q: "How does a registered Will help with Tiruchirappalli City Corporation (TCC) property tax mutation?",
-    a: "Tiruchirappalli City Corporation requires unambiguous legal proof before updating ownership on the property tax assessment roll. A registered Will provides conclusive documentary evidence of the deceased testator's intentions, eliminating delays, disputes among legal heirs, and the need for expensive civil court succession certificates.",
+    a: "The Trichy City office needs clear proof to change names on house tax bills. A registered Will gives solid proof of who gets the house. It stops delays, family fights, and the need for costly civil court orders.",
   },
   {
     q: "Can agricultural lands in the Kaveri and Coleroon delta belts be bequeathed in a Will?",
-    a: "Yes. Agricultural wet lands (Nanjai), dry lands (Punjai), and coconut groves across Lalgudi, Manachanallur, and surrounding delta zones can be legally bequeathed. The Will must accurately record survey numbers, sub-divisions, extents, and four-boundary descriptions to enable smooth mutation with the local Village Administrative Officer (VAO) and Revenue Department.",
+    a: "Yes. Wet land (Nanjai), dry land (Punjai), and groves in Lalgudi, Manachanallur, and nearby delta towns can be passed by a Will. Just list the survey numbers, plot sizes, and four borders so the VAO can update the Patta fast.",
   },
   {
     q: "Who can serve as valid attesting witnesses at Tiruchirappalli Sub-Registrar offices?",
-    a: "Any two adult individuals aged 18 or above with sound mental capacity and valid Aadhaar cards or government photo IDs can act as attesting witnesses. Crucially, under Section 67 of the Indian Succession Act, witnesses and their spouses must not be beneficiaries receiving any bequest or property under the Will.",
+    a: "Any two adults aged 18 or older with a sound mind and valid Aadhaar cards can be witnesses. Under Section 67 of the Indian Succession Act, witnesses and their spouses must not get any gift or land in the Will.",
   },
   {
     q: "Can Non-Resident Indians (NRIs) make a Will for ancestral properties in Tiruchirappalli?",
-    a: "Yes. Many NRIs residing in Singapore, Malaysia, the Gulf, the US, or the UK own ancestral houses or apartments in Tiruchirappalli and Srirangam. NRIs can draft a comprehensive Indian Will online and execute it overseas before two witnesses with Indian consulate attestation or complete formal Book III registration before a Trichy Sub-Registrar during their visit to India.",
+    a: "Yes. Many NRIs in Singapore, Malaysia, the Gulf, the US, or the UK own homes in Trichy and Srirangam. NRIs can draft a Will online and sign it abroad with two witnesses, or file it in Book III at a Trichy SRO when visiting India.",
   },
 ];
 
@@ -142,7 +142,7 @@ export default function TiruchirappalliLocationPage() {
         url: canonicalUrl,
         name: "Will Drafting in Tiruchirappalli: Legal Online Will Guide",
         description:
-          "Draft a legally valid Will in Tiruchirappalli. Expert lawyer drafting, TNREGINET registration guidance, and hassle-free City Corporation Patta.",
+          "Draft a legally valid Will in Tiruchirappalli. Expert lawyer drafting, TNREGINET signing guidance, and hassle-free City Corporation Patta.",
         isPartOf: {
           "@type": "WebSite",
           "@id": "https://www.willdrafting.in/#website",
@@ -189,7 +189,7 @@ export default function TiruchirappalliLocationPage() {
         "@id": `${canonicalUrl}#legalservice`,
         name: "WillDrafting Tiruchirappalli - Estate Planning & TNREGINET Registration",
         description:
-          "Professional Will drafting, advocate verification, TNREGINET online token booking, and Section 31 doorstep execution support across.",
+          "Professional Will drafting, advocate check, TNREGINET online token booking, and Section 31 doorstep execution support across.",
         url: canonicalUrl,
         image: imageUrl,
         email: "hello@willdrafting.in",
@@ -261,13 +261,13 @@ export default function TiruchirappalliLocationPage() {
             "@type": "HowToStep",
             position: 1,
             name: "Compile Asset Inventory and Successors",
-            text: "List your Tiruchirappalli real estate including City Corporation apartments, Srirangam heritage properties, BHEL industrial units, Kaveri delta farmland, and financial assets. Designate beneficiaries and an executor.",
+            text: "List your Tiruchirappalli real estate including City Corporation apartments, Srirangam heritage properties, BHEL industrial units, Kaveri delta farmland, and financial assets. Designate heirs and an executor.",
           },
           {
             "@type": "HowToStep",
             position: 2,
             name: "Draft Customized Legal Clauses",
-            text: "Draft your Will using verified statutory clauses for asset distribution, survivorship, guardian appointments for minors, and revocation of prior instruments.",
+            text: "Draft your Will using verified statutory clauses for asset split, survivorship, guardian appointments for minors, and revocation of prior instruments.",
           },
           {
             "@type": "HowToStep",
@@ -279,13 +279,13 @@ export default function TiruchirappalliLocationPage() {
             "@type": "HowToStep",
             position: 4,
             name: "Book TNREGINET Appointment Token",
-            text: "Schedule your registration appointment on the TNREGINET portal for your relevant Tiruchirappalli SRO and remit the flat ₹100 registration fee online.",
+            text: "Schedule your signing appointment on the TNREGINET portal for your relevant Tiruchirappalli SRO and remit the flat ₹100 signing fee online.",
           },
           {
             "@type": "HowToStep",
             position: 5,
             name: "Complete Biometrics at Tiruchirappalli SRO",
-            text: "Visit the Sub-Registrar office with both witnesses for verbal attestation, photo capture, and biometric thumbprinting to complete Book III registration.",
+            text: "Visit the SRO office with both witnesses for verbal attestation, photo capture, and biometric thumbprinting to complete Book III signing.",
           },
         ],
       },

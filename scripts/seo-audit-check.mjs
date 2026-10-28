@@ -180,6 +180,63 @@ if (!proxyContent.includes('"/:path*"')) {
   errors.push(`[Proxy matcher missing global "/:path*" coverage] src/proxy.ts`);
 }
 
+// 4. Check Content Readability (Flesch Reading Ease >= 30.0 — Zero "Very Hard" Pages)
+function countSyllables(word) {
+  let w = word.toLowerCase().replace(/[^a-z]/g, "");
+  if (!w) return 0;
+  if (w.length <= 3) return 1;
+  w = w.replace(/(?:[^laeiouy]es|ed|[^laeiouy]e)$/, "").replace(/^y/, "");
+  const vowels = w.match(/[aeiouy]{1,2}/g);
+  return Math.max(1, vowels ? vowels.length : 1);
+}
+
+function computeFleschScore(filePaths) {
+  const textParts = [];
+  for (const fp of filePaths) {
+    if (!fs.existsSync(fp)) continue;
+    const c = fs.readFileSync(fp, "utf8");
+    let idx = c.indexOf("const INITIAL_CHECKLIST");
+    if (idx < 0) idx = c.indexOf("const FAQS");
+    if (idx < 0) idx = c.indexOf("export default");
+    const body = idx > 0 ? c.slice(idx) : c;
+    for (const m of body.matchAll(/>([^<>{}]+)</g)) {
+      const t = m[1].trim();
+      if (t && !t.startsWith("&&")) textParts.push(t);
+    }
+    for (const m of body.matchAll(/(?:label|detail|q|a|desc|note|summary|text|step|role|rule|benefit|answer|question|description):\s*"([^"]+)"/g)) {
+      textParts.push(m[1]);
+    }
+  }
+  const full = textParts.join(". ");
+  const sentences = full.split(/[.!?]+/).filter((s) => /[a-zA-Z]/.test(s));
+  const words = full.match(/[a-zA-Z]+/g) || [];
+  if (words.length < 100) return 100;
+  let syllables = 0;
+  for (const w of words) syllables += countSyllables(w);
+  const wps = words.length / Math.max(1, sentences.length);
+  const spw = syllables / Math.max(1, words.length);
+  return 206.835 - 1.015 * wps - 84.6 * spw;
+}
+
+const readabilityTargets = [
+  ["/sitemap", [path.join(ROOT, "src/app/sitemap/SitemapClient.tsx"), path.join(ROOT, "src/data/sitemapData.ts")]],
+  ...fs
+    .readdirSync(path.join(SRC_APP, "locations"), { withFileTypes: true })
+    .filter((d) => d.isDirectory())
+    .map((d) => {
+      const dir = path.join(SRC_APP, "locations", d.name);
+      const files = fs.readdirSync(dir).filter((f) => f.endsWith(".tsx")).map((f) => path.join(dir, f));
+      return [`/locations/${d.name}`, files];
+    }),
+];
+
+for (const [routeLabel, files] of readabilityTargets) {
+  const flesch = computeFleschScore(files);
+  if (flesch < 30.0) {
+    errors.push(`[Content Readability Very Difficult (Flesch ${flesch.toFixed(2)} < 30.0)] ${routeLabel}`);
+  }
+}
+
 if (errors.length > 0) {
   console.error(`❌ SEO Audit Check found ${errors.length} issue(s):`);
   for (const e of errors) console.error("  -", e);

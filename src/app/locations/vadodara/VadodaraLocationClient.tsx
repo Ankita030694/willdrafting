@@ -112,26 +112,26 @@ const VADODARA_DISTRICTS = [
 const INITIAL_CHECKLIST = [
   {
     id: "item-1",
-    label: "Two Printed Copies of the Executed Will",
+    label: "Two Printed Copies of the Signed Will",
     detail: "Printed clearly on durable white A4 paper. Under the Gujarat Stamp Act, no expensive stamp paper is required.",
     checked: true,
   },
   {
     id: "item-2",
-    label: "Original Aadhaar Card & PAN of Testator",
-    detail: "Mandatory for biometric thumbprint scanning and live web-camera photography before the Gujarat Sub-Registrar.",
+    label: "Original Aadhaar Card & PAN of Will maker",
+    detail: "Needed for biometric thumbprint scanning and live web-camera photography before the Gujarat Sub-Registrar.",
     checked: true,
   },
   {
     id: "item-3",
     label: "Two Independent Adult Witnesses with Aadhaar",
-    detail: "Both witnesses must carry original photo IDs and must not be named beneficiaries or their spouses.",
+    detail: "Both witnesses must carry original photo IDs and must not be named heirs or their spouses.",
     checked: true,
   },
   {
     id: "item-4",
     label: "Doctor's Mental Fitness Certificate (For Seniors)",
-    detail: "Signed by an active MBBS practitioner. Certifies sound mind and testamentary capacity to eliminate dispute grounds.",
+    detail: "Signed by an active MBBS practitioner. Certifies sound mind and sound mind to eliminate fight grounds.",
     checked: false,
   },
   {
@@ -143,13 +143,13 @@ const INITIAL_CHECKLIST = [
   {
     id: "item-6",
     label: "Property Chain Documents (VMC / VUDA / GIDC / 7/12)",
-    detail: "Copies of registered allotment deeds, share certificates, or AnyROR 7/12 extracts for precise asset identification.",
+    detail: "Copies of registered allotment deeds, share papers, or AnyROR 7/12 extracts for precise asset ID.",
     checked: false,
   },
   {
     id: "item-7",
     label: "Two Passport-Sized Photographs Each",
-    detail: "Recent color photographs of the testator and both attesting witnesses for pasting in official Book III records.",
+    detail: "Recent color photographs of the Will maker and both witnesses for pasting in official Book III records.",
     checked: false,
   },
 ];
@@ -241,8 +241,8 @@ export default function VadodaraLocationClient({ faqs }: Props) {
               </h1>
 
               <p className="text-base sm:text-lg text-slate-200 leading-relaxed font-normal max-w-2xl">
-                Draft a legally binding Will for your VMC residential properties, VUDA plots, and chemical MSME shares.
-                Get expert advocate drafting, Garvi Gujarat portal registration guidance, and doorstep execution for senior citizens across Vadodara.
+                Draft a legally binding Will for your VMC home assets, VUDA plots, and chemical MSME shares.
+                Get expert lawyer drafting, Garvi Gujarat portal registration guidance, and doorstep signing for senior citizens across Vadodara.
               </p>
 
               <div className="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
@@ -470,14 +470,14 @@ export default function VadodaraLocationClient({ faqs }: Props) {
                   <span>NEED EXPERT GUIDANCE?</span>
                 </div>
                 <p className="text-xs text-slate-300 leading-relaxed">
-                  Connect with our Gujarat High Court estate advocates for customized business succession or doorstep SRO execution in Vadodara.
+                  Connect with our Gujarat High Court estate lawyers for customized business succession or doorstep SRO signing in Vadodara.
                 </p>
                 <a
                   href="/start"
                   onClick={handleStartDraft}
                   className="block w-full py-2.5 px-4 rounded-xl bg-[#C65378] text-white text-xs font-bold text-center hover:bg-[#a13c5d] transition-all"
                 >
-                  Start Consultation
+                  Start Talk
                 </a>
               </div>
             </div>
@@ -516,7 +516,7 @@ export default function VadodaraLocationClient({ faqs }: Props) {
                 <div className="flex items-start gap-3 bg-white/80 p-3.5 rounded-2xl border border-rose-100">
                   <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
                   <div>
-                    <strong className="text-slate-900 block font-bold mb-0.5">VMC &amp; VUDA Mutation Protection</strong>
+                    <strong className="text-slate-900 block font-bold mb-0.5">VMC &amp; VUDA Name Change Protection</strong>
                     <span className="text-slate-600">Registered Wills enable immediate property record mutations without court delays.</span>
                   </div>
                 </div>
@@ -533,7 +533,7 @@ export default function VadodaraLocationClient({ faqs }: Props) {
                   1. Will Drafting &amp; Legal Framework in Vadodara
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Vadodara (historically known as Baroda) is recognized as the cultural and educational capital of Gujarat, while simultaneously hosting massive petrochemical, pharmaceutical, and engineering industrial hubs. From ancestral residential properties in the historic walled city pols of Mandvi and Dandia Bazar, to sprawling bungalows in Alkapuri and Old Padra Road, and contemporary high-rise townships across Gotri, Vasna-Bhayli, and Sevasi, estate planning in Vadodara demands nuanced legal attention.
+                  Vadodara (historically known as Baroda) is recognized as the cultural and educational capital of Gujarat, while simultaneously hosting massive petrochemical, pharmaceutical, and engineering industrial hubs. From family home assets in the historic walled city pols of Mandvi and Dandia Bazar, to sprawling bungalows in Alkapuri and Old Padra Road, and contemporary high-rise townships across Gotri, Vasna-Bhayli, and Sevasi, estate planning in Vadodara demands nuanced legal attention.
                 </p>
               </div>
 
@@ -542,7 +542,7 @@ export default function VadodaraLocationClient({ faqs }: Props) {
                   <Building className="w-5 h-5 text-[#C65378]" />
                   <h3 className="font-extrabold text-sm text-slate-900">VMC &amp; VUDA Estates</h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Clear testamentary bequest prevents stalled title mutation before Vadodara Municipal Corporation and VUDA Town Planning schemes.
+                    Clear testamentary bequest prevents stalled title name change before Vadodara Municipal Corporation and VUDA Town Planning schemes.
                   </p>
                 </div>
                 <div className="p-4 rounded-2xl bg-slate-50 border border-slate-200/80 space-y-2">
@@ -569,10 +569,10 @@ export default function VadodaraLocationClient({ faqs }: Props) {
                   SECTION 02
                 </span>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  2. Is Will Registration Mandatory in Vadodara?
+                  2. Is Will Registration Needed in Vadodara?
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Under Indian jurisprudence, making and registering a Will is governed by the Indian Succession Act, 1925 and the Registration Act, 1908. In Vadodara, registration is legally optional under Section 18(e) of the Registration Act, 1908. A handwritten or typed Will executed on standard A4 paper, signed by the testator in the physical presence of two independent adult attesting witnesses, is legally enforceable from the day of execution.
+                  Under Indian jurisprudence, making and registering a Will is governed by the Indian Succession Act, 1925 and the Registration Act, 1908. In Vadodara, registration is legally optional under Section 18(e) of the Registration Act, 1908. A handwritten or typed Will signed on standard A4 paper, signed by the Will maker in the physical presence of two independent adult witnesses, is legally enforceable from the day of signing.
                 </p>
               </div>
 
@@ -592,12 +592,12 @@ export default function VadodaraLocationClient({ faqs }: Props) {
                       <td className="p-3 sm:p-4 text-slate-700">Valid if attested by 2 witnesses</td>
                     </tr>
                     <tr>
-                      <td className="p-3 sm:p-4 font-bold text-slate-900">Evidentiary Value</td>
+                      <td className="p-3 sm:p-4 font-bold text-slate-900">Proof Value</td>
                       <td className="p-3 sm:p-4 text-emerald-700 font-semibold">Presumption of Authenticity (Sec 114)</td>
                       <td className="p-3 sm:p-4 text-amber-700">Open to forgery and coercion claims</td>
                     </tr>
                     <tr>
-                      <td className="p-3 sm:p-4 font-bold text-slate-900">VMC &amp; VUDA Mutation</td>
+                      <td className="p-3 sm:p-4 font-bold text-slate-900">VMC &amp; VUDA Name Change</td>
                       <td className="p-3 sm:p-4 text-emerald-700 font-semibold">Expedited; accepted by revenue officers</td>
                       <td className="p-3 sm:p-4 text-amber-700">Requires extensive indemnity bonds &amp; affidavits</td>
                     </tr>
@@ -626,7 +626,7 @@ export default function VadodaraLocationClient({ faqs }: Props) {
                   3. Vadodara Probate Rules: Non-Presidency Town Law
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  A common misconception among property owners in Vadodara is that every Will must be probated by a court before assets can be transferred. Under Indian law, probate is the formal process by which a competent civil court certifies the authenticity of a Will. However, statutory provisions strictly distinguish historical presidential cities from other territories.
+                  A common misconception among property owners in Vadodara is that every Will must be probated by a court before assets can be transferred. Under Indian law, probate is the formal process by which a competent civil court certifies the authenticity of a Will. However, legal rules strictly distinguish historical presidential cities from other territories.
                 </p>
               </div>
 
@@ -636,10 +636,10 @@ export default function VadodaraLocationClient({ faqs }: Props) {
                   <span>Sections 57 &amp; 213 of the Indian Succession Act, 1925</span>
                 </div>
                 <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
-                  Under Section 213(1) read with Section 57(a) and 57(b), compulsory probate applies <strong>exclusively</strong> to Wills executed by Hindus, Buddhists, Sikhs, or Jains within the historical Presidency Towns of <strong>Mumbai (Bombay), Kolkata (Calcutta), and Chennai (Madras)</strong>, or where immovable property covered under the Will is situated within those three territorial limits.
+                  Under Section 213(1) read with Section 57(a) and 57(b), needed probate applies <strong>exclusively</strong> to Wills signed by Hindus, Buddhists, Sikhs, or Jains within the historical Presidency Towns of <strong>Mumbai (Bombay), Kolkata (Calcutta), and Chennai (Madras)</strong>, or where land and flats covered under the Will is situated within those three territorial limits.
                 </p>
                 <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
-                  The <strong>Gujarat High Court</strong> has reaffirmed in landmark decisions (including <em>Minaxiben Shashikantbhai Patel v. Anand Patel</em> and subsequent judgments) that Vadodara, Ahmedabad, Surat, and Rajkot fall strictly outside presidency jurisdictions. Consequently, obtaining probate from a District Court or the Gujarat High Court is <strong>completely optional</strong> for estates located in Vadodara.
+                  The <strong>Gujarat High Court</strong> has reaffirmed in landmark decisions (including <em>Minaxiben Shashikantbhai Patel v. Anand Patel</em> and subsequent judgments) that Vadodara, Ahmedabad, Surat, and Rajkot fall strictly outside presidency areas. So, getting probate from a District Court or the Gujarat High Court is <strong>completely optional</strong> for estates located in Vadodara.
                 </p>
               </div>
 
@@ -647,13 +647,13 @@ export default function VadodaraLocationClient({ faqs }: Props) {
                 <div className="p-4 rounded-2xl bg-emerald-50/70 border border-emerald-200 space-y-1.5">
                   <strong className="text-emerald-950 block font-bold">Financial &amp; Time Savings</strong>
                   <p className="text-emerald-900 leading-relaxed">
-                    By eliminating mandatory probate, families in Vadodara save between ₹75,000 and ₹3,00,000 in court fees, ad valorem stamp duties, and 12 to 24 months of procedural litigation delays.
+                    By eliminating needed probate, families in Vadodara save between ₹75,000 and ₹3,00,000 in court fees, ad valorem stamp duties, and 12 to 24 months of procedural court fights delays.
                   </p>
                 </div>
                 <div className="p-4 rounded-2xl bg-sky-50/70 border border-sky-200 space-y-1.5">
                   <strong className="text-sky-950 block font-bold">When Probate May Still Be Sought</strong>
                   <p className="text-sky-900 leading-relaxed">
-                    Probate becomes advisable only when hostile legal heirs challenge testamentary capacity, allege undue influence, or dispute immovable properties through partition suits in the Vadodara District Court.
+                    Probate becomes advisable only when hostile legal heirs challenge sound mind, allege undue influence, or fight land and flats through split suits in the Vadodara District Court.
                   </p>
                 </div>
               </div>
@@ -669,7 +669,7 @@ export default function VadodaraLocationClient({ faqs }: Props) {
                   4. HUF Assets &amp; Chemical MSME Succession in Vadodara
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Vadodara is celebrated for its multi-generational commercial and industrial prosperity. Managing the succession of family-owned chemical processing plants, pharmaceutical formulations, engineering workshops, and ancestral Hindu Undivided Family (HUF) estates requires specialized testamentary drafting.
+                  Vadodara is celebrated for its multi-generational shop and industrial prosperity. Managing the succession of family-owned chemical processing plants, pharmaceutical formulations, engineering workshops, and family Hindu Undivided Family (HUF) estates requires specialized testamentary drafting.
                 </p>
               </div>
 
@@ -693,16 +693,16 @@ export default function VadodaraLocationClient({ faqs }: Props) {
                 <div className="p-5 sm:p-6 rounded-2xl bg-slate-50 border border-slate-200 space-y-3">
                   <div className="flex items-center gap-2 text-slate-900 font-bold text-sm">
                     <Scale className="w-5 h-5 text-[#C65378]" />
-                    <span>HUF Coparcenary &amp; Section 30 HSA</span>
+                    <span>HUF Joint family &amp; Section 30 HSA</span>
                   </div>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Under Section 30 of the Hindu Succession Act, 1956 (amended 2005), a Hindu testator can bequeath <strong>only their individual undivided share</strong> in ancestral coparcenary property:
+                    Under Section 30 of the Hindu Succession Act, 1956 (amended 2005), a Hindu testator can bequeath <strong>only their individual undivided share</strong> in family joint family property:
                   </p>
                   <ul className="text-xs text-slate-700 space-y-2 list-disc list-inside">
-                    <li>Ancestral homes in Mandvi, Dandia Bazar, and Karelibaug Pols.</li>
+                    <li>Family homes in Mandvi, Dandia Bazar, and Karelibaug Pols.</li>
                     <li>Distinguishing individual self-acquired wealth from HUF funds.</li>
-                    <li>Daughter coparcenary equality under <em>Vineeta Sharma v. Rakesh Sharma</em>.</li>
-                    <li>Designation of next Karta or consensual partition execution.</li>
+                    <li>Daughter joint family equality under <em>Vineeta Sharma v. Rakesh Sharma</em>.</li>
+                    <li>Designation of next Karta or consensual split signing.</li>
                   </ul>
                 </div>
               </div>
@@ -718,7 +718,7 @@ export default function VadodaraLocationClient({ faqs }: Props) {
                   5. Vadodara Sub-Registrar Offices: District Directory
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Will registration in Vadodara is administered by the Inspector General of Registration Gujarat. You can register your Will at any Sub-Registrar office having territorial jurisdiction over your permanent residence or where your primary immovable property is situated.
+                  Will registration in Vadodara is administered by the Inspector General of Registration Gujarat. You can register your Will at any SRO office having territorial area over your permanent residence or where your primary land and flats is situated.
                 </p>
               </div>
 
@@ -759,7 +759,7 @@ export default function VadodaraLocationClient({ faqs }: Props) {
                       {activeDistrictData.sro}
                     </h3>
                     <span className="text-xs text-slate-500 font-mono">
-                      Territorial Jurisdiction: {activeDistrictData.name}
+                      Territorial Area: {activeDistrictData.name}
                     </span>
                   </div>
                   <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-100 text-emerald-800 text-xs font-semibold w-fit">
@@ -804,7 +804,7 @@ export default function VadodaraLocationClient({ faqs }: Props) {
                     onClick={handleStartDraft}
                     className="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-white border border-slate-300 text-slate-800 text-xs font-bold hover:bg-slate-50 transition-all"
                   >
-                    <span>Lawyer SRO Assistance</span>
+                    <span>Lawyer SRO Help</span>
                   </a>
                 </div>
               </div>
@@ -821,7 +821,7 @@ export default function VadodaraLocationClient({ faqs }: Props) {
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Looking for legally verified <strong>Will drafting services in Alkapuri, Gotri, Manjalpur, or Karelibaug</strong>? Property categories across Vadodara range from luxury bungalows and gated villa schemes to heritage pol residences, VUDA plotted layouts, and GIDC industrial plots.
-                  Our senior advocates provide verified legal drafting, Garvi Gujarat portal slot booking, and Sub-Registrar accompaniment across all key residential and industrial clusters:
+                  Our senior lawyers provide verified legal drafting, Garvi Gujarat portal slot booking, and Sub-Registrar accompaniment across all key home and industrial clusters:
                 </p>
               </div>
 
@@ -852,7 +852,7 @@ export default function VadodaraLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Looking for premier <strong>Will drafting services in Alkapuri &amp; Old Padra Road</strong>? Alkapuri and Old Padra Road represent Vadodara&apos;s most affluent residential and commercial corridor, home to prominent industrialist families, doctors, and multi-generational business leaders. Our advocates draft tailored bequests for luxury bungalows, commercial retail spaces, and multi-currency foreign accounts for non-resident family members.
+                      Looking for premier <strong>Will drafting services in Alkapuri &amp; Old Padra Road</strong>? Alkapuri and Old Padra Road represent Vadodara&apos;s most affluent home and shop corridor, home to prominent industrialist families, doctors, and multi-generational business leaders. Our lawyers draft tailored bequests for luxury bungalows, shop retail spaces, and multi-currency foreign accounts for non-resident family members.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -861,7 +861,7 @@ export default function VadodaraLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Jilla Seva Sadan 1, Akota</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        High-net-worth portfolio bequeathal, cross-border NRI asset distribution, and expedited Book III registration.
+                        High-net-worth portfolio bequeathal, cross-border NRI asset split, and expedited Book III registration.
                       </p>
                     </div>
                   </div>
@@ -906,7 +906,7 @@ export default function VadodaraLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Access specialized <strong>Will drafting services in Gotri, Sevasi &amp; Vasna-Bhayli</strong>. As Vadodara&apos;s fastest-growing western luxury expansion zone, this sector features gated villa townships, duplexes, and premium high-rise apartments under VUDA Town Planning schemes. Our legal team drafts airtight clauses ensuring seamless single-window mutation at the VUDA and VMC offices without probate.
+                      Access specialized <strong>Will drafting services in Gotri, Sevasi &amp; Vasna-Bhayli</strong>. As Vadodara&apos;s fastest-growing western luxury expansion zone, this sector features gated villa townships, duplexes, and premium high-rise apartments under VUDA Town Planning schemes. Our legal team drafts airtight clauses making sure seamless single-window name change at the VUDA and VMC offices without probate.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -915,7 +915,7 @@ export default function VadodaraLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Gorwa Revenue Complex, BIDC</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        VUDA Final Plot (FP) mutation advisory, builder allotment transition, and senior citizen doorstep execution.
+                        VUDA Final Plot (FP) name change advisory, builder allotment transition, and senior citizen doorstep signing.
                       </p>
                     </div>
                   </div>
@@ -960,7 +960,7 @@ export default function VadodaraLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Opt for expert <strong>Will drafting services in Akota, Fatehgunj &amp; Sayajigunj</strong>. Covering Vadodara&apos;s civic, judicial, and academic heartland near The Maharaja Sayajirao University (MSU), this area houses retired judges, professors, civil servants, and senior citizens. We incorporate medical fitness certifications, executor powers, and specific coparcenary partition safeguards.
+                      Opt for expert <strong>Will drafting services in Akota, Fatehgunj &amp; Sayajigunj</strong>. Covering Vadodara&apos;s civic, judicial, and academic heartland near The Maharaja Sayajirao University (MSU), this area houses retired judges, professors, civil servants, and senior citizens. We incorporate medical fitness certifications, executor powers, and specific joint family split safeguards.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -975,7 +975,7 @@ export default function VadodaraLocationClient({ faqs }: Props) {
                   </div>
 
                   <div className="pt-4 mt-4 border-t border-slate-100 flex items-center justify-between">
-                    <span className="text-xs font-bold text-slate-500">Central Administrative Hub</span>
+                    <span className="text-xs font-bold text-slate-500">Central Office Hub</span>
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
@@ -1014,7 +1014,7 @@ export default function VadodaraLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Secure reliable <strong>Will drafting services in Manjalpur, Makarpura &amp; Tarsali</strong>. Serving southern Vadodara&apos;s primary industrial and manufacturing hub, our advocates assist engineering MSME owners, GIDC leaseholders, and housing society members. We structure comprehensive bequests covering factory machinery, supplier credit recovery rights, and cooperative housing share transfers.
+                      Secure reliable <strong>Will drafting services in Manjalpur, Makarpura &amp; Tarsali</strong>. Serving southern Vadodara&apos;s primary industrial and manufacturing hub, our lawyers assist engineering MSME owners, GIDC leaseholders, and housing society members. We structure full bequests covering factory machinery, supplier credit recovery rights, and cooperative housing share transfers.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1068,7 +1068,7 @@ export default function VadodaraLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Consult specialist advocates for <strong>Will drafting services in Karelibaug, Mandvi &amp; Heritage Pols</strong>. Eastern Vadodara features centuries-old ancestral pol properties, joint family business shops, and Hindu Undivided Family (HUF) estates. We draft specialized clauses strictly aligned with Section 30 of the Hindu Succession Act, distinguishing coparcenary rights from self-acquired assets.
+                      Consult expert lawyers for <strong>Will drafting services in Karelibaug, Mandvi &amp; Heritage Pols</strong>. Eastern Vadodara features centuries-old family pol assets, joint family business shops, and Hindu Undivided Family (HUF) estates. We draft specialized clauses strictly aligned with Section 30 of the Hindu Succession Act, distinguishing joint family rights from self-acquired assets.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1077,13 +1077,13 @@ export default function VadodaraLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Old Collector Office, Kothi Compound</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        HUF coparcenary asset bequeathal, VMC ancestral tenement mutation, and Kothi Compound Book III registration.
+                        HUF joint family asset bequeathal, VMC family tenement name change, and Kothi Compound Book III registration.
                       </p>
                     </div>
                   </div>
 
                   <div className="pt-4 mt-4 border-t border-slate-100 flex items-center justify-between">
-                    <span className="text-xs font-bold text-slate-500">Heritage &amp; Commercial Hub</span>
+                    <span className="text-xs font-bold text-slate-500">Heritage &amp; Shop Hub</span>
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
@@ -1122,7 +1122,7 @@ export default function VadodaraLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Avail corporate and industrial <strong>Will drafting services in Nandesari, Waghodia &amp; Savli GIDC</strong>. Home to Gujarat&apos;s prominent chemical manufacturing, pharmaceutical formulation, and heavy engineering facilities. Our corporate estate team drafts succession instruments for promoter equity, director loan recovery, and environmental statutory continuity.
+                      Avail corporate and industrial <strong>Will drafting services in Nandesari, Waghodia &amp; Savli GIDC</strong>. Home to Gujarat&apos;s prominent chemical manufacturing, pharmaceutical formulation, and heavy engineering facilities. Our corporate estate team drafts succession instruments for promoter equity, director loan recovery, and environmental legal continuity.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1131,7 +1131,7 @@ export default function VadodaraLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Waghodia Taluka Seva Sadan</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Chemical MSME enterprise equity transmission, industrial plot lease succession, and Cyber Treasury e-Challan filing.
+                        Chemical MSME enterprise equity transfer, industrial plot lease succession, and Cyber Treasury e-Challan filing.
                       </p>
                     </div>
                   </div>
@@ -1162,7 +1162,7 @@ export default function VadodaraLocationClient({ faqs }: Props) {
                   7. Step-by-Step Garvi Gujarat Portal Will Registration
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Registering a Will in Vadodara is performed through the Gujarat government&apos;s digital land and property registry portal (Garvi Gujarat). Follow this tested 5-step Standard Operating Procedure:
+                  Registering a Will in Vadodara is performed through the Gujarat government&apos;s digital land and property registry portal (Garvi Gujarat). Follow this tested 5-step Standard Operating Step:
                 </p>
               </div>
 
@@ -1174,10 +1174,10 @@ export default function VadodaraLocationClient({ faqs }: Props) {
                   </div>
                   <div className="space-y-1">
                     <h3 className="font-extrabold text-sm text-slate-900">
-                      Asset Inventory &amp; Beneficiary Designation
+                      Asset Inventory &amp; Heir Designation
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Compile a detailed schedule of all immovable assets (VMC residential units, VUDA plots, agricultural farmlands) and movables (bank fixed deposits, mutual funds, demat shares, company equity, gold jewellery). Appoint primary beneficiaries, contingent alternates, and a trustworthy executor.
+                      Compile a detailed schedule of all immovable assets (VMC home units, VUDA plots, farm farmlands) and movables (bank fixed deposits, mutual funds, demat shares, company equity, gold jewellery). Appoint primary heirs, contingent alternates, and a trustworthy executor.
                     </p>
                   </div>
                 </div>
@@ -1192,7 +1192,7 @@ export default function VadodaraLocationClient({ faqs }: Props) {
                       Drafting with Custom Legal &amp; Succession Clauses
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Draft the Will incorporating mandatory statutory clauses: express revocation of prior wills, sound mental health affirmation, executor powers, debt clearance directives, and specific property bequeathals. Our senior advocates review each clause for unambiguous legal precision.
+                      Draft the Will incorporating needed legal clauses: express revocation of prior wills, sound mental health affirmation, executor powers, debt clearance directives, and specific property bequeathals. Our senior lawyers review each clause for clear legal precision.
                     </p>
                   </div>
                 </div>
@@ -1207,7 +1207,7 @@ export default function VadodaraLocationClient({ faqs }: Props) {
                       Physical Attestation Before Two Independent Witnesses
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Print the Will on plain A4 paper. The testator signs each page in the physical presence of two independent adult witnesses who then sign the attestation clause. Witnesses must not be beneficiaries or spouses of beneficiaries. For testators aged 60+, attach an MBBS doctor&apos;s mental fitness certificate.
+                      Print the Will on plain A4 paper. The Will maker signs each page in the physical presence of two independent adult witnesses who then sign the attestation clause. Witnesses must not be heirs or spouses of heirs. For testators aged 60+, attach an MBBS doctor&apos;s mental fitness paper.
                     </p>
                   </div>
                 </div>
@@ -1222,7 +1222,7 @@ export default function VadodaraLocationClient({ faqs }: Props) {
                       Garvi Gujarat Portal Token &amp; e-Challan Generation
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Visit <strong>garvi.gujarat.gov.in</strong>. Select Vadodara district and the appropriate Sub-Registrar Office (Kothi, Akota, Manjalpur, etc.). Enter party KYC details, upload the Will copy, generate an online Cyber Treasury e-Challan for the nominal ₹100 registration fee, and download the e-appointment token slip.
+                      Visit <strong>garvi.gujarat.gov.in</strong>. Select Vadodara district and the appropriate SRO office (Kothi, Akota, Manjalpur, etc.). Enter party KYC details, upload the Will copy, generate an online Cyber Treasury e-Challan for the nominal ₹100 registration fee, and download the e-appointment token slip.
                     </p>
                   </div>
                 </div>
@@ -1237,7 +1237,7 @@ export default function VadodaraLocationClient({ faqs }: Props) {
                       Biometric Appearance &amp; Official Book III Registration
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      On the appointed date, the testator and both witnesses appear before the Vadodara Sub-Registrar with original Aadhaar cards and passport photos. The officer captures digital thumbprints and web-camera photographs, verifies mental volition, enters the Will into confidential Book III records, and issues the registered document with the official government seal.
+                      On the appointed date, the Will maker and both witnesses appear before the Vadodara Sub-Registrar with original Aadhaar cards and passport photos. The officer captures digital thumbprints and web-camera photographs, verifies mental volition, enters the Will into confidential Book III records, and issues the registered document with the official government seal.
                     </p>
                   </div>
                 </div>
@@ -1254,7 +1254,7 @@ export default function VadodaraLocationClient({ faqs }: Props) {
                   8. Section 31 Doorstep Registration for Seniors
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  For senior citizens, bedridden individuals, hospitalized testators, or business executives unable to navigate crowded government offices, Indian law provides a statutory remedy for registration at personal residences.
+                  For senior citizens, bedridden people, hospitalized testators, or business executives unable to navigate crowded government offices, Indian law provides a legal remedy for registration at personal residences.
                 </p>
               </div>
 
@@ -1269,7 +1269,7 @@ export default function VadodaraLocationClient({ faqs }: Props) {
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 text-xs">
                   <div className="p-3 bg-white rounded-xl border border-rose-100">
                     <strong className="block font-bold text-slate-900 mb-1">Medical Certificate</strong>
-                    <span className="text-slate-600">Fitness certificate issued by an MBBS doctor confirming testation capacity.</span>
+                    <span className="text-slate-600">Fitness paper issued by an MBBS doctor confirming testation capacity.</span>
                   </div>
                   <div className="p-3 bg-white rounded-xl border border-rose-100">
                     <strong className="block font-bold text-slate-900 mb-1">Government Commission Fee</strong>
@@ -1293,7 +1293,7 @@ export default function VadodaraLocationClient({ faqs }: Props) {
                   9. Documents Checklist for Gujarat Sub-Registrar
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Interactive checklist of statutory documents required when presenting a Will for registration at any Vadodara Sub-Registrar Office:
+                  Interactive checklist of legal documents required when presenting a Will for registration at any Vadodara SRO office:
                 </p>
               </div>
 
@@ -1351,15 +1351,15 @@ export default function VadodaraLocationClient({ faqs }: Props) {
                   10. Vadodara Property Types: Freehold, VMC &amp; VUDA
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Real estate holdings across Vadodara require precise drafting tailored to their statutory tenure and issuing authority:
+                  Real estate holdings across Vadodara require precise drafting tailored to their legal tenure and issuing authority:
                 </p>
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs sm:text-sm">
                 <div className="p-4 rounded-2xl bg-slate-50 border border-slate-200 space-y-2">
-                  <strong className="text-slate-900 block font-bold">VMC Assessed Residential Flats &amp; Bungalows</strong>
+                  <strong className="text-slate-900 block font-bold">VMC Assessed Home Flats &amp; Bungalows</strong>
                   <p className="text-slate-600 leading-relaxed">
-                    Include the Tenement Number, Ward Name, and latest VMC property tax assessment receipt. A registered Will enables immediate mutation in the VMC ward register without succession certificate delays.
+                    Include the Tenement Number, Ward Name, and latest VMC property tax assessment receipt. A registered Will enables immediate name change in the VMC ward register without succession paper delays.
                   </p>
                 </div>
                 <div className="p-4 rounded-2xl bg-slate-50 border border-slate-200 space-y-2">
@@ -1375,9 +1375,9 @@ export default function VadodaraLocationClient({ faqs }: Props) {
                   </p>
                 </div>
                 <div className="p-4 rounded-2xl bg-slate-50 border border-slate-200 space-y-2">
-                  <strong className="text-slate-900 block font-bold">Agricultural Farmlands (7/12 &amp; 8A AnyROR)</strong>
+                  <strong className="text-slate-900 block font-bold">Farm Farmlands (7/12 &amp; 8A AnyROR)</strong>
                   <p className="text-slate-600 leading-relaxed">
-                    Gujarat Tenancy and Agricultural Lands Act restrictions apply: agricultural land can be bequeathed only to recognized legal agriculturists. Delineate survey numbers and Khata numbers accurately.
+                    Gujarat Tenancy and Farm Lands Act restrictions apply: farm land can be bequeathed only to recognized legal agriculturists. Delineate survey numbers and Khata numbers accurately.
                   </p>
                 </div>
               </div>
@@ -1393,7 +1393,7 @@ export default function VadodaraLocationClient({ faqs }: Props) {
                   11. Official Gujarat Stamp Duty &amp; Registration Fees
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Unlike sale deeds or gift deeds which attract substantial ad valorem stamp duty (4.9% plus local surcharges in Gujarat), Wills are treated with total statutory exemption to promote voluntary family succession.
+                  Unlike sale deeds or gift deeds which attract substantial ad valorem stamp duty (4.9% plus local surcharges in Gujarat), Wills are treated with total legal exemption to promote voluntary family succession.
                 </p>
               </div>
 
@@ -1406,7 +1406,7 @@ export default function VadodaraLocationClient({ faqs }: Props) {
                 <div className="p-5 rounded-2xl bg-slate-50 border border-slate-200 text-center space-y-1">
                   <span className="text-xs font-mono uppercase tracking-wider text-slate-500 font-bold">SRO REGISTRATION FEE</span>
                   <div className="text-2xl font-extrabold text-slate-900">₹100</div>
-                  <p className="text-[11px] text-slate-600">Flat statutory fee under Gujarat Table of Fees</p>
+                  <p className="text-[11px] text-slate-600">Flat legal fee under Gujarat Table of Fees</p>
                 </div>
                 <div className="p-5 rounded-2xl bg-slate-50 border border-slate-200 text-center space-y-1">
                   <span className="text-xs font-mono uppercase tracking-wider text-slate-500 font-bold">SCANNING &amp; SERVICE</span>
@@ -1436,7 +1436,7 @@ export default function VadodaraLocationClient({ faqs }: Props) {
                   <div className="space-y-4">
                     <span className="text-xs font-mono uppercase tracking-wider text-slate-500 font-bold">ONLINE ESSENTIAL</span>
                     <div className="text-3xl font-extrabold text-slate-900">₹1,990</div>
-                    <p className="text-xs text-slate-600">Ideal for straightforward residential and bank asset bequeathal.</p>
+                    <p className="text-xs text-slate-600">Ideal for straightforward home and bank asset bequeathal.</p>
                     <ul className="text-xs text-slate-700 space-y-2 pt-2 border-t border-slate-100">
                       <li className="flex items-center gap-2">
                         <Check className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
@@ -1448,7 +1448,7 @@ export default function VadodaraLocationClient({ faqs }: Props) {
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
-                        <span>Execution guidelines &amp; witness SOP</span>
+                        <span>Signing guidelines &amp; witness SOP</span>
                       </li>
                     </ul>
                   </div>
@@ -1473,7 +1473,7 @@ export default function VadodaraLocationClient({ faqs }: Props) {
                     <ul className="text-xs text-slate-700 space-y-2 pt-2 border-t border-rose-100">
                       <li className="flex items-center gap-2">
                         <Check className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
-                        <span>1-on-1 Senior High Court Advocate consult</span>
+                        <span>1-on-1 Senior High Court Lawyer consult</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
@@ -1481,11 +1481,11 @@ export default function VadodaraLocationClient({ faqs }: Props) {
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
-                        <span>Garvi Gujarat slot booking assistance</span>
+                        <span>Garvi Gujarat slot booking help</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
-                        <span>Doctor certificate &amp; witness verification</span>
+                        <span>Doctor paper &amp; witness check</span>
                       </li>
                     </ul>
                   </div>
@@ -1494,7 +1494,7 @@ export default function VadodaraLocationClient({ faqs }: Props) {
                     onClick={handleStartDraft}
                     className="mt-6 w-full py-2.5 rounded-xl bg-[#C65378] text-white text-xs font-bold text-center hover:bg-[#a13c5d] transition-all shadow-md shadow-[#C65378]/20"
                   >
-                    Get Advocate Plan
+                    Get Lawyer Plan
                   </a>
                 </div>
 
@@ -1507,7 +1507,7 @@ export default function VadodaraLocationClient({ faqs }: Props) {
                     <ul className="text-xs text-slate-700 space-y-2 pt-2 border-t border-slate-100">
                       <li className="flex items-center gap-2">
                         <Check className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
-                        <span>Everything in Advocate Assisted plan</span>
+                        <span>Everything in Lawyer Assisted plan</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
@@ -1587,10 +1587,10 @@ export default function VadodaraLocationClient({ faqs }: Props) {
                   SECTION 14
                 </span>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  14. Statutory References &amp; Gujarat Revenue Portals
+                  14. Legal References &amp; Gujarat Revenue Portals
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Authoritative legislative acts, judicial precedents, and government web portals governing Will execution in Gujarat:
+                  Authoritative legislative acts, judicial precedents, and government web portals governing Will signing in Gujarat:
                 </p>
               </div>
 
@@ -1600,7 +1600,7 @@ export default function VadodaraLocationClient({ faqs }: Props) {
                     Indian Succession Act, 1925
                   </strong>
                   <p className="text-slate-600">
-                    Section 59 (sound mind capacity), Section 63 (execution &amp; two attesting witnesses), Section 213 &amp; 57 (non-presidency probate exemption).
+                    Section 59 (sound mind capacity), Section 63 (signing &amp; two witnesses), Section 213 &amp; 57 (non-presidency probate exemption).
                   </p>
                 </div>
                 <div className="p-4 rounded-xl bg-slate-50 border border-slate-200 space-y-1">
@@ -1633,10 +1633,10 @@ export default function VadodaraLocationClient({ faqs }: Props) {
             {/* CLOSING CTA CARD */}
             <section className="rounded-3xl bg-gradient-to-br from-[#172228] to-[#212F35] text-white p-8 sm:p-12 text-center space-y-5 shadow-xl">
               <h3 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-white">
-                Protect Your Vadodara Properties &amp; Family Legacy Today
+                Protect Your Vadodara Assets &amp; Family Legacy Today
               </h3>
               <p className="text-slate-300 text-sm sm:text-base max-w-2xl mx-auto leading-relaxed">
-                Take 15 minutes to draft your legally validated Will online. Vetted by senior Gujarat estate advocates with complete Garvi Gujarat registration and doorstep execution assistance.
+                Take 15 minutes to draft your legally validated Will online. Vetted by senior Gujarat estate lawyers with complete Garvi Gujarat registration and doorstep signing help.
               </p>
               <div className="pt-2 flex flex-col sm:flex-row items-center justify-center gap-4">
                 <a

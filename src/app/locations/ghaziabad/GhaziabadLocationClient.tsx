@@ -115,26 +115,26 @@ const INITIAL_CHECKLIST = [
   },
   {
     id: "item-2",
-    label: "Original Aadhaar Card & PAN of Testator",
+    label: "Original Aadhaar Card & PAN of Will maker",
     detail: "Essential for biometric identity validation, electronic thumbprint, and digital photo capture at the SRO counter.",
     checked: true,
   },
   {
     id: "item-3",
     label: "Two Independent Adult Witnesses with Aadhaar",
-    detail: "Must carry original photo IDs and must not be beneficiaries receiving any asset or legacy under the Will.",
+    detail: "Must carry original photo IDs and must not be heirs receiving any asset or legacy under the Will.",
     checked: true,
   },
   {
     id: "item-4",
-    label: "Doctor Mental Fitness Certificate (MBBS / MD)",
+    label: "Doctor Sound Mind Note (MBBS / MD)",
     detail: "Strongly advised for senior citizens aged 60+. Certifies testamentary mental capacity, soundness, and lucidity.",
     checked: false,
   },
   {
     id: "item-5",
     label: "UP IGRSUP e-Appointment Token Slip",
-    detail: "Official time-slot booking receipt downloaded from the igrsup.gov.in portal with statutory ₹100 fee challan.",
+    detail: "Official time-slot booking receipt downloaded from the igrsup.gov.in portal with legal ₹100 fee challan.",
     checked: false,
   },
   {
@@ -239,7 +239,7 @@ export default function GhaziabadLocationClient({ faqs }: Props) {
               </h1>
 
               <p className="text-base sm:text-lg text-slate-200 leading-relaxed font-normal max-w-2xl">
-                Draft an airtight, legally enforceable Will for your Indirapuram high-rise apartments, GDA freehold plots, Vaishali flats, and Sahibabad commercial units. Enjoy senior advocate consultation, UP IGRSUP appointment assistance, and Section 31 doorstep registration.
+                Draft an airtight, legally enforceable Will for your Indirapuram high-rise apartments, GDA freehold plots, Vaishali flats, and Sahibabad shop units. Enjoy senior lawyer talk, UP IGRSUP appointment help, and Section 31 doorstep registration.
               </p>
 
               <div className="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
@@ -255,7 +255,7 @@ export default function GhaziabadLocationClient({ faqs }: Props) {
                   href="/contact"
                   className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full bg-white/10 text-white font-bold text-sm sm:text-base hover:bg-white/20 transition-all border border-white/20 text-center"
                 >
-                  <span>Book Advocate Consultation</span>
+                  <span>Book Lawyer Talk</span>
                 </a>
               </div>
 
@@ -267,7 +267,7 @@ export default function GhaziabadLocationClient({ faqs }: Props) {
                 </div>
                 <div className="flex items-center gap-2">
                   <Check className="w-4 h-4 text-emerald-400 shrink-0" />
-                  <span>Allahabad HC Advocate Vetted</span>
+                  <span>Allahabad HC Lawyer Vetted</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <Check className="w-4 h-4 text-emerald-400 shrink-0" />
@@ -337,7 +337,7 @@ export default function GhaziabadLocationClient({ faqs }: Props) {
             </div>
             <div className="p-4 sm:p-5 rounded-2xl bg-white border border-slate-200/80 shadow-xs">
               <div className="text-2xl sm:text-3xl font-black text-slate-900">GDA &amp; AOA</div>
-              <div className="text-xs sm:text-sm font-bold text-slate-900 mt-1">Direct Mutation Support</div>
+              <div className="text-xs sm:text-sm font-bold text-slate-900 mt-1">Direct Name Change Support</div>
               <p className="text-[11px] text-slate-500 mt-0.5">Valid for society flats &amp; Nagar Nigam ledgers</p>
             </div>
           </div>
@@ -473,17 +473,17 @@ export default function GhaziabadLocationClient({ faqs }: Props) {
                       <span>Optional Registration</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Will registration is optional under Section 18(e) of the Registration Act, 1908. An unregistered Will signed before two witnesses is legally valid, but official Book III SRO registration provides absolute authenticity against property disputes.
+                      Will registration is optional under Section 18(e) of the Registration Act, 1908. An unregistered Will signed before two witnesses is legally valid, but official Book III SRO registration provides absolute authenticity against property fights.
                     </p>
                   </div>
 
                   <div className="p-4 rounded-2xl bg-slate-50/70 border border-slate-100 space-y-1.5">
                     <div className="flex items-center gap-2 font-bold text-sm text-slate-900">
                       <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
-                      <span>Probate Non-Compulsory</span>
+                      <span>Probate Non-Needed</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Ghaziabad lies outside presidency town limits under the Allahabad High Court. Under Section 213 of the Indian Succession Act, court probate is strictly non-compulsory in Uttar Pradesh, enabling direct title transfer with a registered Will.
+                      Ghaziabad lies outside presidency town limits under the Allahabad High Court. Under Section 213 of the Indian Succession Act, court probate is strictly non-needed in Uttar Pradesh, enabling direct title transfer with a registered Will.
                     </p>
                   </div>
 
@@ -493,17 +493,17 @@ export default function GhaziabadLocationClient({ faqs }: Props) {
                       <span>Zero UP Stamp Duty</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Wills are completely exempt from stamp duty across Uttar Pradesh. You only pay a flat nominal ₹100 registration fee plus nominal scanning charges at the Sub-Registrar Office via the official UP IGRSUP portal.
+                      Wills are completely exempt from stamp duty across Uttar Pradesh. You only pay a flat nominal ₹100 registration fee plus nominal scanning charges at the SRO office via the official UP IGRSUP portal.
                     </p>
                   </div>
 
                   <div className="p-4 rounded-2xl bg-slate-50/70 border border-slate-100 space-y-1.5">
                     <div className="flex items-center gap-2 font-bold text-sm text-slate-900">
                       <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
-                      <span>GDA &amp; AOA Society Mutation</span>
+                      <span>GDA &amp; AOA Society Name Change</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      A registered Will expedites ownership mutation with the Ghaziabad Development Authority (GDA), Ghaziabad Nagar Nigam property tax rolls, and high-rise Apartment Owners Associations across Indirapuram and Vaishali.
+                      A registered Will expedites ownership name change with the Ghaziabad Development Authority (GDA), Ghaziabad Nagar Nigam property tax rolls, and high-rise Apartment Owners Associations across Indirapuram and Vaishali.
                     </p>
                   </div>
                 </div>
@@ -524,7 +524,7 @@ export default function GhaziabadLocationClient({ faqs }: Props) {
                   Will drafting and succession planning across Ghaziabad district are governed by the <strong>Indian Succession Act, 1925</strong>, the <strong>Registration Act, 1908</strong>, and the <strong>UP Apartment (Promotion of Construction, Ownership &amp; Maintenance) Act, 2010</strong>. Any adult individual of sound mind can legally bequeath self-acquired high-rise apartments, freehold plots, industrial manufacturing units, and financial investments.
                 </p>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Ghaziabad represents a complex confluence of modern NCR high-density residential corridors (Indirapuram, Vaishali, Vasundhara, Raj Nagar Extension) alongside extensive industrial belts in Sahibabad and plotted family kothis in Raj Nagar and Kavi Nagar. Without an expertly drafted Will, surviving legal heirs face protracted administrative friction across GDA property desks, municipal tax counters, and society management committees.
+                  Ghaziabad represents a complex confluence of modern NCR high-density home corridors (Indirapuram, Vaishali, Vasundhara, Raj Nagar Extension) alongside extensive industrial belts in Sahibabad and plotted family kothis in Raj Nagar and Kavi Nagar. Without an expertly drafted Will, surviving legal heirs face protracted office friction across GDA property desks, municipal tax counters, and society management committees.
                 </p>
               </div>
 
@@ -535,7 +535,7 @@ export default function GhaziabadLocationClient({ faqs }: Props) {
                   </span>
                   <h3 className="font-bold text-sm text-slate-900">Legal Capacity</h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    The testator must be a major aged 18 years or older with sound testamentary mental capacity (Section 59).
+                    The Will maker must be a major aged 18 years or older with sound testamentary mental capacity (Section 59).
                   </p>
                 </div>
 
@@ -545,7 +545,7 @@ export default function GhaziabadLocationClient({ faqs }: Props) {
                   </span>
                   <h3 className="font-bold text-sm text-slate-900">Free Consent</h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Executed voluntarily without undue influence, fraudulent misrepresentation, or family coercion (Section 61).
+                    Signed voluntarily without undue influence, fraudulent misrepresentation, or family coercion (Section 61).
                   </p>
                 </div>
 
@@ -555,7 +555,7 @@ export default function GhaziabadLocationClient({ faqs }: Props) {
                   </span>
                   <h3 className="font-bold text-sm text-slate-900">Two Witnesses</h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Must be signed in the physical presence of at least two independent adult attesting witnesses (Section 63).
+                    Must be signed in the physical presence of at least two independent adult witnesses (Section 63).
                   </p>
                 </div>
 
@@ -563,9 +563,9 @@ export default function GhaziabadLocationClient({ faqs }: Props) {
                   <span className="w-8 h-8 rounded-xl bg-rose-50 text-[#C65378] flex items-center justify-center font-bold text-sm">
                     <ShieldCheck className="w-4 h-4" />
                   </span>
-                  <h3 className="font-bold text-sm text-slate-900">Non-Beneficiary</h3>
+                  <h3 className="font-bold text-sm text-slate-900">Non-Heir</h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Attesting witnesses and their spouses must not receive any legacy or property under the Will (Section 67).
+                    Witnesses and their spouses must not receive any legacy or property under the Will (Section 67).
                   </p>
                 </div>
               </div>
@@ -579,13 +579,13 @@ export default function GhaziabadLocationClient({ faqs }: Props) {
                   <span>REGISTRATION STATUS</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  2. Is Will Registration Mandatory in Ghaziabad?
+                  2. Is Will Registration Needed in Ghaziabad?
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Under Section 18(e) of the Registration Act, 1908, the registration of a testamentary Will is strictly <strong>optional</strong>. An unregistered Will signed on standard white paper before two independent witnesses is legally valid and admissible in court.
                 </p>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  However, with rapidly escalating real estate valuations along Indirapuram, Vaishali, and Raj Nagar Extension, senior advocates strongly advise formal registration at the Sub-Registrar Office. An official Book III registration eliminates suspicion of forged signatures and guarantees seamless ownership transfer across government agencies.
+                  However, with rapidly escalating real estate valuations along Indirapuram, Vaishali, and Raj Nagar Extension, senior lawyers strongly advise formal registration at the SRO office. An official Book III registration eliminates suspicion of forged signatures and guarantees seamless ownership transfer across government agencies.
                 </p>
               </div>
 
@@ -607,12 +607,12 @@ export default function GhaziabadLocationClient({ faqs }: Props) {
                     </tr>
                     <tr>
                       <td className="p-4 font-semibold">Protection from Challenge</td>
-                      <td className="p-4 bg-rose-50/20">High legal presumption of genuine execution</td>
+                      <td className="p-4 bg-rose-50/20">High legal presumption of genuine signing</td>
                       <td className="p-4 bg-slate-50/20">Vulnerable to allegations of fraud, coercion, or forgery</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-semibold">GDA Property Mutation</td>
-                      <td className="p-4 bg-rose-50/20">Direct mutation upon presenting certified copy</td>
+                      <td className="p-4 font-semibold">GDA Property Name Change</td>
+                      <td className="p-4 bg-rose-50/20">Direct name change upon presenting certified copy</td>
                       <td className="p-4 bg-slate-50/20">GDA officials demand public notices, affidavits &amp; heavy bonds</td>
                     </tr>
                     <tr>
@@ -622,7 +622,7 @@ export default function GhaziabadLocationClient({ faqs }: Props) {
                     </tr>
                     <tr>
                       <td className="p-4 font-semibold">Nagar Nigam Tax Records</td>
-                      <td className="p-4 bg-rose-50/20">Accepted by Municipal Zonal Officers immediately</td>
+                      <td className="p-4 bg-rose-50/20">Accepted by Municipal Zonal Officers right away</td>
                       <td className="p-4 bg-slate-50/20">Subject to third-party heir objections during public window</td>
                     </tr>
                     <tr>
@@ -646,43 +646,43 @@ export default function GhaziabadLocationClient({ faqs }: Props) {
                   3. Ghaziabad Probate Law: Exemption Across Uttar Pradesh
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  One of the most persistent misconceptions among Ghaziabad property owners is whether probate from a civil court or High Court is legally mandatory before inheriting real estate. The clear legal answer is <strong>no</strong>.
+                  One of the most persistent misconceptions among Ghaziabad property owners is whether probate from a civil court or High Court is legally needed before inheriting real estate. The clear legal answer is <strong>no</strong>.
                 </p>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Under Section 213 read with Section 57(a) and 57(b) of the Indian Succession Act, 1925, probate is mandatory solely for Wills executed within or properties situated within the historical presidency towns of Mumbai, Kolkata, and Chennai. The territorial jurisdiction of the original side of high courts applies only to those three cities. Ghaziabad is a non-presidency district governed by the Allahabad High Court, where court probate is strictly optional.
+                  Under Section 213 read with Section 57(a) and 57(b) of the Indian Succession Act, 1925, probate is needed solely for Wills signed within or assets situated within the historical presidency towns of Mumbai, Kolkata, and Chennai. The territorial area of the original side of high courts applies only to those three cities. Ghaziabad is a non-presidency district governed by the Allahabad High Court, where court probate is strictly optional.
                 </p>
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="bg-white rounded-3xl border border-slate-200/90 p-6 shadow-xs space-y-3">
                   <span className="px-3 py-1 rounded-full bg-emerald-100 text-emerald-800 text-xs font-extrabold uppercase">
-                    Settled Law: Non-Compulsory
+                    Settled Law: Non-Needed
                   </span>
                   <h3 className="font-bold text-base text-slate-900">
                     Allahabad High Court Precedents
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    The Allahabad High Court in landmark rulings including <em>Smt. Vimla v. Shankarlal</em> and subsequent division bench decisions reaffirmed that obtaining probate is not a condition precedent to establish rights under a Will in Uttar Pradesh. A registered Will is fully operational for GDA mutation, banking access, and apartment succession.
+                    The Allahabad High Court in landmark rulings including <em>Smt. Vimla v. Shankarlal</em> and subsequent division bench decisions reaffirmed that getting probate is not a condition precedent to set up rights under a Will in Uttar Pradesh. A registered Will is fully operational for GDA name change, banking access, and apartment succession.
                   </p>
                   <div className="pt-2 text-xs text-slate-500 flex items-center gap-1.5">
                     <Check className="w-3.5 h-3.5 text-emerald-600" />
-                    <span>Enables immediate asset transmission without High Court delays</span>
+                    <span>Enables immediate asset transfer without High Court delays</span>
                   </div>
                 </div>
 
                 <div className="bg-white rounded-3xl border border-rose-200 p-6 shadow-xs space-y-3 bg-rose-50/30">
                   <span className="px-3 py-1 rounded-full bg-rose-100 text-[#C65378] text-xs font-extrabold uppercase">
-                    Voluntary Filings: High-Value Disputes
+                    Voluntary Filings: High-Value Fights
                   </span>
                   <h3 className="font-bold text-base text-slate-900">
                     When is Probate Filed in Ghaziabad District Court?
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    An executor may voluntarily file for probate or letters of administration before the District Judge in Ghaziabad only if hostile co-heirs file partition suits or contest the testator&apos;s mental capacity. A grant of probate provides an undisputed judgment <em>in rem</em> that conclusively settles ownership.
+                    An executor may voluntarily file for probate or letters of management before the District Judge in Ghaziabad only if hostile co-heirs file split suits or contest the Will maker&apos;s mental capacity. A grant of probate provides an undisputed judgment <em>in rem</em> that conclusively settles ownership.
                   </p>
                   <div className="pt-2 text-xs text-slate-500 flex items-center gap-1.5">
                     <AlertTriangle className="w-3.5 h-3.5 text-[#C65378]" />
-                    <span>Conclusive judicial decree against any collateral claims</span>
+                    <span>Strong judicial decree against any collateral claims</span>
                   </div>
                 </div>
               </div>
@@ -699,7 +699,7 @@ export default function GhaziabadLocationClient({ faqs }: Props) {
                   4. Ghaziabad Sub-Registrar Offices: SRO Directory Guide
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Ghaziabad operates designated Sub-Registrar Offices under the Stamps and Registration Department Uttar Pradesh (IGRSUP). Under Section 32 of the Registration Act, your Will can be registered at the Sub-Registrar Office having jurisdiction over your permanent residence or where any portion of your immovable property is situated.
+                  Ghaziabad operates designated Sub-Registrar Offices under the Stamps and Registration Department Uttar Pradesh (IGRSUP). Under Section 32 of the Registration Act, your Will can be registered at the SRO office having area over your permanent residence or where any portion of your land and flats is situated.
                 </p>
               </div>
 
@@ -783,7 +783,7 @@ export default function GhaziabadLocationClient({ faqs }: Props) {
                       href="/contact"
                       className="inline-flex items-center gap-1.5 font-bold text-[#C65378] hover:underline"
                     >
-                      <span>Request Advocate Assistance for {activeHubData.name}</span>
+                      <span>Request Lawyer Help for {activeHubData.name}</span>
                       <ArrowRight className="w-3.5 h-3.5" />
                     </a>
                   </div>
@@ -802,7 +802,7 @@ export default function GhaziabadLocationClient({ faqs }: Props) {
                   5. Regional Cities: Area-Wise Will Drafting in Ghaziabad
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Real estate assets in Ghaziabad span high-rise condominiums along Indirapuram and Vaishali, planned GDA plotted developments in Vasundhara and Raj Nagar, expanding residential corridors in Raj Nagar Extension, and major industrial centers in Sahibabad and Tronica City. Our estate advocates deliver customized legal drafting, UP IGRSUP token scheduling, and Sub-Registrar accompaniment across all key micro-markets:
+                  Real estate assets in Ghaziabad span high-rise condominiums along Indirapuram and Vaishali, planned GDA plotted developments in Vasundhara and Raj Nagar, expanding home corridors in Raj Nagar Extension, and major industrial centers in Sahibabad and Tronica City. Our estate lawyers deliver customized legal drafting, UP IGRSUP token scheduling, and Sub-Registrar accompaniment across all key micro-markets:
                 </p>
               </div>
 
@@ -842,7 +842,7 @@ export default function GhaziabadLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Sahibabad, Site IV Trans-Hindon</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        IGRSUP token booking, advocate accompaniment, and Section 31 doorstep execution for elderly residents in Indirapuram.
+                        IGRSUP token booking, lawyer accompaniment, and Section 31 doorstep signing for elderly residents in Indirapuram.
                       </p>
                     </div>
                   </div>
@@ -886,22 +886,22 @@ export default function GhaziabadLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Customized <strong>Will drafting services in Vaishali</strong> and Kaushambi for gated residential societies, independent builder floors, and doctor clinics. Seamlessly integrates interstate asset planning for families with properties straddling Delhi and Ghaziabad, bank lockers, and clear life-interest provisions for surviving spouses.
+                      Customized <strong>Will drafting services in Vaishali</strong> and Kaushambi for gated home societies, independent builder floors, and doctor clinics. Seamlessly integrates interstate asset planning for families with assets straddling Delhi and Ghaziabad, bank lockers, and clear life-interest rules for surviving spouses.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
                       <div className="flex items-center gap-2 font-bold text-slate-900">
                         <Building className="w-3.5 h-3.5 text-[#C65378]" />
-                        <span>SRO Hub: Trans-Hindon Administrative Office</span>
+                        <span>SRO Hub: Trans-Hindon Office Office</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Dual-state succession planning, society share transfers, and rapid Book III registry execution.
+                        Dual-state succession planning, society share transfers, and rapid Book III registry signing.
                       </p>
                     </div>
                   </div>
 
                   <div className="pt-4 mt-4 border-t border-slate-100 flex items-center justify-between">
-                    <span className="text-xs font-bold text-slate-500">Commercial &amp; Residential</span>
+                    <span className="text-xs font-bold text-slate-500">Shop &amp; Home</span>
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
@@ -939,7 +939,7 @@ export default function GhaziabadLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Comprehensive <strong>Will drafting services in Vasundhara</strong> and Sahibabad catering to GDA plotted duplexes, row houses, and Site IV manufacturing units. Protects industrial leasehold transfers, MSME enterprise succession, partnership equity bequests, and residential assets from bureaucratic delays.
+                      Full <strong>Will drafting services in Vasundhara</strong> and Sahibabad catering to GDA plotted duplexes, row houses, and Site IV manufacturing units. Protects industrial leasehold transfers, MSME enterprise succession, partnership equity bequests, and home assets from bureaucratic delays.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -948,7 +948,7 @@ export default function GhaziabadLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Sahibabad Industrial Area Office</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Industrial lease succession, GDA plotted land bequeathal, and advocate-vetted commercial clauses.
+                        Industrial lease succession, GDA plotted land bequeathal, and lawyer-vetted shop clauses.
                       </p>
                     </div>
                   </div>
@@ -973,7 +973,7 @@ export default function GhaziabadLocationClient({ faqs }: Props) {
                     <div className="flex items-center justify-between gap-2">
                       <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-rose-50 text-[#C65378] border border-rose-100">
                         <MapPin className="w-3.5 h-3.5" />
-                        High-Growth Residential Belt
+                        High-Growth Home Belt
                       </span>
                       <span className="text-[11px] font-semibold text-slate-500 bg-slate-100 px-2.5 py-1 rounded-lg">
                         SRO II Ghaziabad (Collectorate)
@@ -992,7 +992,7 @@ export default function GhaziabadLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Tailored <strong>Will drafting services in Raj Nagar Extension</strong> for first-generation flat buyers, modern residential complexes, and township apartments along the NH-58 bypass. Formulates explicit alternate beneficiaries, minor guardianship trusts, and smooth GDA municipal registry mutation protocols.
+                      Tailored <strong>Will drafting services in Raj Nagar Extension</strong> for first-generation flat buyers, modern home complexes, and township apartments along the NH-58 bypass. Formulates explicit alternate heirs, minor guardianship trusts, and smooth GDA municipal registry name change protocols.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1001,7 +1001,7 @@ export default function GhaziabadLocationClient({ faqs }: Props) {
                         <span>SRO Hub: SRO II Collectorate, Raj Nagar</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        New tower title verification, builder-buyer assignment bequeathal, and confirmed IGRSUP appointment slots.
+                        New tower title check, builder-buyer assignment bequeathal, and confirmed IGRSUP appointment slots.
                       </p>
                     </div>
                   </div>
@@ -1045,7 +1045,7 @@ export default function GhaziabadLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Executive <strong>Will drafting services in Raj Nagar</strong> and Kavi Nagar for established heritage kothis, senior civil servant retirements, and Kavi Nagar Industrial Area commercial properties. Integrates medical doctor soundness certificates, family settlement trusts, and clear executor designations.
+                      Executive <strong>Will drafting services in Raj Nagar</strong> and Kavi Nagar for established heritage kothis, senior civil servant retirements, and Kavi Nagar Industrial Area shop assets. Integrates medical doctor soundness papers, family settlement trusts, and clear executor designations.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1098,7 +1098,7 @@ export default function GhaziabadLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Dedicated <strong>Will drafting services in Crossings Republik</strong> for multi-tower condominium owners, IT professionals, and corporate executives along the Delhi-Meerut Expressway. Structures joint tenancy survivorship, mutual fund transmission, and digital asset bequeathal across international jurisdictions.
+                      Dedicated <strong>Will drafting services in Crossings Republik</strong> for multi-tower condominium owners, IT professionals, and corporate executives along the Delhi-Meerut Expressway. Structures joint tenancy survivorship, mutual fund transfer, and digital asset bequeathal across international areas.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1151,7 +1151,7 @@ export default function GhaziabadLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Specialized <strong>Will drafting services in Modi Nagar</strong> and Muradnagar for ancestral family lands, commercial market shops along GT Road, and residential properties near the RRTS corridor. Harmonizes agricultural land succession under the UP Revenue Code, 2006 to prevent tehsildar mutation disputes.
+                      Specialized <strong>Will drafting services in Modi Nagar</strong> and Muradnagar for family family lands, shop market shops along GT Road, and home assets near the RRTS corridor. Harmonizes farm land succession under the UP Revenue Code, 2006 to prevent tehsildar name change fights.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1160,13 +1160,13 @@ export default function GhaziabadLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Tehsil Karyalaya, Modi Nagar</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        UP Revenue Code farmland inheritance, ancestral property partitioning, and rural SRO registration.
+                        UP Revenue Code farmland inheritance, family property partitioning, and rural SRO registration.
                       </p>
                     </div>
                   </div>
 
                   <div className="pt-4 mt-4 border-t border-slate-100 flex items-center justify-between">
-                    <span className="text-xs font-bold text-slate-500">Farmland &amp; Commercial Shops</span>
+                    <span className="text-xs font-bold text-slate-500">Farmland &amp; Shop Shops</span>
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
@@ -1204,7 +1204,7 @@ export default function GhaziabadLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Expert <strong>Will drafting services in Loni</strong> and Tronica City for UPSIDC industrial plots, garment units, packaging factories, and plotted layouts. Details industrial plot leasehold transfers, manufacturing assets, and commercial warehouse bequests with full regulatory compliance.
+                      Expert <strong>Will drafting services in Loni</strong> and Tronica City for UPSIDC industrial plots, garment units, packaging factories, and plotted layouts. Details industrial plot leasehold transfers, manufacturing assets, and shop warehouse bequests with full regulatory compliance.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1213,7 +1213,7 @@ export default function GhaziabadLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Sub-Divisional Office Complex, Loni</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        UPSIDC industrial plot transfer compliance, trade license succession, and prompt SRO execution.
+                        UPSIDC industrial plot transfer compliance, trade license succession, and prompt SRO signing.
                       </p>
                     </div>
                   </div>
@@ -1245,7 +1245,7 @@ export default function GhaziabadLocationClient({ faqs }: Props) {
                   6. Step-by-Step SOP: Drafting to IGRSUP Ghaziabad Registry
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Follow this verified 5-stage legal operating procedure to create, execute, and register your Will before the Sub-Registrar in Ghaziabad:
+                  Follow this verified 5-stage legal operating step to create, execute, and register your Will before the Sub-Registrar in Ghaziabad:
                 </p>
               </div>
 
@@ -1270,7 +1270,7 @@ export default function GhaziabadLocationClient({ faqs }: Props) {
                       2
                     </span>
                     <h3 className="font-bold text-sm text-slate-900">
-                      Advocate Drafting
+                      Lawyer Drafting
                     </h3>
                     <p className="text-xs text-slate-600 leading-relaxed">
                       Draft customized legal clauses covering revocation of past wills, survivorship, executor powers, and minor guardianships.
@@ -1284,10 +1284,10 @@ export default function GhaziabadLocationClient({ faqs }: Props) {
                       3
                     </span>
                     <h3 className="font-bold text-sm text-slate-900">
-                      Valid Execution
+                      Valid Signing
                     </h3>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Print on A4 paper and sign each page in the physical presence of two independent non-beneficiary adult witnesses.
+                      Print on A4 paper and sign each page in the physical presence of two independent non-heir adult witnesses.
                     </p>
                   </div>
                 </div>
@@ -1315,7 +1315,7 @@ export default function GhaziabadLocationClient({ faqs }: Props) {
                       SRO Biometrics
                     </h3>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Visit Ghaziabad SRO with witnesses for verbal verification, photo capture, and biometric thumbprint to seal Book III entry.
+                      Visit Ghaziabad SRO with witnesses for verbal check, photo capture, and biometric thumbprint to seal Book III entry.
                     </p>
                   </div>
                 </div>
@@ -1333,7 +1333,7 @@ export default function GhaziabadLocationClient({ faqs }: Props) {
                   7. Section 31 Doorstep SRO Registration for Senior Citizens
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  For elderly, unwell, or bedridden citizens residing in Indirapuram, Vaishali, Vasundhara, or Raj Nagar, traveling to the Sub-Registrar Office can be a physical hardship. Under <strong>Section 31 of the Registration Act, 1908</strong>, the Sub-Registrar possesses legal authority to attend a private residence or hospital to register a Will.
+                  For elderly, unwell, or bedridden citizens residing in Indirapuram, Vaishali, Vasundhara, or Raj Nagar, traveling to the SRO office can be a physical hardship. Under <strong>Section 31 of the Registration Act, 1908</strong>, the Sub-Registrar possesses legal authority to attend a private residence or hospital to register a Will.
                 </p>
               </div>
 
@@ -1353,7 +1353,7 @@ export default function GhaziabadLocationClient({ faqs }: Props) {
                   <div className="flex items-start gap-3 p-4 rounded-2xl bg-slate-50 border border-slate-100">
                     <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
                     <div>
-                      <strong className="text-slate-900 block">Commission Application</strong>
+                      <strong className="text-slate-900 block">Commission Form</strong>
                       <span className="text-slate-600">Our legal team drafts and submits the formal Section 31 special commission petition before the jurisdictional Ghaziabad Sub-Registrar.</span>
                     </div>
                   </div>
@@ -1388,7 +1388,7 @@ export default function GhaziabadLocationClient({ faqs }: Props) {
                   8. Document Checklist for Ghaziabad Sub-Registrar Offices
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Prepare your documentation before scheduling your Sub-Registrar appointment. You have organized <strong>{checkedCount} of {checklist.length}</strong> required documents:
+                  Prepare your papers before scheduling your Sub-Registrar appointment. You have organized <strong>{checkedCount} of {checklist.length}</strong> required documents:
                 </p>
               </div>
 
@@ -1437,7 +1437,7 @@ export default function GhaziabadLocationClient({ faqs }: Props) {
                   9. Ghaziabad Property Types: GDA Flats, Plots &amp; Builder Floors
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Succession procedures in Ghaziabad vary considerably depending on whether the asset is a high-rise society apartment, a GDA freehold plot, or an industrial lease:
+                  Succession steps in Ghaziabad vary considerably depending on whether the asset is a high-rise society apartment, a GDA freehold plot, or an industrial lease:
                 </p>
               </div>
 
@@ -1462,7 +1462,7 @@ export default function GhaziabadLocationClient({ faqs }: Props) {
                     Vasundhara &amp; Raj Nagar Kothis
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Independent houses and plotted sectors require direct mutation on Ghaziabad Development Authority records. A certified copy of the registered Will is presented with an indemnity bond for direct mutation into the legal heir&apos;s name.
+                    Independent houses and plotted sectors require direct name change on Ghaziabad Development Authority records. A certified copy of the registered Will is presented with an indemnity bond for direct name change into the legal heir&apos;s name.
                   </p>
                 </div>
 
@@ -1491,7 +1491,7 @@ export default function GhaziabadLocationClient({ faqs }: Props) {
                   10. Official IGRSUP Ghaziabad Registration Fees &amp; Stamp Rules
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Unlike commercial sale conveyances or gift deeds that attract 5% to 7% stamp duty in Uttar Pradesh, testamentary Wills are completely exempt from stamp duty. Government registration fees in Ghaziabad are purely nominal:
+                  Unlike shop sale conveyances or gift deeds that attract 5% to 7% stamp duty in Uttar Pradesh, testamentary Wills are completely exempt from stamp duty. Government registration fees in Ghaziabad are purely nominal:
                 </p>
               </div>
 
@@ -1500,7 +1500,7 @@ export default function GhaziabadLocationClient({ faqs }: Props) {
                   <thead>
                     <tr className="bg-slate-100/80 border-b border-slate-200 text-slate-800">
                       <th className="p-4 font-bold">Fee Component</th>
-                      <th className="p-4 font-bold">Statutory Amount</th>
+                      <th className="p-4 font-bold">Legal Amount</th>
                       <th className="p-4 font-bold">Remittance Authority</th>
                     </tr>
                   </thead>
@@ -1512,7 +1512,7 @@ export default function GhaziabadLocationClient({ faqs }: Props) {
                     </tr>
                     <tr>
                       <td className="p-4 font-semibold">SRO Book III Registration Fee</td>
-                      <td className="p-4 font-bold text-[#C65378]">₹100 (Flat Statutory Fee)</td>
+                      <td className="p-4 font-bold text-[#C65378]">₹100 (Flat Legal Fee)</td>
                       <td className="p-4">IGRSUP Portal via e-Challan</td>
                     </tr>
                     <tr>
@@ -1541,7 +1541,7 @@ export default function GhaziabadLocationClient({ faqs }: Props) {
                   11. Transparent Will Packages &amp; Legal Fees in Ghaziabad
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Choose the legal assistance package tailored to your family&apos;s estate planning and property portfolio in Ghaziabad:
+                  Choose the legal help package tailored to your family&apos;s estate planning and property portfolio in Ghaziabad:
                 </p>
               </div>
 
@@ -1568,11 +1568,11 @@ export default function GhaziabadLocationClient({ faqs }: Props) {
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>Legally vetted statutory clauses</span>
+                        <span>Legally vetted legal clauses</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>Instant PDF download &amp; execution guide</span>
+                        <span>Instant PDF download &amp; signing guide</span>
                       </li>
                     </ul>
                   </div>
@@ -1592,16 +1592,16 @@ export default function GhaziabadLocationClient({ faqs }: Props) {
                   </div>
                   <div className="space-y-4">
                     <span className="text-xs font-bold uppercase tracking-wider text-[#C65378]">
-                      Comprehensive
+                      Full
                     </span>
                     <h3 className="font-extrabold text-xl text-slate-900">
-                      Advocate Consultation
+                      Lawyer Talk
                     </h3>
                     <div className="text-3xl font-black text-slate-900">
                       ₹4,990
                     </div>
                     <p className="text-xs text-slate-600">
-                      Senior estate advocate review for high-rise society flats, GDA plots, and multi-heir portfolios.
+                      Senior estate lawyer review for high-rise society flats, GDA plots, and multi-heir portfolios.
                     </p>
                     <ul className="space-y-2.5 text-xs text-slate-700 pt-3 border-t border-slate-100">
                       <li className="flex items-center gap-2">
@@ -1610,7 +1610,7 @@ export default function GhaziabadLocationClient({ faqs }: Props) {
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>1-on-1 video call with senior advocate</span>
+                        <span>1-on-1 video call with senior lawyer</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
@@ -1626,7 +1626,7 @@ export default function GhaziabadLocationClient({ faqs }: Props) {
                     href="/contact"
                     className="mt-6 w-full py-3 rounded-xl bg-[#C65378] text-white text-xs font-bold text-center hover:bg-[#a13c5d] transition-colors cursor-pointer"
                   >
-                    Schedule Advocate Call
+                    Schedule Lawyer Call
                   </a>
                 </div>
 
@@ -1634,7 +1634,7 @@ export default function GhaziabadLocationClient({ faqs }: Props) {
                 <div className="rounded-3xl bg-white border border-slate-200/90 p-6 shadow-xs flex flex-col justify-between">
                   <div className="space-y-4">
                     <span className="text-xs font-bold uppercase tracking-wider text-slate-500">
-                      Assisted SRO Execution
+                      Assisted SRO Signing
                     </span>
                     <h3 className="font-extrabold text-xl text-slate-900">
                       Complete SRO Registration
@@ -1643,12 +1643,12 @@ export default function GhaziabadLocationClient({ faqs }: Props) {
                       ₹9,990
                     </div>
                     <p className="text-xs text-slate-600">
-                      End-to-end IGRSUP appointment management and physical advocate accompaniment at Ghaziabad SRO.
+                      End-to-end IGRSUP appointment management and physical lawyer accompaniment at Ghaziabad SRO.
                     </p>
                     <ul className="space-y-2.5 text-xs text-slate-700 pt-3 border-t border-slate-100">
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>Everything in Consultation</span>
+                        <span>Everything in Talk</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
@@ -1656,11 +1656,11 @@ export default function GhaziabadLocationClient({ faqs }: Props) {
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>Physical advocate presence at Ghaziabad SRO</span>
+                        <span>Physical lawyer presence at Ghaziabad SRO</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>Section 31 doorstep execution support</span>
+                        <span>Section 31 doorstep signing support</span>
                       </li>
                     </ul>
                   </div>
@@ -1715,10 +1715,10 @@ export default function GhaziabadLocationClient({ faqs }: Props) {
                   <span>LEGAL AUTHORITIES &amp; STATUTES</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  13. Statutory Citations &amp; UP Legal Portals for Ghaziabad
+                  13. Legal Citations &amp; UP Legal Portals for Ghaziabad
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Every legal principle and procedural guideline on this page is anchored in verified statutory enactments and binding judicial decisions:
+                  Every legal principle and procedural guideline on this page is anchored in verified legal enactments and binding judicial decisions:
                 </p>
               </div>
 
@@ -1728,7 +1728,7 @@ export default function GhaziabadLocationClient({ faqs }: Props) {
                     Indian Succession Act, 1925
                   </span>
                   <p className="text-xs text-slate-600">
-                    Section 59 (Testamentary capacity), Section 63 (Two attesting witnesses), Section 213 (Probate optional outside presidency towns).
+                    Section 59 (Sound mind), Section 63 (Two witnesses), Section 213 (Probate optional outside presidency towns).
                   </p>
                 </div>
 
@@ -1746,7 +1746,7 @@ export default function GhaziabadLocationClient({ faqs }: Props) {
                     UP Apartment Act, 2010 &amp; GDA Bylaws
                   </span>
                   <p className="text-xs text-slate-600">
-                    UP Apartment (Promotion of Construction, Ownership &amp; Maintenance) Act, 2010 and Ghaziabad Development Authority flat mutation regulations.
+                    UP Apartment (Promotion of Construction, Ownership &amp; Maintenance) Act, 2010 and Ghaziabad Development Authority flat name change regulations.
                   </p>
                 </div>
 
@@ -1764,10 +1764,10 @@ export default function GhaziabadLocationClient({ faqs }: Props) {
             {/* BOTTOM CONVERSION CTA BANNER */}
             <section className="rounded-3xl bg-gradient-to-br from-[#172228] to-[#212F35] text-white p-8 sm:p-12 text-center space-y-5 shadow-xl">
               <h3 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-white">
-                Protect Your Ghaziabad Properties &amp; Family Legacy
+                Protect Your Ghaziabad Assets &amp; Family Legacy
               </h3>
               <p className="text-sm sm:text-base text-slate-200 max-w-2xl mx-auto leading-relaxed">
-                Do not leave your hard-earned Indirapuram flats, GDA plots, or family assets to administrative delays. Draft a legally binding Will online today or consult our senior Allahabad High Court advocates.
+                Do not leave your hard-earned Indirapuram flats, GDA plots, or family assets to office delays. Draft a legally binding Will online today or consult our senior Allahabad High Court lawyers.
               </p>
               <div className="pt-3 flex flex-col sm:flex-row items-center justify-center gap-4">
                 <a
@@ -1781,7 +1781,7 @@ export default function GhaziabadLocationClient({ faqs }: Props) {
                   href="/contact"
                   className="w-full sm:w-auto px-6 py-3.5 rounded-full bg-white/10 text-white font-bold text-sm sm:text-base hover:bg-white/20 transition-all border border-white/20"
                 >
-                  Book Advocate Consultation
+                  Book Lawyer Talk
                 </a>
               </div>
             </section>
@@ -1824,7 +1824,7 @@ export default function GhaziabadLocationClient({ faqs }: Props) {
               />
             </div>
             <div className="pt-3 flex items-center justify-between text-xs text-slate-500">
-              <span>Ghaziabad SRO Registered &amp; GDA / AOA Mutation Compliant</span>
+              <span>Ghaziabad SRO Registered &amp; GDA / AOA Name Change Compliant</span>
               <a
                 href="/start"
                 onClick={(e) => {

@@ -134,26 +134,26 @@ const INITIAL_CHECKLIST = [
   },
   {
     id: "item-2",
-    label: "Original Aadhaar Card & PAN of Testator",
+    label: "Original Aadhaar Card & PAN of Will maker",
     detail: "Essential for biometric identity validation, electronic thumbprint, and digital photo at the Port Blair or Tehsil SRO counter.",
     checked: true,
   },
   {
     id: "item-3",
     label: "Two Independent Adult Witnesses with Aadhaar",
-    detail: "Must carry original government photo IDs and must not be beneficiaries receiving any asset or legacy under the Will.",
+    detail: "Must carry original government photo IDs and must not be heirs receiving any asset or legacy under the Will.",
     checked: true,
   },
   {
     id: "item-4",
-    label: "Doctor Mental Fitness Certificate (MBBS / MD)",
+    label: "Doctor Sound Mind Note (MBBS / MD)",
     detail: "Strongly advised for senior citizens aged 60+. Certifies testamentary mental capacity, soundness of mind, and lucidity.",
     checked: false,
   },
   {
     id: "item-5",
     label: "PBMC Property Tax Receipts & Allotment Orders",
-    detail: "Official property records for residential flats or commercial shops under Port Blair Municipal Council jurisdiction.",
+    detail: "Official property records for home flats or shop shops under Port Blair Municipal Council area.",
     checked: false,
   },
   {
@@ -262,7 +262,7 @@ export default function AndamanLocationClient({ faqs }: Props) {
               </h1>
 
               <p className="text-base sm:text-lg text-slate-200 leading-relaxed font-normal max-w-2xl">
-                Draft a legally sound Will for your PBMC residential properties, revenue grant lands under Regulation 1966, Swaraj Dweep tourism resorts, and family investments. Get expert legal drafting, Port Blair SRO appointment booking, and Section 31 doorstep execution.
+                Draft a legally sound Will for your PBMC home assets, revenue grant lands under Regulation 1966, Swaraj Dweep tourism resorts, and family investments. Get expert legal drafting, Port Blair SRO appointment booking, and Section 31 doorstep signing.
               </p>
 
               <div className="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
@@ -508,17 +508,17 @@ export default function AndamanLocationClient({ faqs }: Props) {
                       <span>Optional Registration</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Will registration is optional under Section 18(e) of the Registration Act, 1908. While an unregistered Will signed before two witnesses is legally valid, Book III registration at Port Blair SRO provides conclusive authenticity against property disputes.
+                      Will registration is optional under Section 18(e) of the Registration Act, 1908. While an unregistered Will signed before two witnesses is legally valid, Book III registration at Port Blair SRO provides strong authenticity against property fights.
                     </p>
                   </div>
 
                   <div className="p-4 rounded-2xl bg-slate-50/70 border border-slate-100 space-y-1.5">
                     <div className="flex items-center gap-2 font-bold text-sm text-slate-900">
                       <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
-                      <span>Probate Non-Compulsory</span>
+                      <span>Probate Non-Needed</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Andaman and Nicobar Islands lie outside the historical presidency limits of Kolkata. Under Section 213 of the Indian Succession Act, probate is non-compulsory here, enabling direct title transfer upon presenting a registered Will.
+                      Andaman and Nicobar Islands lie outside the historical presidency limits of Kolkata. Under Section 213 of the Indian Succession Act, probate is non-needed here, enabling direct title transfer upon presenting a registered Will.
                     </p>
                   </div>
 
@@ -528,17 +528,17 @@ export default function AndamanLocationClient({ faqs }: Props) {
                       <span>Zero Island Stamp Duty</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Wills are completely exempt from ad-valorem stamp duty across the union territory. At Port Blair and Tehsil registration counters, you only pay nominal statutory government registration and processing fees.
+                      Wills are completely exempt from ad-valorem stamp duty across the union territory. At Port Blair and Tehsil registration counters, you only pay nominal legal government registration and processing fees.
                     </p>
                   </div>
 
                   <div className="p-4 rounded-2xl bg-slate-50/70 border border-slate-100 space-y-1.5">
                     <div className="flex items-center gap-2 font-bold text-sm text-slate-900">
                       <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
-                      <span>PBMC &amp; Revenue Regulation Mutation</span>
+                      <span>PBMC &amp; Revenue Regulation Name Change</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      A registered Will expedites property tax mutation with Port Blair Municipal Council (PBMC) and ensures swift record updating under the Andaman Land Revenue and Land Reforms Regulation, 1966.
+                      A registered Will expedites property tax name change with Port Blair Municipal Council (PBMC) and ensures swift record updating under the Andaman Land Revenue and Land Reforms Regulation, 1966.
                     </p>
                   </div>
                 </div>
@@ -556,10 +556,10 @@ export default function AndamanLocationClient({ faqs }: Props) {
                   1. Will Drafting &amp; Legal Framework in Andaman &amp; Nicobar
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Succession planning and testamentary disposition across the Andaman and Nicobar Islands operate under the <strong>Indian Succession Act, 1925</strong>, the <strong>Registration Act, 1908</strong>, and the <strong>Andaman and Nicobar Islands Land Revenue and Land Reforms Regulation, 1966</strong>. Any adult individual of sound mind can legally bequeath self-acquired properties, commercial leases, and financial assets.
+                  Succession planning and Will across the Andaman and Nicobar Islands operate under the <strong>Indian Succession Act, 1925</strong>, the <strong>Registration Act, 1908</strong>, and the <strong>Andaman and Nicobar Islands Land Revenue and Land Reforms Regulation, 1966</strong>. Any adult individual of sound mind can legally bequeath self-acquired assets, shop leases, and financial assets.
                 </p>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Estate assets across the archipelago represent diverse legal tenures. Families often hold urban residential plots in Port Blair, tourism resort leases in Swaraj Dweep (Havelock), and agricultural plantations in Middle and North Andaman. Without a clearly drafted Will, surviving heirs must navigate revenue inquiries, municipal verification hurdles, and potential title clouds.
+                  Estate assets across the archipelago represent diverse legal tenures. Families often hold urban home plots in Port Blair, tourism resort leases in Swaraj Dweep (Havelock), and farm plantations in Middle and North Andaman. Without a clearly drafted Will, surviving heirs must navigate revenue inquiries, municipal check hurdles, and potential title clouds.
                 </p>
               </div>
 
@@ -570,7 +570,7 @@ export default function AndamanLocationClient({ faqs }: Props) {
                   </span>
                   <h3 className="font-bold text-sm text-slate-900">Legal Capacity</h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    The testator must be a major aged 18 years or older with sound testamentary mental capacity (Section 59).
+                    The Will maker must be a major aged 18 years or older with sound testamentary mental capacity (Section 59).
                   </p>
                 </div>
 
@@ -580,7 +580,7 @@ export default function AndamanLocationClient({ faqs }: Props) {
                   </span>
                   <h3 className="font-bold text-sm text-slate-900">Free Consent</h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Executed voluntarily without undue influence, fraudulent coercion, or family misrepresentation (Section 61).
+                    Signed voluntarily without undue influence, fraudulent coercion, or family misrepresentation (Section 61).
                   </p>
                 </div>
 
@@ -590,7 +590,7 @@ export default function AndamanLocationClient({ faqs }: Props) {
                   </span>
                   <h3 className="font-bold text-sm text-slate-900">Two Witnesses</h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Must be signed in the physical presence of at least two independent adult attesting witnesses (Section 63).
+                    Must be signed in the physical presence of at least two independent adult witnesses (Section 63).
                   </p>
                 </div>
 
@@ -598,9 +598,9 @@ export default function AndamanLocationClient({ faqs }: Props) {
                   <span className="w-8 h-8 rounded-xl bg-rose-50 text-[#C65378] flex items-center justify-center font-bold text-sm">
                     <ShieldCheck className="w-4 h-4" />
                   </span>
-                  <h3 className="font-bold text-sm text-slate-900">Non-Beneficiary</h3>
+                  <h3 className="font-bold text-sm text-slate-900">Non-Heir</h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Attesting witnesses and their spouses must not receive any legacy or property bequest under the Will (Section 67).
+                    Witnesses and their spouses must not receive any legacy or property bequest under the Will (Section 67).
                   </p>
                 </div>
               </div>
@@ -614,13 +614,13 @@ export default function AndamanLocationClient({ faqs }: Props) {
                   <span>REGISTRATION STATUS</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  2. Is Will Registration Mandatory in Andaman &amp; Nicobar?
+                  2. Is Will Registration Needed in Andaman &amp; Nicobar?
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Under Section 18(e) of the Registration Act, 1908, the registration of a Will is strictly <strong>optional</strong>. An unregistered Will signed on standard paper before two independent witnesses possesses legal validity and can be produced in judicial proceedings.
                 </p>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  However, given the rising value of real estate across Port Blair, Swaraj Dweep, and coastal settlements, estate advocates strongly recommend formal registration. Book III registration at the Port Blair Sub-Registrar Office eliminates suspicion of counterfeit execution and guarantees seamless mutation across revenue and municipal departments.
+                  However, given the rising value of real estate across Port Blair, Swaraj Dweep, and coastal settlements, estate lawyers strongly recommend formal registration. Book III registration at the Port Blair SRO office eliminates suspicion of counterfeit signing and guarantees seamless name change across revenue and municipal departments.
                 </p>
               </div>
 
@@ -642,23 +642,23 @@ export default function AndamanLocationClient({ faqs }: Props) {
                     </tr>
                     <tr>
                       <td className="p-4 font-semibold">Protection Against Challenge</td>
-                      <td className="p-4 bg-rose-50/20">High legal presumption of genuine execution</td>
+                      <td className="p-4 bg-rose-50/20">High legal presumption of genuine signing</td>
                       <td className="p-4 bg-slate-50/20">Vulnerable to allegations of fraud or coercion</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-semibold">PBMC Municipal Mutation</td>
+                      <td className="p-4 font-semibold">PBMC Municipal Name Change</td>
                       <td className="p-4 bg-rose-50/20">Direct transfer on presenting certified copy</td>
                       <td className="p-4 bg-slate-50/20">PBMC officials often require indemnity bonds or NOCs</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-semibold">Land Revenue Mutation (1966 Reg)</td>
+                      <td className="p-4 font-semibold">Land Revenue Name Change (1966 Reg)</td>
                       <td className="p-4 bg-rose-50/20">Accepted by Tehsildar for swift record update</td>
                       <td className="p-4 bg-slate-50/20">Frequent objections from other legal heirs during notice</td>
                     </tr>
                     <tr>
                       <td className="p-4 font-semibold">Tourism Resort Lease Transfer</td>
                       <td className="p-4 bg-rose-50/20">Straightforward approval by Administration desks</td>
-                      <td className="p-4 bg-slate-50/20">Lengthy verification and title scrutiny delays</td>
+                      <td className="p-4 bg-slate-50/20">Lengthy check and title scrutiny delays</td>
                     </tr>
                     <tr>
                       <td className="p-4 font-semibold">Government Stamp Duty</td>
@@ -681,27 +681,27 @@ export default function AndamanLocationClient({ faqs }: Props) {
                   3. Andaman Probate Law: Calcutta HC Circuit Bench Rules
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  A common question among property owners in Port Blair is whether probate from the High Court is mandatory before heirs can transfer property. The settled legal answer is <strong>no</strong>.
+                  A common question among property owners in Port Blair is whether probate from the High Court is needed before heirs can transfer property. The settled legal answer is <strong>no</strong>.
                 </p>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Under Section 213 read with Section 57(a) and 57(b) of the Indian Succession Act, 1925, probate is compulsory only for Wills executed within or properties situated within the original civil jurisdiction of the historical presidency towns of Kolkata, Mumbai, and Chennai. Although the <strong>Calcutta High Court Circuit Bench at Port Blair</strong> exercises appellate and writ jurisdiction over the Union Territory, the islands are mofussil territory outside the historical presidency limits of Calcutta.
+                  Under Section 213 read with Section 57(a) and 57(b) of the Indian Succession Act, 1925, probate is needed only for Wills signed within or assets situated within the original civil area of the historical presidency towns of Kolkata, Mumbai, and Chennai. Although the <strong>Calcutta High Court Circuit Bench at Port Blair</strong> exercises appellate and writ area over the Union Territory, the islands are mofussil territory outside the historical presidency limits of Calcutta.
                 </p>
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="bg-white rounded-3xl border border-slate-200/90 p-6 shadow-xs space-y-3">
                   <span className="px-3 py-1 rounded-full bg-emerald-100 text-emerald-800 text-xs font-extrabold uppercase">
-                    Settled Law: Non-Compulsory
+                    Settled Law: Non-Needed
                   </span>
                   <h3 className="font-bold text-base text-slate-900">
                     Circuit Bench Precedents
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Judicial rulings confirm that probate is non-compulsory for Hindu, Buddhist, Sikh, and Jain Wills executed in the Andaman and Nicobar Islands. A registered Will is fully operational for PBMC tax mutation, Tehsildar land record updates, and bank account transmissions.
+                    Judicial rulings confirm that probate is non-needed for Hindu, Buddhist, Sikh, and Jain Wills signed in the Andaman and Nicobar Islands. A registered Will is fully operational for PBMC tax name change, Tehsildar land record updates, and bank account transmissions.
                   </p>
                   <div className="pt-2 text-xs text-slate-500 flex items-center gap-1.5">
                     <Check className="w-3.5 h-3.5 text-emerald-600" />
-                    <span>Enables immediate asset transmission without High Court delays</span>
+                    <span>Enables immediate asset transfer without High Court delays</span>
                   </div>
                 </div>
 
@@ -713,11 +713,11 @@ export default function AndamanLocationClient({ faqs }: Props) {
                     When is Probate Filed in District Court?
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    An executor may voluntarily file for probate or letters of administration before the District Judge at Port Blair if contentious co-heirs file partition suits or dispute testamentary capacity. A probate order serves as a conclusive judgment <em>in rem</em>.
+                    An executor may voluntarily file for probate or letters of management before the District Judge at Port Blair if contentious co-heirs file split suits or fight sound mind. A probate order serves as a strong judgment <em>in rem</em>.
                   </p>
                   <div className="pt-2 text-xs text-slate-500 flex items-center gap-1.5">
                     <AlertTriangle className="w-3.5 h-3.5 text-[#C65378]" />
-                    <span>Conclusive judicial decree against any collateral claims</span>
+                    <span>Strong judicial decree against any collateral claims</span>
                   </div>
                 </div>
               </div>
@@ -734,7 +734,7 @@ export default function AndamanLocationClient({ faqs }: Props) {
                   4. Andaman SRO Directory: Sub-Registrar Offices
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  The Union Territory operates registration offices across South Andaman, North &amp; Middle Andaman, and Nicobar districts. Under Section 32 of the Registration Act, your Will can be registered at the Sub-Registrar Office having jurisdiction over your permanent residence or where any portion of your immovable property is situated.
+                  The Union Territory operates registration offices across South Andaman, North &amp; Middle Andaman, and Nicobar districts. Under Section 32 of the Registration Act, your Will can be registered at the SRO office having area over your permanent residence or where any portion of your land and flats is situated.
                 </p>
               </div>
 
@@ -783,7 +783,7 @@ export default function AndamanLocationClient({ faqs }: Props) {
                   <div className="flex flex-wrap items-center justify-between gap-3 pb-3 border-b border-slate-200">
                     <div>
                       <span className="text-xs font-bold uppercase tracking-wider text-[#C65378] block">
-                        Andaman &amp; Nicobar Registration Jurisdiction
+                        Andaman &amp; Nicobar Registration Area
                       </span>
                       <h3 className="text-lg font-extrabold text-slate-900">
                         {activeHubData.sro}
@@ -804,20 +804,20 @@ export default function AndamanLocationClient({ faqs }: Props) {
                       <p className="text-slate-600">{activeHubData.timings}</p>
                     </div>
                     <div className="md:col-span-2 space-y-1">
-                      <span className="font-bold text-slate-900 block">Key Localities in Jurisdiction:</span>
+                      <span className="font-bold text-slate-900 block">Key Localities in Area:</span>
                       <p className="text-slate-600 leading-relaxed">{activeHubData.areas}</p>
                     </div>
                   </div>
 
                   <div className="pt-3 flex flex-wrap gap-4 items-center justify-between border-t border-slate-200/70 text-xs">
                     <span className="text-slate-500">
-                      Administrative Portal: <strong>andaman.gov.in / Revenue Department</strong>
+                      Office Portal: <strong>andaman.gov.in / Revenue Department</strong>
                     </span>
                     <a
                       href="/contact"
                       className="inline-flex items-center gap-1.5 font-bold text-[#C65378] hover:underline"
                     >
-                      <span>Request Advocate Assistance for {activeHubData.name}</span>
+                      <span>Request Lawyer Help for {activeHubData.name}</span>
                       <ArrowRight className="w-3.5 h-3.5" />
                     </a>
                   </div>
@@ -836,7 +836,7 @@ export default function AndamanLocationClient({ faqs }: Props) {
                   5. Regional Cities: Island-Wise Will Drafting in Andaman
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Estate holdings across the Andaman and Nicobar Islands encompass residential bungalows and commercial markets in Port Blair, tourism resorts and beachfront homestays in Swaraj Dweep (Havelock) and Shaheed Dweep (Neil Island), agricultural betel nut plantations in Middle Andaman, and ex-servicemen settlement grants in Great Nicobar. Our legal specialists deliver tailored drafting and registration coordination across all island territories:
+                  Estate holdings across the Andaman and Nicobar Islands encompass home bungalows and shop markets in Port Blair, tourism resorts and beachfront homestays in Swaraj Dweep (Havelock) and Shaheed Dweep (Neil Island), farm betel nut plantations in Middle Andaman, and ex-servicemen settlement grants in Great Nicobar. Our legal experts deliver tailored drafting and registration coordination across all island territories:
                 </p>
               </div>
 
@@ -847,7 +847,7 @@ export default function AndamanLocationClient({ faqs }: Props) {
                     <div className="flex items-center justify-between gap-2">
                       <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-rose-50 text-[#C65378] border border-rose-100">
                         <MapPin className="w-3.5 h-3.5" />
-                        Capital Administrative Corridor
+                        Capital Office Corridor
                       </span>
                       <span className="text-[11px] font-semibold text-slate-500 bg-slate-100 px-2.5 py-1 rounded-lg">
                         SRO Port Blair (DC Office)
@@ -867,7 +867,7 @@ export default function AndamanLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Specialized <strong>Will drafting services in Port Blair</strong> and Garacharma for prime residential homes, multi-story buildings, and commercial establishments in Aberdeen Bazaar. Facilitates Port Blair Municipal Council (PBMC) assessment register substitution and revenue mutation under Regulation 1966.
+                      Specialized <strong>Will drafting services in Port Blair</strong> and Garacharma for prime home homes, multi-story buildings, and shop establishments in Aberdeen Bazaar. Facilitates Port Blair Municipal Council (PBMC) assessment register substitution and revenue name change under Regulation 1966.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -876,7 +876,7 @@ export default function AndamanLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Deputy Commissioner Office, Port Blair</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Slot scheduling at Port Blair SRO, advocate physical attendance, and Section 31 doorstep execution for senior citizens.
+                        Slot scheduling at Port Blair SRO, lawyer physical attendance, and Section 31 doorstep signing for senior citizens.
                       </p>
                     </div>
                   </div>
@@ -920,7 +920,7 @@ export default function AndamanLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Customized <strong>Will drafting services in Swaraj Dweep</strong> and Shaheed Dweep (Neil Island) for eco-resorts, homestay properties, scuba dive centers, and commercial leases. Formulates unambiguous business partnership succession and tourism licensing compliance.
+                      Customized <strong>Will drafting services in Swaraj Dweep</strong> and Shaheed Dweep (Neil Island) for eco-resorts, homestay assets, scuba dive centers, and shop leases. Formulates clear business partnership succession and tourism licensing compliance.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -929,7 +929,7 @@ export default function AndamanLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Sub-Tehsil Office, Govind Nagar</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Hospitality lease transfer structuring, commercial asset mapping, and expedited registry execution.
+                        Hospitality lease transfer structuring, shop asset mapping, and expedited registry signing.
                       </p>
                     </div>
                   </div>
@@ -973,7 +973,7 @@ export default function AndamanLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Comprehensive <strong>Will drafting services in Diglipur</strong> for agricultural farmland, coconut and paddy holdings, and commercial fishing ventures. Ensures strict adherence to Section 21 of the Land Revenue Regulation 1966 to preserve ancestral agricultural allotments.
+                      Full <strong>Will drafting services in Diglipur</strong> for farm farmland, coconut and paddy holdings, and shop fishing ventures. Ensures strict adherence to Section 21 of the Land Revenue Regulation 1966 to preserve family farm allotments.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1026,7 +1026,7 @@ export default function AndamanLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Tailored <strong>Will drafting services in Mayabunder</strong> for government quarter colonies, family timber and transport enterprises, and coastal holdings. Eliminates risks of title clouds and inheritance disputes, facilitating smooth revenue record mutation.
+                      Tailored <strong>Will drafting services in Mayabunder</strong> for government quarter colonies, family timber and transport enterprises, and coastal holdings. Eliminates risks of title clouds and inheritance fights, facilitating smooth revenue record name change.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1035,13 +1035,13 @@ export default function AndamanLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Deputy Commissioner Office, Mayabunder</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Complete documentation review, biometric scheduling, and certified copy delivery.
+                        Complete papers review, biometric scheduling, and certified copy delivery.
                       </p>
                     </div>
                   </div>
 
                   <div className="pt-4 mt-4 border-t border-slate-100 flex items-center justify-between">
-                    <span className="text-xs font-bold text-slate-500">Residential &amp; Commercial Grants</span>
+                    <span className="text-xs font-bold text-slate-500">Home &amp; Shop Grants</span>
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
@@ -1141,7 +1141,7 @@ export default function AndamanLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Tehsil Office Complex, Ferrargunj</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Doorstep registration for senior residents, Tehsil SRO booking, and advocate accompaniment.
+                        Doorstep registration for senior residents, Tehsil SRO booking, and lawyer accompaniment.
                       </p>
                     </div>
                   </div>
@@ -1238,7 +1238,7 @@ export default function AndamanLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Dedicated <strong>Will drafting services in Campbell Bay</strong> for ex-servicemen settlement allotments, commercial supply ventures, and residential houses in Great Nicobar. Secures clear family inheritance ahead of upcoming transshipment infrastructure growth.
+                      Dedicated <strong>Will drafting services in Campbell Bay</strong> for ex-servicemen settlement allotments, shop supply ventures, and home houses in Great Nicobar. Secures clear family inheritance ahead of upcoming transshipment infrastructure growth.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1279,7 +1279,7 @@ export default function AndamanLocationClient({ faqs }: Props) {
                   6. Step-by-Step SOP: Drafting to Registration in Andaman
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Follow this verified 5-stage legal operating procedure to draft, execute, and register your Will before the Sub-Registrar in Andaman and Nicobar Islands:
+                  Follow this verified 5-stage legal operating step to draft, execute, and register your Will before the Sub-Registrar in Andaman and Nicobar Islands:
                 </p>
               </div>
 
@@ -1304,7 +1304,7 @@ export default function AndamanLocationClient({ faqs }: Props) {
                       2
                     </span>
                     <h3 className="font-bold text-sm text-slate-900">
-                      Advocate Drafting
+                      Lawyer Drafting
                     </h3>
                     <p className="text-xs text-slate-600 leading-relaxed">
                       Draft customized legal clauses covering revocation of past wills, survivorship, executor powers, and minor guardianships.
@@ -1318,10 +1318,10 @@ export default function AndamanLocationClient({ faqs }: Props) {
                       3
                     </span>
                     <h3 className="font-bold text-sm text-slate-900">
-                      Valid Execution
+                      Valid Signing
                     </h3>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Print on standard A4 paper and sign each page in the physical presence of two independent non-beneficiary adult witnesses.
+                      Print on standard A4 paper and sign each page in the physical presence of two independent non-heir adult witnesses.
                     </p>
                   </div>
                 </div>
@@ -1335,7 +1335,7 @@ export default function AndamanLocationClient({ faqs }: Props) {
                       SRO Slot Booking
                     </h3>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Coordinate your appointment at the Port Blair Sub-Registrar Office or your local Tehsil registration counter.
+                      Coordinate your appointment at the Port Blair SRO office or your local Tehsil registration counter.
                     </p>
                   </div>
                 </div>
@@ -1349,7 +1349,7 @@ export default function AndamanLocationClient({ faqs }: Props) {
                       SRO Biometrics
                     </h3>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Visit the Sub-Registrar office with witnesses for verbal attestation, photo capture, and biometric thumbprinting for Book III entry.
+                      Visit the SRO office with witnesses for verbal attestation, photo capture, and biometric thumbprinting for Book III entry.
                     </p>
                   </div>
                 </div>
@@ -1367,7 +1367,7 @@ export default function AndamanLocationClient({ faqs }: Props) {
                   7. Section 31 Doorstep SRO Registration in the Islands
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  For elderly, infirm, or bedridden citizens residing in Port Blair, Garacharma, Dollygunj, or outer island settlements, traveling to the Sub-Registrar Office can be physically taxing. Under <strong>Section 31 of the Registration Act, 1908</strong>, the Sub-Registrar is legally empowered to attend a private home or hospital room to complete registration.
+                  For elderly, infirm, or bedridden citizens residing in Port Blair, Garacharma, Dollygunj, or outer island settlements, traveling to the SRO office can be physically taxing. Under <strong>Section 31 of the Registration Act, 1908</strong>, the Sub-Registrar is legally empowered to attend a private home or hospital room to complete registration.
                 </p>
               </div>
 
@@ -1380,14 +1380,14 @@ export default function AndamanLocationClient({ faqs }: Props) {
                     <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
                     <div>
                       <strong className="text-slate-900 block">Doctor Medical Certificate</strong>
-                      <span className="text-slate-600">A registered MBBS doctor certifies that the senior citizen possesses testamentary capacity but is medically advised against travel.</span>
+                      <span className="text-slate-600">A registered MBBS doctor certifies that the senior citizen possesses sound mind but is medically advised against travel.</span>
                     </div>
                   </div>
 
                   <div className="flex items-start gap-3 p-4 rounded-2xl bg-slate-50 border border-slate-100">
                     <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
                     <div>
-                      <strong className="text-slate-900 block">Commission Application</strong>
+                      <strong className="text-slate-900 block">Commission Form</strong>
                       <span className="text-slate-600">Our legal team prepares and submits the formal Section 31 special commission petition before the jurisdictional Port Blair Sub-Registrar.</span>
                     </div>
                   </div>
@@ -1396,14 +1396,14 @@ export default function AndamanLocationClient({ faqs }: Props) {
                     <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
                     <div>
                       <strong className="text-slate-900 block">Official Commission Fee</strong>
-                      <span className="text-slate-600">A nominal government commission fee is remitted to the administration treasury to schedule the official officer home visit.</span>
+                      <span className="text-slate-600">A nominal government commission fee is remitted to the management treasury to schedule the official officer home visit.</span>
                     </div>
                   </div>
 
                   <div className="flex items-start gap-3 p-4 rounded-2xl bg-slate-50 border border-slate-100">
                     <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
                     <div>
-                      <strong className="text-slate-900 block">Biometric Verification at Home</strong>
+                      <strong className="text-slate-900 block">Biometric Check at Home</strong>
                       <span className="text-slate-600">The Sub-Registrar attends your residence with portable biometric thumb scanners to capture verified identity records.</span>
                     </div>
                   </div>
@@ -1422,7 +1422,7 @@ export default function AndamanLocationClient({ faqs }: Props) {
                   8. Document Checklist for Andaman Sub-Registrar Offices
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Prepare your documentation before visiting the Sub-Registrar Office in Port Blair or your local Tehsil registry. You have organized <strong>{checkedCount} of {checklist.length}</strong> required documents:
+                  Prepare your papers before visiting the SRO office in Port Blair or your local Tehsil registry. You have organized <strong>{checkedCount} of {checklist.length}</strong> required documents:
                 </p>
               </div>
 
@@ -1470,7 +1470,7 @@ export default function AndamanLocationClient({ faqs }: Props) {
                   9. Andaman Property Types: PBMC Plots, Farms &amp; Resorts
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Succession procedures across Andaman and Nicobar Islands differ significantly depending on the nature of the property title and land authority:
+                  Succession steps across Andaman and Nicobar Islands differ significantly depending on the nature of the property title and land authority:
                 </p>
               </div>
 
@@ -1480,10 +1480,10 @@ export default function AndamanLocationClient({ faqs }: Props) {
                     Urban Real Estate
                   </span>
                   <h3 className="font-bold text-base text-slate-900">
-                    PBMC Residential Houses &amp; Plots
+                    PBMC Home Houses &amp; Plots
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    For urban freehold plots and apartments in Port Blair, the registered Will enables direct mutation on the Port Blair Municipal Council (PBMC) assessment register, eliminating the need for expensive civil court succession certificates.
+                    For urban freehold plots and apartments in Port Blair, the registered Will enables direct name change on the Port Blair Municipal Council (PBMC) assessment register, eliminating the need for expensive civil court succession papers.
                   </p>
                 </div>
 
@@ -1495,7 +1495,7 @@ export default function AndamanLocationClient({ faqs }: Props) {
                     Regulation 1966 Farm Grants
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Agricultural land and areca nut plantations in Middle and North Andaman require careful testamentary drafting to comply with the Land Revenue Regulation 1966, ensuring prompt mutation in Tehsildar records without family dispute.
+                    Farm land and areca nut plantations in Middle and North Andaman require careful testamentary drafting to comply with the Land Revenue Regulation 1966, making sure prompt name change in Tehsildar records without family fight.
                   </p>
                 </div>
 
@@ -1507,7 +1507,7 @@ export default function AndamanLocationClient({ faqs }: Props) {
                     Swaraj Dweep Tourism Resorts
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    For beachfront resorts and diving operations in Havelock and Neil Island, legal drafting codifies the transfer of commercial lease allotments, partnership firm capital, and tourism department operating licenses.
+                    For beachfront resorts and diving operations in Havelock and Neil Island, legal drafting codifies the transfer of shop lease allotments, partnership firm capital, and tourism department operating licenses.
                   </p>
                 </div>
               </div>
@@ -1524,7 +1524,7 @@ export default function AndamanLocationClient({ faqs }: Props) {
                   10. Official Registration Fees &amp; Stamp Duty in Andaman
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Unlike commercial property sale deeds that attract significant stamp duty, testamentary Wills are completely exempt from stamp duty across Andaman and Nicobar Islands. Statutory registration charges remain purely nominal:
+                  Unlike shop property sale deeds that attract significant stamp duty, testamentary Wills are completely exempt from stamp duty across Andaman and Nicobar Islands. Legal registration charges remain purely nominal:
                 </p>
               </div>
 
@@ -1533,7 +1533,7 @@ export default function AndamanLocationClient({ faqs }: Props) {
                   <thead>
                     <tr className="bg-slate-100/80 border-b border-slate-200 text-slate-800">
                       <th className="p-4 font-bold">Fee Component</th>
-                      <th className="p-4 font-bold">Statutory Amount</th>
+                      <th className="p-4 font-bold">Legal Amount</th>
                       <th className="p-4 font-bold">Remittance Authority</th>
                     </tr>
                   </thead>
@@ -1545,8 +1545,8 @@ export default function AndamanLocationClient({ faqs }: Props) {
                     </tr>
                     <tr>
                       <td className="p-4 font-semibold">SRO Book III Registration Fee</td>
-                      <td className="p-4 font-bold text-[#C65378]">Nominal Statutory Fee</td>
-                      <td className="p-4">Sub-Registrar Office Port Blair / Tehsil</td>
+                      <td className="p-4 font-bold text-[#C65378]">Nominal Legal Fee</td>
+                      <td className="p-4">SRO office Port Blair / Tehsil</td>
                     </tr>
                     <tr>
                       <td className="p-4 font-semibold">Document Processing &amp; Scanning Charges</td>
@@ -1574,7 +1574,7 @@ export default function AndamanLocationClient({ faqs }: Props) {
                   11. Transparent Will Packages &amp; Legal Fees in Andaman
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Select the legal assistance package tailored to your family estate planning needs in Andaman and Nicobar Islands:
+                  Select the legal help package tailored to your family estate planning needs in Andaman and Nicobar Islands:
                 </p>
               </div>
 
@@ -1592,7 +1592,7 @@ export default function AndamanLocationClient({ faqs }: Props) {
                       ₹1,990
                     </div>
                     <p className="text-xs text-slate-600">
-                      Ideal for individual homeowners with PBMC residential houses, bank deposits, and mutual funds.
+                      Ideal for individual homeowners with PBMC home houses, bank deposits, and mutual funds.
                     </p>
                     <ul className="space-y-2.5 text-xs text-slate-700 pt-3 border-t border-slate-100">
                       <li className="flex items-center gap-2">
@@ -1601,11 +1601,11 @@ export default function AndamanLocationClient({ faqs }: Props) {
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>Legally vetted statutory clauses</span>
+                        <span>Legally vetted legal clauses</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>Instant PDF download &amp; execution guide</span>
+                        <span>Instant PDF download &amp; signing guide</span>
                       </li>
                     </ul>
                   </div>
@@ -1625,16 +1625,16 @@ export default function AndamanLocationClient({ faqs }: Props) {
                   </div>
                   <div className="space-y-4">
                     <span className="text-xs font-bold uppercase tracking-wider text-[#C65378]">
-                      Comprehensive
+                      Full
                     </span>
                     <h3 className="font-extrabold text-xl text-slate-900">
-                      Advocate Consultation
+                      Lawyer Talk
                     </h3>
                     <div className="text-3xl font-black text-slate-900">
                       ₹4,990
                     </div>
                     <p className="text-xs text-slate-600">
-                      Senior estate advocate consultation for PBMC properties, Swaraj Dweep resorts, and multi-heir assets.
+                      Senior estate lawyer talk for PBMC assets, Swaraj Dweep resorts, and multi-heir assets.
                     </p>
                     <ul className="space-y-2.5 text-xs text-slate-700 pt-3 border-t border-slate-100">
                       <li className="flex items-center gap-2">
@@ -1643,7 +1643,7 @@ export default function AndamanLocationClient({ faqs }: Props) {
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>1-on-1 video call with senior advocate</span>
+                        <span>1-on-1 video call with senior lawyer</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
@@ -1659,7 +1659,7 @@ export default function AndamanLocationClient({ faqs }: Props) {
                     href="/contact"
                     className="mt-6 w-full py-3 rounded-xl bg-[#C65378] text-white text-xs font-bold text-center hover:bg-[#a13c5d] transition-colors cursor-pointer"
                   >
-                    Book Advocate Call
+                    Book Lawyer Call
                   </a>
                 </div>
 
@@ -1676,7 +1676,7 @@ export default function AndamanLocationClient({ faqs }: Props) {
                       ₹9,990
                     </div>
                     <p className="text-xs text-slate-600">
-                      End-to-end registration coordination across Port Blair Sub-Registrar Office or home visit.
+                      End-to-end registration coordination across Port Blair SRO office or home visit.
                     </p>
                     <ul className="space-y-2.5 text-xs text-slate-700 pt-3 border-t border-slate-100">
                       <li className="flex items-center gap-2">
@@ -1685,7 +1685,7 @@ export default function AndamanLocationClient({ faqs }: Props) {
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>Advocate attends Port Blair SRO</span>
+                        <span>Lawyer attends Port Blair SRO</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
@@ -1759,10 +1759,10 @@ export default function AndamanLocationClient({ faqs }: Props) {
                   <span>STATUTORY CITATIONS</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  13. Statutory Citations &amp; Andaman Legal Framework
+                  13. Legal Citations &amp; Andaman Legal Framework
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Our drafting protocols comply strictly with codified Indian statutes and Andaman administration guidelines:
+                  Our drafting protocols comply strictly with codified Indian statutes and Andaman management guidelines:
                 </p>
               </div>
 
@@ -1790,7 +1790,7 @@ export default function AndamanLocationClient({ faqs }: Props) {
                     Land Revenue Regulation 1966
                   </span>
                   <p className="text-xs text-slate-600">
-                    Andaman &amp; Nicobar Regulation 2 of 1966 governing revenue grants &amp; mutation.
+                    Andaman &amp; Nicobar Regulation 2 of 1966 governing revenue grants &amp; name change.
                   </p>
                 </div>
 
@@ -1799,7 +1799,7 @@ export default function AndamanLocationClient({ faqs }: Props) {
                     Calcutta High Court Circuit
                   </span>
                   <p className="text-xs text-slate-600">
-                    Circuit Bench at Port Blair testamentary jurisdiction and judicial precedents.
+                    Circuit Bench at Port Blair testamentary area and judicial precedents.
                   </p>
                 </div>
               </div>
@@ -1808,10 +1808,10 @@ export default function AndamanLocationClient({ faqs }: Props) {
             {/* BOTTOM CONVERSION CTA BANNER */}
             <section className="rounded-3xl bg-gradient-to-br from-[#172228] to-[#212F35] text-white p-8 sm:p-12 text-center space-y-5 shadow-xl">
               <h3 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-white">
-                Protect Your Island Properties &amp; Family Legacy
+                Protect Your Island Assets &amp; Family Legacy
               </h3>
               <p className="text-sm sm:text-base text-slate-200 max-w-2xl mx-auto leading-relaxed">
-                Do not leave your hard-earned Port Blair homes, businesses, or island holdings to administrative uncertainty. Draft a legally binding Will online today or consult our senior estate advocates.
+                Do not leave your hard-earned Port Blair homes, businesses, or island holdings to office uncertainty. Draft a legally binding Will online today or consult our senior estate lawyers.
               </p>
               <div className="pt-3 flex flex-col sm:flex-row items-center justify-center gap-4">
                 <a
@@ -1825,7 +1825,7 @@ export default function AndamanLocationClient({ faqs }: Props) {
                   href="/contact"
                   className="w-full sm:w-auto px-6 py-3.5 rounded-full bg-white/10 text-white font-bold text-sm sm:text-base hover:bg-white/20 transition-all border border-white/20"
                 >
-                  Book Advocate Consultation
+                  Book Lawyer Talk
                 </a>
               </div>
             </section>
@@ -1868,7 +1868,7 @@ export default function AndamanLocationClient({ faqs }: Props) {
               />
             </div>
             <div className="pt-3 flex items-center justify-between text-xs text-slate-500">
-              <span>Port Blair SRO Registered &amp; PBMC Mutation Compliant</span>
+              <span>Port Blair SRO Registered &amp; PBMC Name Change Compliant</span>
               <a
                 href="/start"
                 onClick={(e) => {

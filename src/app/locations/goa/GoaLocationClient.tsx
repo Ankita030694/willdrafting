@@ -127,19 +127,19 @@ const INITIAL_CHECKLIST = [
   {
     id: "item-1",
     label: "Two Printed Copies of the Will Document",
-    detail: "Prepared on legal bond paper or plain sheets; formatted specifically to Portuguese Civil Code succession rules.",
+    detail: "Prepared on legal bond paper or plain sheets; formatted mainly to Portuguese Civil Code succession rules.",
     checked: true,
   },
   {
     id: "item-2",
-    label: "Original Aadhaar Card & PAN of Testator",
-    detail: "Mandatory for identity verification, thumbprint scanning, and photographic recording at the Civil Registrar.",
+    label: "Original Aadhaar Card & PAN of Will maker",
+    detail: "Needed for identity check, thumbprint scanning, and photographic recording at the Civil Registrar.",
     checked: true,
   },
   {
     id: "item-3",
     label: "Two Independent Adult Witnesses with Valid Photo IDs",
-    detail: "Must not be beneficiaries or spouse of beneficiaries under the Will; must carry original Aadhaar or Passport.",
+    detail: "Must not be heirs or spouse of heirs under the Will; must carry original Aadhaar or Passport.",
     checked: true,
   },
   {
@@ -150,7 +150,7 @@ const INITIAL_CHECKLIST = [
   },
   {
     id: "item-5",
-    label: "Doctor Mental Fitness Certificate (MBBS / MD)",
+    label: "Doctor Sound Mind Note (MBBS / MD)",
     detail: "Essential for senior citizens aged 60+ to certify complete testamentary mental capacity and lucidity.",
     checked: false,
   },
@@ -163,7 +163,7 @@ const INITIAL_CHECKLIST = [
   {
     id: "item-7",
     label: "Comunidade Share Certificates & Gated Villa Papers",
-    detail: "Official certificates for Comunidade plots, apartment deeds, or cooperative housing society shares.",
+    detail: "Official papers for Comunidade plots, apartment deeds, or cooperative housing society shares.",
     checked: false,
   },
 ];
@@ -260,7 +260,7 @@ export default function GoaLocationClient({ faqs }: Props) {
               </h1>
 
               <p className="text-base sm:text-lg text-slate-200 leading-relaxed font-normal max-w-2xl">
-                Draft a legally watertight Will under the Goa Civil Code and Portuguese succession principles. Protect your Portuguese ancestral homes, Comunidade shares, coastal villas, and mutual funds with expert guidance on forced heir legitime and Civil Registrar registration.
+                Draft a legally watertight Will under the Goa Civil Code and Portuguese succession principles. Protect your Portuguese family homes, Comunidade shares, coastal villas, and mutual funds with expert guidance on forced heir legitime and Civil Registrar registration.
               </p>
 
               <div className="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
@@ -510,7 +510,7 @@ export default function GoaLocationClient({ faqs }: Props) {
                       <span>50% Legitime Protection</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Under Portuguese Civil Code rules in Goa, forced heirs (children) legally retain a mandatory 50% non-disposable share (Legitime). Wills only apply to the remaining 50% disposable quota.
+                      Under Portuguese Civil Code rules in Goa, forced heirs (children) legally retain a needed 50% non-disposable share (Legitime). Wills only apply to the remaining 50% disposable quota.
                     </p>
                   </div>
 
@@ -558,13 +558,13 @@ export default function GoaLocationClient({ faqs }: Props) {
                 </h3>
                 <div className="prose prose-slate max-w-none text-slate-700 leading-relaxed space-y-4 text-sm sm:text-base">
                   <p>
-                    Succession and inheritance law in the State of Goa occupies a unique constitutional and statutory position in the Indian Union. While testamentary dispositions across Maharashtra, Karnataka, and Delhi NCR are governed by the general provisions of the Indian Succession Act, 1925, Goa retains its historical Uniform Civil Code heritage under the <strong>Portuguese Civil Code of 1867 (Código Civil Português)</strong>, complemented by the <strong>Goa Succession, Special Notaries and Inventory Proceeding Act, 2012 (Goa Act 23 of 2016)</strong>.
+                    Succession and inheritance law in the State of Goa occupies a unique constitutional and legal position in the Indian Union. While testamentary dispositions across Maharashtra, Karnataka, and Delhi NCR are governed by the general rules of the Indian Succession Act, 1925, Goa retains its historical Uniform Civil Code heritage under the <strong>Portuguese Civil Code of 1867 (Código Civil Português)</strong>, complemented by the <strong>Goa Succession, Special Notaries and Inventory Proceeding Act, 2012 (Goa Act 23 of 2016)</strong>.
                   </p>
                   <p>
                     In Goa, the principle of absolute testamentary freedom is legally restricted. A parent or property owner cannot arbitrarily disinherit their legal descendants. The law statutorily divides every individual&apos;s estate into two distinct shares: the <em>Quota Indisponível</em> (the Legitime or reserved share that compulsorily belongs to forced heirs) and the <em>Quota Disponível</em> (the disposable quota that can be freely bequeathed via Will).
                   </p>
                   <p>
-                    Whether you own an ancestral Portuguese townhouse in Fontainhas, an apartment overlooking the Arabian Sea in Miramar, a luxury holiday villa in Assagao, or inherited rights in Comunidade agrarian lands, drafting a valid Will requires precise calibration with Goan matrimonial and succession statutes to prevent contentious inventory proceedings in civil courts.
+                    Whether you own an family Portuguese townhouse in Fontainhas, an apartment overlooking the Arabian Sea in Miramar, a luxury holiday villa in Assagao, or inherited rights in Comunidade agrarian lands, drafting a valid Will requires precise calibration with Goan matrimonial and succession statutes to prevent contentious inventory proceedings in civil courts.
                   </p>
                 </div>
               </div>
@@ -634,9 +634,9 @@ export default function GoaLocationClient({ faqs }: Props) {
                     The Goa Civil Code strictly protects &apos;forced heirs&apos; (<em>herdeiros legitimários</em>), which primarily includes children, descendants, and in their absence, ascendant parents:
                   </p>
                   <ul className="text-xs sm:text-sm text-slate-600 space-y-2 list-disc pl-4">
-                    <li><strong>With Descendants (Children):</strong> 50% of the testator&apos;s estate is legally reserved as the Legitime. Only the remaining 50% (Disposable Quota) can be willed away.</li>
+                    <li><strong>With Descendants (Children):</strong> 50% of the Will maker&apos;s estate is legally reserved as the Legitime. Only the remaining 50% (Disposable Quota) can be willed away.</li>
                     <li><strong>With Ascendants (Parents, No Children):</strong> If there are no children but parents survive, the Legitime is typically one-third to one-half, depending on the number of surviving parents.</li>
-                    <li><strong>No Forced Heirs:</strong> If the testator leaves neither descendants nor ascendants, they possess 100% testamentary disposition over their estate.</li>
+                    <li><strong>No Forced Heirs:</strong> If the Will maker leaves neither descendants nor ascendants, they possess 100% Will over their estate.</li>
                   </ul>
                 </div>
               </div>
@@ -654,7 +654,7 @@ export default function GoaLocationClient({ faqs }: Props) {
                   3. Will Registration in Goa: Public vs Private Wills
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Under Goan law and the Goa Succession, Special Notaries and Inventory Proceeding Act, 2012, individuals can execute their testamentary instruments through distinct statutory mechanisms:
+                  Under Goan law and the Goa Succession, Special Notaries and Inventory Proceeding Act, 2012, people can execute their testamentary instruments through distinct legal mechanisms:
                 </p>
               </div>
 
@@ -668,7 +668,7 @@ export default function GoaLocationClient({ faqs }: Props) {
                     Public Will (Testamento Público)
                   </h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Dictated directly to or presented before the Special Notary / Civil Registrar. Recorded into the permanent Book of Wills (<em>Livro de Notas para Testamentos</em>). The registrar reads it aloud to the testator in the presence of two witnesses, and all parties affix signatures.
+                    Dictated directly to or presented before the Special Notary / Civil Registrar. Recorded into the permanent Book of Wills (<em>Livro de Notas para Testamentos</em>). The registrar reads it aloud to the Will maker in the presence of two witnesses, and all parties affix signatures.
                   </p>
                   <div className="pt-2 text-xs font-semibold text-emerald-700">
                     ✓ Immune to allegations of loss or physical tampering.
@@ -684,23 +684,23 @@ export default function GoaLocationClient({ faqs }: Props) {
                     Closed Will (Testamento Cerrado)
                   </h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Written and signed privately by the testator or legal advocate, placed in an envelope, and presented to the Special Notary. The Notary draws an official Act of Approval (<em>Instrumento de Aprovação</em>) on the envelope and seals it with wax stamps. Opened only upon testator demise.
+                    Written and signed privately by the Will maker or legal lawyer, placed in an envelope, and presented to the Special Notary. The Notary draws an official Act of Approval (<em>Instrumento de Aprovação</em>) on the envelope and seals it with wax stamps. Opened only upon Will maker demise.
                   </p>
                   <div className="pt-2 text-xs font-semibold text-blue-700">
-                    ✓ Contents remain 100% confidential during testator lifetime.
+                    ✓ Contents remain 100% confidential during Will maker lifetime.
                   </div>
                 </div>
 
                 {/* TYPE 3: UNREGISTERED / ISA WILL */}
                 <div className="rounded-3xl bg-white border border-slate-200/90 p-6 shadow-xs space-y-3">
                   <span className="inline-block px-3 py-1 rounded-full bg-amber-50 text-amber-700 text-xs font-bold uppercase">
-                    Prone to Challenges
+                    Prone to Fights
                   </span>
                   <h3 className="font-extrabold text-base text-slate-900">
                     Indian Succession Act Will
                   </h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    An instrument executed on plain paper signed before two attesting witnesses under the general provisions of Section 63 of the Indian Succession Act. While recognized, it faces severe procedural hurdles during mutation before Goan Mamlatdars and Panchayats without notarial verification.
+                    An instrument signed on plain paper signed before two witnesses under the general rules of Section 63 of the Indian Succession Act. While recognized, it faces severe procedural hurdles during name change before Goan Mamlatdars and Panchayats without notarial check.
                   </p>
                   <div className="pt-2 text-xs font-semibold text-amber-700">
                     ⚠ Strong risk of contestation during inventory proceedings.
@@ -724,16 +724,16 @@ export default function GoaLocationClient({ faqs }: Props) {
 
               <div className="prose prose-slate max-w-none text-slate-700 leading-relaxed space-y-4 text-sm sm:text-base">
                 <p>
-                  A major point of confusion for estate owners and NRIs in Goa is whether court probate is mandatory. In presidency towns like Mumbai, Kolkata, and Chennai, probate under Section 213 of the Indian Succession Act is compulsory for certain classes of property. <strong>In Goa, however, probate is not the customary route.</strong>
+                  A major point of confusion for estate owners and NRIs in Goa is whether court probate is needed. In presidency towns like Mumbai, Kolkata, and Chennai, probate under Section 213 of the Indian Succession Act is needed for certain classes of property. <strong>In Goa, however, probate is not the customary route.</strong>
                 </p>
                 <p>
-                  Instead, Goan succession is finalized through <strong>Inventory Proceedings (Processo de Inventário)</strong>. Under the Goa Succession, Special Notaries and Inventory Proceeding Act, 2012, any co-heir or testamentary beneficiary can initiate an inventory proceeding before the Senior Civil Court or directly before the Special Notary (for uncontested estates) to:
+                  Instead, Goan succession is finalized through <strong>Inventory Proceedings (Processo de Inventário)</strong>. Under the Goa Succession, Special Notaries and Inventory Proceeding Act, 2012, any co-heir or testamentary heir can initiate an inventory proceeding before the Senior Civil Court or directly before the Special Notary (for uncontested estates) to:
                 </p>
                 <ul className="list-disc pl-5 space-y-2 text-xs sm:text-sm">
                   <li>Appoint the head of the family or estate administrator, known as the <strong>Cabeça de Casal</strong>.</li>
                   <li>Compile an exhaustive, legally binding inventory of all movable and immovable assets left by the deceased.</li>
-                  <li>Enforce the mandatory 50% Legitime protection for forced heirs and legally allocate the testator&apos;s Disposable Quota in accordance with the registered Will.</li>
-                  <li>Issue an official final partition order (<em>Sentença de Partilha</em>) or deed of qualification of heirs (<em>Escritura de Habilitação de Herdeiros</em>) that directs the Mamlatdar and Sub-Registrar to effect absolute title mutation on Form I &amp; XIV.</li>
+                  <li>Enforce the needed 50% Legitime protection for forced heirs and legally allocate the Will maker&apos;s Disposable Quota in accordance with the registered Will.</li>
+                  <li>Issue an official final split order (<em>Sentença de Partilha</em>) or deed of qualification of heirs (<em>Escritura de Habilitação de Herdeiros</em>) that directs the Mamlatdar and Sub-Registrar to effect absolute title name change on Form I &amp; XIV.</li>
                 </ul>
               </div>
             </section>
@@ -750,7 +750,7 @@ export default function GoaLocationClient({ faqs }: Props) {
                   5. Civil Registrar &amp; Sub-Registrar Directory in Goa
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Civil Registrars and Sub-Registrars in Goa possess dual statutory authority: recording Public Wills under the Portuguese Civil Code and registering testamentary deeds under Book III of the Registration Act, 1908. Search below to locate your jurisdictional office:
+                  Civil Registrars and Sub-Registrars in Goa possess dual legal authority: recording Public Wills under the Portuguese Civil Code and registering testamentary deeds under Book III of the Registration Act, 1908. Search below to locate your jurisdictional office:
                 </p>
               </div>
 
@@ -820,7 +820,7 @@ export default function GoaLocationClient({ faqs }: Props) {
                     href="/contact"
                     className="inline-flex items-center gap-1.5 font-bold text-[#C65378] hover:underline"
                   >
-                    <span>Request Legal Assistance for {activeHubData.name}</span>
+                    <span>Request Legal Help for {activeHubData.name}</span>
                     <ArrowRight className="w-3.5 h-3.5" />
                   </a>
                 </div>
@@ -839,7 +839,7 @@ export default function GoaLocationClient({ faqs }: Props) {
                   6. Regional Cities: Area-Wise Will Drafting in Goa
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Real estate and estate assets in Goa span heritage colonial homes in Fontainhas, high-value luxury coastal villas in Bardez, commercial family enterprises in Margao, industrial leaseholds in Ponda, and port corridor flats in Vasco. Our estate lawyers deliver tailored Will drafting, Special Notary coordination, and inventory safeguards across all regional city hubs:
+                  Real estate and estate assets in Goa span heritage colonial homes in Fontainhas, high-value luxury coastal villas in Bardez, shop family enterprises in Margao, industrial leaseholds in Ponda, and port corridor flats in Vasco. Our estate lawyers deliver tailored Will drafting, Special Notary coordination, and inventory safeguards across all regional city hubs:
                 </p>
               </div>
 
@@ -850,7 +850,7 @@ export default function GoaLocationClient({ faqs }: Props) {
                     <div className="flex items-center justify-between gap-2">
                       <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-rose-50 text-[#C65378] border border-rose-100">
                         <MapPin className="w-3.5 h-3.5" />
-                        Capital &amp; Administrative Core
+                        Capital &amp; Office Core
                       </span>
                       <span className="text-[11px] font-semibold text-slate-500 bg-slate-100 px-2.5 py-1 rounded-lg">
                         SRO Tiswadi (Panaji)
@@ -871,7 +871,7 @@ export default function GoaLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Specialized <strong>Will drafting services in Panaji</strong> and Tiswadi for heritage Portuguese townhouses in Fontainhas, luxury sea-facing villas in Dona Paula, and prime residential flats in Miramar and Caranzalem. Protects undivided matrimonial shares (<em>meeação</em>), specifies City Corporation of Panaji (CCP) house tax transfer terms, and manages mutual fund portfolios.
+                      Specialized <strong>Will drafting services in Panaji</strong> and Tiswadi for heritage Portuguese townhouses in Fontainhas, luxury sea-facing villas in Dona Paula, and prime home flats in Miramar and Caranzalem. Protects undivided matrimonial shares (<em>meeação</em>), specifies City Corporation of Panaji (CCP) house tax transfer terms, and manages mutual fund portfolios.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -880,7 +880,7 @@ export default function GoaLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Spaces Building, Patto Plaza, Panaji</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Special Notary Public Will entry, e-Challan payment, advocate attendance, and Section 31 home visits for senior residents.
+                        Special Notary Public Will entry, e-Challan payment, lawyer attendance, and Section 31 home visits for senior residents.
                       </p>
                     </div>
                   </div>
@@ -905,7 +905,7 @@ export default function GoaLocationClient({ faqs }: Props) {
                     <div className="flex items-center justify-between gap-2">
                       <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-rose-50 text-[#C65378] border border-rose-100">
                         <MapPin className="w-3.5 h-3.5" />
-                        South Goa Commercial Capital
+                        South Goa Shop Capital
                       </span>
                       <span className="text-[11px] font-semibold text-slate-500 bg-slate-100 px-2.5 py-1 rounded-lg">
                         SRO Salcete (Margao)
@@ -926,7 +926,7 @@ export default function GoaLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Dedicated <strong>Will drafting services in Margao</strong> and the Salcete coastal belt for established family retail enterprises, ancestral bungalows (<em>Casas Portuguesas</em>), and hospitality properties. Formulates airtight disposable quota bequests, safeguards minor heirs, and prevents lengthy judicial inventory disputes before the Margao Civil Courts.
+                      Dedicated <strong>Will drafting services in Margao</strong> and the Salcete coastal belt for established family retail enterprises, family bungalows (<em>Casas Portuguesas</em>), and hospitality assets. Formulates airtight disposable quota bequests, safeguards minor heirs, and prevents lengthy judicial inventory fights before the Margao Civil Courts.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -935,7 +935,7 @@ export default function GoaLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Mathany Saldanha Complex, Margao</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Civil Registrar slot coordination, Margao Municipal Council record mutation guidelines, and doorstep execution.
+                        Civil Registrar slot coordination, Margao Municipal Council record name change guidelines, and doorstep signing.
                       </p>
                     </div>
                   </div>
@@ -981,16 +981,16 @@ export default function GoaLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Tailored <strong>Will drafting services in Mapusa</strong>, Porvorim, and Assagao for premium designer villas, boutique holiday resorts, and Comunidade plots across North Goa. Integrates Coastal Regulation Zone (CRZ) statutory guidelines, Form I &amp; XIV mutation safeguards, and multi-jurisdictional estate planning for Non-Resident Indians (NRIs).
+                      Tailored <strong>Will drafting services in Mapusa</strong>, Porvorim, and Assagao for premium designer villas, boutique holiday resorts, and Comunidade plots across North Goa. Integrates Coastal Regulation Zone (CRZ) legal guidelines, Form I &amp; XIV name change safeguards, and multi-jurisdictional estate planning for Non-Resident Indians (NRIs).
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
                       <div className="flex items-center gap-2 font-bold text-slate-900">
                         <Building className="w-3.5 h-3.5 text-[#C65378]" />
-                        <span>SRO Hub: Phadke Vaddo Administrative Complex, Mapusa</span>
+                        <span>SRO Hub: Phadke Vaddo Office Complex, Mapusa</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        High Court of Bombay at Goa (Porvorim) bench coordination, Special Notary registration, and doorstep execution.
+                        High Court of Bombay at Goa (Porvorim) bench coordination, Special Notary registration, and doorstep signing.
                       </p>
                     </div>
                   </div>
@@ -1044,7 +1044,7 @@ export default function GoaLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Civil Court Complex, Vasco da Gama</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Mormugao Civil Registrar token booking, biometric authentication, and maritime legal succession advisory.
+                        Mormugao Civil Registrar token booking, biometric check, and maritime legal succession advisory.
                       </p>
                     </div>
                   </div>
@@ -1090,7 +1090,7 @@ export default function GoaLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Comprehensive <strong>Will drafting services in Ponda</strong> covering family business succession, spice plantations, ancestral family devasthan rights, and industrial leasehold plots in Kundaim and Madkai IDC. Guarantees legitimate succession planning without triggering lengthy partition disputes among co-heirs.
+                      Full <strong>Will drafting services in Ponda</strong> covering family business succession, spice plantations, family family devasthan rights, and industrial leasehold plots in Kundaim and Madkai IDC. Guarantees legitimate succession planning without triggering lengthy split fights among co-heirs.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1099,7 +1099,7 @@ export default function GoaLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Near Tisk Circle, Ponda</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Ponda Sub-Registrar appointments, spice farm Form I &amp; XIV mutation advisory, and advocate representation.
+                        Ponda Sub-Registrar appointments, spice farm Form I &amp; XIV name change advisory, and lawyer representation.
                       </p>
                     </div>
                   </div>
@@ -1144,7 +1144,7 @@ export default function GoaLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Strategic <strong>Will drafting services in Pernem</strong> and Canacona for high-growth land parcels surrounding Manohar International Airport Mopa, cashew farms, and beachfront properties in Mandrem, Morjim, and Palolem. Establishes indisputable boundary bequests and Comunidade gaunkari rights continuity.
+                      Strategic <strong>Will drafting services in Pernem</strong> and Canacona for high-growth land parcels surrounding Manohar International Airport Mopa, cashew farms, and beachfront assets in Mandrem, Morjim, and Palolem. Establishes indisputable boundary bequests and Comunidade gaunkari rights continuity.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1153,7 +1153,7 @@ export default function GoaLocationClient({ faqs }: Props) {
                         <span>SRO Hubs: Pernem Mini Secretariat &amp; Canacona Chaudi</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Taluka Sub-Registrar bookings, rural land verification, and comprehensive legal succession consultation.
+                        Taluka Sub-Registrar bookings, rural land check, and full legal succession talk.
                       </p>
                     </div>
                   </div>
@@ -1184,10 +1184,10 @@ export default function GoaLocationClient({ faqs }: Props) {
                 </div>
                 {/* H2 <= 70 chars, no em-dash */}
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  7. 5-Step Process: Legal Will Drafting &amp; Execution SOP
+                  7. 5-Step Process: Legal Will Drafting &amp; Signing SOP
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Follow our verified standard operating procedure to prepare, execute, and register a dispute-free Will under Goan succession jurisprudence:
+                  Follow our verified standard operating step to prepare, execute, and register a fight-free Will under Goan succession jurisprudence:
                 </p>
               </div>
 
@@ -1220,7 +1220,7 @@ export default function GoaLocationClient({ faqs }: Props) {
                       Legitime Calculation
                     </h3>
                     <p className="text-xs text-slate-600 mt-1 leading-relaxed">
-                      Calculate the compulsory 50% reserved portion for children or forced heirs and delineate the freely bequeathable Disposable Quota.
+                      Calculate the needed 50% reserved portion for children or forced heirs and delineate the freely bequeathable Disposable Quota.
                     </p>
                   </div>
                   <div className="text-[11px] font-semibold text-[#5F7E75] pt-2 border-t border-slate-100">
@@ -1242,7 +1242,7 @@ export default function GoaLocationClient({ faqs }: Props) {
                     </p>
                   </div>
                   <div className="text-[11px] font-semibold text-[#5F7E75] pt-2 border-t border-slate-100">
-                    Goa advocate vetted
+                    Goa lawyer vetted
                   </div>
                 </div>
 
@@ -1271,7 +1271,7 @@ export default function GoaLocationClient({ faqs }: Props) {
                       05
                     </span>
                     <h3 className="font-extrabold text-sm text-slate-900">
-                      Registry Execution
+                      Registry Signing
                     </h3>
                     <p className="text-xs text-slate-600 mt-1 leading-relaxed">
                       Attend before the Special Notary with two independent witnesses for verbal attestation, biometric capture, and official Book III deposit.
@@ -1305,17 +1305,17 @@ export default function GoaLocationClient({ faqs }: Props) {
                   <div className="p-4 rounded-2xl bg-slate-50 border border-slate-100 space-y-2">
                     <span className="font-bold text-xs text-slate-900 uppercase tracking-wide block">1. Medical Certificate</span>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      An MBBS or MD registered practitioner certifies the testator&apos;s physical inability to travel while confirming complete testamentary soundness of mind.
+                      An MBBS or MD registered practitioner certifies the Will maker&apos;s physical inability to travel while confirming complete testamentary soundness of mind.
                     </p>
                   </div>
                   <div className="p-4 rounded-2xl bg-slate-50 border border-slate-100 space-y-2">
                     <span className="font-bold text-xs text-slate-900 uppercase tracking-wide block">2. Official Petition</span>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Our advocates file the formal home visit application with the jurisdictional Civil Registrar along with the doctor&apos;s certificate and requisite travel cess.
+                      Our lawyers file the formal home visit form with the jurisdictional Civil Registrar along with the doctor&apos;s paper and requisite travel cess.
                     </p>
                   </div>
                   <div className="p-4 rounded-2xl bg-slate-50 border border-slate-100 space-y-2">
-                    <span className="font-bold text-xs text-slate-900 uppercase tracking-wide block">3. Residential Execution</span>
+                    <span className="font-bold text-xs text-slate-900 uppercase tracking-wide block">3. Home Signing</span>
                     <p className="text-xs text-slate-600 leading-relaxed">
                       The Civil Registrar visits the residence with mobile biometric equipment to complete verbal reading, attestation, and thumbprint capture in comfort.
                     </p>
@@ -1397,10 +1397,10 @@ export default function GoaLocationClient({ faqs }: Props) {
                     <Landmark className="w-5 h-5" />
                   </div>
                   <h3 className="font-extrabold text-base text-slate-900">
-                    Portuguese Ancestral Villas &amp; Quintas
+                    Portuguese Family Villas &amp; Quintas
                   </h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Inherited family homes often held in coparcenary with siblings or overseas relatives. Clear testamentary clauses designating specific floor rights or appointing an executor prevent costly deadlocks in civil inventory proceedings.
+                    Inherited family homes often held in joint family with siblings or overseas relatives. Clear testamentary clauses designating specific floor rights or appointing an executor prevent costly deadlocks in civil inventory proceedings.
                   </p>
                 </div>
 
@@ -1412,7 +1412,7 @@ export default function GoaLocationClient({ faqs }: Props) {
                     Comunidade Lands &amp; Gaunkari Shares
                   </h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Governed under the Code of Comunidades. Residential plots leased or granted by a Comunidade can be willed for their superstructure, while annual dividend rights (<em>Zon</em>) follow customary rules of the individual village gaunkari.
+                    Governed under the Code of Comunidades. Home plots leased or granted by a Comunidade can be willed for their superstructure, while annual dividend rights (<em>Zon</em>) follow customary rules of the individual village gaunkari.
                   </p>
                 </div>
 
@@ -1424,7 +1424,7 @@ export default function GoaLocationClient({ faqs }: Props) {
                     Modern Apartments &amp; Gated Villas
                   </h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    High-rise apartments and holiday homes in Porvorim, Miramar, Caranzalem, and Dabolim governed by the Goa Apartment Ownership Act, 1988. Codifies nominee versus beneficial owner rights to ensure direct society share transfer.
+                    High-rise apartments and holiday homes in Porvorim, Miramar, Caranzalem, and Dabolim governed by the Goa Apartment Ownership Act, 1988. Codifies nominee versus beneficial owner rights to make sure direct society share transfer.
                   </p>
                 </div>
               </div>
@@ -1445,7 +1445,7 @@ export default function GoaLocationClient({ faqs }: Props) {
 
               <div className="rounded-3xl bg-white border border-slate-200/90 p-6 sm:p-8 shadow-xs space-y-4">
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
-                  Registering a Will in Goa is intentionally kept economical by the State Government to encourage legal documentation and prevent fraudulent property transfers:
+                  Registering a Will in Goa is intentionally kept economical by the State Government to encourage legal papers and prevent fraudulent property transfers:
                 </p>
 
                 <div className="overflow-x-auto">
@@ -1453,7 +1453,7 @@ export default function GoaLocationClient({ faqs }: Props) {
                     <thead className="bg-slate-50 text-slate-900 font-extrabold border-b border-slate-200">
                       <tr>
                         <th className="py-3 px-4">Fee Component</th>
-                        <th className="py-3 px-4">Statutory Charge</th>
+                        <th className="py-3 px-4">Legal Charge</th>
                         <th className="py-3 px-4">Legal Authority / Notes</th>
                       </tr>
                     </thead>
@@ -1481,7 +1481,7 @@ export default function GoaLocationClient({ faqs }: Props) {
                       <tr>
                         <td className="py-3 px-4 font-bold">Section 31 Doorstep Visit Fee</td>
                         <td className="py-3 px-4 font-bold">₹1,000 to ₹2,500 + TA</td>
-                        <td className="py-3 px-4 text-xs text-slate-500">Statutory travel and inspection fee for home attendance.</td>
+                        <td className="py-3 px-4 text-xs text-slate-500">Legal travel and inspection fee for home attendance.</td>
                       </tr>
                     </tbody>
                   </table>
@@ -1513,7 +1513,7 @@ export default function GoaLocationClient({ faqs }: Props) {
                     <h3 className="text-xl font-extrabold text-slate-900">Online Lawyer-Drafted Will</h3>
                     <div className="text-3xl font-black text-slate-900">₹1,990</div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Ideal for nuclear family estates with residential flats, bank deposits, and mutual funds.
+                      Ideal for nuclear family estates with home flats, bank deposits, and mutual funds.
                     </p>
                     <ul className="text-xs text-slate-600 space-y-2 pt-2 border-t border-slate-100">
                       <li className="flex items-center gap-2">✓ Portuguese Civil Code compliance check</li>
@@ -1537,18 +1537,18 @@ export default function GoaLocationClient({ faqs }: Props) {
                     Most Popular
                   </div>
                   <div className="space-y-4 pt-2">
-                    <span className="text-xs font-extrabold uppercase tracking-wider text-rose-300">Advocate Vetted</span>
-                    <h3 className="text-xl font-extrabold text-white">Senior Advocate Consultation</h3>
+                    <span className="text-xs font-extrabold uppercase tracking-wider text-rose-300">Lawyer Vetted</span>
+                    <h3 className="text-xl font-extrabold text-white">Senior Lawyer Talk</h3>
                     <div className="text-3xl font-black text-white">₹4,990</div>
                     <p className="text-xs text-slate-300 leading-relaxed">
-                      Designed for multi-property estates, Comunidade plots, ancestral homes, and NRI assets.
+                      Designed for multi-property estates, Comunidade plots, family homes, and NRI assets.
                     </p>
                     <ul className="text-xs text-slate-300 space-y-2 pt-2 border-t border-white/10">
                       <li className="flex items-center gap-2">✓ Everything in Standard Plan</li>
                       <li className="flex items-center gap-2">✓ 1-on-1 video call with Goan estate lawyer</li>
                       <li className="flex items-center gap-2">✓ Communion of assets (meeação) audit</li>
                       <li className="flex items-center gap-2">✓ Form I &amp; XIV land record title review</li>
-                      <li className="flex items-center gap-2">✓ Inventory proceeding dispute prevention</li>
+                      <li className="flex items-center gap-2">✓ Inventory proceeding fight prevention</li>
                     </ul>
                   </div>
                   <a
@@ -1556,23 +1556,23 @@ export default function GoaLocationClient({ faqs }: Props) {
                     onClick={handleStartDraft}
                     className="w-full py-3 rounded-full text-center font-extrabold text-xs bg-[#C65378] text-white hover:bg-[#a13c5d] transition-colors shadow-lg shadow-[#C65378]/25"
                   >
-                    Choose Advocate Plan
+                    Choose Lawyer Plan
                   </a>
                 </div>
 
                 {/* PLAN 3 */}
                 <div className="rounded-3xl bg-white border border-slate-200/90 p-6 shadow-xs flex flex-col justify-between space-y-6">
                   <div className="space-y-4">
-                    <span className="text-xs font-extrabold uppercase tracking-wider text-slate-500">Comprehensive</span>
+                    <span className="text-xs font-extrabold uppercase tracking-wider text-slate-500">Full</span>
                     <h3 className="text-xl font-extrabold text-slate-900">Complete Registry &amp; Doorstep</h3>
                     <div className="text-3xl font-black text-slate-900">₹9,990</div>
                     <p className="text-xs text-slate-600 leading-relaxed">
                       Full white-glove registration support across Panaji, Margao, Mapusa, Vasco, and Ponda.
                     </p>
                     <ul className="text-xs text-slate-600 space-y-2 pt-2 border-t border-slate-100">
-                      <li className="flex items-center gap-2">✓ Everything in Advocate Consultation Plan</li>
+                      <li className="flex items-center gap-2">✓ Everything in Lawyer Talk Plan</li>
                       <li className="flex items-center gap-2">✓ Civil Registrar / Special Notary slot booking</li>
-                      <li className="flex items-center gap-2">✓ Physical advocate accompaniment at registry</li>
+                      <li className="flex items-center gap-2">✓ Physical lawyer accompaniment at registry</li>
                       <li className="flex items-center gap-2">✓ Section 31 home visit paperwork handling</li>
                       <li className="flex items-center gap-2">✓ Certified true copy procurement from Book III</li>
                     </ul>
@@ -1582,7 +1582,7 @@ export default function GoaLocationClient({ faqs }: Props) {
                     onClick={handleStartDraft}
                     className="w-full py-3 rounded-full text-center font-bold text-xs bg-slate-100 text-slate-800 hover:bg-slate-200 transition-colors"
                   >
-                    Choose Comprehensive Plan
+                    Choose Full Plan
                   </a>
                 </div>
               </div>
@@ -1637,13 +1637,13 @@ export default function GoaLocationClient({ faqs }: Props) {
                 </div>
                 {/* H2 <= 70 chars, no em-dash */}
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  14. Statutory References &amp; Relevant Acts in Goa
+                  14. Legal References &amp; Relevant Acts in Goa
                 </h3>
               </div>
 
               <div className="rounded-3xl bg-white border border-slate-200/90 p-6 sm:p-8 shadow-xs space-y-4">
                 <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                  Every testamentary instrument drafted for Goan residents strictly conforms to statutory provisions under Indian and State enactments:
+                  Every testamentary instrument drafted for Goan residents strictly conforms to legal rules under Indian and State enactments:
                 </p>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs text-slate-700">
                   <div className="p-3.5 rounded-xl bg-slate-50 border border-slate-100 space-y-1">
@@ -1660,7 +1660,7 @@ export default function GoaLocationClient({ faqs }: Props) {
                   </div>
                   <div className="p-3.5 rounded-xl bg-slate-50 border border-slate-100 space-y-1">
                     <strong>Code of Comunidades (Dec. 37:744):</strong>
-                    <p className="text-slate-500">Statutory rules regulating the succession and transmission of residential long-term leases and Gaunkar rights.</p>
+                    <p className="text-slate-500">Legal rules regulating the succession and transfer of home long-term leases and Gaunkar rights.</p>
                   </div>
                 </div>
               </div>
@@ -1674,7 +1674,7 @@ export default function GoaLocationClient({ faqs }: Props) {
                   Draft Your Goa-Compliant Will with Legal Certainty
                 </h3>
                 <p className="text-xs sm:text-sm text-slate-300 leading-relaxed font-normal">
-                  Safeguard your family legacy, honor the Portuguese Civil Code, protect forced heir shares, and ensure seamless mutation across Goan land registers.
+                  Safeguard your family legacy, honor the Portuguese Civil Code, protect forced heir shares, and make sure seamless name change across Goan land registers.
                 </p>
                 <div className="pt-2 flex flex-col sm:flex-row items-center justify-center gap-4">
                   <a
@@ -1688,7 +1688,7 @@ export default function GoaLocationClient({ faqs }: Props) {
                     href="/contact"
                     className="w-full sm:w-auto px-6 py-3.5 rounded-full bg-white/10 text-white font-bold text-sm hover:bg-white/15 transition-all border border-white/20"
                   >
-                    Schedule Legal Consultation
+                    Schedule Legal Talk
                   </a>
                 </div>
               </div>
@@ -1731,7 +1731,7 @@ export default function GoaLocationClient({ faqs }: Props) {
               />
             </div>
             <div className="pt-3 flex items-center justify-between text-xs text-slate-500">
-              <span>Goa Civil Registrar Registered &amp; Form I &amp; XIV Mutation Compliant</span>
+              <span>Goa Civil Registrar Registered &amp; Form I &amp; XIV Name Change Compliant</span>
               <a
                 href="/start"
                 onClick={(e) => {

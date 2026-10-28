@@ -124,19 +124,19 @@ const INITIAL_CHECKLIST = [
   },
   {
     id: "item-2",
-    label: "Original Aadhaar Card & PAN of Testator",
+    label: "Original Aadhaar Card & PAN of Will maker",
     detail: "Essential for biometric identity validation, electronic thumbprint, and digital photo at the Panjeeyan counter.",
     checked: true,
   },
   {
     id: "item-3",
     label: "Two Independent Adult Witnesses with Aadhaar",
-    detail: "Must carry original photo IDs and must not be beneficiaries receiving any asset or legacy under the Will.",
+    detail: "Must carry original photo IDs and must not be heirs receiving any asset or legacy under the Will.",
     checked: true,
   },
   {
     id: "item-4",
-    label: "Doctor Mental Fitness Certificate (MBBS / MD)",
+    label: "Doctor Sound Mind Note (MBBS / MD)",
     detail: "Strongly advised for senior citizens aged 60+. Certifies testamentary mental capacity and voluntary lucidity.",
     checked: false,
   },
@@ -155,7 +155,7 @@ const INITIAL_CHECKLIST = [
   {
     id: "item-7",
     label: "Dharitree Jamabandi & Chitha Extracts (For Farmland / Tea Estates)",
-    detail: "Recent computerized land records from the Dharitree portal for agricultural plots or tea garden lease documents.",
+    detail: "Recent computerized land records from the Dharitree portal for farm plots or tea garden lease documents.",
     checked: false,
   },
 ];
@@ -252,7 +252,7 @@ export default function AssamLocationClient({ faqs }: Props) {
               </h1>
 
               <p className="text-base sm:text-lg text-slate-200 leading-relaxed font-normal max-w-2xl">
-                Draft a legally binding Will for your Guwahati apartments, ancestral lands, upper Assam tea garden estates, and commercial holdings. Get senior Gauhati High Court advocate drafting, Assam Panjeeyan booking, and Section 31 doorstep execution.
+                Draft a legally binding Will for your Guwahati apartments, family lands, upper Assam tea garden estates, and shop holdings. Get senior Gauhati High Court lawyer drafting, Assam Panjeeyan booking, and Section 31 doorstep signing.
               </p>
 
               <div className="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
@@ -277,7 +277,7 @@ export default function AssamLocationClient({ faqs }: Props) {
               <div className="pt-4 grid grid-cols-3 gap-3 border-t border-white/10 text-xs text-slate-300">
                 <div className="flex items-center gap-2">
                   <Check className="w-4 h-4 text-emerald-400 shrink-0" />
-                  <span>Gauhati HC Advocate Vetted</span>
+                  <span>Gauhati HC Lawyer Vetted</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <Check className="w-4 h-4 text-emerald-400 shrink-0" />
@@ -504,17 +504,17 @@ export default function AssamLocationClient({ faqs }: Props) {
                       <span>Optional Registration</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Will registration is optional under Section 18(e) of the Registration Act, 1908. A Will written on plain paper before two witnesses is valid. However, Book III registration on the Assam Panjeeyan portal provides permanent legal proof against family challenges.
+                      Will registration is optional under Section 18(e) of the Registration Act, 1908. A Will written on plain paper before two witnesses is valid. However, Book III registration on the Assam Panjeeyan portal provides permanent legal proof against family fights.
                     </p>
                   </div>
 
                   <div className="p-4 rounded-2xl bg-slate-50/70 border border-slate-100 space-y-1.5">
                     <div className="flex items-center gap-2 font-bold text-sm text-slate-900">
                       <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
-                      <span>Probate Non-Compulsory</span>
+                      <span>Probate Non-Needed</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Assam is outside the historical presidency towns. Under Section 213 of the Indian Succession Act, Gauhati High Court confirms court probate is optional for Hindu, Muslim, Buddhist, Sikh, and Jain Wills, saving families years of court procedures.
+                      Assam is outside the historical presidency towns. Under Section 213 of the Indian Succession Act, Gauhati High Court confirms court probate is optional for Hindu, Muslim, Buddhist, Sikh, and Jain Wills, saving families years of court steps.
                     </p>
                   </div>
 
@@ -524,17 +524,17 @@ export default function AssamLocationClient({ faqs }: Props) {
                       <span>Zero Assam Stamp Duty</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Wills do not require expensive stamp paper in Assam under the Indian Stamp Act. You only pay a flat nominal registration fee of ₹100 plus standard computer scanning charges at your jurisdictional Sub-Registrar Office.
+                      Wills do not require expensive stamp paper in Assam under the Indian Stamp Act. You only pay a flat nominal registration fee of ₹100 plus standard computer scanning charges at your jurisdictional SRO office.
                     </p>
                   </div>
 
                   <div className="p-4 rounded-2xl bg-slate-50/70 border border-slate-100 space-y-1.5">
                     <div className="flex items-center gap-2 font-bold text-sm text-slate-900">
                       <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
-                      <span>Dharitree &amp; GMC Mutation</span>
+                      <span>Dharitree &amp; GMC Name Change</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      A registered Will expedites online revenue mutation on Assam Dharitree (ILRMS) through the Circle Office, while ensuring smooth property tax transfer with the Guwahati Municipal Corporation (GMC) and urban local bodies.
+                      A registered Will expedites online revenue name change on Assam Dharitree (ILRMS) through the Circle Office, while making sure smooth property tax transfer with the Guwahati Municipal Corporation (GMC) and urban local bodies.
                     </p>
                   </div>
                 </div>
@@ -553,10 +553,10 @@ export default function AssamLocationClient({ faqs }: Props) {
                   1. Legal Framework: Will Drafting &amp; Succession in Assam
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Testamentary succession across Assam is governed by the <strong>Indian Succession Act, 1925</strong>, the <strong>Registration Act, 1908</strong>, and the <strong>Assam Land and Revenue Regulation, 1886</strong>. Every adult of sound mind has the legal right to dispose of their self-acquired real estate, tea garden rights, agricultural land, and financial savings.
+                  Testamentary succession across Assam is governed by the <strong>Indian Succession Act, 1925</strong>, the <strong>Registration Act, 1908</strong>, and the <strong>Assam Land and Revenue Regulation, 1886</strong>. Every adult of sound mind has the legal right to dispose of their self-acquired real estate, tea garden rights, farm land, and financial savings.
                 </p>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Assam presents unique asset configurations. Families often possess high-value residential flats in Guwahati, commercial shops along GS Road or MG Road, ancestral agricultural homesteads (Bari and Bosti land), or partnership shares in Upper Assam tea gardens. A carefully drafted Will eliminates administrative hurdles during revenue mutation and keeps family wealth unified.
+                  Assam presents unique asset configurations. Families often possess high-value home flats in Guwahati, shop shops along GS Road or MG Road, family farm homesteads (Bari and Bosti land), or partnership shares in Upper Assam tea gardens. A carefully drafted Will eliminates office hurdles during revenue name change and keeps family wealth unified.
                 </p>
               </div>
 
@@ -567,7 +567,7 @@ export default function AssamLocationClient({ faqs }: Props) {
                   </span>
                   <h3 className="font-bold text-sm text-slate-900">Legal Capacity</h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    The testator must be a major aged 18 years or older with sound testamentary mental capacity (Section 59).
+                    The Will maker must be a major aged 18 years or older with sound testamentary mental capacity (Section 59).
                   </p>
                 </div>
 
@@ -577,7 +577,7 @@ export default function AssamLocationClient({ faqs }: Props) {
                   </span>
                   <h3 className="font-bold text-sm text-slate-900">Free Consent</h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Executed voluntarily without undue influence, fraudulent inducement, or family pressure (Section 61).
+                    Signed voluntarily without undue influence, fraudulent inducement, or family pressure (Section 61).
                   </p>
                 </div>
 
@@ -587,7 +587,7 @@ export default function AssamLocationClient({ faqs }: Props) {
                   </span>
                   <h3 className="font-bold text-sm text-slate-900">Two Witnesses</h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Must be signed in the physical presence of at least two independent adult attesting witnesses (Section 63).
+                    Must be signed in the physical presence of at least two independent adult witnesses (Section 63).
                   </p>
                 </div>
 
@@ -595,9 +595,9 @@ export default function AssamLocationClient({ faqs }: Props) {
                   <span className="w-8 h-8 rounded-xl bg-rose-50 text-[#C65378] flex items-center justify-center font-bold text-sm">
                     <ShieldCheck className="w-4 h-4" />
                   </span>
-                  <h3 className="font-bold text-sm text-slate-900">Non-Beneficiary</h3>
+                  <h3 className="font-bold text-sm text-slate-900">Non-Heir</h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Attesting witnesses and their spouses must not receive any legacy or property under the Will (Section 67).
+                    Witnesses and their spouses must not receive any legacy or property under the Will (Section 67).
                   </p>
                 </div>
               </div>
@@ -612,13 +612,13 @@ export default function AssamLocationClient({ faqs }: Props) {
                 </div>
                 {/* H2: Exactly 53 characters */}
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  2. Registration Status: Mandatory vs Optional in Assam
+                  2. Registration Status: Needed vs Optional in Assam
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Under Section 18(e) of the Registration Act, 1908, the registration of a testamentary Will is strictly <strong>optional</strong>. An unregistered Will signed on standard white paper before two independent witnesses is legally enforceable and admissible in judicial proceedings.
                 </p>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  However, with rising property values across Guwahati, Silchar, and Dibrugarh, registration before the Sub-Registrar is strongly recommended. Placing your Will in Book III government custody establishes strong evidentiary presumption under the Indian Evidence Act, preventing spurious partition lawsuits and delays in Dharitree land mutation.
+                  However, with rising property values across Guwahati, Silchar, and Dibrugarh, registration before the Sub-Registrar is strongly recommended. Placing your Will in Book III government custody establishes strong proof presumption under the Indian Evidence Act, preventing spurious split lawsuits and delays in Dharitree land name change.
                 </p>
               </div>
 
@@ -640,26 +640,26 @@ export default function AssamLocationClient({ faqs }: Props) {
                     </tr>
                     <tr>
                       <td className="p-4 font-semibold">Legal Presumption</td>
-                      <td className="p-4 bg-rose-50/20">High statutory presumption of genuine execution</td>
+                      <td className="p-4 bg-rose-50/20">High legal presumption of genuine signing</td>
                       <td className="p-4 bg-slate-50/20">Vulnerable to allegations of fraud, forgery, or coercion</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-semibold">Dharitree Land Mutation</td>
-                      <td className="p-4 bg-rose-50/20">Circle Officer grants prompt Jamabandi mutation</td>
-                      <td className="p-4 bg-slate-50/20">Disputes and objections often stall Circle Office orders</td>
+                      <td className="p-4 font-semibold">Dharitree Land Name Change</td>
+                      <td className="p-4 bg-rose-50/20">Circle Officer grants prompt Jamabandi name change</td>
+                      <td className="p-4 bg-slate-50/20">Fights and objections often stall Circle Office orders</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-semibold">GMC Municipal Mutation</td>
+                      <td className="p-4 font-semibold">GMC Municipal Name Change</td>
                       <td className="p-4 bg-rose-50/20">Swift transfer of municipal tax assessment holdings</td>
                       <td className="p-4 bg-slate-50/20">Demands multiple family affidavits and indemnity bonds</td>
                     </tr>
                     <tr>
                       <td className="p-4 font-semibold">Tea Estate &amp; Business Transfer</td>
-                      <td className="p-4 bg-rose-50/20">Accepted by Tea Board, ROC, and commercial banks</td>
-                      <td className="p-4 bg-slate-50/20">Institutions often mandate court succession certificates</td>
+                      <td className="p-4 bg-rose-50/20">Accepted by Tea Board, ROC, and shop banks</td>
+                      <td className="p-4 bg-slate-50/20">Institutions often mandate court succession papers</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-semibold">Statutory Registration Cost</td>
+                      <td className="p-4 font-semibold">Legal Registration Cost</td>
                       <td className="p-4 bg-rose-50/20 font-bold text-[#C65378]">Flat ₹100 fee + scanning charges</td>
                       <td className="p-4 bg-slate-50/20 font-bold text-slate-700">₹0 cost</td>
                     </tr>
@@ -680,43 +680,43 @@ export default function AssamLocationClient({ faqs }: Props) {
                   3. Gauhati High Court Probate Rules: Assam Jurisprudence
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  A common point of confusion among property owners in Assam is whether obtaining probate from the Gauhati High Court or District Judge is compulsory. Under settled Indian succession law, the answer is <strong>no</strong>.
+                  A common point of confusion among property owners in Assam is whether getting probate from the Gauhati High Court or District Judge is needed. Under settled Indian succession law, the answer is <strong>no</strong>.
                 </p>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Under Section 213 read with Section 57(a) and 57(b) of the Indian Succession Act, 1925, probate is mandatory only for Wills executed within or concerning properties located inside the historical presidency towns of Mumbai, Kolkata, and Chennai. The entire state of Assam lies outside presidency town jurisdictions.
+                  Under Section 213 read with Section 57(a) and 57(b) of the Indian Succession Act, 1925, probate is needed only for Wills signed within or concerning assets located inside the historical presidency towns of Mumbai, Kolkata, and Chennai. The entire state of Assam lies outside presidency town areas.
                 </p>
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="bg-white rounded-3xl border border-slate-200/90 p-6 shadow-xs space-y-3">
                   <span className="px-3 py-1 rounded-full bg-emerald-100 text-emerald-800 text-xs font-extrabold uppercase">
-                    Settled Law: Non-Compulsory
+                    Settled Law: Non-Needed
                   </span>
                   <h3 className="font-bold text-base text-slate-900">
                     Gauhati High Court Precedents
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    The Gauhati High Court has consistently held that obtaining probate is non-mandatory for Hindu, Buddhist, Sikh, Jain, and Muslim testators in Assam. A registered Will is fully operational for Dharitree revenue mutation, GMC property tax transfer, and banking transmissions without judicial delays.
+                    The Gauhati High Court has consistently held that getting probate is non-needed for Hindu, Buddhist, Sikh, Jain, and Muslim testators in Assam. A registered Will is fully operational for Dharitree revenue name change, GMC property tax transfer, and banking transmissions without judicial delays.
                   </p>
                   <div className="pt-2 text-xs text-slate-500 flex items-center gap-1.5">
                     <Check className="w-3.5 h-3.5 text-emerald-600" />
-                    <span>Enables immediate asset transmission without High Court delays</span>
+                    <span>Enables immediate asset transfer without High Court delays</span>
                   </div>
                 </div>
 
                 <div className="bg-white rounded-3xl border border-rose-200 p-6 shadow-xs space-y-3 bg-rose-50/30">
                   <span className="px-3 py-1 rounded-full bg-rose-100 text-[#C65378] text-xs font-extrabold uppercase">
-                    Voluntary Filings: High-Value Disputes
+                    Voluntary Filings: High-Value Fights
                   </span>
                   <h3 className="font-bold text-base text-slate-900">
                     When is Probate Filed in Assam District Courts?
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    An executor may voluntarily file for probate or letters of administration before the District Judge in Kamrup, Dibrugarh, or Cachar only if estranged relatives dispute the testator&apos;s mental capacity or file contested partition suits. A court probate order operates as a conclusive judgment <em>in rem</em>.
+                    An executor may voluntarily file for probate or letters of management before the District Judge in Kamrup, Dibrugarh, or Cachar only if estranged relatives fight the Will maker&apos;s mental capacity or file contested split suits. A court probate order operates as a strong judgment <em>in rem</em>.
                   </p>
                   <div className="pt-2 text-xs text-slate-500 flex items-center gap-1.5">
                     <AlertTriangle className="w-3.5 h-3.5 text-[#C65378]" />
-                    <span>Conclusive judicial decree against any collateral claims</span>
+                    <span>Strong judicial decree against any collateral claims</span>
                   </div>
                 </div>
               </div>
@@ -806,7 +806,7 @@ export default function AssamLocationClient({ faqs }: Props) {
                       <p className="text-slate-600">{activeHubData.timings}</p>
                     </div>
                     <div className="md:col-span-2 space-y-1">
-                      <span className="font-bold text-slate-900 block">Key Localities in Jurisdiction:</span>
+                      <span className="font-bold text-slate-900 block">Key Localities in Area:</span>
                       <p className="text-slate-600 leading-relaxed">{activeHubData.areas}</p>
                     </div>
                   </div>
@@ -819,7 +819,7 @@ export default function AssamLocationClient({ faqs }: Props) {
                       href="/contact"
                       className="inline-flex items-center gap-1.5 font-bold text-[#C65378] hover:underline"
                     >
-                      <span>Request Advocate Assistance for {activeHubData.name}</span>
+                      <span>Request Lawyer Help for {activeHubData.name}</span>
                       <ArrowRight className="w-3.5 h-3.5" />
                     </a>
                   </div>
@@ -839,7 +839,7 @@ export default function AssamLocationClient({ faqs }: Props) {
                   5. Regional Cities: City-Wise Will Drafting in Assam
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Estate assets in Assam span modern high-rise apartments in Guwahati, colonial bungalows and tea estates in Dibrugarh and Jorhat, commercial hubs in Silchar and Tinsukia, and expansive agricultural lands across central and lower Assam. Our estate advocates deliver customized legal drafting, Assam Panjeeyan slot booking, and Sub-Registrar accompaniment across all key regional cities:
+                  Estate assets in Assam span modern high-rise apartments in Guwahati, colonial bungalows and tea estates in Dibrugarh and Jorhat, shop hubs in Silchar and Tinsukia, and expansive farm lands across central and lower Assam. Our estate lawyers deliver customized legal drafting, Assam Panjeeyan slot booking, and Sub-Registrar accompaniment across all key regional cities:
                 </p>
               </div>
 
@@ -865,11 +865,11 @@ export default function AssamLocationClient({ faqs }: Props) {
                       <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Panbazar</span>
                       <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Beltola</span>
                       <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Zoo Road</span>
-                      <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">GS Road Commercial</span>
+                      <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">GS Road Shop</span>
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Specialized <strong>Will drafting services in Guwahati</strong> and Dispur for luxury apartments, duplex homes, and prime commercial plots along GS Road. Streamlines GMC municipal property tax transfer, bank locker succession, and mutual fund transmissions to protect your successors from dispute.
+                      Specialized <strong>Will drafting services in Guwahati</strong> and Dispur for luxury apartments, duplex homes, and prime shop plots along GS Road. Streamlines GMC municipal property tax transfer, bank locker succession, and mutual fund transmissions to protect your successors from fight.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -878,7 +878,7 @@ export default function AssamLocationClient({ faqs }: Props) {
                         <span>SRO Hubs: Panbazar &amp; Dispur Supermarket</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Panjeeyan booking, advocate physical attendance, and Section 31 doorstep execution for elderly citizens across Kamrup Metro.
+                        Panjeeyan booking, lawyer physical attendance, and Section 31 doorstep signing for elderly citizens across Kamrup Metro.
                       </p>
                     </div>
                   </div>
@@ -922,7 +922,7 @@ export default function AssamLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Customized <strong>Will drafting services in Dibrugarh</strong> for tea plantation owners, petroleum sector executives, and Brahmaputra riverfront property holders. Formulates clear clauses for tea estate leaseholds, corporate shareholdings, and agricultural Dharitree mutation.
+                      Customized <strong>Will drafting services in Dibrugarh</strong> for tea plantation owners, petroleum sector executives, and Brahmaputra riverfront property holders. Formulates clear clauses for tea estate leaseholds, corporate shareholdings, and farm Dharitree name change.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -956,7 +956,7 @@ export default function AssamLocationClient({ faqs }: Props) {
                     <div className="flex items-center justify-between gap-2">
                       <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-rose-50 text-[#C65378] border border-rose-100">
                         <MapPin className="w-3.5 h-3.5" />
-                        Barak Valley Commercial Hub
+                        Barak Valley Shop Hub
                       </span>
                       <span className="text-[11px] font-semibold text-slate-500 bg-slate-100 px-2.5 py-1 rounded-lg">
                         SRO Silchar (Cachar)
@@ -975,7 +975,7 @@ export default function AssamLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Comprehensive <strong>Will drafting services in Silchar</strong> and across Cachar district for family businesses, commercial markets, and residential houses. Codifies unambiguous distribution among sons and daughters, bank nominations, and municipal holding updates.
+                      Full <strong>Will drafting services in Silchar</strong> and across Cachar district for family businesses, shop markets, and home houses. Codifies clear split among sons and daughters, bank nominations, and municipal holding updates.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -984,13 +984,13 @@ export default function AssamLocationClient({ faqs }: Props) {
                         <span>SRO Hub: District Registry Office, Club Road</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Assam Panjeeyan portal slot scheduling, independent witness attestation, and doorstep verification for seniors.
+                        Assam Panjeeyan portal slot scheduling, independent witness attestation, and doorstep check for seniors.
                       </p>
                     </div>
                   </div>
 
                   <div className="pt-4 mt-4 border-t border-slate-100 flex items-center justify-between">
-                    <span className="text-xs font-bold text-slate-500">Commercial &amp; Residential Estates</span>
+                    <span className="text-xs font-bold text-slate-500">Shop &amp; Home Estates</span>
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
@@ -1028,7 +1028,7 @@ export default function AssamLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Dedicated <strong>Will drafting services in Jorhat</strong> for heritage tea bungalows, agricultural farmland, and urban residential properties. Ensures testamentary bequests respect ceiling limits under the Assam Fixation of Ceiling on Land Holdings Act.
+                      Dedicated <strong>Will drafting services in Jorhat</strong> for heritage tea bungalows, farm farmland, and urban home assets. Ensures testamentary bequests respect ceiling limits under the Assam Fixation of Ceiling on Land Holdings Act.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1037,7 +1037,7 @@ export default function AssamLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Gar-Ali Road, Near Court Field</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Dharitree Jamabandi mutation compliance, tea garden asset inventory, and Section 31 home execution.
+                        Dharitree Jamabandi name change compliance, tea garden asset inventory, and Section 31 home signing.
                       </p>
                     </div>
                   </div>
@@ -1081,7 +1081,7 @@ export default function AssamLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Specialized <strong>Will drafting services in Tezpur</strong> for defence veterans, medical professionals, and ancestral landholders. Clarifies defence pension gratuities, bank deposits, and North Bank agricultural land inheritances without legal conflicts.
+                      Specialized <strong>Will drafting services in Tezpur</strong> for defence veterans, medical professionals, and family landholders. Clarifies defence pension gratuities, bank deposits, and North Bank farm land inheritances without legal conflicts.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1115,7 +1115,7 @@ export default function AssamLocationClient({ faqs }: Props) {
                     <div className="flex items-center justify-between gap-2">
                       <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-rose-50 text-[#C65378] border border-rose-100">
                         <Wheat className="w-3.5 h-3.5" />
-                        Central Agricultural Hub
+                        Central Farm Hub
                       </span>
                       <span className="text-[11px] font-semibold text-slate-500 bg-slate-100 px-2.5 py-1 rounded-lg">
                         SRO Nagaon Sadar
@@ -1134,7 +1134,7 @@ export default function AssamLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Expert <strong>Will drafting services in Nagaon</strong> for agricultural estates, rubber plantations, and commercial trading establishments. Establishes legal certainty for ancestral land shares and smooth Circle Office field mutation under the 1886 Regulation.
+                      Expert <strong>Will drafting services in Nagaon</strong> for farm estates, rubber plantations, and shop trading establishments. Establishes legal certainty for family land shares and smooth Circle Office field name change under the 1886 Regulation.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1143,13 +1143,13 @@ export default function AssamLocationClient({ faqs }: Props) {
                         <span>SRO Hub: ADP Road Tehsil Compound, Nagaon</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Lot Mandal field verification support, Dharitree Chitha updates, and SRO Book III registration.
+                        Lot Mandal field check support, Dharitree Chitha updates, and SRO Book III registration.
                       </p>
                     </div>
                   </div>
 
                   <div className="pt-4 mt-4 border-t border-slate-100 flex items-center justify-between">
-                    <span className="text-xs font-bold text-slate-500">Farmland &amp; Commercial Units</span>
+                    <span className="text-xs font-bold text-slate-500">Farmland &amp; Shop Units</span>
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
@@ -1168,7 +1168,7 @@ export default function AssamLocationClient({ faqs }: Props) {
                     <div className="flex items-center justify-between gap-2">
                       <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-rose-50 text-[#C65378] border border-rose-100">
                         <Factory className="w-3.5 h-3.5" />
-                        Commercial &amp; Oil Capital
+                        Shop &amp; Oil Capital
                       </span>
                       <span className="text-[11px] font-semibold text-slate-500 bg-slate-100 px-2.5 py-1 rounded-lg">
                         SRO Tinsukia Hub
@@ -1180,14 +1180,14 @@ export default function AssamLocationClient({ faqs }: Props) {
                     </h3>
 
                     <div className="flex flex-wrap gap-1.5 text-[11px] text-slate-600">
-                      <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Tinsukia Commercial</span>
+                      <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Tinsukia Shop</span>
                       <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Digboi Oil Town</span>
                       <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Makum</span>
                       <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Doomdooma Tea Belt</span>
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Customized <strong>Will drafting services in Tinsukia</strong> for wholesale traders, timber enterprises, and tea business owners. Structures succession across commercial shops, warehouse inventory, business partnerships, and residential bungalows.
+                      Customized <strong>Will drafting services in Tinsukia</strong> for wholesale traders, timber enterprises, and tea business owners. Structures succession across shop shops, warehouse inventory, business partnerships, and home bungalows.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1196,7 +1196,7 @@ export default function AssamLocationClient({ faqs }: Props) {
                         <span>SRO Hub: District Registry Office, Tinsukia</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Business asset succession, Panjeeyan electronic booking, and advocate legal representation.
+                        Business asset succession, Panjeeyan electronic booking, and lawyer legal representation.
                       </p>
                     </div>
                   </div>
@@ -1240,7 +1240,7 @@ export default function AssamLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Comprehensive <strong>Will drafting services in Bongaigaon</strong> for refinery professionals, railway employees, and residential homeowners. Provides airtight legal protection for pensions, gratuity distributions, company shares, and family properties.
+                      Full <strong>Will drafting services in Bongaigaon</strong> for refinery professionals, railway employees, and home homeowners. Provides airtight legal protection for pensions, gratuity distributions, company shares, and family assets.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1249,7 +1249,7 @@ export default function AssamLocationClient({ faqs }: Props) {
                         <span>SRO Hub: District Registry Building, Bongaigaon</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Panjeeyan e-Challan payment, biometric verification, and doorstep registration for seniors.
+                        Panjeeyan e-Challan payment, biometric check, and doorstep registration for seniors.
                       </p>
                     </div>
                   </div>
@@ -1282,7 +1282,7 @@ export default function AssamLocationClient({ faqs }: Props) {
                   6. Step-by-Step SOP: Drafting to Registration in Assam
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Follow this verified 5-stage legal standard operating procedure to create, execute, and register your Will before the Sub-Registrar in Assam:
+                  Follow this verified 5-stage legal standard operating step to create, execute, and register your Will before the Sub-Registrar in Assam:
                 </p>
               </div>
 
@@ -1307,7 +1307,7 @@ export default function AssamLocationClient({ faqs }: Props) {
                       2
                     </span>
                     <h3 className="font-bold text-sm text-slate-900">
-                      Advocate Drafting
+                      Lawyer Drafting
                     </h3>
                     <p className="text-xs text-slate-600 leading-relaxed">
                       Draft customized legal clauses covering revocation of prior wills, survivorship, executor powers, and minor guardianships.
@@ -1321,10 +1321,10 @@ export default function AssamLocationClient({ faqs }: Props) {
                       3
                     </span>
                     <h3 className="font-bold text-sm text-slate-900">
-                      Valid Execution
+                      Valid Signing
                     </h3>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Print on standard white A4 sheets and sign each page in the physical presence of two independent non-beneficiary witnesses.
+                      Print on standard white A4 sheets and sign each page in the physical presence of two independent non-heir witnesses.
                     </p>
                   </div>
                 </div>
@@ -1352,7 +1352,7 @@ export default function AssamLocationClient({ faqs }: Props) {
                       SRO Biometrics
                     </h3>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Visit your Assam Sub-Registrar Office with witnesses for verbal attestation, photo capture, and biometric thumbprint to seal Book III entry.
+                      Visit your Assam SRO office with witnesses for verbal attestation, photo capture, and biometric thumbprint to seal Book III entry.
                     </p>
                   </div>
                 </div>
@@ -1371,7 +1371,7 @@ export default function AssamLocationClient({ faqs }: Props) {
                   7. Section 31 Doorstep SRO Registration for Seniors
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  For elderly, unwell, or bedridden citizens residing in Guwahati, Dibrugarh, Silchar, or remote tea estates, traveling to the Sub-Registrar Office can be physically demanding. Under <strong>Section 31 of the Registration Act, 1908</strong>, the Sub-Registrar possesses legal authority to attend a private residence or hospital to register a Will.
+                  For elderly, unwell, or bedridden citizens residing in Guwahati, Dibrugarh, Silchar, or remote tea estates, traveling to the SRO office can be physically demanding. Under <strong>Section 31 of the Registration Act, 1908</strong>, the Sub-Registrar possesses legal authority to attend a private residence or hospital to register a Will.
                 </p>
               </div>
 
@@ -1391,7 +1391,7 @@ export default function AssamLocationClient({ faqs }: Props) {
                   <div className="flex items-start gap-3 p-4 rounded-2xl bg-slate-50 border border-slate-100">
                     <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
                     <div>
-                      <strong className="text-slate-900 block">Commission Application</strong>
+                      <strong className="text-slate-900 block">Commission Form</strong>
                       <span className="text-slate-600">Our legal team drafts and submits the formal Section 31 special commission petition before the jurisdictional Assam Sub-Registrar.</span>
                     </div>
                   </div>
@@ -1427,7 +1427,7 @@ export default function AssamLocationClient({ faqs }: Props) {
                   8. Document Checklist for Assam Sub-Registrar Offices
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Prepare your documentation before scheduling your Sub-Registrar appointment. You have organized <strong>{checkedCount} of {checklist.length}</strong> required documents:
+                  Prepare your papers before scheduling your Sub-Registrar appointment. You have organized <strong>{checkedCount} of {checklist.length}</strong> required documents:
                 </p>
               </div>
 
@@ -1478,20 +1478,20 @@ export default function AssamLocationClient({ faqs }: Props) {
                   9. Assam Asset Classes: Tea Estates, Land &amp; GMC Flats
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Succession procedures in Assam depend directly on property categorization, land revenue tenures, and urban municipal authorities:
+                  Succession steps in Assam depend directly on property categorization, land revenue tenures, and urban municipal offices:
                 </p>
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <div className="bg-white rounded-3xl border border-slate-200/90 p-6 shadow-xs space-y-3">
                   <span className="px-3 py-1 rounded-full bg-rose-100 text-[#C65378] text-xs font-bold uppercase">
-                    Urban Residential
+                    Urban Home
                   </span>
                   <h3 className="font-bold text-base text-slate-900">
                     GMC Flats &amp; Society Apartments
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    For residential apartments and houses across Guwahati and municipal towns, the registered Will guides the Guwahati Municipal Corporation (GMC) to update the property tax assessment holding smoothly without demands for costly civil court succession decrees.
+                    For home apartments and houses across Guwahati and municipal towns, the registered Will guides the Guwahati Municipal Corporation (GMC) to update the property tax assessment holding smoothly without demands for costly civil court succession decrees.
                   </p>
                 </div>
 
@@ -1503,19 +1503,19 @@ export default function AssamLocationClient({ faqs }: Props) {
                     Tea Plantations &amp; Dharitree Land
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Tea gardens and agricultural holdings in Dibrugarh, Jorhat, or Nagaon require precise legal drafting. Testamentary clauses must comply with the Assam Fixation of Ceiling on Land Holdings Act and Chapter X tribal belt protections before Circle Office mutation.
+                    Tea gardens and farm holdings in Dibrugarh, Jorhat, or Nagaon require precise legal drafting. Testamentary clauses must comply with the Assam Fixation of Ceiling on Land Holdings Act and Chapter X tribal belt protections before Circle Office name change.
                   </p>
                 </div>
 
                 <div className="bg-white rounded-3xl border border-slate-200/90 p-6 shadow-xs space-y-3">
                   <span className="px-3 py-1 rounded-full bg-emerald-100 text-emerald-800 text-xs font-bold uppercase">
-                    Commercial Enterprises
+                    Shop Enterprises
                   </span>
                   <h3 className="font-bold text-base text-slate-900">
                     Trade Enterprises &amp; MSMEs
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Commercial trading firms in Fancy Bazar or Tinsukia require explicit testamentary bequeathal of partnership capital, trade licenses, private limited company shares, and commercial bank credit facilities to prevent operational deadlock.
+                    Shop trading firms in Fancy Bazar or Tinsukia require explicit testamentary bequeathal of partnership capital, trade licenses, private limited company shares, and shop bank credit facilities to prevent operational deadlock.
                   </p>
                 </div>
               </div>
@@ -1533,7 +1533,7 @@ export default function AssamLocationClient({ faqs }: Props) {
                   10. Official Panjeeyan Registration Fees &amp; Stamp Duty
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Unlike commercial property sale deeds or gift transfers that attract high ad-valorem stamp duty in Assam, testamentary Wills are completely exempt from stamp duty. Government registration charges in Assam are purely nominal:
+                  Unlike shop property sale deeds or gift transfers that attract high ad-valorem stamp duty in Assam, testamentary Wills are completely exempt from stamp duty. Government registration charges in Assam are purely nominal:
                 </p>
               </div>
 
@@ -1542,7 +1542,7 @@ export default function AssamLocationClient({ faqs }: Props) {
                   <thead>
                     <tr className="bg-slate-100/80 border-b border-slate-200 text-slate-800">
                       <th className="p-4 font-bold">Fee Component</th>
-                      <th className="p-4 font-bold">Statutory Amount</th>
+                      <th className="p-4 font-bold">Legal Amount</th>
                       <th className="p-4 font-bold">Remittance Authority</th>
                     </tr>
                   </thead>
@@ -1554,7 +1554,7 @@ export default function AssamLocationClient({ faqs }: Props) {
                     </tr>
                     <tr>
                       <td className="p-4 font-semibold">SRO Book III Registration Fee</td>
-                      <td className="p-4 font-bold text-[#C65378]">₹100 (Flat Statutory Fee)</td>
+                      <td className="p-4 font-bold text-[#C65378]">₹100 (Flat Legal Fee)</td>
                       <td className="p-4">Assam Panjeeyan via Treasury Challan</td>
                     </tr>
                     <tr>
@@ -1584,7 +1584,7 @@ export default function AssamLocationClient({ faqs }: Props) {
                   11. Transparent Will Packages &amp; Legal Fees in Assam
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Choose the legal assistance package tailored to your family&apos;s estate planning and property portfolio in Assam:
+                  Choose the legal help package tailored to your family&apos;s estate planning and property portfolio in Assam:
                 </p>
               </div>
 
@@ -1611,11 +1611,11 @@ export default function AssamLocationClient({ faqs }: Props) {
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>Legally vetted statutory clauses</span>
+                        <span>Legally vetted legal clauses</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>Instant PDF download &amp; execution guide</span>
+                        <span>Instant PDF download &amp; signing guide</span>
                       </li>
                     </ul>
                   </div>
@@ -1635,16 +1635,16 @@ export default function AssamLocationClient({ faqs }: Props) {
                   </div>
                   <div className="space-y-4">
                     <span className="text-xs font-bold uppercase tracking-wider text-[#C65378]">
-                      Comprehensive
+                      Full
                     </span>
                     <h3 className="font-extrabold text-xl text-slate-900">
-                      Advocate Consultation
+                      Lawyer Talk
                     </h3>
                     <div className="text-3xl font-black text-slate-900">
                       ₹4,990
                     </div>
                     <p className="text-xs text-slate-600">
-                      Senior Gauhati High Court advocate review for tea estates, farmland, and multi-heir portfolios.
+                      Senior Gauhati High Court lawyer review for tea estates, farmland, and multi-heir portfolios.
                     </p>
                     <ul className="space-y-2.5 text-xs text-slate-700 pt-3 border-t border-slate-100">
                       <li className="flex items-center gap-2">
@@ -1653,7 +1653,7 @@ export default function AssamLocationClient({ faqs }: Props) {
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>1-on-1 video call with senior advocate</span>
+                        <span>1-on-1 video call with senior lawyer</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
@@ -1669,7 +1669,7 @@ export default function AssamLocationClient({ faqs }: Props) {
                     href="/contact"
                     className="mt-6 w-full py-3 rounded-xl bg-[#C65378] text-white text-xs font-bold text-center hover:bg-[#a13c5d] transition-colors cursor-pointer"
                   >
-                    Book Advocate Call
+                    Book Lawyer Call
                   </a>
                 </div>
 
@@ -1686,7 +1686,7 @@ export default function AssamLocationClient({ faqs }: Props) {
                       ₹9,990
                     </div>
                     <p className="text-xs text-slate-600">
-                      End-to-end registration coordination across any Assam Sub-Registrar Office or home visit.
+                      End-to-end registration coordination across any Assam SRO office or home visit.
                     </p>
                     <ul className="space-y-2.5 text-xs text-slate-700 pt-3 border-t border-slate-100">
                       <li className="flex items-center gap-2">
@@ -1695,7 +1695,7 @@ export default function AssamLocationClient({ faqs }: Props) {
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>Advocate physically attends Assam SRO</span>
+                        <span>Lawyer physically attends Assam SRO</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
@@ -1772,7 +1772,7 @@ export default function AssamLocationClient({ faqs }: Props) {
                 </div>
                 {/* H2: Exactly 49 characters */}
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  13. Statutory Citations &amp; Assam Government Portals
+                  13. Legal Citations &amp; Assam Government Portals
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Our drafting protocols comply strictly with codified Indian succession statutes and Assam state registration systems:
@@ -1803,7 +1803,7 @@ export default function AssamLocationClient({ faqs }: Props) {
                     Assam Land &amp; Revenue Regulation
                   </span>
                   <p className="text-xs text-slate-600">
-                    Regulation 1 of 1886 and Dharitree portal rules for field and office mutation.
+                    Regulation 1 of 1886 and Dharitree portal rules for field and office name change.
                   </p>
                 </div>
 
@@ -1821,10 +1821,10 @@ export default function AssamLocationClient({ faqs }: Props) {
             {/* BOTTOM CONVERSION CTA BANNER */}
             <section className="rounded-3xl bg-gradient-to-br from-[#172228] to-[#212F35] text-white p-8 sm:p-12 text-center space-y-5 shadow-xl">
               <h3 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-white">
-                Protect Your Assam Properties &amp; Family Legacy
+                Protect Your Assam Assets &amp; Family Legacy
               </h3>
               <p className="text-sm sm:text-base text-slate-200 max-w-2xl mx-auto leading-relaxed">
-                Do not leave your hard-earned Assam flats, tea garden shares, or ancestral farmlands to administrative gridlock. Draft a legally binding Will online today or consult our senior Gauhati High Court advocates.
+                Do not leave your hard-earned Assam flats, tea garden shares, or family farmlands to office gridlock. Draft a legally binding Will online today or consult our senior Gauhati High Court lawyers.
               </p>
               <div className="pt-3 flex flex-col sm:flex-row items-center justify-center gap-4">
                 <a
@@ -1838,7 +1838,7 @@ export default function AssamLocationClient({ faqs }: Props) {
                   href="/contact"
                   className="w-full sm:w-auto px-6 py-3.5 rounded-full bg-white/10 text-white font-bold text-sm sm:text-base hover:bg-white/20 transition-all border border-white/20"
                 >
-                  Book Advocate Consultation
+                  Book Lawyer Talk
                 </a>
               </div>
             </section>
@@ -1881,7 +1881,7 @@ export default function AssamLocationClient({ faqs }: Props) {
               />
             </div>
             <div className="pt-3 flex items-center justify-between text-xs text-slate-500">
-              <span>Assam Panjeeyan Registered &amp; Dharitree Mutation Compliant</span>
+              <span>Assam Panjeeyan Registered &amp; Dharitree Name Change Compliant</span>
               <a
                 href="/start"
                 onClick={(e) => {

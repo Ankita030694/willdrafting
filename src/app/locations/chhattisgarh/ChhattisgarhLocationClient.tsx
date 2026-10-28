@@ -132,19 +132,19 @@ const INITIAL_CHECKLIST = [
   },
   {
     id: "item-2",
-    label: "Original Aadhaar Card & PAN of Testator",
+    label: "Original Aadhaar Card & PAN of Will maker",
     detail: "Essential for biometric identity validation, electronic thumbprint, and digital photo at the SRO counter.",
     checked: true,
   },
   {
     id: "item-3",
     label: "Two Independent Adult Witnesses with Aadhaar",
-    detail: "Must carry original photo IDs and must not be beneficiaries receiving any asset under the Will.",
+    detail: "Must carry original photo IDs and must not be heirs receiving any asset under the Will.",
     checked: true,
   },
   {
     id: "item-4",
-    label: "Doctor Mental Fitness Certificate (MBBS / MD)",
+    label: "Doctor Sound Mind Note (MBBS / MD)",
     detail: "Strongly advised for senior citizens aged 60+. Certifies testamentary mental soundness and lucidity.",
     checked: false,
   },
@@ -163,7 +163,7 @@ const INITIAL_CHECKLIST = [
   {
     id: "item-7",
     label: "Bhuiyan Portal Computerized B-1 / P-II Land Records",
-    detail: "Recent computerized Khasra and Khatauni extracts from the official Bhuiyan portal for agricultural land parcels.",
+    detail: "Recent computerized Khasra and Khatauni extracts from the official Bhuiyan portal for farm land parcels.",
     checked: false,
   },
 ];
@@ -260,7 +260,7 @@ export default function ChhattisgarhLocationClient({ faqs }: Props) {
               </h1>
 
               <p className="text-base sm:text-lg text-slate-200 leading-relaxed font-normal max-w-2xl">
-                Draft a legally binding Will for your Raipur Development Authority plots, Nava Raipur smart city holdings, Bhuiyan agricultural farmlands, and industrial trading firms. Gain senior advocate drafting, NGDRS e-Panjiyan booking, and Section 31 doorstep execution.
+                Draft a legally binding Will for your Raipur Development Authority plots, Nava Raipur smart city holdings, Bhuiyan farm farmlands, and industrial trading firms. Gain senior lawyer drafting, NGDRS e-Panjiyan booking, and Section 31 doorstep signing.
               </p>
 
               <div className="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
@@ -514,10 +514,10 @@ export default function ChhattisgarhLocationClient({ faqs }: Props) {
                   <div className="p-4 rounded-2xl bg-slate-50/70 border border-slate-100 space-y-1.5">
                     <div className="flex items-center gap-2 font-bold text-sm text-slate-900">
                       <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
-                      <span>Probate Non-Compulsory</span>
+                      <span>Probate Non-Needed</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Under Section 213 of the Indian Succession Act, probate is mandatory solely in the presidency towns of Mumbai, Kolkata, and Chennai. The High Court of Chhattisgarh at Bilaspur affirms probate is optional across all 33 districts.
+                      Under Section 213 of the Indian Succession Act, probate is needed solely in the presidency towns of Mumbai, Kolkata, and Chennai. The High Court of Chhattisgarh at Bilaspur affirms probate is optional across all 33 districts.
                     </p>
                   </div>
 
@@ -527,17 +527,17 @@ export default function ChhattisgarhLocationClient({ faqs }: Props) {
                       <span>Zero State Stamp Duty</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Testamentary Wills are completely exempt from ad-valorem stamp duty across Chhattisgarh. You pay only a nominal statutory registration charge of ₹100 to ₹500 via the NGDRS e-Challan portal, without any property percentage fees.
+                      Testamentary Wills are completely exempt from ad-valorem stamp duty across Chhattisgarh. You pay only a nominal legal registration charge of ₹100 to ₹500 via the NGDRS e-Challan portal, without any property percentage fees.
                     </p>
                   </div>
 
                   <div className="p-4 rounded-2xl bg-slate-50/70 border border-slate-100 space-y-1.5">
                     <div className="flex items-center gap-2 font-bold text-sm text-slate-900">
                       <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
-                      <span>Bhuiyan &amp; RDA Land Mutation</span>
+                      <span>Bhuiyan &amp; RDA Land Name Change</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      A registered Will accelerates online mutation (Namantran) for agricultural parcels on the Bhuiyan portal (B-1/P-II) and enables smooth ownership substitution for residential plots with the Raipur Development Authority (RDA).
+                      A registered Will accelerates online name change (Namantran) for farm parcels on the Bhuiyan portal (B-1/P-II) and enables smooth ownership substitution for home plots with the Raipur Development Authority (RDA).
                     </p>
                   </div>
                 </div>
@@ -555,10 +555,10 @@ export default function ChhattisgarhLocationClient({ faqs }: Props) {
                   1. Will Drafting &amp; Legal Framework in Chhattisgarh
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Succession planning in Chhattisgarh is governed by the <strong>Indian Succession Act, 1925</strong>, the <strong>Registration Act, 1908</strong>, and the <strong>Chhattisgarh Land Revenue Code, 1959</strong>. Any individual of sound mind who has attained the age of majority can legally bequeath self-acquired residential real estate, commercial assets, farmland, and financial investments.
+                  Succession planning in Chhattisgarh is governed by the <strong>Indian Succession Act, 1925</strong>, the <strong>Registration Act, 1908</strong>, and the <strong>Chhattisgarh Land Revenue Code, 1959</strong>. Any individual of sound mind who has attained the age of majority can legally bequeath self-acquired home real estate, shop assets, farmland, and financial investments.
                 </p>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Chhattisgarh combines diverse asset classes. A family estate may encompass commercial trading operations in Pandri or Vyapar Vihar, 90-year leasehold plots in Nava Raipur Atal Nagar, SAIL Bhilai residential allotments, and fertile agricultural land registered under the Bhuiyan portal. Meticulous legal drafting eliminates disputes among co-heirs and ensures administrative compliance with state revenue authorities.
+                  Chhattisgarh combines diverse asset classes. A family estate may encompass shop trading operations in Pandri or Vyapar Vihar, 90-year leasehold plots in Nava Raipur Atal Nagar, SAIL Bhilai home allotments, and fertile farm land registered under the Bhuiyan portal. Meticulous legal drafting eliminates fights among co-heirs and ensures office compliance with state revenue offices.
                 </p>
               </div>
 
@@ -569,7 +569,7 @@ export default function ChhattisgarhLocationClient({ faqs }: Props) {
                   </span>
                   <h3 className="font-bold text-sm text-slate-900">Legal Capacity</h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    The testator must be at least 18 years old and possess sound testamentary mental capacity at execution (Section 59).
+                    The Will maker must be at least 18 years old and possess sound testamentary mental capacity at signing (Section 59).
                   </p>
                 </div>
 
@@ -579,7 +579,7 @@ export default function ChhattisgarhLocationClient({ faqs }: Props) {
                   </span>
                   <h3 className="font-bold text-sm text-slate-900">Free Will</h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    The instrument must be executed freely, without fraud, coercion, misrepresentation, or undue family influence (Section 61).
+                    The instrument must be signed freely, without fraud, coercion, misrepresentation, or undue family influence (Section 61).
                   </p>
                 </div>
 
@@ -589,7 +589,7 @@ export default function ChhattisgarhLocationClient({ faqs }: Props) {
                   </span>
                   <h3 className="font-bold text-sm text-slate-900">Two Witnesses</h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    The testator must sign the document in the physical presence of at least two independent adult attesting witnesses (Section 63).
+                    The Will maker must sign the document in the physical presence of at least two independent adult witnesses (Section 63).
                   </p>
                 </div>
 
@@ -597,9 +597,9 @@ export default function ChhattisgarhLocationClient({ faqs }: Props) {
                   <span className="w-8 h-8 rounded-xl bg-rose-50 text-[#C65378] flex items-center justify-center font-bold text-sm">
                     <ShieldCheck className="w-4 h-4" />
                   </span>
-                  <h3 className="font-bold text-sm text-slate-900">Non-Beneficiary</h3>
+                  <h3 className="font-bold text-sm text-slate-900">Non-Heir</h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Attesting witnesses and their spouses must not be beneficiaries receiving any property under the Will (Section 67).
+                    Witnesses and their spouses must not be heirs receiving any property under the Will (Section 67).
                   </p>
                 </div>
               </div>
@@ -613,13 +613,13 @@ export default function ChhattisgarhLocationClient({ faqs }: Props) {
                   <span>REGISTRATION STATUS</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  2. Is Will Registration Mandatory in Chhattisgarh?
+                  2. Is Will Registration Needed in Chhattisgarh?
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Under Section 18(e) of the Registration Act, 1908, the registration of a testamentary Will is strictly <strong>optional</strong>. An unregistered Will signed on standard white paper before two independent witnesses is legally enforceable and admissible in judicial proceedings.
                 </p>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  However, with rapidly appreciating land and commercial values across Raipur, Nava Raipur, and Bilaspur, experienced advocates strongly advise formal registration. Registering your Will under Book III via NGDRS creates permanent government custody, establishes irrebuttable evidence of execution, and prevents delays during mutation.
+                  However, with rapidly appreciating land and shop values across Raipur, Nava Raipur, and Bilaspur, experienced lawyers strongly advise formal registration. Registering your Will under Book III via NGDRS creates permanent government custody, establishes irrebuttable evidence of signing, and prevents delays during name change.
                 </p>
               </div>
 
@@ -641,27 +641,27 @@ export default function ChhattisgarhLocationClient({ faqs }: Props) {
                     </tr>
                     <tr>
                       <td className="p-4 font-semibold">Legal Presumption of Validity</td>
-                      <td className="p-4 bg-rose-50/20">High statutory presumption of genuine execution</td>
+                      <td className="p-4 bg-rose-50/20">High legal presumption of genuine signing</td>
                       <td className="p-4 bg-slate-50/20">Prone to allegations of forgery or undue coercion</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-semibold">Bhuiyan Land Mutation (Namantran)</td>
-                      <td className="p-4 bg-rose-50/20">Direct mutation of B-1 and P-II extracts by Tehsildar</td>
+                      <td className="p-4 font-semibold">Bhuiyan Land Name Change (Namantran)</td>
+                      <td className="p-4 bg-rose-50/20">Direct name change of B-1 and P-II extracts by Tehsildar</td>
                       <td className="p-4 bg-slate-50/20">Frequent objections and delays during public proclamation</td>
                     </tr>
                     <tr>
                       <td className="p-4 font-semibold">RDA &amp; Nava Raipur Plot Transfer</td>
                       <td className="p-4 bg-rose-50/20">Accepted directly by development authority cells</td>
-                      <td className="p-4 bg-slate-50/20">Authorities routinely demand indemnity bonds or court orders</td>
+                      <td className="p-4 bg-slate-50/20">Offices routinely demand indemnity bonds or court orders</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-semibold">Commercial Business Transmission</td>
+                      <td className="p-4 font-semibold">Shop Business Transfer</td>
                       <td className="p-4 bg-rose-50/20">Swift transfer of partnership shares and bank accounts</td>
-                      <td className="p-4 bg-slate-50/20">Commercial partners may demand civil court certificates</td>
+                      <td className="p-4 bg-slate-50/20">Shop partners may demand civil court papers</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-semibold">Statutory Registration Cost</td>
-                      <td className="p-4 bg-rose-50/20 font-bold text-[#C65378]">Nominal statutory fee (₹100 to ₹500)</td>
+                      <td className="p-4 font-semibold">Legal Registration Cost</td>
+                      <td className="p-4 bg-rose-50/20 font-bold text-[#C65378]">Nominal legal fee (₹100 to ₹500)</td>
                       <td className="p-4 bg-slate-50/20 font-bold text-slate-700">₹0 cost</td>
                     </tr>
                   </tbody>
@@ -680,27 +680,27 @@ export default function ChhattisgarhLocationClient({ faqs }: Props) {
                   3. High Court of Chhattisgarh Probate Law Exemption
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  A frequent question from property holders in Raipur, Bilaspur, and Durg is whether probate from the High Court of Chhattisgarh is compulsory before inheriting real estate. The established legal answer is <strong>no</strong>.
+                  A frequent question from property holders in Raipur, Bilaspur, and Durg is whether probate from the High Court of Chhattisgarh is needed before inheriting real estate. The established legal answer is <strong>no</strong>.
                 </p>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Under Section 213 read with Section 57(a) and 57(b) of the Indian Succession Act, 1925, probate is legally mandatory solely for Wills executed within or covering immovable assets situated in the presidency towns of Mumbai, Kolkata, and Chennai. Chhattisgarh is a non-presidency state. The High Court of Chhattisgarh (Principal Seat at Bilaspur) has consistently held that court probate is non-mandatory for Hindu, Sikh, Jain, and Buddhist Wills to effect property transmission.
+                  Under Section 213 read with Section 57(a) and 57(b) of the Indian Succession Act, 1925, probate is legally needed solely for Wills signed within or covering immovable assets situated in the presidency towns of Mumbai, Kolkata, and Chennai. Chhattisgarh is a non-presidency state. The High Court of Chhattisgarh (Principal Seat at Bilaspur) has consistently held that court probate is non-needed for Hindu, Sikh, Jain, and Buddhist Wills to effect property transfer.
                 </p>
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="bg-white rounded-3xl border border-slate-200/90 p-6 shadow-xs space-y-3">
                   <span className="px-3 py-1 rounded-full bg-emerald-100 text-emerald-800 text-xs font-extrabold uppercase">
-                    Settled Law: Non-Compulsory
+                    Settled Law: Non-Needed
                   </span>
                   <h3 className="font-bold text-base text-slate-900">
                     High Court of Chhattisgarh Jurisprudence
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    The High Court of Chhattisgarh at Bilaspur has reaffirmed that Section 213 does not bar executors or legatees from establishing property rights without probate. A registered Will provides immediate authority for municipal mutation, banking access, and land transfer without civil court delays.
+                    The High Court of Chhattisgarh at Bilaspur has reaffirmed that Section 213 does not bar executors or legatees from establishing property rights without probate. A registered Will provides immediate authority for municipal name change, banking access, and land transfer without civil court delays.
                   </p>
                   <div className="pt-2 text-xs text-slate-500 flex items-center gap-1.5">
                     <Check className="w-3.5 h-3.5 text-emerald-600" />
-                    <span>Enables immediate asset transmission without High Court petitions</span>
+                    <span>Enables immediate asset transfer without High Court petitions</span>
                   </div>
                 </div>
 
@@ -712,11 +712,11 @@ export default function ChhattisgarhLocationClient({ faqs }: Props) {
                     When is Probate Filed in Chhattisgarh District Courts?
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    An executor may voluntarily petition for probate before the District Court (such as the District Judge at Raipur or Bilaspur) if rival claimants allege lack of mental capacity or file partition lawsuits. A probate decree operates as a judgment <em>in rem</em>, establishing conclusive legal proof worldwide.
+                    An executor may voluntarily petition for probate before the District Court (such as the District Judge at Raipur or Bilaspur) if rival claimants allege lack of mental capacity or file split lawsuits. A probate decree operates as a judgment <em>in rem</em>, establishing strong legal proof worldwide.
                   </p>
                   <div className="pt-2 text-xs text-slate-500 flex items-center gap-1.5">
                     <AlertTriangle className="w-3.5 h-3.5 text-[#C65378]" />
-                    <span>Conclusive judicial determination settling all collateral challenges</span>
+                    <span>Strong judicial determination settling all collateral fights</span>
                   </div>
                 </div>
               </div>
@@ -733,7 +733,7 @@ export default function ChhattisgarhLocationClient({ faqs }: Props) {
                   4. Chhattisgarh SRO Directory: NGDRS Registration Hubs
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Registration in Chhattisgarh is administered by the Commercial Tax (Registration) Department via the National Generic Document Registration System (NGDRS). Under Section 32 of the Registration Act, a Will can be registered at the Sub-Registrar Office where the testator resides or where any portion of the bequeathed property is situated.
+                  Registration in Chhattisgarh is administered by the Shop Tax (Registration) Department via the National Generic Document Registration System (NGDRS). Under Section 32 of the Registration Act, a Will can be registered at the SRO office where the Will maker resides or where any portion of the bequeathed property is situated.
                 </p>
               </div>
 
@@ -805,7 +805,7 @@ export default function ChhattisgarhLocationClient({ faqs }: Props) {
                       <p className="text-slate-600">{activeHubData.timings}</p>
                     </div>
                     <div className="md:col-span-2 space-y-1">
-                      <span className="font-bold text-slate-900 block">Key Localities in Jurisdiction:</span>
+                      <span className="font-bold text-slate-900 block">Key Localities in Area:</span>
                       <p className="text-slate-600 leading-relaxed">{activeHubData.areas}</p>
                     </div>
                   </div>
@@ -824,7 +824,7 @@ export default function ChhattisgarhLocationClient({ faqs }: Props) {
                   5. Regional Cities: Area-Wise Will Drafting in Chhattisgarh
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Estate holdings across Chhattisgarh span prime residential apartments in Shankar Nagar and Civil Lines, planned plots in Nava Raipur Atal Nagar, commercial wholesale establishments in Pandri and Vyapar Vihar, SAIL Bhilai quarters, sponge iron and rolling mills in Raigarh, and fertile farmlands in Rajnandgaon and Bastar. Our legal advocates offer customized legal drafting, NGDRS portal booking, and Sub-Registrar accompaniment across all key regional hubs:
+                  Estate holdings across Chhattisgarh span prime home apartments in Shankar Nagar and Civil Lines, planned plots in Nava Raipur Atal Nagar, shop wholesale establishments in Pandri and Vyapar Vihar, SAIL Bhilai quarters, sponge iron and rolling mills in Raigarh, and fertile farmlands in Rajnandgaon and Bastar. Our legal lawyers offer customized legal drafting, NGDRS portal booking, and Sub-Registrar accompaniment across all key regional hubs:
                 </p>
               </div>
 
@@ -855,7 +855,7 @@ export default function ChhattisgarhLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Specialized <strong>Will drafting services in Raipur</strong> for high-value apartments, RDA freehold schemes, Nava Raipur 90-year leasehold plots, and cloth market trading enterprises in Pandri. Codifies unambiguous asset distribution, life interests for spouses, and mutual fund transmissions to protect family wealth.
+                      Specialized <strong>Will drafting services in Raipur</strong> for high-value apartments, RDA freehold schemes, Nava Raipur 90-year leasehold plots, and cloth market trading enterprises in Pandri. Codifies clear asset split, life interests for spouses, and mutual fund transmissions to protect family wealth.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -864,7 +864,7 @@ export default function ChhattisgarhLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Civil Lines Collectorate &amp; Sector 19</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        NGDRS appointment coordination, advocate physical attendance, and Section 31 doorstep execution for senior testators.
+                        NGDRS appointment coordination, lawyer physical attendance, and Section 31 doorstep signing for senior testators.
                       </p>
                     </div>
                   </div>
@@ -909,7 +909,7 @@ export default function ChhattisgarhLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Customized <strong>Will drafting services in Bilaspur</strong> for legal professionals, commercial merchants in Vyapar Vihar, and residential property owners along Rama Magneto corridor. Clarifies High Court probate exemptions and incorporates robust witness and mental capacity protocols.
+                      Customized <strong>Will drafting services in Bilaspur</strong> for legal professionals, shop merchants in Vyapar Vihar, and home property owners along Rama Magneto corridor. Clarifies High Court probate exemptions and incorporates robust witness and mental capacity protocols.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -918,13 +918,13 @@ export default function ChhattisgarhLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Old Composite Collectorate Building</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Complete NGDRS slot reservation, advocate verification, and swift Book III government registration.
+                        Complete NGDRS slot reservation, lawyer check, and swift Book III government registration.
                       </p>
                     </div>
                   </div>
 
                   <div className="pt-4 mt-4 border-t border-slate-100 flex items-center justify-between">
-                    <span className="text-xs font-bold text-slate-500">Commercial &amp; Residential</span>
+                    <span className="text-xs font-bold text-slate-500">Shop &amp; Home</span>
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
@@ -963,7 +963,7 @@ export default function ChhattisgarhLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Tailored <strong>Will drafting services in Bhilai and Durg</strong> for engineers, retired SAIL personnel, and commercial proprietors. Formulates testamentary bequests for private freehold bungalows, CSIDC small-scale industrial units, and bank gratuity and pension funds.
+                      Tailored <strong>Will drafting services in Bhilai and Durg</strong> for engineers, retired SAIL personnel, and shop proprietors. Formulates testamentary bequests for private freehold bungalows, CSIDC small-scale industrial units, and bank gratuity and pension funds.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -972,7 +972,7 @@ export default function ChhattisgarhLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Tehsil Complex Near Ganj Mandi</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Assistance with NGDRS token booking, independent witness attestation, and doorstep verification across twin cities.
+                        Help with NGDRS token booking, independent witness attestation, and doorstep check across twin cities.
                       </p>
                     </div>
                   </div>
@@ -1017,7 +1017,7 @@ export default function ChhattisgarhLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Authoritative <strong>Will drafting services in Korba</strong> for energy executives, coal mining contractors, and trading families. Harmonizes succession for company shares, commercial vehicle fleets, residential plots, and ancestral agricultural properties.
+                      Authoritative <strong>Will drafting services in Korba</strong> for energy executives, coal mining contractors, and trading families. Harmonizes succession for company shares, shop vehicle fleets, home plots, and family farm assets.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1026,7 +1026,7 @@ export default function ChhattisgarhLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Mini Secretariat Complex, Kosabadi</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        NGDRS token reservation, advocate physical escort, and certified Book III documentation.
+                        NGDRS token reservation, lawyer physical escort, and certified Book III papers.
                       </p>
                     </div>
                   </div>
@@ -1071,7 +1071,7 @@ export default function ChhattisgarhLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Comprehensive <strong>Will drafting services in Raigarh</strong> for steel mill founders, industrial suppliers, and trading families. Establishes unambiguous business succession clauses for partnership capitals, private limited shares, and industrial plant machinery.
+                      Full <strong>Will drafting services in Raigarh</strong> for steel mill founders, industrial suppliers, and trading families. Establishes clear business succession clauses for partnership capitals, private limited shares, and industrial plant machinery.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1125,7 +1125,7 @@ export default function ChhattisgarhLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Expert <strong>Will drafting services in Rajnandgaon</strong> for rice mill owners, grain merchants, and agricultural landowners. Protects agricultural holdings, rice processing units, and ancestral family estates with Bhuiyan portal synchronization.
+                      Expert <strong>Will drafting services in Rajnandgaon</strong> for rice mill owners, grain merchants, and farm landowners. Protects farm holdings, rice processing units, and family family estates with Bhuiyan portal synchronization.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1159,7 +1159,7 @@ export default function ChhattisgarhLocationClient({ faqs }: Props) {
                     <div className="flex items-center justify-between gap-2">
                       <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-rose-50 text-[#C65378] border border-rose-100">
                         <MapPin className="w-3.5 h-3.5" />
-                        Southern Commercial Hub
+                        Southern Shop Hub
                       </span>
                       <span className="text-[11px] font-semibold text-slate-500 bg-slate-100 px-2.5 py-1 rounded-lg">
                         SRO Jagdalpur (Bastar)
@@ -1179,7 +1179,7 @@ export default function ChhattisgarhLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Dedicated <strong>Will drafting services in Jagdalpur</strong> for commercial traders, NMDC Nagarnar steel professionals, and urban property owners. Ensures strict compliance with Section 170-B of the Chhattisgarh Land Revenue Code safeguarding tribal land tenures.
+                      Dedicated <strong>Will drafting services in Jagdalpur</strong> for shop traders, NMDC Nagarnar steel professionals, and urban property owners. Ensures strict compliance with Section 170-B of the Chhattisgarh Land Revenue Code safeguarding tribal land tenures.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1188,7 +1188,7 @@ export default function ChhattisgarhLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Bastar District Collectorate Campus</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Specialized legal vetting, NGDRS e-Panjiyan token booking, and advocate registration assistance.
+                        Specialized legal vetting, NGDRS e-Panjiyan token booking, and lawyer registration help.
                       </p>
                     </div>
                   </div>
@@ -1233,7 +1233,7 @@ export default function ChhattisgarhLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Focused <strong>Will drafting services in Ambikapur</strong> for northern division commercial merchants, transport operators, and landowners. Facilitates smooth Bhuiyan computerized record updates (B-1/P-II) and prevents boundary or partition lawsuits among heirs.
+                      Focused <strong>Will drafting services in Ambikapur</strong> for northern division shop merchants, transport operators, and landowners. Facilitates smooth Bhuiyan computerized record updates (B-1/P-II) and prevents boundary or split lawsuits among heirs.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1242,7 +1242,7 @@ export default function ChhattisgarhLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Ambikapur Tehsil Office Complex</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        NGDRS token booking, verified advocate support, and Section 31 home visits across Surguja.
+                        NGDRS token booking, verified lawyer support, and Section 31 home visits across Surguja.
                       </p>
                     </div>
                   </div>
@@ -1274,7 +1274,7 @@ export default function ChhattisgarhLocationClient({ faqs }: Props) {
                   6. Step-by-Step SOP: Online Drafting to NGDRS Registration
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Follow this verified 5-stage legal operating procedure to draft, execute, and register your Will before the Sub-Registrar in Chhattisgarh:
+                  Follow this verified 5-stage legal operating step to draft, execute, and register your Will before the Sub-Registrar in Chhattisgarh:
                 </p>
               </div>
 
@@ -1288,7 +1288,7 @@ export default function ChhattisgarhLocationClient({ faqs }: Props) {
                       Asset Audit
                     </h3>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Compile complete details of RDA plots, Bhuiyan Khasra numbers, commercial shares, and bank deposits.
+                      Compile complete details of RDA plots, Bhuiyan Khasra numbers, shop shares, and bank deposits.
                     </p>
                   </div>
                 </div>
@@ -1299,7 +1299,7 @@ export default function ChhattisgarhLocationClient({ faqs }: Props) {
                       2
                     </span>
                     <h3 className="font-bold text-sm text-slate-900">
-                      Advocate Drafting
+                      Lawyer Drafting
                     </h3>
                     <p className="text-xs text-slate-600 leading-relaxed">
                       Draft customized legal clauses covering revocation of past wills, survivorship, executor powers, and minor guardianships.
@@ -1313,10 +1313,10 @@ export default function ChhattisgarhLocationClient({ faqs }: Props) {
                       3
                     </span>
                     <h3 className="font-bold text-sm text-slate-900">
-                      Valid Execution
+                      Valid Signing
                     </h3>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Print on A4 paper and sign each page in the physical presence of two independent non-beneficiary adult witnesses.
+                      Print on A4 paper and sign each page in the physical presence of two independent non-heir adult witnesses.
                     </p>
                   </div>
                 </div>
@@ -1362,7 +1362,7 @@ export default function ChhattisgarhLocationClient({ faqs }: Props) {
                   7. Section 31 Doorstep SRO Registration for Senior Citizens
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  For senior citizens, bedridden individuals, or persons with medical mobility restrictions residing in Shankar Nagar, Civil Lines, Nehru Nagar, or rural areas, traveling to the Sub-Registrar Office can be a physical burden. Under <strong>Section 31 of the Registration Act, 1908</strong>, the Sub-Registrar holds legal statutory authority to attend a private residence or hospital to register a Will.
+                  For senior citizens, bedridden people, or persons with medical mobility restrictions residing in Shankar Nagar, Civil Lines, Nehru Nagar, or rural areas, traveling to the SRO office can be a physical burden. Under <strong>Section 31 of the Registration Act, 1908</strong>, the Sub-Registrar holds legal legal authority to attend a private residence or hospital to register a Will.
                 </p>
               </div>
 
@@ -1375,14 +1375,14 @@ export default function ChhattisgarhLocationClient({ faqs }: Props) {
                     <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
                     <div>
                       <strong className="text-slate-900 block">Doctor Medical Certificate</strong>
-                      <span className="text-slate-600">A registered MBBS or MD doctor certifies that the testator is of sound mind but medically advised against traveling to the SRO.</span>
+                      <span className="text-slate-600">A registered MBBS or MD doctor certifies that the Will maker is of sound mind but medically advised against traveling to the SRO.</span>
                     </div>
                   </div>
 
                   <div className="flex items-start gap-3 p-4 rounded-2xl bg-slate-50 border border-slate-100">
                     <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
                     <div>
-                      <strong className="text-slate-900 block">Commission Application</strong>
+                      <strong className="text-slate-900 block">Commission Form</strong>
                       <span className="text-slate-600">Our legal team prepares and submits the formal Section 31 special commission petition before the jurisdictional Chhattisgarh Sub-Registrar.</span>
                     </div>
                   </div>
@@ -1417,7 +1417,7 @@ export default function ChhattisgarhLocationClient({ faqs }: Props) {
                   8. Document Checklist for Chhattisgarh SRO Registration
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Prepare your documentation before scheduling your Sub-Registrar appointment. You have organized <strong>{checkedCount} of {checklist.length}</strong> required documents:
+                  Prepare your papers before scheduling your Sub-Registrar appointment. You have organized <strong>{checkedCount} of {checklist.length}</strong> required documents:
                 </p>
               </div>
 
@@ -1467,7 +1467,7 @@ export default function ChhattisgarhLocationClient({ faqs }: Props) {
                   9. Chhattisgarh Property Types: RDA Plots, Land &amp; Mining
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Succession procedures in Chhattisgarh vary depending on whether the property is urban development authority land, agricultural revenue land, or industrial business assets:
+                  Succession steps in Chhattisgarh vary depending on whether the property is urban development authority land, farm revenue land, or industrial business assets:
                 </p>
               </div>
 
@@ -1480,25 +1480,25 @@ export default function ChhattisgarhLocationClient({ faqs }: Props) {
                     RDA &amp; Nava Raipur Atal Nagar Plots
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Residential plots and commercial spaces under Raipur Development Authority (RDA) and Nava Raipur Atal Nagar Development Authority (NRDA) operate on freehold and 90-year leasehold systems. A registered Will ensures direct substitution of allottee records without dispute penalties.
+                    Home plots and shop spaces under Raipur Development Authority (RDA) and Nava Raipur Atal Nagar Development Authority (NRDA) operate on freehold and 90-year leasehold systems. A registered Will ensures direct substitution of allottee records without fight penalties.
                   </p>
                 </div>
 
                 <div className="bg-white rounded-3xl border border-slate-200/90 p-6 shadow-xs space-y-3">
                   <span className="px-3 py-1 rounded-full bg-amber-100 text-amber-800 text-xs font-bold uppercase">
-                    Agricultural Holdings
+                    Farm Holdings
                   </span>
                   <h3 className="font-bold text-base text-slate-900">
                     Bhuiyan Portal Farmland &amp; Orchards
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Agricultural land mutation (Namantran) is regulated by Sections 109 and 110 of the CG Land Revenue Code. A certified copy of the registered Will is presented to the Tehsildar or Patwari for updating computerized B-1 (Khatiyan) and P-II (Khasra) records on bhuiyan.cg.nic.in.
+                    Farm land name change (Namantran) is regulated by Sections 109 and 110 of the CG Land Revenue Code. A certified copy of the registered Will is presented to the Tehsildar or Patwari for updating computerized B-1 (Khatiyan) and P-II (Khasra) records on bhuiyan.cg.nic.in.
                   </p>
                 </div>
 
                 <div className="bg-white rounded-3xl border border-slate-200/90 p-6 shadow-xs space-y-3">
                   <span className="px-3 py-1 rounded-full bg-emerald-100 text-emerald-800 text-xs font-bold uppercase">
-                    Commercial &amp; Industrial Assets
+                    Shop &amp; Industrial Assets
                   </span>
                   <h3 className="font-bold text-base text-slate-900">
                     Steel Units, Mines &amp; Trading Firms
@@ -1521,7 +1521,7 @@ export default function ChhattisgarhLocationClient({ faqs }: Props) {
                   10. Official NGDRS Chhattisgarh Registration Fees &amp; Costs
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Unlike commercial conveyance deeds or gifts that attract substantial ad-valorem stamp duty in Chhattisgarh, testamentary Wills are completely exempt from stamp duty. Government registration charges in Chhattisgarh are nominal:
+                  Unlike shop conveyance deeds or gifts that attract substantial ad-valorem stamp duty in Chhattisgarh, testamentary Wills are completely exempt from stamp duty. Government registration charges in Chhattisgarh are nominal:
                 </p>
               </div>
 
@@ -1530,7 +1530,7 @@ export default function ChhattisgarhLocationClient({ faqs }: Props) {
                   <thead>
                     <tr className="bg-slate-100/80 border-b border-slate-200 text-slate-800">
                       <th className="p-4 font-bold">Fee Component</th>
-                      <th className="p-4 font-bold">Statutory Amount</th>
+                      <th className="p-4 font-bold">Legal Amount</th>
                       <th className="p-4 font-bold">Remittance Authority</th>
                     </tr>
                   </thead>
@@ -1542,7 +1542,7 @@ export default function ChhattisgarhLocationClient({ faqs }: Props) {
                     </tr>
                     <tr>
                       <td className="p-4 font-semibold">SRO Book III Registration Fee</td>
-                      <td className="p-4 font-bold text-[#C65378]">₹100 to ₹500 (Nominal Statutory Fee)</td>
+                      <td className="p-4 font-bold text-[#C65378]">₹100 to ₹500 (Nominal Legal Fee)</td>
                       <td className="p-4">NGDRS CG e-Challan / Cyber Treasury</td>
                     </tr>
                     <tr>
@@ -1571,7 +1571,7 @@ export default function ChhattisgarhLocationClient({ faqs }: Props) {
                   11. Transparent Will Packages &amp; Pricing in Chhattisgarh
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Choose the legal assistance package tailored to your family&apos;s estate planning and property portfolio in Chhattisgarh:
+                  Choose the legal help package tailored to your family&apos;s estate planning and property portfolio in Chhattisgarh:
                 </p>
               </div>
 
@@ -1589,7 +1589,7 @@ export default function ChhattisgarhLocationClient({ faqs }: Props) {
                       ₹1,990
                     </div>
                     <p className="text-xs text-slate-600">
-                      Ideal for individual property holders with residential plots, apartments, bank accounts, and demat assets.
+                      Ideal for individual property holders with home plots, apartments, bank accounts, and demat assets.
                     </p>
                     <ul className="space-y-2.5 text-xs text-slate-700 pt-3 border-t border-slate-100">
                       <li className="flex items-center gap-2">
@@ -1598,11 +1598,11 @@ export default function ChhattisgarhLocationClient({ faqs }: Props) {
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>Legally vetted statutory clauses</span>
+                        <span>Legally vetted legal clauses</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>Instant PDF download &amp; execution guide</span>
+                        <span>Instant PDF download &amp; signing guide</span>
                       </li>
                     </ul>
                   </div>
@@ -1622,16 +1622,16 @@ export default function ChhattisgarhLocationClient({ faqs }: Props) {
                   </div>
                   <div className="space-y-4">
                     <span className="text-xs font-bold uppercase tracking-wider text-[#C65378]">
-                      Comprehensive
+                      Full
                     </span>
                     <h3 className="font-extrabold text-xl text-slate-900">
-                      Advocate Consultation
+                      Lawyer Talk
                     </h3>
                     <div className="text-3xl font-black text-slate-900">
                       ₹4,990
                     </div>
                     <p className="text-xs text-slate-600">
-                      Senior estate advocate review for RDA schemes, Bhuiyan farmlands, and commercial business assets.
+                      Senior estate lawyer review for RDA schemes, Bhuiyan farmlands, and shop business assets.
                     </p>
                     <ul className="space-y-2.5 text-xs text-slate-700 pt-3 border-t border-slate-100">
                       <li className="flex items-center gap-2">
@@ -1640,7 +1640,7 @@ export default function ChhattisgarhLocationClient({ faqs }: Props) {
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>1-on-1 video call with senior advocate</span>
+                        <span>1-on-1 video call with senior lawyer</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
@@ -1656,7 +1656,7 @@ export default function ChhattisgarhLocationClient({ faqs }: Props) {
                     href="/contact"
                     className="mt-6 w-full py-3 rounded-xl bg-[#C65378] text-white text-xs font-bold text-center hover:bg-[#a13c5d] transition-colors cursor-pointer"
                   >
-                    Book Advocate Call
+                    Book Lawyer Call
                   </a>
                 </div>
 
@@ -1673,7 +1673,7 @@ export default function ChhattisgarhLocationClient({ faqs }: Props) {
                       ₹9,990
                     </div>
                     <p className="text-xs text-slate-600">
-                      End-to-end registration coordination across any Chhattisgarh Sub-Registrar Office or home visit.
+                      End-to-end registration coordination across any Chhattisgarh SRO office or home visit.
                     </p>
                     <ul className="space-y-2.5 text-xs text-slate-700 pt-3 border-t border-slate-100">
                       <li className="flex items-center gap-2">
@@ -1682,7 +1682,7 @@ export default function ChhattisgarhLocationClient({ faqs }: Props) {
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>Advocate physically attends SRO</span>
+                        <span>Lawyer physically attends SRO</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
@@ -1757,7 +1757,7 @@ export default function ChhattisgarhLocationClient({ faqs }: Props) {
                   <span>STATUTORY CITATIONS</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  13. Statutory Citations &amp; Chhattisgarh Legal Portals
+                  13. Legal Citations &amp; Chhattisgarh Legal Portals
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Our drafting protocols comply strictly with codified Indian statutes and Chhattisgarh state registration systems:
@@ -1788,7 +1788,7 @@ export default function ChhattisgarhLocationClient({ faqs }: Props) {
                     CG Land Revenue Code 1959
                   </span>
                   <p className="text-xs text-slate-600">
-                    Sections 109 &amp; 110 (Mutation) and Section 170-B (Tribal Land Protection).
+                    Sections 109 &amp; 110 (Name Change) and Section 170-B (Tribal Land Protection).
                   </p>
                 </div>
 
@@ -1806,10 +1806,10 @@ export default function ChhattisgarhLocationClient({ faqs }: Props) {
             {/* BOTTOM CONVERSION CTA BANNER */}
             <section className="rounded-3xl bg-gradient-to-br from-[#172228] to-[#212F35] text-white p-8 sm:p-12 text-center space-y-5 shadow-xl">
               <h3 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-white">
-                Protect Your Chhattisgarh Properties &amp; Family Legacy
+                Protect Your Chhattisgarh Assets &amp; Family Legacy
               </h3>
               <p className="text-sm sm:text-base text-slate-200 max-w-2xl mx-auto leading-relaxed">
-                Do not leave your hard-earned Chhattisgarh plots, businesses, or farmlands to administrative disputes. Draft a legally valid Will online today or consult our senior advocates.
+                Do not leave your hard-earned Chhattisgarh plots, businesses, or farmlands to office fights. Draft a legally valid Will online today or consult our senior lawyers.
               </p>
               <div className="pt-3 flex flex-col sm:flex-row items-center justify-center gap-4">
                 <a
@@ -1823,7 +1823,7 @@ export default function ChhattisgarhLocationClient({ faqs }: Props) {
                   href="/contact"
                   className="w-full sm:w-auto px-6 py-3.5 rounded-full bg-white/10 text-white font-bold text-sm sm:text-base hover:bg-white/20 transition-all border border-white/20"
                 >
-                  Book Advocate Consultation
+                  Book Lawyer Talk
                 </a>
               </div>
             </section>
@@ -1866,7 +1866,7 @@ export default function ChhattisgarhLocationClient({ faqs }: Props) {
               />
             </div>
             <div className="pt-3 flex items-center justify-between text-xs text-slate-500">
-              <span>Chhattisgarh NGDRS Registered &amp; Bhuiyan Mutation Compliant</span>
+              <span>Chhattisgarh NGDRS Registered &amp; Bhuiyan Name Change Compliant</span>
               <a
                 href="/start"
                 onClick={(e) => {

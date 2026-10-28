@@ -108,19 +108,19 @@ const INITIAL_CHECKLIST = [
   },
   {
     id: "item-2",
-    label: "Original Aadhaar Card & PAN of Testator",
+    label: "Original Aadhaar Card & PAN of Will maker",
     detail: "Essential for biometric identity validation, electronic thumbprint, and digital photo at the SRO counter.",
     checked: true,
   },
   {
     id: "item-3",
     label: "Two Independent Adult Witnesses with Aadhaar",
-    detail: "Must carry original photo IDs and must not be beneficiaries receiving any asset under the Will.",
+    detail: "Must carry original photo IDs and must not be heirs receiving any asset under the Will.",
     checked: true,
   },
   {
     id: "item-4",
-    label: "Doctor Mental Fitness Certificate (MBBS / MD)",
+    label: "Doctor Sound Mind Note (MBBS / MD)",
     detail: "Strongly advised for senior citizens aged 60+. Certifies testamentary mental soundness and lucidity.",
     checked: false,
   },
@@ -139,7 +139,7 @@ const INITIAL_CHECKLIST = [
   {
     id: "item-7",
     label: "7/12 (Satbara) & 8A Extracts (For Farmland in Kalol/Mansa)",
-    detail: "Recent computerized land records from AnyRoR Gujarat portal for agricultural parcels or farmhouse plots.",
+    detail: "Recent computerized land records from AnyRoR Gujarat portal for farm parcels or farmhouse plots.",
     checked: false,
   },
 ];
@@ -230,13 +230,13 @@ export default function GandhinagarLocationClient({ faqs }: Props) {
                 <span>GANDHINAGAR &amp; CAPITAL REGION SUCCESSION DESK</span>
               </div>
 
-              {/* Strictly 1 H1 Tag: Length 57 characters (starts with user requirement) */}
+              {/* Strictly 1 H1 Tag: Length 57 characters (starts with user rule) */}
               <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight leading-tight text-white drop-shadow-xs">
                 Will Drafting Services in Gandhinagar: Legal Estate Guide
               </h1>
 
               <p className="text-base sm:text-lg text-slate-200 leading-relaxed font-normal max-w-2xl">
-                Draft a legally watertight Will for your GUDA residential sector plots, GIFT City apartments, commercial offices in Infocity, and farmlands in Kalol or Mansa. Get expert advocate drafting, Garvi Gujarat SRO slot booking, and Section 31 doorstep execution.
+                Draft a legally watertight Will for your GUDA home sector plots, GIFT City apartments, shop offices in Infocity, and farmlands in Kalol or Mansa. Get expert lawyer drafting, Garvi Gujarat SRO slot booking, and Section 31 doorstep signing.
               </p>
 
               <div className="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
@@ -482,17 +482,17 @@ export default function GandhinagarLocationClient({ faqs }: Props) {
                       <span>Optional Registration</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Will registration is optional under Section 18(e) of the Registration Act, 1908. While an unregistered Will signed before two witnesses is valid, official Book III registration via Garvi Gujarat provides undisputed evidentiary protection against family disputes.
+                      Will registration is optional under Section 18(e) of the Registration Act, 1908. While an unregistered Will signed before two witnesses is valid, official Book III registration via Garvi Gujarat provides undisputed proof protection against family fights.
                     </p>
                   </div>
 
                   <div className="p-4 rounded-2xl bg-slate-50/70 border border-slate-100 space-y-1.5">
                     <div className="flex items-center gap-2 font-bold text-sm text-slate-900">
                       <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
-                      <span>Probate Non-Compulsory</span>
+                      <span>Probate Non-Needed</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Gandhinagar lies outside the historical presidency towns. Under Section 213 of the Indian Succession Act, court probate is strictly non-compulsory in Gujarat, enabling swift title transmission with a registered Will.
+                      Gandhinagar lies outside the historical presidency towns. Under Section 213 of the Indian Succession Act, court probate is strictly non-needed in Gujarat, enabling swift title transfer with a registered Will.
                     </p>
                   </div>
 
@@ -502,17 +502,17 @@ export default function GandhinagarLocationClient({ faqs }: Props) {
                       <span>Zero Gujarat Stamp Duty</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Testamentary Wills are completely exempt from stamp duty across Gujarat under the Gujarat Stamp Act, 1958. You only pay a flat statutory fee of ₹100 plus nominal scanning charges at the Sub-Registrar Office.
+                      Testamentary Wills are completely exempt from stamp duty across Gujarat under the Gujarat Stamp Act, 1958. You only pay a flat legal fee of ₹100 plus nominal scanning charges at the SRO office.
                     </p>
                   </div>
 
                   <div className="p-4 rounded-2xl bg-slate-50/70 border border-slate-100 space-y-1.5">
                     <div className="flex items-center gap-2 font-bold text-sm text-slate-900">
                       <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
-                      <span>GUDA &amp; AnyRoR Land Mutation</span>
+                      <span>GUDA &amp; AnyRoR Land Name Change</span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      A registered Will expedites ownership mutation (Varasdar Nond) with the Gandhinagar Municipal Corporation (GMC) and enables seamless Form 6 Hakk Patrak entries for farmlands in Kalol, Mansa, and Dahegam on AnyRoR.
+                      A registered Will expedites ownership name change (Varasdar Nond) with the Gandhinagar Municipal Corporation (GMC) and enables seamless Form 6 Hakk Patrak entries for farmlands in Kalol, Mansa, and Dahegam on AnyRoR.
                     </p>
                   </div>
                 </div>
@@ -530,10 +530,10 @@ export default function GandhinagarLocationClient({ faqs }: Props) {
                   1. Will Drafting &amp; Legal Framework in Gandhinagar
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Estate planning and testamentary succession across Gandhinagar district are codified under the <strong>Indian Succession Act, 1925</strong>, the <strong>Registration Act, 1908</strong>, and the <strong>Gujarat Stamp Act, 1958</strong>. Any adult of sound mind can legally bequeath self-acquired residential property, commercial plots, agricultural parcels, corporate shares, and financial portfolios.
+                  Estate planning and testamentary succession across Gandhinagar district are codified under the <strong>Indian Succession Act, 1925</strong>, the <strong>Registration Act, 1908</strong>, and the <strong>Gujarat Stamp Act, 1958</strong>. Any adult of sound mind can legally bequeath self-acquired home property, shop plots, farm parcels, corporate shares, and financial portfolios.
                 </p>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Gandhinagar features a distinct blend of assets. A family portfolio frequently encompasses a residential sector plot in Sectors 1 to 30, high-growth luxury apartments in Kudasan or Raysan, global financial instruments in GIFT City, industrial units in Chhatral or Sector 25 GIDC, and ancestral farmland in Kalol or Mansa. Without a customized Will, heirs face severe administrative gridlock across GMC revenue desks, GUDA offices, and rural Talathi records.
+                  Gandhinagar features a distinct blend of assets. A family portfolio often encompasses a home sector plot in Sectors 1 to 30, high-growth luxury apartments in Kudasan or Raysan, global financial instruments in GIFT City, industrial units in Chhatral or Sector 25 GIDC, and family farmland in Kalol or Mansa. Without a customized Will, heirs face severe office gridlock across GMC revenue desks, GUDA offices, and rural Talathi records.
                 </p>
               </div>
 
@@ -544,7 +544,7 @@ export default function GandhinagarLocationClient({ faqs }: Props) {
                   </span>
                   <h3 className="font-bold text-sm text-slate-900">Legal Capacity</h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    The testator must be a major aged 18 years or older with sound testamentary mental capacity (Section 59).
+                    The Will maker must be a major aged 18 years or older with sound testamentary mental capacity (Section 59).
                   </p>
                 </div>
 
@@ -554,7 +554,7 @@ export default function GandhinagarLocationClient({ faqs }: Props) {
                   </span>
                   <h3 className="font-bold text-sm text-slate-900">Free Consent</h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Executed voluntarily without fraud, coercion, misrepresentation, or undue family influence (Section 61).
+                    Signed voluntarily without fraud, coercion, misrepresentation, or undue family influence (Section 61).
                   </p>
                 </div>
 
@@ -564,7 +564,7 @@ export default function GandhinagarLocationClient({ faqs }: Props) {
                   </span>
                   <h3 className="font-bold text-sm text-slate-900">Two Witnesses</h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Must be signed in the physical presence of at least two independent adult attesting witnesses (Section 63).
+                    Must be signed in the physical presence of at least two independent adult witnesses (Section 63).
                   </p>
                 </div>
 
@@ -572,9 +572,9 @@ export default function GandhinagarLocationClient({ faqs }: Props) {
                   <span className="w-8 h-8 rounded-xl bg-rose-50 text-[#C65378] flex items-center justify-center font-bold text-sm">
                     <ShieldCheck className="w-4 h-4" />
                   </span>
-                  <h3 className="font-bold text-sm text-slate-900">Non-Beneficiary</h3>
+                  <h3 className="font-bold text-sm text-slate-900">Non-Heir</h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Attesting witnesses and their spouses must not receive any legacy or property under the Will (Section 67).
+                    Witnesses and their spouses must not receive any legacy or property under the Will (Section 67).
                   </p>
                 </div>
               </div>
@@ -588,13 +588,13 @@ export default function GandhinagarLocationClient({ faqs }: Props) {
                   <span>REGISTRATION STATUS</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  2. Is Will Registration Mandatory in Gandhinagar?
+                  2. Is Will Registration Needed in Gandhinagar?
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Under Section 18(e) of the Registration Act, 1908, the registration of a testamentary Will is strictly <strong>optional</strong> throughout Gujarat. A Will executed on standard white paper and attested by two witnesses holds legal validity and is enforceable in civil proceedings.
+                  Under Section 18(e) of the Registration Act, 1908, the registration of a testamentary Will is strictly <strong>optional</strong> throughout Gujarat. A Will signed on standard white paper and attested by two witnesses holds legal validity and is enforceable in civil proceedings.
                 </p>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  However, with premier real estate values across Sectors 1 to 30, Kudasan, and GIFT City, legal experts strongly advise formal registration before a Gandhinagar Sub-Registrar. An official Book III registration eliminates suspicions of forgery, validates testamentary lucidity, and accelerates mutation with GUDA and GMC.
+                  However, with premier real estate values across Sectors 1 to 30, Kudasan, and GIFT City, legal experts strongly advise formal registration before a Gandhinagar Sub-Registrar. An official Book III registration eliminates suspicions of forgery, validates testamentary lucidity, and accelerates name change with GUDA and GMC.
                 </p>
               </div>
 
@@ -616,13 +616,13 @@ export default function GandhinagarLocationClient({ faqs }: Props) {
                     </tr>
                     <tr>
                       <td className="p-4 font-semibold">Legal Presumption</td>
-                      <td className="p-4 bg-rose-50/20">Strong evidentiary presumption of genuine execution</td>
+                      <td className="p-4 bg-rose-50/20">Strong proof presumption of genuine signing</td>
                       <td className="p-4 bg-slate-50/20">Susceptible to claims of coercion or unsound mind</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-semibold">GMC Property Tax Mutation</td>
+                      <td className="p-4 font-semibold">GMC Property Tax Name Change</td>
                       <td className="p-4 bg-rose-50/20">Swift substitution upon presenting certified SRO copy</td>
-                      <td className="p-4 bg-slate-50/20">Officials frequently insist on extensive indemnity bonds</td>
+                      <td className="p-4 bg-slate-50/20">Officials often insist on extensive indemnity bonds</td>
                     </tr>
                     <tr>
                       <td className="p-4 font-semibold">GUDA Sector Plot Transfer</td>
@@ -630,12 +630,12 @@ export default function GandhinagarLocationClient({ faqs }: Props) {
                       <td className="p-4 bg-slate-50/20">May lead to protracted scrutiny and heir affidavits</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-semibold">7/12 Land Mutation (AnyRoR)</td>
-                      <td className="p-4 bg-rose-50/20">Rapid Form 6 Ferfar verification by Revenue Talathi</td>
-                      <td className="p-4 bg-slate-50/20">Higher vulnerability to disputes during 30-day notice</td>
+                      <td className="p-4 font-semibold">7/12 Land Name Change (AnyRoR)</td>
+                      <td className="p-4 bg-rose-50/20">Rapid Form 6 Ferfar check by Revenue Talathi</td>
+                      <td className="p-4 bg-slate-50/20">Higher risk to fights during 30-day notice</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-semibold">Statutory Registration Cost</td>
+                      <td className="p-4 font-semibold">Legal Registration Cost</td>
                       <td className="p-4 bg-rose-50/20 font-bold text-[#C65378]">Flat ₹100 fee + nominal scanning charges</td>
                       <td className="p-4 bg-slate-50/20 font-bold text-slate-700">₹0 cost</td>
                     </tr>
@@ -655,27 +655,27 @@ export default function GandhinagarLocationClient({ faqs }: Props) {
                   3. Gandhinagar Probate Law: Gujarat High Court Rules
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  A common question among Gandhinagar property owners is whether probate from a civil court is compulsory before heirs can inherit residential or commercial property. The legal answer is <strong>no</strong>.
+                  A common question among Gandhinagar property owners is whether probate from a civil court is needed before heirs can inherit home or shop property. The legal answer is <strong>no</strong>.
                 </p>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Under Section 213 read with Section 57(a) and 57(b) of the Indian Succession Act, 1925, probate is mandatory solely for Wills executed within or involving immovable properties situated inside the historical presidency towns of Mumbai, Kolkata, and Chennai. Gandhinagar is situated within the jurisdiction of the Gujarat High Court and is completely exempt from mandatory probate requirements for Hindu, Jain, Sikh, and Buddhist testators.
+                  Under Section 213 read with Section 57(a) and 57(b) of the Indian Succession Act, 1925, probate is needed solely for Wills signed within or involving land and flats situated inside the historical presidency towns of Mumbai, Kolkata, and Chennai. Gandhinagar is situated within the area of the Gujarat High Court and is completely exempt from needed probate rules for Hindu, Jain, Sikh, and Buddhist testators.
                 </p>
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="bg-white rounded-3xl border border-slate-200/90 p-6 shadow-xs space-y-3">
                   <span className="px-3 py-1 rounded-full bg-emerald-100 text-emerald-800 text-xs font-extrabold uppercase">
-                    Settled Law: Non-Compulsory
+                    Settled Law: Non-Needed
                   </span>
                   <h3 className="font-bold text-base text-slate-900">
                     Gujarat High Court Precedents
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    The High Court of Gujarat and the Supreme Court of India in landmark decisions including <em>Clarence Pais v. Union of India</em> have repeatedly affirmed that obtaining probate or letters of administration is not a condition precedent to establish legal right in Gujarat. A registered Will provides immediate authority for GMC tax transfer and banking transmissions.
+                    The High Court of Gujarat and the Supreme Court of India in landmark decisions including <em>Clarence Pais v. Union of India</em> have repeatedly affirmed that getting probate or letters of management is not a condition precedent to set up legal right in Gujarat. A registered Will provides immediate authority for GMC tax transfer and banking transmissions.
                   </p>
                   <div className="pt-2 text-xs text-slate-500 flex items-center gap-1.5">
                     <Check className="w-3.5 h-3.5 text-emerald-600" />
-                    <span>Enables prompt transmission without multi-year civil court delays</span>
+                    <span>Enables prompt transfer without multi-year civil court delays</span>
                   </div>
                 </div>
 
@@ -687,11 +687,11 @@ export default function GandhinagarLocationClient({ faqs }: Props) {
                     When is Probate Filed in Gandhinagar District Court?
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    An executor or beneficiary may choose to petition for probate or letters of administration before the Principal District Judge in Gandhinagar only if hostile legal heirs challenge the authenticity of the instrument or allege lack of testamentary capacity. Court probate provides a conclusive judgment <em>in rem</em> binding on all parties.
+                    An executor or heir may choose to petition for probate or letters of management before the Principal District Judge in Gandhinagar only if hostile legal heirs challenge the authenticity of the instrument or allege lack of sound mind. Court probate provides a strong judgment <em>in rem</em> binding on all parties.
                   </p>
                   <div className="pt-2 text-xs text-slate-500 flex items-center gap-1.5">
                     <AlertTriangle className="w-3.5 h-3.5 text-[#C65378]" />
-                    <span>Conclusive judicial decree silencing all collateral inheritance claims</span>
+                    <span>Strong judicial decree silencing all collateral inheritance claims</span>
                   </div>
                 </div>
               </div>
@@ -708,7 +708,7 @@ export default function GandhinagarLocationClient({ faqs }: Props) {
                   4. Gandhinagar Sub-Registrars: SRO Directory &amp; Hubs
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Gandhinagar district operates Sub-Registrar Offices administered under the Inspector General of Registration Gujarat via the Garvi Gujarat portal. Under Section 32 of the Registration Act, a Will can be registered at the Sub-Registrar Office having jurisdiction over your permanent residence or where any portion of your immovable property is situated.
+                  Gandhinagar district operates Sub-Registrar Offices administered under the Inspector General of Registration Gujarat via the Garvi Gujarat portal. Under Section 32 of the Registration Act, a Will can be registered at the SRO office having area over your permanent residence or where any portion of your land and flats is situated.
                 </p>
               </div>
 
@@ -778,7 +778,7 @@ export default function GandhinagarLocationClient({ faqs }: Props) {
                       <p className="text-slate-600">{activeHubData.timings}</p>
                     </div>
                     <div className="md:col-span-2 space-y-1">
-                      <span className="font-bold text-slate-900 block">Key Localities in Jurisdiction:</span>
+                      <span className="font-bold text-slate-900 block">Key Localities in Area:</span>
                       <p className="text-slate-600 leading-relaxed">{activeHubData.areas}</p>
                     </div>
                   </div>
@@ -791,7 +791,7 @@ export default function GandhinagarLocationClient({ faqs }: Props) {
                       href="/contact"
                       className="inline-flex items-center gap-1.5 font-bold text-[#C65378] hover:underline"
                     >
-                      <span>Request Advocate Assistance for {activeHubData.name}</span>
+                      <span>Request Lawyer Help for {activeHubData.name}</span>
                       <ArrowRight className="w-3.5 h-3.5" />
                     </a>
                   </div>
@@ -810,7 +810,7 @@ export default function GandhinagarLocationClient({ faqs }: Props) {
                   5. Regional Cities: Area-Wise Will Drafting in Gandhinagar
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Estate assets in Gandhinagar district encompass planned capital sectors, high-density growth zones along Kudasan and Raysan, international financial infrastructure in GIFT City, bustling industrial clusters in Kalol and Chhatral, and fertile agricultural farmlands in Mansa and Dahegam. Our senior advocates deliver customized legal drafting, Garvi Gujarat slot scheduling, and Sub-Registrar accompaniment across all key micro-markets:
+                  Estate assets in Gandhinagar district encompass planned capital sectors, high-density growth zones along Kudasan and Raysan, international financial infrastructure in GIFT City, bustling industrial clusters in Kalol and Chhatral, and fertile farm farmlands in Mansa and Dahegam. Our senior lawyers deliver customized legal drafting, Garvi Gujarat slot scheduling, and Sub-Registrar accompaniment across all key micro-markets:
                 </p>
               </div>
 
@@ -821,7 +821,7 @@ export default function GandhinagarLocationClient({ faqs }: Props) {
                     <div className="flex items-center justify-between gap-2">
                       <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-rose-50 text-[#C65378] border border-rose-100">
                         <MapPin className="w-3.5 h-3.5" />
-                        Capital Administrative Core
+                        Capital Office Core
                       </span>
                       <span className="text-[11px] font-semibold text-slate-500 bg-slate-100 px-2.5 py-1 rounded-lg">
                         SRO Gandhinagar (Sector 11)
@@ -840,7 +840,7 @@ export default function GandhinagarLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Specialized <strong>Will drafting services in Capital Sectors</strong> and Infocity for government residential plots, independent bungalows, and IT commercial offices. Codifies GUDA leasehold-to-freehold succession rights, GMC property tax record mutation, and financial portfolio distribution.
+                      Specialized <strong>Will drafting services in Capital Sectors</strong> and Infocity for government home plots, independent bungalows, and IT shop offices. Codifies GUDA leasehold-to-freehold succession rights, GMC property tax record name change, and financial portfolio split.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -849,7 +849,7 @@ export default function GandhinagarLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Ground Floor, Jilla Seva Sadan, Sector 11</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Garvi Gujarat slot scheduling, advocate physical attendance, and Section 31 doorstep execution for elderly residents.
+                        Garvi Gujarat slot scheduling, lawyer physical attendance, and Section 31 doorstep signing for elderly residents.
                       </p>
                     </div>
                   </div>
@@ -893,7 +893,7 @@ export default function GandhinagarLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Customized <strong>Will drafting services in GIFT City</strong> and Kudasan for luxury high-rise apartments, dual SEZ/domestic zone assets, and tech founders&apos; equity. Formulates cross-border NRI clauses, multi-currency accounts, and designated executor provisions.
+                      Customized <strong>Will drafting services in GIFT City</strong> and Kudasan for luxury high-rise apartments, dual SEZ/domestic zone assets, and tech founders&apos; equity. Formulates cross-border NRI clauses, multi-currency accounts, and designated executor rules.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -946,16 +946,16 @@ export default function GandhinagarLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Comprehensive <strong>Will drafting services in Koba and Raysan</strong> for premium residential villas, gated communities, and commercial complexes along the Gandhinagar-Ahmedabad corridor. Structures clear survivorship rights and life-interest protections for surviving spouses.
+                      Full <strong>Will drafting services in Koba and Raysan</strong> for premium home villas, gated communities, and shop complexes along the Gandhinagar-Ahmedabad corridor. Structures clear survivorship rights and life-interest protections for surviving spouses.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
                       <div className="flex items-center gap-2 font-bold text-slate-900">
                         <Building className="w-3.5 h-3.5 text-[#C65378]" />
-                        <span>SRO Hub: Gandhinagar South Administrative Belt</span>
+                        <span>SRO Hub: Gandhinagar South Office Belt</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Garvi Gujarat slot confirmation, legal heir documentation check, and verified witness execution.
+                        Garvi Gujarat slot confirmation, legal heir papers check, and verified witness signing.
                       </p>
                     </div>
                   </div>
@@ -980,7 +980,7 @@ export default function GandhinagarLocationClient({ faqs }: Props) {
                     <div className="flex items-center justify-between gap-2">
                       <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-rose-50 text-[#C65378] border border-rose-100">
                         <MapPin className="w-3.5 h-3.5" />
-                        New West Residential Hub
+                        New West Home Hub
                       </span>
                       <span className="text-[11px] font-semibold text-slate-500 bg-slate-100 px-2.5 py-1 rounded-lg">
                         SRO Gandhinagar (Sector 11)
@@ -999,7 +999,7 @@ export default function GandhinagarLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Tailored <strong>Will drafting services in Sargasan and Vavol</strong> for modern apartment societies and plotted row houses. Eliminates risks of title clouds, ensuring seamless mutation in GMC property tax registers and smooth transfer of society memberships.
+                      Tailored <strong>Will drafting services in Sargasan and Vavol</strong> for modern apartment societies and plotted row houses. Eliminates risks of title clouds, making sure seamless name change in GMC property tax registers and smooth transfer of society memberships.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1008,13 +1008,13 @@ export default function GandhinagarLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Jilla Seva Sadan, Sector 11</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Complete documentation review, biometric scheduling, and certified copy delivery.
+                        Complete papers review, biometric scheduling, and certified copy delivery.
                       </p>
                     </div>
                   </div>
 
                   <div className="pt-4 mt-4 border-t border-slate-100 flex items-center justify-between">
-                    <span className="text-xs font-bold text-slate-500">Residential Societies</span>
+                    <span className="text-xs font-bold text-slate-500">Home Societies</span>
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
@@ -1033,7 +1033,7 @@ export default function GandhinagarLocationClient({ faqs }: Props) {
                     <div className="flex items-center justify-between gap-2">
                       <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-rose-50 text-[#C65378] border border-rose-100">
                         <Factory className="w-3.5 h-3.5" />
-                        Industrial &amp; Commercial Tehsil
+                        Industrial &amp; Shop Tehsil
                       </span>
                       <span className="text-[11px] font-semibold text-slate-500 bg-slate-100 px-2.5 py-1 rounded-lg">
                         SRO Kalol
@@ -1052,7 +1052,7 @@ export default function GandhinagarLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Dedicated <strong>Will drafting services in Kalol and Chhatral</strong> for manufacturing entrepreneurs, factory owners, and traders. Secures seamless succession of GIDC industrial leasehold rights, private company shares, machinery assets, and commercial showrooms.
+                      Dedicated <strong>Will drafting services in Kalol and Chhatral</strong> for manufacturing entrepreneurs, factory owners, and traders. Secures seamless succession of GIDC industrial leasehold rights, private company shares, machinery assets, and shop showrooms.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1101,11 +1101,11 @@ export default function GandhinagarLocationClient({ faqs }: Props) {
                       <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Mansa Town</span>
                       <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Pethapur Heritage</span>
                       <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Lodra</span>
-                      <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Vihar Agricultural Belt</span>
+                      <span className="px-2 py-0.5 rounded-md bg-slate-100 font-medium">Vihar Farm Belt</span>
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Specialized <strong>Will drafting services in Mansa and Pethapur</strong> for ancestral townhouses, traditional artisan workshops, and suburban residential parcels. Resolves complex joint family co-parcenary partition claims to ensure clean personal bequests.
+                      Specialized <strong>Will drafting services in Mansa and Pethapur</strong> for family townhouses, traditional artisan workshops, and suburban home parcels. Resolves complex joint family co-parcenary split claims to make sure clean personal bequests.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1114,13 +1114,13 @@ export default function GandhinagarLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Tehsil Karyalaya Compound, ITI Road, Mansa</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Ancestral property succession, Gram Panchayat records, and Book III registration.
+                        Family property succession, Gram Panchayat records, and Book III registration.
                       </p>
                     </div>
                   </div>
 
                   <div className="pt-4 mt-4 border-t border-slate-100 flex items-center justify-between">
-                    <span className="text-xs font-bold text-slate-500">Ancestral Homes &amp; Plots</span>
+                    <span className="text-xs font-bold text-slate-500">Family Homes &amp; Plots</span>
                     <Link
                       href="/start"
                       onClick={handleStartDraft}
@@ -1158,7 +1158,7 @@ export default function GandhinagarLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Expert <strong>Will drafting services in Dahegam</strong> for agricultural holdings, warehouses, agrochemical plants, and commercial properties. Formulates clauses in strict alignment with Gujarat land revenue provisions and prevents agricultural parcel fragmentation.
+                      Expert <strong>Will drafting services in Dahegam</strong> for farm holdings, warehouses, agrochemical plants, and shop assets. Formulates clauses in strict alignment with Gujarat land revenue rules and prevents farm parcel fragmentation.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1167,7 +1167,7 @@ export default function GandhinagarLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Taluka Seva Sadan, Modasa Highway, Dahegam</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        AnyRoR 7/12 Satbara extract mutation, Form 6 Ferfar guidance, and rural revenue compliance.
+                        AnyRoR 7/12 Satbara extract name change, Form 6 Ferfar guidance, and rural revenue compliance.
                       </p>
                     </div>
                   </div>
@@ -1211,7 +1211,7 @@ export default function GandhinagarLocationClient({ faqs }: Props) {
                     </div>
 
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Estate succession solutions for properties straddling the Gandhinagar-Ahmedabad municipal periphery. Streamlines cross-jurisdiction inheritance, harmonizing GMC and AMC property records under a single legally enforceable Will instrument.
+                      Estate succession solutions for assets straddling the Gandhinagar-Ahmedabad municipal periphery. Streamlines cross-area inheritance, harmonizing GMC and AMC property records under a single legally enforceable Will instrument.
                     </p>
 
                     <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 space-y-1.5 text-xs text-slate-700">
@@ -1220,7 +1220,7 @@ export default function GandhinagarLocationClient({ faqs }: Props) {
                         <span>SRO Hub: Sector 11 Registry Office</span>
                       </div>
                       <p className="text-[11px] text-slate-500">
-                        Dual municipal asset integration, bank locker transmission, and Garvi Gujarat appointment booking.
+                        Dual municipal asset integration, bank locker transfer, and Garvi Gujarat appointment booking.
                       </p>
                     </div>
                   </div>
@@ -1252,7 +1252,7 @@ export default function GandhinagarLocationClient({ faqs }: Props) {
                   6. Step-by-Step SOP: Drafting to Garvi Gujarat SRO
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Follow this verified 5-stage legal operating procedure to create, execute, and register your Will before the Sub-Registrar in Gandhinagar:
+                  Follow this verified 5-stage legal operating step to create, execute, and register your Will before the Sub-Registrar in Gandhinagar:
                 </p>
               </div>
 
@@ -1277,7 +1277,7 @@ export default function GandhinagarLocationClient({ faqs }: Props) {
                       2
                     </span>
                     <h3 className="font-bold text-sm text-slate-900">
-                      Advocate Drafting
+                      Lawyer Drafting
                     </h3>
                     <p className="text-xs text-slate-600 leading-relaxed">
                       Draft customized legal clauses covering revocation of past wills, survivorship, executor powers, and minor guardianships.
@@ -1291,10 +1291,10 @@ export default function GandhinagarLocationClient({ faqs }: Props) {
                       3
                     </span>
                     <h3 className="font-bold text-sm text-slate-900">
-                      Valid Execution
+                      Valid Signing
                     </h3>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Print on A4 paper and sign each page in the physical presence of two independent non-beneficiary adult witnesses.
+                      Print on A4 paper and sign each page in the physical presence of two independent non-heir adult witnesses.
                     </p>
                   </div>
                 </div>
@@ -1322,7 +1322,7 @@ export default function GandhinagarLocationClient({ faqs }: Props) {
                       SRO Biometrics
                     </h3>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Visit Gandhinagar SRO with witnesses for verbal verification, photo capture, and biometric thumbprint to seal Book III entry.
+                      Visit Gandhinagar SRO with witnesses for verbal check, photo capture, and biometric thumbprint to seal Book III entry.
                     </p>
                   </div>
                 </div>
@@ -1340,7 +1340,7 @@ export default function GandhinagarLocationClient({ faqs }: Props) {
                   7. Section 31 Doorstep SRO Registration for Seniors
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  For elderly, convalescing, or bedridden citizens residing in Sectors 1 to 30, Kudasan, Raysan, or rural estates, traveling to the Sub-Registrar Office can pose serious health challenges. Under <strong>Section 31 of the Registration Act, 1908</strong>, the Sub-Registrar has statutory authority to visit a private home or healthcare facility to register a Will.
+                  For elderly, convalescing, or bedridden citizens residing in Sectors 1 to 30, Kudasan, Raysan, or rural estates, traveling to the SRO office can pose serious health fights. Under <strong>Section 31 of the Registration Act, 1908</strong>, the Sub-Registrar has legal authority to visit a private home or healthcare facility to register a Will.
                 </p>
               </div>
 
@@ -1360,7 +1360,7 @@ export default function GandhinagarLocationClient({ faqs }: Props) {
                   <div className="flex items-start gap-3 p-4 rounded-2xl bg-slate-50 border border-slate-100">
                     <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
                     <div>
-                      <strong className="text-slate-900 block">Commission Application</strong>
+                      <strong className="text-slate-900 block">Commission Form</strong>
                       <span className="text-slate-600">Our legal team prepares and submits the formal Section 31 special commission petition before the jurisdictional Gandhinagar Sub-Registrar.</span>
                     </div>
                   </div>
@@ -1395,7 +1395,7 @@ export default function GandhinagarLocationClient({ faqs }: Props) {
                   8. Document Checklist for Gandhinagar Sub-Registrars
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Prepare your documentation before scheduling your Sub-Registrar appointment. You have organized <strong>{checkedCount} of {checklist.length}</strong> required documents:
+                  Prepare your papers before scheduling your Sub-Registrar appointment. You have organized <strong>{checkedCount} of {checklist.length}</strong> required documents:
                 </p>
               </div>
 
@@ -1443,7 +1443,7 @@ export default function GandhinagarLocationClient({ faqs }: Props) {
                   9. Gandhinagar Property Types: GUDA Plots &amp; GIFT City
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Succession procedures in Gandhinagar vary according to the nature of property title and governing regulatory bodies:
+                  Succession steps in Gandhinagar vary according to the nature of property title and governing regulatory bodies:
                 </p>
               </div>
 
@@ -1456,19 +1456,19 @@ export default function GandhinagarLocationClient({ faqs }: Props) {
                     GUDA Plots &amp; Sector Bungalows
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Residential plots across Sectors 1 to 30 allotted by the State Government or GUDA require clear testamentary designation. A registered Will directs the Gandhinagar Municipal Corporation to execute Varasdar Nond without requiring succession certificates.
+                    Home plots across Sectors 1 to 30 allotted by the State Government or GUDA require clear testamentary designation. A registered Will directs the Gandhinagar Municipal Corporation to execute Varasdar Nond without requiring succession papers.
                   </p>
                 </div>
 
                 <div className="bg-white rounded-3xl border border-slate-200/90 p-6 shadow-xs space-y-3">
                   <span className="px-3 py-1 rounded-full bg-amber-100 text-amber-800 text-xs font-bold uppercase">
-                    Agricultural Lands
+                    Farm Lands
                   </span>
                   <h3 className="font-bold text-base text-slate-900">
                     AnyRoR 7/12 &amp; Farmhouse Parcels
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Farmland and farmhouse estates in Kalol, Mansa, and Dahegam require precise drafting under Gujarat agrarian laws. A certified registered Will copy is submitted to the Talathi for Village Form 6 Ferfar mutation on the AnyRoR portal.
+                    Farmland and farmhouse estates in Kalol, Mansa, and Dahegam require precise drafting under Gujarat agrarian laws. A certified registered Will copy is submitted to the Talathi for Village Form 6 Ferfar name change on the AnyRoR portal.
                   </p>
                 </div>
 
@@ -1480,7 +1480,7 @@ export default function GandhinagarLocationClient({ faqs }: Props) {
                     GIFT City &amp; GIDC Plots
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    For commercial offices or luxury flats in GIFT City, and industrial factory plots in Chhatral or Dahegam GIDC, the Will details leasehold transfer rights, private company shares, and foreign investment repatriations.
+                    For shop offices or luxury flats in GIFT City, and industrial factory plots in Chhatral or Dahegam GIDC, the Will details leasehold transfer rights, private company shares, and foreign investment repatriations.
                   </p>
                 </div>
               </div>
@@ -1506,7 +1506,7 @@ export default function GandhinagarLocationClient({ faqs }: Props) {
                   <thead>
                     <tr className="bg-slate-100/80 border-b border-slate-200 text-slate-800">
                       <th className="p-4 font-bold">Fee Component</th>
-                      <th className="p-4 font-bold">Statutory Amount</th>
+                      <th className="p-4 font-bold">Legal Amount</th>
                       <th className="p-4 font-bold">Remittance Authority</th>
                     </tr>
                   </thead>
@@ -1518,7 +1518,7 @@ export default function GandhinagarLocationClient({ faqs }: Props) {
                     </tr>
                     <tr>
                       <td className="p-4 font-semibold">SRO Book III Registration Fee</td>
-                      <td className="p-4 font-bold text-[#C65378]">₹100 (Flat Statutory Fee)</td>
+                      <td className="p-4 font-bold text-[#C65378]">₹100 (Flat Legal Fee)</td>
                       <td className="p-4">Garvi Gujarat via Cyber Treasury</td>
                     </tr>
                     <tr>
@@ -1547,7 +1547,7 @@ export default function GandhinagarLocationClient({ faqs }: Props) {
                   11. Transparent Will Packages &amp; Legal Fees in Gandhinagar
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
-                  Choose the legal assistance package tailored to your family&apos;s estate planning and property portfolio in Gandhinagar:
+                  Choose the legal help package tailored to your family&apos;s estate planning and property portfolio in Gandhinagar:
                 </p>
               </div>
 
@@ -1574,11 +1574,11 @@ export default function GandhinagarLocationClient({ faqs }: Props) {
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>Legally vetted statutory clauses</span>
+                        <span>Legally vetted legal clauses</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>Instant PDF download &amp; execution guide</span>
+                        <span>Instant PDF download &amp; signing guide</span>
                       </li>
                     </ul>
                   </div>
@@ -1598,16 +1598,16 @@ export default function GandhinagarLocationClient({ faqs }: Props) {
                   </div>
                   <div className="space-y-4">
                     <span className="text-xs font-bold uppercase tracking-wider text-[#C65378]">
-                      Comprehensive
+                      Full
                     </span>
                     <h3 className="font-extrabold text-xl text-slate-900">
-                      Advocate Consultation
+                      Lawyer Talk
                     </h3>
                     <div className="text-3xl font-black text-slate-900">
                       ₹4,990
                     </div>
                     <p className="text-xs text-slate-600">
-                      Senior estate advocate review for sector bungalows, GIFT City investments, and Kalol farmland.
+                      Senior estate lawyer review for sector bungalows, GIFT City investments, and Kalol farmland.
                     </p>
                     <ul className="space-y-2.5 text-xs text-slate-700 pt-3 border-t border-slate-100">
                       <li className="flex items-center gap-2">
@@ -1616,7 +1616,7 @@ export default function GandhinagarLocationClient({ faqs }: Props) {
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>1-on-1 video call with senior advocate</span>
+                        <span>1-on-1 video call with senior lawyer</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
@@ -1632,7 +1632,7 @@ export default function GandhinagarLocationClient({ faqs }: Props) {
                     href="/contact"
                     className="mt-6 w-full py-3 rounded-xl bg-[#C65378] text-white text-xs font-bold text-center hover:bg-[#a13c5d] transition-colors cursor-pointer"
                   >
-                    Book Advocate Call
+                    Book Lawyer Call
                   </a>
                 </div>
 
@@ -1649,7 +1649,7 @@ export default function GandhinagarLocationClient({ faqs }: Props) {
                       ₹9,990
                     </div>
                     <p className="text-xs text-slate-600">
-                      End-to-end registration coordination across any Gandhinagar Sub-Registrar Office or home visit.
+                      End-to-end registration coordination across any Gandhinagar SRO office or home visit.
                     </p>
                     <ul className="space-y-2.5 text-xs text-slate-700 pt-3 border-t border-slate-100">
                       <li className="flex items-center gap-2">
@@ -1658,7 +1658,7 @@ export default function GandhinagarLocationClient({ faqs }: Props) {
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>Advocate physically attends Gandhinagar SRO</span>
+                        <span>Lawyer physically attends Gandhinagar SRO</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-emerald-600 shrink-0" />
@@ -1732,7 +1732,7 @@ export default function GandhinagarLocationClient({ faqs }: Props) {
                   <span>STATUTORY CITATIONS</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  13. Statutory Citations &amp; Gujarat Legal Portals
+                  13. Legal Citations &amp; Gujarat Legal Portals
                 </h3>
                 <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-4xl">
                   Our drafting protocols comply strictly with codified Indian statutes and Gujarat state registration systems:
@@ -1781,10 +1781,10 @@ export default function GandhinagarLocationClient({ faqs }: Props) {
             {/* BOTTOM CONVERSION CTA BANNER */}
             <section className="rounded-3xl bg-gradient-to-br from-[#172228] to-[#212F35] text-white p-8 sm:p-12 text-center space-y-5 shadow-xl">
               <h3 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-white">
-                Protect Your Gandhinagar Properties &amp; Family Legacy
+                Protect Your Gandhinagar Assets &amp; Family Legacy
               </h3>
               <p className="text-sm sm:text-base text-slate-200 max-w-2xl mx-auto leading-relaxed">
-                Do not leave your hard-earned Gandhinagar plots, GIFT City apartments, or farmlands to administrative friction. Draft a legally binding Will online today or consult our senior Gujarat High Court advocates.
+                Do not leave your hard-earned Gandhinagar plots, GIFT City apartments, or farmlands to office friction. Draft a legally binding Will online today or consult our senior Gujarat High Court lawyers.
               </p>
               <div className="pt-3 flex flex-col sm:flex-row items-center justify-center gap-4">
                 <a
@@ -1798,7 +1798,7 @@ export default function GandhinagarLocationClient({ faqs }: Props) {
                   href="/contact"
                   className="w-full sm:w-auto px-6 py-3.5 rounded-full bg-white/10 text-white font-bold text-sm sm:text-base hover:bg-white/20 transition-all border border-white/20"
                 >
-                  Book Advocate Consultation
+                  Book Lawyer Talk
                 </a>
               </div>
             </section>
@@ -1841,7 +1841,7 @@ export default function GandhinagarLocationClient({ faqs }: Props) {
               />
             </div>
             <div className="pt-3 flex items-center justify-between text-xs text-slate-500">
-              <span>Gandhinagar SRO Registered &amp; GMC Mutation Compliant</span>
+              <span>Gandhinagar SRO Registered &amp; GMC Name Change Compliant</span>
               <a
                 href="/start"
                 onClick={(e) => {

@@ -119,20 +119,20 @@ const INITIAL_CHECKLIST = [
   },
   {
     id: "item-2",
-    label: "Original Aadhaar Card & PAN of the Testator",
-    detail: "Required for biometric verification, thumbprint scanning, and web camera photo capture at the Tehsil office.",
+    label: "Original Aadhaar Card & PAN of the Will maker",
+    detail: "Required for biometric check, thumbprint scanning, and web camera photo capture at the Tehsil office.",
     checked: true,
   },
   {
     id: "item-3",
     label: "Two Independent Adult Witnesses with Aadhaar",
-    detail: "Both witnesses must carry original government photo IDs and must not be beneficiaries receiving assets under the Will.",
+    detail: "Both witnesses must carry original government photo IDs and must not be heirs receiving assets under the Will.",
     checked: true,
   },
   {
     id: "item-4",
     label: "Doctor's Mental Capacity Certificate (For Seniors)",
-    detail: "Issued on the execution date by a registered MBBS physician certifying sound mind and testamentary understanding.",
+    detail: "Issued on the signing date by a registered MBBS physician certifying sound mind and testamentary understanding.",
     checked: true,
   },
   {
@@ -144,13 +144,13 @@ const INITIAL_CHECKLIST = [
   {
     id: "item-6",
     label: "Jamabandi Fard / Farmland Revenue Document",
-    detail: "Relevant for agricultural plots, killa numbers, and khewat details recorded on jamabandi.nic.in.",
+    detail: "Relevant for farm plots, killa numbers, and khewat details recorded on jamabandi.nic.in.",
     checked: false,
   },
   {
     id: "item-7",
     label: "Property Tax Receipt (MCG / MCF / Municipal)",
-    detail: "Demonstrates up-to-date municipal records for smooth testamentary mutation after the testator's demise.",
+    detail: "Demonstrates up-to-date municipal records for smooth testamentary name change after the Will maker's demise.",
     checked: false,
   },
   {
@@ -248,8 +248,8 @@ export default function HaryanaLocationClient({ faqs }: Props) {
               </h1>
 
               <p className="text-base sm:text-lg text-slate-200 leading-relaxed font-normal max-w-2xl">
-                Draft a legally binding Will for your HSVP plots, independent builder floors, condominium flats, and agricultural holdings across Haryana.
-                Benefit from senior advocate review, Jamabandi portal token booking assistance, and doorstep execution for senior citizens.
+                Draft a legally binding Will for your HSVP plots, independent builder floors, condominium flats, and farm holdings across Haryana.
+                Benefit from senior lawyer review, Jamabandi portal token booking help, and doorstep signing for senior citizens.
               </p>
 
               <div className="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
@@ -337,7 +337,7 @@ export default function HaryanaLocationClient({ faqs }: Props) {
             {/* Stat 3 */}
             <div className="bg-white/70 sm:bg-transparent rounded-xl sm:rounded-none p-2.5 sm:p-3 border border-[#172228]/10 sm:border-0 md:border-l md:border-[#172228]/10 shadow-2xs sm:shadow-none flex flex-col items-center justify-center">
               <span className="block text-sm min-[390px]:text-base sm:text-xl lg:text-2xl font-extrabold text-[#172228] tracking-tight leading-tight whitespace-nowrap">
-                Non-Mandatory
+                Non-Needed
               </span>
               <span className="text-[9px] min-[390px]:text-[10px] sm:text-xs font-bold uppercase tracking-wider text-[#55636D] mt-1 leading-tight">
                 Probate Under High Court
@@ -463,16 +463,16 @@ export default function HaryanaLocationClient({ faqs }: Props) {
               </h2>
               <div className="prose prose-slate max-w-none text-slate-700 space-y-4 text-sm sm:text-base leading-relaxed">
                 <p>
-                  Haryana represents a dynamic mix of prime metropolitan real estate and vast agricultural wealth.
-                  In urban hubs like Gurugram and Faridabad, estate planning centers on luxury condominiums, high-value commercial properties, and independent builder floors.
-                  In districts like Karnal, Sonipat, Hisar, and Rohtak, ancestral farmland and village residential plots form the core of family patrimony.
+                  Haryana represents a dynamic mix of prime metropolitan real estate and vast farm wealth.
+                  In urban hubs like Gurugram and Faridabad, estate planning centers on luxury condominiums, high-value shop assets, and independent builder floors.
+                  In districts like Karnal, Sonipat, Hisar, and Rohtak, family farmland and village home plots form the core of family patrimony.
                 </p>
                 <p>
                   Without a legally drafted Will, the estate of a deceased Hindu, Sikh, Jain, or Buddhist is partitioned under Section 8 of the Hindu Succession Act, 1956.
-                  This often triggers prolonged partition suits (Batwara) before civil courts and revenue tehsildars, freezing bank accounts and stalling property mutations for decades.
+                  This often triggers prolonged split suits (Batwara) before civil courts and revenue tehsildars, freezing bank accounts and stalling property mutations for decades.
                 </p>
                 <p>
-                  A properly drafted testamentary Will allows you to clearly distribute your self-acquired assets to chosen beneficiaries.
+                  A properly drafted testamentary Will allows you to clearly distribute your self-acquired assets to chosen heirs.
                   It prevents family discord and ensures seamless transfer across the <strong>Haryana Jamabandi portal</strong> and <strong>HSVP Estate Offices</strong>.
                 </p>
               </div>
@@ -486,7 +486,7 @@ export default function HaryanaLocationClient({ faqs }: Props) {
                   </h3>
                   <p>
                     HSVP (formerly HUDA) plots and independent builder floors in Haryana are governed by distinct allotment bye-laws.
-                    Ambiguous wording or handwritten notes can lead to rejection of mutation requests, forcing legal heirs to file costly declaratory suits in civil court.
+                    Ambiguous wording or handwritten notes can lead to rejection of name change requests, forcing legal heirs to file costly declaratory suits in civil court.
                   </p>
                 </div>
               </div>
@@ -497,7 +497,7 @@ export default function HaryanaLocationClient({ faqs }: Props) {
                 ----------------------------------------------------------------- */}
             <section id="haryana-legal-framework" className="scroll-mt-32 space-y-6">
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-[#C65378]/10 text-[#C65378] text-xs font-bold uppercase tracking-wider">
-                Statutory Compliance
+                Legal Compliance
               </div>
               <h3 className="text-2xl sm:text-3xl font-extrabold tracking-tight text-[#172228]">
                 2. Haryana Succession Laws &amp; Legal Basis
@@ -515,8 +515,8 @@ export default function HaryanaLocationClient({ faqs }: Props) {
                     <span>Section 63: Attestation Mandate</span>
                   </div>
                   <p className="text-xs sm:text-sm text-slate-600 leading-normal">
-                    The testator must sign or affix their mark in the presence of at least two adult witnesses.
-                    Each witness must sign the Will in the presence of the testator.
+                    The Will maker must sign or affix their mark in the presence of at least two adult witnesses.
+                    Each witness must sign the Will in the presence of the Will maker.
                   </p>
                 </div>
 
@@ -537,7 +537,7 @@ export default function HaryanaLocationClient({ faqs }: Props) {
                     <span>Punjab Land Revenue Act, 1887</span>
                   </div>
                   <p className="text-xs sm:text-sm text-slate-600 leading-normal">
-                    Governs agricultural land mutations (Intiqal) across Haryana revenue circles through local Halqa Patwaris and Circle Revenue Officers.
+                    Governs farm land mutations (Intiqal) across Haryana revenue circles through local Halqa Patwaris and Circle Revenue Officers.
                   </p>
                 </div>
 
@@ -548,7 +548,7 @@ export default function HaryanaLocationClient({ faqs }: Props) {
                   </div>
                   <p className="text-xs sm:text-sm text-slate-600 leading-normal">
                     Every person of sound mind not being a minor may dispose of their property by Will.
-                    A medical fitness certificate from an MBBS doctor confirms capacity.
+                    A medical fitness paper from an MBBS doctor confirms capacity.
                   </p>
                 </div>
               </div>
@@ -566,12 +566,12 @@ export default function HaryanaLocationClient({ faqs }: Props) {
               </h3>
               <div className="prose prose-slate max-w-none text-slate-700 space-y-4 text-sm sm:text-base leading-relaxed">
                 <p>
-                  A frequent question among Haryana residents is whether a court probate is mandatory before assets can be transferred.
-                  Under Section 213 read with Section 57 of the Indian Succession Act, 1925, probate is mandatory <strong>only in historical presidency towns</strong> (Mumbai, Kolkata, Chennai).
+                  A frequent question among Haryana residents is whether a court probate is needed before assets can be transferred.
+                  Under Section 213 read with Section 57 of the Indian Succession Act, 1925, probate is needed <strong>only in historical presidency towns</strong> (Mumbai, Kolkata, Chennai).
                 </p>
                 <p>
                   The Hon&apos;ble <strong>Punjab and Haryana High Court</strong> has reaffirmed in multiple landmark judgments that probate is <strong>strictly optional</strong> in Haryana.
-                  Neither HSVP, MCG, nor banks have legal authority to compel legal heirs to obtain probate if the Will is properly registered and unencumbered by court stay orders.
+                  Neither HSVP, MCG, nor banks have legal authority to compel legal heirs to get probate if the Will is properly registered and unencumbered by court stay orders.
                 </p>
               </div>
 
@@ -590,20 +590,20 @@ export default function HaryanaLocationClient({ faqs }: Props) {
                     <tr>
                       <td className="p-3 sm:p-4 font-bold text-slate-900">Legal Validity</td>
                       <td className="p-3 sm:p-4">Valid under Section 63</td>
-                      <td className="p-3 sm:p-4 bg-rose-50/40 font-semibold text-rose-950">Valid with Strong Evidentiary Presumption</td>
-                      <td className="p-3 sm:p-4">Conclusive Court Order</td>
+                      <td className="p-3 sm:p-4 bg-rose-50/40 font-semibold text-rose-950">Valid with Strong Proof Presumption</td>
+                      <td className="p-3 sm:p-4">Strong Court Order</td>
                     </tr>
                     <tr>
-                      <td className="p-3 sm:p-4 font-bold text-slate-900">HSVP Mutation</td>
+                      <td className="p-3 sm:p-4 font-bold text-slate-900">HSVP Name Change</td>
                       <td className="p-3 sm:p-4">Requires scrutiny and NOCs</td>
                       <td className="p-3 sm:p-4 bg-rose-50/40 font-semibold text-rose-950">Direct processing with public notice</td>
                       <td className="p-3 sm:p-4">Accepted automatically</td>
                     </tr>
                     <tr>
-                      <td className="p-3 sm:p-4 font-bold text-slate-900">Jamabandi Revenue Mutation</td>
+                      <td className="p-3 sm:p-4 font-bold text-slate-900">Jamabandi Revenue Name Change</td>
                       <td className="p-3 sm:p-4">Risk of Patwari objections</td>
                       <td className="p-3 sm:p-4 bg-rose-50/40 font-semibold text-rose-950">Streamlined Intiqal approval</td>
-                      <td className="p-3 sm:p-4">Required only if dispute exists</td>
+                      <td className="p-3 sm:p-4">Required only if fight exists</td>
                     </tr>
                     <tr>
                       <td className="p-3 sm:p-4 font-bold text-slate-900">Time Required</td>
@@ -644,11 +644,11 @@ export default function HaryanaLocationClient({ faqs }: Props) {
                     <Building className="w-5 h-5" />
                   </div>
                   <h3 className="font-bold text-base text-[#172228]">
-                    HSVP (HUDA) Residential &amp; Commercial Plots
+                    HSVP (HUDA) Home &amp; Shop Plots
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                     Haryana Shehri Vikas Pradhikaran requires an explicit chain of title upon the death of an allottee.
-                    The Estate Officer requires the registered Will, death certificate, affidavit by the beneficiary, indemnity bond, and NOCs from other Class-I legal heirs (or a 30-day public notice).
+                    The Estate Officer requires the registered Will, death paper, affidavit by the heir, indemnity bond, and NOCs from other Class-I legal heirs (or a 30-day public notice).
                   </p>
                 </div>
 
@@ -675,22 +675,22 @@ export default function HaryanaLocationClient({ faqs }: Props) {
                 Book III Registration
               </div>
               <h3 className="text-2xl sm:text-3xl font-extrabold tracking-tight text-[#172228]">
-                5. Will Registration: Mandatory vs Optional
+                5. Will Registration: Needed vs Optional
               </h3>
               <div className="prose prose-slate max-w-none text-slate-700 space-y-4 text-sm sm:text-base leading-relaxed">
                 <p>
-                  While registering a Will is not legally mandatory, experienced estate lawyers strongly recommend registering it at your local Tehsil office.
+                  While registering a Will is not legally needed, experienced estate lawyers strongly recommend registering it at your local Tehsil office.
                   Here is why registration offers unmatched protection:
                 </p>
                 <ul className="list-disc pl-5 space-y-2 text-xs sm:text-sm">
                   <li>
-                    <strong>Official Government Archive:</strong> A scanned copy is placed permanently in Book III at the Sub-Registrar Office, protecting against loss or theft.
+                    <strong>Official Government Archive:</strong> A scanned copy is placed permanently in Book III at the SRO office, protecting against loss or theft.
                   </li>
                   <li>
-                    <strong>Verification of Testamentary Capacity:</strong> The Sub-Registrar records biometrics and photos, preventing allegations of forgery or coercion.
+                    <strong>Check of Testamentary Capacity:</strong> The Sub-Registrar records biometrics and photos, preventing allegations of forgery or coercion.
                   </li>
                   <li>
-                    <strong>Expedited Mutation:</strong> Halqa Patwaris and HSVP Estate Officers process registered Wills with minimal administrative resistance.
+                    <strong>Expedited Name Change:</strong> Halqa Patwaris and HSVP Estate Officers process registered Wills with minimal office resistance.
                   </li>
                   <li>
                     <strong>Bank Locker &amp; Asset Liquidation:</strong> Financial institutions release fixed deposits and mutual funds quickly upon inspecting registered documents.
@@ -785,7 +785,7 @@ export default function HaryanaLocationClient({ faqs }: Props) {
                 7. Statewide Coverage Across Haryana
               </h3>
               <p className="text-sm text-slate-600">
-                AMA Legal Solutions provides comprehensive online Will drafting and Tehsil registration accompaniment across all 22 districts of Haryana:
+                AMA Legal Solutions provides full online Will drafting and Tehsil registration accompaniment across all 22 districts of Haryana:
               </p>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 text-xs font-bold text-slate-800">
@@ -837,7 +837,7 @@ export default function HaryanaLocationClient({ faqs }: Props) {
                 ----------------------------------------------------------------- */}
             <section id="step-by-step-haryana-sop" className="scroll-mt-32 space-y-6">
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-[#C65378]/10 text-[#C65378] text-xs font-bold uppercase tracking-wider">
-                Standard Operating Procedure
+                Standard Operating Step
               </div>
               <h3 className="text-2xl sm:text-3xl font-extrabold tracking-tight text-[#172228]">
                 8. Step-by-Step SOP: Haryana Will Drafting
@@ -848,17 +848,17 @@ export default function HaryanaLocationClient({ faqs }: Props) {
                   {
                     step: "Step 1",
                     title: "Compile Asset Inventory & Revenue Details",
-                    desc: "Gather HSVP allotment documents, conveyance deeds for builder floors, Jamabandi Fards for agricultural land, and banking folio numbers.",
+                    desc: "Gather HSVP allotment documents, conveyance deeds for builder floors, Jamabandi Fards for farm land, and banking folio numbers.",
                   },
                   {
                     step: "Step 2",
-                    title: "Draft with Advocate & Custody Clauses",
+                    title: "Draft with Lawyer & Custody Clauses",
                     desc: "Customize testamentary bequests, designate alternate executors, and define specific shares in common terrace and parking areas.",
                   },
                   {
                     step: "Step 3",
                     title: "Execute Before Two Independent Witnesses",
-                    desc: "Print the finalized document on clean A4 paper. Testator and two independent adult witnesses sign every page simultaneously.",
+                    desc: "Print the finalized document on clean A4 paper. Will maker and two independent adult witnesses sign every page simultaneously.",
                   },
                   {
                     step: "Step 4",
@@ -867,7 +867,7 @@ export default function HaryanaLocationClient({ faqs }: Props) {
                   },
                   {
                     step: "Step 5",
-                    title: "Complete Biometric Verification at Tehsil",
+                    title: "Complete Biometric Check at Tehsil",
                     desc: "Visit the registry office with your witnesses for live photography, fingerprint capture, and official entry into Book III records.",
                   },
                 ].map((item, idx) => (
@@ -901,7 +901,7 @@ export default function HaryanaLocationClient({ faqs }: Props) {
               <div className="prose prose-slate max-w-none text-slate-700 space-y-4 text-sm sm:text-base leading-relaxed">
                 <p>
                   Senior citizens, ailing testators, and hospital-bound patients in Haryana can register their Will without physically traveling to crowded Tehsil premises.
-                  Under <strong>Section 31 of the Registration Act, 1908</strong>, the Sub-Registrar has the legal power to conduct a registration commission at the testator&apos;s residence or hospital room.
+                  Under <strong>Section 31 of the Registration Act, 1908</strong>, the Sub-Registrar has the legal power to conduct a registration commission at the Will maker&apos;s residence or hospital room.
                 </p>
                 <p>
                   AMA Legal Solutions coordinates the entire doorstep commission process across DLF Phases 1 to 5, Golf Course Road, Sushant Lok, Faridabad sectors, Panchkula, and all major cities in Haryana.
@@ -911,13 +911,13 @@ export default function HaryanaLocationClient({ faqs }: Props) {
               <div className="bg-white p-6 rounded-2xl border border-slate-200/90 shadow-2xs space-y-3">
                 <h3 className="font-bold text-sm sm:text-base text-[#172228] flex items-center gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600" />
-                  <span>Requirements for Section 31 Home Registration</span>
+                  <span>Rules for Section 31 Home Registration</span>
                 </h3>
                 <ul className="list-disc pl-5 space-y-1.5 text-xs sm:text-sm text-slate-600">
                   <li>Formal written requisition submitted to the jurisdictional Tehsildar / Sub-Registrar.</li>
-                  <li>Medical fitness and immobility certificate issued by a registered MBBS doctor.</li>
+                  <li>Medical fitness and immobility paper issued by a registered MBBS doctor.</li>
                   <li>Payment of official government commission conveyance charges.</li>
-                  <li>Physical presence of the testator and two independent witnesses at the home or hospital.</li>
+                  <li>Physical presence of the Will maker and two independent witnesses at the home or hospital.</li>
                 </ul>
               </div>
             </section>
@@ -980,7 +980,7 @@ export default function HaryanaLocationClient({ faqs }: Props) {
                   <span className="text-xs font-extrabold text-[#C65378] uppercase">Urban Real Estate</span>
                   <h3 className="font-bold text-sm text-[#172228]">HSVP Plots &amp; Condominiums</h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Clear assignment of residential plots, luxury DLF apartments, commercial shops, and SCO units.
+                    Clear assignment of home plots, luxury DLF apartments, shop shops, and SCO units.
                   </p>
                 </div>
 
@@ -988,7 +988,7 @@ export default function HaryanaLocationClient({ faqs }: Props) {
                   <span className="text-xs font-extrabold text-[#5F7E75] uppercase">Rural Patrimony</span>
                   <h3 className="font-bold text-sm text-[#172228]">Farmland &amp; Village Abadi</h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Agricultural land recorded under Khewat, Khatoni, and Killa numbers in Jamabandi land records.
+                    Farm land recorded under Khewat, Khatoni, and Killa numbers in Jamabandi land records.
                   </p>
                 </div>
 
@@ -1024,7 +1024,7 @@ export default function HaryanaLocationClient({ faqs }: Props) {
                   <thead>
                     <tr className="bg-[#172228] text-white">
                       <th className="p-3.5 sm:p-4 font-bold">Item</th>
-                      <th className="p-3.5 sm:p-4 font-bold">Statutory Rate</th>
+                      <th className="p-3.5 sm:p-4 font-bold">Legal Rate</th>
                       <th className="p-3.5 sm:p-4 font-bold">Practical Details</th>
                     </tr>
                   </thead>
@@ -1042,7 +1042,7 @@ export default function HaryanaLocationClient({ faqs }: Props) {
                     <tr>
                       <td className="p-3 sm:p-4 font-bold text-slate-900">Computer Scanning Charges</td>
                       <td className="p-3 sm:p-4 font-bold text-slate-900">₹100 to ₹300</td>
-                      <td className="p-3 sm:p-4">Nominal IT administrative charges for Book III digital archiving.</td>
+                      <td className="p-3 sm:p-4">Nominal IT office charges for Book III digital archiving.</td>
                     </tr>
                     <tr>
                       <td className="p-3 sm:p-4 font-bold text-slate-900">Home Commission Fee</td>
@@ -1107,18 +1107,18 @@ export default function HaryanaLocationClient({ faqs }: Props) {
                     Most Popular
                   </div>
                   <div className="space-y-3">
-                    <span className="text-xs font-extrabold text-rose-300 uppercase tracking-wider">Advocate Assisted</span>
+                    <span className="text-xs font-extrabold text-rose-300 uppercase tracking-wider">Lawyer Assisted</span>
                     <div className="flex items-baseline gap-1">
                       <span className="text-3xl font-extrabold text-white">₹4,990</span>
                       <span className="text-xs text-slate-400">one-time</span>
                     </div>
                     <p className="text-xs text-slate-300">
-                      Customized drafting with senior advocate consultation for HSVP plots, builder floors, and multi-heir distribution.
+                      Customized drafting with senior lawyer talk for HSVP plots, builder floors, and multi-heir split.
                     </p>
                     <ul className="space-y-2 text-xs text-slate-300 pt-2 border-t border-white/10">
                       <li className="flex items-center gap-2">
                         <Check className="w-3.5 h-3.5 text-[#C65378] shrink-0" />
-                        <span>Senior advocate review &amp; phone consultation</span>
+                        <span>Senior lawyer review &amp; phone talk</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-3.5 h-3.5 text-[#C65378] shrink-0" />
@@ -1135,7 +1135,7 @@ export default function HaryanaLocationClient({ faqs }: Props) {
                     onClick={handleStartDraft}
                     className="w-full py-3 rounded-xl bg-[#C65378] text-white text-center text-xs font-extrabold hover:bg-[#a13c5d] transition-colors shadow-md shadow-[#C65378]/30"
                   >
-                    Choose Advocate Plan
+                    Choose Lawyer Plan
                   </a>
                 </div>
 
@@ -1148,20 +1148,20 @@ export default function HaryanaLocationClient({ faqs }: Props) {
                       <span className="text-xs text-slate-500">one-time</span>
                     </div>
                     <p className="text-xs text-slate-600">
-                      End-to-end service including advocate drafting, Jamabandi token booking, and physical SRO accompaniment.
+                      End-to-end service including lawyer drafting, Jamabandi token booking, and physical SRO accompaniment.
                     </p>
                     <ul className="space-y-2 text-xs text-slate-600 pt-2 border-t border-slate-100">
                       <li className="flex items-center gap-2">
                         <Check className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
-                        <span>All features of Advocate Plan</span>
+                        <span>All features of Lawyer Plan</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
-                        <span>Advocate accompaniment at Tehsil office</span>
+                        <span>Lawyer accompaniment at Tehsil office</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Check className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
-                        <span>Section 31 doorstep assistance support</span>
+                        <span>Section 31 doorstep help support</span>
                       </li>
                     </ul>
                   </div>
@@ -1219,17 +1219,17 @@ export default function HaryanaLocationClient({ faqs }: Props) {
                 ----------------------------------------------------------------- */}
             <section id="statutory-citations" className="scroll-mt-32 space-y-6">
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-[#5F7E75]/10 text-[#5F7E75] text-xs font-bold uppercase tracking-wider">
-                Statutory Authorities
+                Legal Offices
               </div>
               <h3 className="text-2xl sm:text-3xl font-extrabold tracking-tight text-[#172228]">
-                15. Statutory Citations &amp; Legal References
+                15. Legal Citations &amp; Legal References
               </h3>
 
               <div className="bg-white p-6 rounded-2xl border border-slate-200 shadow-2xs space-y-4 text-xs sm:text-sm text-slate-600">
                 <div className="flex items-start gap-3">
                   <Landmark className="w-4 h-4 text-[#C65378] shrink-0 mt-0.5" />
                   <p>
-                    <strong>Indian Succession Act, 1925:</strong> Section 59 (capacity to make Will), Section 63 (execution and attestation requirements), and Section 213 (probate applicability limited to presidency towns).
+                    <strong>Indian Succession Act, 1925:</strong> Section 59 (capacity to make Will), Section 63 (signing and attestation rules), and Section 213 (probate applicability limited to presidency towns).
                   </p>
                 </div>
                 <div className="flex items-start gap-3">
@@ -1241,13 +1241,13 @@ export default function HaryanaLocationClient({ faqs }: Props) {
                 <div className="flex items-start gap-3">
                   <Landmark className="w-4 h-4 text-[#172228] shrink-0 mt-0.5" />
                   <p>
-                    <strong>Punjab &amp; Haryana High Court Jurisprudence:</strong> Confirms that obtaining probate of a Will is not a condition precedent to establish legal right in civil courts or revenue records in Haryana.
+                    <strong>Punjab &amp; Haryana High Court Jurisprudence:</strong> Confirms that getting probate of a Will is not a condition precedent to set up legal right in civil courts or revenue records in Haryana.
                   </p>
                 </div>
                 <div className="flex items-start gap-3">
                   <Landmark className="w-4 h-4 text-[#C65378] shrink-0 mt-0.5" />
                   <p>
-                    <strong>Haryana Shehri Vikas Pradhikaran (HSVP) Regulations:</strong> Transfer and mutation policies under Haryana Urban Development Act, 1977 for residential and builder floor properties.
+                    <strong>Haryana Shehri Vikas Pradhikaran (HSVP) Regulations:</strong> Transfer and name change policies under Haryana Urban Development Act, 1977 for home and builder floor assets.
                   </p>
                 </div>
               </div>
