@@ -369,6 +369,18 @@ function processHtmlAndExtractToc(rawHtml: string): {
     }
   );
 
+  // Ensure every inline <img> tag inside blog HTML has explicit width and height attributes
+  html = html.replace(/<img\b([^>]*)>/gi, (fullTag, attrs) => {
+    let updatedAttrs = attrs;
+    if (!/\bwidth\s*=/i.test(updatedAttrs)) {
+      updatedAttrs += ' width="1200"';
+    }
+    if (!/\bheight\s*=/i.test(updatedAttrs)) {
+      updatedAttrs += ' height="675"';
+    }
+    return `<img${updatedAttrs}>`;
+  });
+
   // Normalize any legacy /services/muslim-will-wasiyat links to the canonical template URL
   html = html
     .replace(

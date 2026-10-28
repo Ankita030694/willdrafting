@@ -231,7 +231,7 @@ export const toolsData: ToolItem[] = [
   },
   {
     id: "ancestral-vs-self-acquired-property-classifier",
-    title: "Ancestral vs Self-Acquired Property Classifier India",
+    title: "Family vs Self-Acquired Property Classifier India",
     href: "/tools/ancestral-vs-self-acquired-property-classifier",
     badge: "Diagnostic Tool",
     category: "Checkers",
@@ -297,7 +297,7 @@ export const toolsData: ToolItem[] = [
   },
   {
     id: "legal-heir-vs-succession-certificate-decision-tool",
-    title: "Legal Heir vs Succession Certificate Decision Tool India",
+    title: "Legal Heir vs Succession Paper Decision Tool India",
     href: "/tools/legal-heir-vs-succession-certificate-decision-tool",
     badge: "Checker",
     category: "Checkers",
@@ -341,7 +341,7 @@ export const toolsData: ToolItem[] = [
   },
   {
     id: "huf-coparcenary-share-partition-calculator",
-    title: "HUF Coparcenary Property Share & Partition Calculator",
+    title: "HUF Joint Property Share & Partition Calculator",
     href: "/tools/huf-coparcenary-share-partition-calculator",
     badge: "Calculator",
     category: "Calculators",
@@ -405,7 +405,7 @@ export const toolsData: ToolItem[] = [
   },
   {
     id: "demat-mutual-fund-transmission-document-finder",
-    title: "Demat & Mutual Fund Transmission Document Finder",
+    title: "Demat & Mutual Fund Transfer Document Finder",
     href: "/tools/demat-mutual-fund-transmission-document-finder",
     badge: "Checker",
     category: "Checkers",
@@ -495,7 +495,7 @@ export const toolsData: ToolItem[] = [
   },
   {
     id: "court-fee-calculator",
-    title: "Succession Certificate Fees: Court Fee Calculator India",
+    title: "Succession Paper Fees: Court Fee Calculator India",
     href: "/tools/succession-certificate-court-fee-calculator",
     badge: "Calculator",
     category: "Calculators",

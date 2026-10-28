@@ -61,19 +61,19 @@ const TOC_ITEMS = [
 const FAQS = [
   {
     q: "Can I mention my crypto wallet seed phrases or passwords directly in my Will?",
-    a: "No. You must never write hardware wallet recovery seed phrases, private keys, or account passwords directly in a filed Will. Under Section 294 of the Indian Succession Act, 1925, a probated Will becomes a public judicial paper open for inspection by court staff, adverse litigants, and the general public. Anyone inspecting the probate records could drain your cryptocurrency in seconds.",
+    a: "No. You must never write hardware wallet recovery seed phrases, private keys, or account passwords directly in a filed Will. Under Section 294 of the Indian Succession Act, 1925, a probated Will becomes a public judicial paper open for inspection by court staff, adverse litigants, and the general public. Anyone inspecting the probate records could drain your crypto in seconds.",
   },
   {
-    q: "What is the recommended two-part format for bequeathing cryptocurrency in India?",
+    q: "What is the recommended two-part format for bequeathing crypto in India?",
     a: "The gold-standard legal architecture consists of: (1) A formal Public Will Clause bequeathing ownership of the underlying digital assets, tokens, hardware devices, and domains to designated heirs and appointing a Digital Executor, and (2) A confidential, offline Sealed Digital Access Memorandum stored in a secure bank safe deposit locker or steel vault containing technical access coordinates, hardware PIN locations, and password recovery instructions.",
   },
   {
-    q: "Is cryptocurrency estate taxable under Section 115BBH in India?",
+    q: "Is crypto estate taxable under Section 115BBH in India?",
     a: "No. Under Section 56(2)(x) of the Income Tax Act, 1961, any asset received under a Will or by way of estate is completely exempt from income tax in the hands of the legal heir. While Section 115BBH levies a flat 30% tax plus surcharge and cess on the transfer of Virtual Digital Assets (VDAs), estate is excluded from taxable transfer. However, when the heir then sells or exchanges the inherited crypto for fiat currency, the 30% tax applies on the net gains.",
   },
   {
     q: "What powers does a Digital Executor have under the Information Technology Act, 2000?",
-    a: "A Digital Executor is legally authorized in the Will to act as the deceased's authorized agent under the Information Technology Act, 2000 and Indian Succession Act, 1925. This explicit authorization shields the executor from criminal penalties for unauthorized access or hacking under Sections 43 and 66 of the IT Act when accessing devices, communicating with service providers, and signing custodial transfers.",
+    a: "A Digital Executor is legally authorized in the Will to act as the deceased's authorized agent under the Information Technology Act, 2000 and Indian Succession Act, 1925. This explicit authorization shields the executor from criminal penalties for unwanted access or hacking under Sections 43 and 66 of the IT Act when accessing devices, communicating with service providers, and signing custodial transfers.",
   },
   {
     q: "How do Indian exchanges like CoinDCX and WazirX handle the death of an account holder?",
@@ -81,7 +81,7 @@ const FAQS = [
   },
   {
     q: "What happens to self-custody cold wallets (Ledger, Trezor) if no seed phrase is left behind?",
-    a: "If a Will maker dies without leaving behind their 12 or 24-word BIP-39 recovery seed phrase or PIN, the cryptocurrency stored on a non-custodial hardware wallet is mathematically unrecoverable. Neither High Courts, estate papers, nor device manufacturers like Ledger or SatoshiLabs have backdoors or root access to decrypt private keys on the blockchain.",
+    a: "If a Will maker dies without leaving behind their 12 or 24-word BIP-39 recovery seed phrase or PIN, the crypto stored on a non-custodial hardware wallet is mathematically unrecoverable. Neither High Courts, estate papers, nor device manufacturers like Ledger or SatoshiLabs have backdoors or root access to decrypt private keys on the blockchain.",
   },
   {
     q: "Can I transfer domain names, SaaS accounts, and social media through a Will?",
@@ -89,7 +89,7 @@ const FAQS = [
   },
   {
     q: "Is a separate Sealed Digital Access Memorandum legally binding in an Indian court?",
-    a: "The Sealed Memorandum serves as an operational guidance letter to your Executor rather than a Will instrument that disposes of asset title. The legal bequest of title is signed via the filed Will itself. Because the memorandum provides logistical instructions to the fiduciary rather than alienating asset, it does not require probate or public filing, preserving complete technical confidentiality.",
+    a: "The Sealed Memorandum serves as an operational guidance letter to your Executor rather than a Will instrument that disposes of asset title. The legal bequest of title is signed via the filed Will itself. Because the memorandum provides logistical instructions to the fiduciary rather than alienating asset, it does not require probate or public filing, preserving complete technical privacy.",
   },
 ];
 
@@ -152,16 +152,16 @@ export default function DigitalAssetsCryptoScheduleClient() {
 
 "BEQUEST OF DIGITAL ASSETS, VIRTUAL DIGITAL ASSETS (VDA) & DIGITAL DEVICES:
 
-1. DEFINITION & SCOPE: I hereby declare that my 'Digital Estate' shall comprise all my right, title, interest, and beneficial ownership in all forms of Virtual Digital Assets as defined under Section 2(47A) of the Income Tax Act, 1961, including but not limited to cryptocurrencies (Bitcoin, Ethereum, and any tokens/altcoins), non-fungible tokens (NFTs), balances on Indian and foreign centralized exchanges, decentralized liquidity pools, non-custodial cryptographic wallets, as well as domain names, registered web properties, cloud infrastructure accounts, software repositories, email accounts, and electronic hardware devices (laptops, mobile phones, and hardware security keys/cold wallets).
+1. DEFINITION & SCOPE: I hereby declare that my 'Digital Estate' shall comprise all my right, title, interest, and beneficial ownership in all forms of Virtual Digital Assets as defined under Section 2(47A) of the Income Tax Act, 1961, including but not limited to crypto coins (Bitcoin, Ethereum, and any tokens/altcoins), non-fungible tokens (NFTs), balances on Indian and foreign centralized exchanges, decentralized liquidity pools, non-custodial cryptographic wallets, as well as domain names, registered web properties, cloud infrastructure accounts, software repositories, email accounts, and electronic hardware devices (laptops, mobile phones, and hardware security keys/cold wallets).
 
 2. APPOINTMENT OF SPECIALIZED DIGITAL EXECUTOR:
 I hereby specifically appoint [Full Name of Digital Executor], residing at [Residential Address], PAN: [PAN Number], Email: [Email], as my specialized 'Digital Executor' to manage, administer, retrieve, protect, and distribute my Digital Estate. In the event [Digital Executor Name] is unable or unwilling to act, I appoint [Alternate Digital Executor Name] as alternate Digital Executor.
 
 3. STATUTORY AUTHORIZATION UNDER IT ACT, 2000:
-I expressly grant my Digital Executor full legal authority to act as my authorized agent within the meaning of the Information Technology Act, 2000 (including Sections 43, 66, and 85 thereof). My Digital Executor is expressly permitted and authorized to access, control, reset, communicate with, and demand custody transfer from any internet service provider, domain registrar, email host, cloud service provider, and FIU-registered or international cryptocurrency exchange on my behalf.
+I expressly grant my Digital Executor full legal authority to act as my authorized agent within the meaning of the Information Technology Act, 2000 (including Sections 43, 66, and 85 thereof). My Digital Executor is expressly permitted and authorized to access, control, reset, communicate with, and demand custody transfer from any internet service provider, domain registrar, email host, cloud service provider, and FIU-registered or international crypto exchange on my behalf.
 
 4. SEPARATE CONFIDENTIAL SEALED DIGITAL ACCESS MEMORANDUM:
-For reasons of technical security, private key preservation, and prevention of unauthorized access pursuant to Section 294 of the Indian Succession Act, 1925, I have deliberately refrained from stating my cryptographic recovery seed phrases, passwords, two-factor authentication recovery codes, and private keys in this public testamentary instrument. Instead, I have documented the precise technical instructions in a separate document entitled 'CONFIDENTIAL SEALED DIGITAL ACCESS MEMORANDUM' dated [Date of Memo], which is kept sealed in my Safe Deposit Locker No. [Locker Number] at [Bank Name, Branch]. I direct my Digital Executor to open said sealed memorandum and follow its logistical instructions strictly for the benefit of the beneficiaries named herein.
+For reasons of technical security, private key preservation, and prevention of unwanted access pursuant to Section 294 of the Indian Succession Act, 1925, I have deliberately refrained from stating my cryptographic recovery seed phrases, passwords, two-factor login check recovery codes, and private keys in this public testamentary instrument. Instead, I have documented the precise technical instructions in a separate document entitled 'CONFIDENTIAL SEALED DIGITAL ACCESS MEMORANDUM' dated [Date of Memo], which is kept sealed in my Safe Deposit Locker No. [Locker Number] at [Bank Name, Branch]. I direct my Digital Executor to open said sealed memorandum and follow its logistical instructions strictly for the benefit of the beneficiaries named herein.
 
 5. DISTRIBUTION OF VIRTUAL DIGITAL ASSETS:
 (a) I bequeath all my Bitcoin, Ethereum, and cold wallet crypto holdings absolutely to my [Relationship], [Beneficiary 1 Name], PAN: [PAN].
@@ -197,7 +197,7 @@ CONFIDENTIALITY NOTICE: This document is executed strictly for your eyes only pu
 - Exchange 1: CoinDCX
   * Registered Email: [user@gmail.com]
   * Registered Mobile Number: [SIM Card Location: In Testator's Primary Phone]
-  * 2FA Authentication Method: [YubiKey 5C NFC stored in desk drawer / Google Authenticator backup seed]
+  * 2FA Login Check Method: [YubiKey 5C NFC stored in desk drawer / Google Authenticator backup seed]
 - Exchange 2: Binance International
   * Account UID: [12345678]
   * Anti-Phishing Code: [Word]
@@ -238,7 +238,7 @@ I, [Full Name of Testator], an Indian Citizen holding PAN [PAN] and Aadhaar [Aad
 
 2. SPECIFIC POWERS UNDER IT ACT, 2000:
 In accordance with the Information Technology Act, 2000 (including Section 10A on electronic contracts and Section 43/66 safe-harbor), I explicitly authorize my Digital Executor to:
-(a) Communicate with, issue demands to, and receive account statements from all cryptocurrency exchanges, domain registrars, cloud storage providers, and telecom service providers registered in my name.
+(a) Communicate with, issue demands to, and receive account statements from all crypto exchanges, domain registrars, cloud storage providers, and telecom service providers registered in my name.
 (b) Request the immediate freezing, archival, or transmission of my account balances, tokens, and digital domains to the rightful beneficiaries.
 (c) Request SIM card transfer or re-issuance from telecom providers (Airtel, Jio, Vi) to facilitate receipt of transmission SMS One-Time Passwords (OTPs).
 (d) Download and preserve electronic records, correspondence, and financial logs for estate tax filings and compliance under the Bharatiya Sakshya Adhiniyam, 2023.
@@ -300,7 +300,7 @@ Acknowledged by Bank / Locker Custodian: __________________________"`;
           {/* Subtitle Paragraph */}
           <p className="text-sm sm:text-base md:text-lg text-white/90 leading-relaxed max-w-3xl mx-auto mb-8">
             Complete two-part legal framework: <strong>Public Will Clause</strong> bequeathing
-            cryptocurrency, domains, and tokens plus a <strong>Confidential Sealed Digital Access
+            crypto, domains, and tokens plus a <strong>Confidential Sealed Digital Access
             Memorandum</strong> to preserve seed phrases and 2FA recovery codes without exposing them in
             public probate court.
           </p>
@@ -442,7 +442,7 @@ Acknowledged by Bank / Locker Custodian: __________________________"`;
                   <span>
                     <strong>Specialized Digital Executor:</strong> Designating a tech-competent Digital
                     Executor protects your estate from Sections 43 &amp; 66 of the Information Technology
-                    Act (unauthorized computer access penalties) while enabling interaction with exchanges
+                    Act (unwanted computer access penalties) while enabling interaction with exchanges
                     and registrars.
                   </span>
                 </li>
@@ -505,7 +505,7 @@ Acknowledged by Bank / Locker Custodian: __________________________"`;
               <div className="space-y-3 text-slate-700 leading-relaxed text-sm md:text-base">
                 <p>
                   As Indian investors, startup founders, and tech professionals accumulate significant wealth
-                  in self-custody cryptocurrencies, centralized exchange portfolios, domain portfolios, and
+                  in self-custody crypto coins, centralized exchange portfolios, domain portfolios, and
                   proprietary digital infrastructure, estate planning faces an unprecedented technological
                   fight. Traditional Will drafting was created for tangible land real estate and
                   physical gold; it was never designed for decentralized, cryptographic, bearer assets.
@@ -745,7 +745,7 @@ Acknowledged by Bank / Locker Custodian: __________________________"`;
                     >
                       <option value="bank_locker">Bank Safe Deposit Locker (Steel Capsule)</option>
                       <option value="shamir_secret">Shamir Secret Sharing (3-of-5 Shards)</option>
-                      <option value="multisig">Multi-Signature Smart Contract (2-of-3 Keys)</option>
+                      <option value="multisig">Multi-Key Smart Contract (2-of-3 Keys)</option>
                       <option value="home_safe">Fireproof Home Wall Safe</option>
                     </select>
                   </div>
@@ -1180,7 +1180,7 @@ Statutory Baseline: Indian Succession Act 1925, IT Act 2000, Income Tax Act Sec 
                       <td className="py-3 px-4 font-bold text-emerald-700">Express Safe Harbor</td>
                       <td className="py-3 px-4 text-slate-600">Access Coordinates</td>
                       <td className="py-3 px-4">TOS Compliance</td>
-                      <td className="py-3 px-4 text-rose-700">Unauthorized Access Risk</td>
+                      <td className="py-3 px-4 text-rose-700">Unwanted Access Risk</td>
                     </tr>
                     <tr>
                       <td className="py-3 px-4 font-bold text-slate-900">Hardware Cold Recovery</td>
@@ -1532,7 +1532,7 @@ Statutory Baseline: Indian Succession Act 1925, IT Act 2000, Income Tax Act Sec 
                 13. Frequently Asked Questions: Crypto Will Formats
               </h3>
               <p className="text-slate-700 leading-relaxed text-sm md:text-base">
-                Plain-English answers to critical legal and technical questions on bequeathing cryptocurrency,
+                Plain-English answers to critical legal and technical questions on bequeathing crypto,
                 hardware wallets, and passwords in India:
               </p>
 
@@ -1593,7 +1593,7 @@ Statutory Baseline: Indian Succession Act 1925, IT Act 2000, Income Tax Act Sec 
                     </li>
                     <li>
                       <strong>Information Technology Act, 2000 (Section 43 &amp; 66):</strong> Penalties for
-                      unauthorized access and legal agent authorization framework.
+                      unwanted access and legal agent authorization framework.
                     </li>
                     <li>
                       <strong>Income Tax Act, 1961 (Section 2(47A) &amp; 115BBH):</strong> Virtual Digital Asset
@@ -1703,6 +1703,28 @@ Statutory Baseline: Indian Succession Act 1925, IT Act 2000, Income Tax Act Sec 
               <p className="text-xs font-bold text-slate-900 mb-1">How Our Team Helps</p>
               <p className="text-xs text-slate-600 leading-relaxed">
                 Our team checks your asset list and tax bills. We write your Will in clear words with no mix-ups. Then we guide you step by step so your heirs get their share fast.
+              </p>
+            </div>
+          </div>
+
+      
+          <div className="mt-6 grid grid-cols-1 sm:grid-cols-3 gap-4 border-t border-slate-200/70 pt-6">
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Fast Step-by-Step Plan</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                First, list your crypto apps, wallets, cloud drives, and web accounts. Next, name the person who will get each asset. Never write your seed phrase or PIN inside the Will itself.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Keep Seed Phrases Private</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                A Will can be read in court or at the bank. Put your secret seed words, PINs, and 2FA codes in a sealed note kept in your home safe or bank locker.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Update Your List Often</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                You can update your sealed key sheet at any time without making a new Will. Just date and sign the fresh sheet so your heirs can unlock your wallets with ease.
               </p>
             </div>
           </div>

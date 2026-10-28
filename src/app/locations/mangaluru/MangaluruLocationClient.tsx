@@ -1806,6 +1806,28 @@ export default function MangaluruLocationClient({ faqs }: Props) {
             </div>
           </div>
 
+      
+          <div className="mt-6 grid grid-cols-1 sm:grid-cols-3 gap-4 border-t border-slate-200/70 pt-6">
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Fast Step-by-Step Plan</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                First, list your flat, plot, bank cash, gold, and shares. Next, name the person who will get each share. Pick one adult you trust to carry out your plan. Keep a copy in a safe place at home.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">Who Can Witness Your Will?</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                Any two adults of sound mind can sign as witnesses. Do not pick a person who gets a gift in the Will. A friend, neighbor, doctor, or peer is a great choice. They just watch you sign and add their names.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-white/80 border border-slate-200">
+              <p className="text-xs font-bold text-slate-900 mb-1">When Should You Update It?</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                You can change or cancel your Will at any time while you live. Make a fresh draft if you buy a new home, sell land, welcome a child, or move to a new city. Your last signed Will is the one that counts.
+              </p>
+            </div>
+          </div>
+
       </main>
         </div>
       </div>
