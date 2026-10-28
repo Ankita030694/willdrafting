@@ -18,8 +18,48 @@ export interface SitemapPageItem {
  */
 export const staticPages: SitemapPageItem[] = [
   // =========================================================================
-  // 1. NEWLY CREATED LEGAL TEMPLATES & CLAUSES (PRIORITIZED AT VERY TOP)
+  // 1. NEWLY CREATED LEGAL TEMPLATES, SERVICES & TOOLS (PRIORITIZED AT VERY TOP)
+  {
+    title: "Will Dispute Lawyer India: Contest & Probate Advocates",
+    href: "/services/will-dispute-contest-litigation-lawyer",
+    category: "Services",
+    date: "27-10-2026",
+    changefreq: "weekly",
+    priority: 1.0,
+  },
+  {
+    title: "Family Settlement Agreement Lawyer India: Drafting & SRO",
+    href: "/services/family-settlement-deed-lawyer",
+    category: "Services",
+    date: "27-10-2026",
+    changefreq: "weekly",
+    priority: 1.0,
+  },
+  {
+    title: "Letters of Administration Lawyer India: Court Petitions",
+    href: "/services/letters-of-administration-lawyer",
+    category: "Services",
+    date: "27-10-2026",
+    changefreq: "weekly",
+    priority: 1.0,
+  },
   // =========================================================================
+  {
+    title: "Private Family Trust Registration India: Formation & Tax Structuring",
+    href: "/services/private-family-trust-formation",
+    category: "Services",
+    date: "27-10-2026",
+    changefreq: "weekly",
+    priority: 1.0,
+  },
+  {
+    title: "Property Mutation & Dakhil Kharij Service India | WillDrafting",
+    href: "/services/property-mutation-dakhil-kharij-service",
+    category: "Services",
+    date: "27-10-2026",
+    changefreq: "weekly",
+    priority: 1.0,
+  },
   {
     title: "മരണപത്രം ഫോർമാറ്റ് മലയാളം | Will Format in Malayalam",
     href: "/templates/will-format-malayalam-maranapathram",
@@ -1391,6 +1431,14 @@ export const staticPages: SitemapPageItem[] = [
     href: "/services/probate-lawyer",
     category: "Services",
     date: "20-10-2026",
+    changefreq: "weekly",
+    priority: 1.0,
+  },
+  {
+    title: "Property Mutation & Dakhil Kharij Service India | WillDrafting",
+    href: "/services/property-mutation-dakhil-kharij-service",
+    category: "Services",
+    date: "27-10-2026",
     changefreq: "weekly",
     priority: 1.0,
   },

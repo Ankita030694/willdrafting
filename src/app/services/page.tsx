@@ -133,6 +133,50 @@ const SERVICE_SCHEMA = {
                 "Dedicated advocate call, bespoke clauses for NRI/OCI Indian assets, HUF/coparcenary shares, and Sub-Registrar registration guidance.",
             },
           },
+          {
+            "@type": "Offer",
+            "price": "14990",
+            "priceCurrency": "INR",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "High Court Letters of Administration Petition Drafting & Representation",
+              "description":
+                "End-to-end representation before High Courts and District Courts for Letters of Administration under Sections 218 and 232 of the Indian Succession Act, 1925.",
+            },
+          },
+          {
+            "@type": "Offer",
+            "price": "25000",
+            "priceCurrency": "INR",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Will Dispute & Probate Litigation Advocacy",
+              "description":
+                "High Court advocate representation for challenging forged Wills, lodging caveats under Section 284, defending genuine Wills against frivolous claims, and civil partition suits.",
+            },
+          },
+          {
+            "@type": "Offer",
+            "price": "49000",
+            "priceCurrency": "INR",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Private Family Trust Formation & Registration India",
+              "description":
+                "Bespoke private family trust deed drafting under Indian Trusts Act 1882, Sub-Registrar registration, Trust PAN procurement, and estate ring-fencing.",
+            },
+          },
+          {
+            "@type": "Offer",
+            "price": "9990",
+            "priceCurrency": "INR",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Property Mutation & Dakhil Kharij Service India",
+              "description":
+                "Advocate-managed municipal and revenue mutation service covering MCD/DDA, BBMP e-Aasthi Khata, 7/12 Varas Nond, and Tehsildar Dakhil Kharij across India.",
+            },
+          },
         ],
       },
     },
@@ -206,6 +250,46 @@ const services: ServiceCard[] = [
     linkText: "Explore Survivor Certificate",
     linkHref: "/services/survivor-member-certificate",
     illustrationSrc: "/images/survivor-member-certificate-og.jpg",
+  },
+  {
+    title: "Will Dispute & Probate Litigation",
+    description:
+      "High Court advocate representation to challenge forged or coerced Wills under the Indian Succession Act, lodge Section 284 caveats, and defend genuine testamentary bequests against vexatious claims.",
+    linkText: "Explore Will Dispute Services",
+    linkHref: "/services/will-dispute-contest-litigation-lawyer",
+    illustrationSrc: "/images/will-dispute-contest-litigation-lawyer-og.jpg",
+  },
+  {
+    title: "Property Mutation & Dakhil Kharij",
+    description:
+      "End-to-end advocate assistance for municipal property mutation (MCD, BMC, BBMP Khata) and land revenue Dakhil Kharij (7/12 Varas Nond, Tehsildar Khatauni) after a property owner's demise.",
+    linkText: "Explore Property Mutation Services",
+    linkHref: "/services/property-mutation-dakhil-kharij-service",
+    illustrationSrc: "/images/property-mutation-dakhil-kharij-service-og.jpg",
+  },
+    {
+    title: "Letters of Administration Lawyer",
+    description:
+      "Expert High Court and District Court advocate assistance for Letters of Administration under Sections 218 and 232 of the Indian Succession Act, 1925 to transfer intestate real estate and unlock bank lockers.",
+    linkText: "Explore Letters of Administration",
+    linkHref: "/services/letters-of-administration-lawyer",
+    illustrationSrc: "/images/letters-of-administration-lawyer-og.jpg",
+  },
+{
+    title: "Family Settlement Deed & Partition",
+    description:
+      "Ironclad Family Settlement Agreement and Partition Deed drafting by High Court advocates under the Registration Act, 1908 and Indian Stamp Act, 1899 to amicably divide ancestral property and resolve succession disputes.",
+    linkText: "Explore Family Settlement Services",
+    linkHref: "/services/family-settlement-deed-lawyer",
+    illustrationSrc: "/images/family-settlement-deed-lawyer-og.jpg",
+  },
+  {
+    title: "Private Family Trust Formation",
+    description:
+      "Bespoke private family trust deed drafting under the Indian Trusts Act, 1882, Sub-Registrar registration, Trust PAN procurement, and estate ring-fencing for HNI families and special needs dependents.",
+    linkText: "Explore Private Trust Services",
+    linkHref: "/services/private-family-trust-formation",
+    illustrationSrc: "/images/private-family-trust-formation-og.jpg",
   },
 ];
 
@@ -302,25 +386,34 @@ export default function ServicePage() {
                         service.title === "Online Will Drafting & Lawyer Review"
                           ? "Online Will Drafting and Lawyer Verification Services under Indian Succession Act - AMA Legal Solutions"
                           : service.title === "Legal Heir"
-                          ? "Official Legal Heir Certificate Documentation and Verification Services in India"
-                          : service.title === "Relinquishment Deed"
-                          ? "Relinquishment Deed Haq Tyag Registration and Drafting Services in India"
-                          : service.title === "Survivor Member Certificate"
-                          ? "Surviving Member Certificate SMC Application and Verification in India"
-                          : service.title === "NRI & OCI Indian Will Drafting"
-                          ? "NRI and OCI Indian Will Drafting and Cross-Border Estate Planning Services in India"
-                          : !service.isComingSoon
-                          ? `${service.title} in India - AMA Legal Solutions`
-                          : "Estate planning and Power of Attorney services in India coming soon"
+                            ? "Official Legal Heir Certificate Documentation and Verification Services in India"
+                            : service.title === "Relinquishment Deed"
+                              ? "Relinquishment Deed Haq Tyag Registration and Drafting Services in India"
+                              : service.title === "Survivor Member Certificate"
+                                ? "Surviving Member Certificate SMC Application and Verification in India"
+                                : service.title === "Property Mutation & Dakhil Kharij"
+                                  ? "Property Mutation and Dakhil Kharij Advocate Services in India - AMA Legal Solutions"
+                                : service.title === "Will Dispute & Probate Litigation"
+                                  ? "Will Dispute and Probate Litigation Lawyers in India - AMA Legal Solutions"
+                                  : service.title === "Letters of Administration Lawyer" || service.title === "Letters of Administration"
+                                  ? "Letters of Administration Court Representation and Advocate Petitions in India - AMA Legal Solutions"
+                                  : service.title === "Family Settlement Deed & Partition"
+                                    ? "Family Settlement Agreement and Partition Deed Drafting Services in India - AMA Legal Solutions"
+                                    : service.title === "Private Family Trust Formation"
+                                      ? "Private Family Trust Formation and Registration in India - AMA Legal Solutions"
+                                      : service.title === "NRI & OCI Indian Will Drafting"
+                                        ? "NRI and OCI Indian Will Drafting and Cross-Border Estate Planning Services in India"
+                                        : !service.isComingSoon
+                                          ? `${service.title} in India - AMA Legal Solutions`
+                                          : "Estate planning and Power of Attorney services in India coming soon"
                       }
                       fill
                       priority
                       sizes="(max-width: 768px) 100vw, 50vw"
-                      className={`${
-                        service.illustrationSrc.endsWith(".jpg")
+                      className={`${service.illustrationSrc.endsWith(".jpg")
                           ? "object-cover group-hover:scale-105"
                           : "object-contain scale-[1.2]"
-                      } transition-transform duration-300`}
+                        } transition-transform duration-300`}
                     />
                   </div>
                 </div>
