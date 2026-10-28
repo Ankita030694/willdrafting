@@ -1,9 +1,35 @@
 import { NextRequest, NextResponse } from "next/server";
 import { ObjectId } from "mongodb";
+import sharp from "sharp";
 import { blogImagesCol } from "@/lib/db/collections";
 
 export const maxDuration = 300;
 export const dynamic = "force-dynamic";
+
+async function compressBufferUnder90KB(inputBuffer: Buffer): Promise<{ buffer: Buffer; mimeType: string }> {
+  if (inputBuffer.byteLength <= 90000) {
+    return { buffer: inputBuffer, mimeType: "" };
+  }
+  const meta = await sharp(inputBuffer).metadata();
+  const origW = meta.width || 1200;
+  const widths = [origW, Math.min(origW, 1200), Math.min(origW, 1000), Math.min(origW, 850)];
+  for (const w of widths) {
+    for (const q of [76, 70, 65, 60, 55, 50, 45, 40]) {
+      let pipeline = sharp(inputBuffer).flatten({ background: "#ffffff" });
+      if (w < origW) pipeline = pipeline.resize({ width: w, withoutEnlargement: true });
+      const out = await pipeline
+        .jpeg({ quality: q, mozjpeg: true, progressive: true, chromaSubsampling: "4:2:0" })
+        .toBuffer();
+      if (out.byteLength <= 90000) return { buffer: out, mimeType: "image/jpeg" };
+    }
+  }
+  const fallback = await sharp(inputBuffer)
+    .flatten({ background: "#ffffff" })
+    .resize({ width: 750, withoutEnlargement: true })
+    .jpeg({ quality: 40, mozjpeg: true, progressive: true })
+    .toBuffer();
+  return { buffer: fallback, mimeType: "image/jpeg" };
+}
 
 async function saveBase64ToMongo(params: {
   rawBase64: string;
@@ -12,17 +38,24 @@ async function saveBase64ToMongo(params: {
   prompt: string;
   blogSlug?: string | null;
 }) {
-  const cleanBase64 = params.rawBase64.replace(/^data:[^;]+;base64,/, "");
-  const size = Buffer.byteLength(cleanBase64, "base64");
+  let cleanBase64 = params.rawBase64.replace(/^data:[^;]+;base64,/, "");
+  let size = Buffer.byteLength(cleanBase64, "base64");
+  let finalMime = params.mimeType || "image/png";
+  if (size > 90000) {
+    const compressed = await compressBufferUnder90KB(Buffer.from(cleanBase64, "base64"));
+    cleanBase64 = compressed.buffer.toString("base64");
+    size = compressed.buffer.byteLength;
+    if (compressed.mimeType) finalMime = compressed.mimeType;
+  }
   const col = await blogImagesCol();
   const _id = new ObjectId();
-  const ext = params.mimeType.includes("jpeg") || params.mimeType.includes("jpg") ? "jpg" : "png";
+  const ext = finalMime.includes("jpeg") || finalMime.includes("jpg") ? "jpg" : "png";
 
   await col.insertOne({
     _id,
     kind: params.kind,
     filename: `willdrafting_${params.kind}_${Date.now()}.${ext}`,
-    mimeType: params.mimeType || "image/png",
+    mimeType: finalMime,
     base64: cleanBase64,
     size,
     prompt: params.prompt,

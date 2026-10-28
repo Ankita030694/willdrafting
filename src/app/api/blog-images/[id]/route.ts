@@ -1,8 +1,31 @@
 import { NextRequest, NextResponse } from "next/server";
 import { ObjectId } from "mongodb";
+import sharp from "sharp";
 import { blogImagesCol } from "@/lib/db/collections";
 
 export const dynamic = "force-dynamic";
+
+async function ensureUnder90KB(inputBuffer: Buffer): Promise<Buffer> {
+  if (inputBuffer.byteLength <= 90000) return inputBuffer;
+  const meta = await sharp(inputBuffer).metadata();
+  const origW = meta.width || 1200;
+  const widths = [origW, Math.min(origW, 1200), Math.min(origW, 1000), Math.min(origW, 850)];
+  for (const w of widths) {
+    for (const q of [76, 70, 65, 60, 55, 50, 45, 40]) {
+      let pipeline = sharp(inputBuffer).flatten({ background: "#ffffff" });
+      if (w < origW) pipeline = pipeline.resize({ width: w, withoutEnlargement: true });
+      const out = await pipeline
+        .jpeg({ quality: q, mozjpeg: true, progressive: true, chromaSubsampling: "4:2:0" })
+        .toBuffer();
+      if (out.byteLength <= 90000) return out;
+    }
+  }
+  return sharp(inputBuffer)
+    .flatten({ background: "#ffffff" })
+    .resize({ width: 750, withoutEnlargement: true })
+    .jpeg({ quality: 40, mozjpeg: true, progressive: true })
+    .toBuffer();
+}
 
 const SECURITY_HEADERS = {
   "X-Content-Type-Options": "nosniff",
@@ -40,11 +63,27 @@ export async function GET(
 
     // Strip any accidental data URL prefix before decoding
     const rawBase64 = doc.base64.replace(/^data:[^;]+;base64,/, "");
-    const buffer = Buffer.from(rawBase64, "base64");
-    const mimeType = doc.mimeType || "image/png";
-    const safeFilename = (doc.filename || `${cleanId}.png`).replace(/[^a-zA-Z0-9._-]/g, "_");
+    let buffer: Buffer = Buffer.from(rawBase64, "base64");
+    let mimeType = doc.mimeType || "image/png";
 
-    return new NextResponse(buffer, {
+    if (buffer.byteLength > 90000) {
+      buffer = await ensureUnder90KB(buffer);
+      mimeType = "image/jpeg";
+      await col.updateOne(
+        { _id: doc._id },
+        {
+          $set: {
+            base64: buffer.toString("base64"),
+            size: buffer.byteLength,
+            mimeType: "image/jpeg",
+          },
+        }
+      );
+    }
+
+    const safeFilename = (doc.filename || `${cleanId}.jpg`).replace(/[^a-zA-Z0-9._-]/g, "_");
+
+    return new NextResponse(new Uint8Array(buffer), {
       status: 200,
       headers: {
         ...SECURITY_HEADERS,
